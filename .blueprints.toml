@@ -1,0 +1,83 @@
+[repo]
+# The repo's channel takes this name too; the seats talk there, in agent-chat and in announcements (D104).
+id = "longevity-loci"
+# Where the liaison files a defect of the module tooling through the kit's report-to-kit --to: the plugin's
+# repository, which keeps no consumer inbox. The compiler and the registry are filed through their inboxes.
+producers = "dna-seq/just-module-creator"
+
+# The seats run on the cluster (the person, 2026-11-04: "due to large volume of texts and databases"). Its facts
+# (partition, nodes, job prefix) are the machine file ~/.config/agent-seat-blueprints/slurm.toml, never this file:
+# the repository is public. Each seated session's digest opens with this repository's jobs in the queue.
+[digest.jobs]
+cmd = "sh kit:drivers/slurm/digest-jobs.sh"
+pinned = true
+
+[seat.lead]
+# The person's coding sessions here (docs/seats/LEAD.md): the repository's code, built for the three research
+# seats; the plan; the releases. The compiler's and the registry's leads may wake it (upstream lead to lead).
+wake_from = "longevity-loci/curator longevity-loci/scout longevity-loci/module longevity-loci/liaison just-dna-compiler/lead just-dna-registry/lead */secretary"
+
+[seat.lead.watch.desk]
+cmd = "sh kit:bin/py.sh kit:classes/desk/watch-answers.py longevity-loci lead"
+
+# The partition's nodes, one line per state change: the lead runs the batch jobs the research seats need.
+[seat.lead.watch.nodes]
+cmd = "sh kit:drivers/slurm/watch-nodes.sh"
+
+[seat.lead.zulip]
+pool = "~/.config/agent-seat-blueprints/zulip/pool"
+
+[seat.curator]
+# Re-curates the module's evidence row by row (docs/seats/CURATOR.md): each locus's studies read, the extended
+# row and its evidence written. The scout hands it new papers; the module seat asks it about a row.
+wake_from = "longevity-loci/lead longevity-loci/scout longevity-loci/module */secretary"
+
+[seat.curator.watch.desk]
+cmd = "sh kit:bin/py.sh kit:classes/desk/watch-answers.py longevity-loci curator"
+
+# The scout's queue pushed to the trunk: new papers waiting for a row.
+[seat.curator.watch.queue]
+cmd = "sh kit:drivers/git/watch-remote.sh --path scout/queue.md"
+
+[seat.curator.zulip]
+pool = "~/.config/agent-seat-blueprints/zulip/pool"
+
+[seat.scout]
+# Watches the literature (docs/seats/SCOUT.md): searches of recent years, track by track, each new paper that
+# bears on a locus queued for the curator, a locus the module lacks proposed to the module seat.
+wake_from = "longevity-loci/lead longevity-loci/curator longevity-loci/module */secretary"
+
+[seat.scout.watch.desk]
+cmd = "sh kit:bin/py.sh kit:classes/desk/watch-answers.py longevity-loci scout"
+
+[seat.scout.zulip]
+pool = "~/.config/agent-seat-blueprints/zulip/pool"
+
+[seat.module]
+# Builds the annotation module from the curated rows (docs/seats/MODULE.md), on the module-creator plugin's
+# tools; rehearses each version on the registry's test instance. The curator and the scout talk to it.
+wake_from = "longevity-loci/lead longevity-loci/curator longevity-loci/scout longevity-loci/liaison */secretary"
+
+[seat.module.watch.desk]
+cmd = "sh kit:bin/py.sh kit:classes/desk/watch-answers.py longevity-loci module"
+
+# Curated rows pushed to the trunk: the module's next increment.
+[seat.module.watch.rows]
+cmd = "sh kit:drivers/git/watch-remote.sh --path rows/"
+
+[seat.module.zulip]
+pool = "~/.config/agent-seat-blueprints/zulip/pool"
+
+[seat.liaison]
+# What the module stands on and does not own (docs/seats/LIAISON.md): the module-creator plugin, the compiler's
+# packages, the registry. Their seats reach it: their leads (upstream lead to downstream liaison), their liaisons.
+wake_from = "longevity-loci/lead longevity-loci/module longevity-loci/curator just-dna-compiler/lead just-dna-registry/lead */liaison */upstream-liaison */secretary"
+
+[seat.liaison.watch.desk]
+cmd = "sh kit:bin/py.sh kit:classes/desk/watch-answers.py longevity-loci liaison"
+
+# The upstreams' watchers (kit classes/liaison/watch-upstream.sh), and the weekly dependency bump
+# (classes/base/nightly.py deps), are added by the seat itself in its first work.
+
+[seat.liaison.zulip]
+pool = "~/.config/agent-seat-blueprints/zulip/pool"
