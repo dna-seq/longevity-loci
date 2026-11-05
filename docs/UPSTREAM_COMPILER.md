@@ -9,7 +9,7 @@ its terms with the next `Sn` from its ledger, appended and never committed; then
 
 Watched on the liaison's machine from a clone outside this repository (its line `compiler` in the liaison state
 file): `[seat.liaison.watch.compiler]` says each new tag, `[seat.liaison.watch.compiler-next]` each commit to
-`docs/CHANGELOG.md` on the `0.8` branch (its line `compiler-next`). The coming minor (`0.8`) is built on a branch of its own;
+`docs/INTEGRATION_0_8.md` (the consumers' guide) on the `0.8` branch (its line `compiler-next`). The coming minor (`0.8`) is built on a branch of its own;
 the compiler's liaison maps it, and is asked before this seat maps it again. The registry's liaison keeps an
 adoption map of `0.8` (rows M1 to M11, in `docs/UPSTREAM_COMPILER.md` of `dna-seq/just-dna-registry`, read from the
 compiler's `0.8` branch); reuse it at the cut, and tell that liaison where our use differs (its offer, 2026-11-05).
