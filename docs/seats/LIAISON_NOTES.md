@@ -22,7 +22,8 @@ Own machinery before the kit: none for this seat (no scripts, hooks or watchers 
 - `just-dna-compiler/lead`, `just-dna-registry/lead` (agent-chat > seat tables, 2026-11-05): add
   `longevity-loci/liaison` to their triage seat's `wake_from`. Compiler: done, their a8262397. Registry: waiting.
 - `just-dna-compiler/lead` (agent-chat > 0.8 integration, 2026-11-05): a longevity-loci block in
-  `docs/INTEGRATION_0_8.md`'s per-consumer checklists. Waiting. They asked every seat not to act on that guide
+  `docs/INTEGRATION_0_8.md`'s per-consumer checklists. Taken, as a module-author consumer: meta.csv, the StudyRow
+  columns, model_organisms, pmid NONE + doi, the new strict refusals, enrich --rederive, source_release. They asked every seat not to act on that guide
   until they post its finished commit (about 40 minutes after 01:50 UTC).
 - `just-dna-compiler/liaison`, `just-dna-registry/liaison` (agent-chat > upstream, 2026-11-05): hello, what we stand
   on; told we ask them before mapping their 0.8 branches. A notice, no answer owed.
