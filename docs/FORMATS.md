@@ -29,10 +29,14 @@ a v1 locus with no seed entry takes the next free id above the seed's. Fields:
   `effect_allele`, `effect_size`, `effect_measure`, `stat_significance` (from the anchor study), `direction`
   (`protective`, `risk`, `contested`, `unknown`), `negatives` (required on every variant when pleiotropy holds
   `tradeoff`), and `genotypes` (each `genotype`, `state`, `conclusion`).
-- `studies`: one per (rsid, study), §6.3's columns: `note` and `quote` (the provenance quote, by id),
+- `studies`: one per (rsid, study), §6.3's columns: `note` and `quote` (the provenance quote, by id; or no
+  `quote` and a `quote_absent` saying why: `not_found` read and nothing supports the row, `unchecked` only the
+  abstract could be read, `other_claim` the article does not make the claim cited for (the row goes to a
+  decision), `licence_unclear`),
   `phenotype_class` (§4.5), `study_design`, `population` (never empty), `stat_significance`, and where known
   `p_value` (as written), `p_value_num`, `effect_size` (with its `effect_measure`: `beta`, `HR`, `OR`; and
-  `effect_unit`), `effect_allele`, `statistical_test`, `curator` (who located the quote). A study's rsid is one of
+  `effect_unit`), `effect_allele`, `statistical_test`, `curator` (who located the quote: a name or a model id; `ai`, `true` and the like are
+  refused). A study's rsid is one of
   the row's variants.
 - Recorded now for just-dna-format 0.8's `studies.csv` (issue #6), all optional: `ancestry` (`AFR`, `AMR`, `EAS`,
   `EUR`, `SAS`, a list, beside the free-text `population`); an age band `age_min`, `age_max` (years, either open)
@@ -88,7 +92,8 @@ nothing to check.
   read as a hyphen, soft hyphens, any run of whitespace, and a hyphen at a line break (ASCII, soft or Unicode)
   read both ways; case, words, digits and punctuation must match, and the quote starts and ends on a word
   boundary. A quote that is the article's title is refused, and one quote cited for two or more variants is
-  listed as `shared_quote` (the plugin's `QUOTING.md`, rules 1 and 2; D10). Copy a quote from the cached text,
+  listed as `shared_quote`, and a study whose quote names neither its rsid nor its gene as `ungrained`
+  (the plugin's `QUOTING.md`, rules 1 and 2; D10; both warnings). Copy a quote from the cached text,
   never retype it: the plugin's own check runs on its own retrieved text.
 
 - **rules**, inside `check rows`, from the row's own fields (`rule`, a failure): R-TIER-1 (a row whose only

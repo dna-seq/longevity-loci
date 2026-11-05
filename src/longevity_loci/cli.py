@@ -34,7 +34,7 @@ def _main() -> None:
 def _report(findings: list[Finding], verbose: bool) -> None:
     """A line per failure; the unknowns by note, with a count; warnings with -v; the passes only counted."""
     for f in findings:
-        if f.kind in FAILING or f.kind is Kind.SHARED_QUOTE or (verbose and f.kind in (Kind.UNSUPPORTED, Kind.INCOMPLETE)):
+        if f.kind in FAILING or f.kind in (Kind.SHARED_QUOTE, Kind.UNGRAINED) or (verbose and f.kind in (Kind.UNSUPPORTED, Kind.INCOMPLETE)):
             typer.echo(f"{f.kind.value:12} {f.path}  {f.where}  {f.detail}".rstrip())
     unknown = Counter((f.kind, f.path) for f in findings if f.kind in UNKNOWN)
     for (kind, path), n in sorted(unknown.items()):

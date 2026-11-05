@@ -76,6 +76,18 @@ class EffectMeasure(StrEnum):
     OR = "OR"
 
 
+class QuoteAbsent(StrEnum):
+    """Why a study has no quote: the kinds of an empty quote in the plugin's QUOTING.md (issue #7)."""
+
+    NOT_FOUND = "not_found"  # read, and no passage supports the row
+    UNCHECKED = "unchecked"  # only the abstract could be read, and it does not say
+    OTHER_CLAIM = "other_claim"  # the article is cited for a claim it does not make: the row goes to a decision
+    LICENCE_UNCLEAR = "licence_unclear"  # quotable, but the right to quote is not known
+
+
+PLACEHOLDER_CURATORS = frozenset({"ai", "agent", "model", "machine", "llm", "true", "false", "yes", "no", "auto"})
+
+
 class Ancestry(StrEnum):
     """just-dna-format 0.8's closed `ancestry` codes (the compiler's INTEGRATION_0_8, issue #6)."""
 
@@ -305,7 +317,8 @@ class Study(Strict):
 
     rsid: str = Field(pattern=r"^rs\d+$")
     note: str
-    quote: str
+    quote: str | None = None  # a quote id in the note; or none, with quote_absent saying why
+    quote_absent: QuoteAbsent | None = None
     phenotype_class: PhenotypeClass
     study_design: StudyDesign
     population: str = Field(min_length=1)  # as the article names it
@@ -322,7 +335,7 @@ class Study(Strict):
     stratum: str | None = None  # a subgroup the estimate is for (men, women, ...), with its level
     stratum_level: str | None = None
     proxy_rsid: str | None = Field(default=None, pattern=r"^rs\d+$")  # the variant the study reported, when rsid is its lead
-    curator: str | None = None  # who located the quote
+    curator: str | None = None  # who located the quote: a name or a model id, never a placeholder like "ai"
     effect_size: float | None = None
     effect_measure: EffectMeasure | None = None
     effect_unit: str | None = None  # years per allele, parental doubled, ...
@@ -333,7 +346,12 @@ class Study(Strict):
     def _quote_in_note(self) -> Study:
         if not NOTE_KEY.match(self.note):
             raise ValueError(f"note is a note key (pmid-31413261 or doi-…); not {self.note!r}")
-        _check_cites([f"{self.note}#{self.quote}"])
+        if (self.quote is None) == (self.quote_absent is None):
+            raise ValueError("a study has a quote, or a quote_absent saying why it has none; one of the two")
+        if self.quote is not None:
+            _check_cites([f"{self.note}#{self.quote}"])
+        if self.curator is not None and self.curator.strip().casefold() in PLACEHOLDER_CURATORS:
+            raise ValueError(f"curator names who located the quote (a name or a model id), not {self.curator!r}")
         if self.effect_size is not None and self.effect_measure is None:
             raise ValueError("an effect_size says its effect_measure (beta, HR, OR)")
         if (self.stratum is None) != (self.stratum_level is None):
@@ -347,8 +365,8 @@ class Study(Strict):
         return self
 
     @property
-    def cite(self) -> str:
-        return f"{self.note}#{self.quote}"
+    def cite(self) -> str | None:
+        return None if self.quote is None else f"{self.note}#{self.quote}"
 
 
 class Row(Strict):
@@ -382,7 +400,7 @@ class Row(Strict):
             out += [(f"axes.{name}", c) for c in getattr(self.axes, name).cites]
         for i, f in enumerate(self.flags):
             out += [(f"flags[{i}] {f.token}", c) for c in f.cites]
-        out += [(f"studies[{i}] {s.rsid}", s.cite) for i, s in enumerate(self.studies)]
+        out += [(f"studies[{i}] {s.rsid}", s.cite) for i, s in enumerate(self.studies) if s.cite is not None]
         return out
 
 

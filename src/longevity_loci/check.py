@@ -38,6 +38,7 @@ class Kind(StrEnum):
     UNSUPPORTED = "unsupported"  # an axis or flag cites nothing
     RULE = "rule"  # a row breaks one of the requirements' hard rules (§4.1, §6.3)
     INCOMPLETE = "incomplete"  # a scored variant's genotypes do not yet say what §6.2 asks (a warning)
+    UNGRAINED = "ungrained"  # a study's quote names neither its variant nor its gene (QUOTING.md rule 2; a warning)
     SHARED_QUOTE = "shared_quote"  # one quote cited for several variants: the plugin's QUOTING.md rule 2
     LOCATED = "located"
     NOT_FOUND = "not_found"  # the cached text is there and the quote is not in it
@@ -220,9 +221,18 @@ def check_rows(rows: Path, corpus: Path, seed: dict[int, str] | None = None) -> 
         for f in row.flags:
             if not f.cites:
                 findings.append(Finding(Kind.UNSUPPORTED, path, f"flag {f.token}"))
-        for s in row.studies:
+        genes = {v.rsid: v.gene for v in row.variants}
+        for i, s in enumerate(row.studies):
+            if s.cite is None:
+                continue
             quoted_for.setdefault(s.cite, set()).add(s.rsid)
             first_path.setdefault(s.cite, path)
+            note = notes.get(s.note)
+            quote = note.quotes.get(s.quote) if note else None
+            if quote is not None:
+                words = set(re.findall(r"[A-Za-z0-9]+", normalise(quote.text)))
+                if s.rsid not in words and not set(re.split(r"[^A-Za-z0-9]+", genes[s.rsid])) & words:
+                    findings.append(Finding(Kind.UNGRAINED, path, f"studies[{i}] {s.rsid}", f"{s.cite} names neither {s.rsid} nor {genes[s.rsid]}"))
         for where, cite in row.cites():
             m = CITE.match(cite)
             assert m is not None  # the model refused any other shape

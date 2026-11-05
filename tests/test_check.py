@@ -151,6 +151,9 @@ def test_rows_duplicate_locus_and_seed_name(tree: Path) -> None:
         ("  - rsid: rs429358\n    note:", "  - rsid: rs1\n    note:"),
         ("pleiotropy: {values: []", "pleiotropy: {values: [tradeoff]"),
         ("ancestry: [EUR]", "ancestry: [European]"),
+        ("    quote: q2\n", ""),
+        ("    quote: q2\n", "    quote: q2\n    quote_absent: unchecked\n"),
+        ("    sample_unit: individuals\n", "    sample_unit: individuals\n    curator: AI\n"),
         ("n_cases: 11262", "n_cases: 99999"),
         ("    effect_measure: OR\n", ""),
         ("sample_unit: individuals", "sample_unit: individuals\n    stratum: sex"),
@@ -256,3 +259,21 @@ def test_r_tier_1(tree: Path) -> None:
     text = _row(tree).read_text().replace("note: pmid-31413261\n    quote: q2", "note: pmid-22279548\n    quote: q1")
     _row(tree).write_text(text)
     assert "R-TIER-1" in {f.where for f in check_rows(tree / "rows", tree / "corpus") if f.kind is Kind.RULE}
+
+
+def test_quote_absent_with_its_reason(tree: Path) -> None:
+    text = _row(tree).read_text().replace("    quote: q2\n", "    quote_absent: unchecked\n")
+    _row(tree).write_text(text)
+    findings = check_rows(tree / "rows", tree / "corpus")
+    assert not [f for f in findings if f.passed is False]
+    assert "studies[0] rs429358" not in {f.where for f in findings if f.kind is Kind.OK}
+
+
+def test_quote_naming_neither_variant_nor_gene_is_flagged(tree: Path, abstract: str) -> None:
+    sentence = "Gene-level association analysis reveals a role for tissue-specific expression of multiple genes in longevity."
+    assert sentence in abstract
+    note = tree / "corpus" / "pmid-31413261.md"
+    note.write_text(note.read_text() + "\n> [q3] " + sentence + "\n")
+    _row(tree).write_text(_row(tree).read_text().replace("    quote: q2\n", "    quote: q3\n"))
+    flagged = [f for f in check_rows(tree / "rows", tree / "corpus") if f.kind is Kind.UNGRAINED]
+    assert [f.where for f in flagged] == ["studies[0] rs429358"]

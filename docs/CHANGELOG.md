@@ -37,3 +37,6 @@ Newest first.
 - RM2 landed: `loci check rows` now checks the hard rules a row's fields can show (R-TIER-1, R-TIER-2, R-TIER-4,
   §6.3's required columns on a tier A/B row, one neutral genotype), and `loci fetch` fills the article cache
   from Europe PMC (open full text, else the abstract). The fixtures carry Deelen 2019's real Table 2 row.
+- From the plugin's quoting rules (issue #7): a study may carry no quote with a `quote_absent` reason, a
+  placeholder `curator` (`ai`, `true`) is refused, and a quote naming neither the study's variant nor its gene is
+  listed as `ungrained`.
