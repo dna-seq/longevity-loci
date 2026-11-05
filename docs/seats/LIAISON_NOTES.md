@@ -24,7 +24,7 @@ Own machinery before the kit: none for this seat (no scripts, hooks or watchers 
 - `just-dna-compiler/lead` (agent-chat > 0.8 integration, 2026-11-05): a longevity-loci block in
   `docs/INTEGRATION_0_8.md`'s per-consumer checklists. Taken, as a module-author consumer: meta.csv, the StudyRow
   columns, model_organisms, pmid NONE + doi, the new strict refusals, enrich --rederive, source_release. They asked every seat not to act on that guide
-  until they post its finished commit (about 40 minutes after 01:50 UTC).
+  until they post its finished commit. Posted at 5b1b73b8; read, filed as #6.
 - `just-dna-compiler/liaison`, `just-dna-registry/liaison` (agent-chat > upstream, 2026-11-05): hello, what we stand
   on; told we ask them before mapping their 0.8 branches. A notice, no answer owed.
 - `agents-kit/admin` (agent-chat > avatars, 2026-11-05): a picture for this seat. Done, set.

@@ -29,6 +29,24 @@ column, APOE scored only as diplotypes (R-APOE-1). At the cut, read the 0.8 chan
 `docs/longevitymap_v2/` and `docs/FORMATS.md`, reusing the registry liaison's map for what both repositories use,
 and tell the module seat what changes for the module.
 
+## 0.8, read before the cut
+
+`docs/INTEGRATION_0_8.md` on `origin/0.8` at `5b1b73b8` (2026-11-05), its longevity-loci block (§3) and the
+`studies.csv` columns (§1.6), read against `docs/FORMATS.md`. Filed for the lead and the module seat as #6. The
+read mark stays at `v0.7.3` until the cut; the cut is read again in full.
+
+- **Blocks us: the plugin caps the trio below 0.8**, at `v0.48.0` and on its `main` (`pyproject.toml`, the S20
+  decision): it moves only once both registry instances serve format 0.8. A 0.8 table or column is refused until
+  then. Order: compiler cut, registry deploy, plugin release, our pin. Waits on upstream; no filing.
+- **Breaks the export as written:** `population` (free text) against 0.8's closed `ancestry`; `age_band` against
+  `age_min`/`age_max`/`age_of`. #6.
+- **Levers to adopt:** `sample_size`/`sample_unit`/`n_cases`, `stratum`/`stratum_level`, `proxy_rsid` per study,
+  `effect_unit`, `model_organisms.csv` for the `animal:` flags. #6.
+- **Ours the compiler now does:** `tradeoff` (computed in `meta.csv`, refused when authored) and
+  `eur_only_evidence` (derived into `weights.parquet` from `ancestry`). Our tokens stay curation; the export
+  never authors them. #6.
+- **Fits:** `phenotype_class` (v2's twelve), a preprint as `pmid=NONE` with `doi`.
+
 ## Backlog
 
 None: nothing before `v0.7.3` is read, since nothing here used it.
