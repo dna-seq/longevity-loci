@@ -12,9 +12,9 @@ file): `[seat.liaison.watch.plugin]` says each new tag.
 
 ## Read mark
 
-**`v0.48.0`**: the tag `.claude/settings.json` pins the marketplace `just-dna` at (3dd8c2a, 2026-11-05), the
-latest tag then. A first mark, fast-forwarded: no release before it was read, since nothing here used one. The
-liaison moves the pin.
+**`v0.48.1`**: the tag `.claude/settings.json` pins the marketplace `just-dna` at (moved from `v0.48.0`,
+2026-11-05). The first mark, `v0.48.0` (3dd8c2a), was fast-forwarded: no release before it was read, since nothing
+here used one. The liaison moves the pin.
 
 ## Backlog
 
@@ -28,6 +28,10 @@ module and curator seats call is filled in as they start; not yet seen loaded in
 
 ## Inbound verdicts
 
+- **`v0.48.1`** (2026-11-05), one entry: `remote_derive` and `remote_draft` send the registry token, and refuse
+  before uploading when none is found. *Nothing for us*: neither tool is called here yet. The tag also carries
+  RM31's traceability design and F116's note, documents only (`CLAUDE.md`, `docs/ROADMAP.md`,
+  `docs/just-dna-format-pending-fixes.md`), no code. Pin moved: a patch, nothing here depends on the old behaviour.
 - **`skills/find-evidence/references/QUOTING.md` at `v0.48.0`**, read 2026-11-05 against D9 and `docs/FORMATS.md`,
   with the check it describes (just-dna-enricher 0.7.3's `quote_matches`, `literature.py:654-660`: whitespace
   collapsed and case folded, nothing else, against Europe PMC's body text). Filed as #7 for the lead and the
