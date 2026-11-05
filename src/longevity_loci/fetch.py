@@ -1,13 +1,16 @@
 """The article cache: an article's text fetched from Europe PMC into `$LOCI_CACHE/<key>.txt`, with a sidecar
-`<key>.source.json` saying what was fetched (the open-access full text, or the abstract only) and when.
+`<key>.source.json` saying what was fetched (the open-access full text, or the abstract only), when, and the
+text's sha256, so a text and a sidecar that do not belong together are seen.
 
 The text is the article's, not ours: it stays in the cache, never in the repository, a message or an issue."""
 
 from __future__ import annotations
 
+import hashlib
 import html
 import json
 import logging
+import os
 import re
 import urllib.error
 import urllib.request
@@ -20,6 +23,7 @@ log = logging.getLogger(__name__)
 
 SEARCH = "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:{pmid}%20AND%20SRC:MED&resultType=core&format=json"
 FULLTEXT = "https://www.ebi.ac.uk/europepmc/webservices/rest/{pmcid}/fullTextXML"
+RETRYABLE_HTTP = frozenset({408, 425, 429, 500, 502, 503, 504})
 
 
 class Source(StrEnum):
@@ -31,7 +35,9 @@ class Outcome(StrEnum):
     FETCHED = "fetched"
     NOT_FOUND = "not_found"  # Europe PMC holds no record of the PMID
     NO_TEXT = "no_text"  # a record, with neither an open full text nor an abstract
-    UNREACHABLE = "unreachable"  # the service did not answer: retryable, says nothing of the article
+    UNREACHABLE = "unreachable"  # no answer, or a busy or failing service: retryable, says nothing of the article
+    REFUSED = "refused"  # the service refused the request (a 4xx): not retryable as it stands
+    MALFORMED = "malformed"  # an answer that is not what the service sends (a proxy's page, a changed schema)
 
 
 @dataclass(frozen=True)
@@ -44,6 +50,14 @@ class Fetched:
 
     def __bool__(self) -> bool:
         return self.outcome is Outcome.FETCHED
+
+
+@dataclass(frozen=True)
+class _Reply:
+    outcome: Outcome | None  # None: the body is there
+    body: bytes = b""
+    status: int | None = None
+    detail: str = ""
 
 
 def jats_to_text(xml: str) -> str:
@@ -59,13 +73,35 @@ def _get(url: str, timeout: float) -> bytes:
         return r.read()
 
 
-def fetch(pmid: int, cache: Path, timeout: float = 60) -> Fetched:
-    """Fetch one article's text into the cache; the open full text when Europe PMC has one, else the abstract."""
-    key = f"pmid-{pmid}"
+def _request(url: str, timeout: float) -> _Reply:
+    """One GET, its failure sorted by what the caller should do next."""
     try:
-        hits = json.loads(_get(SEARCH.format(pmid=pmid), timeout))["resultList"]["result"]
-    except (urllib.error.URLError, TimeoutError) as e:
-        return Fetched(Outcome.UNREACHABLE, key, detail=str(e))
+        return _Reply(None, _get(url, timeout))
+    except urllib.error.HTTPError as e:
+        kind = Outcome.UNREACHABLE if e.code in RETRYABLE_HTTP else Outcome.REFUSED
+        return _Reply(kind, status=e.code, detail=f"HTTP {e.code} from {url}")
+    except (OSError, TimeoutError) as e:  # URLError, a reset or a timeout while reading
+        return _Reply(Outcome.UNREACHABLE, detail=f"{type(e).__name__}: {e}")
+
+
+def _write(path: Path, text: str) -> None:
+    tmp = path.with_name(path.name + ".part")
+    tmp.write_text(text, encoding="utf-8")
+    os.replace(tmp, path)
+
+
+def fetch(pmid: int, cache: Path, timeout: float = 60) -> Fetched:
+    """Fetch one article's text into the cache; the open full text when Europe PMC has one, else the abstract.
+    A full text Europe PMC does not serve (404) falls back to the abstract; a busy or failing service does not,
+    so a transient fault never replaces a cached full text by an abstract."""
+    key = f"pmid-{pmid}"
+    reply = _request(SEARCH.format(pmid=pmid), timeout)
+    if reply.outcome is not None:
+        return Fetched(reply.outcome, key, detail=reply.detail)
+    try:
+        hits = json.loads(reply.body.decode("utf-8"))["resultList"]["result"]
+    except (UnicodeDecodeError, json.JSONDecodeError, KeyError, TypeError) as e:
+        return Fetched(Outcome.MALFORMED, key, detail=f"search answer: {type(e).__name__}")
     if not hits:
         return Fetched(Outcome.NOT_FOUND, key)
     hit = hits[0]
@@ -73,18 +109,23 @@ def fetch(pmid: int, cache: Path, timeout: float = 60) -> Fetched:
     pmcid = hit.get("pmcid")
     if pmcid and hit.get("isOpenAccess") == "Y":
         url = FULLTEXT.format(pmcid=pmcid)
-        try:
-            text, source = jats_to_text(_get(url, timeout).decode("utf-8")), Source.FULL_TEXT
-        except urllib.error.HTTPError as e:
-            log.info("%s: no full text from %s (%s); the abstract instead", key, pmcid, e.code)
-        except (urllib.error.URLError, TimeoutError) as e:
-            return Fetched(Outcome.UNREACHABLE, key, detail=str(e))
-    if text is None and hit.get("abstractText"):
-        text, source, url = html.unescape(re.sub(r"<[^>]+>", "", hit["abstractText"])), Source.ABSTRACT, SEARCH.format(pmid=pmid)
-    if text is None:
+        full = _request(url, timeout)
+        if full.outcome is Outcome.UNREACHABLE:
+            return Fetched(full.outcome, key, title=hit.get("title"), detail=full.detail)
+        if full.outcome is None:
+            body = jats_to_text(full.body.decode("utf-8", errors="replace"))
+            if body.strip():
+                text, source = body, Source.FULL_TEXT
+        if text is None:
+            log.info("%s: no full text from %s (%s); the abstract instead", key, pmcid, full.detail or "empty")
+    abstract = html.unescape(re.sub(r"<[^>]+>", "", hit.get("abstractText") or ""))
+    if text is None and abstract.strip():
+        text, source, url = abstract, Source.ABSTRACT, SEARCH.format(pmid=pmid)
+    if text is None or source is None:
         return Fetched(Outcome.NO_TEXT, key, title=hit.get("title"))
-    (cache / f"{key}.txt").write_text(text, encoding="utf-8")
     sidecar = {"key": key, "pmid": pmid, "pmcid": pmcid, "source": source.value, "url": url,
-               "title": hit.get("title"), "fetched": datetime.now(UTC).isoformat(timespec="seconds")}
-    (cache / f"{key}.source.json").write_text(json.dumps(sidecar, indent=2) + "\n", encoding="utf-8")
+               "title": hit.get("title"), "fetched": datetime.now(UTC).isoformat(timespec="seconds"),
+               "sha256": hashlib.sha256(text.encode("utf-8")).hexdigest()}
+    _write(cache / f"{key}.txt", text)
+    _write(cache / f"{key}.source.json", json.dumps(sidecar, indent=2) + "\n")
     return Fetched(Outcome.FETCHED, key, source, hit.get("title"))

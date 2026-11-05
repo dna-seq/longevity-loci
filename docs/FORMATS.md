@@ -73,8 +73,10 @@ says what the article shows for which variant. A doi key is the doi with `/` as 
 The text of each article read, outside git, keyed as its note (the variable is set on the machine, never written
 as a path in the repository). Plain UTF-8 text: a PDF is converted before it is cached. `uv run loci fetch PMID…`
 fills it from Europe PMC: the open-access full text where there is one (JATS flattened, a table cell ending in a
-tab), else the abstract; a sidecar `<key>.source.json` says which, from where and when. Exit 0 fetched, 1 no
-record or no text, 3 the service did not answer. A full text never
+tab), else the abstract; a sidecar `<key>.source.json` says which, from where, when, and the text's sha256. A
+full text Europe PMC does not serve falls back to the abstract; a busy or failing service (408, 429, 5xx, a reset)
+does not, so a transient fault never replaces a cached full text. Exit 0 fetched, 1 no record, no text, a refused
+request or a malformed answer, 3 the service did not answer (retry). A full text never
 enters a commit, a message or an issue.
 
 ## The checks
@@ -96,14 +98,19 @@ nothing to check.
   (the plugin's `QUOTING.md`, rules 1 and 2; D10; both warnings). Copy a quote from the cached text,
   never retype it: the plugin's own check runs on its own retrieved text.
 
-- **rules**, inside `check rows`, from the row's own fields (`rule`, a failure): R-TIER-1 (a row whose only
-  study is PMID 22279548 is tier D, neutral on every genotype); on a tier A or B row, R-TIER-4 (a genome-wide
-  significant study, and not MR-only), R-TIER-2 (not one unreplicated centenarian study), §6.3's `p_value`,
-  `p_value_num`, `effect_size`, `effect_measure` and `effect_allele` on every study, and, once a variant lists
-  three genotypes, exactly one neutral (every one on a trade-off locus). Fewer than three genotypes is
-  `incomplete`, a warning listed with `-v`: an APOE-style locus is scored as a diplotype (§6.4).
+- **rules**, inside `check rows`, from the row's own fields (`rule`, a failure). A study *supports* the row
+  unless it is `not_significant`; a null study is kept and supports nothing (§6.3).
+  - A study's `stat_significance` agrees with its `p_value_num`: `significant` below 5×10⁻⁸, `suggestive` from
+    5×10⁻⁸ to 1×10⁻⁵.
+  - R-TIER-1: a row whose only supporting studies are PMID 22279548 is tier D, neutral on every genotype.
+  - On a tier A or B row: a genome-wide significant study, not MR-only, not n = 1 genomes (R-TIER-4); not one
+    unreplicated `centenarian_case_control` study (R-TIER-2; a percentile case-control design is not read as
+    one); §6.3's `p_value`, `p_value_num`, `effect_size`, `effect_measure` and `effect_allele` on every supporting
+    study; and, once a variant lists three genotypes, exactly one neutral, or every one neutral when its
+    `direction` is `contested` (a trade-off with unresolved net direction, §6.2). Fewer than three genotypes is
+    `incomplete`, a warning listed with `-v`: an APOE-style locus is scored as a diplotype (§6.4).
 
-Not checked yet: R-TIER-3 (an ancestry banner, the consumer's), the tier A criteria a field cannot show (N,
-replication, heterogeneity), which genotype is the most common, and that a cited quote bears on the claim it is
+Not checked yet: R-TIER-3 (an ancestry banner, the consumer's) and R-TIER-1's "research view only" (the
+module's), the tier A criteria a field cannot show (N, replication, heterogeneity), which genotype is the most common, and that a cited quote bears on the claim it is
 cited for. A quote is a substring: one cut short so that it drops a "not" before it
 is still located, so a quote is a whole sentence or table cell (§6.3), and that is the curator's to keep.

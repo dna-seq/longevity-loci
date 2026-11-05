@@ -18,7 +18,7 @@ import yaml
 from pydantic import ValidationError
 
 from longevity_loci.models import (
-    CITE, Depth, NoteHead, PhenotypeClass, Quote, Row, StatSignificance, State, StudyDesign, Tier,
+    CITE, Depth, Direction, NoteHead, PhenotypeClass, Quote, Row, StatSignificance, State, StudyDesign, Tier,
 )
 
 log = logging.getLogger(__name__)
@@ -151,44 +151,61 @@ def load_seed(seed: Path) -> dict[int, str]:
 
 R_TIER_1_PMID = "pmid-22279548"  # §4.1 R-TIER-1: a row whose only support it is, is tier D
 SCORED = frozenset({Tier.A, Tier.B})
-# §6.3: required on every study of a tier A/B variant (pmid or doi is the note itself)
+# §6.3: required on every study supporting a tier A/B variant (pmid or doi is the note itself)
 REQUIRED_AB = ("p_value", "p_value_num", "effect_size", "effect_measure", "effect_allele")
+GENOME_WIDE = 5e-8
+SUGGESTIVE_P = 1e-5
 
 
 def check_rules(row: Row, path: Path) -> list[Finding]:
-    """The requirements' hard rules a row's own fields can show: R-TIER-1, R-TIER-2, R-TIER-4, §6.3's required
-    columns on a tier A/B row, and §6.2's genotypes (a warning: an APOE-style diplotype is scored elsewhere)."""
+    """The requirements' hard rules a row's own fields can show (§4.1, §6.2, §6.3). A study *supports* the row
+    unless it is `not_significant`; null studies are kept as rows and support nothing."""
     out: list[Finding] = []
     tier = row.axes.tier.value
-    notes = {s.note for s in row.studies}
-    significant = [s for s in row.studies if s.stat_significance is StatSignificance.SIGNIFICANT]
-    if notes == {R_TIER_1_PMID}:
+
+    def rule(where: str, detail: str) -> None:
+        out.append(Finding(Kind.RULE, path, where, detail))
+
+    supporting = [s for s in row.studies if s.stat_significance is not StatSignificance.NOT_SIGNIFICANT]
+    significant = [s for s in supporting if s.stat_significance is StatSignificance.SIGNIFICANT]
+    for i, s in enumerate(row.studies):
+        if s.p_value_num is None:
+            continue
+        if s.stat_significance is StatSignificance.SIGNIFICANT and s.p_value_num >= GENOME_WIDE:
+            rule(f"studies[{i}] {s.rsid}", f"significant with p {s.p_value_num:g}, not below 5e-8")
+        if s.stat_significance is StatSignificance.SUGGESTIVE and not GENOME_WIDE <= s.p_value_num < SUGGESTIVE_P:
+            rule(f"studies[{i}] {s.rsid}", f"suggestive with p {s.p_value_num:g}, not in [5e-8, 1e-5)")
+    if supporting and {s.note for s in supporting} == {R_TIER_1_PMID}:
         if tier is not Tier.D:
-            out.append(Finding(Kind.RULE, path, "R-TIER-1", f"only support is PMID 22279548, so tier D, not {tier.value}"))
+            rule("R-TIER-1", f"only support is PMID 22279548, so tier D, not {tier.value}")
         moving = [f"{v.rsid} {g.genotype}" for v in row.variants for g in v.genotypes if g.state is not State.NEUTRAL]
         if moving:
-            out.append(Finding(Kind.RULE, path, "R-TIER-1", f"state neutral on every genotype: {', '.join(moving)}"))
+            rule("R-TIER-1", f"state neutral on every genotype: {', '.join(moving)}")
     if tier in SCORED:
         if not significant:
-            out.append(Finding(Kind.RULE, path, "R-TIER-4", f"tier {tier.value} with no genome-wide significant study"))
-        elif all(s.phenotype_class is PhenotypeClass.MR for s in significant):
-            out.append(Finding(Kind.RULE, path, "R-TIER-4", f"tier {tier.value} on MR-only results"))
-        elif all(s.study_design is StudyDesign.CENTENARIAN_CC for s in significant) and len({s.note for s in significant}) < 2:
-            out.append(Finding(Kind.RULE, path, "R-TIER-2", f"tier {tier.value} on one unreplicated centenarian study; caps at C"))
+            rule("R-TIER-4", f"tier {tier.value} with no genome-wide significant study")
+        if significant and all(s.phenotype_class is PhenotypeClass.MR for s in significant):
+            rule("R-TIER-4", f"tier {tier.value} on MR-only results")
+        if significant and all(s.sample_size == 1 for s in significant):
+            rule("R-TIER-4", f"tier {tier.value} on n = 1 genomes")
+        if (significant and all(s.study_design is StudyDesign.CENTENARIAN_CC for s in significant)
+                and len({s.note for s in significant}) < 2):
+            rule("R-TIER-2", f"tier {tier.value} on one unreplicated centenarian study; caps at C")
         for i, s in enumerate(row.studies):
+            if s.stat_significance is StatSignificance.NOT_SIGNIFICANT:
+                continue
             missing = [c for c in REQUIRED_AB if getattr(s, c) is None]
             if missing:
-                out.append(Finding(Kind.RULE, path, f"studies[{i}] {s.rsid}", f"§6.3 requires on a tier {tier.value} row: {', '.join(missing)}"))
-        tradeoff = "tradeoff" in row.axes.pleiotropy.values
+                rule(f"studies[{i}] {s.rsid}", f"§6.3 requires on a study supporting tier {tier.value}: {', '.join(missing)}")
         for v in row.variants:
             states = [g.state for g in v.genotypes]
             neutral = states.count(State.NEUTRAL)
             if len(states) < 3:
                 out.append(Finding(Kind.INCOMPLETE, path, v.rsid, f"{len(states)} of three genotypes"))
-            elif tradeoff and neutral != len(states):
-                out.append(Finding(Kind.RULE, path, v.rsid, "a trade-off locus is neutral on every genotype"))
-            elif not tradeoff and neutral != 1:
-                out.append(Finding(Kind.RULE, path, v.rsid, f"one genotype, the most common, is neutral; {neutral} are"))
+            elif v.direction is Direction.CONTESTED and neutral != len(states):
+                rule(v.rsid, "a trade-off with unresolved direction (contested) is neutral on every genotype")
+            elif v.direction is not Direction.CONTESTED and neutral != 1:
+                rule(v.rsid, f"one genotype, the most common, is neutral; {neutral} are")
     return out
 
 

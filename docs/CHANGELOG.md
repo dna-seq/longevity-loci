@@ -40,3 +40,8 @@ Newest first.
 - From the plugin's quoting rules (issue #7): a study may carry no quote with a `quote_absent` reason, a
   placeholder `curator` (`ai`, `true`) is refused, and a quote naming neither the study's variant nor its gene is
   listed as `ungrained`.
+- The rules and the fetch, fixed after a fresh auditor's read of RM2: a null study supports nothing (R-TIER-1
+  and §6.3's columns read supporting studies only), a resolved trade-off may have one neutral genotype (only a
+  `contested` one is neutral throughout), `stat_significance` is held to `p_value_num`, n = 1 genomes are not tier
+  A/B; `loci fetch` no longer turns a busy service into an abstract over a cached full text, sorts a refusal and a
+  malformed answer from an outage, never writes an empty text, and writes atomically with the text's digest.

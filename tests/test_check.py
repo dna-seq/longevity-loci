@@ -221,7 +221,14 @@ def _row(tree: Path) -> Path:
 @pytest.mark.parametrize(
     ("old", "new", "rule", "reason"),
     [
-        ("stat_significance: significant", "stat_significance: suggestive", "R-TIER-4", "no genome-wide"),
+        ("stat_significance: significant\n    p_value: \"1.3 × 10−56\"\n    p_value_num: 1.3e-56",
+         "stat_significance: suggestive\n    p_value: \"2e-6\"\n    p_value_num: 2.0e-6", "R-TIER-4", "no genome-wide"),
+        ("p_value_num: 1.3e-56", "p_value_num: 0.2", "studies[0] rs429358", "not below 5e-8"),
+        ("stat_significance: significant\n    p_value: \"1.3 × 10−56\"\n    p_value_num: 1.3e-56",
+         "stat_significance: suggestive\n    p_value: \"0.01\"\n    p_value_num: 0.01", "studies[0] rs429358", "not in [5e-8"),
+        ("    n_cases: 11262        # the abstract: 11,262 cases at the 90th percentile\n    sample_size: 36745",
+         "    n_cases: 1\n    sample_size: 1", "R-TIER-4", "n = 1"),
+        ("    p_value_num: 1.3e-56\n", "", "studies[0] rs429358", "p_value_num"),
         ("phenotype_class: EXTREME_SURVIVAL_CC", "phenotype_class: MR", "R-TIER-4", "MR-only"),
         ("study_design: percentile_case_control_p90", "study_design: centenarian_case_control", "R-TIER-2", "centenarian"),
         ("    effect_allele: C\n", "", "studies[0] rs429358", "effect_allele"),
@@ -232,8 +239,10 @@ def test_hard_rules(tree: Path, old: str, new: str, rule: str, reason: str) -> N
     assert old in text
     _row(tree).write_text(text.replace(old, new))
     rules = [f for f in check_rows(tree / "rows", tree / "corpus") if f.kind is Kind.RULE]
-    assert [f.where for f in rules] == [rule]
-    assert reason in rules[0].detail
+    if not rule:
+        assert rules == []
+        return
+    assert any(f.where == rule and reason in f.detail for f in rules), rules
 
 
 def test_rules_quiet_on_the_fixture(tree: Path) -> None:
@@ -277,3 +286,79 @@ def test_quote_naming_neither_variant_nor_gene_is_flagged(tree: Path, abstract: 
     _row(tree).write_text(_row(tree).read_text().replace("    quote: q2\n", "    quote: q3\n"))
     flagged = [f for f in check_rows(tree / "rows", tree / "corpus") if f.kind is Kind.UNGRAINED]
     assert [f.where for f in flagged] == ["studies[0] rs429358"]
+
+
+NULL_STUDY = """  - rsid: rs429358
+    note: {note}
+    quote_absent: not_found
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European
+    stat_significance: not_significant
+"""
+
+
+def test_a_null_study_supports_nothing(tree: Path) -> None:
+    """§6.3's columns are asked of supporting studies only; a null study is kept as a row and needs none."""
+    _row(tree).write_text(_row(tree).read_text() + NULL_STUDY.format(note="pmid-31413261"))
+    assert not [f for f in check_rows(tree / "rows", tree / "corpus") if f.kind is Kind.RULE]
+
+
+def _r_tier_1_note(tree: Path) -> None:
+    (tree / "corpus" / "pmid-22279548.md").write_text(
+        "---\nkey: pmid-22279548\npmid: 22279548\ntitle: x\nyear: 2012\ntitle_checked: 2026-11-05\n"
+        "depth: abstract\n---\n\n## Reading 2026-11-05, abstract\n\n> [q1] a passage\n")
+
+
+def test_r_tier_1_with_a_null_study_elsewhere(tree: Path) -> None:
+    _r_tier_1_note(tree)
+    text = _row(tree).read_text().replace("note: pmid-31413261\n    quote: q2", "note: pmid-22279548\n    quote: q1")
+    _row(tree).write_text(text + NULL_STUDY.format(note="pmid-31413261"))
+    found = [f for f in check_rows(tree / "rows", tree / "corpus") if f.kind is Kind.RULE and f.where == "R-TIER-1"]
+    assert [f.detail for f in found] == ["only support is PMID 22279548, so tier D, not A"]
+
+
+def test_r_tier_1_neutral_on_every_genotype(tree: Path) -> None:
+    _r_tier_1_note(tree)
+    text = _row(tree).read_text().replace("note: pmid-31413261\n    quote: q2", "note: pmid-22279548\n    quote: q1")
+    text = text.replace("tier: {value: A,", "tier: {value: D,").replace(
+        "    direction: risk\n", "    direction: risk\n    genotypes:\n      - {genotype: CC, state: risk, conclusion: x}\n", 1)
+    _row(tree).write_text(text)
+    found = [f for f in check_rows(tree / "rows", tree / "corpus") if f.kind is Kind.RULE]
+    assert [(f.where, f.detail) for f in found] == [("R-TIER-1", "state neutral on every genotype: rs429358 CC")]
+
+
+GENOTYPES = ("    genotypes:\n      - {{genotype: TT, state: {a}, conclusion: x}}\n"
+             "      - {{genotype: CT, state: {b}, conclusion: x}}\n      - {{genotype: CC, state: {c}, conclusion: x}}\n")
+
+
+@pytest.mark.parametrize(
+    ("direction", "states", "fails"),
+    [
+        ("risk", ("neutral", "risk", "risk"), False),
+        ("contested", ("neutral", "neutral", "neutral"), False),
+        ("contested", ("neutral", "risk", "risk"), True),
+        ("risk", ("neutral", "neutral", "risk"), True),
+    ],
+)
+def test_genotype_states_by_direction(tree: Path, direction: str, states: tuple[str, str, str], fails: bool) -> None:
+    g = GENOTYPES.format(a=states[0], b=states[1], c=states[2])
+    text = _row(tree).read_text().replace("    direction: risk\n", f"    direction: {direction}\n" + g, 1)
+    _row(tree).write_text(text)
+    rules = [f for f in check_rows(tree / "rows", tree / "corpus") if f.kind is Kind.RULE]
+    assert [f.where for f in rules] == (["rs429358"] if fails else [])
+
+
+def test_two_genotypes_are_incomplete(tree: Path) -> None:
+    g = "    genotypes:\n      - {genotype: TT, state: neutral, conclusion: x}\n      - {genotype: CT, state: risk, conclusion: x}\n"
+    _row(tree).write_text(_row(tree).read_text().replace("    direction: risk\n", "    direction: risk\n" + g, 1))
+    found = {(f.where, f.detail) for f in check_rows(tree / "rows", tree / "corpus") if f.kind is Kind.INCOMPLETE}
+    assert ("rs429358", "2 of three genotypes") in found
+
+
+def test_r_tier_1_silent_when_other_support_exists(tree: Path) -> None:
+    _r_tier_1_note(tree)
+    text = _row(tree).read_text()
+    study = text[text.index("  - rsid: rs429358\n    note:"):]
+    _row(tree).write_text(text + study.replace("note: pmid-31413261\n    quote: q2", "note: pmid-22279548\n    quote: q1"))
+    assert "R-TIER-1" not in {f.where for f in check_rows(tree / "rows", tree / "corpus")}
