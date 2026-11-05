@@ -26,3 +26,6 @@ Newest first.
 - `just-dna-enricher` 0.7.3 a dependency (the project now needs Python 3.13, as it does), and the module-creator
   plugin enabled for every clone in `.claude/settings.json`, pinned at v0.48.0. The plugin is not yet seen loaded
   in a session: a session started after this commit shows it.
+- The inputs fetched and recorded (`docs/INPUTS.md`): v1's `longevitymap.sqlite`, HAGR's Build 3 download and a
+  snapshot of HAGR's live entry pages (`scripts/hagr_snapshot.py`), with digests and HAGR's CC BY 3.0 licence.
+  The live site has not moved much since v1: 19 of v1's ids are now empty upstream, no text edits seen.
