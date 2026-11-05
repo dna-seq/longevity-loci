@@ -2,8 +2,10 @@
 
 `dna-seq/just-module-creator`, tags `vX.Y.Z`: the tools the module and curator seats build the annotation module
 with. Kept by the liaison seat (`docs/seats/LIAISON.md`); another seat that meets a symptom in the plugin sends it
-there rather than writing here. The plugin's repository runs no seats and keeps no consumer inbox: a defect goes
-to its issues, through the kit's `report-to-kit --to dna-seq/just-module-creator`.
+there rather than writing here. The plugin's repository keeps no consumer inbox: a defect goes to its issues,
+through the kit's `report-to-kit --to dna-seq/just-module-creator`. Since 2026-11-05 it runs seats (lead, pm,
+tester, liaison); its lead wakes on this seat and may wake this seat and our lead (our cdd95d3), for a release or
+a change to the tool surface we rely on.
 
 Watched on the liaison's machine from a clone outside this repository (its line `plugin` in the liaison state
 file): `[seat.liaison.watch.plugin]` says each new tag.

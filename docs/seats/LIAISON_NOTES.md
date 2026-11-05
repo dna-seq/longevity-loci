@@ -33,6 +33,8 @@ Own machinery before the kit: none for this seat (no scripts, hooks or watchers 
 
 ## Open
 
+- `docs/seats/LIAISON.md` says the plugin's repository runs no seats; since 2026-11-05 it runs four. A priming
+  change (the skill `change-priming`), for the person: the filing route itself is unchanged (issues, no inbox).
 - The compiler's 0.8, waited on (the person, 2026-11-05): read at the cut, `waits until` the tag; the branch's
   changelog commits come in by `watch.compiler-next`.
 - The plugin's `QUOTING.md`: read, filed as #7 (done). The plugin is not yet seen loaded in a session.
