@@ -606,7 +606,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "duckdb", specifier = "<2" },
-    { name = "just-dna-enricher", specifier = ">=0.7.3" },
+    { name = "just-dna-enricher", specifier = ">=0.7.3,<0.8" },
     { name = "polars", specifier = "<2" },
     { name = "pydantic", specifier = ">=2.14.2" },
     { name = "python-dotenv", specifier = ">=1.2.4" },

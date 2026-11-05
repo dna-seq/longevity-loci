@@ -8,8 +8,8 @@ its terms with the next `Sn` from its ledger, appended and never committed; then
 `just-dna-compiler/triage` in `agent-chat` naming the `Sn` (its triage wakes on this seat since their a8262397).
 
 Watched on the liaison's machine from a clone outside this repository (its line `compiler` in the liaison state
-file): `[seat.liaison.watch.compiler]` says each new tag, `[seat.liaison.watch.compiler-next]` each commit to
-`docs/INTEGRATION_0_8.md` (the consumers' guide) on the `0.8` branch (its line `compiler-next`). The coming minor (`0.8`) is built on a branch of its own;
+file): `[seat.liaison.watch.compiler]` says each new tag. The `0.8` branch closed at the cut (`edf2661c`) and its watcher
+was retired; `main` takes the 0.8.x patches, which come as tags. The coming minor (`0.8`) is built on a branch of its own;
 the compiler's liaison maps it, and is asked before this seat maps it again. The registry's liaison keeps an
 adoption map of `0.8` (rows M1 to M11, in `docs/UPSTREAM_COMPILER.md` of `dna-seq/just-dna-registry`, read from the
 compiler's `0.8` branch); reuse it at the cut, and tell that liaison where our use differs (its offer, 2026-11-05).
@@ -53,9 +53,19 @@ read mark stays at `v0.7.3` until the cut; the cut is read again in full.
   trio, so there is no suite to run against the branch.
 - **Release candidate at `c90e6d98`** (2026-11-05): audit round 3 found no blocker; new §1.41 to §1.43 (RM395,
   RM393, RM394: the `--rederive` drift report's seven arms, and its remedy per source). What remains is the cut.
+- **Cut as 0.8.0** (2026-11-05, `edf2661c`; `main` at `e97339a3`): no behaviour change since `c90e6d98`. Not yet
+  on PyPI nor tagged. Read; not adopted: it waits on the plugin (its cap below 0.8), and our cap holds it out.
+  The read mark moves to `v0.8.0` when the tag lands.
 
 ## Caps
 
+- **`just-dna-enricher<0.8`** (2026-11-05, the liaison's). 0.8.0 is cut (`edf2661c`) and goes to PyPI on the
+  maintainer's publish; the weekly bump would then take it. Its enricher pulls the Ensembl lane from a new
+  repository (`ensembl_variations_split`) into the same `<base>/ensembl_variations` directory, re-pulling a cache
+  that names the old one, and a cache holding both releases resolves to nothing (§1.29, upgrade order step 3). The
+  plugin's server, capped below 0.8, reads that directory on this machine. **Lift when** the plugin moves to 0.8;
+  then the upgrade order is the guide's §2: floors, `uv lock`, `cache pull --only ensembl` once, recompile,
+  `enrich --rederive` online, validate.
 - **`duckdb<2`, `polars<2`** (2026-11-05, the liaison's). The lock had moved to duckdb 2.0.0 and polars 2.1.0
   through the enricher, which caps neither. The module-creator plugin's server (`v0.48.1`'s lock) runs duckdb
   1.5.5 and polars 1.44.2 and shares this machine's enricher cache. From the compiler's liaison (their

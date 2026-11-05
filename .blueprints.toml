@@ -90,11 +90,6 @@ cmd = "sh kit:classes/liaison/watch-upstream.sh plugin --tags"
 [seat.liaison.watch.compiler]
 cmd = "sh kit:classes/liaison/watch-upstream.sh compiler --tags"
 
-# The compiler's coming minor, built for longevitymap v2 (the person, 2026-11-05): each commit to its consumers' guide,
-# INTEGRATION_0_8.md, on its branch (the changelog woke on every merge, twenty a batch, all summed in the guide).
-[seat.liaison.watch.compiler-next]
-cmd = "sh kit:classes/liaison/watch-upstream.sh compiler-next --path docs/INTEGRATION_0_8.md"
-
 [seat.liaison.watch.registry]
 cmd = "sh kit:classes/liaison/watch-upstream.sh registry --tags"
 
