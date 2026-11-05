@@ -19,3 +19,6 @@ Newest first.
   p_value_num, age_band, curator), a study's rsid held to the row's variants, `negatives` required on a trade-off
   locus, rows held to the seed list's names and to one row per locus, a quote held to word boundaries and to one
   non-empty line, readings oldest first with their depth, and an empty or missing input no longer a pass.
+- `just-dna-enricher` 0.7.3 a dependency (the project now needs Python 3.13, as it does), and the module-creator
+  plugin enabled for every clone in `.claude/settings.json`, pinned at v0.48.0. The plugin is not yet seen loaded
+  in a session: a session started after this commit shows it.

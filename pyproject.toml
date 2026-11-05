@@ -3,8 +3,9 @@ name = "longevity-loci"
 version = "0.1.0"
 description = "Formats and checks for the re-curation of the longevity module: curated rows, evidence notes, the article cache."
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.13"
 dependencies = [
+    "just-dna-enricher>=0.7.3",
     "pydantic>=2.14.2",
     "python-dotenv>=1.2.4",
     "pyyaml>=6.0.3",

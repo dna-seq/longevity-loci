@@ -121,7 +121,11 @@ verdicts only.
 
 ## 4. Build, run, test
 
-- `uv sync`: the environment (Python 3.11+, uv; never `uv pip install`).
+- `uv sync`: the environment (Python 3.13+, uv; never `uv pip install`). It carries `just-dna-enricher` (and through
+  it `just-dna-compiler` and `just-dna-format`), the module toolchain's enrichment of rsIDs and coordinates.
+- The module-creator plugin (`dna-seq/just-module-creator`, its marketplace `just-dna`) is enabled for every clone
+  by `.claude/settings.json`, pinned at a tag: its skills (`find-evidence`, the module authoring guides) and its MCP
+  server's literature and schema tools. The liaison moves the pin.
 - `uv run pytest`: the tests; the quote tests fetch one real abstract from Europe PMC and skip offline.
 - `uv run loci check rows`: every row parses, is named for its locus, cites only quotes the corpus holds.
 - `uv run loci check quotes`: every note's quote is found verbatim in `$LOCI_CACHE`. Exit 0 passed, 1 a failure,
