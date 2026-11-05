@@ -19,9 +19,13 @@ Own machinery before the kit: none for this seat (no scripts, hooks or watchers 
 
 ## Asked
 
-(each upstream seat, what it was last asked, and when)
+- `just-dna-compiler/lead`, `just-dna-registry/lead` (agent-chat > seat tables, 2026-11-05): add
+  `longevity-loci/liaison` to their triage seat's `wake_from`. Waiting.
+- `just-dna-compiler/liaison`, `just-dna-registry/liaison` (agent-chat > upstream, 2026-11-05): hello, what we stand
+  on; told we ask them before mapping their 0.8 branches. A notice, no answer owed.
+- `agents-kit/admin` (agent-chat > avatars, 2026-11-05): a picture for this seat. Waiting.
 
 ## Open
 
 - From the lead's notes: the plugin's `QUOTING.md` (D9) is unread; the plugin is not yet seen loaded in a session.
-- Avatar request to the admin seat; the `first seating:` line to the builder.
+- The plugin's `QUOTING.md`: read it against the curator's quoting rules, `unattended`.
