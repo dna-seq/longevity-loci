@@ -46,6 +46,11 @@ read mark stays at `v0.7.3` until the cut; the cut is read again in full.
   `eur_only_evidence` (derived into `weights.parquet` from `ancestry`). Our tokens stay curation; the export
   never authors them. #6.
 - **Fits:** `phenotype_class` (v2's twelve), a preprint as `pmid=NONE` with `doi`.
+- **Guide moved to `a4a401e7`** (2026-11-05): our block gains the plugin-cap point (its item 3); new §1.35 to §1.40
+  and §4, known issues. For the module seat: enrich online, since offline cannot left-align an indel (RM385, fixed
+  in 0.9) and an offline and an online fill can differ (RM376); an rsID no link can host now has no
+  `resolution.csv` row, where 0.7 wrote `not_found` (RM382). No git dependency here to move: nothing imports the
+  trio, so there is no suite to run against the branch.
 
 ## Backlog
 
