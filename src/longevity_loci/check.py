@@ -4,6 +4,7 @@ that could not be checked (no cached text) is unknown, never a pass and never a 
 
 from __future__ import annotations
 
+import csv
 import logging
 import re
 import unicodedata
@@ -16,19 +17,20 @@ from pathlib import Path
 import yaml
 from pydantic import ValidationError
 
-from longevity_loci.models import CITE, NoteHead, Quote, Row
+from longevity_loci.models import CITE, Depth, NoteHead, Quote, Row
 
 log = logging.getLogger(__name__)
 
-READING = re.compile(r"^## Reading (?P<date>\d{4}-\d{2}-\d{2})\b")
-QUOTE_LINE = re.compile(r"^> \[(?P<qid>q\d+)\] (?P<text>.+)$")
-ROW_NAME = re.compile(r"^(?P<id>\d+)-(?P<name>.+)\.yaml$")
+READING = re.compile(r"^## Reading (?P<date>\d{4}-\d{2}-\d{2}), (?P<depth>abstract|full_text|supplement)\s*$")
+QUOTE_LINE = re.compile(r"^> \[(?P<qid>q\d+)\] (?P<text>.*)$")
+DEPTH_ORDER = [Depth.ABSTRACT, Depth.FULL_TEXT, Depth.SUPPLEMENT]
 
 
 class Kind(StrEnum):
     OK = "ok"
     MALFORMED = "malformed"  # the file does not parse into its model
     MISNAMED = "misnamed"  # the file's name does not match what it holds
+    DUPLICATE = "duplicate"  # two rows hold one locus_id
     NO_NOTE = "no_note"  # a cite names a note that is not in the corpus
     NO_QUOTE = "no_quote"  # a cite names a quote id its note does not hold
     UNSUPPORTED = "unsupported"  # an axis or flag cites nothing
@@ -37,7 +39,7 @@ class Kind(StrEnum):
     NO_TEXT = "no_text"  # no cached text for the note: unknown, not checked
 
 
-FAILING = frozenset({Kind.MALFORMED, Kind.MISNAMED, Kind.NO_NOTE, Kind.NO_QUOTE, Kind.NOT_FOUND})
+FAILING = frozenset({Kind.MALFORMED, Kind.MISNAMED, Kind.DUPLICATE, Kind.NO_NOTE, Kind.NO_QUOTE, Kind.NOT_FOUND})
 UNKNOWN = frozenset({Kind.NO_TEXT})
 
 
@@ -74,30 +76,57 @@ def _front_matter(text: str) -> tuple[dict, list[str]]:
 
 
 def load_note(path: Path) -> Note:
-    """A note: its front matter, then readings (`## Reading YYYY-MM-DD ...`), each holding `> [qN] text` lines."""
+    """A note: its front matter, then readings (`## Reading YYYY-MM-DD, <depth>`, oldest first), each holding
+    one-line `> [qN] text` quotes."""
     head_raw, body = _front_matter(path.read_text(encoding="utf-8"))
     note = Note(path=path, head=NoteHead.model_validate(head_raw))
     reading: date | None = None
-    for line in body:
-        if m := READING.match(line):
-            reading = date.fromisoformat(m["date"])
+    deepest: Depth | None = None
+    after_quote = False
+    for n, line in enumerate(body, start=1):
+        if line.startswith("## Reading"):
+            m = READING.match(line)
+            if m is None:
+                raise ValueError(f"body line {n}: a reading heading is '## Reading YYYY-MM-DD, <depth>': {line!r}")
+            day = date.fromisoformat(m["date"])
+            if reading is not None and day < reading:
+                raise ValueError(f"body line {n}: readings go oldest first; {day} follows {reading}")
+            reading, depth = day, Depth(m["depth"])
+            if deepest is None or DEPTH_ORDER.index(depth) > DEPTH_ORDER.index(deepest):
+                deepest = depth
+            after_quote = False
         elif m := QUOTE_LINE.match(line):
             if reading is None:
-                raise ValueError(f"quote {m['qid']} stands before any '## Reading <date>' heading")
+                raise ValueError(f"quote {m['qid']} stands before any reading heading")
             if m["qid"] in note.quotes:
                 raise ValueError(f"quote id {m['qid']} is used twice")
+            if not normalise(m["text"]).strip('"').strip():
+                raise ValueError(f"quote {m['qid']} is empty")
             note.quotes[m["qid"]] = Quote(qid=m["qid"], text=m["text"].strip(), reading=reading)
+            after_quote = True
+        elif line.startswith(">") and after_quote:
+            raise ValueError(f"body line {n}: a quote is one line; a quote's continuation is not checked")
+        else:
+            after_quote = False
+    if deepest is not None and note.head.depth != deepest:
+        raise ValueError(f"depth is {note.head.depth.value}; the deepest reading is {deepest.value}")
     return note
+
+
+def _files(directory: Path, pattern: str, label: str) -> list[Path]:
+    if not directory.is_dir():
+        raise FileNotFoundError(f"no {label} directory: {directory}")
+    return sorted(directory.glob(pattern))
 
 
 def load_corpus(corpus: Path) -> tuple[dict[str, Note], list[Finding]]:
     notes: dict[str, Note] = {}
     findings: list[Finding] = []
-    for path in sorted(corpus.glob("*.md")):
+    for path in _files(corpus, "*.md", "corpus"):
         try:
             note = load_note(path)
         except (ValidationError, ValueError, yaml.YAMLError) as e:
-            findings.append(Finding(Kind.MALFORMED, path, detail=str(e).splitlines()[0]))
+            findings.append(Finding(Kind.MALFORMED, path, detail=str(e).replace("\n", " ")[:240]))
             continue
         if path.stem != note.head.key:
             findings.append(Finding(Kind.MISNAMED, path, detail=f"holds {note.head.key}"))
@@ -106,17 +135,32 @@ def load_corpus(corpus: Path) -> tuple[dict[str, Note], list[Finding]]:
     return notes, findings
 
 
-def check_rows(rows: Path, corpus: Path) -> list[Finding]:
-    """Every row parses, is named for its locus, and cites only quotes its corpus holds."""
+def load_seed(seed: Path) -> dict[int, str]:
+    """The seed list's locus ids and names (docs/longevitymap_v2/data/seed_variants.csv)."""
+    with seed.open(encoding="utf-8") as f:
+        return {int(r["locus_id"]): r["locus_name"] for r in csv.DictReader(f) if r["locus_id"]}
+
+
+def check_rows(rows: Path, corpus: Path, seed: dict[int, str] | None = None) -> list[Finding]:
+    """Every row parses, is named for its locus (the seed list's name, where the seed holds its id), holds a locus
+    no other row holds, and cites only quotes its corpus holds."""
     notes, findings = load_corpus(corpus)
-    for path in sorted(rows.glob("*.yaml")):
+    stray = [p for p in _files(rows, "*", "rows") if p.suffix in (".yml", ".json")]
+    findings += [Finding(Kind.MISNAMED, p, detail="a row is <locus_id>-<locus_name>.yaml") for p in stray]
+    held: dict[int, Path] = {}
+    for path in _files(rows, "*.yaml", "rows"):
         try:
             row = Row.model_validate(yaml.safe_load(path.read_text(encoding="utf-8")))
         except (ValidationError, yaml.YAMLError) as e:
-            findings.append(Finding(Kind.MALFORMED, path, detail=str(e).splitlines()[0]))
+            findings.append(Finding(Kind.MALFORMED, path, detail=str(e).replace("\n", " ")[:240]))
             continue
         if path.name != f"{row.locus_id}-{row.locus_name}.yaml":
             findings.append(Finding(Kind.MISNAMED, path, detail=f"holds {row.locus_id}-{row.locus_name}"))
+        if seed is not None and row.locus_id in seed and seed[row.locus_id] != row.locus_name:
+            findings.append(Finding(Kind.MISNAMED, path, detail=f"the seed list names locus {row.locus_id} {seed[row.locus_id]}"))
+        if row.locus_id in held:
+            findings.append(Finding(Kind.DUPLICATE, path, detail=f"locus {row.locus_id} is also {held[row.locus_id].name}"))
+        held.setdefault(row.locus_id, path)
         for name in type(row.axes).model_fields:
             if not getattr(row.axes, name).cites:
                 findings.append(Finding(Kind.UNSUPPORTED, path, f"axes.{name}"))
@@ -137,23 +181,42 @@ def check_rows(rows: Path, corpus: Path) -> list[Finding]:
 
 
 _TRANSLATE = str.maketrans(
-    {"‘": "'", "’": "'", "“": '"', "”": '"', "‐": "-", "‑": "-", "‒": "-",
-     "–": "-", "—": "-", "−": "-", "­": None, " ": " "}
+    {"\u2018": "'", "\u2019": "'", "\u201c": '"', "\u201d": '"', "\u2010": "-", "\u2011": "-", "\u2012": "-",
+     "\u2013": "-", "\u2014": "-", "\u2212": "-", "\u00ad": None, "\u00a0": " "}
 )
+_BREAK = re.compile(r"[-\u00ad\u2010\u2011][ \t]*\n[ \t]*")
+
+
+def _nfkc_keeping_scripts(text: str) -> str:
+    """NFKC (ligatures, full-width forms, odd spaces), except super- and subscripts: 10⁸ is not 108."""
+    return "".join(
+        c if unicodedata.decomposition(c).startswith(("<super>", "<sub>")) else unicodedata.normalize("NFKC", c)
+        for c in text
+    )
 
 
 def normalise(text: str) -> str:
     """What "verbatim" survives: compatibility forms (ligatures, full-width), typographic quotes and dashes,
-    soft hyphens, and any run of whitespace. Case, words and punctuation are kept as written."""
-    text = unicodedata.normalize("NFKC", text).translate(_TRANSLATE)
+    soft hyphens, and any run of whitespace. Case, words, digits, super- and subscripts and punctuation are kept
+    as written; a minus sign (U+2212) reads as a hyphen, as PDFs and typed notes mix the two."""
+    text = _nfkc_keeping_scripts(text).translate(_TRANSLATE)
     return re.sub(r"\s+", " ", text).strip()
 
 
 def text_forms(text: str) -> tuple[str, str]:
-    """The cached text with a hyphen at a line break kept (genome-wide) and joined (signif-icant)."""
-    kept = normalise(re.sub(r"-[ \t]*\n[ \t]*", "-", text))
-    joined = normalise(re.sub(r"-[ \t]*\n[ \t]*", "", text))
+    """The cached text with a hyphen at a line break kept (genome-wide) and joined (signif-icant); an ASCII hyphen,
+    a soft hyphen or a Unicode hyphen at the break are all read both ways."""
+    kept = normalise(_BREAK.sub("-", text))
+    joined = normalise(_BREAK.sub("", text))
     return kept, joined
+
+
+def located(quote: str, forms: tuple[str, ...]) -> bool:
+    """The quote occurs in a form of the text, starting and ending at a word boundary: a quote may not begin or end
+    inside a word."""
+    wanted = normalise(quote).strip('"').strip()
+    pattern = re.compile(r"(?<!\w)" + re.escape(wanted) + r"(?!\w)")
+    return any(pattern.search(f) for f in forms)
 
 
 def check_quotes(corpus: Path, cache: Path) -> list[Finding]:
@@ -162,12 +225,11 @@ def check_quotes(corpus: Path, cache: Path) -> list[Finding]:
     for key, note in notes.items():
         cached = cache / f"{key}.txt"
         if not cached.is_file():
-            findings += [Finding(Kind.NO_TEXT, note.path, q, str(cached.name)) for q in note.quotes]
+            findings += [Finding(Kind.NO_TEXT, note.path, q, cached.name) for q in note.quotes]
             continue
         forms = text_forms(cached.read_text(encoding="utf-8", errors="strict"))
         for qid, quote in note.quotes.items():
-            wanted = normalise(quote.text).strip('"')
-            kind = Kind.LOCATED if any(wanted in f for f in forms) else Kind.NOT_FOUND
+            kind = Kind.LOCATED if located(quote.text, forms) else Kind.NOT_FOUND
             findings.append(Finding(kind, note.path, qid, quote.text[:80]))
     return findings
 

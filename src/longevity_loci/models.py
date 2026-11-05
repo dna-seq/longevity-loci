@@ -93,12 +93,53 @@ class AgeConfidence(StrEnum):
 
 
 class Cell(StrEnum):
-    """An outcome-profile cell. `untested` is never read as no effect (§4.2)."""
+    """An outcome-profile cell, as §4.2 writes it (its minus is U+2212). `untested` is never read as no effect."""
 
     PLUS = "+"
     ZERO = "0"
-    MINUS = "-"
+    MINUS = "−"
     UNTESTED = "untested"
+
+
+def _cell(v: object) -> object:
+    """YAML reads a bare 0 as a number and a bare - as nothing; a typed hyphen is the minus."""
+    if v == 0 and not isinstance(v, bool):
+        return "0"
+    return "−" if v == "-" else v
+
+
+class Who(StrEnum):
+    SELF = "act_who:self"
+    DOCTOR = "act_who:doctor"
+
+
+# §4.2's tokens, closed where the requirements close them. An exact token, or a prefix and the pattern of its value;
+# a prefix whose value the requirements leave open (mech:<area>) takes any lower-case name.
+EXACT_TOKENS = frozenset({
+    "broad", "tradeoff", "nonadditive", "mr:drug_target_proxy", "ancestry_tag", "age_dependent", "eur_only_evidence",
+    "legacy_longevitymap", "replication_failed", "preprint", "pleiotropic", "conditional",
+})
+TOKEN_VALUES: dict[str, str] = {
+    "causal": r"C[1-4]", "effector": r"E[1-4]", "ap": r"weak|moderate|strong", "sex_specific": r"m|f",
+    "PROTECT": r"ABSENCE_OF_RISK|PRESENCE|BUFFERING", "animal": r"genage_mouse|mouse_qtl|worm_rnai",
+    "animal_dir": r"concordant|discordant|nonmonotone", "act_who": r"self|doctor",
+    "act_test": r"lpa|ldl|bp|hba1c", "act_screen": r"skin", "act_behaviour": r"smoking|weight",
+    "ld_proxy_of": r"rs\d+", "mediator": r"EFO_\d+", "also_in": r"[a-z0-9_]+", "mech": r"[a-z0-9_]+",
+    "context": r"[a-z0-9_]+", "ancestry_specific": r"[a-z0-9_]+", "hallmark": r"[a-z0-9_]+",
+}
+
+
+def check_token(token: str) -> str:
+    if token in EXACT_TOKENS:
+        return token
+    prefix, _, value = token.partition(":")
+    if prefix in TOKEN_VALUES and re.fullmatch(TOKEN_VALUES[prefix], value):
+        return token
+    raise ValueError(f"{token!r} is not a §4.2 token (docs/FORMATS.md lists them)")
+
+
+def _check_tokens(tokens: list[str]) -> list[str]:
+    return [check_token(t) for t in tokens]
 
 
 class Actionability(StrEnum):
@@ -162,6 +203,7 @@ class MechanismAxis(Claim):
 
 class PleiotropyAxis(Claim):
     values: list[str] = Field(default_factory=list)  # §4.2 tokens: mech:<area>, broad, tradeoff, ...
+    _t = field_validator("values")(_check_tokens)
 
 
 class AgeAxis(Claim):
@@ -173,16 +215,19 @@ class OutcomeAxis(Claim):
     healthspan: Cell
     lifespan: Cell
     exceptional_survival: Cell
+    _c = field_validator("healthspan", "lifespan", "exceptional_survival", mode="before")(_cell)
 
 
 class ActionabilityAxis(Claim):
     label: Actionability
     what: list[str] = Field(default_factory=list)  # act_test:lpa, act_behaviour:smoking, ...
-    who: str | None = None  # act_who:self | act_who:doctor
+    who: Who | None = None
+    _t = field_validator("what")(_check_tokens)
 
 
 class ContextAxis(Claim):
     values: list[str] = Field(default_factory=list)  # sex_specific:<m|f>, age_dependent, eur_only_evidence, ...
+    _t = field_validator("values")(_check_tokens)
 
 
 class Axes(Strict):
@@ -201,6 +246,7 @@ class Flag(Claim):
     """One of §4.2's other tokens (causal:C2, effector:E1, PROTECT:PRESENCE, animal:genage_mouse, ld_proxy_of:rs…)."""
 
     token: str
+    _t = field_validator("token")(check_token)
 
 
 class Genotype(Strict):
@@ -212,12 +258,26 @@ class Genotype(Strict):
 
 
 class Variant(Strict):
+    """A §6.2 `variants.csv` locus: the per-variant columns, then its genotypes."""
+
     rsid: str = Field(pattern=r"^rs\d+$")
-    gene: str
+    gene: str  # the effector call, not the nearest gene
+    phenotype: str | None = None  # plain outcome label, at most six words
+    trait_efo_id: str | None = None  # the lifespan trait; a mediator goes in flags as mediator:EFO_…
     effect_allele: str | None = None
+    effect_size: float | None = None
+    effect_measure: EffectMeasure | None = None
+    stat_significance: StatSignificance | None = None
     direction: Direction
     genotypes: list[Genotype] = Field(default_factory=list)
     negatives: str | None = None
+
+    @field_validator("phenotype")
+    @classmethod
+    def _short(cls, v: str | None) -> str | None:
+        if v is not None and len(v.split()) > 6:
+            raise ValueError(f"phenotype is at most six words: {v!r}")
+        return v
 
 
 class Study(Strict):
@@ -228,9 +288,12 @@ class Study(Strict):
     quote: str
     phenotype_class: PhenotypeClass
     study_design: StudyDesign
-    population: str
+    population: str = Field(min_length=1)
     stat_significance: StatSignificance
-    p_value: str | None = None
+    p_value: str | None = None  # as the article writes it
+    p_value_num: float | None = Field(default=None, ge=0, le=1)
+    age_band: str | None = None  # one study row per age band (§4.2, age of action)
+    curator: str | None = None  # who located the quote
     effect_size: float | None = None
     effect_measure: EffectMeasure | None = None
     effect_allele: str | None = None
@@ -259,6 +322,18 @@ class Row(Strict):
     flags: list[Flag] = Field(default_factory=list)
     variants: list[Variant]
     studies: list[Study] = Field(default_factory=list)
+
+    @model_validator(mode="after")
+    def _consistent(self) -> Row:
+        rsids = {v.rsid for v in self.variants}
+        orphans = sorted({s.rsid for s in self.studies} - rsids)
+        if orphans:
+            raise ValueError(f"studies name rsids the row's variants do not: {', '.join(orphans)}")
+        if "tradeoff" in self.axes.pleiotropy.values:
+            bare = [v.rsid for v in self.variants if not v.negatives]
+            if bare:
+                raise ValueError(f"a tradeoff locus says what the longer-life version may raise (negatives): {', '.join(bare)}")
+        return self
 
     def cites(self) -> list[tuple[str, str]]:
         """Every (where, cite) in the row, in file order."""
@@ -292,6 +367,11 @@ class NoteHead(Strict):
     def _key_matches(self) -> NoteHead:
         if self.pmid is not None and self.key != f"pmid-{self.pmid}":
             raise ValueError(f"key {self.key} does not name pmid {self.pmid}")
-        if self.pmid is None and self.doi is None:
-            raise ValueError("a note names its pmid, or its doi for a preprint")
+        if self.pmid is None:
+            if self.doi is None:
+                raise ValueError("a note names its pmid, or its doi for a preprint")
+            if self.key != "doi-" + self.doi.replace("/", "_"):
+                raise ValueError(f"key {self.key} does not name doi {self.doi}")
+        if not 1900 <= self.year <= date.today().year + 1:
+            raise ValueError(f"year {self.year} is not a publication year")
         return self

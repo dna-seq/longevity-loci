@@ -14,3 +14,8 @@ Newest first.
   (every cite resolves to a note and a quote id) and `uv run loci check quotes` (every quote is found in the
   article's cached text, or said unknown when none is cached). Tested on a real abstract fetched at run time;
   each check broken on purpose and its test seen to fail. Not run yet on curated rows: none exist.
+- The checks tightened after a critic's read of the formats: §4.2's tokens closed where the requirements close
+  them, outcome cells read as §4.2 writes them, §6.2/§6.3's missing fields added (phenotype, trait_efo_id,
+  p_value_num, age_band, curator), a study's rsid held to the row's variants, `negatives` required on a trade-off
+  locus, rows held to the seed list's names and to one row per locus, a quote held to word boundaries and to one
+  non-empty line, readings oldest first with their depth, and an empty or missing input no longer a pass.

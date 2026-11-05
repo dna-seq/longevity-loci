@@ -13,9 +13,10 @@ import pytest
 import yaml
 
 from longevity_loci.models import Row
-from longevity_loci.check import Kind, check_quotes, check_rows, load_note, normalise, text_forms
+from longevity_loci.check import Kind, check_quotes, check_rows, load_note, load_seed, normalise, text_forms
 
 ASSETS = Path(__file__).resolve().parent.parent / "assets"
+SEED = ASSETS.parent / "docs" / "longevitymap_v2" / "data" / "seed_variants.csv"
 EPMC = "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:{pmid}%20AND%20SRC:MED&resultType=core&format=json"
 
 
@@ -84,12 +85,87 @@ def test_quotes_located_in_real_abstract(tree: Path, abstract: str) -> None:
 
 
 def test_quotes_survive_pdf_extraction_forms(tree: Path, abstract: str) -> None:
-    """Line breaks, a hyphen split across a line, a soft hyphen and odd spaces are what a PDF's text adds."""
-    pdfish = abstract.replace("previous reports", "previ-\nous re­ports").replace(" odds of", "\n odds of")
-    pdfish = pdfish.replace("percentile", "percentiﬂe".replace("ﬂ", "l"))  # same word: control
-    pdfish = pdfish.replace("rs429358", "rs429358").replace("Consistent", "Consiﬁstent".replace("ﬁ", ""))
+    """Line breaks, hyphens split across a line (ASCII, soft, Unicode) and odd spaces are what a PDF's text adds."""
+    pdfish = (abstract.replace("previous", "previ-\nous").replace("reports", "re\u00ad\nports")
+              .replace("percentile", "percen\u2010\ntile").replace(" odds of", "\n odds\u00a0of")
+              .replace("90th and", "90th\u2009and"))
+    assert pdfish != abstract
     (tree / "cache" / "pmid-31413261.txt").write_text(pdfish)
     assert kinds(check_quotes(tree / "corpus", tree / "cache")) == {Kind.LOCATED: 1}
+
+
+def test_quotes_must_start_and_end_at_word_boundaries(tree: Path, abstract: str) -> None:
+    note = tree / "corpus" / "pmid-31413261.md"
+    note.write_text(note.read_text() + "\n> [q2] onsistent with previous reports\n")
+    (tree / "cache" / "pmid-31413261.txt").write_text(abstract)
+    found = {f.where: f.kind for f in check_quotes(tree / "corpus", tree / "cache")}
+    assert found == {"q1": Kind.LOCATED, "q2": Kind.NOT_FOUND}
+
+
+@pytest.mark.parametrize(
+    ("addition", "reason"),
+    [
+        ("> [q2] \"\"\n", "empty"),
+        ("## Reading 2026-1-5, abstract\n", "reading heading"),
+        ("## Reading 2020-01-01, abstract\n", "oldest first"),
+        ("## Reading 2026-11-06, full_text\n", "deepest reading"),
+        ("> continued on a second line\n", "one line"),
+    ],
+)
+def test_note_malformed(tree: Path, addition: str, reason: str) -> None:
+    note = tree / "corpus" / "pmid-31413261.md"
+    text = note.read_text()
+    if reason == "one line":
+        text = text.replace("shows the opposite.\n", "shows the opposite.\n" + addition)
+    else:
+        text = text + "\n" + addition
+    note.write_text(text)
+    with pytest.raises(ValueError, match=reason):
+        load_note(note)
+
+
+def test_empty_and_missing_inputs_are_not_a_pass(tmp_path: Path) -> None:
+    with pytest.raises(FileNotFoundError):
+        check_rows(tmp_path / "nowhere", tmp_path / "nowhere")
+    (tmp_path / "rows").mkdir()
+    (tmp_path / "corpus").mkdir()
+    assert check_rows(tmp_path / "rows", tmp_path / "corpus") == []
+
+
+def test_rows_duplicate_locus_and_seed_name(tree: Path) -> None:
+    text = (tree / "rows" / "96-APOE.yaml").read_text()
+    (tree / "rows" / "96-APOC1.yaml").write_text(text.replace("locus_name: APOE", "locus_name: APOC1"))
+    seed = load_seed(SEED)
+    assert seed[96] == "APOE"
+    found = {(f.kind, f.path.name) for f in check_rows(tree / "rows", tree / "corpus", seed)}
+    assert (Kind.DUPLICATE, "96-APOE.yaml") in found
+    assert (Kind.MISNAMED, "96-APOC1.yaml") in found
+
+
+@pytest.mark.parametrize(
+    ("old", "new"),
+    [
+        ("pleiotropy: {values: []", "pleiotropy: {values: [tradoff]"),
+        ("context: {values: []", "context: {values: [sex_specific:z]"),
+        ("actionability: {label: descriptive", "actionability: {label: descriptive, who: self"),
+        ("population: European", "population: ''"),
+        ("  - rsid: rs429358\n    note:", "  - rsid: rs1\n    note:"),
+        ("pleiotropy: {values: []", "pleiotropy: {values: [tradeoff]"),
+    ],
+)
+def test_row_refused(tree: Path, old: str, new: str) -> None:
+    row = tree / "rows" / "96-APOE.yaml"
+    text = row.read_text()
+    assert old in text
+    row.write_text(text.replace(old, new))
+    assert {f.kind for f in check_rows(tree / "rows", tree / "corpus")} >= {Kind.MALFORMED}
+
+
+def test_outcome_cells_read_as_the_requirements_write_them(tree: Path) -> None:
+    row = tree / "rows" / "96-APOE.yaml"
+    row.write_text(row.read_text().replace("healthspan: untested, lifespan: untested", "healthspan: 0, lifespan: '-'"))
+    parsed = Row.model_validate(yaml.safe_load(row.read_text()))
+    assert (parsed.axes.outcome.healthspan.value, parsed.axes.outcome.lifespan.value) == ("0", "\u2212")
 
 
 def test_quotes_one_word_changed_is_not_found(tree: Path, abstract: str) -> None:
@@ -105,6 +181,8 @@ def test_quotes_no_cached_text_is_unknown(tree: Path) -> None:
 
 
 def test_normalise_keeps_words_and_case() -> None:
+    assert normalise("signi\ufb01cant e\ufb00ect") == "significant effect"
+    assert normalise("p < 10\u207b\u2078") != normalise("p < 10-8")
     assert normalise("ApoE “ε4” – x") == 'ApoE "ε4" - x'
     assert normalise("ApoE") != normalise("apoe")
     kept, joined = text_forms("genome-\nwide signif-\nicant")
