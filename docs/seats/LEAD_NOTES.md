@@ -28,8 +28,13 @@ installed (v0.48.0), and `QUOTING.md` read into D10.
 
 ## Open
 
-- Avatar asked of the admin seat (agent-chat, avatars); set it with `watchdog.py avatar lead --from ID` when the
-  reply comes. The `first seating:` line sent to the builder.
+- Avatar set. The `first seating:` line sent to the builder.
+
+## For the person, at their return
+
+- Auto mode refused the lead's `gh issue comment` + `gh issue close` on issue #7 (kit #275). Ask once to let it
+  through (the kit's auto-mode rules are not pasted on this machine yet); then comment and close #7 with the text
+  of cba10a6's message.
 
 ## Plan
 
