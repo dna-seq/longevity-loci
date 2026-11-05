@@ -14,8 +14,9 @@ pinned = true
 
 [seat.lead]
 # The person's coding sessions here (docs/seats/LEAD.md): the repository's code, built for the three research
-# seats; the plan; the releases. The compiler's and the registry's leads may wake it (upstream lead to lead).
-wake_from = "longevity-loci/curator longevity-loci/scout longevity-loci/module longevity-loci/liaison just-dna-compiler/lead just-dna-registry/lead */secretary"
+# seats; the plan; the releases. The compiler's, the registry's and the module-creator's leads may wake it (upstream lead
+# to lead).
+wake_from = "longevity-loci/curator longevity-loci/scout longevity-loci/module longevity-loci/liaison just-dna-compiler/lead just-dna-registry/lead just-module-creator/lead */secretary"
 
 [seat.lead.watch.desk]
 cmd = "sh kit:bin/py.sh kit:classes/desk/watch-answers.py longevity-loci lead"
@@ -71,7 +72,7 @@ pool = "~/.config/agent-seat-blueprints/zulip/pool"
 [seat.liaison]
 # What the module stands on and does not own (docs/seats/LIAISON.md): the module-creator plugin, the compiler's
 # packages, the registry. Their seats reach it: their leads (upstream lead to downstream liaison), their liaisons.
-wake_from = "longevity-loci/lead longevity-loci/module longevity-loci/curator just-dna-compiler/lead just-dna-registry/lead */liaison */upstream-liaison */secretary"
+wake_from = "longevity-loci/lead longevity-loci/module longevity-loci/curator just-dna-compiler/lead just-dna-registry/lead just-module-creator/lead */liaison */upstream-liaison */secretary"
 
 [seat.liaison.watch.desk]
 cmd = "sh kit:bin/py.sh kit:classes/desk/watch-answers.py longevity-loci liaison"
