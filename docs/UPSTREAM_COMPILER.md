@@ -4,7 +4,8 @@
 with tags `vX.Y.Z` (the tag names the cut; each package carries its own version). Kept by the liaison seat
 (`docs/seats/LIAISON.md`); another seat that meets a symptom in these packages sends it there rather than writing
 here. A defect goes into the compiler's consumer inbox, `docs/CONSUMER_SUGGESTIONS.md` in its clone, restated in
-its terms with an id from its ledger, appended and never committed; then a message to `just-dna-compiler/triage`.
+its terms with the next `Sn` from its ledger, appended and never committed; then a mention of
+`just-dna-compiler/triage` in `agent-chat` naming the `Sn` (its triage wakes on this seat since their a8262397).
 
 Watched on the liaison's machine from a clone outside this repository (its line `compiler` in the liaison state
 file): `[seat.liaison.watch.compiler]` says each new tag, `[seat.liaison.watch.compiler-next]` each commit to
