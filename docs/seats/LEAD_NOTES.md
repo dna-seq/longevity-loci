@@ -32,12 +32,11 @@ installed (v0.48.0), and `QUOTING.md` read into D10.
 
 ## For the person, at their return
 
-- Auto mode refused the lead's `gh issue comment` + `gh issue close` on issue #7 (kit #275). Ask once to let it
-  through (the kit's auto-mode rules are not pasted on this machine yet); then comment and close #7 with the text
-  of cba10a6's message.
+- Auto mode refused the lead's `gh issue comment` + `gh issue close` (kit #275). The liaison has since answered
+  and closed #7 itself, so nothing waits on it; the kit's auto-mode rules are still not pasted on this machine.
 
 ## Plan
 
 RM1 the export (after the compiler's 0.8 cut, the registry deploy and the plugin's release). RM2 landed
-(9d42ccb, with `loci fetch`); a fresh auditor's read of it is the step before anything else of it ships. The plugin stays enabled for every seat, the person's call (2026-11-05: "3"), about 2.5k
+(9d42ccb, with `loci fetch`), its auditor's findings fixed in 47abe43. The plugin stays enabled for every seat, the person's call (2026-11-05: "3"), about 2.5k
 tokens a session while its 81 tools stay deferred.
