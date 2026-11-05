@@ -16,9 +16,10 @@ compiler's `0.8` branch); reuse it at the cut, and tell that liaison where our u
 
 ## Read mark
 
-**`v0.7.3`**: enricher 0.7.3, compiler 0.7.2, format 0.7.1, the trio `uv.lock` installs since 3dd8c2a
-(2026-11-05; floor `just-dna-enricher>=0.7.3` in `pyproject.toml`). A first mark, fast-forwarded: no release before
-it was read, since nothing here used one.
+**`v0.8.0`** (tagged 2026-11-05 at `e97339a3`), read through `docs/INTEGRATION_0_8.md` from `5b1b73b8` to the cut
+(below, "0.8, read before the cut"). **In use: `v0.7.3`**, enricher 0.7.3, compiler 0.7.2, format 0.7.1 in
+`uv.lock`, held there by our cap (below, "Caps") until the plugin moves to 0.8. The first mark, `v0.7.3` (3dd8c2a),
+was fast-forwarded: no release before it was read.
 
 ## Waiting on 0.8
 
@@ -53,9 +54,8 @@ read mark stays at `v0.7.3` until the cut; the cut is read again in full.
   trio, so there is no suite to run against the branch.
 - **Release candidate at `c90e6d98`** (2026-11-05): audit round 3 found no blocker; new §1.41 to §1.43 (RM395,
   RM393, RM394: the `--rederive` drift report's seven arms, and its remedy per source). What remains is the cut.
-- **Cut as 0.8.0** (2026-11-05, `edf2661c`; `main` at `e97339a3`): no behaviour change since `c90e6d98`. Not yet
-  on PyPI nor tagged. Read; not adopted: it waits on the plugin (its cap below 0.8), and our cap holds it out.
-  The read mark moves to `v0.8.0` when the tag lands.
+- **Cut as 0.8.0** (2026-11-05, `edf2661c`; `main` at `e97339a3`): no behaviour change since `c90e6d98`. Tagged
+  `v0.8.0` the same day. Read; not adopted: it waits on the plugin (its cap below 0.8), and our cap holds it out.
 
 ## Caps
 
