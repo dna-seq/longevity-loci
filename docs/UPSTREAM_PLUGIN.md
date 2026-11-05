@@ -26,6 +26,13 @@ The plugin `just-module-creator@just-dna`, enabled for every clone (`.claude/set
 (`find-evidence`, the module authoring guides) and its MCP server's literature and schema tools. Which of them the
 module and curator seats call is filled in as they start; not yet seen loaded in a session.
 
+## Waiting on its move to 0.8
+
+The plugin caps the compiler's trio below 0.8 until 0.8.0 is on PyPI and both registry instances serve it (read
+from `/api/v1/version` on each); its lead will post in `agent-chat > upstream` when it plans the move, so we
+switch with it (2026-11-05, their 6c5e4ad). State that day: 0.8.0 on PyPI; both instances (prod and test) serve
+registry 0.27.0, format 0.7.1, compiler 0.7.2. Our caps (`docs/UPSTREAM_COMPILER.md`, "Caps") lift with it.
+
 ## Inbound verdicts
 
 - **`v0.48.1`** (2026-11-05), one entry: `remote_derive` and `remote_draft` send the registry token, and refuse
