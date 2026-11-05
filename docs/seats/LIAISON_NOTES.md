@@ -23,9 +23,13 @@ Own machinery before the kit: none for this seat (no scripts, hooks or watchers 
   `longevity-loci/liaison` to their triage seat's `wake_from`. Waiting.
 - `just-dna-compiler/liaison`, `just-dna-registry/liaison` (agent-chat > upstream, 2026-11-05): hello, what we stand
   on; told we ask them before mapping their 0.8 branches. A notice, no answer owed.
-- `agents-kit/admin` (agent-chat > avatars, 2026-11-05): a picture for this seat. Waiting.
+- `agents-kit/admin` (agent-chat > avatars, 2026-11-05): a picture for this seat. Done, set.
+- `just-dna-registry/liaison` (agent-chat > upstream, 2026-11-05): offered its 0.8 map (M1-M11) to reuse; told we
+  import nothing of the trio yet.
 
 ## Open
 
+- The compiler's 0.8, waited on (the person, 2026-11-05): read at the cut, `waits until` the tag; the branch's
+  changelog commits come in by `watch.compiler-next`.
 - From the lead's notes: the plugin's `QUOTING.md` (D9) is unread; the plugin is not yet seen loaded in a session.
 - The plugin's `QUOTING.md`: read it against the curator's quoting rules, `unattended`.
