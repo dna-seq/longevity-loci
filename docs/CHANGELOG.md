@@ -4,6 +4,10 @@ Newest first.
 
 ## Unreleased
 
+- The liaison's ledgers begin: `docs/UPSTREAM_PLUGIN.md` (read mark v0.48.0, the pinned plugin),
+  `docs/UPSTREAM_COMPILER.md` (v0.7.3, the trio `uv.lock` installs) and `docs/UPSTREAM_REGISTRY.md` (no mark yet:
+  nothing here runs against the registry). Each upstream's new tags are watched, and the weekly dependency bump of
+  `uv.lock` is switched on, in the liaison's tables in `.blueprints.toml`.
 - The repository's rules laid by the seats kit's `bin/init.py`: `CLAUDE.md` (with `AGENTS.md` linked to it), the
   roadmap, this changelog, the decisions, and the leak gate's `.leak_words.template`. The leak gate is on in the
   lead's clone (the list itself is machine-local and never tracked).
