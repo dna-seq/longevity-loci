@@ -32,7 +32,8 @@ module and curator seats call is filled in as they start; not yet seen loaded in
   curator. *Breaks an assumption:* a quote passing `loci check quotes` can score `quotes_found = 0` upstream (our
   typography forgiveness, our cache against their text, supplements). *Levers:* refuse a quote equal to the note's
   title; per-(pmid, rsid) grain; the four kinds of empty quote; a table row taken by regex; `curator` as an
-  identity, never `ai`. *Fits:* `curator` per study row, readings by depth.
+  identity, never `ai`. *Fits:* `curator` per study row, readings by depth. Landed by the lead: fcbc03f, cba10a6; the
+  text-source gap is RM1. #7 closed.
 
 ## Our pieces that duplicate the plugin's
 

@@ -41,7 +41,7 @@ read mark stays at `v0.7.3` until the cut; the cut is read again in full.
 - **Breaks the export as written:** `population` (free text) against 0.8's closed `ancestry`; `age_band` against
   `age_min`/`age_max`/`age_of`. #6.
 - **Levers to adopt:** `sample_size`/`sample_unit`/`n_cases`, `stratum`/`stratum_level`, `proxy_rsid` per study,
-  `effect_unit`, `model_organisms.csv` for the `animal:` flags. #6.
+  `effect_unit`, `model_organisms.csv` for the `animal:` flags. #6. The study fields landed in 433a1d0 (the lead); the export's part of #6 stays open.
 - **Ours the compiler now does:** `tradeoff` (computed in `meta.csv`, refused when authored) and
   `eur_only_evidence` (derived into `weights.parquet` from `ancestry`). Our tokens stay curation; the export
   never authors them. #6.
