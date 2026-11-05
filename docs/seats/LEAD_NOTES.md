@@ -28,10 +28,11 @@ installed (v0.48.0), and `QUOTING.md` read into D10.
 
 ## Open
 
-- Avatar request to the admin seat; the `first seating:` line to the builder, once the items above have states.
+- Avatar asked of the admin seat (agent-chat, avatars); set it with `watchdog.py avatar lead --from ID` when the
+  reply comes. The `first seating:` line sent to the builder.
 
 ## Plan
 
-RM1 the export (after the compiler's 0.8 cut, the registry deploy and the plugin's release); RM2 the missing
-checks, unattended. The plugin stays enabled for every seat, the person's call (2026-11-05: "3"), about 2.5k
+RM1 the export (after the compiler's 0.8 cut, the registry deploy and the plugin's release). RM2 landed
+(9d42ccb, with `loci fetch`); a fresh auditor's read of it is the step before anything else of it ships. The plugin stays enabled for every seat, the person's call (2026-11-05: "3"), about 2.5k
 tokens a session while its 81 tools stay deferred.
