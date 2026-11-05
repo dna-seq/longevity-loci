@@ -26,7 +26,13 @@ module and curator seats call is filled in as they start; not yet seen loaded in
 
 ## Inbound verdicts
 
-None yet.
+- **`skills/find-evidence/references/QUOTING.md` at `v0.48.0`**, read 2026-11-05 against D9 and `docs/FORMATS.md`,
+  with the check it describes (just-dna-enricher 0.7.3's `quote_matches`, `literature.py:654-660`: whitespace
+  collapsed and case folded, nothing else, against Europe PMC's body text). Filed as #7 for the lead and the
+  curator. *Breaks an assumption:* a quote passing `loci check quotes` can score `quotes_found = 0` upstream (our
+  typography forgiveness, our cache against their text, supplements). *Levers:* refuse a quote equal to the note's
+  title; per-(pmid, rsid) grain; the four kinds of empty quote; a table row taken by regex; `curator` as an
+  identity, never `ai`. *Fits:* `curator` per study row, readings by depth.
 
 ## Our pieces that duplicate the plugin's
 

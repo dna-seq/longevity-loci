@@ -35,5 +35,4 @@ Own machinery before the kit: none for this seat (no scripts, hooks or watchers 
 
 - The compiler's 0.8, waited on (the person, 2026-11-05): read at the cut, `waits until` the tag; the branch's
   changelog commits come in by `watch.compiler-next`.
-- From the lead's notes: the plugin's `QUOTING.md` (D9) is unread; the plugin is not yet seen loaded in a session.
-- The plugin's `QUOTING.md`: read it against the curator's quoting rules, `unattended`.
+- The plugin's `QUOTING.md`: read, filed as #7 (done). The plugin is not yet seen loaded in a session.
