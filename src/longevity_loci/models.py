@@ -76,6 +76,26 @@ class EffectMeasure(StrEnum):
     OR = "OR"
 
 
+class Ancestry(StrEnum):
+    """just-dna-format 0.8's closed `ancestry` codes (the compiler's INTEGRATION_0_8, issue #6)."""
+
+    AFR = "AFR"
+    AMR = "AMR"
+    EAS = "EAS"
+    EUR = "EUR"
+    SAS = "SAS"
+
+
+class AgeOf(StrEnum):
+    PARTICIPANT = "participant"
+    PARENT = "parent"
+
+
+class SampleUnit(StrEnum):
+    INDIVIDUALS = "individuals"
+    LIVES = "lives"
+
+
 class AgeClass(StrEnum):
     LIFELONG = "LIFELONG"
     MIDLIFE = "MIDLIFE"
@@ -288,14 +308,24 @@ class Study(Strict):
     quote: str
     phenotype_class: PhenotypeClass
     study_design: StudyDesign
-    population: str = Field(min_length=1)
+    population: str = Field(min_length=1)  # as the article names it
+    ancestry: list[Ancestry] = Field(default_factory=list)  # 0.8's codes for that population
     stat_significance: StatSignificance
     p_value: str | None = None  # as the article writes it
     p_value_num: float | None = Field(default=None, ge=0, le=1)
-    age_band: str | None = None  # one study row per age band (§4.2, age of action)
+    age_min: float | None = Field(default=None, ge=0)  # an age band, in years; either end may be open
+    age_max: float | None = Field(default=None, ge=0)
+    age_of: AgeOf | None = None  # whose age: the participant's, or the parent's (parental lifespan)
+    sample_size: int | None = Field(default=None, gt=0)
+    sample_unit: SampleUnit | None = None
+    n_cases: int | None = Field(default=None, ge=0)
+    stratum: str | None = None  # a subgroup the estimate is for (men, women, ...), with its level
+    stratum_level: str | None = None
+    proxy_rsid: str | None = Field(default=None, pattern=r"^rs\d+$")  # the variant the study reported, when rsid is its lead
     curator: str | None = None  # who located the quote
     effect_size: float | None = None
     effect_measure: EffectMeasure | None = None
+    effect_unit: str | None = None  # years per allele, parental doubled, ...
     effect_allele: str | None = None
     statistical_test: str | None = None
 
@@ -304,6 +334,16 @@ class Study(Strict):
         if not NOTE_KEY.match(self.note):
             raise ValueError(f"note is a note key (pmid-31413261 or doi-…); not {self.note!r}")
         _check_cites([f"{self.note}#{self.quote}"])
+        if self.effect_size is not None and self.effect_measure is None:
+            raise ValueError("an effect_size says its effect_measure (beta, HR, OR)")
+        if (self.stratum is None) != (self.stratum_level is None):
+            raise ValueError("stratum and stratum_level are given both or neither")
+        if self.age_min is not None and self.age_max is not None and self.age_min > self.age_max:
+            raise ValueError(f"age_min {self.age_min} is above age_max {self.age_max}")
+        if (self.age_min is not None or self.age_max is not None) and self.age_of is None:
+            raise ValueError("an age band says whose age it is (age_of: participant or parent)")
+        if self.n_cases is not None and self.sample_size is not None and self.n_cases > self.sample_size:
+            raise ValueError(f"n_cases {self.n_cases} is above sample_size {self.sample_size}")
         return self
 
     @property

@@ -31,8 +31,18 @@ a v1 locus with no seed entry takes the next free id above the seed's. Fields:
   `tradeoff`), and `genotypes` (each `genotype`, `state`, `conclusion`).
 - `studies`: one per (rsid, study), §6.3's columns: `note` and `quote` (the provenance quote, by id),
   `phenotype_class` (§4.5), `study_design`, `population` (never empty), `stat_significance`, and where known
-  `p_value` (as written), `p_value_num`, `effect_size`, `effect_measure` (`beta`, `HR`, `OR`), `effect_allele`,
-  `statistical_test`, `age_band`, `curator` (who located the quote). A study's rsid is one of the row's variants.
+  `p_value` (as written), `p_value_num`, `effect_size` (with its `effect_measure`: `beta`, `HR`, `OR`; and
+  `effect_unit`), `effect_allele`, `statistical_test`, `curator` (who located the quote). A study's rsid is one of
+  the row's variants.
+- Recorded now for just-dna-format 0.8's `studies.csv` (issue #6), all optional: `ancestry` (`AFR`, `AMR`, `EAS`,
+  `EUR`, `SAS`, a list, beside the free-text `population`); an age band `age_min`, `age_max` (years, either open)
+  with `age_of` (`participant` or `parent`) required once a bound is given; `sample_size` with `sample_unit`
+  (`individuals` or `lives`) and `n_cases` (not above the sample); `stratum` and `stratum_level`, both or neither;
+  `proxy_rsid`, the variant the study reported when the row's rsid is its lead.
+
+`tradeoff` and `eur_only_evidence` are curation here. In 0.8 the compiler computes both (from `meta.csv` and from
+the studies' `ancestry`) and refuses them authored, so the export never writes them into the module; where the
+curator's token and 0.8's computed value disagree, that is a finding for the curator.
 
 The tokens (pleiotropy, context, actionability's `what`, `flags`) are §4.2's, closed where it closes them:
 `broad`, `tradeoff`, `nonadditive`, `mr:drug_target_proxy`, `ancestry_tag`, `age_dependent`, `eur_only_evidence`,

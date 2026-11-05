@@ -151,6 +151,12 @@ def test_rows_duplicate_locus_and_seed_name(tree: Path) -> None:
         ("population: European", "population: ''"),
         ("  - rsid: rs429358\n    note:", "  - rsid: rs1\n    note:"),
         ("pleiotropy: {values: []", "pleiotropy: {values: [tradeoff]"),
+        ("ancestry: [EUR]", "ancestry: [European]"),
+        ("n_cases: 11262", "n_cases: 99999"),
+        ("sample_unit: individuals", "sample_unit: individuals\n    effect_size: 0.5"),
+        ("sample_unit: individuals", "sample_unit: individuals\n    stratum: sex"),
+        ("sample_unit: individuals", "sample_unit: individuals\n    age_min: 90"),
+        ("sample_unit: individuals", "sample_unit: individuals\n    age_min: 90\n    age_max: 60\n    age_of: participant"),
     ],
 )
 def test_row_refused(tree: Path, old: str, new: str) -> None:
@@ -159,6 +165,13 @@ def test_row_refused(tree: Path, old: str, new: str) -> None:
     assert old in text
     row.write_text(text.replace(old, new))
     assert {f.kind for f in check_rows(tree / "rows", tree / "corpus")} >= {Kind.MALFORMED}
+
+
+def test_study_carries_08_fields(tree: Path) -> None:
+    row = Row.model_validate(yaml.safe_load((tree / "rows" / "96-APOE.yaml").read_text()))
+    s = row.studies[0]
+    assert (s.ancestry, s.sample_unit.value) == (["EUR"], "individuals")
+    assert s.n_cases is not None and s.sample_size is not None and s.n_cases < s.sample_size
 
 
 def test_outcome_cells_read_as_the_requirements_write_them(tree: Path) -> None:

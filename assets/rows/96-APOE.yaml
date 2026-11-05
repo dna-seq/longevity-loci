@@ -26,4 +26,8 @@ studies:
     phenotype_class: EXTREME_SURVIVAL_CC
     study_design: percentile_case_control_p90
     population: European
+    ancestry: [EUR]
+    n_cases: 11262        # the abstract: 11,262 cases at the 90th percentile
+    sample_size: 36745    # and 25,483 controls
+    sample_unit: individuals
     stat_significance: significant

@@ -29,3 +29,6 @@ Newest first.
 - The inputs fetched and recorded (`docs/INPUTS.md`): v1's `longevitymap.sqlite`, HAGR's Build 3 download and a
   snapshot of HAGR's live entry pages (`scripts/hagr_snapshot.py`), with digests and HAGR's CC BY 3.0 licence.
   The live site has not moved much since v1: 19 of v1's ids are now empty upstream, no text edits seen.
+- A study records just-dna-format 0.8's fields now, optional (issue #6): `ancestry` codes, an age band with whose
+  age it is, sample size and cases, a stratum, a proxy rsid, the effect's unit; an effect size needs its measure.
+  The free-text `age_band` is gone, replaced by the band's bounds.
