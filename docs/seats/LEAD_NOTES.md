@@ -35,10 +35,11 @@ installed (v0.48.0), and `QUOTING.md` read into D10.
 - Auto mode refused the lead's `gh issue comment` + `gh issue close` (kit #275). The liaison has since answered
   and closed #7 itself, so nothing waits on it; the kit's auto-mode rules are still not pasted on this machine.
 
-- The kit's v0.1.129 is out (fixes kit #272, #273, #275). Auto mode refused the lead's `bin/move-to-tag.py
-  v0.1.129` (kit #276). Ask once to let it through, or have the person run it; then `/reload-plugins` in each
-  session, paste the auto-mode rules `bin/automode.py` prints (rule 2 now covers own-repo issues), and move the
-  job prefix from the `JOB_PREFIX` env override to `[slurm.repo.longevity-loci]` in the machine's `slurm.toml`.
+- The kit is at v0.1.130 (v0.1.129 fixed kit #272, #273, #275; v0.1.130 #276, auto-mode rule 3 naming
+  move-to-tag). Auto mode refused the lead's `bin/move-to-tag.py` (kit #276), and will again until the person pastes
+  the rules `bin/automode.py` prints (rule 2: own-repo issues; rule 3: move-to-tag). Then the lead runs
+  `bin/move-to-tag.py v0.1.130`, the person `/reload-plugins` in each session, and the job prefix moves from the
+  `JOB_PREFIX` env override to `[slurm.repo.longevity-loci]` in the machine's `slurm.toml`.
 
 ## Plan
 
