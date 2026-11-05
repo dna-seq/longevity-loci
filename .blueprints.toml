@@ -21,6 +21,11 @@ wake_from = "longevity-loci/curator longevity-loci/scout longevity-loci/module l
 [seat.lead.watch.desk]
 cmd = "sh kit:bin/py.sh kit:classes/desk/watch-answers.py longevity-loci lead"
 
+# The plan's items whose state asks the lead to act (a waits-until date come, the person leaving with unattended
+# items, an item left unbuilt two nights): the kit's lead role, "The plan's states".
+[seat.lead.watch.plan]
+cmd = "sh kit:bin/py.sh kit:classes/lead/plan-watch.py --plan docs/ROADMAP.md"
+
 # The partition's nodes, one line per state change: the lead runs the batch jobs the research seats need.
 [seat.lead.watch.nodes]
 cmd = "sh kit:drivers/slurm/watch-nodes.sh"

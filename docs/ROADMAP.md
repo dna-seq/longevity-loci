@@ -5,7 +5,8 @@ owner. A done item leaves this file; `docs/CHANGELOG.md` says what landed.
 
 ## RM1 — the export of curated rows to the module's tables
 
-State: after the compiler's 0.8 cut, the registry's deploy and the plugin's release (issue #6). Owner: lead.
+**State:** waits until 2026-11-12. **Owner:** lead. Then look whether the compiler's 0.8 is cut, the registry serves
+it and the plugin released for it (issue #6); built after all three.
 `rows/` projected onto `variants.csv` and `studies.csv` for the module seat, 0.8's columns from the fields
 `docs/FORMATS.md` already records; `tradeoff` and `eur_only_evidence` never authored. Per quote, the export
 records the text it was located in (the reading's depth, the cache sidecar's source), so the module's README can
