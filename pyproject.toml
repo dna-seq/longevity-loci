@@ -6,6 +6,12 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "just-dna-enricher>=0.7.3",
+    # Capped below 2, the liaison's (docs/UPSTREAM_COMPILER.md, "Caps"): the module-creator plugin's server runs
+    # duckdb 1.5.5 and polars 1.44.2 and shares this machine's enricher cache. A .duckdb written by 2.0 crashes a
+    # 1.x enricher (the compiler's RM344), and polars 2 writes other parquet bytes, so a module compiled here
+    # would not match its digest there. Lifted when the plugin's lock moves to 2.
+    "duckdb<2",
+    "polars<2",
     "pydantic>=2.14.2",
     "python-dotenv>=1.2.4",
     "pyyaml>=6.0.3",

@@ -51,6 +51,19 @@ read mark stays at `v0.7.3` until the cut; the cut is read again in full.
   in 0.9) and an offline and an online fill can differ (RM376); an rsID no link can host now has no
   `resolution.csv` row, where 0.7 wrote `not_found` (RM382). No git dependency here to move: nothing imports the
   trio, so there is no suite to run against the branch.
+- **Release candidate at `c90e6d98`** (2026-11-05): audit round 3 found no blocker; new §1.41 to §1.43 (RM395,
+  RM393, RM394: the `--rederive` drift report's seven arms, and its remedy per source). What remains is the cut.
+
+## Caps
+
+- **`duckdb<2`, `polars<2`** (2026-11-05, the liaison's). The lock had moved to duckdb 2.0.0 and polars 2.1.0
+  through the enricher, which caps neither. The module-creator plugin's server (`v0.48.1`'s lock) runs duckdb
+  1.5.5 and polars 1.44.2 and shares this machine's enricher cache. From the compiler's liaison (their
+  `docs/UPSTREAM_POLARS.md`, `docs/UPSTREAM_DUCKDB.md`): a `.duckdb` written by 2.0 is refused by any 1.x, and
+  0.7.3's resolver crashes on it rather than falling back (RM344, open); polars 2 writes other parquet bytes, so
+  `artifact.digest` differs between two polars releases, even a patch (0.8's RM342 names the toolchain). Capped,
+  the lock holds polars 1.44.2, the plugin's own, and duckdb 1.5.6. **Lift when** the plugin's lock moves to 2;
+  re-read RM344 then.
 
 ## Backlog
 

@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- `duckdb` and `polars` capped below 2, so the lock matches the module-creator plugin's (polars 1.44.2) and no 2.0 `.duckdb` reaches the shared enricher cache its 1.x reader crashes on.
 - The module-creator plugin's pin moved to v0.48.1 (`remote_derive` and `remote_draft` send the registry token).
 - The liaison's ledgers begin: `docs/UPSTREAM_PLUGIN.md` (read mark v0.48.0, the pinned plugin),
   `docs/UPSTREAM_COMPILER.md` (v0.7.3, the trio `uv.lock` installs) and `docs/UPSTREAM_REGISTRY.md` (no mark yet:
