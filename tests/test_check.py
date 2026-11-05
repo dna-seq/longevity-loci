@@ -1,36 +1,33 @@
-"""The two checks, on the committed fixtures (assets/), against the real abstract of their one article fetched at
-run time into a temporary cache: the article's text is not ours, so it never lands in the repository."""
+"""The checks, on the committed fixtures (assets/), against the real full text of their one article, fetched at run
+time by `loci fetch`'s code into a temporary cache: the article's text is not ours, so it never lands in the
+repository."""
 
 from __future__ import annotations
 
-import json
 import shutil
-import urllib.error
-import urllib.request
 from pathlib import Path
 
 import pytest
 import yaml
 
-from longevity_loci.models import Row
 from longevity_loci.check import Kind, check_quotes, check_rows, load_note, load_seed, normalise, text_forms
+from longevity_loci.fetch import Outcome, Source, fetch
+from longevity_loci.models import Row
 
 ASSETS = Path(__file__).resolve().parent.parent / "assets"
 SEED = ASSETS.parent / "docs" / "longevitymap_v2" / "data" / "seed_variants.csv"
-EPMC = "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:{pmid}%20AND%20SRC:MED&resultType=core&format=json"
 
 
 @pytest.fixture(scope="session")
-def abstract() -> str:
-    url = EPMC.format(pmid=31413261)
-    try:
-        with urllib.request.urlopen(url, timeout=30) as r:
-            hit = json.load(r)["resultList"]["result"]
-    except (urllib.error.URLError, TimeoutError) as e:
-        pytest.skip(f"Europe PMC unreachable: {e}")
-    if not hit or not hit[0].get("abstractText"):
-        pytest.skip("Europe PMC returned no abstract for 31413261")
-    return hit[0]["abstractText"]
+def abstract(tmp_path_factory: pytest.TempPathFactory) -> str:
+    """The article's open full text (the name is older than the fetch; it holds the abstract too)."""
+    cache = tmp_path_factory.mktemp("fetch")
+    got = fetch(31413261, cache)
+    if got.outcome is Outcome.UNREACHABLE:
+        pytest.skip(f"Europe PMC unreachable: {got.detail}")
+    assert got.outcome is Outcome.FETCHED and got.source is Source.FULL_TEXT, got
+    assert got.title == load_note(ASSETS / "corpus" / "pmid-31413261.md").head.title
+    return (cache / "pmid-31413261.txt").read_text(encoding="utf-8")
 
 
 @pytest.fixture()
@@ -63,7 +60,7 @@ def test_rows_every_cite_resolves(tree: Path) -> None:
 def test_rows_missing_note_and_quote(tree: Path) -> None:
     row = tree / "rows" / "96-APOE.yaml"
     text = row.read_text()
-    row.write_text(text.replace("tier: {value: A, cites: [pmid-31413261#q1]}", "tier: {value: A, cites: [pmid-1#q1, pmid-31413261#q9]}"))
+    row.write_text(text.replace("tier: {value: A, cites: [pmid-31413261#q1, pmid-31413261#q2]}", "tier: {value: A, cites: [pmid-1#q1, pmid-31413261#q9]}"))
     found = {(f.kind, f.detail) for f in check_rows(tree / "rows", tree / "corpus")}
     assert (Kind.NO_NOTE, "pmid-1#q1") in found
     assert (Kind.NO_QUOTE, "pmid-31413261#q9") in found
@@ -91,26 +88,26 @@ def test_quotes_survive_pdf_extraction_forms(tree: Path, abstract: str) -> None:
               .replace("90th and", "90th\u2009and"))
     assert pdfish != abstract
     (tree / "cache" / "pmid-31413261.txt").write_text(pdfish)
-    assert kinds(check_quotes(tree / "corpus", tree / "cache")) == {Kind.LOCATED: 1}
+    assert kinds(check_quotes(tree / "corpus", tree / "cache")) == {Kind.LOCATED: 2}
 
 
 def test_quotes_must_start_and_end_at_word_boundaries(tree: Path, abstract: str) -> None:
     note = tree / "corpus" / "pmid-31413261.md"
-    note.write_text(note.read_text() + "\n> [q2] onsistent with previous reports\n")
+    note.write_text(note.read_text() + "\n> [q3] onsistent with previous reports\n")
     (tree / "cache" / "pmid-31413261.txt").write_text(abstract)
     found = {f.where: f.kind for f in check_quotes(tree / "corpus", tree / "cache")}
-    assert found == {"q1": Kind.LOCATED, "q2": Kind.NOT_FOUND}
+    assert found == {"q1": Kind.LOCATED, "q2": Kind.LOCATED, "q3": Kind.NOT_FOUND}
 
 
 @pytest.mark.parametrize(
     ("addition", "reason"),
     [
-        ("> [q2] \"\"\n", "empty"),
+        ("> [q3] \"\"\n", "empty"),
         ("## Reading 2026-1-5, abstract\n", "reading heading"),
         ("## Reading 2020-01-01, abstract\n", "oldest first"),
-        ("## Reading 2026-11-06, full_text\n", "deepest reading"),
+        ("## Reading 2026-11-06, supplement\n", "deepest reading"),
         ("> continued on a second line\n", "one line"),
-        ("> [q2] A meta-analysis of genome-wide association studies identifies multiple longevity genes.\n", "title"),
+        ("> [q3] A meta-analysis of genome-wide association studies identifies multiple longevity genes.\n", "title"),
     ],
 )
 def test_note_malformed(tree: Path, addition: str, reason: str) -> None:
@@ -118,6 +115,7 @@ def test_note_malformed(tree: Path, addition: str, reason: str) -> None:
     text = note.read_text()
     if reason == "one line":
         text = text.replace("shows the opposite.\n", "shows the opposite.\n" + addition)
+        assert addition in text
     else:
         text = text + "\n" + addition
     note.write_text(text)
@@ -154,7 +152,7 @@ def test_rows_duplicate_locus_and_seed_name(tree: Path) -> None:
         ("pleiotropy: {values: []", "pleiotropy: {values: [tradeoff]"),
         ("ancestry: [EUR]", "ancestry: [European]"),
         ("n_cases: 11262", "n_cases: 99999"),
-        ("sample_unit: individuals", "sample_unit: individuals\n    effect_size: 0.5"),
+        ("    effect_measure: OR\n", ""),
         ("sample_unit: individuals", "sample_unit: individuals\n    stratum: sex"),
         ("sample_unit: individuals", "sample_unit: individuals\n    age_min: 90"),
         ("sample_unit: individuals", "sample_unit: individuals\n    age_min: 90\n    age_max: 60\n    age_of: participant"),
@@ -174,7 +172,7 @@ def test_one_quote_for_two_variants_is_flagged(tree: Path) -> None:
     study = text[text.index("  - rsid: rs429358\n    note:"):]
     row.write_text(text + study.replace("rsid: rs429358", "rsid: rs7412", 1))
     shared = [f for f in check_rows(tree / "rows", tree / "corpus") if f.kind is Kind.SHARED_QUOTE]
-    assert [(f.where, f.detail) for f in shared] == [("pmid-31413261#q1", "rs429358, rs7412")]
+    assert [(f.where, f.detail) for f in shared] == [("pmid-31413261#q2", "rs429358, rs7412")]
 
 
 def test_study_carries_08_fields(tree: Path) -> None:
@@ -194,12 +192,13 @@ def test_outcome_cells_read_as_the_requirements_write_them(tree: Path) -> None:
 def test_quotes_one_word_changed_is_not_found(tree: Path, abstract: str) -> None:
     assert "lower odds" in abstract
     (tree / "cache" / "pmid-31413261.txt").write_text(abstract.replace("lower odds", "higher odds"))
-    assert kinds(check_quotes(tree / "corpus", tree / "cache")) == {Kind.NOT_FOUND: 1}
+    found = {f.where: f.kind for f in check_quotes(tree / "corpus", tree / "cache")}
+    assert found == {"q1": Kind.NOT_FOUND, "q2": Kind.LOCATED}
 
 
 def test_quotes_no_cached_text_is_unknown(tree: Path) -> None:
     findings = check_quotes(tree / "corpus", tree / "cache")
-    assert kinds(findings) == {Kind.NO_TEXT: 1}
+    assert kinds(findings) == {Kind.NO_TEXT: 2}
     assert all(f.passed is None for f in findings)
 
 
@@ -210,3 +209,50 @@ def test_normalise_keeps_words_and_case() -> None:
     assert normalise("ApoE") != normalise("apoe")
     kept, joined = text_forms("genome-\nwide signif-\nicant")
     assert "genome-wide" in kept and "significant" in joined
+
+
+def _row(tree: Path) -> Path:
+    return tree / "rows" / "96-APOE.yaml"
+
+
+@pytest.mark.parametrize(
+    ("old", "new", "rule", "reason"),
+    [
+        ("stat_significance: significant", "stat_significance: suggestive", "R-TIER-4", "no genome-wide"),
+        ("phenotype_class: EXTREME_SURVIVAL_CC", "phenotype_class: MR", "R-TIER-4", "MR-only"),
+        ("study_design: percentile_case_control_p90", "study_design: centenarian_case_control", "R-TIER-2", "centenarian"),
+        ("    effect_allele: C\n", "", "studies[0] rs429358", "effect_allele"),
+    ],
+)
+def test_hard_rules(tree: Path, old: str, new: str, rule: str, reason: str) -> None:
+    text = _row(tree).read_text()
+    assert old in text
+    _row(tree).write_text(text.replace(old, new))
+    rules = [f for f in check_rows(tree / "rows", tree / "corpus") if f.kind is Kind.RULE]
+    assert [f.where for f in rules] == [rule]
+    assert reason in rules[0].detail
+
+
+def test_rules_quiet_on_the_fixture(tree: Path) -> None:
+    kinds_seen = {f.kind for f in check_rows(tree / "rows", tree / "corpus")}
+    assert Kind.RULE not in kinds_seen and Kind.INCOMPLETE in kinds_seen
+
+
+def test_genotypes_one_neutral_unless_tradeoff(tree: Path) -> None:
+    text = _row(tree).read_text()
+    three = ("    genotypes:\n      - {genotype: TT, state: neutral, conclusion: x}\n"
+             "      - {genotype: CT, state: risk, conclusion: x}\n      - {genotype: CC, state: risk, conclusion: x}\n")
+    text = text.replace("    direction: risk\n", "    direction: risk\n" + three, 1)
+    _row(tree).write_text(text)
+    assert not [f for f in check_rows(tree / "rows", tree / "corpus") if f.kind is Kind.RULE]
+    _row(tree).write_text(text.replace("state: risk, conclusion: x}\n      - {genotype: CC", "state: neutral, conclusion: x}\n      - {genotype: CC"))
+    assert {f.where for f in check_rows(tree / "rows", tree / "corpus") if f.kind is Kind.RULE} == {"rs429358"}
+
+
+def test_r_tier_1(tree: Path) -> None:
+    note = tree / "corpus" / "pmid-22279548.md"
+    note.write_text("---\nkey: pmid-22279548\npmid: 22279548\ntitle: x\nyear: 2012\ntitle_checked: 2026-11-05\n"
+                    "depth: abstract\n---\n\n## Reading 2026-11-05, abstract\n\n> [q1] a passage\n")
+    text = _row(tree).read_text().replace("note: pmid-31413261\n    quote: q2", "note: pmid-22279548\n    quote: q1")
+    _row(tree).write_text(text)
+    assert "R-TIER-1" in {f.where for f in check_rows(tree / "rows", tree / "corpus") if f.kind is Kind.RULE}

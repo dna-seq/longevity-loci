@@ -67,7 +67,10 @@ says what the article shows for which variant. A doi key is the doi with `/` as 
 ## The article cache: `$LOCI_CACHE/<key>.txt`
 
 The text of each article read, outside git, keyed as its note (the variable is set on the machine, never written
-as a path in the repository). Plain UTF-8 text: a PDF is converted before it is cached. A full text never
+as a path in the repository). Plain UTF-8 text: a PDF is converted before it is cached. `uv run loci fetch PMID…`
+fills it from Europe PMC: the open-access full text where there is one (JATS flattened, a table cell ending in a
+tab), else the abstract; a sidecar `<key>.source.json` says which, from where and when. Exit 0 fetched, 1 no
+record or no text, 3 the service did not answer. A full text never
 enters a commit, a message or an issue.
 
 ## The checks
@@ -88,7 +91,14 @@ nothing to check.
   listed as `shared_quote` (the plugin's `QUOTING.md`, rules 1 and 2; D10). Copy a quote from the cached text,
   never retype it: the plugin's own check runs on its own retrieved text.
 
-Not checked yet: that a row's studies carry §6.3's required columns for tier A/B; that a scored locus lists
-all three genotypes with the most common one neutral; the hard rules (R-TIER-1 to 4); and that a cited quote
-bears on the claim it is cited for. A quote is a substring: one cut short so that it drops a "not" before it
+- **rules**, inside `check rows`, from the row's own fields (`rule`, a failure): R-TIER-1 (a row whose only
+  study is PMID 22279548 is tier D, neutral on every genotype); on a tier A or B row, R-TIER-4 (a genome-wide
+  significant study, and not MR-only), R-TIER-2 (not one unreplicated centenarian study), §6.3's `p_value`,
+  `p_value_num`, `effect_size`, `effect_measure` and `effect_allele` on every study, and, once a variant lists
+  three genotypes, exactly one neutral (every one on a trade-off locus). Fewer than three genotypes is
+  `incomplete`, a warning listed with `-v`: an APOE-style locus is scored as a diplotype (§6.4).
+
+Not checked yet: R-TIER-3 (an ancestry banner, the consumer's), the tier A criteria a field cannot show (N,
+replication, heterogeneity), which genotype is the most common, and that a cited quote bears on the claim it is
+cited for. A quote is a substring: one cut short so that it drops a "not" before it
 is still located, so a quote is a whole sentence or table cell (§6.3), and that is the curator's to keep.

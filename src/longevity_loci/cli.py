@@ -10,6 +10,7 @@ from pathlib import Path
 import typer
 from dotenv import load_dotenv
 
+from longevity_loci.fetch import Outcome, fetch
 from longevity_loci.check import FAILING, UNKNOWN, Finding, Kind, check_quotes, check_rows, load_seed, summary
 
 app = typer.Typer(no_args_is_help=True, help="Checks over the curated rows, the corpus and the article cache.")
@@ -33,7 +34,7 @@ def _main() -> None:
 def _report(findings: list[Finding], verbose: bool) -> None:
     """A line per failure; the unknowns by note, with a count; warnings with -v; the passes only counted."""
     for f in findings:
-        if f.kind in FAILING or f.kind is Kind.SHARED_QUOTE or (verbose and f.kind is Kind.UNSUPPORTED):
+        if f.kind in FAILING or f.kind is Kind.SHARED_QUOTE or (verbose and f.kind in (Kind.UNSUPPORTED, Kind.INCOMPLETE)):
             typer.echo(f"{f.kind.value:12} {f.path}  {f.where}  {f.detail}".rstrip())
     unknown = Counter((f.kind, f.path) for f in findings if f.kind in UNKNOWN)
     for (kind, path), n in sorted(unknown.items()):
@@ -78,11 +79,26 @@ def quotes_cmd(
     corpus: Path = typer.Option(ROOT / "corpus", help="the corpus directory"),
 ) -> None:
     """Each note's quote is found verbatim in $LOCI_CACHE/<key>.txt."""
+    _report(_run(check_quotes, corpus, _cache()), False)
+
+
+def _cache() -> Path:
     cache = os.environ.get("LOCI_CACHE", "")
-    if not cache:
-        typer.echo("LOCI_CACHE is not set: the article cache is unknown, so no quote can be checked", err=True)
+    if not cache or not Path(cache).is_dir():
+        typer.echo(f"LOCI_CACHE names no directory: {cache!r}", err=True)
         raise typer.Exit(2)
-    if not Path(cache).is_dir():
-        typer.echo(f"LOCI_CACHE names no directory: {cache}", err=True)
-        raise typer.Exit(2)
-    _report(_run(check_quotes, corpus, Path(cache)), False)
+    return Path(cache)
+
+
+@app.command("fetch")
+def fetch_cmd(pmids: list[int] = typer.Argument(..., help="PMIDs to fetch")) -> None:
+    """Fetch articles into $LOCI_CACHE: Europe PMC's open full text where there is one, else the abstract.
+    Exit 0 all fetched, 1 one has no record or no text, 3 the service did not answer (retry)."""
+    cache = _cache()
+    results = [fetch(p, cache) for p in pmids]
+    for r in results:
+        typer.echo(f"{r.outcome.value:12} {r.key}  {r.source.value if r.source else ''}  {r.title or r.detail}".rstrip())
+    if any(r.outcome is Outcome.UNREACHABLE for r in results):
+        raise typer.Exit(3)
+    if not all(results):
+        raise typer.Exit(1)

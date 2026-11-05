@@ -34,3 +34,6 @@ Newest first.
   The free-text `age_band` is gone, replaced by the band's bounds.
 - The quote check set beside the plugin's `QUOTING.md` (D10): a title quoted as a passage is refused, one quote
   cited for several variants is listed (`shared_quote`).
+- RM2 landed: `loci check rows` now checks the hard rules a row's fields can show (R-TIER-1, R-TIER-2, R-TIER-4,
+  §6.3's required columns on a tier A/B row, one neutral genotype), and `loci fetch` fills the article cache
+  from Europe PMC (open full text, else the abstract). The fixtures carry Deelen 2019's real Table 2 row.

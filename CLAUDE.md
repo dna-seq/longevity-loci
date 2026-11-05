@@ -128,6 +128,7 @@ verdicts only.
   server's literature and schema tools. The liaison moves the pin.
 - `uv run pytest`: the tests; the quote tests fetch one real abstract from Europe PMC and skip offline.
 - `uv run loci check rows`: every row parses, is named for its locus, cites only quotes the corpus holds.
+- `uv run loci fetch PMID…`: an article's text into `$LOCI_CACHE` (Europe PMC's open full text, else the abstract).
 - `uv run loci check quotes`: every note's quote is found verbatim in `$LOCI_CACHE`. Exit 0 passed, 1 a failure,
   2 no cache set, 4 some quotes could not be checked (unknown, not passed).
 

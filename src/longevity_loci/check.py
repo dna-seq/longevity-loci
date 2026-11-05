@@ -17,7 +17,9 @@ from pathlib import Path
 import yaml
 from pydantic import ValidationError
 
-from longevity_loci.models import CITE, Depth, NoteHead, Quote, Row
+from longevity_loci.models import (
+    CITE, Depth, NoteHead, PhenotypeClass, Quote, Row, StatSignificance, State, StudyDesign, Tier,
+)
 
 log = logging.getLogger(__name__)
 
@@ -34,13 +36,15 @@ class Kind(StrEnum):
     NO_NOTE = "no_note"  # a cite names a note that is not in the corpus
     NO_QUOTE = "no_quote"  # a cite names a quote id its note does not hold
     UNSUPPORTED = "unsupported"  # an axis or flag cites nothing
+    RULE = "rule"  # a row breaks one of the requirements' hard rules (§4.1, §6.3)
+    INCOMPLETE = "incomplete"  # a scored variant's genotypes do not yet say what §6.2 asks (a warning)
     SHARED_QUOTE = "shared_quote"  # one quote cited for several variants: the plugin's QUOTING.md rule 2
     LOCATED = "located"
     NOT_FOUND = "not_found"  # the cached text is there and the quote is not in it
     NO_TEXT = "no_text"  # no cached text for the note: unknown, not checked
 
 
-FAILING = frozenset({Kind.MALFORMED, Kind.MISNAMED, Kind.DUPLICATE, Kind.NO_NOTE, Kind.NO_QUOTE, Kind.NOT_FOUND})
+FAILING = frozenset({Kind.RULE, Kind.MALFORMED, Kind.MISNAMED, Kind.DUPLICATE, Kind.NO_NOTE, Kind.NO_QUOTE, Kind.NOT_FOUND})
 UNKNOWN = frozenset({Kind.NO_TEXT})
 
 
@@ -144,6 +148,49 @@ def load_seed(seed: Path) -> dict[int, str]:
         return {int(r["locus_id"]): r["locus_name"] for r in csv.DictReader(f) if r["locus_id"]}
 
 
+R_TIER_1_PMID = "pmid-22279548"  # §4.1 R-TIER-1: a row whose only support it is, is tier D
+SCORED = frozenset({Tier.A, Tier.B})
+# §6.3: required on every study of a tier A/B variant (pmid or doi is the note itself)
+REQUIRED_AB = ("p_value", "p_value_num", "effect_size", "effect_measure", "effect_allele")
+
+
+def check_rules(row: Row, path: Path) -> list[Finding]:
+    """The requirements' hard rules a row's own fields can show: R-TIER-1, R-TIER-2, R-TIER-4, §6.3's required
+    columns on a tier A/B row, and §6.2's genotypes (a warning: an APOE-style diplotype is scored elsewhere)."""
+    out: list[Finding] = []
+    tier = row.axes.tier.value
+    notes = {s.note for s in row.studies}
+    significant = [s for s in row.studies if s.stat_significance is StatSignificance.SIGNIFICANT]
+    if notes == {R_TIER_1_PMID}:
+        if tier is not Tier.D:
+            out.append(Finding(Kind.RULE, path, "R-TIER-1", f"only support is PMID 22279548, so tier D, not {tier.value}"))
+        moving = [f"{v.rsid} {g.genotype}" for v in row.variants for g in v.genotypes if g.state is not State.NEUTRAL]
+        if moving:
+            out.append(Finding(Kind.RULE, path, "R-TIER-1", f"state neutral on every genotype: {', '.join(moving)}"))
+    if tier in SCORED:
+        if not significant:
+            out.append(Finding(Kind.RULE, path, "R-TIER-4", f"tier {tier.value} with no genome-wide significant study"))
+        elif all(s.phenotype_class is PhenotypeClass.MR for s in significant):
+            out.append(Finding(Kind.RULE, path, "R-TIER-4", f"tier {tier.value} on MR-only results"))
+        elif all(s.study_design is StudyDesign.CENTENARIAN_CC for s in significant) and len({s.note for s in significant}) < 2:
+            out.append(Finding(Kind.RULE, path, "R-TIER-2", f"tier {tier.value} on one unreplicated centenarian study; caps at C"))
+        for i, s in enumerate(row.studies):
+            missing = [c for c in REQUIRED_AB if getattr(s, c) is None]
+            if missing:
+                out.append(Finding(Kind.RULE, path, f"studies[{i}] {s.rsid}", f"§6.3 requires on a tier {tier.value} row: {', '.join(missing)}"))
+        tradeoff = "tradeoff" in row.axes.pleiotropy.values
+        for v in row.variants:
+            states = [g.state for g in v.genotypes]
+            neutral = states.count(State.NEUTRAL)
+            if len(states) < 3:
+                out.append(Finding(Kind.INCOMPLETE, path, v.rsid, f"{len(states)} of three genotypes"))
+            elif tradeoff and neutral != len(states):
+                out.append(Finding(Kind.RULE, path, v.rsid, "a trade-off locus is neutral on every genotype"))
+            elif not tradeoff and neutral != 1:
+                out.append(Finding(Kind.RULE, path, v.rsid, f"one genotype, the most common, is neutral; {neutral} are"))
+    return out
+
+
 def check_rows(rows: Path, corpus: Path, seed: dict[int, str] | None = None) -> list[Finding]:
     """Every row parses, is named for its locus (the seed list's name, where the seed holds its id), holds a locus
     no other row holds, and cites only quotes its corpus holds."""
@@ -166,6 +213,7 @@ def check_rows(rows: Path, corpus: Path, seed: dict[int, str] | None = None) -> 
         if row.locus_id in held:
             findings.append(Finding(Kind.DUPLICATE, path, detail=f"locus {row.locus_id} is also {held[row.locus_id].name}"))
         held.setdefault(row.locus_id, path)
+        findings += check_rules(row, path)
         for name in type(row.axes).model_fields:
             if not getattr(row.axes, name).cites:
                 findings.append(Finding(Kind.UNSUPPORTED, path, f"axes.{name}"))
