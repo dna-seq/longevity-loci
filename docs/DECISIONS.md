@@ -25,3 +25,14 @@ compatibility forms, typographic quotes and dashes, soft hyphens and whitespace 
 is tried both ways, case and words must match. To be reconciled with `QUOTING.md` when the plugin is read.
 Rejected: case-insensitive matching (it would locate a quote whose meaning changed with case, gene against
 protein symbols); exact bytes (every PDF extraction would fail it).
+
+## D10 — the quote check set beside the plugin's QUOTING.md (2026-11-05)
+
+Amends D9, now that the module-creator plugin (v0.48.0) is installed and its `find-evidence` skill's
+`references/QUOTING.md` was read. Its `quote_matches` is whitespace- and case-insensitive literal containment;
+ours keeps case (D9), so ours is the stricter on case and the looser on typography (quotes, dashes, ligatures,
+line-break hyphens). Kept as D9, with two of its rules added: a quote that is the article's title is refused
+(its rule 1), and one quote cited for two or more variants is flagged `shared_quote` (its rule 2, whose default
+grain is one passage per article and variant). The looser side matters downstream: the plugin matches against
+its own retrieved text, so a quote is best copied from the cached text, never retyped (its rule 3c). Rejected:
+adopting its case-insensitive match (it locates a quote whose gene or protein symbol changed case).

@@ -14,18 +14,24 @@ First seating, the seat-builder's handout:
    and outranks the repository, so this clone sets `JOB_PREFIX=ll-` and `LOCI_CACHE` in its untracked
    `.claude/settings.local.json` env. The digest line read through that setting is not yet seen at a session
    start (checked with the variable inline). Nodes watcher alive.
-5. Formats and checks: done, 8496cca; a critic's read is in flight, its fixes additive.
-6. Inputs (v1.2.0's tables, HAGR Build 3 with its licence): open, unattended.
-7. Trust register: asked the person.
+5. Formats and checks: done (8496cca, the critic's fixes 80eb769, 0.8's study fields 433a1d0 from issue #6,
+   D10).
+6. Inputs: done, `docs/INPUTS.md` (v1's sqlite, HAGR Build 3, a live snapshot; CC BY 3.0). v1.2.0's registry
+   tables are the module seat's to fetch with the plugin.
+7. Trust register: desk #200, default "later, at the module seat's first publish".
 8. Pin: nothing to move.
 
 ## To file (unattended, at the next idle turn)
 
-- Kit: `[slurm] job_prefix` in the machine file is one value for every repository on the machine and wins over
-  the repository's; a second repository on one cluster cannot have its own prefix without an env override.
-- Liaison: the module-creator plugin is not installed on the lead's machine; `QUOTING.md` (D9) is unread.
-- Kit: the kit's pin lives in `.claude/settings.local.json` (untracked), so another clone does not inherit it.
+Nothing. Filed: kit #272 (job_prefix per machine), kit #273 (the kit pin in untracked settings). The plugin is
+installed (v0.48.0), and `QUOTING.md` read into D10.
 
 ## Open
 
 - Avatar request to the admin seat; the `first seating:` line to the builder, once the items above have states.
+
+## Plan
+
+RM1 the export (after the compiler's 0.8 cut, the registry deploy and the plugin's release); RM2 the missing
+checks, unattended. The plugin stays enabled for every seat, the person's call (2026-11-05: "3"), about 2.5k
+tokens a session while its 81 tools stay deferred.

@@ -110,6 +110,7 @@ def test_quotes_must_start_and_end_at_word_boundaries(tree: Path, abstract: str)
         ("## Reading 2020-01-01, abstract\n", "oldest first"),
         ("## Reading 2026-11-06, full_text\n", "deepest reading"),
         ("> continued on a second line\n", "one line"),
+        ("> [q2] A meta-analysis of genome-wide association studies identifies multiple longevity genes.\n", "title"),
     ],
 )
 def test_note_malformed(tree: Path, addition: str, reason: str) -> None:
@@ -165,6 +166,15 @@ def test_row_refused(tree: Path, old: str, new: str) -> None:
     assert old in text
     row.write_text(text.replace(old, new))
     assert {f.kind for f in check_rows(tree / "rows", tree / "corpus")} >= {Kind.MALFORMED}
+
+
+def test_one_quote_for_two_variants_is_flagged(tree: Path) -> None:
+    row = tree / "rows" / "96-APOE.yaml"
+    text = row.read_text()
+    study = text[text.index("  - rsid: rs429358\n    note:"):]
+    row.write_text(text + study.replace("rsid: rs429358", "rsid: rs7412", 1))
+    shared = [f for f in check_rows(tree / "rows", tree / "corpus") if f.kind is Kind.SHARED_QUOTE]
+    assert [(f.where, f.detail) for f in shared] == [("pmid-31413261#q1", "rs429358, rs7412")]
 
 
 def test_study_carries_08_fields(tree: Path) -> None:

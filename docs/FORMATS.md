@@ -84,7 +84,9 @@ nothing to check.
   compatibility forms (ligatures; super- and subscripts are kept), typographic quotes and dashes, a minus sign
   read as a hyphen, soft hyphens, any run of whitespace, and a hyphen at a line break (ASCII, soft or Unicode)
   read both ways; case, words, digits and punctuation must match, and the quote starts and ends on a word
-  boundary.
+  boundary. A quote that is the article's title is refused, and one quote cited for two or more variants is
+  listed as `shared_quote` (the plugin's `QUOTING.md`, rules 1 and 2; D10). Copy a quote from the cached text,
+  never retype it: the plugin's own check runs on its own retrieved text.
 
 Not checked yet: that a row's studies carry §6.3's required columns for tier A/B; that a scored locus lists
 all three genotypes with the most common one neutral; the hard rules (R-TIER-1 to 4); and that a cited quote

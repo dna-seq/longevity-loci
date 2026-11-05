@@ -32,3 +32,5 @@ Newest first.
 - A study records just-dna-format 0.8's fields now, optional (issue #6): `ancestry` codes, an age band with whose
   age it is, sample size and cases, a stratum, a proxy rsid, the effect's unit; an effect size needs its measure.
   The free-text `age_band` is gone, replaced by the band's bounds.
+- The quote check set beside the plugin's `QUOTING.md` (D10): a title quoted as a passage is refused, one quote
+  cited for several variants is listed (`shared_quote`).

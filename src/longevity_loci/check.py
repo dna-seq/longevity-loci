@@ -34,6 +34,7 @@ class Kind(StrEnum):
     NO_NOTE = "no_note"  # a cite names a note that is not in the corpus
     NO_QUOTE = "no_quote"  # a cite names a quote id its note does not hold
     UNSUPPORTED = "unsupported"  # an axis or flag cites nothing
+    SHARED_QUOTE = "shared_quote"  # one quote cited for several variants: the plugin's QUOTING.md rule 2
     LOCATED = "located"
     NOT_FOUND = "not_found"  # the cached text is there and the quote is not in it
     NO_TEXT = "no_text"  # no cached text for the note: unknown, not checked
@@ -102,6 +103,8 @@ def load_note(path: Path) -> Note:
                 raise ValueError(f"quote id {m['qid']} is used twice")
             if not normalise(m["text"]).strip('"').strip():
                 raise ValueError(f"quote {m['qid']} is empty")
+            if normalise(m["text"]).strip('"').strip().casefold() == normalise(note.head.title).casefold():
+                raise ValueError(f"quote {m['qid']} is the article's title, which locates nothing (QUOTING.md rule 1)")
             note.quotes[m["qid"]] = Quote(qid=m["qid"], text=m["text"].strip(), reading=reading)
             after_quote = True
         elif line.startswith(">") and after_quote:
@@ -148,6 +151,8 @@ def check_rows(rows: Path, corpus: Path, seed: dict[int, str] | None = None) -> 
     stray = [p for p in _files(rows, "*", "rows") if p.suffix in (".yml", ".json")]
     findings += [Finding(Kind.MISNAMED, p, detail="a row is <locus_id>-<locus_name>.yaml") for p in stray]
     held: dict[int, Path] = {}
+    quoted_for: dict[str, set[str]] = {}
+    first_path: dict[str, Path] = {}
     for path in _files(rows, "*.yaml", "rows"):
         try:
             row = Row.model_validate(yaml.safe_load(path.read_text(encoding="utf-8")))
@@ -167,6 +172,9 @@ def check_rows(rows: Path, corpus: Path, seed: dict[int, str] | None = None) -> 
         for f in row.flags:
             if not f.cites:
                 findings.append(Finding(Kind.UNSUPPORTED, path, f"flag {f.token}"))
+        for s in row.studies:
+            quoted_for.setdefault(s.cite, set()).add(s.rsid)
+            first_path.setdefault(s.cite, path)
         for where, cite in row.cites():
             m = CITE.match(cite)
             assert m is not None  # the model refused any other shape
@@ -177,6 +185,9 @@ def check_rows(rows: Path, corpus: Path, seed: dict[int, str] | None = None) -> 
                 findings.append(Finding(Kind.NO_QUOTE, path, where, cite))
             else:
                 findings.append(Finding(Kind.OK, path, where, cite))
+    for cite, rsids in sorted(quoted_for.items()):
+        if len(rsids) > 1:
+            findings.append(Finding(Kind.SHARED_QUOTE, first_path[cite], cite, ", ".join(sorted(rsids))))
     return findings
 
 
