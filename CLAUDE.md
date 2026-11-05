@@ -100,17 +100,35 @@ reason gets argued away at 2 a.m.
 ## 3. Layout
 
 ```
-docs/        all markdown except this file and README.md
+rows/        a curated row per locus, <locus_id>-<locus_name>.yaml; rows/PROGRESS.md the curator's order
+corpus/      an evidence note per article, <key>.md (pmid-<PMID>, or doi-<DOI> for a preprint)
+scout/       SEARCHES.md (the searches, by track) and queue.md (new papers waiting for a row)
+module/      the module's spec directory (module_spec.yaml and its tables), the module seat's
+src/longevity_loci/   the formats' models and the checks (`loci`)
+tests/       pytest, on the fixtures in assets/
+assets/      fixtures that travel: one example row and one note
+docs/        all markdown except this file and README.md; docs/FORMATS.md the row and note formats;
+             docs/longevitymap_v2/ the research design, moved in from just-dna-lite unchanged
+docs/seats/  the seats' primings and notes
 ```
 
-Not yet written: the adoption questions (§1) fill it.
+**The article cache is outside git**, at `$LOCI_CACHE/<key>.txt`, the variable set on the machine and never
+written as a path here. **Never commit an article's full text or PDF**, nor paste one into a message or an
+issue: the repository is public and the articles are not ours. Notes keep citations, verbatim quotes and
+verdicts only.
 
 ---
 
 ## 4. Build, run, test
 
-Not yet written: the adoption questions (§1) fill it. Every entry point is listed here with what it
-does.
+- `uv sync`: the environment (Python 3.11+, uv; never `uv pip install`).
+- `uv run pytest`: the tests; the quote tests fetch one real abstract from Europe PMC and skip offline.
+- `uv run loci check rows`: every row parses, is named for its locus, cites only quotes the corpus holds.
+- `uv run loci check quotes`: every note's quote is found verbatim in `$LOCI_CACHE`. Exit 0 passed, 1 a failure,
+  2 no cache set, 4 some quotes could not be checked (unknown, not passed).
+
+Batch work on the cluster (bulk fetches, indexes, the compile at scale) is submitted with this repository's job
+prefix, which the machine's settings name, never this file.
 
 **Run the commands yourself** rather than telling the person to run them, except where a command
 needs an interactive terminal: then hand over the exact line.
@@ -167,3 +185,6 @@ preference, it goes into §8 in their words, with the reason.
 
 Append-only, one line each: the maintainer's preferences in their own words, and the facts of this
 machine and this project that reading the code does not reveal.
+
+- `docs/longevitymap_v2/` keeps just-dna-lite's lowercase file names: moved in unchanged, so its links hold; it is
+  exempt from the UPPER_SNAKE rule.

@@ -1,0 +1,29 @@
+# A format fixture for the tests (tests/test_check.py), not a curated row: the seed list's locus 96, with only
+# what its one fixture quote supports. Axes the quote does not bear on cite nothing, and the check says so.
+locus_id: 96
+locus_name: APOE
+verdict: kept
+verdict_reason: format fixture; the curator's row replaces it in rows/
+axes:
+  tier: {value: A, cites: [pmid-31413261#q1]}
+  mechanism: {value: brain_memory, cites: []}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: untested, lifespan: untested, exceptional_survival: "+", cites: [pmid-31413261#q1]}
+  actionability: {label: descriptive, cites: []}
+  context: {values: [], cites: []}
+variants:
+  - rsid: rs429358
+    gene: APOE
+    direction: risk
+  - rsid: rs7412
+    gene: APOE
+    direction: protective
+studies:
+  - rsid: rs429358
+    note: pmid-31413261
+    quote: q1
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European
+    stat_significance: significant
