@@ -12,9 +12,15 @@ file): `[seat.liaison.watch.plugin]` says each new tag.
 
 ## Read mark
 
-**`v0.48.1`**: the tag `.claude/settings.json` pins the marketplace `just-dna` at (moved from `v0.48.0`,
-2026-11-05). The first mark, `v0.48.0` (3dd8c2a), was fast-forwarded: no release before it was read, since nothing
-here used one. The liaison moves the pin.
+**`v0.48.2`**, the tag `.claude/settings.json` pins (2026-11-06). The first mark, `v0.48.0` (3dd8c2a), was
+fast-forwarded: no release before it was read.
+
+**The pin does not bind on this machine.** The person's user settings declare the marketplace `just-dna` with no
+ref, and that entry outranks the project's: the client refused `marketplace add 'dna-seq/just-module-creator#v0.48.2'
+--scope project` ("its source doesn't match its extraKnownMarketplaces entry in user or managed settings"), and
+`plugin update` installs `main`'s head. Seen 2026-11-06: the installed copy was 0.48.0 at `d0f710b` (not the tag)
+while the pin named v0.48.1; updated, it is 0.48.2 at `1b622ff`, the tag plus one notes commit, the same code.
+How to settle it is the person's (asked 2026-11-06).
 
 ## Backlog
 
@@ -35,6 +41,10 @@ registry 0.27.0, format 0.7.1, compiler 0.7.2. Our caps (`docs/UPSTREAM_COMPILER
 
 ## Inbound verdicts
 
+- **`v0.48.2`** (2026-11-06): `fetch_fulltext(pmid=…)` falls back to PubMed for the PMCID and DOI when Europe PMC
+  lacks them (F31), a *lever* for the curator, who reads full texts through it; an empty open-access answer names
+  the DOI asked (F50); the suite is hermetic (F119), and no longer reads a sibling checkout of just-dna-format.
+  Caps unchanged (the trio below 0.8, polars 1.44.2, duckdb 1.5.5).
 - **`v0.48.1`** (2026-11-05), one entry: `remote_derive` and `remote_draft` send the registry token, and refuse
   before uploading when none is found. *Nothing for us*: neither tool is called here yet. The tag also carries
   RM31's traceability design and F116's note, documents only (`CLAUDE.md`, `docs/ROADMAP.md`,
