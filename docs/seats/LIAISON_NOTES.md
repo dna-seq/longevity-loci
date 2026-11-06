@@ -33,6 +33,10 @@ Own machinery before the kit: none for this seat (no scripts, hooks or watchers 
 
 ## Open
 
+- Compiler 0.8, the role's "An in-house release" (kit 0.1.137): read and marked; the mechanical half (floor to
+  `>=0.8.0`, caps lifted, `uv lock`, suite, `cache pull --only ensembl`) `waits until` the plugin's move past
+  `<0.8`, which waits on the registry deploying 0.8. The plugin's lead posts it in `agent-chat > upstream`.
+- Kit moved to v0.1.137 for this seat on 2026-11-06 (this clone's pin); the lead's seat moves in its own session.
 - `docs/seats/LIAISON.md` says the plugin's repository runs no seats; since 2026-11-05 it runs four. A priming
   change (the skill `change-priming`), for the person: the filing route itself is unchanged (issues, no inbox).
 - The compiler's 0.8, waited on (the person, 2026-11-05): read at the cut, `waits until` the tag; the branch's
