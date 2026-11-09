@@ -35,6 +35,15 @@ The plugin `just-module-creator@just-dna`, enabled for every clone (`.claude/set
 (`find-evidence`, the module authoring guides) and its MCP server's literature and schema tools. Which of them the
 module and curator seats call is filled in as they start; not yet seen loaded in a session.
 
+## Its server on this machine
+
+2026-11-09: after the update to 0.48.4 its MCP server did not connect (`ImportError: FastMCP server support is not
+installed`). Ours, not the plugin's: the install's `.venv` held packages with files missing (`mcp/client/`,
+`starlette.applications`) that their own RECORD lists; the 0.48.2 install was broken the same way, the 0.48.0
+one whole. Likely several sessions starting `uv run` on a fresh `.venv` at once (the kit's #300, the MCP start
+race). Repaired with `UV_LINK_MODE=copy uv sync --no-dev --reinstall` in the install directory. Routine after each
+plugin update: that sync once, then the sessions reconnect (`watchdog.py reload --mcp`).
+
 ## Waiting on its move to 0.8
 
 The plugin caps the compiler's trio below 0.8 until 0.8.0 is on PyPI and both registry instances serve it (read
