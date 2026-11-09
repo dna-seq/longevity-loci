@@ -12,7 +12,7 @@ file): `[seat.liaison.watch.plugin]` says each new tag.
 
 ## Read mark
 
-**`v0.48.2`**, the tag `.claude/settings.json` pins (2026-11-06). The first mark, `v0.48.0` (3dd8c2a), was
+**`v0.48.4`**, the tag `.claude/settings.json` pins (2026-11-09). The first mark, `v0.48.0` (3dd8c2a), was
 fast-forwarded: no release before it was read.
 
 **The pin does not bind on this machine.** The person's user settings declare the marketplace `just-dna` with no
@@ -20,7 +20,10 @@ ref, and that entry outranks the project's: the client refused `marketplace add 
 --scope project` ("its source doesn't match its extraKnownMarketplaces entry in user or managed settings"), and
 `plugin update` installs `main`'s head. Seen 2026-11-06: the installed copy was 0.48.0 at `d0f710b` (not the tag)
 while the pin named v0.48.1; updated, it is 0.48.2 at `1b622ff`, the tag plus one notes commit, the same code.
-How to settle it is the person's (asked 2026-11-06).
+The person's answer (2026-11-06): drop the user-level entry, so the repository's pin binds; theirs to do,
+since it is their settings file. Still present on 2026-11-09, so the copy is updated by hand to the pinned
+release: `claude plugin update just-module-creator@just-dna --scope project` installed 0.48.4 at `a444e66`, the
+tag plus notes commits (main's head).
 
 ## Backlog
 
@@ -41,6 +44,12 @@ registry 0.27.0, format 0.7.1, compiler 0.7.2. Our caps (`docs/UPSTREAM_COMPILER
 
 ## Inbound verdicts
 
+- **`v0.48.3`, `v0.48.4`** (2026-11-08, -09). *Levers for the curator:* `fetch_fulltext(doi=…)` finds what a PMID
+  would (F122), which covers our `doi-` notes; an empty `fetch_fulltext` with a known PMCID says to call again,
+  since Europe PMC refuses some requests at random (F133). *For the module seat:* `audit_module` names recorded
+  checks older than the last edit (F139), derived rows nothing authors any more (F137), and no longer decides on a
+  stale attestation (F138); `check_pgx`, `draft_from_strchive` and the expression tools say what they did. Nothing
+  breaks for us; caps unchanged (the trio below 0.8, polars 1.44.2, duckdb 1.5.5).
 - **`v0.48.2`** (2026-11-06): `fetch_fulltext(pmid=…)` falls back to PubMed for the PMCID and DOI when Europe PMC
   lacks them (F31), a *lever* for the curator, who reads full texts through it; an empty open-access answer names
   the DOI asked (F50); the suite is hermetic (F119), and no longer reads a sibling checkout of just-dna-format.

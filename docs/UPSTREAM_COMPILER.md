@@ -16,8 +16,8 @@ compiler's `0.8` branch); reuse it at the cut, and tell that liaison where our u
 
 ## Read mark
 
-**`v0.8.0`** (tagged 2026-11-05 at `e97339a3`), read through `docs/INTEGRATION_0_8.md` from `5b1b73b8` to the cut
-(below, "0.8, read before the cut"). **In use: `v0.7.3`**, enricher 0.7.3, compiler 0.7.2, format 0.7.1 in
+**`v0.8.2`** (tagged 2026-11-07), patches on 0.8.0 read by their changelog headings and "After upgrading"
+lines; read whole at our adoption. **In use: `v0.7.3`**, enricher 0.7.3, compiler 0.7.2, format 0.7.1 in
 `uv.lock`, held there by our cap (below, "Caps") until the plugin moves to 0.8. The first mark, `v0.7.3` (3dd8c2a),
 was fast-forwarded: no release before it was read.
 
@@ -56,6 +56,14 @@ read mark stays at `v0.7.3` until the cut; the cut is read again in full.
   RM393, RM394: the `--rederive` drift report's seven arms, and its remedy per source). What remains is the cut.
 - **Cut as 0.8.0** (2026-11-05, `edf2661c`; `main` at `e97339a3`): no behaviour change since `c90e6d98`. Tagged
   `v0.8.0` the same day. Read; not adopted: it waits on the plugin (its cap below 0.8), and our cap holds it out.
+
+## 0.8.1 and 0.8.2, for the adoption
+
+- `cache pull` with no `--only` now also fetches the Open Targets lane (~5.5 GB, RM408): at adoption pull
+  `--only ensembl`, as the upgrade order says.
+- Gene-metrics rows from the live gnomAD API are labelled `gnomad_api_constraint`, no longer `gnomad_v2.1.1_constraint`
+  (RM417); the constraint snapshot is gnomAD 4.1.2 (RM410).
+- `cache rebuild --dry-run` no longer writes (RM411); `--pin` is taken or refused (RM416).
 
 ## Caps
 
