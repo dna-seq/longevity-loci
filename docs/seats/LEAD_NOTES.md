@@ -35,14 +35,12 @@ installed (v0.48.0), and `QUOTING.md` read into D10.
 - Auto mode refused the lead's `gh issue comment` + `gh issue close` (kit #275). The liaison has since answered
   and closed #7 itself, so nothing waits on it; the kit's auto-mode rules are still not pasted on this machine.
 
-- 2026-11-09: the person's `/reload-plugins` put this session on v0.1.147 (the reload watcher confirmed), though
-  `.claude/settings.local.json` still pins v0.1.137. The module-creator plugin's MCP server did not connect after
-  `/mcp reconnect all` ("Connection closed"); the lead does not use it.
-- The liaison moved the clone's kit pin to v0.1.137 (2026-11-06). The lead's own seat step,
-  `bin/move-to-tag.py v0.1.137`, was refused again by auto mode on 2026-11-07 ("Self-Modification"; kit #276), as it
-  will be until the person pastes the rules `bin/automode.py` prints (rule 2: own-repo issues; rule 3: move-to-tag).
-  Then the lead runs it, the session reloads its plugins, and the job prefix moves from the `JOB_PREFIX` env override
-  to `[slurm.repo.longevity-loci]` in the machine's `slurm.toml`.
+- 2026-11-09: the liaison moved the clone's kit pin to v0.1.151 and this session runs v0.1.151 (the reload watcher
+  confirmed), so pin and session agree; the lead's refused `move-to-tag` (kit #276) is moot. Left: the auto-mode
+  rules, which from v0.1.152 `bin/automode.py --apply` writes whole (environment included), the person's to run; then
+  the job prefix moves from the `JOB_PREFIX` env override to `[slurm.repo.longevity-loci]` in the machine's
+  `slurm.toml`. The module-creator plugin's MCP server still does not connect after `/mcp reconnect all`; the lead
+  does not use it, the liaison owns the plugin (now v0.48.4).
 
 ## Plan
 
