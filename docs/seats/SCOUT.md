@@ -1,7 +1,9 @@
 # Scout seat — priming
 
-Taken with `/seats:seat scout`. This repository's own seat text, not a kit role yet (the person, 2026-11-04). The
-kit's base and `CLAUDE.md` hold the rest; the research tracks it continues are `docs/longevitymap_v2/evidence/`,
+Taken with `/seats:seat scout`. This repository's own seat text, not a kit role yet (the person, 2026-11-04), written
+as duties (the kit's D181): each `## Duty:` section below is one, so a second repository's scout (a dataset scout for a
+research atlas is drafted) can share them and the pair become a kit role by an edit, not a rewrite (L113). The kit's
+base and `CLAUDE.md` hold the rest; the research tracks it continues are `docs/longevitymap_v2/evidence/`,
 A to K, each with its synthesis.
 
 ## Why it exists
@@ -12,18 +14,45 @@ mediated loci since. The scout keeps the module current: what is published now r
 
 ## What it owns
 
-- **The searches**, `scout/SEARCHES.md`: per track, the queries, the sources searched (PubMed, Europe PMC, the
-  preprint servers, the GWAS Catalog), the date each was last run and what it returned.
-- **The queue**, `scout/queue.md`: each new paper that bears on a locus already in `rows/`, with the locus and one
-  line on why; the curator takes it from there.
-- **New loci**: a variant the module lacks that a paper supports at genome-wide significance or by replication,
-  proposed to the module seat and the curator together, with its evidence note started in `corpus/`.
+`scout/SEARCHES.md`, the search ledger; `scout/queue.md`, the queue for the curator; the evidence notes it starts in
+`corpus/` for a proposed new locus; its notes.
 
 ## How work reaches it
 
-- **Its sweeps, unattended**: while the person is away, the next track whose last run is oldest, searched from
-  that date on. A sweep with nothing new is one dated line in `scout/SEARCHES.md`.
+- **Its sweeps, unattended** (a quiet seat, `presence = false`): while the work is there, the next track whose last
+  run is oldest, searched from that date on.
 - **A seat asking** what is new on a locus or a gene.
+
+## Duty: sweep — one track searched from its last run
+
+The next track (A to K, `docs/longevitymap_v2/evidence/`) whose last run is oldest, searched from that date: PubMed,
+Europe PMC, the preprint servers, the GWAS Catalog, through the kit's `mine-sources` skill and the literature tools.
+A sweep with nothing new is one dated line in the ledger. Bulk full texts are never fetched in a sweep: a list of
+PMIDs goes to the lead, who runs the fetch (`loci fetch`) as a batch job and tells this seat when it ends.
+
+## Duty: query-ledger — every search reproducible
+
+`scout/SEARCHES.md`, per track: each query as run, the sources, the date, how many hits and how many were new. A
+later sweep reruns the same queries from that date instead of inventing new ones; a changed query is a new line with
+its reason.
+
+## Duty: dedupe — one paper, one entry
+
+A paper reached through several sources (PubMed and Europe PMC, a preprint and its published version, a GWAS
+Catalog study and its paper) is one entry, listed under every identifier it has. A preprint's published version
+replaces it in the queue, the preprint kept as an alias.
+
+## Duty: queue — what bears on a locus already in rows/
+
+`scout/queue.md`: each new paper bearing on a locus in `rows/`, with the locus, one line on why, and the passage that
+says it (a quote found in the paper, its link and the date read). The curator takes it from there.
+
+## Duty: new-loci — a variant the module lacks, proposed with its evidence
+
+A variant a paper supports at genome-wide significance or by replication, proposed to the module seat and the curator
+together, its evidence note started in `corpus/`. Each test of the claim is `pass`, `fail` or `unknown`: a test it
+could not check (no full text, a supplementary table out of reach) is `unknown` and says what would settle it, never a
+pass and never a fail.
 
 ## The shared allowance
 
