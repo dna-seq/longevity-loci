@@ -32,15 +32,10 @@ installed (v0.48.0), and `QUOTING.md` read into D10.
 
 ## For the person, at their return
 
-- Auto mode refused the lead's `gh issue comment` + `gh issue close` (kit #275). The liaison has since answered
-  and closed #7 itself, so nothing waits on it; the kit's auto-mode rules are still not pasted on this machine.
-
-- 2026-11-09: the liaison moved the clone's kit pin to v0.1.151 and this session runs v0.1.151 (the reload watcher
-  confirmed), so pin and session agree; the lead's refused `move-to-tag` (kit #276) is moot. Left: the auto-mode
-  rules, which from v0.1.152 `bin/automode.py --apply` writes whole (environment included), the person's to run; then
-  the job prefix moves from the `JOB_PREFIX` env override to `[slurm.repo.longevity-loci]` in the machine's
-  `slurm.toml`. The module-creator plugin's MCP server still does not connect after `/mcp reconnect all`; the lead
-  does not use it, the liaison owns the plugin (now v0.48.4).
+Nothing. 2026-11-10, on the person's word ("update your plugin and apply yourself"): the lead moved the kit pin to
+v0.1.164 (`move-to-tag`), applied the auto-mode rules (`automode.py --apply`, `--check` clean; the tooling and admin
+entries left out as not this clone's), and moved the job prefix to `[slurm.repo.longevity-loci] job_prefix = "ll-"`
+in the machine's `slurm.toml`, the `JOB_PREFIX` env override dropped (the driver reads `ll-`, from=repo).
 
 ## Plan
 
