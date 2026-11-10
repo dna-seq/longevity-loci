@@ -153,6 +153,8 @@ R_TIER_1_PMID = "pmid-22279548"  # §4.1 R-TIER-1: a row whose only support it i
 SCORED = frozenset({Tier.A, Tier.B})
 # §6.3: required on every study supporting a tier A/B variant (pmid or doi is the note itself)
 REQUIRED_AB = ("p_value", "p_value_num", "effect_size", "effect_measure", "effect_allele")
+# D13, the person 2026-11-10 ("1a"): a nominal replication look-up supports with its allele, direction and p alone
+REQUIRED_NOMINAL = ("p_value", "p_value_num", "effect_allele")
 GENOME_WIDE = 5e-8
 SUGGESTIVE_P = 1e-5
 NOMINAL_P = 0.05  # §4.1: a replication counts at p < 0.05
@@ -197,7 +199,12 @@ def check_rules(row: Row, path: Path) -> list[Finding]:
         for i, s in enumerate(row.studies):
             if s.stat_significance is StatSignificance.NOT_SIGNIFICANT:
                 continue
-            missing = [c for c in REQUIRED_AB if getattr(s, c) is None]
+            if s.stat_significance is StatSignificance.NOMINAL:
+                missing = [c for c in REQUIRED_NOMINAL if getattr(s, c) is None]
+                if s.effect_size is None and s.direction in (None, Direction.UNKNOWN):
+                    missing.append("direction (or effect_size)")
+            else:
+                missing = [c for c in REQUIRED_AB if getattr(s, c) is None]
             if missing:
                 rule(f"studies[{i}] {s.rsid}", f"§6.3 requires on a study supporting tier {tier.value}: {', '.join(missing)}")
         for v in row.variants:

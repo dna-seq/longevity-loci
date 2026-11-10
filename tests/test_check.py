@@ -10,7 +10,7 @@ from pathlib import Path
 import pytest
 import yaml
 
-from longevity_loci.check import Kind, check_quotes, check_rows, load_note, load_seed, normalise, text_forms
+from longevity_loci.check import FAILING, Kind, check_quotes, check_rows, load_note, load_seed, normalise, text_forms
 from longevity_loci.fetch import Outcome, Source, fetch
 from longevity_loci.models import Row
 
@@ -382,6 +382,34 @@ def test_nominal_replication_supports(tree: Path) -> None:
     _row(tree).write_text(text + nominal.replace("    effect_allele: C\n", "", 1))
     rules = [f for f in check_rows(tree / "rows", tree / "corpus") if f.kind is Kind.RULE]
     assert [(f.where, "effect_allele" in f.detail) for f in rules] == [("studies[1] rs429358", True)]
+
+
+def test_nominal_look_up_supports_on_allele_direction_and_p(tree: Path) -> None:
+    """D13 (the person, 2026-11-10, "1a"): a nominal replication look-up that gives no effect size supports a tier
+    A/B row on its allele, its direction and its p; without a direction it does not, and a genome-wide study still
+    owes all five of §6.3's fields."""
+    text = _row(tree).read_text()
+    study = text[text.index("studies:\n") + len("studies:\n"):]
+    assert "    effect_size: " in study and "    effect_measure: " in study
+    bare = "".join(line for line in study.splitlines(keepends=True)
+                   if not line.startswith(("    effect_size:", "    effect_measure:", "    effect_unit:")))
+    nominal = (bare.replace("stat_significance: significant", "stat_significance: nominal")
+               .replace('p_value: "1.3 × 10−56"', 'p_value: "0.002"').replace("p_value_num: 1.3e-56", "p_value_num: 0.002"))
+    assert "stat_significance: nominal" in nominal and "p_value_num: 0.002" in nominal
+
+    def rules() -> list[tuple[str, str]]:
+        found = check_rows(tree / "rows", tree / "corpus")
+        assert not [f for f in found if f.kind in FAILING and f.kind is not Kind.RULE]
+        return [(f.where, f.detail) for f in found if f.kind is Kind.RULE]
+
+    _row(tree).write_text(text + nominal.replace("    effect_allele: C\n", "    effect_allele: C\n    direction: risk\n", 1))
+    assert rules() == []
+    _row(tree).write_text(text + nominal)
+    assert [(w, "direction" in d) for w, d in rules()] == [("studies[1] rs429358", True)]
+    _row(tree).write_text(text + nominal.replace("    effect_allele: C\n", "    effect_allele: C\n    direction: unknown\n", 1))
+    assert [(w, "direction" in d) for w, d in rules()] == [("studies[1] rs429358", True)]
+    _row(tree).write_text(text + bare.replace("    effect_allele: C\n", "    effect_allele: C\n    direction: risk\n", 1))
+    assert [(w, "effect_size" in d and "effect_measure" in d) for w, d in rules()] == [("studies[1] rs429358", True)]
 
 
 @pytest.mark.parametrize(("locus_id", "file"), [

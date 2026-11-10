@@ -38,7 +38,7 @@ a v1 locus with no seed entry takes the next free id above the seed's. Fields:
   decision), `licence_unclear`),
   `phenotype_class` (§4.5), `study_design`, `population` (never empty), `stat_significance`, and where known
   `p_value` (as written), `p_value_num`, `effect_size` (with its `effect_measure`: `beta`, `HR`, `OR`; and
-  `effect_unit`), `effect_allele`, `statistical_test`, `curator` (who located the quote: a name or a model id; `ai`, `true` and the like are
+  `effect_unit`), `effect_allele`, `direction` (the effect allele's, as the study reports it), `statistical_test`, `curator` (who located the quote: a name or a model id; `ai`, `true` and the like are
   refused). A study's rsid is one of
   the row's variants.
 - Recorded now for just-dna-format 0.8's `studies.csv` (issue #6), all optional: `ancestry` (`AFR`, `AMR`, `EAS`,
@@ -117,7 +117,8 @@ nothing to check.
   - On a tier A or B row: a genome-wide significant study, not MR-only, not n = 1 genomes (R-TIER-4); not one
     unreplicated `centenarian_case_control` study (R-TIER-2; a percentile case-control design is not read as
     one); §6.3's `p_value`, `p_value_num`, `effect_size`, `effect_measure` and `effect_allele` on every supporting
-    study; and, once a variant lists three genotypes, exactly one neutral, or every one neutral when its
+    study, except that a `nominal` one (a replication look-up) needs only `p_value`, `p_value_num`,
+    `effect_allele` and a `direction` other than `unknown` (or an `effect_size`) (D13); and, once a variant lists three genotypes, exactly one neutral, or every one neutral when its
     `direction` is `contested` (a trade-off with unresolved net direction, §6.2). Fewer than three genotypes is
     `incomplete`, a warning listed with `-v`: an APOE-style locus is scored as a diplotype (§6.4).
 

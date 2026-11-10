@@ -344,6 +344,7 @@ class Study(Strict):
     effect_measure: EffectMeasure | None = None
     effect_unit: str | None = None  # years per allele, parental doubled, ...
     effect_allele: str | None = None
+    direction: Direction | None = None  # the effect allele's direction as the study reports it
     statistical_test: str | None = None
 
     @model_validator(mode="after")

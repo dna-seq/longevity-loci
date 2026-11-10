@@ -58,3 +58,18 @@ shows. `check quotes` finds them unknown (`no_text`, exit 4) until a fetcher cac
 a plan item of its own. Rejected: letting the curator cache the record by hand, since the check would then locate
 the curator's quote in the curator's own paste and agree with itself; and a free-text source field on the claim,
 which no check could read.
+
+## D13 — a replication look-up supports on its allele, direction and p (2026-11-10)
+
+The curator's 46-LPA holds CHARGE-EU 90+ (Joshi 2017, Table 2), a look-up at P 0.002 that states the allele and
+the direction and no effect size, so as `nominal` it failed §6.3 ("required on every row supporting a tier A/B
+variant": p_value, effect_size, effect_measure, effect_allele) and was held as `not_significant`. The person,
+asked: (a) a replication look-up may support with allele, direction and p < 0.05 only, or (b) keep §6.3 strict;
+answered "1a". A `nominal` study on a tier A/B row now owes `p_value`, `p_value_num`, `effect_allele` and a
+`direction` (a new optional study field; `unknown` does not count), or an effect size; a `significant` or
+`suggestive` one still owes all five. Rejected: (b), which leaves §4.1's "independent replication (p < 0.05)"
+invisible whenever the replicating table prints only P. The export (RM1) writes no study direction on 0.7.1.
+
+On the same question the person declined a new rule that tier A needs a second supporting article ("3 no"); D11's
+"not added" stands.
+
