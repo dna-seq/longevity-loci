@@ -22,8 +22,8 @@ First work:
 ## Next
 
 - The next sweep is the track whose last run is oldest. Every track except E is at 2026-11-03 or unknown, so the
-  order is the table's (A, B, C, ...), each getting its queries written at its first run.
-- Track E reruns from 2026-11-10 with the same five queries.
+  order is the table's (A, B, C, ...); their queries are written in `scout/SEARCHES.md`, to be recall-checked at each first run.
+- Track E reruns from 2026-11-10 with its six queries (E-core, E-survival, E-somatic-2, E-clock, E-heritability, E-preprint).
 
 - Open, unattended: track E's own unpublished preprints (Sasaki, Putter, Salazar, Hamilton, Kornilov and the others in
   its evidence CSV) not yet checked for a published version since 2026-11-03.
@@ -32,7 +32,6 @@ First work:
 - Open: pmid-42928374's full text, to settle which biomarker FURIN's variant is shared with. Batch fetches go to the
   runner seat now, not the lead (the runner, 2026-11-10); one PMID is not a batch, so it waits for the next sweep's
   list.
-- Pictures: set (a meerkat lookout, drawn by the kit's tooling seat).
 
 ## To file
 
