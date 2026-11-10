@@ -10,7 +10,7 @@ dependencies = [
     # directory. Lifted with the plugin's move to 0.8.
     "just-dna-enricher>=0.7.3,<0.8",
     # Capped below 2, the liaison's (docs/UPSTREAM_COMPILER.md, "Caps"): the module-creator plugin's server runs
-    # duckdb 1.5.5 and polars 1.44.2 and shares this machine's enricher cache. A .duckdb written by 2.0 crashes a
+    # duckdb 1.5.6 and polars 1.44.2 and shares this machine's enricher cache. A .duckdb written by 2.0 crashes a
     # 1.x enricher (the compiler's RM344), and polars 2 writes other parquet bytes, so a module compiled here
     # would not match its digest there. Lifted when the plugin's lock moves to 2.
     "duckdb<2",

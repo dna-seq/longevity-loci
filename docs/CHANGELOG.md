@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- The module-creator plugin's pin moved to v0.48.5 (tool results name the plugin tool for an upstream CLI command; `registry_register` stops echoing a reused install-id).
 - The module-creator plugin's pin moved to v0.48.4 (`fetch_fulltext` by DOI, `audit_module` names stale checks and orphaned derived rows).
 - The module-creator plugin's pin moved to v0.48.2 (`fetch_fulltext` reaches PubMed for a PMCID Europe PMC lacks). The pin does not yet bind on the liaison's machine: see `docs/UPSTREAM_PLUGIN.md`.
 - `just-dna-enricher` capped below 0.8 until the module-creator plugin moves to it: 0.8 moves the shared Ensembl cache the plugin's 0.7 enricher reads.
