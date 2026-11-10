@@ -10,6 +10,7 @@ from pathlib import Path
 import typer
 from dotenv import load_dotenv
 
+from longevity_loci.supp import fetch_supplement
 from longevity_loci.fetch import Outcome, fetch
 from longevity_loci.check import FAILING, UNKNOWN, Finding, Kind, check_quotes, check_rows, load_seed, summary
 
@@ -102,3 +103,26 @@ def fetch_cmd(pmids: list[int] = typer.Argument(..., help="PMIDs to fetch")) -> 
         raise typer.Exit(3)
     if not all(results):
         raise typer.Exit(1)
+
+
+@app.command("fetch-supp")
+def fetch_supp_cmd(
+    key: str = typer.Argument(..., help="the note's key: pmid-… or doi-…"),
+    locator: str = typer.Argument(..., help="a file's URL, zenodo:ID or figshare:ID"),
+    only: str | None = typer.Option(None, help="a regular expression a deposit's file name must match"),
+) -> None:
+    """Fetch an article's supplement, data deposit or code file into $LOCI_CACHE as text, beside the article's,
+    where `check quotes` looks for a quote read at depth `supplement`. Exit 0 all fetched, 1 a file refused (no
+    text for its kind), none found or a refused request, 3 a service did not answer (retry)."""
+    cache = _cache()
+    result = fetch_supplement(key, locator, cache, only)
+    if result.outcome is not None:
+        typer.echo(f"{result.outcome.value:12} {locator}  {result.detail}")
+    for f in result.files:
+        typer.echo(f"{f.outcome.value:12} {f.name}  {f.path.name if f.path else f.detail}")
+    outcomes = [result.outcome] if result.outcome is not None else [f.outcome for f in result.files]
+    if Outcome.UNREACHABLE in outcomes:
+        raise typer.Exit(3)
+    if not result:
+        raise typer.Exit(1)
+

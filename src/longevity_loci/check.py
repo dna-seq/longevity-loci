@@ -5,6 +5,7 @@ that could not be checked (no cached text) is unknown, never a pass and never a 
 from __future__ import annotations
 
 import csv
+import glob
 import logging
 import re
 import unicodedata
@@ -110,7 +111,7 @@ def load_note(path: Path) -> Note:
                 raise ValueError(f"quote {m['qid']} is empty")
             if note.head.title and normalise(m["text"]).strip('"').strip().casefold() == normalise(note.head.title).casefold():
                 raise ValueError(f"quote {m['qid']} is the article's title, which locates nothing (QUOTING.md rule 1)")
-            note.quotes[m["qid"]] = Quote(qid=m["qid"], text=m["text"].strip(), reading=reading)
+            note.quotes[m["qid"]] = Quote(qid=m["qid"], text=m["text"].strip(), reading=reading, depth=depth)
             after_quote = True
         elif line.startswith(">") and after_quote:
             raise ValueError(f"body line {n}: a quote is one line; a quote's continuation is not checked")
@@ -320,17 +321,32 @@ def located(quote: str, forms: tuple[str, ...]) -> bool:
 
 
 def check_quotes(corpus: Path, cache: Path) -> list[Finding]:
-    """Every quote of every note is found in `<cache>/<key>.txt`; a note with no cached text is unknown."""
+    """Every quote of every note is found in its cached text: `<cache>/<key>.txt` for a quote read in the article,
+    the article's and its supplements' (`<key>.supp-*.txt`, RM4) for one read in a supplement. A quote whose text is
+    not cached is unknown; a located supplement quote names the file it was found in."""
     notes, findings = load_corpus(corpus)
     for key, note in notes.items():
-        cached = cache / f"{key}.txt"
-        if not cached.is_file():
-            findings += [Finding(Kind.NO_TEXT, note.path, q, cached.name) for q in note.quotes]
-            continue
-        forms = text_forms(cached.read_text(encoding="utf-8", errors="strict"))
+        article = cache / f"{key}.txt"
+        supps = sorted(cache.glob(f"{glob.escape(key)}.supp-*.txt"))
+        texts = {p.name: text_forms(p.read_text(encoding="utf-8", errors="strict")) for p in [article, *supps] if p.is_file()}
         for qid, quote in note.quotes.items():
-            kind = Kind.LOCATED if located(quote.text, forms) else Kind.NOT_FOUND
-            findings.append(Finding(kind, note.path, qid, quote.text[:80]))
+            if quote.depth is Depth.SUPPLEMENT:
+                where = [n for n in texts if n != article.name] + ([article.name] if article.name in texts else [])
+                wanted = f"{key}.supp-*.txt"
+                if not supps:
+                    findings.append(Finding(Kind.NO_TEXT, note.path, qid, wanted))
+                    continue
+            else:
+                where, wanted = ([article.name] if article.name in texts else []), article.name
+                if not where:
+                    findings.append(Finding(Kind.NO_TEXT, note.path, qid, wanted))
+                    continue
+            found = next((n for n in where if located(quote.text, texts[n])), None)
+            if found is None:
+                findings.append(Finding(Kind.NOT_FOUND, note.path, qid, quote.text[:80]))
+            else:
+                detail = quote.text[:80] if found == article.name else f"in {found}: {quote.text[:80]}"
+                findings.append(Finding(Kind.LOCATED, note.path, qid, detail))
     return findings
 
 

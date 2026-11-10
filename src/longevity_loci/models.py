@@ -432,6 +432,7 @@ class Quote(Strict):
     qid: str
     text: str
     reading: date
+    depth: Depth  # the reading's: a supplement quote is looked for in the cached supplements (RM4)
 
 
 class NoteHead(Strict):

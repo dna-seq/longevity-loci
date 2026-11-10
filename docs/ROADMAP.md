@@ -39,19 +39,6 @@ curator's 46-LPA cites them), gnomAD's frequencies next, each rendered to lines 
 sidecar saying the release, the URL and the sha256. The release read must equal the note's `release`, or the fetch
 refuses: a later release is a different source.
 
-## RM4 — a supplement's table in the cache, so its values can be quoted
-
-**State:** unattended, the person's go 2026-11-11 ("all htat needed, supplementary, figures, code blobs, zenodo downloadas, as deep as neeed for clear picture"). **Owner:** lead. In four of the pilot's five
-rows the replication outside UK Biobank lives only in a supplement (Deelen 2019's Supplementary Data 1, Wright
-2019's figshare tables). The cache holds an article's text, so those values sit in notes as prose, and no study row
-can quote them. Deelen's look-ups are study rows at 71 and prose elsewhere. `loci fetch` learns a supplement: an
-xlsx or csv rendered to lines (one table row a line, cells tab-separated, the sheet named), cached as
-`<key>.supp-<n>.txt` with a sidecar giving the file's URL and sha256. A quote then names its supplement, and
-`check quotes` locates it there. This makes the existing reading depth `supplement` checkable rather than adding a
-new one.
-The go reaches past tables: a figure's caption and data where a deposit holds it, a code repository's file, a
-Zenodo or figshare record, each rendered to text where it has text and cached with its sidecar.
-
 ## RM5 — the pilot's small format fixes
 
 **State:** unattended. **Owner:** lead. From the curator's pilot notes:

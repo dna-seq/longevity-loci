@@ -90,6 +90,17 @@ does not, so a transient fault never replaces a cached full text. Exit 0 fetched
 request or a malformed answer, 3 the service did not answer (retry). A full text never
 enters a commit, a message or an issue.
 
+An article's other files go beside it: `uv run loci fetch-supp <key> <locator> [--only REGEX]`, the locator a file's
+URL (a GitHub file page is read as its raw file), `zenodo:<record>` or `figshare:<article>` (every file of the
+deposit, or those whose name matches `--only`). Each file is rendered to text as `<key>.supp-<file name>.txt`: a
+workbook one line per row, cells tab-separated, each sheet opened by `## sheet: <name>`; csv and tsv the same; a PDF
+its text, page by page, each opened by `## page <n>`; code and plain text as they are; a zip archive each member it
+can render, opened by `## file: <name>`. Its sidecar `<key>.supp-<file name>.source.json` gives the locator, the
+URL, the day, and the sha256 of the file read and of the text written. A file with no text (an image, a binary
+.xls or .doc) is refused and nothing is written: a figure's caption is in the article's text, and its values are
+in a data deposit when the authors gave one. Exit 0 all fetched, 1 a file refused or none found, 3 a service did
+not answer (retry).
+
 ## The checks
 
 `uv run loci check rows` and `uv run loci check quotes`. Exit 0 all passed, 1 a failure, 2 an input missing
@@ -99,8 +110,10 @@ nothing to check.
 - **rows**: each row parses into its model (closed vocabularies refused otherwise), is named for its locus as
   the seed list names it, and holds loci (its own and its `also_loci`, each a seed locus) no other row holds; each cite names a note in `corpus/` and a quote id that note holds (`no_note`, `no_quote`). An axis or flag
   citing nothing is `unsupported`, a warning listed with `-v`.
-- **quotes**: each note's quotes are found in its cached text (`located`, `not_found`); a note with no cached
-  text is `no_text`, unknown, neither a pass nor a failure, and named by note. "Verbatim" survives Unicode
+- **quotes**: each note's quotes are found in its cached text (`located`, `not_found`): a quote under an
+  `abstract` or `full_text` reading in `<key>.txt`, one under a `supplement` reading in the article's supplements
+  (`<key>.supp-*.txt`) or the article, the file it was located in named. A quote whose text is not cached is
+  `no_text`, unknown, neither a pass nor a failure, and named by note. "Verbatim" survives Unicode
   compatibility forms (ligatures; super- and subscripts are kept), typographic quotes and dashes, a minus sign
   read as a hyphen, soft hyphens, any run of whitespace, and a hyphen at a line break (ASCII, soft or Unicode)
   read both ways; case, words, digits and punctuation must match, and the quote starts and ends on a word
