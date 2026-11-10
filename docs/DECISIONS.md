@@ -73,3 +73,11 @@ invisible whenever the replicating table prints only P. The export (RM1) writes 
 On the same question the person declined a new rule that tier A needs a second supporting article ("3 no"); D11's
 "not added" stands.
 
+## D14 — one signal named by two seed ids is one row (2026-11-10)
+
+The seed list names some signals more than once: IL6R Asp358Ala as 8 and 157 (rs2228145, rs8192284, merged in
+dbSNP), HTT as 25 and 158, TERT as 132, 133 and 153. The person, asked: (a) one row under the lower id, the other
+ids noted, or (b) a row per id; answered "2a". A row gains `also_loci`, the ids it folds in, each above its own
+`locus_id` and each a seed locus; a row for a folded id is a duplicate. Rejected: (b), two rows scoring one
+signal twice in the module.
+

@@ -392,6 +392,7 @@ class Row(Strict):
 
     locus_id: int
     locus_name: str
+    also_loci: list[int] = Field(default_factory=list)  # seed ids naming the same signal, folded in here (D14)
     verdict: Verdict
     verdict_reason: str
     axes: Axes
@@ -401,6 +402,11 @@ class Row(Strict):
 
     @model_validator(mode="after")
     def _consistent(self) -> Row:
+        if len(set(self.also_loci)) != len(self.also_loci):
+            raise ValueError(f"also_loci names a locus twice: {self.also_loci}")
+        lower = sorted(i for i in self.also_loci if i <= self.locus_id)
+        if lower:
+            raise ValueError(f"a signal's row is filed under its lowest seed id; {self.locus_id} folds in {', '.join(map(str, lower))}, so the row is theirs")
         rsids = {v.rsid for v in self.variants}
         orphans = sorted({s.rsid for s in self.studies} - rsids)
         if orphans:

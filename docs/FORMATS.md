@@ -14,7 +14,8 @@ becomes one `_` and the ends lose theirs (`81-FES_FURIN.yaml`, `73-KL_KL-VS.yaml
 unnamed is `<locus_id>.yaml` (`models.row_file`);
 a v1 locus with no seed entry takes the next free id above the seed's. Fields:
 
-- `locus_id`, `locus_name`; `verdict` (`kept`, `re-tiered`, `legacy`, `dropped`) and `verdict_reason`.
+- `locus_id`, `locus_name`; `also_loci`, the other seed ids that name the same signal (IL6R 8 and 157), folded into
+  this row, which is filed under the lowest of them (D14); `verdict` (`kept`, `re-tiered`, `legacy`, `dropped`) and `verdict_reason`.
 - `axes`, the seven of the requirements' summary, each with the quotes it rests on in `cites`:
   - `tier`: `value` A to D (§4.1);
   - `mechanism`: `value`, a §5.2 `category` key (`other` refused);
@@ -96,7 +97,7 @@ enters a commit, a message or an issue.
 nothing to check.
 
 - **rows**: each row parses into its model (closed vocabularies refused otherwise), is named for its locus as
-  the seed list names it, and holds a locus no other row holds; each cite names a note in `corpus/` and a quote id that note holds (`no_note`, `no_quote`). An axis or flag
+  the seed list names it, and holds loci (its own and its `also_loci`, each a seed locus) no other row holds; each cite names a note in `corpus/` and a quote id that note holds (`no_note`, `no_quote`). An axis or flag
   citing nothing is `unsupported`, a warning listed with `-v`.
 - **quotes**: each note's quotes are found in its cached text (`located`, `not_found`); a note with no cached
   text is `no_text`, unknown, neither a pass nor a failure, and named by note. "Verbatim" survives Unicode

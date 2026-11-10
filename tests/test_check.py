@@ -12,7 +12,7 @@ import yaml
 
 from longevity_loci.check import FAILING, Kind, check_quotes, check_rows, load_note, load_seed, normalise, text_forms
 from longevity_loci.fetch import Outcome, Source, fetch
-from longevity_loci.models import Row
+from longevity_loci.models import Row, row_file
 
 ASSETS = Path(__file__).resolve().parent.parent / "assets"
 SEED = ASSETS.parent / "docs" / "longevitymap_v2" / "data" / "seed_variants.csv"
@@ -139,6 +139,33 @@ def test_rows_duplicate_locus_and_seed_name(tree: Path) -> None:
     found = {(f.kind, f.path.name) for f in check_rows(tree / "rows", tree / "corpus", seed)}
     assert (Kind.DUPLICATE, "96-APOE.yaml") in found
     assert (Kind.MISNAMED, "96-APOC1.yaml") in found
+
+
+def test_one_signal_two_seed_ids(tree: Path) -> None:
+    """D14 (the person, 2026-11-10, "2a"): two seed ids naming one signal are one row, under the lower id, the other
+    folded in; a row for the folded id is then a duplicate, whichever file is read first, and the folded id is a
+    seed locus."""
+    seed = load_seed(SEED)
+    assert 8 in seed and 157 in seed and "IL6R" in seed[8] and "IL6R" in seed[157]
+    text = (tree / "rows" / "96-APOE.yaml").read_text()
+    (tree / "rows" / "96-APOE.yaml").unlink()
+    low = row_file(8, seed[8])
+    folded = text.replace("locus_id: 96\nlocus_name: APOE\n", f"locus_id: 8\nlocus_name: {seed[8]}\nalso_loci: [157]\n")
+    assert "also_loci: [157]" in folded
+    (tree / "rows" / low).write_text(folded)
+
+    def found() -> set[tuple[Kind, str, str]]:
+        return {(f.kind, f.path.name, f.where) for f in check_rows(tree / "rows", tree / "corpus", seed) if f.kind in FAILING}
+
+    assert found() == set()
+    high = row_file(157, seed[157])
+    (tree / "rows" / high).write_text(text.replace("locus_id: 96\nlocus_name: APOE\n", f"locus_id: 157\nlocus_name: {seed[157]}\n"))
+    assert {k for k, _, _ in found()} == {Kind.DUPLICATE} and len(found()) == 1
+    (tree / "rows" / high).unlink()
+    (tree / "rows" / low).write_text(folded.replace("also_loci: [157]", "also_loci: [157, 9999]"))
+    assert found() == {(Kind.MISNAMED, low, "also_loci")}
+    (tree / "rows" / low).write_text(folded.replace("also_loci: [157]", "also_loci: [3]"))
+    assert {k for k, _, _ in found()} == {Kind.MALFORMED}
 
 
 @pytest.mark.parametrize(

@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- A row may fold in the other seed ids that name its signal (`also_loci`), filed under the lowest; a second row for one of them is a duplicate (D14).
 - A nominal replication look-up supports a tier A/B row on its effect allele, its `direction` (a new study field) and its p, without an effect size; a genome-wide study still owes all five of §6.3's fields (D13).
 - A database release can be cited: a `corpus/db-<database>-<release>.md` note, cited from an axis or a flag; its quotes are unknown to `check quotes` until a fetcher caches the record (D12).
 - A row whose seed name holds a slash, a space or a bracket is filed under a file-safe name (`81-FES_FURIN.yaml`), and an unnamed locus as `<locus_id>.yaml`; the row keeps the seed's name.

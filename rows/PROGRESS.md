@@ -34,7 +34,7 @@ By `locus_id` within each tier, as the seed lists them. Known before reaching th
 
 - 8 `IL6R Asp358Ala` (rs2228145) and 157 `IL6R (p.Asp358Ala)` (rs8192284) name one variant (rs8192284 is merged
   into rs2228145 in dbSNP, to be checked at curation); 25 and 158 are both HTT; 132, 133 and 153 are all TERT.
-  Two seed loci for one signal become one row and a note on the other.
+  Two seed loci for one signal become one row under the lower id, the others in its `also_loci` (D14).
 - Many seed names hold a space, a `/` or brackets (`PCSK9 R46L`, `5q33.3 (EBF1 region)`, `KL (KL-VS`, ...); 44, 75,
   110, 134, 154 have none. The check holds a row's file to the seed name, so these go to the lead before the
   first of them is written.

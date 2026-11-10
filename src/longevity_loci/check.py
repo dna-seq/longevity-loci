@@ -220,8 +220,8 @@ def check_rules(row: Row, path: Path) -> list[Finding]:
 
 
 def check_rows(rows: Path, corpus: Path, seed: dict[int, str] | None = None) -> list[Finding]:
-    """Every row parses, is named for its locus (the seed list's name, where the seed holds its id), holds a locus
-    no other row holds, and cites only quotes its corpus holds."""
+    """Every row parses, is named for its locus (the seed list's name, where the seed holds its id), holds loci
+    (its own and those it folds in, `also_loci`) no other row holds, and cites only quotes its corpus holds."""
     notes, findings = load_corpus(corpus)
     stray = [p for p in _files(rows, "*", "rows") if p.suffix in (".yml", ".json")]
     findings += [Finding(Kind.MISNAMED, p, detail="a row is <locus_id>-<locus_name>.yaml") for p in stray]
@@ -238,9 +238,13 @@ def check_rows(rows: Path, corpus: Path, seed: dict[int, str] | None = None) -> 
             findings.append(Finding(Kind.MISNAMED, path, detail=f"holds locus {row.locus_id} {row.locus_name!r}, so {row_file(row.locus_id, row.locus_name)}"))
         if seed is not None and row.locus_id in seed and seed[row.locus_id] != row.locus_name:
             findings.append(Finding(Kind.MISNAMED, path, detail=f"the seed list names locus {row.locus_id} {seed[row.locus_id]}"))
-        if row.locus_id in held:
-            findings.append(Finding(Kind.DUPLICATE, path, detail=f"locus {row.locus_id} is also {held[row.locus_id].name}"))
-        held.setdefault(row.locus_id, path)
+        for locus in [row.locus_id, *row.also_loci]:
+            if locus in held:
+                findings.append(Finding(Kind.DUPLICATE, path, detail=f"locus {locus} is also {held[locus].name}"))
+            held.setdefault(locus, path)
+        if seed is not None:
+            findings += [Finding(Kind.MISNAMED, path, "also_loci", f"the seed list holds no locus {i}")
+                         for i in row.also_loci if i not in seed]
         findings += check_rules(row, path)
         for name in type(row.axes).model_fields:
             if not getattr(row.axes, name).cites:
