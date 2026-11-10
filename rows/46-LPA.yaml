@@ -1,0 +1,200 @@
+# The seed list's locus 46, LPA (6q26). Curated 2026-11-10 from the full texts of five articles; the first curated
+# row, shown to the lead as the format's first real use. Lead rs10455872; rs55730499 (r² 0.97, Joshi 2017) is the
+# same signal and appears only as a proxy on the studies that reported it. The seed's other LPA-region rsIDs
+# (rs111333005, rs186696265, ...) are secondary signals not read here: see the verdict reason.
+locus_id: 46
+locus_name: LPA
+verdict: kept
+verdict_reason: >-
+  Tier A confirmed. Genome-wide significant for parental lifespan in about one million lives (Timmers 2019, P 8.5e-25)
+  and for healthspan (Zenin 2019); replicated in subjects' own survival past 90 in CHARGE-EU 90+ at the lead itself,
+  same allele and direction (Joshi 2017, P 0.002), and nominal at the 90th percentile in Deelen 2019's data (via
+  Timmers 2020, P 0.007). The caveat on independence: the parental-lifespan GWAS (Joshi, Pilling, Timmers 2019)
+  share UK Biobank and the LifeGen cohorts, and the text does not say whether CHARGE-EU 90+'s cohorts overlap the
+  26 discovery cohorts; the phenotype differs (own survival past 90 against parents' survival). Secondary LPA-region
+  signals (rs186696265, rs111333005, ...) need a conditional analysis to be rows of their own and are not scored here.
+axes:
+  tier: {value: A, cites: [pmid-30642433#q1, pmid-29030599#q2, pmid-30729179#q1, pmid-32678081#q1]}
+  mechanism: {value: heart_vessels, cites: [pmid-29030599#q3, pmid-29227965#q2]}
+  pleiotropy: {values: ["mech:cvd"], cites: [pmid-29030599#q4, pmid-30642433#q1]}
+  age_of_action: {value: MIDLIFE, confidence: DIRECT_WEAK, cites: [pmid-32678081#q2]}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
+            cites: [pmid-30729179#q1, pmid-30642433#q1, pmid-29030599#q2, pmid-32678081#q1]}
+  actionability: {label: preventable, what: ["act_test:lpa"], who: "act_who:doctor", cites: [pmid-29030599#q3]}
+  context: {values: [eur_only_evidence], cites: [pmid-32678081#q1, pmid-29030599#q1]}
+flags:
+  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-29030599#q3]}
+  - {token: ancestry_tag, cites: []}   # gnomAD: the G allele is 0.069 in NFE, 0.001 in EAS (Open Targets 26.09); no article
+  - {token: "causal:C2", cites: []}     # Open Targets 26.09, GCST009890: credible set of 4, PIP 0.38; no article
+  - {token: "effector:E2", cites: []}   # Open Targets 26.09: L2G LPA 0.56, no cis-QTL coloc; no article
+  - {token: "ld_proxy_of:rs10455872", cites: [pmid-29030599#q1]}  # rs55730499, r² 0.97
+  - {token: "mediator:EFO_0006925", cites: [pmid-29030599#q3]}    # lipoprotein(a) measurement
+variants:
+  - rsid: rs10455872
+    gene: LPA
+    phenotype: Lp(a) and heart disease
+    trait_efo_id: EFO_0007796
+    effect_allele: A
+    effect_size: 0.7639
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: A/A
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA region, the one most people of European ancestry
+          have (about 85 in 100). It is the reference the other versions are compared with, so it neither raises
+          nor lowers your expected lifespan here. The region controls how much lipoprotein(a), or Lp(a), the
+          liver makes; high Lp(a) raises the risk of heart attack. A standard blood test your doctor can order
+          shows your actual Lp(a) level, which matters more than this DNA result. The finding is well
+          established in people of European ancestry and less is known elsewhere.
+      - genotype: A/G
+        state: risk
+        conclusion: >-
+          You carry one copy of a less common version of this DNA region (about 15 in 100 people of European
+          ancestry do). This version tends to raise lipoprotein(a), or Lp(a), a blood fat that raises the risk of
+          heart attack, and in very large studies its carriers' parents lived on average about nine months less
+          per copy, mostly through heart disease before about 80. The finding is well established, but it is a
+          tendency, not destiny: most carriers live ordinary lifespans. A standard blood test your doctor can
+          order shows your actual Lp(a) level, which matters more than this DNA result.
+      - genotype: G/G
+        state: risk
+        conclusion: >-
+          You carry two copies of a rare version of this DNA region (fewer than 1 in 100 people of European
+          ancestry do). This version tends to raise lipoprotein(a), or Lp(a), a blood fat that raises the risk of
+          heart attack, and in very large studies each copy went with parents living on average about nine
+          months less, mostly through heart disease before about 80. The finding is well established, but it is
+          a tendency, not destiny. A standard blood test your doctor can order shows your actual Lp(a) level,
+          which matters more than this DNA result.
+studies:
+  - rsid: rs10455872
+    note: pmid-30642433
+    quote: q1
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the 26 LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 1012240
+    sample_unit: lives
+    age_min: 40
+    age_of: parent
+    stat_significance: significant
+    p_value: "8.5E-25"
+    p_value_num: 8.5e-25
+    effect_size: 0.7639
+    effect_measure: beta
+    effect_unit: years of life per copy in self (parental estimate doubled)
+    effect_allele: A
+    statistical_test: "Cox model residual on subject dosage, parents combined, common effect across sexes (Table 1)"
+    curator: claude-opus-5-5
+  - rsid: rs10455872
+    note: pmid-29030599
+    quote: q1
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (first UK Biobank release and 26 population cohorts)
+    ancestry: [EUR]
+    sample_size: 563000
+    sample_unit: lives
+    stat_significance: significant
+    p_value: "8.67 E-11"
+    p_value_num: 8.67e-11
+    effect_size: 1.074
+    effect_measure: HR
+    effect_unit: hazard ratio per T allele at the proxy
+    effect_allele: T
+    proxy_rsid: rs55730499
+    statistical_test: "Cox model of parental survival on offspring dosage, both parents (Table 2); N rounded to thousands"
+    curator: claude-opus-5-5
+  - rsid: rs10455872
+    note: pmid-29030599
+    quote: q2
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (CHARGE-EU 90+)
+    ancestry: [EUR]
+    sample_size: 20518
+    sample_unit: individuals
+    n_cases: 5406
+    age_min: 90
+    age_of: participant
+    stat_significance: not_significant
+    p_value: "0.002"
+    p_value_num: 0.002
+    statistical_test: "Look-up in CHARGE-EU 90+ (cases aged 90 or over, not a percentile), direction consistent (Table 2)"
+    curator: claude-opus-5-5
+  - rsid: rs10455872
+    note: pmid-32678081
+    quote: q1
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's data, as Timmers 2020 tabulates it)
+    ancestry: [EUR]
+    n_cases: 11262
+    sample_size: 36745
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "7E−03"
+    p_value_num: 0.007
+    effect_size: 0.124
+    effect_measure: beta
+    effect_unit: log odds of reaching the 90th percentile, per A allele
+    effect_allele: A
+    statistical_test: "Longevity column of Timmers 2020 Table 1 (90th percentile vs controls); nominal only"
+    curator: claude-opus-5-5
+  - rsid: rs10455872
+    note: pmid-30729179
+    quote: q1
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "4.11e-10"
+    p_value_num: 4.11e-10
+    effect_size: 0.057
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per G allele (positive = earlier)
+    effect_allele: G
+    statistical_test: "Cox model of the first of the common age-related diseases or death, discovery (Table 2)"
+    curator: claude-opus-5-5
+  - rsid: rs10455872
+    note: pmid-30729179
+    quote: q1
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, other participants)
+    ancestry: [EUR]
+    sample_size: 96313
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "1.19e-01"
+    p_value_num: 0.119
+    effect_size: 0.027
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per G allele (positive = earlier)
+    effect_allele: G
+    statistical_test: "Replication in 96,313 UK Biobank participants outside the discovery set (Table 2); same direction"
+    curator: claude-opus-5-5
+  - rsid: rs10455872
+    note: pmid-29227965
+    quote: q1
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank)
+    ancestry: [EUR]
+    sample_size: 389166
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "1.7E-18"
+    p_value_num: 1.7e-18
+    effect_size: -0.0361
+    effect_measure: beta
+    effect_unit: Martingale residual of parents' attained age per C allele (negative = longer life)
+    effect_allele: C
+    proxy_rsid: rs55730499
+    statistical_test: "BOLT-LMM on Martingale residuals of both parents' attained age (Table 2)"
+    curator: claude-opus-5-5
