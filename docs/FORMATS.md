@@ -37,7 +37,8 @@ a v1 locus with no seed entry takes the next free id above the seed's. Fields:
   `quote` and a `quote_absent` saying why: `not_found` read and nothing supports the row, `unchecked` only the
   abstract could be read, `other_claim` the article does not make the claim cited for (the row goes to a
   decision), `licence_unclear`),
-  `phenotype_class` (§4.5), `study_design`, `population` (never empty), `stat_significance`, and where known
+  `phenotype_class` (§4.5), `study_design` (`parental_lifespan_linear` beside `_cox` for a linear model of
+  parents' lifespan), `population` (never empty), `stat_significance`, and where known
   `p_value` (as written), `p_value_num`, `effect_size` (with its `effect_measure`: `beta`, `HR`, `OR`; and
   `effect_unit`), `effect_allele`, `direction` (the effect allele's, as the study reports it), `statistical_test`, `curator` (who located the quote: a name or a model id; `ai`, `true` and the like are
   refused). A study's rsid is one of
@@ -58,7 +59,7 @@ The tokens (pleiotropy, context, actionability's `what`, `flags`) are §4.2's, c
 `effector:E1`–`E4`, `ap:weak|moderate|strong`, `sex_specific:m|f`, `PROTECT:ABSENCE_OF_RISK|PRESENCE|BUFFERING`,
 `animal:genage_mouse|mouse_qtl|worm_rnai`, `animal_dir:concordant|discordant|nonmonotone`,
 `act_test:lpa|ldl|bp|hba1c`, `act_screen:skin`, `act_behaviour:smoking|weight`, `ld_proxy_of:rs…`,
-`mediator:EFO_…`; and, open as §4.2 leaves them, `mech:`, `context:`, `ancestry_specific:`, `also_in:`,
+`mediator:EFO_…` or `mediator:MONDO_…` (where OLS retires an EFO disease id for MONDO's); and, open as §4.2 leaves them, `mech:`, `context:`, `ancestry_specific:`, `also_in:`,
 `hallmark:` with a lower-case name. Any other token is refused; a new one is added here and in the models.
 
 A cite is `<note key>#<quote id>`: `pmid-31413261#q1`.

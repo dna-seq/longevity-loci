@@ -12,7 +12,7 @@ import yaml
 
 from longevity_loci.check import FAILING, Kind, check_quotes, check_rows, load_note, load_seed, normalise, text_forms
 from longevity_loci.fetch import Outcome, Source, fetch
-from longevity_loci.models import Row, row_file
+from longevity_loci.models import Row, check_token, row_file
 
 ASSETS = Path(__file__).resolve().parent.parent / "assets"
 SEED = ASSETS.parent / "docs" / "longevitymap_v2" / "data" / "seed_variants.csv"
@@ -509,3 +509,33 @@ def test_a_study_never_rests_on_a_database_note(tree: Path) -> None:
     _row(tree).write_text(_row(tree).read_text().replace("note: pmid-31413261\n    quote: q2", "note: db-opentargets-26.09\n    quote: q1"))
     bad = [f for f in check_rows(tree / "rows", tree / "corpus") if f.kind is Kind.MALFORMED]
     assert [f.path.name for f in bad] == ["96-APOE.yaml"] and "article" in bad[0].detail
+
+
+def test_a_quote_naming_the_proxy_is_grained(tree: Path) -> None:
+    """RM5, from the pilot: a study on a lead variant quotes the row the article printed, which names the proxy it
+    reported (`proxy_rsid`); that quote is grained. The test copy's second variant is given another gene, so only
+    the proxy can ground the quote."""
+    text = _row(tree).read_text()
+    head, studies = text.split("studies:\n", 1)
+    assert "  - rsid: rs7412\n    gene: APOE\n" in head
+    head = head.replace("  - rsid: rs7412\n    gene: APOE\n", "  - rsid: rs7412\n    gene: APOC1\n")
+    study = studies.replace("  - rsid: rs429358\n", "  - rsid: rs7412\n", 1)
+    assert "quote: q2" in study  # q2 is Table 2's rs429358 line: neither rs7412 nor APOC1
+
+    def flagged() -> list[str]:
+        return [f.where for f in check_rows(tree / "rows", tree / "corpus") if f.kind is Kind.UNGRAINED]
+
+    _row(tree).write_text(head + "studies:\n" + study)
+    assert flagged() == ["studies[0] rs7412"]
+    _row(tree).write_text(head + "studies:\n" + study.replace("    quote: q2\n", "    quote: q2\n    proxy_rsid: rs429358\n", 1))
+    assert flagged() == []
+
+
+@pytest.mark.parametrize(("token", "ok"), [("mediator:MONDO_0005010", True), ("mediator:EFO_0001645", True), ("mediator:HP_0001677", False)])
+def test_mediator_takes_efo_or_mondo(token: str, ok: bool) -> None:
+    """RM5: OLS retired coronary artery disease's EFO id for MONDO_0005010, so a mediator may be either."""
+    if ok:
+        assert check_token(token) == token
+    else:
+        with pytest.raises(ValueError):
+            check_token(token)

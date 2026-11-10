@@ -38,11 +38,3 @@ be written on the lead variant while 0.7.1 has no `proxy_rsid`. Each is RM1's to
 curator's 46-LPA cites them), gnomAD's frequencies next, each rendered to lines a quote can be located in, with a
 sidecar saying the release, the URL and the sha256. The release read must equal the note's `release`, or the fetch
 refuses: a later release is a different source.
-
-## RM5 — the pilot's small format fixes
-
-**State:** unattended. **Owner:** lead. From the curator's pilot notes:
-- `ungrained` ignores a study's `proxy_rsid`, so a quote naming the proxy still warns.
-- `mediator:` takes `EFO_` only, and coronary artery disease's EFO id is retired for MONDO_0005010.
-- `study_design` has no parental-lifespan design other than Cox; Wright 2019's linear model was written as Cox.
-

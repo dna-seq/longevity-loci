@@ -45,6 +45,7 @@ class StatSignificance(StrEnum):
 
 class StudyDesign(StrEnum):
     PARENTAL_LIFESPAN_COX = "parental_lifespan_cox"
+    PARENTAL_LIFESPAN_LINEAR = "parental_lifespan_linear"  # parents' lifespan regressed linearly (Wright 2019), not Cox
     OWN_SURVIVAL_COX = "own_survival_cox"
     PERCENTILE_CC_P90 = "percentile_case_control_p90"
     PERCENTILE_CC_P99 = "percentile_case_control_p99"
@@ -160,7 +161,7 @@ TOKEN_VALUES: dict[str, str] = {
     "PROTECT": r"ABSENCE_OF_RISK|PRESENCE|BUFFERING", "animal": r"genage_mouse|mouse_qtl|worm_rnai",
     "animal_dir": r"concordant|discordant|nonmonotone", "act_who": r"self|doctor",
     "act_test": r"lpa|ldl|bp|hba1c", "act_screen": r"skin", "act_behaviour": r"smoking|weight",
-    "ld_proxy_of": r"rs\d+", "mediator": r"EFO_\d+", "also_in": r"[a-z0-9_]+", "mech": r"[a-z0-9_]+",
+    "ld_proxy_of": r"rs\d+", "mediator": r"(EFO|MONDO)_\d+", "also_in": r"[a-z0-9_]+", "mech": r"[a-z0-9_]+",
     "context": r"[a-z0-9_]+", "ancestry_specific": r"[a-z0-9_]+", "hallmark": r"[a-z0-9_]+",
 }
 
@@ -299,7 +300,7 @@ class Variant(Strict):
     rsid: str = Field(pattern=r"^rs\d+$")
     gene: str  # the effector call, not the nearest gene
     phenotype: str | None = None  # plain outcome label, at most six words
-    trait_efo_id: str | None = None  # the lifespan trait; a mediator goes in flags as mediator:EFO_…
+    trait_efo_id: str | None = None  # the lifespan trait; a mediator goes in flags as mediator:EFO_… or mediator:MONDO_…
     effect_allele: str | None = None
     effect_size: float | None = None
     effect_measure: EffectMeasure | None = None

@@ -263,8 +263,10 @@ def check_rows(rows: Path, corpus: Path, seed: dict[int, str] | None = None) -> 
             quote = note.quotes.get(s.quote) if note else None
             if quote is not None:
                 words = set(re.findall(r"[A-Za-z0-9]+", normalise(quote.text)))
-                if s.rsid not in words and not set(re.split(r"[^A-Za-z0-9]+", genes[s.rsid])) & words:
-                    findings.append(Finding(Kind.UNGRAINED, path, f"studies[{i}] {s.rsid}", f"{s.cite} names neither {s.rsid} nor {genes[s.rsid]}"))
+                named = {s.rsid} | ({s.proxy_rsid} if s.proxy_rsid else set())  # the proxy is what the study reported
+                if not named & words and not set(re.split(r"[^A-Za-z0-9]+", genes[s.rsid])) & words:
+                    names = " / ".join(sorted(named))
+                    findings.append(Finding(Kind.UNGRAINED, path, f"studies[{i}] {s.rsid}", f"{s.cite} names neither {names} nor {genes[s.rsid]}"))
         for where, cite in row.cites():
             m = CITE.match(cite)
             assert m is not None  # the model refused any other shape

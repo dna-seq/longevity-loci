@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- From the pilot (RM5): a study quote naming the proxy the study reported is grained; `mediator:` takes a MONDO id where OLS retired the EFO one; `study_design: parental_lifespan_linear` for a linear model of parents' lifespan.
 - `loci fetch-supp`: an article's supplement tables, PDFs, code files and Zenodo or figshare deposits are cached as text beside the article, and `check quotes` locates a quote read at depth `supplement` in them; before, such a quote could only be prose (RM4).
 - The curator compacts itself after each row, stops at 80% of the 7-day quota window, reads supplements, figures, code and data deposits as deep as a row needs, and settles the requirements' silent cells with the advisor; the lead reads a re-tiered row adversarially instead of asking the person.
 - A row may fold in the other seed ids that name its signal (`also_loci`), filed under the lowest; a second row for one of them is a duplicate (D14).
