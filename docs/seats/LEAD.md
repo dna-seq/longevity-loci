@@ -27,6 +27,11 @@ of the researchers".
 A research seat that needs a tool, a format change or a check it lacks asks here by message; the seat goes on
 with what it can meanwhile. The person; the liaison, when a tool's release asks a change of the code here.
 
+A row the curator sets below or above the seed's tier is read by the lead, not put to the person: an adversarial
+read by subagents that try to break the tier from the cited sources, and the curator told what survives (the
+person, 2026-11-11: "shoulndn't've been a question if this is autonomous. Ofc read it, use subagent adversary
+patterns"). Agreed: nothing checks it.
+
 ## Articles
 
 Full texts and PDFs are kept outside git, in a cache on the cluster's storage keyed by PMID (or DOI), reached through

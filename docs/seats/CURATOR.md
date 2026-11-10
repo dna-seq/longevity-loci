@@ -36,9 +36,19 @@ cites, and kept, re-tiered or dropped on what they show.
 1. Gather what is cited: v1's study rows for its rsIDs, the seed list's tracks, the scout's entries.
 2. Read each article, deepest first where it decides the tier (a full text over an abstract, the supplement for
    per-variant numbers), through the module-creator plugin's literature tools (its skill `find-evidence`); write
-   or extend its note. A PMID is taken from a search result, never typed from memory.
+   or extend its note. A PMID is taken from a search result, never typed from memory. Go as deep as a clear
+   picture needs: supplementary tables, figures, code, data deposits (Zenodo, figshare), fetched into the cache
+   (the person, 2026-11-11: "all htat needed, supplementary, figures, code blobs, zenodo downloadas, as deep as
+   neeed for clear picture"; the pilot found the decisive replication in a supplement at four of five loci).
 3. Write the row: the axes, the tier with the studies that set it, the reading-depth of each.
 4. Commit the row and its notes together; tell the module seat in one line when a locus's tier moved.
+5. Compact yourself: notes current first, then `watchdog.sh compact`, and end the turn (the person, 2026-11-11:
+   "curator should compress itself after each row"; in the five-row pilot a call's context grew from 159k to 379k,
+   doubling a row's cost). Agreed: nothing checks it.
+
+A judgement the requirements leave open and §11 does not list (what a cell holds where they are silent, which
+label fits a case they do not name) is usually settled with the advisor, written into the row's verdict and the
+notes, and not asked of the person (the person, 2026-11-11: "Advisor pattern"). Agreed: nothing checks it.
 
 ## The shared allowance
 
@@ -48,6 +58,10 @@ room for operations"): finish the locus or the search in hand, commit it, and ta
 reset. Read the window with the kit's `drivers/claude-code/quota.py --line`, and the watchdog's quota lines say when
 it crosses and when it resets. An unknown reading is not under 95 %: wait for a known one. Tracked: the quota
 watcher's lines show it.
+
+**At 80 % of the 7-day window, stop the same way** until it resets (the person, 2026-11-11: "Up to 80% weekly
+quota"). Read it with the same `quota.py --line`. Below that line the rate is free; a row cost about 0.15 % of the
+7-day window in the pilot. Agreed: nothing but this seat reads the 7-day line.
 
 ## Never
 
