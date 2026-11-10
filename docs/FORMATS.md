@@ -71,6 +71,13 @@ One per article; the key is `pmid-<PMID>`, or `doi-<DOI>` with `/` written as `_
 A quote is one line, `> [q<n>] <the text, verbatim>`, never empty, its id unique in the note; prose around it
 says what the article shows for which variant. A doi key is the doi with `/` as `_`.
 
+A fact read from a database release (Open Targets' fine-mapping and locus-to-gene scores, gnomAD's frequencies)
+has a note of its own, `corpus/db-<database>-<release>.md` (`db-opentargets-26.09`), cited from an axis or a flag
+like any note (`db-opentargets-26.09#q1`), never as a study's `note`: a study is an article's analysis. Its front
+matter: `key`, `database`, `release`, `url` (where the record was read), `accessed` (the day), `depth: record`; no
+pmid, doi, title or title_checked. Its readings are `## Reading <YYYY-MM-DD>, record`, each quote a value as the
+record shows it (D12).
+
 ## The article cache: `$LOCI_CACHE/<key>.txt`
 
 The text of each article read, outside git, keyed as its note (the variable is set on the machine, never written
@@ -114,7 +121,9 @@ nothing to check.
     `direction` is `contested` (a trade-off with unresolved net direction, §6.2). Fewer than three genotypes is
     `incomplete`, a warning listed with `-v`: an APOE-style locus is scored as a diplotype (§6.4).
 
-Not checked yet: R-TIER-3 (an ancestry banner, the consumer's) and R-TIER-1's "research view only" (the
+Not checked yet: a database release's quotes, which are `no_text` (unknown) until something fetches the
+release's record into the cache (never a record pasted by hand, which would check the curator's copy against
+itself); R-TIER-3 (an ancestry banner, the consumer's) and R-TIER-1's "research view only" (the
 module's), the tier A criteria a field cannot show (N, replication, heterogeneity), which genotype is the most common, and that a cited quote bears on the claim it is
 cited for. A quote is a substring: one cut short so that it drops a "not" before it
 is still located, so a quote is a whole sentence or table cell (§6.3), and that is the curator's to keep.

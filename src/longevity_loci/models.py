@@ -10,8 +10,9 @@ from enum import StrEnum
 
 from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 
-CITE = re.compile(r"^(?P<note>(?:pmid-\d+|doi-[A-Za-z0-9._;()\-]+))#(?P<quote>q\d+)$")
-NOTE_KEY = re.compile(r"^(?:pmid-\d+|doi-[A-Za-z0-9._;()\-]+)$")
+_KEY = r"(?:pmid-\d+|doi-[A-Za-z0-9._;()\-]+|db-[a-z0-9]+-[A-Za-z0-9._]+)"  # an article, a preprint, a database release
+CITE = re.compile(rf"^(?P<note>{_KEY})#(?P<quote>q\d+)$")
+NOTE_KEY = re.compile(rf"^{_KEY}$")
 
 
 class Tier(StrEnum):
@@ -32,6 +33,7 @@ class Depth(StrEnum):
     ABSTRACT = "abstract"
     FULL_TEXT = "full_text"
     SUPPLEMENT = "supplement"
+    RECORD = "record"  # a database release's record, the one reading a db- note has
 
 
 class StatSignificance(StrEnum):
@@ -350,6 +352,8 @@ class Study(Strict):
             raise ValueError(f"note is a note key (pmid-31413261 or doi-…); not {self.note!r}")
         if (self.quote is None) == (self.quote_absent is None):
             raise ValueError("a study has a quote, or a quote_absent saying why it has none; one of the two")
+        if self.note.startswith("db-"):
+            raise ValueError(f"a study is an article's analysis; {self.note} is a database release, cited from an axis or a flag")
         if self.quote is not None:
             _check_cites([f"{self.note}#{self.quote}"])
         if self.curator is not None and self.curator.strip().casefold() in PLACEHOLDER_CURATORS:
@@ -429,13 +433,28 @@ class NoteHead(Strict):
     key: str = Field(pattern=NOTE_KEY.pattern)
     pmid: int | None = None
     doi: str | None = None
-    title: str
-    year: int
-    title_checked: date  # the date the title was matched against PubMed (or the DOI's record)
+    title: str | None = None
+    year: int | None = None
+    title_checked: date | None = None  # the date the title was matched against PubMed (or the DOI's record)
+    database: str | None = None  # a db- note: the database, as its key names it (opentargets, gnomad)
+    release: str | None = None  # a db- note: the release read (26.09, 4.1)
+    url: str | None = None  # a db- note: where the record was read
+    accessed: date | None = None  # a db- note: the day it was read
     depth: Depth  # the deepest reading so far
+
+    @property
+    def is_database(self) -> bool:
+        return self.key.startswith("db-")
 
     @model_validator(mode="after")
     def _key_matches(self) -> NoteHead:
+        if self.is_database:
+            return self._database_release()
+        missing = [f for f in ("title", "year", "title_checked") if getattr(self, f) is None]
+        if missing:
+            raise ValueError(f"a note on an article gives {', '.join(missing)}")
+        if self.depth is Depth.RECORD:
+            raise ValueError("depth record is a database release's; an article is read as abstract, full_text or supplement")
         if self.pmid is not None and self.key != f"pmid-{self.pmid}":
             raise ValueError(f"key {self.key} does not name pmid {self.pmid}")
         if self.pmid is None:
@@ -445,4 +464,17 @@ class NoteHead(Strict):
                 raise ValueError(f"key {self.key} does not name doi {self.doi}")
         if not 1900 <= self.year <= date.today().year + 1:
             raise ValueError(f"year {self.year} is not a publication year")
+        return self
+
+    def _database_release(self) -> NoteHead:
+        given = [f for f in ("pmid", "doi", "title_checked") if getattr(self, f) is not None]
+        if given:
+            raise ValueError(f"a database release's note has no {', '.join(given)}: it is not an article")
+        missing = [f for f in ("database", "release", "url", "accessed") if getattr(self, f) is None]
+        if missing:
+            raise ValueError(f"a database release's note gives {', '.join(missing)}")
+        if self.key != f"db-{self.database}-{self.release}":
+            raise ValueError(f"key {self.key} does not name database {self.database} release {self.release}")
+        if self.depth is not Depth.RECORD:
+            raise ValueError(f"a database release is read as a record, not {self.depth.value}")
         return self

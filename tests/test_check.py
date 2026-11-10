@@ -399,3 +399,58 @@ def test_row_named_from_a_seed_name_a_path_cannot_hold(tree: Path, locus_id: int
     assert [f for f in findings if f.kind is Kind.MISNAMED] == []
     (tree / "rows" / file).rename(tree / "rows" / f"{locus_id}-{name}.yaml".replace("/", "_slash_"))
     assert [f.kind for f in check_rows(tree / "rows", tree / "corpus", seed) if f.kind is Kind.MISNAMED] == [Kind.MISNAMED]
+
+
+DB_NOTE = """---
+key: db-opentargets-26.09
+database: opentargets
+release: "26.09"
+url: https://platform.opentargets.org/variant/19_44908684_T_C
+accessed: 2026-11-10
+depth: record
+---
+
+## Reading 2026-11-10, record
+
+> [q1] {value}
+"""
+
+
+def _cite_db(tree: Path, value: str = "19_44908684_T_C") -> None:
+    (tree / "corpus" / "db-opentargets-26.09.md").write_text(DB_NOTE.format(value=value))
+    text = _row(tree).read_text()
+    first_cites = text.index("cites: [")
+    _row(tree).write_text(text[:first_cites] + "cites: [db-opentargets-26.09#q1, " + text[first_cites + len("cites: ["):])
+
+
+def test_a_database_release_is_cited_and_its_quote_unknown(tree: Path) -> None:
+    """A fact from a database release cites a note on that release; its quote is unknown to `check quotes` until a
+    record of the release is cached, never a pass (D12)."""
+    _cite_db(tree)
+    rows = check_rows(tree / "rows", tree / "corpus")
+    assert "db-opentargets-26.09#q1" in {f.detail for f in rows if f.kind is Kind.OK}
+    assert not [f for f in rows if f.passed is False]
+    quotes = [f for f in check_quotes(tree / "corpus", tree / "cache") if f.path.name == "db-opentargets-26.09.md"]
+    assert [(f.kind, f.passed) for f in quotes] == [(Kind.NO_TEXT, None)]
+
+
+@pytest.mark.parametrize(("old", "new", "says"), [
+    ("release: \"26.09\"", "release: \"26.10\"", "does not name"),
+    ("depth: record", "depth: full_text", "record"),
+    ("url: https://platform.opentargets.org/variant/19_44908684_T_C\n", "", "url"),
+    ("accessed: 2026-11-10\n", "pmid: 31413261\naccessed: 2026-11-10\n", "pmid"),
+])
+def test_a_database_note_refused(tree: Path, old: str, new: str, says: str) -> None:
+    _cite_db(tree)
+    note = tree / "corpus" / "db-opentargets-26.09.md"
+    assert old in note.read_text()
+    note.write_text(note.read_text().replace(old, new))
+    bad = [f for f in check_rows(tree / "rows", tree / "corpus") if f.kind is Kind.MALFORMED]
+    assert [f.path.name for f in bad] == ["db-opentargets-26.09.md"] and says in bad[0].detail, bad
+
+
+def test_a_study_never_rests_on_a_database_note(tree: Path) -> None:
+    _cite_db(tree)
+    _row(tree).write_text(_row(tree).read_text().replace("note: pmid-31413261\n    quote: q2", "note: db-opentargets-26.09\n    quote: q1"))
+    bad = [f for f in check_rows(tree / "rows", tree / "corpus") if f.kind is Kind.MALFORMED]
+    assert [f.path.name for f in bad] == ["96-APOE.yaml"] and "article" in bad[0].detail

@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- A database release can be cited: a `corpus/db-<database>-<release>.md` note, cited from an axis or a flag; its quotes are unknown to `check quotes` until a fetcher caches the record (D12).
 - A row whose seed name holds a slash, a space or a bracket is filed under a file-safe name (`81-FES_FURIN.yaml`), and an unnamed locus as `<locus_id>.yaml`; the row keeps the seed's name.
 - `stat_significance: nominal` (1×10⁻⁵ ≤ p < 0.05) supports a row, so a replication §4.1 counts is seen by the check; `study_design: age_threshold_case_control` for cases above an age (D11).
 - `docs/seats/README.md` shows how work flows between the six seats, as a diagram, and which seats wait on the person.

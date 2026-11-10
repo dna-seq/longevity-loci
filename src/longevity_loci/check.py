@@ -23,9 +23,9 @@ from longevity_loci.models import (
 
 log = logging.getLogger(__name__)
 
-READING = re.compile(r"^## Reading (?P<date>\d{4}-\d{2}-\d{2}), (?P<depth>abstract|full_text|supplement)\s*$")
+READING = re.compile(r"^## Reading (?P<date>\d{4}-\d{2}-\d{2}), (?P<depth>abstract|full_text|supplement|record)\s*$")
 QUOTE_LINE = re.compile(r"^> \[(?P<qid>q\d+)\] (?P<text>.*)$")
-DEPTH_ORDER = [Depth.ABSTRACT, Depth.FULL_TEXT, Depth.SUPPLEMENT]
+DEPTH_ORDER = [Depth.ABSTRACT, Depth.FULL_TEXT, Depth.SUPPLEMENT, Depth.RECORD]
 
 
 class Kind(StrEnum):
@@ -108,7 +108,7 @@ def load_note(path: Path) -> Note:
                 raise ValueError(f"quote id {m['qid']} is used twice")
             if not normalise(m["text"]).strip('"').strip():
                 raise ValueError(f"quote {m['qid']} is empty")
-            if normalise(m["text"]).strip('"').strip().casefold() == normalise(note.head.title).casefold():
+            if note.head.title and normalise(m["text"]).strip('"').strip().casefold() == normalise(note.head.title).casefold():
                 raise ValueError(f"quote {m['qid']} is the article's title, which locates nothing (QUOTING.md rule 1)")
             note.quotes[m["qid"]] = Quote(qid=m["qid"], text=m["text"].strip(), reading=reading)
             after_quote = True

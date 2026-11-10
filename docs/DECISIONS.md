@@ -48,3 +48,13 @@ saying what the p-value already says. Not added: a band on `not_significant` (a 
 turn red at once; the curator re-tags), and a hard rule that tier A needs two supporting articles (a new rule, the
 person's to ask for). The module's 0.7.1 vocabulary is closed at significant, suggestive, not_significant and
 unknown, so the export (RM1) has no value for `nominal` yet; that is RM1's to settle.
+
+## D12 — a database release is cited like an article, and its quotes stay unknown (2026-11-10)
+
+The curator's first row rested three claims on database releases (Open Targets 26.09 fine-mapping and L2G,
+gnomAD frequencies), which no cite could name, so they stood unsupported. A release gets a note,
+`db-<database>-<release>`, cited from axes and flags; a study may not rest on one. Its quotes are what the record
+shows. `check quotes` finds them unknown (`no_text`, exit 4) until a fetcher caches the release's record, which is
+a plan item of its own. Rejected: letting the curator cache the record by hand, since the check would then locate
+the curator's quote in the curator's own paste and agree with itself; and a free-text source field on the claim,
+which no check could read.
