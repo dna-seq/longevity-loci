@@ -24,9 +24,9 @@ axes:
   context: {values: [eur_only_evidence], cites: [pmid-32678081#q1, pmid-29030599#q1]}
 flags:
   - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-29030599#q3]}
-  - {token: ancestry_tag, cites: []}   # gnomAD: the G allele is 0.069 in NFE, 0.001 in EAS (Open Targets 26.09); no article
-  - {token: "causal:C2", cites: []}     # Open Targets 26.09, GCST009890: credible set of 4, PIP 0.38; no article
-  - {token: "effector:E2", cites: []}   # Open Targets 26.09: L2G LPA 0.56, no cis-QTL coloc; no article
+  - {token: ancestry_tag, cites: [db-opentargets-26.09#q1, db-opentargets-26.09#q2, db-opentargets-26.09#q3]}
+  - {token: "causal:C2", cites: [db-opentargets-26.09#q4]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q5]}
   - {token: "ld_proxy_of:rs10455872", cites: [pmid-29030599#q1]}  # rs55730499, r² 0.97
   - {token: "mediator:EFO_0006925", cites: [pmid-29030599#q3]}    # lipoprotein(a) measurement
 variants:
@@ -111,7 +111,7 @@ studies:
     note: pmid-29030599
     quote: q2
     phenotype_class: EXTREME_SURVIVAL_CC
-    study_design: percentile_case_control_p90
+    study_design: age_threshold_case_control
     population: European (CHARGE-EU 90+)
     ancestry: [EUR]
     sample_size: 20518
@@ -122,7 +122,7 @@ studies:
     stat_significance: not_significant
     p_value: "0.002"
     p_value_num: 0.002
-    statistical_test: "Look-up in CHARGE-EU 90+ (cases aged 90 or over, not a percentile), direction consistent (Table 2)"
+    statistical_test: "Look-up of the lead in CHARGE-EU 90+ (cases aged 90 or over), direction consistent (Table 2). Nominal (P 0.002), held not_significant only because the paper gives no effect size and §6.3 requires one on a supporting study; asked of the lead"
     curator: claude-opus-5-5
   - rsid: rs10455872
     note: pmid-32678081
@@ -134,7 +134,7 @@ studies:
     n_cases: 11262
     sample_size: 36745
     sample_unit: individuals
-    stat_significance: not_significant
+    stat_significance: nominal
     p_value: "7E−03"
     p_value_num: 0.007
     effect_size: 0.124
