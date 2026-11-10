@@ -8,7 +8,7 @@ Each measurement is a dated section, newest first; a later one never rewrites an
 The person asked for it: "do first 5 rows this way and see what breaks ... measure quota climb for this job
 (intergral, ballpark) to understand how to pace this properly, how many rows per hour to do and how to throttle".
 The rows were seed tier A loci 93 LDLR, 80 CHRNB4, 57 CDKN2B-AS1, 71 ATXN2 and 67 TTC12. One curator session did
-them on Opus 5.5 with no subagents, while the module seat slept. The window ran from 21:57 to 22:33 UTC.
+them on Opus 5.5 with no subagents, while the module seat was asked to sleep (it still spent 0.28M finishing a desk question, #251). The window ran from 21:57 to 22:33 UTC.
 
 **Tokens, from the curator's transcript.** Each API response is counted once. Rows are split by their commits.
 "Weighted" means input + 1.25 × cache write + 0.1 × cache read + 5 × output, in input-token equivalents. These are
