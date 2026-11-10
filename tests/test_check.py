@@ -232,6 +232,10 @@ def _row(tree: Path) -> Path:
         ("phenotype_class: EXTREME_SURVIVAL_CC", "phenotype_class: MR", "R-TIER-4", "MR-only"),
         ("study_design: percentile_case_control_p90", "study_design: centenarian_case_control", "R-TIER-2", "centenarian"),
         ("    effect_allele: C\n", "", "studies[0] rs429358", "effect_allele"),
+        ("stat_significance: significant\n    p_value: \"1.3 × 10−56\"\n    p_value_num: 1.3e-56",
+         "stat_significance: nominal\n    p_value: \"0.2\"\n    p_value_num: 0.2", "studies[0] rs429358", "not in [1e-5, 0.05)"),
+        ("stat_significance: significant\n    p_value: \"1.3 × 10−56\"\n    p_value_num: 1.3e-56",
+         "stat_significance: nominal\n    p_value: \"2e-6\"\n    p_value_num: 2.0e-6", "studies[0] rs429358", "not in [1e-5, 0.05)"),
     ],
 )
 def test_hard_rules(tree: Path, old: str, new: str, rule: str, reason: str) -> None:
@@ -362,3 +366,19 @@ def test_r_tier_1_silent_when_other_support_exists(tree: Path) -> None:
     study = text[text.index("  - rsid: rs429358\n    note:"):]
     _row(tree).write_text(text + study.replace("note: pmid-31413261\n    quote: q2", "note: pmid-22279548\n    quote: q1"))
     assert "R-TIER-1" not in {f.where for f in check_rows(tree / "rows", tree / "corpus")}
+
+
+def test_nominal_replication_supports(tree: Path) -> None:
+    """§4.1 counts a replication at p < 0.05: a nominal study beside the genome-wide one supports the row, so the
+    §6.3 fields are asked of it too, and its band is checked."""
+    text = _row(tree).read_text()
+    study = text[text.index("studies:\n") + len("studies:\n"):]
+    nominal = (study.replace("stat_significance: significant", "stat_significance: nominal")
+               .replace('p_value: "1.3 × 10−56"', 'p_value: "0.002"').replace("p_value_num: 1.3e-56", "p_value_num: 0.002")
+               .replace("study_design: percentile_case_control_p90", "study_design: age_threshold_case_control"))
+    assert "stat_significance: nominal" in nominal and "age_threshold_case_control" in nominal
+    _row(tree).write_text(text + nominal)
+    assert not [f for f in check_rows(tree / "rows", tree / "corpus") if f.kind is Kind.RULE]
+    _row(tree).write_text(text + nominal.replace("    effect_allele: C\n", "", 1))
+    rules = [f for f in check_rows(tree / "rows", tree / "corpus") if f.kind is Kind.RULE]
+    assert [(f.where, "effect_allele" in f.detail) for f in rules] == [("studies[1] rs429358", True)]

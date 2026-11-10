@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- `stat_significance: nominal` (1×10⁻⁵ ≤ p < 0.05) supports a row, so a replication §4.1 counts is seen by the check; `study_design: age_threshold_case_control` for cases above an age (D11).
 - `docs/seats/README.md` shows how work flows between the six seats, as a diagram, and which seats wait on the person.
 - The runner seat is seated: `runs/LOG.md` (one entry per batch job) and `runs/STATUS.md` (what runs now) begin, empty; fetches for the scout and the curator now go to it.
 - `module/` scaffolded for longevitymap 2.0.0 (plugin v0.48.5, format 0.7.1): the spec with the requirements' recommended defaults for D1 and D3, header-only variants, studies and licensing tables. Strict validation refuses it until the first curated study row lands.

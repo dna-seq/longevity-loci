@@ -37,6 +37,7 @@ class Depth(StrEnum):
 class StatSignificance(StrEnum):
     SIGNIFICANT = "significant"
     SUGGESTIVE = "suggestive"
+    NOMINAL = "nominal"  # 1e-5 <= p < 0.05: a replication §4.1 counts, below the suggestive band
     NOT_SIGNIFICANT = "not_significant"
 
 
@@ -46,6 +47,7 @@ class StudyDesign(StrEnum):
     PERCENTILE_CC_P90 = "percentile_case_control_p90"
     PERCENTILE_CC_P99 = "percentile_case_control_p99"
     CENTENARIAN_CC = "centenarian_case_control"
+    AGE_THRESHOLD_CC = "age_threshold_case_control"  # cases above an age (90+, say), not a birth-cohort percentile
     MULTIVARIATE = "multivariate_healthspan_lifespan"
     HEALTHSPAN_COX = "healthspan_cox"
     CANDIDATE_GENE = "candidate_gene"

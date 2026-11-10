@@ -36,3 +36,15 @@ line-break hyphens). Kept as D9, with two of its rules added: a quote that is th
 grain is one passage per article and variant). The looser side matters downstream: the plugin matches against
 its own retrieved text, so a quote is best copied from the cached text, never retyped (its rule 3c). Rejected:
 adopting its case-insensitive match (it locates a quote whose gene or protein symbol changed case).
+
+## D11 — a nominal replication, and a design for an age threshold (2026-11-10)
+
+The curator's first row (46-LPA) held a tier-A replication at p 0.002 (CHARGE-EU, cases aged 90+), which the
+vocabulary could only call `not_significant`, so it supported nothing and §4.1's "independent replication (p <
+0.05)" was invisible to the check. `stat_significance` gains `nominal` (1×10⁻⁵ ≤ p < 0.05), which supports;
+`study_design` gains `age_threshold_case_control`, cases above an age against younger controls, which is neither
+a birth-cohort percentile nor a centenarian design. Rejected: a `replicates:` marker on the study, a second field
+saying what the p-value already says. Not added: a band on `not_significant` (a row tagged so with p < 0.05 would
+turn red at once; the curator re-tags), and a hard rule that tier A needs two supporting articles (a new rule, the
+person's to ask for). The module's 0.7.1 vocabulary is closed at significant, suggestive, not_significant and
+unknown, so the export (RM1) has no value for `nominal` yet; that is RM1's to settle.

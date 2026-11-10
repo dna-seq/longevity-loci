@@ -25,3 +25,8 @@ rsid, population, study_design, stat_significance, p_value, p_value_num, effect_
 effect_allele, trait_efo_id, statistical_test, provenance_quote as the quote's text, curator. 0.7.1 has no
 ancestry, age, sample, stratum or proxy columns; those come with 0.8. Strict validate refuses an empty
 `studies.csv`, so the first exported locus is also the module's first green build.
+
+Read from the first row (46-LPA, the module seat, 2026-11-10), three things the export cannot project on 0.7.1:
+`studies.csv` is keyed (variant, pmid), and a row may hold two analyses of one article (validate warns on the
+duplicate); `stat_significance` has no `nominal` (D11); a study on a proxy states the proxy's alleles, which must not
+be written on the lead variant while 0.7.1 has no `proxy_rsid`. Each is RM1's to settle when it is built.

@@ -155,6 +155,7 @@ SCORED = frozenset({Tier.A, Tier.B})
 REQUIRED_AB = ("p_value", "p_value_num", "effect_size", "effect_measure", "effect_allele")
 GENOME_WIDE = 5e-8
 SUGGESTIVE_P = 1e-5
+NOMINAL_P = 0.05  # §4.1: a replication counts at p < 0.05
 
 
 def check_rules(row: Row, path: Path) -> list[Finding]:
@@ -175,6 +176,8 @@ def check_rules(row: Row, path: Path) -> list[Finding]:
             rule(f"studies[{i}] {s.rsid}", f"significant with p {s.p_value_num:g}, not below 5e-8")
         if s.stat_significance is StatSignificance.SUGGESTIVE and not GENOME_WIDE <= s.p_value_num < SUGGESTIVE_P:
             rule(f"studies[{i}] {s.rsid}", f"suggestive with p {s.p_value_num:g}, not in [5e-8, 1e-5)")
+        if s.stat_significance is StatSignificance.NOMINAL and not SUGGESTIVE_P <= s.p_value_num < NOMINAL_P:
+            rule(f"studies[{i}] {s.rsid}", f"nominal with p {s.p_value_num:g}, not in [1e-5, 0.05)")
     if supporting and {s.note for s in supporting} == {R_TIER_1_PMID}:
         if tier is not Tier.D:
             rule("R-TIER-1", f"only support is PMID 22279548, so tier D, not {tier.value}")
