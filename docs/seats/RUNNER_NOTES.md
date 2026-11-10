@@ -5,7 +5,8 @@ The runner seat's working state, rewritten to the present before a reset (`docs/
 ## Now
 
 Seated 2026-11-10 (account seat-10). The first-seating handout is done:
-- the rigger's orientation read (the copy it sent the lead); the share is the default until the person sets one;
+- the rigger's orientation read (the copy it sent the lead); the share is the default until the person answers
+  desk #248, and the rigger tells this seat the answer (its reply, 2026-11-10);
 - no `ll-` job in the queue, none taken over;
 - `runs/LOG.md` and `runs/STATUS.md` started;
 - the scout and the curator told, in the repository's channel, that fetches now come here.
