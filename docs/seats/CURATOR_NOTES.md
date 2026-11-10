@@ -16,6 +16,9 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   (8/157, 25/158, 132/133/153), skipped until answered. Rows get no changelog line.
 - **Paused after the five-row pilot, on the person's word.** All five done (below); no sixth row until the person
   says go. Next then, by PROGRESS: 6 CELSR2, 38 HLA-DQA1.
+- 2026-11-11, compaction test (the person, via the lead, 639307472: "compress itself after each row"): notes made
+  current, then `watchdog.sh compact`. After it: send the lead a `done:` (did it run; seat, pilot and pause still
+  known; anything missing). Still paused; no sixth row. Final pilot report sent as 639296521; last commit dfcee8c.
 - The scout's queue: pmid-42928374 (FURIN, pleiotropy with mental disorders) waits for locus 81; read it then.
 
 ## Pilot (five rows, from 2026-11-10)
