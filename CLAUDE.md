@@ -100,7 +100,8 @@ reason gets argued away at 2 a.m.
 ## 3. Layout
 
 ```
-rows/        a curated row per locus, <locus_id>-<locus_name>.yaml; rows/PROGRESS.md the curator's order
+rows/        a curated row per locus, <locus_id>-<locus_name>.yaml (the name made file-safe, docs/FORMATS.md);
+             rows/PROGRESS.md the curator's order
 corpus/      an evidence note per article, <key>.md (pmid-<PMID>, or doi-<DOI> for a preprint)
 scout/       SEARCHES.md (the searches, by track) and queue.md (new papers waiting for a row)
 module/      the module's spec directory (module_spec.yaml and its tables), the module seat's

@@ -382,3 +382,20 @@ def test_nominal_replication_supports(tree: Path) -> None:
     _row(tree).write_text(text + nominal.replace("    effect_allele: C\n", "", 1))
     rules = [f for f in check_rows(tree / "rows", tree / "corpus") if f.kind is Kind.RULE]
     assert [(f.where, "effect_allele" in f.detail) for f in rules] == [("studies[1] rs429358", True)]
+
+
+@pytest.mark.parametrize(("locus_id", "file"), [
+    (81, "81-FES_FURIN.yaml"), (73, "73-KL_KL-VS.yaml"), (3, "3-PCSK9_R46L.yaml"), (74, "74-intergenic.yaml"), (103, "103.yaml"),
+])
+def test_row_named_from_a_seed_name_a_path_cannot_hold(tree: Path, locus_id: int, file: str) -> None:
+    """The row holds the seed's name exactly; its file name makes each run outside [A-Za-z0-9._-] one '_' (a slash
+    would be a directory), and a locus the seed leaves unnamed is <id>.yaml."""
+    seed = load_seed(SEED)
+    name = seed[locus_id]
+    text = _row(tree).read_text().replace("locus_id: 96", f"locus_id: {locus_id}").replace("locus_name: APOE", f"locus_name: {name!r}")
+    _row(tree).unlink()
+    (tree / "rows" / file).write_text(text)
+    findings = check_rows(tree / "rows", tree / "corpus", seed)
+    assert [f for f in findings if f.kind is Kind.MISNAMED] == []
+    (tree / "rows" / file).rename(tree / "rows" / f"{locus_id}-{name}.yaml".replace("/", "_slash_"))
+    assert [f.kind for f in check_rows(tree / "rows", tree / "corpus", seed) if f.kind is Kind.MISNAMED] == [Kind.MISNAMED]

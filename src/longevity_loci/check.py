@@ -18,7 +18,7 @@ import yaml
 from pydantic import ValidationError
 
 from longevity_loci.models import (
-    CITE, Depth, Direction, NoteHead, PhenotypeClass, Quote, Row, StatSignificance, State, StudyDesign, Tier,
+    CITE, Depth, row_file, Direction, NoteHead, PhenotypeClass, Quote, Row, StatSignificance, State, StudyDesign, Tier,
 )
 
 log = logging.getLogger(__name__)
@@ -227,8 +227,8 @@ def check_rows(rows: Path, corpus: Path, seed: dict[int, str] | None = None) -> 
         except (ValidationError, yaml.YAMLError) as e:
             findings.append(Finding(Kind.MALFORMED, path, detail=str(e).replace("\n", " ")[:240]))
             continue
-        if path.name != f"{row.locus_id}-{row.locus_name}.yaml":
-            findings.append(Finding(Kind.MISNAMED, path, detail=f"holds {row.locus_id}-{row.locus_name}"))
+        if path.name != row_file(row.locus_id, row.locus_name):
+            findings.append(Finding(Kind.MISNAMED, path, detail=f"holds locus {row.locus_id} {row.locus_name!r}, so {row_file(row.locus_id, row.locus_name)}"))
         if seed is not None and row.locus_id in seed and seed[row.locus_id] != row.locus_name:
             findings.append(Finding(Kind.MISNAMED, path, detail=f"the seed list names locus {row.locus_id} {seed[row.locus_id]}"))
         if row.locus_id in held:

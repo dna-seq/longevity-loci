@@ -371,8 +371,19 @@ class Study(Strict):
         return None if self.quote is None else f"{self.note}#{self.quote}"
 
 
+FILE_UNSAFE = re.compile(r"[^A-Za-z0-9._-]+")
+
+
+def row_file(locus_id: int, locus_name: str) -> str:
+    """A row's file name: `<locus_id>-<locus_name>.yaml`, each run of characters outside [A-Za-z0-9._-] in the name
+    made one `_` (a slash would be a directory, a space a quoting chore), and `<locus_id>.yaml` for an unnamed locus.
+    The row itself keeps the seed's name exactly."""
+    slug = FILE_UNSAFE.sub("_", locus_name).strip("_")
+    return f"{locus_id}-{slug}.yaml" if slug else f"{locus_id}.yaml"
+
+
 class Row(Strict):
-    """One locus, `rows/<locus_id>-<locus_name>.yaml`."""
+    """One locus, in `rows/` under `row_file(locus_id, locus_name)`."""
 
     locus_id: int
     locus_name: str

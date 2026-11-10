@@ -8,7 +8,10 @@ export to `variants.csv` and `studies.csv` is a projection, not a translation. A
 
 ## A row: `rows/<locus_id>-<locus_name>.yaml`
 
-One per locus, named by the seed list's `locus_id` and `locus_name` (`docs/longevitymap_v2/data/seed_variants.csv`);
+One per locus, named by the seed list's `locus_id` and `locus_name` (`docs/longevitymap_v2/data/seed_variants.csv`).
+The row's `locus_name` is the seed's exactly; in the file name each run of characters outside `[A-Za-z0-9._-]`
+becomes one `_` and the ends lose theirs (`81-FES_FURIN.yaml`, `73-KL_KL-VS.yaml`), and a locus the seed leaves
+unnamed is `<locus_id>.yaml` (`models.row_file`);
 a v1 locus with no seed entry takes the next free id above the seed's. Fields:
 
 - `locus_id`, `locus_name`; `verdict` (`kept`, `re-tiered`, `legacy`, `dropped`) and `verdict_reason`.
