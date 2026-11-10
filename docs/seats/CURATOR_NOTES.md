@@ -30,10 +30,21 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   INFERRED, Pilling's fathers N about 415000, unquoted values quoted from the cached supplements or moved to prose,
   "parents" not "fathers".
 - Tools: `uv run loci fetch-supp KEY LOCATOR` caches a supplement as text (RM4; quotable under a `supplement`
-  reading); it refuses a `.gz` (Zenin's deposit, Zenodo 1302861), so 6's healthspan rests on a db note,
+  reading); since 78c7675 it reads a `.gz` with `--rows REGEX`; before that 6's healthspan was left on a db note,
   `db-gwascatalog-2025.01.09`, read with the scratch `tbx.py URL.gz CHR START END RSID...` (a remote tabix
   region read). Open Targets' lifespan sets at a locus: `ot.py VARIANT` lists every set the variant is in; filter
   by trait (the four-study `otstudy.py` misses Pilling's fathers GCST006701 and Wright's GCST009450).
+- **71 corrected** (2026-11-11), the lead's review applied. Tier B on red-flag heterogeneity alone: replication is
+  met (LifeGen without UK Biobank, Timmers' Figure 2 source data, now cached as `pmid-30642433` q12/q14; Deelen's
+  SD1 look-ups q9-q11), and AncestryDNA's powered null (heterogeneity P 2.6e-3, Wright S9 q17/q18) caps it. Rule,
+  the lead's, for every row: **a powered non-replication in an independent sample is red-flag heterogeneity and
+  caps the row at B.** Healthspan 0 now from Zenin SD15 (`pmid-30729179#q4`, fetched from Springer's ESM URL);
+  autoimmune direction from Joshi q11 (rs3184504-T raises type 1 diabetes); cancer trade-off from Timmers q7, no
+  "slightly"; per copy, parents about 1.7 months ("nearly two months"). Deelen and LifeGen share the Rotterdam
+  Study (Timmers q13). eLife source data is at `https://cdn.elifesciences.org/articles/39856/elife-39856-figN-dataM-v2.xlsx`.
+- Zenin's healthspan summary statistics for all 228 seed rsIDs are cached (runner job 6428266):
+  `pmid-30729179.supp-healthspan_summary.csv.gz.rows-1102aade.txt`, 189 of 228 found. 6's db-gwascatalog cite can
+  move to it when 6 is next touched.
 - Rules settled on 6: a seed lead that sits in a lifespan credible set stays the lead even when no study reports
   it; a Bayes-factor P (Timmers' iGWAS) is never the study's P; age with no locus-own age bands is UNKNOWN.
 - The scout's queue: pmid-42928374 (FURIN, pleiotropy with mental disorders) waits for locus 81; read it then.
