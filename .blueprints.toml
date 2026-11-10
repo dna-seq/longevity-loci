@@ -83,9 +83,7 @@ wake_from = "longevity-loci/lead longevity-loci/scout longevity-loci/curator lon
 [seat.runner.watch.desk]
 cmd = "sh kit:bin/py.sh kit:classes/desk/watch-answers.py longevity-loci runner"
 
-# The partition's nodes, one line per state change: the runner submits the batch jobs the research seats need.
-[seat.runner.watch.nodes]
-cmd = "sh kit:drivers/slurm/watch-nodes.sh"
+# No nodes watcher: the kit's watches the GPU partition, which a CPU-only runner never uses (the runner, 2026-11-11).
 
 [seat.runner.zulip]
 pool = "~/.config/agent-seat-blueprints/zulip/pool"
