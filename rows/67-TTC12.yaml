@@ -1,0 +1,155 @@
+# The seed list's locus 67, named TTC12 by the seed; the papers call it ZW10 (11q23.2, the ZW10/USP28/TTC12/ANKK1
+# block). Curated 2026-11-10, the pilot's fifth and last row. Lead rs61905747 (Pilling 2017, Timmers 2020);
+# rs17613838 (Wright 2019) is the same signal and appears only as a proxy on its study.
+locus_id: 67
+locus_name: TTC12
+verdict: kept
+verdict_reason: >-
+  Tier B, down from the seed's A. Genome-wide significant only in Pilling 2017's fathers (UK Biobank, P 5.5e-9) and in
+  Timmers 2020's multivariate test, which pools data that each fall short alone (parental lifespan P 2e-6 in
+  Timmers 2019's million lives, healthspan P 2e-6, the 90th percentile P 0.01). Replicated in LifeGen's fathers
+  (Timmers 2019, no value in the text) and nominal at Deelen 2019's 90th percentile, both outside UK Biobank; but null
+  in AncestryDNA's fathers (Wright 2019, P 0.81, heterogeneity P 3e-4 against UK Biobank), whose authors list it as
+  not replicated. One genome-wide study, a single-sex one, with mixed replication: §4.1's B. Timmers 2019 counts it
+  among the cancer-protective loci whose protective allele also lengthens life, so no trade-off is recorded. The
+  effector is unclear: L2G is low for every gene (CLDN25 0.35, ZW10 0.20) and Timmers 2020's expression analysis
+  names USP28, ANKK1 and TTC12.
+axes:
+  tier: {value: B, cites: [pmid-29227965#q9, pmid-30642433#q9, pmid-32678081#q5, pmid-31484785#q11]}
+  mechanism: {value: general_ageing, cites: [pmid-32678081#q5, pmid-30642433#q10]}
+  pleiotropy: {values: ["mech:cancer"], cites: [pmid-30642433#q10]}
+  age_of_action: {value: MIDLIFE, confidence: DIRECT_WEAK, cites: [pmid-32678081#q2]}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+", cites: [pmid-32678081#q5]}
+  actionability: {label: descriptive, cites: [pmid-32678081#q6]}
+  context: {values: [eur_only_evidence], cites: [pmid-29227965#q9, pmid-32678081#q5]}
+flags:
+  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-29227965#q9, db-opentargets-26.09#q24]}
+  - {token: "causal:C2", cites: [db-opentargets-26.09#q25]}
+  - {token: "effector:E3", cites: [db-opentargets-26.09#q27, pmid-32678081#q7]}
+  - {token: "ld_proxy_of:rs61905747", cites: [db-opentargets-26.09#q26]}  # rs17613838, r² 0.99
+variants:
+  - rsid: rs61905747
+    gene: CLDN25
+    phenotype: ZW10/USP28 region, cancer and ageing
+    trait_efo_id: EFO_0007796
+    effect_allele: A
+    effect_size: -0.0160
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: A/A
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA region, the one most people of European ancestry
+          have (about 67 in 100). It is the reference the other versions are compared with, so it neither raises
+          nor lowers your expected lifespan here. The region, on chromosome 11, holds several genes and it is not
+          yet clear which one matters. The finding comes from people of European ancestry; less is known
+          elsewhere.
+      - genotype: A/C
+        state: risk
+        conclusion: >-
+          You carry one copy of a less common version of this DNA region (about 29 in 100 people of European
+          ancestry do). In British and European studies it went with fathers living a little less long and with
+          slightly worse odds of staying free of major disease, possibly through cancer, but a large American
+          study did not see the effect. It is a likely finding, not a settled one, and the effect is small. Which
+          gene in the region is responsible is not yet known.
+      - genotype: C/C
+        state: risk
+        conclusion: >-
+          You carry two copies of a less common version of this DNA region (about 3 in 100 people of European
+          ancestry do). In British and European studies each copy went with fathers living a little less long and
+          with slightly worse odds of staying free of major disease, possibly through cancer, but a large American
+          study did not see the effect. It is a likely finding, not a settled one, and the effect is small. Which
+          gene in the region is responsible is not yet known.
+studies:
+  - rsid: rs61905747
+    note: pmid-29227965
+    quote: q9
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank), fathers
+    ancestry: [EUR]
+    stratum: parent
+    stratum_level: father
+    stat_significance: significant
+    p_value: "5.5E-09"
+    p_value_num: 5.5e-09
+    effect_size: -0.0160
+    effect_measure: beta
+    effect_unit: Martingale residual of fathers' attained age per A allele (negative = longer life)
+    effect_allele: A
+    statistical_test: "BOLT-LMM on Martingale residuals of fathers' attained age (Table 2); both parents combined P 3.6E-05, mothers 0.22; the fathers' N is not given (389,166 met at least one analysis)"
+    curator: claude-opus-5-5
+  - rsid: rs61905747
+    note: pmid-32678081
+    quote: q5
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the 26 LifeGen cohorts; Timmers 2019's data, as Timmers 2020 tabulates it)
+    ancestry: [EUR]
+    sample_size: 1012240
+    sample_unit: lives
+    stat_significance: suggestive
+    p_value: "2E−06"
+    p_value_num: 2.0e-06
+    effect_size: 0.024
+    effect_measure: beta
+    effect_unit: minus log hazard ratio of parental death per A allele (positive = longer life)
+    effect_allele: A
+    statistical_test: "Parental lifespan column of Timmers 2020 Table 1; the locus is not in Timmers 2019's Table 1"
+    curator: claude-opus-5-5
+  - rsid: rs61905747
+    note: pmid-32678081
+    quote: q5
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank; Zenin 2019's data, as Timmers 2020 tabulates it)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: suggestive
+    p_value: "2E−06"
+    p_value_num: 2.0e-06
+    effect_size: 0.029
+    effect_measure: beta
+    effect_unit: minus log hazard of the end of healthspan, per A allele (positive = later)
+    effect_allele: A
+    statistical_test: "Healthspan column of Timmers 2020 Table 1"
+    curator: claude-opus-5-5
+  - rsid: rs61905747
+    note: pmid-32678081
+    quote: q5
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's data, as Timmers 2020 tabulates it; no UK Biobank)
+    ancestry: [EUR]
+    n_cases: 11262
+    sample_size: 36745
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "1E−02"
+    p_value_num: 0.01
+    effect_size: 0.066
+    effect_measure: beta
+    effect_unit: log odds of reaching the 90th percentile, per A allele
+    effect_allele: A
+    statistical_test: "Longevity column of Timmers 2020 Table 1 (90th percentile vs controls); nominal only. Deelen's own look-up: OR 1.068, P 0.0107 at the 90th, 1.071, P 0.097 at the 99th (Supplementary Data 1, not in the cache)"
+    curator: claude-opus-5-5
+  - rsid: rs61905747
+    note: pmid-31484785
+    quote: q11
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: AncestryDNA customers of the European population group, fathers born 1886-1940
+    ancestry: [EUR]
+    sample_size: 309000
+    sample_unit: individuals
+    stratum: parent
+    stratum_level: father
+    stat_significance: not_significant
+    p_value: "8.11e-01"
+    p_value_num: 0.811
+    proxy_rsid: rs17613838
+    statistical_test: "Linear regression of fathers' lifespan on offspring dosage, AncestryDNA arm of Table 3 ('Not Replicated'); z-score effect 0.001 against the UK Biobank arm's -0.016; heterogeneity P 2.97e-4 (Supplemental Table 9, not in the cache)"
+    curator: claude-opus-5-5

@@ -154,3 +154,27 @@ rs7137828 (Pilling 2017's lead), r² 0.81 to the lead; rs10774625 (Wright 2019's
 The locus-to-gene score of SH2B3 on Timmers 2020's set here (GCST011100, 73d4741853bd7c0b6cf0d72356699b0b, lead
 rs7137828); Pilling 2017's sets give SH2B3 0.95 and 0.96; Timmers 2019's broader set gives 0.41 (next ALDH2 0.17).
 L2G ≥ 0.5 on the tighter sets, no colocalisation read: `effector:E2`, SH2B3.
+
+Variant 11_113769120_A_C (rs61905747, ZW10/TTC12), `alleleFrequencies`, of the alternative allele C (the
+lifespan-lowering one):
+
+> [q24] nfe_adj 0.17894225961114216
+
+C is about 18% in non-Finnish Europeans (A 0.82, as Timmers 2020 has it); 16% in African, 0.2% in East Asian samples.
+
+Credible set 43f2d00efd53bae3c0bbe0e9a8992e86, study GCST011100 (Timmers 2020, multivariate), PICS, 155 members,
+lead 11_113769120_A_C. No credible set of GCST009890 or GCST006697 is in this window: the locus is genome-wide
+significant only in the multivariate study and in Pilling 2017's fathers (not looked up here).
+
+> [q25] 11_113769120_A_C posteriorProbability 0.30851682143588743
+
+PIP 0.31, `causal:C2`.
+
+> [q26] 11_113767455_T_C r2Overall 0.9932439106381883
+
+rs17613838 (Wright 2019's), r² 0.99 to the lead: `ld_proxy_of:rs61905747`.
+
+> [q27] CLDN25 0.34978964924812317
+
+The top locus-to-gene score (next ZW10 0.20): below 0.5, `effector:E3`. Timmers 2020's SMR names USP28, ANKK1 and
+TTC12 (pmid-32678081#q7), none by colocalisation.

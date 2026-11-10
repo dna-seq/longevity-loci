@@ -15,11 +15,12 @@ mechanical consensus of the research tracks, to be confirmed or overturned by th
 - 80 CHRNB4 (lead rs8042849, the papers' CHRNA3/5), tier A kept: the pilot's second row.
 - 57 CDKN2B-AS1 (lead rs1556516), tier A kept, a trade-off with its net direction resolved: the pilot's third row.
 - 71 ATXN2 (lead rs11065979, the SH2B3 block), tier B (seed A): weak replication outside UK Biobank; a trade-off.
+- 67 TTC12 (lead rs61905747, the papers' ZW10), tier B (seed A): genome-wide only in fathers; null in AncestryDNA.
 
 ## In hand
 
-The five-row pilot, on the person's word (2026-11-10): 93 LDLR, 80 CHRNB4, 57 CDKN2B-AS1, 71 ATXN2, 67 TTC12, one
-commit each, then a pause until the person says go.
+Nothing. **Paused after the five-row pilot, on the person's word** (2026-11-10: 93 LDLR, 80 CHRNB4, 57 CDKN2B-AS1,
+71 ATXN2, 67 TTC12, one commit each). No sixth row until the person says go; next in order then: 6 CELSR2.
 
 ## Next: seed tier A (11)
 

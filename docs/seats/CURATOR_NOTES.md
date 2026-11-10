@@ -14,7 +14,8 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   look-up with P and direction but no effect size may support (§6.3); until then CHARGE-EU 90+ stays
   not_significant with the reason in its statistical_test. Also with the person: the duplicate seed loci
   (8/157, 25/158, 132/133/153), skipped until answered. Rows get no changelog line.
-- The five-row pilot is running (below): 93 LDLR, 80 CHRNB4, 57 CDKN2B-AS1 and 71 ATXN2 done; 67 TTC12 next, then pause.
+- **Paused after the five-row pilot, on the person's word.** All five done (below); no sixth row until the person
+  says go. Next then, by PROGRESS: 6 CELSR2, 38 HLA-DQA1.
 - The scout's queue: pmid-42928374 (FURIN, pleiotropy with mental disorders) waits for locus 81; read it then.
 
 ## Pilot (five rows, from 2026-11-10)
@@ -82,6 +83,20 @@ What broke, by row:
     could take a text rendering keyed `<key>.supp<N>.txt`): the lead's call.
   - Timmers 2019's credible set here spans about 1 Mb (21 members, to PTPN11), so its L2G (SH2B3 0.41) is diluted;
     the tighter sets of Timmers 2020 and Pilling give SH2B3 0.95. Cited from the tighter set.
+
+- 67 TTC12
+  - Tier B, the second below the seed: genome-wide only in Pilling's fathers and Timmers 2020's multivariate test;
+    LifeGen's fathers replicate (no value in the text), AncestryDNA is null.
+  - Timmers 2020's multivariate P (MANOVA) has no effect size, so the one genome-wide result that pools the three
+    traits cannot be a supporting study; Timmers 2019's LifeGen-fathers replication has no value in the text (source
+    data), so it is cited from the tier only.
+  - `gene` at E3 again: the top L2G gene, CLDN25 at 0.35, reads oddly beside a locus the papers call ZW10 and the
+    seed TTC12. The rule for `gene` below E2 wants deciding.
+  - Pilling's single-parent analyses print no N; `sample_size` left empty.
+
+Across the five: two tiers kept at A that the seed had at A (LDLR, CDKN2B-AS1, plus CHRNA3/5 at A), two moved to B
+(ATXN2, ZW10). The deciding evidence each time was a sample outside UK Biobank and LifeGen, and for four of the
+five the numbers for it sit in a supplement (Wright's, Deelen's) the cache cannot hold.
 
 ## How a locus goes (what the first one taught)
 
