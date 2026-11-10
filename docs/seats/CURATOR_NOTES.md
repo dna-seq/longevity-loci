@@ -14,7 +14,7 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   look-up with P and direction but no effect size may support (§6.3); until then CHARGE-EU 90+ stays
   not_significant with the reason in its statistical_test. Also with the person: the duplicate seed loci
   (8/157, 25/158, 132/133/153), skipped until answered. Rows get no changelog line.
-- The five-row pilot is running (below): 93 LDLR, 80 CHRNB4 and 57 CDKN2B-AS1 done; 71 ATXN2, 67 TTC12 next, then pause.
+- The five-row pilot is running (below): 93 LDLR, 80 CHRNB4, 57 CDKN2B-AS1 and 71 ATXN2 done; 67 TTC12 next, then pause.
 - The scout's queue: pmid-42928374 (FURIN, pleiotropy with mental disorders) waits for locus 81; read it then.
 
 ## Pilot (five rows, from 2026-11-10)
@@ -70,6 +70,18 @@ What broke, by row:
     written as the nearest.
   - §6.2 says a locus label goes in `phenotype` at E3 or E4, and does not say what `gene` then holds: written as the
     top L2G gene (CDKN2B), the label "9p21 heart disease region" in `phenotype`.
+
+- 71 ATXN2
+  - The first tier set below the seed's: B, not A. Outside UK Biobank and LifeGen, AncestryDNA's fathers show a
+    quarter of the UK effect (P 0.10, heterogeneity P 2.6e-3) and Deelen's percentiles are nominal only. A judgement
+    the lead and the person should see.
+  - Deelen's two nominal look-ups are the row's only supporting studies outside UK Biobank, and their allele, OR and
+    P exist only in Supplementary Data 1. Written as study rows quoting the main-text sentence that names ATXN2/BRAP
+    among the nominal loci, with the values' source in `statistical_test`. The quote supports the claim; the numbers
+    are unchecked. The cleaner fix is a supplement reading the cache can hold (the plugin reads xlsx; the cache
+    could take a text rendering keyed `<key>.supp<N>.txt`): the lead's call.
+  - Timmers 2019's credible set here spans about 1 Mb (21 members, to PTPN11), so its L2G (SH2B3 0.41) is diluted;
+    the tighter sets of Timmers 2020 and Pilling give SH2B3 0.95. Cited from the tighter set.
 
 ## How a locus goes (what the first one taught)
 

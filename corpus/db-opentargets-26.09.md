@@ -123,3 +123,34 @@ rs1333042 (Wright 2019's AncestryDNA lead), r² 0.98 to the lead; rs7859727 (Tim
 The locus-to-gene score of CDKN2B on the Timmers 2019 set (next CDKN2A 0.21, DMRTA1 0.12): below 0.5,
 `effector:E3`. Timmers 2020 names CDKN2B as a cis-acting gene here by SMR and HEIDI, not by a colocalisation H4,
 which §4.2's E2 asks for; Open Targets' own colocalisations were not read.
+
+Variant 12_111621753_C_T (rs11065979, ATXN2/SH2B3), `alleleFrequencies`, of the alternative allele T (the
+lifespan-lowering one):
+
+> [q19] nfe_adj 0.4454526645582715
+
+> [q20] eas_adj 0.0017928286852589642
+
+T is about 45% in non-Finnish Europeans and almost absent in East Asians (0.2%; 7.5% in African samples): the
+lifespan-lowering haplotype is essentially European, and the locus has nothing to say outside Europe
+(`ancestry_tag`). The SH2B3 missense rs3184504 (12_111446804_T_C, `mostSevereConsequence` missense_variant) shows
+the same: its C allele is 51% in Europeans, 99.9% in East Asians.
+
+Credible set 8a1b141eb70f7b60349f9bee88c3ec69, study GCST009890 (Timmers 2019), PICS, 21 members spread over about
+1 Mb (to rs11066320 near PTPN11):
+
+> [q21] 12_111621753_C_T posteriorProbability 0.3449911407808129
+
+PIP 0.34, `causal:C2`. The missense rs3184504 is in the set at PIP 0.02 (r² 0.81); in Pilling 2017's SuSiE-inf
+sets (GCST006697) it holds 0.15–0.16 against 0.23–0.25 for rs10774625 and rs7137828: not the C1 "coding with PIP ≥
+0.2".
+
+> [q22] 12_111494996_C_T r2Overall 0.8130060667781549
+
+rs7137828 (Pilling 2017's lead), r² 0.81 to the lead; rs10774625 (Wright 2019's) 0.77: `ld_proxy_of:rs11065979`.
+
+> [q23] SH2B3 0.9505289196968079
+
+The locus-to-gene score of SH2B3 on Timmers 2020's set here (GCST011100, 73d4741853bd7c0b6cf0d72356699b0b, lead
+rs7137828); Pilling 2017's sets give SH2B3 0.95 and 0.96; Timmers 2019's broader set gives 0.41 (next ALDH2 0.17).
+L2G ≥ 0.5 on the tighter sets, no colocalisation read: `effector:E2`, SH2B3.

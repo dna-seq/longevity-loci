@@ -14,6 +14,7 @@ mechanical consensus of the research tracks, to be confirmed or overturned by th
 - 93 LDLR (lead rs142158911), tier A kept: the pilot's first row.
 - 80 CHRNB4 (lead rs8042849, the papers' CHRNA3/5), tier A kept: the pilot's second row.
 - 57 CDKN2B-AS1 (lead rs1556516), tier A kept, a trade-off with its net direction resolved: the pilot's third row.
+- 71 ATXN2 (lead rs11065979, the SH2B3 block), tier B (seed A): weak replication outside UK Biobank; a trade-off.
 
 ## In hand
 

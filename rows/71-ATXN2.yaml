@@ -1,0 +1,171 @@
+# The seed list's locus 71, ATXN2 (12q24.12, the ATXN2/BRAP/SH2B3 block; SH2B3's missense rs3184504, R262W, in LD
+# with the lead). Curated 2026-11-10, the pilot's fourth row. Lead rs11065979 (Timmers 2019); rs7137828 (Pilling
+# 2017) and rs10774625 (Wright 2019) sit in its credible set and appear only as proxies on their studies.
+locus_id: 71
+locus_name: ATXN2
+verdict: kept
+verdict_reason: >-
+  Tier B, down from the seed's A. Genome-wide significant for parental lifespan (Timmers 2019, P 1.0e-12; Pilling
+  2017, P 3.4e-14) and confirmed in Joshi 2017's candidate look-up, all of them UK Biobank and LifeGen. Outside them
+  the replication is weak: in AncestryDNA's fathers, the one large sample outside UK Biobank, the effect has the
+  same sign but is about a quarter of the UK one and not significant (Wright 2019, P 0.10), with heterogeneity
+  between the two arms (P 2.6e-3, its supplement) and nothing at all in mothers; Deelen 2019's percentiles are
+  nominal only (P 0.027 at the 90th, 0.023 at the 99th, its supplement; named among the nominal loci in its text).
+  §4.1's tier B "replication with a much smaller effect" fits better than A's "no red-flag heterogeneity". A
+  trade-off: the lifespan-raising allele goes with less autoimmune and cardiovascular disease and with less
+  protection against non-lung cancers (Timmers 2019); on lifespan the cardiovascular side wins, so the net
+  direction is resolved. The lifespan-lowering haplotype is almost absent outside Europe.
+axes:
+  tier: {value: B, cites: [pmid-30642433#q8, pmid-29227965#q7, pmid-31484785#q10, pmid-31413261#q5]}
+  mechanism: {value: heart_vessels, cites: [pmid-30642433#q8, pmid-29227965#q8]}
+  pleiotropy: {values: ["mech:cvd", "mech:autoimmune", "tradeoff"], cites: [pmid-30642433#q7, pmid-30642433#q8, pmid-29227965#q8]}
+  age_of_action: {value: LIFELONG, confidence: DIRECT_WEAK, cites: [pmid-29030599#q9]}
+  outcome: {healthspan: untested, lifespan: "+", exceptional_survival: "+",
+            cites: [pmid-30642433#q8, pmid-31413261#q5]}
+  actionability: {label: descriptive, cites: [pmid-30642433#q7]}
+  context: {values: [eur_only_evidence], cites: [pmid-30642433#q8, pmid-31484785#q10]}
+flags:
+  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-30642433#q8]}
+  - {token: ancestry_tag, cites: [db-opentargets-26.09#q19, db-opentargets-26.09#q20]}
+  - {token: "causal:C2", cites: [db-opentargets-26.09#q21]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q23]}
+  - {token: "ld_proxy_of:rs11065979", cites: [db-opentargets-26.09#q22]}  # rs7137828 r² 0.81, rs10774625 r² 0.77
+variants:
+  - rsid: rs11065979
+    gene: SH2B3
+    phenotype: Blood pressure, heart and autoimmunity
+    trait_efo_id: EFO_0007796
+    effect_allele: C
+    effect_size: 0.2798
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    negatives: >-
+      The longer-life version, C, goes with less heart disease, lower blood pressure and less autoimmune disease,
+      but with somewhat less protection against some cancers other than lung cancer; across whole lives the heart
+      side outweighs it.
+    genotypes:
+      - genotype: C/T
+        state: neutral
+        conclusion: >-
+          You carry one copy of each of the two common versions of this DNA region, the most common combination
+          (about half of people of European ancestry have it). It is the reference the other combinations are
+          compared with, so it neither raises nor lowers your expected lifespan here. The region, around the SH2B3
+          gene, affects blood cells, blood pressure and the immune system. The finding comes from people of
+          European ancestry; outside Europe one of the versions is rare and this result says little.
+      - genotype: C/C
+        state: protective
+        conclusion: >-
+          You carry two copies of the version of this DNA region that goes with lower blood pressure, less heart
+          disease and less autoimmune disease (about 3 in 10 people of European ancestry do). In large British
+          and European studies each copy went with parents living on average about three months longer, though a
+          large American study saw a much smaller effect. The same version goes with slightly less protection
+          against some cancers, but over a whole life the heart effect is the larger one. It is a likely finding,
+          not a settled one, and a tendency, not a guarantee. Your blood pressure matters more than this DNA
+          result.
+      - genotype: T/T
+        state: risk
+        conclusion: >-
+          You carry two copies of the version of this DNA region that goes with higher blood pressure, more heart
+          disease and more autoimmune disease (about 2 in 10 people of European ancestry do). In large British and
+          European studies each copy went with parents living on average about three months less, though a large
+          American study saw a much smaller effect. The same version goes with slightly more protection against
+          some cancers, but over a whole life the heart effect is the larger one. It is a likely finding, not a
+          settled one, and a tendency, not destiny. Your blood pressure matters more than this DNA result.
+studies:
+  - rsid: rs11065979
+    note: pmid-30642433
+    quote: q8
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the 26 LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 1012240
+    sample_unit: lives
+    age_min: 40
+    age_of: parent
+    stat_significance: significant
+    p_value: "1.0E-12"
+    p_value_num: 1.0e-12
+    effect_size: 0.2798
+    effect_measure: beta
+    effect_unit: years of life per copy in self (parental estimate doubled)
+    effect_allele: C
+    statistical_test: "Cox model residual on subject dosage, parents combined, common effect across sexes (Table 1)"
+    curator: claude-opus-5-5
+  - rsid: rs11065979
+    note: pmid-29227965
+    quote: q7
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank)
+    ancestry: [EUR]
+    sample_size: 389166
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "3.4E-14"
+    p_value_num: 3.4e-14
+    effect_size: 0.0170
+    effect_measure: beta
+    effect_unit: Martingale residual of parents' attained age per C allele at the proxy (positive = shorter life)
+    effect_allele: C
+    proxy_rsid: rs7137828
+    statistical_test: "BOLT-LMM on Martingale residuals of both parents' attained age (Table 1); both parents in the top 10% of survival P 3.2E-06"
+    curator: claude-opus-5-5
+  - rsid: rs11065979
+    note: pmid-31484785
+    quote: q10
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: AncestryDNA customers of the European population group, fathers born 1886-1940
+    ancestry: [EUR]
+    sample_size: 309000
+    sample_unit: individuals
+    stratum: parent
+    stratum_level: father
+    stat_significance: not_significant
+    p_value: "9.97e-02"
+    p_value_num: 0.0997
+    proxy_rsid: rs10774625
+    statistical_test: "Linear regression of fathers' lifespan on offspring dosage, AncestryDNA arm of Table 3; z-score effect 0.004 against the UK Biobank arm's 0.015, same sign; heterogeneity P 2.6e-3 (Supplemental Table 9, not in the cache)"
+    curator: claude-opus-5-5
+  - rsid: rs11065979
+    note: pmid-31413261
+    quote: q5
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's 18 discovery cohorts, no UK Biobank)
+    ancestry: [EUR]
+    n_cases: 11262
+    sample_size: 36745
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "2.645E-2"
+    p_value_num: 0.02645
+    effect_size: 1.045
+    effect_measure: OR
+    effect_unit: odds ratio of reaching the 90th percentile, per C allele
+    effect_allele: C
+    direction: protective
+    statistical_test: "Look-up of the lead (Supplementary Data 1: OR, P and allele, not in the cache; the text names ATXN2/BRAP among the nominal loci); logistic regression, fixed-effect meta-analysis"
+    curator: claude-opus-5-5
+  - rsid: rs11065979
+    note: pmid-31413261
+    quote: q5
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's 18 discovery cohorts, no UK Biobank)
+    ancestry: [EUR]
+    n_cases: 3484
+    sample_size: 28967
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "2.264E-2"
+    p_value_num: 0.02264
+    effect_size: 1.072
+    effect_measure: OR
+    effect_unit: odds ratio of reaching the 99th percentile, per C allele
+    effect_allele: C
+    direction: protective
+    statistical_test: "Look-up of the lead (Supplementary Data 1: OR, P and allele, not in the cache; the text names ATXN2/BRAP among the nominal loci); logistic regression, fixed-effect meta-analysis"
+    curator: claude-opus-5-5
