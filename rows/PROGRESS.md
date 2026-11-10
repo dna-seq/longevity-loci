@@ -13,6 +13,7 @@ mechanical consensus of the research tracks, to be confirmed or overturned by th
 - 46 LPA (lead rs10455872), tier A kept: the first locus, by hand, shown to the lead as the format's first row.
 - 93 LDLR (lead rs142158911), tier A kept: the pilot's first row.
 - 80 CHRNB4 (lead rs8042849, the papers' CHRNA3/5), tier A kept: the pilot's second row.
+- 57 CDKN2B-AS1 (lead rs1556516), tier A kept, a trade-off with its net direction resolved: the pilot's third row.
 
 ## In hand
 

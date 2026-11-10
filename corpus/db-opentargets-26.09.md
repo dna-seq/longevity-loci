@@ -96,3 +96,30 @@ rs578776 (c1d809ebe527dd273d44ff6759ceb60e, L2G CHRNA3 0.59), a secondary signal
 The locus-to-gene score of CHRNA5 on the Timmers 2019 set (next PSMA4 0.13,
 CHRNA3 0.08): no gene reaches 0.5, `effector:E3`. The healthspan GWAS GCST007406 (Zenin 2019) has no credible set in
 this window.
+
+Variant 9_22100177_G_C (rs1556516, CDKN2B-AS1), `alleleFrequencies`, of the alternative allele C (the
+lifespan-lowering one):
+
+> [q15] nfe_adj 0.5097071647419279
+
+C is about 51% in non-Finnish Europeans, G 49%: the heterozygote is the most common genotype. C is 89% in African
+and 67% in East Asian gnomAD samples.
+
+Credible set 02462f216ce479d0c67d8b7bf734079f, study GCST009890 (Timmers 2019), PICS, 53 members, lead
+9_22100177_G_C:
+
+> [q16] 9_22100177_G_C posteriorProbability 0.05611117205107125
+
+PIP 0.056, in the set below 0.1: `causal:C3`. The same block leads Timmers 2020's set (rs7859727, PIP 0.095),
+Pilling 2017's (rs1556516, SuSiE-inf, PIP 0.17) and Zenin 2019's healthspan set GCST007406 (rs7859727, 0.11).
+
+> [q17] 9_22103814_A_G r2Overall 0.9843762746950737
+
+rs1333042 (Wright 2019's AncestryDNA lead), r² 0.98 to the lead; rs7859727 (Timmers 2020, Zenin 2019) is at
+0.945: `ld_proxy_of:rs1556516`. Deelen 2019's CDKN2A/B discovery variant rs7039467 is in none of these sets.
+
+> [q18] CDKN2B 0.3581562936306
+
+The locus-to-gene score of CDKN2B on the Timmers 2019 set (next CDKN2A 0.21, DMRTA1 0.12): below 0.5,
+`effector:E3`. Timmers 2020 names CDKN2B as a cis-acting gene here by SMR and HEIDI, not by a colocalisation H4,
+which §4.2's E2 asks for; Open Targets' own colocalisations were not read.

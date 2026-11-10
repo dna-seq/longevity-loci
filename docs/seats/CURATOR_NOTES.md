@@ -14,7 +14,7 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   look-up with P and direction but no effect size may support (§6.3); until then CHARGE-EU 90+ stays
   not_significant with the reason in its statistical_test. Also with the person: the duplicate seed loci
   (8/157, 25/158, 132/133/153), skipped until answered. Rows get no changelog line.
-- The five-row pilot is running (below): 93 LDLR and 80 CHRNB4 done; 57 CDKN2B-AS1, 71 ATXN2, 67 TTC12 next, then pause.
+- The five-row pilot is running (below): 93 LDLR, 80 CHRNB4 and 57 CDKN2B-AS1 done; 71 ATXN2, 67 TTC12 next, then pause.
 - The scout's queue: pmid-42928374 (FURIN, pleiotropy with mental disorders) waits for locus 81; read it then.
 
 ## Pilot (five rows, from 2026-11-10)
@@ -54,6 +54,21 @@ What broke, by row:
     set here): written `untested`, with the reason in the verdict.
   - Exceptional survival is mixed: parents both in the top 10% significant (Pilling, UK Biobank), own survival past
     90 null (CHARGE-EU 90+, P 0.95). One cell holds one sign: `+`, the null kept as a study and said in the verdict.
+
+- 57 CDKN2B-AS1
+  - Deelen 2019's Supplementary Data 1 is the per-variant look-up of every published lifespan locus in a sample
+    with no UK Biobank data (OR and P at the 90th and 99th percentile), and it decides replication at ATXN2 and ZW10
+    too. Like Wright's, it can only sit in a note as prose: a study row needs a quote or a `quote_absent` kind, and
+    none of the four kinds says "in the supplement, which the cache cannot hold". Its sheet title and column header
+    also disagree on the 90th percentile's controls (dead against all).
+  - My error, corrected (9a24449): I had read Deelen's 928 UK Biobank cases as part of its discovery. They are
+    validation only.
+  - Coronary artery disease's EFO id (EFO_0001645) is obsolete, replaced by MONDO_0005010, and the `mediator:`
+    token takes `EFO_` only: no mediator flag on this row.
+  - The requirements give trade-off loci "no actionability label", but the format requires one: `descriptive`
+    written as the nearest.
+  - §6.2 says a locus label goes in `phenotype` at E3 or E4, and does not say what `gene` then holds: written as the
+    top L2G gene (CDKN2B), the label "9p21 heart disease region" in `phenotype`.
 
 ## How a locus goes (what the first one taught)
 

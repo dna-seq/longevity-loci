@@ -1,0 +1,189 @@
+# The seed list's locus 57, CDKN2B-AS1 (9p21.3, ANRIL; the CDKN2A/CDKN2B tumour suppressors beside it). Curated
+# 2026-11-10, the pilot's third row. Lead rs1556516 (Timmers 2019, Pilling 2017); rs1333042 (Wright 2019) and
+# rs7859727 (Zenin 2019, Timmers 2020) sit in its credible set and appear only as proxies on their studies.
+locus_id: 57
+locus_name: CDKN2B-AS1
+verdict: kept
+verdict_reason: >-
+  Tier A confirmed. Genome-wide significant for parental lifespan in about one million lives (Timmers 2019, P 7.5e-11)
+  and for healthspan (Zenin 2019, P 7.4e-10, replicated in 96,313 other UK Biobank participants at P 1.5e-6);
+  replicated outside UK Biobank and LifeGen in AncestryDNA's fathers at genome-wide significance (Wright 2019, P
+  7.0e-15) and in Deelen 2019's survival to the 90th and 99th percentile, the only published lifespan locus besides
+  FOXO3 to pass its Bonferroni threshold (P 6e-4 at the 90th in Timmers 2020's tabulation). A trade-off: the
+  lifespan-raising allele protects against heart disease and goes with less protection against non-lung cancers
+  (Timmers 2019); on lifespan the heart side wins, so the net direction is resolved and the states are not neutral.
+  Age of action is read as lifelong: no significant age difference in Joshi 2017, and a larger effect at the 99th
+  than the 90th percentile in Deelen 2019, though Timmers 2019 sees the hazard-ratio effect tend to decline after 60.
+  Deelen's own CDKN2A/B discovery variant (rs7039467) is in none of the lead's credible sets and is not scored here.
+axes:
+  tier: {value: A, cites: [pmid-30642433#q6, pmid-31484785#q9, pmid-31413261#q3, pmid-32678081#q4]}
+  mechanism: {value: heart_vessels, cites: [pmid-29227965#q6, pmid-30642433#q6]}
+  pleiotropy: {values: ["mech:cvd", "tradeoff"], cites: [pmid-30642433#q7, pmid-29227965#q6]}
+  age_of_action: {value: LIFELONG, confidence: DIRECT_WEAK, cites: [pmid-29030599#q9, pmid-31413261#q4, pmid-30642433#q5]}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
+            cites: [pmid-30729179#q2, pmid-30642433#q6, pmid-31413261#q3, pmid-32678081#q4]}
+  actionability: {label: descriptive, cites: [pmid-30642433#q7]}
+  context: {values: [eur_only_evidence], cites: [pmid-30642433#q6, pmid-31484785#q9]}
+flags:
+  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-29227965#q6, pmid-30642433#q6]}
+  - {token: "causal:C3", cites: [db-opentargets-26.09#q16]}
+  - {token: "effector:E3", cites: [db-opentargets-26.09#q18]}
+  - {token: "ld_proxy_of:rs1556516", cites: [db-opentargets-26.09#q17]}  # rs1333042 r² 0.98, rs7859727 r² 0.94
+variants:
+  - rsid: rs1556516
+    gene: CDKN2B
+    phenotype: 9p21 heart disease region
+    trait_efo_id: EFO_0007796
+    effect_allele: G
+    effect_size: 0.2510
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    negatives: >-
+      The longer-life version, G, goes with less coronary heart disease but with somewhat less protection against
+      some cancers other than lung cancer; across whole lives the heart side outweighs it.
+    genotypes:
+      - genotype: C/G
+        state: neutral
+        conclusion: >-
+          You carry one copy of each of the two common versions of this DNA region, the most common combination
+          (about half of people of European ancestry have it). It is the reference the other combinations are
+          compared with, so it neither raises nor lowers your expected lifespan here. The region, on chromosome 9,
+          is the best-known genetic signal for coronary heart disease. The finding comes from people of European
+          ancestry; less is known elsewhere.
+      - genotype: G/G
+        state: protective
+        conclusion: >-
+          You carry two copies of the version of this DNA region that goes with less coronary heart disease (about
+          1 in 4 people of European ancestry do). In very large studies each copy went with parents living on
+          average about three months longer, and with better odds of reaching very old age. The same version goes
+          with slightly less protection against some cancers, but over a whole life the heart effect is the
+          larger one. The finding is well established; it is a tendency, not a guarantee. Your blood pressure,
+          cholesterol and smoking matter more for your heart than this DNA result.
+      - genotype: C/C
+        state: risk
+        conclusion: >-
+          You carry two copies of the version of this DNA region that goes with more coronary heart disease (about
+          1 in 4 people of European ancestry do). In very large studies each copy went with parents living on
+          average about three months less. The same version goes with slightly more protection against some
+          cancers, but over a whole life the heart effect is the larger one. The finding is well established; it
+          is a tendency, not destiny. Your blood pressure, cholesterol and smoking matter more for your heart than
+          this DNA result.
+studies:
+  - rsid: rs1556516
+    note: pmid-30642433
+    quote: q6
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the 26 LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 1012240
+    sample_unit: lives
+    age_min: 40
+    age_of: parent
+    stat_significance: significant
+    p_value: "7.5E-11"
+    p_value_num: 7.5e-11
+    effect_size: 0.2510
+    effect_measure: beta
+    effect_unit: years of life per copy in self (parental estimate doubled)
+    effect_allele: G
+    statistical_test: "Cox model residual on subject dosage, parents combined, common effect across sexes (Table 1)"
+    curator: claude-opus-5-5
+  - rsid: rs1556516
+    note: pmid-29227965
+    quote: q5
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank)
+    ancestry: [EUR]
+    sample_size: 389166
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "4.7E-16"
+    p_value_num: 4.7e-16
+    effect_size: -0.0181
+    effect_measure: beta
+    effect_unit: Martingale residual of parents' attained age per G allele (negative = longer life)
+    effect_allele: G
+    statistical_test: "BOLT-LMM on Martingale residuals of both parents' attained age (Table 1); both parents in the top 10% of survival P 2.5E-08"
+    curator: claude-opus-5-5
+  - rsid: rs1556516
+    note: pmid-31484785
+    quote: q9
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: AncestryDNA customers of the European population group, fathers born 1886-1940
+    ancestry: [EUR]
+    sample_size: 309000
+    sample_unit: individuals
+    stratum: parent
+    stratum_level: father
+    stat_significance: significant
+    p_value: "7.00e-15"
+    p_value_num: 7.0e-15
+    effect_size: 0.51
+    effect_measure: beta
+    effect_unit: years of father's lifespan per A allele at the proxy (doubled to parental dosage)
+    effect_allele: A
+    proxy_rsid: rs1333042
+    statistical_test: "Linear regression of fathers' lifespan in years on offspring dosage, not a Cox model (the vocabulary has no other parental design); P uncorrected (Table 1; 8.13e-13 after genomic control); N from Supplemental Table 8, not in the cache"
+    curator: claude-opus-5-5
+  - rsid: rs1556516
+    note: pmid-30729179
+    quote: q2
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "7.41e-10"
+    p_value_num: 7.41e-10
+    effect_size: 0.031
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per T allele at the proxy (positive = earlier)
+    effect_allele: T
+    proxy_rsid: rs7859727
+    statistical_test: "Cox model of the first of the common age-related diseases or death, discovery (Table 2)"
+    curator: claude-opus-5-5
+  - rsid: rs1556516
+    note: pmid-30729179
+    quote: q2
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, other participants)
+    ancestry: [EUR]
+    sample_size: 96313
+    sample_unit: individuals
+    stat_significance: suggestive
+    p_value: "1.52e-06"
+    p_value_num: 1.52e-06
+    effect_size: 0.041
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per T allele at the proxy (positive = earlier)
+    effect_allele: T
+    proxy_rsid: rs7859727
+    statistical_test: "Replication in 96,313 UK Biobank participants outside the discovery set (Table 2); same direction"
+    curator: claude-opus-5-5
+  - rsid: rs1556516
+    note: pmid-32678081
+    quote: q4
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's data, as Timmers 2020 tabulates it)
+    ancestry: [EUR]
+    n_cases: 11262
+    sample_size: 36745
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "6E−04"
+    p_value_num: 0.0006
+    effect_size: 0.066
+    effect_measure: beta
+    effect_unit: log odds of reaching the 90th percentile, per C allele at the proxy
+    effect_allele: C
+    proxy_rsid: rs7859727
+    statistical_test: "Longevity column of Timmers 2020 Table 1 (90th percentile vs controls); Deelen 2019's own look-up of rs1556516 passes its Bonferroni threshold at both percentiles (Supplementary Data 1, not in the cache)"
+    curator: claude-opus-5-5
