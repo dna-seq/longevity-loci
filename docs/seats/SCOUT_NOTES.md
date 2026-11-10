@@ -28,7 +28,9 @@ First work:
 - Open, unattended: track E's own unpublished preprints (Sasaki, Putter, Salazar, Hamilton, Kornilov and the others in
   its evidence CSV) not yet checked for a published version since 2026-11-03.
 - Open, unattended: the GWAS Catalog and the bioRxiv/medRxiv listings were not queried in the first E run; the next
-  E run adds them or says again that they were left out.
+  E run adds them or says again that they were left out. The Catalog's v1 REST API is retired (410 on every call, as
+  #agent-chat > upstream reported 2026-11-10), and v2 `/associations` answers 400 above size 500: query v2, pages of
+  at most 500.
 - Open: pmid-42928374's full text, to settle which biomarker FURIN's variant is shared with. Batch fetches go to the
   runner seat now, not the lead (the runner, 2026-11-10); one PMID is not a batch, so it waits for the next sweep's
   list.
