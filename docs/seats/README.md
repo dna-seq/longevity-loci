@@ -19,6 +19,45 @@ the tools they stand on. The seats run on the cluster, for the volume of texts a
 | **runner** | [RUNNER.md](RUNNER.md), on the kit's `runner` role | [RUNNER_NOTES.md](RUNNER_NOTES.md) | a research seat's fetch request; the lead's index or compile; a job's end | Submits, watches and logs the repository's batch jobs on the cluster, within the share the rigger states, and tells the seat that asked when each ends. |
 | **liaison** | [LIAISON.md](LIAISON.md), on the kit's `liaison` role | [LIAISON_NOTES.md](LIAISON_NOTES.md) | a release or a defect of the module tooling | Tracks the module-creator plugin, the compiler's packages and the registry; files their defects where each producer takes them. |
 
+## How the work flows
+
+```mermaid
+flowchart TD
+    v1[("v1's database and HAGR's original")]
+    lit[("New literature: PubMed, Europe PMC,<br/>preprints, the GWAS Catalog")]
+    scout["<b>scout</b> (quiet)<br/>sweeps the literature track by track"]
+    curator["<b>curator</b><br/>re-reads the old rows, one locus at a time;<br/>writes rows/ and corpus/"]
+    runner["<b>runner</b> (quiet)<br/>batch jobs on the cluster: bulk fetches,<br/>later the index and the compile; logs runs/"]
+    module["<b>module</b><br/>curated rows into the module's tables;<br/>rehearses on the registry's test instance"]
+    liaison["<b>liaison</b><br/>the plugin, the compiler, the registry"]
+    lead["<b>lead</b><br/>the code every seat runs: formats, checks,<br/>fetch, the export; the plan; the kit's pin"]
+    rigger["the cluster account's rigger"]
+    upstream["upstream: plugin, compiler, registry"]
+    person(("the person"))
+
+    v1 --> curator
+    lit --> scout
+    scout -- "scout/queue.md: new papers per locus" --> curator
+    scout -- "PMIDs to fetch" --> runner
+    curator -- "PMIDs to fetch" --> runner
+    runner -- "article texts, outside git" --> curator
+    runner -- "cluster facts, burst claims" --> rigger
+    curator -- "rows/" --> module
+    module -- "upstream faults" --> liaison
+    liaison -- "releases read, defects filed" --> upstream
+    module --> upstream
+    lead -. "code and checks" .-> curator
+    lead -. "code" .-> runner
+    lead -. "the export (RM1)" .-> module
+    person == "talks mostly to" ==> lead
+    person -. "steers when something is off" .-> curator
+```
+
+The person talks mostly to the lead; the other seats come to them only for a decision, in the repository's channel
+while they are present and on their desk while they are away. The scout and the runner are quiet seats
+(`presence = false`): they work the same whether the person is there or not. The other four turn unattended when
+the person is away, building what is decided and putting each open question on the desk with its default.
+
 The curator, the scout and the module seat start as this repository's own seat texts (the person, 2026-11-04);
 what holds after some weeks of running becomes kit roles for repositories that re-curate a dataset the same way.
 
