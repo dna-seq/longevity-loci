@@ -9,11 +9,11 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   read as `not_significant`, no design for "cases aged 90+", file names for seed loci whose names hold `/`,
   spaces or nothing (81, 103, ~30 more), duplicate seed loci (IL6R 8/157, HTT 25/158, TERT 132/133/153), and
   whether rows get a changelog line. None blocks the plain loci; 81 and 103 wait on the file-name answer.
-- The lead's answers (639271512), its commit pending: a `corpus/db-<source>-<release>.md` note per database
-  release; `stat_significance: nominal` (1e-5 to 0.05) supports; `age_threshold_case_control`; a file name is the
-  seed name with each run outside `[A-Za-z0-9._-]` made `_`, an unnamed locus `<id>.yaml`; the duplicate seed loci
-  go to the person, skipped until then; rows get no changelog line (`rows/PROGRESS.md` is the ledger). When it
-  lands: move 46-LPA onto it (two nominal studies, the CHARGE design, a db note for Open Targets 26.09 and gnomAD).
+- The lead's format answers landed (e466070, 06423f1, a970b44) and 46-LPA moved onto them (04cc507): a db note
+  for Open Targets 26.09, Deelen's column nominal. Waiting on the person, through the lead: whether a replication
+  look-up with P and direction but no effect size may support (§6.3); until then CHARGE-EU 90+ stays
+  not_significant with the reason in its statistical_test. Also with the person: the duplicate seed loci
+  (8/157, 25/158, 132/133/153), skipped until answered. Rows get no changelog line.
 - Next, unattended, by `rows/PROGRESS.md`: 93 LDLR, 80 CHRNB4, 57 CDKN2B-AS1, 71 ATXN2, 67 TTC12.
 - The scout's queue: pmid-42928374 (FURIN, pleiotropy with mental disorders) waits for locus 81; read it then.
 
