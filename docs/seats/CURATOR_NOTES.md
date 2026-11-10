@@ -60,7 +60,9 @@ What broke, by row:
 - `uv run loci fetch PMID…` for a handful of papers; a batch goes to the runner seat with the PMIDs and the rows.
 - The parental-lifespan GWAS (Joshi 2017, Pilling 2017, Timmers 2019) share UK Biobank and LifeGen, and Timmers
   2020 combines them with Zenin and Deelen: none replicates another. Tier A needs a look-up in a sample outside
-  them (CHARGE-EU 90+ in Joshi 2017 Table 2; Deelen 2019 cohorts, which include 928 UK Biobank cases).
+  them (CHARGE-EU 90+ in Joshi 2017 Table 2; Deelen 2019's discovery cohorts, which hold no UK Biobank
+  data: its UK Biobank set, 928 cases at the 99th percentile, is validation only; overlap with LifeGen not stated).
+  Corrected 2026-11-10: the 928 had been read as part of Deelen's discovery, and 93-LDLR's verdict said so.
 - Effect sign conventions: Timmers years (+ longer), Joshi HR per a1 (> 1 shorter), Pilling Martingale (+ shorter),
   Zenin healthspan hazard (+ worse), Timmers 2020 −logHR and log-odds (+ better).
 - Age bands and per-SNP replication of Timmers 2019 are eLife source-data supplements the cache does not hold.

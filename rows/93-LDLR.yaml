@@ -10,8 +10,8 @@ verdict_reason: >-
   American sample (Wright 2019, P 6.8e-5, the LDL-lowering allele on the longer-lived side), where the
   AncestryDNA-UK Biobank meta-analysis also passes genome-wide significance (P 2.7e-9). Nominal at the 90th
   percentile in Deelen 2019's data and for healthspan (Timmers 2020, P 0.002 and 0.04), both with the same allele
-  on the longer-lived side. Caveats: Pilling 2017 (UK Biobank) only reaches P 1.8e-6; Deelen's cohorts include about
-  900 UK Biobank cases; Wright's AncestryDNA mothers do not replicate (P 0.06, same sign; read from the supplement,
+  on the longer-lived side; Deelen's discovery cohorts hold no UK Biobank data, though whether they overlap LifeGen's
+  is not stated. Caveats: Pilling 2017 (UK Biobank) only reaches P 1.8e-6; Wright's AncestryDNA mothers do not replicate (P 0.06, same sign; read from the supplement,
   not quoted). Fine-mapping is diffuse: about fifty variants share the credible set, none with PIP above 0.04.
 axes:
   tier: {value: A, cites: [pmid-30642433#q3, pmid-31484785#q1, pmid-31484785#q5, pmid-32678081#q3]}
