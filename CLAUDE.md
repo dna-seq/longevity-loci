@@ -111,6 +111,8 @@ tests/       pytest, on the fixtures in assets/
 assets/      fixtures that travel: one example row and one note
 docs/        all markdown except this file and README.md; docs/FORMATS.md the row and note formats;
              docs/longevitymap_v2/ the research design, moved in from just-dna-lite unchanged
+             docs/format08_reference/ just-dna-format 0.8's longevity reference example and shape audit,
+             copied unchanged (docs/FORMAT08_REFERENCE.md says what they settle here)
 docs/seats/  the seats' primings and notes
 ```
 
@@ -197,3 +199,5 @@ machine and this project that reading the code does not reveal.
 
 - `docs/longevitymap_v2/` keeps just-dna-lite's lowercase file names: moved in unchanged, so its links hold; it is
   exempt from the UPPER_SNAKE rule.
+- `docs/format08_reference/` keeps the compiler's file names for the same reason: copied unchanged from
+  just-dna-compiler, exempt from the UPPER_SNAKE rule.
