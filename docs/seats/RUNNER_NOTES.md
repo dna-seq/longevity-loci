@@ -13,7 +13,7 @@ Seated 2026-11-10 (account seat-10). The first-seating handout is done:
 
 ## Running jobs
 
-- 6428266 `ll-fetch-supp-zenin`, for the curator; watcher armed (until-event, --skip "watch armed| RUNNING on ").
+None (6428266 completed 2026-11-10T23:54Z), so no watcher is armed.
 
 ## Cluster facts sent to the rigger and not yet in its inventory
 
