@@ -52,8 +52,9 @@ What broke, by row:
     0.29) one name overclaims: written `CHRNA5/CHRNA3`.
   - The outcome cells cannot say "tested genome-wide, no estimate read" (Zenin's healthspan GWAS has no credible
     set here): written `untested`, with the reason in the verdict.
-  - Exceptional survival is mixed: parents both in the top 10% significant (Pilling, UK Biobank), own survival past
-    90 null (CHARGE-EU 90+, P 0.95). One cell holds one sign: `+`, the null kept as a study and said in the verdict.
+  - Exceptional survival was mixed: parents both in the top 10% significant (Pilling, UK Biobank), own survival past
+    90 null (CHARGE-EU 90+, P 0.95). First written `+`; moved to `0` once Deelen's supplement showed the 90th and
+    99th percentiles null too (P 0.40, 0.58), three samples outside UK Biobank against one inside.
 
 - 57 CDKN2B-AS1
   - Deelen 2019's Supplementary Data 1 is the per-variant look-up of every published lifespan locus in a sample

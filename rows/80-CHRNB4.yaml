@@ -10,9 +10,11 @@ verdict_reason: >-
   and in each parental-lifespan GWAS since Joshi 2017; replicated at genome-wide significance outside UK Biobank and
   LifeGen in AncestryDNA's fathers (Wright 2019, P 3.2e-9, the same side). It acts through smoking: every
   association the lead has is with smoking behaviour, lung cancer and COPD. The effect is mainly on deaths before
-  75 (HR 1.08 per allele at 40-75 against 1.03 after, Joshi 2017; declining after 60, Timmers 2019), and own survival
-  past 90 does not replicate (CHARGE-EU 90+, P 0.95, same sign), though both parents reaching the top 10% of
-  survival does in UK Biobank (Pilling 2017, P 4.0e-9). No smoking-stratified estimate was read, so how much of the
+  75 (HR 1.08 per allele at 40-75 against 1.03 after, Joshi 2017; declining after 60, Timmers 2019), and survival
+  to very old age does not replicate: CHARGE-EU 90+ P 0.95 (Joshi 2017), and Deelen 2019's 90th and 99th
+  percentiles P 0.40 and 0.58 (its supplement, read, not quoted; CHRNA3/5 is absent from its list of nominal
+  parental-lifespan loci). Only both parents reaching the top 10% of survival is significant, in UK Biobank (Pilling
+  2017, P 4.0e-9), so exceptional survival is 0. No smoking-stratified estimate was read, so how much of the
   effect remains in people who never smoked is not known here. Pilling 2017's second signal in the region (rs578776)
   is not scored. Healthspan: no estimate read (Zenin 2019's GWAS has no credible set here), so untested, not null.
 axes:
@@ -20,8 +22,8 @@ axes:
   mechanism: {value: smoking_lungs, cites: [pmid-29030599#q8, pmid-30642433#q4]}
   pleiotropy: {values: ["mech:smoking", "context:smoking"], cites: [pmid-29030599#q8, pmid-31484785#q8]}
   age_of_action: {value: MIDLIFE, confidence: DIRECT, cites: [pmid-29030599#q7, pmid-30642433#q5]}
-  outcome: {healthspan: untested, lifespan: "+", exceptional_survival: "+",
-            cites: [pmid-30642433#q4, pmid-29227965#q4, pmid-29030599#q5]}
+  outcome: {healthspan: untested, lifespan: "+", exceptional_survival: "0",
+            cites: [pmid-30642433#q4, pmid-29030599#q5, pmid-31413261#q5]}
   actionability: {label: modifiable, what: ["act_behaviour:smoking"], who: "act_who:self", cites: [pmid-29030599#q8]}
   context: {values: [eur_only_evidence, age_dependent], cites: [pmid-30642433#q4, pmid-29030599#q7]}
 flags:
