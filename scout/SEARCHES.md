@@ -13,7 +13,17 @@ none, it is unknown.
 How a query runs: PubMed through E-utilities by **entry date** (`datetype=edat`), so a paper published earlier but
 indexed late is still caught; Europe PMC's preprint index (`SRC:PPR`) by **first index date** (`FIRST_IDATE`). Each
 window overlaps the last by about two weeks. A hit is new when neither its PMID nor its DOI appears in any track's
-evidence or candidate CSV, nor in the seed list.
+evidence or candidate CSV, in the seed list, or in `scout/screened.md`.
+
+The literal requests, so a run can be rebuilt without the script:
+
+- PubMed: `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=<query>&datetype=edat&mindate=YYYY/MM/DD&maxdate=YYYY/MM/DD&retmax=500&retmode=json`,
+  then `esummary.fcgi?db=pubmed&id=<ids>&retmode=json` for titles and DOIs.
+- Europe PMC: `https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(<query>) AND (FIRST_IDATE:[YYYY-MM-DD TO YYYY-MM-DD])&format=json&pageSize=500&resultType=lite&cursorMark=*`,
+  paged by `nextCursorMark`.
+
+**Recall check.** A query is tested by running it without dates, restricted to the PMIDs of its track's evidence CSV
+(`AND (<pmid>[uid] OR …)`), and recorded as k of n. A query with poor recall is changed as a new line with its reason.
 
 ## Track E — 2025–2026 papers and preprints
 
@@ -29,6 +39,17 @@ covered the gap.
 - **E-clock**, PubMed: `("biological age"[tiab] OR "epigenetic clock"[tiab] OR "proteomic age"[tiab] OR "aging clock"[tiab]) AND (GWAS[tiab] OR "genome-wide"[tiab] OR loci[tiab])`
 - **E-preprint**, Europe PMC: `(longevity OR lifespan OR centenarian OR "parental lifespan" OR healthspan) AND (GWAS OR "genome-wide" OR variant OR polymorphism OR exome OR "whole-genome" OR polygenic) AND SRC:PPR`
 
+Added the same day, after the recall check below:
+
+- **E-somatic-2**, PubMed, replaces E-somatic (which needed a germline term and caught 1 of track E's 37 PMIDs, none of
+  its two clonal-haematopoiesis papers): `("clonal hematopoiesis"[tiab] OR "clonal haematopoiesis"[tiab] OR "mosaic chromosomal"[tiab] OR "loss of Y"[tiab]) AND (mortality[tiab] OR lifespan[tiab] OR longevity[tiab] OR inflammaging[tiab])`
+- **E-heritability**, PubMed, new (E-core missed the heritability, pedigree and mtDNA papers): `(heritability[tiab] OR pedigree*[tiab] OR "polygenic"[tiab] OR mtDNA[tiab]) AND (lifespan[tiab] OR "life span"[tiab] OR longevity[tiab] OR mortality[tiab])`
+
+**Recall on track E's evidence CSV** (37 PMIDs; 2026-11-10): E-core 29/37; E-survival 4/37; E-somatic 1/37; E-clock
+2/37. E-core's misses: 40287427, 40499013, 40907250, 41610249, 41644533, 41670345, 42428085, 42660951. E-clock takes
+40287427 and 42660951, E-somatic-2 takes 40499013 and 42428085, E-heritability takes 40907250, 41610249 and 41670345.
+The set E-core + E-clock + E-somatic-2 + E-heritability finds 36/37; the one left out, 41644533, is a review.
+
 E-core carries no species filter, on purpose (a `humans[mh]` filter drops papers not yet MeSH-indexed, which is most
 of a three-week window); the screen removes non-human work by title and abstract.
 
@@ -41,29 +62,45 @@ of a three-week window); the screen removes non-human work by title and abstract
 | 2026-11-10 | 2026-10-20 → 2026-11-10 | E-somatic | 1 | 1 | 0 |
 | 2026-11-10 | 2026-10-20 → 2026-11-10 | E-clock | 3 | 3 | 0 |
 | 2026-11-10 | 2026-10-20 → 2026-11-10 | E-preprint | 7 | 7 | 0 |
+| 2026-11-10 | 2026-10-20 → 2026-11-10 | E-somatic-2 | 9 | 8 | 0 |
+| 2026-11-10 | 2026-10-20 → 2026-11-10 | E-heritability | 28 | 20 | 0 |
 
-38 unique records; none was already in a track. Read at title level, and at abstract level where the title touched
+66 unique records, listed with their verdicts in `scout/screened.md`; none was already in a track. **Not queried this
+run:** the GWAS Catalog, and bioRxiv's and medRxiv's own listings (Europe PMC's preprint index stood in for both
+servers). "No new locus" covers only the sources queried. Read at title level, and at abstract level where the title touched
 human longevity genetics: 42986431 (review, CVD polygenic risk and lifespan; no locus), 42928381 (review,
 cardiovascular resilience in centenarians; no locus), 42972028 (retinal mortality biomarker; its GWAS is a
 biomarker-clock GWAS, a class track E excludes from scoring), 42928374 (queued: FURIN), and the preprint
 PPR1359822 (doi 10.20944/preprints202611.0588.v1; KIR alleles in 86 Romanians aged 65–90; no controls named in the
-abstract, no locus in the seed list). The rest are animal, plant, or non-genetic. No new locus at genome-wide
-significance.
+abstract, no locus in the seed list). The clonal-haematopoiesis mortality papers from E-somatic-2 are somatic, which track E keeps out of germline
+evidence. The rest are animal, plant, or non-genetic. No new locus at genome-wide significance in the sources queried.
 
 ## Tracks A–D, F–K
 
-Not yet swept. Their queries are to be written when each comes up, oldest first; every one is covered to an
-unknown date or to 2026-11-03.
+Not yet swept. Their queries below are **new**, written 2026-11-10, and **not yet run or recall-checked**; the
+first run of each checks its recall on its track's CSV and may change them. All PubMed by entry date, as above.
 
-| Track | Subject | Covered to (as the synthesis states) |
-|---|---|---|
-| A | LongevityMap, HAGR, the v1 audit | 2026-11-03 (live site checked) |
-| B | common-variant GWAS of longevity and lifespan | 2026-11-03 (GWAS Catalog v2 pulled) |
-| C | rare and protective variants, centenarian sequencing | unknown (scope "2015–2026") |
-| D | healthspan, ageing rate, heritability | unknown (scope "2018–2026") |
-| F | reporting to three audiences | unknown |
-| G | evaluating SNP-level associations | 2026-11-03 (titles checked) |
-| H | pleiotropy and context | unknown |
-| I | concepts and architecture | 2026-11-03 |
-| J | model organisms | 2026-11-03 |
-| K | definitions and age of action | unknown |
+| Track | Subject | Sources the synthesis names | Covered to (as it states) |
+|---|---|---|---|
+| A | LongevityMap, HAGR, the v1 audit | PubMed, HAGR site and Build 3, GWAS Catalog v2, Open Genes, HALL | 2026-11-03 (live site checked) |
+| B | common-variant GWAS of longevity and lifespan | PubMed, Crossref, GWAS Catalog v2, PGS Catalog | 2026-11-03 (Catalog pulled) |
+| C | rare and protective variants, centenarian sequencing | PubMed, Europe PMC, Crossref | unknown (scope "2015–2026") |
+| D | healthspan, ageing rate, heritability | PubMed, Crossref, GWAS Catalog v2 REST | unknown (scope "2018–2026") |
+| F | reporting to three audiences | PubMed, Crossref, product pages | unknown |
+| G | evaluating SNP-level associations | PubMed, Open Targets 26.09 | 2026-11-03 (titles checked) |
+| H | pleiotropy and context | PubMed, Open Targets | unknown |
+| I | concepts and architecture | PubMed | 2026-11-03 |
+| J | model organisms | PubMed, Europe PMC, GenAge Build 21, Open Genes API | 2026-11-03 |
+| K | definitions and age of action | PubMed, Timmers 2019 source data | unknown |
+
+- **A-resource**: `(LongevityMap[tiab] OR "Human Ageing Genomic Resources"[tiab] OR HAGR[tiab] OR GenAge[tiab] OR "Open Genes"[tiab]) AND (database[tiab] OR resource[tiab] OR update[tiab])`
+- **B-gwas**: `("genome-wide association"[tiab] OR GWAS[tiab] OR "genome-wide meta-analysis"[tiab]) AND (longevity[tiab] OR lifespan[tiab] OR "parental lifespan"[tiab] OR "parental longevity"[tiab] OR centenarian*[tiab] OR "age at death"[tiab] OR healthspan[tiab])`;
+  plus the GWAS Catalog's studies for EFO_0007796, OBA_VT0005372, EFO_0009762 and EFO_0005056, by publication date.
+- **C-rare**: `(exome[tiab] OR "whole-genome sequencing"[tiab] OR "rare variant*"[tiab] OR "loss-of-function"[tiab] OR "protective variant*"[tiab]) AND (centenarian*[tiab] OR longevity[tiab] OR lifespan[tiab] OR "long-lived"[tiab] OR supercentenarian*[tiab])`
+- **D-healthspan**: `(healthspan[tiab] OR frailty[tiab] OR "intrinsic capacity"[tiab] OR "healthy aging"[tiab] OR "healthy ageing"[tiab] OR "telomere length"[tiab]) AND ("genome-wide"[tiab] OR GWAS[tiab] OR "Mendelian randomization"[tiab] OR heritability[tiab])`
+- **F-reporting**: `("polygenic score*"[tiab] OR "polygenic risk"[tiab] OR "genetic risk"[tiab] OR "direct-to-consumer"[tiab]) AND (report*[tiab] OR communicat*[tiab] OR understanding[tiab]) AND (longevity[tiab] OR lifespan[tiab] OR aging[tiab] OR ageing[tiab])`
+- **G-finemap**: `("fine-mapping"[tiab] OR "credible set*"[tiab] OR colocali*[tiab] OR "effector gene*"[tiab] OR "locus-to-gene"[tiab]) AND (longevity[tiab] OR lifespan[tiab] OR aging[tiab] OR ageing[tiab])`
+- **H-pleiotropy**: `(pleiotrop*[tiab] OR "antagonistic pleiotropy"[tiab] OR "phenome-wide"[tiab] OR PheWAS[tiab] OR "gene-environment"[tiab]) AND (longevity[tiab] OR lifespan[tiab] OR "parental lifespan"[tiab])`
+- **I-concepts**: `(longevity[tiab] OR lifespan[tiab] OR centenarian*[tiab]) AND (genetic*[tiab] OR heritab*[tiab]) AND (review[pt] OR "meta-analysis"[pt] OR architecture[tiab] OR "familial longevity"[tiab])`
+- **J-models**: `(mouse[tiab] OR mice[tiab] OR "knock-in"[tiab] OR "Caenorhabditis elegans"[tiab] OR Drosophila[tiab]) AND lifespan[tiab] AND (human[tiab] OR GWAS[tiab] OR "human allele"[tiab] OR humanized[tiab] OR humanised[tiab])`
+- **K-age**: `(longevity[tiab] OR lifespan[tiab] OR mortality[tiab]) AND ("age-dependent"[tiab] OR "age-varying"[tiab] OR "age of onset"[tiab] OR "age-specific"[tiab] OR "age at death"[tiab]) AND (allele*[tiab] OR variant*[tiab] OR polygenic[tiab] OR GWAS[tiab])`
