@@ -66,3 +66,33 @@ so C3 either way; Pilling 2017's GCST006697 has no set in this window (rs6511720
 The locus-to-gene score of LDLR on that set (the only gene in the top three above 0.5): `effector:E2`. E1 would need
 a cis-QTL colocalisation for LDLR, not read here; Timmers 2020's eQTL colocalisation at this locus names KANK2, ILF3
 and others, not LDLR.
+
+Variant 15_78525587_C_T (rs8042849, CHRNA3/5), `alleleFrequencies`, of the alternative allele T (the
+lifespan-raising one):
+
+> [q10] nfe_adj 0.6400883652430044
+
+T is about 64% in non-Finnish Europeans (Timmers 2019: 0.65); 61% in African and 81% in East Asian gnomAD samples.
+
+Credible set 8d0d0d1e11991d9ff9f5a5ea4fecf427, study GCST009890 (Timmers 2019), PICS, 30 members, lead
+15_78525587_C_T:
+
+> [q11] 15_78525587_C_T posteriorProbability 0.3505311365074509
+
+PIP 0.35, `causal:C2`. GCST011100's set here (f3821132cc36ae09a8ac4cba08b1394b) has the same lead at 0.32.
+
+> [q12] 15_78533838_G_A r2Overall 0.9337735037407924
+
+rs931794 (Wright 2019's AncestryDNA lead), r² 0.93 to the lead; rs9788721 (Joshi's CHARGE proxy) is at 0.961.
+
+> [q13] 15_78603787_A_G r2Overall 0.8550959801809388
+
+rs1317286 (Pilling 2017's lead), r² 0.86 to the lead: `ld_proxy_of:rs8042849`. Pilling's own study GCST006697 holds
+two sets here: rs1317286's (SuSiE-inf, 4b2a4542d121aa1e89555da4603a227a, with rs8042849 in it) and a second led by
+rs578776 (c1d809ebe527dd273d44ff6759ceb60e, L2G CHRNA3 0.59), a secondary signal not scored here.
+
+> [q14] CHRNA5 0.29093170166015625
+
+The locus-to-gene score of CHRNA5 on the Timmers 2019 set (next PSMA4 0.13,
+CHRNA3 0.08): no gene reaches 0.5, `effector:E3`. The healthspan GWAS GCST007406 (Zenin 2019) has no credible set in
+this window.

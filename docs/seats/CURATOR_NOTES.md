@@ -14,7 +14,7 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   look-up with P and direction but no effect size may support (§6.3); until then CHARGE-EU 90+ stays
   not_significant with the reason in its statistical_test. Also with the person: the duplicate seed loci
   (8/157, 25/158, 132/133/153), skipped until answered. Rows get no changelog line.
-- The five-row pilot is running (below): 93 LDLR done; 80 CHRNB4, 57 CDKN2B-AS1, 71 ATXN2, 67 TTC12 next, then pause.
+- The five-row pilot is running (below): 93 LDLR and 80 CHRNB4 done; 57 CDKN2B-AS1, 71 ATXN2, 67 TTC12 next, then pause.
 - The scout's queue: pmid-42928374 (FURIN, pleiotropy with mental disorders) waits for locus 81; read it then.
 
 ## Pilot (five rows, from 2026-11-10)
@@ -42,6 +42,18 @@ What broke, by row:
     study row, cited from the tier only.
   - Mine: Open Targets lists 1,000+ credible sets per LDLR variant, so filtering the first page missed Timmers
     2020's set; query by study instead (`study(studyId){credibleSets}`), corrected before the commit.
+
+- 80 CHRNB4
+  - The new `ungrained` warning (a study's quote names neither its rsid nor its gene) does not look at
+    `proxy_rsid`: a quote naming the proxy the study reported still warns. Joshi 2017's Table 2 rows warn by design:
+    the flattened table puts the rsid and gene on lines above the cell row, so the row quote names neither, and a
+    second quote (q6) binds the rsid.
+  - The seed names the locus CHRNB4; every paper says CHRNA3/5. `gene` is the effector call, and at E3 (L2G CHRNA5
+    0.29) one name overclaims: written `CHRNA5/CHRNA3`.
+  - The outcome cells cannot say "tested genome-wide, no estimate read" (Zenin's healthspan GWAS has no credible
+    set here): written `untested`, with the reason in the verdict.
+  - Exceptional survival is mixed: parents both in the top 10% significant (Pilling, UK Biobank), own survival past
+    90 null (CHARGE-EU 90+, P 0.95). One cell holds one sign: `+`, the null kept as a study and said in the verdict.
 
 ## How a locus goes (what the first one taught)
 

@@ -1,0 +1,166 @@
+# The seed list's locus 80, named CHRNB4 by the seed; the papers call it CHRNA3/5 (15q25.1, the nicotinic receptor
+# cluster CHRNA5-CHRNA3-CHRNB4 with HYKK and PSMA4). Curated 2026-11-10, the pilot's second row. Lead rs8042849
+# (Timmers 2019, Joshi 2017); rs931794 (Wright 2019), rs1317286 (Pilling 2017) and rs9788721 (Joshi's CHARGE proxy)
+# sit in its credible set and appear only as proxies on the studies that reported them.
+locus_id: 80
+locus_name: CHRNB4
+verdict: kept
+verdict_reason: >-
+  Tier A confirmed. Genome-wide significant for parental lifespan in about one million lives (Timmers 2019, P 1.6e-26)
+  and in each parental-lifespan GWAS since Joshi 2017; replicated at genome-wide significance outside UK Biobank and
+  LifeGen in AncestryDNA's fathers (Wright 2019, P 3.2e-9, the same side). It acts through smoking: every
+  association the lead has is with smoking behaviour, lung cancer and COPD. The effect is mainly on deaths before
+  75 (HR 1.08 per allele at 40-75 against 1.03 after, Joshi 2017; declining after 60, Timmers 2019), and own survival
+  past 90 does not replicate (CHARGE-EU 90+, P 0.95, same sign), though both parents reaching the top 10% of
+  survival does in UK Biobank (Pilling 2017, P 4.0e-9). No smoking-stratified estimate was read, so how much of the
+  effect remains in people who never smoked is not known here. Pilling 2017's second signal in the region (rs578776)
+  is not scored. Healthspan: no estimate read (Zenin 2019's GWAS has no credible set here), so untested, not null.
+axes:
+  tier: {value: A, cites: [pmid-30642433#q4, pmid-29030599#q5, pmid-31484785#q7, pmid-31484785#q8]}
+  mechanism: {value: smoking_lungs, cites: [pmid-29030599#q8, pmid-30642433#q4]}
+  pleiotropy: {values: ["mech:smoking", "context:smoking"], cites: [pmid-29030599#q8, pmid-31484785#q8]}
+  age_of_action: {value: MIDLIFE, confidence: DIRECT, cites: [pmid-29030599#q7, pmid-30642433#q5]}
+  outcome: {healthspan: untested, lifespan: "+", exceptional_survival: "+",
+            cites: [pmid-30642433#q4, pmid-29227965#q4, pmid-29030599#q5]}
+  actionability: {label: modifiable, what: ["act_behaviour:smoking"], who: "act_who:self", cites: [pmid-29030599#q8]}
+  context: {values: [eur_only_evidence, age_dependent], cites: [pmid-30642433#q4, pmid-29030599#q7]}
+flags:
+  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-30642433#q4]}
+  - {token: "causal:C2", cites: [db-opentargets-26.09#q11]}
+  - {token: "effector:E3", cites: [db-opentargets-26.09#q14]}
+  - {token: "ld_proxy_of:rs8042849", cites: [db-opentargets-26.09#q12, db-opentargets-26.09#q13]}  # rs931794, rs1317286
+  - {token: "mediator:EFO_0006525", cites: [pmid-29030599#q8]}  # cigarettes per day measurement
+variants:
+  - rsid: rs8042849
+    gene: CHRNA5/CHRNA3
+    phenotype: Smoking quantity, lung cancer and COPD
+    trait_efo_id: EFO_0007796
+    effect_allele: T
+    effect_size: 0.4368
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: T/T
+        state: neutral
+        conclusion: >-
+          You carry two copies of the most common version of this DNA region (about 41 in 100 people of European
+          ancestry do). It is the reference the other versions are compared with, so it neither raises nor lowers
+          your expected lifespan here. The region holds genes for the brain's nicotine receptors, and its other
+          versions make people who smoke tend to smoke more. Whether you smoke matters far more for your health
+          than this DNA result. The finding comes from people of European ancestry; less is known elsewhere.
+      - genotype: C/T
+        state: risk
+        conclusion: >-
+          You carry one copy of a version of this DNA region that about 46 in 100 people of European ancestry
+          carry. It affects the brain's nicotine receptors: people who smoke and carry it tend to smoke more and
+          have more lung cancer and lung disease, and in very large studies its carriers' parents lived on average
+          about five months less, mostly through deaths before 75. The finding is well established, but it is a
+          tendency, not destiny. Whether you smoke matters far more than this DNA result; not smoking, or
+          stopping, is what counts.
+      - genotype: C/C
+        state: risk
+        conclusion: >-
+          You carry two copies of a version of this DNA region that about 13 in 100 people of European ancestry
+          have. It affects the brain's nicotine receptors: people who smoke and carry it tend to smoke more and
+          have more lung cancer and lung disease, and in very large studies each copy went with parents living on
+          average about five months less, mostly through deaths before 75. The finding is well established, but
+          it is a tendency, not destiny. Whether you smoke matters far more than this DNA result; not smoking, or
+          stopping, is what counts.
+studies:
+  - rsid: rs8042849
+    note: pmid-30642433
+    quote: q4
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the 26 LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 1012240
+    sample_unit: lives
+    age_min: 40
+    age_of: parent
+    stat_significance: significant
+    p_value: "1.6E-26"
+    p_value_num: 1.6e-26
+    effect_size: 0.4368
+    effect_measure: beta
+    effect_unit: years of life per copy in self (parental estimate doubled)
+    effect_allele: T
+    statistical_test: "Cox model residual on subject dosage, parents combined, common effect across sexes (Table 1)"
+    curator: claude-opus-5-5
+  - rsid: rs8042849
+    note: pmid-29030599
+    quote: q5
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (first UK Biobank release and 26 population cohorts)
+    ancestry: [EUR]
+    sample_size: 567000
+    sample_unit: lives
+    stat_significance: significant
+    p_value: "3.75 E-14"
+    p_value_num: 3.75e-14
+    effect_size: 1.046
+    effect_measure: HR
+    effect_unit: hazard ratio per C allele
+    effect_allele: C
+    statistical_test: "Cox model of parental survival on offspring dosage, both parents (Table 2); N rounded to thousands"
+    curator: claude-opus-5-5
+  - rsid: rs8042849
+    note: pmid-29030599
+    quote: q5
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: European (CHARGE-EU 90+)
+    ancestry: [EUR]
+    sample_size: 20518
+    sample_unit: individuals
+    n_cases: 5406
+    age_min: 90
+    age_of: participant
+    stat_significance: not_significant
+    p_value: "0.951"
+    p_value_num: 0.951
+    proxy_rsid: rs9788721
+    statistical_test: "Look-up at the proxy rs9788721 (r² 0.98) in CHARGE-EU 90+ (cases aged 90 or over), Table 2; sign consistent, P null"
+    curator: claude-opus-5-5
+  - rsid: rs8042849
+    note: pmid-29227965
+    quote: q4
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank)
+    ancestry: [EUR]
+    sample_size: 389166
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "1.2E-26"
+    p_value_num: 1.2e-26
+    effect_size: -0.0254
+    effect_measure: beta
+    effect_unit: Martingale residual of parents' attained age per A allele (negative = longer life)
+    effect_allele: A
+    proxy_rsid: rs1317286
+    statistical_test: "BOLT-LMM on Martingale residuals of both parents' attained age (Table 1); both parents in the top 10% of survival P 4.0E-09"
+    curator: claude-opus-5-5
+  - rsid: rs8042849
+    note: pmid-31484785
+    quote: q7
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: AncestryDNA customers of the European population group, fathers born 1886-1940
+    ancestry: [EUR]
+    sample_size: 309000
+    sample_unit: individuals
+    stratum: parent
+    stratum_level: father
+    stat_significance: significant
+    p_value: "3.19e-09"
+    p_value_num: 3.19e-09
+    effect_size: -0.41
+    effect_measure: beta
+    effect_unit: years of father's lifespan per G allele at the proxy (doubled to parental dosage)
+    effect_allele: G
+    proxy_rsid: rs931794
+    statistical_test: "Linear regression of fathers' lifespan in years on offspring dosage, not a Cox model (the vocabulary has no other parental design); P uncorrected (Table 1; 5.17e-08 after genomic control); N from Supplemental Table 8, not in the cache"
+    curator: claude-opus-5-5
