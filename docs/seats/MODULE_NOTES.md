@@ -21,6 +21,15 @@ First seated 2026-11-10. The seat-builder's first-seating handout is worked; its
   0.8 when the plugin does (it waits on 0.8.0 on PyPI and both registry instances serving it). No 0.8 column is
   hand-added before then.
 
+## The first curated row, read for the export (2026-11-10)
+
+`rows/46-LPA.yaml` (060c9bd), tier A kept, one variant (rs10455872, three genotypes), seven studies. Not built into
+`module/`: the module takes rows through the lead's export (RM1), never by hand. Read against 0.7.1 and sent to the
+lead (639271942): studies.csv's key (variant, pmid) collides twice in LPA (probed in a scratch spec: "Duplicate
+(variant, pmid): (rs10455872, 29030599)", a warning); the lead's new `nominal` has no 0.7.1 stat_significance
+value; the proxy studies' alleles (T, C) belong to rs55730499 and must not land on rs10455872's row. Asked the
+liaison whether 0.8 widens the study key.
+
 ## v1.2.0, the legacy layer (registry prod, read 2026-11-10)
 
 528 rsIDs, 1022 weight rows, 671 studies, 272 genes; categories antioxidant, genome_maintenance, heat-shock,
