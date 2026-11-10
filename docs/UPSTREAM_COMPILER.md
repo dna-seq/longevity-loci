@@ -16,7 +16,7 @@ compiler's `0.8` branch); reuse it at the cut, and tell that liaison where our u
 
 ## Read mark
 
-**`v0.8.2`** (tagged 2026-11-07), patches on 0.8.0 read by their changelog headings and "After upgrading"
+**`v0.8.3`** (tagged 2026-11-09), patches on 0.8.0 read by their changelog headings and "After upgrading"
 lines; read whole at our adoption. **In use: `v0.7.3`**, enricher 0.7.3, compiler 0.7.2, format 0.7.1 in
 `uv.lock`, held there by our cap (below, "Caps") until the plugin moves to 0.8. The first mark, `v0.7.3` (3dd8c2a),
 was fast-forwarded: no release before it was read.
@@ -57,13 +57,18 @@ read mark stays at `v0.7.3` until the cut; the cut is read again in full.
 - **Cut as 0.8.0** (2026-11-05, `edf2661c`; `main` at `e97339a3`): no behaviour change since `c90e6d98`. Tagged
   `v0.8.0` the same day. Read; not adopted: it waits on the plugin (its cap below 0.8), and our cap holds it out.
 
-## 0.8.1 and 0.8.2, for the adoption
+## 0.8.1 to 0.8.3, for the adoption
 
 - `cache pull` with no `--only` now also fetches the Open Targets lane (~5.5 GB, RM408): at adoption pull
   `--only ensembl`, as the upgrade order says.
 - Gene-metrics rows from the live gnomAD API are labelled `gnomad_api_constraint`, no longer `gnomad_v2.1.1_constraint`
   (RM417); the constraint snapshot is gnomAD 4.1.2 (RM410).
 - `cache rebuild --dry-run` no longer writes (RM411); `--pin` is taken or refused (RM416).
+- 0.8.3 (a patch, no recompile, no public name added): floors `>=0.8.3` across the trio; one `cache pull` or
+  `cache prepare` moves a pulled lane to the hub's release (constraint 4.1.2, STRchive 2.28.0), and a STRchive pulled
+  before it is moved aside first. A `verification.json` from 0.8.2 or earlier over edited bytes may carry stale
+  records (RM423): re-run its checks at adoption. A `resolution.csv` row no table names now warns
+  `derived_row_orphan` (RM422); `enrich` never removes it.
 
 ## Caps
 
