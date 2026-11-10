@@ -43,6 +43,10 @@ in the machine's `slurm.toml`, the `JOB_PREFIX` env override dropped (the driver
 - The seat-builder's handout: the scout's two changes landed (0015408, "b - yes"); of the runner's job duties the
   lead took `facts-to-rigger` only (aae8478, "on facts - yes, go"). job-reconcile, job-watch, run-log and
   correctness-gates were explained and not taken; offer them again when batch jobs become regular.
+- The person, 2026-11-10: "I suggest you add a runner seat to this repo and keep to your set". Asked the
+  seat-builder for a runner seat (message 639268000). On its landing, here and on the person's word, the lead drops
+  `facts-to-rigger` and LEAD.md's "cluster's apparatus" paragraph in the same commit; until then the lead keeps both,
+  and launches nothing.
 - Cluster orientation from metabonet's rigger taken into the session's private memory (machine facts, not
   committed). Until the person sets this repository's CPU share, at most 16 cores of CPU work on the lab account.
 
