@@ -6,6 +6,10 @@ The module seat's working state, rewritten to the present before a reset (`docs/
 
 First seated 2026-11-10. The seat-builder's first-seating handout is worked; its first work stands as below.
 
+**Sleeping (the person, 2026-11-10, forwarded by the lead, 639290114): "Module seat sleeps this time."** The
+curator's first-five-rows run goes ahead without this seat. No build, no probe and no new projection until the
+person or the lead wakes the seat; messages are read and let go meanwhile.
+
 - **Version in progress: 2.0.0**, scaffolded in `module/` with the plugin (v0.48.5, format 0.7.1, compiler 0.7.2):
   `module_spec.yaml`, header-only `variants.csv`, `studies.csv`, `licensing.csv`. No rows, no loci yet.
 - **Strict validation refuses the empty scaffold**, verbatim: "studies.csv is present but has no study rows.
