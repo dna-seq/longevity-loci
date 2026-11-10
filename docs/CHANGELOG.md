@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- The runner seat is seated: `runs/LOG.md` (one entry per batch job) and `runs/STATUS.md` (what runs now) begin, empty; fetches for the scout and the curator now go to it.
 - `module/` scaffolded for longevitymap 2.0.0 (plugin v0.48.5, format 0.7.1): the spec with the requirements' recommended defaults for D1 and D3, header-only variants, studies and licensing tables. Strict validation refuses it until the first curated study row lands.
 - A runner seat (on the kit's `runner` role, a quiet seat) takes the repository's batch jobs on the cluster: fetches for the scout and the curator, later the index and the compile at scale, logged in `runs/`. The lead keeps to its own role: its `facts-to-rigger` duty and its cluster paragraph move to the runner, and so does the nodes watcher.
 - The lead holds the runner's duty `facts-to-rigger`: cluster facts it finds go to the account's rigger the same turn, and a CPU burst over 16 cores is claimed with the rigger first.
