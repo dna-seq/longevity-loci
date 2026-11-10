@@ -8,7 +8,7 @@ verdict: kept
 verdict_reason: >-
   Tier A confirmed. Genome-wide significant for parental lifespan in about one million lives (Timmers 2019, P 8.5e-25)
   and for healthspan (Zenin 2019); replicated in subjects' own survival past 90 in CHARGE-EU 90+ at the lead itself,
-  same allele and direction (Joshi 2017, P 0.002), and nominal at the 90th percentile in Deelen 2019's data (via
+  same allele and direction (Joshi 2017, P 0.002, nominal, no effect size given), and nominal at the 90th percentile in Deelen 2019's data (via
   Timmers 2020, P 0.007). The caveat on independence: the parental-lifespan GWAS (Joshi, Pilling, Timmers 2019)
   share UK Biobank and the LifeGen cohorts, and the text does not say whether CHARGE-EU 90+'s cohorts overlap the
   26 discovery cohorts; the phenotype differs (own survival past 90 against parents' survival). Secondary LPA-region
@@ -119,10 +119,13 @@ studies:
     n_cases: 5406
     age_min: 90
     age_of: participant
-    stat_significance: not_significant
+    stat_significance: nominal
     p_value: "0.002"
     p_value_num: 0.002
-    statistical_test: "Look-up of the lead in CHARGE-EU 90+ (cases aged 90 or over), direction consistent (Table 2). Nominal (P 0.002), held not_significant only because the paper gives no effect size and §6.3 requires one on a supporting study; asked of the lead"
+    effect_allele: T
+    direction: risk
+    proxy_rsid: rs55730499
+    statistical_test: "Look-up of the lead in CHARGE-EU 90+ (cases aged 90 or over), direction consistent (Table 2): the paper states the direction for a1 = T of rs55730499, which tags the lead's G; no effect size given (D13)"
     curator: claude-opus-5-5
   - rsid: rs10455872
     note: pmid-32678081
