@@ -96,8 +96,10 @@ URL (a GitHub file page is read as its raw file), `zenodo:<record>` or `figshare
 deposit, or those whose name matches `--only`). Each file is rendered to text as `<key>.supp-<file name>.txt`: a
 workbook one line per row, cells tab-separated, each sheet opened by `## sheet: <name>`; csv and tsv the same; a PDF
 its text, page by page, each opened by `## page <n>`; code and plain text as they are; a zip archive each member it
-can render, opened by `## file: <name>`. Its sidecar `<key>.supp-<file name>.source.json` gives the locator, the
-URL, the day, and the sha256 of the file read and of the text written. A file with no text (an image, a binary
+can render, opened by `## file: <name>`; a gzip the file inside it. `--rows REGEX` keeps only the lines the
+expression finds and each table's header, streaming a gzip rather than unpacking it, for a deposit too big to
+cache whole (a GWAS's summary statistics); its cache name gains `.rows-<8 hex of the filter>`. Its sidecar `<key>.supp-<file name>.source.json` gives the locator, the
+URL, the filter, the day, and the sha256 of the file read and of the text written. A file with no text (an image, a binary
 .xls or .doc) is refused and nothing is written: a figure's caption is in the article's text, and its values are
 in a data deposit when the authors gave one. Exit 0 all fetched, 1 a file refused or none found, 3 a service did
 not answer (retry).

@@ -4,6 +4,7 @@ located there and nowhere else."""
 
 from __future__ import annotations
 
+import gzip
 import hashlib
 import io
 import json
@@ -117,3 +118,30 @@ def test_an_unrenderable_file_writes_nothing(tmp_path: Path) -> None:
     got = fetch_supplement("pmid-x", DEELEN_SD1, tmp_path)
     assert got.outcome is Outcome.REFUSED
     assert list(tmp_path.iterdir()) == []
+
+
+def test_gzip_and_a_row_filter() -> None:
+    """A summary-statistics deposit (Zenin 2019's is a 237 MB csv.gz) is cached as its header and the variants a row
+    needs: streamed, never decompressed whole."""
+    table = b"SNP\tA1\tbeta\tp\nrs1\tA\t0.1\t0.5\nrs3184504\tT\t-0.007\t0.128\nrs2\tG\t0.2\t0.9\n"
+    packed = gzip.compress(table)
+    assert render("stats.tsv.gz", packed) == render("stats.tsv", table)
+    assert render("stats.tsv.gz", packed, rows=r"\brs3184504\b") == "SNP\tA1\tbeta\tp\nrs3184504\tT\t-0.007\t0.128\n"
+    assert render("stats.tsv.gz", packed, rows=r"\brs999\b") == "SNP\tA1\tbeta\tp\n"
+    assert cache_name(KEY, "stats.tsv.gz") != cache_name(KEY, "stats.tsv.gz", r"rs1") != cache_name(KEY, "stats.tsv.gz", r"rs2")
+
+
+def test_a_filtered_supplement_keeps_each_sheet_header_and_the_row(tmp_path: Path, deelen: Path) -> None:
+    full = deelen.read_text(encoding="utf-8")
+    got = fetch_supplement(KEY, DEELEN_SD1, tmp_path, rows=r"\trs11065979\t")
+    if not got and any(f.outcome is Outcome.UNREACHABLE for f in got.files):
+        pytest.skip("the publisher's file server unreachable")
+    [cached] = got.files
+    lines = cached.path.read_text(encoding="utf-8").splitlines(keepends=True)
+    sheets = [l for l in full.splitlines(keepends=True) if l.startswith("## sheet: ")]
+    assert [l for l in lines if l.startswith("## sheet: ")] == sheets
+    hits = [l for l in full.splitlines(keepends=True) if "\trs11065979\t" in l]
+    assert hits and all(h in lines for h in hits)
+    assert set(lines) <= set(full.splitlines(keepends=True))  # nothing written that the full rendering lacks
+    side = json.loads(cached.path.with_name(cached.path.name.removesuffix(".txt") + ".source.json").read_text())
+    assert side["rows"] == r"\trs11065979\t"

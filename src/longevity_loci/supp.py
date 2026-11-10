@@ -14,6 +14,7 @@ The files are the authors', not ours: they stay in the cache, never in the repos
 from __future__ import annotations
 
 import csv
+import gzip
 import hashlib
 import io
 import json
@@ -80,10 +81,47 @@ def _table(rows: list[list[str]]) -> str:
     return "".join("\t".join(r).rstrip("\t") + "\n" for r in rows)
 
 
-def render(name: str, data: bytes) -> str:
-    """A file as text, by its name's suffix; Unrenderable when it has none this module can write."""
+def keep_rows(text: str, rows: str) -> str:
+    """Only the lines a curator asked for: every `## ` section line, the first line after it (a table's header), and
+    each line `rows` (a regular expression) finds. For a deposit too big to cache whole (a GWAS's summary
+    statistics): the variants a row needs, and the header that says what their cells are."""
+    pattern = re.compile(rows)
+    out, header_next = [], True
+    for line in text.splitlines(keepends=True):
+        if line.startswith("## "):
+            out.append(line)
+            header_next = True
+        elif header_next and line.strip():
+            out.append(line)
+            header_next = False
+        elif pattern.search(line):
+            out.append(line)
+    return "".join(out)
+
+
+def _gunzip_rows(data: bytes, rows: str) -> bytes:
+    """A gzipped text's header line and the lines `rows` finds, streamed: a summary-statistics file is never
+    decompressed whole into memory."""
+    pattern = re.compile(rows.encode())
+    out = []
+    with gzip.GzipFile(fileobj=io.BytesIO(data)) as f:
+        for n, line in enumerate(f):
+            if n == 0 or pattern.search(line):
+                out.append(line)
+    return b"".join(out)
+
+
+def render(name: str, data: bytes, rows: str | None = None) -> str:
+    """A file as text, by its name's suffix; Unrenderable when it has none this module can write. With `rows`, only
+    the lines `keep_rows` keeps."""
     suffix = Path(name).suffix
     low = suffix.lower()
+    if low == ".gz":
+        inner = name[: -len(suffix)]
+        body = _gunzip_rows(data, rows) if rows is not None else gzip.decompress(data)
+        return render(inner, body, rows)
+    if rows is not None:
+        return keep_rows(render(name, data), rows)
     if low in (".xlsx", ".xlsm"):
         book = openpyxl.load_workbook(io.BytesIO(data), read_only=True, data_only=True)
         parts = []
@@ -114,9 +152,11 @@ def render(name: str, data: bytes) -> str:
     raise Unrenderable(f"no text for a {suffix or 'suffix-less'} file")
 
 
-def cache_name(key: str, name: str) -> str:
-    """`<key>.supp-<name>.txt`, the name made file-safe."""
-    return f"{key}.supp-{NAME_UNSAFE.sub('_', name).strip('_')}.txt"
+def cache_name(key: str, name: str, rows: str | None = None) -> str:
+    """`<key>.supp-<name>.txt`, the name made file-safe; a filtered rendering adds `.rows-<8 hex of the filter>`, so
+    two filters of one file do not overwrite each other."""
+    tag = "" if rows is None else ".rows-" + hashlib.sha256(rows.encode()).hexdigest()[:8]
+    return f"{key}.supp-{NAME_UNSAFE.sub('_', name).strip('_')}{tag}.txt"
 
 
 def _files(locator: str, timeout: float) -> tuple[list[tuple[str, str]], Supplement | None]:
@@ -144,9 +184,11 @@ def _files(locator: str, timeout: float) -> tuple[list[tuple[str, str]], Supplem
     return sorted(pairs), None
 
 
-def fetch_supplement(key: str, locator: str, cache: Path, only: str | None = None, timeout: float = 120) -> Supplement:
+def fetch_supplement(key: str, locator: str, cache: Path, only: str | None = None, timeout: float = 600,
+                     rows: str | None = None) -> Supplement:
     """Fetch the files a locator names (a URL, `zenodo:ID`, `figshare:ID`) into the cache as text, for the note
-    `key`. `only` is a regular expression a deposit's file name must match. A file that cannot be rendered is
+    `key`. `only` is a regular expression a deposit's file name must match; `rows` keeps only the lines it finds (and
+    each table's header). A file that cannot be rendered is
     refused and nothing is written for it."""
     if not KEY.match(key):
         return Supplement(locator, outcome=Outcome.REFUSED, detail=f"{key!r} is not a note key (pmid-… or doi-…)")
@@ -164,15 +206,15 @@ def fetch_supplement(key: str, locator: str, cache: Path, only: str | None = Non
             out.files.append(Cached(reply.outcome, name, detail=reply.detail))
             continue
         try:
-            text = render(name, reply.body)
-        except (Unrenderable, UnicodeDecodeError, zipfile.BadZipFile, pypdf.errors.PdfReadError, OSError, KeyError) as e:
+            text = render(name, reply.body, rows)
+        except (Unrenderable, UnicodeDecodeError, zipfile.BadZipFile, gzip.BadGzipFile, re.error, EOFError, pypdf.errors.PdfReadError, OSError, KeyError) as e:
             out.files.append(Cached(Outcome.REFUSED, name, detail=f"{type(e).__name__}: {e}"))
             continue
         if not text.strip():
             out.files.append(Cached(Outcome.NO_TEXT, name, detail="rendered to no text"))
             continue
-        path = cache / cache_name(key, name)
-        sidecar = {"key": key, "file": name, "locator": locator, "url": url,
+        path = cache / cache_name(key, name, rows)
+        sidecar = {"key": key, "file": name, "locator": locator, "url": url, "rows": rows,
                    "fetched": datetime.now(UTC).isoformat(timespec="seconds"),
                    "file_sha256": hashlib.sha256(reply.body).hexdigest(),
                    "sha256": hashlib.sha256(text.encode("utf-8")).hexdigest()}
