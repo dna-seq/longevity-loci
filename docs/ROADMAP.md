@@ -39,3 +39,21 @@ curator's 46-LPA cites them), gnomAD's frequencies next, each rendered to lines 
 sidecar saying the release, the URL and the sha256. The release read must equal the note's `release`, or the fetch
 refuses: a later release is a different source.
 
+## RM4 — a supplement's table in the cache, so its values can be quoted
+
+**State:** unattended, paused with the pilot until the person's go. **Owner:** lead. In four of the pilot's five
+rows the replication outside UK Biobank lives only in a supplement (Deelen 2019's Supplementary Data 1, Wright
+2019's figshare tables). The cache holds an article's text, so those values sit in notes as prose, and no study row
+can quote them. Deelen's look-ups are study rows at 71 and prose elsewhere. `loci fetch` learns a supplement: an
+xlsx or csv rendered to lines (one table row a line, cells tab-separated, the sheet named), cached as
+`<key>.supp-<n>.txt` with a sidecar giving the file's URL and sha256. A quote then names its supplement, and
+`check quotes` locates it there. This makes the existing reading depth `supplement` checkable rather than adding a
+new one.
+
+## RM5 — the pilot's small format fixes
+
+**State:** unattended, paused with the pilot. **Owner:** lead. From the curator's pilot notes:
+- `ungrained` ignores a study's `proxy_rsid`, so a quote naming the proxy still warns.
+- `mediator:` takes `EFO_` only, and coronary artery disease's EFO id is retired for MONDO_0005010.
+- `study_design` has no parental-lifespan design other than Cox; Wright 2019's linear model was written as Cox.
+
