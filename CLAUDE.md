@@ -109,7 +109,8 @@ runs/        the runner seat's LOG.md (one entry per batch job) and STATUS.md (w
 src/longevity_loci/   the formats' models and the checks (`loci`)
 tests/       pytest, on the fixtures in assets/
 assets/      fixtures that travel: one example row and one note
-docs/        all markdown except this file and README.md; docs/FORMATS.md the row and note formats;
+docs/        all markdown except this file and README.md; docs/FORMATS.md the row and note formats; docs/PACING.md
+             what a row costs against the quota;
              docs/longevitymap_v2/ the research design, moved in from just-dna-lite unchanged
 docs/seats/  the seats' primings and notes
 ```
