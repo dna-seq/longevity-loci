@@ -12,7 +12,8 @@ verdict_reason: >-
   percentile in Deelen 2019's data and for healthspan (Timmers 2020, P 0.002 and 0.04), both with the same allele
   on the longer-lived side; Deelen's discovery cohorts hold no UK Biobank data, though whether they overlap LifeGen's
   is not stated. Caveats: Pilling 2017 (UK Biobank) only reaches P 1.8e-6; Wright's AncestryDNA mothers do not replicate (P 0.06, same sign; read from the supplement,
-  not quoted). Fine-mapping is diffuse: about fifty variants share the credible set, none with PIP above 0.04.
+  not quoted). Fine-mapping is diffuse: about fifty variants share the credible set, none with PIP above 0.04. The
+  seed's other rsID here, rs6511720, is that set's member at r² 0.96 and a proxy on three studies.
 axes:
   tier: {value: A, cites: [pmid-30642433#q3, pmid-31484785#q1, pmid-31484785#q5, pmid-32678081#q3]}
   mechanism: {value: heart_vessels, cites: [pmid-29227965#q3, pmid-31484785#q4]}
@@ -52,17 +53,17 @@ variants:
         state: protective
         conclusion: >-
           You carry one copy of a less common version of this DNA region (about 21 in 100 people of European
-          ancestry do). This version goes with slightly lower LDL cholesterol, the "bad" cholesterol, and in very
-          large studies its carriers' parents lived on average about four months longer, most likely through less
-          heart disease. The finding is well established, but the effect is small and it is a tendency, not a
+          ancestry do). This region is linked to LDL cholesterol, the "bad" cholesterol, and in very large studies
+          the carriers of this version had parents who lived on average about four months longer, most likely
+          through less heart disease. The finding is well established, but the effect is small and it is a tendency, not a
           guarantee. A standard cholesterol test your doctor can order shows your actual LDL level, which matters
           far more than this DNA result.
       - genotype: A/A
         state: protective
         conclusion: >-
           You carry two copies of a less common version of this DNA region (about 1 or 2 in 100 people of
-          European ancestry do). This version goes with slightly lower LDL cholesterol, the "bad" cholesterol, and
-          in very large studies each copy went with parents living on average about four months longer, most
+          European ancestry do). This region is linked to LDL cholesterol, the "bad" cholesterol, and in very large
+          studies each copy of this version went with parents living on average about four months longer, most
           likely through less heart disease. The finding is well established, but the effect is small and it is a
           tendency, not a guarantee. A standard cholesterol test your doctor can order shows your actual LDL
           level, which matters far more than this DNA result.

@@ -15,11 +15,13 @@ verdict_reason: >-
   Age of action is read as lifelong: no significant age difference in Joshi 2017, and a larger effect at the 99th
   than the 90th percentile in Deelen 2019, though Timmers 2019 sees the hazard-ratio effect tend to decline after 60.
   Deelen's own CDKN2A/B discovery variant (rs7039467) is in none of the lead's credible sets and is not scored here.
+  The seed's other rsIDs: rs1333042, rs7859727, rs6475609 (r² 0.93) and rs1333049 (the CAD tag, r² 0.83) are in the
+  lead's set, the same signal; rs1063192 (a German candidate study) was not read.
 axes:
   tier: {value: A, cites: [pmid-30642433#q6, pmid-31484785#q9, pmid-31413261#q3, pmid-32678081#q4]}
   mechanism: {value: heart_vessels, cites: [pmid-29227965#q6, pmid-30642433#q6]}
   pleiotropy: {values: ["mech:cvd", "tradeoff"], cites: [pmid-30642433#q7, pmid-29227965#q6]}
-  age_of_action: {value: LIFELONG, confidence: DIRECT_WEAK, cites: [pmid-29030599#q9, pmid-31413261#q4, pmid-30642433#q5]}
+  age_of_action: {value: LIFELONG, confidence: DIRECT_WEAK, cites: [pmid-29030599#q9, pmid-31413261#q4]}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
             cites: [pmid-30729179#q2, pmid-30642433#q6, pmid-31413261#q3, pmid-32678081#q4]}
   actionability: {label: descriptive, cites: [pmid-30642433#q7]}

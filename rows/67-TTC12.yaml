@@ -13,7 +13,9 @@ verdict_reason: >-
   not replicated. One genome-wide study, a single-sex one, with mixed replication: §4.1's B. Timmers 2019 counts it
   among the cancer-protective loci whose protective allele also lengthens life, so no trade-off is recorded. The
   effector is unclear: L2G is low for every gene (CLDN25 0.35, ZW10 0.20) and Timmers 2020's expression analysis
-  names USP28, ANKK1 and TTC12.
+  names USP28, ANKK1 and TTC12. The seed's other rsID, rs2186800 (TTC12, mvAge in Rosoff 2023, the source of the
+  seed's name), lies about 400 kb away and is not among the 155 members of the lead's credible set: not this signal,
+  and not read here.
 axes:
   tier: {value: B, cites: [pmid-29227965#q9, pmid-30642433#q9, pmid-32678081#q5, pmid-31484785#q11]}
   mechanism: {value: general_ageing, cites: [pmid-32678081#q5, pmid-30642433#q10]}

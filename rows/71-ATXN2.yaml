@@ -11,17 +11,23 @@ verdict_reason: >-
   same sign but is about a quarter of the UK one and not significant (Wright 2019, P 0.10), with heterogeneity
   between the two arms (P 2.6e-3, its supplement) and nothing at all in mothers; Deelen 2019's percentiles are
   nominal only (P 0.027 at the 90th, 0.023 at the 99th, its supplement; named among the nominal loci in its text).
-  §4.1's tier B "replication with a much smaller effect" fits better than A's "no red-flag heterogeneity". A
+  Deelen meets §4.1's literal replication clause for A, so the call is about weight: what separates this row from
+  80 CHRNB4, whose AncestryDNA arm is also heterogeneous with the UK one (P 4.1e-3), is that here the American arm is
+  not significant, so the one large replication outside the UK finds a quarter of the effect. §4.1's B,
+  "replication with a much smaller effect", fits better. Healthspan is 0: Zenin 2019 looked up SH2B3's rs3184504 and
+  it does not pass (P 0.13, same side). A
   trade-off: the lifespan-raising allele goes with less autoimmune and cardiovascular disease and with less
   protection against non-lung cancers (Timmers 2019); on lifespan the cardiovascular side wins, so the net
-  direction is resolved. The lifespan-lowering haplotype is almost absent outside Europe.
+  direction is resolved. The lifespan-lowering haplotype is almost absent outside Europe. The seed's other rsIDs:
+  rs3184504 (SH2B3 R262W), rs7137828, rs10774625, rs4766578 (r² 0.77) and rs11066320 (r² 0.78, near PTPN11) are in
+  the lead's broad credible set, one signal here.
 axes:
   tier: {value: B, cites: [pmid-30642433#q8, pmid-29227965#q7, pmid-31484785#q10, pmid-31413261#q5]}
   mechanism: {value: heart_vessels, cites: [pmid-30642433#q8, pmid-29227965#q8]}
   pleiotropy: {values: ["mech:cvd", "mech:autoimmune", "tradeoff"], cites: [pmid-30642433#q7, pmid-30642433#q8, pmid-29227965#q8]}
   age_of_action: {value: LIFELONG, confidence: DIRECT_WEAK, cites: [pmid-29030599#q9]}
-  outcome: {healthspan: untested, lifespan: "+", exceptional_survival: "+",
-            cites: [pmid-30642433#q8, pmid-31413261#q5]}
+  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "+",
+            cites: [pmid-30729179#q3, pmid-30642433#q8, pmid-31413261#q5]}
   actionability: {label: descriptive, cites: [pmid-30642433#q7]}
   context: {values: [eur_only_evidence], cites: [pmid-30642433#q8, pmid-31484785#q10]}
 flags:
@@ -41,9 +47,8 @@ variants:
     stat_significance: significant
     direction: protective
     negatives: >-
-      The longer-life version, C, goes with less heart disease, lower blood pressure and less autoimmune disease,
-      but with somewhat less protection against some cancers other than lung cancer; across whole lives the heart
-      side outweighs it.
+      The longer-life version, C, goes with less cardiovascular disease but with somewhat less protection against
+      some cancers other than lung cancer; across whole lives the cardiovascular side outweighs it.
     genotypes:
       - genotype: C/T
         state: neutral
@@ -56,8 +61,9 @@ variants:
       - genotype: C/C
         state: protective
         conclusion: >-
-          You carry two copies of the version of this DNA region that goes with lower blood pressure, less heart
-          disease and less autoimmune disease (about 3 in 10 people of European ancestry do). In large British
+          You carry two copies of the version of this DNA region that goes with less heart and blood vessel
+          disease (about 3 in 10 people of European ancestry do); the region is also linked to blood pressure and
+          autoimmune disease. In large British
           and European studies each copy went with parents living on average about three months longer, though a
           large American study saw a much smaller effect. The same version goes with slightly less protection
           against some cancers, but over a whole life the heart effect is the larger one. It is a likely finding,
@@ -66,8 +72,9 @@ variants:
       - genotype: T/T
         state: risk
         conclusion: >-
-          You carry two copies of the version of this DNA region that goes with higher blood pressure, more heart
-          disease and more autoimmune disease (about 2 in 10 people of European ancestry do). In large British and
+          You carry two copies of the version of this DNA region that goes with more heart and blood vessel
+          disease (about 2 in 10 people of European ancestry do); the region is also linked to blood pressure and
+          autoimmune disease. In large British and
           European studies each copy went with parents living on average about three months less, though a large
           American study saw a much smaller effect. The same version goes with slightly more protection against
           some cancers, but over a whole life the heart effect is the larger one. It is a likely finding, not a

@@ -94,9 +94,17 @@ What broke, by row:
     seed TTC12. The rule for `gene` below E2 wants deciding.
   - Pilling's single-parent analyses print no N; `sample_size` left empty.
 
-Across the five: two tiers kept at A that the seed had at A (LDLR, CDKN2B-AS1, plus CHRNA3/5 at A), two moved to B
-(ATXN2, ZW10). The deciding evidence each time was a sample outside UK Biobank and LifeGen, and for four of the
-five the numbers for it sit in a supplement (Wright's, Deelen's) the cache cannot hold.
+Across the five: three kept at A (LDLR, CHRNA3/5, CDKN2B-AS1), two moved to B (ATXN2, ZW10). The deciding evidence
+each time was a sample outside UK Biobank and LifeGen, and for four of the five its numbers sit in a supplement
+(Wright's, Deelen's, Zenin's) the cache cannot hold. Not consistent yet: Deelen's supplement look-ups are study rows
+at 71 and prose only at 93, 57, 67 and 80; to be made one way once the lead rules on supplements.
+
+After the fifth row, the advisor's read (correction commit): mediator directions in conclusions that no quote
+carried were softened (LDL at 93, smoking at 80, blood pressure and autoimmunity at 71); 71's healthspan went from
+untested to 0 on Zenin's own look-up (its Supplementary Data 15); each row now says what became of the seed's other
+rsIDs; 57's age cites dropped the Timmers 2019 decline it does not rest on. `loci check` reads none of these.
+Rosoff 2023 (pmid-37550455, mvAge), cited by the seed at all five, was fetched and has no note: its text names no
+pilot lead (values in its supplement), so it is unread for these rows.
 
 ## How a locus goes (what the first one taught)
 

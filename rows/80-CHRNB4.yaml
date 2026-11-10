@@ -16,7 +16,10 @@ verdict_reason: >-
   parental-lifespan loci). Only both parents reaching the top 10% of survival is significant, in UK Biobank (Pilling
   2017, P 4.0e-9), so exceptional survival is 0. No smoking-stratified estimate was read, so how much of the
   effect remains in people who never smoked is not known here. Pilling 2017's second signal in the region (rs578776)
-  is not scored. Healthspan: no estimate read (Zenin 2019's GWAS has no credible set here), so untested, not null.
+  is not scored. Healthspan: no estimate read (Zenin 2019's GWAS has no credible set here, and its look-up of
+  lifespan variants does not hold this lead), so untested, not null. The seed's other rsIDs: rs931794, rs9788721,
+  rs10519203 (r² 0.95), rs1317286 and rs16969968 (CHRNA5 D398N, r² 0.87) are in the lead's credible set, the same
+  signal; rs578776 is Pilling's second signal; rs11852372, rs2036527, rs4887072 and rs11633223 were not placed.
 axes:
   tier: {value: A, cites: [pmid-30642433#q4, pmid-29030599#q5, pmid-31484785#q7, pmid-31484785#q8]}
   mechanism: {value: smoking_lungs, cites: [pmid-29030599#q8, pmid-30642433#q4]}
@@ -48,25 +51,24 @@ variants:
         conclusion: >-
           You carry two copies of the most common version of this DNA region (about 41 in 100 people of European
           ancestry do). It is the reference the other versions are compared with, so it neither raises nor lowers
-          your expected lifespan here. The region holds genes for the brain's nicotine receptors, and its other
-          versions make people who smoke tend to smoke more. Whether you smoke matters far more for your health
-          than this DNA result. The finding comes from people of European ancestry; less is known elsewhere.
+          your expected lifespan here. The region holds genes for the brain's nicotine receptors and is linked to
+          nicotine dependence. Whether you smoke matters far more for your health than this DNA result. The finding comes from people of European ancestry; less is known elsewhere.
       - genotype: C/T
         state: risk
         conclusion: >-
           You carry one copy of a version of this DNA region that about 46 in 100 people of European ancestry
-          carry. It affects the brain's nicotine receptors: people who smoke and carry it tend to smoke more and
-          have more lung cancer and lung disease, and in very large studies its carriers' parents lived on average
-          about five months less, mostly through deaths before 75. The finding is well established, but it is a
+          carry. The region holds the brain's nicotine receptor genes and is linked to nicotine dependence, lung
+          cancer and lung disease, and in very large studies this version's carriers had parents who lived on
+          average about five months less, mostly through deaths before 75. The finding is well established, but it is a
           tendency, not destiny. Whether you smoke matters far more than this DNA result; not smoking, or
           stopping, is what counts.
       - genotype: C/C
         state: risk
         conclusion: >-
           You carry two copies of a version of this DNA region that about 13 in 100 people of European ancestry
-          have. It affects the brain's nicotine receptors: people who smoke and carry it tend to smoke more and
-          have more lung cancer and lung disease, and in very large studies each copy went with parents living on
-          average about five months less, mostly through deaths before 75. The finding is well established, but
+          have. The region holds the brain's nicotine receptor genes and is linked to nicotine dependence, lung
+          cancer and lung disease, and in very large studies each copy of this version went with parents living
+          on average about five months less, mostly through deaths before 75. The finding is well established, but
           it is a tendency, not destiny. Whether you smoke matters far more than this DNA result; not smoking, or
           stopping, is what counts.
 studies:
