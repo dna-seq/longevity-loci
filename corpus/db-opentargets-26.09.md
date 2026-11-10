@@ -38,3 +38,31 @@ GCST011100 (Timmers 2020), and rs55730499 leads Pilling 2017's set (GCST006697, 
 
 The locus-to-gene score of LPA on that credible set (next PLG 0.341): L2G ≥ 0.5, `effector:E2`. E1 would also need a
 cis-QTL colocalisation for LPA, not read here (the set has 1,391 colocalisations of every kind; not sorted).
+
+Variant 19_11079858_G_A (rs142158911, LDLR), `alleleFrequencies`, of the alternative allele A (the lifespan-raising
+one):
+
+> [q6] nfe_adj 0.11544578952019087
+
+A is about 12% in non-Finnish Europeans, as Timmers 2019 has it (0.12). Other ancestries are not used: the African
+figure (afr_adj 0.1875, exactly 3/16) is a sample too small to quote.
+
+Credible set 03c517952394bc1997c99049d239a442, study GCST009890 (Timmers 2019, "Parental lifespan"), PICS, lead
+19_11079858_G_A, about fifty members each with PIP under 0.04:
+
+> [q7] 19_11079858_G_A posteriorProbability 0.035171205149789796
+
+PIP 0.035: in the set, below 0.1, `causal:C3`. The signal is spread over a long LD block; no member stands out.
+
+> [q8] 19_11091630_G_T r2Overall 0.9559867534825262
+
+rs6511720 (19_11091630_G_T), Timmers 2020's, Pilling 2017's and Wright 2019's lead at LDLR, is in the same set at
+r² 0.956 to the lead (PIP 0.017): the same signal, `ld_proxy_of:rs142158911`. Timmers 2020's multivariate study
+GCST011100 has its own set here (6bf8fa2e5bdd96ea48ee4bc9856fdc7d, PICS, 49 members) led by rs6511720 at PIP 0.037,
+so C3 either way; Pilling 2017's GCST006697 has no set in this window (rs6511720 was suggestive there).
+
+> [q9] LDLR 0.9606614112854004
+
+The locus-to-gene score of LDLR on that set (the only gene in the top three above 0.5): `effector:E2`. E1 would need
+a cis-QTL colocalisation for LDLR, not read here; Timmers 2020's eQTL colocalisation at this locus names KANK2, ILF3
+and others, not LDLR.

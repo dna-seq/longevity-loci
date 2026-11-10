@@ -1,0 +1,169 @@
+# The seed list's locus 93, LDLR (19p13.2). Curated 2026-11-10, the first row of the five-row pilot. Lead rs142158911
+# (Timmers 2019); rs6511720, the lead of Timmers 2020, Pilling 2017 and Wright 2019, is the same signal (r² 0.96 in
+# Open Targets' credible set) and appears only as a proxy on the studies that reported it.
+locus_id: 93
+locus_name: LDLR
+verdict: kept
+verdict_reason: >-
+  Tier A confirmed. Genome-wide significant for parental lifespan in about one million lives (Timmers 2019, P 8.1e-9,
+  a locus first found there) and replicated outside UK Biobank and LifeGen in AncestryDNA's fathers, a mostly
+  American sample (Wright 2019, P 6.8e-5, the LDL-lowering allele on the longer-lived side), where the
+  AncestryDNA-UK Biobank meta-analysis also passes genome-wide significance (P 2.7e-9). Nominal at the 90th
+  percentile in Deelen 2019's data and for healthspan (Timmers 2020, P 0.002 and 0.04), both with the same allele
+  on the longer-lived side. Caveats: Pilling 2017 (UK Biobank) only reaches P 1.8e-6; Deelen's cohorts include about
+  900 UK Biobank cases; Wright's AncestryDNA mothers do not replicate (P 0.06, same sign; read from the supplement,
+  not quoted). Fine-mapping is diffuse: about fifty variants share the credible set, none with PIP above 0.04.
+axes:
+  tier: {value: A, cites: [pmid-30642433#q3, pmid-31484785#q1, pmid-31484785#q5, pmid-32678081#q3]}
+  mechanism: {value: heart_vessels, cites: [pmid-29227965#q3, pmid-31484785#q4]}
+  pleiotropy: {values: ["mech:cvd"], cites: [pmid-31484785#q4, pmid-30642433#q3]}
+  age_of_action: {value: MIDLIFE, confidence: DIRECT_WEAK, cites: [pmid-32678081#q2]}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
+            cites: [pmid-32678081#q3, pmid-30642433#q3]}
+  actionability: {label: preventable, what: ["act_test:ldl"], who: "act_who:doctor", cites: [pmid-29227965#q3]}
+  context: {values: [eur_only_evidence], cites: [pmid-30642433#q3, pmid-31484785#q1]}
+flags:
+  - {token: "PROTECT:PRESENCE", cites: [pmid-30642433#q3, pmid-29227965#q3]}
+  - {token: "causal:C3", cites: [db-opentargets-26.09#q7]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q9]}
+  - {token: "ld_proxy_of:rs142158911", cites: [db-opentargets-26.09#q8]}  # rs6511720, r² 0.96
+  - {token: "mediator:EFO_0004611", cites: [pmid-29227965#q3]}          # low density lipoprotein cholesterol measurement
+variants:
+  - rsid: rs142158911
+    gene: LDLR
+    phenotype: LDL cholesterol and heart disease
+    trait_efo_id: EFO_0007796
+    effect_allele: A
+    effect_size: 0.3550
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA region, the one most people of European ancestry
+          have (about 77 in 100). It is the reference the other versions are compared with, so it neither raises
+          nor lowers your expected lifespan here. The region sits in the LDL receptor gene, which clears LDL
+          cholesterol, the "bad" cholesterol, from the blood. A standard cholesterol test your doctor can order
+          shows your actual LDL level, which matters far more than this DNA result. The finding comes from people
+          of European ancestry; less is known elsewhere.
+      - genotype: A/G
+        state: protective
+        conclusion: >-
+          You carry one copy of a less common version of this DNA region (about 21 in 100 people of European
+          ancestry do). This version goes with slightly lower LDL cholesterol, the "bad" cholesterol, and in very
+          large studies its carriers' parents lived on average about four months longer, most likely through less
+          heart disease. The finding is well established, but the effect is small and it is a tendency, not a
+          guarantee. A standard cholesterol test your doctor can order shows your actual LDL level, which matters
+          far more than this DNA result.
+      - genotype: A/A
+        state: protective
+        conclusion: >-
+          You carry two copies of a less common version of this DNA region (about 1 or 2 in 100 people of
+          European ancestry do). This version goes with slightly lower LDL cholesterol, the "bad" cholesterol, and
+          in very large studies each copy went with parents living on average about four months longer, most
+          likely through less heart disease. The finding is well established, but the effect is small and it is a
+          tendency, not a guarantee. A standard cholesterol test your doctor can order shows your actual LDL
+          level, which matters far more than this DNA result.
+studies:
+  - rsid: rs142158911
+    note: pmid-30642433
+    quote: q3
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the 26 LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 1012240
+    sample_unit: lives
+    age_min: 40
+    age_of: parent
+    stat_significance: significant
+    p_value: "8.1E-09"
+    p_value_num: 8.1e-09
+    effect_size: 0.3550
+    effect_measure: beta
+    effect_unit: years of life per copy in self (parental estimate doubled)
+    effect_allele: A
+    statistical_test: "Cox model residual on subject dosage, parents combined, common effect across sexes (Table 1); the sex-specific P is 3.3E-08"
+    curator: claude-opus-5-5
+  - rsid: rs142158911
+    note: pmid-31484785
+    quote: q1
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: AncestryDNA customers of the European population group, fathers born 1886-1940
+    ancestry: [EUR]
+    sample_size: 309000
+    sample_unit: individuals
+    stratum: parent
+    stratum_level: father
+    stat_significance: nominal
+    p_value: "6.78e-05"
+    p_value_num: 6.78e-05
+    effect_size: 0.016
+    effect_measure: beta
+    effect_unit: z-score of paternal lifespan per A allele at the proxy (A is the reverse-strand T)
+    effect_allele: A
+    direction: protective
+    proxy_rsid: rs6511720
+    statistical_test: "Linear regression of fathers' lifespan in years on offspring dosage, not a Cox model (the vocabulary has no other parental design); P uncorrected (Table 3; 2.486e-04 after genomic control); allele and N from Supplemental Table 8, not in the cache"
+    curator: claude-opus-5-5
+  - rsid: rs142158911
+    note: pmid-29227965
+    quote: q3
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank)
+    ancestry: [EUR]
+    sample_size: 389166
+    sample_unit: individuals
+    stat_significance: suggestive
+    p_value: "1.8E-06"
+    p_value_num: 1.8e-06
+    effect_size: 0.0165
+    effect_measure: beta
+    effect_unit: Martingale residual of parents' attained age per G allele (positive = shorter life)
+    effect_allele: G
+    proxy_rsid: rs6511720
+    statistical_test: "BOLT-LMM on Martingale residuals of both parents' attained age (Table 3)"
+    curator: claude-opus-5-5
+  - rsid: rs142158911
+    note: pmid-32678081
+    quote: q3
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's data, as Timmers 2020 tabulates it)
+    ancestry: [EUR]
+    n_cases: 11262
+    sample_size: 36745
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "2E−03"
+    p_value_num: 0.002
+    effect_size: 0.093
+    effect_measure: beta
+    effect_unit: log odds of reaching the 90th percentile, per T allele
+    effect_allele: T
+    proxy_rsid: rs6511720
+    statistical_test: "Longevity column of Timmers 2020 Table 1 (90th percentile vs controls); nominal only"
+    curator: claude-opus-5-5
+  - rsid: rs142158911
+    note: pmid-32678081
+    quote: q3
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank; Zenin 2019's data, as Timmers 2020 tabulates it)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "4E−02"
+    p_value_num: 0.04
+    effect_size: 0.015
+    effect_measure: beta
+    effect_unit: minus log hazard of the end of healthspan, per T allele (positive = later)
+    effect_allele: T
+    proxy_rsid: rs6511720
+    statistical_test: "Healthspan column of Timmers 2020 Table 1; nominal only"
+    curator: claude-opus-5-5

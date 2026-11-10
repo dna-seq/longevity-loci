@@ -10,11 +10,13 @@ mechanical consensus of the research tracks, to be confirmed or overturned by th
 
 ## Done
 
-None yet.
+- 46 LPA (lead rs10455872), tier A kept: the first locus, by hand, shown to the lead as the format's first row.
+- 93 LDLR (lead rs142158911), tier A kept: the pilot's first row.
 
 ## In hand
 
-- 46 LPA (lead rs10455872): the first locus, by hand, shown to the lead as the format's first curated row.
+The five-row pilot, on the person's word (2026-11-10): 93 LDLR, 80 CHRNB4, 57 CDKN2B-AS1, 71 ATXN2, 67 TTC12, one
+commit each, then a pause until the person says go.
 
 ## Next: seed tier A (11)
 

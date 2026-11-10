@@ -14,8 +14,34 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   look-up with P and direction but no effect size may support (§6.3); until then CHARGE-EU 90+ stays
   not_significant with the reason in its statistical_test. Also with the person: the duplicate seed loci
   (8/157, 25/158, 132/133/153), skipped until answered. Rows get no changelog line.
-- Next, unattended, by `rows/PROGRESS.md`: 93 LDLR, 80 CHRNB4, 57 CDKN2B-AS1, 71 ATXN2, 67 TTC12.
+- The five-row pilot is running (below): 93 LDLR done; 80 CHRNB4, 57 CDKN2B-AS1, 71 ATXN2, 67 TTC12 next, then pause.
 - The scout's queue: pmid-42928374 (FURIN, pleiotropy with mental disorders) waits for locus 81; read it then.
+
+## Pilot (five rows, from 2026-11-10)
+
+The person's word through the lead (639290086): five new rows in PROGRESS order, one commit and a `done:` each, what
+breaks written here as it happens, then a pause. 46-LPA's CHARGE-EU 90+ moved to nominal under D13 first (4813c8a).
+
+What broke, by row:
+
+- 93 LDLR
+  - Wright 2019's Table 3 (AncestryDNA, the one sample outside UK Biobank and LifeGen) prints P and a z-score effect
+    but no effect allele. The alleles are in a figshare supplement only: Europe PMC lists no supplementary file and
+    the plugin's `list_supplementary` answers `not_determinable` for G3 (DOI prefix 10.1534). Found by figshare's
+    API, read with `fetch_supplementary` and a stdlib xlsx reader (no openpyxl in the environment).
+  - The cache holds an article's text only, so supplement values cannot be quoted or checked: they sit in the note
+    as prose under a `supplement` reading, and the study quotes the main-text table row.
+  - Wright's Supplemental Tables 8 and 9 give opposite allele labels for one beta (S9's `effect_allele_anc` is the
+    other allele); S8 agrees with the main text. This sets the direction at CHRNA3/5, ANRIL and ATXN2 too.
+  - Wright's supplement writes rs6511720's allele as A, the reverse strand of a G/T SNP: kept as printed, said in
+    `effect_unit`.
+  - Wright's arm is a linear regression of parents' lifespan, not a Cox model; `study_design` has no other parental
+    design, so `parental_lifespan_cox` with the difference in `statistical_test`. Its effect is a z-score, written as
+    `beta`.
+  - Wright's meta-analysis (genome-wide significant) contains UK Biobank and prints no allele or pooled effect: not a
+    study row, cited from the tier only.
+  - Mine: Open Targets lists 1,000+ credible sets per LDLR variant, so filtering the first page missed Timmers
+    2020's set; query by study instead (`study(studyId){credibleSets}`), corrected before the commit.
 
 ## How a locus goes (what the first one taught)
 
