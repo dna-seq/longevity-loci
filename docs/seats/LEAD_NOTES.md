@@ -41,8 +41,9 @@ in the machine's `slurm.toml`, the `JOB_PREFIX` env override dropped (the driver
 ## Open with the person (2026-11-10)
 
 - The runner seat landed (on the person's word, 2026-11-10: "I suggest you add a runner seat to this repo and keep to
-  your set"); the lead's `facts-to-rigger` duty, its cluster paragraph and the nodes watcher moved to it. Left: the
-  seat's account and ticket from the desk's secretary, and its first-seating handout armed.
+  your set"); the lead's `facts-to-rigger` duty, its cluster paragraph and the nodes watcher moved to it.  Seated
+  2026-11-10 (seat-10, through the desk's long line; the short take's refusal is kit #398); its first seating done
+  (e138b73).
 - Cluster orientation from metabonet's rigger: the runner's now; it reads it from the rigger at its first seating.
 
 ## Plan
