@@ -58,3 +58,4 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
 - Avatar: set 2026-11-10, a beaver stacking labelled blocks, drawn by agents-kit/tooling (639270008).
 - Token for the polygon: the person's; on the desk as #251 (filed 2026-11-10, unattended). Default on silence: build and check locally, no rehearsal, nothing registered.
 - `first seating:` report to the seat-builder: sent.
+- On waking: read `docs/format08_reference/` (just-dna-format 0.8's longevity reference example and the compiler's longevitymap v2 shape audit; the lead, 639310707). It notes Timmers 2019 contradicting itself on effect alleles (639310710), which bears on LPA and CELSR2.
