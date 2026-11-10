@@ -18,7 +18,8 @@ First seating, the seat-builder's handout:
    D10).
 6. Inputs: done, `docs/INPUTS.md` (v1's sqlite, HAGR Build 3, a live snapshot; CC BY 3.0). v1.2.0's registry
    tables are the module seat's to fetch with the plugin.
-7. Trust register: desk #200, default "later, at the module seat's first publish".
+7. Trust register: desk #200 answered 2026-11-10, "trust register reask in a month": waits until 2026-12-10, then
+   ask the person again.
 8. Pin: nothing to move.
 
 ## To file (unattended, at the next idle turn)
@@ -36,6 +37,14 @@ Nothing. 2026-11-10, on the person's word ("update your plugin and apply yoursel
 v0.1.164 (`move-to-tag`), applied the auto-mode rules (`automode.py --apply`, `--check` clean; the tooling and admin
 entries left out as not this clone's), and moved the job prefix to `[slurm.repo.longevity-loci] job_prefix = "ll-"`
 in the machine's `slurm.toml`, the `JOB_PREFIX` env override dropped (the driver reads `ll-`, from=repo).
+
+## Open with the person (2026-11-10)
+
+- The seat-builder's handout: the scout's two changes landed (0015408, "b - yes"). The lead's own line,
+  `duties = "job-reconcile job-watch run-log correctness-gates facts-to-rigger"`, waits: the person asked for an
+  elaboration first, given in their session.
+- Cluster orientation from metabonet's rigger taken into the session's private memory (machine facts, not
+  committed). Until the person sets this repository's CPU share, at most 16 cores of CPU work on the lab account.
 
 ## Plan
 
