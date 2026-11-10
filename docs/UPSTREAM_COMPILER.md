@@ -100,7 +100,12 @@ here as the first import lands.
 
 ## Inbound verdicts
 
-None yet.
+- **RM428, the GWAS pass (2026-11-11, from the plugin's liaison, S143; severity high).** The GWAS Catalog retired
+  its v1 API, so enricher 0.7.3, ours and the plugin's, gets HTTP 410 on every rsID; 0.8.3 and their main send
+  `size=1000` to v2 `/associations`, which refuses above 500. No installable release has a working GWAS pass.
+  For us: the module seat's `enrich_module` / `enrich_gwas_effects` returns no GWAS effects until a fix ships; an
+  empty GWAS sidecar is not "no associations". Whether a 0.7.x patch is cut is RM428's ask 4, the compiler's
+  person's call. Nothing to file from here.
 
 ## Our pieces that duplicate the compiler's
 

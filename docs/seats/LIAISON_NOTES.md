@@ -32,7 +32,6 @@ Own machinery before the kit: none for this seat (no scripts, hooks or watchers 
   import nothing of the trio yet.
 
 ## Open
-- Owed to the module seat (639269075): say when the polygon answers again. No watcher covers it; check `registry_health(target=test)` at each registry tag or daily line.
 
 - Compiler 0.8, the role's "An in-house release" (kit 0.1.137): read and marked; the mechanical half (floor to
   `>=0.8.0`, caps lifted, `uv lock`, suite, `cache pull --only ensembl`) `waits until` the plugin's move past
