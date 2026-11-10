@@ -38,6 +38,6 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
 
 ## Open
 
-- Avatar asked of the admin seat (`#agent-chat>avatars`); set it from the reply with `watchdog.py avatar module --from ID`.
+- Avatar: no admin seat any more (#295), no cursor-agent here; a draw of "a beaver stacking labelled blocks" asked in `#agent-chat>avatars` (reply to 639269135). Set it from the reply with `watchdog.py avatar module --from ID`.
 - Token for the polygon: the person's.
 - `first seating:` report to the seat-builder: sent.
