@@ -1,0 +1,197 @@
+# The seed list's locus 6, CELSR2 (1p13.3, the CELSR2/PSRC1/SORT1 lipid locus). Curated 2026-11-11, the ten-row run's
+# first row. Lead rs646776 (the seed's; McDaid 2017's Bayesian scan, not in this corpus): rs602633 (Pilling 2017),
+# rs4970836 (Timmers 2019) and rs599839 (Wright 2019) share its credible set and appear only as proxies on their studies.
+locus_id: 6
+locus_name: CELSR2
+verdict: kept
+verdict_reason: >-
+  Tier A confirmed, the seed's single-track A (§12) now resting on the papers. Genome-wide significant for parents'
+  attained age in UK Biobank (Pilling 2017, rs602633, P 2.7e-8; fathers 3.6e-9), and replicated in AncestryDNA, the
+  mostly American sample outside UK Biobank, with the same allele: fathers P 1.7e-3 and mothers P 7.5e-3, with no
+  heterogeneity against the UK Biobank arm (P 0.19 and 0.78), the fathers' meta-analysis reaching P 4.4e-9 (Wright
+  2019). Weaker elsewhere, on the same side each time: in Timmers 2019's million lives the conventional P is only
+  1.4e-6 (genome-wide only in its lipid-informed Bayesian scan, whose P is not counted here); Deelen 2019's 90th and
+  99th percentiles are null (P 0.16 to 0.52, all on the lifespan-raising side); healthspan is nominal (Zenin 2019's
+  summary statistics, P 1.2e-4). The lifespan-raising allele is the rarer one, which lowers LDL cholesterol, so
+  the protection is a presence. The lead is the seed's rs646776 rather than a study's reported SNP: it sits in
+  Pilling's fathers' credible set at PIP 0.11 (the reported SNPs at 0.05 to 0.07) and at r² 0.94 to Wright's lead.
+  The effector is SORT1 by locus-to-gene score (0.99; CELSR2 0.97 also passes); the expression analysis of Timmers
+  2019 names PSRC1, and no colocalisation was read. Age of action is unknown: no cached source gives this locus's
+  own age bands. Timmers 2019's figure source data labels rs4970836's alleles the other way round from its table;
+  the table, the frequencies and the biology agree, and are followed. All four seed rsIDs are one signal here.
+axes:
+  tier: {value: A, cites: [pmid-29227965#q10, pmid-31484785#q13, pmid-31484785#q15, pmid-31484785#q16]}
+  mechanism: {value: heart_vessels, cites: [pmid-30642433#q11, pmid-29227965#q6]}
+  pleiotropy: {values: ["mech:cvd"], cites: [pmid-30642433#q11]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
+            cites: [db-gwascatalog-2025.01.09#q1, pmid-29227965#q10, pmid-31413261#q6, pmid-31413261#q7, pmid-31413261#q8]}
+  actionability: {label: preventable, what: ["act_test:ldl"], who: "act_who:doctor", cites: [pmid-30642433#q11]}
+  context: {values: [eur_only_evidence], cites: [pmid-29227965#q10, pmid-31484785#q13]}
+flags:
+  - {token: "PROTECT:PRESENCE", cites: [pmid-29227965#q11]}
+  - {token: "causal:C2", cites: [db-opentargets-26.09#q29]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q30]}
+  - {token: "ld_proxy_of:rs646776", cites: [db-opentargets-26.09#q29, db-opentargets-26.09#q31]}  # rs602633, rs4970836, rs599839 in the set
+  - {token: "mediator:EFO_0004611", cites: [pmid-30642433#q11]}          # low density lipoprotein cholesterol measurement
+variants:
+  - rsid: rs646776
+    gene: SORT1
+    phenotype: LDL cholesterol and heart disease
+    trait_efo_id: EFO_0007796
+    effect_allele: C
+    effect_size: 0.2234
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: T/T
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA region, the one most people of European ancestry
+          have (about 61 in 100). It is the reference the other versions are compared with, so it neither raises
+          nor lowers your expected lifespan here. The region, on chromosome 1, controls the SORT1 gene in the
+          liver, which helps set LDL cholesterol, the "bad" cholesterol. A standard cholesterol test your doctor
+          can order shows your actual LDL level, which matters far more than this DNA result. The finding comes
+          from people of European ancestry; less is known elsewhere.
+      - genotype: C/T
+        state: protective
+        conclusion: >-
+          You carry one copy of a less common version of this DNA region (about 34 in 100 people of European
+          ancestry do). This version goes with lower LDL cholesterol, the "bad" cholesterol, and in large British
+          and American studies its carriers had parents who lived on average a little over a month longer, most
+          likely through less heart disease. The finding is well established, but the effect is small and it is a
+          tendency, not a guarantee. A standard cholesterol test your doctor can order shows your actual LDL
+          level, which matters far more than this DNA result.
+      - genotype: C/C
+        state: protective
+        conclusion: >-
+          You carry two copies of a less common version of this DNA region (about 5 in 100 people of European
+          ancestry do). This version goes with lower LDL cholesterol, the "bad" cholesterol, and in large British
+          and American studies each copy went with parents living on average a little over a month longer, most
+          likely through less heart disease. The finding is well established, but the effect is small and it is a
+          tendency, not a guarantee. A standard cholesterol test your doctor can order shows your actual LDL
+          level, which matters far more than this DNA result.
+studies:
+  - rsid: rs646776
+    note: pmid-29227965
+    quote: q10
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank)
+    ancestry: [EUR]
+    sample_size: 389166
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "2.7E-08"
+    p_value_num: 2.7e-08
+    effect_size: -0.0150
+    effect_measure: beta
+    effect_unit: Martingale residual of parents' attained age per T allele at the proxy (negative = longer life)
+    effect_allele: T
+    proxy_rsid: rs602633
+    statistical_test: "BOLT-LMM on Martingale residuals of both parents' attained age (Table 2); fathers alone P 3.6E-09, mothers 2.1E-03; T at rs602633 travels with C at rs646776"
+    curator: claude-opus-5-5
+  - rsid: rs646776
+    note: pmid-30642433
+    quote: q11
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the 26 LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 1012240
+    sample_unit: lives
+    stat_significance: suggestive
+    p_value: "1.4E-06"
+    p_value_num: 1.4e-06
+    effect_size: 0.2234
+    effect_measure: beta
+    effect_unit: years of life per copy in self (parental estimate doubled), per G allele at the proxy
+    effect_allele: G
+    proxy_rsid: rs4970836
+    statistical_test: "Conventional (CES) Cox-residual GWAS P from Table 2 source data 2; the Bayes-factor P 1.6E-09 of the lipid- and CAD-informed iGWAS is not counted"
+    curator: claude-opus-5-5
+  - rsid: rs646776
+    note: pmid-31484785
+    quote: q13
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_linear
+    population: AncestryDNA customers of the European population group, fathers born 1886-1940
+    ancestry: [EUR]
+    sample_size: 309383
+    sample_unit: individuals
+    stratum: parent
+    stratum_level: father
+    stat_significance: nominal
+    p_value: "1.66e-03"
+    p_value_num: 0.00166
+    effect_size: 0.010
+    effect_measure: beta
+    effect_unit: z-score of paternal lifespan per G allele at the proxy
+    effect_allele: G
+    direction: protective
+    proxy_rsid: rs599839
+    statistical_test: "Linear regression of fathers' lifespan on offspring dosage, AncestryDNA arm of Table 3; allele from Supplemental Table 8 (pmid-31484785#q14); heterogeneity with the UK Biobank arm P 0.19 (Supplemental Table 9, q15)"
+    curator: claude-opus-5-5
+  - rsid: rs646776
+    note: pmid-31484785
+    quote: q16
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_linear
+    population: AncestryDNA customers of the European population group, mothers born 1886-1940
+    ancestry: [EUR]
+    sample_size: 270548
+    sample_unit: individuals
+    stratum: parent
+    stratum_level: mother
+    stat_significance: nominal
+    p_value: "0.007465"
+    p_value_num: 0.007465
+    effect_size: 0.00868
+    effect_measure: beta
+    effect_unit: z-score of maternal lifespan per G allele at the proxy
+    effect_allele: G
+    direction: protective
+    proxy_rsid: rs599839
+    statistical_test: "Linear regression of mothers' lifespan on offspring dosage, AncestryDNA arm of Supplemental Table 9 (its allele column prints the other allele, A; G as in Supplemental Table 8); heterogeneity with UK Biobank P 0.78"
+    curator: claude-opus-5-5
+  - rsid: rs646776
+    note: pmid-31413261
+    quote: q6
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's 18 discovery cohorts)
+    ancestry: [EUR]
+    n_cases: 11262
+    sample_size: 36745
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.2587"
+    p_value_num: 0.2587
+    effect_size: 1.026
+    effect_measure: OR
+    effect_unit: odds ratio of reaching the 90th percentile, per T allele at the proxy
+    effect_allele: T
+    proxy_rsid: rs602633
+    statistical_test: "Look-up of Pilling's rs602633 in Supplementary Data 1; same side, not nominal; rs4970836 (P 0.20) and rs646776 (P 0.16) agree (q7, q8)"
+    curator: claude-opus-5-5
+  - rsid: rs646776
+    note: pmid-31413261
+    quote: q6
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's 18 discovery cohorts)
+    ancestry: [EUR]
+    n_cases: 3484
+    sample_size: 28967
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.5203"
+    p_value_num: 0.5203
+    effect_size: 1.024
+    effect_measure: OR
+    effect_unit: odds ratio of reaching the 99th percentile, per T allele at the proxy
+    effect_allele: T
+    proxy_rsid: rs602633
+    statistical_test: "Look-up of Pilling's rs602633 in Supplementary Data 1; same side, not nominal; rs4970836 (P 0.31) and rs646776 (P 0.30) agree (q7, q8)"
+    curator: claude-opus-5-5

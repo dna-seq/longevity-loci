@@ -19,8 +19,23 @@ The curator seat's working state, rewritten to the present before a reset (`docs
 - **Ten-row run** (the person via the lead, 639308791 and 639308811), from 6 CELSR2. Per row: commit, `done: <row>;
   compacting` to the lead, `watchdog.sh compact`, end the turn; the lead wakes the next. Stop at 80 % of the 7-day
   window or 95 % of the 5-hour window. After the tenth `done:`: "paused after the ten-row run, on the person's word"
-  into PROGRESS and here, and stop. Don't touch 71 and 67: the lead is reading them adversarially. Rows done in
-  this run: none yet.
+  into PROGRESS and here, and stop. Rows done in this run: 6 CELSR2 (1 of 10). Next by PROGRESS: 38 HLA-DQA1.
+- **Before the next locus: the lead's corrections to 71 and 67**, one commit per row, from its handout (kept at
+  `~/.local/state/agent-seat-blueprints/handouts/session-44d9cb42-a3f8-47e0-b7ab-a8dbd8338890/delivered/20261110T234346Z-review-71-67.md`;
+  read it whole). In short: B stands at both because a powered non-replication in an independent sample
+  (AncestryDNA) is red-flag heterogeneity, the lead's rule for both; rewrite each verdict_reason to that; Wright's
+  studies become `parental_lifespan_linear`, quoted heterogeneity; 71: Pilling's proxy C is the risk allele
+  (`direction: risk`), healthspan 0 from Zenin's SD15 quoted, autoimmune/CVD direction words quoted or dropped,
+  per-copy parental months; 67: settle the E3 gene rule with the advisor (then apply at 57 too), age UNKNOWN or
+  INFERRED, Pilling's fathers N about 415000, unquoted values quoted from the cached supplements or moved to prose,
+  "parents" not "fathers".
+- Tools: `uv run loci fetch-supp KEY LOCATOR` caches a supplement as text (RM4; quotable under a `supplement`
+  reading); it refuses a `.gz` (Zenin's deposit, Zenodo 1302861), so 6's healthspan rests on a db note,
+  `db-gwascatalog-2025.01.09`, read with the scratch `tbx.py URL.gz CHR START END RSID...` (a remote tabix
+  region read). Open Targets' lifespan sets at a locus: `ot.py VARIANT` lists every set the variant is in; filter
+  by trait (the four-study `otstudy.py` misses Pilling's fathers GCST006701 and Wright's GCST009450).
+- Rules settled on 6: a seed lead that sits in a lifespan credible set stays the lead even when no study reports
+  it; a Bayes-factor P (Timmers' iGWAS) is never the study's P; age with no locus-own age bands is UNKNOWN.
 - The scout's queue: pmid-42928374 (FURIN, pleiotropy with mental disorders) waits for locus 81; read it then.
 
 ## Pilot (five rows, from 2026-11-10)

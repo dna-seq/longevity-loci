@@ -178,3 +178,37 @@ rs17613838 (Wright 2019's), r² 0.99 to the lead: `ld_proxy_of:rs61905747`.
 
 The top locus-to-gene score (next ZW10 0.20): below 0.5, `effector:E3`. Timmers 2020's SMR names USP28, ANKK1 and
 TTC12 (pmid-32678081#q7), none by colocalisation.
+
+## Reading 2026-11-11, record
+
+Variant 1_109275908_C_T (rs646776, CELSR2/PSRC1/SORT1), `alleleFrequencies`, of the alternative allele T (the
+LDL-raising, lifespan-lowering one):
+
+> [q28] nfe_adj 0.7783743233702047
+
+T is about 78% in non-Finnish Europeans, C 22%: T/T about 61%, C/T 34%, C/C 5%. T is 65% in African and 94% in East
+Asian gnomAD samples.
+
+Credible set 1a658d9fd8f8e98913ab45551589adde, study GCST006701 (Pilling 2017, fathers' attained age), SuSiE-inf,
+ten members, lead 1_109274570_A_G (rs7528419, PIP 0.23; rs12740374 0.14):
+
+> [q29] 1_109275908_C_T posteriorProbability 0.11315562079530557
+
+rs646776 holds PIP 0.11 in the set: `causal:C2`. rs602633 (Pilling's reported lead), rs4970836 (Timmers 2019's)
+and rs599839 (Wright 2019's) are all members of the same set (PIP 0.054, 0.065 and 0.056): one signal,
+`ld_proxy_of:rs646776`. Neither Timmers 2019's GCST009890, Timmers 2020's GCST011100, Pilling's combined
+GCST006697 nor Zenin's healthspan GCST007406 has a set in this window. Many lipid, CAD and other sets cover the
+same variants; none was used.
+
+> [q30] SORT1 0.9894455075263977
+
+The locus-to-gene score of SORT1 on that set (next CELSR2 0.97, PSRC1 0.29). Both SORT1 and CELSR2 pass 0.5;
+SORT1 is the top score, and no colocalisation was read: `effector:E2`, SORT1.
+
+Credible set 09f4c8bb0fa06f0fbcc55b6e0cc7957b, study GCST009450 (Wright 2019's AncestryDNA-UK Biobank fathers'
+meta-analysis), PICS, ten members, lead 1_109279544_G_A (rs599839):
+
+> [q31] 1_109275908_C_T r2Overall 0.940787220652168
+
+rs646776, r² 0.94 to Wright's lead rs599839 (PIP 0.080); rs602633 is at r² 0.94 too (PIP 0.078). L2G SORT1 0.99
+on this set as well.
