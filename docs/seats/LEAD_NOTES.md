@@ -46,15 +46,14 @@ in the machine's `slurm.toml`, the `JOB_PREFIX` env override dropped (the driver
   (e138b73).
 - Cluster orientation from metabonet's rigger: the runner's now; it reads it from the rigger at its first seating.
 
-## The five-row pilot (2026-11-10, done; paused on the person's word)
+## The five-row pilot (2026-11-10, done)
 
-Done 21:57 to 22:33 UTC: 93 LDLR and 80 CHRNB4 and 57 CDKN2B-AS1 tier A kept, 71 ATXN2 and 67 TTC12 tier B, down
-from the seed's A. The cost is in `docs/PACING.md` (ba362ae). What broke is in the curator's notes under "Pilot".
-The lead's share is RM4 (supplements in the cache) and RM5 (small format fixes), both paused. Waiting on the person:
-a look at the two re-tiers, the rate (the share of the 7-day window curation may take), and three gaps in the
-requirements the curator filled by judgement: no actionability label for a trade-off (`descriptive` written), what
-`gene` holds at E3 (the top L2G gene written), and no outcome value for "tested, no estimate read" (`untested`
-written). The module seat sleeps until told.
+93 LDLR, 80 CHRNB4 and 57 CDKN2B-AS1 stayed tier A; 71 ATXN2 and 67 TTC12 went to B, down from the seed's A. What
+broke is in the curator's notes under "Pilot". The measurements stay out of the repository (the person,
+2026-11-11: "Keep pacing/quota measures uncommited, only rules commited"); the rules they gave are in the curator's
+priming (9135a65). The person's answers, 2026-11-11: up to 80% of the weekly window; a re-tier is the lead's to
+read adversarially, not a question; RM4 yes, "as deep as neeed"; the requirements' silent cells by the advisor
+pattern. In hand: the self-compaction test with the curator, the adversarial read of 71 and 67, RM4 and RM5.
 
 ## Plan
 

@@ -5,7 +5,6 @@ Newest first.
 ## Unreleased
 
 - The curator compacts itself after each row, stops at 80% of the 7-day quota window, reads supplements, figures, code and data deposits as deep as a row needs, and settles the requirements' silent cells with the advisor; the lead reads a re-tiered row adversarially instead of asking the person.
-- `docs/PACING.md`: what a curated row costs in model use, from the five-row pilot (about 0.75M weighted tokens a row, 13 rows an hour), read against the account's quota windows.
 - A row may fold in the other seed ids that name its signal (`also_loci`), filed under the lowest; a second row for one of them is a duplicate (D14).
 - A nominal replication look-up supports a tier A/B row on its effect allele, its `direction` (a new study field) and its p, without an effect size; a genome-wide study still owes all five of §6.3's fields (D13).
 - A database release can be cited: a `corpus/db-<database>-<release>.md` note, cited from an axis or a flag; its quotes are unknown to `check quotes` until a fetcher caches the record (D12).
