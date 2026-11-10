@@ -46,6 +46,17 @@ in the machine's `slurm.toml`, the `JOB_PREFIX` env override dropped (the driver
   (e138b73).
 - Cluster orientation from metabonet's rigger: the runner's now; it reads it from the rigger at its first seating.
 
+## The five-row pilot (2026-11-10, in hand)
+
+The person: "1a, 2a, 3 no ... do first 5 rows this way and see what breaks ... measure quota climb for this job
+(intergral, ballpark) to understand how to pace this properly, how many rows per hour to do and how to throttle.
+Module seat sleeps this time. Once done pause". 1a landed as D13 (9f4c886), 2a as D14 (0f8c866), and 3 was
+recorded in D13. The curator is doing 93, 80, 57, 71 and 67, one commit and one `done:` per row, and pauses after
+the fifth. The module seat is asleep. The lead measures each row's tokens from the curator's transcript (and its
+subagents) between row commits, and the account's quota windows sampled every 5 minutes. The quota reading
+changed account mid-evening, its windows' resets moved, so tokens are the primary measure and the percentage is
+read only where one account holds. After the fifth row the lead reports to the person and pauses too.
+
 ## Plan
 
 RM1 the export (after the compiler's 0.8 cut, the registry deploy and the plugin's release). RM2 landed
