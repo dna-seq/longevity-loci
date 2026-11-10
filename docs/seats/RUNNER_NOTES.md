@@ -22,6 +22,5 @@ None.
 ## To file
 
 - kit #398, the take refused for a seat the clone declares: filed by the lead, nothing more to add here.
-- kit: the runner role's `job-watch` command (`until-event.sh -- env JOB=<id> bash watch-job.sh`) wakes at once on
-  watch-job's own "watch armed" line; it needs `--skip 'watch armed| RUNNING on '` (the RUNNING transition wakes it too). Seen 2026-11-10 on job 6428266. To file,
-  unattended.
+- kit #410 filed 2026-11-10: the `job-watch` recipe wakes on watch-job's armed and RUNNING lines. Meanwhile arm with
+  `until-event.sh --skip 'watch armed| RUNNING on ' -- env JOB=<id> LOG=<log> bash …/watch-job.sh`.
