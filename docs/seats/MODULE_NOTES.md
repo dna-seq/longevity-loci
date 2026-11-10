@@ -44,8 +44,12 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
 
 ## Registry
 
-- Polygon (test): HTTP 502 at 2026-11-10 ~20:24 UTC (`registry_health`: reachable false, mode null; unknown, not
-  a pass). Known since 14:58 UTC; the registry's lead has asked the maintainer.
+- Polygon (test): answers again by 2026-11-11 (the liaison, 639307944; ledgers 438d527): registry 0.28.5, mode
+  test, serving format 0.8.0. The plugin's 0.7.1 gets 409 on every publish, validate, check and download; reads
+  work. No rehearsal is possible until the plugin moves to 0.8, token or not (desk #251 updated so).
+- Enrich's GWAS pass is broken in every installable enricher (compiler RM428, high): 0.7.3 gets 410 from the
+  retired GWAS Catalog v1, 0.8.x sends a page size v2 refuses. An empty GWAS result from `enrich_module` is
+  unknown, never "no associations".
 - No test token on this machine. Asked of the person; never read from a file, never minted by this seat.
 - No rehearsal yet.
 
