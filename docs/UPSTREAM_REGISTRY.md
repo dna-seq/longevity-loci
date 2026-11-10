@@ -15,7 +15,7 @@ file): `[seat.liaison.watch.registry]` says each new tag.
 first runs against becomes the mark. The latest tag when this ledger began (2026-11-05) was `v0.27.0`.
 Tags since, unread (nothing here uses the registry yet): `v0.27.1`, `v0.28.0` to `v0.28.4`; 0.28 is the registry on
 the compiler's 0.8. On 2026-11-09 production still served registry 0.27.0, format 0.7.1, compiler 0.7.2, and the
-test instance (the polygon) answered HTTP 502. Both serving format 0.8 is what the plugin's move past `<0.8`
+test instance (the polygon) answered HTTP 502; still 502 on 2026-11-10 at about 20:24 UTC, from the module seat's `registry_health(target=test)` (mode and contract unknown), so no rehearsal yet; already known upstream, nothing to file. Both serving format 0.8 is what the plugin's move past `<0.8`
 waits on.
 
 ## Backlog
