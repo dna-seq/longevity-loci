@@ -40,9 +40,9 @@ in the machine's `slurm.toml`, the `JOB_PREFIX` env override dropped (the driver
 
 ## Open with the person (2026-11-10)
 
-- The seat-builder's handout: the scout's two changes landed (0015408, "b - yes"). The lead's own line,
-  `duties = "job-reconcile job-watch run-log correctness-gates facts-to-rigger"`, waits: the person asked for an
-  elaboration first, given in their session.
+- The seat-builder's handout: the scout's two changes landed (0015408, "b - yes"); of the runner's job duties the
+  lead took `facts-to-rigger` only (aae8478, "on facts - yes, go"). job-reconcile, job-watch, run-log and
+  correctness-gates were explained and not taken; offer them again when batch jobs become regular.
 - Cluster orientation from metabonet's rigger taken into the session's private memory (machine facts, not
   committed). Until the person sets this repository's CPU share, at most 16 cores of CPU work on the lab account.
 
