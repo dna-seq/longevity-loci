@@ -12,17 +12,9 @@ of the researchers".
 - **The code the research seats work through**: the format of a curated row and of an evidence note, the
   scripts that check them (a row's every claim cites a note; a note's every quote is verbatim from its source),
   the export of curated rows to the module seat, and the cache of article texts outside git.
-- **The cluster's apparatus**: the batch jobs the research seats need (a bulk fetch of articles, an index over the
-  corpus, the module's compile at scale), each submitted with the repository's job prefix and watched by the kit's
-  `drivers/slurm/watch-job.sh` through `until-event.sh`, so a job's end wakes the seat that started it. The
-  cluster's facts are the machine file `~/.config/agent-seat-blueprints/slurm.toml`, never the repository: the kit's
-  `drivers/slurm/` reads them, and metabonet's checkout on the same cluster is the worked example.
-  **The runner's duty `facts-to-rigger`** (the kit's `classes/runner/RUNNER.md`, a loose duty in this seat's table):
-  at start, the rigger's orientation and this repository's CPU share are read; a cluster fact found by trial (a
-  refused partition, a limit, a missing tool, a proxy quirk) goes to metabonet's rigger the same turn, dated, with the
-  command that showed it, and stays in this seat's notes until the rigger's inventory has it. A CPU burst over 16 cores
-  on the lab account is claimed with the rigger first, and over 32 waits for its answer. The person, 2026-11-10: "on
-  facts - yes, go"; the rigger's handout of the same day set the claims. Agreed: nothing checks it.
+- **Not the cluster's jobs**: the batch jobs (bulk fetches, an index over the corpus, the module's compile at scale)
+  are the runner seat's (`docs/seats/RUNNER.md`); the lead builds the code they run. The person, 2026-11-10: "I
+  suggest you add a runner seat to this repo and keep to your set".
 - **The layout**, written once in `CLAUDE.md` and kept there: where the rows, the corpus, the scout's queue and
   the module's spec live. The other seats' texts name `rows/`, `corpus/`, `scout/` and `module/` as defaults;
   a change to them is this seat's, and it updates those texts by the kit's skill `change-priming`.

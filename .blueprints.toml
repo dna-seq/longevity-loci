@@ -16,9 +16,7 @@ pinned = true
 # The person's coding sessions here (docs/seats/LEAD.md): the repository's code, built for the three research
 # seats; the plan; the releases. The compiler's, the registry's and the module-creator's leads may wake it (upstream lead
 # to lead).
-wake_from = "longevity-loci/curator longevity-loci/scout longevity-loci/module longevity-loci/liaison just-dna-compiler/lead just-dna-registry/lead just-module-creator/lead */secretary"
-# A loose duty of the runner role (kit D181): cluster facts read from and taught to the rigger (the person, 2026-11-10).
-duties = "facts-to-rigger"
+wake_from = "longevity-loci/curator longevity-loci/scout longevity-loci/module longevity-loci/liaison longevity-loci/runner just-dna-compiler/lead just-dna-registry/lead just-module-creator/lead */secretary"
 
 [seat.lead.watch.desk]
 cmd = "sh kit:bin/py.sh kit:classes/desk/watch-answers.py longevity-loci lead"
@@ -28,17 +26,13 @@ cmd = "sh kit:bin/py.sh kit:classes/desk/watch-answers.py longevity-loci lead"
 [seat.lead.watch.plan]
 cmd = "sh kit:bin/py.sh kit:classes/lead/plan-watch.py --plan docs/ROADMAP.md"
 
-# The partition's nodes, one line per state change: the lead runs the batch jobs the research seats need.
-[seat.lead.watch.nodes]
-cmd = "sh kit:drivers/slurm/watch-nodes.sh"
-
 [seat.lead.zulip]
 pool = "~/.config/agent-seat-blueprints/zulip/pool"
 
 [seat.curator]
 # Re-curates the module's evidence row by row (docs/seats/CURATOR.md): each locus's studies read, the extended
 # row and its evidence written. The scout hands it new papers; the module seat asks it about a row.
-wake_from = "longevity-loci/lead longevity-loci/scout longevity-loci/module */secretary"
+wake_from = "longevity-loci/lead longevity-loci/scout longevity-loci/module longevity-loci/runner */secretary"
 
 [seat.curator.watch.desk]
 cmd = "sh kit:bin/py.sh kit:classes/desk/watch-answers.py longevity-loci curator"
@@ -53,7 +47,7 @@ pool = "~/.config/agent-seat-blueprints/zulip/pool"
 [seat.scout]
 # Watches the literature (docs/seats/SCOUT.md): searches of recent years, track by track, each new paper that
 # bears on a locus queued for the curator, a locus the module lacks proposed to the module seat.
-wake_from = "longevity-loci/lead longevity-loci/curator longevity-loci/module */secretary"
+wake_from = "longevity-loci/lead longevity-loci/curator longevity-loci/module longevity-loci/runner */secretary"
 # A quiet seat (kit D159): its sweeps are unattended by design, so the person away or back tells it nothing it
 # needs (the seat-builder's handout, 2026-11-10; the person: "b - yes").
 presence = false
@@ -67,7 +61,7 @@ pool = "~/.config/agent-seat-blueprints/zulip/pool"
 [seat.module]
 # Builds the annotation module from the curated rows (docs/seats/MODULE.md), on the module-creator plugin's
 # tools; rehearses each version on the registry's test instance. The curator and the scout talk to it.
-wake_from = "longevity-loci/lead longevity-loci/curator longevity-loci/scout longevity-loci/liaison */secretary"
+wake_from = "longevity-loci/lead longevity-loci/curator longevity-loci/scout longevity-loci/liaison longevity-loci/runner */secretary"
 
 [seat.module.watch.desk]
 cmd = "sh kit:bin/py.sh kit:classes/desk/watch-answers.py longevity-loci module"
@@ -77,6 +71,23 @@ cmd = "sh kit:bin/py.sh kit:classes/desk/watch-answers.py longevity-loci module"
 cmd = "sh kit:drivers/git/watch-remote.sh --path rows/"
 
 [seat.module.zulip]
+pool = "~/.config/agent-seat-blueprints/zulip/pool"
+
+# The runner (docs/seats/RUNNER.md): this repository's batch jobs on the cluster, for the research seats (the
+# person, 2026-11-10: "I suggest you add a runner seat to this repo and keep to your set").
+[seat.runner]
+roles = "runner"
+presence = false
+wake_from = "longevity-loci/lead longevity-loci/scout longevity-loci/curator longevity-loci/module */rigger */secretary"
+
+[seat.runner.watch.desk]
+cmd = "sh kit:bin/py.sh kit:classes/desk/watch-answers.py longevity-loci runner"
+
+# The partition's nodes, one line per state change: the runner submits the batch jobs the research seats need.
+[seat.runner.watch.nodes]
+cmd = "sh kit:drivers/slurm/watch-nodes.sh"
+
+[seat.runner.zulip]
 pool = "~/.config/agent-seat-blueprints/zulip/pool"
 
 [seat.liaison]

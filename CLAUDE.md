@@ -104,6 +104,7 @@ rows/        a curated row per locus, <locus_id>-<locus_name>.yaml; rows/PROGRES
 corpus/      an evidence note per article, <key>.md (pmid-<PMID>, or doi-<DOI> for a preprint)
 scout/       SEARCHES.md (the searches, by track) and queue.md (new papers waiting for a row)
 module/      the module's spec directory (module_spec.yaml and its tables), the module seat's
+runs/        the runner seat's LOG.md (one entry per batch job) and STATUS.md (what runs now, what is queued)
 src/longevity_loci/   the formats' models and the checks (`loci`)
 tests/       pytest, on the fixtures in assets/
 assets/      fixtures that travel: one example row and one note

@@ -28,7 +28,7 @@ mediated loci since. The scout keeps the module current: what is published now r
 The next track (A to K, `docs/longevitymap_v2/evidence/`) whose last run is oldest, searched from that date: PubMed,
 Europe PMC, the preprint servers, the GWAS Catalog, through the kit's `mine-sources` skill and the literature tools.
 A sweep with nothing new is one dated line in the ledger. Bulk full texts are never fetched in a sweep: a list of
-PMIDs goes to the lead, who runs the fetch (`loci fetch`) as a batch job and tells this seat when it ends.
+PMIDs goes to the runner seat, which runs the fetch (`loci fetch`) as a batch job and tells this seat when it ends.
 
 ## Duty: query-ledger — every search reproducible
 
