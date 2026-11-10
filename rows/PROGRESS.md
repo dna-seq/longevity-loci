@@ -19,8 +19,9 @@ mechanical consensus of the research tracks, to be confirmed or overturned by th
 
 ## In hand
 
-Nothing. **Paused after the five-row pilot, on the person's word** (2026-11-10: 93 LDLR, 80 CHRNB4, 57 CDKN2B-AS1,
-71 ATXN2, 67 TTC12, one commit each). No sixth row until the person says go; next in order then: 6 CELSR2.
+A ten-row run, on the person's word (2026-11-11, via the lead, 639308811: "go with next 10 measurement on
+andjusted scenario, remeasure"), from 6 CELSR2 in the order below: one commit, a `done:` and a compaction per row,
+stopping at 80 % of the 7-day window. After the tenth: paused again until the person says go.
 
 ## Next: seed tier A (11)
 

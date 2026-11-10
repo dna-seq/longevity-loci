@@ -14,11 +14,13 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   look-up with P and direction but no effect size may support (§6.3); until then CHARGE-EU 90+ stays
   not_significant with the reason in its statistical_test. Also with the person: the duplicate seed loci
   (8/157, 25/158, 132/133/153), skipped until answered. Rows get no changelog line.
-- **Paused after the five-row pilot, on the person's word.** All five done (below); no sixth row until the person
-  says go. Next then, by PROGRESS: 6 CELSR2, 38 HLA-DQA1.
-- 2026-11-11, compaction test (the person, via the lead, 639307472: "compress itself after each row"): notes made
-  current, then `watchdog.sh compact`. After it: send the lead a `done:` (did it run; seat, pilot and pause still
-  known; anything missing). Still paused; no sixth row. Final pilot report sent as 639296521; last commit dfcee8c.
+- The compaction test ran (2026-11-11, 23:28Z): the session came back holding the seat and knowing the pilot;
+  nothing woke it afterwards, so the lead wakes it after each row until kit #409 lands. Reported as 639308908.
+- **Ten-row run** (the person via the lead, 639308791 and 639308811), from 6 CELSR2. Per row: commit, `done: <row>;
+  compacting` to the lead, `watchdog.sh compact`, end the turn; the lead wakes the next. Stop at 80 % of the 7-day
+  window or 95 % of the 5-hour window. After the tenth `done:`: "paused after the ten-row run, on the person's word"
+  into PROGRESS and here, and stop. Don't touch 71 and 67: the lead is reading them adversarially. Rows done in
+  this run: none yet.
 - The scout's queue: pmid-42928374 (FURIN, pleiotropy with mental disorders) waits for locus 81; read it then.
 
 ## Pilot (five rows, from 2026-11-10)
