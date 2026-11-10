@@ -17,6 +17,12 @@ of the researchers".
   `drivers/slurm/watch-job.sh` through `until-event.sh`, so a job's end wakes the seat that started it. The
   cluster's facts are the machine file `~/.config/agent-seat-blueprints/slurm.toml`, never the repository: the kit's
   `drivers/slurm/` reads them, and metabonet's checkout on the same cluster is the worked example.
+  **The runner's duty `facts-to-rigger`** (the kit's `classes/runner/RUNNER.md`, a loose duty in this seat's table):
+  at start, the rigger's orientation and this repository's CPU share are read; a cluster fact found by trial (a
+  refused partition, a limit, a missing tool, a proxy quirk) goes to metabonet's rigger the same turn, dated, with the
+  command that showed it, and stays in this seat's notes until the rigger's inventory has it. A CPU burst over 16 cores
+  on the lab account is claimed with the rigger first, and over 32 waits for its answer. The person, 2026-11-10: "on
+  facts - yes, go"; the rigger's handout of the same day set the claims. Agreed: nothing checks it.
 - **The layout**, written once in `CLAUDE.md` and kept there: where the rows, the corpus, the scout's queue and
   the module's spec live. The other seats' texts name `rows/`, `corpus/`, `scout/` and `module/` as defaults;
   a change to them is this seat's, and it updates those texts by the kit's skill `change-priming`.

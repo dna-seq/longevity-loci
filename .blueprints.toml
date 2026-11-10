@@ -17,6 +17,8 @@ pinned = true
 # seats; the plan; the releases. The compiler's, the registry's and the module-creator's leads may wake it (upstream lead
 # to lead).
 wake_from = "longevity-loci/curator longevity-loci/scout longevity-loci/module longevity-loci/liaison just-dna-compiler/lead just-dna-registry/lead just-module-creator/lead */secretary"
+# A loose duty of the runner role (kit D181): cluster facts read from and taught to the rigger (the person, 2026-11-10).
+duties = "facts-to-rigger"
 
 [seat.lead.watch.desk]
 cmd = "sh kit:bin/py.sh kit:classes/desk/watch-answers.py longevity-loci lead"
