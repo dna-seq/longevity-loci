@@ -13,7 +13,7 @@ Seated 2026-11-10 (account seat-10). The first-seating handout is done:
 
 ## Running jobs
 
-None, so no watcher is armed.
+- 6428266 `ll-fetch-supp-zenin`, for the curator; watcher armed (until-event, --skip "watch armed| RUNNING on ").
 
 ## Cluster facts sent to the rigger and not yet in its inventory
 
@@ -22,3 +22,6 @@ None.
 ## To file
 
 - kit #398, the take refused for a seat the clone declares: filed by the lead, nothing more to add here.
+- kit: the runner role's `job-watch` command (`until-event.sh -- env JOB=<id> bash watch-job.sh`) wakes at once on
+  watch-job's own "watch armed" line; it needs `--skip 'watch armed| RUNNING on '` (the RUNNING transition wakes it too). Seen 2026-11-10 on job 6428266. To file,
+  unattended.
