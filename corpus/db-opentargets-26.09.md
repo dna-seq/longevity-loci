@@ -1862,16 +1862,16 @@ here. For row 33.
 > [q515] data.variant.credibleSets.rows[20].study traitFromSource Skin cancer projectId GCST
 
 rs12203592 (6_396321_C_T) is in 381 credible sets (q496; four pages, `variant-sets-6_396321_C_T.json` and `-p1` to
-`-p3`). Three are the row's own claim's (D17.2): Zenin's healthspan (GCST007406), SuSiE-inf, the variant alone at PIP
+`-p3`). Three are the row's own claim's (D17.2): in the first file, Zenin's healthspan (GCST007406), SuSiE-inf, the variant alone at PIP
 1.00 and itself the set's lead (q497 to q500), so the set's beta 0.0197 per T is the variant's own, on Open Targets'
-scale; Timmers 2020's multivariate ageing set (GCST011100), PICS, PIP 1.00, no beta (q504, q505); Rosoff 2023's
+scale; in the first file too, Timmers 2020's multivariate ageing set (GCST011100), PICS, PIP 1.00, no beta (q504, q505); in `-p2`, Rosoff 2023's
 mvAge set (GCST90321079), PICS, PIP 0.99, T −0.0108 (q506, q507). Locus-to-gene: IRF4 0.79 on the healthspan set,
 DUSP22 next at 0.08 (q501 to q503); 0.80 and 0.85 on the other two (the files). The rest are pigmentation, tanning
-(Low tan response, PIP 1.00, q511, q512), skin cancers (non-melanoma skin cancer PIP 0.99, q513, q514; skin cancer,
+(Low tan response, PIP 1.00, T beta 0.545 as the set's lead, q511, q512; first file), skin cancers (non-melanoma skin cancer PIP 0.99, q513, q514; skin cancer,
 q515; squamous cell, keratinocyte, melanoma), blood cell counts, retinal-image embeddings, facial ageing, puberty
 timing and IRF4's own QTLs.
 
 QTL colocalisation of the healthspan set (`coloc-qtl-3ebe7ef9958b5c249ce68244b0d819a2.json`; the two multivariate
 sets give the same list): 114, all at H4 ≥ 0.8 (q508). 109 are IRF4 (60 eQTL, 18 sQTL, 31 transcript-usage QTL, e.g.
-q509); one each are UK Biobank pQTLs of KIT (q510), GPNMB, JCHAIN, CD5L and DSG4, proteins encoded off chromosome 6,
-so trans, which D24 does not count. IRF4: L2G ≥ 0.5 plus cis-QTL colocalisation, E1. For row 35.
+q509); one each are UK Biobank pQTLs of KIT (q510), GPNMB, JCHAIN, CD5L and DSG4, each 1 of 114, under
+D24's tenth. IRF4: L2G ≥ 0.5 plus cis-QTL colocalisation, E1. For row 35.

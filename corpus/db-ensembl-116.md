@@ -826,4 +826,16 @@ Zenin's 157,820,602 the GRCh37 one, both tied by the rsID on their lines. For ro
 rs12203592 (`variation-rs12203592.json`): an intron variant (q225) at GRCh38 6:396,321, the same coordinate as GRCh37's
 (q226), C ancestral. T: 0.116 in 1000 Genomes Europeans (q227), 0.168 in gnomAD non-Finnish Europeans (q228), 0.026
 in Finns (q229), 0.0006 in East Asians (q230), 0.033 in Africans (q231); 0.21 in the British samples (Zenin, Timmers).
-T is a north-west European allele; elsewhere almost everyone is C/C. For row 35.
+T is commonest in north-west Europe; it is 0.078 in gnomAD's admixed Americans (q232), and in East and South Asians
+almost everyone is C/C. For row 35.
+
+## Reading 2026-11-11, record
+
+> [q232] populations[5] frequency 0.07789 allele_count 1192 population gnomADg:amr allele T
+
+> [q233] [0] r2 0.146242 variation1 rs12203592 d_prime 0.724712 population_name 1000GENOMES:phase_3:CEU variation2 rs11242982
+
+rs12203592's T in gnomAD's admixed Americans, 0.078 (q232): about 15 in 100 carry a copy. Pairwise LD in 1000
+Genomes CEU with the three Wright 2019 S9 SNPs near it (`ld-ceu-rs12203592-*.json`): rs11242982 r² 0.15, D′ 0.72
+(q233); rs9378774 and rs1540767 return no pair (no text cached; Ensembl's floor), so neither is shown to tag the lead.
+For row 35.

@@ -736,10 +736,21 @@ proxies (Deelen's rs9313772 and rs11953630) and in Open Targets' sets. For row 3
 
 > [q221] _embedded.associations[25].snp_effect_allele[0] rs12203592-?
 
-rs12203592's 232 associations over three pages (`associations-rs12203592.json`, `-p1`, `-p2`). Verma's UK Biobank
+rs12203592's 232 associations over three pages (`associations-rs12203592.json`, `-p1`, `-p2`). From the first file: Verma's UK Biobank
 and Million Veteran phenome-wide skin cancer results put C on the lower side: squamous cell carcinoma β 0.461 "unit
-decrease" per C, P 10⁻²⁰⁷ (q214 to q216), and the same shape for basal cell carcinoma, melanoma and skin cancer on page
-one (rows 15, 20, 22). Rosoff 2023's mvAge: C "unit increase", 0.0108, P 7 × 10⁻¹² (q217, q218). Timmers 2020's
-multivariate ageing GWAS: C at 0.81, P 8 × 10⁻²⁶, no beta or direction (q219). Höglinger 2011's progressive
+decrease" per C, P 10⁻²⁰⁷ (q214 to q216), and the same shape for basal cell carcinoma, melanoma and skin cancer in the same
+file (rows 15, 20, 22). From `-p1`: Rosoff 2023's mvAge, C "unit increase", 0.0108, P 7 × 10⁻¹² (q217, q218). Timmers 2020's
+multivariate ageing GWAS: C at 0.81, P 8 × 10⁻²⁶, no beta or direction (q219). From `-p2`: Höglinger 2011's progressive
 supranuclear palsy: OR 1.48 at P 6 × 10⁻¹⁵, the allele unstated (q220, q221; the frequency 0.19 would fit T, not
 read as such). The Catalog holds no association from Zenin 2019 for this SNP. For row 35.
+
+## Reading 2026-11-11, record
+
+> [q222] _embedded.associations[46] association_id 104179443 risk_frequency 0.14065 pvalue_description  pvalue_mantissa 7 pvalue_exponent -40 multi_snp_haplotype false snp_interaction false range [0.39-0.53] beta 0.458651 unit increase p_value 6.9999999999999995e-40 accession_id GCST90255685 pubmed_id 36672889 first_author Farre X
+
+> [q223] _embedded.associations[46].reported_trait[0] Freckles
+
+> [q224] _embedded.associations[46].snp_effect_allele[0] rs12203592-T
+
+In `associations-rs12203592-p1.json` (the second page): Farré's freckles, T "unit increase", β 0.459, P 7 × 10⁻⁴⁰
+(q222 to q224). T goes with more freckling. For row 35.

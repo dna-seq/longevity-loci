@@ -1,14 +1,14 @@
 # The seed list's locus 35, IRF4 (6p25.3; the seed's genes "IRF4; IRF4/EXOC2"). Curated 2026-11-11, the fourth run's
 # first row. Lead rs12203592 (Zenin 2019's healthspan SNP, Table 2), the seed's only rsID here: an intron variant of
 # IRF4, at the same coordinate in GRCh37 and GRCh38. T 0.21 in the British samples, 0.12 in 1000 Genomes Europeans,
-# 0.03 in Finns and Africans, almost absent in East Asians. In Zenin's, Timmers 2019's and Deelen 2019's summary
+# 0.03 in Finns and Africans, 0.08 in admixed Americans, almost absent in East and South Asians. In Zenin's, Timmers 2019's and Deelen 2019's summary
 # statistics at the lead itself; in Rosoff 2023's mvAge tables. No other row's lead lies near it.
 locus_id: 35
 locus_name: IRF4
 verdict: re-tiered
 verdict_reason: >-
-  Tier A, up from the seed's B, on D16's reading of §4.1 (a healthspan locus is tiered as any other once a lifespan
-  study co-occurs), put to the lead. Each criterion: (1) genome-wide for healthspan in 300,447 British UK Biobank
+  Tier A, up from the seed's B, on D16's reading of §4.1 (with a co-occurring lifespan study "a genome-wide
+  healthspan locus is tiered by §4.1 as any other", and D16 names this locus), put to the lead. Each criterion: (1) genome-wide for healthspan in 300,447 British UK Biobank
   participants: C, the common allele, delays the end of healthspan (Zenin 2019, T β 0.063 on the log hazard per
   allele, P 1.8e-25 after genomic control, the paper's own call, D17.3). (2) Independent replication, the same allele
   and direction: in 96,313 other UK Biobank participants, checked for no kinship with the discovery set, β 0.043,
@@ -20,7 +20,9 @@ verdict_reason: >-
   Biobank part is the same people as Zenin's, so it co-occurs but does not replicate; it is this locus's own (D17.1):
   the lead is the healthspan set's only member, and no other row's lead is near. D22.2's "replicates nothing on its
   own" is read as met: the healthspan replication sits beside a lifespan study. If the lead reads D22.2 to ask a
-  scoring-class replication outside UK Biobank for A, the row is B: none reaches p < 0.05 (below). The
+  scoring-class replication outside UK Biobank for A, the row is B: of those, only Deelen tested the lead, short of
+  0.05 (below); LifeGen's own arm leans to C (the file's "--") but prints no P of its own, and AncestryDNA's mothers
+  (Wright 2019) hold no tag of the lead (the nearest, rs11242982, r² 0.15), so untested there, not null. The
   oldest ages lean to C and do not pass: Deelen 2019's 90th and 99th percentiles, OR per C 1.05 and 1.07 (P 0.13,
   0.15). Calibrated from LifeGen's beta1 (D25.3), the 90th has one-sided power 0.77 by the APOE factor
   (heterogeneity P 0.48) and 0.26 by the mean factor (0.63): no red flag either way, and exceptional survival is 0.
@@ -36,19 +38,19 @@ verdict_reason: >-
   itself tested. The seed's trade-off has no quoted harm of C (D18.1): puberty-timing sets are no harm, and
   progressive supranuclear palsy's allele is unstated. Causal C1: Zenin's SuSiE-inf healthspan set holds the lead
   alone at PIP 1.00 (the multivariate sets, PICS, likewise). Effector E1, IRF4: locus-to-gene 0.79 and 109 of 114 QTL
-  colocalisations of the healthspan set are IRF4's (eQTL, sQTL, transcript usage); the other five are single pQTLs of
-  proteins encoded on other chromosomes, trans, not counted (D24). The protection is the absence of the risk allele T
-  (the common C protects). Age of action is unknown. Evidence is European only, and T is a north-west European
-  allele: elsewhere almost everyone is C/C.
+  colocalisations of the healthspan set are IRF4's (eQTL, sQTL, transcript usage); the other five are single pQTLs, each
+  under D24's tenth. The protection is the absence of the risk allele T
+  (the common C protects). Age of action is unknown. Evidence is European only; T is commonest in north-west Europe,
+  0.08 in admixed Americans, and almost absent in East and South Asians.
 axes:
-  tier: {value: A, cites: [pmid-30729179#q53, pmid-30729179#q55, pmid-30729179#q57, pmid-30729179#q12, pmid-30729179#q13, pmid-30729179#q29, pmid-30642433#q98, pmid-30729179#q56, pmid-31413261#q90, pmid-31413261#q91, pmid-30642433#q92, pmid-37550455#q37, db-gwascatalog-2026.10.29#q219, db-opentargets-26.09#q499]}
+  tier: {value: A, cites: [pmid-30729179#q53, pmid-30729179#q55, pmid-30729179#q57, pmid-30729179#q12, pmid-30729179#q13, pmid-30729179#q29, pmid-30642433#q98, pmid-30729179#q56, pmid-31413261#q90, pmid-31413261#q91, pmid-30642433#q92, pmid-37550455#q37, db-gwascatalog-2026.10.29#q219, db-opentargets-26.09#q499, pmid-31484785#q69, pmid-31484785#q70, db-ensembl-116#q233]}
   mechanism: {value: skin_sun, cites: [pmid-30729179#q54, pmid-30729179#q56, db-gwascatalog-2026.10.29#q214, db-gwascatalog-2026.10.29#q215, db-gwascatalog-2026.10.29#q216, db-opentargets-26.09#q511, db-opentargets-26.09#q512, db-opentargets-26.09#q513, db-opentargets-26.09#q514]}
   pleiotropy: {values: ["mech:cancer"], cites: [pmid-30729179#q54, pmid-30729179#q56, db-gwascatalog-2026.10.29#q214, db-opentargets-26.09#q513, db-opentargets-26.09#q515]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
             cites: [pmid-30729179#q53, pmid-30729179#q55, pmid-30642433#q98, pmid-30729179#q56, pmid-31413261#q90, pmid-31413261#q91]}
-  actionability: {label: modifiable, what: ["act_screen:skin"], who: "act_who:self", cites: [pmid-30729179#q54, db-opentargets-26.09#q511, db-opentargets-26.09#q512, db-gwascatalog-2026.10.29#q214]}
-  context: {values: [eur_only_evidence], cites: [pmid-30729179#q53, pmid-30642433#q98, db-ensembl-116#q227, db-ensembl-116#q228, db-ensembl-116#q229, db-ensembl-116#q230, db-ensembl-116#q231]}
+  actionability: {label: modifiable, what: ["act_screen:skin"], who: "act_who:self", cites: [pmid-30729179#q54, db-opentargets-26.09#q511, db-opentargets-26.09#q512, db-gwascatalog-2026.10.29#q214, db-gwascatalog-2026.10.29#q222, db-gwascatalog-2026.10.29#q223, db-gwascatalog-2026.10.29#q224]}
+  context: {values: [eur_only_evidence], cites: [pmid-30729179#q53, pmid-30642433#q98, db-ensembl-116#q227, db-ensembl-116#q228, db-ensembl-116#q229, db-ensembl-116#q230, db-ensembl-116#q231, db-ensembl-116#q232]}
 flags:
   - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-30729179#q53, db-ensembl-116#q226]}
   - {token: "causal:C1", cites: [db-opentargets-26.09#q496, db-opentargets-26.09#q497, db-opentargets-26.09#q498, db-opentargets-26.09#q499, db-opentargets-26.09#q500, db-opentargets-26.09#q504, db-opentargets-26.09#q505, db-opentargets-26.09#q506, db-opentargets-26.09#q507]}
@@ -68,27 +70,27 @@ variants:
         state: neutral
         conclusion: >-
           You carry two copies of the common version of this DNA region (about 62 in 100 people of British ancestry
-          do, and nearly everyone of East Asian or African ancestry). It is the reference the other combinations
-          are compared with. The region lies in the IRF4 gene on chromosome 6, which helps set skin, hair and eye
-          colour and how well the skin tans. The finding comes from people of European ancestry.
+          do, and nearly everyone of East or South Asian ancestry). It is the reference the other combinations
+          are compared with. The region lies in the IRF4 gene on chromosome 6, and this region is linked to skin, hair and eye
+          colour and to how well the skin tans. The finding comes from people of European ancestry.
       - genotype: C/T
         state: risk
         conclusion: >-
           You carry one copy of a less common version of this DNA region (about 34 in 100 people of British ancestry
-          do; it is rarer elsewhere in Europe and almost absent outside it). This version goes with paler skin,
-          freckling and tanning less, and with more skin cancer. In a very large British study, confirmed in a
-          second group, it went with a slightly earlier first major disease, mostly cancer, and the parents of
-          carriers lived slightly shorter lives. The finding is well established, but the effect on lifespan is
-          small. Protecting your skin from the sun and having changing moles or skin spots checked are sensible. It
+          do, and about 15 in 100 of Latin American ancestry; it is rarer elsewhere in Europe and almost absent in
+          East and South Asia). This version goes with more freckling, tanning less, and more skin cancer. In a very large British study, confirmed in a
+          second group, it went with a slightly earlier first major disease, mostly cancer; this finding is well
+          established. The parents of carriers lived slightly shorter lives, a smaller result pointing the same
+          way. Protecting your skin from the sun and having changing moles or skin spots checked are sensible. It
           is a tendency, not a verdict.
       - genotype: T/T
         state: risk
         conclusion: >-
           You carry two copies of a less common version of this DNA region (about 5 in 100 people of British ancestry
-          do). This version goes with paler skin, freckling and tanning less, and with more skin cancer. In a very
+          do). This version goes with more freckling, tanning less, and more skin cancer. In a very
           large British study, confirmed in a second group, each copy went with a slightly earlier first major
-          disease, mostly cancer, and the parents of carriers lived slightly shorter lives. The finding is well
-          established, but the effect on lifespan is small. Protecting your skin from the sun and having changing
+          disease, mostly cancer; this finding is well established. The parents of carriers lived slightly shorter
+          lives, a smaller result pointing the same way. Protecting your skin from the sun and having changing
           moles or skin spots checked are sensible. It is a tendency, not a verdict.
 studies:
   - rsid: rs12203592
