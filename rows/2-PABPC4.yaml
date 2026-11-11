@@ -24,7 +24,7 @@ verdict_reason: >-
   here is an independent replication, and its Q test (P 0.02) hints that the SNP does not act evenly through the
   shared factor. Exceptional survival is +, at one percentile: Deelen 2019's summary statistics hold rs3768321
   itself, T lowering the odds of reaching the 90th percentile (two-sided P 0.052, one-sided 0.026) and the 99th (P
-  0.19, one-sided 0.095, not passing), G on the long-lived side; Deelen's cohorts are one of mvAge's inputs, so this
+  0.19, one-sided 0.094, not passing), G on the long-lived side; Deelen's cohorts are one of mvAge's inputs, so this
   is no independent test either. The mechanism is filed as metabolism:
   rs3768321 itself is the fine-mapped variant of strong blood-lipid signals in Open Targets 26.09 (HDL cholesterol,
   P 4.7e-68, PIP 1.00; triglycerides, P 1.8e-24, PIP 0.90), T lowering HDL and raising triglycerides, the side
@@ -152,5 +152,5 @@ studies:
     effect_unit: log odds of survival to the 90th percentile per G allele (the file's t, beta -0.0481, turned)
     effect_allele: G
     direction: protective
-    statistical_test: "Deelen 2019's summary statistics (GCST008598), effective N 11,615, the row by GRCh37 position 1:40035928 (pmid-37550455#q1); 99th percentile (GCST008599, q22) t beta -0.0512, P 0.19; two-sided P printed, one-sided 0.026 at the 90th, 0.095 at the 99th (derived, D25.13); Deelen's cohorts are an mvAge input"
+    statistical_test: "Deelen 2019's summary statistics (GCST008598), effective N 11,615, the row by GRCh37 position 1:40035928 (pmid-37550455#q1); 99th percentile (GCST008599, q22) t beta -0.0512, P 0.19; two-sided P printed, one-sided 0.026 at the 90th, 0.094 at the 99th (0.1877/2, derived, D25.13); Deelen's cohorts are an mvAge input"
     curator: claude-opus-5-5
