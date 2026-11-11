@@ -250,3 +250,7 @@ Cancer (pleiotropy, Lindstrom 2023): T, P 1 × 10⁻⁸, no beta or direction. F
 
 Body mass index (Chen 2024), P 2 × 10⁻²³, with no allele ("?"); the record's weight, waist and body-fat associations
 state none either. Four of the nine records give no allele. For row 11.
+
+> [q70] _embedded.associations[0].efo_traits[0] efo_id OBA_VT0005372 efo_trait life span determination trait
+
+The catalog maps Wright 2019's age record at rs10798302 to life span (OBA_VT0005372). For row 10.

@@ -165,3 +165,8 @@ rs2228145 and rs4845625 (Timmers 2019's suggestive IL6R SNP): r² 0.46, D′ 1.0
 rs3768321 and rs17561720: Ensembl's 1000 Genomes EUR pair returned nothing (unknown), and its CEU pair, a subset of
 EUR (Utah residents of northern and western European ancestry), gives r² 0.09, D′ 0.32. rs17561720 (1:39,705,554 in
 GRCh38, C/A/T; T 0.19 in EUR) is not a proxy of rs3768321 in the panel that answers. For row 2.
+
+> [q41] description RAB GTPase activating protein 1 like [Source:HGNC Symbol;Acc:HGNC:24663] end 174995308 seq_region_name 1 species homo_sapiens assembly_name GRCh38 display_name RABGAP1L
+
+ENSG00000152061, the gene whose expression sets hold rs10798302 in Open Targets (db-opentargets-26.09#q86), is
+RABGAP1L (1:174,159,339-174,995,308, GRCh38, protein coding). For row 10.
