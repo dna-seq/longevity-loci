@@ -651,3 +651,14 @@ db-opentargets-26.09#q416-q421); a white-cell latent factor (Zhou 2025, P 6e-10,
 Row 28. associations-rs28637671: one record, Rosoff 2023's mvAge (T "unit increase", P 2e-8; q195, q196, q197).
 No other trait is recorded for the variant. rs13141210 (associations-rs13141210): mvAge (P 1e-8) and cigarettes per
 day (Koskeridis 2022, MTAG, P 3e-11).
+
+## Reading 2026-11-11, record
+
+> [q198] _embedded.associations[0] association_id 217740303 risk_frequency NR pvalue_description pvalue_mantissa 2 pvalue_exponent -6 multi_snp_haplotype false snp_interaction false range - beta - p_value 2e-06 accession_id GCST90837384 pubmed_id 39511132 first_author Salo V
+
+> [q199] _embedded.associations[0].efo_traits[0] efo_id EFO_1002005 efo_trait lumbar disc herniation
+
+Row 28. The 54 variants at r² 0.8 or more to rs28637671 (db-ensembl-116, `ldwin-rs28637671.json`), and rs1481245,
+queried one by one (`associations-<rsID>.json`): 54 return no record (totalElements 0). rs28494793 (r² 0.93) has one,
+Salo 2024's lumbar disc herniation, P 2e-6, allele unstated (q198, q199): short of genome-wide, so no trait is
+recorded at the lead's proxies.

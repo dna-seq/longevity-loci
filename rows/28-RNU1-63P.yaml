@@ -9,7 +9,7 @@ locus_name: RNU1-63P
 verdict: kept
 verdict_reason: >-
   Tier B, as the seed has it: a genome-wide multivariate result with a co-occurring lifespan study (§4.5 as D16
-  reads it), and no independent replication at genome-wide strength; a multivariate result does not meet tier A's
+  reads it), and no independent replication counted; a multivariate result does not meet tier A's
   first criterion (D18.3). Genome-wide only in Rosoff 2023's mvAge: T raises the factor (healthier ageing), P
   1.95e-8, a lead new to the GWAS Catalog and more than 1 Mb from every input's loci. Timmers 2019's million parents'
   lives are the co-occurring lifespan study: T lengthens life at P 5.8e-4, UK Biobank and LifeGen on the same side,
@@ -18,14 +18,19 @@ verdict_reason: >-
   3.4 observed. The one look outside mvAge's inputs is AncestryDNA in Wright 2019, through rs1481245, a weak proxy
   (r² 0.51, D′ 0.99; its A rides with the lead's T by frequency and r²): fathers put A on the longer-lived side at
   raw P 0.016, mothers the same side at 0.065, and UK Biobank's arm agrees (heterogeneity P 0.69), so no red flag.
-  That supports the direction but is nominal, at a weak proxy that also carries some of rs13141210 (r² 0.23), and it
-  cannot lift the tier. The SNPs strongest in Wright's tables here (rs11947612, rs923994) have r² below 0.05 to the
-  lead and belong to rs13141210's side. Healthspan agrees: T delays the end of healthspan in Zenin 2019 (P 0.010)
+  That supports the direction, no more: it is nominal, at a weak proxy where the lead predicts a z of about 2.5
+  (its LifeGen z 3.4 is higher), and rs1481245 also carries some of rs13141210 (r² 0.23), whose tags could supply
+  about 1.6 of its AncestryDNA z of 2.4. It cannot lift the tier. Wright's other SNPs near the lead tag it weakly
+  (rs17799404 r² 0.39, rs987811 0.26, rs12506243 0.21), and the strongest here (rs11947612, rs923994) have r² below
+  0.05 to the lead and belong to rs13141210's side. Healthspan agrees: T delays the end of healthspan in Zenin 2019 (P 0.010)
   and lowers frailty (P 2.7e-5), both mvAge inputs, healthspan-class (D17.1). Exceptional survival is +: Deelen
   2019's summary statistics favour T at the 90th (P 0.0030) and the 99th percentile (P 0.0082, a subset of the
   90th's cases), the 90th an mvAge input, so neither replicates it. The mechanism is unknown, filed as general
   ageing: Rosoff finds no earlier genome-wide association for the SNP, the GWAS Catalog records only mvAge, and Open
-  Targets 26.09 has no record of the variant, so no other trait is known and no trade-off can be read (D18.1);
+  Targets 26.09 has no record of the variant. Its 54 proxies at r² 0.8 or more have no genome-wide record either
+  (one sub-threshold catalog record, lumbar disc herniation at P 2e-6; none found in Open Targets' search), and the
+  nearest genome-wide trait, paracetamol use, is led by rs13109040 at r² 0.39. So no other trait is known and no
+  trade-off can be read (D18.1);
   nothing at the lead can be acted on, so descriptive. Causal and effector confidence are C4 and E4, with no gene
   (§4.2): Open Targets has no record of the variant under either allele order, so no lifespan-class set holds it, and
   mvAge's set nearby is led by rs13141210. RNU1-63P and RNU6-699P are small-RNA pseudogenes that name the locus,
@@ -34,12 +39,12 @@ verdict_reason: >-
   Age of action is unknown: no cached source gives this locus's own age bands. The evidence is European; T is common
   in East Asians (0.94), untested there.
   rs13141210, the seed's second rsID here, looks like a B of its own under D16 (mvAge 1.5e-8, T healthier; lifespan
-  T P 9e-6), with AncestryDNA support at good proxies (rs2164300 r² 0.94, rs12506221 r² 0.86, nominal in fathers and
-  mothers) and its own traits (education, body fat, smoking): put to the lead.
+  T P 9e-6), nominal in AncestryDNA at good tags (rs2164300 r² 0.94, rs12506221 r² 0.86; raw P 0.0005 to 0.001 in
+  fathers and mothers, direction not read), with its own traits (education, body fat, smoking): put to the lead.
 axes:
-  tier: {value: B, cites: [pmid-37550455#q27, pmid-37550455#q29, pmid-37550455#q30, pmid-37550455#q31, pmid-37550455#q2, pmid-37550455#q3, pmid-37550455#q5, pmid-30642433#q81, pmid-30642433#q82, db-ensembl-116#q154, pmid-31484785#q61, pmid-31484785#q62, pmid-30642433#q83, db-ensembl-116#q155, db-ensembl-116#q156, db-ensembl-116#q157, db-ensembl-116#q158, db-ensembl-116#q159, db-ensembl-116#q160, db-gwascatalog-2026.10.29#q195, db-gwascatalog-2026.10.29#q196]}
-  mechanism: {value: general_ageing, cites: [pmid-37550455#q27, pmid-37550455#q31, db-gwascatalog-2026.10.29#q197, db-opentargets-26.09#q437]}
-  pleiotropy: {values: [], cites: [pmid-37550455#q27, db-gwascatalog-2026.10.29#q197, db-opentargets-26.09#q437]}
+  tier: {value: B, cites: [pmid-37550455#q27, pmid-37550455#q29, pmid-37550455#q30, pmid-37550455#q31, pmid-37550455#q2, pmid-37550455#q3, pmid-37550455#q5, pmid-30642433#q81, pmid-30642433#q82, db-ensembl-116#q154, pmid-31484785#q61, pmid-31484785#q62, pmid-30642433#q83, db-ensembl-116#q155, db-ensembl-116#q156, db-ensembl-116#q157, db-ensembl-116#q158, db-ensembl-116#q159, db-ensembl-116#q160, db-ensembl-116#q163, db-ensembl-116#q164, db-ensembl-116#q165, db-ensembl-116#q166, pmid-31484785#q63, pmid-31484785#q64, pmid-31484785#q65, db-ensembl-116#q161, db-ensembl-116#q162, db-gwascatalog-2026.10.29#q195, db-gwascatalog-2026.10.29#q196]}
+  mechanism: {value: general_ageing, cites: [pmid-37550455#q27, pmid-37550455#q31, db-gwascatalog-2026.10.29#q197, db-opentargets-26.09#q437, db-gwascatalog-2026.10.29#q198, db-gwascatalog-2026.10.29#q199, db-ensembl-116#q167, db-ensembl-116#q168, db-opentargets-26.09#q441, db-opentargets-26.09#q442, db-opentargets-26.09#q443]}
+  pleiotropy: {values: [], cites: [pmid-37550455#q27, db-gwascatalog-2026.10.29#q197, db-opentargets-26.09#q437, db-gwascatalog-2026.10.29#q198, db-ensembl-116#q167, db-ensembl-116#q168, db-opentargets-26.09#q442]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
             cites: [pmid-30729179#q45, pmid-37550455#q30, pmid-30642433#q81, pmid-31413261#q70, pmid-31413261#q71]}

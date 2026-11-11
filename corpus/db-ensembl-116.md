@@ -598,3 +598,29 @@ r² floor requested 0.001) reports nothing below 0.050 (q156 its least value); t
 rs11947612 and rs923994 are absent from it although both are in the panel (q159, q160, read against rs13141210), and
 the pairwise reads of the lead against them return nothing (`ld-` and `ld0-` files rendered to no text): their r² to
 the lead is below 0.05. rs1481245's frequencies: q157, q158.
+
+## Reading 2026-11-11, record
+
+> [q161] [0] d_prime 0.987676 variation2 rs2164300 variation1 rs13141210 population_name 1000GENOMES:phase_3:EUR r2 0.937475
+
+> [q162] [0] population_name 1000GENOMES:phase_3:EUR d_prime 1.000000 variation2 rs12506221 r2 0.856045 variation1 rs13141210
+
+> [q163] [0] d_prime 0.973608 population_name 1000GENOMES:phase_3:EUR variation2 rs17799404 r2 0.385461 variation1 rs28637671
+
+> [q164] [0] population_name 1000GENOMES:phase_3:EUR d_prime 0.982116 r2 0.257028 variation1 rs28637671 variation2 rs987811
+
+> [q165] [0] variation2 rs12506243 d_prime 0.766629 population_name 1000GENOMES:phase_3:EUR variation1 rs28637671 r2 0.206245
+
+> [q166] [0] population_name 1000GENOMES:phase_3:EUR r2 0.233302 variation2 rs1481245 variation1 rs13141210 d_prime 0.544549
+
+> [q167] [159] population_name 1000GENOMES:phase_3:EUR variation2 rs28494793 variation1 rs28637671 r2 0.932821 d_prime 0.984887
+
+> [q168] [337] d_prime 0.934429 r2 0.387545 variation2 rs13109040 variation1 rs28637671 population_name 1000GENOMES:phase_3:EUR
+
+Row 28, after the advisor's read. rs13141210's tags in Wright's S9: rs2164300 r² 0.94 (q161), rs12506221 r² 0.86
+(q162); at 0.50 against about 0.5 the frequency ceilings coupled and opposed are both near 1, so their phase to
+rs13141210 is not read here. The lead's other Wright SNPs tag it weakly: rs17799404 r² 0.39 (q163), rs987811 0.26
+(q164), rs12506243 0.21 (q165). rs1481245, the row's weak proxy, has r² 0.23 to rs13141210 (q166). The window listing
+around the lead holds 54 variants at r² 0.8 or more (`ldwin-rs28637671.json`; rs6821811, rs56278947 and six others
+at 1.0); rs28494793 (r² 0.93, q167) is the only one with a GWAS Catalog record (db-gwascatalog-2026.10.29#q198).
+rs13109040 (r² 0.39, q168) leads Open Targets' paracetamol-use sets near the lead (db-opentargets-26.09#q441-q443).

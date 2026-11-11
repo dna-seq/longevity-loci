@@ -1636,3 +1636,16 @@ lifespan-class query returns none (`credibleSets-longevity8-4_66914674_T_G.json`
 (r² 0.095, db-ensembl-116#q154). So causal C4 and effector E4 for row 28, no gene. rs13141210 (for the question on its
 own row): 17 sets, mvAge's among them (PICS, P 1e-8, q439, q440), the rest body fat and BMI, education, smoking,
 COPD, HDL (`variant-4_67025923_C_T.json`).
+
+## Reading 2026-11-11, record
+
+> [q441] data.variant.credibleSets count 3
+
+> [q442] data.variant.credibleSets.rows[0].study id GCST90692213 traitFromSource Medication for pain relief constipation heartburn - Paracetamol (UKB data field 6154) studyType gwas
+
+> [q443] data.variant.credibleSets.rows[0].variant id 4_66855581_G_A
+
+Row 28. Open Targets' search finds none of the lead's top proxies (rs6821811, rs56278947, rs34238324, rs28494793;
+`search-<rsID>.json`, total 0). rs1481245 (4_66898102_A_G, the row's weak proxy) sits in three sets, all of UK
+Biobank's paracetamol use (P 7e-10, SuSiE-inf), led by 4_66855581_G_A, rs13109040 (q441-q443), which has r² 0.39 to
+the lead (db-ensembl-116#q168): not the lead's trait.
