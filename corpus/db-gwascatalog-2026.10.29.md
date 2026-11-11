@@ -717,3 +717,29 @@ rs2149954 (`associations-rs2149954.json`): two associations, both Deelen 2014 (q
 and ≥90 (GCST002404, OR 1.1, P 2e-8, q212). The Catalog's CI 1.06 to 1.74 disagrees with the paper's 1.06 to 1.14
 (pmid-24688116#q4); the paper is read. No other trait is recorded on this rsID; the blood-pressure results sit on
 proxies (Deelen's rs9313772 and rs11953630) and in Open Targets' sets. For row 33.
+
+## Reading 2026-11-11, record
+
+> [q214] _embedded.associations[17] association_id 228300609 risk_frequency 0.8723 pvalue_description  pvalue_mantissa 1 pvalue_exponent -207 multi_snp_haplotype false snp_interaction false range [0.44-0.48] beta 0.461 unit decrease p_value 1e-207 accession_id GCST90479796 pubmed_id 39024449 first_author Verma A ci_lower 0.44 ci_upper 0.48
+
+> [q215] _embedded.associations[17].reported_trait[0] Squamous cell carcinoma (PheCode 172.22)
+
+> [q216] _embedded.associations[17].snp_effect_allele[0] rs12203592-C
+
+> [q217] _embedded.associations[37] association_id 131476324 risk_frequency NR pvalue_description  pvalue_mantissa 7 pvalue_exponent -12 multi_snp_haplotype false snp_interaction false range [0.0077-0.0139] beta 0.010844371 unit increase p_value 7e-12 accession_id GCST90321079 pubmed_id 37550455 first_author Rosoff DB ci_lower 0.0077 ci_upper 0.0139
+
+> [q218] _embedded.associations[37].snp_effect_allele[0] rs12203592-C
+
+> [q219] _embedded.associations[72] association_id 62271280 risk_frequency 0.81 pvalue_description  pvalue_mantissa 8 pvalue_exponent -26 multi_snp_haplotype false snp_interaction false range - beta - p_value 8e-26 accession_id GCST011100 pubmed_id 32678081 first_author Timmers PRHJ
+
+> [q220] _embedded.associations[25] association_id 18400 risk_frequency 0.19 pvalue_description  pvalue_mantissa 6 pvalue_exponent -15 multi_snp_haplotype false snp_interaction false range [1.34-1.63] or_per_copy_num 1.48 or_value 1.48 beta - p_value 6.0000000000000005e-15 accession_id GCST001116 pubmed_id 21685912 first_author Hoglinger GU ci_lower 1.34 ci_upper 1.63
+
+> [q221] _embedded.associations[25].snp_effect_allele[0] rs12203592-?
+
+rs12203592's 232 associations over three pages (`associations-rs12203592.json`, `-p1`, `-p2`). Verma's UK Biobank
+and Million Veteran phenome-wide skin cancer results put C on the lower side: squamous cell carcinoma β 0.461 "unit
+decrease" per C, P 10⁻²⁰⁷ (q214 to q216), and the same shape for basal cell carcinoma, melanoma and skin cancer on page
+one (rows 15, 20, 22). Rosoff 2023's mvAge: C "unit increase", 0.0108, P 7 × 10⁻¹² (q217, q218). Timmers 2020's
+multivariate ageing GWAS: C at 0.81, P 8 × 10⁻²⁶, no beta or direction (q219). Höglinger 2011's progressive
+supranuclear palsy: OR 1.48 at P 6 × 10⁻¹⁵, the allele unstated (q220, q221; the frequency 0.19 would fit T, not
+read as such). The Catalog holds no association from Zenin 2019 for this SNP. For row 35.

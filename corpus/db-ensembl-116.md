@@ -806,3 +806,24 @@ rs2149954 (`variation-rs2149954.json`): GRCh38 5:158,393,594, C/T (q220); T 0.35
 0.37 in gnomAD non-Finnish Europeans (q222), 0.23 in East Asians (C 0.77, q223); an intron variant by Ensembl's most
 severe consequence (q224; Deelen's lincRNA, now LINC02227). Deelen's 157,753,180 is the hg18 position and LifeGen's and
 Zenin's 157,820,602 the GRCh37 one, both tied by the rsID on their lines. For row 33.
+
+## Reading 2026-11-11, record
+
+> [q225] most_severe_consequence intron_variant
+
+> [q226] mappings[0] location 6:396321-396321 end 396321 ancestral_allele C seq_region_name 6 start 396321 strand 1 allele_string C/G/T coord_system chromosome assembly_name GRCh38
+
+> [q227] populations[73] allele T population 1000GENOMES:phase_3:EUR frequency 0.116302186878728 allele_count 117
+
+> [q228] populations[23] allele_count 11449 frequency 0.1683 population gnomADg:nfe allele T
+
+> [q229] populations[20] frequency 0.02597 allele_count 276 population gnomADg:fin allele T
+
+> [q230] populations[1] allele_count 3 frequency 0.0005776 population gnomADg:eas allele T
+
+> [q231] populations[7] frequency 0.03278 allele_count 1362 population gnomADg:afr allele T
+
+rs12203592 (`variation-rs12203592.json`): an intron variant (q225) at GRCh38 6:396,321, the same coordinate as GRCh37's
+(q226), C ancestral. T: 0.116 in 1000 Genomes Europeans (q227), 0.168 in gnomAD non-Finnish Europeans (q228), 0.026
+in Finns (q229), 0.0006 in East Asians (q230), 0.033 in Africans (q231); 0.21 in the British samples (Zenin, Timmers).
+T is a north-west European allele; elsewhere almost everyone is C/C. For row 35.

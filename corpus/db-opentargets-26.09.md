@@ -1818,3 +1818,60 @@ multimorbidity set (q493) is led by 5_158397473_A_G (q492); rs2149954 is a membe
 with no beta or P of its own (q494). The essential hypertension set is led by 5_158397175_T_C (q495), the same shape.
 So the betas on the variant's set list (q484, q487) are the set leads', and T's direction in these sets is not given
 here. For row 33.
+
+## Reading 2026-11-11, record
+
+> [q496] data.variant.credibleSets count 381
+
+> [q497] data.variant.credibleSets.rows[6] studyLocusId 3ebe7ef9958b5c249ce68244b0d819a2 studyId GCST007406 pValueMantissa 1.0615816116333008 pValueExponent -26 beta 0.01967712413041147 finemappingMethod SuSiE-inf
+
+> [q498] data.variant.credibleSets.rows[6].study traitFromSource Healthspan projectId GCST
+
+> [q499] data.variant.credibleSets.rows[6].locus.rows[0] posteriorProbability 0.9999999048994158
+
+> [q500] data.variant.credibleSets.rows[6].locus.rows[0].variant id 6_396321_C_T
+
+> [q501] data.variant.credibleSets.rows[6].l2GPredictions.rows[0] score 0.7911879420280457
+
+> [q502] data.variant.credibleSets.rows[6].l2GPredictions.rows[0].target approvedSymbol IRF4
+
+> [q503] data.variant.credibleSets.rows[6].l2GPredictions.rows[1] score 0.08313760906457901
+
+> [q504] data.variant.credibleSets.rows[47] studyLocusId 5dbb0989eb97176d6a089f577c677b49 studyId GCST011100 pValueMantissa 8 pValueExponent -26 beta null finemappingMethod PICS
+
+> [q505] data.variant.credibleSets.rows[47].locus.rows[0] posteriorProbability 0.9998945966579305
+
+> [q506] data.variant.credibleSets.rows[79] studyLocusId b3e76002e23675c703039d2cbfa74279 studyId GCST90321079 pValueMantissa 7 pValueExponent -12 beta -0.010844371 finemappingMethod PICS
+
+> [q507] data.variant.credibleSets.rows[79].locus.rows[0] posteriorProbability 0.9865442874839144
+
+> [q508] data.credibleSet.colocalisation count 114
+
+> [q509] data.credibleSet.colocalisation.rows[0].otherStudyLocus.study id gtex-v10_txrev_blood_ensg00000137265_grp_2_contained_enst00000468485 traitFromSource ENSG00000137265.grp_2.contained.ENST00000468485 studyType tuqtl
+
+> [q510] data.credibleSet.colocalisation.rows[17].otherStudyLocus.study id UKB_PPP_EUR_KIT_P10721_OID20370_v1 traitFromSource KIT:P10721:OID20370:v1 studyType pqtl
+
+> [q511] data.variant.credibleSets.rows[18] studyLocusId 0c291e9253c39a7a0aeda93784455da2 studyId GCST005897 pValueMantissa 1 pValueExponent -581 beta 0.545 finemappingMethod PICS
+
+> [q512] data.variant.credibleSets.rows[18].study traitFromSource Low tan response projectId GCST
+
+> [q513] data.variant.credibleSets.rows[87].study traitFromSource Non-melanoma skin cancer projectId GCST
+
+> [q514] data.variant.credibleSets.rows[87].locus.rows[0] posteriorProbability 0.9934044343969347
+
+> [q515] data.variant.credibleSets.rows[20].study traitFromSource Skin cancer projectId GCST
+
+rs12203592 (6_396321_C_T) is in 381 credible sets (q496; four pages, `variant-sets-6_396321_C_T.json` and `-p1` to
+`-p3`). Three are the row's own claim's (D17.2): Zenin's healthspan (GCST007406), SuSiE-inf, the variant alone at PIP
+1.00 and itself the set's lead (q497 to q500), so the set's beta 0.0197 per T is the variant's own, on Open Targets'
+scale; Timmers 2020's multivariate ageing set (GCST011100), PICS, PIP 1.00, no beta (q504, q505); Rosoff 2023's
+mvAge set (GCST90321079), PICS, PIP 0.99, T −0.0108 (q506, q507). Locus-to-gene: IRF4 0.79 on the healthspan set,
+DUSP22 next at 0.08 (q501 to q503); 0.80 and 0.85 on the other two (the files). The rest are pigmentation, tanning
+(Low tan response, PIP 1.00, q511, q512), skin cancers (non-melanoma skin cancer PIP 0.99, q513, q514; skin cancer,
+q515; squamous cell, keratinocyte, melanoma), blood cell counts, retinal-image embeddings, facial ageing, puberty
+timing and IRF4's own QTLs.
+
+QTL colocalisation of the healthspan set (`coloc-qtl-3ebe7ef9958b5c249ce68244b0d819a2.json`; the two multivariate
+sets give the same list): 114, all at H4 ≥ 0.8 (q508). 109 are IRF4 (60 eQTL, 18 sQTL, 31 transcript-usage QTL, e.g.
+q509); one each are UK Biobank pQTLs of KIT (q510), GPNMB, JCHAIN, CD5L and DSG4, proteins encoded off chromosome 6,
+so trans, which D24 does not count. IRF4: L2G ≥ 0.5 plus cis-QTL colocalisation, E1. For row 35.

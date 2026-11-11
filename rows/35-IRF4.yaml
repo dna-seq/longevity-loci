@@ -1,0 +1,220 @@
+# The seed list's locus 35, IRF4 (6p25.3; the seed's genes "IRF4; IRF4/EXOC2"). Curated 2026-11-11, the fourth run's
+# first row. Lead rs12203592 (Zenin 2019's healthspan SNP, Table 2), the seed's only rsID here: an intron variant of
+# IRF4, at the same coordinate in GRCh37 and GRCh38. T 0.21 in the British samples, 0.12 in 1000 Genomes Europeans,
+# 0.03 in Finns and Africans, almost absent in East Asians. In Zenin's, Timmers 2019's and Deelen 2019's summary
+# statistics at the lead itself; in Rosoff 2023's mvAge tables. No other row's lead lies near it.
+locus_id: 35
+locus_name: IRF4
+verdict: re-tiered
+verdict_reason: >-
+  Tier A, up from the seed's B, on D16's reading of §4.1 (a healthspan locus is tiered as any other once a lifespan
+  study co-occurs), put to the lead. Each criterion: (1) genome-wide for healthspan in 300,447 British UK Biobank
+  participants: C, the common allele, delays the end of healthspan (Zenin 2019, T β 0.063 on the log hazard per
+  allele, P 1.8e-25 after genomic control, the paper's own call, D17.3). (2) Independent replication, the same allele
+  and direction: in 96,313 other UK Biobank participants, checked for no kinship with the discovery set, β 0.043,
+  P 2.1e-5, under the paper's 0.05/12; that sample is the one D17.1 read as an independent test at row 103. (3) No
+  red flag: with replication power 0.9987 (Zenin's formula), the two estimates differ at heterogeneity P 0.094
+  (D21); the replicated effect is about two thirds of the discovery's, not "much smaller". (4) The co-occurring
+  lifespan study (D16): Timmers 2019's summary statistics give C the longer parental life, beta1 0.0157 per C, P
+  0.0016, both UK Biobank and LifeGen on that side, and Zenin's own parents'-death test agrees (P 0.006). Its UK
+  Biobank part is the same people as Zenin's, so it co-occurs but does not replicate; it is this locus's own (D17.1):
+  the lead is the healthspan set's only member, and no other row's lead is near. D22.2's "replicates nothing on its
+  own" is read as met: the healthspan replication sits beside a lifespan study. If the lead reads D22.2 to ask a
+  scoring-class replication outside UK Biobank for A, the row is B: none reaches p < 0.05 (below). The
+  oldest ages lean to C and do not pass: Deelen 2019's 90th and 99th percentiles, OR per C 1.05 and 1.07 (P 0.13,
+  0.15). Calibrated from LifeGen's beta1 (D25.3), the 90th has one-sided power 0.77 by the APOE factor
+  (heterogeneity P 0.48) and 0.26 by the mean factor (0.63): no red flag either way, and exceptional survival is 0.
+  Rosoff 2023's mvAge (C, P 6.9e-12) and Timmers 2020's multivariate ageing scan (P 8e-26, no direction printed) pool
+  these same samples and add nothing independent. A literature search on the rsID found no further lifespan study
+  (OpenAlex and Semantic Scholar unchecked, HTTP 429). By component, T's healthspan effect is mostly cancer (P 3e-39),
+  but not cancer alone: the other diseases together P 0.017, own death 0.037, uncorrected across nine components; the
+  variant is among the strongest skin-colour, tanning and skin-cancer signals known (C lowers squamous and basal cell
+  carcinoma and melanoma), and Zenin names pigmentation and non-melanoma skin cancer. The mechanism is filed as skin
+  and sun with mech:cancer; whether Zenin's cancer outcome holds non-melanoma skin cancer is not stated, and the route
+  of the lifespan effect is not shown (D25.7). Actionability is modifiable, act_screen:skin: §4.2's label names sun,
+  and the risk allele's route is low tanning and skin cancer; that sun care changes this locus's effect is not
+  itself tested. The seed's trade-off has no quoted harm of C (D18.1): puberty-timing sets are no harm, and
+  progressive supranuclear palsy's allele is unstated. Causal C1: Zenin's SuSiE-inf healthspan set holds the lead
+  alone at PIP 1.00 (the multivariate sets, PICS, likewise). Effector E1, IRF4: locus-to-gene 0.79 and 109 of 114 QTL
+  colocalisations of the healthspan set are IRF4's (eQTL, sQTL, transcript usage); the other five are single pQTLs of
+  proteins encoded on other chromosomes, trans, not counted (D24). The protection is the absence of the risk allele T
+  (the common C protects). Age of action is unknown. Evidence is European only, and T is a north-west European
+  allele: elsewhere almost everyone is C/C.
+axes:
+  tier: {value: A, cites: [pmid-30729179#q53, pmid-30729179#q55, pmid-30729179#q57, pmid-30729179#q12, pmid-30729179#q13, pmid-30729179#q29, pmid-30642433#q98, pmid-30729179#q56, pmid-31413261#q90, pmid-31413261#q91, pmid-30642433#q92, pmid-37550455#q37, db-gwascatalog-2026.10.29#q219, db-opentargets-26.09#q499]}
+  mechanism: {value: skin_sun, cites: [pmid-30729179#q54, pmid-30729179#q56, db-gwascatalog-2026.10.29#q214, db-gwascatalog-2026.10.29#q215, db-gwascatalog-2026.10.29#q216, db-opentargets-26.09#q511, db-opentargets-26.09#q512, db-opentargets-26.09#q513, db-opentargets-26.09#q514]}
+  pleiotropy: {values: ["mech:cancer"], cites: [pmid-30729179#q54, pmid-30729179#q56, db-gwascatalog-2026.10.29#q214, db-opentargets-26.09#q513, db-opentargets-26.09#q515]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
+            cites: [pmid-30729179#q53, pmid-30729179#q55, pmid-30642433#q98, pmid-30729179#q56, pmid-31413261#q90, pmid-31413261#q91]}
+  actionability: {label: modifiable, what: ["act_screen:skin"], who: "act_who:self", cites: [pmid-30729179#q54, db-opentargets-26.09#q511, db-opentargets-26.09#q512, db-gwascatalog-2026.10.29#q214]}
+  context: {values: [eur_only_evidence], cites: [pmid-30729179#q53, pmid-30642433#q98, db-ensembl-116#q227, db-ensembl-116#q228, db-ensembl-116#q229, db-ensembl-116#q230, db-ensembl-116#q231]}
+flags:
+  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-30729179#q53, db-ensembl-116#q226]}
+  - {token: "causal:C1", cites: [db-opentargets-26.09#q496, db-opentargets-26.09#q497, db-opentargets-26.09#q498, db-opentargets-26.09#q499, db-opentargets-26.09#q500, db-opentargets-26.09#q504, db-opentargets-26.09#q505, db-opentargets-26.09#q506, db-opentargets-26.09#q507]}
+  - {token: "effector:E1", cites: [db-opentargets-26.09#q501, db-opentargets-26.09#q502, db-opentargets-26.09#q503, db-opentargets-26.09#q508, db-opentargets-26.09#q509, db-opentargets-26.09#q510]}
+variants:
+  - rsid: rs12203592
+    gene: IRF4
+    phenotype: IRF4 region, healthspan (mostly skin cancer)
+    trait_efo_id: EFO_0009762
+    effect_allele: C
+    effect_size: -0.063
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: C/C
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA region (about 62 in 100 people of British ancestry
+          do, and nearly everyone of East Asian or African ancestry). It is the reference the other combinations
+          are compared with. The region lies in the IRF4 gene on chromosome 6, which helps set skin, hair and eye
+          colour and how well the skin tans. The finding comes from people of European ancestry.
+      - genotype: C/T
+        state: risk
+        conclusion: >-
+          You carry one copy of a less common version of this DNA region (about 34 in 100 people of British ancestry
+          do; it is rarer elsewhere in Europe and almost absent outside it). This version goes with paler skin,
+          freckling and tanning less, and with more skin cancer. In a very large British study, confirmed in a
+          second group, it went with a slightly earlier first major disease, mostly cancer, and the parents of
+          carriers lived slightly shorter lives. The finding is well established, but the effect on lifespan is
+          small. Protecting your skin from the sun and having changing moles or skin spots checked are sensible. It
+          is a tendency, not a verdict.
+      - genotype: T/T
+        state: risk
+        conclusion: >-
+          You carry two copies of a less common version of this DNA region (about 5 in 100 people of British ancestry
+          do). This version goes with paler skin, freckling and tanning less, and with more skin cancer. In a very
+          large British study, confirmed in a second group, each copy went with a slightly earlier first major
+          disease, mostly cancer, and the parents of carriers lived slightly shorter lives. The finding is well
+          established, but the effect on lifespan is small. Protecting your skin from the sun and having changing
+          moles or skin spots checked are sensible. It is a tendency, not a verdict.
+studies:
+  - rsid: rs12203592
+    note: pmid-30729179
+    quote: q53
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "1.80e-25"
+    p_value_num: 1.8e-25
+    effect_size: -0.063
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per C allele (negative = later)
+    effect_allele: C
+    direction: protective
+    statistical_test: "Cox-Gompertz Martingale-residual GWAS of the first of the age-related diseases or death (Table 2, T 0.063), P after genomic control (the paper's own call, D17.3); raw P 9.7e-27, SE 0.0059 (q55; summary statistics -log10 P 26.01, q57); by component mostly cancer (P 3.0e-39), all but cancer P 0.017 (q56)"
+    curator: claude-opus-5-5
+  - rsid: rs12203592
+    note: pmid-30729179
+    quote: q55
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: UK Biobank participants outside the discovery set (81,099 other European, and African, South Asian, Chinese and Caribbean), unrelated to it
+    ancestry: [EUR, AFR, SAS, EAS]
+    sample_size: 96313
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "2.10e-05"
+    p_value_num: 2.1e-05
+    effect_size: -0.043
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per C allele (negative = later)
+    effect_allele: C
+    direction: protective
+    statistical_test: "Replication (Table 2, q53; Supplementary Data 5, q55), meta-analysis of the five ancestry groups, SE 0.0102, passing the paper's P < 0.05/12 (q29); the first group, read as the Europeans, T 0.042, P 4.1e-5; independent individuals of the same biobank (q12, q13); power 0.9987 (the paper's), heterogeneity against discovery P 0.094, derived"
+    curator: claude-opus-5-5
+  - rsid: rs12203592
+    note: pmid-30642433
+    quote: q98
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts; the UK Biobank part is the same people as Zenin 2019's)
+    ancestry: [EUR]
+    sample_size: 597250
+    sample_unit: lives
+    age_of: parent
+    stat_significance: nominal
+    p_value: "0.0016237112"
+    p_value_num: 0.0016237112
+    effect_size: -0.01570768
+    effect_measure: beta
+    effect_unit: beta1 on parental lifespan per T allele, longer positive
+    effect_allele: T
+    direction: risk
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), SE 0.0050, -- in UK Biobank and LifeGen, info 0.98; D16's co-occurring lifespan study, C on the longer-lived side; not in Figure 2's replication table, so no LifeGen-only value"
+    curator: claude-opus-5-5
+  - rsid: rs12203592
+    note: pmid-30729179
+    quote: q56
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank, genomically British; the participants' parents)
+    ancestry: [EUR]
+    age_of: parent
+    stat_significance: nominal
+    p_value: "0.00595"
+    p_value_num: 0.00595
+    effect_size: -0.007
+    effect_measure: beta
+    effect_unit: log hazard of a parent's death per C allele in the offspring (negative = later)
+    effect_allele: C
+    direction: protective
+    statistical_test: "Supplementary Data 7, parents' death (meta-analysis of fathers, P 0.038, and mothers, P 0.072), Cox model in the discovery sample, T 0.007 (SE 0.003); own death T 0.039, P 0.037; uncorrected across the components; the same people as Timmers' UK Biobank part"
+    curator: claude-opus-5-5
+  - rsid: rs12203592
+    note: pmid-31413261
+    quote: q90
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.1305"
+    p_value_num: 0.1305
+    effect_size: -0.048
+    effect_measure: beta
+    effect_unit: log odds of reaching the 90th percentile, per T allele
+    effect_allele: T
+    direction: risk
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008598), SE 0.0318, effective N 9,923. D25.3 from LifeGen's beta1: APOE factor 4.84 expects log OR 0.076 per C, one-sided power 0.77, heterogeneity P 0.48; mean factor (pmid-30642433#q92) 0.032, power 0.26, heterogeneity P 0.63; no red flag"
+    curator: claude-opus-5-5
+  - rsid: rs12203592
+    note: pmid-31413261
+    quote: q91
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.146"
+    p_value_num: 0.146
+    effect_size: -0.0673
+    effect_measure: beta
+    effect_unit: log odds of reaching the 99th percentile, per T allele
+    effect_allele: T
+    direction: risk
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), SE 0.0463, effective N 4,403; the same side as the 90th"
+    curator: claude-opus-5-5
+  - rsid: rs12203592
+    note: pmid-37550455
+    quote: q37
+    phenotype_class: MULTIVARIATE_AGEING
+    study_design: multivariate_healthspan_lifespan
+    population: European (the five input GWAS, UK Biobank and LifeGen among them; effective n 1,958,774)
+    ancestry: [EUR]
+    stat_significance: significant
+    p_value: "6.88e-12"
+    p_value_num: 6.88e-12
+    effect_size: 0.010844371
+    effect_measure: beta
+    effect_unit: mvAge factor per C allele (no conventional unit; positive = healthier ageing)
+    effect_allele: C
+    direction: protective
+    statistical_test: "Genomic SEM common-factor GWAS of healthspan, frailty, exceptional longevity, parental lifespan and PhenoAge acceleration (Supplementary Table 7, C first, SE 0.0016; Table 6 not novel, q36; GWAS Catalog C 'unit increase', db-gwascatalog-2026.10.29#q217, q218); the inputs are Zenin's, Deelen's 90th and LifeGen's lines, so no independent support"
+    curator: claude-opus-5-5
