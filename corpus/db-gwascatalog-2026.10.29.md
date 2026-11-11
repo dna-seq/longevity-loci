@@ -1180,3 +1180,10 @@ allele printed G (Wright's S9 column, pmid-31484785#q93), no effect. For row 52.
 > [q339] beta 0.052 unit decrease p_value 8e-14 accession_id GCST005194 pubmed_id 29212778 first_author van der Harst P
 
 van der Harst 2018's coronary artery disease: T lowers it, P 8e-14. The second signal's; prose only. For row 52.
+
+## Reading 2026-11-11, supplement
+
+> [q340] beta 0.2972 unit decrease p_value 7e-220 accession_id GCST90019510 pubmed_id 33462484 first_author Sinnott-Armstrong N
+
+Sinnott-Armstrong 2021's HDL cholesterol (UK Biobank, GCST90019510): G lowers HDL, P 7e-220 (the record's effect
+allele rs268-G). For row 52.

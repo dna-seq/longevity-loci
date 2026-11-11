@@ -76,12 +76,12 @@ read), and every identifier the paper has. The curator takes it from here; the s
 
 - **Paper:** Wright KM et al. "A Prospective Analysis of Genetic Variants Associated with Human Lifespan." *G3*, 2019.
   PMID 31484785. Corpus note `corpus/pmid-31484785.md` (q91 to q93). From the curator, 2026-11-11.
-- **Why:** the seed's second rsID at locus 52, 11 kb from row 52's lead rs268 (LPL Asn291Ser) and a separate signal:
-  r² at most about 0.03 from the two frequencies (`db-ensembl-116#q364`), and Aragam 2022's coronary disease
+- **Why:** the seed's second rsID at locus 52, 11 kb from row 52's lead rs268 (LPL Asn318Ser) and a separate signal:
+  r² below 0.05 from the two frequencies (`db-ensembl-116#q364`), and Aragam 2022's coronary disease
   fine-mapping holds rs268 alone in one set and rs15285 in another (`db-opentargets-26.09#q671`, `q678`). It carries
   LPL's only lifespan-class genome-wide result: Wright's fathers' meta-analysis P 8.5e-10, T (0.29 in Europeans)
   longer-lived, heterogeneity P 0.83; the AncestryDNA arm (P 2.4e-5, 1.0e-4 after genomic control) is inside the pooled
-  P. Row 52 names it in prose; D25.6 sends it here. T tags rs13702 (r² 0.98) and partly rs328, Ser447Ter (0.33).
+  P. Row 52 names it in prose; D25.6 sends it here. T tags rs13702 (r² 0.98) and partly rs328 (0.33).
 - **Passage** (Table 3, full text, quoted as `pmid-31484785#q91`):
   > LPL	rs15285	8	19824667	8.46e-10	2.44e-05	0.012	0.003	1.20e-07	0.013	0.002
 - **Unknown:** its own tier. Nothing outside Wright replicates it nominally: Timmers 2019 P 3.5e-5 (holds UK

@@ -2400,9 +2400,11 @@ C1 stands on Foote's set by D17.2's letter. For row 51.
 
 > [q668] data.variant.credibleSets count 507
 
-rs268 (8_19956018_A_G) sits in 507 credible sets (`variant-8_19956018_A_G-all.json` and `-p2.json`, all read):
-lipid, lipoprotein, fatty-acid, blood-cell, protein and coronary disease sets; none of a lifespan, longevity, healthspan
-or multivariate-ageing study (Rosoff's mvAge set is not among them). For row 52.
+rs268 (8_19956018_A_G) sits in 507 credible sets (`variant-8_19956018_A_G-all.json` and `-p2.json`, all 507 listed
+by trait): lipid, lipoprotein and fatty-acid sets, and outside them only red-cell, reticulocyte and platelet measures,
+disorders of lipoid metabolism, glycoprotein acetyls, eight plasma proteins (ANGPTL3, APOA1, APOC1, APOD, IL32, MENT, MFGE8, PLTP), a multi-trait
+sex score and coronary artery disease (two sets); none of a lifespan, longevity, healthspan or multivariate-ageing
+study (Rosoff's mvAge set is not among them). For row 52.
 
 > [q669] data.variant.credibleSets.rows[205] studyLocusId 73f3f8e5f6cf89c6d89d762b11fdbeb2 studyId GCST005194 pValueMantissa 4.504735946655273 pValueExponent -8 beta 0.00985076963903044 finemappingMethod SuSiE-inf
 

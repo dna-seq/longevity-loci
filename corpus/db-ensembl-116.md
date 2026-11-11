@@ -1263,8 +1263,8 @@ weakly: rs1464890 r² 0.40 (q350), rs2242487 0.33 (q351), rs12706910 0.22 (q352)
 
 > [q357] name rs268 MAF null var_class SNP source Variants (including SNPs and indels) imported from dbSNP most_severe_consequence missense_variant
 
-rs268 (`variation-rs268.json`): a missense variant, LPL's Asn291Ser by its usual name (the record names no protein
-change; Rosoff calls it exonic in LPL, pmid-37550455#q47). For row 52.
+rs268 (`variation-rs268.json`): a missense variant (the protein change is read from VEP, q367; Rosoff calls it exonic in
+LPL, pmid-37550455#q47). For row 52.
 
 > [q358] populations[33] frequency 0.01858 allele G population gnomADg:nfe allele_count 1264
 
@@ -1283,8 +1283,9 @@ row 52.
 > [q361] populations[78] frequency 0.00505050505050505 allele G population 1000GENOMES:phase_3:CEU allele_count 1
 
 1000 Genomes CEU: one copy of G among 198, so pairwise LD with rs268 from CEU (or GBR, also one copy) rests on one
-chromosome; the endpoint returned nothing for rs268 with rs15285 in CEU, GBR or EUR (`ld-rs268-rs15285`,
-`ld-gbr-…`, `ld-eur-…`), which at its 0.05 floor reads as no LD above it. For row 52.
+chromosome; the endpoint returned nothing for rs268 with rs15285 in CEU or GBR (`ld-rs268-rs15285`, `ld-gbr-…`),
+which at its 0.05 floor reads as no LD above it, on that one copy; the EUR request (`ld-eur-…`) also returned
+nothing, and whether EUR is a panel the endpoint serves is not known here, so that one is unknown, not a null. For row 52.
 
 > [q362] most_severe_consequence 3_prime_UTR_variant name rs15285
 
@@ -1297,7 +1298,8 @@ gnomAD genomes non-Finnish Europeans: T 0.292. For row 52.
 > [q364] populations[84] frequency 0.317097415506958 allele T population 1000GENOMES:phase_3:EUR allele_count 319
 
 1000 Genomes EUR: T 0.317. With rs268's G at 0.014, the largest r² two alleles of these frequencies can have is
-0.014 × 0.683 / (0.986 × 0.317), about 0.03 (derived), whichever alleles pair: rs268 and rs15285 are separate
+0.014 × 0.683 / (0.986 × 0.317), about 0.03; with gnomAD's 0.0186 and 0.292 (q358, q363), about 0.047 (both
+derived): below 0.05 either way, whichever alleles pair: rs268 and rs15285 are separate
 signals, as Open Targets' two separate coronary disease sets in one study also show (db-opentargets-26.09#q671,
 q678). For row 52.
 
@@ -1307,4 +1309,13 @@ rs15285 tags rs13702, LPL's other 3′ UTR SNP, at r² 0.98 (CEU). For row 52.
 
 > [q366] [0] variation2 rs328 r2 0.332365 variation1 rs15285 d_prime 0.999992 population_name 1000GENOMES:phase_3:CEU
 
-and rs328 (LPL Ser447Ter) at r² 0.33, D′ 1.0 (CEU). For row 52.
+and rs328, another LPL SNP, at r² 0.33, D′ 1.0 (CEU). For row 52.
+
+## Reading 2026-11-11, supplement
+
+> [q367] codons aAt/aGt variant_allele G sift_score 0.35 impact MODERATE amino_acids N/S polyphen_prediction benign gene_symbol LPL strand 1 cds_end 953 cdna_start 1141 sift_prediction tolerated protein_end 318 cds_start 953 polyphen_score 0.142 protein_start 318
+
+Ensembl VEP for rs268 (`vep-rs268.json`), transcript ENST00000650287 (LPL, protein coding): codon aAt to aGt, amino
+acids N/S at protein position 318, so G changes asparagine 318 to serine (Asn318Ser in this numbering, which counts
+the signal peptide). SIFT calls it tolerated (0.35), PolyPhen benign (0.142): the predictors do not call it damaging,
+and the row reads its effect from the association data, not from them. For row 52.
