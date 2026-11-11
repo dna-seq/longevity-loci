@@ -24,15 +24,19 @@ verdict_reason: >-
   D21's powered test. Deelen 2019 types it through the deletion: at the 99th percentile the deletion with A gives
   β +0.027 (SE 0.056), P 0.63, NECS's way but flat. Against NECS's crude log odds ratio 2.83 (SE about 0.51),
   one-sided power is about 1.00 and heterogeneity z about 5.4. Both conditions hold down to about a twentieth of
-  NECS's effect (factor 0.055), so the flag needs no calibration between the two extreme-survival scales. Deelen's
+  NECS's effect (factor 0.055), so the flag needs no calibration between the two extreme-survival scales. Read at A's
+  real frequency instead (about 0.10), the same Z implies a log odds ratio near 0.43 (SE about 0.08, factor 0.15,
+  derived): heterogeneity z about 4.2, power still about 1.00. Deelen's
   90th percentile is the same (P 0.28). FinnGen's death endpoint is null at the lead, leaning the other way (A 0.17,
   P 0.49). If the NECS A is something else, nothing measures the A a genome file reports. Neither reading leaves A
   protective. One thing leans NECS's way: Timmers 2019's parental lifespan has no line for the SNP or the deletion,
   but its r² 0.61 proxies, whose minor alleles ride with A, give one-sided P about 0.02 to 0.03 (rs12660804 P 0.040
   two-sided). At r² 0.6, below the 0.8 the rows use, with the phase derived, and with FinnGen leaning the other way
   at the same proxies and Deelen flat, it is named, not counted as D25.1's independent support; that reading is put
-  to the lead, and C (as row 19) is the alternative. Healthspan is untested: Zenin 2019's file has no line for the
-  SNP or the deletion, and the r² 0.61 proxies are flat (P about 0.39). Lifespan is 0 (FinnGen at the lead) and
+  to the lead, and C (as row 19) is the alternative. A literature search on the rsID (2026-11-11, six services)
+  finds only Gurinovich 2021: no later test, and the sequencing the authors asked for has not been reported.
+  Healthspan is untested: Zenin 2019's file has no line for the SNP or the deletion, under any of their merged
+  ids or at the position, and the r² 0.61 proxies are flat (P about 0.39). Lifespan is 0 (FinnGen at the lead) and
   exceptional survival 0 (Deelen through the deletion). The GWAS Catalog records no other trait, so the mechanism is
   unknown, filed as general ageing as row 26 is. Open Targets 26.09 has no record of the SNP or of the deletion, and
   none of Gurinovich's five sets lies here, so causal and effector confidence are C4 and E4 and no gene is named. Age
@@ -139,24 +143,4 @@ studies:
     effect_allele: A
     direction: protective
     statistical_test: "Deelen 2019's summary statistics (GCST008598), the same deletion line: d 0.10, beta +0.0372, SE 0.0344, effective N 11,050 (q99), one-sided P about 0.14 (derived); the 99th percentile's cases are a subset; the r² 0.61 proxy rs12660804 P 0.70 (q101)"
-    curator: claude-opus-5-5
-  - rsid: rs114658003
-    note: pmid-30642433
-    quote: q216
-    phenotype_class: PARENTAL_LIFESPAN
-    study_design: parental_lifespan_cox
-    population: European (UK Biobank and the LifeGen cohorts)
-    ancestry: [EUR]
-    sample_size: 637314
-    sample_unit: lives
-    stat_significance: nominal
-    p_value: "0.040059265"
-    p_value_num: 0.040059265
-    proxy_rsid: rs12660804
-    effect_size: 0.01628031
-    effect_measure: beta
-    effect_unit: beta1 on parental lifespan per C allele of rs12660804 (printed for T, sign turned), longer positive
-    effect_allele: A
-    direction: protective
-    statistical_test: "Timmers 2019's summary statistics (GCST009890) hold no line for rs114658003 or the deletion rs66927770. Its r² 0.61 proxy rs12660804 (D′ 1.00, db-ensembl-116#q276): T beta -0.0163 (SE 0.0079), so C, 0.069, the minor allele riding with A (derived from r² and frequencies, not phased), +0.0163, P 0.040, one-sided about 0.020 (q216); rs17059662 A P 0.055 (q217), rs11967198 A P 0.058 (q218). Not counted as D25.1's independent support: r² 0.61 is below the 0.8 the rows use, the phase is derived, and at the same proxies FinnGen leans the other way (db-finngen-r11#q15) and Deelen is flat (pmid-31413261#q101, q102). Put to the lead"
     curator: claude-opus-5-5
