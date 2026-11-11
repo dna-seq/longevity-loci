@@ -456,3 +456,15 @@ Liu et al.'s longevity (GCST012210), T β 0.1464 (CI 0.09 to 0.203), P 4 × 10�
 The catalog's one association at rs78043944 (row 19): Gurinovich's centenarian GWAS (GCST012419), A, P 4 × 10⁻⁹.
 Its "beta 5.8755207 unit increase" is the paper's score Z (pmid-33948810#q4, 5.875520619), not an effect size, and
 its risk frequency 0.0065 is the controls' frequency of A. No other trait is recorded for the variant.
+
+> [q139] . initial_sample_size 1,320 European ancestry cases, 2,899 European ancestry controls replication_sample_size 312 Ashkenazi Jewish ancestry cases, 638 Ashkenazi Jewish ancestry controls gxe false gxg false snp_count 9039731 imputed true pooled false accession_id GCST012419 full_summary_stats_available false user_requested false pubmed_id 33948810 platforms Illumina [9039731] (imputed) disease_trait Longevity (100 years and older) full_summary_stats NA terms_of_license https://www.ebi.ac.uk/about/terms-of-use/
+
+Gurinovich's study record (GCST012419): discovery 1,320 cases and 2,899 controls, both of European ancestry, HRC
+imputed; replication 312 Ashkenazi cases and 638 controls (the abstract says 480 and about 800, pmid-33948810#q2).
+The source of "European" for the NECS sample, the paper's own wording unread. For row 19.
+
+> [q140] _embedded.associations[0].mapped_genes[0] HMGB3P12
+
+> [q141] _embedded.associations[0].mapped_genes[1] VENTXP4
+
+The catalog maps rs78043944 to HMGB3P12 and VENTXP4, where Supplement Table 1 names LINC00692 and LRRC3B. For row 19.

@@ -347,3 +347,10 @@ Genomes EUR (CEU 0.18), 0.0069 in gnomAD non-Finnish Europeans and 0.0017 in gno
 (0.0065, pmid-33948810#q4) and Zenin's UK Biobank (0.0054) agree with gnomAD, so 1000 Genomes' call at this site is the
 likely outlier; by gnomAD about 98.6 in 100 Europeans are G/G, 1.4 G/A, and A/A about 5 in 100,000. Open Targets'
 id is 3_26327009_G_A. For row 19.
+
+> [q88] populations[13] frequency 0.2643 allele_count 7865 population gnomADg:afr allele A
+
+> [q89] populations[49] allele A allele_count 482 frequency 0.364599092284418 population 1000GENOMES:phase_3:AFR
+
+A is common in Africans (gnomAD 0.26, 1000 Genomes AFR 0.36) and rare in Europeans (q86), so a small difference in
+African ancestry between cases and controls would shift its frequency on its own. For row 19.

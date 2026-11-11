@@ -7,21 +7,24 @@ locus_id: 19
 locus_name: HMGB3P12
 verdict: re-tiered
 verdict_reason: >-
-  Tier C, down from the seed's B: an unreplicated comparison of centenarians with younger controls, which R-TIER-2
-  caps at C. Gurinovich 2021 compared 1,320 New England Centenarian Study centenarians (median age 104) with 2,899
-  controls, imputed to the HRC panel. A, the rare allele, is in 2.35 % of the centenarians' alleles and 0.65 % of the
+  Tier C, down from the seed's B: an unreplicated centenarian case-control comparison, which R-TIER-2 caps at C (the
+  controls' ages are in the unread main text, so the rule is applied on the design). Gurinovich 2021 compared 1,320
+  New England Centenarian Study centenarians (median age 104) with 2,899 controls, all of European ancestry by the GWAS
+  Catalog's study record, imputed to the HRC panel. A, the rare allele, is in 2.35 % of the centenarians' alleles and 0.65 % of the
   controls': score Z +5.88, P 4.22e-9, genome-wide (Supplement Table 1). The paper reports a score test Z, not an
-  effect size: the GWAS Catalog's "beta 5.8755" is that Z, copied by Open Targets, and the crude odds ratio from the
+  effect size: the GWAS Catalog's "beta 5.8755" is that Z, as is Open Targets' copy, and the crude odds ratio from the
   two frequencies, about 3.7, is unadjusted and derived here. The abstract says the genetic associations were
   replicated in an Ashkenazi Jewish GWAS of 480 centenarians, but not which SNPs; the main text is not open, and
   rs78043944 is not among the 56 SNPs whose Ashkenazi results Supplement Table 2 prints. A is about 0.2 % in Ashkenazi
   Jews by gnomAD, so that cohort could barely test it. Replication is unknown, not failed. The variant's frequency is
   itself in doubt, which is the confounding R-TIER-2 names: gnomAD Europeans 0.0069, NECS controls 0.0065 and UK
   Biobank 0.0054 agree, while 1000 Genomes gives 0.14, and Timmers 2019's cohorts range from 0.005 to 0.13 (imputation
-  info 0.89), so a reference panel decides how common A looks. No other study supports it. Timmers' parental
-  lifespan is null (P 0.62, A on the shorter side) and is uninterpretable with that frequency spread. Zenin 2019's
+  info 0.89), so a reference panel decides how common A looks. A is also common in Africans (gnomAD 0.26) and rare
+  in Europeans, so a small difference in ancestry between cases and controls would shift it on its own. No other
+  study supports it. Timmers' parental lifespan is null (P 0.62, A on the shorter side), a null weakened by that
+  frequency spread. Zenin 2019's
   healthspan is null (P 0.71). Deelen 2019's longevity files do not hold the variant. Lifespan is filed 0, healthspan
-  0, exceptional survival + on the paper's own result. The evidence is European (NECS). Mechanism general ageing:
+  0, exceptional survival + on the paper's own result. The evidence is European. Mechanism general ageing:
   nothing assesses one, since the GWAS Catalog holds no other trait for the variant and Open Targets no other set.
   Causal C1 by §4.2's threshold, but with little meaning: the one set is Gurinovich's own, a PICS set built from
   the reported top hit, and a rare variant with no LD partners makes a one-variant set at posterior 1 by
@@ -29,18 +32,18 @@ verdict_reason: >-
   and the sources name different nearest genes (LINC00692 and LRRC3B in the paper, HMGB3P12 and VENTXP4 in the
   catalog). The protection is a presence: the rare A goes with reaching 100. Age of action is unknown.
 axes:
-  tier: {value: C, cites: [pmid-33948810#q1, pmid-33948810#q2, pmid-33948810#q3, pmid-33948810#q4, pmid-33948810#q5, pmid-30642433#q57, pmid-30729179#q37, db-ensembl-116#q85, db-ensembl-116#q86, db-ensembl-116#q87, db-gwascatalog-2026.10.29#q135]}
+  tier: {value: C, cites: [pmid-33948810#q1, pmid-33948810#q2, pmid-33948810#q3, pmid-33948810#q4, pmid-33948810#q5, pmid-30642433#q57, pmid-30729179#q37, db-ensembl-116#q85, db-ensembl-116#q86, db-ensembl-116#q87, db-ensembl-116#q88, db-gwascatalog-2026.10.29#q135, db-gwascatalog-2026.10.29#q139, db-opentargets-26.09#q206]}
   mechanism: {value: general_ageing, cites: [db-gwascatalog-2026.10.29#q138, db-opentargets-26.09#q198]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "+",
             cites: [pmid-30729179#q37, pmid-30642433#q57, pmid-33948810#q4]}
   actionability: {label: descriptive, cites: [pmid-33948810#q4]}
-  context: {values: [eur_only_evidence], cites: [pmid-33948810#q1, pmid-30642433#q57, pmid-30729179#q37]}
+  context: {values: [eur_only_evidence], cites: [db-gwascatalog-2026.10.29#q139, pmid-30642433#q57, pmid-30729179#q37]}
 flags:
   - {token: "PROTECT:PRESENCE", cites: [pmid-33948810#q3, pmid-33948810#q4, db-ensembl-116#q86]}
   - {token: "causal:C1", cites: [db-opentargets-26.09#q198, db-opentargets-26.09#q199, db-opentargets-26.09#q200, db-opentargets-26.09#q201, db-opentargets-26.09#q202]}
-  - {token: "effector:E3", cites: [db-opentargets-26.09#q203, db-opentargets-26.09#q204, db-opentargets-26.09#q205, pmid-33948810#q4, db-gwascatalog-2026.10.29#q135]}
+  - {token: "effector:E3", cites: [db-opentargets-26.09#q203, db-opentargets-26.09#q204, db-opentargets-26.09#q205, pmid-33948810#q4, db-gwascatalog-2026.10.29#q140, db-gwascatalog-2026.10.29#q141]}
 variants:
   - rsid: rs78043944
     gene: ""
@@ -60,7 +63,7 @@ variants:
         state: protective
         conclusion: >-
           You carry one copy of a rare version of this DNA region (about 1 in 100 people of European ancestry do).
-          In one American study, people who reached 100 carried it more often than younger people. It has not been
+          In one American study, people who reached 100 carried it more often than other people did. It has not been
           confirmed in another group, and how common it really is differs between reference databases. It is early
           evidence, not a verdict.
       - genotype: A/A
@@ -68,7 +71,7 @@ variants:
         conclusion: >-
           You carry two copies of a very rare version of this DNA region (far fewer than 1 in 1,000 people of
           European ancestry do). In one American study, people who reached 100 carried this version more often than
-          younger people. It has not been confirmed in another group, and no one with two copies was studied on
+          other people did. It has not been confirmed in another group, and no one with two copies was studied on
           their own. It is early evidence, not a verdict.
 studies:
   - rsid: rs78043944
@@ -76,7 +79,7 @@ studies:
     quote: q4
     phenotype_class: EXTREME_SURVIVAL_CC
     study_design: centenarian_case_control
-    population: European ancestry (New England Centenarian Study; centenarians, median age 104, against unrelated controls)
+    population: European ancestry by the GWAS Catalog's record (db-gwascatalog-2026.10.29#q139; New England Centenarian Study; centenarians, median age 104, against unrelated controls, their ages unread)
     ancestry: [EUR]
     sample_size: 4219
     sample_unit: individuals
@@ -104,7 +107,7 @@ studies:
     effect_unit: log hazard protection per A allele in self (positive = longer life)
     effect_allele: A
     direction: risk
-    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), direction -+; A frequency 0.089 pooled, 0.0053 to 0.130 across cohorts, imputation info 0.89: the cohorts disagree on the variant's frequency, so the null is uninterpretable"
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), direction -+; A frequency 0.089 pooled, 0.0053 to 0.130 across cohorts, imputation info 0.89: the cohorts disagree on the variant's frequency, which weakens the null"
     curator: claude-opus-5-5
   - rsid: rs78043944
     note: pmid-30729179

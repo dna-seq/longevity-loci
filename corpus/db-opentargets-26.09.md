@@ -836,3 +836,7 @@ rs78043944 (3_26327009_G_A, row 19) is in one credible set, Gurinovich's own (GC
 hit, one variant at posterior probability 1. A rare variant with no LD partners in the reference makes a one-variant
 PICS set by construction, so the PIP restates the lead rather than resolving a locus. L2G's top gene LRRC3B, 0.43;
 no colocalisation.
+
+> [q206] data.variant.credibleSets.rows[0] studyLocusId ab13a68d63289f1922a881c2fcd8b7af pValueMantissa 4 pValueExponent -9 beta 5.8755207
+
+The set's "beta 5.8755207" is the catalog's, so the paper's score Z again (db-gwascatalog-2026.10.29#q135). For row 19.
