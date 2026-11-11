@@ -67,6 +67,8 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
 - Proxy studies now recur (10 RABGAP1L's study at rs16847402 carries the proxy's C, 756730c), so the LPA finding
   (a proxy's allele must not land on the lead's row) is general, not LPA's. Check 0.8's proxy rsid column takes
   it. Effect alleles are harmonised to the lifespan-increasing allele (D17.4).
+- A study may print a Z, not a beta (19 HMGB3P12, Gurinovich 2021; the GWAS Catalog files that Z as "beta").
+  Check the format's effect_measure takes a Z score, else the export leaves effect_size empty, never a beta.
 - Plugin pinned at v0.48.6 (the liaison, f69789a; toolchain unchanged, format 0.7.1): `validate_module` returns
   `warnings_summary` and `carried`; the polygon's 409 is named as the instance's format skew; the GWAS fix
   (RM428) is on the compiler's main, unreleased. The new session after waking loads the new pin.
