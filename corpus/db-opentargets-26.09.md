@@ -2076,3 +2076,14 @@ Open Targets 26.09 holds no variant record for rs114658003 (variant `6_99603424_
 `variant-rs114658003.json` and `variant-rs66927770.json`). Gurinovich's study GCST012419 has five PICS sets (q574),
 led by rs78043944, rs77184423, rs429358, rs77546126 and rs10973748; none at 6q16. So no set holds the lead, and its
 causal and effector confidence could not be assessed. For row 41.
+
+## Reading 2026-11-11, record
+
+> [q575] data.search total 0
+
+> [q576] data.credibleSets count 0
+
+Open Targets 26.09 holds no variant record for rs1627804 (`6_107079224_C_A`, "data variant null", the text of q411;
+`variant-rs1627804.json`); a search for the rsID returns nothing (q575), as do searches for its proxies rs1630395,
+rs1618476 and rs36101665. The eight lifespan-class studies' credible sets hold none at the lead
+(`credibleSets-longevity8-6_107079224_C_A`, q576). So causal and effector confidence could not be assessed. For row 42.

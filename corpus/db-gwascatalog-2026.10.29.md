@@ -981,3 +981,19 @@ ancestry; some are Japanese (Kanai 2018's blood pressure at rs16896398, a uric-a
 rs114658003: one association in the catalog, Gurinovich 2021's (GCST012419, Longevity (100 years and older)),
 A "increase", P 4 × 10⁻⁸ (q290, q291). Its "beta 5.5104795" is the paper's score Z (pmid-33948810#q22), and its
 risk frequency 4.0E-4 is NECS's controls' A. No other trait is recorded (q292). For row 41.
+
+## Reading 2026-11-11, record
+
+> [q293] _embedded.associations[0].reported_trait[0] Parental longevity (both parents in top 10%)
+
+> [q294] _embedded.associations[1] association_id 35691727 risk_frequency 0.684 pvalue_description  pvalue_mantissa 4 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.013-0.027] beta 0.0197 unit increase p_value 4e-08 accession_id GCST006702 pubmed_id 29227965 first_author Pilling LC ci_lower 0.013 ci_upper 0.027
+
+> [q295] page size 100 totalElements 2 totalPages 1 number 0
+
+> [q296] page size 100 totalElements 0 totalPages 0 number 0
+
+rs1627804: two associations, both Pilling 2017's (q295). Parents' age at death, C β +0.0197, P 4 × 10⁻⁸ (GCST006702,
+q294), and both parents in the top 10 %, P 5 × 10⁻⁶ (GCST006698, q293), which records C as the effect allele but no
+estimate ("beta -"), so the top-10 % result has no direction here. No other trait. Its eleven proxies at r² ≥ 0.8
+(db-ensembl-116#q285 and the reading there) hold no association at all: each query returns q296's empty page (one
+cached file per rsID, `associations-<rsid>.json`). For row 42.

@@ -1011,3 +1011,22 @@ A travel together. That NECS's imputation split them, calling A without the dele
 miscall, derived, not shown: the HRC panel's site list is not read. In the CEU window nothing besides the deletion passes r² 0.8;
 seven pass 0.6, all at r² 0.61 and D′ 1.00 (rs12660804, q276, and six more), whose minor alleles (about 0.05 to 0.07)
 ride with A by r² and frequency (derived, not phased). For row 41.
+
+## Reading 2026-11-11, record
+
+> [q281] mappings[0] seq_region_name 6 location 6:107079224-107079224 coord_system chromosome end 107079224 start 107079224 assembly_name GRCh38 ancestral_allele C allele_string C/A/G/T strand 1
+
+> [q282] populations[22] allele_count 21538 allele A population gnomADg:nfe frequency 0.317
+
+> [q283] populations[78] frequency 0.314115308151093 population 1000GENOMES:phase_3:EUR allele A allele_count 316
+
+> [q284] [68] r2 0.335381 population_name 1000GENOMES:phase_3:CEU variation1 rs1627804 variation2 rs9384641 d_prime 0.999979
+
+> [q285] [51] variation2 rs1630395 variation1 rs1627804 r2 1.000000 population_name 1000GENOMES:phase_3:CEU d_prime 1.000000
+
+Row 42's lead rs1627804, intronic in BEND3, GRCh38 6:107,079,224 (q281; GRCh37 107,400,428), C ancestral and the
+reference, A the alternative. A is 0.317 in gnomAD's non-Finnish Europeans (q282), 0.314 in 1000 Genomes EUR (q283),
+0.28 in CEU, 0.43 in Finns, about 0.31 overall: C/C is the most common European genotype (about 47 in 100, C/A 43,
+A/A 10, derived). The CEU window (±500 kb, r² ≥ 0.05; `ld-window-ceu-rs1627804`) holds eleven SNPs at r² ≥ 0.8, ten
+at r² 1.00 (rs1630395, q285; rs61282127, rs311217 to rs311220, rs311224, rs1762716, rs1665909, rs1618476) and
+rs36101665 at 0.98; five more at 0.75. Wright's fathers' tag rs9384641 has r² 0.34, D′ 1.00 (q284). For row 42.

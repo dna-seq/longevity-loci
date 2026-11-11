@@ -89,3 +89,19 @@ death, P 0.49 (q14), A leaning toward more death, the other way from NECS (one-s
 derived). FinnGen holds the deletion rs66927770 beside it with the same frequency and statistics (q13), so it types
 the two together. The r² 0.61 proxy's C, which rides with A: β +0.0127, P 0.31 (q15), the same lean. FinnGen's scale
 differs from NECS's and D25.12's second factor is not computed, so it is not used for D21's flag. For row 41.
+
+## Reading 2026-11-11, record
+
+The DEATH file again, BEND3's window (`rows-610fc7c0`, GRCh38 6:107.00 to 107.10 Mb).
+
+> [q16] 6 107079224 C A rs1627804 BEND3 0.639433 0.194205 -0.0035111 0.00749448 0.421722 0.420805 0.421837
+
+> [q17] 6 107078153 T C rs9384641 BEND3 0.378934 0.421436 0.00675296 0.00767503 0.369487 0.373316 0.369007
+
+rs1627804, alt A (0.42 in Finns, against 0.32 in non-Finnish Europeans): β −0.0035 (SE 0.0075) on death, P 0.64
+(q16), A leaning slightly toward less death, the other way from the discovery (one-sided P in its direction about
+0.68, derived). D21 under APOE's factor within FinnGen (0.99, row 40's reading): Timmers' A β −0.0157
+(pmid-30642433#q28) predicts A +0.0155, one-sided power about 0.67, heterogeneity z 2.23, P about 0.026 (derived).
+The power is under 0.8, so it is no red flag under that calibration, and a flag needs both (D25.3): no red flag,
+whatever D25.12's uncomputed second factor gives. Wright's tag rs9384641, alt C: β +0.0068, P 0.38 (q17), C leaning
+toward more death, the same reverse lean. For row 42.
