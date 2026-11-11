@@ -135,6 +135,8 @@ verdicts only.
 - `uv run loci fetch PMID…`: an article's text into `$LOCI_CACHE` (Europe PMC's open full text, else the abstract).
 - `uv run loci fetch-supp KEY LOCATOR`: an article's supplement, data deposit (`zenodo:ID`, `figshare:ID`) or code file
   into `$LOCI_CACHE` as text, beside the article's, where a quote read at depth `supplement` is checked.
+- `scripts/dashboard.py`: the curation dashboard's text (progress, rates, pacing against the weekly cap), which the lead's
+  watcher `dashboard` keeps posted.
 - `uv run loci check quotes`: every note's quote is found verbatim in `$LOCI_CACHE`. Exit 0 passed, 1 a failure,
   2 no cache set, 4 some quotes could not be checked (unknown, not passed).
 

@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- A curation dashboard in `#longevity-loci > dashboard`: seed loci done, tiers, rows per hour and the weekly quota's burn as moving averages with a 3-hour half-life, and what is left before the 80% cap. `scripts/dashboard.py` writes it; the lead's watcher `dashboard` keeps it up to date every 10 minutes; the readings stay outside the repository.
 - `study_design: current_age_quantitative`, for a GWAS of participants' current age (Wright 2019's AncestryDNA arm): cross-sectional viability, confirmation only (§4.5).
 - A healthspan locus scores with a lifespan study at p < 0.05 on the same allele and direction beside it; with none it is tier C (D16).
 - A database release's record is cached and its quotes checked (RM3): `loci fetch-supp db-<database>-<release> …` takes Open Targets' GraphQL (`opentargets:<query>`), Ensembl's REST (pairwise LD among it) or a summary-statistics file, refuses a release other than the key's where the database states one, and caches a JSON answer one object a line.
