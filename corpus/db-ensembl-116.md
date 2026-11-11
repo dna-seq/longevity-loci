@@ -477,3 +477,16 @@ aging-GIP1 lead rs362273: r² 0.67 to rs61348208 in EUR and 0.76 in EAS, 0.98 to
 0.91. Wright 2019's clumped AncestryDNA SNPs in the window (fathers born 1886-1940, Supplemental Table 8; no mothers'
 SNP there) are no tag: the nearest, rs363096 (r² 0.43) and rs11731237 (0.32), the rest under 0.19 (cached as
 ld-rs61348208-<rsid>), so AncestryDNA is not read at the lead.
+
+> [q128] [0] variation2 rs2285086 r2 0.834542 variation1 rs61348208 d_prime 1.000000 population_name 1000GENOMES:phase_3:EUR
+
+rs2285086, 305 bp from the lead (Timmers 2019's Figure 4 look-up SNP, pmid-30642433#q72), r² 0.83, D′ 1.
+
+The phase of each partner with the lead's T (0.39, pmid-30642433#q66), from frequency and r² alone. For alleles at
+frequencies p and q, the r² ceiling is D_max² / (p(1−p)q(1−q)), with D_max = min(p(1−q), (1−p)q) when the two ride
+together and min(pq, (1−p)(1−q)) when they are opposed. rs82334's C at 0.32 (pmid-34431594#q4): with T, ceiling 0.73;
+against T, 0.30; observed 0.66 (q119), so C rides with T. rs362273's G at 0.32 (pmid-37118362#q8, the meta-analysis
+frequency): the same ceilings, observed 0.67 (q122), so G rides with T. rs16843836's A at 0.31 (pmid-37550455#q21):
+with T 0.70, against T 0.29, observed 0.70 (q118), so A with T. rs2285086's G at 0.427 (pmid-30642433#q72): with T
+0.86, against T 0.48, observed 0.83, so G with T. Derived in Europeans; no East Asian frequency of the lead is cached,
+so the East Asian phase is assumed the same, not shown. For row 25.

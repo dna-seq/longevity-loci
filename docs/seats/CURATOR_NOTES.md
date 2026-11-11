@@ -163,6 +163,11 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   MSANTD1 L2G 0.55) would make it E3; told to the lead as a default. The seed's ADD1 (rs16843603) and MSANTD1
   (rs114298671) are separate signals (r² < 0.1); ADD1 looks like a B candidate under D16 (mvAge 4e-10, lifespan
   2.6e-7, FinnGen/BBJ P 0.042), no seed locus of its own.
+  Corrected after the advisor's read: Timmers' set holds rs16843836 and rs82334 too (a credibleSets listing shows only
+  25 locus rows; query a set's own `locus(variantIds:...)` for a PIP); phases shown by frequency and r² ceilings, never
+  by direction; Timmers' Figure 4 look-up added with its D21 numbers; the conclusions say the SNP is not the
+  Huntington's repeat. Owed: Timmers 2019's age-band source data (the seed's K_timmers2019_age_bands.csv) for the
+  Table 1 rows (7, 12, 25).
 - **Done: the colocalisation sweep** (2026-11-11). Queries before then returned GWAS partners only (Open Targets lists
   QTL partners only when `studyTypes` names them). Re-read with the QTL types and `isTransQtl` (trans QTLs are not
   counted), 15 rows, not the 9 first listed: the E2 rows' "no colocalisation read" needed it too. A minor rival made

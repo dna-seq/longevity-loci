@@ -1438,8 +1438,17 @@ its QTL colocalisations (cis only, H4 ≥ 0.8, D24), and the GWAS colocalisation
 
 Of the eight lifespan-class studies, one set holds rs61348208: Timmers 2019's (GCST009890, 0818ea59, PICS), 70
 variants, the lead first at PIP 0.108, the next 0.029. mvAge's set (GCST90321079, 0e5bde67, PICS, 39 variants) is led
-by rs16843836 at 0.064 and holds rs82334 (0.025), not rs61348208. Atkins' rs82334 is in no other lifespan-class set.
-The lead sits at C2 by 0.008 in a flat set: the causal variant is not resolved.
+by rs16843836 at 0.064 and holds rs82334 (0.025), not rs61348208. The queries by variant return Timmers' set for
+rs16843836 and rs82334 as well (each count 2); the listing above shows only the first 25 of its 70 variants, and the
+set's own locus filtered to the two (set-0818ea59-locus-htt-proxies) gives their PIPs:
+
+> [q408] data.credibleSet.locus.rows[0] posteriorProbability 0.003401829497442979
+
+> [q409] data.credibleSet.locus.rows[1] posteriorProbability 0.0025415823557971566
+
+rs16843836 0.0034 and rs82334 0.0025 in Timmers' set. So Timmers' set holds all three; mvAge's holds rs16843836 and
+rs82334 (158's own variant), not rs61348208. The lead sits at C2 by 0.008 in a flat set: the causal variant is not
+resolved.
 
 ### Locus-to-gene
 
@@ -1496,9 +1505,10 @@ GTEx muscle), HTT-AS 3 (eQTL; 0.96), 3 of 40, under a tenth. mvAge's set: 29, 18
 7, transcript 3, eQTL 3), RGS12 4, MSANTD1 1.
 
 Under D24, counting the sets that hold the lead (Timmers' alone): HTT colocalises, no gene passes L2G and HTT-AS holds
-under a tenth, so HTT at E2 by colocalisation alone. Counting mvAge's set too (the same signal, r² 0.70, but not
-holding the lead): MSANTD1 passes L2G there (0.55), which D24 makes ambiguous, E3. Row 25 takes the first, by the
-sweep's rule of the sets that hold the lead.
+under a tenth, so HTT at E2 by colocalisation alone. Counting mvAge's set too (the same signal, r² 0.70, holding
+158's own variant rs82334 but not the lead): MSANTD1 passes L2G there (0.55), which D24 makes ambiguous, E3. Row 25
+is committed at E2 by the sweep's rule of the sets that hold the lead; with 158 folded in, which sets are the row's
+is put to the lead.
 
 ### GWAS colocalisations of Timmers' set
 
