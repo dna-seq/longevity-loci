@@ -975,3 +975,73 @@ IP6K1 2. Expression, transcript-usage and splicing QTLs, most from GTEx.
 
 The first rows: RNF123 (an oesophageal-mucosa expression QTL, H4 0.93) and UBA7. No single gene: effector E3 stands on
 ambiguity, not on an absence of QTL colocalisation. For row 21.
+
+## Reading 2026-11-11, record
+
+NLGN1's lead rs472103 (3_173404702_A_C), row 24.
+
+> [q250] data.variant.credibleSets count 180
+
+180 credible sets hold the variant (two pages read): 179 GWAS and one expression QTL. The only one of a scoring class
+is Rosoff's mvAge set (GCST90321079); no lifespan, longevity or healthspan GWAS set holds it. The rest are adiposity
+and body composition (BMI ten, weight, waist, hip, fat mass and percentages), type 2 diabetes, reticulocyte
+measures, lipoprotein and fatty-acid fractions, smoking initiation and insomnia.
+
+> [q251] data.variant.credibleSets.rows[7] studyLocusId 05b358d81029716a026befb58c86a556 pValueMantissa 7 pValueExponent -17 beta 0.01618
+
+> [q252] data.variant.credibleSets.rows[7].study id GCST90301650 traitFromSource Body mass index studyType gwas target null
+
+> [q253] data.variant.credibleSets.rows[7].variant id 3_173396515_A_G
+
+Hawkes's BMI set, led by rs529200 (3_173396515_A_G): β +0.0162 per G. G is the allele that rides with the lead's C
+(db-ensembl-116#q114, q115, derived), so the lead's A lowers BMI. Of the 37 body-size and body-composition sets
+(BMI, weight, waist, hip, fat and fat-free mass) led by rs529200, rs583514 or rs247975, each counting the allele that
+rides with the lead's C by the same frequency reading, 32 give that allele the higher value, 3 print no β, and
+Harris 2024's two (below) run the other way.
+
+> [q254] data.variant.credibleSets.rows[56] studyLocusId 4c4290dfb79586288be204fcdc8ad9e3 pValueMantissa 3 pValueExponent -15 beta -0.0190525
+
+> [q255] data.variant.credibleSets.rows[56].study id GCST90428119 traitFromSource Body mass index studyType gwas target null
+
+Harris 2024's BMI set (GCST90428119): β −0.019 per G, the other way; its whole-body fat-mass set too. Against the
+rest, not read further.
+
+> [q256] data.variant.credibleSets.rows[66] studyLocusId 5648327c81f4793b9b1ac29e066ad5fd pValueMantissa 2 pValueExponent -11 beta 0.0254
+
+> [q257] data.variant.credibleSets.rows[66].study id GCST010557 traitFromSource Type 2 diabetes studyType gwas target null
+
+> [q258] data.variant.credibleSets.rows[66].variant id 3_173389653_T_C
+
+A type 2 diabetes set led by rs247975 (3_173389653_T_C): β +0.025 per C, C riding with the lead's C (pmid-31484785
+q59's reading): the lead's A goes with less type 2 diabetes too, not a trade-off.
+
+> [q259] data.credibleSet finemappingMethod PICS confidence PICS fine-mapped credible set based on reported top hit
+
+> [q260] data.credibleSet.locus count 16
+
+> [q261] data.credibleSet.locus.rows[0] posteriorProbability 0.14131993002576904
+
+> [q262] data.credibleSet.locus.rows[1] posteriorProbability 0.09462180972921529
+
+Rosoff's mvAge set: PICS from the reported top hit, 16 variants; rs472103 leads at 0.141, the next at 0.095.
+
+> [q263] data.credibleSet.l2GPredictions.rows[0] score 0.9233385324478149
+
+> [q264] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol NLGN1
+
+Locus-to-gene: NLGN1 at 0.92.
+
+> [q265] data.credibleSet.colocalisation count 2
+
+> [q266] data.credibleSet.colocalisation.rows[0] rightStudyType eqtl h4 0.9734951346983705 clpp 0.0324101844088943
+
+> [q267] data.credibleSet.colocalisation.rows[0].otherStudyLocus.study.target approvedSymbol NLGN1
+
+Queried with the QTL study types: two QTL colocalisations, both NLGN1 expression (the gene, H4 0.975, and its
+transcript ENST00000423427, H4 0.973; brain dorsolateral prefrontal cortex, CommonMind).
+
+> [q268] data.credibleSet.colocalisation count 223
+
+223 colocalisations with GWAS sets (three pages read), dominated at H4 ≥ 0.8 by BMI, weight, waist, hip and fat
+mass, with type 2 diabetes, reticulocytes, lipoprotein fractions, smoking initiation and insomnia. Colocalisation
+carries no direction.

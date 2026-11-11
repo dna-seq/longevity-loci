@@ -562,3 +562,20 @@ cached text does not list rs2271961; this record is the source, as at row 11.
 
 Friligkou 2024's anxiety disorder: T, β 0.011 "unit decrease", P 2 × 10⁻⁹. Zhong 2019's tea consumption: C, β 0.0081
 increase, P 9 × 10⁻⁸ (suggestive). Neither is read as a mechanism.
+
+## Reading 2026-11-11, record
+
+> [q176] _embedded.associations[0] association_id 131476466 risk_frequency NR pvalue_description pvalue_mantissa 7 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range [0.0039-0.0079] beta 0.005891484 unit increase p_value 7.000000000000001e-09 accession_id GCST90321079 pubmed_id 37550455 first_author Rosoff DB ci_lower 0.0039 ci_upper 0.0079
+
+> [q177] _embedded.associations[0].snp_effect_allele[0] rs472103-A
+
+rs472103's one record: Rosoff 2023's mvAge (GCST90321079), A, β 0.0059 increase, P 7 × 10⁻⁹. For row 24.
+
+> [q178] _embedded.associations[7] association_id 91631931 risk_frequency 0.4889 pvalue_description pvalue_mantissa 2 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range [0.013-0.026] beta 0.0199 unit decrease p_value 2e-09 accession_id GCST90020053 pubmed_id 34431594 first_author Atkins JL ci_lower 0.013 ci_upper 0.026
+
+> [q179] _embedded.associations[7].snp_effect_allele[0] rs583514-T
+
+rs583514 (GRCh38 3:173,396,377; 26 kb from the lead, r² 0.86, db-ensembl-116#q113): Atkins 2021's frailty index
+(GCST90020053, PMID 34431594), T, β 0.0199 decrease, P 2 × 10⁻⁹, risk frequency 0.489. T lowers frailty. T is the
+lead's A by frequency (Timmers' file: T 0.487, A 0.466; only that phase fits r² 0.86; derived), and both lengthen
+parents' lives there. For row 24.

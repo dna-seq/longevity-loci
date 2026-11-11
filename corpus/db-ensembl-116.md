@@ -425,3 +425,24 @@ already cached for row 17). For row 17's Deelen cluster (pmid-31413261#q46).
 
 rs2607770 is in perfect LD with the TMEM43 lead rs1043943 in 1000 Genomes EUR (r² 1.0), one of 22 variants at r² ≥ 0.8
 in the cached 500 kb window. For row 18's proxies in Timmers 2019 (pmid-30642433#q63, q64).
+
+> [q110] populations[10] population gnomADg:nfe allele A allele_count 30664 frequency 0.4516
+
+> [q111] populations[77] population 1000GENOMES:phase_3:EUR frequency 0.465208747514911 allele A allele_count 468
+
+> [q112] [0] d_prime 0.971454 population_name 1000GENOMES:phase_3:EUR r2 0.925069 variation1 rs472103 variation2 rs247975
+
+> [q113] [0] variation2 rs583514 r2 0.861476 variation1 rs472103 d_prime 0.991204 population_name 1000GENOMES:phase_3:EUR
+
+> [q114] [0] variation1 rs472103 variation2 rs529200 r2 0.941602 d_prime 0.995852 population_name 1000GENOMES:phase_3:EUR
+
+> [q115] populations[82] allele A allele_count 481 population 1000GENOMES:phase_3:EUR frequency 0.478131212723658
+
+> [q116] mappings[0] seq_region_name 3 allele_string A/C/T coord_system chromosome assembly_name GRCh38 ancestral_allele C location 3:173404702-173404702 end 173404702 strand 1 start 173404702
+
+> [q117] mappings[0] location 3:173389653-173389653 strand 1 coord_system chromosome assembly_name GRCh38 ancestral_allele C end 173389653 seq_region_name 3 allele_string T/C start 173389653
+
+rs472103 (GRCh38 3:173,404,702; A/C/T, the reference A): A is 0.452 in gnomAD's non-Finnish Europeans and 0.465 in
+1000 Genomes EUR, the minor allele, near even. Its proxies in 1000 Genomes EUR: rs247975 r² 0.93 (T/C on the forward
+strand), rs583514 r² 0.86, rs529200 r² 0.94. rs529200's A is 0.478 in EUR; at frequencies 0.465 and 0.478 only A
+with A fits r² 0.94 (A with G would cap r² near 0.80): rs529200-A rides with rs472103-A (derived). For row 24.
