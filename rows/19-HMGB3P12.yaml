@@ -2,7 +2,7 @@
 # Curated 2026-11-11, the second run's ninth row. Lead rs78043944, the seed's only rsID here: an intergenic variant,
 # rare in Europeans by gnomAD (A 0.0069) but 0.14 by 1000 Genomes. Gurinovich 2021's NECS centenarian SNP (Supplement
 # Table 1); the main text is not open, its supplements are read. In Timmers 2019's and Zenin 2019's summary statistics;
-# absent from Deelen 2019's files and from Wright 2019's S8 and S9.
+# absent from Wright 2019's S8 and S9; Deelen 2019's files hold two indels beside it instead.
 locus_id: 19
 locus_name: HMGB3P12
 verdict: re-tiered
@@ -23,7 +23,12 @@ verdict_reason: >-
   in Europeans, so a small difference in ancestry between cases and controls would shift it on its own. No other
   study supports it. Timmers' parental lifespan is null (P 0.62, A on the shorter side), a null weakened by that
   frequency spread. Zenin 2019's
-  healthspan is null (P 0.71). Deelen 2019's longevity files do not hold the variant. Lifespan is filed 0, healthspan
+  healthspan is null (P 0.71). Deelen 2019's files hold no row for the variant but two insertion-deletions beside
+  it (3:26,368,498 and 26,368,499, GRCh37), at frequency 0.13 and 0.14 and null (P 0.64, 0.45): the frequencies this
+  row calls discordant, which points to a representation artefact, the common frequency belonging to an indel at the
+  same spot rather than to the rare A. It is not tier D as Timmers 2019's contradiction of NECS's USP42 and TMTC2
+  SNPs is: the paper prints no effect size to contradict, and the European look-ups test a variant whose frequency
+  in them is unreliable. Lifespan is filed 0, healthspan
   0, exceptional survival + on the paper's own result. The evidence is European. Mechanism general ageing:
   nothing assesses one, since the GWAS Catalog holds no other trait for the variant and Open Targets no other set.
   Causal C1 by §4.2's threshold, but with little meaning: the one set is Gurinovich's own, a PICS set built from
@@ -32,7 +37,7 @@ verdict_reason: >-
   and the sources name different nearest genes (LINC00692 and LRRC3B in the paper, HMGB3P12 and VENTXP4 in the
   catalog). The protection is a presence: the rare A goes with reaching 100. Age of action is unknown.
 axes:
-  tier: {value: C, cites: [pmid-33948810#q1, pmid-33948810#q2, pmid-33948810#q3, pmid-33948810#q4, pmid-33948810#q5, pmid-30642433#q57, pmid-30729179#q37, db-ensembl-116#q85, db-ensembl-116#q86, db-ensembl-116#q87, db-ensembl-116#q88, db-gwascatalog-2026.10.29#q135, db-gwascatalog-2026.10.29#q139, db-opentargets-26.09#q206]}
+  tier: {value: C, cites: [pmid-33948810#q1, pmid-33948810#q2, pmid-33948810#q3, pmid-33948810#q4, pmid-33948810#q5, pmid-30642433#q57, pmid-30729179#q37, pmid-31413261#q47, pmid-31413261#q48, db-ensembl-116#q85, db-ensembl-116#q86, db-ensembl-116#q87, db-ensembl-116#q88, db-gwascatalog-2026.10.29#q135, db-gwascatalog-2026.10.29#q139, db-opentargets-26.09#q206]}
   mechanism: {value: general_ageing, cites: [db-gwascatalog-2026.10.29#q138, db-opentargets-26.09#q198]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
