@@ -997,3 +997,12 @@ q294), and both parents in the top 10 %, P 5 × 10⁻⁶ (GCST006698, q293), whi
 estimate ("beta -"), so the top-10 % result has no direction here. No other trait. Its eleven proxies at r² ≥ 0.8
 (db-ensembl-116#q285 and the reading there) hold no association at all: each query returns q296's empty page (one
 cached file per rsID, `associations-<rsid>.json`). For row 42.
+
+## Reading 2026-11-11, record
+
+> [q297] _embedded.associations[0].efo_traits[0] efo_id EFO_0007984 efo_trait platelet component distribution width
+
+> [q298] page size 100 totalElements 1 totalPages 1 number 0
+
+rs2802292: one association in the catalog (q298), platelet distribution width (q297; Vuckovic 2020, T, P 2 ×
+10⁻²¹). No longevity or lifespan entry: Broer's pooled result is not catalogued at this SNP. For row 43.

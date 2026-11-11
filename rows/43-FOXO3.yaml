@@ -1,0 +1,195 @@
+# The seed list's locus 43, FOXO3 (6q21). Curated 2026-11-11. Lead rs2802292, the seed's only rsID: the
+# candidate-gene longevity SNP of Willcox 2008 and its replications, intronic in FOXO3, GRCh38 6:108,587,315
+# (GRCh37 108,908,518), G ancestral and the longer-life allele, 0.39 in Europeans and 0.32 in East Asians. Timmers
+# 2020's multivariate FOXO3 locus is led by rs1159806 (r² 0.40, D′ 0.68), whose life-extending T travels with G.
+# Flachsbart's rs3800231 (r² 0.60) is read in Timmers 2019's Figure 2 source data, named in prose. Open Targets 26.09
+# puts the lead in 214 credible sets, none of a lifespan-class study; the GWAS Catalog (2026-10-29) holds one
+# association, platelet distribution width. Literature searches on the rsID and the founding papers return the
+# candidate-gene line (five services answered; Semantic Scholar was rate-limited, so its part is unchecked).
+locus_id: 43
+locus_name: FOXO3
+verdict: kept
+verdict_reason: >-
+  Tier B, as the seed has it. The genome-wide result at the locus is Timmers 2020's multivariate one, and a
+  multivariate result does not meet tier A's first criterion (D18.3), so the shape is row 27's. That test of
+  healthspan, parental lifespan and 90th-percentile longevity gives P 1e-8 at rs1159806, its T (0.35) on the
+  longer-lived side in all three columns (healthspan P 5e-3, lifespan 2e-4, longevity 3e-6). The authors say no
+  input is genome-wide alone, and that FOXO3 had until then been found only in candidate-gene studies, never at
+  genome-wide significance. The seed's rs2802292 is a tag of that signal (r² 0.40), outside its credible set, which
+  is §4.1's B clause too. Its G travels with rs1159806's T: at these frequencies opposite coupling would cap r² at
+  about 0.34 (derived). Timmers 2019's million parents' lives are the co-occurring lifespan study (D16): G lengthens
+  life at P 1.9e-4 at the lead itself, UK Biobank and LifeGen on the same side; an input of the multivariate test,
+  not a replication. Broer 2015's P 1.85e-10 for rs2802292 (G, OR 1.17) is not a genome-wide GWAS result: it is a
+  candidate look-up pooled with the published candidate-gene samples (10,574 cases against the GWAS's 6,036), so it
+  holds the discovery and its replications together, and Broer reports no new genome-wide association. Whether that
+  pooled P should anchor tier A is put to the lead; B meanwhile. Deelen 2019 favours G at the 90th percentile (OR
+  1.08, P 6.8e-5) and more at the 99th (OR 1.13, P 8.3e-5), but its 90th is the multivariate test's longevity input,
+  and it shares many cohorts with Broer's CHARGE in its own words. The candidate-gene line runs from Willcox 2008 (men
+  of Japanese ancestry in Honolulu, minor homozygotes against major, OR 2.75, P 9e-5) through Flachsbart 2009
+  (German centenarians, stronger in centenarians than nonagenarians); Timmers 2019's Figure 2 replicates
+  Flachsbart's rs3800231 (r² 0.60, its A with G) in the full sample at one-sided P 2.2e-5, with about a third of the
+  discovery's effect, the "smaller effect sizes" Timmers notes for FOXO3. Those are candidate-gene results and the
+  Figure 2 sample holds the multivariate test's inputs, so none is counted as an independent replication here.
+  FinnGen's death endpoint leans G's way and is flat (T β +0.0069, P 0.36); under APOE's factor its power is about
+  0.62, heterogeneity P 0.36, so no red flag. Healthspan is +: at the lead G leans to a later end of healthspan in
+  Zenin 2019 (P 0.060, one-sided 0.030), and Timmers 2020's healthspan column at rs1159806 gives P 5e-3, both inputs
+  of the same test. Lifespan +, exceptional survival + (Deelen, above). Mechanism: ageing in general, because
+  nothing shows the effect runs through one system. The lead sits in sets for body mass and weight, cognition and
+  education, kidney function and menarche (Open Targets), and Timmers 2020 says the protective variants go with less
+  metabolic syndrome but lower cognitive ability, later menarche and smaller intracranial volume: broad. They also go
+  with more macular degeneration, a quoted harm on the life-extending side (D18.1), so the row carries `tradeoff`
+  and is descriptive. Abdi 2026, the seed's source, finds G carriers with angina died less often in older Australian
+  men, with no difference in hypertension or diabetes: a subgroup result, context only. Causal confidence C4: the
+  lead is in no lifespan-class set, and Foote 2025's frailty factor 5 ("Poorer Cognition", P 4.3e-10, lead PIP
+  0.065) is healthspan-class and the cognition signal again, so it sets nothing (D23, D25.5). Effector E3: Timmers
+  2020's colocalisation puts two cis genes on the multivariate signal, FOXO3 and LINC00222 (each meets E2's
+  colocalisation on its own, D24), and FOXO3's locus-to-gene score on the set is 0.42, under 0.5. The life-extending
+  allele goes with lower FOXO3 expression in blood there, so the row does not say G raises FOXO3. `gene` is empty.
+  G/T, the most common genotype in Europeans (G 0.388 in gnomAD's non-Finnish Europeans: T/T about 37 in 100, G/T
+  47, G/G 15), is the reference, with no PROTECT token, the split too even (as at 21, 24 and 27). Age of action is
+  unknown. Joshi 2017 sees a larger effect after 75 and Deelen's 99th exceeds its 90th, but Timmers 2019's age
+  moderator is flat (P 0.64), and Timmers 2020's fading with parental age is collective across nine loci. No sex
+  dimorphism (Timmers 2020). The counted evidence is European; the candidate-gene discovery is in men of Japanese
+  ancestry, where G is the minor allele too (0.32), so no `eur_only_evidence` flag.
+axes:
+  tier: {value: B, cites: [pmid-32678081#q20, pmid-32678081#q21, pmid-32678081#q22, pmid-32678081#q9, pmid-32678081#q6, pmid-30642433#q221, pmid-30642433#q222, pmid-25199915#q1, pmid-25199915#q2, pmid-31413261#q106, pmid-31413261#q107, pmid-31413261#q3, pmid-18765803#q1, pmid-19196970#q1, pmid-19196970#q2, pmid-30642433#q223, pmid-30642433#q76, pmid-30642433#q12, pmid-30642433#q101, db-finngen-r11#q18, db-ensembl-116#q291, db-ensembl-116#q292, db-opentargets-26.09#q583, db-opentargets-26.09#q584]}
+  mechanism: {value: general_ageing, cites: [pmid-32678081#q23, pmid-32678081#q27, db-opentargets-26.09#q580, db-opentargets-26.09#q581, pmid-41837379#q2]}
+  pleiotropy: {values: [broad, tradeoff], cites: [pmid-32678081#q23, pmid-32678081#q24, pmid-32678081#q27, db-opentargets-26.09#q580, db-opentargets-26.09#q581]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
+            cites: [pmid-30729179#q65, pmid-30729179#q66, pmid-32678081#q20, pmid-30642433#q221, pmid-31413261#q106]}
+  actionability: {label: descriptive, cites: [pmid-32678081#q24]}
+  context: {values: [], cites: [pmid-18765803#q1, pmid-41837379#q1, db-ensembl-116#q288]}
+flags:
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q580, db-opentargets-26.09#q581, db-opentargets-26.09#q582, db-opentargets-26.09#q583, db-opentargets-26.09#q584]}
+  - {token: "effector:E3", cites: [pmid-32678081#q25, pmid-32678081#q26, db-opentargets-26.09#q583, db-opentargets-26.09#q585]}
+variants:
+  - rsid: rs2802292
+    gene: ""
+    phenotype: FOXO3 region, ageing
+    trait_efo_id: EFO_0007796
+    effect_allele: G
+    effect_size: 0.0148
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    negatives: >-
+      The longer-life version, G, travels with a version that Timmers 2020 ties to more age-related macular
+      degeneration, and to slightly lower cognitive ability and smaller intracranial volume. How these weigh against
+      the longer life is not measured.
+    genotypes:
+      - genotype: G/G
+        state: protective
+        conclusion: >-
+          You carry two copies of a version of this DNA region that about 15 in 100 people of European ancestry
+          carry twice. The region, on chromosome 6, lies within the FOXO3 gene, long studied in research on ageing;
+          it is not settled which gene the effect runs through. In very large European studies that combined
+          healthspan, long life and reaching very old age, each copy of this version went with slightly healthier
+          ageing, parents of carriers lived a little longer, and carriers were a little more likely to reach the
+          oldest ages. The same region has been linked to longer life in older men of Japanese ancestry and in German
+          centenarians. It is a likely finding, not a settled one. The same version also goes with a slightly higher
+          chance of age-related macular degeneration, an eye disease. The effect is small and it is a tendency, not
+          destiny.
+      - genotype: G/T
+        state: neutral
+        conclusion: >-
+          You carry one copy each of the two common versions of this DNA region, the most common combination (about
+          47 in 100 people of European ancestry). It is the reference the other combinations are compared with. The
+          region, on chromosome 6, lies within the FOXO3 gene, long studied in research on ageing; it is not settled
+          which gene the effect runs through.
+      - genotype: T/T
+        state: risk
+        conclusion: >-
+          You carry two copies of the more common version of this DNA region (about 37 in 100 people of European
+          ancestry carry it twice). In very large European studies that combined healthspan, long life and reaching
+          very old age, each copy of this version went with slightly less healthy ageing, and parents of carriers
+          lived a little less long. It is a likely finding, not a settled one. The effect is small and it is a
+          tendency, not destiny.
+studies:
+  - rsid: rs2802292
+    note: pmid-32678081
+    quote: q20
+    phenotype_class: MULTIVARIATE_AGEING
+    study_design: multivariate_healthspan_lifespan
+    population: European (UK Biobank, the LifeGen cohorts and Deelen 2019's cohorts; the three studies' summary data pooled)
+    ancestry: [EUR]
+    stat_significance: significant
+    p_value: "1E−08"
+    p_value_num: 1.0e-08
+    proxy_rsid: rs1159806
+    effect_allele: T
+    direction: protective
+    statistical_test: "Multivariate test of healthspan, parental lifespan and 90th-percentile longevity (Timmers 2020 Table 1, last column) at its lead rs1159806; no single effect size (D15); T on the longer-lived side in all three columns (0.014, P 5e-3; 0.015, P 2e-4; 0.095, P 3e-6); no input genome-wide alone, FOXO3 never genome-wide before (q21, q22); rs1159806 r² 0.40 to the lead, D′ 0.68 (db-ensembl-116#q291), its T with the lead's G (derived from the frequencies), and the lead not in the study's credible set (db-opentargets-26.09#q583)"
+    curator: claude-opus-5-5
+  - rsid: rs2802292
+    note: pmid-30642433
+    quote: q221
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 640183
+    sample_unit: lives
+    stat_significance: nominal
+    p_value: "0.00019144381"
+    p_value_num: 0.00019144381
+    effect_size: -0.0148348
+    effect_measure: beta
+    effect_unit: beta1 on parental lifespan per T allele, longer positive
+    effect_allele: T
+    direction: risk
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), SE 0.0040, direction -- in UK Biobank and LifeGen, info 0.99; the co-occurring lifespan study (D16), an input of the multivariate test and not a replication"
+    curator: claude-opus-5-5
+  - rsid: rs2802292
+    note: pmid-30729179
+    quote: q65
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.060"
+    p_value_num: 0.060
+    effect_size: 0.00946
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per T allele (positive = earlier)
+    effect_allele: T
+    direction: risk
+    statistical_test: "Zenin 2019's healthspan summary statistics, SE 0.00502, Z 1.884, −log10 P 1.225 (P about 0.060 two-sided, one-sided 0.030 for G, derived); an input of the multivariate test, the same sample"
+    curator: claude-opus-5-5
+  - rsid: rs2802292
+    note: pmid-31413261
+    quote: q106
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "6.814e-05"
+    p_value_num: 6.814e-05
+    effect_size: 1.0819
+    effect_measure: OR
+    effect_unit: odds of reaching the 90th percentile, per G allele (95 % CI 1.04 to 1.12)
+    effect_allele: G
+    direction: protective
+    statistical_test: "Supplementary Data 1's look-up of Broer's rs2802292 (q106), I² 22.7 %, heterogeneity P 0.19; an input of the multivariate test (its longevity column), and sharing many cohorts with Broer's CHARGE (q107), so not a replication"
+    curator: claude-opus-5-5
+  - rsid: rs2802292
+    note: pmid-31413261
+    quote: q106
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "8.341e-05"
+    p_value_num: 8.341e-05
+    effect_size: 1.1296
+    effect_measure: OR
+    effect_unit: odds of reaching the 99th percentile, per G allele (95 % CI 1.06 to 1.20)
+    effect_allele: G
+    direction: protective
+    statistical_test: "Supplementary Data 1's look-up of Broer's rs2802292 (q106), I² 0, heterogeneity P 0.75; the 99th-percentile cases are a subset of the 90th's, an input of the multivariate test, so not a replication"
+    curator: claude-opus-5-5

@@ -1030,3 +1030,27 @@ reference, A the alternative. A is 0.317 in gnomAD's non-Finnish Europeans (q282
 A/A 10, derived). The CEU window (±500 kb, r² ≥ 0.05; `ld-window-ceu-rs1627804`) holds eleven SNPs at r² ≥ 0.8, ten
 at r² 1.00 (rs1630395, q285; rs61282127, rs311217 to rs311220, rs311224, rs1762716, rs1665909, rs1618476) and
 rs36101665 at 0.98; five more at 0.75. Wright's fathers' tag rs9384641 has r² 0.34, D′ 1.00 (q284). For row 42.
+
+## Reading 2026-11-11, record
+
+> [q286] mappings[0] strand 1 end 108587315 ancestral_allele G assembly_name GRCh38 seq_region_name 6 coord_system chromosome allele_string G/T start 108587315 location 6:108587315-108587315
+
+> [q287] populations[20] allele T allele_count 41573 population gnomADg:nfe frequency 0.6122
+
+> [q288] populations[8] population gnomADg:eas frequency 0.3169 allele G allele_count 1631
+
+> [q289] populations[21] allele_count 26337 allele G frequency 0.3878 population gnomADg:nfe
+
+> [q290] [168] d_prime 0.968008 population_name 1000GENOMES:phase_3:CEU variation1 rs2802292 variation2 rs10457180 r2 0.626294
+
+> [q291] [220] r2 0.403218 variation2 rs1159806 variation1 rs2802292 population_name 1000GENOMES:phase_3:CEU d_prime 0.679480
+
+> [q292] [309] variation1 rs2802292 r2 0.602445 variation2 rs3800231 d_prime 0.937318 population_name 1000GENOMES:phase_3:CEU
+
+Row 43's lead rs2802292, intronic in FOXO3, GRCh38 6:108,587,315 (q286; GRCh37 108,908,518), G ancestral and the
+reference, T the alternative. G is 0.388 in gnomAD's non-Finnish Europeans (q289, T 0.612, q287), 0.43 in 1000
+Genomes EUR, 0.35 in CEU, 0.317 in East Asians (q288): in Europeans G/T is the most common genotype (about 47 in 100,
+T/T 37, G/G 15, derived), as LifeGen's 0.38, Deelen's 0.38 and FinnGen's 0.42 for G also give. The CEU window
+(±500 kb; `ld-rs2802292.json`) puts rs2490272, rs2802288 and rs2253310 at r² 1.00 with it; Broer's second SNP
+rs10457180 at 0.63 (q290); Timmers 2020's multivariate lead rs1159806 at 0.40, D′ 0.68 (q291); Flachsbart's
+rs3800231 at 0.60 (q292). For row 43.

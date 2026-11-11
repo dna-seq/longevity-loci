@@ -2093,3 +2093,29 @@ rs1618476 and rs36101665. The eight lifespan-class studies' credible sets hold n
 (`credibleSets-longevity8-6_107079224_C_A`, q576). Retried by Pilling's own studies: GCST006702 (age at death)
 has six sets (q577), led at 12_111621753, 15_78557437, 19_44908684, 6_160576086, 6_160591981 and 9_22103342;
 GCST006698 (top 10 %) two (q578), at 15_78557437 and 19_44908684; none at 6q21. So causal and effector confidence could not be assessed. For row 42.
+
+## Reading 2026-11-11, record
+
+> [q579] data.search.hits[0] id 6_108587315_G_T
+
+> [q580] data.variant.credibleSets count 214
+
+> [q581] data.variant.credibleSets.rows[210].study traitFromSource Frailty (Factor 5 - Poorer Cognition) projectId GCST
+
+> [q582] data.variant.credibleSets.rows[210].locus.rows[8] posteriorProbability 0.0654067970326906
+
+> [q583] data.variant.credibleSets.rows[105] studyLocusId f317a9a62ba89aeeb528d653e7e35b46 studyId GCST011100 pValueMantissa 1 pValueExponent -8 beta null finemappingMethod PICS
+
+> [q584] data.variant.credibleSets.rows[105].locus.rows[0] posteriorProbability 0.061890431235060155
+
+> [q585] data.variant.credibleSets.rows[105].l2GPredictions.rows[0] score 0.41644757986068726
+
+rs2802292 is `6_108587315_G_T` (q579). It sits in 214 credible sets (q580; all read, `variant-6_108587315_G_T-all.json`),
+none of a lifespan-class study: they are adiposity (body mass index, weight, fat mass), cognition and education,
+kidney function (eGFR, cystatin C), menarche and blood cells, its PIP about 0.06 to 0.11 in each, the sets' leads
+other variants and locus-to-gene mostly FOXO3 (0.5 to 0.9). The one ageing-related set is Foote 2025's frailty
+factor 5, "Poorer Cognition" (q581; GCST90624051, PICS, P 4.3 × 10⁻¹⁰, FOXO3 L2G 0.80), with the lead at PIP 0.065
+(q582): healthspan-class (D23), and the cognition signal again. Timmers 2020's multivariate study GCST011100 has a
+set at FOXO3 (q583; P 1e-8, PICS, 50 members) led by rs1159806 (`6_108685635_A_T`, PIP 0.062, q584), FOXO3 L2G 0.42
+(q585), ARMC2 0.15; rs2802292 is not among its 50 members (`variant-6_108685635_A_T.json`). So the row's SNP is a tag
+outside the locus's lifespan-class set: causal confidence C4. For row 43.

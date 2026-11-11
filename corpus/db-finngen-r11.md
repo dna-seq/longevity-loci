@@ -105,3 +105,12 @@ rs1627804, alt A (0.42 in Finns, against 0.32 in non-Finnish Europeans): β −0
 The power is under 0.8, so it is no red flag under that calibration, and a flag needs both (D25.3): no red flag,
 whatever D25.12's uncomputed second factor gives. Wright's tag rs9384641, alt C: β +0.0068, P 0.38 (q17), C leaning
 toward more death, the same reverse lean. For row 42.
+
+## Reading 2026-11-11, record
+
+> [q18] 6 108587315 G T rs2802292 FOXO3 0.360427 0.443183 0.00686455 0.00750592 0.579215 0.57931 0.579203
+
+rs2802292, alt T (0.58 in Finns): β +0.0069 (SE 0.0075) on death, P 0.36, T leaning toward more death, so G toward
+less, the discovery's side (one-sided P about 0.18, derived). D21 under APOE's factor within FinnGen (0.99): Timmers'
+T β −0.0148 (pmid-30642433#q221) predicts T +0.0147 here, one-sided power about 0.62, heterogeneity z 0.92, P about
+0.36 (derived): no red flag under that calibration, so none (D25.3). For row 43.
