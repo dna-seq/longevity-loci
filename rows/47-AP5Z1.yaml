@@ -9,8 +9,8 @@ locus_id: 47
 locus_name: AP5Z1
 verdict: kept
 verdict_reason: >-
-  Tier B, the seed's, kept. A is out on the discovery's size alone (below); two lifespan look-ups that lean against
-  it set replication_failed, which would cap the row at B in any case. Pilling 2016 ran BOLT-LMM
+  Tier B, the seed's, kept. A is out on the discovery's size alone (below); two lifespan look-ups lean against it,
+  and whether they are red flags is unknown (D26.3). Pilling 2016 ran BOLT-LMM
   on 42,273 'white' British UK Biobank participants aged 55 to 70, 1,339 of them with a parent in the top 1 % of age
   at death (mothers 98 or older, fathers 95 or older). The insertion's TC allele raised the chance of a long-lived
   parent by 0.0158 per copy (SE 0.0029, P 3.4e-8) from a 3.2 % baseline: carried by 6.3 % of cases and 4.39 % of
@@ -30,14 +30,13 @@ verdict_reason: >-
   At that factor both look-ups are red flags (power 1.00, heterogeneity P about 3e-8). The loci's mean factor (D25.3)
   is defined against Deelen's 90th percentile, not this phenotype, so it is not at hand. The flag holds at any factor
   of 2.13 or more for LifeGen and 6.2 or more for FinnGen, a twentieth and a seventh of APOE's; at the APOE line's
-  upper 95 % bound (0.0047) the factor is still about 23. So replication_failed, as at row 31; whether a flag
-  resting on one calibration, with no mean factor for this phenotype, should set the token (D25.3 asks both) is put
-  to the lead, flagged by default. If the effect is real, it seems confined to the oldest ages:
+  upper 95 % bound (0.0047) the factor is still about 23. D25.3 asks both calibrations, and the second cannot be
+  computed here, so whether the look-ups are red flags is unknown and the row carries no replication_failed (D26.3:
+  unknown sets no token). The row stays B. If the effect is real, it seems confined to the oldest ages:
   the 99th percentile shows it, the 90th barely, and parental lifespan not at all. Zenin 2019's healthspan is null
   at the proxy (P 0.93). Lifespan is filed 0, healthspan 0, exceptional survival + on Pilling and Deelen's 99th.
-  Age of action is UNKNOWN by default: the extreme-only pattern fits a late effect, but both of its contrasts are
-  within one sample (Pilling's binary against its continuous scans; Deelen's 99th cases a subset of its 90th).
-  LATE with DIRECT_WEAK confidence is the alternative, put to the lead. The evidence is European; the insertion is
+  Age of action is UNKNOWN (D26.9): both contrasts (Pilling's top 1 % against its continuous scans; Deelen's 99th
+  against its 90th percentile) contrast how extreme the survival is, not the age at which the allele acts. The evidence is European; the insertion is
   three times commoner in African-ancestry genomes (0.09), where nothing was studied (R-TIER-3), so
   eur_only_evidence. Every one of Open Targets' sixteen credible sets holding the insertion is a molecular QTL, for
   ENSG00000242802's transcripts, exons and splice junctions; it leads four of them (a blood transcript QTL at PIP
@@ -56,7 +55,6 @@ axes:
   context: {values: [eur_only_evidence], cites: [pmid-27015805#q3, db-gwascatalog-2026.10.29#q317, pmid-31413261#q117, db-ensembl-116#q317]}
 flags:
   - {token: "PROTECT:PRESENCE", cites: [pmid-27015805#q10, db-ensembl-116#q315]}
-  - {token: replication_failed, cites: [pmid-30642433#q228, db-finngen-r11#q22, pmid-27015805#q17, pmid-30642433#q90]}
   - {token: "causal:C4", cites: [db-opentargets-26.09#q605, db-opentargets-26.09#q606, db-opentargets-26.09#q607, db-opentargets-26.09#q608]}
   - {token: "effector:E4", cites: [db-opentargets-26.09#q605]}
 variants:
@@ -170,7 +168,7 @@ studies:
     effect_unit: log hazard protection per A allele of rs79109928 in self (positive = longer life)
     effect_allele: A
     direction: risk
-    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0131, info 0.96, A 0.024. Contains UK Biobank, so Pilling's own participants: not independent. Pilling's effect carried by APOE's top-1 % factor (about 46, pmid-27015805#q17 against q90) predicts +0.70: power 1.00, heterogeneity P 3e-8; the flag holds at any factor of 2.13 or more. rs17135119 leans the same way (P 0.53, q229)"
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0131, info 0.96, A 0.024. Contains UK Biobank, so Pilling's own participants: not independent. Pilling's effect carried by APOE's top-1 % factor (about 46, pmid-27015805#q17 against q90) predicts +0.70: power 1.00, heterogeneity P 3e-8; the flag holds at any factor of 2.13 or more; the mean factor (D25.3) is undefined for this phenotype, so the flag is unknown (D26.3). rs17135119 leans the same way (P 0.53, q229)"
     curator: claude-opus-5-5
   - rsid: rs371933919
     note: pmid-30729179
