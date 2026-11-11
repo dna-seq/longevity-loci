@@ -1,0 +1,103 @@
+# The seed list's locus 32, intergenic 5q14 (5q14.1). Curated 2026-11-11, the third run's ninth row. Lead rs138499810
+# (Chang 2022's healthy-ageing GWAS in Singapore Chinese, Table 1), the seed's only rsID here, the sister of row 16
+# (the same paper's second hit): intergenic by the paper, an intron of a lncRNA by VEP, 10 kb from XRCC4, VCAN and
+# TMEM167A. T 0.022 in East Asians, but also 0.023 in Finns and 0.028 in admixed Americans (gnomAD), near-absent in
+# other Europeans (0.0008). Not in Timmers 2019's, Zenin 2019's or Deelen 2019's summary statistics. The GWAS Catalog
+# (2026-10-29) holds Chang's association alone; Open Targets 26.09 has its one-variant PICS set.
+locus_id: 32
+locus_name: intergenic 5q14
+verdict: re-tiered
+verdict_reason: >-
+  Tier C, down from the seed's single-track B: a genome-wide healthspan result with no co-occurring lifespan study,
+  so it cannot score (§4.5 as D16 reads it) and stays in the research view, as row 16 from the same paper. Chang 2022
+  compared 1,618 Singapore Chinese aged 65 or more who had aged healthily (no major chronic disease, no cognitive
+  impairment, no depression, no limitation in daily activities, good physical function and self-rated health, no
+  limiting pain) with 6,221 survivors who had not: a healthspan contrast among the living, HEALTHSPAN in §4.5. The
+  rare T (2 % in the cohort) went with healthy ageing, OR 3.16 per allele, meta P 4.94e-9; the paper's "risk T
+  allele" is its test allele, on the healthy side. Discovery alone is only just past the threshold (P 4.82e-8), and an
+  OR above 3 at 2 % invites winner's curse. Unlike row 16's, this replication arm leans the same way at P 0.034 (OR
+  3.67, CI 1.10 to 12.2, Cochran's Q P 0.80): 129 healthy agers and 500 others from the same cohort, genotyped later,
+  separate people the paper keeps apart, so independent by D19.1, though thin. It would make the healthspan side a
+  replicated result; it does not change the tier, which waits on a lifespan study (D16). With lifestyle covariates the
+  meta P is 8.21e-9. The lifespan side is untested, not null: LifeGen, Zenin and both Deelen percentiles hold no line
+  for the variant (T 0.08 % in non-Finnish Europeans), the SNPs that track it in 99 Finns do not tag it in those mostly
+  British samples, and no East Asian or Finnish lifespan result for it was found. Exceptional survival is untested for
+  the same reason. The evidence is East Asian only (R-ANC-4, ancestry_specific:eas): not to be scored outside East
+  Asian ancestry, and in the research view without inferred ancestry. The allele is as common in Finns and admixed
+  Americans, where it is untested. Of the seven domains, T passes adjustment only for good self-perceived health (P
+  7.8e-3), a component of the same outcome; the mechanism is filed as general ageing, the paper's XRCC4 and DNA-repair
+  link being a hypothesis it says needs study. Open Targets has one credible set, PICS from the reported hit, the lead
+  alone at PIP 1, which is so by construction (no East Asian proxy above r² 0.13): C1 on §4.2's letter, said as
+  meaningless, as at row 19. Locus-to-gene names XRCC4 (0.85; TMEM167A 0.46), with no colocalisation of any kind, so
+  no rival under D24: effector E2, XRCC4, the model's call on a one-variant set. The protection is a presence: the rare
+  allele goes with healthier ageing. Age of action is unknown.
+axes:
+  tier: {value: C, cites: [pmid-35927272#q1, pmid-35927272#q8, pmid-35927272#q13, pmid-35927272#q14, pmid-35927272#q15, db-ensembl-116#q210, db-gwascatalog-2026.10.29#q208, db-gwascatalog-2026.10.29#q209]}
+  mechanism: {value: general_ageing, cites: [pmid-35927272#q7, pmid-35927272#q17, pmid-35927272#q18, pmid-35927272#q19]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: untested, exceptional_survival: untested,
+            cites: [pmid-35927272#q13, pmid-35927272#q14, db-ensembl-116#q210, db-ensembl-116#q212]}
+  actionability: {label: descriptive, cites: [pmid-35927272#q18]}
+  context: {values: ["ancestry_specific:eas"], cites: [pmid-35927272#q1, pmid-35927272#q11, pmid-35927272#q16, db-ensembl-116#q206, db-ensembl-116#q207, db-ensembl-116#q209, db-ensembl-116#q211]}
+flags:
+  - {token: "PROTECT:PRESENCE", cites: [pmid-35927272#q13, pmid-35927272#q14]}
+  - {token: "causal:C1", cites: [db-opentargets-26.09#q474, db-opentargets-26.09#q475, db-ensembl-116#q213]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q476, db-opentargets-26.09#q477, db-opentargets-26.09#q478, db-opentargets-26.09#q479, db-opentargets-26.09#q480, db-opentargets-26.09#q481]}
+variants:
+  - rsid: rs138499810
+    gene: XRCC4
+    phenotype: XRCC4 region, East Asian healthy ageing
+    trait_efo_id: EFO_0009762
+    effect_allele: T
+    effect_size: 3.158
+    effect_measure: OR
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: C/C
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA region, the one almost everyone has (about 96 in
+          100 people of East Asian ancestry). It is the reference the other combinations are compared with. The
+          region, on chromosome 5, lies between genes; the nearest likely gene is XRCC4, which helps repair broken
+          DNA, though that link is not proven. The finding comes from Singapore Chinese.
+      - genotype: C/T
+        state: protective
+        conclusion: >-
+          You carry one copy of a rare version of this DNA region (about 4 in 100 people of East Asian ancestry do,
+          and about as many people of Finnish or Latin American ancestry; it is very rare in other Europeans). In
+          one study of older Singapore Chinese, people with this version were more often still free of major
+          disease and disability, and rated their own health better, in their seventies. A smaller group from the
+          same study pointed the same way. This is early evidence: the result was only just strong enough to
+          count, the size of the effect is likely overstated, and whether it lengthens life is unknown. It may not
+          apply to people of other ancestries, where it has not been studied. It is a tendency, not a guarantee.
+      - genotype: T/T
+        state: protective
+        conclusion: >-
+          You carry two copies of a rare version of this DNA region (about 5 in 10,000 people of East Asian
+          ancestry do). In one study of older Singapore Chinese, each copy of this version went with being more
+          often free of major disease and disability in their seventies. This is early evidence: almost no one
+          carries two copies, so how they fare was not measured directly, and whether it lengthens life is
+          unknown. It may not apply to people of other ancestries, where it has not been studied. It is a
+          tendency, not a guarantee.
+studies:
+  - rsid: rs138499810
+    note: pmid-35927272
+    quote: q13
+    phenotype_class: HEALTHSPAN
+    study_design: meta_analysis
+    population: Singapore Chinese (Singapore Chinese Health Study survivors aged 65 or more, assessed 2014 to 2016)
+    ancestry: [EAS]
+    sample_size: 7839
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "4.94 × 10−9"
+    p_value_num: 4.94e-09
+    effect_size: 3.158
+    effect_measure: OR
+    effect_unit: odds of healthy ageing (seven-domain composite) per T allele
+    effect_allele: T
+    direction: protective
+    statistical_test: "Logistic case-control of healthy against not-healthy agers among survivors (SNPTEST score test), discovery (1,489/5,721; OR 3.104, P 4.82e-8) and same-cohort replication (129/500; OR 3.670, CI 1.103 to 12.213, P 0.034) meta-analysed by fixed-effect inverse variance (META), Cochran's Q P 0.796; lifestyle-adjusted P 8.21e-9 (q15). The design is meta_analysis for want of a healthspan case-control value, as at row 16"
+    curator: claude-opus-5-5

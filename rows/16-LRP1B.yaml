@@ -15,8 +15,8 @@ verdict_reason: >-
   survivors who had not. That is a healthspan contrast among the living, not survival: HEALTHSPAN in §4.5. The rare
   T (3 % in the cohort) went with healthy ageing, OR 2.43 per allele, meta P 2.59e-8 (discovery 9.65e-9). The
   replication arm, 129 cases from the same cohort genotyped later, leans the same way at P 0.70 (OR 1.22, CI 0.45 to
-  3.29, Cochran's Q P 0.15): uninformative rather than failed, so no replication_failed flag, and not independent
-  either way. With lifestyle covariates the meta P weakens to 1.14e-7, below genome-wide. The lifespan side is
+  3.29, Cochran's Q P 0.15): uninformative rather than failed, so no replication_failed flag; it is separate
+  people the paper keeps apart, independent by D19.1, but it replicates nothing. With lifestyle covariates the meta P weakens to 1.14e-7, below genome-wide. The lifespan side is
   untested, not null: the variant is East Asian (gnomAD East Asian 0.019, 1000 Genomes EAS 0.025) and essentially
   absent in Europeans, so no European lifespan or longevity study holds it, and no East Asian lifespan result for it
   was found. Exceptional survival is untested for the same reason. The context is ancestry-specific (R-ANC-4): it is

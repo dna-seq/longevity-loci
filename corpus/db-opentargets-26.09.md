@@ -1735,3 +1735,36 @@ rs649357 (5_29426329_A_C, and C_A): Open Targets 26.09 has no record of the vari
 (`variant-sets-5_29426329_A_C.json`, `variant-sets-5_29426329_C_A.json`), nor of its r² 1.0 proxies rs694966
 (5_29427065, both orders) and rs631778 (5_29426240, both orders); the rsID search finds only unrelated variants on
 chromosome 15 (`search-rs649357.json`). No credible set, no locus-to-gene score: C4, E4. For row 31.
+
+## Reading 2026-11-11, record
+
+> [q471] data.variant id 5_82723979_C_T referenceAllele C alternateAllele T
+
+> [q472] data.variant.alleleFrequencies[4] populationName fin_adj alleleFrequency 0.02256351915054987
+
+> [q473] data.variant.alleleFrequencies[5] populationName eas_adj alleleFrequency 0.022286821705426358
+
+> [q474] data.variant.credibleSets.rows[0] studyLocusId fe4f273ec43162aadef2040274173b4c studyId GCST90132317 pValueMantissa 5 pValueExponent -9 beta 1.15 finemappingMethod PICS
+
+> [q475] data.variant.credibleSets.rows[0].locus.rows[0] posteriorProbability 1
+
+> [q476] data.variant.credibleSets.rows[0].l2GPredictions.rows[0] score 0.8485983610153198
+
+> [q477] data.variant.credibleSets.rows[0].l2GPredictions.rows[0].target approvedSymbol XRCC4
+
+> [q478] data.variant.credibleSets.rows[0].l2GPredictions.rows[1] score 0.4570446312427521
+
+> [q479] data.variant.credibleSets.rows[0].l2GPredictions.rows[1].target approvedSymbol TMEM167A
+
+> [q480] data.credibleSet studyLocusId fe4f273ec43162aadef2040274173b4c
+
+> [q481] data.credibleSet.colocalisation count 0
+
+rs138499810 (`variant-sets-5_82723979_C_T.json`; C reference, T alternate, q471): T 0.023 in gnomAD Finns (q472)
+and 0.022 in East Asians (q473). One credible set, Chang 2022's healthy ageing (GCST90132317, the set q155-q157 found
+for row 16), PICS from the reported top hit (q474), the lead alone at PIP 1 (q475): a one-variant set, PIP 1 by
+construction, the lead having no East Asian proxy above r² 0.13 (db-ensembl-116#q213). Causal C1 on §4.2's letter,
+said as meaningless, as at row 19. Locus-to-gene: XRCC4 0.85 (q476, q477), TMEM167A 0.46 (q478, q479), ATG10 0.23,
+RPS23 0.19. The set (`coloc-fe4f273ec43162aadef2040274173b4c.json`, q480) has no colocalisation of any kind (q481),
+so no rival meets an E1/E2 criterion (D24): effector E2, XRCC4, the model's call on a one-variant set (its features
+not read). For row 32.

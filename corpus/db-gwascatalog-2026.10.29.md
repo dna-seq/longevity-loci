@@ -692,3 +692,15 @@ rs649357: one association in the catalog (q207), Gurinovich 2021 (GCST012419), "
 (q206), P 4e-8, risk frequency 0.6394 (NECS controls' C), "beta 5.5010357 unit decrease" (q205): the score Z, with
 C the risk allele, as at row 19. Its 56 proxies at r² ≥ 0.8 (`associations-<rsID>.json`, queried one by one)
 return no record (totalElements 0). No other trait is recorded on the haplotype. For row 31.
+
+## Reading 2026-11-11, record
+
+> [q208] range [0.76-1.54] beta 1.15 unit increase p_value 5e-09 accession_id GCST90132317 pubmed_id 35927272
+
+> [q209] _embedded.associations[0].reported_trait[0] Healthy aging
+
+> [q210] _embedded.associations[0].snp_effect_allele[0] rs138499810-T
+
+rs138499810 (`associations-rs138499810.json`): one record, Chang 2022's healthy ageing (q209), T (q210), P 5e-9,
+"beta 1.15" with range 0.76 to 1.54 (q208): the natural log of the paper's OR 3.158 and its CI (2.148 to 4.643), not
+a separate estimate. No other trait on the variant. For row 32.

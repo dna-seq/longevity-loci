@@ -732,3 +732,36 @@ Its EUR proxies (window listing, `ldwin-rs649357.json`): rs694966 r² 1.0, D′ 
 G travels with the lead's A; rs983077 r² 0.99 (q203); rs631778 r² 1.0 (q204). The window holds 56 SNPs at
 r² ≥ 0.8. The lead's own imputed frequency runs high in UK Biobank and LifeGen (0.39 to 0.40) and in NECS's controls
 (0.36), while its proxies sit at 0.31 in the same files. For row 31.
+
+## Reading 2026-11-11, record
+
+> [q205] mappings[0] allele_string C/A/G/T assembly_name GRCh38 coord_system chromosome ancestral_allele C end 82723979 location 5:82723979-82723979 strand 1 start 82723979 seq_region_name 5
+
+> [q206] populations[57] allele_count 22 frequency 0.0218253968253968 population 1000GENOMES:phase_3:EAS allele T
+
+> [q207] populations[14] population gnomADg:eas allele_count 115 frequency 0.02229 allele T
+
+> [q208] populations[62] allele_count 6 frequency 0.0303030303030303 population 1000GENOMES:phase_3:FIN allele T
+
+> [q209] populations[2] population gnomADg:fin frequency 0.02256 allele_count 238 allele T
+
+> [q210] populations[7] frequency 0.0007798 allele_count 53 population gnomADg:nfe allele T
+
+> [q211] populations[13] allele T frequency 0.02757 allele_count 421 population gnomADg:amr
+
+> [q212] populations[60] population 1000GENOMES:phase_3:EUR frequency 0.00596421471172962 allele_count 6 allele T
+
+> [q213] [2] d_prime 1.000000 population_name 1000GENOMES:phase_3:EAS variation2 rs191121907 r2 0.133786 variation1 rs138499810
+
+> [q214] [0].transcript_consequences[2] transcript_id ENST00000835330 biotype lncRNA gene_id ENSG00000308603 strand -1 variant_allele T impact MODIFIER
+
+rs138499810 (row 32's lead, GRCh38 5:82,723,979, a C/A/G/T site, q205; `variation-rs138499810.json`): T 0.022 in
+1000 Genomes EAS (q206) and gnomAD East Asians (q207); 0.030 in 1000 Genomes Finns (q208) and 0.023 in gnomAD Finns
+(q209); 0.0008 in gnomAD non-Finnish Europeans (q210), so near-absent outside Finland; 0.028 in gnomAD admixed Americans
+(q211); 0.006 in 1000 Genomes EUR overall (q212), all from its FIN carriers (CEU and GBR carry none). So the allele is
+not East Asian only: Finns and admixed Americans carry it as often, untested there. No East Asian proxy: in the EAS
+window (`ldwin-rs138499810-EAS.json`, 500 kb, 33 SNPs listed at r² ≥ 0.001) the best is rs191121907 at r² 0.13 (q213).
+The FIN window (`ldwin-rs138499810-FIN.json`, 99 Finns) lists rs531009177 at 0.79 and five SNPs at 0.74
+(rs10942305, rs146787437, rs16899885, rs7734484, rs77791861), but these run at about 1 % in LifeGen and Zenin's mostly
+British samples where the lead's T is 0.08 %, so they do not tag it there, and they are not proxies of the East Asian
+signal (none reaches r² 0.14 in EAS). VEP: an intron of a lncRNA, ENSG00000308603 (q214). For row 32.
