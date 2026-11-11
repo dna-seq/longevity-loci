@@ -11,8 +11,8 @@ verdict_reason: >-
   single-study clause). Timmers 2019 found the locus in about one million parental lives from UK Biobank and LifeGen:
   P 6.4e-9 (past its own 2.5e-8 threshold), G, the common allele (85 %), adding 0.32 years per copy, both arms on the
   same side. Being new there, it has no LifeGen-only result to stand as a replication. The later genome-wide results
-  contain the same parents: Timmers 2020's multivariate analysis (P 2e-9, G on the healthier side; no effect size in
-  any cached source, so not a directed study here) and Rosoff 2023's mvAge (P 2e-11 in the GWAS Catalog, G on the
+  contain the same parents: Timmers 2020's multivariate analysis (P 2e-9; the GWAS Catalog names G as the effect
+  allele but no cached source gives an effect size, so no direction is read) and Rosoff 2023's mvAge (P 2e-11 in the GWAS Catalog, G on the
   healthier-ageing side; the paper names rs1230666 among its strongest fine-mapped loci). Outside them nothing
   passes: the longevity look-up of Timmers 2019's Figure 4 gives P 0.45 (one-sided), and Deelen 2019's 90th and 99th
   percentiles OR 1.04 per G (P 0.19 and 0.36), all on the same side; Wright 2019's AncestryDNA arm has no row for the
@@ -20,15 +20,17 @@ verdict_reason: >-
   mechanism is filed as immune and inflammation: Timmers 2019 classes the locus as autoimmune and puts its lifespan
   effect down to protection from autoimmune disease through a nearby variant it calls missense, rs6679677 (r² above
   0.6), and at the lead itself the GWAS Catalog has the minor A raising Hashimoto thyroiditis (P 2e-72) and thyroid
-  peroxidase antibodies. The same A raises coronary disease and heart failure, while G lowers breast cancer: every
-  stated allele leans one way, so there is no trade-off. In Open Targets 26.09 rs1230666 holds PIP 0.64 in Timmers
+  peroxidase antibodies. The same A raises coronary disease and heart failure, and G lowers breast cancer: no
+  trade-off is detected among the records whose allele is stated and consistent, but it is not ruled out, since one
+  myocardial infarction record contradicts itself (G named, A's frequency) and two (another myocardial infarction,
+  and Hodgkin's lymphoma at OR 0.81) state no allele. In Open Targets 26.09 rs1230666 holds PIP 0.64 in Timmers
   2019's credible set (PICS) and 0.86 in mvAge's: causal:C1 by the threshold, though PICS weighs members by their LD
   with the lead, and rs2476601 and rs6679677 sit in the same set at r² 0.68 and 0.67 (PIP 0.02), so the autoimmune
   haplotype the paper names is not excluded. The top locus-to-gene score is PHTF1 at 0.42 (effector E3), so no gene
   is named. The protection is the absence of the risk allele: A shortens life and G is the common one. Age of action
   is unknown: Timmers 2019's age bands do not single out this locus, and no cached source gives its own.
 axes:
-  tier: {value: B, cites: [pmid-30642433#q29, pmid-30642433#q30, pmid-30642433#q33, pmid-30642433#q34, pmid-31413261#q19, db-gwascatalog-2026.10.29#q10]}
+  tier: {value: B, cites: [pmid-30642433#q29, pmid-30642433#q30, pmid-30642433#q33, pmid-30642433#q34, pmid-31413261#q19, pmid-37550455#q9, db-gwascatalog-2026.10.29#q10, db-gwascatalog-2026.10.29#q32, db-gwascatalog-2026.10.29#q34]}
   mechanism: {value: immune_inflammation, cites: [pmid-30642433#q29, pmid-30642433#q31, db-gwascatalog-2026.10.29#q4, db-gwascatalog-2026.10.29#q6, db-gwascatalog-2026.10.29#q19, db-gwascatalog-2026.10.29#q21]}
   pleiotropy: {values: ["mech:autoimmune", "mech:cvd", "mech:cancer"], cites: [pmid-30642433#q31, pmid-30642433#q32, db-gwascatalog-2026.10.29#q4, db-gwascatalog-2026.10.29#q13, db-gwascatalog-2026.10.29#q15, db-gwascatalog-2026.10.29#q16, db-gwascatalog-2026.10.29#q18]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}

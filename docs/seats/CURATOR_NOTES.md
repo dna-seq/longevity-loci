@@ -47,7 +47,7 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   "region" to a gene; whether §4.2 should treat LD-only PICS as SuSiE is a question for the lead (not blocking).
   Timmers 2020's GCST011100 association has no effect size in any cached source: prose, not a directed study (D15).
   The GWAS Catalog's disease records are cited through the catalog note only (their PMIDs are not
-  literature_search results); every stated allele read before a trade-off is ruled out (none here). Age UNKNOWN:
+  literature_search results); every stated allele read before a trade-off is judged; one with a self-contradicting or missing allele leaves it open ("none detected", never "none"). Age UNKNOWN:
   Timmers 2019's age-band section names only APOE, CHRNA3/5, CDKN2B-AS1 and ABO.
 - **5 FPGT / TNNI3K** (2026-11-11), tier B kept, advisor-checked. Lead rs146254978 (Pilling 2017 Table 2, q15),
   genome-wide only in the parents' age-at-death analysis (n 208,118, P 4.6e-8; attained age 0.021). Rules settled:

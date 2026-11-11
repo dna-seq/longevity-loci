@@ -56,7 +56,7 @@ Heart failure: A raises it, P 9 × 10⁻¹².
 
 > [q12] _embedded.associations[6].snp_allele[0] rs_id rs1230666 effect_allele A
 
-Rosoff 2023's mvAge (GCST90321079): A lowers the factor, P 2 × 10⁻¹¹, so G is on the healthier-ageing side, as Open Targets' +0.0102 per G (db-opentargets-26.09#q63).
+Rosoff 2023's mvAge (GCST90321079): A lowers the factor, P 2 × 10⁻¹¹, so G is on the healthier-ageing side.
 
 > [q13] _embedded.associations[7] association_id 101976720 risk_frequency 0.152 pvalue_description pvalue_mantissa 5 pvalue_exponent -13 multi_snp_haplotype false snp_interaction false range [1.039-1.068] or_per_copy_num 1.053 or_value 1.053 beta - p_value 5e-13 accession_id GCST90132314 pubmed_id 36474045 first_author Aragam KG ci_lower 1.039 ci_upper 1.068
 
@@ -84,6 +84,46 @@ Thyroid peroxidase antibody levels: A raises them, P 2 × 10⁻⁸.
 
 > [q22] page size 50 totalElements 14 totalPages 1 number 0
 
-Fourteen associations in all. Every one with a stated allele puts A, the minor allele that shortens life, on the
+Fourteen associations in all. Those read further for row 7:
+
+> [q23] _embedded.associations[8] association_id 77342205 risk_frequency 0.166789 pvalue_description pvalue_mantissa 3 pvalue_exponent -7 multi_snp_haplotype false snp_interaction false range [1.04-1.09] or_per_copy_num 1.06 or_value 1.06 beta - p_value 3e-07 accession_id GCST011365 pubmed_id 33532862 first_author Hartiala JA ci_lower 1.04 ci_upper 1.09
+
+> [q24] _embedded.associations[8].reported_trait[0] Myocardial infarction
+
+> [q25] _embedded.associations[8].snp_allele[0] rs_id rs1230666 effect_allele G
+
+Myocardial infarction (GCST011365): the record names G as the effect allele with OR 1.06, yet its risk frequency
+0.167 is A's frequency, not G's (q56 of db-opentargets-26.09: G 0.85). The record disagrees with itself: unresolved,
+read neither as support nor as a counterexample.
+
+> [q26] _embedded.associations[1] association_id 214467339 risk_frequency NR pvalue_description pvalue_mantissa 3 pvalue_exponent -7 multi_snp_haplotype false snp_interaction false range - or_per_copy_num 1.0598 or_value 1.0598 beta - p_value 3e-07 accession_id GCST90432175 pubmed_id 38072966 first_author Al-Ali AK
+
+> [q27] _embedded.associations[1].reported_trait[0] Myocardial infarction
+
+> [q28] _embedded.associations[1].snp_allele[0] rs_id rs1230666 effect_allele ?
+
+Myocardial infarction (GCST90432175): OR 1.06, P 3 × 10⁻⁷, no allele stated (`?`): no direction.
+
+> [q29] _embedded.associations[3] association_id 193104754 risk_frequency NR pvalue_description pvalue_mantissa 5 pvalue_exponent -7 multi_snp_haplotype false snp_interaction false range [0.75-0.88] or_per_copy_num 0.81 or_value 0.81 beta - p_value 5e-07 accession_id GCST90624742 pubmed_id 40883272 first_author Guler M ci_lower 0.75 ci_upper 0.88
+
+> [q30] _embedded.associations[3].reported_trait[0] Hodgkin's lymphoma
+
+> [q31] _embedded.associations[3].snp_allele[0] rs_id rs1230666 effect_allele ?
+
+Hodgkin's lymphoma (GCST90624742): OR 0.81, P 5 × 10⁻⁷, no allele stated (`?`): no direction, and an effect of
+that size could run either way.
+
+> [q32] _embedded.associations[9] association_id 62271253 risk_frequency 0.8533 pvalue_description pvalue_mantissa 2 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range - beta - p_value 2e-09 accession_id GCST011100 pubmed_id 32678081 first_author Timmers PRHJ
+
+> [q33] _embedded.associations[9].reported_trait[0] Aging traits (healthspan, parental lifespan or longevity) (multivariate analysis)
+
+> [q34] _embedded.associations[9].snp_allele[0] rs_id rs1230666 effect_allele G
+
+Timmers 2020's multivariate ageing traits (GCST011100): P 2 × 10⁻⁹, G named as the effect allele with no effect
+size (Open Targets' set has none either): an allele label, not a direction.
+
+Among the records whose allele is stated and consistent, every one puts A, the minor allele that shortens life, on the
 side of more disease (thyroid autoimmunity, coronary disease, heart failure), and G on the side of less breast cancer:
-no trade-off at the lead.
+no trade-off detected among them. Three records leave it open: the self-contradicting myocardial infarction record
+(q23–q25) and the two with no allele (q26–q31). Rosoff's mvAge direction (q10) rests on the catalog's curation alone:
+Open Targets carries the same 0.010161293, most likely the same upstream record, not a second check.
