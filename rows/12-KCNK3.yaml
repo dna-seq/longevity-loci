@@ -14,20 +14,24 @@ verdict_reason: >-
   suggestive (Pilling 2017, rs11126666 at r² 0.99, P 4.5e-6). Independent replication, same allele: Deelen 2019's
   survival to the 90th percentile in cohorts holding no UK Biobank data, OR 1.06 per G, P 0.013, and its text names
   KCNK3 first among the parental-lifespan loci with nominal support; heterogeneity there is moderate (I² 36 %, P
-  0.071), not a red flag. That replication is one look-up, and thin: Deelen's cohorts share at least the Rotterdam
-  Study with LifeGen; its 99th percentile leans the same way and does not pass (OR 1.07, P 0.089); and Timmers 2019's
-  own look-up in earlier longevity studies, at rs11126666, is not nominal (P 0.16 one-sided, same side); whether
-  those cohorts overlap Deelen 2019's is not stated. AncestryDNA gives nothing at the lead: Wright 2019's nearest SNP,
+  0.071), not a red flag. That replication is one look-up, and thin. Deelen's cohorts share the Rotterdam Study with
+  LifeGen, a small part of its cases (6.9 % of the 90th-percentile cases, a cross-study covariance Timmers puts at
+  about 0.01), which D19.1 counts as independent. Its 99th percentile leans the same way and does not pass (OR 1.07,
+  P 0.089, power about 0.2). Timmers 2019's own look-up in earlier longevity studies, at rs11126666, is not nominal
+  (P 0.16 one-sided, same side, power about 0.7), and it is not a second test: its sources, the CHARGE and Deelen
+  2014 meta-analyses, are mostly inside Deelen 2019's, which includes many CHARGE cohorts. Neither null is a powered
+  failure. AncestryDNA gives nothing at the lead: Wright 2019's nearest SNP,
   rs2891519 in the mothers (genomic-control P 1.5e-3), is not a tag (CEU r² 0.06), and its fathers' two SNPs in the
   window have no LD Ensembl returns. The later multivariate results reuse the same parents: Timmers 2020 (P 2e-8, no
-  effect size) and Rosoff 2023's mvAge (P 3e-9 in the GWAS Catalog, G on the healthier-ageing side). Healthspan is
+  effect size) and Rosoff 2023's mvAge (P 3e-9 in the GWAS Catalog, a decrease per A, where a higher factor is healthier ageing by
+  Rosoff's coding). Healthspan is
   0: Zenin 2019's summary statistics give P 0.53 at the lead, G leaning later. Exceptional survival is +, on the same
   single Deelen look-up the replication rests on. Mechanism: Timmers 2019 files the locus as cardiometabolic and
   reads it as pleiotropic, with moderate effects on several risk factors rather than one; at rs11126666, whose G
   pairs with the lead's G in Timmers' own proxy table, G lowers BMI and A raises it (four GWAS Catalog records), and
-  A raises the use of calcium channel blockers (P 7e-31); at rs1731248 (r² 0.97), whose C travels with G by
-  frequency in Europeans and East Asians alike, C lowers essential hypertension (OR 0.90, P 5e-9, an East Asian
-  sample by its frequency). Filed under heart and vessels, with body weight beside it: the lifespan-shortening A
+  A raises the use of calcium channel blockers (P 7e-31); at rs1731248 (r² 0.97 in Europeans, C with G by
+  frequency), C lowers essential hypertension (OR 0.90, P 5e-9) in what its frequency marks as an East Asian sample;
+  that C travels with G there too is inference, with no East Asian LD cached. Filed under heart and vessels, with body weight beside it: the lifespan-shortening A
   goes with more calcium-channel-blocker use, more hypertension and higher BMI, association on one haplotype, not a mediator test.
   Actionability is descriptive: the locus does not act mainly through weight (Timmers names several risk factors,
   and the strongest record is calcium-channel-blocker use, not BMI), so D18.2's weight label is not applied, and no
@@ -40,8 +44,8 @@ verdict_reason: >-
   read). The protection is the absence of the risk allele: A shortens life and G is the common one. Age of action
   is unknown: no cached source gives this locus's own age bands.
 axes:
-  tier: {value: A, cites: [pmid-30642433#q44, pmid-30642433#q30, pmid-30642433#q47, pmid-31413261#q27, pmid-31413261#q5, pmid-30642433#q13, pmid-30642433#q48, pmid-29227965#q21, pmid-31484785#q43, db-ensembl-116#q43, db-gwascatalog-2026.10.29#q76, db-gwascatalog-2026.10.29#q79, db-opentargets-26.09#q105, db-opentargets-26.09#q107]}
-  mechanism: {value: heart_vessels, cites: [pmid-30642433#q44, pmid-30642433#q45, db-gwascatalog-2026.10.29#q91, db-gwascatalog-2026.10.29#q100, db-opentargets-26.09#q110, db-opentargets-26.09#q111]}
+  tier: {value: A, cites: [pmid-30642433#q44, pmid-30642433#q30, pmid-30642433#q47, pmid-30642433#q50, pmid-31413261#q27, pmid-31413261#q5, pmid-30642433#q13, pmid-30642433#q48, pmid-30642433#q49, pmid-31413261#q28, pmid-37550455#q2, db-gwascatalog-2026.10.29#q78, pmid-29227965#q21, pmid-31484785#q43, db-ensembl-116#q43, db-gwascatalog-2026.10.29#q76, db-gwascatalog-2026.10.29#q79, db-opentargets-26.09#q105, db-opentargets-26.09#q107]}
+  mechanism: {value: heart_vessels, cites: [pmid-30642433#q44, pmid-30642433#q45, db-gwascatalog-2026.10.29#q91, db-gwascatalog-2026.10.29#q93, db-gwascatalog-2026.10.29#q87, db-gwascatalog-2026.10.29#q90, db-gwascatalog-2026.10.29#q100, db-gwascatalog-2026.10.29#q102, db-ensembl-116#q42, db-ensembl-116#q46, db-opentargets-26.09#q110, db-opentargets-26.09#q111]}
   pleiotropy: {values: ["mech:cvd", "mech:adiposity", broad], cites: [pmid-30642433#q44, pmid-30642433#q45, db-gwascatalog-2026.10.29#q91, db-gwascatalog-2026.10.29#q100, db-gwascatalog-2026.10.29#q85, db-gwascatalog-2026.10.29#q88]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "+",
@@ -75,7 +79,7 @@ variants:
         conclusion: >-
           You carry one copy of a less common version of this DNA region (about 40 in 100 people of European
           ancestry do). In very large British and European studies, people with this version tended to have parents
-          who lived about three months less. The same version goes with slightly more use of some heart and blood-pressure medicines
+          who lived about a month and a half less. The same version goes with slightly more use of some heart and blood-pressure medicines
           and a slightly higher BMI. The finding is well
           established, though its confirmation in a separate group is a single, modest one; the effect is small and
           it is a tendency, not destiny.
@@ -83,8 +87,8 @@ variants:
         state: risk
         conclusion: >-
           You carry two copies of a less common version of this DNA region (about 7 in 100 people of European
-          ancestry do). In very large British and European studies, each copy went with parents living about three
-          months less. The same version goes with slightly more use of some heart and blood-pressure medicines and a slightly higher
+          ancestry do). In very large British and European studies, each copy went with parents living about a
+          month and a half less. The same version goes with slightly more use of some heart and blood-pressure medicines and a slightly higher
           BMI. The finding is well established, though its
           confirmation in a separate group is a single, modest one; the effect is small and it is a tendency, not
           destiny.
@@ -106,7 +110,7 @@ studies:
     effect_unit: years of life per G allele in self (parental estimate doubled)
     effect_allele: G
     direction: protective
-    statistical_test: "Cox-residual GWAS, common effect sizes across sexes (Table 1); sex-specific model P 2.7E-07; summary statistics n 637,314, direction -- in UK Biobank and LifeGen (q47)"
+    statistical_test: "Cox-residual GWAS, common effect sizes across sexes (Table 1), P as printed: no genomic-control correction, the LD-score intercept the paper's check on inflation (q50, D17.3); sex-specific model P 2.7E-07; summary statistics n 637,314, direction -- in UK Biobank and LifeGen (q47)"
     curator: claude-opus-5-5
   - rsid: rs1275922
     note: pmid-31413261
@@ -147,6 +151,44 @@ studies:
     effect_allele: G
     direction: protective
     statistical_test: "Look-up of the lead in Supplementary Data 1 (q27); logistic regression, fixed-effect meta-analysis; I² 17.9, heterogeneity P 0.27"
+    curator: claude-opus-5-5
+  - rsid: rs1275922
+    note: pmid-29227965
+    quote: q21
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank)
+    ancestry: [EUR]
+    sample_size: 389166
+    sample_unit: individuals
+    stat_significance: suggestive
+    p_value: "4.5E-06"
+    p_value_num: 4.5e-06
+    proxy_rsid: rs11126666
+    effect_size: -0.0117
+    effect_measure: beta
+    effect_unit: Martingale residual of parents' attained age per G allele of rs11126666 (positive = shorter life)
+    effect_allele: G
+    direction: protective
+    statistical_test: "BOLT-LMM on Martingale residuals of both parents' attained age, the suggestive table; rs11126666 r² 0.99 to rs1275922 (db-ensembl-116#q42); UK Biobank, inside Timmers 2019's sample, not a replication"
+    curator: claude-opus-5-5
+  - rsid: rs1275922
+    note: pmid-30642433
+    quote: q48
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: meta_analysis
+    population: European (the longevity GWAMAs of Deelen 2014 and Broer 2015, combined)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.163"
+    p_value_num: 0.163
+    proxy_rsid: rs11126666
+    effect_size: 0.01128
+    effect_measure: beta
+    effect_unit: log hazard ratio in self, recalibrated from longevity odds using APOE, per G allele at the proxy
+    effect_allele: G
+    direction: protective
+    statistical_test: "Figure 4—source data 1, one-sided P; the sheet's R2 column repeats the allele frequency and is not read as an r²; its sources are mostly inside Deelen 2019's meta-analyses (q49, pmid-31413261#q28), so not a test apart from Deelen's 90th percentile; power about 0.7, not a powered failure (D19.1)"
     curator: claude-opus-5-5
   - rsid: rs1275922
     note: pmid-30729179

@@ -160,6 +160,12 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   the nearest design (a binary endpoint) and ancestry EUR (the vocabulary has no FIN). mech:cancer is the paper's
   PheWAS in the same UK Biobank deaths; filed general_ageing. The lead (639348338): hold 25 HTT's tier until the
   adversarial read of 12's raise to A reports; write the rest of 25 meanwhile.
+- **D19 (2026-11-11, 292cab8) settles 12 and 13.** 12 stays A: a replication sharing a small, measured part of the
+  discovery is independent; the row says the overlap. Timmers' Figure 4 sources (Broer 2015's CHARGE and Deelen 2014)
+  are mostly inside Deelen 2019 (pmid-31413261#q28): not a second test. Timmers' Ps are uncorrected (no GC; LD-score
+  intercept the check, pmid-30642433#q50). A Timmers self-effect in years is already doubled: parents differ by about
+  half (12 and 93's texts fixed). 13 stays B, men only; FinnGen's Death is `own_death_case_control`. 25 HTT may go
+  ahead under D19.1.
 - **12 KCNK3** (2026-11-11), tier A, the first seed-B row raised to A; the call is put to the lead. Lead rs1275922
   (Timmers Table 1, 6.0e-9; Pilling's rs11126666 at r² 0.99 only 4.5e-6 in UK Biobank). The only replication outside
   UK Biobank is Deelen SD1's 90th percentile (OR 1.06 per G, P 0.013; 99th 0.089; I² 36 %); Timmers' Figure 4

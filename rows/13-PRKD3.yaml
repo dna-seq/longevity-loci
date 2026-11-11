@@ -100,7 +100,7 @@ studies:
     note: pmid-40021682
     quote: q15
     phenotype_class: OWN_SURVIVAL
-    study_design: own_survival_cox
+    study_design: own_death_case_control
     population: Finnish (FinnGen r11)
     ancestry: [EUR]
     sample_size: 453733
@@ -113,7 +113,7 @@ studies:
     effect_unit: FinnGen's "Death" endpoint per A allele (positive = increased death, by rs35705950 in the same table, q16 and q9)
     effect_allele: A
     direction: protective
-    statistical_test: "Park 2025's look-up in FinnGen r11's \"Death\" endpoint (Supplementary Table 2), both sexes; a binary endpoint, not a Cox model (own_survival_cox the vocabulary's nearest design); the paper's validation, not significant (q8); its power for a 0.1 % variant is not stated"
+    statistical_test: "Park 2025's look-up in FinnGen r11's \"Death\" endpoint (Supplementary Table 2), both sexes; a binary endpoint, deceased against living (own_death_case_control, D19.3); the paper's validation, not significant (q8); its power for a 0.1 % variant is not stated"
     curator: claude-opus-5-5
   - rsid: rs577106756
     note: pmid-30729179
