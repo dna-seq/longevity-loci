@@ -145,4 +145,5 @@ FinnGen r11's death endpoint (`rows-ec9f8c12`, GRCh38) at row 47's AP5Z1 inserti
 (0.0093 in Finns) log OR +0.034 for death, SE 0.039, P 0.38, so the long-lived parents' allele in Pilling leans to
 more deaths here. FinnGen is independent of UK Biobank. Pilling's top-1 % effect carried by APOE's top-1 % factor (46,
 pmid-27015805#q17 against pmid-30642433#q90) and into FinnGen (0.99, q4) predicts −0.72: power 1.00, heterogeneity P
-3e-8. The flag holds at any factor of 6.2 or more. For row 47.
+3e-8. The flag holds at any factor of 6.2 or more; the loci's mean factor is not defined for this phenotype, so the
+flag is unknown (D26.3). For row 47.

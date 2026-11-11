@@ -45,7 +45,7 @@ verdict_reason: >-
 axes:
   tier: {value: D, cites: [db-gwascatalog-2026.10.29#q312, db-gwascatalog-2026.10.29#q313, pmid-31413261#q110, pmid-31413261#q111, pmid-31413261#q112, pmid-31413261#q113, pmid-31413261#q114, pmid-31413261#q115, pmid-31413261#q116, db-gwascatalog-2026.10.29#q304, db-gwascatalog-2026.10.29#q305, pmid-30642433#q227, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, db-finngen-r11#q21, db-finngen-r11#q4, pmid-30729179#q69, db-ensembl-116#q304, db-ensembl-116#q305, db-ensembl-116#q306, db-ensembl-116#q307, db-ensembl-116#q308, db-ensembl-116#q309]}
   mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q600, pmid-31413261#q110]}
-  pleiotropy: {values: [], cites: []}
+  pleiotropy: {values: [], cites: [db-gwascatalog-2026.10.29#q303, db-gwascatalog-2026.10.29#q306, db-gwascatalog-2026.10.29#q307, db-gwascatalog-2026.10.29#q308, db-gwascatalog-2026.10.29#q309, db-gwascatalog-2026.10.29#q310, db-gwascatalog-2026.10.29#q311, db-opentargets-26.09#q601, db-opentargets-26.09#q602, db-opentargets-26.09#q603]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "+",
             cites: [pmid-30729179#q69, pmid-30642433#q227, db-finngen-r11#q21, pmid-31413261#q110, pmid-31413261#q115, pmid-31413261#q116]}

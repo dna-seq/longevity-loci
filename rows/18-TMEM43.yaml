@@ -20,10 +20,11 @@ verdict_reason: >-
   it; and dataset 1's custom chip took its first component, 11,893 SNPs, from dataset 2's own GWAS (whether the lead
   entered that way is not read). Table 1's row does not agree with itself: its β and SE give P about 0.054 for
   dataset 2 and about 4.8e-7 for the meta-analysis (0.146 / 0.029), and Table 2's sex-specific metas pool to β 0.147, SE 0.029, P about
-  3.5e-7. The discrepancy is dataset 2's printed P 0.016, which its β and SE put at about 0.054: pooled as z-scores
-  weighted by inverse SE, the printed per-dataset P values (4.24e-7 and 0.016) give about 4.6e-8 (derived), so the
-  printed 3.59e-8 follows from them, and the genome-wide call the row reads (D17.3) has that footing. Read from the
-  printed β and SE instead, the pooled P is about 3e-7, suggestive, and the row would be C (R-TIER-4). At the oldest ages outside China it does not replicate, and the null is
+  3.5e-7. Part of the gap is dataset 2's printed P 0.016, which its β and SE put at about 0.054: pooled as z-scores, the
+  printed per-dataset P values (4.24e-7 and 0.016) give about 4.6e-8 weighted by inverse SE and 2.2e-8 weighted by
+  sample size (both derived), near the printed 3.59e-8, while the printed meta β and SE still give 4.8e-7,
+  unreconciled. The genome-wide call the row reads (D17.3) has that footing; read from the printed β and SE instead,
+  the pooled P is about 3e-7, suggestive, and the row would be C (R-TIER-4). At the oldest ages outside China it does not replicate, and the null is
   informative: the variant is as common in Europeans (T 0.40) and tags XPC's missense variant as well, yet Deelen
   2019's 90th percentile gives β +0.007 (P 0.73; its confidence interval excludes both Liu's 0.146 and dataset 2's
   0.081) and the 99th +0.005 (P 0.88): a powered null (Liu's β at Deelen's SE expects z about 7.4). Both are log odds of
@@ -138,7 +139,7 @@ studies:
     effect_unit: log hazard protection per T allele in self (positive = longer life)
     effect_allele: T
     direction: protective
-    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), direction ++ in UK Biobank and LifeGen; same allele as Liu; two-sided P printed, one-sided 0.028 (derived, D25.13), a replication across ancestry, counted as one (D26.11); `nominal` would break FORMATS' band for a printed two-sided P, put to the lead; Liu's own look-up gives 0.057 (pmid-33657282#q8)"
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), direction ++ in UK Biobank and LifeGen; same allele as Liu; two-sided P printed, one-sided 0.028 (derived, D25.13), a replication across ancestry, counted as one (D26.11); Liu's own look-up gives 0.057 (pmid-33657282#q8)"
     curator: claude-opus-5-5
   - rsid: rs1043943
     note: pmid-30729179

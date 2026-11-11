@@ -40,7 +40,7 @@ verdict_reason: >-
   results and the Figure 2 sample holds the multivariate test's inputs, so none is counted. FinnGen's death endpoint
   leans G's way and is flat (T β +0.0069, P 0.36); under APOE's factor its power is about 0.62, heterogeneity P
   0.36, so no red flag. Healthspan is 0, because the evidence is mixed (D26.6): at the lead G leans to a later end of healthspan in Zenin 2019
-  (P 0.060, one-sided 0.030, the open one-sided default), and Timmers 2020's healthspan column at rs1159806 gives P
+  (P 0.060, one-sided 0.030, D26.2), and Timmers 2020's healthspan column at rs1159806 gives P
   5e-3, both inputs of the same test; but Foote 2025's frailty factor 5 ("Poorer Cognition", P 4.3e-10) puts G's side
   on the frailer side (its set's lead rs6911407, r² 0.98; the sign Open Targets' harmonisation, the catalog printing no
   allele). Foote's factor is healthspan-class (D25.8) and genome-wide, so a + would tell a reader the opposite of it. Lifespan +, exceptional
