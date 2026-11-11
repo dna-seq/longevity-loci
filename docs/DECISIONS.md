@@ -91,3 +91,21 @@ Rejected: an effect size from one of its component traits (that is a different s
 `phenotype_class`), and leaving the test in prose (the strongest P at the locus would support nothing the check
 sees).
 
+## D16 — a co-occurring lifespan signal is a lifespan study at p < 0.05, same allele and direction (2026-11-11)
+
+§4.5 lets `HEALTHSPAN` and `MULTIVARIATE_AGEING` score "only with a co-occurring lifespan signal", and does not say
+what a signal is. At 103 (rs1049053, HLA-DQB1) the curator read it as at least suggestive (p < 1×10⁻⁵) and set tier
+C. Zenin's healthspan GWAS is genome-wide there (P 1.4×10⁻¹¹), and the lifespan look-ups are nominal on the same
+side (Timmers 2019's summary statistics P 1.4×10⁻⁴; AncestryDNA mothers at a tag, P 3.3×10⁻⁴). The lead settled
+it under the person's standing word (2026-11-11, "if this is autonomous"; "Advisor pattern" for the requirements'
+silent cells): **a co-occurring lifespan signal is a scoring-class lifespan study (§4.5's first row) at p < 0.05,
+on the same allele in the same direction.** That is the bar §4.1 sets for a replication, and D11/D13 already let a
+nominal study support. With it, a genome-wide healthspan locus is tiered by §4.1 as any other: unreplicated in
+healthspan, it is B ("a single study without independent replication"). With no such lifespan study, it is C, in
+the research view, and needs no token of its own to stay out of scoring.
+
+Rejected: the suggestive bar, which no text sets and which would make the healthspan clause of §4.1's tier A
+unreachable in practice; and a `HEALTHSPAN_ONLY` token, which the tier already carries. This decides 103 and the
+seed's other healthspan loci (35 IRF4, 66 TYR, 86 DEF8). Not a hard rule in the check: which study is the
+co-occurring one is the curator's reading.
+
