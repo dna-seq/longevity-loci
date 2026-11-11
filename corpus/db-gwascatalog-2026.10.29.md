@@ -589,3 +589,22 @@ Read as written, G lowers type 2 diabetes, so the lead's A (rs529200-A's partner
 would raise it: against Open Targets' set led by rs247975 (C raising it, db-opentargets-26.09#q256-q258). The catalog's
 other type 2 diabetes record at rs529200 (Suzuki, GCST90492734) prints no β. One record dissents; not resolved here.
 For row 24.
+
+## Reading 2026-11-11, record
+
+Row 25 (HTT). associations-rs61348208 (three records), associations-rs16843836 (one), associations-rs82334 (one).
+
+> [q182] _embedded.associations[1] association_id 62271271 risk_frequency 0.3967 pvalue_description  pvalue_mantissa 3 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range - beta - p_value 3.0000000000000004e-08 accession_id GCST011100 pubmed_id 32678081 first_author Timmers PRHJ
+
+> [q183] _embedded.associations[1].snp_effect_allele[0] rs61348208-T
+
+Timmers 2020's multivariate analysis of healthspan, parental lifespan and longevity (GCST011100): rs61348208 T, P 3 ×
+10⁻⁸, no effect size, the same UK Biobank and LifeGen samples as Timmers 2019. The third record at the lead is Salo's
+lumbar disc herniation (GCST90837384), P 4 × 10⁻⁷, no allele: below genome-wide, not read.
+
+> [q184] _embedded.associations[0] association_id 131476376 risk_frequency NR pvalue_description  pvalue_mantissa 7 pvalue_exponent -13 multi_snp_haplotype false snp_interaction false range [0.0058-0.0102] beta 0.008003949 unit decrease p_value 7e-13 accession_id GCST90321079 pubmed_id 37550455 first_author Rosoff DB ci_lower 0.0058 ci_upper 0.0102
+
+> [q185] _embedded.associations[0].snp_effect_allele[0] rs16843836-G
+
+Rosoff 2023's mvAge at rs16843836: G, a decrease of 0.0080, P 7 × 10⁻¹³, matching Supplementary Table 6
+(pmid-37550455#q21). For row 25.

@@ -446,3 +446,34 @@ rs472103 (GRCh38 3:173,404,702; A/C/T, the reference A): A is 0.452 in gnomAD's 
 1000 Genomes EUR, the minor allele, near even. Its proxies in 1000 Genomes EUR: rs247975 r² 0.93 (T/C on the forward
 strand), rs583514 r² 0.86, rs529200 r² 0.94. rs529200's A is 0.478 in EUR; at frequencies 0.465 and 0.478 only A
 with A fits r² 0.94 (A with G would cap r² near 0.80): rs529200-A rides with rs472103-A (derived). For row 24.
+
+## Reading 2026-11-11, record
+
+Linkage disequilibrium at 4p16.3, 1000 Genomes phase 3 (Ensembl REST, pairwise), for row 25.
+
+> [q118] [0] d_prime 0.999996 population_name 1000GENOMES:phase_3:EUR r2 0.703834 variation2 rs16843836 variation1 rs61348208
+
+> [q119] [0] d_prime 0.940373 variation1 rs61348208 variation2 rs82334 population_name 1000GENOMES:phase_3:EUR r2 0.663797
+
+> [q120] [0] r2 0.095064 variation1 rs61348208 d_prime 0.370961 population_name 1000GENOMES:phase_3:EUR variation2 rs16843603
+
+> [q121] [0] d_prime 0.965057 variation2 rs114298671 variation1 rs61348208 r2 0.082481 population_name 1000GENOMES:phase_3:EUR
+
+> [q122] [0] d_prime 0.956065 r2 0.673733 variation2 rs362273 variation1 rs61348208 population_name 1000GENOMES:phase_3:EUR
+
+> [q123] [0] d_prime 0.964900 population_name 1000GENOMES:phase_3:EAS variation2 rs362273 r2 0.760777 variation1 rs61348208
+
+> [q124] [0] r2 0.981925 variation2 rs362273 variation1 rs82334 population_name 1000GENOMES:phase_3:EUR d_prime 1.000000
+
+> [q125] [0] r2 0.910684 d_prime 0.985517 variation2 rs82334 variation1 rs16843836 population_name 1000GENOMES:phase_3:EUR
+
+> [q126] [0] variation1 rs61348208 r2 0.425847 variation2 rs363096 population_name 1000GENOMES:phase_3:EUR d_prime 0.984722
+
+> [q127] [0] d_prime 0.999986 population_name 1000GENOMES:phase_3:EUR variation1 rs61348208 r2 0.321684 variation2 rs11731237
+
+rs61348208 to: rs16843836 r² 0.70 and rs82334 r² 0.66 (D′ 1.00, 0.94), the same signal by the shadow test
+(pmid-30642433#q68, q69); rs16843603 (ADD1) r² 0.095 and rs114298671 (MSANTD1) r² 0.08, separate. Timmers 2022's
+aging-GIP1 lead rs362273: r² 0.67 to rs61348208 in EUR and 0.76 in EAS, 0.98 to rs82334. rs16843836 to rs82334 r²
+0.91. Wright 2019's clumped AncestryDNA SNPs in the window (fathers born 1886-1940, Supplemental Table 8; no mothers'
+SNP there) are no tag: the nearest, rs363096 (r² 0.43) and rs11731237 (0.32), the rest under 0.19 (cached as
+ld-rs61348208-<rsid>), so AncestryDNA is not read at the lead.

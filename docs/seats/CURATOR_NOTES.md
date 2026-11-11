@@ -20,7 +20,7 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   compacting` to the lead, `watchdog.sh compact`, end the turn; the lead wakes the next. Stop at 80 % of the 7-day
   window or 95 % of the 5-hour window. After each tenth `done:`, re-measure the pacing and
   go on with the next ten, unless blocked or steered (the person, 2026-11-11, via the lead, 639316091: "After 10
-  adjust pacing and go next 10 and so on unless blocked or I steer"; this replaces the earlier pause after ten). Rows done in this run: 6 CELSR2 (1 of 10), 38 HLA-DQA1 (2 of 10), 81 FES/FURIN (3 of 10), 103 (4 of 10), 2 PABPC4 (5 of 10), 4 LINC02796 (6 of 10), 5 FPGT / TNNI3K (7 of 10), 7 MAGI3 (8 of 10), 8 IL6R Asp358Ala with 157 (9 of 10); 10 RABGAP1L (10 of 10); second run: 11 LINC01875 (1 of 10), 12 KCNK3 (2 of 10), 13 PRKD3 (3 of 10), 14 LINC01122 (4 of 10), 15 AFF3 (5 of 10), 16 LRP1B (6 of 10), 17 CASP8 (7 of 10), 18 TMEM43 (8 of 10), 19 HMGB3P12 (9 of 10), 20 RNU1-96P (10 of 10); third run: 21 IP6K1 (1 of 10; held, then committed under D20), 24 NLGN1 (2 of 10), then the lead's review of 103, 8, 2, 10 with 5, 4 and 11 under D17/D18 (one commit each, not counted as rows); 6's healthspan re-cited to Zenin's cached file (597d9fb); 103 re-tiered B under D16 (5abae88); the Open Targets quotes re-quoted from cached records (f69c8d8); the corrections of 71 (d44fd4a) and 67 (3dd792c) done, the E3 gene rule at 57 (8d27300) and 80 (728d78d), 67's MANOVA study added under D15 (a519ae4); 38 corrected again at 103 (the AncestryDNA tag is shared); next 96 APOE waits on D2, so the seed tier B by locus_id.
+  adjust pacing and go next 10 and so on unless blocked or I steer"; this replaces the earlier pause after ten). Rows done in this run: 6 CELSR2 (1 of 10), 38 HLA-DQA1 (2 of 10), 81 FES/FURIN (3 of 10), 103 (4 of 10), 2 PABPC4 (5 of 10), 4 LINC02796 (6 of 10), 5 FPGT / TNNI3K (7 of 10), 7 MAGI3 (8 of 10), 8 IL6R Asp358Ala with 157 (9 of 10); 10 RABGAP1L (10 of 10); second run: 11 LINC01875 (1 of 10), 12 KCNK3 (2 of 10), 13 PRKD3 (3 of 10), 14 LINC01122 (4 of 10), 15 AFF3 (5 of 10), 16 LRP1B (6 of 10), 17 CASP8 (7 of 10), 18 TMEM43 (8 of 10), 19 HMGB3P12 (9 of 10), 20 RNU1-96P (10 of 10); third run: 21 IP6K1 (1 of 10; held, then committed under D20), 24 NLGN1 (2 of 10), 25 HTT with 158 (3 of 10, after the colocalisation sweep), then the lead's review of 103, 8, 2, 10 with 5, 4 and 11 under D17/D18 (one commit each, not counted as rows); 6's healthspan re-cited to Zenin's cached file (597d9fb); 103 re-tiered B under D16 (5abae88); the Open Targets quotes re-quoted from cached records (f69c8d8); the corrections of 71 (d44fd4a) and 67 (3dd792c) done, the E3 gene rule at 57 (8d27300) and 80 (728d78d), 67's MANOVA study added under D15 (a519ae4); 38 corrected again at 103 (the AncestryDNA tag is shared); next 96 APOE waits on D2, so the seed tier B by locus_id.
 - **10 RABGAP1L** (2026-11-11), tier C re-tiered (seed B); briefly blocked on a `study_design` value, which the lead
   added as `current_age_quantitative` (8187cb8; the study written as a row, not prose). Both seed rsIDs
   (rs10798302 lead, rs16847402; r² 0.53, D′ 0.99, cached as db-ensembl-116 `ld-rs10798302-rs16847402.json`) come
@@ -154,6 +154,15 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   and Rosoff's look-up) is healthspan-class and Wright's viability result confirms only, so B (the lead's D23,
   2026-11-11, option (a)); modifiable through weight (D18.2) on the set leads' betas phased by frequency (Harris 2024's
   two sets dissent); no PROTECT token at 45/55 (as at 21); E1 NLGN1.
+- **25 HTT** (2026-11-11), with 158 folded in (D14; rs82334 r² 0.66, the lead's shadow by z). Tier A (seed B): Timmers
+  2019 genome-wide, replicated by Timmers 2022's FinnGen and Biobank Japan look-up (Supplementary Table 6 in MOESM1,
+  the abstract alone says "independent"; rs362273 r² 0.67 EUR, 0.76 EAS, P 0.001 one-sided) and Deelen's 99th
+  percentile (P 0.0093; 90th 0.19). The survival look-up is written `meta_analysis` with OWN_SURVIVAL; frailty
+  (Atkins) `meta_analysis` with HEALTHSPAN, there being no frailty design. Atkins' P 3e-7 at rs61348208 carries a
+  chromosome-3 label (RBM6) and is not read. E2 HTT on the one set holding the lead; mvAge's set (same signal,
+  MSANTD1 L2G 0.55) would make it E3; told to the lead as a default. The seed's ADD1 (rs16843603) and MSANTD1
+  (rs114298671) are separate signals (r² < 0.1); ADD1 looks like a B candidate under D16 (mvAge 4e-10, lifespan
+  2.6e-7, FinnGen/BBJ P 0.042), no seed locus of its own.
 - **Done: the colocalisation sweep** (2026-11-11). Queries before then returned GWAS partners only (Open Targets lists
   QTL partners only when `studyTypes` names them). Re-read with the QTL types and `isTransQtl` (trans QTLs are not
   counted), 15 rows, not the 9 first listed: the E2 rows' "no colocalisation read" needed it too. A minor rival made

@@ -1,0 +1,212 @@
+# The seed list's locus 25, HTT (4p16.3), with locus 158, HTT (Atkins 2021's frailty lead rs82334), folded in (D14):
+# rs82334 is r² 0.66 to the lead and its lifespan signal is the lead's shadow (db-ensembl-116#q119,
+# pmid-30642433#q69). Curated 2026-11-11, the third run's first row. Lead rs61348208 (Timmers 2019, Table 1).
+# rs16843836 (Rosoff 2023's mvAge lead, r² 0.70) and rs362273 (Timmers 2022's aging-GIP1 lead, r² 0.67 EUR, 0.76
+# EAS) are the same signal. The seed's other two rsIDs here, rs16843603 (ADD1, r² 0.095) and rs114298671 (MSANTD1,
+# r² 0.08), are separate mvAge signals, named and not read. Wright 2019's AncestryDNA SNPs in the window are no tag
+# (best r² 0.43). Open Targets 26.09: Timmers 2019's credible set holds the lead; mvAge's set holds rs16843836 and
+# rs82334, not the lead. The GWAS Catalog (2026-10-29) holds three associations for rs61348208.
+locus_id: 25
+locus_name: HTT
+also_loci: [158]
+verdict: kept
+verdict_reason: >-
+  Tier A, up from the seed's B, on §4.1's letter. Genome-wide significant for parental lifespan in about one million
+  lives (Timmers 2019, P 5.8e-9, past its own 2.5e-8 threshold; T, the minor allele at 39 %, adding 0.23 years per
+  copy, UK Biobank and LifeGen on the same side), a locus first found there. Replicated twice in samples outside it,
+  same side. First, own survival in FinnGen and Biobank Japan (Timmers 2022's look-up of its aging-GIP1 leads, 346,737
+  people, 46,128 deaths): at rs362273, whose G rides with the lead's T (r² 0.67 in Europeans, 0.76 in East Asians;
+  the phase derived from direction and frequency, not read), 0.21 years per G, one-sided P 0.001, 0.025 after
+  Bonferroni over 23 SNPs; the abstract calls it independent evidence for the loci near HTT and MAML3. A weak proxy,
+  but the lead's own signal: rs82334, at r² 0.98 to rs362273, carries the lead's shadow in Timmers' data. Second,
+  Deelen 2019's survival to the 99th percentile in cohorts holding no UK Biobank data, OR 1.09 per T, P 0.0093
+  (I² 0); its 90th percentile leans the same way and does not pass (OR 1.03, P 0.19), and the 99th's cases are a
+  subset of the 90th's, so this is one look, not two. Deelen shares the Rotterdam Study with LifeGen, a small part
+  (D19.1). Park 2025's own-survival GWAS of UK Biobank gives P 0.02 at the lead, with no direction printed, in the
+  children of Timmers' UK Biobank parents: not independent, not scored. AncestryDNA gives nothing at the lead: Wright
+  2019's clumped SNPs in the window are no tag (best r² 0.43). The multivariate results reuse the same parents:
+  Timmers 2020 (P 3e-8 at the lead, no effect size), Rosoff 2023's mvAge at rs16843836 (r² 0.70, P 7.2e-13, its A
+  the healthier and the lead's partner) and aging-GIP1 itself; cited here, not scored. Healthspan is +: Zenin 2019's
+  summary statistics give P 0.030 at the lead, T going with a later end of healthspan, and Atkins 2021's frailty
+  index is genome-wide at rs82334 (P 3.1e-10, UK Biobank and TwinGene the same way), whose C, the lead's partner,
+  goes with less frailty (HEALTHSPAN-class, D23; the UK Biobank part is the same people). Atkins' text puts
+  rs61348208 itself at P 3e-7 for frailty but labels it "RBM6 locus", a chromosome-3 gene, so that value is not read.
+  Exceptional survival is +, on the single Deelen look. Mechanism: general ageing. Timmers 2019 assigns HTT no disease
+  class and reads it as pleiotropic, with moderate effects on several risk factors; the signal colocalises with
+  white-cell counts, lipid fractions, eGFR, depression and waist-hip ratio, none of them a disease that leads it. At
+  rs362273's proxies, G (with the lead's T) goes with a lower waist-hip ratio and BMI, fewer white cells and less
+  depression, and a slightly lower eGFR; the Huntington's disease record prints no effect. The trade-off was looked
+  for (D18.1): the lower eGFR on the longer-lived side is a small biomarker shift at a proxy two LD steps from the
+  lead (r² 0.63 to rs362273), no disease, so not flagged. Actionability is descriptive: nothing shows the locus acts
+  mainly through weight. Causal confidence C2, at its edge: rs61348208 leads Timmers 2019's PICS set at PIP 0.108 among
+  70 variants, the next at 0.029; aging-GIP1's fine-mapping puts it at 0.017 behind rs16843836 (0.22), so the causal
+  variant is not resolved. The effector is HTT, E2: no gene passes locus-to-gene in Timmers' set (MSANTD1 0.17, HTT
+  0.17), and HTT holds 37 of its 40 cis-QTL colocalisations (H4 ≥ 0.8), HTT-AS the other 3, under a tenth (D24),
+  counting the one lifespan-class set that holds the lead. mvAge's set, the same signal but not holding the lead,
+  would make it E3: MSANTD1 passes locus-to-gene there (0.55). The protective allele is T, the less common one; the
+  most common genotype, C/T, is the reference (§6.2). Age of action is unknown: no cached source gives this locus's
+  own age bands. Evidence is not European only: the FinnGen and Biobank Japan look-up spans both.
+axes:
+  tier: {value: A, cites: [pmid-30642433#q66, pmid-30642433#q30, pmid-30642433#q67, pmid-30642433#q50, pmid-37118362#q1, pmid-37118362#q2, pmid-37118362#q3, pmid-37118362#q4, pmid-37118362#q5, pmid-37118362#q6, pmid-37118362#q7, pmid-37118362#q8, db-ensembl-116#q122, db-ensembl-116#q123, db-ensembl-116#q124, pmid-30642433#q69, pmid-31413261#q51, pmid-31413261#q5, pmid-31413261#q1, pmid-30642433#q13, pmid-40021682#q18, pmid-40021682#q19, db-ensembl-116#q126, db-ensembl-116#q127, db-gwascatalog-2026.10.29#q182, db-gwascatalog-2026.10.29#q183, pmid-37550455#q21, pmid-37550455#q22, db-gwascatalog-2026.10.29#q184, db-gwascatalog-2026.10.29#q185, db-ensembl-116#q118, pmid-30642433#q68]}
+  mechanism: {value: general_ageing, cites: [pmid-30642433#q66, pmid-30642433#q45, db-opentargets-26.09#q400, db-opentargets-26.09#q401, db-opentargets-26.09#q402, db-opentargets-26.09#q403, db-opentargets-26.09#q404, db-opentargets-26.09#q405, db-opentargets-26.09#q406, db-opentargets-26.09#q407, pmid-37118362#q9, pmid-37118362#q10, pmid-37118362#q11, pmid-37118362#q12, pmid-37118362#q13, pmid-37118362#q14]}
+  pleiotropy: {values: [broad], cites: [pmid-30642433#q45, db-opentargets-26.09#q400, db-opentargets-26.09#q401, db-opentargets-26.09#q403, db-opentargets-26.09#q405, db-opentargets-26.09#q407, pmid-37118362#q9, pmid-37118362#q11, pmid-37118362#q12, pmid-37118362#q13]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
+            cites: [pmid-30729179#q42, pmid-34431594#q4, pmid-34431594#q1, db-ensembl-116#q119, pmid-30642433#q66, pmid-37118362#q3, pmid-31413261#q51]}
+  actionability: {label: descriptive, cites: [pmid-30642433#q45, pmid-37118362#q9, pmid-37118362#q10]}
+  context: {values: [], cites: []}
+flags:
+  - {token: "causal:C2", cites: [db-opentargets-26.09#q371, db-opentargets-26.09#q372, db-opentargets-26.09#q373, db-opentargets-26.09#q374, db-opentargets-26.09#q375, db-opentargets-26.09#q376, db-opentargets-26.09#q377, db-opentargets-26.09#q378, pmid-37118362#q15, pmid-37118362#q16]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q379, db-opentargets-26.09#q380, db-opentargets-26.09#q383, db-opentargets-26.09#q384, db-opentargets-26.09#q385, db-opentargets-26.09#q386, db-opentargets-26.09#q387, db-opentargets-26.09#q388, db-opentargets-26.09#q389, db-opentargets-26.09#q381, db-opentargets-26.09#q382, db-opentargets-26.09#q397, db-opentargets-26.09#q398, db-opentargets-26.09#q399]}
+variants:
+  - rsid: rs61348208
+    gene: HTT
+    phenotype: HTT region, ageing and frailty
+    trait_efo_id: EFO_0007796
+    effect_allele: T
+    effect_size: 0.2299
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: T/T
+        state: protective
+        conclusion: >-
+          You carry two copies of the less common version of this DNA region (about 15 in 100 people of European
+          ancestry do). In very large British and European studies, each copy went with parents living about a
+          month and a half longer, and separate studies in Finland and Japan, and of very long-lived Europeans,
+          agreed. The same version goes with slightly less frailty in later life. The finding is well established;
+          the effect is small and it is a tendency, not destiny. The region, on chromosome 4, lies in the HTT gene.
+      - genotype: C/T
+        state: neutral
+        conclusion: >-
+          You carry one copy of each version of this DNA region (about 48 in 100 people of European ancestry do, the
+          most common combination). It is the reference the other combinations are compared with. The region, on
+          chromosome 4, lies in the HTT gene and is linked to how people age in general rather than to one disease.
+      - genotype: C/C
+        state: risk
+        conclusion: >-
+          You carry two copies of the more common version of this DNA region (about 37 in 100 people of European
+          ancestry do). In very large British and European studies, each copy went with parents living about a
+          month and a half less, and separate studies in Finland and Japan, and of very long-lived Europeans,
+          agreed. The same version goes with slightly more frailty in later life. The finding is well established;
+          the effect is small and it is a tendency, not destiny.
+studies:
+  - rsid: rs61348208
+    note: pmid-30642433
+    quote: q66
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the 26 LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 1012240
+    sample_unit: lives
+    stat_significance: significant
+    p_value: "5.8E-09"
+    p_value_num: 5.8e-09
+    effect_size: 0.2299
+    effect_measure: beta
+    effect_unit: years of life per T allele in self (parental estimate doubled)
+    effect_allele: T
+    direction: protective
+    statistical_test: "Cox-residual GWAS, common effect sizes across sexes (Table 1), P as printed (D17.3); sex-specific model P 1.2E-07; summary statistics n 638,112, direction ++ in UK Biobank and LifeGen (q67)"
+    curator: claude-opus-5-5
+  - rsid: rs61348208
+    note: pmid-37118362
+    quote: q3
+    phenotype_class: OWN_SURVIVAL
+    study_design: meta_analysis
+    population: FinnGen (Finnish) and Biobank Japan (Japanese)
+    ancestry: [EUR, EAS]
+    sample_size: 346737
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "0.001"
+    p_value_num: 0.001
+    proxy_rsid: rs362273
+    effect_size: 0.211
+    effect_measure: beta
+    effect_unit: approximate years of survival per G allele of rs362273
+    effect_allele: G
+    direction: protective
+    statistical_test: "Supplementary Table 6 (q2-q7): one-sided Wald P for the direction of aging-GIP1, Bonferroni P 0.025 over 23 SNPs; SE 0.0689; 46,128 deaths; G 0.44 in FinnGen, 0.32 in Biobank Japan; rs362273 r² 0.67 to the lead in 1000 Genomes EUR and 0.76 in EAS (db-ensembl-116#q122, q123), a weak proxy, its G with the lead's T derived from direction and frequency; outside Timmers 2019's and Deelen 2019's samples"
+    curator: claude-opus-5-5
+  - rsid: rs61348208
+    note: pmid-31413261
+    quote: q51
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's 18 discovery cohorts)
+    ancestry: [EUR]
+    n_cases: 3484
+    sample_size: 28967
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "9.284E-3"
+    p_value_num: 0.009284
+    effect_size: 1.089
+    effect_measure: OR
+    effect_unit: odds ratio of reaching the 99th percentile, per T allele
+    effect_allele: T
+    direction: protective
+    statistical_test: "Look-up of the lead in Supplementary Data 1 (q51); the text names HTT among the nominal loci (q5); logistic regression, fixed-effect meta-analysis; I² 0, heterogeneity P 0.60; the cases a subset of the 90th percentile's; the cohorts share at least the Rotterdam Study with LifeGen (pmid-30642433#q13, D19.1)"
+    curator: claude-opus-5-5
+  - rsid: rs61348208
+    note: pmid-31413261
+    quote: q51
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's 18 discovery cohorts)
+    ancestry: [EUR]
+    n_cases: 11262
+    sample_size: 36745
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.1894"
+    p_value_num: 0.1894
+    effect_size: 1.027
+    effect_measure: OR
+    effect_unit: odds ratio of reaching the 90th percentile, per T allele
+    effect_allele: T
+    direction: protective
+    statistical_test: "Look-up of the lead in Supplementary Data 1 (q51); logistic regression, fixed-effect meta-analysis; I² 14.2, heterogeneity P 0.29"
+    curator: claude-opus-5-5
+  - rsid: rs61348208
+    note: pmid-30729179
+    quote: q42
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "0.0299"
+    p_value_num: 0.0299
+    effect_size: -0.0108
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per T allele (positive = earlier)
+    effect_allele: T
+    direction: protective
+    statistical_test: "Zenin 2019's healthspan summary statistics, SE 0.00498, Z -2.172, -log10 P 1.525 (P about 0.030, from the file's -log10); UK Biobank, the same people as Timmers 2019's UK Biobank part"
+    curator: claude-opus-5-5
+  - rsid: rs61348208
+    note: pmid-34431594
+    quote: q4
+    phenotype_class: HEALTHSPAN
+    study_design: meta_analysis
+    population: European (UK Biobank participants aged 60 to 70 and the Swedish TwinGene cohort)
+    ancestry: [EUR]
+    sample_size: 175226
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "3.1E-10"
+    p_value_num: 3.1e-10
+    proxy_rsid: rs82334
+    effect_size: 0.022
+    effect_measure: beta
+    effect_unit: quantile-normalised frailty index per A allele of rs82334 (positive = frailer)
+    effect_allele: A
+    direction: risk
+    statistical_test: "Table 2 (q2-q4): BOLT-LMM linear mixed model within each cohort, meta-analysed; direction ++ in UK Biobank and TwinGene, heterogeneity P 0.18; rs82334 r² 0.66 to the lead (db-ensembl-116#q119), the lead's shadow in Timmers 2019 (pmid-30642433#q69), its A with the lead's C (derived from direction); a frailty index is HEALTHSPAN-class (D23); no frailty design in the vocabulary, so meta_analysis; the paper's P 3e-7 for rs61348208 itself is labelled with a chromosome-3 locus (q6) and not read"
+    curator: claude-opus-5-5

@@ -1411,3 +1411,114 @@ Row 67 (rs61905747): mvAge's set (b4aa6d2c) beside Timmers 2020's, the same fift
 0.8) and the same locus-to-gene (CLDN25 0.35). E2 USP28 stands.
 
 > [q370] data.credibleSet.colocalisation count 15
+
+## Reading 2026-11-11, record
+
+Row 25 (HTT, rs61348208). The lifespan-class credible sets holding the lead (credibleSets-longevity8-4_3087837_C_T),
+mvAge's lead rs16843836 (…-4_3111610_G_A) and Atkins' rs82334 (…-4_3223644_A_C); then each set's locus-to-gene and
+its QTL colocalisations (cis only, H4 ≥ 0.8, D24), and the GWAS colocalisations of Timmers' set.
+
+### The sets
+
+> [q371] data.credibleSets.rows[0] studyLocusId 0818ea59a9a46aca027bfbba5eb497b7 finemappingMethod PICS
+
+> [q372] data.credibleSets.rows[0].locus count 70
+
+> [q373] data.credibleSets.rows[0].locus.rows[0] posteriorProbability 0.1082559275924237
+
+> [q374] data.credibleSets.rows[0].locus.rows[1] posteriorProbability 0.02896975667294271
+
+> [q375] data.credibleSets.rows[1] studyLocusId 0e5bde677354457e3a8c7a15e5ad6db3 finemappingMethod PICS
+
+> [q376] data.credibleSets.rows[1].locus count 39
+
+> [q377] data.credibleSets.rows[1].locus.rows[0] posteriorProbability 0.06437204866041868
+
+> [q378] data.credibleSets.rows[1].locus.rows[17] posteriorProbability 0.025358859835719
+
+Of the eight lifespan-class studies, one set holds rs61348208: Timmers 2019's (GCST009890, 0818ea59, PICS), 70
+variants, the lead first at PIP 0.108, the next 0.029. mvAge's set (GCST90321079, 0e5bde67, PICS, 39 variants) is led
+by rs16843836 at 0.064 and holds rs82334 (0.025), not rs61348208. Atkins' rs82334 is in no other lifespan-class set.
+The lead sits at C2 by 0.008 in a flat set: the causal variant is not resolved.
+
+### Locus-to-gene
+
+> [q379] data.credibleSet.l2GPredictions.rows[0] score 0.1745876967906952
+
+> [q380] data.credibleSet.l2GPredictions.rows[1] score 0.16904586553573608
+
+> [q381] data.credibleSet.l2GPredictions.rows[0] score 0.5475932359695435
+
+> [q382] data.credibleSet.l2GPredictions.rows[1] score 0.4425610899925232
+
+Timmers' set (set-0818ea59-l2g): MSANTD1 0.17, HTT 0.17; no gene passes 0.5. mvAge's set (set-0e5bde67-l2g): MSANTD1
+0.55, HTT 0.44, RGS12 0.13; MSANTD1 passes.
+
+### QTL colocalisations
+#### set 0818ea59
+> [q383] data.credibleSet.colocalisation count 55
+
+> [q384] data.credibleSet.colocalisation.rows[0] rightStudyType eqtl h4 0.9591710381281714 clpp 0.020761397319080756
+
+> [q385] data.credibleSet.colocalisation.rows[0].otherStudyLocus isTransQtl false
+
+> [q386] data.credibleSet.colocalisation.rows[0].otherStudyLocus.study.target approvedSymbol HTT
+
+> [q387] data.credibleSet.colocalisation.rows[17] rightStudyType eqtl h4 0.9617852572180127 clpp 0.022166383735073656
+
+> [q388] data.credibleSet.colocalisation.rows[17].otherStudyLocus isTransQtl false
+
+> [q389] data.credibleSet.colocalisation.rows[17].otherStudyLocus.study.target approvedSymbol HTT-AS
+
+#### set 0e5bde67
+> [q390] data.credibleSet.colocalisation count 29
+
+> [q391] data.credibleSet.colocalisation.rows[10] rightStudyType sqtl h4 0.9677233946542065 clpp 0.026681861585689796
+
+> [q392] data.credibleSet.colocalisation.rows[10].otherStudyLocus isTransQtl false
+
+> [q393] data.credibleSet.colocalisation.rows[10].otherStudyLocus.study.target approvedSymbol HTT
+
+> [q394] data.credibleSet.colocalisation.rows[19] rightStudyType eqtl h4 0.9611859648334469 clpp 0.021959257731845417
+
+> [q395] data.credibleSet.colocalisation.rows[19].otherStudyLocus isTransQtl false
+
+> [q396] data.credibleSet.colocalisation.rows[19].otherStudyLocus.study.target approvedSymbol RGS12
+
+> [q397] data.credibleSet.colocalisation.rows[12] rightStudyType eqtl h4 0.9670476431524524 clpp 0.02596799408688351
+
+> [q398] data.credibleSet.colocalisation.rows[12].otherStudyLocus isTransQtl false
+
+> [q399] data.credibleSet.colocalisation.rows[12].otherStudyLocus.study.target approvedSymbol MSANTD1
+
+Timmers' set: 55 colocalisations, 40 at H4 ≥ 0.8, all cis: HTT 37 (eQTL 19, transcript 14, splice 4; max H4 0.96,
+GTEx muscle), HTT-AS 3 (eQTL; 0.96), 3 of 40, under a tenth. mvAge's set: 29, 18 at H4 ≥ 0.8, all cis: HTT 13 (splice
+7, transcript 3, eQTL 3), RGS12 4, MSANTD1 1.
+
+Under D24, counting the sets that hold the lead (Timmers' alone): HTT colocalises, no gene passes L2G and HTT-AS holds
+under a tenth, so HTT at E2 by colocalisation alone. Counting mvAge's set too (the same signal, r² 0.70, but not
+holding the lead): MSANTD1 passes L2G there (0.55), which D24 makes ambiguous, E3. Row 25 takes the first, by the
+sweep's rule of the sets that hold the lead.
+
+### GWAS colocalisations of Timmers' set
+
+> [q400] data.credibleSet.colocalisation count 100
+
+> [q401] data.credibleSet.colocalisation.rows[10] colocalisationMethod COLOC_PIP_ECAVIAR h4 0.953257397009372 clpp 0.018106825660253813 rightStudyType gwas
+
+> [q402] data.credibleSet.colocalisation.rows[10].otherStudyLocus.study id GCST008059 traitFromSource Estimated glomerular filtration rate studyType gwas
+
+> [q403] data.credibleSet.colocalisation.rows[25] colocalisationMethod COLOC_PIP_ECAVIAR h4 0.9534143518041933 clpp 0.018252438710154115 rightStudyType gwas
+
+> [q404] data.credibleSet.colocalisation.rows[25].otherStudyLocus.study id GCST007342 traitFromSource Depression studyType gwas
+
+> [q405] data.credibleSet.colocalisation.rows[0] colocalisationMethod COLOC_PIP_ECAVIAR h4 0.9421081552268675 clpp 0.014502214494512744 rightStudyType gwas
+
+> [q406] data.credibleSet.colocalisation.rows[0].otherStudyLocus.study id GCST90476457 traitFromSource white blood cell count (WBC, minimum, inv-norm transformed) studyType gwas
+
+> [q407] data.credibleSet.colocalisation.rows[23].otherStudyLocus.study id GCST009858 traitFromSource Waist-to-hip ratio adjusted for BMI studyType gwas
+
+(coloc-0818ea59…, eCAVIAR, 100 rows.) The set colocalises at H4 above 0.9 with white-cell and neutrophil counts,
+lipid fractions in VLDL and HDL, eGFR (0.95), depression and major depression (0.95), waist-hip ratio adjusted for BMI
+(0.91) and aspartate aminotransferase; frailty at 0.68. No direction is given; Timmers 2022's look-ups give some
+(pmid-37118362#q9-q13). No disease of the heart, vessels or cancer leads it.
