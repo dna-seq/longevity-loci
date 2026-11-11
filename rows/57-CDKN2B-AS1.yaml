@@ -15,8 +15,9 @@ verdict_reason: >-
   Age of action is read as lifelong: no significant age difference in Joshi 2017, and a larger effect at the 99th
   than the 90th percentile in Deelen 2019, though Timmers 2019 sees the hazard-ratio effect tend to decline after 60.
   Deelen's own CDKN2A/B discovery variant (rs7039467) is in none of the lead's credible sets and is not scored here.
-  No gene is named (requirements §4.2, §6.2: a gene only at E1/E2): locus-to-gene is below 0.5 for every gene
-  (CDKN2B 0.36, CDKN2A 0.21), and Timmers 2020 names CDKN2B by SMR, not by colocalisation.
+  CDKN2B is named at E2 (requirements §4.2, §6.2) by colocalisation alone: on all six lifespan-class sets the only
+  cis-QTL colocalisation at H4 ≥ 0.8 is CDKN2B's (one TwinsUK adipose exon-expression QTL, H4 0.94 to 0.96), a thin
+  basis; locus-to-gene is below 0.5 for every gene (CDKN2B 0.36, CDKN2A 0.21). Timmers 2020 names CDKN2B by SMR too.
   The seed's other rsIDs: rs1333042, rs7859727, rs6475609 (r² 0.93) and rs1333049 (the CAD tag, r² 0.83) are in the
   lead's set, the same signal; rs1063192 (a German candidate study) was not read.
 axes:
@@ -31,11 +32,11 @@ axes:
 flags:
   - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-29227965#q6, pmid-30642433#q6]}
   - {token: "causal:C3", cites: [db-opentargets-26.09#q16]}
-  - {token: "effector:E3", cites: [db-opentargets-26.09#q18]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q18, db-opentargets-26.09#q278, db-opentargets-26.09#q279, db-opentargets-26.09#q280, db-opentargets-26.09#q281, db-opentargets-26.09#q282, db-opentargets-26.09#q283, db-opentargets-26.09#q284]}
   - {token: "ld_proxy_of:rs1556516", cites: [db-opentargets-26.09#q17]}  # rs1333042 r² 0.98, rs7859727 r² 0.94
 variants:
   - rsid: rs1556516
-    gene: ""
+    gene: CDKN2B
     phenotype: 9p21 heart disease region
     trait_efo_id: EFO_0007796
     effect_allele: G

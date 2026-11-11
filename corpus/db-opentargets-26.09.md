@@ -1085,3 +1085,30 @@ KCNK3 is the top locus-to-gene gene (0.85, q104) and the only gene that colocali
 Rosoff's mvAge set (abc062e8): seven QTL colocalisations, six at H4 ≥ 0.8, all cis and all NEGR1 (five expression,
 one splicing; q275 is HipSci's iPSC exon expression). NEGR1 is the top locus-to-gene gene (0.56, q50) and the only
 gene that colocalises: `effector:E1`, NEGR1.
+
+### rs1556516 (CDKN2B-AS1, 9p21), for row 57
+
+The six lifespan-class sets holding the lead (`credibleSets-longevity8-9_22100177_G_C.json`): Timmers 2019's
+(02462f21), Timmers 2020's (410c05db), Pilling 2017's combined parents (9215fe6d) and GCST006702 (e1251d1f), Rosoff's
+mvAge (a21d3ccc) and Zenin's healthspan (afbd1892). Timmers 2019's:
+
+> [q278] data.credibleSet.colocalisation count 3
+
+> [q279] data.credibleSet.colocalisation.rows[1] rightStudyType eqtl h4 0.9489403556825597 clpp 0.016535715593562313
+
+> [q280] data.credibleSet.colocalisation.rows[1].otherStudyLocus isTransQtl false
+
+> [q281] data.credibleSet.colocalisation.rows[1].otherStudyLocus.study.target approvedSymbol CDKN2B
+
+Three QTL colocalisations, all CDKN2B, one at H4 ≥ 0.8 (TwinsUK adipose exon expression, q279; the other two, brain
+cortex expression and exon expression, below). Each of the other five sets holds one, the same TwinsUK CDKN2B exon
+QTL, cis, at H4 0.937 to 0.964; Timmers 2020's:
+
+> [q282] data.credibleSet.colocalisation count 1
+
+> [q283] data.credibleSet.colocalisation.rows[0] rightStudyType eqtl h4 0.9368543387185756 clpp 0.013231475401459226
+
+> [q284] data.credibleSet.colocalisation.rows[0].otherStudyLocus.study.target approvedSymbol CDKN2B
+
+CDKN2B is the only gene that colocalises, on every set; locus-to-gene is below 0.5 for every gene (CDKN2B 0.36,
+q18), so colocalisation alone: `effector:E2`, CDKN2B. One adipose exon QTL carries it, a thin basis.
