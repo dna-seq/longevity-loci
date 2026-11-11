@@ -522,5 +522,5 @@ q150) and atrial fibrillation (Yuan 2025, P 4e-20, q151 to q153). C raises heart
 q154 to q156). The ageing records: Timmers 2020's multivariate healthspan, parental lifespan and longevity, effect
 allele C, P 4e-8, no β (q157 to q159), and Rosoff 2023's mvAge, C β +0.0063, P 1e-9 (q160, q161). One record runs
 against the rest: Giri 2019's systolic pressure lists C with "0.4106 mmHg increase" at a risk frequency of 0.457
-(q162, q163), which is T's frequency (db-ensembl-116#q92); the record's allele label is most likely T, and it is not
-read as a direction.
+(q162, q163). It conflicts with every other record; whether its allele or its sign is wrong is unknown (0.457 fits T
+in Europeans, db-ensembl-116#q92, or C in a mixed sample, as Verma's 0.47 at q146), so it is not read as a direction.

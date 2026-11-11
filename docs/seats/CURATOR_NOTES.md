@@ -149,7 +149,7 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   Study (Timmers q13). eLife source data is at `https://cdn.elifesciences.org/articles/39856/elife-39856-figN-dataM-v2.xlsx`.
 - **20 RNU1-96P** (2026-11-11), tier B kept, advisor-checked. Lead rs2643826 (SLC4A7), the D16 shape of rows 4, 14
   and 15 with Timmers 2020's MANOVA beside mvAge. First `preventable` with `act_test:bp`: the blood-pressure effect is
-  at the lead itself (63 catalog records, one direction; Giri 2019's record labels C at T's frequency, not read).
+  at the lead itself (63 catalog records, one direction; Giri 2019's record runs against the rest, its allele or sign wrong, not read).
   Rosoff's "MAF" column is the minor allele's (T here), as at 15. Timmers 2020 q11 excepts SLC4A7 from the age trend,
   so age of action stays UNKNOWN (do not reuse q2 here). E2 SLC4A7 on L2G alone; Timmers' SMR names NEK10, put to
   the lead. Open Targets' FinnGen hypertension set (SuSiE, one variant, PIP 0.995) backs C1 beyond PICS.

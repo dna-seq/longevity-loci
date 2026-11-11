@@ -894,5 +894,5 @@ SLC4A7 0.529, NEK10 0.059 (q213 to q216); 145 colocalisations (q217), every one 
 page, `set-2971a8aa-coloc2`, holds the other 45), led by hypertensive disease at H4 1.00 (q218, q219); none with an
 expression or other QTL set. FinnGen R12's hypertension set (q220, q221; β +0.049 per T): SuSiE with in-sample LD,
 one variant, the lead at PIP 0.995 (q222 to q224); L2G SLC4A7 0.545 (q225, q226). The lead also leads a set for a chronic
-kidney disease fast-progression risk score (GCST90892633), β +0.0069 per T (q227, q228), so C is on the lower-risk
-side there too. For row 20.
+kidney disease fast-progression risk score (GCST90892633), β +0.0069 per T (q227, q228): C on the lower-score side by Open Targets'
+orientation, not checked against the study, which the catalog's 63 records do not hold. For row 20.

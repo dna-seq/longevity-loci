@@ -1,7 +1,8 @@
 # The seed list's locus 20, RNU1-96P (3p24.1; the seed's genes "RNU1-96P; Y_RNA; SLC4A7"). Curated 2026-11-11, the
 # second run's tenth row. Lead rs2643826, the seed's only rsID here: a regulatory-region variant near SLC4A7, C/T,
 # C the major allele in Europeans (0.555). Timmers 2020's multivariate SLC4A7 locus (Table 1) and Rosoff 2023's mvAge
-# lead (Table 1); in Timmers 2019's, Zenin 2019's and Deelen 2019's summary statistics at the lead itself. Open
+# lead (Table 1); in Timmers 2019's, Zenin 2019's and Deelen 2019's summary statistics at the lead itself; not in
+# Wright 2019's S8 or S9 by rsID. Open
 # Targets 26.09: 142 credible sets hold it, all GWAS, nearly all blood pressure; the GWAS Catalog (2026-10-29) holds
 # 63 associations for it.
 locus_id: 20
@@ -19,15 +20,15 @@ verdict_reason: >-
   study: C lengthens life at P 2.2e-5, nominal, UK Biobank and LifeGen on the same side. Healthspan agrees
   nominally: C delays the end of healthspan in Zenin 2019's UK Biobank (P 1.7e-5). Exceptional survival is +,
   nominally: Deelen 2019's summary statistics favour C at the 90th (P 0.027) and the 99th percentile (P 0.0023, a
-  subset of the 90th's cases). All three are inputs to both multivariate analyses, so none replicates them.
+  subset of the 90th's cases). All three are inputs to both multivariate analyses (Deelen by its 90th percentile), so none replicates them.
   Mechanism: heart and vessels, through blood pressure. At the lead itself C lowers systolic pressure (P 1e-32;
   T raises it 0.42 mmHg, P 6e-64), hypertension and atrial fibrillation, consistently across the catalog's 63
-  records (one record, Giri 2019, labels C at T's frequency and is not read as a direction); the mvAge credible set
+  records (one, Giri 2019, runs against the rest, its allele or its sign wrong, and is not read); the mvAge credible set
   colocalises with hypertensive disease at H4 1.00, and Timmers 2020 says the life-extending allele near SLC4A7 goes
   with less cardiovascular disease. That is association on one variant, not a mediator test. Actionability is
   preventable: blood pressure is a measure a doctor takes, and the effect is cached at the lead. No trade-off is
-  found (D18.1): C is on the lower-risk side for blood pressure, atrial fibrillation and a kidney-disease
-  progression score; it raises resting heart rate slightly (+0.023 SD), which no cached source ties to harm. Causal
+  found (D18.1): C is on the lower-risk side for blood pressure and atrial fibrillation (and, by Open
+  Targets' orientation alone, a kidney-disease progression score); it raises resting heart rate slightly (+0.023 SD), which no cached source ties to harm. Causal
   confidence C1: the lead holds PIP 0.926 in mvAge's PICS set and 0.995 in FinnGen's hypertension set, a one-variant
   SuSiE set with in-sample LD. Effector E2, SLC4A7: the locus-to-gene score is SLC4A7's on both sets (0.529 and
   0.545), and none of the 145 colocalisations is with a QTL. Timmers 2020's SMR and HEIDI point instead to NEK10's
@@ -185,5 +186,5 @@ studies:
     effect_unit: log odds of reaching the 99th percentile, per T allele
     effect_allele: T
     direction: risk
-    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), effective N 4,154; the 99th-percentile cases are a subset of the 90th's; an input of mvAge, not a replication"
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), effective N 4,154; the 99th-percentile cases are a subset of the 90th's, which is an input of both multivariate analyses, so not a replication"
     curator: claude-opus-5-5
