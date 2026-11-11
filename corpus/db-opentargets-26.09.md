@@ -2133,3 +2133,39 @@ harmonisation, not the paper's), and Foote formats every input so that positive 
 (pmid-40759756#q2): G's side scores higher on the poorer-cognition factor, as rs6911407-A's lower fluid intelligence
 (db-gwascatalog-2026.10.29#q299) and Timmers 2020's "reduction in cognitive ability" (pmid-32678081#q23) also say.
 For row 43.
+
+## Reading 2026-11-11, record
+
+> [q589] data.variant.credibleSets.rows[1] studyLocusId e2476c3f588e5c6ab56d35440181044a studyId GCST90551884 pValueMantissa 7.729002475738525 pValueExponent -9 beta -0.00879452480081629 finemappingMethod SuSiE-inf
+
+> [q590] data.variant.credibleSets.rows[1].qualityControls[1] Study locus finemapped without in-sample LD reference
+
+> [q591] data.variant.credibleSets.rows[1].locus.rows[0] posteriorProbability 0.11719316866899004
+
+> [q592] data.variant.credibleSets.rows[1].l2GPredictions.rows[0].target approvedSymbol PLN
+
+> [q593] data.variant.credibleSets.rows[1].l2GPredictions.rows[0] score 0.7674548029899597
+
+> [q594] data.variant.credibleSets.rows[0] studyLocusId 217d1f0b0a39b481db78238a0fcb6cd0 studyId GCST90551886 pValueMantissa 3.3338894844055176 pValueExponent -9 beta -0.012437595155242075 finemappingMethod SuSiE-inf
+
+> [q595] data.variant.credibleSets count 2
+
+> [q596] data.variant.credibleSets.rows[0].locus.rows[24].variant id 6_118304954_C_A
+
+> [q597] data.variant.credibleSets.rows[0].l2GPredictions.rows[0].target approvedSymbol CEP85L
+
+Row 44's lead 6_118368937_C_T (`variant-6_118368937_C_T-all.json`, all sets read: two, q595). Park 2025's
+whole-cohort deposit (GCST90551884, "Lifespan", n 393,833): a SuSiE-inf set of 21 variants led by rs76888380, P
+7.7e-9, β −0.0088 (q589), its own PIP 0.117 (q591), next rs78528818 at 0.109; flagged for quality, fine-mapped
+without an in-sample LD reference (q590); L2G PLN 0.77 (q592, q593), SLC35F1 0.20. The set's β is about 40 times
+smaller than the deposit's |0.333| at the same variant (pmid-40021682#q43) and its allele is not stated: unreconciled,
+read for nothing. Park's second deposit, GCST90551886 (n 212,863, the women's scan by size): a 25-variant set led
+by an insertion at 6:118,636,487, P 3.3e-9 (q594), which holds rs73768634 (q596), one of the rare haplotype's
+variants; L2G CEP85L 0.27 (q597). No colocalisation is fetched for either; no other study, disease or QTL, holds
+the lead.
+
+> [q598] data.credibleSet.colocalisation count 0
+
+Both sets' QTL colocalisations (`coloc-e2476c3f588e5c6ab56d35440181044a.json` for the whole cohort, q598;
+`coloc-217d1f0b0a39b481db78238a0fcb6cd0.json` for the women, the same line): none, in any QTL type. PLN's 0.77 is
+L2G alone; no rival gene passes L2G (SLC35F1 0.20) or colocalises (D24).

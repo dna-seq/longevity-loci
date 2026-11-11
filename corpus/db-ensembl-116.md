@@ -1058,3 +1058,34 @@ rs3800231 at 0.60 (q292). For row 43.
 > [q293] [324] population_name 1000GENOMES:phase_3:CEU d_prime 1.000000 r2 0.978213 variation2 rs6911407 variation1 rs2802292
 
 rs6911407 (GRCh38 6:108,545,828, C/A), 41 kb from the lead: r² 0.98, D′ 1.00 in CEU (q293). For row 43.
+
+## Reading 2026-11-11, record
+
+> [q294] mappings[0] seq_region_name 6 ancestral_allele C end 118368937 assembly_name GRCh38 strand 1 start 118368937 location 6:118368937-118368937 coord_system chromosome allele_string C/T
+
+> [q295] populations[9] allele_count 2646 allele T population gnomADg:afr frequency 0.06374
+
+> [q296] populations[15] frequency 0.0001618 population gnomADg:nfe allele_count 11 allele T
+
+> [q297] populations[58] frequency 1 population 1000GENOMES:phase_3:EUR allele_count 1006 allele C
+
+> [q298] populations[0] frequency 0.06113 population gnomADg:afr allele A allele_count 2538
+
+> [q299] populations[6] frequency 0.0001471 population gnomADg:nfe allele A allele_count 10
+
+> [q300] populations[16] allele_count 2980 frequency 0.07174 allele T population gnomADg:afr
+
+> [q301] populations[7] allele_count 12 frequency 0.0001764 allele T population gnomADg:nfe
+
+> [q302] populations[11] allele_count 1870 frequency 0.04707 population gnomADg:afr allele A
+
+> [q303] populations[7] allele A population gnomADg:nfe frequency 8.88e-05 allele_count 6
+
+Row 44's lead rs76888380 (`variation-rs76888380.json`), an intron variant by Open Targets' label, in 6q22.31 near PLN, GRCh38
+6:118,368,937, C ancestral and the reference, T the alternative (q294). T is an African-ancestry allele: 0.064 in
+gnomAD's African and African American genomes (q295), 0.00016 in non-Finnish Europeans (11 copies, q296), absent
+in 1000 Genomes EUR (q297), Finns and East Asians (0 in gnomAD). Three of the variants that pass 5e-8 beside it in
+Park's deposit (pmid-40021682#q44 to #q46), found by position (`overlap-6-*.json`) and read
+(`variation-<rsid>.json`), show the same pattern: rs78528818's A 0.061 African, 0.00015 European (q298, q299);
+rs73768654's T 0.072 and 0.00018 (q300, q301); rs73768634's A 0.047 and 0.00009 (q302, q303). One African haplotype,
+carried by a few dozen of UK Biobank's European-ancestry participants (derived).

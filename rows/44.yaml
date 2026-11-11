@@ -1,0 +1,104 @@
+# The seed list's locus 44, unnamed (6q22.31; the seed's gene and name columns empty, PLN its l2g_top). Curated 2026-11-11.
+# Lead rs76888380 (GRCh38 6:118,368,937, GRCh37 6:118,690,100), the seed's only rsID, entered by the methodology
+# track from Open Targets' fine-mapping of Park 2025's whole-cohort deposit (GCST90551884), with no tier vote. C
+# ancestral and the reference; T is an African-ancestry allele (0.064 in gnomAD's African genomes, 0.00016 in
+# non-Finnish Europeans, absent in 1000 Genomes EUR and in Finns). Park's paper names no locus here; the catalog holds
+# no association; a literature search on the rsID found nothing (PubMed, Europe PMC, Crossref, OpenAlex and the
+# preprint index answered 0; Semantic Scholar was rate-limited, unchecked).
+locus_id: 44
+locus_name: ""
+verdict: re-tiered
+verdict_reason: >-
+  Tier C; the seed gave none. The only evidence is a line in Park 2025's deposited summary statistics that the paper
+  itself does not report. Park's whole-cohort own-survival scan of 393,833 UK Biobank participants of European
+  ancestry tested variants at MAF 0.1 % or more and found two genome-wide loci, APOE and ZSCAN23 (row 36). The
+  deposit also holds rs76888380 at P 8.9e-9, with T, the minor allele, at about 3.5 in 100,000 (under the deposit's
+  swapped allele columns, row 36): about 28 copies of T among 393,833 people (derived), some thirty times below the
+  paper's own threshold. Each T goes with a Martingale residual 0.33 higher (more deaths than expected), about 25
+  times APOE ε4's per-allele effect, from a linear mixed model run on a few dozen carriers. Nine variants within 101
+  kb pass 5e-8 together, all at the same frequency and effect; three of them read in gnomAD (rs78528818, rs73768654,
+  rs73768634) are, like the lead, African-ancestry alleles (5 to 7 in 100 there, 1 or 2 in 10,000 in Europeans). It
+  is one rare African haplotype carried by a handful of the cohort's European-ancestry participants. Open Targets
+  fine-maps the deposit to a 21-variant set led by the lead (PIP 0.12, P 7.7e-9), flagged for quality and fine-mapped
+  without an in-sample LD reference; the set's β (−0.0088) is about 40 times smaller than the deposit's and its
+  allele unstated, so it is read for nothing. Park's women's deposit (GCST90551886, 212,863 of the same people) gives
+  the lead P 3.5e-8 at a similar effect, a subset and no replication; its Open Targets set is led by another rare
+  variant 270 kb away (P 3.5e-9) and holds one of the haplotype's variants (rs73768634). The men's deposit is not
+  read. No study claims this locus, so it
+  is not §4.1's "genome-wide significant locus" that B requires; the P passes the suggestive bar, and tier C is the
+  research view. D ("overfit") and dropping the row are the alternatives, put to the lead as a question for every
+  seed entered from a credible set alone (46, 75, 80 and 96 follow). Nothing can test it: Deelen 2019's 90th and 99th
+  percentiles (rarest variant 0.01 here), Zenin 2019's healthspan (down to 0.0011), FinnGen r11's death endpoint and
+  LifeGen hold no line for the lead or its haplotype, and T is absent in Finns. Untested, not null, so not
+  replication_failed. Every genotype is neutral: a tier C row without a finding its own authors make carries no
+  weight, and the people who carry T are mostly of African ancestry (about 12 in 100 there carry one copy), where
+  nothing was studied (R-TIER-3). Causal C2 by the letter (in a 95 % set, PIP 0.12), on a set built without the
+  study's own LD. Effector E2, PLN, by locus-to-gene alone (0.77), with no QTL colocalisation for either set and no
+  rival gene passing a criterion (D24); the gene is named for the region, not as a finding. Mechanism general
+  ageing, nothing pointing elsewhere; descriptive; age of action unknown.
+axes:
+  tier: {value: C, cites: [pmid-40021682#q39, pmid-40021682#q40, pmid-40021682#q41, pmid-40021682#q42, pmid-40021682#q43, pmid-40021682#q44, pmid-40021682#q45, pmid-40021682#q46, pmid-40021682#q29, pmid-40021682#q32, db-ensembl-116#q294, db-ensembl-116#q295, db-ensembl-116#q296, db-ensembl-116#q297, db-ensembl-116#q298, db-ensembl-116#q299, db-ensembl-116#q300, db-ensembl-116#q301, db-ensembl-116#q302, db-ensembl-116#q303, db-opentargets-26.09#q589, db-opentargets-26.09#q590, db-opentargets-26.09#q594, db-opentargets-26.09#q596, pmid-40021682#q47, pmid-40021682#q48, db-gwascatalog-2026.10.29#q302, pmid-31413261#q108, pmid-31413261#q109, pmid-30729179#q67, pmid-30729179#q68, db-finngen-r11#q19, db-finngen-r11#q20, pmid-30642433#q225, pmid-30642433#q226]}
+  mechanism: {value: general_ageing, cites: [pmid-40021682#q43]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: untested, lifespan: "+", exceptional_survival: untested,
+            cites: [pmid-40021682#q43, pmid-30729179#q67, pmid-30729179#q68, pmid-31413261#q108, pmid-31413261#q109]}
+  actionability: {label: descriptive, cites: [pmid-40021682#q43]}
+  context: {values: [eur_only_evidence], cites: [pmid-40021682#q39, db-ensembl-116#q295, db-ensembl-116#q296]}
+flags:
+  - {token: "causal:C2", cites: [db-opentargets-26.09#q589, db-opentargets-26.09#q590, db-opentargets-26.09#q591, db-opentargets-26.09#q595]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q592, db-opentargets-26.09#q593, db-opentargets-26.09#q598]}
+variants:
+  - rsid: rs76888380
+    gene: PLN
+    phenotype: PLN region (6q22.31), own survival
+    trait_efo_id: OBA_VT0005372
+    effect_allele: C
+    effect_size: -0.333
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: C/C
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position, the one almost everyone of European
+          ancestry has, and about 87 in 100 people of African ancestry. It is the reference the other combinations
+          are compared with. The position, on chromosome 6, lies in a region near the PLN gene.
+      - genotype: C/T
+        state: neutral
+        conclusion: >-
+          You carry one copy of a version of this DNA position that about 12 in 100 people of African ancestry carry
+          and fewer than 1 in 1,000 people of European ancestry. A large British study's published data hint that
+          the few European carriers in it died somewhat earlier, but the study's authors did not count it as a
+          finding, it rests on a few dozen people, and no other study could check it. Nothing was studied in people
+          of African ancestry. It says nothing about your own lifespan.
+      - genotype: T/T
+        state: neutral
+        conclusion: >-
+          You carry two copies of a version of this DNA position (about 4 in 1,000 people of African ancestry do;
+          it is almost never seen in people of European ancestry). A large British study's published data hint that
+          carriers of one copy died somewhat earlier, but the authors did not count it as a finding, it rests on a
+          few dozen people, and no one with two copies was studied. Nothing was studied in people of African
+          ancestry. It says nothing about your own lifespan.
+studies:
+  - rsid: rs76888380
+    note: pmid-40021682
+    quote: q43
+    phenotype_class: OWN_SURVIVAL
+    study_design: own_survival_cox
+    population: European (UK Biobank, whole cohort)
+    ancestry: [EUR]
+    n_cases: 35551
+    sample_size: 393833
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "8.9E-09"
+    p_value_num: 8.9e-09
+    effect_size: 0.333
+    effect_measure: beta
+    effect_unit: Martingale residual of a Cox model of own survival per T allele (positive = more deaths than expected, shorter life)
+    effect_allele: T
+    direction: risk
+    statistical_test: "BOLT-LMM on Martingale residuals (pmid-40021682#q39); the deposit's line (GCST90551884, q43) prints C β −0.332895, SE 0.0576515, C 0.999965 under swapped allele labels (q29, q32, row 36), so T β +0.333 at about 3.5e-5, some 28 copies (derived). Below the paper's MAF 0.1 % filter (q39, q41) and not among its genome-wide loci (q40, q42): a deposit line, not a reported finding. Eight more variants within 101 kb pass 5e-8 at the same frequency (q44 to q46). Open Targets' set β −0.0088 (db-opentargets-26.09#q589) unreconciled"
+    curator: claude-opus-5-5

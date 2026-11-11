@@ -1020,3 +1020,10 @@ intelligence (Dong, GCST90832687), A, β 0.025 decrease, P 7 × 10⁻¹⁴ (q299
 intelligence. Longevity (Wright 2019's AncestryDNA, GCST009448), A, β 0.0096 increase, P 6 × 10⁻⁶ (q300). Foote
 2025's frailty factor 5 ("Poorer Cognition", P 4 × 10⁻¹⁰) with no effect allele (q301), and a multi-trait sex score.
 For row 43.
+
+## Reading 2026-11-11, record
+
+> [q302] page size 100 totalElements 0 totalPages 0 number 0
+
+The catalog's associations for rs76888380 (`assoc-rs76888380.json`): none (q302). Park 2025 reported no 6q22.31
+locus (pmid-40021682#q40), and the catalog holds nothing else at the variant.

@@ -114,3 +114,14 @@ rs2802292, alt T (0.58 in Finns): β +0.0069 (SE 0.0075) on death, P 0.36, T lea
 less, the discovery's side (one-sided P about 0.18, derived). D21 under APOE's factor within FinnGen (0.99): Timmers'
 T β −0.0148 (pmid-30642433#q221) predicts T +0.0147 here, one-sided power about 0.62, heterogeneity z 0.92, P about
 0.36 (derived): no red flag under that calibration, so none (D25.3). For row 43.
+
+## Reading 2026-11-11, record
+
+> [q19] 6	118368851	A	C	rs9320648	SLC35F1	0.53693	0.270082	-0.00458767	0.00742988	0.535374	0.534993	0.535421
+
+> [q20] 6	118369099	C	CA	rs138527257	SLC35F1	0.179982	0.74477	0.0166488	0.012417	0.0982884	0.0990805	0.0981892
+
+FinnGen r11's "Death" at row 44's lead (GRCh38 6:118,368,937; `finngen_R11_DEATH.tsv.gz` rows 6:118.2 to 118.4 Mb):
+no line; the file runs from 118,368,851 (q19) to 118,369,099 (q20) across it, though it carries variants down to
+an alternative frequency of 2.5e-5 nearby. T is absent in gnomAD's Finns (db-ensembl-116, row 44's reading).
+Untested, not null.
