@@ -34,7 +34,7 @@ verdict_reason: >-
   and Pilling's two studies' credible sets (six and two) lie elsewhere, so causal confidence C4 and effector E4, and the catalog records no other trait for it or its proxies. BEND3's
   role in repressing ribosomal DNA is the authors' gene-level remark, not evidence at this SNP; `gene` is empty.
   Pleiotropy is not assessed. C/C is the reference: the most common genotype at gnomAD's non-Finnish European
-  frequency (A 0.317: C/C about 47 in 100, A/C 43, A/A 10), so A/C and A/A carry the risk side. No PROTECT token, as
+  frequency (A 0.317: C/C about 47 in 100, A/C 43, A/A 10), so A/C and A/A carry the risk side. No PROTECT token (D26.5), as
   at row 21: no disease is known at the locus whose absence C would mark, and C is no rare protective allele. Age
   of action is unknown.
 axes:
