@@ -22,3 +22,25 @@ read), and every identifier the paper has. The curator takes it from here; the s
 - **Unknown:** which biomarker FURIN's variant is shared with; whether that variant is rs6224 or rs17514846 (the seed's
   variants), or in LD with them (the abstract names no rsID); whether the article is open access (a "© The
   Author(s)" line does not show a licence). Each is settled by the full text or its supplementary tables.
+
+### rs13141210 at locus 28 RNU1-63P (4q13.2): a second mvAge signal, candidate row (D25.6)
+
+- **Paper:** Rosoff DB et al. "Multivariate genome-wide analysis of aging-related traits identifies novel loci and new
+  drug targets for healthy aging." *Nat Aging*, 2023 Aug. PMID 37550455, PMC10432278, doi 10.1038/s43587-023-00455-5
+  (title checked against PubMed 2026-11-11). Corpus note `corpus/pmid-37550455.md`. From the curator, 2026-11-11.
+- **Why:** a genome-wide mvAge lead 111 kb from row 28's lead rs28637671 at r² 0.095, so a separate signal; a seed
+  rsID with no seed locus of its own. Row 28 names it in prose; D25.6 sends it here, to be curated after the seed list.
+  The row's prose reads it as a possible B under D16 (LifeGen z about 4.4).
+- **Passage** (Table 1, full text, Europe PMC, read by the curator 2026-11-11; `pmid-37550455#q28`):
+  > rs13141210 4,67891641 C/T 0.50 −0.0058 (0.001) 1.46 × 10−8 RNU6-699P (intergenic) 0.55 Adult body size, cognitive performance, education, household income, lung cancer
+- **Unknown:** its own tier; whether its tag rs10434248 (aging-GIP1, Timmers 2022) counts as a second multivariate
+  scan or a shared input.
+
+### rs16843603 (ADD1) at locus 25 HTT (4p16.3): a second mvAge signal, candidate row (D25.6)
+
+- **Paper:** Rosoff 2023, as above (PMID 37550455). From the curator, 2026-11-11.
+- **Why:** a genome-wide mvAge lead in an ADD1 intron, r² 0.095 to row 25's lead rs61348208, so a separate signal; a
+  seed rsID with no seed locus of its own. Row 25 names it in prose; D25.6 sends it here.
+- **Passage** (Supplementary table, MOESM3, read by the curator 2026-11-11; `pmid-37550455#q23`):
+  > No (Frailty, Lifespan) rs16843603 11 4:2928577 4 2928577 7 rs16843603;rs2798287;rs11937729;rs1801058;rs113928896;rs71597207;rs34155847 C T 0.3052 4.1616324788e-10 -0.00705057367178 0.00112848149177 ADD1 0 intronic 3.773 5 4 4 2.83548326833141 4 0.585723327229924
+- **Unknown:** its own tier; whether any lifespan study carries it outside mvAge's inputs (D16).
