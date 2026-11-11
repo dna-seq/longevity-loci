@@ -415,3 +415,8 @@ gnomAD's non-Finnish Europeans; C is 0.166 in East Asians.
 
 rs9855505 (135 bp from the lead) is in perfect LD with rs9872864 in 1000 Genomes EUR (r² 1.00, D′ 1.00), and rs12490656
 nearly (r² 0.996). Fetched to read Timmers' direction strings across the block (pmid-30642433#q61, q62). For row 21.
+
+> [q108] [13] variation2 rs7560328 d_prime 0.937399 population_name 1000GENOMES:phase_3:EUR variation1 rs10197246 r2 0.572388
+
+rs7560328, 40 kb from the CASP8 lead rs10197246, is r² 0.57, D′ 0.94 with it in 1000 Genomes EUR (the 500 kb window
+already cached for row 17). For row 17's Deelen cluster (pmid-31413261#q46).
