@@ -423,3 +423,6 @@ From the curator's rows 48 to 52; the lead settled them under the person's stand
 5. **Triglycerides have no `act_test` in §4.2: 52 is descriptive.** The curator's (a). Adding `act_test:tg` changes
    §4.2's vocabulary, which is the design's, not the curation's; it waits for a design pass. (c), stretching
    `act_test:ldl`, rejected: rs268 barely moves LDL.
+6. **D25.5 holds for any scoring-class set the tier does not rest on**, multivariate included: Foote's sets at 43
+   (PIP 0.065) and 27 (0.043) set no causal confidence, so both stay C4. The curator's (a); (b), D17.2's letter
+   giving C3, rejected: D25.5's reason is that causal confidence follows the evidence the tier stands on.
