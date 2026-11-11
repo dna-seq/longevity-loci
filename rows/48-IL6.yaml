@@ -1,0 +1,180 @@
+# The seed list's locus 48, IL6 (7p15.3). Curated 2026-11-11. Lead rs2069837 (GRCh38 7:22,728,408, GRCh37
+# 7:22,768,027, A/G, an IL6 intron; the seed's only rsID), Zeng 2016's Han Chinese centenarian SNP (Table 1). G is
+# about 0.14 to 0.17 in East Asians and 0.07 to 0.09 in Europeans. No other seed locus lies near it; row 8 (IL6R) is
+# the receptor's gene on chromosome 1.
+locus_id: 48
+locus_name: IL6
+verdict: re-tiered
+verdict_reason: >-
+  Tier D, from the seed's B, on §4.1's "overfit source" (D26.14, as rows 41 and 44), and §4.1 names IL6 among its
+  explicitly contradicted examples. Zeng 2016 compared 2,178 Han Chinese centenarians (mean age 102.7) of the CLHLS
+  with 2,299 middle-aged controls (mean 48.4) in a southern and a northern dataset: G was in 0.053 of the
+  centenarians' alleles and 0.095 of the controls', OR 0.61 per G, P 1.8e-9 combined (south P 6.0e-3, north 1.0e-6;
+  the regions' meta-analysis 4.05e-8), so A is the longer-life allele. The genotype calls behind it are in doubt.
+  Zeng's southern controls carry G at 0.033 where 1000 Genomes' southern Han (CHS) carry 0.143 and the paper itself
+  gives 0.14 for Asians; the northern controls' 0.134 is close to northern Han's 0.160. Liu 2021, the same group,
+  says the SNP failed its quality control in their later CLHLS analysis and remarks on its low frequency there
+  (0.075 against 0.179). The authors' own QC rejecting the call makes the discovery an overfit source (D26.14), so
+  no later look is weighed as replicating it. The larger independent looks mostly lean the other way or are flat.
+  Timmers 2019 carried Zeng's effect to the parental scale with the APOE calibration (A +0.0716, SE 0.0119) and found
+  A at −0.0074 (SE 0.0076), one-sided P 0.84; that is a D21 red flag under both of D25.3's calibrations (APOE's
+  factor: power about 1.00, heterogeneity P 2e-8; the loci's mean factor 0.4175: expected 0.030, power 0.99,
+  heterogeneity P 1.0e-3, derived), so `replication_failed`. Zeng's own Supplementary Table 3 puts the EU longevity
+  consortium at P 0.90 with G more frequent among the long-lived, and NECS at OR 0.88, P 0.25. FinnGen's death
+  endpoint has G with fewer deaths (P 0.23), and Zenin 2019's healthspan G with a later end (P 0.081 raw, 0.090
+  after its genomic control). One look leans Zeng's way: Deelen 2019's European 90th percentile, A OR about 1.08, P
+  0.038 two-sided (one-sided 0.019; the 99th P 0.30, same side). Its cohorts are European only and include the EU
+  consortium that is flat in Zeng's table. With the discovery an overfit source it replicates nothing (D26.14): named,
+  not counted, as row 41's LifeGen lean. Deelen's trans-ethnic analyses reach genome-wide at the lead only by adding
+  CLHLS, and the authors say East Asians drive it; the GWAS Catalog's Deelen records and Open Targets' 99th-percentile
+  set are those results. Outcome cells: lifespan 0 (Timmers, FinnGen), healthspan 0 (Zenin, two-sided P 0.090
+  after genomic control; one-sided on G's side it would be about 0.045, but D26.2 reads a cell one-sided only in the
+  discovery's direction), exceptional survival 0 (Deelen's 90th named, not counted; 99th and the EU consortium flat).
+  Pleiotropy is real but carries no trade-off at tier D (D26.14): G protects against critical COVID-19 in Chinese
+  patients (Gong 2022, OR 0.49, P 4.6e-16) and lowers IL-6 expression in a reporter assay and in serum, so A is the
+  higher-IL-6, higher-risk allele there; the lead is also genome-wide for Takayasu arteritis (Renauer 2015, OR 2.07),
+  whose risk allele the sources held here do not name. No longevity effect is shown to run through IL-6, so the
+  mechanism is filed as general ageing (D25.7). Context `ancestry_specific:eas`: the claim is Han Chinese, as Zeng
+  says and R-ANC-4 lists. Open Targets 26.09: the lead tops both lifespan-class credible sets, Zeng's (PIP 0.55) and
+  Deelen's trans-ethnic 99th (PIP 0.99), so causal C1 by the letter; both rest on CLHLS's genotypes, so it is the
+  fine-mapping of the doubted call. L2G names IL6 (0.91, 0.88), but the one cis colocalisation at H4 ≥ 0.8 is
+  IL6-AS1's visceral-adipose eQTL (0.85; IL6's own transcript-usage QTL 0.74): under D24 the rival holds every
+  colocalisation, so E3 and no gene named. Age of action is unknown. Genotypes neutral (D25.2).
+axes:
+  tier: {value: D, cites: [pmid-26912274#q2, pmid-26912274#q4, pmid-26912274#q5, pmid-26912274#q7, pmid-33657282#q15, pmid-33657282#q16, db-ensembl-116#q322, db-ensembl-116#q323, db-ensembl-116#q324, pmid-30642433#q231, pmid-30642433#q232, pmid-30642433#q92, pmid-26912274#q9, pmid-26912274#q10, db-finngen-r11#q23, pmid-30729179#q71, pmid-31413261#q123, pmid-31413261#q124, pmid-31413261#q125, pmid-31413261#q126, pmid-31413261#q127]}
+  mechanism: {value: general_ageing, cites: [pmid-33657282#q15]}
+  pleiotropy: {values: [], cites: [pmid-35368020#q2, pmid-35368020#q3, pmid-35368020#q4, pmid-25604533#q1]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
+            cites: [pmid-30729179#q71, pmid-30642433#q231, db-finngen-r11#q23, pmid-31413261#q124, pmid-31413261#q125, pmid-26912274#q9]}
+  actionability: {label: descriptive, cites: [pmid-33657282#q15]}
+  context: {values: ["ancestry_specific:eas"], cites: [pmid-26912274#q7, pmid-26912274#q4]}
+flags:
+  - {token: replication_failed, cites: [pmid-30642433#q232, pmid-30642433#q231, pmid-30642433#q92]}
+  - {token: "causal:C1", cites: [db-opentargets-26.09#q610, db-opentargets-26.09#q611, db-opentargets-26.09#q612, db-opentargets-26.09#q613]}
+  - {token: "effector:E3", cites: [db-opentargets-26.09#q614, db-opentargets-26.09#q615, db-opentargets-26.09#q616, db-opentargets-26.09#q617, db-opentargets-26.09#q618, db-opentargets-26.09#q619, db-opentargets-26.09#q620, db-opentargets-26.09#q621]}
+variants:
+  - rsid: rs2069837
+    gene: ""
+    phenotype: IL6 region, reaching 100, Chinese
+    trait_efo_id: OBA_VT0005372
+    effect_allele: A
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: A/A
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA region, inside the IL6 gene on chromosome 7 (about
+          74 in 100 people of East Asian ancestry and 83 in 100 of European ancestry have this). It is the reference
+          the other combinations are compared with. A Chinese study of people who reached 100 reported this version
+          as more common among them, but its genotype calls were later doubted by the same research group, and
+          larger studies did not confirm it. It says nothing about your own lifespan.
+      - genotype: A/G
+        state: neutral
+        conclusion: >-
+          You carry one copy of a version of this DNA region, inside the IL6 gene, that about 24 in 100 people of
+          East Asian ancestry and 16 in 100 of European ancestry carry. A Chinese study reported it as less common
+          among people who reached 100, but the same research group later doubted its genotype calls, and larger
+          studies did not confirm a link with lifespan. It says nothing about your own lifespan.
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of a version of this DNA region, inside the IL6 gene (about 2 in 100 people of East
+          Asian ancestry and 1 in 100 of European ancestry do). A Chinese study reported it as less common among
+          people who reached 100, but the same research group later doubted its genotype calls, and larger studies
+          did not confirm a link with lifespan. It says nothing about your own lifespan.
+studies:
+  - rsid: rs2069837
+    note: pmid-26912274
+    quote: q4
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: centenarian_case_control
+    population: Han Chinese (CLHLS; centenarians, mean age 102.7, against middle-aged controls, mean age 48.4, q2; southern and northern datasets, q3)
+    ancestry: [EAS]
+    sample_size: 4477
+    sample_unit: individuals
+    n_cases: 2178
+    age_of: participant
+    stat_significance: significant
+    p_value: "1.80E-09"
+    p_value_num: 1.8e-09
+    effect_size: 0.61
+    effect_measure: OR
+    effect_unit: odds ratio of being a centenarian rather than a middle-aged control, per G allele
+    effect_allele: G
+    direction: risk
+    statistical_test: "Combined case-control analysis adjusted for region and sex (Table 1, q4): G in 0.053 of cases' and 0.095 of controls' alleles, OR 0.61, P 1.8e-9; south 0.018 against 0.033 (P 6.0e-3, OR 0.58), north 0.086 against 0.134 (P 1.0e-6, OR 0.64); the regions' METAL meta-analysis P 4.05e-8; λ 1.022, no genomic control applied (q6). The southern controls' G 0.033 against 1000 Genomes CHS 0.143 (db-ensembl-116#q323) and the paper's own 0.14 for Asians (q7); Liu 2021, the same group, says the SNP failed QC (pmid-33657282#q15, q16): an overfit source (D26.14)"
+    curator: claude-opus-5-5
+  - rsid: rs2069837
+    note: pmid-31413261
+    quote: q123
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's discovery cohorts; CLHLS only in the trans-ethnic analysis, q112)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.03782"
+    p_value_num: 0.03782
+    effect_size: 0.0742
+    effect_measure: beta
+    effect_unit: log odds of reaching the 90th percentile age per A allele
+    effect_allele: A
+    direction: protective
+    statistical_test: "Deelen 2019's European summary statistics (rows-249d6d94, q124), effective N 11,615: A β +0.0742 (SE 0.0357), P 0.038 two-sided, one-sided 0.019 (derived); Supplementary Data 1 prints the same for G, OR 0.93 (0.87-1.00), I² 0 (q123). Named, not counted (D26.14): the discovery is an overfit source; the EU consortium inside these cohorts is flat in Zeng's own look-up (pmid-26912274#q9, P 0.90)"
+    curator: claude-opus-5-5
+  - rsid: rs2069837
+    note: pmid-31413261
+    quote: q123
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's discovery cohorts)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.3044"
+    p_value_num: 0.3044
+    effect_size: 0.0564
+    effect_measure: beta
+    effect_unit: log odds of reaching the 99th percentile age per A allele
+    effect_allele: A
+    direction: protective
+    statistical_test: "Deelen 2019's European summary statistics (q125), effective N 4,370: A β +0.0564 (SE 0.0549), P 0.30; its cases a subset of the 90th's. The trans-ethnic analyses' genome-wide P at the lead adds CLHLS and is driven by East Asians (q126, q127), so not independent of Zeng"
+    curator: claude-opus-5-5
+  - rsid: rs2069837
+    note: pmid-30642433
+    quote: q231
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 640185
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.32757856"
+    p_value_num: 0.32757856
+    effect_size: -0.00742614
+    effect_measure: beta
+    effect_unit: log hazard protection per A allele in self (positive = longer life)
+    effect_allele: A
+    direction: risk
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890, q231), direction -+ (UK Biobank, LifeGen), info 0.99. Timmers' own replication of Zeng (Figure 2 source data, q232): expected A +0.0716 (SE 0.0119) by the APOE calibration, observed −0.0074, one-sided P 0.84 (the sheet's A frequency 0.074 is G's). D21 under D25.3 (derived): APOE's factor power about 1.00, heterogeneity P 2e-8; the mean factor 0.4175 (q92), expected 0.0299 (SE 0.0085 with the factor's SE), power 0.99, heterogeneity P 1.0e-3: a red flag under both"
+    curator: claude-opus-5-5
+  - rsid: rs2069837
+    note: pmid-30729179
+    quote: q71
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.081"
+    p_value_num: 0.0815
+    effect_size: -0.017
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per G allele (positive = earlier)
+    effect_allele: G
+    direction: protective
+    statistical_test: "Zenin 2019's healthspan summary statistics (rows-3889a704, q71): G (0.067) β −0.017 (SE 0.00976), Z −1.742, −log10 P 1.089 (P 0.081 raw; 0.090 after the paper's genomic control of 1.053, pmid-30729179#q59, derived, D26.1). G leans to a later end of healthspan, against Zeng's A"
+    curator: claude-opus-5-5

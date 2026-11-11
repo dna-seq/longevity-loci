@@ -2211,3 +2211,44 @@ are C4 and E4, no gene named (D24). For row 47.
 Pilling's proxy rs79109928 (`variant-7_4786560_G_A-all.json`): twenty-one credible sets (q608), again every one a
 molecular QTL of ENSG00000242802's expression, transcripts and splicing (ROSMAP, GTEx v10, TwinsUK, BLUEPRINT,
 OTAR3087_MAGE, Lepik 2017). No GWAS set holds the proxy either. For row 47.
+
+## Reading 2026-11-11, record
+
+> [q609] data.variant.credibleSets count 5
+
+> [q610] data.variant.credibleSets.rows[3] studyLocusId a8e7e1b0de4e430e715dcc37275161e5 studyId GCST003425 pValueMantissa 2 pValueExponent -9 beta -0.49429628381477936 finemappingMethod PICS
+
+> [q611] data.variant.credibleSets.rows[2] studyLocusId a3d504d458ec5b70dfbeba312867f5da studyId GCST008601 pValueMantissa 1 pValueExponent -8 beta -0.10536059565782314 finemappingMethod PICS
+
+> [q612] data.variant.credibleSets.rows[3].locus.rows[0] posteriorProbability 0.5460920666096795
+
+> [q613] data.variant.credibleSets.rows[2].locus.rows[0] posteriorProbability 0.9892568510538676
+
+> [q614] data.variant.credibleSets.rows[3].l2GPredictions.rows[0] score 0.9051581025123596
+
+> [q615] data.variant.credibleSets.rows[2].l2GPredictions.rows[0] score 0.8766800761222839
+
+Row 48's IL6 lead (`variant-7_22728408_A_G-all.json`): five PICS credible sets (q609): critical COVID-19 (Gong,
+GCST90105053, PIP 0.88), Takayasu arteritis (GCST006575, PIP 0.99), platelet count (the lead not its top member),
+and two lifespan-class sets, Zeng's (q610; the lead's PIP 0.55, q612) and Deelen's trans-ethnic 99th percentile
+(q611, which carries CLHLS, pmid-31413261#q127; PIP 0.99, q613). L2G names IL6 in both, 0.91 and 0.88 (q614, q615).
+Both lifespan-class sets rest on CLHLS's genotypes, which D26.14 reads as an overfit source; the C1 they give is the
+fine-mapping of that call.
+
+> [q616] data.credibleSet.colocalisation count 3
+
+> [q617] data.credibleSet.colocalisation.rows[0] colocalisationMethod COLOC_PIP_ECAVIAR h4 0.8457248558956594 clpp 0.004981518632235571 betaRatioSignAverage 0
+
+> [q618] data.credibleSet.colocalisation.rows[0].otherStudyLocus.study id gtex-v10_ge_adipose_visceral_ensg00000179428 traitFromSource ENSG00000179428 studyType eqtl
+
+> [q619] data.credibleSet.colocalisation.rows[2] colocalisationMethod COLOC_PIP_ECAVIAR h4 0.7354906223769607 clpp 0.002531032214402276 betaRatioSignAverage 0
+
+> [q620] data.credibleSet.colocalisation.rows[2].otherStudyLocus.study id gtex-v10_txrev_adipose_visceral_ensg00000136244_grp_1_upstream_enst00000404625 traitFromSource ENSG00000136244.grp_1.upstream.ENST00000404625 studyType tuqtl
+
+> [q621] data.credibleSet.colocalisation count 0
+
+The QTL colocalisations: Zeng's set (`coloc-a8e7e1b0de4e430e715dcc37275161e5.json`) has three (q616): IL6-AS1
+(ENSG00000179428) expression in visceral adipose at H4 0.85 (q617, q618), the only one at 0.8 or more; the same gene in
+subcutaneous adipose at 0.61; and an IL6 (ENSG00000136244) transcript-usage QTL in visceral adipose at 0.74 (q619,
+q620), below 0.8. Deelen's trans-ethnic set has none (q621, `coloc-a3d504d458ec5b70dfbeba312867f5da.json`). Under D24
+IL6-AS1 holds every cis colocalisation at H4 ≥ 0.8 (one of one) while IL6 passes L2G: E3, no gene named. For row 48.

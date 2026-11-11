@@ -147,3 +147,11 @@ more deaths here. FinnGen is independent of UK Biobank. Pilling's top-1 % effect
 pmid-27015805#q17 against pmid-30642433#q90) and into FinnGen (0.99, q4) predicts −0.72: power 1.00, heterogeneity P
 3e-8. The flag holds at any factor of 6.2 or more; the loci's mean factor is not defined for this phenotype, so the
 flag is unknown (D26.3). For row 47.
+
+## Reading 2026-11-11, supplement
+
+> [q23] 7	22728408	A	G	rs2069837	IL6	0.234042	0.630706	-0.0183747	0.0154408	0.0619421	0.060551	0.0621164
+
+FinnGen r11's death endpoint (`rows-aade8c53`, GRCh38) at row 48's IL6 lead: G (0.062 in Finns) log OR −0.018 for
+death (SE 0.015), P 0.23. G leans to fewer deaths, against Zeng's A; null. FinnGen is independent of CLHLS. For row
+48.

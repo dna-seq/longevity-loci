@@ -1146,3 +1146,27 @@ insertion, as Pilling (pmid-27015805#q13), FinnGen (db-finngen-r11#q22) and Open
 0.030 in 1000 Genomes Europeans (q316), 0.090 in gnomAD's African genomes (q317), 0.0006 in East Asians (q318) and
 0.009 in Finns (q319). The record's other synonyms include HGVS names (NM_002117 c.662A>G and the like) that this
 reading does not explain; they are not read or used. Its most severe consequence is intronic (q312). For row 47.
+
+## Reading 2026-11-11, record
+
+> [q320] mappings[0] ancestral_allele A assembly_name GRCh38 coord_system chromosome strand 1 location 7:22728408-22728408 allele_string A/C/G seq_region_name 7 end 22728408 start 22728408
+
+> [q321] location 7:22768027-22768027
+
+> [q322] population 1000GENOMES:phase_3:EAS frequency 0.140873015873016 allele_count 142 allele G
+
+> [q323] allele G allele_count 30 population 1000GENOMES:phase_3:CHS frequency 0.142857142857143
+
+> [q324] population 1000GENOMES:phase_3:CHB frequency 0.160194174757282 allele G allele_count 33
+
+> [q325] population 1000GENOMES:phase_3:EUR frequency 0.0894632206759443 allele G allele_count 90
+
+> [q326] frequency 0.1701 population gnomADg:eas allele_count 881 allele G
+
+> [q327] frequency 0.07344 population gnomADg:nfe allele_count 4995 allele G
+
+rs2069837 (`variation-rs2069837.json`, and its GRCh37 record): GRCh38 7:22,728,408 (q320), GRCh37 7:22,768,027
+(q321), A/G (C a third allele, not used), an IL6 intron. G is 0.141 in 1000 Genomes East Asians (q322), 0.143 in
+southern Han Chinese (CHS, q323), 0.160 in northern Han (CHB, q324), 0.089 in Europeans (q325); gnomAD's East Asian
+genomes 0.170 (q326), non-Finnish Europeans 0.073 (q327). Zeng's southern controls' 0.033 (pmid-26912274#q4) is about
+a quarter of CHS's. For row 48.
