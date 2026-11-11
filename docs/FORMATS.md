@@ -42,7 +42,8 @@ a v1 locus with no seed entry takes the next free id above the seed's. Fields:
   parents' lifespan; `current_age_quantitative` for genotype regressed on participants' current age, a cross-sectional
   viability design, §4.5's confirmation-only class; `own_death_case_control` for deceased against living in a
   biobank, a binary endpoint), `population` (never empty), `stat_significance`, and where known
-  `p_value` (as written), `p_value_num`, `effect_size` (with its `effect_measure`: `beta`, `HR`, `OR`; and
+  `p_value` (as written), `p_value_num`, `p_one_sided` (only where the tier reads a one-sided P the article prints
+  two-sided: half of `p_value_num`, in the discovery's direction, D26.13), `effect_size` (with its `effect_measure`: `beta`, `HR`, `OR`; and
   `effect_unit`), `effect_allele`, `direction` (the effect allele's, as the study reports it), `statistical_test`, `curator` (who located the quote: a name or a model id; `ai`, `true` and the like are
   refused). A study's rsid is one of
   the row's variants.
@@ -142,7 +143,8 @@ nothing to check.
 - **rules**, inside `check rows`, from the row's own fields (`rule`, a failure). A study *supports* the row
   unless it is `not_significant`; a null study is kept and supports nothing (§6.3).
   - A study's `stat_significance` agrees with its `p_value_num`: `significant` below 5×10⁻⁸, `suggestive` from
-    5×10⁻⁸ to 1×10⁻⁵, `nominal` from 1×10⁻⁵ to 0.05. A nominal study supports: §4.1 counts a replication at
+    5×10⁻⁸ to 1×10⁻⁵, `nominal` from 1×10⁻⁵ to 0.05 (read on `p_one_sided` when the study has one, which must be
+    half of `p_value_num` within 5 %). A nominal study supports: §4.1 counts a replication at
     p < 0.05, so the §6.3 fields below are asked of it too. `not_significant` has no band (D11).
   - R-TIER-1: a row whose only supporting studies are PMID 22279548 is tier D, neutral on every genotype.
   - A tier D row is neutral on every genotype (D25: not supported means no weight).

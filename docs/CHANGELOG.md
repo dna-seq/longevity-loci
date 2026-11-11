@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- A study's `p_one_sided` holds the one-sided P the tier reads when the article prints two-sided; `check rows` reads the nominal band on it and asks it to be half the printed value (D26.13).
 - D26 settles the fifth batch: P values after the paper's own genomic control, one-sided outcome cells, no flag on an uncomputable calibration, a genome-wide line the paper's own filter excludes as an overfit source (44, 41 D), a weaker discovery contradicted as D (45), 18 B with `replication_failed`; FORMATS writes indel genotypes in their VCF alleles.
 - R-TIER-2 in `check rows` is lifted by a scoring-class study in another paper, a nominal look-up included, and no longer by a healthspan or multivariate one (D22.2, D25.10); it used to ask a second genome-wide study.
 - `check rows` holds every tier D row neutral on every genotype, not only R-TIER-1's; D25 says when a tested discovery is D, how a red flag that converts scales is calibrated, and settles the fourth batch's questions.

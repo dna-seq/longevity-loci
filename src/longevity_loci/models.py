@@ -333,6 +333,9 @@ class Study(Strict):
     stat_significance: StatSignificance
     p_value: str | None = None  # as the article writes it
     p_value_num: float | None = Field(default=None, ge=0, le=1)
+    # D25.13, D26.13: the one-sided P in the discovery's direction, derived from a printed two-sided p_value_num (half
+    # of it); the band reads it when set
+    p_one_sided: float | None = Field(default=None, ge=0, le=0.5)
     age_min: float | None = Field(default=None, ge=0)  # an age band, in years; either end may be open
     age_max: float | None = Field(default=None, ge=0)
     age_of: AgeOf | None = None  # whose age: the participant's, or the parent's (parental lifespan)

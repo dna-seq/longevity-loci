@@ -161,6 +161,7 @@ REQUIRED_NOMINAL = ("p_value", "p_value_num", "effect_allele")
 GENOME_WIDE = 5e-8
 SUGGESTIVE_P = 1e-5
 NOMINAL_P = 0.05  # §4.1: a replication counts at p < 0.05
+ONE_SIDED_TOL = 0.05  # D26.13: a derived one-sided P is half the printed one, within the printed figures' rounding
 # R-TIER-2's confounding (cohort, batch) is the old-against-young design's, centenarian or age-threshold alike (D22)
 OLD_AGAINST_YOUNG = frozenset({StudyDesign.CENTENARIAN_CC, StudyDesign.AGE_THRESHOLD_CC})
 # D22.2, D23: the classes whose study replicates (viability only confirms); a healthspan or multivariate one does not
@@ -180,13 +181,18 @@ def check_rules(row: Row, path: Path) -> list[Finding]:
     significant = [s for s in supporting if s.stat_significance is StatSignificance.SIGNIFICANT]
     for i, s in enumerate(row.studies):
         if s.p_value_num is None:
+            if s.p_one_sided is not None:
+                rule(f"studies[{i}] {s.rsid}", "p_one_sided with no p_value_num to derive it from (D26.13)")
             continue
+        if s.p_one_sided is not None and abs(s.p_one_sided - s.p_value_num / 2) > ONE_SIDED_TOL * s.p_value_num / 2:
+            rule(f"studies[{i}] {s.rsid}", f"p_one_sided {s.p_one_sided:g} is not half of p_value_num {s.p_value_num:g} (D26.13)")
         if s.stat_significance is StatSignificance.SIGNIFICANT and s.p_value_num >= GENOME_WIDE:
             rule(f"studies[{i}] {s.rsid}", f"significant with p {s.p_value_num:g}, not below 5e-8")
         if s.stat_significance is StatSignificance.SUGGESTIVE and not GENOME_WIDE <= s.p_value_num < SUGGESTIVE_P:
             rule(f"studies[{i}] {s.rsid}", f"suggestive with p {s.p_value_num:g}, not in [5e-8, 1e-5)")
-        if s.stat_significance is StatSignificance.NOMINAL and not SUGGESTIVE_P <= s.p_value_num < NOMINAL_P:
-            rule(f"studies[{i}] {s.rsid}", f"nominal with p {s.p_value_num:g}, not in [1e-5, 0.05)")
+        p = s.p_value_num if s.p_one_sided is None else s.p_one_sided
+        if s.stat_significance is StatSignificance.NOMINAL and not SUGGESTIVE_P <= p < NOMINAL_P:
+            rule(f"studies[{i}] {s.rsid}", f"nominal with p {p:g}, not in [1e-5, 0.05)")
     moving = [f"{v.rsid} {g.genotype}" for v in row.variants for g in v.genotypes if g.state is not State.NEUTRAL]
     if supporting and {s.note for s in supporting} == {R_TIER_1_PMID}:
         if tier is not Tier.D:

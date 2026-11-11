@@ -378,3 +378,11 @@ From the curator's rows 40 to 47 and the D25.13 sweep; the lead settled them und
 12. **`check rows` cannot see R-TIER-2 behind a meta-analysis.** Liu's anchor is `meta_analysis` of old-against-young
    samples, and the design field does not carry its parts' designs, so the check passes 18 unchecked. That is a
    limit of the field, said here rather than guessed by the check; the row's prose carries the rule.
+13. **A one-sided P derived from a printed two-sided one is its own field, `p_one_sided`.** `p_value` and
+   `p_value_num` stay what the article prints; `p_one_sided` holds half of it in the discovery's direction, and
+   the nominal band reads it (`check rows` asks it to be half the printed value, within 5 % for rounding). It
+   applies to every study that counts a derived one-sided pass (2, 17, 18, 37, 39 and any other), which is then
+   marked `nominal`. A source that prints a one-sided P itself (25's Timmers 2022) keeps it in `p_value_num`. The
+   curator's (b), the printed value replaced in `p_value_num`, rejected: the field would stop being what the
+   article says; (a), `not_significant` with the pass in prose, rejected: the field would read as a non-replication.
+   **Row 2 drops `PROTECT:ABSENCE_OF_RISK`** (D26.5): its pleiotropy is broad, but no disease is quoted at the locus.

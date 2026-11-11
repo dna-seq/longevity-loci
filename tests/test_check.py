@@ -642,3 +642,27 @@ def test_a_meta_analysis_with_no_pooled_effect_supports_on_allele_direction_and_
     assert rules() == []
     _row(tree).write_text(text + meta)
     assert [(w, "direction" in d) for w, d in rules()] == [("studies[1] rs429358", True)]
+
+
+def test_nominal_band_reads_a_derived_one_sided_p(tree: Path) -> None:
+    """D25.13, D26.13: a replication printed two-sided at 0.071 is nominal by its one-sided 0.035 in the
+    discovery's direction, written as p_one_sided beside the printed p_value_num; a one-sided P that is not half the
+    printed one, or one with nothing printed to derive it from, is refused."""
+    text = _row(tree).read_text()
+    study = text[text.index("studies:\n") + len("studies:\n"):]
+    nominal = (study.replace("stat_significance: significant", "stat_significance: nominal")
+               .replace('p_value: "1.3 × 10−56"', 'p_value: "0.071"').replace("p_value_num: 1.3e-56", "p_value_num: 0.071"))
+    assert "p_value_num: 0.071" in nominal
+
+    def rules(extra: str) -> list[str]:
+        _row(tree).write_text(text + extra)
+        found = check_rows(tree / "rows", tree / "corpus")
+        assert not [f for f in found if f.kind in FAILING and f.kind is not Kind.RULE], found
+        return [f.detail for f in found if f.kind is Kind.RULE and f.where.startswith("studies[")]
+
+    assert any("nominal with p 0.071" in d for d in rules(nominal))
+    one_sided = nominal.replace("p_value_num: 0.071\n", "p_value_num: 0.071\n    p_one_sided: 0.035\n")
+    assert "p_one_sided: 0.035" in one_sided
+    assert not rules(one_sided)
+    assert any("not half" in d for d in rules(one_sided.replace("p_one_sided: 0.035", "p_one_sided: 0.02")))
+    assert any("no p_value_num" in d for d in rules(one_sided.replace("    p_value_num: 0.071\n", "")))
