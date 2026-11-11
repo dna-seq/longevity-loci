@@ -202,7 +202,10 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   EPHX2's. Row 67 lacked the `replication_failed` D25.13 gives a failing sample; added. Put to the lead: E2 GULOP on
   a single-cell pseudogene eQTL alone (default), against E3 or E4 if such a colocalisation should not name a gene;
   `general_ageing` (default) against `smoking_lungs` (rs11780471 nearby is a smoking locus, the lead's tag a lung
-  cancer lead). Row 71 also owed `replication_failed` (AncestryDNA mothers fail); added.
+  cancer lead). Row 71 also owed `replication_failed` (AncestryDNA mothers fail); added. The lead's D27.7-9
+  (639598849): E3, GULOP the candidate in prose (a colocalisation its own source QC-flags names no effector; 36's
+  carried no flag); `general_ageing` kept; the calibration from the discovery's effect kept, and every Pilling-discovery
+  row is swept under it, 6 first, each tier move reported to the lead.
 - **D27 applied** (2026-11-11; the lead, 639592692), one commit. 51's Foote entry to `MULTIVARIATE_AGEING`, B on
   D27.3 (healthspan + kept, read for the cell as at 43); 43's and 27's prose call Foote's factor multivariate; 49's
   dataset 2 is the discovery's own heterogeneity (D27.1), not a D25.1 test; 52 descriptive (D27.5); 50 and 48 stood.
