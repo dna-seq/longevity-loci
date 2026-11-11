@@ -1,6 +1,6 @@
 # The seed list's locus 17, CASP8 (2q33.1; the seed's genes "CASP8;FLACC1"). Curated 2026-11-11, the second run's
 # seventh row. Lead rs10197246 (Zenin 2019's healthspan SNP, Table 2; the paper names it by its nearest gene
-# ALS2CR12, FLACC1's former symbol), the seed's only rsID here: an intron variant of FLACC1, C 0.72 in Europeans.
+# ALS2CR12, FLACC1's former symbol), the seed's only rsID here: an intron variant (of FLACC1's transcripts and some of CASP8's), C 0.72 in Europeans.
 # In Timmers 2019's and Deelen 2019's summary statistics at the lead itself; Wright 2019's S8 has two SNPs within
 # 0.12 Mb (rs3754935, rs1009276), neither a tag (minor alleles 5 to 7 % against the lead's 29 %).
 locus_id: 17
@@ -19,18 +19,18 @@ verdict_reason: >-
   85 kb, genomic-control P 4.2e-4) and fathers (rs1009276, 118 kb, P 2.8e-3) have nominal SNPs nearby, but neither
   can tag the lead (their minor alleles, 5 to 7 % in Europeans, cap r² with a 29 % allele near 0.19; Ensembl returns
   no pair at its 0.05 floor), so they are not this locus's lifespan signal. The variant is one of the strongest
-  common skin-melanoma signals (T the risk allele, P 9e-39) and leads Open Targets' sets for all cancers and breast
-  cancer in FinnGen; its credible sets are mostly skin cancers (basal-cell, squamous-cell, melanoma), keratoses and
-  facial ageing, with breast, prostate and oesophageal cancer beside them, so the mechanism is filed as skin and sun
-  with mech:cancer. Dementia (P 0.014 the other way, one of nine uncorrected component tests) is not read as a
+  common skin-melanoma signals in other studies (T the risk allele, P 9e-39) and leads Open Targets' sets for all
+  cancers and breast cancer in FinnGen; Zenin's healthspan set colocalises with basal-cell carcinoma, facial ageing
+  and many other skin-cancer and keratosis studies, and with breast cancer, so the mechanism is filed as skin and sun
+  with mech:cancer (Zenin's own cancer outcome is not split by site). Dementia (P 0.014 the other way, one of nine uncorrected component tests) is not read as a
   trade-off. Causal C2: the lead tops an 11-variant SuSiE set at PIP 0.13. Effector E3, no gene named: FLACC1 has the
   locus-to-gene score (0.56) and seven eQTL colocalisations, which meets E1 on the letter, while CASP8 colocalises
   in 217 QTL sets and holds the lead's own strongest QTL (a CASP8 transcript, P 1e-63); two genes each meet a
-  criterion. The protection is the absence of the risk allele T (the common C protects). Age of action is unknown.
+  criterion, and Zenin's credible set holds a CASP8 missense variant. The protection is the absence of the risk allele T (the common C protects). Age of action is unknown.
 axes:
   tier: {value: C, cites: [pmid-30729179#q28, pmid-30729179#q29, pmid-30729179#q33, pmid-30729179#q34, pmid-30642433#q55, pmid-31413261#q35, pmid-31413261#q36, pmid-31484785#q47, pmid-31484785#q48, db-ensembl-116#q70, db-ensembl-116#q72, db-ensembl-116#q73]}
-  mechanism: {value: skin_sun, cites: [pmid-30729179#q30, pmid-30729179#q34, db-gwascatalog-2026.10.29#q124, db-gwascatalog-2026.10.29#q126, db-opentargets-26.09#q161, db-opentargets-26.09#q162]}
-  pleiotropy: {values: ["mech:cancer"], cites: [pmid-30729179#q30, pmid-30729179#q34, db-opentargets-26.09#q163, db-opentargets-26.09#q164, db-opentargets-26.09#q165, db-opentargets-26.09#q166, db-gwascatalog-2026.10.29#q127]}
+  mechanism: {value: skin_sun, cites: [pmid-30729179#q30, pmid-30729179#q34, db-gwascatalog-2026.10.29#q124, db-gwascatalog-2026.10.29#q126, db-opentargets-26.09#q161, db-opentargets-26.09#q162, db-opentargets-26.09#q182, db-opentargets-26.09#q183, db-opentargets-26.09#q184, db-opentargets-26.09#q185]}
+  pleiotropy: {values: ["mech:cancer"], cites: [pmid-30729179#q30, pmid-30729179#q34, db-opentargets-26.09#q163, db-opentargets-26.09#q164, db-opentargets-26.09#q165, db-opentargets-26.09#q166, db-gwascatalog-2026.10.29#q127, db-opentargets-26.09#q186, db-opentargets-26.09#q187]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "+", lifespan: "0", exceptional_survival: "0",
             cites: [pmid-30729179#q28, pmid-30729179#q34, pmid-30642433#q55, pmid-31413261#q35, pmid-31413261#q36]}
@@ -39,7 +39,7 @@ axes:
 flags:
   - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-30729179#q28, db-ensembl-116#q71]}
   - {token: "causal:C2", cites: [db-opentargets-26.09#q169, db-opentargets-26.09#q170, db-opentargets-26.09#q171]}
-  - {token: "effector:E3", cites: [db-opentargets-26.09#q172, db-opentargets-26.09#q173, db-opentargets-26.09#q174, db-opentargets-26.09#q175, db-opentargets-26.09#q176, db-opentargets-26.09#q177, db-opentargets-26.09#q178, db-opentargets-26.09#q179, db-opentargets-26.09#q180, db-opentargets-26.09#q181, db-opentargets-26.09#q167, db-opentargets-26.09#q168]}
+  - {token: "effector:E3", cites: [db-opentargets-26.09#q172, db-opentargets-26.09#q173, db-opentargets-26.09#q174, db-opentargets-26.09#q175, db-opentargets-26.09#q176, db-opentargets-26.09#q177, db-opentargets-26.09#q178, db-opentargets-26.09#q179, db-opentargets-26.09#q180, db-opentargets-26.09#q181, db-opentargets-26.09#q167, db-opentargets-26.09#q168, pmid-30729179#q35]}
 variants:
   - rsid: rs10197246
     gene: ""
@@ -56,24 +56,24 @@ variants:
         conclusion: >-
           You carry two copies of the common version of this DNA region, the one most people of European ancestry
           have (about 52 in 100). It is the reference the other combinations are compared with. The region, on
-          chromosome 2, lies near the CASP8 gene, which helps damaged cells die off, and it is not yet clear which
-          gene matters. The finding comes from people of European ancestry; less is known elsewhere.
+          chromosome 2, lies within the FLACC1 gene, beside CASP8, and it is not yet clear which gene
+          matters. The finding comes from people of European ancestry; less is known elsewhere.
       - genotype: C/T
         state: risk
         conclusion: >-
           You carry one copy of a less common version of this DNA region (about 40 in 100 people of European
           ancestry do). In a very large British study, confirmed in a second group, this version went with a
-          slightly earlier first major disease, and the difference was all in cancer, skin cancer above all. It
-          did not clearly shorten life itself. The effect is small and it is a tendency, not a verdict; sun
-          protection and skin checks matter for everyone.
+          slightly earlier first major disease, and the difference was all in cancer; other studies link this
+          version to skin cancer above all. It did not clearly shorten life itself. The effect is small and it is
+          a tendency, not a verdict.
       - genotype: T/T
         state: risk
         conclusion: >-
           You carry two copies of a less common version of this DNA region (about 8 in 100 people of European
           ancestry do). In a very large British study, confirmed in a second group, each copy went with a slightly
-          earlier first major disease, and the difference was all in cancer, skin cancer above all. It did not
-          clearly shorten life itself. The effect is small and it is a tendency, not a verdict; sun protection and
-          skin checks matter for everyone.
+          earlier first major disease, and the difference was all in cancer; other studies link this version to
+          skin cancer above all. It did not clearly shorten life itself. The effect is small and it is a
+          tendency, not a verdict.
 studies:
   - rsid: rs10197246
     note: pmid-30729179

@@ -767,3 +767,20 @@ sQTL, 69 transcript-usage QTL, across GTEx and other panels), 7 FLACC1 eQTL (ski
 cerebellum; q177, q178) and 1 TRAK2 exon QTL (counted from the cached pages, not each quoted). So FLACC1 meets E1 on
 the letter (locus-to-gene ≥ 0.5 and a cis-QTL colocalisation) while CASP8 colocalises far more widely and holds the
 lead's own strongest QTL (q167): two genes each meet a criterion, the ambiguity of E3. For row 17.
+
+> [q182] data.credibleSet.colocalisation.rows[14] colocalisationMethod COLOC_PIP_ECAVIAR h4 0.9900413540286052 clpp 0.08529692544619219 rightStudyType gwas
+
+> [q183] data.credibleSet.colocalisation.rows[14].otherStudyLocus.study id GCST90328132 traitFromSource Basal cell carcinoma studyType gwas
+
+> [q184] data.credibleSet.colocalisation.rows[0] colocalisationMethod COLOC_PIP_ECAVIAR h4 0.9829808798018292 clpp 0.05076374646710202 rightStudyType gwas
+
+> [q185] data.credibleSet.colocalisation.rows[0].otherStudyLocus.study id GCST90692907 traitFromSource Facial ageing (UKB data field 1757) studyType gwas
+
+> [q186] data.credibleSet.colocalisation.rows[78] colocalisationMethod COLOC_PIP_ECAVIAR h4 0.9863575327725644 clpp 0.06180410553167977 rightStudyType gwas
+
+> [q187] data.credibleSet.colocalisation.rows[78].otherStudyLocus.study id GCST004988 traitFromSource Breast cancer studyType gwas
+
+GWAS colocalisation of Zenin's healthspan set (the default query, `coloc-00c3…`: 112 partners, all GWAS): basal-cell
+carcinoma (H4 0.99), facial ageing (0.98) and breast cancer (0.99), three of many skin-cancer, keratosis and other
+cancer partners (read, not each quoted). The healthspan signal shares its variant with skin cancer and skin ageing
+above all, and with breast cancer. For row 17.
