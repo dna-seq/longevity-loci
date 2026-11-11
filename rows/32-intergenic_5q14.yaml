@@ -16,12 +16,13 @@ verdict_reason: >-
   rare T (2 % in the cohort) went with healthy ageing, OR 3.16 per allele, meta P 4.94e-9; the paper's "risk T
   allele" is its test allele, on the healthy side. Discovery alone is only just past the threshold (P 4.82e-8), and an
   OR above 3 at 2 % invites winner's curse. Unlike row 16's, this replication arm leans the same way at P 0.034 (OR
-  3.67, CI 1.10 to 12.2, Cochran's Q P 0.80): 129 healthy agers and 500 others from the same cohort, genotyped later,
-  separate people the paper keeps apart, so independent by D19.1, though thin. It would make the healthspan side a
-  replicated result; it does not change the tier, which waits on a lifespan study (D16). With lifestyle covariates the
+  3.67, CI 1.10 to 12.2, Cochran's Q P 0.80): 129 healthy agers and 500 others, separate people from the same cohort and team, genotyped later, and
+  already inside the meta P. Whether such an arm is §4.1's independent replication is put to the lead; it does not
+  change the tier, which waits on a lifespan study (D16). With lifestyle covariates the
   meta P is 8.21e-9. The lifespan side is untested, not null: LifeGen, Zenin and both Deelen percentiles hold no line
   for the variant (T 0.08 % in non-Finnish Europeans), the SNPs that track it in 99 Finns do not tag it in those mostly
-  British samples, and no East Asian or Finnish lifespan result for it was found. Exceptional survival is untested for
+  British samples, and a literature search on the rsID finds only Chang's
+  paper (Semantic Scholar unchecked); the cached Chinese longevity paper of row 18 prints its top hits only. Exceptional survival is untested for
   the same reason. The evidence is East Asian only (R-ANC-4, ancestry_specific:eas): not to be scored outside East
   Asian ancestry, and in the research view without inferred ancestry. The allele is as common in Finns and admixed
   Americans, where it is untested. Of the seven domains, T passes adjustment only for good self-perceived health (P
@@ -32,7 +33,7 @@ verdict_reason: >-
   no rival under D24: effector E2, XRCC4, the model's call on a one-variant set. The protection is a presence: the rare
   allele goes with healthier ageing. Age of action is unknown.
 axes:
-  tier: {value: C, cites: [pmid-35927272#q1, pmid-35927272#q8, pmid-35927272#q13, pmid-35927272#q14, pmid-35927272#q15, db-ensembl-116#q210, db-gwascatalog-2026.10.29#q208, db-gwascatalog-2026.10.29#q209]}
+  tier: {value: C, cites: [pmid-35927272#q1, pmid-35927272#q8, pmid-35927272#q13, pmid-35927272#q14, pmid-35927272#q15, db-ensembl-116#q210, db-gwascatalog-2026.10.29#q208, db-gwascatalog-2026.10.29#q209, db-gwascatalog-2026.10.29#q211]}
   mechanism: {value: general_ageing, cites: [pmid-35927272#q7, pmid-35927272#q17, pmid-35927272#q18, pmid-35927272#q19]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}

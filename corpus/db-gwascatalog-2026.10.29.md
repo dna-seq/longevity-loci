@@ -701,6 +701,8 @@ return no record (totalElements 0). No other trait is recorded on the haplotype.
 
 > [q210] _embedded.associations[0].snp_effect_allele[0] rs138499810-T
 
+> [q211] _links.self href https://www.ebi.ac.uk/gwas/rest/api/v2/associations?rs_id=rs138499810&page=0&size=50 page size 50 totalElements 1 totalPages 1 number 0
+
 rs138499810 (`associations-rs138499810.json`): one record, Chang 2022's healthy ageing (q209), T (q210), P 5e-9,
-"beta 1.15" with range 0.76 to 1.54 (q208): the natural log of the paper's OR 3.158 and its CI (2.148 to 4.643), not
+"beta 1.15" with range 0.76 to 1.54 (q208), the only record (q211): the natural log of the paper's OR 3.158 and its CI (2.148 to 4.643), not
 a separate estimate. No other trait on the variant. For row 32.
