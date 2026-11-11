@@ -42,14 +42,15 @@ verdict_reason: >-
   (0.32). Timmers 2019 counts KCNK3 among its most allelically heterogeneous loci (at least 25 independent variants),
   so a single SNP captures only part of the region. The effector is KCNK3, E1: locus-to-gene 0.85, and the only gene
   whose expression colocalises with the signal (five cis eQTL sets, H4 up to 0.996). The protection is the absence of
-  the risk allele: A shortens life and G is the common one. Age of action is lifelong, from age bands (DIRECT_WEAK):
-  in Timmers 2019's Figure 5 source data the effect keeps one sign from 60 to 90 in both parents without fading
-  (fathers 0.006, 0.015, 0.029; mothers 0.018, 0.039, 0.022), and the age moderator is null (P 0.39).
+  the risk allele: A shortens life and G is the common one. Age of action is unknown: in Timmers 2019's Figure 5
+  source data the effect keeps one sign from 60 to 90 in both parents (fathers 0.006, 0.015, 0.029; mothers 0.018,
+  0.039, 0.022) and the age moderator is null (P 0.39), but fathers' 80-90 band sits above their 60-80 mean (z −1.09),
+  short of the sweep's |z| below 1 for one size.
 axes:
   tier: {value: A, cites: [pmid-30642433#q44, pmid-30642433#q30, pmid-30642433#q47, pmid-30642433#q50, pmid-31413261#q27, pmid-31413261#q5, pmid-30642433#q13, pmid-30642433#q48, pmid-30642433#q49, pmid-31413261#q28, pmid-37550455#q2, db-gwascatalog-2026.10.29#q78, pmid-29227965#q21, pmid-31484785#q43, db-ensembl-116#q43, db-gwascatalog-2026.10.29#q76, db-gwascatalog-2026.10.29#q79, db-opentargets-26.09#q105, db-opentargets-26.09#q107]}
   mechanism: {value: heart_vessels, cites: [pmid-30642433#q44, pmid-30642433#q45, db-gwascatalog-2026.10.29#q91, db-gwascatalog-2026.10.29#q93, db-gwascatalog-2026.10.29#q87, db-gwascatalog-2026.10.29#q90, db-gwascatalog-2026.10.29#q100, db-gwascatalog-2026.10.29#q102, db-ensembl-116#q42, db-ensembl-116#q46, db-opentargets-26.09#q110, db-opentargets-26.09#q111]}
   pleiotropy: {values: ["mech:cvd", "mech:adiposity", broad], cites: [pmid-30642433#q44, pmid-30642433#q45, db-gwascatalog-2026.10.29#q91, db-gwascatalog-2026.10.29#q100, db-gwascatalog-2026.10.29#q85, db-gwascatalog-2026.10.29#q88]}
-  age_of_action: {value: LIFELONG, confidence: DIRECT_WEAK, cites: [pmid-30642433#q122, pmid-30642433#q123, pmid-30642433#q124, pmid-30642433#q125, pmid-30642433#q126, pmid-30642433#q127, pmid-30642433#q128]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: [pmid-30642433#q122, pmid-30642433#q123, pmid-30642433#q124, pmid-30642433#q125, pmid-30642433#q126, pmid-30642433#q127, pmid-30642433#q128]}
   outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "+",
             cites: [pmid-30729179#q24, pmid-30642433#q44, pmid-31413261#q27, pmid-30642433#q48]}
   actionability: {label: descriptive, cites: [pmid-30642433#q45, db-gwascatalog-2026.10.29#q91, db-gwascatalog-2026.10.29#q85]}

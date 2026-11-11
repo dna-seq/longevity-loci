@@ -32,15 +32,16 @@ verdict_reason: >-
   the same set at r² 0.68 and 0.67 (PIP 0.02), so the autoimmune haplotype the paper names is not excluded. The top
   locus-to-gene score is PHTF1 at 0.42, below 0.5; on the two sets PHTF1 holds 18 of the 20 cis-QTL colocalisations at
   H4 ≥ 0.8 and RHOC 2, exactly the tenth D24 counts as a rival, so effector E3, at the edge, and no gene is named. The
-  protection is the absence of the risk allele: A shortens life and G is the common one. Age of action is lifelong,
-  from age bands (DIRECT_WEAK): in Timmers 2019's Figure 5 source data the effect keeps one sign and about one size
-  from 60 to 90 in both parents (fathers 0.052, 0.034, 0.019; mothers 0.062, 0.027, 0.037, log protection ratio per
-  allele), and neither age (P 0.93) nor sex (P 0.67) moderates it.
+  protection is the absence of the risk allele: A shortens life and G is the common one. Age of action is unknown: in
+  Timmers 2019's Figure 5 source data the effect keeps one sign from 60 to 90 in both parents (fathers 0.052, 0.034,
+  0.019; mothers 0.062, 0.027, 0.037, log protection ratio per allele), and neither age (P 0.93) nor sex (P 0.67)
+  moderates it, but fathers' 80-90 band sits below their 60-80 mean (z 1.13), short of the sweep's |z| below 1 for one
+  size and of 1.96 for a fade.
 axes:
   tier: {value: B, cites: [pmid-30642433#q29, pmid-30642433#q30, pmid-30642433#q33, pmid-30642433#q34, pmid-31413261#q19, pmid-37550455#q9, db-gwascatalog-2026.10.29#q10, db-gwascatalog-2026.10.29#q32, db-gwascatalog-2026.10.29#q34, pmid-37118362#q43, pmid-37118362#q44, pmid-37118362#q53, db-ensembl-116#q182, db-ensembl-116#q183, db-ensembl-116#q184, db-ensembl-116#q185]}
   mechanism: {value: immune_inflammation, cites: [pmid-30642433#q29, pmid-30642433#q31, db-gwascatalog-2026.10.29#q4, db-gwascatalog-2026.10.29#q6, db-gwascatalog-2026.10.29#q19, db-gwascatalog-2026.10.29#q21]}
   pleiotropy: {values: ["mech:autoimmune", "mech:cvd", "mech:cancer"], cites: [pmid-30642433#q31, pmid-30642433#q32, db-gwascatalog-2026.10.29#q4, db-gwascatalog-2026.10.29#q13, db-gwascatalog-2026.10.29#q15, db-gwascatalog-2026.10.29#q16, db-gwascatalog-2026.10.29#q18]}
-  age_of_action: {value: LIFELONG, confidence: DIRECT_WEAK, cites: [pmid-30642433#q108, pmid-30642433#q109, pmid-30642433#q110, pmid-30642433#q111, pmid-30642433#q112, pmid-30642433#q113, pmid-30642433#q114]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: [pmid-30642433#q108, pmid-30642433#q109, pmid-30642433#q110, pmid-30642433#q111, pmid-30642433#q112, pmid-30642433#q113, pmid-30642433#q114]}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
             cites: [pmid-30729179#q18, pmid-30642433#q29, pmid-30642433#q33, pmid-30642433#q34, pmid-31413261#q19]}
   actionability: {label: descriptive, cites: [pmid-30642433#q31]}

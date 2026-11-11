@@ -41,8 +41,9 @@ verdict_reason: >-
   and no gene named (§4.2), though the paper and the catalog map the region to TMEM18. The protection is a presence,
   the minor A. Age of action is mid-life, from age bands (DIRECT_WEAK): in Timmers 2019's Figure 5 source data the
   effect is gone at 80-90 in both parents (mothers 0.065 at 60-70, 0.050 at 70-80, 0.008 at 80-90; fathers 0.030,
-  0.021, −0.0005), though the age moderator does not pass (P 0.20); the sex moderator is nominal (P 0.015) and fails
-  the paper's 5 % FDR (Q 0.28), so no sex_specific.
+  0.021, −0.0005), mothers' 80-90 band below their 60-80 mean at z 2.53 and fathers' at 1.38, though the age moderator
+  does not pass (P 0.20); the sex moderator is nominal (P 0.015) and fails the paper's 5 % FDR (Q 0.28), so no
+  sex_specific.
 axes:
   tier: {value: B, cites: [pmid-30642433#q38, pmid-30642433#q39, pmid-30642433#q40, pmid-30642433#q41, pmid-30642433#q42, pmid-31484785#q35, pmid-31484785#q36, pmid-31484785#q37, pmid-31484785#q39, pmid-31484785#q40, pmid-31413261#q20, db-gwascatalog-2026.10.29#q59, db-ensembl-116#q28, db-ensembl-116#q29]}
   mechanism: {value: metabolism, cites: [pmid-30642433#q38, db-gwascatalog-2026.10.29#q61, db-gwascatalog-2026.10.29#q62, db-opentargets-26.09#q89, db-opentargets-26.09#q90, db-opentargets-26.09#q91]}
