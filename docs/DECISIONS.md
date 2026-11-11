@@ -197,8 +197,8 @@ From the lead's adversarial read of rows 16 to 19, settled under the person's st
    scores only beside a lifespan study (D16), so it does not lift R-TIER-2's "unreplicated".
 3. **A cross-ancestry null is not "explicitly contradicted" (tier D) when the locus's proxies lean the discovery's
    way.** It is D when the European look-up is flat, as for §4.1's own IL6 example (Timmers P 0.84). Row 18
-   (TMEM43) is C: a powered European null at Deelen, but its proxies lean to T in Timmers (P 0.05 to 0.14) and
-   Zenin's healthspan gives P 0.0035. Where a paper prints a P its own β and SE do not reproduce, the row reads the
+   (TMEM43) is not D: a powered European null at Deelen, but its proxies lean to T in Timmers (P 0.05 to 0.14) and
+   Zenin's healthspan gives P 0.0035. (C when written; B with `replication_failed` since D25.13 and D26.11.) Where a paper prints a P its own β and SE do not reproduce, the row reads the
    printed P (D17.3) and says the discrepancy.
 
 ## D23 — a frailty index is healthspan-class; viability confirms, never replicates (2026-11-11)
@@ -233,7 +233,7 @@ person's standing word.
    Timmers' powered look-up "at effect sizes originally published" though leaning the same way (P 0.27, 0.11). B's
    "a single study without independent replication" is a hit nobody has tested, not one tested and failed; the
    71/67 rule is a ceiling on A, never a floor under D. A null in another ancestry stays with D22.3, so 18 (an East
-   Asian discovery) is C. Applied: 26 is D (Deelen's own UK Biobank validation, power about 1.00, heterogeneity P
+   Asian discovery) is not D (B with `replication_failed` since D26.11). Applied: 26 is D (Deelen's own UK Biobank validation, power about 1.00, heterogeneity P
    2e-4 to 9e-4 at half the effect for the parental cut). 31 keeps C: Deelen's 99th percentile gives P 0.012 at an
    r² 1.0 proxy, and whether Deelen is independent of NECS is not yet shown; once the curator has quoted NECS's
    controls from the main text, it is B (capped) if the independence holds and C if it cannot be shown. A smaller
@@ -307,3 +307,74 @@ person's standing word.
    direction): 2 PABPC4, 4, 17 CASP8, 18 TMEM43 and 93 LDLR, which read a same-direction P of 0.05 to 0.10 as a miss,
    are re-read under it as one sweep, each tier move reported and read adversarially by the lead. A cross-ancestry
    look-up that now passes (18) is §4.1's "ancestry-specific replication only" at most.
+
+## D26 — batch five: corrected P values, one-sided cells, an invalid discovery, a weak discovery contradicted (2026-11-11)
+
+From the curator's rows 40 to 47 and the D25.13 sweep; the lead settled them under the person's standing word.
+
+1. **A P value is read after the paper's own genomic control.** Wright 2019's Table 9 AncestryDNA P is raw; at its
+   Supplementary Table 3 λ (1.113 mothers, 1.182 fathers) 27's and 71's fathers (raw 0.0496, 0.0498) become 0.065
+   and 39's 0.055, and do not replicate; 37's 0.037 holds either way. The paper's own calls use the corrected P, and
+   a raw P counts its inflation as evidence. The curator's default; raw P rejected.
+2. **An outcome cell reads one-sided too**, as D25.13 reads a replication: `+` is p < 0.05 in the discovery's
+   direction. The curator's default.
+3. **A flag that converts scales needs both calibrations shown (D25.3); one that cannot be computed is unknown, and
+   unknown sets no token.** 40's FinnGen null flags under APOE's factor (power 0.86) with the within-FinnGen mean
+   (D25.12) not computed, and 47's LifeGen and FinnGen nulls flag under APOE's top 1 % factor with no mean factor
+   for that phenotype: neither row carries `replication_failed`, and each says the second calibration is unknown.
+   The curator's default at 40 (as 39); the default at 47 (flag on APOE's factor alone) rejected. Both stay B.
+4. **40 carries no trade-off.** The longer-life C lowers cystatin C eGFR, but the quoted disease sets at the locus
+   (acute renal failure at the lead, three chronic kidney disease sets) run with T, so no quote ties C to a harm
+   (D18.1). The curator's default; a trade-off by the biomarker alone, as 39, rejected.
+5. **`PROTECT:ABSENCE_OF_RISK` needs a disease at the locus**, as §4.2 defines it ("the common non-risk allele at a
+   disease locus"). 42 carries no token (the curator's default, as 21), and 28, whose pleiotropy is empty, drops
+   its token.
+6. **43 FOXO3 stays B.** Broer 2015's P 1.85e-10 pools the candidate SNP with the published samples that proposed
+   it, so it is a candidate meta-analysis, not a genome-wide discovery (Timmers 2020: never genome-wide in a scan);
+   it does not anchor A. The healthspan cell is 0: Zenin and Timmers 2020 lean G healthier at nominal P, while
+   Foote's frailty factor (healthspan class, D25.8) puts G frailer at P 4e-10, and `+` would tell a reader the
+   opposite of a genome-wide result. The row says mixed. The curator's `+` rejected.
+7. **A genome-wide P the paper's own filter excludes is no discovery: 44 is D**, §4.1's "overfit source". Park
+   2025's deposit line (P 8.9e-9) rests on about 28 allele copies, thirty times below the paper's MAF 0.1 % filter,
+   and the paper does not report it. The genotypes stay neutral (D25.2), lifespan becomes `untested` (the one test
+   is the excluded line), and gene PLN at E2 stands by §4.2's letter (L2G ≥ 0.5 alone). 75 KLF12, from the same
+   deposit, is read the same way when reached. The curator's C rejected: C is "suggestive", and this line is not a
+   suggestive test but an invalid one.
+8. **A sub-genome-wide discovery that fails a powered test in its own ancestry is D, a fortiori of D25.1: 45 is D.**
+   Deelen's trans-ethnic P 9.8e-7 meets LifeGen's red flag under both calibrations (heterogeneity P 0.044 and
+   0.0011), with no independent scoring-class p < 0.05 its way (LifeGen one-sided 0.088, FinnGen 0.14, Zenin null).
+   A genome-wide discovery would be D on that evidence; a weaker one cannot stand above it. The genotypes go
+   neutral and the trade-off goes: Kemp 2014's paediatric bone density with no quoted adult harm is not D18.1's
+   "low bone density for osteoporosis and fracture". The curator's C rejected.
+9. **47's age of action stays UNKNOWN.** Its two contrasts (Deelen's 99th against 90th percentile, Pilling's top
+   1 % against the continuous scan) contrast extremity of survival, not the age the allele acts. It carries the
+   surviving id rs371933919 with the seed's rs528161076 as a synonym. Indel genotypes are written in the VCF
+   alleles (`T/T`, `T/TC`, `TC/TC`), now said in FORMATS.md.
+10. **41 PRDM13 is D on 7's ground, not on an r² cut.** NECS's genome-wide P (3.58e-8, its own 5e-8 threshold)
+   rests on a control frequency of 0.0004 where every reference sample has about 0.10, which the authors themselves
+   doubt: an overfit source, as 44. LifeGen's lean at rs12660804 (r² 0.605, D′ 1; one-sided about 0.02) is
+   therefore not weighed as replicating a discovery. Rescaled it fits a tiny common-haplotype effect, consistent
+   with Deelen's flat line, not NECS's, and FinnGen leans the other way at the same proxy. The row names it without
+   counting it. There is no "r² 0.8 the rows use": 25 counted rs362273 at r² 0.67, and the row drops that phrase. The
+   curator's (a); (b), C as row 19, rejected (19's replication is unknown; 41's has been tested, and by D25.1's
+   letter a counted replication would give B with the flag, not C).
+   Corrections: the heterogeneity uses the Woolf SE from the counts (17.7 case copies, 2.32 control copies; SE
+   0.70, z about 4.0, not 0.51 and 5.4); the flag holds. The crude OR (15 to 19 by the one-figure control
+   frequency, on about 2 control copies, Wald z 4.0 against the paper's 5.51) leaves `variants[]` and stays only in
+   NECS's `statistical_test`: D25.10 entered a crude OR because the counts were the paper's own, and here the paper
+   disowns them. Deelen includes LLFS, with a Boston field centre and NECS's authors among its authors, so "no NECS
+   among them" becomes "no NECS named; LLFS overlap unknown", as row 31.
+11. **The sweep's raises: 2 and 17 are B; 18 is B with `replication_failed`.** 2 PABPC4: Timmers' one-sided 0.035
+   is D16's co-occurring study (D16 asks no independence), capped by D18.3. 17 CASP8: B as 35; Zenin's nulls are no
+   red flag, being the discovery's own people and unpowered on the lifespan scale (power about 0.4), and the row
+   says lifespan `+` rests on one look of three. 18 TMEM43: counting Timmers (one-sided 0.028, independent, European)
+   as the replication that lifts R-TIER-2 also counts Deelen's 90th percentile, a powered European look-up in the
+   discovery's own phenotype class: Liu's β 0.146 (SE 0.029) against 0.0069 (SE 0.0198), power about 1.0,
+   heterogeneity P about 7.5e-5 (99th about 8e-4). Both are log odds of long-lived status, so no scale converts and
+   D25.3's two calibrations do not arise; the row states that at half Liu's effect the P is about 0.06. A row cannot
+   count one European look-up and set aside the other, so 18 carries the flag, as 31; C (no European look-up
+   counts) rejected, being the reading D25.13 replaced. D22.3 and D25.1 are amended to say so. A one-sided pass
+   counted as replication is marked `stat_significance: nominal` (as 25), on all three rows.
+12. **`check rows` cannot see R-TIER-2 behind a meta-analysis.** Liu's anchor is `meta_analysis` of old-against-young
+   samples, and the design field does not carry its parts' designs, so the check passes 18 unchecked. That is a
+   limit of the field, said here rather than guessed by the check; the row's prose carries the rule.

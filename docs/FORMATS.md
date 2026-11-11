@@ -32,7 +32,8 @@ a v1 locus with no seed entry takes the next free id above the seed's. Fields:
 - `variants`: per rsid, `gene` (the effector call), `phenotype` (at most six words), `trait_efo_id`,
   `effect_allele`, `effect_size`, `effect_measure`, `stat_significance` (from the anchor study), `direction`
   (`protective`, `risk`, `contested`, `unknown`), `negatives` (required on every variant when pleiotropy holds
-  `tradeoff`), and `genotypes` (each `genotype`, `state`, `conclusion`).
+  `tradeoff`), and `genotypes` (each `genotype`, `state`, `conclusion`; an indel's genotypes in its VCF
+  alleles, as `T/T`, `T/TC`, `TC/TC`, D26.9).
 - `studies`: one per (rsid, study), §6.3's columns: `note` and `quote` (the provenance quote, by id; or no
   `quote` and a `quote_absent` saying why: `not_found` read and nothing supports the row, `unchecked` only the
   abstract could be read, `other_claim` the article does not make the claim cited for (the row goes to a

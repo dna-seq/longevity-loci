@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- D26 settles the fifth batch: P values after the paper's own genomic control, one-sided outcome cells, no flag on an uncomputable calibration, a genome-wide line the paper's own filter excludes as an overfit source (44, 41 D), a weaker discovery contradicted as D (45), 18 B with `replication_failed`; FORMATS writes indel genotypes in their VCF alleles.
 - R-TIER-2 in `check rows` is lifted by a scoring-class study in another paper, a nominal look-up included, and no longer by a healthspan or multivariate one (D22.2, D25.10); it used to ask a second genome-wide study.
 - `check rows` holds every tier D row neutral on every genotype, not only R-TIER-1's; D25 says when a tested discovery is D, how a red flag that converts scales is calibrated, and settles the fourth batch's questions.
 - R-TIER-2 in `check rows` holds an age-threshold case-control (90+ against younger) as it holds a centenarian one; D21 fixes the red-flag line (power 0.8, heterogeneity P below 0.05), D22 what replicates and when a cross-ancestry null is tier D.
