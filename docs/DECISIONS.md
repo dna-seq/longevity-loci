@@ -426,3 +426,13 @@ From the curator's rows 48 to 52; the lead settled them under the person's stand
 6. **D25.5 holds for any scoring-class set the tier does not rest on**, multivariate included: Foote's sets at 43
    (PIP 0.065) and 27 (0.043) set no causal confidence, so both stay C4. The curator's (a); (b), D17.2's letter
    giving C3, rejected: D25.5's reason is that causal confidence follows the evidence the tier stands on.
+7. **A colocalisation its own source flags for QC names a candidate, not an effector: 53 is E3.** The single-cell
+   eQTL study behind GULOP (303 samples, a QC flag, its set led by another SNP, lead PIP 0.058, CLPP 0.05) meets E2's
+   letter, but a flag the source itself raises makes the call ambiguous, §4.2's E3, with GULOP named as the candidate
+   in prose. 36's E2 (D25.12) stands: its colocalisation carried no such flag. The curator's (a) rejected; (c), E4,
+   rejected: the gene was assessed.
+8. **53's mechanism is `general_ageing`** (D25.7): no record at the lead shows a route; the tag's lung-cancer set and
+   a nearby smoking locus are neighbours, not the lead. The curator's default.
+9. **A red flag is calibrated from the discovery's own effect, as D21 says,** here Pilling's 0.0303 (flag under both
+   factors at Deelen's 90th), not Timmers' pooled β. Every row whose discovery is Pilling's is swept under it (6 at
+   A first), each tier move reported and read adversarially by the lead. The curator's default.
