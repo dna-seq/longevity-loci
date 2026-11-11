@@ -23,11 +23,11 @@ verdict_reason: >-
   consortium at P 0.90 with G more frequent among the long-lived, and NECS at OR 0.88, P 0.25. FinnGen's death
   endpoint has G with fewer deaths (P 0.23), and Zenin 2019's healthspan G with a later end (P 0.081 raw, 0.090
   after its genomic control). One look leans Zeng's way: Deelen 2019's European 90th percentile, A OR about 1.08, P
-  0.038 two-sided (one-sided 0.019; the 99th P 0.30, same side). Its cohorts are European only and include the EU
-  consortium that is flat in Zeng's table. With the discovery an overfit source it replicates nothing (D26.14): named,
+  0.038 two-sided (one-sided 0.019; the 99th P 0.30, same side). Its cohorts are European only and overlap Deelen
+  2014's, the EU consortium that is flat in Zeng's table. With the discovery an overfit source it replicates nothing (D26.14): named,
   not counted, as row 41's LifeGen lean. Deelen's trans-ethnic analyses reach genome-wide at the lead only by adding
   CLHLS, and the authors say East Asians drive it; the GWAS Catalog's Deelen records and Open Targets' 99th-percentile
-  set are those results. Outcome cells: lifespan 0 (Timmers, FinnGen), healthspan 0 (Zenin, two-sided P 0.090
+  set (5,662 cases, 3,484 European plus Zeng's 2,178) are those results. Outcome cells: lifespan 0 (Timmers, FinnGen), healthspan 0 (Zenin, two-sided P 0.090
   after genomic control; one-sided on G's side it would be about 0.045, but D26.2 reads a cell one-sided only in the
   discovery's direction), exceptional survival 0 (Deelen's 90th named, not counted; 99th and the EU consortium flat).
   Pleiotropy is real but carries no trade-off at tier D (D26.14): G protects against critical COVID-19 in Chinese
@@ -38,10 +38,11 @@ verdict_reason: >-
   says and R-ANC-4 lists. Open Targets 26.09: the lead tops both lifespan-class credible sets, Zeng's (PIP 0.55) and
   Deelen's trans-ethnic 99th (PIP 0.99), so causal C1 by the letter; both rest on CLHLS's genotypes, so it is the
   fine-mapping of the doubted call. L2G names IL6 (0.91, 0.88), but the one cis colocalisation at H4 ≥ 0.8 is
-  IL6-AS1's visceral-adipose eQTL (0.85; IL6's own transcript-usage QTL 0.74): under D24 the rival holds every
+  IL6-AS1's visceral-adipose eQTL (0.85, an eCAVIAR line with clpp 0.005, the lowest the rows have counted; IL6's own
+  transcript-usage QTL 0.74): under D24 the rival holds every
   colocalisation, so E3 and no gene named. Age of action is unknown. Genotypes neutral (D25.2).
 axes:
-  tier: {value: D, cites: [pmid-26912274#q2, pmid-26912274#q4, pmid-26912274#q5, pmid-26912274#q7, pmid-33657282#q15, pmid-33657282#q16, db-ensembl-116#q322, db-ensembl-116#q323, db-ensembl-116#q324, pmid-30642433#q231, pmid-30642433#q232, pmid-30642433#q92, pmid-26912274#q9, pmid-26912274#q10, db-finngen-r11#q23, pmid-30729179#q71, pmid-31413261#q123, pmid-31413261#q124, pmid-31413261#q125, pmid-31413261#q126, pmid-31413261#q127]}
+  tier: {value: D, cites: [pmid-26912274#q12, pmid-24688116#q6, pmid-24688116#q7, pmid-26912274#q2, pmid-26912274#q4, pmid-26912274#q5, pmid-26912274#q7, pmid-33657282#q15, pmid-33657282#q16, db-ensembl-116#q322, db-ensembl-116#q323, db-ensembl-116#q324, pmid-30642433#q231, pmid-30642433#q232, pmid-30642433#q92, pmid-26912274#q9, pmid-26912274#q10, db-finngen-r11#q23, pmid-30729179#q71, pmid-31413261#q123, pmid-31413261#q124, pmid-31413261#q125, pmid-31413261#q126, pmid-31413261#q127]}
   mechanism: {value: general_ageing, cites: [pmid-33657282#q15]}
   pleiotropy: {values: [], cites: [pmid-35368020#q2, pmid-35368020#q3, pmid-35368020#q4, pmid-25604533#q1]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -51,7 +52,7 @@ axes:
   context: {values: ["ancestry_specific:eas"], cites: [pmid-26912274#q7, pmid-26912274#q4]}
 flags:
   - {token: replication_failed, cites: [pmid-30642433#q232, pmid-30642433#q231, pmid-30642433#q92]}
-  - {token: "causal:C1", cites: [db-opentargets-26.09#q610, db-opentargets-26.09#q611, db-opentargets-26.09#q612, db-opentargets-26.09#q613]}
+  - {token: "causal:C1", cites: [db-opentargets-26.09#q610, db-opentargets-26.09#q611, db-opentargets-26.09#q612, db-opentargets-26.09#q613, db-opentargets-26.09#q622]}
   - {token: "effector:E3", cites: [db-opentargets-26.09#q614, db-opentargets-26.09#q615, db-opentargets-26.09#q616, db-opentargets-26.09#q617, db-opentargets-26.09#q618, db-opentargets-26.09#q619, db-opentargets-26.09#q620, db-opentargets-26.09#q621]}
 variants:
   - rsid: rs2069837
@@ -121,7 +122,7 @@ studies:
     effect_unit: log odds of reaching the 90th percentile age per A allele
     effect_allele: A
     direction: protective
-    statistical_test: "Deelen 2019's European summary statistics (rows-249d6d94, q124), effective N 11,615: A β +0.0742 (SE 0.0357), P 0.038 two-sided, one-sided 0.019 (derived); Supplementary Data 1 prints the same for G, OR 0.93 (0.87-1.00), I² 0 (q123). Named, not counted (D26.14): the discovery is an overfit source; the EU consortium inside these cohorts is flat in Zeng's own look-up (pmid-26912274#q9, P 0.90)"
+    statistical_test: "Deelen 2019's European summary statistics (rows-249d6d94, q124), effective N 11,615: A β +0.0742 (SE 0.0357), P 0.038 two-sided, one-sided 0.019 (derived); Supplementary Data 1 prints the same for G, OR 0.93 (0.87-1.00), I² 0 (q123). Named, not counted (D26.14): the discovery is an overfit source; these cohorts overlap Deelen 2014's (pmid-31413261#q89; pmid-24688116#q7), whose discovery is flat in Zeng's own look-up (pmid-26912274#q9, q12, P 0.90)"
     curator: claude-opus-5-5
   - rsid: rs2069837
     note: pmid-31413261

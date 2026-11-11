@@ -2251,4 +2251,12 @@ The QTL colocalisations: Zeng's set (`coloc-a8e7e1b0de4e430e715dcc37275161e5.jso
 (ENSG00000179428) expression in visceral adipose at H4 0.85 (q617, q618), the only one at 0.8 or more; the same gene in
 subcutaneous adipose at 0.61; and an IL6 (ENSG00000136244) transcript-usage QTL in visceral adipose at 0.74 (q619,
 q620), below 0.8. Deelen's trans-ethnic set has none (q621, `coloc-a3d504d458ec5b70dfbeba312867f5da.json`). Under D24
-IL6-AS1 holds every cis colocalisation at H4 ≥ 0.8 (one of one) while IL6 passes L2G: E3, no gene named. For row 48.
+IL6-AS1 holds every cis colocalisation at H4 ≥ 0.8 (one of one) while IL6 passes L2G: E3, no gene named. The line is
+eCAVIAR's, with clpp 0.005, the lowest of any colocalisation the rows have counted (earlier counted eCAVIAR lines run
+from about 0.013 up, e.g. q177, q179); no rule sets a clpp floor, so it counts by the letter.
+
+> [q622] data.variant.credibleSets.rows[2].study traitFromSource Longevity (age >99th survival percentile) projectId GCST nSamples 33444 nCases 5662
+
+The 99th-percentile set's study has 5,662 cases (q622): Deelen's European 99th's 3,484 cases (as in rows 12 and 67)
+plus Zeng's 2,178 centenarians (pmid-26912274#q2), so it is the trans-ethnic analysis carrying CLHLS (derived). For
+row 48.
