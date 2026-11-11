@@ -20,7 +20,17 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   compacting` to the lead, `watchdog.sh compact`, end the turn; the lead wakes the next. Stop at 80 % of the 7-day
   window or 95 % of the 5-hour window. After each tenth `done:`, re-measure the pacing and
   go on with the next ten, unless blocked or steered (the person, 2026-11-11, via the lead, 639316091: "After 10
-  adjust pacing and go next 10 and so on unless blocked or I steer"; this replaces the earlier pause after ten). Rows done in this run: 6 CELSR2 (1 of 10), 38 HLA-DQA1 (2 of 10), 81 FES/FURIN (3 of 10), 103 (4 of 10), 2 PABPC4 (5 of 10), 4 LINC02796 (6 of 10), 5 FPGT / TNNI3K (7 of 10), 7 MAGI3 (8 of 10), 8 IL6R Asp358Ala with 157 (9 of 10); 6's healthspan re-cited to Zenin's cached file (597d9fb); 103 re-tiered B under D16 (5abae88); the Open Targets quotes re-quoted from cached records (f69c8d8); the corrections of 71 (d44fd4a) and 67 (3dd792c) done, the E3 gene rule at 57 (8d27300) and 80 (728d78d), 67's MANOVA study added under D15 (a519ae4); 38 corrected again at 103 (the AncestryDNA tag is shared); next 96 APOE waits on D2, so the seed tier B by locus_id.
+  adjust pacing and go next 10 and so on unless blocked or I steer"; this replaces the earlier pause after ten). Rows done in this run: 6 CELSR2 (1 of 10), 38 HLA-DQA1 (2 of 10), 81 FES/FURIN (3 of 10), 103 (4 of 10), 2 PABPC4 (5 of 10), 4 LINC02796 (6 of 10), 5 FPGT / TNNI3K (7 of 10), 7 MAGI3 (8 of 10), 8 IL6R Asp358Ala with 157 (9 of 10); 10 RABGAP1L blocked, 11 LINC01875 taken first; 6's healthspan re-cited to Zenin's cached file (597d9fb); 103 re-tiered B under D16 (5abae88); the Open Targets quotes re-quoted from cached records (f69c8d8); the corrections of 71 (d44fd4a) and 67 (3dd792c) done, the E3 gene rule at 57 (8d27300) and 80 (728d78d), 67's MANOVA study added under D15 (a519ae4); 38 corrected again at 103 (the AncestryDNA tag is shared); next 96 APOE waits on D2, so the seed tier B by locus_id.
+- **10 RABGAP1L, blocked** (2026-11-11, on a `study_design` value; asked of the lead, 639336127). Both seed rsIDs
+  (rs10798302 lead, rs16847402; r² 0.53, D′ 0.99, cached as db-ensembl-116 `ld-rs10798302-rs16847402.json`) come
+  from Wright 2019's S8 `Male_Female.AGE`: a quantitative GWAS of AncestryDNA customers' own current age (n 482,068,
+  λ 1.374, LDSC intercept 1.04, S Table 3), not the parental meta-analysis the seed names; neither is in S9. Raw P
+  1.7e-8 (the catalog's 2e-8, GCST009448), genomic control 1.5e-6; the paper names only APOE and MAP2K6 from it.
+  Class VIABILITY_AF (§4.5, confirmation only), so tier C either way; the AncestryDNA fathers 1886-1940 result (G,
+  raw P 7.5e-4) is the same customers, not a replication; Timmers sumstats P 0.19 same side, Zenin null. Wright's G
+  at rs16847402 (Ensembl T/C) is the forward C, by complement (derived). Open Targets 26.09: count 0 for both in
+  the seven lifespan studies plus GCST009448 (whose three sets are 11p11, 8p12 WRN, APOE): C4, no gene. Cached,
+  not yet quoted. Default: written after 11 with the age study in prose, its study row once the value exists.
 - **38 HLA-DQA1** (2026-11-11), tier B (seed A), advisor-checked. Lead rs34967069 (Timmers 2019 Table 1, q16). Rules
   settled: in a multi-signal region (MHC), a seed rsID with no quoted r² to the lead is named in the verdict, never a
   `proxy_rsid` (frequency bounds on r² move with the frequency source and are not written as findings); Joshi's
