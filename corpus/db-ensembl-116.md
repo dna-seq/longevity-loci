@@ -859,6 +859,19 @@ For row 35.
 rs6902687 (`variation-rs6902687.json`): GRCh38 6:28445714, T/A/C, ancestral T (q234). C 0.313 in 1000 Genomes CEU
 (q235), 0.311 in gnomAD's non-Finnish Europeans (q236), 0.217 in Finns (q237), 0.138 in East Asians (q238), 0.405 in
 Africans (q239); A is a rare third allele (0.0025 overall). rs1029328's C 0.146 in CEU (q240,
-`variation-rs1029328.json`). Pairwise LD in CEU (`ld-ceu-rs6902687-*.json`) returns no pair for rs13190937, which
-Park puts at R² > 0.99 (pmid-40021682#q21), nor for rs1029328, rows 37's rs3130507 and rs3131621, or row 38's
-rs34967069: the endpoint gives nothing at this site, so all of those are unknown, not zero. For row 36.
+`variation-rs1029328.json`). Pairwise LD in CEU with the triallelic lead (`ld-ceu-rs6902687-*.json`) returns no pair at all, even for
+rs13190937, which Park puts at R² > 0.99 (pmid-40021682#q21), so the lead's pairs are unknown, not zero. For row 36.
+
+## Reading 2026-11-11, record
+
+> [q241] [0] variation1 rs13190937 variation2 rs13215804 r2 1.000000 population_name 1000GENOMES:phase_3:CEU d_prime 1.000000
+
+> [q242] [0] variation2 rs3130507 r2 0.060778 variation1 rs13190937 d_prime 0.268403 population_name 1000GENOMES:phase_3:CEU
+
+> [q243] [0] d_prime 0.941954 variation1 rs13190937 variation2 rs1029328 population_name 1000GENOMES:phase_3:CEU r2 0.333978
+
+Pairwise LD in 1000 Genomes CEU with rs13190937 standing in for row 36's triallelic lead (Park's R² > 0.99 tag,
+pmid-40021682#q21; `ld-ceu-rs13190937-*.json`): r² 1.0 to rs13215804, Park's other tag (q241), so the endpoint
+answers at this site; r² 0.061 to row 37's lead rs3130507 (q242), a separate signal; r² 0.33 to Wright 2019's
+rs1029328 (q243), not a tag. No pair returned for rs3131621 (row 37) or rs34967069 (row 38): unknown, not zero.
+For row 36.
