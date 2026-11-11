@@ -1114,4 +1114,6 @@ rs1262476 (`variation-rs1262476.json`, `variation-grch37-rs1262476.json`): GRCh3
 6:126,986,996 (q305), the position Deelen, LifeGen and Zenin print. The reference is A, the ancestral allele G. A
 is 0.24 in 1000 Genomes Europeans (q306) and 0.25 in gnomAD's non-Finnish Europeans (q308), 0.024 in East Asians
 (q307), and about 0.11 in gnomAD's African genomes (q309); 0.19 in Finns (gnomAD). G/G is the commonest
-genotype in Europeans (about 0.57, derived). For row 45.
+genotype in Europeans (about 0.57, derived). Its most severe consequence is intronic (q310). For row 45.
+
+> [q310] most_severe_consequence intron_variant

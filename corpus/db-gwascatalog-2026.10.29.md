@@ -1048,6 +1048,19 @@ locus (pmid-40021682#q40), and the catalog holds nothing else at the variant.
 
 The catalog's associations for rs1262476 (`assoc-rs1262476.json`): four (q303). Deelen 2019's trans-ethnic 90th
 percentile record (GCST008600), A OR 1.12, P 1e-6 (q304, q305; pmid-31413261#q110). Kemp 2014's paediatric upper-limb
-bone density (ALSPAC and Generation R, about 9,400 children; GCST002496), G β +0.104 SD, P 3e-9 (q306 to q308), and a
+bone density (ALSPAC and Generation R, about 9,400 children; GCST002496), G β +0.104 (unit increase), P 3e-9 (q306 to q308), and a
 second line at P 4e-8: so A, the longer-life allele, goes with lower bone density in children. Rao 2022's ADHD,
-autism or intelligence pleiotropy scan, P 9e-9, no allele (q309, q310). For row 45.
+autism or intelligence pleiotropy scan (title-checked 2026-11-11: "Genetic Relationships between
+Attention-Deficit/Hyperactivity Disorder, Autism Spectrum Disorder, and Intelligence."), P 9e-9, no allele (q309 to
+q311). For row 45.
+
+> [q311] accession_id GCST90134330 pubmed_id 35764056 first_author Rao S
+
+> [q312] initial_sample_size 11,262 European ancestry cases, 2,178 East Asian ancestry cases, 177 African American cases, 25,483 European ancestry controls, 2,299 East Asian ancestry controls, 211 African American controls.
+
+> [q313] full_summary_stats_available false
+
+The catalog's study record for Deelen's trans-ethnic 90th percentile analysis (`study-GCST008600.json`): 11,262
+European, 2,178 East Asian and 177 African American cases against 25,483, 2,299 and 211 controls (q312), so about
+17 % of the cases are not European; no summary statistics deposited (q313; the FTP directory answers 404). For
+row 45.

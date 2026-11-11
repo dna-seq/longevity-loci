@@ -14,10 +14,14 @@ verdict_reason: >-
   effect. In Deelen 2019's trans-ethnic meta-analysis of the 90th percentile age against all controls, A raises the
   odds of reaching it, OR 1.12 (1.07–1.17), P 9.8e-7, with no heterogeneity (I² 0). Table 4 lists every locus at
   P ≤ 1e-6, and the authors find no new genome-wide locus in it besides APOE and IL6. The European discovery alone
-  is weaker: 90th percentile A β +0.091 (OR about 1.10), P 5.1e-5; 99th +0.129, P 3.4e-4, its cases a subset of the
-  90th's. The trans-ethnic analysis adds CLHLS and CHS's African Americans, and A is 2 in 100 in East Asians, so the
-  evidence is in effect European. §4.1's C ("suggestive, p < 1e-5"); R-TIER-4 keeps a sub-genome-wide hit off A
-  and B. Nothing replicates it. Timmers 2019's LifeGen parental lifespan (635,243 lives, UK Biobank and 26 cohorts,
+  is weaker and not even suggestive: 90th percentile A β +0.091 (OR about 1.10), P 5.1e-5; 99th +0.129, P 3.4e-4,
+  its cases a subset of the 90th's. So the tier rests on the trans-ethnic line alone, which adds CLHLS's 2,178 East
+  Asian and CHS's 177 African American cases (about 17 % of 13,617) to the Europeans. Its interval gives an SE of
+  about 0.023 on a log OR of 0.113, against the European file's 0.0225 on 0.091: the added cases, among whom A is
+  rarer (2 in 100 in East Asians), raise the estimate by a quarter with no gain in precision, unreconciled; the
+  catalog holds no deposit for it. §4.1's C ("suggestive, p < 1e-5"); R-TIER-4 keeps a sub-genome-wide hit off A
+  and B. `eur_only_evidence` stays: every test of the variant is European but the anchor, five sixths of whose cases
+  are, and A is too rare in East Asians to carry signal there. Nothing replicates it. Timmers 2019's LifeGen parental lifespan (635,243 lives, UK Biobank and 26 cohorts,
   some shared with Deelen) leans A's way, β +0.0060 (SE 0.0044), P 0.18, one-sided 0.088. Against Deelen's European
   90th effect carried to that scale (D21 under both of D25.3's calibrations), the test is powered and the two
   estimates differ: by APOE's factor the expected β is +0.019, one-sided power 0.996, heterogeneity P 0.044; by the
@@ -26,10 +30,13 @@ verdict_reason: >-
   FinnGen r11's death endpoint leans the same way (per A −0.0099 on the log hazard, P 0.28, one-sided 0.14), a flag
   under the mean factor only (power 1.00, heterogeneity P 0.015) and not under APOE's (power 0.65, P 0.39), so no
   flag there. Zenin 2019's healthspan is null, A's side healthier flatly (P 0.61). Not D: D25.1's "explicitly
-  contradicted" is for a genome-wide discovery, and every test leans A's way. D is the alternative, put to the lead.
+  contradicted" is for a genome-wide discovery, and every test leans A's way. D is the alternative, put to the lead:
+  the flag turns on a heterogeneity P of 0.044 under APOE's factor, and the European line alone is not suggestive.
   A trade-off is quoted (D18.1): Kemp 2014's paediatric upper-limb bone density, about 9,400 children, has G raising
-  it (β +0.104 SD, P 3e-9), so A, the longer-life allele, goes with lower bone mass in childhood, a risk factor for
-  osteoporosis later; Open Targets puts the lead first in that set (PIP 0.25). It also leads a set of Rao 2022's
+  it (β +0.104, P 3e-9), so A, the longer-life allele, goes with lower bone density in childhood; Open Targets puts
+  the lead first in that set (PIP 0.25). That low childhood bone density leads to adult harm is not quoted, and the
+  adult femur-neck set's lead (61 kb away) is not phased with A: `tradeoff` is the default, none the alternative,
+  put to the lead. It also leads a set of Rao 2022's
   ADHD, autism or intelligence scan (PIP 0.24, P 9e-9), no allele stated, so no direction; and it sits at low PIP
   (0.03 to 0.15) in sets of body fat, BMI, adult femur-neck bone density, sitting height and amlodipine
   prescriptions led by other variants 60 kb away, whose phase with A is unread: named, not counted. As a trade-off
@@ -39,14 +46,14 @@ verdict_reason: >-
   the discovery itself); lifespan 0 (LifeGen and FinnGen not significant); healthspan 0 (Zenin). A/G and A/A are
   protective as early evidence, the reference G/G (about 57 in 100 Europeans).
 axes:
-  tier: {value: C, cites: [pmid-31413261#q110, pmid-31413261#q111, pmid-31413261#q112, pmid-31413261#q113, pmid-31413261#q114, pmid-31413261#q115, pmid-31413261#q116, db-gwascatalog-2026.10.29#q304, db-gwascatalog-2026.10.29#q305, pmid-30642433#q227, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, db-finngen-r11#q21, db-finngen-r11#q4, pmid-30729179#q69, db-ensembl-116#q304, db-ensembl-116#q305, db-ensembl-116#q306, db-ensembl-116#q307, db-ensembl-116#q308, db-ensembl-116#q309]}
+  tier: {value: C, cites: [db-gwascatalog-2026.10.29#q312, db-gwascatalog-2026.10.29#q313, pmid-31413261#q110, pmid-31413261#q111, pmid-31413261#q112, pmid-31413261#q113, pmid-31413261#q114, pmid-31413261#q115, pmid-31413261#q116, db-gwascatalog-2026.10.29#q304, db-gwascatalog-2026.10.29#q305, pmid-30642433#q227, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, db-finngen-r11#q21, db-finngen-r11#q4, pmid-30729179#q69, db-ensembl-116#q304, db-ensembl-116#q305, db-ensembl-116#q306, db-ensembl-116#q307, db-ensembl-116#q308, db-ensembl-116#q309]}
   mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q600, pmid-31413261#q110]}
-  pleiotropy: {values: [tradeoff], cites: [db-gwascatalog-2026.10.29#q303, db-gwascatalog-2026.10.29#q306, db-gwascatalog-2026.10.29#q307, db-gwascatalog-2026.10.29#q308, db-gwascatalog-2026.10.29#q309, db-gwascatalog-2026.10.29#q310, db-opentargets-26.09#q601, db-opentargets-26.09#q602, db-opentargets-26.09#q603]}
+  pleiotropy: {values: [tradeoff], cites: [db-gwascatalog-2026.10.29#q303, db-gwascatalog-2026.10.29#q306, db-gwascatalog-2026.10.29#q307, db-gwascatalog-2026.10.29#q308, db-gwascatalog-2026.10.29#q309, db-gwascatalog-2026.10.29#q310, db-gwascatalog-2026.10.29#q311, db-opentargets-26.09#q601, db-opentargets-26.09#q602, db-opentargets-26.09#q603]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "+",
             cites: [pmid-30729179#q69, pmid-30642433#q227, db-finngen-r11#q21, pmid-31413261#q110, pmid-31413261#q115, pmid-31413261#q116]}
   actionability: {label: descriptive, cites: [db-gwascatalog-2026.10.29#q306, db-gwascatalog-2026.10.29#q307]}
-  context: {values: [eur_only_evidence], cites: [pmid-31413261#q112, pmid-31413261#q114, pmid-31413261#q115, db-ensembl-116#q307]}
+  context: {values: [eur_only_evidence], cites: [db-gwascatalog-2026.10.29#q312, pmid-31413261#q112, pmid-31413261#q114, pmid-31413261#q115, db-ensembl-116#q307]}
 flags:
   - {token: replication_failed, cites: [pmid-30642433#q227, pmid-31413261#q115, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92]}
   - {token: "causal:C4", cites: [db-opentargets-26.09#q599, db-opentargets-26.09#q600]}
@@ -62,15 +69,14 @@ variants:
     stat_significance: suggestive
     direction: protective
     negatives: >-
-      The longer-life version goes with slightly lower bone density in children, and low bone mass early in life
-      raises the risk of osteoporosis later.
+      The longer-life version goes with slightly lower bone density in children.
     genotypes:
       - genotype: G/G
         state: neutral
         conclusion: >-
           You carry two copies of the common version of this DNA position, the one most people of European ancestry
           have (about 57 in 100). It is the reference the other combinations are compared with. The position, on
-          chromosome 6, lies between genes, and no gene is known to matter here.
+          chromosome 6, lies inside a gene's intron, and no gene is known to matter here.
       - genotype: A/G
         state: protective
         conclusion: >-
@@ -103,7 +109,7 @@ studies:
     effect_unit: odds ratio of reaching the 90th percentile age, per A allele
     effect_allele: A
     direction: protective
-    statistical_test: "Table 4 (q110): Han and Eskin's random-effects model (METASOFT), 90th percentile cases against all controls, 95 % CI 1.07-1.17, I² 0, heterogeneity P 0.574; A 0.24 in the Europeans (q114); not genome-wide (q111, q113). The GWAS Catalog's GCST008600 (db-gwascatalog-2026.10.29#q304). The European summary statistics alone: 90th A β +0.0913 (SE 0.0225), P 5.1e-5, effective N 11,615 (q115); 99th +0.1286 (SE 0.0359), P 3.4e-4, effective N 4,524 (q116), a subset of the 90th's cases, so no replication. No sample size entered: the trans-ethnic totals are not printed for this variant"
+    statistical_test: "Table 4 (q110): 11,262 European, 2,178 East Asian and 177 African American cases against 25,483, 2,299 and 211 controls (db-gwascatalog-2026.10.29#q312), no deposit (q313); Han and Eskin's random-effects model (METASOFT), 90th percentile cases against all controls, 95 % CI 1.07-1.17, I² 0, heterogeneity P 0.574; A 0.24 in the Europeans (q114); not genome-wide (q111, q113). The GWAS Catalog's GCST008600 (db-gwascatalog-2026.10.29#q304). The European summary statistics alone: 90th A β +0.0913 (SE 0.0225), P 5.1e-5, effective N 11,615 (q115); 99th +0.1286 (SE 0.0359), P 3.4e-4, effective N 4,524 (q116), a subset of the 90th's cases, so no replication. The interval's SE (about 0.023) matches the European file's while the log OR rises from 0.091 to 0.113: unreconciled. No sample size entered: the totals with data for this variant are not printed"
     curator: claude-opus-5-5
   - rsid: rs1262476
     note: pmid-30642433
