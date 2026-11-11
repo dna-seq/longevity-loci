@@ -26,8 +26,13 @@ verdict_reason: >-
   that factor's uncertainty lies below it. So the flag is firm under APOE, the late-acting variant whose factor
   D25.3 says overstates what other loci should show, and holds under MUC5B only at its point estimate. The
   discovery also sits just past the threshold (P 2.7e-8), where its β is likely inflated, which overstates the
-  expected effect. Default B with replication_failed, put to the lead: under D25.3's reading (a flag one
-  calibration raises is no flag), the row is A on §4.1's letter, Deelen the replication. It is not D either way
+  expected effect. B with replication_failed (D25.12): D25.3's second calibration is a mean over loci, and MUC5B
+  alone is not one. FinnGen holds too few comparable leads to average: besides APOE and this row's tag, Park
+  checked there only MUC5B and two rare variants (0.1 % and 0.3 %) from the men-only and women-only scans, which
+  fail there themselves (factors about −0.8 and −0.5, SE 1.3 and 5). Averaged in, they would lower the mean factor
+  to about 0.5 (inverse-variance) or 1.8 (plain), under which this row raises no flag; they are put to the lead
+  as not comparable (half-cohort discoveries of rare variants), so whether a mean calibration flags is unknown,
+  and unknown does not show "no red flag". It is not D either way
   (D25.1), because Deelen's independent 90th percentile gives P 2.2e-4 in the discovery's direction. Lifespan +:
   LifeGen with UK Biobank gives T a longer parental life (P 1.7e-4, ++), but its UK Biobank part is Park's people's
   parents, so it co-occurs and does not replicate. Healthspan 0: Zenin 2019 leans C earlier, raw P 0.0496, but 0.056 after the
@@ -37,13 +42,13 @@ verdict_reason: >-
   1.8e-57), filed as mech:autoimmune; nothing shows the lifespan effect runs through it (D25.7), and whether that
   celiac signal is this one or a shadow of HLA-DQ (row 38) is unknown: Ensembl returns no pair with row 38's lead. The paper's
   "pancreatic tumors" rests on a pancreatic eQTL alone and is not filed. Causal: C4, since no Open Targets credible
-  set holds the lead or its three R² > 0.99 tags. Effector: E4, gene empty. Park colocalises the signal with a
-  ZSCAN23 eQTL in pancreas, PP4 0.934 (H4 ≥ 0.8), which §4.2's "coloc alone" would make E2 ZSCAN23; but it is one
-  tissue and one gene the paper chose, with no locus-to-gene score, and D24's rival test cannot run (it counts over
-  credible sets, and there are none), so the call is unassessed, not passed. E2 ZSCAN23 is put to the lead. Actionability is descriptive. The protection is the absence of risk: T, the common allele (0.69), is the
+  set holds the lead or its three R² > 0.99 tags. Effector: E2, ZSCAN23 (D25.12): Park colocalises the signal
+  with a ZSCAN23 eQTL in pancreas, PP4 0.934 (H4 ≥ 0.8), §4.2's "coloc alone". It is one tissue and one gene the
+  paper chose, with no locus-to-gene score; D24's rival check could not run, since Open Targets has no record of
+  the lead or its tags, and that is not read as no rival. Actionability is descriptive. The protection is the absence of risk: T, the common allele (0.69), is the
   reference. European only; C is rarer in Finns (0.22) and East Asians (0.14). Age of action is unknown.
 axes:
-  tier: {value: B, cites: [pmid-40021682#q20, pmid-40021682#q11, pmid-40021682#q1, pmid-40021682#q10, pmid-40021682#q21, pmid-40021682#q24, pmid-40021682#q26, pmid-40021682#q12, pmid-31413261#q92, pmid-31413261#q93, pmid-31413261#q2, db-finngen-r11#q2, db-finngen-r11#q4, db-finngen-r11#q5, db-finngen-r11#q6, pmid-40021682#q29, pmid-40021682#q31, pmid-40021682#q32, pmid-40021682#q9, pmid-30642433#q99, pmid-30642433#q92, pmid-31484785#q71, db-ensembl-116#q242, db-ensembl-116#q243]}
+  tier: {value: B, cites: [pmid-40021682#q20, pmid-40021682#q11, pmid-40021682#q1, pmid-40021682#q10, pmid-40021682#q21, pmid-40021682#q24, pmid-40021682#q26, pmid-40021682#q12, pmid-31413261#q92, pmid-31413261#q93, pmid-31413261#q2, db-finngen-r11#q2, db-finngen-r11#q4, db-finngen-r11#q5, db-finngen-r11#q6, pmid-40021682#q29, pmid-40021682#q31, pmid-40021682#q32, pmid-40021682#q9, pmid-30642433#q99, pmid-30642433#q92, pmid-31484785#q71, db-ensembl-116#q242, db-ensembl-116#q243, pmid-40021682#q33, pmid-40021682#q34, pmid-40021682#q35, pmid-40021682#q36, pmid-40021682#q37, pmid-40021682#q38]}
   mechanism: {value: general_ageing, cites: [pmid-40021682#q23, pmid-40021682#q22, pmid-40021682#q25]}
   pleiotropy: {values: ["mech:autoimmune"], cites: [pmid-40021682#q23]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -55,10 +60,10 @@ flags:
   - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-40021682#q20, db-ensembl-116#q236]}
   - {token: replication_failed, cites: [db-finngen-r11#q2, db-finngen-r11#q4, db-finngen-r11#q5, pmid-40021682#q29, pmid-40021682#q31, pmid-40021682#q32]}
   - {token: "causal:C4", cites: [db-opentargets-26.09#q516]}
-  - {token: "effector:E4", cites: [pmid-40021682#q22, db-opentargets-26.09#q516]}
+  - {token: "effector:E2", cites: [pmid-40021682#q22, db-opentargets-26.09#q516]}
 variants:
   - rsid: rs6902687
-    gene: ""
+    gene: ZSCAN23
     phenotype: ZSCAN23 upstream region (6p22.1), lifespan
     trait_efo_id: OBA_VT0005372
     effect_allele: T
@@ -72,7 +77,7 @@ variants:
         conclusion: >-
           You carry two copies of the more common version of this DNA position, as about 47 in 100 people of
           European ancestry do. It is the reference the other combinations are compared with. The position, on
-          chromosome 6, lies just upstream of the ZSCAN23 gene; which gene it acts through is not known. The finding comes
+          chromosome 6, lies just upstream of the ZSCAN23 gene, which it may act through (one tissue suggests so). The finding comes
           from people of European ancestry; less is known elsewhere.
       - genotype: C/T
         state: risk

@@ -5,10 +5,10 @@
 # statistics at the lead itself; in Rosoff 2023's mvAge tables. No other row's lead lies near it.
 locus_id: 35
 locus_name: IRF4
-verdict: re-tiered
+verdict: kept
 verdict_reason: >-
-  Tier A, up from the seed's B, on D16's reading of §4.1 (with a co-occurring lifespan study "a genome-wide
-  healthspan locus is tiered by §4.1 as any other", and D16 names this locus), put to the lead. Each criterion: (1) genome-wide for healthspan in 300,447 British UK Biobank
+  Tier B kept (D25.11): genome-wide for healthspan with a co-occurring lifespan study (D16), but no scoring-class
+  replication outside UK Biobank (D22.2), so not A. The criteria as read: (1) genome-wide for healthspan in 300,447 British UK Biobank
   participants: C, the common allele, delays the end of healthspan (Zenin 2019, T β 0.063 on the log hazard per
   allele, P 1.8e-25 after genomic control, the paper's own call, D17.3). (2) Independent replication, the same allele
   and direction: in 96,313 other UK Biobank participants, checked for no kinship with the discovery set, β 0.043,
@@ -18,10 +18,9 @@ verdict_reason: >-
   lifespan study (D16): Timmers 2019's summary statistics give C the longer parental life, beta1 0.0157 per C, P
   0.0016, both UK Biobank and LifeGen on that side, and Zenin's own parents'-death test agrees (P 0.006). Its UK
   Biobank part is the same people as Zenin's, so it co-occurs but does not replicate; it is this locus's own (D17.1):
-  the lead is the healthspan set's only member, and no other row's lead is near. D22.2's "replicates nothing on its
-  own" is read as met: the healthspan replication sits beside a lifespan study. If the lead reads D22.2 to ask a
-  scoring-class replication outside UK Biobank for A, the row is B: of those, only Deelen tested the lead, short of
-  0.05 (below); LifeGen's own arm leans to C (the file's "--") but prints no P of its own, and AncestryDNA's mothers
+  the lead is the healthspan set's only member, and no other row's lead is near. Healthspan replicating healthspan
+  in UK Biobank counts nothing toward A (D25.11, the reading of D22.2 that asks a scoring-class replication), and of
+  the scoring-class studies outside UK Biobank only Deelen tested the lead, short of 0.05 (below); LifeGen's own arm leans to C (the file's "--") but prints no P of its own, and AncestryDNA's mothers
   (Wright 2019) hold no tag of the lead (the nearest, rs11242982, r² 0.15), so untested there, not null. The
   oldest ages lean to C and do not pass: Deelen 2019's 90th and 99th percentiles, OR per C 1.05 and 1.07 (P 0.13,
   0.15). Calibrated from LifeGen's beta1 (D25.3), the 90th has one-sided power 0.77 by the APOE factor
@@ -43,7 +42,7 @@ verdict_reason: >-
   (the common C protects). Age of action is unknown. Evidence is European only; T is commonest in north-west Europe,
   0.08 in admixed Americans, and almost absent in East and South Asians.
 axes:
-  tier: {value: A, cites: [pmid-30729179#q53, pmid-30729179#q55, pmid-30729179#q57, pmid-30729179#q12, pmid-30729179#q13, pmid-30729179#q29, pmid-30642433#q98, pmid-30729179#q56, pmid-31413261#q90, pmid-31413261#q91, pmid-30642433#q92, pmid-37550455#q37, db-gwascatalog-2026.10.29#q219, db-opentargets-26.09#q499, pmid-31484785#q69, pmid-31484785#q70, db-ensembl-116#q233]}
+  tier: {value: B, cites: [pmid-30729179#q53, pmid-30729179#q55, pmid-30729179#q57, pmid-30729179#q12, pmid-30729179#q13, pmid-30729179#q29, pmid-30642433#q98, pmid-30729179#q56, pmid-31413261#q90, pmid-31413261#q91, pmid-30642433#q92, pmid-37550455#q37, db-gwascatalog-2026.10.29#q219, db-opentargets-26.09#q499, pmid-31484785#q69, pmid-31484785#q70, db-ensembl-116#q233]}
   mechanism: {value: skin_sun, cites: [pmid-30729179#q54, pmid-30729179#q56, db-gwascatalog-2026.10.29#q214, db-gwascatalog-2026.10.29#q215, db-gwascatalog-2026.10.29#q216, db-opentargets-26.09#q511, db-opentargets-26.09#q512, db-opentargets-26.09#q513, db-opentargets-26.09#q514]}
   pleiotropy: {values: ["mech:cancer"], cites: [pmid-30729179#q54, pmid-30729179#q56, db-gwascatalog-2026.10.29#q214, db-opentargets-26.09#q513, db-opentargets-26.09#q515]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -79,8 +78,7 @@ variants:
           You carry one copy of a less common version of this DNA region (about 34 in 100 people of British ancestry
           do, and about 15 in 100 of Latin American ancestry; it is rarer elsewhere in Europe and almost absent in
           East and South Asia). This version goes with more freckling, tanning less, and more skin cancer. In a very large British study, confirmed in a
-          second group, it went with a slightly earlier first major disease, mostly cancer; this finding is well
-          established. The parents of carriers lived slightly shorter lives, a smaller result pointing the same
+          second group, it went with a slightly earlier first major disease, mostly cancer; this finding is likely. The parents of carriers lived slightly shorter lives, a smaller result pointing the same
           way. Protecting your skin from the sun and having changing moles or skin spots checked are sensible. It
           is a tendency, not a verdict.
       - genotype: T/T
@@ -89,7 +87,7 @@ variants:
           You carry two copies of a less common version of this DNA region (about 5 in 100 people of British ancestry
           do). This version goes with more freckling, tanning less, and more skin cancer. In a very
           large British study, confirmed in a second group, each copy went with a slightly earlier first major
-          disease, mostly cancer; this finding is well established. The parents of carriers lived slightly shorter
+          disease, mostly cancer; this finding is likely. The parents of carriers lived slightly shorter
           lives, a smaller result pointing the same way. Protecting your skin from the sun and having changing
           moles or skin spots checked are sensible. It is a tendency, not a verdict.
 studies:

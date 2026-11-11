@@ -25,7 +25,9 @@ verdict_reason: >-
   common skin-melanoma signals in other studies (T the risk allele, P 9e-39) and leads Open Targets' sets for all
   cancers and breast cancer in FinnGen; Zenin's healthspan set colocalises with basal-cell carcinoma, facial ageing
   and many other skin-cancer and keratosis studies, and with breast cancer, so the mechanism is filed as skin and sun
-  with mech:cancer (Zenin's own cancer outcome is not split by site). Dementia (P 0.014 the other way, one of nine uncorrected component tests) is not read as a
+  with mech:cancer (Zenin's own cancer outcome is not split by site). Actionability is modifiable, act_screen:skin, as
+  every skin_sun row (D25.11): §4.2's label names sun, and the risk allele's route is skin cancer; that sun care
+  changes this locus's effect is not itself tested. Dementia (P 0.014 the other way, one of nine uncorrected component tests) is not read as a
   trade-off. Causal C2: the lead tops an 11-variant SuSiE set at PIP 0.13. Effector E3, no gene named: FLACC1 has the
   locus-to-gene score (0.56) and seven eQTL colocalisations, which meets E1 on the letter, while CASP8 colocalises
   in 217 QTL sets and holds the lead's own strongest QTL (a CASP8 transcript, P 1e-63); two genes each meet a
@@ -37,7 +39,7 @@ axes:
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "+", lifespan: "0", exceptional_survival: "0",
             cites: [pmid-30729179#q28, pmid-30729179#q34, pmid-30642433#q55, pmid-31413261#q35, pmid-31413261#q36]}
-  actionability: {label: descriptive, cites: [pmid-30729179#q34]}
+  actionability: {label: modifiable, what: ["act_screen:skin"], who: "act_who:self", cites: [pmid-30729179#q30, pmid-30729179#q34, db-gwascatalog-2026.10.29#q124, db-gwascatalog-2026.10.29#q126, db-opentargets-26.09#q161, db-opentargets-26.09#q162]}
   context: {values: [], cites: []}
 flags:
   - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-30729179#q28, db-ensembl-116#q71]}
@@ -67,7 +69,8 @@ variants:
           You carry one copy of a less common version of this DNA region (about 40 in 100 people of European
           ancestry do). In a very large British study, confirmed in a second group, this version went with a
           slightly earlier first major disease, and the difference was all in cancer; other studies link this
-          version to skin cancer above all. It did not clearly shorten life itself. The effect is small and it is
+          version to skin cancer above all. It did not clearly shorten life itself. Protecting your skin from the sun and having
+          changing moles or skin spots checked are sensible. The effect is small and it is
           a tendency, not a verdict.
       - genotype: T/T
         state: risk
@@ -75,7 +78,8 @@ variants:
           You carry two copies of a less common version of this DNA region (about 8 in 100 people of European
           ancestry do). In a very large British study, confirmed in a second group, each copy went with a slightly
           earlier first major disease, and the difference was all in cancer; other studies link this version to
-          skin cancer above all. It did not clearly shorten life itself. The effect is small and it is a
+          skin cancer above all. It did not clearly shorten life itself. Protecting your skin from the sun and having
+          changing moles or skin spots checked are sensible. The effect is small and it is a
           tendency, not a verdict.
 studies:
   - rsid: rs10197246
