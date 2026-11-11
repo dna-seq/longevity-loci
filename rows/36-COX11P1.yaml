@@ -77,7 +77,7 @@ variants:
         conclusion: >-
           You carry two copies of the more common version of this DNA position, as about 47 in 100 people of
           European ancestry do. It is the reference the other combinations are compared with. The position, on
-          chromosome 6, lies just upstream of the ZSCAN23 gene, which it may act through (one tissue suggests so). The finding comes
+          chromosome 6, lies just upstream of the ZSCAN23 gene, which it may act through (one study in one tissue points to that gene). The finding comes
           from people of European ancestry; less is known elsewhere.
       - genotype: C/T
         state: risk
@@ -86,7 +86,7 @@ variants:
           carry. In a large British study, people with this version tended to die slightly earlier, and in a
           separate European study of long-lived people it was less common among those who reached old age. A large
           Finnish study did not confirm it, so it is a likely finding, not a settled one. The effect is small, and
-          it is a tendency, not destiny. How it acts is not known; the same region is also linked to celiac disease.
+          it is a tendency, not destiny. How it acts is not settled (it may act through the nearby ZSCAN23 gene); the same region is also linked to celiac disease.
       - genotype: C/C
         state: risk
         conclusion: >-
@@ -94,7 +94,7 @@ variants:
           do. In a large British study, each copy went with a slightly earlier death, and in a separate European
           study of long-lived people this version was less common among those who reached old age. A large Finnish
           study did not confirm it, so it is a likely finding, not a settled one. The effect is small, and it is a
-          tendency, not destiny. How it acts is not known; the same region is also linked to celiac disease.
+          tendency, not destiny. How it acts is not settled (it may act through the nearby ZSCAN23 gene); the same region is also linked to celiac disease.
 studies:
   - rsid: rs6902687
     note: pmid-40021682
@@ -135,7 +135,7 @@ studies:
     effect_unit: FinnGen's "Death" endpoint per A allele of rs13190937, the lead's C (positive = more death, q9, q16)
     effect_allele: A
     direction: protective
-    statistical_test: "Park 2025's validation in FinnGen r11 (Supplementary Table 2), at rs13190937, R² > 0.99 with the lead, its A with the lead's C (q21, q20); not significant (q24). FinnGen's own file at the lead: C β −0.0113, SE 0.00887, P 0.20, C 0.224 in Finns (db-finngen-r11#q2; the tag the same, #q3); 50,511 deaths (#q6). D21 red flag, the expected effect scaled within FinnGen from Park's whole-cohort β (SE 0.00069): the factors' own error counted in the heterogeneity P: by APOE rs429358 (factor 8.1, SE 0.9, db-finngen-r11#q4, q32) expected 0.031, one-sided power 0.97, heterogeneity P 1e-4, a flag; by MUC5B rs35705950 (factor 6.7, SE 2.8, db-finngen-r11#q5, q31) expected 0.026, power 0.90, heterogeneity P 0.012 at the point estimate, a flag there only (power 0.8 needs a factor of 5.8 or more). Not one of Timmers' calibrations (D25.3), put to the lead"
+    statistical_test: "Park 2025's validation in FinnGen r11 (Supplementary Table 2), at rs13190937, R² > 0.99 with the lead, its A with the lead's C (q21, q20); not significant (q24). FinnGen's own file at the lead: C β −0.0113, SE 0.00887, P 0.20, C 0.224 in Finns (db-finngen-r11#q2; the tag the same, #q3); 50,511 deaths (#q6). D21 red flag, the expected effect scaled within FinnGen from Park's whole-cohort β (SE 0.00069): the factors' own error counted in the heterogeneity P: by APOE rs429358 (factor 8.1, SE 0.9, db-finngen-r11#q4, q32) expected 0.031, one-sided power 0.97, heterogeneity P 1e-4, a flag; by MUC5B rs35705950 (factor 6.7, SE 2.8, db-finngen-r11#q5, q31) expected 0.026, power 0.90, heterogeneity P 0.012 at the point estimate, a flag there only (power 0.8 needs a factor of 5.8 or more). Not one of Timmers' calibrations; MUC5B alone is not D25.3's mean, and FinnGen holds too few comparable leads for one (D25.12; q33 to q38)"
     curator: claude-opus-5-5
   - rsid: rs6902687
     note: pmid-31413261
