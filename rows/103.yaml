@@ -1,0 +1,168 @@
+# The seed list's locus 103, unnamed (6p21.32, the HLA class II region at HLA-DQB1, as Zenin 2019 calls it).
+# Curated 2026-11-11, the ten-row run's fourth row. Lead rs1049053 (Zenin 2019's healthspan SNP), 43 kb from row 38's
+# lead rs34967069 (EUR r² 0.32). rs3135006 (Wright 2019) is its close proxy (r² 0.80) and appears only as a proxy on
+# its study; rs3129720 likewise (r² 0.80).
+locus_id: 103
+locus_name: ""
+verdict: re-tiered
+verdict_reason: >-
+  Tier C, down from the seed's single-track A (§12), flagged HEALTHSPAN_ONLY in words (the token is not in the format
+  yet). Genome-wide significant for healthspan only: in 300,447 British UK Biobank participants C delays the end of
+  healthspan (Zenin 2019, P 1.4e-11; T, the common allele at 0.67, ends it earlier), and the signal is its own, not an
+  echo of row 38's lead (LD alone would give z 2.9 here, against 6.9 observed). It is not replicated: in 96,313 other
+  UK Biobank participants, unrelated to the discovery set, it leans the same way at P 0.146. Healthspan counts toward a
+  tier only with a co-occurring lifespan signal of at least suggestive strength (§4.5, P < 1e-5), and none reaches
+  it: Timmers 2019's million parents' lives give P 1.4e-4 at rs1049053, C on the long-lived side in both UK Biobank
+  and LifeGen, and AncestryDNA's mothers (Wright 2019), the one sample independent of UK Biobank, give P 3.3e-4 at its
+  close proxy rs3135006 (r² 0.80, its T riding with C), 3.1e-5 with UK Biobank. Both lifespan results are shared with
+  row 38: rs1049053 lies at r² 0.32 to that row's genome-wide lead, which alone would produce about the z of 3.3
+  expected against the 3.8 observed, and no cached source conditions one on the other, so whether this locus has a
+  lifespan effect of its own is unknown. A sub-genome-wide lifespan result never makes A or B (R-TIER-4), and a
+  genome-wide result that cannot score leaves the research view's C. At the oldest ages Timmers 2019's longevity
+  look-up at rs3129720, the same proxy (r² 0.80), leans the same way and does not pass (P 0.056 one-sided).
+  Deelen 2019 has no row near it. Zenin finds the locus associated with COPD, diabetes, cancer and dementia together
+  and reads it as a possible part of a genetic signature of ageing, so the mechanism is filed as general ageing,
+  pending a mediator. No gene is named (§4.2, §6.2: a gene only at E1/E2): Open Targets 26.09 holds no variant or
+  credible set for rs1049053 and none in the MHC, so causal and effector confidence are unassessed (C4, E4; no flag,
+  nothing to cite). Age of action is unknown: no cached source gives this locus's own age bands.
+axes:
+  tier: {value: C, cites: [pmid-30729179#q7, pmid-30729179#q10, pmid-30729179#q13, pmid-30642433#q23, pmid-30642433#q24, pmid-31484785#q23, db-ensembl-116#q1, db-ensembl-116#q3]}
+  mechanism: {value: general_ageing, cites: [pmid-30729179#q11]}
+  pleiotropy: {values: [broad], cites: [pmid-30729179#q11]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
+            cites: [pmid-30729179#q7, pmid-30642433#q23, pmid-31484785#q23, pmid-30642433#q17, db-ensembl-116#q2]}
+  actionability: {label: descriptive, cites: [pmid-30729179#q11]}
+  context: {values: [eur_only_evidence], cites: [pmid-30729179#q7, pmid-30642433#q23]}
+flags:
+  - {token: "PROTECT:PRESENCE", cites: [pmid-30729179#q10]}
+variants:
+  - rsid: rs1049053
+    gene: ""
+    phenotype: HLA-DQB1 region, healthspan
+    trait_efo_id: EFO_0007796
+    effect_allele: C
+    effect_size: -0.037
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: T/T
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA region (about 45 in 100 people of British ancestry
+          do). It is the reference the other combinations are compared with. The region, on chromosome 6, holds
+          immune-system genes (the HLA genes), and it is not yet clear which gene matters. The finding comes from
+          people of European ancestry; less is known elsewhere.
+      - genotype: C/T
+        state: protective
+        conclusion: >-
+          You carry one copy of a less common version of this DNA region (about 44 in 100 people of British ancestry
+          do). The region holds immune-system genes (the HLA genes). In a very large British study this version
+          went with staying free of major diseases such as heart disease, cancer and diabetes slightly longer. This is
+          early evidence: it was not confirmed in a second group, and whether it also lengthens life is not known. The
+          effect is small and it is a tendency, not a guarantee.
+      - genotype: C/C
+        state: protective
+        conclusion: >-
+          You carry two copies of a less common version of this DNA region (about 11 in 100 people of British
+          ancestry do). The region holds immune-system genes (the HLA genes). In a very large British study each copy
+          went with staying free of major diseases such as heart disease, cancer and diabetes slightly longer. This is
+          early evidence: it was not confirmed in a second group, and whether it also lengthens life is not known. The
+          effect is small and it is a tendency, not a guarantee.
+studies:
+  - rsid: rs1049053
+    note: pmid-30729179
+    quote: q7
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "1.40e-11"
+    p_value_num: 1.4e-11
+    effect_size: 0.037
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per T allele (positive = earlier)
+    effect_allele: T
+    direction: risk
+    statistical_test: "Cox-Gompertz Martingale-residual GWAS of the first of the age-related diseases or death (Table 2), P after genomic control; summary statistics -log10 P 11.39 (q10)"
+    curator: claude-opus-5-5
+  - rsid: rs1049053
+    note: pmid-30729179
+    quote: q7
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: UK Biobank participants outside the discovery set (81,099 other European, and African, South Asian, Chinese and Caribbean), unrelated to it
+    ancestry: [EUR, AFR, SAS, EAS]
+    sample_size: 96313
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "1.46e-01"
+    p_value_num: 0.146
+    effect_size: 0.013
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per T allele (positive = earlier)
+    effect_allele: T
+    direction: risk
+    statistical_test: "Replication (Table 2, βrep and prep), meta-analysis of the ancestry groups; threshold P < 0.004; the same side, not significant; sample and kinship check in q12, q13"
+    curator: claude-opus-5-5
+  - rsid: rs1049053
+    note: pmid-30642433
+    quote: q23
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.00014354096"
+    p_value_num: 0.00014354
+    effect_size: -0.01755771
+    effect_measure: beta
+    effect_unit: log hazard protection per T allele in self (negative = shorter life)
+    effect_allele: T
+    direction: risk
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), n 511,042, direction -- in UK Biobank and LifeGen; r² 0.32 to row 38's lead rs34967069 (P 4.3E-09, q24), not conditioned on it"
+    curator: claude-opus-5-5
+  - rsid: rs1049053
+    note: pmid-31484785
+    quote: q23
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_linear
+    population: AncestryDNA customers of the European population group, mothers born 1886-1940
+    ancestry: [EUR]
+    sample_size: 269000
+    sample_unit: individuals
+    stratum: parent
+    stratum_level: mother
+    stat_significance: nominal
+    p_value: "0.0003325"
+    p_value_num: 0.0003325
+    effect_size: 0.01227
+    effect_measure: beta
+    effect_unit: z-score of maternal lifespan per T allele at the proxy (the table's A, the other strand)
+    effect_allele: T
+    direction: protective
+    proxy_rsid: rs3135006
+    statistical_test: "Linear regression of mothers' lifespan on offspring dosage, AncestryDNA arm (Supplemental Table 8, raw P; genomic-control P 6.7E-04); with UK Biobank meta P 3.1E-05, heterogeneity P 0.32 (q24); rs3135006's T rides with rs1049053's C (r² 0.80, db-ensembl-116#q1, phase derived from q5-q6); shared with row 38, whose lead it tags at r² 0.38; N rounded in the source"
+    curator: claude-opus-5-5
+  - rsid: rs1049053
+    note: pmid-30642433
+    quote: q17
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: meta_analysis
+    population: European (the longevity GWAMAs of Deelen 2014 and Broer 2015, combined)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.0556"
+    p_value_num: 0.0556
+    effect_size: 0.01835
+    effect_measure: beta
+    effect_unit: log hazard ratio in self, recalibrated from longevity odds using APOE, per T allele at the proxy
+    effect_allele: T
+    direction: protective
+    proxy_rsid: rs3129720
+    statistical_test: "Figure 4—source data 1, one-sided P, the look-up Timmers 2019 ran for row 38's lead; rs3129720 is r² 0.80 to rs1049053 (db-ensembl-116#q2), its T assumed to ride with C as rs3135006's does (CEU r² 1.0 between the two, Ensembl, not cached); the sheet's R2 column repeats the allele frequency"
+    curator: claude-opus-5-5

@@ -20,7 +20,7 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   compacting` to the lead, `watchdog.sh compact`, end the turn; the lead wakes the next. Stop at 80 % of the 7-day
   window or 95 % of the 5-hour window. After each tenth `done:`, re-measure the pacing and
   go on with the next ten, unless blocked or steered (the person, 2026-11-11, via the lead, 639316091: "After 10
-  adjust pacing and go next 10 and so on unless blocked or I steer"; this replaces the earlier pause after ten). Rows done in this run: 6 CELSR2 (1 of 10), 38 HLA-DQA1 (2 of 10), 81 FES/FURIN (3 of 10); the corrections of 71 (d44fd4a) and 67 (3dd792c) done, the E3 gene rule at 57 (8d27300) and 80 (728d78d), 67's MANOVA study added under D15 (a519ae4); next 103 by PROGRESS, then 96 APOE (waits on D2).
+  adjust pacing and go next 10 and so on unless blocked or I steer"; this replaces the earlier pause after ten). Rows done in this run: 6 CELSR2 (1 of 10), 38 HLA-DQA1 (2 of 10), 81 FES/FURIN (3 of 10), 103 (4 of 10); the corrections of 71 (d44fd4a) and 67 (3dd792c) done, the E3 gene rule at 57 (8d27300) and 80 (728d78d), 67's MANOVA study added under D15 (a519ae4); 38 corrected again at 103 (the AncestryDNA tag is shared); next 96 APOE waits on D2, so the seed tier B by locus_id.
 - **38 HLA-DQA1** (2026-11-11), tier B (seed A), advisor-checked. Lead rs34967069 (Timmers 2019 Table 1, q16). Rules
   settled: in a multi-signal region (MHC), a seed rsID with no quoted r² to the lead is named in the verdict, never a
   `proxy_rsid` (frequency bounds on r² move with the frequency source and are not written as findings); Joshi's
@@ -29,15 +29,15 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   (`fetch-supp`, q17): its R2 column repeats Freq1 and its rsID/Proxy headers are swapped, so no r² is read from it.
   Wright's S8/S9 hold clumped "representative" SNPs only: a lead's absence there is not a null. Age MIDLIFE INFERRED
   (Joshi q9, at his SNP). Seed trade-off (hypothesised) not recorded.
-- **103 in hand** (2026-11-11): rs1049053, the seed's single-track A, Zenin 2019's healthspan lead (Table 2, q7: T
-  ends healthspan earlier, β 0.037, P 1.4e-11; replication in 96,313 UK Biobank β 0.013, P 0.146). HLA-DQB1, 43 kb
-  from 38's lead, EAF 0.67: its own signal. Requirements §4.5: HEALTHSPAN scores only with a co-occurring lifespan
-  signal "at least suggestive", else HEALTHSPAN_ONLY (K_definitions). Timmers 2019's summary statistics (GWAS
-  Catalog GCST009890) now cached for all 228 seed rsIDs (`pmid-30642433.supp-lifegen_phase2_bothpl_alldr_2017_09_18
-  .tsv.gz.rows-1102aade.txt`; beta1 = log hazard protection per a1 in self): rs1049053 T beta1 −0.0176, P 1.44e-4,
-  direction "--" (UK Biobank and LifeGen): nominal, same side. Open Targets has no MHC sets. Still to read: Wright
-  S8/S9 by position near GRCh37 6:32634405; Deelen SD1 (not there by rsID). The tier and the scoring question go
-  to the advisor.
+- **103** (2026-11-11), tier C re-tiered (seed A), advisor-checked. Healthspan genome-wide (Zenin, P 1.4e-11, its
+  own signal: LD shadow from 38's lead 2.9 vs z 6.9), not replicated (P 0.146 in unrelated UK Biobank others). §4.5:
+  healthspan scores only with a lifespan signal at least suggestive (P < 1e-5, FORMATS' band); none: Timmers 1.4e-4
+  (summary statistics, pmid-30642433#q23), AncestryDNA mothers 3.3e-4 at rs3135006, which is r² 0.80 to rs1049053
+  (Ensembl 116, cached by RM3: `corpus/db-ensembl-116.md`). Both lifespan results are shared with 38 (r² 0.32 between
+  the leads; shadow 3.3 vs z 3.8) and unconditioned: independence unknown. HEALTHSPAN_ONLY is not a format token:
+  said in the verdict, asked of the lead. Rule settled: a genome-wide healthspan locus that §4.5 bars from scoring is
+  C (research view); R-TIER-4 bars A/B on a sub-genome-wide lifespan result. Phase from frequencies plus r² is
+  written as derived, never as a record. Mechanism general_ageing from Zenin's multimorbidity line (q11).
 - **38 corrected** (2026-11-11), the lead's review (handout 20261111T004405Z-review-38) applied. Still B, now for
   §4.1's tag clause: Wright S8 (AncestryDNA mothers 1886-1940) has rs3135006 (A = dbSNP's minor T, other strand) at
   P 3.3e-4, S9 meta P 3.1e-5, het 0.32 (q23, q24); added as a nominal proxy study. Rules learned: search Wright S8/S9

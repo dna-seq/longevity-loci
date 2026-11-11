@@ -1,5 +1,6 @@
 # The seed list's locus 38, HLA-DQA1 (6p21.32, the HLA class II region between HLA-DRB1 and HLA-DQA1). Curated
-# 2026-11-11, the ten-row run's second row; corrected the same day on the lead's review. Lead rs34967069 (Timmers
+# 2026-11-11, the ten-row run's second row; corrected the same day on the lead's review, and at row 103 (the
+# AncestryDNA tag is shared with it). Lead rs34967069 (Timmers
 # 2019). Joshi 2017's rs34831921 is the same signal (1000 Genomes EUR r² 0.97, Ensembl; no cached LD record yet, RM3).
 # Pilling 2017's rs28383322 is a weaker tag (r² about 0.3) and is named only; rs9277988 (Rosoff 2023, mvAge) lies 700
 # kb away.
@@ -7,14 +8,17 @@ locus_id: 38
 locus_name: HLA-DQA1
 verdict: kept
 verdict_reason: >-
-  Tier B, down from the seed's single-track A (§12): genome-wide significant, and replicated in an independent sample
-  only at a tag (§4.1's B clause). Timmers 2019 finds rs34967069 at P 4.3e-9 in about one million parents' lives (UK
+  Tier B, down from the seed's single-track A (§12): genome-wide significant, with no independent replication of its
+  own (§4.1's B clause). Timmers 2019 finds rs34967069 at P 4.3e-9 in about one million parents' lives (UK
   Biobank and LifeGen), the rare T allele (7 %) adding 0.56 years per copy. Joshi 2017's rs34831921 (P 4.2e-8) is the
   same signal, 1000 Genomes EUR r² 0.97 with D′ 1 (Ensembl's LD, not yet a cached record), but in a subset of the same
   samples, so it does not replicate it; Pilling 2017's rs28383322 (P 5.3e-11, UK Biobank) is a weaker tag and is named
   only. The independent replication is in AncestryDNA's mothers (Wright 2019, Supplemental Table 8): rs3135006, a tag
   at r² 0.38 and D′ 1 whose minor T carries the lead's T, lengthens mothers' lives, P 3.3e-4, and with UK Biobank
-  reaches P 3.1e-5 with no heterogeneity (P 0.32). The lead itself has no row in an independent sample. At the oldest
+  reaches P 3.1e-5 with no heterogeneity (P 0.32). But rs3135006 tags row 103's healthspan lead rs1049053 more closely
+  (r² 0.80), and rs1049053 lies at r² 0.32 to this lead, so the AncestryDNA result is shared by the two rows and
+  cannot be assigned to this signal: it is kept as a study and does not replicate the lead. The lead itself has no row
+  in an independent sample. At the oldest
   ages it leans the same way and does not pass: Deelen 2019's 90th and 99th percentiles give OR 1.05 and 1.07 (P 0.26,
   0.24) at the lead, and Timmers 2019's longevity look-up reaches P 0.056 one-sided at CHARGE's tag rs3129720 (the
   same SNP as rs3135006 in effect, CEU r² 1.0). This is consistent with an effect that is largest in midlife and
@@ -67,7 +71,8 @@ variants:
           studies this version went with parents living on average about three months longer, and with staying
           free of major disease a little longer. The region is linked to autoimmune diseases such as rheumatoid
           arthritis, and the effect showed mostly in deaths before age 75. It is a likely finding, not a settled
-          one: a large American study saw the same effect at a nearby marker, but not yet at this exact variant.
+          one: a large American study saw a similar effect at a nearby marker, but that marker may reflect a
+          neighbouring signal, and this exact variant has not been confirmed elsewhere.
           The effect is small and it is a tendency, not a guarantee.
       - genotype: T/T
         state: protective
@@ -77,7 +82,8 @@ variants:
           studies each copy went with parents living on average about three months longer, and with staying free
           of major disease a little longer. The region is linked to autoimmune diseases such as rheumatoid
           arthritis, and the effect showed mostly in deaths before age 75. It is a likely finding, not a settled
-          one: a large American study saw the same effect at a nearby marker, but not yet at this exact variant,
+          one: a large American study saw a similar effect at a nearby marker, but that marker may reflect a
+          neighbouring signal, and this exact variant has not been confirmed elsewhere,
           and very few people carry two copies. The effect is small and it is a tendency, not a guarantee.
 studies:
   - rsid: rs34967069
@@ -196,5 +202,5 @@ studies:
     effect_allele: T
     direction: protective
     proxy_rsid: rs3135006
-    statistical_test: "Linear regression of mothers' lifespan on offspring dosage, AncestryDNA arm (Supplemental Table 8, raw P; genomic-control P 6.7E-04); with UK Biobank meta P 3.1E-05, heterogeneity P 0.32 (q24); rs3135006 tags the lead at r² 0.38, D′ 1 (1000 Genomes EUR, Ensembl), the lead's T on its T haplotype; N rounded in the source"
+    statistical_test: "Linear regression of mothers' lifespan on offspring dosage, AncestryDNA arm (Supplemental Table 8, raw P; genomic-control P 6.7E-04); with UK Biobank meta P 3.1E-05, heterogeneity P 0.32 (q24); rs3135006 tags the lead at r² 0.38, D′ 1 (1000 Genomes EUR, Ensembl), the lead's T on its T haplotype, and row 103's lead rs1049053 at r² 0.80 (db-ensembl-116#q1): shared with row 103, not a replication of this lead; N rounded in the source"
     curator: claude-opus-5-5
