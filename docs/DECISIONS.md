@@ -209,3 +209,15 @@ measures accumulated deficits, which the requirements' outcome profile files und
 A viability result (`VIABILITY_AF`, a GWAS of current age) is "confirmation only" in §4.5. It does not replicate,
 so it cannot carry a row to A. 24 is B: the curator's option (a), recommended.
 
+## D24 — when a second gene makes the effector call ambiguous (2026-11-11)
+
+§4.2's E3 is "ambiguous" and the requirements do not say what makes it so. Once the curator's Open Targets queries
+included QTL colocalisations (cis only, H4 ≥ 0.8), four rows had a leading gene and a minor rival, so the letter
+read by row 17 (two genes each meeting a criterion) dropped each to E3. The lead's rule, under the person's standing
+word: **a rival gene makes the call ambiguous when it meets an E1/E2 criterion of its own (L2G ≥ 0.5, or a cis-QTL
+colocalisation) and holds at least a tenth of the locus's cis colocalisations, or passes L2G itself.** A rival with
+a stray tissue's eQTL, under a tenth, does not veto. Counts are over the row's lifespan-class credible sets.
+Applied: 81 is E1 FES (FURIN 7 of 120 colocalisations); 15 is E3 (the unnamed ENSG00000230393 holds 6 of 24); 71 is
+E3 (ALDH2 holds every colocalisation, SH2B3 none); 6 is E3 (SORT1 and CELSR2 both pass L2G). Rejected: the bare
+letter, under which one tissue's eQTL vetoes any call; and a looser dominance cut, which no source gives.
+
