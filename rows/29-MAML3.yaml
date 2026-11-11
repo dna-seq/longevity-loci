@@ -166,7 +166,7 @@ studies:
     effect_unit: approximate years of survival per C allele of rs56172573
     effect_allele: C
     direction: protective
-    statistical_test: "Supplementary Table 6 (q19; columns q2, legend q5-q7): one-sided Wald P for the direction of aging-GIP1, Bonferroni P 0.049 over 23 SNPs; SE 0.0732; 46,128 deaths; C 0.36 in FinnGen, 0.39 in Biobank Japan; rs56172573 r² 0.96 to the lead in 1000 Genomes EUR and 0.91 in EAS, its C with the lead's A in both (db-ensembl-116#q170-q174); outside Timmers 2019's, Deelen 2019's and Rosoff's samples, the independent replication (q1, q4)"
+    statistical_test: "Supplementary Table 6 (q19; columns q2, legend q5-q7): one-sided Wald P for the direction of aging-GIP1, Bonferroni P 0.049 over 23 SNPs; SE 0.0732; 46,128 deaths; C printed 0.36 for FinnGen and 0.39 for Biobank Japan (the latter near the discovery's 0.38, not read as Japan's; 1000 Genomes EAS 0.33, db-ensembl-116#q174); rs56172573 r² 0.96 to the lead in 1000 Genomes EUR and 0.91 in EAS, its C with the lead's A in both (db-ensembl-116#q170-q174); outside Timmers 2019's, Deelen 2019's and Rosoff's samples, the independent replication (q1, q4)"
     curator: claude-opus-5-5
   - rsid: rs36072649
     note: pmid-31484785

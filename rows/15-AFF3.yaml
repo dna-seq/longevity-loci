@@ -22,7 +22,9 @@ verdict_reason: >-
   per-cohort table, so it is above 0.003 there). The allele the beta counts is derived from the UK Biobank arm's
   sign, not printed. rs4851244 (r² 0.73) agrees at raw P 0.039; one signal, scored once (D17.1). The mothers' results at
   the tags are not printed; the mothers' SNPs nearest the lead (rs2309814, 0.26 Mb, genomic-control P 3.7e-4 in those
-  born 1886-1918; rs7567996, 0.4 Mb) have no LD to it that Ensembl returns (EUR, CEU, floor off): unknown, not read. The Q test (P 0.81) finds no sign that the SNP acts off the common factor. Mechanism:
+  born 1886-1918; rs7567996, 0.4 Mb) have no LD to it that Ensembl returns (EUR, CEU, floor off): unknown, not read. Timmers 2022's aging-GIP1 AFF3 lead rs7609078
+  (P 3e-10) is another signal (r² 0.07 EUR, 0.12 EAS to the lead; its set of 14 does not hold it), and its
+  own-survival look-up runs against aging-GIP1 (one-sided P 0.86): neither is read into this row. The Q test (P 0.81) finds no sign that the SNP acts off the common factor. Mechanism:
   ageing in general. The lead's 19 credible sets hold no disease: mvAge, two hand-grip-strength sets the lead leads (G
   with a stronger grip, P 3e-9 and 5e-9) and a third led by a neighbour, a waist-hip ratio set led by a neighbour whose phase is not read, a fatty-acid ratio,
   and thirteen expression or splicing sets, ten of them AFF3's (G raises AFF3 in the cerebellum, P 3e-17). Rosoff
@@ -35,7 +37,7 @@ verdict_reason: >-
   unnamed neighbouring gene (ENSG00000230393) holds the other 6, more than a tenth, so the call is ambiguous. The protection is the presence of the minor G.
   Age of action is unknown: no cached source gives this locus's own age bands.
 axes:
-  tier: {value: B, cites: [pmid-37550455#q11, pmid-37550455#q2, pmid-37550455#q3, pmid-37550455#q5, pmid-30642433#q52, pmid-30729179#q27, pmid-31413261#q33, pmid-31413261#q34, pmid-31484785#q44, pmid-31484785#q45, pmid-31484785#q46, db-opentargets-26.09#q147, db-opentargets-26.09#q148, pmid-30642433#q53, pmid-30642433#q54, db-ensembl-116#q58, db-ensembl-116#q59, db-ensembl-116#q60, db-ensembl-116#q61, db-gwascatalog-2026.10.29#q118, db-gwascatalog-2026.10.29#q119]}
+  tier: {value: B, cites: [pmid-37550455#q11, pmid-37550455#q2, pmid-37550455#q3, pmid-37550455#q5, pmid-30642433#q52, pmid-30729179#q27, pmid-31413261#q33, pmid-31413261#q34, pmid-31484785#q44, pmid-31484785#q45, pmid-31484785#q46, db-opentargets-26.09#q147, db-opentargets-26.09#q148, pmid-30642433#q53, pmid-30642433#q54, db-ensembl-116#q58, db-ensembl-116#q59, db-ensembl-116#q60, db-ensembl-116#q61, db-gwascatalog-2026.10.29#q118, db-gwascatalog-2026.10.29#q119, pmid-37118362#q51, pmid-37118362#q52, pmid-37118362#q54, db-ensembl-116#q194, db-ensembl-116#q195]}
   mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q130, db-opentargets-26.09#q139, db-opentargets-26.09#q140, db-opentargets-26.09#q141, db-opentargets-26.09#q142, db-opentargets-26.09#q143, db-opentargets-26.09#q144, db-ensembl-116#q62, db-gwascatalog-2026.10.29#q120, pmid-37550455#q11, pmid-37550455#q12]}
   pleiotropy: {values: ["mech:muscle_strength", "mech:cognition"], cites: [db-opentargets-26.09#q138, db-opentargets-26.09#q139, db-opentargets-26.09#q140, db-opentargets-26.09#q149, db-opentargets-26.09#q150, db-opentargets-26.09#q151, pmid-37550455#q11, pmid-37550455#q12]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}

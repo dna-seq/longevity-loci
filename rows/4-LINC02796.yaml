@@ -10,11 +10,19 @@ verdict_reason: >-
   it), and no independent replication (§4.1's single-study clause). Genome-wide significant only in Rosoff 2023's
   mvAge, a multivariate factor behind healthspan, frailty, exceptional longevity, parental lifespan and epigenetic
   age (P 7.8e-9, the minor C on the healthier-ageing side); Rosoff lists it as novel, more than 1 Mb from every locus
-  of the five input studies, so none of them reached genome-wide significance here alone. Timmers 2019's million
+  of the five input studies, so none of them reached genome-wide significance here alone. Timmers 2022's
+  aging-GIP1, another multivariate scan over overlapping inputs, is genome-wide at rs2815748 (P 7e-10; r² 0.99 in
+  1000 Genomes EUR, its G with the lead's C at the same frequency), its fine-mapped set holding both SNPs (PIP 0.10
+  and 0.078): cited, not scored, and no lift past B (D18.3). Timmers 2019's million
   parents' lives are the co-occurring lifespan study: C lengthens life at P 5.3e-4, UK Biobank and LifeGen on the
   same side. Healthspan agrees at the same level: C delays the end of healthspan in Zenin 2019's UK Biobank (P
-  3.3e-4). Both are inputs to mvAge, the same samples, so nothing here replicates it, and a single genome-wide study
-  is B. Its Q test (P 0.60) finds no sign that the SNP acts off the common factor. Exceptional survival is +: in
+  3.3e-4). Both are inputs to mvAge, the same samples. Outside them the
+  locus was tested once and did not pass: Timmers 2022's look-up in FinnGen and Biobank Japan's own survival gives G,
+  with the lead's C, 0.205 years per copy, one-sided P 0.078 (Bonferroni 1.0). G is rare in East Asians (0.029 in
+  1000 Genomes JPT; the table's Biobank Japan column prints 0.20, the discovery's own frequency), so the test is in
+  effect Finnish, and its SE (0.145) is about twice that of the common leads: at the 0.21 years of the three leads
+  that pass, one-sided power is about 0.4. Same side, underpowered, no red flag (D21). No independent replication
+  passes, and both genome-wide results are multivariate: B. Its Q test (P 0.60) finds no sign that the SNP acts off the common factor. Exceptional survival is +: in
   Deelen 2019's summary statistics C raises the odds of reaching the 90th percentile (P 0.036; 99th P 0.052, same
   side), again an input of mvAge and not a replication. The mechanism is filed as metabolism,
   through body weight: the locus is NEGR1's long-known obesity signal, and Rosoff's GWAS Catalog list runs from BMI,
@@ -32,12 +40,12 @@ verdict_reason: >-
   (neuroticism among them) state no allele, so none detected is not none. Age of action is
   unknown: no cached source gives this locus's own age bands.
 axes:
-  tier: {value: B, cites: [pmid-37550455#q8, pmid-37550455#q3, pmid-37550455#q5, pmid-30642433#q26, pmid-30729179#q15, pmid-31413261#q31]}
+  tier: {value: B, cites: [pmid-37550455#q8, pmid-37550455#q3, pmid-37550455#q5, pmid-30642433#q26, pmid-30729179#q15, pmid-31413261#q31, pmid-37118362#q39, pmid-37118362#q40, pmid-37118362#q41, pmid-37118362#q42, pmid-37118362#q2, pmid-37118362#q5, pmid-37118362#q6, pmid-37118362#q7, db-ensembl-116#q177, db-ensembl-116#q178, db-ensembl-116#q179, db-ensembl-116#q180, db-ensembl-116#q181]}
   mechanism: {value: metabolism, cites: [pmid-37550455#q8, db-opentargets-26.09#q51, db-opentargets-26.09#q53, db-opentargets-26.09#q55, db-opentargets-26.09#q46]}
   pleiotropy: {values: ["mech:adiposity", broad], cites: [pmid-37550455#q8, pmid-37550455#q7, db-opentargets-26.09#q51]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
-            cites: [pmid-30729179#q15, pmid-30642433#q26, pmid-31413261#q31, pmid-31413261#q32, pmid-37550455#q8, pmid-37550455#q2]}
+            cites: [pmid-30729179#q15, pmid-30642433#q26, pmid-31413261#q31, pmid-31413261#q32, pmid-37550455#q8, pmid-37550455#q2, pmid-37118362#q39]}
   actionability: {label: modifiable, what: ["act_behaviour:weight"], who: "act_who:self", cites: [pmid-37550455#q8, db-opentargets-26.09#q51, db-gwascatalog-2026.10.29#q71, db-gwascatalog-2026.10.29#q72, db-gwascatalog-2026.10.29#q73, db-gwascatalog-2026.10.29#q74, db-gwascatalog-2026.10.29#q75]}
   context: {values: [eur_only_evidence], cites: [pmid-37550455#q8, pmid-30642433#q26]}
 flags:
@@ -170,4 +178,24 @@ studies:
     effect_allele: T
     direction: risk
     statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), effective N 4,524; mvAge's exceptional-longevity input, not a replication"
+    curator: claude-opus-5-5
+  - rsid: rs2613508
+    note: pmid-37118362
+    quote: q39
+    phenotype_class: OWN_SURVIVAL
+    study_design: meta_analysis
+    population: FinnGen (Finnish) and Biobank Japan (Japanese); G rare in East Asians, so in effect Finnish
+    ancestry: [EUR, EAS]
+    sample_size: 346737
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.078"
+    p_value_num: 0.078
+    proxy_rsid: rs2815748
+    effect_size: 0.205
+    effect_measure: beta
+    effect_unit: approximate years of survival per G allele of rs2815748
+    effect_allele: G
+    direction: protective
+    statistical_test: "Supplementary Table 6 (q39; columns q2, legend q5-q7): one-sided Wald P for the direction of aging-GIP1, Bonferroni P 1.0 over 23 SNPs; SE 0.1449; 46,128 deaths; G printed 0.14 for FinnGen and 0.20 for Biobank Japan (the latter the discovery's own frequency, q40; 1000 Genomes JPT 0.029, db-ensembl-116#q181); rs2815748 r² 0.99 EUR, 1.00 EAS to the lead, its G with the lead's C (db-ensembl-116#q177-q180); outside mvAge's inputs; one-sided power about 0.4 at 0.21 years, so not a red flag (D21)"
     curator: claude-opus-5-5

@@ -652,3 +652,58 @@ D′ 0.96 (q175), its A 0.31 (q176) with the lead's A. The 500 kb window listing
 rs6840907 (177 kb from the lead; ld-rs36072649-rs6840907.json renders to no text) nor rs4073315 (252 kb): below r²
 0.05, not in the panel, or outside, unknown which; Wright's other SNPs here
 (rs706333, rs10027416) lie about 0.4 Mb away, outside it, not read.
+
+## Reading 2026-11-11, record
+
+> [q177] [0] population_name 1000GENOMES:phase_3:EUR d_prime 1.000000 variation2 rs2815748 r2 0.993271 variation1 rs2613508
+
+> [q178] [0] population_name 1000GENOMES:phase_3:EAS variation2 rs2815748 variation1 rs2613508 r2 1.000000 d_prime 1.000000
+
+> [q179] populations[75] population 1000GENOMES:phase_3:EUR allele_count 181 allele G frequency 0.179920477137177
+
+> [q180] populations[76] allele_count 180 frequency 0.178926441351889 population 1000GENOMES:phase_3:EUR allele C
+
+> [q181] populations[89] population 1000GENOMES:phase_3:JPT allele_count 6 allele G frequency 0.0288461538461538
+
+> [q182] [0] population_name 1000GENOMES:phase_3:EUR d_prime 0.999972 variation2 rs1230682 r2 0.243891 variation1 rs1230666
+
+> [q183] populations[77] population 1000GENOMES:phase_3:EUR frequency 0.601391650099404 allele_count 605 allele A
+
+> [q184] populations[67] allele_count 140 allele A population 1000GENOMES:phase_3:EUR frequency 0.139165009940358
+
+> [q185] populations[65] allele_count 1008 allele G population 1000GENOMES:phase_3:EAS frequency 1
+
+> [q186] [0] population_name 1000GENOMES:phase_3:EUR variation2 rs10434248 variation1 rs28637671 r2 0.125675 d_prime 0.510265
+
+> [q187] [0] variation1 rs13141210 r2 0.838179 variation2 rs10434248 population_name 1000GENOMES:phase_3:EUR d_prime 0.995472
+
+> [q188] [0] d_prime 0.999955 variation2 rs10434248 r2 0.153070 variation1 rs13141210 population_name 1000GENOMES:phase_3:EAS
+
+> [q189] populations[72] allele A allele_count 562 frequency 0.557539682539683 population 1000GENOMES:phase_3:EAS
+
+> [q190] populations[72] allele_count 163 allele T frequency 0.161706349206349 population 1000GENOMES:phase_3:EAS
+
+> [q191] [0] variation2 rs61907878 r2 0.380013 variation1 rs61905747 population_name 1000GENOMES:phase_3:EUR d_prime 0.929761
+
+> [q192] populations[69] allele T allele_count 73 population 1000GENOMES:phase_3:EUR frequency 0.0725646123260437
+
+> [q193] populations[70] frequency 0.151093439363817 allele_count 152 population 1000GENOMES:phase_3:EUR allele C
+
+> [q194] [0] variation2 rs7609078 r2 0.072160 variation1 rs78438918 population_name 1000GENOMES:phase_3:EUR d_prime 0.480088
+
+> [q195] [0] population_name 1000GENOMES:phase_3:EAS d_prime 0.579490 variation1 rs78438918 r2 0.118876 variation2 rs7609078
+
+> [q196] populations[110] allele T allele_count 159 frequency 0.764423076923077 population 1000GENOMES:phase_3:JPT
+
+Ensembl 116, the sweep of Timmers 2022's survival look-up before row 30 (variation-rs2815748.json,
+variation-rs2613508.json, variation-rs1230682.json, variation-rs1230666.json, variation-rs10434248.json,
+variation-rs61907878.json, variation-rs61905747.json, variation-rs7609078.json, and the ld- files named by pair, -EAS
+for East Asians). Row 4: rs2815748 r² 0.99 to rs2613508 in EUR (q177), 1.00 in EAS (q178); G 0.180 (q179) and C
+0.179 (q180), so G rides with C; G 0.029 in JPT (q181). Row 7: rs1230682 r² 0.24, D′ 1.00 to rs1230666 (q182); A
+0.60 (q183), the lead's A 0.14 (q184): at D′ 1 the lead's A lies on rs1230682's G (that phase gives r² 0.24, the
+other about 0.02), so rs1230682's A always travels with the lead's G; the lead does not vary in EAS (q185). Row 28:
+rs10434248 r² 0.13 to rs28637671 (q186), 0.84 to rs13141210 in EUR (q187), 0.15 in EAS (q188); in EAS A 0.56 (q189)
+and T 0.16 (q190) at D′ 1 give r² 0.15 only with T inside A (the other phase about 0.24), so A rides with
+rs13141210's T. Row 67: rs61907878 r² 0.38, D′ 0.93 to rs61905747 (q191); its T 0.073 (q192) inside the lead's C
+0.151 (q193) gives about 0.4 at D′ 1 (the other phase about 0.01), so its C rides with the lead's A. Row 15: rs7609078
+r² 0.07 EUR (q194), 0.12 EAS (q195), not the lead's signal. Row 21: rs2271961's T is 0.76 in JPT (q196).

@@ -16,7 +16,10 @@ verdict_reason: >-
   healthier-ageing side; the paper names rs1230666 among its strongest fine-mapped loci). Outside them nothing
   passes: the longevity look-up of Timmers 2019's Figure 4 gives P 0.45 (one-sided), and Deelen 2019's 90th and 99th
   percentiles OR 1.04 per G (P 0.19 and 0.36), all on the same side; Wright 2019's AncestryDNA arm has no row for the
-  lead. Healthspan agrees, nominally: G delays the end of healthspan in Zenin 2019 (P 6.7e-4), in UK Biobank. The
+  lead. Timmers 2022's aging-GIP1 is genome-wide nearby at rs1230682 (PHTF1, P 4e-10), a weak tag (r² 0.24, D′
+  1.00, its A always with the lead's G) whose credible set of 11 is led by rs2636008 and does not hold the lead; in
+  FinnGen and Biobank Japan's own survival A adds 0.135 years, one-sided P 0.039 (Bonferroni 0.90): the same side
+  at a weak tag, not counted (the lead does not vary in East Asians). Healthspan agrees, nominally: G delays the end of healthspan in Zenin 2019 (P 6.7e-4), in UK Biobank. The
   mechanism is filed as immune and inflammation: Timmers 2019 classes the locus as autoimmune and puts its lifespan
   effect down to protection from autoimmune disease through a nearby variant it calls missense, rs6679677 (r² above
   0.6), and at the lead itself the GWAS Catalog has the minor A raising Hashimoto thyroiditis (P 2e-72) and thyroid
@@ -31,7 +34,7 @@ verdict_reason: >-
   effector E3, at the edge, and no gene is named. The protection is the absence of the risk allele: A shortens life and G is the common one. Age of action
   is unknown: Timmers 2019's age bands do not single out this locus, and no cached source gives its own.
 axes:
-  tier: {value: B, cites: [pmid-30642433#q29, pmid-30642433#q30, pmid-30642433#q33, pmid-30642433#q34, pmid-31413261#q19, pmid-37550455#q9, db-gwascatalog-2026.10.29#q10, db-gwascatalog-2026.10.29#q32, db-gwascatalog-2026.10.29#q34]}
+  tier: {value: B, cites: [pmid-30642433#q29, pmid-30642433#q30, pmid-30642433#q33, pmid-30642433#q34, pmid-31413261#q19, pmid-37550455#q9, db-gwascatalog-2026.10.29#q10, db-gwascatalog-2026.10.29#q32, db-gwascatalog-2026.10.29#q34, pmid-37118362#q43, pmid-37118362#q44, pmid-37118362#q53, db-ensembl-116#q182, db-ensembl-116#q183, db-ensembl-116#q184, db-ensembl-116#q185]}
   mechanism: {value: immune_inflammation, cites: [pmid-30642433#q29, pmid-30642433#q31, db-gwascatalog-2026.10.29#q4, db-gwascatalog-2026.10.29#q6, db-gwascatalog-2026.10.29#q19, db-gwascatalog-2026.10.29#q21]}
   pleiotropy: {values: ["mech:autoimmune", "mech:cvd", "mech:cancer"], cites: [pmid-30642433#q31, pmid-30642433#q32, db-gwascatalog-2026.10.29#q4, db-gwascatalog-2026.10.29#q13, db-gwascatalog-2026.10.29#q15, db-gwascatalog-2026.10.29#q16, db-gwascatalog-2026.10.29#q18]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}

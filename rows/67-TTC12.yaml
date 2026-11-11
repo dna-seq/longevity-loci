@@ -19,8 +19,11 @@ verdict_reason: >-
   ZW10 0.20), and Timmers 2020's expression analysis names USP28, ANKK1 and TTC12. Age of action is unknown: no cached source gives this locus's own age
   bands. The seed's other rsID, rs2186800 (TTC12, mvAge in Rosoff 2023, the source of the seed's name), lies about
   400 kb away and is not among the 155 members of the lead's credible set: not this signal, and not read here.
+  Timmers 2022's aging-GIP1 lead nearby, rs61907878 (USP28/HTR3B, P 1e-9), tags the lead at r² 0.38 (EUR; its C,
+  the major allele, with the lead's A); its own-survival look-up ran in FinnGen alone (N 218,396; Biobank Japan's
+  frequency printed 0.00) and gives C 0.087 years, one-sided P 0.33: a weak tag, not counted.
 axes:
-  tier: {value: B, cites: [pmid-29227965#q9, pmid-32678081#q5, pmid-30642433#q15, pmid-31413261#q12, pmid-31484785#q11, pmid-31484785#q20]}
+  tier: {value: B, cites: [pmid-29227965#q9, pmid-32678081#q5, pmid-30642433#q15, pmid-31413261#q12, pmid-31484785#q11, pmid-31484785#q20, pmid-37118362#q49, pmid-37118362#q50, db-ensembl-116#q191, db-ensembl-116#q192, db-ensembl-116#q193]}
   mechanism: {value: general_ageing, cites: [pmid-32678081#q5, pmid-30642433#q10]}
   pleiotropy: {values: ["mech:cancer"], cites: [pmid-30642433#q10]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}

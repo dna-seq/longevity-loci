@@ -41,6 +41,11 @@ verdict_reason: >-
   rs13141210, the seed's second rsID here, looks like a B of its own under D16 (mvAge 1.5e-8, T healthier; lifespan
   T P 9e-6), nominal in AncestryDNA at good tags (rs2164300 r² 0.94, rs12506221 r² 0.86; raw P 0.0005 to 0.001 in
   fathers and mothers, direction not read), with its own traits (education, body fat, smoking): put to the lead.
+  Timmers 2022's aging-GIP1 is genome-wide here through rs10434248 (P 8e-9), rs13141210's tag (r² 0.84 EUR, 0.15
+  EAS, its A with T), not the lead's (r² 0.13): a second multivariate scan for rs13141210, whose own-survival look-up
+  in FinnGen and Biobank Japan does not pass (A 0.092 years, one-sided P 0.089). The same paper's fine-mapping prints
+  one set at 4q13.2, 44 variants, with this row's lead at its top (PIP 0.068) and rs10434248 outside it; a
+  multivariate set, not a lifespan-class one, so C4 stands.
 axes:
   tier: {value: B, cites: [pmid-37550455#q27, pmid-37550455#q29, pmid-37550455#q30, pmid-37550455#q31, pmid-37550455#q2, pmid-37550455#q3, pmid-37550455#q5, pmid-30642433#q81, pmid-30642433#q82, db-ensembl-116#q154, pmid-31484785#q61, pmid-31484785#q62, pmid-30642433#q83, db-ensembl-116#q155, db-ensembl-116#q156, db-ensembl-116#q157, db-ensembl-116#q158, db-ensembl-116#q159, db-ensembl-116#q160, db-ensembl-116#q163, db-ensembl-116#q164, db-ensembl-116#q165, db-ensembl-116#q166, pmid-31484785#q63, pmid-31484785#q64, pmid-31484785#q65, db-ensembl-116#q161, db-ensembl-116#q162, db-gwascatalog-2026.10.29#q195, db-gwascatalog-2026.10.29#q196]}
   mechanism: {value: general_ageing, cites: [pmid-37550455#q27, pmid-37550455#q31, db-gwascatalog-2026.10.29#q197, db-opentargets-26.09#q437, db-gwascatalog-2026.10.29#q198, db-gwascatalog-2026.10.29#q199, db-ensembl-116#q167, db-ensembl-116#q168, db-opentargets-26.09#q441, db-opentargets-26.09#q442, db-opentargets-26.09#q443]}
@@ -52,7 +57,7 @@ axes:
   context: {values: [eur_only_evidence], cites: [pmid-37550455#q5, pmid-30642433#q81, db-ensembl-116#q153]}
 flags:
   - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-37550455#q30, pmid-30642433#q81, db-ensembl-116#q151, db-ensembl-116#q152]}
-  - {token: "causal:C4", cites: [db-opentargets-26.09#q437, db-opentargets-26.09#q413, db-opentargets-26.09#q438, db-ensembl-116#q154]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q437, db-opentargets-26.09#q413, db-opentargets-26.09#q438, db-ensembl-116#q154, pmid-37118362#q47, pmid-37118362#q48, pmid-37118362#q45, pmid-37118362#q46, db-ensembl-116#q186, db-ensembl-116#q187, db-ensembl-116#q188, db-ensembl-116#q189, db-ensembl-116#q190]}
   - {token: "effector:E4", cites: [db-opentargets-26.09#q437, db-opentargets-26.09#q413, db-opentargets-26.09#q438]}
 variants:
   - rsid: rs28637671

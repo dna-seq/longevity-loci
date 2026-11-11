@@ -5,12 +5,13 @@
 # db-ensembl-116#q100), and each SNP lies in the other's credible set; named, scored only through the lead. Wright
 # 2019's maternal-lifespan meta-analysis locus (Table 3, Supplemental Tables 8 and 9); in Timmers 2019's, Zenin
 # 2019's and Deelen 2019's summary statistics at both SNPs. Open Targets 26.09: 538 and 431 credible sets hold
-# them, two of a scoring class; the GWAS Catalog (2026-10-29) holds two and three associations.
+# them, two of a scoring class; the GWAS Catalog (2026-10-29) holds two and three associations. Timmers 2022's
+# aging-GIP1 leads the locus at rs2271961 and looked it up in FinnGen and Biobank Japan's own survival.
 locus_id: 21
 locus_name: IP6K1
 verdict: kept
 verdict_reason: >-
-  Tier A, up from the seed's B, on §4.1's letter, with the replication thin. Wright 2019's meta-analysis of
+  Tier A, up from the seed's B, on §4.1's letter, with two nominal replications. Wright 2019's meta-analysis of
   AncestryDNA customers' and UK Biobank's mothers (N 660,000) is genome-wide at rs9872864, P 6.9e-10 (Table 3,
   Supplemental Table 9; GWAS Catalog GCST009449), G lengthening mothers' lives. The meta-analysis is METAL's
   sample-size scheme with genomic control in each dataset and 5.0e-8 its threshold (q56, q57); neither arm is
@@ -19,7 +20,10 @@ verdict_reason: >-
   direction and P (D20). Mothers and fathers were separate meta-analyses, not corrected across the two (q58); the
   fathers lean the same way, not genome-wide (meta P 8.0e-5). Deelen 2019's survival to the 90th percentile replicates it in a sample
   sharing nothing with Wright's (no UK Biobank, no AncestryDNA): G at P 0.020, same allele, same direction; the 99th
-  percentile, its cases a subset of the 90th's, leans the same way and does not pass (P 0.13). Timmers 2019's
+  percentile, its cases a subset of the 90th's, leans the same way and does not pass (P 0.13).
+  Timmers 2022 looked rs2271961 up in FinnGen and Biobank Japan's own survival (346,737 people, 46,128 deaths),
+  outside Wright's, Deelen's and Timmers 2019's samples: T, with the lead's G, adds 0.21 years per copy (SE 0.076),
+  one-sided P 0.003, a second nominal replication that does not pass the paper's own Bonferroni over 23 SNPs (0.063). Timmers 2019's
   million parents' lives (G longer, P 4.4e-4) holds UK Biobank and replicates nothing. Its direction at the lead
   reads "-+", LifeGen against UK Biobank as this row reads the string's order (no cached text defines it), but
   LifeGen's sign is not stable: at rs9855505, in perfect LD 135 bp
@@ -30,7 +34,8 @@ verdict_reason: >-
   (about 0.008) expects z about 2.2, one-sided power 0.6 to 0.7 (0.2 to 0.35 after winner's curse), heterogeneity
   P about 0.055. Below D21's line (power 0.8 and heterogeneity P below 0.05), so no red flag. Rosoff
   2023's mvAge is genome-wide at rs2271961, the lead's near-perfect proxy (r² 0.99, its T with the lead's G; T,
-  P 3e-9, the GWAS Catalog's record), the same signal pooled from overlapping samples, cited here and not scored.
+  P 3e-9, the GWAS Catalog's record), the same signal pooled from overlapping samples, cited here and not scored; so is Timmers 2022's aging-GIP1, also
+  multivariate, at the same SNP (T, P 8e-14), whose fine-mapped set holds neither SNP.
   Lifespan +, exceptional survival + (Deelen's 90th percentile, nominal), healthspan 0 (Zenin 2019, G on the
   healthier side at P 0.105). Mechanism general ageing: the region, 3p21.31, is gene-dense and pleiotropic, and both
   scoring sets colocalise (H4 ≥ 0.8) with blood pressure and hypertension, intelligence and education, vitamin D,
@@ -42,16 +47,18 @@ verdict_reason: >-
   genes, RNF123 (311 each) and UBA7 (117) most, IP6K1 twice, so no single gene stands out (an earlier query, GWAS
   partners only, had missed them). G is the major allele
   at 51 % against 49 %, so A/G, the most common genotype, is the reference (§6.2): G/G protective, A/A risk; no
-  PROTECT token, the split too even and no disease known at the locus to be absent (q51). Age of action unknown. The evidence is European.
+  PROTECT token, the split too even and no disease known at the locus to be absent (q51). Age of action unknown. The evidence is not European only: the FinnGen and Biobank Japan
+  look-up spans both, T common in East Asians (0.76 in 1000 Genomes JPT; the table's Biobank Japan column prints 0.50,
+  the discovery's own frequency, so it is not read as Japan's).
 axes:
-  tier: {value: A, cites: [pmid-31484785#q49, pmid-31484785#q50, pmid-31484785#q52, pmid-31484785#q54, pmid-31484785#q55, pmid-31484785#q56, pmid-31484785#q57, pmid-31484785#q58, pmid-31413261#q41, pmid-31413261#q43, pmid-31413261#q1, pmid-31413261#q2, db-gwascatalog-2026.10.29#q165, db-gwascatalog-2026.10.29#q166, db-gwascatalog-2026.10.29#q170, db-gwascatalog-2026.10.29#q171, pmid-30642433#q59, pmid-30642433#q60, pmid-30642433#q61, pmid-30642433#q62, pmid-30642433#q19, pmid-30642433#q14, db-ensembl-116#q100, db-ensembl-116#q106, db-ensembl-116#q107]}
+  tier: {value: A, cites: [pmid-31484785#q49, pmid-31484785#q50, pmid-31484785#q52, pmid-31484785#q54, pmid-31484785#q55, pmid-31484785#q56, pmid-31484785#q57, pmid-31484785#q58, pmid-31413261#q41, pmid-31413261#q43, pmid-31413261#q1, pmid-31413261#q2, db-gwascatalog-2026.10.29#q165, db-gwascatalog-2026.10.29#q166, db-gwascatalog-2026.10.29#q170, db-gwascatalog-2026.10.29#q171, pmid-30642433#q59, pmid-30642433#q60, pmid-30642433#q61, pmid-30642433#q62, pmid-30642433#q19, pmid-30642433#q14, db-ensembl-116#q100, db-ensembl-116#q106, db-ensembl-116#q107, pmid-37118362#q37, pmid-37118362#q38, pmid-37118362#q2, pmid-37118362#q5, pmid-37118362#q6, pmid-37118362#q7, pmid-37118362#q55, db-ensembl-116#q196]}
   mechanism: {value: general_ageing, cites: [pmid-31484785#q51, db-opentargets-26.09#q240, db-gwascatalog-2026.10.29#q164, db-gwascatalog-2026.10.29#q167, db-gwascatalog-2026.10.29#q169, db-gwascatalog-2026.10.29#q172, db-gwascatalog-2026.10.29#q174]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "+",
-            cites: [pmid-30729179#q39, pmid-30729179#q40, pmid-31484785#q54, pmid-31484785#q52, pmid-30642433#q59, pmid-31413261#q41, pmid-31413261#q43]}
+            cites: [pmid-30729179#q39, pmid-30729179#q40, pmid-31484785#q54, pmid-31484785#q52, pmid-30642433#q59, pmid-31413261#q41, pmid-31413261#q43, pmid-37118362#q37]}
   actionability: {label: descriptive, cites: [pmid-31484785#q51]}
-  context: {values: [eur_only_evidence], cites: [pmid-31413261#q1, pmid-30642433#q59, pmid-31484785#q52]}
+  context: {values: [], cites: []}
 flags:
   - {token: "causal:C3", cites: [db-opentargets-26.09#q231, db-opentargets-26.09#q232, db-opentargets-26.09#q233, db-opentargets-26.09#q234, db-opentargets-26.09#q235, db-opentargets-26.09#q236, db-opentargets-26.09#q241, db-opentargets-26.09#q242, db-opentargets-26.09#q243, db-opentargets-26.09#q244]}
   - {token: "effector:E3", cites: [db-opentargets-26.09#q237, db-opentargets-26.09#q238, db-opentargets-26.09#q239, db-opentargets-26.09#q240, db-opentargets-26.09#q245, db-opentargets-26.09#q246, db-opentargets-26.09#q247, db-opentargets-26.09#q248, db-opentargets-26.09#q249]}
@@ -223,4 +230,24 @@ studies:
     effect_allele: A
     direction: risk
     statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), SE 0.0302, effective N 4,524; its cases a subset of the 90th's; at rs2271961 T β +0.044, P 0.15 (q44)"
+    curator: claude-opus-5-5
+  - rsid: rs9872864
+    note: pmid-37118362
+    quote: q37
+    phenotype_class: OWN_SURVIVAL
+    study_design: meta_analysis
+    population: FinnGen (Finnish) and Biobank Japan (Japanese)
+    ancestry: [EUR, EAS]
+    sample_size: 346737
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "0.003"
+    p_value_num: 0.003
+    proxy_rsid: rs2271961
+    effect_size: 0.212
+    effect_measure: beta
+    effect_unit: approximate years of survival per T allele of rs2271961
+    effect_allele: T
+    direction: protective
+    statistical_test: "Supplementary Table 6 (q37; columns q2, legend q5-q7): one-sided Wald P for the direction of aging-GIP1, Bonferroni P 0.063 over 23 SNPs, not passing; SE 0.0763; 46,128 deaths; T printed 0.64 for FinnGen and 0.50 for Biobank Japan (the latter the discovery's own frequency, q38; 1000 Genomes JPT 0.76, db-ensembl-116#q196); rs2271961 r² 0.99 to the lead, its T with the lead's G (db-ensembl-116#q100); outside Wright 2019's, Deelen 2019's and Timmers 2019's samples, a second nominal replication"
     curator: claude-opus-5-5
