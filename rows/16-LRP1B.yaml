@@ -44,7 +44,7 @@ variants:
   - rsid: rs117898573
     gene: ""
     phenotype: LRP1B region, East Asian healthy ageing
-    trait_efo_id: EFO_0022597
+    trait_efo_id: EFO_0009762
     effect_allele: T
     effect_size: 2.433
     effect_measure: OR
