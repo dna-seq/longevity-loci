@@ -573,3 +573,13 @@ def test_study_designs_added_from_curation(tree: Path, design: str) -> None:
     _row(tree).write_text(text.replace("study_design: percentile_case_control_p90", f"study_design: {design}", 1))
     found = check_rows(tree / "rows", tree / "corpus")
     assert not [f for f in found if f.kind is Kind.MALFORMED]
+
+
+def test_a_variant_not_harmonised_to_the_longer_life_allele_is_flagged(tree: Path) -> None:
+    """§6.2: effect_allele is harmonised to the lifespan-increasing allele, so direction reads the same across loci. A
+    variant written on the lowering allele (direction risk) is listed, as a warning."""
+    rows = yaml.safe_load(_row(tree).read_text())
+    risky = {v["rsid"] for v in rows["variants"] if v["direction"] == "risk"}
+    assert risky  # the fixture keeps one, as v1 wrote it
+    found = {f.where for f in check_rows(tree / "rows", tree / "corpus") if f.kind is Kind.UNHARMONISED}
+    assert found == risky

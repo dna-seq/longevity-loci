@@ -109,3 +109,26 @@ unreachable in practice; and a `HEALTHSPAN_ONLY` token, which the tier already c
 seed's other healthspan loci (35 IRF4, 66 TYR, 86 DEF8). Not a hard rule in the check: which study is the
 co-occurring one is the curator's reading.
 
+## D17 — what the second batch's reviews settled (2026-11-11)
+
+The lead's adversarial reads of rows 2, 8, 10 and 103 found four points no rule settled. The lead decided them under
+the person's standing word (2026-11-11, "if this is autonomous").
+
+1. **D16's co-occurring lifespan study is the locus's own signal.** At 103, Timmers 2019's P 1.4×10⁻⁴ at
+   rs1049053 is about what LD with row 38's lead predicts (conditional z ≈ 0.6 to 1.7), and its AncestryDNA tag
+   also tags 38's lead. A lifespan study whose association LD with another row's lead explains co-occurs with
+   that row, not this one: one lifespan signal is scored once. 103 is C. Its healthspan replication failed with
+   about 0.8 power (heterogeneity P ≈ 0.02), red-flag heterogeneity under the 71/67 rule, which caps it at B even
+   with a signal of its own.
+2. **Causal confidence is read from the credible sets of the row's own claim.** These are the scoring classes'
+   studies (lifespan, longevity, healthspan, multivariate ageing). A variant in sets for other traits only (IL6R
+   rs2228145, in 286 sets for CRP, IL-6 and others) is C4 for the row, §4.2's "not assessed" for the lifespan
+   claim. The other traits' sets are cited from the mechanism.
+3. **"Genome-wide" is read at the P the paper uses for its own significance call**, and the row says which
+   correction that is (genomic control, LD score intercept, none) in `statistical_test`. Rows do not re-correct a
+   paper's P by another method.
+4. **`effect_allele` is the lifespan-increasing allele** (§6.2: "Harmonise `effect_allele` to the
+   lifespan-increasing allele"). `check rows` lists a variant with `direction: risk` as `unharmonised`, a warning.
+   Its `trait_efo_id` is the anchor study's trait, by §6.2's list (healthspan EFO_0009762, parental longevity
+   EFO_0007796, life span OBA_VT0005372).
+

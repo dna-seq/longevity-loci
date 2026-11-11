@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- `check rows` lists a variant not harmonised to the lifespan-increasing allele as `unharmonised`; D17 settles what the second batch's reviews found (a co-occurring lifespan study is the locus's own signal, causal confidence from the claim's own credible sets, genome-wide at the paper's own P, the anchor study's trait id).
 - A curation dashboard in `#dashboards > longevity-loci curation` (the organisation's board channel, as genie keeps one): seed loci done, tiers, rows per hour and the weekly quota's burn as moving averages with a 3-hour half-life, and what is left before the 80% cap. `scripts/dashboard.py` writes it; the lead's watcher `dashboard` keeps it up to date every 10 minutes; the readings stay outside the repository.
 - `study_design: current_age_quantitative`, for a GWAS of participants' current age (Wright 2019's AncestryDNA arm): cross-sectional viability, confirmation only (§4.5).
 - A healthspan locus scores with a lifespan study at p < 0.05 on the same allele and direction beside it; with none it is tier C (D16).

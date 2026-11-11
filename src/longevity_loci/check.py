@@ -39,6 +39,7 @@ class Kind(StrEnum):
     UNSUPPORTED = "unsupported"  # an axis or flag cites nothing
     RULE = "rule"  # a row breaks one of the requirements' hard rules (§4.1, §6.3)
     INCOMPLETE = "incomplete"  # a scored variant's genotypes do not yet say what §6.2 asks (a warning)
+    UNHARMONISED = "unharmonised"  # a variant's effect_allele is not the lifespan-increasing one (§6.2; a warning)
     UNGRAINED = "ungrained"  # a study's quote names neither its variant nor its gene (QUOTING.md rule 2; a warning)
     SHARED_QUOTE = "shared_quote"  # one quote cited for several variants: the plugin's QUOTING.md rule 2
     LOCATED = "located"
@@ -188,6 +189,10 @@ def check_rules(row: Row, path: Path) -> list[Finding]:
         moving = [f"{v.rsid} {g.genotype}" for v in row.variants for g in v.genotypes if g.state is not State.NEUTRAL]
         if moving:
             rule("R-TIER-1", f"state neutral on every genotype: {', '.join(moving)}")
+    for v in row.variants:
+        if v.direction is Direction.RISK:
+            out.append(Finding(Kind.UNHARMONISED, path, v.rsid,
+                               f"effect_allele {v.effect_allele} is the lifespan-lowering one; §6.2 harmonises to the other, so direction reads protective"))
     if tier in SCORED:
         if not significant:
             rule("R-TIER-4", f"tier {tier.value} with no genome-wide significant study")

@@ -131,7 +131,8 @@ nothing to check.
   read as a hyphen, soft hyphens, any run of whitespace, and a hyphen at a line break (ASCII, soft or Unicode)
   read both ways; case, words, digits and punctuation must match, and the quote starts and ends on a word
   boundary. A quote that is the article's title is refused, and one quote cited for two or more variants is
-  listed as `shared_quote`, and a study whose quote names neither its rsid nor its gene as `ungrained`
+  listed as `shared_quote`, a variant whose `direction` is `risk` (not harmonised to the lifespan-increasing
+  allele, §6.2, D17) as `unharmonised`, and a study whose quote names neither its rsid nor its gene as `ungrained`
   (the plugin's `QUOTING.md`, rules 1 and 2; D10; both warnings). Copy a quote from the cached text,
   never retype it: the plugin's own check runs on its own retrieved text.
 
