@@ -16,8 +16,8 @@ compiler's `0.8` branch); reuse it at the cut, and tell that liaison where our u
 
 ## Read mark
 
-**`v0.8.3`** (tagged 2026-11-09), patches on 0.8.0 read by their changelog headings and "After upgrading"
-lines; read whole at our adoption. **In use: `v0.7.3`**, enricher 0.7.3, compiler 0.7.2, format 0.7.1 in
+**`v0.8.4`** (tagged 2026-11-11, `36cbc20f`), patches on 0.8.0 read by their changelog headings and "After
+upgrading" lines; read whole at our adoption. **In use: `v0.7.3`**, enricher 0.7.3, compiler 0.7.2, format 0.7.1 in
 `uv.lock`, held there by our cap (below, "Caps") until the plugin moves to 0.8. The first mark, `v0.7.3` (3dd8c2a),
 was fast-forwarded: no release before it was read.
 
@@ -69,6 +69,10 @@ read mark stays at `v0.7.3` until the cut; the cut is read again in full.
   before it is moved aside first. A `verification.json` from 0.8.2 or earlier over edited bytes may carry stale
   records (RM423): re-run its checks at adoption. A `resolution.csv` row no table names now warns
   `derived_row_orphan` (RM422); `enrich` never removes it.
+- 0.8.4 (a patch, no recompile; its release record shows no move on 22 reference modules): floors `>=0.8.4`. It
+  carries RM428's fix (the GWAS pass asks for pages of 500, and asks a refused first page once more with no size)
+  and three wording fixes (RM425 `effect_size` is the single strongest track, RM426, RM427). At adoption, run the
+  GWAS pass (`just-dna-enricher gwas <spec-dir>`) on the module again: every pass run here on 0.7.3 filled nothing.
 
 ## Caps
 
@@ -106,7 +110,7 @@ here as the first import lands.
   For us: the module seat's `enrich_module` / `enrich_gwas_effects` returns no GWAS effects until a fix ships; an
   empty GWAS sidecar is not "no associations". Whether a 0.7.x patch is cut is RM428's ask 4, the compiler's
   person's call: declined (their desk #252, 2026-11-11), so no 0.7.x fix comes; the pass works again only from
-  0.8.4 (on PyPI 2026-11-11, not yet tagged in their git), i.e. with our 0.8 adoption. Nothing to file
+  0.8.4 (on PyPI and tagged 2026-11-11, `36cbc20f`; RM428 closed there), i.e. with our 0.8 adoption. Nothing to file
   from here.
 
 ## Our pieces that duplicate the compiler's
