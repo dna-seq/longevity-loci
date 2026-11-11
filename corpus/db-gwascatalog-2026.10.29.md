@@ -579,3 +579,13 @@ rs583514 (GRCh38 3:173,396,377; 26 kb from the lead, r² 0.86, db-ensembl-116#q1
 (GCST90020053, PMID 34431594), T, β 0.0199 decrease, P 2 × 10⁻⁹, risk frequency 0.489. T lowers frailty. T is the
 lead's A by frequency (Timmers' file: T 0.487, A 0.466; only that phase fits r² 0.86; derived), and both lengthen
 parents' lives there. For row 24.
+
+> [q180] _embedded.associations[0] association_id 227881113 risk_frequency 0.433 pvalue_description pvalue_mantissa 2 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.017-0.033] beta 0.025 unit decrease p_value 2e-08 accession_id GCST90854295 pubmed_id 42816531 first_author Saito K ci_lower 0.017 ci_upper 0.033
+
+> [q181] _embedded.associations[0].snp_effect_allele[0] rs529200-G
+
+rs529200's type 2 diabetes record from Saito (GCST90854295, PMID 42816531): G, β 0.025 "unit decrease", P 2 × 10⁻⁸.
+Read as written, G lowers type 2 diabetes, so the lead's A (rs529200-A's partner, db-ensembl-116#q114, q115, derived)
+would raise it: against Open Targets' set led by rs247975 (C raising it, db-opentargets-26.09#q256-q258). The catalog's
+other type 2 diabetes record at rs529200 (Suzuki, GCST90492734) prints no β. One record dissents; not resolved here.
+For row 24.

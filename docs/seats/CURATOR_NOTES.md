@@ -156,8 +156,9 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   two sets dissent); no PROTECT token at 45/55 (as at 21); E1 NLGN1.
 - **Open: colocalisation queries before 2026-11-11 returned GWAS partners only** (Open Targets lists QTL partners only
   when `studyTypes` names them). Found at 24; row 21 corrected (33b8488: QTLs of a dozen genes, E3 on ambiguity).
-  Every row whose effector rests on "no QTL colocalisation" from such a query wants a re-query: to sweep, `unattended`,
-  rows 2, 4, 5, 10-20 first (where E3 or E4 is said for want of a QTL colocalisation).
+  Owed before row 25: re-query the QTL colocalisations of the 9 rows whose effector call could move, E3 at 2, 7, 19,
+  57, 67, 80 and E2 at 6, 12, 81 (E4 rows have no set; 17's query already held QTLs). 13 cached colocalisation
+  locators lack `studyTypes`.
   Lead rs9872864, its proxy rs2271961 (Rosoff's mvAge SNP; r² 0.99, D′ 1, G with T). The anchor is Wright 2019's
   maternal meta-analysis, P 6.9e-10 (Table 3, S9), with Deelen's 90th percentile an independent replication (G, P
   0.020, no UK Biobank or AncestryDNA sample): A on §4.1's letter. But Wright prints no pooled effect, so it cannot

@@ -16,10 +16,12 @@ verdict_reason: >-
   longer, P 6.1e-4, both UK Biobank and LifeGen leaning the same way; it is an input of mvAge, not a replication.
   Rosoff calls the locus known through frailty and lifespan. Frailty is genome-wide here on its own: Atkins 2021's
   frailty index (n 175,226, UK Biobank and TwinGene) at rs583514 (r² 0.86), T less frail, P 2e-9, T riding with the
-  lead's A (derived from frequencies), and Rosoff's look-up at the lead gives P 3.2e-9. Read as a healthspan
-  phenotype (the outcome profile counts frailty there), it would face §4.1's own test, and its only same-class
-  partner, Zenin 2019's healthspan (A delays its end, P 0.030), is the same UK Biobank: no independent healthspan
-  replication, so it stays B either way (D16, D22.2). The lifespan side of Rosoff's label is not identified: Timmers'
+  lead's A (derived from frequencies), and Rosoff's look-up at the lead gives P 3.2e-9. Whether that opens tier A is
+  put to the lead, B meanwhile: if a frailty index is a HEALTHSPAN-class phenotype (the outcome profile counts
+  frailty there), §4.1 asks for an independent replication in a scoring class (D22.2). Zenin 2019's healthspan (A
+  delays its end, P 0.030) replicates nothing on its own and shares UK Biobank; the only candidate is Wright's
+  viability result below, outside UK Biobank and TwinGene, nominal on the same allele but at a proxy whose strand
+  and phase are derived, and §4.5 takes viability as confirmation only. The lifespan side of Rosoff's label is not identified: Timmers'
   rows within 0.5 Mb hold nothing below P 5.2e-4. Wright 2019's AncestryDNA customers, a sample outside mvAge's
   inputs, lean the same way: at rs247975 (r² 0.93, its T the lead's A, derived) A is commoner among older customers,
   P 1.0e-5 after genomic control (raw 2.3e-7), nominal, a viability confirmation; the locus is in neither of Wright's
@@ -31,7 +33,8 @@ verdict_reason: >-
   direction is read from the sets' leads: rs529200-A rides with the lead's A (r² 0.94, derived from frequencies), and
   32 of 37 body-size and composition sets led by rs529200, rs583514 or rs247975 give the lead's C the higher value,
   3 print no β and Harris 2024's two run the other way. So the longer-lived A goes with lower weight, and with less
-  type 2 diabetes (a set led by rs247975, β +0.025 for the C side): no trade-off found (D18.1), and the label is
+  type 2 diabetes (a set led by rs247975, β +0.025 for the C side), with one catalog record dissenting (Saito's at
+  rs529200, G lowering it, which would put the A side higher): no trade-off detected (D18.1), and the label is
   modifiable through weight (D18.2), the smoking and insomnia sets unphased and not read for direction. Causal C2:
   the lead tops mvAge's PICS set at 0.14 of 16 members, the next 0.095 (Rosoff's own SuSiE and FINEMAP give 0.17).
   Effector E1, NLGN1: locus-to-gene 0.92 on the mvAge set, which colocalises with NLGN1's expression in the brain's
@@ -46,7 +49,7 @@ axes:
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
             cites: [pmid-30729179#q41, db-gwascatalog-2026.10.29#q178, db-gwascatalog-2026.10.29#q179, pmid-30642433#q65, pmid-31484785#q59, pmid-31413261#q49, pmid-31413261#q50]}
-  actionability: {label: modifiable, what: ["act_behaviour:weight"], who: "act_who:self", cites: [db-opentargets-26.09#q251, db-opentargets-26.09#q252, db-opentargets-26.09#q253, db-opentargets-26.09#q254, db-opentargets-26.09#q255, db-opentargets-26.09#q256, db-opentargets-26.09#q257, db-opentargets-26.09#q258, db-ensembl-116#q114, db-ensembl-116#q115]}
+  actionability: {label: modifiable, what: ["act_behaviour:weight"], who: "act_who:self", cites: [db-opentargets-26.09#q251, db-opentargets-26.09#q252, db-opentargets-26.09#q253, db-opentargets-26.09#q254, db-opentargets-26.09#q255, db-opentargets-26.09#q256, db-opentargets-26.09#q257, db-opentargets-26.09#q258, db-gwascatalog-2026.10.29#q180, db-gwascatalog-2026.10.29#q181, db-ensembl-116#q114, db-ensembl-116#q115]}
   context: {values: [eur_only_evidence], cites: [pmid-37550455#q16, pmid-30642433#q65, pmid-31484785#q59]}
 flags:
   - {token: "causal:C2", cites: [db-opentargets-26.09#q259, db-opentargets-26.09#q260, db-opentargets-26.09#q261, db-opentargets-26.09#q262, pmid-37550455#q20]}
@@ -140,7 +143,7 @@ studies:
     effect_size: 0.01056
     effect_measure: beta
     effect_unit: z-scored current age per T allele of rs247975 (printed A, read as the complement of forward-strand T, derived; positive = older)
-    effect_allele: A
+    effect_allele: T
     direction: protective
     statistical_test: "Supplemental Table 8, Male_Female.AGE, quantitative GWAS of current age; genomic-control P, the paper's own correction (D17.3), raw P 2.326e-07 (the GWAS Catalog's 2e-7); rs247975 r² 0.93 with the lead (db-ensembl-116#q112), its T the lead's A by frequency (derived); AncestryDNA, outside mvAge's inputs; viability, confirmation only (§4.5); N rounded in the source"
     curator: claude-opus-5-5
