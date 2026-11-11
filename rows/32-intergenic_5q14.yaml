@@ -19,13 +19,17 @@ verdict_reason: >-
   3.67, CI 1.10 to 12.2, Cochran's Q P 0.80): 129 healthy agers and 500 others, separate people from the same cohort and team, genotyped later, and
   already inside the meta P. An arm already inside the discovery's pooled P replicates
   nothing (D25.9); it does not change the tier, which waits on a lifespan study (D16). With lifestyle covariates the
-  meta P is 8.21e-9. The lifespan side is untested, not null: LifeGen, Zenin and both Deelen percentiles hold no line
+  meta P is 8.21e-9. Lifespan is tested in Finns only: FinnGen r11's any-death endpoint (50,511 deaths) gives T
+  β +0.023 (SE 0.026), P 0.37, toward more death, not significant. That is not D: D25.1 needs a powered failure in
+  the discovery's ancestry (Chang's is East Asian), no calibration ties a healthy-ageing odds ratio to death
+  log-odds, and the LD differs (proxies at r² 0.79 in Finns, at most 0.13 in East Asians). Elsewhere lifespan is
+  untested, not null: LifeGen, Zenin and both Deelen percentiles hold no line
   for the variant (T 0.08 % in non-Finnish Europeans), the SNPs that track it in 99 Finns do not tag it in those mostly
   British samples, and a literature search on the rsID finds only Chang's
-  paper (Semantic Scholar unchecked); the cached Chinese longevity paper of row 18 prints its top hits only. Exceptional survival is untested for
+  paper (Semantic Scholar unchecked); the cached Chinese longevity paper of row 18 prints its top hits only, and Timmers 2022's Finnish and Japanese survival look-up prints its aging-GIP1 leads only. Exceptional survival is untested for
   the same reason. The evidence is East Asian only (R-ANC-4, ancestry_specific:eas): not to be scored outside East
-  Asian ancestry, and in the research view without inferred ancestry. The allele is as common in Finns and admixed
-  Americans, where it is untested. Of the seven domains, T passes adjustment only for good self-perceived health (P
+  Asian ancestry, and in the research view without inferred ancestry. The allele is as common in Finns, where lifespan is tested and flat, and in
+  admixed Americans, where it is untested. Of the seven domains, T passes adjustment only for good self-perceived health (P
   7.8e-3), a component of the same outcome; the mechanism is filed as general ageing, the paper's XRCC4 and DNA-repair
   link being a hypothesis it says needs study. Open Targets has one credible set, PICS from the reported hit, the lead
   alone at PIP 1, which is so by construction (no East Asian proxy above r² 0.13): C1 on §4.2's letter, said as
@@ -37,8 +41,8 @@ axes:
   mechanism: {value: general_ageing, cites: [pmid-35927272#q7, pmid-35927272#q17, pmid-35927272#q18, pmid-35927272#q19]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: "+", lifespan: untested, exceptional_survival: untested,
-            cites: [pmid-35927272#q13, pmid-35927272#q14, db-ensembl-116#q210, db-ensembl-116#q212]}
+  outcome: {healthspan: "+", lifespan: "0", exceptional_survival: untested,
+            cites: [pmid-35927272#q13, pmid-35927272#q14, db-ensembl-116#q210, db-ensembl-116#q212, db-finngen-r11#q7, db-finngen-r11#q6, db-ensembl-116#q213, pmid-37118362#q4]}
   actionability: {label: descriptive, cites: [pmid-35927272#q18]}
   context: {values: ["ancestry_specific:eas"], cites: [pmid-35927272#q1, pmid-35927272#q11, pmid-35927272#q16, db-ensembl-116#q206, db-ensembl-116#q207, db-ensembl-116#q209, db-ensembl-116#q211]}
 flags:
@@ -71,8 +75,10 @@ variants:
           one study of older Singapore Chinese, people with this version were more often still free of major
           disease and disability, and rated their own health better, in their seventies. A smaller group from the
           same study pointed the same way. This is early evidence: the result was only just strong enough to
-          count, the size of the effect is likely overstated, and whether it lengthens life is unknown. It may not
-          apply to people of other ancestries, where it has not been studied. It is a tendency, not a guarantee.
+          count, the size of the effect is likely overstated, and everyone studied had already lived into their
+          sixties, so it says nothing about length of life. In a large Finnish study, where this version is about
+          as common, it showed no clear link to length of life. It may not apply to people of other ancestries.
+          It is a tendency, not a guarantee.
       - genotype: T/T
         state: protective
         conclusion: >-
@@ -80,8 +86,8 @@ variants:
           ancestry do). In one study of older Singapore Chinese, each copy of this version went with being more
           often free of major disease and disability in their seventies. This is early evidence: almost no one
           carries two copies, so how they fare was not measured directly, and whether it lengthens life is
-          unknown. It may not apply to people of other ancestries, where it has not been studied. It is a
-          tendency, not a guarantee.
+          unknown; in a large Finnish study this version showed no clear link to length of life. It may not apply
+          to people of other ancestries. It is a tendency, not a guarantee.
 studies:
   - rsid: rs138499810
     note: pmid-35927272

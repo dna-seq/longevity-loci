@@ -34,3 +34,18 @@ death, the other way from Park's UK Biobank discovery. Calibrations within FinnG
 (pmid-40021682#q31, q32): APOE's rs429358 C β 0.1048 (SE 0.0096), P 1.3e-27 (q4), about 8.1 times Park's ε4 β;
 MUC5B's rs35705950 T β 0.0342 (SE 0.0124), P 0.006 (q5), about 6.7 times Park's. The endpoint's 50,511 cases and
 403,222 controls (q6, from the PheWeb variant page). For row 36.
+
+## Reading 2026-11-11, record
+
+The same file, cached again with the rows of rows 32 and 37 (`rows-d1ec483e`).
+
+> [q7] 5 82723979 C T rs138499810 CTD-2218K11.2 0.374424 0.426636 0.02294 0.025827 0.0210922 0.0216309 0.0210247
+
+> [q8] 6 31179699 G A rs3130507 POU5F1 0.160738 0.793882 0.0139185 0.00992341 0.167566 0.170584 0.167188
+
+> [q9] 6 31457722 A G rs3131621 XXbac-BPG181B23.9 0.157887 0.801654 0.0113703 0.0080514 0.30421 0.308608 0.303659
+
+Row 32's lead rs138499810 (q7): T 0.0211 in Finns, β +0.02294 (SE 0.02583), P 0.374, T toward more death, not
+significant. Row 37's two seed SNPs: rs3130507 A β +0.0139 (SE 0.0099), P 0.16, so G, Pilling's longer-lived
+mothers' allele, toward less death (q8); rs3131621 G β +0.0114 (SE 0.0081), P 0.16, so A, the longer-lived fathers'
+allele, toward less death (q9). Neither significant.
