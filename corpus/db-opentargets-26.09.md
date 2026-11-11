@@ -471,3 +471,11 @@ rest. For row 11.
 > [q92] data.variant.alleleFrequencies[2] populationName nfe_adj alleleFrequency 0.8283593060864451
 
 `variant-2_628524_A_G.json`: G 0.83 in gnomAD non-Finnish Europeans. For row 11.
+
+> [q93] data.credibleSets count 0
+
+> [q94] data variant null
+
+rs1049053 (6:32,666,628 C/T): no credible set of the eight lifespan, healthspan, longevity and current-age studies
+holds it (`credibleSets-longevity8-6_32666628_C_T.json`), and Open Targets 26.09 has no record of the variant at all
+(`variant-6_32666628_C_T.json`). For row 103.
