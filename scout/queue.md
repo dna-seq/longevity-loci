@@ -88,14 +88,16 @@ read), and every identifier the paper has. The curator takes it from here; the s
   Biobank), Deelen's 90th one-sided 0.065, FinnGen death one-sided 0.16 (APOE factor power 0.66, no red flag), so B by
   the curator's reading; Wright's PICS set is flat (PIP 0.066 of 25, C3), L2G LPL 0.98.
 
-### rs11780471 (EPHX2 intron) at locus 53 EPHX2 (8p21.1): Wright's fathers' signal, candidate row (D25.6)
+### rs11780471 (3.6 kb upstream of EPHX2) at locus 53 EPHX2 (8p21.1): Wright's fathers' signal, candidate row (D25.6)
 
 - **Paper:** Wright KM et al. "A Prospective Analysis of Genetic Variants Associated with Human Lifespan." *G3*, 2019.
   PMID 31484785. Corpus note `corpus/pmid-31484785.md` (q99). From the curator, 2026-11-11.
 - **Why:** 97 kb from row 53's lead rs7844965 and tagging it only at r² 0.13, D′ 0.66 in CEU (`db-ensembl-116#q373`):
   genome-wide in Wright's fathers' meta-analysis, P 3.2e-8 (AncestryDNA 1.8e-5, UK Biobank 1.6e-5, heterogeneity P
   0.68), A (0.065) longer-lived. Wright's Table 3 lists one EPHX2..CLU locus, so whether this is a second signal is
-  untested (no conditional analysis read). Row 53 names it in prose; none of its evidence is cited there.
+  untested (no conditional analysis read). It is a known smoking locus: A lowers smoking initiation (P 5e-110,
+  `db-gwascatalog-2026.10.29#q347`) and lung cancer (P 2e-8, `q351`), upstream of EPHX2 (`db-ensembl-116#q374`).
+  Row 53 names it in prose; none of its evidence is cited there.
 - **Passage** (Supplemental Table 9, quoted as `pmid-31484785#q99`):
   > FatherMetal_Lifespan+AttainedAge	8	27344719	rs11780471	3.239e-08	697000	1.759e-05	0.02224	0.005181	1.6e-05	0.0193807	0.00447518	0.6758	G
 - **Unknown:** its independence from rs7844965 (a conditional test or a fine-mapping with two sets); Timmers 2019 P

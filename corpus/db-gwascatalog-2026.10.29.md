@@ -1214,3 +1214,37 @@ For row 53.
 > [q345] initial_sample_size 1,970 East Asian ancestry cases, 679 East Asian ancestry controls
 
 GCST90692469 (`study-GCST90692469`): 1,970 East Asian-ancestry cases, 679 controls. For row 53.
+
+## Reading 2026-11-11, supplement
+
+> [q346] _embedded.associations[0] association_id 104964846 risk_frequency NR pvalue_description  pvalue_mantissa 4 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false
+
+GWAS Catalog associations for rs11780471 (`assoc-rs11780471-p0`, page 0 of 1): six records, five on smoking
+(q347 to q350) and one on lung cancer (q351). For row 53.
+
+> [q347] _embedded.associations[1] association_id 102107907 risk_frequency 0.0606 pvalue_description  pvalue_mantissa 5 pvalue_exponent -110 multi_snp_haplotype false snp_interaction false
+
+Smoking initiation (Saunders 2022, GCST90243985), P 5 × 10⁻¹¹⁰, A's β −0.038 (q348): A, the minor allele (0.06),
+lowers smoking initiation. For row 53.
+
+> [q348] _embedded.associations[1].snp_effect_allele[0] rs11780471-A
+
+The allele is A. For row 53.
+
+> [q349] _embedded.associations[3] association_id 41275855 risk_frequency 0.063121 pvalue_description  pvalue_mantissa 2 pvalue_exponent -13 multi_snp_haplotype false snp_interaction false
+
+Smoking initiation, ever against never regular (Liu 2019, GCST007474), P 2 × 10⁻¹³, A lowers it (q350). For row 53.
+
+> [q350] _embedded.associations[3].snp_effect_allele[0] rs11780471-A
+
+A again. For row 53.
+
+> [q351] _embedded.associations[5] association_id 22003071 risk_frequency 0.940381112 pvalue_description  pvalue_mantissa 2 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false
+
+Lung cancer (McKay 2017, GCST004748), P 2 × 10⁻⁸, OR 1.15 per G (q352): A, the longer-lived allele in Wright's
+fathers (pmid-31484785#q99), goes with less lung cancer and less smoking. rs11780471 is a smoking locus; how much of
+row 53's lead (r² 0.13) it explains is untested. For row 53.
+
+> [q352] _embedded.associations[5].snp_effect_allele[0] rs11780471-G
+
+The allele is G. For row 53.

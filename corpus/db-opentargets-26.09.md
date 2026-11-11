@@ -2453,7 +2453,7 @@ rs15285 at PIP 0.027 in it, and rs268 is not a member: one study, two coronary d
 > [q679] data.variant.credibleSets count 9
 
 Open Targets 26.09, variant 8_27584547_G_A (rs7844965; `variant-8_27584547_G_A-all.json`): 9 credible sets, all
-read (q680 to q707). Two are lifespan-class (Pilling's, q680; Wright's fathers' meta, q687); none is healthspan or
+read (q680 to q703; the eQTL's own set q705 to q711). Two are lifespan-class (Pilling's, q680; Wright's fathers' meta, q687); none is healthspan or
 multivariate. For row 53.
 
 > [q680] data.variant.credibleSets.rows[1] studyLocusId 3e6a9cd086b2456f2effcaa96e20812d studyId GCST006697 pValueMantissa 7.7839131355285645 pValueExponent -9 beta -0.00866575786785378 finemappingMethod SuSiE-inf
@@ -2532,7 +2532,7 @@ A never-smoking set (GCST90692035), SuSiE-inf, P 6.6 × 10⁻¹³, β +0.149 for
 > [q697] data.variant.credibleSets.rows[5].locus.rows[0] posteriorProbability 0.9999999999990195
 
 Posterior about 1.0 to the lead. But the study is UK Biobank's African-ancestry subset, 6,532 people
-(db-gwascatalog-2026.10.29#q344), and q706's East Asian subset of 2,649 gives P 1.3 × 10⁻¹³: P values of that size in
+(db-gwascatalog-2026.10.29#q344), and q703's East Asian subset of 2,649 gives P 1.3 × 10⁻¹³: P values of that size in
 samples so small, for a SNP with no European smoking record in the Catalog (q341), are not read as evidence of a
 smoking route. For row 53.
 
@@ -2564,3 +2564,39 @@ White blood cell count, SuSiE-inf, P 1.1 × 10⁻¹⁵, led by another SNP (rs78
 
 A second never-smoking set (GCST90692469), P 1.3 × 10⁻¹³, rs7844965 at posterior 0.12; the East Asian subset of
 2,649 (db-gwascatalog-2026.10.29#q345). For row 53.
+
+## Reading 2026-11-11, supplement
+
+> [q704] data.variant.credibleSets.rows[1].qualityControls[1] Study locus finemapped without in-sample LD reference
+
+Pilling's set was fine-mapped without in-sample LD (as row 51's set was), so its 0.66 is that method's. For row 53.
+
+> [q705] data.variant.credibleSets.rows[2] studyLocusId 615439975207128bcf1716ba919f3451 studyId OTAR2057_IBDverse_ge_Enterocytes_progenitor_crypt_OLFM4++_ENSG00000234770 pValueMantissa 1.6117099523544312 pValueExponent -9 beta -0.359968 finemappingMethod SuSie
+
+The GULOP eQTL's own credible set (IBDverse, enterocyte progenitors, ENSG00000234770): P 1.6 × 10⁻⁹, SuSiE. For row 53.
+
+> [q706] data.variant.credibleSets.rows[2].study traitFromSource ENSG00000234770 projectId OTAR2057_IBDverse nSamples 303 nCases null
+
+It rests on 303 samples. For row 53.
+
+> [q707] data.variant.credibleSets.rows[2].qualityControls[0] Study has quality control flag(s)
+
+Open Targets flags the study's quality control. For row 53.
+
+> [q708] data.variant.credibleSets.rows[2].locus.rows[0] posteriorProbability 0.5654238337902764
+
+The eQTL set's lead holds 0.57 (q709). For row 53.
+
+> [q709] data.variant.credibleSets.rows[2].locus.rows[0].variant id 8_27565545_G_C
+
+It is 8_27565545_G_C, 19 kb from the lead. For row 53.
+
+> [q710] data.variant.credibleSets.rows[2].locus.rows[4] posteriorProbability 0.057901134218701994
+
+The row's lead holds 0.058 in the eQTL's set (q711), and the colocalisations' CLPP is about 0.05 (q692, q694):
+H4 says the two signals share a variant, CLPP that the shared variant is not well placed. The E2 call stands on H4
+by §4.2's letter, on a QC-flagged single-cell study of 303 samples whose set the lead does not lead. For row 53.
+
+> [q711] data.variant.credibleSets.rows[2].locus.rows[4].variant id 8_27584547_G_A
+
+The row's lead. For row 53.

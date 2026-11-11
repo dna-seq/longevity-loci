@@ -12,7 +12,8 @@ verdict_reason: >-
   look-ups of rs7137828 and rs3184504 agree). What blocks A is AncestryDNA, the large independent American sample: its fathers give a quarter of the UK Biobank effect, passing one-sided on the raw P only (two-sided 0.0997, one-sided
   0.0498, D25.13; 0.065 after the genomic control Wright's calls use, λ 1.182, pmid-31484785#q83, derived), with heterogeneity between the two arms P 2.6e-3, and its mothers nothing (P 0.99, heterogeneity P 3.6e-3) (Wright 2019, Supplemental Table 9). The rule
   applied (the lead, 2026-11-11, one rule for this row and 67): a powered non-replication in an independent sample is
-  red-flag heterogeneity and caps the row at B. Healthspan is 0: Zenin 2019's look-up of SH2B3's rs3184504 leans the
+  red-flag heterogeneity and caps the row at B; AncestryDNA's mothers, a sample that fails, carry
+  `replication_failed` (D25.13; the fathers replicate with a smaller effect). Healthspan is 0: Zenin 2019's look-up of SH2B3's rs3184504 leans the
   same way and does not pass (P 0.13). A trade-off: Timmers 2019 names this locus among those where more protection
   against non-lung cancers goes with a shorter life, through antagonistic pleiotropy with cardiovascular disease; the
   lifespan-lowering allele, rs3184504-T, also raises type 1 diabetes and autoimmune risk (Joshi 2017). On lifespan the
@@ -38,6 +39,7 @@ flags:
   - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-30642433#q8]}
   - {token: ancestry_tag, cites: [db-opentargets-26.09#q19, db-opentargets-26.09#q20]}
   - {token: "causal:C2", cites: [db-opentargets-26.09#q21]}
+  - {token: replication_failed, cites: [pmid-31484785#q18]}
   - {token: "effector:E3", cites: [db-opentargets-26.09#q23, db-opentargets-26.09#q310, db-opentargets-26.09#q311, db-opentargets-26.09#q312, db-opentargets-26.09#q313, db-opentargets-26.09#q314, db-opentargets-26.09#q315, db-opentargets-26.09#q316, db-opentargets-26.09#q317, db-opentargets-26.09#q318, db-opentargets-26.09#q319, db-opentargets-26.09#q320]}
   - {token: "ld_proxy_of:rs11065979", cites: [db-opentargets-26.09#q22]}  # rs7137828 r² 0.81, rs10774625 r² 0.77
 variants:

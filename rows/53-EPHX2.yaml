@@ -23,7 +23,7 @@ verdict_reason: >-
   +0.025 (suggestive, the window's smallest P its tag rs6558008's 5.8e-8, r² 0.97); Wright's fathers' meta P 5.8e-10
   pools UK Biobank and is not counted. Healthspan +: Zenin 2019 has A delaying the end of healthspan, one-sided P 0.037
   (about 0.041 after its genomic control, D26.1). Lifespan +, exceptional survival 0 (Deelen flat at both
-  percentiles). Wright ties EPHX2/CLU to Alzheimer's disease, but Ensembl's CEU LD gives no pair above r² 0.05 with
+  percentiles; Pilling's both-parents-in-the-top-10 % P 6.0e-4 is the discovery's own UK Biobank). Wright ties EPHX2/CLU to Alzheimer's disease, but Ensembl's CEU LD gives no pair above r² 0.05 with
   CLU's Alzheimer SNPs rs11136000 and rs9331896 (empty answers, uncached), so the lead is not that signal. Mechanism is
   ageing in general (D25.7): the Catalog holds only the four parental-longevity records at the lead; Open Targets puts
   it in lung cancer (or family history of it: C at its tag rs6558008, riding with A, OR 0.928, P 8e-12), hematocrit,
@@ -32,15 +32,19 @@ verdict_reason: >-
   at a SNP with no European smoking record, so they are named and not read as a smoking route; the family-history half
   of the lung-cancer phenotype is parents' disease, close to the lifespan phenotype itself. No trade-off: no record
   puts a harm on A's side. Descriptive. Causal C1: the lead tops Pilling's set, the one the tier rests on, at posterior
-  0.66 (rs6558008 0.23, so which of the two acts is open), and Wright's set at 0.42. Effector E2 GULOP by
+  0.66 (rs6558008 0.23, so which of the two acts is open), and Wright's set at 0.42. Pilling's set was fine-mapped
+  without in-sample LD. Effector E2 GULOP by
   colocalisation alone, put to the lead as a default: a single-cell eQTL of the pseudogene GULOP in enterocyte
   progenitors (IBDverse) colocalises with both lifespan-class sets at H4 0.98 and 0.99, the only colocalisations at
-  H4 ≥ 0.8; CHRNA2, the top locus-to-gene gene (0.23, under 0.5), colocalises in cerebellum at H4 0.52 only, so it
+  H4 ≥ 0.8; but that eQTL study has 303 samples and a QC flag, its own set is led by another SNP (0.57, the row's
+  lead 0.058), and the CLPP is about 0.05, so the call stands on H4 by §4.2's letter and little else; CHRNA2, the top locus-to-gene gene (0.23, under 0.5), colocalises in cerebellum at H4 0.52 only, so it
   does not make the call ambiguous (D24). EPHX2, the papers' label, meets no criterion and is not named. G/G, about 59
   in 100 Europeans, is the reference; A carriers are the protected (PROTECT:PRESENCE; the paper names A the rare,
   lifespan-raising allele). Age of action is unknown: the lead is not in Timmers' Figure 5 sheets. rs11780471, 97 kb
-  away in EPHX2, is genome-wide in Wright's fathers' meta-analysis (P 3.2e-8) and tags the lead at r² 0.13 (D′ 0.66):
-  not this signal's proxy, its independence untested; named here and queued for the scout (D25.6), none of its
+  away and 3.6 kb upstream of EPHX2, is genome-wide in Wright's fathers' meta-analysis (P 3.2e-8) and tags the lead at
+  r² 0.13 (D′ 0.66): not this signal's proxy, its independence untested. It is a smoking locus (its A, longer-lived in
+  Wright, lowers smoking initiation, P 5e-110, and lung cancer, P 2e-8), which is why `smoking_lungs` is put to the
+  lead beside `general_ageing`, the default; named here and queued for the scout (D25.6), none of its
   evidence cited for this row's cells. The evidence is European; A is at 0.15 in East Asians, untested there.
 axes:
   tier: {value: B, cites: [pmid-29227965#q24, pmid-29227965#q27, pmid-31484785#q96, pmid-31484785#q97, pmid-31484785#q98, pmid-31484785#q83, db-finngen-r11#q29, pmid-30642433#q248, pmid-30642433#q12, pmid-31413261#q138, pmid-30642433#q246, pmid-30642433#q247, pmid-31484785#q94]}
@@ -53,8 +57,8 @@ axes:
   context: {values: [eur_only_evidence], cites: [pmid-29227965#q27, pmid-31484785#q96, db-ensembl-116#q371]}
 flags:
   - {token: "PROTECT:PRESENCE", cites: [pmid-29227965#q26, db-ensembl-116#q370]}
-  - {token: "causal:C1", cites: [db-opentargets-26.09#q680, db-opentargets-26.09#q681, db-opentargets-26.09#q682, db-opentargets-26.09#q683, db-opentargets-26.09#q684, db-opentargets-26.09#q687, db-opentargets-26.09#q688]}
-  - {token: "effector:E2", cites: [db-opentargets-26.09#q689, db-opentargets-26.09#q690, db-opentargets-26.09#q691, db-opentargets-26.09#q692, db-opentargets-26.09#q693, db-opentargets-26.09#q694, db-opentargets-26.09#q695, db-opentargets-26.09#q685, db-opentargets-26.09#q686, db-ensembl-116#q368]}
+  - {token: "causal:C1", cites: [db-opentargets-26.09#q680, db-opentargets-26.09#q681, db-opentargets-26.09#q682, db-opentargets-26.09#q683, db-opentargets-26.09#q684, db-opentargets-26.09#q687, db-opentargets-26.09#q688, db-opentargets-26.09#q704]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q689, db-opentargets-26.09#q690, db-opentargets-26.09#q691, db-opentargets-26.09#q692, db-opentargets-26.09#q693, db-opentargets-26.09#q694, db-opentargets-26.09#q695, db-opentargets-26.09#q685, db-opentargets-26.09#q686, db-ensembl-116#q368, db-opentargets-26.09#q705, db-opentargets-26.09#q706, db-opentargets-26.09#q707, db-opentargets-26.09#q708, db-opentargets-26.09#q709, db-opentargets-26.09#q710, db-opentargets-26.09#q711]}
   - {token: replication_failed, cites: [pmid-30642433#q248, pmid-30642433#q12, pmid-31413261#q138]}
 variants:
   - rsid: rs7844965
@@ -119,7 +123,7 @@ studies:
     study_design: parental_lifespan_cox
     population: European (UK Biobank and the 26 LifeGen cohorts)
     ancestry: [EUR]
-    sample_size: 640187
+    sample_size: 1012240
     sample_unit: lives
     stat_significance: suggestive
     p_value: "7.2193739e-08"
@@ -129,7 +133,7 @@ studies:
     effect_unit: log hazard protection per A allele (positive = longer life)
     effect_allele: A
     direction: protective
-    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0046, '++'; holds Pilling's UK Biobank, so not a replication; the window 27.1 to 27.8 Mb (GRCh37) has nothing below 5e-8, rs6558008 (r² 0.97) the smallest P, 5.8e-8 (q247)"
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0046, '++', the file's n 640,187 at this SNP; holds Pilling's UK Biobank, so not a replication; the window 27.1 to 27.8 Mb (GRCh37) has nothing below 5e-8, rs6558008 (r² 0.97) the smallest P, 5.8e-8 (q247)"
     curator: claude-opus-5-5
   - rsid: rs7844965
     note: pmid-30642433
@@ -250,5 +254,5 @@ studies:
     effect_unit: log hazard of the end of healthspan per A allele (negative = later)
     effect_allele: A
     direction: protective
-    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), SE 0.00578, Z −1.78, −log10 P 1.125; one-sided 0.037, about 0.041 after the paper's genomic control of 1.053 (pmid-30729179#q59, D26.1; derived); p_one_sided half the deposited raw P, nominal under D26.13; scores beside the co-occurring lifespan study (D16)"
+    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), SE 0.00578, Z −1.78, −log10 P 1.125; one-sided 0.037, about 0.041 after the paper's genomic control of 1.053 (pmid-30729179#q59, D26.1; derived); p_one_sided half the deposited raw P, nominal under D26.13; UK Biobank, the discovery's own sample, so it replicates nothing (D25.11)"
     curator: claude-opus-5-5

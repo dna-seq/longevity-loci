@@ -1346,3 +1346,10 @@ rs7844965 with rs6558008 in CEU: r² 0.97, D′ 1.00. One signal. For row 53.
 > [q373] [0] population_name 1000GENOMES:phase_3:CEU d_prime 0.658662 variation2 rs11780471 r2 0.128361 variation1 rs7844965
 
 rs7844965 with rs11780471 in CEU: r² 0.13, D′ 0.66. Not a proxy (pmid-31484785#q99). For row 53.
+
+## Reading 2026-11-11, supplement
+
+> [q374] [0].transcript_consequences[2] variant_allele A impact MODIFIER gene_symbol EPHX2 distance 3579 strand 1 biotype protein_coding hgnc_id HGNC:3402 gene_id ENSG00000120915 transcript_id ENST00000518328 gene_symbol_source HGNC
+
+Ensembl VEP for rs11780471 (`vep-rs11780471.json`): upstream of EPHX2 (about 3.6 kb, every EPHX2 transcript), no
+transcript holding it. For row 53.
