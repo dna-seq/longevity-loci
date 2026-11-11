@@ -89,6 +89,9 @@ wake_from = "longevity-loci/lead longevity-loci/scout longevity-loci/curator lon
 cmd = "sh kit:bin/py.sh kit:classes/desk/watch-answers.py longevity-loci runner"
 
 # No nodes watcher: the kit's watches the GPU partition, which a CPU-only runner never uses (the runner, 2026-11-11).
+# Every ll- job of the repository, followed by its prefix: start, requeue, end with state and log (kit #380).
+[seat.runner.watch.jobs]
+cmd = "bash kit:drivers/slurm/watch-jobs.sh"
 
 [seat.runner.zulip]
 pool = "~/.config/agent-seat-blueprints/zulip/pool"
