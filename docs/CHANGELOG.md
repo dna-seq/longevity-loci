@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- A database release's record is cached and its quotes checked (RM3): `loci fetch-supp db-<database>-<release> …` takes Open Targets' GraphQL (`opentargets:<query>`), Ensembl's REST (pairwise LD among it) or a summary-statistics file, refuses a release other than the key's where the database states one, and caches a JSON answer one object a line.
 - A multivariate healthspan-lifespan test supports a tier A/B row on its allele, direction and P, having no single effect size (D15).
 - `loci fetch-supp` reads a gzipped file, and `--rows REGEX` caches only the lines a row needs (with each table's header), so a summary-statistics deposit (Zenin 2019's 237 MB csv.gz) can back a quote.
 - just-dna-format 0.8's longevity reference example and the compiler's longevitymap v2 shape audit, copied into `docs/format08_reference/`, with `docs/FORMAT08_REFERENCE.md` saying what they settle for the export and the rows.

@@ -77,8 +77,17 @@ A fact read from a database release (Open Targets' fine-mapping and locus-to-gen
 has a note of its own, `corpus/db-<database>-<release>.md` (`db-opentargets-26.09`), cited from an axis or a flag
 like any note (`db-opentargets-26.09#q1`), never as a study's `note`: a study is an article's analysis. Its front
 matter: `key`, `database`, `release`, `url` (where the record was read), `accessed` (the day), `depth: record`; no
-pmid, doi, title or title_checked. Its readings are `## Reading <YYYY-MM-DD>, record`, each quote a value as the
-record shows it (D12).
+pmid, doi, title or title_checked. Its readings are `## Reading <YYYY-MM-DD>, record`, each quote copied from the record as the cache holds it (D12).
+
+A record is cached by `uv run loci fetch-supp db-<database>-<release> <locator> --name <file>.json` (RM3): the
+locator a URL (Ensembl's REST API, a GWAS Catalog summary-statistics file with `--rows`), or `opentargets:<GraphQL
+query>`, which is posted to Open Targets' API. Where the database states its release (Open Targets'
+`meta.dataVersion`, Ensembl's `info/data`), it is asked first, and a release other than the key's is refused: a
+later release is a different source. A JSON answer is cached one object a line: the object's path, then its scalar
+fields as `key value` pairs (`data.variant.alleleFrequencies[2] populationName nfe_adj alleleFrequency 0.0694`),
+nested objects and lists on lines of their own. A quote under a `record` reading is located in the note's cached
+records. A record is never pasted into the cache by hand: the check would then compare the curator's copy with
+itself.
 
 ## The article cache: `$LOCI_CACHE/<key>.txt`
 
@@ -139,9 +148,7 @@ nothing to check.
     `direction` is `contested` (a trade-off with unresolved net direction, §6.2). Fewer than three genotypes is
     `incomplete`, a warning listed with `-v`: an APOE-style locus is scored as a diplotype (§6.4).
 
-Not checked yet: a database release's quotes, which are `no_text` (unknown) until something fetches the
-release's record into the cache (never a record pasted by hand, which would check the curator's copy against
-itself); R-TIER-3 (an ancestry banner, the consumer's) and R-TIER-1's "research view only" (the
+Not checked yet: R-TIER-3 (an ancestry banner, the consumer's) and R-TIER-1's "research view only" (the
 module's), the tier A criteria a field cannot show (N, replication, heterogeneity), which genotype is the most common, and that a cited quote bears on the claim it is
 cited for. A quote is a substring: one cut short so that it drops a "not" before it
 is still located, so a quote is a whole sentence or table cell (§6.3), and that is the curator's to keep.

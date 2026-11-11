@@ -325,7 +325,8 @@ def located(quote: str, forms: tuple[str, ...]) -> bool:
 
 def check_quotes(corpus: Path, cache: Path) -> list[Finding]:
     """Every quote of every note is found in its cached text: `<cache>/<key>.txt` for a quote read in the article,
-    the article's and its supplements' (`<key>.supp-*.txt`, RM4) for one read in a supplement. A quote whose text is
+    the article's and its supplements' (`<key>.supp-*.txt`, RM4) for one read in a supplement, and a database
+    record's cached answers (the same names under a `db-` key, RM3) for one read in a record. A quote whose text is
     not cached is unknown; a located supplement quote names the file it was found in."""
     notes, findings = load_corpus(corpus)
     for key, note in notes.items():
@@ -333,7 +334,7 @@ def check_quotes(corpus: Path, cache: Path) -> list[Finding]:
         supps = sorted(cache.glob(f"{glob.escape(key)}.supp-*.txt"))
         texts = {p.name: text_forms(p.read_text(encoding="utf-8", errors="strict")) for p in [article, *supps] if p.is_file()}
         for qid, quote in note.quotes.items():
-            if quote.depth is Depth.SUPPLEMENT:
+            if quote.depth in (Depth.SUPPLEMENT, Depth.RECORD):  # a supplement's or a database record's files
                 where = [n for n in texts if n != article.name] + ([article.name] if article.name in texts else [])
                 wanted = f"{key}.supp-*.txt"
                 if not supps:

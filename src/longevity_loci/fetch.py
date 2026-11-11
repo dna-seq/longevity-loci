@@ -68,15 +68,17 @@ def jats_to_text(xml: str) -> str:
     return html.unescape(re.sub(r"<[^>]+>", "", xml))
 
 
-def _get(url: str, timeout: float) -> bytes:
-    with urllib.request.urlopen(url, timeout=timeout) as r:
+def _get(url: str, timeout: float, body: bytes | None = None) -> bytes:
+    """A GET, or with `body` a POST of JSON (a GraphQL API that answers no GET)."""
+    req = urllib.request.Request(url, data=body, headers={"Content-Type": "application/json"} if body is not None else {})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.read()
 
 
-def _request(url: str, timeout: float) -> _Reply:
-    """One GET, its failure sorted by what the caller should do next."""
+def _request(url: str, timeout: float, body: bytes | None = None) -> _Reply:
+    """One GET (or POST of `body`), its failure sorted by what the caller should do next."""
     try:
-        return _Reply(None, _get(url, timeout))
+        return _Reply(None, _get(url, timeout) if body is None else _get(url, timeout, body))
     except urllib.error.HTTPError as e:
         kind = Outcome.UNREACHABLE if e.code in RETRYABLE_HTTP else Outcome.REFUSED
         return _Reply(kind, status=e.code, detail=f"HTTP {e.code} from {url}")

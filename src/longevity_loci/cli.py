@@ -111,12 +111,13 @@ def fetch_supp_cmd(
     locator: str = typer.Argument(..., help="a file's URL, zenodo:ID or figshare:ID"),
     only: str | None = typer.Option(None, help="a regular expression a deposit's file name must match"),
     rows: str | None = typer.Option(None, help="keep only the lines this regular expression finds, and each table's header"),
+    name: str | None = typer.Option(None, help="the file name to cache one URL's answer under (an API's answer: name.json)"),
 ) -> None:
     """Fetch an article's supplement, data deposit or code file into $LOCI_CACHE as text, beside the article's,
     where `check quotes` looks for a quote read at depth `supplement`. Exit 0 all fetched, 1 a file refused (no
     text for its kind), none found or a refused request, 3 a service did not answer (retry)."""
     cache = _cache()
-    result = fetch_supplement(key, locator, cache, only, rows=rows)
+    result = fetch_supplement(key, locator, cache, only, rows=rows, name=name)
     if result.outcome is not None:
         typer.echo(f"{result.outcome.value:12} {locator}  {result.detail}")
     for f in result.files:

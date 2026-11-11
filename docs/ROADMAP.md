@@ -30,13 +30,3 @@ Read from the first row (46-LPA, the module seat, 2026-11-10), three things the 
 `studies.csv` is keyed (variant, pmid), and a row may hold two analyses of one article (validate warns on the
 duplicate); `stat_significance` has no `nominal` (D11); a study on a proxy states the proxy's alleles, which must not
 be written on the lead variant while 0.7.1 has no `proxy_rsid`. Each is RM1's to settle when it is built.
-
-## RM3 — a database release's record fetched into the cache
-
-**State:** unattended. **Owner:** lead. A `db-` note's quotes are unknown until its record is in `$LOCI_CACHE`
-(D12). `loci fetch` learns a database release: Open Targets' variant and locus-to-gene records first (the
-curator's 46-LPA cites them), gnomAD's frequencies next, each rendered to lines a quote can be located in, with a
-sidecar saying the release, the URL and the sha256. The release read must equal the note's `release`, or the fetch
-refuses: a later release is a different source.
-Ensembl's 1000 Genomes pairwise LD (`ld/human/pairwise/<a>/<b>`, r² and D′ by population) belongs here too: a
-proxy's r² to its lead is now cited from prose (the read of 38-HLA-DQA1, 2026-11-11).

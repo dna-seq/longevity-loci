@@ -8,6 +8,7 @@ import gzip
 import hashlib
 import io
 import json
+import re
 import shutil
 import zipfile
 from pathlib import Path
@@ -145,3 +146,41 @@ def test_a_filtered_supplement_keeps_each_sheet_header_and_the_row(tmp_path: Pat
     assert set(lines) <= set(full.splitlines(keepends=True))  # nothing written that the full rendering lacks
     side = json.loads(cached.path.with_name(cached.path.name.removesuffix(".txt") + ".source.json").read_text())
     assert side["rows"] == r"\trs11065979\t"
+
+
+def test_a_json_record_is_one_object_a_line() -> None:
+    record = {"data": {"variant": {"id": "6_160589086_A_G", "rsIds": ["rs10455872"],
+                                   "alleleFrequencies": [{"populationName": "nfe_adj", "alleleFrequency": 0.0694},
+                                                         {"populationName": "eas_adj", "alleleFrequency": None}]}}}
+    assert render("variant.json", json.dumps(record).encode()) == (
+        "data.variant id 6_160589086_A_G\n"
+        "data.variant.rsIds[0] rs10455872\n"
+        "data.variant.alleleFrequencies[0] populationName nfe_adj alleleFrequency 0.0694\n"
+        "data.variant.alleleFrequencies[1] populationName eas_adj alleleFrequency null\n")
+
+
+def test_a_database_record_is_refused_under_another_release(tmp_path: Path) -> None:
+    """RM3: Ensembl states its release; a db note naming another is refused before anything is fetched, and one
+    naming the current release is cached, and a record-depth quote from it is located."""
+    probe = fetch_supplement("db-ensembl-1", "https://rest.ensembl.org/info/data?content-type=application/json",
+                             tmp_path, name="info.json")
+    if probe.outcome is Outcome.REFUSED and "could not be read" in probe.detail:
+        pytest.skip(f"Ensembl unreachable: {probe.detail}")
+    assert probe.outcome is Outcome.REFUSED and "not 1" in probe.detail, probe
+    assert list(tmp_path.iterdir()) == []
+    current = re.search(r"serves release (\d+)", probe.detail)[1]
+    key = f"db-ensembl-{current}"
+    (tmp_path / "c").mkdir()
+    got = fetch_supplement(key, "https://rest.ensembl.org/info/data?content-type=application/json", tmp_path / "c",
+                           name="info.json")
+    assert got, got
+    [cached] = got.files
+    line = next(l for l in cached.path.read_text().splitlines() if l.startswith("releases[0] "))
+    assert line == f"releases[0] {current}"
+    corpus = tmp_path / "corpus"
+    corpus.mkdir()
+    (corpus / f"{key}.md").write_text(
+        f"---\nkey: {key}\ndatabase: ensembl\nrelease: \"{current}\"\nurl: https://rest.ensembl.org/info/data\n"
+        f"accessed: 2026-11-11\ndepth: record\n---\n\n## Reading 2026-11-11, record\n\n> [q1] {line}\n")
+    found = {f.where: f for f in check_quotes(corpus, tmp_path / "c")}
+    assert found["q1"].kind is Kind.LOCATED and cached.path.name in found["q1"].detail
