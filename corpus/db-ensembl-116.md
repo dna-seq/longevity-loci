@@ -372,3 +372,39 @@ African ancestry between cases and controls would shift its frequency on its own
 rs2643826: a regulatory-region variant, GRCh38 3:27,521,497, C/T, T ancestral. C is the major allele in Europeans
 (gnomAD non-Finnish 0.555, 1000 Genomes EUR 0.548) and East Asians (0.68), rare in Africans (0.026). By gnomAD's
 European frequency about 31 in 100 Europeans are C/C, 49 C/T and 20 T/T. Open Targets' id is 3_27521497_C_T.
+
+## rs9872864 and rs2271961 (IP6K1), for row 21
+
+> [q96] . MAF 0.425432 source Variants (including SNPs and indels) imported from dbSNP minor_allele A name rs9872864 var_class SNP most_severe_consequence intron_variant ambiguity N
+
+> [q97] mappings[0] location 3:49754590-49754590 seq_region_name 3 assembly_name GRCh38 start 49754590 end 49754590 ancestral_allele A strand 1 allele_string A/C/G/T coord_system chromosome
+
+> [q98] populations[11] allele_count 34773 frequency 0.5117 allele G population gnomADg:nfe
+
+> [q99] populations[77] population 1000GENOMES:phase_3:EAS frequency 0.160714285714286 allele_count 162 allele A
+
+rs9872864: an intron variant, GRCh38 3:49,754,590, reference A, alternative G (Open Targets' 3_49754590_A_G). G is
+0.512 in gnomAD's non-Finnish Europeans, A 0.488: G is the major allele by a hair. In East Asians A is 0.16 (1000
+Genomes). By gnomAD's European frequency about 26 in 100 Europeans are G/G, 50 A/G and 24 A/A.
+
+> [q105] populations[8] population gnomADg:afr allele A frequency 0.6264 allele_count 25914
+
+A is the major allele in Africans (gnomAD 0.63).
+
+> [q100] [0] variation1 rs9872864 r2 0.988107 variation2 rs2271961 d_prime 1.000000 population_name 1000GENOMES:phase_3:EUR
+
+rs9872864 and rs2271961 are 86 kb apart and almost the same SNP in Europeans: r² 0.99, D′ 1.00 in 1000 Genomes
+EUR. Which alleles travel together is derived from East Asian frequencies, where they are not near one half:
+rs9872864's A is 0.161 there and rs2271961's C 0.166 (q99, q104), so A rides with C and G with T. Timmers' signs
+agree (pmid-30642433#q59, q60).
+
+> [q101] . minor_allele C most_severe_consequence intron_variant var_class SNP name rs2271961 source Variants (including SNPs and indels) imported from dbSNP ambiguity H MAF 0.417582
+
+> [q102] mappings[0] strand 1 seq_region_name 3 end 49840680 ancestral_allele C assembly_name GRCh38 allele_string T/A/C coord_system chromosome start 49840680 location 3:49840680-49840680
+
+> [q103] populations[33] allele T allele_count 34936 frequency 0.5138 population gnomADg:nfe
+
+> [q104] populations[92] frequency 0.165674603174603 population 1000GENOMES:phase_3:EAS allele_count 167 allele C
+
+rs2271961: an intron variant, GRCh38 3:49,840,680, reference T, alternative C (3_49840680_T_C). T is 0.514 in
+gnomAD's non-Finnish Europeans; C is 0.166 in East Asians.

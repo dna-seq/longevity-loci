@@ -896,3 +896,64 @@ expression or other QTL set. FinnGen R12's hypertension set (q220, q221; β +0.0
 one variant, the lead at PIP 0.995 (q222 to q224); L2G SLC4A7 0.545 (q225, q226). The lead also leads a set for a chronic
 kidney disease fast-progression risk score (GCST90892633), β +0.0069 per T (q227, q228): C on the lower-score side by Open Targets'
 orientation, not checked against the study, which the catalog's 63 records do not hold. For row 20.
+
+## rs9872864 and rs2271961 (IP6K1), for row 21
+
+> [q229] data.variant.credibleSets count 538
+
+> [q230] data.variant.credibleSets count 431
+
+rs9872864 (3_49754590_A_G) lies in 538 credible sets, rs2271961 (3_49840680_T_C) in 431. Paging every set (a
+reading, not cached as one file): two are of a scoring class, Wright 2019's mothers' set and Rosoff 2023's mvAge
+set below, and each SNP is in both. The rest are GWAS of other traits and QTL sets. rs9872864 leads no other set.
+rs2271961 leads one GWAS set of another trait, Friligkou 2024's anxiety disorder (PICS, P 2e-9; its catalog record
+is db-gwascatalog-2026.10.29#q172), and GTEx expression, transcript and splicing sets for UBA7 and RNF123 (artery,
+liver, brain, lung, thyroid, heart, testis); none of these is colocalised with a scoring set (q240).
+
+> [q231] data.credibleSet finemappingMethod PICS confidence PICS fine-mapped credible set based on reported top hit
+
+> [q232] data.credibleSet.study id GCST009449 traitFromSource Parental longevity (mother's age at death or mother's attained age)
+
+> [q233] data.credibleSet.locus count 78
+
+> [q234] data.credibleSet.locus.rows[0] posteriorProbability 0.02040303431189384
+
+> [q235] data.credibleSet.locus.rows[56] posteriorProbability 0.011291352787322049
+
+> [q236] data.credibleSet.locus.rows[56].variant id 3_49840680_T_C
+
+Wright 2019's mothers' set (GCST009449): PICS from the reported top hit, 78 variants. rs9872864 leads it at
+posterior 0.020; rs2271961 is in it at 0.011 (row 56 of the member list). The posteriors are flat, about 0.01 to 0.02
+each: the set marks a region and picks no variant.
+
+> [q237] data.credibleSet.l2GPredictions.rows[0] score 0.10563313961029053
+
+> [q238] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol MST1R
+
+> [q239] data.credibleSet.l2GPredictions.rows[4].target approvedSymbol IP6K1
+
+L2G's top gene is MST1R at 0.11; IP6K1 is fifth at 0.064. No gene is near 0.5.
+
+> [q240] data.credibleSet.colocalisation count 201
+
+201 colocalisations for each of the two sets (this line is in both sets' files; three pages each read). All 201
+are with GWAS sets, none with an expression, splicing or protein QTL. The GWAS partners at H4 ≥ 0.8 are blood
+pressure and hypertension, intelligence and educational attainment, serum vitamin D, lung function (FEV1, peak
+flow), HDL lipid fractions, pain and post-traumatic stress, among others. Colocalisation carries no direction.
+
+> [q241] data.credibleSet.study id GCST90321079 traitFromSource Aging
+
+> [q242] data.credibleSet.locus count 80
+
+> [q243] data.credibleSet.locus.rows[0] posteriorProbability 0.02281116119543302
+
+> [q244] data.credibleSet.locus.rows[31] posteriorProbability 0.01294394708269974
+
+Rosoff 2023's mvAge set (GCST90321079): PICS from the reported top hit (the same method line as q231), 80 variants;
+rs2271961 leads at 0.023, rs9872864 is in it at 0.013 (row 31).
+
+> [q245] data.credibleSet.l2GPredictions.rows[0] score 0.19249854981899261
+
+> [q246] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol GMPPB
+
+Its L2G top gene is GMPPB at 0.19. No gene reaches 0.5 in either set.

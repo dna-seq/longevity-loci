@@ -524,3 +524,41 @@ allele C, P 4e-8, no β (q157 to q159), and Rosoff 2023's mvAge, C β +0.0063, P
 against the rest: Giri 2019's systolic pressure lists C with "0.4106 mmHg increase" at a risk frequency of 0.457
 (q162, q163). It conflicts with every other record; whether its allele or its sign is wrong is unknown (0.457 fits T
 in Europeans, db-ensembl-116#q92, or C in a mixed sample, as Verma's 0.47 at q146), so it is not read as a direction.
+
+## rs9872864 and rs2271961 (IP6K1), for row 21
+
+> [q164] page size 100 totalElements 2 totalPages 1 number 0
+
+> [q165] _embedded.associations[1] association_id 47749032 risk_frequency NR pvalue_description pvalue_mantissa 7 pvalue_exponent -10 multi_snp_haplotype false snp_interaction false range - beta - p_value 7.000000000000001e-10 accession_id GCST009449 pubmed_id 31484785 first_author Wright KM
+
+> [q166] _embedded.associations[1].snp_effect_allele[0] rs9872864-G
+
+rs9872864 has two catalog records. Wright 2019's maternal lifespan (GCST009449): P 7 × 10⁻¹⁰, reported allele G,
+no effect size. G is the allele the supplement shows lengthening mothers' lives (pmid-31484785#q52).
+
+> [q167] _embedded.associations[0] association_id 165298819 risk_frequency NR pvalue_description pvalue_mantissa 3 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range - beta 5.521 z score increase p_value 3.0000000000000004e-08 accession_id GCST90565218 pubmed_id 39192244 first_author Nogawa S
+
+> [q168] _embedded.associations[0].snp_effect_allele[0] rs9872864-A
+
+Nogawa 2024's dental caries: A, z 5.52 "increase", P 3 × 10⁻⁸. Not a disease of lifespan the row reads; stated only.
+
+> [q169] page size 100 totalElements 3 totalPages 1 number 0
+
+> [q170] _embedded.associations[1] association_id 131476397 risk_frequency NR pvalue_description pvalue_mantissa 3 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range [0.0041-0.0081] beta 0.006065845 unit increase p_value 3.0000000000000004e-09 accession_id GCST90321079 pubmed_id 37550455 first_author Rosoff DB ci_lower 0.0041 ci_upper 0.0081
+
+> [q171] _embedded.associations[1].snp_effect_allele[0] rs2271961-T
+
+rs2271961 has three. Rosoff 2023's mvAge (GCST90321079): T, β +0.0061 (95 % CI 0.0041 to 0.0081) "unit increase",
+P 3 × 10⁻⁹. On mvAge a higher value is healthier ageing (pmid-37550455#q2), so T is on the healthier side. Rosoff's
+cached text does not list rs2271961; this record is the source, as at row 11.
+
+> [q172] _embedded.associations[0] association_id 136813534 risk_frequency NR pvalue_description pvalue_mantissa 2 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range - beta 0.011 unit decrease p_value 2e-09 accession_id GCST90451690 pubmed_id 39294497 first_author Friligkou E
+
+> [q173] _embedded.associations[0].snp_effect_allele[0] rs2271961-T
+
+> [q174] _embedded.associations[2] association_id 47433890 risk_frequency 0.4957 pvalue_description pvalue_mantissa 9 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.0052-0.011] beta 0.0081 unit increase p_value 9e-08 accession_id GCST008529 pubmed_id 31046077 first_author Zhong VW ci_lower 0.0052 ci_upper 0.011
+
+> [q175] _embedded.associations[2].snp_effect_allele[0] rs2271961-C
+
+Friligkou 2024's anxiety disorder: T, β 0.011 "unit decrease", P 2 × 10⁻⁹. Zhong 2019's tea consumption: C, β 0.0081
+increase, P 9 × 10⁻⁸ (suggestive). Neither is read as a mechanism.

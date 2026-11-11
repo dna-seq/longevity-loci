@@ -20,7 +20,7 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   compacting` to the lead, `watchdog.sh compact`, end the turn; the lead wakes the next. Stop at 80 % of the 7-day
   window or 95 % of the 5-hour window. After each tenth `done:`, re-measure the pacing and
   go on with the next ten, unless blocked or steered (the person, 2026-11-11, via the lead, 639316091: "After 10
-  adjust pacing and go next 10 and so on unless blocked or I steer"; this replaces the earlier pause after ten). Rows done in this run: 6 CELSR2 (1 of 10), 38 HLA-DQA1 (2 of 10), 81 FES/FURIN (3 of 10), 103 (4 of 10), 2 PABPC4 (5 of 10), 4 LINC02796 (6 of 10), 5 FPGT / TNNI3K (7 of 10), 7 MAGI3 (8 of 10), 8 IL6R Asp358Ala with 157 (9 of 10); 10 RABGAP1L (10 of 10); second run: 11 LINC01875 (1 of 10), 12 KCNK3 (2 of 10), 13 PRKD3 (3 of 10), 14 LINC01122 (4 of 10), 15 AFF3 (5 of 10), 16 LRP1B (6 of 10), 17 CASP8 (7 of 10), 18 TMEM43 (8 of 10), 19 HMGB3P12 (9 of 10), 20 RNU1-96P (10 of 10), then the lead's review of 103, 8, 2, 10 with 5, 4 and 11 under D17/D18 (one commit each, not counted as rows); 6's healthspan re-cited to Zenin's cached file (597d9fb); 103 re-tiered B under D16 (5abae88); the Open Targets quotes re-quoted from cached records (f69c8d8); the corrections of 71 (d44fd4a) and 67 (3dd792c) done, the E3 gene rule at 57 (8d27300) and 80 (728d78d), 67's MANOVA study added under D15 (a519ae4); 38 corrected again at 103 (the AncestryDNA tag is shared); next 96 APOE waits on D2, so the seed tier B by locus_id.
+  adjust pacing and go next 10 and so on unless blocked or I steer"; this replaces the earlier pause after ten). Rows done in this run: 6 CELSR2 (1 of 10), 38 HLA-DQA1 (2 of 10), 81 FES/FURIN (3 of 10), 103 (4 of 10), 2 PABPC4 (5 of 10), 4 LINC02796 (6 of 10), 5 FPGT / TNNI3K (7 of 10), 7 MAGI3 (8 of 10), 8 IL6R Asp358Ala with 157 (9 of 10); 10 RABGAP1L (10 of 10); second run: 11 LINC01875 (1 of 10), 12 KCNK3 (2 of 10), 13 PRKD3 (3 of 10), 14 LINC01122 (4 of 10), 15 AFF3 (5 of 10), 16 LRP1B (6 of 10), 17 CASP8 (7 of 10), 18 TMEM43 (8 of 10), 19 HMGB3P12 (9 of 10), 20 RNU1-96P (10 of 10); third run: 21 IP6K1 held (notes committed, row not; see its entry), then the lead's review of 103, 8, 2, 10 with 5, 4 and 11 under D17/D18 (one commit each, not counted as rows); 6's healthspan re-cited to Zenin's cached file (597d9fb); 103 re-tiered B under D16 (5abae88); the Open Targets quotes re-quoted from cached records (f69c8d8); the corrections of 71 (d44fd4a) and 67 (3dd792c) done, the E3 gene rule at 57 (8d27300) and 80 (728d78d), 67's MANOVA study added under D15 (a519ae4); 38 corrected again at 103 (the AncestryDNA tag is shared); next 96 APOE waits on D2, so the seed tier B by locus_id.
 - **10 RABGAP1L** (2026-11-11), tier C re-tiered (seed B); briefly blocked on a `study_design` value, which the lead
   added as `current_age_quantitative` (8187cb8; the study written as a row, not prose). Both seed rsIDs
   (rs10798302 lead, rs16847402; r² 0.53, D′ 0.99, cached as db-ensembl-116 `ld-rs10798302-rs16847402.json`) come
@@ -147,6 +147,17 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   autoimmune direction from Joshi q11 (rs3184504-T raises type 1 diabetes); cancer trade-off from Timmers q7, no
   "slightly"; per copy, parents about 1.7 months ("nearly two months"). Deelen and LifeGen share the Rotterdam
   Study (Timmers q13). eLife source data is at `https://cdn.elifesciences.org/articles/39856/elife-39856-figN-dataM-v2.xlsx`.
+- **21 IP6K1** (2026-11-11), **held**: notes committed, the row drafted and kept out of `rows/` (it fails the model).
+  Lead rs9872864, its proxy rs2271961 (Rosoff's mvAge SNP; r² 0.99, D′ 1, G with T). The anchor is Wright 2019's
+  maternal meta-analysis, P 6.9e-10 (Table 3, S9), with Deelen's 90th percentile an independent replication (G, P
+  0.020, no UK Biobank or AncestryDNA sample): A on §4.1's letter. But Wright prints no pooled effect, so it cannot
+  be a study supporting A/B (§6.3, row 93's precedent), and the only genome-wide alternative, mvAge at rs2271961,
+  exists only as the GWAS Catalog's record: Rosoff's text omits it, its summary statistics are not deposited
+  (GCST90321079, `full_summary_stats_available` false), the publisher refuses a scripted fetch of MOESM3 (HTTP 403),
+  and a db note cannot be a study's note. Asked the lead: a D15-style allowance for a meta-analysis that prints P and
+  per-arm effects but no pooled one, or MOESM3 fetched by hand. Rejected meanwhile: a generic Rosoff quote, a pooled
+  β computed here (the paper's METAL P does not match an inverse-variance pool), an effect-less Wright row, tier C.
+  Other calls ride with it: A on §4.1's letter against B; PROTECT absence-of-risk on a 51/49 split; C3 and E3, no gene.
 - **20 RNU1-96P** (2026-11-11), tier B kept, advisor-checked. Lead rs2643826 (SLC4A7), the D16 shape of rows 4, 14
   and 15 with Timmers 2020's MANOVA beside mvAge. First `preventable` with `act_test:bp`: the blood-pressure effect is
   at the lead itself (63 catalog records, one direction; Giri 2019's record runs against the rest, its allele or sign wrong, not read).
