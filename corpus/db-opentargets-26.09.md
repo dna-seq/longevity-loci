@@ -1242,3 +1242,32 @@ on three (q315 on Timmers 2020's), none cis on mvAge's:
 SH2B3 passes locus-to-gene (0.95, q23) but colocalises nowhere; ALDH2 meets a criterion of its own (cis
 colocalisation) and holds every cis colocalisation: two genes, each on a different criterion, so under D24 the call
 is ambiguous, `effector:E3`, no gene named (the lead's ruling on this row, 2026-11-11).
+
+### rs646776 (CELSR2/PSRC1/SORT1), for row 6
+
+Pilling 2017's fathers' set (1a658d9f), the row's only lifespan-class set (q29's prose):
+
+> [q321] data.credibleSet.colocalisation count 153
+
+> [q322] data.credibleSet.colocalisation.rows[97] rightStudyType eqtl h4 0.995913527601195 clpp 0.18801749224528802
+
+> [q323] data.credibleSet.colocalisation.rows[97].otherStudyLocus isTransQtl false
+
+> [q324] data.credibleSet.colocalisation.rows[97].otherStudyLocus.study.target approvedSymbol PSRC1
+
+> [q325] data.credibleSet.colocalisation.rows[128] rightStudyType eqtl h4 0.9966203633591767 clpp 0.22160667286621008
+
+> [q326] data.credibleSet.colocalisation.rows[128].otherStudyLocus isTransQtl false
+
+> [q327] data.credibleSet.colocalisation.rows[128].otherStudyLocus.study.target approvedSymbol CELSR2
+
+> [q328] data.credibleSet.colocalisation.rows[145] rightStudyType eqtl h4 0.995088419409183 clpp 0.15587794660913037
+
+> [q329] data.credibleSet.colocalisation.rows[145].otherStudyLocus isTransQtl false
+
+> [q330] data.credibleSet.colocalisation.rows[145].otherStudyLocus.study.target approvedSymbol SORT1
+
+All 153 reach H4 ≥ 0.8; 39 are trans (protein QTLs), and of the 114 cis, PSRC1 holds 56 (expression), CELSR2 38
+(expression and splicing), SORT1 16, ATXN7L2 2 and SYPL2 2. SORT1 (0.99) and CELSR2 (0.97) both pass
+locus-to-gene (q30) and both colocalise, and PSRC1 colocalises most: under D24 the call is ambiguous,
+`effector:E3`, no gene named (the lead's ruling on this row, 2026-11-11).

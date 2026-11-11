@@ -15,8 +15,9 @@ verdict_reason: >-
   summary statistics, P 1.2e-4). The lifespan-raising allele is the rarer one, which lowers LDL cholesterol, so
   the protection is a presence. The lead is the seed's rs646776 rather than a study's reported SNP: it sits in
   Pilling's fathers' credible set at PIP 0.11 (the reported SNPs at 0.05 to 0.07) and at r² 0.94 to Wright's lead.
-  The effector is SORT1 by locus-to-gene score (0.99; CELSR2 0.97 also passes); the expression analysis of Timmers
-  2019 names PSRC1, and no colocalisation was read. Age of action is unknown: no cached source gives this locus's
+  Effector E3, no gene named (D24): SORT1 (0.99) and CELSR2 (0.97) both pass locus-to-gene and both colocalise
+  with cis QTLs, and PSRC1 holds the most cis colocalisations (56 of 114; CELSR2 38, SORT1 16); the expression
+  analysis of Timmers 2019 names PSRC1. Age of action is unknown: no cached source gives this locus's
   own age bands. Timmers 2019's figure source data labels rs4970836's alleles the other way round from its table;
   the table, the frequencies and the biology agree, and are followed. All four seed rsIDs are one signal here.
 axes:
@@ -31,12 +32,12 @@ axes:
 flags:
   - {token: "PROTECT:PRESENCE", cites: [pmid-29227965#q11]}
   - {token: "causal:C2", cites: [db-opentargets-26.09#q29]}
-  - {token: "effector:E2", cites: [db-opentargets-26.09#q30]}
+  - {token: "effector:E3", cites: [db-opentargets-26.09#q30, db-opentargets-26.09#q321, db-opentargets-26.09#q322, db-opentargets-26.09#q323, db-opentargets-26.09#q324, db-opentargets-26.09#q325, db-opentargets-26.09#q326, db-opentargets-26.09#q327, db-opentargets-26.09#q328, db-opentargets-26.09#q329, db-opentargets-26.09#q330]}
   - {token: "ld_proxy_of:rs646776", cites: [db-opentargets-26.09#q29, db-opentargets-26.09#q31]}  # rs602633, rs4970836, rs599839 in the set
   - {token: "mediator:EFO_0004611", cites: [pmid-30642433#q11]}          # low density lipoprotein cholesterol measurement
 variants:
   - rsid: rs646776
-    gene: SORT1
+    gene: ""
     phenotype: LDL cholesterol and heart disease
     trait_efo_id: EFO_0007796
     effect_allele: C
@@ -50,8 +51,8 @@ variants:
         conclusion: >-
           You carry two copies of the common version of this DNA region, the one most people of European ancestry
           have (about 61 in 100). It is the reference the other versions are compared with, so it neither raises
-          nor lowers your expected lifespan here. The region, on chromosome 1, controls the SORT1 gene in the
-          liver, which helps set LDL cholesterol, the "bad" cholesterol. A standard cholesterol test your doctor
+          nor lowers your expected lifespan here. The region, on chromosome 1, acts on genes in the liver that
+          help set LDL cholesterol, the "bad" cholesterol. A standard cholesterol test your doctor
           can order shows your actual LDL level, which matters far more than this DNA result. The finding comes
           from people of European ancestry; less is known elsewhere.
       - genotype: C/T
