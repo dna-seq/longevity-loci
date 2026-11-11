@@ -1,0 +1,150 @@
+# The seed list's locus 26, GPR78 (4p16.1). Curated 2026-11-11, the third ten-row run's fourth row. Lead rs7676745
+# (4:8,563,820 in GRCh38, 4:8,565,547 in GRCh37; the seed's only rsID), Deelen 2019's one genome-wide locus besides
+# APOE. No other seed locus lies near it. Its two rare neighbours in the summary statistics, rs10022617 and
+# rs10009267, tag it weakly (r² 0.45 and 0.48) and appear only in the notes.
+locus_id: 26
+locus_name: GPR78
+verdict: re-tiered
+verdict_reason: >-
+  Tier D, from the seed's B: a genome-wide longevity result that the larger European tests contradict, the case
+  §4.1 files as "explicitly contradicted" (its own examples, USP42 and TMTC2, are published longevity SNPs Timmers
+  2019 found no association for at their published effects). In Deelen 2019's European meta-analysis the rare A
+  (4 % in Europeans) lowers the odds of reaching the 90th percentile age, OR 0.67, P 4.3e-8, with no heterogeneity
+  across cohorts (I² 0). That rests on fewer people than the study's totals: six cohorts, several of them
+  long-lived-family or centenarian studies, have no data for it, and the summary statistics give an effective N of
+  8,023. The planned replication could not type it, and the authors ask for replication in independent cohorts. The
+  trans-ethnic version, the GWAS Catalog's record, is P 1.7e-7, and A is absent in East Asians, so it adds nothing
+  on this variant. Deelen's own validation in UK Biobank, which the discovery does not include, does not replicate
+  it. Parents reaching the 90th percentile age give OR 0.98 (0.92–1.06), P 0.67, and the authors state they had
+  power even at half the effect. At the discovery's β −0.41 (SE 0.074) against the replication's SE of about 0.036,
+  one-sided power is about 1.00. The two estimates differ at heterogeneity z −4.7 (P about 3e-6) at the full effect,
+  or z −3.5 (P about 0.0004) at half the effect for a parent's genotype. Under either scaling that is D21's red flag.
+  Timmers 2019's million parental lives put A on the longer-lived side (P 0.25), the same summary statistic as
+  Deelen's parental-lifespan line. Both rare neighbours, whose minor alleles ride with A by frequency and r², also
+  lean longer-lived (P 0.30 each). Nothing leans the discovery's way, which is D22.3's condition for D, not C. The
+  alternative is B on §4.1's letter (one genome-wide study, no independent replication), with the 71/67 rule's cap.
+  That is put to the lead. Row 103's C came from its healthspan-only anchor (D17.1), which does not apply here.
+  Healthspan is null (Zenin 2019, P 0.64) and lifespan null. Exceptional survival is filed 0: the discovery's 90th
+  percentile result is contradicted by the powered parental 90th percentile test, and the 99th percentile summary
+  statistics have no row for the lead or its neighbours. No other trait is recorded for the variant (Phenoscanner,
+  per the authors, and the GWAS Catalog). The mechanism is unknown, filed as general ageing as row 10 is. GPR78's
+  function is largely unknown. Open Targets 26.09 has no record of the variant and no lifespan-class set holding
+  it, so causal and effector confidence are C4 and E4, and no gene is named (§4.2). The locus keeps the seed's
+  label. Age of action is unknown.
+axes:
+  tier: {value: D, cites: [pmid-31413261#q52, pmid-31413261#q53, pmid-31413261#q54, pmid-31413261#q55, pmid-31413261#q56, pmid-31413261#q57, pmid-31413261#q58, pmid-31413261#q59, pmid-31413261#q60, pmid-31413261#q61, pmid-31413261#q62, pmid-31413261#q64, pmid-31413261#q2, pmid-30642433#q73, pmid-30642433#q74, pmid-30642433#q75, pmid-30642433#q76, db-ensembl-116#q129, db-ensembl-116#q130, db-ensembl-116#q131]}
+  mechanism: {value: general_ageing, cites: [pmid-31413261#q63]}
+  pleiotropy: {values: [], cites: [pmid-31413261#q63, db-gwascatalog-2026.10.29#q188]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
+            cites: [pmid-30729179#q43, pmid-30642433#q73, pmid-31413261#q54, pmid-31413261#q59, pmid-31413261#q60]}
+  actionability: {label: descriptive, cites: [pmid-31413261#q63]}
+  context: {values: [eur_only_evidence], cites: [pmid-31413261#q54, db-ensembl-116#q131, db-ensembl-116#q132]}
+flags:
+  - {token: replication_failed, cites: [pmid-31413261#q57, pmid-31413261#q58, pmid-31413261#q59]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q410, db-opentargets-26.09#q411]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q410, db-opentargets-26.09#q411]}
+variants:
+  - rsid: rs7676745
+    gene: ""
+    phenotype: GPR78 region, survival to old age
+    trait_efo_id: OBA_VT0005372
+    effect_allele: G
+    effect_size: 1.49
+    effect_measure: OR
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA region, the one most people of European ancestry
+          have (about 91 in 100). It is the reference the other combinations are compared with. The region, on
+          chromosome 4, lies near the GPR78 gene, whose job is largely unknown. A link between this region and
+          long life was reported once and has not held up in larger studies.
+      - genotype: A/G
+        state: risk
+        conclusion: >-
+          You carry one copy of a rare version of this DNA region (about 8 in 100 people of European ancestry do;
+          it is almost absent in East Asian people). In one study of very old people this version was a little less
+          common among those who reached about 90. Larger studies of parents' lifespans did not confirm it, so
+          the link is not supported: it is most likely chance. It says nothing reliable about your own lifespan.
+      - genotype: A/A
+        state: risk
+        conclusion: >-
+          You carry two copies of a rare version of this DNA region (about 2 in 1,000 people of European ancestry
+          do). In one study of very old people this version was less common among those who reached about 90.
+          Larger studies of parents' lifespans did not confirm it, so the link is not supported: it is most likely
+          chance. It says nothing reliable about your own lifespan.
+studies:
+  - rsid: rs7676745
+    note: pmid-31413261
+    quote: q52
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's discovery cohorts, those with data for the variant)
+    ancestry: [EUR]
+    stat_significance: significant
+    p_value: "4.3E-08"
+    p_value_num: 4.3e-08
+    effect_size: 0.67
+    effect_measure: OR
+    effect_unit: odds ratio of reaching the 90th percentile age, per A allele
+    effect_allele: A
+    direction: risk
+    statistical_test: "Table 2 (q52-q54): logistic regression, fixed-effect meta-analysis, 90th percentile cases against all controls; I² 0, heterogeneity P 0.462; summary statistics β −0.4076 (SE 0.0744), P 4.284e-8, effective N 8,023 (q64); six cohorts had no data for the variant (q56), so the sample is smaller than Table 1's 11,262 cases and 25,483 controls, and no sample size is entered; no UK Biobank data (q2); not typed in the de novo replication (q55); trans-ethnic P 1.7e-7 (q62)"
+    curator: claude-opus-5-5
+  - rsid: rs7676745
+    note: pmid-31413261
+    quote: q59
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: British (UK Biobank participants' parents)
+    ancestry: [EUR]
+    n_cases: 19742
+    stat_significance: not_significant
+    p_value: "0.667"
+    p_value_num: 0.667
+    effect_size: 0.98
+    effect_measure: OR
+    effect_unit: odds ratio of a parent reaching the 90th percentile age, per A allele in the participant
+    effect_allele: A
+    direction: risk
+    statistical_test: "Table 3, parental longevity (q57-q59): 95 % CI 0.92-1.06, so SE about 0.036; the authors had adequate power even at half the effect (q58); D21 at the parental line: one-sided power about 1.00 at the discovery's β (no UK Biobank in it) or at half of it; heterogeneity z −4.7 (P about 3e-6) at the full effect, −3.5 (P about 0.0004) at half; a red flag either way. A parent's survival to the 90th percentile age, the discovery's case definition read in parents; filed as extreme survival, as no parental class has that cut"
+    curator: claude-opus-5-5
+  - rsid: rs7676745
+    note: pmid-30642433
+    quote: q73
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the 26 LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 635383
+    sample_unit: lives
+    stat_significance: not_significant
+    p_value: "0.24739822"
+    p_value_num: 0.24739822
+    effect_size: 0.01182557
+    effect_measure: beta
+    effect_unit: beta1 on parental lifespan per A allele, longer positive
+    effect_allele: A
+    direction: protective
+    statistical_test: "LifeGen summary statistics (SE 0.0102, direction ++, info 0.89): A on the longer-lived side, opposite to the discovery; Deelen's Table 3 parental lifespan line is this statistic (OR 1.01, P 0.247; pmid-31413261#q60); the rare neighbours rs10022617 (minor G) and rs10009267 (minor C), which ride with A, are on the same side, P 0.30 each (q74, q75; db-ensembl-116#q129, q130); some LifeGen cohorts are among Deelen's (D19.1 counts the overlap as independent)"
+    curator: claude-opus-5-5
+  - rsid: rs7676745
+    note: pmid-30729179
+    quote: q43
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: British (UK Biobank)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.64"
+    p_value_num: 0.64
+    effect_size: 0.00577
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per A allele
+    effect_allele: A
+    direction: risk
+    statistical_test: "Zenin 2019's summary statistics: SE 0.0122, Z 0.47, −log10 P 0.195 (P about 0.64, computed from the printed −log10 P)"
+    curator: claude-opus-5-5

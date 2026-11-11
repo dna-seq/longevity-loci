@@ -490,3 +490,27 @@ frequency): the same ceilings, observed 0.67 (q122), so G rides with T. rs168438
 with T 0.70, against T 0.29, observed 0.70 (q118), so A with T. rs2285086's G at 0.427 (pmid-30642433#q72): with T
 0.86, against T 0.48, observed 0.83, so G with T. Derived in Europeans; no East Asian frequency of the lead is cached,
 so the East Asian phase is assumed the same, not shown. For row 25.
+
+## Reading 2026-11-11, record
+
+rs7676745 (GPR78), for row 26: its frequencies (variation-rs7676745) and its linkage disequilibrium with the two
+rare neighbours in Deelen's and Timmers' summary statistics (ld-rs7676745-<rsid>), 1000 Genomes phase 3 EUR.
+
+> [q129] [0] population_name 1000GENOMES:phase_3:EUR d_prime 0.679539 r2 0.450810 variation2 rs10022617 variation1 rs7676745
+
+> [q130] [0] d_prime 0.715629 population_name 1000GENOMES:phase_3:EUR variation1 rs7676745 variation2 rs10009267 r2 0.475724
+
+rs10022617 (r² 0.45, D′ 0.68) and rs10009267 (r² 0.48, D′ 0.72): weak tags of the lead, neither a proxy at r² 0.8.
+
+> [q131] populations[64] allele_count 1008 allele G frequency 1 population 1000GENOMES:phase_3:EAS
+
+> [q132] populations[67] allele A allele_count 44 population 1000GENOMES:phase_3:EUR frequency 0.0437375745526839
+
+> [q133] mappings[0] assembly_name GRCh38 ancestral_allele G end 8563820 seq_region_name 4 strand 1 start 8563820 location 4:8563820-8563820 allele_string G/A coord_system chromosome
+
+rs7676745 is 4:8,563,820 (GRCh38), G/A, G ancestral. A is 0.044 in 1000 Genomes Europeans (gnomAD non-Finnish
+Europeans 0.046) and absent in East Asians (G 1, 1,008 chromosomes). Under Hardy-Weinberg in Europeans, G/G about 91
+in 100, A/G about 8, A/A about 0.2. Phase of the neighbours, by frequency and r² ceilings (never by direction): with
+the lead's A at 0.044 and rs10009267's C at 0.037 (pmid-30642433#q75), the coupled phase allows r² up to 0.83 and the
+opposite phase at most 0.002, so the observed 0.48 puts C with A; rs10022617's G at 0.036 (q74 there) likewise
+(0.83 against 0.002, observed 0.45), G with A. For row 26.

@@ -608,3 +608,15 @@ lumbar disc herniation (GCST90837384), P 4 × 10⁻⁷, no allele: below genome-
 
 Rosoff 2023's mvAge at rs16843836: G, a decrease of 0.0080, P 7 × 10⁻¹³, matching Supplementary Table 6
 (pmid-37550455#q21). For row 25.
+
+Row 26 (GPR78). associations-rs7676745: one record.
+
+> [q186] _embedded.associations[0] association_id 47713506 risk_frequency 0.96 pvalue_description  pvalue_mantissa 2 pvalue_exponent -7 multi_snp_haplotype false snp_interaction false range [1.28-1.72] or_per_copy_num 1.4925373 or_value 1.4925373 beta - p_value 2e-07 accession_id GCST008600 pubmed_id 31413261 first_author Deelen J ci_lower 1.28 ci_upper 1.72
+
+> [q187] _embedded.associations[0].snp_effect_allele[0] rs7676745-G
+
+> [q188] page size 50 totalElements 1 totalPages 1 number 0
+
+The Catalog's only association for rs7676745 is Deelen 2019's trans-ethnic 90th percentile result (GCST008600,
+P 2e-7, OR 1.49 per G, the inverse of Table 4's 0.67 per A; pmid-31413261#q62), not the European discovery's 4.3e-8.
+No other trait is recorded for the variant. For row 26.

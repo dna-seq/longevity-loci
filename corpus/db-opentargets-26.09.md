@@ -1532,3 +1532,13 @@ is put to the lead.
 lipid fractions in VLDL and HDL, eGFR (0.95), depression and major depression (0.95), waist-hip ratio adjusted for BMI
 (0.91) and aspartate aminotransferase; frailty at 0.68. No direction is given; Timmers 2022's look-ups give some
 (pmid-37118362#q9-q13). No disease of the heart, vessels or cancer leads it.
+
+## rs7676745 (GPR78), for row 26
+
+> [q410] data.credibleSets count 0
+
+> [q411] data variant null
+
+rs7676745 (4_8563820_G_A): no credible set of the eight lifespan, healthspan, longevity and current-age studies
+holds it (`credibleSets-longevity8-4_8563820_G_A.json`), and Open Targets 26.09 has no record of the variant at all
+(`variant-4_8563820_G_A.json`), so no locus-to-gene score or colocalisation: causal C4, effector E4. For row 26.
