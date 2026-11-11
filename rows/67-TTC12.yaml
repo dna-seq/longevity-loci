@@ -191,15 +191,16 @@ studies:
     n_cases: 3484
     sample_size: 28967
     sample_unit: individuals
-    stat_significance: not_significant
+    stat_significance: nominal
     p_value: "0.09673"
     p_value_num: 0.09673
+    p_one_sided: 0.0484
     effect_size: 1.071
     effect_measure: OR
     effect_unit: odds ratio of reaching the 99th percentile, per A allele
     effect_allele: A
     direction: protective
-    statistical_test: "Look-up of Pilling's fathers' rs61905747 in Supplementary Data 1; same side, not nominal"
+    statistical_test: "Look-up of Pilling's fathers' rs61905747 in Supplementary Data 1; same side, not nominal; p_one_sided, nominal under D26.13"
     curator: claude-opus-5-5
   - rsid: rs61905747
     note: pmid-31484785
