@@ -906,3 +906,36 @@ rs3131621) also reads as r² below 0.05, both being in the panel. For row 37.
 
 Pairwise LD in 1000 Genomes CEU (`ld-rs646776-rs4970836.json`): Timmers 2019's CELSR2/PSRC1 SNP rs4970836 tags row
 6's lead rs646776 at r² 0.90 (D′ 0.97), so Figure 5's bands for rs4970836 are read for row 6. For the Figure 5 sweep.
+
+## Reading 2026-11-11, record
+
+> [q250] mappings[0] location 6:34624313-34624313 seq_region_name 6 start 34624313 end 34624313 coord_system chromosome assembly_name GRCh38 strand 1 allele_string A/G ancestral_allele A
+
+> [q251] populations[74] allele A population 1000GENOMES:phase_3:EUR frequency 0.898608349900596 allele_count 904
+
+> [q252] populations[75] allele_count 102 frequency 0.101391650099404 allele G population 1000GENOMES:phase_3:EUR
+
+> [q253] populations[75] population 1000GENOMES:phase_3:EUR frequency 0.13220675944334 allele_count 133 allele T
+
+> [q254] populations[75] allele C allele_count 140 frequency 0.139165009940358 population 1000GENOMES:phase_3:EUR
+
+> [q255] [495] population_name 1000GENOMES:phase_3:CEU d_prime 0.999997 r2 0.791662 variation2 rs9462007 variation1 rs6907508
+
+> [q256] [176] variation2 rs9462014 r2 0.728448 variation1 rs6907508 population_name 1000GENOMES:phase_3:CEU d_prime 1.000000
+
+> [q257] [590] variation1 rs6907508 variation2 rs145294670 r2 1.000000 d_prime 1.000000 population_name 1000GENOMES:phase_3:CEU
+
+> [q258] [24] d_prime 1.000000 population_name 1000GENOMES:phase_3:CEU variation1 rs6907508 variation2 rs3800461 r2 1.000000
+
+> [q259] [66] d_prime 0.999998 population_name 1000GENOMES:phase_3:CEU variation1 rs6907508 variation2 rs2492863 r2 0.826920
+
+> [q260] [315] variation1 rs6907508 r2 0.826920 variation2 rs2814948 d_prime 0.999998 population_name 1000GENOMES:phase_3:CEU
+
+> [q261] [332] variation1 rs6907508 variation2 rs2814993 r2 0.826920 d_prime 0.999998 population_name 1000GENOMES:phase_3:CEU
+
+rs6907508 at 6:34,624,313 (GRCh38; 6:34,592,090 in GRCh37), A/G, A ancestral (q250); A 0.899, G 0.101 in 1000 Genomes
+EUR (q251, q252). Ensembl's CEU window (`ld-window-ceu-rs6907508.json`, ±250 kb, r² ≥ 0.05) holds 35 SNPs at r² ≥ 0.8.
+Wright's tags: rs9462007 r² 0.79, D′ 1.00 (q255), its T 0.13 in EUR (q253); rs9462014 r² 0.73, D′ 1.00 (q256), its C
+0.14 (q254). The proxies whose GWAS Catalog records row 39 reads: rs145294670 and rs3800461, r² 1.00 (q257, q258);
+rs2492863, rs2814948 and rs2814993, r² 0.83, D′ 1.00 (q259 to q261). At D′ 1 a minor allele near the lead's 10 %
+travels with the lead's minor G (derived, not phased).

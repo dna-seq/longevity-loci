@@ -49,3 +49,12 @@ Row 32's lead rs138499810 (q7): T 0.0211 in Finns, β +0.02294 (SE 0.02583), P 0
 significant. Row 37's two seed SNPs: rs3130507 A β +0.0139 (SE 0.0099), P 0.16, so G, Pilling's longer-lived
 mothers' allele, toward less death (q8); rs3131621 G β +0.0114 (SE 0.0081), P 0.16, so A, the longer-lived fathers'
 allele, toward less death (q9). Neither significant.
+
+## Reading 2026-11-11, record
+
+> [q10] 6 34624313 A G rs6907508 ILRUN 0.110073 0.958319 0.0151637 0.00949 0.190708 0.189631 0.190843
+
+The same DEATH file, cached again with row 39's rows (`rows-ac81c46d`; the header is q1). rs6907508, alt G (0.19 in
+Finns): β +0.0152 (SE 0.0095), P 0.11, G toward more death, the side of the discovery's shorter-lived G; not
+significant (one-sided 0.055, derived). Its tags rs9462007 and rs9462014 are in the same cached rows, the same signal,
+not read separately.

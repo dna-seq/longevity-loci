@@ -1,0 +1,204 @@
+# The seed list's locus 39, ILRUN (6p21.31). Curated 2026-11-11, after the Figure 5 sweep. Lead rs6907508 (Rosoff
+# 2023's mvAge, Table 1), the seed's only rsID here: an intron variant of ILRUN (C6orf106 in the paper). Wright 2019's
+# Supplemental Table 9 holds two SNPs on the lead's haplotype (rs9462007, r² 0.79; rs9462014, r² 0.73), read as one
+# signal. Open Targets 26.09: 705 credible sets hold the lead, mvAge's among them; it leads 205, most of them lipids,
+# apolipoproteins, height and lean mass. The GWAS Catalog (2026-10-29) holds 42 associations for it and 146 for the 25
+# of its 35 proxies at r² ≥ 0.8 that have records.
+locus_id: 39
+locus_name: ILRUN
+verdict: kept
+verdict_reason: >-
+  Tier B, as the seed has it: a genome-wide multivariate result with a co-occurring lifespan study (§4.5 as D16
+  reads it); a multivariate result does not meet tier A's first criterion (D18.3), whatever its replication.
+  Genome-wide significant only in Rosoff 2023's mvAge, the common factor behind healthspan, frailty, exceptional
+  longevity, parental lifespan and epigenetic age (P 1.9e-9, A raising the factor, so G, the minor allele at 10 % in
+  Europeans, is on the less healthy side); Rosoff lists it as novel. Timmers 2019's million parents' lives are the
+  co-occurring lifespan study: A lengthens life at P 6.9e-5, nominal, UK Biobank and LifeGen on the same side.
+  Healthspan agrees nominally: A delays the end of healthspan in Zenin 2019's UK Biobank (P 3.4e-5). Exceptional
+  survival is 0: Deelen 2019's summary statistics lean to A at the 90th (P 0.070) and 99th percentiles (P 0.055) and
+  pass at neither two-sided (one-sided about 0.035 and 0.027). All three are inputs to mvAge, the same samples.
+  Outside them, Wright 2019's AncestryDNA mothers support the signal at rs9462007, 123 kb away on the lead's haplotype
+  (r² 0.79, D′ 1): its minor T, which travels with G, shortens mothers' lives at raw P 0.016 (one-sided 0.008); the
+  genomic-control P is not printed (the SNP is not in the per-cohort table, so it is above 0.003 there). The counted
+  allele is derived, not printed: the UK Biobank arm carries the same sign (heterogeneity P 0.79) and agrees with
+  Timmers' UK Biobank at the lead only on G's haplotype. rs9462014 (r² 0.73) agrees at raw P 0.012; one signal, read
+  once (D17.1); the fathers lean the same way (raw P 0.083). FinnGen's death endpoint leans the same way and does not
+  pass (G toward more death, P 0.11). The Q test (P 0.095) finds no sign that the SNP acts off the common factor.
+  Mechanism: ageing in general (D25.7). The lead tops 205 credible sets, mostly lipids: per G it lowers
+  apolipoprotein B (P 2e-17), LDL (1e-20) and total cholesterol (1e-28), and also apolipoprotein A-I (2e-22) and HDL
+  particles (2e-37); it raises height (1.5e-109, PIP 0.44) and lean mass (PIP 0.997 in that set), and multisite pain.
+  On the proxies, the G haplotype goes with heart failure (two European studies, P 3e-10 and 2e-11), venous
+  thromboembolism (5e-9) and chronic lymphocytic leukaemia (2e-8); coronary disease records exist there too, from
+  studies whose ancestry the catalog does not report, so not read. No one route is shown to carry the lifespan
+  effect, so no single system is named. A trade-off (D18.1): the longer-life A raises LDL and apolipoprotein B, an
+  established risk factor, quoted at the lead itself, while the same haplotype has less heart failure and
+  thrombosis; on lifespan A's side wins, so the net direction is resolved and the states are not neutral.
+  Actionability is descriptive, as a trade-off makes it. Causal confidence C3: rs6907508 leads mvAge's credible set
+  (PICS, 96 members) at PIP 0.085, the next at 0.055. Effector E2, ILRUN: 86 of the set's 102 QTL colocalisations
+  (H4 ≥ 0.8) are ILRUN's expression and exon-level QTLs, ILRUN-AS1 holds 8 (under D24's tenth), BLTP3A 4, and no gene
+  passes locus-to-gene (SNRPC 0.20, ILRUN 0.10), so the call rests on colocalisation alone. Hospital frailty's set
+  (Mak 2025) holds the lead at PIP 0.011 behind a neighbour, named only (D25.5). The GWAS Catalog's NMR-metabolite
+  lines (GCST90501xxx) print G "increase" where Open Targets' sets for the same accessions give a decrease per G;
+  those lines are not read for direction. The protection is the absence of the risk allele: G shortens life and A is
+  the common one. Age of action is unknown: no cached source gives this locus's own age bands.
+axes:
+  tier: {value: B, cites: [pmid-37550455#q38, pmid-37550455#q39, pmid-37550455#q40, pmid-37550455#q2, pmid-37550455#q3, pmid-37550455#q5, pmid-30642433#q213, pmid-30729179#q61, pmid-31413261#q95, pmid-31413261#q96, pmid-31484785#q75, pmid-31484785#q76, pmid-31484785#q77, pmid-31484785#q78, pmid-31484785#q15, db-ensembl-116#q253, db-ensembl-116#q254, db-ensembl-116#q255, db-ensembl-116#q256, db-finngen-r11#q10, db-gwascatalog-2026.10.29#q241, db-gwascatalog-2026.10.29#q242, db-gwascatalog-2026.10.29#q243]}
+  mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q525, db-opentargets-26.09#q527, db-opentargets-26.09#q529, db-opentargets-26.09#q531, db-opentargets-26.09#q533, db-opentargets-26.09#q535, db-opentargets-26.09#q537, db-opentargets-26.09#q541, db-gwascatalog-2026.10.29#q253, db-gwascatalog-2026.10.29#q256, db-gwascatalog-2026.10.29#q259, db-gwascatalog-2026.10.29#q262, db-gwascatalog-2026.10.29#q265, db-gwascatalog-2026.10.29#q272]}
+  pleiotropy: {values: ["mech:cvd", broad, tradeoff], cites: [pmid-37550455#q38, db-opentargets-26.09#q517, db-opentargets-26.09#q525, db-opentargets-26.09#q526, db-opentargets-26.09#q527, db-opentargets-26.09#q528, db-gwascatalog-2026.10.29#q244, db-gwascatalog-2026.10.29#q245, db-gwascatalog-2026.10.29#q246, db-gwascatalog-2026.10.29#q253, db-gwascatalog-2026.10.29#q254, db-gwascatalog-2026.10.29#q255, db-gwascatalog-2026.10.29#q268, db-gwascatalog-2026.10.29#q256, db-gwascatalog-2026.10.29#q257, db-gwascatalog-2026.10.29#q258, db-gwascatalog-2026.10.29#q269, db-gwascatalog-2026.10.29#q259, db-gwascatalog-2026.10.29#q260, db-gwascatalog-2026.10.29#q261, db-gwascatalog-2026.10.29#q270, db-gwascatalog-2026.10.29#q262, db-gwascatalog-2026.10.29#q263, db-gwascatalog-2026.10.29#q264, db-gwascatalog-2026.10.29#q271, db-ensembl-116#q257, db-ensembl-116#q258, db-ensembl-116#q259, db-ensembl-116#q260]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
+            cites: [pmid-30729179#q61, pmid-30642433#q213, pmid-31413261#q95, pmid-31413261#q96, pmid-37550455#q40, pmid-31484785#q75]}
+  actionability: {label: descriptive, cites: [db-opentargets-26.09#q525, db-opentargets-26.09#q527, db-gwascatalog-2026.10.29#q253, db-gwascatalog-2026.10.29#q259]}
+  context: {values: [eur_only_evidence], cites: [pmid-37550455#q38, pmid-30642433#q213, pmid-31484785#q75]}
+flags:
+  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-37550455#q38, pmid-30642433#q213, db-ensembl-116#q251, db-ensembl-116#q252]}
+  - {token: "causal:C3", cites: [db-opentargets-26.09#q519, db-opentargets-26.09#q520, db-opentargets-26.09#q521, db-opentargets-26.09#q522]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q523, db-opentargets-26.09#q524, db-opentargets-26.09#q548, db-opentargets-26.09#q549]}
+variants:
+  - rsid: rs6907508
+    gene: ILRUN
+    phenotype: ILRUN region, blood fats and heart
+    trait_efo_id: EFO_0007796
+    effect_allele: A
+    effect_size: 0.0102
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    negatives: >-
+      The longer-life version, A, goes with slightly higher LDL ("bad") cholesterol and apolipoprotein B, a risk
+      factor for heart disease, though it also goes with less heart failure and fewer blood clots; across whole
+      lives its side comes out ahead.
+    genotypes:
+      - genotype: A/A
+        state: neutral
+        conclusion: >-
+          You carry two copies of the more common version of this DNA region (about 81 in 100 people of European
+          ancestry do). It is the reference the other combinations are compared with. The region, on chromosome 6,
+          near the ILRUN gene, is linked to blood fats, heart failure, blood clots and body size. The finding comes
+          from people of European ancestry; less is known elsewhere.
+      - genotype: A/G
+        state: risk
+        conclusion: >-
+          You carry one copy of a less common version of this DNA region (about 18 in 100 people of European
+          ancestry do). In very large European studies that combined healthspan, frailty, long life and biological
+          age into one measure, this version went with slightly less healthy ageing, and parents of carriers lived a
+          little less long. Nearby versions that travel with it go with a somewhat higher risk of heart failure and
+          of blood clots in the veins. The same version goes with slightly lower LDL ("bad") cholesterol, which
+          would usually count in its favour, so it is a mixed picture. It is a likely finding, not a settled one.
+          The effect is small and it is a tendency, not destiny.
+      - genotype: G/G
+        state: risk
+        conclusion: >-
+          You carry two copies of a less common version of this DNA region (about 1 in 100 people of European
+          ancestry do). In very large European studies that combined healthspan, frailty, long life and biological
+          age into one measure, each copy went with slightly less healthy ageing, and parents of carriers lived a
+          little less long. Nearby versions that travel with it go with a somewhat higher risk of heart failure and
+          of blood clots in the veins. The same version goes with slightly lower LDL ("bad") cholesterol, which
+          would usually count in its favour, so it is a mixed picture. It is a likely finding, not a settled one.
+          The effect is small and it is a tendency, not destiny.
+studies:
+  - rsid: rs6907508
+    note: pmid-37550455
+    quote: q40
+    phenotype_class: MULTIVARIATE_AGEING
+    study_design: multivariate_healthspan_lifespan
+    population: European (the five input GWAS, UK Biobank and LifeGen among them; effective n 1,958,774)
+    ancestry: [EUR]
+    stat_significance: significant
+    p_value: "1.9E-09"
+    p_value_num: 1.9e-09
+    effect_size: 0.0102
+    effect_measure: beta
+    effect_unit: mvAge factor per A allele (no conventional unit; positive = healthier ageing)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Genomic SEM common-factor GWAS of healthspan, frailty, exceptional longevity, parental lifespan and PhenoAge acceleration (Table 1, q38, novel lead; Supplementary Table 7, effect allele first; the frequency column is the minor allele's, G's); Q P 0.095; pools the samples of the component studies, not a replication (q5)"
+    curator: claude-opus-5-5
+  - rsid: rs6907508
+    note: pmid-30642433
+    quote: q213
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "6.8550293e-05"
+    p_value_num: 6.8550293e-05
+    effect_size: 0.02387568
+    effect_measure: beta
+    effect_unit: log hazard protection per A allele in self (positive = longer life)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), n 638,103, direction ++ in UK Biobank and LifeGen, info 0.99; the co-occurring lifespan study (D16), an input of mvAge and not a replication"
+    curator: claude-opus-5-5
+  - rsid: rs6907508
+    note: pmid-30729179
+    quote: q61
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "3.4E-05"
+    p_value_num: 3.4e-05
+    effect_size: 0.0315
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per G allele (positive = earlier)
+    effect_allele: G
+    direction: risk
+    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), z 4.146, -log10 P 4.47; mvAge's healthspan input, the same sample"
+    curator: claude-opus-5-5
+  - rsid: rs6907508
+    note: pmid-31413261
+    quote: q95
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.07025"
+    p_value_num: 0.07025
+    effect_size: 0.0554
+    effect_measure: beta
+    effect_unit: log odds of reaching the 90th percentile, per A allele
+    effect_allele: A
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008598), effective N 11,615; one-sided about 0.035 (derived); mvAge's exceptional-longevity input, not a replication"
+    curator: claude-opus-5-5
+  - rsid: rs6907508
+    note: pmid-31413261
+    quote: q96
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.05488"
+    p_value_num: 0.05488
+    effect_size: 0.0941
+    effect_measure: beta
+    effect_unit: log odds of reaching the 99th percentile, per A allele
+    effect_allele: A
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), effective N 4,524; one-sided about 0.027 (derived); its cases a subset of the 90th's, mvAge's input, so not a replication"
+    curator: claude-opus-5-5
+  - rsid: rs6907508
+    note: pmid-31484785
+    quote: q75
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_linear
+    population: AncestryDNA customers' mothers (mostly European American)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.01557"
+    p_value_num: 0.01557
+    proxy_rsid: rs9462007
+    effect_size: -0.009052
+    effect_measure: beta
+    effect_unit: mothers' lifespan per T allele of rs9462007 (printed label G, read as the complement of the other allele A, derived; positive = longer)
+    effect_allele: T
+    direction: risk
+    statistical_test: "Supplemental Table 9, the AncestryDNA arm of the mothers' meta-analysis, raw P (beta/SE); the genomic-control P, Wright's own call, is not printed: rs9462007 is not in Supplemental Table 8, so it is above 0.003 in each birth cohort there; the counted allele derived from the UK Biobank arm's sign against Timmers' summary statistics (pmid-30642433#q213); rs9462007 r² 0.79, D′ 1.00 to the lead, its T with G by EUR frequency (db-ensembl-116#q253, q255, derived); independent of mvAge's inputs; one-sided P about 0.008 (derived); rs9462014 (r² 0.73) agrees at raw P 0.012 (q76), the same signal (D17.1); fathers raw P 0.083 (q77); UK Biobank arm P 4.6e-4, heterogeneity P 0.79"
+    curator: claude-opus-5-5

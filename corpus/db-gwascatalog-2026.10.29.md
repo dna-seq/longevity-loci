@@ -821,3 +821,92 @@ the UK (`study-GCST000984.json`, q240). Phase, derived: with T at about 0.22 and
 Ensembl note), D′ 1 and r² 0.83 fit only T on the A haplotype (r² about 0.86; the other phase gives at most 0.11). So
 the nephropathy risk allele travels with the lead's shorter-lived A: the same side, no trade-off. q239 is Bejaoui
 2019's psoriasis sample (`study-GCST008096.json`), Egyptian. For row 37.
+
+## Reading 2026-11-11, record
+
+> [q241] risk_frequency NR pvalue_description pvalue_mantissa 2 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range [0.0069-0.0135] beta 0.010191999 unit increase p_value 2e-09 accession_id GCST90321079
+
+> [q242] _embedded.associations[22].reported_trait[0] Aging
+
+> [q243] _embedded.associations[22].snp_effect_allele[0] rs6907508-A
+
+> [q244] risk_frequency 0.884473 pvalue_description pvalue_mantissa 2 pvalue_exponent -17 multi_snp_haplotype false snp_interaction false range [0.021-0.034] beta 0.0276231 unit increase p_value 2e-17 accession_id GCST010243
+
+> [q245] _embedded.associations[28].reported_trait[0] Apolipoprotein B levels
+
+> [q246] _embedded.associations[28].snp_effect_allele[0] rs6907508-A
+
+> [q247] risk_frequency NR pvalue_description pvalue_mantissa 7 pvalue_exponent -21 multi_snp_haplotype false snp_interaction false range [0.027-0.041] beta 0.0339 unit decrease p_value 6.999999999999999e-21 accession_id GCST90018974
+
+> [q248] _embedded.associations[24].reported_trait[0] Total cholesterol levels
+
+> [q249] _embedded.associations[24].snp_effect_allele[0] rs6907508-G
+
+> [q250] risk_frequency NR pvalue_description pvalue_mantissa 2 pvalue_exponent -24 multi_snp_haplotype false snp_interaction false range [0.03-0.03] beta 0.03 mmol/L increase p_value 2e-24 accession_id GCST90501278
+
+> [q251] _embedded.associations[6].reported_trait[0] Total free cholesterol levels
+
+> [q252] _embedded.associations[6].snp_effect_allele[0] rs6907508-G
+
+> [q253] risk_frequency 0.1632 pvalue_description pvalue_mantissa 3 pvalue_exponent -10 multi_snp_haplotype false snp_interaction false range [0.0068-0.0129] beta 0.00984 unit increase p_value 3e-10 accession_id GCST90668013
+
+> [q254] _embedded.associations[0].reported_trait[0] Heart failure (MTAG)
+
+> [q255] _embedded.associations[0].snp_effect_allele[0] rs2492863-A
+
+> [q256] risk_frequency 0.166 pvalue_description pvalue_mantissa 2 pvalue_exponent -11 multi_snp_haplotype false snp_interaction false range - beta 6.6832886 z-score increase p_value 2e-11 accession_id GCST90668077
+
+> [q257] _embedded.associations[0].reported_trait[0] Heart failure (MTAG)
+
+> [q258] _embedded.associations[0].snp_effect_allele[0] rs2814948-A
+
+> [q259] risk_frequency 0.1342 pvalue_description pvalue_mantissa 5 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range [0.034-0.068] beta 0.0507 unit increase p_value 5e-09 accession_id GCST90244158
+
+> [q260] _embedded.associations[1].reported_trait[0] Venous thromboembolism
+
+> [q261] _embedded.associations[1].snp_effect_allele[0] rs145294670-A
+
+> [q262] risk_frequency 0.11 pvalue_description pvalue_mantissa 2 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [1.13-1.28] or_per_copy_num 1.2 or_value 1.2 beta - p_value 2e-08 accession_id GCST004146
+
+> [q263] _embedded.associations[20].reported_trait[0] Chronic lymphocytic leukemia
+
+> [q264] _embedded.associations[20].snp_effect_allele[0] rs3800461-C
+
+> [q265] risk_frequency 0.1431 pvalue_description pvalue_mantissa 1 pvalue_exponent -11 multi_snp_haplotype false snp_interaction false range [0.044-0.078] beta 0.061 unit increase p_value 1e-11 accession_id GCST005196
+
+> [q266] _embedded.associations[2].reported_trait[0] Coronary artery disease
+
+> [q267] _embedded.associations[2].snp_effect_allele[0] rs2814993-A
+
+> [q268] discovery_ancestry[0] 1366492 European (Finland, U.K., U.S.)
+
+> [q269] discovery_ancestry[0] 762151 European (NR)
+
+> [q270] discovery_ancestry[0] 1066917 European (Estonia, Finland, France, NR, Netherlands, Norway, Spain, U.K., U.S.)
+
+> [q271] discovery_ancestry[0] 17691 European (Australia, NR, U.K., U.S.)
+
+> [q272] discovery_ancestry[0] 250736 NR (NR, U.K.)
+
+`associations-rs6907508.json` holds 42 associations. mvAge (GCST90321079): rs6907508-A, "unit increase", P 2e-9
+(q241 to q243). Apolipoprotein B (GCST010243): A, risk frequency 0.88, "unit increase", P 2e-17 (q244 to q246); total
+cholesterol (GCST90018974): G "unit decrease", P 7e-21 (q247 to q249): A raises both, as Open Targets' sets give
+(db-opentargets-26.09). A sign conflict: the batch of NMR-metabolite lines GCST90501xxx prints G "increase" (total
+free cholesterol, GCST90501278, q250 to q252; sphingomyelins, fatty acids, very small VLDL likewise), where Open
+Targets' set for the same accession gives β −0.0324 per G with rs6907508 leading it, and every other record agrees
+with Open Targets. Those lines are not read for direction.
+
+The proxy sweep over the 35 SNPs at r² ≥ 0.8 (Ensembl's CEU window, db-ensembl-116#q250 onward): 25 have records,
+146 associations, most of them lipids, body size and liver enzymes. Read here, each on the minor allele that travels
+with the lead's G (D′ 1, frequencies; derived), each study's ancestry from its cached record:
+- heart failure (MTAG, boosted by heart-function traits; GCST90668013, European, q268):
+  rs2492863-A, risk frequency 0.16, "increase", P 3e-10 (q253 to q255); and GCST90668077 (European, q269):
+  rs2814948-A, 0.17, z 6.68, P 2e-11 (q256 to q258); both r² 0.83 (db-ensembl-116#q259, q260);
+- venous thromboembolism (GCST90244158, European, 7,177 cases, q270): rs145294670-A, 0.13, β 0.0507
+  "increase", P 5e-9 (q259 to q261), r² 1.00 (db-ensembl-116#q257);
+- chronic lymphocytic leukaemia (GCST004146, European, 4,478 cases, q271): rs3800461-C, 0.11, OR 1.2,
+  P 2e-8 (q262 to q264), r² 1.00 (db-ensembl-116#q258).
+Coronary artery disease at rs2814993-A (0.14, "increase", P 1e-11, q265 to q267; r² 0.83) and at rs2814944 (r² 0.76)
+comes from studies whose ancestry the catalog leaves unreported (GCST005196, q272; GCST005195 likewise):
+not read, as at row 37. So the shorter-lived G's haplotype goes with more heart failure, thrombosis and CLL, and
+with lower LDL and apolipoprotein B. For row 39.

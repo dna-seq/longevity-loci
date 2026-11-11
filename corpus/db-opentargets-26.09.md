@@ -1886,3 +1886,99 @@ finds none of rs6902687, rs13190937, rs13215804 or rs111859903 (Park 2025's R² 
 the four queries cached no text), where the same search finds rs12203592 (`search-rs12203592.json`). So no credible
 set holds the lead or its tags, Park 2025's whole-cohort study among them: no fine-mapping and no locus-to-gene
 score. For row 36.
+
+## Reading 2026-11-11, record
+
+> [q517] data.variant id 6_34624313_A_G referenceAllele A alternateAllele G
+
+> [q518] data.variant.alleleFrequencies[2] populationName nfe_adj alleleFrequency 0.12261263647332332
+
+> [q519] data.credibleSet studyLocusId 7e1f477e0f108539522b218bd7b3c80a finemappingMethod PICS confidence PICS fine-mapped credible set based on reported top hit pValueMantissa 2 pValueExponent -9 beta -0.010191999
+
+> [q520] data.credibleSet.study id GCST90321079 traitFromSource Aging pubmedId 37550455 publicationFirstAuthor Rosoff DB nSamples 1559001
+
+> [q521] data.credibleSet.locus count 96 data.credibleSet.locus.rows[0] posteriorProbability 0.08530487814389447 data.credibleSet.locus.rows[0].variant id 6_34624313_A_G data.credibleSet.locus.rows[0].variant.rsIds[0] rs6907508
+
+> [q522] data.credibleSet.locus.rows[1] posteriorProbability 0.05538970539646245 data.credibleSet.locus.rows[1].variant id 6_34635914_G_A data.credibleSet.locus.rows[1].variant.rsIds[0] rs76967117
+
+> [q523] data.credibleSet.l2GPredictions.rows[0] score 0.20016878843307495 data.credibleSet.l2GPredictions.rows[0].target approvedSymbol SNRPC data.credibleSet.l2GPredictions.rows[1] score 0.18480822443962097 data.credibleSet.l2GPredictions.rows[1].target approvedSymbol BLTP3A data.credibleSet.l2GPredictions.rows[2] score 0.11522052437067032 data.credibleSet.l2GPredictions.rows[2].target approvedSymbol SPDEF data.credibleSet.l2GPredictions.rows[3] score 0.09999772161245346 data.credibleSet.l2GPredictions.rows[3].target approvedSymbol ILRUN
+
+> [q524] data.credibleSet.colocalisation count 107
+
+> [q525] data.variant.credibleSets.rows[29] studyLocusId 4f6d0526ec59e6eee569c8d0d4b0ea05 studyId GCST010243 pValueMantissa 2 pValueExponent -17 beta -0.0276231 finemappingMethod PICS data.variant.credibleSets.rows[29].study traitFromSource Apolipoprotein B levels projectId GCST
+
+> [q526] data.variant.credibleSets.rows[29].locus.rows[0] posteriorProbability 0.21578285989184492 data.variant.credibleSets.rows[29].locus.rows[0].variant id 6_34624313_A_G
+
+> [q527] data.variant.credibleSets.rows[63] studyLocusId 5a60bc0384a9565c242b28f136007589 studyId GCST90498358 pValueMantissa 9.8149995803833 pValueExponent -21 beta -0.0302829 finemappingMethod PICS data.variant.credibleSets.rows[63].study traitFromSource LDL cholesterol levels projectId GCST
+
+> [q528] data.variant.credibleSets.rows[63].locus.rows[0] posteriorProbability 0.2707859811441589 data.variant.credibleSets.rows[63].locus.rows[0].variant id 6_34624313_A_G
+
+> [q529] data.variant.credibleSets.rows[86] studyLocusId f96477a844160cfc6683a4f2317db57a studyId GCST90500025 pValueMantissa 1.2710000276565552 pValueExponent -28 beta -0.035135 finemappingMethod PICS data.variant.credibleSets.rows[86].study traitFromSource Total cholesterol levels projectId GCST
+
+> [q530] data.variant.credibleSets.rows[86].locus.rows[0] posteriorProbability 0.3758171221540299 data.variant.credibleSets.rows[86].locus.rows[0].variant id 6_34624313_A_G
+
+> [q531] data.variant.credibleSets.rows[77] studyLocusId 5d5251807c839b6d8f87b9e36dd31a2d studyId GCST90301945 pValueMantissa 2.058000087738037 pValueExponent -22 beta -0.058150767 finemappingMethod PICS data.variant.credibleSets.rows[77].study traitFromSource Apolipoprotein A-I levels projectId GCST
+
+> [q532] data.variant.credibleSets.rows[77].locus.rows[0] posteriorProbability 0.2965065448067371 data.variant.credibleSets.rows[77].locus.rows[0].variant id 6_34624313_A_G
+
+> [q533] data.variant.credibleSets.rows[84] studyLocusId 42c9de93ca15dc9238a55ba7934c0dcc studyId GCST90501116 pValueMantissa 1.5850000381469727 pValueExponent -37 beta -0.0374 finemappingMethod PICS data.variant.credibleSets.rows[84].study traitFromSource Concentration of HDL particles projectId GCST
+
+> [q534] data.variant.credibleSets.rows[84].locus.rows[0] posteriorProbability 0.45486306683152267 data.variant.credibleSets.rows[84].locus.rows[0].variant id 6_34624313_A_G
+
+> [q535] data.variant.credibleSets.rows[90] studyLocusId 60709e73a030f085e7efae036434bf57 studyId GCST90691864 pValueMantissa 1.4616353511810303 pValueExponent -109 beta 0.03521005576394587 finemappingMethod SuSiE-inf data.variant.credibleSets.rows[90].study traitFromSource Standing height (UKB data field 50) projectId GCST
+
+> [q536] data.variant.credibleSets.rows[90].locus.rows[0] posteriorProbability 0.44480924319016263 data.variant.credibleSets.rows[90].locus.rows[0].variant id 6_34624313_A_G
+
+> [q537] data.variant.credibleSets.rows[54] studyLocusId a0d49183f92838c43af7d0c4e91c1ae8 studyId GCST90000025 pValueMantissa 1.8804374933242798 pValueExponent -42 beta 0.022691746978692525 finemappingMethod SuSiE-inf data.variant.credibleSets.rows[54].study traitFromSource Appendicular lean mass projectId GCST
+
+> [q538] data.variant.credibleSets.rows[54].locus.rows[0] posteriorProbability 0.9972565652601071 data.variant.credibleSets.rows[54].locus.rows[0].variant id 6_34624313_A_G
+
+> [q539] data.variant.credibleSets.rows[51] studyLocusId 57ceea19344795acec8306bacc5513d0 studyId GCST90428730 pValueMantissa 1 pValueExponent -26 beta -0.0085 finemappingMethod PICS data.variant.credibleSets.rows[51].study traitFromSource Gamma glutamyl transferase levels projectId GCST
+
+> [q540] data.variant.credibleSets.rows[51].locus.rows[0] posteriorProbability 0.3541955400079486 data.variant.credibleSets.rows[51].locus.rows[0].variant id 6_34624313_A_G
+
+> [q541] data.variant.credibleSets.rows[37] studyLocusId 5316b3cb0d9d4bcd0456fde470a9b880 studyId GCST008512 pValueMantissa 1 pValueExponent -8 beta 0.0217 finemappingMethod PICS data.variant.credibleSets.rows[37].study traitFromSource Multisite chronic pain projectId GCST
+
+> [q542] data.variant.credibleSets.rows[37].locus.rows[0] posteriorProbability 0.07603128970978829 data.variant.credibleSets.rows[37].locus.rows[0].variant id 6_34624313_A_G
+
+> [q543] data.variant.credibleSets.rows[90] studyLocusId fac4b284d88f543d03517ad32e17674c studyId GCST90501278 pValueMantissa 1.9950000047683716 pValueExponent -24 beta -0.0324 finemappingMethod PICS data.variant.credibleSets.rows[90].study traitFromSource Total free cholesterol levels projectId GCST
+
+> [q544] data.variant.credibleSets.rows[90].locus.rows[0] posteriorProbability 0.32496341370742454 data.variant.credibleSets.rows[90].locus.rows[0].variant id 6_34624313_A_G
+
+> [q545] data.credibleSet studyLocusId 34172f28b706dad5317e6211470cb256 finemappingMethod SuSiE-inf confidence SuSiE fine-mapped credible set with out-of-sample LD pValueMantissa 6.7989277839660645 pValueExponent -9 beta 0.006886937131206627
+
+> [q546] data.credibleSet.study id GCST90707291 traitFromSource Hospital frailty risk score pubmedId 40764432 publicationFirstAuthor Mak JKL nSamples 500737
+
+> [q547] data.credibleSet.locus.rows[41] posteriorProbability 0.011161286304012271 data.credibleSet.locus.rows[41].variant id 6_34624313_A_G data.credibleSet.locus.rows[41].variant.rsIds[0] rs6907508
+
+> [q548] data.credibleSet.colocalisation.rows[0] colocalisationMethod COLOC_PIP_ECAVIAR h4 0.9841501405697227 clpp 0.05292548051109325 rightStudyType eqtl data.credibleSet.colocalisation.rows[0].otherStudyLocus studyLocusId af0e8fa885784ef279f6769e77c4f1eb data.credibleSet.colocalisation.rows[0].otherStudyLocus.study id gtex-v10_exon_adipose_visceral_ensg00000196821_10_6_34587288_34590508 traitFromSource ENSG00000196821.10_6_34587288_34590508 studyType eqtl data.credibleSet.colocalisation.rows[0].otherStudyLocus.study.target approvedSymbol ILRUN
+
+> [q549] data.credibleSet.colocalisation.rows[15] colocalisationMethod COLOC_PIP_ECAVIAR h4 0.9894577773097832 clpp 0.0797855124721133 rightStudyType eqtl data.credibleSet.colocalisation.rows[15].otherStudyLocus studyLocusId d29e0b9bc38d196080a5acb2a76573fe data.credibleSet.colocalisation.rows[15].otherStudyLocus.study id gtex-v10_exon_brain_anterior_cingulate_cortex_ensg00000272288_7_6_34696317_34696722 traitFromSource ENSG00000272288.7_6_34696317_34696722 studyType eqtl data.credibleSet.colocalisation.rows[15].otherStudyLocus.study.target approvedSymbol ILRUN-AS1
+
+Open Targets 26.09 resolves rs6907508 to 6_34624313_A_G, alternate allele G (q517), G 0.12 in gnomAD's non-Finnish
+Europeans (q518), and places it in 705 credible sets (`variant-sets-p0` to `p7`). A set's β is per its own lead's
+alternate allele; read here only for sets rs6907508 leads, where it is per G.
+
+mvAge's set (GCST90321079, Rosoff 2023, PICS on the reported top hit; `credibleSet-7e1f477e…`): P 2e-9, β −0.0102 per
+G (q519, q520); 96 members, rs6907508 first at PIP 0.085 (q521), the next at 0.055 (q522): in the set, PIP under 0.1,
+causal C3. Locus-to-gene (q523): SNRPC 0.20, BLTP3A 0.18, SPDEF 0.12, ILRUN 0.10; none passes 0.5. Its QTL
+colocalisations (`coloc-qtl-7e1f477e…`, eQTL, sQTL, tuQTL and pQTL types): 107 (q524), 102 of them at H4 ≥ 0.8, counted
+from the cached rows (derived): ILRUN 86 (GTEx and others, expression and exon-level, q548), ILRUN-AS1 8 (q549),
+BLTP3A 4, and one each for SPDEF and three UKB-PPP plasma proteins (MEGF10, APOF, CA14). Whether those three are cis
+or trans, ILRUN-AS1's 8 of 102 is under D24's tenth and no rival passes L2G, so the call is ILRUN by colocalisation
+alone: E2. Its 1,095 GWAS colocalisations (`coloc-…`, six pages) are led by GGT, height, lipids and apolipoproteins
+(H4 0.97 to 0.99).
+
+Sets rs6907508 leads, β per G (it tops each): apolipoprotein B (GCST010243) −0.0276, P 2e-17, PIP 0.22 (q525, q526);
+LDL cholesterol (GCST90498358) −0.0303, P 1e-20, PIP 0.27 (q527, q528); total cholesterol (GCST90500025)
+−0.0351, P 1e-28, PIP 0.38 (q529, q530); total free cholesterol (GCST90501278) −0.0324, P 2e-24, PIP 0.33
+(q543, q544); apolipoprotein A-I (GCST90301945) −0.058, P 2e-22, PIP 0.30 (q531, q532); HDL particle
+concentration (GCST90501116) −0.0374, P 2e-37, PIP 0.45 (q533, q534); standing height (GCST90691864, SuSiE-inf)
++0.0352, P 1.5e-109, PIP 0.44 (q535, q536); appendicular lean mass (GCST90000025, SuSiE-inf) +0.0227, P 2e-42,
+PIP 0.997 (q537, q538); GGT (GCST90428730) −0.0085, P 1e-26, PIP 0.35 (q539, q540); multisite chronic pain
+(GCST008512) +0.0217, P 1e-8, PIP 0.076 (q541, q542). So G, the shorter-lived allele, lowers both the atherogenic
+(apolipoprotein B, LDL) and the HDL side, and goes with a taller, leaner-massed body; A raises LDL and apolipoprotein B.
+The lean-mass PIP is for that trait, not for ageing. Hospital frailty (GCST90707291, Mak 2025, SuSiE-inf) has a set led
+by rs56930444 (r² 0.83 to the lead, db-ensembl-116 window), P 7e-9, the lead in it at PIP 0.011 (q545 to q547):
+a healthspan-class set the tier does not rest on (D25.5), named only. Coronary atherosclerosis, heart-failure and
+hypertension sets hold the lead behind neighbours whose phase is not read; their β is not read for rs6907508.
