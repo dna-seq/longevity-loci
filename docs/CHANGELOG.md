@@ -21,6 +21,7 @@ Newest first.
 - A runner seat (on the kit's `runner` role, a quiet seat) takes the repository's batch jobs on the cluster: fetches for the scout and the curator, later the index and the compile at scale, logged in `runs/`. The lead keeps to its own role: its `facts-to-rigger` duty and its cluster paragraph move to the runner, and so does the nodes watcher.
 - The lead holds the runner's duty `facts-to-rigger`: cluster facts it finds go to the account's rigger the same turn, and a CPU burst over 16 cores is claimed with the rigger first.
 - The scout is a quiet seat (`presence = false`): it sweeps whether the person is here or away. Its priming is written as five duties (sweep, query ledger, dedupe, queue, new loci), its work otherwise unchanged; bulk full texts for a sweep go to the lead as a batch fetch.
+- The module-creator plugin's pin moved to v0.48.6 (`validate_module` reports carried warnings; the GWAS pass and a contract skew say they are upstream's).
 - The module-creator plugin's pin moved to v0.48.5 (tool results name the plugin tool for an upstream CLI command; `registry_register` stops echoing a reused install-id).
 - The module-creator plugin's pin moved to v0.48.4 (`fetch_fulltext` by DOI, `audit_module` names stale checks and orphaned derived rows).
 - The module-creator plugin's pin moved to v0.48.2 (`fetch_fulltext` reaches PubMed for a PMCID Europe PMC lacks). The pin does not yet bind on the liaison's machine: see `docs/UPSTREAM_PLUGIN.md`.

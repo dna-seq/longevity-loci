@@ -12,7 +12,7 @@ file): `[seat.liaison.watch.plugin]` says each new tag.
 
 ## Read mark
 
-**`v0.48.5`**, the tag `.claude/settings.json` pins (2026-11-10). The first mark, `v0.48.0` (3dd8c2a), was
+**`v0.48.6`**, the tag `.claude/settings.json` pins (2026-11-11). The first mark, `v0.48.0` (3dd8c2a), was
 fast-forwarded: no release before it was read.
 
 **The pin does not bind on this machine.** The person's user settings declare the marketplace `just-dna` with no
@@ -22,7 +22,7 @@ ref, and that entry outranks the project's: the client refused `marketplace add 
 while the pin named v0.48.1; updated, it is 0.48.2 at `1b622ff`, the tag plus one notes commit, the same code.
 The person's answer (2026-11-06): drop the user-level entry, so the repository's pin binds; theirs to do,
 since it is their settings file. Still present on 2026-11-09, so the copy is updated by hand to the pinned
-release: `claude plugin update just-module-creator@just-dna --scope project` installed 0.48.5 (2026-11-10), the
+release: `claude plugin update just-module-creator@just-dna --scope project` installed 0.48.6 (2026-11-11), the
 tag or main's head plus notes commits.
 
 ## Backlog
@@ -53,6 +53,11 @@ registry 0.27.0, format 0.7.1, compiler 0.7.2. Our caps (`docs/UPSTREAM_COMPILER
 
 ## Inbound verdicts
 
+- **`v0.48.6`** (2026-11-11). Nothing breaks; toolchain unchanged (trio below 0.8, polars 1.44.2, duckdb 1.5.6).
+  *For the module seat:* `validate_module` now returns `warnings_summary` and `carried`; `enrich_gwas_effects` says
+  the GWAS Catalog retired v1 (410) and that retrying or editing will not help (F146; the compiler's RM428, its
+  fix on their main as f0433de5, not yet released); `remote_derive` and `remote_draft` name a 409 contract skew as
+  the instance's (F144), which the polygon on format 0.8.0 now gives. Install synced by hand; the import is clean.
 - **`v0.48.5`** (2026-11-10). Nothing breaks for us. *For the module seat:* `validate_module`, `compile_module`
   and the drafters now add `on_this_surface`, the plugin tool that does what an upstream message's CLI command
   names (F132), and `top_expression_effects` explains `gene_not_at_locus` in its result (F140). `registry_register`

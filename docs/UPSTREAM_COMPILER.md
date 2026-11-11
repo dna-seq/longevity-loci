@@ -105,7 +105,8 @@ here as the first import lands.
   `size=1000` to v2 `/associations`, which refuses above 500. No installable release has a working GWAS pass.
   For us: the module seat's `enrich_module` / `enrich_gwas_effects` returns no GWAS effects until a fix ships; an
   empty GWAS sidecar is not "no associations". Whether a 0.7.x patch is cut is RM428's ask 4, the compiler's
-  person's call. Nothing to file from here.
+  person's call. Asks 1-3 on their main as f0433de5 (500 per page, a retry on 400), not yet released. Nothing to file
+  from here.
 
 ## Our pieces that duplicate the compiler's
 
