@@ -28,6 +28,7 @@ mechanical consensus of the research tracks, to be confirmed or overturned by th
 - 10 RABGAP1L (lead rs10798302, rs16847402 the same signal at r² 0.53), tier C (seed B): suggestive at Wright 2019's own genomic-control P (1.5e-6; raw 1.7e-8) in its current-age GWAS (VIABILITY_AF, confirmation only), not the parental meta-analysis the seed names; Timmers P 0.19 same side; Deelen nominal at the weak proxy only; C4, no gene.
 - 11 LINC01875 (lead rs6744653, the TMEM18 obesity locus), tier B kept (A's first criterion fails at the lead, D18.3), a trade-off (heel bone density): genome-wide only at proxies (rs66906321 in Timmers' summary statistics, 2.3e-8, unreported by the paper; mvAge 4e-8), replicated at a third SNP in AncestryDNA fathers (genomic-control P 2.2e-3); the lead itself 5.8e-8; C4, no gene.
 - 12 KCNK3 (lead rs1275922), tier A (seed B), on §4.1's letter: genome-wide in Timmers 2019 (6.0e-9), replicated only by Deelen 2019's 90th percentile (P 0.013, same allele; 99th 0.089; Timmers' Figure 4 look-up 0.16); AncestryDNA's nearest SNP not a tag (CEU r² 0.06); descriptive (the A raises calcium-channel-blocker use, hypertension and BMI, not mainly weight); no trade-off; C2, E2 KCNK3.
+- 13 PRKD3 (lead rs577106756, a 0.1 % intron variant), tier B kept: genome-wide only in Park 2025's men (own survival, P 3.2e-8; not in the whole cohort); FinnGen null the other way (P 0.55, power not stated); healthspan uninformative; mech:cancer from the authors' same-sample PheWAS; men only; C4/E4, no gene.
 
 ## In hand
 

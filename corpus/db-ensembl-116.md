@@ -193,3 +193,18 @@ call is empty, with the r² floor off too.
 Ensembl's LD window around rs1275922 (`ld-window50-rs1275922.json`, 1000 Genomes EUR, r² >= 0.1): rs1731248 at r²
 0.97, D′ 0.98.
 
+## rs577106756 (PRKD3), for row 13
+
+> [q47] mappings[0] end 37257437 allele_string G/A seq_region_name 2 start 37257437 strand 1 location 2:37257437-37257437 assembly_name GRCh38 ancestral_allele G coord_system chromosome
+
+rs577106756 at 2:37,257,437 (GRCh38), G/A, G ancestral; an intron variant.
+
+> [q48] populations[56] allele A allele_count 2 frequency 0.00198807157057654 population 1000GENOMES:phase_3:EUR
+
+> [q49] populations[11] frequency 0.001752 population gnomADg:nfe allele A allele_count 119
+
+> [q50] populations[13] frequency 0.001703 population gnomADg:fin allele A allele_count 18
+
+A is rare: 2 copies in 1000 Genomes EUR (0.002), 0.18 % in gnomAD's non-Finnish Europeans, 0.17 % in its Finns.
+The LD window call (`ld-window50-rs577106756.json`, EUR, r² ≥ 0.1) rendered no text: with two copies in the panel
+no tag is known, and that is unknown, not an absence of tags.

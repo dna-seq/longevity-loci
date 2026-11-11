@@ -20,7 +20,7 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   compacting` to the lead, `watchdog.sh compact`, end the turn; the lead wakes the next. Stop at 80 % of the 7-day
   window or 95 % of the 5-hour window. After each tenth `done:`, re-measure the pacing and
   go on with the next ten, unless blocked or steered (the person, 2026-11-11, via the lead, 639316091: "After 10
-  adjust pacing and go next 10 and so on unless blocked or I steer"; this replaces the earlier pause after ten). Rows done in this run: 6 CELSR2 (1 of 10), 38 HLA-DQA1 (2 of 10), 81 FES/FURIN (3 of 10), 103 (4 of 10), 2 PABPC4 (5 of 10), 4 LINC02796 (6 of 10), 5 FPGT / TNNI3K (7 of 10), 7 MAGI3 (8 of 10), 8 IL6R Asp358Ala with 157 (9 of 10); 10 RABGAP1L (10 of 10); second run: 11 LINC01875 (1 of 10), 12 KCNK3 (2 of 10), then the lead's review of 103, 8, 2, 10 with 5, 4 and 11 under D17/D18 (one commit each, not counted as rows); 6's healthspan re-cited to Zenin's cached file (597d9fb); 103 re-tiered B under D16 (5abae88); the Open Targets quotes re-quoted from cached records (f69c8d8); the corrections of 71 (d44fd4a) and 67 (3dd792c) done, the E3 gene rule at 57 (8d27300) and 80 (728d78d), 67's MANOVA study added under D15 (a519ae4); 38 corrected again at 103 (the AncestryDNA tag is shared); next 96 APOE waits on D2, so the seed tier B by locus_id.
+  adjust pacing and go next 10 and so on unless blocked or I steer"; this replaces the earlier pause after ten). Rows done in this run: 6 CELSR2 (1 of 10), 38 HLA-DQA1 (2 of 10), 81 FES/FURIN (3 of 10), 103 (4 of 10), 2 PABPC4 (5 of 10), 4 LINC02796 (6 of 10), 5 FPGT / TNNI3K (7 of 10), 7 MAGI3 (8 of 10), 8 IL6R Asp358Ala with 157 (9 of 10); 10 RABGAP1L (10 of 10); second run: 11 LINC01875 (1 of 10), 12 KCNK3 (2 of 10), 13 PRKD3 (3 of 10), then the lead's review of 103, 8, 2, 10 with 5, 4 and 11 under D17/D18 (one commit each, not counted as rows); 6's healthspan re-cited to Zenin's cached file (597d9fb); 103 re-tiered B under D16 (5abae88); the Open Targets quotes re-quoted from cached records (f69c8d8); the corrections of 71 (d44fd4a) and 67 (3dd792c) done, the E3 gene rule at 57 (8d27300) and 80 (728d78d), 67's MANOVA study added under D15 (a519ae4); 38 corrected again at 103 (the AncestryDNA tag is shared); next 96 APOE waits on D2, so the seed tier B by locus_id.
 - **10 RABGAP1L** (2026-11-11), tier C re-tiered (seed B); briefly blocked on a `study_design` value, which the lead
   added as `current_age_quantitative` (8187cb8; the study written as a row, not prose). Both seed rsIDs
   (rs10798302 lead, rs16847402; r² 0.53, D′ 0.99, cached as db-ensembl-116 `ld-rs10798302-rs16847402.json`) come
@@ -147,6 +147,19 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   autoimmune direction from Joshi q11 (rs3184504-T raises type 1 diabetes); cancer trade-off from Timmers q7, no
   "slightly"; per copy, parents about 1.7 months ("nearly two months"). Deelen and LifeGen share the Rotterdam
   Study (Timmers q13). eLife source data is at `https://cdn.elifesciences.org/articles/39856/elife-39856-figN-dataM-v2.xlsx`.
+- **13 PRKD3** (2026-11-11), tier B kept, a fragile one: Park 2025's men-only own-survival GWAS (180,970 men,
+  21,059 dead), rs577106756 A (0.1 %, at the analysis's MAF floor, imputed) reduces lifespan, β 0.09 on the
+  Martingale residual, P 3.2e-8; 5e-8 applied to each of three GWAS uncorrected; not genome-wide in the whole cohort.
+  FinnGen "Death" P 0.55, A β −0.07, the other way (sign fixed by rs35705950's 0.034 = "increased death"); power not
+  stated, so not the red flag. Not in Timmers' summary statistics nor Deelen SD1 (untested). Open Targets has Park's
+  men's study (GCST90551885) with one set, at APOE, and no variant record: C4, E4, gene empty. Ensembl LD window no
+  text (2 copies in EUR): no tag known. Park's PDFs and workbooks: Europe PMC serves none; the Supplementary
+  Information PDF fetches from `static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-57315-6/MediaObjects/`.
+  The full text keeps formulas as LaTeX blobs inside sentences: quote the blob-free runs (split on
+  `\documentclass...\end{document}`) and give the number in prose. FinnGen's study row uses `own_survival_cox` as
+  the nearest design (a binary endpoint) and ancestry EUR (the vocabulary has no FIN). mech:cancer is the paper's
+  PheWAS in the same UK Biobank deaths; filed general_ageing. The lead (639348338): hold 25 HTT's tier until the
+  adversarial read of 12's raise to A reports; write the rest of 25 meanwhile.
 - **12 KCNK3** (2026-11-11), tier A, the first seed-B row raised to A; the call is put to the lead. Lead rs1275922
   (Timmers Table 1, 6.0e-9; Pilling's rs11126666 at r² 0.99 only 4.5e-6 in UK Biobank). The only replication outside
   UK Biobank is Deelen SD1's 90th percentile (OR 1.06 per G, P 0.013; 99th 0.089; I² 36 %); Timmers' Figure 4

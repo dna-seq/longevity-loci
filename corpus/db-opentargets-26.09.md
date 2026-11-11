@@ -536,3 +536,18 @@ rs1731248 (variant 2_26701955_A_C): C, the alternate allele, 0.728 in non-Finnis
 Asians, the lead's G frequencies (0.729, q108; 0.315, q109) in both; at EUR r² 0.97, D′ 0.98 (db-ensembl-116#q46)
 C travels with the lead's G (derived from frequencies).
 
+## rs577106756 (PRKD3), for row 13
+
+> [q112] data.study id GCST90551885 traitFromSource Lifespan nSamples 180970
+
+> [q113] data.credibleSets count 1
+
+> [q114] data.credibleSets.rows[0].variant.rsIds[0] rs429358
+
+Park 2025's men's GWAS is in Open Targets (`credibleSets-GCST90551885.json`, n 180,970) with one credible set, at
+APOE's rs429358: none at PRKD3.
+
+> [q115] data variant null
+
+Nor does the platform know the variant (`variant-2_37257437_G_A.json`): no fine-mapping and no locus-to-gene score
+for rs577106756 (causal C4, effector E4).

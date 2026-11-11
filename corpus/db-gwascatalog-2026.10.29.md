@@ -342,3 +342,17 @@ receptor blocker response, height, Pilling 2017's parental longevity, two more B
 essential hypertension (OR 0.90, P 5 × 10⁻⁹). C travels with the lead's G (db-opentargets-26.09#q110, q111), and its
 risk frequency here (0.29) is the East Asian one, not the European (0.73): an East Asian sample, by frequency. So the
 lifespan-raising G goes with less hypertension, in line with A's calcium-channel-blocker record; not a trade-off.
+
+## rs577106756 (PRKD3), for row 13
+
+> [q103] _embedded.associations[0] association_id 165236618 risk_frequency NR pvalue_description pvalue_mantissa 3 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range - beta 0.09 unit increase p_value 3.0000000000000004e-08 accession_id GCST90551885 pubmed_id 40021682 first_author Park J
+
+> [q104] _embedded.associations[0].reported_trait[0] Lifespan
+
+> [q105] _embedded.associations[0].snp_allele[0] rs_id rs577106756 effect_allele A
+
+> [q106] page size 50 totalElements 1 totalPages 1 number 0
+
+The catalog's one association for rs577106756: Park 2025's men (GCST90551885), "Lifespan", A, β 0.09 "unit
+increase", P 3 × 10⁻⁸. The catalog's "increase" is in Park's Martingale residual, which rises with death: the
+paper's text (pmid-40021682#q5) says A reduces lifespan. No other trait is recorded for the variant.

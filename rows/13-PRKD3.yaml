@@ -1,0 +1,135 @@
+# The seed list's locus 13, PRKD3 (2p22.2). Curated 2026-11-11, the second run's third row. Lead rs577106756 (Park
+# 2025, men's own-survival GWAS in UK Biobank), the seed's only rsID here: a 0.1 % intron variant. Timmers 2019's
+# summary statistics and Deelen 2019's Supplementary Data 1 hold no row for it (untested there, not null); Wright
+# 2019's tables hold one clumped SNP within 0.5 Mb, rs17497197 in the fathers (about 0.3 Mb away), with no cached LD
+# to the lead: not read. Ensembl's LD window returns nothing (two copies of A in 1000 Genomes EUR): no tag is known.
+# Open Targets 26.09 holds Park's men's study with one credible set, at APOE, and does not know the variant; the GWAS
+# Catalog (2026-10-29) holds Park's association alone.
+locus_id: 13
+locus_name: PRKD3
+verdict: kept
+verdict_reason: >-
+  Tier B, as the seed has it, on §4.1's single-study clause, and a fragile B. Genome-wide significant in one study
+  only: Park 2025's own-survival GWAS of UK Biobank's 180,970 men (21,059 of them dead), where rs577106756's A goes
+  with reduced lifespan (β 0.09 on the Martingale residual, which rises with death; P 3.2e-8, past the paper's own
+  5.0e-8). That threshold is applied to each of three GWAS (whole cohort, men, women) without correction for running
+  three, and the variant sits at the analysis's frequency floor (MAF 0.1 %, imputed). In the whole cohort only APOE
+  and ZSCAN23 pass, so PRKD3 is a men-only result; the women's estimate is not stated. The authors say the study has
+  no independent external replication. Their own look-up in FinnGen's "Death" (both sexes, N 453,733) gives P 0.55
+  with β −0.07 for A, on a scale where positive is more death: it leans the other way. That is a non-replication,
+  not a red flag: FinnGen's outcome is binary and both sexes, and its power for a 0.1 % variant is not stated (the
+  71/67 rule needs a powered one). Nothing else tests it: Timmers 2019's summary statistics and Deelen 2019's
+  look-ups have no row for the variant (untested, not null), and no tag is known. Healthspan is 0: Zenin 2019's
+  summary statistics give P 0.97 at the variant, though with a standard error of 0.07 at this frequency the test
+  says almost nothing. Exceptional survival is untested. Mechanism: filed as general ageing, since the one disease
+  link is the authors' PheWAS in the same UK Biobank people, oropharyngeal cancer as the primary cause of death (P
+  4.5e-8, OR 1.04 for A) and self-reported stomach cancer (P 6.1e-7): the paper's statement, cited as mech:cancer,
+  and drawn from the same deaths that make the lifespan signal, so not an independent trait. Open Targets 26.09
+  holds Park's men's GWAS with a single credible set, at APOE, and has no record of rs577106756: no fine-mapping
+  (causal:C4) and no locus-to-gene score (effector E4, no flag, `gene` empty); the variant lies in a PRKD3 intron,
+  which names the locus and not an effector. Actionability is descriptive. The protection is the absence of the risk
+  allele: A is rare and shortens life; G, which nearly everyone carries, is the reference. Context: men only, and
+  European. Age of action is unknown.
+axes:
+  tier: {value: B, cites: [pmid-40021682#q5, pmid-40021682#q11, pmid-40021682#q10, pmid-40021682#q4, pmid-40021682#q2, pmid-40021682#q3, pmid-40021682#q12, pmid-40021682#q8, pmid-40021682#q15, pmid-40021682#q9, pmid-40021682#q16, pmid-40021682#q13, db-ensembl-116#q48]}
+  mechanism: {value: general_ageing, cites: [pmid-40021682#q6, pmid-40021682#q7, db-gwascatalog-2026.10.29#q106]}
+  pleiotropy: {values: ["mech:cancer"], cites: [pmid-40021682#q6, pmid-40021682#q7]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: untested,
+            cites: [pmid-30729179#q25, pmid-40021682#q5]}
+  actionability: {label: descriptive, cites: [pmid-40021682#q5, pmid-40021682#q6]}
+  context: {values: ["sex_specific:m", eur_only_evidence], cites: [pmid-40021682#q5, pmid-40021682#q3, pmid-40021682#q13]}
+flags:
+  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-40021682#q5, db-ensembl-116#q49]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q112, db-opentargets-26.09#q113, db-opentargets-26.09#q114, db-opentargets-26.09#q115]}
+variants:
+  - rsid: rs577106756
+    gene: ""
+    phenotype: PRKD3 intron, lifespan in men
+    trait_efo_id: OBA_VT0005372
+    effect_allele: G
+    effect_size: -0.09
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the usual version of this DNA position, the one nearly everyone of European
+          ancestry has (more than 99 in 100). It is the reference the other combinations are compared with. The
+          position, on chromosome 2, lies inside the PRKD3 gene. The finding comes from men of European ancestry;
+          less is known elsewhere.
+      - genotype: A/G
+        state: risk
+        conclusion: >-
+          You carry one copy of a rare version of this DNA position (about 1 in 300 people of European ancestry
+          do). In one large British study, men with this version tended to die somewhat earlier; it was not seen in
+          women, and a Finnish study did not confirm it. It is a possible finding, not a settled one: it rests on a
+          single study and has not been confirmed in a separate group of people. It is a tendency, not destiny.
+      - genotype: A/A
+        state: risk
+        conclusion: >-
+          You carry two copies of a rare version of this DNA position. This is extremely uncommon (a few people in a
+          million), and no study has looked at people with two copies. In one large British study, men with one copy
+          tended to die somewhat earlier; it was not seen in women, and a Finnish study did not confirm it. What two
+          copies mean is not known. It is a tendency, not destiny.
+studies:
+  - rsid: rs577106756
+    note: pmid-40021682
+    quote: q5
+    phenotype_class: OWN_SURVIVAL
+    study_design: own_survival_cox
+    population: European (UK Biobank, men)
+    ancestry: [EUR]
+    n_cases: 21059
+    sample_size: 180970
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "3.2E-08"
+    p_value_num: 3.2e-08
+    effect_size: 0.09
+    effect_measure: beta
+    effect_unit: Martingale residual of a Cox model of own survival per A allele (positive = more deaths than expected, shorter life)
+    effect_allele: A
+    direction: risk
+    statistical_test: "BOLT-LMM on Martingale residuals, men only (q4, q10); threshold 5.0E-08 per GWAS, three GWAS run (whole cohort, men, women), no further correction (q11); not genome-wide in the whole cohort (q2, q3); MAF 0.1 %, imputed array data; n_cases the men who died (Supplementary Table 1, q13)"
+    curator: claude-opus-5-5
+  - rsid: rs577106756
+    note: pmid-40021682
+    quote: q15
+    phenotype_class: OWN_SURVIVAL
+    study_design: own_survival_cox
+    population: Finnish (FinnGen r11)
+    ancestry: [EUR]
+    sample_size: 453733
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.55"
+    p_value_num: 0.55
+    effect_size: -0.07
+    effect_measure: beta
+    effect_unit: FinnGen's "Death" endpoint per A allele (positive = increased death, by rs35705950 in the same table, q16 and q9)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Park 2025's look-up in FinnGen r11's \"Death\" endpoint (Supplementary Table 2), both sexes; a binary endpoint, not a Cox model (own_survival_cox the vocabulary's nearest design); the paper's validation, not significant (q8); its power for a 0.1 % variant is not stated"
+    curator: claude-opus-5-5
+  - rsid: rs577106756
+    note: pmid-30729179
+    quote: q25
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.966"
+    p_value_num: 0.966
+    effect_size: -0.00296
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per A allele (positive = earlier)
+    effect_allele: A
+    direction: unknown
+    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), -log10 P 0.0149; SE 0.070 at A frequency 0.0013, an uninformative test; UK Biobank, overlapping Park 2025's people"
+    curator: claude-opus-5-5
