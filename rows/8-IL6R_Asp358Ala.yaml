@@ -13,7 +13,7 @@ verdict_reason: >-
   Tier C, from the seed's B: nothing at this variant reaches genome-wide significance, and §4.1's R-TIER-4 keeps an
   MR-only result out of A and B. The lifespan evidence at the variant itself is nominal and points one way: in
   Timmers 2019's summary statistics C, the minor allele (36 % in 1000 Genomes Europeans; 41 % in the cohorts and
-  40 % in gnomAD's non-Finnish Europeans, the earlier figure), the 358Ala of the receptor, goes with
+  40 % in gnomAD's non-Finnish Europeans, the figure this row gave before), the 358Ala of the receptor, goes with
   longer-lived parents (P 0.0034, the same side in UK Biobank and LifeGen); in Wright 2019's AncestryDNA fathers,
   the one sample outside UK Biobank and LifeGen, a close proxy (rs7518199, r² 0.93, its C riding with the lead's C
   by frequency) does the same in fathers (P 0.0011, born 1886-1918; 0.0043 born 1886-1940) and mothers (0.0051);

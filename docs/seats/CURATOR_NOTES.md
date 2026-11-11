@@ -171,9 +171,12 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   r² 0.09, not a tag; Deelen at the lead 0.052/0.19, exceptional survival 0); 10 (suggestive at Wright's GC P;
   Deelen rows added, the proxy nominal; exceptional survival +; OBA_VT0005372); 5 harmonised; 4 modifiable through
   weight; 11 a trade-off (heel BMD), descriptive. Rules learnt: Wright's significance call is by genomic control,
-  so a Wright study row carries the GC P, raw P in statistical_test (D17.3); Deelen's summary statistics are keyed
+  so where Wright's P decides genome-wide (row 10) the study row carries the GC P, raw P in statistical_test
+  (D17.3); rows 8, 11 and 103 still carry Wright's raw P on nominal results, asked of the lead; Deelen's summary statistics are keyed
   by GRCh37 chr:pos, so their study rows are `ungrained` (a warning) and the note ties the position to the rsID;
-  an LD pair Ensembl does not return in EUR can be tried in CEU (a subset of EUR) and said so.
+  an LD pair Ensembl does not return in EUR can be tried in CEU (a subset of EUR) and said so. Open (the
+  advisor): no cached Ensembl LD record shows r² below 0.05, so an empty pair may mean "below a reporting floor"
+  rather than unknown; until the endpoint's floor is read, rows 2 and 11 keep "unknown".
 - **67 corrected** (2026-11-11), the lead's review applied. Tier B on red-flag heterogeneity alone: replication
   met (LifeGen fathers without UK Biobank, Timmers q15, P 0.016; Deelen SD1 q12, 90th OR 1.068, P 0.011), and
   AncestryDNA's null (Wright q11/q20, P 0.81, heterogeneity P 2.97e-4) caps it. New studies: the LifeGen replication;
