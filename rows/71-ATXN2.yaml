@@ -9,25 +9,27 @@ verdict_reason: >-
   significant for parental lifespan (Timmers 2019, P 1.0e-12; Pilling 2017, P 3.4e-14), and replicated with the same
   allele outside UK Biobank, in LifeGen with UK Biobank's lives removed (Pilling's rs7137828, P 0.028, Timmers 2019's
   Figure 2 source data) and in Deelen 2019's 90th and 99th percentiles (P 0.026 and 0.023; low heterogeneity, and its
-  look-ups of rs7137828 and rs3184504 agree). What blocks A is AncestryDNA, the large independent American sample:
-  its fathers give a quarter of the UK Biobank effect, not significant (P 0.10), with heterogeneity between the two
-  arms P 2.6e-3, and its mothers nothing (P 0.99, heterogeneity P 3.6e-3) (Wright 2019, Supplemental Table 9). The
-  rule applied (the lead, 2026-11-11, one rule for this row and 67): a powered non-replication in an independent
-  sample is red-flag heterogeneity and caps the row at B. Healthspan is 0: Zenin 2019's look-up of SH2B3's
-  rs3184504 leans the same way and does not pass (P 0.13). A trade-off: Timmers 2019 names this locus among those
-  where more protection against non-lung cancers goes with a shorter life, through antagonistic pleiotropy with
-  cardiovascular disease; the lifespan-lowering allele, rs3184504-T, also raises type 1 diabetes and autoimmune risk
-  (Joshi 2017). On lifespan the net direction is resolved. The lifespan-lowering haplotype is almost absent outside
-  Europe. Deelen's cohorts include the Rotterdam Study, also in LifeGen, so Deelen overlaps Timmers 2019's sample in
-  part, though not Pilling's. The seed's other rsIDs: rs3184504 (SH2B3 R262W), rs7137828, rs10774625, rs4766578 (r²
-  0.77) and rs11066320 (r² 0.78, near PTPN11) are in the lead's broad credible set, one signal here. Effector E3, no gene named (D24): SH2B3 passes
+  look-ups of rs7137828 and rs3184504 agree). What blocks A is AncestryDNA, the large independent American sample: its
+  fathers give a quarter of the UK Biobank effect, not significant (P 0.10), with heterogeneity between the two arms P
+  2.6e-3, and its mothers nothing (P 0.99, heterogeneity P 3.6e-3) (Wright 2019, Supplemental Table 9). The rule
+  applied (the lead, 2026-11-11, one rule for this row and 67): a powered non-replication in an independent sample is
+  red-flag heterogeneity and caps the row at B. Healthspan is 0: Zenin 2019's look-up of SH2B3's rs3184504 leans the
+  same way and does not pass (P 0.13). A trade-off: Timmers 2019 names this locus among those where more protection
+  against non-lung cancers goes with a shorter life, through antagonistic pleiotropy with cardiovascular disease; the
+  lifespan-lowering allele, rs3184504-T, also raises type 1 diabetes and autoimmune risk (Joshi 2017). On lifespan the
+  net direction is resolved. The lifespan-lowering haplotype is almost absent outside Europe. Deelen's cohorts include
+  the Rotterdam Study, also in LifeGen, so Deelen overlaps Timmers 2019's sample in part, though not Pilling's. The
+  seed's other rsIDs: rs3184504 (SH2B3 R262W), rs7137828, rs10774625, rs4766578 (r² 0.77) and rs11066320 (r² 0.78,
+  near PTPN11) are in the lead's broad credible set, one signal here. Effector E3, no gene named (D24): SH2B3 passes
   locus-to-gene (0.95 on Timmers 2020's set) but colocalises with no cis QTL, while the one cis-QTL colocalisation at
-  H4 ≥ 0.8 on four of the five lifespan-class sets is ALDH2's expression (the hundreds of others are trans).
+  H4 ≥ 0.8 on four of the five lifespan-class sets is ALDH2's expression (the hundreds of others are trans). Timmers
+  2019's Figure 5 source data agree with the lifelong reading: the effect keeps one sign from 60 to 90 in both parents
+  (fathers 0.044, 0.028, 0.054; mothers 0.012, 0.032, 0.023), and the age moderator is null (P 0.91).
 axes:
   tier: {value: B, cites: [pmid-30642433#q8, pmid-29227965#q7, pmid-30642433#q14, pmid-31413261#q9, pmid-31484785#q17, pmid-31484785#q18]}
   mechanism: {value: heart_vessels, cites: [pmid-30642433#q8, pmid-29227965#q8]}
   pleiotropy: {values: ["mech:cvd", "mech:autoimmune", "tradeoff"], cites: [pmid-30642433#q7, pmid-30642433#q8, pmid-29030599#q11]}
-  age_of_action: {value: LIFELONG, confidence: DIRECT_WEAK, cites: [pmid-29030599#q9]}
+  age_of_action: {value: LIFELONG, confidence: DIRECT_WEAK, cites: [pmid-29030599#q9, pmid-30642433#q191, pmid-30642433#q192, pmid-30642433#q193, pmid-30642433#q194, pmid-30642433#q195, pmid-30642433#q196, pmid-30642433#q197]}
   outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "+",
             cites: [pmid-30729179#q4, pmid-30642433#q8, pmid-31413261#q9]}
   actionability: {label: descriptive, cites: [pmid-30642433#q7]}

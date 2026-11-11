@@ -899,3 +899,10 @@ pair reads as r² below the 0.05 floor (row 28's reading of an empty pair, q156)
 to the window's reach: it answered rs3130507 against row 36's rs13190937 (6:28.4 Mb, about 2.7 Mb away) with r² 0.061
 (q242). So the earlier reading's "no pair returned for rs3131621 ... unknown, not zero" (row 36's tag against
 rs3131621) also reads as r² below 0.05, both being in the panel. For row 37.
+
+## Reading 2026-11-11, record
+
+> [q249] [0] variation2 rs4970836 r2 0.903728 variation1 rs646776 population_name 1000GENOMES:phase_3:CEU d_prime 0.974359
+
+Pairwise LD in 1000 Genomes CEU (`ld-rs646776-rs4970836.json`): Timmers 2019's CELSR2/PSRC1 SNP rs4970836 tags row
+6's lead rs646776 at r² 0.90 (D′ 0.97), so Figure 5's bands for rs4970836 are read for row 6. For the Figure 5 sweep.

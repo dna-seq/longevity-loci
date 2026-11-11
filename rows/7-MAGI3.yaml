@@ -12,32 +12,35 @@ verdict_reason: >-
   P 6.4e-9 (past its own 2.5e-8 threshold), G, the common allele (85 %), adding 0.32 years per copy, both arms on the
   same side. Being new there, it has no LifeGen-only result to stand as a replication. The later genome-wide results
   contain the same parents: Timmers 2020's multivariate analysis (P 2e-9; the GWAS Catalog names G as the effect
-  allele but no cached source gives an effect size, so no direction is read) and Rosoff 2023's mvAge (P 2e-11 in the GWAS Catalog, G on the
-  healthier-ageing side; the paper names rs1230666 among its strongest fine-mapped loci). Outside them nothing
-  passes: the longevity look-up of Timmers 2019's Figure 4 gives P 0.45 (one-sided), and Deelen 2019's 90th and 99th
-  percentiles OR 1.04 per G (P 0.19 and 0.36), all on the same side; Wright 2019's AncestryDNA arm has no row for the
-  lead. Timmers 2022's aging-GIP1 is genome-wide nearby at rs1230682 (PHTF1, P 4e-10), a weak tag (r² 0.24, D′
-  1.00, its A always with the lead's G) whose credible set of 11 is led by rs2636008 and does not hold the lead; in
-  FinnGen and Biobank Japan's own survival A adds 0.135 years, one-sided P 0.039 (Bonferroni 0.90): the same side
-  at a weak tag, not counted (the lead does not vary in East Asians). Healthspan agrees, nominally: G delays the end of healthspan in Zenin 2019 (P 6.7e-4), in UK Biobank. The
-  mechanism is filed as immune and inflammation: Timmers 2019 classes the locus as autoimmune and puts its lifespan
-  effect down to protection from autoimmune disease through a nearby variant it calls missense, rs6679677 (r² above
-  0.6), and at the lead itself the GWAS Catalog has the minor A raising Hashimoto thyroiditis (P 2e-72) and thyroid
-  peroxidase antibodies. The same A raises coronary disease and heart failure, and G lowers breast cancer: no
-  trade-off is detected among the records whose allele is stated and consistent, but it is not ruled out, since one
-  myocardial infarction record contradicts itself (G named, A's frequency) and two (another myocardial infarction,
-  and Hodgkin's lymphoma at OR 0.81) state no allele. In Open Targets 26.09 rs1230666 holds PIP 0.64 in Timmers
-  2019's credible set (PICS) and 0.86 in mvAge's: causal:C1 by the threshold, though PICS weighs members by their LD
-  with the lead, and rs2476601 and rs6679677 sit in the same set at r² 0.68 and 0.67 (PIP 0.02), so the autoimmune
-  haplotype the paper names is not excluded. The top locus-to-gene score is PHTF1 at 0.42, below 0.5; on the two sets PHTF1
-  holds 18 of the 20 cis-QTL colocalisations at H4 ≥ 0.8 and RHOC 2, exactly the tenth D24 counts as a rival, so
-  effector E3, at the edge, and no gene is named. The protection is the absence of the risk allele: A shortens life and G is the common one. Age of action
-  is unknown: Timmers 2019's age bands do not single out this locus, and no cached source gives its own.
+  allele but no cached source gives an effect size, so no direction is read) and Rosoff 2023's mvAge (P 2e-11 in the
+  GWAS Catalog, G on the healthier-ageing side; the paper names rs1230666 among its strongest fine-mapped loci).
+  Outside them nothing passes: the longevity look-up of Timmers 2019's Figure 4 gives P 0.45 (one-sided), and Deelen
+  2019's 90th and 99th percentiles OR 1.04 per G (P 0.19 and 0.36), all on the same side; Wright 2019's AncestryDNA
+  arm has no row for the lead. Timmers 2022's aging-GIP1 is genome-wide nearby at rs1230682 (PHTF1, P 4e-10), a weak
+  tag (r² 0.24, D′ 1.00, its A always with the lead's G) whose credible set of 11 is led by rs2636008 and does not
+  hold the lead; in FinnGen and Biobank Japan's own survival A adds 0.135 years, one-sided P 0.039 (Bonferroni 0.90):
+  the same side at a weak tag, not counted (the lead does not vary in East Asians). Healthspan agrees, nominally: G
+  delays the end of healthspan in Zenin 2019 (P 6.7e-4), in UK Biobank. The mechanism is filed as immune and
+  inflammation: Timmers 2019 classes the locus as autoimmune and puts its lifespan effect down to protection from
+  autoimmune disease through a nearby variant it calls missense, rs6679677 (r² above 0.6), and at the lead itself the
+  GWAS Catalog has the minor A raising Hashimoto thyroiditis (P 2e-72) and thyroid peroxidase antibodies. The same A
+  raises coronary disease and heart failure, and G lowers breast cancer: no trade-off is detected among the records
+  whose allele is stated and consistent, but it is not ruled out, since one myocardial infarction record contradicts
+  itself (G named, A's frequency) and two (another myocardial infarction, and Hodgkin's lymphoma at OR 0.81) state no
+  allele. In Open Targets 26.09 rs1230666 holds PIP 0.64 in Timmers 2019's credible set (PICS) and 0.86 in mvAge's:
+  causal:C1 by the threshold, though PICS weighs members by their LD with the lead, and rs2476601 and rs6679677 sit in
+  the same set at r² 0.68 and 0.67 (PIP 0.02), so the autoimmune haplotype the paper names is not excluded. The top
+  locus-to-gene score is PHTF1 at 0.42, below 0.5; on the two sets PHTF1 holds 18 of the 20 cis-QTL colocalisations at
+  H4 ≥ 0.8 and RHOC 2, exactly the tenth D24 counts as a rival, so effector E3, at the edge, and no gene is named. The
+  protection is the absence of the risk allele: A shortens life and G is the common one. Age of action is lifelong,
+  from age bands (DIRECT_WEAK): in Timmers 2019's Figure 5 source data the effect keeps one sign and about one size
+  from 60 to 90 in both parents (fathers 0.052, 0.034, 0.019; mothers 0.062, 0.027, 0.037, log protection ratio per
+  allele), and neither age (P 0.93) nor sex (P 0.67) moderates it.
 axes:
   tier: {value: B, cites: [pmid-30642433#q29, pmid-30642433#q30, pmid-30642433#q33, pmid-30642433#q34, pmid-31413261#q19, pmid-37550455#q9, db-gwascatalog-2026.10.29#q10, db-gwascatalog-2026.10.29#q32, db-gwascatalog-2026.10.29#q34, pmid-37118362#q43, pmid-37118362#q44, pmid-37118362#q53, db-ensembl-116#q182, db-ensembl-116#q183, db-ensembl-116#q184, db-ensembl-116#q185]}
   mechanism: {value: immune_inflammation, cites: [pmid-30642433#q29, pmid-30642433#q31, db-gwascatalog-2026.10.29#q4, db-gwascatalog-2026.10.29#q6, db-gwascatalog-2026.10.29#q19, db-gwascatalog-2026.10.29#q21]}
   pleiotropy: {values: ["mech:autoimmune", "mech:cvd", "mech:cancer"], cites: [pmid-30642433#q31, pmid-30642433#q32, db-gwascatalog-2026.10.29#q4, db-gwascatalog-2026.10.29#q13, db-gwascatalog-2026.10.29#q15, db-gwascatalog-2026.10.29#q16, db-gwascatalog-2026.10.29#q18]}
-  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  age_of_action: {value: LIFELONG, confidence: DIRECT_WEAK, cites: [pmid-30642433#q108, pmid-30642433#q109, pmid-30642433#q110, pmid-30642433#q111, pmid-30642433#q112, pmid-30642433#q113, pmid-30642433#q114]}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
             cites: [pmid-30729179#q18, pmid-30642433#q29, pmid-30642433#q33, pmid-30642433#q34, pmid-31413261#q19]}
   actionability: {label: descriptive, cites: [pmid-30642433#q31]}

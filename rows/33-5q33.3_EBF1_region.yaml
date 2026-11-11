@@ -10,52 +10,56 @@ verdict: kept
 verdict_reason: >-
   Tier B, the seed's: a genome-wide age-threshold result replicated nominally, with a smaller effect, in a lifespan
   study outside it (§4.1's B clause). Deelen 2014 compared Europeans who reached 90 with controls under 65 at
-  baseline: discovery 5,406 cases against 15,112 controls (T 0.396 against 0.360, OR 1.14, P 1.85e-6, not
-  genome-wide alone), replication 7,298 cases (Table 2's count; the text says 7,330) against 60,262 controls from six further studies (OR 1.07, P 5.98e-4),
-  joint OR 1.10 (1.06 to 1.14), P 1.74e-8, just past the paper's 5e-8, I² 28.5 %. The ≥90 analysis is a subset of
-  the paper's ≥85 one, which was not genome-wide (OR 1.07, P 4.3e-6); the paper ran both without correcting across
-  them, and its threshold is read as printed (D19.2). The replication arm sits inside the joint P, so it replicates
-  nothing (D25.9). The design is old against young, so R-TIER-2 applies; it is lifted by Timmers
-  2019 (D22.2, D25.10): in UK Biobank and LifeGen's parents (n 638,116, info 0.999) T goes with longer life, beta
-  0.0085 (SE 0.0040), P 0.033 (one-sided 0.017 in Timmers' own replication table), both arms positive, and Timmers
-  calls the locus replicated "albeit with smaller effect sizes". The overlap: Joshi 2017, LifeGen's own paper, names four
-  cohorts in both, EGCUT, NTR, PROSPER and RS1, and 892 RS1 cases among Deelen 2014's 5,406 discovery cases (16.5 %;
-  7.0 % of the joint 12,704) that are also in LifeGen's genotyped people, the trait measured in different people
-  (parents against the participants themselves). Timmers gives a covariance on null SNPs of about 0.01 "between each
-  study" for its look-up in Deelen 2014 and Broer 2015; the row reads it as covering this pair, as row 12 did. That
-  number measures the dependence of the two test statistics, which is what independence needs, not the size of the
-  overlap; the cross-trait correlation shrinks it, and it was likely computed on Deelen's discovery-only statistics.
-  Read so, the replication is independent (D19.1). Zenin 2019's UK Biobank parental lifespan gives T log HR −0.0025,
-  P 0.32, which suggests Timmers' P 0.033 leans on the LifeGen arm, the one holding the shared cohorts. The smaller effect is not a red flag (D21, D25.3):
-  with Timmers' own APOE calibration for Deelen 2014 (a factor of about 3.8, not Deelen 2019's 4.84) the expected
-  beta is 0.0249, power about 1.00, heterogeneity P 0.006, a flag; with the loci's mean factor (0.42 of APOE's) the
-  expected beta is 0.0104, power 0.83, heterogeneity P 0.67, none. A flag under one calibration only is no flag. Not
-  A as I read §4.1: Deelen 2014's 88,078 people and its age-threshold cases (90 or more, not a percentile) meet
-  neither of A's sample clauses as written, and Timmers itself reports the effect smaller, a third of Deelen's on the
-  APOE scale (0.82 by the mean factor); the lead's read keeps B. Deelen 2019 leans the same way (90th percentile OR 1.053, P 0.012;
-  99th OR 1.062, P 0.072) but holds the Leiden Longevity Study, Rotterdam, GEHA, the Danish longevity study and
-  Newcastle 85+, all in Deelen 2014, so it is not independent. Deelen 2014's own prospective analysis (34,103 people
-  in 11 cohorts, 8,582 deaths) gives T HR 0.95, P 0.003 for all-cause death; its cohorts (Table S5) are unread, so its
-  independence is unknown and it is lifespan evidence, not a replication. Liu 2021 lists the SNP at p 0.047 in Chinese
-  longevity data, allele and direction in an unread table; Shadyab 2017 (the Women's Health Initiative) was read as
-  an abstract only. Nygaard 2017 tested the SNP in Danish long-lived people and found T nominally with fewer heart
-  attacks and better physical function, nothing past Bonferroni. A literature search on the rsID (PubMed, Europe PMC,
-  OpenAlex; Semantic Scholar unchecked, HTTP 429) found these and later small candidate studies. Healthspan: Zenin 2019 leans the healthier way, not significantly (P 0.10); the lead sits in Foote
-  2025's frailty multimorbidity set (PIP 0.026, r² 0.94 to its lead), whose direction for T Open Targets does not
-  give, so healthspan is filed 0. Lifespan +, healthspan 0, exceptional survival +. The evidence is European. Mechanism general ageing (D25.7): T lowers blood
-  pressure (ICBP, P 6.6e-6 systolic) and coronary risk (OR 0.96) and protects from stroke death (HR 0.60), but
-  non-cardiovascular death falls as much (HR 0.86 both), and in two cohorts aged 75 or more the link to all-cause
-  death did not change with blood-pressure adjustment; the cardiovascular side is filed as pleiotropy. Open Targets
-  26.09 holds 115 credible sets on the lead, blood pressure, hypertension and its drugs, heart rate and others, the
-  lead at PIP 0.01 to 0.10 where read (in about a quarter of them it lies past the 25 members returned); none is a lifespan, longevity or survival set, so causal C4 and effector E4, no
-  gene named (locus-to-gene favours EBF1 at about 0.5 in most sets, CLINT1 in some pulse-pressure sets; Deelen found
-  no eQTL). The protection is a presence: the minor allele goes with longer life. Age of action unknown: Deelen reads
-  the ≥85 signal as action from middle age, which the paper infers and does not show.
+  baseline: discovery 5,406 cases against 15,112 controls (T 0.396 against 0.360, OR 1.14, P 1.85e-6, not genome-wide
+  alone), replication 7,298 cases (Table 2's count; the text says 7,330) against 60,262 controls from six further
+  studies (OR 1.07, P 5.98e-4), joint OR 1.10 (1.06 to 1.14), P 1.74e-8, just past the paper's 5e-8, I² 28.5 %. The
+  ≥90 analysis is a subset of the paper's ≥85 one, which was not genome-wide (OR 1.07, P 4.3e-6); the paper ran both
+  without correcting across them, and its threshold is read as printed (D19.2). The replication arm sits inside the
+  joint P, so it replicates nothing (D25.9). The design is old against young, so R-TIER-2 applies; it is lifted by
+  Timmers 2019 (D22.2, D25.10): in UK Biobank and LifeGen's parents (n 638,116, info 0.999) T goes with longer life,
+  beta 0.0085 (SE 0.0040), P 0.033 (one-sided 0.017 in Timmers' own replication table), both arms positive, and
+  Timmers calls the locus replicated "albeit with smaller effect sizes". The overlap: Joshi 2017, LifeGen's own paper,
+  names four cohorts in both, EGCUT, NTR, PROSPER and RS1, and 892 RS1 cases among Deelen 2014's 5,406 discovery cases
+  (16.5 %; 7.0 % of the joint 12,704) that are also in LifeGen's genotyped people, the trait measured in different
+  people (parents against the participants themselves). Timmers gives a covariance on null SNPs of about 0.01 "between
+  each study" for its look-up in Deelen 2014 and Broer 2015; the row reads it as covering this pair, as row 12 did.
+  That number measures the dependence of the two test statistics, which is what independence needs, not the size of
+  the overlap; the cross-trait correlation shrinks it, and it was likely computed on Deelen's discovery-only
+  statistics. Read so, the replication is independent (D19.1). Zenin 2019's UK Biobank parental lifespan gives T log
+  HR −0.0025, P 0.32, which suggests Timmers' P 0.033 leans on the LifeGen arm, the one holding the shared cohorts.
+  The smaller effect is not a red flag (D21, D25.3): with Timmers' own APOE calibration for Deelen 2014 (a factor of
+  about 3.8, not Deelen 2019's 4.84) the expected beta is 0.0249, power about 1.00, heterogeneity P 0.006, a flag;
+  with the loci's mean factor (0.42 of APOE's) the expected beta is 0.0104, power 0.83, heterogeneity P 0.67, none. A
+  flag under one calibration only is no flag. Not A as I read §4.1: Deelen 2014's 88,078 people and its age-threshold
+  cases (90 or more, not a percentile) meet neither of A's sample clauses as written, and Timmers itself reports the
+  effect smaller, a third of Deelen's on the APOE scale (0.82 by the mean factor); the lead's read keeps B. Deelen
+  2019 leans the same way (90th percentile OR 1.053, P 0.012; 99th OR 1.062, P 0.072) but holds the Leiden Longevity
+  Study, Rotterdam, GEHA, the Danish longevity study and Newcastle 85+, all in Deelen 2014, so it is not independent.
+  Deelen 2014's own prospective analysis (34,103 people in 11 cohorts, 8,582 deaths) gives T HR 0.95, P 0.003 for
+  all-cause death; its cohorts (Table S5) are unread, so its independence is unknown and it is lifespan evidence, not
+  a replication. Liu 2021 lists the SNP at p 0.047 in Chinese longevity data, allele and direction in an unread table;
+  Shadyab 2017 (the Women's Health Initiative) was read as an abstract only. Nygaard 2017 tested the SNP in Danish
+  long-lived people and found T nominally with fewer heart attacks and better physical function, nothing past
+  Bonferroni. A literature search on the rsID (PubMed, Europe PMC, OpenAlex; Semantic Scholar unchecked, HTTP 429)
+  found these and later small candidate studies. Healthspan: Zenin 2019 leans the healthier way, not significantly (P
+  0.10); the lead sits in Foote 2025's frailty multimorbidity set (PIP 0.026, r² 0.94 to its lead), whose direction
+  for T Open Targets does not give, so healthspan is filed 0. Lifespan +, healthspan 0, exceptional survival +. The
+  evidence is European. Mechanism general ageing (D25.7): T lowers blood pressure (ICBP, P 6.6e-6 systolic) and
+  coronary risk (OR 0.96) and protects from stroke death (HR 0.60), but non-cardiovascular death falls as much (HR
+  0.86 both), and in two cohorts aged 75 or more the link to all-cause death did not change with blood-pressure
+  adjustment; the cardiovascular side is filed as pleiotropy. Open Targets 26.09 holds 115 credible sets on the lead,
+  blood pressure, hypertension and its drugs, heart rate and others, the lead at PIP 0.01 to 0.10 where read (in about
+  a quarter of them it lies past the 25 members returned); none is a lifespan, longevity or survival set, so causal C4
+  and effector E4, no gene named (locus-to-gene favours EBF1 at about 0.5 in most sets, CLINT1 in some pulse-pressure
+  sets; Deelen found no eQTL). The protection is a presence: the minor allele goes with longer life. Age of action
+  unknown: Deelen reads the ≥85 signal as action from middle age, which the paper infers and does not show, and
+  Timmers 2019's age bands do not settle it (Figure 5 source data: fathers about zero from 60 to 90, mothers 0.010,
+  0.020, 0.011; age moderator P 0.46).
 axes:
   tier: {value: B, cites: [pmid-24688116#q1, pmid-24688116#q2, pmid-24688116#q3, pmid-24688116#q4, pmid-24688116#q5, pmid-24688116#q6, pmid-24688116#q7, pmid-24688116#q8, pmid-30642433#q93, pmid-30642433#q94, pmid-30642433#q95, pmid-30642433#q13, pmid-30642433#q96, pmid-30642433#q97, pmid-30642433#q12, pmid-30642433#q91, pmid-30642433#q92, pmid-31413261#q88, pmid-31413261#q80, pmid-31413261#q89, pmid-33657282#q14, pmid-28100865#q1, pmid-29030599#q16, pmid-29030599#q17, pmid-30729179#q51]}
   mechanism: {value: general_ageing, cites: [pmid-24688116#q11, pmid-24688116#q14]}
   pleiotropy: {values: ["mech:cvd"], cites: [pmid-24688116#q11, pmid-24688116#q12, pmid-24688116#q13, db-opentargets-26.09#q487, db-opentargets-26.09#q488]}
-  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: [pmid-30642433#q136, pmid-30642433#q137, pmid-30642433#q138, pmid-30642433#q139, pmid-30642433#q140, pmid-30642433#q141, pmid-30642433#q142]}
   outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "+",
             cites: [pmid-30729179#q51, pmid-30729179#q52, db-opentargets-26.09#q492, db-opentargets-26.09#q493, pmid-30642433#q94, pmid-24688116#q10, pmid-24688116#q4]}
   actionability: {label: descriptive, cites: [pmid-24688116#q14]}

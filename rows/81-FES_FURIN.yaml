@@ -7,27 +7,28 @@ verdict: kept
 verdict_reason: >-
   Tier A confirmed. Genome-wide significant for parents' attained age in UK Biobank (Pilling 2017, rs17514846, P
   7.1e-10), and replicated outside UK Biobank with the same allele: in LifeGen with UK Biobank's lives removed, C at
-  rs17514846 adds 0.18 years per copy, P 0.013 (Timmers 2019's Figure 2 source data), and Timmers 2019 lists the
-  locus among the previously unreplicated findings it validates. In Timmers 2019's million lives the lead rs6224
-  reaches P 1.3e-10, G adding 0.25 years per copy. Every other look-up leans the same way and does not pass, none a
-  red flag: Deelen 2019's 90th and 99th percentiles (OR 1.03 and 1.04, P 0.13 and 0.25) and the longevity studies of
-  Timmers 2019's Figure 4 (P 0.18 one-sided). Wright 2019's AncestryDNA arm has no row for the lead; its fathers'
+  rs17514846 adds 0.18 years per copy, P 0.013 (Timmers 2019's Figure 2 source data), and Timmers 2019 lists the locus
+  among the previously unreplicated findings it validates. In Timmers 2019's million lives the lead rs6224 reaches P
+  1.3e-10, G adding 0.25 years per copy. Every other look-up leans the same way and does not pass, none a red flag:
+  Deelen 2019's 90th and 99th percentiles (OR 1.03 and 1.04, P 0.13 and 0.25) and the longevity studies of Timmers
+  2019's Figure 4 (P 0.18 one-sided). Wright 2019's AncestryDNA arm has no row for the lead; its fathers'
   meta-analysis holds two nearby clumped SNPs, rs4702 and rs2677737 (AncestryDNA P 0.15 and 0.009, no heterogeneity
-  with UK Biobank), whose r² to the lead no cached source gives, so they are named, not scored. Healthspan is 0:
-  Zenin 2019's summary statistics give P 0.84 at the lead, in UK Biobank, a different trait from the same sample.
-  Timmers 2019 files the locus as cardiometabolic, and FURIN variants were known for blood pressure (Pilling 2017);
-  no cached source measures a mediator at this SNP, so none is written and the row stays descriptive. The effector
-  is FES at E1: locus-to-gene 0.97 (FURIN 0.15), and FES holds 113 of the 120 cis-QTL colocalisations at H4 ≥ 0.8,
-  FURIN 7, under the tenth that would make it a rival (D24); the lead lies in an intron of FURIN,
-  and Timmers 2019's expression analysis (SMR) names both FURIN and FES. rs6224 holds PIP 0.22 in Timmers 2019's
-  credible set (C2), rs17514846 0.065 at r² 0.92: one signal. The lifespan-raising G is about half of European
-  alleles, so the protection is an absence of the risk allele. Age of action is unknown: no cached source gives this
-  locus's own age bands.
+  with UK Biobank), whose r² to the lead no cached source gives, so they are named, not scored. Healthspan is 0: Zenin
+  2019's summary statistics give P 0.84 at the lead, in UK Biobank, a different trait from the same sample. Timmers
+  2019 files the locus as cardiometabolic, and FURIN variants were known for blood pressure (Pilling 2017); no cached
+  source measures a mediator at this SNP, so none is written and the row stays descriptive. The effector is FES at E1:
+  locus-to-gene 0.97 (FURIN 0.15), and FES holds 113 of the 120 cis-QTL colocalisations at H4 ≥ 0.8, FURIN 7, under
+  the tenth that would make it a rival (D24); the lead lies in an intron of FURIN, and Timmers 2019's expression
+  analysis (SMR) names both FURIN and FES. rs6224 holds PIP 0.22 in Timmers 2019's credible set (C2), rs17514846 0.065
+  at r² 0.92: one signal. The lifespan-raising G is about half of European alleles, so the protection is an absence of
+  the risk allele. Age of action is unknown: in Timmers 2019's age bands the effect keeps one sign from 60 to 90, but
+  fathers' shrinks (0.027, 0.011, 0.018) while mothers' grows (0.006, 0.018, 0.037), and the age moderator does not
+  pass (P 0.087; Figure 5 source data).
 axes:
   tier: {value: A, cites: [pmid-29227965#q13, pmid-30642433#q19, pmid-30642433#q12, pmid-30642433#q21, pmid-30642433#q18]}
   mechanism: {value: heart_vessels, cites: [pmid-30642433#q18, pmid-29227965#q14]}
   pleiotropy: {values: ["mech:cvd"], cites: [pmid-30642433#q18]}
-  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: [pmid-30642433#q150, pmid-30642433#q151, pmid-30642433#q152, pmid-30642433#q153, pmid-30642433#q154, pmid-30642433#q155, pmid-30642433#q156]}
   outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "0",
             cites: [pmid-30729179#q8, pmid-30642433#q18, pmid-29227965#q13, pmid-31413261#q16, pmid-30642433#q20]}
   actionability: {label: descriptive, cites: [pmid-30642433#q18]}

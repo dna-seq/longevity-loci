@@ -12,24 +12,28 @@ verdict_reason: >-
   FOXO3 to pass its Bonferroni threshold (P 6e-4 at the 90th in Timmers 2020's tabulation). A trade-off: the
   lifespan-raising allele protects against heart disease and goes with less protection against non-lung cancers
   (Timmers 2019); on lifespan the heart side wins, so the net direction is resolved and the states are not neutral.
-  Age of action is read as lifelong: no significant age difference in Joshi 2017, and a larger effect at the 99th
-  than the 90th percentile in Deelen 2019, though Timmers 2019 sees the hazard-ratio effect tend to decline after 60.
-  Deelen's own CDKN2A/B discovery variant (rs7039467) is in none of the lead's credible sets and is not scored here.
-  CDKN2B is named at E1 (requirements §4.2, §6.2): on all six lifespan-class sets the only cis-QTL colocalisation at
-  H4 ≥ 0.8 is CDKN2B's (one TwinsUK adipose exon-expression QTL, H4 0.94 to 0.96), and CDKN2B tops locus-to-gene on
-  each, passing 0.5 only on Pilling 2017's combined-parents set (0.53; Timmers 2019's 0.36, CDKN2A 0.21). E1 by the
-  letter on one set, on a single tissue's QTL: a thin basis. Timmers 2020 names CDKN2B by SMR too.
+  Age of action is mid-life, by significant age moderation (DIRECT): in Timmers 2019's Figure 5 source data age
+  moderates the effect at P 5.2e-4, FDR Q 0.011, one of the paper's five loci passing 5 % FDR, with the sign of
+  CHRNA3/5's moderator (an effect that fades) and against APOE's (one that grows); fathers' effect falls from 0.092
+  and 0.083 at 40-60 to 0.039, 0.026 and 0.009 at 60-90, mothers' from 0.036 at 60-70 to 0.016 at 80-90, so
+  age_dependent. This replaces the earlier lifelong reading, which rested on Joshi 2017's non-significant age
+  difference; Deelen 2019's larger effect at the 99th than the 90th percentile runs the other way and is not a
+  significant contrast. Deelen's own CDKN2A/B discovery variant (rs7039467) is in none of the lead's credible sets and
+  is not scored here. CDKN2B is named at E1 (requirements §4.2, §6.2): on all six lifespan-class sets the only cis-QTL
+  colocalisation at H4 ≥ 0.8 is CDKN2B's (one TwinsUK adipose exon-expression QTL, H4 0.94 to 0.96), and CDKN2B tops
+  locus-to-gene on each, passing 0.5 only on Pilling 2017's combined-parents set (0.53; Timmers 2019's 0.36, CDKN2A
+  0.21). E1 by the letter on one set, on a single tissue's QTL: a thin basis. Timmers 2020 names CDKN2B by SMR too.
   The seed's other rsIDs: rs1333042, rs7859727, rs6475609 (r² 0.93) and rs1333049 (the CAD tag, r² 0.83) are in the
   lead's set, the same signal; rs1063192 (a German candidate study) was not read.
 axes:
   tier: {value: A, cites: [pmid-30642433#q6, pmid-31484785#q9, pmid-31413261#q3, pmid-32678081#q4]}
   mechanism: {value: heart_vessels, cites: [pmid-29227965#q6, pmid-30642433#q6]}
   pleiotropy: {values: ["mech:cvd", "tradeoff"], cites: [pmid-30642433#q7, pmid-29227965#q6]}
-  age_of_action: {value: LIFELONG, confidence: DIRECT_WEAK, cites: [pmid-29030599#q9, pmid-31413261#q4]}
+  age_of_action: {value: MIDLIFE, confidence: DIRECT, cites: [pmid-30642433#q157, pmid-30642433#q158, pmid-30642433#q159, pmid-30642433#q160, pmid-30642433#q161, pmid-30642433#q162, pmid-30642433#q163, pmid-30642433#q164, pmid-30642433#q165, pmid-30642433#q166, pmid-30642433#q212]}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
             cites: [pmid-30729179#q2, pmid-30642433#q6, pmid-31413261#q3, pmid-32678081#q4]}
   actionability: {label: descriptive, cites: [pmid-30642433#q7]}
-  context: {values: [eur_only_evidence], cites: [pmid-30642433#q6, pmid-31484785#q9]}
+  context: {values: [eur_only_evidence, age_dependent], cites: [pmid-30642433#q6, pmid-31484785#q9, pmid-30642433#q157]}
 flags:
   - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-29227965#q6, pmid-30642433#q6]}
   - {token: "causal:C3", cites: [db-opentargets-26.09#q16]}

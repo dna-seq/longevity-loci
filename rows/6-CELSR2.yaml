@@ -12,19 +12,21 @@ verdict_reason: >-
   2019). Weaker elsewhere, on the same side each time: in Timmers 2019's million lives the conventional P is only
   1.4e-6 (genome-wide only in its lipid-informed Bayesian scan, whose P is not counted here); Deelen 2019's 90th and
   99th percentiles are null (P 0.16 to 0.52, all on the lifespan-raising side); healthspan is nominal (Zenin 2019's
-  summary statistics, P 1.2e-4). The lifespan-raising allele is the rarer one, which lowers LDL cholesterol, so
-  the protection is a presence. The lead is the seed's rs646776 rather than a study's reported SNP: it sits in
-  Pilling's fathers' credible set at PIP 0.11 (the reported SNPs at 0.05 to 0.07) and at r² 0.94 to Wright's lead.
-  Effector E3, no gene named (D24): SORT1 (0.99) and CELSR2 (0.97) both pass locus-to-gene and both colocalise
-  with cis QTLs, and PSRC1 holds the most cis colocalisations (56 of 114; CELSR2 38, SORT1 16); the expression
-  analysis of Timmers 2019 names PSRC1. Age of action is unknown: no cached source gives this locus's
-  own age bands. Timmers 2019's figure source data labels rs4970836's alleles the other way round from its table;
-  the table, the frequencies and the biology agree, and are followed. All four seed rsIDs are one signal here.
+  summary statistics, P 1.2e-4). The lifespan-raising allele is the rarer one, which lowers LDL cholesterol, so the
+  protection is a presence. The lead is the seed's rs646776 rather than a study's reported SNP: it sits in Pilling's
+  fathers' credible set at PIP 0.11 (the reported SNPs at 0.05 to 0.07) and at r² 0.94 to Wright's lead. Effector E3,
+  no gene named (D24): SORT1 (0.99) and CELSR2 (0.97) both pass locus-to-gene and both colocalise with cis QTLs, and
+  PSRC1 holds the most cis colocalisations (56 of 114; CELSR2 38, SORT1 16); the expression analysis of Timmers 2019
+  names PSRC1. Age of action is unknown: Timmers 2019's age bands at rs4970836 (r² 0.90 with the lead, D′ 0.97) are
+  lowest at 80-90 in both parents, but mothers' rise from 60-70 to 70-80 first and the age moderator is null (P 0.24),
+  so they show no class (Figure 5 source data). Timmers 2019's figure source data labels rs4970836's alleles the other
+  way round from its table; the table, the frequencies and the biology agree, and are followed. All four seed rsIDs
+  are one signal here.
 axes:
   tier: {value: A, cites: [pmid-29227965#q10, pmid-31484785#q13, pmid-31484785#q15, pmid-31484785#q16]}
   mechanism: {value: heart_vessels, cites: [pmid-30642433#q11, pmid-29227965#q6]}
   pleiotropy: {values: ["mech:cvd"], cites: [pmid-30642433#q11]}
-  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: [pmid-30642433#q205, pmid-30642433#q206, pmid-30642433#q207, pmid-30642433#q208, pmid-30642433#q209, pmid-30642433#q210, pmid-30642433#q211, db-ensembl-116#q249]}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
             cites: [pmid-30729179#q16, pmid-29227965#q10, pmid-31413261#q6, pmid-31413261#q7, pmid-31413261#q8]}
   actionability: {label: preventable, what: ["act_test:ldl"], who: "act_who:doctor", cites: [pmid-30642433#q11]}

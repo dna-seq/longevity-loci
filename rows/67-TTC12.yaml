@@ -7,26 +7,28 @@ verdict: kept
 verdict_reason: >-
   Tier B, down from the seed's A, on red-flag heterogeneity alone. Genome-wide significant in Pilling 2017's fathers
   (UK Biobank, P 5.5e-9), and replicated outside UK Biobank: in LifeGen's fathers with UK Biobank's lives removed
-  (Timmers 2019's Figure 2 source data, the same allele, P 0.016) and at Deelen 2019's 90th percentile (OR 1.068,
-  P 0.011; the 99th 1.071, P 0.097). Timmers 2020's multivariate test reaches P 4e-10 by pooling data that each fall
+  (Timmers 2019's Figure 2 source data, the same allele, P 0.016) and at Deelen 2019's 90th percentile (OR 1.068, P
+  0.011; the 99th 1.071, P 0.097). Timmers 2020's multivariate test reaches P 4e-10 by pooling data that each fall
   short alone (parental lifespan and healthspan P 2e-6), and is not an independent sample. But AncestryDNA's fathers,
   a powered sample of 309,383, show nothing (Wright 2019: P 0.81, effect 0.0008 against UK Biobank's -0.016,
   heterogeneity P 3.0e-4), and its authors list the locus as not replicated: red-flag heterogeneity, which caps the
   row at B (§4.1). Timmers 2019 counts it among the cancer-protective loci whose protective allele also lengthens
-  life, so no trade-off is recorded. The effector is USP28 at E2 (requirements §4.2, §6.2), by colocalisation
-  alone: the only cis-QTL colocalisations at H4 ≥ 0.8 are USP28's expression in GTEx muscle and blood (0.997), and
-  every one of the set's fifteen QTL colocalisations is USP28's; locus-to-gene is low for every gene (CLDN25 0.35,
-  ZW10 0.20), and Timmers 2020's expression analysis names USP28, ANKK1 and TTC12. Age of action is unknown: no cached source gives this locus's own age
-  bands. The seed's other rsID, rs2186800 (TTC12, mvAge in Rosoff 2023, the source of the seed's name), lies about
-  400 kb away and is not among the 155 members of the lead's credible set: not this signal, and not read here.
-  Timmers 2022's aging-GIP1 lead nearby, rs61907878 (USP28/HTR3B, P 1e-9), tags the lead at r² 0.38 (EUR; its C,
-  the major allele, with the lead's A); its own-survival look-up ran in FinnGen alone (N 218,396; Biobank Japan's
-  frequency printed 0.00) and gives C 0.087 years, one-sided P 0.33: a weak tag, not counted.
+  life, so no trade-off is recorded. The effector is USP28 at E2 (requirements §4.2, §6.2), by colocalisation alone:
+  the only cis-QTL colocalisations at H4 ≥ 0.8 are USP28's expression in GTEx muscle and blood (0.997), and every one
+  of the set's fifteen QTL colocalisations is USP28's; locus-to-gene is low for every gene (CLDN25 0.35, ZW10 0.20),
+  and Timmers 2020's expression analysis names USP28, ANKK1 and TTC12. Age of action is unknown: Timmers 2019's age
+  bands for rs61905747 change sign in mothers at 70-80 (mothers 0.028, −0.015, 0.012; fathers 0.042, 0.020, 0.018),
+  and the age moderator does not pass (P 0.055; Figure 5 source data). The seed's other rsID, rs2186800 (TTC12, mvAge
+  in Rosoff 2023, the source of the seed's name), lies about 400 kb away and is not among the 155 members of the
+  lead's credible set: not this signal, and not read here. Timmers 2022's aging-GIP1 lead nearby, rs61907878
+  (USP28/HTR3B, P 1e-9), tags the lead at r² 0.38 (EUR; its C, the major allele, with the lead's A); its own-survival
+  look-up ran in FinnGen alone (N 218,396; Biobank Japan's frequency printed 0.00) and gives C 0.087 years, one-sided
+  P 0.33: a weak tag, not counted.
 axes:
   tier: {value: B, cites: [pmid-29227965#q9, pmid-32678081#q5, pmid-30642433#q15, pmid-31413261#q12, pmid-31484785#q11, pmid-31484785#q20, pmid-37118362#q49, pmid-37118362#q50, db-ensembl-116#q191, db-ensembl-116#q192, db-ensembl-116#q193]}
   mechanism: {value: general_ageing, cites: [pmid-32678081#q5, pmid-30642433#q10]}
   pleiotropy: {values: ["mech:cancer"], cites: [pmid-30642433#q10]}
-  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: [pmid-30642433#q143, pmid-30642433#q144, pmid-30642433#q145, pmid-30642433#q146, pmid-30642433#q147, pmid-30642433#q148, pmid-30642433#q149]}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+", cites: [pmid-32678081#q5, pmid-31413261#q12]}
   actionability: {label: descriptive, cites: [pmid-32678081#q6]}
   context: {values: [eur_only_evidence], cites: [pmid-29227965#q9, pmid-32678081#q5]}

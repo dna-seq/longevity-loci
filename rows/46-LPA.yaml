@@ -8,16 +8,19 @@ verdict: kept
 verdict_reason: >-
   Tier A confirmed. Genome-wide significant for parental lifespan in about one million lives (Timmers 2019, P 8.5e-25)
   and for healthspan (Zenin 2019); replicated in subjects' own survival past 90 in CHARGE-EU 90+ at the lead itself,
-  same allele and direction (Joshi 2017, P 0.002, nominal, no effect size given), and nominal at the 90th percentile in Deelen 2019's data (via
-  Timmers 2020, P 0.007). The caveat on independence: the parental-lifespan GWAS (Joshi, Pilling, Timmers 2019)
-  share UK Biobank and the LifeGen cohorts, and the text does not say whether CHARGE-EU 90+'s cohorts overlap the
-  26 discovery cohorts; the phenotype differs (own survival past 90 against parents' survival). Secondary LPA-region
-  signals (rs186696265, rs111333005, ...) need a conditional analysis to be rows of their own and are not scored here.
+  same allele and direction (Joshi 2017, P 0.002, nominal, no effect size given), and nominal at the 90th percentile
+  in Deelen 2019's data (via Timmers 2020, P 0.007). The caveat on independence: the parental-lifespan GWAS (Joshi,
+  Pilling, Timmers 2019) share UK Biobank and the LifeGen cohorts, and the text does not say whether CHARGE-EU 90+'s
+  cohorts overlap the 26 discovery cohorts; the phenotype differs (own survival past 90 against parents' survival).
+  Secondary LPA-region signals (rs186696265, rs111333005, ...) need a conditional analysis to be rows of their own and
+  are not scored here. Timmers 2019's Figure 5 source data lean with the mid-life reading: fathers' effect halves
+  after 60 (0.137 and 0.136 at 40-60, 0.072 to 0.053 at 60-90) while mothers' holds (0.083, 0.083, 0.058), and the age
+  moderator is nominal (P 0.040) and fails the paper's 5 % FDR (Q 0.76), so DIRECT_WEAK stays.
 axes:
   tier: {value: A, cites: [pmid-30642433#q1, pmid-29030599#q2, pmid-30729179#q1, pmid-32678081#q1]}
   mechanism: {value: heart_vessels, cites: [pmid-29030599#q3, pmid-29227965#q2]}
   pleiotropy: {values: ["mech:cvd"], cites: [pmid-29030599#q4, pmid-30642433#q1]}
-  age_of_action: {value: MIDLIFE, confidence: DIRECT_WEAK, cites: [pmid-32678081#q2]}
+  age_of_action: {value: MIDLIFE, confidence: DIRECT_WEAK, cites: [pmid-32678081#q2, pmid-30642433#q182, pmid-30642433#q183, pmid-30642433#q184, pmid-30642433#q185, pmid-30642433#q186, pmid-30642433#q187, pmid-30642433#q188, pmid-30642433#q189, pmid-30642433#q190]}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
             cites: [pmid-30729179#q1, pmid-30642433#q1, pmid-29030599#q2, pmid-32678081#q1]}
   actionability: {label: preventable, what: ["act_test:lpa"], who: "act_who:doctor", cites: [pmid-29030599#q3]}
