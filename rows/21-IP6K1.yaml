@@ -49,9 +49,10 @@ verdict_reason: >-
   at 51 % against 49 %, so A/G, the most common genotype, is the reference (§6.2): G/G protective, A/A risk; no
   PROTECT token, the split too even and no disease known at the locus to be absent (q51). Age of action unknown. The evidence is not European only: the FinnGen and Biobank Japan
   look-up spans both, T common in East Asians (0.76 in 1000 Genomes JPT; the table's Biobank Japan column prints 0.50,
-  the discovery's own frequency, so it is not read as Japan's).
+  which does not match and is not read as Japan's), Japan carrying about 60 % of the look-up's information
+  (estimated from the FinnGen-only rows' size, not printed).
 axes:
-  tier: {value: A, cites: [pmid-31484785#q49, pmid-31484785#q50, pmid-31484785#q52, pmid-31484785#q54, pmid-31484785#q55, pmid-31484785#q56, pmid-31484785#q57, pmid-31484785#q58, pmid-31413261#q41, pmid-31413261#q43, pmid-31413261#q1, pmid-31413261#q2, db-gwascatalog-2026.10.29#q165, db-gwascatalog-2026.10.29#q166, db-gwascatalog-2026.10.29#q170, db-gwascatalog-2026.10.29#q171, pmid-30642433#q59, pmid-30642433#q60, pmid-30642433#q61, pmid-30642433#q62, pmid-30642433#q19, pmid-30642433#q14, db-ensembl-116#q100, db-ensembl-116#q106, db-ensembl-116#q107, pmid-37118362#q37, pmid-37118362#q38, pmid-37118362#q2, pmid-37118362#q5, pmid-37118362#q6, pmid-37118362#q7, pmid-37118362#q55, db-ensembl-116#q196]}
+  tier: {value: A, cites: [pmid-31484785#q49, pmid-31484785#q50, pmid-31484785#q52, pmid-31484785#q54, pmid-31484785#q55, pmid-31484785#q56, pmid-31484785#q57, pmid-31484785#q58, pmid-31413261#q41, pmid-31413261#q43, pmid-31413261#q1, pmid-31413261#q2, db-gwascatalog-2026.10.29#q165, db-gwascatalog-2026.10.29#q166, db-gwascatalog-2026.10.29#q170, db-gwascatalog-2026.10.29#q171, pmid-30642433#q59, pmid-30642433#q60, pmid-30642433#q61, pmid-30642433#q62, pmid-30642433#q19, pmid-30642433#q14, db-ensembl-116#q100, db-ensembl-116#q106, db-ensembl-116#q107, pmid-37118362#q37, pmid-37118362#q38, pmid-37118362#q2, pmid-37118362#q5, pmid-37118362#q6, pmid-37118362#q7, pmid-37118362#q56, pmid-37118362#q49, pmid-37118362#q55, db-ensembl-116#q196]}
   mechanism: {value: general_ageing, cites: [pmid-31484785#q51, db-opentargets-26.09#q240, db-gwascatalog-2026.10.29#q164, db-gwascatalog-2026.10.29#q167, db-gwascatalog-2026.10.29#q169, db-gwascatalog-2026.10.29#q172, db-gwascatalog-2026.10.29#q174]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -249,5 +250,5 @@ studies:
     effect_unit: approximate years of survival per T allele of rs2271961
     effect_allele: T
     direction: protective
-    statistical_test: "Supplementary Table 6 (q37; columns q2, legend q5-q7): one-sided Wald P for the direction of aging-GIP1, Bonferroni P 0.063 over 23 SNPs, not passing; SE 0.0763; 46,128 deaths; T printed 0.64 for FinnGen and 0.50 for Biobank Japan (the latter the discovery's own frequency, q38; 1000 Genomes JPT 0.76, db-ensembl-116#q196); rs2271961 r² 0.99 to the lead, its T with the lead's G (db-ensembl-116#q100); outside Wright 2019's, Deelen 2019's and Timmers 2019's samples, a second nominal replication"
+    statistical_test: "Supplementary Table 6 (q37; columns q2, legend q5-q7): one-sided Wald P for the direction of aging-GIP1, Bonferroni P 0.063 over 23 SNPs, not passing; SE 0.0763; 46,128 deaths; T printed 0.64 for FinnGen and 0.50 for Biobank Japan (the column does not match 1000 Genomes JPT and tracks Supplementary Table 4's discovery frequency within 0.02; what it holds is unknown, q38; 1000 Genomes JPT 0.76, db-ensembl-116#q196; Japan about 60 % of the information, estimated from q56 and q49); rs2271961 r² 0.99 to the lead, its T with the lead's G (db-ensembl-116#q100); outside Wright 2019's, Deelen 2019's and Timmers 2019's samples, a second nominal replication"
     curator: claude-opus-5-5

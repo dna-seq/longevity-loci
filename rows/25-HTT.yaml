@@ -139,7 +139,7 @@ studies:
     effect_unit: approximate years of survival per G allele of rs362273
     effect_allele: G
     direction: protective
-    statistical_test: "Supplementary Table 6 (q2-q7): one-sided Wald P for the direction of aging-GIP1, Bonferroni P 0.025 over 23 SNPs; SE 0.0689; 46,128 deaths; G printed 0.44 for FinnGen and 0.32 for Biobank Japan (the latter the discovery's own frequency, pmid-37118362's 2026-11-11 sweep); rs362273 r² 0.67 to the lead in 1000 Genomes EUR and 0.76 in EAS (db-ensembl-116#q122, q123), a weak proxy, its G with the lead's T shown by frequency and r² in Europeans (db-ensembl-116#q122; the opposite phase caps r² near 0.30) and assumed in Japan; outside Timmers 2019's and Deelen 2019's samples"
+    statistical_test: "Supplementary Table 6 (q2-q7): one-sided Wald P for the direction of aging-GIP1, Bonferroni P 0.025 over 23 SNPs; SE 0.0689; 46,128 deaths; G printed 0.44 for FinnGen and 0.32 for Biobank Japan (the column does not match 1000 Genomes JPT and tracks Supplementary Table 4's discovery frequency within 0.02; what it holds is unknown; pmid-37118362's 2026-11-11 sweep); rs362273 r² 0.67 to the lead in 1000 Genomes EUR and 0.76 in EAS (db-ensembl-116#q122, q123), a weak proxy, its G with the lead's T shown by frequency and r² in Europeans (db-ensembl-116#q122; the opposite phase caps r² near 0.30) and assumed in Japan; outside Timmers 2019's and Deelen 2019's samples"
     curator: claude-opus-5-5
   - rsid: rs61348208
     note: pmid-31413261
