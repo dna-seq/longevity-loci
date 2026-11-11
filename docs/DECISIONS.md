@@ -165,3 +165,12 @@ standing word.
    endpoint). A Finnish sample's `ancestry` is `EUR`, the 1000 Genomes superpopulation; `population` names the
    Finns.
 
+## D20 — a meta-analysis that prints no pooled effect supports on allele, direction and P (2026-11-11)
+
+At 21-IP6K1 the genome-wide anchor is Wright 2019's maternal meta-analysis (AncestryDNA with UK Biobank, N about
+660,000, P 6.9×10⁻¹⁰), which prints each arm's z-score effect and no pooled one, so §6.3's effect size has no
+value to copy. As for a multivariate test (D15) and a nominal look-up (D13), a `meta_analysis` study with no
+`effect_size` owes the allele, a direction and its P; the arms' effects go in `statistical_test`. The curator's
+option (a), recommended. Rejected: (b), fetching Rosoff's supplement by hand to anchor on the multivariate copy of
+the same signal, a manual step that changes nothing the check sees.
+

@@ -157,7 +157,7 @@ SCORED = frozenset({Tier.A, Tier.B})
 REQUIRED_AB = ("p_value", "p_value_num", "effect_size", "effect_measure", "effect_allele")
 # D13, the person 2026-11-10 ("1a"): a nominal replication look-up supports with its allele, direction and p alone
 REQUIRED_NOMINAL = ("p_value", "p_value_num", "effect_allele")
-# D15: a multivariate test (a MANOVA across healthspan, lifespan and longevity) has a P and no single effect size
+# D15, D20: a multivariate test, or a meta-analysis that prints no pooled effect, (a MANOVA across healthspan, lifespan and longevity) has a P and no single effect size
 GENOME_WIDE = 5e-8
 SUGGESTIVE_P = 1e-5
 NOMINAL_P = 0.05  # §4.1: a replication counts at p < 0.05
@@ -206,7 +206,8 @@ def check_rules(row: Row, path: Path) -> list[Finding]:
         for i, s in enumerate(row.studies):
             if s.stat_significance is StatSignificance.NOT_SIGNIFICANT:
                 continue
-            if s.stat_significance is StatSignificance.NOMINAL or s.study_design is StudyDesign.MULTIVARIATE:
+            if (s.stat_significance is StatSignificance.NOMINAL or s.study_design is StudyDesign.MULTIVARIATE
+                    or (s.study_design is StudyDesign.META_ANALYSIS and s.effect_size is None)):
                 missing = [c for c in REQUIRED_NOMINAL if getattr(s, c) is None]
                 if s.effect_size is None and s.direction in (None, Direction.UNKNOWN):
                     missing.append("direction (or effect_size)")

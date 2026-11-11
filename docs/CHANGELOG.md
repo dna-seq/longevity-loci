@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- A meta-analysis that prints no pooled effect supports a tier A/B row on its allele, direction and P (D20).
 - `loci fetch-supp` reads OpenDocument spreadsheets and texts and Word documents, knowing an office file by its contents, not its name (Springer serves Gurinovich 2021's .ods as .xlsx).
 - `study_design: own_death_case_control` (a biobank's deceased against its living); D19: a replication sharing a small, measured part of the discovery sample is independent, and a stratum's genome-wide hit is read at the paper's own threshold.
 - `check rows` lists a variant not harmonised to the lifespan-increasing allele as `unharmonised`; D17 settles what the second batch's reviews found (a co-occurring lifespan study is the locus's own signal, causal confidence from the claim's own credible sets, genome-wide at the paper's own P, the anchor study's trait id).

@@ -583,3 +583,24 @@ def test_a_variant_not_harmonised_to_the_longer_life_allele_is_flagged(tree: Pat
     assert risky  # the fixture keeps one, as v1 wrote it
     found = {f.where for f in check_rows(tree / "rows", tree / "corpus") if f.kind is Kind.UNHARMONISED}
     assert found == risky
+
+
+def test_a_meta_analysis_with_no_pooled_effect_supports_on_allele_direction_and_p(tree: Path) -> None:
+    """D20, from 21-IP6K1: Wright 2019's maternal meta-analysis prints a P and each arm's effect, no pooled one. As a
+    meta-analysis without an effect size it owes allele, direction and P; with an effect size it owes all five."""
+    text = _row(tree).read_text()
+    study = text[text.index("studies:\n") + len("studies:\n"):]
+    bare = "".join(line for line in study.splitlines(keepends=True)
+                   if not line.startswith(("    effect_size:", "    effect_measure:", "    effect_unit:")))
+    meta = re.sub(r"study_design: \w+", "study_design: meta_analysis", bare, count=1)
+    assert "study_design: meta_analysis" in meta
+
+    def rules() -> list[tuple[str, str]]:
+        found = check_rows(tree / "rows", tree / "corpus")
+        assert not [f for f in found if f.kind in FAILING and f.kind is not Kind.RULE]
+        return [(f.where, f.detail) for f in found if f.kind is Kind.RULE]
+
+    _row(tree).write_text(text + meta.replace("    effect_allele: C\n", "    effect_allele: C\n    direction: risk\n", 1))
+    assert rules() == []
+    _row(tree).write_text(text + meta)
+    assert [(w, "direction" in d) for w, d in rules()] == [("studies[1] rs429358", True)]
