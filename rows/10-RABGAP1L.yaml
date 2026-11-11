@@ -164,15 +164,16 @@ studies:
     study_design: percentile_case_control_p99
     population: European (Deelen 2019's longevity meta-analysis)
     ancestry: [EUR]
-    stat_significance: not_significant
+    stat_significance: nominal
     p_value: "0.07061"
     p_value_num: 0.07061
+    p_one_sided: 0.0353
     effect_size: 0.0676
     effect_measure: beta
     effect_unit: log odds of survival to the 99th percentile per G allele (the file's a, beta -0.0676, turned)
     effect_allele: G
     direction: protective
-    statistical_test: "Deelen 2019's summary statistics (GCST008599), effective N 4,524; two-sided P printed, one-sided 0.035 (derived, D25.13); 90th percentile (GCST008598, q23) a beta -0.0170, P 0.49"
+    statistical_test: "Deelen 2019's summary statistics (GCST008599), effective N 4,524; two-sided P printed, one-sided 0.035 (derived, D25.13; p_one_sided, nominal under D26.13); 90th percentile (GCST008598, q23) a beta -0.0170, P 0.49"
     curator: claude-opus-5-5
   - rsid: rs10798302
     note: pmid-31413261
