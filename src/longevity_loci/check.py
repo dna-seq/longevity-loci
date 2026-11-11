@@ -185,12 +185,14 @@ def check_rules(row: Row, path: Path) -> list[Finding]:
             rule(f"studies[{i}] {s.rsid}", f"suggestive with p {s.p_value_num:g}, not in [5e-8, 1e-5)")
         if s.stat_significance is StatSignificance.NOMINAL and not SUGGESTIVE_P <= s.p_value_num < NOMINAL_P:
             rule(f"studies[{i}] {s.rsid}", f"nominal with p {s.p_value_num:g}, not in [1e-5, 0.05)")
+    moving = [f"{v.rsid} {g.genotype}" for v in row.variants for g in v.genotypes if g.state is not State.NEUTRAL]
     if supporting and {s.note for s in supporting} == {R_TIER_1_PMID}:
         if tier is not Tier.D:
             rule("R-TIER-1", f"only support is PMID 22279548, so tier D, not {tier.value}")
-        moving = [f"{v.rsid} {g.genotype}" for v in row.variants for g in v.genotypes if g.state is not State.NEUTRAL]
         if moving:
             rule("R-TIER-1", f"state neutral on every genotype: {', '.join(moving)}")
+    elif tier is Tier.D and moving:
+        rule("tier D", f"not supported, so no weight: state neutral on every genotype (D25): {', '.join(moving)}")
     for v in row.variants:
         if v.direction is Direction.RISK:
             out.append(Finding(Kind.UNHARMONISED, path, v.rsid,

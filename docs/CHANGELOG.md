@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- `check rows` holds every tier D row neutral on every genotype, not only R-TIER-1's; D25 says when a tested discovery is D, how a red flag that converts scales is calibrated, and settles the fourth batch's questions.
 - R-TIER-2 in `check rows` holds an age-threshold case-control (90+ against younger) as it holds a centenarian one; D21 fixes the red-flag line (power 0.8, heterogeneity P below 0.05), D22 what replicates and when a cross-ancestry null is tier D.
 - A meta-analysis that prints no pooled effect supports a tier A/B row on its allele, direction and P (D20).
 - `loci fetch-supp` reads OpenDocument spreadsheets and texts and Word documents, knowing an office file by its contents, not its name (Springer serves Gurinovich 2021's .ods as .xlsx).

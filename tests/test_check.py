@@ -365,6 +365,18 @@ GENOTYPES = ("    genotypes:\n      - {{genotype: TT, state: {a}, conclusion: x}
              "      - {{genotype: CT, state: {b}, conclusion: x}}\n      - {{genotype: CC, state: {c}, conclusion: x}}\n")
 
 
+def test_tier_d_neutral_on_every_genotype(tree: Path) -> None:
+    """D25: any tier D row carries no weight, not only R-TIER-1's; the states of its discovery are refused."""
+    text = _row(tree).read_text().replace("tier: {value: A,", "tier: {value: D,").replace(
+        "    direction: risk\n", "    direction: risk\n    genotypes:\n      - {genotype: TT, state: neutral, conclusion: x}\n"
+        "      - {genotype: CT, state: risk, conclusion: x}\n      - {genotype: CC, state: neutral, conclusion: x}\n", 1)
+    _row(tree).write_text(text)
+    found = [(f.where, f.detail) for f in check_rows(tree / "rows", tree / "corpus") if f.kind is Kind.RULE]
+    assert found == [("tier D", "not supported, so no weight: state neutral on every genotype (D25): rs429358 CT")]
+    _row(tree).write_text(text.replace("state: risk", "state: neutral"))
+    assert not [f for f in check_rows(tree / "rows", tree / "corpus") if f.kind is Kind.RULE]
+
+
 @pytest.mark.parametrize(
     ("direction", "states", "fails"),
     [

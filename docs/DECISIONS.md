@@ -221,3 +221,46 @@ Applied: 81 is E1 FES (FURIN 7 of 120 colocalisations); 15 is E3 (the unnamed EN
 E3 (ALDH2 holds every colocalisation, SH2B3 none); 6 is E3 (SORT1 and CELSR2 both pass L2G). Rejected: the bare
 letter, under which one tissue's eQTL vetoes any call; and a looser dominance cut, which no source gives.
 
+
+## D25 — when a tested discovery is tier D; calibrating a red flag; the fourth batch's questions (2026-11-11)
+
+From the lead's adversarial read of rows 25, 26 and 31 and the curator's questions on 25 to 31, settled under the
+person's standing word.
+
+1. **A genome-wide discovery that fails a powered test in its own ancestry is tier D** ("explicitly contradicted",
+   §4.1) when the test is a D21 red flag and no independent scoring-class study (D22.2) gives p < 0.05 in the
+   discovery's direction. §4.1's own example has this shape: USP42 and TMTC2, genome-wide in one study, null in
+   Timmers' powered look-up "at effect sizes originally published" though leaning the same way (P 0.27, 0.11). B's
+   "a single study without independent replication" is a hit nobody has tested, not one tested and failed; the
+   71/67 rule is a ceiling on A, never a floor under D. A null in another ancestry stays with D22.3, so 18 (an East
+   Asian discovery) is C. Applied: 26 is D (Deelen's own UK Biobank validation, power about 1.00, heterogeneity P
+   2e-4 to 9e-4 at half the effect for the parental cut). 31 keeps C: Deelen's 99th percentile gives P 0.012 at an
+   r² 1.0 proxy, and whether Deelen is independent of NECS is not yet shown; once the curator has quoted NECS's
+   controls from the main text, it is B (capped) if the independence holds and C if it cannot be shown. A smaller
+   replicated effect is §4.1's B clause, never a reason for D.
+2. **A tier D row is neutral on every genotype**, as R-TIER-1's row is: not supported means no weight. Its
+   conclusions say what was reported and that it was not supported. `check rows` holds every D row to it.
+3. **A red flag that rests on converting one scale to another** (a parental-lifespan β against a percentile or
+   centenarian odds ratio) must hold under both of Timmers 2019's calibrations: the APOE factor (q91's method) and
+   the loci's mean factor (Figure 4 source data, "Mean"). APOE's effect grows with age, so its factor overstates
+   what a midlife locus should show at the oldest ages, and the mean understates it for a late one; a flag that
+   only one of them raises is no flag. The row states power and heterogeneity under both. Applied: 25's Deelen 90th
+   percentile flags under APOE only (power 1.00, heterogeneity P 0.0024; mean factor 0.74, 0.36), so 25 keeps A on
+   FinnGen with Biobank Japan (one-sided P 0.0011, the size expected at r² 0.67) and Deelen's 99th (P 0.0093 at the
+   lead). 31's LifeGen null flags under both. A comparison on one scale (26: Deelen against Deelen's validation)
+   needs no calibration.
+4. **A folded locus's credible sets count for the effector** (D14, D24): folding says the two seed ids are one
+   signal, so every lifespan-class set holding either counts. 25 is E3: in mvAge's set, MSANTD1 passes L2G (0.55)
+   and RGS12 holds 4 of 18 colocalisations. Its conclusions may name HTT only to say the SNP is not the
+   Huntington's repeat, never as the gene acting (R-CAUSAL).
+5. **A healthspan-class credible set the tier does not rest on does not set causal confidence** (D17.2). 27 keeps
+   C4/E4; Foote 2025's frailty set (lead PIP 0.043, KLF3 L2G 0.76) is named in prose.
+6. **A second, independent signal at a seed locus with no seed id of its own** (28's rs13141210; ADD1 rs16843603,
+   found at 25) goes to the scout's queue as a candidate row, curated after the seed list; meanwhile the row names
+   it in prose.
+7. **A mechanism is named when something shows the effect runs through it.** 29 is `general_ageing`: its lead tops
+   three smoking sets at PIP about 0.06, and smoking, adiposity and diabetes are about equally strong; the smoking
+   link goes in prose. The curator's default, `smoking_lungs`, rejected.
+8. **Vocabulary**: a frailty index stays `meta_analysis` with `HEALTHSPAN` (D23); a look-up whose model the paper
+   does not state is written as the paper describes it. Deelen's parental 90th line stays `EXTREME_SURVIVAL_CC`,
+   `percentile_case_control_p90`, with `age_of: parent` and the case and control definition in its test.

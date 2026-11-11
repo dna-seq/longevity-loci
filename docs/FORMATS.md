@@ -144,6 +144,7 @@ nothing to check.
     5×10⁻⁸ to 1×10⁻⁵, `nominal` from 1×10⁻⁵ to 0.05. A nominal study supports: §4.1 counts a replication at
     p < 0.05, so the §6.3 fields below are asked of it too. `not_significant` has no band (D11).
   - R-TIER-1: a row whose only supporting studies are PMID 22279548 is tier D, neutral on every genotype.
+  - A tier D row is neutral on every genotype (D25: not supported means no weight).
   - On a tier A or B row: a genome-wide significant study, not MR-only, not n = 1 genomes (R-TIER-4); not one
     unreplicated old-against-young case-control study, `centenarian_case_control` or
     `age_threshold_case_control` (R-TIER-2, D22; a percentile case-control design is not read as one); §6.3's `p_value`, `p_value_num`, `effect_size`, `effect_measure` and `effect_allele` on every supporting
