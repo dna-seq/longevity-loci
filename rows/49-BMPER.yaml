@@ -9,15 +9,16 @@ verdict: re-tiered
 verdict_reason: >-
   Tier D, from the seed's B, on D22.3: a genome-wide discovery in one ancestry that the European look-ups contradict, with
   its proxies on the other side too, a powered test on the same scale raising D21's red flag, and no independent
-  scoring-class study p < 0.05 its way. D25.1 (a failed test in the discovery's own ancestry) would apply too only if
-  Liu's dataset 2 may count against its own pooled P, which is put to the lead. Liu 2021 compared Chinese of the CLHLS survey aged 90 or more
+  scoring-class study p < 0.05 its way. D25.1 (a failed test in the discovery's own ancestry) does not apply: Liu's
+  dataset 2 sits inside its own pooled P and contradicts it no more than it replicates it (D27.1). Liu 2021 compared Chinese of the CLHLS survey aged 90 or more
   (4,662) with controls under 75 (3,828) in dataset 1, typed on a custom chip, and centenarians (1,105) with controls
   under 65 (1,450) in dataset 2, the group's earlier genome-wide array less its overlap with dataset 1. G, the minor
   allele, goes with reaching old age in dataset 1 (β 0.370 on the log odds, OR 1.45, P 3.9e-18), and the
   meta-analysis gives β 0.308, P 7.9e-15, the paper's top signal. The pooled P is dataset 1's alone: dataset 2 goes the
   other way (β −0.097, SE 0.109, P 0.38) though it had power 0.88 at the meta β to show G's side (heterogeneity
   between the two P about 6.7e-5, derived). Dataset 2 sits inside the pooled P, so the row does not rest on it (D25.9
-  says such an arm replicates nothing; whether it can contradict is put to the lead). Liu's own survival analysis (Cox; G carriers living longer, the paper's survival rates 28.3 % GG, 16.8 % GA, 11.3 %
+  says such an arm replicates nothing, D27.1 that it contradicts nothing); the split is recorded as heterogeneity
+  inside the discovery, which bars A by §4.1's last criterion on its own (D27.1). Liu's own survival analysis (Cox; G carriers living longer, the paper's survival rates 28.3 % GG, 16.8 % GA, 11.3 %
   AA, "survival HR" 1.25, P 1.45e-10) is dataset 1's people and chip again, so it replicates nothing either (D25.9),
   and it is cited here, not entered as a study, so it cannot read as an own-survival `+`.
   Outside China every look is flat or against G, though G is as common in Europe (0.098) as in East Asia (0.096).
@@ -110,7 +111,7 @@ studies:
     effect_unit: log odds of being a long-lived case, per G allele
     effect_allele: G
     direction: protective
-    statistical_test: "Inverse-variance fixed-effect meta-analysis (METAL, q12) of two case-control datasets (Table 1, q17; q3): dataset 1 (custom chip; 4,662 cases aged 90+, 3,828 controls under 75) β 0.370, SE 0.043, P 3.87e-18; dataset 2 less its overlap (genome-wide array; 1,105 centenarians, 1,450 controls under 65) β −0.097, SE 0.109, P 0.376; meta β 0.308, SE 0.040, P 7.91e-15, which the two reproduce (derived). The datasets disagree: heterogeneity P about 6.7e-5, dataset 2's power 0.88 at the meta β (derived). Dataset 2 is inside the pooled P, so neither replication nor, by the row's reading, contradiction (put to the lead); it is also the GWAS 11,893 of the chip's SNPs were chosen from (q5), this SNP's route unread. No percentile stated; cases counted across both datasets"
+    statistical_test: "Inverse-variance fixed-effect meta-analysis (METAL, q12) of two case-control datasets (Table 1, q17; q3): dataset 1 (custom chip; 4,662 cases aged 90+, 3,828 controls under 75) β 0.370, SE 0.043, P 3.87e-18; dataset 2 less its overlap (genome-wide array; 1,105 centenarians, 1,450 controls under 65) β −0.097, SE 0.109, P 0.376; meta β 0.308, SE 0.040, P 7.91e-15, which the two reproduce (derived). The datasets disagree: heterogeneity P about 6.7e-5, dataset 2's power 0.88 at the meta β (derived). Dataset 2 is inside the pooled P, so neither replication nor contradiction (D27.1), but heterogeneity inside the discovery; it is also the GWAS 11,893 of the chip's SNPs were chosen from (q5), this SNP's route unread. No percentile stated; cases counted across both datasets"
     curator: claude-opus-5-5
   - rsid: rs17169634
     note: pmid-31413261

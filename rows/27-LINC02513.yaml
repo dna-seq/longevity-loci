@@ -25,8 +25,8 @@ verdict_reason: >-
   Healthspan agrees: A delays the end of healthspan in Zenin 2019 (P 7.3e-4, an input of both analyses). Foote
   2025's frailty multimorbidity factor is genome-wide at rs2291433 (P 3e-15, the lead's allele less frail), but that
   factor is defined partly by high mean arterial pressure, its set colocalises with blood pressure, and it draws on UK
-  Biobank, so it is the blood-pressure signal again rather than separate healthspan evidence; healthspan-class
-  in any case (D23), it cannot lift a lifespan tier (D17.1). Exceptional survival is +: Deelen 2019's
+  Biobank, so it is the blood-pressure signal again rather than separate healthspan evidence; a Genomic SEM
+  factor, multivariate (D27.3), it does not lift the tier, which already rests on two multivariate results (D18.3). Exceptional survival is +: Deelen 2019's
   summary statistics favour A at the 90th (P 1.3e-5) and the 99th percentile (P 3.8e-5, a subset of the 90th's
   cases), both inputs of the multivariate analyses, so neither replicates them.
   Mechanism: heart and vessels, through blood pressure. In Shi 2024's sets led by the variant itself A lowers
@@ -43,8 +43,8 @@ verdict_reason: >-
   C4 and E4: no credible set of a lifespan-class study holds the variant in Open Targets 26.09, mvAge's and Timmers
   2020's own studies there have no set on 4p14, and no gene is named (§4.2). Locus-to-gene on Shi's systolic set led
   by the variant (PIP 0.080) and on the frailty and lymphocyte sets favours KLF3 (0.75 to 0.76), and Timmers 2020
-  finds no cis gene. Whether Foote's frailty set, healthspan-class under D23, should count under the set rule (it
-  would give a causal level from the lead's PIP 0.043 and KLF3 as effector) is put to the lead; C4/E4 meanwhile. A/G, the most common genotype, is
+  finds no cis gene. Foote's frailty set (lead PIP 0.043, KLF3 as effector) does not set causal confidence, as a set the tier does not
+  rest on (D25.5; multivariate since D27.3, D25.5's reason read for it, put to the lead); C4/E4. A/G, the most common genotype, is
   the reference (§6.2), with no PROTECT token, the split too even (as at 21 and 24). Age of action is unknown:
   Timmers 2020's fading with parental age is collective across nine loci and not confirmed for any one. The evidence
   is European; A is common in East Asians too (0.42), untested there.

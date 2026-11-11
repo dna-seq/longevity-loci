@@ -43,7 +43,8 @@ verdict_reason: >-
   (P 0.060, one-sided 0.030, D26.2), and Timmers 2020's healthspan column at rs1159806 gives P
   5e-3, both inputs of the same test; but Foote 2025's frailty factor 5 ("Poorer Cognition", P 4.3e-10) puts G's side
   on the frailer side (its set's lead rs6911407, r² 0.98; the sign Open Targets' harmonisation, the catalog printing no
-  allele). Foote's factor is healthspan-class (D25.8) and genome-wide, so a + would tell a reader the opposite of it. Lifespan +, exceptional
+  allele). Foote's factor is a Genomic SEM factor, multivariate (D27.3), but genome-wide and a frailty measure, so a + would
+  tell a reader the opposite of it; the 0 stands on that conflict (D26.6, D27.3). Lifespan +, exceptional
   survival + (Deelen, above). Mechanism: ageing in general, because nothing shows the effect runs through one system.
   The lead sits in sets for body mass and weight, cognition and education, kidney function and menarche (Open
   Targets); rs6911407's A goes with lower fluid intelligence (P 7e-14), and Timmers 2020 says the protective variants
@@ -52,8 +53,8 @@ verdict_reason: >-
   row carries `tradeoff` and is descriptive; that finding is at rs1159806's allele, and no credible set of either SNP
   is for macular degeneration. Abdi 2026, the seed's source, finds G carriers with angina died less often in older
   Australian men, with no difference in hypertension or diabetes: a subgroup result, context only. Causal confidence
-  C4: the lead is in no lifespan-class set, and Foote's frailty set (lead PIP 0.065) is healthspan-class, so it sets
-  nothing (D23, D25.5). Effector E3: Timmers 2020's colocalisation puts two cis genes on the multivariate signal,
+  C4: the lead is in no lifespan-class set, and Foote's frailty set (lead PIP 0.065), multivariate since D27.3, is not what the tier
+  rests on, so it sets nothing, D25.5's reason read for a multivariate set (put to the lead; it would give C3). Effector E3: Timmers 2020's colocalisation puts two cis genes on the multivariate signal,
   FOXO3 and LINC00222 (each meets E2's colocalisation on its own, D24), and FOXO3's locus-to-gene score on the set is
   0.42, under 0.5; the tissue counts behind Timmers' line and the set's Open Targets colocalisations are not read. The
   life-extending allele goes with lower FOXO3 expression in blood there, so the row does not say G raises FOXO3.

@@ -8,8 +8,8 @@ locus_id: 51
 locus_name: ZC3HC1
 verdict: kept
 verdict_reason: >-
-  Tier B, as the seed has it, on a default put to the lead: the only genome-wide result at the lead is a multivariate
-  frailty factor, which this row treats as D18.3 treats mvAge. In Timmers 2019's million parental lives A, at
+  Tier B, as the seed has it: the only genome-wide result at the lead is a multivariate frailty factor, which D27.3
+  files as D18.3 files mvAge. In Timmers 2019's million parental lives A, at
   0.38 among European alleles (about 62 in 100 carry it), adds 0.21 years per copy at a conventional P of 2.1e-7 (UK Biobank and LifeGen on
   the same side): suggestive, and the strongest SNP within 300 kb, so no proxy rescues it as one did at row 11. The
   paper calls ZC3HC1 genome-wide and replicated only through its coronary-disease-informed Bayesian scan (P 5.6e-9),
@@ -17,17 +17,16 @@ verdict_reason: >-
   Timmers alone the row would be C (R-TIER-4). The genome-wide result is Foote 2025's frailty factor 3, the
   multimorbidity factor: G frailer, P 8.9e-17, n 699,030 (the factor's expected N), so A is less frail. Its deposit
   calls it multivariate GWAS summary statistics, from Genomic SEM, the method of mvAge, and the factor is defined
-  partly by high mean arterial pressure (its Q index P 6.4e-4, kept under the deposit's filter). D23 and D26.6 file
-  Foote's factor as healthspan-class, and by that letter the row would be A: Timmers co-occurs (D16), and Deelen
+  partly by high mean arterial pressure (its Q index P 6.4e-4, kept under the deposit's filter). A Genomic SEM factor is
+  multivariate whatever its traits (D27.3), so the factor is `MULTIVARIATE_AGEING` and scores beside the co-occurring
+  Timmers (D16, D18.3), but does not meet A's first criterion: B, though Deelen
   2019's longevity meta-analysis, which holds no UK Biobank data, replicates on A's side at the 90th percentile (OR
-  1.075, P 0.0012, one-sided 6e-4) and the 99th (OR 1.084, P 0.026, one-sided 0.013), and the one calibrated test, FinnGen, raises no red flag. The
-  default reads the factor as D18.3 reads a multivariate ageing result, which does not meet A's first criterion, so B;
+  1.075, P 0.0012, one-sided 6e-4) and the 99th (OR 1.084, P 0.026, one-sided 0.013), and the one calibrated test, FinnGen, raises no red flag. Read as
+  healthspan-class (D23's letter) it would have been A, rejected by D27.3;
   the factor colocalises with coronary disease and hypertension and, as at row 27, carries the cardiovascular signal.
-  The healthspan cell is + on Foote alone, as D26.6 lets the factor decide a healthspan cell; Zenin leans A's way
-  without reaching nominal. The lead is asked to choose: A on D23's letter (only the tier moves), B (this default), or
-  C if a genomic-SEM factor cannot anchor at all (then the healthspan cell goes to 0 on Zenin, causal and effector to
-  C4/E4 by D25.5, and the gene name goes); the same question will come back at ABO, IGF2R, POM121C, GBX2/ASB18 and
-  HP, Timmers' other Bayesian-scan loci. Rosoff's mvAge, the common factor, does not reach it (z 4.69 at
+  The healthspan cell is + on Foote alone, a frailty factor read for the healthspan cell as at 43 (D26.6, D27.3); Zenin
+  leans A's way without reaching nominal. ABO, IGF2R, POM121C, GBX2/ASB18 and HP, Timmers' other Bayesian-scan loci,
+  are read the same way (D27.3). Rosoff's mvAge, the common factor, does not reach it (z 4.69 at
   rs11556924 in its TWAS table, unquoted), while Foote's multimorbidity factor does. Timmers' Figure 4 look-up in Deelen 2014 and Broer 2015 (at rs11556924, one-
   sided P 0.028, Alpha 1.0: the replication as large as the discovery) is largely Deelen 2019's people and is counted
   once with it. FinnGen's death endpoint leans A's way (one-sided P 0.23); under APOE's within-FinnGen factor Timmers
@@ -43,7 +42,7 @@ verdict_reason: >-
   names coronary disease as the locus's prior risk factor. That is association at one haplotype, not a mediator
   test. The locus is broad besides: blood cell counts (A raises platelets, eosinophils, basophils), kidney function,
   height, SHBG and IGF-1. A trade-off is detected (D18.1): at rs11556924 T, riding with A, raises lumbar disc
-  herniation (OR 1.04, P 3e-8, in 80,724 European cases from Estonia, Finland and the UK). With a trade-off the row is descriptive (D18.2), though blood pressure is a measure
+  herniation (OR 1.04, P 3e-8, in 80,724 European cases from Estonia, Finland and the UK). With a trade-off the row is descriptive (D18.2, D27.4), though blood pressure is a measure
   a doctor takes. Causal confidence is C1: the lead tops Foote's set, the one scoring-class set at the locus and the
   one the tier rests on (D17.2, D25.5), at PIP 0.82, rs11556924 holding the rest. That is
   one PICS set fine-mapped without in-sample LD; rs11556924 leads 236 of the locus's 279 sets, the large coronary
@@ -108,7 +107,7 @@ studies:
   - rsid: rs56179563
     note: pmid-40759756
     quote: q6
-    phenotype_class: HEALTHSPAN
+    phenotype_class: MULTIVARIATE_AGEING
     study_design: meta_analysis
     population: European (consortium GWAS and Pan-UK Biobank summary statistics of frailty deficits)
     ancestry: [EUR]
@@ -122,7 +121,7 @@ studies:
     effect_unit: frailty factor 3 (multimorbidity) per A allele, the deposit's G effect negated (negative = less frail)
     effect_allele: A
     direction: protective
-    statistical_test: "Genomic SEM GWAS of Foote 2025's latent frailty factor 3, multimorbidity (deposit GCST90624049, GRCh37; G +0.0144, SE 0.0017, G 0.61; n the factor's expected N); the authors call the deposit multivariate (q4); Q heterogeneity index 11.6, P 6.4e-4, under the deposit's 7.14e-9 filter; effects toward the frailty-raising side (q2); the class follows D23 and D26.6 (healthspan), its weight at tier A is put to the lead (D18.3 by analogy); Open Targets' PICS set: lead PIP 0.823 (db-opentargets-26.09#q651), colocalising with coronary disease and hypertension (q654-q656)"
+    statistical_test: "Genomic SEM GWAS of Foote 2025's latent frailty factor 3, multimorbidity (deposit GCST90624049, GRCh37; G +0.0144, SE 0.0017, G 0.61; n the factor's expected N); the authors call the deposit multivariate (q4); Q heterogeneity index 11.6, P 6.4e-4, under the deposit's 7.14e-9 filter; effects toward the frailty-raising side (q2); a Genomic SEM factor, so multivariate (D27.3), scoring at B beside Timmers (D18.3); Open Targets' PICS set: lead PIP 0.823 (db-opentargets-26.09#q651), colocalising with coronary disease and hypertension (q654-q656)"
     curator: claude-opus-5-5
   - rsid: rs56179563
     note: pmid-30642433

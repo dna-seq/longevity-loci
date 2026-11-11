@@ -33,7 +33,7 @@ verdict_reason: >-
   disease, said of rs15285's signal and not cited here. Broad: blood-cell measures (haematocrit, cell width, platelets),
   liver-fat disease, statin use, apolipoproteins. No trade-off: none of the 101 Catalog records puts a harm on A's
   side. Descriptive: the measure it moves, triglycerides, is not one of §4.2's tests (LDL, Lp(a), blood pressure,
-  HbA1c), and the row does not stretch `act_test:ldl` to it; put to the lead. Causal C1: rs268 is a missense variant
+  HbA1c), and the row does not stretch `act_test:ldl` to it (D27.5; a triglyceride test waits for a design pass). Causal C1: rs268 is a missense variant
   and the lead of mvAge's own fine-mapping, SuSiE posterior 0.957 (FINEMAP 0.654), the scoring-class set the tier
   rests on; Open Targets has no mvAge set here, so C1 rests on the paper's own fine-mapping alone, a first for these
   rows (the lipid and coronary disease sets at PIP near 1 are not scoring class, D17.2). Effector E1, LPL: the variant changes LPL's protein, asparagine 318 to serine (VEP; SIFT and PolyPhen call it
