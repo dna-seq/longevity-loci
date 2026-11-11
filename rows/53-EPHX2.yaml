@@ -1,0 +1,254 @@
+# The seed list's locus 53, EPHX2 (8p21.1, between EPHX2 and CLU, Wright 2019's "EPHX2..CLU"). Curated 2026-11-11.
+# Lead rs7844965 (the seed's only rsID; GRCh38 8:27,584,547, GRCh37 8:27,442,064), G/A, A at 0.23 in Europeans and
+# 0.15 in East Asians, in an intron of the unitary pseudogene GULOP by Ensembl's VEP (the papers' label is EPHX2).
+# In Pilling 2017's Table 2, Timmers 2019's summary statistics and Figure 2 source data, Wright 2019's Table 3 and
+# Supplemental Tables 8 and 9, Deelen 2019's Supplementary Data 1, Zenin 2019's and FinnGen R11's summary statistics,
+# all at the lead itself.
+locus_id: 53
+locus_name: EPHX2
+verdict: kept
+verdict_reason: >-
+  Tier B, as the seed has it, on red-flag heterogeneity, row 67's shape. Genome-wide in Pilling 2017's 389,166 UK
+  Biobank participants (both parents' attained age, P 7.7e-9; fathers 2.2e-7), the rarer A (0.23 in Europeans, about
+  41 in 100 carry it) on the longer-lived side, and replicated outside UK Biobank: in AncestryDNA's fathers (Wright
+  2019, n 309,383, A +0.013 z-units, P 9.1e-6, one-sided 4.5e-6; heterogeneity with UK Biobank P 0.998), AncestryDNA's
+  mothers (one-sided 0.029) and FinnGen R11's death endpoint (A fewer deaths, one-sided 0.011; under APOE's factor
+  power 0.96, heterogeneity P 0.33). But LifeGen with UK Biobank's lives removed, Timmers 2019's Figure 2 replication
+  sample, gives A +0.0073 (SE 0.0094) against Pilling's +0.0303 (SE 0.0053), one-sided P 0.22: at power about 0.94
+  the heterogeneity P is about 0.033, a D21 red flag on the same scale. Deelen 2019's 90th percentile, flat (OR 1.005
+  per G, P 0.83), flags too, under both D25.3 calibrations from Pilling's effect (APOE's factor: power 1.00,
+  heterogeneity P 9e-6; the mean factor: 0.85, 0.0085); the 99th (P 0.79) flags under APOE's only. A powered sample
+  that fails caps the row at B (§4.1, D21) and carries `replication_failed` (D25.13), though three others replicate.
+  Timmers 2019's million-life pool, which holds Pilling's UK Biobank and the weaker LifeGen arm, gives P 7.2e-8, A
+  +0.025 (suggestive, the window's smallest P its tag rs6558008's 5.8e-8, r² 0.97); Wright's fathers' meta P 5.8e-10
+  pools UK Biobank and is not counted. Healthspan +: Zenin 2019 has A delaying the end of healthspan, one-sided P 0.037
+  (about 0.041 after its genomic control, D26.1). Lifespan +, exceptional survival 0 (Deelen flat at both
+  percentiles). Wright ties EPHX2/CLU to Alzheimer's disease, but Ensembl's CEU LD gives no pair above r² 0.05 with
+  CLU's Alzheimer SNPs rs11136000 and rs9331896 (empty answers, uncached), so the lead is not that signal. Mechanism is
+  ageing in general (D25.7): the Catalog holds only the four parental-longevity records at the lead; Open Targets puts
+  it in lung cancer (or family history of it: C at its tag rs6558008, riding with A, OR 0.928, P 8e-12), hematocrit,
+  hemoglobin (A lower) and white-cell sets, broad. Two never-smoking sets with the lead at posterior 1.0 and 0.12 come
+  from UK Biobank's African (6,532 people) and East Asian (2,649) subsets at P near 1e-13, sizes too small for such P
+  at a SNP with no European smoking record, so they are named and not read as a smoking route; the family-history half
+  of the lung-cancer phenotype is parents' disease, close to the lifespan phenotype itself. No trade-off: no record
+  puts a harm on A's side. Descriptive. Causal C1: the lead tops Pilling's set, the one the tier rests on, at posterior
+  0.66 (rs6558008 0.23, so which of the two acts is open), and Wright's set at 0.42. Effector E2 GULOP by
+  colocalisation alone, put to the lead as a default: a single-cell eQTL of the pseudogene GULOP in enterocyte
+  progenitors (IBDverse) colocalises with both lifespan-class sets at H4 0.98 and 0.99, the only colocalisations at
+  H4 ≥ 0.8; CHRNA2, the top locus-to-gene gene (0.23, under 0.5), colocalises in cerebellum at H4 0.52 only, so it
+  does not make the call ambiguous (D24). EPHX2, the papers' label, meets no criterion and is not named. G/G, about 59
+  in 100 Europeans, is the reference; A carriers are the protected (PROTECT:PRESENCE; the paper names A the rare,
+  lifespan-raising allele). Age of action is unknown: the lead is not in Timmers' Figure 5 sheets. rs11780471, 97 kb
+  away in EPHX2, is genome-wide in Wright's fathers' meta-analysis (P 3.2e-8) and tags the lead at r² 0.13 (D′ 0.66):
+  not this signal's proxy, its independence untested; named here and queued for the scout (D25.6), none of its
+  evidence cited for this row's cells. The evidence is European; A is at 0.15 in East Asians, untested there.
+axes:
+  tier: {value: B, cites: [pmid-29227965#q24, pmid-29227965#q27, pmid-31484785#q96, pmid-31484785#q97, pmid-31484785#q98, pmid-31484785#q83, db-finngen-r11#q29, pmid-30642433#q248, pmid-30642433#q12, pmid-31413261#q138, pmid-30642433#q246, pmid-30642433#q247, pmid-31484785#q94]}
+  mechanism: {value: general_ageing, cites: [db-gwascatalog-2026.10.29#q341, db-opentargets-26.09#q679, db-opentargets-26.09#q698, db-opentargets-26.09#q701, db-opentargets-26.09#q696, db-opentargets-26.09#q697, db-gwascatalog-2026.10.29#q344, db-gwascatalog-2026.10.29#q345]}
+  pleiotropy: {values: [broad], cites: [db-opentargets-26.09#q698, db-opentargets-26.09#q699, db-opentargets-26.09#q700, db-opentargets-26.09#q701, db-opentargets-26.09#q702, db-gwascatalog-2026.10.29#q342, db-gwascatalog-2026.10.29#q343]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
+            cites: [pmid-30729179#q77, pmid-29227965#q24, pmid-31484785#q96, pmid-31413261#q138]}
+  actionability: {label: descriptive, cites: [db-gwascatalog-2026.10.29#q341]}
+  context: {values: [eur_only_evidence], cites: [pmid-29227965#q27, pmid-31484785#q96, db-ensembl-116#q371]}
+flags:
+  - {token: "PROTECT:PRESENCE", cites: [pmid-29227965#q26, db-ensembl-116#q370]}
+  - {token: "causal:C1", cites: [db-opentargets-26.09#q680, db-opentargets-26.09#q681, db-opentargets-26.09#q682, db-opentargets-26.09#q683, db-opentargets-26.09#q684, db-opentargets-26.09#q687, db-opentargets-26.09#q688]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q689, db-opentargets-26.09#q690, db-opentargets-26.09#q691, db-opentargets-26.09#q692, db-opentargets-26.09#q693, db-opentargets-26.09#q694, db-opentargets-26.09#q695, db-opentargets-26.09#q685, db-opentargets-26.09#q686, db-ensembl-116#q368]}
+  - {token: replication_failed, cites: [pmid-30642433#q248, pmid-30642433#q12, pmid-31413261#q138]}
+variants:
+  - rsid: rs7844965
+    gene: GULOP
+    phenotype: parental lifespan
+    trait_efo_id: EFO_0007796
+    effect_allele: A
+    effect_size: 0.0247
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA region on chromosome 8, the one most people of
+          European ancestry have (about 59 in 100). It is the reference the other versions are compared with, so it
+          neither raises nor lowers your expected lifespan here. What the region does is not known: it lies between
+          genes, and no route to health has been shown. The finding comes from people of European ancestry; less is
+          known elsewhere.
+      - genotype: A/G
+        state: protective
+        conclusion: >-
+          You carry one copy of a less common version of this DNA region on chromosome 8 (about 35 in 100 people of
+          European ancestry do). In large British and American studies, people with this version had parents who
+          lived a little longer, on average about six weeks per copy, and in a British study its carriers stayed
+          free of major disease slightly longer. One other large study did not see the effect, so it is a likely
+          finding rather than a settled one. How the region acts is not known. The effect is small: a tendency, not
+          a guarantee.
+      - genotype: A/A
+        state: protective
+        conclusion: >-
+          You carry two copies of a less common version of this DNA region on chromosome 8 (about 5 in 100 people of
+          European ancestry do). In large British and American studies, each copy went with parents living a little
+          longer, on average about six weeks, and in a British study with staying free of major disease slightly
+          longer. One other large study did not see the effect, so it is a likely finding rather than a settled one.
+          How the region acts is not known. The effect is small: a tendency, not a guarantee.
+studies:
+  - rsid: rs7844965
+    note: pmid-29227965
+    quote: q24
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank)
+    ancestry: [EUR]
+    sample_size: 389166
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "7.7E-09"
+    p_value_num: 7.7e-09
+    effect_size: -0.0154
+    effect_measure: beta
+    effect_unit: Martingale residual of both parents' attained age per A allele, the table's G effect negated (negative = longer life)
+    effect_allele: A
+    direction: protective
+    statistical_test: "BOLT-LMM on Martingale residuals of both parents' attained age (Table 2; q19 names the columns); fathers alone P 2.2E-07, mothers 4.9E-04, age at death 1.5E-04, both parents in the top 10 % 6.0E-04; G (A1, 0.768) +0.0154, SE 0.0027; sample size q27"
+    curator: claude-opus-5-5
+  - rsid: rs7844965
+    note: pmid-30642433
+    quote: q246
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the 26 LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 640187
+    sample_unit: lives
+    stat_significance: suggestive
+    p_value: "7.2193739e-08"
+    p_value_num: 7.2193739e-08
+    effect_size: 0.0247
+    effect_measure: beta
+    effect_unit: log hazard protection per A allele (positive = longer life)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0046, '++'; holds Pilling's UK Biobank, so not a replication; the window 27.1 to 27.8 Mb (GRCh37) has nothing below 5e-8, rs6558008 (r² 0.97) the smallest P, 5.8e-8 (q247)"
+    curator: claude-opus-5-5
+  - rsid: rs7844965
+    note: pmid-30642433
+    quote: q248
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (LifeGen cohorts, UK Biobank's lives removed)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.220444801749204"
+    p_value_num: 0.2204
+    effect_size: 0.07263
+    effect_measure: beta
+    effect_unit: years of life per copy in self (parental estimate doubled), per A allele
+    effect_allele: A
+    direction: protective
+    statistical_test: "Replication of Pilling 2017's rs7844965 in LifeGen excluding UK Biobank (Figure 2 source data 1, sample b, q12); the sheet's P is already one-sided (derived from q14), so no p_one_sided is entered; discovery +0.0303 (SE 0.00525), 0.303 years, P 7.7E-09; replication +0.0073 (SE 0.0094); D21: one-sided power about 0.94, heterogeneity P about 0.033 with both SEs (derived), a red flag; N not given per SNP"
+    curator: claude-opus-5-5
+  - rsid: rs7844965
+    note: pmid-31484785
+    quote: q96
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_linear
+    population: AncestryDNA customers of the European population group, fathers born 1886-1940
+    ancestry: [EUR]
+    sample_size: 309383
+    sample_unit: individuals
+    stratum: parent
+    stratum_level: father
+    stat_significance: suggestive
+    p_value: "9.057e-06"
+    p_value_num: 9.057e-06
+    p_one_sided: 4.53e-06
+    effect_size: 0.01335
+    effect_measure: beta
+    effect_unit: z-score of paternal lifespan per A allele
+    effect_allele: A
+    direction: protective
+    statistical_test: "Linear regression of fathers' lifespan on offspring dosage, AncestryDNA arm (Supplemental Table 8, SE 0.0030; genomic-control P 4.5e-5); heterogeneity with UK Biobank P 0.998 (Supplemental Table 9, q97); n from q83; one-sided P half the raw P (D25.13, D26.13); an independent replication outside UK Biobank (D25.11)"
+    curator: claude-opus-5-5
+  - rsid: rs7844965
+    note: pmid-31484785
+    quote: q98
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_linear
+    population: AncestryDNA customers of the European population group, mothers born 1886-1940
+    ancestry: [EUR]
+    sample_size: 270548
+    sample_unit: individuals
+    stratum: parent
+    stratum_level: mother
+    stat_significance: nominal
+    p_value: "0.05758"
+    p_value_num: 0.05758
+    p_one_sided: 0.02879
+    effect_size: 0.006115
+    effect_measure: beta
+    effect_unit: z-score of maternal lifespan per A allele
+    effect_allele: A
+    direction: protective
+    statistical_test: "AncestryDNA arm of Supplemental Table 9, SE 0.0032 (the allele column prints the other allele, G, as at q97); heterogeneity with UK Biobank P 0.52; n from q82; p_one_sided half the printed P, nominal under D26.13"
+    curator: claude-opus-5-5
+  - rsid: rs7844965
+    note: pmid-31413261
+    quote: q138
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's 18 discovery cohorts)
+    ancestry: [EUR]
+    n_cases: 11262
+    sample_size: 36745
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.8306"
+    p_value_num: 0.8306
+    effect_size: 0.9951
+    effect_measure: OR
+    effect_unit: odds ratio of reaching the 90th percentile per A allele, the printed G odds ratio 1.0049 inverted (derived)
+    effect_allele: A
+    direction: risk
+    statistical_test: "Look-up of Pilling's rs7844965 in Supplementary Data 1; flat, A's side one-sided about 0.58 (derived); D21 from Pilling's +0.0303: APOE's factor power 1.00, heterogeneity P 9e-6; the mean factor power 0.85, P 0.0085: a red flag under both (D25.3)"
+    curator: claude-opus-5-5
+  - rsid: rs7844965
+    note: pmid-31413261
+    quote: q138
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's 18 discovery cohorts)
+    ancestry: [EUR]
+    n_cases: 3484
+    sample_size: 28967
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.7917"
+    p_value_num: 0.7917
+    effect_size: 1.0094
+    effect_measure: OR
+    effect_unit: odds ratio of reaching the 99th percentile per A allele, the printed G odds ratio 0.9907 inverted (derived)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Look-up of Pilling's rs7844965 in Supplementary Data 1; flat, A's side one-sided about 0.40 (derived); D21: APOE's factor power 0.99, heterogeneity P 0.0016; the mean factor power 0.54, P 0.16: one calibration only, no flag of its own"
+    curator: claude-opus-5-5
+  - rsid: rs7844965
+    note: pmid-30729179
+    quote: q77
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "0.075"
+    p_value_num: 0.07499
+    p_one_sided: 0.0375
+    effect_size: -0.0103
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per A allele (negative = later)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), SE 0.00578, Z −1.78, −log10 P 1.125; one-sided 0.037, about 0.041 after the paper's genomic control of 1.053 (pmid-30729179#q59, D26.1; derived); p_one_sided half the deposited raw P, nominal under D26.13; scores beside the co-occurring lifespan study (D16)"
+    curator: claude-opus-5-5

@@ -193,6 +193,14 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   `p_one_sided` is half the raw printed P, while D26.1 reads after genomic control (0.041, 0.028, 0.038): all pass
   either way.
 - **47 AP5Z1** (2026-11-11), tier B kept (no replication_failed since D26.3: one calibration unknown sets no token; age UNKNOWN, D26.9). Lessons: the seed csv's quoted fields break `awk -F,` (locus 47 printed nothing); read it with Python's csv. A merged rsID shows as Ensembl answering with another `name` and the seed id among `synonyms`; the row carries the surviving id and the old one costs grain (Pilling prints only the old). Pilling 2016's per-variant numbers are in Supplementary Table 2 (top 1,000 per GWAS) and Table 4 (a-priori SNPs, APOE included), reached through Europe PMC's `PMC.../supplementaryFiles` zip, which `fetch-supp` renders. A BOLT-LMM β on a binary outcome is a risk difference; β/(p(1−p)) overshoots for large effects, so take the odds ratio from printed counts (advisor). For a parental top-1 % discovery, APOE's factor comes from the same paper's top-1 % rs429358 line; with no mean factor at hand, state the smallest factor that still flags (row 41's lesson). An indel is found in FinnGen by position (T>TC at the anchor base), not in Deelen or Zenin (SNPs or other indels only): carry the paper's own proxy. Zenin's file is tab-separated: a delimiter-free position regex plus a proxy as positive control.
+- **53 EPHX2** (2026-11-11), tier B kept (seed B), row 67's shape: a Pilling 2017 locus replicated in AncestryDNA and
+  FinnGen but failing, powered, in Timmers' LifeGen-without-UK-Biobank sample (Figure 2 source data, whose P is
+  one-sided). Lessons: calibrate Deelen from the discovery's own effect (D21), not Timmers' pool, which holds the
+  failing arm (from Timmers' 0.0247 the mean factor gives power 0.71 and no flag; from Pilling's 0.0303, 0.85 and a
+  flag). Read a credible set's study before reading its trait as a route: the two never-smoking sets at the lead are
+  UK Biobank's African and East Asian subsets of a few thousand. Ensembl's VEP puts the lead in GULOP's intron, not
+  EPHX2's. Row 67 lacked the `replication_failed` D25.13 gives a failing sample; added. Put to the lead: E2 GULOP on
+  a single-cell pseudogene eQTL alone (default), against E3 or E4 if such a colocalisation should not name a gene.
 - **D27 applied** (2026-11-11; the lead, 639592692), one commit. 51's Foote entry to `MULTIVARIATE_AGEING`, B on
   D27.3 (healthspan + kept, read for the cell as at 43); 43's and 27's prose call Foote's factor multivariate; 49's
   dataset 2 is the discovery's own heterogeneity (D27.1), not a D25.1 test; 52 descriptive (D27.5); 50 and 48 stood.

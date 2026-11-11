@@ -1187,3 +1187,30 @@ van der Harst 2018's coronary artery disease: T lowers it, P 8e-14. The second s
 
 Sinnott-Armstrong 2021's HDL cholesterol (UK Biobank, GCST90019510): G lowers HDL, P 7e-220 (the record's effect
 allele rs268-G). For row 52.
+
+## Reading 2026-11-11, supplement
+
+> [q341] page size 50 totalElements 4 totalPages 1 number 0
+
+GWAS Catalog associations for rs7844965 (`assoc-rs7844965-p0`, page 0 of 1): 4 records, all parental longevity
+(Pilling's combined parents and fathers, Wright's fathers' meta and AncestryDNA fathers). No disease or risk-factor
+record, so no harm is recorded on A's side here. For row 53.
+
+> [q342] _embedded.associations[0] association_id 214209387 risk_frequency 0.23 pvalue_description  pvalue_mantissa 8 pvalue_exponent -12 multi_snp_haplotype false snp_interaction false range [0.906-0.949] or_per_copy_num 0.928 or_value 0.928 beta - p_value 8e-12 accession_id GCST90243964 pubmed_id 35511172 first_author Gabriel AAG ci_lower 0.906 ci_upper 0.949
+
+rs6558008 (`assoc-rs6558008-p0`, its only record, page 0 of 1): lung cancer or family history of lung cancer,
+OR 0.928 (0.906 to 0.949) per copy, P 8 × 10⁻¹², risk frequency 0.23, GCST90243964. For row 53.
+
+> [q343] _embedded.associations[0].snp_effect_allele[0] rs6558008-C
+
+The allele is C, the minor one, which travels with the lead's A (pmid-30642433#q247): A's side has less lung
+cancer, in the patient or the family. For row 53.
+
+> [q344] initial_sample_size 4,595 African ancestry cases, 1,937 African ancestry controls
+
+GCST90692035 (`study-GCST90692035`), never smoking in UK Biobank: 4,595 African-ancestry cases, 1,937 controls.
+For row 53.
+
+> [q345] initial_sample_size 1,970 East Asian ancestry cases, 679 East Asian ancestry controls
+
+GCST90692469 (`study-GCST90692469`): 1,970 East Asian-ancestry cases, 679 controls. For row 53.

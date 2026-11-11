@@ -201,3 +201,13 @@ factor power 0.29, P 0.63. Below D21's line (heterogeneity P not below 0.05), no
 
 rs15285: ref C, alt T, β −0.0085 per T (SE 0.0085), P 0.31, one-sided 0.16 on T's side; under APOE's factor power
 0.66, heterogeneity P 0.35. Not nominal; the second signal's, prose only. For row 52.
+
+## Reading 2026-11-11, supplement
+
+> [q29] 8	27584547	G	A	rs7844965	GULOP	0.0229652	1.63893	-0.0200234	0.0088053	0.23089	0.22783	0.231273
+
+FinnGen R11 death endpoint (`rows-e90def79`), rs7844965 at 8:27,584,547 (GRCh38): alt A, β −0.0200 (SE 0.0088) on the
+log odds of death, P 0.023, A 0.231; nearest gene GULOP. A goes with fewer deaths: one-sided P 0.011 (derived), a
+nominal replication outside UK Biobank. Under D21 with APOE's factor within FinnGen (0.99, q4 over
+pmid-30642433#q90) Pilling's +0.0303 expects A −0.030, power 0.96, heterogeneity P 0.33; the mean factor gives power
+0.41, P 0.41: consistent, no flag. For row 53.

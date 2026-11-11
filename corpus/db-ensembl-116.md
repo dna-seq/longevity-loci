@@ -1319,3 +1319,30 @@ Ensembl VEP for rs268 (`vep-rs268.json`), transcript ENST00000650287 (LPL, prote
 acids N/S at protein position 318, so G changes asparagine 318 to serine (Asn318Ser in this numbering, which counts
 the signal peptide). SIFT calls it tolerated (0.35), PolyPhen benign (0.142): the predictors do not call it damaging,
 and the row reads its effect from the association data, not from them. For row 52.
+
+## Reading 2026-11-11, supplement
+
+> [q368] [0].transcript_consequences[0] impact MODIFIER hgnc_id HGNC:4695 gene_symbol GULOP biotype unitary_pseudogene variant_allele A transcript_id ENST00000454030 gene_id ENSG00000234770 strand 1 gene_symbol_source HGNC
+
+Ensembl VEP for rs7844965 (`vep-rs7844965.json`): its only transcript consequence is an intron of GULOP
+(ENST00000454030), a unitary pseudogene, a modifier; no protein-coding gene's transcript holds it. For row 53.
+
+> [q369] populations[5] frequency 0.2292 allele A population gnomADg:nfe allele_count 15577
+
+gnomAD genomes, non-Finnish Europeans: A 0.229. For row 53.
+
+> [q370] populations[76] allele_count 233 population 1000GENOMES:phase_3:EUR allele A frequency 0.231610337972167
+
+1000 Genomes EUR: A 0.232. G/G about 59 in 100, A/G about 35, A/A about 5 (Hardy-Weinberg, derived). For row 53.
+
+> [q371] populations[72] frequency 0.146825396825397 population 1000GENOMES:phase_3:EAS allele A allele_count 148
+
+1000 Genomes EAS: A 0.147. Untested in East Asians. For row 53.
+
+> [q372] [0] variation2 rs6558008 population_name 1000GENOMES:phase_3:CEU d_prime 1.000000 variation1 rs7844965 r2 0.968269
+
+rs7844965 with rs6558008 in CEU: r² 0.97, D′ 1.00. One signal. For row 53.
+
+> [q373] [0] population_name 1000GENOMES:phase_3:CEU d_prime 0.658662 variation2 rs11780471 r2 0.128361 variation1 rs7844965
+
+rs7844965 with rs11780471 in CEU: r² 0.13, D′ 0.66. Not a proxy (pmid-31484785#q99). For row 53.

@@ -2447,3 +2447,120 @@ Aragam 2022's coronary disease again (GCST90132314), a 25-member set: β −0.00
 
 rs15285 at PIP 0.027 in it, and rs268 is not a member: one study, two coronary disease signals at LPL, rs268's set
 (q671) and this one. For row 52.
+
+## Reading 2026-11-11, supplement
+
+> [q679] data.variant.credibleSets count 9
+
+Open Targets 26.09, variant 8_27584547_G_A (rs7844965; `variant-8_27584547_G_A-all.json`): 9 credible sets, all
+read (q680 to q707). Two are lifespan-class (Pilling's, q680; Wright's fathers' meta, q687); none is healthspan or
+multivariate. For row 53.
+
+> [q680] data.variant.credibleSets.rows[1] studyLocusId 3e6a9cd086b2456f2effcaa96e20812d studyId GCST006697 pValueMantissa 7.7839131355285645 pValueExponent -9 beta -0.00866575786785378 finemappingMethod SuSiE-inf
+
+Pilling 2017's combined parents' attained age (GCST006697), SuSiE-inf: P 7.8 × 10⁻⁹, β −0.0087 for alt A (Pilling's G
++0.0154, pmid-29227965#q24: the sign agrees, so the set's β is A's, the alt allele's). For row 53.
+
+> [q681] data.variant.credibleSets.rows[1].study traitFromSource Parental longevity (combined parental attained age, Martingale residuals) projectId GCST nSamples 389166 nCases 0
+
+Its study: Pilling's 389,166. For row 53.
+
+> [q682] data.credibleSet.locus.rows[0] posteriorProbability 0.6603204145380442
+
+Pilling's set (`set-3e6a9cd0.json`): rs7844965 holds posterior 0.66, the set's lead. The tier rests on this study,
+so causal confidence is C1 (§4.2, PIP ≥ 0.5; D17.2). For row 53.
+
+> [q683] data.credibleSet.locus.rows[1] posteriorProbability 0.22950681537282344
+
+The set's second member holds 0.23 (q684): rs6558008, the window's smallest P in Timmers 2019
+(pmid-30642433#q247), r² 0.97 to the lead. Which of the two acts is not settled. For row 53.
+
+> [q684] data.credibleSet.locus.rows[1].variant.rsIds[0] rs6558008
+
+It is rs6558008. For row 53.
+
+> [q685] data.credibleSet.l2GPredictions.rows[0] score 0.22877295315265656
+
+Locus-to-gene on Pilling's set: the top gene scores 0.23 (q686), CLU 0.09, SCARA3 0.06; none reaches 0.5. For row 53.
+
+> [q686] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol CHRNA2
+
+The top gene is CHRNA2. For row 53.
+
+> [q687] data.variant.credibleSets.rows[6] studyLocusId 755010ed77d44199e9b0b145e834f4cc studyId GCST009450 pValueMantissa 6 pValueExponent -10 beta null finemappingMethod PICS
+
+Wright's fathers' meta-analysis (GCST009450), PICS: P 6 × 10⁻¹⁰; it pools UK Biobank, Pilling's fathers. For row 53.
+
+> [q688] data.variant.credibleSets.rows[6].locus.rows[0] posteriorProbability 0.42165557355481104
+
+rs7844965 holds 0.42 there, the set's lead. For row 53.
+
+> [q689] data.credibleSet.colocalisation count 2
+
+Pilling's set colocalises with two QTLs (cis only, q690 to q693). For row 53.
+
+> [q690] data.credibleSet.colocalisation.rows[0] rightStudyType eqtl h4 0.5164315849830894 clpp 0.0009752635847563811
+
+The first: an eQTL at H4 0.52, under §4.2's 0.8. For row 53.
+
+> [q691] data.credibleSet.colocalisation.rows[0].otherStudyLocus.study.target approvedSymbol CHRNA2
+
+CHRNA2's expression (one transcript, GTEx v10 cerebellum, q690). For row 53.
+
+> [q692] data.credibleSet.colocalisation.rows[1] rightStudyType sceqtl h4 0.9841611466656495 clpp 0.05339663322275854
+
+The second: a single-cell eQTL at H4 0.98, over 0.8. For row 53.
+
+> [q693] data.credibleSet.colocalisation.rows[1].otherStudyLocus.study.target approvedSymbol GULOP
+
+GULOP (ENSG00000234770), in enterocyte progenitor (OLFM4+) cells of the IBDverse study, cis. For row 53.
+
+> [q694] data.credibleSet.colocalisation.rows[0] rightStudyType sceqtl h4 0.9855003246002719 clpp 0.05906239463285254
+
+Wright's set colocalises once, with the same single-cell eQTL, H4 0.99. For row 53.
+
+> [q695] data.credibleSet.colocalisation.rows[0].otherStudyLocus.study.target approvedSymbol GULOP
+
+GULOP again. So GULOP holds every colocalisation at H4 ≥ 0.8 on both lifespan-class sets (two of two) and CHRNA2
+none: E2 by colocalisation alone, D24's rival test not met by CHRNA2 (L2G 0.23, H4 0.52). GULOP is a unitary
+pseudogene (db-ensembl-116#q368), and the eQTL is one cell type of one study. For row 53.
+
+> [q696] data.variant.credibleSets.rows[5] studyLocusId 6c6c4b171010fff1f6b074dfba31e6fa studyId GCST90692035 pValueMantissa 6.622216701507568 pValueExponent -13 beta 0.14918563722917957 finemappingMethod SuSiE-inf
+
+A never-smoking set (GCST90692035), SuSiE-inf, P 6.6 × 10⁻¹³, β +0.149 for A; rs7844965 its only member (q697). For row 53.
+
+> [q697] data.variant.credibleSets.rows[5].locus.rows[0] posteriorProbability 0.9999999999990195
+
+Posterior about 1.0 to the lead. But the study is UK Biobank's African-ancestry subset, 6,532 people
+(db-gwascatalog-2026.10.29#q344), and q706's East Asian subset of 2,649 gives P 1.3 × 10⁻¹³: P values of that size in
+samples so small, for a SNP with no European smoking record in the Catalog (q341), are not read as evidence of a
+smoking route. For row 53.
+
+> [q698] data.variant.credibleSets.rows[7] studyLocusId 7ace9811283dfb31138c2e87d93a931a studyId GCST90243964 pValueMantissa 8 pValueExponent -12 beta -0.07472354619593642 finemappingMethod PICS
+
+Lung cancer or family history of lung cancer (GCST90243964), PICS, P 8 × 10⁻¹², set led by rs6558008 (alt C,
+β −0.075): C lowers it (db-gwascatalog-2026.10.29#q342), and C travels with the lead's A (pmid-30642433#q247). The
+family-history part counts parents' lung cancer, close to the parental-lifespan phenotype itself. For row 53.
+
+> [q699] data.variant.credibleSets.rows[7].study traitFromSource Lung cancer or family history of lung cancer projectId GCST nSamples 329946 nCases 29266
+
+Its study: 329,946 people, 29,266 cases. For row 53.
+
+> [q700] data.variant.credibleSets.rows[3] studyLocusId 6a8692efefd5ed062db6451bd9533e7e studyId GCST90475338 pValueMantissa 2.259000062942505 pValueExponent -11 beta -0.02082 finemappingMethod PICS
+
+Hematocrit (maximum), PICS, P 2.3 × 10⁻¹¹, led by another SNP (rs7844965 posterior 0.16); a lower hematocrit with
+the set lead's alt allele. For row 53.
+
+> [q701] data.variant.credibleSets.rows[4] studyLocusId 6bef72a43e118458c27cabb475206a4d studyId GCST90475372 pValueMantissa 7.705067157745361 pValueExponent -9 beta -0.008492050348549666 finemappingMethod SuSiE-inf
+
+Hemoglobin (maximum), SuSiE-inf, P 7.7 × 10⁻⁹, led by rs7844965 (posterior 0.38): A lowers hemoglobin, β −0.0085.
+For row 53.
+
+> [q702] data.variant.credibleSets.rows[8] studyLocusId b5ad4484442e73cd3a7e2a5dc0027f8b studyId GCST90476454 pValueMantissa 1.14058518409729 pValueExponent -15 beta -0.012008762237760203 finemappingMethod SuSiE-inf
+
+White blood cell count, SuSiE-inf, P 1.1 × 10⁻¹⁵, led by another SNP (rs7844965 posterior 0.016). For row 53.
+
+> [q703] data.variant.credibleSets.rows[0] studyLocusId 0e88fdf9c30f2058634130f8a8f6fd99 studyId GCST90692469 pValueMantissa 1.289778232574463 pValueExponent -13 beta 0.10554334405173751 finemappingMethod SuSiE-inf
+
+A second never-smoking set (GCST90692469), P 1.3 × 10⁻¹³, rs7844965 at posterior 0.12; the East Asian subset of
+2,649 (db-gwascatalog-2026.10.29#q345). For row 53.
