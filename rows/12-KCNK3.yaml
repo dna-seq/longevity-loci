@@ -145,15 +145,16 @@ studies:
     n_cases: 3484
     sample_size: 28967
     sample_unit: individuals
-    stat_significance: not_significant
+    stat_significance: nominal
     p_value: "8.872E-2"
     p_value_num: 0.08872
+    p_one_sided: 0.0444
     effect_size: 1.068
     effect_measure: OR
     effect_unit: odds ratio of reaching the 99th percentile, per G allele
     effect_allele: G
     direction: protective
-    statistical_test: "Look-up of the lead in Supplementary Data 1 (q27); logistic regression, fixed-effect meta-analysis; I² 17.9, heterogeneity P 0.27"
+    statistical_test: "Look-up of the lead in Supplementary Data 1 (q27); logistic regression, fixed-effect meta-analysis; I² 17.9, heterogeneity P 0.27; p_one_sided, nominal under D26.13"
     curator: claude-opus-5-5
   - rsid: rs1275922
     note: pmid-29227965
