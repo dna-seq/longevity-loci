@@ -1222,3 +1222,39 @@ Europeans (q338), 0.37 in 1000 Genomes EUR (q339), 0.26 in FIN (q341) and 0.02 i
 A/A about 43 in 100, A/G 45, G/G 12 (derived). Nine CEU variants within 500 kb at r² ≥ 0.8: rs34526725 at 1.00 (q342),
 six at 0.98 (rs2189012, q343, the ADHD proxy of pmid-37118362#q63, with rs7797335, rs1229760, rs1229761, rs1229762,
 rs2045292), rs9969232 0.85 and rs4727799 0.83. Atkins' frailty lead rs2396766 is r² 0.21, D′ 0.71 (q344). For row 50.
+
+## Reading 2026-11-11, supplement
+
+> [q345] allele_string G/A coord_system chromosome seq_region_name 7 end 130045757 start 130045757 strand 1 assembly_name GRCh38 ancestral_allele G location 7:130045757-130045757
+
+> [q346] allele A allele_count 26083 frequency 0.3844 population gnomADg:nfe
+
+> [q347] allele_count 388 allele A frequency 0.385685884691849 population 1000GENOMES:phase_3:EUR
+
+> [q348] allele A allele_count 433 frequency 0.429563492063492 population 1000GENOMES:phase_3:EAS
+
+> [q349] population_name 1000GENOMES:phase_3:CEU variation2 rs11556924 variation1 rs56179563 r2 0.936464 d_prime 0.978125
+
+> [q350] d_prime 0.999987 r2 0.404908 population_name 1000GENOMES:phase_3:CEU variation2 rs1464890 variation1 rs56179563
+
+> [q351] d_prime 0.999973 population_name 1000GENOMES:phase_3:CEU variation1 rs56179563 variation2 rs2242487 r2 0.325833
+
+> [q352] d_prime 0.999923 population_name 1000GENOMES:phase_3:CEU r2 0.216093 variation2 rs12706910 variation1 rs56179563
+
+> [q353] variation1 rs56179563 variation2 rs13245505 r2 0.239573 d_prime 0.999952 population_name 1000GENOMES:phase_3:CEU
+
+> [q354] most_severe_consequence missense_variant MAF null name rs11556924
+
+> [q355] allele T allele_count 379 population 1000GENOMES:phase_3:EUR frequency 0.376739562624254
+
+> [q356] allele C allele_count 958 frequency 0.950396825396825 population 1000GENOMES:phase_3:EAS
+
+Row 51's ZC3HC1 lead rs56179563 (`variation-rs56179563.json`, `ld-ceu-rs56179563.json`, the pairwise files): GRCh38
+7:130,045,757, G/A, G ancestral (q345); A, the lifespan-raising allele, at 0.384 in gnomAD non-Finnish Europeans,
+0.386 in 1000 Genomes EUR (q346, q347) and 0.43 in EAS (q348). Genotypes in EUR by Hardy-Weinberg (derived): G/G
+0.38, A/G 0.47, A/A 0.15, so A/G is the most common. The CEU window (r² ≥ 0.8, 500 kb) holds one SNP, rs11556924
+(r² 0.94, D′ 0.98, q349; the pairwise call agrees), ZC3HC1's missense variant (q354), T at 0.377 in EUR (q355) but
+C at 0.95 in EAS (q356): T is rare in East Asians while A is common, so the two do not travel together there (derived),
+and the coding SNP's effects cannot be carried to East Asians through the lead. Wright's AncestryDNA SNPs tag the lead
+weakly: rs1464890 r² 0.40 (q350), rs2242487 0.33 (q351), rs12706910 0.22 (q352), rs13245505 0.24 (q353), each at D′
+1.00. For row 51.

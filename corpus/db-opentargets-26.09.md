@@ -2333,3 +2333,50 @@ lead, G −0.0177, PIP 0.151, q644 to q646; the rest led by neighbours), sleep d
 current smoking (three), substance use (three), education (two), IGF-1, diastolic pressure, chloride and chronic airway
 obstruction, these led by other variants at PIP 0.08 to 0.75 with the lead at 0.003 to 0.085, so their betas are not
 the lead's. Every set's L2G names FOXP2 (0.69 to 0.93). For row 50.
+
+## Reading 2026-11-11, supplement
+
+> [q648] data.variant.credibleSets count 279
+
+> [q649] data.variant.credibleSets.rows[34] studyLocusId 21334332b750b2ccf8f92f70af11d35e studyId GCST90624049 pValueMantissa 8.90999984741211 pValueExponent -17 beta -0.0144044878093618 finemappingMethod PICS
+
+> [q650] data.variant.credibleSets.rows[34].study traitFromSource Frailty (Factor 3 - Multimorbidity) projectId GCST nSamples 699030 nCases 0
+
+> [q651] data.variant.credibleSets.rows[34].locus.rows[0] posteriorProbability 0.8231215958203267
+
+> [q652] data.variant.credibleSets.rows[34].locus.rows[0].variant id 7_130045757_G_A
+
+> [q653] data.variant.credibleSets.rows[34].locus.rows[1].variant id 7_130023656_C_T
+
+> [q654] data.credibleSet.colocalisation.rows[211] colocalisationMethod COLOC_PIP_ECAVIAR h4 0.9953679542579715 clpp 0.17687840417967318 rightStudyType gwas
+
+> [q655] data.credibleSet.colocalisation.rows[211].otherStudyLocus.study id GCST010479 traitFromSource Coronary artery disease studyType gwas
+
+> [q656] data.credibleSet.colocalisation.rows[197].otherStudyLocus.study id GCST90692422 traitFromSource Essential hypertension (PheCode 401.1) studyType gwas
+
+> [q657] data.credibleSet.colocalisation count 329
+
+> [q658] data.credibleSet.colocalisation count 0
+
+> [q659] data.variant.credibleSets.rows[34].l2GPredictions.rows[0] score 0.9346437454223633
+
+> [q660] data.variant.credibleSets.rows[34].l2GPredictions.rows[0].target approvedSymbol ZC3HC1
+
+> [q661] data.variant.credibleSets.rows[75] studyLocusId 4b165ac97182f6f6e4b9de39a29bd567 studyId GCST90479543 pValueMantissa 7.300000190734863 pValueExponent -17 beta -0.0648509723196163 finemappingMethod PICS
+
+> [q662] data.variant.credibleSets.rows[75].study traitFromSource Coronary artery / coronary heart disease (including heart attack, angina) projectId GCST nSamples 404034 nCases 61575
+
+> [q663] data.variant.credibleSets.rows[75].locus.rows[0].variant id 7_130045757_G_A
+
+Row 51's ZC3HC1 lead (`variant-7_130045757_G_A-all.json`, `coloc-gwas-21334332.json`, `coloc-qtl-21334332.json`):
+279 credible sets (q648), 263 of them holding only the lead and rs11556924; 42 led by the lead, 236 by
+rs11556924, one by 7_130030572_T_C. The only one of the scoring classes is Foote 2025's frailty factor 3 (q649, q650; n 699,030, flagged
+for quality control): the lead tops it, PIP 0.823 (q651, q652), rs11556924 the rest (q653, 0.177), β −0.0144 per A
+(the set's lead is the row's lead, so the sign is read: A less frail, as the deposit, pmid-40759756#q6); L2G
+ZC3HC1 0.93 (q659, q660), the only gene scored. No lifespan, longevity or own-survival set holds either SNP. That set
+colocalises with 329 GWAS sets (q657), coronary artery disease (q654, q655, H4 0.995) and hypertension (q656) among
+them; with only those two SNPs in nearly every set, H4 about 0.995 is what any pair of such sets gives, so it shows one shared
+haplotype, not which trait carries the other. No QTL colocalisation (q658). The other sets are coronary disease,
+blood pressure and hypertension, blood cell counts (platelets, eosinophils, basophils, red cells), kidney function,
+height, SHBG and IGF-1; in Verma's coronary set led by the variant A lowers risk (β −0.065, q661 to q663).
+For row 51.

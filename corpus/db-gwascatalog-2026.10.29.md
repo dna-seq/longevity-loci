@@ -1109,3 +1109,26 @@ frequency (q319, q320); and Nelson 2014's (GCST002429, P 1e-7, q321), the Alzhei
 Row 50's FOXP2 lead (`assoc-rs12705966`): three associations. Rosoff's mvAge, rs12705966-A, decrease (q322); Pedersen's
 ADHD (ADuLT model adjusted for sex), the allele printed "?" (q323); Tsepilov's genetically independent pain factor,
 rs12705966-A, increase (q324), so G lowers it, as Open Targets' set has it (db-opentargets-26.09#q644). For row 50.
+
+## Reading 2026-11-11, supplement
+
+> [q325] beta 0.06497 unit increase p_value 7e-17 accession_id GCST90479543 pubmed_id 39024449 first_author Verma A
+
+> [q326] p_value 9.000000000000001e-17 accession_id GCST90624049 pubmed_id 40759756 first_author Foote IF
+
+> [q327] range [0.0083-0.0151] beta 0.011705069 unit decrease p_value 2e-11 accession_id GCST90449056 pubmed_id 39537608 first_author Koskeridis F
+
+> [q328] or_per_copy_num 1.04 or_value 1.04 beta - p_value 3.0000000000000004e-08 accession_id GCST90837384 pubmed_id 39511132 first_author Salo V
+
+> [q329] beta 0.05994 unit increase p_value 2e-39 accession_id GCST90475936 pubmed_id 39024449 first_author Verma A
+
+> [q330] beta 0.0393 unit increase p_value 1e-15 accession_id GCST90475919 pubmed_id 39024449 first_author Verma A
+
+Row 51's ZC3HC1 lead (`assoc-rs56179563`, 22 associations) and its proxy rs11556924 (`assoc-rs11556924`, pages 0 to
+2, 141 associations). At the lead: Verma's coronary artery or heart disease, rs56179563-G, increase (q325, β
+0.065); Foote's frailty factor 3, allele "?" (q326; the deposit gives G raising it, pmid-40759756#q6); Koskeridis's
+systolic blood pressure, rs56179563-A, decrease (q327); the rest angina, heart failure, erectile dysfunction,
+height (G lower), creatinine, blood cell counts (A raises platelets, eosinophils and basophils). At rs11556924, T
+riding with A: Salo's lumbar disc herniation, rs11556924-T, OR 1.04 (1.02 to 1.05), P 3 × 10⁻⁸ (q328), the
+longer-life allele raising a disease; C raises coronary atherosclerosis (q329) and hypertension (q330); T lowers HDL
+cholesterol, IGF-1 and creatinine, raises eGFR, SHBG and testosterone; Timmers 2019's own line (T, P 4e-7). For row 51.

@@ -1,0 +1,177 @@
+# The seed list's locus 51, ZC3HC1 (7q32.2, a coronary artery disease locus). Curated 2026-11-11, the sixth ten-row
+# run's first row. Lead rs56179563 (the seed's only rsID; GRCh38 7:130,045,757, GRCh37 7:129,685,597), G/A, A at
+# 0.38 in Europeans and 0.43 in East Asians: Timmers 2019's Table 2 SNP, reported genome-wide only by its Bayesian
+# scan. Its one CEU proxy at r² ≥ 0.8 is ZC3HC1's missense SNP rs11556924 (r² 0.94), the coronary disease SNP of the
+# literature, which Timmers' Figure 4 reads in the longevity look-up. In Timmers 2019's, Zenin 2019's, Deelen 2019's,
+# FinnGen R11's and Foote 2025's factor 3 summary statistics at the lead itself; in Wright 2019's AncestryDNA fathers
+# only through rs1464890 (r² 0.40).
+locus_id: 51
+locus_name: ZC3HC1
+verdict: kept
+verdict_reason: >-
+  Tier B, as the seed has it, on a default put to the lead: the only genome-wide result at the lead is a multivariate
+  frailty factor, which this row treats as D18.3 treats mvAge. In Timmers 2019's million parental lives A, the
+  allele 38 % of Europeans carry, adds 0.21 years per copy at a conventional P of 2.1e-7 (UK Biobank and LifeGen on
+  the same side): suggestive, and the strongest SNP within 300 kb, so no proxy rescues it as one did at row 11. The
+  paper calls ZC3HC1 genome-wide and replicated only through its coronary-disease-informed Bayesian scan (P 5.6e-9),
+  which is never the study's P here (row 6), and Deelen 2019's look-up table reprints that value as Timmers' P. On
+  Timmers alone the row would be C (R-TIER-4). The genome-wide result is Foote 2025's frailty factor 3, the
+  multimorbidity factor: G frailer, P 8.9e-17, n 699,030 (the factor's expected N), so A is less frail. Its deposit
+  calls it multivariate GWAS summary statistics, from Genomic SEM, the method of mvAge, and the factor is defined
+  partly by high mean arterial pressure (its Q index P 6.4e-4, kept under the deposit's filter). D23 and D26.6 file
+  Foote's factor as healthspan-class, and by that letter the row would be A: Timmers co-occurs (D16), and Deelen
+  2019's longevity meta-analysis, which holds no UK Biobank data, replicates on A's side at the 90th percentile (OR
+  1.075, P 0.0012, one-sided 6e-4) and the 99th (OR 1.084, P 0.026, one-sided 0.013), with no red flag anywhere. The
+  default reads the factor as D18.3 reads a multivariate ageing result, which does not meet A's first criterion, so B;
+  the factor colocalises with coronary disease and hypertension and, as at row 27, carries the cardiovascular signal
+  rather than separate healthspan evidence. The lead is asked to choose: A on D23's letter, B (this default), or C if
+  a genomic-SEM factor cannot anchor at all; the same question will come back at ABO, IGF2R, POM121C, GBX2/ASB18 and
+  HP, Timmers' other Bayesian-scan loci. Timmers' Figure 4 look-up in Deelen 2014 and Broer 2015 (at rs11556924, one-
+  sided P 0.028, Alpha 1.0: the replication as large as the discovery) is largely Deelen 2019's people and is counted
+  once with it. FinnGen's death endpoint leans A's way (one-sided P 0.23); under APOE's within-FinnGen factor Timmers
+  predicts A −0.021 on the log odds of death, power 0.85, but heterogeneity P 0.084 with both SEs, so no D21 red
+  flag; Figure 4's mean factor gives power 0.30, heterogeneity P 0.71. Healthspan in Zenin 2019 leans A's way
+  without reaching nominal (P 0.21, one-sided 0.10). In Wright 2019's AncestryDNA fathers rs1464890, 20 kb away, goes
+  with shorter lives on the same side as in UK Biobank (genomic-control P 5.0e-6; its T, Wright's A on the other
+  strand, against the lead's A), but it tags the lead at r² 0.40 only (D′ 1.00), so it is named, not counted; neither
+  the lead nor rs11556924 is in Wright's tables, which list only clumped SNPs below about P 0.003, so the test at the
+  lead is unread. Three weaker AncestryDNA SNPs nearby (r² 0.22 to 0.33) lean the same way. The mechanism is heart
+  and vessels: G raises coronary artery disease (Verma's set led by the variant, P 7e-17; A lowers it, β −0.065),
+  angina and heart failure, and A lowers systolic pressure (P 2e-11) and, at rs11556924, hypertension; Timmers
+  names coronary disease as the locus's prior risk factor. That is association at one haplotype, not a mediator
+  test. The locus is broad besides: blood cell counts (A raises platelets, eosinophils, basophils), kidney function,
+  height, SHBG and IGF-1. A trade-off is detected (D18.1): at rs11556924 T, riding with A, raises lumbar disc
+  herniation (OR 1.04, P 3e-8). With a trade-off the row is descriptive (D18.2), though blood pressure is a measure
+  a doctor takes. Causal confidence is C1: the lead tops Foote's set, the one scoring-class set at the locus and the
+  one the tier rests on (D17.2, D25.5), at PIP 0.82, rs11556924 holding the rest. The effector is E2 ZC3HC1: L2G
+  0.93, the only gene scored, with no QTL colocalisation; rs11556924 is ZC3HC1's missense variant, but at PIP 0.18
+  it is not the set's lead, so the coding route to E1 is not taken. A/G, the most common genotype (about 47 in 100),
+  is the reference, with no PROTECT token (as at 21, 27 and 29). Age of action is unknown: neither Timmers' age nor
+  sex moderator moves (P 0.26, 0.40), and the parental age bands have no shape. The evidence is European; A is as
+  common in East Asians (0.43) but the coding T is not (0.05), so the haplotype differs there, untested.
+axes:
+  tier: {value: B, cites: [pmid-40759756#q4, pmid-40759756#q5, pmid-40759756#q6, pmid-30642433#q237, pmid-30642433#q238, pmid-30642433#q239, pmid-30642433#q241, pmid-30642433#q42, pmid-30642433#q49, pmid-31413261#q133, pmid-31413261#q2, pmid-31484785#q90, db-ensembl-116#q349, db-ensembl-116#q350, db-opentargets-26.09#q649, db-opentargets-26.09#q650, db-opentargets-26.09#q654, db-opentargets-26.09#q655, db-opentargets-26.09#q656]}
+  mechanism: {value: heart_vessels, cites: [pmid-30642433#q237, db-opentargets-26.09#q661, db-opentargets-26.09#q662, db-opentargets-26.09#q663, db-gwascatalog-2026.10.29#q325, db-gwascatalog-2026.10.29#q327, db-gwascatalog-2026.10.29#q329, db-gwascatalog-2026.10.29#q330, db-ensembl-116#q349]}
+  pleiotropy: {values: ["mech:cvd", broad, tradeoff], cites: [db-gwascatalog-2026.10.29#q325, db-gwascatalog-2026.10.29#q327, db-gwascatalog-2026.10.29#q328, db-gwascatalog-2026.10.29#q329, db-opentargets-26.09#q648, db-ensembl-116#q349]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
+            cites: [pmid-40759756#q6, pmid-30729179#q74, pmid-30642433#q239, pmid-31413261#q133]}
+  actionability: {label: descriptive, cites: [db-gwascatalog-2026.10.29#q328, db-gwascatalog-2026.10.29#q325]}
+  context: {values: [eur_only_evidence], cites: [pmid-30642433#q239, pmid-31413261#q133, pmid-30729179#q74, db-ensembl-116#q348, db-ensembl-116#q356]}
+flags:
+  - {token: "causal:C1", cites: [db-opentargets-26.09#q649, db-opentargets-26.09#q650, db-opentargets-26.09#q651, db-opentargets-26.09#q652, db-opentargets-26.09#q653]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q659, db-opentargets-26.09#q660, db-opentargets-26.09#q658, db-ensembl-116#q354]}
+variants:
+  - rsid: rs56179563
+    gene: ZC3HC1
+    phenotype: ZC3HC1 region, coronary disease, blood pressure
+    trait_efo_id: EFO_0007796
+    effect_allele: A
+    effect_size: 0.2107
+    effect_measure: beta
+    stat_significance: suggestive
+    direction: protective
+    negatives: >-
+      The longer-life version may slightly raise the chance of a slipped disc in the lower back (lumbar disc
+      herniation).
+    genotypes:
+      - genotype: G/G
+        state: risk
+        conclusion: >-
+          You carry two copies of the more common version of this DNA region, in the gene ZC3HC1 on chromosome 7
+          (about 38 in 100 people of European ancestry do). In very large British, European and American studies,
+          this version went with parents living slightly shorter lives, with a somewhat higher chance of heart
+          disease and higher blood pressure, and fewer people reaching very old age. The effect is small: a few
+          months of life at most, and a tendency, not destiny. It is a likely finding, not a settled one. The
+          finding comes from people of European ancestry; less is known elsewhere.
+      - genotype: A/G
+        state: neutral
+        conclusion: >-
+          You carry one copy of each version of this DNA region, in the gene ZC3HC1 on chromosome 7. This is the
+          most common combination in people of European ancestry (about 47 in 100), and it is the reference the
+          other combinations are compared with. The region is linked to heart disease and blood pressure. The
+          finding comes from people of European ancestry; less is known elsewhere.
+      - genotype: A/A
+        state: protective
+        conclusion: >-
+          You carry two copies of the less common version of this DNA region, in the gene ZC3HC1 on chromosome 7
+          (about 15 in 100 people of European ancestry do). In very large British, European and American studies,
+          each copy went with parents living a few months longer, a lower chance of heart disease, lower blood
+          pressure, and more people reaching very old age. The same version may slightly raise the chance of a
+          slipped disc in the lower back. It is a likely finding, not a settled one, and the effect is small: a
+          tendency, not destiny.
+studies:
+  - rsid: rs56179563
+    note: pmid-40759756
+    quote: q6
+    phenotype_class: HEALTHSPAN
+    study_design: meta_analysis
+    population: European (consortium GWAS and Pan-UK Biobank summary statistics of frailty deficits)
+    ancestry: [EUR]
+    sample_size: 699030
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "8.91030786590252e-17"
+    p_value_num: 8.91030786590252e-17
+    effect_size: -0.0144044878093618
+    effect_measure: beta
+    effect_unit: frailty factor 3 (multimorbidity) per A allele, the deposit's G effect negated (negative = less frail)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Genomic SEM GWAS of Foote 2025's latent frailty factor 3, multimorbidity (deposit GCST90624049, GRCh37; G +0.0144, SE 0.0017, G 0.61; n the factor's expected N); the authors call the deposit multivariate (q4); Q heterogeneity index 11.6, P 6.4e-4, under the deposit's 7.14e-9 filter; effects toward the frailty-raising side (q2); the class follows D23 and D26.6 (healthspan), its weight at tier A is put to the lead (D18.3 by analogy); Open Targets' PICS set: lead PIP 0.823 (db-opentargets-26.09#q651), colocalising with coronary disease and hypertension (q654-q656)"
+    curator: claude-opus-5-5
+  - rsid: rs56179563
+    note: pmid-30642433
+    quote: q237
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the 26 LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 1012240
+    sample_unit: lives
+    stat_significance: suggestive
+    p_value: "2.1E-07"
+    p_value_num: 2.1e-07
+    effect_size: 0.2107
+    effect_measure: beta
+    effect_unit: years of life per A allele in self (parental estimate doubled)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Cox-residual GWAS, common effect sizes across sexes: Table 2's CES P (q237), the same as the summary statistics' (q239, n 637,314, direction ++, LD-score intercept the paper's check, q50); the CAD-informed Bayesian scan's BF P 5.6E-09 is not the study's P (q42, q238); nothing within 300 kb reaches 5e-8; Figure 4's longevity look-up at rs11556924 (r² 0.94) one-sided P 0.028, Alpha 1.0 (q241), largely Deelen 2019's people; sex and age moderators P 0.40, 0.26 (q242); FinnGen R11 death A −0.0057, P 0.46, one-sided 0.23 (db-finngen-r11#q26): under APOE's factor power 0.85, heterogeneity P 0.084 (both SEs), under Figure 4's mean power 0.30, P 0.71, no red flag (D21, D25.3)"
+    curator: claude-opus-5-5
+  - rsid: rs56179563
+    note: pmid-31413261
+    quote: q133
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis; no UK Biobank data)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.001157"
+    p_value_num: 0.001157
+    effect_size: 1.0754078661566628
+    effect_measure: OR
+    effect_unit: odds of survival to the 90th percentile per A allele
+    effect_allele: A
+    direction: protective
+    statistical_test: "Deelen 2019's Supplementary Data 1 look-up of Timmers 2019's ZC3HC1 SNP (listed with the Bayesian P 5.6e-9), two-sided P printed (one-sided 5.8e-4, derived, D25.13), I² 0; 99th percentile OR 1.084 (1.01-1.16), P 0.026 (one-sided 0.013), I² 0; independent of UK Biobank (q2); any overlap with Foote's consortium inputs not known"
+    curator: claude-opus-5-5
+  - rsid: rs56179563
+    note: pmid-30729179
+    quote: q74
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.21"
+    p_value_num: 0.2084
+    effect_size: -0.00632
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per A allele (negative = later)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), -log10 P 0.681; one-sided 0.10 (derived), not nominal"
+    curator: claude-opus-5-5

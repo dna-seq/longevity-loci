@@ -175,3 +175,15 @@ reading, q4 against pmid-30642433#q90): Timmers' G +0.0133 (pmid-30642433#q236) 
 mean (0.4175 of APOE's) gives less (−0.0055, power 0.17, heterogeneity P 0.006). D25.12's within-FinnGen mean is not
 computed and could only lower the power. FinnGen is independent of UK Biobank and LifeGen; most of Timmers 2022's
 survival look-up at this SNP is these people (pmid-37118362#q58). For row 50.
+
+## Reading 2026-11-11, supplement
+
+> [q26] 7	130045757	G	A	rs56179563	ZC3HC1	0.460487	0.336783	-0.00574237	0.0077805	0.354038	0.354537	0.353976
+
+Row 51's ZC3HC1 lead in FinnGen R11's death endpoint (`rows-a0540331`, GRCh38 7:130,045,757): alt A (0.35) β −0.0057
+(SE 0.0078) on the log odds of death, P 0.46: A, Timmers' lifespan-raising allele, leans to fewer deaths, one-sided
+0.23 (derived), no pass. D21 under APOE's factor within FinnGen (0.99, row 40's reading): Timmers' A +0.0211
+(pmid-30642433#q239) predicts A −0.0209, one-sided power 0.85, heterogeneity P 0.084 with both SEs (derived); the
+power bar is met but heterogeneity is not below 0.05, so no red flag. Figure 4's mean (0.4175 of APOE's) predicts
+−0.0087, power 0.30, heterogeneity P 0.71. rs11556924 (alt T): β −0.0035 (SE 0.0079), P 0.66, the same side. For
+row 51.
