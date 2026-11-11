@@ -131,15 +131,16 @@ studies:
     study_design: parental_lifespan_cox
     population: European (UK Biobank and the LifeGen cohorts)
     ancestry: [EUR]
-    stat_significance: not_significant
+    stat_significance: nominal
     p_value: "0.056771135"
     p_value_num: 0.056771135
+    p_one_sided: 0.0284
     effect_size: 0.00754867
     effect_measure: beta
     effect_unit: log hazard protection per T allele in self (positive = longer life)
     effect_allele: T
     direction: protective
-    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), direction ++ in UK Biobank and LifeGen; same allele as Liu; two-sided P printed, one-sided 0.028 (derived, D25.13), a replication across ancestry, counted as one (D26.11); Liu's own look-up gives 0.057 (pmid-33657282#q8)"
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), direction ++ in UK Biobank and LifeGen; same allele as Liu; two-sided P printed, one-sided 0.028 (derived, D25.13; p_one_sided, nominal under D26.13), a replication across ancestry, counted as one (D26.11); Liu's own look-up gives 0.057 (pmid-33657282#q8)"
     curator: claude-opus-5-5
   - rsid: rs1043943
     note: pmid-30729179
