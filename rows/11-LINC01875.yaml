@@ -17,8 +17,8 @@ verdict_reason: >-
   it and its Methods give no filter that explains why; Rosoff 2023's mvAge, which pools the same parents, puts T on
   the healthier-ageing side at 4e-8 (GWAS Catalog record; the paper's text does not list the SNP). The one
   independent sample replicates at a third SNP: in Wright 2019's AncestryDNA fathers rs2867105 (r² 0.86 to the lead,
-  0.77 to rs66906321; its minor allele riding with A, derived) goes with longer life (P 8.8e-4, born 1886-1940;
-  3.6e-4, born 1886-1918), the mothers on the same side (P 0.058), with no heterogeneity against UK Biobank (P 0.18,
+  0.77 to rs66906321; its minor allele riding with A, derived) goes with longer life (genomic-control P 2.2e-3,
+  born 1886-1940; 6.2e-4, born 1886-1918), the mothers on the same side (P 0.058), with no heterogeneity against UK Biobank (P 0.18,
   0.61). A's first condition fails (§4.1, D17.3, D18.3): at the lead, Timmers' own call is 5.8e-8 (the paper's P,
   not a summary-statistics proxy it never reports), and mvAge is a multivariate result, not one of the lifespan,
   longevity, parental-lifespan or healthspan phenotypes A names. B's clause for a replicated locus whose reported
@@ -138,15 +138,15 @@ studies:
     sample_size: 309000
     sample_unit: individuals
     stat_significance: nominal
-    p_value: "0.0008799"
-    p_value_num: 0.0008799
+    p_value: "0.00222"
+    p_value_num: 0.00222
     proxy_rsid: rs2867105
     effect_size: 0.01095
     effect_measure: beta
     effect_unit: z-scored fathers' lifespan per A allele of rs2867105 as printed, the reverse strand of T (positive = longer)
     effect_allele: A
     direction: protective
-    statistical_test: "Supplemental Table 8, raw P (genomic control 0.00222); fathers 1886-1918 P 3.6e-4 (q34); rs2867105 r² 0.86 to rs6744653, 0.77 to rs66906321 (db-ensembl-116#q29, q30), its T (Wright's A) with A by EUR frequency (derived); S9 mothers P 0.058 same side; heterogeneity against UK Biobank P 0.18 (fathers) and 0.61 (mothers) (q36, q37)"
+    statistical_test: "Supplemental Table 8, genomic-control P, the paper's own call (D17.3); raw P 0.0008799; fathers 1886-1918 genomic-control P 6.2e-4, raw 3.6e-4 (q34); rs2867105 r² 0.86 to rs6744653, 0.77 to rs66906321 (db-ensembl-116#q29, q30), its T (Wright's A) with A by EUR frequency (derived); S9 mothers P 0.058 same side; heterogeneity against UK Biobank P 0.18 (fathers) and 0.61 (mothers) (q36, q37)"
     curator: claude-opus-5-5
   - rsid: rs6744653
     note: pmid-31413261
