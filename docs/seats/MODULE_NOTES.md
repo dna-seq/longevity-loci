@@ -79,6 +79,10 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
 - The first tier D row (26 GPR78, 4970b24): a genome-wide hit contradicted by a powered null. Check how the
   requirements carry tier D into the module (research view, flags, no direction a report would read as advice).
   The lead settled the row side (D25.1, D25.2, 80b7691): D holds and every genotype of a tier D row is neutral.
+- Studies now carry `p_one_sided` (D26.13): a replication printed two-sided 0.05-0.10 is `nominal` on its one-sided
+  P, the printed P unchanged (2, 4, 10, 12, 14, 17, 18, 29, 36, 39, 43, 67, 93). Check whether the format holds
+  stat_significance to p_value_num; if it does, those rows' studies disagree with it in the module, a projection
+  question for the lead, never a value to change by hand.
 - The first insertion (47 AP5Z1, rs371933919, T>TC; the seed's rs528161076 merged into it, 5a63a03): check that
   enrich resolves the current id and that the format's genotype cells take a multi-base allele.
 - Plugin pinned at v0.48.6 (the liaison, f69789a; toolchain unchanged, format 0.7.1): `validate_module` returns
