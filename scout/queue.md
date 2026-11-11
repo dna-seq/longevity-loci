@@ -54,3 +54,19 @@ read), and every identifier the paper has. The curator takes it from here; the s
   > Yes rs114298671 11 4:3281869 4 3281869 2 rs114298671;rs71597207 A G 0.1223 1.56686856265e-08 0.00886760197706 0.00156835563347 MSANTD1 8403 intergenic 0.873 5 5 15 1.82958854405307 4 0.767064731931399
 - **Unknown:** its own tier; whether any lifespan study carries it outside mvAge's inputs (D16); it shares a tag,
   rs71597207, with rs16843603's set above, so whether the two are wholly separate is unsettled here.
+
+### rs3131621 (MICA … MICB / HCP5) at locus 37 HCP5 (6p21.33): the fathers' signal, candidate row (D25.6)
+
+- **Paper:** Pilling LC et al. "Human longevity: 25 genetic loci associated in 389,166 UK biobank participants."
+  *Aging (Albany NY)*, 2017. PMID 29227965. Replication: Wright KM et al., *G3*, 2019, PMID 31484785. Corpus notes
+  `corpus/pmid-29227965.md`, `corpus/pmid-31484785.md`. From the curator, 2026-11-11.
+- **Why:** Pilling's fathers' lead, 278 kb from row 37's lead rs3130507 (the mothers' signal), with no Ensembl CEU pair
+  above the 0.05 floor (`db-ensembl-116#q247`, `q248`), and the sex split agrees: a separate signal, and the seed's
+  second rsID at locus 37 with no locus of its own. Row 37 names it in prose; D25.6 sends it here. It has the stronger
+  case of the two: replicated in AncestryDNA's fathers (P 7.7e-4, meta-analysis 8.9e-9, Wright's Table 3), LifeGen
+  with UK Biobank P 1.9e-6, Timmers' LifeGen-without-UK-Biobank fathers one-sided P 0.093; the GWAS Catalog also lists
+  rheumatoid arthritis or inflammatory bowel disease there (P 2e-13, `db-gwascatalog-2026.10.29#q234`, `q235`).
+- **Passage** (Table 2, full text, read by the curator 2026-11-11; not yet quoted in the note):
+  > rs3131621 6 31425499 A G 8.9E-08 1.9E-02 4.8E-01 3.5E-05 3.6E-08 0.629 −0.0124 0.0022 MICA … MICB
+- **Unknown:** its own tier (Deelen 2019 flat: 90th OR 1.0004, P 0.99, a flag under the APOE factor only, so none,
+  by the curator's reading); its gene (Open Targets 26.09 has no record of it).
