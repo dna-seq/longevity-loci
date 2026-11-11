@@ -6,20 +6,19 @@ locus_id: 37
 locus_name: HCP5
 verdict: kept
 verdict_reason: >-
-  Tier B, as the seed has it, and the tier hangs on reading a P one-sided or two-sided. Genome-wide in Pilling 2017's
-  mothers only (UK Biobank, P 2.1e-10; fathers P 0.24; both parents 3.5e-6): G, the common allele (0.72), goes with
-  longer-lived mothers. Two samples independent of UK Biobank lean its way. LifeGen's mothers with UK Biobank's lives
-  removed give G 0.29 years against 0.40 at discovery, one-sided P 0.048 (Timmers 2019's Figure 2 source data, whose
-  criterion is a one-sided P below 0.05; about 0.096 two-sided), and Timmers' abstract lists PSORS1C3 among the loci
-  it validates. AncestryDNA's mothers (Wright 2019) give a quarter to a half of the effect: at rs3130467 (r² 0.95,
-  D′ 1) β −0.0067 against UK Biobank's −0.0137, two-sided P 0.073 (about 0.037 one-sided); at Wright's PSORS1C3 lead
-  rs1265159 (r² 0.83) P 0.34, and Wright lists the locus as not replicated. Read one-sided, both samples replicate
-  nominally at a smaller effect, which D25.1 files under B and never D. Read two-sided, neither passes, and
-  AncestryDNA's power is about 0.97 (derived), so with heterogeneity below 0.05 D25.1 would make it D. The
-  heterogeneity P is 0.040 at rs3130467 as Wright prints it (METAL) and 0.11 from the two arms' betas; at rs1265159,
-  0.003 printed and 0.015 derived. The row takes Wright's printed values, so AncestryDNA is a D21 red flag and the row
-  carries replication_failed, capped at B. Which reading of P, and whether replication_failed fits a sample that
-  passes one-sided, are put to the lead. FinnGen r11's any-death endpoint leans the same way (G toward less death,
+  Tier B, as the seed has it (D25.13: a replication's P is one-sided, in the discovery's direction). Genome-wide in
+  Pilling 2017's mothers only (UK Biobank, P 2.1e-10; fathers P 0.24; both parents 3.5e-6): G, the common allele
+  (0.72), goes with longer-lived mothers. Two samples independent of UK Biobank replicate it nominally at a smaller
+  effect. LifeGen's mothers with UK Biobank's lives removed give G 0.29 years against 0.40 at discovery, one-sided P
+  0.048 (Timmers 2019's Figure 2 source data, whose criterion is a one-sided P below 0.05; about 0.096 two-sided),
+  and Timmers' abstract lists PSORS1C3 among the loci it validates. AncestryDNA's mothers (Wright 2019) give a
+  quarter to a half of the effect: at rs3130467 (r² 0.95, D′ 1) β −0.0067 against UK Biobank's −0.0137, two-sided P
+  0.073, about 0.037 one-sided (derived); at Wright's PSORS1C3 lead rs1265159 (r² 0.83) P 0.34, and Wright lists the
+  locus as not replicated. With AncestryDNA's power about 0.97 (derived) and heterogeneity P 0.040 at rs3130467 as
+  Wright prints it (METAL; 0.11 from the two arms' betas; at rs1265159 0.003 printed, 0.015 derived), this is
+  requirements §4.1's replication with a much smaller effect, B, not a failing sample, so no replication_failed
+  (D25.13). Read two-sided, neither sample would pass and D25.1 would make the row D; D25.13 settles the reading.
+  FinnGen r11's any-death endpoint leans the same way (G toward less death,
   β −0.014, SE 0.010, P 0.16), not significant. At the oldest ages Deelen 2019 is flat at the 90th percentile (OR
   1.006, P 0.84) and leans the other way at the 99th (OR 0.950, P 0.27); against LifeGen's joint beta (G +0.018, P
   7.5e-5) the 90th percentile flags under the APOE factor only (power 0.89, heterogeneity P 0.031; the mean factor
@@ -34,7 +33,7 @@ verdict_reason: >-
   0.8 in CEU, 14 have GWAS Catalog records: immune-protein levels, sarcoidosis, HIV set-point viral load, HDL
   cholesterol, waist-to-hip ratio, and psoriasis at six, all in samples that are not European or whose ancestry is
   not reported, so no psoriasis link is read. Nothing shows the lifespan effect runs through immunity, so the
-  mechanism is general_ageing (D25.7); immune_inflammation is the alternative, put to the lead. No gene is named
+  mechanism is general_ageing (D25.7, D25.13; immune_inflammation rejected, no route shown). No gene is named
   (requirements §4.2, §6.2): Open Targets 26.09 resolves neither of the seed's rsIDs (no variant under either allele
   order, nothing by search), so causal and effector confidence are unassessed (C4, E4; no flag, nothing to cite). The
   seed's other rsID, rs3131621 (MICA … MICB, the source of the seed's name), is a separate signal: Pilling's fathers'
@@ -54,7 +53,6 @@ axes:
   context: {values: ["sex_specific:f", eur_only_evidence], cites: [pmid-29227965#q22, pmid-30642433#q103, pmid-30642433#q106, pmid-30642433#q107]}
 flags:
   - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-29227965#q22, db-ensembl-116#q247]}
-  - {token: replication_failed, cites: [pmid-31484785#q72, pmid-31484785#q73, pmid-31484785#q74, pmid-31484785#q12]}
   - {token: "ld_proxy_of:rs3130507", cites: [db-ensembl-116#q245]}  # rs3130467, r² 0.95
 variants:
   - rsid: rs3130507
