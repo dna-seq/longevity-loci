@@ -657,3 +657,25 @@ phase with G is not read, so the direction for G is unknown.
 
 The grip set's locus-to-gene score (AFF3, 0.87), and the cerebellum AFF3 expression set's first member, the lead,
 PIP 0.14 (SuSiE).
+
+> [q147] data.credibleSet.locus.rows[7] posteriorProbability 0.04046131420255379 r2Overall 0.8313709706906519 is95CredibleSet true
+
+> [q148] data.credibleSet.locus.rows[7].variant.rsIds[0] rs13032879
+
+rs13032879, Wright 2019's fathers' SNP (pmid-31484785#q44), is a member of mvAge's 95 % credible set (PIP 0.040):
+the same signal as the lead.
+
+> [q149] data.variant.credibleSets.rows[17] studyLocusId f306c3f4920797759ffc31d6130fcb74 pValueMantissa 3.2836670875549316 pValueExponent -9 beta 0.008574912965415503
+
+> [q150] data.variant.credibleSets.rows[17].study id GCST90692811 traitFromSource Hand grip strength left (UKB data field 46)
+
+> [q151] data.variant.credibleSets.rows[17].variant id 2_100013653_A_G
+
+A second grip-strength set led by the lead (GCST90692811), P 3.3 × 10⁻⁹, β +0.0086 per G.
+
+> [q152] data.variant.credibleSets.rows[8] studyLocusId 8f24cd2a37077fd4d71b7e805e083f3a pValueMantissa 1.6492046117782593 pValueExponent -9 beta 0.008851918335459381
+
+> [q153] data.variant.credibleSets.rows[8].variant id 2_99959842_C_T
+
+The third grip set (GCST90691860), P 1.6 × 10⁻⁹, is led by a neighbour, 2_99959842_C_T, whose phase with G is not
+read; it gives no direction for G.
