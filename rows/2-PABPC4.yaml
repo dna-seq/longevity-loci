@@ -44,7 +44,6 @@ axes:
   actionability: {label: descriptive, cites: [pmid-37550455#q1]}
   context: {values: [eur_only_evidence], cites: [pmid-37550455#q1, pmid-30642433#q25]}
 flags:
-  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-37550455#q1, pmid-30642433#q25]}
   - {token: "causal:C2", cites: [db-opentargets-26.09#q36, db-opentargets-26.09#q37, db-opentargets-26.09#q38]}
   - {token: "effector:E3", cites: [db-opentargets-26.09#q39, db-opentargets-26.09#q331, db-opentargets-26.09#q332, db-opentargets-26.09#q333, db-opentargets-26.09#q334, db-opentargets-26.09#q335, db-opentargets-26.09#q336, db-opentargets-26.09#q337, db-opentargets-26.09#q338, db-opentargets-26.09#q339, db-opentargets-26.09#q340]}
 variants:
@@ -127,15 +126,16 @@ studies:
     study_design: parental_lifespan_cox
     population: European (UK Biobank and the LifeGen cohorts)
     ancestry: [EUR]
-    stat_significance: not_significant
+    stat_significance: nominal
     p_value: "0.070623698"
     p_value_num: 0.0706
+    p_one_sided: 0.0353
     effect_size: -0.00884351
     effect_measure: beta
     effect_unit: log hazard protection per T allele in self (negative = shorter life)
     effect_allele: T
     direction: risk
-    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), n 635,243, direction -- in UK Biobank and LifeGen; the same side as mvAge; two-sided P printed, one-sided 0.035 (derived, D25.13), D16's co-occurring lifespan study, mvAge's lifespan input"
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), n 635,243, direction -- in UK Biobank and LifeGen; the same side as mvAge; two-sided P printed, one-sided 0.035 (derived, D25.13; p_one_sided, nominal under D26.13), D16's co-occurring lifespan study, mvAge's lifespan input"
     curator: claude-opus-5-5
   - rsid: rs3768321
     note: pmid-31413261
@@ -144,13 +144,14 @@ studies:
     study_design: percentile_case_control_p90
     population: European (Deelen 2019's longevity meta-analysis)
     ancestry: [EUR]
-    stat_significance: not_significant
+    stat_significance: nominal
     p_value: "0.05208"
     p_value_num: 0.05208
+    p_one_sided: 0.026
     effect_size: 0.0481
     effect_measure: beta
     effect_unit: log odds of survival to the 90th percentile per G allele (the file's t, beta -0.0481, turned)
     effect_allele: G
     direction: protective
-    statistical_test: "Deelen 2019's summary statistics (GCST008598), effective N 11,615, the row by GRCh37 position 1:40035928 (pmid-37550455#q1); 99th percentile (GCST008599, q22) t beta -0.0512, P 0.19; two-sided P printed, one-sided 0.026 at the 90th, 0.094 at the 99th (0.1877/2, derived, D25.13); Deelen's cohorts are an mvAge input"
+    statistical_test: "Deelen 2019's summary statistics (GCST008598), effective N 11,615, the row by GRCh37 position 1:40035928 (pmid-37550455#q1); 99th percentile (GCST008599, q22) t beta -0.0512, P 0.19; two-sided P printed, one-sided 0.026 at the 90th, 0.094 at the 99th (0.1877/2, derived, D25.13); Deelen's cohorts are an mvAge input; p_one_sided, nominal under D26.13"
     curator: claude-opus-5-5
