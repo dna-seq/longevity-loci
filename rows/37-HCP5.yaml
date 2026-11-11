@@ -139,14 +139,17 @@ studies:
     ancestry: [EUR]
     stratum: parent
     stratum_level: mother
-    stat_significance: not_significant
+    stat_significance: nominal
     p_value: "0.07339"
     p_value_num: 0.07339
+    p_one_sided: 0.0367
     effect_size: -0.006717
     effect_measure: beta
-    effect_unit: z-score of maternal lifespan per copy of the proxy's effect allele, which no cached table names (Supplemental Table 9 prints the other allele); aligned as the UK Biobank arm's -0.0137
+    effect_unit: z-score of maternal lifespan per T allele at the proxy (T with the lead's A)
+    effect_allele: T
+    direction: risk
     proxy_rsid: rs3130467
-    statistical_test: "Linear regression of mothers' lifespan on offspring dosage, AncestryDNA arm of Wright's meta-analysis (Supplemental Table 9, q72): beta -0.0067 (SE 0.0038) against UK Biobank's -0.0137 (SE 0.0024), heterogeneity P 0.040 as printed (0.11 from the betas, derived), power about 0.97 (derived); about 0.037 one-sided raw, 0.045 after genomic control at λ 1.113 (pmid-31484785#q82, derived, D26.1); not counted nominal, since no cached table names the proxy's effect allele (D26.13 left open, put to the lead). At Table 3's PSORS1C3 lead rs1265159 (r² 0.83, 'Not Replicated', q74): AncestryDNA P 0.34, heterogeneity P 0.003 printed, 0.015 derived (q73)"
+    statistical_test: "Linear regression of mothers' lifespan on offspring dosage, AncestryDNA arm of Wright's meta-analysis (Supplemental Table 9, q72): beta -0.0067 (SE 0.0038) against UK Biobank's -0.0137 (SE 0.0024), heterogeneity P 0.040 as printed (0.11 from the betas, derived), power about 0.97 (derived); about 0.037 one-sided raw (p_one_sided), 0.045 after genomic control at λ 1.113 (pmid-31484785#q82, derived, D26.1), nominal under D26.13. The counted allele is read, not assumed: Timmers' summary statistics name rs3130467's T with β −0.0172 (pmid-30642433#q230), the UK Biobank arm's sign here; Table 9's printed G is C on the other strand, the allele it does not count (as at rs6840907, q67, q68); T goes with the lead's A (pmid-30642433#q102). At Table 3's PSORS1C3 lead rs1265159 (r² 0.83, 'Not Replicated', q74): AncestryDNA P 0.34, heterogeneity P 0.003 printed, 0.015 derived (q73)"
     curator: claude-opus-5-5
   - rsid: rs3130507
     note: pmid-31413261
