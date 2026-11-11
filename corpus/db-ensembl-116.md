@@ -354,3 +354,21 @@ id is 3_26327009_G_A. For row 19.
 
 A is common in Africans (gnomAD 0.26, 1000 Genomes AFR 0.36) and rare in Europeans (q86), so a small difference in
 African ancestry between cases and controls would shift its frequency on its own. For row 19.
+
+## rs2643826 (SLC4A7), for row 20
+
+> [q90] . var_class SNP most_severe_consequence regulatory_region_variant name rs2643826 source Variants (including SNPs and indels) imported from dbSNP ambiguity Y minor_allele C MAF 0.463697
+
+> [q91] mappings[0] allele_string C/T coord_system chromosome seq_region_name 3 assembly_name GRCh38 location 3:27521497-27521497 ancestral_allele T end 27521497 start 27521497 strand 1
+
+> [q92] populations[2] frequency 0.555 allele C allele_count 37701 population gnomADg:nfe
+
+> [q93] populations[75] population 1000GENOMES:phase_3:EUR allele C allele_count 551 frequency 0.547713717693837
+
+> [q94] populations[73] allele C allele_count 688 frequency 0.682539682539683 population 1000GENOMES:phase_3:EAS
+
+> [q95] populations[52] population 1000GENOMES:phase_3:AFR frequency 0.0264750378214826 allele C allele_count 35
+
+rs2643826: a regulatory-region variant, GRCh38 3:27,521,497, C/T, T ancestral. C is the major allele in Europeans
+(gnomAD non-Finnish 0.555, 1000 Genomes EUR 0.548) and East Asians (0.68), rare in Africans (0.026). By gnomAD's
+European frequency about 31 in 100 Europeans are C/C, 49 C/T and 20 T/T. Open Targets' id is 3_27521497_C_T.

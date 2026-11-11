@@ -840,3 +840,59 @@ no colocalisation.
 > [q206] data.variant.credibleSets.rows[0] studyLocusId ab13a68d63289f1922a881c2fcd8b7af pValueMantissa 4 pValueExponent -9 beta 5.8755207
 
 The set's "beta 5.8755207" is the catalog's, so the paper's score Z again (db-gwascatalog-2026.10.29#q135). For row 19.
+
+## rs2643826 (SLC4A7), for row 20
+
+> [q207] data.variant.credibleSets count 142
+
+> [q208] data.variant.credibleSets.rows[32] studyLocusId 2971a8aaede7e142cb445b09ec0974b1 pValueMantissa 1 pValueExponent -9 beta -0.006323946
+
+> [q209] data.variant.credibleSets.rows[32].study id GCST90321079 traitFromSource Aging studyType gwas target null
+
+> [q210] data.credibleSet finemappingMethod PICS confidence PICS fine-mapped credible set based on reported top hit
+
+> [q211] data.credibleSet.locus count 3
+
+> [q212] data.credibleSet.locus.rows[0] posteriorProbability 0.9262218562612249
+
+> [q213] data.credibleSet.l2GPredictions.rows[0] score 0.5290349721908569
+
+> [q214] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol SLC4A7
+
+> [q215] data.credibleSet.l2GPredictions.rows[2] score 0.058627791702747345
+
+> [q216] data.credibleSet.l2GPredictions.rows[2].target approvedSymbol NEK10
+
+> [q217] data.credibleSet.colocalisation count 145
+
+> [q218] data.credibleSet.colocalisation.rows[0] rightStudyType gwas h4 0.9999718769712762 clpp 0.9261894178685103
+
+> [q219] data.credibleSet.colocalisation.rows[0].otherStudyLocus.study id GCST90473520 traitFromSource ICD10 I10-I15: Hypertensive diseases studyType gwas target null
+
+> [q220] data.variant.credibleSets.rows[5] studyLocusId 07c13f437ee1123b7664e1a1cdcefc49 pValueMantissa 1.4179999828338623 pValueExponent -22 beta 0.0486221465072313
+
+> [q221] data.variant.credibleSets.rows[5].study id FINNGEN_R12_I9_HYPTENS traitFromSource Hypertension studyType gwas target null
+
+> [q222] data.credibleSet finemappingMethod SuSie confidence SuSiE fine-mapped credible set with in-sample LD
+
+> [q223] data.credibleSet.locus count 1
+
+> [q224] data.credibleSet.locus.rows[0] posteriorProbability 0.995090075085926
+
+> [q225] data.credibleSet.l2GPredictions.rows[0] score 0.5452383160591125
+
+> [q226] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol SLC4A7
+
+> [q227] data.variant.credibleSets.rows[76] studyLocusId 8017c5372316dc883cbd32b16e49c41a pValueMantissa 2.0840001106262207 pValueExponent -11 beta 0.00693494
+
+> [q228] data.variant.credibleSets.rows[76].study id GCST90892633 traitFromSource Chronic kidney disease fast progression risk score (including urine markers) studyType gwas target null
+
+rs2643826 (3_27521497_C_T) is in 142 credible sets (q207), all GWAS, nearly all blood pressure, hypertension and its
+drugs; none is a QTL set. Rosoff's mvAge set (GCST90321079, q208, q209; β −0.0063 per T, the alternative allele, so
+C raises the factor): PICS from the reported top hit, three variants, the lead at PIP 0.926 (q210 to q212); L2G
+SLC4A7 0.529, NEK10 0.059 (q213 to q216); 145 colocalisations (q217), every one with another GWAS set (the second
+page, `set-2971a8aa-coloc2`, holds the other 45), led by hypertensive disease at H4 1.00 (q218, q219); none with an
+expression or other QTL set. FinnGen R12's hypertension set (q220, q221; β +0.049 per T): SuSiE with in-sample LD,
+one variant, the lead at PIP 0.995 (q222 to q224); L2G SLC4A7 0.545 (q225, q226). The lead also leads a set for a chronic
+kidney disease fast-progression risk score (GCST90892633), β +0.0069 per T (q227, q228), so C is on the lower-risk
+side there too. For row 20.

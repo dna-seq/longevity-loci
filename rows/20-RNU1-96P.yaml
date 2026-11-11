@@ -1,0 +1,189 @@
+# The seed list's locus 20, RNU1-96P (3p24.1; the seed's genes "RNU1-96P; Y_RNA; SLC4A7"). Curated 2026-11-11, the
+# second run's tenth row. Lead rs2643826, the seed's only rsID here: a regulatory-region variant near SLC4A7, C/T,
+# C the major allele in Europeans (0.555). Timmers 2020's multivariate SLC4A7 locus (Table 1) and Rosoff 2023's mvAge
+# lead (Table 1); in Timmers 2019's, Zenin 2019's and Deelen 2019's summary statistics at the lead itself. Open
+# Targets 26.09: 142 credible sets hold it, all GWAS, nearly all blood pressure; the GWAS Catalog (2026-10-29) holds
+# 63 associations for it.
+locus_id: 20
+locus_name: RNU1-96P
+verdict: kept
+verdict_reason: >-
+  Tier B, as the seed has it: a genome-wide multivariate result with a co-occurring lifespan study (§4.5 as D16
+  reads it), and no independent replication; a multivariate result does not meet tier A's first criterion (D18.3).
+  Genome-wide only in two multivariate analyses that share their inputs: Timmers 2020's test of healthspan, parental
+  lifespan and 90th-percentile longevity (P 4e-8, C on the longer-lived side in all three columns) and Rosoff 2023's
+  mvAge, the common factor behind healthspan, frailty, exceptional longevity, parental lifespan and epigenetic age
+  (P 9.7e-10, C raising the factor; Rosoff lists it as novel, more than 1 Mb from every locus of its five inputs).
+  Timmers 2020 says no input reached genome-wide significance here alone, calls the locus near the threshold, and
+  asks for replication in independent cohorts. Timmers 2019's million parents' lives are the co-occurring lifespan
+  study: C lengthens life at P 2.2e-5, nominal, UK Biobank and LifeGen on the same side. Healthspan agrees
+  nominally: C delays the end of healthspan in Zenin 2019's UK Biobank (P 1.7e-5). Exceptional survival is +,
+  nominally: Deelen 2019's summary statistics favour C at the 90th (P 0.027) and the 99th percentile (P 0.0023, a
+  subset of the 90th's cases). All three are inputs to both multivariate analyses, so none replicates them.
+  Mechanism: heart and vessels, through blood pressure. At the lead itself C lowers systolic pressure (P 1e-32;
+  T raises it 0.42 mmHg, P 6e-64), hypertension and atrial fibrillation, consistently across the catalog's 63
+  records (one record, Giri 2019, labels C at T's frequency and is not read as a direction); the mvAge credible set
+  colocalises with hypertensive disease at H4 1.00, and Timmers 2020 says the life-extending allele near SLC4A7 goes
+  with less cardiovascular disease. That is association on one variant, not a mediator test. Actionability is
+  preventable: blood pressure is a measure a doctor takes, and the effect is cached at the lead. No trade-off is
+  found (D18.1): C is on the lower-risk side for blood pressure, atrial fibrillation and a kidney-disease
+  progression score; it raises resting heart rate slightly (+0.023 SD), which no cached source ties to harm. Causal
+  confidence C1: the lead holds PIP 0.926 in mvAge's PICS set and 0.995 in FinnGen's hypertension set, a one-variant
+  SuSiE set with in-sample LD. Effector E2, SLC4A7: the locus-to-gene score is SLC4A7's on both sets (0.529 and
+  0.545), and none of the 145 colocalisations is with a QTL. Timmers 2020's SMR and HEIDI point instead to NEK10's
+  liver expression (NEK10's L2G 0.059), so the gene is the model's call, not settled. The protection is the absence
+  of the risk allele: T shortens life and C is the common one. Age of action is unknown: Timmers 2020 excepts SLC4A7
+  from the other loci's fading with parental age and gives no band of its own.
+axes:
+  tier: {value: B, cites: [pmid-32678081#q8, pmid-32678081#q6, pmid-32678081#q9, pmid-32678081#q10, pmid-37550455#q13, pmid-37550455#q2, pmid-37550455#q3, pmid-37550455#q5, pmid-30642433#q58, pmid-30729179#q38, pmid-31413261#q39, pmid-31413261#q40, db-ensembl-116#q92]}
+  mechanism: {value: heart_vessels, cites: [pmid-32678081#q12, db-gwascatalog-2026.10.29#q143, db-gwascatalog-2026.10.29#q144, db-gwascatalog-2026.10.29#q145, db-gwascatalog-2026.10.29#q146, db-gwascatalog-2026.10.29#q147, db-gwascatalog-2026.10.29#q148, db-gwascatalog-2026.10.29#q149, db-gwascatalog-2026.10.29#q150, db-opentargets-26.09#q207, db-opentargets-26.09#q217, db-opentargets-26.09#q218, db-opentargets-26.09#q219, pmid-37550455#q13]}
+  pleiotropy: {values: ["mech:cvd"], cites: [pmid-32678081#q12, db-gwascatalog-2026.10.29#q142, db-gwascatalog-2026.10.29#q151, db-gwascatalog-2026.10.29#q152, db-gwascatalog-2026.10.29#q153, db-gwascatalog-2026.10.29#q154, db-gwascatalog-2026.10.29#q155, db-gwascatalog-2026.10.29#q156, db-gwascatalog-2026.10.29#q162, db-gwascatalog-2026.10.29#q163, db-opentargets-26.09#q227, db-opentargets-26.09#q228]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: [pmid-32678081#q11]}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
+            cites: [pmid-30729179#q38, pmid-30642433#q58, pmid-31413261#q39, pmid-31413261#q40, pmid-32678081#q8]}
+  actionability: {label: preventable, what: ["act_test:bp"], who: "act_who:doctor", cites: [db-gwascatalog-2026.10.29#q143, db-gwascatalog-2026.10.29#q144, db-gwascatalog-2026.10.29#q145, db-gwascatalog-2026.10.29#q149, db-gwascatalog-2026.10.29#q150, pmid-32678081#q12]}
+  context: {values: [eur_only_evidence], cites: [pmid-32678081#q8, pmid-37550455#q13, pmid-37550455#q5, pmid-30642433#q58]}
+flags:
+  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-37550455#q13, pmid-30642433#q58, db-ensembl-116#q92, db-ensembl-116#q93]}
+  - {token: "causal:C1", cites: [db-opentargets-26.09#q208, db-opentargets-26.09#q209, db-opentargets-26.09#q210, db-opentargets-26.09#q211, db-opentargets-26.09#q212, db-opentargets-26.09#q220, db-opentargets-26.09#q221, db-opentargets-26.09#q222, db-opentargets-26.09#q223, db-opentargets-26.09#q224]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q213, db-opentargets-26.09#q214, db-opentargets-26.09#q215, db-opentargets-26.09#q216, db-opentargets-26.09#q217, db-opentargets-26.09#q225, db-opentargets-26.09#q226, pmid-32678081#q13, pmid-32678081#q14]}
+variants:
+  - rsid: rs2643826
+    gene: SLC4A7
+    phenotype: SLC4A7 region, blood pressure, ageing
+    trait_efo_id: EFO_0007796
+    effect_allele: C
+    effect_size: 0.0063
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: C/C
+        state: neutral
+        conclusion: >-
+          You carry two copies of the more common version of this DNA region (about 31 in 100 people of European
+          ancestry do). It is the reference the other combinations are compared with. The region, on chromosome 3,
+          lies near the SLC4A7 gene and is linked to blood pressure. A blood pressure reading your doctor can take shows your actual level, which matters far more
+          than this DNA result. The finding comes from people of European ancestry; less is known elsewhere.
+      - genotype: C/T
+        state: risk
+        conclusion: >-
+          You carry one copy of a less common version of this DNA region (about 49 in 100 people of European
+          ancestry do, the most common combination). In very large European studies that combined healthspan,
+          long life and other measures of ageing, this version went with slightly less healthy ageing, and parents
+          of carriers lived a little less long. The same version goes with slightly higher blood pressure. It is a
+          likely finding, not a settled one: it has not yet been confirmed in a separate group of people. The
+          effect is small and it is a tendency, not destiny. A blood pressure reading your doctor can take shows
+          your actual level, which matters far more than this DNA result.
+      - genotype: T/T
+        state: risk
+        conclusion: >-
+          You carry two copies of a less common version of this DNA region (about 20 in 100 people of European
+          ancestry do). In very large European studies that combined healthspan, long life and other measures of
+          ageing, each copy went with slightly less healthy ageing, and parents of carriers lived a little less
+          long. The same version goes with slightly higher blood pressure. It is a likely finding, not a settled
+          one: it has not yet been confirmed in a separate group of people. The effect is small and it is a
+          tendency, not destiny. A blood pressure reading your doctor can take shows your actual level, which
+          matters far more than this DNA result.
+studies:
+  - rsid: rs2643826
+    note: pmid-37550455
+    quote: q13
+    phenotype_class: MULTIVARIATE_AGEING
+    study_design: multivariate_healthspan_lifespan
+    population: European (the five input GWAS, UK Biobank and LifeGen among them; effective n 1,958,774)
+    ancestry: [EUR]
+    stat_significance: significant
+    p_value: "9.66E-10"
+    p_value_num: 9.66e-10
+    effect_size: 0.0063
+    effect_measure: beta
+    effect_unit: mvAge factor per C allele (no conventional unit; positive = healthier ageing)
+    effect_allele: C
+    direction: protective
+    statistical_test: "Genomic SEM common-factor GWAS of healthspan, frailty, exceptional longevity, parental lifespan and PhenoAge acceleration (Table 1, novel lead; the 0.45 frequency column is T's); Q P 0.42; pools the samples of the component studies, not a replication (q5)"
+    curator: claude-opus-5-5
+  - rsid: rs2643826
+    note: pmid-32678081
+    quote: q8
+    phenotype_class: MULTIVARIATE_AGEING
+    study_design: multivariate_healthspan_lifespan
+    population: European (UK Biobank, the LifeGen cohorts and Deelen 2019's cohorts; the three studies' summary data pooled)
+    ancestry: [EUR]
+    stat_significance: significant
+    p_value: "4E−08"
+    p_value_num: 4.0e-08
+    effect_allele: C
+    direction: protective
+    statistical_test: "Multivariate test of healthspan, parental lifespan and 90th-percentile longevity (Timmers 2020 Table 1, last column); no single effect size (D15); C on the longer-lived side in all three columns; no input genome-wide alone (q6, q9); the authors ask for independent replication (q10)"
+    curator: claude-opus-5-5
+  - rsid: rs2643826
+    note: pmid-30642433
+    quote: q58
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "2.2087547e-05"
+    p_value_num: 2.2087547e-05
+    effect_size: -0.01658642
+    effect_measure: beta
+    effect_unit: log hazard protection per T allele in self (positive = longer life)
+    effect_allele: T
+    direction: risk
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), n 635,243, direction -- in UK Biobank and LifeGen, info 0.98; the co-occurring lifespan study (D16), an input of both multivariate analyses and not a replication"
+    curator: claude-opus-5-5
+  - rsid: rs2643826
+    note: pmid-30729179
+    quote: q38
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "1.7e-05"
+    p_value_num: 1.7e-05
+    effect_size: 0.021
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per T allele (positive = earlier)
+    effect_allele: T
+    direction: risk
+    statistical_test: "Zenin 2019's healthspan summary statistics, Z 4.30, -log10 P 4.77 (P about 1.7e-5, from the file's -log10); an input of both multivariate analyses, the same sample"
+    curator: claude-opus-5-5
+  - rsid: rs2643826
+    note: pmid-31413261
+    quote: q39
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.02701"
+    p_value_num: 0.02701
+    effect_size: -0.0451
+    effect_measure: beta
+    effect_unit: log odds of reaching the 90th percentile, per T allele
+    effect_allele: T
+    direction: risk
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008598), effective N 11,050; an input of Timmers 2020 and of mvAge, not a replication"
+    curator: claude-opus-5-5
+  - rsid: rs2643826
+    note: pmid-31413261
+    quote: q40
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.002264"
+    p_value_num: 0.002264
+    effect_size: -0.1009
+    effect_measure: beta
+    effect_unit: log odds of reaching the 99th percentile, per T allele
+    effect_allele: T
+    direction: risk
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), effective N 4,154; the 99th-percentile cases are a subset of the 90th's; an input of mvAge, not a replication"
+    curator: claude-opus-5-5

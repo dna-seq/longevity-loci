@@ -468,3 +468,59 @@ The source of "European" for the NECS sample, the paper's own wording unread. Fo
 > [q141] _embedded.associations[0].mapped_genes[1] VENTXP4
 
 The catalog maps rs78043944 to HMGB3P12 and VENTXP4, where Supplement Table 1 names LINC00692 and LRRC3B. For row 19.
+
+## rs2643826 (SLC4A7), for row 20
+
+> [q142] page size 100 totalElements 63 totalPages 1 number 0
+
+> [q143] _embedded.associations[1] association_id 228386698 risk_frequency 0.5532 pvalue_description pvalue_mantissa 1 pvalue_exponent -32 multi_snp_haplotype false snp_interaction false range [0.026-0.036] beta 0.03113 unit decrease p_value 1e-32 accession_id GCST90476403 pubmed_id 39024449 first_author Verma A ci_lower 0.026 ci_upper 0.036
+
+> [q144] _embedded.associations[1].efo_traits[0] efo_id EFO_0006335 efo_trait systolic blood pressure
+
+> [q145] _embedded.associations[1].snp_effect_allele[0] rs2643826-C
+
+> [q146] _embedded.associations[2] association_id 228382287 risk_frequency 0.4703 pvalue_description pvalue_mantissa 4 pvalue_exponent -16 multi_snp_haplotype false snp_interaction false range [0.039-0.062] beta 0.05067 unit decrease p_value 4e-16 accession_id GCST90480128 pubmed_id 39024449 first_author Verma A ci_lower 0.039 ci_upper 0.062
+
+> [q147] _embedded.associations[2].reported_trait[0] Hypertension (PheCode 401)
+
+> [q148] _embedded.associations[2].snp_effect_allele[0] rs2643826-C
+
+> [q149] _embedded.associations[34] association_id 131771500 risk_frequency NR pvalue_description pvalue_mantissa 6 pvalue_exponent -64 multi_snp_haplotype false snp_interaction false range [0.37-0.47] beta 0.4177 unit increase p_value 6e-64 accession_id GCST90310294 pubmed_id 38689001 first_author Keaton JM ci_lower 0.37 ci_upper 0.47
+
+> [q150] _embedded.associations[34].snp_effect_allele[0] rs2643826-T
+
+> [q151] _embedded.associations[16] association_id 191682993 risk_frequency 0.4404 pvalue_description pvalue_mantissa 4 pvalue_exponent -20 multi_snp_haplotype false snp_interaction false range [0.026-0.04] beta 0.0327 unit increase p_value 4e-20 accession_id GCST90624412 pubmed_id 40645996 first_author Yuan S ci_lower 0.026 ci_upper 0.04
+
+> [q152] _embedded.associations[16].reported_trait[0] Atrial fibrillation
+
+> [q153] _embedded.associations[16].snp_effect_allele[0] rs2643826-T
+
+> [q154] _embedded.associations[12] association_id 228104257 risk_frequency 0.5532 pvalue_description pvalue_mantissa 5 pvalue_exponent -17 multi_snp_haplotype false snp_interaction false range [0.018-0.028] beta 0.02304 unit increase p_value 5.0000000000000005e-17 accession_id GCST90476338 pubmed_id 39024449 first_author Verma A ci_lower 0.018 ci_upper 0.028
+
+> [q155] _embedded.associations[12].reported_trait[0] heart rate (HR, mean, inv-normal transformed)
+
+> [q156] _embedded.associations[12].snp_effect_allele[0] rs2643826-C
+
+> [q157] _embedded.associations[42] association_id 62271267 risk_frequency 0.5533 pvalue_description pvalue_mantissa 4 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range - beta - p_value 4e-08 accession_id GCST011100 pubmed_id 32678081 first_author Timmers PRHJ
+
+> [q158] _embedded.associations[42].reported_trait[0] Aging traits (healthspan, parental lifespan or longevity) (multivariate analysis)
+
+> [q159] _embedded.associations[42].snp_effect_allele[0] rs2643826-C
+
+> [q160] _embedded.associations[35] association_id 131476408 risk_frequency NR pvalue_description pvalue_mantissa 1 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range [0.0043-0.0084] beta 0.006323946 unit increase p_value 1e-09 accession_id GCST90321079 pubmed_id 37550455 first_author Rosoff DB ci_lower 0.0043 ci_upper 0.0084
+
+> [q161] _embedded.associations[35].snp_effect_allele[0] rs2643826-C
+
+> [q162] _embedded.associations[46] association_id 40932334 risk_frequency 0.4571 pvalue_description pvalue_mantissa 3 pvalue_exponent -29 multi_snp_haplotype false snp_interaction false range [0.34-0.48] beta 0.4106 mmHg increase p_value 2.9999999999999997e-29 accession_id GCST007267 pubmed_id 30578418 first_author Giri A ci_lower 0.34 ci_upper 0.48
+
+> [q163] _embedded.associations[46].snp_effect_allele[0] rs2643826-C
+
+The catalog holds 63 associations at rs2643826 (q142), nearly all blood pressure and its treatment. Their direction
+is one: C lowers systolic pressure (Verma 2024, β −0.031 SD per C, P 1e-32, q143 to q145, EFO_0006335) and
+hypertension (β −0.051, P 4e-16, q146 to q148); T raises systolic pressure by 0.42 mmHg (Keaton 2024, P 6e-64, q149,
+q150) and atrial fibrillation (Yuan 2025, P 4e-20, q151 to q153). C raises heart rate slightly (+0.023 SD, P 5e-17,
+q154 to q156). The ageing records: Timmers 2020's multivariate healthspan, parental lifespan and longevity, effect
+allele C, P 4e-8, no β (q157 to q159), and Rosoff 2023's mvAge, C β +0.0063, P 1e-9 (q160, q161). One record runs
+against the rest: Giri 2019's systolic pressure lists C with "0.4106 mmHg increase" at a risk frequency of 0.457
+(q162, q163), which is T's frequency (db-ensembl-116#q92); the record's allele label is most likely T, and it is not
+read as a direction.
