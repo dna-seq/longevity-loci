@@ -1,0 +1,169 @@
+# The seed list's locus 12, KCNK3 (2p23.3). Curated 2026-11-11, the second run's second row. Lead rs1275922 (Timmers
+# 2019, Table 1), the seed's only rsID here. rs11126666 (Pilling 2017; Timmers' Figure 4 proxy) is the same signal,
+# r² 0.99, and appears in prose only. Wright 2019's AncestryDNA mothers' rs2891519 (22 kb away) is not a tag (CEU r²
+# 0.06); its fathers' rs11126491 and rs4513249 (S9) have no LD Ensembl returns: unknown, not read. Open Targets 26.09:
+# Timmers 2019's and Rosoff 2023's credible sets, both led by rs1275922; the GWAS Catalog (2026-10-29) holds three
+# associations for it, ten for rs11126666 and one for rs1731248.
+locus_id: 12
+locus_name: KCNK3
+verdict: kept
+verdict_reason: >-
+  Tier A, up from the seed's B, on §4.1's letter. Genome-wide significant for parental lifespan in about one million
+  lives (Timmers 2019, P 6.0e-9, past its own 2.5e-8 threshold; G, the common allele at 73 %, adding 0.26 years per
+  copy, UK Biobank and LifeGen on the same side), a locus first found there; in UK Biobank alone it is only
+  suggestive (Pilling 2017, rs11126666 at r² 0.99, P 4.5e-6). Independent replication, same allele: Deelen 2019's
+  survival to the 90th percentile in cohorts holding no UK Biobank data, OR 1.06 per G, P 0.013, and its text names
+  KCNK3 first among the parental-lifespan loci with nominal support; heterogeneity there is moderate (I² 36 %, P
+  0.071), not a red flag. That replication is one look-up, and thin: Deelen's cohorts share at least the Rotterdam
+  Study with LifeGen; its 99th percentile leans the same way and does not pass (OR 1.07, P 0.089); and Timmers 2019's
+  own look-up in earlier longevity studies, at rs11126666, is not nominal (P 0.16 one-sided, same side); whether
+  those cohorts overlap Deelen 2019's is not stated. AncestryDNA gives nothing at the lead: Wright 2019's nearest SNP,
+  rs2891519 in the mothers (genomic-control P 1.5e-3), is not a tag (CEU r² 0.06), and its fathers' two SNPs in the
+  window have no LD Ensembl returns. The later multivariate results reuse the same parents: Timmers 2020 (P 2e-8, no
+  effect size) and Rosoff 2023's mvAge (P 3e-9 in the GWAS Catalog, G on the healthier-ageing side). Healthspan is
+  0: Zenin 2019's summary statistics give P 0.53 at the lead, G leaning later. Exceptional survival is +, on the same
+  single Deelen look-up the replication rests on. Mechanism: Timmers 2019 files the locus as cardiometabolic and
+  reads it as pleiotropic, with moderate effects on several risk factors rather than one; at rs11126666, whose G
+  pairs with the lead's G in Timmers' own proxy table, G lowers BMI and A raises it (four GWAS Catalog records), and
+  A raises the use of calcium channel blockers (P 7e-31); at rs1731248 (r² 0.97), whose C travels with G by
+  frequency in Europeans and East Asians alike, C lowers essential hypertension (OR 0.90, P 5e-9, an East Asian
+  sample by its frequency). Filed under heart and vessels, with body weight beside it: the lifespan-shortening A
+  goes with more calcium-channel-blocker use, more hypertension and higher BMI, association on one haplotype, not a mediator test.
+  Actionability is descriptive: the locus does not act mainly through weight (Timmers names several risk factors,
+  and the strongest record is calcium-channel-blocker use, not BMI), so D18.2's weight label is not applied, and no
+  measured blood-pressure effect is cached for §4.2's preventable label. The trade-off was looked for (D18.1) in the
+  catalog's records at the lead, rs11126666 and rs1731248: no harm on the G side, none detected. Causal confidence C2: rs1275922 leads Timmers
+  2019's credible set (PICS) at PIP 0.31, with rs1731247, rs11126666 and rs1731248 at r² 0.97 to 0.98 holding about
+  0.18 each, one signal whose causal variant is not resolved; mvAge's set has the same shape (0.32). Timmers 2019
+  counts KCNK3 among its most allelically heterogeneous loci (at least 25 independent variants), so a single SNP
+  captures only part of the region. The effector is KCNK3 by locus-to-gene score (0.85, E2; no colocalisation
+  read). The protection is the absence of the risk allele: A shortens life and G is the common one. Age of action
+  is unknown: no cached source gives this locus's own age bands.
+axes:
+  tier: {value: A, cites: [pmid-30642433#q44, pmid-30642433#q30, pmid-30642433#q47, pmid-31413261#q27, pmid-31413261#q5, pmid-30642433#q13, pmid-30642433#q48, pmid-29227965#q21, pmid-31484785#q43, db-ensembl-116#q43, db-gwascatalog-2026.10.29#q76, db-gwascatalog-2026.10.29#q79, db-opentargets-26.09#q105, db-opentargets-26.09#q107]}
+  mechanism: {value: heart_vessels, cites: [pmid-30642433#q44, pmid-30642433#q45, db-gwascatalog-2026.10.29#q91, db-gwascatalog-2026.10.29#q100, db-opentargets-26.09#q110, db-opentargets-26.09#q111]}
+  pleiotropy: {values: ["mech:cvd", "mech:adiposity", broad], cites: [pmid-30642433#q44, pmid-30642433#q45, db-gwascatalog-2026.10.29#q91, db-gwascatalog-2026.10.29#q100, db-gwascatalog-2026.10.29#q85, db-gwascatalog-2026.10.29#q88]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "+",
+            cites: [pmid-30729179#q24, pmid-30642433#q44, pmid-31413261#q27, pmid-30642433#q48]}
+  actionability: {label: descriptive, cites: [pmid-30642433#q45, db-gwascatalog-2026.10.29#q91, db-gwascatalog-2026.10.29#q85]}
+  context: {values: [eur_only_evidence], cites: [pmid-30642433#q44, pmid-31413261#q27]}
+flags:
+  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-30642433#q44, pmid-30642433#q47, db-opentargets-26.09#q108]}
+  - {token: "causal:C2", cites: [db-opentargets-26.09#q98, db-opentargets-26.09#q99, db-opentargets-26.09#q100, db-opentargets-26.09#q101, db-opentargets-26.09#q102, db-opentargets-26.09#q103, db-opentargets-26.09#q107]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q104]}
+variants:
+  - rsid: rs1275922
+    gene: KCNK3
+    phenotype: KCNK3 region, blood pressure and weight
+    trait_efo_id: EFO_0007796
+    effect_allele: G
+    effect_size: 0.2579
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA region, the one most people of European ancestry
+          have (about 53 in 100). It is the reference the other combinations are compared with. The region, on
+          chromosome 2, lies at the KCNK3 gene and is linked to blood pressure and body weight. The finding comes
+          from people of European ancestry; less is known elsewhere.
+      - genotype: A/G
+        state: risk
+        conclusion: >-
+          You carry one copy of a less common version of this DNA region (about 40 in 100 people of European
+          ancestry do). In very large British and European studies, people with this version tended to have parents
+          who lived about three months less. The same version goes with slightly more use of some heart and blood-pressure medicines
+          and a slightly higher BMI. The finding is well
+          established, though its confirmation in a separate group is a single, modest one; the effect is small and
+          it is a tendency, not destiny.
+      - genotype: A/A
+        state: risk
+        conclusion: >-
+          You carry two copies of a less common version of this DNA region (about 7 in 100 people of European
+          ancestry do). In very large British and European studies, each copy went with parents living about three
+          months less. The same version goes with slightly more use of some heart and blood-pressure medicines and a slightly higher
+          BMI. The finding is well established, though its
+          confirmation in a separate group is a single, modest one; the effect is small and it is a tendency, not
+          destiny.
+studies:
+  - rsid: rs1275922
+    note: pmid-30642433
+    quote: q44
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the 26 LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 1012240
+    sample_unit: lives
+    stat_significance: significant
+    p_value: "6.0E-09"
+    p_value_num: 6.0e-09
+    effect_size: 0.2579
+    effect_measure: beta
+    effect_unit: years of life per G allele in self (parental estimate doubled)
+    effect_allele: G
+    direction: protective
+    statistical_test: "Cox-residual GWAS, common effect sizes across sexes (Table 1); sex-specific model P 2.7E-07; summary statistics n 637,314, direction -- in UK Biobank and LifeGen (q47)"
+    curator: claude-opus-5-5
+  - rsid: rs1275922
+    note: pmid-31413261
+    quote: q27
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's 18 discovery cohorts)
+    ancestry: [EUR]
+    n_cases: 11262
+    sample_size: 36745
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "1.309E-2"
+    p_value_num: 0.01309
+    effect_size: 1.060
+    effect_measure: OR
+    effect_unit: odds ratio of reaching the 90th percentile, per G allele
+    effect_allele: G
+    direction: protective
+    statistical_test: "Look-up of the lead in Supplementary Data 1 (q27); the text names KCNK3 among the nominal loci (q5); logistic regression, fixed-effect meta-analysis; I² 35.8, heterogeneity P 0.071; the cohorts share at least the Rotterdam Study with LifeGen (pmid-30642433#q13)"
+    curator: claude-opus-5-5
+  - rsid: rs1275922
+    note: pmid-31413261
+    quote: q27
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's 18 discovery cohorts)
+    ancestry: [EUR]
+    n_cases: 3484
+    sample_size: 28967
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "8.872E-2"
+    p_value_num: 0.08872
+    effect_size: 1.068
+    effect_measure: OR
+    effect_unit: odds ratio of reaching the 99th percentile, per G allele
+    effect_allele: G
+    direction: protective
+    statistical_test: "Look-up of the lead in Supplementary Data 1 (q27); logistic regression, fixed-effect meta-analysis; I² 17.9, heterogeneity P 0.27"
+    curator: claude-opus-5-5
+  - rsid: rs1275922
+    note: pmid-30729179
+    quote: q24
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.527"
+    p_value_num: 0.527
+    effect_size: -0.00353
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per G allele (positive = earlier)
+    effect_allele: G
+    direction: protective
+    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), -log10 P 0.278; UK Biobank, the same people as Timmers 2019's UK Biobank part"
+    curator: claude-opus-5-5

@@ -486,3 +486,53 @@ holds it (`credibleSets-longevity8-6_32666628_C_T.json`), and Open Targets 26.09
 
 The locus-to-gene score of PABPC4 on the HDL cholesterol set led by rs3768321 (`credibleset-0a6b39073b95a8a3d1f7e722abf30a8b.json`,
 q40-q42): 0.77, above 0.5, on a lipid trait's set, not the row's own claim (D17.2). For row 2.
+
+## rs1275922 (KCNK3), for row 12
+
+Variant 2_26710019_A_G. Of the eight lifespan studies (`credibleSets-longevity8-2_26710019_A_G.json`), it is in two
+sets:
+
+> [q97] data.credibleSets count 2
+
+> [q98] data.credibleSet studyLocusId 197bf4ed7aa51f7f4f88306aceb01c7f finemappingMethod PICS pValueMantissa 6 pValueExponent -9 beta 0.2579
+
+> [q99] data.credibleSet.study id GCST009890 traitFromSource Parental lifespan
+
+> [q100] data.credibleSet.locus.rows[0] posteriorProbability 0.30925827312711746 r2Overall 1 is95CredibleSet true data.credibleSet.locus.rows[0].variant id 2_26710019_A_G data.credibleSet.locus.rows[0].variant.rsIds[0] rs1275922
+
+> [q101] data.credibleSet.locus.rows[1] posteriorProbability 0.1890451821492718 r2Overall 0.975536047142678 is95CredibleSet true data.credibleSet.locus.rows[1].variant id 2_26705229_A_G data.credibleSet.locus.rows[1].variant.rsIds[0] rs1731247
+
+> [q102] data.credibleSet.locus.rows[2] posteriorProbability 0.1868541944383164 r2Overall 0.9745781541635675 is95CredibleSet true data.credibleSet.locus.rows[2].variant id 2_26705943_G_A data.credibleSet.locus.rows[2].variant.rsIds[0] rs11126666
+
+> [q103] data.credibleSet.locus.rows[3] posteriorProbability 0.18111804250164912 r2Overall 0.9719652081828207 is95CredibleSet true data.credibleSet.locus.rows[3].variant id 2_26701955_A_C data.credibleSet.locus.rows[3].variant.rsIds[0] rs1731248
+
+> [q104] data.credibleSet.l2GPredictions.rows[0] score 0.8477738499641418 data.credibleSet.l2GPredictions.rows[0].target approvedSymbol KCNK3
+
+Timmers 2019's parental-lifespan set (PICS, 11 members) is led by rs1275922 at PIP 0.31 (causal:C2), with three
+variants at r² 0.97 to 0.98 sharing most of the rest (rs1731247 0.19, rs11126666 0.19, rs1731248 0.18): one signal,
+its causal variant not resolved among four. Top locus-to-gene score KCNK3 0.85 (effector:E2; no colocalisation read).
+
+> [q105] data.credibleSet studyLocusId e43a6d1483e391b7d4cad3e7667effd8 finemappingMethod PICS pValueMantissa 3 pValueExponent -9 beta 0.006999004
+
+> [q106] data.credibleSet.study id GCST90321079 traitFromSource Aging
+
+> [q107] data.credibleSet.locus.rows[0] posteriorProbability 0.31544213076152683 r2Overall 1 is95CredibleSet true data.credibleSet.locus.rows[0].variant id 2_26710019_A_G data.credibleSet.locus.rows[0].variant.rsIds[0] rs1275922
+
+Rosoff 2023's mvAge set (GCST90321079, PICS) is led by rs1275922 at PIP 0.32, the same four-variant shape.
+
+> [q108] data.variant.alleleFrequencies[2] populationName nfe_adj alleleFrequency 0.7288516971586564
+
+gnomAD non-Finnish Europeans: G (the alternate allele) 0.729.
+
+> [q109] data.variant.alleleFrequencies[5] populationName eas_adj alleleFrequency 0.3146568437378829
+
+gnomAD East Asians: rs1275922's G 0.315.
+
+> [q110] data.variant.alleleFrequencies[2] populationName nfe_adj alleleFrequency 0.7283868879472694
+
+> [q111] data.variant.alleleFrequencies[5] populationName eas_adj alleleFrequency 0.3123543123543124
+
+rs1731248 (variant 2_26701955_A_C): C, the alternate allele, 0.728 in non-Finnish Europeans and 0.312 in East
+Asians, the lead's G frequencies (0.729, q108; 0.315, q109) in both; at EUR r² 0.97, D′ 0.98 (db-ensembl-116#q46)
+C travels with the lead's G (derived from frequencies).
+

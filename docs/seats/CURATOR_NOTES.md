@@ -20,7 +20,7 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   compacting` to the lead, `watchdog.sh compact`, end the turn; the lead wakes the next. Stop at 80 % of the 7-day
   window or 95 % of the 5-hour window. After each tenth `done:`, re-measure the pacing and
   go on with the next ten, unless blocked or steered (the person, 2026-11-11, via the lead, 639316091: "After 10
-  adjust pacing and go next 10 and so on unless blocked or I steer"; this replaces the earlier pause after ten). Rows done in this run: 6 CELSR2 (1 of 10), 38 HLA-DQA1 (2 of 10), 81 FES/FURIN (3 of 10), 103 (4 of 10), 2 PABPC4 (5 of 10), 4 LINC02796 (6 of 10), 5 FPGT / TNNI3K (7 of 10), 7 MAGI3 (8 of 10), 8 IL6R Asp358Ala with 157 (9 of 10); 10 RABGAP1L (10 of 10); second run: 11 LINC01875 (1 of 10), then the lead's review of 103, 8, 2, 10 with 5, 4 and 11 under D17/D18 (one commit each, not counted as rows); 6's healthspan re-cited to Zenin's cached file (597d9fb); 103 re-tiered B under D16 (5abae88); the Open Targets quotes re-quoted from cached records (f69c8d8); the corrections of 71 (d44fd4a) and 67 (3dd792c) done, the E3 gene rule at 57 (8d27300) and 80 (728d78d), 67's MANOVA study added under D15 (a519ae4); 38 corrected again at 103 (the AncestryDNA tag is shared); next 96 APOE waits on D2, so the seed tier B by locus_id.
+  adjust pacing and go next 10 and so on unless blocked or I steer"; this replaces the earlier pause after ten). Rows done in this run: 6 CELSR2 (1 of 10), 38 HLA-DQA1 (2 of 10), 81 FES/FURIN (3 of 10), 103 (4 of 10), 2 PABPC4 (5 of 10), 4 LINC02796 (6 of 10), 5 FPGT / TNNI3K (7 of 10), 7 MAGI3 (8 of 10), 8 IL6R Asp358Ala with 157 (9 of 10); 10 RABGAP1L (10 of 10); second run: 11 LINC01875 (1 of 10), 12 KCNK3 (2 of 10), then the lead's review of 103, 8, 2, 10 with 5, 4 and 11 under D17/D18 (one commit each, not counted as rows); 6's healthspan re-cited to Zenin's cached file (597d9fb); 103 re-tiered B under D16 (5abae88); the Open Targets quotes re-quoted from cached records (f69c8d8); the corrections of 71 (d44fd4a) and 67 (3dd792c) done, the E3 gene rule at 57 (8d27300) and 80 (728d78d), 67's MANOVA study added under D15 (a519ae4); 38 corrected again at 103 (the AncestryDNA tag is shared); next 96 APOE waits on D2, so the seed tier B by locus_id.
 - **10 RABGAP1L** (2026-11-11), tier C re-tiered (seed B); briefly blocked on a `study_design` value, which the lead
   added as `current_age_quantitative` (8187cb8; the study written as a row, not prose). Both seed rsIDs
   (rs10798302 lead, rs16847402; r² 0.53, D′ 0.99, cached as db-ensembl-116 `ld-rs10798302-rs16847402.json`) come
@@ -147,6 +147,22 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   autoimmune direction from Joshi q11 (rs3184504-T raises type 1 diabetes); cancer trade-off from Timmers q7, no
   "slightly"; per copy, parents about 1.7 months ("nearly two months"). Deelen and LifeGen share the Rotterdam
   Study (Timmers q13). eLife source data is at `https://cdn.elifesciences.org/articles/39856/elife-39856-figN-dataM-v2.xlsx`.
+- **12 KCNK3** (2026-11-11), tier A, the first seed-B row raised to A; the call is put to the lead. Lead rs1275922
+  (Timmers Table 1, 6.0e-9; Pilling's rs11126666 at r² 0.99 only 4.5e-6 in UK Biobank). The only replication outside
+  UK Biobank is Deelen SD1's 90th percentile (OR 1.06 per G, P 0.013; 99th 0.089; I² 36 %); Timmers' Figure 4
+  look-up at rs11126666 is 0.16 one-sided, in cohorts that probably overlap Deelen's. Read as A because the notes
+  already count Deelen's discovery cohorts as an outside sample and §4.1 asks p < 0.05, same allele; no row before
+  this one rested A on Deelen alone (71 had LifeGen without UK Biobank beside it). 25 HTT has the same shape. Wright:
+  the mothers' rs2891519 (22 kb) is CEU r² 0.06, not a tag; the fathers' rs11126491 and rs4513249 return no LD in
+  EUR or CEU, floor off: unknown. When EUR pairwise is empty, the CEU pairwise call resolved rs2891519 (as at row 2);
+  Ensembl's window call (`ld-window50-rs1275922.json`, r² >= 0.1) lists the close members, but an SNP absent from it
+  is not thereby below 0.1; window 500 returned HTTP 500. Fig. 4's "R2" column repeats Freq1 at several rows: not r².
+  Trade-off checked at the lead, rs11126666 (G pairs with the lead's G in Timmers' proxy table) and rs1731248 (C with
+  G by gnomAD frequencies in NFE and EAS; the catalog record's 0.29 is an East Asian sample): the A raises BMI and
+  calcium-channel-blocker use, the G lowers hypertension; no harm on G. Descriptive, not D18.2's weight: the locus
+  is not mainly a weight locus (Timmers: several risk factors; the strongest record is the blocker one); put to the
+  lead with the options modifiable (weight) and preventable (blood pressure, but no measured BP effect cached). C2
+  (PIP 0.31 of four at r² 0.97+), E2 KCNK3 (L2G 0.85).
 - **11 LINC01875** (2026-11-11), tier B kept (the lead: A's first criterion fails, D18.3; rules 3 and 4 below overruled by D18.1-2 and D17.3). Lead
   rs6744653 (Timmers Table 2): CES P 5.8e-8, suggestive (BF P 7.0e-10 not counted). The seed's rs66906321 (r² 0.89)
   reaches 2.26e-8 in Timmers' summary statistics, unreported by the paper (Table 1 omits it, q42 calls TMEM18 genome-wide

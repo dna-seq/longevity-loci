@@ -170,3 +170,26 @@ GRCh38, C/A/T; T 0.19 in EUR) is not a proxy of rs3768321 in the panel that answ
 
 ENSG00000152061, the gene whose expression sets hold rs10798302 in Open Targets (db-opentargets-26.09#q86), is
 RABGAP1L (1:174,159,339-174,995,308, GRCh38, protein coding). For row 10.
+
+## rs1275922 (KCNK3), for row 12
+
+> [q42] [0] variation1 rs1275922 r2 0.989960 variation2 rs11126666 d_prime 0.994968 population_name 1000GENOMES:phase_3:EUR
+
+rs1275922 and rs11126666 (Pilling 2017's and Timmers' Figure 4 SNP) are one signal in 1000 Genomes EUR: r² 0.99.
+
+> [q43] [0] d_prime 0.300056 population_name 1000GENOMES:phase_3:CEU variation1 rs1275922 variation2 rs2891519 r2 0.061131
+
+rs2891519 (Wright 2019's AncestryDNA mothers' SNP, 22 kb away) is not a tag: CEU r² 0.06, D′ 0.30. The EUR pairwise
+call is empty, with the r² floor off too.
+
+> [q44] populations[76] population 1000GENOMES:phase_3:EUR allele_count 273 allele A frequency 0.271371769383698
+
+> [q45] populations[83] allele_count 221 frequency 0.219681908548708 population 1000GENOMES:phase_3:EUR allele A
+
+1000 Genomes EUR: rs1275922 A 0.27; rs2891519 A 0.22.
+
+> [q46] [1] variation1 rs1275922 r2 0.969972 variation2 rs1731248 d_prime 0.984872 population_name 1000GENOMES:phase_3:EUR
+
+Ensembl's LD window around rs1275922 (`ld-window50-rs1275922.json`, 1000 Genomes EUR, r² >= 0.1): rs1731248 at r²
+0.97, D′ 0.98.
+

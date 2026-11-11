@@ -271,3 +271,74 @@ rs1993709 has eight (`associations-rs1993709.json`). A at rs1993709, the allele 
 0.086 decrease, P 3 × 10⁻¹⁰); G is the early-onset extreme obesity risk allele. Four records state no allele (two
 fibromyalgia MTAG records, extreme obesity, neuroticism, q74). No record ties the longer-life allele to a harm; none
 detected is not none. For row 4.
+
+## rs1275922 (KCNK3) and its proxies, for row 12
+
+`associations-rs1275922.json` (page size 50 totalElements 3 totalPages 1 number 0), `associations-rs11126666.json` (page size 50 totalElements 10 totalPages 1 number 0, r² 0.99 to the lead,
+db-ensembl-116#q42), `associations-rs1731248.json` (page size 50 totalElements 1 totalPages 1 number 0, r² 0.97 in Timmers' credible set,
+db-opentargets-26.09#q103); `associations-rs1731247.json` holds none.
+
+> [q76] _embedded.associations[0] association_id 131476339 risk_frequency NR pvalue_description pvalue_mantissa 3 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range [0.0047-0.0093] beta 0.006999004 unit decrease p_value 3.0000000000000004e-09 accession_id GCST90321079 pubmed_id 37550455 first_author Rosoff DB ci_lower 0.0047 ci_upper 0.0093
+
+> [q77] _embedded.associations[0].reported_trait[0] Aging
+
+> [q78] _embedded.associations[0].snp_allele[0] rs_id rs1275922 effect_allele A
+
+> [q79] _embedded.associations[1] association_id 62271257 risk_frequency 0.74 pvalue_description pvalue_mantissa 2 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range - beta - p_value 2e-08 accession_id GCST011100 pubmed_id 32678081 first_author Timmers PRHJ
+
+> [q80] _embedded.associations[1].reported_trait[0] Aging traits (healthspan, parental lifespan or longevity) (multivariate analysis)
+
+> [q81] _embedded.associations[1].snp_allele[0] rs_id rs1275922 effect_allele G
+
+> [q82] _embedded.associations[2] association_id 56008433 risk_frequency 0.74 pvalue_description pvalue_mantissa 6 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range [0.17-0.34] beta 0.2579 years increase p_value 6.000000000000001e-09 accession_id GCST009890 pubmed_id 30642433 first_author Timmers PR ci_lower 0.17 ci_upper 0.34
+
+> [q83] _embedded.associations[2].reported_trait[0] Parental lifespan
+
+> [q84] _embedded.associations[2].snp_allele[0] rs_id rs1275922 effect_allele G
+
+> [q85] _embedded.associations[1] association_id 104107644 risk_frequency NR pvalue_description pvalue_mantissa 8 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range [0.0064-0.0126] beta 0.0095 unit decrease p_value 8e-09 accession_id GCST90255621 pubmed_id 36581621 first_author Huang J ci_lower 0.0064 ci_upper 0.0126
+
+> [q86] _embedded.associations[1].reported_trait[0] Body mass index
+
+> [q87] _embedded.associations[1].snp_allele[0] rs_id rs11126666 effect_allele G
+
+> [q88] _embedded.associations[3] association_id 49100549 risk_frequency 0.28 pvalue_description pvalue_mantissa 1 pvalue_exponent -13 multi_snp_haplotype false snp_interaction false range [0.013-0.025] beta 0.019 unit increase p_value 1e-13 accession_id GCST004904 pubmed_id 28892062 first_author Akiyama M ci_lower 0.013 ci_upper 0.025
+
+> [q89] _embedded.associations[3].reported_trait[0] Body mass index
+
+> [q90] _embedded.associations[3].snp_allele[0] rs_id rs11126666 effect_allele A
+
+> [q91] _embedded.associations[4] association_id 45606655 risk_frequency 0.255998 pvalue_description pvalue_mantissa 7 pvalue_exponent -31 multi_snp_haplotype false snp_interaction false range [0.088-0.124] beta 0.106201254 unit increase p_value 7.000000000000001e-31 accession_id GCST007929 pubmed_id 31015401 first_author Wu Y ci_lower 0.088 ci_upper 0.124
+
+> [q92] _embedded.associations[4].reported_trait[0] Medication use (calcium channel blockers)
+
+> [q93] _embedded.associations[4].snp_allele[0] rs_id rs11126666 effect_allele A
+
+> [q94] _embedded.associations[6] association_id 35037989 risk_frequency NR pvalue_description pvalue_mantissa 5 pvalue_exponent -11 multi_snp_haplotype false snp_interaction false range [NR] beta 0.019 unit decrease p_value 4.9999999999999995e-11 accession_id GCST006368 pubmed_id 30108127 first_author Hoffmann TJ
+
+> [q95] _embedded.associations[6].reported_trait[0] Body mass index
+
+> [q96] _embedded.associations[6].snp_allele[0] rs_id rs11126666 effect_allele G
+
+> [q97] _embedded.associations[7] association_id 12223330 risk_frequency 0.283 pvalue_description pvalue_mantissa 1 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range [0.014-0.027] beta 0.02 kg/m2 increase p_value 1e-09 accession_id GCST002783 pubmed_id 25673413 first_author Locke AE ci_lower 0.014 ci_upper 0.027
+
+> [q98] _embedded.associations[7].reported_trait[0] Body mass index
+
+> [q99] _embedded.associations[7].snp_allele[0] rs_id rs11126666 effect_allele A
+
+> [q100] _embedded.associations[0] association_id 117768508 risk_frequency 0.28753 pvalue_description pvalue_mantissa 5 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range [0.872-0.934] or_per_copy_num 0.902 or_value 0.902 beta - p_value 5e-09 accession_id GCST90246081 pubmed_id 37601966 first_author Walters RG ci_lower 0.872 ci_upper 0.934
+
+> [q101] _embedded.associations[0].reported_trait[0] ICD10 I10: Essential (primary) hypertension
+
+> [q102] _embedded.associations[0].snp_allele[0] rs_id rs1731248 effect_allele C
+
+At the lead (q76-q84): Rosoff 2023's mvAge, A lowers the factor (P 3 × 10⁻⁹), so G is on the healthier-ageing side;
+Timmers 2020's multivariate test (P 2 × 10⁻⁸, G named, no effect size); Timmers 2019 (G, +0.26 years). At rs11126666,
+whose G pairs with the lead's G (Timmers 2019's own proxy table, pmid-30642433#q48; Pilling's G,
+pmid-29227965#q21): G lowers BMI (q85-q87, q94-q96) and A raises it (q88-q90, q97-q99); A raises the use of calcium
+channel blockers (q91-q93, P 7 × 10⁻³¹). So the lifespan-shortening A goes with higher BMI and more use of calcium
+channel blockers; nothing records harm on the G side among these. The other five records at rs11126666 (angiotensin
+receptor blocker response, height, Pilling 2017's parental longevity, two more BMI) were read and add no harm to G. At rs1731248 (q100-q102) C lowers
+essential hypertension (OR 0.90, P 5 × 10⁻⁹). C travels with the lead's G (db-opentargets-26.09#q110, q111), and its
+risk frequency here (0.29) is the East Asian one, not the European (0.73): an East Asian sample, by frequency. So the
+lifespan-raising G goes with less hypertension, in line with A's calcium-channel-blocker record; not a trade-off.
