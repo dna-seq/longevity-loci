@@ -20,7 +20,7 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   compacting` to the lead, `watchdog.sh compact`, end the turn; the lead wakes the next. Stop at 80 % of the 7-day
   window or 95 % of the 5-hour window. After each tenth `done:`, re-measure the pacing and
   go on with the next ten, unless blocked or steered (the person, 2026-11-11, via the lead, 639316091: "After 10
-  adjust pacing and go next 10 and so on unless blocked or I steer"; this replaces the earlier pause after ten). Rows done in this run: 6 CELSR2 (1 of 10), 38 HLA-DQA1 (2 of 10), 81 FES/FURIN (3 of 10), 103 (4 of 10), 2 PABPC4 (5 of 10), 4 LINC02796 (6 of 10), 5 FPGT / TNNI3K (7 of 10), 7 MAGI3 (8 of 10), 8 IL6R Asp358Ala with 157 (9 of 10); 10 RABGAP1L (10 of 10); second run: 11 LINC01875 (1 of 10), 12 KCNK3 (2 of 10), 13 PRKD3 (3 of 10), 14 LINC01122 (4 of 10), 15 AFF3 (5 of 10), 16 LRP1B (6 of 10), 17 CASP8 (7 of 10), then the lead's review of 103, 8, 2, 10 with 5, 4 and 11 under D17/D18 (one commit each, not counted as rows); 6's healthspan re-cited to Zenin's cached file (597d9fb); 103 re-tiered B under D16 (5abae88); the Open Targets quotes re-quoted from cached records (f69c8d8); the corrections of 71 (d44fd4a) and 67 (3dd792c) done, the E3 gene rule at 57 (8d27300) and 80 (728d78d), 67's MANOVA study added under D15 (a519ae4); 38 corrected again at 103 (the AncestryDNA tag is shared); next 96 APOE waits on D2, so the seed tier B by locus_id.
+  adjust pacing and go next 10 and so on unless blocked or I steer"; this replaces the earlier pause after ten). Rows done in this run: 6 CELSR2 (1 of 10), 38 HLA-DQA1 (2 of 10), 81 FES/FURIN (3 of 10), 103 (4 of 10), 2 PABPC4 (5 of 10), 4 LINC02796 (6 of 10), 5 FPGT / TNNI3K (7 of 10), 7 MAGI3 (8 of 10), 8 IL6R Asp358Ala with 157 (9 of 10); 10 RABGAP1L (10 of 10); second run: 11 LINC01875 (1 of 10), 12 KCNK3 (2 of 10), 13 PRKD3 (3 of 10), 14 LINC01122 (4 of 10), 15 AFF3 (5 of 10), 16 LRP1B (6 of 10), 17 CASP8 (7 of 10), 18 TMEM43 (8 of 10), then the lead's review of 103, 8, 2, 10 with 5, 4 and 11 under D17/D18 (one commit each, not counted as rows); 6's healthspan re-cited to Zenin's cached file (597d9fb); 103 re-tiered B under D16 (5abae88); the Open Targets quotes re-quoted from cached records (f69c8d8); the corrections of 71 (d44fd4a) and 67 (3dd792c) done, the E3 gene rule at 57 (8d27300) and 80 (728d78d), 67's MANOVA study added under D15 (a519ae4); 38 corrected again at 103 (the AncestryDNA tag is shared); next 96 APOE waits on D2, so the seed tier B by locus_id.
 - **10 RABGAP1L** (2026-11-11), tier C re-tiered (seed B); briefly blocked on a `study_design` value, which the lead
   added as `current_age_quantitative` (8187cb8; the study written as a row, not prose). Both seed rsIDs
   (rs10798302 lead, rs16847402; r² 0.53, D′ 0.99, cached as db-ensembl-116 `ld-rs10798302-rs16847402.json`) come
@@ -147,6 +147,17 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   autoimmune direction from Joshi q11 (rs3184504-T raises type 1 diabetes); cancer trade-off from Timmers q7, no
   "slightly"; per copy, parents about 1.7 months ("nearly two months"). Deelen and LifeGen share the Rotterdam
   Study (Timmers q13). eLife source data is at `https://cdn.elifesciences.org/articles/39856/elife-39856-figN-dataM-v2.xlsx`.
+- **18 TMEM43** (2026-11-11), tier C re-tiered (seed B), advisor-checked. Lead rs1043943, Liu 2021's Chinese
+  longevity SNP (CLHLS; Table 1 q2, T, meta 3.59e-8). First use of **R-TIER-2** (an unreplicated old-against-young
+  case-control caps at C): dataset 2 sits inside the genome-wide meta-analysis, so it is no replication, and its
+  earlier GWAS seeded dataset 1's chip (q5). Table 1's rs1043943 row does not reconcile (β/SE gives 0.054 and 4.8e-7
+  against the printed 0.016 and 3.59e-8); kept the printed P (D17.3), said in the row, sent to the lead. Europe is
+  an informative null: common there (T 0.40), same LD to XPC's missense rs2228001 (r² 0.94 CEU and CHB), Deelen 90th
+  CI excludes Liu's β. Timmers 0.057, Zenin healthspan 0.0035 (both T): neither lifts the cap. Open Targets: allele
+  order is ref T/alt C here (`3_14141910_T_C`; the C_T id returns null), so check Ensembl's allele_string for the
+  reference before querying. 400 sets, 321 XPC QTLs, no longevity set: C4/E4, XPC in prose only. Liu's supplements:
+  Europe PMC lists them, but its `supplementaryFiles` zip stalls through the proxy (a partial 3.4 MB); S2 and S16
+  unread. Same paper's BMPER (rs17169634) meets R-TIER-2 too.
 - **17 CASP8** (2026-11-11), tier C re-tiered (seed B), advisor-checked. Lead rs10197246, Zenin 2019's healthspan
   SNP (Table 2 q28, C 3.67e-9 GC, replicated 2.43e-4 under 0.05/12). Supplementary Data 5 and 7 cached
   (`MOESM7`, `MOESM9`; MOESM number = SD number + 2, checked against the text's citations): SD7 shows the signal is

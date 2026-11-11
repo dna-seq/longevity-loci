@@ -784,3 +784,34 @@ GWAS colocalisation of Zenin's healthspan set (the default query, `coloc-00c3…
 carcinoma (H4 0.99), facial ageing (0.98) and breast cancer (0.99), three of many skin-cancer, keratosis and other
 cancer partners (read, not each quoted). The healthspan signal shares its variant with skin cancer and skin ageing
 above all, and with breast cancer. For row 17.
+
+> [q188] data.variant.credibleSets count 400
+
+> [q189] data.variant.credibleSets.rows[20].study id gtex-v10_tx_testis_enst00000427795 studyType eqtl
+
+> [q190] data.variant.credibleSets.rows[20].study.target approvedSymbol XPC
+
+> [q191] data.variant.credibleSets.rows[20].variant id 3_14141910_T_C
+
+> [q192] data.variant.credibleSets.rows[1].study id gtex-v10_exon_esophagus_gej_ensg00000154767_15_3_14147467_14147907 studyType eqtl
+
+> [q193] data.variant.credibleSets.rows[1].variant id 3_14141910_T_C
+
+rs1043943 (3_14141910_T_C, row 18) is in 400 credible sets, read in four pages of 100 (`variant-3_14141910_T_C-sets-p0`
+to `p3`). By the sets' own study type and target, tallied, not each quoted: 321 are XPC's expression, splicing and
+transcript-usage QTLs (144 eQTL, 115 sQTL, 62 tuQTL), 54 XPC-AS1's, 17 an unnamed gene's (ENSG00000268279), 3 others'
+(LSM3, FAM194C), none TMEM43's; the lead itself tops 43 of XPC's (two quoted: a GTEx testis transcript of XPC,
+P 1.4 × 10⁻⁵², and a GTEx oesophagus exon of XPC, P 8.7 × 10⁻⁶²).
+
+> [q194] data.variant.credibleSets count 5
+
+> [q195] data.variant.credibleSets.rows[1].study id GCST90475214 traitFromSource High blood pressure / hypertension
+
+> [q196] data.variant.credibleSets.rows[1].variant id 3_14115290_G_T
+
+> [q197] data.variant.credibleSets.rows[0].study id GCST90691788 traitFromSource Impedance of arm left (UKB data field 23110)
+
+Only 5 of the 400 are GWAS sets (`variant-3_14141910_T_C-gwas`): arm impedance (three), hypertension and a
+repeat-count trait, each led by another variant (hypertension by 3_14115290_G_T). No longevity, lifespan or
+healthspan set holds the lead, so causal confidence for the row's claim is not assessable (D17.2) and there is no set
+for L2G or colocalisation. For row 18.

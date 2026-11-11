@@ -1,0 +1,171 @@
+# The seed list's locus 18, TMEM43 (3p25.1; the seed's genes "TMEM43; TMEM43/XPC"). Curated 2026-11-11, the second
+# run's eighth row. Lead rs1043943 (Liu 2021's longevity SNP in Chinese, Table 1), the seed's only rsID here: a 3' UTR
+# variant of TMEM43, in LD (r² 0.94 in CEU and CHB) with XPC's missense rs2228001; T 0.40 in Europeans, 0.32 in East
+# Asians. In Timmers 2019's, Zenin 2019's and Deelen 2019's summary statistics at the lead itself; not in Wright 2019's
+# S8 or S9. Liu's supplementary tables were listed by Europe PMC but not reachable by script (S2, S16 unread).
+locus_id: 18
+locus_name: TMEM43
+verdict: re-tiered
+verdict_reason: >-
+  Tier C, down from the seed's B: an unreplicated case-control comparison of the very old against younger controls,
+  which R-TIER-2 caps at C. Liu 2021 compared Chinese of the CLHLS survey aged 90 or more (4,662) with controls under
+  75 (3,828) in dataset 1, and centenarians (1,105) with controls under 65 (1,450) in dataset 2, the paper's earlier
+  GWAS less its overlap with dataset 1. T, the minor allele, goes with reaching old age: dataset 1 β 0.165 on the log
+  odds (P 4.2e-7), dataset 2 β 0.081 (printed P 0.016), meta-analysis β 0.146, P 3.59e-8, the paper's genome-wide
+  call (D17.3). Dataset 2 is inside that meta-analysis, so it is part of the genome-wide result, not a replication of
+  it; and dataset 1's custom chip took its first component, 11,893 SNPs, from dataset 2's own GWAS (whether the lead
+  entered that way is not read). Table 1's row does not agree with itself: its β and SE give P about 0.054 for
+  dataset 2 and about 5e-7 for the meta-analysis, so the genome-wide call rests on the printed P alone; the same
+  table's other loci reconcile (said to the lead). Outside China it does not replicate, and the null is
+  informative: the variant is as common in Europeans (T 0.40) and tags XPC's missense variant as well, yet Deelen
+  2019's 90th percentile gives β +0.007 (P 0.73; its confidence interval excludes both Liu's 0.146 and dataset 2's
+  0.081) and the 99th +0.005 (P 0.88). Timmers 2019's parental lifespan leans to T at P 0.057, short of 0.05, the
+  paper's own look-up saying the same; Zenin 2019's healthspan favours T at P 0.0035, nominal, in the same UK
+  Biobank. Neither lifts the cap: the same-class test is flat. Lifespan is filed 0; healthspan +, nominal;
+  exceptional survival + in Chinese only. The context is East Asian evidence (R-ANC-4). Liu's own survival analysis
+  of dataset 1 found nothing genome-wide beyond BRAF and BMPER; its value here (Table S16) is not read. Mechanism
+  general ageing: the paper points to XPC, a DNA-repair gene, and Parkinson's disease at P 0.045 is one uncorrected
+  test, no trade-off. Causal C4 and effector E4, no gene named: no longevity, lifespan or healthspan credible set
+  holds the lead in Open Targets (its 5 GWAS sets are arm impedance, hypertension and a repeat count, each led by
+  another variant), so there is no set for fine-mapping, L2G or colocalisation. XPC is the likely effector in
+  prose only: the lead tags XPC's missense variant and sits in 321 of XPC's expression and splicing QTL sets,
+  leading 43, and in none of TMEM43's. The protection is a presence: the minor T goes with longevity. Age of action
+  is unknown.
+axes:
+  tier: {value: C, cites: [pmid-33657282#q1, pmid-33657282#q2, pmid-33657282#q3, pmid-33657282#q4, pmid-33657282#q5, pmid-33657282#q6, pmid-33657282#q8, pmid-30642433#q56, pmid-30729179#q36, pmid-31413261#q37, pmid-31413261#q38, db-ensembl-116#q76, db-ensembl-116#q77, db-ensembl-116#q81, db-ensembl-116#q82]}
+  mechanism: {value: general_ageing, cites: [pmid-33657282#q7, pmid-33657282#q11]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "0", exceptional_survival: "+",
+            cites: [pmid-30729179#q36, pmid-30642433#q56, pmid-33657282#q2, pmid-33657282#q10, pmid-31413261#q37, pmid-31413261#q38]}
+  actionability: {label: descriptive, cites: [pmid-33657282#q7]}
+  context: {values: ["ancestry_specific:eas"], cites: [pmid-33657282#q3, pmid-33657282#q8, pmid-31413261#q37, db-ensembl-116#q76, db-ensembl-116#q77]}
+flags:
+  - {token: "PROTECT:PRESENCE", cites: [pmid-33657282#q2, db-ensembl-116#q76, db-ensembl-116#q77]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q188, db-opentargets-26.09#q194, db-opentargets-26.09#q195, db-opentargets-26.09#q196, db-opentargets-26.09#q197]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q188, db-opentargets-26.09#q189, db-opentargets-26.09#q190, db-opentargets-26.09#q191, db-opentargets-26.09#q192, db-opentargets-26.09#q193, db-opentargets-26.09#q194, pmid-33657282#q7]}
+variants:
+  - rsid: rs1043943
+    gene: ""
+    phenotype: TMEM43/XPC region, longevity in Chinese
+    trait_efo_id: OBA_VT0005372
+    effect_allele: T
+    effect_size: 0.146
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: C/C
+        state: neutral
+        conclusion: >-
+          You carry two copies of the more common version of this DNA region (about 46 in 100 people of East Asian
+          ancestry and 36 in 100 of European ancestry). It is the reference the other combinations are compared
+          with. The region, on chromosome 3, lies at the end of the TMEM43 gene, beside XPC, a DNA-repair gene, and it
+          is not yet settled which gene matters.
+      - genotype: C/T
+        state: protective
+        conclusion: >-
+          You carry one copy of a less common version of this DNA region (about 44 in 100 people of East Asian
+          ancestry and 48 in 100 of European ancestry do). In a Chinese study, people who reached 90 or 100 carried
+          this version a little more often than younger people. It has not been confirmed in an independent group, and
+          large European studies of the very old found no difference. It is early evidence, not a verdict.
+      - genotype: T/T
+        state: protective
+        conclusion: >-
+          You carry two copies of a less common version of this DNA region (about 10 in 100 people of East Asian
+          ancestry and 16 in 100 of European ancestry do). In a Chinese study, people who reached 90 or 100 carried
+          this version a little more often than younger people. It has not been confirmed in an independent group, and
+          large European studies of the very old found no difference. It is early evidence, not a verdict.
+studies:
+  - rsid: rs1043943
+    note: pmid-33657282
+    quote: q2
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: meta_analysis
+    population: Han Chinese (CLHLS; dataset 1 aged 90 or more against under 75, dataset 2 centenarians against under 65)
+    ancestry: [EAS]
+    sample_size: 11045
+    sample_unit: individuals
+    n_cases: 5767
+    age_min: 90
+    age_of: participant
+    stat_significance: significant
+    p_value: "3.59e-08"
+    p_value_num: 3.59e-08
+    effect_size: 0.146
+    effect_measure: beta
+    effect_unit: log odds of being a long-lived case, per T allele
+    effect_allele: T
+    direction: protective
+    statistical_test: "Fixed-effect meta-analysis of two case-control datasets (Table 1, q2, q3, q6): dataset 1 (4,662 cases aged 90+, 3,828 controls under 75) β 0.165, SE 0.033, P 4.24e-7; dataset 2 less its overlap (1,105 centenarians, 1,450 controls under 65) β 0.081, SE 0.042, printed P 0.016; meta β 0.146, SE 0.029, printed P 3.59e-8, the paper's call (D17.3). The printed β and SE give P about 0.054 and 4.8e-7 (inverse-variance pooling about 3e-7); not corrected here. Dataset 2 is the earlier GWAS whose SNPs seeded dataset 1's chip (q4, q5), so not an independent replication. No percentile stated; cases counted across both datasets"
+    curator: claude-opus-5-5
+  - rsid: rs1043943
+    note: pmid-30642433
+    quote: q56
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.056771135"
+    p_value_num: 0.056771135
+    effect_size: 0.00754867
+    effect_measure: beta
+    effect_unit: log hazard protection per T allele in self (positive = longer life)
+    effect_allele: T
+    direction: protective
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), direction ++ in UK Biobank and LifeGen; same allele as Liu, short of p < 0.05; Liu's own look-up gives 0.057 (pmid-33657282#q8)"
+    curator: claude-opus-5-5
+  - rsid: rs1043943
+    note: pmid-30729179
+    quote: q36
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "0.0035"
+    p_value_num: 0.0035
+    effect_size: 0.0145
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per C allele (positive = earlier)
+    effect_allele: C
+    direction: risk
+    statistical_test: "Zenin 2019's healthspan summary statistics, Z 2.916, -log10 P 2.45 (P about 0.0035, rounded from the file's -log10); C hastens the end of healthspan, so T delays it; not among the paper's 12 SNPs"
+    curator: claude-opus-5-5
+  - rsid: rs1043943
+    note: pmid-31413261
+    quote: q37
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.7268"
+    p_value_num: 0.7268
+    effect_size: 0.0069
+    effect_measure: beta
+    effect_unit: log odds of reaching the 90th percentile, per T allele
+    effect_allele: T
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008598), effective N 11,615; SE 0.0198, so the 95 % CI (about -0.032 to 0.046) excludes Liu's meta β 0.146 and dataset 2's 0.081"
+    curator: claude-opus-5-5
+  - rsid: rs1043943
+    note: pmid-31413261
+    quote: q38
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.8761"
+    p_value_num: 0.8761
+    effect_size: 0.0048
+    effect_measure: beta
+    effect_unit: log odds of reaching the 99th percentile, per T allele
+    effect_allele: T
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), effective N 4,524; null"
+    curator: claude-opus-5-5

@@ -431,3 +431,16 @@ The catalog's only association at rs117898573: Chang 2022's healthy ageing (GCST
 The catalog's three associations at rs10197246: Verma et al.'s skin melanoma in two analyses (GCST90479794, P 7 ×
 10⁻³²; GCST90475577, P 9 × 10⁻³⁹), T the risk allele; Harris et al.'s breast cancer (GCST90428116, P 3 × 10⁻⁶), C
 listed. Zenin's healthspan result is not in this record.
+
+> [q130] _embedded.associations[0] association_id 103236660 risk_frequency 0.389 pvalue_description pvalue_mantissa 3 pvalue_exponent -85 multi_snp_haplotype false snp_interaction false range [0.011-0.014] beta 0.0124 unit increase p_value 2.9999999999999996e-85 accession_id GCST90245848 pubmed_id 36224396 first_author Yengo L ci_lower 0.011 ci_upper 0.014
+
+> [q131] _embedded.associations[0].snp_effect_allele[0] rs1043943-T
+
+> [q132] _embedded.associations[1] association_id 80430607 risk_frequency NR pvalue_description pvalue_mantissa 4 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.09-0.203] beta 0.1464 unit increase p_value 4e-08 accession_id GCST012210 pubmed_id 33657282 first_author Liu X ci_lower 0.09 ci_upper 0.203
+
+> [q133] _embedded.associations[1].snp_effect_allele[0] rs1043943-T
+
+> [q134] page size 50 totalElements 2 totalPages 1 number 0
+
+The catalog's two associations at rs1043943 (row 18): Yengo et al.'s height (GCST90245848), T +0.0124, P 3 × 10⁻⁸⁵;
+Liu et al.'s longevity (GCST012210), T β 0.1464 (CI 0.09 to 0.203), P 4 × 10⁻⁸ (the paper's 3.59 × 10⁻⁸ rounded).

@@ -307,3 +307,27 @@ Hardy-Weinberg about 52 in 100 Europeans are C/C, 40 C/T and 8 T/T.
 Wright 2019's two nearby S8 SNPs (pmid-31484785#q47, q48): rs3754935's C is 0.073 in 1000 Genomes EUR; rs1009276's C
 (T/A/C on the forward strand, so Wright's G is the other strand's C) is 0.055. Between a 0.05 to 0.07 allele and the
 lead's 0.29 the largest possible r² is p₁(1 − p₂) / (p₂(1 − p₁)), about 0.19 and 0.14: neither is a tag.
+
+> [q75] . source Variants (including SNPs and indels) imported from dbSNP name rs1043943 ambiguity H var_class SNP most_severe_consequence 3_prime_UTR_variant minor_allele T MAF 0.310832
+
+> [q76] populations[96] allele_count 403 allele T population 1000GENOMES:phase_3:EUR frequency 0.400596421471173
+
+> [q77] populations[93] allele T allele_count 327 population 1000GENOMES:phase_3:EAS frequency 0.324404761904762
+
+> [q78] populations[26] frequency 0.4027 population gnomADg:nfe allele_count 27378 allele T
+
+> [q79] populations[21] allele T allele_count 1843 population gnomADg:eas frequency 0.357
+
+> [q80] mappings[0] coord_system chromosome allele_string T/A/C location 3:14141910-14141910 start 14141910 strand 1 seq_region_name 3 end 14141910 ancestral_allele C assembly_name GRCh38
+
+rs1043943 (row 18): a 3' UTR variant (of TMEM43), GRCh38 3:14,141,910, reference T (allele string T/A/C), ancestral C.
+T is 0.40 in 1000 Genomes EUR and gnomAD non-Finnish Europeans, 0.32 in 1000 Genomes EAS and 0.36 in gnomAD East
+Asians: common in both ancestries. By Hardy-Weinberg about 36 in 100 Europeans are C/C, 48 C/T and 16 T/T (EAS 46, 44,
+10). Open Targets' variant id is therefore 3_14141910_T_C, and its betas are per C.
+
+> [q81] [0] d_prime 0.999999 population_name 1000GENOMES:phase_3:CEU variation2 rs2228001 r2 0.938886 variation1 rs1043943
+
+> [q82] [0] variation1 rs1043943 variation2 rs2228001 r2 0.939824 population_name 1000GENOMES:phase_3:CHB d_prime 0.999999
+
+LD between rs1043943 and rs2228001 (XPC's missense variant, pmid-33657282#q7): r² 0.94, D' 1.0 in both 1000 Genomes CEU
+and CHB. The lead tags XPC's missense variant as well in Europeans as in Chinese. For row 18.
