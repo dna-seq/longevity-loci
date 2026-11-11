@@ -707,3 +707,28 @@ and T 0.16 (q190) at D′ 1 give r² 0.15 only with T inside A (the other phase 
 rs13141210's T. Row 67: rs61907878 r² 0.38, D′ 0.93 to rs61905747 (q191); its T 0.073 (q192) inside the lead's C
 0.151 (q193) gives about 0.4 at D′ 1 (the other phase about 0.01), so its C rides with the lead's A. Row 15: rs7609078
 r² 0.07 EUR (q194), 0.12 EAS (q195), not the lead's signal. Row 21: rs2271961's T is 0.76 in JPT (q196).
+
+## Reading 2026-11-11, record
+
+> [q197] populations[77] population 1000GENOMES:phase_3:EUR frequency 0.290258449304175 allele A allele_count 292
+
+> [q198] populations[3] population gnomADg:nfe allele_count 20521 allele A frequency 0.3024
+
+> [q199] populations[73] allele A allele_count 676 frequency 0.670634920634921 population 1000GENOMES:phase_3:EAS
+
+> [q200] mappings[0] location 5:29426329-29426329 ancestral_allele C assembly_name GRCh38 strand 1 start 29426329 end 29426329 allele_string A/C/T seq_region_name 5 coord_system chromosome
+
+> [q201] [0] variation1 rs649357 r2 1.000000 variation2 rs694966 d_prime 1.000000 population_name 1000GENOMES:phase_3:EUR
+
+> [q202] populations[78] frequency 0.290258449304175 population 1000GENOMES:phase_3:EUR allele_count 292 allele G
+
+> [q203] [327] population_name 1000GENOMES:phase_3:EUR r2 0.990377 variation2 rs983077 variation1 rs649357 d_prime 1.000000
+
+> [q204] [14] population_name 1000GENOMES:phase_3:EUR variation1 rs649357 variation2 rs631778 r2 1.000000 d_prime 1.000000
+
+rs649357 (row 31's lead, GRCh38 5:29,426,329): A 0.29 in 1000 Genomes EUR (q197), 0.30 in gnomAD non-Finnish
+Europeans (q198), 0.67 in EAS (q199), where it is the major allele. A triallelic site, A/C/T (q200), intergenic.
+Its EUR proxies (window listing, `ldwin-rs649357.json`): rs694966 r² 1.0, D′ 1 (q201), its G 0.29 in EUR (q202), so
+G travels with the lead's A; rs983077 r² 0.99 (q203); rs631778 r² 1.0 (q204). The window holds 56 SNPs at
+r² ≥ 0.8. The lead's own imputed frequency runs high in UK Biobank and LifeGen (0.39 to 0.40) and in NECS's controls
+(0.36), while its proxies sit at 0.31 in the same files. For row 31.

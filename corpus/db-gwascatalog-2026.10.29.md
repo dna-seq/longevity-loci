@@ -679,3 +679,16 @@ GWAS Catalog (2026-10-29), associations-rs36072649.json, two records. mvAge (Ros
 0.00595 "unit decrease", P 2e-8 (q200, q201), anchoring T as the allele lowering the factor. Smoking initiation
 (PMID 33082346, GCST011703): A, OR 0.978, P 1e-9 (q202-q204): the lead's A, the healthier-ageing allele, lowers
 smoking initiation, at the lead itself. For row 29.
+
+## Reading 2026-11-11, record
+
+> [q205] _embedded.associations[0] association_id 80754852 risk_frequency 0.6394 pvalue_description pvalue_mantissa 4 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [NR] beta 5.5010357 unit decrease p_value 4e-08 accession_id GCST012419 pubmed_id 33948810 first_author Gurinovich A
+
+> [q206] _embedded.associations[0].reported_trait[0] Longevity (100 years and older)
+
+> [q207] page size 50 totalElements 1 totalPages 1 number 0
+
+rs649357: one association in the catalog (q207), Gurinovich 2021 (GCST012419), "Longevity (100 years and older)"
+(q206), P 4e-8, risk frequency 0.6394 (NECS controls' C), "beta 5.5010357 unit decrease" (q205): the score Z, with
+C the risk allele, as at row 19. Its 56 proxies at r² ≥ 0.8 (`associations-<rsID>.json`, queried one by one)
+return no record (totalElements 0). No other trait is recorded on the haplotype. For row 31.

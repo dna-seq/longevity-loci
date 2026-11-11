@@ -1726,3 +1726,12 @@ chest, intensity), intervertebral disc disorder, visceral fat, lean mass, walkin
 platelet volume, potassium, cannabis use disorder, codeine use, reflux, and NMR lipid fractions (17 sets led by one
 variant, 4_139953606_G_A). Locus-to-gene names MAML3 first in all 69 (0.66 to 0.87). No direction is read from them
 (a set's beta is its lead's).
+
+## Reading 2026-11-11, record
+
+> [q470] data variant null
+
+rs649357 (5_29426329_A_C, and C_A): Open Targets 26.09 has no record of the variant under either order
+(`variant-sets-5_29426329_A_C.json`, `variant-sets-5_29426329_C_A.json`), nor of its r² 1.0 proxies rs694966
+(5_29427065, both orders) and rs631778 (5_29426240, both orders); the rsID search finds only unrelated variants on
+chromosome 15 (`search-rs649357.json`). No credible set, no locus-to-gene score: C4, E4. For row 31.
