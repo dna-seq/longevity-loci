@@ -29,6 +29,15 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   (`fetch-supp`, q17): its R2 column repeats Freq1 and its rsID/Proxy headers are swapped, so no r² is read from it.
   Wright's S8/S9 hold clumped "representative" SNPs only: a lead's absence there is not a null. Age MIDLIFE INFERRED
   (Joshi q9, at his SNP). Seed trade-off (hypothesised) not recorded.
+- **38 corrected** (2026-11-11), the lead's review (handout 20261111T004405Z-review-38) applied. Still B, now for
+  §4.1's tag clause: Wright S8 (AncestryDNA mothers 1886-1940) has rs3135006 (A = dbSNP's minor T, other strand) at
+  P 3.3e-4, S9 meta P 3.1e-5, het 0.32 (q23, q24); added as a nominal proxy study. Rules learned: search Wright S8/S9
+  by position near a lead, not only by rsID; an r² the lead review gives is checked against Ensembl's 1000 Genomes LD
+  (`rest.ensembl.org/ld/human/pairwise/A/B?population_name=1000GENOMES:phase_3:EUR`) and cited in prose until RM3
+  caches LD records (rs34831921 r² 0.97 EUR, rs3135006 0.38, D′ 1; rs3135006/rs3129720 CEU 1.0). No power claim
+  without a quote. Genotype text says "linked to" where no quote gives a direction. Age DIRECT_WEAK (Joshi q9 at a
+  SNP of r² ≈ 1). Exceptional survival kept 0: CHARGE P 0.003 at the tag is outweighed by the larger combined
+  samples (Timmers Fig 4 at the tag, Deelen at the lead). The "25 signals" line had no quote and is gone.
 - **81 FES/FURIN** (2026-11-11), tier A kept, advisor-checked. Lead rs6224 (Timmers 2019 Table 1, q18; PIP 0.22,
   C2); rs17514846 (Pilling) r² 0.92 from Open Targets' GCST009890 set, a proxy. Replication: Figure 2 source data
   sample b, P 0.013, the same pattern as 67 and 71. Effector E2 FES by L2G alone (FURIN 0.15; SMR names both, and SMR
