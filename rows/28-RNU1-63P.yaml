@@ -1,0 +1,193 @@
+# The seed list's locus 28, RNU1-63P (4q13.2). Curated 2026-11-11, the third ten-row run's sixth row. Lead rs28637671
+# (4:66,914,674 in GRCh38, 4:67,780,392 in GRCh37; the seed's lead), T/G, T at 0.71 in Europeans and 0.94 in East
+# Asians. A novel lead of Rosoff 2023's mvAge (Table 1, Supplementary Tables 6 and 7, locus 13). In Timmers 2019's,
+# Zenin 2019's and Deelen 2019's summary statistics at the lead itself; in Wright 2019's tables only through
+# rs1481245 (r² 0.51). The seed's second rsID, rs13141210 (111 kb away, r² 0.095), is a separate mvAge signal in the
+# same Rosoff locus; it is not read into this row's axes, and whether it gets a row of its own is put to the lead.
+locus_id: 28
+locus_name: RNU1-63P
+verdict: kept
+verdict_reason: >-
+  Tier B, as the seed has it: a genome-wide multivariate result with a co-occurring lifespan study (§4.5 as D16
+  reads it), and no independent replication at genome-wide strength; a multivariate result does not meet tier A's
+  first criterion (D18.3). Genome-wide only in Rosoff 2023's mvAge: T raises the factor (healthier ageing), P
+  1.95e-8, a lead new to the GWAS Catalog and more than 1 Mb from every input's loci. Timmers 2019's million parents'
+  lives are the co-occurring lifespan study: T lengthens life at P 5.8e-4, UK Biobank and LifeGen on the same side,
+  an mvAge input and not a replication. That result is the lead's own, not the shadow of rs13141210, the locus's
+  other mvAge signal: at r² 0.095 rs13141210's lifespan z of 4.4 could give the lead at most about 1.4, against the
+  3.4 observed. The one look outside mvAge's inputs is AncestryDNA in Wright 2019, through rs1481245, a weak proxy
+  (r² 0.51, D′ 0.99; its A rides with the lead's T by frequency and r²): fathers put A on the longer-lived side at
+  raw P 0.016, mothers the same side at 0.065, and UK Biobank's arm agrees (heterogeneity P 0.69), so no red flag.
+  That supports the direction but is nominal, at a weak proxy that also carries some of rs13141210 (r² 0.23), and it
+  cannot lift the tier. The SNPs strongest in Wright's tables here (rs11947612, rs923994) have r² below 0.05 to the
+  lead and belong to rs13141210's side. Healthspan agrees: T delays the end of healthspan in Zenin 2019 (P 0.010)
+  and lowers frailty (P 2.7e-5), both mvAge inputs, healthspan-class (D17.1). Exceptional survival is +: Deelen
+  2019's summary statistics favour T at the 90th (P 0.0030) and the 99th percentile (P 0.0082, a subset of the
+  90th's cases), the 90th an mvAge input, so neither replicates it. The mechanism is unknown, filed as general
+  ageing: Rosoff finds no earlier genome-wide association for the SNP, the GWAS Catalog records only mvAge, and Open
+  Targets 26.09 has no record of the variant, so no other trait is known and no trade-off can be read (D18.1);
+  nothing at the lead can be acted on, so descriptive. Causal and effector confidence are C4 and E4, with no gene
+  (§4.2): Open Targets has no record of the variant under either allele order, so no lifespan-class set holds it, and
+  mvAge's set nearby is led by rs13141210. RNU1-63P and RNU6-699P are small-RNA pseudogenes that name the locus,
+  not an effector. The protection is the absence of the risk allele: G is the minor one (0.29) and goes with less
+  healthy ageing, so T/T, the most common genotype (about 51 in 100), is the reference (§6.2), as at rows 14 and 20.
+  Age of action is unknown: no cached source gives this locus's own age bands. The evidence is European; T is common
+  in East Asians (0.94), untested there.
+  rs13141210, the seed's second rsID here, looks like a B of its own under D16 (mvAge 1.5e-8, T healthier; lifespan
+  T P 9e-6), with AncestryDNA support at good proxies (rs2164300 r² 0.94, rs12506221 r² 0.86, nominal in fathers and
+  mothers) and its own traits (education, body fat, smoking): put to the lead.
+axes:
+  tier: {value: B, cites: [pmid-37550455#q27, pmid-37550455#q29, pmid-37550455#q30, pmid-37550455#q31, pmid-37550455#q2, pmid-37550455#q3, pmid-37550455#q5, pmid-30642433#q81, pmid-30642433#q82, db-ensembl-116#q154, pmid-31484785#q61, pmid-31484785#q62, pmid-30642433#q83, db-ensembl-116#q155, db-ensembl-116#q156, db-ensembl-116#q157, db-ensembl-116#q158, db-ensembl-116#q159, db-ensembl-116#q160, db-gwascatalog-2026.10.29#q195, db-gwascatalog-2026.10.29#q196]}
+  mechanism: {value: general_ageing, cites: [pmid-37550455#q27, pmid-37550455#q31, db-gwascatalog-2026.10.29#q197, db-opentargets-26.09#q437]}
+  pleiotropy: {values: [], cites: [pmid-37550455#q27, db-gwascatalog-2026.10.29#q197, db-opentargets-26.09#q437]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
+            cites: [pmid-30729179#q45, pmid-37550455#q30, pmid-30642433#q81, pmid-31413261#q70, pmid-31413261#q71]}
+  actionability: {label: descriptive, cites: [pmid-37550455#q27, db-gwascatalog-2026.10.29#q197, db-opentargets-26.09#q437]}
+  context: {values: [eur_only_evidence], cites: [pmid-37550455#q5, pmid-30642433#q81, db-ensembl-116#q153]}
+flags:
+  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-37550455#q30, pmid-30642433#q81, db-ensembl-116#q151, db-ensembl-116#q152]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q437, db-opentargets-26.09#q413, db-opentargets-26.09#q438, db-ensembl-116#q154]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q437, db-opentargets-26.09#q413, db-opentargets-26.09#q438]}
+variants:
+  - rsid: rs28637671
+    gene: ""
+    phenotype: RNU1-63P region, ageing
+    trait_efo_id: EFO_0007796
+    effect_allele: T
+    effect_size: 0.0063
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: T/T
+        state: neutral
+        conclusion: >-
+          You carry two copies of the more common version of this DNA region (about 51 in 100 people of European
+          ancestry do). It is the reference the other combinations are compared with. The region, on chromosome 4,
+          lies between genes, and what it does is not known. The finding comes from people of European ancestry;
+          less is known elsewhere.
+      - genotype: G/T
+        state: risk
+        conclusion: >-
+          You carry one copy of a less common version of this DNA region (about 41 in 100 people of European
+          ancestry do). In a very large European study that combined healthspan, long life and other measures of
+          ageing, this version went with slightly less healthy ageing, and parents of carriers lived a little less
+          long. It is a likely finding, not a settled one: it has not yet been confirmed in a separate group of
+          people. What the region does is not known. The effect is small and it is a tendency, not destiny.
+      - genotype: G/G
+        state: risk
+        conclusion: >-
+          You carry two copies of a less common version of this DNA region (about 8 in 100 people of European
+          ancestry do). In a very large European study that combined healthspan, long life and other measures of
+          ageing, each copy went with slightly less healthy ageing, and parents of carriers lived a little less
+          long. It is a likely finding, not a settled one: it has not yet been confirmed in a separate group of
+          people. What the region does is not known. The effect is small and it is a tendency, not destiny.
+studies:
+  - rsid: rs28637671
+    note: pmid-37550455
+    quote: q30
+    phenotype_class: MULTIVARIATE_AGEING
+    study_design: multivariate_healthspan_lifespan
+    population: European (the five input GWAS, UK Biobank and LifeGen among them; effective n 1,958,774)
+    ancestry: [EUR]
+    stat_significance: significant
+    p_value: "1.95e-08"
+    p_value_num: 1.95e-08
+    effect_size: 0.006329202
+    effect_measure: beta
+    effect_unit: mvAge factor per T allele (no conventional unit; positive = healthier ageing)
+    effect_allele: T
+    direction: protective
+    statistical_test: "Genomic SEM common-factor GWAS of healthspan, frailty, exceptional longevity, parental lifespan and PhenoAge acceleration (Supplementary Table 7, effect allele first; Table 1, q27, the same; Table 6 marks it novel, q29, and prints the alleles the other way round; new to the GWAS Catalog, q31); SE 0.00113; the inputs per T, recoded so positive is healthier: frailty P 2.7e-5, extreme longevity 0.0030, healthspan 0.010, PhenoAge 0.95, lifespan 5.8e-4; pools the samples of the component studies, not a replication (q5)"
+    curator: claude-opus-5-5
+  - rsid: rs28637671
+    note: pmid-30642433
+    quote: q81
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 640183
+    sample_unit: lives
+    stat_significance: nominal
+    p_value: "0.00058013538"
+    p_value_num: 0.00058013538
+    effect_size: 0.01498111
+    effect_measure: beta
+    effect_unit: beta1 on parental lifespan per T allele, longer positive
+    effect_allele: T
+    direction: protective
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), SE 0.0044, z 3.44, direction ++ in UK Biobank and LifeGen, info 0.99; the co-occurring lifespan study (D16), an mvAge input and not a replication; not rs13141210's shadow (r² 0.095, db-ensembl-116#q154; its z 4.44, q82, bounds the lead's at about 1.4)"
+    curator: claude-opus-5-5
+  - rsid: rs28637671
+    note: pmid-31484785
+    quote: q61
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_linear
+    population: AncestryDNA customers' fathers (mostly European American)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.01618"
+    p_value_num: 0.01618
+    proxy_rsid: rs1481245
+    effect_size: -0.006164
+    effect_measure: beta
+    effect_unit: fathers' lifespan per G allele of rs1481245 (printed label A, read as the other allele, derived; positive = longer)
+    effect_allele: G
+    direction: risk
+    statistical_test: "Supplemental Table 9, the AncestryDNA arm of the fathers' meta-analysis, raw P (SE 0.0026; genomic-control P not printed); the counted allele derived from the UK Biobank arm's sign (−0.0078, P 0.0005) against Timmers' summary statistics at rs1481245 (pmid-30642433#q83, A longer); rs1481245 r² 0.51, D′ 0.99 to the lead, its A with the lead's T by frequency and r² (db-ensembl-116#q155, q157, q158), a weak proxy that also has r² 0.23 to rs13141210; the same side as the discovery; mothers' arm the same side, raw P 0.065 (q62); heterogeneity with UK Biobank's arm P 0.69, so no red flag (D21); independent of mvAge's inputs; meta P 1.4e-4 (n 698,000) includes UK Biobank"
+    curator: claude-opus-5-5
+  - rsid: rs28637671
+    note: pmid-30729179
+    quote: q45
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "0.010"
+    p_value_num: 0.0103
+    effect_size: 0.0141
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per G allele (positive = earlier)
+    effect_allele: G
+    direction: risk
+    statistical_test: "Zenin 2019's healthspan summary statistics, SE 0.00551, Z 2.566, −log10 P 1.988 (P about 0.010, from the file's −log10); an mvAge input, the same sample"
+    curator: claude-opus-5-5
+  - rsid: rs28637671
+    note: pmid-31413261
+    quote: q70
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.002998"
+    p_value_num: 0.002998
+    effect_size: 0.0641
+    effect_measure: beta
+    effect_unit: log odds of reaching the 90th percentile, per T allele
+    effect_allele: T
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008598), SE 0.0216, effective N 11,615; an mvAge input (its extreme-longevity column), not a replication"
+    curator: claude-opus-5-5
+  - rsid: rs28637671
+    note: pmid-31413261
+    quote: q71
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.008177"
+    p_value_num: 0.008177
+    effect_size: 0.0889
+    effect_measure: beta
+    effect_unit: log odds of reaching the 99th percentile, per T allele
+    effect_allele: T
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), SE 0.0336, effective N 4,524; the 99th-percentile cases are a subset of the 90th's, an mvAge input, so not a replication"
+    curator: claude-opus-5-5

@@ -1618,3 +1618,21 @@ Row 27, second pass. Shi 2024's systolic set led by rs17499404 (`credibleSet-d9b
 q416-q418): the lead's PIP 0.080 (q434), locus-to-gene KLF3 0.76 (q435); the lymphocyte set's KLF3 0.75 (q436). The
 lymphocyte set's β +0.0122 is per rs6812640's G, which rides with the lead's A (db-ensembl-116#q147-q149): A raises
 the lymphocyte percentage. Not a lifespan-class set, so KLF3 stays in prose (C4/E4 by the longevity-set rule).
+
+## Reading 2026-11-11, record
+
+> [q437] data variant null
+
+> [q438] data.study.credibleSets.rows[7].variant id 4_67025923_C_T
+
+> [q439] data.variant.credibleSets.rows[11] studyLocusId b259a8c151c1cc7b64f298d055f9966e pValueMantissa 1 pValueExponent -8 beta 0.005833901 finemappingMethod PICS
+
+> [q440] data.variant.credibleSets.rows[11].study id GCST90321079 traitFromSource Aging studyType gwas
+
+Row 28. rs28637671 has no record in Open Targets 26.09 under either allele order (q437: `variant-4_66914674_T_G.json`
+and `variant-4_66914674_G_T.json` both return null), so no credible set of any study can hold it, and the
+lifespan-class query returns none (`credibleSets-longevity8-4_66914674_T_G.json`, count 0). mvAge's set near it
+(q413's listing, `study-sets-GCST90321079.json`) is led by rs13141210 (4_67025923_C_T, q438), a separate signal
+(r² 0.095, db-ensembl-116#q154). So causal C4 and effector E4 for row 28, no gene. rs13141210 (for the question on its
+own row): 17 sets, mvAge's among them (PICS, P 1e-8, q439, q440), the rest body fat and BMI, education, smoking,
+COPD, HDL (`variant-4_67025923_C_T.json`).

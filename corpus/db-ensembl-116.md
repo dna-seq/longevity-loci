@@ -562,3 +562,39 @@ Row 27, second pass. Wright 2019's S9 SNPs within 20 kb of rs17499404 that are s
 rs2291433 (rs12646716, rs1487624, rs11732737, rs7668402) tag the lead weakly, r² 0.29 to 0.40 (q143-q146): none is a
 proxy, so they are not scored at this lead. rs6812640, the lymphocyte set's lead, is r² 0.996 (q147); its G (0.544,
 q149) against the lead's A (0.545) fits r² 0.996 only coupled (opposed at most about 0.70), so G rides with A.
+
+## Reading 2026-11-11, record
+
+> [q150] mappings[0] assembly_name GRCh38 ancestral_allele G allele_string T/G strand 1 seq_region_name 4 location 4:66914674-66914674 coord_system chromosome end 66914674 start 66914674
+
+> [q151] populations[76] frequency 0.711729622266402 population 1000GENOMES:phase_3:EUR allele T allele_count 716
+
+> [q152] populations[77] frequency 0.288270377733598 population 1000GENOMES:phase_3:EUR allele G allele_count 290
+
+> [q153] populations[72] allele G population 1000GENOMES:phase_3:EAS frequency 0.056547619047619 allele_count 57
+
+> [q154] [0] population_name 1000GENOMES:phase_3:EUR d_prime 0.481487 r2 0.094647 variation2 rs13141210 variation1 rs28637671
+
+> [q155] [0] population_name 1000GENOMES:phase_3:EUR r2 0.511422 d_prime 0.992755 variation2 rs1481245 variation1 rs28637671
+
+> [q156] [194] population_name 1000GENOMES:phase_3:EUR r2 0.050020 d_prime 0.784871 variation2 rs1471564 variation1 rs28637671
+
+> [q157] populations[77] allele_count 441 population 1000GENOMES:phase_3:EUR allele G frequency 0.438369781312127
+
+> [q158] populations[78] allele A population 1000GENOMES:phase_3:EUR frequency 0.561630218687873 allele_count 565
+
+> [q159] [0] d_prime 0.950285 variation2 rs11947612 variation1 rs13141210 r2 0.531816 population_name 1000GENOMES:phase_3:EUR
+
+> [q160] [0] population_name 1000GENOMES:phase_3:EUR variation1 rs13141210 variation2 rs923994 r2 0.241004 d_prime 0.935129
+
+rs28637671 (RNU1-63P / RNU6-699P, 4q13.2), for row 28: 4:66,914,674 (GRCh38; 4:67,780,392 in GRCh37), T/G, G
+ancestral (q150). T is 0.712 in 1000 Genomes Europeans (q151, q152; gnomAD non-Finnish 0.725), 0.94 in East Asians
+(q153), 0.55 in Africans: common everywhere, G the minor allele. Under Hardy-Weinberg in Europeans: T/T about 51 in
+100, T/G about 41, G/G about 8. Linkage disequilibrium (EUR): rs13141210, the locus's other mvAge SNP, r² 0.095
+(D′ 0.48), a separate signal (q154). rs1481245 r² 0.51, D′ 0.99 (q155); phase by frequency and r² ceilings: its G
+(0.44) and the lead's G (0.29) coupled allow r² up to about 0.52, opposed about 0.32 (with D′ near 1), so the observed
+0.51 puts G with G and its A with the lead's T. The window listing around the lead (`ldwin-rs28637671.json`, ±100 kb,
+r² floor requested 0.001) reports nothing below 0.050 (q156 its least value); the endpoint applies its own floor.
+rs11947612 and rs923994 are absent from it although both are in the panel (q159, q160, read against rs13141210), and
+the pairwise reads of the lead against them return nothing (`ld-` and `ld0-` files rendered to no text): their r² to
+the lead is below 0.05. rs1481245's frequencies: q157, q158.

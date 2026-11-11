@@ -639,3 +639,15 @@ Row 27 (LINC02513). associations-rs17499404: five records. Rosoff 2023's mvAge (
 q189, q190) and Timmers 2020's multivariate scan (A, P 4e-8; q191, q192); Shi 2024's systolic (P 7e-18) and
 diastolic (P 1e-12) pressure, allele unstated (their direction is read from Open Targets' sets led by the variant,
 db-opentargets-26.09#q416-q421); a white-cell latent factor (Zhou 2025, P 6e-10, allele unstated; q193).
+
+## Reading 2026-11-11, record
+
+> [q195] _embedded.associations[0] association_id 131476424 risk_frequency NR pvalue_description pvalue_mantissa 2 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.0041-0.0085] beta 0.006329202 unit increase p_value 2e-08 accession_id GCST90321079 pubmed_id 37550455 first_author Rosoff DB
+
+> [q196] _embedded.associations[0].snp_effect_allele[0] rs28637671-T
+
+> [q197] page size 50 totalElements 1 totalPages 1 number 0
+
+Row 28. associations-rs28637671: one record, Rosoff 2023's mvAge (T "unit increase", P 2e-8; q195, q196, q197).
+No other trait is recorded for the variant. rs13141210 (associations-rs13141210): mvAge (P 1e-8) and cigarettes per
+day (Koskeridis 2022, MTAG, P 3e-11).
