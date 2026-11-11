@@ -70,6 +70,8 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
   it. Effect alleles are harmonised to the lifespan-increasing allele (D17.4).
 - A study may print a Z, not a beta (19 HMGB3P12, Gurinovich 2021; the GWAS Catalog files that Z as "beta").
   Check the format's effect_measure takes a Z score, else the export leaves effect_size empty, never a beta.
+  An effect size may also be derived by the curator (31 LINC02064, a crude OR from printed frequencies, D25.10,
+  said in effect_unit and the test): check the format has a place to say derived, so it never reads as printed.
 - The first tier D row (26 GPR78, 4970b24): a genome-wide hit contradicted by a powered null. Check how the
   requirements carry tier D into the module (research view, flags, no direction a report would read as advice).
   The lead settled the row side (D25.1, D25.2, 80b7691): D holds and every genotype of a tier D row is neutral.
