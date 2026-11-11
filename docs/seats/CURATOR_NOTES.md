@@ -172,7 +172,10 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   genome-wide 90th percentile hit (rs7676745 A, OR 0.67, P 4.3e-8) has a powered null in its own UK Biobank
   validation (parental 90th percentile OR 0.98, P 0.67; power about 1.00, heterogeneity P about 3e-6, or 0.0004 at half
   the effect), and LifeGen and both rare neighbours lean the other way: D22.3's flat European look-up and §4.1's
-  USP42/TMTC2 example. The 71/67 rule's "caps at B" reads the other way; the first D row, so asked. Genotype states
+  USP42/TMTC2 example (Sebastiani 2017's genome-wide hits, null in Timmers' parental data at their published
+  effects, Figure 2 source data). The 71/67 rule's "caps at B" and Deelen's caveat on phenotype and imputation panels
+  read the other way; D22.3 applies by analogy only (written for a cross-ancestry null); the first D row, so asked.
+  Format gap: R-TIER-1 pairs D with neutral genotypes, but the check allows all-neutral only for `contested`. Genotype states
   kept from the discovery (G/G neutral, A risk), since D is research view only; exceptional survival filed 0, not +.
   Deelen's parental longevity line is filed EXTREME_SURVIVAL_CC with `percentile_case_control_p90` (no parental
   class has a 90th percentile cut). Learned: a quote ending in "." fails when the cache runs the next word on with no
