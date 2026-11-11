@@ -56,9 +56,11 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
 ## Open
 
 - Avatar: set 2026-11-10, a beaver stacking labelled blocks, drawn by agents-kit/tooling (639270008).
-- Token for the polygon: the person answered desk #251 with option 2: the seat registers a new account on the
-  test instance only (never prod), once; the token stays in the plugin's local settings, never in the repo. Done on
-  waking, not while the seat sleeps; rehearsals still wait on the plugin's move to format 0.8 (the polygon's 409).
+- Polygon account: registered 2026-11-11 on the person's answer to desk #251 (option 2): account `longevity-loci`,
+  test instance only, `registry_whoami` accepts it. Token and install-id live in the plugin's local state on this
+  machine, never in the repo. No namespace claimed yet (a claim is irreversible; pick it to match the production
+  namespace when a rehearsal is near). Polygon at registry 0.29.1 serving format 0.8.4, so contract_compatible is
+  false for the plugin's 0.7.1: no rehearsal until the plugin moves to 0.8.
 - `first seating:` report to the seat-builder: sent.
 - On waking: read `docs/format08_reference/` (just-dna-format 0.8's longevity reference example and the compiler's longevitymap v2 shape audit; the lead, 639310707). It notes Timmers 2019 contradicting itself on effect alleles (639310710), which bears on LPA and CELSR2.
 - For the projection, on waking: rows at effector E3 name no gene (`gene: ""`, 57, 67, 80; requirements §4.2/§6.2),
