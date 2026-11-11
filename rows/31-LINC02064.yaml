@@ -8,18 +8,17 @@ locus_id: 31
 locus_name: LINC02064
 verdict: re-tiered
 verdict_reason: >-
-  Tier C, down from the seed's B, held there while B is put to the lead. By D25.1 the row would be B, capped by a
-  powered null (D21): a genome-wide centenarian result replicated nominally in a European sample independent as far
-  as both papers show, against a flat parental-lifespan look-up that is a red flag under both of Timmers'
-  calibrations (D25.3). Two things hold it at C. §6.3 asks a study supporting B for an effect size, and NECS prints
-  none (only a crude odds ratio derived from its frequencies, below); and `check rows` lifts R-TIER-2 only on a second
-  genome-wide study, not on D22.2's nominal scoring-class replication. Gurinovich 2021 compared 1,320 New England Centenarian Study
+  Tier B, the seed's, kept and capped there by a powered null (D21, D25.10): a genome-wide centenarian result
+  replicated nominally in a European sample independent as far as both papers show, against a flat parental-lifespan
+  look-up that is a red flag under both of Timmers' calibrations (D25.3), so replication_failed. NECS prints no
+  effect size; the row enters the crude odds ratio derived from its printed allele frequencies (below), as D25.10
+  asks. Gurinovich 2021 compared 1,320 New England Centenarian Study
   centenarians (median age 104) with 2,899 controls of European ancestry, imputed to the HRC panel. The controls are
   306 NECS referents, unrelated people whose parents died before the median age of their birth cohort, and 2,593
   controls from Illumina's repository of samples used as controls in many GWASs, matched to NECS's ancestry by
   principal components; their ages and the studies they came from are not given. C, the coded allele, is in 57.9 %
   of the centenarians' alleles and 63.9 % of the controls', score Z −5.50, P 3.78e-8, so A goes with reaching 100
-  (crude odds ratio about 1.29 per A, derived from the frequencies, not printed), past the paper's 5e-8 threshold.
+  (crude odds ratio 1.29 per A, derived from the frequencies as (0.4208/0.5792)/(0.3606/0.6394), not printed), past the paper's 5e-8 threshold.
   Supplement Table 1 lists all 33 SNPs past it, and this one stands alone, just past the cut (|Z| 5.45). Its proxies
   at r² ≥ 0.99 are not listed, which is weak evidence that the signal rests on the lead's own imputed calls: the lead
   is only 0.05 Z past the cut, in-sample noise between r² 0.99 proxies is about 0.1 Z, and strand-ambiguous SNPs were
@@ -41,7 +40,7 @@ verdict_reason: >-
   (NECS's rs429358 against LifeGen's, factor about 9.4, derived from crude odds ratios), NECS predicts about +0.027 on
   Timmers' scale: one-sided power about 1.00 (0.95 at half the effect), heterogeneity P about 1e-5 (0.002 at half).
   With the loci's mean factor (0.42 of APOE's) it predicts about +0.065: power about 1.00, heterogeneity P about 1e-7
-  (3e-6 at half). A red flag under both (D21, D25.3), which would cap the row at B; it is not D, because an independent
+  (3e-6 at half). A red flag under both (D21, D25.3), which caps the row at B; it is not D, because an independent
   scoring-class study gives p < 0.05 the discovery's way (D25.1). Zenin 2019's healthspan is null at the lead and its
   proxies (P 0.86 to 0.97). Lifespan is filed 0, healthspan 0, exceptional survival + on NECS and Deelen. The
   evidence is European. Mechanism general ageing: the GWAS Catalog records no other trait for the lead or any of its
@@ -50,7 +49,7 @@ verdict_reason: >-
   presence: the minor A goes with reaching 100. Age of action is unknown; the signal shows at the oldest ages and not
   in parental lifespan, which fits a late effect but does not show one.
 axes:
-  tier: {value: C, cites: [pmid-33948810#q1, db-gwascatalog-2026.10.29#q139, pmid-33948810#q3, pmid-33948810#q5, pmid-33948810#q6, pmid-33948810#q7, pmid-33948810#q8, pmid-31413261#q76, pmid-31413261#q77, pmid-31413261#q78, pmid-31413261#q80, pmid-31413261#q85, pmid-31413261#q86, pmid-31413261#q87, pmid-33948810#q9, pmid-33948810#q10, pmid-33948810#q11, pmid-33948810#q12, pmid-33948810#q13, pmid-33948810#q14, pmid-33948810#q15, pmid-33948810#q16, pmid-33948810#q17, db-ensembl-116#q219, pmid-30642433#q92, pmid-30642433#q87, pmid-30642433#q88, pmid-30642433#q89, pmid-30642433#q90, pmid-30642433#q91, db-ensembl-116#q197, db-ensembl-116#q198, db-ensembl-116#q201, db-ensembl-116#q202, db-ensembl-116#q203, db-ensembl-116#q204]}
+  tier: {value: B, cites: [pmid-33948810#q1, db-gwascatalog-2026.10.29#q139, pmid-33948810#q3, pmid-33948810#q5, pmid-33948810#q6, pmid-33948810#q7, pmid-33948810#q8, pmid-31413261#q76, pmid-31413261#q77, pmid-31413261#q78, pmid-31413261#q80, pmid-31413261#q85, pmid-31413261#q86, pmid-31413261#q87, pmid-33948810#q9, pmid-33948810#q10, pmid-33948810#q11, pmid-33948810#q12, pmid-33948810#q13, pmid-33948810#q14, pmid-33948810#q15, pmid-33948810#q16, pmid-33948810#q17, db-ensembl-116#q219, pmid-30642433#q92, pmid-30642433#q87, pmid-30642433#q88, pmid-30642433#q89, pmid-30642433#q90, pmid-30642433#q91, db-ensembl-116#q197, db-ensembl-116#q198, db-ensembl-116#q201, db-ensembl-116#q202, db-ensembl-116#q203, db-ensembl-116#q204]}
   mechanism: {value: general_ageing, cites: [db-gwascatalog-2026.10.29#q207, db-opentargets-26.09#q470]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -60,6 +59,7 @@ axes:
   context: {values: [eur_only_evidence], cites: [db-gwascatalog-2026.10.29#q139, pmid-31413261#q76, db-ensembl-116#q199]}
 flags:
   - {token: "PROTECT:PRESENCE", cites: [pmid-33948810#q6, db-ensembl-116#q197]}
+  - {token: replication_failed, cites: [pmid-30642433#q87, pmid-30642433#q88, pmid-30642433#q92]}
   - {token: "causal:C4", cites: [db-opentargets-26.09#q470]}
   - {token: "effector:E4", cites: [db-opentargets-26.09#q470, db-gwascatalog-2026.10.29#q205]}
 variants:
@@ -106,9 +106,12 @@ studies:
     stat_significance: significant
     p_value: "3.78E-08"
     p_value_num: 3.78e-08
+    effect_size: 1.288
+    effect_measure: OR
+    effect_unit: "crude odds of reaching 100 per A allele, derived here (D25.10), not printed: (0.4208/0.5792)/(0.3606/0.6394) from the cases' and controls' printed C frequencies, unadjusted for the score test's covariates"
     effect_allele: A
     direction: protective
-    statistical_test: "Score test (Supplement Table 1, q3, q6): C, the coded allele, in 0.5792 of cases' and 0.6394 of controls' alleles, score Z -5.50, P 3.78e-8; HRC-imputed (q1). No effect size printed: the GWAS Catalog's beta 5.501 is this Z (db-gwascatalog-2026.10.29#q205). Crude odds ratio per A about 1.29, derived. Supplement Table 1 lists every SNP past the paper's 5e-8 (q7, q13, q14); none of the 15 proxies at r² >= 0.99 is listed, weak evidence that the signal rests on the lead's imputed calls (the lead 0.05 Z past the cut, in-sample noise between r² 0.99 proxies about 0.1 Z, strand-ambiguous SNPs removed, q17; the lead's A 0.361 in controls against 0.29 to 0.31 elsewhere). Controls: 306 NECS referents and 2,593 Illumina repository controls (q9-q12). The LGP prints no value (main Table 2, q15; LGP 312/638, q16). Not among Supplement Table 2's SNPs with Ashkenazi results (q5)"
+    statistical_test: "Score test (Supplement Table 1, q3, q6): C, the coded allele, in 0.5792 of cases' and 0.6394 of controls' alleles, score Z -5.50, P 3.78e-8; HRC-imputed (q1). No effect size printed: the GWAS Catalog's beta 5.501 is this Z (db-gwascatalog-2026.10.29#q205). Crude odds ratio per A 1.288, derived from those frequencies (effect_unit), not printed. Supplement Table 1 lists every SNP past the paper's 5e-8 (q7, q13, q14); none of the 15 proxies at r² >= 0.99 is listed, weak evidence that the signal rests on the lead's imputed calls (the lead 0.05 Z past the cut, in-sample noise between r² 0.99 proxies about 0.1 Z, strand-ambiguous SNPs removed, q17; the lead's A 0.361 in controls against 0.29 to 0.31 elsewhere). Controls: 306 NECS referents and 2,593 Illumina repository controls (q9-q12). The LGP prints no value (main Table 2, q15; LGP 312/638, q16). Not among Supplement Table 2's SNPs with Ashkenazi results (q5)"
     curator: claude-opus-5-5
   - rsid: rs649357
     note: pmid-31413261
