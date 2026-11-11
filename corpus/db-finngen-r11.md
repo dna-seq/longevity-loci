@@ -71,5 +71,7 @@ rs7742789, alt T (0.29 in Finns): β −0.0018 (SE 0.0081), P 0.83 (q11), T lean
 the other way from the discovery; its tag rs1214759, alt G: β +0.0016, P 0.84 (q12), the same null. Calibrated
 within FinnGen against Timmers' self-scale β (T −0.0224, pmid-30642433#q214), D25.3's two factors (derived): APOE's
 (rs429358 C 0.1048 here, q4, against Timmers' 0.1056, pmid-30642433#q90; factor 0.99) predicts T +0.022, power about
-0.86, heterogeneity P about 0.009; the loci's mean (0.42 of APOE's, pmid-30642433#q92) predicts +0.0093, power about
-0.31, heterogeneity P about 0.18. Only the APOE factor flags it, so it is no red flag (D25.3). For row 40.
+0.86, heterogeneity P about 0.009: it flags. The second calibration, as D25.12 reads it for FinnGen, is a mean over
+leads that hold up within FinnGen, which is not computed here, so whether this is a red flag is unknown. (Borrowing
+Figure 4's mean, 0.42 of APOE's, pmid-30642433#q92, would predict +0.0093, power about 0.31, heterogeneity P about
+0.18; that factor was derived for other scales and is not D25.12's.) For row 40.

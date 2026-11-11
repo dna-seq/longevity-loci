@@ -2015,8 +2015,8 @@ hypertension sets hold the lead behind neighbours whose phase is not read; their
 
 > [q564] data.variant.credibleSets.rows[16] studyLocusId 23ede60ead5c87b6bc315565b1f08f38 studyId GCST90475480 pValueMantissa 1.7639963626861572 pValueExponent -35 beta -0.03466723776087834 finemappingMethod SuSiE-inf data.variant.credibleSets.rows[16].study traitFromSource magnesium (Mg, mean, inv-norm transformed) projectId GCST
 
-rs7742789 is 6_43378065_C_T, alt T (q550); `beta` is per T, as the catalog's line for the heart-failure accession
-GCST90455657 prints the same T +0.0307. 172 credible sets hold it (q551;
+rs7742789 is 6_43378065_C_T, alt T (q550); `beta` is per T at the sets it leads (anchored on two SuSiE-inf sets
+against the catalog, below, q557, q564). 172 credible sets hold it (q551;
 `variant-sets-p0/p1-6_43378065_C_T.json`), 34 of them led by it; none is a lifespan, healthspan, longevity or
 current-age study: the eight such studies hold no set with it (q552, `credibleSets-longevity8-6_43378065_C_T.json`),
 and mvAge's 26 sets (q413, re-cached as `study-sets-GCST90321079.json`) include none on 6p21.1. So causal C4,
@@ -2030,3 +2030,39 @@ q563), and lowers serum magnesium (−0.035, P 2 × 10⁻³⁵, PIP 0.74, q564).
 nitrogen (lower per T), heart rate, actinic keratosis and skin cancer (higher per T), alanine and HSPG2. Locus-to-gene
 on these sets favours TJAP1 (about 0.8 on the kidney and blood-pressure SuSiE sets) or CRIP3 (about 0.47 on the PICS
 sets), ZNF318 at most 0.42; named only, since no lifespan-class set exists to read an effector from. For row 40.
+
+## Reading 2026-11-11, record
+
+The chronic kidney disease sets that hold row 40's lead behind a neighbour, from the same `variant-sets` files, and
+those neighbours' records (`variant-<id>.json`). Each set's `beta` is its own lead's, per that lead's alt allele.
+
+> [q565] data.variant.credibleSets.rows[13] studyLocusId 1c2163e9fb3b99ae0f05ecfbd65eb985 studyId GCST90480387 pValueMantissa 1.1100000143051147 pValueExponent -10 beta 0.09288312748005599 finemappingMethod PICS data.variant.credibleSets.rows[13].study traitFromSource Disorders resulting from impaired renal function (PheCode 588) projectId GCST
+
+> [q566] data.variant.credibleSets.rows[13].locus.rows[0] posteriorProbability 0.2040435838211657 data.variant.credibleSets.rows[13].locus.rows[0].variant id 6_43302413_C_T
+
+> [q567] data.variant.credibleSets.rows[36] studyLocusId cb14224a27965bd86942fcda346296f2 studyId GCST90480386 pValueMantissa 1.7200000286102295 pValueExponent -10 beta 0.10436101532474278 finemappingMethod PICS data.variant.credibleSets.rows[36].study traitFromSource Secondary hyperparathyroidism (of renal origin) (PheCode 588.2) projectId GCST
+
+> [q568] data.variant.credibleSets.rows[36].locus.rows[0] posteriorProbability 0.1790021723616663 data.variant.credibleSets.rows[36].locus.rows[0].variant id 6_43292922_T_C
+
+> [q569] data.variant.credibleSets.rows[41] studyLocusId cf5743aade133351609ca61d6447d6e0 studyId GCST90479971 pValueMantissa 3.259999990463257 pValueExponent -9 beta 0.07785343920486418 finemappingMethod PICS data.variant.credibleSets.rows[41].study traitFromSource Anemia in chronic kidney disease (PheCode 285.21) projectId GCST
+
+> [q570] data.variant.credibleSets.rows[41].locus.rows[0] posteriorProbability 0.1569898902837356 data.variant.credibleSets.rows[41].locus.rows[0].variant id 6_43382057_G_A
+
+> [q571] data.variant id 6_43302413_C_T referenceAllele C alternateAllele T data.variant.rsIds[0] rs2270860
+
+> [q572] data.variant id 6_43292922_T_C referenceAllele T alternateAllele C data.variant.rsIds[0] rs6901866
+
+> [q573] data.variant id 6_43382057_G_A referenceAllele G alternateAllele A data.variant.rsIds[0] rs7764523
+
+Three MVP PheCode sets of chronic kidney disease hold rs7742789 at PIP about 0.04 (locus rows 10, 10 and 6): disorders
+from impaired renal function, β +0.093 per T of its lead rs2270860, P 1.1 × 10⁻¹⁰ (q565, q566, q571); renal
+secondary hyperparathyroidism, +0.104 per C of rs6901866, P 1.7 × 10⁻¹⁰ (q567, q568, q572); anaemia in chronic
+kidney disease, +0.078 per A of rs7764523, P 3.3 × 10⁻⁹ (q569, q570, q573). Each lead's alt is the minor allele in
+non-Finnish Europeans (0.30, 0.31, 0.33, as rs7742789's T is 0.31) and is in strong LD with the lead (r² 0.76 to
+0.85, D′ 0.92 to 1.00, db-ensembl-116#q268 to q270), so each counted allele travels with T (derived, not phased; the
+studies are multi-ancestry, Europeans the largest arm, db-gwascatalog-2026.10.29#q287 to q289). So the T haplotype
+carries more chronic kidney disease as well as more acute renal failure (q557), though T itself goes with lower
+cystatin C and creatinine and higher eGFR (q553 to q556): the biomarkers and the disease endpoints run opposite ways.
+The sign of `beta` at the lead is anchored on two SuSiE-inf sets against the catalog's lines for the same
+accessions: acute renal failure T +0.0111 (q557) against rs7742789-C "decrease" (db-gwascatalog-2026.10.29#q283,
+q284), and magnesium T −0.0347 (q564) against C "increase" (q285, q286). For row 40.

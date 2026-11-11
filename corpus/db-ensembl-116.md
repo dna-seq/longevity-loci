@@ -961,3 +961,20 @@ window (`ld-window-ceu-rs7742789.json`, ±250 kb, r² ≥ 0.05) holds 15 SNPs at
 rs58804120 and rs1563788 at 0.87 (q265). Wright's tag rs1214759: r² 0.84, D′ 1.00 (q264); its A (0.32) travels with
 the lead's T (0.30 to 0.35) at D′ 1 (derived, not phased; both shorten life in LifeGen, pmid-30642433#q214, q215).
 rs6919440, Wright's other fathers line, is at r² 0.56 (q266). For row 40.
+
+## Reading 2026-11-11, record
+
+> [q267] populations[14] frequency 0.3085 population gnomADg:nfe allele_count 20972 allele T
+
+> [q268] [346] variation2 rs2270860 variation1 rs7742789 r2 0.755517 d_prime 0.922022 population_name 1000GENOMES:phase_3:CEU
+
+> [q269] [68] population_name 1000GENOMES:phase_3:CEU r2 0.825704 d_prime 1.000000 variation2 rs6901866 variation1 rs7742789
+
+> [q270] [250] population_name 1000GENOMES:phase_3:CEU d_prime 1.000000 r2 0.854320 variation1 rs7742789 variation2 rs7764523
+
+Row 40's lead: T 0.31 in gnomAD non-Finnish Europeans (q267), against 0.35 in 1000 Genomes EUR (q263) and 0.32 in CEU;
+the large samples agree with gnomAD (LifeGen 0.30, pmid-30642433#q214; Deelen 0.30, pmid-31413261#q97; Finns 0.29,
+db-finngen-r11#q11). The kidney-disease sets' leads: rs2270860 r² 0.76, D′ 0.92 (q268); rs6901866 r² 0.83, D′ 1.00
+(q269); rs7764523 r² 0.85, D′ 1.00 (q270). The lead's 15 proxies at r² ≥ 0.8 lie from 6:43,292,922 (rs6901866) to
+6:43,386,693 (rs1214761) in GRCh38 (the catalog's locations), 85 kb before the lead to 9 kb after it, so the block
+sits well inside the ±250 kb window and the proxy sweep is whole. For row 40.

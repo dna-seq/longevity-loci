@@ -944,3 +944,28 @@ atrial fibrillation GCST90624411 (multi-ancestry, 2,212,177 Europeans, q277); sy
 (322,141, U.K., q278); cystatin C GCST90692779 (400,940 Europeans among U.K. samples, q279); eGFR from creatinine and
 cystatin C GCST90428446 (406,504, U.K., q280); ischaemic heart disease GCST90475929 (417,274, U.S., q281); acute
 renal failure GCST90476119 (425,203, U.S., q282). The variant's own sets, read at the lead, need no phasing.
+
+## Reading 2026-11-11, record
+
+Row 40's sign anchors and the kidney-disease studies (`associations-rs7742789.json`, `study-<accession>.json`).
+
+> [q283] _embedded.associations[2] association_id 228333544 risk_frequency 0.695 pvalue_description pvalue_mantissa 2 pvalue_exponent -13 multi_snp_haplotype false snp_interaction false range [0.04-0.072] beta 0.05589 unit decrease p_value 2e-13 accession_id GCST90476119
+
+> [q284] _embedded.associations[2].snp_effect_allele[0] rs7742789-C
+
+> [q285] _embedded.associations[5] association_id 228262091 risk_frequency 0.6933 pvalue_description pvalue_mantissa 2 pvalue_exponent -35 multi_snp_haplotype false snp_interaction false range [0.046-0.064] beta 0.05486 unit increase p_value 2e-35 accession_id GCST90475480
+
+> [q286] _embedded.associations[5].snp_effect_allele[0] rs7742789-C
+
+> [q287] discovery_ancestry[0] 447143 European (U.S.)
+
+> [q288] discovery_ancestry[0] 448588 European (U.S.)
+
+> [q289] discovery_ancestry[0] 445574 European (U.S.)
+
+Acute renal failure (GCST90476119): rs7742789-C "decrease", P 2 × 10⁻¹³ (q283, q284); serum magnesium (GCST90475480):
+C "increase", P 2 × 10⁻³⁵ (q285, q286). Open Targets' SuSiE-inf sets for the same accessions give T the opposite
+signs, so its `beta` there is per T. The three chronic kidney disease studies of MVP, each with African-American and
+Hispanic arms beside the European: GCST90480387 (447,143 Europeans, q287), GCST90480386 (448,588, q288), GCST90479971
+(445,574, q289). The proxies' lines row 40 names only (stroke, hypertension, testosterone, urate) were not checked for
+ancestry; some are Japanese (Kanai 2018's blood pressure at rs16896398, a uric-acid line from 1KG-JEWEL7K). For row 40.

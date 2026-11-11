@@ -12,7 +12,7 @@ verdict_reason: >-
   it), with an independent nominal replication; a multivariate result does not meet tier A's first criterion
   (D18.3), whatever its replication. Genome-wide significant only in Rosoff 2023's mvAge, the common factor behind
   healthspan, frailty, exceptional longevity, parental lifespan and epigenetic age (P 3.3e-8, C raising the factor,
-  so T, at 35 % in Europeans, is on the less healthy side); Rosoff lists it as novel, and its Q test (P 0.41) finds
+  so T, at about 31 % in Europeans, is on the less healthy side); Rosoff lists it as novel, and its Q test (P 0.41) finds
   no sign the SNP acts off the common factor. Timmers 2019's million parents' lives are the co-occurring lifespan
   study: T shortens life at P 1.2e-7, just short of genome-wide, UK Biobank and LifeGen on the same side. Healthspan
   agrees nominally: T ends healthspan earlier in Zenin 2019's UK Biobank (P 0.0052 raw, about 0.0065 after the
@@ -25,34 +25,42 @@ verdict_reason: >-
   for the same SNP in fathers born 1886-1918 (genomic-control P 6.2e-4, the same customers, one signal, D17.1); the
   UK Biobank arm's sign agrees with Timmers' A (P 1.7e-6), heterogeneity P 0.96. The mothers' table holds no line in
   LD with the lead. FinnGen's death endpoint is null (T β −0.0018, P 0.83, a slight lean the other way): within
-  FinnGen, APOE's factor would predict T +0.022 (power about 0.86, heterogeneity P about 0.009), the loci's mean
-  factor +0.0093 (power about 0.31, heterogeneity P about 0.18); only one calibration flags it, so it is no red flag
-  (D25.3), and with AncestryDNA's replication D25.1 could not apply anyway. Mechanism: ageing in general (D25.7). The
+  FinnGen, APOE's factor would predict T +0.022 (power about 0.86, heterogeneity P about 0.009), so it flags under
+  that calibration; the second, a mean over leads that hold up within FinnGen (D25.12), is not computed, so whether
+  it is a red flag is unknown (D25.3). It cannot make the row D: AncestryDNA's independent replication stands
+  (D25.1), and B is the cap either way. Mechanism: ageing in general (D25.7). The
   lead leads 34 Open Targets sets. Per T it lowers cystatin C (P 6e-45, a one-variant set, PIP 0.998) and
   creatinine and raises eGFR (P 1e-51, PIP 0.994), so T goes with better filtration; yet T raises acute renal
   failure, systolic blood pressure and pulse pressure, heart failure (P 8e-16), ischaemic heart disease, atrial
-  fibrillation and clonal haematopoiesis with a DNMT3A mutation (P 2e-9), and lowers serum magnesium (P 2e-35). The
-  catalog's proxies add stroke, hypertension, testosterone and urate. Blood pressure and the heart are the commonest
-  thread, kidney traits as strong, and no one route is shown to carry the lifespan effect, so no single system is
-  named. A trade-off (D18.1, as at row 39): the longer-life C lowers eGFR, an established risk factor for kidney and
-  heart disease, quoted at the lead itself, while C has less acute renal failure, blood pressure and heart disease;
-  on lifespan C's side wins, so the net direction is resolved and the states are not neutral. Actionability is
-  descriptive, as a trade-off makes it. Causal confidence C4 and effector E4: no credible set of a lifespan-class
+  fibrillation and clonal haematopoiesis with a DNMT3A mutation (P 2e-9), and lowers serum magnesium (P 2e-35). Three
+  chronic kidney disease sets (MVP) hold the lead behind neighbours whose minor alleles travel with T (r² 0.76 to
+  0.85, derived): impaired renal function, renal hyperparathyroidism and anaemia of kidney disease all rise on T's
+  haplotype. The catalog's proxies add stroke, hypertension, testosterone and urate, named only (their ancestry not
+  checked; some are Japanese). Blood pressure and the heart are the commonest thread, kidney traits as strong, and no
+  one route is shown to carry the lifespan effect, so no single system is named. No trade-off is found (D18.1): the
+  longer-life C has lower eGFR and higher cystatin C and creatinine on blood tests, but the kidney's own disease
+  endpoints, acute and chronic, run with T, so the lower eGFR is not shown to be harm; C is on the lower-risk side
+  for blood pressure, heart failure, ischaemic heart disease and atrial fibrillation. (Row 39's reading, a risk
+  biomarker carried by the longer-life allele, would make it a trade-off; put to the lead.) Actionability is
+  preventable, as at row 27: blood pressure is a measure a doctor takes, and the effect on it is read at the lead
+  itself. Causal confidence C4 and effector E4: no credible set of a lifespan-class
   study holds the lead (mvAge's 26 sets in Open Targets include none on 6p21.1), so neither is read; locus-to-gene on
-  the trait sets favours TJAP1 or CRIP3, ZNF318 at most 0.42, named only. C/T is the reference: the most common
-  genotype in 1000 Genomes EUR (about 45 in 100 against C/C's 43; gnomAD's non-Finnish Europeans, at C 0.69, would
-  put C/C first by a little). No PROTECT token, the split too even (as at 21 and 24). Age of action is unknown: no
-  cached source gives this locus's own age bands.
+  the trait sets favours TJAP1 or CRIP3, ZNF318 at most 0.42, named only. C/C is the reference: the most common
+  genotype at gnomAD's non-Finnish European frequency (T 0.31: C/C about 48 in 100, C/T 43, T/T 10), as in every large
+  sample read here (LifeGen, Deelen, FinnGen, CEU: T 0.29 to 0.32); 1000 Genomes EUR's pooled 0.35 alone would put
+  C/T first, by 45 to 43. PROTECT:ABSENCE_OF_RISK: C is the common allele at a heart and kidney disease locus, and T
+  the risk version. Age of action is unknown: no cached source gives this locus's own age bands.
 axes:
-  tier: {value: B, cites: [pmid-37550455#q41, pmid-37550455#q42, pmid-37550455#q43, pmid-37550455#q2, pmid-37550455#q3, pmid-37550455#q5, pmid-30642433#q214, pmid-30642433#q215, pmid-30729179#q62, pmid-31413261#q97, pmid-31413261#q98, pmid-31484785#q85, pmid-31484785#q86, pmid-31484785#q83, db-ensembl-116#q262, db-ensembl-116#q263, db-ensembl-116#q264, db-finngen-r11#q11, db-finngen-r11#q12, db-finngen-r11#q4, pmid-30642433#q90, pmid-30642433#q92, db-gwascatalog-2026.10.29#q273, db-gwascatalog-2026.10.29#q274]}
+  tier: {value: B, cites: [pmid-37550455#q41, pmid-37550455#q42, pmid-37550455#q43, pmid-37550455#q2, pmid-37550455#q3, pmid-37550455#q5, pmid-30642433#q214, pmid-30642433#q215, pmid-30729179#q62, pmid-31413261#q97, pmid-31413261#q98, pmid-31484785#q85, pmid-31484785#q86, pmid-31484785#q83, db-ensembl-116#q262, db-ensembl-116#q263, db-ensembl-116#q264, db-finngen-r11#q11, db-finngen-r11#q12, db-finngen-r11#q4, pmid-30642433#q90, db-gwascatalog-2026.10.29#q273, db-gwascatalog-2026.10.29#q274]}
   mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q553, db-opentargets-26.09#q555, db-opentargets-26.09#q557, db-opentargets-26.09#q558, db-opentargets-26.09#q559, db-opentargets-26.09#q560, db-opentargets-26.09#q561, db-opentargets-26.09#q562, db-opentargets-26.09#q563, db-opentargets-26.09#q564]}
-  pleiotropy: {values: ["mech:cvd", "mech:kidney", broad, tradeoff], cites: [pmid-37550455#q41, db-opentargets-26.09#q550, db-opentargets-26.09#q551, db-opentargets-26.09#q553, db-opentargets-26.09#q554, db-opentargets-26.09#q555, db-opentargets-26.09#q556, db-opentargets-26.09#q557, db-opentargets-26.09#q558, db-opentargets-26.09#q559, db-opentargets-26.09#q560, db-opentargets-26.09#q561, db-opentargets-26.09#q562, db-opentargets-26.09#q563, db-opentargets-26.09#q564, db-gwascatalog-2026.10.29#q275, db-gwascatalog-2026.10.29#q276, db-gwascatalog-2026.10.29#q277, db-gwascatalog-2026.10.29#q278, db-gwascatalog-2026.10.29#q279, db-gwascatalog-2026.10.29#q280, db-gwascatalog-2026.10.29#q281, db-gwascatalog-2026.10.29#q282]}
+  pleiotropy: {values: ["mech:cvd", "mech:kidney", broad], cites: [pmid-37550455#q41, db-opentargets-26.09#q550, db-opentargets-26.09#q551, db-opentargets-26.09#q553, db-opentargets-26.09#q554, db-opentargets-26.09#q555, db-opentargets-26.09#q556, db-opentargets-26.09#q557, db-opentargets-26.09#q558, db-opentargets-26.09#q559, db-opentargets-26.09#q560, db-opentargets-26.09#q561, db-opentargets-26.09#q562, db-opentargets-26.09#q563, db-opentargets-26.09#q564, db-gwascatalog-2026.10.29#q275, db-gwascatalog-2026.10.29#q276, db-gwascatalog-2026.10.29#q277, db-gwascatalog-2026.10.29#q278, db-gwascatalog-2026.10.29#q279, db-gwascatalog-2026.10.29#q280, db-gwascatalog-2026.10.29#q281, db-gwascatalog-2026.10.29#q282, db-opentargets-26.09#q565, db-opentargets-26.09#q566, db-opentargets-26.09#q567, db-opentargets-26.09#q568, db-opentargets-26.09#q569, db-opentargets-26.09#q570, db-opentargets-26.09#q571, db-opentargets-26.09#q572, db-opentargets-26.09#q573, db-ensembl-116#q268, db-ensembl-116#q269, db-ensembl-116#q270, db-gwascatalog-2026.10.29#q283, db-gwascatalog-2026.10.29#q284, db-gwascatalog-2026.10.29#q285, db-gwascatalog-2026.10.29#q286, db-gwascatalog-2026.10.29#q287, db-gwascatalog-2026.10.29#q288, db-gwascatalog-2026.10.29#q289]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
             cites: [pmid-30729179#q62, pmid-37550455#q43, pmid-30642433#q214, pmid-31484785#q85, pmid-31413261#q98]}
-  actionability: {label: descriptive, cites: [db-opentargets-26.09#q555, db-opentargets-26.09#q557, db-opentargets-26.09#q558, db-opentargets-26.09#q560]}
+  actionability: {label: preventable, what: ["act_test:bp"], who: "act_who:doctor", cites: [db-opentargets-26.09#q558, db-opentargets-26.09#q559, db-gwascatalog-2026.10.29#q278]}
   context: {values: [eur_only_evidence], cites: [pmid-37550455#q41, pmid-30642433#q214, pmid-31484785#q85]}
 flags:
+  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-37550455#q41, pmid-30642433#q214, db-ensembl-116#q267, db-opentargets-26.09#q560]}
   - {token: "causal:C4", cites: [db-opentargets-26.09#q552, db-opentargets-26.09#q413]}
   - {token: "effector:E4", cites: [db-opentargets-26.09#q552, db-opentargets-26.09#q413]}
 variants:
@@ -65,38 +73,34 @@ variants:
     effect_measure: beta
     stat_significance: significant
     direction: protective
-    negatives: >-
-      The longer-life version, C, goes with slightly lower kidney filtration on blood tests (eGFR), which is
-      usually read as a mild risk sign, though it also goes with less sudden kidney injury, lower blood pressure
-      and less heart disease; across whole lives its side comes out ahead.
     genotypes:
       - genotype: C/C
-        state: protective
-        conclusion: >-
-          You carry two copies of the more common version of this DNA region (about 43 in 100 people of European
-          ancestry do). In very large European studies that combined healthspan, frailty, long life and biological
-          age into one measure, each copy went with slightly healthier ageing, and parents of carriers lived a
-          little longer. The same version goes with slightly lower blood pressure and less heart failure, heart
-          disease and irregular heartbeat, though also with slightly lower kidney filtration on blood tests, so it
-          is a mixed picture. It is a likely finding, not a settled one. The effect is small and it is a tendency,
-          not a guarantee.
-      - genotype: C/T
         state: neutral
         conclusion: >-
-          You carry one copy of each common version of this DNA region (about 45 in 100 people of European ancestry
-          do, the most common combination). It is the reference the other combinations are compared with. The
-          region, on chromosome 6, near the ZNF318 and ABCC10 genes, is linked to blood pressure, the heart and the
-          kidneys. The finding comes from people of European ancestry; less is known elsewhere.
+          You carry two copies of the more common version of this DNA region (about 48 in 100 people of European
+          ancestry do). It is the reference the other combinations are compared with. The region, on chromosome 6,
+          near the ZNF318 and ABCC10 genes, is linked to blood pressure, the heart and the kidneys. The finding
+          comes from people of European ancestry; less is known elsewhere.
+      - genotype: C/T
+        state: risk
+        conclusion: >-
+          You carry one copy of a less common version of this DNA region (about 43 in 100 people of European
+          ancestry do). In very large European studies that combined healthspan, frailty, long life and biological
+          age into one measure, this version went with slightly less healthy ageing, and parents of carriers lived
+          a little less long. The same version goes with slightly higher blood pressure and somewhat more heart
+          failure, heart disease, irregular heartbeat and kidney disease. Blood pressure is something a doctor can
+          measure and treat, so regular checks are the part within reach. It is a likely finding, not a settled
+          one. The effect is small and it is a tendency, not destiny.
       - genotype: T/T
         state: risk
         conclusion: >-
-          You carry two copies of the less common version of this DNA region (about 12 in 100 people of European
+          You carry two copies of a less common version of this DNA region (about 10 in 100 people of European
           ancestry do). In very large European studies that combined healthspan, frailty, long life and biological
           age into one measure, each copy went with slightly less healthy ageing, and parents of carriers lived a
           little less long. The same version goes with slightly higher blood pressure and somewhat more heart
-          failure, heart disease and irregular heartbeat, though also with slightly better kidney filtration on
-          blood tests, so it is a mixed picture. It is a likely finding, not a settled one. The effect is small and
-          it is a tendency, not destiny.
+          failure, heart disease, irregular heartbeat and kidney disease. Blood pressure is something a doctor can
+          measure and treat, so regular checks are the part within reach. It is a likely finding, not a settled
+          one. The effect is small and it is a tendency, not destiny.
 studies:
   - rsid: rs7742789
     note: pmid-37550455
