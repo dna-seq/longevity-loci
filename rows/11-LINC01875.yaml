@@ -24,12 +24,15 @@ verdict_reason: >-
   reading puts the locus below genome-wide in the conventional test, and the longevity look-ups are null on the same
   side (Timmers 2019's replication in Deelen 2014 and Broer 2015, P 0.41; Deelen 2019's 90th and 99th percentiles,
   P 0.21 and 0.061): B's clause for a replicated locus whose reported SNP is a tag, applied without a credible set to
-  measure it against. Healthspan is null (Zenin 2019, P 0.48 at the lead). Two other AncestryDNA SNPs nearby point the
-  other way (rs4640417 in mothers, P 8.7e-5, r² 0.11 to the lead; rs10153797 in fathers, P 9.2e-4, whose LD with the
-  lead Ensembl did not return): neither is a proxy of the lead, so neither contradicts it, but the second is unknown,
-  not ruled out. The mechanism is metabolism, through body weight: Timmers 2019 names BMI as the risk factor, the
+  measure it against. Healthspan is null (Zenin 2019, P 0.48 at the lead). Two other AncestryDNA SNPs lie within 30 kb.
+  rs4640417 (r² 0.11 to the lead, D′ 1.00) carries the lead's A wholly on its own common A (derived from the
+  frequencies), and its G shortens mothers' and fathers' lives (P 8.7e-5 and 5.5e-4): the same side, too weakly tied
+  to the lead to count as a proxy. rs10153797 (fathers, P 9.2e-4) is unknown: Ensembl returned no LD with the lead,
+  so its side is not read. The mechanism is metabolism, through body weight: Timmers 2019 names BMI as the risk factor, the
   catalog's extreme-obesity record has the common C raising obesity (OR 1.25), so T, the lifespan side, lowers it,
-  and the lead sits in 510 credible sets in Open Targets, nearly all of body size and fat. No trade-off is detected:
+  and the lead sits in 510 credible sets in Open Targets: of the 100 read, about half are of body size and fat, the
+  rest smoking, blood pressure, lipids, type 2 diabetes and joint disease among them. Actionability is descriptive, as
+  at row 4: the weight effect is inherited, not a behaviour the allele asks of anyone. No trade-off is detected:
   the same T lowers heel bone density (P 5e-10), a bone measure rather than a disease, and the cancer record states
   an allele but no direction; four records (BMI, weight, waist, body fat) state no allele, so none detected is not
   none. Causal confidence is C4 (no set of the eight lifespan, healthspan, longevity and current-age studies holds
@@ -37,9 +40,9 @@ verdict_reason: >-
   though the paper and the catalog map the region to TMEM18. The protection is a presence, the minor A. Age of
   action is unknown.
 axes:
-  tier: {value: B, cites: [pmid-30642433#q38, pmid-30642433#q39, pmid-30642433#q40, pmid-30642433#q41, pmid-30642433#q42, pmid-31484785#q35, pmid-31484785#q36, pmid-31484785#q37, pmid-31413261#q20, db-gwascatalog-2026.10.29#q59, db-ensembl-116#q28, db-ensembl-116#q29]}
+  tier: {value: B, cites: [pmid-30642433#q38, pmid-30642433#q39, pmid-30642433#q40, pmid-30642433#q41, pmid-30642433#q42, pmid-31484785#q35, pmid-31484785#q36, pmid-31484785#q37, pmid-31484785#q39, pmid-31484785#q40, pmid-31413261#q20, db-gwascatalog-2026.10.29#q59, db-ensembl-116#q28, db-ensembl-116#q29]}
   mechanism: {value: metabolism, cites: [pmid-30642433#q38, db-gwascatalog-2026.10.29#q61, db-gwascatalog-2026.10.29#q62, db-opentargets-26.09#q89, db-opentargets-26.09#q90, db-opentargets-26.09#q91]}
-  pleiotropy: {values: ["mech:adiposity"], cites: [pmid-30642433#q38, db-gwascatalog-2026.10.29#q61, db-gwascatalog-2026.10.29#q63, db-gwascatalog-2026.10.29#q65, db-gwascatalog-2026.10.29#q67, db-opentargets-26.09#q89]}
+  pleiotropy: {values: ["mech:adiposity", broad], cites: [pmid-30642433#q38, db-gwascatalog-2026.10.29#q61, db-gwascatalog-2026.10.29#q63, db-gwascatalog-2026.10.29#q65, db-gwascatalog-2026.10.29#q67, db-opentargets-26.09#q89]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "0",
             cites: [pmid-30729179#q22, pmid-30642433#q38, pmid-30642433#q40, pmid-31484785#q35, pmid-30642433#q41, pmid-31413261#q20]}

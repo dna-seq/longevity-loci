@@ -153,11 +153,14 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   only by the Bayesian scan; no Methods filter explains it), and mvAge 4e-8 (catalog only). AncestryDNA replicates at
   rs2867105 (r² 0.86 to the lead; Wright's A the complement of T, derived): fathers 1886-1940 P 8.8e-4, mothers 0.058,
   heterogeneity 0.18 / 0.61. Longevity look-ups null (Timmers Fig. 4 0.41; Deelen 0.21, 0.061), healthspan null.
-  C4/E4, no gene (TMEM18 by mapping only). Rules settled with the advisor: (1) every genome-wide and replicating value
+  C4/E4, no gene (TMEM18 by mapping only). Settled with the advisor: (1) every genome-wide and replicating value
   at a proxy, with no lifespan credible set to place the lead, reads as B's "reported SNP is a tag" clause, not A,
   though A's letter is met; (2) a Wright SNP near the lead is read by position (within 0.5 Mb), not by rsID only;
-  a clumped SNP whose LD Ensembl does not return is unknown, named, never "nothing contradicts"; (3) a lifespan allele
-  that lowers a quantitative trait (heel bone density) is not a trade-off: a trade-off needs a disease; (4) a
+  a clumped SNP whose LD Ensembl does not return is unknown, named, never "nothing contradicts"; a low-r² SNP's side
+  is read from D′ and frequencies (rs4640417: the lead's A on its longer-life A, derived). Mine, put to the lead:
+  (3) a lifespan allele that lowers a quantitative trait (heel bone density) is not a trade-off: a trade-off needs a
+  disease (it narrows the rule that a stated-allele catalog record is a trade-off); `descriptive`, not `modifiable`,
+  for an obesity locus, as at row 4. With the advisor: (4) a
   deposited summary-statistics P below 5e-8 is the study's P even when the paper does not report the SNP, with the
   omission said in statistical_test.
 - **67 corrected** (2026-11-11), the lead's review applied. Tier B on red-flag heterogeneity alone: replication
