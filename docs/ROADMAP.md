@@ -38,3 +38,5 @@ be written on the lead variant while 0.7.1 has no `proxy_rsid`. Each is RM1's to
 curator's 46-LPA cites them), gnomAD's frequencies next, each rendered to lines a quote can be located in, with a
 sidecar saying the release, the URL and the sha256. The release read must equal the note's `release`, or the fetch
 refuses: a later release is a different source.
+Ensembl's 1000 Genomes pairwise LD (`ld/human/pairwise/<a>/<b>`, r² and D′ by population) belongs here too: a
+proxy's r² to its lead is now cited from prose (the read of 38-HLA-DQA1, 2026-11-11).
