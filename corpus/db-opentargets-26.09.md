@@ -815,3 +815,24 @@ Only 5 of the 400 are GWAS sets (`variant-3_14141910_T_C-gwas`): arm impedance (
 repeat-count trait, each led by another variant (hypertension by 3_14115290_G_T). No longevity, lifespan or
 healthspan set holds the lead, so causal confidence for the row's claim is not assessable (D17.2) and there is no set
 for L2G or colocalisation. For row 18.
+
+> [q198] data.variant.credibleSets count 1
+
+> [q199] data.variant.credibleSets.rows[0].study id GCST012419 traitFromSource Longevity (100 years and older) studyType gwas target null
+
+> [q200] data.credibleSet studyLocusId ab13a68d63289f1922a881c2fcd8b7af finemappingMethod PICS confidence PICS fine-mapped credible set based on reported top hit credibleSetIndex null
+
+> [q201] data.credibleSet.locus count 1
+
+> [q202] data.credibleSet.locus.rows[0] posteriorProbability 1
+
+> [q203] data.credibleSet.l2GPredictions.rows[0] score 0.4262925982475281
+
+> [q204] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol LRRC3B
+
+> [q205] data.credibleSet.colocalisation count 0
+
+rs78043944 (3_26327009_G_A, row 19) is in one credible set, Gurinovich's own (GCST012419): PICS from the reported top
+hit, one variant at posterior probability 1. A rare variant with no LD partners in the reference makes a one-variant
+PICS set by construction, so the PIP restates the lead rather than resolving a locus. L2G's top gene LRRC3B, 0.43;
+no colocalisation.

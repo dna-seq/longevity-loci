@@ -331,3 +331,19 @@ Asians: common in both ancestries. By Hardy-Weinberg about 36 in 100 Europeans a
 
 LD between rs1043943 and rs2228001 (XPC's missense variant, pmid-33657282#q7): r² 0.94, D' 1.0 in both 1000 Genomes CEU
 and CHB. The lead tags XPC's missense variant as well in Europeans as in Chinese. For row 18.
+
+> [q83] . source Variants (including SNPs and indels) imported from dbSNP ambiguity R var_class SNP MAF 0.206436 minor_allele A name rs78043944 most_severe_consequence intergenic_variant
+
+> [q84] mappings[0] end 26327009 location 3:26327009-26327009 ancestral_allele null seq_region_name 3 start 26327009 strand 1 allele_string G/A coord_system chromosome assembly_name GRCh38
+
+> [q85] populations[74] allele A population 1000GENOMES:phase_3:EUR allele_count 141 frequency 0.140159045725646
+
+> [q86] populations[8] allele_count 343 frequency 0.00688 population gnomADg:nfe allele A
+
+> [q87] populations[2] allele A population gnomADg:asj frequency 0.001702 allele_count 4
+
+rs78043944 (row 19): intergenic, GRCh38 3:26,327,009, G/A. The frequencies of A disagree by twentyfold: 0.14 in 1000
+Genomes EUR (CEU 0.18), 0.0069 in gnomAD non-Finnish Europeans and 0.0017 in gnomAD Ashkenazi Jews. NECS controls
+(0.0065, pmid-33948810#q4) and Zenin's UK Biobank (0.0054) agree with gnomAD, so 1000 Genomes' call at this site is the
+likely outlier; by gnomAD about 98.6 in 100 Europeans are G/G, 1.4 G/A, and A/A about 5 in 100,000. Open Targets'
+id is 3_26327009_G_A. For row 19.

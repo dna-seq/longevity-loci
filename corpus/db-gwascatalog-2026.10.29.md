@@ -444,3 +444,15 @@ listed. Zenin's healthspan result is not in this record.
 
 The catalog's two associations at rs1043943 (row 18): Yengo et al.'s height (GCST90245848), T +0.0124, P 3 × 10⁻⁸⁵;
 Liu et al.'s longevity (GCST012210), T β 0.1464 (CI 0.09 to 0.203), P 4 × 10⁻⁸ (the paper's 3.59 × 10⁻⁸ rounded).
+
+> [q135] _embedded.associations[0] association_id 80754840 risk_frequency 0.0065 pvalue_description pvalue_mantissa 4 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range [NR] beta 5.8755207 unit increase p_value 4e-09 accession_id GCST012419 pubmed_id 33948810 first_author Gurinovich A
+
+> [q136] _embedded.associations[0].reported_trait[0] Longevity (100 years and older)
+
+> [q137] _embedded.associations[0].snp_effect_allele[0] rs78043944-A
+
+> [q138] page size 50 totalElements 1 totalPages 1 number 0
+
+The catalog's one association at rs78043944 (row 19): Gurinovich's centenarian GWAS (GCST012419), A, P 4 × 10⁻⁹.
+Its "beta 5.8755207 unit increase" is the paper's score Z (pmid-33948810#q4, 5.875520619), not an effect size, and
+its risk frequency 0.0065 is the controls' frequency of A. No other trait is recorded for the variant.
