@@ -174,3 +174,13 @@ value to copy. As for a multivariate test (D15) and a nominal look-up (D13), a `
 option (a), recommended. Rejected: (b), fetching Rosoff's supplement by hand to anchor on the multivariate copy of
 the same signal, a manual step that changes nothing the check sees.
 
+## D21 — when a non-replication is a red flag (2026-11-11)
+
+The 71/67 rule caps a row at B on "a powered non-replication in an independent sample". The reads of 103, 12 and 21
+put numbers on "powered", and 21 landed between the earlier two (103: power about 0.8, heterogeneity P about 0.02,
+red flag; 12: about 0.7, P 0.26, not). The lead fixes the line under the person's standing word: **a non-replication
+is a red flag when its one-sided power is at least 0.8 and the heterogeneity P below 0.05.** Power is computed
+from the discovery effect without the replicating sample (backed out of a pooled estimate that contains it), at the
+replication's standard error. The row says both numbers. 21 (power 0.6 to 0.7, heterogeneity P about 0.055) is no
+red flag and keeps A.
+
