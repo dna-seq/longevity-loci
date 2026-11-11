@@ -765,3 +765,19 @@ The FIN window (`ldwin-rs138499810-FIN.json`, 99 Finns) lists rs531009177 at 0.7
 (rs10942305, rs146787437, rs16899885, rs7734484, rs77791861), but these run at about 1 % in LifeGen and Zenin's mostly
 British samples where the lead's T is 0.08 %, so they do not tag it there, and they are not proxies of the East Asian
 signal (none reaches r² 0.14 in EAS). VEP: an intron of a lncRNA, ENSG00000308603 (q214). For row 32.
+
+## Reading 2026-11-11, record
+
+> [q215] populations[74] allele_count 389 allele T population 1000GENOMES:phase_3:EAS frequency 0.385912698412698
+
+> [q216] populations[96] allele_count 342 allele G population 1000GENOMES:phase_3:EAS frequency 0.339285714285714
+
+> [q217] populations[17] allele T allele_count 5669 population gnomADg:fin frequency 0.5377
+
+> [q218] populations[25] population gnomADg:fin frequency 0.4636 allele G allele_count 4896
+
+Population frequencies (var-rs61348208-pops.json, var-rs362273-pops.json). In 1000 Genomes East Asians, rs61348208
+T 0.386 (q215) and rs362273 G 0.339 (q216). With G opposite T, r² could reach only about 0.32 (D at most 0.131 over
+0.386 × 0.614 × 0.339 × 0.661); the EAS r² is 0.76 (q123), so G rides with T in East Asians, as in Europeans. In gnomAD
+genomes' Finns, T 0.54 (q217) and G 0.46 (q218); there either phase allows r² near 0.7, so the phase in Finns is
+assumed, not shown. For row 25.
