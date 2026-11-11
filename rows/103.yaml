@@ -1,32 +1,32 @@
 # The seed list's locus 103, unnamed (6p21.32, the HLA class II region at HLA-DQB1, as Zenin 2019 calls it).
-# Curated 2026-11-11, the ten-row run's fourth row. Lead rs1049053 (Zenin 2019's healthspan SNP), 43 kb from row 38's
+# Curated 2026-11-11, the ten-row run's fourth row; re-tiered C to B the same day under D16. Lead rs1049053 (Zenin 2019's healthspan SNP), 43 kb from row 38's
 # lead rs34967069 (EUR r² 0.32). rs3135006 (Wright 2019) is its close proxy (r² 0.80) and appears only as a proxy on
 # its study; rs3129720 likewise (r² 0.80).
 locus_id: 103
 locus_name: ""
 verdict: re-tiered
 verdict_reason: >-
-  Tier C, down from the seed's single-track A (§12), flagged HEALTHSPAN_ONLY in words (the token is not in the format
-  yet). Genome-wide significant for healthspan only: in 300,447 British UK Biobank participants C delays the end of
-  healthspan (Zenin 2019, P 1.4e-11; T, the common allele at 0.67, ends it earlier), and the signal is its own, not an
-  echo of row 38's lead (LD alone would give z 2.9 here, against 6.9 observed). It is not replicated: in 96,313 other
-  UK Biobank participants, unrelated to the discovery set, it leans the same way at P 0.146. Healthspan counts toward a
-  tier only with a co-occurring lifespan signal of at least suggestive strength (§4.5, P < 1e-5), and none reaches
-  it: Timmers 2019's million parents' lives give P 1.4e-4 at rs1049053, C on the long-lived side in both UK Biobank
-  and LifeGen, and AncestryDNA's mothers (Wright 2019), the one sample independent of both, give P 3.3e-4 at its
-  close proxy rs3135006 (r² 0.80, its T riding with C), 3.1e-5 with UK Biobank. Both lifespan results are shared with
-  row 38: rs1049053 lies at r² 0.32 to that row's genome-wide lead, and LD with that lead alone would give a z of about
-  3.3 at rs1049053, against 3.8 observed; no cached source conditions one on the other, so whether this locus has a
-  lifespan effect of its own is unknown. A sub-genome-wide lifespan result never makes A or B (R-TIER-4), and a
-  genome-wide result that cannot score leaves the research view's C. At the oldest ages Timmers 2019's longevity
-  look-up at rs3129720, the same proxy (r² 0.80), leans the same way and does not pass (P 0.056 one-sided).
-  Deelen 2019 has no row for it or a close proxy. Zenin finds the locus associated with COPD, diabetes, cancer and dementia together
-  and reads it as a possible part of a genetic signature of ageing, so the mechanism is filed as general ageing,
-  pending a mediator. No gene is named (§4.2, §6.2: a gene only at E1/E2): Open Targets 26.09 holds no variant or
-  credible set for rs1049053 and none in the MHC, so causal and effector confidence are unassessed (C4, E4; no flag,
-  nothing to cite). Age of action is unknown: no cached source gives this locus's own age bands.
+  Tier B, down from the seed's single-track A (§12): a genome-wide healthspan result with a co-occurring lifespan
+  signal and no independent replication (§4.1's B clause; §4.5 as D16 reads it). In 300,447 British UK Biobank
+  participants C delays the end of healthspan (Zenin 2019, P 1.4e-11; T, the common allele at 0.67, ends it
+  earlier), and the signal is its own, not an echo of row 38's lead (LD alone would give z 2.9 here, against 6.9
+  observed). It is not replicated: in 96,313 other UK Biobank participants, unrelated to the discovery set, it leans
+  the same way at P 0.146. Healthspan scores with a co-occurring lifespan study at p < 0.05 on the same allele and
+  direction (D16), and there is one: Timmers 2019's million parents' lives give P 1.4e-4 at rs1049053, C on the
+  long-lived side in both UK Biobank and LifeGen; AncestryDNA's mothers (Wright 2019), the one sample independent of
+  both, give P 3.3e-4 at its close proxy rs3135006 (r² 0.80, its T riding with C), 3.1e-5 with UK Biobank. A caveat
+  the tier does not carry: both lifespan results are shared with row 38. rs1049053 lies at r² 0.32 to that row's
+  genome-wide lead, and LD with that lead alone would give a z of about 3.3 at rs1049053, against 3.8 observed; no
+  cached source conditions one on the other, so whether this locus has a lifespan effect of its own is unknown.
+  At the oldest ages Timmers 2019's longevity look-up at rs3129720, the same proxy (r² 0.80), leans the same way and
+  does not pass (P 0.056 one-sided). Deelen 2019 has no row for it or a close proxy. Zenin finds the locus
+  associated with COPD, diabetes, cancer and dementia together and reads it as a possible part of a genetic
+  signature of ageing, so the mechanism is filed as general ageing, pending a mediator. No gene is named (§4.2,
+  §6.2: a gene only at E1/E2): Open Targets 26.09 holds no variant or credible set for rs1049053 and none in the
+  MHC, so causal and effector confidence are unassessed (C4, E4; no flag, nothing to cite). Age of action is
+  unknown: no cached source gives this locus's own age bands.
 axes:
-  tier: {value: C, cites: [pmid-30729179#q7, pmid-30729179#q10, pmid-30729179#q13, pmid-30642433#q23, pmid-30642433#q24, pmid-31484785#q23, db-ensembl-116#q1, db-ensembl-116#q3]}
+  tier: {value: B, cites: [pmid-30729179#q7, pmid-30729179#q10, pmid-30729179#q13, pmid-30642433#q23, pmid-30642433#q24, pmid-31484785#q23, db-ensembl-116#q1, db-ensembl-116#q3]}
   mechanism: {value: general_ageing, cites: [pmid-30729179#q11]}
   pleiotropy: {values: [broad], cites: [pmid-30729179#q11]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
