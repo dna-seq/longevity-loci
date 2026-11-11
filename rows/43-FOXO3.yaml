@@ -54,7 +54,7 @@ verdict_reason: >-
   is for macular degeneration. Abdi 2026, the seed's source, finds G carriers with angina died less often in older
   Australian men, with no difference in hypertension or diabetes: a subgroup result, context only. Causal confidence
   C4: the lead is in no lifespan-class set, and Foote's frailty set (lead PIP 0.065), multivariate since D27.3, is not what the tier
-  rests on, so it sets nothing, D25.5's reason read for a multivariate set (put to the lead; it would give C3). Effector E3: Timmers 2020's colocalisation puts two cis genes on the multivariate signal,
+  rests on, so it sets nothing (D25.5, D27.6). Effector E3: Timmers 2020's colocalisation puts two cis genes on the multivariate signal,
   FOXO3 and LINC00222 (each meets E2's colocalisation on its own, D24), and FOXO3's locus-to-gene score on the set is
   0.42, under 0.5; the tissue counts behind Timmers' line and the set's Open Targets colocalisations are not read. The
   life-extending allele goes with lower FOXO3 expression in blood there, so the row does not say G raises FOXO3.
