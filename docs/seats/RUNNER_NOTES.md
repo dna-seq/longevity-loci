@@ -13,7 +13,7 @@ Seated 2026-11-10 (account seat-10). The first-seating handout is done:
 
 ## Running jobs
 
-None (6428266 completed 2026-11-10T23:54Z), so no watcher is armed.
+None (6428266 completed 2026-11-10T23:54Z). The seat's jobs watcher follows any new one.
 
 ## Cluster facts sent to the rigger and not yet in its inventory
 
@@ -23,5 +23,5 @@ None.
 
 - kit #398, the take refused for a seat the clone declares: filed by the lead, nothing more to add here.
 - kit #410 fixed in v0.1.182: the one-shot recipe takes `ENDS=1` (`until-event.sh -- env JOB=<id> ENDS=1 bash …/watch-job.sh`).
-  The prefix watcher (`[seat.runner.watch.jobs]`, kit #380) asked of the lead 2026-11-11 for the seat table; until it
-  lands, arm the one-shot recipe after each sbatch.
+  No longer needed here: the prefix watcher `[seat.runner.watch.jobs]` (kit #380) runs since 2026-11-11, by
+  `[seat.runner.slurm] job_prefix`, and wakes this seat at each ll- job's start, requeue and end.
