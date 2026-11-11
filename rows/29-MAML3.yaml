@@ -9,7 +9,7 @@ locus_id: 29
 locus_name: MAML3
 verdict: kept
 verdict_reason: >-
-  Tier B, as the seed has it, and the strongest B so far: an independent replication that D18.3 does not let lift it.
+  Tier B, as the seed has it, with an independent replication that D18.3 does not let lift it.
   Genome-wide twice, both multivariate and sharing their inputs, so one discovery: Rosoff 2023's mvAge (P 2.0e-8,
   novel; A, the minor allele at 37 %, the healthier one; Table 7 and Table 1 anchor it, Table 6 prints it reversed) and
   Timmers 2022's aging-GIP1 at rs56172573 (r² 0.96, its C with the lead's A; P 7e-9, past the paper's own 5e-8/6).
@@ -20,8 +20,10 @@ verdict_reason: >-
   names MAML3 with HTT as the loci this sample supports. The phase holds in East Asians too (r² 0.91, C 0.33 with A
   0.31). That is §4.1's replication, same allele and direction. It does not make the row A: §4.1's first criterion
   wants a genome-wide lifespan, longevity or healthspan study, and both genome-wide results here are multivariate
-  (D18.3); none of the single inputs is genome-wide (lifespan 3.3e-4, healthspan 4.7e-4, frailty 0.0025, Deelen's 90th
-  percentile 0.020). Row 25 (HTT), replicated in the same look-up, is A because Timmers 2019 had it genome-wide. A
+  (D18.3); none of the §4.1-class inputs is genome-wide (lifespan 3.3e-4, healthspan 4.7e-4, frailty 0.0025, Deelen's
+  90th percentile 0.020). aging-GIP1's self-rated health input reaches z about 6, not a scoring class. Its sheet of
+  leads prints an adjusted estimate beside the original (β 0.014 against 0.021, P 2.5e-5), the adjustment not stated
+  in the cached text; the signal stays. Row 25 (HTT), replicated in the same look-up, is A because Timmers 2019 had it genome-wide. A
   further outside look leans the same way: AncestryDNA mothers at rs769673 (r² 0.70, D′ 0.96; its A with the lead's A),
   P 0.067, heterogeneity with UK Biobank's arm P 0.68, so no red flag (D21); the counted allele is read from Wright's
   own tables at rs6840907, as LifeGen has no row for rs769673. Healthspan is +: Zenin 2019, A delays the end of
@@ -42,7 +44,7 @@ verdict_reason: >-
   with no PROTECT token (as at row 25). Age of action is unknown. The evidence is not European only: the FinnGen and
   Biobank Japan look-up spans both.
 axes:
-  tier: {value: B, cites: [pmid-37550455#q33, pmid-37550455#q34, pmid-37550455#q35, pmid-37550455#q2, pmid-37550455#q3, pmid-37550455#q5, db-gwascatalog-2026.10.29#q200, db-gwascatalog-2026.10.29#q201, pmid-37118362#q17, pmid-37118362#q18, pmid-37118362#q20, pmid-37118362#q21, pmid-37118362#q1, pmid-37118362#q2, pmid-37118362#q4, pmid-37118362#q5, pmid-37118362#q6, pmid-37118362#q7, pmid-37118362#q19, db-ensembl-116#q169, db-ensembl-116#q170, db-ensembl-116#q171, db-ensembl-116#q172, db-ensembl-116#q173, db-ensembl-116#q174, pmid-30642433#q84, pmid-30642433#q85, pmid-31484785#q66, pmid-31484785#q67, pmid-31484785#q68, pmid-30642433#q86, db-ensembl-116#q175, db-ensembl-116#q176]}
+  tier: {value: B, cites: [pmid-37550455#q33, pmid-37550455#q34, pmid-37550455#q35, pmid-37550455#q2, pmid-37550455#q3, pmid-37550455#q5, db-gwascatalog-2026.10.29#q200, db-gwascatalog-2026.10.29#q201, pmid-37118362#q17, pmid-37118362#q18, pmid-37118362#q20, pmid-37118362#q21, pmid-37118362#q35, pmid-37118362#q36, pmid-37118362#q1, pmid-37118362#q2, pmid-37118362#q4, pmid-37118362#q5, pmid-37118362#q6, pmid-37118362#q7, pmid-37118362#q19, db-ensembl-116#q169, db-ensembl-116#q170, db-ensembl-116#q171, db-ensembl-116#q172, db-ensembl-116#q173, db-ensembl-116#q174, pmid-30642433#q84, pmid-30642433#q85, pmid-31484785#q66, pmid-31484785#q67, pmid-31484785#q68, pmid-30642433#q86, db-ensembl-116#q175, db-ensembl-116#q176]}
   mechanism: {value: smoking_lungs, cites: [db-opentargets-26.09#q461, db-opentargets-26.09#q462, db-opentargets-26.09#q463, db-opentargets-26.09#q464, db-opentargets-26.09#q465, db-opentargets-26.09#q466, db-opentargets-26.09#q467, db-opentargets-26.09#q468, db-opentargets-26.09#q469, db-gwascatalog-2026.10.29#q202, db-gwascatalog-2026.10.29#q203, db-gwascatalog-2026.10.29#q204, pmid-37118362#q22, pmid-37118362#q27, pmid-37118362#q28, pmid-37550455#q33]}
   pleiotropy: {values: ["mech:smoking", "mech:adiposity", "mech:diabetes", broad], cites: [pmid-37550455#q33, pmid-37118362#q22, pmid-37118362#q23, pmid-37118362#q24, pmid-37118362#q25, pmid-37118362#q26, pmid-37118362#q27, pmid-37118362#q28, pmid-37118362#q29, pmid-37118362#q30, pmid-37118362#q31, pmid-37118362#q32, pmid-37118362#q33, db-opentargets-26.09#q445, db-opentargets-26.09#q447, db-opentargets-26.09#q448, db-opentargets-26.09#q451, db-opentargets-26.09#q452, db-opentargets-26.09#q453, db-opentargets-26.09#q454, db-opentargets-26.09#q459, db-opentargets-26.09#q460]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
