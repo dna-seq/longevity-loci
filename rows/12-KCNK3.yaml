@@ -15,10 +15,10 @@ verdict_reason: >-
   survival to the 90th percentile in cohorts holding no UK Biobank data, OR 1.06 per G, P 0.013, and its text names
   KCNK3 first among the parental-lifespan loci with nominal support; heterogeneity there is moderate (I² 36 %, P
   0.071), not a red flag. That replication is one look-up, and thin. Deelen's cohorts share the Rotterdam Study with
-  LifeGen, a small part of its cases (6.9 % of the 90th-percentile cases, a cross-study covariance Timmers puts at
-  about 0.01), which D19.1 counts as independent. Its 99th percentile leans the same way and does not pass (OR 1.07,
-  P 0.089, power about 0.2). Timmers 2019's own look-up in earlier longevity studies, at rs11126666, is not nominal
-  (P 0.16 one-sided, same side, power about 0.7), and it is not a second test: its sources, the CHARGE and Deelen
+  LifeGen, a small part of its cases (by D19.1's read, 6.9 % of the 90th-percentile cases, with a cross-study
+  covariance Timmers puts at about 0.01; neither number is quoted here), which D19.1 counts as independent. Its 99th percentile leans the same way and does not pass (OR 1.07,
+  P 0.089; power about 0.2 by D19.1's read). Timmers 2019's own look-up in earlier longevity studies, at rs11126666, is not nominal
+  (P 0.16 one-sided, same side; power about 0.7 by D19.1's read), and it is not a second test: its sources, the CHARGE and Deelen
   2014 meta-analyses, are mostly inside Deelen 2019's, which includes many CHARGE cohorts. Neither null is a powered
   failure. AncestryDNA gives nothing at the lead: Wright 2019's nearest SNP,
   rs2891519 in the mothers (genomic-control P 1.5e-3), is not a tag (CEU r² 0.06), and its fathers' two SNPs in the
@@ -54,7 +54,7 @@ axes:
   context: {values: [eur_only_evidence], cites: [pmid-30642433#q44, pmid-31413261#q27]}
 flags:
   - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-30642433#q44, pmid-30642433#q47, db-opentargets-26.09#q108]}
-  - {token: "causal:C2", cites: [db-opentargets-26.09#q98, db-opentargets-26.09#q99, db-opentargets-26.09#q100, db-opentargets-26.09#q101, db-opentargets-26.09#q102, db-opentargets-26.09#q103, db-opentargets-26.09#q107]}
+  - {token: "causal:C2", cites: [pmid-30642433#q46, db-opentargets-26.09#q98, db-opentargets-26.09#q99, db-opentargets-26.09#q100, db-opentargets-26.09#q101, db-opentargets-26.09#q102, db-opentargets-26.09#q103, db-opentargets-26.09#q107]}
   - {token: "effector:E2", cites: [db-opentargets-26.09#q104]}
 variants:
   - rsid: rs1275922

@@ -65,14 +65,14 @@ variants:
         conclusion: >-
           You carry one copy of a less common version of this DNA region (about 25 in 100 people of European
           ancestry do). In very large British and European studies, people with this version tended to have parents
-          who lived a few months less. The same version is linked to a higher chance of autoimmune thyroid disease
+          who lived a month or two less. The same version is linked to a higher chance of autoimmune thyroid disease
           and of heart disease. It is a likely finding, not a settled one: it has not yet been confirmed in a
           separate group of people. The effect is small and it is a tendency, not destiny.
       - genotype: A/A
         state: risk
         conclusion: >-
           You carry two copies of a less common version of this DNA region (about 2 in 100 people of European
-          ancestry do). In very large British and European studies, each copy went with parents living a few months
+          ancestry do). In very large British and European studies, each copy went with parents living a month or two
           less. The same version is linked to a higher chance of autoimmune thyroid disease and of heart disease. It
           is a likely finding, not a settled one: it has not yet been confirmed in a separate group of people. The
           effect is small and it is a tendency, not destiny.
