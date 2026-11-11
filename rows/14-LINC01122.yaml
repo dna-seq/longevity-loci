@@ -17,7 +17,7 @@ verdict_reason: >-
   Timmers 2019's million parents' lives are the co-occurring lifespan study: A lengthens life at P 2.3e-5, nominal,
   UK Biobank and LifeGen on the same side. Healthspan agrees nominally: A delays the end of healthspan in Zenin
   2019's UK Biobank (P 0.033). Exceptional survival is 0: Deelen 2019's summary statistics lean to A at the 90th
-  (P 0.18) and 99th percentiles (P 0.060) and pass at neither. All three are inputs to mvAge, the same samples, so
+  (P 0.18) and 99th percentiles (P 0.060) and pass at neither. All three are inputs to mvAge (Deelen through its 90th, whose cases hold the 99th's), so
   nothing here replicates it; Wright 2019's AncestryDNA mothers have a SNP 0.25 Mb away at genomic-control P 4.5e-5,
   but no LD to the lead is known, so it is not read. The Q test (P 0.56) finds no sign that the SNP acts off the
   common factor. Mechanism: metabolism. At the lead itself the longer-life A lowers type 2 diabetes (β −0.036 per
@@ -171,5 +171,5 @@ studies:
     effect_unit: log odds of reaching the 99th percentile, per A allele
     effect_allele: A
     direction: protective
-    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), effective N 4,524; mvAge's exceptional-longevity input, not a replication"
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), effective N 4,524; its cases a subset of the 90th's, mvAge's input, so not a replication"
     curator: claude-opus-5-5
