@@ -598,3 +598,62 @@ PIP 0.13, 15 members. A lowers type 2 diabetes. No locus-to-gene score.
 A UK Biobank BMI set (GCST90013974, SuSiE-inf), led by rs6545714 (2_59080590_G_A, alt A), P 9 × 10⁻²¹, β −0.0149
 per A; rs980183 is a member (PIP 0.066). rs6545714's A travels with rs980183's A (db-ensembl-116#q55, derived), so
 the longer-life A goes with lower BMI. No locus-to-gene score.
+
+## rs78438918 (AFF3, 2_100013653_A_G), for row 15
+
+Open Targets gives β per alternate allele, here G: the mvAge set's +0.0078 is Rosoff's −0.0078 per A
+(pmid-37550455#q11), which bears that reading out.
+
+> [q130] data.variant.credibleSets count 19
+
+Nineteen credible sets hold the lead: Rosoff's mvAge, three hand-grip-strength sets, a waist-hip ratio set, a
+docosahexaenoic-acid ratio set, and thirteen expression or splicing sets (ten of them AFF3's, ENSG00000144218,
+three ENSG00000230393's). No disease set holds it.
+
+> [q131] data.credibleSet studyLocusId 63ebc186030598ff6170aee23778857e finemappingMethod PICS pValueMantissa 1 pValueExponent -8 beta 0.007838645
+
+> [q132] data.credibleSet.study id GCST90321079 traitFromSource Aging
+
+> [q133] data.credibleSet.locus count 44
+
+> [q134] data.credibleSet.locus.rows[0] posteriorProbability 0.26396338020977966 r2Overall 1 is95CredibleSet true
+
+> [q135] data.credibleSet.locus.rows[1] posteriorProbability 0.06137891285015807 r2Overall 0.8759564773546535 is95CredibleSet true
+
+Rosoff 2023's mvAge set (PICS): led by rs78438918, P 1 × 10⁻⁸, β +0.0078 per G; 44 members; the lead's PIP 0.26,
+the next 0.061. C2 (PIP 0.1-0.5): the lead is the likeliest of many, not resolved.
+
+> [q136] data.credibleSet.l2GPredictions.rows[0] score 0.9018622040748596
+
+> [q137] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol AFF3
+
+Locus-to-gene on the mvAge set: AFF3 at 0.90 (E2).
+
+> [q138] data.credibleSet studyLocusId c8ca52dba7eb1d7a05fa0ceb7d4c2701 finemappingMethod PICS pValueMantissa 4.585000038146973 pValueExponent -9 beta 0.0122074
+
+> [q139] data.credibleSet.study id GCST90014019 traitFromSource Hand grip strength left (UKB data field 46)
+
+> [q140] data.credibleSet.locus.rows[0] posteriorProbability 0.2798753662209768 r2Overall 1 is95CredibleSet true
+
+> [q141] data.credibleSet.study id gtex-v10_ge_brain_cerebellum_ensg00000144218 traitFromSource ENSG00000144218
+
+A UK Biobank hand-grip-strength set (GCST90014019, PICS), led by rs78438918 (PIP 0.28), P 4.6 × 10⁻⁹, β +0.0122
+per G: G goes with a stronger grip. Locus-to-gene AFF3 at 0.87 (q145). And GTEx v10's cerebellum expression set
+for AFF3 (q141, SuSiE), led by rs78438918 (PIP 0.14, q146), P 3 × 10⁻¹⁷, β +0.58 per G: G raises AFF3's expression
+in the cerebellum.
+
+> [q142] data.variant.credibleSets.rows[2] studyLocusId 435c0b6807d45058c1510fe1ff7e9e5f pValueMantissa 2.2450079917907715 pValueExponent -10 beta -0.007495712269800483
+
+> [q143] data.variant.credibleSets.rows[2].study id GCST90692986 traitFromSource Waist-hip ratio
+
+> [q144] data.variant.credibleSets.rows[2].variant id 2_100099129_C_T
+
+A waist-hip ratio set led by a neighbour, 2_100099129_C_T, β −0.0075 per T; the lead is a member. The neighbour's
+phase with G is not read, so the direction for G is unknown.
+
+> [q145] data.credibleSet.l2GPredictions.rows[0] score 0.869569718837738
+
+> [q146] data.credibleSet.locus.rows[0] posteriorProbability 0.13851348638621339 r2Overall null is95CredibleSet true
+
+The grip set's locus-to-gene score (AFF3, 0.87), and the cerebellum AFF3 expression set's first member, the lead,
+PIP 0.14 (SuSiE).

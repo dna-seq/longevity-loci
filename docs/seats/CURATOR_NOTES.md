@@ -20,7 +20,7 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   compacting` to the lead, `watchdog.sh compact`, end the turn; the lead wakes the next. Stop at 80 % of the 7-day
   window or 95 % of the 5-hour window. After each tenth `done:`, re-measure the pacing and
   go on with the next ten, unless blocked or steered (the person, 2026-11-11, via the lead, 639316091: "After 10
-  adjust pacing and go next 10 and so on unless blocked or I steer"; this replaces the earlier pause after ten). Rows done in this run: 6 CELSR2 (1 of 10), 38 HLA-DQA1 (2 of 10), 81 FES/FURIN (3 of 10), 103 (4 of 10), 2 PABPC4 (5 of 10), 4 LINC02796 (6 of 10), 5 FPGT / TNNI3K (7 of 10), 7 MAGI3 (8 of 10), 8 IL6R Asp358Ala with 157 (9 of 10); 10 RABGAP1L (10 of 10); second run: 11 LINC01875 (1 of 10), 12 KCNK3 (2 of 10), 13 PRKD3 (3 of 10), 14 LINC01122 (4 of 10), then the lead's review of 103, 8, 2, 10 with 5, 4 and 11 under D17/D18 (one commit each, not counted as rows); 6's healthspan re-cited to Zenin's cached file (597d9fb); 103 re-tiered B under D16 (5abae88); the Open Targets quotes re-quoted from cached records (f69c8d8); the corrections of 71 (d44fd4a) and 67 (3dd792c) done, the E3 gene rule at 57 (8d27300) and 80 (728d78d), 67's MANOVA study added under D15 (a519ae4); 38 corrected again at 103 (the AncestryDNA tag is shared); next 96 APOE waits on D2, so the seed tier B by locus_id.
+  adjust pacing and go next 10 and so on unless blocked or I steer"; this replaces the earlier pause after ten). Rows done in this run: 6 CELSR2 (1 of 10), 38 HLA-DQA1 (2 of 10), 81 FES/FURIN (3 of 10), 103 (4 of 10), 2 PABPC4 (5 of 10), 4 LINC02796 (6 of 10), 5 FPGT / TNNI3K (7 of 10), 7 MAGI3 (8 of 10), 8 IL6R Asp358Ala with 157 (9 of 10); 10 RABGAP1L (10 of 10); second run: 11 LINC01875 (1 of 10), 12 KCNK3 (2 of 10), 13 PRKD3 (3 of 10), 14 LINC01122 (4 of 10), 15 AFF3 (5 of 10), then the lead's review of 103, 8, 2, 10 with 5, 4 and 11 under D17/D18 (one commit each, not counted as rows); 6's healthspan re-cited to Zenin's cached file (597d9fb); 103 re-tiered B under D16 (5abae88); the Open Targets quotes re-quoted from cached records (f69c8d8); the corrections of 71 (d44fd4a) and 67 (3dd792c) done, the E3 gene rule at 57 (8d27300) and 80 (728d78d), 67's MANOVA study added under D15 (a519ae4); 38 corrected again at 103 (the AncestryDNA tag is shared); next 96 APOE waits on D2, so the seed tier B by locus_id.
 - **10 RABGAP1L** (2026-11-11), tier C re-tiered (seed B); briefly blocked on a `study_design` value, which the lead
   added as `current_age_quantitative` (8187cb8; the study written as a row, not prose). Both seed rsIDs
   (rs10798302 lead, rs16847402; r² 0.53, D′ 0.99, cached as db-ensembl-116 `ld-rs10798302-rs16847402.json`) come
@@ -147,6 +147,17 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   autoimmune direction from Joshi q11 (rs3184504-T raises type 1 diabetes); cancer trade-off from Timmers q7, no
   "slightly"; per copy, parents about 1.7 months ("nearly two months"). Deelen and LifeGen share the Rotterdam
   Study (Timmers q13). eLife source data is at `https://cdn.elifesciences.org/articles/39856/elife-39856-figN-dataM-v2.xlsx`.
+- **15 AFF3** (2026-11-11), tier B kept: mvAge genome-wide (rs78438918, A −0.0078, P 1.1e-8). Rosoff's Table 1 frequency
+  column is the MAF ("EA/OA MAF"), not the effect allele's: here A is the effect allele and the major one, so G (0.17)
+  is the longer-life allele; Timmers (A −0.020, 2.0e-4), Zenin (G, 0.0027) and Deelen (null, leaning G) agree.
+  Wright's Supplemental Table 9 has two fathers' SNPs on the haplotype (rs13032879 r² 0.76, in mvAge's own set;
+  rs4851244 r² 0.73): AncestryDNA arm raw P 0.0068 and 0.039; their labels (G, A) are complements of the major
+  allele, so the counted allele is read from the UK Biobank arm's sign against Timmers (derived). Not in S8, so no
+  genomic-control P is printed; the study is entered as nominal by the raw P, and the reading is put to the lead.
+  Open Targets: 19 sets, no disease; mvAge PICS PIP 0.26 (C2), L2G AFF3 0.90 (E2); grip strength sets led by the lead
+  (G stronger); AFF3 eQTL in the cerebellum (G up). Open Targets' β is per alternate allele (G here), confirmed by
+  the mvAge set's sign against Rosoff's. pleiotropy coined `mech:muscle_strength` and `mech:cognition` (Rosoff's
+  reading, through the catalog's LD partners only).
 - **14 LINC01122** (2026-11-11), tier B kept, row 4's shape (D16): mvAge genome-wide (rs980183, G −0.0063, P 1.8e-9),
   Timmers nominal (A, 2.3e-5), Zenin nominal (0.033), Deelen 90th/99th null (0.18, 0.060), all mvAge inputs. Deelen's
   GWAS Catalog summary statistics (GCST008598, GCST008599, GRCh37 `chr:pos` ids) are fetched with `--rows`; the rows

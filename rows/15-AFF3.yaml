@@ -1,0 +1,189 @@
+# The seed list's locus 15, AFF3 (2q11.2). Curated 2026-11-11, the second run's fifth row. Lead rs78438918 (Rosoff
+# 2023's mvAge, Table 1), the seed's only rsID here: an intron variant of AFF3. Wright 2019's Supplemental Table 9
+# holds two fathers' SNPs on the lead's haplotype (rs13032879, r² 0.76; rs4851244, r² 0.73); its mothers' SNPs within
+# 0.5 Mb (rs7567996, and S8's rs2309814) have no LD to the lead that Ensembl returns: unknown, not read. Open Targets
+# 26.09: 19 credible sets hold the lead, mvAge's among them; the GWAS Catalog (2026-10-29) holds Rosoff's alone.
+locus_id: 15
+locus_name: AFF3
+verdict: kept
+verdict_reason: >-
+  Tier B, as the seed has it: a genome-wide multivariate result with a co-occurring lifespan study (§4.5 as D16
+  reads it); a multivariate result does not meet tier A's first criterion (D18.3), whatever its replication.
+  Genome-wide significant only in Rosoff 2023's mvAge, the common factor behind healthspan, frailty, exceptional
+  longevity, parental lifespan and epigenetic age (P 1.1e-8, A lowering the factor, so G, the minor allele at 17 %
+  in Europeans, is on the healthier-ageing side); Rosoff lists it as novel, more than 1 Mb from every locus of the
+  five input studies. Timmers 2019's million parents' lives are the co-occurring lifespan study: G lengthens life
+  at P 2.0e-4, nominal, UK Biobank and LifeGen on the same side. Healthspan agrees nominally: G delays the end of
+  healthspan in Zenin 2019's UK Biobank (P 0.0027). Exceptional survival is 0: Deelen 2019's summary statistics lean
+  to G at the 90th (P 0.67) and 99th percentiles (P 0.25) and pass at neither. All three are inputs to mvAge, the
+  same samples. Outside them, Wright 2019's AncestryDNA fathers support the signal at rs13032879, 27 kb away, on the
+  lead's haplotype (r² 0.76) and inside mvAge's own credible set: its minor T, which travels with G, lengthens
+  fathers' lives at raw P 0.0068; the genomic-control P, Wright's own call, is not printed (the SNP is not in the
+  per-cohort table, so it is above 0.003 there). The allele the beta counts is derived from the UK Biobank arm's
+  sign, not printed. rs4851244 (r² 0.73) agrees at raw P 0.039; one signal, scored once (D17.1). The mothers' table
+  holds no SNP near the lead. The Q test (P 0.81) finds no sign that the SNP acts off the common factor. Mechanism:
+  ageing in general. The lead's 19 credible sets hold no disease: mvAge, three hand-grip-strength sets (G with a
+  stronger grip, P to 5e-9), a waist-hip ratio set led by a neighbour whose phase is not read, a fatty-acid ratio,
+  and thirteen expression or splicing sets, ten of them AFF3's (G raises AFF3 in the cerebellum, P 3e-17). Rosoff
+  reads it as a cognition locus, through the GWAS Catalog's records at the lead or its LD partners; the catalog
+  holds none at the lead itself. Association on one haplotype, not a mediator test. Actionability is descriptive.
+  The trade-off was looked for (D18.1) in the catalog's one record and the 19 sets: no harm on the G side;
+  sets led by neighbours that do not hold the lead are not read, so none detected is not none. Causal confidence C2: rs78438918 leads mvAge's credible set (PICS) at PIP 0.26 among 44
+  members, the next at 0.061, the grip set the same (0.28). Effector E2, AFF3: locus-to-gene 0.90 on the mvAge set
+  (0.87 on the grip set), and the lead is an AFF3 expression QTL. The protection is the presence of the minor G.
+  Age of action is unknown: no cached source gives this locus's own age bands.
+axes:
+  tier: {value: B, cites: [pmid-37550455#q11, pmid-37550455#q2, pmid-37550455#q3, pmid-37550455#q5, pmid-30642433#q52, pmid-30729179#q27, pmid-31413261#q33, pmid-31413261#q34, pmid-31484785#q44, pmid-31484785#q45, pmid-30642433#q53, pmid-30642433#q54, db-ensembl-116#q58, db-ensembl-116#q59, db-ensembl-116#q60, db-ensembl-116#q61, db-gwascatalog-2026.10.29#q118, db-gwascatalog-2026.10.29#q119]}
+  mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q130, db-opentargets-26.09#q139, db-opentargets-26.09#q140, db-opentargets-26.09#q141, db-opentargets-26.09#q142, db-opentargets-26.09#q143, db-opentargets-26.09#q144, db-ensembl-116#q62, db-gwascatalog-2026.10.29#q120, pmid-37550455#q11, pmid-37550455#q12]}
+  pleiotropy: {values: ["mech:muscle_strength", "mech:cognition"], cites: [db-opentargets-26.09#q138, db-opentargets-26.09#q139, db-opentargets-26.09#q140, pmid-37550455#q11, pmid-37550455#q12]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
+            cites: [pmid-30729179#q27, pmid-30642433#q52, pmid-31413261#q33, pmid-31413261#q34, pmid-37550455#q11, pmid-31484785#q44]}
+  actionability: {label: descriptive, cites: [pmid-37550455#q11, db-opentargets-26.09#q130]}
+  context: {values: [eur_only_evidence], cites: [pmid-37550455#q11, pmid-30642433#q52, pmid-31484785#q44]}
+flags:
+  - {token: "PROTECT:PRESENCE", cites: [pmid-37550455#q11, pmid-30642433#q52, db-ensembl-116#q57]}
+  - {token: "causal:C2", cites: [db-opentargets-26.09#q131, db-opentargets-26.09#q132, db-opentargets-26.09#q133, db-opentargets-26.09#q134, db-opentargets-26.09#q135]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q136, db-opentargets-26.09#q137, db-opentargets-26.09#q145]}
+variants:
+  - rsid: rs78438918
+    gene: AFF3
+    phenotype: AFF3 region, multivariate healthy ageing
+    trait_efo_id: EFO_0007796
+    effect_allele: G
+    effect_size: 0.0078
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: A/A
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA region, the one most people of European ancestry
+          have (about 70 in 100). It is the reference the other combinations are compared with. The region, on
+          chromosome 2, lies inside the AFF3 gene. The finding comes from people of European ancestry; less is
+          known elsewhere.
+      - genotype: A/G
+        state: protective
+        conclusion: >-
+          You carry one copy of a less common version of this DNA region (about 28 in 100 people of European
+          ancestry do). In very large European studies that combined healthspan, frailty, long life and biological
+          age into one measure, this version went with slightly healthier ageing, and parents of carriers lived a
+          little longer. The same version goes with a slightly stronger grip. It is a likely finding, not a
+          settled one: it rests on one combined analysis, with only weak support from a separate group of people.
+          The effect is small and it is a tendency, not a guarantee.
+      - genotype: G/G
+        state: protective
+        conclusion: >-
+          You carry two copies of a less common version of this DNA region (about 3 in 100 people of European
+          ancestry do). In very large European studies that combined healthspan, frailty, long life and biological
+          age into one measure, each copy went with slightly healthier ageing, and parents of carriers lived a
+          little longer. The same version goes with a slightly stronger grip. It is a likely finding, not a
+          settled one: it rests on one combined analysis, with only weak support from a separate group of people.
+          The effect is small and it is a tendency, not a guarantee.
+studies:
+  - rsid: rs78438918
+    note: pmid-37550455
+    quote: q11
+    phenotype_class: MULTIVARIATE_AGEING
+    study_design: multivariate_healthspan_lifespan
+    population: European (the five input GWAS, UK Biobank and LifeGen among them; effective n 1,958,774)
+    ancestry: [EUR]
+    stat_significance: significant
+    p_value: "1.07E-08"
+    p_value_num: 1.07e-08
+    effect_size: -0.0078
+    effect_measure: beta
+    effect_unit: mvAge factor per A allele (no conventional unit; positive = healthier ageing)
+    effect_allele: A
+    direction: risk
+    statistical_test: "Genomic SEM common-factor GWAS of healthspan, frailty, exceptional longevity, parental lifespan and PhenoAge acceleration (Table 1, novel lead; the frequency column is the minor allele's, G's); Q P 0.81; pools the samples of the component studies, not a replication (q5)"
+    curator: claude-opus-5-5
+  - rsid: rs78438918
+    note: pmid-30642433
+    quote: q52
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.00020352091"
+    p_value_num: 0.00020352091
+    effect_size: -0.02000665
+    effect_measure: beta
+    effect_unit: log hazard protection per A allele in self (negative = shorter life)
+    effect_allele: A
+    direction: risk
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), n 640,150, direction -- in UK Biobank and LifeGen, info 0.978; the co-occurring lifespan study (D16), an input of mvAge and not a replication"
+    curator: claude-opus-5-5
+  - rsid: rs78438918
+    note: pmid-31484785
+    quote: q44
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_linear
+    population: AncestryDNA customers' fathers (mostly European American)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.006752"
+    p_value_num: 0.006752
+    proxy_rsid: rs13032879
+    effect_size: 0.009711
+    effect_measure: beta
+    effect_unit: fathers' lifespan per T allele of rs13032879 (printed label G, the complement of the other allele C; positive = longer)
+    effect_allele: T
+    direction: protective
+    statistical_test: "Supplemental Table 9, the AncestryDNA arm of the fathers' meta-analysis, raw P (beta/SE); the genomic-control P, Wright's own call, is not printed: rs13032879 is not in Supplemental Table 8, so it is above 0.003 in each birth cohort there; the counted allele derived from the UK Biobank arm's sign against Timmers' summary statistics (pmid-30642433#q53); rs13032879 r² 0.76, D′ 0.88 to the lead, its T with G by EUR frequency (db-ensembl-116#q58, q60, derived), and a member of mvAge's credible set; independent of mvAge's inputs; rs4851244 (r² 0.73) agrees at raw P 0.039 (q45), the same signal (D17.1); UK Biobank arm P 0.0022, heterogeneity P 0.95"
+    curator: claude-opus-5-5
+  - rsid: rs78438918
+    note: pmid-30729179
+    quote: q27
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "0.00268"
+    p_value_num: 0.00268
+    effect_size: -0.0203
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per G allele (positive = earlier)
+    effect_allele: G
+    direction: protective
+    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), -log10 P 2.572; mvAge's healthspan input, the same sample"
+    curator: claude-opus-5-5
+  - rsid: rs78438918
+    note: pmid-31413261
+    quote: q33
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.6659"
+    p_value_num: 0.6659
+    effect_size: -0.0113
+    effect_measure: beta
+    effect_unit: log odds of reaching the 90th percentile, per A allele
+    effect_allele: A
+    direction: risk
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008598), effective N 11,615; mvAge's exceptional-longevity input, not a replication"
+    curator: claude-opus-5-5
+  - rsid: rs78438918
+    note: pmid-31413261
+    quote: q34
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.2507"
+    p_value_num: 0.2507
+    effect_size: -0.0452
+    effect_measure: beta
+    effect_unit: log odds of reaching the 99th percentile, per A allele
+    effect_allele: A
+    direction: risk
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), effective N 4,524; mvAge's exceptional-longevity input, not a replication"
+    curator: claude-opus-5-5

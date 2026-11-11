@@ -233,3 +233,32 @@ rs6545714's A is 0.62 in 1000 Genomes EUR, as rs980183's A is (q52): at r² 0.97
 from the frequencies, not a phased call). Wright 2019's four AncestryDNA mothers' SNPs within 0.5 Mb (rs7593324,
 rs10210385, rs1796435, rs13416859) are absent from the window and their pairwise calls render no text in EUR or CEU,
 with the r² floor off: unknown, not read.
+
+## rs78438918 (AFF3), for row 15
+
+> [q56] mappings[0] seq_region_name 2 ancestral_allele A end 100013653 assembly_name GRCh38 strand 1 location 2:100013653-100013653 start 100013653 coord_system chromosome allele_string A/G
+
+rs78438918 at 2:100,013,653 (GRCh38; 2:100,630,115 in GRCh37), A/G, A ancestral; an intron variant of AFF3.
+
+> [q57] populations[76] allele G allele_count 167 population 1000GENOMES:phase_3:EUR frequency 0.166003976143141
+
+1000 Genomes EUR: G 0.166, A 0.834. G/G about 3 in 100, A/G about 28, A/A about 70 (Hardy-Weinberg).
+
+> [q58] [173] r2 0.756567 variation1 rs78438918 population_name 1000GENOMES:phase_3:EUR d_prime 0.882269 variation2 rs13032879
+
+> [q59] [107] variation1 rs78438918 r2 0.730283 variation2 rs4851244 d_prime 0.909249 population_name 1000GENOMES:phase_3:EUR
+
+Ensembl's LD window (`ld-window500-rs78438918.json`, EUR, r² ≥ 0.1): Wright 2019's fathers' SNPs rs13032879 (r²
+0.76, D′ 0.88) and rs4851244 (r² 0.73, D′ 0.91).
+
+> [q60] populations[76] frequency 0.169980119284294 population 1000GENOMES:phase_3:EUR allele T allele_count 171
+
+> [q61] populations[76] allele_count 185 population 1000GENOMES:phase_3:EUR frequency 0.18389662027833 allele C
+
+EUR: rs13032879 T 0.17, rs4851244 C 0.18, each the minor allele, as the lead's G (0.17) is. An r² above 0.7 between
+two SNPs with minor alleles near 0.17 is only reachable with minor on minor, so each minor travels with G (derived
+from the frequencies, not a phased call).
+
+> [q62] . version 22 db_type core biotype protein_coding seq_region_name 2 start 99545419 end 100192469 assembly_name GRCh38 id ENSG00000144218 display_name AFF3 description ALF transcription elongation factor 3 [Source:HGNC Symbol;Acc:HGNC:6473] logic_name ensembl_havana_gene_homo_sapiens strand -1 canonical_transcript ENST00000672756.2 source ensembl_havana object_type Gene species homo_sapiens
+
+ENSG00000144218 is AFF3, a protein-coding gene: the gene the eQTL sets of db-opentargets-26.09#q141 measure.

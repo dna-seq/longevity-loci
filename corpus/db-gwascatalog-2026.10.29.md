@@ -390,3 +390,15 @@ Verma 2024: G raises blood glucose (P 4 × 10⁻¹²).
 Sakaue 2021: A lowers triglycerides (P 1 × 10⁻⁸). At the lead itself the longer-life A lowers type 2 diabetes,
 glucose and triglycerides; nine NMR lipid-ratio records (Zoodsma 2025) state A and a tiny percentage. No record at
 rs980183 puts harm on A.
+
+## rs78438918 (AFF3), for row 15
+
+> [q118] _embedded.associations[0] association_id 131476527 risk_frequency NR pvalue_description pvalue_mantissa 1 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.0052-0.0105] beta 0.007838645 unit decrease p_value 1e-08 accession_id GCST90321079 pubmed_id 37550455 first_author Rosoff DB ci_lower 0.0052 ci_upper 0.0105
+
+> [q119] _embedded.associations[0].snp_allele[0] rs_id rs78438918 effect_allele A
+
+Rosoff 2023's mvAge (GCST90321079): A, β 0.0078 "decrease", P 1 × 10⁻⁸; the paper's Table 1 (pmid-37550455#q11).
+
+> [q120] page size 50 totalElements 1 totalPages 1 number 0
+
+The only association the catalog holds at rs78438918.
