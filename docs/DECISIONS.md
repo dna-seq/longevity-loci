@@ -292,3 +292,6 @@ person's standing word.
    tissue) meets it; with no Open Targets record, D24's rival check could not run, and the row says so rather than
    reading that as no rival (as 57's single adipose QTL). The curator's default E4 rejected: it would file an
    assessed colocalisation as unassessed.
+   The mean is over leads that hold up in the look-up's own cohort: leads that themselves fail there (36's PRKD3 and
+   CELF2, rare and sex-specific) pull the factor toward zero and would clear every flag by construction. With only
+   MUC5B left, the mean is unknown and 36 is B (the curator's (a)).
