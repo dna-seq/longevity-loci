@@ -20,7 +20,7 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   compacting` to the lead, `watchdog.sh compact`, end the turn; the lead wakes the next. Stop at 80 % of the 7-day
   window or 95 % of the 5-hour window. After each tenth `done:`, re-measure the pacing and
   go on with the next ten, unless blocked or steered (the person, 2026-11-11, via the lead, 639316091: "After 10
-  adjust pacing and go next 10 and so on unless blocked or I steer"; this replaces the earlier pause after ten). Rows done in this run: 6 CELSR2 (1 of 10), 38 HLA-DQA1 (2 of 10), 81 FES/FURIN (3 of 10), 103 (4 of 10), 2 PABPC4 (5 of 10), 4 LINC02796 (6 of 10), 5 FPGT / TNNI3K (7 of 10), 7 MAGI3 (8 of 10), 8 IL6R Asp358Ala with 157 (9 of 10); 10 RABGAP1L (10 of 10); second run: 11 LINC01875 (1 of 10), 12 KCNK3 (2 of 10), 13 PRKD3 (3 of 10), 14 LINC01122 (4 of 10), 15 AFF3 (5 of 10), 16 LRP1B (6 of 10), then the lead's review of 103, 8, 2, 10 with 5, 4 and 11 under D17/D18 (one commit each, not counted as rows); 6's healthspan re-cited to Zenin's cached file (597d9fb); 103 re-tiered B under D16 (5abae88); the Open Targets quotes re-quoted from cached records (f69c8d8); the corrections of 71 (d44fd4a) and 67 (3dd792c) done, the E3 gene rule at 57 (8d27300) and 80 (728d78d), 67's MANOVA study added under D15 (a519ae4); 38 corrected again at 103 (the AncestryDNA tag is shared); next 96 APOE waits on D2, so the seed tier B by locus_id.
+  adjust pacing and go next 10 and so on unless blocked or I steer"; this replaces the earlier pause after ten). Rows done in this run: 6 CELSR2 (1 of 10), 38 HLA-DQA1 (2 of 10), 81 FES/FURIN (3 of 10), 103 (4 of 10), 2 PABPC4 (5 of 10), 4 LINC02796 (6 of 10), 5 FPGT / TNNI3K (7 of 10), 7 MAGI3 (8 of 10), 8 IL6R Asp358Ala with 157 (9 of 10); 10 RABGAP1L (10 of 10); second run: 11 LINC01875 (1 of 10), 12 KCNK3 (2 of 10), 13 PRKD3 (3 of 10), 14 LINC01122 (4 of 10), 15 AFF3 (5 of 10), 16 LRP1B (6 of 10), 17 CASP8 (7 of 10), then the lead's review of 103, 8, 2, 10 with 5, 4 and 11 under D17/D18 (one commit each, not counted as rows); 6's healthspan re-cited to Zenin's cached file (597d9fb); 103 re-tiered B under D16 (5abae88); the Open Targets quotes re-quoted from cached records (f69c8d8); the corrections of 71 (d44fd4a) and 67 (3dd792c) done, the E3 gene rule at 57 (8d27300) and 80 (728d78d), 67's MANOVA study added under D15 (a519ae4); 38 corrected again at 103 (the AncestryDNA tag is shared); next 96 APOE waits on D2, so the seed tier B by locus_id.
 - **10 RABGAP1L** (2026-11-11), tier C re-tiered (seed B); briefly blocked on a `study_design` value, which the lead
   added as `current_age_quantitative` (8187cb8; the study written as a row, not prose). Both seed rsIDs
   (rs10798302 lead, rs16847402; r² 0.53, D′ 0.99, cached as db-ensembl-116 `ld-rs10798302-rs16847402.json`) come
@@ -147,6 +147,16 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   autoimmune direction from Joshi q11 (rs3184504-T raises type 1 diabetes); cancer trade-off from Timmers q7, no
   "slightly"; per copy, parents about 1.7 months ("nearly two months"). Deelen and LifeGen share the Rotterdam
   Study (Timmers q13). eLife source data is at `https://cdn.elifesciences.org/articles/39856/elife-39856-figN-dataM-v2.xlsx`.
+- **17 CASP8** (2026-11-11), tier C re-tiered (seed B), advisor-checked. Lead rs10197246, Zenin 2019's healthspan
+  SNP (Table 2 q28, C 3.67e-9 GC, replicated 2.43e-4 under 0.05/12). Supplementary Data 5 and 7 cached
+  (`MOESM7`, `MOESM9`; MOESM number = SD number + 2, checked against the text's citations): SD7 shows the signal is
+  cancer only (9.8e-18; all-but-cancer 0.97), parents' death 0.80, own death 0.67. Timmers 0.066 (q55), Deelen
+  null (q35, q36): D16 gives C. Wright S8 has nominal SNPs at 85 and 118 kb whose LD Ensembl does not return; read
+  as not tags from the frequency bound (max r² = p1(1-p2)/(p2(1-p1)), about 0.19), a rule worth reusing where LD
+  is missing. First QTL colocalisation read: Open Targets' `colocalisation` returns GWAS partners only unless
+  `studyTypes` names the QTL types. FLACC1 meets E1's letter (L2G 0.555 + 7 eQTL colocs), CASP8 has 217 QTL colocs
+  and the lead's own top QTL: filed E3, no gene, as a call for the lead. Category skin_sun (skin cancers, keratoses,
+  facial ageing dominate) with mech:cancer for breast, prostate, oesophagus: also a call.
 - **16 LRP1B** (2026-11-11), tier C re-tiered (seed B), advisor-checked. Lead rs117898573, Chang 2022's
   Singapore Chinese healthy-ageing GWAS (1,618 healthy agers against 6,221 survivors who were not; T 0.029, OR 2.43,
   meta P 2.59e-8; same-cohort replication of 129 cases P 0.70, uninformative, not flagged replication_failed;

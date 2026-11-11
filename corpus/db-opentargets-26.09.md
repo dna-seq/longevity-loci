@@ -695,3 +695,75 @@ Open Targets 26.09 has no record of 2_142119915_C_T (`variant-sets-2_142119915_C
 Chang 2022's study is in the platform (GCST90132317, n 7,210, the discovery arm) with one credible set, at the
 chromosome 5 lead rs138499810: none at LRP1B. No fine-mapping and no locus-to-gene score for rs117898573 (causal C4,
 effector E4).
+
+## rs10197246 (CASP8 / FLACC1), for row 17
+
+> [q158] data.variant.credibleSets count 81
+
+> [q159] data.variant.credibleSets.rows[0] studyLocusId 00c38262c4439c76852867d7fb2beab3 pValueMantissa 1.4419573545455933 pValueExponent -9 beta -0.010883614063089686
+
+> [q160] data.variant.credibleSets.rows[0].study id GCST007406 traitFromSource Healthspan
+
+The variant (2_201340018_T_C, alternative allele C) is in 81 credible sets. It leads Zenin's healthspan set
+(GCST007406), β −0.0109 for C, P 1.4 × 10⁻⁹.
+
+> [q161] data.variant.credibleSets.rows[72] studyLocusId e60bc7e285ea1e1b42575a6df4cfb536 pValueMantissa 9.395000457763672 pValueExponent -39 beta -0.019308328170980823
+
+> [q162] data.variant.credibleSets.rows[72].study id GCST90475577 traitFromSource Melanomas of skin, dx or hx (PheCode 172.1)
+
+> [q163] data.variant.credibleSets.rows[58] studyLocusId ad82cd3dded0c69bf44a0456070fb139 pValueMantissa 1.0269999504089355 pValueExponent -24 beta -0.0234217779231829
+
+> [q164] data.variant.credibleSets.rows[58].study id FINNGEN_R12_C3_CANCER_EXALLC traitFromSource Malignant neoplasm, excluding all cancers (controls excluding all cancers)
+
+> [q165] data.variant.credibleSets.rows[30] studyLocusId 5ee8576cd8aa7946a468762e44a2003b pValueMantissa 2.48799991607666 pValueExponent -14 beta -0.0406445957458592
+
+> [q166] data.variant.credibleSets.rows[30].study id FINNGEN_R12_C3_BREAST_EXALLC traitFromSource Malignant neoplasm of breast, excluding all cancers (controls excluding all cancers)
+
+It also leads the sets of skin melanoma in UK Biobank (GCST90475577, C β −0.019, P 9.4 × 10⁻³⁹), FinnGen R12's all
+malignant neoplasms (C −0.023, P 1.0 × 10⁻²⁴) and FinnGen's breast cancer (C −0.041, P 2.5 × 10⁻¹⁴): C lowers each, the
+healthspan side. The other 77 sets include basal-cell and squamous-cell skin cancer, oesophageal squamous-cell
+carcinoma, blood-cell counts and many CASP8 transcript and splicing QTLs (read, not each quoted).
+
+> [q167] data.variant.credibleSets.rows[8] studyLocusId 271b549e92b548a38c493e105f9f66d9 pValueMantissa 1.2109999656677246 pValueExponent -63 beta -0.729308
+
+> [q168] data.variant.credibleSets.rows[8].study id gtex-v10_tx_nerve_tibial_enst00000339403 traitFromSource ENST00000339403
+
+The lead itself leads a CASP8 transcript QTL in tibial nerve (ENST00000339403, a CASP8 transcript; P 1.2 × 10⁻⁶³).
+
+> [q169] data.credibleSet studyLocusId 00c38262c4439c76852867d7fb2beab3 finemappingMethod SuSiE-inf pValueMantissa 1.4419573545455933 pValueExponent -9 beta -0.010883614063089686
+
+> [q170] data.credibleSet.locus.rows[0] posteriorProbability 0.12556739322186256 r2Overall null is95CredibleSet true
+
+> [q171] data.credibleSet.locus.rows[10] posteriorProbability 0.025616056016237808 r2Overall null is95CredibleSet true
+
+The healthspan set (SuSiE-inf): 11 variants in the 95 % set, rs10197246 the highest at PIP 0.126 (the 11th 0.026).
+Causal C2 (in a set, PIP 0.1 to 0.5).
+
+> [q172] data.credibleSet.l2GPredictions.rows[0] score 0.5551297664642334
+
+> [q173] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol FLACC1
+
+> [q174] data.credibleSet.l2GPredictions.rows[1] score 0.1901630461215973
+
+> [q175] data.credibleSet.l2GPredictions.rows[1].target approvedSymbol CASP8
+
+Locus-to-gene: FLACC1 0.555, CASP8 0.190.
+
+> [q176] data.credibleSet.colocalisation count 235
+
+> [q177] data.credibleSet.colocalisation.rows[111] colocalisationMethod COLOC_PIP_ECAVIAR h4 0.9887033787525517 clpp 0.07665679585887168 rightStudyType eqtl
+
+> [q178] data.credibleSet.colocalisation.rows[111].otherStudyLocus.study.target approvedSymbol FLACC1
+
+> [q179] data.credibleSet.colocalisation.rows[2] colocalisationMethod COLOC_PIP_ECAVIAR h4 0.9549020516130204 clpp 0.018997296365495152 rightStudyType eqtl
+
+> [q180] data.credibleSet.colocalisation.rows[2].otherStudyLocus.study id brainseq_ge_brain_ensg00000064012 traitFromSource ENSG00000064012 studyType eqtl
+
+> [q181] data.credibleSet.colocalisation.rows[2].otherStudyLocus.study.target approvedSymbol CASP8
+
+QTL colocalisation of the healthspan set (`studyTypes` set to the QTL types; the default returned GWAS partners
+only): 235 colocalisations over two pages (`coloc-qtl-…`, `coloc-qtl-p1-…`). At H4 ≥ 0.8, 217 are CASP8 (88 eQTL, 60
+sQTL, 69 transcript-usage QTL, across GTEx and other panels), 7 FLACC1 eQTL (skin, adipose, breast, oesophagus,
+cerebellum; q177, q178) and 1 TRAK2 exon QTL (counted from the cached pages, not each quoted). So FLACC1 meets E1 on
+the letter (locus-to-gene ≥ 0.5 and a cis-QTL colocalisation) while CASP8 colocalises far more widely and holds the
+lead's own strongest QTL (q167): two genes each meet a criterion, the ambiguity of E3. For row 17.

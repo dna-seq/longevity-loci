@@ -283,3 +283,27 @@ East Asian frequencies of T: 1000 Genomes EAS 0.025 (CHB 0.039), gnomAD East Asi
 
 Europeans: C in all 1,006 1000 Genomes EUR chromosomes, T 2.9 × 10⁻⁵ in gnomAD non-Finnish Europeans (2 alleles).
 The variant is absent from European lifespan, healthspan and longevity data, so it is untested there, not null.
+
+## rs10197246 (CASP8 / FLACC1), for row 17
+
+> [q69] mappings[0] location 2:201340018-201340018 ancestral_allele C assembly_name GRCh38 start 201340018 strand 1 end 201340018 seq_region_name 2 allele_string T/A/C/G coord_system chromosome
+
+rs10197246 at 2:201,340,018 (GRCh38; GRCh37 202,204,741), T/A/C/G as dbSNP lists it, an intron variant; the alleles
+in the papers are C and T.
+
+> [q70] populations[77] population 1000GENOMES:phase_3:EUR frequency 0.290258449304175 allele T allele_count 292
+
+> [q71] populations[20] population gnomADg:nfe allele C allele_count 48964 frequency 0.7207
+
+European frequencies: T 0.29 in 1000 Genomes EUR; C 0.72 in gnomAD non-Finnish Europeans (Zenin's 0.734). By
+Hardy-Weinberg about 52 in 100 Europeans are C/C, 40 C/T and 8 T/T.
+
+> [q72] populations[77] allele_count 73 frequency 0.0725646123260437 population 1000GENOMES:phase_3:EUR allele C
+
+> [q73] populations[74] allele C population 1000GENOMES:phase_3:EUR frequency 0.0546719681908549 allele_count 55
+
+> [q74] mappings[0] assembly_name GRCh38 allele_string T/A/C seq_region_name 2 end 201458233 coord_system chromosome strand 1 location 2:201458233-201458233 ancestral_allele T start 201458233
+
+Wright 2019's two nearby S8 SNPs (pmid-31484785#q47, q48): rs3754935's C is 0.073 in 1000 Genomes EUR; rs1009276's C
+(T/A/C on the forward strand, so Wright's G is the other strand's C) is 0.055. Between a 0.05 to 0.07 allele and the
+lead's 0.29 the largest possible r² is p₁(1 − p₂) / (p₂(1 − p₁)), about 0.19 and 0.14: neither is a tag.

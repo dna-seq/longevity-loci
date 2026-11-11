@@ -1,0 +1,183 @@
+# The seed list's locus 17, CASP8 (2q33.1; the seed's genes "CASP8;FLACC1"). Curated 2026-11-11, the second run's
+# seventh row. Lead rs10197246 (Zenin 2019's healthspan SNP, Table 2; the paper names it by its nearest gene
+# ALS2CR12, FLACC1's former symbol), the seed's only rsID here: an intron variant of FLACC1, C 0.72 in Europeans.
+# In Timmers 2019's and Deelen 2019's summary statistics at the lead itself; Wright 2019's S8 has two SNPs within
+# 0.12 Mb (rs3754935, rs1009276), neither a tag (minor alleles 5 to 7 % against the lead's 29 %).
+locus_id: 17
+locus_name: CASP8
+verdict: re-tiered
+verdict_reason: >-
+  Tier C, down from the seed's B: a genome-wide and replicated healthspan result with no co-occurring lifespan
+  study, so it cannot score (§4.5 as D16 reads it) and stays in the research view. In 300,447 British UK Biobank
+  participants the common C delays the end of healthspan (Zenin 2019, β −0.033 on the log hazard, P 3.67e-9 after
+  genomic control), and the paper's replication in 96,313 other UK Biobank participants, unrelated to them, holds it
+  (β −0.035, P 2.4e-4, under its 0.05/12 threshold). The healthspan signal is cancer's alone: tested against each
+  component, C lowers the cancer hazard (P 9.8e-18) and nothing else (all but cancer P 0.97). Lifespan is filed 0:
+  Zenin's own parents'-death meta-analysis is null (P 0.80), own death is null (0.67), and Timmers 2019's summary
+  statistics lean the same way at P 0.066, short of the p < 0.05 that D16 asks. Exceptional survival is 0: Deelen 2019's
+  90th and 99th percentiles are null (P 0.39, 0.66, opposite leanings). Wright 2019's AncestryDNA mothers (rs3754935,
+  85 kb, genomic-control P 4.2e-4) and fathers (rs1009276, 118 kb, P 2.8e-3) have nominal SNPs nearby, but neither
+  can tag the lead (their minor alleles, 5 to 7 % in Europeans, cap r² with a 29 % allele near 0.19; Ensembl returns
+  no pair at its 0.05 floor), so they are not this locus's lifespan signal. The variant is one of the strongest
+  common skin-melanoma signals (T the risk allele, P 9e-39) and leads Open Targets' sets for all cancers and breast
+  cancer in FinnGen; its credible sets are mostly skin cancers (basal-cell, squamous-cell, melanoma), keratoses and
+  facial ageing, with breast, prostate and oesophageal cancer beside them, so the mechanism is filed as skin and sun
+  with mech:cancer. Dementia (P 0.014 the other way, one of nine uncorrected component tests) is not read as a
+  trade-off. Causal C2: the lead tops an 11-variant SuSiE set at PIP 0.13. Effector E3, no gene named: FLACC1 has the
+  locus-to-gene score (0.56) and seven eQTL colocalisations, which meets E1 on the letter, while CASP8 colocalises
+  in 217 QTL sets and holds the lead's own strongest QTL (a CASP8 transcript, P 1e-63); two genes each meet a
+  criterion. The protection is the absence of the risk allele T (the common C protects). Age of action is unknown.
+axes:
+  tier: {value: C, cites: [pmid-30729179#q28, pmid-30729179#q29, pmid-30729179#q33, pmid-30729179#q34, pmid-30642433#q55, pmid-31413261#q35, pmid-31413261#q36, pmid-31484785#q47, pmid-31484785#q48, db-ensembl-116#q70, db-ensembl-116#q72, db-ensembl-116#q73]}
+  mechanism: {value: skin_sun, cites: [pmid-30729179#q30, pmid-30729179#q34, db-gwascatalog-2026.10.29#q124, db-gwascatalog-2026.10.29#q126, db-opentargets-26.09#q161, db-opentargets-26.09#q162]}
+  pleiotropy: {values: ["mech:cancer"], cites: [pmid-30729179#q30, pmid-30729179#q34, db-opentargets-26.09#q163, db-opentargets-26.09#q164, db-opentargets-26.09#q165, db-opentargets-26.09#q166, db-gwascatalog-2026.10.29#q127]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "0", exceptional_survival: "0",
+            cites: [pmid-30729179#q28, pmid-30729179#q34, pmid-30642433#q55, pmid-31413261#q35, pmid-31413261#q36]}
+  actionability: {label: descriptive, cites: [pmid-30729179#q34]}
+  context: {values: [eur_only_evidence], cites: [pmid-30729179#q28, pmid-30729179#q33]}
+flags:
+  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-30729179#q28, db-ensembl-116#q71]}
+  - {token: "causal:C2", cites: [db-opentargets-26.09#q169, db-opentargets-26.09#q170, db-opentargets-26.09#q171]}
+  - {token: "effector:E3", cites: [db-opentargets-26.09#q172, db-opentargets-26.09#q173, db-opentargets-26.09#q174, db-opentargets-26.09#q175, db-opentargets-26.09#q176, db-opentargets-26.09#q177, db-opentargets-26.09#q178, db-opentargets-26.09#q179, db-opentargets-26.09#q180, db-opentargets-26.09#q181, db-opentargets-26.09#q167, db-opentargets-26.09#q168]}
+variants:
+  - rsid: rs10197246
+    gene: ""
+    phenotype: CASP8 region, cancer-free healthspan
+    trait_efo_id: EFO_0009762
+    effect_allele: C
+    effect_size: -0.033
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: C/C
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA region, the one most people of European ancestry
+          have (about 52 in 100). It is the reference the other combinations are compared with. The region, on
+          chromosome 2, lies near the CASP8 gene, which helps damaged cells die off, and it is not yet clear which
+          gene matters. The finding comes from people of European ancestry; less is known elsewhere.
+      - genotype: C/T
+        state: risk
+        conclusion: >-
+          You carry one copy of a less common version of this DNA region (about 40 in 100 people of European
+          ancestry do). In a very large British study, confirmed in a second group, this version went with a
+          slightly earlier first major disease, and the difference was all in cancer, skin cancer above all. It
+          did not clearly shorten life itself. The effect is small and it is a tendency, not a verdict; sun
+          protection and skin checks matter for everyone.
+      - genotype: T/T
+        state: risk
+        conclusion: >-
+          You carry two copies of a less common version of this DNA region (about 8 in 100 people of European
+          ancestry do). In a very large British study, confirmed in a second group, each copy went with a slightly
+          earlier first major disease, and the difference was all in cancer, skin cancer above all. It did not
+          clearly shorten life itself. The effect is small and it is a tendency, not a verdict; sun protection and
+          skin checks matter for everyone.
+studies:
+  - rsid: rs10197246
+    note: pmid-30729179
+    quote: q28
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "3.67e-09"
+    p_value_num: 3.67e-09
+    effect_size: -0.033
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per C allele (negative = later)
+    effect_allele: C
+    direction: protective
+    statistical_test: "Cox-Gompertz Martingale-residual GWAS of the first of the age-related diseases or death (Table 2), P after genomic control (the paper's own call, D17.3); raw P 1.42e-9 (q33; summary statistics -log10 P 8.848, q32); by component, cancer alone (q34)"
+    curator: claude-opus-5-5
+  - rsid: rs10197246
+    note: pmid-30729179
+    quote: q28
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: UK Biobank participants outside the discovery set (81,099 other European, and African, South Asian, Chinese and Caribbean), unrelated to it
+    ancestry: [EUR, AFR, SAS, EAS]
+    sample_size: 96313
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "2.43e-04"
+    p_value_num: 0.000243
+    effect_size: -0.035
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per C allele (negative = later)
+    effect_allele: C
+    direction: protective
+    statistical_test: "Replication (Table 2, βrep and prep), meta-analysis of the five ancestry groups, passing the paper's P < 0.05/12 (q29); the first group, read as the Europeans, β −0.041, P 6.1e-5, the others null (q33); independent individuals of the same biobank (q12, q13)"
+    curator: claude-opus-5-5
+  - rsid: rs10197246
+    note: pmid-30729179
+    quote: q34
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank, genomically British; the participants' parents)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.797"
+    p_value_num: 0.797
+    effect_size: -0.001
+    effect_measure: beta
+    effect_unit: log hazard of a parent's death per C allele in the offspring (negative = later)
+    effect_allele: C
+    direction: protective
+    statistical_test: "Supplementary Data 7, parents' death (meta-analysis of fathers, P 0.30, and mothers, P 0.45), Cox model in the discovery sample; own death β −0.007, P 0.67; null"
+    curator: claude-opus-5-5
+  - rsid: rs10197246
+    note: pmid-30642433
+    quote: q55
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.065951954"
+    p_value_num: 0.065951954
+    effect_size: -0.00799314
+    effect_measure: beta
+    effect_unit: log hazard protection per T allele in self (negative = shorter life)
+    effect_allele: T
+    direction: risk
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), direction -- in UK Biobank and LifeGen; the same side as healthspan, short of p < 0.05, so not D16's co-occurring lifespan study; the UK Biobank part overlaps Zenin's sample"
+    curator: claude-opus-5-5
+  - rsid: rs10197246
+    note: pmid-31413261
+    quote: q35
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.3862"
+    p_value_num: 0.3862
+    effect_size: -0.0183
+    effect_measure: beta
+    effect_unit: log odds of reaching the 90th percentile, per T allele
+    effect_allele: T
+    direction: risk
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008598), effective N 11,615"
+    curator: claude-opus-5-5
+  - rsid: rs10197246
+    note: pmid-31413261
+    quote: q36
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.6638"
+    p_value_num: 0.6638
+    effect_size: 0.0144
+    effect_measure: beta
+    effect_unit: log odds of reaching the 99th percentile, per T allele
+    effect_allele: T
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), effective N 4,524; leans opposite to the 90th"
+    curator: claude-opus-5-5

@@ -413,3 +413,21 @@ The only association the catalog holds at rs78438918.
 
 The catalog's only association at rs117898573: Chang 2022's healthy ageing (GCST90132317), T, P 3 × 10⁻⁸; its
 "beta 0.889 unit increase" is the log of the paper's OR 2.433 (pmid-35927272#q2).
+
+## rs10197246 (CASP8 / FLACC1), for row 17
+
+> [q124] _embedded.associations[0] association_id 228297633 risk_frequency 0.2775 pvalue_description pvalue_mantissa 7 pvalue_exponent -32 multi_snp_haplotype false snp_interaction false range [0.078-0.113] beta 0.09548 unit increase p_value 7.000000000000001e-32 accession_id GCST90479794 pubmed_id 39024449 first_author Verma A ci_lower 0.078 ci_upper 0.113
+
+> [q125] _embedded.associations[0].snp_allele[0] rs_id rs10197246 effect_allele T
+
+> [q126] _embedded.associations[1] association_id 228262050 risk_frequency 0.2803 pvalue_description pvalue_mantissa 9 pvalue_exponent -39 multi_snp_haplotype false snp_interaction false range [0.081-0.112] beta 0.09654 unit increase p_value 8.999999999999999e-39 accession_id GCST90475577 pubmed_id 39024449 first_author Verma A ci_lower 0.081 ci_upper 0.112
+
+> [q127] _embedded.associations[2] association_id 131610113 risk_frequency NR pvalue_description pvalue_mantissa 3 pvalue_exponent -6 multi_snp_haplotype false snp_interaction false range [0.045-0.111] beta 0.0780425 unit increase p_value 3e-06 accession_id GCST90428116 pubmed_id 38538606 first_author Harris BHL ci_lower 0.045 ci_upper 0.111
+
+> [q128] _embedded.associations[2].snp_allele[0] rs_id rs10197246 effect_allele C
+
+> [q129] page size 50 totalElements 3 totalPages 1 number 0
+
+The catalog's three associations at rs10197246: Verma et al.'s skin melanoma in two analyses (GCST90479794, P 7 ×
+10⁻³²; GCST90475577, P 9 × 10⁻³⁹), T the risk allele; Harris et al.'s breast cancer (GCST90428116, P 3 × 10⁻⁶), C
+listed. Zenin's healthspan result is not in this record.
