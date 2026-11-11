@@ -7,12 +7,14 @@ locus_id: 41
 locus_name: PRDM13
 verdict: re-tiered
 verdict_reason: >-
-  Tier D, from the seed's B: a genome-wide centenarian result that the larger European tests contradict, which §4.1
-  files as "explicitly contradicted" (D25.1). Gurinovich 2021 compared 1,320 New England Centenarian Study
+  Tier D, from the seed's B, on §4.1's "overfit source" (D26.10, as row 44): a genome-wide centenarian P resting
+  on a control frequency every reference sample contradicts, which the authors themselves doubt; the larger European
+  tests contradict it too. Gurinovich 2021 compared 1,320 New England Centenarian Study
   centenarians (median age 104) with 2,899 controls, HRC-imputed. A was in 0.67 % of the centenarians' alleles and
   0.04 % of the controls': score Z +5.51, P 3.58e-8, just past genome-wide (Supplement Table 1). The paper prints no
-  effect size. The crude odds ratio from the two frequencies is about 16.9, derived, and rests on about 2 expected
-  copies among the controls. The paper doubts it itself. Its table footnote and Discussion say the imputed frequency
+  effect size. A crude odds ratio from the two frequencies (about 16.9, derived) rests on about 2 expected copies
+  among the controls; since the paper disowns those counts, it is kept only in the study's test, not as the variant's
+  effect (D26.10). The paper doubts it itself. Its table footnote and Discussion say the imputed frequency
   is far from dbSNP's European one, "lowering the confidence that this association is a true positive". Every
   reference sample puts A near 0.10 in Europeans: gnomAD's non-Finnish Europeans 0.097, 1000 Genomes EUR 0.11, Finns
   0.17. NECS's controls' 0.0004 is two orders of magnitude lower. The Ashkenazi replication (LGP, 312 centenarians,
@@ -22,18 +24,18 @@ verdict_reason: >-
   the imputation called A apart from its deletion, but that is derived: the panel's site list is not read. Either
   way the result does not hold for the A a genome file reports. If the NECS A is that A, the European tests are
   D21's powered test. Deelen 2019 types it through the deletion: at the 99th percentile the deletion with A gives
-  β +0.027 (SE 0.056), P 0.63, NECS's way but flat. Against NECS's crude log odds ratio 2.83 (SE about 0.51),
-  one-sided power is about 1.00 and heterogeneity z about 5.4. Both conditions hold down to about a twentieth of
-  NECS's effect (factor 0.055), so the flag needs no calibration between the two extreme-survival scales. Read at A's
+  β +0.027 (SE 0.056), P 0.63, NECS's way but flat. Against NECS's crude log odds ratio 2.83 (Woolf SE 0.70 from the
+  counts, 17.7 case and 2.32 control copies, derived), one-sided power is about 1.00 and heterogeneity z about 4.0.
+  Both conditions hold down to about a seventeenth of NECS's effect (factor 0.058), so the flag needs no calibration between the two extreme-survival scales. Read at A's
   real frequency instead (about 0.10), the same Z implies a log odds ratio near 0.43 (SE about 0.08, factor 0.15,
   derived): heterogeneity z about 4.2, power still about 1.00. Deelen's
   90th percentile is the same (P 0.28). FinnGen's death endpoint is null at the lead, leaning the other way (A 0.17,
   P 0.49). If the NECS A is something else, nothing measures the A a genome file reports. Neither reading leaves A
   protective. One thing leans NECS's way: Timmers 2019's parental lifespan has no line for the SNP or the deletion,
-  but its r² 0.61 proxies, whose minor alleles ride with A, give one-sided P about 0.02 to 0.03 (rs12660804 P 0.040
-  two-sided). At r² 0.6, below the 0.8 the rows use, with the phase derived, and with FinnGen leaning the other way
-  at the same proxies and Deelen flat, it is named, not counted as D25.1's independent support; that reading is put
-  to the lead, and C (as row 19) is the alternative. A literature search on the rsID (2026-11-11, six services)
+  but its r² 0.61 proxies (D′ 1), whose minor alleles ride with A, give one-sided P about 0.02 to 0.03 (rs12660804 P
+  0.040 two-sided). With the discovery an overfit source, that lean replicates no discovery (D26.10): rescaled, it
+  fits a tiny common-haplotype effect, consistent with Deelen's flat line and not with NECS's, and FinnGen leans the
+  other way at the same proxies. It is named, not counted. A literature search on the rsID (2026-11-11, six services)
   finds only Gurinovich 2021: no later test, and the sequencing the authors asked for has not been reported.
   Healthspan is untested: Zenin 2019's file has no line for the SNP or the deletion, under any of their merged
   ids or at the position, and the r² 0.61 proxies are flat (P about 0.39). Lifespan is 0 (FinnGen at the lead) and
@@ -60,8 +62,6 @@ variants:
     phenotype: PRDM13 region, reaching 100
     trait_efo_id: OBA_VT0005372
     effect_allele: A
-    effect_size: 16.9
-    effect_measure: OR
     stat_significance: significant
     direction: protective
     genotypes:
@@ -101,19 +101,16 @@ studies:
     stat_significance: significant
     p_value: "3.58E-08"
     p_value_num: 3.58e-08
-    effect_size: 16.9
-    effect_measure: OR
-    effect_unit: "crude odds of reaching 100 per A allele, derived here (D25.10), not printed: (0.0067/0.9933)/(0.0004/0.9996) from the cases' and controls' printed A frequencies, unadjusted for the score test's covariates, and resting on about 2.3 expected copies among the controls"
     effect_allele: A
     direction: protective
-    statistical_test: "Score test (Supplement Table 1, q3, q22): A, the coded allele, in 0.0067 of cases' and 0.0004 of controls' alleles, score Z +5.51, P 3.58e-8; HRC-imputed, info above 0.7 (q1, q20). No effect size printed: the GWAS Catalog's beta 5.51 is this Z (db-gwascatalog-2026.10.29#q290). Crude log odds ratio 2.83, SE about 0.51 from the Z (derived). The authors doubt it: the imputed frequency differs from dbSNP's European one (q19, q20); A is 0.097 in gnomAD non-Finnish Europeans (db-ensembl-116#q272), so the controls' 0.0004 is about 240 times too low. Main Table 2's LGP columns (q18) print A 0 and 0.000002 and Z -1, P 0.6 run together (derived from the table's pattern); gnomAD's Ashkenazi A is 0.133 (db-ensembl-116#q273), so the LGP held no carrier: untested (q21)"
+    statistical_test: "Score test (Supplement Table 1, q3, q22): A, the coded allele, in 0.0067 of cases' and 0.0004 of controls' alleles, score Z +5.51, P 3.58e-8; HRC-imputed, info above 0.7 (q1, q20). No effect size printed: the GWAS Catalog's beta 5.51 is this Z (db-gwascatalog-2026.10.29#q290). The authors doubt it: the imputed frequency differs from dbSNP's European one (q19, q20); A is 0.097 in gnomAD non-Finnish Europeans (db-ensembl-116#q272), so the controls' 0.0004 is about 240 times too low. Main Table 2's LGP columns (q18) print A 0 and 0.000002 and Z -1, P 0.6 run together (derived from the table's pattern); gnomAD's Ashkenazi A is 0.133 (db-ensembl-116#q273), so the LGP held no carrier: untested (q21). The crude odds ratio of reaching 100 per A allele, about 16.9 (log 2.83, Woolf SE 0.70 from 17.7 case and 2.32 control copies), derived here (D25.10), not printed: (0.0067/0.9933)/(0.0004/0.9996) from the cases' and controls' printed A frequencies, unadjusted for the score test's covariates, and resting on about 2.3 expected copies among the controls; the paper disowns those counts, so it is no effect size here (D26.10)"
     curator: claude-opus-5-5
   - rsid: rs114658003
     note: pmid-31413261
     quote: q100
     phenotype_class: EXTREME_SURVIVAL_CC
     study_design: percentile_case_control_p99
-    population: European (Deelen 2019's discovery cohorts; no NECS among them, q80, q86)
+    population: European (Deelen 2019's discovery cohorts; no NECS named, LLFS overlap unknown, q80, q86)
     ancestry: [EUR]
     stat_significance: not_significant
     p_value: "0.6281"
@@ -124,14 +121,14 @@ studies:
     effect_unit: log odds of reaching the 99th percentile age per deletion allele of rs66927770, which carries A
     effect_allele: A
     direction: protective
-    statistical_test: "Deelen 2019's summary statistics (GCST008599): no line for the SNP; the indel line 6:100051298 is the deletion rs66927770 with its anchor base (GRCh38 6:99,603,423, db-ensembl-116#q277), r² 1.00 and D′ 1.00 to the lead in CEU (q275) with the same gnomAD count (q272, q278); d 0.10, beta +0.0272, SE 0.0561, effective N 4,154 (q100), one-sided P about 0.31 (derived). D21 (derived): against NECS's crude log odds ratio 2.83 (SE about 0.51, pmid-33948810#q22) one-sided power about 1.00, heterogeneity z about 5.4 (P about 6e-8); both still hold at 0.055 of NECS's effect (power 0.87, z 2.05), so no calibration between the two extreme-survival scales moves it (D25.3). The r² 0.61 proxy rs12660804 is flat too (P 0.98, q102). Independent of NECS as far as both papers show (D25.10)"
+    statistical_test: "Deelen 2019's summary statistics (GCST008599): no line for the SNP; the indel line 6:100051298 is the deletion rs66927770 with its anchor base (GRCh38 6:99,603,423, db-ensembl-116#q277), r² 1.00 and D′ 1.00 to the lead in CEU (q275) with the same gnomAD count (q272, q278); d 0.10, beta +0.0272, SE 0.0561, effective N 4,154 (q100), one-sided P about 0.31 (derived). D21 (derived): against NECS's crude log odds ratio 2.83 (Woolf SE 0.70 from the counts, pmid-33948810#q22) one-sided power about 1.00, heterogeneity z about 4.0 (P about 6e-5); both still hold at 0.058 of NECS's effect (power 0.90, z 1.98), so no calibration between the two extreme-survival scales moves it (D25.3). The r² 0.61 proxy rs12660804 is flat too (P 0.98, q102). No NECS cohort named in Deelen; whether LLFS, which Deelen includes, overlaps NECS is unknown (D26.10, as row 31)"
     curator: claude-opus-5-5
   - rsid: rs114658003
     note: pmid-31413261
     quote: q99
     phenotype_class: EXTREME_SURVIVAL_CC
     study_design: percentile_case_control_p90
-    population: European (Deelen 2019's discovery cohorts; no NECS among them, q80, q86)
+    population: European (Deelen 2019's discovery cohorts; no NECS named, LLFS overlap unknown, q80, q86)
     ancestry: [EUR]
     stat_significance: not_significant
     p_value: "0.2797"
