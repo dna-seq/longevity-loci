@@ -244,3 +244,45 @@ rs17514846 (Pilling 2017's FURIN lead), r² 0.92 to rs6224 in that set (PIP 0.06
 
 The locus-to-gene score of FES on that set (FURIN 0.15), the only gene above 0.5, and no colocalisation was read:
 `effector:E2`, FES. The variant lies in FURIN, and Timmers 2019's SMR names FURIN and FES both (pmid-30642433#q22).
+
+## Reading 2026-11-11, record
+
+Three credible sets led by 1_39570256_G_T (rs3768321, PABPC4; GRCh38), each cached whole by `loci fetch-supp` as
+`credibleset-<studyLocusId>.json`. Open Targets' beta is per the variant id's second allele, T. For row 2.
+
+> [q36] data.credibleSet studyLocusId 0980823f4152495c262627d9e13424aa finemappingMethod PICS pValueMantissa 6 pValueExponent -10 beta -0.007898258
+
+> [q37] data.credibleSet.study id GCST90321079 traitFromSource Aging
+
+The set of Rosoff 2023's mvAge ("Aging", GCST90321079; PICS), P 6 × 10⁻¹⁰, beta −0.0079 per T: the same result as
+Rosoff's Table 1 (pmid-37550455#q1, +0.0079 per G).
+
+> [q38] data.credibleSet.locus.rows[0] posteriorProbability 0.16832334222629408 is95CredibleSet true
+
+rs3768321's PIP in that set: 0.17, in the 95 % set, the highest of its 100 members (the next 0.016):
+`causal:C2`.
+
+> [q39] data.credibleSet.l2GPredictions.rows[0] score 0.22739721834659576
+
+The locus-to-gene score of PABPC4 on that set (next BMP8A 0.066): below 0.5 and no colocalisation read,
+`effector:E3`, no gene named.
+
+> [q40] data.credibleSet studyLocusId 0a6b39073b95a8a3d1f7e722abf30a8b finemappingMethod PICS pValueMantissa 4.7220001220703125 pValueExponent -68 beta -0.0387154
+
+> [q41] data.credibleSet.study id GCST90497348 traitFromSource HDL cholesterol levels
+
+> [q42] data.credibleSet.locus.rows[0] posteriorProbability 0.9999865928193756 is95CredibleSet true
+
+HDL cholesterol (GCST90497348; PICS): P 4.7 × 10⁻⁶⁸, beta −0.039 per T, and rs3768321 the set's only member at PIP
+1.00. T lowers HDL cholesterol.
+
+> [q43] data.credibleSet studyLocusId 05a00e4b8b9355400615f04c5317bdef finemappingMethod PICS pValueMantissa 1.8359999656677246 pValueExponent -24 beta 0.0265928
+
+> [q44] data.credibleSet.study id GCST90474428 traitFromSource Triglycerides levels (UKB data field 30870)
+
+> [q45] data.credibleSet.locus.rows[0] posteriorProbability 0.9015747057939612 is95CredibleSet true
+
+Triglycerides (GCST90474428, UK Biobank; PICS): P 1.8 × 10⁻²⁴, beta +0.027 per T, rs3768321 at PIP 0.90. T raises
+triglycerides. So the lipid signal sits on the mvAge lead itself, T on the side of lower HDL, higher
+triglycerides and worse ageing: the anchor of row 2's mechanism, a co-location of association, not a mediation
+test.

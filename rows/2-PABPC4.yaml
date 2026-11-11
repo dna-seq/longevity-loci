@@ -1,0 +1,130 @@
+# The seed list's locus 2, PABPC4 (1p34.2). Curated 2026-11-11, the ten-row run's fifth row. Lead rs3768321
+# (Rosoff 2023's mvAge, Table 1), the seed's only rsID here. Wright 2019's tables hold no clumped SNP at it; the
+# nearest, in one birth cohort of mothers at P about 1e-3 (rs17561720, rs9659165), have no cached LD to it and are
+# not read. Deelen 2019's Supplementary Data 1 has no row for it. Open Targets 26.09: mvAge's credible set and two lipid sets.
+locus_id: 2
+locus_name: PABPC4
+verdict: re-tiered
+verdict_reason: >-
+  Tier C, down from the seed's single-track B: a genome-wide multivariate result with no co-occurring lifespan
+  study, so it cannot score (§4.5 as D16 reads it) and stays in the research view. Genome-wide significant only in Rosoff 2023's mvAge, a
+  multivariate factor behind healthspan, frailty, exceptional longevity, parental lifespan and epigenetic age
+  (P 6.5e-10, G on the healthier-ageing side). Rosoff lists it as novel: more than 1 Mb from every locus the five
+  input studies found, so none of them reached genome-wide significance here alone. A multivariate result scores
+  only with a co-occurring scoring-class lifespan study at p < 0.05 on the same allele and direction (D16), and
+  there is none: in Timmers 2019's million parents' lives G leans to longer life in both UK Biobank and LifeGen at
+  P 0.071, not nominal. Healthspan agrees and is suggestive: G delays the end of healthspan in Zenin 2019's 300,447 UK Biobank
+  participants (P 1.8e-7), the same people as mvAge's healthspan input. mvAge pools those same samples, so nothing
+  here is an independent replication, and its Q test (P 0.02) hints that the SNP does not act evenly through the
+  shared factor. A sub-genome-wide lifespan result never makes A or B (R-TIER-4). Exceptional survival is untested:
+  no cached source reports rs3768321 or a proxy in a longevity case-control. The mechanism is filed as metabolism:
+  rs3768321 itself is the fine-mapped variant of strong blood-lipid signals in Open Targets 26.09 (HDL cholesterol,
+  P 4.7e-68, PIP 1.00; triglycerides, P 1.8e-24, PIP 0.90), T lowering HDL and raising triglycerides, the side
+  that ages worse; Rosoff's GWAS Catalog list adds HbA1c, type 2 diabetes and body shape. That is association on one
+  variant, not a mediator test. In mvAge's own credible set (Open Targets, PICS) rs3768321 holds PIP 0.17, the
+  highest of 100 members (causal:C2); the top locus-to-gene score is PABPC4 at 0.23, below 0.5 (effector:E3), so no
+  gene is named (§4.2, §6.2: a gene only at E1/E2), though PABPC4 scores 0.77 on the HDL set. Age of action is
+  unknown: no cached source gives this locus's own age bands.
+axes:
+  tier: {value: C, cites: [pmid-37550455#q1, pmid-37550455#q3, pmid-37550455#q4, pmid-37550455#q5, pmid-30642433#q25, pmid-30729179#q14]}
+  mechanism: {value: metabolism, cites: [db-opentargets-26.09#q40, db-opentargets-26.09#q42, db-opentargets-26.09#q43, db-opentargets-26.09#q45, pmid-37550455#q1]}
+  pleiotropy: {values: [broad], cites: [pmid-37550455#q1, pmid-37550455#q7, db-opentargets-26.09#q40, db-opentargets-26.09#q43]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "0", exceptional_survival: untested,
+            cites: [pmid-30729179#q14, pmid-30642433#q25, pmid-37550455#q1, pmid-37550455#q2]}
+  actionability: {label: descriptive, cites: [pmid-37550455#q1]}
+  context: {values: [eur_only_evidence], cites: [pmid-37550455#q1, pmid-30642433#q25]}
+flags:
+  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-37550455#q1, pmid-30642433#q25]}
+  - {token: "causal:C2", cites: [db-opentargets-26.09#q36, db-opentargets-26.09#q37, db-opentargets-26.09#q38]}
+  - {token: "effector:E3", cites: [db-opentargets-26.09#q39]}
+variants:
+  - rsid: rs3768321
+    gene: ""
+    phenotype: PABPC4 region, multivariate healthy ageing
+    trait_efo_id: EFO_0007796
+    effect_allele: G
+    effect_size: 0.0079
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA region, the one most people of European ancestry
+          have (about 64 in 100). It is the reference the other combinations are compared with. The region, on
+          chromosome 1, lies near the PABPC4 gene, and it is not yet clear which gene matters. The finding comes
+          from people of European ancestry; less is known elsewhere.
+      - genotype: G/T
+        state: risk
+        conclusion: >-
+          You carry one copy of a less common version of this DNA region (about 32 in 100 people of European
+          ancestry do). In very large European studies that combined healthspan, frailty, long life and biological
+          age into one measure, this version went with slightly less healthy ageing; the region is also linked to
+          blood fats, blood sugar and body shape. This is early evidence: it showed only in the combined measure,
+          and on its own it did not clearly shorten life. The effect is small and it is a tendency, not a
+          verdict.
+      - genotype: T/T
+        state: risk
+        conclusion: >-
+          You carry two copies of a less common version of this DNA region (about 4 in 100 people of European
+          ancestry do). In very large European studies that combined healthspan, frailty, long life and biological
+          age into one measure, each copy went with slightly less healthy ageing; the region is also linked to
+          blood fats, blood sugar and body shape. This is early evidence: it showed only in the combined measure,
+          and on its own it did not clearly shorten life. The effect is small and it is a tendency, not a
+          verdict.
+studies:
+  - rsid: rs3768321
+    note: pmid-37550455
+    quote: q1
+    phenotype_class: MULTIVARIATE_AGEING
+    study_design: multivariate_healthspan_lifespan
+    population: European (the five input GWAS, UK Biobank and LifeGen among them; effective n 1,958,774)
+    ancestry: [EUR]
+    stat_significance: significant
+    p_value: "6.46E-10"
+    p_value_num: 6.46e-10
+    effect_size: 0.0079
+    effect_measure: beta
+    effect_unit: mvAge factor per G allele (no conventional unit; positive = healthier ageing)
+    effect_allele: G
+    direction: protective
+    statistical_test: "Genomic SEM common-factor GWAS of healthspan, frailty, exceptional longevity, parental lifespan and PhenoAge acceleration (Table 1, novel lead); Q P 0.02 (q4); pools the samples of the component studies, not a replication (q5)"
+    curator: claude-opus-5-5
+  - rsid: rs3768321
+    note: pmid-30729179
+    quote: q14
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: suggestive
+    p_value: "1.8E-07"
+    p_value_num: 1.8e-07
+    effect_size: 0.032
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per T allele (positive = earlier)
+    effect_allele: T
+    direction: risk
+    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), -log10 P 6.752; mvAge's healthspan input, the same sample"
+    curator: claude-opus-5-5
+  - rsid: rs3768321
+    note: pmid-30642433
+    quote: q25
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.070623698"
+    p_value_num: 0.0706
+    effect_size: -0.00884351
+    effect_measure: beta
+    effect_unit: log hazard protection per T allele in self (negative = shorter life)
+    effect_allele: T
+    direction: risk
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), n 635,243, direction -- in UK Biobank and LifeGen; the same side as mvAge, not nominal"
+    curator: claude-opus-5-5

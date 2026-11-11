@@ -20,7 +20,7 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   compacting` to the lead, `watchdog.sh compact`, end the turn; the lead wakes the next. Stop at 80 % of the 7-day
   window or 95 % of the 5-hour window. After each tenth `done:`, re-measure the pacing and
   go on with the next ten, unless blocked or steered (the person, 2026-11-11, via the lead, 639316091: "After 10
-  adjust pacing and go next 10 and so on unless blocked or I steer"; this replaces the earlier pause after ten). Rows done in this run: 6 CELSR2 (1 of 10), 38 HLA-DQA1 (2 of 10), 81 FES/FURIN (3 of 10), 103 (4 of 10); the corrections of 71 (d44fd4a) and 67 (3dd792c) done, the E3 gene rule at 57 (8d27300) and 80 (728d78d), 67's MANOVA study added under D15 (a519ae4); 38 corrected again at 103 (the AncestryDNA tag is shared); next 96 APOE waits on D2, so the seed tier B by locus_id.
+  adjust pacing and go next 10 and so on unless blocked or I steer"; this replaces the earlier pause after ten). Rows done in this run: 6 CELSR2 (1 of 10), 38 HLA-DQA1 (2 of 10), 81 FES/FURIN (3 of 10), 103 (4 of 10), 2 PABPC4 (5 of 10); 103 re-tiered B under D16 (5abae88); the Open Targets quotes re-quoted from cached records (f69c8d8); the corrections of 71 (d44fd4a) and 67 (3dd792c) done, the E3 gene rule at 57 (8d27300) and 80 (728d78d), 67's MANOVA study added under D15 (a519ae4); 38 corrected again at 103 (the AncestryDNA tag is shared); next 96 APOE waits on D2, so the seed tier B by locus_id.
 - **38 HLA-DQA1** (2026-11-11), tier B (seed A), advisor-checked. Lead rs34967069 (Timmers 2019 Table 1, q16). Rules
   settled: in a multi-signal region (MHC), a seed rsID with no quoted r² to the lead is named in the verdict, never a
   `proxy_rsid` (frequency bounds on r² move with the frequency source and are not written as findings); Joshi's
@@ -40,6 +40,14 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   (only R-TIER-1 forces neutral). It decides 35 IRF4, 66 TYR, 86 DEF8 and the mvAge-only loci (2 PABPC4 the
   first: C, its lifespan P 0.071). Phase from frequencies plus r² is written as derived, never as a record.
   Mechanism general_ageing from Zenin's multimorbidity line (q11).
+- **2 PABPC4** (2026-11-11), tier C re-tiered (seed B), the first mvAge-only locus. Rosoff 2023 Table 1: rs3768321
+  G +0.0079, P 6.46e-10, novel (no input GWAS genome-wide within 1 Mb), Q P 0.02. Lifespan: Timmers sumstats P 0.071
+  (G longer, "--"), not p < 0.05, so D16 gives C; healthspan suggestive (Zenin sumstats 1.8e-7). Wright S8/S9: no
+  clumped SNP at it (nearest 135 kb, P ~1e-3, LD not read). Open Targets 26.09 (cached, RM3): mvAge's set
+  (GCST90321079) PIP 0.17 C2, L2G PABPC4 0.23 E3, gene ""; the same variant is HDL's (PIP 1.00) and triglycerides'
+  (0.90) fine-mapped variant, the anchor for mechanism metabolism. Genotypes: common G/G neutral, T carriers risk
+  (C rows keep directional states, D16). Seed-B loci whose seed source is Rosoff alone (4 LINC02796 and others in
+  Table 1) go the same way unless a lifespan study reaches p < 0.05.
 - **38 corrected** (2026-11-11), the lead's review (handout 20261111T004405Z-review-38) applied; superseded at
   103: B on the single-study clause, the AncestryDNA tag being shared with 103 (r² 0.80 to its lead). Was B for
   §4.1's tag clause: Wright S8 (AncestryDNA mothers 1886-1940) has rs3135006 (A = dbSNP's minor T, other strand) at
@@ -186,8 +194,9 @@ After the fifth row, the advisor's read (correction commit): mediator directions
 carried were softened (LDL at 93, smoking at 80, blood pressure and autoimmunity at 71); 71's healthspan went from
 untested to 0 on Zenin's own look-up (its Supplementary Data 15); each row now says what became of the seed's other
 rsIDs; 57's age cites dropped the Timmers 2019 decline it does not rest on. `loci check` reads none of these.
-Rosoff 2023 (pmid-37550455, mvAge), cited by the seed at all five, was fetched and has no note: its text names no
-pilot lead (values in its supplement), so it is unread for these rows.
+Rosoff 2023 (pmid-37550455, mvAge), cited by the seed at all five, was fetched and had no note: its text names no
+pilot lead (values in its supplement), so it is unread for these rows. Noted at row 2 (2026-11-11): Table 1's novel
+leads only; the supplementary tables (all 52 leads) are not cached.
 
 ## How a locus goes (what the first one taught)
 
