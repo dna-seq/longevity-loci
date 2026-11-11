@@ -35,8 +35,9 @@ verdict_reason: >-
   counted; with MUC5B alone the mean is unknown, and unknown does not show "no red flag". It is not D either way
   (D25.1), because Deelen's independent 90th percentile gives P 2.2e-4 in the discovery's direction. Lifespan +:
   LifeGen with UK Biobank gives T a longer parental life (P 1.7e-4, ++), but its UK Biobank part is Park's people's
-  parents, so it co-occurs and does not replicate. Healthspan 0: Zenin 2019 leans C earlier, raw P 0.0496, but 0.056 after the
-  genomic control of 1.053 its own results take (D17.3); the same UK Biobank people. Exceptional survival +: Deelen's 90th. Wright 2019's AncestryDNA mothers hold no tag of the
+  parents, so it co-occurs and does not replicate. Healthspan +: Zenin 2019 has C ending healthspan earlier, raw P 0.0496, 0.056 after the
+  genomic control of 1.053 its own results take (D17.3), one-sided 0.028 (D25.13's reading, derived); the same UK
+  Biobank people, so co-occurring, not replicating. Exceptional survival +: Deelen's 90th. Wright 2019's AncestryDNA mothers hold no tag of the
   lead (rs1029328, 34 kb away, r² 0.33 to the tag rs13190937): untested there, not null. Mechanism:
   general ageing. Park's PheWAS of the tag rs13190937 is led by celiac disease and intestinal malabsorption (P
   1.8e-57), filed as mech:autoimmune; nothing shows the lifespan effect runs through it (D25.7), and whether that
@@ -52,7 +53,7 @@ axes:
   mechanism: {value: general_ageing, cites: [pmid-40021682#q23, pmid-40021682#q22, pmid-40021682#q25]}
   pleiotropy: {values: ["mech:autoimmune"], cites: [pmid-40021682#q23]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "+",
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
             cites: [pmid-30729179#q58, pmid-30729179#q59, pmid-40021682#q20, pmid-30642433#q99, pmid-31413261#q92]}
   actionability: {label: descriptive, cites: [pmid-40021682#q20, pmid-40021682#q23]}
   context: {values: [eur_only_evidence], cites: [pmid-40021682#q1, pmid-31413261#q92, db-ensembl-116#q237, db-ensembl-116#q238]}
@@ -208,5 +209,5 @@ studies:
     effect_unit: log hazard of the end of healthspan per C allele (positive = earlier)
     effect_allele: C
     direction: risk
-    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), SE 0.00504, -log10 P 1.305 as deposited (raw, P 0.0496); after the genomic control of 1.053 the paper applies (q59), P 0.056, not significant (D17.3); the same UK Biobank people as Park 2025"
+    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), SE 0.00504, -log10 P 1.305 as deposited (raw, P 0.0496); after the genomic control of 1.053 the paper applies (q59), P 0.056, not significant (D17.3), one-sided 0.028 (derived, D25.13); the same UK Biobank people as Park 2025"
     curator: claude-opus-5-5

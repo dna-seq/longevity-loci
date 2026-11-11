@@ -12,13 +12,13 @@ verdict_reason: >-
   and for healthspan (Timmers 2020, P 0.002 and 0.04), both with the same allele on the longer-lived side; Deelen's
   discovery cohorts hold no UK Biobank data, though whether they overlap LifeGen's is not stated. Caveats: Pilling
   2017 (UK Biobank) only reaches P 1.8e-6; Wright's AncestryDNA mothers replicate only read one-sided (P 0.062,
-  one-sided 0.031, D25.13; same allele and sign). Fine-mapping is diffuse: about fifty variants share the credible set, none with PIP
+  one-sided 0.031, D25.13, 0.038 after Wright's genomic control; same allele and sign). Fine-mapping is diffuse: about fifty variants share the credible set, none with PIP
   above 0.04. The seed's other rsID here, rs6511720, is that set's member at r² 0.96 and a proxy on three studies.
   Timmers 2019's Figure 5 source data neither show nor refute the mid-life reading: fathers' effect fades at 80-90
   (0.051, 0.049, then 0.011) while mothers' is about zero from 60 to 90 (−0.003, 0.007, 0.029), and the age moderator
   is null (P 0.72).
 axes:
-  tier: {value: A, cites: [pmid-30642433#q3, pmid-31484785#q1, pmid-31484785#q5, pmid-31484785#q79, pmid-31484785#q80, pmid-32678081#q3]}
+  tier: {value: A, cites: [pmid-30642433#q3, pmid-31484785#q1, pmid-31484785#q5, pmid-31484785#q79, pmid-31484785#q80, pmid-31484785#q81, pmid-32678081#q3]}
   mechanism: {value: heart_vessels, cites: [pmid-29227965#q3, pmid-31484785#q4]}
   pleiotropy: {values: ["mech:cvd"], cites: [pmid-31484785#q4, pmid-30642433#q3]}
   age_of_action: {value: MIDLIFE, confidence: DIRECT_WEAK, cites: [pmid-32678081#q2, pmid-30642433#q198, pmid-30642433#q199, pmid-30642433#q200, pmid-30642433#q201, pmid-30642433#q202, pmid-30642433#q203, pmid-30642433#q204]}
@@ -111,7 +111,7 @@ studies:
     effect_allele: A
     direction: protective
     proxy_rsid: rs6511720
-    statistical_test: "Linear regression of fathers' lifespan in years on offspring dosage, not a Cox model (the vocabulary has no other parental design); P uncorrected (Table 3; 2.486e-04 after genomic control); allele and N from Supplemental Table 8, cached since (q80)"
+    statistical_test: "Linear regression of fathers' lifespan in years on offspring dosage, not a Cox model (the vocabulary has no other parental design); P uncorrected (Table 3; 2.486e-04 after genomic control); allele and N from Supplemental Table 8 (q81)"
     curator: claude-opus-5-5
   - rsid: rs142158911
     note: pmid-31484785
@@ -131,7 +131,7 @@ studies:
     effect_allele: A
     direction: protective
     proxy_rsid: rs6511720
-    statistical_test: "Linear regression of mothers' lifespan on offspring dosage, AncestryDNA arm of Supplemental Table 9 (q79), raw P; two-sided P printed, one-sided 0.031 (derived, D25.13), a replication; the counted allele is the fathers' (q80: same label, same sign); heterogeneity with UK Biobank P 0.73"
+    statistical_test: "Linear regression of mothers' lifespan on offspring dosage, AncestryDNA arm of Supplemental Table 9 (q79), raw P; two-sided P printed, one-sided 0.031 (derived, D25.13), 0.038 after genomic control at λ 1.113 (q82, q84; derived), a replication; the counted allele is the fathers' (q80: same label, same sign); heterogeneity with UK Biobank P 0.73"
     curator: claude-opus-5-5
   - rsid: rs142158911
     note: pmid-29227965

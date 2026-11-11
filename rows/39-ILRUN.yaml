@@ -22,8 +22,9 @@ verdict_reason: >-
   shortens mothers' lives at raw P 0.016 (one-sided 0.008); the genomic-control P is not printed (the SNP is not in
   the per-cohort table, so it is above 0.003 there). The counted allele is derived, not printed: the UK Biobank arm
   carries the same sign (heterogeneity P 0.79) and agrees with Timmers' UK Biobank at the lead only on G's haplotype.
-  rs9462014 (r² 0.73) agrees at raw P 0.012; one signal, read once (D17.1); the fathers pass one-sided too (raw P
-  0.083, one-sided about 0.042). FinnGen's death endpoint leans the same way and does not pass even one-sided (G
+  rs9462014 (r² 0.73) agrees at raw P 0.012; one signal, read once (D17.1); the fathers pass one-sided on the raw P only (raw P
+  0.083, one-sided about 0.042; 0.055 after Wright's genomic control, pmid-31484785#q83, derived). Mothers at
+  rs9462007 hold after it (one-sided 0.011). FinnGen's death endpoint leans the same way and does not pass even one-sided (G
   toward more death, P 0.11, one-sided 0.055). The Q test (P 0.095) finds no sign that the SNP acts off the common
   factor. Mechanism: ageing in general (D25.7). The lead tops 205 credible sets, 172 of them trait studies and 157 of
   those lipids and fatty acids: per G it lowers apolipoprotein B (P 2e-17), LDL (1e-20) and total cholesterol (1e-28),

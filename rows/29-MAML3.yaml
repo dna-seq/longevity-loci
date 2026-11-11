@@ -24,7 +24,7 @@ verdict_reason: >-
   90th percentile 0.020). aging-GIP1's self-rated health input reaches z about 6, not a scoring class. Its sheet of
   leads prints an adjusted estimate beside the original (β 0.014 against 0.021, P 2.5e-5), the adjustment not stated
   in the cached text; the signal stays. Row 25 (HTT), replicated in the same look-up, is A because Timmers 2019 had it genome-wide. A further outside look agrees: AncestryDNA mothers at rs769673 (r² 0.70, D′ 0.96; its A with the lead's A),
-  P 0.067 (one-sided 0.033, D25.13), heterogeneity with UK Biobank's arm P 0.68, so no red flag (D21); the counted allele is read from Wright's
+  P 0.067 (one-sided 0.033, D25.13; 0.041 after Wright's genomic control, derived), heterogeneity with UK Biobank's arm P 0.68, so no red flag (D21); the counted allele is read from Wright's
   own tables at rs6840907, as LifeGen has no row for rs769673. Healthspan is +: Zenin 2019, A delays the end of
   healthspan, P 4.8e-4 (an mvAge input). Exceptional survival is +: Deelen 2019's 90th percentile P 0.020 and 99th
   0.049, A on the long-lived side, one look and an mvAge input. Mechanism: general ageing (D25.7), a mechanism being named only when something shows the effect runs through it.
