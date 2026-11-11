@@ -29,8 +29,10 @@ verdict_reason: >-
   HR −0.0025, P 0.32, which suggests Timmers' P 0.033 leans on the LifeGen arm, the one holding the shared cohorts.
   The smaller effect is not a red flag (D21, D25.3): with Timmers' own APOE calibration for Deelen 2014 (a factor of
   about 3.8, not Deelen 2019's 4.84) the expected beta is 0.0249, power about 1.00, heterogeneity P 0.006, a flag;
-  with the loci's mean factor (0.42 of APOE's) the expected beta is 0.0104, power 0.83, heterogeneity P 0.67, none. A
-  flag under one calibration only is no flag. Not A as I read §4.1: Deelen 2014's 88,078 people and its age-threshold
+  with the loci's mean factor (dividing by 0.4175, q92's Alpha being longevity over lifespan) the expected beta is 0.060, power
+  0.96, heterogeneity P 0.004, a flag too (first written as 0.0249 × 0.4175 = 0.0104, P 0.67; corrected at row 49). A
+  red flag under both, but Timmers replicates on the same side (one-sided 0.017), so by D25.13 it is a replication with
+  a smaller effect, B, not `replication_failed`. Not A as I read §4.1: Deelen 2014's 88,078 people and its age-threshold
   cases (90 or more, not a percentile) meet neither of A's sample clauses as written, and Timmers itself reports the
   effect smaller, a third of Deelen's on the APOE scale (0.82 by the mean factor); the lead's read keeps B. Deelen
   2019 leans the same way (90th percentile OR 1.053, P 0.012; 99th OR 1.062, P 0.072, one-sided 0.036) but holds the Leiden Longevity
@@ -141,7 +143,7 @@ studies:
     effect_unit: beta1 on parental lifespan per T allele, longer positive
     effect_allele: T
     direction: protective
-    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), SE 0.0040, ++ in UK Biobank and LifeGen, info 0.999; Timmers' own replication table prints one-sided P 0.0167 against Deelen's converted 0.0249 (SE 0.0044, q93) and calls it replicated with a smaller effect (q95). D25.3: APOE calibration (Timmers', q91) power 1.00, heterogeneity P 0.006; mean factor (q92, 0.4175) expected 0.0104, power 0.83, heterogeneity P 0.67; a flag under one only, so none. Overlap with Deelen 2014: Rotterdam (q13), null-SNP covariance about 0.01 (q96, q97), independent (D19.1). The replication that lifts R-TIER-2 (D22.2)"
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), SE 0.0040, ++ in UK Biobank and LifeGen, info 0.999; Timmers' own replication table prints one-sided P 0.0167 against Deelen's converted 0.0249 (SE 0.0044, q93) and calls it replicated with a smaller effect (q95). D25.3: APOE calibration (Timmers', q91) power 1.00, heterogeneity P 0.006; mean factor (q92, dividing by 0.4175) expected 0.060 (SE 0.017), power 0.96, heterogeneity P 0.004 (first written as × 0.4175: 0.0104, P 0.67); a flag under both, but a same-side replication at one-sided 0.017, so a smaller effect, not replication_failed (D25.13). Overlap with Deelen 2014: Rotterdam (q13), null-SNP covariance about 0.01 (q96, q97), independent (D19.1). The replication that lifts R-TIER-2 (D22.2)"
     curator: claude-opus-5-5
   - rsid: rs2149954
     note: pmid-24688116
