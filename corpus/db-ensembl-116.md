@@ -151,3 +151,7 @@ rs6744653–rs4640417: r² 0.11 (D′ 1.00). For row 11.
 > [q36] populations[77] allele_count 648 allele A population 1000GENOMES:phase_3:EUR frequency 0.644135188866799
 
 rs4640417 (`variation-rs4640417.json`): GRCh38 2:648,527, A/G in Europeans, A 0.64, G 0.36. For row 11.
+
+> [q37] [0] d_prime 0.999990 r2 0.462307 population_name 1000GENOMES:phase_3:EUR variation2 rs4845625 variation1 rs2228145
+
+rs2228145 and rs4845625 (Timmers 2019's suggestive IL6R SNP): r² 0.46, D′ 1.00 in EUR. For row 8.
