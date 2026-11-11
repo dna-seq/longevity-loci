@@ -371,3 +371,26 @@ The top locus-to-gene score on that set: PHTF1, 0.42. Below 0.5, `effector:E3`; 
 > [q65] data.credibleSet.locus.rows[0] posteriorProbability 0.8624364813245581 r2Overall 1 is95CredibleSet true data.credibleSet.locus.rows[0].variant id 1_113630788_A_G data.credibleSet.locus.rows[0].variant.rsIds[0] rs1230666
 
 Rosoff 2023's mvAge set ("Aging", GCST90321079; PICS), led by rs1230666: P 2 × 10⁻¹¹, beta +0.0102 per G; PIP 0.86.
+
+## Reading 2026-11-11, supplement
+
+rs2228145 (IL6R p.Asp358Ala), for row 8. The variant record (`variant-1_154454494_A_C.json`):
+
+> [q66] data.variant.rsIds[0] rs2228145
+
+> [q67] data.variant.mostSevereConsequence label missense_variant
+
+> [q68] data.variant.alleleFrequencies[2] populationName nfe_adj alleleFrequency 0.4023276209195826
+
+1_154454494_A_C is rs2228145, missense, its C allele (the alternative) at 0.40 in gnomAD non-Finnish Europeans.
+
+`credibleSets(studyIds: [the seven lifespan, healthspan and longevity studies: GCST009890, GCST006697, GCST006702,
+GCST011100, GCST009450, GCST007406, GCST90321079], variantIds: ["1_154454494_A_C"])`, cached as
+`credibleSets-longevity-1_154454494_A_C.json`:
+
+> [q69] data.credibleSets count 0
+
+No credible set of any of those studies holds rs2228145. The filter matches a set's members, not only its lead
+(checked on 2026-11-11 against rs2476601, a non-lead member of Timmers 2019's MAGI3 set: the query returns that
+set). The variant sits in 286 other sets (proteins, CRP, diseases), none a lifespan trait: causal C4 for longevity,
+the level read from a longevity set only.

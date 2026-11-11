@@ -127,3 +127,60 @@ side of more disease (thyroid autoimmunity, coronary disease, heart failure), an
 no trade-off detected among them. Three records leave it open: the self-contradicting myocardial infarction record
 (q23–q25) and the two with no allele (q26–q31). Rosoff's mvAge direction (q10) rests on the catalog's curation alone:
 Open Targets carries the same 0.010161293, most likely the same upstream record, not a second check.
+
+## Reading 2026-11-11, supplement
+
+rs2228145 (IL6R p.Asp358Ala), for row 8: `associations?rs_id=rs2228145&size=50`, cached as
+`associations-rs2228145.json`; rs8192284, its merged synonym, as `associations-rs8192284.json` (6 records, none
+with a stated allele but one fibrinogen record).
+
+> [q50] page size 50 totalElements 36 totalPages 1 number 0
+
+36 associations for rs2228145, read in full: protein levels (IL6R, IL-6, OSMR, CFB), CRP, fibrinogen, blood counts,
+lipids, allergic disease, atopic dermatitis, eczema, rheumatoid arthritis. None for lifespan, longevity, coronary
+disease or aortic aneurysm. Those that settle a direction:
+
+> [q35] _embedded.associations[7] association_id 162844628 risk_frequency 0.407474 pvalue_description pvalue_mantissa 1 pvalue_exponent -346 multi_snp_haplotype false snp_interaction false range [0.85-0.92] beta 0.8864 unit increase p_value 0.0 accession_id GCST90425952 pubmed_id 39528825 first_author Western D ci_lower 0.85 ci_upper 0.92
+
+> [q36] _embedded.associations[7].reported_trait[0] Interleukin-6 receptor subunit alpha (analyte X4139.71) levels
+
+> [q37] _embedded.associations[7].snp_allele[0] rs_id rs2228145 effect_allele C
+
+Interleukin-6 receptor subunit alpha (SomaScan 4139-71; Western 2024, GCST90425952): β +0.89 per C, P below the floating-point floor (0.0). C raises circulating soluble IL6R, the protein readout of the variant.
+
+> [q38] _embedded.associations[15] association_id 104522964 risk_frequency 0.6 pvalue_description pvalue_mantissa 2 pvalue_exponent -15 multi_snp_haplotype false snp_interaction false range [0.081-0.135] beta 0.108 unit increase p_value 2e-15 accession_id GCST90247165 pubmed_id 34648354 first_author Pietzner M ci_lower 0.081 ci_upper 0.135
+
+> [q39] _embedded.associations[15].reported_trait[0] C-reactive protein levels
+
+> [q40] _embedded.associations[15].snp_allele[0] rs_id rs2228145 effect_allele A
+
+C-reactive protein (Pietzner 2021, GCST90247165): β +0.108 per A, P 2 × 10⁻¹⁵. A raises CRP, so C lowers it: less IL-6 signalling.
+
+> [q41] _embedded.associations[35] association_id 41487 risk_frequency 0.6 pvalue_description pvalue_mantissa 4 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range [1.05-1.10] or_per_copy_num 1.08 or_value 1.08 beta - p_value 4e-09 accession_id GCST002318 pubmed_id 24390342 first_author Okada Y ci_lower 1.05 ci_upper 1.1
+
+> [q42] _embedded.associations[35].reported_trait[0] Rheumatoid arthritis
+
+> [q43] _embedded.associations[35].snp_allele[0] rs_id rs2228145 effect_allele A
+
+Rheumatoid arthritis (Okada 2014, GCST002318): OR 1.08 per A, P 4 × 10⁻⁹. A raises rheumatoid arthritis; C lowers it.
+
+> [q44] _embedded.associations[23] association_id 55899097 risk_frequency 0.4108 pvalue_description pvalue_mantissa 1 pvalue_exponent -12 multi_snp_haplotype false snp_interaction false range [1.03-1.051] or_per_copy_num 1.04 or_value 1.04 beta - p_value 1e-12 accession_id GCST009716 pubmed_id 31361310 first_author Johansson A ci_lower 1.03 ci_upper 1.051
+
+> [q45] _embedded.associations[23].reported_trait[0] Allergic disease (asthma, hay fever or eczema)
+
+> [q46] _embedded.associations[23].snp_allele[0] rs_id rs2228145 effect_allele C
+
+Allergic disease, asthma, hay fever or eczema (Johansson 2019, GCST009716): OR 1.04 per C, P 1 × 10⁻¹².
+
+> [q47] _embedded.associations[33] association_id 15815085 risk_frequency NR pvalue_description pvalue_mantissa 5 pvalue_exponent -10 multi_snp_haplotype false snp_interaction false range [1.05-1.11] or_per_copy_num 1.08 or_value 1.08 beta - p_value 5e-10 accession_id GCST003184 pubmed_id 26482879 first_author Paternoster L ci_lower 1.05 ci_upper 1.11
+
+> [q48] _embedded.associations[33].reported_trait[0] Atopic dermatitis
+
+> [q49] _embedded.associations[33].snp_allele[0] rs_id rs2228145 effect_allele C
+
+Atopic dermatitis (Paternoster 2015, GCST003184): OR 1.08 per C, P 5 × 10⁻¹⁰.
+
+The trade-off at this variant, from the stated alleles: C, the minor allele and the longer-life side (row 8), lowers
+CRP and rheumatoid arthritis and raises allergic disease and atopic dermatitis. Every record with a stated allele is
+consistent with that; the records with `?` (respiratory disease factor, venous thromboembolism, white cell count, CRP
+in Wojcik, eczema in Kichaev) state no allele.

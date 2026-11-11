@@ -24,6 +24,7 @@ mechanical consensus of the research tracks, to be confirmed or overturned by th
 - 4 LINC02796 (lead rs2613508, the NEGR1 obesity locus), tier B kept: genome-wide only in mvAge, with a nominal lifespan study (P 5.3e-4) that lets it score (D16); effector NEGR1 by L2G.
 - 5 FPGT / TNNI3K (lead rs146254978, a 2 % variant), tier B kept: genome-wide only in Pilling 2017's parents' age-at-death analysis (P 4.6e-8), the rare C protective; not in Open Targets (C4/E4, no gene).
 - 7 MAGI3 (lead rs1230666, the PTPN22 autoimmune region), tier B kept: genome-wide only in Timmers 2019's million lives (P 6.4e-9), null in the longevity look-ups; C1 by PICS PIP 0.64, E3 (no gene).
+- 8 IL6R Asp358Ala (lead rs2228145, with 157's rs8192284 folded in), tier C (seed B): nominal only at the variant (Timmers 0.0034, AncestryDNA fathers 0.0017, Zenin 0.017), WHI null; the seed's B was MR-only (R-TIER-4); a trade-off (atopy); E1 IL6R, C4.
 
 ## In hand
 

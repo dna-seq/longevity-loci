@@ -1,0 +1,161 @@
+# The seed list's locus 8, IL6R Asp358Ala (1q21.3), with locus 157, IL6R (p.Asp358Ala), folded in (D14): the seed's
+# rs2228145 and rs8192284 are one variant, rs8192284 merged into rs2228145 in dbSNP (db-ensembl-116#q7, q8). Curated
+# 2026-11-11, the ten-row run's ninth row. No genome-wide lifespan result exists at this variant; the seed's tier B
+# rests on Rosa 2019's cis-MR. Wright 2019's clumped SNPs nearby were read by LD to the lead (Ensembl 116, 1000
+# Genomes EUR): rs7518199 (fathers, r² 0.93) read, rs12568083 (mothers, r² 0.33) not. Pilling 2017's suggestive IL6R
+# SNP rs6689306 (r² 0.40) is named, not scored. Open Targets 26.09 has no lifespan credible set holding the variant;
+# the GWAS Catalog (2026-10-29) holds 36 associations for rs2228145 and 6 for rs8192284, none for lifespan.
+locus_id: 8
+locus_name: IL6R Asp358Ala
+also_loci: [157]
+verdict: re-tiered
+verdict_reason: >-
+  Tier C, from the seed's B: nothing at this variant reaches genome-wide significance, and §4.1's R-TIER-4 keeps an
+  MR-only result out of A and B. The lifespan evidence at the variant itself is nominal and points one way: in
+  Timmers 2019's summary statistics C, the minor allele (40 % in Europeans, the 358Ala of the receptor), goes with
+  longer-lived parents (P 0.0034, the same side in UK Biobank and LifeGen); in Wright 2019's AncestryDNA fathers, the
+  one sample outside UK Biobank and LifeGen, a close proxy (rs7518199, r² 0.93, its C riding with the lead's C by
+  frequency) does the same (P 0.0017); and in Zenin 2019 C delays the end of healthspan (P 0.017), in UK Biobank. That
+  is C by §4.1's "replicated only in small or same-group samples": none of it is suggestive (P < 1e-5) at the lead,
+  though Pilling 2017's IL6R SNP rs6689306, only partly correlated with it (r² 0.40), reaches 1.5e-6 on the same side.
+  The seed's B came from Rosa 2019's cis-MR: genetically higher soluble IL6R, that is less IL-6 signalling, lengthens
+  fathers' and mothers' age at death (P 3.8e-5 and 2.1e-5) over 34 instruments that do not include the variant, in
+  UK Biobank parents; it points the same way (C raises soluble IL6R) but is annotation, not a per-allele result. The
+  Women's Health Initiative, the seed's locus 157, found no difference in survival to 90 between women with two C
+  alleles and none (OR 1.00, 0.91 to 1.09; 23,464 women of several ancestries; abstract only): a null, but one whose
+  interval does not exclude an effect of the size seen in the parental studies, so it does not contradict them (not
+  D). The mechanism is immune and inflammation: C is the reduced-signalling allele (lower CRP, higher soluble IL6R
+  and IL-6, the pattern of tocilizumab), and it lowers rheumatoid arthritis and coronary heart disease (OR 0.95 per
+  allele at a tag, r² 0.94) and tuberculosis (OR 0.94). The trade-off is detected: the same C raises allergic
+  disease and atopic dermatitis. Causal confidence is C4 for longevity (no lifespan set in Open Targets 26.09; the
+  variant's 286 sets are for proteins and diseases); the variant is missense in IL6R, so the effector is IL6R by
+  §4.2's coding clause (E1). The protection is a presence, the minor C. Not a treatment indication (R-VOICE-4). Age
+  of action is unknown.
+axes:
+  tier: {value: C, cites: [pmid-30642433#q35, pmid-31484785#q25, pmid-31484785#q26, pmid-30729179#q19, pmid-29227965#q20, pmid-31552141#q1, pmid-31552141#q3, pmid-31552141#q4, pmid-31552141#q5, pmid-40674461#q2]}
+  mechanism: {value: immune_inflammation, cites: [pmid-39579785#q1, pmid-22421340#q3, pmid-31552141#q1, db-gwascatalog-2026.10.29#q35, db-gwascatalog-2026.10.29#q38, db-gwascatalog-2026.10.29#q40]}
+  pleiotropy: {values: ["tradeoff", "mr:drug_target_proxy", "mech:autoimmune", "mech:cvd", "mech:allergy", "mech:infection"],
+               cites: [pmid-31552141#q1, pmid-22421340#q2, pmid-22421340#q3, pmid-39579785#q2, db-gwascatalog-2026.10.29#q41, db-gwascatalog-2026.10.29#q43, db-gwascatalog-2026.10.29#q44, db-gwascatalog-2026.10.29#q46, db-gwascatalog-2026.10.29#q47, db-gwascatalog-2026.10.29#q49]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
+            cites: [pmid-30729179#q19, pmid-30642433#q35, pmid-31484785#q25, pmid-40674461#q2]}
+  actionability: {label: descriptive, cites: [pmid-22421340#q3]}
+  context: {values: [eur_only_evidence], cites: [pmid-30642433#q35, pmid-31484785#q25, pmid-30729179#q19]}
+flags:
+  - {token: "PROTECT:PRESENCE", cites: [pmid-30642433#q35, db-opentargets-26.09#q68]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q69]}
+  - {token: "effector:E1", cites: [db-ensembl-116#q9, db-opentargets-26.09#q67]}
+variants:
+  - rsid: rs2228145
+    gene: IL6R
+    phenotype: IL6R Asp358Ala, interleukin-6 signalling
+    trait_efo_id: EFO_0007796
+    effect_allele: A
+    effect_size: -0.01145
+    effect_measure: beta
+    stat_significance: nominal
+    direction: risk
+    negatives: >-
+      The longer-life version, C, also goes with more allergic disease: eczema (atopic dermatitis), hay fever and
+      asthma.
+    genotypes:
+      - genotype: A/A
+        state: neutral
+        conclusion: >-
+          You carry two copies of the more common version of this DNA change, in the IL6R gene (about 36 in 100
+          people of European ancestry do). IL6R makes the receptor for interleukin-6, a signal that drives
+          inflammation. This is the reference the other combinations are compared with. The finding comes mostly
+          from people of European ancestry; less is known elsewhere.
+      - genotype: A/C
+        state: protective
+        conclusion: >-
+          You carry one copy of a version of the IL6R gene (about 48 in 100 people of European ancestry do) that
+          dampens interleukin-6, an inflammation signal. In large studies it went with slightly lower rates of
+          rheumatoid arthritis and heart disease, and, weakly, with parents who lived a little longer. The same
+          version goes with somewhat more eczema, hay fever and asthma. This is early evidence, not a settled
+          finding: a large study of older women found no difference in reaching age 90. It is a tendency, not
+          destiny, and it says nothing about whether any medicine is right for you.
+      - genotype: C/C
+        state: protective
+        conclusion: >-
+          You carry two copies of a version of the IL6R gene (about 16 in 100 people of European ancestry do) that
+          dampens interleukin-6, an inflammation signal. In large studies each copy went with slightly lower rates
+          of rheumatoid arthritis and heart disease, and, weakly, with parents who lived a little longer. The same
+          version goes with somewhat more eczema, hay fever and asthma. This is early evidence, not a settled
+          finding: a large study of older women with two copies found no difference in reaching age 90. It is a
+          tendency, not destiny, and it says nothing about whether any medicine is right for you.
+studies:
+  - rsid: rs2228145
+    note: pmid-30642433
+    quote: q35
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 639253
+    sample_unit: lives
+    stat_significance: nominal
+    p_value: "0.0033903321"
+    p_value_num: 0.0034
+    effect_size: -0.01145346
+    effect_measure: beta
+    effect_unit: log hazard protection per A allele in self (negative = shorter life)
+    effect_allele: A
+    direction: risk
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), direction -- in UK Biobank and LifeGen, info 0.999"
+    curator: claude-opus-5-5
+  - rsid: rs2228145
+    note: pmid-31484785
+    quote: q25
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_linear
+    population: AncestryDNA customers' fathers born 1886-1918 (mostly European American)
+    ancestry: [EUR]
+    sample_size: 167000
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "0.001681"
+    p_value_num: 0.001681
+    proxy_rsid: rs7518199
+    effect_size: 0.01151
+    effect_measure: beta
+    effect_unit: z-scored fathers' lifespan per C allele of rs7518199 (positive = longer)
+    effect_allele: C
+    direction: protective
+    statistical_test: "Supplemental Table 8, genomic-control P; rs7518199 r² 0.93 to rs2228145 (db-ensembl-116#q12), C with C by EUR frequency (derived); S9 fathers' meta P 8.8E-04, AncestryDNA 0.019, mothers' meta 0.0018, AncestryDNA 0.044 (q26, q27)"
+    curator: claude-opus-5-5
+  - rsid: rs2228145
+    note: pmid-30729179
+    quote: q19
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "0.017"
+    p_value_num: 0.0175
+    effect_size: -0.0117
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per C allele (positive = earlier)
+    effect_allele: C
+    direction: protective
+    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), -log10 P 1.758; the same UK Biobank people as Timmers 2019's UK Biobank part"
+    curator: claude-opus-5-5
+  - rsid: rs2228145
+    note: pmid-40674461
+    quote: q2
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: Women's Health Initiative, postmenopausal US women of several ancestries (genotyped as rs8192284)
+    sample_size: 23464
+    sample_unit: individuals
+    n_cases: 12181
+    stat_significance: not_significant
+    effect_size: 1.00
+    effect_measure: OR
+    effect_unit: odds of survival to 90, two variant (C) alleles against none
+    effect_allele: C
+    statistical_test: "logistic regression, survival to age 90 during a median 20 years' follow-up; 95 % CI 0.91-1.09; genotype contrast, not per allele; abstract only, ancestry breakdown not given"
+    curator: claude-opus-5-5
