@@ -303,3 +303,7 @@ person's standing word.
    at power 0.97 makes 37 §4.1's "replication with a much smaller effect", B, and the flag comes off unless another
    sample fails. Mechanism stays `general_ageing` (D25.7) with `mech:autoimmune`; immune_inflammation rejected, no
    route shown.
+   It holds back to every row, D16's co-occurring lifespan study included (p < 0.05 one-sided, same allele and
+   direction): 2 PABPC4, 4, 17 CASP8, 18 TMEM43 and 93 LDLR, which read a same-direction P of 0.05 to 0.10 as a miss,
+   are re-read under it as one sweep, each tier move reported and read adversarially by the lead. A cross-ancestry
+   look-up that now passes (18) is §4.1's "ancestry-specific replication only" at most.
