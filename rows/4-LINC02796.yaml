@@ -23,7 +23,8 @@ verdict_reason: >-
   BMI lead rs1993709 (r² 0.99), its T allele with the BMI-raising G (phase derived from frequencies), so the
   allele that ages worse is the one that raises BMI; that is association on one haplotype, not a mediator test. In
   mvAge's own credible set (PICS) rs2613508 leads 75 members, all at PIP 0.05 or less (causal:C3); the top
-  locus-to-gene score is NEGR1 at 0.56 (effector:E2), so NEGR1 is named (§6.2), as it is on the BMI set (0.74).
+  locus-to-gene score is NEGR1 at 0.56, as on the BMI set (0.74), and NEGR1 is the only gene whose expression
+  colocalises with the signal (six cis QTL sets, H4 ≥ 0.8): effector:E1, NEGR1 named (§6.2).
   Actionability is modifiable through weight (§4.2's label line, D18.2): the locus acts through body weight, with
   no LATE age of action shown and no trade-off detected, the two cases §4.2 leaves descriptive. The trade-off was
   looked for (D18.1) in the GWAS Catalog's nine records at rs2613508 and its BMI lead rs1993709: the longer-life
@@ -42,7 +43,7 @@ axes:
 flags:
   - {token: "PROTECT:PRESENCE", cites: [pmid-37550455#q8, pmid-30642433#q26]}
   - {token: "causal:C3", cites: [db-opentargets-26.09#q47, db-opentargets-26.09#q48, db-opentargets-26.09#q49]}
-  - {token: "effector:E2", cites: [db-opentargets-26.09#q50]}
+  - {token: "effector:E1", cites: [db-opentargets-26.09#q50, db-opentargets-26.09#q274, db-opentargets-26.09#q275, db-opentargets-26.09#q276, db-opentargets-26.09#q277]}
 variants:
   - rsid: rs2613508
     gene: NEGR1

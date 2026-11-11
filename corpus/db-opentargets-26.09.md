@@ -1071,3 +1071,17 @@ the same five KCNK3 colocalisations:
 > [q273] data.credibleSet.colocalisation count 6
 
 KCNK3 is the top locus-to-gene gene (0.85, q104) and the only gene that colocalises: `effector:E1`, KCNK3.
+
+### rs2613508 (NEGR1), for row 4
+
+> [q274] data.credibleSet.colocalisation count 7
+
+> [q275] data.credibleSet.colocalisation.rows[6] rightStudyType eqtl h4 0.9536593154699168 clpp 0.018212063210753512
+
+> [q276] data.credibleSet.colocalisation.rows[6].otherStudyLocus isTransQtl false
+
+> [q277] data.credibleSet.colocalisation.rows[6].otherStudyLocus.study.target approvedSymbol NEGR1
+
+Rosoff's mvAge set (abc062e8): seven QTL colocalisations, six at H4 ≥ 0.8, all cis and all NEGR1 (five expression,
+one splicing; q275 is HipSci's iPSC exon expression). NEGR1 is the top locus-to-gene gene (0.56, q50) and the only
+gene that colocalises: `effector:E1`, NEGR1.
