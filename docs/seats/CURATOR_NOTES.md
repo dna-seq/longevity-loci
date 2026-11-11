@@ -29,6 +29,15 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   (`fetch-supp`, q17): its R2 column repeats Freq1 and its rsID/Proxy headers are swapped, so no r² is read from it.
   Wright's S8/S9 hold clumped "representative" SNPs only: a lead's absence there is not a null. Age MIDLIFE INFERRED
   (Joshi q9, at his SNP). Seed trade-off (hypothesised) not recorded.
+- **103 in hand** (2026-11-11): rs1049053, the seed's single-track A, Zenin 2019's healthspan lead (Table 2, q7: T
+  ends healthspan earlier, β 0.037, P 1.4e-11; replication in 96,313 UK Biobank β 0.013, P 0.146). HLA-DQB1, 43 kb
+  from 38's lead, EAF 0.67: its own signal. Requirements §4.5: HEALTHSPAN scores only with a co-occurring lifespan
+  signal "at least suggestive", else HEALTHSPAN_ONLY (K_definitions). Timmers 2019's summary statistics (GWAS
+  Catalog GCST009890) now cached for all 228 seed rsIDs (`pmid-30642433.supp-lifegen_phase2_bothpl_alldr_2017_09_18
+  .tsv.gz.rows-1102aade.txt`; beta1 = log hazard protection per a1 in self): rs1049053 T beta1 −0.0176, P 1.44e-4,
+  direction "--" (UK Biobank and LifeGen): nominal, same side. Open Targets has no MHC sets. Still to read: Wright
+  S8/S9 by position near GRCh37 6:32634405; Deelen SD1 (not there by rsID). The tier and the scoring question go
+  to the advisor.
 - **38 corrected** (2026-11-11), the lead's review (handout 20261111T004405Z-review-38) applied. Still B, now for
   §4.1's tag clause: Wright S8 (AncestryDNA mothers 1886-1940) has rs3135006 (A = dbSNP's minor T, other strand) at
   P 3.3e-4, S9 meta P 3.1e-5, het 0.32 (q23, q24); added as a nominal proxy study. Rules learned: search Wright S8/S9
