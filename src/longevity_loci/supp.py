@@ -21,6 +21,7 @@ import json
 import logging
 import re
 import zipfile
+import xml.etree.ElementTree as ET
 from dataclasses import dataclass, field
 from datetime import UTC, datetime
 from pathlib import Path
@@ -119,6 +120,81 @@ def _gunzip_rows(data: bytes, rows: str) -> bytes:
     return b"".join(out)
 
 
+ODF_TABLE = "{urn:oasis:names:tc:opendocument:xmlns:table:1.0}"
+ODF_TEXT = "{urn:oasis:names:tc:opendocument:xmlns:text:1.0}"
+W = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
+
+
+def _office_kind(data: bytes) -> str | None:
+    """What an office file is, read from its zip's contents rather than its name: publishers serve an OpenDocument
+    spreadsheet under an .xlsx name (Springer's MOESM files). None when it is not a zip."""
+    try:
+        with zipfile.ZipFile(io.BytesIO(data)) as z:
+            names = set(z.namelist())
+            mime = z.read("mimetype").decode("ascii", "replace").strip() if "mimetype" in names else ""
+    except zipfile.BadZipFile:
+        return None
+    if mime == "application/vnd.oasis.opendocument.spreadsheet":
+        return "ods"
+    if mime == "application/vnd.oasis.opendocument.text":
+        return "odt"
+    if "word/document.xml" in names:
+        return "docx"
+    if "xl/workbook.xml" in names:
+        return "xlsx"
+    return None
+
+
+def _odf_cell_text(cell: ET.Element) -> str:
+    return " ".join("".join(p.itertext()).strip() for p in cell.iter(f"{ODF_TEXT}p")).strip()
+
+
+def _ods(data: bytes) -> str:
+    """An OpenDocument spreadsheet as `xlsx` is rendered: a `## sheet:` line, then one line a row, cells tab-separated;
+    a repeated cell or row (ODF's run-length) written out, empty trailing cells and rows dropped."""
+    with zipfile.ZipFile(io.BytesIO(data)) as z:
+        root = ET.fromstring(z.read("content.xml"))
+    parts = []
+    for table in root.iter(f"{ODF_TABLE}table"):
+        rows = []
+        for row in table.iter(f"{ODF_TABLE}table-row"):
+            cells: list[str] = []
+            for cell in row:
+                if cell.tag not in (f"{ODF_TABLE}table-cell", f"{ODF_TABLE}covered-table-cell"):
+                    continue
+                n = int(cell.get(f"{ODF_TABLE}number-columns-repeated", "1"))
+                cells += [_odf_cell_text(cell)] * min(n, 1000)
+            while cells and not cells[-1]:
+                cells.pop()
+            if cells:
+                rows += [cells] * min(int(row.get(f"{ODF_TABLE}number-rows-repeated", "1")), 1000)
+        parts.append(f"## sheet: {table.get(f'{ODF_TABLE}name', '')}\n" + _table(rows))
+    return "\n".join(parts)
+
+
+def _docx(data: bytes) -> str:
+    """A Word document's text: each paragraph a line, each table row a line with its cells tab-separated."""
+    with zipfile.ZipFile(io.BytesIO(data)) as z:
+        body = ET.fromstring(z.read("word/document.xml")).find(f"{W}body")
+    lines: list[str] = []
+    for block in body if body is not None else []:
+        if block.tag == f"{W}p":
+            lines.append("".join(block.itertext()))
+        elif block.tag == f"{W}tbl":
+            for tr in block.iter(f"{W}tr"):
+                cells = [" ".join("".join(p.itertext()) for p in tc.iter(f"{W}p")).strip() for tc in tr.findall(f"{W}tc")]
+                lines.append("\t".join(cells).rstrip("\t"))
+    return "".join(line + "\n" for line in lines if line.strip())
+
+
+def _odt(data: bytes) -> str:
+    """An OpenDocument text's paragraphs and table rows, as `_docx` writes a Word document's."""
+    with zipfile.ZipFile(io.BytesIO(data)) as z:
+        root = ET.fromstring(z.read("content.xml"))
+    lines = ["".join(p.itertext()) for p in root.iter(f"{ODF_TEXT}p")]
+    return "".join(line + "\n" for line in lines if line.strip())
+
+
 def render(name: str, data: bytes, rows: str | None = None) -> str:
     """A file as text, by its name's suffix; Unrenderable when it has none this module can write. With `rows`, only
     the lines `keep_rows` keeps."""
@@ -130,7 +206,14 @@ def render(name: str, data: bytes, rows: str | None = None) -> str:
         return render(inner, body, rows)
     if rows is not None:
         return keep_rows(render(name, data), rows)
-    if low in (".xlsx", ".xlsm"):
+    office = _office_kind(data) if low in (".xlsx", ".xlsm", ".ods", ".docx", ".odt", ".doc") else None
+    if office == "ods":
+        return _ods(data)
+    if office == "docx":
+        return _docx(data)
+    if office == "odt":
+        return _odt(data)
+    if low in (".xlsx", ".xlsm") and office == "xlsx":
         book = openpyxl.load_workbook(io.BytesIO(data), read_only=True, data_only=True)
         parts = []
         for sheet in book.worksheets:

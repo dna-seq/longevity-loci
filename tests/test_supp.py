@@ -184,3 +184,52 @@ def test_a_database_record_is_refused_under_another_release(tmp_path: Path) -> N
         f"accessed: 2026-11-11\ndepth: record\n---\n\n## Reading 2026-11-11, record\n\n> [q1] {line}\n")
     found = {f.where: f for f in check_quotes(corpus, tmp_path / "c")}
     assert found["q1"].kind is Kind.LOCATED and cached.path.name in found["q1"].detail
+
+
+GURINOVICH_ODS = ("https://static-content.springer.com/esm/art%3A10.1007%2Fs11357-021-00376-4/MediaObjects/"
+                  "11357_2021_376_MOESM2_ESM.xlsx")
+
+
+def _zip(files: dict[str, str]) -> bytes:
+    buf = io.BytesIO()
+    with zipfile.ZipFile(buf, "w") as z:
+        for name, text in files.items():
+            z.writestr(name, text)
+    return buf.getvalue()
+
+
+def test_an_opendocument_sheet_under_an_xlsx_name_is_read_by_its_contents() -> None:
+    """Springer serves Gurinovich 2021's MOESM2 as an OpenDocument spreadsheet named .xlsx: the kind is read from
+    the zip's mimetype, never the name. A run-length repeat is written out; empty trailing cells are dropped."""
+    content = ('<office:document-content xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" '
+               'xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" '
+               'xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0"><office:body><office:spreadsheet>'
+               '<table:table table:name="S1"><table:table-row>'
+               '<table:table-cell><text:p>SNP</text:p></table:table-cell><table:table-cell><text:p>P</text:p></table:table-cell>'
+               '<table:table-cell table:number-columns-repeated="3"/></table:table-row>'
+               '<table:table-row><table:table-cell><text:p>rs1</text:p></table:table-cell>'
+               '<table:table-cell table:number-columns-repeated="2"><text:p>x</text:p></table:table-cell></table:table-row>'
+               '</table:table></office:spreadsheet></office:body></office:document-content>')
+    data = _zip({"mimetype": "application/vnd.oasis.opendocument.spreadsheet", "content.xml": content})
+    assert render("t.xlsx", data) == render("t.ods", data) == "## sheet: S1\nSNP\tP\nrs1\tx\tx\n"
+
+
+def test_a_word_document_paragraphs_and_table_rows() -> None:
+    w = 'xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"'
+    doc = (f'<w:document {w}><w:body><w:p><w:r><w:t>Supplement Table 1</w:t></w:r></w:p>'
+           '<w:tbl><w:tr><w:tc><w:p><w:r><w:t>SNP</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>P</w:t></w:r></w:p></w:tc></w:tr>'
+           '<w:tr><w:tc><w:p><w:r><w:t>rs1</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>2.9E-28</w:t></w:r></w:p></w:tc></w:tr></w:tbl>'
+           '</w:body></w:document>')
+    data = _zip({"[Content_Types].xml": "<Types/>", "word/document.xml": doc})
+    assert render("t.docx", data) == "Supplement Table 1\nSNP\tP\nrs1\t2.9E-28\n"
+
+
+def test_gurinovich_supplement_is_cached(tmp_path: Path) -> None:
+    got = fetch_supplement("pmid-33948810", GURINOVICH_ODS, tmp_path)
+    if any(f.outcome is Outcome.UNREACHABLE for f in got.files) or got.outcome is Outcome.UNREACHABLE:
+        pytest.skip("Springer's file server unreachable")
+    assert got, got
+    text = got.files[0].path.read_text(encoding="utf-8")
+    header = text.splitlines()[1].split("\t")
+    assert text.startswith("## sheet: ") and {"SNP", "Score.pval"} <= set(header)
+    assert any(line.startswith("rs429358\t") for line in text.splitlines())
