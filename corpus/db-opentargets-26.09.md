@@ -2292,3 +2292,44 @@ Row 49's BMPER lead (`variant-7_34054385_A_G-all.json`): six credible sets (q623
 (ENSG00000164619) expression and exon QTL sets. Liu's set has four colocalisations (q630,
 `coloc-34741810ca5197f07f78d981561229f0.json`), all BMPER cerebellum or cerebellar-hemisphere eQTLs at H4 0.975 to
 0.980 (eCAVIAR, clpp 0.035 to 0.043; q631 to q633): L2G ≥ 0.5 with a cis-QTL colocalisation, E1 BMPER. For row 49.
+
+## Reading 2026-11-11, supplement
+
+> [q634] data.variant.credibleSets count 34
+
+> [q635] data.variant.credibleSets.rows[22] studyLocusId 99e9acb36832b3d0f43a6ffb2cbfbf32 studyId GCST90321079 pValueMantissa 9 pValueExponent -9 beta 0.006039821 finemappingMethod PICS
+
+> [q636] data.variant.credibleSets.rows[22].study traitFromSource Aging projectId GCST nSamples 1559001 nCases 0
+
+> [q637] data.variant.credibleSets.rows[22].locus.rows[0] posteriorProbability 0.14839243040180664
+
+> [q638] data.variant.credibleSets.rows[22].locus.rows[0].variant id 7_114608796_A_G
+
+> [q639] data.variant.credibleSets.rows[22].l2GPredictions.rows[0] score 0.9152749180793762
+
+> [q640] data.variant.credibleSets.rows[22].l2GPredictions.rows[0].target approvedSymbol FOXP2
+
+> [q641] data.variant.credibleSets.rows[25] studyLocusId a767ed5edba98399f7a2beec19cfec1a studyId GCST90275148 pValueMantissa 1.5869419574737549 pValueExponent -10 beta -0.025512637001286472 finemappingMethod SuSiE-inf
+
+> [q642] data.variant.credibleSets.rows[25].study traitFromSource Attention deficit hyperactivity disorder (adjusted for sex) projectId GCST nSamples 58286 nCases 21738
+
+> [q643] data.variant.credibleSets.rows[25].locus.rows[0].variant id 7_114608796_A_G
+
+> [q644] data.variant.credibleSets.rows[7] studyLocusId 39ee17b887c65e4b6eec66cc3460c3dc studyId GCST90245879 pValueMantissa 6 pValueExponent -9 beta -0.017676765 finemappingMethod PICS
+
+> [q645] data.variant.credibleSets.rows[7].study traitFromSource Genetically independent pain phenotypes (GIP1) projectId GCST nSamples 265000 nCases 0
+
+> [q646] data.variant.credibleSets.rows[7].locus.rows[0].variant id 7_114608796_A_G
+
+> [q647] data.credibleSet.colocalisation count 0
+
+Row 50's FOXP2 lead (`variant-7_114608796_A_G-all.json`): 34 credible sets (q634). One is lifespan-class, Rosoff's
+mvAge (GCST90321079, "Aging", PICS, from the curated top hit and without an in-sample LD reference, q635, q636): the lead
+tops it at PIP 0.148 (q637, q638), C2 by §4.2's letter; L2G names FOXP2 at 0.92 (q639, q640; MDFIC 0.07). Its beta is
+the alt G's, +0.0060, G healthier. QTL colocalisations for that set (`coloc-qtl-99e9acb36832b3d0f43a6ffb2cbfbf32.json`):
+none, count 0 (q647). So L2G ≥ 0.5 alone: E2 FOXP2. The other 33 sets: ADHD (eight, the lead topping the ADuLT sets; in
+GCST90275148 the lead's own β −0.0255 for G, PIP 0.196, q641 to q643), pain (seven, Tsepilov's pain factor led by the
+lead, G −0.0177, PIP 0.151, q644 to q646; the rest led by neighbours), sleep duration (three), smoking initiation and
+current smoking (three), substance use (three), education (two), IGF-1, diastolic pressure, chloride and chronic airway
+obstruction, these led by other variants at PIP 0.08 to 0.75 with the lead at 0.003 to 0.085, so their betas are not
+the lead's. Every set's L2G names FOXP2 (0.69 to 0.93). For row 50.

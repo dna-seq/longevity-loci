@@ -1197,3 +1197,28 @@ rs17169634 (`variation-rs17169634.json`, `variation-grch37-rs17169634.json`): GR
 East Asian (q334), 0.081 non-Finnish European (q335). So the allele is as common in Europe as in China. In CEU
 (`ld-ceu-rs17169634.json`, 500 kb, r² ≥ 0.8) 16 variants tag it, every one at r² 1.0, among them rs17169630 (q336).
 For row 49.
+
+## Reading 2026-11-11, supplement
+
+> [q337] mappings[0] start 114608796 location 7:114608796-114608796 allele_string A/G end 114608796 coord_system chromosome strand 1 ancestral_allele A assembly_name GRCh38 seq_region_name 7
+
+> [q338] allele_count 23254 allele G population gnomADg:nfe frequency 0.3423
+
+> [q339] allele_count 374 population 1000GENOMES:phase_3:EUR allele G frequency 0.371769383697813
+
+> [q340] allele_count 20 frequency 0.0198412698412698 population 1000GENOMES:phase_3:EAS allele G
+
+> [q341] frequency 0.262626262626263 allele G population 1000GENOMES:phase_3:FIN allele_count 52
+
+> [q342] population_name 1000GENOMES:phase_3:CEU r2 1.000000 d_prime 1.000000 variation2 rs34526725 variation1 rs12705966
+
+> [q343] population_name 1000GENOMES:phase_3:CEU d_prime 1.000000 r2 0.977926 variation2 rs2189012 variation1 rs12705966
+
+> [q344] d_prime 0.711452 variation1 rs12705966 variation2 rs2396766 r2 0.211810 population_name 1000GENOMES:phase_3:CEU
+
+Row 50's FOXP2 lead rs12705966 (`variation-rs12705966.json`, `ld-ceu-rs12705966.json`,
+`ld-ceu-rs12705966-rs2396766.json`): GRCh38 7:114,608,796, A/G, A ancestral (q337). G is 0.34 in gnomAD non-Finnish
+Europeans (q338), 0.37 in 1000 Genomes EUR (q339), 0.26 in FIN (q341) and 0.02 in EAS (q340). At gnomAD's 0.342:
+A/A about 43 in 100, A/G 45, G/G 12 (derived). Nine CEU variants within 500 kb at r² ≥ 0.8: rs34526725 at 1.00 (q342),
+six at 0.98 (rs2189012, q343, the ADHD proxy of pmid-37118362#q63, with rs7797335, rs1229760, rs1229761, rs1229762,
+rs2045292), rs9969232 0.85 and rs4727799 0.83. Atkins' frailty lead rs2396766 is r² 0.21, D′ 0.71 (q344). For row 50.

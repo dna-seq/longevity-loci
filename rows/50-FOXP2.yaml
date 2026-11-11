@@ -1,0 +1,219 @@
+# The seed list's locus 50, FOXP2 (7q31.1). Curated 2026-11-11. Lead rs12705966 (Rosoff 2023's mvAge, Supplementary
+# Table 6, filed as known through frailty; GRCh38 7:114,608,796 A/G, GRCh37 7:114,248,851), the seed's only rsID here,
+# intronic in FOXP2. It is also Timmers 2022's own aging-GIP1 lead at FOXP2. Atkins 2021's frailty lead rs2396766 lies
+# 69 kb away at r² 0.21 (mostly another signal, named only). Wright 2019's tables hold no SNP within 600 kb. Open
+# Targets 26.09: 34 credible sets hold the lead, one lifespan-class (mvAge's, the lead on top); the rest ADHD, pain,
+# sleep, smoking, substance use and education. The GWAS Catalog (2026-10-29) holds three associations for it.
+locus_id: 50
+locus_name: FOXP2
+verdict: kept
+verdict_reason: >-
+  Tier B, as the seed has it: a genome-wide multivariate result with a co-occurring lifespan study (§4.5 as D16 reads
+  it), never genome-wide in a lifespan, longevity or healthspan study of its own (D18.3), and not replicated outside
+  its inputs. Genome-wide twice, both multivariate and sharing their inputs, so one discovery: Rosoff 2023's mvAge
+  (P 9.1e-9; A lowers the factor, so G, the minor allele at about 34 % in Europeans, is on the healthier-ageing side;
+  Table 7 and the GWAS Catalog's record anchor it) and Timmers 2022's aging-GIP1, where the lead is the locus's own
+  lead (G raising it, P 7e-10; an "adjusted" estimate beside it halves the β, P 7.9e-4, the adjustment unstated).
+  Timmers 2019's million parents' lives are the co-occurring lifespan study (D16): G lengthens life, P 0.0016, UK
+  Biobank and LifeGen on the same side. Every input leans G's way: frailty P 1.8e-7, healthspan P 0.022 after the
+  deposit's genomic control (one-sided 0.011), Deelen 2019's 90th percentile P 0.10 (one-sided 0.050, just short) and
+  99th 0.32. Outside the inputs, nothing replicates and the one powered look goes against. FinnGen's death endpoint
+  puts G on the side of more deaths, P 0.035. Carried into FinnGen by APOE's factor (0.99), Timmers' effect predicts
+  G −0.013 on the log odds of death: heterogeneity P 1.8e-4, but one-sided power only 0.50, so by D21 (power at least
+  0.8 and heterogeneity P below 0.05) it is no red flag, and Figure 4's smaller mean factor gives less (power 0.17).
+  Timmers 2022's survival look-up in FinnGen with Biobank Japan, mostly the same Finns, agrees in sign (G −0.086
+  years, SE 0.122, one-sided P 0.76 for aging-GIP1's direction). Its SE is about 1.8 times that of look-ups at a like
+  frequency, since G is 0.02 in East Asians and Biobank Japan adds almost nothing. Scaled by the mean over the other
+  look-ups that hold up there (D25.12; 7.0 years per unit), the expected gain is 0.16 years at power 0.38; APOE is not
+  among them. No red flag under any factor computed, so no `replication_failed` and not D (D25.1 needs one), but the
+  Finnish data lean against G and the row says so. Wright 2019's AncestryDNA tables print only SNPs below about 2.5e-3
+  and hold none within 600 kb, so that look-up is unread, not null. Atkins 2021's frailty hit nearby (rs2396766, P
+  1.2e-9) is r² 0.21 to the lead and colocalises with aging-GIP1 at H4 0.76 only: a healthspan-class result on mostly
+  another signal, named and not counted (D22.2). Mechanism: ageing in general (D25.7). Every Open Targets set at the
+  locus is behavioural or psychiatric, or pain: per G, less ADHD (the lead tops the ADuLT sets, β −0.026, PIP 0.20)
+  and a lower pain factor (Tsepilov's, led by the lead); at proxies in Timmers 2022's look-ups (r² 0.67 to 0.94),
+  less ADHD or cannabis use, shorter sleep, fewer sexual partners, lower risk tolerance, a higher household income
+  and fewer years of education. Nothing shows the lifespan effect runs through one of them, so the pleiotropy is broad
+  and actionability descriptive. No trade-off (D18.1): no disease runs with G, and fewer years of education is not a
+  harm quoted for G. Causal confidence C2: in mvAge's PICS set the lead is the top variant at PIP 0.148. Effector E2
+  FOXP2: locus-to-gene 0.92 (MDFIC 0.07, no rival), and no QTL colocalises with that set. The longer-life G is the less
+  common allele, so the most common genotype, A/G (about 45 in 100 at gnomAD's non-Finnish European frequency, A/A 43),
+  is the reference, with no PROTECT token, as at row 29. Healthspan + (Zenin, one-sided 0.011), lifespan + (Timmers,
+  0.0016; FinnGen's opposite lean named), exceptional survival 0 (Deelen one-sided 0.050 and 0.16). The supporting
+  evidence is European only: the only non-European data, Biobank Japan's share of the survival look-up, are near nil
+  at G 0.02. Age of action is unknown.
+axes:
+  tier: {value: B, cites: [pmid-37550455#q44, pmid-37550455#q45, pmid-37550455#q2, pmid-37550455#q5, db-gwascatalog-2026.10.29#q322, pmid-37118362#q57, pmid-37118362#q60, pmid-37118362#q59, pmid-37118362#q17, pmid-30642433#q236, pmid-30729179#q73, pmid-30729179#q59, pmid-31413261#q131, pmid-31413261#q132, db-finngen-r11#q25, db-finngen-r11#q4, pmid-30642433#q90, pmid-30642433#q92, pmid-37118362#q58, pmid-37118362#q2, pmid-37118362#q5, pmid-37118362#q6, pmid-37118362#q7, pmid-37118362#q3, pmid-37118362#q19, db-ensembl-116#q340, pmid-31484785#q6, pmid-34431594#q7, pmid-37118362#q62, db-ensembl-116#q344]}
+  mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q634, db-opentargets-26.09#q641, db-opentargets-26.09#q642, db-opentargets-26.09#q644, db-opentargets-26.09#q645, pmid-37118362#q63, pmid-37118362#q64, pmid-37118362#q66, pmid-37118362#q67]}
+  pleiotropy: {values: [broad], cites: [db-opentargets-26.09#q641, db-opentargets-26.09#q642, db-opentargets-26.09#q643, db-opentargets-26.09#q644, db-opentargets-26.09#q645, db-opentargets-26.09#q646, db-gwascatalog-2026.10.29#q323, db-gwascatalog-2026.10.29#q324, pmid-37118362#q63, pmid-37118362#q64, pmid-37118362#q65, pmid-37118362#q66, pmid-37118362#q67, pmid-37118362#q68, db-ensembl-116#q343]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: 0,
+            cites: [pmid-30729179#q73, pmid-30729179#q59, pmid-30642433#q236, db-finngen-r11#q25, pmid-31413261#q131, pmid-31413261#q132]}
+  actionability: {label: descriptive, cites: [db-opentargets-26.09#q641, db-opentargets-26.09#q644, pmid-37118362#q63, pmid-37118362#q67]}
+  context: {values: [eur_only_evidence], cites: [pmid-37550455#q45, pmid-30642433#q236, pmid-37118362#q58, db-ensembl-116#q340]}
+flags:
+  - {token: "causal:C2", cites: [db-opentargets-26.09#q635, db-opentargets-26.09#q636, db-opentargets-26.09#q637, db-opentargets-26.09#q638]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q639, db-opentargets-26.09#q640, db-opentargets-26.09#q647]}
+variants:
+  - rsid: rs12705966
+    gene: FOXP2
+    phenotype: FOXP2 region, ageing and behaviour
+    trait_efo_id: EFO_0007796
+    effect_allele: G
+    effect_size: 0.0060
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: G/G
+        state: protective
+        conclusion: >-
+          You carry two copies of the less common version of this DNA region (about 12 in 100 people of European
+          ancestry do). In very large European studies that combined healthspan, frailty, long life and biological
+          age into one measure, each copy went with slightly healthier ageing, and parents of carriers lived a
+          little longer. A large Finnish study of deaths did not confirm it and leaned the other way, so this is a
+          likely finding, not a settled one. The region, in the FOXP2 gene, is also linked to attention, sleep, pain
+          and risk-taking. The effect is small and it is a tendency, not destiny.
+      - genotype: A/G
+        state: neutral
+        conclusion: >-
+          You carry one copy of each version of this DNA region (about 45 in 100 people of European ancestry do,
+          the most common combination). It is the reference the other combinations are compared with. The region,
+          on chromosome 7, lies in the FOXP2 gene and is linked to attention, sleep, pain and risk-taking as well
+          as to how people age in general. The finding comes from people of European ancestry; less is known
+          elsewhere.
+      - genotype: A/A
+        state: risk
+        conclusion: >-
+          You carry two copies of the more common version of this DNA region (about 43 in 100 people of European
+          ancestry do). In very large European studies that combined healthspan, frailty, long life and biological
+          age into one measure, this version went with slightly less healthy ageing than the other, and parents of
+          carriers lived a little less long. A large Finnish study of deaths did not confirm it, so this is a
+          likely finding, not a settled one. The effect is small and it is a tendency, not destiny.
+studies:
+  - rsid: rs12705966
+    note: pmid-37550455
+    quote: q45
+    phenotype_class: MULTIVARIATE_AGEING
+    study_design: multivariate_healthspan_lifespan
+    population: European (the five input GWAS, UK Biobank and LifeGen among them; effective n 1,958,774)
+    ancestry: [EUR]
+    stat_significance: significant
+    p_value: "9.1e-09"
+    p_value_num: 9.1e-09
+    effect_size: -0.006039821
+    effect_measure: beta
+    effect_unit: mvAge factor per A allele (no conventional unit; positive = healthier ageing)
+    effect_allele: A
+    direction: risk
+    statistical_test: "Genomic SEM common-factor GWAS of healthspan, frailty, exceptional longevity, parental lifespan and PhenoAge acceleration (Supplementary Table 7, effect allele first; Table 6, q44, files it as known through frailty, not novel; the frequency column 0.37 is the minor allele's, G's); pools the samples of the component studies, not a replication (q5); the GWAS Catalog's rs12705966-A, decrease (db-gwascatalog-2026.10.29#q322)"
+    curator: claude-opus-5-5
+  - rsid: rs12705966
+    note: pmid-37118362
+    quote: q57
+    phenotype_class: MULTIVARIATE_AGEING
+    study_design: multivariate_healthspan_lifespan
+    population: European (aging-GIP1's six input GWAS, UK Biobank and LifeGen among them)
+    ancestry: [EUR]
+    sample_size: 154478
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "7E-10"
+    p_value_num: 7.0e-10
+    effect_size: 0.02341
+    effect_measure: beta
+    effect_unit: aging-GIP1 per G allele (positive = healthier ageing)
+    effect_allele: G
+    direction: protective
+    statistical_test: "Supplementary Table 4 (q57): first genetic principal component of healthspan, parents' lifespans, longevity, frailty and self-rated health; the lead itself; threshold 5e-8/6 (q17), passed; MOESM9 (q60) original β 0.0234 (SE 0.0038), P 6.7e-10, adjusted β 0.0115, P 7.9e-4, the adjustment unstated; per-input betas per G all positive (q59); the lead tops a nine-variant credible set at PIP 0.21 (q61); shares its inputs with mvAge, so the same discovery, not a replication"
+    curator: claude-opus-5-5
+  - rsid: rs12705966
+    note: pmid-30642433
+    quote: q236
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.0015708947"
+    p_value_num: 0.0015708947
+    effect_size: -0.0133258
+    effect_measure: beta
+    effect_unit: log hazard protection per A allele in self (negative = shorter life)
+    effect_allele: A
+    direction: risk
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), n 640,181, direction -- in UK Biobank and LifeGen, info 0.94; the co-occurring lifespan study (D16), an input of mvAge and aging-GIP1, not a replication"
+    curator: claude-opus-5-5
+  - rsid: rs12705966
+    note: pmid-30729179
+    quote: q73
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "0.0186"
+    p_value_num: 0.0186
+    p_one_sided: 0.0093
+    effect_size: -0.0126
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per G allele (negative = later)
+    effect_allele: G
+    direction: protective
+    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), z −2.353, -log10 P 1.73; after the paper's genomic control of 1.053 (q59) z 2.29, P 0.022, one-sided 0.011 (derived), still nominal; mvAge's healthspan input, the same sample"
+    curator: claude-opus-5-5
+  - rsid: rs12705966
+    note: pmid-31413261
+    quote: q131
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.1005"
+    p_value_num: 0.1005
+    effect_size: -0.0333
+    effect_measure: beta
+    effect_unit: log odds of reaching the 90th percentile, per A allele
+    effect_allele: A
+    direction: risk
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008598), effective N 11,615; the P is two-sided, one-sided 0.050 (derived), not below 0.05 under D25.13; mvAge's and aging-GIP1's exceptional-longevity input, not a replication"
+    curator: claude-opus-5-5
+  - rsid: rs12705966
+    note: pmid-31413261
+    quote: q132
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.3233"
+    p_value_num: 0.3233
+    effect_size: -0.0311
+    effect_measure: beta
+    effect_unit: log odds of reaching the 99th percentile, per A allele
+    effect_allele: A
+    direction: risk
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), effective N 4,524; two-sided, one-sided 0.16 (derived); its cases a subset of the 90th's, whose line is an input, so not a replication"
+    curator: claude-opus-5-5
+  - rsid: rs12705966
+    note: pmid-37118362
+    quote: q58
+    phenotype_class: OWN_SURVIVAL
+    study_design: meta_analysis
+    population: FinnGen (Finnish) and Biobank Japan (Japanese)
+    ancestry: [EUR, EAS]
+    sample_size: 346737
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.761"
+    p_value_num: 0.761
+    effect_size: -0.086
+    effect_measure: beta
+    effect_unit: approximate years of survival per G allele
+    effect_allele: G
+    direction: risk
+    statistical_test: "Supplementary Table 6 (q58; columns q2, legend q5-q7): one-sided Wald P for the direction of aging-GIP1, Bonferroni P 1.0 over 23 SNPs; SE 0.1218, about 1.8 times the look-ups at a like frequency (q3, q19), G being 0.02 in 1000 Genomes EAS (db-ensembl-116#q340), so mostly FinnGen's people, those of FinnGen's death endpoint (db-finngen-r11#q25: G +0.0170 on the log odds of death, P 0.035, against the discovery; power 0.50 under APOE's factor, no red flag); 46,128 deaths. Power (derived): by the mean of years over aging-GIP1 β across the other 22 look-ups, expected G +0.037 years, power 0.09, heterogeneity P 0.31; across the eight that hold up one-sided (D25.12), +0.164, power 0.38, heterogeneity P 0.040; APOE not looked up, its factor unknown. No red flag (D21)"
+    curator: claude-opus-5-5

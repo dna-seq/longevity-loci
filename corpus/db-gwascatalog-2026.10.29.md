@@ -1097,3 +1097,15 @@ The same query under the surviving id rs371933919 (`assoc-rs371933919.json`) and
 rs17169634's associations (`assoc-rs17169634`): Liu 2021 (GCST012210, β 0.3084 per G, P 8e-15), with no risk-allele
 frequency (q319, q320); and Nelson 2014's (GCST002429, P 1e-7, q321), the Alzheimer's report Liu cites
 (pmid-33657282#q18), its allele "?". For row 49.
+
+## Reading 2026-11-11, supplement
+
+> [q322] beta 0.006039821 unit decrease p_value 9.000000000000001e-09 accession_id GCST90321079 pubmed_id 37550455 first_author Rosoff DB
+
+> [q323] beta 0.0334 unit increase p_value 1e-10 accession_id GCST90275136 pubmed_id 37689771 first_author Pedersen EM
+
+> [q324] beta 0.017676765 unit increase p_value 6.000000000000001e-09 accession_id GCST90245879 pubmed_id 32587327 first_author Tsepilov YA
+
+Row 50's FOXP2 lead (`assoc-rs12705966`): three associations. Rosoff's mvAge, rs12705966-A, decrease (q322); Pedersen's
+ADHD (ADuLT model adjusted for sex), the allele printed "?" (q323); Tsepilov's genetically independent pain factor,
+rs12705966-A, increase (q324), so G lowers it, as Open Targets' set has it (db-opentargets-26.09#q644). For row 50.

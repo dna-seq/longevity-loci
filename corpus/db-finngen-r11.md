@@ -162,3 +162,16 @@ death (SE 0.015), P 0.23. G leans to fewer deaths, against Zeng's A; null. FinnG
 
 BMPER's rs17169634 (GRCh38 7:34,054,385) in FinnGen R11's death endpoint: G −0.0160 on the log hazard of death (SE
 0.0160), P 0.32; G at 0.056. G's side, one-sided 0.16 (derived): no pass. For row 49.
+
+## Reading 2026-11-11, supplement
+
+> [q25] 7	114608796	A	G	rs12705966	FOXP2	0.0348835	1.45738	0.0169712	0.00804434	0.313307	0.315377	0.313048
+
+Row 50's FOXP2 lead in FinnGen R11's death endpoint (`rows-a231a0fe`, GRCh38 7:114,608,796): alt G (0.31) β +0.0170 (SE
+0.0080) on the log odds of death, P 0.035: G, the allele mvAge and Timmers call healthier, goes with more deaths here,
+nominal against them (one-sided P for G's side 0.98, derived). D21 under APOE's factor within FinnGen (0.99, row 40's
+reading, q4 against pmid-30642433#q90): Timmers' G +0.0133 (pmid-30642433#q236) predicts G −0.0132, one-sided power
+0.50, heterogeneity P 1.8 × 10⁻⁴ (derived); power is below 0.8, so no red flag under the larger factor, and Figure 4's
+mean (0.4175 of APOE's) gives less (−0.0055, power 0.17, heterogeneity P 0.005). D25.12's within-FinnGen mean is not
+computed and could only lower the power. FinnGen is independent of UK Biobank and LifeGen; most of Timmers 2022's
+survival look-up at this SNP is these people (pmid-37118362#q58). For row 50.
