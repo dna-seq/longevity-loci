@@ -1,0 +1,175 @@
+# The seed list's locus 14, LINC01122 (2p16.1). Curated 2026-11-11, the second run's fourth row. Lead rs980183
+# (Rosoff 2023's mvAge, Table 1), the seed's only rsID here: an intron variant of the LINC01122 transcript. Wright
+# 2019's tables hold four AncestryDNA mothers' SNPs within 0.5 Mb (rs7593324, 0.25 Mb away, genomic-control P 4.5e-5;
+# rs10210385, rs1796435, rs13416859), none in Ensembl's EUR window around the lead and none with a pairwise LD
+# Ensembl returns in EUR or CEU, floor off: unknown, not read; its current-age SNPs (confirmation only) are not read
+# either. Open Targets 26.09: mvAge's and type 2 diabetes's credible sets, both led by rs980183, and 268 more sets
+# at the locus; the GWAS Catalog (2026-10-29) holds 13 associations for it.
+locus_id: 14
+locus_name: LINC01122
+verdict: kept
+verdict_reason: >-
+  Tier B, as the seed has it: a genome-wide multivariate result with a co-occurring lifespan study (§4.5 as D16
+  reads it), and no independent replication (§4.1's single-study clause). Genome-wide significant only in Rosoff
+  2023's mvAge, the common factor behind healthspan, frailty, exceptional longevity, parental lifespan and
+  epigenetic age (P 1.8e-9, G lowering the factor, so A, the major allele at 62 % in Europeans, is on the
+  healthier-ageing side); Rosoff lists it as novel, more than 1 Mb from every locus of the five input studies.
+  Timmers 2019's million parents' lives are the co-occurring lifespan study: A lengthens life at P 2.3e-5, nominal,
+  UK Biobank and LifeGen on the same side. Healthspan agrees nominally: A delays the end of healthspan in Zenin
+  2019's UK Biobank (P 0.033). Exceptional survival is 0: Deelen 2019's summary statistics lean to A at the 90th
+  (P 0.18) and 99th percentiles (P 0.060) and pass at neither. All three are inputs to mvAge, the same samples, so
+  nothing here replicates it; Wright 2019's AncestryDNA mothers have a SNP 0.25 Mb away at genomic-control P 4.5e-5,
+  but no LD to the lead is known, so it is not read. The Q test (P 0.56) finds no sign that the SNP acts off the
+  common factor. Mechanism: metabolism. At the lead itself the longer-life A lowers type 2 diabetes (β −0.036 per
+  A, P 1e-14, a credible set rs980183 leads), blood glucose (P 4e-12) and triglycerides (P 1e-8); through
+  rs6545714, the lead of a UK Biobank BMI set at r² 0.97 whose A travels with the lead's A by frequency (derived,
+  not phased), it lowers BMI (P 9e-21). Across the locus's 270 credible sets, diabetes and glycaemia (to 3e-31,
+  HbA1c 3e-28) are at least as strong as adiposity (fat mass 8e-26, BMI 1.5e-23), with blood pressure, lipids and
+  CRP beside them. Rosoff's own list runs the same way. That is association on one haplotype, not a mediator test.
+  Actionability is descriptive: the locus does not act mainly through weight, since glycaemia is as strong and the
+  lead itself leads the diabetes and glucose sets, so D18.2's weight label is not applied; and no HbA1c effect is
+  cached at the lead for §4.2's preventable label. The trade-off was looked for (D18.1) in the catalog's 13 records
+  at rs980183 and the 270 sets' trait list: no harm on the A side, and no bone-density set; most sets are led by
+  neighbours whose phase is not read, so none detected is not none. Causal confidence C2, at its floor: rs980183
+  leads mvAge's credible set (PICS) at PIP 0.107, with 14 others at 0.056 to 0.069, one signal whose causal variant
+  is not resolved; the diabetes set has the same shape (0.13). No locus-to-gene score is given on either set or on
+  the BMI set (effector E4, no flag, `gene` empty); LINC01122 names the locus, not an effector. The protection is
+  the absence of the risk allele: G shortens life and A is the common one. Age of action is unknown: no cached source
+  gives this locus's own age bands.
+axes:
+  tier: {value: B, cites: [pmid-37550455#q10, pmid-37550455#q2, pmid-37550455#q3, pmid-37550455#q5, pmid-30642433#q51, pmid-30729179#q26, pmid-31413261#q29, pmid-31413261#q30, db-gwascatalog-2026.10.29#q107, db-gwascatalog-2026.10.29#q108, db-ensembl-116#q52]}
+  mechanism: {value: metabolism, cites: [pmid-37550455#q10, db-opentargets-26.09#q116, db-opentargets-26.09#q122, db-opentargets-26.09#q123, db-opentargets-26.09#q124, db-gwascatalog-2026.10.29#q109, db-gwascatalog-2026.10.29#q111, db-gwascatalog-2026.10.29#q112, db-gwascatalog-2026.10.29#q114, db-gwascatalog-2026.10.29#q115, db-gwascatalog-2026.10.29#q117, db-opentargets-26.09#q125, db-opentargets-26.09#q127, db-opentargets-26.09#q129, db-ensembl-116#q54, db-ensembl-116#q55]}
+  pleiotropy: {values: ["mech:diabetes", "mech:adiposity", broad], cites: [pmid-37550455#q10, db-opentargets-26.09#q116, db-opentargets-26.09#q123, db-opentargets-26.09#q126]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
+            cites: [pmid-30729179#q26, pmid-30642433#q51, pmid-31413261#q29, pmid-31413261#q30, pmid-37550455#q10]}
+  actionability: {label: descriptive, cites: [pmid-37550455#q10, db-opentargets-26.09#q116, db-opentargets-26.09#q122]}
+  context: {values: [eur_only_evidence], cites: [pmid-37550455#q10, pmid-30642433#q51]}
+flags:
+  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-37550455#q10, pmid-30642433#q51, db-ensembl-116#q52]}
+  - {token: "causal:C2", cites: [db-opentargets-26.09#q117, db-opentargets-26.09#q118, db-opentargets-26.09#q119, db-opentargets-26.09#q120, db-opentargets-26.09#q121]}
+variants:
+  - rsid: rs980183
+    gene: ""
+    phenotype: LINC01122 region, blood sugar and weight
+    trait_efo_id: EFO_0007796
+    effect_allele: A
+    effect_size: 0.0063
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: A/A
+        state: neutral
+        conclusion: >-
+          You carry two copies of the more common version of this DNA region (about 38 in 100 people of European
+          ancestry do). It is the reference the other combinations are compared with. The region, on chromosome 2,
+          is linked to blood sugar, type 2 diabetes and body weight. The finding comes from people of European
+          ancestry; less is known elsewhere.
+      - genotype: A/G
+        state: risk
+        conclusion: >-
+          You carry one copy of a less common version of this DNA region (about 47 in 100 people of European
+          ancestry do, the most common combination). In very large European studies that combined healthspan,
+          frailty, long life and biological age into one measure, this version went with slightly less healthy
+          ageing, and parents of carriers lived a little less long. The same version goes with slightly higher
+          blood sugar, a slightly higher risk of type 2 diabetes and a slightly higher BMI. It is a likely finding,
+          not a settled one: it has not yet been confirmed in a separate group of people. The effect is small and
+          it is a tendency, not destiny.
+      - genotype: G/G
+        state: risk
+        conclusion: >-
+          You carry two copies of a less common version of this DNA region (about 15 in 100 people of European
+          ancestry do). In very large European studies that combined healthspan, frailty, long life and biological
+          age into one measure, each copy went with slightly less healthy ageing, and parents of carriers lived a
+          little less long. The same version goes with slightly higher blood sugar, a slightly higher risk of type
+          2 diabetes and a slightly higher BMI. It is a likely finding, not a settled one: it has not yet been
+          confirmed in a separate group of people. The effect is small and it is a tendency, not destiny.
+studies:
+  - rsid: rs980183
+    note: pmid-37550455
+    quote: q10
+    phenotype_class: MULTIVARIATE_AGEING
+    study_design: multivariate_healthspan_lifespan
+    population: European (the five input GWAS, UK Biobank and LifeGen among them; effective n 1,958,774)
+    ancestry: [EUR]
+    stat_significance: significant
+    p_value: "1.76E-09"
+    p_value_num: 1.76e-09
+    effect_size: -0.0063
+    effect_measure: beta
+    effect_unit: mvAge factor per G allele (no conventional unit; positive = healthier ageing)
+    effect_allele: G
+    direction: risk
+    statistical_test: "Genomic SEM common-factor GWAS of healthspan, frailty, exceptional longevity, parental lifespan and PhenoAge acceleration (Table 1, novel lead); Q P 0.56; pools the samples of the component studies, not a replication (q5)"
+    curator: claude-opus-5-5
+  - rsid: rs980183
+    note: pmid-30642433
+    quote: q51
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "2.2847381e-05"
+    p_value_num: 2.2847381e-05
+    effect_size: 0.01670576
+    effect_measure: beta
+    effect_unit: log hazard protection per A allele in self (positive = longer life)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), n 638,103, direction ++ in UK Biobank and LifeGen, info 0.995; the co-occurring lifespan study (D16), an input of mvAge and not a replication"
+    curator: claude-opus-5-5
+  - rsid: rs980183
+    note: pmid-30729179
+    quote: q26
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "0.0332"
+    p_value_num: 0.0332
+    effect_size: -0.0106
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per A allele (positive = earlier)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), -log10 P 1.479; mvAge's healthspan input, the same sample"
+    curator: claude-opus-5-5
+  - rsid: rs980183
+    note: pmid-31413261
+    quote: q29
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.1759"
+    p_value_num: 0.1759
+    effect_size: 0.0268
+    effect_measure: beta
+    effect_unit: log odds of reaching the 90th percentile, per A allele
+    effect_allele: A
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008598), effective N 11,615; mvAge's exceptional-longevity input, not a replication"
+    curator: claude-opus-5-5
+  - rsid: rs980183
+    note: pmid-31413261
+    quote: q30
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.05997"
+    p_value_num: 0.05997
+    effect_size: 0.0587
+    effect_measure: beta
+    effect_unit: log odds of reaching the 99th percentile, per A allele
+    effect_allele: A
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), effective N 4,524; mvAge's exceptional-longevity input, not a replication"
+    curator: claude-opus-5-5

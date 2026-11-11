@@ -356,3 +356,37 @@ lifespan-raising G goes with less hypertension, in line with A's calcium-channel
 The catalog's one association for rs577106756: Park 2025's men (GCST90551885), "Lifespan", A, β 0.09 "unit
 increase", P 3 × 10⁻⁸. The catalog's "increase" is in Park's Martingale residual, which rises with death: the
 paper's text (pmid-40021682#q5) says A reduces lifespan. No other trait is recorded for the variant.
+
+## rs980183 (LINC01122), for row 14
+
+> [q107] _embedded.associations[9] association_id 131476574 risk_frequency NR pvalue_description pvalue_mantissa 2 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range [0.0043-0.0084] beta 0.006344008 unit decrease p_value 2e-09 accession_id GCST90321079 pubmed_id 37550455 first_author Rosoff DB ci_lower 0.0043 ci_upper 0.0084
+
+> [q108] _embedded.associations[9].snp_allele[0] rs_id rs980183 effect_allele G
+
+Rosoff 2023's mvAge: G lowers the factor (P 2 × 10⁻⁹), the paper's Table 1 (pmid-37550455#q10).
+
+> [q109] _embedded.associations[11] association_id 62203733 risk_frequency 0.3942 pvalue_description pvalue_mantissa 1 pvalue_exponent -14 multi_snp_haplotype false snp_interaction false range [0.027-0.046] beta 0.0363 unit increase p_value 1e-14 accession_id GCST010555 pubmed_id 32541925 first_author Vujkovic M ci_lower 0.027 ci_upper 0.046
+
+> [q110] _embedded.associations[11].reported_trait[0] Type 2 diabetes
+
+> [q111] _embedded.associations[11].snp_allele[0] rs_id rs980183 effect_allele G
+
+Vujkovic 2020 (the Million Veteran Program): G raises type 2 diabetes risk (β 0.036, P 1 × 10⁻¹⁴, G frequency 0.39).
+
+> [q112] _embedded.associations[0] association_id 228177455 risk_frequency 0.3507 pvalue_description pvalue_mantissa 4 pvalue_exponent -12 multi_snp_haplotype false snp_interaction false range [0.015-0.027] beta 0.02116 unit increase p_value 4e-12 accession_id GCST90479626 pubmed_id 39024449 first_author Verma A ci_lower 0.015 ci_upper 0.027
+
+> [q113] _embedded.associations[0].reported_trait[0] Glucose (fasting status unknown, mean, inv-norm transformed)
+
+> [q114] _embedded.associations[0].snp_allele[0] rs_id rs980183 effect_allele G
+
+Verma 2024: G raises blood glucose (P 4 × 10⁻¹²).
+
+> [q115] _embedded.associations[10] association_id 93540565 risk_frequency NR pvalue_description pvalue_mantissa 1 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.0081-0.0167] beta 0.0124 unit decrease p_value 1e-08 accession_id GCST90018975 pubmed_id 34594039 first_author Sakaue S ci_lower 0.0081 ci_upper 0.0167
+
+> [q116] _embedded.associations[10].reported_trait[0] Triglycerides
+
+> [q117] _embedded.associations[10].snp_allele[0] rs_id rs980183 effect_allele A
+
+Sakaue 2021: A lowers triglycerides (P 1 × 10⁻⁸). At the lead itself the longer-life A lowers type 2 diabetes,
+glucose and triglycerides; nine NMR lipid-ratio records (Zoodsma 2025) state A and a tiny percentage. No record at
+rs980183 puts harm on A.

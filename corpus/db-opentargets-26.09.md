@@ -551,3 +551,50 @@ APOE's rs429358: none at PRKD3.
 
 Nor does the platform know the variant (`variant-2_37257437_G_A.json`): no fine-mapping and no locus-to-gene score
 for rs577106756 (causal C4, effector E4).
+
+## rs980183 (LINC01122), for row 14
+
+> [q116] data.variant.credibleSets count 270
+
+Open Targets 26.09 holds rs980183 (2_59084401_G_A, alt A) in 270 credible sets. By the top P of each family, read
+from all three pages: diabetes and glycaemia (type 2 diabetes to 3 × 10⁻³¹, HbA1c 3 × 10⁻²⁸, glucose 5 × 10⁻²⁸),
+adiposity (fat mass 8 × 10⁻²⁶, BMI 1.5 × 10⁻²³, waist and hip), blood pressure (to 1.8 × 10⁻¹⁴, hypertension 2.4
+× 10⁻¹⁵), NMR lipid ratios and triglycerides (to 1.4 × 10⁻¹³), CRP, ALT and cystatin C; no bone-density set. Most
+are led by neighbours at r² about 0.97 (q54 of db-ensembl-116), whose alleles' phase to rs980183 is not read here.
+
+> [q117] data.credibleSet studyLocusId eaf547c5ce79c2a061a043cf0d4e5684 finemappingMethod PICS pValueMantissa 2 pValueExponent -9 beta 0.006344008
+
+> [q118] data.credibleSet.locus count 15
+
+> [q119] data.credibleSet.locus.rows[0] posteriorProbability 0.10688954959474208 r2Overall 1 is95CredibleSet true
+
+> [q120] data.credibleSet.locus.rows[1] posteriorProbability 0.06914659009560219 r2Overall 0.9811007837971086 is95CredibleSet true
+
+> [q121] data.credibleSet.locus.rows[14] posteriorProbability 0.05614648010135342 r2Overall 0.9643256065982153 is95CredibleSet true
+
+Rosoff 2023's mvAge set (GCST90321079, PICS): led by rs980183, P 2 × 10⁻⁹, β +0.0063 per A; 15 members, every one
+in the 95 % set; the lead's PIP 0.107, the others 0.069 down to 0.056. C2 by the letter (PIP 0.1-0.5), at its
+floor: one signal whose causal variant is not resolved. The set carries no locus-to-gene score (E4).
+
+> [q122] data.credibleSet studyLocusId 5617c111367a6b3c00af0e1ce05041a6 finemappingMethod PICS pValueMantissa 1 pValueExponent -14 beta -0.0363
+
+> [q123] data.credibleSet.study id GCST010555 traitFromSource Type 2 diabetes
+
+> [q124] data.credibleSet.locus.rows[0] posteriorProbability 0.12952570780354172 r2Overall 1 is95CredibleSet true
+
+Vujkovic 2020's type 2 diabetes set (GCST010555, PICS): led by rs980183, P 1 × 10⁻¹⁴, β −0.036 per A; the lead's
+PIP 0.13, 15 members. A lowers type 2 diabetes. No locus-to-gene score.
+
+> [q125] data.credibleSet studyLocusId 52184156cf864584518b8fd85fbd379a finemappingMethod SuSiE-inf pValueMantissa 9.101737976074219 pValueExponent -21 beta -0.014855347699468675
+
+> [q126] data.credibleSet.study id GCST90013974 traitFromSource Body mass index (UKB data field 21001)
+
+> [q127] data.credibleSet.variant.rsIds[0] rs6545714
+
+> [q128] data.credibleSet.locus.rows[5] posteriorProbability 0.06618203494441346 r2Overall null is95CredibleSet true
+
+> [q129] data.credibleSet.locus.rows[5].variant.rsIds[0] rs980183
+
+A UK Biobank BMI set (GCST90013974, SuSiE-inf), led by rs6545714 (2_59080590_G_A, alt A), P 9 × 10⁻²¹, β −0.0149
+per A; rs980183 is a member (PIP 0.066). rs6545714's A travels with rs980183's A (db-ensembl-116#q55, derived), so
+the longer-life A goes with lower BMI. No locus-to-gene score.

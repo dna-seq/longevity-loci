@@ -14,8 +14,9 @@ verdict_reason: >-
   parents' lives are the co-occurring lifespan study: C lengthens life at P 5.3e-4, UK Biobank and LifeGen on the
   same side. Healthspan agrees at the same level: C delays the end of healthspan in Zenin 2019's UK Biobank (P
   3.3e-4). Both are inputs to mvAge, the same samples, so nothing here replicates it, and a single genome-wide study
-  is B. Its Q test (P 0.60) finds no sign that the SNP acts off the common factor. Exceptional survival is untested:
-  no cached source reports rs2613508 or a proxy in a longevity case-control. The mechanism is filed as metabolism,
+  is B. Its Q test (P 0.60) finds no sign that the SNP acts off the common factor. Exceptional survival is +: in
+  Deelen 2019's summary statistics C raises the odds of reaching the 90th percentile (P 0.036; 99th P 0.052, same
+  side), again an input of mvAge and not a replication. The mechanism is filed as metabolism,
   through body weight: the locus is NEGR1's long-known obesity signal, and Rosoff's GWAS Catalog list runs from BMI,
   childhood and extreme obesity and waist-to-hip ratio to triglycerides and type 2 diabetes, with smoking
   initiation, insomnia and neuroticism beside them. In Open Targets 26.09 rs2613508 sits on one haplotype with the
@@ -30,12 +31,12 @@ verdict_reason: >-
   (neuroticism among them) state no allele, so none detected is not none. Age of action is
   unknown: no cached source gives this locus's own age bands.
 axes:
-  tier: {value: B, cites: [pmid-37550455#q8, pmid-37550455#q3, pmid-37550455#q5, pmid-30642433#q26, pmid-30729179#q15]}
+  tier: {value: B, cites: [pmid-37550455#q8, pmid-37550455#q3, pmid-37550455#q5, pmid-30642433#q26, pmid-30729179#q15, pmid-31413261#q31]}
   mechanism: {value: metabolism, cites: [pmid-37550455#q8, db-opentargets-26.09#q51, db-opentargets-26.09#q53, db-opentargets-26.09#q55, db-opentargets-26.09#q46]}
   pleiotropy: {values: ["mech:adiposity", broad], cites: [pmid-37550455#q8, pmid-37550455#q7, db-opentargets-26.09#q51]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: untested,
-            cites: [pmid-30729179#q15, pmid-30642433#q26, pmid-37550455#q8, pmid-37550455#q2]}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
+            cites: [pmid-30729179#q15, pmid-30642433#q26, pmid-31413261#q31, pmid-31413261#q32, pmid-37550455#q8, pmid-37550455#q2]}
   actionability: {label: modifiable, what: ["act_behaviour:weight"], who: "act_who:self", cites: [pmid-37550455#q8, db-opentargets-26.09#q51, db-gwascatalog-2026.10.29#q71, db-gwascatalog-2026.10.29#q72, db-gwascatalog-2026.10.29#q73, db-gwascatalog-2026.10.29#q74, db-gwascatalog-2026.10.29#q75]}
   context: {values: [eur_only_evidence], cites: [pmid-37550455#q8, pmid-30642433#q26]}
 flags:
@@ -134,4 +135,38 @@ studies:
     effect_allele: T
     direction: risk
     statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), -log10 P 3.48; mvAge's healthspan input, the same sample"
+    curator: claude-opus-5-5
+  - rsid: rs2613508
+    note: pmid-31413261
+    quote: q31
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.03627"
+    p_value_num: 0.03627
+    effect_size: -0.0533
+    effect_measure: beta
+    effect_unit: log odds of reaching the 90th percentile, per T allele
+    effect_allele: T
+    direction: risk
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008598), effective N 11,615; mvAge's exceptional-longevity input, not a replication"
+    curator: claude-opus-5-5
+  - rsid: rs2613508
+    note: pmid-31413261
+    quote: q32
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.05185"
+    p_value_num: 0.05185
+    effect_size: -0.0779
+    effect_measure: beta
+    effect_unit: log odds of reaching the 99th percentile, per T allele
+    effect_allele: T
+    direction: risk
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), effective N 4,524; mvAge's exceptional-longevity input, not a replication"
     curator: claude-opus-5-5

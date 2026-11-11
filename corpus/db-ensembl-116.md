@@ -208,3 +208,28 @@ rs577106756 at 2:37,257,437 (GRCh38), G/A, G ancestral; an intron variant.
 A is rare: 2 copies in 1000 Genomes EUR (0.002), 0.18 % in gnomAD's non-Finnish Europeans, 0.17 % in its Finns.
 The LD window call (`ld-window50-rs577106756.json`, EUR, r² ≥ 0.1) rendered no text: with two copies in the panel
 no tag is known, and that is unknown, not an absence of tags.
+
+## rs980183 (LINC01122), for row 14
+
+> [q51] mappings[0] assembly_name GRCh38 coord_system chromosome allele_string G/A/C strand 1 start 59084401 seq_region_name 2 ancestral_allele A end 59084401 location 2:59084401-59084401
+
+rs980183 at 2:59,084,401 (GRCh38; 2:59,311,536 in GRCh37), G/A, A ancestral; an intron variant (of the LINC01122
+transcript).
+
+> [q52] populations[76] allele_count 619 frequency 0.615308151093439 population 1000GENOMES:phase_3:EUR allele A
+
+> [q53] populations[77] population 1000GENOMES:phase_3:EUR frequency 0.384691848906561 allele_count 387 allele G
+
+1000 Genomes EUR: A 0.62, G 0.38.
+
+> [q54] [38] variation1 rs980183 variation2 rs6545714 r2 0.970730 d_prime 0.991491 population_name 1000GENOMES:phase_3:EUR
+
+Ensembl's LD window (`ld-window500-rs980183.json`, EUR, r² ≥ 0.1): rs6545714, the lead of Open Targets' BMI set
+(db-opentargets-26.09#q125), at r² 0.97, D′ 0.99.
+
+> [q55] populations[79] allele A allele_count 622 frequency 0.618290258449304 population 1000GENOMES:phase_3:EUR
+
+rs6545714's A is 0.62 in 1000 Genomes EUR, as rs980183's A is (q52): at r² 0.97 the two As travel together (derived
+from the frequencies, not a phased call). Wright 2019's four AncestryDNA mothers' SNPs within 0.5 Mb (rs7593324,
+rs10210385, rs1796435, rs13416859) are absent from the window and their pairwise calls render no text in EUR or CEU,
+with the r² floor off: unknown, not read.
