@@ -1158,3 +1158,26 @@ hold the same partners, 130 each (FES 114 and 113, FURIN 8 and 7):
 FURIN meets a criterion of its own (cis colocalisation) but holds under a tenth of the locus's colocalisations (7
 of 120) and does not pass locus-to-gene (0.15 on this set, q35's prose), so it is no rival
 under D24. FES passes locus-to-gene (0.97) and colocalises: `effector:E1`, FES.
+
+### rs1556516 (9p21), continued, for row 57
+
+The locus-to-gene scores of the other five sets, read after q278-q284 were written (D24 counts a rival that passes
+locus-to-gene): CDKN2B tops each (each cached as `set-<first 8>-l2g`), 0.35 to 0.49 on four, and passes on Pilling 2017's combined-parents age-at-death
+set (GCST006702, `set-e1251d1f-l2g`, led by rs1537373 and holding the lead):
+
+> [q297] data.credibleSet.study id GCST006702 traitFromSource Parental longevity (combined parental age at death)
+
+> [q298] data.credibleSet.l2GPredictions.rows[0] score 0.5308597087860107
+
+> [q299] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol CDKN2B
+
+> [q300] data.credibleSet.l2GPredictions.rows[1] score 0.22434711456298828
+
+> [q301] data.credibleSet.l2GPredictions.rows[1].target approvedSymbol CDKN2A
+
+On that set CDKN2B passes locus-to-gene (0.53, barely) and colocalises (the TwinsUK exon QTL, H4 0.964), and no
+other gene passes either criterion: `effector:E1`, CDKN2B, by the letter on one set, the others at E2.
+
+The highest of the other four, Pilling 2017's GCST006697 set (9215fe6d):
+
+> [q302] data.credibleSet.l2GPredictions.rows[0] score 0.4910053312778473
