@@ -22,6 +22,7 @@ mechanical consensus of the research tracks, to be confirmed or overturned by th
 - 103 (lead rs1049053, Zenin 2019's HLA-DQB1 healthspan SNP), tier B (seed A): genome-wide in healthspan only, unreplicated; scores on a nominal lifespan study (D16), shared with 38.
 - 2 PABPC4 (lead rs3768321, Rosoff 2023's mvAge), tier C (seed B): genome-wide only in the multivariate factor; lifespan P 0.071, so it cannot score (D16).
 - 4 LINC02796 (lead rs2613508, the NEGR1 obesity locus), tier B kept: genome-wide only in mvAge, with a nominal lifespan study (P 5.3e-4) that lets it score (D16); effector NEGR1 by L2G.
+- 5 FPGT / TNNI3K (lead rs146254978, a 2 % variant), tier B kept: genome-wide only in Pilling 2017's parents' age-at-death analysis (P 4.6e-8), the rare C protective; not in Open Targets (C4/E4, no gene).
 
 ## In hand
 
@@ -51,8 +52,8 @@ By `locus_id` within each tier, as the seed lists them. Known before reaching th
   into rs2228145 in dbSNP, to be checked at curation); 25 and 158 are both HTT; 132, 133 and 153 are all TERT.
   Two seed loci for one signal become one row under the lower id, the others in its `also_loci` (D14).
 - Many seed names hold a space, a `/` or brackets (`PCSK9 R46L`, `5q33.3 (EBF1 region)`, `KL (KL-VS`, ...); 44, 75,
-  110, 134, 154 have none. The check holds a row's file to the seed name, so these go to the lead before the
-  first of them is written.
+  110, 134, 154 have none. docs/FORMATS.md now settles their file names (each run outside `[A-Za-z0-9._-]` one `_`;
+  an unnamed locus `<locus_id>.yaml`): 5's is `5-FPGT_TNNI3K.yaml`.
 
 ## Last: v1's remaining rsIDs
 
