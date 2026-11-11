@@ -7,8 +7,11 @@ requires-python = ">=3.13"
 dependencies = [
     # Capped below 0.8, the liaison's (docs/UPSTREAM_COMPILER.md, "Caps"): 0.8 moves this machine's shared Ensembl
     # cache to a new snapshot repository, which the module-creator plugin's 0.7 enricher reads in the same
-    # directory. Lifted with the plugin's move to 0.8.
+    # directory. Lifted with the plugin's move to 0.8. The compiler and the format are capped too: enricher 0.7.3
+    # does not cap them, and a weekly bump took both to 0.8.4 beside it (2026-11-12).
     "just-dna-enricher>=0.7.3,<0.8",
+    "just-dna-compiler<0.8",
+    "just-dna-format<0.8",
     # Capped below 2, the liaison's (docs/UPSTREAM_COMPILER.md, "Caps"): the module-creator plugin's server runs
     # duckdb 1.5.6 and polars 1.44.2 and shares this machine's enricher cache. A .duckdb written by 2.0 crashes a
     # 1.x enricher (the compiler's RM344), and polars 2 writes other parquet bytes, so a module compiled here

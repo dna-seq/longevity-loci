@@ -83,6 +83,9 @@ read mark stays at `v0.7.3` until the cut; the cut is read again in full.
   plugin's server, capped below 0.8, reads that directory on this machine. **Lift when** the plugin moves to 0.8;
   then the upgrade order is the guide's §2: floors, `uv lock`, `cache pull --only ensembl` once, recompile,
   `enrich --rederive` online, validate.
+- **`just-dna-compiler<0.8`, `just-dna-format<0.8`** (2026-11-12, the liaison's). Enricher 0.7.3 does not cap
+  them, and the weekly bump took both to 0.8.4 beside it, out of the plugin's 0.7.2 and 0.7.1. **Lift with** the
+  enricher's cap.
 - **`duckdb<2`, `polars<2`** (2026-11-05, the liaison's). The lock had moved to duckdb 2.0.0 and polars 2.1.0
   through the enricher, which caps neither. The module-creator plugin's server (`v0.48.1`'s lock) runs duckdb
   1.5.5 and polars 1.44.2 and shares this machine's enricher cache. From the compiler's liaison (their
