@@ -182,15 +182,16 @@ studies:
     ancestry: [EUR]
     sample_size: 300447
     sample_unit: individuals
-    stat_significance: not_significant
+    stat_significance: nominal
     p_value: "0.060"
     p_value_num: 0.060
+    p_one_sided: 0.03
     effect_size: 0.00946
     effect_measure: beta
     effect_unit: log hazard of the end of healthspan per T allele (positive = earlier)
     effect_allele: T
     direction: risk
-    statistical_test: "Zenin 2019's healthspan summary statistics, SE 0.00502, Z 1.884, −log10 P 1.225 (P about 0.060 two-sided, one-sided 0.030 for G, derived); an input of the multivariate test, the same sample"
+    statistical_test: "Zenin 2019's healthspan summary statistics, SE 0.00502, Z 1.884, −log10 P 1.225 (P about 0.060 two-sided, one-sided 0.030 for G, derived); an input of the multivariate test, the same sample; p_one_sided, nominal under D26.13"
     curator: claude-opus-5-5
   - rsid: rs2802292
     note: pmid-31413261
