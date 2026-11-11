@@ -200,7 +200,7 @@ studies:
     effect_unit: odds ratio of reaching the 99th percentile, per A allele
     effect_allele: A
     direction: protective
-    statistical_test: "Look-up of Pilling's fathers' rs61905747 in Supplementary Data 1; same side, not nominal; p_one_sided, nominal under D26.13"
+    statistical_test: "Look-up of Pilling's fathers' rs61905747 in Supplementary Data 1; same side, two-sided P printed, one-sided 0.048 (derived, D25.13); the P is the paper's own (each cohort corrected for genomic control, the meta not, all λ < 1.04, q122), so D26.1 reads it as printed; p_one_sided, nominal under D26.13"
     curator: claude-opus-5-5
   - rsid: rs61905747
     note: pmid-31484785

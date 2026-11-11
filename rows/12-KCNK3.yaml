@@ -154,7 +154,7 @@ studies:
     effect_unit: odds ratio of reaching the 99th percentile, per G allele
     effect_allele: G
     direction: protective
-    statistical_test: "Look-up of the lead in Supplementary Data 1 (q27); logistic regression, fixed-effect meta-analysis; I² 17.9, heterogeneity P 0.27; p_one_sided, nominal under D26.13"
+    statistical_test: "Look-up of the lead in Supplementary Data 1 (q27); logistic regression, fixed-effect meta-analysis; I² 17.9, heterogeneity P 0.27; the P is the paper's own (each cohort corrected for genomic control, the meta not, all λ < 1.04, q122), so D26.1 reads it as printed; p_one_sided, nominal under D26.13"
     curator: claude-opus-5-5
   - rsid: rs1275922
     note: pmid-29227965

@@ -191,7 +191,7 @@ studies:
     effect_unit: log hazard of the end of healthspan per T allele (positive = earlier)
     effect_allele: T
     direction: risk
-    statistical_test: "Zenin 2019's healthspan summary statistics, SE 0.00502, Z 1.884, −log10 P 1.225 (P about 0.060 two-sided, one-sided 0.030 for G, derived); an input of the multivariate test, the same sample; p_one_sided, nominal under D26.13"
+    statistical_test: "Zenin 2019's healthspan summary statistics, SE 0.00502, Z 1.884, −log10 P 1.225 (P about 0.060 two-sided, one-sided 0.030 for G, derived; about 0.033 after the genomic control of 1.053 the paper applies, pmid-30729179#q59, derived, D26.1); an input of the multivariate test, the same sample; p_one_sided (half the deposited raw P), nominal under D26.13"
     curator: claude-opus-5-5
   - rsid: rs2802292
     note: pmid-31413261
