@@ -134,3 +134,20 @@ studies:
     direction: risk
     statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), n 635,243, direction -- in UK Biobank and LifeGen; the same side as mvAge, not nominal"
     curator: claude-opus-5-5
+  - rsid: rs3768321
+    note: pmid-31413261
+    quote: q21
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.05208"
+    p_value_num: 0.05208
+    effect_size: 0.0481
+    effect_measure: beta
+    effect_unit: log odds of survival to the 90th percentile per G allele (the file's t, beta -0.0481, turned)
+    effect_allele: G
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GCST008598), effective N 11,615, the row by GRCh37 position 1:40035928 (pmid-37550455#q1); 99th percentile (GCST008599, q22) t beta -0.0512, P 0.19; Deelen's cohorts are an mvAge input"
+    curator: claude-opus-5-5
