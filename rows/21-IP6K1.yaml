@@ -12,35 +12,37 @@ verdict: kept
 verdict_reason: >-
   Tier A, up from the seed's B, on §4.1's letter, with the replication thin. Wright 2019's meta-analysis of
   AncestryDNA customers' and UK Biobank's mothers (N 660,000) is genome-wide at rs9872864, P 6.9e-10 (Table 3,
-  Supplemental Table 9; GWAS Catalog GCST009449), G lengthening mothers' lives; neither arm is genome-wide alone
-  (AncestryDNA P 5.6e-5, UK Biobank P 1.3e-7), both arms' z-score effects are −0.011 per A, heterogeneity P 0.90,
-  and the paper prints no pooled effect, so the study is scored on allele, direction and P (D20). Fathers lean the
-  same way, not genome-wide (meta P 8.0e-5). Deelen 2019's survival to the 90th percentile replicates it in a sample
+  Supplemental Table 9; GWAS Catalog GCST009449), G lengthening mothers' lives. The meta-analysis is METAL's
+  sample-size scheme with genomic control in each dataset and 5.0e-8 its threshold (q56, q57); neither arm is
+  genome-wide alone (AncestryDNA P 1.3e-4 after genomic control, UK Biobank P 1.3e-7), both arms' z-score effects
+  are −0.011 per A, heterogeneity P 0.90, and the paper prints no pooled effect, so the study is scored on allele,
+  direction and P (D20). Mothers and fathers were separate meta-analyses, not corrected across the two (q58); the
+  fathers lean the same way, not genome-wide (meta P 8.0e-5). Deelen 2019's survival to the 90th percentile replicates it in a sample
   sharing nothing with Wright's (no UK Biobank, no AncestryDNA): G at P 0.020, same allele, same direction; the 99th
   percentile, its cases a subset of the 90th's, leans the same way and does not pass (P 0.13). Timmers 2019's
   million parents' lives (G longer, P 4.4e-4) holds UK Biobank and replicates nothing. Its direction at the lead
-  reads "-+", LifeGen against UK Biobank, but LifeGen's sign is not stable: at rs9855505, in perfect LD 135 bp
+  reads "-+", LifeGen against UK Biobank as this row reads the string's order (no cached text defines it), but
+  LifeGen's sign is not stable: at rs9855505, in perfect LD 135 bp
   away, it reads "--", at the proxy rs2271961 "++", and across the 57 SNPs there at P < 0.005 with the lead's
   frequency it disagrees with UK Biobank at 23 and agrees at 34. LifeGen, independent of Wright's samples, so does
-  not replicate, its estimate indistinguishable from zero; the file prints no per-arm β, and by LifeGen's SE at
-  other loci (about 0.008) its power here is about 0.4, so it is not a powered non-replication and not red-flag
-  heterogeneity under the rule of rows 71 and 67. Rosoff
+  not replicate, its estimate indistinguishable from zero. The file prints no per-arm β: backing LifeGen (taken as
+  about zero) out of the pooled β leaves UK Biobank at about −0.0176 per A, which at LifeGen's SE at other loci
+  (about 0.008) expects z about 2.2, one-sided power 0.6 to 0.7 (0.2 to 0.35 after winner's curse), heterogeneity
+  P about 0.055. Below D21's line (power 0.8 and heterogeneity P below 0.05), so no red flag. Rosoff
   2023's mvAge is genome-wide at rs2271961, the lead's near-perfect proxy (r² 0.99, its T with the lead's G; T,
   P 3e-9, the GWAS Catalog's record), the same signal pooled from overlapping samples, cited here and not scored.
   Lifespan +, exceptional survival + (Deelen's 90th percentile, nominal), healthspan 0 (Zenin 2019, G on the
   healthier side at P 0.105). Mechanism general ageing: the region, 3p21.31, is gene-dense and pleiotropic, and both
   scoring sets colocalise (H4 ≥ 0.8) with blood pressure and hypertension, intelligence and education, vitamin D,
-  lung function and HDL lipids, but colocalisation gives no direction. Open Targets also lists rs2271961 as the lead
-  of an anxiety-disorder set and of GTEx QTL sets for UBA7 and RNF123 (read, not cached), none colocalised with a
-  scoring set, and the GWAS Catalog holds dental
-  caries, anxiety and tea drinking at the two SNPs. The paper knew of no life-shortening disease at IP6K1. Causal
+  lung function and HDL lipids, but colocalisation gives no direction. The GWAS Catalog holds dental caries, anxiety
+  and tea drinking at the two SNPs. The paper knew of no life-shortening disease at IP6K1. Causal
   C3: both scoring sets are PICS sets of about 80 variants with flat posteriors (the lead 0.020 and 0.023), which
   mark a region and pick no variant. Effector E3, no gene named: L2G's top genes are MST1R (0.11) and GMPPB (0.19),
-  IP6K1 0.06, and no scoring set colocalises with an expression, splicing or protein QTL. The protection is an
-  absence of risk, nominally: G is the major allele at 51 % against 49 %, so G/G is the reference. Age of action
-  unknown. The evidence is European.
+  IP6K1 0.06, and no scoring set colocalises with an expression, splicing or protein QTL. G is the major allele
+  at 51 % against 49 %, so A/G, the most common genotype, is the reference (§6.2): G/G protective, A/A risk; no
+  PROTECT token, the split too even and no disease known at the locus to be absent (q51). Age of action unknown. The evidence is European.
 axes:
-  tier: {value: A, cites: [pmid-31484785#q49, pmid-31484785#q50, pmid-31484785#q52, pmid-31484785#q54, pmid-31484785#q55, pmid-31413261#q41, pmid-31413261#q43, pmid-31413261#q1, pmid-31413261#q2, db-gwascatalog-2026.10.29#q165, db-gwascatalog-2026.10.29#q166, db-gwascatalog-2026.10.29#q170, db-gwascatalog-2026.10.29#q171, pmid-30642433#q59, pmid-30642433#q60, pmid-30642433#q61, pmid-30642433#q62, pmid-30642433#q19, pmid-30642433#q14, db-ensembl-116#q100, db-ensembl-116#q106, db-ensembl-116#q107]}
+  tier: {value: A, cites: [pmid-31484785#q49, pmid-31484785#q50, pmid-31484785#q52, pmid-31484785#q54, pmid-31484785#q55, pmid-31484785#q56, pmid-31484785#q57, pmid-31484785#q58, pmid-31413261#q41, pmid-31413261#q43, pmid-31413261#q1, pmid-31413261#q2, db-gwascatalog-2026.10.29#q165, db-gwascatalog-2026.10.29#q166, db-gwascatalog-2026.10.29#q170, db-gwascatalog-2026.10.29#q171, pmid-30642433#q59, pmid-30642433#q60, pmid-30642433#q61, pmid-30642433#q62, pmid-30642433#q19, pmid-30642433#q14, db-ensembl-116#q100, db-ensembl-116#q106, db-ensembl-116#q107]}
   mechanism: {value: general_ageing, cites: [pmid-31484785#q51, db-opentargets-26.09#q240, db-gwascatalog-2026.10.29#q164, db-gwascatalog-2026.10.29#q167, db-gwascatalog-2026.10.29#q169, db-gwascatalog-2026.10.29#q172, db-gwascatalog-2026.10.29#q174]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -49,7 +51,6 @@ axes:
   actionability: {label: descriptive, cites: [pmid-31484785#q51]}
   context: {values: [eur_only_evidence], cites: [pmid-31413261#q1, pmid-30642433#q59, pmid-31484785#q52]}
 flags:
-  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-31484785#q52, pmid-30642433#q59, db-ensembl-116#q98]}
   - {token: "causal:C3", cites: [db-opentargets-26.09#q231, db-opentargets-26.09#q232, db-opentargets-26.09#q233, db-opentargets-26.09#q234, db-opentargets-26.09#q235, db-opentargets-26.09#q236, db-opentargets-26.09#q241, db-opentargets-26.09#q242, db-opentargets-26.09#q243, db-opentargets-26.09#q244]}
   - {token: "effector:E3", cites: [db-opentargets-26.09#q237, db-opentargets-26.09#q238, db-opentargets-26.09#q239, db-opentargets-26.09#q240, db-opentargets-26.09#q245, db-opentargets-26.09#q246]}
 variants:
@@ -62,26 +63,28 @@ variants:
     direction: protective
     genotypes:
       - genotype: G/G
-        state: neutral
+        state: protective
         conclusion: >-
           You carry two copies of the slightly more common version of this DNA region (about 26 in 100 people of
-          European ancestry do). It is the reference the other combinations are compared with. The region, on
-          chromosome 3, is crowded with genes, and which one matters here is not known. The finding comes from
-          people of European ancestry; less is known elsewhere.
+          European ancestry do). In very large American and British studies, each copy of it went with mothers
+          living a little longer, and a separate European study of very long-lived people agreed, weakly. The
+          finding is well established, though its confirmation in a separate group is a single, modest one; the
+          effect is small and it is a tendency, not destiny. The region, on chromosome 3, is crowded with genes, and
+          which one matters here is not known.
       - genotype: A/G
-        state: risk
+        state: neutral
         conclusion: >-
-          You carry one copy of the other common version of this DNA region (about 50 in 100 people of European
-          ancestry do, the most common combination). In very large American and British studies, people with this
-          version tended to have mothers who lived a little less long, and a separate European study of very
-          long-lived people agreed, weakly. The finding is well established, though its confirmation in a separate group is a single, modest one; the effect is small and it is
-          a tendency, not destiny.
+          You carry one copy of each common version of this DNA region (about 50 in 100 people of European ancestry
+          do, the most common combination). It is the reference the other combinations are compared with. The
+          finding comes from people of European ancestry; less is known elsewhere.
       - genotype: A/A
         state: risk
         conclusion: >-
-          You carry two copies of the other common version of this DNA region (about 24 in 100 people of European
-          ancestry do). In very large American and British studies, each copy went with mothers living a little less
-          long, and a separate European study of very long-lived people agreed, weakly. The finding is well established, though its confirmation in a separate group is a single, modest one; the effect is small and it is a tendency, not destiny.
+          You carry two copies of the slightly less common version of this DNA region (about 24 in 100 people of
+          European ancestry do). In very large American and British studies, each copy went with mothers living a
+          little less long, and a separate European study of very long-lived people agreed, weakly. The finding is
+          well established, though its confirmation in a separate group is a single, modest one; the effect is
+          small and it is a tendency, not destiny.
 studies:
   - rsid: rs9872864
     note: pmid-31484785
@@ -99,7 +102,7 @@ studies:
     p_value_num: 6.9e-10
     effect_allele: G
     direction: protective
-    statistical_test: "Meta-analysis of mothers' lifespan, Supplemental Table 9 and Table 3 (q49); no pooled effect printed (D20); arms per A: AncestryDNA −0.01097 (SE 0.0027, raw P 5.6e-5), UK Biobank −0.01147 (SE 0.0022, P 1.3e-7), heterogeneity P 0.90; S9's allele column prints the other allele, S8's and Table 3's the effect allele A (q52); N rounded in the source"
+    statistical_test: "METAL sample-size-weighted meta-analysis of mothers' lifespan (q56), genomic control per dataset, genome-wide at 5.0e-8 (q57); mothers and fathers separate meta-analyses, not corrected across (q58); Supplemental Table 9 and Table 3 (q49); no pooled effect printed (D20); arms per A: AncestryDNA −0.01097 (SE 0.0027, P 1.3e-4 after genomic control, raw 5.6e-5), UK Biobank −0.01147 (SE 0.0022, P 1.3e-7), heterogeneity P 0.90; S9's allele column prints the other allele, S8's and Table 3's the effect allele A (q52); N rounded in the source"
     curator: claude-opus-5-5
   - rsid: rs9872864
     note: pmid-31484785
@@ -158,7 +161,7 @@ studies:
     effect_unit: log hazard protection per A allele in self (positive = longer life)
     effect_allele: A
     direction: risk
-    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), n 638,114, info 0.997, direction -+; LifeGen's sign unstable: -- at rs9855505 (r² 1.00, q61), ++ at rs2271961 (T β +0.0147, P 1.3e-4, q60), and 23 of 57 SNPs at the lead's frequency disagree, so LifeGen does not replicate, at power about 0.4 (q19, q14); holds UK Biobank, half of Wright's meta-analysis, so not a replication"
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), n 638,114, info 0.997, direction -+; LifeGen's sign unstable: -- at rs9855505 (r² 1.00, q61), ++ at rs2271961 (T β +0.0147, P 1.3e-4, q60), and 23 of 57 SNPs at the lead's frequency disagree, so LifeGen does not replicate; one-sided power 0.6 to 0.7 from UK Biobank's backed-out β (about −0.0176) at LifeGen's SE (about 0.008; q19, q14), heterogeneity P about 0.055, below D21's red-flag line; direction order (UK Biobank, LifeGen) is this row's reading; holds UK Biobank, half of Wright's meta-analysis, so not a replication"
     curator: claude-opus-5-5
   - rsid: rs9872864
     note: pmid-30729179
