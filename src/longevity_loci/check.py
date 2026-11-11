@@ -163,6 +163,8 @@ SUGGESTIVE_P = 1e-5
 NOMINAL_P = 0.05  # §4.1: a replication counts at p < 0.05
 # R-TIER-2's confounding (cohort, batch) is the old-against-young design's, centenarian or age-threshold alike (D22)
 OLD_AGAINST_YOUNG = frozenset({StudyDesign.CENTENARIAN_CC, StudyDesign.AGE_THRESHOLD_CC})
+# D22.2, D23: the classes whose study replicates (viability only confirms); a healthspan or multivariate one does not
+REPLICATING = frozenset({PhenotypeClass.EXTREME_SURVIVAL_CC, PhenotypeClass.PARENTAL_LIFESPAN, PhenotypeClass.OWN_SURVIVAL})
 
 
 def check_rules(row: Row, path: Path) -> list[Finding]:
@@ -205,7 +207,7 @@ def check_rules(row: Row, path: Path) -> list[Finding]:
         if significant and all(s.sample_size == 1 for s in significant):
             rule("R-TIER-4", f"tier {tier.value} on n = 1 genomes")
         if (significant and all(s.study_design in OLD_AGAINST_YOUNG for s in significant)
-                and len({s.note for s in significant}) < 2):
+                and not any(r.phenotype_class in REPLICATING and r.note != a.note for r in supporting for a in significant)):
             rule("R-TIER-2", f"tier {tier.value} on one unreplicated old-against-young (centenarian or age-threshold) case-control study; caps at C")
         for i, s in enumerate(row.studies):
             if s.stat_significance is StatSignificance.NOT_SIGNIFICANT:

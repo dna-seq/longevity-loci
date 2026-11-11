@@ -425,6 +425,31 @@ def test_nominal_replication_supports(tree: Path) -> None:
     assert [(f.where, "effect_allele" in f.detail) for f in rules] == [("studies[1] rs429358", True)]
 
 
+def test_r_tier_2_lifted_by_a_scoring_class_replication_in_another_paper(tree: Path) -> None:
+    """D22.2, D25: an old-against-young discovery is replicated by a study of a scoring class in another paper, a
+    nominal look-up included; a healthspan study there, or a second analysis in the same paper, lifts nothing."""
+    _r_tier_1_note(tree)
+    text = _row(tree).read_text().replace("study_design: percentile_case_control_p90", "study_design: centenarian_case_control")
+    study = text[text.index("studies:\n") + len("studies:\n"):]
+    nominal = (study.replace("stat_significance: significant", "stat_significance: nominal")
+               .replace('p_value: "1.3 × 10−56"', 'p_value: "0.03"').replace("p_value_num: 1.3e-56", "p_value_num: 0.03")
+               .replace("study_design: centenarian_case_control", "study_design: parental_lifespan_cox")
+               .replace("phenotype_class: EXTREME_SURVIVAL_CC", "phenotype_class: PARENTAL_LIFESPAN"))
+    assert "PARENTAL_LIFESPAN" in nominal and "p_value_num: 0.03" in nominal
+
+    def r_tier_2(extra: str) -> bool:
+        _row(tree).write_text(text + extra)
+        found = check_rows(tree / "rows", tree / "corpus")
+        assert not [f for f in found if f.kind in FAILING and f.where != "R-TIER-2"], found
+        return any(f.where == "R-TIER-2" for f in found)
+
+    other = nominal.replace("note: pmid-31413261\n    quote: q2", "note: pmid-22279548\n    quote: q1")
+    assert r_tier_2("")
+    assert not r_tier_2(other)
+    assert r_tier_2(other.replace("phenotype_class: PARENTAL_LIFESPAN", "phenotype_class: HEALTHSPAN"))
+    assert r_tier_2(nominal)
+
+
 def test_nominal_look_up_supports_on_allele_direction_and_p(tree: Path) -> None:
     """D13 (the person, 2026-11-10, "1a"): a nominal replication look-up that gives no effect size supports a tier
     A/B row on its allele, its direction and its p; without a direction it does not, and a genome-wide study still

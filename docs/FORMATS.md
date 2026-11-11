@@ -147,7 +147,7 @@ nothing to check.
   - A tier D row is neutral on every genotype (D25: not supported means no weight).
   - On a tier A or B row: a genome-wide significant study, not MR-only, not n = 1 genomes (R-TIER-4); not one
     unreplicated old-against-young case-control study, `centenarian_case_control` or
-    `age_threshold_case_control` (R-TIER-2, D22; a percentile case-control design is not read as one); §6.3's `p_value`, `p_value_num`, `effect_size`, `effect_measure` and `effect_allele` on every supporting
+    `age_threshold_case_control` (R-TIER-2, D22; a percentile case-control design is not read as one; lifted by a supporting study of a replicating class, extreme survival, parental lifespan or own survival, in another note, a nominal look-up included, D22.2, D25.10); §6.3's `p_value`, `p_value_num`, `effect_size`, `effect_measure` and `effect_allele` on every supporting
     study, except that a `nominal` one (a replication look-up) or a `multivariate_healthspan_lifespan` one (D15), or a `meta_analysis` that prints no pooled effect
     (D20), needs only `p_value`, `p_value_num`,
     `effect_allele` and a `direction` other than `unknown` (or an `effect_size`) (D13); and, once a variant lists three genotypes, exactly one neutral, or every one neutral when its

@@ -269,3 +269,12 @@ person's standing word.
    would replicate already holds it, and §4.1 files "replicated only in small or same-group samples" under C. D19.1
    is about a sample outside the discovery that shares a measured part of it, not an arm within it. The curator's
    default (a); (b), separate people read as independent, rejected.
+10. **31 is B.** Gurinovich's main text (quoted, 03d4ef5) gives 306 NECS referents and 2,593 Illumina repository
+   controls; neither Deelen 2019 nor Gurinovich names the other's cohorts, so Deelen's 99th percentile (P 0.012 at
+   an r² 1.0 proxy, NECS's direction) is independent as far as both papers show (D19.1 asks a measured overlap, and
+   none is shown). R-TIER-2 is lifted; LifeGen's red flag under both calibrations (D25.3) caps the row at B with
+   `replication_failed`. NECS prints no effect size, so the row enters the crude odds ratio derived from its printed
+   allele frequencies, saying it is derived and how (the curator's option (a)); keeping C until an effect is printed
+   somewhere, (b), rejected: the effect is the paper's own counts, only not divided out. `check rows` lifted
+   R-TIER-2 only on a second genome-wide study; it now follows D22.2 (the lead's fix, with its test). The open
+   points, the repository controls' source studies and any LLFS member in NECS, stay in the row.
