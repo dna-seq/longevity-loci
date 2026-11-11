@@ -212,3 +212,32 @@ meta-analysis), PICS, ten members, lead 1_109279544_G_A (rs599839):
 
 rs646776, r² 0.94 to Wright's lead rs599839 (PIP 0.080); rs602633 is at r² 0.94 too (PIP 0.078). L2G SORT1 0.99
 on this set as well.
+
+## Reading 2026-11-11, record
+
+Variant 15_90880313_G_T (rs6224, FURIN/FES, an intron of FURIN and upstream of FES; noncoding), `alleleFrequencies`,
+of the alternative allele T (the lifespan-lowering one):
+
+> [q32] nfe_adj 0.47384152497080306
+
+T is about 47 % in non-Finnish Europeans, G 53 %: G/G about 28 %, G/T 50 %, T/T 22 %. T is 82 % in African and 14 % in
+East Asian gnomAD samples.
+
+Credible set e95e1989ec0d8799c17be4b6f837c2f1, study GCST009890 (Timmers 2019, "Parental lifespan"), PICS, nine
+members, lead 15_90880313_G_T (beta −0.2507 per T):
+
+> [q33] 15_90880313_G_T posteriorProbability 0.22429079929278053
+
+rs6224 holds PIP 0.22: `causal:C2`. Timmers 2020's multivariate set (GCST011100) is led by rs6224 too (PIP 0.21), and
+Pilling 2017's combined-parents set (GCST006697, SuSiE-inf) holds both rs17514846 (PIP 0.23, its lead) and rs6224
+(0.20).
+
+> [q34] 15_90873320_C_A r2Overall 0.9178175286358745
+
+rs17514846 (Pilling 2017's FURIN lead), r² 0.92 to rs6224 in that set (PIP 0.065): the same signal,
+`ld_proxy_of:rs6224`.
+
+> [q35] FES 0.9670971035957336
+
+The locus-to-gene score of FES on that set (FURIN 0.15), the only gene above 0.5, and no colocalisation was read:
+`effector:E2`, FES. The variant lies in FURIN, and Timmers 2019's SMR names FURIN and FES both (pmid-30642433#q22).

@@ -1,0 +1,208 @@
+# The seed list's locus 81, FES/FURIN (15q26.1, the FURIN/FES block). Curated 2026-11-11, the ten-row run's third
+# row. Lead rs6224 (Timmers 2019, the seed's lead); rs17514846 (Pilling 2017) is the same signal, r² 0.92, and appears
+# only as a proxy on its studies.
+locus_id: 81
+locus_name: FES/FURIN
+verdict: kept
+verdict_reason: >-
+  Tier A confirmed. Genome-wide significant for parents' attained age in UK Biobank (Pilling 2017, rs17514846, P
+  7.1e-10), and replicated outside UK Biobank with the same allele: in LifeGen with UK Biobank's lives removed, C at
+  rs17514846 adds 0.18 years per copy, P 0.013 (Timmers 2019's Figure 2 source data), and Timmers 2019 lists the
+  locus among the previously unreplicated findings it validates. In Timmers 2019's million lives the lead rs6224
+  reaches P 1.3e-10, G adding 0.25 years per copy. Every other look-up leans the same way and does not pass, none a
+  red flag: Deelen 2019's 90th and 99th percentiles (OR 1.03 and 1.04, P 0.13 and 0.25) and the longevity studies of
+  Timmers 2019's Figure 4 (P 0.18 one-sided). Wright 2019's AncestryDNA arm has no row for the lead; its fathers'
+  meta-analysis holds two nearby clumped SNPs, rs4702 and rs2677737 (AncestryDNA P 0.15 and 0.009, no heterogeneity
+  with UK Biobank), whose r² to the lead no cached source gives, so they are named, not scored. Healthspan is 0:
+  Zenin 2019's summary statistics give P 0.84 at the lead, in UK Biobank, a different trait from the same sample.
+  Timmers 2019 files the locus as cardiometabolic, and FURIN variants were known for blood pressure (Pilling 2017);
+  no cached source measures a mediator at this SNP, so none is written and the row stays descriptive. The effector
+  is FES by locus-to-gene score (0.97; FURIN 0.15), with no colocalisation read; the lead lies in an intron of FURIN,
+  and Timmers 2019's expression analysis (SMR) names both FURIN and FES. rs6224 holds PIP 0.22 in Timmers 2019's
+  credible set (C2), rs17514846 0.065 at r² 0.92: one signal. The lifespan-raising G is about half of European
+  alleles, so the protection is an absence of the risk allele. Age of action is unknown: no cached source gives this
+  locus's own age bands.
+axes:
+  tier: {value: A, cites: [pmid-29227965#q13, pmid-30642433#q19, pmid-30642433#q12, pmid-30642433#q21, pmid-30642433#q18]}
+  mechanism: {value: heart_vessels, cites: [pmid-30642433#q18, pmid-29227965#q14]}
+  pleiotropy: {values: ["mech:cvd"], cites: [pmid-30642433#q18]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "0",
+            cites: [pmid-30729179#q8, pmid-30642433#q18, pmid-29227965#q13, pmid-31413261#q16, pmid-30642433#q20]}
+  actionability: {label: descriptive, cites: [pmid-30642433#q18]}
+  context: {values: [eur_only_evidence], cites: [pmid-30642433#q18, pmid-29227965#q13]}
+flags:
+  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-30642433#q18, db-opentargets-26.09#q32]}
+  - {token: "causal:C2", cites: [db-opentargets-26.09#q33]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q35]}
+  - {token: "ld_proxy_of:rs6224", cites: [db-opentargets-26.09#q34]}  # rs17514846, r² 0.92
+variants:
+  - rsid: rs6224
+    gene: FES
+    phenotype: FES/FURIN region, cardiometabolic disease
+    trait_efo_id: EFO_0007796
+    effect_allele: G
+    effect_size: 0.2507
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: G/T
+        state: neutral
+        conclusion: >-
+          You carry one copy of each of the two common versions of this DNA region, the most common combination
+          (about half of people of European ancestry have it). It is the reference the other combinations are
+          compared with, so it neither raises nor lowers your expected lifespan here. The region, on chromosome 15,
+          holds the FES and FURIN genes and has been linked to heart and blood-pressure traits. The finding comes
+          from people of European ancestry; less is known elsewhere.
+      - genotype: G/G
+        state: protective
+        conclusion: >-
+          You carry two copies of the version of this DNA region that goes with longer life (about 28 in 100
+          people of European ancestry do). In very large British and European studies each copy went with parents
+          living on average about three months longer. The region holds the FES and FURIN genes and has been
+          linked to heart and blood-pressure traits; FES is the more likely of the two to matter, but this is not
+          proven. The finding is well established; the effect is small and it is a tendency, not a guarantee.
+      - genotype: T/T
+        state: risk
+        conclusion: >-
+          You carry two copies of the version of this DNA region that goes with slightly shorter life (about 22 in
+          100 people of European ancestry do). In very large British and European studies each copy went with
+          parents living on average about three months less. The region holds the FES and FURIN genes and has been
+          linked to heart and blood-pressure traits; FES is the more likely of the two to matter, but this is not
+          proven. The finding is well established; the effect is small and it is a tendency, not destiny. Your
+          blood pressure, cholesterol and smoking matter more for your heart than this DNA result.
+studies:
+  - rsid: rs6224
+    note: pmid-30642433
+    quote: q18
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the 26 LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 1012240
+    sample_unit: lives
+    stat_significance: significant
+    p_value: "1.3E-10"
+    p_value_num: 1.3e-10
+    effect_size: 0.2507
+    effect_measure: beta
+    effect_unit: years of life per G allele in self (parental estimate doubled)
+    effect_allele: G
+    direction: protective
+    statistical_test: "Cox-residual GWAS, common effect sizes across sexes (Table 1); sex-specific model P 1.8E-09"
+    curator: claude-opus-5-5
+  - rsid: rs6224
+    note: pmid-29227965
+    quote: q13
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank)
+    ancestry: [EUR]
+    sample_size: 389166
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "7.1E-10"
+    p_value_num: 7.1e-10
+    effect_size: -0.0139
+    effect_measure: beta
+    effect_unit: Martingale residual of parents' attained age per C allele at the proxy (negative = longer life)
+    effect_allele: C
+    direction: protective
+    proxy_rsid: rs17514846
+    statistical_test: "BOLT-LMM on Martingale residuals of both parents' attained age (Table 2); fathers alone P 1.2E-07, mothers 7.8E-04; C at rs17514846 travels with G at rs6224 (r² 0.92)"
+    curator: claude-opus-5-5
+  - rsid: rs6224
+    note: pmid-30642433
+    quote: q19
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (LifeGen cohorts, UK Biobank's lives removed)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.0132667670267149"
+    p_value_num: 0.01327
+    effect_size: 0.17904
+    effect_measure: beta
+    effect_unit: years of life per copy in self (parental estimate doubled), per C allele at the proxy
+    effect_allele: C
+    direction: protective
+    proxy_rsid: rs17514846
+    statistical_test: "Replication of Pilling 2017's rs17514846 in LifeGen excluding UK Biobank (Figure 2 source data 1, sample b, pmid-30642433#q12); discovery 0.27 years, P 7.1E-10; N not given per SNP"
+    curator: claude-opus-5-5
+  - rsid: rs6224
+    note: pmid-31413261
+    quote: q16
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's 18 discovery cohorts)
+    ancestry: [EUR]
+    n_cases: 11262
+    sample_size: 36745
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.1316"
+    p_value_num: 0.1316
+    effect_size: 1.031
+    effect_measure: OR
+    effect_unit: odds ratio of reaching the 90th percentile, per G allele
+    effect_allele: G
+    direction: protective
+    statistical_test: "Look-up of Timmers 2019's lead in Supplementary Data 1; same side, not nominal; I² 3.1 %; Pilling's rs17514846 gives OR 1.032, P 0.116 (q17)"
+    curator: claude-opus-5-5
+  - rsid: rs6224
+    note: pmid-31413261
+    quote: q16
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's 18 discovery cohorts)
+    ancestry: [EUR]
+    n_cases: 3484
+    sample_size: 28967
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.2451"
+    p_value_num: 0.2451
+    effect_size: 1.039
+    effect_measure: OR
+    effect_unit: odds ratio of reaching the 99th percentile, per G allele
+    effect_allele: G
+    direction: protective
+    statistical_test: "Look-up of Timmers 2019's lead in Supplementary Data 1; same side, not nominal; I² 0; Pilling's rs17514846 gives OR 1.051, P 0.123 (q17)"
+    curator: claude-opus-5-5
+  - rsid: rs6224
+    note: pmid-30642433
+    quote: q20
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: meta_analysis
+    population: European (the longevity GWAMAs of Deelen 2014 and Broer 2015, combined)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.183"
+    p_value_num: 0.183
+    effect_size: 0.00971
+    effect_measure: beta
+    effect_unit: log hazard ratio in self, recalibrated from longevity odds using APOE, per C allele at the proxy
+    effect_allele: C
+    direction: protective
+    proxy_rsid: rs17514846
+    statistical_test: "Figure 4—source data 1, one-sided P; the sheet's R2 column repeats the allele frequency and is not read as an r²"
+    curator: claude-opus-5-5
+  - rsid: rs6224
+    note: pmid-30729179
+    quote: q8
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.835"
+    p_value_num: 0.835
+    effect_size: 0.00102
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per T allele (positive = earlier)
+    effect_allele: T
+    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), -log10 P 0.0784; same sample as UK Biobank's parental arm"
+    curator: claude-opus-5-5
