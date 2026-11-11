@@ -910,3 +910,37 @@ Coronary artery disease at rs2814993-A (0.14, "increase", P 1e-11, q265 to q267;
 comes from studies whose ancestry the catalog leaves unreported (GCST005196, q272; GCST005195 likewise):
 not read, as at row 37. So the shorter-lived G's haplotype goes with more heart failure, thrombosis and CLL, and
 with lower LDL and apolipoprotein B. For row 39.
+
+## rs7742789 (ZNF318 / ABCC10), for row 40
+
+> [q273] _embedded.associations[15] association_id 131476521 risk_frequency NR pvalue_description pvalue_mantissa 3 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.0039-0.0082] beta 0.006035937 unit increase p_value 3.0000000000000004e-08 accession_id GCST90321079 pubmed_id 37550455 first_author Rosoff DB
+
+> [q274] _embedded.associations[15].snp_effect_allele[0] rs7742789-C
+
+> [q275] discovery_ancestry[0] 398696 European (U.K.)
+
+> [q276] discovery_ancestry[3] 1893921 European (Canada, Denmark, Estonia, Germany, Iceland, Japan, Netherlands, Sweden, U.K., U.S.)
+
+> [q277] discovery_ancestry[2] 2212177 European (Finland, Iceland, NR, Norway, Sweden, U.K., U.S.)
+
+> [q278] discovery_ancestry[0] 322141 European (U.K.)
+
+> [q279] discovery_ancestry[1] 400940 European (U.K.)
+
+> [q280] discovery_ancestry[0] 406504 European (U.K.)
+
+> [q281] discovery_ancestry[0] 417274 European (U.S.)
+
+> [q282] discovery_ancestry[0] 425203 European (U.S.)
+
+The catalog's 19 associations for rs7742789 (`associations-rs7742789.json`) include Rosoff 2023's mvAge line,
+rs7742789-C "unit increase", P 3 × 10⁻⁸ (q273, q274), which anchors the counted allele, and no lifespan, longevity or
+mortality study; nor do its 15 proxies at r² ≥ 0.8 (`associations-<rsID>.json`, 111 lines, most of them blood
+pressure, then testosterone, urate, kidney function and platelets; the only other disease lines stroke,
+cardiovascular disease, heart failure and atrial fibrillation). The studies of the Open Targets sets row 40 reads
+(`study-<accession>.json`), each with a European arm: clonal haematopoiesis with a DNMT3A mutation GCST90435354
+(398,696 Europeans, U.K., q275); heart failure GCST90455657 (multi-ancestry, 1,893,921 Europeans among them, q276);
+atrial fibrillation GCST90624411 (multi-ancestry, 2,212,177 Europeans, q277); systolic blood pressure GCST90472780
+(322,141, U.K., q278); cystatin C GCST90692779 (400,940 Europeans among U.K. samples, q279); eGFR from creatinine and
+cystatin C GCST90428446 (406,504, U.K., q280); ischaemic heart disease GCST90475929 (417,274, U.S., q281); acute
+renal failure GCST90476119 (425,203, U.S., q282). The variant's own sets, read at the lead, need no phasing.

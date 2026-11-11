@@ -1,0 +1,205 @@
+# The seed list's locus 40, ABCC10 (6p21.1). Curated 2026-11-11. Lead rs7742789 (Rosoff 2023's mvAge, Table 1), the
+# seed's only rsID here: intergenic, 8.6 kb from ZNF318 (Rosoff's gene), the catalog mapping it to ABCC10 and ZNF318.
+# Wright 2019's Supplemental Table 9 holds one SNP on the lead's haplotype (rs1214759, r² 0.84, D′ 1). Open Targets
+# 26.09: 172 credible sets hold the lead, none of a lifespan-class study; it leads 34, mostly kidney function, blood
+# pressure, heart disease and serum magnesium. The GWAS Catalog (2026-10-29) holds 19 associations for it and 111
+# for its 15 proxies at r² ≥ 0.8, none for lifespan or longevity.
+locus_id: 40
+locus_name: ABCC10
+verdict: kept
+verdict_reason: >-
+  Tier B, as the seed has it: a genome-wide multivariate result with a co-occurring lifespan study (§4.5 as D16 reads
+  it), with an independent nominal replication; a multivariate result does not meet tier A's first criterion
+  (D18.3), whatever its replication. Genome-wide significant only in Rosoff 2023's mvAge, the common factor behind
+  healthspan, frailty, exceptional longevity, parental lifespan and epigenetic age (P 3.3e-8, C raising the factor,
+  so T, at 35 % in Europeans, is on the less healthy side); Rosoff lists it as novel, and its Q test (P 0.41) finds
+  no sign the SNP acts off the common factor. Timmers 2019's million parents' lives are the co-occurring lifespan
+  study: T shortens life at P 1.2e-7, just short of genome-wide, UK Biobank and LifeGen on the same side. Healthspan
+  agrees nominally: T ends healthspan earlier in Zenin 2019's UK Biobank (P 0.0052 raw, about 0.0065 after the
+  deposit's genomic-control factor, derived), and frailty leans the same way (P 0.026). Exceptional survival is +:
+  Deelen 2019's 99th percentile favours C (T β −0.082, P 0.012, one-sided about 0.006); the 90th does not reach even
+  one-sided (P 0.22). All of these are inputs to mvAge, the same samples. Outside them, Wright 2019's AncestryDNA
+  fathers replicate at rs1214759, 7 kb away on the lead's haplotype (r² 0.84, D′ 1): its A, which travels with T,
+  shortens fathers' lives at raw P 0.0051 (one-sided 0.0026), and after Wright's genomic control (λ 1.182) at
+  two-sided 0.010, one-sided 0.005 (derived), so it holds either way. The counted allele is A, as Table 8 prints it
+  for the same SNP in fathers born 1886-1918 (genomic-control P 6.2e-4, the same customers, one signal, D17.1); the
+  UK Biobank arm's sign agrees with Timmers' A (P 1.7e-6), heterogeneity P 0.96. The mothers' table holds no line in
+  LD with the lead. FinnGen's death endpoint is null (T β −0.0018, P 0.83, a slight lean the other way): within
+  FinnGen, APOE's factor would predict T +0.022 (power about 0.86, heterogeneity P about 0.009), the loci's mean
+  factor +0.0093 (power about 0.31, heterogeneity P about 0.18); only one calibration flags it, so it is no red flag
+  (D25.3), and with AncestryDNA's replication D25.1 could not apply anyway. Mechanism: ageing in general (D25.7). The
+  lead leads 34 Open Targets sets. Per T it lowers cystatin C (P 6e-45, a one-variant set, PIP 0.998) and
+  creatinine and raises eGFR (P 1e-51, PIP 0.994), so T goes with better filtration; yet T raises acute renal
+  failure, systolic blood pressure and pulse pressure, heart failure (P 8e-16), ischaemic heart disease, atrial
+  fibrillation and clonal haematopoiesis with a DNMT3A mutation (P 2e-9), and lowers serum magnesium (P 2e-35). The
+  catalog's proxies add stroke, hypertension, testosterone and urate. Blood pressure and the heart are the commonest
+  thread, kidney traits as strong, and no one route is shown to carry the lifespan effect, so no single system is
+  named. A trade-off (D18.1, as at row 39): the longer-life C lowers eGFR, an established risk factor for kidney and
+  heart disease, quoted at the lead itself, while C has less acute renal failure, blood pressure and heart disease;
+  on lifespan C's side wins, so the net direction is resolved and the states are not neutral. Actionability is
+  descriptive, as a trade-off makes it. Causal confidence C4 and effector E4: no credible set of a lifespan-class
+  study holds the lead (mvAge's 26 sets in Open Targets include none on 6p21.1), so neither is read; locus-to-gene on
+  the trait sets favours TJAP1 or CRIP3, ZNF318 at most 0.42, named only. C/T is the reference: the most common
+  genotype in 1000 Genomes EUR (about 45 in 100 against C/C's 43; gnomAD's non-Finnish Europeans, at C 0.69, would
+  put C/C first by a little). No PROTECT token, the split too even (as at 21 and 24). Age of action is unknown: no
+  cached source gives this locus's own age bands.
+axes:
+  tier: {value: B, cites: [pmid-37550455#q41, pmid-37550455#q42, pmid-37550455#q43, pmid-37550455#q2, pmid-37550455#q3, pmid-37550455#q5, pmid-30642433#q214, pmid-30642433#q215, pmid-30729179#q62, pmid-31413261#q97, pmid-31413261#q98, pmid-31484785#q85, pmid-31484785#q86, pmid-31484785#q83, db-ensembl-116#q262, db-ensembl-116#q263, db-ensembl-116#q264, db-finngen-r11#q11, db-finngen-r11#q12, db-finngen-r11#q4, pmid-30642433#q90, pmid-30642433#q92, db-gwascatalog-2026.10.29#q273, db-gwascatalog-2026.10.29#q274]}
+  mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q553, db-opentargets-26.09#q555, db-opentargets-26.09#q557, db-opentargets-26.09#q558, db-opentargets-26.09#q559, db-opentargets-26.09#q560, db-opentargets-26.09#q561, db-opentargets-26.09#q562, db-opentargets-26.09#q563, db-opentargets-26.09#q564]}
+  pleiotropy: {values: ["mech:cvd", "mech:kidney", broad, tradeoff], cites: [pmid-37550455#q41, db-opentargets-26.09#q550, db-opentargets-26.09#q551, db-opentargets-26.09#q553, db-opentargets-26.09#q554, db-opentargets-26.09#q555, db-opentargets-26.09#q556, db-opentargets-26.09#q557, db-opentargets-26.09#q558, db-opentargets-26.09#q559, db-opentargets-26.09#q560, db-opentargets-26.09#q561, db-opentargets-26.09#q562, db-opentargets-26.09#q563, db-opentargets-26.09#q564, db-gwascatalog-2026.10.29#q275, db-gwascatalog-2026.10.29#q276, db-gwascatalog-2026.10.29#q277, db-gwascatalog-2026.10.29#q278, db-gwascatalog-2026.10.29#q279, db-gwascatalog-2026.10.29#q280, db-gwascatalog-2026.10.29#q281, db-gwascatalog-2026.10.29#q282]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
+            cites: [pmid-30729179#q62, pmid-37550455#q43, pmid-30642433#q214, pmid-31484785#q85, pmid-31413261#q98]}
+  actionability: {label: descriptive, cites: [db-opentargets-26.09#q555, db-opentargets-26.09#q557, db-opentargets-26.09#q558, db-opentargets-26.09#q560]}
+  context: {values: [eur_only_evidence], cites: [pmid-37550455#q41, pmid-30642433#q214, pmid-31484785#q85]}
+flags:
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q552, db-opentargets-26.09#q413]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q552, db-opentargets-26.09#q413]}
+variants:
+  - rsid: rs7742789
+    gene: ""
+    phenotype: ZNF318 region, blood pressure and kidneys
+    trait_efo_id: EFO_0007796
+    effect_allele: C
+    effect_size: 0.006
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    negatives: >-
+      The longer-life version, C, goes with slightly lower kidney filtration on blood tests (eGFR), which is
+      usually read as a mild risk sign, though it also goes with less sudden kidney injury, lower blood pressure
+      and less heart disease; across whole lives its side comes out ahead.
+    genotypes:
+      - genotype: C/C
+        state: protective
+        conclusion: >-
+          You carry two copies of the more common version of this DNA region (about 43 in 100 people of European
+          ancestry do). In very large European studies that combined healthspan, frailty, long life and biological
+          age into one measure, each copy went with slightly healthier ageing, and parents of carriers lived a
+          little longer. The same version goes with slightly lower blood pressure and less heart failure, heart
+          disease and irregular heartbeat, though also with slightly lower kidney filtration on blood tests, so it
+          is a mixed picture. It is a likely finding, not a settled one. The effect is small and it is a tendency,
+          not a guarantee.
+      - genotype: C/T
+        state: neutral
+        conclusion: >-
+          You carry one copy of each common version of this DNA region (about 45 in 100 people of European ancestry
+          do, the most common combination). It is the reference the other combinations are compared with. The
+          region, on chromosome 6, near the ZNF318 and ABCC10 genes, is linked to blood pressure, the heart and the
+          kidneys. The finding comes from people of European ancestry; less is known elsewhere.
+      - genotype: T/T
+        state: risk
+        conclusion: >-
+          You carry two copies of the less common version of this DNA region (about 12 in 100 people of European
+          ancestry do). In very large European studies that combined healthspan, frailty, long life and biological
+          age into one measure, each copy went with slightly less healthy ageing, and parents of carriers lived a
+          little less long. The same version goes with slightly higher blood pressure and somewhat more heart
+          failure, heart disease and irregular heartbeat, though also with slightly better kidney filtration on
+          blood tests, so it is a mixed picture. It is a likely finding, not a settled one. The effect is small and
+          it is a tendency, not destiny.
+studies:
+  - rsid: rs7742789
+    note: pmid-37550455
+    quote: q43
+    phenotype_class: MULTIVARIATE_AGEING
+    study_design: multivariate_healthspan_lifespan
+    population: European (the five input GWAS, UK Biobank and LifeGen among them; effective n 1,958,774)
+    ancestry: [EUR]
+    stat_significance: significant
+    p_value: "3.3E-08"
+    p_value_num: 3.3e-08
+    effect_size: 0.006035937
+    effect_measure: beta
+    effect_unit: mvAge factor per C allele (no conventional unit; positive = healthier ageing)
+    effect_allele: C
+    direction: protective
+    statistical_test: "Genomic SEM common-factor GWAS of healthspan, frailty, exceptional longevity, parental lifespan and PhenoAge acceleration (Table 1, q41, novel lead; Supplementary Table 7, effect allele first; the frequency column is the minor allele's, T's); Q P 0.41; pools the samples of the component studies, not a replication (q5)"
+    curator: claude-opus-5-5
+  - rsid: rs7742789
+    note: pmid-30642433
+    quote: q214
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    stat_significance: suggestive
+    p_value: "1.1629524e-07"
+    p_value_num: 1.1629524e-07
+    effect_size: -0.0223951
+    effect_measure: beta
+    effect_unit: log hazard protection per T allele in self (positive = longer life)
+    effect_allele: T
+    direction: risk
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), n 640,167, direction -- in UK Biobank and LifeGen, info 1.00; short of genome-wide; the co-occurring lifespan study (D16), an input of mvAge and not a replication; Wright's tag rs1214759 A −0.0197, P 1.7e-6 (q215), the same signal"
+    curator: claude-opus-5-5
+  - rsid: rs7742789
+    note: pmid-30729179
+    quote: q62
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "0.0052"
+    p_value_num: 0.0052
+    effect_size: 0.015
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per T allele (positive = earlier)
+    effect_allele: T
+    direction: risk
+    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), z 2.794, -log10 P 2.284; about 0.0065 after the deposit's genomic-control factor 1.053 (derived); mvAge's healthspan input, the same sample"
+    curator: claude-opus-5-5
+  - rsid: rs7742789
+    note: pmid-31413261
+    quote: q97
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.2236"
+    p_value_num: 0.2236
+    effect_size: -0.0254
+    effect_measure: beta
+    effect_unit: log odds of reaching the 90th percentile, per T allele
+    effect_allele: T
+    direction: risk
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008598), effective N 11,615; the P is two-sided, one-sided about 0.11 (derived), not nominal under D25.13; mvAge's exceptional-longevity input, not a replication"
+    curator: claude-opus-5-5
+  - rsid: rs7742789
+    note: pmid-31413261
+    quote: q98
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.01161"
+    p_value_num: 0.01161
+    effect_size: -0.0822
+    effect_measure: beta
+    effect_unit: log odds of reaching the 99th percentile, per T allele
+    effect_allele: T
+    direction: risk
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), effective N 4,524; two-sided, one-sided about 0.006 (derived); its cases a subset of the 90th's, whose line is mvAge's input, so not a replication"
+    curator: claude-opus-5-5
+  - rsid: rs7742789
+    note: pmid-31484785
+    quote: q85
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_linear
+    population: AncestryDNA customers' fathers (mostly European American)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.005105"
+    p_value_num: 0.005105
+    proxy_rsid: rs1214759
+    effect_size: -0.007566
+    effect_measure: beta
+    effect_unit: fathers' lifespan per A allele of rs1214759 (printed label G, read as A, derived; positive = longer)
+    effect_allele: A
+    direction: risk
+    statistical_test: "Supplemental Table 9, the AncestryDNA arm of the fathers' meta-analysis, raw P (beta/SE); one-sided 0.0026; after Wright's genomic control (λ 1.182, q83) two-sided 0.010, one-sided 0.005 (derived); the counted allele A as Table 8 prints it for fathers born 1886-1918 (q86, β −0.0131, genomic-control P 6.2e-4, the same customers, one signal) and as the UK Biobank arm's sign against Timmers' A (pmid-30642433#q215) gives it; rs1214759 r² 0.84, D′ 1.00 to the lead (db-ensembl-116#q264), its A with T (derived); independent of mvAge's inputs; UK Biobank arm P 0.0015, heterogeneity P 0.96; no mothers' line in LD"
+    curator: claude-opus-5-5

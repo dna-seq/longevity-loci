@@ -58,3 +58,18 @@ The same DEATH file, cached again with row 39's rows (`rows-ac81c46d`; the heade
 Finns): β +0.0152 (SE 0.0095), P 0.11, G toward more death, the side of the discovery's shorter-lived G; not
 significant (one-sided 0.055, derived). Its tags rs9462007 and rs9462014 are in the same cached rows, the same signal,
 not read separately.
+
+## Reading 2026-11-11, record
+
+The same DEATH file, cached again with row 40's rows (`rows-60700e76`; the header is q1, the counts q6).
+
+> [q11] 6 43378065 C T rs7742789 RP5-895C5.4 0.828815 0.0815422 -0.00175461 0.0081149 0.294499 0.293681 0.294601
+
+> [q12] 6 43385242 A G rs1214759 RP5-895C5.4 0.844638 0.0733294 0.00157441 0.00803419 0.694684 0.695409 0.694593
+
+rs7742789, alt T (0.29 in Finns): β −0.0018 (SE 0.0081), P 0.83 (q11), T leaning very slightly toward less death,
+the other way from the discovery; its tag rs1214759, alt G: β +0.0016, P 0.84 (q12), the same null. Calibrated
+within FinnGen against Timmers' self-scale β (T −0.0224, pmid-30642433#q214), D25.3's two factors (derived): APOE's
+(rs429358 C 0.1048 here, q4, against Timmers' 0.1056, pmid-30642433#q90; factor 0.99) predicts T +0.022, power about
+0.86, heterogeneity P about 0.009; the loci's mean (0.42 of APOE's, pmid-30642433#q92) predicts +0.0093, power about
+0.31, heterogeneity P about 0.18. Only the APOE factor flags it, so it is no red flag (D25.3). For row 40.

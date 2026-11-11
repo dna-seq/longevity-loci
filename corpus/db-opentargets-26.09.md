@@ -1982,3 +1982,51 @@ The lean-mass PIP is for that trait, not for ageing. Hospital frailty (GCST90707
 by rs56930444 (r² 0.83 to the lead, db-ensembl-116 window), P 7e-9, the lead in it at PIP 0.011 (q545 to q547):
 a healthspan-class set the tier does not rest on (D25.5), named only. Coronary atherosclerosis, heart-failure and
 hypertension sets hold the lead behind neighbours whose phase is not read; their β is not read for rs6907508.
+
+## rs7742789 (ZNF318 / ABCC10), for row 40
+
+> [q550] data.variant id 6_43378065_C_T referenceAllele C alternateAllele T
+
+> [q551] data.variant.credibleSets count 172
+
+> [q552] data.credibleSets count 0
+
+> [q553] data.variant.credibleSets.rows[62] studyLocusId 6805e8f39784dc232c8891e7466c1620 studyId GCST90692779 pValueMantissa 6.255704879760742 pValueExponent -45 beta -0.022134224217095277 finemappingMethod SuSiE-inf data.variant.credibleSets.rows[62].study traitFromSource Cystatin C levels projectId GCST
+
+> [q554] data.variant.credibleSets.rows[62].locus.rows[0] posteriorProbability 0.9980822499497782 data.variant.credibleSets.rows[62].locus.rows[0].variant id 6_43378065_C_T
+
+> [q555] data.variant.credibleSets.rows[24] studyLocusId b7251b695a2943b12a30605624eec88b studyId GCST90428446 pValueMantissa 1.081796646118164 pValueExponent -51 beta 0.02238207120711087 finemappingMethod SuSiE-inf data.variant.credibleSets.rows[24].study traitFromSource Estimated glomerular filtration rate (creatinine, cystatin c) projectId GCST
+
+> [q556] data.variant.credibleSets.rows[42] studyLocusId d7fa97ad2d7d44d5d9397c002066b4ce studyId GCST90319636 pValueMantissa 1.577418565750122 pValueExponent -11 beta -0.013927392846856389 finemappingMethod SuSiE-inf data.variant.credibleSets.rows[42].study traitFromSource Serum creatinine levels projectId GCST
+
+> [q557] data.variant.credibleSets.rows[58] studyLocusId ee4e91f695a70b54d3d627fcc8a58d20 studyId GCST90476119 pValueMantissa 1.5499999523162842 pValueExponent -13 beta 0.011116510880298955 finemappingMethod SuSiE-inf data.variant.credibleSets.rows[58].study traitFromSource Acute renal failure (PheCode 585.1) projectId GCST
+
+> [q558] data.variant.credibleSets.rows[82] studyLocusId 84c29e8e3611bb831174ffdc9c510815 studyId GCST90472780 pValueMantissa 8.958096504211426 pValueExponent -14 beta 0.012872463718314851 finemappingMethod SuSiE-inf data.variant.credibleSets.rows[82].study traitFromSource Systolic blood pressure projectId GCST
+
+> [q559] data.variant.credibleSets.rows[39] studyLocusId cd98a61308a0950ee0b3436d887b10e9 studyId GCST90310296 pValueMantissa 9.40381908416748 pValueExponent -26 beta 0.009938326766106162 finemappingMethod SuSiE-inf data.variant.credibleSets.rows[39].study traitFromSource Pulse pressure projectId GCST
+
+> [q560] data.variant.credibleSets.rows[23] studyLocusId b4f175edf3feb2c69a5bcf9ce0cfe8df studyId GCST90455657 pValueMantissa 8.036999702453613 pValueExponent -16 beta 0.0307 finemappingMethod PICS data.variant.credibleSets.rows[23].study traitFromSource Heart failure projectId GCST
+
+> [q561] data.variant.credibleSets.rows[17] studyLocusId aeb466aeee96d10873e5ec2672765617 studyId GCST90475929 pValueMantissa 5.729000091552734 pValueExponent -9 beta 0.008332736185187383 finemappingMethod SuSiE-inf data.variant.credibleSets.rows[17].study traitFromSource Ischemic heart disease (PheCode 411) projectId GCST
+
+> [q562] data.variant.credibleSets.rows[68] studyLocusId f9836bcc7e66f5b81206ca0541e02713 studyId GCST90624411 pValueMantissa 9.454999923706055 pValueExponent -12 beta 0.024 finemappingMethod PICS data.variant.credibleSets.rows[68].study traitFromSource Atrial fibrillation projectId GCST
+
+> [q563] data.variant.credibleSets.rows[25] studyLocusId 312754c4cb5bb479dd80e2262f6c65fa studyId GCST90435354 pValueMantissa 2.0031023025512695 pValueExponent -9 beta 0.009172607488527402 finemappingMethod SuSiE-inf data.variant.credibleSets.rows[25].study traitFromSource Clonal hematopoiesis (DNMT3A mutation) projectId GCST
+
+> [q564] data.variant.credibleSets.rows[16] studyLocusId 23ede60ead5c87b6bc315565b1f08f38 studyId GCST90475480 pValueMantissa 1.7639963626861572 pValueExponent -35 beta -0.03466723776087834 finemappingMethod SuSiE-inf data.variant.credibleSets.rows[16].study traitFromSource magnesium (Mg, mean, inv-norm transformed) projectId GCST
+
+rs7742789 is 6_43378065_C_T, alt T (q550); `beta` is per T, as the catalog's line for the heart-failure accession
+GCST90455657 prints the same T +0.0307. 172 credible sets hold it (q551;
+`variant-sets-p0/p1-6_43378065_C_T.json`), 34 of them led by it; none is a lifespan, healthspan, longevity or
+current-age study: the eight such studies hold no set with it (q552, `credibleSets-longevity8-6_43378065_C_T.json`),
+and mvAge's 26 sets (q413, re-cached as `study-sets-GCST90321079.json`) include none on 6p21.1. So causal C4,
+effector E4. Per T at the lead (each its set's lead): cystatin C −0.022, P 6 × 10⁻⁴⁵, a one-variant set, PIP 0.998
+(q553, q554); eGFR from creatinine and cystatin C +0.022, P 1 × 10⁻⁵¹, PIP 0.994 (q555); creatinine −0.014 (q556);
+so T goes with better filtration and C, the longer-life allele, with lower eGFR. Yet T raises acute renal failure
+(+0.011, P 1.5 × 10⁻¹³, q557), systolic blood pressure (+0.013, P 9 × 10⁻¹⁴, q558), pulse pressure (+0.0099, P 9 ×
+10⁻²⁶, q559), heart failure (+0.031, P 8 × 10⁻¹⁶, q560), ischaemic heart disease (+0.0083, P 6 × 10⁻⁹, q561), atrial
+fibrillation (+0.024, P 9 × 10⁻¹², q562) and clonal haematopoiesis with a DNMT3A mutation (+0.0092, P 2 × 10⁻⁹,
+q563), and lowers serum magnesium (−0.035, P 2 × 10⁻³⁵, PIP 0.74, q564). Other sets it leads: urea and blood urea
+nitrogen (lower per T), heart rate, actinic keratosis and skin cancer (higher per T), alanine and HSPG2. Locus-to-gene
+on these sets favours TJAP1 (about 0.8 on the kidney and blood-pressure SuSiE sets) or CRIP3 (about 0.47 on the PICS
+sets), ZNF318 at most 0.42; named only, since no lifespan-class set exists to read an effector from. For row 40.

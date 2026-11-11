@@ -942,3 +942,22 @@ travels with the lead's minor G (derived, not phased).
 The edge of the window: rs112563428 (r² 1.00, 208 kb from the lead) has its own CEU window cached
 (`ld-window-ceu-rs112563428.json`, r² ≥ 0.8); it holds the lead and the same 35 SNPs, none further, so the block
 ends inside the lead's window and the proxy sweep is whole.
+
+## rs7742789 (ZNF318 / ABCC10), for row 40
+
+> [q262] mappings[0] assembly_name GRCh38 seq_region_name 6 allele_string C/T strand 1 coord_system chromosome end 43378065 start 43378065 ancestral_allele C location 6:43378065-43378065
+
+> [q263] populations[76] allele_count 350 frequency 0.347912524850895 population 1000GENOMES:phase_3:EUR allele T
+
+> [q264] [180] population_name 1000GENOMES:phase_3:CEU d_prime 1.000000 r2 0.835820 variation2 rs1214759 variation1 rs7742789
+
+> [q265] [350] population_name 1000GENOMES:phase_3:CEU variation2 rs7692 variation1 rs7742789 d_prime 0.999998 r2 0.867407
+
+> [q266] [30] r2 0.561582 d_prime 0.999995 variation1 rs7742789 variation2 rs6919440 population_name 1000GENOMES:phase_3:CEU
+
+rs7742789 at 6:43,378,065 (GRCh38; 6:43,345,803 in GRCh37), C/T, C ancestral (q262); T 0.35 in 1000 Genomes EUR
+(q263), 0.31 in gnomAD non-Finnish Europeans and 0.72 in 1000 Genomes AFR (`variation-rs7742789.json`). Ensembl's CEU
+window (`ld-window-ceu-rs7742789.json`, ±250 kb, r² ≥ 0.05) holds 15 SNPs at r² ≥ 0.8, the strongest rs7692,
+rs58804120 and rs1563788 at 0.87 (q265). Wright's tag rs1214759: r² 0.84, D′ 1.00 (q264); its A (0.32) travels with
+the lead's T (0.30 to 0.35) at D′ 1 (derived, not phased; both shorten life in LifeGen, pmid-30642433#q214, q215).
+rs6919440, Wright's other fathers line, is at r² 0.56 (q266). For row 40.
