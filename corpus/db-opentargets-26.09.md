@@ -1181,3 +1181,27 @@ other gene passes either criterion: `effector:E1`, CDKN2B, by the letter on one 
 The highest of the other four, Pilling 2017's GCST006697 set (9215fe6d):
 
 > [q302] data.credibleSet.l2GPredictions.rows[0] score 0.4910053312778473
+
+### rs78438918 (AFF3), for row 15
+
+Rosoff's mvAge set (63ebc186), the row's only lifespan-class set:
+
+> [q303] data.credibleSet.colocalisation count 33
+
+> [q304] data.credibleSet.colocalisation.rows[15] rightStudyType eqtl h4 0.9911823824469108 clpp 0.09257875016778748
+
+> [q305] data.credibleSet.colocalisation.rows[15].otherStudyLocus isTransQtl false
+
+> [q306] data.credibleSet.colocalisation.rows[15].otherStudyLocus.study.target approvedSymbol AFF3
+
+> [q307] data.credibleSet.colocalisation.rows[30] rightStudyType eqtl h4 0.9746639712488064 clpp 0.03365484383727946
+
+> [q308] data.credibleSet.colocalisation.rows[30].otherStudyLocus isTransQtl false
+
+> [q309] data.credibleSet.colocalisation.rows[30].otherStudyLocus.study.target approvedSymbol ENSG00000230393
+
+At H4 ≥ 0.8, 24 cis colocalisations: AFF3 18 (15 expression, 3 transcript usage; q304 GTEx caudate) and
+ENSG00000230393, a gene without an approved symbol beside AFF3, 6 (expression, all exon-level; q307 GTEx testis).
+AFF3 passes locus-to-gene (0.90, q136) and colocalises, E1 on its own; but ENSG00000230393 meets a criterion of its
+own (cis colocalisation) and holds 6 of 24, at least a tenth, so under D24 the call is ambiguous: `effector:E3`, no
+gene named (the lead's ruling on this row, 2026-11-11).

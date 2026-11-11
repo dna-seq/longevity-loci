@@ -30,8 +30,9 @@ verdict_reason: >-
   holds none at the lead itself. Association on one haplotype, not a mediator test. Actionability is descriptive.
   The trade-off was looked for (D18.1) in the catalog's one record and the 19 sets: no harm on the G side;
   sets led by neighbours that do not hold the lead are not read, so none detected is not none. Causal confidence C2: rs78438918 leads mvAge's credible set (PICS) at PIP 0.26 among 44
-  members, the next at 0.061, the grip set the same (0.28). Effector E2, AFF3: locus-to-gene 0.90 on the mvAge set
-  (0.87 on the grip set), and the lead is an AFF3 expression QTL. The protection is the presence of the minor G.
+  members, the next at 0.061, the grip set the same (0.28). Effector E3, no gene named (D24): AFF3 passes
+  locus-to-gene (0.90 on the mvAge set) and holds 18 of the set's 24 cis-QTL colocalisations at H4 ≥ 0.8, but an
+  unnamed neighbouring gene (ENSG00000230393) holds the other 6, more than a tenth, so the call is ambiguous. The protection is the presence of the minor G.
   Age of action is unknown: no cached source gives this locus's own age bands.
 axes:
   tier: {value: B, cites: [pmid-37550455#q11, pmid-37550455#q2, pmid-37550455#q3, pmid-37550455#q5, pmid-30642433#q52, pmid-30729179#q27, pmid-31413261#q33, pmid-31413261#q34, pmid-31484785#q44, pmid-31484785#q45, pmid-31484785#q46, db-opentargets-26.09#q147, db-opentargets-26.09#q148, pmid-30642433#q53, pmid-30642433#q54, db-ensembl-116#q58, db-ensembl-116#q59, db-ensembl-116#q60, db-ensembl-116#q61, db-gwascatalog-2026.10.29#q118, db-gwascatalog-2026.10.29#q119]}
@@ -45,10 +46,10 @@ axes:
 flags:
   - {token: "PROTECT:PRESENCE", cites: [pmid-37550455#q11, pmid-30642433#q52, db-ensembl-116#q57]}
   - {token: "causal:C2", cites: [db-opentargets-26.09#q131, db-opentargets-26.09#q132, db-opentargets-26.09#q133, db-opentargets-26.09#q134, db-opentargets-26.09#q135]}
-  - {token: "effector:E2", cites: [db-opentargets-26.09#q136, db-opentargets-26.09#q137, db-opentargets-26.09#q145]}
+  - {token: "effector:E3", cites: [db-opentargets-26.09#q136, db-opentargets-26.09#q137, db-opentargets-26.09#q303, db-opentargets-26.09#q304, db-opentargets-26.09#q305, db-opentargets-26.09#q306, db-opentargets-26.09#q307, db-opentargets-26.09#q308, db-opentargets-26.09#q309]}
 variants:
   - rsid: rs78438918
-    gene: AFF3
+    gene: ""
     phenotype: AFF3 region, multivariate healthy ageing
     trait_efo_id: EFO_0007796
     effect_allele: G
