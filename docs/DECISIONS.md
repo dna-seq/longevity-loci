@@ -278,3 +278,9 @@ person's standing word.
    somewhere, (b), rejected: the effect is the paper's own counts, only not divided out. `check rows` lifted
    R-TIER-2 only on a second genome-wide study; it now follows D22.2 (the lead's fix, with its test). The open
    points, the repository controls' source studies and any LLFS member in NECS, stay in the row.
+11. **35 is B, not A.** D16 tiers a healthspan locus with a co-occurring lifespan study by §4.1, and D22.2 says what
+   replicates: a scoring-class study. Zenin's healthspan hit replicating in 96,313 other UK Biobank people is
+   healthspan replicating healthspan, which counts for nothing toward A; LifeGen (P 0.0016) shares UK Biobank, so it
+   co-occurs (D16) but does not replicate; Deelen is flat (P 0.13, 0.15), with no red flag. The curator's default A
+   rejected; its own reading of D22.2 taken. **One mechanism, one actionability**: `skin_sun` rows are `modifiable`,
+   `act_screen:skin` (§4.2 names sun among the behaviours), so 17 moves from `descriptive` to match 35.
