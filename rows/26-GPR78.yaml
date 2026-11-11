@@ -10,27 +10,27 @@ verdict_reason: >-
   Tier D, from the seed's B: a genome-wide longevity result that the larger European tests contradict, which §4.1
   files as "explicitly contradicted". Its own examples have this shape. USP42 and TMTC2 are Sebastiani 2017's
   genome-wide longevity SNPs, and Timmers 2019's parental lifespan data do not support them at their published
-  effects (there they lean the same way, P 0.27 and 0.11; here the parental tests lean the other way). In Deelen
+  effects (there they lean the same way, P 0.27 and 0.11; here the validation is flat or opposite). In Deelen
   2019's European meta-analysis the rare A (4 % in Europeans) lowers the odds of reaching the 90th percentile age,
   OR 0.67, P 4.3e-8, with no heterogeneity across cohorts (I² 0). That rests on fewer people than the study's
   totals: six cohorts, several of them long-lived-family or centenarian studies, have no data for it, and the
   summary statistics give an effective N of 8,023. The planned replication could not type it, and the authors ask
   for replication in independent cohorts. The trans-ethnic version, the GWAS Catalog's record, is P 1.7e-7, and A
-  is absent in East Asians, so it adds nothing on this variant. No later paper reports a test of it (a literature
-  search on the rsID, 2026-11-11). Deelen's own validation in UK Biobank, which the discovery does not include,
+  is absent in East Asians, so it adds nothing on this variant. A literature search on the rsID (2026-11-11, recorded in Deelen's note; Semantic Scholar unchecked) finds no later
+  genotyped test of it, by title and abstract, only reuses of Deelen's summary statistics. Deelen's own validation in UK Biobank, which the discovery does not include,
   does not replicate it. Parents reaching the 90th percentile age give OR 0.98 (0.92–1.06), P 0.67, and the
   authors state they had power even at half the effect. At the discovery's β −0.41 (SE 0.074) against the
   replication's SE of about 0.036, one-sided power is about 1.00. The two estimates differ at heterogeneity z −4.7
   (P about 3e-6) at the full effect, or z −3.5 (P about 0.0004) at half the effect for a parent's genotype. Under
-  either scaling that is D21's red flag. Timmers 2019's million parental lives put A on the longer-lived side
-  (P 0.25), the same summary statistic as Deelen's parental-lifespan line. Both rare neighbours, whose minor
-  alleles ride with A by frequency and r², also lean longer-lived (P 0.30 each). Nothing leans the discovery's way.
-  D22.3 reads a flat European look-up as D, by analogy only, since it was written for a cross-ancestry null. The
-  case for B is put to the lead: §4.1's letter (one genome-wide study, no independent replication) and the 71/67
-  rule, which caps a powered non-replication at B. The authors' own caveat supports it: the validation's parental
-  phenotypes give smaller effects, and its imputation panels differ from the discovery's, "which could have
-  influenced the outcome". That matters for a 4 % variant imputed at info 0.89. Row 103's C came from its
-  healthspan-only anchor (D17.1), which does not apply here.
+  either scaling that is D21's red flag. Timmers 2019's parental lifespan data, 635,383 lives at this SNP, put A on the longer-lived side (P 0.25), the same summary statistic as Deelen's parental-lifespan line. Both rare neighbours, whose minor
+  alleles ride with A by frequency and r², also lean longer-lived (P 0.30 each). So the tests are flat or opposite: Deelen's parental 90th percentile (OR 0.98) and Zenin's healthspan
+  (β +0.0058 per A) lean the discovery's way, flatly; LifeGen and the two neighbours lean opposite. D25.1 settles the
+  tier: a tested genome-wide discovery that fails a powered test in its own ancestry, with no independent
+  scoring-class p < 0.05 its way, is D, as §4.1's USP42 and TMTC2; §4.1's B is a hit nobody tested, and the 71/67
+  rule is a ceiling, not a floor. The authors' caveat stands, that the parental phenotypes give smaller effects and
+  the imputation panels differ, "which could have influenced the outcome", but imputation noise widens the SE and
+  does not pull the estimate to 1, and A's frequency matches in every look-up (0.04 to 0.05, against 0.044 in 1000
+  Genomes Europeans). The info 0.89 is LifeGen's meta-analysis info; the UK Biobank parental line's is unknown.
   Healthspan is null (Zenin 2019, P 0.64) and lifespan null. Exceptional survival is filed 0: the discovery's 90th
   percentile result is contradicted by the powered parental 90th percentile test, and the 99th percentile summary
   statistics have no row for the lead or its neighbours. No other trait is recorded for the variant (Phenoscanner,
@@ -39,7 +39,7 @@ verdict_reason: >-
   it, so causal and effector confidence are C4 and E4, and no gene is named (§4.2). The locus keeps the seed's
   label. Age of action is unknown.
 axes:
-  tier: {value: D, cites: [pmid-31413261#q52, pmid-31413261#q53, pmid-31413261#q54, pmid-31413261#q55, pmid-31413261#q56, pmid-31413261#q57, pmid-31413261#q58, pmid-31413261#q59, pmid-31413261#q60, pmid-31413261#q61, pmid-31413261#q62, pmid-31413261#q67, pmid-30642433#q77, pmid-30642433#q78, pmid-31413261#q64, pmid-31413261#q2, pmid-30642433#q73, pmid-30642433#q74, pmid-30642433#q75, pmid-30642433#q76, db-ensembl-116#q129, db-ensembl-116#q130, db-ensembl-116#q131]}
+  tier: {value: D, cites: [pmid-31413261#q52, pmid-31413261#q53, pmid-31413261#q54, pmid-31413261#q55, pmid-31413261#q56, pmid-31413261#q57, pmid-31413261#q58, pmid-31413261#q59, pmid-31413261#q60, pmid-31413261#q61, pmid-31413261#q62, pmid-31413261#q67, pmid-30642433#q77, pmid-30642433#q78, pmid-31413261#q64, pmid-31413261#q2, pmid-31413261#q81, pmid-30642433#q73, pmid-30642433#q74, pmid-30642433#q75, pmid-30642433#q76, pmid-30729179#q43, db-ensembl-116#q129, db-ensembl-116#q130, db-ensembl-116#q131]}
   mechanism: {value: general_ageing, cites: [pmid-31413261#q63]}
   pleiotropy: {values: [], cites: [pmid-31413261#q63, db-gwascatalog-2026.10.29#q188]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -70,19 +70,20 @@ variants:
           chromosome 4, lies near the GPR78 gene, whose job is largely unknown. A link between this region and
           long life was reported once and has not held up in larger studies.
       - genotype: A/G
-        state: risk
+        state: neutral
         conclusion: >-
           You carry one copy of a rare version of this DNA region (about 8 in 100 people of European ancestry do;
-          it is almost absent in East Asian people). In one study of very old people this version was a little less
-          common among those who reached about 90. Larger studies of parents' lifespans did not confirm it.
-          It says nothing reliable about your own lifespan.
+          it is almost absent in East Asian people). One study of very old people (Deelen 2019) reported this
+          version a little less common among those who reached about 90. The same team's check in a much larger
+          set of parents' lifespans did not support it, and other large studies found no link. It says nothing
+          about your own lifespan.
       - genotype: A/A
-        state: risk
+        state: neutral
         conclusion: >-
           You carry two copies of a rare version of this DNA region (about 2 in 1,000 people of European ancestry
-          do). In one study of very old people this version was less common among those who reached about 90.
-          Larger studies of parents' lifespans did not confirm it. It says nothing reliable about your own
-          lifespan.
+          do). One study of very old people (Deelen 2019) reported this version less common among those who
+          reached about 90. The same team's check in a much larger set of parents' lifespans did not support it,
+          and other large studies found no link. It says nothing about your own lifespan.
 studies:
   - rsid: rs7676745
     note: pmid-31413261
@@ -111,6 +112,7 @@ studies:
     n_cases: 19742
     sample_size: 39440
     sample_unit: individuals
+    age_of: parent
     stat_significance: not_significant
     p_value: "0.667"
     p_value_num: 0.667
@@ -119,7 +121,7 @@ studies:
     effect_unit: odds ratio of a parent reaching the 90th percentile age, per A allele in the participant
     effect_allele: A
     direction: risk
-    statistical_test: "Table 3, parental longevity (q57-q59; 19,742 cases and 19,698 controls, q2): 95 % CI 0.92-1.06, so SE about 0.036; the authors had adequate power even at half the effect (q58); D21 at the parental line: one-sided power about 1.00 at the discovery's β (no UK Biobank in it) or at half of it; heterogeneity z −4.7 (P about 3e-6) at the full effect, −3.5 (P about 0.0004) at half; a red flag either way; the authors' caveat on phenotype and imputation panels (q67). A parent's survival to the 90th percentile age, the discovery's case definition read in parents; filed as extreme survival, as no parental class has that cut"
+    statistical_test: "Table 3, parental longevity (q57-q59; 19,742 cases and 19,698 controls, q2): a case is a participant, alive, with at least one parent past the 90th percentile age, a control one whose parents both died at or before the 60th (q81), so the participant carries half of a parent's genotype and the expected log OR is about halved; 95 % CI 0.92-1.06, so SE about 0.036; the authors had adequate power even at half the effect (q58); D21 at the parental line: one-sided power about 1.00 at the discovery's β (no UK Biobank in it) or at half of it; heterogeneity z −4.7 (P about 3e-6) at the full effect, −3.5 (P about 0.0004) at half; a red flag either way; the authors' caveat on phenotype and imputation panels (q67). A parent's survival to the 90th percentile age, the discovery's case definition read in parents; filed as extreme survival, as no parental class has that cut"
     curator: claude-opus-5-5
   - rsid: rs7676745
     note: pmid-30642433
