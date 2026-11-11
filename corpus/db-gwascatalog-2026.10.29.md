@@ -1064,3 +1064,19 @@ The catalog's study record for Deelen's trans-ethnic 90th percentile analysis (`
 European, 2,178 East Asian and 177 African American cases against 25,483, 2,299 and 211 controls (q312), so about
 17 % of the cases are not European; no summary statistics deposited (q313; the FTP directory answers 404). For
 row 45.
+
+## Reading 2026-11-11, record
+
+> [q314] risk_frequency NR pvalue_description pvalue_mantissa 3 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.01-0.021] beta 0.01577 unit decrease p_value 3.0000000000000004e-08 accession_id GCST003395 pubmed_id 27015805
+
+> [q315] snp_effect_allele[0] rs528161076-?
+
+> [q316] totalElements 1 totalPages 1
+
+> [q317] initial_sample_size 1,339 middle-aged British cases, 40,934 middle-aged British controls replication_sample_size NA
+
+The catalog's one association for rs528161076 (`assoc-rs528161076.json`, q316): Pilling 2016's GCST003395, "Parental
+extreme longevity (95 years and older)", P 3e-8, β 0.01577 "unit decrease" with the effect allele unrecorded (q315):
+Supplementary Table 2's β per T (pmid-27015805#q13), its sign folded into the unit. The study record
+(`study-GCST003395.json`): 1,339 British cases and 40,934 controls, no replication sample (q317). No other trait is
+recorded for the variant. For row 47.

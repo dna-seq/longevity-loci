@@ -2189,3 +2189,17 @@ ADHD/autism/intelligence scan (PIP 0.24, q601) and Kemp's paediatric bone densit
 prescriptions and a HipSci exon QTL, most led by 6:126,727,085 and 6:126,727,464 (L2G CENPW 0.25 to 0.75, RSPO3
 0.58 in the height set). With no lifespan-class set, causal and effector confidence are C4 and E4, and no gene is
 named (D24). For row 45.
+
+## Reading 2026-11-11, record
+
+> [q604] data.variant id 7_4787883_T_TC referenceAllele T alternateAllele TC
+
+> [q605] data.variant.credibleSets count 16
+
+> [q606] rows[8] studyLocusId 8829a3930e365adaebaa57ef00943828 studyId lepik_2017_tx_blood_enst00000650310 pValueMantissa 2.4630000591278076 pValueExponent -10 beta -0.827584 finemappingMethod SuSie
+
+Row 47's insertion (`variant-7_4787883_T_TC-all.json`; rs371933919): sixteen credible sets (q605), every one a
+molecular QTL (ROSMAP, TwinsUK, GTEx v10, BLUEPRINT, Lepik 2017: transcript, exon and splice-junction usage of
+ENSG00000242802, at nSamples 167 to 724). The insertion leads four of them, the largest a blood transcript QTL at
+PIP 0.32 (q606). No GWAS set, so none of lifespan, longevity, healthspan or survival: causal and effector confidence
+are C4 and E4, no gene named (D24). For row 47.

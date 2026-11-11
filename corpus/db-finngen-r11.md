@@ -136,3 +136,13 @@ P 0.14 (derived). D21 under D25.3 (derived), Deelen's European 90th β +0.0913 (
 Timmers' scale and into FinnGen by APOE's factor here (0.99, q4 against pmid-30642433#q90): by APOE's factor (4.84)
 expected A −0.0187, one-sided power 0.65, heterogeneity P 0.39, no flag; by the loci's mean factor (0.4175) expected
 −0.0447, power 1.00, heterogeneity P 0.015, a flag. A flag under one calibration only is no flag. For row 45.
+
+## Reading 2026-11-11, supplement
+
+> [q22] 7 4787883 T TC rs528161076,rs371933919 AP5Z1 0.380806 0.419296 0.0339197 0.0387029 0.00930656 0.00957644 0.00927275
+
+FinnGen r11's death endpoint (`rows-ec9f8c12`, GRCh38) at row 47's AP5Z1 insertion itself, under both its rsIDs: TC
+(0.0093 in Finns) log OR +0.034 for death, SE 0.039, P 0.38, so the long-lived parents' allele in Pilling leans to
+more deaths here. FinnGen is independent of UK Biobank. Pilling's top-1 % effect carried by APOE's top-1 % factor (46,
+pmid-27015805#q17 against pmid-30642433#q90) and into FinnGen (0.99, q4) predicts −0.72: power 1.00, heterogeneity P
+3e-8. The flag holds at any factor of 6.2 or more. For row 47.

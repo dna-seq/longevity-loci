@@ -1117,3 +1117,32 @@ is 0.24 in 1000 Genomes Europeans (q306) and 0.25 in gnomAD's non-Finnish Europe
 genotype in Europeans (about 0.57, derived). Its most severe consequence is intronic (q310). For row 45.
 
 > [q310] most_severe_consequence intron_variant
+
+## Reading 2026-11-11, record
+
+> [q311] synonyms[3] rs528161076
+
+> [q312] . name rs371933919 MAF 0.0370879 var_class indel source Variants (including SNPs and indels) imported from dbSNP most_severe_consequence intron_variant ambiguity null minor_allele CCCCCCCCC
+
+> [q313] mappings[0] start 4787884 allele_string CCCCCCCC/CCCCC/CCCCCCC/CCCCCCCCC/CCCCCCCCCC seq_region_name 7 end 4787891 assembly_name GRCh38 ancestral_allele CCCCCCCC coord_system chromosome strand 1 location 7:4787884-4787891
+
+> [q314] mappings[0] coord_system chromosome allele_string CCCCCCCC/CCCCC/CCCCCCC/CCCCCCCCC/CCCCCCCCCC assembly_name GRCh37 ancestral_allele CCCCCCCC end 4827522 strand 1 start 4827515 seq_region_name 7 location 7:4827515-4827522
+
+> [q315] allele CCCCCCCCC allele_count 1874 frequency 0.02785 population gnomADg:nfe
+
+> [q316] allele CCCCCCCCC allele_count 30 frequency 0.0298210735586481 population 1000GENOMES:phase_3:EUR
+
+> [q317] allele_count 3664 allele CCCCCCCCC population gnomADg:afr frequency 0.09002
+
+> [q318] allele CCCCCCCCC allele_count 3 population gnomADg:eas frequency 0.000591
+
+> [q319] frequency 0.008954 population gnomADg:fin allele CCCCCCCCC allele_count 93
+
+rs528161076, the seed's id, is now a synonym of rs371933919 (`variation-rs528161076.json` answers with rs371933919's
+record, q311, q312): an insertion of one C in a run of eight, GRCh38 7:4,787,884 to 4,787,891 (q313), GRCh37
+4,827,515 to 4,827,522 (q314); left-aligned, the T at 4,787,883 (GRCh38) or 4,827,514 (GRCh37) with TC as the
+insertion, as Pilling (pmid-27015805#q13), FinnGen (db-finngen-r11#q22) and Open Targets
+(db-opentargets-26.09#q604) write it. The insertion (nine Cs) is 0.028 in gnomAD's non-Finnish Europeans (q315),
+0.030 in 1000 Genomes Europeans (q316), 0.090 in gnomAD's African genomes (q317), 0.0006 in East Asians (q318) and
+0.009 in Finns (q319). The record's other synonyms (HGVS names of another gene's coding change) are dbSNP's merge
+residue, not read. Its most severe consequence is intronic (q312). For row 47.

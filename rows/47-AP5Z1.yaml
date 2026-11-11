@@ -1,0 +1,190 @@
+# The seed list's locus 47, AP5Z1 (7p22.3). Curated 2026-11-11. Lead rs528161076, the seed's only rsID, now a
+# synonym of rs371933919 (db-ensembl-116#q311), the id this row carries: a one-base C insertion in a run of eight Cs
+# in an AP5Z1 intron, GRCh38 7:4,787,884-4,787,891, GRCh37 4,827,515-4,827,522, written T>TC at 4,787,883 (GRCh38)
+# or 4,827,514 (GRCh37). The insertion is 0.028 in gnomAD's non-Finnish Europeans, 0.09 in its African genomes, 0.009
+# in Finns. Entered by the GWAS track from Pilling 2016's parental extreme-longevity scan (GCST003395), tier vote B.
+# Deelen's files lack the insertion; its proxy rs79109928 (r² 0.943 in UK Biobank, Pilling's own) carries the
+# look-ups and appears only in the notes and the studies' proxy_rsid.
+locus_id: 47
+locus_name: AP5Z1
+verdict: kept
+verdict_reason: >-
+  Tier B, the seed's, kept and capped there by two lifespan look-ups that lean against it. Pilling 2016 ran BOLT-LMM
+  on 42,273 'white' British UK Biobank participants aged 55 to 70, 1,339 of them with a parent in the top 1 % of age
+  at death (mothers 98 or older, fathers 95 or older). The insertion's TC allele raised the chance of a long-lived
+  parent by 0.0158 per copy (SE 0.0029, P 3.4e-8) from a 3.2 % baseline: carried by 6.3 % of cases and 4.39 % of
+  controls, a crude carrier odds ratio of 1.46 (derived from those counts). That is about seven times APOE ε4's
+  effect on the same phenotype in the same model (rs429358 0.0023, P 0.053). The authors call it suggestive, "less
+  robust", and caution that the same people's continuous parental age-at-death scans are flat at it (P 0.65, 0.47,
+  0.96). The P passes 5e-8, so the locus is §4.1's genome-wide locus. A is out on size: 1,339 cases and 42,273 people
+  are below §4.1's 100,000 lives or 3,000 cases. Deelen 2019's 99th percentile, whose discovery holds no UK Biobank
+  data, replicates at the proxy rs79109928 (r² 0.943; its minor A is the long-lived parents' allele in Pilling):
+  OR 1.44, P 0.0025 (one-sided about 0.0013), effective N 3,692. Two more of the haplotype's markers give P 0.0018
+  and 0.011 there; their r² is unquoted, so they are named, not counted. The 90th percentile, which contains those
+  cases, leans the same way at a fifth of the effect (P 0.35). So the row is not D (D25.1). Two lifespan look-ups
+  lean against. LifeGen's parental lifespan at the proxy gives A beta1 −0.0067 (SE 0.0131, P 0.61, the shorter-life
+  side), but LifeGen contains UK Biobank, so it is not independent of Pilling. FinnGen r11's death endpoint, which is
+  independent, holds the insertion itself: log OR +0.034 for death (SE 0.039, P 0.38), at 0.9 % in Finns. Pilling's
+  APOE line gives a factor of about 46 to LifeGen's scale (0.1056 over 0.0023), and that line is itself only P 0.053.
+  At that factor both look-ups are red flags (power 1.00, heterogeneity P about 3e-8). The loci's mean factor (D25.3)
+  is defined against Deelen's 90th percentile, not this phenotype, so it is not at hand. The flag holds at any factor
+  of 2.13 or more for LifeGen and 6.2 or more for FinnGen, a twentieth and a seventh of APOE's. So
+  replication_failed, as at row 31; the cap is B. If the effect is real, it seems confined to the oldest ages:
+  the 99th percentile shows it, the 90th barely, and parental lifespan not at all. Zenin 2019's healthspan is null
+  at the proxy (P 0.93). Lifespan is filed 0, healthspan 0, exceptional survival + on Pilling and Deelen's 99th.
+  Age of action is UNKNOWN by default: the extreme-only pattern fits a late effect, but both of its contrasts are
+  within one sample (Pilling's binary against its continuous scans; Deelen's 99th cases a subset of its 90th).
+  LATE with DIRECT_WEAK confidence is the alternative, put to the lead. The evidence is European; the insertion is
+  three times commoner in African-ancestry genomes (0.09), where nothing was studied (R-TIER-3), so
+  eur_only_evidence. Every one of Open Targets' sixteen credible sets holding the insertion is a molecular QTL, for
+  ENSG00000242802's transcripts, exons and splice junctions; it leads four of them (a blood transcript QTL at PIP
+  0.32). No GWAS set holds it, so causal C4 and effector E4, and no gene is named (D24), though the insertion lies in
+  AP5Z1. Mechanism general ageing: the GWAS Catalog records no other trait. Descriptive. The protection is a
+  presence: the minor TC goes with long-lived parents.
+axes:
+  tier: {value: B, cites: [pmid-27015805#q1, pmid-27015805#q2, pmid-27015805#q3, pmid-27015805#q4, pmid-27015805#q5, pmid-27015805#q7, pmid-27015805#q8, pmid-27015805#q9, pmid-27015805#q10, pmid-27015805#q11, pmid-27015805#q12, pmid-27015805#q13, pmid-27015805#q14, pmid-27015805#q15, pmid-27015805#q17, pmid-27015805#q18, db-gwascatalog-2026.10.29#q314, db-gwascatalog-2026.10.29#q317, pmid-31413261#q2, pmid-31413261#q117, pmid-31413261#q118, pmid-31413261#q119, pmid-31413261#q120, pmid-30642433#q90, pmid-30642433#q228, pmid-30642433#q229, db-finngen-r11#q4, db-finngen-r11#q22, db-ensembl-116#q311, db-ensembl-116#q312, db-ensembl-116#q313, db-ensembl-116#q314]}
+  mechanism: {value: general_ageing, cites: [db-gwascatalog-2026.10.29#q316, db-opentargets-26.09#q605]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "+",
+            cites: [pmid-30729179#q70, pmid-30642433#q228, pmid-27015805#q7, db-finngen-r11#q22, pmid-27015805#q13, pmid-31413261#q117]}
+  actionability: {label: descriptive, cites: [pmid-27015805#q6]}
+  context: {values: [eur_only_evidence], cites: [pmid-27015805#q3, db-gwascatalog-2026.10.29#q317, pmid-31413261#q117, db-ensembl-116#q317]}
+flags:
+  - {token: "PROTECT:PRESENCE", cites: [pmid-27015805#q10, db-ensembl-116#q315]}
+  - {token: replication_failed, cites: [pmid-30642433#q228, db-finngen-r11#q22, pmid-27015805#q17, pmid-30642433#q90]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q605, db-opentargets-26.09#q606]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q605]}
+variants:
+  - rsid: rs371933919
+    gene: ""
+    phenotype: AP5Z1 region, long-lived parents
+    trait_efo_id: OBA_VT0005372
+    effect_allele: TC
+    effect_size: 0.01577
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: T/T
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position, as about 95 in 100 people of European
+          ancestry do. It is the reference the other combinations are compared with. The position, on chromosome 7,
+          lies inside the AP5Z1 gene, in a stretch that does not code for protein.
+      - genotype: T/TC
+        state: protective
+        conclusion: >-
+          You carry one copy of a less common version of this DNA position, one extra letter in a short repeat (about
+          5 in 100 people of European ancestry carry it). In a large British study, people with a parent who lived to
+          95 or more carried it more often, and a European study of people who reached the oldest ages leaned the
+          same way. Studies of parents' lifespan in general found no effect. It is a likely finding, not a settled
+          one, and it may matter only for reaching very old age.
+      - genotype: TC/TC
+        state: protective
+        conclusion: >-
+          You carry two copies of a less common version of this DNA position, one extra letter in a short repeat
+          (fewer than 1 in 1,000 people of European ancestry do). In a large British study, people with a parent
+          who lived to 95 or more carried this version more often, and a European study of people who reached the
+          oldest ages leaned the same way. Studies of parents' lifespan in general found no effect, and no one with
+          two copies was studied on their own. It is a likely finding, not a settled one.
+studies:
+  - rsid: rs371933919
+    note: pmid-27015805
+    quote: q13
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (UK Biobank, 'white' British participants aged 55 to 70; cases with at least one parent in the top 1 % of age at death, q1, q3)
+    ancestry: [EUR]
+    sample_size: 42273
+    sample_unit: individuals
+    n_cases: 1339
+    age_of: parent
+    stat_significance: significant
+    p_value: "3.40E-08"
+    p_value_num: 3.4e-08
+    effect_size: 0.01577
+    effect_measure: beta
+    effect_unit: difference in the probability of having a parent in the top 1 % of age at death per TC allele (BOLT-LMM, a linear mixed model on the binary outcome)
+    effect_allele: TC
+    direction: protective
+    statistical_test: "BOLT-LMM on imputed dosages (q4); Supplementary Table 2 prints 7:4827514_T_TC with T at 0.976, β −0.01577 per T, SE 0.002857, P 3.4e-8, INFO 0.977 (q12, q13), so TC +0.0158. Carriers 84 of 1,335 cases (6.3 %) against 1,796 of 40,871 controls (4.39 %), a crude carrier odds ratio of 1.46 (derived, q10). APOE ε4's rs429358 on the same phenotype: 0.0023 per T, P 0.053 (q17). The authors call it suggestive and less robust; the same people's continuous parental age at death is flat (P 0.65, q7). No replication sample (q11; db-gwascatalog-2026.10.29#q317)"
+    curator: claude-opus-5-5
+  - rsid: rs371933919
+    note: pmid-31413261
+    quote: q117
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's discovery cohorts; UK Biobank only in its validation, q2)
+    ancestry: [EUR]
+    age_of: participant
+    stat_significance: nominal
+    p_value: "0.002542"
+    p_value_num: 0.002542
+    proxy_rsid: rs79109928
+    effect_size: 0.3643
+    effect_measure: beta
+    effect_unit: log odds of reaching the 99th percentile age per A allele of rs79109928
+    effect_allele: A
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GCST008599), a 0.03, SE 0.1207, effective N 3,692; one-sided P about 0.0013. rs79109928 r² 0.943 to the insertion in UK Biobank (pmid-27015805#q15), its A with TC (pmid-27015805#q14). The insertion has no line in Deelen's files. rs116402929 and rs17135119 give P 0.0018 and 0.011 (q119, q120), r² unquoted. The 90th percentile, which contains these cases, P 0.35 at a fifth of the effect (q118). Independent of Pilling: Deelen's discovery holds no UK Biobank data"
+    curator: claude-opus-5-5
+  - rsid: rs371933919
+    note: pmid-31413261
+    quote: q118
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's discovery cohorts; UK Biobank only in its validation, q2)
+    ancestry: [EUR]
+    age_of: participant
+    stat_significance: not_significant
+    p_value: "0.351"
+    p_value_num: 0.351
+    proxy_rsid: rs79109928
+    effect_size: 0.0702
+    effect_measure: beta
+    effect_unit: log odds of reaching the 90th percentile age per A allele of rs79109928
+    effect_allele: A
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GCST008598), a 0.03, SE 0.0752, effective N 9,887; one-sided P about 0.18; contains the 99th percentile's cases"
+    curator: claude-opus-5-5
+  - rsid: rs371933919
+    note: pmid-30642433
+    quote: q228
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 627337
+    sample_unit: lives
+    stat_significance: not_significant
+    p_value: "0.6092245"
+    p_value_num: 0.6092245
+    proxy_rsid: rs79109928
+    effect_size: -0.00669092
+    effect_measure: beta
+    effect_unit: log hazard protection per A allele of rs79109928 in self (positive = longer life)
+    effect_allele: A
+    direction: risk
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0131, info 0.96, A 0.024. Contains UK Biobank, so Pilling's own participants: not independent. Pilling's effect carried by APOE's top-1 % factor (about 46, pmid-27015805#q17 against q90) predicts +0.70: power 1.00, heterogeneity P 3e-8; the flag holds at any factor of 2.13 or more. rs17135119 leans the same way (P 0.53, q229)"
+    curator: claude-opus-5-5
+  - rsid: rs371933919
+    note: pmid-30729179
+    quote: q70
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.93"
+    p_value_num: 0.93
+    proxy_rsid: rs79109928
+    effect_size: -0.00138
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per A allele of rs79109928 (positive = earlier)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Zenin 2019's healthspan summary statistics, SE 0.0161, −log10 P 0.031 (P about 0.93, from the file's −log10); the insertion has no line"
+    curator: claude-opus-5-5
