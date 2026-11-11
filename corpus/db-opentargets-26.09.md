@@ -957,3 +957,21 @@ rs2271961 leads at 0.023, rs9872864 is in it at 0.013 (row 31).
 > [q246] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol GMPPB
 
 Its L2G top gene is GMPPB at 0.19. No gene reaches 0.5 in either set.
+
+## Reading 2026-11-11, record
+
+The two IP6K1 scoring sets (a8824020, 97f2e5d9; row 21) re-queried for colocalisation with QTL sets, which the earlier
+query (q240, GWAS partners only) did not return: Open Targets lists QTL partners only when `studyTypes` names them.
+
+> [q247] data.credibleSet.colocalisation count 530
+
+530 QTL colocalisations for each set (three pages of 200 read for each). At H4 ≥ 0.8, 484 and 485, spread over at
+least a dozen genes: RNF123 311 each, UBA7 117, INKA1 16, CDHR4 8, GMPPB and MST1R 5, MST1 and RBM6 4, TRAIP 3,
+IP6K1 2. Expression, transcript-usage and splicing QTLs, most from GTEx.
+
+> [q248] data.credibleSet.colocalisation.rows[0].otherStudyLocus.study.target approvedSymbol RNF123
+
+> [q249] data.credibleSet.colocalisation.rows[2].otherStudyLocus.study.target approvedSymbol UBA7
+
+The first rows: RNF123 (an oesophageal-mucosa expression QTL, H4 0.93) and UBA7. No single gene: effector E3 stands on
+ambiguity, not on an absence of QTL colocalisation. For row 21.

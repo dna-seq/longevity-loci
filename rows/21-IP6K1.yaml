@@ -38,7 +38,9 @@ verdict_reason: >-
   and tea drinking at the two SNPs. The paper knew of no life-shortening disease at IP6K1. Causal
   C3: both scoring sets are PICS sets of about 80 variants with flat posteriors (the lead 0.020 and 0.023), which
   mark a region and pick no variant. Effector E3, no gene named: L2G's top genes are MST1R (0.11) and GMPPB (0.19),
-  IP6K1 0.06, and no scoring set colocalises with an expression, splicing or protein QTL. G is the major allele
+  IP6K1 0.06; both scoring sets colocalise (H4 ≥ 0.8) with expression, splicing and transcript QTLs of a dozen
+  genes, RNF123 (311 each) and UBA7 (117) most, IP6K1 twice, so no single gene stands out (an earlier query, GWAS
+  partners only, had missed them). G is the major allele
   at 51 % against 49 %, so A/G, the most common genotype, is the reference (§6.2): G/G protective, A/A risk; no
   PROTECT token, the split too even and no disease known at the locus to be absent (q51). Age of action unknown. The evidence is European.
 axes:
@@ -52,7 +54,7 @@ axes:
   context: {values: [eur_only_evidence], cites: [pmid-31413261#q1, pmid-30642433#q59, pmid-31484785#q52]}
 flags:
   - {token: "causal:C3", cites: [db-opentargets-26.09#q231, db-opentargets-26.09#q232, db-opentargets-26.09#q233, db-opentargets-26.09#q234, db-opentargets-26.09#q235, db-opentargets-26.09#q236, db-opentargets-26.09#q241, db-opentargets-26.09#q242, db-opentargets-26.09#q243, db-opentargets-26.09#q244]}
-  - {token: "effector:E3", cites: [db-opentargets-26.09#q237, db-opentargets-26.09#q238, db-opentargets-26.09#q239, db-opentargets-26.09#q240, db-opentargets-26.09#q245, db-opentargets-26.09#q246]}
+  - {token: "effector:E3", cites: [db-opentargets-26.09#q237, db-opentargets-26.09#q238, db-opentargets-26.09#q239, db-opentargets-26.09#q240, db-opentargets-26.09#q245, db-opentargets-26.09#q246, db-opentargets-26.09#q247, db-opentargets-26.09#q248, db-opentargets-26.09#q249]}
 variants:
   - rsid: rs9872864
     gene: ""
