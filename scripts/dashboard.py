@@ -54,14 +54,20 @@ def seed_loci() -> set[int]:
         return {int(r["locus_id"]) for r in csv.DictReader(f) if r["locus_id"]}
 
 
+def git(*args: str) -> str:
+    return subprocess.run(["git", "-C", str(ROOT), *args], capture_output=True, text=True, check=True).stdout
+
+
 def rows() -> list[dict]:
-    return [yaml.safe_load(p.read_text(encoding="utf-8")) for p in sorted((ROOT / "rows").glob("*.yaml"))]
+    """The rows as committed at HEAD: a row the curator is editing in the working tree may not parse yet, and the
+    board counts what landed."""
+    names = sorted(n for n in git("ls-tree", "--name-only", "HEAD", "rows/").splitlines() if n.endswith(".yaml"))
+    return [yaml.safe_load(git("show", f"HEAD:{n}")) for n in names]
 
 
 def row_times() -> list[float]:
     """When each row file was first committed (epoch seconds), oldest first."""
-    out = subprocess.run(["git", "-C", str(ROOT), "log", "--diff-filter=A", "--format=%ct", "--name-only", "--", "rows/*.yaml"],
-                         capture_output=True, text=True, check=True).stdout
+    out = git("log", "--diff-filter=A", "--format=%ct", "--name-only", "--", "rows/*.yaml")
     times, current = [], None
     for line in out.splitlines():
         if line.isdigit():
