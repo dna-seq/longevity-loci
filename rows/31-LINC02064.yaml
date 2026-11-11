@@ -8,44 +8,49 @@ locus_id: 31
 locus_name: LINC02064
 verdict: re-tiered
 verdict_reason: >-
-  Tier C, down from the seed's B, with B and D both put to the lead: a centenarian case-control result that rests
-  on one SNP's imputed calls, whose one replication cannot be shown independent, against a powered null in a million
-  parental lives. R-TIER-2 caps it at C. Gurinovich 2021 compared 1,320 New England Centenarian Study centenarians
-  (median age 104) with 2,899 controls, all of European ancestry by the GWAS Catalog's study record, imputed to the
-  HRC panel. C, the coded allele, is in 57.9 % of the centenarians' alleles and 63.9 % of the controls', score
-  Z −5.50, P 3.78e-8, so A goes with reaching 100 (crude odds ratio about 1.29 per A, derived from the frequencies,
-  not printed). The table lists every SNP at P < 5e-8 and holds this one alone, just past the cut. Its 15 proxies at
-  r² ≥ 0.99 are missing from it, and that is informative: 5e-8 is |Z| 5.45, and an r² 1.0 proxy would carry the
-  lead's Z 5.50, an r² 0.99 one about 5.47. If the proxies sit at A 0.31 in NECS as they do in every other file, the
-  lead's 0.36 caps their r² near 0.8 and their Z near 4.9 (derived). So NECS's signal rests on the lead's own imputed
-  calls and is not shown on the haplotype. The Ashkenazi replication the abstract
-  names is not printed for this SNP. Deelen 2019's European meta-analysis, which names no NECS among its cohorts, puts
-  the lead's A side on the long-lived side at the 99th percentile age: rs694966 (r² 1.0, G with A) OR about 1.10, P
-  0.0119, effective N 4,154; rs983077 (r² 0.99) P 0.0116. The 90th percentile, which contains those cases, leans the
-  same way (P 0.17). That would be §4.1's nominal replication, with a much smaller effect (log OR 0.10 against 0.25,
-  heterogeneity z about 2.6). But Deelen holds the Longevity Gene Project and LLFS, and where NECS's controls came
-  from is in Gurinovich's unread main text. Whether the two share controls is unknown (D19.1). And Deelen's
-  proxies test the haplotype, which NECS did not show. For both reasons R-TIER-2's "unreplicated" is not shown
-  lifted, and the row stays at C. B, which needs both doubts settled, is the weakest of the three. Timmers 2019's
-  parental lifespan is flat on the whole haplotype: at the lead P 0.75 (info 0.82), at rs983077 (info 0.995) A beta
-  −0.0015, SE 0.0042, P 0.73, at rs631778 P 0.82, the lead's side if anything shorter-lived. Converted with APOE as
-  the benchmark, as Timmers does (NECS's rs429358 against LifeGen's, factor about 9.4, derived from crude odds
-  ratios), NECS predicts about +0.027 on Timmers' scale. One-sided power is about 1.00 at that effect and 0.95 at
-  half; heterogeneity P is about 1e-5, or 0.002 at half. That is D21's red flag, and by D22.3's letter a flat European look-up is D:
-  its exception is proxies leaning the discovery's way in the look-up itself, as at row 18, and here LifeGen is flat
-  across the haplotype. §4.1's own USP42 and TMTC2 are NECS-group hits null in the same LifeGen data. C is kept as
-  the default only by analogy to row 18, the lean coming from a different study (Deelen's 99th percentile); D is
-  the alternative, row 26's open question again. The lead's own imputed frequency is off: A 0.36 in NECS's controls, 0.39 in LifeGen and 0.40 in UK Biobank's
-  healthspan file, against 0.29 to 0.31 in 1000 Genomes, gnomAD and every well-imputed proxy, which is the confounding
-  R-TIER-2 names. Zenin 2019's healthspan is null at the lead and its proxies (P 0.86 to 0.97). Lifespan is filed 0,
-  healthspan 0, exceptional survival + on NECS and Deelen. The evidence is European. Mechanism general ageing: the
-  GWAS Catalog records no other trait for the lead or any of its 56 proxies at r² ≥ 0.8, and Open Targets 26.09 has
-  no record of the lead or its two r² 1.0 proxies. So causal C4 and effector E4, no gene named (LINC02064 is a
-  long non-coding RNA, nearest by position only). The protection is a presence: the minor A goes with reaching 100.
-  Age of action is unknown; the signal shows at the oldest ages and not in parental lifespan, which fits a late
-  effect but does not show one.
+  Tier C, down from the seed's B, held there while B is put to the lead. By D25.1 the row would be B, capped by a
+  powered null (D21): a genome-wide centenarian result replicated nominally in a European sample independent as far
+  as both papers show, against a flat parental-lifespan look-up that is a red flag under both of Timmers'
+  calibrations (D25.3). Two things hold it at C. §6.3 asks a study supporting B for an effect size, and NECS prints
+  none (only a crude odds ratio derived from its frequencies, below); and `check rows` lifts R-TIER-2 only on a second
+  genome-wide study, not on D22.2's nominal scoring-class replication. Gurinovich 2021 compared 1,320 New England Centenarian Study
+  centenarians (median age 104) with 2,899 controls of European ancestry, imputed to the HRC panel. The controls are
+  306 NECS referents, unrelated people whose parents died before the median age of their birth cohort, and 2,593
+  controls from Illumina's repository of samples used as controls in many GWASs, matched to NECS's ancestry by
+  principal components; their ages and the studies they came from are not given. C, the coded allele, is in 57.9 %
+  of the centenarians' alleles and 63.9 % of the controls', score Z −5.50, P 3.78e-8, so A goes with reaching 100
+  (crude odds ratio about 1.29 per A, derived from the frequencies, not printed), past the paper's 5e-8 threshold.
+  Supplement Table 1 lists all 33 SNPs past it, and this one stands alone, just past the cut (|Z| 5.45). Its proxies
+  at r² ≥ 0.99 are not listed, which is weak evidence that the signal rests on the lead's own imputed calls: the lead
+  is only 0.05 Z past the cut, in-sample noise between r² 0.99 proxies is about 0.1 Z, and strand-ambiguous SNPs were
+  removed before the analysis. The lead's imputed frequency is off (A 0.36 in NECS's controls, 0.39 in LifeGen, 0.40
+  in UK Biobank's healthspan file, against 0.29 to 0.31 in 1000 Genomes and gnomAD; Deelen's rs694966 G 0.26), the
+  confounding R-TIER-2 names, which the replication lifts. The Ashkenazi Longevity Genes Project, NECS's own
+  replication cohort (312 cases, 638 controls), prints no value for this SNP. Deelen 2019's European meta-analysis
+  puts the lead's A side on the long-lived side at the 99th percentile age: rs694966 (r² 1.0, its G with A; Deelen's
+  5:29427172, rs694966's GRCh37 position) OR about 1.10, P 0.0119, effective N 4,154; rs983077 (r² 0.99) P 0.0116.
+  The 90th percentile, which contains those cases, leans the same way (P 0.17). That is §4.1's nominal replication,
+  with a smaller effect (log OR 0.10 against 0.25, heterogeneity z about 2.6), which is §4.1's B clause, never a reason
+  for D (D25.1). It is independent as far as both papers show (D19.1): Deelen's cohort list and its cohort supplement
+  name neither NECS nor Illumina's control repository, and Gurinovich names none of Deelen's cohorts besides the LGP,
+  which is NECS's replication, not its discovery. Two things stay unknown: which studies Illumina's repository
+  controls came from, and whether any member of the Long Life Family Study, which Deelen holds and which enrolled in
+  Boston among other centres, is also an NECS participant. Timmers 2019's parental lifespan is flat on the
+  haplotype: at the lead P 0.75 (info 0.82, n 519,511), at rs983077 (info 0.995, n 640,189) A beta −0.0015, SE 0.0042,
+  P 0.73, at rs631778 P 0.82, the lead's side if anything shorter-lived. With APOE as the benchmark, as Timmers does
+  (NECS's rs429358 against LifeGen's, factor about 9.4, derived from crude odds ratios), NECS predicts about +0.027 on
+  Timmers' scale: one-sided power about 1.00 (0.95 at half the effect), heterogeneity P about 1e-5 (0.002 at half).
+  With the loci's mean factor (0.42 of APOE's) it predicts about +0.065: power about 1.00, heterogeneity P about 1e-7
+  (3e-6 at half). A red flag under both (D21, D25.3), which would cap the row at B; it is not D, because an independent
+  scoring-class study gives p < 0.05 the discovery's way (D25.1). Zenin 2019's healthspan is null at the lead and its
+  proxies (P 0.86 to 0.97). Lifespan is filed 0, healthspan 0, exceptional survival + on NECS and Deelen. The
+  evidence is European. Mechanism general ageing: the GWAS Catalog records no other trait for the lead or any of its
+  56 proxies at r² ≥ 0.8, and Open Targets 26.09 has no record of the lead or its two r² 1.0 proxies. So causal C4
+  and effector E4, no gene named (LINC02064 is a long non-coding RNA, nearest by position only). The protection is a
+  presence: the minor A goes with reaching 100. Age of action is unknown; the signal shows at the oldest ages and not
+  in parental lifespan, which fits a late effect but does not show one.
 axes:
-  tier: {value: C, cites: [pmid-33948810#q1, db-gwascatalog-2026.10.29#q139, pmid-33948810#q3, pmid-33948810#q5, pmid-33948810#q6, pmid-33948810#q7, pmid-33948810#q8, pmid-31413261#q76, pmid-31413261#q77, pmid-31413261#q78, pmid-31413261#q80, pmid-30642433#q87, pmid-30642433#q88, pmid-30642433#q89, pmid-30642433#q90, pmid-30642433#q91, db-ensembl-116#q197, db-ensembl-116#q198, db-ensembl-116#q201, db-ensembl-116#q202, db-ensembl-116#q203, db-ensembl-116#q204]}
+  tier: {value: C, cites: [pmid-33948810#q1, db-gwascatalog-2026.10.29#q139, pmid-33948810#q3, pmid-33948810#q5, pmid-33948810#q6, pmid-33948810#q7, pmid-33948810#q8, pmid-31413261#q76, pmid-31413261#q77, pmid-31413261#q78, pmid-31413261#q80, pmid-31413261#q85, pmid-31413261#q86, pmid-31413261#q87, pmid-33948810#q9, pmid-33948810#q10, pmid-33948810#q11, pmid-33948810#q12, pmid-33948810#q13, pmid-33948810#q14, pmid-33948810#q15, pmid-33948810#q16, pmid-33948810#q17, db-ensembl-116#q219, pmid-30642433#q92, pmid-30642433#q87, pmid-30642433#q88, pmid-30642433#q89, pmid-30642433#q90, pmid-30642433#q91, db-ensembl-116#q197, db-ensembl-116#q198, db-ensembl-116#q201, db-ensembl-116#q202, db-ensembl-116#q203, db-ensembl-116#q204]}
   mechanism: {value: general_ageing, cites: [db-gwascatalog-2026.10.29#q207, db-opentargets-26.09#q470]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -77,14 +82,14 @@ variants:
         conclusion: >-
           You carry one copy of a less common version of this DNA region (about 4 in 10 people of European ancestry
           do). In one American study, people who reached 100 carried it more often than other people did, and a
-          European study of the very oldest leaned the same way. A study of a million parents' lifespans found no
+          European study of the very oldest leaned the same way. A study of more than half a million parents' lifespans found no
           effect. It is early evidence, not a verdict.
       - genotype: A/A
         state: protective
         conclusion: >-
           You carry two copies of a less common version of this DNA region (about 1 in 12 people of European ancestry
           do). In one American study, people who reached 100 carried this version more often than other people did,
-          and a European study of the very oldest leaned the same way. A study of a million parents' lifespans found
+          and a European study of the very oldest leaned the same way. A study of more than half a million parents' lifespans found
           no effect. It is early evidence, not a verdict.
 studies:
   - rsid: rs649357
@@ -92,7 +97,7 @@ studies:
     quote: q6
     phenotype_class: EXTREME_SURVIVAL_CC
     study_design: centenarian_case_control
-    population: European ancestry by the GWAS Catalog's record (db-gwascatalog-2026.10.29#q139; New England Centenarian Study; centenarians, median age 104, against unrelated controls, their ages and source unread)
+    population: European ancestry by the GWAS Catalog's record (db-gwascatalog-2026.10.29#q139; New England Centenarian Study; centenarians, median age 104, against 306 NECS referents and 2,593 Illumina repository controls, q9, ages not given)
     ancestry: [EUR]
     sample_size: 4219
     sample_unit: individuals
@@ -103,14 +108,14 @@ studies:
     p_value_num: 3.78e-08
     effect_allele: A
     direction: protective
-    statistical_test: "Score test (Supplement Table 1, q3, q6): C, the coded allele, in 0.5792 of cases' and 0.6394 of controls' alleles, score Z -5.50, P 3.78e-8; HRC-imputed (q1). No effect size printed: the GWAS Catalog's beta 5.501 is this Z (db-gwascatalog-2026.10.29#q205). Crude odds ratio per A about 1.29, derived. The table lists every SNP past 5e-8 (q7); none of the 15 proxies at r² >= 0.99 is listed, though one at r² 1.0 would carry Z 5.50: the signal rests on the lead's imputed calls (lead's A 0.361 in controls against its proxies' 0.31 elsewhere, capping their r² near 0.8, derived) Not among Supplement Table 2's SNPs with Ashkenazi results (q5)"
+    statistical_test: "Score test (Supplement Table 1, q3, q6): C, the coded allele, in 0.5792 of cases' and 0.6394 of controls' alleles, score Z -5.50, P 3.78e-8; HRC-imputed (q1). No effect size printed: the GWAS Catalog's beta 5.501 is this Z (db-gwascatalog-2026.10.29#q205). Crude odds ratio per A about 1.29, derived. Supplement Table 1 lists every SNP past the paper's 5e-8 (q7, q13, q14); none of the 15 proxies at r² >= 0.99 is listed, weak evidence that the signal rests on the lead's imputed calls (the lead 0.05 Z past the cut, in-sample noise between r² 0.99 proxies about 0.1 Z, strand-ambiguous SNPs removed, q17; the lead's A 0.361 in controls against 0.29 to 0.31 elsewhere). Controls: 306 NECS referents and 2,593 Illumina repository controls (q9-q12). The LGP prints no value (main Table 2, q15; LGP 312/638, q16). Not among Supplement Table 2's SNPs with Ashkenazi results (q5)"
     curator: claude-opus-5-5
   - rsid: rs649357
     note: pmid-31413261
     quote: q76
     phenotype_class: EXTREME_SURVIVAL_CC
     study_design: percentile_case_control_p99
-    population: European (Deelen 2019's discovery cohorts; no NECS among them, q80)
+    population: European (Deelen 2019's discovery cohorts; no NECS among them, q80, q86)
     ancestry: [EUR]
     stat_significance: nominal
     p_value: "0.01187"
@@ -121,7 +126,7 @@ studies:
     effect_unit: log odds of reaching the 99th percentile age per G allele of rs694966
     effect_allele: G
     direction: protective
-    statistical_test: "Deelen 2019's summary statistics (GCST008599), printed for a (0.74) as beta -0.0988, SE 0.0393, effective N 4,154; rs694966 r² 1.0 to the lead in 1000 Genomes EUR, its G (0.29) with the lead's A (db-ensembl-116#q201, q202); rs983077 (r² 0.99) the same, P 0.0116 (q78); the 90th percentile, which contains these cases, P 0.17 (q77). Cases not NECS's; whether the controls overlap is unknown (q80), so not shown independent"
+    statistical_test: "Deelen 2019's summary statistics (GCST008599), printed for a (0.74) as beta -0.0988, SE 0.0393, effective N 4,154; rs694966 r² 1.0 to the lead in 1000 Genomes EUR, its G (0.29 in 1000 Genomes, 0.26 in Deelen's file, EAF of a 0.74) with the lead's A (db-ensembl-116#q201, q202); Deelen's 5:29427172 is rs694966's GRCh37 position (db-ensembl-116#q219); rs983077 (r² 0.99) the same, P 0.0116 (q78); the 90th percentile, which contains these cases, P 0.17 (q77). Independent of NECS as far as both papers show (D19.1): neither Deelen's cohort list (q80) nor its cohort supplement (q86, q87) names NECS or Illumina's control repository (pmid-33948810#q9, q10); unknown: the repository controls' source studies, and whether any LLFS member is in NECS"
     curator: claude-opus-5-5
   - rsid: rs649357
     note: pmid-30642433

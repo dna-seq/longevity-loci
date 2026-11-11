@@ -781,3 +781,11 @@ T 0.386 (q215) and rs362273 G 0.339 (q216). With G opposite T, r² could reach o
 0.386 × 0.614 × 0.339 × 0.661); the EAS r² is 0.76 (q123), so G rides with T in East Asians, as in Europeans. In gnomAD
 genomes' Finns, T 0.54 (q217) and G 0.46 (q218); there either phase allows r² near 0.7, so the phase in Finns is
 assumed, not shown. For row 25.
+
+## Reading 2026-11-11, record
+
+> [q219] mappings[0] end 29427172 ancestral_allele A allele_string G/A/C location 5:29427172-29427172 strand 1 seq_region_name 5 coord_system chromosome start 29427172 assembly_name GRCh37
+
+rs694966 on GRCh37 (grch37-var-rs694966.json, read from Ensembl's GRCh37 server, grch37.rest.ensembl.org; its data
+release is that server's, which the key's release check, made against the main server, does not read): 5:29,427,172,
+G/A/C, the position Deelen 2019's summary statistics print as 5:29427172 (pmid-31413261#q76). For row 31.
