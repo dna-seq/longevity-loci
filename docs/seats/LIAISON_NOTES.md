@@ -32,7 +32,6 @@ Own machinery before the kit: none for this seat (no scripts, hooks or watchers 
   import nothing of the trio yet.
 
 ## Open
-- To file on the kit (unattended, small): the punch-in's "last daily line" said 2026-11-09 three times after daily posts on 11-10 (638899405, 639307950), while `watchdog.py daily liaison` named the 23:30Z post at once. Seen on v0.1.161 to v0.1.170.
 
 - Compiler 0.8, the role's "An in-house release" (kit 0.1.137): read and marked; the mechanical half (floor to
   `>=0.8.0`, caps lifted, `uv lock`, suite, `cache pull --only ensembl`) `waits until` the plugin's move past
