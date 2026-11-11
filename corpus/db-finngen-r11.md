@@ -155,3 +155,10 @@ flag is unknown (D26.3). For row 47.
 FinnGen r11's death endpoint (`rows-aade8c53`, GRCh38) at row 48's IL6 lead: G (0.062 in Finns) log OR −0.018 for
 death (SE 0.015), P 0.23. G leans to fewer deaths, against Zeng's A; null. FinnGen is independent of CLHLS. For row
 48.
+
+## Reading 2026-11-11, supplement
+
+> [q24] 7	34054385	A	G	rs17169634	BMPER	0.319216	0.495916	-0.0159799	0.0160429	0.0559885	0.0562301	0.0559582
+
+BMPER's rs17169634 (GRCh38 7:34,054,385) in FinnGen R11's death endpoint: G −0.0160 on the log hazard of death (SE
+0.0160), P 0.32; G at 0.056. G's side, one-sided 0.16 (derived): no pass. For row 49.

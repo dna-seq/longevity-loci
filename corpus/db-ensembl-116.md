@@ -1170,3 +1170,30 @@ rs2069837 (`variation-rs2069837.json`, and its GRCh37 record): GRCh38 7:22,728,4
 southern Han Chinese (CHS, q323), 0.160 in northern Han (CHB, q324), 0.089 in Europeans (q325); gnomAD's East Asian
 genomes 0.170 (q326), non-Finnish Europeans 0.073 (q327). Zeng's southern controls' 0.033 (pmid-26912274#q4) is about
 a quarter of CHS's. For row 48.
+
+## Reading 2026-11-11, record
+
+> [q328] coord_system chromosome strand 1 allele_string A/G/T location 7:34054385-34054385 end 34054385 start 34054385 assembly_name GRCh38 seq_region_name 7 ancestral_allele G
+
+> [q329] start 34093997 assembly_name GRCh37 location 7:34093997-34093997
+
+> [q330] allele G population 1000GENOMES:phase_3:EAS frequency 0.0962301587301587 allele_count 97
+
+> [q331] population 1000GENOMES:phase_3:CHS allele G frequency 0.0619047619047619 allele_count 13
+
+> [q332] allele_count 25 frequency 0.121359223300971 population 1000GENOMES:phase_3:CHB allele G
+
+> [q333] frequency 0.0984095427435388 allele G population 1000GENOMES:phase_3:EUR allele_count 99
+
+> [q334] frequency 0.1021 population gnomADg:eas allele G allele_count 529
+
+> [q335] frequency 0.08113 allele G population gnomADg:nfe allele_count 5518
+
+> [q336] population_name 1000GENOMES:phase_3:CEU d_prime 1.000000 variation2 rs17169630 r2 1.000000 variation1 rs17169634
+
+rs17169634 (`variation-rs17169634.json`, `variation-grch37-rs17169634.json`): GRCh38 7:34,054,385 (q328), GRCh37
+7:34,093,997 (q329), A/G (T a third allele, not used), a BMPER intron. G is 0.096 in 1000 Genomes East Asians (q330),
+0.062 in southern Han (CHS, q331), 0.121 in northern Han (CHB, q332), 0.098 in Europeans (q333); gnomAD genomes 0.102
+East Asian (q334), 0.081 non-Finnish European (q335). So the allele is as common in Europe as in China. In CEU
+(`ld-ceu-rs17169634.json`, 500 kb, r² ≥ 0.8) 16 variants tag it, every one at r² 1.0, among them rs17169630 (q336).
+For row 49.

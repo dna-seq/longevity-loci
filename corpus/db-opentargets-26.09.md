@@ -2260,3 +2260,35 @@ from about 0.013 up, e.g. q177, q179); no rule sets a clpp floor, so it counts b
 The 99th-percentile set's study has 5,662 cases (q622): Deelen's European 99th's 3,484 cases (as in rows 12 and 67)
 plus Zeng's 2,178 centenarians (pmid-26912274#q2), so it is the trans-ethnic analysis carrying CLHLS (derived). For
 row 48.
+
+## Reading 2026-11-11, record
+
+> [q623] data.variant.credibleSets count 6
+
+> [q624] data.variant.credibleSets.rows[1] studyLocusId 34741810ca5197f07f78d981561229f0 studyId GCST012210 pValueMantissa 8 pValueExponent -15 beta 0.3084 finemappingMethod PICS
+
+> [q625] data.variant.credibleSets.rows[1].locus.rows[0] posteriorProbability 0.1094118066419115
+
+> [q626] data.variant.credibleSets.rows[1].locus.rows[0].variant id 7_34054385_A_G
+
+> [q627] data.variant.credibleSets.rows[1].qualityControls[2] Study locus from curated top hit
+
+> [q628] data.variant.credibleSets.rows[1].l2GPredictions.rows[0] score 0.9315248131752014
+
+> [q629] data.variant.credibleSets.rows[1].l2GPredictions.rows[0].target approvedSymbol BMPER
+
+> [q630] data.credibleSet.colocalisation count 4
+
+> [q631] data.credibleSet.colocalisation.rows[0] colocalisationMethod COLOC_PIP_ECAVIAR h4 0.9798208240551841 clpp 0.04267495720797566 betaRatioSignAverage -1
+
+> [q632] data.credibleSet.colocalisation.rows[0].otherStudyLocus.study id gtex-v10_exon_brain_cerebellum_ensg00000164619_10_7_34153411_34153909 traitFromSource ENSG00000164619.10_7_34153411_34153909 studyType eqtl
+
+> [q633] data.credibleSet.colocalisation.rows[3].otherStudyLocus.study id gtex-v10_ge_brain_cerebellum_ensg00000164619 traitFromSource ENSG00000164619 studyType eqtl
+
+Row 49's BMPER lead (`variant-7_34054385_A_G-all.json`): six credible sets (q623), one lifespan-class, Liu 2021's
+(GCST012210, PICS, from the curated top hit and without an in-sample LD reference, q624, q627). The lead's PIP there is
+0.109 (q625, q626), the top of about 25 members, tied with 7_34054424_A_G: C2 by §4.2's letter. L2G names BMPER at
+0.93 (q628, q629; BBS9 0.05). The other sets: a 71-person Delta-CEHC metabolite set and four GTEx cerebellar BMPER
+(ENSG00000164619) expression and exon QTL sets. Liu's set has four colocalisations (q630,
+`coloc-34741810ca5197f07f78d981561229f0.json`), all BMPER cerebellum or cerebellar-hemisphere eQTLs at H4 0.975 to
+0.980 (eCAVIAR, clpp 0.035 to 0.043; q631 to q633): L2G ≥ 0.5 with a cis-QTL colocalisation, E1 BMPER. For row 49.

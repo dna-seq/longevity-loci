@@ -1085,3 +1085,15 @@ recorded for the variant. For row 47.
 
 The same query under the surviving id rs371933919 (`assoc-rs371933919.json`) and under Pilling's proxy rs79109928
 (`assoc-rs79109928.json`) each returns this line: no association under either. For row 47.
+
+## Reading 2026-11-11, record
+
+> [q319] _embedded.associations[0] association_id 80430573 risk_frequency NR
+
+> [q320] _embedded.associations[0].snp_allele[0] rs_id rs17169634 effect_allele G
+
+> [q321] _embedded.associations[1] association_id 42691 risk_frequency NR pvalue_description  pvalue_mantissa 1 pvalue_exponent -7
+
+rs17169634's associations (`assoc-rs17169634`): Liu 2021 (GCST012210, β 0.3084 per G, P 8e-15), with no risk-allele
+frequency (q319, q320); and Nelson 2014's (GCST002429, P 1e-7, q321), the Alzheimer's report Liu cites
+(pmid-33657282#q18), its allele "?". For row 49.

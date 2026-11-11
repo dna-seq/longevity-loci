@@ -1,0 +1,204 @@
+# The seed list's locus 49, BMPER (7p14.3). Curated 2026-11-11. Lead rs17169634 (GRCh38 7:34,054,385, GRCh37
+# 7:34,093,997, A/G, a BMPER intron; the seed's only rsID), Liu 2021's top longevity SNP in Chinese (Table 1). G is
+# about 0.10 in East Asians (0.06 in southern, 0.12 in northern Han) and 0.08 to 0.10 in Europeans. In Timmers 2019's,
+# Deelen 2019's, Zenin 2019's and FinnGen R11's summary statistics at the lead itself. Liu's supplementary tables
+# (the chip's SNP list S1 to S3, the survival results S16) are not read.
+locus_id: 49
+locus_name: BMPER
+verdict: re-tiered
+verdict_reason: >-
+  Tier D, from the seed's B: a genome-wide discovery in one ancestry that the European look-ups contradict, with its
+  proxies on the other side too (D22.3), and that fails a powered test on the same scale (D25.1's red flag) with no
+  independent scoring-class study p < 0.05 its way. Liu 2021 compared Chinese of the CLHLS survey aged 90 or more
+  (4,662) with controls under 75 (3,828) in dataset 1, typed on a custom chip, and centenarians (1,105) with controls
+  under 65 (1,450) in dataset 2, the group's earlier genome-wide array less its overlap with dataset 1. G, the minor
+  allele, goes with reaching old age in dataset 1 (β 0.370 on the log odds, OR 1.45, P 3.9e-18), and the
+  meta-analysis gives β 0.308, P 7.9e-15, the paper's top signal. The pooled P is dataset 1's alone: dataset 2 goes the
+  other way (β −0.097, SE 0.109, P 0.38) though it had power 0.88 at the meta β to show G's side (heterogeneity
+  between the two P about 6.7e-5, derived). Dataset 2 sits inside the pooled P, so the row does not rest on it (D25.9
+  says such an arm replicates nothing; whether it can contradict is put to the lead). Liu's own survival analysis
+  (G carriers living longer, P 1.45e-10) is dataset 1's people and chip again, so it replicates nothing either (D25.9).
+  Outside China every look is flat or against G, though G is as common in Europe (0.098) as in East Asia (0.096).
+  Deelen 2019, on the same log-odds scale, puts A ahead at both percentiles: the 99th A +0.120 (SE 0.056), P 0.033,
+  the value Liu quotes as nominal "in the opposite direction", and the 90th A +0.049, P 0.17. Against Liu's +0.308 per
+  G the 99th gives heterogeneity P about 6e-10 (about 7e-5 at half Liu's β), one-sided power about 1.00 (derived): a
+  red flag with no scale to convert. Timmers 2019's parental lifespan is flat (A +0.0015, P 0.84; G's side one-sided
+  0.58); carried to that scale with Liu's own APOE factor (Liu's rs2075650 G −0.293 over Timmers' 0.0822, 3.56) Liu's
+  β expects G +0.086 (SE 0.019), power 0.996, heterogeneity P 1.2e-5, and with the loci's mean factor +0.207 (SE
+  0.065), power 0.93, P 0.0015: a red flag under both of D25.3's calibrations, so `replication_failed`. The lead's 16
+  CEU proxies (all r² 1.0) do not lean Liu's way: all 14 that Timmers holds sit on A's side (P 0.57 to 0.80), and so
+  do Deelen's (the 99th P 0.022 to 0.12). FinnGen's death endpoint leans to G (one-sided 0.16) and Zenin 2019's
+  healthspan is flat (P 0.87): no independent p < 0.05 on G's side. Not 48's ground (D26.14): no sentence of Liu's
+  doubts the call, and G's frequency in Liu's samples is printed nowhere read here (Table 1, the GWAS Catalog), so
+  whether dataset 1's genotypes are sound is unknown, said not assumed; the paper's cross-array check removed SNPs
+  whose calls disagreed in the 2,054 people typed on both, which tests calls, not associations. Outcome cells:
+  lifespan 0 (Timmers, FinnGen), healthspan 0 (Zenin), exceptional survival 0 (Deelen's two percentiles on A's side;
+  Liu's own survival analysis is the discovery's people). No trade-off at tier D: in dataset 1, G goes with less
+  arthritis (P 3.8e-6) and prostate cancer (P 0.0063), and Biobank Japan links the locus to the same and to BMI,
+  direction not given; Liu cites an Alzheimer's report (Nelson 2014, P 1e-7, allele unnamed in the Catalog). No
+  longevity effect is shown to run through any of them, so the mechanism is general ageing (D25.7). Context
+  `ancestry_specific:eas`: the claim is in Chinese only, and the European looks contradict it. Open Targets 26.09:
+  Liu's set (PICS, from the curated top hit, no in-sample LD) holds the lead at PIP 0.109, the top of about 25
+  members, so causal C2 by §4.2's letter; L2G names BMPER at 0.93 and all four colocalisations are BMPER eQTLs in
+  cerebellum at H4 0.98, so effector E1 BMPER. Age of action is unknown. Genotypes neutral (D25.2).
+axes:
+  tier: {value: D, cites: [pmid-33657282#q17, pmid-33657282#q3, pmid-33657282#q4, pmid-33657282#q5, pmid-33657282#q12, pmid-33657282#q19, pmid-33657282#q20, pmid-33657282#q21, pmid-33657282#q24, pmid-33657282#q26, pmid-31413261#q128, pmid-31413261#q129, pmid-31413261#q130, pmid-30642433#q233, pmid-30642433#q234, pmid-30642433#q235, pmid-30642433#q92, db-ensembl-116#q330, db-ensembl-116#q333, db-ensembl-116#q336, db-finngen-r11#q24, pmid-30729179#q72, db-gwascatalog-2026.10.29#q319]}
+  mechanism: {value: general_ageing, cites: [pmid-33657282#q18, pmid-33657282#q22, pmid-33657282#q23]}
+  pleiotropy: {values: [], cites: [pmid-33657282#q22, pmid-33657282#q23, db-gwascatalog-2026.10.29#q321]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
+            cites: [pmid-30729179#q72, pmid-30642433#q233, db-finngen-r11#q24, pmid-31413261#q128, pmid-31413261#q129, pmid-33657282#q20]}
+  actionability: {label: descriptive, cites: [pmid-33657282#q18]}
+  context: {values: ["ancestry_specific:eas"], cites: [pmid-33657282#q3, pmid-33657282#q21, pmid-31413261#q129]}
+flags:
+  - {token: replication_failed, cites: [pmid-31413261#q129, pmid-30642433#q233, pmid-30642433#q234, pmid-33657282#q26, pmid-30642433#q92, pmid-33657282#q17]}
+  - {token: "causal:C2", cites: [db-opentargets-26.09#q623, db-opentargets-26.09#q624, db-opentargets-26.09#q625, db-opentargets-26.09#q626, db-opentargets-26.09#q627]}
+  - {token: "effector:E1", cites: [db-opentargets-26.09#q628, db-opentargets-26.09#q629, db-opentargets-26.09#q630, db-opentargets-26.09#q631, db-opentargets-26.09#q632, db-opentargets-26.09#q633]}
+variants:
+  - rsid: rs17169634
+    gene: BMPER
+    phenotype: BMPER region, reaching 90, Chinese
+    trait_efo_id: OBA_VT0005372
+    effect_allele: G
+    effect_size: 0.308
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: A/A
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA region, inside the BMPER gene on chromosome 7
+          (about 82 in 100 people of East Asian ancestry and 81 in 100 of European ancestry have this). It is the
+          reference the other combinations are compared with. A Chinese study reported the other version as more
+          common among people who reached 90, but a second Chinese sample and large European studies did not
+          support it. It says nothing about your own lifespan.
+      - genotype: A/G
+        state: neutral
+        conclusion: >-
+          You carry one copy of a less common version of this DNA region, inside the BMPER gene (about 17 in 100
+          people of East Asian ancestry and 18 in 100 of European ancestry do). A Chinese study reported it as more
+          common among people who reached 90, but a second Chinese sample leaned the other way and large European
+          studies of the very old found it slightly less common. It says nothing about your own lifespan.
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of a less common version of this DNA region, inside the BMPER gene (about 1 in 100
+          people of East Asian or European ancestry do). A Chinese study reported it as more common among people
+          who reached 90, but a second Chinese sample leaned the other way and large European studies of the very
+          old found it slightly less common. It says nothing about your own lifespan.
+studies:
+  - rsid: rs17169634
+    note: pmid-33657282
+    quote: q17
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: meta_analysis
+    population: Chinese (CLHLS; dataset 1 aged 90 or more against under 75, dataset 2 centenarians against under 65)
+    ancestry: [EAS]
+    sample_size: 11045
+    sample_unit: individuals
+    n_cases: 5767
+    age_min: 90
+    age_of: participant
+    stat_significance: significant
+    p_value: "7.91E-15"
+    p_value_num: 7.91e-15
+    effect_size: 0.308
+    effect_measure: beta
+    effect_unit: log odds of being a long-lived case, per G allele
+    effect_allele: G
+    direction: protective
+    statistical_test: "Inverse-variance fixed-effect meta-analysis (METAL, q12) of two case-control datasets (Table 1, q17; q3): dataset 1 (custom chip; 4,662 cases aged 90+, 3,828 controls under 75) β 0.370, SE 0.043, P 3.87e-18; dataset 2 less its overlap (genome-wide array; 1,105 centenarians, 1,450 controls under 65) β −0.097, SE 0.109, P 0.376; meta β 0.308, SE 0.040, P 7.91e-15, which the two reproduce (derived). The datasets disagree: heterogeneity P about 6.7e-5, dataset 2's power 0.88 at the meta β (derived). Dataset 2 is inside the pooled P, so neither replication nor, by the row's reading, contradiction (put to the lead); it is also the GWAS 11,893 of the chip's SNPs were chosen from (q5), this SNP's route unread. No percentile stated; cases counted across both datasets"
+    curator: claude-opus-5-5
+  - rsid: rs17169634
+    note: pmid-33657282
+    quote: q19
+    phenotype_class: OWN_SURVIVAL
+    study_design: own_survival_cox
+    population: Chinese (CLHLS dataset 1, all 12,664 with live or dead status, 3,040 deaths; the case-control's people among them, q20)
+    ancestry: [EAS]
+    sample_size: 12664
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: significant
+    p_value: "1.45e-10"
+    p_value_num: 1.45e-10
+    effect_size: 1.25
+    effect_measure: HR
+    effect_unit: the paper's "survival HR" for G carriers (G carriers live longer, q19); the model's coding is not printed
+    effect_allele: G
+    direction: protective
+    statistical_test: "Cox regression on age and live or dead status with sex (Figure 4B, q19, q20): survival to 100+ 28.3 % GG, 16.8 % GA, 11.3 % AA, P 1.45e-10. The same people and chip as dataset 1's case-control, so it replicates nothing (D25.9); Table S16 unread"
+    curator: claude-opus-5-5
+  - rsid: rs17169634
+    note: pmid-31413261
+    quote: q128
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.1703"
+    p_value_num: 0.1703
+    effect_size: 0.0492
+    effect_measure: beta
+    effect_unit: log odds of reaching the 90th percentile, per A allele
+    effect_allele: A
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008598, q128), effective N 11,615: A +0.0492, SE 0.0359; G, Liu's allele, one-sided 0.91 (derived); against Liu's meta +0.308 per G, heterogeneity P about 3e-11 (derived)"
+    curator: claude-opus-5-5
+  - rsid: rs17169634
+    note: pmid-31413261
+    quote: q129
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.0333"
+    p_value_num: 0.0333
+    effect_size: 0.1198
+    effect_measure: beta
+    effect_unit: log odds of reaching the 99th percentile, per A allele
+    effect_allele: A
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599, q129), effective N 4,370: A +0.1198, SE 0.0563, P 0.033 two-sided, against the discovery (Liu quotes it so, pmid-33657282#q21); no p_one_sided, being on A's side. Same log-odds scale as Liu's, so no calibration: heterogeneity P about 6e-10 (7e-5 at half Liu's β), power about 1.00 (derived), a red flag. The proxy rs17169630 (r² 1.0) the same, P 0.022 (q130)"
+    curator: claude-opus-5-5
+  - rsid: rs17169634
+    note: pmid-30642433
+    quote: q233
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 638103
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.8376036"
+    p_value_num: 0.8376036
+    effect_size: 0.00148307
+    effect_measure: beta
+    effect_unit: log hazard protection per A allele in self (positive = longer life)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890, q233), direction +- (UK Biobank, LifeGen), info 0.98; G one-sided 0.58 (derived). D25.3 (derived): Liu's APOE factor 3.56 (Liu's rs2075650 G −0.293, pmid-33657282#q26, over Timmers' A +0.0822, q234; a like-for-like ε4 proxy, not q91's rs429358) expects G +0.086 (SE 0.019), power 0.996, heterogeneity P 1.2e-5; the loci's mean factor (q92, dividing by 0.4175) +0.207 (SE 0.065), power 0.93, P 0.0015: a red flag under both. The 14 r² 1.0 proxies it holds all sit on A's side (P 0.57 to 0.80; q235)"
+    curator: claude-opus-5-5
+  - rsid: rs17169634
+    note: pmid-30729179
+    quote: q72
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.87"
+    p_value_num: 0.87
+    effect_size: 0.00151
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per G allele (positive = earlier)
+    effect_allele: G
+    direction: risk
+    statistical_test: "Zenin 2019's healthspan summary statistics (q72): G (0.077) β +0.00151, SE 0.00915, Z 0.165, −log10 P 0.061 (P about 0.87, rounded from the file's −log10); flat"
+    curator: claude-opus-5-5
