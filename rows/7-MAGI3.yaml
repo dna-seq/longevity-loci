@@ -1,0 +1,132 @@
+# The seed list's locus 7, MAGI3 (1p13.2, the PTPN22 region). Curated 2026-11-11, the ten-row run's eighth row. Lead
+# rs1230666 (Timmers 2019, Table 1), the seed's only rsID here. Wright 2019's mothers' meta-analysis holds clumped SNPs
+# within 0.5 Mb (the nearest rs2153977, 1:114080071, 93 kb away), with no cached LD to the lead: not read. Open
+# Targets 26.09: Timmers 2019's and Rosoff 2023's credible sets, both led by rs1230666; the GWAS Catalog (2026-10-29)
+# holds 14 associations for it.
+locus_id: 7
+locus_name: MAGI3
+verdict: kept
+verdict_reason: >-
+  Tier B, as the seed has it: genome-wide significant in one study, with no independent replication (§4.1's
+  single-study clause). Timmers 2019 found the locus in about one million parental lives from UK Biobank and LifeGen:
+  P 6.4e-9 (past its own 2.5e-8 threshold), G, the common allele (85 %), adding 0.32 years per copy, both arms on the
+  same side. Being new there, it has no LifeGen-only result to stand as a replication. The later genome-wide results
+  contain the same parents: Timmers 2020's multivariate analysis (P 2e-9, G on the healthier side; no effect size in
+  any cached source, so not a directed study here) and Rosoff 2023's mvAge (P 2e-11 in the GWAS Catalog, G on the
+  healthier-ageing side; the paper names rs1230666 among its strongest fine-mapped loci). Outside them nothing
+  passes: the longevity look-up of Timmers 2019's Figure 4 gives P 0.45 (one-sided), and Deelen 2019's 90th and 99th
+  percentiles OR 1.04 per G (P 0.19 and 0.36), all on the same side; Wright 2019's AncestryDNA arm has no row for the
+  lead. Healthspan agrees, nominally: G delays the end of healthspan in Zenin 2019 (P 6.7e-4), in UK Biobank. The
+  mechanism is filed as immune and inflammation: Timmers 2019 classes the locus as autoimmune and puts its lifespan
+  effect down to protection from autoimmune disease through a nearby variant it calls missense, rs6679677 (r² above
+  0.6), and at the lead itself the GWAS Catalog has the minor A raising Hashimoto thyroiditis (P 2e-72) and thyroid
+  peroxidase antibodies. The same A raises coronary disease and heart failure, while G lowers breast cancer: every
+  stated allele leans one way, so there is no trade-off. In Open Targets 26.09 rs1230666 holds PIP 0.64 in Timmers
+  2019's credible set (PICS) and 0.86 in mvAge's: causal:C1 by the threshold, though PICS weighs members by their LD
+  with the lead, and rs2476601 and rs6679677 sit in the same set at r² 0.68 and 0.67 (PIP 0.02), so the autoimmune
+  haplotype the paper names is not excluded. The top locus-to-gene score is PHTF1 at 0.42 (effector E3), so no gene
+  is named. The protection is the absence of the risk allele: A shortens life and G is the common one. Age of action
+  is unknown: Timmers 2019's age bands do not single out this locus, and no cached source gives its own.
+axes:
+  tier: {value: B, cites: [pmid-30642433#q29, pmid-30642433#q30, pmid-30642433#q33, pmid-30642433#q34, pmid-31413261#q19, db-gwascatalog-2026.10.29#q10]}
+  mechanism: {value: immune_inflammation, cites: [pmid-30642433#q29, pmid-30642433#q31, db-gwascatalog-2026.10.29#q4, db-gwascatalog-2026.10.29#q6, db-gwascatalog-2026.10.29#q19, db-gwascatalog-2026.10.29#q21]}
+  pleiotropy: {values: ["mech:autoimmune", "mech:cvd", "mech:cancer"], cites: [pmid-30642433#q31, pmid-30642433#q32, db-gwascatalog-2026.10.29#q4, db-gwascatalog-2026.10.29#q13, db-gwascatalog-2026.10.29#q15, db-gwascatalog-2026.10.29#q16, db-gwascatalog-2026.10.29#q18]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
+            cites: [pmid-30729179#q18, pmid-30642433#q29, pmid-30642433#q33, pmid-30642433#q34, pmid-31413261#q19]}
+  actionability: {label: descriptive, cites: [pmid-30642433#q31]}
+  context: {values: [eur_only_evidence], cites: [pmid-30642433#q29, pmid-31413261#q19]}
+flags:
+  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-30642433#q29, pmid-30642433#q33, db-opentargets-26.09#q56]}
+  - {token: "causal:C1", cites: [db-opentargets-26.09#q57, db-opentargets-26.09#q58, db-opentargets-26.09#q59, db-opentargets-26.09#q65]}
+  - {token: "effector:E3", cites: [db-opentargets-26.09#q62]}
+variants:
+  - rsid: rs1230666
+    gene: ""
+    phenotype: MAGI3/PTPN22 region, autoimmune disease
+    trait_efo_id: EFO_0007796
+    effect_allele: G
+    effect_size: 0.3224
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA region, the one most people of European ancestry
+          have (about 73 in 100). It is the reference the other combinations are compared with. The region, on
+          chromosome 1, is linked to autoimmune conditions such as thyroid disease; which gene in it matters is not
+          known. The finding comes from people of European ancestry; less is known elsewhere.
+      - genotype: A/G
+        state: risk
+        conclusion: >-
+          You carry one copy of a less common version of this DNA region (about 25 in 100 people of European
+          ancestry do). In very large British and European studies, people with this version tended to have parents
+          who lived a few months less. The same version is linked to a higher chance of autoimmune thyroid disease
+          and of heart disease. It is a likely finding, not a settled one: it has not yet been confirmed in a
+          separate group of people. The effect is small and it is a tendency, not destiny.
+      - genotype: A/A
+        state: risk
+        conclusion: >-
+          You carry two copies of a less common version of this DNA region (about 2 in 100 people of European
+          ancestry do). In very large British and European studies, each copy went with parents living a few months
+          less. The same version is linked to a higher chance of autoimmune thyroid disease and of heart disease. It
+          is a likely finding, not a settled one: it has not yet been confirmed in a separate group of people. The
+          effect is small and it is a tendency, not destiny.
+studies:
+  - rsid: rs1230666
+    note: pmid-30642433
+    quote: q29
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the 26 LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 1012240
+    sample_unit: lives
+    stat_significance: significant
+    p_value: "6.4E-09"
+    p_value_num: 6.4e-09
+    effect_size: 0.3224
+    effect_measure: beta
+    effect_unit: years of life per G allele in self (parental estimate doubled)
+    effect_allele: G
+    direction: protective
+    statistical_test: "Cox-residual GWAS, common effect sizes across sexes (Table 1); sex-specific model P 6.1E-08; summary statistics n 636,272, direction -- in UK Biobank and LifeGen (q33)"
+    curator: claude-opus-5-5
+  - rsid: rs1230666
+    note: pmid-30729179
+    quote: q18
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "6.7E-04"
+    p_value_num: 6.7e-04
+    effect_size: -0.0233
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per G allele (positive = earlier)
+    effect_allele: G
+    direction: protective
+    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), -log10 P 3.18; UK Biobank, the same people as Timmers 2019's UK Biobank part"
+    curator: claude-opus-5-5
+  - rsid: rs1230666
+    note: pmid-31413261
+    quote: q19
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.1855"
+    p_value_num: 0.1855
+    effect_size: 1.04
+    effect_measure: OR
+    effect_unit: odds of survival to the 90th percentile per G allele
+    effect_allele: G
+    direction: protective
+    statistical_test: "Deelen 2019's Supplementary Data 1 look-up of Timmers 2019's lead; 99th percentile OR 1.04, P 0.36; I² 0"
+    curator: claude-opus-5-5

@@ -332,3 +332,42 @@ NEGR1's locus-to-gene score on the BMI set, 0.74.
 G's frequency at rs1993709 in the same population: 0.82, as T's at rs2613508 (q46); with r² 0.99 the two ride one
 haplotype, G with T (phase derived from the frequencies, not read from a haplotype record). So T raises BMI, the side
 of worse ageing in mvAge (q47): association on one haplotype, not a mediation test; the anchor of row 4's mechanism.
+
+## Reading 2026-11-11, record
+
+rs1230666 (1_113630788_A_G, GRCh38; MAGI3 by the seed, the PTPN22 region), for row 7: its variant record and two
+credible sets, cached by `loci fetch-supp`. Open Targets' beta is per G, the id's second allele.
+
+> [q56] data.variant.alleleFrequencies[2] populationName nfe_adj alleleFrequency 0.8545842531272995
+
+G's frequency in gnomAD's non-Finnish Europeans: 0.85, as Timmers 2019's 0.85 (pmid-30642433#q29).
+
+> [q57] data.credibleSet studyLocusId f53bfb834cecc17a477fbb6d054e5404 finemappingMethod PICS pValueMantissa 6 pValueExponent -9 beta 0.3224
+
+> [q58] data.credibleSet.study id GCST009890 traitFromSource Parental lifespan
+
+Timmers 2019's parental lifespan set (GCST009890; PICS), led by rs1230666: P 6 × 10⁻⁹, beta 0.3224 years per G.
+
+> [q59] data.credibleSet.locus.rows[0] posteriorProbability 0.6441357257784882 r2Overall 1 is95CredibleSet true data.credibleSet.locus.rows[0].variant id 1_113630788_A_G data.credibleSet.locus.rows[0].variant.rsIds[0] rs1230666
+
+rs1230666's PIP in that set: 0.64, at 0.5 or above: `causal:C1` by §4.2's threshold. PICS weighs members by LD with
+the lead alone, so the lead is favoured when the block is long.
+
+> [q60] data.credibleSet.locus.rows[1] posteriorProbability 0.017836708761464048 r2Overall 0.6753080834761617 is95CredibleSet true data.credibleSet.locus.rows[1].variant id 1_113834946_A_G data.credibleSet.locus.rows[1].variant.rsIds[0] rs2476601
+
+> [q61] data.credibleSet.locus.rows[2] posteriorProbability 0.01766291421573972 r2Overall 0.6744933607140257 is95CredibleSet true data.credibleSet.locus.rows[2].variant id 1_113761186_C_A data.credibleSet.locus.rows[2].variant.rsIds[0] rs6679677
+
+The next members, rs2476601 and rs6679677 (Timmers 2019's named variant, pmid-30642433#q31), at r² 0.68 and 0.67 to
+the lead and PIP 0.018 each: the r² agrees with the paper's "r2 > 0.6".
+
+> [q62] data.credibleSet.l2GPredictions.rows[0] score 0.41865965723991394 data.credibleSet.l2GPredictions.rows[0].target approvedSymbol PHTF1
+
+The top locus-to-gene score on that set: PHTF1, 0.42. Below 0.5, `effector:E3`; no gene named.
+
+> [q63] data.credibleSet studyLocusId 342a0b5fa7ba1d5b86c1c50e484b4d2a finemappingMethod PICS pValueMantissa 2 pValueExponent -11 beta 0.010161293
+
+> [q64] data.credibleSet.study id GCST90321079 traitFromSource Aging
+
+> [q65] data.credibleSet.locus.rows[0] posteriorProbability 0.8624364813245581 r2Overall 1 is95CredibleSet true data.credibleSet.locus.rows[0].variant id 1_113630788_A_G data.credibleSet.locus.rows[0].variant.rsIds[0] rs1230666
+
+Rosoff 2023's mvAge set ("Aging", GCST90321079; PICS), led by rs1230666: P 2 × 10⁻¹¹, beta +0.0102 per G; PIP 0.86.
