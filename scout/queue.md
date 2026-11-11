@@ -44,3 +44,13 @@ read), and every identifier the paper has. The curator takes it from here; the s
 - **Passage** (Supplementary table, MOESM3, read by the curator 2026-11-11; `pmid-37550455#q23`):
   > No (Frailty, Lifespan) rs16843603 11 4:2928577 4 2928577 7 rs16843603;rs2798287;rs11937729;rs1801058;rs113928896;rs71597207;rs34155847 C T 0.3052 4.1616324788e-10 -0.00705057367178 0.00112848149177 ADD1 0 intronic 3.773 5 4 4 2.83548326833141 4 0.585723327229924
 - **Unknown:** its own tier; whether any lifespan study carries it outside mvAge's inputs (D16).
+
+### rs114298671 (MSANTD1/RGS12) at locus 25 HTT (4p16.3): a third mvAge signal, candidate row (D25.6)
+
+- **Paper:** Rosoff 2023, as above (PMID 37550455). From the curator, 2026-11-11.
+- **Why:** a genome-wide mvAge lead near MSANTD1, novel in Rosoff, r² 0.08 to row 25's lead rs61348208, so a separate
+  signal; a seed rsID with no seed locus of its own. Row 25 names it in prose; D25.6 sends it here.
+- **Passage** (Supplementary table, MOESM3, read by the curator 2026-11-11; `pmid-37550455#q24`):
+  > Yes rs114298671 11 4:3281869 4 3281869 2 rs114298671;rs71597207 A G 0.1223 1.56686856265e-08 0.00886760197706 0.00156835563347 MSANTD1 8403 intergenic 0.873 5 5 15 1.82958854405307 4 0.767064731931399
+- **Unknown:** its own tier; whether any lifespan study carries it outside mvAge's inputs (D16); it shares a tag,
+  rs71597207, with rs16843603's set above, so whether the two are wholly separate is unsettled here.
