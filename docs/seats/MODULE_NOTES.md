@@ -72,6 +72,7 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
   Check the format's effect_measure takes a Z score, else the export leaves effect_size empty, never a beta.
 - The first tier D row (26 GPR78, 4970b24): a genome-wide hit contradicted by a powered null. Check how the
   requirements carry tier D into the module (research view, flags, no direction a report would read as advice).
+  The lead settled the row side (D25.1, D25.2, 80b7691): D holds and every genotype of a tier D row is neutral.
 - Plugin pinned at v0.48.6 (the liaison, f69789a; toolchain unchanged, format 0.7.1): `validate_module` returns
   `warnings_summary` and `carried`; the polygon's 409 is named as the instance's format skew; the GWAS fix
   (RM428) is on the compiler's main, unreleased. The new session after waking loads the new pin.
