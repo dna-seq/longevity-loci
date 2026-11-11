@@ -254,3 +254,20 @@ state none either. Four of the nine records give no allele. For row 11.
 > [q70] _embedded.associations[0].efo_traits[0] efo_id OBA_VT0005372 efo_trait life span determination trait
 
 The catalog maps Wright 2019's age record at rs10798302 to life span (OBA_VT0005372). For row 10.
+
+> [q71] page size 50 totalElements 8 totalPages 1 number 0
+
+> [q72] _embedded.associations[2] association_id 227578446 risk_frequency NR pvalue_description pvalue_mantissa 3 pvalue_exponent -10 multi_snp_haplotype false snp_interaction false range [0.059-0.113] beta 0.086 unit decrease p_value 3e-10 accession_id GCST90998896 pubmed_id 42521668 first_author Bright U ci_lower 0.059 ci_upper 0.113
+
+> [q73] _embedded.associations[2].snp_allele[0] rs_id rs1993709 effect_allele A
+
+> [q74] _embedded.associations[6].snp_allele[0] rs_id rs1993709 effect_allele ?
+
+> [q75] page size 50 totalElements 1 totalPages 1 number 0
+
+Row 4's trade-off check (D18.1): rs2613508 has one record, mvAge's (`associations-rs2613508.json`); its BMI lead
+rs1993709 has eight (`associations-rs1993709.json`). A at rs1993709, the allele riding with rs2613508's longer-life C
+(db-opentargets-26.09#q46-q52), lowers BMI and waist-hip ratio and, in Bright's fibromyalgia GWAS, fibromyalgia (beta
+0.086 decrease, P 3 × 10⁻¹⁰); G is the early-onset extreme obesity risk allele. Four records state no allele (two
+fibromyalgia MTAG records, extreme obesity, neuroticism, q74). No record ties the longer-life allele to a harm; none
+detected is not none. For row 4.

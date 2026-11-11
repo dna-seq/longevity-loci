@@ -23,8 +23,11 @@ verdict_reason: >-
   allele that ages worse is the one that raises BMI; that is association on one haplotype, not a mediator test. In
   mvAge's own credible set (PICS) rs2613508 leads 75 members, all at PIP 0.05 or less (causal:C3); the top
   locus-to-gene score is NEGR1 at 0.56 (effector:E2), so NEGR1 is named (§6.2), as it is on the BMI set (0.74).
-  Actionability is modifiable through weight (§4.2's label line, D18.2): the locus acts through body weight, and no
-  trade-off is detected and no LATE age of action shown, the two cases §4.2 leaves descriptive. Age of action is
+  Actionability is modifiable through weight (§4.2's label line, D18.2): the locus acts through body weight, with
+  no LATE age of action shown and no trade-off detected, the two cases §4.2 leaves descriptive. The trade-off was
+  looked for (D18.1) in the GWAS Catalog's nine records at rs2613508 and its BMI lead rs1993709: the longer-life
+  side lowers BMI, waist-hip ratio and fibromyalgia and is not the early-onset obesity risk allele; four records
+  (neuroticism among them) state no allele, so none detected is not none. Age of action is
   unknown: no cached source gives this locus's own age bands.
 axes:
   tier: {value: B, cites: [pmid-37550455#q8, pmid-37550455#q3, pmid-37550455#q5, pmid-30642433#q26, pmid-30729179#q15]}
@@ -33,7 +36,7 @@ axes:
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: untested,
             cites: [pmid-30729179#q15, pmid-30642433#q26, pmid-37550455#q8, pmid-37550455#q2]}
-  actionability: {label: modifiable, what: ["act_behaviour:weight"], who: "act_who:self", cites: [pmid-37550455#q8, db-opentargets-26.09#q51]}
+  actionability: {label: modifiable, what: ["act_behaviour:weight"], who: "act_who:self", cites: [pmid-37550455#q8, db-opentargets-26.09#q51, db-gwascatalog-2026.10.29#q71, db-gwascatalog-2026.10.29#q72, db-gwascatalog-2026.10.29#q73, db-gwascatalog-2026.10.29#q74, db-gwascatalog-2026.10.29#q75]}
   context: {values: [eur_only_evidence], cites: [pmid-37550455#q8, pmid-30642433#q26]}
 flags:
   - {token: "PROTECT:PRESENCE", cites: [pmid-37550455#q8, pmid-30642433#q26]}
