@@ -1768,3 +1768,36 @@ said as meaningless, as at row 19. Locus-to-gene: XRCC4 0.85 (q476, q477), TMEM1
 RPS23 0.19. The set (`coloc-fe4f273ec43162aadef2040274173b4c.json`, q480) has no colocalisation of any kind (q481),
 so no rival meets an E1/E2 criterion (D24): effector E2, XRCC4, the model's call on a one-variant set (its features
 not read). For row 32.
+
+## Reading 2026-11-11, record
+
+> [q482] data.variant id 5_158393594_C_T referenceAllele C alternateAllele T
+
+> [q483] data.variant.credibleSets count 115
+
+> [q484] data.variant.credibleSets.rows[0] studyLocusId 05ca6e630be02b1364089c7e74c5a572 studyId GCST90624049 pValueMantissa 2.9830000400543213 pValueExponent -21 beta -0.0165470532670251 finemappingMethod PICS
+
+> [q485] data.variant.credibleSets.rows[0].study traitFromSource Frailty (Factor 3 - Multimorbidity) projectId GCST
+
+> [q486] data.variant.credibleSets.rows[0].locus.rows[15] posteriorProbability 0.025860334056678598
+
+> [q487] data.variant.credibleSets.rows[2] studyLocusId 0fb0f8ae928509457ea183ae7f2de7f2 studyId GCST90473522 pValueMantissa 4.302999973297119 pValueExponent -34 beta -0.0577575 finemappingMethod PICS
+
+> [q488] data.variant.credibleSets.rows[2].study traitFromSource ICD10 I10: Essential (primary) hypertension projectId GCST
+
+> [q489] data.variant.credibleSets.rows[2].locus.rows[15] posteriorProbability 0.02101027189424359
+
+> [q490] data.variant.credibleSets.rows[0].l2GPredictions.rows[0].target approvedSymbol EBF1
+
+> [q491] data.variant.credibleSets.rows[55].l2GPredictions.rows[0].target approvedSymbol CLINT1
+
+rs2149954 (`variant-sets-5_158393594_C_T.json` and its second page `variant-sets-p1-...`; C reference, T alternate,
+q482): 115 credible sets (q483). I read every set's trait: blood pressure, hypertension, antihypertensive and
+other blood-pressure medication, pulse and mean arterial pressure, heart rate, cardiovascular disease, coronary
+artery disease (MTAG), atrial fibrillation, hair pattern, birth weight, platelet count, haemoglobin, prolonged
+pregnancy, prostate hyperplasia, one T-cell expression QTL, and one frailty factor; none is lifespan, longevity or
+survival. The frailty set is Foote 2025's multimorbidity factor (q484, q485): T beta -0.0165, P 3e-21, the lead's PIP
+0.026 (q486), healthspan-class (D23). Essential hypertension (q487, q488): T beta -0.058, P 4e-34, PIP 0.021 (q489).
+The lead's PIP in the sets where it shows among the first 25 members is 0.007 to 0.098; the sets list 16 to 25
+members. Locus-to-gene names EBF1 at about 0.4 to 0.6 in most sets (q490) and CLINT1 in some pulse-pressure sets
+(0.93, q491). No lifespan-class set, so causal C4 and effector E4. For row 33.

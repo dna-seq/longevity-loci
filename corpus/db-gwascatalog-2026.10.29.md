@@ -706,3 +706,14 @@ return no record (totalElements 0). No other trait is recorded on the haplotype.
 rs138499810 (`associations-rs138499810.json`): one record, Chang 2022's healthy ageing (q209), T (q210), P 5e-9,
 "beta 1.15" with range 0.76 to 1.54 (q208), the only record (q211): the natural log of the paper's OR 3.158 and its CI (2.148 to 4.643), not
 a separate estimate. No other trait on the variant. For row 32.
+
+## Reading 2026-11-11, record
+
+> [q212] _embedded.associations[1] association_id 40556 risk_frequency 0.352 pvalue_description  pvalue_mantissa 2 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [1.06-1.74] or_per_copy_num 1.1 or_value 1.1 beta - p_value 2e-08 accession_id GCST002404 pubmed_id 24688116 first_author Deelen J ci_lower 1.06 ci_upper 1.74
+
+> [q213] page size 100 totalElements 2 totalPages 1 number 0
+
+rs2149954 (`associations-rs2149954.json`): two associations, both Deelen 2014 (q213): ≥85 (GCST002403, OR 1.07, P 4e-6)
+and ≥90 (GCST002404, OR 1.1, P 2e-8, q212). The Catalog's CI 1.06 to 1.74 disagrees with the paper's 1.06 to 1.14
+(pmid-24688116#q4); the paper is read. No other trait is recorded on this rsID; the blood-pressure results sit on
+proxies (Deelen's rs9313772 and rs11953630) and in Open Targets' sets. For row 33.

@@ -789,3 +789,20 @@ assumed, not shown. For row 25.
 rs694966 on GRCh37 (grch37-var-rs694966.json, read from Ensembl's GRCh37 server, grch37.rest.ensembl.org; its data
 release is that server's, which the key's release check, made against the main server, does not read): 5:29,427,172,
 G/A/C, the position Deelen 2019's summary statistics print as 5:29427172 (pmid-31413261#q76). For row 31.
+
+## Reading 2026-11-11, record
+
+> [q220] mappings[0] assembly_name GRCh38 seq_region_name 5 allele_string C/T strand 1 end 158393594 coord_system chromosome start 158393594 location 5:158393594-158393594 ancestral_allele T
+
+> [q221] populations[77] frequency 0.350894632206759 population 1000GENOMES:phase_3:EUR allele_count 353 allele T
+
+> [q222] populations[13] allele T frequency 0.3707 population gnomADg:nfe allele_count 25161
+
+> [q223] populations[72] allele C population 1000GENOMES:phase_3:EAS frequency 0.76984126984127 allele_count 776
+
+> [q224] most_severe_consequence intron_variant name rs2149954 MAF 0.334576
+
+rs2149954 (`variation-rs2149954.json`): GRCh38 5:158,393,594, C/T (q220); T 0.35 in 1000 Genomes Europeans (q221),
+0.37 in gnomAD non-Finnish Europeans (q222), 0.23 in East Asians (C 0.77, q223); an intron variant by Ensembl's most
+severe consequence (q224; Deelen's lincRNA, now LINC02227). Deelen's 157,753,180 is the hg18 position and LifeGen's and
+Zenin's 157,820,602 the GRCh37 one, both tied by the rsID on their lines. For row 33.
