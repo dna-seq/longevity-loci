@@ -29,8 +29,8 @@ verdict_reason: >-
   the same allele and direction. It does not lift the tier, as the anchor is still multivariate (D18.3). Broer 2015's
   P 1.85e-10 for rs2802292 (G, OR 1.17) is not a genome-wide GWAS result: it is a candidate look-up pooled with the
   published candidate-gene samples (10,574 cases against the GWAS's 6,036), so it holds the discovery and its
-  replications together, and Broer reports no new genome-wide association. Whether that pooled P, with AncestryDNA as
-  the independent replication, should anchor tier A is put to the lead; B meanwhile. Deelen 2019 favours G at the
+  replications together, and Broer reports no new genome-wide association. It is a candidate meta-analysis, not a
+  genome-wide discovery (Timmers 2020: never genome-wide in a scan), so it does not anchor A (D26.6). Deelen 2019 favours G at the
   90th percentile (OR 1.08, P 6.8e-5) and more at the 99th (OR 1.13, P 8.3e-5), but its 90th is the multivariate
   test's longevity input, and it shares many cohorts with Broer's CHARGE in its own words. The candidate-gene line
   runs from Willcox 2008 (men of Japanese ancestry in Honolulu, minor homozygotes against major, OR 2.75, P 9e-5)
@@ -39,11 +39,11 @@ verdict_reason: >-
   third of the discovery's effect, the "smaller effect sizes" Timmers notes for FOXO3. Those are candidate-gene
   results and the Figure 2 sample holds the multivariate test's inputs, so none is counted. FinnGen's death endpoint
   leans G's way and is flat (T β +0.0069, P 0.36); under APOE's factor its power is about 0.62, heterogeneity P
-  0.36, so no red flag. Healthspan is +, and mixed: at the lead G leans to a later end of healthspan in Zenin 2019
+  0.36, so no red flag. Healthspan is 0, because the evidence is mixed (D26.6): at the lead G leans to a later end of healthspan in Zenin 2019
   (P 0.060, one-sided 0.030, the open one-sided default), and Timmers 2020's healthspan column at rs1159806 gives P
   5e-3, both inputs of the same test; but Foote 2025's frailty factor 5 ("Poorer Cognition", P 4.3e-10) puts G's side
   on the frailer side (its set's lead rs6911407, r² 0.98; the sign Open Targets' harmonisation, the catalog printing no
-  allele). Whether that cognition factor should turn the healthspan cell is put to the lead. Lifespan +, exceptional
+  allele). Foote's factor is healthspan-class (D25.8) and genome-wide, so a + would tell a reader the opposite of it. Lifespan +, exceptional
   survival + (Deelen, above). Mechanism: ageing in general, because nothing shows the effect runs through one system.
   The lead sits in sets for body mass and weight, cognition and education, kidney function and menarche (Open
   Targets); rs6911407's A goes with lower fluid intelligence (P 7e-14), and Timmers 2020 says the protective variants
@@ -68,7 +68,7 @@ axes:
   mechanism: {value: general_ageing, cites: [pmid-32678081#q23, pmid-32678081#q27, db-opentargets-26.09#q580, db-opentargets-26.09#q581, db-gwascatalog-2026.10.29#q299, pmid-41837379#q2]}
   pleiotropy: {values: [broad, tradeoff], cites: [pmid-32678081#q23, pmid-32678081#q24, pmid-32678081#q27, db-opentargets-26.09#q580, db-opentargets-26.09#q581, db-gwascatalog-2026.10.29#q299]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
+  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "+",
             cites: [pmid-30729179#q65, pmid-30729179#q66, pmid-32678081#q20, db-opentargets-26.09#q586, pmid-40759756#q2, pmid-30642433#q221, pmid-31484785#q89, pmid-31413261#q106]}
   actionability: {label: descriptive, cites: [pmid-32678081#q24]}
   context: {values: [eur_only_evidence], cites: [pmid-32678081#q20, pmid-30642433#q221, pmid-31484785#q89, pmid-31413261#q106]}
@@ -96,9 +96,9 @@ variants:
           You carry two copies of a version of this DNA region that about 15 in 100 people of European ancestry
           carry twice. The region, on chromosome 6, lies within the FOXO3 gene, long studied in research on ageing;
           it is not settled which gene the effect runs through. In very large European studies that combined
-          healthspan, long life and reaching very old age, each copy of this version went with slightly healthier
-          ageing, parents of carriers lived a little longer, and carriers were a little more likely to reach the
-          oldest ages. The same region has been linked to longer life in older men of Japanese ancestry and in German
+          healthspan, long life and reaching very old age, each copy of this version leaned to the better side,
+          parents of carriers lived a little longer, and carriers were a little more likely to reach the oldest
+          ages. Studies of the years lived in good health alone disagree with each other. The same region has been linked to longer life in older men of Japanese ancestry and in German
           centenarians, and it was seen again in a separate group of people. It is a likely finding, not a settled
           one. A nearby marker on the same side has been tied to more age-related macular degeneration, an eye
           disease, and to slightly lower scores on thinking tests. The effect is small and it is a tendency, not
@@ -115,8 +115,8 @@ variants:
         conclusion: >-
           You carry two copies of the more common version of this DNA region (about 37 in 100 people of European
           ancestry carry it twice). In very large European studies that combined healthspan, long life and reaching
-          very old age, each copy of this version went with slightly less healthy ageing, and parents of carriers
-          lived a little less long. It is a likely finding, not a settled one. The effect is small and it is a
+          very old age, each copy of this version leaned to the worse side, and parents of carriers lived a little
+          less long; studies of the years lived in good health alone disagree with each other. It is a likely finding, not a settled one. The effect is small and it is a
           tendency, not destiny.
 studies:
   - rsid: rs2802292
