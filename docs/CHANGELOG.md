@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- `study_design: current_age_quantitative`, for a GWAS of participants' current age (Wright 2019's AncestryDNA arm): cross-sectional viability, confirmation only (§4.5).
 - A healthspan locus scores with a lifespan study at p < 0.05 on the same allele and direction beside it; with none it is tier C (D16).
 - A database release's record is cached and its quotes checked (RM3): `loci fetch-supp db-<database>-<release> …` takes Open Targets' GraphQL (`opentargets:<query>`), Ensembl's REST (pairwise LD among it) or a summary-statistics file, refuses a release other than the key's where the database states one, and caches a JSON answer one object a line.
 - A multivariate healthspan-lifespan test supports a tier A/B row on its allele, direction and P, having no single effect size (D15).

@@ -38,7 +38,8 @@ a v1 locus with no seed entry takes the next free id above the seed's. Fields:
   abstract could be read, `other_claim` the article does not make the claim cited for (the row goes to a
   decision), `licence_unclear`),
   `phenotype_class` (§4.5), `study_design` (`parental_lifespan_linear` beside `_cox` for a linear model of
-  parents' lifespan), `population` (never empty), `stat_significance`, and where known
+  parents' lifespan; `current_age_quantitative` for genotype regressed on participants' current age, a cross-sectional
+  viability design, §4.5's confirmation-only class), `population` (never empty), `stat_significance`, and where known
   `p_value` (as written), `p_value_num`, `effect_size` (with its `effect_measure`: `beta`, `HR`, `OR`; and
   `effect_unit`), `effect_allele`, `direction` (the effect allele's, as the study reports it), `statistical_test`, `curator` (who located the quote: a name or a model id; `ai`, `true` and the like are
   refused). A study's rsid is one of

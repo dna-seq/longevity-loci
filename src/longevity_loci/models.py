@@ -51,6 +51,7 @@ class StudyDesign(StrEnum):
     PERCENTILE_CC_P99 = "percentile_case_control_p99"
     CENTENARIAN_CC = "centenarian_case_control"
     AGE_THRESHOLD_CC = "age_threshold_case_control"  # cases above an age (90+, say), not a birth-cohort percentile
+    CURRENT_AGE_QUANTITATIVE = "current_age_quantitative"  # genotype regressed on participants' current age: cross-sectional viability (§4.5 VIABILITY_AF)
     MULTIVARIATE = "multivariate_healthspan_lifespan"
     HEALTHSPAN_COX = "healthspan_cox"
     CANDIDATE_GENE = "candidate_gene"

@@ -563,3 +563,13 @@ def test_a_multivariate_test_supports_without_an_effect_size(tree: Path) -> None
     assert [(w, "direction" in d) for w, d in rules()] == [("studies[1] rs429358", True)]
     _row(tree).write_text(text + bare.replace("    effect_allele: C\n", "    effect_allele: C\n    direction: risk\n", 1))
     assert [(w, "effect_size" in d) for w, d in rules()] == [("studies[1] rs429358", True)]
+
+
+@pytest.mark.parametrize("design", ["current_age_quantitative", "parental_lifespan_linear"])
+def test_study_designs_added_from_curation(tree: Path, design: str) -> None:
+    """Designs the curation met (Wright 2019's arms): a study may say them, and the row parses."""
+    text = _row(tree).read_text()
+    assert "study_design: percentile_case_control_p90" in text
+    _row(tree).write_text(text.replace("study_design: percentile_case_control_p90", f"study_design: {design}", 1))
+    found = check_rows(tree / "rows", tree / "corpus")
+    assert not [f for f in found if f.kind is Kind.MALFORMED]
