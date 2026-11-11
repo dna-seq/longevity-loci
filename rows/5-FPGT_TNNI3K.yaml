@@ -40,11 +40,11 @@ variants:
     gene: ""
     phenotype: FPGT/TNNI3K region, parental lifespan
     trait_efo_id: EFO_0007796
-    effect_allele: T
-    effect_size: -0.0692
+    effect_allele: C
+    effect_size: 0.0692
     effect_measure: beta
     stat_significance: significant
-    direction: risk
+    direction: protective
     genotypes:
       - genotype: T/T
         state: neutral
