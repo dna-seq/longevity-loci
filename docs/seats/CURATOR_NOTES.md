@@ -20,7 +20,7 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   compacting` to the lead, `watchdog.sh compact`, end the turn; the lead wakes the next. Stop at 80 % of the 7-day
   window or 95 % of the 5-hour window. After each tenth `done:`, re-measure the pacing and
   go on with the next ten, unless blocked or steered (the person, 2026-11-11, via the lead, 639316091: "After 10
-  adjust pacing and go next 10 and so on unless blocked or I steer"; this replaces the earlier pause after ten). Rows done in this run: 6 CELSR2 (1 of 10); the corrections of 71 (d44fd4a) and 67 done; the E3 gene rule at 57 and 80 next, then 38 HLA-DQA1 by PROGRESS.
+  adjust pacing and go next 10 and so on unless blocked or I steer"; this replaces the earlier pause after ten). Rows done in this run: 6 CELSR2 (1 of 10); the corrections of 71 (d44fd4a) and 67 (3dd792c) done, the E3 gene rule at 57 (8d27300) and 80 (728d78d); next 38 HLA-DQA1 by PROGRESS.
 - **Before the next locus: the lead's corrections to 71 and 67**, one commit per row, from its handout (kept at
   `~/.local/state/agent-seat-blueprints/handouts/session-44d9cb42-a3f8-47e0-b7ab-a8dbd8338890/delivered/20261110T234346Z-review-71-67.md`;
   read it whole). In short: B stands at both because a powered non-replication in an independent sample
@@ -53,7 +53,8 @@ The curator seat's working state, rewritten to the present before a reset (`docs
 - **The E3/E4 gene rule** (the advisor's read, settled by the requirements: line 65 "name a gene only at effector
   confidence E1/E2"; line 305 "A locus label goes in `phenotype` when the gene is E3/E4"): at E3/E4 `gene` is ""
   and the candidates go into verdict_reason. Tested: `gene: ""` passes `loci check rows`, and the module's
-  `variants.csv` has `gene` optional. Applies to 67 (done), 57 (CDKN2B) and 80 (CHRNA5/CHRNA3), each its own commit.
+  `variants.csv` has `gene` optional. Applied at 67, 57 (CDKN2B) and 80 (CHRNA5/CHRNA3), each its own commit. Side effect, told to the lead: the
+  `ungrained` check grains a study's quote on the rsid or the row's `gene`, so with `gene` empty only the rsid grains.
 - Format gap, for the lead: a `multivariate_healthspan_lifespan` study (Timmers 2020's MANOVA) has no effect size,
   and §6.3's check requires effect_size and effect_measure on every study supporting tier A/B, so 67 carries no
   multivariate study; its P 4e-10 is in the verdict prose only.
