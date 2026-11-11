@@ -146,3 +146,22 @@ From the curator's row 11 (LINC01875); the lead settled it under the person's st
    parental-lifespan or healthspan phenotypes; `MULTIVARIATE_AGEING` scores at B only, beside its co-occurring
    lifespan study (D16, D17.1).
 
+## D19 — an overlapping replication, and a stratum's genome-wide hit (2026-11-11)
+
+From the curator's 12 (KCNK3) and 13 (PRKD3), after the lead's adversarial read of 12; settled under the person's
+standing word.
+
+1. **A replication sharing a minor part of the discovery's sample is independent** when the shared part is small
+   and the papers measure the cross-study covariance as negligible. 12's Deelen 2019 holds the Rotterdam Study
+   (6.9 % of its 90th-percentile cases), which is also in LifeGen, and Timmers measured the covariance at about
+   0.01. A replication that contains most of the discovery sample, or one the papers do not separate, is not
+   independent. So 12 is A on §4.1's letter, and the row says the overlap.
+2. **A genome-wide hit in one stratum is a genome-wide study, read at the paper's own threshold** (D17.3). 13's
+   men-only P 3.2×10⁻⁸ at the paper's per-GWAS 5×10⁻⁸ stays B, as "a single study without independent
+   replication", with `sex_specific:m`. The verdict says the paper did not correct across its three GWAS, and that
+   the variant is at the frequency floor (0.1 %). Rejected: re-correcting the paper's threshold here, which D17.3
+   already refuses.
+3. `study_design: own_death_case_control` is added, for deceased against living in a biobank (FinnGen's Death
+   endpoint). A Finnish sample's `ancestry` is `EUR`, the 1000 Genomes superpopulation; `population` names the
+   Finns.
+

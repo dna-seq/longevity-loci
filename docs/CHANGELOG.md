@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- `study_design: own_death_case_control` (a biobank's deceased against its living); D19: a replication sharing a small, measured part of the discovery sample is independent, and a stratum's genome-wide hit is read at the paper's own threshold.
 - `check rows` lists a variant not harmonised to the lifespan-increasing allele as `unharmonised`; D17 settles what the second batch's reviews found (a co-occurring lifespan study is the locus's own signal, causal confidence from the claim's own credible sets, genome-wide at the paper's own P, the anchor study's trait id).
 - A curation dashboard in `#dashboards > longevity-loci curation` (the organisation's board channel, as genie keeps one): seed loci done, tiers, rows per hour and the weekly quota's burn as moving averages with a 3-hour half-life, and what is left before the 80% cap. `scripts/dashboard.py` writes it; the lead's watcher `dashboard` keeps it up to date every 10 minutes; the readings stay outside the repository.
 - `study_design: current_age_quantitative`, for a GWAS of participants' current age (Wright 2019's AncestryDNA arm): cross-sectional viability, confirmation only (§4.5).

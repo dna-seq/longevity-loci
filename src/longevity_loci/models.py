@@ -47,6 +47,7 @@ class StudyDesign(StrEnum):
     PARENTAL_LIFESPAN_COX = "parental_lifespan_cox"
     PARENTAL_LIFESPAN_LINEAR = "parental_lifespan_linear"  # parents' lifespan regressed linearly (Wright 2019), not Cox
     OWN_SURVIVAL_COX = "own_survival_cox"
+    OWN_DEATH_CC = "own_death_case_control"  # deceased against living in a biobank, a binary endpoint (FinnGen's Death)
     PERCENTILE_CC_P90 = "percentile_case_control_p90"
     PERCENTILE_CC_P99 = "percentile_case_control_p99"
     CENTENARIAN_CC = "centenarian_case_control"

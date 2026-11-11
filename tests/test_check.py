@@ -565,7 +565,7 @@ def test_a_multivariate_test_supports_without_an_effect_size(tree: Path) -> None
     assert [(w, "effect_size" in d) for w, d in rules()] == [("studies[1] rs429358", True)]
 
 
-@pytest.mark.parametrize("design", ["current_age_quantitative", "parental_lifespan_linear"])
+@pytest.mark.parametrize("design", ["current_age_quantitative", "parental_lifespan_linear", "own_death_case_control"])
 def test_study_designs_added_from_curation(tree: Path, design: str) -> None:
     """Designs the curation met (Wright 2019's arms): a study may say them, and the row parses."""
     text = _row(tree).read_text()
