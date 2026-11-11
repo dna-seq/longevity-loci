@@ -161,6 +161,8 @@ REQUIRED_NOMINAL = ("p_value", "p_value_num", "effect_allele")
 GENOME_WIDE = 5e-8
 SUGGESTIVE_P = 1e-5
 NOMINAL_P = 0.05  # §4.1: a replication counts at p < 0.05
+# R-TIER-2's confounding (cohort, batch) is the old-against-young design's, centenarian or age-threshold alike (D22)
+OLD_AGAINST_YOUNG = frozenset({StudyDesign.CENTENARIAN_CC, StudyDesign.AGE_THRESHOLD_CC})
 
 
 def check_rules(row: Row, path: Path) -> list[Finding]:
@@ -200,9 +202,9 @@ def check_rules(row: Row, path: Path) -> list[Finding]:
             rule("R-TIER-4", f"tier {tier.value} on MR-only results")
         if significant and all(s.sample_size == 1 for s in significant):
             rule("R-TIER-4", f"tier {tier.value} on n = 1 genomes")
-        if (significant and all(s.study_design is StudyDesign.CENTENARIAN_CC for s in significant)
+        if (significant and all(s.study_design in OLD_AGAINST_YOUNG for s in significant)
                 and len({s.note for s in significant}) < 2):
-            rule("R-TIER-2", f"tier {tier.value} on one unreplicated centenarian study; caps at C")
+            rule("R-TIER-2", f"tier {tier.value} on one unreplicated old-against-young (centenarian or age-threshold) case-control study; caps at C")
         for i, s in enumerate(row.studies):
             if s.stat_significance is StatSignificance.NOT_SIGNIFICANT:
                 continue

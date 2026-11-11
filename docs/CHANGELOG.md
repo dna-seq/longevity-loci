@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- R-TIER-2 in `check rows` holds an age-threshold case-control (90+ against younger) as it holds a centenarian one; D21 fixes the red-flag line (power 0.8, heterogeneity P below 0.05), D22 what replicates and when a cross-ancestry null is tier D.
 - A meta-analysis that prints no pooled effect supports a tier A/B row on its allele, direction and P (D20).
 - `loci fetch-supp` reads OpenDocument spreadsheets and texts and Word documents, knowing an office file by its contents, not its name (Springer serves Gurinovich 2021's .ods as .xlsx).
 - `study_design: own_death_case_control` (a biobank's deceased against its living); D19: a replication sharing a small, measured part of the discovery sample is independent, and a stratum's genome-wide hit is read at the paper's own threshold.

@@ -145,8 +145,8 @@ nothing to check.
     p < 0.05, so the §6.3 fields below are asked of it too. `not_significant` has no band (D11).
   - R-TIER-1: a row whose only supporting studies are PMID 22279548 is tier D, neutral on every genotype.
   - On a tier A or B row: a genome-wide significant study, not MR-only, not n = 1 genomes (R-TIER-4); not one
-    unreplicated `centenarian_case_control` study (R-TIER-2; a percentile case-control design is not read as
-    one); §6.3's `p_value`, `p_value_num`, `effect_size`, `effect_measure` and `effect_allele` on every supporting
+    unreplicated old-against-young case-control study, `centenarian_case_control` or
+    `age_threshold_case_control` (R-TIER-2, D22; a percentile case-control design is not read as one); §6.3's `p_value`, `p_value_num`, `effect_size`, `effect_measure` and `effect_allele` on every supporting
     study, except that a `nominal` one (a replication look-up) or a `multivariate_healthspan_lifespan` one (D15), or a `meta_analysis` that prints no pooled effect
     (D20), needs only `p_value`, `p_value_num`,
     `effect_allele` and a `direction` other than `unknown` (or an `effect_size`) (D13); and, once a variant lists three genotypes, exactly one neutral, or every one neutral when its

@@ -259,6 +259,7 @@ def _row(tree: Path) -> Path:
         ("    p_value_num: 1.3e-56\n", "", "studies[0] rs429358", "p_value_num"),
         ("phenotype_class: EXTREME_SURVIVAL_CC", "phenotype_class: MR", "R-TIER-4", "MR-only"),
         ("study_design: percentile_case_control_p90", "study_design: centenarian_case_control", "R-TIER-2", "centenarian"),
+        ("study_design: percentile_case_control_p90", "study_design: age_threshold_case_control", "R-TIER-2", "old-against-young"),
         ("    effect_allele: C\n", "", "studies[0] rs429358", "effect_allele"),
         ("stat_significance: significant\n    p_value: \"1.3 × 10−56\"\n    p_value_num: 1.3e-56",
          "stat_significance: nominal\n    p_value: \"0.2\"\n    p_value_num: 0.2", "studies[0] rs429358", "not in [1e-5, 0.05)"),

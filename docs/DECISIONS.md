@@ -184,3 +184,20 @@ from the discovery effect without the replicating sample (backed out of a pooled
 replication's standard error. The row says both numbers. 21 (power 0.6 to 0.7, heterogeneity P about 0.055) is no
 red flag and keeps A.
 
+## D22 — R-TIER-2's reach, and what replicates (2026-11-11)
+
+From the lead's adversarial read of rows 16 to 19, settled under the person's standing word.
+
+1. **R-TIER-2 covers every old-against-young case-control**, a centenarian design or an age threshold (90+ against
+   controls under 75, D11's `age_threshold_case_control`). Its stated reason, cohort and batch confounding, is the
+   design's, not the cut-off's. `check rows` holds both to it. A percentile case-control against a birth cohort
+   (Deelen's) stays outside it.
+2. **A replication is a study in a scoring class** (§4.5's first row: extreme survival, parental lifespan, own
+   survival, viability as confirmation). A healthspan or multivariate result replicates nothing on its own. It
+   scores only beside a lifespan study (D16), so it does not lift R-TIER-2's "unreplicated".
+3. **A cross-ancestry null is not "explicitly contradicted" (tier D) when the locus's proxies lean the discovery's
+   way.** It is D when the European look-up is flat, as for §4.1's own IL6 example (Timmers P 0.84). Row 18
+   (TMEM43) is C: a powered European null at Deelen, but its proxies lean to T in Timmers (P 0.05 to 0.14) and
+   Zenin's healthspan gives P 0.0035. Where a paper prints a P its own β and SE do not reproduce, the row reads the
+   printed P (D17.3) and says the discrepancy.
+
