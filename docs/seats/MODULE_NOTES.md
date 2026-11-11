@@ -61,7 +61,9 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
 - On waking: read `docs/format08_reference/` (just-dna-format 0.8's longevity reference example and the compiler's longevitymap v2 shape audit; the lead, 639310707). It notes Timmers 2019 contradicting itself on effect alleles (639310710), which bears on LPA and CELSR2.
 - For the projection, on waking: rows at effector E3 name no gene (`gene: ""`, 57, 67, 80; requirements §4.2/§6.2),
   and a `multivariate_healthspan_lifespan` study supports with allele, direction and P but no effect size (D15,
-  67's Timmers 2020). Check both land in 0.8's variants and studies tables as the format allows.
+  67's Timmers 2020). Check both land in 0.8's variants and studies tables as the format allows. Likewise the repo's own study
+  designs (`age_threshold_case_control`, D11; `current_age_quantitative`, 10 RABGAP1L) against the format's
+  study_design vocabulary.
 - Plugin pinned at v0.48.6 (the liaison, f69789a; toolchain unchanged, format 0.7.1): `validate_module` returns
   `warnings_summary` and `carried`; the polygon's 409 is named as the instance's format skew; the GWAS fix
   (RM428) is on the compiler's main, unreleased. The new session after waking loads the new pin.
