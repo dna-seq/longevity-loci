@@ -396,3 +396,30 @@ From the curator's rows 40 to 47 and the D25.13 sweep; the lead settled them und
    Zenin toward G). The curator's (b), row 18's shape, rejected: 18's discovery is not in doubt, 48's is. (c)
    rejected as the reason: Deelen 2019's 90th is independent of CLHLS, and the D does not rest on it. Genotypes
    neutral, no trade-off.
+
+## D27 — rows 48 to 52: an arm against its own pool, the mean factor's direction, a Genomic SEM factor (2026-11-11)
+
+From the curator's rows 48 to 52; the lead settled them under the person's standing word.
+
+1. **An arm inside a pooled P contradicts it no more than it replicates it (D25.9's mirror), but its heterogeneity is
+   the discovery's own.** 49's Liu dataset 2 (β −0.097 against dataset 1's 0.370, heterogeneity P 6.7e-5) is not an
+   independent sample, so no D rests on it; it is recorded as heterogeneity inside the discovery, which bars A by
+   §4.1's last criterion on its own. 49's D rests on Deelen's 99th and Timmers (D21, D25.1). The curator's default.
+2. **The mean factor divides.** Timmers' Figure 4 sheet defines Alpha as calibrated longevity β over lifespan β, so a
+   longevity log OR carried to the parental scale is divided by 0.4175. 48 and 33 multiplied and are corrected;
+   48's flag holds. At 33 the flagging test is Timmers itself, which also replicates (one-sided 0.017): a smaller
+   effect replicating, §4.1's B, no `replication_failed` (D25.13). 31 and 45 already divided.
+3. **A Genomic SEM factor is multivariate, whatever its traits.** Foote 2025's frailty factors are latent factors of
+   several traits, which its own deposit calls multivariate: `MULTIVARIATE_AGEING`, scoring at B only beside a
+   co-occurring lifespan study (D18.3), as mvAge. 51 is B (the curator's (b)); ABO, IGF2R, POM121C, GBX2/ASB18 and
+   HP are read the same way. (a), A on Foote as healthspan-class, rejected: D25.8 made a frailty *index* healthspan,
+   not a factor modelled out of other traits; (c), C, rejected: R-TIER-4 is about n = 1 genomes, and D18.3 already
+   scores a multivariate hit at B. 43's Foote entry takes the same class; D26.6's healthspan 0 there stands on the
+   conflict of directions.
+4. **A cell's `+` is set aside only by a genome-wide opposite (D26.6).** 50's lifespan stays `+` (Timmers 0.0016),
+   FinnGen's nominal opposite (P 0.035, power 0.50) named. 48's defaults stand (Deelen's 90th a nominal entry,
+   exceptional survival 0, healthspan 0, E3 by the letter). 51's trade-off (lumbar disc herniation) makes it
+   descriptive (D18.2).
+5. **Triglycerides have no `act_test` in §4.2: 52 is descriptive.** The curator's (a). Adding `act_test:tg` changes
+   §4.2's vocabulary, which is the design's, not the curation's; it waits for a design pass. (c), stretching
+   `act_test:ldl`, rejected: rs268 barely moves LDL.
