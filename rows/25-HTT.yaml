@@ -28,7 +28,7 @@ verdict_reason: >-
   red flag (D21). Deelen's 90th percentile leans the right way (z 1.31) and does not pass; under both of
   Timmers' calibrations (D25.3) it is no red flag. By the APOE factor (Deelen's ε4 log OR over Timmers' ε4 β, 4.84)
   the expected log OR is 0.111, power about 1.00 and heterogeneity P 0.0025, a flag; by the loci's mean factor (0.42
-  of that) power is 0.74 and heterogeneity P 0.36, none. APOE's effect grows with age and overstates what this locus
+  of that) power is 0.74 and heterogeneity P 0.37, none. APOE's effect grows with age and overstates what this locus
   should show at the oldest ages. Deelen's cohorts overlap LifeGen's in at least the Rotterdam Study (79 of the
   3,484 cases at the 99th percentile; D19.1); other overlap is unknown, and whether LifeGen holds a Finnish cohort is
   unknown too (Joshi 2017, cached, names none). Park 2025's own-survival GWAS of UK Biobank gives P 0.02 at the lead, with no direction printed, in the
@@ -186,7 +186,7 @@ studies:
     effect_unit: odds ratio of reaching the 90th percentile, per T allele
     effect_allele: T
     direction: protective
-    statistical_test: "Look-up of the lead in Supplementary Data 1 (q51); logistic regression, fixed-effect meta-analysis; I² 14.2, heterogeneity P 0.29; z 1.31 from the printed P. Calibrated (D25.3): APOE factor 4.84 (log 0.60 per ε4, pmid-31413261#q82, over Timmers' rs429358 β 0.1056, pmid-30642433#q90) gives an expected log OR 0.111 per T from the lead's β 0.0230 (SE 0.0039, pmid-30642433#q67), power about 1.00, heterogeneity P 0.0025; the loci's mean factor 0.42 (pmid-30642433#q92) gives 0.046, power 0.74, heterogeneity P 0.36 (0.42 counting the mean's own SE). A flag under APOE only, so no flag. Supplementary Data 1's title says 'versus dead controls' for the 90th, its header and this n say all controls (q84)"
+    statistical_test: "Look-up of the lead in Supplementary Data 1 (q51); logistic regression, fixed-effect meta-analysis; I² 14.2, heterogeneity P 0.29; z 1.31 from the printed P. Calibrated (D25.3): APOE factor 4.84 (log 0.60 per ε4, pmid-31413261#q82, over Timmers' rs429358 β 0.1056, pmid-30642433#q90) gives an expected log OR 0.111 per T from the lead's β 0.0230 (SE 0.0039, pmid-30642433#q67), power about 1.00, heterogeneity P 0.0025; the loci's mean factor 0.42 (pmid-30642433#q92) gives 0.046, power 0.74, heterogeneity P 0.37 (0.42 counting the mean's own SE). A flag under APOE only, so no flag. Supplementary Data 1's title says 'versus dead controls' for the 90th, its header and this n say all controls (q84)"
 
     curator: claude-opus-5-5
   - rsid: rs61348208
