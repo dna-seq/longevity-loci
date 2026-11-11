@@ -201,3 +201,11 @@ From the lead's adversarial read of rows 16 to 19, settled under the person's st
    Zenin's healthspan gives P 0.0035. Where a paper prints a P its own β and SE do not reproduce, the row reads the
    printed P (D17.3) and says the discrepancy.
 
+## D23 — a frailty index is healthspan-class; viability confirms, never replicates (2026-11-11)
+
+From the curator's 24 (NLGN1): Atkins 2021's frailty index is genome-wide at a proxy of the lead. A frailty index
+measures accumulated deficits, which the requirements' outcome profile files under healthspan, so it is
+`HEALTHSPAN`-class (§4.5): it can anchor §4.1's first criterion, and it scores only beside a lifespan study (D16).
+A viability result (`VIABILITY_AF`, a GWAS of current age) is "confirmation only" in §4.5. It does not replicate,
+so it cannot carry a row to A. 24 is B: the curator's option (a), recommended.
+
