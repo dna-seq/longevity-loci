@@ -15,8 +15,9 @@ verdict_reason: >-
   percentiles P 0.40 and 0.58 (its supplement, read, not quoted; CHRNA3/5 is absent from its list of nominal
   parental-lifespan loci). Only both parents reaching the top 10% of survival is significant, in UK Biobank (Pilling
   2017, P 4.0e-9), so exceptional survival is 0. No smoking-stratified estimate was read, so how much of the
-  effect remains in people who never smoked is not known here. Pilling 2017's second signal in the region (rs578776)
-  is not scored. Healthspan: no estimate read (Zenin 2019's GWAS has no credible set here, and its look-up of
+  effect remains in people who never smoked is not known here. No gene is named (requirements §4.2, §6.2: a gene
+  only at E1/E2): locus-to-gene is below 0.5 for every gene (CHRNA5 0.29, PSMA4 0.13, CHRNA3 0.08).
+  Pilling 2017's second signal in the region (rs578776) is not scored. Healthspan: no estimate read (Zenin 2019's GWAS has no credible set here, and its look-up of
   lifespan variants does not hold this lead), so untested, not null. The seed's other rsIDs: rs931794, rs9788721,
   rs10519203 (r² 0.95), rs1317286 and rs16969968 (CHRNA5 D398N, r² 0.87) are in the lead's credible set, the same
   signal; rs578776 is Pilling's second signal; rs11852372, rs2036527, rs4887072 and rs11633223 were not placed.
@@ -37,7 +38,7 @@ flags:
   - {token: "mediator:EFO_0006525", cites: [pmid-29030599#q8]}  # cigarettes per day measurement
 variants:
   - rsid: rs8042849
-    gene: CHRNA5/CHRNA3
+    gene: ""
     phenotype: Smoking quantity, lung cancer and COPD
     trait_efo_id: EFO_0007796
     effect_allele: T
