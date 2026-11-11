@@ -2,14 +2,15 @@
 # synonym of rs371933919 (db-ensembl-116#q311), the id this row carries: a one-base C insertion in a run of eight Cs
 # in an AP5Z1 intron, GRCh38 7:4,787,884-4,787,891, GRCh37 4,827,515-4,827,522, written T>TC at 4,787,883 (GRCh38)
 # or 4,827,514 (GRCh37). The insertion is 0.028 in gnomAD's non-Finnish Europeans, 0.09 in its African genomes, 0.009
-# in Finns. Entered by the GWAS track from Pilling 2016's parental extreme-longevity scan (GCST003395), tier vote B.
+# in Finns. Entered by track B (common-variant GWAS) from Pilling 2016's parental extreme-longevity scan (GCST003395), tier vote B.
 # Deelen's files lack the insertion; its proxy rs79109928 (r² 0.943 in UK Biobank, Pilling's own) carries the
 # look-ups and appears only in the notes and the studies' proxy_rsid.
 locus_id: 47
 locus_name: AP5Z1
 verdict: kept
 verdict_reason: >-
-  Tier B, the seed's, kept and capped there by two lifespan look-ups that lean against it. Pilling 2016 ran BOLT-LMM
+  Tier B, the seed's, kept. A is out on the discovery's size alone (below); two lifespan look-ups that lean against
+  it set replication_failed, which would cap the row at B in any case. Pilling 2016 ran BOLT-LMM
   on 42,273 'white' British UK Biobank participants aged 55 to 70, 1,339 of them with a parent in the top 1 % of age
   at death (mothers 98 or older, fathers 95 or older). The insertion's TC allele raised the chance of a long-lived
   parent by 0.0158 per copy (SE 0.0029, P 3.4e-8) from a 3.2 % baseline: carried by 6.3 % of cases and 4.39 % of
@@ -28,8 +29,10 @@ verdict_reason: >-
   APOE line gives a factor of about 46 to LifeGen's scale (0.1056 over 0.0023), and that line is itself only P 0.053.
   At that factor both look-ups are red flags (power 1.00, heterogeneity P about 3e-8). The loci's mean factor (D25.3)
   is defined against Deelen's 90th percentile, not this phenotype, so it is not at hand. The flag holds at any factor
-  of 2.13 or more for LifeGen and 6.2 or more for FinnGen, a twentieth and a seventh of APOE's. So
-  replication_failed, as at row 31; the cap is B. If the effect is real, it seems confined to the oldest ages:
+  of 2.13 or more for LifeGen and 6.2 or more for FinnGen, a twentieth and a seventh of APOE's; at the APOE line's
+  upper 95 % bound (0.0047) the factor is still about 23. So replication_failed, as at row 31; whether a flag
+  resting on one calibration, with no mean factor for this phenotype, should set the token (D25.3 asks both) is put
+  to the lead, flagged by default. If the effect is real, it seems confined to the oldest ages:
   the 99th percentile shows it, the 90th barely, and parental lifespan not at all. Zenin 2019's healthspan is null
   at the proxy (P 0.93). Lifespan is filed 0, healthspan 0, exceptional survival + on Pilling and Deelen's 99th.
   Age of action is UNKNOWN by default: the extreme-only pattern fits a late effect, but both of its contrasts are
@@ -39,11 +42,12 @@ verdict_reason: >-
   eur_only_evidence. Every one of Open Targets' sixteen credible sets holding the insertion is a molecular QTL, for
   ENSG00000242802's transcripts, exons and splice junctions; it leads four of them (a blood transcript QTL at PIP
   0.32). No GWAS set holds it, so causal C4 and effector E4, and no gene is named (D24), though the insertion lies in
-  AP5Z1. Mechanism general ageing: the GWAS Catalog records no other trait. Descriptive. The protection is a
+  AP5Z1; the proxy rs79109928's twenty-one sets are QTLs too. Mechanism general ageing: the GWAS Catalog records no
+  other trait under the old id, and nothing under the surviving id or the proxy. Descriptive. The protection is a
   presence: the minor TC goes with long-lived parents.
 axes:
   tier: {value: B, cites: [pmid-27015805#q1, pmid-27015805#q2, pmid-27015805#q3, pmid-27015805#q4, pmid-27015805#q5, pmid-27015805#q7, pmid-27015805#q8, pmid-27015805#q9, pmid-27015805#q10, pmid-27015805#q11, pmid-27015805#q12, pmid-27015805#q13, pmid-27015805#q14, pmid-27015805#q15, pmid-27015805#q17, pmid-27015805#q18, db-gwascatalog-2026.10.29#q314, db-gwascatalog-2026.10.29#q317, pmid-31413261#q2, pmid-31413261#q117, pmid-31413261#q118, pmid-31413261#q119, pmid-31413261#q120, pmid-30642433#q90, pmid-30642433#q228, pmid-30642433#q229, db-finngen-r11#q4, db-finngen-r11#q22, db-ensembl-116#q311, db-ensembl-116#q312, db-ensembl-116#q313, db-ensembl-116#q314]}
-  mechanism: {value: general_ageing, cites: [db-gwascatalog-2026.10.29#q316, db-opentargets-26.09#q605]}
+  mechanism: {value: general_ageing, cites: [db-gwascatalog-2026.10.29#q316, db-gwascatalog-2026.10.29#q318, db-opentargets-26.09#q605, db-opentargets-26.09#q608]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "+",
@@ -53,7 +57,7 @@ axes:
 flags:
   - {token: "PROTECT:PRESENCE", cites: [pmid-27015805#q10, db-ensembl-116#q315]}
   - {token: replication_failed, cites: [pmid-30642433#q228, db-finngen-r11#q22, pmid-27015805#q17, pmid-30642433#q90]}
-  - {token: "causal:C4", cites: [db-opentargets-26.09#q605, db-opentargets-26.09#q606]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q605, db-opentargets-26.09#q606, db-opentargets-26.09#q607, db-opentargets-26.09#q608]}
   - {token: "effector:E4", cites: [db-opentargets-26.09#q605]}
 variants:
   - rsid: rs371933919

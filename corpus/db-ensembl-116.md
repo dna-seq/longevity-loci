@@ -1144,5 +1144,5 @@ record, q311, q312): an insertion of one C in a run of eight, GRCh38 7:4,787,884
 insertion, as Pilling (pmid-27015805#q13), FinnGen (db-finngen-r11#q22) and Open Targets
 (db-opentargets-26.09#q604) write it. The insertion (nine Cs) is 0.028 in gnomAD's non-Finnish Europeans (q315),
 0.030 in 1000 Genomes Europeans (q316), 0.090 in gnomAD's African genomes (q317), 0.0006 in East Asians (q318) and
-0.009 in Finns (q319). The record's other synonyms (HGVS names of another gene's coding change) are dbSNP's merge
-residue, not read. Its most severe consequence is intronic (q312). For row 47.
+0.009 in Finns (q319). The record's other synonyms include HGVS names (NM_002117 c.662A>G and the like) that this
+reading does not explain; they are not read or used. Its most severe consequence is intronic (q312). For row 47.

@@ -1080,3 +1080,8 @@ extreme longevity (95 years and older)", P 3e-8, β 0.01577 "unit decrease" with
 Supplementary Table 2's β per T (pmid-27015805#q13), its sign folded into the unit. The study record
 (`study-GCST003395.json`): 1,339 British cases and 40,934 controls, no replication sample (q317). No other trait is
 recorded for the variant. For row 47.
+
+> [q318] page size 100 totalElements 0 totalPages 0 number 0
+
+The same query under the surviving id rs371933919 (`assoc-rs371933919.json`) and under Pilling's proxy rs79109928
+(`assoc-rs79109928.json`) each returns this line: no association under either. For row 47.

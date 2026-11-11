@@ -2203,3 +2203,11 @@ molecular QTL (ROSMAP, TwinsUK, GTEx v10, BLUEPRINT, Lepik 2017: transcript, exo
 ENSG00000242802, at nSamples 167 to 724). The insertion leads four of them, the largest a blood transcript QTL at
 PIP 0.32 (q606). No GWAS set, so none of lifespan, longevity, healthspan or survival: causal and effector confidence
 are C4 and E4, no gene named (D24). For row 47.
+
+> [q607] data.variant id 7_4786560_G_A referenceAllele G alternateAllele A
+
+> [q608] data.variant.credibleSets count 21
+
+Pilling's proxy rs79109928 (`variant-7_4786560_G_A-all.json`): twenty-one credible sets (q608), again every one a
+molecular QTL of ENSG00000242802's expression, transcripts and splicing (ROSMAP, GTEx v10, TwinsUK, BLUEPRINT,
+OTAR3087_MAGE, Lepik 2017). No GWAS set holds the proxy either. For row 47.
