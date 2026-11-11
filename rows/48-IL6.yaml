@@ -18,8 +18,8 @@ verdict_reason: >-
   no later look is weighed as replicating it. The larger independent looks mostly lean the other way or are flat.
   Timmers 2019 carried Zeng's effect to the parental scale with the APOE calibration (A +0.0716, SE 0.0119) and found
   A at −0.0074 (SE 0.0076), one-sided P 0.84; that is a D21 red flag under both of D25.3's calibrations (APOE's
-  factor: power about 1.00, heterogeneity P 2e-8; the loci's mean factor 0.4175: expected 0.030, power 0.99,
-  heterogeneity P 1.0e-3, derived), so `replication_failed`. Zeng's own Supplementary Table 3 puts the EU longevity
+  factor: power about 1.00, heterogeneity P 2e-8; the loci's mean factor 0.4175: expected 0.171, power 0.97,
+  heterogeneity P 2.8e-4, derived), so `replication_failed`. Zeng's own Supplementary Table 3 puts the EU longevity
   consortium at P 0.90 with G more frequent among the long-lived, and NECS at OR 0.88, P 0.25. FinnGen's death
   endpoint has G with fewer deaths (P 0.23), and Zenin 2019's healthspan G with a later end (P 0.081 raw, 0.090
   after its genomic control). One look leans Zeng's way: Deelen 2019's European 90th percentile, A OR about 1.08, P
@@ -158,7 +158,7 @@ studies:
     effect_unit: log hazard protection per A allele in self (positive = longer life)
     effect_allele: A
     direction: risk
-    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890, q231), direction -+ (UK Biobank, LifeGen), info 0.99. Timmers' own replication of Zeng (Figure 2 source data, q232): expected A +0.0716 (SE 0.0119) by the APOE calibration, observed −0.0074, one-sided P 0.84 (the sheet's A frequency 0.074 is G's). D21 under D25.3 (derived): APOE's factor power about 1.00, heterogeneity P 2e-8; the mean factor 0.4175 (q92), expected 0.0299 (SE 0.0085 with the factor's SE), power 0.99, heterogeneity P 1.0e-3: a red flag under both"
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890, q231), direction -+ (UK Biobank, LifeGen), info 0.99. Timmers' own replication of Zeng (Figure 2 source data, q232): expected A +0.0716 (SE 0.0119) by the APOE calibration, observed −0.0074, one-sided P 0.84 (the sheet's A frequency 0.074 is G's). D21 under D25.3 (derived): APOE's factor power about 1.00, heterogeneity P 2e-8; the mean factor 0.4175 (q92), expected 0.0716 / 0.4175 = 0.171 (SE 0.049 with the factor's SE), power 0.97, heterogeneity P 2.8e-4: a red flag under both"
     curator: claude-opus-5-5
   - rsid: rs2069837
     note: pmid-30729179
