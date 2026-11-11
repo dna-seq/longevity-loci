@@ -64,16 +64,17 @@ variants:
         state: risk
         conclusion: >-
           You carry one copy of a rare version of this DNA position (about 1 in 300 people of European ancestry
-          do). In one large British study, men with this version tended to die somewhat earlier; it was not seen in
-          women, and a Finnish study did not confirm it. It is a possible finding, not a settled one: it rests on a
-          single study and has not been confirmed in a separate group of people. It is a tendency, not destiny.
+          do). In one large British study, men with this version tended to die somewhat earlier; what it means for
+          women is not known, and a Finnish study did not confirm it. It is a likely finding, not a settled one: it
+          rests on a single study and has not been confirmed in a separate group of people. It is a tendency, not
+          destiny.
       - genotype: A/A
         state: risk
         conclusion: >-
           You carry two copies of a rare version of this DNA position. This is extremely uncommon (a few people in a
-          million), and no study has looked at people with two copies. In one large British study, men with one copy
-          tended to die somewhat earlier; it was not seen in women, and a Finnish study did not confirm it. What two
-          copies mean is not known. It is a tendency, not destiny.
+          million), too rare to have been studied on its own. In one large British study, men with one copy tended
+          to die somewhat earlier; what it means for women is not known, and a Finnish study did not confirm it.
+          What two copies mean is not known. It is a tendency, not destiny.
 studies:
   - rsid: rs577106756
     note: pmid-40021682
@@ -130,6 +131,6 @@ studies:
     effect_measure: beta
     effect_unit: log hazard of the end of healthspan per A allele (positive = earlier)
     effect_allele: A
-    direction: unknown
+    direction: protective
     statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), -log10 P 0.0149; SE 0.070 at A frequency 0.0013, an uninformative test; UK Biobank, overlapping Park 2025's people"
     curator: claude-opus-5-5
