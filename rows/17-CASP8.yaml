@@ -146,15 +146,16 @@ studies:
     study_design: parental_lifespan_cox
     population: European (UK Biobank and the LifeGen cohorts)
     ancestry: [EUR]
-    stat_significance: not_significant
+    stat_significance: nominal
     p_value: "0.065951954"
     p_value_num: 0.065951954
+    p_one_sided: 0.033
     effect_size: -0.00799314
     effect_measure: beta
     effect_unit: log hazard protection per T allele in self (negative = shorter life)
     effect_allele: T
     direction: risk
-    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), direction -- in UK Biobank and LifeGen; the same side as healthspan; two-sided P printed, one-sided 0.033 (derived, D25.13), so D16's co-occurring lifespan study; the UK Biobank part overlaps Zenin's sample"
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), direction -- in UK Biobank and LifeGen; the same side as healthspan; two-sided P printed, one-sided 0.033 (derived, D25.13; p_one_sided, nominal under D26.13), so D16's co-occurring lifespan study; the UK Biobank part overlaps Zenin's sample"
     curator: claude-opus-5-5
   - rsid: rs10197246
     note: pmid-31413261
