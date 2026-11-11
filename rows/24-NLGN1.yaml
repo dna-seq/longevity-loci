@@ -16,12 +16,13 @@ verdict_reason: >-
   longer, P 6.1e-4, both UK Biobank and LifeGen leaning the same way; it is an input of mvAge, not a replication.
   Rosoff calls the locus known through frailty and lifespan. Frailty is genome-wide here on its own: Atkins 2021's
   frailty index (n 175,226, UK Biobank and TwinGene) at rs583514 (r² 0.86), T less frail, P 2e-9, T riding with the
-  lead's A (derived from frequencies), and Rosoff's look-up at the lead gives P 3.2e-9. Whether that opens tier A is
-  put to the lead, B meanwhile: if a frailty index is a HEALTHSPAN-class phenotype (the outcome profile counts
-  frailty there), §4.1 asks for an independent replication in a scoring class (D22.2). Zenin 2019's healthspan (A
+  lead's A (derived from frequencies), and Rosoff's look-up at the lead gives P 3.2e-9. It does not open tier A
+  (D23, the lead's ruling on this row): a frailty index is HEALTHSPAN-class (the outcome profile counts frailty
+  there), so it can anchor §4.1's first criterion, and A then needs an independent replication in a scoring class
+  (D22.2). Zenin 2019's healthspan (A
   delays its end, P 0.030) replicates nothing on its own and shares UK Biobank; the only candidate is Wright's
   viability result below, outside UK Biobank and TwinGene, nominal on the same allele but at a proxy whose strand
-  and phase are derived, and §4.5 takes viability as confirmation only. The lifespan side of Rosoff's label is not identified: Timmers'
+  and phase are derived, and viability confirms, never replicates (§4.5, D23). The lifespan side of Rosoff's label is not identified: Timmers'
   rows within 0.5 Mb hold nothing below P 5.2e-4. Wright 2019's AncestryDNA customers, a sample outside mvAge's
   inputs, lean the same way: at rs247975 (r² 0.93, its T the lead's A, derived) A is commoner among older customers,
   P 1.0e-5 after genomic control (raw 2.3e-7), nominal, a viability confirmation; the locus is in neither of Wright's
