@@ -420,3 +420,8 @@ nearly (r² 0.996). Fetched to read Timmers' direction strings across the block 
 
 rs7560328, 40 kb from the CASP8 lead rs10197246, is r² 0.57, D′ 0.94 with it in 1000 Genomes EUR (the 500 kb window
 already cached for row 17). For row 17's Deelen cluster (pmid-31413261#q46).
+
+> [q109] [25] population_name 1000GENOMES:phase_3:EUR variation2 rs2607770 variation1 rs1043943 d_prime 1.000000 r2 1.000000
+
+rs2607770 is in perfect LD with the TMEM43 lead rs1043943 in 1000 Genomes EUR (r² 1.0), one of 22 variants at r² ≥ 0.8
+in the cached 500 kb window. For row 18's proxies in Timmers 2019 (pmid-30642433#q63, q64).

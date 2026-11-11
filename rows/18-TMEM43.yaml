@@ -8,21 +8,24 @@ locus_name: TMEM43
 verdict: re-tiered
 verdict_reason: >-
   Tier C, down from the seed's B: an unreplicated case-control comparison of the very old against younger controls,
-  which R-TIER-2 caps at C. Liu 2021 compared Chinese of the CLHLS survey aged 90 or more (4,662) with controls under
+  which R-TIER-2 caps at C (D22.1: it holds dataset 1's age threshold, 90 or more against under 75, as it holds a
+  centenarian design). Liu 2021 compared Chinese of the CLHLS survey aged 90 or more (4,662) with controls under
   75 (3,828) in dataset 1, and centenarians (1,105) with controls under 65 (1,450) in dataset 2, the paper's earlier
   GWAS less its overlap with dataset 1. T, the minor allele, goes with reaching old age: dataset 1 β 0.165 on the log
   odds (P 4.2e-7), dataset 2 β 0.081 (printed P 0.016), meta-analysis β 0.146, P 3.59e-8, the paper's genome-wide
   call (D17.3). Dataset 2 is inside that meta-analysis, so it is part of the genome-wide result, not a replication of
   it; and dataset 1's custom chip took its first component, 11,893 SNPs, from dataset 2's own GWAS (whether the lead
   entered that way is not read). Table 1's row does not agree with itself: its β and SE give P about 0.054 for
-  dataset 2 and about 5e-7 for the meta-analysis, and Table 2's sex-specific metas pool to β 0.147, SE 0.029, P about
-  3.5e-7, so the genome-wide call rests on the printed P alone; at about 4e-7 it would be suggestive, and C holds
+  dataset 2 and about 4.8e-7 for the meta-analysis (0.146 / 0.029), and Table 2's sex-specific metas pool to β 0.147, SE 0.029, P about
+  3.5e-7, so the genome-wide call rests on the printed P alone, which the row reads (D17.3); at about 4e-7 it would be suggestive, and C holds
   either way. Outside China it does not replicate, and the null is
   informative: the variant is as common in Europeans (T 0.40) and tags XPC's missense variant as well, yet Deelen
   2019's 90th percentile gives β +0.007 (P 0.73; its confidence interval excludes both Liu's 0.146 and dataset 2's
-  0.081) and the 99th +0.005 (P 0.88). Timmers 2019's parental lifespan leans to T at P 0.057, short of 0.05, the
+  0.081) and the 99th +0.005 (P 0.88): a powered null (Liu's β at Deelen's SE expects z about 7.4). It is not tier
+  D (D22.3), since the European look-up is not flat as §4.1's IL6 example is: all 17 of the lead's 22 proxies at r²
+  ≥ 0.8 that Timmers 2019 holds lean to T (P 0.050 to 0.14), and Zenin's healthspan favours T at P 0.0035. Timmers 2019's parental lifespan leans to T at P 0.057, short of 0.05, the
   paper's own look-up saying the same; Zenin 2019's healthspan favours T at P 0.0035, nominal, in the same UK
-  Biobank. Neither lifts the cap: the same-class test is flat. Lifespan is filed 0; healthspan +, nominal;
+  Biobank. Neither lifts the cap: Timmers misses 0.05, and Zenin's healthspan replicates nothing on its own (D22.2). Lifespan is filed 0; healthspan +, nominal;
   exceptional survival + in Chinese only. The context is East Asian evidence (R-ANC-4). Liu's own survival analysis
   of dataset 1 found nothing genome-wide beyond BRAF and BMPER; its value here (Table S16) is not read. Mechanism
   general ageing: the paper points to XPC, a nucleotide-excision-repair gene, and Parkinson's disease at P 0.045 is one uncorrected
@@ -30,10 +33,11 @@ verdict_reason: >-
   holds the lead in Open Targets (its 5 GWAS sets are arm impedance, hypertension and a repeat count, each led by
   another variant), so there is no set for fine-mapping, L2G or colocalisation. XPC is the likely effector in
   prose only: the lead tags XPC's missense variant and sits in 321 of XPC's expression and splicing QTL sets,
-  leading 43, and in none of TMEM43's. The protection is a presence: the minor T goes with longevity. Age of action
-  is unknown.
+  leading 43, and in none of TMEM43's. The protection is a presence: the minor T goes with longevity. The genotypes'
+  reference population is East Asian, the discovery's: C/C is the most common genotype there (about 46 in 100), the
+  reference; in Europeans C/T is the most common (48 in 100) and C/C occurs in 36. Age of action is unknown.
 axes:
-  tier: {value: C, cites: [pmid-33657282#q1, pmid-33657282#q2, pmid-33657282#q3, pmid-33657282#q9, pmid-33657282#q12, pmid-33657282#q4, pmid-33657282#q5, pmid-33657282#q6, pmid-33657282#q8, pmid-30642433#q56, pmid-30729179#q36, pmid-31413261#q37, pmid-31413261#q38, db-ensembl-116#q76, db-ensembl-116#q77, db-ensembl-116#q81, db-ensembl-116#q82]}
+  tier: {value: C, cites: [pmid-33657282#q1, pmid-33657282#q2, pmid-33657282#q3, pmid-33657282#q9, pmid-33657282#q12, pmid-33657282#q4, pmid-33657282#q5, pmid-33657282#q6, pmid-33657282#q8, pmid-30642433#q56, pmid-30729179#q36, pmid-31413261#q37, pmid-31413261#q38, pmid-30642433#q63, pmid-30642433#q64, db-ensembl-116#q109, db-ensembl-116#q76, db-ensembl-116#q77, db-ensembl-116#q81, db-ensembl-116#q82]}
   mechanism: {value: general_ageing, cites: [pmid-33657282#q7, pmid-33657282#q11, pmid-33657282#q13]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
