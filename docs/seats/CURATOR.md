@@ -42,7 +42,8 @@ cites, and kept, re-tiered or dropped on what they show.
    neeed for clear picture"; the pilot found the decisive replication in a supplement at four of five loci).
 3. Write the row: the axes, the tier with the studies that set it, the reading-depth of each.
 4. Commit the row and its notes together; tell the module seat in one line when a locus's tier moved.
-5. Compact yourself: notes current first, then `watchdog.sh compact`, and end the turn (the person, 2026-11-11:
+5. Compact yourself: notes current first, then `watchdog.sh compact --note 'next: <locus>'` (from v0.1.173; your
+   watchdog wakes you with the note once the compaction is done, kit #409), and end the turn (the person, 2026-11-11:
    "curator should compress itself after each row"; in the five-row pilot a call's context grew from 159k to 379k,
    doubling a row's cost). Agreed: nothing checks it.
 
