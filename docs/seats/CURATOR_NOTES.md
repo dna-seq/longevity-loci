@@ -172,11 +172,12 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   Deelen rows added, the proxy nominal; exceptional survival +; OBA_VT0005372); 5 harmonised; 4 modifiable through
   weight; 11 a trade-off (heel BMD), descriptive. Rules learnt: Wright's significance call is by genomic control,
   so where Wright's P decides genome-wide (row 10) the study row carries the GC P, raw P in statistical_test
-  (D17.3); rows 8, 11 and 103 still carry Wright's raw P on nominal results, asked of the lead; Deelen's summary statistics are keyed
+  (D17.3), and so do Wright's nominal rows (8, 11, 103; the lead, 639343982: one paper reads one way across rows); Deelen's summary statistics are keyed
   by GRCh37 chr:pos, so their study rows are `ungrained` (a warning) and the note ties the position to the rsID;
-  an LD pair Ensembl does not return in EUR can be tried in CEU (a subset of EUR) and said so. Open (the
-  advisor): no cached Ensembl LD record shows r² below 0.05, so an empty pair may mean "below a reporting floor"
-  rather than unknown; until the endpoint's floor is read, rows 2 and 11 keep "unknown".
+  an LD pair Ensembl does not return in EUR can be tried in CEU (a subset of EUR) and said so. Ensembl's LD
+  endpoints drop pairs below an r² floor by default (the lead): an empty EUR pair is fetched again with `r2=0;d_prime=0`,
+  and one still empty is unknown. Done 2026-11-11 for rs3768321-rs17561720 and rs6744653-rs10153797: both still
+  empty, so both stay unknown (row 2 also has CEU r² 0.09). Deelen's chr:pos `ungrained` warnings stay (the lead).
 - **67 corrected** (2026-11-11), the lead's review applied. Tier B on red-flag heterogeneity alone: replication
   met (LifeGen fathers without UK Biobank, Timmers q15, P 0.016; Deelen SD1 q12, 90th OR 1.068, P 0.011), and
   AncestryDNA's null (Wright q11/q20, P 0.81, heterogeneity P 2.97e-4) caps it. New studies: the LifeGen replication;
