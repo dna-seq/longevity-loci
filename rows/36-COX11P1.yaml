@@ -1,0 +1,202 @@
+# The seed list's locus 36, COX11P1 (6p22.1; the seed's genes "COX11P1;ZSCAN23"). Curated 2026-11-11, the fourth
+# run's second row. Lead rs6902687 (GRCh38 6:28,445,714, GRCh37 6:28,413,491), the seed's only rsID: intergenic, 2.2 kb
+# upstream of ZSCAN23, C 0.31 in Europeans, in the extended MHC about 2.7 Mb from row 37's leads and 4 Mb from row 38's
+# (pairwise LD unknown: Ensembl returns no pair at this site, even for Park's R² > 0.99 tag). Park 2025's whole-cohort
+# own-survival GWAS of UK Biobank. Park's deposited summary statistics swap their allele columns (pmid-40021682 note);
+# directions are read from the paper. Open Targets 26.09 has no record of the lead or its tags; the GWAS Catalog
+# (2026-10-29) holds Park's association and a red-cell factor.
+locus_id: 36
+locus_name: COX11P1
+verdict: kept
+verdict_reason: >-
+  Tier B, the seed's, kept, and capped there by a powered null. Genome-wide in one study: Park 2025's own-survival
+  GWAS of 393,833 UK Biobank participants (35,551 dead), where rs6902687's C goes with a shorter life (β 0.004 on
+  the Martingale residual, P 2.7e-8, at the paper's 5.0e-8). It replicates nominally in a sample with no UK Biobank
+  data: Deelen 2019's 90th-percentile survival, T with reaching the age, β 0.077 (SE 0.021), P 2.2e-4; the 99th
+  percentile leans the same way (P 0.30). Calibrated from LifeGen's beta1 (D25.3), the 90th percentile shows the
+  size expected under the APOE factor (expected 0.073, heterogeneity P 0.90) and a larger one under the mean factor
+  (0.031, power 0.43): no flag. But Park's own validation in FinnGen's "Any death" (50,511 deaths, 403,222 alive)
+  fails: C β −0.0113 (SE 0.0089), P 0.20, leaning to less death. There is no Timmers calibration for this pair of
+  scales (a Martingale residual against a binary death endpoint), so the expected effect is scaled within FinnGen
+  by two variants Park also reports. APOE's ε4 is 8.1 times larger in FinnGen than in Park: expected C β 0.031,
+  one-sided power 0.97, heterogeneity P 5e-5. MUC5B's rs35705950 is 6.7 times larger: expected 0.026, power 0.90,
+  heterogeneity P 2e-4. The MUC5B factor is noisy (FinnGen z 2.75). A red flag under both (D21), which caps the row
+  at B with replication_failed. It is not D (D25.1), because Deelen's independent 90th percentile gives P 2.2e-4 in
+  the discovery's direction. That FinnGen scaling extends D25.3 beyond Timmers' two calibrations; it is put to the
+  lead, default B. Without the flag, the row would be A on §4.1's letter (Deelen the replication). Lifespan +:
+  LifeGen with UK Biobank gives T a longer parental life (P 1.7e-4, ++), but its UK Biobank part is Park's people's
+  parents, so it co-occurs and does not replicate. Healthspan +, at the edge: Zenin 2019, C earlier, P 0.050, the
+  same UK Biobank people. Exceptional survival +: Deelen's 90th. Wright 2019's AncestryDNA mothers hold no tag of the
+  lead (rs1029328, 34 kb away, has frequencies that cap r² near 0.38): untested there, not null. Mechanism:
+  general ageing. Park's PheWAS of the tag rs13190937 is led by celiac disease and intestinal malabsorption (P
+  1.8e-57), filed as mech:autoimmune; nothing shows the lifespan effect runs through it (D25.7). The paper's
+  "pancreatic tumors" rests on a pancreatic eQTL alone and is not filed. Causal: C4, since no Open Targets credible
+  set holds the lead or its three R² > 0.99 tags. Effector: E2, ZSCAN23, on §4.2's "coloc alone": Park's own
+  colocalisation of the signal with a ZSCAN23 eQTL in pancreas, PP4 0.934 (H4 ≥ 0.8). It is one tissue and no
+  locus-to-gene score; rival genes in this gene-dense region are unassessed, since the paper names no other gene it
+  tested (D24 counts over credible sets, and there are none). E4, gene empty, is the alternative, put to the lead
+  with B. Actionability is descriptive. The protection is the absence of risk: T, the common allele (0.69), is the
+  reference. European only; C is rarer in Finns (0.22) and East Asians (0.14). Age of action is unknown.
+axes:
+  tier: {value: B, cites: [pmid-40021682#q20, pmid-40021682#q11, pmid-40021682#q1, pmid-40021682#q10, pmid-40021682#q21, pmid-40021682#q24, pmid-40021682#q26, pmid-40021682#q12, pmid-31413261#q92, pmid-31413261#q93, pmid-31413261#q2, db-finngen-r11#q2, db-finngen-r11#q4, db-finngen-r11#q5, db-finngen-r11#q6, pmid-40021682#q29, pmid-40021682#q31, pmid-40021682#q32, pmid-40021682#q9, pmid-30642433#q99, pmid-30642433#q92, pmid-31484785#q71, db-ensembl-116#q240, db-ensembl-116#q235]}
+  mechanism: {value: general_ageing, cites: [pmid-40021682#q23, pmid-40021682#q22, pmid-40021682#q25]}
+  pleiotropy: {values: ["mech:autoimmune"], cites: [pmid-40021682#q23]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
+            cites: [pmid-30729179#q58, pmid-40021682#q20, pmid-30642433#q99, pmid-31413261#q92]}
+  actionability: {label: descriptive, cites: [pmid-40021682#q20, pmid-40021682#q23]}
+  context: {values: [eur_only_evidence], cites: [pmid-40021682#q1, pmid-31413261#q92, db-ensembl-116#q237, db-ensembl-116#q238]}
+flags:
+  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-40021682#q20, db-ensembl-116#q236]}
+  - {token: replication_failed, cites: [db-finngen-r11#q2, db-finngen-r11#q4, db-finngen-r11#q5, pmid-40021682#q29, pmid-40021682#q31, pmid-40021682#q32]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q516]}
+  - {token: "effector:E2", cites: [pmid-40021682#q22]}
+variants:
+  - rsid: rs6902687
+    gene: ZSCAN23
+    phenotype: ZSCAN23 upstream region (6p22.1), lifespan
+    trait_efo_id: OBA_VT0005372
+    effect_allele: T
+    effect_size: -0.004
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: T/T
+        state: neutral
+        conclusion: >-
+          You carry two copies of the more common version of this DNA position, as about 47 in 100 people of
+          European ancestry do. It is the reference the other combinations are compared with. The position, on
+          chromosome 6, lies just upstream of the ZSCAN23 gene, in a region rich in immune genes. The finding comes
+          from people of European ancestry; less is known elsewhere.
+      - genotype: C/T
+        state: risk
+        conclusion: >-
+          You carry one copy of a version of this DNA position that about 43 in 100 people of European ancestry
+          carry. In a large British study, people with this version tended to die slightly earlier, and in a
+          separate European study of long-lived people it was less common among those who reached old age. A large
+          Finnish study did not confirm it, so it is a likely finding, not a settled one. The effect is small, and
+          it is a tendency, not destiny. How it acts is not known; the same region is also linked to celiac disease.
+      - genotype: C/C
+        state: risk
+        conclusion: >-
+          You carry two copies of a version of this DNA position, as about 10 in 100 people of European ancestry
+          do. In a large British study, each copy went with a slightly earlier death, and in a separate European
+          study of long-lived people this version was less common among those who reached old age. A large Finnish
+          study did not confirm it, so it is a likely finding, not a settled one. The effect is small, and it is a
+          tendency, not destiny. How it acts is not known; the same region is also linked to celiac disease.
+studies:
+  - rsid: rs6902687
+    note: pmid-40021682
+    quote: q20
+    phenotype_class: OWN_SURVIVAL
+    study_design: own_survival_cox
+    population: European (UK Biobank, whole cohort)
+    ancestry: [EUR]
+    n_cases: 35551
+    sample_size: 393833
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "2.7E-08"
+    p_value_num: 2.7e-08
+    effect_size: 0.004
+    effect_measure: beta
+    effect_unit: Martingale residual of a Cox model of own survival per C allele (positive = more deaths than expected, shorter life)
+    effect_allele: C
+    direction: risk
+    statistical_test: "BOLT-LMM on Martingale residuals, whole cohort (q1, q10); threshold 5.0E-08 per GWAS, three run (q11); MAF 36.6 %, three variants at R² > 0.99 (q21). The deposited summary statistics (GCST90551884) give SE 0.000690 and β 0.00383 under swapped allele labels (q29, q32): the direction is the paper's (q20)"
+    curator: claude-opus-5-5
+  - rsid: rs6902687
+    note: pmid-40021682
+    quote: q26
+    phenotype_class: OWN_SURVIVAL
+    study_design: own_death_case_control
+    population: Finnish (FinnGen r11)
+    ancestry: [EUR]
+    n_cases: 50511
+    sample_size: 453733
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.20"
+    p_value_num: 0.20
+    proxy_rsid: rs13190937
+    effect_size: -0.011
+    effect_measure: beta
+    effect_unit: FinnGen's "Death" endpoint per A allele of rs13190937, the lead's C (positive = more death, q9, q16)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Park 2025's validation in FinnGen r11 (Supplementary Table 2), at rs13190937, R² > 0.99 with the lead, its A with the lead's C (q21, q20); not significant (q24). FinnGen's own file at the lead: C β −0.0113, SE 0.00887, P 0.20, C 0.224 in Finns (db-finngen-r11#q2; the tag the same, #q3); 50,511 deaths (#q6). D21 red flag, the expected effect scaled within FinnGen from Park's whole-cohort β (SE 0.00069): by APOE rs429358 (factor 8.1, db-finngen-r11#q4, q32) expected 0.031, one-sided power 0.97, heterogeneity P 5e-5; by MUC5B rs35705950 (factor 6.7, db-finngen-r11#q5, q31; FinnGen z 2.75, a noisy factor) expected 0.026, power 0.90, heterogeneity P 2e-4. Not one of Timmers' calibrations (D25.3), put to the lead"
+    curator: claude-opus-5-5
+  - rsid: rs6902687
+    note: pmid-31413261
+    quote: q92
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis; no UK Biobank data, q2)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.000224"
+    p_value_num: 0.000224
+    effect_size: 0.0769
+    effect_measure: beta
+    effect_unit: log odds of reaching the 90th percentile, per T allele
+    effect_allele: T
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008598), SE 0.0209, effective N 11,615; independent of Park 2025 (no UK Biobank). D25.3 from LifeGen's beta1 (pmid-30642433#q99): APOE factor 4.84 expects log OR 0.073 per T, one-sided power 0.97, heterogeneity P 0.90; mean factor (pmid-30642433#q92) 0.031, power 0.43, heterogeneity P 0.039, the observed larger; no red flag"
+    curator: claude-opus-5-5
+  - rsid: rs6902687
+    note: pmid-31413261
+    quote: q93
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's longevity meta-analysis; no UK Biobank data, q2)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.2986"
+    p_value_num: 0.2986
+    effect_size: 0.0338
+    effect_measure: beta
+    effect_unit: log odds of reaching the 99th percentile, per T allele
+    effect_allele: T
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), SE 0.0325, effective N 4,524; the same side as the 90th, whose cases contain these"
+    curator: claude-opus-5-5
+  - rsid: rs6902687
+    note: pmid-30642433
+    quote: q99
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts; the UK Biobank part is the parents of Park 2025's people)
+    ancestry: [EUR]
+    sample_size: 640185
+    sample_unit: lives
+    age_of: parent
+    stat_significance: nominal
+    p_value: "0.00017307346"
+    p_value_num: 0.00017307346
+    effect_size: 0.01513334
+    effect_measure: beta
+    effect_unit: beta1 on parental lifespan per T allele, longer positive
+    effect_allele: T
+    direction: protective
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), SE 0.0040, ++ in UK Biobank and LifeGen, info 0.999; Park 2025's validation at the tag agrees (pmid-40021682#q27). Shares UK Biobank with the discovery: co-occurs, does not replicate (D19.1)"
+    curator: claude-opus-5-5
+  - rsid: rs6902687
+    note: pmid-30729179
+    quote: q58
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "0.0496"
+    p_value_num: 0.0496
+    effect_size: 0.0099
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per C allele (positive = earlier)
+    effect_allele: C
+    direction: risk
+    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), SE 0.00504, -log10 P 1.305; the same UK Biobank people as Park 2025"
+    curator: claude-opus-5-5

@@ -1875,3 +1875,14 @@ QTL colocalisation of the healthspan set (`coloc-qtl-3ebe7ef9958b5c249ce68244b0d
 sets give the same list): 114, all at H4 ≥ 0.8 (q508). 109 are IRF4 (60 eQTL, 18 sQTL, 31 transcript-usage QTL, e.g.
 q509); one each are UK Biobank pQTLs of KIT (q510), GPNMB, JCHAIN, CD5L and DSG4, each 1 of 114, under
 D24's tenth. IRF4: L2G ≥ 0.5 plus cis-QTL colocalisation, E1. For row 35.
+
+## Reading 2026-11-11, record
+
+> [q516] data variant null
+
+Open Targets 26.09 has no record of row 36's lead: `variant(variantId:...)` answers null for 6_28445714_C_T and
+6_28445714_T_C (`variant-6_28445714_C_T.json`, `variant-6_28445714_T_C.json`, q516), and the platform's search
+finds none of rs6902687, rs13190937, rs13215804 or rs111859903 (Park 2025's R² > 0.99 set, pmid-40021682#q21;
+the four queries cached no text), where the same search finds rs12203592 (`search-rs12203592.json`). So no credible
+set holds the lead or its tags, Park 2025's whole-cohort study among them: no fine-mapping and no locus-to-gene
+score. For row 36.

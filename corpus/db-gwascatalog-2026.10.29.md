@@ -754,3 +754,17 @@ read as such). The Catalog holds no association from Zenin 2019 for this SNP. Fo
 
 In `associations-rs12203592-p1.json` (the second page): Farré's freckles, T "unit increase", β 0.459, P 7 × 10⁻⁴⁰
 (q222 to q224). T goes with more freckling. For row 35.
+
+## Reading 2026-11-11, record
+
+> [q225] beta 0.004 unit increase p_value 3.0000000000000004e-08 accession_id GCST90551884 pubmed_id 40021682 first_author Park J
+
+> [q226] _embedded.associations[1].snp_effect_allele[0] rs6902687-C
+
+> [q227] _embedded.associations[0] association_id 191005407 risk_frequency NR pvalue_description  pvalue_mantissa 6 pvalue_exponent -10 multi_snp_haplotype false snp_interaction false range - beta - 
+
+> [q228] _embedded.associations[0].reported_trait[0] Blood cell traits latent factor 2 (red cell)
+
+The Catalog's two associations at rs6902687 (`associations-rs6902687.json`, totalElements 2): Park 2025's lifespan,
+C, β 0.004 "increase", P 3e-8 (q225, q226); and Zhou 2025's blood-cell latent factor 2 (red cell), P 6e-10, effect
+allele "?" (q227, q228). No other lifespan, longevity or healthspan study. For row 36.

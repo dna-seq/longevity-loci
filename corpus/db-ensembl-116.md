@@ -839,3 +839,26 @@ rs12203592's T in gnomAD's admixed Americans, 0.078 (q232): about 15 in 100 carr
 Genomes CEU with the three Wright 2019 S9 SNPs near it (`ld-ceu-rs12203592-*.json`): rs11242982 r² 0.15, D′ 0.72
 (q233); rs9378774 and rs1540767 return no pair (no text cached; Ensembl's floor), so neither is shown to tag the lead.
 For row 35.
+
+## Reading 2026-11-11, record
+
+> [q234] location 6:28445714-28445714 seq_region_name 6 start 28445714 end 28445714 coord_system chromosome assembly_name GRCh38 strand 1 allele_string T/A/C ancestral_allele T
+
+> [q235] populations[72] allele C population 1000GENOMES:phase_3:CEU frequency 0.313131313131313 allele_count 62
+
+> [q236] populations[21] frequency 0.3108 population gnomADg:nfe allele C allele_count 21102
+
+> [q237] populations[17] population gnomADg:fin allele C frequency 0.2174 allele_count 2279
+
+> [q238] populations[4] allele C population gnomADg:eas frequency 0.1376 allele_count 713
+
+> [q239] populations[14] frequency 0.4054 allele C population gnomADg:afr allele_count 16770
+
+> [q240] populations[65] allele C frequency 0.146464646464646 allele_count 29 population 1000GENOMES:phase_3:CEU
+
+rs6902687 (`variation-rs6902687.json`): GRCh38 6:28445714, T/A/C, ancestral T (q234). C 0.313 in 1000 Genomes CEU
+(q235), 0.311 in gnomAD's non-Finnish Europeans (q236), 0.217 in Finns (q237), 0.138 in East Asians (q238), 0.405 in
+Africans (q239); A is a rare third allele (0.0025 overall). rs1029328's C 0.146 in CEU (q240,
+`variation-rs1029328.json`). Pairwise LD in CEU (`ld-ceu-rs6902687-*.json`) returns no pair for rs13190937, which
+Park puts at R² > 0.99 (pmid-40021682#q21), nor for rs1029328, rows 37's rs3130507 and rs3131621, or row 38's
+rs34967069: the endpoint gives nothing at this site, so all of those are unknown, not zero. For row 36.
