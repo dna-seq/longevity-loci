@@ -149,15 +149,16 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   Study (Timmers q13). eLife source data is at `https://cdn.elifesciences.org/articles/39856/elife-39856-figN-dataM-v2.xlsx`.
 - **18 TMEM43** (2026-11-11), tier C re-tiered (seed B), advisor-checked. Lead rs1043943, Liu 2021's Chinese
   longevity SNP (CLHLS; Table 1 q2, T, meta 3.59e-8). First use of **R-TIER-2** (an unreplicated old-against-young
-  case-control caps at C): dataset 2 sits inside the genome-wide meta-analysis, so it is no replication, and its
-  earlier GWAS seeded dataset 1's chip (q5). Table 1's rs1043943 row does not reconcile (β/SE gives 0.054 and 4.8e-7
-  against the printed 0.016 and 3.59e-8); kept the printed P (D17.3), said in the row, sent to the lead. Europe is
+  case-control caps at C): dataset 2 sits inside the genome-wide meta-analysis, so it is no replication (its earlier
+  GWAS also supplied 11,893 of dataset 1's 27,656 chip SNPs, q5; this SNP's route unread). Table 1's rs1043943 row does not reconcile (β/SE gives 0.054 and 4.8e-7
+  against the printed 0.016 and 3.59e-8; Table 2's sex strata pool to 3.5e-7); kept the printed P (D17.3), said in
+  the row, sent to the lead. Europe is
   an informative null: common there (T 0.40), same LD to XPC's missense rs2228001 (r² 0.94 CEU and CHB), Deelen 90th
   CI excludes Liu's β. Timmers 0.057, Zenin healthspan 0.0035 (both T): neither lifts the cap. Open Targets: allele
   order is ref T/alt C here (`3_14141910_T_C`; the C_T id returns null), so check Ensembl's allele_string for the
   reference before querying. 400 sets, 321 XPC QTLs, no longevity set: C4/E4, XPC in prose only. Liu's supplements:
-  Europe PMC lists them, but its `supplementaryFiles` zip stalls through the proxy (a partial 3.4 MB); S2 and S16
-  unread. Same paper's BMPER (rs17169634) meets R-TIER-2 too.
+  Europe PMC lists them; its `supplementaryFiles` zip downloads slowly through the proxy (the first try cut by my own
+  280 s timeout at 3.4 MB; run it in the background); S2 and S16 unread. Same paper's BMPER (rs17169634) meets R-TIER-2 too.
 - **17 CASP8** (2026-11-11), tier C re-tiered (seed B), advisor-checked. Lead rs10197246, Zenin 2019's healthspan
   SNP (Table 2 q28, C 3.67e-9 GC, replicated 2.43e-4 under 0.05/12). Supplementary Data 5 and 7 cached
   (`MOESM7`, `MOESM9`; MOESM number = SD number + 2, checked against the text's citations): SD7 shows the signal is

@@ -2,7 +2,7 @@
 # run's eighth row. Lead rs1043943 (Liu 2021's longevity SNP in Chinese, Table 1), the seed's only rsID here: a 3' UTR
 # variant of TMEM43, in LD (r² 0.94 in CEU and CHB) with XPC's missense rs2228001; T 0.40 in Europeans, 0.32 in East
 # Asians. In Timmers 2019's, Zenin 2019's and Deelen 2019's summary statistics at the lead itself; not in Wright 2019's
-# S8 or S9. Liu's supplementary tables were listed by Europe PMC but not reachable by script (S2, S16 unread).
+# S8 or S9. Liu's supplementary tables (S2, S16) were not read: Europe PMC's bundle downloads slowly through the proxy.
 locus_id: 18
 locus_name: TMEM43
 verdict: re-tiered
@@ -15,8 +15,9 @@ verdict_reason: >-
   call (D17.3). Dataset 2 is inside that meta-analysis, so it is part of the genome-wide result, not a replication of
   it; and dataset 1's custom chip took its first component, 11,893 SNPs, from dataset 2's own GWAS (whether the lead
   entered that way is not read). Table 1's row does not agree with itself: its β and SE give P about 0.054 for
-  dataset 2 and about 5e-7 for the meta-analysis, so the genome-wide call rests on the printed P alone; the same
-  table's other loci reconcile (said to the lead). Outside China it does not replicate, and the null is
+  dataset 2 and about 5e-7 for the meta-analysis, and Table 2's sex-specific metas pool to β 0.147, SE 0.029, P about
+  3.5e-7, so the genome-wide call rests on the printed P alone; at about 4e-7 it would be suggestive, and C holds
+  either way. Outside China it does not replicate, and the null is
   informative: the variant is as common in Europeans (T 0.40) and tags XPC's missense variant as well, yet Deelen
   2019's 90th percentile gives β +0.007 (P 0.73; its confidence interval excludes both Liu's 0.146 and dataset 2's
   0.081) and the 99th +0.005 (P 0.88). Timmers 2019's parental lifespan leans to T at P 0.057, short of 0.05, the
@@ -24,7 +25,7 @@ verdict_reason: >-
   Biobank. Neither lifts the cap: the same-class test is flat. Lifespan is filed 0; healthspan +, nominal;
   exceptional survival + in Chinese only. The context is East Asian evidence (R-ANC-4). Liu's own survival analysis
   of dataset 1 found nothing genome-wide beyond BRAF and BMPER; its value here (Table S16) is not read. Mechanism
-  general ageing: the paper points to XPC, a DNA-repair gene, and Parkinson's disease at P 0.045 is one uncorrected
+  general ageing: the paper points to XPC, a nucleotide-excision-repair gene, and Parkinson's disease at P 0.045 is one uncorrected
   test, no trade-off. Causal C4 and effector E4, no gene named: no longevity, lifespan or healthspan credible set
   holds the lead in Open Targets (its 5 GWAS sets are arm impedance, hypertension and a repeat count, each led by
   another variant), so there is no set for fine-mapping, L2G or colocalisation. XPC is the likely effector in
@@ -32,8 +33,8 @@ verdict_reason: >-
   leading 43, and in none of TMEM43's. The protection is a presence: the minor T goes with longevity. Age of action
   is unknown.
 axes:
-  tier: {value: C, cites: [pmid-33657282#q1, pmid-33657282#q2, pmid-33657282#q3, pmid-33657282#q4, pmid-33657282#q5, pmid-33657282#q6, pmid-33657282#q8, pmid-30642433#q56, pmid-30729179#q36, pmid-31413261#q37, pmid-31413261#q38, db-ensembl-116#q76, db-ensembl-116#q77, db-ensembl-116#q81, db-ensembl-116#q82]}
-  mechanism: {value: general_ageing, cites: [pmid-33657282#q7, pmid-33657282#q11]}
+  tier: {value: C, cites: [pmid-33657282#q1, pmid-33657282#q2, pmid-33657282#q3, pmid-33657282#q9, pmid-33657282#q12, pmid-33657282#q4, pmid-33657282#q5, pmid-33657282#q6, pmid-33657282#q8, pmid-30642433#q56, pmid-30729179#q36, pmid-31413261#q37, pmid-31413261#q38, db-ensembl-116#q76, db-ensembl-116#q77, db-ensembl-116#q81, db-ensembl-116#q82]}
+  mechanism: {value: general_ageing, cites: [pmid-33657282#q7, pmid-33657282#q11, pmid-33657282#q13]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "+", lifespan: "0", exceptional_survival: "+",
@@ -82,7 +83,7 @@ studies:
     quote: q2
     phenotype_class: EXTREME_SURVIVAL_CC
     study_design: meta_analysis
-    population: Han Chinese (CLHLS; dataset 1 aged 90 or more against under 75, dataset 2 centenarians against under 65)
+    population: Chinese (CLHLS; dataset 1 aged 90 or more against under 75, dataset 2 centenarians against under 65)
     ancestry: [EAS]
     sample_size: 11045
     sample_unit: individuals
@@ -97,7 +98,7 @@ studies:
     effect_unit: log odds of being a long-lived case, per T allele
     effect_allele: T
     direction: protective
-    statistical_test: "Fixed-effect meta-analysis of two case-control datasets (Table 1, q2, q3, q6): dataset 1 (4,662 cases aged 90+, 3,828 controls under 75) β 0.165, SE 0.033, P 4.24e-7; dataset 2 less its overlap (1,105 centenarians, 1,450 controls under 65) β 0.081, SE 0.042, printed P 0.016; meta β 0.146, SE 0.029, printed P 3.59e-8, the paper's call (D17.3). The printed β and SE give P about 0.054 and 4.8e-7 (inverse-variance pooling about 3e-7); not corrected here. Dataset 2 is the earlier GWAS whose SNPs seeded dataset 1's chip (q4, q5), so not an independent replication. No percentile stated; cases counted across both datasets"
+    statistical_test: "Inverse-variance fixed-effect meta-analysis (METAL, q12) of two case-control datasets (Table 1, q2, q3, q6): dataset 1 (4,662 cases aged 90+, 3,828 controls under 75) β 0.165, SE 0.033, P 4.24e-7; dataset 2 less its overlap (1,105 centenarians, 1,450 controls under 65) β 0.081, SE 0.042, printed P 0.016; meta β 0.146, SE 0.029, printed P 3.59e-8, the paper's call (D17.3). The printed β and SE give P about 0.054 and 4.8e-7 (inverse-variance pooling about 3e-7; Table 2's sex strata pool to P about 3.5e-7, q9); not corrected here. Dataset 2 is inside the meta-analysis, so not an independent replication; it is also the earlier GWAS from which 11,893 of dataset 1's 27,656 chip SNPs were chosen (q4, q5), this SNP's route unread. No percentile stated; cases counted across both datasets"
     curator: claude-opus-5-5
   - rsid: rs1043943
     note: pmid-30642433
