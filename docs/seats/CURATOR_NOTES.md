@@ -160,7 +160,10 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   the letter of row 17 drop clear calls; asked, the lead ruled D24 (a rival counts at a tenth of the cis
   colocalisations, or passing L2G). Moved: 12 E1 KCNK3, 4 E1 NEGR1, 57 E1 CDKN2B (L2G 0.53 on Pilling's set, read
   late, so two commits), 67 E2 USP28, 81 E1 FES; 6, 15, 71 to E3. Row 7 sits at the edge (RHOC 2 of 20 over two
-  sets, told to the lead). Script pattern: `set-<8>-coloc-qtl[-pN]` and `set-<8>-l2g` in the cache.
+  sets, told to the lead). A second pass (advisor) read every lifespan-class set of
+  each lead (`credibleSets-longevity8-<variant>.json`): no level moved; row 80's CHRNA5 passes L2G on Pilling's set
+  (0.75) beside PSMA4's equal colocalisation, so E3 stands, worded. Cache pattern: `set-<8>-coloc-qtl[-pN]`,
+  `set-<8>-l2g`.
   Lead rs9872864, its proxy rs2271961 (Rosoff's mvAge SNP; r² 0.99, D′ 1, G with T). The anchor is Wright 2019's
   maternal meta-analysis, P 6.9e-10 (Table 3, S9), with Deelen's 90th percentile an independent replication (G, P
   0.020, no UK Biobank or AncestryDNA sample): A on §4.1's letter. But Wright prints no pooled effect, so it cannot

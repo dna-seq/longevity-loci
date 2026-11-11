@@ -32,7 +32,7 @@ axes:
 flags:
   - {token: "PROTECT:PRESENCE", cites: [pmid-29227965#q11]}
   - {token: "causal:C2", cites: [db-opentargets-26.09#q29]}
-  - {token: "effector:E3", cites: [db-opentargets-26.09#q30, db-opentargets-26.09#q321, db-opentargets-26.09#q322, db-opentargets-26.09#q323, db-opentargets-26.09#q324, db-opentargets-26.09#q325, db-opentargets-26.09#q326, db-opentargets-26.09#q327, db-opentargets-26.09#q328, db-opentargets-26.09#q329, db-opentargets-26.09#q330]}
+  - {token: "effector:E3", cites: [db-opentargets-26.09#q30, db-opentargets-26.09#q321, db-opentargets-26.09#q322, db-opentargets-26.09#q323, db-opentargets-26.09#q324, db-opentargets-26.09#q325, db-opentargets-26.09#q326, db-opentargets-26.09#q327, db-opentargets-26.09#q328, db-opentargets-26.09#q329, db-opentargets-26.09#q330, db-opentargets-26.09#q369]}
   - {token: "ld_proxy_of:rs646776", cites: [db-opentargets-26.09#q29, db-opentargets-26.09#q31]}  # rs602633, rs4970836, rs599839 in the set
   - {token: "mediator:EFO_0004611", cites: [pmid-30642433#q11]}          # low density lipoprotein cholesterol measurement
 variants:

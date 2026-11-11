@@ -1361,3 +1361,53 @@ KRI1 expression QTL at H4 0.61, below 0.8:
 > [q359] data.credibleSet.colocalisation count 4
 
 46 and 93 keep `effector:E2` on locus-to-gene alone (LPA 0.56, LDLR), with no cis colocalisation to add or to rival.
+
+### Every lifespan-class set, the remaining rows
+
+The sets of the eight lifespan-class studies holding each lead (`credibleSets-longevity8-<variant>.json`), so that
+no row rests on one set where it has more; each set's QTL colocalisations (`set-<8>-coloc-qtl`) and locus-to-gene
+scores (`set-<8>-l2g`) are cached. Rows 2, 4, 15 and 20 have one such set each, the one read above (mvAge's), and
+row 19 none. The others:
+
+Row 46 (rs10455872): six sets (Timmers 2019's, Timmers 2020's, Pilling's two, Zenin's healthspan, mvAge's), each
+with the same six trans protein QTLs and no cis colocalisation; LPA passes locus-to-gene on every one (0.56 to 0.67).
+Zenin's:
+
+> [q360] data.credibleSet.study id GCST007406 traitFromSource Healthspan
+
+> [q361] data.credibleSet.l2GPredictions.rows[0] score 0.6650680303573608
+
+> [q362] data.credibleSet.colocalisation count 6
+
+Row 93 (rs6511720): four sets (Timmers 2019's, Timmers 2020's, GCST009450's, mvAge's), each with three trans protein
+QTLs and no cis colocalisation at H4 ≥ 0.8; LDLR passes locus-to-gene on every one (0.96). mvAge's:
+
+> [q363] data.credibleSet.l2GPredictions.rows[0] score 0.9613806009292603
+
+> [q364] data.credibleSet.colocalisation count 4
+
+So 46 and 93 keep `effector:E2` on locus-to-gene alone, with no rival.
+
+Row 80 (rs8042849): five sets. On each, PSMA4 (14 to 16) and CHRNA5 (14) hold the cis colocalisations at H4 ≥ 0.8,
+with CHRNA3 (1 to 5), IREB2 and ENSG00000261762 fewer. CHRNA5 passes locus-to-gene on Pilling 2017's
+combined-parents age-at-death set (0.75; 0.17 to 0.43 on the other four) and so meets E1 there by the letter, but
+PSMA4 colocalises as often: a rival under D24, `effector:E3` stands.
+
+> [q365] data.credibleSet.study id GCST006702 traitFromSource Parental longevity (combined parental age at death)
+
+> [q366] data.credibleSet.l2GPredictions.rows[0] score 0.748673677444458
+
+> [q367] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol CHRNA5
+
+> [q368] data.credibleSet.colocalisation count 47
+
+Row 6 (rs646776): of the eight studies only GCST009450 holds the lead (09f4c8bb; Pilling's fathers' GCST006701 set,
+read above, is outside the eight), with the same partners: 111 cis at H4 ≥ 0.8, PSRC1 55, CELSR2 37, SORT1 15;
+SORT1 0.99 and CELSR2 0.87 by locus-to-gene. E3 stands.
+
+> [q369] data.credibleSet.colocalisation count 153
+
+Row 67 (rs61905747): mvAge's set (b4aa6d2c) beside Timmers 2020's, the same fifteen USP28 colocalisations (two at H4 ≥
+0.8) and the same locus-to-gene (CLDN25 0.35). E2 USP28 stands.
+
+> [q370] data.credibleSet.colocalisation count 15

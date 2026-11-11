@@ -26,7 +26,7 @@ flags:
   - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-29030599#q3]}
   - {token: ancestry_tag, cites: [db-opentargets-26.09#q1, db-opentargets-26.09#q2, db-opentargets-26.09#q3]}
   - {token: "causal:C2", cites: [db-opentargets-26.09#q4]}
-  - {token: "effector:E2", cites: [db-opentargets-26.09#q5, db-opentargets-26.09#q358]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q5, db-opentargets-26.09#q358, db-opentargets-26.09#q360, db-opentargets-26.09#q361, db-opentargets-26.09#q362]}
   - {token: "ld_proxy_of:rs10455872", cites: [pmid-29030599#q1]}  # rs55730499, r² 0.97
   - {token: "mediator:EFO_0006925", cites: [pmid-29030599#q3]}    # lipoprotein(a) measurement
 variants:

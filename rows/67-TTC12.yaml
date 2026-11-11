@@ -30,7 +30,7 @@ axes:
 flags:
   - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-29227965#q9, db-opentargets-26.09#q24]}
   - {token: "causal:C2", cites: [db-opentargets-26.09#q25]}
-  - {token: "effector:E2", cites: [db-opentargets-26.09#q27, pmid-32678081#q7, db-opentargets-26.09#q285, db-opentargets-26.09#q286, db-opentargets-26.09#q287, db-opentargets-26.09#q288]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q27, pmid-32678081#q7, db-opentargets-26.09#q285, db-opentargets-26.09#q286, db-opentargets-26.09#q287, db-opentargets-26.09#q288, db-opentargets-26.09#q370]}
   - {token: "ld_proxy_of:rs61905747", cites: [db-opentargets-26.09#q26]}  # rs17613838, r² 0.99
 variants:
   - rsid: rs61905747
