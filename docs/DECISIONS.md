@@ -284,3 +284,11 @@ person's standing word.
    co-occurs (D16) but does not replicate; Deelen is flat (P 0.13, 0.15), with no red flag. The curator's default A
    rejected; its own reading of D22.2 taken. **One mechanism, one actionability**: `skin_sun` rows are `modifiable`,
    `act_screen:skin` (§4.2 names sun among the behaviours), so 17 moves from `descriptive` to match 35.
+12. **36 keeps B, and is E2 ZSCAN23.** D25.3's second calibration is a mean over loci, not one other locus: scaled
+   within FinnGen, APOE flags (power 0.97, heterogeneity P 1e-4) and MUC5B alone is not the mean. If the FinnGen
+   look-up holds enough non-APOE leads with both measures to average, the row computes that mean, and A follows only
+   if it raises no flag; otherwise "no red-flag heterogeneity", A's last criterion, is unknown, and unknown is not
+   shown, so B. Effector: §4.2's E2 is "coloc alone", and Park's own colocalisation (PP4 0.934, one pancreatic
+   tissue) meets it; with no Open Targets record, D24's rival check could not run, and the row says so rather than
+   reading that as no rival (as 57's single adipose QTL). The curator's default E4 rejected: it would file an
+   assessed colocalisation as unassessed.
