@@ -19,14 +19,15 @@ verdict_reason: >-
   deposit's genomic control (one-sided 0.011), Deelen 2019's 90th percentile P 0.10 (one-sided 0.050, just short) and
   99th 0.32. Outside the inputs, nothing replicates and the one powered look goes against. FinnGen's death endpoint
   puts G on the side of more deaths, P 0.035. Carried into FinnGen by APOE's factor (0.99), Timmers' effect predicts
-  G −0.013 on the log odds of death: heterogeneity P 1.8e-4, but one-sided power only 0.50, so by D21 (power at least
-  0.8 and heterogeneity P below 0.05) it is no red flag, and Figure 4's smaller mean factor gives less (power 0.17).
+  G −0.013 on the log odds of death: heterogeneity P about 9e-4 (both SEs), but one-sided power only 0.50, so by D21
+  (power at least 0.8 and heterogeneity P below 0.05) it is no red flag, and Figure 4's smaller mean factor gives less
+  (power 0.17, heterogeneity P 0.006).
   Timmers 2022's survival look-up in FinnGen with Biobank Japan, mostly the same Finns, agrees in sign (G −0.086
   years, SE 0.122, one-sided P 0.76 for aging-GIP1's direction). Its SE is about 1.8 times that of look-ups at a like
   frequency, since G is 0.02 in East Asians and Biobank Japan adds almost nothing. Scaled by the mean over the other
   look-ups that hold up there (D25.12; 7.0 years per unit), the expected gain is 0.16 years at power 0.38; APOE is not
-  among them. No red flag under any factor computed, so no `replication_failed` and not D (D25.1 needs one), but the
-  Finnish data lean against G and the row says so. Wright 2019's AncestryDNA tables print only SNPs below about 2.5e-3
+  among them. No red flag under any factor computed, so no `replication_failed` and not D: D25.1 and D26.8 both need a D21 red
+  flag, and the one powered-looking result here is half-powered. The Finnish data lean against G and the row says so. Wright 2019's AncestryDNA tables print only SNPs below about 2.5e-3
   and hold none within 600 kb, so that look-up is unread, not null. Atkins 2021's frailty hit nearby (rs2396766, P
   1.2e-9) is r² 0.21 to the lead and colocalises with aging-GIP1 at H4 0.76 only: a healthspan-class result on mostly
   another signal, named and not counted (D22.2). Mechanism: ageing in general (D25.7). Every Open Targets set at the
@@ -39,9 +40,10 @@ verdict_reason: >-
   FOXP2: locus-to-gene 0.92 (MDFIC 0.07, no rival), and no QTL colocalises with that set. The longer-life G is the less
   common allele, so the most common genotype, A/G (about 45 in 100 at gnomAD's non-Finnish European frequency, A/A 43),
   is the reference, with no PROTECT token, as at row 29. Healthspan + (Zenin, one-sided 0.011), lifespan + (Timmers,
-  0.0016; FinnGen's opposite lean named), exceptional survival 0 (Deelen one-sided 0.050 and 0.16). The supporting
-  evidence is European only: the only non-European data, Biobank Japan's share of the survival look-up, are near nil
-  at G 0.02. Age of action is unknown.
+  0.0016; FinnGen's opposite lean named, nominal against nominal, weaker than D26.6's genome-wide opposite), exceptional
+  survival 0 (Deelen one-sided 0.050 and 0.16). No context token: the survival look-up spans Biobank Japan, as at rows
+  25 and 29, though at G 0.02 Japan adds almost nothing, so in substance the support is European. Age of action is
+  unknown.
 axes:
   tier: {value: B, cites: [pmid-37550455#q44, pmid-37550455#q45, pmid-37550455#q2, pmid-37550455#q5, db-gwascatalog-2026.10.29#q322, pmid-37118362#q57, pmid-37118362#q60, pmid-37118362#q59, pmid-37118362#q17, pmid-30642433#q236, pmid-30729179#q73, pmid-30729179#q59, pmid-31413261#q131, pmid-31413261#q132, db-finngen-r11#q25, db-finngen-r11#q4, pmid-30642433#q90, pmid-30642433#q92, pmid-37118362#q58, pmid-37118362#q2, pmid-37118362#q5, pmid-37118362#q6, pmid-37118362#q7, pmid-37118362#q3, pmid-37118362#q19, db-ensembl-116#q340, pmid-31484785#q6, pmid-34431594#q7, pmid-37118362#q62, db-ensembl-116#q344]}
   mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q634, db-opentargets-26.09#q641, db-opentargets-26.09#q642, db-opentargets-26.09#q644, db-opentargets-26.09#q645, pmid-37118362#q63, pmid-37118362#q64, pmid-37118362#q66, pmid-37118362#q67]}
@@ -50,9 +52,9 @@ axes:
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: 0,
             cites: [pmid-30729179#q73, pmid-30729179#q59, pmid-30642433#q236, db-finngen-r11#q25, pmid-31413261#q131, pmid-31413261#q132]}
   actionability: {label: descriptive, cites: [db-opentargets-26.09#q641, db-opentargets-26.09#q644, pmid-37118362#q63, pmid-37118362#q67]}
-  context: {values: [eur_only_evidence], cites: [pmid-37550455#q45, pmid-30642433#q236, pmid-37118362#q58, db-ensembl-116#q340]}
+  context: {values: [], cites: []}
 flags:
-  - {token: "causal:C2", cites: [db-opentargets-26.09#q635, db-opentargets-26.09#q636, db-opentargets-26.09#q637, db-opentargets-26.09#q638]}
+  - {token: "causal:C2", cites: [db-opentargets-26.09#q635, db-opentargets-26.09#q636, db-opentargets-26.09#q637, db-opentargets-26.09#q638, pmid-37118362#q61]}
   - {token: "effector:E2", cites: [db-opentargets-26.09#q639, db-opentargets-26.09#q640, db-opentargets-26.09#q647]}
 variants:
   - rsid: rs12705966
@@ -106,11 +108,11 @@ studies:
     effect_unit: mvAge factor per A allele (no conventional unit; positive = healthier ageing)
     effect_allele: A
     direction: risk
-    statistical_test: "Genomic SEM common-factor GWAS of healthspan, frailty, exceptional longevity, parental lifespan and PhenoAge acceleration (Supplementary Table 7, effect allele first; Table 6, q44, files it as known through frailty, not novel; the frequency column 0.37 is the minor allele's, G's); pools the samples of the component studies, not a replication (q5); the GWAS Catalog's rs12705966-A, decrease (db-gwascatalog-2026.10.29#q322)"
+    statistical_test: "Genomic SEM common-factor GWAS of healthspan, frailty, exceptional longevity, parental lifespan and PhenoAge acceleration (Supplementary Table 7, effect allele first; Table 6, q44, files it as known through frailty, not novel, Q P 0.25, no sign the SNP acts off the common factor; the frequency column 0.37 is the minor allele's, G's); pools the samples of the component studies, not a replication (q5); the GWAS Catalog's rs12705966-A, decrease (db-gwascatalog-2026.10.29#q322)"
     curator: claude-opus-5-5
   - rsid: rs12705966
     note: pmid-37118362
-    quote: q57
+    quote: q60
     phenotype_class: MULTIVARIATE_AGEING
     study_design: multivariate_healthspan_lifespan
     population: European (aging-GIP1's six input GWAS, UK Biobank and LifeGen among them)
@@ -118,14 +120,14 @@ studies:
     sample_size: 154478
     sample_unit: individuals
     stat_significance: significant
-    p_value: "7E-10"
-    p_value_num: 7.0e-10
+    p_value: "6.673e-10"
+    p_value_num: 6.673e-10
     effect_size: 0.02341
     effect_measure: beta
     effect_unit: aging-GIP1 per G allele (positive = healthier ageing)
     effect_allele: G
     direction: protective
-    statistical_test: "Supplementary Table 4 (q57): first genetic principal component of healthspan, parents' lifespans, longevity, frailty and self-rated health; the lead itself; threshold 5e-8/6 (q17), passed; MOESM9 (q60) original β 0.0234 (SE 0.0038), P 6.7e-10, adjusted β 0.0115, P 7.9e-4, the adjustment unstated; per-input betas per G all positive (q59); the lead tops a nine-variant credible set at PIP 0.21 (q61); shares its inputs with mvAge, so the same discovery, not a replication"
+    statistical_test: "MOESM9 (q60), the original columns, the exact values behind Supplementary Table 4's line (q57: β 0.02, SE 0.004, P 7E-10): first genetic principal component of healthspan, parents' lifespans, longevity, frailty and self-rated health; the lead itself; threshold 5e-8/6 (q17), passed; original β 0.0234 (SE 0.0038), P 6.7e-10, adjusted β 0.0115, P 7.9e-4, the adjustment unstated; per-input betas per G all positive (q59); the lead tops a nine-variant credible set at PIP 0.21 (q61); shares its inputs with mvAge, so the same discovery, not a replication"
     curator: claude-opus-5-5
   - rsid: rs12705966
     note: pmid-30642433
@@ -156,7 +158,6 @@ studies:
     stat_significance: nominal
     p_value: "0.0186"
     p_value_num: 0.0186
-    p_one_sided: 0.0093
     effect_size: -0.0126
     effect_measure: beta
     effect_unit: log hazard of the end of healthspan per G allele (negative = later)
@@ -179,7 +180,7 @@ studies:
     effect_unit: log odds of reaching the 90th percentile, per A allele
     effect_allele: A
     direction: risk
-    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008598), effective N 11,615; the P is two-sided, one-sided 0.050 (derived), not below 0.05 under D25.13; mvAge's and aging-GIP1's exceptional-longevity input, not a replication"
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008598), effective N 11,615; the P is two-sided, one-sided 0.050 (derived), not below 0.05 under D25.13; mvAge's exceptional-longevity input (pmid-37550455#q45), not a replication"
     curator: claude-opus-5-5
   - rsid: rs12705966
     note: pmid-31413261
@@ -215,5 +216,5 @@ studies:
     effect_unit: approximate years of survival per G allele
     effect_allele: G
     direction: risk
-    statistical_test: "Supplementary Table 6 (q58; columns q2, legend q5-q7): one-sided Wald P for the direction of aging-GIP1, Bonferroni P 1.0 over 23 SNPs; SE 0.1218, about 1.8 times the look-ups at a like frequency (q3, q19), G being 0.02 in 1000 Genomes EAS (db-ensembl-116#q340), so mostly FinnGen's people, those of FinnGen's death endpoint (db-finngen-r11#q25: G +0.0170 on the log odds of death, P 0.035, against the discovery; power 0.50 under APOE's factor, no red flag); 46,128 deaths. Power (derived): by the mean of years over aging-GIP1 β across the other 22 look-ups, expected G +0.037 years, power 0.09, heterogeneity P 0.31; across the eight that hold up one-sided (D25.12), +0.164, power 0.38, heterogeneity P 0.040; APOE not looked up, its factor unknown. No red flag (D21)"
+    statistical_test: "Supplementary Table 6 (q58; columns q2, legend q5-q7): one-sided Wald P for the direction of aging-GIP1, Bonferroni P 1.0 over 23 SNPs; SE 0.1218, about 1.8 times the look-ups at a like frequency (q3, q19), G being 0.02 in 1000 Genomes EAS (db-ensembl-116#q340), so mostly FinnGen's people, those of FinnGen's death endpoint (db-finngen-r11#q25: G +0.0170 on the log odds of death, P 0.035, against the discovery; power 0.50 under APOE's factor, heterogeneity P about 9e-4 with both SEs, no red flag); 46,128 deaths. Power (derived): by the mean of years over aging-GIP1 β across the other 22 look-ups, expected G +0.037 years, power 0.09; across the eight that hold up one-sided (D25.12), +0.164, power 0.38, heterogeneity P 0.045 (both SEs; 0.31 and 0.22 across all 22 by inverse-variance and plain ratio); APOE not looked up, its factor unknown. No red flag (D21)"
     curator: claude-opus-5-5
