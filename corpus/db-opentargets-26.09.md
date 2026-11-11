@@ -1605,3 +1605,16 @@ led by rs6812640 (the lead's PIP 0.025, q426-q428), and it colocalises with the 
 0.99, q429-q430), so blood pressure and the lymphocyte share one signal; its direction is not phased here.
 Locus-to-gene on these sets is KLF3's (0.76 on the frailty set, q431; 0.75 on the lymphocyte set), not a longevity
 set's, so it is named in prose only. A frequencies: q432, q433.
+
+## Reading 2026-11-11, record
+
+> [q434] data.credibleSet.locus.rows[0] posteriorProbability 0.07998751711179886
+
+> [q435] data.credibleSet.l2GPredictions.rows[0] score 0.759643018245697 data.credibleSet.l2GPredictions.rows[0].target approvedSymbol KLF3
+
+> [q436] data.credibleSet.l2GPredictions.rows[0] score 0.7475316524505615 data.credibleSet.l2GPredictions.rows[0].target approvedSymbol KLF3
+
+Row 27, second pass. Shi 2024's systolic set led by rs17499404 (`credibleSet-d9b910e8399daa17a3ff4c661f7db5db.json`,
+q416-q418): the lead's PIP 0.080 (q434), locus-to-gene KLF3 0.76 (q435); the lymphocyte set's KLF3 0.75 (q436). The
+lymphocyte set's β +0.0122 is per rs6812640's G, which rides with the lead's A (db-ensembl-116#q147-q149): A raises
+the lymphocyte percentage. Not a lifespan-class set, so KLF3 stays in prose (C4/E4 by the longevity-set rule).

@@ -541,3 +541,24 @@ Hardy-Weinberg in Europeans: A/A about 30 in 100, A/G about 50, G/G about 21. Li
 rs2291435 (Ehret 2016's blood-pressure SNP) r² 0.996; rs2291433 (the frailty set's lead, Wright's S9 SNP) r² 0.996;
 rs13104866 (Hoffmann 2016's) r² 0.80. Phase of rs2291433, by frequency and r² ceilings: its G (0.544) against the
 lead's A (0.545) allows r² up to about 1.0 coupled and 0.70 opposed, so the observed 0.996 puts G with A.
+
+## Reading 2026-11-11, record
+
+> [q143] [0] variation1 rs17499404 r2 0.398779 variation2 rs12646716 population_name 1000GENOMES:phase_3:EUR d_prime 0.770012
+
+> [q144] [0] d_prime 0.625255 population_name 1000GENOMES:phase_3:EUR r2 0.317768 variation1 rs17499404 variation2 rs1487624
+
+> [q145] [0] variation2 rs11732737 variation1 rs17499404 d_prime 0.594207 r2 0.285854 population_name 1000GENOMES:phase_3:EUR
+
+> [q146] [0] variation2 rs7668402 population_name 1000GENOMES:phase_3:EUR d_prime 0.845158 variation1 rs17499404 r2 0.331253
+
+> [q147] [0] variation1 rs17499404 r2 0.996000 variation2 rs6812640 d_prime 1.000000 population_name 1000GENOMES:phase_3:EUR
+
+> [q148] populations[56] frequency 0.456262425447316 allele C population 1000GENOMES:phase_3:EUR allele_count 459
+
+> [q149] populations[57] allele_count 547 population 1000GENOMES:phase_3:EUR allele G frequency 0.543737574552684
+
+Row 27, second pass. Wright 2019's S9 SNPs within 20 kb of rs17499404 that are stronger in AncestryDNA than
+rs2291433 (rs12646716, rs1487624, rs11732737, rs7668402) tag the lead weakly, r² 0.29 to 0.40 (q143-q146): none is a
+proxy, so they are not scored at this lead. rs6812640, the lymphocyte set's lead, is r² 0.996 (q147); its G (0.544,
+q149) against the lead's A (0.545) fits r² 0.996 only coupled (opposed at most about 0.70), so G rides with A.

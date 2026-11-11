@@ -18,39 +18,46 @@ verdict_reason: >-
   study: A lengthens life at P 0.0016, nominal, UK Biobank and LifeGen on the same side. The one test outside both
   analyses' inputs is AncestryDNA's fathers in Wright 2019, at rs2291433 (r² 0.996, its G with the lead's A): the
   same side, raw P 0.099, not significant, and in line with UK Biobank's arm (heterogeneity P 0.43), so no red flag.
-  Healthspan agrees: A delays the end of healthspan in Zenin 2019 (P 7.3e-4, an input of both analyses), and Foote
-  2025's frailty multimorbidity factor is genome-wide at rs2291433 (P 3e-15, the lead's allele less frail), a
-  healthspan-class result (D23) that cannot lift a lifespan tier (D17.1). Exceptional survival is +: Deelen 2019's
+  Four nearby SNPs in the same table are stronger in AncestryDNA (rs12646716, rs1487624, rs11732737, rs7668402, raw
+  P down to 7e-4) but tag the lead only weakly (r² 0.29 to 0.40), so none stands for it.
+  Healthspan agrees: A delays the end of healthspan in Zenin 2019 (P 7.3e-4, an input of both analyses). Foote
+  2025's frailty multimorbidity factor is genome-wide at rs2291433 (P 3e-15, the lead's allele less frail), but that
+  factor is defined partly by high mean arterial pressure, its set colocalises with blood pressure, and it draws on UK
+  Biobank, so it is the blood-pressure signal again rather than separate healthspan evidence; healthspan-class
+  in any case (D23), it cannot lift a lifespan tier (D17.1). Exceptional survival is +: Deelen 2019's
   summary statistics favour A at the 90th (P 1.3e-5) and the 99th percentile (P 3.8e-5, a subset of the 90th's
   cases), both inputs of the multivariate analyses, so neither replicates them.
   Mechanism: heart and vessels, through blood pressure. In Shi 2024's sets led by the variant itself A lowers
   systolic (P 7e-18) and diastolic pressure (P 1e-12), and the locus's other sets are almost all blood pressure and
   hypertension; Timmers 2020 says the life-extending allele near LINC02513 goes with less cardiovascular disease.
   That is association on one variant, not a mediator test. The locus also moves the share of lymphocytes in blood
-  (P 4e-111), in a set that colocalises with blood pressure at H4 0.99, so the two are one signal; Timmers 2020
+  (P 4e-111; A raises it, phased through the set's lead rs6812640, r² 0.996), in a set that colocalises with blood
+  pressure at H4 0.99, so the two are one signal; Timmers 2020
   finds ten trans genes in blood (LEF1, CCR7 and others, T-cell genes) raised by the life-extending allele and calls
   the region a possible regulator of age-related transcription. Which of these carries the effect on life is not
   known. Actionability is preventable: blood pressure is a measure a doctor takes, and the effect is cached at the
-  lead. No trade-off is found (D18.1): A is on the lower-risk side for blood pressure, hypertension and frailty; the
-  lymphocyte direction is not phased here, and no cached source ties it to harm. Causal and effector confidence are
+  lead. No trade-off is found (D18.1): A is on the lower-risk side for blood pressure and hypertension; it raises the
+  lymphocyte share, which no cached source ties to harm. Causal and effector confidence are
   C4 and E4: no credible set of a lifespan-class study holds the variant in Open Targets 26.09, mvAge's and Timmers
-  2020's own studies there have no set on 4p14, and no gene is named (§4.2). Locus-to-gene on the blood-pressure
-  and frailty sets favours KLF3 (about 0.75), and Timmers 2020 finds no cis gene. A/G, the most common genotype, is
+  2020's own studies there have no set on 4p14, and no gene is named (§4.2). Locus-to-gene on Shi's systolic set led
+  by the variant (PIP 0.080) and on the frailty and lymphocyte sets favours KLF3 (0.75 to 0.76), and Timmers 2020
+  finds no cis gene. Whether Foote's frailty set, healthspan-class under D23, should count under the set rule (it
+  would give a causal level from the lead's PIP 0.043 and KLF3 as effector) is put to the lead; C4/E4 meanwhile. A/G, the most common genotype, is
   the reference (§6.2), with no PROTECT token, the split too even (as at 21 and 24). Age of action is unknown:
   Timmers 2020's fading with parental age is collective across nine loci and not confirmed for any one. The evidence
   is European; A is common in East Asians too (0.42), untested there.
 axes:
-  tier: {value: B, cites: [pmid-32678081#q16, pmid-32678081#q6, pmid-32678081#q9, pmid-32678081#q10, pmid-37550455#q25, pmid-37550455#q26, pmid-37550455#q14, pmid-37550455#q3, pmid-37550455#q5, pmid-30642433#q79, pmid-31484785#q60, pmid-30642433#q80, db-ensembl-116#q140, db-ensembl-116#q141, db-ensembl-116#q142, db-gwascatalog-2026.10.29#q189, db-gwascatalog-2026.10.29#q190, db-gwascatalog-2026.10.29#q191]}
-  mechanism: {value: heart_vessels, cites: [pmid-32678081#q12, db-opentargets-26.09#q415, db-opentargets-26.09#q416, db-opentargets-26.09#q417, db-opentargets-26.09#q418, db-opentargets-26.09#q419, db-opentargets-26.09#q420, db-opentargets-26.09#q421, db-opentargets-26.09#q426, db-opentargets-26.09#q427, db-opentargets-26.09#q429, db-opentargets-26.09#q430, pmid-32678081#q17, pmid-32678081#q18, pmid-32678081#q19]}
+  tier: {value: B, cites: [pmid-32678081#q16, pmid-32678081#q6, pmid-32678081#q9, pmid-32678081#q10, pmid-37550455#q25, pmid-37550455#q26, pmid-37550455#q14, pmid-37550455#q3, pmid-37550455#q5, pmid-30642433#q79, pmid-31484785#q60, pmid-30642433#q80, db-ensembl-116#q143, db-ensembl-116#q144, db-ensembl-116#q145, db-ensembl-116#q146, db-ensembl-116#q140, db-ensembl-116#q141, db-ensembl-116#q142, db-gwascatalog-2026.10.29#q189, db-gwascatalog-2026.10.29#q190, db-gwascatalog-2026.10.29#q191]}
+  mechanism: {value: heart_vessels, cites: [pmid-32678081#q12, db-opentargets-26.09#q415, db-opentargets-26.09#q416, db-opentargets-26.09#q417, db-opentargets-26.09#q418, db-opentargets-26.09#q419, db-opentargets-26.09#q420, db-opentargets-26.09#q421, db-opentargets-26.09#q426, db-opentargets-26.09#q427, db-opentargets-26.09#q429, db-opentargets-26.09#q430, db-ensembl-116#q147, db-ensembl-116#q148, db-ensembl-116#q149, pmid-32678081#q17, pmid-32678081#q18, pmid-32678081#q19]}
   pleiotropy: {values: ["mech:cvd"], cites: [pmid-32678081#q12, db-opentargets-26.09#q416, db-opentargets-26.09#q417, db-opentargets-26.09#q419, db-opentargets-26.09#q420, db-opentargets-26.09#q427, db-gwascatalog-2026.10.29#q193, db-gwascatalog-2026.10.29#q194]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
-            cites: [pmid-30729179#q44, db-opentargets-26.09#q422, db-opentargets-26.09#q423, db-opentargets-26.09#q424, db-opentargets-26.09#q425, pmid-30642433#q79, pmid-31413261#q68, pmid-31413261#q69, pmid-32678081#q16]}
+            cites: [pmid-30729179#q44, db-opentargets-26.09#q422, db-opentargets-26.09#q423, db-opentargets-26.09#q424, db-opentargets-26.09#q425, pmid-40759756#q1, pmid-40759756#q2, pmid-40759756#q3, pmid-30642433#q79, pmid-31413261#q68, pmid-31413261#q69, pmid-32678081#q16]}
   actionability: {label: preventable, what: ["act_test:bp"], who: "act_who:doctor", cites: [db-opentargets-26.09#q416, db-opentargets-26.09#q417, db-opentargets-26.09#q419, db-opentargets-26.09#q420, pmid-32678081#q12]}
   context: {values: [eur_only_evidence], cites: [pmid-32678081#q16, pmid-37550455#q5, pmid-30642433#q79, db-ensembl-116#q136]}
 flags:
   - {token: "causal:C4", cites: [db-opentargets-26.09#q412, db-opentargets-26.09#q413, db-opentargets-26.09#q414]}
-  - {token: "effector:E4", cites: [db-opentargets-26.09#q412, db-opentargets-26.09#q413, db-opentargets-26.09#q414, db-opentargets-26.09#q431, pmid-32678081#q17]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q412, db-opentargets-26.09#q413, db-opentargets-26.09#q414, db-opentargets-26.09#q431, db-opentargets-26.09#q434, db-opentargets-26.09#q435, db-opentargets-26.09#q436, pmid-32678081#q17]}
 variants:
   - rsid: rs17499404
     gene: ""
