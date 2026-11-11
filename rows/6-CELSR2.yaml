@@ -25,7 +25,7 @@ axes:
   pleiotropy: {values: ["mech:cvd"], cites: [pmid-30642433#q11]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
-            cites: [db-gwascatalog-2025.01.09#q1, pmid-29227965#q10, pmid-31413261#q6, pmid-31413261#q7, pmid-31413261#q8]}
+            cites: [pmid-30729179#q16, pmid-29227965#q10, pmid-31413261#q6, pmid-31413261#q7, pmid-31413261#q8]}
   actionability: {label: preventable, what: ["act_test:ldl"], who: "act_who:doctor", cites: [pmid-30642433#q11]}
   context: {values: [eur_only_evidence], cites: [pmid-29227965#q10, pmid-31484785#q13]}
 flags:

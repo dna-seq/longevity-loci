@@ -111,8 +111,8 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   and §6.3's check requires effect_size and effect_measure on every study supporting tier A/B, so 67 carries no
   multivariate study; its P 4e-10 is in the verdict prose only.
 - Zenin's healthspan summary statistics for all 228 seed rsIDs are cached (runner job 6428266):
-  `pmid-30729179.supp-healthspan_summary.csv.gz.rows-1102aade.txt`, 189 of 228 found. 6's db-gwascatalog cite can
-  move to it when 6 is next touched.
+  `pmid-30729179.supp-healthspan_summary.csv.gz.rows-1102aade.txt`, 189 of 228 found. 6's db-gwascatalog cite moved
+  to it (pmid-30729179#q16, 2026-11-11).
 - Rules settled on 6: a seed lead that sits in a lifespan credible set stays the lead even when no study reports
   it; a Bayes-factor P (Timmers' iGWAS) is never the study's P; age with no locus-own age bands is UNKNOWN.
 - The scout's queue: pmid-42928374 (FURIN, pleiotropy with mental disorders) waits for locus 81; read it then.
