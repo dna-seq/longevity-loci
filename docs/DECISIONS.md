@@ -264,3 +264,8 @@ person's standing word.
 8. **Vocabulary**: a frailty index stays `meta_analysis` with `HEALTHSPAN` (D23); a look-up whose model the paper
    does not state is written as the paper describes it. Deelen's parental 90th line stays `EXTREME_SURVIVAL_CC`,
    `percentile_case_control_p90`, with `age_of: parent` and the case and control definition in its test.
+9. **An arm already inside the discovery's pooled P replicates nothing**, however separate its people (32 and 16:
+   Chang 2022's 129 healthy agers and 500 others, the same Singapore cohort and team, genotyped later). The P it
+   would replicate already holds it, and §4.1 files "replicated only in small or same-group samples" under C. D19.1
+   is about a sample outside the discovery that shares a measured part of it, not an arm within it. The curator's
+   default (a); (b), separate people read as independent, rejected.
