@@ -17,8 +17,8 @@ verdict_reason: >-
   allele" is its test allele, on the healthy side. Discovery alone is only just past the threshold (P 4.82e-8), and an
   OR above 3 at 2 % invites winner's curse. Unlike row 16's, this replication arm leans the same way at P 0.034 (OR
   3.67, CI 1.10 to 12.2, Cochran's Q P 0.80): 129 healthy agers and 500 others, separate people from the same cohort and team, genotyped later, and
-  already inside the meta P. Whether such an arm is §4.1's independent replication is put to the lead; it does not
-  change the tier, which waits on a lifespan study (D16). With lifestyle covariates the
+  already inside the meta P. An arm already inside the discovery's pooled P replicates
+  nothing (D25.9); it does not change the tier, which waits on a lifespan study (D16). With lifestyle covariates the
   meta P is 8.21e-9. The lifespan side is untested, not null: LifeGen, Zenin and both Deelen percentiles hold no line
   for the variant (T 0.08 % in non-Finnish Europeans), the SNPs that track it in 99 Finns do not tag it in those mostly
   British samples, and a literature search on the rsID finds only Chang's
