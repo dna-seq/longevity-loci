@@ -2380,3 +2380,18 @@ haplotype, not which trait carries the other. No QTL colocalisation (q658). The 
 blood pressure and hypertension, blood cell counts (platelets, eosinophils, basophils, red cells), kidney function,
 height, SHBG and IGF-1; in Verma's coronary set led by the variant A lowers risk (β −0.065, q661 to q663).
 For row 51.
+
+## Reading 2026-11-11, supplement
+
+> [q664] data.variant.credibleSets.rows[34].qualityControls[1] Study locus finemapped without in-sample LD reference
+
+> [q665] data.variant.credibleSets.rows[17] studyLocusId 13205b25196a89e365230ab362780f31 studyId GCST010866 pValueMantissa 1 pValueExponent -17 beta -0.0509404 finemappingMethod PICS
+
+> [q666] data.variant.credibleSets.rows[17].study traitFromSource Coronary artery disease projectId GCST nSamples 649058 nCases 121234
+
+> [q667] data.variant.credibleSets.rows[17].locus.rows[0] posteriorProbability 0.8320779693578286
+
+Row 51, the advisor's read: Foote's set was fine-mapped without in-sample LD (q664), one PICS set. Of the 279 sets at
+the locus, rs11556924 leads 236 (q648), among them the coronary artery disease set of 121,234 cases (q665, q666),
+where rs11556924 holds PIP 0.83 (q667; its variant is 7_130023656_C_T) and the lead the rest. Which SNP acts is open;
+C1 stands on Foote's set by D17.2's letter. For row 51.

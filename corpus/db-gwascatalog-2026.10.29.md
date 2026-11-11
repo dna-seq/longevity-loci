@@ -1132,3 +1132,11 @@ height (G lower), creatinine, blood cell counts (A raises platelets, eosinophils
 riding with A: Salo's lumbar disc herniation, rs11556924-T, OR 1.04 (1.02 to 1.05), P 3 × 10⁻⁸ (q328), the
 longer-life allele raising a disease; C raises coronary atherosclerosis (q329) and hypertension (q330); T lowers HDL
 cholesterol, IGF-1 and creatinine, raises eGFR, SHBG and testosterone; Timmers 2019's own line (T, P 4e-7). For row 51.
+
+## Reading 2026-11-11, supplement
+
+> [q331] discovery_ancestry[0] 829699 European (Estonia, Finland, U.K.)
+
+Salo's lumbar disc herniation study (`study-GCST90837384`), the source of q328: European discovery, 80,724 cases and
+748,975 controls from Estonia, Finland and the UK, so the trade-off at rs11556924 is read in Europeans, where T rides
+with the lead's A (db-ensembl-116#q349, q355). No Open Targets set at the locus is of disc disease. For row 51.

@@ -1,5 +1,4 @@
-# The seed list's locus 51, ZC3HC1 (7q32.2, a coronary artery disease locus). Curated 2026-11-11, the sixth ten-row
-# run's first row. Lead rs56179563 (the seed's only rsID; GRCh38 7:130,045,757, GRCh37 7:129,685,597), G/A, A at
+# The seed list's locus 51, ZC3HC1 (7q32.2, a coronary artery disease locus). Curated 2026-11-11. Lead rs56179563 (the seed's only rsID; GRCh38 7:130,045,757, GRCh37 7:129,685,597), G/A, A at
 # 0.38 in Europeans and 0.43 in East Asians: Timmers 2019's Table 2 SNP, reported genome-wide only by its Bayesian
 # scan. Its one CEU proxy at r² ≥ 0.8 is ZC3HC1's missense SNP rs11556924 (r² 0.94), the coronary disease SNP of the
 # literature, which Timmers' Figure 4 reads in the longevity look-up. In Timmers 2019's, Zenin 2019's, Deelen 2019's,
@@ -10,8 +9,8 @@ locus_name: ZC3HC1
 verdict: kept
 verdict_reason: >-
   Tier B, as the seed has it, on a default put to the lead: the only genome-wide result at the lead is a multivariate
-  frailty factor, which this row treats as D18.3 treats mvAge. In Timmers 2019's million parental lives A, the
-  allele 38 % of Europeans carry, adds 0.21 years per copy at a conventional P of 2.1e-7 (UK Biobank and LifeGen on
+  frailty factor, which this row treats as D18.3 treats mvAge. In Timmers 2019's million parental lives A, at
+  0.38 among European alleles (about 62 in 100 carry it), adds 0.21 years per copy at a conventional P of 2.1e-7 (UK Biobank and LifeGen on
   the same side): suggestive, and the strongest SNP within 300 kb, so no proxy rescues it as one did at row 11. The
   paper calls ZC3HC1 genome-wide and replicated only through its coronary-disease-informed Bayesian scan (P 5.6e-9),
   which is never the study's P here (row 6), and Deelen 2019's look-up table reprints that value as Timmers' P. On
@@ -21,12 +20,15 @@ verdict_reason: >-
   partly by high mean arterial pressure (its Q index P 6.4e-4, kept under the deposit's filter). D23 and D26.6 file
   Foote's factor as healthspan-class, and by that letter the row would be A: Timmers co-occurs (D16), and Deelen
   2019's longevity meta-analysis, which holds no UK Biobank data, replicates on A's side at the 90th percentile (OR
-  1.075, P 0.0012, one-sided 6e-4) and the 99th (OR 1.084, P 0.026, one-sided 0.013), with no red flag anywhere. The
+  1.075, P 0.0012, one-sided 6e-4) and the 99th (OR 1.084, P 0.026, one-sided 0.013), and the one calibrated test, FinnGen, raises no red flag. The
   default reads the factor as D18.3 reads a multivariate ageing result, which does not meet A's first criterion, so B;
-  the factor colocalises with coronary disease and hypertension and, as at row 27, carries the cardiovascular signal
-  rather than separate healthspan evidence. The lead is asked to choose: A on D23's letter, B (this default), or C if
-  a genomic-SEM factor cannot anchor at all; the same question will come back at ABO, IGF2R, POM121C, GBX2/ASB18 and
-  HP, Timmers' other Bayesian-scan loci. Timmers' Figure 4 look-up in Deelen 2014 and Broer 2015 (at rs11556924, one-
+  the factor colocalises with coronary disease and hypertension and, as at row 27, carries the cardiovascular signal.
+  The healthspan cell is + on Foote alone, as D26.6 lets the factor decide a healthspan cell; Zenin leans A's way
+  without reaching nominal. The lead is asked to choose: A on D23's letter (only the tier moves), B (this default), or
+  C if a genomic-SEM factor cannot anchor at all (then the healthspan cell goes to 0 on Zenin, causal and effector to
+  C4/E4 by D25.5, and the gene name goes); the same question will come back at ABO, IGF2R, POM121C, GBX2/ASB18 and
+  HP, Timmers' other Bayesian-scan loci. Rosoff's mvAge, the common factor, does not reach it (z 4.69 at
+  rs11556924 in its TWAS table, unquoted), while Foote's multimorbidity factor does. Timmers' Figure 4 look-up in Deelen 2014 and Broer 2015 (at rs11556924, one-
   sided P 0.028, Alpha 1.0: the replication as large as the discovery) is largely Deelen 2019's people and is counted
   once with it. FinnGen's death endpoint leans A's way (one-sided P 0.23); under APOE's within-FinnGen factor Timmers
   predicts A −0.021 on the log odds of death, power 0.85, but heterogeneity P 0.084 with both SEs, so no D21 red
@@ -37,13 +39,15 @@ verdict_reason: >-
   the lead nor rs11556924 is in Wright's tables, which list only clumped SNPs below about P 0.003, so the test at the
   lead is unread. Three weaker AncestryDNA SNPs nearby (r² 0.22 to 0.33) lean the same way. The mechanism is heart
   and vessels: G raises coronary artery disease (Verma's set led by the variant, P 7e-17; A lowers it, β −0.065),
-  angina and heart failure, and A lowers systolic pressure (P 2e-11) and, at rs11556924, hypertension; Timmers
+  and A lowers systolic pressure (P 2e-11) and, at rs11556924, hypertension; Timmers
   names coronary disease as the locus's prior risk factor. That is association at one haplotype, not a mediator
   test. The locus is broad besides: blood cell counts (A raises platelets, eosinophils, basophils), kidney function,
   height, SHBG and IGF-1. A trade-off is detected (D18.1): at rs11556924 T, riding with A, raises lumbar disc
-  herniation (OR 1.04, P 3e-8). With a trade-off the row is descriptive (D18.2), though blood pressure is a measure
+  herniation (OR 1.04, P 3e-8, in 80,724 European cases from Estonia, Finland and the UK). With a trade-off the row is descriptive (D18.2), though blood pressure is a measure
   a doctor takes. Causal confidence is C1: the lead tops Foote's set, the one scoring-class set at the locus and the
-  one the tier rests on (D17.2, D25.5), at PIP 0.82, rs11556924 holding the rest. The effector is E2 ZC3HC1: L2G
+  one the tier rests on (D17.2, D25.5), at PIP 0.82, rs11556924 holding the rest. That is
+  one PICS set fine-mapped without in-sample LD; rs11556924 leads 236 of the locus's 279 sets, the large coronary
+  disease sets among them (CAD, 121,234 cases, PIP 0.83 to it), so which of the two SNPs acts is open. The effector is E2 ZC3HC1: L2G
   0.93, the only gene scored, with no QTL colocalisation; rs11556924 is ZC3HC1's missense variant, but at PIP 0.18
   it is not the set's lead, so the coding route to E1 is not taken. A/G, the most common genotype (about 47 in 100),
   is the reference, with no PROTECT token (as at 21, 27 and 29). Age of action is unknown: neither Timmers' age nor
@@ -52,14 +56,14 @@ verdict_reason: >-
 axes:
   tier: {value: B, cites: [pmid-40759756#q4, pmid-40759756#q5, pmid-40759756#q6, pmid-30642433#q237, pmid-30642433#q238, pmid-30642433#q239, pmid-30642433#q241, pmid-30642433#q42, pmid-30642433#q49, pmid-31413261#q133, pmid-31413261#q2, pmid-31484785#q90, db-ensembl-116#q349, db-ensembl-116#q350, db-opentargets-26.09#q649, db-opentargets-26.09#q650, db-opentargets-26.09#q654, db-opentargets-26.09#q655, db-opentargets-26.09#q656]}
   mechanism: {value: heart_vessels, cites: [pmid-30642433#q237, db-opentargets-26.09#q661, db-opentargets-26.09#q662, db-opentargets-26.09#q663, db-gwascatalog-2026.10.29#q325, db-gwascatalog-2026.10.29#q327, db-gwascatalog-2026.10.29#q329, db-gwascatalog-2026.10.29#q330, db-ensembl-116#q349]}
-  pleiotropy: {values: ["mech:cvd", broad, tradeoff], cites: [db-gwascatalog-2026.10.29#q325, db-gwascatalog-2026.10.29#q327, db-gwascatalog-2026.10.29#q328, db-gwascatalog-2026.10.29#q329, db-opentargets-26.09#q648, db-ensembl-116#q349]}
+  pleiotropy: {values: ["mech:cvd", broad, tradeoff], cites: [db-gwascatalog-2026.10.29#q325, db-gwascatalog-2026.10.29#q327, db-gwascatalog-2026.10.29#q328, db-gwascatalog-2026.10.29#q331, db-gwascatalog-2026.10.29#q329, db-opentargets-26.09#q648, db-ensembl-116#q349]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
             cites: [pmid-40759756#q6, pmid-30729179#q74, pmid-30642433#q239, pmid-31413261#q133]}
-  actionability: {label: descriptive, cites: [db-gwascatalog-2026.10.29#q328, db-gwascatalog-2026.10.29#q325]}
+  actionability: {label: descriptive, cites: [db-gwascatalog-2026.10.29#q328, db-gwascatalog-2026.10.29#q331, db-gwascatalog-2026.10.29#q325]}
   context: {values: [eur_only_evidence], cites: [pmid-30642433#q239, pmid-31413261#q133, pmid-30729179#q74, db-ensembl-116#q348, db-ensembl-116#q356]}
 flags:
-  - {token: "causal:C1", cites: [db-opentargets-26.09#q649, db-opentargets-26.09#q650, db-opentargets-26.09#q651, db-opentargets-26.09#q652, db-opentargets-26.09#q653]}
+  - {token: "causal:C1", cites: [db-opentargets-26.09#q649, db-opentargets-26.09#q650, db-opentargets-26.09#q651, db-opentargets-26.09#q652, db-opentargets-26.09#q653, db-opentargets-26.09#q664, db-opentargets-26.09#q665, db-opentargets-26.09#q666, db-opentargets-26.09#q667]}
   - {token: "effector:E2", cites: [db-opentargets-26.09#q659, db-opentargets-26.09#q660, db-opentargets-26.09#q658, db-ensembl-116#q354]}
 variants:
   - rsid: rs56179563
