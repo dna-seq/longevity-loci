@@ -786,12 +786,14 @@ Pilling's combined parents (P 4 × 10⁻⁶). No other trait at the lead itself.
 > [q233] _embedded.associations[0].snp_effect_allele[0] rs1265181-?
 
 At rs1265181, r² 0.81 to row 37's lead in CEU (the window listing): psoriasis, OR 2.0, P 1 × 10⁻¹⁰, Bejaoui 2019, risk
-allele not given (q231 to q233); Zhang 2009's psoriasis line (P 2 × 10⁻²⁰⁸) is a Chinese sample. Of the lead's 71
-proxies at r² ≥ 0.8, 14 have Catalog records (each queried 2026-11-11): psoriasis at six (rs6933647, rs3130455,
-rs3130467, rs1265181, rs3130517, rs130076; Lee 2019's are SNP-interaction lines), and immune-protein levels (HMOX1,
-IL-12/LAG3, beta-2-microglobulin, IL-12B), sarcoidosis, membranous nephropathy, HIV set-point viral load, EBV copy
-number, hepatitis B vaccine response, HDL cholesterol and waist-to-hip ratio once or twice each. None gives a risk
-allele for psoriasis, so no direction is read. For row 37.
+allele not given (q231 to q233), in an Egyptian sample (q239). Of the lead's 71 proxies at r² ≥ 0.8, 14 have Catalog
+records (each cached 2026-11-11, `associations-<rsid>.json`): psoriasis at six (rs6933647, rs3130455, rs3130467,
+rs1265181, rs3130517, rs130076), every one in a sample that is not European or whose ancestry is not reported
+(Bejaoui, Egypt; Yang, Taiwan; Zhang 2009, China; Lee's SNP-interaction lines, ancestry NR: the study records
+`study-GCST008096`, `-GCST90435380`, `-GCST000321`, `-GCST007023`), so a CEU r² does not carry them to this signal and
+no psoriasis link is read. The others: immune-protein levels (HMOX1, IL-12/LAG3, beta-2-microglobulin, IL-12B),
+sarcoidosis, membranous nephropathy (q236 to q238), HIV set-point viral load, EBV copy number, hepatitis B vaccine
+response, HDL cholesterol and waist-to-hip ratio, once or twice each. For row 37.
 
 > [q234] _embedded.associations[0] association_id 165704410 risk_frequency NR pvalue_description  pvalue_mantissa 2 pvalue_exponent -13 multi_snp_haplotype false snp_interaction false range - beta - p_value 2e-13 accession_id GCST90302862 pubmed_id 37377963 first_author Wen YP
 
@@ -800,3 +802,22 @@ allele for psoriasis, so no direction is read. For row 37.
 At the seed's other rsID rs3131621 (`associations-rs3131621.json`, totalElements 4): rheumatoid arthritis or
 inflammatory bowel disease, P 2 × 10⁻¹³, allele "?" (q234, q235), beside Wright's fathers (P 9 × 10⁻⁹) and Pilling's
 fathers and combined parents. For row 37's prose and the scout queue.
+
+## Reading 2026-11-11, record
+
+> [q236] _embedded.associations[1] association_id 10071455 risk_frequency 0.2191 pvalue_description  pvalue_mantissa 4 pvalue_exponent -37 multi_snp_haplotype false snp_interaction false range [NR] or_per_copy_num 2.42 or_value 2.42 beta - p_value 4e-37 accession_id GCST000984 pubmed_id 21323541 first_author Stanescu HC
+
+> [q237] _embedded.associations[1].reported_trait[0] Idiopathic membranous nephropathy
+
+> [q238] _embedded.associations[1].snp_effect_allele[0] rs1265159-T
+
+> [q239] discovery_ancestry[0] 631 Greater Middle Eastern (Middle Eastern, North African or Persian) (Egypt)
+
+> [q240] discovery_ancestry[0] 2894 European (France, Netherlands, U.K.)
+
+At rs1265159, row 37's tag (r² 0.83, D′ 1, db-ensembl-116#q244): idiopathic membranous nephropathy, risk allele T
+(0.219), OR 2.42, P 4 × 10⁻³⁷, Stanescu 2011 (q236 to q238), in a European sample from France, the Netherlands and
+the UK (`study-GCST000984.json`, q240). Phase, derived: with T at about 0.22 and the lead's A at 0.28 (q247 of the
+Ensembl note), D′ 1 and r² 0.83 fit only T on the A haplotype (r² about 0.86; the other phase gives at most 0.11). So
+the nephropathy risk allele travels with the lead's shorter-lived A: the same side, no trade-off. q239 is Bejaoui
+2019's psoriasis sample (`study-GCST008096.json`), Egyptian. For row 37.

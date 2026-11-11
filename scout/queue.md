@@ -61,7 +61,8 @@ read), and every identifier the paper has. The curator takes it from here; the s
   *Aging (Albany NY)*, 2017. PMID 29227965. Replication: Wright KM et al., *G3*, 2019, PMID 31484785. Corpus notes
   `corpus/pmid-29227965.md`, `corpus/pmid-31484785.md`. From the curator, 2026-11-11.
 - **Why:** Pilling's fathers' lead, 278 kb from row 37's lead rs3130507 (the mothers' signal), with no Ensembl CEU pair
-  above the 0.05 floor (`db-ensembl-116#q247`, `q248`), and the sex split agrees: a separate signal, and the seed's
+  above the 0.05 floor (`db-ensembl-116#q247`, `q248`; the endpoint answers pairs megabases apart, `q242`): a
+  separate signal, and the seed's
   second rsID at locus 37 with no locus of its own. Row 37 names it in prose; D25.6 sends it here. It has the stronger
   case of the two: replicated in AncestryDNA's fathers (P 7.7e-4, meta-analysis 8.9e-9, Wright's Table 3), LifeGen
   with UK Biobank P 1.9e-6, Timmers' LifeGen-without-UK-Biobank fathers one-sided P 0.093; the GWAS Catalog also lists

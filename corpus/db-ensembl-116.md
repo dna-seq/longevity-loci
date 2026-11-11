@@ -895,6 +895,7 @@ pair for the two (`ld-ceu-rs3130507-rs3131621.json`, no text).
 > [q248] populations[64] allele A allele_count 131 frequency 0.661616161616162 population 1000GENOMES:phase_3:CEU
 
 Both of row 37's seed SNPs are in the CEU panel: rs3130507 G 0.722 (q247), rs3131621 A 0.662 (q248). So the empty
-pair reads as r² below the 0.05 floor (row 28's reading of an empty pair, q156). That r² is small is also derived from
-Pilling's sex split: rs3131621's fathers' z of about 5.5 would show as at least r × 5.5 at rs3130507, whose fathers'
-P is 0.24 (z 1.2). For row 37.
+pair reads as r² below the 0.05 floor (row 28's reading of an empty pair, q156). The pairwise endpoint is not limited
+to the window's reach: it answered rs3130507 against row 36's rs13190937 (6:28.4 Mb, about 2.7 Mb away) with r² 0.061
+(q242). So the earlier reading's "no pair returned for rs3131621 ... unknown, not zero" (row 36's tag against
+rs3131621) also reads as r² below 0.05, both being in the panel. For row 37.
