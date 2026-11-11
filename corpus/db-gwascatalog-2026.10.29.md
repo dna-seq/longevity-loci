@@ -896,7 +896,7 @@ free cholesterol, GCST90501278, q250 to q252; sphingomyelins, fatty acids, very 
 Targets' set for the same accession gives β −0.0324 per G with rs6907508 leading it, and every other record agrees
 with Open Targets. Those lines are not read for direction.
 
-The proxy sweep over the 35 SNPs at r² ≥ 0.8 (Ensembl's CEU window, db-ensembl-116#q250 onward): 25 have records,
+The proxy sweep over the 35 SNPs at r² ≥ 0.8 (Ensembl's CEU window, db-ensembl-116#q250 onward): 24 have records,
 146 associations, most of them lipids, body size and liver enzymes. Read here, each on the minor allele that travels
 with the lead's G (D′ 1, frequencies; derived), each study's ancestry from its cached record:
 - heart failure (MTAG, boosted by heart-function traits; GCST90668013, European, q268):

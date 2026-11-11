@@ -939,3 +939,6 @@ Wright's tags: rs9462007 r² 0.79, D′ 1.00 (q255), its T 0.13 in EUR (q253); r
 0.14 (q254). The proxies whose GWAS Catalog records row 39 reads: rs145294670 and rs3800461, r² 1.00 (q257, q258);
 rs2492863, rs2814948 and rs2814993, r² 0.83, D′ 1.00 (q259 to q261). At D′ 1 a minor allele near the lead's 10 %
 travels with the lead's minor G (derived, not phased).
+The edge of the window: rs112563428 (r² 1.00, 208 kb from the lead) has its own CEU window cached
+(`ld-window-ceu-rs112563428.json`, r² ≥ 0.8); it holds the lead and the same 35 SNPs, none further, so the block
+ends inside the lead's window and the proxy sweep is whole.
