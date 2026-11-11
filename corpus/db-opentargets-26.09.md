@@ -1112,3 +1112,20 @@ QTL, cis, at H4 0.937 to 0.964; Timmers 2020's:
 
 CDKN2B is the only gene that colocalises, on every set; locus-to-gene is below 0.5 for every gene (CDKN2B 0.36,
 q18), so colocalisation alone: `effector:E2`, CDKN2B. One adipose exon QTL carries it, a thin basis.
+
+### rs61905747 (ZW10/TTC12), for row 67
+
+Timmers 2020's multivariate set (43f2d00e), the only lifespan-class set in the window (q24's prose):
+
+> [q285] data.credibleSet.colocalisation count 15
+
+> [q286] data.credibleSet.colocalisation.rows[11] rightStudyType eqtl h4 0.9972065574855874 clpp 0.23815112477463007
+
+> [q287] data.credibleSet.colocalisation.rows[11].otherStudyLocus isTransQtl false
+
+> [q288] data.credibleSet.colocalisation.rows[11].otherStudyLocus.study.target approvedSymbol USP28
+
+Fifteen QTL colocalisations, every one USP28's (expression and exon-level expression across GTEx v10, HipSci and
+Geuvadis), two at H4 ≥ 0.8, both cis: GTEx v10 muscle (q286) and blood (0.997) gene expression; the other thirteen
+at H4 0.04 to 0.58. No other gene colocalises, and no gene passes locus-to-gene (CLDN25 0.35, q27): colocalisation
+alone, `effector:E2`, USP28, which Timmers 2020's SMR also names (pmid-32678081#q7).

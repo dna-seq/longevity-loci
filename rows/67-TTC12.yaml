@@ -13,9 +13,10 @@ verdict_reason: >-
   a powered sample of 309,383, show nothing (Wright 2019: P 0.81, effect 0.0008 against UK Biobank's -0.016,
   heterogeneity P 3.0e-4), and its authors list the locus as not replicated: red-flag heterogeneity, which caps the
   row at B (§4.1). Timmers 2019 counts it among the cancer-protective loci whose protective allele also lengthens
-  life, so no trade-off is recorded. The effector is unclear, so no gene is named (requirements §4.2, §6.2: a gene
-  only at E1/E2): locus-to-gene is low for every gene (CLDN25 0.35, ZW10 0.20) and Timmers 2020's expression
-  analysis names USP28, ANKK1 and TTC12. Age of action is unknown: no cached source gives this locus's own age
+  life, so no trade-off is recorded. The effector is USP28 at E2 (requirements §4.2, §6.2), by colocalisation
+  alone: the only cis-QTL colocalisations at H4 ≥ 0.8 are USP28's expression in GTEx muscle and blood (0.997), and
+  every one of the set's fifteen QTL colocalisations is USP28's; locus-to-gene is low for every gene (CLDN25 0.35,
+  ZW10 0.20), and Timmers 2020's expression analysis names USP28, ANKK1 and TTC12. Age of action is unknown: no cached source gives this locus's own age
   bands. The seed's other rsID, rs2186800 (TTC12, mvAge in Rosoff 2023, the source of the seed's name), lies about
   400 kb away and is not among the 155 members of the lead's credible set: not this signal, and not read here.
 axes:
@@ -29,11 +30,11 @@ axes:
 flags:
   - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-29227965#q9, db-opentargets-26.09#q24]}
   - {token: "causal:C2", cites: [db-opentargets-26.09#q25]}
-  - {token: "effector:E3", cites: [db-opentargets-26.09#q27, pmid-32678081#q7]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q27, pmid-32678081#q7, db-opentargets-26.09#q285, db-opentargets-26.09#q286, db-opentargets-26.09#q287, db-opentargets-26.09#q288]}
   - {token: "ld_proxy_of:rs61905747", cites: [db-opentargets-26.09#q26]}  # rs17613838, r² 0.99
 variants:
   - rsid: rs61905747
-    gene: ""
+    gene: USP28
     phenotype: ZW10/USP28 region, cancer and ageing
     trait_efo_id: EFO_0007796
     effect_allele: A
@@ -56,16 +57,16 @@ variants:
           You carry one copy of a less common version of this DNA region (about 29 in 100 people of European
           ancestry do). In British and European studies it went with parents living a little less long and with
           slightly worse odds of staying free of major disease, possibly through cancer, but a large American
-          study did not see the effect. It is a likely finding, not a settled one, and the effect is small. Which
-          gene in the region is responsible is not yet known.
+          study did not see the effect. It is a likely finding, not a settled one, and the effect is small. The gene
+          most likely involved is USP28, though that is not settled.
       - genotype: C/C
         state: risk
         conclusion: >-
           You carry two copies of a less common version of this DNA region (about 3 in 100 people of European
           ancestry do). In British and European studies each copy went with parents living a little less long and
           with slightly worse odds of staying free of major disease, possibly through cancer, but a large American
-          study did not see the effect. It is a likely finding, not a settled one, and the effect is small. Which
-          gene in the region is responsible is not yet known.
+          study did not see the effect. It is a likely finding, not a settled one, and the effect is small. The gene
+          most likely involved is USP28, though that is not settled.
 studies:
   - rsid: rs61905747
     note: pmid-29227965
