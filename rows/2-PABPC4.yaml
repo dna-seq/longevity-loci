@@ -1,37 +1,43 @@
 # The seed list's locus 2, PABPC4 (1p34.2). Curated 2026-11-11, the ten-row run's fifth row. Lead rs3768321
 # (Rosoff 2023's mvAge, Table 1), the seed's only rsID here. Wright 2019's tables hold no clumped SNP at it; the
-# nearest, in one birth cohort of mothers at P about 1e-3 (rs17561720, rs9659165), have no cached LD to it and are
-# not read. Deelen 2019's Supplementary Data 1 has no row for it. Open Targets 26.09: mvAge's credible set and two lipid sets.
+# nearest, in one birth cohort of mothers at P about 1e-3 (rs17561720, rs9659165), are not read: rs17561720 is at
+# r² 0.09 to it in 1000 Genomes CEU (the EUR pair unreturned), rs9659165 has no cached LD. Deelen 2019's
+# Supplementary Data 1 has no row for it; its summary statistics do (corrected 2026-11-11, the lead's review). Open Targets 26.09: mvAge's credible set and two lipid sets.
 locus_id: 2
 locus_name: PABPC4
 verdict: re-tiered
 verdict_reason: >-
   Tier C, down from the seed's single-track B: a genome-wide multivariate result with no co-occurring lifespan
-  study, so it cannot score (§4.5 as D16 reads it) and stays in the research view. Genome-wide significant only in Rosoff 2023's mvAge, a
+  study, so it cannot score (§4.5 as D16 reads it, D18.3) and stays in the research view. Genome-wide significant only in Rosoff 2023's mvAge, a
   multivariate factor behind healthspan, frailty, exceptional longevity, parental lifespan and epigenetic age
   (P 6.5e-10, G on the healthier-ageing side). Rosoff lists it as novel: more than 1 Mb from every locus the five
   input studies found, so none of them reached genome-wide significance here alone. A multivariate result scores
   only with a co-occurring scoring-class lifespan study at p < 0.05 on the same allele and direction (D16), and
   there is none: in Timmers 2019's million parents' lives G leans to longer life in both UK Biobank and LifeGen at
-  P 0.071, not nominal. Healthspan agrees and is suggestive: G delays the end of healthspan in Zenin 2019's 300,447 UK Biobank
+  P 0.071, not nominal. The one sample independent of UK Biobank and LifeGen nearby, Wright 2019's AncestryDNA
+  mothers born 1886-1918, has rs17561720 135 kb away at raw P 1.5e-3, but it does not tag the lead: Ensembl's 1000
+  Genomes EUR pair is not returned (unknown) and its CEU pair gives r² 0.09, D′ 0.32, so it is not read as this
+  locus's lifespan study. Healthspan agrees and is suggestive: G delays the end of healthspan in Zenin 2019's 300,447 UK Biobank
   participants (P 1.8e-7), the same people as mvAge's healthspan input. mvAge pools those same samples, so nothing
   here is an independent replication, and its Q test (P 0.02) hints that the SNP does not act evenly through the
-  shared factor. A sub-genome-wide lifespan result never makes A or B (R-TIER-4). Exceptional survival is untested:
-  no cached source reports rs3768321 or a proxy in a longevity case-control. The mechanism is filed as metabolism:
+  shared factor. A sub-genome-wide lifespan result never makes A or B (R-TIER-4). Exceptional survival is tested
+  and null: Deelen 2019's summary statistics hold rs3768321 itself, T lowering the odds of reaching the 90th
+  percentile (P 0.052) and the 99th (P 0.19), G on the long-lived side, not significant; Deelen's cohorts are one of
+  mvAge's inputs, so this is no independent test either. The mechanism is filed as metabolism:
   rs3768321 itself is the fine-mapped variant of strong blood-lipid signals in Open Targets 26.09 (HDL cholesterol,
   P 4.7e-68, PIP 1.00; triglycerides, P 1.8e-24, PIP 0.90), T lowering HDL and raising triglycerides, the side
   that ages worse; Rosoff's GWAS Catalog list adds HbA1c, type 2 diabetes and body shape. That is association on one
   variant, not a mediator test. In mvAge's own credible set (Open Targets, PICS) rs3768321 holds PIP 0.17, the
   highest of 100 members (causal:C2); the top locus-to-gene score is PABPC4 at 0.23, below 0.5 (effector:E3), so no
-  gene is named (§4.2, §6.2: a gene only at E1/E2), though PABPC4 scores 0.77 on the HDL set. Age of action is
+  gene is named (§4.2, §6.2: a gene only at E1/E2), though PABPC4 scores 0.77 on the HDL set, a lipid trait's set, not the row's own claim (D17.2). Age of action is
   unknown: no cached source gives this locus's own age bands.
 axes:
-  tier: {value: C, cites: [pmid-37550455#q1, pmid-37550455#q3, pmid-37550455#q4, pmid-37550455#q5, pmid-30642433#q25, pmid-30729179#q14]}
-  mechanism: {value: metabolism, cites: [db-opentargets-26.09#q40, db-opentargets-26.09#q42, db-opentargets-26.09#q43, db-opentargets-26.09#q45, pmid-37550455#q1]}
+  tier: {value: C, cites: [pmid-37550455#q1, pmid-37550455#q3, pmid-37550455#q4, pmid-37550455#q5, pmid-30642433#q25, pmid-30729179#q14, pmid-31484785#q41, db-ensembl-116#q38, pmid-31413261#q21, pmid-31413261#q22]}
+  mechanism: {value: metabolism, cites: [db-opentargets-26.09#q40, db-opentargets-26.09#q42, db-opentargets-26.09#q43, db-opentargets-26.09#q45, db-opentargets-26.09#q95, db-opentargets-26.09#q96, pmid-37550455#q1]}
   pleiotropy: {values: [broad], cites: [pmid-37550455#q1, pmid-37550455#q7, db-opentargets-26.09#q40, db-opentargets-26.09#q43]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: "+", lifespan: "0", exceptional_survival: untested,
-            cites: [pmid-30729179#q14, pmid-30642433#q25, pmid-37550455#q1, pmid-37550455#q2]}
+  outcome: {healthspan: "+", lifespan: "0", exceptional_survival: "0",
+            cites: [pmid-30729179#q14, pmid-30642433#q25, pmid-37550455#q1, pmid-37550455#q2, pmid-31413261#q21, pmid-31413261#q22]}
   actionability: {label: descriptive, cites: [pmid-37550455#q1]}
   context: {values: [eur_only_evidence], cites: [pmid-37550455#q1, pmid-30642433#q25]}
 flags:

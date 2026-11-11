@@ -155,3 +155,13 @@ rs4640417 (`variation-rs4640417.json`): GRCh38 2:648,527, A/G in Europeans, A 0.
 > [q37] [0] d_prime 0.999990 r2 0.462307 population_name 1000GENOMES:phase_3:EUR variation2 rs4845625 variation1 rs2228145
 
 rs2228145 and rs4845625 (Timmers 2019's suggestive IL6R SNP): r² 0.46, D′ 1.00 in EUR. For row 8.
+
+> [q38] [0] r2 0.094331 d_prime 0.317303 variation2 rs17561720 variation1 rs3768321 population_name 1000GENOMES:phase_3:CEU
+
+> [q39] populations[76] frequency 0.192842942345924 population 1000GENOMES:phase_3:EUR allele T allele_count 194
+
+> [q40] mappings[0] end 39705554 coord_system chromosome start 39705554 seq_region_name 1 location 1:39705554-39705554 allele_string C/A/T ancestral_allele C strand 1 assembly_name GRCh38
+
+rs3768321 and rs17561720: Ensembl's 1000 Genomes EUR pair returned nothing (unknown), and its CEU pair, a subset of
+EUR (Utah residents of northern and western European ancestry), gives r² 0.09, D′ 0.32. rs17561720 (1:39,705,554 in
+GRCh38, C/A/T; T 0.19 in EUR) is not a proxy of rs3768321 in the panel that answers. For row 2.

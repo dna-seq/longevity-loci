@@ -479,3 +479,10 @@ rest. For row 11.
 rs1049053 (6:32,666,628 C/T): no credible set of the eight lifespan, healthspan, longevity and current-age studies
 holds it (`credibleSets-longevity8-6_32666628_C_T.json`), and Open Targets 26.09 has no record of the variant at all
 (`variant-6_32666628_C_T.json`). For row 103.
+
+> [q95] data.credibleSet.l2GPredictions.rows[0] score 0.7735595107078552
+
+> [q96] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol PABPC4
+
+The locus-to-gene score of PABPC4 on the HDL cholesterol set led by rs3768321 (`credibleset-0a6b39073b95a8a3d1f7e722abf30a8b.json`,
+q40-q42): 0.77, above 0.5, on a lipid trait's set, not the row's own claim (D17.2). For row 2.

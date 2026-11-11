@@ -20,7 +20,7 @@ mechanical consensus of the research tracks, to be confirmed or overturned by th
 - 38 HLA-DQA1 (lead rs34967069, the HLA class II region), tier B (seed A): genome-wide, no independent replication of its own (the AncestryDNA mothers' tag is shared with 103).
 - 81 FES/FURIN (lead rs6224, Pilling's rs17514846 its proxy), tier A kept: replicated in LifeGen without UK Biobank; effector FES by L2G.
 - 103 (lead rs1049053, Zenin 2019's HLA-DQB1 healthspan SNP), tier C (seed A): genome-wide in healthspan only, its replication failed (power about 0.8); its lifespan results are row 38's signal through LD (D17.1).
-- 2 PABPC4 (lead rs3768321, Rosoff 2023's mvAge), tier C (seed B): genome-wide only in the multivariate factor; lifespan P 0.071, so it cannot score (D16).
+- 2 PABPC4 (lead rs3768321, Rosoff 2023's mvAge), tier C (seed B): genome-wide only in the multivariate factor; lifespan P 0.071, so it cannot score (D16); Wright's nearby mothers' SNP not a tag (CEU r² 0.09); Deelen null (P 0.052).
 - 4 LINC02796 (lead rs2613508, the NEGR1 obesity locus), tier B kept: genome-wide only in mvAge, with a nominal lifespan study (P 5.3e-4) that lets it score (D16); effector NEGR1 by L2G.
 - 5 FPGT / TNNI3K (lead rs146254978, a 2 % variant), tier B kept: genome-wide only in Pilling 2017's parents' age-at-death analysis (P 4.6e-8), the rare C protective; not in Open Targets (C4/E4, no gene).
 - 7 MAGI3 (lead rs1230666, the PTPN22 autoimmune region), tier B kept: genome-wide only in Timmers 2019's million lives (P 6.4e-9), null in the longevity look-ups; C1 by PICS PIP 0.64, E3 (no gene).
