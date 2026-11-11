@@ -81,3 +81,13 @@ ids noted, or (b) a row per id; answered "2a". A row gains `also_loci`, the ids 
 `locus_id` and each a seed locus; a row for a folded id is a duplicate. Rejected: (b), two rows scoring one
 signal twice in the module.
 
+## D15 — a multivariate test supports on its allele, direction and P (2026-11-11)
+
+At 67-TTC12 the curator could not write Timmers 2020's multivariate test (P 4e-10) as a study: §6.3 asks an
+effect size of every study supporting a tier A/B row, and a MANOVA across healthspan, lifespan and longevity has
+none. The lead settled it under the person's standing word (2026-11-11, "if this is autonomous"): a
+`multivariate_healthspan_lifespan` study owes what a nominal look-up owes (D13), the allele, a direction and its P.
+Rejected: an effect size from one of its component traits (that is a different study row, with that trait's
+`phenotype_class`), and leaving the test in prose (the strongest P at the locus would support nothing the check
+sees).
+

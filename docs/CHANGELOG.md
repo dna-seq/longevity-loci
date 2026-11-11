@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- A multivariate healthspan-lifespan test supports a tier A/B row on its allele, direction and P, having no single effect size (D15).
 - `loci fetch-supp` reads a gzipped file, and `--rows REGEX` caches only the lines a row needs (with each table's header), so a summary-statistics deposit (Zenin 2019's 237 MB csv.gz) can back a quote.
 - just-dna-format 0.8's longevity reference example and the compiler's longevitymap v2 shape audit, copied into `docs/format08_reference/`, with `docs/FORMAT08_REFERENCE.md` saying what they settle for the export and the rows.
 - From the pilot (RM5): a study quote naming the proxy the study reported is grained; `mediator:` takes a MONDO id where OLS retired the EFO one; `study_design: parental_lifespan_linear` for a linear model of parents' lifespan.

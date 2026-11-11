@@ -134,7 +134,7 @@ nothing to check.
   - On a tier A or B row: a genome-wide significant study, not MR-only, not n = 1 genomes (R-TIER-4); not one
     unreplicated `centenarian_case_control` study (R-TIER-2; a percentile case-control design is not read as
     one); §6.3's `p_value`, `p_value_num`, `effect_size`, `effect_measure` and `effect_allele` on every supporting
-    study, except that a `nominal` one (a replication look-up) needs only `p_value`, `p_value_num`,
+    study, except that a `nominal` one (a replication look-up) or a `multivariate_healthspan_lifespan` one (D15) needs only `p_value`, `p_value_num`,
     `effect_allele` and a `direction` other than `unknown` (or an `effect_size`) (D13); and, once a variant lists three genotypes, exactly one neutral, or every one neutral when its
     `direction` is `contested` (a trade-off with unresolved net direction, §6.2). Fewer than three genotypes is
     `incomplete`, a warning listed with `-v`: an APOE-style locus is scored as a diplotype (§6.4).

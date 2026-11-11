@@ -4,6 +4,7 @@ repository."""
 
 from __future__ import annotations
 
+import re
 import shutil
 from pathlib import Path
 
@@ -539,3 +540,26 @@ def test_mediator_takes_efo_or_mondo(token: str, ok: bool) -> None:
     else:
         with pytest.raises(ValueError):
             check_token(token)
+
+
+def test_a_multivariate_test_supports_without_an_effect_size(tree: Path) -> None:
+    """D15, from 67-TTC12: a multivariate test's statistic has no per-trait effect size, so a genome-wide one owes
+    the allele, a direction and its P, as a nominal look-up does; a Cox study still owes all five of §6.3's fields."""
+    text = _row(tree).read_text()
+    study = text[text.index("studies:\n") + len("studies:\n"):]
+    bare = "".join(line for line in study.splitlines(keepends=True)
+                   if not line.startswith(("    effect_size:", "    effect_measure:", "    effect_unit:")))
+    multi = re.sub(r"study_design: \w+", "study_design: multivariate_healthspan_lifespan", bare, count=1)
+    assert "multivariate_healthspan_lifespan" in multi and "stat_significance: significant" in multi
+
+    def rules() -> list[tuple[str, str]]:
+        found = check_rows(tree / "rows", tree / "corpus")
+        assert not [f for f in found if f.kind in FAILING and f.kind is not Kind.RULE]
+        return [(f.where, f.detail) for f in found if f.kind is Kind.RULE]
+
+    _row(tree).write_text(text + multi.replace("    effect_allele: C\n", "    effect_allele: C\n    direction: risk\n", 1))
+    assert rules() == []
+    _row(tree).write_text(text + multi)
+    assert [(w, "direction" in d) for w, d in rules()] == [("studies[1] rs429358", True)]
+    _row(tree).write_text(text + bare.replace("    effect_allele: C\n", "    effect_allele: C\n    direction: risk\n", 1))
+    assert [(w, "effect_size" in d) for w, d in rules()] == [("studies[1] rs429358", True)]
