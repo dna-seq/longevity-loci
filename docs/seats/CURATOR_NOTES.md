@@ -154,11 +154,13 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   and Rosoff's look-up) is healthspan-class and Wright's viability result confirms only, so B (the lead's D23,
   2026-11-11, option (a)); modifiable through weight (D18.2) on the set leads' betas phased by frequency (Harris 2024's
   two sets dissent); no PROTECT token at 45/55 (as at 21); E1 NLGN1.
-- **Open: colocalisation queries before 2026-11-11 returned GWAS partners only** (Open Targets lists QTL partners only
-  when `studyTypes` names them). Found at 24; row 21 corrected (33b8488: QTLs of a dozen genes, E3 on ambiguity).
-  Owed before row 25: re-query the QTL colocalisations of the 9 rows whose effector call could move, E3 at 2, 7, 19,
-  57, 67, 80 and E2 at 6, 12, 81 (E4 rows have no set; 17's query already held QTLs). 13 cached colocalisation
-  locators lack `studyTypes`.
+- **Done: the colocalisation sweep** (2026-11-11). Queries before then returned GWAS partners only (Open Targets lists
+  QTL partners only when `studyTypes` names them). Re-read with the QTL types and `isTransQtl` (trans QTLs are not
+  counted), 15 rows, not the 9 first listed: the E2 rows' "no colocalisation read" needed it too. A minor rival made
+  the letter of row 17 drop clear calls; asked, the lead ruled D24 (a rival counts at a tenth of the cis
+  colocalisations, or passing L2G). Moved: 12 E1 KCNK3, 4 E1 NEGR1, 57 E1 CDKN2B (L2G 0.53 on Pilling's set, read
+  late, so two commits), 67 E2 USP28, 81 E1 FES; 6, 15, 71 to E3. Row 7 sits at the edge (RHOC 2 of 20 over two
+  sets, told to the lead). Script pattern: `set-<8>-coloc-qtl[-pN]` and `set-<8>-l2g` in the cache.
   Lead rs9872864, its proxy rs2271961 (Rosoff's mvAge SNP; r² 0.99, D′ 1, G with T). The anchor is Wright 2019's
   maternal meta-analysis, P 6.9e-10 (Table 3, S9), with Deelen's 90th percentile an independent replication (G, P
   0.020, no UK Biobank or AncestryDNA sample): A on §4.1's letter. But Wright prints no pooled effect, so it cannot

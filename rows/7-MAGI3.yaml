@@ -26,8 +26,9 @@ verdict_reason: >-
   and Hodgkin's lymphoma at OR 0.81) state no allele. In Open Targets 26.09 rs1230666 holds PIP 0.64 in Timmers
   2019's credible set (PICS) and 0.86 in mvAge's: causal:C1 by the threshold, though PICS weighs members by their LD
   with the lead, and rs2476601 and rs6679677 sit in the same set at r² 0.68 and 0.67 (PIP 0.02), so the autoimmune
-  haplotype the paper names is not excluded. The top locus-to-gene score is PHTF1 at 0.42 (effector E3), so no gene
-  is named. The protection is the absence of the risk allele: A shortens life and G is the common one. Age of action
+  haplotype the paper names is not excluded. The top locus-to-gene score is PHTF1 at 0.42, below 0.5; on the two sets PHTF1
+  holds 18 of the 20 cis-QTL colocalisations at H4 ≥ 0.8 and RHOC 2, exactly the tenth D24 counts as a rival, so
+  effector E3, at the edge, and no gene is named. The protection is the absence of the risk allele: A shortens life and G is the common one. Age of action
   is unknown: Timmers 2019's age bands do not single out this locus, and no cached source gives its own.
 axes:
   tier: {value: B, cites: [pmid-30642433#q29, pmid-30642433#q30, pmid-30642433#q33, pmid-30642433#q34, pmid-31413261#q19, pmid-37550455#q9, db-gwascatalog-2026.10.29#q10, db-gwascatalog-2026.10.29#q32, db-gwascatalog-2026.10.29#q34]}
@@ -41,7 +42,7 @@ axes:
 flags:
   - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-30642433#q29, pmid-30642433#q33, db-opentargets-26.09#q56]}
   - {token: "causal:C1", cites: [db-opentargets-26.09#q57, db-opentargets-26.09#q58, db-opentargets-26.09#q59, db-opentargets-26.09#q65]}
-  - {token: "effector:E3", cites: [db-opentargets-26.09#q62]}
+  - {token: "effector:E3", cites: [db-opentargets-26.09#q62, db-opentargets-26.09#q341, db-opentargets-26.09#q342, db-opentargets-26.09#q343, db-opentargets-26.09#q344, db-opentargets-26.09#q345, db-opentargets-26.09#q346, db-opentargets-26.09#q347, db-opentargets-26.09#q348]}
 variants:
   - rsid: rs1230666
     gene: ""

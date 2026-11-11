@@ -26,7 +26,7 @@ axes:
 flags:
   - {token: "PROTECT:PRESENCE", cites: [pmid-30642433#q3, pmid-29227965#q3]}
   - {token: "causal:C3", cites: [db-opentargets-26.09#q7]}
-  - {token: "effector:E2", cites: [db-opentargets-26.09#q9]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q9, db-opentargets-26.09#q359]}
   - {token: "ld_proxy_of:rs142158911", cites: [db-opentargets-26.09#q8]}  # rs6511720, r² 0.96
   - {token: "mediator:EFO_0004611", cites: [pmid-29227965#q3]}          # low density lipoprotein cholesterol measurement
 variants:

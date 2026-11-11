@@ -1271,3 +1271,93 @@ All 153 reach H4 ≥ 0.8; 39 are trans (protein QTLs), and of the 114 cis, PSRC1
 (expression and splicing), SORT1 16, ATXN7L2 2 and SYPL2 2. SORT1 (0.99) and CELSR2 (0.97) both pass
 locus-to-gene (q30) and both colocalise, and PSRC1 colocalises most: under D24 the call is ambiguous,
 `effector:E3`, no gene named (the lead's ruling on this row, 2026-11-11).
+
+### The rows whose level stands: 2, 7, 19, 80, 20, 46 and 93
+
+rs3768321 (PABPC4), row 2, Rosoff's mvAge set (0980823f; the row's only lifespan-class set):
+
+> [q331] data.credibleSet.colocalisation count 296
+
+> [q332] data.credibleSet.colocalisation.rows[38] rightStudyType sqtl h4 0.9953748047000629 clpp 0.16454838092960156
+
+> [q333] data.credibleSet.colocalisation.rows[38].otherStudyLocus isTransQtl false
+
+> [q334] data.credibleSet.colocalisation.rows[38].otherStudyLocus.study.target approvedSymbol PABPC4
+
+> [q335] data.credibleSet.colocalisation.rows[119] rightStudyType eqtl h4 0.9561806999771456 clpp 0.019336944453125005
+
+> [q336] data.credibleSet.colocalisation.rows[119].otherStudyLocus isTransQtl false
+
+> [q337] data.credibleSet.colocalisation.rows[119].otherStudyLocus.study.target approvedSymbol MACF1
+
+> [q338] data.credibleSet.colocalisation.rows[21] rightStudyType eqtl h4 0.9953748047000629 clpp 0.1682440409601266
+
+> [q339] data.credibleSet.colocalisation.rows[21].otherStudyLocus isTransQtl false
+
+> [q340] data.credibleSet.colocalisation.rows[21].otherStudyLocus.study.target approvedSymbol PABPC4-AS1
+
+At H4 ≥ 0.8, 221 colocalisations, 220 cis: PABPC4 135 (splicing, expression, transcript usage), MACF1 38,
+PABPC4-AS1 28, BMP8A 11, PPIEL 7, BMP8B 1. MACF1 and PABPC4-AS1 each meet a criterion of their own and hold more
+than a tenth, and no gene passes locus-to-gene (PABPC4 0.23): ambiguous under D24, `effector:E3` stands.
+
+rs1230666 (MAGI3/PTPN22), row 7, Timmers 2019's set (f53bfb83) and mvAge's (342a0b5f):
+
+> [q341] data.credibleSet.colocalisation count 75
+
+> [q342] data.credibleSet.colocalisation.rows[26] rightStudyType eqtl h4 0.9838425909855892 clpp 0.052902225186811994
+
+> [q343] data.credibleSet.colocalisation.rows[26].otherStudyLocus isTransQtl false
+
+> [q344] data.credibleSet.colocalisation.rows[26].otherStudyLocus.study.target approvedSymbol PHTF1
+
+> [q345] data.credibleSet.colocalisation.rows[29] rightStudyType eqtl h4 0.9967581725800437 clpp 0.21289834114753012
+
+> [q346] data.credibleSet.colocalisation.rows[29].otherStudyLocus isTransQtl false
+
+> [q347] data.credibleSet.colocalisation.rows[29].otherStudyLocus.study.target approvedSymbol RHOC
+
+> [q348] data.credibleSet.colocalisation count 75
+
+Timmers 2019's: 24 at H4 ≥ 0.8, 6 trans protein QTLs, 18 cis: PHTF1 17, RHOC 1 (q345, a GTEx brain-cortex
+transcript). mvAge's: 8 at H4 ≥ 0.8, 6 trans, 2 cis: PHTF1 1, RHOC 1. Over both sets RHOC holds 2 of 20, a tenth,
+which D24 counts as a rival; no gene passes locus-to-gene (PHTF1 0.42, q62): `effector:E3` stands, at the edge.
+
+rs78043944 (row 19), Gurinovich's own set (ab13a68d), with the QTL types named (q205 was the default query):
+
+> [q349] data.credibleSet.colocalisation count 0
+
+rs8042849 (CHRNB4/CHRNA5), row 80, Timmers 2019's set (8d0d0d1e):
+
+> [q350] data.credibleSet.colocalisation count 47
+
+> [q351] data.credibleSet.colocalisation.rows[12] rightStudyType eqtl h4 0.9977076684221937 clpp 0.2753931481442404
+
+> [q352] data.credibleSet.colocalisation.rows[12].otherStudyLocus isTransQtl false
+
+> [q353] data.credibleSet.colocalisation.rows[12].otherStudyLocus.study.target approvedSymbol PSMA4
+
+> [q354] data.credibleSet.colocalisation.rows[13] rightStudyType eqtl h4 0.9784749800754303 clpp 0.039472056823559795
+
+> [q355] data.credibleSet.colocalisation.rows[13].otherStudyLocus isTransQtl false
+
+> [q356] data.credibleSet.colocalisation.rows[13].otherStudyLocus.study.target approvedSymbol CHRNA5
+
+At H4 ≥ 0.8, 36, all cis: PSMA4 16, CHRNA5 14, ENSG00000261762 3, IREB2 2, CHRNA3 1. PSMA4 and CHRNA5 each hold
+well over a tenth and neither passes locus-to-gene (CHRNA5 0.29, q14): ambiguous under D24, `effector:E3` stands.
+
+rs2643826 (SLC4A7), row 20, mvAge's set (2971a8aa), with the QTL types named: none, as q217's prose read from the
+GWAS partners.
+
+> [q357] data.credibleSet.colocalisation count 0
+
+rs10455872 (LPA), row 46, Timmers 2019's set (9a28de1c): six QTL colocalisations, all trans protein QTLs (CXCL13,
+CCL27 and others), none of LPA:
+
+> [q358] data.credibleSet.colocalisation count 6
+
+rs6511720 (LDLR), row 93, the set of q9 (03c51795): four, three trans protein QTLs (PCSK9 among them) and one cis
+KRI1 expression QTL at H4 0.61, below 0.8:
+
+> [q359] data.credibleSet.colocalisation count 4
+
+46 and 93 keep `effector:E2` on locus-to-gene alone (LPA 0.56, LDLR), with no cis colocalisation to add or to rival.

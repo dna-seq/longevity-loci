@@ -31,7 +31,8 @@ verdict_reason: >-
   Targets' orientation alone, a kidney-disease progression score); it raises resting heart rate slightly (+0.023 SD), which no cached source ties to harm. Causal
   confidence C1: the lead holds PIP 0.926 in mvAge's PICS set and 0.995 in FinnGen's hypertension set, a one-variant
   SuSiE set with in-sample LD. Effector E2, SLC4A7: the locus-to-gene score is SLC4A7's on both sets (0.529 and
-  0.545), and none of the 145 colocalisations is with a QTL. Timmers 2020's SMR and HEIDI point instead to NEK10's
+  0.545), and none of the 145 colocalisations is with a QTL (a
+  query naming the QTL types returns none). Timmers 2020's SMR and HEIDI point instead to NEK10's
   liver expression (NEK10's L2G 0.059), so the gene is the model's call, not settled. The protection is the absence
   of the risk allele: T shortens life and C is the common one. Age of action is unknown: Timmers 2020 excepts SLC4A7
   from the other loci's fading with parental age and gives no band of its own.
@@ -47,7 +48,7 @@ axes:
 flags:
   - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-37550455#q13, pmid-30642433#q58, db-ensembl-116#q92, db-ensembl-116#q93]}
   - {token: "causal:C1", cites: [db-opentargets-26.09#q208, db-opentargets-26.09#q209, db-opentargets-26.09#q210, db-opentargets-26.09#q211, db-opentargets-26.09#q212, db-opentargets-26.09#q220, db-opentargets-26.09#q221, db-opentargets-26.09#q222, db-opentargets-26.09#q223, db-opentargets-26.09#q224]}
-  - {token: "effector:E2", cites: [db-opentargets-26.09#q213, db-opentargets-26.09#q214, db-opentargets-26.09#q215, db-opentargets-26.09#q216, db-opentargets-26.09#q217, db-opentargets-26.09#q225, db-opentargets-26.09#q226, pmid-32678081#q13, pmid-32678081#q14]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q213, db-opentargets-26.09#q214, db-opentargets-26.09#q215, db-opentargets-26.09#q216, db-opentargets-26.09#q217, db-opentargets-26.09#q225, db-opentargets-26.09#q226, db-opentargets-26.09#q357, pmid-32678081#q13, pmid-32678081#q14]}
 variants:
   - rsid: rs2643826
     gene: SLC4A7

@@ -28,7 +28,8 @@ verdict_reason: >-
   P 4.7e-68, PIP 1.00; triglycerides, P 1.8e-24, PIP 0.90), T lowering HDL and raising triglycerides, the side
   that ages worse; Rosoff's GWAS Catalog list adds HbA1c, type 2 diabetes and body shape. That is association on one
   variant, not a mediator test. In mvAge's own credible set (Open Targets, PICS) rs3768321 holds PIP 0.17, the
-  highest of 100 members (causal:C2); the top locus-to-gene score is PABPC4 at 0.23, below 0.5 (effector:E3), so no
+  highest of 100 members (causal:C2); the top locus-to-gene score is PABPC4 at 0.23, below 0.5, and the set colocalises with cis QTLs of several
+  genes (at H4 ≥ 0.8 PABPC4 135 of 220, MACF1 38, PABPC4-AS1 28, BMP8A 11): ambiguous under D24 (effector:E3), so no
   gene is named (§4.2, §6.2: a gene only at E1/E2), though PABPC4 scores 0.77 on the HDL set, a lipid trait's set, not the row's own claim (D17.2). Age of action is
   unknown: no cached source gives this locus's own age bands.
 axes:
@@ -43,7 +44,7 @@ axes:
 flags:
   - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-37550455#q1, pmid-30642433#q25]}
   - {token: "causal:C2", cites: [db-opentargets-26.09#q36, db-opentargets-26.09#q37, db-opentargets-26.09#q38]}
-  - {token: "effector:E3", cites: [db-opentargets-26.09#q39]}
+  - {token: "effector:E3", cites: [db-opentargets-26.09#q39, db-opentargets-26.09#q331, db-opentargets-26.09#q332, db-opentargets-26.09#q333, db-opentargets-26.09#q334, db-opentargets-26.09#q335, db-opentargets-26.09#q336, db-opentargets-26.09#q337, db-opentargets-26.09#q338, db-opentargets-26.09#q339, db-opentargets-26.09#q340]}
 variants:
   - rsid: rs3768321
     gene: ""

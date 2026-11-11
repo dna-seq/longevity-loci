@@ -33,7 +33,7 @@ verdict_reason: >-
   nothing assesses one, since the GWAS Catalog holds no other trait for the variant and Open Targets no other set.
   Causal C1 by §4.2's threshold, but with little meaning: the one set is Gurinovich's own, a PICS set built from
   the reported top hit, and a rare variant with no LD partners makes a one-variant set at posterior 1 by
-  construction. Effector E3, no gene named: L2G's top gene is LRRC3B at 0.43, below 0.5, with no colocalisation,
+  construction. Effector E3, no gene named: L2G's top gene is LRRC3B at 0.43, below 0.5, with no colocalisation of any kind (QTL or GWAS),
   and the sources name different nearest genes (LINC00692 and LRRC3B in the paper, HMGB3P12 and VENTXP4 in the
   catalog). The protection is a presence: the rare A goes with reaching 100. Age of action is unknown.
 axes:
@@ -48,7 +48,7 @@ axes:
 flags:
   - {token: "PROTECT:PRESENCE", cites: [pmid-33948810#q3, pmid-33948810#q4, db-ensembl-116#q86]}
   - {token: "causal:C1", cites: [db-opentargets-26.09#q198, db-opentargets-26.09#q199, db-opentargets-26.09#q200, db-opentargets-26.09#q201, db-opentargets-26.09#q202]}
-  - {token: "effector:E3", cites: [db-opentargets-26.09#q203, db-opentargets-26.09#q204, db-opentargets-26.09#q205, pmid-33948810#q4, db-gwascatalog-2026.10.29#q140, db-gwascatalog-2026.10.29#q141]}
+  - {token: "effector:E3", cites: [db-opentargets-26.09#q203, db-opentargets-26.09#q204, db-opentargets-26.09#q205, db-opentargets-26.09#q349, pmid-33948810#q4, db-gwascatalog-2026.10.29#q140, db-gwascatalog-2026.10.29#q141]}
 variants:
   - rsid: rs78043944
     gene: ""
