@@ -15,20 +15,22 @@ verdict_reason: >-
   Timmers 2019's summary statistics C, the minor allele (40 % in Europeans, the 358Ala of the receptor), goes with
   longer-lived parents (P 0.0034, the same side in UK Biobank and LifeGen); in Wright 2019's AncestryDNA fathers, the
   one sample outside UK Biobank and LifeGen, a close proxy (rs7518199, r² 0.93, its C riding with the lead's C by
-  frequency) does the same (P 0.0017); and in Zenin 2019 C delays the end of healthspan (P 0.017), in UK Biobank. That
-  is C by §4.1's "replicated only in small or same-group samples": none of it is suggestive (P < 1e-5) at the lead,
-  though Pilling 2017's IL6R SNP rs6689306, only partly correlated with it (r² 0.40), reaches 1.5e-6 on the same side.
+  frequency) does the same in fathers (P 0.0011, born 1886-1918; 0.0043 born 1886-1940) and mothers (0.0051); and in
+  Zenin 2019 C delays the end of healthspan (P 0.017), in UK Biobank. No clause of C fits the lead literally: nothing
+  at it is suggestive (P < 1e-5), though Pilling 2017's IL6R SNP rs6689306, only partly correlated with it (r² 0.40),
+  reaches 1.5e-6 on the same side. C is a judgement: B's first condition (genome-wide) fails, the nominal results
+  agree in direction in two independent samples, and nothing contradicts them, so D does not fit either.
   The seed's B came from Rosa 2019's cis-MR: genetically higher soluble IL6R, that is less IL-6 signalling, lengthens
   fathers' and mothers' age at death (P 3.8e-5 and 2.1e-5) over 34 instruments that do not include the variant, in
   UK Biobank parents; it points the same way (C raises soluble IL6R) but is annotation, not a per-allele result. The
   Women's Health Initiative, the seed's locus 157, found no difference in survival to 90 between women with two C
   alleles and none (OR 1.00, 0.91 to 1.09; 23,464 women of several ancestries; abstract only): a null, but one whose
   interval does not exclude an effect of the size seen in the parental studies, so it does not contradict them (not
-  D). The mechanism is immune and inflammation: C is the reduced-signalling allele (lower CRP, higher soluble IL6R
+  D). The supporting evidence is European (eur_only_evidence); the one multi-ancestry study is the null. The mechanism is immune and inflammation: C is the reduced-signalling allele (lower CRP, higher soluble IL6R
   and IL-6, the pattern of tocilizumab), and it lowers rheumatoid arthritis and coronary heart disease (OR 0.95 per
   allele at a tag, r² 0.94) and tuberculosis (OR 0.94). The trade-off is detected: the same C raises allergic
-  disease and atopic dermatitis. Causal confidence is C4 for longevity (no lifespan set in Open Targets 26.09; the
-  variant's 286 sets are for proteins and diseases); the variant is missense in IL6R, so the effector is IL6R by
+  disease and atopic dermatitis. Causal confidence is C4 for longevity (no set of the seven lifespan, healthspan and
+  longevity studies in Open Targets 26.09 holds it, of the 286 sets it is in); the variant is missense in IL6R, so the effector is IL6R by
   §4.2's coding clause (E1). The protection is a presence, the minor C. Not a treatment indication (R-VOICE-4). Age
   of action is unknown.
 axes:
@@ -37,13 +39,13 @@ axes:
   pleiotropy: {values: ["tradeoff", "mr:drug_target_proxy", "mech:autoimmune", "mech:cvd", "mech:allergy", "mech:infection"],
                cites: [pmid-31552141#q1, pmid-22421340#q2, pmid-22421340#q3, pmid-39579785#q2, db-gwascatalog-2026.10.29#q41, db-gwascatalog-2026.10.29#q43, db-gwascatalog-2026.10.29#q44, db-gwascatalog-2026.10.29#q46, db-gwascatalog-2026.10.29#q47, db-gwascatalog-2026.10.29#q49]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
-            cites: [pmid-30729179#q19, pmid-30642433#q35, pmid-31484785#q25, pmid-40674461#q2]}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: untested,
+            cites: [pmid-30729179#q19, pmid-30642433#q35, pmid-31484785#q25, pmid-31484785#q26, pmid-40674461#q2]}
   actionability: {label: descriptive, cites: [pmid-22421340#q3]}
   context: {values: [eur_only_evidence], cites: [pmid-30642433#q35, pmid-31484785#q25, pmid-30729179#q19]}
 flags:
   - {token: "PROTECT:PRESENCE", cites: [pmid-30642433#q35, db-opentargets-26.09#q68]}
-  - {token: "causal:C4", cites: [db-opentargets-26.09#q69]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q69, db-opentargets-26.09#q70, db-opentargets-26.09#q72]}
   - {token: "effector:E1", cites: [db-ensembl-116#q9, db-opentargets-26.09#q67]}
 variants:
   - rsid: rs2228145
@@ -92,8 +94,6 @@ studies:
     study_design: parental_lifespan_cox
     population: European (UK Biobank and the LifeGen cohorts)
     ancestry: [EUR]
-    sample_size: 639253
-    sample_unit: lives
     stat_significance: nominal
     p_value: "0.0033903321"
     p_value_num: 0.0034
@@ -102,7 +102,7 @@ studies:
     effect_unit: log hazard protection per A allele in self (negative = shorter life)
     effect_allele: A
     direction: risk
-    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), direction -- in UK Biobank and LifeGen, info 0.999"
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), n 639,253, direction -- in UK Biobank and LifeGen, info 0.999"
     curator: claude-opus-5-5
   - rsid: rs2228145
     note: pmid-31484785
@@ -114,15 +114,15 @@ studies:
     sample_size: 167000
     sample_unit: individuals
     stat_significance: nominal
-    p_value: "0.001681"
-    p_value_num: 0.001681
+    p_value: "0.001073"
+    p_value_num: 0.001073
     proxy_rsid: rs7518199
     effect_size: 0.01151
     effect_measure: beta
     effect_unit: z-scored fathers' lifespan per C allele of rs7518199 (positive = longer)
     effect_allele: C
     direction: protective
-    statistical_test: "Supplemental Table 8, genomic-control P; rs7518199 r² 0.93 to rs2228145 (db-ensembl-116#q12), C with C by EUR frequency (derived); S9 fathers' meta P 8.8E-04, AncestryDNA 0.019, mothers' meta 0.0018, AncestryDNA 0.044 (q26, q27)"
+    statistical_test: "Supplemental Table 8, raw P (genomic control 0.001681); rs7518199 r² 0.93 to rs2228145 (db-ensembl-116#q12), C with C by EUR frequency (derived); S9 AncestryDNA fathers 1886-1940 P 0.0043, mothers 0.0051; meta-analysis with UK Biobank 8.8E-04 and 0.0018 (q26, q27)"
     curator: claude-opus-5-5
   - rsid: rs2228145
     note: pmid-30729179
@@ -146,7 +146,7 @@ studies:
   - rsid: rs2228145
     note: pmid-40674461
     quote: q2
-    phenotype_class: EXTREME_SURVIVAL_CC
+    phenotype_class: OWN_SURVIVAL
     study_design: age_threshold_case_control
     population: Women's Health Initiative, postmenopausal US women of several ancestries (genotyped as rs8192284)
     sample_size: 23464
@@ -157,5 +157,5 @@ studies:
     effect_measure: OR
     effect_unit: odds of survival to 90, two variant (C) alleles against none
     effect_allele: C
-    statistical_test: "logistic regression, survival to age 90 during a median 20 years' follow-up; 95 % CI 0.91-1.09; genotype contrast, not per allele; abstract only, ancestry breakdown not given"
+    statistical_test: "logistic regression, survival to age 90 during a median 20 years' follow-up; 95 % CI 0.91-1.09; genotype contrast, not per allele; 52 % of the eligible women reached 90, so not an extreme-survival percentile (OWN_SURVIVAL, §4.5); abstract only, ancestry breakdown not given"
     curator: claude-opus-5-5

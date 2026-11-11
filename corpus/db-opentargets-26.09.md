@@ -390,7 +390,17 @@ GCST011100, GCST009450, GCST007406, GCST90321079], variantIds: ["1_154454494_A_C
 
 > [q69] data.credibleSets count 0
 
-No credible set of any of those studies holds rs2228145. The filter matches a set's members, not only its lead
-(checked on 2026-11-11 against rs2476601, a non-lead member of Timmers 2019's MAGI3 set: the query returns that
-set). The variant sits in 286 other sets (proteins, CRP, diseases), none a lifespan trait: causal C4 for longevity,
-the level read from a longevity set only.
+No credible set of any of those studies holds rs2228145: causal C4 for longevity, the level read from a longevity
+set only. The filter matches a set's members, not only its lead: the same query for GCST009890 and rs2476601, a
+non-lead member of Timmers 2019's MAGI3 set (q60), returns that set, led by rs1230666
+(`credibleSets-control-GCST009890-1_113834946_A_G.json`):
+
+> [q70] data.credibleSets count 1
+
+> [q71] data.credibleSets.rows[0].variant.rsIds[0] rs1230666
+
+All the variant's credible sets, of any study (`variant-credibleset-count-1_154454494_A_C.json`):
+
+> [q72] data.variant.credibleSets count 286
+
+286 sets in all, none from the seven studies above. For row 8.

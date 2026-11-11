@@ -44,14 +44,20 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   rs2228145, db-ensembl-116#q7-q8; the file `8-IL6R_Asp358Ala.yaml`, `also_loci: [157]`). Nothing genome-wide at the
   variant; R-TIER-4 keeps Rosa 2019's cis-MR (34 instruments, none the variant) out of A/B: annotation, linked to C
   through the catalog's sIL6R record (derived). Nominal and one-sided: Timmers sumstats 0.0034, Wright AncestryDNA
-  fathers 0.0017 at rs7518199 (r² 0.93, phase by frequency), Zenin 0.017; WHI survival to 90 null (OR 1.00 CC vs AA,
-  abstract), too wide to contradict, so C not D. Rules settled: the first coding lead is effector E1 with `gene` named
+  fathers 0.0011 (raw P, as at 38/103; mothers 0.0051) at rs7518199 (r² 0.93, phase by frequency), Zenin 0.017; WHI
+  survival to 90 null (OR 1.00 CC vs AA, abstract), too wide to contradict, so C not D. C here is a judgement, no C
+  clause fitting the lead literally (not suggestive; the replication is independent, not same-group). WHI's survival
+  to 90 (52 % reached it) is OWN_SURVIVAL, not EXTREME_SURVIVAL_CC (§4.5: ≥90th/99th percentile, centenarians), so
+  exceptional survival stays untested. Wright S9's columns are meta P, n, AncestryDNA P, β, SE, UK Biobank P, β, SE
+  (misread once at this row, fixed in the follow-up). Rules settled: the first coding lead is effector E1 with `gene` named
   (§4.2's coding clause, Ensembl's and Open Targets' missense consequence); causal level read from longevity sets
   only, and a cached `credibleSets(studyIds, variantIds)` count 0 is the citable C4 (the filter matches members, not
   only leads, checked at MAGI3); a trade-off read from stated catalog alleles is `tradeoff` with `negatives`;
   drug-target loci get `mr:drug_target_proxy` and genotype text that names no treatment (R-VOICE-4). Pilling's
   rs6689306 (suggestive, r² 0.40, A with A by D′) named, not scored. For the lead: §5.2's example "IL6R rs2228145
-  (B)" conflicts with R-TIER-4, and R-RARE-2's "never above tier B" with R-TIER-4's "never A/B" (PCSK9 R46L).
+  (B)" conflicts with R-TIER-4, and R-RARE-2's "never above tier B" with R-TIER-4's "never A/B" (PCSK9 R46L); and
+  whether R-CAUSAL's "marks a region" unless C1 lets a C4 coding lead's text say what the variant does to the protein
+  (here "dampens interleukin-6", quoted at pmid-39579785#q1): kept, asked.
 - **7 MAGI3** (2026-11-11), tier B kept, advisor-checked. Lead rs1230666 (Timmers 2019 Table 1, q29; P 6.4e-9, new
   there, so no LifeGen-only result: the sumstats' "--" is direction only). Rules settled: C level by §4.2's PIP
   threshold even from a PICS set (0.64 in the lifespan set, C1), with the method and the in-set coding candidates
