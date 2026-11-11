@@ -83,14 +83,14 @@ variants:
           You carry one copy of a less common version of this DNA region (about 4 in 10 people of European ancestry
           do). In one American study, people who reached 100 carried it more often than other people did, and a
           European study of the very oldest leaned the same way. A study of more than half a million parents' lifespans found no
-          effect. It is early evidence, not a verdict.
+          effect. It is a likely finding, not a settled one, and the effect, if real, is small.
       - genotype: A/A
         state: protective
         conclusion: >-
           You carry two copies of a less common version of this DNA region (about 1 in 12 people of European ancestry
           do). In one American study, people who reached 100 carried this version more often than other people did,
           and a European study of the very oldest leaned the same way. A study of more than half a million parents' lifespans found
-          no effect. It is early evidence, not a verdict.
+          no effect. It is a likely finding, not a settled one, and the effect, if real, is small.
 studies:
   - rsid: rs649357
     note: pmid-33948810

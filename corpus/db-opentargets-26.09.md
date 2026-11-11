@@ -1796,8 +1796,25 @@ q482): 115 credible sets (q483). I read every set's trait: blood pressure, hyper
 other blood-pressure medication, pulse and mean arterial pressure, heart rate, cardiovascular disease, coronary
 artery disease (MTAG), atrial fibrillation, hair pattern, birth weight, platelet count, haemoglobin, prolonged
 pregnancy, prostate hyperplasia, one T-cell expression QTL, and one frailty factor; none is lifespan, longevity or
-survival. The frailty set is Foote 2025's multimorbidity factor (q484, q485): T beta -0.0165, P 3e-21, the lead's PIP
-0.026 (q486), healthspan-class (D23). Essential hypertension (q487, q488): T beta -0.058, P 4e-34, PIP 0.021 (q489).
-The lead's PIP in the sets where it shows among the first 25 members is 0.007 to 0.098; the sets list 16 to 25
-members. Locus-to-gene names EBF1 at about 0.4 to 0.6 in most sets (q490) and CLINT1 in some pulse-pressure sets
+survival. The frailty set is Foote 2025's multimorbidity factor (q484, q485), healthspan-class (D23), the lead's PIP 0.026
+(q486). Essential hypertension (q487, q488), PIP 0.021 (q489). The beta and P on a set's line are its own lead
+variant's, not rs2149954's (q492-q495), so they give no direction for T. The lead's PIP, where it shows among the 25
+members the query returns (the member lists stop at 25, a page cap), is 0.007 to 0.098; in about a quarter of the
+sets it lies past them. Locus-to-gene names EBF1 at about 0.4 to 0.6 in most sets (q490) and CLINT1 in some pulse-pressure sets
 (0.93, q491). No lifespan-class set, so causal C4 and effector E4. For row 33.
+
+## Reading 2026-11-11, record
+
+> [q492] data.credibleSet.variant id 5_158397473_A_G
+
+> [q493] data.credibleSet.study traitFromSource Frailty (Factor 3 - Multimorbidity) publicationFirstAuthor Foote IF publicationDate 2025-08-04 pubmedId 40759756
+
+> [q494] data.credibleSet.locus.rows[0] posteriorProbability 0.025860334056678598 beta null standardError 0.11642424669468565 pValueMantissa null pValueExponent null r2Overall 0.943438451706887
+
+> [q495] data.credibleSet.variant id 5_158397175_T_C
+
+The lead's own entries in two of its sets (`member-<studyLocusId>-5_158393594_C_T.json`). Foote 2025's frailty
+multimorbidity set (q493) is led by 5_158397473_A_G (q492); rs2149954 is a member at PIP 0.026, r² 0.94 to the lead,
+with no beta or P of its own (q494). The essential hypertension set is led by 5_158397175_T_C (q495), the same shape.
+So the betas on the variant's set list (q484, q487) are the set leads', and T's direction in these sets is not given
+here. For row 33.
