@@ -27,7 +27,7 @@ verdict_reason: >-
   LD with the lead. FinnGen's death endpoint is null (T β −0.0018, P 0.83, a slight lean the other way): within
   FinnGen, APOE's factor would predict T +0.022 (power about 0.86, heterogeneity P about 0.009), so it flags under
   that calibration; the second, a mean over leads that hold up within FinnGen (D25.12), is not computed, so whether
-  it is a red flag is unknown (D25.3). It cannot make the row D: AncestryDNA's independent replication stands
+  it is a red flag is unknown (D25.3), and unknown sets no replication_failed (D26.3). It cannot make the row D: AncestryDNA's independent replication stands
   (D25.1), and B is the cap either way. Mechanism: ageing in general (D25.7). The
   lead leads 34 Open Targets sets. Per T it lowers cystatin C (P 6e-45, a one-variant set, PIP 0.998) and
   creatinine and raises eGFR (P 1e-51, PIP 0.994), so T goes with better filtration; yet T raises acute renal
@@ -40,8 +40,8 @@ verdict_reason: >-
   one route is shown to carry the lifespan effect, so no single system is named. No trade-off is found (D18.1): the
   longer-life C has lower eGFR and higher cystatin C and creatinine on blood tests, but the kidney's own disease
   endpoints, acute and chronic, run with T, so the lower eGFR is not shown to be harm; C is on the lower-risk side
-  for blood pressure, heart failure, ischaemic heart disease and atrial fibrillation. (Row 39's reading, a risk
-  biomarker carried by the longer-life allele, would make it a trade-off; put to the lead.) Actionability is
+  for blood pressure, heart failure, ischaemic heart disease and atrial fibrillation. A risk biomarker carried by
+  the longer-life allele is not a trade-off without a quoted harm (D26.4). Actionability is
   preventable, as at row 27: blood pressure is a measure a doctor takes, and the effect on it is read at the lead
   itself. Causal confidence C4 and effector E4: no credible set of a lifespan-class
   study holds the lead (mvAge's 26 sets in Open Targets include none on 6p21.1), so neither is read; locus-to-gene on
