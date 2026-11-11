@@ -201,13 +201,14 @@ studies:
     ancestry: [EUR]
     sample_size: 300447
     sample_unit: individuals
-    stat_significance: not_significant
+    stat_significance: nominal
     p_value: "0.0496"
     p_value_num: 0.0496
+    p_one_sided: 0.0248
     effect_size: 0.0099
     effect_measure: beta
     effect_unit: log hazard of the end of healthspan per C allele (positive = earlier)
     effect_allele: C
     direction: risk
-    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), SE 0.00504, -log10 P 1.305 as deposited (raw, P 0.0496); after the genomic control of 1.053 the paper applies (q59), P 0.056, not significant (D17.3), one-sided 0.028 (derived, D25.13); the same UK Biobank people as Park 2025"
+    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), SE 0.00504, -log10 P 1.305 as deposited (raw, P 0.0496); after the genomic control of 1.053 the paper applies (q59), P 0.056 two-sided (D17.3), one-sided 0.028 (derived, D25.13), the reading the tier takes (D26.1); p_one_sided holds half the deposited raw P (D26.13), nominal either way; the same UK Biobank people as Park 2025"
     curator: claude-opus-5-5
