@@ -442,6 +442,8 @@ rs11783562 (8p12, near WRN) and rs769449 (APOE); none at 1q25. For row 10.
 
 > [q85] data.variant.credibleSets.rows[1].study id GCST90627750 traitFromSource Hypothyroidism
 
+> [q86] data.variant.credibleSets.rows[14] studyLocusId 99ab35c05be7fcbdac4f89d701522a52 pValueMantissa 1.7319999933242798 pValueExponent -18
+
 `variant-crediblesets-1_174018660_A_G.json`: rs10798302 is in 26 sets of other traits. It leads one, IGF-1 levels in
 UK Biobank (GCST90474379, P 1.7 × 10⁻¹⁸); it is a member, not the lead, of sets for white cell and neutrophil counts
 (GCST90002378, P 6 × 10⁻¹⁶, and others), hypothyroidism (GCST90627750), IGF-1 in other studies, schizophrenia, and

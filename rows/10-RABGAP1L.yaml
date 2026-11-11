@@ -12,7 +12,7 @@ verdict_reason: >-
   AncestryDNA customers, a cross-sectional design that reads survival from who is still alive at older ages
   (VIABILITY_AF, which §4.5 admits as confirmation only, so it cannot carry A or B alone). There G, the minor allele
   (18 % in Europeans), is commoner among older customers: raw P 1.7e-8, the GWAS Catalog's "Longevity" record of 2e-8;
-  after genomic control (λ 1.374, the largest of the paper's analyses) 1.5e-6, past the suggestive line only. The
+  after genomic control (λ 1.374) 1.5e-6, past the suggestive line only. The
   paper itself names only APOE and MAP2K6 from this analysis. The seed reads the study as a parental-lifespan
   meta-analysis with UK Biobank; it is not. In the same customers' fathers (born 1886-1940) G goes with longer life,
   nominally (P 7.5e-4), but those are the same people's genotypes, not a replication. The independent test is
@@ -23,12 +23,12 @@ verdict_reason: >-
   for blood IGF-1 levels in UK Biobank (P 1.7e-18) and sits in sets for white cell and neutrophil counts and
   hypothyroidism, with no allele or direction in the records: association with the variant, not a mediator.
   Causal confidence is C4 (no set of the seven lifespan, healthspan and longevity studies, nor of Wright's age study,
-  holds either seed SNP); with no longevity set there is no locus-to-gene score, so no gene is named (§4.2), and the
+  holds either seed SNP); with no longevity set there is no locus-to-gene score, so effector E4 and no gene named (§4.2), and the
   locus keeps the seed's label. The protection is a presence, the minor G. Age of action is unknown.
 axes:
   tier: {value: C, cites: [pmid-31484785#q28, pmid-31484785#q29, pmid-31484785#q31, pmid-31484785#q32, pmid-31484785#q33, pmid-30642433#q36, db-gwascatalog-2026.10.29#q51, db-gwascatalog-2026.10.29#q53]}
-  mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q82, db-opentargets-26.09#q83, db-opentargets-26.09#q84, db-opentargets-26.09#q85]}
-  pleiotropy: {values: ["mech:igf1", "mech:blood_count"], cites: [db-opentargets-26.09#q82, db-opentargets-26.09#q83, db-opentargets-26.09#q84]}
+  mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q82, db-opentargets-26.09#q83, db-opentargets-26.09#q86, db-opentargets-26.09#q84, db-opentargets-26.09#q85]}
+  pleiotropy: {values: ["mech:igf1", "mech:blood_count"], cites: [db-opentargets-26.09#q82, db-opentargets-26.09#q83, db-opentargets-26.09#q86, db-opentargets-26.09#q84]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "0", lifespan: "+", exceptional_survival: untested,
             cites: [pmid-30729179#q20, pmid-31484785#q28, pmid-31484785#q29, pmid-30642433#q36]}
@@ -37,6 +37,7 @@ axes:
 flags:
   - {token: "PROTECT:PRESENCE", cites: [pmid-31484785#q28, db-ensembl-116#q20]}
   - {token: "causal:C4", cites: [db-opentargets-26.09#q75, db-opentargets-26.09#q76, db-opentargets-26.09#q77, db-opentargets-26.09#q81]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q75, db-opentargets-26.09#q76]}
 variants:
   - rsid: rs10798302
     gene: ""
@@ -60,7 +61,7 @@ variants:
         conclusion: >-
           You carry one copy of a less common version of this DNA region (about 30 in 100 people of European
           ancestry do). In one large study of genealogy-site customers, this version was a little more common among
-          older people, as if it helped them live longer. This is early evidence: a much larger study of parents'
+          older people. This is early evidence: a much larger study of parents'
           lifespans did not clearly confirm it. The region is also linked to blood levels of IGF-1, a growth
           hormone signal. The effect, if real, is small: a tendency, not destiny.
       - genotype: G/G
@@ -68,7 +69,7 @@ variants:
         conclusion: >-
           You carry two copies of a less common version of this DNA region (about 3 in 100 people of European
           ancestry do). In one large study of genealogy-site customers, each copy was a little more common among
-          older people, as if it helped them live longer. This is early evidence: a much larger study of parents'
+          older people. This is early evidence: a much larger study of parents'
           lifespans did not clearly confirm it. The region is also linked to blood levels of IGF-1, a growth
           hormone signal. The effect, if real, is small: a tendency, not destiny.
 studies:
@@ -77,7 +78,7 @@ studies:
     quote: q28
     phenotype_class: VIABILITY_AF
     study_design: current_age_quantitative
-    population: AncestryDNA customers of European ancestry, close relatives removed (mostly US)
+    population: AncestryDNA customers, the European population group, close relatives removed
     ancestry: [EUR]
     sample_size: 482068
     sample_unit: individuals
