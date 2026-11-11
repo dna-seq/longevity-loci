@@ -19,7 +19,7 @@ verdict_reason: >-
   bands. The seed's other rsID, rs2186800 (TTC12, mvAge in Rosoff 2023, the source of the seed's name), lies about
   400 kb away and is not among the 155 members of the lead's credible set: not this signal, and not read here.
 axes:
-  tier: {value: B, cites: [pmid-29227965#q9, pmid-30642433#q15, pmid-31413261#q12, pmid-31484785#q11, pmid-31484785#q20]}
+  tier: {value: B, cites: [pmid-29227965#q9, pmid-32678081#q5, pmid-30642433#q15, pmid-31413261#q12, pmid-31484785#q11, pmid-31484785#q20]}
   mechanism: {value: general_ageing, cites: [pmid-32678081#q5, pmid-30642433#q10]}
   pleiotropy: {values: ["mech:cancer"], cites: [pmid-30642433#q10]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -140,6 +140,20 @@ studies:
     effect_unit: minus log hazard of the end of healthspan, per A allele (positive = later)
     effect_allele: A
     statistical_test: "Healthspan column of Timmers 2020 Table 1"
+    curator: claude-opus-5-5
+  - rsid: rs61905747
+    note: pmid-32678081
+    quote: q5
+    phenotype_class: MULTIVARIATE_AGEING
+    study_design: multivariate_healthspan_lifespan
+    population: European (UK Biobank, the LifeGen cohorts and Deelen 2019's cohorts; the three studies' summary data pooled)
+    ancestry: [EUR]
+    stat_significance: significant
+    p_value: "4E−10"
+    p_value_num: 4.0e-10
+    effect_allele: A
+    direction: protective
+    statistical_test: "Multivariate test of healthspan, parental lifespan and 90th-percentile longevity (Timmers 2020 Table 1, last column); no single effect size (D15); A on the longer-lived side in all three columns; pools the same samples as the component studies, so not an independent replication"
     curator: claude-opus-5-5
   - rsid: rs61905747
     note: pmid-31413261
