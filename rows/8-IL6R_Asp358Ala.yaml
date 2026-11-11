@@ -16,7 +16,7 @@ verdict_reason: >-
   40 % in gnomAD's non-Finnish Europeans, the figure this row gave before), the 358Ala of the receptor, goes with
   longer-lived parents (P 0.0034, the same side in UK Biobank and LifeGen); in Wright 2019's AncestryDNA fathers,
   the one sample outside UK Biobank and LifeGen, a close proxy (rs7518199, r² 0.93, its C riding with the lead's C
-  by frequency) does the same in fathers (P 0.0011, born 1886-1918; 0.0043 born 1886-1940) and mothers (0.0051);
+  by frequency) does the same in fathers (genomic-control P 0.0017, born 1886-1918; 0.0043 born 1886-1940) and mothers (0.0051);
   and in Zenin 2019 C delays the end of healthspan (P 0.017), in UK Biobank. The variant is not the locus's lifespan
   peak: in the same summary statistics rs4845625, an IL6R intron SNP 4.9 kb away, is suggestive (T, the shortening
   side, P 3.7e-6), at r² 0.46, D′ 1.00 to the variant, its T on the variant's A. LD with it alone predicts z about
@@ -123,15 +123,15 @@ studies:
     sample_size: 167000
     sample_unit: individuals
     stat_significance: nominal
-    p_value: "0.001073"
-    p_value_num: 0.001073
+    p_value: "0.001681"
+    p_value_num: 0.001681
     proxy_rsid: rs7518199
     effect_size: 0.01151
     effect_measure: beta
     effect_unit: z-scored fathers' lifespan per C allele of rs7518199 (positive = longer)
     effect_allele: C
     direction: protective
-    statistical_test: "Supplemental Table 8, raw P (genomic control 0.001681); rs7518199 r² 0.93 to rs2228145 (db-ensembl-116#q12), C with C by EUR frequency (derived); S9 AncestryDNA fathers 1886-1940 P 0.0043, mothers 0.0051; meta-analysis with UK Biobank 8.8E-04 and 0.0018 (q26, q27)"
+    statistical_test: "Supplemental Table 8, genomic-control P, the paper's own call (D17.3); raw P 0.001073; rs7518199 r² 0.93 to rs2228145 (db-ensembl-116#q12), C with C by EUR frequency (derived); S9 AncestryDNA fathers 1886-1940 P 0.0043, mothers 0.0051; meta-analysis with UK Biobank 8.8E-04 and 0.0018 (q26, q27)"
     curator: claude-opus-5-5
   - rsid: rs2228145
     note: pmid-30729179
