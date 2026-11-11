@@ -1205,3 +1205,40 @@ ENSG00000230393, a gene without an approved symbol beside AFF3, 6 (expression, a
 AFF3 passes locus-to-gene (0.90, q136) and colocalises, E1 on its own; but ENSG00000230393 meets a criterion of its
 own (cis colocalisation) and holds 6 of 24, at least a tenth, so under D24 the call is ambiguous: `effector:E3`, no
 gene named (the lead's ruling on this row, 2026-11-11).
+
+### rs11065979 (ATXN2/SH2B3), for row 71
+
+The five lifespan-class sets holding the lead (`credibleSets-longevity8-12_111621753_C_T.json`): Timmers 2019's
+(8a1b141e), Timmers 2020's (73d47418, the set behind q23's SH2B3 0.95), Pilling 2017's GCST006702 (82d18dcd), GCST009450
+(d9840ebd) and Rosoff's mvAge (01b6835c). Timmers 2019's and Timmers 2020's:
+
+> [q310] data.credibleSet.colocalisation count 443
+
+> [q311] data.credibleSet.colocalisation.rows[158] rightStudyType eqtl h4 0.9685816794097922 clpp 0.027047107100935316
+
+> [q312] data.credibleSet.colocalisation.rows[158].otherStudyLocus isTransQtl false
+
+> [q313] data.credibleSet.colocalisation.rows[158].otherStudyLocus.study.target approvedSymbol ALDH2
+
+> [q314] data.credibleSet.colocalisation count 330
+
+> [q315] data.credibleSet.colocalisation.rows[73] rightStudyType eqtl h4 0.9894962321629834 clpp 0.07826537590308755
+
+> [q316] data.credibleSet.colocalisation.rows[73].otherStudyLocus isTransQtl false
+
+> [q317] data.credibleSet.colocalisation.rows[73].otherStudyLocus.study.target approvedSymbol ALDH2
+
+Of the 443, 432 reach H4 ≥ 0.8 and all but one are trans (`isTransQtl true`; all 442 non-eQTL partners are
+protein QTLs): the locus is a broad trans-pQTL hub. The one cis colocalisation is ALDH2's (a BLUEPRINT neutrophil
+transcript, q311). The other four sets give the same: 330, 438, 409 and 144 QTL colocalisations, the cis one ALDH2's
+on three (q315 on Timmers 2020's), none cis on mvAge's:
+
+> [q318] data.credibleSet.colocalisation count 438
+
+> [q319] data.credibleSet.colocalisation count 409
+
+> [q320] data.credibleSet.colocalisation count 144
+
+SH2B3 passes locus-to-gene (0.95, q23) but colocalises nowhere; ALDH2 meets a criterion of its own (cis
+colocalisation) and holds every cis colocalisation: two genes, each on a different criterion, so under D24 the call
+is ambiguous, `effector:E3`, no gene named (the lead's ruling on this row, 2026-11-11).

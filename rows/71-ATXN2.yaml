@@ -20,7 +20,9 @@ verdict_reason: >-
   (Joshi 2017). On lifespan the net direction is resolved. The lifespan-lowering haplotype is almost absent outside
   Europe. Deelen's cohorts include the Rotterdam Study, also in LifeGen, so Deelen overlaps Timmers 2019's sample in
   part, though not Pilling's. The seed's other rsIDs: rs3184504 (SH2B3 R262W), rs7137828, rs10774625, rs4766578 (r²
-  0.77) and rs11066320 (r² 0.78, near PTPN11) are in the lead's broad credible set, one signal here.
+  0.77) and rs11066320 (r² 0.78, near PTPN11) are in the lead's broad credible set, one signal here. Effector E3, no gene named (D24): SH2B3 passes
+  locus-to-gene (0.95 on Timmers 2020's set) but colocalises with no cis QTL, while the one cis-QTL colocalisation at
+  H4 ≥ 0.8 on four of the five lifespan-class sets is ALDH2's expression (the hundreds of others are trans).
 axes:
   tier: {value: B, cites: [pmid-30642433#q8, pmid-29227965#q7, pmid-30642433#q14, pmid-31413261#q9, pmid-31484785#q17, pmid-31484785#q18]}
   mechanism: {value: heart_vessels, cites: [pmid-30642433#q8, pmid-29227965#q8]}
@@ -34,11 +36,11 @@ flags:
   - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-30642433#q8]}
   - {token: ancestry_tag, cites: [db-opentargets-26.09#q19, db-opentargets-26.09#q20]}
   - {token: "causal:C2", cites: [db-opentargets-26.09#q21]}
-  - {token: "effector:E2", cites: [db-opentargets-26.09#q23]}
+  - {token: "effector:E3", cites: [db-opentargets-26.09#q23, db-opentargets-26.09#q310, db-opentargets-26.09#q311, db-opentargets-26.09#q312, db-opentargets-26.09#q313, db-opentargets-26.09#q314, db-opentargets-26.09#q315, db-opentargets-26.09#q316, db-opentargets-26.09#q317, db-opentargets-26.09#q318, db-opentargets-26.09#q319, db-opentargets-26.09#q320]}
   - {token: "ld_proxy_of:rs11065979", cites: [db-opentargets-26.09#q22]}  # rs7137828 r² 0.81, rs10774625 r² 0.77
 variants:
   - rsid: rs11065979
-    gene: SH2B3
+    gene: ""
     phenotype: Blood pressure, heart and autoimmunity
     trait_efo_id: EFO_0007796
     effect_allele: C
@@ -56,13 +58,13 @@ variants:
           You carry one copy of each of the two common versions of this DNA region, the most common combination
           (about half of people of European ancestry have it). It is the reference the other combinations are
           compared with, so it neither raises nor lowers your expected lifespan here. The region, around the SH2B3
-          gene, affects blood cells, blood pressure and the immune system. The finding comes from people of
+          and ATXN2 genes, affects blood cells, blood pressure and the immune system. The finding comes from people of
           European ancestry; outside Europe one of the versions is rare and this result says little.
       - genotype: C/C
         state: protective
         conclusion: >-
           You carry two copies of the version of this DNA region that goes with a longer life (about 3 in 10
-          people of European ancestry do). The region, around the SH2B3 gene, is linked to heart and blood vessel
+          people of European ancestry do). The region, around the SH2B3 and ATXN2 genes, is linked to heart and blood vessel
           disease, blood pressure and the immune system, and this version goes with less type 1 diabetes and
           autoimmune disease. In large British and European studies each copy went with parents living on average
           nearly two months longer, though a large American study did not confirm it. The same version goes with
@@ -73,7 +75,7 @@ variants:
         state: risk
         conclusion: >-
           You carry two copies of the version of this DNA region that goes with a shorter life (about 2 in 10
-          people of European ancestry do). The region, around the SH2B3 gene, is linked to heart and blood vessel
+          people of European ancestry do). The region, around the SH2B3 and ATXN2 genes, is linked to heart and blood vessel
           disease, blood pressure and the immune system, and this version goes with more type 1 diabetes and
           autoimmune disease. In large British and European studies each copy went with parents living on average
           nearly two months less, though a large American study did not confirm it. The same version goes with
