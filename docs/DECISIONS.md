@@ -132,3 +132,17 @@ the person's standing word (2026-11-11, "if this is autonomous").
    Its `trait_efo_id` is the anchor study's trait, by §6.2's list (healthspan EFO_0009762, parental longevity
    EFO_0007796, life span OBA_VT0005372).
 
+## D18 — a trade-off, an obesity locus's label, and multivariate ageing at tier A (2026-11-11)
+
+From the curator's row 11 (LINC01875); the lead settled it under the person's standing word.
+
+1. **A `tradeoff` is quoted harm.** The longer-life allele raises a disease, or an established risk factor for one
+   (LDL, blood pressure, low bone density for osteoporosis and fracture). With no quote tying it to a harm, it is no
+   trade-off.
+2. **A locus acting through weight is `modifiable`** with `act_behaviour:weight`, as §4.2's label line says
+   ("acts through a behaviour: smoking, weight, sun"). It is not `modifiable` when it is a trade-off or LATE, which
+   §4.2 makes unlabelled and descriptive.
+3. **A multivariate ageing result does not meet tier A's first criterion.** §4.1 names longevity, lifespan,
+   parental-lifespan or healthspan phenotypes; `MULTIVARIATE_AGEING` scores at B only, beside its co-occurring
+   lifespan study (D16, D17.1).
+
