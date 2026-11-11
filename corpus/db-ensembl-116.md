@@ -875,3 +875,26 @@ pmid-40021682#q21; `ld-ceu-rs13190937-*.json`): r² 1.0 to rs13215804, Park's ot
 answers at this site; r² 0.061 to row 37's lead rs3130507 (q242), a separate signal; r² 0.33 to Wright 2019's
 rs1029328 (q243), not a tag. No pair returned for rs3131621 (row 37) or rs34967069 (row 38): unknown, not zero.
 For row 36.
+
+## Reading 2026-11-11, record
+
+> [q244] [3148] population_name 1000GENOMES:phase_3:CEU d_prime 1.000000 r2 0.832000 variation2 rs1265159 variation1 rs3130507
+
+> [q245] [1163] r2 0.951417 variation2 rs3130467 variation1 rs3130507 population_name 1000GENOMES:phase_3:CEU d_prime 1.000000
+
+> [q246] [2373] variation2 rs9265178 r2 0.050105 variation1 rs3130507 d_prime 0.411896 population_name 1000GENOMES:phase_3:CEU
+
+The LD window around row 37's lead rs3130507 (`ld-window-ceu-rs3130507.json`, CEU, window 500 kb, r² ≥ 0.05; 71
+variants at r² ≥ 0.8): Wright 2019's PSORS1C3 lead rs1265159 at r² 0.83, D′ 1 (q244), and rs3130467 at 0.95, D′ 1
+(q245); the least value listed is 0.0501 (q246), the endpoint's floor. The seed's other rsID rs3131621 lies 278 kb
+away, beyond the window's 250 kb on either side, so the listing does not reach it; the pairwise endpoint returns no
+pair for the two (`ld-ceu-rs3130507-rs3131621.json`, no text).
+
+> [q247] populations[65] allele_count 143 allele G population 1000GENOMES:phase_3:CEU frequency 0.722222222222222
+
+> [q248] populations[64] allele A allele_count 131 frequency 0.661616161616162 population 1000GENOMES:phase_3:CEU
+
+Both of row 37's seed SNPs are in the CEU panel: rs3130507 G 0.722 (q247), rs3131621 A 0.662 (q248). So the empty
+pair reads as r² below the 0.05 floor (row 28's reading of an empty pair, q156). That r² is small is also derived from
+Pilling's sex split: rs3131621's fathers' z of about 5.5 would show as at least r × 5.5 at rs3130507, whose fathers'
+P is 0.24 (z 1.2). For row 37.

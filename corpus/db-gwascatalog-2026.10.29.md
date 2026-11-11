@@ -768,3 +768,35 @@ In `associations-rs12203592-p1.json` (the second page): Farré's freckles, T "un
 The Catalog's two associations at rs6902687 (`associations-rs6902687.json`, totalElements 2): Park 2025's lifespan,
 C, β 0.004 "increase", P 3e-8 (q225, q226); and Zhou 2025's blood-cell latent factor 2 (red cell), P 6e-10, effect
 allele "?" (q227, q228). No other lifespan, longevity or healthspan study. For row 36.
+
+## Reading 2026-11-11, record
+
+> [q229] _embedded.associations[1] association_id 35567711 risk_frequency 0.72 pvalue_description  pvalue_mantissa 2 pvalue_exponent -10 multi_snp_haplotype false snp_interaction false range [0.011-0.02] beta 0.0155 unit decrease p_value 2e-10 accession_id GCST006696 pubmed_id 29227965 first_author Pilling LC
+
+> [q230] _embedded.associations[1].snp_effect_allele[0] rs3130507-G
+
+The Catalog's two associations at rs3130507 (`associations-rs3130507.json`, totalElements 2): Pilling 2017's mothers'
+attained age, G, β 0.0155 "decrease" (the Martingale residual, so longer-lived), P 2 × 10⁻¹⁰ (q229, q230), and
+Pilling's combined parents (P 4 × 10⁻⁶). No other trait at the lead itself. For row 37.
+
+> [q231] _embedded.associations[0] association_id 45627116 risk_frequency NR pvalue_description  pvalue_mantissa 1 pvalue_exponent -10 multi_snp_haplotype false snp_interaction false range [1.62‐2.45] or_per_copy_num 2.0 or_value 2.0 beta - p_value 1e-10 accession_id GCST008096 pubmed_id 30921485 first_author Bejaoui Y
+
+> [q232] _embedded.associations[0].reported_trait[0] Psoriasis
+
+> [q233] _embedded.associations[0].snp_effect_allele[0] rs1265181-?
+
+At rs1265181, r² 0.81 to row 37's lead in CEU (the window listing): psoriasis, OR 2.0, P 1 × 10⁻¹⁰, Bejaoui 2019, risk
+allele not given (q231 to q233); Zhang 2009's psoriasis line (P 2 × 10⁻²⁰⁸) is a Chinese sample. Of the lead's 71
+proxies at r² ≥ 0.8, 14 have Catalog records (each queried 2026-11-11): psoriasis at six (rs6933647, rs3130455,
+rs3130467, rs1265181, rs3130517, rs130076; Lee 2019's are SNP-interaction lines), and immune-protein levels (HMOX1,
+IL-12/LAG3, beta-2-microglobulin, IL-12B), sarcoidosis, membranous nephropathy, HIV set-point viral load, EBV copy
+number, hepatitis B vaccine response, HDL cholesterol and waist-to-hip ratio once or twice each. None gives a risk
+allele for psoriasis, so no direction is read. For row 37.
+
+> [q234] _embedded.associations[0] association_id 165704410 risk_frequency NR pvalue_description  pvalue_mantissa 2 pvalue_exponent -13 multi_snp_haplotype false snp_interaction false range - beta - p_value 2e-13 accession_id GCST90302862 pubmed_id 37377963 first_author Wen YP
+
+> [q235] _embedded.associations[0].reported_trait[0] Rheumatoid arthritis or inflammatory bowel disease
+
+At the seed's other rsID rs3131621 (`associations-rs3131621.json`, totalElements 4): rheumatoid arthritis or
+inflammatory bowel disease, P 2 × 10⁻¹³, allele "?" (q234, q235), beside Wright's fathers (P 9 × 10⁻⁹) and Pilling's
+fathers and combined parents. For row 37's prose and the scout queue.

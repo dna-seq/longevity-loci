@@ -1,0 +1,207 @@
+# The seed list's locus 37, named HCP5 by the seed after its second rsID (6p21.33, the MHC class I region between
+# PSORS1C3 and MICA/MICB). Curated 2026-11-11. Lead rs3130507 (Pilling 2017's mothers, PSORS1C3). The seed's other
+# rsID, rs3131621 (Pilling's fathers, MICA … MICB, 278 kb away), is a separate signal and goes to the scout's queue
+# (D25.6). Wright 2019's PSORS1C3 lead rs1265159 (r² 0.83) and rs3130467 (r² 0.95) are tags of this lead.
+locus_id: 37
+locus_name: HCP5
+verdict: kept
+verdict_reason: >-
+  Tier B, as the seed has it, capped by red-flag heterogeneity, and the tier rests on one nominal number. Genome-wide
+  in Pilling 2017's mothers only (UK Biobank, P 2.1e-10; fathers P 0.24; both parents 3.5e-6): G, the common allele
+  (0.72), goes with longer-lived mothers. Replicated nominally outside UK Biobank: in LifeGen's mothers with UK
+  Biobank's lives removed, G 0.29 years against 0.40 at discovery, one-sided P 0.048 (Timmers 2019's Figure 2 source
+  data, whose criterion is a one-sided P below 0.05; about 0.096 two-sided), and Timmers' abstract lists PSORS1C3
+  among the loci it validates. But AncestryDNA's mothers (Wright 2019), a sample independent of both, show at most a
+  third to a half of the effect: at rs3130467 (r² 0.95, D′ 1) P 0.073, heterogeneity with UK Biobank P 0.040; at
+  Wright's PSORS1C3 lead rs1265159 (r² 0.83) P 0.34, heterogeneity P 0.003, power about 0.97 and 0.98 to see the UK
+  Biobank effect (derived), and Wright lists the locus as not replicated. That is a D21 red flag, so the row carries
+  replication_failed and stays at B. It is not D (D25.1) only because LifeGen's one-sided 0.048 counts as an
+  independent p below 0.05; read two-sided, nothing independent passes and the row would be D. Put to the lead.
+  FinnGen r11's any-death endpoint leans the same way (G toward less death, β −0.014, SE 0.010, P 0.16), not
+  significant. At the oldest ages Deelen 2019 is flat at the 90th percentile (OR 1.006, P 0.84) and leans the other
+  way at the 99th (OR 0.950, P 0.27); against LifeGen's joint beta (G +0.018, P 7.5e-5) the 90th percentile flags
+  under the APOE factor only (power 0.89, heterogeneity P 0.031; the mean factor 0.33, 0.34) and the 99th under
+  neither on power (0.60, 0.20), so no flag (D25.3), and exceptional survival is 0. Healthspan agrees nominally in UK
+  Biobank, Pilling's own sample (Zenin 2019: G later end of healthspan, P 0.033 after genomic control). The effect
+  is the mothers': Timmers 2019's moderator model finds it sex-specific (male moderator −0.038, P 7.3e-5, FDR 0.0017)
+  and not age-dependent (P 0.24), mothers' effects of one size from 60 to 90 (0.048 at 60-70, 0.031 at 80-90),
+  fathers' about zero; sex_specific:f. The region is immune: of the lead's 71 proxies at r² ≥ 0.8 in CEU, six carry
+  psoriasis associations in the GWAS Catalog (rs1265181, r² 0.81: OR 2.0, P 1e-10, risk allele not given), others
+  immune-protein levels, membranous nephropathy, HIV set-point viral load and sarcoidosis, the lead itself none but
+  Pilling's. No direction is given for psoriasis and nothing shows the lifespan effect runs through it, so the
+  mechanism is general_ageing (D25.7) and the immune link is pleiotropy (mech:autoimmune); immune_inflammation is the
+  alternative, put to the lead. No gene is named (requirements §4.2, §6.2): Open Targets 26.09 resolves neither of
+  the seed's rsIDs (no variant under either allele order, nothing by search), so causal and effector confidence are
+  unassessed (C4, E4; no flag, nothing to cite). The seed's other rsID, rs3131621 (MICA … MICB, the source of the
+  seed's name), is a separate signal: Pilling's fathers' lead (P 3.6e-8; mothers 3.5e-5), its A longer-lived, 278 kb
+  away; both SNPs are in the CEU panel and Ensembl returns no pair, which reads as r² below its 0.05 floor, and the
+  sex split agrees (its fathers' z of about 5.5 against this lead's fathers' P 0.24, derived). It has the stronger
+  case, replicated in AncestryDNA's fathers (P 7.7e-4; meta-analysis 8.9e-9, Table 3 "Replicated"), and the Catalog
+  also lists rheumatoid arthritis or inflammatory bowel disease there (P 2e-13). Under D25.6 it goes to the scout's
+  queue as a candidate row and is kept out of this row's axes and studies.
+axes:
+  tier: {value: B, cites: [pmid-29227965#q22, pmid-29227965#q23, pmid-30642433#q100, pmid-30642433#q101, pmid-30642433#q21, pmid-31484785#q72, pmid-31484785#q73, pmid-31484785#q74, pmid-31484785#q12, db-ensembl-116#q244, db-ensembl-116#q245, pmid-31413261#q94, pmid-30642433#q102, db-finngen-r11#q8]}
+  mechanism: {value: general_ageing, cites: [pmid-29227965#q22, db-gwascatalog-2026.10.29#q229, db-gwascatalog-2026.10.29#q231, db-gwascatalog-2026.10.29#q232]}
+  pleiotropy: {values: ["mech:autoimmune"], cites: [db-gwascatalog-2026.10.29#q231, db-gwascatalog-2026.10.29#q232, db-gwascatalog-2026.10.29#q233]}
+  age_of_action: {value: LIFELONG, confidence: DIRECT_WEAK, cites: [pmid-30642433#q103, pmid-30642433#q104, pmid-30642433#q105]}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
+            cites: [pmid-30729179#q60, pmid-30729179#q59, pmid-29227965#q22, pmid-30642433#q100, db-finngen-r11#q8, pmid-31413261#q94]}
+  actionability: {label: descriptive, cites: [pmid-29227965#q22]}
+  context: {values: ["sex_specific:f", eur_only_evidence], cites: [pmid-29227965#q22, pmid-30642433#q103, pmid-30642433#q106]}
+flags:
+  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-29227965#q22, db-ensembl-116#q247]}
+  - {token: replication_failed, cites: [pmid-31484785#q72, pmid-31484785#q73, pmid-31484785#q74, pmid-31484785#q12]}
+  - {token: "ld_proxy_of:rs3130507", cites: [db-ensembl-116#q245]}  # rs3130467, r² 0.95
+variants:
+  - rsid: rs3130507
+    gene: ""
+    phenotype: MHC class I region, mothers' lifespan
+    trait_efo_id: EFO_0007796
+    effect_allele: G
+    effect_size: -0.0155
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA region, the one most people of European ancestry
+          have (about 52 in 100). It is the reference the other versions are compared with, so it neither raises
+          nor lowers your expected lifespan here. The region, on chromosome 6, lies among immune-system genes (the
+          HLA region) and near genes linked to psoriasis, and it is not yet clear which gene matters. The finding
+          comes from people of European ancestry, and from mothers; less is known elsewhere.
+      - genotype: A/G
+        state: risk
+        conclusion: >-
+          You carry one copy of a less common version of this DNA region (about 40 in 100 people of European
+          ancestry do). In a large British study it went with mothers living a little less long, though not
+          fathers, and with slightly worse odds of staying free of major disease. A separate European study saw the
+          same in mothers, only weakly, and a large American study saw a much smaller effect. It is a likely finding,
+          not a settled one, and the effect is small. The region holds immune-system genes linked to psoriasis;
+          which gene matters is not known.
+      - genotype: A/A
+        state: risk
+        conclusion: >-
+          You carry two copies of a less common version of this DNA region (about 8 in 100 people of European
+          ancestry do). In a large British study each copy went with mothers living a little less long, though not
+          fathers, and with slightly worse odds of staying free of major disease. A separate European study saw the
+          same in mothers, only weakly, and a large American study saw a much smaller effect. It is a likely finding,
+          not a settled one, and the effect is small. The region holds immune-system genes linked to psoriasis;
+          which gene matters is not known.
+studies:
+  - rsid: rs3130507
+    note: pmid-29227965
+    quote: q22
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank), mothers
+    ancestry: [EUR]
+    stratum: parent
+    stratum_level: mother
+    stat_significance: significant
+    p_value: "2.1E-10"
+    p_value_num: 2.1e-10
+    effect_size: -0.0155
+    effect_measure: beta
+    effect_unit: Martingale residual of mothers' attained age per G allele (negative = longer life)
+    effect_allele: G
+    direction: protective
+    statistical_test: "BOLT-LMM on Martingale residuals of mothers' attained age (Table 2, 'Loci only emerging in mothers' analysis', q23); both parents combined P 3.5E-06, fathers 0.24; the mothers' N is not in the cached text (389,166 met at least one analysis)"
+    curator: claude-opus-5-5
+  - rsid: rs3130507
+    note: pmid-30642433
+    quote: q100
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (LifeGen cohorts, UK Biobank's lives removed), mothers
+    ancestry: [EUR]
+    stratum: parent
+    stratum_level: mother
+    stat_significance: nominal
+    p_value: "0.0480327971577325"
+    p_value_num: 0.04803
+    effect_size: 0.29194
+    effect_measure: beta
+    effect_unit: years of life per copy in self (mothers' estimate doubled), per G allele
+    effect_allele: G
+    direction: protective
+    statistical_test: "Replication of Pilling 2017's mothers' rs3130507 in LifeGen excluding UK Biobank (Figure 2 source data 1, sample b, q12); the P is one-sided (q101), about 0.096 two-sided; discovery 0.40 years, P 2.1E-10; N not given per SNP. UK Biobank and LifeGen together: G beta1 +0.0179 (SE 0.0045), P 7.5E-05 (q102)"
+    curator: claude-opus-5-5
+  - rsid: rs3130507
+    note: pmid-31484785
+    quote: q72
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_linear
+    population: AncestryDNA customers of the European population group, mothers born 1886-1940
+    ancestry: [EUR]
+    stratum: parent
+    stratum_level: mother
+    stat_significance: not_significant
+    p_value: "0.07339"
+    p_value_num: 0.07339
+    effect_size: -0.006717
+    effect_measure: beta
+    effect_unit: z-score of maternal lifespan per copy of the proxy's effect allele, which no cached table names (Supplemental Table 9 prints the other allele); aligned as the UK Biobank arm's -0.0137
+    proxy_rsid: rs3130467
+    statistical_test: "Linear regression of mothers' lifespan on offspring dosage, AncestryDNA arm of Wright's meta-analysis (Supplemental Table 9, q72): beta -0.0067 (SE 0.0038) against UK Biobank's -0.0137 (SE 0.0024), heterogeneity P 0.040, power about 0.97 (derived). At Table 3's PSORS1C3 lead rs1265159 (r² 0.83, 'Not Replicated', q74): AncestryDNA P 0.34, heterogeneity P 0.003 (q73)"
+    curator: claude-opus-5-5
+  - rsid: rs3130507
+    note: pmid-31413261
+    quote: q94
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's 18 discovery cohorts)
+    ancestry: [EUR]
+    n_cases: 11262
+    sample_size: 36745
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.8407"
+    p_value_num: 0.8407
+    effect_size: 1.006
+    effect_measure: OR
+    effect_unit: odds ratio of reaching the 90th percentile, per G allele
+    effect_allele: G
+    direction: protective
+    statistical_test: "Look-up of Pilling's mothers' rs3130507 in Supplementary Data 1; I² 44.8 %. Against LifeGen's joint beta (D25.3, derived): APOE factor power 0.89, heterogeneity P 0.031; mean factor power 0.33, heterogeneity P 0.34: a flag under one calibration only, so none"
+    curator: claude-opus-5-5
+  - rsid: rs3130507
+    note: pmid-31413261
+    quote: q94
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's 18 discovery cohorts)
+    ancestry: [EUR]
+    n_cases: 3484
+    sample_size: 28967
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.2733"
+    p_value_num: 0.2733
+    effect_size: 0.950
+    effect_measure: OR
+    effect_unit: odds ratio of reaching the 99th percentile, per G allele
+    effect_allele: G
+    direction: risk
+    statistical_test: "Look-up of Pilling's mothers' rs3130507 in Supplementary Data 1; leans against the discovery, not nominal; power under D25.3 0.60 (APOE factor) and 0.20 (mean factor), so no flag"
+    curator: claude-opus-5-5
+  - rsid: rs3130507
+    note: pmid-30729179
+    quote: q60
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "0.033"
+    p_value_num: 0.033
+    effect_size: 0.0118
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per A allele (positive = earlier)
+    effect_allele: A
+    direction: risk
+    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), Z 2.185, raw -log10 P 1.539 (P 0.029); P 0.033 after the genomic control of 1.053 (q59); the same UK Biobank sample as the discovery"
+    curator: claude-opus-5-5
