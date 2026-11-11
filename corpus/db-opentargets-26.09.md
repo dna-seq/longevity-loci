@@ -2159,7 +2159,7 @@ whole-cohort deposit (GCST90551884, "Lifespan", n 393,833): a SuSiE-inf set of 2
 7.7e-9, β −0.0088 (q589), its own PIP 0.117 (q591), next rs78528818 at 0.109; flagged for quality, fine-mapped
 without an in-sample LD reference (q590); L2G PLN 0.77 (q592, q593), SLC35F1 0.20. The set's β is about 40 times
 smaller than the deposit's |0.333| at the same variant (pmid-40021682#q43) and its allele is not stated: unreconciled,
-read for nothing. Park's second deposit, GCST90551886 (n 212,863, the women's scan by size): a 25-variant set led
+read for nothing. Park's second deposit, GCST90551886 (n 212,863, the women by subtraction from the whole cohort and the men's q112): a 25-variant set led
 by an insertion at 6:118,636,487, P 3.3e-9 (q594), which holds rs73768634 (q596), one of the rare haplotype's
 variants; L2G CEP85L 0.27 (q597). No colocalisation is fetched for either; no other study, disease or QTL, holds
 the lead.

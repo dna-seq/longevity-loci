@@ -1,5 +1,6 @@
 # The seed list's locus 44, unnamed (6q22.31; the seed's gene and name columns empty, PLN its l2g_top). Curated 2026-11-11.
-# Lead rs76888380 (GRCh38 6:118,368,937, GRCh37 6:118,690,100), the seed's only rsID, entered by the methodology
+# Lead rs76888380 (GRCh38 6:118,368,937; GRCh37 6:118,690,100, the deposits' build, the 321,163 offset checked on
+# rs9320648, quoted at 118,690,014 in LifeGen and Zenin and at 118,368,851 in FinnGen), the seed's only rsID, entered by the methodology
 # track from Open Targets' fine-mapping of Park 2025's whole-cohort deposit (GCST90551884), with no tier vote. C
 # ancestral and the reference; T is an African-ancestry allele (0.064 in gnomAD's African genomes, 0.00016 in
 # non-Finnish Europeans, absent in 1000 Genomes EUR and in Finns). Park's paper names no locus here; the catalog holds
@@ -17,27 +18,32 @@ verdict_reason: >-
   paper's own threshold. Each T goes with a Martingale residual 0.33 higher (more deaths than expected), about 25
   times APOE ε4's per-allele effect, from a linear mixed model run on a few dozen carriers. Nine variants within 101
   kb pass 5e-8 together, all at the same frequency and effect; three of them read in gnomAD (rs78528818, rs73768654,
-  rs73768634) are, like the lead, African-ancestry alleles (5 to 7 in 100 there, 1 or 2 in 10,000 in Europeans). It
-  is one rare African haplotype carried by a handful of the cohort's European-ancestry participants. Open Targets
+  rs73768634) are, like the lead, African-ancestry alleles (5 to 7 in 100 there, 1 or 2 in 10,000 in Europeans): one
+  rare African haplotype carried by a few dozen of the cohort's European-ancestry participants. Open Targets
   fine-maps the deposit to a 21-variant set led by the lead (PIP 0.12, P 7.7e-9), flagged for quality and fine-mapped
   without an in-sample LD reference; the set's β (−0.0088) is about 40 times smaller than the deposit's and its
-  allele unstated, so it is read for nothing. Park's women's deposit (GCST90551886, 212,863 of the same people) gives
-  the lead P 3.5e-8 at a similar effect, a subset and no replication; its Open Targets set is led by another rare
-  variant 270 kb away (P 3.5e-9) and holds one of the haplotype's variants (rs73768634). The men's deposit is not
-  read. No study claims this locus, so it
-  is not §4.1's "genome-wide significant locus" that B requires; the P passes the suggestive bar, and tier C is the
-  research view. D ("overfit") and dropping the row are the alternatives, put to the lead as a question for every
-  seed entered from a credible set alone (46, 75, 80 and 96 follow). Nothing can test it: Deelen 2019's 90th and 99th
+  allele unstated, so it is read for nothing. Park's second sex scan (GCST90551886, n 212,863: the whole
+  cohort less the men's 180,970, so the women, derived) gives the lead P 3.5e-8 at a similar effect, a subset and no
+  replication. Past 5e-8 in that window lie at least three groups of rare variants (major allele at 0.999967, 0.99991
+  and 0.999865) over about 330 kb; only the first group's ancestry was read, and whether the carriers overlap is
+  unknown. Its Open Targets set is led by the second group's insertion 270 kb away (P 3.5e-9). The men's deposit is
+  not read. No study claims this locus, so it is not §4.1's "genome-wide significant locus" that B requires; the P passes the suggestive bar, and tier C is the
+  research view. D ("overfit") and dropping the row are the alternatives, put to the lead as a question for a seed
+  that rests on a deposit line below its own paper's filter and unreported by it (locus 75, KLF12, comes from the
+  same deposit and will be read for the same). Nothing can test it: Deelen 2019's 90th and 99th
   percentiles (rarest variant 0.01 here), Zenin 2019's healthspan (down to 0.0011), FinnGen r11's death endpoint and
   LifeGen hold no line for the lead or its haplotype, and T is absent in Finns. Untested, not null, so not
   replication_failed. Every genotype is neutral: a tier C row without a finding its own authors make carries no
   weight, and the people who carry T are mostly of African ancestry (about 12 in 100 there carry one copy), where
   nothing was studied (R-TIER-3). Causal C2 by the letter (in a 95 % set, PIP 0.12), on a set built without the
   study's own LD. Effector E2, PLN, by locus-to-gene alone (0.77), with no QTL colocalisation for either set and no
-  rival gene passing a criterion (D24); the gene is named for the region, not as a finding. Mechanism general
-  ageing, nothing pointing elsewhere; descriptive; age of action unknown.
+  rival gene passing a criterion (D24), so `gene` is PLN by the letter, on a set this weak; an empty gene with E4
+  (the set not counted as an assessment) is the alternative, put to the lead. Lifespan "+" rests on the deposit line
+  alone, the one the tier does not count as a finding; "untested" is the alternative, put to the lead. Healthspan and
+  exceptional survival are untested (absent from Zenin and Deelen). Mechanism general ageing, nothing pointing
+  elsewhere; descriptive; age of action unknown.
 axes:
-  tier: {value: C, cites: [pmid-40021682#q39, pmid-40021682#q40, pmid-40021682#q41, pmid-40021682#q42, pmid-40021682#q43, pmid-40021682#q44, pmid-40021682#q45, pmid-40021682#q46, pmid-40021682#q29, pmid-40021682#q32, db-ensembl-116#q294, db-ensembl-116#q295, db-ensembl-116#q296, db-ensembl-116#q297, db-ensembl-116#q298, db-ensembl-116#q299, db-ensembl-116#q300, db-ensembl-116#q301, db-ensembl-116#q302, db-ensembl-116#q303, db-opentargets-26.09#q589, db-opentargets-26.09#q590, db-opentargets-26.09#q594, db-opentargets-26.09#q596, pmid-40021682#q47, pmid-40021682#q48, db-gwascatalog-2026.10.29#q302, pmid-31413261#q108, pmid-31413261#q109, pmid-30729179#q67, pmid-30729179#q68, db-finngen-r11#q19, db-finngen-r11#q20, pmid-30642433#q225, pmid-30642433#q226]}
+  tier: {value: C, cites: [pmid-40021682#q39, pmid-40021682#q40, pmid-40021682#q41, pmid-40021682#q42, pmid-40021682#q43, pmid-40021682#q44, pmid-40021682#q45, pmid-40021682#q46, pmid-40021682#q29, pmid-40021682#q32, db-ensembl-116#q294, db-ensembl-116#q295, db-ensembl-116#q296, db-ensembl-116#q297, db-ensembl-116#q298, db-ensembl-116#q299, db-ensembl-116#q300, db-ensembl-116#q301, db-ensembl-116#q302, db-ensembl-116#q303, db-opentargets-26.09#q589, db-opentargets-26.09#q590, db-opentargets-26.09#q594, db-opentargets-26.09#q596, pmid-40021682#q47, pmid-40021682#q48, db-gwascatalog-2026.10.29#q302, pmid-31413261#q108, pmid-31413261#q109, pmid-30729179#q67, pmid-30729179#q68, db-finngen-r11#q19, db-finngen-r11#q20, pmid-30642433#q225, pmid-30642433#q226, db-opentargets-26.09#q112]}
   mechanism: {value: general_ageing, cites: [pmid-40021682#q43]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}

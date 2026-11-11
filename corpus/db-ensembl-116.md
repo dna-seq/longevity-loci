@@ -1089,3 +1089,9 @@ Park's deposit (pmid-40021682#q44 to #q46), found by position (`overlap-6-*.json
 (`variation-<rsid>.json`), show the same pattern: rs78528818's A 0.061 African, 0.00015 European (q298, q299);
 rs73768654's T 0.072 and 0.00018 (q300, q301); rs73768634's A 0.047 and 0.00009 (q302, q303). One African haplotype,
 carried by a few dozen of UK Biobank's European-ancestry participants (derived).
+
+The records above are GRCh38; the deposits and Deelen's, Zenin's and LifeGen's files are GRCh37. The offset used
+to place the lead and its neighbours in them (GRCh37 = GRCh38 + 321,163 here) is checked on a quoted variant:
+rs9320648 at 118,690,014 in LifeGen (pmid-30642433#q225) and Zenin (pmid-30729179#q67), at 118,368,851 in FinnGen's
+GRCh38 file (db-finngen-r11#q19). The three neighbours were found from the deposit's GRCh37 positions by that offset
+(`overlap-6-*.json`), and their alleles match the deposit's variant ids. For row 44.
