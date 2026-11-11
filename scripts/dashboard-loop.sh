@@ -7,7 +7,7 @@
 set -u
 PY="$1"
 KIT=$(dirname "$(dirname "$PY")")
-TO="${2:-#longevity-loci>dashboard}"
+TO="${2:-#dashboards>longevity-loci curation}"
 ROOT=$(cd "$(dirname "$0")/.." && pwd)
 while :; do
   out=$(cd "$ROOT" && sh "$PY" "$KIT/drivers/claude-code/quota.py" --json 2>/dev/null \

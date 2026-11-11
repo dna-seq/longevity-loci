@@ -26,7 +26,7 @@ cmd = "sh kit:bin/py.sh kit:classes/desk/watch-answers.py longevity-loci lead"
 [seat.lead.watch.plan]
 cmd = "sh kit:bin/py.sh kit:classes/lead/plan-watch.py --plan docs/ROADMAP.md"
 
-# The curation dashboard, one message kept up to date in #longevity-loci > dashboard every 10 minutes (the person,
+# The curation dashboard, one message kept up to date in #dashboards > longevity-loci curation every 10 minutes (the person,
 # 2026-11-11: "a dashboard in respective zu channel to track progress visually"). Silent unless a refresh fails.
 [seat.lead.watch.dashboard]
 cmd = "sh scripts/dashboard-loop.sh kit:bin/py.sh"
