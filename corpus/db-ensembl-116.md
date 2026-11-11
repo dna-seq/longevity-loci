@@ -408,3 +408,10 @@ agree (pmid-30642433#q59, q60).
 
 rs2271961: an intron variant, GRCh38 3:49,840,680, reference T, alternative C (3_49840680_T_C). T is 0.514 in
 gnomAD's non-Finnish Europeans; C is 0.166 in East Asians.
+
+> [q106] [0] d_prime 1.000000 variation1 rs9872864 variation2 rs9855505 r2 1.000000 population_name 1000GENOMES:phase_3:EUR
+
+> [q107] [0] population_name 1000GENOMES:phase_3:EUR d_prime 1.000000 variation2 rs12490656 r2 0.996021 variation1 rs9872864
+
+rs9855505 (135 bp from the lead) is in perfect LD with rs9872864 in 1000 Genomes EUR (r² 1.00, D′ 1.00), and rs12490656
+nearly (r² 0.996). Fetched to read Timmers' direction strings across the block (pmid-30642433#q61, q62). For row 21.

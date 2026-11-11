@@ -1,0 +1,221 @@
+# The seed list's locus 21, IP6K1 (3p21.31; the seed's genes IP6K1 and TRAIP). Curated 2026-11-11, the third run's
+# first row. Lead rs9872864 (the seed's lead), an intron variant, A/G, G the major allele in Europeans by a hair
+# (0.512). The seed's second rsID, rs2271961 (86 kb away, Rosoff 2023's mvAge SNP), is the same signal: r² 0.99,
+# D′ 1.00 in 1000 Genomes EUR, its T riding with the lead's G (derived from East Asian frequencies;
+# db-ensembl-116#q100), and each SNP lies in the other's credible set; named, scored only through the lead. Wright
+# 2019's maternal-lifespan meta-analysis locus (Table 3, Supplemental Tables 8 and 9); in Timmers 2019's, Zenin
+# 2019's and Deelen 2019's summary statistics at both SNPs. Open Targets 26.09: 538 and 431 credible sets hold
+# them, two of a scoring class; the GWAS Catalog (2026-10-29) holds two and three associations.
+locus_id: 21
+locus_name: IP6K1
+verdict: kept
+verdict_reason: >-
+  Tier A, up from the seed's B, on §4.1's letter, with the replication thin. Wright 2019's meta-analysis of
+  AncestryDNA customers' and UK Biobank's mothers (N 660,000) is genome-wide at rs9872864, P 6.9e-10 (Table 3,
+  Supplemental Table 9; GWAS Catalog GCST009449), G lengthening mothers' lives; neither arm is genome-wide alone
+  (AncestryDNA P 5.6e-5, UK Biobank P 1.3e-7), both arms' z-score effects are −0.011 per A, heterogeneity P 0.90,
+  and the paper prints no pooled effect, so the study is scored on allele, direction and P (D20). Fathers lean the
+  same way, not genome-wide (meta P 8.0e-5). Deelen 2019's survival to the 90th percentile replicates it in a sample
+  sharing nothing with Wright's (no UK Biobank, no AncestryDNA): G at P 0.020, same allele, same direction; the 99th
+  percentile, its cases a subset of the 90th's, leans the same way and does not pass (P 0.13). Timmers 2019's
+  million parents' lives (G longer, P 4.4e-4) holds UK Biobank and replicates nothing. Its direction at the lead
+  reads "-+", LifeGen against UK Biobank, but LifeGen's sign is not stable: at rs9855505, in perfect LD 135 bp
+  away, it reads "--", at the proxy rs2271961 "++", and across the 57 SNPs there at P < 0.005 with the lead's
+  frequency it disagrees with UK Biobank at 23 and agrees at 34. LifeGen, independent of Wright's samples, so does
+  not replicate, its estimate indistinguishable from zero; the file prints no per-arm β, and by LifeGen's SE at
+  other loci (about 0.008) its power here is about 0.4, so it is not a powered non-replication and not red-flag
+  heterogeneity under the rule of rows 71 and 67. Rosoff
+  2023's mvAge is genome-wide at rs2271961, the lead's near-perfect proxy (r² 0.99, its T with the lead's G; T,
+  P 3e-9, the GWAS Catalog's record), the same signal pooled from overlapping samples, cited here and not scored.
+  Lifespan +, exceptional survival + (Deelen's 90th percentile, nominal), healthspan 0 (Zenin 2019, G on the
+  healthier side at P 0.105). Mechanism general ageing: the region, 3p21.31, is gene-dense and pleiotropic, and both
+  scoring sets colocalise (H4 ≥ 0.8) with blood pressure and hypertension, intelligence and education, vitamin D,
+  lung function and HDL lipids, but colocalisation gives no direction. Open Targets also lists rs2271961 as the lead
+  of an anxiety-disorder set and of GTEx QTL sets for UBA7 and RNF123 (read, not cached), none colocalised with a
+  scoring set, and the GWAS Catalog holds dental
+  caries, anxiety and tea drinking at the two SNPs. The paper knew of no life-shortening disease at IP6K1. Causal
+  C3: both scoring sets are PICS sets of about 80 variants with flat posteriors (the lead 0.020 and 0.023), which
+  mark a region and pick no variant. Effector E3, no gene named: L2G's top genes are MST1R (0.11) and GMPPB (0.19),
+  IP6K1 0.06, and no scoring set colocalises with an expression, splicing or protein QTL. The protection is an
+  absence of risk, nominally: G is the major allele at 51 % against 49 %, so G/G is the reference. Age of action
+  unknown. The evidence is European.
+axes:
+  tier: {value: A, cites: [pmid-31484785#q49, pmid-31484785#q50, pmid-31484785#q52, pmid-31484785#q54, pmid-31484785#q55, pmid-31413261#q41, pmid-31413261#q43, pmid-31413261#q1, pmid-31413261#q2, db-gwascatalog-2026.10.29#q165, db-gwascatalog-2026.10.29#q166, db-gwascatalog-2026.10.29#q170, db-gwascatalog-2026.10.29#q171, pmid-30642433#q59, pmid-30642433#q60, pmid-30642433#q61, pmid-30642433#q62, pmid-30642433#q19, pmid-30642433#q14, db-ensembl-116#q100, db-ensembl-116#q106, db-ensembl-116#q107]}
+  mechanism: {value: general_ageing, cites: [pmid-31484785#q51, db-opentargets-26.09#q240, db-gwascatalog-2026.10.29#q164, db-gwascatalog-2026.10.29#q167, db-gwascatalog-2026.10.29#q169, db-gwascatalog-2026.10.29#q172, db-gwascatalog-2026.10.29#q174]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "+",
+            cites: [pmid-30729179#q39, pmid-30729179#q40, pmid-31484785#q54, pmid-31484785#q52, pmid-30642433#q59, pmid-31413261#q41, pmid-31413261#q43]}
+  actionability: {label: descriptive, cites: [pmid-31484785#q51]}
+  context: {values: [eur_only_evidence], cites: [pmid-31413261#q1, pmid-30642433#q59, pmid-31484785#q52]}
+flags:
+  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-31484785#q52, pmid-30642433#q59, db-ensembl-116#q98]}
+  - {token: "causal:C3", cites: [db-opentargets-26.09#q231, db-opentargets-26.09#q232, db-opentargets-26.09#q233, db-opentargets-26.09#q234, db-opentargets-26.09#q235, db-opentargets-26.09#q236, db-opentargets-26.09#q241, db-opentargets-26.09#q242, db-opentargets-26.09#q243, db-opentargets-26.09#q244]}
+  - {token: "effector:E3", cites: [db-opentargets-26.09#q237, db-opentargets-26.09#q238, db-opentargets-26.09#q239, db-opentargets-26.09#q240, db-opentargets-26.09#q245, db-opentargets-26.09#q246]}
+variants:
+  - rsid: rs9872864
+    gene: ""
+    phenotype: IP6K1 region (3p21.31), mothers' lifespan
+    trait_efo_id: EFO_0007796
+    effect_allele: G
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the slightly more common version of this DNA region (about 26 in 100 people of
+          European ancestry do). It is the reference the other combinations are compared with. The region, on
+          chromosome 3, is crowded with genes, and which one matters here is not known. The finding comes from
+          people of European ancestry; less is known elsewhere.
+      - genotype: A/G
+        state: risk
+        conclusion: >-
+          You carry one copy of the other common version of this DNA region (about 50 in 100 people of European
+          ancestry do, the most common combination). In very large American and British studies, people with this
+          version tended to have mothers who lived a little less long, and a separate European study of very
+          long-lived people agreed, weakly. The finding is well established, though its confirmation in a separate group is a single, modest one; the effect is small and it is
+          a tendency, not destiny.
+      - genotype: A/A
+        state: risk
+        conclusion: >-
+          You carry two copies of the other common version of this DNA region (about 24 in 100 people of European
+          ancestry do). In very large American and British studies, each copy went with mothers living a little less
+          long, and a separate European study of very long-lived people agreed, weakly. The finding is well established, though its confirmation in a separate group is a single, modest one; the effect is small and it is a tendency, not destiny.
+studies:
+  - rsid: rs9872864
+    note: pmid-31484785
+    quote: q54
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: meta_analysis
+    population: European (AncestryDNA customers of the European population group, mostly European American, with UK Biobank)
+    ancestry: [EUR]
+    sample_size: 660000
+    sample_unit: individuals
+    stratum: parent
+    stratum_level: mother
+    stat_significance: significant
+    p_value: "6.9e-10"
+    p_value_num: 6.9e-10
+    effect_allele: G
+    direction: protective
+    statistical_test: "Meta-analysis of mothers' lifespan, Supplemental Table 9 and Table 3 (q49); no pooled effect printed (D20); arms per A: AncestryDNA −0.01097 (SE 0.0027, raw P 5.6e-5), UK Biobank −0.01147 (SE 0.0022, P 1.3e-7), heterogeneity P 0.90; S9's allele column prints the other allele, S8's and Table 3's the effect allele A (q52); N rounded in the source"
+    curator: claude-opus-5-5
+  - rsid: rs9872864
+    note: pmid-31484785
+    quote: q52
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_linear
+    population: AncestryDNA customers of the European population group, mothers born 1886-1940 (mostly European American)
+    ancestry: [EUR]
+    sample_size: 270000
+    sample_unit: individuals
+    stratum: parent
+    stratum_level: mother
+    stat_significance: nominal
+    p_value: "0.0001338"
+    p_value_num: 0.0001338
+    effect_size: -0.01097
+    effect_measure: beta
+    effect_unit: z-score of maternal lifespan per A allele in offspring (positive = longer)
+    effect_allele: A
+    direction: risk
+    statistical_test: "Linear regression of mothers' lifespan on offspring dosage, Supplemental Table 8; genomic-control P, the paper's own correction (D17.3), raw P 5.609e-05; Table 3's AncestryDNA arm (q49); with UK Biobank, meta P 6.9e-10, heterogeneity P 0.90 (q54), the meta printing no pooled effect; N rounded in the source"
+    curator: claude-opus-5-5
+  - rsid: rs9872864
+    note: pmid-31484785
+    quote: q53
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_linear
+    population: AncestryDNA customers of the European population group, fathers born 1886-1940 (mostly European American)
+    ancestry: [EUR]
+    sample_size: 309000
+    sample_unit: individuals
+    stratum: parent
+    stratum_level: father
+    stat_significance: nominal
+    p_value: "0.001226"
+    p_value_num: 0.001226
+    effect_size: -0.008932
+    effect_measure: beta
+    effect_unit: z-score of paternal lifespan per A allele in offspring (positive = longer)
+    effect_allele: A
+    direction: risk
+    statistical_test: "Supplemental Table 8, genomic-control P (D17.3), raw P 0.0004393; the same customers as the mothers' row; with UK Biobank, meta P 8.0e-5 (q55); N rounded in the source"
+    curator: claude-opus-5-5
+  - rsid: rs9872864
+    note: pmid-30642433
+    quote: q59
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.00044041163"
+    p_value_num: 0.00044041163
+    effect_size: -0.01353288
+    effect_measure: beta
+    effect_unit: log hazard protection per A allele in self (positive = longer life)
+    effect_allele: A
+    direction: risk
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), n 638,114, info 0.997, direction -+; LifeGen's sign unstable: -- at rs9855505 (r² 1.00, q61), ++ at rs2271961 (T β +0.0147, P 1.3e-4, q60), and 23 of 57 SNPs at the lead's frequency disagree, so LifeGen does not replicate, at power about 0.4 (q19, q14); holds UK Biobank, half of Wright's meta-analysis, so not a replication"
+    curator: claude-opus-5-5
+  - rsid: rs9872864
+    note: pmid-30729179
+    quote: q39
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.105"
+    p_value_num: 0.105
+    effect_size: -0.00787
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per G allele (positive = earlier)
+    effect_allele: G
+    direction: protective
+    statistical_test: "Zenin 2019's healthspan summary statistics, SE 0.00486, Z -1.62, -log10 P 0.9776 (P about 0.105, from the file's -log10); at rs2271961 C β +0.008, P about 0.10 (q40), the same lean"
+    curator: claude-opus-5-5
+  - rsid: rs9872864
+    note: pmid-31413261
+    quote: q41
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's 18 discovery cohorts)
+    ancestry: [EUR]
+    n_cases: 11262
+    sample_size: 36745
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "0.02049"
+    p_value_num: 0.02049
+    effect_size: -0.0449
+    effect_measure: beta
+    effect_unit: log odds of reaching the 90th percentile, per A allele
+    effect_allele: A
+    direction: risk
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008598), SE 0.0194, effective N 11,615; logistic regression, fixed-effect meta-analysis; no UK Biobank (q2) and no AncestryDNA sample, so independent of Wright's meta-analysis: the replication; shares at least the Rotterdam Study with LifeGen (pmid-30642433#q13); at rs2271961 T β +0.044, P 0.022 (q42)"
+    curator: claude-opus-5-5
+  - rsid: rs9872864
+    note: pmid-31413261
+    quote: q43
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's 18 discovery cohorts)
+    ancestry: [EUR]
+    n_cases: 3484
+    sample_size: 28967
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.1271"
+    p_value_num: 0.1271
+    effect_size: -0.0460
+    effect_measure: beta
+    effect_unit: log odds of reaching the 99th percentile, per A allele
+    effect_allele: A
+    direction: risk
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), SE 0.0302, effective N 4,524; its cases a subset of the 90th's; at rs2271961 T β +0.044, P 0.15 (q44)"
+    curator: claude-opus-5-5
