@@ -1,0 +1,98 @@
+# The seed list's locus 16, LRP1B (2q22.1). Curated 2026-11-11, the second run's sixth row. Lead rs117898573 (Chang
+# 2022's healthy-ageing GWAS in Singapore Chinese, Table 1), the seed's only rsID here: an intron variant of LRP1B,
+# East Asian (T 0.025 in 1000 Genomes EAS), absent from European data (C in all 1,006 EUR chromosomes). Not in
+# Timmers 2019's or Zenin 2019's summary statistics, nor in Deelen 2019's (all European; no row at 2:142877484 in
+# either percentile file). Open Targets 26.09 does not know the variant; the GWAS Catalog (2026-10-29) holds Chang's
+# association alone, and a literature search on the rsID finds no other paper.
+locus_id: 16
+locus_name: LRP1B
+verdict: re-tiered
+verdict_reason: >-
+  Tier C, down from the seed's single-track B: a genome-wide healthspan result with no co-occurring lifespan study,
+  so it cannot score (§4.5 as D16 reads it) and stays in the research view. Chang 2022 compared 1,618 Singapore
+  Chinese aged 65 or more who had aged healthily (no major chronic disease, no cognitive impairment, no depression,
+  no limitation in daily activities, good physical function and self-rated health, no limiting pain) with 6,221
+  survivors who had not. That is a healthspan contrast among the living, not survival: HEALTHSPAN in §4.5. The rare
+  T (3 % in the cohort) went with healthy ageing, OR 2.43 per allele, meta P 2.59e-8 (discovery 9.65e-9). The
+  replication arm, 129 cases from the same cohort genotyped later, leans the same way at P 0.70 (OR 1.22, CI 0.45 to
+  3.29, Cochran's Q P 0.15): uninformative rather than failed, so no replication_failed flag, and not independent
+  either way. With lifestyle covariates the meta P weakens to 1.14e-7, below genome-wide. The lifespan side is
+  untested, not null: the variant is East Asian (gnomAD East Asian 0.019, 1000 Genomes EAS 0.025) and essentially
+  absent in Europeans, so no European lifespan or longevity study holds it, and no East Asian lifespan result for it
+  was found. Exceptional survival is untested for the same reason. The context is ancestry-specific (R-ANC-4): it is
+  not to be scored outside East Asian ancestry, and without inferred ancestry it belongs in the research view in any
+  case. The paper's LRP1B link to earlier healthy-ageing haplotypes is gene-level only: those were European, where
+  this variant does not occur, so they are not a replication. Of the seven domains, T goes with no function-limiting
+  pain (adjusted P 0.010) and no major chronic disease (0.033), components of the same outcome in the same people;
+  the mechanism is filed as general ageing. No gene is named: Open Targets 26.09 has no record of the variant, and
+  Chang's study there has one credible set, on chromosome 5, so causal and effector confidence are C4 and E4. The
+  protection is a presence: the rare allele goes with healthier ageing. Age of action is unknown.
+axes:
+  tier: {value: C, cites: [pmid-35927272#q1, pmid-35927272#q2, pmid-35927272#q3, pmid-35927272#q4, pmid-35927272#q5, pmid-35927272#q8, pmid-35927272#q10, db-ensembl-116#q67, db-ensembl-116#q68, db-gwascatalog-2026.10.29#q121, db-gwascatalog-2026.10.29#q123]}
+  mechanism: {value: general_ageing, cites: [pmid-35927272#q7, pmid-35927272#q9]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: untested, exceptional_survival: untested,
+            cites: [pmid-35927272#q2, pmid-35927272#q3, db-ensembl-116#q67, db-ensembl-116#q68]}
+  actionability: {label: descriptive, cites: [pmid-35927272#q3]}
+  context: {values: ["ancestry_specific:eas"], cites: [pmid-35927272#q3, pmid-35927272#q11, db-ensembl-116#q64, db-ensembl-116#q66, db-ensembl-116#q67]}
+flags:
+  - {token: "PROTECT:PRESENCE", cites: [pmid-35927272#q2, pmid-35927272#q3]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q154, db-opentargets-26.09#q155, db-opentargets-26.09#q156, db-opentargets-26.09#q157]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q154, db-opentargets-26.09#q157]}
+variants:
+  - rsid: rs117898573
+    gene: ""
+    phenotype: LRP1B region, East Asian healthy ageing
+    trait_efo_id: EFO_0022597
+    effect_allele: T
+    effect_size: 2.433
+    effect_measure: OR
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: C/C
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA region, the one almost everyone has (about 95 in
+          100 people of East Asian ancestry, and practically everyone of European ancestry). It is the reference the
+          other combinations are compared with. The region, on chromosome 2, lies within the LRP1B gene. The
+          finding comes from Singapore Chinese; this version barely exists outside East Asia.
+      - genotype: C/T
+        state: protective
+        conclusion: >-
+          You carry one copy of a rare version of this DNA region (about 5 in 100 people of East Asian ancestry do;
+          it is almost never seen in people of European ancestry). In one study of older Singapore Chinese, people
+          with this version were more often still free of major disease, pain and disability in their seventies.
+          This is early evidence: the study was small, the result only just strong enough to count, it has not been
+          confirmed in a separate group of people, and whether it lengthens life is unknown. It may not apply at
+          all to people of other ancestries. It is a tendency, not a guarantee.
+      - genotype: T/T
+        state: protective
+        conclusion: >-
+          You carry two copies of a rare version of this DNA region (fewer than 1 in 1,000 people of East Asian
+          ancestry do). In one study of older Singapore Chinese, each copy of this version went with being more
+          often free of major disease, pain and disability in their seventies. This is early evidence: the study
+          was small, it has not been confirmed in a separate group of people, and almost no one carries two copies,
+          so how they fare was not measured directly. It may not apply at all to people of other ancestries. It is
+          a tendency, not a guarantee.
+studies:
+  - rsid: rs117898573
+    note: pmid-35927272
+    quote: q2
+    phenotype_class: HEALTHSPAN
+    study_design: meta_analysis
+    population: Singapore Chinese (Singapore Chinese Health Study survivors aged 65 or more, assessed 2014 to 2016)
+    ancestry: [EAS]
+    sample_size: 7839
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "2.59 × 10−8"
+    p_value_num: 2.59e-08
+    effect_size: 2.433
+    effect_measure: OR
+    effect_unit: odds of healthy ageing (seven-domain composite) per T allele
+    effect_allele: T
+    direction: protective
+    statistical_test: "Logistic case-control of healthy against not-healthy agers among survivors (SNPTEST score test), discovery (1,489/5,721; P 9.65e-9) and same-cohort replication (129/500; OR 1.218, P 0.697) meta-analysed by fixed-effect inverse variance (META), Cochran's Q P 0.151; lifestyle-adjusted P 1.14e-7 (q5). The design is meta_analysis for want of a healthspan case-control value"
+    curator: claude-opus-5-5

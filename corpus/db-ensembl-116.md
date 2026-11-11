@@ -262,3 +262,24 @@ from the frequencies, not a phased call).
 > [q62] . version 22 db_type core biotype protein_coding seq_region_name 2 start 99545419 end 100192469 assembly_name GRCh38 id ENSG00000144218 display_name AFF3 description ALF transcription elongation factor 3 [Source:HGNC Symbol;Acc:HGNC:6473] logic_name ensembl_havana_gene_homo_sapiens strand -1 canonical_transcript ENST00000672756.2 source ensembl_havana object_type Gene species homo_sapiens
 
 ENSG00000144218 is AFF3, a protein-coding gene: the gene the eQTL sets of db-opentargets-26.09#q141 measure.
+
+## rs117898573 (LRP1B), for row 16
+
+> [q63] mappings[0] start 142119915 end 142119915 coord_system chromosome location 2:142119915-142119915 seq_region_name 2 strand 1 ancestral_allele C allele_string C/T assembly_name GRCh38
+
+rs117898573 at 2:142,119,915 (GRCh38), C/T, ancestral C.
+
+> [q64] populations[50] allele T population 1000GENOMES:phase_3:EAS frequency 0.0248015873015873 allele_count 25
+
+> [q65] populations[45] frequency 0.0388349514563107 population 1000GENOMES:phase_3:CHB allele T allele_count 8
+
+> [q66] populations[3] allele_count 96 frequency 0.0186 population gnomADg:eas allele T
+
+East Asian frequencies of T: 1000 Genomes EAS 0.025 (CHB 0.039), gnomAD East Asian 0.019; Chang 2022's own 0.029.
+
+> [q67] populations[53] population 1000GENOMES:phase_3:EUR allele C frequency 1 allele_count 1006
+
+> [q68] populations[13] frequency 2.941e-05 allele T population gnomADg:nfe allele_count 2
+
+Europeans: C in all 1,006 1000 Genomes EUR chromosomes, T 2.9 × 10⁻⁵ in gnomAD non-Finnish Europeans (2 alleles).
+The variant is absent from European lifespan, healthspan and longevity data, so it is untested there, not null.

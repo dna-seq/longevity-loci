@@ -402,3 +402,14 @@ Rosoff 2023's mvAge (GCST90321079): A, β 0.0078 "decrease", P 1 × 10⁻⁸; th
 > [q120] page size 50 totalElements 1 totalPages 1 number 0
 
 The only association the catalog holds at rs78438918.
+
+## rs117898573 (LRP1B), for row 16
+
+> [q121] _embedded.associations[0] association_id 100037586 risk_frequency 0.029 pvalue_description pvalue_mantissa 3 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.58-1.2] beta 0.889 unit increase p_value 3.0000000000000004e-08 accession_id GCST90132317 pubmed_id 35927272 first_author Chang X ci_lower 0.58 ci_upper 1.2
+
+> [q122] _embedded.associations[0].snp_allele[0] rs_id rs117898573 effect_allele T
+
+> [q123] page size 50 totalElements 1 totalPages 1 number 0
+
+The catalog's only association at rs117898573: Chang 2022's healthy ageing (GCST90132317), T, P 3 × 10⁻⁸; its
+"beta 0.889 unit increase" is the log of the paper's OR 2.433 (pmid-35927272#q2).

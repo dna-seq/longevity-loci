@@ -679,3 +679,19 @@ A second grip-strength set led by the lead (GCST90692811), P 3.3 × 10⁻⁹, β
 
 The third grip set (GCST90691860), P 1.6 × 10⁻⁹, is led by a neighbour, 2_99959842_C_T, whose phase with G is not
 read; it gives no direction for G.
+
+## rs117898573 (LRP1B), for row 16
+
+> [q154] data variant null
+
+Open Targets 26.09 has no record of 2_142119915_C_T (`variant-sets-2_142119915_C_T.json`).
+
+> [q155] data.study id GCST90132317 traitFromSource Healthy aging nSamples 7210
+
+> [q156] data.credibleSets count 1
+
+> [q157] data.credibleSets.rows[0].variant.rsIds[0] rs138499810
+
+Chang 2022's study is in the platform (GCST90132317, n 7,210, the discovery arm) with one credible set, at the
+chromosome 5 lead rs138499810: none at LRP1B. No fine-mapping and no locus-to-gene score for rs117898573 (causal C4,
+effector E4).
