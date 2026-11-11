@@ -2119,3 +2119,17 @@ factor 5, "Poorer Cognition" (q581; GCST90624051, PICS, P 4.3 × 10⁻¹⁰, FOX
 set at FOXO3 (q583; P 1e-8, PICS, 50 members) led by rs1159806 (`6_108685635_A_T`, PIP 0.062, q584), FOXO3 L2G 0.42
 (q585), ARMC2 0.15; rs2802292 is not among its 50 members (`variant-6_108685635_A_T.json`). So the row's SNP is a tag
 outside the locus's lifespan-class set: causal confidence C4. For row 43.
+
+> [q586] data.variant.credibleSets.rows[210] studyLocusId fad2c221ec2a6886b210b7705006055c studyId GCST90624051 pValueMantissa 4.2820000648498535 pValueExponent -10 beta 0.015906992148477 finemappingMethod PICS
+
+> [q587] data.variant.alleleFrequencies[2] populationName nfe_adj alleleFrequency 0.3840483757062147
+
+> [q588] data.variant.rsIds[0] rs6911407
+
+Foote 2025's frailty factor 5 set (q586) is led by `6_108545828_C_A`, rs6911407 (q588), alt A at 0.384 in non-Finnish
+Europeans (q587; `variant-6_108545828_C_A.json`), r² 0.98 with row 43's lead, A with G. Its beta, +0.0159, is read
+as per alt allele A (the catalog prints no allele for it, db-gwascatalog-2026.10.29#q301, so the sign is Open Targets'
+harmonisation, not the paper's), and Foote formats every input so that positive is the frailty-raising side
+(pmid-40759756#q2): G's side scores higher on the poorer-cognition factor, as rs6911407-A's lower fluid intelligence
+(db-gwascatalog-2026.10.29#q299) and Timmers 2020's "reduction in cognitive ability" (pmid-32678081#q23) also say.
+For row 43.

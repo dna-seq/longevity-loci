@@ -1006,3 +1006,17 @@ cached file per rsID, `associations-<rsid>.json`). For row 42.
 
 rs2802292: one association in the catalog (q298), platelet distribution width (q297; Vuckovic 2020, T, P 2 ×
 10⁻²¹). No longevity or lifespan entry: Broer's pooled result is not catalogued at this SNP. For row 43.
+
+## Reading 2026-11-11, record
+
+> [q299] _embedded.associations[0] association_id 218978004 risk_frequency 0.367722 pvalue_description pvalue_mantissa 7 pvalue_exponent -14 multi_snp_haplotype false snp_interaction false range - beta 0.0250543 unit decrease p_value 7e-14 accession_id GCST90832687 pubmed_id 42092107 first_author Dong X
+
+> [q300] _embedded.associations[3] association_id 55479331 risk_frequency NR pvalue_description pvalue_mantissa 6 pvalue_exponent -6 multi_snp_haplotype false snp_interaction false range [0.0055-0.0137] beta 0.009596 unit increase p_value 6e-06 accession_id GCST009448 pubmed_id 31484785 first_author Wright KM ci_lower 0.0055 ci_upper 0.0137
+
+> [q301] _embedded.associations[1].snp_effect_allele[0] rs6911407-?
+
+rs6911407 (r² 0.98 with row 43's lead, its A with G): four associations (`assoc-rs6911407.json`). Fluid
+intelligence (Dong, GCST90832687), A, β 0.025 decrease, P 7 × 10⁻¹⁴ (q299): G's side has slightly lower fluid
+intelligence. Longevity (Wright 2019's AncestryDNA, GCST009448), A, β 0.0096 increase, P 6 × 10⁻⁶ (q300). Foote
+2025's frailty factor 5 ("Poorer Cognition", P 4 × 10⁻¹⁰) with no effect allele (q301), and a multi-trait sex score.
+For row 43.

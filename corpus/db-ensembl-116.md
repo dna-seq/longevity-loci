@@ -1054,3 +1054,7 @@ T/T 37, G/G 15, derived), as LifeGen's 0.38, Deelen's 0.38 and FinnGen's 0.42 fo
 (±500 kb; `ld-rs2802292.json`) puts rs2490272, rs2802288 and rs2253310 at r² 1.00 with it; Broer's second SNP
 rs10457180 at 0.63 (q290); Timmers 2020's multivariate lead rs1159806 at 0.40, D′ 0.68 (q291); Flachsbart's
 rs3800231 at 0.60 (q292). For row 43.
+
+> [q293] [324] population_name 1000GENOMES:phase_3:CEU d_prime 1.000000 r2 0.978213 variation2 rs6911407 variation1 rs2802292
+
+rs6911407 (GRCh38 6:108,545,828, C/A), 41 kb from the lead: r² 0.98, D′ 1.00 in CEU (q293). For row 43.
