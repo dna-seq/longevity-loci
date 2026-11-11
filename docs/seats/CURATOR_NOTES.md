@@ -18,8 +18,9 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   nothing woke it afterwards, so the lead wakes it after each row until kit #409 lands. Reported as 639308908.
 - **Ten-row run** (the person via the lead, 639308791 and 639308811), from 6 CELSR2. Per row: commit, `done: <row>;
   compacting` to the lead, `watchdog.sh compact`, end the turn; the lead wakes the next. Stop at 80 % of the 7-day
-  window or 95 % of the 5-hour window. After the tenth `done:`: "paused after the ten-row run, on the person's word"
-  into PROGRESS and here, and stop. Rows done in this run: 6 CELSR2 (1 of 10); the correction of 71 done (d44fd4a), 67 next. Next by PROGRESS: 38 HLA-DQA1.
+  window or 95 % of the 5-hour window. After each tenth `done:`, re-measure the pacing and
+  go on with the next ten, unless blocked or steered (the person, 2026-11-11, via the lead, 639316091: "After 10
+  adjust pacing and go next 10 and so on unless blocked or I steer"; this replaces the earlier pause after ten). Rows done in this run: 6 CELSR2 (1 of 10); the corrections of 71 (d44fd4a) and 67 done; the E3 gene rule at 57 and 80 next, then 38 HLA-DQA1 by PROGRESS.
 - **Before the next locus: the lead's corrections to 71 and 67**, one commit per row, from its handout (kept at
   `~/.local/state/agent-seat-blueprints/handouts/session-44d9cb42-a3f8-47e0-b7ab-a8dbd8338890/delivered/20261110T234346Z-review-71-67.md`;
   read it whole). In short: B stands at both because a powered non-replication in an independent sample
@@ -42,16 +43,20 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   autoimmune direction from Joshi q11 (rs3184504-T raises type 1 diabetes); cancer trade-off from Timmers q7, no
   "slightly"; per copy, parents about 1.7 months ("nearly two months"). Deelen and LifeGen share the Rotterdam
   Study (Timmers q13). eLife source data is at `https://cdn.elifesciences.org/articles/39856/elife-39856-figN-dataM-v2.xlsx`.
-- **67 next (not started in the row)**. Quotes already in the corpus for it: Timmers q15 (Figure 2 sheet,
-  rs61905747 LifeGen fathers without UK Biobank 0.30 years, P 0.016), Deelen q12 (SD1: OR 1.068, P 0.0107; 99th 1.071,
-  P 0.097), Wright q20 (S9: AncestryDNA P 0.81, heterogeneity P 2.97e-4; S8 has no row, so no allele/direction on
-  the AncestryDNA study). E3 gene rule, the advisor's read: the requirements already settle it (line 65 "name a gene
-  only at effector confidence E1/E2"; line 305 "A locus label goes in `phenotype` when the gene is E3/E4"), so at
-  E3/E4 `gene` is empty and the candidates go into verdict_reason. Test first: `gene: ""` through `loci check rows`
-  and the module's `table_requirements`; `grep -l 'effector:E[34]' rows/*` for every row it touches (57 at least).
-  If empty is refused, it is a code/requirements conflict: one message to the lead, gene left as is, the rest of 67
-  committed. Age: UNKNOWN, empty cites (the rule from 6). Pilling's fathers' N "about 415000" only from a Table 1
-  quote in the cache. "155 members", "ZW10 0.20": quote from the db note or move to prose. "parents", not "fathers".
+- **67 corrected** (2026-11-11), the lead's review applied. Tier B on red-flag heterogeneity alone: replication
+  met (LifeGen fathers without UK Biobank, Timmers q15, P 0.016; Deelen SD1 q12, 90th OR 1.068, P 0.011), and
+  AncestryDNA's null (Wright q11/q20, P 0.81, heterogeneity P 2.97e-4) caps it. New studies: the LifeGen replication;
+  Deelen's own 90th/99th look-ups (replacing Timmers 2020's tabulation of the 90th); Wright's arm is now
+  `parental_lifespan_linear`, N 309383, beta 0.0007895 with no allele (S9's allele column prints the other allele
+  at 6 and 71; S8 has no row), no direction. Pilling's fathers' N left empty: Table 1's counts are not in the cached
+  text. Age UNKNOWN. "parents" in the conclusions.
+- **The E3/E4 gene rule** (the advisor's read, settled by the requirements: line 65 "name a gene only at effector
+  confidence E1/E2"; line 305 "A locus label goes in `phenotype` when the gene is E3/E4"): at E3/E4 `gene` is ""
+  and the candidates go into verdict_reason. Tested: `gene: ""` passes `loci check rows`, and the module's
+  `variants.csv` has `gene` optional. Applies to 67 (done), 57 (CDKN2B) and 80 (CHRNA5/CHRNA3), each its own commit.
+- Format gap, for the lead: a `multivariate_healthspan_lifespan` study (Timmers 2020's MANOVA) has no effect size,
+  and §6.3's check requires effect_size and effect_measure on every study supporting tier A/B, so 67 carries no
+  multivariate study; its P 4e-10 is in the verdict prose only.
 - Zenin's healthspan summary statistics for all 228 seed rsIDs are cached (runner job 6428266):
   `pmid-30729179.supp-healthspan_summary.csv.gz.rows-1102aade.txt`, 189 of 228 found. 6's db-gwascatalog cite can
   move to it when 6 is next touched.

@@ -22,7 +22,9 @@ mechanical consensus of the research tracks, to be confirmed or overturned by th
 
 A ten-row run, on the person's word (2026-11-11, via the lead, 639308811: "go with next 10 measurement on
 andjusted scenario, remeasure"), from 6 CELSR2 in the order below: one commit, a `done:` and a compaction per row,
-stopping at 80 % of the 7-day window. After the tenth: paused again until the person says go.
+stopping at 80 % of the 7-day window. After each ten: the pacing re-measured, then the next ten, unless blocked or
+steered (the person, 2026-11-11, via the lead, 639316091: "After 10 adjust pacing and go next 10 and so on unless
+blocked or I steer").
 
 ## Next: seed tier A (11)
 
