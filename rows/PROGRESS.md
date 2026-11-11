@@ -21,6 +21,7 @@ mechanical consensus of the research tracks, to be confirmed or overturned by th
 - 81 FES/FURIN (lead rs6224, Pilling's rs17514846 its proxy), tier A kept: replicated in LifeGen without UK Biobank; effector FES by L2G.
 - 103 (lead rs1049053, Zenin 2019's HLA-DQB1 healthspan SNP), tier B (seed A): genome-wide in healthspan only, unreplicated; scores on a nominal lifespan study (D16), shared with 38.
 - 2 PABPC4 (lead rs3768321, Rosoff 2023's mvAge), tier C (seed B): genome-wide only in the multivariate factor; lifespan P 0.071, so it cannot score (D16).
+- 4 LINC02796 (lead rs2613508, the NEGR1 obesity locus), tier B kept: genome-wide only in mvAge, with a nominal lifespan study (P 5.3e-4) that lets it score (D16); effector NEGR1 by L2G.
 
 ## In hand
 

@@ -1,0 +1,129 @@
+# The seed list's locus 4, LINC02796 (1p31.1, the NEGR1 obesity locus). Curated 2026-11-11, the ten-row run's sixth
+# row. Lead rs2613508 (Rosoff 2023's mvAge, Table 1), the seed's only rsID here. Wright 2019's Supplemental Tables 8
+# and 9 hold no clumped SNP within 0.5 Mb of it, and Deelen 2019's Supplementary Data 1 has no row for it. Open
+# Targets 26.09: mvAge's credible set, led by rs2613508, and the BMI set its lead shares a haplotype with.
+locus_id: 4
+locus_name: LINC02796
+verdict: kept
+verdict_reason: >-
+  Tier B, as the seed has it: a genome-wide multivariate result with a co-occurring lifespan study (§4.5 as D16 reads
+  it), and no independent replication (§4.1's single-study clause). Genome-wide significant only in Rosoff 2023's
+  mvAge, a multivariate factor behind healthspan, frailty, exceptional longevity, parental lifespan and epigenetic
+  age (P 7.8e-9, the minor C on the healthier-ageing side); Rosoff lists it as novel, more than 1 Mb from every locus
+  of the five input studies, so none of them reached genome-wide significance here alone. Timmers 2019's million
+  parents' lives are the co-occurring lifespan study: C lengthens life at P 5.3e-4, UK Biobank and LifeGen on the
+  same side. Healthspan agrees at the same level: C delays the end of healthspan in Zenin 2019's UK Biobank (P
+  3.3e-4). Both are inputs to mvAge, the same samples, so nothing here replicates it, and a single genome-wide study
+  is B. Its Q test (P 0.60) finds no sign that the SNP acts off the common factor. Exceptional survival is untested:
+  no cached source reports rs2613508 or a proxy in a longevity case-control. The mechanism is filed as metabolism,
+  through body weight: the locus is NEGR1's long-known obesity signal, and Rosoff's GWAS Catalog list runs from BMI,
+  childhood and extreme obesity and waist-to-hip ratio to triglycerides and type 2 diabetes, with smoking
+  initiation, insomnia and neuroticism beside them. In Open Targets 26.09 rs2613508 sits on one haplotype with the
+  BMI lead rs1993709 (r² 0.99), its T allele with the BMI-raising G (phase derived from frequencies), so the
+  allele that ages worse is the one that raises BMI; that is association on one haplotype, not a mediator test. In
+  mvAge's own credible set (PICS) rs2613508 leads 75 members, all at PIP 0.05 or less (causal:C3); the top
+  locus-to-gene score is NEGR1 at 0.56 (effector:E2), so NEGR1 is named (§6.2), as it is on the BMI set (0.74). Age
+  of action is unknown: no cached source gives this locus's own age bands.
+axes:
+  tier: {value: B, cites: [pmid-37550455#q8, pmid-37550455#q3, pmid-37550455#q5, pmid-30642433#q26, pmid-30729179#q15]}
+  mechanism: {value: metabolism, cites: [pmid-37550455#q8, db-opentargets-26.09#q51, db-opentargets-26.09#q53, db-opentargets-26.09#q55, db-opentargets-26.09#q46]}
+  pleiotropy: {values: ["mech:adiposity", broad], cites: [pmid-37550455#q8, pmid-37550455#q7, db-opentargets-26.09#q51]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: untested,
+            cites: [pmid-30729179#q15, pmid-30642433#q26, pmid-37550455#q8, pmid-37550455#q2]}
+  actionability: {label: descriptive, cites: [pmid-37550455#q8]}
+  context: {values: [eur_only_evidence], cites: [pmid-37550455#q8, pmid-30642433#q26]}
+flags:
+  - {token: "PROTECT:PRESENCE", cites: [pmid-37550455#q8, pmid-30642433#q26]}
+  - {token: "causal:C3", cites: [db-opentargets-26.09#q47, db-opentargets-26.09#q48, db-opentargets-26.09#q49]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q50]}
+variants:
+  - rsid: rs2613508
+    gene: NEGR1
+    phenotype: NEGR1 region, multivariate healthy ageing
+    trait_efo_id: EFO_0007796
+    effect_allele: C
+    effect_size: 0.0077
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: T/T
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA region, the one most people of European ancestry
+          have (about 67 in 100). It is the reference the other combinations are compared with. The region, on
+          chromosome 1, lies near the NEGR1 gene, which is linked to body weight. The finding comes from people of
+          European ancestry; less is known elsewhere.
+      - genotype: C/T
+        state: protective
+        conclusion: >-
+          You carry one copy of a less common version of this DNA region (about 30 in 100 people of European
+          ancestry do). In very large European studies that combined healthspan, frailty, long life and biological
+          age into one measure, this version went with slightly healthier ageing, and parents of carriers lived a
+          little longer. The region, near the NEGR1 gene, is linked to body weight: this version goes with a
+          slightly lower BMI. It is a likely finding, not a settled one: it has not yet been confirmed in a
+          separate group of people. The effect is small and it is a tendency, not a guarantee.
+      - genotype: C/C
+        state: protective
+        conclusion: >-
+          You carry two copies of a less common version of this DNA region (about 3 in 100 people of European
+          ancestry do). In very large European studies that combined healthspan, frailty, long life and biological
+          age into one measure, each copy went with slightly healthier ageing, and parents of carriers lived a
+          little longer. The region, near the NEGR1 gene, is linked to body weight: this version goes with a
+          slightly lower BMI. It is a likely finding, not a settled one: it has not yet been confirmed in a
+          separate group of people. The effect is small and it is a tendency, not a guarantee.
+studies:
+  - rsid: rs2613508
+    note: pmid-37550455
+    quote: q8
+    phenotype_class: MULTIVARIATE_AGEING
+    study_design: multivariate_healthspan_lifespan
+    population: European (the five input GWAS, UK Biobank and LifeGen among them; effective n 1,958,774)
+    ancestry: [EUR]
+    stat_significance: significant
+    p_value: "7.77E-09"
+    p_value_num: 7.77e-09
+    effect_size: 0.0077
+    effect_measure: beta
+    effect_unit: mvAge factor per C allele (no conventional unit; positive = healthier ageing)
+    effect_allele: C
+    direction: protective
+    statistical_test: "Genomic SEM common-factor GWAS of healthspan, frailty, exceptional longevity, parental lifespan and PhenoAge acceleration (Table 1, novel lead); Q P 0.60; pools the samples of the component studies, not a replication (q5)"
+    curator: claude-opus-5-5
+  - rsid: rs2613508
+    note: pmid-30642433
+    quote: q26
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.0005299774"
+    p_value_num: 0.00053
+    effect_size: -0.01687269
+    effect_measure: beta
+    effect_unit: log hazard protection per T allele in self (negative = shorter life)
+    effect_allele: T
+    direction: risk
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), n 638,110, direction -- in UK Biobank and LifeGen; the co-occurring lifespan study (D16), an input of mvAge and not a replication"
+    curator: claude-opus-5-5
+  - rsid: rs2613508
+    note: pmid-30729179
+    quote: q15
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "3.3E-04"
+    p_value_num: 3.3e-04
+    effect_size: 0.0218
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per T allele (positive = earlier)
+    effect_allele: T
+    direction: risk
+    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), -log10 P 3.48; mvAge's healthspan input, the same sample"
+    curator: claude-opus-5-5

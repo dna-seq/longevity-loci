@@ -286,3 +286,49 @@ Triglycerides (GCST90474428, UK Biobank; PICS): P 1.8 × 10⁻²⁴, beta +0.027
 triglycerides. So the lipid signal sits on the mvAge lead itself, T on the side of lower HDL, higher
 triglycerides and worse ageing: the anchor of row 2's mechanism, a co-location of association, not a mediation
 test.
+
+## Reading 2026-11-11, record
+
+rs2613508 (1_72367899_C_T, GRCh38; LINC02796 by the seed, NEGR1 region), for row 4: its variant record, the variant
+record of the BMI set's lead rs1993709 (1_72372846_A_G), and two credible sets, cached by `loci fetch-supp`. Open
+Targets' beta is per the variant id's second allele: T at rs2613508, G at rs1993709.
+
+> [q46] data.variant.alleleFrequencies[2] populationName nfe_adj alleleFrequency 0.8197380041212835
+
+T's frequency in gnomAD's non-Finnish Europeans: 0.82, so C 0.18, as Rosoff's MAF (pmid-37550455#q8).
+
+> [q47] data.credibleSet studyLocusId abc062e87620fc5eca41a2571c34057e finemappingMethod PICS pValueMantissa 8 pValueExponent -9 beta -0.007669109
+
+> [q48] data.credibleSet.study id GCST90321079 traitFromSource Aging
+
+The set of Rosoff 2023's mvAge ("Aging", GCST90321079; PICS), led by rs2613508 itself: P 8 × 10⁻⁹, beta −0.0077 per T,
+Rosoff's Table 1 result (+0.0077 per C).
+
+> [q49] data.credibleSet.locus.rows[0] posteriorProbability 0.04770664834894591 r2Overall 1 is95CredibleSet true data.credibleSet.locus.rows[0].variant id 1_72367899_C_T
+
+rs2613508's PIP in that set: 0.048, the highest of 75 members in the 95 % set, a long block of near-equal PIPs at
+r² above 0.8 (the next 0.039): below 0.1, `causal:C3`.
+
+> [q50] data.credibleSet.l2GPredictions.rows[0] score 0.5597900152206421 data.credibleSet.l2GPredictions.rows[0].target approvedSymbol NEGR1
+
+The locus-to-gene score of NEGR1 on that set, 0.56, the top gene: at 0.5 or above with no colocalisation read,
+`effector:E2`, NEGR1.
+
+> [q51] data.credibleSet studyLocusId 6e47d5bec330e6fe02b02c823df8040b finemappingMethod PICS pValueMantissa 1 pValueExponent -52 beta 0.0317
+
+> [q52] data.credibleSet.study id GCST009001 traitFromSource Body mass index
+
+> [q53] data.credibleSet.locus.rows[3] posteriorProbability 0.08410889445344838 r2Overall 0.9927827786782508 is95CredibleSet true data.credibleSet.locus.rows[3].variant id 1_72367899_C_T
+
+Body mass index (GCST009001; PICS): P 1 × 10⁻⁵², beta +0.0317 per G at the lead rs1993709; rs2613508 is a member at PIP
+0.084, r² 0.99 to the lead.
+
+> [q54] data.credibleSet.l2GPredictions.rows[0] score 0.7448862195014954 data.credibleSet.l2GPredictions.rows[0].target approvedSymbol NEGR1
+
+NEGR1's locus-to-gene score on the BMI set, 0.74.
+
+> [q55] data.variant.alleleFrequencies[2] populationName nfe_adj alleleFrequency 0.8198093500838507
+
+G's frequency at rs1993709 in the same population: 0.82, as T's at rs2613508 (q46); with r² 0.99 the two ride one
+haplotype, G with T (phase derived from the frequencies, not read from a haplotype record). So T raises BMI, the side
+of worse ageing in mvAge (q47): association on one haplotype, not a mediation test; the anchor of row 4's mechanism.
