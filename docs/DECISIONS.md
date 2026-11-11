@@ -295,3 +295,11 @@ person's standing word.
    The mean is over leads that hold up in the look-up's own cohort: leads that themselves fail there (36's PRKD3 and
    CELF2, rare and sex-specific) pull the factor toward zero and would clear every flag by construction. With only
    MUC5B left, the mean is unknown and 36 is B (the curator's (a)).
+13. **A replication's P is one-sided, in the discovery's direction.** §4.1 asks the same allele and direction, so the
+   test is directional and a two-sided P counts the wrong tail too; 25 already counted Timmers 2022's one-sided P,
+   and D25.1's "p < 0.05 in the discovery's direction" reads so. A row says which it quotes. 37: AncestryDNA mothers
+   at rs3130467 (one-sided 0.037) and LifeGen mothers (0.048) replicate, so not D. **`replication_failed` marks a
+   sample that fails**, not one that replicates with a smaller effect: AncestryDNA's printed heterogeneity P 0.040
+   at power 0.97 makes 37 §4.1's "replication with a much smaller effect", B, and the flag comes off unless another
+   sample fails. Mechanism stays `general_ageing` (D25.7) with `mech:autoimmune`; immune_inflammation rejected, no
+   route shown.
