@@ -22,8 +22,10 @@ verdict_reason: >-
   BMI lead rs1993709 (r² 0.99), its T allele with the BMI-raising G (phase derived from frequencies), so the
   allele that ages worse is the one that raises BMI; that is association on one haplotype, not a mediator test. In
   mvAge's own credible set (PICS) rs2613508 leads 75 members, all at PIP 0.05 or less (causal:C3); the top
-  locus-to-gene score is NEGR1 at 0.56 (effector:E2), so NEGR1 is named (§6.2), as it is on the BMI set (0.74). Age
-  of action is unknown: no cached source gives this locus's own age bands.
+  locus-to-gene score is NEGR1 at 0.56 (effector:E2), so NEGR1 is named (§6.2), as it is on the BMI set (0.74).
+  Actionability is modifiable through weight (§4.2's label line, D18.2): the locus acts through body weight, and no
+  trade-off is detected and no LATE age of action shown, the two cases §4.2 leaves descriptive. Age of action is
+  unknown: no cached source gives this locus's own age bands.
 axes:
   tier: {value: B, cites: [pmid-37550455#q8, pmid-37550455#q3, pmid-37550455#q5, pmid-30642433#q26, pmid-30729179#q15]}
   mechanism: {value: metabolism, cites: [pmid-37550455#q8, db-opentargets-26.09#q51, db-opentargets-26.09#q53, db-opentargets-26.09#q55, db-opentargets-26.09#q46]}
@@ -31,7 +33,7 @@ axes:
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: untested,
             cites: [pmid-30729179#q15, pmid-30642433#q26, pmid-37550455#q8, pmid-37550455#q2]}
-  actionability: {label: descriptive, cites: [pmid-37550455#q8]}
+  actionability: {label: modifiable, what: ["act_behaviour:weight"], who: "act_who:self", cites: [pmid-37550455#q8, db-opentargets-26.09#q51]}
   context: {values: [eur_only_evidence], cites: [pmid-37550455#q8, pmid-30642433#q26]}
 flags:
   - {token: "PROTECT:PRESENCE", cites: [pmid-37550455#q8, pmid-30642433#q26]}
@@ -55,6 +57,7 @@ variants:
           have (about 67 in 100). It is the reference the other combinations are compared with. The region, on
           chromosome 1, lies near the NEGR1 gene, which is linked to body weight. The finding comes from people of
           European ancestry; less is known elsewhere.
+          Your weight itself matters far more for your health than this DNA result.
       - genotype: C/T
         state: protective
         conclusion: >-
@@ -64,6 +67,7 @@ variants:
           little longer. The region, near the NEGR1 gene, is linked to body weight: this version goes with a
           slightly lower BMI. It is a likely finding, not a settled one: it has not yet been confirmed in a
           separate group of people. The effect is small and it is a tendency, not a guarantee.
+          Your weight itself matters far more for your health than this DNA result.
       - genotype: C/C
         state: protective
         conclusion: >-
@@ -73,6 +77,7 @@ variants:
           little longer. The region, near the NEGR1 gene, is linked to body weight: this version goes with a
           slightly lower BMI. It is a likely finding, not a settled one: it has not yet been confirmed in a
           separate group of people. The effect is small and it is a tendency, not a guarantee.
+          Your weight itself matters far more for your health than this DNA result.
 studies:
   - rsid: rs2613508
     note: pmid-37550455
