@@ -204,3 +204,49 @@ trait. For row 10.
 > [q56] page size 50 totalElements 1 totalPages 1 number 0
 
 `associations-rs16847402.json`: the same study's one record, beta 0.0186, P 2 × 10⁻⁸ (raw). For row 10.
+
+## Reading 2026-11-11, record
+
+> [q57] _embedded.associations[0] association_id 56008494 risk_frequency 0.174 pvalue_description pvalue_mantissa 6 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.018-0.038] beta 0.0277 unit increase p_value 6.000000000000001e-08 accession_id GCST009890 pubmed_id 30642433 first_author Timmers PR ci_lower 0.018 ci_upper 0.038
+
+> [q58] _embedded.associations[0].snp_allele[0] rs_id rs6744653 effect_allele A
+
+rs6744653 (`associations-rs6744653.json`), its one association: Timmers 2019, GCST009890, parental lifespan, A,
+beta 0.0277, P 6 × 10⁻⁸. For row 11.
+
+> [q59] _embedded.associations[5] association_id 131476496 risk_frequency NR pvalue_description pvalue_mantissa 4 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.0048-0.0101] beta 0.00747789 unit increase p_value 4e-08 accession_id GCST90321079 pubmed_id 37550455 first_author Rosoff DB ci_lower 0.0048 ci_upper 0.0101
+
+> [q60] _embedded.associations[5].snp_allele[0] rs_id rs66906321 effect_allele T
+
+rs66906321 (`associations-rs66906321.json`, nine associations): Rosoff 2023's mvAge (GCST90321079, "Aging"), T,
+beta +0.0075, P 4 × 10⁻⁸: T on the healthier-ageing side. Rosoff's cached text does not list the SNP (its Table 1
+holds novel leads only), so this record is the only cached source of the value. For row 11.
+
+> [q61] _embedded.associations[7] association_id 36609274 risk_frequency 0.813524 pvalue_description pvalue_mantissa 1 pvalue_exponent -34 multi_snp_haplotype false snp_interaction false range [1.21-1.29] or_per_copy_num 1.25 or_value 1.25 beta - p_value 1e-34 accession_id GCST007241 pubmed_id 30677029 first_author Riveros-McKay F ci_lower 1.21 ci_upper 1.29
+
+> [q62] _embedded.associations[7].snp_allele[0] rs_id rs66906321 effect_allele C
+
+Extreme obesity (Riveros-McKay 2019): C, frequency 0.81, OR 1.25 (1.21 to 1.29), P 1 × 10⁻³⁴. So T, the
+lifespan-raising allele, goes with less extreme obesity. For row 11.
+
+> [q63] _embedded.associations[8] association_id 35964026 risk_frequency 0.178119 pvalue_description pvalue_mantissa 5 pvalue_exponent -10 multi_snp_haplotype false snp_interaction false range [0.01-0.02] beta 0.015077 unit decrease p_value 5e-10 accession_id GCST006979 pubmed_id 30598549 first_author Morris JA ci_lower 0.01 ci_upper 0.02
+
+> [q64] _embedded.associations[8].snp_allele[0] rs_id rs66906321 effect_allele T
+
+Heel bone mineral density (Morris 2019): T, frequency 0.18, beta 0.0151 decrease, P 5 × 10⁻¹⁰. T lowers heel bone
+density. For row 11.
+
+> [q65] _embedded.associations[6] association_id 106058670 risk_frequency NR pvalue_description pvalue_mantissa 1 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range - beta - p_value 1e-08 accession_id GCST90274732 pubmed_id 36929942 first_author Lindstrom S
+
+> [q66] _embedded.associations[6].snp_allele[0] rs_id rs66906321 effect_allele T
+
+Cancer (pleiotropy, Lindstrom 2023): T, P 1 × 10⁻⁸, no beta or direction. For row 11.
+
+> [q67] _embedded.associations[3] association_id 138938323 risk_frequency NR pvalue_description pvalue_mantissa 2 pvalue_exponent -23 multi_snp_haplotype false snp_interaction false range - beta - p_value 2e-23 accession_id GCST90278622 pubmed_id 38116116 first_author Chen CY
+
+> [q68] _embedded.associations[3].snp_allele[0] rs_id rs66906321 effect_allele ?
+
+> [q69] page size 50 totalElements 9 totalPages 1 number 0
+
+Body mass index (Chen 2024), P 2 × 10⁻²³, with no allele ("?"); the record's weight, waist and body-fat associations
+state none either. Four of the nine records give no allele. For row 11.

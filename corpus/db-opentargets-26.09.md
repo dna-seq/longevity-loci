@@ -448,3 +448,26 @@ rs11783562 (8p12, near WRN) and rs769449 (APOE); none at 1q25. For row 10.
 UK Biobank (GCST90474379, P 1.7 × 10⁻¹⁸); it is a member, not the lead, of sets for white cell and neutrophil counts
 (GCST90002378, P 6 × 10⁻¹⁶, and others), hypothyroidism (GCST90627750), IGF-1 in other studies, schizophrenia, and
 expression of the gene ENSG00000152061 in blood cells and fat (the record names no symbol). Membership gives no allele or direction. For row 10.
+
+## Reading 2026-11-11, record
+
+> [q87] data.credibleSets count 0
+
+> [q88] data.credibleSets count 0
+
+No credible set of the eight lifespan, healthspan, longevity and current-age studies holds rs6744653
+(`credibleSets-longevity8-2_628524_A_G.json`) or rs66906321 (`credibleSets-longevity8-2_630070_T_C.json`). For row 11.
+
+> [q89] data.variant.credibleSets count 510
+
+> [q90] data.variant.credibleSets.rows[2].study id GCST007241 traitFromSource Obesity (extreme)
+
+> [q91] data.variant.credibleSets.rows[13].study id GCST002461 traitFromSource Body mass index
+
+`variant-crediblesets-2_628524_A_G.json` (first 100 of 510 read): rs6744653 sits in 510 credible sets, nearly all of
+body size and fat (extreme obesity, BMI, fat mass), with smoking, blood pressure, type 2 diabetes and lipids among the
+rest. For row 11.
+
+> [q92] data.variant.alleleFrequencies[2] populationName nfe_adj alleleFrequency 0.8283593060864451
+
+`variant-2_628524_A_G.json`: G 0.83 in gnomAD non-Finnish Europeans. For row 11.

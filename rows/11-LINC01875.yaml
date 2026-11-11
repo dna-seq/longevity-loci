@@ -1,0 +1,179 @@
+# The seed list's locus 11, LINC01875 (2p25.3, the TMEM18 obesity locus). Curated 2026-11-11, the second ten-row run's
+# first row. Lead rs6744653 (the seed's lead, Timmers 2019's Table 2); the seed's second rsID, rs66906321 (1.5 kb away,
+# r² 0.89, db-ensembl-116#q28), is Rosoff 2023's mvAge SNP and the stronger of the two in Timmers 2019's summary
+# statistics, read as a proxy. Wright 2019's Supplemental Tables 8 and 9 hold three clumped SNPs within 30 kb:
+# rs2867105 (r² 0.86 to the lead) read as a proxy; rs4640417 (r² 0.11) and rs10153797 (LD not returned by Ensembl)
+# named, not scored. Open Targets 26.09 has no lifespan set holding either seed SNP; the GWAS Catalog (2026-10-29)
+# holds one association for rs6744653 and nine for rs66906321.
+locus_id: 11
+locus_name: LINC01875
+verdict: kept
+verdict_reason: >-
+  Tier B, as the seed has it, as a judgement between A and B. Nothing at the lead itself is genome-wide: in Timmers
+  2019's million parental lives A, the minor allele (17 % in Europeans), adds 0.28 years per copy at a conventional
+  P of 5.8e-8 (both arms on the same side); the paper calls TMEM18 genome-wide only through its BMI-informed Bayesian
+  scan, whose P (7.0e-10) is not counted here. Its close proxy rs66906321 (r² 0.89, T riding with A) reaches 2.3e-8
+  in the same study's summary statistics, past both 5e-8 and the paper's own 2.5e-8, though the paper does not list
+  it and its Methods give no filter that explains why; Rosoff 2023's mvAge, which pools the same parents, puts T on
+  the healthier-ageing side at 4e-8 (GWAS Catalog record; the paper's text does not list the SNP). The one
+  independent sample replicates at a third SNP: in Wright 2019's AncestryDNA fathers rs2867105 (r² 0.86 to the lead,
+  0.77 to rs66906321; its minor allele riding with A, derived) goes with longer life (P 8.8e-4, born 1886-1940;
+  3.6e-4, born 1886-1918), the mothers on the same side (P 0.058), with no heterogeneity against UK Biobank (P 0.18,
+  0.61). Read literally, that meets A's three conditions. B is the call because every genome-wide and replicating
+  value sits at a proxy rather than the lead, no lifespan credible set exists to place the lead, the paper's own
+  reading puts the locus below genome-wide in the conventional test, and the longevity look-ups are null on the same
+  side (Timmers 2019's replication in Deelen 2014 and Broer 2015, P 0.41; Deelen 2019's 90th and 99th percentiles,
+  P 0.21 and 0.061): B's clause for a replicated locus whose reported SNP is a tag, applied without a credible set to
+  measure it against. Healthspan is null (Zenin 2019, P 0.48 at the lead). Two other AncestryDNA SNPs nearby point the
+  other way (rs4640417 in mothers, P 8.7e-5, r² 0.11 to the lead; rs10153797 in fathers, P 9.2e-4, whose LD with the
+  lead Ensembl did not return): neither is a proxy of the lead, so neither contradicts it, but the second is unknown,
+  not ruled out. The mechanism is metabolism, through body weight: Timmers 2019 names BMI as the risk factor, the
+  catalog's extreme-obesity record has the common C raising obesity (OR 1.25), so T, the lifespan side, lowers it,
+  and the lead sits in 510 credible sets in Open Targets, nearly all of body size and fat. No trade-off is detected:
+  the same T lowers heel bone density (P 5e-10), a bone measure rather than a disease, and the cancer record states
+  an allele but no direction; four records (BMI, weight, waist, body fat) state no allele, so none detected is not
+  none. Causal confidence is C4 (no set of the eight lifespan, healthspan, longevity and current-age studies holds
+  either seed SNP); with no longevity set there is no locus-to-gene score, so effector E4 and no gene named (§4.2),
+  though the paper and the catalog map the region to TMEM18. The protection is a presence, the minor A. Age of
+  action is unknown.
+axes:
+  tier: {value: B, cites: [pmid-30642433#q38, pmid-30642433#q39, pmid-30642433#q40, pmid-30642433#q41, pmid-30642433#q42, pmid-31484785#q35, pmid-31484785#q36, pmid-31484785#q37, pmid-31413261#q20, db-gwascatalog-2026.10.29#q59, db-ensembl-116#q28, db-ensembl-116#q29]}
+  mechanism: {value: metabolism, cites: [pmid-30642433#q38, db-gwascatalog-2026.10.29#q61, db-gwascatalog-2026.10.29#q62, db-opentargets-26.09#q89, db-opentargets-26.09#q90, db-opentargets-26.09#q91]}
+  pleiotropy: {values: ["mech:adiposity"], cites: [pmid-30642433#q38, db-gwascatalog-2026.10.29#q61, db-gwascatalog-2026.10.29#q63, db-gwascatalog-2026.10.29#q65, db-gwascatalog-2026.10.29#q67, db-opentargets-26.09#q89]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "0",
+            cites: [pmid-30729179#q22, pmid-30642433#q38, pmid-30642433#q40, pmid-31484785#q35, pmid-30642433#q41, pmid-31413261#q20]}
+  actionability: {label: descriptive, cites: [pmid-30642433#q38]}
+  context: {values: [eur_only_evidence], cites: [pmid-30642433#q39, pmid-31484785#q35, pmid-31413261#q20]}
+flags:
+  - {token: "PROTECT:PRESENCE", cites: [pmid-30642433#q38, db-ensembl-116#q24]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q87, db-opentargets-26.09#q88]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q87, db-opentargets-26.09#q88]}
+variants:
+  - rsid: rs6744653
+    gene: ""
+    phenotype: TMEM18 region, body weight
+    trait_efo_id: EFO_0007796
+    effect_allele: A
+    effect_size: 0.2772
+    effect_measure: beta
+    stat_significance: suggestive
+    direction: protective
+    genotypes:
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA region, the one most people of European ancestry
+          have (about 69 in 100). It is the reference the other combinations are compared with. The region, on
+          chromosome 2, is linked to body weight; which gene in it matters is not known. The finding comes from
+          people of European ancestry; less is known elsewhere.
+      - genotype: A/G
+        state: protective
+        conclusion: >-
+          You carry one copy of a less common version of this DNA region (about 28 in 100 people of European
+          ancestry do). In very large British, European and American studies, people with this version tended to
+          have parents who lived a few months longer. The same version goes with a lower chance of obesity. It is a
+          likely finding, not a settled one: studies of people reaching very old age did not clearly confirm it.
+          The effect is small and it is a tendency, not destiny.
+      - genotype: A/A
+        state: protective
+        conclusion: >-
+          You carry two copies of a less common version of this DNA region (about 3 in 100 people of European
+          ancestry do). In very large British, European and American studies, each copy went with parents living a
+          few months longer. The same version goes with a lower chance of obesity. It is a likely finding, not a
+          settled one: studies of people reaching very old age did not clearly confirm it. The effect is small and
+          it is a tendency, not destiny.
+studies:
+  - rsid: rs6744653
+    note: pmid-30642433
+    quote: q38
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the 26 LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 1012240
+    sample_unit: lives
+    stat_significance: suggestive
+    p_value: "5.8E-08"
+    p_value_num: 5.8e-08
+    effect_size: 0.2772
+    effect_measure: beta
+    effect_unit: years of life per A allele in self (parental estimate doubled)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Cox-residual GWAS, common effect sizes across sexes: Table 2's CES P (q38), the same as the summary statistics' (q39, n 638,111, direction ++ in UK Biobank and LifeGen); the BMI-informed Bayesian scan's BF P 7.0E-10 is not the study's P; replication in Deelen 2014 and Broer 2015 P 0.41, same side (q41)"
+    curator: claude-opus-5-5
+  - rsid: rs6744653
+    note: pmid-30642433
+    quote: q40
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    stat_significance: significant
+    p_value: "2.2641115e-08"
+    p_value_num: 2.2641115e-08
+    proxy_rsid: rs66906321
+    effect_size: 0.0284527
+    effect_measure: beta
+    effect_unit: log hazard protection per T allele of rs66906321 in self (positive = longer life)
+    effect_allele: T
+    direction: protective
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), n 640,150, direction ++, info 0.957; rs66906321 r² 0.89, D′ 0.97 to rs6744653 (db-ensembl-116#q28), T with A by EUR frequency (derived); not in the paper's Table 1, which calls TMEM18 genome-wide only by the Bayesian scan (q42), no Methods filter found to explain it; mvAge, pooling the same parents, T P 4e-8 (db-gwascatalog-2026.10.29#q59)"
+    curator: claude-opus-5-5
+  - rsid: rs6744653
+    note: pmid-31484785
+    quote: q35
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_linear
+    population: AncestryDNA customers' fathers born 1886-1940 (mostly European American)
+    ancestry: [EUR]
+    sample_size: 309000
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "0.0008799"
+    p_value_num: 0.0008799
+    proxy_rsid: rs2867105
+    effect_size: 0.01095
+    effect_measure: beta
+    effect_unit: z-scored fathers' lifespan per A allele of rs2867105 as printed, the reverse strand of T (positive = longer)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Supplemental Table 8, raw P (genomic control 0.00222); fathers 1886-1918 P 3.6e-4 (q34); rs2867105 r² 0.86 to rs6744653, 0.77 to rs66906321 (db-ensembl-116#q29, q30), its T (Wright's A) with A by EUR frequency (derived); S9 mothers P 0.058 same side; heterogeneity against UK Biobank P 0.18 (fathers) and 0.61 (mothers) (q36, q37)"
+    curator: claude-opus-5-5
+  - rsid: rs6744653
+    note: pmid-31413261
+    quote: q20
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.2116"
+    p_value_num: 0.2116
+    effect_size: 1.032
+    effect_measure: OR
+    effect_unit: odds of survival to the 90th percentile per A allele
+    effect_allele: A
+    direction: protective
+    statistical_test: "Deelen 2019's Supplementary Data 1 look-up of Timmers 2019's TMEM18 SNP; 99th percentile OR 1.074 (1.00-1.16), P 0.061; I² 4.7 and 25.3"
+    curator: claude-opus-5-5
+  - rsid: rs6744653
+    note: pmid-30729179
+    quote: q22
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.48"
+    p_value_num: 0.478
+    effect_size: 0.00455
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per G allele (positive = earlier)
+    effect_allele: G
+    direction: risk
+    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), -log10 P 0.32; rs66906321 C beta 0.0071, P 0.27 (q23)"
+    curator: claude-opus-5-5
