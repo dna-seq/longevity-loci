@@ -9,7 +9,7 @@ locus_id: 11
 locus_name: LINC01875
 verdict: kept
 verdict_reason: >-
-  Tier B, as the seed has it, as a judgement between A and B. Nothing at the lead itself is genome-wide: in Timmers
+  Tier B, as the seed has it. Nothing at the lead itself is genome-wide: in Timmers
   2019's million parental lives A, the minor allele (17 % in Europeans), adds 0.28 years per copy at a conventional
   P of 5.8e-8 (both arms on the same side); the paper calls TMEM18 genome-wide only through its BMI-informed Bayesian
   scan, whose P (7.0e-10) is not counted here. Its close proxy rs66906321 (r² 0.89, T riding with A) reaches 2.3e-8
@@ -19,34 +19,35 @@ verdict_reason: >-
   independent sample replicates at a third SNP: in Wright 2019's AncestryDNA fathers rs2867105 (r² 0.86 to the lead,
   0.77 to rs66906321; its minor allele riding with A, derived) goes with longer life (P 8.8e-4, born 1886-1940;
   3.6e-4, born 1886-1918), the mothers on the same side (P 0.058), with no heterogeneity against UK Biobank (P 0.18,
-  0.61). Read literally, that meets A's three conditions. B is the call because every genome-wide and replicating
-  value sits at a proxy rather than the lead, no lifespan credible set exists to place the lead, the paper's own
+  0.61). A's first condition fails (§4.1, D17.3, D18.3): at the lead, Timmers' own call is 5.8e-8 (the paper's P,
+  not a summary-statistics proxy it never reports), and mvAge is a multivariate result, not one of the lifespan,
+  longevity, parental-lifespan or healthspan phenotypes A names. B's clause for a replicated locus whose reported
+  SNP is a tag fits besides: every genome-wide and replicating value sits at a proxy rather than the lead, no lifespan credible set exists to place the lead, the paper's own
   reading puts the locus below genome-wide in the conventional test, and the longevity look-ups are null on the same
   side (Timmers 2019's replication in Deelen 2014 and Broer 2015, P 0.41; Deelen 2019's 90th and 99th percentiles,
-  P 0.21 and 0.061): B's clause for a replicated locus whose reported SNP is a tag, applied without a credible set to
-  measure it against. Healthspan is null (Zenin 2019, P 0.48 at the lead). Two other AncestryDNA SNPs lie within 30 kb.
+  P 0.21 and 0.061). Healthspan is null (Zenin 2019, P 0.48 at the lead). Two other AncestryDNA SNPs lie within 30 kb.
   rs4640417 (r² 0.11 to the lead, D′ 1.00) carries the lead's A wholly on its own common A (derived from the
   frequencies), and its G shortens mothers' and fathers' lives (P 8.7e-5 and 5.5e-4): the same side, too weakly tied
   to the lead to count as a proxy. rs10153797 (fathers, P 9.2e-4) is unknown: Ensembl returned no LD with the lead,
   so its side is not read. The mechanism is metabolism, through body weight: Timmers 2019 names BMI as the risk factor, the
   catalog's extreme-obesity record has the common C raising obesity (OR 1.25), so T, the lifespan side, lowers it,
   and the lead sits in 510 credible sets in Open Targets: of the 100 read, about half are of body size and fat, the
-  rest smoking, blood pressure, lipids, type 2 diabetes and joint disease among them. Actionability is descriptive, as
-  at row 4: the weight effect is inherited, not a behaviour the allele asks of anyone. No trade-off is detected:
-  the same T lowers heel bone density (P 5e-10), a bone measure rather than a disease, and the cancer record states
-  an allele but no direction; four records (BMI, weight, waist, body fat) state no allele, so none detected is not
-  none. Causal confidence is C4 (no set of the eight lifespan, healthspan, longevity and current-age studies holds
+  rest smoking, blood pressure, lipids, type 2 diabetes and joint disease among them. A trade-off is detected
+  (D18.1): the same T, the lifespan side, lowers heel bone density (P 5e-10), and low bone density is an
+  established risk factor for osteoporosis and fracture. The cancer record states an allele but no direction; four
+  records (BMI, weight, waist, body fat) state no allele. As a trade-off the locus is descriptive, not modifiable
+  through weight (§4.2, D18.2). Causal confidence is C4 (no set of the eight lifespan, healthspan, longevity and current-age studies holds
   either seed SNP); with no longevity set there is no locus-to-gene score, so effector E4 and no gene named (§4.2),
   though the paper and the catalog map the region to TMEM18. The protection is a presence, the minor A. Age of
   action is unknown.
 axes:
   tier: {value: B, cites: [pmid-30642433#q38, pmid-30642433#q39, pmid-30642433#q40, pmid-30642433#q41, pmid-30642433#q42, pmid-31484785#q35, pmid-31484785#q36, pmid-31484785#q37, pmid-31484785#q39, pmid-31484785#q40, pmid-31413261#q20, db-gwascatalog-2026.10.29#q59, db-ensembl-116#q28, db-ensembl-116#q29]}
   mechanism: {value: metabolism, cites: [pmid-30642433#q38, db-gwascatalog-2026.10.29#q61, db-gwascatalog-2026.10.29#q62, db-opentargets-26.09#q89, db-opentargets-26.09#q90, db-opentargets-26.09#q91]}
-  pleiotropy: {values: ["mech:adiposity", broad], cites: [pmid-30642433#q38, db-gwascatalog-2026.10.29#q61, db-gwascatalog-2026.10.29#q63, db-gwascatalog-2026.10.29#q65, db-gwascatalog-2026.10.29#q67, db-opentargets-26.09#q89]}
+  pleiotropy: {values: ["mech:adiposity", broad, tradeoff], cites: [pmid-30642433#q38, db-gwascatalog-2026.10.29#q61, db-gwascatalog-2026.10.29#q63, db-gwascatalog-2026.10.29#q65, db-gwascatalog-2026.10.29#q67, db-opentargets-26.09#q89]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "0",
             cites: [pmid-30729179#q22, pmid-30642433#q38, pmid-30642433#q40, pmid-31484785#q35, pmid-30642433#q41, pmid-31413261#q20]}
-  actionability: {label: descriptive, cites: [pmid-30642433#q38]}
+  actionability: {label: descriptive, cites: [pmid-30642433#q38, db-gwascatalog-2026.10.29#q63, db-gwascatalog-2026.10.29#q64]}
   context: {values: [eur_only_evidence], cites: [pmid-30642433#q39, pmid-31484785#q35, pmid-31413261#q20]}
 flags:
   - {token: "PROTECT:PRESENCE", cites: [pmid-30642433#q38, db-ensembl-116#q24]}
@@ -62,6 +63,9 @@ variants:
     effect_measure: beta
     stat_significance: suggestive
     direction: protective
+    negatives: >-
+      The longer-life version may also lower bone density a little (measured at the heel), and low bone density
+      raises the risk of osteoporosis and fractures.
     genotypes:
       - genotype: G/G
         state: neutral
@@ -75,7 +79,7 @@ variants:
         conclusion: >-
           You carry one copy of a less common version of this DNA region (about 28 in 100 people of European
           ancestry do). In very large British, European and American studies, people with this version tended to
-          have parents who lived a few months longer. The same version goes with a lower chance of obesity. It is a
+          have parents who lived a few months longer. The same version goes with a lower chance of obesity, and may go with slightly lower bone density. It is a
           likely finding, not a settled one: studies of people reaching very old age did not clearly confirm it.
           The effect is small and it is a tendency, not destiny.
       - genotype: A/A
@@ -83,7 +87,7 @@ variants:
         conclusion: >-
           You carry two copies of a less common version of this DNA region (about 3 in 100 people of European
           ancestry do). In very large British, European and American studies, each copy went with parents living a
-          few months longer. The same version goes with a lower chance of obesity. It is a likely finding, not a
+          few months longer. The same version goes with a lower chance of obesity, and may go with slightly lower bone density. It is a likely finding, not a
           settled one: studies of people reaching very old age did not clearly confirm it. The effect is small and
           it is a tendency, not destiny.
 studies:

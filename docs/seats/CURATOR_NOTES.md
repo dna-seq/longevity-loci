@@ -20,7 +20,7 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   compacting` to the lead, `watchdog.sh compact`, end the turn; the lead wakes the next. Stop at 80 % of the 7-day
   window or 95 % of the 5-hour window. After each tenth `done:`, re-measure the pacing and
   go on with the next ten, unless blocked or steered (the person, 2026-11-11, via the lead, 639316091: "After 10
-  adjust pacing and go next 10 and so on unless blocked or I steer"; this replaces the earlier pause after ten). Rows done in this run: 6 CELSR2 (1 of 10), 38 HLA-DQA1 (2 of 10), 81 FES/FURIN (3 of 10), 103 (4 of 10), 2 PABPC4 (5 of 10), 4 LINC02796 (6 of 10), 5 FPGT / TNNI3K (7 of 10), 7 MAGI3 (8 of 10), 8 IL6R Asp358Ala with 157 (9 of 10); 10 RABGAP1L (10 of 10); second run: 11 LINC01875 (1 of 10); 6's healthspan re-cited to Zenin's cached file (597d9fb); 103 re-tiered B under D16 (5abae88); the Open Targets quotes re-quoted from cached records (f69c8d8); the corrections of 71 (d44fd4a) and 67 (3dd792c) done, the E3 gene rule at 57 (8d27300) and 80 (728d78d), 67's MANOVA study added under D15 (a519ae4); 38 corrected again at 103 (the AncestryDNA tag is shared); next 96 APOE waits on D2, so the seed tier B by locus_id.
+  adjust pacing and go next 10 and so on unless blocked or I steer"; this replaces the earlier pause after ten). Rows done in this run: 6 CELSR2 (1 of 10), 38 HLA-DQA1 (2 of 10), 81 FES/FURIN (3 of 10), 103 (4 of 10), 2 PABPC4 (5 of 10), 4 LINC02796 (6 of 10), 5 FPGT / TNNI3K (7 of 10), 7 MAGI3 (8 of 10), 8 IL6R Asp358Ala with 157 (9 of 10); 10 RABGAP1L (10 of 10); second run: 11 LINC01875 (1 of 10), then the lead's review of 103, 8, 2, 10 with 5, 4 and 11 under D17/D18 (one commit each, not counted as rows); 6's healthspan re-cited to Zenin's cached file (597d9fb); 103 re-tiered B under D16 (5abae88); the Open Targets quotes re-quoted from cached records (f69c8d8); the corrections of 71 (d44fd4a) and 67 (3dd792c) done, the E3 gene rule at 57 (8d27300) and 80 (728d78d), 67's MANOVA study added under D15 (a519ae4); 38 corrected again at 103 (the AncestryDNA tag is shared); next 96 APOE waits on D2, so the seed tier B by locus_id.
 - **10 RABGAP1L** (2026-11-11), tier C re-tiered (seed B); briefly blocked on a `study_design` value, which the lead
   added as `current_age_quantitative` (8187cb8; the study written as a row, not prose). Both seed rsIDs
   (rs10798302 lead, rs16847402; r² 0.53, D′ 0.99, cached as db-ensembl-116 `ld-rs10798302-rs16847402.json`) come
@@ -147,7 +147,7 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   autoimmune direction from Joshi q11 (rs3184504-T raises type 1 diabetes); cancer trade-off from Timmers q7, no
   "slightly"; per copy, parents about 1.7 months ("nearly two months"). Deelen and LifeGen share the Rotterdam
   Study (Timmers q13). eLife source data is at `https://cdn.elifesciences.org/articles/39856/elife-39856-figN-dataM-v2.xlsx`.
-- **11 LINC01875** (2026-11-11), tier B kept, as a judgement between A and B (asked of the lead, non-blocking). Lead
+- **11 LINC01875** (2026-11-11), tier B kept (the lead: A's first criterion fails, D18.3; rules 3 and 4 below overruled by D18.1-2 and D17.3). Lead
   rs6744653 (Timmers Table 2): CES P 5.8e-8, suggestive (BF P 7.0e-10 not counted). The seed's rs66906321 (r² 0.89)
   reaches 2.26e-8 in Timmers' summary statistics, unreported by the paper (Table 1 omits it, q42 calls TMEM18 genome-wide
   only by the Bayesian scan; no Methods filter explains it), and mvAge 4e-8 (catalog only). AncestryDNA replicates at
@@ -162,7 +162,18 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   disease (it narrows the rule that a stated-allele catalog record is a trade-off); `descriptive`, not `modifiable`,
   for an obesity locus, as at row 4. With the advisor: (4) a
   deposited summary-statistics P below 5e-8 is the study's P even when the paper does not report the SNP, with the
-  omission said in statistical_test.
+  omission said in statistical_test. Overruled (the lead, 639341436): the paper's own call decides genome-wide at the
+  lead (D17.3); a sumstats P at a proxy the paper never reports does not meet A's first criterion.
+- **The lead's batch-2 review** (2026-11-11, handoff 20261111T024120Z-review-batch2.md; D17, D18), one commit per row:
+  103 to C (replication_failed; lifespan 0 as 38's shadow; exceptional survival untested; C4/E4 cite Open Targets'
+  absence of the variant); 8 rewritten (rs4845625 the lifespan peak, LD predicts z 3.1 vs 2.9; Rosa's lead instrument
+  rs4129267 r² 1 with the variant, MR holds without it; harmonised to C, A/C neutral, A/A risk); 2 (rs17561720 CEU
+  r² 0.09, not a tag; Deelen at the lead 0.052/0.19, exceptional survival 0); 10 (suggestive at Wright's GC P;
+  Deelen rows added, the proxy nominal; exceptional survival +; OBA_VT0005372); 5 harmonised; 4 modifiable through
+  weight; 11 a trade-off (heel BMD), descriptive. Rules learnt: Wright's significance call is by genomic control,
+  so a Wright study row carries the GC P, raw P in statistical_test (D17.3); Deelen's summary statistics are keyed
+  by GRCh37 chr:pos, so their study rows are `ungrained` (a warning) and the note ties the position to the rsID;
+  an LD pair Ensembl does not return in EUR can be tried in CEU (a subset of EUR) and said so.
 - **67 corrected** (2026-11-11), the lead's review applied. Tier B on red-flag heterogeneity alone: replication
   met (LifeGen fathers without UK Biobank, Timmers q15, P 0.016; Deelen SD1 q12, 90th OR 1.068, P 0.011), and
   AncestryDNA's null (Wright q11/q20, P 0.81, heterogeneity P 2.97e-4) caps it. New studies: the LifeGen replication;
