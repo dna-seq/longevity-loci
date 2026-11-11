@@ -17,7 +17,8 @@ verdict_reason: >-
   Zenin 2019's summary statistics give P 0.84 at the lead, in UK Biobank, a different trait from the same sample.
   Timmers 2019 files the locus as cardiometabolic, and FURIN variants were known for blood pressure (Pilling 2017);
   no cached source measures a mediator at this SNP, so none is written and the row stays descriptive. The effector
-  is FES by locus-to-gene score (0.97; FURIN 0.15), with no colocalisation read; the lead lies in an intron of FURIN,
+  is FES at E1: locus-to-gene 0.97 (FURIN 0.15), and FES holds 113 of the 120 cis-QTL colocalisations at H4 ≥ 0.8,
+  FURIN 7, under the tenth that would make it a rival (D24); the lead lies in an intron of FURIN,
   and Timmers 2019's expression analysis (SMR) names both FURIN and FES. rs6224 holds PIP 0.22 in Timmers 2019's
   credible set (C2), rs17514846 0.065 at r² 0.92: one signal. The lifespan-raising G is about half of European
   alleles, so the protection is an absence of the risk allele. Age of action is unknown: no cached source gives this
@@ -34,7 +35,7 @@ axes:
 flags:
   - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-30642433#q18, db-opentargets-26.09#q32]}
   - {token: "causal:C2", cites: [db-opentargets-26.09#q33]}
-  - {token: "effector:E2", cites: [db-opentargets-26.09#q35]}
+  - {token: "effector:E1", cites: [db-opentargets-26.09#q35, db-opentargets-26.09#q289, db-opentargets-26.09#q290, db-opentargets-26.09#q291, db-opentargets-26.09#q292, db-opentargets-26.09#q293, db-opentargets-26.09#q294, db-opentargets-26.09#q295, db-opentargets-26.09#q296]}
   - {token: "ld_proxy_of:rs6224", cites: [db-opentargets-26.09#q34]}  # rs17514846, r² 0.92
 variants:
   - rsid: rs6224

@@ -1129,3 +1129,32 @@ Fifteen QTL colocalisations, every one USP28's (expression and exon-level expres
 Geuvadis), two at H4 ≥ 0.8, both cis: GTEx v10 muscle (q286) and blood (0.997) gene expression; the other thirteen
 at H4 0.04 to 0.58. No other gene colocalises, and no gene passes locus-to-gene (CLDN25 0.35, q27): colocalisation
 alone, `effector:E2`, USP28, which Timmers 2020's SMR also names (pmid-32678081#q7).
+
+### rs6224 (FES/FURIN), for row 81
+
+The three lifespan-class sets holding the lead (`credibleSets-longevity8-15_90880313_G_T.json`): Timmers 2019's
+(e95e1989), Pilling 2017's combined parents (0095b2a9) and Timmers 2020's (92b21d13). Timmers 2019's:
+
+> [q289] data.credibleSet.colocalisation count 130
+
+> [q290] data.credibleSet.colocalisation.rows[38] rightStudyType tuqtl h4 0.9952958338118982 clpp 0.1603052972733388
+
+> [q291] data.credibleSet.colocalisation.rows[38].otherStudyLocus isTransQtl false
+
+> [q292] data.credibleSet.colocalisation.rows[38].otherStudyLocus.study.target approvedSymbol FES
+
+> [q293] data.credibleSet.colocalisation.rows[6] rightStudyType sqtl h4 0.9931848190271538 clpp 0.11703028162415956
+
+> [q294] data.credibleSet.colocalisation.rows[6].otherStudyLocus isTransQtl false
+
+> [q295] data.credibleSet.colocalisation.rows[6].otherStudyLocus.study.target approvedSymbol FURIN
+
+At H4 ≥ 0.8, 120 cis colocalisations: FES 113 (expression, splicing, transcript usage, single-cell and one pQTL;
+q290 a macrophage transcript-usage QTL) and FURIN 7 (q293 a GTEx tibial-nerve splicing QTL). The other two sets
+hold the same partners, 130 each (FES 114 and 113, FURIN 8 and 7):
+
+> [q296] data.credibleSet.colocalisation count 130
+
+FURIN meets a criterion of its own (cis colocalisation) but holds under a tenth of the locus's colocalisations (7
+of 120) and does not pass locus-to-gene (0.15 on this set, q35's prose), so it is no rival
+under D24. FES passes locus-to-gene (0.97) and colocalises: `effector:E1`, FES.
