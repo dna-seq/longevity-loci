@@ -386,3 +386,13 @@ From the curator's rows 40 to 47 and the D25.13 sweep; the lead settled them und
    curator's (b), the printed value replaced in `p_value_num`, rejected: the field would stop being what the
    article says; (a), `not_significant` with the pass in prose, rejected: the field would read as a non-replication.
    **Row 2 drops `PROTECT:ABSENCE_OF_RISK`** (D26.5): its pleiotropy is broad, but no disease is quoted at the locus.
+14. **48 IL6 (rs2069837) is D, on 41's ground before D25.1's.** Zeng 2016's combined P 1.8e-9 rests on genotypes its
+   own group later disowned: Liu 2021 says the SNP failed its quality control, and Zeng's southern controls carry G
+   at 0.033 against 1000 Genomes CHS 0.143. The authors' own QC rejecting the call is an overfit source (§4.1's D,
+   as 41 and 44), and §4.1 names IL6 among its contradicted examples. Deelen 2019's European 90th percentile
+   (one-sided 0.019, A's side) is therefore not weighed as replicating a discovery; it is named, not counted, as
+   41's LifeGen lean, and the other independent looks lean the other way or are flat (Timmers one-sided 0.84, a red
+   flag under both calibrations; the EU 2014 consortium inside Deelen at P 0.90 on G's side; FinnGen death and
+   Zenin toward G). The curator's (b), row 18's shape, rejected: 18's discovery is not in doubt, 48's is. (c)
+   rejected as the reason: Deelen 2019's 90th is independent of CLHLS, and the D does not rest on it. Genotypes
+   neutral, no trade-off.
