@@ -184,3 +184,23 @@ The trade-off at this variant, from the stated alleles: C, the minor allele and 
 CRP and rheumatoid arthritis and raises allergic disease and atopic dermatitis. Every record with a stated allele is
 consistent with that; the records with `?` (respiratory disease factor, venous thromboembolism, white cell count, CRP
 in Wojcik, eczema in Kichaev) state no allele.
+
+## Reading 2026-11-11, record
+
+> [q51] _embedded.associations[0] association_id 55479467 risk_frequency NR pvalue_description pvalue_mantissa 2 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.0099-0.0204] beta 0.01511 unit increase p_value 2e-08 accession_id GCST009448 pubmed_id 31484785 first_author Wright KM ci_lower 0.0099 ci_upper 0.0204
+
+> [q52] _embedded.associations[0].reported_trait[0] Longevity
+
+> [q53] _embedded.associations[0].snp_allele[0] rs_id rs10798302 effect_allele G
+
+> [q54] page size 50 totalElements 1 totalPages 1 number 0
+
+`associations-rs10798302.json`: one association, Wright 2019's GCST009448, reported as "Longevity": beta 0.0151 per
+G, P 2 × 10⁻⁸, the raw P of the current-age GWAS (pmid-31484785#q28), not its genomic-control 1.5 × 10⁻⁶. No other
+trait. For row 10.
+
+> [q55] _embedded.associations[0] association_id 55479486 risk_frequency NR pvalue_description pvalue_mantissa 2 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.012-0.025] beta 0.01856 unit increase p_value 2e-08 accession_id GCST009448 pubmed_id 31484785 first_author Wright KM ci_lower 0.012 ci_upper 0.025
+
+> [q56] page size 50 totalElements 1 totalPages 1 number 0
+
+`associations-rs16847402.json`: the same study's one record, beta 0.0186, P 2 × 10⁻⁸ (raw). For row 10.

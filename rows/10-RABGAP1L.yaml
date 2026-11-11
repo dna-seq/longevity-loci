@@ -1,0 +1,148 @@
+# The seed list's locus 10, RABGAP1L (1q25.1). Curated 2026-11-11, the ten-row run's tenth row. Lead rs10798302 (the
+# seed's lead); the seed's second rsID, rs16847402 (727 kb away), is the same signal more weakly tagged (r² 0.53,
+# D′ 0.99, its C with the lead's G; db-ensembl-116#q18, pmid-31484785#q30), named, not scored. Both come from Wright
+# 2019's GWAS of AncestryDNA customers' own current age (Supplemental Table 8), not the parental-lifespan
+# meta-analysis the seed names: neither is in Supplemental Table 9. Open Targets 26.09 has no lifespan set holding
+# either; the GWAS Catalog (2026-10-29) holds one association for each, both that study's.
+locus_id: 10
+locus_name: RABGAP1L
+verdict: re-tiered
+verdict_reason: >-
+  Tier C, from the seed's B. The only genome-wide result is Wright 2019's GWAS of the current age of 482,068
+  AncestryDNA customers, a cross-sectional design that reads survival from who is still alive at older ages
+  (VIABILITY_AF, which §4.5 admits as confirmation only, so it cannot carry A or B alone). There G, the minor allele
+  (18 % in Europeans), is commoner among older customers: raw P 1.7e-8, the GWAS Catalog's "Longevity" record of 2e-8;
+  after genomic control (λ 1.374, the largest of the paper's analyses) 1.5e-6, past the suggestive line only. The
+  paper itself names only APOE and MAP2K6 from this analysis. The seed reads the study as a parental-lifespan
+  meta-analysis with UK Biobank; it is not. In the same customers' fathers (born 1886-1940) G goes with longer life,
+  nominally (P 7.5e-4), but those are the same people's genotypes, not a replication. The independent test is
+  Timmers 2019's million parental lives: G on the same side, P 0.19, not significant. Healthspan is null (Zenin 2019,
+  P 0.85). Exceptional survival is untested: no cached longevity case-control reports the lead or a proxy. C, not D:
+  suggestive in a scoring class, nothing contradicts it, and nothing independent confirms it. The mechanism is
+  unknown from any cached test; filed as general ageing. In Open Targets 26.09 the lead itself leads a credible set
+  for blood IGF-1 levels in UK Biobank (P 1.7e-18) and sits in sets for white cell and neutrophil counts and
+  hypothyroidism, with no allele or direction in the records: association with the variant, not a mediator.
+  Causal confidence is C4 (no set of the seven lifespan, healthspan and longevity studies, nor of Wright's age study,
+  holds either seed SNP); with no longevity set there is no locus-to-gene score, so no gene is named (§4.2), and the
+  locus keeps the seed's label. The protection is a presence, the minor G. Age of action is unknown.
+axes:
+  tier: {value: C, cites: [pmid-31484785#q28, pmid-31484785#q29, pmid-31484785#q31, pmid-31484785#q32, pmid-31484785#q33, pmid-30642433#q36, db-gwascatalog-2026.10.29#q51, db-gwascatalog-2026.10.29#q53]}
+  mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q82, db-opentargets-26.09#q83, db-opentargets-26.09#q84, db-opentargets-26.09#q85]}
+  pleiotropy: {values: ["mech:igf1", "mech:blood_count"], cites: [db-opentargets-26.09#q82, db-opentargets-26.09#q83, db-opentargets-26.09#q84]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: untested,
+            cites: [pmid-30729179#q20, pmid-31484785#q28, pmid-31484785#q29, pmid-30642433#q36]}
+  actionability: {label: descriptive, cites: [pmid-31484785#q28]}
+  context: {values: [eur_only_evidence], cites: [pmid-31484785#q28, pmid-30642433#q36]}
+flags:
+  - {token: "PROTECT:PRESENCE", cites: [pmid-31484785#q28, db-ensembl-116#q20]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q75, db-opentargets-26.09#q76, db-opentargets-26.09#q77, db-opentargets-26.09#q81]}
+variants:
+  - rsid: rs10798302
+    gene: ""
+    phenotype: RABGAP1L region, survival to older age
+    trait_efo_id: EFO_0007796
+    effect_allele: G
+    effect_size: 0.01511
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: A/A
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA region, the one most people of European ancestry
+          have (about 67 in 100). It is the reference the other combinations are compared with. The region, on
+          chromosome 1, holds the RABGAP1L gene among others; which gene matters is not known. The finding comes
+          from people of European ancestry; less is known elsewhere.
+      - genotype: A/G
+        state: protective
+        conclusion: >-
+          You carry one copy of a less common version of this DNA region (about 30 in 100 people of European
+          ancestry do). In one large study of genealogy-site customers, this version was a little more common among
+          older people, as if it helped them live longer. This is early evidence: a much larger study of parents'
+          lifespans did not clearly confirm it. The region is also linked to blood levels of IGF-1, a growth
+          hormone signal. The effect, if real, is small: a tendency, not destiny.
+      - genotype: G/G
+        state: protective
+        conclusion: >-
+          You carry two copies of a less common version of this DNA region (about 3 in 100 people of European
+          ancestry do). In one large study of genealogy-site customers, each copy was a little more common among
+          older people, as if it helped them live longer. This is early evidence: a much larger study of parents'
+          lifespans did not clearly confirm it. The region is also linked to blood levels of IGF-1, a growth
+          hormone signal. The effect, if real, is small: a tendency, not destiny.
+studies:
+  - rsid: rs10798302
+    note: pmid-31484785
+    quote: q28
+    phenotype_class: VIABILITY_AF
+    study_design: current_age_quantitative
+    population: AncestryDNA customers of European ancestry, close relatives removed (mostly US)
+    ancestry: [EUR]
+    sample_size: 482068
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "1.703e-08"
+    p_value_num: 1.703e-08
+    effect_size: 0.01511
+    effect_measure: beta
+    effect_unit: z-scored current age per G allele (positive = older, survival to older age)
+    effect_allele: G
+    direction: protective
+    statistical_test: "Supplemental Table 8, Male_Female.AGE, quantitative GWAS of current age; raw P (the GWAS Catalog's 2e-8, GCST009448); genomic-control P 1.498e-06; it passes the paper's Bonferroni 9.31e-8 only uncorrected; λ 1.374, LDSC intercept 1.04 (S Table 3, q31); not among the paper's candidate loci (q32, q33)"
+    curator: claude-opus-5-5
+  - rsid: rs10798302
+    note: pmid-31484785
+    quote: q29
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_linear
+    population: AncestryDNA customers' fathers born 1886-1940 (mostly European American)
+    ancestry: [EUR]
+    sample_size: 309000
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "0.0007477"
+    p_value_num: 0.0007477
+    effect_size: 0.01126
+    effect_measure: beta
+    effect_unit: z-scored fathers' lifespan per G allele in offspring (positive = longer)
+    effect_allele: G
+    direction: protective
+    statistical_test: "Supplemental Table 8, raw P (genomic control 0.001932); the same customers' genotypes as the age GWAS, so not an independent sample"
+    curator: claude-opus-5-5
+  - rsid: rs10798302
+    note: pmid-30642433
+    quote: q36
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.18803032"
+    p_value_num: 0.188
+    effect_size: -0.00661581
+    effect_measure: beta
+    effect_unit: log hazard protection per A allele in self (negative = shorter life)
+    effect_allele: A
+    direction: risk
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), n 640,182, direction -- in UK Biobank and LifeGen, info 0.998; G on the longer-life side, not significant"
+    curator: claude-opus-5-5
+  - rsid: rs10798302
+    note: pmid-30729179
+    quote: q20
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.85"
+    p_value_num: 0.846
+    effect_size: -0.00124
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per G allele (positive = earlier)
+    effect_allele: G
+    direction: protective
+    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), -log10 P 0.073"
+    curator: claude-opus-5-5

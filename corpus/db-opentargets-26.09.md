@@ -404,3 +404,45 @@ All the variant's credible sets, of any study (`variant-credibleset-count-1_1544
 > [q72] data.variant.credibleSets count 286
 
 286 sets in all, none from the seven studies above. For row 8.
+
+## Reading 2026-11-11, record
+
+> [q73] data.variant id 1_174018660_A_G
+
+> [q74] data.variant.alleleFrequencies[2] populationName nfe_adj alleleFrequency 0.18389232127096206
+
+`variant-1_174018660_A_G.json`: rs10798302, intronic; G 0.184 in gnomAD non-Finnish Europeans. For row 10.
+
+> [q75] data.credibleSets count 0
+
+> [q76] data.credibleSets count 0
+
+`credibleSets(studyIds, variantIds)` over the seven lifespan, healthspan and longevity studies plus Wright 2019's
+current-age study GCST009448: no set holds rs10798302 (`credibleSets-longevity8-1_174018660_A_G.json`) or rs16847402
+(`...-1_174745913_T_C.json`). For row 10.
+
+> [q77] data.study.credibleSets count 3
+
+> [q78] data.study.credibleSets.rows[0].variant.rsIds[0] rs4755737
+
+> [q79] data.study.credibleSets.rows[1].variant.rsIds[0] rs11783562
+
+> [q80] data.study.credibleSets.rows[2].variant.rsIds[0] rs769449
+
+`study-GCST009448-sets.json`: Wright's current-age study has three credible sets (PICS), led by rs4755737 (11p11),
+rs11783562 (8p12, near WRN) and rs769449 (APOE); none at 1q25. For row 10.
+
+> [q81] data.variant.credibleSets count 26
+
+> [q82] data.variant.credibleSets.rows[14].study id GCST90474379 traitFromSource IGF-1 levels (UKB data field 30770)
+
+> [q83] data.variant.credibleSets.rows[14].variant id 1_174018660_A_G
+
+> [q84] data.variant.credibleSets.rows[8].study id GCST90002378 traitFromSource White blood cell count
+
+> [q85] data.variant.credibleSets.rows[1].study id GCST90627750 traitFromSource Hypothyroidism
+
+`variant-crediblesets-1_174018660_A_G.json`: rs10798302 is in 26 sets of other traits. It leads one, IGF-1 levels in
+UK Biobank (GCST90474379, P 1.7 × 10⁻¹⁸); it is a member, not the lead, of sets for white cell and neutrophil counts
+(GCST90002378, P 6 × 10⁻¹⁶, and others), hypothyroidism (GCST90627750), IGF-1 in other studies, schizophrenia, and
+expression of the gene ENSG00000152061 in blood cells and fat (the record names no symbol). Membership gives no allele or direction. For row 10.

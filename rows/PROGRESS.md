@@ -25,6 +25,7 @@ mechanical consensus of the research tracks, to be confirmed or overturned by th
 - 5 FPGT / TNNI3K (lead rs146254978, a 2 % variant), tier B kept: genome-wide only in Pilling 2017's parents' age-at-death analysis (P 4.6e-8), the rare C protective; not in Open Targets (C4/E4, no gene).
 - 7 MAGI3 (lead rs1230666, the PTPN22 autoimmune region), tier B kept: genome-wide only in Timmers 2019's million lives (P 6.4e-9), null in the longevity look-ups; C1 by PICS PIP 0.64, E3 (no gene).
 - 8 IL6R Asp358Ala (lead rs2228145, with 157's rs8192284 folded in), tier C (seed B): nominal only at the variant (Timmers 0.0034, AncestryDNA fathers 0.0011 raw, Zenin 0.017), WHI null; the seed's B was MR-only (R-TIER-4); a trade-off (atopy); E1 IL6R, C4.
+- 10 RABGAP1L (lead rs10798302, rs16847402 the same signal at r² 0.53), tier C (seed B): genome-wide only by raw P in Wright 2019's current-age GWAS (VIABILITY_AF, confirmation only; genomic control 1.5e-6), not the parental meta-analysis the seed names; Timmers P 0.19 same side; C4, no gene.
 
 ## In hand
 
