@@ -662,3 +662,20 @@ Row 28. The 54 variants at r² 0.8 or more to rs28637671 (db-ensembl-116, `ldwin
 queried one by one (`associations-<rsID>.json`): 54 return no record (totalElements 0). rs28494793 (r² 0.93) has one,
 Salo 2024's lumbar disc herniation, P 2e-6, allele unstated (q198, q199): short of genome-wide, so no trait is
 recorded at the lead's proxies.
+
+## Reading 2026-11-11, record
+
+> [q200] association_id 131476445 risk_frequency NR pvalue_description pvalue_mantissa 2 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.0039-0.008] beta 0.005953217 unit decrease p_value 2e-08 accession_id GCST90321079 pubmed_id 37550455
+
+> [q201] _embedded.associations[0].snp_effect_allele[0] rs36072649-T
+
+> [q202] association_id 63950010 risk_frequency NR pvalue_description pvalue_mantissa 1 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range [NR] or_per_copy_num 0.978 or_value 0.978 beta - p_value 1e-09 accession_id GCST011703 pubmed_id 33082346
+
+> [q203] _embedded.associations[1].snp_effect_allele[0] rs36072649-A
+
+> [q204] _embedded.associations[1].reported_trait[0] Smoking initiation
+
+GWAS Catalog (2026-10-29), associations-rs36072649.json, two records. mvAge (Rosoff 2023, GCST90321079): T, β
+0.00595 "unit decrease", P 2e-8 (q200, q201), anchoring T as the allele lowering the factor. Smoking initiation
+(PMID 33082346, GCST011703): A, OR 0.978, P 1e-9 (q202-q204): the lead's A, the healthier-ageing allele, lowers
+smoking initiation, at the lead itself. For row 29.

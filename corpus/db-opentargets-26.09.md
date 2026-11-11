@@ -1649,3 +1649,80 @@ Row 28. Open Targets' search finds none of the lead's top proxies (rs6821811, rs
 `search-<rsID>.json`, total 0). rs1481245 (4_66898102_A_G, the row's weak proxy) sits in three sets, all of UK
 Biobank's paracetamol use (P 7e-10, SuSiE-inf), led by 4_66855581_G_A, rs13109040 (q441-q443), which has r² 0.39 to
 the lead (db-ensembl-116#q168): not the lead's trait.
+
+## Reading 2026-11-11, record
+
+> [q444] data.variant id 4_140017956_T_A referenceAllele T alternateAllele A
+
+> [q445] data.variant.credibleSets count 69
+
+> [q446] data.meta.dataVersion year 26 month 09 data.credibleSets count 0
+
+> [q447] data.variant.credibleSets.rows[21] studyLocusId 418745616c7c015f1ffe9ec798b288ca studyId GCST010557 pValueMantissa 2 pValueExponent -12 beta -0.0294 finemappingMethod PICS
+
+> [q448] data.variant.credibleSets.rows[21].study traitFromSource Type 2 diabetes projectId GCST
+
+> [q449] data.variant.credibleSets.rows[21].l2GPredictions.rows[0] score 0.7906950116157532
+
+> [q450] data.variant.credibleSets.rows[21].l2GPredictions.rows[0].target approvedSymbol MAML3
+
+> [q451] data.variant.credibleSets.rows[7] studyLocusId 148b669e5a11b7724aa5076cbd549dfd studyId GCST90399695 pValueMantissa 3.3310000896453857 pValueExponent -9 beta -0.036968 finemappingMethod PICS
+
+> [q452] data.variant.credibleSets.rows[7].study traitFromSource Chronic obstructive pulmonary disease projectId GCST
+
+> [q453] data.variant.credibleSets.rows[13] studyLocusId 2dbfd89e29bfc5e0b97446f5e0e2548e studyId GCST90475936 pValueMantissa 4.1539998054504395 pValueExponent -9 beta -0.008313254052470851 finemappingMethod SuSiE-inf
+
+> [q454] data.variant.credibleSets.rows[13].study traitFromSource Coronary atherosclerosis (PheCode 411.4) projectId GCST
+
+> [q455] data.variant.credibleSets.rows[13].l2GPredictions.rows[0] score 0.8399028778076172
+
+> [q456] data.variant.credibleSets.rows[13].l2GPredictions.rows[0].target approvedSymbol MAML3
+
+> [q457] data.variant.credibleSets.rows[22] studyLocusId 46fd207de84ba20ecd47f7693f32d90e studyId GCST007085 pValueMantissa 7 pValueExponent -10 beta null finemappingMethod PICS
+
+> [q458] data.variant.credibleSets.rows[22].study traitFromSource Smoking status projectId GCST
+
+> [q459] data.variant.credibleSets.rows[8] studyLocusId 17a8dee23ebd2b5743ffcc6aeb7303bf studyId FINNGEN_R12_F5_DEPRESSION_DYSTHYMIA pValueMantissa 9.326000213623047 pValueExponent -11 beta -0.00290903219040857 finemappingMethod SuSie
+
+> [q460] data.variant.credibleSets.rows[8].study traitFromSource Depression or dysthymia projectId FINNGEN_R12
+
+Open Targets Platform 26.09, row 29 (variant-4_140017956_T_A.json; credibleSets-longevity8-4_140017956_T_A.json).
+rs36072649 is 4_140017956_T_A (q444), alternate A, and sits in 69 credible sets (q445; the first 25 rows returned):
+type 2 diabetes (Vujkovic 2020, P 2e-12, q447, q448), COPD (P 3e-9, q451, q452), coronary atherosclerosis (P 4e-9,
+q453, q454), smoking status (P 7e-10, q457, q458), FinnGen depression or dysthymia (P 9e-11, q459, q460), and lipid
+fractions, visceral fat, lean mass, white cells, pain and intervertebral disc disorder among the rest. A set's beta is
+its lead variant's, not necessarily this one's, so no direction is read from them. Locus-to-gene names MAML3 in every
+one of the 25 returned, 0.67 to 0.85 (q449, q450 at 0.79; q455, q456 at 0.84), the next gene at 0.15 or less. None of
+the eight lifespan, healthspan, longevity and current-age studies has a credible set holding the variant (q446), and
+mvAge's 26 sets (q413) include none on 4q31 (study-sets-GCST90321079.json, leads listed by position).
+
+## Reading 2026-11-11, record
+
+> [q461] data.variant.credibleSets.rows[14] studyId GCST90691922 pValueMantissa 3.651437520980835 pValueExponent -9
+
+> [q462] data.variant.credibleSets.rows[14].study traitFromSource Smoking status, ever vs never
+
+> [q463] data.variant.credibleSets.rows[14].variant id 4_140017956_T_A
+
+> [q464] data.variant.credibleSets.rows[29] studyId GCST90041844 pValueMantissa 4.730323314666748 pValueExponent -11
+
+> [q465] data.variant.credibleSets.rows[29].study traitFromSource Maternal smoking around birth (UKB data field 1787)
+
+> [q466] data.variant.credibleSets.rows[29].variant id 4_140017956_T_A
+
+> [q467] data.variant.credibleSets.rows[56] studyId GCST011703 pValueMantissa 1 pValueExponent -9
+
+> [q468] data.variant.credibleSets.rows[56].study traitFromSource Smoking initiation
+
+> [q469] data.variant.credibleSets.rows[56].variant id 4_140017956_T_A
+
+All 69 of rs36072649's credible sets (variant-sets-4_140017956_T_A.json: study, trait, lead variant, top
+locus-to-gene), row 29. The variant leads three, all smoking: smoking status, ever against never (P 3.7e-9, q461-q463),
+maternal smoking around birth (P 4.7e-11, q464-q466) and smoking initiation (GCST011703, P 1e-9, q467-q469; the GWAS
+Catalog prints its A lowering it, db-gwascatalog-2026.10.29#q202, q203). The other 66 are led by nearby variants:
+smoking (status, initiation, cessation, age at start, lifetime), type 2 diabetes and glucose (five studies),
+COPD and airway obstruction, coronary atherosclerosis and ischaemic heart disease, depression, pain (back, neck,
+chest, intensity), intervertebral disc disorder, visceral fat, lean mass, walking pace, CRP, white cells, monocytes,
+platelet volume, potassium, cannabis use disorder, codeine use, reflux, and NMR lipid fractions (17 sets led by one
+variant, 4_139953606_G_A). Locus-to-gene names MAML3 first in all 69 (0.66 to 0.87). No direction is read from them
+(a set's beta is its lead's).

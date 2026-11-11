@@ -1,0 +1,237 @@
+# The seed list's locus 29, MAML3 (4q31.1). Curated 2026-11-11, the third ten-row run's seventh row. Lead rs36072649
+# (Rosoff 2023's mvAge, Table 1; GRCh38 4:140,017,956 T/A, GRCh37 4:140,939,110), the seed's only rsID here, intronic
+# in MAML3. Timmers 2022's aging-GIP1 lead rs56172573 is the same signal (r² 0.96 EUR, 0.91 EAS). Wright 2019's
+# tables hold two mothers' SNPs in the window: rs769673 (r² 0.70, read) and rs6840907 (no LD returned to the lead, not
+# read). Open Targets 26.09: 69 credible sets hold the lead, three led by it, all smoking; none of the eight
+# lifespan-class studies has one. The GWAS Catalog (2026-10-29) holds two associations for it (mvAge, smoking
+# initiation).
+locus_id: 29
+locus_name: MAML3
+verdict: kept
+verdict_reason: >-
+  Tier B, as the seed has it, and the strongest B so far: an independent replication that D18.3 does not let lift it.
+  Genome-wide twice, both multivariate and sharing their inputs, so one discovery: Rosoff 2023's mvAge (P 2.0e-8,
+  novel; A, the minor allele at 37 %, the healthier one; Table 7 and Table 1 anchor it, Table 6 prints it reversed) and
+  Timmers 2022's aging-GIP1 at rs56172573 (r² 0.96, its C with the lead's A; P 7e-9, past the paper's own 5e-8/6).
+  Timmers 2019's parental lifespan is the co-occurring lifespan study (D16): A on the longer-lived side, P 3.3e-4, ++
+  in UK Biobank and LifeGen. The replication: Timmers 2022 looked its aging-GIP1 leads up in own survival in FinnGen
+  and Biobank Japan, 346,726 people with 46,128 deaths, outside UK Biobank, LifeGen and Deelen's cohorts. At
+  rs56172573, C adds 0.21 years per copy (SE 0.073), one-sided P 0.002, Bonferroni P 0.049 over 23 SNPs; the abstract
+  names MAML3 with HTT as the loci this sample supports. The phase holds in East Asians too (r² 0.91, C 0.33 with A
+  0.31). That is §4.1's replication, same allele and direction. It does not make the row A: §4.1's first criterion
+  wants a genome-wide lifespan, longevity or healthspan study, and both genome-wide results here are multivariate
+  (D18.3); none of the single inputs is genome-wide (lifespan 3.3e-4, healthspan 4.7e-4, frailty 0.0025, Deelen's 90th
+  percentile 0.020). Row 25 (HTT), replicated in the same look-up, is A because Timmers 2019 had it genome-wide. A
+  further outside look leans the same way: AncestryDNA mothers at rs769673 (r² 0.70, D′ 0.96; its A with the lead's A),
+  P 0.067, heterogeneity with UK Biobank's arm P 0.68, so no red flag (D21); the counted allele is read from Wright's
+  own tables at rs6840907, as LifeGen has no row for rs769673. Healthspan is +: Zenin 2019, A delays the end of
+  healthspan, P 4.8e-4 (an mvAge input). Exceptional survival is +: Deelen 2019's 90th percentile P 0.020 and 99th
+  0.049, A on the long-lived side, one look and an mvAge input. Mechanism: smoking and lungs. The lead itself leads
+  three credible sets, all smoking (ever smoked P 3.7e-9, maternal smoking around birth 4.7e-11, smoking initiation
+  1e-9, where A lowers initiation, OR 0.978). The other 66 sets at the locus span smoking again, type 2 diabetes and
+  glucose, COPD, coronary disease, depression, pain, visceral fat, walking pace, CRP and lipid fractions. At
+  aging-GIP1's lead, the allele with A goes with less smoking (initiation P 6e-24), less type 2 diabetes (2e-12), a
+  lower BMI (3e-15), waist-hip ratio and visceral fat, less depression and chronic pain, lower CRP, less reflux and
+  more years of education. Every association is on the healthier side, so no trade-off is found (D18.1). It is
+  broad: smoking, weight and diabetes are all strong, and nothing shows the lifespan effect runs mainly through one.
+  So actionability is descriptive. Unlike CHRNA3/5 (row 80), no smoking-stratified result here says the effect needs
+  smoking. Causal and effector confidence are C4 and E4, with no gene named (§4.2). No lifespan-class set holds the
+  variant, mvAge's 26 sets in Open Targets include none on 4q31, and aging-GIP1's own fine-mapping prints NA for the
+  locus. Locus-to-gene puts MAML3 first in all 69 trait sets (0.66 to 0.87), in prose only, as KLF3 at row 27. The
+  protective allele A is the less common one, so the most common genotype, A/T (about 46 in 100), is the reference,
+  with no PROTECT token (as at row 25). Age of action is unknown. The evidence is not European only: the FinnGen and
+  Biobank Japan look-up spans both.
+axes:
+  tier: {value: B, cites: [pmid-37550455#q33, pmid-37550455#q34, pmid-37550455#q35, pmid-37550455#q2, pmid-37550455#q3, pmid-37550455#q5, db-gwascatalog-2026.10.29#q200, db-gwascatalog-2026.10.29#q201, pmid-37118362#q17, pmid-37118362#q18, pmid-37118362#q20, pmid-37118362#q21, pmid-37118362#q1, pmid-37118362#q2, pmid-37118362#q4, pmid-37118362#q5, pmid-37118362#q6, pmid-37118362#q7, pmid-37118362#q19, db-ensembl-116#q169, db-ensembl-116#q170, db-ensembl-116#q171, db-ensembl-116#q172, db-ensembl-116#q173, db-ensembl-116#q174, pmid-30642433#q84, pmid-30642433#q85, pmid-31484785#q66, pmid-31484785#q67, pmid-31484785#q68, pmid-30642433#q86, db-ensembl-116#q175, db-ensembl-116#q176]}
+  mechanism: {value: smoking_lungs, cites: [db-opentargets-26.09#q461, db-opentargets-26.09#q462, db-opentargets-26.09#q463, db-opentargets-26.09#q464, db-opentargets-26.09#q465, db-opentargets-26.09#q466, db-opentargets-26.09#q467, db-opentargets-26.09#q468, db-opentargets-26.09#q469, db-gwascatalog-2026.10.29#q202, db-gwascatalog-2026.10.29#q203, db-gwascatalog-2026.10.29#q204, pmid-37118362#q22, pmid-37118362#q27, pmid-37118362#q28, pmid-37550455#q33]}
+  pleiotropy: {values: ["mech:smoking", "mech:adiposity", "mech:diabetes", broad], cites: [pmid-37550455#q33, pmid-37118362#q22, pmid-37118362#q23, pmid-37118362#q24, pmid-37118362#q25, pmid-37118362#q26, pmid-37118362#q27, pmid-37118362#q28, pmid-37118362#q29, pmid-37118362#q30, pmid-37118362#q31, pmid-37118362#q32, pmid-37118362#q33, db-opentargets-26.09#q445, db-opentargets-26.09#q447, db-opentargets-26.09#q448, db-opentargets-26.09#q451, db-opentargets-26.09#q452, db-opentargets-26.09#q453, db-opentargets-26.09#q454, db-opentargets-26.09#q459, db-opentargets-26.09#q460]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
+            cites: [pmid-30729179#q47, pmid-30642433#q84, pmid-37118362#q19, pmid-31413261#q74, pmid-31413261#q75, pmid-37550455#q35]}
+  actionability: {label: descriptive, cites: [pmid-37550455#q33, pmid-37118362#q22, pmid-37118362#q25, pmid-37118362#q27, pmid-37118362#q33]}
+  context: {values: [], cites: []}
+flags:
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q444, db-opentargets-26.09#q446, db-opentargets-26.09#q413, pmid-37118362#q34]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q446, db-opentargets-26.09#q413, db-opentargets-26.09#q449, db-opentargets-26.09#q450, db-opentargets-26.09#q455, db-opentargets-26.09#q456]}
+variants:
+  - rsid: rs36072649
+    gene: ""
+    phenotype: MAML3 region, ageing
+    trait_efo_id: EFO_0007796
+    effect_allele: A
+    effect_size: 0.0060
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: A/A
+        state: protective
+        conclusion: >-
+          You carry two copies of the less common version of this DNA region (about 13 in 100 people of European
+          ancestry do). In very large European studies that combined healthspan, frailty, long life and biological
+          age into one measure, each copy went with slightly healthier ageing, and parents of carriers lived a
+          little longer. A separate study of people in Finland and Japan agreed: each copy went with about two and
+          a half months more life. The same version goes with being less likely to start smoking, a slightly lower
+          BMI and a slightly lower risk of type 2 diabetes. The effect is small and it is a tendency, not destiny.
+      - genotype: A/T
+        state: neutral
+        conclusion: >-
+          You carry one copy of each version of this DNA region (about 46 in 100 people of European ancestry do,
+          the most common combination). It is the reference the other combinations are compared with. The region,
+          on chromosome 4, lies in the MAML3 gene and is linked to smoking, body weight and type 2 diabetes as well
+          as to how people age in general.
+      - genotype: T/T
+        state: risk
+        conclusion: >-
+          You carry two copies of the more common version of this DNA region (about 40 in 100 people of European
+          ancestry do). In very large European studies that combined healthspan, frailty, long life and biological
+          age into one measure, this version went with slightly less healthy ageing than the other, and a separate
+          study in Finland and Japan agreed. The same version goes with being a little more likely to start
+          smoking, a slightly higher BMI and a slightly higher risk of type 2 diabetes. The effect is small and it
+          is a tendency, not destiny.
+studies:
+  - rsid: rs36072649
+    note: pmid-37550455
+    quote: q35
+    phenotype_class: MULTIVARIATE_AGEING
+    study_design: multivariate_healthspan_lifespan
+    population: European (the five input GWAS, UK Biobank and LifeGen among them; effective n 1,958,774)
+    ancestry: [EUR]
+    stat_significance: significant
+    p_value: "2.01e-08"
+    p_value_num: 2.01e-08
+    effect_size: 0.005953217
+    effect_measure: beta
+    effect_unit: mvAge factor per A allele (no conventional unit; positive = healthier ageing)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Genomic SEM common-factor GWAS of healthspan, frailty, exceptional longevity, parental lifespan and PhenoAge acceleration (Supplementary Table 7 prints T −0.00595, effect allele first; Table 1, q33, the same; Table 6 marks it novel, q34, and prints the alleles the other way round; GWAS Catalog T 'unit decrease', db-gwascatalog-2026.10.29#q200, q201); entered per A with the sign turned; SE 0.00106; the inputs per A, recoded so positive is healthier: frailty P 0.0025, extreme longevity 0.020, healthspan 4.7e-4, PhenoAge 0.17, lifespan 3.3e-4; pools the samples of the component studies, not a replication (q5)"
+    curator: claude-opus-5-5
+  - rsid: rs36072649
+    note: pmid-37118362
+    quote: q18
+    phenotype_class: MULTIVARIATE_AGEING
+    study_design: multivariate_healthspan_lifespan
+    population: European (aging-GIP1's six input GWAS, UK Biobank and LifeGen among them)
+    ancestry: [EUR]
+    sample_size: 154478
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "7E-09"
+    p_value_num: 7.0e-09
+    proxy_rsid: rs56172573
+    effect_size: 0.02
+    effect_measure: beta
+    effect_unit: aging-GIP1 per C allele of rs56172573 (positive = healthier ageing)
+    effect_allele: C
+    direction: protective
+    statistical_test: "Supplementary Table 4 (q18): first genetic principal component of healthspan, parents' lifespans, longevity, frailty and self-rated health; SE 0.004; threshold 5e-8/6 (q17), passed; rs56172573 r² 0.96 to the lead in EUR, 0.91 in EAS (db-ensembl-116#q170, q171), its C with the lead's A by frequency and r²; per-input betas per C all positive (q20, q21); shares its inputs with mvAge, so the same discovery, not a replication; the paper's fine-mapping prints NA for the locus (q34)"
+    curator: claude-opus-5-5
+  - rsid: rs36072649
+    note: pmid-30642433
+    quote: q84
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 640150
+    sample_unit: lives
+    stat_significance: nominal
+    p_value: "0.00033010969"
+    p_value_num: 0.00033010969
+    effect_size: 0.01428059
+    effect_measure: beta
+    effect_unit: beta1 on parental lifespan per A allele, longer positive
+    effect_allele: A
+    direction: protective
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), SE 0.0040, z 3.59, direction ++ in UK Biobank and LifeGen, info 0.99; the co-occurring lifespan study (D16), an input to both multivariate scans and not a replication; rs56172573 the same signal, C longer, P 3.6e-4 (q85)"
+    curator: claude-opus-5-5
+  - rsid: rs36072649
+    note: pmid-37118362
+    quote: q19
+    phenotype_class: OWN_SURVIVAL
+    study_design: meta_analysis
+    population: FinnGen (Finnish) and Biobank Japan (Japanese)
+    ancestry: [EUR, EAS]
+    sample_size: 346726
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "0.002"
+    p_value_num: 0.002
+    proxy_rsid: rs56172573
+    effect_size: 0.209
+    effect_measure: beta
+    effect_unit: approximate years of survival per C allele of rs56172573
+    effect_allele: C
+    direction: protective
+    statistical_test: "Supplementary Table 6 (q19; columns q2, legend q5-q7): one-sided Wald P for the direction of aging-GIP1, Bonferroni P 0.049 over 23 SNPs; SE 0.0732; 46,128 deaths; C 0.36 in FinnGen, 0.39 in Biobank Japan; rs56172573 r² 0.96 to the lead in 1000 Genomes EUR and 0.91 in EAS, its C with the lead's A in both (db-ensembl-116#q170-q174); outside Timmers 2019's, Deelen 2019's and Rosoff's samples, the independent replication (q1, q4)"
+    curator: claude-opus-5-5
+  - rsid: rs36072649
+    note: pmid-31484785
+    quote: q66
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_linear
+    population: AncestryDNA customers' mothers (mostly European American)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.06652"
+    p_value_num: 0.06652
+    proxy_rsid: rs769673
+    effect_size: 0.005313
+    effect_measure: beta
+    effect_unit: mothers' lifespan per A allele of rs769673 (printed label G, read as the other allele; positive = longer)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Supplemental Table 9, the AncestryDNA arm of the mothers' meta-analysis, raw P (SE 0.0029); the counted allele read on this locus at rs6840907, where Table 9's G and Table 8's A carry the same +0.01051 and LifeGen puts T (A on the other strand) on the longer-lived side (q67, q68, pmid-30642433#q86); LifeGen has no row for rs769673; rs769673 r² 0.70, D′ 0.96 to the lead, its A (0.31) with the lead's A by frequency and r² (db-ensembl-116#q175, q176), a weak proxy; same side as the discovery; heterogeneity with UK Biobank's arm (+0.0070, P 0.0027) P 0.68, no red flag (D21)"
+    curator: claude-opus-5-5
+  - rsid: rs36072649
+    note: pmid-30729179
+    quote: q47
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "4.8E-04"
+    p_value_num: 0.00048
+    effect_size: -0.0175
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per A allele (positive = earlier)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Zenin 2019's healthspan summary statistics, SE 0.005, Z −3.49, −log10 P 3.319 (P about 4.8e-4, from the file's −log10); an mvAge input"
+    curator: claude-opus-5-5
+  - rsid: rs36072649
+    note: pmid-31413261
+    quote: q74
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's discovery cohorts)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.02037"
+    p_value_num: 0.02037
+    effect_size: 0.0460
+    effect_measure: beta
+    effect_unit: log odds of reaching the 90th percentile age per A allele
+    effect_allele: A
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GCST008598), SE 0.0198, effective N 11,615; an mvAge input (pmid-37550455#q35 prints the same)"
+    curator: claude-opus-5-5
+  - rsid: rs36072649
+    note: pmid-31413261
+    quote: q75
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's discovery cohorts)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.0492"
+    p_value_num: 0.0492
+    effect_size: 0.0607
+    effect_measure: beta
+    effect_unit: log odds of reaching the 99th percentile age per A allele
+    effect_allele: A
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GCST008599), SE 0.0309, effective N 4,524; the cases a subset of the 90th percentile's, one look"
+    curator: claude-opus-5-5

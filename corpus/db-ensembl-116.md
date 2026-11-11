@@ -624,3 +624,31 @@ rs13141210 is not read here. The lead's other Wright SNPs tag it weakly: rs17799
 around the lead holds 54 variants at r² 0.8 or more (`ldwin-rs28637671.json`; rs6821811, rs56278947 and six others
 at 1.0); rs28494793 (r² 0.93, q167) is the only one with a GWAS Catalog record (db-gwascatalog-2026.10.29#q198).
 rs13109040 (r² 0.39, q168) leads Open Targets' paracetamol-use sets near the lead (db-opentargets-26.09#q441-q443).
+
+## Reading 2026-11-11, record
+
+> [q169] populations[76] population 1000GENOMES:phase_3:EUR frequency 0.365805168986084 allele_count 368 allele A
+
+> [q170] [0] variation2 rs56172573 population_name 1000GENOMES:phase_3:EUR d_prime 0.991246 variation1 rs36072649 r2 0.961681
+
+> [q171] [0] variation1 rs36072649 variation2 rs56172573 r2 0.908379 d_prime 1.000000 population_name 1000GENOMES:phase_3:EAS
+
+> [q172] populations[75] allele C population 1000GENOMES:phase_3:EUR frequency 0.360834990059642 allele_count 363
+
+> [q173] populations[73] population 1000GENOMES:phase_3:EAS frequency 0.307539682539683 allele_count 310 allele A
+
+> [q174] populations[73] allele_count 331 population 1000GENOMES:phase_3:EAS allele C frequency 0.328373015873016
+
+> [q175] [0] r2 0.698648 d_prime 0.955642 variation1 rs36072649 variation2 rs769673 population_name 1000GENOMES:phase_3:EUR
+
+> [q176] populations[84] allele_count 308 allele A frequency 0.306163021868787 population 1000GENOMES:phase_3:EUR
+
+Ensembl 116, row 29 (variation-rs36072649.json, variation-rs56172573.json, variation-rs769673.json,
+ld-rs36072649-rs56172573.json and its -EAS, ld-rs36072649-rs769673.json, ldwin-rs36072649.json). rs36072649 (GRCh38
+4:140,017,956 T/A): A 0.37 in 1000 Genomes EUR (q169), 0.31 in EAS (q173), the minor allele. rs56172573 (Timmers
+2022's aging-GIP1 lead): r² 0.96 to the lead in EUR (q170), 0.91 in EAS (q171); its C 0.36 EUR (q172), 0.33 EAS
+(q174) rides with the lead's A in both (the opposite phase caps r² near 0.3). rs769673, Wright's mothers' SNP: r² 0.70,
+D′ 0.96 (q175), its A 0.31 (q176) with the lead's A. The 500 kb window listing (r² ≥ 0.05 shown) holds neither
+rs6840907 (177 kb from the lead; ld-rs36072649-rs6840907.json renders to no text) nor rs4073315 (252 kb): below r²
+0.05, not in the panel, or outside, unknown which; Wright's other SNPs here
+(rs706333, rs10027416) lie about 0.4 Mb away, outside it, not read.
