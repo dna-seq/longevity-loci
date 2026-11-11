@@ -160,15 +160,16 @@ studies:
     study_design: percentile_case_control_p90
     population: European (Deelen 2019's longevity meta-analysis)
     ancestry: [EUR]
-    stat_significance: not_significant
+    stat_significance: nominal
     p_value: "0.07025"
     p_value_num: 0.07025
+    p_one_sided: 0.0351
     effect_size: 0.0554
     effect_measure: beta
     effect_unit: log odds of reaching the 90th percentile, per A allele
     effect_allele: A
     direction: protective
-    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008598), effective N 11,615; the P is two-sided, one-sided about 0.035 (derived), nominal under D25.13; mvAge's exceptional-longevity input, not a replication"
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008598), effective N 11,615; the P is two-sided, one-sided about 0.035 (derived), nominal under D25.13; mvAge's exceptional-longevity input, not a replication; p_one_sided, nominal under D26.13"
     curator: claude-opus-5-5
   - rsid: rs6907508
     note: pmid-31413261
@@ -177,15 +178,16 @@ studies:
     study_design: percentile_case_control_p99
     population: European (Deelen 2019's longevity meta-analysis)
     ancestry: [EUR]
-    stat_significance: not_significant
+    stat_significance: nominal
     p_value: "0.05488"
     p_value_num: 0.05488
+    p_one_sided: 0.0274
     effect_size: 0.0941
     effect_measure: beta
     effect_unit: log odds of reaching the 99th percentile, per A allele
     effect_allele: A
     direction: protective
-    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), effective N 4,524; the P is two-sided, one-sided about 0.027 (derived), nominal under D25.13; its cases a subset of the 90th's, mvAge's input, so not a replication"
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), effective N 4,524; the P is two-sided, one-sided about 0.027 (derived), nominal under D25.13; its cases a subset of the 90th's, mvAge's input, so not a replication; p_one_sided, nominal under D26.13"
     curator: claude-opus-5-5
   - rsid: rs6907508
     note: pmid-31484785
