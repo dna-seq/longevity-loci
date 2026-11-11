@@ -40,8 +40,8 @@ verdict_reason: >-
   2019's credible set (PICS) at PIP 0.31, with rs1731247, rs11126666 and rs1731248 at r² 0.97 to 0.98 holding about
   0.18 each, one signal whose causal variant is not resolved; mvAge's set has the same shape (0.32). Timmers 2019
   counts KCNK3 among its most allelically heterogeneous loci (at least 25 independent variants), so a single SNP
-  captures only part of the region. The effector is KCNK3 by locus-to-gene score (0.85, E2; no colocalisation
-  read). The protection is the absence of the risk allele: A shortens life and G is the common one. Age of action
+  captures only part of the region. The effector is KCNK3, E1: locus-to-gene 0.85, and the only gene whose
+  expression colocalises with the signal (five cis eQTL sets, H4 up to 0.996). The protection is the absence of the risk allele: A shortens life and G is the common one. Age of action
   is unknown: no cached source gives this locus's own age bands.
 axes:
   tier: {value: A, cites: [pmid-30642433#q44, pmid-30642433#q30, pmid-30642433#q47, pmid-30642433#q50, pmid-31413261#q27, pmid-31413261#q5, pmid-30642433#q13, pmid-30642433#q48, pmid-30642433#q49, pmid-31413261#q28, pmid-37550455#q2, db-gwascatalog-2026.10.29#q78, pmid-29227965#q21, pmid-31484785#q43, db-ensembl-116#q43, db-gwascatalog-2026.10.29#q76, db-gwascatalog-2026.10.29#q79, db-opentargets-26.09#q105, db-opentargets-26.09#q107]}
@@ -55,7 +55,7 @@ axes:
 flags:
   - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-30642433#q44, pmid-30642433#q47, db-opentargets-26.09#q108]}
   - {token: "causal:C2", cites: [pmid-30642433#q46, db-opentargets-26.09#q98, db-opentargets-26.09#q99, db-opentargets-26.09#q100, db-opentargets-26.09#q101, db-opentargets-26.09#q102, db-opentargets-26.09#q103, db-opentargets-26.09#q107]}
-  - {token: "effector:E2", cites: [db-opentargets-26.09#q104]}
+  - {token: "effector:E1", cites: [db-opentargets-26.09#q104, db-opentargets-26.09#q269, db-opentargets-26.09#q270, db-opentargets-26.09#q271, db-opentargets-26.09#q272, db-opentargets-26.09#q273]}
 variants:
   - rsid: rs1275922
     gene: KCNK3

@@ -1045,3 +1045,29 @@ transcript ENST00000423427, H4 0.973; brain dorsolateral prefrontal cortex, Comm
 223 colocalisations with GWAS sets (three pages read), dominated at H4 ≥ 0.8 by BMI, weight, waist, hip and fat
 mass, with type 2 diabetes, reticulocytes, lipoprotein fractions, smoking initiation and insomnia. Colocalisation
 carries no direction.
+
+## Reading 2026-11-11, record
+
+The QTL colocalisation sweep. The colocalisations read before 2026-11-11 came from queries that named no `studyTypes`, and Open Targets then
+returns GWAS partners only. Every row with a scoring credible set is re-read here with the QTL types named (eQTL,
+sQTL, transcript-usage QTL, pQTL and their single-cell forms) and `isTransQtl` asked, each set cached as
+`set-<first 8 of studyLocusId>-coloc-qtl[-pN]`. A gene is counted when a cis colocalisation (`isTransQtl false`)
+reaches H4 ≥ 0.8, tallied from the cached pages, not each quoted; ambiguity is read by D24.
+
+### rs1275922 (KCNK3), for row 12
+
+> [q269] data.credibleSet.colocalisation count 6
+
+> [q270] data.credibleSet.colocalisation.rows[1] rightStudyType eqtl h4 0.9964101021828494 clpp 0.20011817201137583
+
+> [q271] data.credibleSet.colocalisation.rows[1].otherStudyLocus isTransQtl false
+
+> [q272] data.credibleSet.colocalisation.rows[1].otherStudyLocus.study.target approvedSymbol KCNK3
+
+Timmers 2019's set (197bf4ed): six QTL colocalisations, five at H4 ≥ 0.8, all cis and all KCNK3 (expression and
+exon-level expression, GTEx v10), the best H4 0.996 in pancreas exon expression. Rosoff's mvAge set (e43a6d14) gives
+the same five KCNK3 colocalisations:
+
+> [q273] data.credibleSet.colocalisation count 6
+
+KCNK3 is the top locus-to-gene gene (0.85, q104) and the only gene that colocalises: `effector:E1`, KCNK3.
