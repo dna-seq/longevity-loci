@@ -1140,3 +1140,43 @@ cholesterol, IGF-1 and creatinine, raises eGFR, SHBG and testosterone; Timmers 2
 Salo's lumbar disc herniation study (`study-GCST90837384`), the source of q328: European discovery, 80,724 cases and
 748,975 controls from Estonia, Finland and the UK, so the trade-off at rs11556924 is read in Europeans, where T rides
 with the lead's A (db-ensembl-116#q349, q355). No Open Targets set at the locus is of disc disease. For row 51.
+
+## Reading 2026-11-11, supplement
+
+> [q332] or_per_copy_num 0.876 or_value 0.876 beta - p_value 4e-11 accession_id GCST90132314 pubmed_id 36474045 first_author Aragam KG
+
+rs268 (`assoc-rs268-p0` to `-p2`, 101 associations, all read), Aragam 2022's coronary artery disease: effect allele A
+(the record's `snp_effect_allele`), OR 0.876 per copy (0.843 to 0.911), P 4e-11. A protects against coronary disease.
+For row 52.
+
+> [q333] beta 0.024401588 unit increase p_value 3.0000000000000004e-08 accession_id GCST90321079 pubmed_id 37550455 first_author Rosoff DB
+
+Rosoff 2023's "aging" (mvAge): A, increase, P 3e-8 (pmid-37550455#q46). For row 52.
+
+> [q334] beta 0.2466 unit increase p_value 6e-166 accession_id GCST90019523 pubmed_id 33462484 first_author Sinnott-Armstrong N
+
+Sinnott-Armstrong 2021's triglycerides (UK Biobank): G raises triglycerides, 0.25 units, P 6e-166. For row 52.
+
+> [q335] efo_id EFO_0004530 efo_trait triglyceride measurement
+
+That record's trait: EFO_0004530, triglyceride measurement. For row 52.
+
+> [q336] beta 0.12852937 unit increase p_value 5e-10 accession_id GCST007931 pubmed_id 31015401 first_author Wu Y
+
+Wu 2019's statin use (UK Biobank): G raises it. For row 52.
+
+> [q337] beta 0.2533705 unit decrease p_value 9e-65 accession_id GCST90728570 pubmed_id 41686896 first_author Du M
+
+Du's MASLD (a multi-trait analysis): A, decrease, P 9e-65. No harm on A's side among the 101 records: A lowers
+coronary disease, triglycerides and liver-fat disease and raises HDL; the blood-cell lines (haematocrit, cell
+volume and width, platelets) are measures, not diseases; abdominal aortic aneurysm, metabolic syndrome and its
+clusters print no allele. For row 52.
+
+> [q338] p_value 8e-10 accession_id GCST009450 pubmed_id 31484785 first_author Wright KM
+
+rs15285 (`assoc-rs15285-p0` to `-p4`, 205 associations), Wright 2019's fathers' longevity (GCST009450): P 8e-10,
+allele printed G (Wright's S9 column, pmid-31484785#q93), no effect. For row 52.
+
+> [q339] beta 0.052 unit decrease p_value 8e-14 accession_id GCST005194 pubmed_id 29212778 first_author van der Harst P
+
+van der Harst 2018's coronary artery disease: T lowers it, P 8e-14. The second signal's; prose only. For row 52.

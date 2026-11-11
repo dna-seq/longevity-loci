@@ -187,3 +187,17 @@ Row 51's ZC3HC1 lead in FinnGen R11's death endpoint (`rows-a0540331`, GRCh38 7:
 power bar is met but heterogeneity is not below 0.05, so no red flag. Figure 4's mean (0.4175 of APOE's) predicts
 −0.0087, power 0.30, heterogeneity P 0.71. rs11556924 (alt T): β −0.0035 (SE 0.0079), P 0.66, the same side. For
 row 51.
+
+## Reading 2026-11-11, supplement
+
+> [q27] 8	19956018	A	G	rs268	LPL	0.548986	0.260439	0.0148558	0.0247893	0.0225557	0.0231222	0.0224847
+
+FinnGen R11's death endpoint (GRCh38), rs268: ref A, alt G, β +0.0149 per G (SE 0.0248), P 0.55, one-sided 0.27 on
+A's side (derived); G 0.023 in Finland. The expected size, from Timmers' β (pmid-30642433#q244) under APOE's
+within-FinnGen factor 0.99: −0.065 per A, power 0.84, heterogeneity P 0.080 with both SEs; under Figure 4's mean
+factor power 0.29, P 0.63. Below D21's line (heterogeneity P not below 0.05), no red flag. For row 52.
+
+> [q28] 8	19967156	C	T	rs15285	LPL	0.314307	0.502646	-0.00851573	0.00846305	0.257011	0.257894	0.2569
+
+rs15285: ref C, alt T, β −0.0085 per T (SE 0.0085), P 0.31, one-sided 0.16 on T's side; under APOE's factor power
+0.66, heterogeneity P 0.35. Not nominal; the second signal's, prose only. For row 52.

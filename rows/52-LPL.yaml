@@ -1,0 +1,166 @@
+# The seed list's locus 52, LPL (8p21.3). Curated 2026-11-11. Lead rs268 (the seed's lead), LPL's missense variant
+# usually called Asn291Ser (GRCh38 8:19,956,018 A/G, GRCh37 8:19,813,529), G the rare allele (0.019 in non-Finnish
+# Europeans, absent in East Asians), Rosoff 2023's novel mvAge lead. The seed's second rsID, rs15285 (LPL's 3′ UTR,
+# 11 kb away, T 0.29), is a separate signal: allele frequencies cap r² near 0.03, Ensembl returns no pair, and
+# Aragam 2022's coronary disease fine-mapping puts the two in separate sets. It is Wright 2019's genome-wide fathers'
+# locus; named in prose here and sent to the scout's queue as a candidate row (D25.6, as 37's rs3131621). Open
+# Targets 26.09: 507 credible sets hold rs268, none of a scoring class; the GWAS Catalog (2026-10-29) holds 101
+# associations for it. Timmers 2019, Zenin 2019, Deelen 2019 and FinnGen R11's death endpoint read at both SNPs.
+locus_id: 52
+locus_name: LPL
+verdict: kept
+verdict_reason: >-
+  Tier B, as the seed has it: genome-wide only in a multivariate result, with a co-occurring lifespan study (D16,
+  D18.3), and not replicated outside its inputs. Rosoff 2023's mvAge is genome-wide at rs268, A (the common allele)
+  on the healthier-ageing side, β +0.024 (SE 0.0044), P 3.4e-8, novel, heterogeneity across its five inputs Q P 0.87
+  (Table 1, Supplementary Tables 6 and 7). Its inputs all lean to A: Timmers 2019's million parents' lives, A longer,
+  P 5.5e-6 (suggestive, the strongest SNP within 300 kb, nothing there genome-wide), the co-occurring lifespan study;
+  Zenin 2019's healthspan, A healthier, P 0.0015; frailty (reverse coded) P 0.0026, read only in Rosoff's table, so
+  named. Nothing replicates and nothing contradicts: Deelen 2019, itself an mvAge input (its numbers are Rosoff's exceptional longevity column), is flat (90th percentile P 0.75,
+  99th 0.83; at its SE, 0.080 for a 2 % variant, power 0.8 only for an OR above about 1.22 per A, far beyond the
+  lifespan effect), and FinnGen's death endpoint leans to A (G β +0.015, SE 0.025, one-sided 0.27): under APOE's
+  within-FinnGen factor the expected size gives power 0.84 but heterogeneity P 0.080 with both SEs, under Figure 4's
+  mean factor power 0.29, P 0.63, so no D21 red flag. The seed's second rsID, rs15285, is another signal (r² at most
+  about 0.03 from the two frequencies; Aragam's coronary disease study fine-maps rs268 alone in one set at PIP 0.996
+  and rs15285 in a separate 25-variant set). It carries the locus's only lifespan-class genome-wide result: Wright
+  2019's fathers' meta-analysis, P 8.5e-10, T longer-lived (AncestryDNA P 2.4e-5 inside the pooled P, UK Biobank
+  1.2e-7); Timmers P 3.5e-5, Deelen's 90th one-sided 0.065, FinnGen one-sided 0.16 lean the same way, none
+  replicates. Its evidence is not this row's: by D25.6 it goes to the scout's queue, and the row's cells rest on rs268
+  alone. Healthspan + (Zenin, nominal), lifespan + (Timmers, P 5.5e-6), exceptional survival 0 (Deelen flat, the
+  test too weak for a 2 % variant to see this effect). Mechanism heart and vessels: G raises triglycerides (P 6e-166)
+  and coronary disease (A's OR 0.876, P 4e-11, Aragam 2022); Wright reads LPL as acting through cardiovascular
+  disease, said of rs15285's signal and not cited here. Broad: blood-cell measures (haematocrit, cell width, platelets),
+  liver-fat disease, statin use, apolipoproteins. No trade-off: none of the 101 Catalog records puts a harm on A's
+  side. Descriptive: the measure it moves, triglycerides, is not one of §4.2's tests (LDL, Lp(a), blood pressure,
+  HbA1c), and the row does not stretch `act_test:ldl` to it; put to the lead. Causal C1: rs268 is a missense variant
+  and the lead of mvAge's own fine-mapping, SuSiE posterior 0.957 (FINEMAP 0.654), the scoring-class set the tier
+  rests on (Open Targets has no mvAge set here). Effector E1, LPL: the variant changes LPL's protein (§4.2's coding
+  clause); L2G agrees (0.99) in the lipid and coronary disease sets. A/A, about 96 in 100 Europeans, is the
+  reference; G is the risk allele at a disease locus (coronary disease), so `PROTECT:ABSENCE_OF_RISK` (D26.5). Age of
+  action unknown: no moderator or age-band result at LPL is cached. The evidence and the variant are European (G
+  absent in East Asians, 0.003 in Africans).
+axes:
+  tier: {value: B, cites: [pmid-37550455#q46, pmid-37550455#q48, pmid-37550455#q49, pmid-30642433#q244, pmid-30729179#q75, pmid-31413261#q134, pmid-31413261#q135, db-finngen-r11#q27, db-gwascatalog-2026.10.29#q333, db-ensembl-116#q364, db-opentargets-26.09#q671, db-opentargets-26.09#q678]}
+  mechanism: {value: heart_vessels, cites: [db-gwascatalog-2026.10.29#q332, db-gwascatalog-2026.10.29#q334, db-opentargets-26.09#q669, db-opentargets-26.09#q672]}
+  pleiotropy: {values: ["mech:cvd", broad], cites: [db-gwascatalog-2026.10.29#q332, db-gwascatalog-2026.10.29#q336, db-gwascatalog-2026.10.29#q337, pmid-37550455#q46]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
+            cites: [pmid-30729179#q75, pmid-30642433#q244, pmid-31413261#q134, pmid-31413261#q135]}
+  actionability: {label: descriptive, cites: [db-gwascatalog-2026.10.29#q334, db-gwascatalog-2026.10.29#q335]}
+  context: {values: [eur_only_evidence], cites: [db-ensembl-116#q358, db-ensembl-116#q360]}
+flags:
+  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [db-gwascatalog-2026.10.29#q332, db-ensembl-116#q358]}
+  - {token: "causal:C1", cites: [pmid-37550455#q47, pmid-37550455#q50, pmid-37550455#q51, db-ensembl-116#q357, db-opentargets-26.09#q668]}
+  - {token: "effector:E1", cites: [db-ensembl-116#q357, pmid-37550455#q47, db-opentargets-26.09#q673]}
+  - {token: "mediator:EFO_0004530", cites: [db-gwascatalog-2026.10.29#q334, db-gwascatalog-2026.10.29#q335]}  # triglyceride measurement
+variants:
+  - rsid: rs268
+    gene: LPL
+    phenotype: LPL Asn291Ser, triglycerides, coronary disease
+    trait_efo_id: EFO_0007796
+    effect_allele: A
+    effect_size: 0.0244
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: A/A
+        state: neutral
+        conclusion: >-
+          You carry two copies of the usual version of this spot in the gene LPL on chromosome 8, as about 96 in 100
+          people of European ancestry do. LPL makes an enzyme that clears fat (triglycerides) from the blood. This is
+          the reference the other combinations are compared with: you do not carry the rarer version that lowers the
+          enzyme's work and goes with higher blood fats and more heart disease.
+      - genotype: A/G
+        state: risk
+        conclusion: >-
+          You carry one copy of a rarer version of this spot in the gene LPL on chromosome 8 (about 4 in 100 people of
+          European ancestry do). It changes one building block of the LPL enzyme, which clears fat (triglycerides)
+          from the blood, and it goes with higher triglycerides, lower "good" HDL cholesterol and a somewhat higher
+          chance of coronary heart disease. In very large European studies it also went with slightly less healthy
+          ageing and parents living a little less long. It is a likely finding, not a settled one, and the effect is
+          small: a tendency, not destiny. The finding comes from people of European ancestry; this version is
+          almost absent elsewhere.
+      - genotype: G/G
+        state: risk
+        conclusion: >-
+          You carry two copies of a rare version of this spot in the gene LPL on chromosome 8 (about 3 in 10,000
+          people of European ancestry do). It changes one building block of the LPL enzyme, which clears fat
+          (triglycerides) from the blood; each copy goes with higher triglycerides, lower "good" HDL cholesterol and
+          a somewhat higher chance of coronary heart disease. In very large European studies each copy also went
+          with slightly less healthy ageing and parents living a little less long. Too few people carry two copies
+          to say what two copies do beyond that. It is a likely finding, not a settled one: a tendency, not
+          destiny.
+studies:
+  - rsid: rs268
+    note: pmid-37550455
+    quote: q49
+    phenotype_class: MULTIVARIATE_AGEING
+    study_design: multivariate_healthspan_lifespan
+    population: European (the five input GWAS, UK Biobank and LifeGen among them; effective n 1,958,774)
+    ancestry: [EUR]
+    stat_significance: significant
+    p_value: "3.38e-08"
+    p_value_num: 3.38e-08
+    effect_size: 0.024401588
+    effect_measure: beta
+    effect_unit: mvAge factor per A allele (no conventional unit; positive = healthier ageing)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Genomic SEM common-factor GWAS of healthspan, frailty, exceptional longevity, parental lifespan and PhenoAge acceleration (Supplementary Table 7, effect allele first, q49; Table 1, q46, and Supplementary Table 6, q48, file it as novel, Q P 0.87; the frequency column 0.014 is G's); every input on A's side, frailty (reverse coded) P 0.0026; SuSiE posterior 0.957, FINEMAP 0.654 (Supplementary Table 10, q51); pools the samples of the component studies, not a replication (q5); the GWAS Catalog's rs268-A, increase (db-gwascatalog-2026.10.29#q333)"
+    curator: claude-opus-5-5
+  - rsid: rs268
+    note: pmid-30642433
+    quote: q244
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the 26 LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 636837
+    sample_unit: lives
+    stat_significance: suggestive
+    p_value: "5.4846412e-06"
+    p_value_num: 5.4846412e-06
+    effect_size: 0.06556407
+    effect_measure: beta
+    effect_unit: log hazard protection per A allele (summary statistics' beta1; positive = longer life)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Cox-residual GWAS summary statistics (GCST009890), direction ++; the co-occurring lifespan study (D16), an mvAge input, not a replication; nothing from 19.50 to 20.20 Mb (GRCh37) reaches 5e-8; FinnGen R11 death G +0.0149, SE 0.0248, P 0.55, one-sided 0.27 on A's side (db-finngen-r11#q27): under APOE's factor power 0.84, heterogeneity P 0.080 (both SEs), under Figure 4's mean power 0.29, P 0.63, no red flag (D21, D25.3)"
+    curator: claude-opus-5-5
+  - rsid: rs268
+    note: pmid-30729179
+    quote: q75
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "0.0015"
+    p_value_num: 0.001455
+    effect_size: -0.0573
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per A allele (negative = later), the file's G effect negated
+    effect_allele: A
+    direction: protective
+    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit): G +0.0573, SE 0.018, -log10 P 2.837; an mvAge input; scores beside the co-occurring lifespan study (D16)"
+    curator: claude-opus-5-5
+  - rsid: rs268
+    note: pmid-31413261
+    quote: q134
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis; no UK Biobank data)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.7451"
+    p_value_num: 0.7451
+    effect_size: 0.0261
+    effect_measure: beta
+    effect_unit: log odds of survival to the 90th percentile per A allele
+    effect_allele: A
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GCST008598), SE 0.0803, effective N 9,709; 99th percentile β +0.0283, SE 0.133, P 0.83 (q135); power 0.8 only for an OR above about 1.22 per A, so neither replication nor red flag; an mvAge input (exceptional longevity)"
+    curator: claude-opus-5-5

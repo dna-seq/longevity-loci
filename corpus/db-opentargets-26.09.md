@@ -2395,3 +2395,53 @@ Row 51, the advisor's read: Foote's set was fine-mapped without in-sample LD (q6
 the locus, rs11556924 leads 236 (q648), among them the coronary artery disease set of 121,234 cases (q665, q666),
 where rs11556924 holds PIP 0.83 (q667; its variant is 7_130023656_C_T) and the lead the rest. Which SNP acts is open;
 C1 stands on Foote's set by D17.2's letter. For row 51.
+
+## Reading 2026-11-11, supplement
+
+> [q668] data.variant.credibleSets count 507
+
+rs268 (8_19956018_A_G) sits in 507 credible sets (`variant-8_19956018_A_G-all.json` and `-p2.json`, all read):
+lipid, lipoprotein, fatty-acid, blood-cell, protein and coronary disease sets; none of a lifespan, longevity, healthspan
+or multivariate-ageing study (Rosoff's mvAge set is not among them). For row 52.
+
+> [q669] data.variant.credibleSets.rows[205] studyLocusId 73f3f8e5f6cf89c6d89d762b11fdbeb2 studyId GCST005194 pValueMantissa 4.504735946655273 pValueExponent -8 beta 0.00985076963903044 finemappingMethod SuSiE-inf
+
+van der Harst 2018's coronary artery disease (GCST005194, 34,541 cases), SuSiE-inf, β +0.0099 per G. For row 52.
+
+> [q670] data.variant.credibleSets.rows[205].locus.rows[0] posteriorProbability 0.9956946186355491
+
+rs268 holds PIP 0.996 in that set. For row 52.
+
+> [q671] data.variant.credibleSets.rows[221] studyLocusId 7ad55d71e6c4e5efd4212d07e1f3d2fa studyId GCST90132314 pValueMantissa 4.098146915435791 pValueExponent -11 beta 0.005323644810909629 finemappingMethod SuSiE-inf
+
+Aragam 2022's coronary artery disease (GCST90132314), β +0.0053 per G; a one-variant set. For row 52.
+
+> [q672] data.variant.credibleSets.rows[221].locus.rows[0] posteriorProbability 0.9959441497517634
+
+rs268, PIP 0.996: the coronary disease signal is the variant itself. Not scoring class, so it does not set causal
+confidence (D17.2); it shows G raising coronary disease. For row 52.
+
+> [q673] data.variant.credibleSets.rows[205].l2GPredictions.rows[0] score 0.992228090763092
+
+L2G's top gene in the set, LPL at 0.99 (target on the next line). For row 52.
+
+> [q674] data.variant.credibleSets count 579
+
+rs15285 (8_19967156_C_T) sits in 579 sets (`-all` and `-p2`, read). For row 52.
+
+> [q675] data.variant.credibleSets.rows[144] studyLocusId c7200f5a0479b12d13660dd8a755d99d studyId GCST009450 pValueMantissa 8 pValueExponent -10 beta null finemappingMethod PICS
+
+Wright 2019's fathers' meta-analysis (GCST009450, n 699,000), PICS, P 8e-10. For row 52.
+
+> [q676] data.variant.credibleSets.rows[144].locus.rows[0] posteriorProbability 0.06578173779206146
+
+rs15285 tops it at PIP 0.066 of 25 members, a flat set (C3 for that signal); L2G LPL 0.98. For row 52.
+
+> [q677] data.variant.credibleSets.rows[42] studyLocusId 16d195892c6b7755c759762abf7d5415 studyId GCST90132314 pValueMantissa 4.528810501098633 pValueExponent -16 beta -0.006063034055759036 finemappingMethod SuSiE-inf
+
+Aragam 2022's coronary disease again (GCST90132314), a 25-member set: β −0.0061 per T. For row 52.
+
+> [q678] data.variant.credibleSets.rows[42].locus.rows[5] posteriorProbability 0.027417425780295872
+
+rs15285 at PIP 0.027 in it, and rs268 is not a member: one study, two coronary disease signals at LPL, rs268's set
+(q671) and this one. For row 52.

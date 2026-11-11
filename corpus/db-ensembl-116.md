@@ -1258,3 +1258,53 @@ C at 0.95 in EAS (q356): T is rare in East Asians while A is common, so the two 
 and the coding SNP's effects cannot be carried to East Asians through the lead. Wright's AncestryDNA SNPs tag the lead
 weakly: rs1464890 r² 0.40 (q350), rs2242487 0.33 (q351), rs12706910 0.22 (q352), rs13245505 0.24 (q353), each at D′
 1.00. For row 51.
+
+## Reading 2026-11-11, supplement
+
+> [q357] name rs268 MAF null var_class SNP source Variants (including SNPs and indels) imported from dbSNP most_severe_consequence missense_variant
+
+rs268 (`variation-rs268.json`): a missense variant, LPL's Asn291Ser by its usual name (the record names no protein
+change; Rosoff calls it exonic in LPL, pmid-37550455#q47). For row 52.
+
+> [q358] populations[33] frequency 0.01858 allele G population gnomADg:nfe allele_count 1264
+
+gnomAD genomes, non-Finnish Europeans: G 0.0186, so A 0.981: A/A about 96 in 100, A/G about 4 in 100, G/G about 3
+in 10,000 (derived, Hardy-Weinberg). For row 52.
+
+> [q359] populations[85] population 1000GENOMES:phase_3:EUR allele G frequency 0.0139165009940358 allele_count 14
+
+1000 Genomes EUR: G 0.0139 (14 copies). For row 52.
+
+> [q360] populations[83] frequency 1 allele A population 1000GENOMES:phase_3:EAS allele_count 1008
+
+1000 Genomes EAS: A fixed (G absent); gnomAD's African G is 0.003. The evidence and the variant are European. For
+row 52.
+
+> [q361] populations[78] frequency 0.00505050505050505 allele G population 1000GENOMES:phase_3:CEU allele_count 1
+
+1000 Genomes CEU: one copy of G among 198, so pairwise LD with rs268 from CEU (or GBR, also one copy) rests on one
+chromosome; the endpoint returned nothing for rs268 with rs15285 in CEU, GBR or EUR (`ld-rs268-rs15285`,
+`ld-gbr-…`, `ld-eur-…`), which at its 0.05 floor reads as no LD above it. For row 52.
+
+> [q362] most_severe_consequence 3_prime_UTR_variant name rs15285
+
+rs15285 (`variation-rs15285.json`): LPL 3′ UTR. For row 52.
+
+> [q363] populations[11] population gnomADg:nfe allele T frequency 0.292 allele_count 19840
+
+gnomAD genomes non-Finnish Europeans: T 0.292. For row 52.
+
+> [q364] populations[84] frequency 0.317097415506958 allele T population 1000GENOMES:phase_3:EUR allele_count 319
+
+1000 Genomes EUR: T 0.317. With rs268's G at 0.014, the largest r² two alleles of these frequencies can have is
+0.014 × 0.683 / (0.986 × 0.317), about 0.03 (derived), whichever alleles pair: rs268 and rs15285 are separate
+signals, as Open Targets' two separate coronary disease sets in one study also show (db-opentargets-26.09#q671,
+q678). For row 52.
+
+> [q365] [0] population_name 1000GENOMES:phase_3:CEU d_prime 1.000000 variation2 rs13702 r2 0.976479 variation1 rs15285
+
+rs15285 tags rs13702, LPL's other 3′ UTR SNP, at r² 0.98 (CEU). For row 52.
+
+> [q366] [0] variation2 rs328 r2 0.332365 variation1 rs15285 d_prime 0.999992 population_name 1000GENOMES:phase_3:CEU
+
+and rs328 (LPL Ser447Ter) at r² 0.33, D′ 1.0 (CEU). For row 52.
