@@ -29,16 +29,19 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   (`fetch-supp`, q17): its R2 column repeats Freq1 and its rsID/Proxy headers are swapped, so no r² is read from it.
   Wright's S8/S9 hold clumped "representative" SNPs only: a lead's absence there is not a null. Age MIDLIFE INFERRED
   (Joshi q9, at his SNP). Seed trade-off (hypothesised) not recorded.
-- **103** (2026-11-11), tier C re-tiered (seed A), advisor-checked. Healthspan genome-wide (Zenin, P 1.4e-11, its
+- **103** (2026-11-11), tier C re-tiered (seed A), a default asked of the lead. Healthspan genome-wide (Zenin, P 1.4e-11, its
   own signal: LD shadow from 38's lead 2.9 vs z 6.9), not replicated (P 0.146 in unrelated UK Biobank others). §4.5:
   healthspan scores only with a lifespan signal at least suggestive (P < 1e-5, FORMATS' band); none: Timmers 1.4e-4
   (summary statistics, pmid-30642433#q23), AncestryDNA mothers 3.3e-4 at rs3135006, which is r² 0.80 to rs1049053
   (Ensembl 116, cached by RM3: `corpus/db-ensembl-116.md`). Both lifespan results are shared with 38 (r² 0.32 between
   the leads; shadow 3.3 vs z 3.8) and unconditioned: independence unknown. HEALTHSPAN_ONLY is not a format token:
-  said in the verdict, asked of the lead. Rule settled: a genome-wide healthspan locus that §4.5 bars from scoring is
-  C (research view); R-TIER-4 bars A/B on a sub-genome-wide lifespan result. Phase from frequencies plus r² is
+  said in the verdict, asked of the lead. Default, not settled (asked of the lead with both options): a genome-wide
+  healthspan locus that §4.5 bars from scoring is C (research view), overturning the seed's B for the same case
+  (IRF4 35, TYR 66, DEF8 86 at seed B, HEALTHSPAN_ONLY candidates); the other reading keeps B on §4.1's A/B
+  criteria naming healthspan. The C row's genotypes keep protective/neutral (no rule forces neutral below D/legacy). Phase from frequencies plus r² is
   written as derived, never as a record. Mechanism general_ageing from Zenin's multimorbidity line (q11).
-- **38 corrected** (2026-11-11), the lead's review (handout 20261111T004405Z-review-38) applied. Still B, now for
+- **38 corrected** (2026-11-11), the lead's review (handout 20261111T004405Z-review-38) applied; superseded at
+  103: B on the single-study clause, the AncestryDNA tag being shared with 103 (r² 0.80 to its lead). Was B for
   §4.1's tag clause: Wright S8 (AncestryDNA mothers 1886-1940) has rs3135006 (A = dbSNP's minor T, other strand) at
   P 3.3e-4, S9 meta P 3.1e-5, het 0.32 (q23, q24); added as a nominal proxy study. Rules learned: search Wright S8/S9
   by position near a lead, not only by rsID; an r² the lead review gives is checked against Ensembl's 1000 Genomes LD

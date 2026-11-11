@@ -13,19 +13,19 @@ verdict_reason: >-
   Biobank and LifeGen), the rare T allele (7 %) adding 0.56 years per copy. Joshi 2017's rs34831921 (P 4.2e-8) is the
   same signal, 1000 Genomes EUR r² 0.97 with D′ 1 (Ensembl's LD, not yet a cached record), but in a subset of the same
   samples, so it does not replicate it; Pilling 2017's rs28383322 (P 5.3e-11, UK Biobank) is a weaker tag and is named
-  only. The independent replication is in AncestryDNA's mothers (Wright 2019, Supplemental Table 8): rs3135006, a tag
-  at r² 0.38 and D′ 1 whose minor T carries the lead's T, lengthens mothers' lives, P 3.3e-4, and with UK Biobank
-  reaches P 3.1e-5 with no heterogeneity (P 0.32). But rs3135006 tags row 103's healthspan lead rs1049053 more closely
-  (r² 0.80), and rs1049053 lies at r² 0.32 to this lead, so the AncestryDNA result is shared by the two rows and
-  cannot be assigned to this signal: it is kept as a study and does not replicate the lead. The lead itself has no row
-  in an independent sample. At the oldest
-  ages it leans the same way and does not pass: Deelen 2019's 90th and 99th percentiles give OR 1.05 and 1.07 (P 0.26,
+  only. In AncestryDNA's mothers (Wright 2019, Supplemental Table 8), a sample independent of UK Biobank and LifeGen,
+  rs3135006, a tag at r² 0.38 and D′ 1 whose minor T carries the lead's T, lengthens mothers' lives, P 3.3e-4, and
+  with UK Biobank reaches P 3.1e-5 with no heterogeneity (P 0.32). But rs3135006 tags row 103's healthspan lead
+  rs1049053 more closely (r² 0.80), and rs1049053 lies at r² 0.32 to this lead, so the AncestryDNA result is shared by
+  the two rows and cannot be assigned to this signal: it is kept as a study and not counted as this lead's
+  replication. The lead itself has no row in an independent sample. At the oldest ages it leans the same way and does not pass: Deelen 2019's 90th and 99th percentiles give OR 1.05 and 1.07 (P 0.26,
   0.24) at the lead, and Timmers 2019's longevity look-up reaches P 0.056 one-sided at CHARGE's tag rs3129720 (the
   same SNP as rs3135006 in effect, CEU r² 1.0). This is consistent with an effect that is largest in midlife and
   fades at the oldest ages (Joshi: larger on parents' deaths at 40-75 than after), and it is no red flag.
   Exceptional survival is 0: Joshi's CHARGE-EU 90+ gives P 0.003 at that tag, but the larger combined longevity
   samples, Timmers 2019's look-up at the tag and Deelen 2019 at the lead, do not pass. Healthspan agrees, in UK
-  Biobank: P 1.9e-7 at the lead (Zenin 2019's summary statistics), 2.7e-8 at Joshi's SNP. The locus acts through
+  Biobank: P 1.9e-7 at the lead (Zenin 2019's summary statistics), 2.7e-8 at Joshi's SNP; LD with row 103's stronger
+  healthspan lead alone would give a z of about 3.9 at this lead, against 5.2 observed, so part of it may be shared. The locus acts through
   immune disease, not general ageing: Timmers 2019 files it as autoimmune; Joshi finds associations with rheumatoid
   arthritis and Crohn's disease at his SNP, with no direction quoted, and reads the locus as disease susceptibility.
   The region holds other signals: Joshi finds no SNP in strong LD with the lead in CHARGE, and Zenin's healthspan lead
@@ -39,7 +39,7 @@ axes:
   pleiotropy: {values: ["mech:autoimmune"], cites: [pmid-30642433#q16, pmid-29030599#q14]}
   age_of_action: {value: MIDLIFE, confidence: DIRECT_WEAK, cites: [pmid-29030599#q9, pmid-29030599#q15]}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
-            cites: [pmid-30729179#q6, pmid-30729179#q5, pmid-30642433#q16, pmid-31484785#q23, pmid-31413261#q13, pmid-30642433#q17, pmid-29030599#q12]}
+            cites: [pmid-30729179#q6, pmid-30729179#q5, pmid-30729179#q10, pmid-30642433#q16, pmid-31484785#q23, pmid-31413261#q13, pmid-30642433#q17, pmid-29030599#q12]}
   actionability: {label: descriptive, cites: [pmid-29030599#q15]}
   context: {values: [eur_only_evidence], cites: [pmid-30642433#q16, pmid-31413261#q13]}
 flags:
@@ -202,5 +202,5 @@ studies:
     effect_allele: T
     direction: protective
     proxy_rsid: rs3135006
-    statistical_test: "Linear regression of mothers' lifespan on offspring dosage, AncestryDNA arm (Supplemental Table 8, raw P; genomic-control P 6.7E-04); with UK Biobank meta P 3.1E-05, heterogeneity P 0.32 (q24); rs3135006 tags the lead at r² 0.38, D′ 1 (1000 Genomes EUR, Ensembl), the lead's T on its T haplotype, and row 103's lead rs1049053 at r² 0.80 (db-ensembl-116#q1): shared with row 103, not a replication of this lead; N rounded in the source"
+    statistical_test: "Linear regression of mothers' lifespan on offspring dosage, AncestryDNA arm (Supplemental Table 8, raw P; genomic-control P 6.7E-04); with UK Biobank meta P 3.1E-05, heterogeneity P 0.32 (q24); rs3135006 tags the lead at r² 0.38, D′ 1 (1000 Genomes EUR, Ensembl), the lead's T on its T haplotype, and row 103's lead rs1049053 at r² 0.80 (db-ensembl-116#q1): shared with row 103, not counted as this lead's replication; N rounded in the source"
     curator: claude-opus-5-5

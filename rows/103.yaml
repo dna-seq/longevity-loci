@@ -13,14 +13,14 @@ verdict_reason: >-
   UK Biobank participants, unrelated to the discovery set, it leans the same way at P 0.146. Healthspan counts toward a
   tier only with a co-occurring lifespan signal of at least suggestive strength (§4.5, P < 1e-5), and none reaches
   it: Timmers 2019's million parents' lives give P 1.4e-4 at rs1049053, C on the long-lived side in both UK Biobank
-  and LifeGen, and AncestryDNA's mothers (Wright 2019), the one sample independent of UK Biobank, give P 3.3e-4 at its
+  and LifeGen, and AncestryDNA's mothers (Wright 2019), the one sample independent of both, give P 3.3e-4 at its
   close proxy rs3135006 (r² 0.80, its T riding with C), 3.1e-5 with UK Biobank. Both lifespan results are shared with
-  row 38: rs1049053 lies at r² 0.32 to that row's genome-wide lead, which alone would produce about the z of 3.3
-  expected against the 3.8 observed, and no cached source conditions one on the other, so whether this locus has a
+  row 38: rs1049053 lies at r² 0.32 to that row's genome-wide lead, and LD with that lead alone would give a z of about
+  3.3 at rs1049053, against 3.8 observed; no cached source conditions one on the other, so whether this locus has a
   lifespan effect of its own is unknown. A sub-genome-wide lifespan result never makes A or B (R-TIER-4), and a
   genome-wide result that cannot score leaves the research view's C. At the oldest ages Timmers 2019's longevity
   look-up at rs3129720, the same proxy (r² 0.80), leans the same way and does not pass (P 0.056 one-sided).
-  Deelen 2019 has no row near it. Zenin finds the locus associated with COPD, diabetes, cancer and dementia together
+  Deelen 2019 has no row for it or a close proxy. Zenin finds the locus associated with COPD, diabetes, cancer and dementia together
   and reads it as a possible part of a genetic signature of ageing, so the mechanism is filed as general ageing,
   pending a mediator. No gene is named (§4.2, §6.2: a gene only at E1/E2): Open Targets 26.09 holds no variant or
   credible set for rs1049053 and none in the MHC, so causal and effector confidence are unassessed (C4, E4; no flag,
@@ -107,7 +107,7 @@ studies:
     effect_unit: log hazard of the end of healthspan per T allele (positive = earlier)
     effect_allele: T
     direction: risk
-    statistical_test: "Replication (Table 2, βrep and prep), meta-analysis of the ancestry groups; threshold P < 0.004; the same side, not significant; sample and kinship check in q12, q13"
+    statistical_test: "Replication (Table 2, βrep and prep), meta-analysis of the ancestry groups; threshold P < 0.004; the same side, not significant; sample and kinship check in q12, q13; mixed ancestry, a null, so the row's evidence of an effect stays European"
     curator: claude-opus-5-5
   - rsid: rs1049053
     note: pmid-30642433
@@ -164,5 +164,5 @@ studies:
     effect_allele: T
     direction: protective
     proxy_rsid: rs3129720
-    statistical_test: "Figure 4—source data 1, one-sided P, the look-up Timmers 2019 ran for row 38's lead; rs3129720 is r² 0.80 to rs1049053 (db-ensembl-116#q2), its T assumed to ride with C as rs3135006's does (CEU r² 1.0 between the two, Ensembl, not cached); the sheet's R2 column repeats the allele frequency"
+    statistical_test: "Figure 4—source data 1, one-sided P, the look-up Timmers 2019 ran for row 38's lead; rs3129720 is r² 0.80 to rs1049053 (db-ensembl-116#q2), its T (0.239 in the sheet, the minor allele) riding with rs1049053's minor C, as r² 0.80 between minor alleles near 0.24 and 0.25 requires (derived, as db-ensembl-116 q5-q6); the sheet's R2 column repeats the allele frequency"
     curator: claude-opus-5-5
