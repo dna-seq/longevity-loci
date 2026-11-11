@@ -59,3 +59,6 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
 - Token for the polygon: the person's; on the desk as #251 (filed 2026-11-10, unattended). Default on silence: build and check locally, no rehearsal, nothing registered.
 - `first seating:` report to the seat-builder: sent.
 - On waking: read `docs/format08_reference/` (just-dna-format 0.8's longevity reference example and the compiler's longevitymap v2 shape audit; the lead, 639310707). It notes Timmers 2019 contradicting itself on effect alleles (639310710), which bears on LPA and CELSR2.
+- For the projection, on waking: rows at effector E3 name no gene (`gene: ""`, 57, 67, 80; requirements §4.2/§6.2),
+  and a `multivariate_healthspan_lifespan` study supports with allele, direction and P but no effect size (D15,
+  67's Timmers 2020). Check both land in 0.8's variants and studies tables as the format allows.
