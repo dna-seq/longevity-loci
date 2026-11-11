@@ -53,8 +53,10 @@ broke is in the curator's notes under "Pilot". The measurements stay out of the 
 2026-11-11: "Keep pacing/quota measures uncommited, only rules commited"); the rules they gave are in the curator's
 priming (9135a65). The person's answers, 2026-11-11: up to 80% of the weekly window; a re-tier is the lead's to
 read adversarially, not a question; RM4 yes, "as deep as neeed"; the requirements' silent cells by the advisor
-pattern. The self-compaction works, but the session then idles: until kit #409 lands, the lead wakes the curator with the
-next locus after each `done: <row>; compacting`. In hand: a ten-row run under that routine, measured again (the
+pattern. The person, 2026-11-11: "After 10 adjust pacing and go next 10 and so on unless blocked or I steer": the
+curator runs on in batches of ten; after each, the lead re-measures (tokens per row from the curator's transcript,
+the quota windows; the figures stay out of the repository) and sends any pacing change. The self-compaction works, but the session then idles: until kit #409 lands, a waker of the lead's (outside the
+repository) watches the curator's transcript for a compaction and wakes it 30 s later. In hand: a ten-row run under that routine, measured again (the
 person, 2026-11-11: "go with next 10 measurement on andjusted scenario, remeasure"); the adversarial read of 71
 and 67; RM4 and RM5.
 
