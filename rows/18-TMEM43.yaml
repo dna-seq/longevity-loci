@@ -11,7 +11,8 @@ verdict_reason: >-
   old against younger controls, which R-TIER-2 caps at C unless replicated (D22.1: it holds dataset 1's age
   threshold, 90 or more against under 75, as it holds a centenarian design), replicated only in another ancestry and
   weakly: Timmers 2019's European parental lifespan at the lead, one-sided P 0.028, with a powered European null at
-  Deelen beside it. That is §4.1's "ancestry-specific replication only" at most (D25.13), so B, not A. Liu 2021 compared Chinese of the CLHLS survey aged 90 or more (4,662) with controls under
+  Deelen beside it, a red flag, so `replication_failed` (D26.11, as row 31). That is §4.1's "ancestry-specific
+  replication only" at most (D25.13), so B, not A. Liu 2021 compared Chinese of the CLHLS survey aged 90 or more (4,662) with controls under
   75 (3,828) in dataset 1, and centenarians (1,105) with controls under 65 (1,450) in dataset 2, the paper's earlier
   GWAS less its overlap with dataset 1. T, the minor allele, goes with reaching old age: dataset 1 β 0.165 on the log
   odds (P 4.2e-7), dataset 2 β 0.081 (printed P 0.016), meta-analysis β 0.146, P 3.59e-8, the paper's genome-wide
@@ -19,19 +20,29 @@ verdict_reason: >-
   it; and dataset 1's custom chip took its first component, 11,893 SNPs, from dataset 2's own GWAS (whether the lead
   entered that way is not read). Table 1's row does not agree with itself: its β and SE give P about 0.054 for
   dataset 2 and about 4.8e-7 for the meta-analysis (0.146 / 0.029), and Table 2's sex-specific metas pool to β 0.147, SE 0.029, P about
-  3.5e-7, so the genome-wide call rests on the printed P alone, which the row reads (D17.3), and B rests on it: at about 4e-7
-  it would be suggestive, and the row C (R-TIER-4). At the oldest ages outside China it does not replicate, and the null is
+  3.5e-7. The discrepancy is dataset 2's printed P 0.016, which its β and SE put at about 0.054: pooled as z-scores
+  weighted by inverse SE, the printed per-dataset P values (4.24e-7 and 0.016) give about 4.6e-8 (derived), so the
+  printed 3.59e-8 follows from them, and the genome-wide call the row reads (D17.3) has that footing. Read from the
+  printed β and SE instead, the pooled P is about 3e-7, suggestive, and the row would be C (R-TIER-4). At the oldest ages outside China it does not replicate, and the null is
   informative: the variant is as common in Europeans (T 0.40) and tags XPC's missense variant as well, yet Deelen
   2019's 90th percentile gives β +0.007 (P 0.73; its confidence interval excludes both Liu's 0.146 and dataset 2's
-  0.081) and the 99th +0.005 (P 0.88): a powered null (Liu's β at Deelen's SE expects z about 7.4). It is not tier
-  D (D22.3), since the European look-up is not flat as §4.1's IL6 example is: all 17 of the lead's 22 proxies at r²
+  0.081) and the 99th +0.005 (P 0.88): a powered null (Liu's β at Deelen's SE expects z about 7.4). Both are log odds of
+  long-lived status, so no scale converts and D25.3's two calibrations do not arise: one-sided power about 1.00,
+  heterogeneity P about 7.5e-5 at the 90th (derived) and about 8e-4 at the 99th; at half Liu's effect (its SE kept)
+  the 90th's heterogeneity P is about 0.06. A red flag, and a row that counts one European look-up (Timmers, below)
+  cannot set the other aside, so the row carries `replication_failed` (D26.11). It is not tier
+  D (D22.3, D25.1 as amended): an independent scoring-class study is p < 0.05 in Liu's direction, and the European
+  look-up is not flat as §4.1's IL6 example is: all 17 of the lead's 22 proxies at r²
   ≥ 0.8 that Timmers 2019 holds lean to T (P 0.050 to 0.14), and Zenin's healthspan favours T at P 0.0035. Timmers 2019's parental lifespan favours T at the lead in both arms, two-sided P 0.057 (the paper's own look-up
   the same), one-sided 0.028 (D25.13): an independent scoring-class study on the same allele and side, so it lifts
-  R-TIER-2's cap; the 17 leaning proxies are the same signal, read once (D17.1). Zenin 2019's healthspan favours T
+  R-TIER-2's cap. Liu's own text calls the locus "not replicated", reading Timmers' 0.057 two-sided and Deelen's
+  P > 0.5; the row differs only in reading the replication one-sided, as D25.13 asks; the 17 leaning proxies are the same signal, read once (D17.1). Zenin 2019's healthspan favours T
   at P 0.0035, nominal, in the same UK Biobank, and replicates nothing on its own (D22.2). The European evidence is
   mixed: Deelen's powered null is in Europeans and in the discovery's own phenotype class, so this is a weak
   replication across ancestry. Lifespan is filed +; healthspan +, nominal;
-  exceptional survival + in Chinese only. The context is East Asian evidence (R-ANC-4). Liu's own survival analysis
+  exceptional survival + in Chinese only. The context is `ancestry_specific:eas` (R-ANC-4) despite the European
+  replication: that replication is weak and one-sided, and the European look-up in the discovery's own phenotype
+  class fails, so the effect at the size Liu reports is shown in East Asians only. Liu's own survival analysis
   of dataset 1 found nothing genome-wide beyond BRAF and BMPER; its value here (Table S16) is not read. Mechanism
   general ageing: the paper points to XPC, a nucleotide-excision-repair gene, and Parkinson's disease at P 0.045 is one uncorrected
   test, no trade-off. Causal C4 and effector E4, no gene named: no longevity, lifespan or healthspan credible set
@@ -52,6 +63,7 @@ axes:
   context: {values: ["ancestry_specific:eas"], cites: [pmid-33657282#q3, pmid-33657282#q8, pmid-31413261#q37, db-ensembl-116#q76, db-ensembl-116#q77]}
 flags:
   - {token: "PROTECT:PRESENCE", cites: [pmid-33657282#q2, db-ensembl-116#q76, db-ensembl-116#q77]}
+  - {token: replication_failed, cites: [pmid-31413261#q37, pmid-31413261#q38, pmid-33657282#q2]}
   - {token: "causal:C4", cites: [db-opentargets-26.09#q188, db-opentargets-26.09#q194, db-opentargets-26.09#q195, db-opentargets-26.09#q196, db-opentargets-26.09#q197]}
   - {token: "effector:E4", cites: [db-opentargets-26.09#q188, db-opentargets-26.09#q189, db-opentargets-26.09#q190, db-opentargets-26.09#q191, db-opentargets-26.09#q192, db-opentargets-26.09#q193, db-opentargets-26.09#q194, pmid-33657282#q7]}
 variants:
@@ -126,7 +138,7 @@ studies:
     effect_unit: log hazard protection per T allele in self (positive = longer life)
     effect_allele: T
     direction: protective
-    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), direction ++ in UK Biobank and LifeGen; same allele as Liu; two-sided P printed, one-sided 0.028 (derived, D25.13), a replication across ancestry; Liu's own look-up gives 0.057 (pmid-33657282#q8)"
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), direction ++ in UK Biobank and LifeGen; same allele as Liu; two-sided P printed, one-sided 0.028 (derived, D25.13), a replication across ancestry, counted as one (D26.11); `nominal` would break FORMATS' band for a printed two-sided P, put to the lead; Liu's own look-up gives 0.057 (pmid-33657282#q8)"
     curator: claude-opus-5-5
   - rsid: rs1043943
     note: pmid-30729179
