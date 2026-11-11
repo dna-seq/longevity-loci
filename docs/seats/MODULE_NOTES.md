@@ -64,6 +64,9 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
   67's Timmers 2020). Check both land in 0.8's variants and studies tables as the format allows. Likewise the repo's own study
   designs (`age_threshold_case_control`, D11; `current_age_quantitative`, 10 RABGAP1L) against the format's
   study_design vocabulary.
+- Proxy studies now recur (10 RABGAP1L's study at rs16847402 carries the proxy's C, 756730c), so the LPA finding
+  (a proxy's allele must not land on the lead's row) is general, not LPA's. Check 0.8's proxy rsid column takes
+  it. Effect alleles are harmonised to the lifespan-increasing allele (D17.4).
 - Plugin pinned at v0.48.6 (the liaison, f69789a; toolchain unchanged, format 0.7.1): `validate_module` returns
   `warnings_summary` and `carried`; the polygon's 409 is named as the instance's format skew; the GWAS fix
   (RM428) is on the compiler's main, unreleased. The new session after waking loads the new pin.
