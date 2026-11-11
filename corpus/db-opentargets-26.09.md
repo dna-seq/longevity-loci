@@ -2083,7 +2083,13 @@ causal and effector confidence could not be assessed. For row 41.
 
 > [q576] data.credibleSets count 0
 
+> [q577] data.study.credibleSets count 6
+
+> [q578] data.study.credibleSets count 2
+
 Open Targets 26.09 holds no variant record for rs1627804 (`6_107079224_C_A`, "data variant null", the text of q411;
 `variant-rs1627804.json`); a search for the rsID returns nothing (q575), as do searches for its proxies rs1630395,
 rs1618476 and rs36101665. The eight lifespan-class studies' credible sets hold none at the lead
-(`credibleSets-longevity8-6_107079224_C_A`, q576). So causal and effector confidence could not be assessed. For row 42.
+(`credibleSets-longevity8-6_107079224_C_A`, q576). Retried by Pilling's own studies: GCST006702 (age at death)
+has six sets (q577), led at 12_111621753, 15_78557437, 19_44908684, 6_160576086, 6_160591981 and 9_22103342;
+GCST006698 (top 10 %) two (q578), at 15_78557437 and 19_44908684; none at 6q21. So causal and effector confidence could not be assessed. For row 42.

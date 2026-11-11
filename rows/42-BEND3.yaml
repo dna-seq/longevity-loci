@@ -23,14 +23,15 @@ verdict_reason: >-
   about 0.71 and heterogeneity P about 0.34, so no red flag. Deelen 2019's percentiles lean C's way and are flat
   (90th P 0.49, 99th P 0.29; one-sided about 0.24 and 0.14); under D25.3 the 90th flags by APOE's factor (power
   0.98, heterogeneity P 0.034) and not by the loci's mean factor (power 0.45, P 0.44), and a flag that only one
-  calibration raises is no flag; the 99th flags under neither. FinnGen's death endpoint is null and leans the other
+  calibration raises is no flag; the 99th flags under neither (its APOE factor borrowed from the 90th's ε4
+  line, as at row 37; no 99th ε4 line is cached). FinnGen's death endpoint is null and leans the other
   way (A β −0.0035, P 0.64); under APOE's factor within FinnGen its power is about 0.67, short of 0.8 (heterogeneity
   P 0.026), so it is no red flag whatever D25.12's uncomputed second factor gives. Wright 2019's AncestryDNA fathers,
   at rs9384641 1.1 kb away, lean C's way (its C travels with the lead's C by the frequencies, derived; raw P 0.077,
   one-sided 0.038, about 0.052 after Wright's genomic control): not counted, as the tag's r² to the lead is 0.34 and
   it does not pass after genomic control. Healthspan is flat (Zenin 2019, P 0.95), so 0; exceptional survival is 0
-  on Deelen. Mechanism: ageing in general, because nothing assesses one; Open Targets has no record of the variant,
-  so causal confidence C4 and effector E4, and the catalog records no other trait for it or its proxies. BEND3's
+  on Deelen. Mechanism: ageing in general, because nothing assesses one; Open Targets has no record of the variant
+  and Pilling's two studies' credible sets (six and two) lie elsewhere, so causal confidence C4 and effector E4, and the catalog records no other trait for it or its proxies. BEND3's
   role in repressing ribosomal DNA is the authors' gene-level remark, not evidence at this SNP; `gene` is empty.
   Pleiotropy is not assessed. C/C is the reference: the most common genotype at gnomAD's non-Finnish European
   frequency (A 0.317: C/C about 47 in 100, A/C 43, A/A 10), so A/C and A/A carry the risk side. No PROTECT token, as
@@ -46,8 +47,8 @@ axes:
   actionability: {label: descriptive, cites: [pmid-29227965#q18]}
   context: {values: [eur_only_evidence], cites: [pmid-29227965#q16, pmid-30642433#q28, pmid-31413261#q103]}
 flags:
-  - {token: "causal:C4", cites: [db-opentargets-26.09#q411, db-opentargets-26.09#q576]}
-  - {token: "effector:E4", cites: [db-opentargets-26.09#q411, db-opentargets-26.09#q576]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q411, db-opentargets-26.09#q576, db-opentargets-26.09#q577, db-opentargets-26.09#q578]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q411, db-opentargets-26.09#q576, db-opentargets-26.09#q577, db-opentargets-26.09#q578]}
 variants:
   - rsid: rs1627804
     gene: ""
@@ -72,7 +73,7 @@ variants:
           You carry one copy of a less common version of this DNA region (about 43 in 100 people of European
           ancestry do). In a very large British study, people with this version tended to have parents who died a
           little younger. It is a likely finding, not a settled one: it was strong enough to count in one analysis of
-          one study, and separate groups of people leaned the same way without confirming it. The effect is small and
+          one study, and has not been confirmed in a separate group of people. The effect is small and
           it is a tendency, not destiny.
       - genotype: A/A
         state: risk
@@ -80,7 +81,7 @@ variants:
           You carry two copies of a less common version of this DNA region (about 10 in 100 people of European
           ancestry do). In a very large British study, each copy of this version went with parents who died a little
           younger. It is a likely finding, not a settled one: it was strong enough to count in one analysis of one
-          study, and separate groups of people leaned the same way without confirming it. The effect is small and it
+          study, and has not been confirmed in a separate group of people. The effect is small and it
           is a tendency, not destiny.
 studies:
   - rsid: rs1627804
@@ -187,5 +188,5 @@ studies:
     effect_unit: odds of reaching the 99th percentile, per C allele (95 % CI 0.97 to 1.10)
     effect_allele: C
     direction: protective
-    statistical_test: "Supplementary Data 1's look-up of Pilling's lead (q103), I² 0.3; the summary statistics (GWAS Catalog GCST008599) print A β −0.0348, SE 0.0327, effective N 4,524 (q105); one-sided about 0.14. D25.3 (derived): power 0.75 by APOE's factor, 0.25 by the mean factor; heterogeneity P 0.28 and 0.93; no red flag"
+    statistical_test: "Supplementary Data 1's look-up of Pilling's lead (q103), I² 0.3; the summary statistics (GWAS Catalog GCST008599) print A β −0.0348, SE 0.0327, effective N 4,524 (q105); one-sided about 0.14. D25.3 (derived): power 0.75 by APOE's factor (4.84, borrowed from the 90th's ε4 line, q82, as at row 37), 0.25 by the mean factor; heterogeneity P 0.28 and 0.93; no red flag"
     curator: claude-opus-5-5
