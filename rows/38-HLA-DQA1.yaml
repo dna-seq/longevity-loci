@@ -1,0 +1,171 @@
+# The seed list's locus 38, HLA-DQA1 (6p21.32, the HLA class II region between HLA-DRB1 and HLA-DQA1). Curated
+# 2026-11-11, the ten-row run's second row. Lead rs34967069 (Timmers 2019). The seed's other rsIDs are not shown to be
+# proxies of it: rs34831921 (Joshi 2017) and rs28383322 (Pilling 2017) have no r² to the lead in any cached source,
+# and rs9277988 (Rosoff 2023, mvAge) lies 700 kb away.
+locus_id: 38
+locus_name: HLA-DQA1
+verdict: kept
+verdict_reason: >-
+  Tier B, down from the seed's single-track A (§12): genome-wide significant, but no independent replication of the
+  lead. Timmers 2019 finds rs34967069 at P 4.3e-9 in about one million parents' lives (UK Biobank and LifeGen), the
+  rare T allele (7 %) adding 0.56 years per copy. Nearby leads are also genome-wide: Joshi 2017's rs34831921 (P
+  4.2e-8, in a subset of the same samples) and Pilling 2017's rs28383322 (P 5.3e-11, UK Biobank). Their LD with the
+  lead is not given in any cached source, and their frequencies differ (0.09 and 0.22 against 0.07). The region holds
+  many independent signals (Timmers 2019 counts at least 25 at HLA-DQA1), so they are named here, not scored. Outside
+  UK Biobank and LifeGen the lead itself is null: Deelen 2019's 90th and 99th percentiles give OR 1.05 and 1.07 (P
+  0.26, 0.24), the same side. The replication Joshi reports in CHARGE-EU 90+ (P 0.003) is at rs3129720, r² 0.39 to
+  his own lead. In Timmers 2019's longevity look-up the same SNP carries the lead's signal only weakly (discovery P
+  0.005) and reaches P 0.056 one-sided. These nulls are underpowered and on the lead's side, so they are no red flag.
+  Healthspan agrees, in UK Biobank: P 1.9e-7 at the lead (Zenin 2019's summary statistics), 2.7e-8 at Joshi's SNP.
+  The locus acts through immune disease, not general ageing: Timmers 2019 files it as autoimmune; Joshi finds
+  rheumatoid arthritis and Crohn's disease at his SNP, with a larger effect on deaths at 40-75 than after. No gene is
+  named (requirements §4.2, §6.2: a gene only at E1/E2): Open Targets 26.09 returns neither rsID and holds no lifespan
+  credible set in the region, so causal and effector confidence are unassessed (C4, E4; no flag, nothing to cite).
+  The seed's hypothesised autoimmune-infection trade-off is not recorded: no cached source tests it.
+axes:
+  tier: {value: B, cites: [pmid-30642433#q16, pmid-31413261#q13, pmid-29030599#q12, pmid-30642433#q17]}
+  mechanism: {value: immune_inflammation, cites: [pmid-30642433#q16, pmid-29030599#q14, pmid-29030599#q15]}
+  pleiotropy: {values: ["mech:autoimmune"], cites: [pmid-30642433#q16, pmid-29030599#q14]}
+  age_of_action: {value: MIDLIFE, confidence: INFERRED, cites: [pmid-29030599#q9, pmid-29030599#q15]}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
+            cites: [pmid-30729179#q6, pmid-30729179#q5, pmid-30642433#q16, pmid-31413261#q13]}
+  actionability: {label: descriptive, cites: [pmid-29030599#q15]}
+  context: {values: [eur_only_evidence], cites: [pmid-30642433#q16, pmid-31413261#q13]}
+flags:
+  - {token: "PROTECT:PRESENCE", cites: [pmid-30642433#q16]}
+variants:
+  - rsid: rs34967069
+    gene: ""
+    phenotype: HLA-DQA1/DRB1 region, autoimmune disease
+    trait_efo_id: EFO_0007796
+    effect_allele: T
+    effect_size: 0.5613
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: C/C
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA region, the one most people of European ancestry
+          have (about 86 in 100). It is the reference the other versions are compared with, so it neither raises
+          nor lowers your expected lifespan here. The region, on chromosome 6, holds immune-system genes (the HLA
+          genes) that help the body tell its own cells from germs, and it is not yet clear which gene matters. The
+          finding comes from people of European ancestry; less is known elsewhere.
+      - genotype: C/T
+        state: protective
+        conclusion: >-
+          You carry one copy of a less common version of this DNA region (about 13 in 100 people of European
+          ancestry do). The region holds immune-system genes (the HLA genes), and in large British and European
+          studies this version went with parents living on average about three months longer, and with staying
+          free of major disease a little longer. It may act through lower risk of autoimmune diseases such as
+          rheumatoid arthritis, mostly before age 75. It is a likely finding, not a settled one: it has not yet
+          been confirmed in a fully separate group of people. The effect is small and it is a tendency, not a
+          guarantee.
+      - genotype: T/T
+        state: protective
+        conclusion: >-
+          You carry two copies of a less common version of this DNA region (fewer than 1 in 100 people of European
+          ancestry do). The region holds immune-system genes (the HLA genes), and in large British and European
+          studies each copy went with parents living on average about three months longer, and with staying free
+          of major disease a little longer. It may act through lower risk of autoimmune diseases such as
+          rheumatoid arthritis, mostly before age 75. It is a likely finding, not a settled one: it has not yet
+          been confirmed in a fully separate group of people, and very few people carry two copies. The effect is
+          small and it is a tendency, not a guarantee.
+studies:
+  - rsid: rs34967069
+    note: pmid-30642433
+    quote: q16
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the 26 LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 1012240
+    sample_unit: lives
+    stat_significance: significant
+    p_value: "4.3E-09"
+    p_value_num: 4.3e-09
+    effect_size: 0.5613
+    effect_measure: beta
+    effect_unit: years of life per T allele in self (parental estimate doubled)
+    effect_allele: T
+    direction: protective
+    statistical_test: "Cox-residual GWAS, common effect sizes across sexes (Table 1); sex-specific model P 3.6E-09"
+    curator: claude-opus-5-5
+  - rsid: rs34967069
+    note: pmid-30729179
+    quote: q6
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: suggestive
+    p_value: "1.9E-07"
+    p_value_num: 1.9e-07
+    effect_size: -0.064
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per T allele (negative = later)
+    effect_allele: T
+    direction: protective
+    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), -log10 P 6.72; same sample as UK Biobank's parental arm, not a replication"
+    curator: claude-opus-5-5
+  - rsid: rs34967069
+    note: pmid-31413261
+    quote: q13
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's 18 discovery cohorts)
+    ancestry: [EUR]
+    n_cases: 11262
+    sample_size: 36745
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.2582"
+    p_value_num: 0.2582
+    effect_size: 1.047
+    effect_measure: OR
+    effect_unit: odds ratio of reaching the 90th percentile, per T allele
+    effect_allele: T
+    direction: protective
+    statistical_test: "Look-up of Timmers 2019's lead in Supplementary Data 1; same side, not nominal; I² 21.9 %"
+    curator: claude-opus-5-5
+  - rsid: rs34967069
+    note: pmid-31413261
+    quote: q13
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's 18 discovery cohorts)
+    ancestry: [EUR]
+    n_cases: 3484
+    sample_size: 28967
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.2431"
+    p_value_num: 0.2431
+    effect_size: 1.072
+    effect_measure: OR
+    effect_unit: odds ratio of reaching the 99th percentile, per T allele
+    effect_allele: T
+    direction: protective
+    statistical_test: "Look-up of Timmers 2019's lead in Supplementary Data 1; same side, not nominal; I² 0"
+    curator: claude-opus-5-5
+  - rsid: rs34967069
+    note: pmid-30642433
+    quote: q17
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: meta_analysis
+    population: European (the longevity GWAMAs of Deelen 2014 and Broer 2015, combined)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.0556"
+    p_value_num: 0.0556
+    effect_size: 0.01835
+    effect_measure: beta
+    effect_unit: log hazard ratio in self, recalibrated from longevity odds using APOE, per T allele at the proxy
+    effect_allele: T
+    direction: protective
+    proxy_rsid: rs3129720
+    statistical_test: "Figure 4—source data 1, one-sided P; rs3129720 is a weak tag of the lead (its own discovery P 0.00471); the sheet's R2 column repeats the allele frequency and is not read as an r²"
+    curator: claude-opus-5-5

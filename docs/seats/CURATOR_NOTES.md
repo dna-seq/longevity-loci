@@ -20,7 +20,15 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   compacting` to the lead, `watchdog.sh compact`, end the turn; the lead wakes the next. Stop at 80 % of the 7-day
   window or 95 % of the 5-hour window. After each tenth `done:`, re-measure the pacing and
   go on with the next ten, unless blocked or steered (the person, 2026-11-11, via the lead, 639316091: "After 10
-  adjust pacing and go next 10 and so on unless blocked or I steer"; this replaces the earlier pause after ten). Rows done in this run: 6 CELSR2 (1 of 10); the corrections of 71 (d44fd4a) and 67 (3dd792c) done, the E3 gene rule at 57 (8d27300) and 80 (728d78d); next 38 HLA-DQA1 by PROGRESS.
+  adjust pacing and go next 10 and so on unless blocked or I steer"; this replaces the earlier pause after ten). Rows done in this run: 6 CELSR2 (1 of 10), 38 HLA-DQA1 (2 of 10); the corrections of 71 (d44fd4a) and 67 (3dd792c) done, the E3 gene rule at 57 (8d27300) and 80 (728d78d), 67's MANOVA study added under D15 (a519ae4); next 81 FES/FURIN by PROGRESS.
+- **38 HLA-DQA1** (2026-11-11), tier B (seed A), advisor-checked. Lead rs34967069 (Timmers 2019 Table 1, q16). Rules
+  settled: in a multi-signal region (MHC), a seed rsID with no quoted r² to the lead is named in the verdict, never a
+  `proxy_rsid` (frequency bounds on r² move with the frequency source and are not written as findings); Joshi's
+  rs34831921 and Pilling's rs28383322 stay unscored. Open Targets 26.09 resolves neither rsID and has no lifespan set
+  in the MHC: C4/E4, no flag (nothing to cite), `gene: ""`. Timmers 2019's Figure 4 source data is cached
+  (`fetch-supp`, q17): its R2 column repeats Freq1 and its rsID/Proxy headers are swapped, so no r² is read from it.
+  Wright's S8/S9 hold clumped "representative" SNPs only: a lead's absence there is not a null. Age MIDLIFE INFERRED
+  (Joshi q9, at his SNP). Seed trade-off (hypothesised) not recorded.
 - **Before the next locus: the lead's corrections to 71 and 67**, one commit per row, from its handout (kept at
   `~/.local/state/agent-seat-blueprints/handouts/session-44d9cb42-a3f8-47e0-b7ab-a8dbd8338890/delivered/20261110T234346Z-review-71-67.md`;
   read it whole). In short: B stands at both because a powered non-replication in an independent sample
