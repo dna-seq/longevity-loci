@@ -1095,3 +1095,23 @@ to place the lead and its neighbours in them (GRCh37 = GRCh38 + 321,163 here) is
 rs9320648 at 118,690,014 in LifeGen (pmid-30642433#q225) and Zenin (pmid-30729179#q67), at 118,368,851 in FinnGen's
 GRCh38 file (db-finngen-r11#q19). The three neighbours were found from the deposit's GRCh37 positions by that offset
 (`overlap-6-*.json`), and their alleles match the deposit's variant ids. For row 44.
+
+## Reading 2026-11-11, record
+
+> [q304] mappings[0] location 6:126665850-126665850 start 126665850 allele_string A/C/G/T coord_system chromosome ancestral_allele G end 126665850 assembly_name GRCh38 seq_region_name 6 strand 1
+
+> [q305] mappings[0] allele_string A/C/G/T assembly_name GRCh37 coord_system chromosome end 126986996 strand 1 ancestral_allele G seq_region_name 6 start 126986996 location 6:126986996-126986996
+
+> [q306] allele_count 242 allele A frequency 0.240556660039761 population 1000GENOMES:phase_3:EUR
+
+> [q307] allele_count 24 allele A frequency 0.0238095238095238 population 1000GENOMES:phase_3:EAS
+
+> [q308] frequency 0.2511 population gnomADg:nfe allele_count 17060 allele A
+
+> [q309] allele A allele_count 4476 population gnomADg:afr frequency 0.1079
+
+rs1262476 (`variation-rs1262476.json`, `variation-grch37-rs1262476.json`): GRCh38 6:126,665,850 (q304), GRCh37
+6:126,986,996 (q305), the position Deelen, LifeGen and Zenin print. The reference is A, the ancestral allele G. A
+is 0.24 in 1000 Genomes Europeans (q306) and 0.25 in gnomAD's non-Finnish Europeans (q308), 0.024 in East Asians
+(q307), and about 0.11 in gnomAD's African genomes (q309); 0.19 in Finns (gnomAD). G/G is the commonest
+genotype in Europeans (about 0.57, derived). For row 45.

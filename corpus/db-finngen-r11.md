@@ -125,3 +125,14 @@ FinnGen r11's "Death" at row 44's lead (GRCh38 6:118,368,937; `finngen_R11_DEATH
 no line; the file runs from 118,368,851 (q19) to 118,369,099 (q20) across it, though it carries variants down to
 an alternative frequency of 2.5e-5 nearby. T is absent in gnomAD's Finns (db-ensembl-116, row 44's reading).
 Untested, not null.
+
+## Reading 2026-11-11, supplement
+
+> [q21] 6	126665850	A	G	rs1262476	VIM2P	0.284029	0.546637	0.00989393	0.00923535	0.798321	0.799601	0.798161
+
+FinnGen r11's "Death" at row 45's lead (GRCh38 6:126,665,850; `finngen_R11_DEATH.tsv.gz`, `rows-b1d83c72`): G (alt,
+0.80) β +0.0099 (SE 0.0092) on the log hazard of death, P 0.28; per A −0.0099, A's side longer-lived, one-sided
+P 0.14 (derived). D21 under D25.3 (derived), Deelen's European 90th β +0.0913 (pmid-31413261#q115) carried to
+Timmers' scale and into FinnGen by APOE's factor here (0.99, q4 against pmid-30642433#q90): by APOE's factor (4.84)
+expected A −0.0187, one-sided power 0.65, heterogeneity P 0.39, no flag; by the loci's mean factor (0.4175) expected
+−0.0447, power 1.00, heterogeneity P 0.015, a flag. A flag under one calibration only is no flag. For row 45.

@@ -1027,3 +1027,27 @@ For row 43.
 
 The catalog's associations for rs76888380 (`assoc-rs76888380.json`): none (q302). Park 2025 reported no 6q22.31
 locus (pmid-40021682#q40), and the catalog holds nothing else at the variant.
+
+## Reading 2026-11-11, record
+
+> [q303] page size 100 totalElements 4 totalPages 1 number 0
+
+> [q304] or_value 1.12 beta - p_value 1e-06 accession_id GCST008600 pubmed_id 31413261 first_author Deelen J
+
+> [q305] _embedded.associations[1].snp_effect_allele[0] rs1262476-A
+
+> [q306] beta 0.104 unit increase p_value 3.0000000000000004e-09 accession_id GCST002496 pubmed_id 24945404 first_author Kemp JP
+
+> [q307] _embedded.associations[3].snp_effect_allele[0] rs1262476-G
+
+> [q308] _embedded.associations[3].reported_trait[0] Bone mineral density (paediatric, upper limb)
+
+> [q309] _embedded.associations[0].reported_trait[0] Attention deficit hyperactivity disorder or autism spectrum disorder or intelligence (pleiotropy)
+
+> [q310] _embedded.associations[0].snp_effect_allele[0] rs1262476-?
+
+The catalog's associations for rs1262476 (`assoc-rs1262476.json`): four (q303). Deelen 2019's trans-ethnic 90th
+percentile record (GCST008600), A OR 1.12, P 1e-6 (q304, q305; pmid-31413261#q110). Kemp 2014's paediatric upper-limb
+bone density (ALSPAC and Generation R, about 9,400 children; GCST002496), G β +0.104 SD, P 3e-9 (q306 to q308), and a
+second line at P 4e-8: so A, the longer-life allele, goes with lower bone density in children. Rao 2022's ADHD,
+autism or intelligence pleiotropy scan, P 9e-9, no allele (q309, q310). For row 45.

@@ -2169,3 +2169,23 @@ the lead.
 Both sets' QTL colocalisations (`coloc-e2476c3f588e5c6ab56d35440181044a.json` for the whole cohort, q598;
 `coloc-217d1f0b0a39b481db78238a0fcb6cd0.json` for the women, the same line): none, in any QTL type. PLN's 0.77 is
 L2G alone; no rival gene passes L2G (SLC35F1 0.20) or colocalises (D24).
+
+## Reading 2026-11-11, record
+
+> [q599] data.variant id 6_126665850_A_G referenceAllele A alternateAllele G
+
+> [q600] data.variant.credibleSets count 11
+
+> [q601] data.variant.credibleSets.rows[2].study traitFromSource Attention deficit hyperactivity disorder or autism spectrum disorder or intelligence (pleiotropy) projectId GCST nSamples 371591 nCases 38564
+
+> [q602] data.variant.credibleSets.rows[7].study traitFromSource Bone mineral density (paediatric, upper limb) projectId GCST nSamples 9416 nCases 0
+
+> [q603] data.variant.credibleSets.rows[10].study traitFromSource Sitting height (UKB data field 20015) projectId GCST nSamples 419233 nCases 0
+
+Row 45's lead rs1262476 (`variant-6_126665850_A_G-all.json`; under G>A Open Targets holds no record, as the reference
+is A): eleven credible sets (q600), none of lifespan, longevity, healthspan or survival. It leads two PICS sets, Rao's
+ADHD/autism/intelligence scan (PIP 0.24, q601) and Kemp's paediatric bone density (PIP 0.25, q602), and sits at PIP
+0.03 to 0.15 in sets of leg and arm fat, BMI, femur-neck bone density, sitting height (q603), amlodipine
+prescriptions and a HipSci exon QTL, most led by 6:126,727,085 and 6:126,727,464 (L2G CENPW 0.25 to 0.75, RSPO3
+0.58 in the height set). With no lifespan-class set, causal and effector confidence are C4 and E4, and no gene is
+named (D24). For row 45.
