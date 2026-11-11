@@ -1542,3 +1542,66 @@ lipid fractions in VLDL and HDL, eGFR (0.95), depression and major depression (0
 rs7676745 (4_8563820_G_A): no credible set of the eight lifespan, healthspan, longevity and current-age studies
 holds it (`credibleSets-longevity8-4_8563820_G_A.json`), and Open Targets 26.09 has no record of the variant at all
 (`variant-4_8563820_G_A.json`), so no locus-to-gene score or colocalisation: causal C4, effector E4. For row 26.
+
+## Reading 2026-11-11, record
+
+> [q412] data.meta.dataVersion year 26 month 09 data.credibleSets count 0
+
+> [q413] data.study.credibleSets count 26
+
+> [q414] data.study.credibleSets count 16
+
+> [q415] data.variant.credibleSets count 103
+
+> [q416] data.variant.credibleSets.rows[85] studyLocusId d9b910e8399daa17a3ff4c661f7db5db pValueMantissa 7 pValueExponent -18 beta -0.0166947 finemappingMethod PICS
+
+> [q417] data.variant.credibleSets.rows[85].study id GCST90435415 traitFromSource Systolic blood pressure studyType gwas
+
+> [q418] data.variant.credibleSets.rows[85].variant id 4_38383858_G_A
+
+> [q419] data.variant.credibleSets.rows[8] studyLocusId 1b218179e5f97ae2ed4412930f03f923 pValueMantissa 1 pValueExponent -12 beta -0.0148223 finemappingMethod PICS
+
+> [q420] data.variant.credibleSets.rows[8].study id GCST90435414 traitFromSource Diastolic blood pressure studyType gwas
+
+> [q421] data.variant.credibleSets.rows[8].variant id 4_38383858_G_A
+
+> [q422] data.credibleSet studyLocusId 594361228de1ed40760b004fe16d5198 finemappingMethod PICS confidence PICS fine-mapped credible set extracted from summary statistics pValueMantissa 3.321000099182129 pValueExponent -15 beta -0.0133237035996555
+
+> [q423] data.credibleSet.variant id 4_38385454_T_G
+
+> [q424] data.credibleSet.study id GCST90624049 traitFromSource Frailty (Factor 3 - Multimorbidity) pubmedId 40759756 publicationFirstAuthor Foote IF publicationDate 2025-08-04 nSamples 699030
+
+> [q425] data.credibleSet.locus.rows[0] posteriorProbability 0.04307645512305034 r2Overall 0.9853064400822061
+
+> [q426] data.credibleSet studyLocusId e3b10dba8389e17b4dbbbf76fca189b4 finemappingMethod SuSiE-inf confidence SuSiE fine-mapped credible set with out-of-sample LD pValueMantissa 4.064330101013184 pValueExponent -111 beta 0.012162147718968522
+
+> [q427] data.credibleSet.study id GCST90691825 traitFromSource Lymphocyte percentage (UKB data field 30180) pubmedId 40968291 publicationFirstAuthor Karczewski KJ publicationDate 2025-09-18 nSamples 407282
+
+> [q428] data.credibleSet.locus.rows[0] posteriorProbability 0.024664941272447127 r2Overall null
+
+> [q429] data.credibleSet.colocalisation.rows[19] h4 0.9920087358110032 clpp 0.10170623637098505 colocalisationMethod COLOC_PIP_ECAVIAR
+
+> [q430] data.credibleSet.colocalisation.rows[19].otherStudyLocus.study id GCST90310196 traitFromSource Systolic blood pressure (UKB data field 4080, 93, 6153 ,6177) studyType gwas
+
+> [q431] data.credibleSet.l2GPredictions.rows[0] score 0.757474958896637 data.credibleSet.l2GPredictions.rows[0].target approvedSymbol KLF3
+
+> [q432] data.variant.alleleFrequencies[2] populationName nfe_adj alleleFrequency 0.5372196385471243
+
+> [q433] data.variant.alleleFrequencies[4] populationName fin_adj alleleFrequency 0.41058221126493455
+
+rs17499404 (LINC02513, 4_38383858_G_A), for row 27. No credible set of the eight lifespan, healthspan, longevity
+and current-age studies holds it (q412, `credibleSets-longevity8-4_38383858_G_A.json`). Checked because the GWAS
+Catalog names it the top hit of both mvAge (GCST90321079) and Timmers 2020 (GCST011100): mvAge's 26 sets have none on
+4p14 (its chromosome-4 sets lead at 4:3.11 Mb and 4:67.0 Mb; q413, `study-sets-GCST90321079.json`), and Timmers
+2020's 16 sets have none on chromosome 4 (q414, `study-sets-GCST011100.json`). So causal C4 and effector E4 by the
+longevity-set rule. The variant sits in 103 other sets (q415), nearly all blood pressure and hypertension. Two are
+led by the variant itself, Shi 2024's (PICS): systolic pressure β −0.0167 per A, P 7 × 10⁻¹⁸ (q416-q418), and
+diastolic β −0.0148 per A, P 1 × 10⁻¹² (q419-q421): A lowers blood pressure. Foote 2025's frailty multimorbidity
+factor (GCST90624049, PMID 40759756, title-checked; n 699,030, its overlap with UK Biobank not read; PICS) is
+led by rs2291433 (r² 0.985 here, 0.996 in 1000 Genomes; its G is the lead's A by phase, db-ensembl-116#q140-q142):
+β −0.0133 per G, P 3 × 10⁻¹⁵, G less frail (q422-q425), genome-wide and healthspan-class (D23); the lead's PIP in it
+is 0.043. Lymphocyte percentage (Karczewski 2025, GCST90691825; SuSiE-inf) is the locus's strongest set, P 4 × 10⁻¹¹¹,
+led by rs6812640 (the lead's PIP 0.025, q426-q428), and it colocalises with the blood-pressure sets (systolic, H4
+0.99, q429-q430), so blood pressure and the lymphocyte share one signal; its direction is not phased here.
+Locus-to-gene on these sets is KLF3's (0.76 on the frailty set, q431; 0.75 on the lymphocyte set), not a longevity
+set's, so it is named in prose only. A frequencies: q432, q433.

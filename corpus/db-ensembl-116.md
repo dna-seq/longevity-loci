@@ -514,3 +514,30 @@ in 100, A/G about 8, A/A about 0.2. Phase of the neighbours, by frequency and r�
 the lead's A at 0.044 and rs10009267's C at 0.037 (pmid-30642433#q75), the coupled phase allows r² up to 0.83 and the
 opposite phase at most 0.002, so the observed 0.48 puts C with A; rs10022617's G at 0.036 (q74 there) likewise
 (0.83 against 0.002, observed 0.45), G with A. For row 26.
+
+## Reading 2026-11-11, record
+
+> [q134] populations[76] frequency 0.544731610337972 population 1000GENOMES:phase_3:EUR allele A allele_count 548
+
+> [q135] populations[77] allele_count 458 allele G population 1000GENOMES:phase_3:EUR frequency 0.455268389662028
+
+> [q136] populations[72] frequency 0.420634920634921 population 1000GENOMES:phase_3:EAS allele A allele_count 424
+
+> [q137] mappings[0] start 38383858 strand 1 coord_system chromosome allele_string G/A/C location 4:38383858-38383858 end 38383858 ancestral_allele G assembly_name GRCh38 seq_region_name 4
+
+> [q138] [0] r2 0.996000 variation1 rs17499404 d_prime 1.000000 population_name 1000GENOMES:phase_3:EUR variation2 rs2291435
+
+> [q139] [0] population_name 1000GENOMES:phase_3:EUR variation2 rs13104866 variation1 rs17499404 r2 0.795930 d_prime 0.926672
+
+> [q140] [0] r2 0.996000 variation2 rs2291433 variation1 rs17499404 d_prime 1.000000 population_name 1000GENOMES:phase_3:EUR
+
+> [q141] populations[83] allele_count 459 allele T frequency 0.456262425447316 population 1000GENOMES:phase_3:EUR
+
+> [q142] populations[84] allele_count 547 allele G frequency 0.543737574552684 population 1000GENOMES:phase_3:EUR
+
+rs17499404 (LINC02513), for row 27: 4:38,383,858 (GRCh38), G/A, G ancestral. A is 0.545 in 1000 Genomes Europeans
+(gnomAD non-Finnish 0.537, Finnish 0.41) and 0.42 in East Asians, so the variant is common everywhere. Under
+Hardy-Weinberg in Europeans: A/A about 30 in 100, A/G about 50, G/G about 21. Linkage disequilibrium (EUR):
+rs2291435 (Ehret 2016's blood-pressure SNP) r² 0.996; rs2291433 (the frailty set's lead, Wright's S9 SNP) r² 0.996;
+rs13104866 (Hoffmann 2016's) r² 0.80. Phase of rs2291433, by frequency and r² ceilings: its G (0.544) against the
+lead's A (0.545) allows r² up to about 1.0 coupled and 0.70 opposed, so the observed 0.996 puts G with A.

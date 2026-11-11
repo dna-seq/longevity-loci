@@ -620,3 +620,22 @@ Row 26 (GPR78). associations-rs7676745: one record.
 The Catalog's only association for rs7676745 is Deelen 2019's trans-ethnic 90th percentile result (GCST008600,
 P 2e-7, OR 1.49 per G, the inverse of Table 4's 0.67 per A; pmid-31413261#q62), not the European discovery's 4.3e-8.
 No other trait is recorded for the variant. For row 26.
+
+## Reading 2026-11-11, record
+
+> [q189] _embedded.associations[3] association_id 131476387 risk_frequency NR pvalue_description pvalue_mantissa 4 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.0036-0.0077] beta 0.00564864 unit decrease p_value 4e-08 accession_id GCST90321079 pubmed_id 37550455 first_author Rosoff DB
+
+> [q190] _embedded.associations[3].snp_effect_allele[0] rs17499404-G
+
+> [q191] _embedded.associations[4] association_id 62271276 risk_frequency 0.5367 pvalue_description pvalue_mantissa 4 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range - beta - p_value 4e-08 accession_id GCST011100 pubmed_id 32678081 first_author Timmers PRHJ
+
+> [q192] _embedded.associations[4].snp_effect_allele[0] rs17499404-A
+
+> [q193] _embedded.associations[0].reported_trait[0] Blood cell traits latent factor 9 (white cell)
+
+> [q194] page size 50 totalElements 5 totalPages 1 number 0
+
+Row 27 (LINC02513). associations-rs17499404: five records. Rosoff 2023's mvAge (G "unit decrease", P 4e-8;
+q189, q190) and Timmers 2020's multivariate scan (A, P 4e-8; q191, q192); Shi 2024's systolic (P 7e-18) and
+diastolic (P 1e-12) pressure, allele unstated (their direction is read from Open Targets' sets led by the variant,
+db-opentargets-26.09#q416-q421); a white-cell latent factor (Zhou 2025, P 6e-10, allele unstated; q193).
