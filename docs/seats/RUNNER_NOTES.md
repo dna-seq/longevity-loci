@@ -22,5 +22,6 @@ None.
 ## To file
 
 - kit #398, the take refused for a seat the clone declares: filed by the lead, nothing more to add here.
-- kit #410 filed 2026-11-10: the `job-watch` recipe wakes on watch-job's armed and RUNNING lines. Meanwhile arm with
-  `until-event.sh --skip 'watch armed| RUNNING on ' -- env JOB=<id> LOG=<log> bash …/watch-job.sh`.
+- kit #410 fixed in v0.1.182: the one-shot recipe takes `ENDS=1` (`until-event.sh -- env JOB=<id> ENDS=1 bash …/watch-job.sh`).
+  The prefix watcher (`[seat.runner.watch.jobs]`, kit #380) asked of the lead 2026-11-11 for the seat table; until it
+  lands, arm the one-shot recipe after each sbatch.
