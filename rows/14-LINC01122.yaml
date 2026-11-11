@@ -16,8 +16,8 @@ verdict_reason: >-
   healthier-ageing side); Rosoff lists it as novel, more than 1 Mb from every locus of the five input studies.
   Timmers 2019's million parents' lives are the co-occurring lifespan study: A lengthens life at P 2.3e-5, nominal,
   UK Biobank and LifeGen on the same side. Healthspan agrees nominally: A delays the end of healthspan in Zenin
-  2019's UK Biobank (P 0.033). Exceptional survival is 0: Deelen 2019's summary statistics lean to A at the 90th
-  (P 0.18) and 99th percentiles (P 0.060) and pass at neither. All three are inputs to mvAge (Deelen through its 90th, whose cases hold the 99th's), so
+  2019's UK Biobank (P 0.033). Exceptional survival is +, at one percentile: Deelen 2019's summary statistics lean to A at the 90th (P 0.18,
+  one-sided 0.09, not passing) and pass at the 99th read one-sided (two-sided P 0.060, one-sided 0.030, D25.13). All three are inputs to mvAge (Deelen through its 90th, whose cases hold the 99th's), so
   nothing here replicates it; Wright 2019's AncestryDNA mothers have a SNP 0.25 Mb away at genomic-control P 4.5e-5,
   but no LD to the lead is known, so it is not read. The Q test (P 0.56) finds no sign that the SNP acts off the
   common factor. Mechanism: metabolism. At the lead itself the longer-life A lowers type 2 diabetes (β −0.036 per
@@ -41,7 +41,7 @@ axes:
   mechanism: {value: metabolism, cites: [pmid-37550455#q10, db-opentargets-26.09#q116, db-opentargets-26.09#q122, db-opentargets-26.09#q123, db-opentargets-26.09#q124, db-gwascatalog-2026.10.29#q109, db-gwascatalog-2026.10.29#q111, db-gwascatalog-2026.10.29#q112, db-gwascatalog-2026.10.29#q114, db-gwascatalog-2026.10.29#q115, db-gwascatalog-2026.10.29#q117, db-opentargets-26.09#q125, db-opentargets-26.09#q127, db-opentargets-26.09#q129, db-ensembl-116#q54, db-ensembl-116#q55]}
   pleiotropy: {values: ["mech:diabetes", "mech:adiposity", broad], cites: [pmid-37550455#q10, db-opentargets-26.09#q116, db-opentargets-26.09#q123, db-opentargets-26.09#q126]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
             cites: [pmid-30729179#q26, pmid-30642433#q51, pmid-31413261#q29, pmid-31413261#q30, pmid-37550455#q10]}
   actionability: {label: descriptive, cites: [pmid-37550455#q10, db-opentargets-26.09#q116, db-opentargets-26.09#q122]}
   context: {values: [eur_only_evidence], cites: [pmid-37550455#q10, pmid-30642433#q51]}
@@ -171,5 +171,5 @@ studies:
     effect_unit: log odds of reaching the 99th percentile, per A allele
     effect_allele: A
     direction: protective
-    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), effective N 4,524; its cases a subset of the 90th's, mvAge's input, so not a replication"
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), effective N 4,524; two-sided P printed, one-sided 0.030 (derived, D25.13); its cases a subset of the 90th's, mvAge's input, so not a replication"
     curator: claude-opus-5-5

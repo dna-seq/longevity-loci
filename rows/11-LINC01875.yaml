@@ -18,14 +18,14 @@ verdict_reason: >-
   4e-8 (GWAS Catalog record; the paper's text does not list the SNP). The one independent sample replicates at a third
   SNP: in Wright 2019's AncestryDNA fathers rs2867105 (r² 0.86 to the lead, 0.77 to rs66906321; its minor allele
   riding with A, derived) goes with longer life (genomic-control P 2.2e-3, born 1886-1940; 6.2e-4, born 1886-1918),
-  the mothers on the same side (P 0.058), with no heterogeneity against UK Biobank (P 0.18, 0.61). A's first condition
+  the mothers on the same side (P 0.058, one-sided 0.029, D25.13), with no heterogeneity against UK Biobank (P 0.18, 0.61). A's first condition
   fails (§4.1, D17.3, D18.3): at the lead, Timmers' own call is 5.8e-8 (the paper's P, not a summary-statistics proxy
   it never reports), and mvAge is a multivariate result, not one of the lifespan, longevity, parental-lifespan or
   healthspan phenotypes A names. B's clause for a replicated locus whose reported SNP is a tag fits besides: every
   genome-wide and replicating value sits at a proxy rather than the lead, no lifespan credible set exists to place the
-  lead, the paper's own reading puts the locus below genome-wide in the conventional test, and the longevity look-ups
-  are null on the same side (Timmers 2019's replication in Deelen 2014 and Broer 2015, P 0.41; Deelen 2019's 90th and
-  99th percentiles, P 0.21 and 0.061). Healthspan is null (Zenin 2019, P 0.48 at the lead). Two other AncestryDNA SNPs
+  lead, the paper's own reading puts the locus below genome-wide in the conventional test, and the longevity look-ups lean the same side without settling it (Timmers 2019's replication in Deelen 2014 and
+  Broer 2015, P 0.41; Deelen 2019's 90th and 99th percentiles, P 0.21 and 0.061, the 99th passing only read one-sided,
+  0.031, D25.13). Healthspan is null (Zenin 2019, P 0.48 at the lead). Two other AncestryDNA SNPs
   lie within 30 kb. rs4640417 (r² 0.11 to the lead, D′ 1.00) carries the lead's A wholly on its own common A (derived
   from the frequencies), and its G shortens mothers' and fathers' lives (P 8.7e-5 and 5.5e-4): the same side, too
   weakly tied to the lead to count as a proxy. rs10153797 (fathers, P 9.2e-4) is unknown: Ensembl returned no LD with
@@ -49,7 +49,7 @@ axes:
   mechanism: {value: metabolism, cites: [pmid-30642433#q38, db-gwascatalog-2026.10.29#q61, db-gwascatalog-2026.10.29#q62, db-opentargets-26.09#q89, db-opentargets-26.09#q90, db-opentargets-26.09#q91]}
   pleiotropy: {values: ["mech:adiposity", broad, tradeoff], cites: [pmid-30642433#q38, db-gwascatalog-2026.10.29#q61, db-gwascatalog-2026.10.29#q63, db-gwascatalog-2026.10.29#q65, db-gwascatalog-2026.10.29#q67, db-opentargets-26.09#q89]}
   age_of_action: {value: MIDLIFE, confidence: DIRECT_WEAK, cites: [pmid-30642433#q115, pmid-30642433#q116, pmid-30642433#q117, pmid-30642433#q118, pmid-30642433#q119, pmid-30642433#q120, pmid-30642433#q121]}
-  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "0",
+  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "+",
             cites: [pmid-30729179#q22, pmid-30642433#q38, pmid-30642433#q40, pmid-31484785#q35, pmid-30642433#q41, pmid-31413261#q20]}
   actionability: {label: descriptive, cites: [pmid-30642433#q38, db-gwascatalog-2026.10.29#q63, db-gwascatalog-2026.10.29#q64]}
   context: {values: [eur_only_evidence], cites: [pmid-30642433#q39, pmid-31484785#q35, pmid-31413261#q20]}
@@ -150,7 +150,7 @@ studies:
     effect_unit: z-scored fathers' lifespan per A allele of rs2867105 as printed, the reverse strand of T (positive = longer)
     effect_allele: A
     direction: protective
-    statistical_test: "Supplemental Table 8, genomic-control P, the paper's own call (D17.3); raw P 0.0008799; fathers 1886-1918 genomic-control P 6.2e-4, raw 3.6e-4 (q34); rs2867105 r² 0.86 to rs6744653, 0.77 to rs66906321 (db-ensembl-116#q29, q30), its T (Wright's A) with A by EUR frequency (derived); S9 mothers P 0.058 same side; heterogeneity against UK Biobank P 0.18 (fathers) and 0.61 (mothers) (q36, q37)"
+    statistical_test: "Supplemental Table 8, genomic-control P, the paper's own call (D17.3); raw P 0.0008799; fathers 1886-1918 genomic-control P 6.2e-4, raw 3.6e-4 (q34); rs2867105 r² 0.86 to rs6744653, 0.77 to rs66906321 (db-ensembl-116#q29, q30), its T (Wright's A) with A by EUR frequency (derived); S9 mothers P 0.058 same side (one-sided 0.029, derived, D25.13); heterogeneity against UK Biobank P 0.18 (fathers) and 0.61 (mothers) (q36, q37)"
     curator: claude-opus-5-5
   - rsid: rs6744653
     note: pmid-31413261
@@ -167,7 +167,7 @@ studies:
     effect_unit: odds of survival to the 90th percentile per A allele
     effect_allele: A
     direction: protective
-    statistical_test: "Deelen 2019's Supplementary Data 1 look-up of Timmers 2019's TMEM18 SNP; 99th percentile OR 1.074 (1.00-1.16), P 0.061; I² 4.7 and 25.3"
+    statistical_test: "Deelen 2019's Supplementary Data 1 look-up of Timmers 2019's TMEM18 SNP; 99th percentile OR 1.074 (1.00-1.16), P 0.061, two-sided P printed, one-sided 0.031 (derived, D25.13); I² 4.7 and 25.3"
     curator: claude-opus-5-5
   - rsid: rs6744653
     note: pmid-30729179

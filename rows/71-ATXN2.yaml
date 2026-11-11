@@ -9,9 +9,8 @@ verdict_reason: >-
   significant for parental lifespan (Timmers 2019, P 1.0e-12; Pilling 2017, P 3.4e-14), and replicated with the same
   allele outside UK Biobank, in LifeGen with UK Biobank's lives removed (Pilling's rs7137828, P 0.028, Timmers 2019's
   Figure 2 source data) and in Deelen 2019's 90th and 99th percentiles (P 0.026 and 0.023; low heterogeneity, and its
-  look-ups of rs7137828 and rs3184504 agree). What blocks A is AncestryDNA, the large independent American sample: its
-  fathers give a quarter of the UK Biobank effect, not significant (P 0.10), with heterogeneity between the two arms P
-  2.6e-3, and its mothers nothing (P 0.99, heterogeneity P 3.6e-3) (Wright 2019, Supplemental Table 9). The rule
+  look-ups of rs7137828 and rs3184504 agree). What blocks A is AncestryDNA, the large independent American sample: its fathers give a quarter of the UK Biobank effect, passing only read one-sided (two-sided P 0.0997, one-sided
+  0.0498, D25.13), with heterogeneity between the two arms P 2.6e-3, and its mothers nothing (P 0.99, heterogeneity P 3.6e-3) (Wright 2019, Supplemental Table 9). The rule
   applied (the lead, 2026-11-11, one rule for this row and 67): a powered non-replication in an independent sample is
   red-flag heterogeneity and caps the row at B. Healthspan is 0: Zenin 2019's look-up of SH2B3's rs3184504 leans the
   same way and does not pass (P 0.13). A trade-off: Timmers 2019 names this locus among those where more protection
@@ -164,7 +163,7 @@ studies:
     effect_allele: G
     direction: protective
     proxy_rsid: rs10774625
-    statistical_test: "Linear regression of fathers' lifespan on offspring dosage, AncestryDNA arm (Table 3, q10; Supplemental Table 9, q17); UK Biobank arm 0.015, heterogeneity P 2.6E-03; allele from Supplemental Table 8 (q19)"
+    statistical_test: "Linear regression of fathers' lifespan on offspring dosage, AncestryDNA arm (Table 3, q10; Supplemental Table 9, q17); two-sided P printed, one-sided 0.0498 (derived, D25.13); UK Biobank arm 0.015, heterogeneity P 2.6E-03; allele from Supplemental Table 8 (q19)"
     curator: claude-opus-5-5
   - rsid: rs11065979
     note: pmid-31484785

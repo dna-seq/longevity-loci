@@ -33,7 +33,7 @@ verdict_reason: >-
   flag under one calibration only is no flag. Not A as I read §4.1: Deelen 2014's 88,078 people and its age-threshold
   cases (90 or more, not a percentile) meet neither of A's sample clauses as written, and Timmers itself reports the
   effect smaller, a third of Deelen's on the APOE scale (0.82 by the mean factor); the lead's read keeps B. Deelen
-  2019 leans the same way (90th percentile OR 1.053, P 0.012; 99th OR 1.062, P 0.072) but holds the Leiden Longevity
+  2019 leans the same way (90th percentile OR 1.053, P 0.012; 99th OR 1.062, P 0.072, one-sided 0.036) but holds the Leiden Longevity
   Study, Rotterdam, GEHA, the Danish longevity study and Newcastle 85+, all in Deelen 2014, so it is not independent.
   Deelen 2014's own prospective analysis (34,103 people in 11 cohorts, 8,582 deaths) gives T HR 0.95, P 0.003 for
   all-cause death; its cohorts (Table S5) are unread, so its independence is unknown and it is lifespan evidence, not
@@ -181,7 +181,7 @@ studies:
     effect_unit: odds ratio of reaching the 90th percentile, per T allele
     effect_allele: T
     direction: protective
-    statistical_test: "Look-up in Supplementary Data 1 (q88): 90th OR 1.053 (1.01-1.10), I² 0; 99th OR 1.062 (0.99-1.13), P 0.072. Shares cohorts with Deelen 2014 (q80, q89; pmid-24688116#q7) the papers do not separate: not independent (D19.1)"
+    statistical_test: "Look-up in Supplementary Data 1 (q88): 90th OR 1.053 (1.01-1.10), I² 0; 99th OR 1.062 (0.99-1.13), P 0.072 (one-sided 0.036, derived, D25.13). Shares cohorts with Deelen 2014 (q80, q89; pmid-24688116#q7) the papers do not separate: not independent (D19.1)"
     curator: claude-opus-5-5
   - rsid: rs2149954
     note: pmid-30729179

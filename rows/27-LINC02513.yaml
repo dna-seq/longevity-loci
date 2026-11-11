@@ -9,15 +9,16 @@ locus_name: LINC02513
 verdict: kept
 verdict_reason: >-
   Tier B, as the seed has it: a genome-wide multivariate result with a co-occurring lifespan study (§4.5 as D16
-  reads it), and no independent replication; a multivariate result does not meet tier A's first criterion (D18.3).
+  reads it), and one independent replication, at the margin; a multivariate result does not meet tier A's first criterion
+  (D18.3).
   The shape is row 20's. Genome-wide only in two multivariate analyses that share their inputs: Timmers 2020's test
   of healthspan, parental lifespan and 90th-percentile longevity (P 4e-8, A on the longer-lived side in all three
   columns) and Rosoff 2023's mvAge (G lowers the factor, P 3.6e-8, so A raises it; Rosoff lists it as novel).
   Timmers 2020 says no input reached genome-wide significance here alone, calls the locus near the threshold, and
   asks for replication in independent cohorts. Timmers 2019's million parents' lives are the co-occurring lifespan
   study: A lengthens life at P 0.0016, nominal, UK Biobank and LifeGen on the same side. The one test outside both
-  analyses' inputs is AncestryDNA's fathers in Wright 2019, at rs2291433 (r² 0.996, its G with the lead's A): the
-  same side, raw P 0.099, not significant, and in line with UK Biobank's arm (heterogeneity P 0.43), so no red flag.
+  analyses' inputs is AncestryDNA's fathers in Wright 2019, at rs2291433 (r² 0.996, its G with the lead's A): the same side, raw P 0.099, one-sided 0.0496 (D25.13): a replication at the margin, in line with UK Biobank's arm
+  (heterogeneity P 0.43), so no red flag, and no lift past B (D18.3), as at row 29.
   Four nearby SNPs in the same table are stronger in AncestryDNA (rs12646716, rs1487624, rs11732737, rs7668402, raw
   P down to 7e-4) but tag the lead only weakly (r² 0.29 to 0.40), so none stands for it.
   Healthspan agrees: A delays the end of healthspan in Zenin 2019 (P 7.3e-4, an input of both analyses). Foote
@@ -165,7 +166,7 @@ studies:
     effect_unit: fathers' lifespan per T allele of rs2291433 (printed label C, read as the complement of the other allele G, derived; positive = longer)
     effect_allele: T
     direction: risk
-    statistical_test: "Supplemental Table 9, the AncestryDNA arm of the fathers' meta-analysis, raw P (beta/SE 0.0025); the counted allele derived from the UK Biobank arm's sign (−0.0071, P 0.0012) against Timmers' summary statistics at rs2291433 (pmid-30642433#q80, T shorter); rs2291433 r² 0.996 to the lead, its G with the lead's A by frequency (db-ensembl-116#q140-q142); the same side as the discovery, not significant; heterogeneity with UK Biobank's arm P 0.43, so no red flag (D21); independent of both multivariate analyses' inputs; meta P 0.0015 (n 698,000) includes UK Biobank"
+    statistical_test: "Supplemental Table 9, the AncestryDNA arm of the fathers' meta-analysis, raw P (beta/SE 0.0025), two-sided P printed, one-sided 0.0496 (derived, D25.13); the counted allele derived from the UK Biobank arm's sign (−0.0071, P 0.0012) against Timmers' summary statistics at rs2291433 (pmid-30642433#q80, T shorter); rs2291433 r² 0.996 to the lead, its G with the lead's A by frequency (db-ensembl-116#q140-q142); the same side as the discovery, not significant; heterogeneity with UK Biobank's arm P 0.43, so no red flag (D21); independent of both multivariate analyses' inputs; meta P 0.0015 (n 698,000) includes UK Biobank"
     curator: claude-opus-5-5
   - rsid: rs17499404
     note: pmid-30729179

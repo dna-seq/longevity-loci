@@ -23,9 +23,8 @@ verdict_reason: >-
   (D18.3); none of the §4.1-class inputs is genome-wide (lifespan 3.3e-4, healthspan 4.7e-4, frailty 0.0025, Deelen's
   90th percentile 0.020). aging-GIP1's self-rated health input reaches z about 6, not a scoring class. Its sheet of
   leads prints an adjusted estimate beside the original (β 0.014 against 0.021, P 2.5e-5), the adjustment not stated
-  in the cached text; the signal stays. Row 25 (HTT), replicated in the same look-up, is A because Timmers 2019 had it genome-wide. A
-  further outside look leans the same way: AncestryDNA mothers at rs769673 (r² 0.70, D′ 0.96; its A with the lead's A),
-  P 0.067, heterogeneity with UK Biobank's arm P 0.68, so no red flag (D21); the counted allele is read from Wright's
+  in the cached text; the signal stays. Row 25 (HTT), replicated in the same look-up, is A because Timmers 2019 had it genome-wide. A further outside look agrees: AncestryDNA mothers at rs769673 (r² 0.70, D′ 0.96; its A with the lead's A),
+  P 0.067 (one-sided 0.033, D25.13), heterogeneity with UK Biobank's arm P 0.68, so no red flag (D21); the counted allele is read from Wright's
   own tables at rs6840907, as LifeGen has no row for rs769673. Healthspan is +: Zenin 2019, A delays the end of
   healthspan, P 4.8e-4 (an mvAge input). Exceptional survival is +: Deelen 2019's 90th percentile P 0.020 and 99th
   0.049, A on the long-lived side, one look and an mvAge input. Mechanism: general ageing (D25.7), a mechanism being named only when something shows the effect runs through it.
@@ -184,7 +183,7 @@ studies:
     effect_unit: mothers' lifespan per A allele of rs769673 (printed label G, read as the other allele; positive = longer)
     effect_allele: A
     direction: protective
-    statistical_test: "Supplemental Table 9, the AncestryDNA arm of the mothers' meta-analysis, raw P (SE 0.0029); the counted allele read on this locus at rs6840907, where Table 9's G and Table 8's A carry the same +0.01051 and LifeGen puts T (A on the other strand) on the longer-lived side (q67, q68, pmid-30642433#q86); LifeGen has no row for rs769673; rs769673 r² 0.70, D′ 0.96 to the lead, its A (0.31) with the lead's A by frequency and r² (db-ensembl-116#q175, q176), a weak proxy; same side as the discovery; heterogeneity with UK Biobank's arm (+0.0070, P 0.0027) P 0.68, no red flag (D21)"
+    statistical_test: "Supplemental Table 9, the AncestryDNA arm of the mothers' meta-analysis, raw P (SE 0.0029), two-sided P printed, one-sided 0.033 (derived, D25.13); the counted allele read on this locus at rs6840907, where Table 9's G and Table 8's A carry the same +0.01051 and LifeGen puts T (A on the other strand) on the longer-lived side (q67, q68, pmid-30642433#q86); LifeGen has no row for rs769673; rs769673 r² 0.70, D′ 0.96 to the lead, its A (0.31) with the lead's A by frequency and r² (db-ensembl-116#q175, q176), a weak proxy; same side as the discovery; heterogeneity with UK Biobank's arm (+0.0070, P 0.0027) P 0.68, no red flag (D21)"
     curator: claude-opus-5-5
   - rsid: rs36072649
     note: pmid-30729179

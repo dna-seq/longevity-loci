@@ -24,8 +24,7 @@ verdict_reason: >-
   printed), and its SE (0.145) is about twice that of the common leads: at the 0.21 years of the three strongest
   leads, one-sided power is about 0.4. Same side, underpowered, no red flag (D21). No independent replication
   passes, and both genome-wide results are multivariate: B. Its Q test (P 0.60) finds no sign that the SNP acts off the common factor. Exceptional survival is +: in
-  Deelen 2019's summary statistics C raises the odds of reaching the 90th percentile (P 0.036; 99th P 0.052, same
-  side), again an input of mvAge and not a replication. The mechanism is filed as metabolism,
+  Deelen 2019's summary statistics C raises the odds of reaching the 90th percentile (P 0.036; 99th two-sided P 0.052, one-sided 0.026, D25.13), again an input of mvAge and not a replication. The mechanism is filed as metabolism,
   through body weight: the locus is NEGR1's long-known obesity signal, and Rosoff's GWAS Catalog list runs from BMI,
   childhood and extreme obesity and waist-to-hip ratio to triglycerides and type 2 diabetes, with smoking
   initiation, insomnia and neuroticism beside them. In Open Targets 26.09 rs2613508 sits on one haplotype with the
@@ -178,7 +177,7 @@ studies:
     effect_unit: log odds of reaching the 99th percentile, per T allele
     effect_allele: T
     direction: risk
-    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), effective N 4,524; mvAge's exceptional-longevity input, not a replication"
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), effective N 4,524; two-sided P printed, one-sided 0.026 (derived, D25.13); mvAge's exceptional-longevity input, not a replication"
     curator: claude-opus-5-5
   - rsid: rs2613508
     note: pmid-37118362

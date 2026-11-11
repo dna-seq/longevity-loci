@@ -21,10 +21,11 @@ verdict_reason: >-
   meta-analysis with UK Biobank; it is not. In the same customers' fathers (born 1886-1940) G goes with longer life,
   nominally (genomic control P 0.0019), but those are the same people's genotypes, not a replication. Timmers 2019's
   million parental lives give G on the same side, P 0.19, not significant. At the oldest ages Deelen 2019's summary
-  statistics lean the same way: the lead is not significant (G on the long-lived side, P 0.49 at the 90th
-  percentile, 0.071 at the 99th), and the proxy rs16847402 is nominal at both (C on the long-lived side, P 0.026
-  and 0.023). That is the only support outside the age GWAS, and it is weak: nominal, at a proxy that tags the lead
-  at r² 0.53, with no genome-wide scoring-class anchor, so it does not lift the row to B, and exceptional survival is filed 0 on the lead's own null. Healthspan is null (Zenin
+  statistics lean the same way: the lead is not significant at the 90th percentile (G on the long-lived side, P 0.49) and passes at the 99th only
+  read one-sided (two-sided P 0.071, one-sided 0.035, D25.13), and the proxy rs16847402 is nominal at both (C on the long-lived side, P 0.026
+  and 0.023). That is the only support outside the age GWAS, and it is weak: nominal, one percentile at the lead and a proxy that
+  tags it at r² 0.53, with no genome-wide scoring-class anchor, so it does not lift the row to B (R-TIER-4); exceptional
+  survival is filed +, on the lead's own 99th-percentile result. Healthspan is null (Zenin
   2019, P 0.85). C, not D: suggestive in a confirmation class, with nominal support at the oldest ages and nothing
   contradicting it. The mechanism is unknown from any cached test; filed as general ageing. In Open Targets 26.09
   the lead itself leads a credible set for blood IGF-1 levels in UK Biobank (P 1.7e-18) and sits in sets for white
@@ -39,7 +40,7 @@ axes:
   mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q82, db-opentargets-26.09#q83, db-opentargets-26.09#q86, db-opentargets-26.09#q84, db-opentargets-26.09#q85, db-ensembl-116#q41]}
   pleiotropy: {values: ["mech:igf1", "mech:blood_count"], cites: [db-opentargets-26.09#q82, db-opentargets-26.09#q83, db-opentargets-26.09#q86, db-opentargets-26.09#q84]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "0",
+  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "+",
             cites: [pmid-30729179#q20, pmid-31484785#q28, pmid-31484785#q29, pmid-30642433#q36, pmid-31413261#q24, pmid-31413261#q26, db-ensembl-116#q18]}
   actionability: {label: descriptive, cites: [pmid-31484785#q28]}
   context: {values: [eur_only_evidence], cites: [pmid-31484785#q28, pmid-30642433#q36]}
@@ -171,7 +172,7 @@ studies:
     effect_unit: log odds of survival to the 99th percentile per G allele (the file's a, beta -0.0676, turned)
     effect_allele: G
     direction: protective
-    statistical_test: "Deelen 2019's summary statistics (GCST008599), effective N 4,524; 90th percentile (GCST008598, q23) a beta -0.0170, P 0.49"
+    statistical_test: "Deelen 2019's summary statistics (GCST008599), effective N 4,524; two-sided P printed, one-sided 0.035 (derived, D25.13); 90th percentile (GCST008598, q23) a beta -0.0170, P 0.49"
     curator: claude-opus-5-5
   - rsid: rs10798302
     note: pmid-31413261

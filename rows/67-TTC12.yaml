@@ -8,7 +8,7 @@ verdict_reason: >-
   Tier B, down from the seed's A, on red-flag heterogeneity alone. Genome-wide significant in Pilling 2017's fathers
   (UK Biobank, P 5.5e-9), and replicated outside UK Biobank: in LifeGen's fathers with UK Biobank's lives removed
   (Timmers 2019's Figure 2 source data, the same allele, P 0.016) and at Deelen 2019's 90th percentile (OR 1.068, P
-  0.011; the 99th 1.071, P 0.097). Timmers 2020's multivariate test reaches P 4e-10 by pooling data that each fall
+  0.011; the 99th 1.071, P 0.097, one-sided 0.048). Timmers 2020's multivariate test reaches P 4e-10 by pooling data that each fall
   short alone (parental lifespan and healthspan P 2e-6), and is not an independent sample. But AncestryDNA's fathers,
   a powered sample of 309,383, show nothing (Wright 2019: P 0.81, effect 0.0008 against UK Biobank's -0.016,
   heterogeneity P 3.0e-4), and its authors list the locus as not replicated: red-flag heterogeneity, which caps the

@@ -5,16 +5,18 @@
 # 0.12 Mb (rs3754935, rs1009276), neither a tag (minor alleles 5 to 7 % against the lead's 29 %).
 locus_id: 17
 locus_name: CASP8
-verdict: re-tiered
+verdict: kept
 verdict_reason: >-
-  Tier C, down from the seed's B: a genome-wide and replicated healthspan result with no co-occurring lifespan
-  study, so it cannot score (§4.5 as D16 reads it) and stays in the research view. In 300,447 British UK Biobank
+  Tier B, as the seed has it (C until D25.13 read a replication's P one-sided): a genome-wide healthspan result with a
+  co-occurring lifespan study (§4.5 as D16 reads it) and no independent replication in a scoring class (D22.2), as
+  row 35. In 300,447 British UK Biobank
   participants the common C delays the end of healthspan (Zenin 2019, β −0.033 on the log hazard, P 3.67e-9 after
   genomic control), and the paper's replication in 96,313 other UK Biobank participants, unrelated to them, holds it
   (β −0.035, P 2.4e-4, under its 0.05/12 threshold). The healthspan signal is cancer's alone: tested against each
-  component, C lowers the cancer hazard (P 9.8e-18) and nothing else (all but cancer P 0.97). Lifespan is filed 0:
-  Zenin's own parents'-death meta-analysis is null (P 0.80), own death is null (0.67), and Timmers 2019's summary
-  statistics lean the same way at P 0.066, short of the p < 0.05 that D16 asks. Exceptional survival is 0: Deelen 2019's
+  component, C lowers the cancer hazard (P 9.8e-18) and nothing else (all but cancer P 0.97). Lifespan is filed +, on one of three looks: Timmers 2019's summary statistics put C on
+  the longer-lived side in both arms, two-sided P 0.066, one-sided 0.033 (D25.13), D16's co-occurring lifespan study;
+  Zenin's own parents'-death meta-analysis (P 0.80) and own death (0.67), in UK Biobank people Timmers' sample
+  overlaps, are null. Exceptional survival is 0: Deelen 2019's
   90th and 99th percentiles are null at the lead (P 0.39, 0.66, opposite leanings). Deelen is not plainly null nearby:
   a nominal cluster sits 40 to 46 kb away (an insertion-deletion at 2:202,158,540, P 8.8e-4; rs7560328, P 0.017, r²
   0.57 with the lead), but the lead does not explain it (were it the lead's, the lead's z would be about −1.8; it is
@@ -33,11 +35,11 @@ verdict_reason: >-
   in 217 QTL sets and holds the lead's own strongest QTL (a CASP8 transcript, P 1e-63); two genes each meet a
   criterion, and Zenin's credible set holds a CASP8 missense variant. The protection is the absence of the risk allele T (the common C protects). Age of action is unknown.
 axes:
-  tier: {value: C, cites: [pmid-30729179#q28, pmid-30729179#q29, pmid-30729179#q33, pmid-30729179#q34, pmid-30642433#q55, pmid-31413261#q35, pmid-31413261#q36, pmid-31413261#q45, pmid-31413261#q46, db-ensembl-116#q108, pmid-31484785#q47, pmid-31484785#q48, db-ensembl-116#q70, db-ensembl-116#q72, db-ensembl-116#q73]}
+  tier: {value: B, cites: [pmid-30729179#q28, pmid-30729179#q29, pmid-30729179#q33, pmid-30729179#q34, pmid-30642433#q55, pmid-31413261#q35, pmid-31413261#q36, pmid-31413261#q45, pmid-31413261#q46, db-ensembl-116#q108, pmid-31484785#q47, pmid-31484785#q48, db-ensembl-116#q70, db-ensembl-116#q72, db-ensembl-116#q73]}
   mechanism: {value: skin_sun, cites: [pmid-30729179#q30, pmid-30729179#q34, db-gwascatalog-2026.10.29#q124, db-gwascatalog-2026.10.29#q126, db-opentargets-26.09#q161, db-opentargets-26.09#q162, db-opentargets-26.09#q182, db-opentargets-26.09#q183, db-opentargets-26.09#q184, db-opentargets-26.09#q185]}
   pleiotropy: {values: ["mech:cancer"], cites: [pmid-30729179#q30, pmid-30729179#q34, db-opentargets-26.09#q163, db-opentargets-26.09#q164, db-opentargets-26.09#q165, db-opentargets-26.09#q166, db-gwascatalog-2026.10.29#q127, db-opentargets-26.09#q186, db-opentargets-26.09#q187]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: "+", lifespan: "0", exceptional_survival: "0",
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
             cites: [pmid-30729179#q28, pmid-30729179#q34, pmid-30642433#q55, pmid-31413261#q35, pmid-31413261#q36]}
   actionability: {label: modifiable, what: ["act_screen:skin"], who: "act_who:self", cites: [pmid-30729179#q30, pmid-30729179#q34, db-gwascatalog-2026.10.29#q124, db-gwascatalog-2026.10.29#q126, db-opentargets-26.09#q161, db-opentargets-26.09#q162]}
   context: {values: [], cites: []}
@@ -152,7 +154,7 @@ studies:
     effect_unit: log hazard protection per T allele in self (negative = shorter life)
     effect_allele: T
     direction: risk
-    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), direction -- in UK Biobank and LifeGen; the same side as healthspan, short of p < 0.05, so not D16's co-occurring lifespan study; the UK Biobank part overlaps Zenin's sample"
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), direction -- in UK Biobank and LifeGen; the same side as healthspan; two-sided P printed, one-sided 0.033 (derived, D25.13), so D16's co-occurring lifespan study; the UK Biobank part overlaps Zenin's sample"
     curator: claude-opus-5-5
   - rsid: rs10197246
     note: pmid-31413261
