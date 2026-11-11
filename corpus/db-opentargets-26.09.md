@@ -2066,3 +2066,13 @@ cystatin C and creatinine and higher eGFR (q553 to q556): the biomarkers and the
 The sign of `beta` at the lead is anchored on two SuSiE-inf sets against the catalog's lines for the same
 accessions: acute renal failure T +0.0111 (q557) against rs7742789-C "decrease" (db-gwascatalog-2026.10.29#q283,
 q284), and magnesium T −0.0347 (q564) against C "increase" (q285, q286). For row 40.
+
+## Reading 2026-11-11, record
+
+> [q574] data.study.credibleSets count 5
+
+Open Targets 26.09 holds no variant record for rs114658003 (variant `6_99603424_G_A`) or for the deletion beside it
+(`6_99603422_GC_G`, FinnGen's form): both queries return "data variant null" (the same text as q411; cached as
+`variant-rs114658003.json` and `variant-rs66927770.json`). Gurinovich's study GCST012419 has five PICS sets (q574),
+led by rs78043944, rs77184423, rs429358, rs77546126 and rs10973748; none at 6q16. So no set holds the lead, and its
+causal and effector confidence could not be assessed. For row 41.

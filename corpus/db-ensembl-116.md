@@ -978,3 +978,36 @@ db-finngen-r11#q11). The kidney-disease sets' leads: rs2270860 r² 0.76, D′ 0.
 (q269); rs7764523 r² 0.85, D′ 1.00 (q270). The lead's 15 proxies at r² ≥ 0.8 lie from 6:43,292,922 (rs6901866) to
 6:43,386,693 (rs1214761) in GRCh38 (the catalog's locations), 85 kb before the lead to 9 kb after it, so the block
 sits well inside the ±250 kb window and the proxy sweep is whole. For row 40.
+
+## Reading 2026-11-11, record
+
+> [q271] mappings[0] start 99603424 coord_system chromosome strand 1 allele_string G/A location 6:99603424-99603424 end 99603424 ancestral_allele G assembly_name GRCh38 seq_region_name 6
+
+> [q272] populations[16] allele_count 6616 frequency 0.09731 allele A population gnomADg:nfe
+
+> [q273] populations[19] frequency 0.1331 allele A population gnomADg:asj allele_count 462
+
+> [q274] populations[77] allele_count 114 allele A population 1000GENOMES:phase_3:EUR frequency 0.113320079522863
+
+> [q275] [205] variation1 rs114658003 variation2 rs66927770 r2 1.000000 population_name 1000GENOMES:phase_3:CEU d_prime 1.000000
+
+> [q276] [32] r2 0.605050 population_name 1000GENOMES:phase_3:CEU variation2 rs12660804 variation1 rs114658003 d_prime 0.999997
+
+> [q277] mappings[0] end 99603423 allele_string C/- seq_region_name 6 start 99603423 strand 1 location 6:99603423-99603423 assembly_name GRCh38 ancestral_allele C coord_system chromosome
+
+> [q278] populations[18] allele_count 6616 allele - population gnomADg:nfe frequency 0.09731
+
+> [q279] [7] seq_region_name 6 consequence_type regulatory_region_variant start 99603423 id rs386704200 feature_type variation source dbSNP end 99603424 assembly_name GRCh38 strand 1 [7].alleles[0] CG [7].alleles[1] A
+
+> [q280] populations[65] allele_count 16 frequency 0.0808080808080808 population 1000GENOMES:phase_3:CEU allele A
+
+Row 41's lead rs114658003, GRCh38 6:99,603,424 G/A (q271; GRCh37 6:100,051,300). A is common: 0.097 in gnomAD's
+non-Finnish Europeans (q272), 0.133 in Ashkenazi Jews (q273), 0.113 in 1000 Genomes EUR (q274), 0.081 in CEU (q280),
+about 0.19 overall. Gurinovich's NECS controls, 0.0004 (pmid-33948810#q22), and the LGP's near 0 (pmid-33948810#q18)
+are off by two orders of magnitude. The deletion rs66927770 sits one base before it (q277), with the very same allele
+count, 6,616, in gnomAD's non-Finnish Europeans (q278) and r² 1.00, D′ 1.00 in CEU (q275); dbSNP also holds the two as
+one record, rs386704200, CG>A (q279, from the region listing `overlap-6-99603424`). So in Europeans the deletion and
+A travel together. That NECS's imputation split them, calling A without the deletion, is a candidate cause of the
+miscall, derived, not shown: the HRC panel's site list is not read. In the CEU window nothing besides the deletion passes r² 0.8;
+seven pass 0.6, all at r² 0.61 and D′ 1.00 (rs12660804, q276, and six more), whose minor alleles (about 0.05 to 0.07)
+ride with A by r² and frequency (derived, not phased). For row 41.

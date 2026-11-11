@@ -1,0 +1,162 @@
+# The seed list's locus 41, PRDM13 (6q16.2; the seed's genes "PRDM13;TSTD3", the paper's CCNC, PRDM13). Curated
+# 2026-11-11. Lead rs114658003 (GRCh38 6:99,603,424, GRCh37 6:100,051,300; the seed's only rsID), Gurinovich
+# 2021's NECS centenarian SNP (Supplement Table 1, main Table 2). A is common in Europeans (about 0.10) but nearly
+# absent in the paper's samples. The deletion rs66927770 one base before it travels with A
+# (r² 1.00) and stands in for it where a file lacks the SNP. No other seed locus lies near it.
+locus_id: 41
+locus_name: PRDM13
+verdict: re-tiered
+verdict_reason: >-
+  Tier D, from the seed's B: a genome-wide centenarian result that the larger European tests contradict, which §4.1
+  files as "explicitly contradicted" (D25.1). Gurinovich 2021 compared 1,320 New England Centenarian Study
+  centenarians (median age 104) with 2,899 controls, HRC-imputed. A was in 0.67 % of the centenarians' alleles and
+  0.04 % of the controls': score Z +5.51, P 3.58e-8, just past genome-wide (Supplement Table 1). The paper prints no
+  effect size. The crude odds ratio from the two frequencies is about 16.9, derived, and rests on about 2 expected
+  copies among the controls. The paper doubts it itself. Its table footnote and Discussion say the imputed frequency
+  is far from dbSNP's European one, "lowering the confidence that this association is a true positive". Every
+  reference sample puts A near 0.10 in Europeans: gnomAD's non-Finnish Europeans 0.097, 1000 Genomes EUR 0.11, Finns
+  0.17. NECS's controls' 0.0004 is two orders of magnitude lower. The Ashkenazi replication (LGP, 312 centenarians,
+  638 controls) prints A at 0 and 0.000002, where gnomAD's Ashkenazi Jews have 0.13, so it held no carrier, and its
+  Z −1, P 0.6 tests nothing. That is untested, not failed. The deletion rs66927770 one base before the SNP has the
+  same count in gnomAD and r² 1.00 in CEU, and dbSNP also lists the two as one CG>A record. A plausible cause is that
+  the imputation called A apart from its deletion, but that is derived: the panel's site list is not read. Either
+  way the result does not hold for the A a genome file reports. If the NECS A is that A, the European tests are
+  D21's powered test. Deelen 2019 types it through the deletion: at the 99th percentile the deletion with A gives
+  β +0.027 (SE 0.056), P 0.63, NECS's way but flat. Against NECS's crude log odds ratio 2.83 (SE about 0.51),
+  one-sided power is about 1.00 and heterogeneity z about 5.4. Both conditions hold down to about a twentieth of
+  NECS's effect (factor 0.055), so the flag needs no calibration between the two extreme-survival scales. Deelen's
+  90th percentile is the same (P 0.28). FinnGen's death endpoint is null at the lead, leaning the other way (A 0.17,
+  P 0.49). If the NECS A is something else, nothing measures the A a genome file reports. Neither reading leaves A
+  protective. One thing leans NECS's way: Timmers 2019's parental lifespan has no line for the SNP or the deletion,
+  but its r² 0.61 proxies, whose minor alleles ride with A, give one-sided P about 0.02 to 0.03 (rs12660804 P 0.040
+  two-sided). At r² 0.6, below the 0.8 the rows use, with the phase derived, and with FinnGen leaning the other way
+  at the same proxies and Deelen flat, it is named, not counted as D25.1's independent support; that reading is put
+  to the lead, and C (as row 19) is the alternative. Healthspan is untested: Zenin 2019's file has no line for the
+  SNP or the deletion, and the r² 0.61 proxies are flat (P about 0.39). Lifespan is 0 (FinnGen at the lead) and
+  exceptional survival 0 (Deelen through the deletion). The GWAS Catalog records no other trait, so the mechanism is
+  unknown, filed as general ageing as row 26 is. Open Targets 26.09 has no record of the SNP or of the deletion, and
+  none of Gurinovich's five sets lies here, so causal and effector confidence are C4 and E4 and no gene is named. Age
+  of action is unknown.
+axes:
+  tier: {value: D, cites: [pmid-33948810#q1, pmid-33948810#q3, pmid-33948810#q9, pmid-33948810#q16, pmid-33948810#q18, pmid-33948810#q19, pmid-33948810#q20, pmid-33948810#q21, pmid-33948810#q22, db-gwascatalog-2026.10.29#q139, db-gwascatalog-2026.10.29#q290, db-gwascatalog-2026.10.29#q291, db-ensembl-116#q271, db-ensembl-116#q272, db-ensembl-116#q273, db-ensembl-116#q274, db-ensembl-116#q275, db-ensembl-116#q276, db-ensembl-116#q277, db-ensembl-116#q278, db-ensembl-116#q279, db-ensembl-116#q280, pmid-31413261#q99, pmid-31413261#q100, pmid-31413261#q101, pmid-31413261#q102, db-finngen-r11#q13, db-finngen-r11#q14, db-finngen-r11#q15, pmid-30642433#q216, pmid-30642433#q217, pmid-30642433#q218, pmid-30729179#q63]}
+  mechanism: {value: general_ageing, cites: [db-gwascatalog-2026.10.29#q292]}
+  pleiotropy: {values: [], cites: [db-gwascatalog-2026.10.29#q292]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: untested, lifespan: "0", exceptional_survival: "0",
+            cites: [pmid-30729179#q63, db-finngen-r11#q14, pmid-31413261#q99, pmid-31413261#q100]}
+  actionability: {label: descriptive, cites: [db-gwascatalog-2026.10.29#q292]}
+  context: {values: [eur_only_evidence], cites: [db-gwascatalog-2026.10.29#q139, pmid-31413261#q99, db-finngen-r11#q14]}
+flags:
+  - {token: replication_failed, cites: [pmid-31413261#q100, pmid-31413261#q99, pmid-33948810#q22]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q411, db-opentargets-26.09#q574]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q411, db-opentargets-26.09#q574]}
+variants:
+  - rsid: rs114658003
+    gene: ""
+    phenotype: PRDM13 region, reaching 100
+    trait_efo_id: OBA_VT0005372
+    effect_allele: A
+    effect_size: 16.9
+    effect_measure: OR
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA region, the one most people of European ancestry
+          have (about 81 in 100). It is the reference the other combinations are compared with. The region, on
+          chromosome 6, lies between genes, near PRDM13, and no gene is known to matter here. A link between this
+          region and reaching 100 was reported once, and the study's own authors doubted it.
+      - genotype: A/G
+        state: neutral
+        conclusion: >-
+          You carry one copy of a version of this DNA region that about 18 in 100 people of European ancestry carry.
+          One American study of people who reached 100 reported it as rare and more common among them, but it
+          measured this version far less often than it really occurs, and its authors doubted the result. Larger
+          studies found no link. It says nothing about your own lifespan.
+      - genotype: A/A
+        state: neutral
+        conclusion: >-
+          You carry two copies of a version of this DNA region (about 1 in 100 people of European ancestry do). One
+          American study of people who reached 100 reported it as rare and more common among them, but it measured
+          this version far less often than it really occurs, and its authors doubted the result. Larger studies
+          found no link. It says nothing about your own lifespan.
+studies:
+  - rsid: rs114658003
+    note: pmid-33948810
+    quote: q22
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: centenarian_case_control
+    population: European ancestry by the GWAS Catalog's record (db-gwascatalog-2026.10.29#q139; New England Centenarian Study; centenarians, median age 104, against 306 NECS referents and 2,593 Illumina repository controls, q9, ages not given)
+    ancestry: [EUR]
+    sample_size: 4219
+    sample_unit: individuals
+    n_cases: 1320
+    age_of: participant
+    stat_significance: significant
+    p_value: "3.58E-08"
+    p_value_num: 3.58e-08
+    effect_size: 16.9
+    effect_measure: OR
+    effect_unit: "crude odds of reaching 100 per A allele, derived here (D25.10), not printed: (0.0067/0.9933)/(0.0004/0.9996) from the cases' and controls' printed A frequencies, unadjusted for the score test's covariates, and resting on about 2.3 expected copies among the controls"
+    effect_allele: A
+    direction: protective
+    statistical_test: "Score test (Supplement Table 1, q3, q22): A, the coded allele, in 0.0067 of cases' and 0.0004 of controls' alleles, score Z +5.51, P 3.58e-8; HRC-imputed, info above 0.7 (q1, q20). No effect size printed: the GWAS Catalog's beta 5.51 is this Z (db-gwascatalog-2026.10.29#q290). Crude log odds ratio 2.83, SE about 0.51 from the Z (derived). The authors doubt it: the imputed frequency differs from dbSNP's European one (q19, q20); A is 0.097 in gnomAD non-Finnish Europeans (db-ensembl-116#q272), so the controls' 0.0004 is about 240 times too low. Main Table 2's LGP columns (q18) print A 0 and 0.000002 and Z -1, P 0.6 run together (derived from the table's pattern); gnomAD's Ashkenazi A is 0.133 (db-ensembl-116#q273), so the LGP held no carrier: untested (q21)"
+    curator: claude-opus-5-5
+  - rsid: rs114658003
+    note: pmid-31413261
+    quote: q100
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's discovery cohorts; no NECS among them, q80, q86)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.6281"
+    p_value_num: 0.6281
+    proxy_rsid: rs66927770
+    effect_size: 0.0272
+    effect_measure: beta
+    effect_unit: log odds of reaching the 99th percentile age per deletion allele of rs66927770, which carries A
+    effect_allele: A
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GCST008599): no line for the SNP; the indel line 6:100051298 is the deletion rs66927770 with its anchor base (GRCh38 6:99,603,423, db-ensembl-116#q277), r² 1.00 and D′ 1.00 to the lead in CEU (q275) with the same gnomAD count (q272, q278); d 0.10, beta +0.0272, SE 0.0561, effective N 4,154 (q100), one-sided P about 0.31 (derived). D21 (derived): against NECS's crude log odds ratio 2.83 (SE about 0.51, pmid-33948810#q22) one-sided power about 1.00, heterogeneity z about 5.4 (P about 6e-8); both still hold at 0.055 of NECS's effect (power 0.87, z 2.05), so no calibration between the two extreme-survival scales moves it (D25.3). The r² 0.61 proxy rs12660804 is flat too (P 0.98, q102). Independent of NECS as far as both papers show (D25.10)"
+    curator: claude-opus-5-5
+  - rsid: rs114658003
+    note: pmid-31413261
+    quote: q99
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's discovery cohorts; no NECS among them, q80, q86)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.2797"
+    p_value_num: 0.2797
+    proxy_rsid: rs66927770
+    effect_size: 0.0372
+    effect_measure: beta
+    effect_unit: log odds of reaching the 90th percentile age per deletion allele of rs66927770, which carries A
+    effect_allele: A
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GCST008598), the same deletion line: d 0.10, beta +0.0372, SE 0.0344, effective N 11,050 (q99), one-sided P about 0.14 (derived); the 99th percentile's cases are a subset; the r² 0.61 proxy rs12660804 P 0.70 (q101)"
+    curator: claude-opus-5-5
+  - rsid: rs114658003
+    note: pmid-30642433
+    quote: q216
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 637314
+    sample_unit: lives
+    stat_significance: nominal
+    p_value: "0.040059265"
+    p_value_num: 0.040059265
+    proxy_rsid: rs12660804
+    effect_size: 0.01628031
+    effect_measure: beta
+    effect_unit: beta1 on parental lifespan per C allele of rs12660804 (printed for T, sign turned), longer positive
+    effect_allele: A
+    direction: protective
+    statistical_test: "Timmers 2019's summary statistics (GCST009890) hold no line for rs114658003 or the deletion rs66927770. Its r² 0.61 proxy rs12660804 (D′ 1.00, db-ensembl-116#q276): T beta -0.0163 (SE 0.0079), so C, 0.069, the minor allele riding with A (derived from r² and frequencies, not phased), +0.0163, P 0.040, one-sided about 0.020 (q216); rs17059662 A P 0.055 (q217), rs11967198 A P 0.058 (q218). Not counted as D25.1's independent support: r² 0.61 is below the 0.8 the rows use, the phase is derived, and at the same proxies FinnGen leans the other way (db-finngen-r11#q15) and Deelen is flat (pmid-31413261#q101, q102). Put to the lead"
+    curator: claude-opus-5-5

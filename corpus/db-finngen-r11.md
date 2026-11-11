@@ -75,3 +75,17 @@ within FinnGen against Timmers' self-scale β (T −0.0224, pmid-30642433#q214),
 leads that hold up within FinnGen, which is not computed here, so whether this is a red flag is unknown. (Borrowing
 Figure 4's mean, 0.42 of APOE's, pmid-30642433#q92, would predict +0.0093, power about 0.31, heterogeneity P about
 0.18; that factor was derived for other scales and is not D25.12's.) For row 40.
+
+## Reading 2026-11-11, record
+
+> [q13] 6 99603422 GC G rs66927770 PRDM13 0.488506 0.31113 0.00687389 0.00992351 0.168428 0.169262 0.168324
+
+> [q14] 6 99603424 G A rs114658003 PRDM13 0.488541 0.311099 0.00687335 0.00992352 0.168428 0.169261 0.168324
+
+> [q15] 6 99605745 T C rs12660804 PRDM13 0.309973 0.508676 0.0126936 0.0125026 0.0976046 0.0990255 0.0974266
+
+rs114658003, alt A (0.168 in Finns, 0.169 among the deceased and 0.168 among the others): β +0.0069 (SE 0.0099) on
+death, P 0.49 (q14), A leaning toward more death, the other way from NECS (one-sided P in NECS's direction about 0.76,
+derived). FinnGen holds the deletion rs66927770 beside it with the same frequency and statistics (q13), so it types
+the two together. The r² 0.61 proxy's C, which rides with A: β +0.0127, P 0.31 (q15), the same lean. FinnGen's scale
+differs from NECS's and D25.12's second factor is not computed, so it is not used for D21's flag. For row 41.

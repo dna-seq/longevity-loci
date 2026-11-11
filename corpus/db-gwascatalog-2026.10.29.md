@@ -969,3 +969,15 @@ signs, so its `beta` there is per T. The three chronic kidney disease studies of
 Hispanic arms beside the European: GCST90480387 (447,143 Europeans, q287), GCST90480386 (448,588, q288), GCST90479971
 (445,574, q289). The proxies' lines row 40 names only (stroke, hypertension, testosterone, urate) were not checked for
 ancestry; some are Japanese (Kanai 2018's blood pressure at rs16896398, a uric-acid line from 1KG-JEWEL7K). For row 40.
+
+## Reading 2026-11-11, record
+
+> [q290] _embedded.associations[0] association_id 80754848 risk_frequency 4.0E-4 pvalue_description pvalue_mantissa 4 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [NR] beta 5.5104795 unit increase p_value 4e-08 accession_id GCST012419 pubmed_id 33948810 first_author Gurinovich A
+
+> [q291] _embedded.associations[0].snp_effect_allele[0] rs114658003-A
+
+> [q292] page size 100 totalElements 1 totalPages 1 number 0
+
+rs114658003: one association in the catalog, Gurinovich 2021's (GCST012419, Longevity (100 years and older)),
+A "increase", P 4 × 10⁻⁸ (q290, q291). Its "beta 5.5104795" is the paper's score Z (pmid-33948810#q22), and its
+risk frequency 4.0E-4 is NECS's controls' A. No other trait is recorded (q292). For row 41.
