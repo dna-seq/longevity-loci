@@ -42,9 +42,9 @@ verdict_reason: >-
   at a proxy: rs17123764 (r² 0.76, its minor T with the lead's T) raises intelligence in Hill 2018 (P 7e-9). The
   longer-life T is on the lower-risk side of each, so no trade-off. Rosoff's Q P 0.53 says only that the SNP acts
   through the common factor, not which route: pleiotropy mech:smoking, mech:cvd, mech:cognition, broad, as row 29.
-  Actionability descriptive by row 29's reading (several strong routes, none shown to carry it), with two options
-  put to the lead: `modifiable` (act_behaviour:smoking, as row 80, the lead's own strongest association) or
-  `preventable` (act_test:bp, as row 40, read here at an r² 0.82 proxy). Causal confidence C4 and effector E4: no credible set of a lifespan-class study
+  Actionability descriptive, D25.7's case as at row 29 (smoking, blood pressure and cognition each associated,
+  none shown to carry the lifespan effect, so no route earns a label); the lead, asked, kept it over `modifiable`
+  (act_behaviour:smoking, row 80) and `preventable` (act_test:bp, row 40). Causal confidence C4 and effector E4: no credible set of a lifespan-class study
   holds the lead (mvAge's sets in Open Targets include none here), so neither is read; the lead's only led sets are
   T-cell expression of ENSG00000161791 (PIP 0.08 or less), named only. A/A is the reference (about 82 in 100
   Europeans); PROTECT:PRESENCE: the protective T is the minor, derived allele. Age of action is unknown: no cached
