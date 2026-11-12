@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- D29.11–13 (70 FGD6): a multivariate or healthspan discovery's red flag stays unknown even on a like-for-like comparison of two lifespan arms; a coronary colocalisation names heart_vessels; animal evidence is a flag, not a study.
 - Pacing off, on the person's word (2026-11-12): the curator no longer stops at 95 % of the 5-hour or the 7-day window, and the dashboard counts against the whole window.
 - D29.9–10: a quoted trade-off keeps a skin_sun row descriptive; a coding lead's E1 is not vetoed by another gene's QTL (66 TYR).
 - RM1 done: the export validates and compiles strict on just-dna-format 0.8.4 (64 loci, 192 variant rows, 331 studies, every locus resolved), and the module seat's first rehearsal is on the registry's test instance as test-longevity-loci/longevitymap 2.0.0 (module 0fa5e77). Nothing on production.

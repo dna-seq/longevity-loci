@@ -559,3 +559,16 @@ From the curator's rows 60 onward; the lead settled them under the person's stan
    (L2G, colocalisation); one NOX4 artery tuQTL colocalisation says the haplotype also moves an RNA elsewhere, not
    that TYR's protein change is not the effector. 66 is E1 TYR, NOX4's colocalisation named in prose. The curator's
    default (a); (b), D24 over coding leads, rejected.
+11. **A multivariate or healthspan discovery's red flag stays unknown even where two lifespan arms can be compared on
+   one scale.** 70 FGD6's discovery is Timmers 2020's multivariate test (P 8e-9); Wright's AncestryDNA fathers at
+   rs11107904 (r² 0.88) are flat (P 0.60) against Wright's UK Biobank fathers (P 3e-5), heterogeneity P 0.035 and
+   power 0.975 on the UK arm's β. D21 scales from the discovery's own effect (D27.9), and D29.1 kept 63's flag unknown
+   rather than scale from a lifespan arm that is not the discovery; the same holds here, conversion or not. The row
+   names the comparison with both numbers, and that the flag would need 0.87 of the UK arm's β, and carries no
+   `replication_failed`. Tier B either way. The curator's default (a) rejected for consistency with D29.1; if the
+   person wants co-occurring lifespan arms tested against each other, it is one rule for 63, 70 and their kind.
+12. **70 is heart_vessels**: the lifespan set colocalises with coronary disease (H4 0.95), G lowers CAD, MI and angina,
+   and Timmers reads it as less cardiovascular disease, as at 51. A platelet colocalisation as strong (H4 0.97) names
+   a trait on the same road, not a rival route. The curator's default.
+13. **Animal evidence is a flag, not a study** (`animal:mouse_qtl`, `animal:worm_rnai`, cited). §4.5's classes are
+   human outcomes; a model-organism study class would be a design change, not taken here. The curator's default.
