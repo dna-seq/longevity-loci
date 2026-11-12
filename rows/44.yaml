@@ -33,9 +33,10 @@ verdict_reason: >-
   percentiles (rarest variant 0.01 here), Zenin 2019's healthspan (down to 0.0011), FinnGen r11's death endpoint and
   LifeGen hold no line for the lead or its haplotype, and T is absent in Finns. Untested, not null, so not
   replication_failed. Every genotype is neutral: a tier D row carries no weight (D25.2), and the people who carry T are mostly of African ancestry (about 12 in 100 there carry one copy), where
-  nothing was studied (R-TIER-3). Causal C2 by the letter (in a 95 % set, PIP 0.12), on a set built without the
-  study's own LD. Effector E2, PLN, by locus-to-gene alone (0.77), with no QTL colocalisation for either set and no
-  rival gene passing a criterion (D24), so `gene` is PLN by §4.2's letter (L2G ≥ 0.5 alone), on a set this weak (D26.7). Lifespan is untested:
+  nothing was studied (R-TIER-3). Causal C4 and effector E4, no gene named (D28.12, the lead's ruling, superseding
+  D26.7's C2 and E2 PLN): the set (a 95 % set, the lead's PIP 0.12, built without the study's own LD) rests on the
+  excluded deposit line, an overfit source, so it sets no level. On it, in prose only: PLN is the candidate,
+  locus-to-gene 0.77, with no QTL colocalisation for either set and no rival gene passing a criterion (D24). Lifespan is untested:
   its one test is the excluded line (D26.7). Healthspan and exceptional survival are untested (absent from Zenin and
   Deelen). Mechanism general ageing, nothing pointing
   elsewhere; descriptive; age of action unknown.
@@ -49,11 +50,11 @@ axes:
   actionability: {label: descriptive, cites: [pmid-40021682#q43]}
   context: {values: [eur_only_evidence], cites: [pmid-40021682#q39, db-ensembl-116#q295, db-ensembl-116#q296]}
 flags:
-  - {token: "causal:C2", cites: [db-opentargets-26.09#q589, db-opentargets-26.09#q590, db-opentargets-26.09#q591, db-opentargets-26.09#q595]}
-  - {token: "effector:E2", cites: [db-opentargets-26.09#q592, db-opentargets-26.09#q593, db-opentargets-26.09#q598]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q589, db-opentargets-26.09#q590, db-opentargets-26.09#q591, db-opentargets-26.09#q595]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q592, db-opentargets-26.09#q593, db-opentargets-26.09#q598]}
 variants:
   - rsid: rs76888380
-    gene: PLN
+    gene: ""
     phenotype: PLN region (6q22.31), own survival
     trait_efo_id: OBA_VT0005372
     effect_allele: C
