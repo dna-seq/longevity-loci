@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- D29.14: a genotype-model claim (73 KL-VS, heterozygote advantage) is tiered, read and tested on its own model; per-allele lines are named, not scored.
 - The module-creator plugin's pin moves to `v0.48.8` (registry lane lookups, `remote_derive`'s passes, gene hints for expression); nothing here changes.
 - D29.11–13 (70 FGD6): a multivariate or healthspan discovery's red flag stays unknown even on a like-for-like comparison of two lifespan arms; a coronary colocalisation names heart_vessels; animal evidence is a flag, not a study.
 - Pacing off, on the person's word (2026-11-12): the curator no longer stops at 95 % of the 5-hour or the 7-day window, and the dashboard counts against the whole window.

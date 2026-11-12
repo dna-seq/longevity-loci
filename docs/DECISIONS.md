@@ -572,3 +572,13 @@ From the curator's rows 60 onward; the lead settled them under the person's stan
    a trait on the same road, not a rival route. The curator's default.
 13. **Animal evidence is a flag, not a study** (`animal:mouse_qtl`, `animal:worm_rnai`, cited). §4.5's classes are
    human outcomes; a model-organism study class would be a design change, not taken here. The curator's default.
+14. **A genotype-model claim is tiered, read and tested on its own model** (73 KL-VS, the curator's four defaults).
+   Arking's heterozygote advantage is replicated only in small or same-group samples (Invidia independent but small;
+   three meta-analyses significant in abstracts without a model), so C by §4.1. The large per-allele looks (LifeGen,
+   Deelen, FinnGen, Park, Zenin) test an additive model the claim does not make; under Arking's own model an additive
+   test expects about +0.154 (SE 0.097, heterogeneity P 0.19), unpowered, so no flag and no D. Genotypes stay neutral
+   (R-LEGACY-1: a v1 row below A/B), the heterozygote claim said in the conclusions. Mechanism `legacy_candidate`: a
+   v1 candidate nothing large carries. The outcome cells read the genotype claim's own tests (healthspan untested,
+   lifespan 0 on Arking 2005 against de Vries 2017, exceptional survival + on Arking 2002, Invidia, Revelas), and the
+   per-allele lines are named, not read into cells. Rejected: D on de Vries alone (one study, not a powered test of
+   the model), and the per-allele cells (they would score a model no one claimed).
