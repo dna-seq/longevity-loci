@@ -5,16 +5,18 @@
 # statistics at the lead, in Deelen 2019's look-up table; not in Wright 2019's tables, nor in Foote 2025's deposits.
 locus_id: 59
 locus_name: ABO
-verdict: re-tiered
+verdict: kept
 verdict_reason: >-
-  Tier C, from the seed's B, with no genome-wide result at the locus in any lifespan, longevity or multivariate ageing
-  study (R-TIER-4). Put to the lead, since D27.3 named ABO among the loci to be read as row 51 (B), which rested on
-  Foote 2025's frailty factor being genome-wide at its lead; here Foote is untested: the general factor's and
-  factors 2 to 4's deposits returned no SNP within 90 kb of the lead (factor 3's file the very one read at row 51, so
-  there an absence in the deposit, not a lost fetch; the other three files not checked), factors 1, 5 and 6 hold
-  neither the lead nor a proxy, and none of Foote's 426 Open Targets sets lies within 3 Mb. The same check is owed
-  at IGF2R, POM121C, GBX2/ASB18 and HP, the other loci D27.3 names. The alternative, B on the paper's own call, rests on the Bayes-factor P, which is never the
-  study's P (row 6). In Timmers 2019's million parental lives C, about 81 in 100 European chromosomes, adds 0.22 years
+  Tier B, the seed's, kept, on Timmers 2019's own genome-wide call (D28.7, the lead's ruling): its integrated scan,
+  whose priors come from LDL and coronary disease GWAS, calls a locus genome-wide at a Bayes-factor permutation P
+  below 2.5e-8, and ABO's is 1.9e-8. By D17.3 that is the paper's call, so the locus is §4.1's genome-wide locus; it
+  is never A, since part of the call's evidence is the disease GWAS behind the prior, not a lifespan P below 5e-8.
+  The previous commit's C (the Bayes-factor P never the study's P, after row 6) was rejected: no decision excluded
+  the paper's own call, and this is the first row it decides. Foote 2025 at the lead is unknown: factor 3's file,
+  the very one read complete at row 51, holds no SNP within 90 kb of the lead, the general factor's and factors 2
+  and 4's files are header-only for the window, factors 1, 5 and 6 hold neither the lead nor a proxy, and none of
+  Foote's 426 Open Targets sets lies within 3 Mb; D27.3's other loci (IGF2R, POM121C, GBX2/ASB18, HP) are checked
+  as each is reached. In Timmers 2019's million parental lives C, about 81 in 100 European chromosomes, adds 0.22 years
   per copy at a conventional P of 6.3e-6 (UK Biobank and LifeGen on the same side): suggestive, and the strongest SNP
   within 300 kb. The paper calls ABO genome-wide (Bayes-factor P 1.9e-8, informed by LDL and coronary disease) and
   replicated, on Figure 4's look-up at rs651007 (r² 0.94) in Deelen 2014 and Broer 2015: one-sided P 0.0215, Alpha
@@ -26,8 +28,8 @@ verdict_reason: >-
   no flag. Healthspan in Zenin 2019 goes C's way, nominal (P 0.0017; UK Biobank, overlapping the discovery): the
   cell is +. Exceptional survival is 0, as at row 48: one nominal 90th-percentile look, the 99th flat. Zenin's
   own ABO look-up and Fortney 2015's exceptional-longevity scan are at rs514659 (r² 0.42; iGWAS P 2.5e-7, not
-  genome-wide), named, not counted. A suggestive scoring-class result with nominal look-ups its way: C, as row 54. The
-  mechanism is heart and vessels: T, the derived allele, raises venous thromboembolism (OR 1.40, P 4e-169), coronary
+  genome-wide), named, not counted. A genome-wide locus by the paper's call, with nominal look-ups its way and no red
+  flag: B, not A (D28.7). The mechanism is heart and vessels: T, the derived allele, raises venous thromboembolism (OR 1.40, P 4e-169), coronary
   disease (OR 1.08) and myocardial infarction (OR 1.09) and raises LDL cholesterol, the priors Timmers' scan used;
   association at one haplotype, not a mediator test. The locus is broad besides: blood counts (T lowers haemoglobin
   and white cells), hundreds of plasma proteins, allergy (T raises allergic rhinitis); Timmers counts ABO among
@@ -44,7 +46,7 @@ verdict_reason: >-
   non-risk allele at a disease locus (PROTECT:ABSENCE_OF_RISK). The evidence is European; T is as common in East
   Asians (0.19), untested there.
 axes:
-  tier: {value: C, cites: [pmid-30642433#q256, pmid-30642433#q258, pmid-30642433#q42, pmid-30642433#q257, pmid-30642433#q259, pmid-30642433#q2, pmid-31413261#q153, pmid-31413261#q154, pmid-31413261#q2, db-finngen-r11#q34, pmid-30729179#q82, db-gwascatalog-2026.10.29#q374, db-opentargets-26.09#q744, db-opentargets-26.09#q745, db-opentargets-26.09#q746, db-ensembl-116#q416, db-ensembl-116#q417]}
+  tier: {value: B, cites: [pmid-30642433#q256, pmid-30642433#q258, pmid-30642433#q42, pmid-30642433#q257, pmid-30642433#q259, pmid-30642433#q2, pmid-31413261#q153, pmid-31413261#q154, pmid-31413261#q2, db-finngen-r11#q34, pmid-30729179#q82, db-gwascatalog-2026.10.29#q374, db-opentargets-26.09#q744, db-opentargets-26.09#q745, db-opentargets-26.09#q746, db-ensembl-116#q416, db-ensembl-116#q417]}
   mechanism: {value: heart_vessels, cites: [pmid-30642433#q256, db-gwascatalog-2026.10.29#q362, db-gwascatalog-2026.10.29#q363, db-gwascatalog-2026.10.29#q364, db-gwascatalog-2026.10.29#q365, db-gwascatalog-2026.10.29#q366, db-gwascatalog-2026.10.29#q367, db-gwascatalog-2026.10.29#q368, db-gwascatalog-2026.10.29#q369]}
   pleiotropy: {values: ["mech:cvd", "mech:lipids", broad, tradeoff], cites: [pmid-30642433#q10, db-gwascatalog-2026.10.29#q375, db-gwascatalog-2026.10.29#q376, db-gwascatalog-2026.10.29#q377, db-gwascatalog-2026.10.29#q378, db-gwascatalog-2026.10.29#q379, db-gwascatalog-2026.10.29#q380, db-gwascatalog-2026.10.29#q381, db-gwascatalog-2026.10.29#q382, db-gwascatalog-2026.10.29#q362, db-gwascatalog-2026.10.29#q363, db-gwascatalog-2026.10.29#q364, db-gwascatalog-2026.10.29#q365, db-gwascatalog-2026.10.29#q368, db-gwascatalog-2026.10.29#q369, db-gwascatalog-2026.10.29#q370, db-gwascatalog-2026.10.29#q371, db-gwascatalog-2026.10.29#q372, db-gwascatalog-2026.10.29#q373, db-gwascatalog-2026.10.29#q374]}
   age_of_action: {value: MIDLIFE, confidence: DIRECT, cites: [pmid-30642433#q260, pmid-30642433#q5, pmid-30642433#q261, pmid-30642433#q262, pmid-30642433#q263, pmid-30642433#q264, pmid-30642433#q265, pmid-30642433#q267, pmid-30642433#q268, pmid-30642433#q269, pmid-30642433#q270, pmid-30642433#q271]}
@@ -64,7 +66,7 @@ variants:
     effect_allele: C
     effect_size: 0.2244
     effect_measure: beta
-    stat_significance: suggestive
+    stat_significance: significant
     direction: protective
     negatives: >-
       The longer-life version may slightly raise the chance of stomach ulcers, diverticular disease of the bowel, gout
@@ -84,8 +86,8 @@ variants:
           You carry one copy of a less common version of this DNA region, in the blood-group gene ABO on chromosome
           9 (about 30 in 100 people of European ancestry do). It goes with a higher chance of blood clots in the
           veins, somewhat more heart disease and slightly higher LDL cholesterol. In a very large study it also went
-          with parents living a few months less, mainly through deaths before about 70; this is early evidence, not
-          a settled finding, and the effect is small: a tendency, not destiny. The same version may slightly lower the
+          with parents living a few months less, mainly through deaths before about 70; this is a likely finding, not
+          a settled one, and the effect is small: a tendency, not destiny. The same version may slightly lower the
           chance of stomach ulcers, gout and some bowel and thyroid conditions.
       - genotype: T/T
         state: risk
@@ -94,7 +96,7 @@ variants:
           chromosome 9 (about 3 in 100 people of European ancestry do). Each copy goes with a higher chance of blood
           clots in the veins, somewhat more heart disease and slightly higher LDL cholesterol. In a very large study
           each copy also went with parents living a few months less, mainly through deaths before about 70; this is
-          early evidence, not a settled finding, and the effect is small: a tendency, not destiny. The same version
+          a likely finding, not a settled one, and the effect is small: a tendency, not destiny. The same version
           may slightly lower the chance of stomach ulcers, gout and some bowel and thyroid conditions.
 studies:
   - rsid: rs2519093
@@ -114,7 +116,26 @@ studies:
     effect_unit: years of life per C allele in self (parental estimate doubled)
     effect_allele: C
     direction: protective
-    statistical_test: "Cox-residual GWAS, common effect sizes across sexes: Table 2's CES P (q256), the same as the summary statistics' (q258, n 635,499, direction --, T shortening life); the LDL- and CAD-informed Bayesian scan's BF P 1.9E-08 is not the study's P (q42, q256); nothing within 300 kb reaches 5e-8; Figure 4's longevity look-up at rs651007 (r² 0.94) one-sided P 0.0215, Alpha 1.12 (q259), largely Deelen 2019's people; age moderator P 3.9e-4, Q 0.0086, sex P 0.043, Q 0.73 (q260); FinnGen R11 death C −0.0072, P 0.43, one-sided 0.22 (db-finngen-r11#q34): under APOE's factor power 0.78, heterogeneity P 0.15, under Figure 4's mean power 0.26, P 0.83, no red flag (D21, D25.3)"
+    statistical_test: "Cox-residual GWAS, common effect sizes across sexes: Table 2's CES P (q256), the same as the summary statistics' (q258, n 635,499, direction --, T shortening life); the paper's genome-wide call is the LDL- and CAD-informed Bayesian scan's BF P 1.9E-08, below its 2.5e-8 line (q42, q256), read for B, never A (D28.7); the conventional P printed here is the CES P, suggestive on its own (so this cell; the variant carries the paper's call), and nothing within 300 kb reaches 5e-8 on it; Figure 4's longevity look-up at rs651007 (r² 0.94) one-sided P 0.0215, Alpha 1.12 (q259), largely Deelen 2019's people; age moderator P 3.9e-4, Q 0.0086, sex P 0.043, Q 0.73 (q260); FinnGen R11 death C −0.0072, P 0.43, one-sided 0.22 (db-finngen-r11#q34): under APOE's factor power 0.78, heterogeneity P 0.15, under Figure 4's mean power 0.26, P 0.83, no red flag (D21, D25.3)"
+    curator: claude-opus-5-5
+  - rsid: rs2519093
+    note: pmid-30642433
+    quote: q256
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the 26 LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 1012240
+    sample_unit: lives
+    stat_significance: significant
+    p_value: "1.9E-08"
+    p_value_num: 1.9e-08
+    effect_size: 0.2244
+    effect_measure: beta
+    effect_unit: years of life per C allele in self (parental estimate doubled)
+    effect_allele: C
+    direction: protective
+    statistical_test: "Timmers 2019's integrated (risk-factor-informed) GWAS: Bayes-factor permutation P 1.9E-08 with LDL and coronary disease priors (q256), below the paper's own genome-wide line of 2.5e-8 (q42). The paper's genome-wide call, so §4.1's genome-wide locus by D17.3; read for B, never A, since part of its evidence is the disease GWAS behind the prior (D28.7). The same people and effect as the CES entry above, counted once"
     curator: claude-opus-5-5
   - rsid: rs2519093
     note: pmid-31413261
