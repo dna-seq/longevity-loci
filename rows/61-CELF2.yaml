@@ -15,13 +15,16 @@ verdict_reason: >-
   its three GWAS (whole cohort, men, women) without correcting for running three. The variant is rare (MAF 0.3 %),
   from imputed array data filtered at imputation quality 0.3; its own quality is not printed. The discussion names the hit without a caveat of its own; the paper's only caveat is study-wide: no
   independent external replication. Unlike row 60's lone line, the women's window holds a second rare variant 30 kb
-  away at P 2.2e-7 (LD not known). The signal is the women's: the whole cohort gives T +0.0147 (P 0.0096) and the
+  away at P 2.2e-7 (LD not known), at the same frequency and β (−0.0371 for the major allele): almost surely the
+  same carriers, so it argues against a single-variant artefact, not for a second signal; and BOLT-LMM on
+  Martingale residuals at 0.3 % frequency is prone to inflation, beside the unprinted imputation quality. The signal is the women's: the whole cohort gives T +0.0147 (P 0.0096) and the
   men −0.0117 (P 0.22), the two sexes 4.2 standard errors apart (P 3e-5, derived; the men's file swaps its columns as the others do, by
   its own APOE line), so the context is
   sex_specific:f. The one independent look-up is Park's own in FinnGen R11's any-death endpoint, both sexes:
   T log OR −0.018 (SE 0.21), P 0.93, T only 0.03 % there. That is no red flag under D21: like for like, the
-  whole-cohort +0.0147 under APOE's Park-to-FinnGen factor (8.1) expects +0.12, power 0.14; even the women's
-  +0.0369 expects only +0.30, power 0.42, heterogeneity P 0.13 (MUC5B's factor, 6.7, gives less); 80 % power needs
+  whole-cohort +0.0147 under APOE's Park-to-FinnGen factor (8.1) expects +0.12, power 0.14, heterogeneity P 0.52; even the women's
+  +0.0369 expects only +0.30, power 0.42, heterogeneity P 0.14 (both derived, counting both estimates' errors,
+  D29.6) (MUC5B's factor, 6.7, gives less); 80 % power needs
   a factor of 14. No calibration raises a flag, so D25.3's mean factor is not needed, and the row carries no
   replication_failed. Nothing else tests it: LifeGen and Deelen have no
   line, no tag is known, so exceptional survival is untested. Healthspan 0: Zenin 2019 gives T an earlier end of
@@ -118,7 +121,7 @@ studies:
     effect_unit: FinnGen's "Death" endpoint per T allele (positive = increased death, by rs35705950 in the same table, q16 and q9)
     effect_allele: T
     direction: protective
-    statistical_test: "Park 2025's look-up in FinnGen r11's \"Death\" endpoint (Supplementary Table 2), both sexes, not significant (q36); FinnGen's own line: log OR −0.0176, SE 0.208, P 0.93, T 0.031 % (db-finngen-r11#q36). D21 (derived): the whole-cohort +0.0147 (q54) under APOE's Park-to-FinnGen factor 8.1 (db-finngen-r11#q4 against q32) expects +0.12, power 0.14; the women's +0.0369, the generous bound, +0.30, power 0.42, heterogeneity P 0.13; MUC5B's factor 6.7 gives less; 80 % power needs a factor of 14; no calibration flags, so the mean factor (D25.3) is not needed: no red flag"
+    statistical_test: "Park 2025's look-up in FinnGen r11's \"Death\" endpoint (Supplementary Table 2), both sexes, not significant (q36); FinnGen's own line: log OR −0.0176, SE 0.208, P 0.93, T 0.031 % (db-finngen-r11#q36). D21 (derived): the whole-cohort +0.0147 (q54) under APOE's Park-to-FinnGen factor 8.1 (db-finngen-r11#q4 against q32) expects +0.12 (SE 0.046, from the whole cohort's P), power 0.14, heterogeneity P 0.52; the women's +0.0369, the generous bound, +0.30 (SE 0.054), power 0.42, heterogeneity P 0.14; both Ps count both estimates' errors (D29.6); MUC5B's factor 6.7 gives less; 80 % power needs a factor of 14; no calibration flags, so the mean factor (D25.3) is not needed: no red flag"
     curator: claude-opus-5-5
   - rsid: rs547541271
     note: pmid-30729179
