@@ -1858,3 +1858,40 @@ in non-Finnish Europeans (q497). VEP puts rs139137459 in an intron of the lncRNA
 CEU (A 0.010, two copies, q500) the pair's r² is 0.66, D′ 1; in GBR r² 1, D′ 1 (two copies of each): the rare
 alleles ride together where they are seen, but on so few copies the European r² is fixed only by the frequencies'
 bound, about 0.47. For row 68.
+
+## Reading 2026-11-12, supplement
+
+> [q503] mappings[0] allele_string A/T coord_system chromosome start 49569751 location 12:49569751-49569751 strand 1 ancestral_allele A assembly_name GRCh38 end 49569751 seq_region_name 12
+
+> [q504] mappings[0] seq_region_name 12 ancestral_allele A assembly_name GRCh37 allele_string A/T strand 1 end 49963534 coord_system chromosome location 12:49963534-49963534 start 49963534
+
+> [q505] populations[6] frequency 0.09258 population gnomADg:nfe allele_count 6043 allele T
+
+> [q506] populations[13] allele_count 374 allele T population gnomADg:eas frequency 0.07351
+
+> [q507] populations[3] allele T allele_count 953 frequency 0.09699 population gnomADg:fin
+
+> [q508] [0] most_severe_consequence intron_variant start 49569751 allele_string A/T end 49569751 id rs55686423 strand 1 input rs55686423 assembly_name GRCh38 seq_region_name 12
+
+rs55686423: GRCh38 12:49,569,751 A/T (GRCh37 49,963,534), A ancestral; T at 0.093 in gnomAD genomes' non-Finnish
+Europeans (q505), 0.074 in East Asians (q506), 0.097 in Finns (q507); VEP's most severe consequence intronic (q508),
+in PRPF40B and 1.6 kb from MCRS1. A/A about 82 in 100 Europeans, A/T 17, T/T 1 (derived). For row 69.
+
+> [q509] mappings[0] seq_region_name 12 location 12:49591427-49591427 coord_system chromosome end 49591427 start 49591427 assembly_name GRCh38 allele_string G/A ancestral_allele A strand 1
+
+> [q510] populations[15] allele_count 7511 population gnomADg:nfe allele A frequency 0.1105
+
+> [q511] [0] population_name 1000GENOMES:phase_3:CEU d_prime 1.000000 variation2 rs11169081 variation1 rs55686423 r2 0.879121
+
+> [q512] [0] d_prime 1.000000 population_name 1000GENOMES:phase_3:GBR r2 0.826886 variation2 rs11169081 variation1 rs55686423
+
+> [q513] [0] d_prime 0.999999 variation2 rs7965658 r2 0.553324 variation1 rs55686423 population_name 1000GENOMES:phase_3:GBR
+
+> [q514] [0] r2 0.200257 variation2 rs11169063 variation1 rs55686423 d_prime 0.662660 population_name 1000GENOMES:phase_3:CEU
+
+> [q515] [0] d_prime 0.532366 population_name 1000GENOMES:phase_3:GBR r2 0.171550 variation1 rs55686423 variation2 rs6580707
+
+rs11169081 (GRCh38 12:49,591,427 G/A, A ancestral; A 0.11 in non-Finnish Europeans, q510), 22 kb from the lead: r²
+0.88 in CEU and 0.83 in GBR, D′ 1 (q511, q512), its minor A riding with the lead's minor T. Wright 2019's other
+Table 9 lines nearby are weaker tags or none: rs7965658 r² 0.40 (CEU) to 0.55 (GBR, q513), rs11169063 0.20 (q514),
+rs6580707 0.06 to 0.17 (q515). For row 69.

@@ -1652,3 +1652,19 @@ mvAge, G "increase" 0.0066, P 7e-9 (q457); Timmers 2020's multivariate scan, G, 
 
 The GWAS Catalog's only association for rs139137459: Pilling 2017 (GCST006698), "Parental longevity (both parents
 in top 10%)", G at 0.996, β 0.0906 "decrease" (CI 0.059-0.122), P 3e-8. For row 68.
+
+## Reading 2026-11-12, supplement
+
+> [q466] _embedded.associations[0] association_id 131476476 risk_frequency NR pvalue_description pvalue_mantissa 3 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.0065-0.0136] beta 0.010027203 unit decrease p_value 3.0000000000000004e-08 accession_id GCST90321079 pubmed_id 37550455 first_author Rosoff DB ci_lower 0.0065 ci_upper 0.0136
+
+> [q467] _embedded.associations[0].snp_effect_allele[0] rs55686423-A
+
+> [q468] _embedded.associations[1] association_id 102110877 risk_frequency 0.0897 pvalue_description pvalue_mantissa 1 pvalue_exponent -16 multi_snp_haplotype false snp_interaction false range [0.009-0.0144] beta 0.0117 unit decrease p_value 1e-16 accession_id GCST90243985 pubmed_id 36477530 first_author Saunders GRB ci_lower 0.009 ci_upper 0.0144
+
+> [q469] _embedded.associations[1].reported_trait[0] Smoking initiation
+
+> [q470] _embedded.associations[1].snp_effect_allele[0] rs55686423-T
+
+The GWAS Catalog's two associations for rs55686423: Rosoff 2023's mvAge (GCST90321079), A, β 0.0100 "decrease", P
+3e-8 (q466, q467); and Saunders 2022's smoking initiation (GCST90243985, PMID 36477530), T at 0.0897, β 0.0117
+"decrease", P 1e-16 (q468-q470): T lowers the chance of ever having smoked regularly. For row 69.

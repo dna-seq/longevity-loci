@@ -3037,3 +3037,23 @@ Rosoff's mvAge (GCST90321079, 80 variants, 0.143): named, not counted (D25.5, D2
 
 Open Targets 26.09 has no record of 11_119399248_G_A (rs139137459): no credible set, no locus-to-gene, no
 colocalisation. For row 68.
+
+## Reading 2026-11-12, supplement
+
+> [q819] data.variant.credibleSets count 74
+
+> [q820] data.variant.credibleSets.rows[40] studyLocusId 70d4a9c51b534e44d0e9b3fe1f55ab1c pValueMantissa 3.5360000133514404 pValueExponent -10 beta -1.20406
+
+> [q821] data.variant.credibleSets.rows[40].study id schmiedel_2018_ge_th17_memory_ensg00000161791 traitFromSource ENSG00000161791 studyType eqtl
+
+> [q822] data.variant.credibleSets.rows[1].study id GCST90472780 traitFromSource Systolic blood pressure studyType gwas
+
+> [q823] data.variant.credibleSets.rows[1].locus.rows[0] posteriorProbability 0.005304472575683967
+
+> [q824] data.credibleSets count 0
+
+Open Targets 26.09, 12_49569751_A_T (rs55686423): 74 credible sets hold it (q819), none of the eight longevity
+studies, mvAge's GCST90321079 among them (q824). It leads only two, T-cell expression sets for ENSG00000161791
+(Schmiedel 2018, memory Th17 and Tfh; PIP 0.077 and 0.063, q820, q821); the rest are led by other variants, the
+lead at a PIP of 0.001 to 0.09: blood pressure and hypertension (e.g. systolic pressure, PIP 0.005, q822, q823),
+large-HDL lipids, lung function, seated height, ever smoked. No locus-to-gene was read. For row 69.

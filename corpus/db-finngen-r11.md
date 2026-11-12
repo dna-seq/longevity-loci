@@ -348,3 +348,13 @@ FinnGen R11's any-death endpoint (`rows-c74cfa48`), rs1126809 at GRCh38 11:89,28
 
 FinnGen R11 DEATH (`rows-ce519916`), rs139137459 (GRCh38 11:119,399,248): alt A at 0.0016 (cases 0.00163, controls
 0.00160), β −0.029 (SE 0.091), P 0.75: A on the fewer-deaths side, flat (one-sided 0.37, derived). For row 68.
+
+## Reading 2026-11-12, supplement
+
+> [q47] 12 49591427 G A rs11169081 FAM186B,PRPF40B 0.791737 0.101419 -0.00295224 0.0111804 0.125957 0.125066 0.126068
+
+FinnGen R11 DEATH, read by position (`rows-63136947`): no line for rs55686423 (GRCh38 12:49,569,751; neither the
+rsID filter, `rows-5155709c`, nor the position finds it, though T is 0.097 in gnomAD's Finns, db-ensembl-116#q507).
+Its tag rs11169081 (GRCh38 12:49,591,427, r² 0.83-0.88 to the lead, db-ensembl-116#q511, q512): alt A at 0.126, β
+−0.0030 (SE 0.011), P 0.79: A, which rides with the lead's T, on the fewer-deaths side, flat (one-sided 0.40,
+derived). For row 69.
