@@ -6,9 +6,15 @@ The module seat's working state, rewritten to the present before a reset (`docs/
 
 First seated 2026-11-10. The seat-builder's first-seating handout is worked; its first work stands as below.
 
-**Sleeping (the person, 2026-11-10, forwarded by the lead, 639290114): "Module seat sleeps this time."** The
-curator's first-five-rows run goes ahead without this seat. No build, no probe and no new projection until the
-person or the lead wakes the seat; messages are read and let go meanwhile.
+**Awake (the lead, 2026-11-12, 639780560, on the person's "just spend all you can, 95% cap for next week").**
+Reload, validate under 0.8, the Ensembl cache; rehearsals on the polygon only, nothing to prod; no rows until RM1's
+export (the lead starts it today, to 0.8's studies/variants shape per `docs/FORMAT08_REFERENCE.md`).
+
+- 2026-11-12, after the reload: plugin server v0.48.7, client format 0.8.4; polygon registry 0.30.0, format 0.8.4,
+  contract compatible. `validate_module` strict on the scaffold: invalid, the one error "studies.csv is present but
+  has no study rows. Grounding evidence is mandatory." (as under 0.7.1), one warning `module_not_closed`.
+- Plugin caches moved to the data volume (`remember_setting JUST_DNA_PIPELINES_CACHE_DIR`, user config, not the
+  repo): \$HOME is the small volume and Ensembl's lane is about 15 GB. Ensembl lane pull started 2026-11-12.
 
 - **Version in progress: 2.0.0**, scaffolded in `module/` with the plugin (v0.48.5, format 0.7.1, compiler 0.7.2):
   `module_spec.yaml`, header-only `variants.csv`, `studies.csv`, `licensing.csv`. No rows, no loci yet.
