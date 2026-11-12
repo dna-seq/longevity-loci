@@ -1,0 +1,137 @@
+# The seed list's locus 61, CELF2 (10p14). Curated 2026-11-12. Lead rs547541271, the seed's only rsID, a rare C/T in
+# a CELF2 intron at GRCh38 10:11,118,452 (GRCh37 11,160,415); T is the minor and derived allele, 0.0029 in gnomAD's
+# non-Finnish Europeans, 0.00019 in Finns, absent from 1000 Genomes' Europeans, so no LD tag is known. Entered by
+# tracks B and E from Park 2025's women's own-survival GWAS of UK Biobank (GCST90551886), row 13's counterpart in the
+# men. Timmers 2019's LifeGen summary statistics and Deelen 2019's two percentile files hold no line for it (untested,
+# not null). Park's women's window holds one more rare variant 30 kb away at P 2.2e-7, LD unknown.
+locus_id: 61
+locus_name: CELF2
+verdict: kept
+verdict_reason: >-
+  Tier B, the seed's, kept on §4.1's single-study clause, as row 13 under D19.2: a genome-wide hit in one stratum
+  of one study, read at the paper's own threshold. Park 2025's own-survival GWAS of UK Biobank's 212,863 women
+  (14,492 of them dead) gives rs547541271's T reduced lifespan: β +0.0369 per copy on the Martingale residual of a
+  Cox model (SE 0.0067; more deaths than expected), P 3.1e-8, past the paper's 5.0e-8, which it applies to each of
+  its three GWAS (whole cohort, men, women) without correcting for running three. The variant is rare (MAF 0.3 %,
+  imputed). The discussion names the hit without a caveat of its own; the paper's only caveat is study-wide: no
+  independent external replication. Unlike row 60's lone line, the women's window holds a second rare variant 30 kb
+  away at P 2.2e-7 (LD not known). The signal is the women's: the whole cohort gives T +0.0147 (P 0.0096) and the
+  men −0.0117 (P 0.22), the two sexes 4.2 standard errors apart (P 3e-5, derived), so the context is
+  sex_specific:f. The one independent look-up is Park's own in FinnGen R11's any-death endpoint, both sexes:
+  T log OR −0.018 (SE 0.21), P 0.93, T only 0.03 % there. That is no red flag under D21: the women's effect under
+  APOE's Park-to-FinnGen factor (8.1) expects +0.30, power 0.42, heterogeneity P 0.13; under MUC5B's 6.7, power
+  0.32; 80 % power needs a factor of 14. So no replication_failed. Nothing else tests it: LifeGen and Deelen have no
+  line, no tag is known, so exceptional survival is untested. Healthspan 0: Zenin 2019 gives T an earlier end of
+  healthspan, P 0.31, in the same UK Biobank people. Lifespan +. Mechanism general ageing: the authors' PheWAS ties
+  T to myositis at P 1.0e-5 (OR 1.003), short of genome-wide and in the same sample, so no pleiotropy; their
+  discussion names CELF2's neurological and cancer links from the literature, not from this variant. The GWAS
+  Catalog holds Park's association alone, mapped to CELF2. Open Targets holds no record of the variant and none of
+  the women's 17 credible sets lies on chromosome 10: causal C4, effector E4, no gene named; the intron names the
+  locus, not an effector. Descriptive. The protection is the absence of the risk allele: T is rare and shortens
+  life; C, which nearly everyone carries, is the reference. Context: women only, European (T is 0.0017 in South
+  Asians and unseen in East Asians). Age of action unknown.
+axes:
+  tier: {value: B, cites: [pmid-40021682#q34, pmid-40021682#q49, pmid-40021682#q52, pmid-40021682#q11, pmid-40021682#q10, pmid-40021682#q4, pmid-40021682#q13, pmid-40021682#q12, pmid-40021682#q51, pmid-40021682#q53, pmid-40021682#q36, pmid-40021682#q38, db-finngen-r11#q36, db-finngen-r11#q4, pmid-40021682#q32, db-gwascatalog-2026.10.29#q387]}
+  mechanism: {value: general_ageing, cites: [pmid-40021682#q49, pmid-40021682#q50, db-gwascatalog-2026.10.29#q386, db-gwascatalog-2026.10.29#q388, db-opentargets-26.09#q749, db-opentargets-26.09#q750]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: untested,
+            cites: [pmid-30729179#q84, pmid-40021682#q34, pmid-40021682#q52]}
+  actionability: {label: descriptive, cites: [pmid-40021682#q34, pmid-40021682#q51]}
+  context: {values: ["sex_specific:f", eur_only_evidence], cites: [pmid-40021682#q34, pmid-40021682#q52, pmid-40021682#q54, pmid-40021682#q55, db-ensembl-116#q433, db-ensembl-116#q434]}
+flags:
+  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-40021682#q34, pmid-40021682#q52, db-ensembl-116#q429, db-ensembl-116#q430]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q749, db-opentargets-26.09#q750, db-opentargets-26.09#q751, db-opentargets-26.09#q752]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q749, db-opentargets-26.09#q750, db-gwascatalog-2026.10.29#q388, db-ensembl-116#q436]}
+variants:
+  - rsid: rs547541271
+    gene: ""
+    phenotype: CELF2 intron, lifespan in women
+    trait_efo_id: OBA_VT0005372
+    effect_allele: C
+    effect_size: -0.0369
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: C/C
+        state: neutral
+        conclusion: >-
+          You carry two copies of the usual version of this DNA position, the one nearly everyone of European
+          ancestry has (more than 99 in 100). It is the reference the other combinations are compared with. The
+          position, on chromosome 10, lies inside the CELF2 gene. The finding comes from women of European
+          ancestry; less is known elsewhere.
+      - genotype: C/T
+        state: risk
+        conclusion: >-
+          You carry one copy of a rare version of this DNA position (about 6 in 1,000 people of European ancestry
+          do). In one large British study, women with this version tended to die somewhat earlier; no such link was
+          seen in men, and a Finnish study, too small for a version this rare, did not confirm it. It is a likely
+          finding, not a settled one: it rests on a single study and has not been confirmed in a separate group of
+          people. It is a tendency, not destiny.
+      - genotype: T/T
+        state: risk
+        conclusion: >-
+          You carry two copies of a rare version of this DNA position. This is extremely uncommon (fewer than 1 in
+          100,000 people), too rare to have been studied on its own. In one large British study, women with one copy
+          tended to die somewhat earlier; no such link was seen in men, and a Finnish study did not confirm it. What
+          two copies mean is not known. It is a tendency, not destiny.
+studies:
+  - rsid: rs547541271
+    note: pmid-40021682
+    quote: q34
+    phenotype_class: OWN_SURVIVAL
+    study_design: own_survival_cox
+    population: European (UK Biobank, women)
+    ancestry: [EUR]
+    n_cases: 14492
+    sample_size: 212863
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "3.1E-08"
+    p_value_num: 3.1e-08
+    effect_size: 0.0369
+    effect_measure: beta
+    effect_unit: Martingale residual of a Cox model of own survival per T allele (positive = more deaths than expected, shorter life)
+    effect_allele: T
+    direction: risk
+    statistical_test: "BOLT-LMM on Martingale residuals, women only (q4, q10); the text's T β 0.04, P 3.1E-08, MAF 0.3 % (q34, q49); the deposit (GCST90551886, q52) prints C −0.0369, SE 0.0067, its allele columns swapped (the file's 'T' at 0.996), so T +0.0369; threshold 5.0E-08 per GWAS, three GWAS run, no further correction (q11); whole cohort T +0.0147, P 0.0096 (q54); men T −0.0117, P 0.22 (q55); a second rare variant 30 kb away at P 2.2E-07, LD unknown (q53); n_cases the women who died (Supplementary Table 1, q13); no independent replication (q12)"
+    curator: claude-opus-5-5
+  - rsid: rs547541271
+    note: pmid-40021682
+    quote: q38
+    phenotype_class: OWN_SURVIVAL
+    study_design: own_death_case_control
+    population: Finnish (FinnGen r11, both sexes)
+    ancestry: [EUR]
+    sample_size: 453733
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.93"
+    p_value_num: 0.93
+    effect_size: -0.018
+    effect_measure: beta
+    effect_unit: FinnGen's "Death" endpoint per T allele (positive = increased death, by rs35705950 in the same table, q16 and q9)
+    effect_allele: T
+    direction: protective
+    statistical_test: "Park 2025's look-up in FinnGen r11's \"Death\" endpoint (Supplementary Table 2), both sexes, not significant (q36); FinnGen's own line: log OR −0.0176, SE 0.208, P 0.93, T 0.031 % (db-finngen-r11#q36). D21 (derived): the women's +0.0369 under APOE's Park-to-FinnGen factor 8.1 (db-finngen-r11#q4 against q32) expects +0.30, power 0.42, heterogeneity P 0.13; MUC5B's factor 6.7, power 0.32; 80 % power needs a factor of 14: unpowered, no red flag"
+    curator: claude-opus-5-5
+  - rsid: rs547541271
+    note: pmid-30729179
+    quote: q84
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.31"
+    p_value_num: 0.3117
+    effect_size: 0.0419
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per T allele (positive = earlier)
+    effect_allele: T
+    direction: risk
+    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), SE 0.0415, -log10 P 0.5062, T 0.0036; both sexes; UK Biobank, overlapping Park 2025's people"
+    curator: claude-opus-5-5

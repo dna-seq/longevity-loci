@@ -1572,3 +1572,39 @@ VEP's nearest transcript: the lncRNA ENSG00000296725, 1.876 kb away (downstream,
 > [q428] populations[2] population gnomADg:eas allele A allele_count 7 frequency 0.001355
 
 A 0.0014 in gnomAD's East Asians: near absent. For row 60.
+
+## Reading 2026-11-12, supplement
+
+> [q429] mappings[0] start 11118452 location 10:11118452-11118452 allele_string C/T end 11118452 coord_system chromosome strand 1 ancestral_allele C assembly_name GRCh38 seq_region_name 10
+
+rs547541271: GRCh38 10:11,118,452, C/T, C ancestral. For row 61.
+
+> [q430] populations[17] allele_count 200 population gnomADg:nfe allele T frequency 0.002942
+
+T in gnomAD's non-Finnish Europeans: 0.0029 (200 copies).
+
+> [q431] populations[12] allele_count 2 frequency 0.0001886 allele T population gnomADg:fin
+
+In Finns 0.00019 (2 copies).
+
+> [q432] populations[57] allele_count 1006 frequency 1 population 1000GENOMES:phase_3:EUR allele C
+
+1000 Genomes' Europeans carry no T (C at frequency 1), so Ensembl's CEU LD window has nothing to return (`ld-rs547541271-ceu.json` rendered to no text): no tag is known.
+
+> [q433] populations[2] frequency 1 population gnomADg:eas allele C allele_count 5182
+
+gnomAD's East Asians: C at frequency 1, T unseen.
+
+> [q434] populations[9] population gnomADg:sas allele T frequency 0.001663 allele_count 8
+
+South Asians: T 0.0017.
+
+> [q435] [0] most_severe_consequence intron_variant input rs547541271 start 11118452 allele_string C/T assembly_name GRCh38 end 11118452 seq_region_name 10 id rs547541271 strand 1
+
+> [q436] [0].transcript_consequences[0] impact MODIFIER variant_allele T strand 1 gene_symbol CELF2 biotype protein_coding gene_symbol_source HGNC gene_id ENSG00000048740 transcript_id ENST00000416382 hgnc_id HGNC:2550
+
+VEP: an intron variant of CELF2 (ENSG00000048740), modifier.
+
+> [q437] mappings[0] coord_system chromosome assembly_name GRCh37 seq_region_name 10 ancestral_allele C end 11160415 allele_string C/T strand 1 start 11160415 location 10:11160415-11160415
+
+GRCh37 10:11,160,415, the position Park's deposits print.

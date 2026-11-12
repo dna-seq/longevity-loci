@@ -2762,3 +2762,19 @@ Open Targets' search finds no record of rs75824829. For row 60.
 > [q748] data variant null
 
 Nor by its GRCh38 id 9_135376756_G_A: no credible set, no locus-to-gene, no colocalisation. For row 60.
+
+## Reading 2026-11-12, supplement
+
+> [q749] data.search total 0
+
+Open Targets 26.09 finds no variant for rs547541271. For row 61.
+
+> [q750] data variant null
+
+Nor by its id 10_11118452_C_T: no fine-mapping, no locus-to-gene.
+
+> [q751] data.study id GCST90551886 traitFromSource Lifespan nSamples 212863
+
+> [q752] data.study.credibleSets count 17
+
+Park's women's study holds 17 credible sets; none lies on chromosome 10 (derived, from the 17 lead ids).
