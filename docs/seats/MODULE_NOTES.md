@@ -32,6 +32,9 @@ export (the lead starts it today, to 0.8's studies/variants shape per `docs/FORM
   proxy allele A at rs6511720 (G/T; the reverse strand's, the curator's), 47 AP5Z1's T/TC refused at rs371933919's
   third locus TCCC>T: by design (the liaison, 639792035), a row names its locus by authoring chrom, start, ref (7:4787883, T), the export's to write. Best-effort compile green, warnings the same. Not
   rehearsed; polygon only, once strict passes.
+- **Namespace, asked of the person 2026-11-12:** production holds longevitymap 1.2.1 under `just-dna-seq`; the
+  polygon account owns none, both `just-dna-seq` and `test-longevity-loci` free there. Default on silence:
+  claim `test-longevity-loci` on the polygon once strict passes, rehearse there.
 - Plugin caches moved to the data volume (`remember_setting JUST_DNA_PIPELINES_CACHE_DIR`, user config, not the
   repo): `$HOME` is the small volume and Ensembl's lane is about 15 GB. Ensembl lane present 2026-11-12: ensembl-variation-2026_07_13-vep116.0, 14.5 GB (du shows 7.6 GB on BeeGFS).
 
