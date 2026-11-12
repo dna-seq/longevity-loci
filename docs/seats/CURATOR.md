@@ -53,18 +53,13 @@ notes, and not asked of the person (the person, 2026-11-11: "Advisor pattern"). 
 
 ## The shared allowance
 
-Every seat on the person's machines runs on one account, whose 5-hour window this seat's reading can fill. **At 95 %
-of the binding window, stop and wait for its reset** (the person, 2026-11-04: "pause at 95% mark until reset to leave
-room for operations"): finish the locus or the search in hand, commit it, and take no new one until the window has
-reset. Read the window with the kit's `drivers/claude-code/quota.py --line`, and the watchdog's quota lines say when
-it crosses and when it resets. An unknown reading is not under 95 %: wait for a known one. Tracked: the quota
-watcher's lines show it.
-
-**At 95 % of the 7-day window, stop the same way** until it resets (the person, 2026-11-12: "just spend all you
-can, 95% cap for next week"; 90 % before, the same day: "Increase spending
-expectation to 90% of weekly"; 80 % before, 2026-11-11: "Up to 80% weekly
-quota"). Read it with the same `quota.py --line`. Below that line the rate is free; a row cost about 0.15 % of the
-7-day window in the pilot. Agreed: nothing but this seat reads the 7-day line.
+**Pacing is off until the person turns it back on** (the person, 2026-11-12: "For now disable pacing entierly, full
+steam ahead, I plan to do a reset"). Neither the 5-hour nor the 7-day window stops this seat: take the next locus as
+soon as the last is committed, whatever `quota.py --line` reads. A window that actually runs out stops the seat by
+itself; then wait for its reset and go on. The rules this replaces, kept so they can be put back word for word: at
+95 % of the binding 5-hour window, stop and wait for its reset (the person, 2026-11-04: "pause at 95% mark until
+reset to leave room for operations"); at 95 % of the 7-day window, the same (the person, 2026-11-12: "just spend all
+you can, 95% cap for next week"; 90 %, then 80 % before). Agreed: nothing checks it.
 
 ## Never
 

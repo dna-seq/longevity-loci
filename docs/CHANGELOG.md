@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- Pacing off, on the person's word (2026-11-12): the curator no longer stops at 95 % of the 5-hour or the 7-day window, and the dashboard counts against the whole window.
 - D29.9–10: a quoted trade-off keeps a skin_sun row descriptive; a coding lead's E1 is not vetoed by another gene's QTL (66 TYR).
 - RM1 done: the export validates and compiles strict on just-dna-format 0.8.4 (64 loci, 192 variant rows, 331 studies, every locus resolved), and the module seat's first rehearsal is on the registry's test instance as test-longevity-loci/longevitymap 2.0.0 (module 0fa5e77). Nothing on production.
 - A variant may author its `locus` (chrom, start, ref, cited) where its rsID names several loci, and `loci export` writes it on the variant's rows and studies, so 0.8 verifies that locus instead of expanding onto all of them (D29.8; 47 AP5Z1).
