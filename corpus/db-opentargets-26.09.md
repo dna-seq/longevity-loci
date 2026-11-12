@@ -2705,3 +2705,26 @@ row 55.
 `variant-8_58925574_A_G-all.json`: Open Targets 26.09 answers q735's text for rs13262617 too, and its variant
 search (q575's text) finds nothing for rs13262617 nor for its best CEU tags rs79725344 and rs10504278 (r² 0.71,
 db-ensembl-116#q392): no record, so no credible set holds the lead: C4, E4. For row 56.
+
+## Reading 2026-11-12, record
+
+> [q736] data.variant.credibleSets.rows[0] studyLocusId 06b8a7a353e4c3bffd5e0ebbe8a5970a studyId GCST012419 pValueMantissa 2 pValueExponent -9 beta 5.969329 finemappingMethod PICS
+
+> [q737] data.variant.credibleSets.rows[0].locus.rows[0] posteriorProbability 0.3413763657877318
+
+> [q738] data.variant.credibleSets.rows[0].qualityControls[1] Study locus finemapped without in-sample LD reference
+
+> [q739] data.variant.credibleSets.rows[0].qualityControls[2] Study locus from curated top hit
+
+> [q740] data.variant.credibleSets.rows[0].l2GPredictions.rows[0] score 0.47552305459976196
+
+> [q741] data.variant.credibleSets.rows[0].l2GPredictions.rows[0].target approvedSymbol ALDH1B1
+
+> [q742] data.credibleSet.colocalisation count 0
+
+`variant-9_38322519_G_T-all.json`: rs10973748 is in one credible set, Gurinovich's NECS study's (PICS, 9 variants,
+built from the GWAS Catalog's curated top hit without in-sample LD, the study QC-flagged), where its posterior
+probability, the set's highest, is 0.341: C2. Locus-to-gene gives ALDH1B1 0.476, under 0.5, then IGFBPL1 0.133 and
+SHB 0.091; `coloc-06b8a7a353e4c3bffd5e0ebbe8a5970a.json` finds no colocalisation (all study types). Assessed, no
+criterion met: E3, no gene named. The variant search finds the same record (`search-rs10973748.json`, total 1,
+9_38322519_G_T). For row 58.

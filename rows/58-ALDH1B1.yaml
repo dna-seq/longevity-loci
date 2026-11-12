@@ -1,0 +1,207 @@
+# The seed list's locus 58, ALDH1B1 (9p13.2; the seed's genes "ALDH1B1;U8"). Curated 2026-11-12. Lead rs10973748
+# (GRCh38 9:38,322,519, GRCh37 9:38,322,516), the seed's only rsID: an intergenic SNP between SHB and ALDH1B1, in the
+# non-coding RNA LOC107987065; derived T 0.06 in Europeans, 0.09 in East Asians. Gurinovich 2021's NECS centenarian
+# SNP, the top non-APOE line of its Supplement Table 1, as rows 19, 31 and 41. Its CEU r² 1.0 tags rs341466, rs341467
+# and rs10973750 are also past 5e-8 in NECS and are named in the notes only. Not in Wright 2019's Supplemental Tables
+# 8 and 9 (its nearest lines, rs4388534 and rs4878777, are not tags) nor in Timmers 2019's Figure 2 sheet.
+locus_id: 58
+locus_name: ALDH1B1
+verdict: kept
+verdict_reason: >-
+  Tier B, the seed's, kept on row 31's ruling (D25.10) and capped there with replication_failed; whether this
+  discovery is an overfit source instead (D, as 41) is put to the lead. Gurinovich 2021 compared 1,320 New England
+  Centenarian Study centenarians (median age 104) with 2,899 European-ancestry controls (306 NECS referents and 2,593
+  from Illumina's control repository, matched by principal components, ages not given), imputed to the HRC panel.
+  T, the coded allele, is in 5.87 % of the centenarians' alleles and 3.12 % of the controls', score Z +5.97, P
+  2.38e-9, genome-wide at the paper's 5e-8; the locus's three other SNPs past the cut are its CEU r² 1.0 tags. No
+  effect size is printed (the GWAS Catalog's "beta 5.969" is the Z); the row enters the crude odds ratio 1.94 per T,
+  derived from the printed frequencies (log 0.661, Woolf SE 0.112), as D25.10 asks. The weakness is the controls: T
+  is 0.055 to 0.061 in every European file read (1000 Genomes, gnomAD, LifeGen, Deelen, FinnGen, Zenin), which is
+  where the centenarians sit, while the controls carry about half that. All four SNPs show the same deficit, so it
+  is on the haplotype, not one SNP's imputation as at row 31. The association would not appear against
+  population frequencies; this is the cohort and batch confounding R-TIER-2 names. The authors do not doubt it,
+  and the gap is a factor of two, not the two orders of magnitude at 41, so D26.10's letter does not reach it. The
+  Ashkenazi Longevity Genes Project, NECS's own replication (312 cases, 638 controls), prints for the lead T 0.04
+  against 0.03, Z 1, P 0.3 (one-sided 0.15): T's way, not nominal, its controls again below gnomAD's
+  Ashkenazi 0.044. Its r² 1.0 tags rs341466 and rs341467 give P 0.034 in the LGP (one-sided 0.017), but at twice
+  the lead's frequency there, so CEU's r² does not hold in the paper's own calls: named, not counted. Deelen 2019's
+  99th percentile, at the lead, leans T's way: log OR +0.142 (SE 0.083), P 0.086, one-sided 0.043, the one nominal
+  independent scoring-class look-up (D25.13), and so not D (D25.1). It is thin: the 90th percentile, whose cases
+  include the 99th's, is flat (P 0.90), and Deelen holds the LGP, so these are not two independent supports. Deelen
+  names no NECS cohort; the controls' overlap is unknown, as at row 31. Against it, three powered nulls (D21). The
+  NECS log OR, carried over APOE's factor (9.38, NECS's rs429358 against LifeGen's), expects +0.070 on Timmers'
+  scale. LifeGen is flat: +0.0025, P 0.78, power 1.00, heterogeneity P 5e-6, still a flag at half the effect; under
+  the loci's mean factor P 3e-8. FinnGen R11 death leans the other way (P 0.77), power 1.00, heterogeneity P 2e-4
+  under APOE, 1e-7 under the mean factor (no flag at half under APOE, power 0.70). Deelen's 90th is flat against an
+  expected +0.34 (heterogeneity P 1e-5; one conversion, the mean factor cancels). So a red flag under both
+  calibrations (D25.3): replication_failed. Zenin 2019's healthspan is flat, T leaning to an earlier end (P 0.65).
+  Lifespan 0, healthspan 0, exceptional survival + on NECS and Deelen's 99th. Open Targets 26.09 holds the lead in
+  one credible set, NECS's own (PICS, 9 variants, built from the GWAS Catalog's top hit without in-sample LD, the
+  study QC-flagged), at posterior probability 0.341, the set's highest: C2. Locus-to-gene gives ALDH1B1 0.476,
+  under 0.5, and the set has no colocalisation: assessed, no criterion met, E3, no gene named. The GWAS Catalog
+  holds no other trait for the lead or its eight CEU proxies at r² ≥ 0.8, so general ageing; the paper's own serum
+  protein signals at the locus are trans and from 224 samples, named in the note only. The protection is a
+  presence: the derived, minor T goes with reaching 100. Age of action is unknown.
+axes:
+  tier: {value: B, cites: [pmid-33948810#q1, db-gwascatalog-2026.10.29#q139, pmid-33948810#q3, pmid-33948810#q23, pmid-33948810#q24, pmid-33948810#q25, pmid-33948810#q26, pmid-33948810#q27, pmid-33948810#q28, pmid-33948810#q29, pmid-33948810#q30, pmid-33948810#q31, pmid-33948810#q7, pmid-33948810#q8, pmid-33948810#q9, pmid-33948810#q10, pmid-33948810#q11, pmid-33948810#q12, pmid-33948810#q13, pmid-33948810#q14, pmid-33948810#q16, db-ensembl-116#q400, db-ensembl-116#q401, db-ensembl-116#q402, db-ensembl-116#q404, db-ensembl-116#q405, db-ensembl-116#q406, pmid-31413261#q151, pmid-31413261#q152, pmid-31413261#q80, pmid-30642433#q255, pmid-30642433#q90, pmid-30642433#q91, db-finngen-r11#q33, db-gwascatalog-2026.10.29#q360]}
+  mechanism: {value: general_ageing, cites: [db-gwascatalog-2026.10.29#q360, db-gwascatalog-2026.10.29#q361, db-opentargets-26.09#q736]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "+",
+            cites: [pmid-30729179#q81, pmid-30642433#q255, db-finngen-r11#q33, pmid-33948810#q23, pmid-31413261#q152, pmid-31413261#q151]}
+  actionability: {label: descriptive, cites: [pmid-33948810#q23]}
+  context: {values: [eur_only_evidence], cites: [db-gwascatalog-2026.10.29#q139, pmid-33948810#q29, pmid-31413261#q152, db-ensembl-116#q403]}
+flags:
+  - {token: "PROTECT:PRESENCE", cites: [pmid-33948810#q23, db-ensembl-116#q399, db-ensembl-116#q400]}
+  - {token: replication_failed, cites: [pmid-30642433#q255, db-finngen-r11#q33, pmid-31413261#q151]}
+  - {token: "causal:C2", cites: [db-opentargets-26.09#q736, db-opentargets-26.09#q737, db-opentargets-26.09#q738, db-opentargets-26.09#q739]}
+  - {token: "effector:E3", cites: [db-opentargets-26.09#q740, db-opentargets-26.09#q741, db-opentargets-26.09#q742, db-ensembl-116#q407]}
+variants:
+  - rsid: rs10973748
+    gene: ""
+    phenotype: SHB / ALDH1B1 region, reaching 100
+    trait_efo_id: OBA_VT0005372
+    effect_allele: T
+    effect_size: 1.936
+    effect_measure: OR
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA region, as about 89 in 100 people of European
+          ancestry do. It is the reference the other combinations are compared with. The region, on chromosome 9,
+          lies between genes, and no gene is known to matter here.
+      - genotype: G/T
+        state: protective
+        conclusion: >-
+          You carry one copy of a less common version of this DNA region (about 11 in 100 people of European ancestry
+          do). In one American study, people who reached 100 carried it more often than the comparison group did,
+          and a European study of the very oldest leaned the same way. But that comparison group carried it
+          unusually rarely, and large studies of parents' lifespans and of deaths found no effect. Treat it as
+          uncertain; the effect, if real, is small.
+      - genotype: T/T
+        state: protective
+        conclusion: >-
+          You carry two copies of a less common version of this DNA region (about 1 in 280 people of European
+          ancestry do). In one American study, people who reached 100 carried this version more often than the
+          comparison group did, and a European study of the very oldest leaned the same way. But that comparison
+          group carried it unusually rarely, and large studies of parents' lifespans and of deaths found no
+          effect. Treat it as uncertain; the effect, if real, is small.
+studies:
+  - rsid: rs10973748
+    note: pmid-33948810
+    quote: q23
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: centenarian_case_control
+    population: European ancestry by the GWAS Catalog's record (db-gwascatalog-2026.10.29#q139; New England Centenarian Study; centenarians, median age 104, against 306 NECS referents and 2,593 Illumina repository controls, q9, ages not given)
+    ancestry: [EUR]
+    sample_size: 4219
+    sample_unit: individuals
+    n_cases: 1320
+    age_of: participant
+    stat_significance: significant
+    p_value: "2.38E-09"
+    p_value_num: 2.38e-09
+    effect_size: 1.936
+    effect_measure: OR
+    effect_unit: "crude odds of reaching 100 per T allele, derived here (D25.10), not printed: (0.0587/0.9413)/(0.0312/0.9688) from the cases' and controls' printed T frequencies, unadjusted; log 0.661, Woolf SE 0.112 from about 155 and 181 T copies"
+    effect_allele: T
+    direction: protective
+    statistical_test: "Score test (Supplement Table 1, q3, q23): T, the coded allele, in 0.0587 of cases' and 0.0312 of controls' alleles, score Z +5.97, P 2.38e-9; HRC-imputed (q1); threshold 5e-8 (q13, q14). The GWAS Catalog's beta 5.969 is this Z (db-gwascatalog-2026.10.29#q360). The three other SNPs past 5e-8 at the locus are the lead's CEU r² 1.0 tags (q24-q26; db-ensembl-116#q404-q406), each with the same control deficit. Controls' T 0.031 against 0.057 to 0.061 in reference Europeans (db-ensembl-116#q400, q401) and in every look-up file; cases at the reference value"
+    curator: claude-opus-5-5
+  - rsid: rs10973748
+    note: pmid-33948810
+    quote: q29
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: centenarian_case_control
+    population: Ashkenazi Jewish (the Longevity Genes Project, NECS's replication cohort; 312 centenarians, 638 controls, q16)
+    ancestry: [EUR]
+    sample_size: 950
+    sample_unit: individuals
+    n_cases: 312
+    age_of: participant
+    stat_significance: not_significant
+    p_value: "0.3"
+    p_value_num: 0.3
+    p_one_sided: 0.15
+    effect_allele: T
+    direction: protective
+    statistical_test: "Main Table 2, LGP columns as printed and rounded: T 0.04 in cases, 0.03 in controls, score Z 1, P 0.3; one-sided 0.15, half the printed P (derived, D26.13). Controls below gnomAD's Ashkenazi 0.044 (db-ensembl-116#q402). The r² 1.0 tags rs341466 and rs341467 give LGP Z +2.12, P 0.034 (q30, q31) at LGP frequency 0.062, twice the lead's, so not counted for the lead"
+    curator: claude-opus-5-5
+  - rsid: rs10973748
+    note: pmid-31413261
+    quote: q152
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's discovery cohorts; no NECS among them, q80; the Longevity Genes Project among them)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.08593"
+    p_value_num: 0.08593
+    p_one_sided: 0.043
+    effect_size: 0.1421
+    effect_measure: beta
+    effect_unit: log odds of reaching the 99th percentile age per T allele
+    effect_allele: T
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GCST008599), t 0.05, SE 0.0827, effective N 3,220; one-sided 0.043 in NECS's direction (derived, D25.13). Deelen holds the LGP (q80), whose share here is not shown. Against NECS's effect carried over (+0.341 on this scale, derived), heterogeneity P 0.049. Independent of NECS as far as both papers show (D19.1); controls' overlap unknown, as row 31"
+    curator: claude-opus-5-5
+  - rsid: rs10973748
+    note: pmid-31413261
+    quote: q151
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's discovery cohorts)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.901"
+    p_value_num: 0.901
+    p_one_sided: 0.45
+    effect_size: 0.0062
+    effect_measure: beta
+    effect_unit: log odds of reaching the 90th percentile age per T allele
+    effect_allele: T
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GCST008598), t 0.06, SE 0.0495, effective N 10,082; contains the 99th's cases. D21 (derived): NECS's log OR over APOE's factor (pmid-30642433#q90) times Timmers' 4.84 expects +0.341 (SD 0.058), power 1.00, heterogeneity P 1e-5 (at half 0.96, 0.004); one conversion, the mean factor cancelling"
+    curator: claude-opus-5-5
+  - rsid: rs10973748
+    note: pmid-30642433
+    quote: q255
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 635243
+    sample_unit: lives
+    stat_significance: not_significant
+    p_value: "0.77585317"
+    p_value_num: 0.7759
+    p_one_sided: 0.39
+    effect_size: 0.0025011
+    effect_measure: beta
+    effect_unit: log hazard protection per T allele in self (positive = longer life)
+    effect_allele: T
+    direction: protective
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.00878, info 0.949, direction +-. D21 (derived): NECS's crude log OR 0.661 over APOE's factor 9.38 (pmid-33948810#q8 over q90) expects +0.070 (SD 0.012): power 1.00, heterogeneity P 5e-6 (at half 0.99, 0.002); under the loci's mean factor (q91) +0.169, P 3e-8 (at half 1e-6): a red flag under both (D25.3). FinnGen R11 death the same (db-finngen-r11#q33: power 1.00, P 2e-4 under APOE, 1e-7 under the mean factor)"
+    curator: claude-opus-5-5
+  - rsid: rs10973748
+    note: pmid-30729179
+    quote: q81
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.65"
+    p_value_num: 0.649
+    effect_size: 0.00491
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per T allele (positive = earlier)
+    effect_allele: T
+    direction: risk
+    statistical_test: "Zenin 2019's healthspan summary statistics, T 0.055, SE 0.0108, -log10 P 0.1875 (P about 0.65); one-sided 0.68 against NECS's direction (derived)"
+    curator: claude-opus-5-5

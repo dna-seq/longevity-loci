@@ -245,3 +245,11 @@ FinnGen R11 death endpoint (`rows-d05d9439`), rs13262617 at 8:58,925,574 (GRCh38
 pmid-30642433#q90) and the loci's mean factor (derived): from the fathers' 0.0824, APOE power 0.99, heterogeneity P
 1.6e-4, mean power 0.52 (P 0.027), so no flag; from a both-parents 0.029 to 0.042 (pmid-30642433#q254), APOE power 0.42 to 0.66, no flag. No UK
 Biobank. For row 56.
+
+> [q33] 9	38322519	G	T	rs10973748	RP11-113O24.3	0.766757	0.115342	0.00478869	0.0161442	0.0551319	0.0572405	0.0548678
+
+FinnGen R11 death endpoint (`rows-f70b6fb7`), rs10973748 at 9:38,322,519 (GRCh38): alt T 0.055, β +0.0048 (SE
+0.0161), P 0.77: T, NECS's long-lived allele, leans to more deaths (one-sided 0.62 against, derived). D21 (derived),
+NECS's log OR into Timmers' scale (pmid-30642433#q255) and into FinnGen by −0.99: under APOE's factor expects −0.070,
+power 1.00, heterogeneity P 2e-4; at half, power 0.70, no flag; under the mean factor −0.167, power 1.00, P 1e-7 (at
+half 4e-5). A flag at full effect under both. For row 58.

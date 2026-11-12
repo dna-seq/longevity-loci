@@ -1454,3 +1454,33 @@ An intron variant of RP1 (ENSG00000104237) on its protein-coding transcript ENST
 0.090 in 1000 Genomes Europeans (C/A/T, C ancestral, GRCh38 8:58,927,549); rs13252116's minor A 0.060 (G/A, GRCh38
 8:58,901,250). For row 56.
 
+
+## Reading 2026-11-12, record
+
+> [q399] mappings[0] strand 1 coord_system chromosome allele_string G/A/T location 9:38322519-38322519 end 38322519 start 38322519 assembly_name GRCh38 seq_region_name 9 ancestral_allele G
+
+> [q400] populations[78] frequency 0.0606361829025845 allele T population 1000GENOMES:phase_3:EUR allele_count 61
+
+> [q401] populations[23] frequency 0.05653 population gnomADg:nfe allele T allele_count 3844
+
+> [q402] populations[19] population gnomADg:asj allele T frequency 0.04383 allele_count 152
+
+> [q403] populations[74] population 1000GENOMES:phase_3:EAS allele T frequency 0.0932539682539683 allele_count 94
+
+`var-rs10973748.json`: GRCh38 9:38,322,519, G/A/T, G ancestral, so T is derived. T 0.061 in 1000 Genomes Europeans,
+0.057 in gnomAD non-Finnish Europeans, 0.044 in Ashkenazi Jews, 0.093 in East Asians. For row 58.
+
+> [q404] [6] population_name 1000GENOMES:phase_3:CEU d_prime 1.000000 variation2 rs341466 r2 1.000000 variation1 rs10973748
+
+> [q405] [4] variation1 rs10973748 r2 1.000000 variation2 rs341467 population_name 1000GENOMES:phase_3:CEU d_prime 1.000000
+
+> [q406] [7] variation2 rs10973750 population_name 1000GENOMES:phase_3:CEU d_prime 1.000000 variation1 rs10973748 r2 1.000000
+
+`ld-rs10973748-ceu.json` (CEU, r² ≥ 0.3, 500 kb): nine tags, rs341466, rs341467, rs10973750 and rs10973749 at r²
+1.0, rs12378970, rs10814677 and rs76830434 at 0.91, rs10973754 at 0.84, rs564198251 at 0.35. Wright 2019's nearby
+nominal lines (rs4388534 at GRCh37 9:38,252,526, rs4878777 at 9:38,282,692; pmid-31484785 S Table 8) are not
+among them, so not tags of the lead. For row 58.
+
+> [q407] [0].intergenic_consequences[1] impact MODIFIER variant_allele T
+
+`vep-rs10973748.json`: T is an intergenic variant (Open Targets: upstream of a gene). For row 58.
