@@ -139,3 +139,7 @@ None yet.
   a description patch likely, since no level states a threshold; meanwhile `significant` is, in their reading, a
   defensible value for a replication that passed its own test. S148 is RM435, a minor: `effect_direction`
   (`increase|decrease`) on the study row, as their GWAS table has it. Their pm sizes both; watched by tag.
+  Then: RM434 on their `main` as 5e124dfb, for the 0.8.5 cut; `stat_significance` is described as the authors'
+  verdict at their own test's threshold, so a pre-specified look-up that passes is `significant` (the export's
+  choice, the lead's, 2026-11-12), and `p_value_num` is thresholded for a common scale; a fifth `nominal` level
+  declined. RM435 is on their 0.9 roadmap.
