@@ -1633,7 +1633,7 @@ G 0.92 % in gnomAD's non-Finnish Europeans ...
 
 > [q443] populations[106] allele_count 2 allele G frequency 0.00934579439252336 population 1000GENOMES:phase_3:TSI
 
-... and 0.9 % (2 copies) in its Tuscans; Beccacece's Calabrians carry it at 3.3 % (pmid-42176242#q7). For row 62.
+... and 0.9 % (2 copies) in its Tuscans; Beccacece's discovery sample carries it at 3.3 %, cases and controls together (pmid-42176242#q7). For row 62.
 
 > [q444] populations[20] allele_count 475 allele G population gnomADg:eas frequency 0.09205
 
