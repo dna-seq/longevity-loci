@@ -2081,3 +2081,15 @@ window query rendered no text), so its r² to any SNP is unknown. rs116257533: G
 74,331,991 (q573), G/T, G ancestral; T is an African-ancestry allele, 0.064 in 1000 Genomes Africans (q576), absent in
 Europeans there (q577), 0.00018 in gnomAD's non-Finnish Europeans (q575). Park's 13:74,212,656 is rs9573270 (q578),
 intronic in KLF12 by position. For row 75.
+
+## Reading 2026-11-12, record
+
+> [q579] [0] seq_region_name 13 assembly_name GRCh37 strand 1 end 74331131 source dbSNP feature_type variation start 74331131 id rs78594190 consequence_type intron_variant
+
+> [q580] populations[2] allele_count 12 frequency 0.0001764 population gnomADg:nfe allele G
+
+> [q581] [0] d_prime 1.000000 population_name 1000GENOMES:phase_3:YRI variation1 rs116257533 variation2 rs78594190 r2 1.000000
+
+Park's second passing line at row 75, GRCh37 13:74,331,131, is rs78594190 (q579): G at 0.00018 in gnomAD's non-Finnish
+Europeans (q580), 0.065 in Africans, and in complete LD with rs116257533 in Yoruba, r² 1.0, D′ 1.0 (q581): one
+African-ancestry haplotype. For row 75.

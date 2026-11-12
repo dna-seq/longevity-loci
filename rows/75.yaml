@@ -13,8 +13,8 @@ verdict_reason: >-
   rs116257533's T, the minor allele, is at about 4.8 in 100,000 in the whole-cohort deposit (under its swapped
   allele columns, row 36). That is some 38 copies among 393,833 people (derived), about 21 times below the paper's
   own MAF 0.1 % filter. The line reads P 4.3e-9, with each T going with a Martingale residual 0.43 higher (more
-  deaths), about 30 times APOE ε4's per-allele effect. A second variant 860 bp away passes at the same frequency (P
-  5e-9). T is an African-ancestry allele (0.064 in 1000 Genomes Africans, 0.00018 in gnomAD's non-Finnish
+  deaths), about 33 times APOE ε4's per-allele effect. A second variant 860 bp away, rs78594190, passes at the same
+  frequency (P 5e-9), its G an African-ancestry allele in complete LD with T in Yoruba (r² 1.0). T is an African-ancestry allele (0.064 in 1000 Genomes Africans, 0.00018 in gnomAD's non-Finnish
   Europeans), so this is a rare African haplotype carried by a few dozen of the cohort's European-ancestry
   participants, as at row 44. Open Targets fine-maps the whole cohort to a set at P 4.5e-9 (PIP 0.54), and the
   second sex scan (the women, a subset, no replication) to one at P 6.6e-11. Both sets are QC-flagged and built
@@ -24,20 +24,24 @@ verdict_reason: >-
   more: β +0.0031, SE 0.00068, P 5.4e-6). Four common SNPs within 16 kb sit at the same frequency and P. That is a
   suggestive deposit line at a variant Park's filter admits, one the paper does not report. Nothing outside UK
   Biobank supports it. LifeGen holds no line for the repeat. At Park's neighbour rs9573270, LifeGen leans Park's way
-  (T shorter-lived, P 0.0061, rs7987604 the same), but it contains UK Biobank's parents, so it is not independent of
-  Park. Deelen 2019 leans the other way at rs9573270 (90th percentile P 0.18, 99th 0.46). FinnGen r11's death
+  (T shorter-lived, P 0.0061, rs7987604 the same), but its UK Biobank part is the parents of Park's people, so it
+  co-occurs with Park and does not replicate it (row 36's reading). Zenin 2019's healthspan, in the same UK Biobank
+  sample, leans Park's way too at rs9573270 (P 0.25), flat. Deelen 2019 leans the other way at rs9573270 (90th percentile P 0.18, 99th 0.46). FinnGen r11's death
   endpoint, matched to the repeat by position and alleles, has CTT with slightly more deaths (P 0.26). Ensembl
-  returns no LD for the repeat, so the neighbours' r² to it is unknown: they are read for direction only, with no
-  power and no flag (D28.1's spirit: a link no source prints sets nothing). Zenin 2019 holds none of these variants.
+  returns no LD for the repeat, so the neighbours' r² to it is unknown: they are read for direction only, and no
+  power is computed. Zenin holds neither of the seed's rsIDs.
   Read on its own the repeat would be C, suggestive and unreplicated. The locus as the seed entered it rests on the
   excluded rare line, so it stays D (put to the lead: D26.7 assumed 75's lead was row 44's kind, and it is not).
-  Every genotype is neutral (D25.2). Lifespan is 0: the repeat's one valid test leans for, and a D row loses its +
-  (D28.10). Healthspan and exceptional survival are untested (no line in Zenin or Deelen for either rsID).
+  Both rsIDs are the seed's own at this locus, so both stay in the row; D25.6's scout queue is for a second signal
+  with no seed id. Every genotype is neutral (D25.2). The genotype shares are 1000 Genomes' (the 15-T allele 0.40 in
+  Europeans; rs116257533's T 0.064 in Africans). Lifespan is 0: the repeat's one valid test leans for, and a D row loses its +
+  (D28.10). Healthspan and exceptional survival are untested: neither rsID has a line in Zenin or Deelen, and the
+  neighbours' r² to the repeat is unknown.
   Causal C4 and effector E4, with no gene named (D28.12, as row 44): no longevity set holds either variant, and both
   sets rest on a line the row does not read as genome-wide. On them, in prose only, KLF12 is the candidate by
   locus-to-gene (0.68 and 0.74 in the seed). Mechanism general ageing, descriptive, age of action unknown.
 axes:
-  tier: {value: D, cites: [pmid-40021682#q74, pmid-40021682#q75, pmid-40021682#q76, pmid-40021682#q39, pmid-40021682#q40, pmid-40021682#q41, pmid-40021682#q42, pmid-40021682#q32, db-ensembl-116#q574, db-ensembl-116#q575, db-ensembl-116#q576, db-ensembl-116#q577, db-opentargets-26.09#q883, db-opentargets-26.09#q885, db-opentargets-26.09#q887, db-opentargets-26.09#q889, db-gwascatalog-2026.10.29#q479, db-gwascatalog-2026.10.29#q480, pmid-30642433#q311, pmid-30642433#q312, pmid-31413261#q177, pmid-31413261#q178, db-finngen-r11#q52]}
+  tier: {value: D, cites: [pmid-40021682#q74, pmid-40021682#q75, pmid-40021682#q76, pmid-40021682#q39, pmid-40021682#q40, pmid-40021682#q41, pmid-40021682#q42, pmid-40021682#q32, db-ensembl-116#q574, db-ensembl-116#q575, db-ensembl-116#q576, db-ensembl-116#q577, db-opentargets-26.09#q883, db-opentargets-26.09#q885, db-opentargets-26.09#q887, db-opentargets-26.09#q889, db-gwascatalog-2026.10.29#q479, db-gwascatalog-2026.10.29#q480, pmid-30642433#q311, pmid-30642433#q312, pmid-30729179#q106, db-ensembl-116#q579, db-ensembl-116#q581, pmid-31413261#q177, pmid-31413261#q178, db-finngen-r11#q52]}
   mechanism: {value: general_ageing, cites: [pmid-40021682#q76]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -132,7 +136,7 @@ studies:
     effect_unit: Martingale residual of a Cox model of own survival per C (13-T) allele (positive = more deaths than expected, shorter life)
     effect_allele: C
     direction: risk
-    statistical_test: "BOLT-LMM on Martingale residuals (pmid-40021682#q39); the deposit's line (GCST90551884, q76) prints CTT at 0.583 where the 15-T allele is 0.40 in Europeans (db-ensembl-116#q574), so the labels are swapped (q32) and the β is C's; a multi-allelic repeat read as two alleles, approximate. Not among the paper's loci (q40, q42): a deposit line, suggestive. Four common SNPs within 16 kb at the same P (rs9573270, q77); LifeGen there P 0.0061 Park's way but not independent (pmid-30642433#q311), Deelen against, flat (pmid-31413261#q177), r² to the repeat unknown"
+    statistical_test: "BOLT-LMM on Martingale residuals (pmid-40021682#q39); the deposit's line (GCST90551884, q76) prints CTT at 0.583 where the 15-T allele is 0.40 in Europeans (db-ensembl-116#q574), so the labels are swapped (q32) and the β is C's; a multi-allelic repeat read as two alleles, approximate. Not among the paper's loci (q40, q42): a deposit line, suggestive. Four common SNPs within 16 kb at the same P (rs9573270, q77); LifeGen there P 0.0061 Park's way, co-occurring, its UK Biobank part Park's people's parents (pmid-30642433#q311); Zenin Park's way, flat (pmid-30729179#q106), Deelen against, flat (pmid-31413261#q177), r² to the repeat unknown"
     curator: claude-opus-5-5
   - rsid: rs116257533
     note: pmid-40021682
@@ -152,5 +156,5 @@ studies:
     effect_unit: Martingale residual of a Cox model of own survival per T allele (positive = more deaths than expected, shorter life)
     effect_allele: T
     direction: risk
-    statistical_test: "BOLT-LMM on Martingale residuals (pmid-40021682#q39); the deposit's line (q74) prints T β −0.43189, SE 0.0736441, T 0.999952 under swapped allele labels (q32, row 44), so T β +0.432 at about 4.8e-5, some 38 copies (derived). Below the paper's MAF 0.1 % filter (q39, q41) and not among its genome-wide loci (q40, q42): a deposit line, not a reported finding (D26.7). 13:74,331,131 passes with it at the same frequency (q75). Open Targets' sets: whole cohort P 4.5e-9, PIP 0.54 (db-opentargets-26.09#q885); women P 6.6e-11 (q887), a subset"
+    statistical_test: "BOLT-LMM on Martingale residuals (pmid-40021682#q39); the deposit's line (q74) prints T β −0.43189, SE 0.0736441, T 0.999952 under swapped allele labels (q32, row 44), so T β +0.432 at about 4.8e-5, some 38 copies (derived). Below the paper's MAF 0.1 % filter (q39, q41) and not among its genome-wide loci (q40, q42): a deposit line, not a reported finding (D26.7). rs78594190 (13:74,331,131, db-ensembl-116#q579) passes with it at the same frequency (q75), r² 1.0 in Yoruba (db-ensembl-116#q581). Open Targets' sets: whole cohort P 4.5e-9, PIP 0.54 (db-opentargets-26.09#q885); women P 6.6e-11 (q887), a subset"
     curator: claude-opus-5-5
