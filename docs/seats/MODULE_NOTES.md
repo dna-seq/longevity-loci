@@ -25,7 +25,7 @@ export (the lead starts it today, to 0.8's studies/variants shape per `docs/FORM
   empty. The key is still (variant_key, pmid), equality; the reference says `phenotype_class` narrows its warning.
   The lead's mapping (639782292): nominal writes `not_significant`, the P exact, "nominal replication look-up
   (p < 0.05)" in `statistical_test`; direction into the study's `conclusion`; a derived effect says so in
-  `effect_unit`; Z stays `Z`, its warning reported. (1) and (2) go upstream as format wishes via the liaison. The
+  `effect_unit`; Z stays `Z`, its warning reported. (1) and (2) went upstream as format wishes, S147 and S148 with the compiler's triage (the liaison, 639785042). The
   export lands on a branch first; the lead hands its output here to validate.
 - Plugin caches moved to the data volume (`remember_setting JUST_DNA_PIPELINES_CACHE_DIR`, user config, not the
   repo): `$HOME` is the small volume and Ensembl's lane is about 15 GB. Ensembl lane present 2026-11-12: ensembl-variation-2026_07_13-vep116.0, 14.5 GB (du shows 7.6 GB on BeeGFS).
