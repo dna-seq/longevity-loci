@@ -3028,3 +3028,12 @@ Rosoff's mvAge (GCST90321079, 80 variants, 0.143): named, not counted (D25.5, D2
 
 `set-99cf48a1-qtlcoloc`: two cis QTL colocalisations, both one NOX4 transcript-usage QTL in GTEx artery (aorta H4
 0.98; tibial 0.78, under the cut). TYR has none. For row 66.
+
+## Reading 2026-11-12, supplement
+
+> [q817] data variant null
+
+> [q818] data.credibleSets count 0
+
+Open Targets 26.09 has no record of 11_119399248_G_A (rs139137459): no credible set, no locus-to-gene, no
+colocalisation. For row 68.

@@ -1827,3 +1827,34 @@ SIFT deleterious. For row 66.
 
 The three AncestryDNA fathers' SNPs in Wright 2019's Supplemental Table 8 within 0.25 Mb of the lead (rs574028, 84
 kb; rs4121744, 143 kb; rs10830204, 230 kb) tag it weakly in CEU: r² 0.35, 0.28, 0.25. Named, not scored. For row 66.
+
+## Reading 2026-11-12, supplement
+
+> [q493] mappings[0] allele_string G/A assembly_name GRCh38 coord_system chromosome location 11:119399248-119399248 end 119399248 ancestral_allele G start 119399248 seq_region_name 11 strand 1
+
+> [q494] mappings[0] strand 1 coord_system chromosome allele_string G/A seq_region_name 11 assembly_name GRCh37 ancestral_allele null start 119269958 location 11:119269958-119269958 end 119269958
+
+> [q495] populations[15] population gnomADg:nfe allele_count 262 frequency 0.003853 allele A
+
+> [q496] populations[5] population gnomADg:eas allele_count 5192 frequency 1 allele G
+
+rs139137459: GRCh38 11:119,399,248 G/A (GRCh37 119,269,958), G ancestral; A at 0.0039 in gnomAD genomes' non-Finnish
+Europeans and absent from its East Asians (G 1, q496); 0.0018 in Finns. For row 68.
+
+> [q497] populations[24] population gnomADg:nfe allele_count 554 allele G frequency 0.008146
+
+> [q498] mappings[0] location 11:119419222-119419222 ancestral_allele A assembly_name GRCh38 strand 1 start 119419222 end 119419222 allele_string A/G seq_region_name 11 coord_system chromosome
+
+> [q499] [0].transcript_consequences[0] biotype lncRNA gene_symbol_source HGNC impact MODIFIER gene_symbol USP2-AS1 transcript_id ENST00000498979 strand 1 hgnc_id HGNC:48673 variant_allele A gene_id ENSG00000245248
+
+> [q500] populations[44] allele A population 1000GENOMES:phase_3:CEU frequency 0.0101010101010101 allele_count 2
+
+> [q501] [0] variation1 rs139137459 variation2 rs151091095 r2 0.663265 population_name 1000GENOMES:phase_3:CEU d_prime 1.000000
+
+> [q502] [0] population_name 1000GENOMES:phase_3:GBR r2 1.000000 variation2 rs151091095 variation1 rs139137459 d_prime 1.000000
+
+rs151091095, Timmers 2019's tag for the locus (pmid-30642433#q286): GRCh38 11:119,419,222 A/G, A ancestral, G 0.0081
+in non-Finnish Europeans (q497). VEP puts rs139137459 in an intron of the lncRNA USP2-AS1 (q499). In 1000 Genomes'
+CEU (A 0.010, two copies, q500) the pair's r² is 0.66, D′ 1; in GBR r² 1, D′ 1 (two copies of each): the rare
+alleles ride together where they are seen, but on so few copies the European r² is fixed only by the frequencies'
+bound, about 0.47. For row 68.

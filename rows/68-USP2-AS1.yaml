@@ -1,0 +1,120 @@
+# The seed list's locus 68, USP2-AS1 (11q23.3). Curated 2026-11-12. Lead rs139137459 (the seed's only rsID), an
+# intron of the lncRNA USP2-AS1 near USP2, A 0.4 % in non-Finnish Europeans and absent in East Asians, from Pilling
+# 2017's analysis of both parents reaching the top 10 % of survival. Timmers 2019 tests the locus at rs151091095,
+# 20 kb away, a weaker tag (r² at most about 0.47 by frequency), named, not scored.
+locus_id: 68
+locus_name: USP2-AS1
+verdict: kept
+verdict_reason: >-
+  Tier B, the seed's. Genome-wide in one analysis of one study: Pilling 2017's binary GWAS of both parents
+  reaching the top 10 % of survival in UK Biobank (7,182 participants whose mothers reached 90 and fathers 87,
+  against 79,767 whose parents both died before 80), where the rare A raises the chance (G's β −0.0906 on the case
+  indicator, P 2.7e-8; the GWAS Catalog's 3e-8 and its only association for the lead). The paper says it "just
+  reached significance", was not significant in the continuous analyses (parents' attained age P 5.3e-3, its
+  direction not printed), and that p < 5e-8 may not be rigorous enough for so rare a variant (q35, q36): a single
+  genome-wide study, B by §4.1, with the authors' caveat carried. Nothing independent replicates it, and nothing
+  powered contradicts it. Outside UK Biobank, FinnGen R11's any-death endpoint puts A on the fewer-deaths side, flat
+  (P 0.75, one-sided 0.37, named from the database line); Timmers 2019 tests the locus in LifeGen without UK
+  Biobank only at rs151091095, whose rare G rides with A (D′ 1 where seen, r² at most about 0.47 by frequency): G
+  1.27 years longer, one-sided P 0.104, the same side, not nominal, at a tag the sheet's caption calls an r² > 0.95
+  proxy and the frequencies say is not. The lead has no line in LifeGen's file, in Deelen 2019's percentile files
+  or in Open Targets, and is too rare for Wright 2019's AncestryDNA tables (cut at 3e-3, pmid-31484785#q6): untested
+  there. Within UK Biobank's own participants the two other looks split: Zenin 2019's healthspan puts A later (P
+  0.021, one-sided 0.011), and Park 2025's own survival puts A with more deaths than expected (P 0.053, two-sided;
+  the deposit's allele columns swapped, as at APOE). Neither is independent of the discovery's people; Park's lean
+  is the participants' own deaths against their parents' longevity, short of nominal. No red flag can be scored:
+  the discovery's β is on a binary case scale for parents with no published conversion to FinnGen's or Park's
+  scale (D28.1), so it is unknown and sets no token (D26.3). No credible set and no QTL record: C4, E4, no gene;
+  USP2-AS1 is the gene the variant sits in, USP2 the gene the paper names nearby, neither shown to act. General
+  ageing, no other trait known; descriptive. The protection is a presence, the rare A (G ancestral); carriers are
+  about 8 in 1,000 Europeans. Age of action unknown. Lifespan is 0: the participants' own survival leans against A
+  and FinnGen is flat, while the parents' continuous P has no printed direction (D26.2 reads a cell one-sided).
+axes:
+  tier: {value: B, cites: [pmid-29227965#q33, pmid-29227965#q34, pmid-29227965#q19, pmid-29227965#q35, pmid-29227965#q36, pmid-29227965#q37, pmid-29227965#q38, pmid-29227965#q39, db-gwascatalog-2026.10.29#q463, db-gwascatalog-2026.10.29#q464, db-gwascatalog-2026.10.29#q465, db-finngen-r11#q46, pmid-30642433#q286, pmid-30642433#q287, db-ensembl-116#q497, db-ensembl-116#q501, db-ensembl-116#q502, pmid-31484785#q6, pmid-30729179#q98, pmid-40021682#q68, pmid-40021682#q32]}
+  mechanism: {value: general_ageing, cites: [db-gwascatalog-2026.10.29#q463, db-opentargets-26.09#q817]}
+  pleiotropy: {values: [], cites: [db-gwascatalog-2026.10.29#q463, db-opentargets-26.09#q817]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: 0, exceptional_survival: "+",
+            cites: [pmid-29227965#q33, pmid-30729179#q98, pmid-40021682#q68, db-finngen-r11#q46, pmid-30642433#q286]}
+  actionability: {label: descriptive, cites: [pmid-29227965#q36]}
+  context: {values: [eur_only_evidence], cites: [pmid-29227965#q33, db-finngen-r11#q46, db-ensembl-116#q496]}
+flags:
+  - {token: "PROTECT:PRESENCE", cites: [pmid-29227965#q33, db-ensembl-116#q493, db-ensembl-116#q495]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q817, db-opentargets-26.09#q818]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q817, db-ensembl-116#q499]}
+variants:
+  - rsid: rs139137459
+    gene: ""
+    phenotype: USP2-AS1 region, parents' exceptional survival
+    trait_efo_id: EFO_0007796
+    effect_allele: A
+    effect_size: 0.0906
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the usual version of this DNA region, as about 99 in 100 people of European
+          ancestry do. It is the reference the rare version is compared with. The region, on chromosome 11, lies
+          inside a non-coding gene, USP2-AS1, near the gene USP2; which gene matters, if any, is not known. The
+          finding comes from people of European ancestry; less is known elsewhere.
+      - genotype: A/G
+        state: protective
+        conclusion: >-
+          You carry one copy of a rare version of this DNA region (fewer than 1 in 100 people of European ancestry
+          do). In one large British study, people carrying it were more likely to have both parents live into
+          their late eighties or nineties. The authors themselves called the result less certain, because the
+          version is rare and it did not show up when parents' ages were analysed in other ways, and no other
+          study has confirmed it. Treat it as an unconfirmed early finding.
+      - genotype: A/A
+        state: protective
+        conclusion: >-
+          You carry two copies of a rare version of this DNA region, which is very uncommon (roughly 1 in 70,000
+          people of European ancestry). In one large British study, each copy went with a higher chance of both
+          parents living into their late eighties or nineties; nobody with two copies was studied on their own.
+          The authors called the result less certain, and no other study has confirmed it. Treat it as an
+          unconfirmed early finding.
+studies:
+  - rsid: rs139137459
+    note: pmid-29227965
+    quote: q33
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: British (UK Biobank participants' parents, European descent)
+    ancestry: [EUR]
+    n_cases: 7182
+    sample_size: 86949
+    sample_unit: individuals
+    age_of: parent
+    stat_significance: significant
+    p_value: "2.7E-08"
+    p_value_num: 2.7e-08
+    effect_size: 0.0906
+    effect_measure: beta
+    effect_unit: BOLT-LMM β on the case indicator (both parents in the top 10 % of survival) per A allele in the participant (positive = more likely)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Table 2, Rare (<2%) (q33, q34): BOLT-LMM on both parents in the top 10 % of survival (mothers 90 or older, fathers 87 or older) against both dead before 80 (Table 1, q38, q39); printed as G's β −0.0906 (SE 0.0162), the bold analysis's (q19), sign read as at MC2R (q37); parents' attained age P 5.3E-03, age at death 0.11, mothers 0.030, fathers 0.031, directions not printed; the authors' caveat on rare variants (q35, q36); a participant carries half a parent's genotype"
+    curator: claude-opus-5-5
+  - rsid: rs139137459
+    note: pmid-30729179
+    quote: q98
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "0.0214"
+    p_value_num: 0.0214
+    p_one_sided: 0.0107
+    effect_size: -0.0917
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per A allele (negative = later)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), -log10 P 1.669, SE 0.0399, before genomic control; the same UK Biobank participants as the discovery, so not independent"
+    curator: claude-opus-5-5

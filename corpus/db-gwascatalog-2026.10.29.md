@@ -1641,3 +1641,14 @@ squamous cell carcinoma (P 1e-41, q436) and actinic keratosis (P 5e-100, q439); 
 glaucoma in a multi-trait analysis (β 0.054 "decrease", P 7e-9, q448), so G raises it. With G: G lowers dry macular
 degeneration (P 7e-12, q451), and A raises age-related hearing impairment (OR 1.05, P 2e-21, q454). Ageing: Rosoff's
 mvAge, G "increase" 0.0066, P 7e-9 (q457); Timmers 2020's multivariate scan, G, P 8e-13, no estimate (q460).
+
+## Reading 2026-11-12, supplement
+
+> [q463] _embedded.associations[0] association_id 35691766 risk_frequency 0.996 pvalue_description pvalue_mantissa 3 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.059-0.122] beta 0.0906 unit decrease p_value 3.0000000000000004e-08 accession_id GCST006698 pubmed_id 29227965 first_author Pilling LC ci_lower 0.059 ci_upper 0.122
+
+> [q464] _embedded.associations[0].reported_trait[0] Parental longevity (both parents in top 10%)
+
+> [q465] _embedded.associations[0].snp_effect_allele[0] rs139137459-G
+
+The GWAS Catalog's only association for rs139137459: Pilling 2017 (GCST006698), "Parental longevity (both parents
+in top 10%)", G at 0.996, β 0.0906 "decrease" (CI 0.059-0.122), P 3e-8. For row 68.

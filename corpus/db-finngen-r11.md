@@ -341,3 +341,10 @@ partner, on the side of more deaths, as at the lead (q38), none nominal (best P 
 
 FinnGen R11's any-death endpoint (`rows-c74cfa48`), rs1126809 at GRCh38 11:89,284,793: A at 0.178, log OR −0.0026
 (SE 0.0097) for death per A, P 0.79: flat, A's sign a hair to fewer deaths, against the healthspan direction. For row 66.
+
+## Reading 2026-11-12, supplement
+
+> [q46] 11 119399248 G A rs139137459 USP2-AS1 0.748855 0.125602 -0.0292033 0.0912176 0.00160096 0.00163094 0.0015972
+
+FinnGen R11 DEATH (`rows-ce519916`), rs139137459 (GRCh38 11:119,399,248): alt A at 0.0016 (cases 0.00163, controls
+0.00160), β −0.029 (SE 0.091), P 0.75: A on the fewer-deaths side, flat (one-sided 0.37, derived). For row 68.
