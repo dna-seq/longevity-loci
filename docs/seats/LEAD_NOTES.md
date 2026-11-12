@@ -65,3 +65,4 @@ and 67; RM4 and RM5.
 RM1 the export (after the compiler's 0.8 cut, the registry deploy and the plugin's release). RM2 landed
 (9d42ccb, with `loci fetch`), its auditor's findings fixed in 47abe43. The plugin stays enabled for every seat, the person's call (2026-11-05: "3"), about 2.5k
 tokens a session while its 81 tools stay deferred.
+- reflect after 2026-11-19: classes/base/BASE.md as of v0.1.191 (wake rules spelled out, secrets never repeated, the organisation's script account, handout renamed handoff).
