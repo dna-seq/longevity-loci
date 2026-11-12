@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- D29.1: a database line the curator reads never replicates (D12), and a healthspan discovery's red flag is scaled from its own effect, so 63 TCF7L2 is B.
 - D27 and D28 settle the sixth batch: the mean factor divides, a Genomic SEM factor is multivariate, a QC-flagged colocalisation is E3, red flags scaled from the discovery's own effect, a cell is `−` against the allele, a disease-informed Bayesian call counts for B only; 6 CELSR2 and 80 CHRNA3/5 leave A with `replication_failed`.
 - Weekly dependency bump: typer 0.27.3 to 0.29.1, pydantic 2.14.3, click 8.5.1 and three small ones. `just-dna-compiler` and `just-dna-format` are now capped below 0.8, as the enricher is: the bump had taken them to 0.8.4 beside enricher 0.7.3.
 - A study's `p_one_sided` holds the one-sided P the tier reads when the article prints two-sided; `check rows` reads the nominal band on it and asks it to be half the printed value (D26.13).

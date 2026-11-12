@@ -510,3 +510,20 @@ word.
    for it: Deelen has no line at the lead or its proxy, FinnGen death leans against, LifeGen's own cohorts lean
    against. Genotypes neutral, exceptional survival 0 (D28.10), no causal or effector level (D28.12). The curator's
    (a), B as 47, rejected: 47's authors call it suggestive, not anomalous, and Deelen replicates it.
+
+## D29 — batch seven: a healthspan anchor's red flag, a database line as a replication (2026-11-12)
+
+From the curator's rows 60 onward; the lead settled them under the person's standing word.
+
+1. **63 TCF7L2 is B: a curator-read database line replicates nothing, and a healthspan discovery's red flag is
+   scaled from its own effect.** Zenin's healthspan hit (T, P 4.2e-30) has one look outside UK Biobank, FinnGen
+   R11's death endpoint (T one-sided 0.017), read by the curator from the release. D12 lets a study rest on an
+   article, never on a database release: its quotes stay unknown until a fetcher caches the record, so a tier
+   resting on it would rest on a value nothing checks. A release line may weigh against a row (D25.12's FinnGen
+   nulls, which only ever withhold A) but never lifts one. And D27.9 scales a red flag from the discovery's own
+   effect, here Zenin's healthspan hazard, which no source converts to Deelen's or LifeGen's scale; so the flag is
+   unknown (D28.1), A's last criterion with it, and the row is B (D25.12). D16's co-occurring lifespan study is
+   Zenin's parents' death (one-sided 0.048). The cost is stated: while no source prints a healthspan-to-lifespan
+   factor, a healthspan-anchored row reaches A only through a printed scoring-class replication with no flag on a
+   one-scale test. 35's B (D25.11) agrees. The curator's default (b); (a), calibrating from the co-occurring
+   lifespan study's effect and letting the release line replicate, rejected on D27.9 and D12.
