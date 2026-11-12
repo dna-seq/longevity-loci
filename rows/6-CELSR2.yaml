@@ -14,7 +14,7 @@ verdict_reason: >-
   0.0096, against the discovery's +0.0296, SE 0.0053; one-sided P 0.49), at power about 0.92 and heterogeneity P
   about 0.0075 (derived). That comparison is not on one scale as the previous text said: Timmers' sheet prints
   Pilling's effect carried over by APOE's factor. The lead's derivation (D28.9) takes LifeGen out of Timmers' own
-  pooled β (Figure 4, 0.0218), which leaves UK Biobank at 0.0285 on Timmers' scale, and the flag holds there (power
+  pooled β (Figure 4, 0.0218, SE 0.0047, pmid-30642433#q273), which leaves UK Biobank at 0.0285 on Timmers' scale, and the flag holds there (power
   0.91, heterogeneity P 0.010). It needs at least 0.81 of the discovery's effect to hold; AncestryDNA's independent
   arms run at 0.63 (fathers) and 1.15 (mothers) of UK Biobank's, so a smaller true effect would undo it on the
   fathers' ratio. No winner's-curse shrinkage is applied: D21 calibrates from the discovery's effect. A powered
@@ -37,7 +37,7 @@ verdict_reason: >-
   way round from its table; the table, the frequencies and the biology agree, and are followed. All four seed rsIDs
   are one signal here.
 axes:
-  tier: {value: B, cites: [pmid-29227965#q10, pmid-31484785#q13, pmid-31484785#q15, pmid-31484785#q16, pmid-30642433#q249, pmid-30642433#q12, pmid-30642433#q11]}
+  tier: {value: B, cites: [pmid-30642433#q273, pmid-29227965#q10, pmid-31484785#q13, pmid-31484785#q15, pmid-31484785#q16, pmid-30642433#q249, pmid-30642433#q12, pmid-30642433#q11]}
   mechanism: {value: heart_vessels, cites: [pmid-30642433#q11, pmid-29227965#q6]}
   pleiotropy: {values: ["mech:cvd"], cites: [pmid-30642433#q11]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: [pmid-30642433#q205, pmid-30642433#q206, pmid-30642433#q207, pmid-30642433#q208, pmid-30642433#q209, pmid-30642433#q210, pmid-30642433#q211, db-ensembl-116#q249]}
