@@ -13,6 +13,16 @@ export (the lead starts it today, to 0.8's studies/variants shape per `docs/FORM
 - 2026-11-12, after the reload: plugin server v0.48.7, client format 0.8.4; polygon registry 0.30.0, format 0.8.4,
   contract compatible. `validate_module` strict on the scaffold: invalid, the one error "studies.csv is present but
   has no study rows. Grounding evidence is mandatory." (as under 0.7.1), one warning `module_not_closed`.
+- **Read against 0.8.4's `studies.csv` (`describe_table`) and `docs/format08_reference/`, 2026-11-12.** Settled:
+  proxy (`proxy_rsid`, the proxy's own `effect_allele`, the phase derived by the author), stratum (`stratum`,
+  `stratum_level`: 61's women, 13's men), a Martingale effect (`beta` with `effect_unit` saying Martingale
+  residual, the example's rs429358 row), a Bayes-factor P (`statistical_test` says which P, the example's
+  rs646776 row: 59), `tradeoff` computed in `meta.csv` from per-trait rows, tier in `meta.csv`. Open, sent to
+  the lead for RM1: `stat_significance` is closed (significant, suggestive, not_significant, unknown), no
+  `nominal`; studies.csv has no `direction` column, so a study with allele, direction and P but no effect size
+  (D13, D15, D20) carries its direction nowhere but `conclusion`; no field marks an effect as derived (31, 58),
+  only `effect_unit`'s text; `effect_measure` is open, so a Z (19, 58) may be written `Z` with a warning, or left
+  empty. The key is still (variant_key, pmid), equality; the reference says `phenotype_class` narrows its warning.
 - Plugin caches moved to the data volume (`remember_setting JUST_DNA_PIPELINES_CACHE_DIR`, user config, not the
   repo): `$HOME` is the small volume and Ensembl's lane is about 15 GB. Ensembl lane pull started 2026-11-12.
 
