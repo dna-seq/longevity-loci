@@ -10,6 +10,7 @@ from collections import Counter
 from pathlib import Path
 
 import pytest
+import yaml
 from just_dna_format.spec import StudyRow, VariantRow
 from typer.testing import CliRunner
 
@@ -66,13 +67,13 @@ def gap_total(result: Export, reason: Gap) -> int:
 
 def test_headers_are_08s() -> None:
     """studies.csv is the reference example's header exactly; variants.csv opens with the reference's and adds only
-    columns 0.8's VariantRow declares, never a coordinate the enricher resolves nor an authored weight."""
+    columns 0.8's VariantRow declares, never alts nor an authored weight; chrom/start/ref only as an authored locus."""
     for columns, name in ((STUDY_COLUMNS, "studies.csv"), (VARIANT_COLUMNS, "variants.csv")):
         ref = header(REFERENCE / name)
         assert list(columns[: len(ref)]) == ref, name
     assert set(VARIANT_COLUMNS) <= set(VariantRow.model_fields)
     assert set(STUDY_COLUMNS) <= set(StudyRow.model_fields)
-    assert not {"chrom", "start", "ref", "alts", "weight", "curator", "method"} & set(VARIANT_COLUMNS)
+    assert not {"alts", "weight", "curator", "method"} & set(VARIANT_COLUMNS)
 
 
 def test_variants_partition_the_rows(tree) -> None:
@@ -229,3 +230,30 @@ def test_nominal_variant_leaves_significance_empty(real) -> None:
     written = {x["stat_significance"] for x in result.variants if x["rsid"] in nominal}
     assert written == {""}
     assert gap_total(result, Gap.VARIANT_NOMINAL) == len(nominal)
+
+
+def test_authored_locus_is_written_only_where_a_row_states_one(real) -> None:
+    """D29.8: chrom/start/ref are written for an rsID whose row authors its locus, on its variant rows and its
+    studies, and are empty everywhere else (the enricher resolves those)."""
+    rows, result = real
+    authored = {v.rsid: (v.locus.chrom, str(v.locus.start), v.locus.ref) for r in rows for v in r.variants if v.locus}
+    for table in (result.variants, result.studies):
+        written = {(x["rsid"], (x["chrom"], x["start"], x["ref"])) for x in table if x["chrom"] or x["start"] or x["ref"]}
+        assert written == {(rs, loc) for rs, loc in authored.items() if any(x["rsid"] == rs for x in table)}
+
+
+def test_authored_locus_reaches_the_study(tmp_path: Path) -> None:
+    """D29.8 on a row that states one: the fixture's APOE variant given rs429358's GRCh38 locus (19:44908684, ref T)
+    writes it on its study row; without it the cells are empty."""
+    rows, corpus = TREES["fixture"]
+    shutil.copytree(rows, tmp_path / "rows")
+    (path,) = (tmp_path / "rows").glob("*.yaml")
+    data = yaml.safe_load(path.read_text(encoding="utf-8"))
+    (study,) = data["studies"]
+    variant = next(v for v in data["variants"] if v["rsid"] == study["rsid"])
+    variant["locus"] = {"chrom": "19", "start": 44908684, "ref": "T", "cites": data["axes"]["tier"]["cites"][:1]}
+    path.write_text(yaml.safe_dump(data, sort_keys=False, allow_unicode=True), encoding="utf-8")
+    (x,) = export(tmp_path / "rows", corpus).studies
+    assert (x["rsid"], x["chrom"], x["start"], x["ref"]) == (study["rsid"], "19", "44908684", "T")
+    (plain,) = export(rows, corpus).studies
+    assert (plain["chrom"], plain["start"], plain["ref"]) == ("", "", "")

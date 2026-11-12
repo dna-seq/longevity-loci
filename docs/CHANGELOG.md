@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- A variant may author its `locus` (chrom, start, ref, cited) where its rsID names several loci, and `loci export` writes it on the variant's rows and studies, so 0.8 verifies that locus instead of expanding onto all of them (D29.8; 47 AP5Z1).
 - D29.7: consistent nominal look-ups across independent samples do not stand in for a genome-wide anchor (65 HSD17B12 is C).
 - D29.3–6 from the adversarial read of rows 60 to 64: a proxy does not stand in where the lead is tested; an overfit discovery leaves exceptional survival untested; a printed P is read as printed; a heterogeneity P counts both errors.
 - RM1 built: `loci export` projects the rows onto 0.8's `variants.csv` and `studies.csv` plus `quote_sources.csv`, each row parsed by 0.8's models, sorted and byte-reproducible; computed tokens never authored, `nominal` written `significant` and said not genome-wide in `statistical_test` (S147, the compiler's RM434), a bare study direction into `conclusion` until RM435's `effect_direction` ships (S148); what 0.8 cannot hold reported by reason (docs/FORMATS.md, "Export").

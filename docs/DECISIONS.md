@@ -542,3 +542,11 @@ From the curator's rows 60 onward; the lead settled them under the person's stan
    P of our own would be a meta-analysis no source prints (D28.1's spirit), so it is not done. 65 is C, with the
    look-ups in prose and in its studies; if a published meta-analysis reaches 5e-8 at the locus, it is B on that.
    The curator's default.
+8. **A row whose rsID names several loci authors the one it means.** 47 AP5Z1's rs371933919 resolves to three Ensembl
+   loci at 7:4,787,883 (T>TC,TCC; TC>T; TCCC>T); 0.8 expands an rsID-only row onto every locus that could host its
+   genotype and strict refuses a locus it cannot host, by design (the compiler's resolution code, read by the liaison).
+   An authored chrom, start and ref beside the rsID take 0.8's verify path instead. The variant's optional `locus`
+   (chrom, start, ref, with cites) states it, and the export writes it on the variant's rows and its studies. The
+   coordinate restates the row's own choice (D26.9, from its Ensembl and paper quotes), which the compiler then
+   checks is one of the rsID's loci: it is not filled from the enricher's resolution.csv. Only rows whose rsID names
+   several loci carry it; every other locus stays the enricher's to resolve.

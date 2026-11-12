@@ -33,7 +33,9 @@ a v1 locus with no seed entry takes the next free id above the seed's. Fields:
   `effect_allele`, `effect_size`, `effect_measure`, `stat_significance` (from the anchor study), `direction`
   (`protective`, `risk`, `contested`, `unknown`), `negatives` (required on every variant when pleiotropy holds
   `tradeoff`), and `genotypes` (each `genotype`, `state`, `conclusion`; an indel's genotypes in its VCF
-  alleles, as `T/T`, `T/TC`, `TC/TC`, D26.9).
+  alleles, as `T/T`, `T/TC`, `TC/TC`, D26.9); and, only where the rsID names several loci, `locus` (`chrom`,
+  `start` the GRCh38 1-based VCF position, `ref` the VCF reference allele, and `cites`), the one the row means
+  (D29.8).
 - `studies`: one per (rsid, study), §6.3's columns: `note` and `quote` (the provenance quote, by id; or no
   `quote` and a `quote_absent` saying why: `not_found` read and nothing supports the row, `unchecked` only the
   abstract could be read, `other_claim` the article does not make the claim cited for (the row goes to a
@@ -130,8 +132,10 @@ a cite the corpus lacks (nothing written), 2 an input missing.
 The columns are the reference example's headers (`docs/format08_reference/longevity_studies/`), then the module
 seat's ask where 0.8 has a column for it: on `variants.csv` negatives, priority, phenotype, category,
 stat_significance, effect_size, effect_measure, effect_allele, flags, requires_callable, acmg_sf, actionability; on
-`studies.csv` stat_significance. Never chrom, start, ref or alts (the enricher resolves them), weight, nor the
-spec's defaults (curator, method on a variant).
+`studies.csv` stat_significance; then chrom, start and ref on both, filled only from a variant's authored `locus`
+(D29.8: an rsID that names several loci, so 0.8 verifies the one the row means instead of expanding onto all of
+them), empty elsewhere for the enricher to resolve. Never alts, weight, nor the spec's defaults (curator, method on a
+variant).
 
 - **variants.csv**, one row per (lead rsid, genotype), the genotype's alleles sorted as 0.8 requires; the
   genotype's state and conclusion; `direction` the genotype's state, as the reference example writes it and as 0.8

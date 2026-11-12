@@ -296,6 +296,16 @@ class Genotype(Strict):
     conclusion: str
 
 
+class Locus(Claim):
+    """The one locus a row means, where its rsID names several (an indel Ensembl records at three loci): 0.8's
+    authored coordinate, which the compiler verifies against the rsID's loci instead of expanding onto all of them.
+    GRCh38, 1-based VCF position; `ref` the VCF reference allele. Cited: the row says why this locus (D26.9, D29.8)."""
+
+    chrom: str = Field(pattern=r"^(\d{1,2}|X|Y|MT)$")
+    start: int = Field(gt=0)
+    ref: str = Field(pattern=r"^[ACGT]+$")
+
+
 class Variant(Strict):
     """A §6.2 `variants.csv` locus: the per-variant columns, then its genotypes."""
 
@@ -310,6 +320,7 @@ class Variant(Strict):
     direction: Direction
     genotypes: list[Genotype] = Field(default_factory=list)
     negatives: str | None = None
+    locus: Locus | None = None  # only where the rsID names several loci (D29.8); else the enricher resolves it
 
     @field_validator("phenotype")
     @classmethod
@@ -431,6 +442,7 @@ class Row(Strict):
         for i, f in enumerate(self.flags):
             out += [(f"flags[{i}] {f.token}", c) for c in f.cites]
         out += [(f"studies[{i}] {s.rsid}", s.cite) for i, s in enumerate(self.studies) if s.cite is not None]
+        out += [(f"variants[{i}] {v.rsid} locus", c) for i, v in enumerate(self.variants) if v.locus for c in v.locus.cites]
         return out
 
 

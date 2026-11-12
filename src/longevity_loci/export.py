@@ -27,6 +27,7 @@ from pydantic import ValidationError
 from longevity_loci.check import Note, load_corpus
 from longevity_loci.models import (
     Direction,
+    Locus,
     PhenotypeClass,
     Row,
     StatSignificance,
@@ -38,17 +39,17 @@ from longevity_loci.models import (
 
 # The reference example's own headers (docs/format08_reference/longevity_studies), then the
 # module seat's ask (docs/ROADMAP.md RM1) where 0.8 has a column for it, in the template's order. Never
-# chrom/start/ref/alts (the enricher resolves them), weight (the module authors none), curator/method (spec defaults).
+# chrom/start/ref/alts (the enricher resolves them) unless the row authors its locus (D29.8: an rsID naming several loci), weight (the module authors none), curator/method (spec defaults).
 VARIANT_COLUMNS: tuple[str, ...] = (
     "rsid", "genotype", "state", "direction", "conclusion", "gene", "trait_efo_id",
     "negatives", "priority", "phenotype", "category", "stat_significance", "effect_size", "effect_measure",
-    "effect_allele", "flags", "requires_callable", "acmg_sf", "actionability",
+    "effect_allele", "flags", "requires_callable", "acmg_sf", "actionability", "chrom", "start", "ref",
 )
 STUDY_COLUMNS: tuple[str, ...] = (
     "rsid", "pmid", "doi", "proxy_rsid", "phenotype_class", "trait_efo_id", "effect_allele", "effect_size",
     "effect_measure", "effect_unit", "p_value", "p_value_num", "sample_size", "sample_unit", "n_cases", "age_min",
     "age_max", "age_of", "stratum", "stratum_level", "ancestry", "population", "study_design", "statistical_test",
-    "conclusion", "provenance_quote", "curator", "stat_significance",
+    "conclusion", "provenance_quote", "curator", "stat_significance", "chrom", "start", "ref",
 )
 QUOTE_COLUMNS: tuple[str, ...] = ("rsid", "pmid", "doi", "note", "quote_id", "reading", "depth", "quote_absent")
 
@@ -166,6 +167,7 @@ def _variant_rows(row: Row, v: Variant, flags: str, out: Export) -> list[dict[st
         "category": row.axes.mechanism.value, "stat_significance": sig, "effect_size": v.effect_size,
         "effect_measure": v.effect_measure, "effect_allele": v.effect_allele, "flags": flags,
         "requires_callable": False, "acmg_sf": False, "actionability": row.axes.actionability.label,
+        **_locus(v.locus),
     }
     out_rows = []
     for g in v.genotypes:
@@ -185,7 +187,14 @@ def _variant_rows(row: Row, v: Variant, flags: str, out: Export) -> list[dict[st
     return out_rows
 
 
-def _study_row(s: Study, note: Note, out: Export) -> dict[str, str]:
+def _locus(locus: Locus | None) -> dict[str, object]:
+    """The authored coordinate (D29.8), which the compiler verifies against the rsID's loci; empty otherwise."""
+    if locus is None:
+        return {"chrom": None, "start": None, "ref": None}
+    return {"chrom": locus.chrom, "start": locus.start, "ref": locus.ref}
+
+
+def _study_row(s: Study, note: Note, out: Export, locus: Locus | None = None) -> dict[str, str]:
     head = note.head
     tests: list[str] = []
     if s.study_design in PERCENTILE:  # 0.8 has no percentile cell: it leads statistical_test (the compiler's RM140)
@@ -236,6 +245,7 @@ def _study_row(s: Study, note: Note, out: Export) -> dict[str, str]:
         "age_of": s.age_of, "stratum": s.stratum, "stratum_level": s.stratum_level, "ancestry": list(s.ancestry),
         "population": s.population, "study_design": s.study_design, "statistical_test": "; ".join(tests) or None,
         "conclusion": conclusion, "provenance_quote": quote, "curator": s.curator, "stat_significance": sig,
+        **_locus(locus),
     }
     return {k: cell(x) for k, x in values.items()}
 
@@ -301,11 +311,12 @@ def export(rows: Path, corpus: Path) -> Export:
                     out.variants.append(values)
                     exported_rsids.add(v.rsid)
     for row in loaded:
+        loci = {v.rsid: v.locus for v in row.variants}
         for s in row.studies:
             note = notes.get(s.note)
             if note is None or (s.quote is not None and s.quote not in note.quotes):
                 raise ExportError(f"locus {row.locus_id} study {s.rsid}: {s.cite or s.note} is not in the corpus (run `loci check rows`)")
-            values = _study_row(s, note, out)
+            values = _study_row(s, note, out, loci.get(s.rsid))
             if _parsed(StudyRow, values, f"{s.rsid} {s.note}", out) is None:
                 continue
             if s.rsid not in exported_rsids:
