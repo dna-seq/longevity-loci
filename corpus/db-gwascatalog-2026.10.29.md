@@ -1704,3 +1704,11 @@ rs9536314 holds no association in the GWAS Catalog (q475): no genome-wide line f
 rs61949650 holds one association in the GWAS Catalog (q476, q477): Pilling 2017's mothers' attained age
 (GCST006696), risk frequency 0.938 (T), β 0.0251, P 3e-8, mapped to LGMNP1 and LINC00355. Nothing else, no disease;
 rs12586026 holds none (q478). For row 74.
+
+## Reading 2026-11-12, record
+
+> [q479] page size 200 totalElements 0 totalPages 0 number 0
+
+> [q480] page size 200 totalElements 0 totalPages 0 number 0
+
+Neither of row 75's rsIDs holds a GWAS Catalog association (q479 rs35257605, q480 rs116257533). For row 75.

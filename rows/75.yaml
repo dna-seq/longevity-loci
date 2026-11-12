@@ -1,0 +1,156 @@
+# The seed list's locus 75, unnamed (13q22.1; the seed's gene and name columns empty, KLF12 its l2g_top for both
+# rsIDs). Curated 2026-11-12. Lead rs35257605 as the seed has it, a poly-T repeat (13 T the reference, 11 to 17 T;
+# the seed's C/CTT is the 15-T allele, 0.40 in Europeans) in KLF12's region; the seed's second rsID rs116257533 (G/T,
+# T an African-ancestry allele) lies 108 kb away. Both entered by the methodology track from Open Targets'
+# fine-mapping of Park 2025's deposits (GCST90551884, GCST90551886), with no tier vote. Park's paper names neither and
+# never mentions KLF12; the GWAS Catalog holds no association for either.
+locus_id: 75
+locus_name: ""
+verdict: re-tiered
+verdict_reason: >-
+  Tier D, "overfit source" (D26.7, which ruled that 75 is read as row 44); the seed gave none. The locus's only
+  genome-wide evidence is a line in Park 2025's deposited summary statistics that the paper does not report.
+  rs116257533's T, the minor allele, is at about 4.8 in 100,000 in the whole-cohort deposit (under its swapped
+  allele columns, row 36). That is some 38 copies among 393,833 people (derived), about 21 times below the paper's
+  own MAF 0.1 % filter. The line reads P 4.3e-9, with each T going with a Martingale residual 0.43 higher (more
+  deaths), about 30 times APOE ε4's per-allele effect. A second variant 860 bp away passes at the same frequency (P
+  5e-9). T is an African-ancestry allele (0.064 in 1000 Genomes Africans, 0.00018 in gnomAD's non-Finnish
+  Europeans), so this is a rare African haplotype carried by a few dozen of the cohort's European-ancestry
+  participants, as at row 44. Open Targets fine-maps the whole cohort to a set at P 4.5e-9 (PIP 0.54), and the
+  second sex scan (the women, a subset, no replication) to one at P 6.6e-11. Both sets are QC-flagged and built
+  without in-sample LD.
+  The seed's lead is not that line. rs35257605, a common poly-T repeat, sits in a separate whole-cohort set at P
+  4.9e-6 (PIP 0.070). In the deposit the 15-T allele that the seed writes as CTT goes with fewer deaths (13 T, C,
+  more: β +0.0031, SE 0.00068, P 5.4e-6). Four common SNPs within 16 kb sit at the same frequency and P. That is a
+  suggestive deposit line at a variant Park's filter admits, one the paper does not report. Nothing outside UK
+  Biobank supports it. LifeGen holds no line for the repeat. At Park's neighbour rs9573270, LifeGen leans Park's way
+  (T shorter-lived, P 0.0061, rs7987604 the same), but it contains UK Biobank's parents, so it is not independent of
+  Park. Deelen 2019 leans the other way at rs9573270 (90th percentile P 0.18, 99th 0.46). FinnGen r11's death
+  endpoint, matched to the repeat by position and alleles, has CTT with slightly more deaths (P 0.26). Ensembl
+  returns no LD for the repeat, so the neighbours' r² to it is unknown: they are read for direction only, with no
+  power and no flag (D28.1's spirit: a link no source prints sets nothing). Zenin 2019 holds none of these variants.
+  Read on its own the repeat would be C, suggestive and unreplicated. The locus as the seed entered it rests on the
+  excluded rare line, so it stays D (put to the lead: D26.7 assumed 75's lead was row 44's kind, and it is not).
+  Every genotype is neutral (D25.2). Lifespan is 0: the repeat's one valid test leans for, and a D row loses its +
+  (D28.10). Healthspan and exceptional survival are untested (no line in Zenin or Deelen for either rsID).
+  Causal C4 and effector E4, with no gene named (D28.12, as row 44): no longevity set holds either variant, and both
+  sets rest on a line the row does not read as genome-wide. On them, in prose only, KLF12 is the candidate by
+  locus-to-gene (0.68 and 0.74 in the seed). Mechanism general ageing, descriptive, age of action unknown.
+axes:
+  tier: {value: D, cites: [pmid-40021682#q74, pmid-40021682#q75, pmid-40021682#q76, pmid-40021682#q39, pmid-40021682#q40, pmid-40021682#q41, pmid-40021682#q42, pmid-40021682#q32, db-ensembl-116#q574, db-ensembl-116#q575, db-ensembl-116#q576, db-ensembl-116#q577, db-opentargets-26.09#q883, db-opentargets-26.09#q885, db-opentargets-26.09#q887, db-opentargets-26.09#q889, db-gwascatalog-2026.10.29#q479, db-gwascatalog-2026.10.29#q480, pmid-30642433#q311, pmid-30642433#q312, pmid-31413261#q177, pmid-31413261#q178, db-finngen-r11#q52]}
+  mechanism: {value: general_ageing, cites: [pmid-40021682#q76]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: untested, lifespan: "0", exceptional_survival: untested,
+            cites: [pmid-40021682#q76, pmid-30642433#q311, pmid-31413261#q177, db-finngen-r11#q52]}
+  actionability: {label: descriptive, cites: [pmid-40021682#q76]}
+  context: {values: [eur_only_evidence], cites: [pmid-40021682#q39, db-ensembl-116#q575, db-ensembl-116#q576]}
+flags:
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q883, db-opentargets-26.09#q885, db-opentargets-26.09#q889, db-opentargets-26.09#q890]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q884, db-opentargets-26.09#q886]}
+variants:
+  - rsid: rs35257605
+    gene: ""
+    phenotype: KLF12 region (13q22.1), own survival
+    trait_efo_id: OBA_VT0005372
+    effect_allele: CTT
+    effect_size: -0.0031
+    effect_measure: beta
+    stat_significance: suggestive
+    direction: protective
+    genotypes:
+      - genotype: C/C
+        state: neutral
+        conclusion: >-
+          You carry two copies of the shorter, more common forms of a short repeated stretch of DNA here (about 36 in
+          100 people of European ancestry carry no copy of the longer form). The stretch, on chromosome 13, lies near
+          the KLF12 gene. A large British study's published data hint at a very small link with survival, but the
+          authors did not report it, it fell short of the usual bar, and no separate study confirmed it. It says
+          nothing about your own lifespan.
+      - genotype: C/CTT
+        state: neutral
+        conclusion: >-
+          You carry one copy of a slightly longer form of a short repeated stretch of DNA here (about 48 in 100
+          people of European ancestry do). A large British study's published data hint that this form goes with
+          very slightly better survival, but the authors did not report it, it fell short of the usual bar, and
+          other studies did not clearly see it. It says nothing about your own lifespan.
+      - genotype: CTT/CTT
+        state: neutral
+        conclusion: >-
+          You carry two copies of a slightly longer form of a short repeated stretch of DNA here (about 16 in 100
+          people of European ancestry do). A large British study's published data hint that this form goes with
+          very slightly better survival, but the authors did not report it, it fell short of the usual bar, and
+          other studies did not clearly see it. It says nothing about your own lifespan.
+  - rsid: rs116257533
+    gene: ""
+    phenotype: KLF12 region (13q22.1), own survival
+    trait_efo_id: OBA_VT0005372
+    effect_allele: G
+    effect_size: -0.432
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position, the one almost everyone of European
+          ancestry has, and about 88 in 100 people of African ancestry. It is the reference the other combinations
+          are compared with. The position, on chromosome 13, lies near the KLF12 gene.
+      - genotype: G/T
+        state: neutral
+        conclusion: >-
+          You carry one copy of a version of this DNA position that about 12 in 100 people of African ancestry carry
+          and fewer than 1 in 1,000 people of European ancestry. A large British study's published data hint that
+          the few European carriers in it died somewhat earlier, but the study's authors did not count it as a
+          finding, it rests on a few dozen people, and no other study could check it. Nothing was studied in people
+          of African ancestry. It says nothing about your own lifespan.
+      - genotype: T/T
+        state: neutral
+        conclusion: >-
+          You carry two copies of a version of this DNA position (about 4 in 1,000 people of African ancestry do;
+          it is almost never seen in people of European ancestry). A large British study's published data hint that
+          carriers of one copy died somewhat earlier, but the authors did not count it as a finding, it rests on a
+          few dozen people, and no one with two copies was studied. Nothing was studied in people of African
+          ancestry. It says nothing about your own lifespan.
+studies:
+  - rsid: rs35257605
+    note: pmid-40021682
+    quote: q76
+    phenotype_class: OWN_SURVIVAL
+    study_design: own_survival_cox
+    population: European (UK Biobank, whole cohort)
+    ancestry: [EUR]
+    n_cases: 35551
+    sample_size: 393833
+    sample_unit: individuals
+    stat_significance: suggestive
+    p_value: "5.4e-06"
+    p_value_num: 5.4e-06
+    effect_size: 0.00311199
+    effect_measure: beta
+    effect_unit: Martingale residual of a Cox model of own survival per C (13-T) allele (positive = more deaths than expected, shorter life)
+    effect_allele: C
+    direction: risk
+    statistical_test: "BOLT-LMM on Martingale residuals (pmid-40021682#q39); the deposit's line (GCST90551884, q76) prints CTT at 0.583 where the 15-T allele is 0.40 in Europeans (db-ensembl-116#q574), so the labels are swapped (q32) and the β is C's; a multi-allelic repeat read as two alleles, approximate. Not among the paper's loci (q40, q42): a deposit line, suggestive. Four common SNPs within 16 kb at the same P (rs9573270, q77); LifeGen there P 0.0061 Park's way but not independent (pmid-30642433#q311), Deelen against, flat (pmid-31413261#q177), r² to the repeat unknown"
+    curator: claude-opus-5-5
+  - rsid: rs116257533
+    note: pmid-40021682
+    quote: q74
+    phenotype_class: OWN_SURVIVAL
+    study_design: own_survival_cox
+    population: European (UK Biobank, whole cohort)
+    ancestry: [EUR]
+    n_cases: 35551
+    sample_size: 393833
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "4.3e-09"
+    p_value_num: 4.3e-09
+    effect_size: 0.432
+    effect_measure: beta
+    effect_unit: Martingale residual of a Cox model of own survival per T allele (positive = more deaths than expected, shorter life)
+    effect_allele: T
+    direction: risk
+    statistical_test: "BOLT-LMM on Martingale residuals (pmid-40021682#q39); the deposit's line (q74) prints T β −0.43189, SE 0.0736441, T 0.999952 under swapped allele labels (q32, row 44), so T β +0.432 at about 4.8e-5, some 38 copies (derived). Below the paper's MAF 0.1 % filter (q39, q41) and not among its genome-wide loci (q40, q42): a deposit line, not a reported finding (D26.7). 13:74,331,131 passes with it at the same frequency (q75). Open Targets' sets: whole cohort P 4.5e-9, PIP 0.54 (db-opentargets-26.09#q885); women P 6.6e-11 (q887), a subset"
+    curator: claude-opus-5-5

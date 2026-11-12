@@ -3222,3 +3222,28 @@ the rest of the list) holds it (q878). No longevity or disease fine-mapping plac
 breastfeeding interaction (q880 and the third) and black olive liking (q881), none a disease or lifespan trait. No set
 of the nine longevity studies holds it (q882), and Pilling's mothers' study (GCST006696) has no set here. No gene can
 be named from fine-mapping. For row 74.
+
+## Reading 2026-11-12, record
+
+> [q883] data.variant.credibleSets.rows[0] studyLocusId f48ec086ca0759283f3639f69ce7b7f4 pValueMantissa 4.863107681274414 pValueExponent -6 beta 0.0067361257223389395 finemappingMethod SuSiE-inf confidence SuSiE fine-mapped credible set with out-of-sample LD
+
+> [q884] data.variant.credibleSets.rows[0].locus.rows[0] posteriorProbability 0.07034168895832833
+
+> [q885] data.variant.credibleSets.rows[1] studyLocusId e41c91dd508237f5894d4c0ec3c222ed pValueMantissa 4.503342151641846 pValueExponent -9 beta -0.008998080089636729 finemappingMethod SuSiE-inf confidence SuSiE fine-mapped credible set with out-of-sample LD
+
+> [q886] data.variant.credibleSets.rows[1].locus.rows[0] posteriorProbability 0.5351966339430967
+
+> [q887] data.variant.credibleSets.rows[0] studyLocusId 5c4802611db885c6019fcf286a2f038c pValueMantissa 6.60985803604126 pValueExponent -11 beta -0.013903108478312146 finemappingMethod SuSiE-inf confidence SuSiE fine-mapped credible set with out-of-sample LD
+
+> [q888] data.variant.credibleSets.rows[0].study id GCST90551886 traitFromSource Lifespan studyType gwas
+
+> [q889] data.variant.credibleSets.rows[0].qualityControls[1] Study locus finemapped without in-sample LD reference
+
+> [q890] data.credibleSets count 0
+
+Row 75. The seed's two rsIDs sit in different Open Targets sets of Park's deposits. 13_73649403_C_CTT (rs35257605)
+is in one set of the whole cohort (GCST90551884), P 4.9e-6, PIP 0.070 (q883, q884): a sub-genome-wide set.
+13_73757854_G_T (rs116257533) is in the whole cohort's set at P 4.5e-9, PIP 0.54 (q885, q886), and in the second sex
+scan's (GCST90551886, the women by row 44's subtraction) at P 6.6e-11, PIP 0.59 (q887, q888). Every set is SuSiE-inf
+with out-of-sample LD, its study QC-flagged and fine-mapped without an in-sample LD reference (q889). None of the
+nine longevity studies holds either variant (q890, and the same for 13_73757854_G_T). For row 75.

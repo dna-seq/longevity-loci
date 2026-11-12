@@ -2053,3 +2053,31 @@ Genomes Europeans (q564), 0.064 in gnomAD genomes' non-Finnish Europeans (q565),
 East Asians, 0.066 in South Asians. rs12586026, Wright's mothers' SNP 3.9 kb away, is in complete LD with it in CEU,
 r² 1.0, D′ 1.0 (q566), its C at 0.066 in Europeans (q567), so C rides with C. VEP: intergenic (q568). The EUR window
 at r² ≥ 0.5 holds 538 pairs. For row 74.
+
+## Reading 2026-11-12, record
+
+> [q570] mappings[0] assembly_name GRCh38 ancestral_allele TTTTTTTTTTTTT allele_string TTTTTTTTTTTTT/TTTTTTTTTTT/TTTTTTTTTTTT/TTTTTTTTTTTTTT/TTTTTTTTTTTTTTT/TTTTTTTTTTTTTTTT/TTTTTTTTTTTTTTTTT strand 1 seq_region_name 13 location 13:73649404-73649416 end 73649416 coord_system chromosome start 73649404
+
+> [q571] mappings[0] end 74223553 ancestral_allele TTTTTTTTTTTTT strand 1 start 74223541 assembly_name GRCh37 location 13:74223541-74223553 allele_string TTTTTTTTTTTTT/TTTTTTTTTTT/TTTTTTTTTTTT/TTTTTTTTTTTTTT/TTTTTTTTTTTTTTT/TTTTTTTTTTTTTTTT/TTTTTTTTTTTTTTTTT seq_region_name 13 coord_system chromosome
+
+> [q572] mappings[0] end 73757854 strand 1 start 73757854 assembly_name GRCh38 location 13:73757854-73757854 ancestral_allele G allele_string G/T seq_region_name 13 coord_system chromosome
+
+> [q573] mappings[0] ancestral_allele G strand 1 end 74331991 coord_system chromosome assembly_name GRCh37 allele_string G/T location 13:74331991-74331991 start 74331991 seq_region_name 13
+
+> [q574] populations[99] allele_count 400 allele TTTTTTTTTTTTTTT population 1000GENOMES:phase_3:EUR frequency 0.397614314115308
+
+> [q575] populations[2] population gnomADg:nfe frequency 0.0001765 allele T allele_count 12
+
+> [q576] populations[42] frequency 0.0642965204236006 allele T allele_count 85 population 1000GENOMES:phase_3:AFR
+
+> [q577] populations[60] population 1000GENOMES:phase_3:EUR allele G allele_count 1006 frequency 1
+
+> [q578] [0] id rs9573270 feature_type variation start 74212656 consequence_type intron_variant seq_region_name 13 source dbSNP strand 1 end 74212656 assembly_name GRCh37
+
+rs35257605 (row 75's seed lead) is a poly-T repeat: GRCh38 13:73,649,404-73,649,416 (q570), GRCh37 13:74,223,541-553
+(q571), 13 T ancestral, alleles of 11 to 17 T; the seed's C/CTT at 73,649,403 is the 15-T allele, 0.40 in 1000 Genomes
+Europeans (q574), 0.43 in gnomAD genomes' non-Finnish Europeans. Ensembl's LD endpoint returns nothing for it (the
+window query rendered no text), so its r² to any SNP is unknown. rs116257533: GRCh38 13:73,757,854 (q572), GRCh37
+74,331,991 (q573), G/T, G ancestral; T is an African-ancestry allele, 0.064 in 1000 Genomes Africans (q576), absent in
+Europeans there (q577), 0.00018 in gnomAD's non-Finnish Europeans (q575). Park's 13:74,212,656 is rs9573270 (q578),
+intronic in KLF12 by position. For row 75.
