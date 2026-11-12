@@ -26,8 +26,9 @@ verdict_reason: >-
   read as the other allele, the β per the minor allele, anchored by the UK Biobank arm's sign, as at row 39): tags
   this weak are named, not counted, and the lead is asked whether the first would count against a D. Timmers' pooled summary statistics
   (P 0.0015, both arms G's way) hold UK Biobank, so they co-occur and do not replicate. Zenin 2019's healthspan, in
-  the same UK Biobank people, goes against G at P 0.049 (healthspan scores nothing alone, D22.2); the cell stays 0
-  by default, `−` put to the lead. The lead's G is the derived allele: a presence. Open Targets 26.09 holds no
+  the same UK Biobank people, goes against G at P 0.049, one-sided about 0.025 (healthspan scores nothing alone, D22.2,
+  so no tier weight); the cell is `−` by D28.3, a one-sided pass against the allele with none for it (the previous
+  commit's 0 rejected by the lead). The lead's G is the derived allele: a presence. Open Targets 26.09 holds no
   record of the lead or of its best tags (rs79725344, rs10504278, r² 0.71), by key and by rsID search, so no
   credible set and no gene: C4, E4; Ensembl's VEP places it in an intron of TOX, named as
   the gene the variant lies in, not as the gene acting. Mechanism general ageing, no pleiotropy quoted; age of
@@ -37,7 +38,7 @@ axes:
   mechanism: {value: general_ageing, cites: [pmid-29227965#q31]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "0",
+  outcome: {healthspan: "−", lifespan: "+", exceptional_survival: "0",
             cites: [pmid-30729179#q80, pmid-29227965#q31, pmid-30642433#q253, pmid-31413261#q150, db-finngen-r11#q32]}
   actionability: {label: descriptive, cites: [pmid-29227965#q31]}
   context: {values: ["sex_specific:m", eur_only_evidence], cites: [pmid-29227965#q31, pmid-29227965#q32, pmid-30642433#q253, db-ensembl-116#q390]}
@@ -193,5 +194,5 @@ studies:
     effect_unit: log hazard of the end of healthspan per G allele (positive = earlier)
     effect_allele: G
     direction: risk
-    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), -log10 P 1.31; against the discovery, in the same UK Biobank people; healthspan scores nothing alone (D22.2); the outcome cell stays 0 by default, `−` put to the lead"
+    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), -log10 P 1.31; against the discovery, in the same UK Biobank people; healthspan scores nothing alone (D22.2); the outcome cell is `−` (D28.3)"
     curator: claude-opus-5-5
