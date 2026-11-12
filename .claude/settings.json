@@ -4,7 +4,7 @@
       "source": {
         "source": "github",
         "repo": "dna-seq/just-module-creator",
-        "ref": "v0.48.7"
+        "ref": "v0.48.8"
       }
     }
   },

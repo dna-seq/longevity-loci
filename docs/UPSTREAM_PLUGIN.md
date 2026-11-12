@@ -12,7 +12,7 @@ file): `[seat.liaison.watch.plugin]` says each new tag.
 
 ## Read mark
 
-**`v0.48.7`**, the tag `.claude/settings.json` pins (2026-11-12). The first mark, `v0.48.0` (3dd8c2a), was
+**`v0.48.8`**, the tag `.claude/settings.json` pins (2026-11-12). The first mark, `v0.48.0` (3dd8c2a), was
 fast-forwarded: no release before it was read.
 
 **The pin does not bind on this machine.** The person's user settings declare the marketplace `just-dna` with no
@@ -22,7 +22,7 @@ ref, and that entry outranks the project's: the client refused `marketplace add 
 while the pin named v0.48.1; updated, it is 0.48.2 at `1b622ff`, the tag plus one notes commit, the same code.
 The person's answer (2026-11-06): drop the user-level entry, so the repository's pin binds; theirs to do,
 since it is their settings file. Still present on 2026-11-09, so the copy is updated by hand to the pinned
-release: `claude plugin update just-module-creator@just-dna --scope project` installed 0.48.7 (2026-11-12), the
+release: `claude plugin update just-module-creator@just-dna --scope project` installed 0.48.8 (2026-11-12), the
 tag or main's head plus notes commits.
 
 ## Backlog
@@ -57,6 +57,11 @@ registry 0.27.0, format 0.7.1, compiler 0.7.2. Our caps (`docs/UPSTREAM_COMPILER
 
 ## Inbound verdicts
 
+- **`v0.48.8`** (2026-11-12). Nothing breaks; toolchain unchanged (the trio 0.8.4, polars 1.44.2, duckdb 1.5.6).
+  *For the module seat:* `registry_lane_lookup` reads one snapshot lane a registry holds, by key, without a
+  download (registry 0.30); `remote_derive` takes 0.30's `passes`, `live` (off by default) and an interval, and
+  returns `passes_report`; `enrich_expression_effects(rows=true)` names, under `no_gene_candidates`, the MANE genes
+  within reach of a position whose rows author no gene (hints only, nothing written). Install synced by hand.
 - **`v0.48.7`** (2026-11-12): **just-dna 0.8.** Its server runs format, compiler and enricher 0.8.4 (polars 1.44.2,
   duckdb 1.5.6), so our caps below 0.8 lift with it, and the 0.8 adoption's mechanical half is done here the same
   day. 0.48.6 and earlier get HTTP 409 from both registry instances once they serve 0.8. *For the module seat:* the
