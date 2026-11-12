@@ -6,7 +6,7 @@ locus_id: 73
 locus_name: KL (KL-VS
 verdict: kept
 verdict_reason: >-
-  Tier C, as the seed: a candidate-gene association replicated only in small or same-group samples (§4.1's C), its
+  Tier C, as the seed (D29.14, D29.19): a candidate-gene association replicated only in small or same-group samples (§4.1's C), its
   claim a genotype model, not an allele. Arking 2002 named KL-VS (six variants in complete LD, F352V and C370S) and
   found its homozygotes underrepresented among the elderly of three populations (Bohemian Czechs, Baltimore
   Caucasians and African-Americans; combined OR 2.59, P < 0.0023), with V352 cutting secreted klotho 6-fold in
@@ -24,8 +24,11 @@ verdict_reason: >-
   healthspan G earlier (P 0.081 raw, 0.089 after genomic control). An additive test reads a heterozygote contrast only
   in part: weighting genotypes at G 0.16, the per-allele slope is 0.68 of the heterozygote log OR plus 0.16 of the
   homozygote's. Under Arking's full model (heterozygote 1.57, homozygote 1/2.59) the expected Deelen 90th log OR is
-  +0.154 (SE 0.097 from the discovery's intervals), power 1.00 but heterogeneity P 0.19 (99th: 0.98, 0.22); a flag
-  appears only under models Arking does not state (homozygotes as wild type, P 0.0011). That conversion is the
+  +0.154 (SE 0.097 from the discovery's intervals): power about 1.00, yet no flag, because the model's two terms
+  nearly cancel (heterozygote +0.307, homozygote −0.152 in the slope) and leave a large error, heterogeneity P 0.19
+  (99th: power 0.98, P 0.22). Arking 2002's homozygote-only sub-claim alone fails Deelen's 90th with power
+  (heterogeneity P 0.002; 99th 0.006, derived), and the row names that; but the row's claim is the combined model,
+  which is not contradicted (D29.19). That conversion is the
   curator's, from odds ratios of different designs, so the red flag is unknown and no token is set (D28.1, D26.3), and
   D25.1's "explicitly contradicted" is not met. No study has tested the heterozygote contrast at scale. Mechanism
   `legacy_candidate`: a v1 candidate row (R-LEGACY-1); nothing large shows what would carry it. Arking 2005 reports
@@ -41,15 +44,18 @@ verdict_reason: >-
   an age window are hypotheses). The outcome cells read the genotype claim, which the per-allele lines do not test:
   healthspan untested (Zenin is per-allele; read so, G's one-sided 0.045 after genomic control would be `−` by
   D28.3); lifespan 0, mixed, as 43's healthspan (D26.6): Arking 2005's Cox in 216 probands favours heterozygotes,
-  de Vries reports them shorter-lived; exceptional survival `+` on Arking 2002, Invidia's elderly and Revelas, none
-  contradicted by a genotype test.
+  de Vries reports them shorter-lived; exceptional survival `+` on Arking 2002 alone (D29.19): Revelas gives no
+  direction, and Invidia's centenarians are null (its heterozygote enrichment is among the elderly, not the
+  centenarians). PROTECT:BUFFERING, §4.2's own example: Belloy 2020 ties KL-VS heterozygosity to lower Alzheimer
+  risk in APOE4 carriers (OR 0.75, P 7.4e-7), a protection conditional on another genotype; Shibata's UK Biobank
+  null on cognition is named beside it.
 axes:
   tier: {value: C, cites: [pmid-11792841#q1, pmid-11792841#q2, pmid-15677572#q1, pmid-15677572#q2, pmid-15677572#q5, pmid-15677572#q6, pmid-19421891#q1, pmid-19421891#q2, pmid-19421891#q3, pmid-28431289#q1, pmid-28431289#q2, pmid-24164579#q1, pmid-29890178#q1, pmid-29890178#q2, pmid-30633899#q1, pmid-30633899#q2, pmid-30642433#q299, pmid-30642433#q300, pmid-31413261#q173, pmid-31413261#q174, db-finngen-r11#q50, pmid-40021682#q72, pmid-30729179#q103, db-ensembl-116#q556, db-ensembl-116#q560]}
   mechanism: {value: legacy_candidate, cites: [pmid-11792841#q2, pmid-15677572#q3, pmid-15677572#q4, db-gwascatalog-2026.10.29#q475]}
   pleiotropy: {values: [nonadditive, "context:apoe4"], cites: [pmid-15677572#q6, pmid-32282020#q1, pmid-32282020#q2, pmid-39903109#q1, pmid-39903109#q2]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: [pmid-19421891#q3, pmid-28431289#q2]}
   outcome: {healthspan: untested, lifespan: "0", exceptional_survival: "+",
-            cites: [pmid-30729179#q103, pmid-15677572#q5, pmid-28431289#q1, pmid-28431289#q2, pmid-30642433#q299, db-finngen-r11#q50, pmid-40021682#q72, pmid-11792841#q2, pmid-29890178#q2, pmid-19421891#q2, pmid-19421891#q3, pmid-31413261#q173, pmid-31413261#q174]}
+            cites: [pmid-30729179#q103, pmid-15677572#q5, pmid-28431289#q1, pmid-28431289#q2, pmid-30642433#q299, db-finngen-r11#q50, pmid-40021682#q72, pmid-11792841#q2, pmid-29890178#q2, pmid-19421891#q3, pmid-31413261#q173, pmid-31413261#q174]}
   actionability: {label: descriptive, cites: [db-gwascatalog-2026.10.29#q475]}
   context: {values: [], cites: [db-ensembl-116#q556, db-ensembl-116#q557, db-ensembl-116#q558]}
 flags:
@@ -57,6 +63,7 @@ flags:
   - {token: "causal:C4", cites: [db-opentargets-26.09#q874, db-opentargets-26.09#q875, db-opentargets-26.09#q876, db-opentargets-26.09#q877, db-opentargets-26.09#q878]}
   - {token: "effector:E1", cites: [db-ensembl-116#q561, pmid-11792841#q3]}
   - {token: "animal:genage_mouse", cites: [pmid-16123266#q1, pmid-9363890#q1]}
+  - {token: "PROTECT:BUFFERING", cites: [pmid-32282020#q2, pmid-32282020#q1]}
   - {token: "animal_dir:nonmonotone", cites: [pmid-16123266#q1, pmid-15677572#q6]}
 variants:
   - rsid: rs9536314
@@ -155,7 +162,7 @@ studies:
     population: published and two unpublished samples, survival to 85 or more (q1)
     stat_significance: nominal
     direction: unknown
-    statistical_test: "Revelas 2018: KL-VS among five variants significant in meta-analyses of at least three studies of exceptional longevity (q1, q2). The abstract gives neither KL-VS's pooled OR, allele, direction nor genetic model; nominal is the least its 'significant' can mean. Its studies include Arking's and Invidia's, so it is not independent of them"
+    statistical_test: "Revelas 2018: KL-VS among five variants significant in meta-analyses of at least three studies of exceptional longevity (q1, q2). The abstract gives neither KL-VS's pooled OR, allele, direction nor genetic model; nominal is the least its 'significant' can mean"
     curator: claude-opus-5-5
   - rsid: rs9536314
     note: pmid-30633899
