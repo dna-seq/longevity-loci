@@ -2752,3 +2752,13 @@ and 136 Mb. For row 59.
 
 Every set of Foote 2025's general frailty factor and six factors (`credibleSets-foote7-all.json`): 426, the nearest to
 ABO at 9:136,626,337, 3.4 Mb away. For row 59.
+
+## Reading 2026-11-12, supplement
+
+> [q747] data.search total 0
+
+Open Targets' search finds no record of rs75824829. For row 60.
+
+> [q748] data variant null
+
+Nor by its GRCh38 id 9_135376756_G_A: no credible set, no locus-to-gene, no colocalisation. For row 60.

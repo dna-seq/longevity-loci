@@ -262,3 +262,9 @@ FinnGen R11 death endpoint (`rows-34c921c6`), GRCh38 9:133,266,456 T>C, row 59's
 (the file names it rs977371848): alt C 0.80, β −0.0072 (SE 0.0092) on the log odds of death, so C with fewer deaths, P
 0.43 (one-sided 0.22). D21 (derived), Timmers' β per C × −0.99: expects −0.022, power 0.78, heterogeneity P 0.15 under
 APOE's factor; −0.0093, power 0.26, P 0.83 under the mean factor: no red flag. For row 59.
+
+## Reading 2026-11-12, supplement
+
+> [q35] 9	135376756	G	A	rs75824829	RP11-555H7.2	0.143128	0.844274	0.0443916	0.0303172	0.015967	0.0165589	0.0158929
+
+FinnGen R11 death endpoint (`rows-1ce2da39`), rs75824829 at 9:135,376,756 (GRCh38): ref G, alt A, β +0.0444 (SE 0.0303) on the log odds of death, P 0.14, A 0.016 (cases 0.0166, controls 0.0159); 50,511 deaths (q6). A leans to more deaths, against Pilling's direction; independent of UK Biobank. For row 60.

@@ -1532,3 +1532,33 @@ VEP: an intron variant of ABO, no coding consequence. For row 59.
 > [q419] [0] d_prime 0.999984 population_name 1000GENOMES:phase_3:CEU variation2 rs514659 r2 0.424208 variation1 rs2519093
 
 CEU r² 0.42 (D′ 1.0) to Fortney's rs514659. For row 59.
+
+## Reading 2026-11-12, supplement
+
+> [q420] mappings[0] allele_string G/A coord_system chromosome seq_region_name 9 start 135376756 strand 1 end 135376756 location 9:135376756-135376756 ancestral_allele A assembly_name GRCh38
+
+`var-rs75824829.json` (GRCh38): 9:135,376,756 G/A, A ancestral, so G is derived and A, the minor allele here, is the ancestral one. For row 60.
+
+> [q421] populations[10] population gnomADg:nfe allele A allele_count 2855 frequency 0.04199
+
+A 0.042 in gnomAD's non-Finnish Europeans. For row 60.
+
+> [q422] populations[67] population 1000GENOMES:phase_3:EUR frequency 0.0337972166998012 allele A allele_count 34
+
+A 0.034 in 1000 Genomes Europeans. For row 60.
+
+> [q423] populations[17] population gnomADg:fin allele A allele_count 150 frequency 0.01413
+
+A 0.014 in Finns, which lowers FinnGen's power. For row 60.
+
+> [q424] populations[93] frequency 0.0521472392638037 allele A allele_count 51 population 1000GENOMES:phase_3:SAS
+
+A 0.052 in South Asians; 0.0014 in gnomAD's East Asians and 0.0075 in its Africans (the file's lines). For row 60.
+
+> [q425] [0] variation2 rs113450114 population_name 1000GENOMES:phase_3:CEU d_prime 1.000000 variation1 rs75824829 r2 0.489690
+
+`ld-rs75824829-ceu.json`: the best proxy in 1000 Genomes CEU is rs113450114, r² 0.49 (D′ 1); next rs4841974, r² 0.41. No strong proxy, so a lone line in a scan is less surprising than the authors' remark suggests: at r² 0.49 a neighbour's expected z is about 3.8 (derived), below the top-1000 cut-off's. For row 60.
+
+> [q426] [0] most_severe_consequence upstream_gene_variant id rs75824829 strand 1 allele_string G/A assembly_name GRCh38 input rs75824829 start 135376756 end 135376756 seq_region_name 9
+
+VEP: no coding consequence; it lies 1.87 kb from the lncRNA ENSG00000296725's transcripts. For row 60.

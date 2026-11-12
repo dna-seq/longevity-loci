@@ -1370,3 +1370,17 @@ rs635634 is at CEU r² 0.97, D′ 1.0 to the lead; in Timmers' summary statistic
 P 1.3e-5, pmid-30642433 `rows-a6fe4f5f`), so C rides with the lead's C. These four lines, at proxies, are the trade-off
 row 59 carries (D18.1): the longer-life side raises peptic ulcer, diverticular disease, gout and goitre, while T raises
 thrombosis, coronary disease and LDL. For row 59.
+
+## Reading 2026-11-12, supplement
+
+> [q383] page size 50 totalElements 1 totalPages 1 number 0
+
+`assoc-rs75824829-p0`: the catalog holds one association for the lead. For row 60.
+
+> [q384] _embedded.associations[0] association_id 16533693 risk_frequency NR pvalue_description  pvalue_mantissa 4 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.0085-0.018] beta 0.01326 unit decrease p_value 4e-08 accession_id GCST003395 pubmed_id 27015805 first_author Pilling LC ci_lower 0.0085 ci_upper 0.018
+
+Pilling 2016's GCST003395, P 4e-8, β 0.01326 "unit decrease", effect allele unrecorded; no replication sample (q317 for the study). For row 60.
+
+> [q385] _embedded.associations[0].mapped_genes[0] LINC02907
+
+The catalog maps it to LINC02907 (and PPP1R26-AS1), the seed's name. For row 60.

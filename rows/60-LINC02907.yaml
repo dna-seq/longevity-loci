@@ -1,0 +1,137 @@
+# The seed list's locus 60, LINC02907 (9q34.3, the GWAS Catalog's mapped gene; Pilling names C9orf62, about 50 kb
+# away). Curated 2026-11-12. Lead rs75824829, the seed's only rsID, an intergenic G/A at GRCh38 9:135,376,756 (GRCh37
+# 138,268,602), 1.87 kb from the lncRNA ENSG00000296725; A is the minor and the ancestral allele, 0.042 in gnomAD's
+# non-Finnish Europeans, 0.014 in Finns. Entered by track B from Pilling 2016's parental extreme-longevity scan
+# (GCST003395), the paper's second hit beside row 47's AP5Z1. Deelen 2019's files hold neither the lead nor its best
+# proxy rs113450114 (r² 0.49).
+locus_id: 60
+locus_name: LINC02907
+verdict: kept
+verdict_reason: >-
+  Tier B, the seed's, kept, on §4.1's letter (a genome-wide locus, a single study without independent replication),
+  as row 47; whether it should be D or C is put to the lead (below). Pilling 2016 ran BOLT-LMM on 42,273 'white'
+  British UK Biobank participants aged 55 to 70, 1,339 of them with a parent in the top 1 % of age at death. The
+  minor A raised the chance of a long-lived parent by 0.0133 per copy (SE 0.0024, P 4.0e-8, INFO 0.87; the scan
+  kept variants above INFO 0.4 and frequency 0.1 %), about 5.8 times APOE ε4's 0.0023 on the same phenotype. The
+  authors doubt it themselves: it "may be anomalous as it is not in a peak of associations", and no other variant
+  of the table's top 1,000 lies within 1.17 Mb (derived); its best 1000 Genomes proxy reaches only r² 0.49, so a
+  lone line is less telling than it looks. A is out on size and on replication: 1,339 cases, and no independent
+  study. Deelen 2019, the one independent extreme-survival look, has no line for the lead or its proxy. LifeGen's
+  parental lifespan leans the same way (A beta1 +0.0155, P 0.18, one-sided 0.089) but contains UK Biobank, so it is
+  not independent. FinnGen R11's death endpoint, independent, leans against: A log OR +0.044 for death (SE 0.030,
+  P 0.14), A only 1.4 % in Finns. Pilling's APOE line (factor about 46 to LifeGen's scale) makes both look-ups red
+  flags; the flag holds at any factor of 3.22 or more for LifeGen and 5.74 or more for FinnGen, but the mean factor
+  (D25.3) is undefined for this phenotype, so whether they are red flags is unknown and the row carries no
+  replication_failed (D26.3). The row stays B. Zenin 2019's healthspan leans the same way, P 0.47. Lifespan 0,
+  healthspan 0, exceptional survival + on Pilling alone. Age of action UNKNOWN: the top-1 % contrast is about how
+  extreme the survival is, not when the allele acts. Open Targets holds no record of the variant (no credible set,
+  no locus-to-gene), so causal C4 and effector E4, no gene named; the GWAS Catalog maps it to LINC02907 and records
+  no other trait, so mechanism general ageing and no pleiotropy. The evidence is European; A is 0.052 in South
+  Asians and near absent in East Asians, untested there, so eur_only_evidence. Descriptive. The protection is a
+  presence, the minor A.
+axes:
+  tier: {value: B, cites: [pmid-27015805#q1, pmid-27015805#q2, pmid-27015805#q3, pmid-27015805#q4, pmid-27015805#q5, pmid-27015805#q9, pmid-27015805#q11, pmid-27015805#q12, pmid-27015805#q17, pmid-27015805#q19, pmid-27015805#q21, pmid-27015805#q22, db-gwascatalog-2026.10.29#q317, db-gwascatalog-2026.10.29#q383, db-gwascatalog-2026.10.29#q384, pmid-30642433#q90, pmid-30642433#q274, db-finngen-r11#q6, db-finngen-r11#q35, db-ensembl-116#q425]}
+  mechanism: {value: general_ageing, cites: [db-gwascatalog-2026.10.29#q383, db-gwascatalog-2026.10.29#q384, db-opentargets-26.09#q747, db-opentargets-26.09#q748]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "+",
+            cites: [pmid-27015805#q22, pmid-30642433#q274, db-finngen-r11#q35, pmid-30729179#q83]}
+  actionability: {label: descriptive, cites: [pmid-27015805#q20]}
+  context: {values: [eur_only_evidence], cites: [pmid-27015805#q3, db-gwascatalog-2026.10.29#q317, db-ensembl-116#q424]}
+flags:
+  - {token: "PROTECT:PRESENCE", cites: [pmid-27015805#q22, db-ensembl-116#q420, db-ensembl-116#q421]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q747, db-opentargets-26.09#q748]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q747, db-opentargets-26.09#q748, db-gwascatalog-2026.10.29#q385, db-ensembl-116#q426]}
+variants:
+  - rsid: rs75824829
+    gene: ""
+    phenotype: 9q34.3 region, long-lived parents
+    trait_efo_id: OBA_VT0005372
+    effect_allele: A
+    effect_size: 0.01326
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position, as about 92 in 100 people of European
+          ancestry do. It is the reference the other combinations are compared with. The position, on chromosome 9,
+          lies between genes, and which gene it might affect, if any, is not known.
+      - genotype: A/G
+        state: protective
+        conclusion: >-
+          You carry one copy of a less common version of this DNA position (about 7 in 100 people of European
+          ancestry do). In one large British study, people with a parent who lived to 95 or more carried it more
+          often. The study's own authors thought the signal might be a fluke, no independent study has confirmed
+          it, and a Finnish study leaned the other way. It is a tentative finding, not a settled one.
+      - genotype: A/A
+        state: protective
+        conclusion: >-
+          You carry two copies of a less common version of this DNA position (fewer than 2 in 1,000 people of
+          European ancestry do). In one large British study, people with a parent who lived to 95 or more carried
+          this version more often, but the study's own authors thought the signal might be a fluke, no independent
+          study has confirmed it, and no one with two copies was studied on their own. It is a tentative finding,
+          not a settled one.
+studies:
+  - rsid: rs75824829
+    note: pmid-27015805
+    quote: q22
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (UK Biobank, 'white' British participants aged 55 to 70; cases with at least one parent in the top 1 % of age at death, q1, q3)
+    ancestry: [EUR]
+    sample_size: 42273
+    sample_unit: individuals
+    n_cases: 1339
+    age_of: parent
+    stat_significance: significant
+    p_value: "4.00E-08"
+    p_value_num: 4.0e-08
+    effect_size: 0.01326
+    effect_measure: beta
+    effect_unit: difference in the probability of having a parent in the top 1 % of age at death per A allele (BOLT-LMM, a linear mixed model on the binary outcome)
+    effect_allele: A
+    direction: protective
+    statistical_test: "BOLT-LMM on imputed dosages (q4, filters q21); Supplementary Table 2 prints 9:138268602_G_A with G at 0.963, β −0.01326 per G, SE 0.002415, P 4.0e-8, INFO 0.867 (q12, q22), so A +0.0133. APOE ε4's rs429358 on the same phenotype: 0.0023 per T, P 0.053 (q17). The authors: 'may be anomalous', no peak (q19); suggestive, to be confirmed (q9, q11). No replication sample (db-gwascatalog-2026.10.29#q317). Deelen 2019's files lack the lead and its best proxy"
+    curator: claude-opus-5-5
+  - rsid: rs75824829
+    note: pmid-30642433
+    quote: q274
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 630377
+    sample_unit: lives
+    stat_significance: not_significant
+    p_value: "0.17846162"
+    p_value_num: 0.1785
+    p_one_sided: 0.0892
+    effect_size: 0.01547632
+    effect_measure: beta
+    effect_unit: log hazard protection per A allele in self (positive = longer life)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0115, info 0.852, A 0.038, direction +- (UK Biobank and LifeGen opposite in sign). Contains UK Biobank, so Pilling's own participants: not independent. Pilling's effect under APOE's top-1 % factor (about 46, pmid-27015805#q17 against q90) predicts +0.61: a red flag; it holds at any factor of 3.22 or more; the mean factor (D25.3) is undefined for this phenotype, so the flag is unknown (D26.3)"
+    curator: claude-opus-5-5
+  - rsid: rs75824829
+    note: pmid-30729179
+    quote: q83
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.47"
+    p_value_num: 0.4745
+    effect_size: -0.0096
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per A allele (positive = earlier)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Zenin 2019's healthspan summary statistics, SE 0.0134, −log10 P 0.3239 (P 0.47)"
+    curator: claude-opus-5-5
