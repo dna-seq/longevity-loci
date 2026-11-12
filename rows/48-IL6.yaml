@@ -27,9 +27,9 @@ verdict_reason: >-
   2014's, the EU consortium that is flat in Zeng's table. With the discovery an overfit source it replicates nothing (D26.14): named,
   not counted, as row 41's LifeGen lean. Deelen's trans-ethnic analyses reach genome-wide at the lead only by adding
   CLHLS, and the authors say East Asians drive it; the GWAS Catalog's Deelen records and Open Targets' 99th-percentile
-  set (5,662 cases, 3,484 European plus Zeng's 2,178) are those results. Outcome cells: lifespan 0 (Timmers, FinnGen), healthspan 0 (Zenin, two-sided P 0.090
-  after genomic control; one-sided on G's side it would be about 0.045, but D26.2 reads a cell one-sided only in the
-  discovery's direction), exceptional survival 0 (Deelen's 90th named, not counted; 99th and the EU consortium flat).
+  set (5,662 cases, 3,484 European plus Zeng's 2,178) are those results. Outcome cells: lifespan 0 (Timmers, FinnGen), healthspan `−` (Zenin, two-sided P 0.090
+  after genomic control, one-sided about 0.045 on G's side, against the A the discovery called longer-lived, with no
+  study giving `+`: D28.3, a cell read one-sided in either direction; the earlier 0 read D26.2 one way only), exceptional survival 0 (Deelen's 90th named, not counted; 99th and the EU consortium flat).
   Pleiotropy is real but carries no trade-off at tier D (D26.14): G protects against critical COVID-19 in Chinese
   patients (Gong 2022, OR 0.49, P 4.6e-16) and lowers IL-6 expression in a reporter assay and in serum, so A is the
   higher-IL-6, higher-risk allele there; the lead is also genome-wide for Takayasu arteritis (Renauer 2015, OR 2.07),
@@ -46,7 +46,7 @@ axes:
   mechanism: {value: general_ageing, cites: [pmid-33657282#q15]}
   pleiotropy: {values: [], cites: [pmid-35368020#q2, pmid-35368020#q3, pmid-35368020#q4, pmid-25604533#q1]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
+  outcome: {healthspan: "−", lifespan: "0", exceptional_survival: "0",
             cites: [pmid-30729179#q71, pmid-30642433#q231, db-finngen-r11#q23, pmid-31413261#q124, pmid-31413261#q125, pmid-26912274#q9]}
   actionability: {label: descriptive, cites: [pmid-33657282#q15]}
   context: {values: ["ancestry_specific:eas"], cites: [pmid-26912274#q7, pmid-26912274#q4]}
