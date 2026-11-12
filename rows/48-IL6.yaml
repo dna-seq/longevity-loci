@@ -36,11 +36,11 @@ verdict_reason: >-
   whose risk allele the sources held here do not name. No longevity effect is shown to run through IL-6, so the
   mechanism is filed as general ageing (D25.7). Context `ancestry_specific:eas`: the claim is Han Chinese, as Zeng
   says and R-ANC-4 lists. Open Targets 26.09: the lead tops both lifespan-class credible sets, Zeng's (PIP 0.55) and
-  Deelen's trans-ethnic 99th (PIP 0.99), so causal C1 by the letter; both rest on CLHLS's genotypes, so it is the
-  fine-mapping of the doubted call. L2G names IL6 (0.91, 0.88), but the one cis colocalisation at H4 ≥ 0.8 is
-  IL6-AS1's visceral-adipose eQTL (0.85, an eCAVIAR line with clpp 0.005, the lowest the rows have counted; IL6's own
-  transcript-usage QTL 0.74): under D24 the rival holds every
-  colocalisation, so E3 and no gene named. Age of action is unknown. Genotypes neutral (D25.2).
+  Deelen's trans-ethnic 99th (PIP 0.99); both rest on CLHLS's genotypes, the source the row reads as overfit, so they
+  set no causal or effector level (D28.12, the lead's ruling; the previous commits' C1 and E3 rejected): C4, E4, no
+  gene named. On those sets, in prose only: L2G names IL6 (0.91, 0.88), the candidate, but the one cis colocalisation
+  at H4 ≥ 0.8 is IL6-AS1's visceral-adipose eQTL (0.85, an eCAVIAR line with clpp 0.005, the lowest the rows have
+  counted; IL6's own transcript-usage QTL 0.74). Age of action is unknown. Genotypes neutral (D25.2).
 axes:
   tier: {value: D, cites: [pmid-26912274#q12, pmid-24688116#q6, pmid-24688116#q7, pmid-26912274#q2, pmid-26912274#q4, pmid-26912274#q5, pmid-26912274#q7, pmid-33657282#q15, pmid-33657282#q16, db-ensembl-116#q322, db-ensembl-116#q323, db-ensembl-116#q324, pmid-30642433#q231, pmid-30642433#q232, pmid-30642433#q92, pmid-26912274#q9, pmid-26912274#q10, db-finngen-r11#q23, pmid-30729179#q71, pmid-31413261#q123, pmid-31413261#q124, pmid-31413261#q125, pmid-31413261#q126, pmid-31413261#q127]}
   mechanism: {value: general_ageing, cites: [pmid-33657282#q15]}
@@ -52,8 +52,8 @@ axes:
   context: {values: ["ancestry_specific:eas"], cites: [pmid-26912274#q7, pmid-26912274#q4]}
 flags:
   - {token: replication_failed, cites: [pmid-30642433#q232, pmid-30642433#q231, pmid-30642433#q92]}
-  - {token: "causal:C1", cites: [db-opentargets-26.09#q610, db-opentargets-26.09#q611, db-opentargets-26.09#q612, db-opentargets-26.09#q613, db-opentargets-26.09#q622]}
-  - {token: "effector:E3", cites: [db-opentargets-26.09#q614, db-opentargets-26.09#q615, db-opentargets-26.09#q616, db-opentargets-26.09#q617, db-opentargets-26.09#q618, db-opentargets-26.09#q619, db-opentargets-26.09#q620, db-opentargets-26.09#q621]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q610, db-opentargets-26.09#q611, db-opentargets-26.09#q612, db-opentargets-26.09#q613, db-opentargets-26.09#q622]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q614, db-opentargets-26.09#q615, db-opentargets-26.09#q616, db-opentargets-26.09#q617, db-opentargets-26.09#q618, db-opentargets-26.09#q619, db-opentargets-26.09#q620, db-opentargets-26.09#q621]}
 variants:
   - rsid: rs2069837
     gene: ""
