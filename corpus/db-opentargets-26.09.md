@@ -2842,3 +2842,9 @@ mvAge's set (GCST90321079, PICS, P 5e-16) ... For row 63.
 > [q767] data.credibleSet.locus.rows[0] posteriorProbability 0.33006469460849164 is95CredibleSet true
 
 ... rs35198068 at PIP 0.330; named, not counted. For row 63.
+
+## Reading 2026-11-12, supplement
+
+> [q768] data.credibleSet.colocalisation count 114
+
+The positive control for q763's query: the same `studyTypes` QTL query on row 35's healthspan set (3ebe7ef9958b5c249ce68244b0d819a2, `control-3ebe7ef9958b5c249ce68244b0d819a2-qtlcoloc.json`) returns its 114 QTL colocalisations (q508), so q763's zero is an answer, not a query that cannot see QTLs. For row 63.
