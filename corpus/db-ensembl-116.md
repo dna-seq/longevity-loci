@@ -1484,3 +1484,13 @@ among them, so not tags of the lead. For row 58.
 > [q407] [0].intergenic_consequences[1] impact MODIFIER variant_allele T
 
 `vep-rs10973748.json`: T is an intergenic variant (Open Targets: upstream of a gene). For row 58.
+
+> [q408] populations[16] frequency 0.06362 allele C population gnomADg:nfe allele_count 4327
+
+> [q409] populations[17] population gnomADg:nfe frequency 0.06339 allele_count 4311 allele A
+
+> [q410] populations[18] allele G population gnomADg:nfe allele_count 3921 frequency 0.05764
+
+`var-rs341466.json`, `var-rs341467.json`, `var-rs10973750.json`, the lead's CEU r² 1.0 tags (q404 to q406): in gnomAD
+non-Finnish Europeans rs341466's C 0.064, rs341467's A 0.063, rs10973750's G 0.058 (1000 Genomes EUR 0.069, 0.069,
+0.060), the alleles NECS codes (pmid-33948810#q24 to q26). For row 58.

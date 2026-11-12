@@ -251,5 +251,5 @@ Biobank. For row 56.
 FinnGen R11 death endpoint (`rows-f70b6fb7`), rs10973748 at 9:38,322,519 (GRCh38): alt T 0.055, β +0.0048 (SE
 0.0161), P 0.77: T, NECS's long-lived allele, leans to more deaths (one-sided 0.62 against, derived). D21 (derived),
 NECS's log OR into Timmers' scale (pmid-30642433#q255) and into FinnGen by −0.99: under APOE's factor expects −0.070,
-power 1.00, heterogeneity P 2e-4; at half, power 0.70, no flag; under the mean factor −0.167, power 1.00, P 1e-7 (at
-half 4e-5). A flag at full effect under both. For row 58.
+power 1.00, heterogeneity P 2e-4; at half, power 0.70, no flag. The mean factor enters twice, NECS into Timmers' scale
+and Timmers' into FinnGen, and cancels: one conversion. A flag at full effect. For row 58.
