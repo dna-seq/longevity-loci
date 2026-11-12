@@ -365,3 +365,10 @@ derived). For row 69.
 
 FinnGen R11 DEATH (`rows-2aa4ffe6`), rs12830425 (GRCh38 12:95,187,042): alt G at 0.080, β −0.0146 (SE 0.0136), P
 0.28: G on the fewer-deaths side, not nominal (one-sided 0.14, derived). For row 70.
+
+## Reading 2026-11-12, supplement
+
+> [q49] 13 18865983 C G rs2440012 ANKRD20A9P 0.758017 0.120321 -0.00292698 0.00950053 0.193636 0.195645 0.193384
+
+FinnGen R11 DEATH, rs2440012 (GRCh38 13:18,865,983), alt G at 0.19: β −0.0029 (SE 0.0095), P 0.76; G on the
+fewer-deaths side, flat, against Zeng's (one-sided for C 0.62, derived). A separate C/A line is not read. For row 72.

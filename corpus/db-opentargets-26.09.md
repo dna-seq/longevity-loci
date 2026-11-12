@@ -3179,3 +3179,14 @@ colocalisations (q859), 13 at H4 ≥ 0.8. FGD6 holds 8 (expression in subcutaneo
 adipose transcript and exon sets), NDUFA12 1 (a monocyte transcript, 0.93, q867, q868). The colocalisation sign field
 is 0 throughout, so no direction is read. The GWAS-only listing of the same set (q848) has 36 rows; its platelet
 colocalisation at H4 0.97 is GCST90476296, the maximum platelet count (q869, q870). For row 70.
+
+## Reading 2026-11-12, supplement
+
+> [q871] data variant null
+
+> [q872] data.credibleSets count 1
+
+> [q873] data.credibleSets.rows[0].variant id 7_22728408_A_G
+
+Open Targets 26.09 has no record for rs2440012 (13_18865983_C_G, q871), and Zeng's study GCST003425 holds one
+credible set, IL6's (q872, q873): none at ANKRD20A9P. No causal or effector level can be read. For row 72.

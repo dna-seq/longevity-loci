@@ -1679,3 +1679,10 @@ The GWAS Catalog's two associations for rs55686423: Rosoff 2023's mvAge (GCST903
 
 The GWAS Catalog's one association for rs12830425 (q473): Timmers 2020's multivariate ageing traits (GCST011100),
 G at 0.073, P 8e-9 (q471, q472). For row 70.
+
+## Reading 2026-11-12, supplement
+
+> [q474] _embedded.associations[0] association_id 16503376 risk_frequency NR pvalue_description pvalue_mantissa 4 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [NR] or_per_copy_num 1.6611296 or_value 1.6611296 beta - p_value 4e-08 accession_id GCST003425 pubmed_id 26912274 first_author Zeng Y
+
+GWAS Catalog, rs2440012: one association, Zeng 2016's (GCST003425), P 4e-8, OR 1.66 (per C, the inverse of 0.602).
+No other trait. For row 72.

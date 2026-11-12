@@ -1963,3 +1963,33 @@ at r² 0.89 (D′ 0.96), rs10859847 at 0.98, rs34150274 at 0.65 (D′ 1); each s
 non-Finnish Europeans (db-opentargets-26.09#q849-q856), rides with the lead's minor G. Wright 2019's tag rs11107904
 r² 0.88, D′ 0.95 (q534), T/C with C at 0.073 (q538), so C rides with G; mvAge's best SNP in its FGD6 TWAS window,
 rs11107928, r² 0.98 (q535); rs4128507 r² 0.29, D′ 1 (q537), C at 0.18 (q539), its C with G. For row 70.
+
+## Reading 2026-11-12, supplement
+
+> [q540] mappings[0] strand 1 seq_region_name 13 start 18865983 ancestral_allele C end 18865983 location 13:18865983-18865983 assembly_name GRCh38 coord_system chromosome allele_string C/A/G
+
+> [q541] mappings[0] strand 1 ancestral_allele null end 19440123 coord_system chromosome seq_region_name 13 allele_string C/A/G location 13:19440123-19440123 assembly_name GRCh37 start 19440123
+
+> [q542] populations[75] population 1000GENOMES:phase_3:EAS allele_count 96 frequency 0.0952380952380952 allele G
+
+> [q543] populations[71] allele_count 21 frequency 0.1 population 1000GENOMES:phase_3:CHS allele G
+
+> [q544] populations[70] allele_count 14 frequency 0.0679611650485437 population 1000GENOMES:phase_3:CHB allele G
+
+> [q545] populations[80] frequency 0.201789264413519 allele_count 203 population 1000GENOMES:phase_3:EUR allele G
+
+> [q546] populations[14] allele G population gnomADg:eas frequency 0.1108 allele_count 573
+
+> [q547] [63] population_name 1000GENOMES:phase_3:EUR r2 0.945387 variation2 rs113946246 variation1 rs2440012 d_prime 0.981303
+
+> [q548] [65] d_prime 1.000000 population_name 1000GENOMES:phase_3:EAS r2 0.988606 variation2 rs113946246 variation1 rs2440012
+
+> [q549] . minor_allele null name rs2440012 MAF null most_severe_consequence intron_variant var_class SNP ambiguity V source Variants (including SNPs and indels) imported from dbSNP
+
+> [q550] [0].transcript_consequences[3] variant_allele G gene_symbol_source HGNC gene_symbol ANKRD20A9P impact MODIFIER strand -1 hgnc_id HGNC:42023 gene_id ENSG00000206192 biotype transcribed_unprocessed_pseudogene transcript_id ENST00000457997
+
+rs2440012: GRCh38 13:18,865,983 (the seed's position), GRCh37 13:19,440,123, C/A/G, C ancestral; intronic in the
+pseudogene ANKRD20A9P (q549, q550). G at 0.095 in 1000 Genomes' East Asians (CHS 0.10, CHB 0.068) and 0.20 in
+Europeans; gnomAD East Asians 0.11. Its best European tag in LifeGen, rs113946246 (13:19,429,318), is r² 0.945 (D′
+0.98) in Europeans and 0.989 (D′ 1) in East Asians (q547, q548); its T at 0.82 (pmid-30642433#q294) against C at 0.80
+here, so T rides with C, Zeng's longer-life allele. For row 72.
