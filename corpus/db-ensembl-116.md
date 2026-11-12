@@ -1557,8 +1557,18 @@ A 0.052 in South Asians; 0.0014 in gnomAD's East Asians and 0.0075 in its Africa
 
 > [q425] [0] variation2 rs113450114 population_name 1000GENOMES:phase_3:CEU d_prime 1.000000 variation1 rs75824829 r2 0.489690
 
-`ld-rs75824829-ceu.json`: the best proxy in 1000 Genomes CEU is rs113450114, r² 0.49 (D′ 1); next rs4841974, r² 0.41. No strong proxy, so a lone line in a scan is less surprising than the authors' remark suggests: at r² 0.49 a neighbour's expected z is about 3.8 (derived), below the top-1000 cut-off's. For row 60.
+`ld-rs75824829-ceu.json`: the best proxy in 1000 Genomes CEU is rs113450114, r² 0.49 (D′ 1); next rs4841974, r² 0.41. No proxy reaches r² 0.5 in CEU. For row 60.
 
 > [q426] [0] most_severe_consequence upstream_gene_variant id rs75824829 strand 1 allele_string G/A assembly_name GRCh38 input rs75824829 start 135376756 end 135376756 seq_region_name 9
 
-VEP: no coding consequence; it lies 1.87 kb from the lncRNA ENSG00000296725's transcripts. For row 60.
+VEP: no coding consequence. For row 60.
+
+## Reading 2026-11-12, supplement
+
+> [q427] [0].transcript_consequences[0] biotype lncRNA distance 1876 impact MODIFIER strand 1 transcript_id ENST00000741315 variant_allele A gene_id ENSG00000296725
+
+VEP's nearest transcript: the lncRNA ENSG00000296725, 1.876 kb away (downstream, q426's other lines the same gene). For row 60.
+
+> [q428] populations[2] population gnomADg:eas allele A allele_count 7 frequency 0.001355
+
+A 0.0014 in gnomAD's East Asians: near absent. For row 60.
