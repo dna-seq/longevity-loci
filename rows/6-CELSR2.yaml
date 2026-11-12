@@ -12,7 +12,13 @@ verdict_reason: >-
   meta-analysis reaching P 4.4e-9 (Wright 2019). But in LifeGen with UK Biobank's lives removed, the other sample
   independent of the discovery, Pilling's rs602633 is flat (Timmers 2019's Figure 2 source data: T +0.0002, SE
   0.0096, against the discovery's +0.0296, SE 0.0053; one-sided P 0.49), at power about 0.92 and heterogeneity P
-  about 0.0075 (derived): a powered failure on the same scale, which caps the row at B (§4.1, D21) and carries
+  about 0.0075 (derived). That comparison is not on one scale as the previous text said: Timmers' sheet prints
+  Pilling's effect carried over by APOE's factor. The lead's derivation (D28.9) takes LifeGen out of Timmers' own
+  pooled β (Figure 4, 0.0218), which leaves UK Biobank at 0.0285 on Timmers' scale, and the flag holds there (power
+  0.91, heterogeneity P 0.010). It needs at least 0.81 of the discovery's effect to hold; AncestryDNA's independent
+  arms run at 0.63 (fathers) and 1.15 (mothers) of UK Biobank's, so a smaller true effect would undo it on the
+  fathers' ratio. No winner's-curse shrinkage is applied: D21 calibrates from the discovery's effect. A powered
+  failure, then, which caps the row at B (§4.1, D21) and carries
   `replication_failed` (D25.13), though AncestryDNA replicates (the 67/71 rule). This row was written before that sheet
   was first read (for row 71); the D27.9 sweep found it. The two arms pooled give about P 1.1e-6, which is why Timmers 2019's million
   lives give only 1.4e-6 by the conventional test (genome-wide only in its lipid-informed Bayesian scan, whose P is
@@ -139,7 +145,7 @@ studies:
     effect_allele: T
     direction: protective
     proxy_rsid: rs602633
-    statistical_test: "Replication of Pilling 2017's rs602633 in LifeGen excluding UK Biobank (Figure 2 source data 1, sample b, q12); the sheet's P is already one-sided (as at q248), so no p_one_sided is entered; discovery +0.0296 (SE 0.0053), 0.296 years, P 2.7E-08; replication +0.0002 (SE 0.0096); D21: one-sided power about 0.92, heterogeneity P about 0.0075 with both SEs (derived), a red flag; N not given per SNP"
+    statistical_test: "Replication of Pilling 2017's rs602633 in LifeGen excluding UK Biobank (Figure 2 source data 1, sample b, q12); the sheet's P is already one-sided (as at q248), so no p_one_sided is entered; discovery +0.0296 (SE 0.0053), 0.296 years, P 2.7E-08; replication +0.0002 (SE 0.0096); D21: one-sided power about 0.92, heterogeneity P about 0.0075 with both SEs (derived); the sheet's +0.0296 is Pilling's effect carried by APOE's factor, so on UK Biobank's own 0.0285 on Timmers' scale (Timmers' pooled 0.0218 less LifeGen, D28.9) power 0.91, heterogeneity P 0.010; the flag needs 0.81 of the discovery's effect, against AncestryDNA's arms at 0.63 and 1.15 of UK Biobank's, a red flag; N not given per SNP"
     curator: claude-opus-5-5
   - rsid: rs646776
     note: pmid-31484785
