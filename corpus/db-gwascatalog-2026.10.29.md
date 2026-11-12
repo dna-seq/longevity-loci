@@ -1398,3 +1398,33 @@ Park's women's study (GCST90551886): P 3e-8, β 0.04 per unit increase.
 > [q388] _embedded.associations[0].mapped_genes[0] CELF2
 
 Mapped to CELF2.
+
+## Reading 2026-11-12, supplement
+
+> [q389] page size 50 totalElements 1 totalPages 1 number 0
+
+The Catalog's associations for rs11186068 (`assoc-rs11186068-p0`): one. For row 62.
+
+> [q390] _embedded.associations[0] association_id 218960570 risk_frequency 0.033 pvalue_description  pvalue_mantissa 3 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range - beta 1.728 unit increase p_value 3.0000000000000004e-08 accession_id GCST90726611 pubmed_id 42176242 first_author Beccacece L
+
+Beccacece 2026's (GCST90726611): risk frequency 0.033, P 3e-8, beta 1.728. For row 62.
+
+> [q391] _embedded.associations[0].mapped_genes[0] LINC00865
+
+Mapped to LINC00865. For row 62.
+
+> [q392] _embedded.associations[0].snp_effect_allele[0] rs11186068-G
+
+The effect allele G. For row 62.
+
+> [q393] initial_sample_size 299 Calabrian ancestry cases, 406 Calabrian ancestry controls replication_sample_size NA
+
+The study record (`study-GCST90726611.json`): 299 Calabrian cases, 406 controls, no replication sample entered. For row 62.
+
+> [q394] cohort[0] ECHA
+
+The cohorts, ECHA ...
+
+> [q395] cohort[1] GEHA
+
+... and GEHA. For row 62.

@@ -2778,3 +2778,13 @@ Nor by its id 10_11118452_C_T: no fine-mapping, no locus-to-gene.
 > [q752] data.study.credibleSets count 17
 
 Park's women's study holds 17 credible sets; none lies on chromosome 10 (derived, from the 17 lead ids).
+
+## Reading 2026-11-12, supplement
+
+> [q753] data.search total 0
+
+Open Targets' search for rs11186068: nothing ...
+
+> [q754] data variant null
+
+... and no variant record at 10_90207407_T_G: no credible set, no locus-to-gene. For row 62.

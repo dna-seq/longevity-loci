@@ -292,3 +292,9 @@ heterogeneity P 0.002 (both standard errors; 0.0002 on FinnGen's alone); under M
 pmid-40021682#q31), +0.28, power 0.83, heterogeneity P 0.006. Both flag. D25.3's mean factor is unknown for this
 look-up (D25.12: with PRKD3 and CELF2 left out, MUC5B alone is not a mean), so the flag is unknown and sets no token
 (D26.3). The men's +0.088 would flag at any of these factors. For row 13.
+
+## Reading 2026-11-12, supplement
+
+> [q38] 10	90207407	T	G	rs11186068	LINC01374	0.377325	0.423284	0.0505537	0.0572629	0.00417764	0.00448483	0.00413916
+
+FinnGen R11's any-death endpoint at rs11186068 (GRCh38 10:90,207,407; `finngen_R11_DEATH.tsv.gz`, the row filter `^10\t90207407\t`): G log OR +0.051 for death (SE 0.057), P 0.38, G 0.42 %: G leans to more deaths, against Beccacece's direction. For row 62.

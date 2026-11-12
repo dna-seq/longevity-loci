@@ -1,0 +1,157 @@
+# The seed list's locus 62, LINC00865 (10q23.1). Curated 2026-11-12. Lead rs11186068, the seed's only rsID, a T/G in
+# a LINC00865 intron at GRCh38 10:90,207,407 (GRCh37 91,967,164); G is derived and rare in Europe (0.92 % in gnomAD's
+# non-Finnish Europeans, 0.49 % in Finns) but 3.3 % in the Calabrian discovery sample and about 9 % in East Asians and
+# Africans. Entered by tracks A, B and E from Beccacece 2026's exploratory Calabrian GWAS (GCST90726611), its one
+# genome-wide hit; locus 109 (PSMF1/RSPO4) is the same paper's. Read from the abstract and the journal's supplementary
+# tables: the main text is not open, and the CC BY preprint could not be fetched (pmid-42176242, the note's head).
+locus_id: 62
+locus_name: LINC00865
+verdict: re-tiered
+verdict_reason: >-
+  Tier D, from the seed's C (D25.1): a genome-wide discovery that fails a powered test in its own ancestry, with no
+  independent scoring-class study at p < 0.05 its way. Beccacece 2026 compared 299 long-lived Calabrians with 406
+  younger controls (ECHA and GEHA cohorts) in a mixed model for relatedness: G was more common among the long-lived,
+  Beta +1.728 per copy (OR 5.63; SE 0.31, derived), P 2.87e-8, the study's only genome-wide locus among 22
+  suggestive ones; in the 315 unrelated people G keeps its direction, OR 4.73, P 0.006. The authors call the
+  findings preliminary and the study exploratory, and say most of their loci did not replicate in external
+  datasets. Their own replication, in the Southern Italian SICS cohort (Table S6), gives G the opposite sign, Beta
+  −0.910, P 0.10. On one scale (Beta against Beta, so no calibration under D25.3), at SICS's standard error (0.555,
+  backed out of its P), the discovery's effect gives one-sided power 0.93 and heterogeneity P 3e-5 (both derived), a
+  red flag under D21, so `replication_failed`; on the unrelated subset's estimate it is power 0.88, P 0.002. The
+  flag is fragile: 80 % power needs a log OR of 1.38, 80 % of the discovery's, and at half its effect power falls to
+  0.46. SICS's size, design and any overlap with the Calabrian sample are unread (the main text is not open); it is
+  read as independent on the abstract's "external datasets" and on Table S6 setting the cohorts side by side. No
+  independent study leans G's way at p < 0.05: LifeGen's parental lifespan G +0.027 (P 0.26, one-sided 0.13, both
+  arms the same sign), Park 2025's UK Biobank own survival G −0.0041 on the Martingale residual, fewer deaths (P
+  0.29, one-sided 0.15; the deposit's columns swapped as at 13 and 61), against FinnGen R11's any-death endpoint,
+  G log OR +0.051 for death (P 0.38), and Deelen 2019's 90th percentile, G −0.088 (P 0.53); Deelen's 99th file has
+  no line for the lead. G is rare in Europe (0.9 %), so these look-ups are far less precise than their sizes
+  suggest. Zenin 2019's healthspan leans G's way, P 0.51. Outcome: lifespan 0, healthspan 0, exceptional survival 0
+  (D28.10: a D row's discovery gives no `+`). The GWAS Catalog holds Beccacece's association alone, mapped to
+  LINC00865, so mechanism general ageing and no pleiotropy. Open Targets 26.09 holds no record of the variant (no
+  credible set, no locus-to-gene): causal C4, effector E4, no gene; the intron names the locus, not an effector.
+  Descriptive. Every test is European, and G, about 9 % in East Asians and Africans, is untested there:
+  eur_only_evidence. APOE ε4 and FOXO3 showed nothing in this sample (ε4 OR 0.66, P 0.12). Age of action unknown: the
+  case and control ages are not read. A D row carries no protection token and every genotype is neutral.
+axes:
+  tier: {value: D, cites: [pmid-42176242#q1, pmid-42176242#q2, pmid-42176242#q3, pmid-42176242#q5, pmid-42176242#q6, pmid-42176242#q7, pmid-42176242#q8, pmid-42176242#q9, pmid-42176242#q10, pmid-42176242#q11, pmid-42176242#q12, db-gwascatalog-2026.10.29#q390, db-gwascatalog-2026.10.29#q393, db-gwascatalog-2026.10.29#q394, db-gwascatalog-2026.10.29#q395, pmid-30642433#q275, pmid-40021682#q62, db-finngen-r11#q38, pmid-31413261#q156, db-ensembl-116#q440, db-ensembl-116#q446]}
+  mechanism: {value: general_ageing, cites: [db-gwascatalog-2026.10.29#q389, db-gwascatalog-2026.10.29#q391, db-opentargets-26.09#q753, db-opentargets-26.09#q754]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
+            cites: [pmid-30729179#q85, pmid-30642433#q275, pmid-40021682#q62, db-finngen-r11#q38, pmid-42176242#q12, pmid-31413261#q156]}
+  actionability: {label: descriptive, cites: [pmid-42176242#q5]}
+  context: {values: [eur_only_evidence], cites: [pmid-42176242#q1, db-gwascatalog-2026.10.29#q393, db-ensembl-116#q444, db-ensembl-116#q445]}
+flags:
+  - {token: replication_failed, cites: [pmid-42176242#q7, pmid-42176242#q10, pmid-42176242#q11, pmid-42176242#q12, pmid-42176242#q3]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q753, db-opentargets-26.09#q754]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q753, db-opentargets-26.09#q754, db-gwascatalog-2026.10.29#q391, db-ensembl-116#q447, db-ensembl-116#q448]}
+variants:
+  - rsid: rs11186068
+    gene: ""
+    phenotype: LINC00865 intron, longevity in Calabria
+    trait_efo_id: OBA_VT0005372
+    effect_allele: G
+    effect_size: 1.728
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: T/T
+        state: neutral
+        conclusion: >-
+          You carry two copies of the usual version of this DNA position, as about 98 in 100 people of European
+          ancestry do. It is the reference the other combinations are compared with. The position, on chromosome 10,
+          lies inside a gene that does not make a protein (LINC00865), and which gene it might affect, if any, is not
+          known. A link between this position and long life was reported once and did not hold up when checked.
+      - genotype: G/T
+        state: neutral
+        conclusion: >-
+          You carry one copy of a less common version of this DNA position (about 2 in 100 people of European
+          ancestry do, more in Southern Italy). One small study of long-lived people from Calabria reported it as
+          more common among them, but a second Southern Italian study found the opposite, and large studies elsewhere
+          found no link. It says nothing about your own lifespan.
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of a less common version of this DNA position (about 1 in 10,000 people of European
+          ancestry do). One small study of long-lived people from Calabria reported this version as more common
+          among them, but a second Southern Italian study found the opposite, and large studies elsewhere found no
+          link. It says nothing about your own lifespan.
+studies:
+  - rsid: rs11186068
+    note: pmid-42176242
+    quote: q7
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: Southern Italian (Calabria; ECHA and GEHA cohorts, long-lived cases against younger controls, the ages unread)
+    ancestry: [EUR]
+    sample_size: 705
+    sample_unit: individuals
+    n_cases: 299
+    stat_significance: significant
+    p_value: "2.87E-08"
+    p_value_num: 2.87159442909e-08
+    effect_size: 1.728
+    effect_measure: beta
+    effect_unit: log odds of being among the long-lived cases per G allele (mixed model; OR 5.63)
+    effect_allele: G
+    direction: protective
+    statistical_test: "Mixed model accounting for relatedness and population structure (q1); Table S1 prints G at 0.033, P 2.87E-08, Beta 1.728, OR 5.63 (q6, q7); 299 cases and 406 controls (db-gwascatalog-2026.10.29#q393); the only genome-wide locus of 22 suggestive (q2); unrelated subset of 315: OR 4.73, SE 0.567, P 0.0061 (q8, q9); preliminary, exploratory (q5); most loci not replicated externally (q3); the main text, with the case and control ages and the model, unread"
+    curator: claude-opus-5-5
+  - rsid: rs11186068
+    note: pmid-42176242
+    quote: q12
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: Southern Italian (SICS, the paper's replication cohort; its size, ages and design unread)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.10124875"
+    p_value_num: 0.10124875
+    effect_size: -0.910
+    effect_measure: beta
+    effect_unit: the paper's Beta per G allele, on the discovery's scale (Table S6 sets the two side by side)
+    effect_allele: G
+    direction: risk
+    statistical_test: "Table S6 (titled S7), replication with SICS (q10, q11): G at 0.018, Beta −0.910, P 0.101, no SE or size printed. D21 (derived): SE 0.555 from the P; at the discovery's +1.728 (SE 0.31), one-sided power 0.93, heterogeneity P 3e-5; at the unrelated subset's 1.55 (q9), power 0.88, P 0.002; 80 % power needs 1.38; at half the effect power 0.46. One scale, no calibration (D25.3): a red flag. Independence read from 'external datasets' (q3) and the side-by-side table; overlap otherwise unread"
+    curator: claude-opus-5-5
+  - rsid: rs11186068
+    note: pmid-30642433
+    quote: q275
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 361999
+    sample_unit: lives
+    stat_significance: not_significant
+    p_value: "0.25909968"
+    p_value_num: 0.2591
+    p_one_sided: 0.1295
+    effect_size: 0.02694675
+    effect_measure: beta
+    effect_unit: log hazard protection per G allele in self (positive = longer life)
+    effect_allele: G
+    direction: protective
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), a1 T beta1 −0.0269, SE 0.0239, so G +0.0269; info 0.988, G 0.009; direction '--' for T, both arms G's way; n 361,999 at this variant"
+    curator: claude-opus-5-5
+  - rsid: rs11186068
+    note: pmid-30729179
+    quote: q85
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.51"
+    p_value_num: 0.5054
+    effect_size: -0.0184
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per G allele (positive = earlier)
+    effect_allele: G
+    direction: protective
+    statistical_test: "Zenin 2019's healthspan summary statistics, SE 0.0277, −log10 P 0.2965, G 0.0078"
+    curator: claude-opus-5-5

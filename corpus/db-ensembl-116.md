@@ -1612,3 +1612,45 @@ GRCh37 10:11,160,415, the position Park's deposits print.
 > [q438] mappings[0] location 2:37484580-37484580 assembly_name GRCh37 start 37484580 coord_system chromosome seq_region_name 2 allele_string G/A end 37484580 strand 1 ancestral_allele G
 
 rs577106756 at GRCh37 2:37,484,580 (from Ensembl's GRCh37 server, `grch37-var-rs577106756.json`), the position Park's deposits print. For row 13.
+
+## Reading 2026-11-12, supplement
+
+> [q439] mappings[0] end 90207407 ancestral_allele T assembly_name GRCh38 seq_region_name 10 strand 1 start 90207407 location 10:90207407-90207407 coord_system chromosome allele_string T/A/G
+
+rs11186068 at GRCh38 10:90,207,407, T/A/G, T ancestral, so G derived; the position Beccacece's tables print. For row 62.
+
+> [q440] populations[12] allele G allele_count 623 population gnomADg:nfe frequency 0.009167
+
+G 0.92 % in gnomAD's non-Finnish Europeans ...
+
+> [q441] populations[16] allele_count 52 allele G frequency 0.004898 population gnomADg:fin
+
+... 0.49 % in its Finns ...
+
+> [q442] populations[74] frequency 0.0119284294234592 population 1000GENOMES:phase_3:EUR allele G allele_count 12
+
+... 1.2 % in 1000 Genomes' Europeans (12 copies) ...
+
+> [q443] populations[106] allele_count 2 allele G frequency 0.00934579439252336 population 1000GENOMES:phase_3:TSI
+
+... and 0.9 % (2 copies) in its Tuscans; Beccacece's Calabrians carry it at 3.3 % (pmid-42176242#q7). For row 62.
+
+> [q444] populations[20] allele_count 475 allele G population gnomADg:eas frequency 0.09205
+
+G 9.2 % in gnomAD's East Asians ...
+
+> [q445] populations[8] frequency 0.08607 population gnomADg:afr allele G allele_count 3572
+
+... and 8.6 % in its Africans: common outside Europe, untested there. For row 62.
+
+> [q446] mappings[0] coord_system chromosome allele_string T/A/G seq_region_name 10 strand 1 end 91967164 location 10:91967164-91967164 assembly_name GRCh37 ancestral_allele T start 91967164
+
+GRCh37 10:91,967,164, the position LifeGen, Deelen, Zenin and Park print. For row 62.
+
+> [q447] [0] input rs11186068 assembly_name GRCh38 allele_string T/A/G id rs11186068 most_severe_consequence intron_variant strand 1 seq_region_name 10 end 90207407 start 90207407
+
+VEP: an intron variant ...
+
+> [q448] [0].transcript_consequences[1] gene_symbol_source HGNC impact MODIFIER biotype lncRNA gene_id ENSG00000232229 variant_allele G gene_symbol LINC00865 transcript_id ENST00000664430 hgnc_id HGNC:45170 strand 1
+
+... of LINC00865 (lncRNA), the G allele's consequence on transcript ENST00000664430. For row 62.
