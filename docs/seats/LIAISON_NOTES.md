@@ -33,10 +33,9 @@ Own machinery before the kit: none for this seat (no scripts, hooks or watchers 
 
 ## Open
 
-- Compiler 0.8, the role's "An in-house release" (kit 0.1.137): read and marked; the mechanical half (floor to
-  `>=0.8.4`, caps lifted, `uv lock`, suite, `cache pull --only ensembl`) `waits until` the plugin's move past
-  `<0.8`, which waits on the registry deploying 0.8. The plugin's lead posts it in `agent-chat > upstream`.
-- Kit at v0.1.185 for this seat on 2026-11-11 (the reload took). The plugin at v0.48.6 (pin moved 2026-11-11), loaded after `/reload-plugins`.
+- Compiler 0.8 adopted 2026-11-12 (the mechanical half: floors `>=0.8.4,<0.9`, caps lifted, `uv lock`, suite). Nothing to
+  recompile yet: the module is a scaffold. The module seat re-validates it under 0.8 (handoff).
+- Kit at v0.1.185 for this seat on 2026-11-11 (the reload took). The plugin at v0.48.7 (pin moved 2026-11-12, just-dna 0.8), loaded after `/reload-plugins`.
 - The plugin's pin binds only once the person drops `just-dna` from their user-level settings (their answer,
   2026-11-06; still present 2026-11-09). Until then, at each plugin release: `claude plugin update
   just-module-creator@just-dna --scope project` after moving the pin.

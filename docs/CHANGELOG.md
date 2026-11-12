@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- just-dna 0.8 adopted: format, compiler and enricher `>=0.8.4,<0.9` (0.8.4 in the lock), with the module-creator plugin's pin moved to `v0.48.7`, whose server runs the same trio; polars and duckdb stay below 2. Suite unchanged.
 - The curator's stop and the dashboard's cap move from 80 % to 95 % of the 7-day window, on the person's word (2026-11-12; 90 % for an hour first).
 - D29.2: a footnote's allele outvoted by the paper's text, supplement and figure is overruled (64 BET1L, T longer-lived).
 - D29.1: a database line the curator reads never replicates (D12), and a healthspan discovery's red flag is scaled from its own effect, so 63 TCF7L2 is B.

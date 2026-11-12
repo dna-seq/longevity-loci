@@ -12,7 +12,7 @@ file): `[seat.liaison.watch.plugin]` says each new tag.
 
 ## Read mark
 
-**`v0.48.6`**, the tag `.claude/settings.json` pins (2026-11-11). The first mark, `v0.48.0` (3dd8c2a), was
+**`v0.48.7`**, the tag `.claude/settings.json` pins (2026-11-12). The first mark, `v0.48.0` (3dd8c2a), was
 fast-forwarded: no release before it was read.
 
 **The pin does not bind on this machine.** The person's user settings declare the marketplace `just-dna` with no
@@ -22,7 +22,7 @@ ref, and that entry outranks the project's: the client refused `marketplace add 
 while the pin named v0.48.1; updated, it is 0.48.2 at `1b622ff`, the tag plus one notes commit, the same code.
 The person's answer (2026-11-06): drop the user-level entry, so the repository's pin binds; theirs to do,
 since it is their settings file. Still present on 2026-11-09, so the copy is updated by hand to the pinned
-release: `claude plugin update just-module-creator@just-dna --scope project` installed 0.48.6 (2026-11-11), the
+release: `claude plugin update just-module-creator@just-dna --scope project` installed 0.48.7 (2026-11-12), the
 tag or main's head plus notes commits.
 
 ## Backlog
@@ -44,7 +44,11 @@ one whole. Likely several sessions starting `uv run` on a fresh `.venv` at once 
 race). Repaired with `UV_LINK_MODE=copy uv sync --no-dev --reinstall` in the install directory. Routine after each
 plugin update: that sync once, then the sessions reconnect (`watchdog.py reload --mcp`).
 
-## Waiting on its move to 0.8
+## Its move to 0.8 (done)
+
+Done with `v0.48.7` (2026-11-12): the trio `>=0.8.4,<0.9`, `just-dna-registry>=0.29.1`, polars and duckdb still
+`<2`. Our side moved the same day (`docs/UPSTREAM_COMPILER.md`, "Caps"). What follows is the state before it.
+
 
 The plugin caps the compiler's trio below 0.8 until 0.8.0 is on PyPI and both registry instances serve it (read
 from `/api/v1/version` on each); its lead will post in `agent-chat > upstream` when it plans the move, so we
@@ -53,6 +57,15 @@ registry 0.27.0, format 0.7.1, compiler 0.7.2. Our caps (`docs/UPSTREAM_COMPILER
 
 ## Inbound verdicts
 
+- **`v0.48.7`** (2026-11-12): **just-dna 0.8.** Its server runs format, compiler and enricher 0.8.4 (polars 1.44.2,
+  duckdb 1.5.6), so our caps below 0.8 lift with it, and the 0.8 adoption's mechanical half is done here the same
+  day. 0.48.6 and earlier get HTTP 409 from both registry instances once they serve 0.8. *For the module seat:* the
+  GWAS pass works again (RM428), at one request a second, and `enrich_gwas_effects` names a refused page size;
+  `validate_module` is the compile's own pre-flight (0.8 runs the resolution step) and 0.8's eleven new warning
+  codes are in the symptom table; `enrich_module` names `allele_mismatches` (0.8 writes no `not_found` row);
+  `fetch_fulltext` tells an outage from an absent copy (F133); `lookup_citation(doi=…)` no longer puts a PMID in
+  `pmid`; `registry_rename_namespace` is new; `opentargets enrich`, `ld-pairs` and `clinvar-gkm lookup` have no
+  tool yet. Install synced by hand; the import is clean on 0.8.4.
 - **`v0.48.6`** (2026-11-11). Nothing breaks; toolchain unchanged (trio below 0.8, polars 1.44.2, duckdb 1.5.6).
   *For the module seat:* `validate_module` now returns `warnings_summary` and `carried`; `enrich_gwas_effects` says
   the GWAS Catalog retired v1 (410) and that retrying or editing will not help (F146; the compiler's RM428, its

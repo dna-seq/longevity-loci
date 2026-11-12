@@ -17,8 +17,8 @@ compiler's `0.8` branch); reuse it at the cut, and tell that liaison where our u
 ## Read mark
 
 **`v0.8.4`** (tagged 2026-11-11, `36cbc20f`), patches on 0.8.0 read by their changelog headings and "After
-upgrading" lines; read whole at our adoption. **In use: `v0.7.3`**, enricher 0.7.3, compiler 0.7.2, format 0.7.1 in
-`uv.lock`, held there by our cap (below, "Caps") until the plugin moves to 0.8. The first mark, `v0.7.3` (3dd8c2a),
+upgrading" lines; read whole at our adoption. **In use: `v0.8.4`** since 2026-11-12, the trio at 0.8.4 in `uv.lock`,
+adopted with the plugin's `v0.48.7`; 0.7.3 (enricher), 0.7.2 and 0.7.1 before it. The first mark, `v0.7.3` (3dd8c2a),
 was fast-forwarded: no release before it was read.
 
 ## Waiting on 0.8
@@ -76,14 +76,20 @@ read mark stays at `v0.7.3` until the cut; the cut is read again in full.
 
 ## Caps
 
-- **`just-dna-enricher<0.8`** (2026-11-05, the liaison's). 0.8.0 is cut (`edf2661c`) and goes to PyPI on the
+- **`just-dna-enricher`, `just-dna-compiler`, `just-dna-format` `>=0.8.4,<0.9`** (2026-11-12): the plugin's
+  `v0.48.7` range. The two caps below 0.8 that follow are lifted that day. The enricher cache on this machine held
+  no lane (`cache status`: every lane absent), so nothing was moved aside; the first `cache pull --only ensembl`, or
+  the plugin's `provision_caches`, writes the 0.8 lane fresh. The module is a header-only scaffold (no artifact, no
+  `verification.json`, no GWAS sidecar), so the recompile, `enrich --rederive`, verification and GWAS re-run steps
+  of the upgrade order have nothing to act on yet.
+- *Lifted 2026-11-12:* **`just-dna-enricher<0.8`** (2026-11-05, the liaison's). 0.8.0 is cut (`edf2661c`) and goes to PyPI on the
   maintainer's publish; the weekly bump would then take it. Its enricher pulls the Ensembl lane from a new
   repository (`ensembl_variations_split`) into the same `<base>/ensembl_variations` directory, re-pulling a cache
   that names the old one, and a cache holding both releases resolves to nothing (§1.29, upgrade order step 3). The
   plugin's server, capped below 0.8, reads that directory on this machine. **Lift when** the plugin moves to 0.8;
   then the upgrade order is the guide's §2: floors, `uv lock`, `cache pull --only ensembl` once, recompile,
   `enrich --rederive` online, validate.
-- **`just-dna-compiler<0.8`, `just-dna-format<0.8`** (2026-11-12, the liaison's). Enricher 0.7.3 does not cap
+- *Lifted 2026-11-12:* **`just-dna-compiler<0.8`, `just-dna-format<0.8`** (2026-11-12, the liaison's). Enricher 0.7.3 does not cap
   them, and the weekly bump took both to 0.8.4 beside it, out of the plugin's 0.7.2 and 0.7.1. **Lift with** the
   enricher's cap.
 - **`duckdb<2`, `polars<2`** (2026-11-05, the liaison's). The lock had moved to duckdb 2.0.0 and polars 2.1.0
