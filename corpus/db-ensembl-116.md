@@ -1372,3 +1372,39 @@ G 0.68 in East Asians (0.04 in Africans). For row 54.
 > [q378] . start 30994702 end 31033715 assembly_name GRCh38 version 13 db_type core biotype protein_coding seq_region_name 8 canonical_transcript ENST00000523392.2 strand -1 logic_name ensembl_havana_gene_homo_sapiens source ensembl_havana species homo_sapiens object_type Gene id ENSG00000172733 display_name PURG description purine rich element binding protein G [Source:HGNC Symbol;Acc:HGNC:17930]
 
 `lookup-ENSG00000172733.json`: ENSG00000172733 is PURG (8:30,994,702-31,033,715, GRCh38, minus strand), 14 kb from the lead. For row 54.
+
+## Reading 2026-11-12, supplement
+
+`rs35262860` (variation, populations), `ld-rs35262860-ceu.json` (1000 Genomes CEU, r² ≥ 0.6 within 500 kb) and
+`var-rs13279568.json`. For row 55.
+
+> [q379] mappings[0] start 54566350 location 8:54566350-54566351 ancestral_allele CT strand 1 coord_system chromosome end 54566351 seq_region_name 8 allele_string CT/CTCT assembly_name GRCh38
+
+rs35262860 is an insertion of CT, CT/CTCT at GRCh38 8:54,566,350 (Deelen's GCT/G at GRCh37 8:55,478,909, FinnGen's
+G/GCT at 54,566,349, the same insertion left-aligned differently); ancestral CT, so the insertion is derived. For
+row 55.
+
+> [q380] populations[74] allele_count 379 population 1000GENOMES:phase_3:EUR frequency 0.376739562624254 allele CTCT
+
+The insertion is 0.38 in 1000 Genomes Europeans (Deelen 0.39). For row 55.
+
+> [q381] populations[70] allele CTCT frequency 0.0208333333333333 population 1000GENOMES:phase_3:EAS allele_count 21
+
+0.02 in East Asians. For row 55.
+
+> [q382] [16] r2 1.000000 variation1 rs35262860 d_prime 1.000000 population_name 1000GENOMES:phase_3:CEU variation2 rs13279568
+
+rs13279568 is in perfect LD with the insertion in CEU (r² 1.0, D′ 1.0), as are rs13281601, rs7836982, rs4481575 and
+rs13281365. For row 55.
+
+> [q383] mappings[0] end 54566168 strand 1 start 54566168 assembly_name GRCh38 ancestral_allele G location 8:54566168-54566168 allele_string G/A coord_system chromosome seq_region_name 8
+
+rs13279568 at GRCh38 8:54,566,168, G/A: Open Targets' key 8_54566168_G_A. For row 55.
+
+> [q384] populations[12] allele CTCT population gnomADg:nfe frequency 0.3937 allele_count 26740
+
+0.39 in gnomAD's non-Finnish Europeans. For row 55.
+
+> [q385] . var_class indel ambiguity null minor_allele CTCT most_severe_consequence intron_variant MAF 0.20938 name rs35262860 source Variants (including SNPs and indels) imported from dbSNP
+
+An intron variant (Ensembl's most severe consequence), the insertion the minor allele worldwide (0.21). For row 55.

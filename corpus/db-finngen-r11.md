@@ -221,3 +221,16 @@ FinnGen R11 death endpoint (`rows-41171935`), rs11783562 at 8:30,981,030 (GRCh38
 controls (q6). G goes with fewer deaths, one-sided P 0.0005 (derived): a nominal replication outside AncestryDNA and
 UK Biobank, the row's one independent support. The PheWeb region endpoint gives the same line
 (`death-8_30981030.json`). For row 54.
+
+## Reading 2026-11-12, supplement
+
+FinnGen r11's "Death" at row 55's insertion (GRCh38 8:54,566,349; `finngen_R11_DEATH.tsv.gz`, `rows-05b389a0`).
+
+> [q31] 8	54566349	G	GCT	rs35262860,rs398112480	RP1	0.96925	0.0135643	0.000309972	0.00804093	0.311675	0.312967	0.311513
+
+GCT (alt, 0.31) β +0.00031 (SE 0.0080) on the log hazard of death, P 0.97: flat, one-sided 0.52 against the
+discovery (derived). D21 under D25.3 (derived), Deelen's 90th per insertion +0.1028 (pmid-31413261#q146) carried to
+Timmers' scale and into FinnGen by APOE's factor here (0.99, q4 against pmid-30642433#q90): by APOE's factor
+expected −0.0211, one-sided power 0.84, heterogeneity P 0.018; by the loci's mean factor −0.0505, power 1.00,
+heterogeneity P 7e-5, or 0.003 counting the mean's SE. A red flag under both. Outside Deelen's cohorts and UK
+Biobank. For row 55.

@@ -1262,3 +1262,14 @@ That one is Wright 2019's current-age study (GCST009448): β 0.01177, P 8 × 10�
 > [q355] _embedded.associations[0].snp_effect_allele[0] rs11783562-C
 
 Its effect allele is Wright's C, the complement of the forward G (db-ensembl-116#q376). For row 54.
+
+## Reading 2026-11-12, supplement
+
+`assoc-rs35262860-p0`: the catalog's associations for row 55's lead.
+
+> [q356] _embedded.associations[0] association_id 47713526 risk_frequency 0.39 pvalue_description  pvalue_mantissa 6 pvalue_exponent -7 multi_snp_haplotype false snp_interaction false range 1.07-1.15 or_per_copy_num 1.11 or_value 1.11 beta - p_value 6e-07 accession_id GCST008600 pubmed_id 31413261 first_author Deelen J ci_lower 1.07 ci_upper 1.15
+
+> [q357] _embedded.associations[0].snp_effect_allele[0] rs35262860-GCT
+
+One association: Deelen 2019's trans-ethnic 90th percentile line (GCST008600), GCT OR 1.11 (1.07-1.15), P 6e-7
+(the paper's Table 4 prints 5.6e-7, pmid-31413261#q145). No other trait. For row 55.

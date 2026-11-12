@@ -234,6 +234,13 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   lead: keep A on the age fade, since Figure 5's 80-90 band under the mean factor gives power 0.88 and heterogeneity
   P 0.12 to 0.17, the reading most favourable to A (a hazard at 80-90, not cumulative survival). 21 holds A: the 90th replicates, and the 99th leans the same side at power 0.70 and 0.23 from Timmers' β
   (Wright prints no pooled effect, D20).
+- **55 RP1** (2026-11-12), tier D re-tiered (seed C), row 45's shape (D26.8). An indel lead: LifeGen and Zenin have no
+  line for it (read at rs13279568, r² 1.0, phased by Deelen's own file, where the proxy's 0.39 allele has the
+  insertion's sign and frequency); FinnGen writes it G/GCT at GRCh38 54,566,349, Open Targets has no record under that
+  key or the proxy's (8_54566168_G_A; a guessed position 54,566,169 answered null too, so read the position off
+  Ensembl first). Deelen's Table 3 parental longevity line is on the discovery's own scale (no calibration, D25.3),
+  checked at the full and the half effect as row 26. Exceptional survival filed 0 as row 26 (a contradicted
+  discovery), not `−` for the parental line's nominal opposite.
 - **54 PURG** (2026-11-12), tier C re-tiered (seed B), row 10's shape: rs11783562 is Wright's S8 `Male_Female.AGE` only
   (raw 8.1e-9, genomic control 8.7e-7), not in S9; FinnGen R11 death (alt G β −0.0244, P 0.0010) is the independent
   nominal support. Lessons: grep Wright's S8/S9 by position, not only the rsID (three S9 neighbours turned up); the

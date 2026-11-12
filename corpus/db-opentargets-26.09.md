@@ -2689,3 +2689,13 @@ The one expression set: GTEx v10 caudate (brain), ENSG00000172733, PURG (db-ense
 > [q734] data.variant.credibleSets.rows[10].locus.rows[2] posteriorProbability 0.04463040832819606
 
 The source flags that set for quality control, and the lead's probability in it is 0.045. A membership, not a colocalisation with the age set (q722: none with a QTL study), so it gives PURG no E1/E2 criterion (D24) and, unlike row 53's, no flagged colocalisation (D27.7). For row 54.
+
+## Reading 2026-11-12, supplement
+
+`variant-8_54566349_G_GCT-all.json` (row 55's insertion, keyed as FinnGen keys it, db-finngen-r11#q31) and
+`variant-8_54566168_G_A-all.json` (its r² 1.0 proxy rs13279568, db-ensembl-116#q383): both answer the same.
+
+> [q735] data variant null
+
+Open Targets 26.09 holds no record of the insertion or of the proxy, so no credible set holds either: C4, E4. For
+row 55.
