@@ -27,6 +27,11 @@ export (the lead starts it today, to 0.8's studies/variants shape per `docs/FORM
   (p < 0.05)" in `statistical_test`; direction into the study's `conclusion`; a derived effect says so in
   `effect_unit`; Z stays `Z`, its warning reported. (1) and (2) went upstream as format wishes, S147 and S148 with the compiler's triage (the liaison, 639785042). The
   export lands on a branch first; the lead hands its output here to validate.
+- **RM1's export in, 2026-11-12 (b0b6089):** `loci export` at 4e49fd0's tree, enriched online (112 resolution
+  rows, all resolved, no mismatch). Strict validate: 11 errors, nine Zenin 2019 P pairs (the curator's), 93 LDLR's
+  proxy allele A at rs6511720 (G/T; the reverse strand's, the curator's), 47 AP5Z1's T/TC refused at rs371933919's
+  third locus TCCC>T (asked upstream through the liaison). Best-effort compile green, warnings the same. Not
+  rehearsed; polygon only, once strict passes.
 - Plugin caches moved to the data volume (`remember_setting JUST_DNA_PIPELINES_CACHE_DIR`, user config, not the
   repo): `$HOME` is the small volume and Ensembl's lane is about 15 GB. Ensembl lane present 2026-11-12: ensembl-variation-2026_07_13-vep116.0, 14.5 GB (du shows 7.6 GB on BeeGFS).
 
