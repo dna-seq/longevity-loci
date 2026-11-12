@@ -10,9 +10,10 @@ verdict_reason: >-
   Tier C, from the seed's B, with no genome-wide result at the locus in any lifespan, longevity or multivariate ageing
   study (R-TIER-4). Put to the lead, since D27.3 named ABO among the loci to be read as row 51 (B), which rested on
   Foote 2025's frailty factor being genome-wide at its lead; here Foote is untested: the general factor's and
-  factors 2 to 4's deposits hold no SNP within 90 kb of the lead (factor 3's file the very one read at row 51, so an
-  absence in the deposit, not a lost fetch), factors 1, 5 and 6 hold neither the lead nor a proxy, and Open Targets has
-  no Foote set within 3 Mb. The alternative, B on the paper's own call, rests on the Bayes-factor P, which is never the
+  factors 2 to 4's deposits returned no SNP within 90 kb of the lead (factor 3's file the very one read at row 51, so
+  there an absence in the deposit, not a lost fetch; the other three files not checked), factors 1, 5 and 6 hold
+  neither the lead nor a proxy, and none of Foote's 426 Open Targets sets lies within 3 Mb. The same check is owed
+  at IGF2R, POM121C, GBX2/ASB18 and HP, the other loci D27.3 names. The alternative, B on the paper's own call, rests on the Bayes-factor P, which is never the
   study's P (row 6). In Timmers 2019's million parental lives C, about 81 in 100 European chromosomes, adds 0.22 years
   per copy at a conventional P of 6.3e-6 (UK Biobank and LifeGen on the same side): suggestive, and the strongest SNP
   within 300 kb. The paper calls ABO genome-wide (Bayes-factor P 1.9e-8, informed by LDL and coronary disease) and
@@ -22,17 +23,21 @@ verdict_reason: >-
   counted once. Neither is a red flag (D21, D25.3): the 99th, from Timmers' effect, has power 0.90 and heterogeneity P
   0.026 under APOE's factor but power 0.34 under the mean factor; the 90th has heterogeneity P 0.067 and leans C's
   way. FinnGen's deaths lean C's way (P 0.43, one-sided 0.22; power 0.78 under APOE's factor, heterogeneity P 0.15),
-  no flag. Healthspan in Zenin 2019 goes C's way, nominal (P 0.0017; UK Biobank, overlapping the discovery). Zenin's
+  no flag. Healthspan in Zenin 2019 goes C's way, nominal (P 0.0017; UK Biobank, overlapping the discovery): the
+  cell is +. Exceptional survival is 0, as at row 48: one nominal 90th-percentile look, the 99th flat. Zenin's
   own ABO look-up and Fortney 2015's exceptional-longevity scan are at rs514659 (r² 0.42; iGWAS P 2.5e-7, not
   genome-wide), named, not counted. A suggestive scoring-class result with nominal look-ups its way: C, as row 54. The
   mechanism is heart and vessels: T, the derived allele, raises venous thromboembolism (OR 1.40, P 4e-169), coronary
   disease (OR 1.08) and myocardial infarction (OR 1.09) and raises LDL cholesterol, the priors Timmers' scan used;
   association at one haplotype, not a mediator test. The locus is broad besides: blood counts (T lowers haemoglobin
-  and white cells), hundreds of plasma proteins, allergy (T raises allergic rhinitis), so no trade-off for C is
-  quoted. Age of action is MIDLIFE, DIRECT: Timmers' age moderator passes the paper's own 5 % FDR (P 3.9e-4, Q
+  and white cells), hundreds of plasma proteins, allergy (T raises allergic rhinitis); Timmers counts ABO among
+  the cancer-protective lifespan loci that also associate with cardiovascular disease, untested for pleiotropy. A
+  trade-off is detected (D18.1) at r² 0.97 proxies phased to C: the longer-life side raises peptic ulcer (β 0.126,
+  P 6e-18), diverticular disease (P 1e-14), gout (P 3e-11) and benign nodular goitre (P 1e-10). Age of action is MIDLIFE, DIRECT: Timmers' age moderator passes the paper's own 5 % FDR (P 3.9e-4, Q
   0.0086), the effect largest before 60 in both parents and near nothing at 70 to 90, as the paper says of ABO; the
-  sex moderator does not pass (Q 0.73). A MIDLIFE cardiovascular locus with LDL among its priors is preventable, an
-  LDL test a doctor orders (as row 6). No credible set of a scoring-class study holds the lead or sits at ABO: C4.
+  mothers' 90-120 band (P 0.0047) runs the other way, one cell of 288, named; the sex moderator does not pass (Q
+  0.73). With a trade-off the row is descriptive (D18.2), though LDL, one of Timmers' priors, is a measure a doctor
+  takes; T's LDL effect is small (0.056 SD) beside its thrombosis effect, which no listed test reaches. No credible set of a scoring-class study holds the lead or sits at ABO: C4.
   The lead is in 510 other sets (proteins, lipids, blood counts, thrombosis, coronary disease), most giving ABO a
   locus-to-gene about 0.58, but with no longevity set nothing is assessed for the row's claim: E4, no gene named, ABO
   in prose only (as rows 27 and 56). C/C, the commonest genotype (about 66 in 100), is the reference; C is the common
@@ -41,11 +46,11 @@ verdict_reason: >-
 axes:
   tier: {value: C, cites: [pmid-30642433#q256, pmid-30642433#q258, pmid-30642433#q42, pmid-30642433#q257, pmid-30642433#q259, pmid-30642433#q2, pmid-31413261#q153, pmid-31413261#q154, pmid-31413261#q2, db-finngen-r11#q34, pmid-30729179#q82, db-gwascatalog-2026.10.29#q374, db-opentargets-26.09#q744, db-opentargets-26.09#q745, db-opentargets-26.09#q746, db-ensembl-116#q416, db-ensembl-116#q417]}
   mechanism: {value: heart_vessels, cites: [pmid-30642433#q256, db-gwascatalog-2026.10.29#q362, db-gwascatalog-2026.10.29#q363, db-gwascatalog-2026.10.29#q364, db-gwascatalog-2026.10.29#q365, db-gwascatalog-2026.10.29#q366, db-gwascatalog-2026.10.29#q367, db-gwascatalog-2026.10.29#q368, db-gwascatalog-2026.10.29#q369]}
-  pleiotropy: {values: ["mech:cvd", "mech:lipids", broad], cites: [db-gwascatalog-2026.10.29#q362, db-gwascatalog-2026.10.29#q363, db-gwascatalog-2026.10.29#q364, db-gwascatalog-2026.10.29#q365, db-gwascatalog-2026.10.29#q368, db-gwascatalog-2026.10.29#q369, db-gwascatalog-2026.10.29#q370, db-gwascatalog-2026.10.29#q371, db-gwascatalog-2026.10.29#q372, db-gwascatalog-2026.10.29#q373, db-gwascatalog-2026.10.29#q374]}
+  pleiotropy: {values: ["mech:cvd", "mech:lipids", broad, tradeoff], cites: [pmid-30642433#q10, db-gwascatalog-2026.10.29#q375, db-gwascatalog-2026.10.29#q376, db-gwascatalog-2026.10.29#q377, db-gwascatalog-2026.10.29#q378, db-gwascatalog-2026.10.29#q379, db-gwascatalog-2026.10.29#q380, db-gwascatalog-2026.10.29#q381, db-gwascatalog-2026.10.29#q382, db-gwascatalog-2026.10.29#q362, db-gwascatalog-2026.10.29#q363, db-gwascatalog-2026.10.29#q364, db-gwascatalog-2026.10.29#q365, db-gwascatalog-2026.10.29#q368, db-gwascatalog-2026.10.29#q369, db-gwascatalog-2026.10.29#q370, db-gwascatalog-2026.10.29#q371, db-gwascatalog-2026.10.29#q372, db-gwascatalog-2026.10.29#q373, db-gwascatalog-2026.10.29#q374]}
   age_of_action: {value: MIDLIFE, confidence: DIRECT, cites: [pmid-30642433#q260, pmid-30642433#q5, pmid-30642433#q261, pmid-30642433#q262, pmid-30642433#q263, pmid-30642433#q264, pmid-30642433#q265, pmid-30642433#q267, pmid-30642433#q268, pmid-30642433#q269, pmid-30642433#q270, pmid-30642433#q271]}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
             cites: [pmid-30729179#q82, pmid-30642433#q256, pmid-30642433#q258, pmid-31413261#q153, pmid-30642433#q259]}
-  actionability: {label: preventable, what: ["act_test:ldl"], who: "act_who:doctor", cites: [pmid-30642433#q256, db-gwascatalog-2026.10.29#q368, db-gwascatalog-2026.10.29#q369, pmid-30642433#q260]}
+  actionability: {label: descriptive, cites: [db-gwascatalog-2026.10.29#q375, db-gwascatalog-2026.10.29#q376, db-gwascatalog-2026.10.29#q381, db-gwascatalog-2026.10.29#q382]}
   context: {values: [eur_only_evidence], cites: [pmid-30642433#q258, pmid-31413261#q153, pmid-30729179#q82, db-ensembl-116#q415]}
 flags:
   - {token: "PROTECT:ABSENCE_OF_RISK", cites: [db-gwascatalog-2026.10.29#q362, db-gwascatalog-2026.10.29#q363, db-gwascatalog-2026.10.29#q364, db-gwascatalog-2026.10.29#q365, db-ensembl-116#q411, db-ensembl-116#q413]}
@@ -61,6 +66,9 @@ variants:
     effect_measure: beta
     stat_significance: suggestive
     direction: protective
+    negatives: >-
+      The longer-life version may slightly raise the chance of stomach ulcers, diverticular disease of the bowel, gout
+      and a lumpy thyroid (goitre).
     genotypes:
       - genotype: C/C
         state: neutral
@@ -68,7 +76,8 @@ variants:
           You carry two copies of the common version of this DNA region, in the blood-group gene ABO on chromosome 9
           (about 66 in 100 people of European ancestry do). This is the reference the other combinations are
           compared with: you do not carry the version that goes with a higher chance of blood clots and heart
-          disease. The finding comes from people of European ancestry; less is known elsewhere.
+          disease, though your version may slightly raise the chance of stomach ulcers, bowel diverticula, gout and
+          goitre. The finding comes from people of European ancestry; less is known elsewhere.
       - genotype: C/T
         state: risk
         conclusion: >-
@@ -76,8 +85,8 @@ variants:
           9 (about 30 in 100 people of European ancestry do). It goes with a higher chance of blood clots in the
           veins, somewhat more heart disease and slightly higher LDL cholesterol. In a very large study it also went
           with parents living a few months less, mainly through deaths before about 70; this is early evidence, not
-          a settled finding, and the effect is small: a tendency, not destiny. A standard blood test your doctor can
-          order shows your actual LDL cholesterol, which matters more than this DNA result.
+          a settled finding, and the effect is small: a tendency, not destiny. The same version may slightly lower the
+          chance of stomach ulcers, gout and some bowel and thyroid conditions.
       - genotype: T/T
         state: risk
         conclusion: >-
@@ -85,8 +94,8 @@ variants:
           chromosome 9 (about 3 in 100 people of European ancestry do). Each copy goes with a higher chance of blood
           clots in the veins, somewhat more heart disease and slightly higher LDL cholesterol. In a very large study
           each copy also went with parents living a few months less, mainly through deaths before about 70; this is
-          early evidence, not a settled finding, and the effect is small: a tendency, not destiny. A standard blood
-          test your doctor can order shows your actual LDL cholesterol, which matters more than this DNA result.
+          early evidence, not a settled finding, and the effect is small: a tendency, not destiny. The same version
+          may slightly lower the chance of stomach ulcers, gout and some bowel and thyroid conditions.
 studies:
   - rsid: rs2519093
     note: pmid-30642433

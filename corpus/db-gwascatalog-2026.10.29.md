@@ -1338,3 +1338,35 @@ rs2519093's 398 associations (`assoc-rs2519093-p0` to `-p7`, all read): lipids a
 hundreds of plasma proteins, venous thromboembolism, coronary disease and myocardial infarction (T the risk allele
 throughout), allergy; no lifespan, longevity, healthspan or frailty line. Its nine r² ≥ 0.8 proxies hold 1,023 more
 (`assoc-<rsID>-s200p*`, all pages), none of those traits. For row 59.
+
+> [q375] range [0.094-0.157] beta 0.1255 unit increase p_value 6.0000000000000004e-18 accession_id GCST90480299 pubmed_id 39024449 first_author Verma A
+
+> [q376] _embedded.associations[35].snp_effect_allele[0] rs115478735-A
+
+Peptic ulcer (Verma 2024, `assoc-rs115478735-s200p0`, association 35): rs115478735's A raises it, β 0.126, P 6e-18.
+rs115478735 is at CEU r² 0.97, D′ 1.0 to the lead (db-ensembl-116 `ld-rs2519093-ceu.json`, line 18), its A at 0.81
+against the lead's C at 0.815, so A rides with C, the longer-life allele (derived). For row 59.
+
+> [q377] range [0.042-0.073] beta 0.05748 unit increase p_value 1e-14 accession_id GCST90476073 pubmed_id 39024449 first_author Verma A
+
+> [q378] _embedded.associations[4].snp_effect_allele[0] rs115478735-A
+
+Diverticulosis and diverticulitis (Verma 2024, association 4): A, riding with C, raises it, β 0.057, P 1e-14. For row
+59.
+
+> [q379] range [0.039-0.075] beta 0.05737 unit increase p_value 3e-11 accession_id GCST90475731 pubmed_id 39024449 first_author Verma A
+
+> [q380] _embedded.associations[17].snp_effect_allele[0] rs115478735-A
+
+Gout and other crystal arthropathies (Verma 2024, association 17): A, riding with C, raises it, β 0.057, P 3e-11. For
+row 59.
+
+> [q381] range [0.044-0.083] beta 0.0632 unit increase p_value 1e-10 accession_id GCST90627740 pubmed_id 41644669 first_author White SL
+
+> [q382] _embedded.associations[0].snp_effect_allele[0] rs635634-C
+
+Benign nodular goiter (White, `assoc-rs635634-s200p0`, association 0): rs635634's C raises it, β 0.063, P 1e-10.
+rs635634 is at CEU r² 0.97, D′ 1.0 to the lead; in Timmers' summary statistics its T (0.19) shortens life (β −0.0218,
+P 1.3e-5, pmid-30642433 `rows-a6fe4f5f`), so C rides with the lead's C. These four lines, at proxies, are the trade-off
+row 59 carries (D18.1): the longer-life side raises peptic ulcer, diverticular disease, gout and goitre, while T raises
+thrombosis, coronary disease and LDL. For row 59.
