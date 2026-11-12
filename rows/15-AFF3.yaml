@@ -36,8 +36,12 @@ verdict_reason: >-
   locus-to-gene (0.90 on the mvAge set) and holds 18 of the set's 24 cis-QTL colocalisations at H4 ≥ 0.8, but an
   unnamed neighbouring gene (ENSG00000230393) holds the other 6, more than a tenth, so the call is ambiguous. The protection is the presence of the minor G.
   Age of action is unknown: no cached source gives this locus's own age bands.
+  D29.18 (the lead's sweep, 2026-11-13): rs4851244's fathers' line (raw P 0.039) is a Supplemental Table 9 line, and
+  Table 9 prints only SNPs whose AncestryDNA-UK Biobank meta P is below 2.5e-3 (pmid-31484785#q6); its UK Biobank arm
+  alone is P 0.0046, above that cut, so the pass was close to guaranteed by the filter: named, not counted.
+  rs13032879's line (UK Biobank arm 0.0022) carries the replication, so nothing moves.
 axes:
-  tier: {value: B, cites: [pmid-37550455#q11, pmid-37550455#q2, pmid-37550455#q3, pmid-37550455#q5, pmid-30642433#q52, pmid-30729179#q27, pmid-31413261#q33, pmid-31413261#q34, pmid-31484785#q44, pmid-31484785#q45, pmid-31484785#q46, db-opentargets-26.09#q147, db-opentargets-26.09#q148, pmid-30642433#q53, pmid-30642433#q54, db-ensembl-116#q58, db-ensembl-116#q59, db-ensembl-116#q60, db-ensembl-116#q61, db-gwascatalog-2026.10.29#q118, db-gwascatalog-2026.10.29#q119, pmid-37118362#q51, pmid-37118362#q52, pmid-37118362#q54, db-ensembl-116#q194, db-ensembl-116#q195]}
+  tier: {value: B, cites: [pmid-31484785#q6, pmid-37550455#q11, pmid-37550455#q2, pmid-37550455#q3, pmid-37550455#q5, pmid-30642433#q52, pmid-30729179#q27, pmid-31413261#q33, pmid-31413261#q34, pmid-31484785#q44, pmid-31484785#q45, pmid-31484785#q46, db-opentargets-26.09#q147, db-opentargets-26.09#q148, pmid-30642433#q53, pmid-30642433#q54, db-ensembl-116#q58, db-ensembl-116#q59, db-ensembl-116#q60, db-ensembl-116#q61, db-gwascatalog-2026.10.29#q118, db-gwascatalog-2026.10.29#q119, pmid-37118362#q51, pmid-37118362#q52, pmid-37118362#q54, db-ensembl-116#q194, db-ensembl-116#q195]}
   mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q130, db-opentargets-26.09#q139, db-opentargets-26.09#q140, db-opentargets-26.09#q141, db-opentargets-26.09#q142, db-opentargets-26.09#q143, db-opentargets-26.09#q144, db-ensembl-116#q62, db-gwascatalog-2026.10.29#q120, pmid-37550455#q11, pmid-37550455#q12]}
   pleiotropy: {values: ["mech:muscle_strength", "mech:cognition"], cites: [db-opentargets-26.09#q138, db-opentargets-26.09#q139, db-opentargets-26.09#q140, db-opentargets-26.09#q149, db-opentargets-26.09#q150, db-opentargets-26.09#q151, pmid-37550455#q11, pmid-37550455#q12]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}

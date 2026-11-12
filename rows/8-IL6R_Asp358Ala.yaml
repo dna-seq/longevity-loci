@@ -41,8 +41,13 @@ verdict_reason: >-
   assessed; the other traits' sets are cited from the mechanism. The variant is missense in IL6R, so the effector
   is IL6R by §4.2's coding clause (E1). The protection is a presence, the minor C. Not a treatment indication
   (R-VOICE-4). Age of action is unknown.
+  D29.18 (the lead's sweep, 2026-11-13): Supplemental Table 9's fathers' (born 1886-1940, P 0.0043) and mothers' (P
+  0.0051) lines at rs7518199 is a Supplemental Table 9 line, and Table 9 prints only SNPs whose AncestryDNA-UK
+  Biobank meta P is below 2.5e-3 (pmid-31484785#q6); its UK Biobank arm alone is P 0.019 and 0.044, above that cut,
+  so the pass was close to guaranteed by the filter: named, not counted. Table 8's fathers' line (born 1886-1918,
+  genomic-control P 0.0017), filtered on the AncestryDNA arm's own P, still counts, so nothing moves.
 axes:
-  tier: {value: C, cites: [pmid-30642433#q35, pmid-30642433#q43, db-ensembl-116#q37, pmid-31552141#q2, pmid-31552141#q6, pmid-31552141#q7, pmid-31484785#q25, pmid-31484785#q26, pmid-30729179#q19, pmid-29227965#q20, pmid-31552141#q1, pmid-31552141#q3, pmid-31552141#q4, pmid-31552141#q5, pmid-40674461#q2]}
+  tier: {value: C, cites: [pmid-31484785#q6, pmid-30642433#q35, pmid-30642433#q43, db-ensembl-116#q37, pmid-31552141#q2, pmid-31552141#q6, pmid-31552141#q7, pmid-31484785#q25, pmid-31484785#q26, pmid-30729179#q19, pmid-29227965#q20, pmid-31552141#q1, pmid-31552141#q3, pmid-31552141#q4, pmid-31552141#q5, pmid-40674461#q2]}
   mechanism: {value: immune_inflammation, cites: [pmid-39579785#q1, pmid-22421340#q3, pmid-31552141#q1, db-gwascatalog-2026.10.29#q35, db-gwascatalog-2026.10.29#q38, db-gwascatalog-2026.10.29#q40]}
   pleiotropy: {values: ["tradeoff", "mr:drug_target_proxy", "mech:autoimmune", "mech:cvd", "mech:allergy", "mech:infection"],
                cites: [pmid-31552141#q1, pmid-22421340#q2, pmid-22421340#q3, pmid-39579785#q2, db-gwascatalog-2026.10.29#q41, db-gwascatalog-2026.10.29#q43, db-gwascatalog-2026.10.29#q44, db-gwascatalog-2026.10.29#q46, db-gwascatalog-2026.10.29#q47, db-gwascatalog-2026.10.29#q49]}

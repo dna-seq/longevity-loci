@@ -51,8 +51,12 @@ verdict_reason: >-
   look-up spans both, T common in East Asians (0.76 in 1000 Genomes JPT; the table's Biobank Japan column prints 0.50,
   which does not match and is not read as Japan's), Japan carrying about 60 % of the look-up's information
   (estimated from the FinnGen-only rows' size, not printed).
+  D29.18 (the lead's sweep, 2026-11-13): the fathers' line at rs9872864 (AncestryDNA P 4.4e-4) is a Supplemental
+  Table 9 line, and Table 9 prints only SNPs whose AncestryDNA-UK Biobank meta P is below 2.5e-3 (pmid-31484785#q6);
+  its UK Biobank arm alone is P 0.0078, above that cut, so the pass was close to guaranteed by the filter: named, not
+  counted. it was only ever a lean, and Deelen's 90th percentile is the replication, so nothing moves.
 axes:
-  tier: {value: A, cites: [pmid-31484785#q49, pmid-31484785#q50, pmid-31484785#q52, pmid-31484785#q54, pmid-31484785#q55, pmid-31484785#q56, pmid-31484785#q57, pmid-31484785#q58, pmid-31413261#q41, pmid-31413261#q43, pmid-31413261#q1, pmid-31413261#q2, db-gwascatalog-2026.10.29#q165, db-gwascatalog-2026.10.29#q166, db-gwascatalog-2026.10.29#q170, db-gwascatalog-2026.10.29#q171, pmid-30642433#q59, pmid-30642433#q60, pmid-30642433#q61, pmid-30642433#q62, pmid-30642433#q19, pmid-30642433#q14, db-ensembl-116#q100, db-ensembl-116#q106, db-ensembl-116#q107, pmid-37118362#q37, pmid-37118362#q38, pmid-37118362#q2, pmid-37118362#q5, pmid-37118362#q6, pmid-37118362#q7, pmid-37118362#q56, pmid-37118362#q49, pmid-37118362#q55, db-ensembl-116#q196]}
+  tier: {value: A, cites: [pmid-31484785#q6, pmid-31484785#q49, pmid-31484785#q50, pmid-31484785#q52, pmid-31484785#q54, pmid-31484785#q55, pmid-31484785#q56, pmid-31484785#q57, pmid-31484785#q58, pmid-31413261#q41, pmid-31413261#q43, pmid-31413261#q1, pmid-31413261#q2, db-gwascatalog-2026.10.29#q165, db-gwascatalog-2026.10.29#q166, db-gwascatalog-2026.10.29#q170, db-gwascatalog-2026.10.29#q171, pmid-30642433#q59, pmid-30642433#q60, pmid-30642433#q61, pmid-30642433#q62, pmid-30642433#q19, pmid-30642433#q14, db-ensembl-116#q100, db-ensembl-116#q106, db-ensembl-116#q107, pmid-37118362#q37, pmid-37118362#q38, pmid-37118362#q2, pmid-37118362#q5, pmid-37118362#q6, pmid-37118362#q7, pmid-37118362#q56, pmid-37118362#q49, pmid-37118362#q55, db-ensembl-116#q196]}
   mechanism: {value: general_ageing, cites: [pmid-31484785#q51, db-opentargets-26.09#q240, db-gwascatalog-2026.10.29#q164, db-gwascatalog-2026.10.29#q167, db-gwascatalog-2026.10.29#q169, db-gwascatalog-2026.10.29#q172, db-gwascatalog-2026.10.29#q174]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
