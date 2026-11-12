@@ -1692,3 +1692,15 @@ No other trait. For row 72.
 > [q475] page size 200 totalElements 0 totalPages 0 number 0
 
 rs9536314 holds no association in the GWAS Catalog (q475): no genome-wide line for KL-VS on any trait. For row 73.
+
+## Reading 2026-11-12, record
+
+> [q476] _embedded.associations[0] association_id 35567723 risk_frequency 0.938 pvalue_description pvalue_mantissa 3 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.016-0.034] beta 0.0251 unit increase p_value 3.0000000000000004e-08 accession_id GCST006696 pubmed_id 29227965 first_author Pilling LC ci_lower 0.016 ci_upper 0.034
+
+> [q477] _embedded.associations[0].reported_trait[0] Parental longevity (mother's attained age)
+
+> [q478] page size 200 totalElements 0 totalPages 0 number 0
+
+rs61949650 holds one association in the GWAS Catalog (q476, q477): Pilling 2017's mothers' attained age
+(GCST006696), risk frequency 0.938 (T), β 0.0251, P 3e-8, mapped to LGMNP1 and LINC00355. Nothing else, no disease;
+rs12586026 holds none (q478). For row 74.

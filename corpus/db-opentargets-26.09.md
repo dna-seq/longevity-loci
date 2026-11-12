@@ -3207,3 +3207,18 @@ credible set, IL6's (q872, q873): none at ANKRD20A9P. No causal or effector leve
 (ENSG00000133116) in ileal enterochromaffin cells (q876), led by 13_33083565_A_C (q875), where KL-VS's posterior
 probability is 0.012 (q877). No set of the nine longevity studies (Timmers 2019 and 2020, Deelen 2019, Zeng 2016 and
 the rest of the list) holds it (q878). No longevity or disease fine-mapping places KL-VS. For row 73.
+
+## Reading 2026-11-12, record
+
+> [q879] data.variant.credibleSets count 3
+
+> [q880] data.variant.credibleSets.rows[0].study id GCST90569461 traitFromSource Gut microbial network clusters (Salmon (at 1 year) x Any Breastfeeding (Duration) interaction studyType gwas
+
+> [q881] data.variant.credibleSets.rows[1].study id GCST90094707 traitFromSource Black olive liking studyType gwas
+
+> [q882] data.credibleSets count 0
+
+13_64262356_T_C (rs61949650, row 74): three credible sets hold it (q879), two gut-microbial network clusters by
+breastfeeding interaction (q880 and the third) and black olive liking (q881), none a disease or lifespan trait. No set
+of the nine longevity studies holds it (q882), and Pilling's mothers' study (GCST006696) has no set here. No gene can
+be named from fine-mapping. For row 74.

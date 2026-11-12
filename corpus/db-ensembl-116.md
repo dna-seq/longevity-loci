@@ -2029,3 +2029,27 @@ q558), 0.157 in gnomAD exomes' non-Finnish Europeans (q559). rs9527025 (C370S, K
 complete LD with it in Europeans, r² 1.0, D′ 1.0 (q560), with ten other SNPs at r² 1.0 in the window. VEP: G is
 Ttt/Gtt, a missense change at residue 352 of KL's canonical transcript ENST00000380099, PolyPhen probably damaging
 (q561; its F/I line is the A allele). For row 73.
+
+## Reading 2026-11-12, record
+
+> [q562] mappings[0] seq_region_name 13 assembly_name GRCh38 ancestral_allele T coord_system chromosome strand 1 end 64262356 location 13:64262356-64262356 allele_string T/C start 64262356
+
+> [q563] mappings[0] coord_system chromosome assembly_name GRCh37 ancestral_allele T seq_region_name 13 end 64836488 allele_string T/C strand 1 start 64836488 location 13:64836488-64836488
+
+> [q564] populations[75] frequency 0.062624254473161 allele C population 1000GENOMES:phase_3:EUR allele_count 63
+
+> [q565] populations[13] frequency 0.06415 allele C population gnomADg:nfe allele_count 4363
+
+> [q566] [0] d_prime 1.000000 variation2 rs12586026 variation1 rs61949650 r2 1.000000 population_name 1000GENOMES:phase_3:CEU
+
+> [q567] populations[76] frequency 0.0656063618290258 allele C allele_count 66 population 1000GENOMES:phase_3:EUR
+
+> [q568] [0] start 64262356 end 64262356 seq_region_name 13 input rs61949650 allele_string T/C id rs61949650 strand 1 most_severe_consequence intergenic_variant assembly_name GRCh38
+
+> [q569] populations[52] allele C population 1000GENOMES:phase_3:AFR frequency 0.118003025718608 allele_count 156
+
+rs61949650 (row 74): GRCh38 13:64,262,356 (q562), GRCh37 13:64,836,488 (q563), T/C, T ancestral. C is 0.063 in 1000
+Genomes Europeans (q564), 0.064 in gnomAD genomes' non-Finnish Europeans (q565), 0.12 in Africans (q569); 0.047 in
+East Asians, 0.066 in South Asians. rs12586026, Wright's mothers' SNP 3.9 kb away, is in complete LD with it in CEU,
+r² 1.0, D′ 1.0 (q566), its C at 0.066 in Europeans (q567), so C rides with C. VEP: intergenic (q568). The EUR window
+at r² ≥ 0.5 holds 538 pairs. For row 74.

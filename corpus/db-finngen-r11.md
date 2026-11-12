@@ -379,3 +379,10 @@ fewer-deaths side, flat, against Zeng's (one-sided for C 0.62, derived). A separ
 
 FinnGen R11 DEATH at rs9536314 (GRCh38 13:33,054,001), row 73: G (0.198) beta +0.0058 (SE 0.0093), P 0.53, G with
 slightly more deaths, flat (q50). For row 73.
+
+## Reading 2026-11-12, record
+
+> [q51] 13 64262356 T C rs61949650 LINC00355 0.22351 0.650704 0.0203245 0.0166971 0.0520708 0.0523171 0.05204
+
+FinnGen R11 DEATH at rs61949650 (GRCh38 13:64,262,356), row 74 (q51): C (0.0520) beta +0.020 (SE 0.017), P 0.22, C
+with slightly more deaths, against the discovery's side, not significant; nearest gene LINC00355. For row 74.
