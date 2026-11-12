@@ -6,10 +6,11 @@
 # proxy rs113450114 (r² 0.49).
 locus_id: 60
 locus_name: LINC02907
-verdict: kept
+verdict: re-tiered
 verdict_reason: >-
-  Tier B, the seed's, kept, on §4.1's letter (a genome-wide locus, a single study without independent replication),
-  as row 47; whether it should be D or C is put to the lead. Pilling 2016 ran BOLT-LMM on 42,273 'white'
+  Tier D, from the seed's B (D28.13, the lead's ruling): a hit its own authors call anomalous is an overfit source,
+  as at 41, 44 and 48, and nothing independent stands for it. The curator's B on §4.1's letter, as row 47, was
+  rejected: 47's authors call it suggestive, not anomalous, and Deelen replicates it. Pilling 2016 ran BOLT-LMM on 42,273 'white'
   British UK Biobank participants aged 55 to 70, 1,339 of them with a parent in the top 1 % of age at death. The
   minor A raised the chance of a long-lived parent by 0.0133 per copy (SE 0.0024, P 4.0e-8, INFO 0.87; the scan
   kept variants above INFO 0.4 and frequency 1 %), about 5.8 times APOE ε4's 0.0023 on the same phenotype. The
@@ -23,24 +24,23 @@ verdict_reason: >-
   P 0.14), A only 1.4 % in Finns. Pilling's APOE line (factor about 46 to LifeGen's scale) makes both look-ups red
   flags; the flag holds at any factor of 3.22 or more for LifeGen and 5.74 or more for FinnGen, but the mean factor
   (D25.3) is undefined for this phenotype, so whether they are red flags is unknown and the row carries no
-  replication_failed (D26.3). The row stays B. Zenin 2019's healthspan leans the same way, P 0.47. Lifespan 0,
-  healthspan 0, exceptional survival + on Pilling alone. Age of action UNKNOWN: the top-1 % contrast is about how
+  replication_failed (D26.3); the tier rests on the authors' own doubt, not on a flag. Zenin 2019's healthspan leans the same way, P 0.47. Lifespan 0,
+  healthspan 0, exceptional survival 0: on a D row the discovery gives no `+` (D28.10). Age of action UNKNOWN: the top-1 % contrast is about how
   extreme the survival is, not when the allele acts. Open Targets holds no record of the variant (no credible set,
-  no locus-to-gene), so causal C4 and effector E4, no gene named; the GWAS Catalog maps it to LINC02907 and records
+  no locus-to-gene), and an overfit source sets no level anyway (D28.12): causal C4 and effector E4, no gene named; the GWAS Catalog maps it to LINC02907 and records
   no other trait, so mechanism general ageing and no pleiotropy. The evidence is European; A is 0.052 in South
-  Asians and 0.0014 in East Asians, untested there, so eur_only_evidence. Descriptive. The protection is a
-  presence, the minor A.
+  Asians and 0.0014 in East Asians, untested there, so eur_only_evidence. Descriptive. Pilling's lean is the minor A's (a
+  presence), but a D row carries no protection token.
 axes:
-  tier: {value: B, cites: [pmid-27015805#q1, pmid-27015805#q2, pmid-27015805#q3, pmid-27015805#q4, pmid-27015805#q5, pmid-27015805#q9, pmid-27015805#q11, pmid-27015805#q12, pmid-27015805#q17, pmid-27015805#q19, pmid-27015805#q21, pmid-27015805#q22, pmid-27015805#q23, db-gwascatalog-2026.10.29#q317, db-gwascatalog-2026.10.29#q383, db-gwascatalog-2026.10.29#q384, pmid-30642433#q90, pmid-30642433#q274, db-finngen-r11#q6, db-finngen-r11#q35, db-ensembl-116#q425]}
+  tier: {value: D, cites: [pmid-27015805#q1, pmid-27015805#q2, pmid-27015805#q3, pmid-27015805#q4, pmid-27015805#q5, pmid-27015805#q9, pmid-27015805#q11, pmid-27015805#q12, pmid-27015805#q17, pmid-27015805#q19, pmid-27015805#q21, pmid-27015805#q22, pmid-27015805#q23, db-gwascatalog-2026.10.29#q317, db-gwascatalog-2026.10.29#q383, db-gwascatalog-2026.10.29#q384, pmid-30642433#q90, pmid-30642433#q274, db-finngen-r11#q6, db-finngen-r11#q35, db-ensembl-116#q425]}
   mechanism: {value: general_ageing, cites: [db-gwascatalog-2026.10.29#q383, db-gwascatalog-2026.10.29#q384, db-opentargets-26.09#q747, db-opentargets-26.09#q748]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "+",
+  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
             cites: [pmid-27015805#q22, pmid-30642433#q274, db-finngen-r11#q35, pmid-30729179#q83]}
   actionability: {label: descriptive, cites: [pmid-27015805#q20]}
   context: {values: [eur_only_evidence], cites: [pmid-27015805#q3, db-gwascatalog-2026.10.29#q317, db-ensembl-116#q424, db-ensembl-116#q428]}
 flags:
-  - {token: "PROTECT:PRESENCE", cites: [pmid-27015805#q22, db-ensembl-116#q420, db-ensembl-116#q421]}
   - {token: "causal:C4", cites: [db-opentargets-26.09#q747, db-opentargets-26.09#q748]}
   - {token: "effector:E4", cites: [db-opentargets-26.09#q747, db-opentargets-26.09#q748, db-gwascatalog-2026.10.29#q385, db-ensembl-116#q426, db-ensembl-116#q427]}
 variants:
@@ -59,22 +59,23 @@ variants:
         conclusion: >-
           You carry two copies of the common version of this DNA position, as about 92 in 100 people of European
           ancestry do. It is the reference the other combinations are compared with. The position, on chromosome 9,
-          lies between genes, and which gene it might affect, if any, is not known.
+          lies between genes, and which gene it might affect, if any, is not known. A link between this position and
+          having a very long-lived parent was reported once, and the study's own authors doubted it.
       - genotype: A/G
-        state: protective
+        state: neutral
         conclusion: >-
           You carry one copy of a less common version of this DNA position (about 7 in 100 people of European
-          ancestry do). In one large British study, people with a parent who lived to 95 or more carried it more
-          often. The study's own authors thought the signal might be an artefact, no independent study has
-          confirmed it, and a Finnish study leaned the other way. It counts as a likely finding, not a settled one.
+          ancestry do). One large British study reported it as more common in people with a parent who lived to 95
+          or more, but the study's own authors thought the signal might be an artefact, no independent study has
+          confirmed it, and a Finnish study leaned the other way. It says nothing about your own lifespan.
       - genotype: A/A
-        state: protective
+        state: neutral
         conclusion: >-
           You carry two copies of a less common version of this DNA position (fewer than 2 in 1,000 people of
-          European ancestry do). In one large British study, people with a parent who lived to 95 or more carried
-          this version more often, but the study's own authors thought the signal might be an artefact, no
-          independent study has confirmed it, a Finnish study leaned the other way, and no one with two copies was
-          studied on their own. It counts as a likely finding, not a settled one.
+          European ancestry do). One large British study reported this version as more common in people with a
+          parent who lived to 95 or more, but the study's own authors thought the signal might be an artefact, no
+          independent study has confirmed it, and a Finnish study leaned the other way. It says nothing about your
+          own lifespan.
 studies:
   - rsid: rs75824829
     note: pmid-27015805
