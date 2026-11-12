@@ -14,13 +14,15 @@ verdict_reason: >-
   mothers with UK Biobank's lives removed give C 0.40 years of life per copy against 0.65 at discovery, one-sided P
   0.046 (Timmers 2019's Figure 2 source data, sample b). Deelen 2019's 99th percentile gives C OR 1.13, P 0.041,
   one-sided 0.020 (derived); its 90th is flat on the same side (P 0.64). One fails with power. AncestryDNA's mothers
-  (Wright 2019) at rs12586026 (r² 1.0, D′ 1.0) put C on the shorter-lived side, β −0.0061 (SE 0.0055), P 0.26,
-  against UK Biobank's mothers' +0.0242 in the same table (P 8e-8, Pilling's result). Wright did not test Pilling's
+  (Wright 2019) at rs12586026 (r² 1.0, D′ 1.0) put C on the shorter-lived side: T β −0.0061 (SE 0.0055), P 0.26,
+  against UK Biobank's mothers' T +0.0242 in the same table (P 8e-8), which is Pilling's mothers' line at that SNP
+  digit for digit, so Wright's betas there count T with positive meaning a shorter life. Wright did not test Pilling's
   lead as such (three of the six UK Biobank maternal loci entered its meta-analysis, and Table 3 lists none here), so
   the reading at the neighbour is the curator's. Heterogeneity P 7.4e-5 as Wright
   prints it, and the AncestryDNA arm's one-sided power against the UK arm's effect is about 1.00 (0.72 at half the
-  effect; derived). Both arms are on one scale in one table, so no conversion arises (D25.3 does not apply) and the
-  heterogeneity P is the source's. That is D21's red flag, so `replication_failed` (D25.13, D26.11, as rows 18 and
+  effect; derived). Wright pooled the two arms in one meta-analysis, so no conversion of the curator's arises (D25.3
+  does not apply) and the heterogeneity P is the source's. The failing line is AncestryDNA's own; no Table 9 pass is
+  counted here (D29.18), LifeGen's sample b and Deelen's 99th being what keep the row off D. That is D21's red flag, so `replication_failed` (D25.13, D26.11, as rows 18 and
   31). It bars A. It does not make D: D25.1 needs no independent scoring-class study to pass, and two do, each
   independent of the UK mothers whatever they share with each other (D29.15). Deelen raises no flag. Against the discovery's effect in its both-parents form
   (D27.9, D28.2), backed out of Pilling's P 4.2e-5 at a both-parents SE of 0.0083 on Timmers' scale (the mothers'
@@ -43,7 +45,7 @@ verdict_reason: >-
   5). No longevity credible set holds the variant and no gene is named: C4, E4, no gene (§4.2, §6.2). The genotype
   shares are 1000 Genomes Europeans' at C 0.063 (88, 12 and 0.4 in 100; gnomAD's non-Finnish Europeans 0.064).
 axes:
-  tier: {value: B, cites: [pmid-29227965#q44, pmid-29227965#q23, pmid-30642433#q301, pmid-30642433#q101, pmid-30642433#q12, pmid-31484785#q118, pmid-31484785#q119, db-ensembl-116#q566, pmid-31413261#q175, pmid-31413261#q176, pmid-30642433#q302]}
+  tier: {value: B, cites: [pmid-29227965#q44, pmid-29227965#q23, pmid-30642433#q301, pmid-30642433#q101, pmid-30642433#q12, pmid-31484785#q118, pmid-29227965#q50, pmid-31484785#q119, db-ensembl-116#q566, pmid-31413261#q175, pmid-31413261#q176, pmid-30642433#q302]}
   mechanism: {value: general_ageing, cites: [pmid-29227965#q44, db-gwascatalog-2026.10.29#q476, db-opentargets-26.09#q879]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: LIFELONG, confidence: DIRECT_WEAK, cites: [pmid-30642433#q303, pmid-30642433#q304, pmid-30642433#q305, pmid-30642433#q306]}
@@ -162,11 +164,11 @@ studies:
     p_value_num: 0.2605
     effect_size: -0.006138
     effect_measure: beta
-    effect_unit: z-score of maternal lifespan per C allele at the proxy (C with the lead's C)
-    effect_allele: C
-    direction: risk
+    effect_unit: maternal lifespan per T allele at the proxy, on the scale Wright pooled with Pilling's Martingale line (positive = shorter life; T with the lead's T)
+    effect_allele: T
+    direction: protective
     proxy_rsid: rs12586026
-    statistical_test: "Linear regression of mothers' lifespan on offspring dosage, AncestryDNA arm of Wright's meta-analysis (Supplemental Table 9, q118): beta -0.0061 (SE 0.0055) against UK Biobank's +0.0242 (SE 0.0045, P 8E-08), heterogeneity P 7.4E-05 as printed; one-sided power against the UK arm's effect about 1.00 (0.72 at half; derived): D21's red flag on one scale. The counted allele is read from the UK arm, Pilling's mothers' result with C longer-lived (pmid-29227965#q44); the printed A is T on the other strand, the allele not counted, as at rows 29, 37 and 42. rs12586026 is at r² 1.0, D′ 1.0 in CEU (db-ensembl-116#q566), its C at 0.066 (db-ensembl-116#q567)"
+    statistical_test: "Linear regression of mothers' lifespan on offspring dosage, AncestryDNA arm of Wright's meta-analysis (Supplemental Table 9, q118): beta -0.0061 (SE 0.0055) against UK Biobank's +0.0242 (SE 0.0045, P 8E-08), heterogeneity P 7.4E-05 as printed; one-sided power against the UK arm's effect about 1.00 (0.72 at half; derived): D21's red flag within Wright's pooling. The UK arm is Pilling's mothers' line at rs12586026 digit for digit (pmid-29227965#q50), so the betas count T, positive shorter; AncestryDNA has T longer-lived, C (Pilling's lengthening allele) shorter, against the discovery. rs12586026 is at r² 1.0, D′ 1.0 in CEU (db-ensembl-116#q566), its C at 0.066 (db-ensembl-116#q567)"
     curator: claude-opus-5-5
   - rsid: rs61949650
     note: pmid-31413261
