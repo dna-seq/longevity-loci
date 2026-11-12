@@ -8,8 +8,8 @@ locus_name: PRPF40B
 verdict: kept
 verdict_reason: >-
   Tier B, as the seed has it, row 40's shape: a genome-wide multivariate result with a co-occurring lifespan study
-  (§4.5 as D16 reads it) and an independent nominal replication; a multivariate result does not meet tier A's first
-  criterion (D18.3), whatever its replication. Genome-wide only in Rosoff 2023's mvAge, the common factor behind
+  (§4.5 as D16 reads it); a multivariate result does not meet tier A's first criterion (D18.3), so B is the cap. The
+  AncestryDNA line once read as an independent replication no longer counts (D29.18, below); B holds on the cap. Genome-wide only in Rosoff 2023's mvAge, the common factor behind
   healthspan, frailty, exceptional longevity, parental lifespan and epigenetic age (A β −0.0100, P 3.45e-8, so T, the
   minor allele at about 9 % in Europeans, is on the healthier-ageing side); Rosoff lists it as novel, its Q test (P
   0.53) finds no sign the SNP acts off the common factor, and its own fine-mapping puts it in no credible set
@@ -19,10 +19,15 @@ verdict_reason: >-
   short of nominal (P 0.10, one-sided 0.052, about 0.055 after the 1.053 genomic control, D26.1).
   Exceptional survival is +: Deelen 2019's 99th percentile favours T (A β −0.138, P 0.0137, one-sided 0.0068); the
   90th, mvAge's own input, does not reach even one-sided (P 0.31). All of these are mvAge's inputs or share their
-  samples. Outside them, Wright 2019's AncestryDNA fathers replicate at rs11169081, 22 kb away on the lead's
+  samples. Outside them, Wright 2019's AncestryDNA fathers lean T's way at rs11169081, 22 kb away on the lead's
   haplotype (r² 0.88 in CEU, 0.83 in GBR, D′ 1): its A, which travels with T, lengthens fathers' lives at raw P 0.028
-  (one-sided 0.014), and after Wright's genomic control (λ 1.182) at two-sided about 0.044, one-sided 0.022 (derived),
-  so it holds either way. The counted allele is A, not the printed G: the UK Biobank arm's positive sign matches
+  (one-sided 0.014; after Wright's genomic control, λ 1.182, two-sided about 0.044, one-sided 0.022, derived). It does
+  not count as a replication (D29.18): Supplemental Table 9 prints only representative SNPs whose AncestryDNA-UK
+  Biobank meta P is below 2.5e-3 (pmid-31484785#q6), and the UK Biobank arm alone is P 0.0056, above that cut, so the
+  tag is in the table only because AncestryDNA pushed the meta under it; its pass was close to guaranteed by the
+  filter. Named, with the filter, and not counted. The mothers point the other way: Pilling's mothers at the tag give A
+  longer-lived at P 0.0013 (the lead itself 0.00087), yet Wright's mothers' Table 9 holds no line for it, which most
+  likely means AncestryDNA's mothers did not agree (Wright's pruning to representative SNPs the caveat). The counted allele is A, not the printed G: the UK Biobank arm's positive sign matches
   Timmers' A at the same SNP (+0.022, P 4.2e-4), as at row 40, and Table 8 prints rs7965658's A where Table 9
   prints G with the same sign, so Table 9's label is the other allele; heterogeneity P 0.90. The mothers' table holds no line
   in LD with the lead (r² 0.06 to 0.21). Park 2025's own survival in UK Biobank leans T's way (P 0.22, the deposit's
@@ -30,8 +35,8 @@ verdict_reason: >-
   −0.003 on death, P 0.79, the same side, read at a tag of r² about 0.85). A FinnGen null is calibrated only by a
   scale conversion no source prints (D28.1), so whether it is a red flag is unknown and sets no token (D26.3); the
   smallest factor on Timmers' tag β (+0.0220) at which FinnGen would flag is about 1.40 (heterogeneity P 0.05 binds,
-  both errors counted, D29.6; one-sided power 0.8 is reached at about 1.26). It cannot make the row D, the
-  AncestryDNA replication standing (D25.1), and B is the cap either way. The rsID literature search found no other
+  both errors counted, D29.6; one-sided power 0.8 is reached at about 1.26). It cannot make the row D (an
+  unknown flag sets nothing, D26.3), and B is the cap either way (D18.3). The rsID literature search found no other
   study of the lead (Semantic Scholar answered 429, so its part is unchecked). Mechanism: ageing in general. The lead
   has three other traits, each strong and none shown to carry the ageing effect. Smoking, read at the lead itself:
   T lowers smoking initiation in Saunders 2022 (P 1e-16, stronger than its mvAge P), as Liu 2019's rs13906-T does.
@@ -50,7 +55,7 @@ verdict_reason: >-
   Europeans); PROTECT:PRESENCE: the protective T is the minor, derived allele. Age of action is unknown: no cached
   source gives this locus's own age bands.
 axes:
-  tier: {value: B, cites: [pmid-37550455#q57, pmid-37550455#q58, pmid-37550455#q59, pmid-37550455#q60, pmid-37550455#q2, pmid-37550455#q3, pmid-37550455#q5, pmid-30642433#q288, pmid-30642433#q289, pmid-30729179#q99, pmid-31413261#q168, pmid-31413261#q169, pmid-31484785#q112, pmid-31484785#q113, pmid-31484785#q83, db-ensembl-116#q511, db-ensembl-116#q512, db-ensembl-116#q514, db-ensembl-116#q515, pmid-31484785#q114, pmid-31484785#q115, db-ensembl-116#q513, pmid-40021682#q69, pmid-40021682#q32, db-finngen-r11#q47, db-gwascatalog-2026.10.29#q466, db-gwascatalog-2026.10.29#q467]}
+  tier: {value: B, cites: [pmid-37550455#q57, pmid-37550455#q58, pmid-37550455#q59, pmid-37550455#q60, pmid-37550455#q2, pmid-37550455#q3, pmid-37550455#q5, pmid-30642433#q288, pmid-30642433#q289, pmid-30729179#q99, pmid-31413261#q168, pmid-31413261#q169, pmid-31484785#q112, pmid-31484785#q6, pmid-29227965#q48, pmid-31484785#q113, pmid-31484785#q83, db-ensembl-116#q511, db-ensembl-116#q512, db-ensembl-116#q514, db-ensembl-116#q515, pmid-31484785#q114, pmid-31484785#q115, db-ensembl-116#q513, pmid-40021682#q69, pmid-40021682#q32, db-finngen-r11#q47, db-gwascatalog-2026.10.29#q466, db-gwascatalog-2026.10.29#q467]}
   mechanism: {value: general_ageing, cites: [pmid-37550455#q57, db-opentargets-26.09#q819, db-opentargets-26.09#q822, db-opentargets-26.09#q823]}
   pleiotropy: {values: ["mech:smoking", "mech:cvd", "mech:cognition", broad], cites: [db-gwascatalog-2026.10.29#q468, db-gwascatalog-2026.10.29#q469, db-gwascatalog-2026.10.29#q470, pmid-37550455#q57, pmid-37550455#q61, pmid-37550455#q62, db-opentargets-26.09#q825, db-opentargets-26.09#q826, db-opentargets-26.09#q827, db-ensembl-116#q516, db-ensembl-116#q517, db-ensembl-116#q518, db-ensembl-116#q519, db-ensembl-116#q520]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -86,7 +91,7 @@ variants:
           You carry one copy of a less common version of this DNA region (about 17 in 100 people of European
           ancestry do). In very large European studies that combined healthspan, frailty, long life and biological
           age into one measure, this version went with slightly healthier ageing, and parents of carriers lived a
-          little longer, which a separate American study also saw. The same version goes with a lower chance of
+          little longer; a separate American study leaned the same way for fathers, too weakly to confirm it. The same version goes with a lower chance of
           ever taking up smoking, slightly lower blood pressure and slightly higher scores on thinking tests. It is a likely finding, not a settled one. The effect is small and it is a
           tendency, not destiny.
       - genotype: T/T
@@ -95,7 +100,7 @@ variants:
           You carry two copies of a less common version of this DNA region (about 1 in 100 people of European
           ancestry do). In very large European studies that combined healthspan, frailty, long life and biological
           age into one measure, each copy went with slightly healthier ageing, and parents of carriers lived a
-          little longer, which a separate American study also saw. The same version goes with a lower chance of
+          little longer; a separate American study leaned the same way for fathers, too weakly to confirm it. The same version goes with a lower chance of
           ever taking up smoking, slightly lower blood pressure and slightly higher scores on thinking tests. It is a likely finding, not a settled one. The effect is small and it is a
           tendency, not destiny.
 studies:
@@ -207,5 +212,5 @@ studies:
     effect_unit: fathers' lifespan per A allele of rs11169081 (printed label G, read as A, derived; positive = longer)
     effect_allele: A
     direction: protective
-    statistical_test: "Supplemental Table 9, the AncestryDNA arm of the fathers' meta-analysis, raw P (beta/SE); after Wright's genomic control (λ 1.182, q83) two-sided about 0.044, one-sided 0.022 (derived); the counted allele A as the UK Biobank arm's sign against Timmers' A (pmid-30642433#q289) gives it, as at row 40; rs11169081 r² 0.88 (CEU) and 0.83 (GBR), D′ 1 to the lead (db-ensembl-116#q511, q512), its A with T (derived); independent of mvAge's inputs; UK Biobank arm P 0.0056, heterogeneity P 0.90; no mothers' line in LD (q113)"
+    statistical_test: "Supplemental Table 9, the AncestryDNA arm of the fathers' meta-analysis, raw P (beta/SE); after Wright's genomic control (λ 1.182, q83) two-sided about 0.044, one-sided 0.022 (derived); the counted allele A as the UK Biobank arm's sign against Timmers' A (pmid-30642433#q289) gives it, as at row 40; rs11169081 r² 0.88 (CEU) and 0.83 (GBR), D′ 1 to the lead (db-ensembl-116#q511, q512), its A with T (derived); independent of mvAge's inputs; UK Biobank arm P 0.0056, heterogeneity P 0.90; no mothers' line in LD (q113). Not counted (D29.18): Table 9's 2.5e-3 meta filter (q6) with the UK arm alone above it; Pilling's mothers at the tag P 0.0013 (pmid-29227965#q48) with no AncestryDNA mothers' line"
     curator: claude-opus-5-5
