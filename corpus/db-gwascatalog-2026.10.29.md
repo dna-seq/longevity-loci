@@ -1293,3 +1293,48 @@ For row 56.
 its "beta 5.969329" is the paper's score Z (pmid-33948810#q23) and the risk frequency 0.0312 the controls'. No other
 trait. The eight CEU proxies at r² ≥ 0.8 (`assoc-rs341466-p0`, `-rs341467-`, `-rs10973750-`, `-rs10973749-`,
 `-rs12378970-`, `-rs10814677-`, `-rs76830434-`, `-rs10973754-`) hold none (totalElements 0 each). For row 58.
+
+## Reading 2026-11-12, supplement
+
+> [q362] range [1.37-1.43] or_per_copy_num 1.4 or_value 1.4 beta - p_value 4e-169 accession_id GCST009030 pubmed_id 31420334 first_author Lindstrom S
+
+> [q363] _embedded.associations[26].snp_effect_allele[0] rs2519093-T
+
+Venous thromboembolism (Lindström 2019, page 7, association 26): T raises it, OR 1.40 (1.37-1.43), P 4e-169. For row 59.
+
+> [q364] range [1.06- 1.11] or_per_copy_num 1.08 or_value 1.08 beta - p_value 1e-11 accession_id GCST003116 pubmed_id 26343387 first_author Nikpay M
+
+> [q365] _embedded.associations[46].snp_effect_allele[0] rs2519093-T
+
+Coronary artery disease (Nikpay 2015, page 7, association 46): T raises it, OR 1.08, P 1e-11. For row 59.
+
+> [q366] range [1.07-1.11] or_per_copy_num 1.09 or_value 1.09 beta - p_value 5e-19 accession_id GCST011365 pubmed_id 33532862 first_author Hartiala JA
+
+> [q367] _embedded.associations[49].snp_effect_allele[0] rs2519093-T
+
+Myocardial infarction (Hartiala 2021, page 6, association 49): T raises it, OR 1.09, P 5e-19. For row 59.
+
+> [q368] range [0.051-0.061] beta 0.0562 unit increase p_value 3e-100 accession_id GCST90018961 pubmed_id 34594039 first_author Sakaue S
+
+> [q369] _embedded.associations[41].snp_effect_allele[0] rs2519093-T
+
+LDL cholesterol (Sakaue 2021, page 6, association 41): T raises it, β 0.056, P 3e-100. For row 59.
+
+> [q370] range [0.077-0.089] beta 0.0830219 unit decrease p_value 1e-180 accession_id GCST90002384 pubmed_id 32888494 first_author Vuckovic D
+
+> [q371] _embedded.associations[10].snp_effect_allele[0] rs2519093-T
+
+Haemoglobin (Vuckovic 2020, page 7, association 10): T lowers it, β 0.083, P 1e-180. For row 59.
+
+> [q372] range [1.04-1.07] or_per_copy_num 1.05 or_value 1.05 beta - p_value 3e-16 accession_id GCST006409 pubmed_id 30013184 first_author Waage J
+
+> [q373] _embedded.associations[5].snp_effect_allele[0] rs2519093-T
+
+Allergic rhinitis (Waage 2018, page 0, association 5): T raises it, OR 1.05, P 3e-16. For row 59.
+
+> [q374] totalElements 398
+
+rs2519093's 398 associations (`assoc-rs2519093-p0` to `-p7`, all read): lipids and lipoproteins, blood cell counts,
+hundreds of plasma proteins, venous thromboembolism, coronary disease and myocardial infarction (T the risk allele
+throughout), allergy; no lifespan, longevity, healthspan or frailty line. Its nine r² ≥ 0.8 proxies hold 1,023 more
+(`assoc-<rsID>-s200p*`, all pages), none of those traits. For row 59.

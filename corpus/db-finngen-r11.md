@@ -253,3 +253,12 @@ FinnGen R11 death endpoint (`rows-f70b6fb7`), rs10973748 at 9:38,322,519 (GRCh38
 NECS's log OR into Timmers' scale (pmid-30642433#q255) and into FinnGen by −0.99: under APOE's factor expects −0.070,
 power 1.00, heterogeneity P 2e-4; at half, power 0.70, no flag. The mean factor enters twice, NECS into Timmers' scale
 and Timmers' into FinnGen, and cancels: one conversion. A flag at full effect. For row 58.
+
+## Reading 2026-11-12, supplement
+
+> [q34] 9	133266456	T	C	rs977371848	ABO	0.434572	0.361938	-0.00719583	0.009209	0.797072	0.796916	0.797092
+
+FinnGen R11 death endpoint (`rows-34c921c6`), GRCh38 9:133,266,456 T>C, row 59's lead rs2519093 by position and alleles
+(the file names it rs977371848): alt C 0.80, β −0.0072 (SE 0.0092) on the log odds of death, so C with fewer deaths, P
+0.43 (one-sided 0.22). D21 (derived), Timmers' β per C × −0.99: expects −0.022, power 0.78, heterogeneity P 0.15 under
+APOE's factor; −0.0093, power 0.26, P 0.83 under the mean factor: no red flag. For row 59.

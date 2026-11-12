@@ -1494,3 +1494,41 @@ among them, so not tags of the lead. For row 58.
 `var-rs341466.json`, `var-rs341467.json`, `var-rs10973750.json`, the lead's CEU r² 1.0 tags (q404 to q406): in gnomAD
 non-Finnish Europeans rs341466's C 0.064, rs341467's A 0.063, rs10973750's G 0.058 (1000 Genomes EUR 0.069, 0.069,
 0.060), the alleles NECS codes (pmid-33948810#q24 to q26). For row 58.
+
+## Reading 2026-11-12, supplement
+
+> [q411] mappings[0] strand 1 assembly_name GRCh38 location 9:133266456-133266456 coord_system chromosome seq_region_name 9 allele_string T/C start 133266456 end 133266456 ancestral_allele C
+
+rs2519093 on GRCh38 9:133,266,456, alleles T/C (T the reference), ancestral C: the lifespan-raising C is the ancestral,
+common allele, T the derived. For row 59.
+
+> [q412] populations[74] frequency 0.184890656063618 allele_count 186 population 1000GENOMES:phase_3:EUR allele T
+
+> [q413] populations[75] allele C frequency 0.815109343936382 allele_count 820 population 1000GENOMES:phase_3:EUR
+
+1000 Genomes Europeans: T 0.185, C 0.815. For row 59.
+
+> [q414] populations[19] allele T population gnomADg:nfe allele_count 13281 frequency 0.1955
+
+gnomAD non-Finnish Europeans: T 0.196. For row 59.
+
+> [q415] populations[70] allele T population 1000GENOMES:phase_3:EAS allele_count 192 frequency 0.19047619047619
+
+1000 Genomes East Asians: T 0.19, as in Europeans; untested there. For row 59.
+
+> [q416] [29] population_name 1000GENOMES:phase_3:CEU d_prime 0.968500 variation1 rs2519093 variation2 rs651007 r2 0.937992
+
+CEU r² 0.94 (D′ 0.97) to rs651007, Timmers' Figure 4 proxy. For row 59.
+
+> [q417] [55] population_name 1000GENOMES:phase_3:CEU d_prime 1.000000 r2 1.000000 variation2 rs532436 variation1 rs2519093
+
+CEU r² 1.0 to rs532436. Nine SNPs reach r² ≥ 0.8 (rs532436, rs600038, rs8176643, rs635634, rs115478735, rs651007,
+rs649129, rs579459, rs495828), none in Wright 2019's tables. For row 59.
+
+> [q418] [0].transcript_consequences[0] gene_symbol ABO variant_allele C hgnc_id HGNC:79 transcript_id ENST00000453660 gene_symbol_source HGNC gene_id ENSG00000175164 biotype protein_coding_CDS_not_defined strand -1 impact MODIFIER
+
+VEP: an intron variant of ABO, no coding consequence. For row 59.
+
+> [q419] [0] d_prime 0.999984 population_name 1000GENOMES:phase_3:CEU variation2 rs514659 r2 0.424208 variation1 rs2519093
+
+CEU r² 0.42 (D′ 1.0) to Fortney's rs514659. For row 59.

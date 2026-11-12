@@ -1,0 +1,146 @@
+# The seed list's locus 59, ABO (9q34.2). Curated 2026-11-12. Lead rs2519093 (the seed's only rsID; GRCh38
+# 9:133,266,456, GRCh37 9:136,141,870), T/C, an ABO intron variant, C ancestral at 0.815 in Europeans and 0.81 in East
+# Asians: Timmers 2019's Table 2 SNP, reported genome-wide only by its Bayesian scan. Nine CEU proxies at r² >= 0.8,
+# rs651007 (r² 0.94) the one Timmers' Figure 4 reads. In Timmers 2019's, Zenin 2019's and FinnGen R11's summary
+# statistics at the lead, in Deelen 2019's look-up table; not in Wright 2019's tables, nor in Foote 2025's deposits.
+locus_id: 59
+locus_name: ABO
+verdict: re-tiered
+verdict_reason: >-
+  Tier C, from the seed's B, with no genome-wide result at the locus in any lifespan, longevity or multivariate ageing
+  study (R-TIER-4). Put to the lead, since D27.3 named ABO among the loci to be read as row 51 (B), which rested on
+  Foote 2025's frailty factor being genome-wide at its lead; here Foote is untested: the general factor's and
+  factors 2 to 4's deposits hold no SNP within 90 kb of the lead (factor 3's file the very one read at row 51, so an
+  absence in the deposit, not a lost fetch), factors 1, 5 and 6 hold neither the lead nor a proxy, and Open Targets has
+  no Foote set within 3 Mb. The alternative, B on the paper's own call, rests on the Bayes-factor P, which is never the
+  study's P (row 6). In Timmers 2019's million parental lives C, about 81 in 100 European chromosomes, adds 0.22 years
+  per copy at a conventional P of 6.3e-6 (UK Biobank and LifeGen on the same side): suggestive, and the strongest SNP
+  within 300 kb. The paper calls ABO genome-wide (Bayes-factor P 1.9e-8, informed by LDL and coronary disease) and
+  replicated, on Figure 4's look-up at rs651007 (r² 0.94) in Deelen 2014 and Broer 2015: one-sided P 0.0215, Alpha
+  1.12. Those cohorts are largely Deelen 2019's, which leans C's way at the 90th percentile (OR 1.047, P 0.062,
+  one-sided 0.031, nominal) and is flat at the 99th (OR 1.010, P 0.78; its cohorts disagree, heterogeneity P 0.0046);
+  counted once. Neither is a red flag (D21, D25.3): the 99th, from Timmers' effect, has power 0.90 and heterogeneity P
+  0.026 under APOE's factor but power 0.34 under the mean factor; the 90th has heterogeneity P 0.067 and leans C's
+  way. FinnGen's deaths lean C's way (P 0.43, one-sided 0.22; power 0.78 under APOE's factor, heterogeneity P 0.15),
+  no flag. Healthspan in Zenin 2019 goes C's way, nominal (P 0.0017; UK Biobank, overlapping the discovery). Zenin's
+  own ABO look-up and Fortney 2015's exceptional-longevity scan are at rs514659 (r² 0.42; iGWAS P 2.5e-7, not
+  genome-wide), named, not counted. A suggestive scoring-class result with nominal look-ups its way: C, as row 54. The
+  mechanism is heart and vessels: T, the derived allele, raises venous thromboembolism (OR 1.40, P 4e-169), coronary
+  disease (OR 1.08) and myocardial infarction (OR 1.09) and raises LDL cholesterol, the priors Timmers' scan used;
+  association at one haplotype, not a mediator test. The locus is broad besides: blood counts (T lowers haemoglobin
+  and white cells), hundreds of plasma proteins, allergy (T raises allergic rhinitis), so no trade-off for C is
+  quoted. Age of action is MIDLIFE, DIRECT: Timmers' age moderator passes the paper's own 5 % FDR (P 3.9e-4, Q
+  0.0086), the effect largest before 60 in both parents and near nothing at 70 to 90, as the paper says of ABO; the
+  sex moderator does not pass (Q 0.73). A MIDLIFE cardiovascular locus with LDL among its priors is preventable, an
+  LDL test a doctor orders (as row 6). No credible set of a scoring-class study holds the lead or sits at ABO: C4.
+  The lead is in 510 other sets (proteins, lipids, blood counts, thrombosis, coronary disease), most giving ABO a
+  locus-to-gene about 0.58, but with no longevity set nothing is assessed for the row's claim: E4, no gene named, ABO
+  in prose only (as rows 27 and 56). C/C, the commonest genotype (about 66 in 100), is the reference; C is the common
+  non-risk allele at a disease locus (PROTECT:ABSENCE_OF_RISK). The evidence is European; T is as common in East
+  Asians (0.19), untested there.
+axes:
+  tier: {value: C, cites: [pmid-30642433#q256, pmid-30642433#q258, pmid-30642433#q42, pmid-30642433#q257, pmid-30642433#q259, pmid-30642433#q2, pmid-31413261#q153, pmid-31413261#q154, pmid-31413261#q2, db-finngen-r11#q34, pmid-30729179#q82, db-gwascatalog-2026.10.29#q374, db-opentargets-26.09#q744, db-opentargets-26.09#q745, db-opentargets-26.09#q746, db-ensembl-116#q416, db-ensembl-116#q417]}
+  mechanism: {value: heart_vessels, cites: [pmid-30642433#q256, db-gwascatalog-2026.10.29#q362, db-gwascatalog-2026.10.29#q363, db-gwascatalog-2026.10.29#q364, db-gwascatalog-2026.10.29#q365, db-gwascatalog-2026.10.29#q366, db-gwascatalog-2026.10.29#q367, db-gwascatalog-2026.10.29#q368, db-gwascatalog-2026.10.29#q369]}
+  pleiotropy: {values: ["mech:cvd", "mech:lipids", broad], cites: [db-gwascatalog-2026.10.29#q362, db-gwascatalog-2026.10.29#q363, db-gwascatalog-2026.10.29#q364, db-gwascatalog-2026.10.29#q365, db-gwascatalog-2026.10.29#q368, db-gwascatalog-2026.10.29#q369, db-gwascatalog-2026.10.29#q370, db-gwascatalog-2026.10.29#q371, db-gwascatalog-2026.10.29#q372, db-gwascatalog-2026.10.29#q373, db-gwascatalog-2026.10.29#q374]}
+  age_of_action: {value: MIDLIFE, confidence: DIRECT, cites: [pmid-30642433#q260, pmid-30642433#q5, pmid-30642433#q261, pmid-30642433#q262, pmid-30642433#q263, pmid-30642433#q264, pmid-30642433#q265, pmid-30642433#q267, pmid-30642433#q268, pmid-30642433#q269, pmid-30642433#q270, pmid-30642433#q271]}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
+            cites: [pmid-30729179#q82, pmid-30642433#q256, pmid-30642433#q258, pmid-31413261#q153, pmid-30642433#q259]}
+  actionability: {label: preventable, what: ["act_test:ldl"], who: "act_who:doctor", cites: [pmid-30642433#q256, db-gwascatalog-2026.10.29#q368, db-gwascatalog-2026.10.29#q369, pmid-30642433#q260]}
+  context: {values: [eur_only_evidence], cites: [pmid-30642433#q258, pmid-31413261#q153, pmid-30729179#q82, db-ensembl-116#q415]}
+flags:
+  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [db-gwascatalog-2026.10.29#q362, db-gwascatalog-2026.10.29#q363, db-gwascatalog-2026.10.29#q364, db-gwascatalog-2026.10.29#q365, db-ensembl-116#q411, db-ensembl-116#q413]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q744, db-opentargets-26.09#q745, db-opentargets-26.09#q746]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q744, db-opentargets-26.09#q745, db-ensembl-116#q418]}
+variants:
+  - rsid: rs2519093
+    gene: ""
+    phenotype: ABO region, blood clots, coronary disease
+    trait_efo_id: EFO_0007796
+    effect_allele: C
+    effect_size: 0.2244
+    effect_measure: beta
+    stat_significance: suggestive
+    direction: protective
+    genotypes:
+      - genotype: C/C
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA region, in the blood-group gene ABO on chromosome 9
+          (about 66 in 100 people of European ancestry do). This is the reference the other combinations are
+          compared with: you do not carry the version that goes with a higher chance of blood clots and heart
+          disease. The finding comes from people of European ancestry; less is known elsewhere.
+      - genotype: C/T
+        state: risk
+        conclusion: >-
+          You carry one copy of a less common version of this DNA region, in the blood-group gene ABO on chromosome
+          9 (about 30 in 100 people of European ancestry do). It goes with a higher chance of blood clots in the
+          veins, somewhat more heart disease and slightly higher LDL cholesterol. In a very large study it also went
+          with parents living a few months less, mainly through deaths before about 70; this is early evidence, not
+          a settled finding, and the effect is small: a tendency, not destiny. A standard blood test your doctor can
+          order shows your actual LDL cholesterol, which matters more than this DNA result.
+      - genotype: T/T
+        state: risk
+        conclusion: >-
+          You carry two copies of a less common version of this DNA region, in the blood-group gene ABO on
+          chromosome 9 (about 3 in 100 people of European ancestry do). Each copy goes with a higher chance of blood
+          clots in the veins, somewhat more heart disease and slightly higher LDL cholesterol. In a very large study
+          each copy also went with parents living a few months less, mainly through deaths before about 70; this is
+          early evidence, not a settled finding, and the effect is small: a tendency, not destiny. A standard blood
+          test your doctor can order shows your actual LDL cholesterol, which matters more than this DNA result.
+studies:
+  - rsid: rs2519093
+    note: pmid-30642433
+    quote: q256
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the 26 LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 1012240
+    sample_unit: lives
+    stat_significance: suggestive
+    p_value: "6.3E-06"
+    p_value_num: 6.3e-06
+    effect_size: 0.2244
+    effect_measure: beta
+    effect_unit: years of life per C allele in self (parental estimate doubled)
+    effect_allele: C
+    direction: protective
+    statistical_test: "Cox-residual GWAS, common effect sizes across sexes: Table 2's CES P (q256), the same as the summary statistics' (q258, n 635,499, direction --, T shortening life); the LDL- and CAD-informed Bayesian scan's BF P 1.9E-08 is not the study's P (q42, q256); nothing within 300 kb reaches 5e-8; Figure 4's longevity look-up at rs651007 (r² 0.94) one-sided P 0.0215, Alpha 1.12 (q259), largely Deelen 2019's people; age moderator P 3.9e-4, Q 0.0086, sex P 0.043, Q 0.73 (q260); FinnGen R11 death C −0.0072, P 0.43, one-sided 0.22 (db-finngen-r11#q34): under APOE's factor power 0.78, heterogeneity P 0.15, under Figure 4's mean power 0.26, P 0.83, no red flag (D21, D25.3)"
+    curator: claude-opus-5-5
+  - rsid: rs2519093
+    note: pmid-31413261
+    quote: q153
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis; no UK Biobank data)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.06161"
+    p_value_num: 0.06161
+    p_one_sided: 0.0308
+    effect_size: 1.0467603357472872
+    effect_measure: OR
+    effect_unit: odds of survival to the 90th percentile per C allele
+    effect_allele: C
+    direction: protective
+    statistical_test: "Deelen 2019's Supplementary Data 1 look-up of Timmers 2019's ABO SNP (listed with the Bayesian P 1.9e-8), two-sided P printed, one-sided 0.031 (derived, D25.13), I² 20.7; D21 from Timmers' β: power 1.00, heterogeneity P 0.067 (APOE's factor), power 0.58 (mean factor), no flag; 99th percentile OR 1.010 (0.94-1.09), P 0.78, I² 59.3, heterogeneity P 0.0046 across cohorts: power 0.90, heterogeneity P 0.026 under APOE's factor, power 0.34, P 0.36 under the mean factor, so a flag under one calibration only, none (D25.3); independent of UK Biobank (q2)"
+    curator: claude-opus-5-5
+  - rsid: rs2519093
+    note: pmid-30729179
+    quote: q82
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "0.0017"
+    p_value_num: 0.001738
+    effect_size: -0.0195
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per C allele, the file's T effect negated (negative = later)
+    effect_allele: C
+    direction: protective
+    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), -log10 P 2.76; UK Biobank, overlapping Timmers' discovery; Zenin's own ABO look-up (q3) is at rs514659 (r² 0.42), not this SNP"
+    curator: claude-opus-5-5

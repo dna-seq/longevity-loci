@@ -2728,3 +2728,27 @@ probability, the set's highest, is 0.341: C2. Locus-to-gene gives ALDH1B1 0.476,
 SHB 0.091; `coloc-06b8a7a353e4c3bffd5e0ebbe8a5970a.json` finds no colocalisation (all study types). Assessed, no
 criterion met: E3, no gene named. The variant search finds the same record (`search-rs10973748.json`, total 1,
 9_38322519_G_T). For row 58.
+
+## Reading 2026-11-12, supplement
+
+> [q743] data.search.hits[0] id 9_133266456_T_C entity variant
+
+The variant search: rs2519093 is 9_133266456_T_C. For row 59.
+
+> [q744] data.variant.credibleSets count 510
+
+The lead sits in 510 credible sets (`variant-9_133266456_T_C-all.json`, `-all-p2.json`, all read): proteins, lipids,
+blood counts, thrombosis and coronary disease, most with ABO's locus-to-gene about 0.58; none from a lifespan,
+longevity, healthspan or frailty study. For row 59.
+
+> [q745] data.credibleSets count 107
+
+Every set of eleven longevity studies (GCST009890, GCST006697, GCST006701, GCST006702, GCST011100, GCST009450,
+GCST009448, GCST007406, GCST90321079, GCST008598, GCST008599: Timmers 2019 and 2020, Pilling 2017, Wright 2019, Zenin
+2019, Rosoff's mvAge, Deelen 2019; `credibleSets-longevity11-all.json`): 107 sets, none on chromosome 9 between 130
+and 136 Mb. For row 59.
+
+> [q746] data.credibleSets count 426
+
+Every set of Foote 2025's general frailty factor and six factors (`credibleSets-foote7-all.json`): 426, the nearest to
+ABO at 9:136,626,337, 3.4 Mb away. For row 59.
