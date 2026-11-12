@@ -8,10 +8,10 @@ locus_id: 58
 locus_name: ALDH1B1
 verdict: kept
 verdict_reason: >-
-  Tier B, the seed's, kept on row 31's ruling (D25.10) and capped there with replication_failed. Two grounds for
-  D are put to the lead, either sufficient: whether this discovery is an overfit source (as 41), and whether Deelen's
-  99th percentile, one nominal look of three at the lead (the LGP inside it, its own 90th a failing sample), counts
-  for D25.1. Gurinovich 2021 compared 1,320 New England
+  Tier B, the seed's, kept on row 31's ruling (D25.10) and capped there with replication_failed. The lead kept
+  B with the flag (D28.6): NECS's twofold control deficit across the haplotype is R-TIER-2's confounding, not row 41's
+  disowned genotypes, and R-TIER-2 is lifted by Deelen's 99th percentile (one-sided 0.043), a pass in a sample
+  independent of NECS; its flat 90th does not cancel it, the 99th's cases being the more extreme. Gurinovich 2021 compared 1,320 New England
   Centenarian Study centenarians (median age 104) with 2,899 European-ancestry controls (306 NECS referents and 2,593
   from Illumina's control repository, matched by principal components, ages not given), imputed to the HRC panel.
   T, the coded allele, is in 5.87 % of the centenarians' alleles and 3.12 % of the controls', score Z +5.97, P

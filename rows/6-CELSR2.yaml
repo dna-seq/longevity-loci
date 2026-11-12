@@ -21,8 +21,8 @@ verdict_reason: >-
   failure, then, which caps the row at B (§4.1, D21) and carries
   `replication_failed` (D25.13), though AncestryDNA replicates (the 67/71 rule). This row was written before that sheet
   was first read (for row 71); the D27.9 sweep found it. The two arms pooled give about P 1.1e-6, which is why Timmers 2019's million
-  lives give only 1.4e-6 by the conventional test (genome-wide only in its lipid-informed Bayesian scan, whose P is
-  not counted here). Deelen 2019's 90th and 99th percentiles are null (P 0.16 to 0.52, all on the lifespan-raising
+  lives give only 1.4e-6 by the conventional test (genome-wide only in its lipid-informed Bayesian scan, a B ground by
+  D28.7 that the row, B on other grounds, does not need). Deelen 2019's 90th and 99th percentiles are null (P 0.16 to 0.52, all on the lifespan-raising
   side); calibrated from Pilling's effect (D27.9) they flag under APOE's factor (power 1.00 and 0.99, heterogeneity
   P 0.0007 and 0.007) and not under the loci's mean factor (power 0.83, P 0.18; 0.50, P 0.33), so no flag there
   (D25.3); healthspan is nominal (Zenin 2019's

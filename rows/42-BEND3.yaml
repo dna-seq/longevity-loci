@@ -29,8 +29,9 @@ verdict_reason: >-
   1's SD of the summed z-scores (1 unit, 7.79 years of the parents' average age at death; 0.0197 × 7.79 × 2 / 10, about
   0.031, derived), LifeGen without UK Biobank fails on power 0.98 and heterogeneity P 0.033, and Deelen's 90th flags
   under both factors (mean factor power 0.91, P 0.044), which with no replication would make the row D (D22.3). The
-  conversion is mine, not printed, and the attained-age β is Timmers' own column for this SNP, so B holds as a default
-  and the choice is put to the lead (D27.9's edge: a discovery whose genome-wide analysis is on another scale) (its APOE factor borrowed from the 90th's ε4
+  conversion is mine, not printed, and the attained-age β is Timmers' own column for this SNP, so the flag rests on a
+  conversion no source prints and is unknown, and B holds (D28.1, the lead's ruling on D27.9's edge: a discovery whose
+  genome-wide analysis is on another scale) (its APOE factor borrowed from the 90th's ε4
   line, as at row 37; no 99th ε4 line is cached). FinnGen's death endpoint is null and leans the other
   way (A β −0.0035, P 0.64); under APOE's factor within FinnGen, from the same β, its power is about 0.79, short of 0.8
   (heterogeneity P 0.013), and under the mean factor 0.27, so it is no red flag. Wright 2019's AncestryDNA fathers,

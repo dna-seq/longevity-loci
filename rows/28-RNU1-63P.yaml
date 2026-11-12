@@ -3,7 +3,7 @@
 # Asians. A novel lead of Rosoff 2023's mvAge (Table 1, Supplementary Tables 6 and 7, locus 13). In Timmers 2019's,
 # Zenin 2019's and Deelen 2019's summary statistics at the lead itself; in Wright 2019's tables only through
 # rs1481245 (r² 0.51). The seed's second rsID, rs13141210 (111 kb away, r² 0.095), is a separate mvAge signal in the
-# same Rosoff locus; it is not read into this row's axes, and whether it gets a row of its own is put to the lead.
+# same Rosoff locus; it is not read into this row's axes, it waits in the scout's queue as a candidate row (D25.6).
 locus_id: 28
 locus_name: RNU1-63P
 verdict: kept
@@ -41,7 +41,7 @@ verdict_reason: >-
   in East Asians (0.94), untested there.
   rs13141210, the seed's second rsID here, looks like a B of its own under D16 (mvAge 1.5e-8, T healthier; lifespan
   T P 9e-6), nominal in AncestryDNA at good tags (rs2164300 r² 0.94, rs12506221 r² 0.86; raw P 0.0005 to 0.001 in
-  fathers and mothers, direction not read), with its own traits (education, body fat, smoking): put to the lead.
+  fathers and mothers, direction not read), with its own traits (education, body fat, smoking): a candidate row in the scout's queue (D25.6).
   Timmers 2022's aging-GIP1 is genome-wide here through rs10434248 (P 8e-9), rs13141210's tag (r² 0.84 EUR, 0.15
   EAS, its A with T), not the lead's (r² 0.13): a second multivariate scan for rs13141210, whose own-survival look-up
   in FinnGen and Biobank Japan does not pass (A 0.092 years, one-sided P 0.089), a weak test of rs13141210: Japan

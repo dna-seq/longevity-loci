@@ -11,8 +11,8 @@ verdict: kept
 verdict_reason: >-
   Tier B, as the seed has it. Nothing at the lead itself is genome-wide: in Timmers 2019's million parental lives A,
   the minor allele (17 % in Europeans), adds 0.28 years per copy at a conventional P of 5.8e-8 (both arms on the same
-  side); the paper calls TMEM18 genome-wide only through its BMI-informed Bayesian scan, whose P (7.0e-10) is not
-  counted here. Its close proxy rs66906321 (r² 0.89, T riding with A) reaches 2.3e-8 in the same study's summary
+  side); the paper calls TMEM18 genome-wide only through its BMI-informed Bayesian scan, whose P (7.0e-10) is a
+  B ground by D28.7, never A; the row is B on the proxy below and does not move. Its close proxy rs66906321 (r² 0.89, T riding with A) reaches 2.3e-8 in the same study's summary
   statistics, past both 5e-8 and the paper's own 2.5e-8, though the paper does not list it and its Methods give no
   filter that explains why; Rosoff 2023's mvAge, which pools the same parents, puts T on the healthier-ageing side at
   4e-8 (GWAS Catalog record; the paper's text does not list the SNP). The one independent sample replicates at a third
@@ -112,7 +112,7 @@ studies:
     effect_unit: years of life per A allele in self (parental estimate doubled)
     effect_allele: A
     direction: protective
-    statistical_test: "Cox-residual GWAS, common effect sizes across sexes: Table 2's CES P (q38), the same as the summary statistics' (q39, n 638,111, direction ++ in UK Biobank and LifeGen); the BMI-informed Bayesian scan's BF P 7.0E-10 is not the study's P; replication in Deelen 2014 and Broer 2015 P 0.41, same side (q41)"
+    statistical_test: "Cox-residual GWAS, common effect sizes across sexes: Table 2's CES P (q38), the same as the summary statistics' (q39, n 638,111, direction ++ in UK Biobank and LifeGen); the BMI-informed Bayesian scan's BF P 7.0E-10 is the paper's call, a B ground by D28.7, not counted here as the conventional test's P; replication in Deelen 2014 and Broer 2015 P 0.41, same side (q41)"
     curator: claude-opus-5-5
   - rsid: rs6744653
     note: pmid-30642433
