@@ -63,7 +63,8 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
   false for the plugin's 0.7.1: no rehearsal until the plugin moves to 0.8.
 - `first seating:` report to the seat-builder: sent.
 - On waking: read `docs/format08_reference/` (just-dna-format 0.8's longevity reference example and the compiler's longevitymap v2 shape audit; the lead, 639310707). It notes Timmers 2019 contradicting itself on effect alleles (639310710), which bears on LPA and CELSR2.
-- For the projection, on waking: rows at effector E3 name no gene (`gene: ""`, 57, 67, 80; requirements §4.2/§6.2),
+- For the projection, on waking: rows at effector E3 or E4 name no gene (`gene: ""`; E3 57, 67, 80, 53; E4 44, 48, 54,
+  55, 60; requirements §4.2/§6.2),
   and a `multivariate_healthspan_lifespan` study supports with allele, direction and P but no effect size (D15,
   67's Timmers 2020), and so does a `meta_analysis` study with arm effects only (D20, 21 IP6K1 at tier A). Check
   that a tier A/B variant whose supporting studies carry no effect size still passes the format. Check both land in 0.8's variants and studies tables as the format allows. Likewise the repo's own study
@@ -92,6 +93,9 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
   scan, P 1.9e-8, `significant`, D28.7, e4ec1d0), beside the same paper's conventional 6.3e-6. Check the format has
   a place to say which P it is, so the module never shows it as a plain GWAS P. 59 is also a trade-off row
   (descriptive, D18.2): check how the module carries a trade-off's negatives.
+- A sex-specific tier B row whose effect is on a Martingale residual of own survival (61 CELF2, Park 2025's
+  women, rs547541271 T +0.0369, `sex_specific:f`, 2bbd85a; row 13's shape). Check the format's effect_measure and
+  stratum take both, else the export leaves effect_size empty rather than call it a beta.
 - Plugin pinned at v0.48.6 (the liaison, f69789a; toolchain unchanged, format 0.7.1): `validate_module` returns
   `warnings_summary` and `carried`; the polygon's 409 is named as the instance's format skew; the GWAS fix
   (RM428) is on the compiler's main, unreleased. The new session after waking loads the new pin.
