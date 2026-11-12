@@ -66,3 +66,4 @@ RM1 the export (after the compiler's 0.8 cut, the registry deploy and the plugin
 (9d42ccb, with `loci fetch`), its auditor's findings fixed in 47abe43. The plugin stays enabled for every seat, the person's call (2026-11-05: "3"), about 2.5k
 tokens a session while its 81 tools stay deferred.
 - reflect after 2026-11-19: classes/base/BASE.md as of v0.1.191 (wake rules spelled out, secrets never repeated, the organisation's script account, handout renamed handoff).
+- Milestones duty held acting since 2026-11-12 (L139, v0.1.192; no pm seat): the state post's source is docs/seats/LEAD_STATE.md, kept with `watchdog.sh keep lead state '#longevity-loci>state' FILE` whenever where-it-stands, a headline or the next actions change; one post per landed result in #longevity-loci>milestones.
