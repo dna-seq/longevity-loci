@@ -5,13 +5,21 @@ locus_id: 6
 locus_name: CELSR2
 verdict: kept
 verdict_reason: >-
-  Tier A confirmed, the seed's single-track A (§12) now resting on the papers. Genome-wide significant for parents'
-  attained age in UK Biobank (Pilling 2017, rs602633, P 2.7e-8; fathers 3.6e-9), and replicated in AncestryDNA, the
-  mostly American sample outside UK Biobank, with the same allele: fathers P 1.7e-3 and mothers P 7.5e-3, with no
-  heterogeneity against the UK Biobank arm (P 0.19 and 0.78), the fathers' meta-analysis reaching P 4.4e-9 (Wright
-  2019). Weaker elsewhere, on the same side each time: in Timmers 2019's million lives the conventional P is only
-  1.4e-6 (genome-wide only in its lipid-informed Bayesian scan, whose P is not counted here); Deelen 2019's 90th and
-  99th percentiles are null (P 0.16 to 0.52, all on the lifespan-raising side); healthspan is nominal (Zenin 2019's
+  Tier B, down from the seed's single-track A (§12), on red-flag heterogeneity, row 53's shape. Genome-wide
+  significant for parents' attained age in UK Biobank (Pilling 2017, rs602633, P 2.7e-8; fathers 3.6e-9), and
+  replicated in AncestryDNA, the mostly American sample outside UK Biobank, with the same allele: fathers P 1.7e-3
+  and mothers P 7.5e-3, with no heterogeneity against the UK Biobank arm (P 0.19 and 0.78), the fathers'
+  meta-analysis reaching P 4.4e-9 (Wright 2019). But in LifeGen with UK Biobank's lives removed, the other sample
+  independent of the discovery, Pilling's rs602633 is flat (Timmers 2019's Figure 2 source data: T +0.0002, SE
+  0.0096, against the discovery's +0.0296, SE 0.0053; one-sided P 0.49), at power about 0.92 and heterogeneity P
+  about 0.0075 (derived): a powered failure on the same scale, which caps the row at B (§4.1, D21) and carries
+  `replication_failed` (D25.13), though AncestryDNA replicates (the 67/71 rule). This row predates that sheet's
+  reading; the D27.9 sweep found it. The two arms pooled give about P 1.1e-6, which is why Timmers 2019's million
+  lives give only 1.4e-6 by the conventional test (genome-wide only in its lipid-informed Bayesian scan, whose P is
+  not counted here). Deelen 2019's 90th and 99th percentiles are null (P 0.16 to 0.52, all on the lifespan-raising
+  side); calibrated from Pilling's effect (D27.9) they flag under APOE's factor (power 1.00 and 0.99, heterogeneity
+  P 0.0007 and 0.007) and not under the loci's mean factor (power 0.83, P 0.18; 0.50, P 0.33), so no flag there
+  (D25.3); healthspan is nominal (Zenin 2019's
   summary statistics, P 1.2e-4). The lifespan-raising allele is the rarer one, which lowers LDL cholesterol, so the
   protection is a presence. The lead is the seed's rs646776 rather than a study's reported SNP: it sits in Pilling's
   fathers' credible set at PIP 0.11 (the reported SNPs at 0.05 to 0.07) and at r² 0.94 to Wright's lead. Effector E3,
@@ -23,7 +31,7 @@ verdict_reason: >-
   way round from its table; the table, the frequencies and the biology agree, and are followed. All four seed rsIDs
   are one signal here.
 axes:
-  tier: {value: A, cites: [pmid-29227965#q10, pmid-31484785#q13, pmid-31484785#q15, pmid-31484785#q16]}
+  tier: {value: B, cites: [pmid-29227965#q10, pmid-31484785#q13, pmid-31484785#q15, pmid-31484785#q16, pmid-30642433#q249, pmid-30642433#q12, pmid-30642433#q11]}
   mechanism: {value: heart_vessels, cites: [pmid-30642433#q11, pmid-29227965#q6]}
   pleiotropy: {values: ["mech:cvd"], cites: [pmid-30642433#q11]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: [pmid-30642433#q205, pmid-30642433#q206, pmid-30642433#q207, pmid-30642433#q208, pmid-30642433#q209, pmid-30642433#q210, pmid-30642433#q211, db-ensembl-116#q249]}
@@ -33,6 +41,7 @@ axes:
   context: {values: [eur_only_evidence], cites: [pmid-29227965#q10, pmid-31484785#q13]}
 flags:
   - {token: "PROTECT:PRESENCE", cites: [pmid-29227965#q11]}
+  - {token: replication_failed, cites: [pmid-30642433#q249, pmid-30642433#q12]}
   - {token: "causal:C2", cites: [db-opentargets-26.09#q29]}
   - {token: "effector:E3", cites: [db-opentargets-26.09#q30, db-opentargets-26.09#q321, db-opentargets-26.09#q322, db-opentargets-26.09#q323, db-opentargets-26.09#q324, db-opentargets-26.09#q325, db-opentargets-26.09#q326, db-opentargets-26.09#q327, db-opentargets-26.09#q328, db-opentargets-26.09#q329, db-opentargets-26.09#q330, db-opentargets-26.09#q369]}
   - {token: "ld_proxy_of:rs646776", cites: [db-opentargets-26.09#q29, db-opentargets-26.09#q31]}  # rs602633, rs4970836, rs599839 in the set
@@ -63,18 +72,18 @@ variants:
           You carry one copy of a less common version of this DNA region (about 34 in 100 people of European
           ancestry do). This version goes with lower LDL cholesterol, the "bad" cholesterol, and in large British
           and American studies its carriers had parents who lived on average a little over a month longer, most
-          likely through less heart disease. The finding is well established, but the effect is small and it is a
-          tendency, not a guarantee. A standard cholesterol test your doctor can order shows your actual LDL
-          level, which matters far more than this DNA result.
+          likely through less heart disease. Another large study did not see the effect, so it is a likely finding
+          rather than a settled one; the effect is small, a tendency, not a guarantee.
+          A standard cholesterol test your doctor can order shows your actual LDL level, which matters far more than this DNA result.
       - genotype: C/C
         state: protective
         conclusion: >-
           You carry two copies of a less common version of this DNA region (about 5 in 100 people of European
           ancestry do). This version goes with lower LDL cholesterol, the "bad" cholesterol, and in large British
           and American studies each copy went with parents living on average a little over a month longer, most
-          likely through less heart disease. The finding is well established, but the effect is small and it is a
-          tendency, not a guarantee. A standard cholesterol test your doctor can order shows your actual LDL
-          level, which matters far more than this DNA result.
+          likely through less heart disease. Another large study did not see the effect, so it is a likely finding
+          rather than a settled one; the effect is small, a tendency, not a guarantee.
+          A standard cholesterol test your doctor can order shows your actual LDL level, which matters far more than this DNA result.
 studies:
   - rsid: rs646776
     note: pmid-29227965
@@ -113,6 +122,24 @@ studies:
     effect_allele: G
     proxy_rsid: rs4970836
     statistical_test: "Conventional (CES) Cox-residual GWAS P from Table 2 source data 2; the Bayes-factor P 1.6E-09 of the lipid- and CAD-informed iGWAS is not counted"
+    curator: claude-opus-5-5
+  - rsid: rs646776
+    note: pmid-30642433
+    quote: q249
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (LifeGen cohorts, UK Biobank's lives removed)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.490618871450066"
+    p_value_num: 0.4906
+    effect_size: 0.00226
+    effect_measure: beta
+    effect_unit: years of life per copy in self (parental estimate doubled), per T allele at the proxy
+    effect_allele: T
+    direction: protective
+    proxy_rsid: rs602633
+    statistical_test: "Replication of Pilling 2017's rs602633 in LifeGen excluding UK Biobank (Figure 2 source data 1, sample b, q12); the sheet's P is already one-sided (as at q248), so no p_one_sided is entered; discovery +0.0296 (SE 0.0053), 0.296 years, P 2.7E-08; replication +0.0002 (SE 0.0096); D21: one-sided power about 0.92, heterogeneity P about 0.0075 with both SEs (derived), a red flag; N not given per SNP"
     curator: claude-opus-5-5
   - rsid: rs646776
     note: pmid-31484785
@@ -176,7 +203,7 @@ studies:
     effect_unit: odds ratio of reaching the 90th percentile, per T allele at the proxy
     effect_allele: T
     proxy_rsid: rs602633
-    statistical_test: "Look-up of Pilling's rs602633 in Supplementary Data 1; same side, not nominal; rs4970836 (P 0.20) and rs646776 (P 0.16) agree (q7, q8)"
+    statistical_test: "Look-up of Pilling's rs602633 in Supplementary Data 1; same side, not nominal; rs4970836 (P 0.20) and rs646776 (P 0.16) agree (q7, q8). D21 from Pilling's +0.0296 (pmid-30642433#q249; D27.9, derived): APOE's factor power 1.00, heterogeneity P 0.0007; the mean factor power 0.83, P 0.18; a flag under one calibration only, so none (D25.3)"
     curator: claude-opus-5-5
   - rsid: rs646776
     note: pmid-31413261
@@ -196,5 +223,5 @@ studies:
     effect_unit: odds ratio of reaching the 99th percentile, per T allele at the proxy
     effect_allele: T
     proxy_rsid: rs602633
-    statistical_test: "Look-up of Pilling's rs602633 in Supplementary Data 1; same side, not nominal; rs4970836 (P 0.31) and rs646776 (P 0.30) agree (q7, q8)"
+    statistical_test: "Look-up of Pilling's rs602633 in Supplementary Data 1; same side, not nominal; rs4970836 (P 0.31) and rs646776 (P 0.30) agree (q7, q8). D21 from Pilling's +0.0296 (D27.9, derived): APOE's factor power 0.99, heterogeneity P 0.007; the mean factor power 0.50, P 0.33; a flag under one calibration only, so none (D25.3)"
     curator: claude-opus-5-5

@@ -206,6 +206,16 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   (639598849): E3, GULOP the candidate in prose (a colocalisation its own source QC-flags names no effector; 36's
   carried no flag); `general_ageing` kept; the calibration from the discovery's effect kept, and every Pilling-discovery
   row is swept under it, 6 first, each tier move reported to the lead.
+- **D27.9 sweep** (2026-11-12; the lead, 639598849): red flags recalibrated from Pilling's own effect (Timmers'
+  Figure 2 discovery column, Timmers' scale) at every row whose discovery is Pilling's: 5, 6, 37, 42, 53, 67, 71, 81.
+  Tier move: 6 A to B, and not from the calibration: the sheet's LifeGen-without-UK-Biobank line for rs602633 was never
+  read (row 6 predates the sheet) and fails on the same scale (power 0.92, heterogeneity P 0.0075); `replication_failed`.
+  Deelen at 6, 81 and 42 flags under APOE's factor only (now written into the tests); 67 and 71 replicate at Deelen, no
+  new flag; 5 has no calibrated test (its sheet line's SE 0.055 is unpowered); 53 was done on the rule. 37 holds on a
+  default put to the lead: Pilling's both-parents effect (P 3.5e-6, β estimated from the P) gives a flag under APOE
+  only; the mothers' β would flag the 90th under both. Rows 8, 12, 46, 57, 80, 93 cite Pilling but rest on another
+  discovery. Lesson: check every row's lead and proxies against Figure 2's sheet, not only new rows (one grep; the
+  sheet's other uncited lines are 5's, unpowered, and 57's, which replicates at one-sided 3e-4).
 - **D27 applied** (2026-11-11; the lead, 639592692), one commit. 51's Foote entry to `MULTIVARIATE_AGEING`, B on
   D27.3 (healthspan + kept, read for the cell as at 43); 43's and 27's prose call Foote's factor multivariate; 49's
   dataset 2 is the discovery's own heterogeneity (D27.1), not a D25.1 test; 52 descriptive (D27.5); 50 and 48 stood.

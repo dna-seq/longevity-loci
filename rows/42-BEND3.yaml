@@ -21,12 +21,14 @@ verdict_reason: >-
   replicates and nothing fails with power. LifeGen without UK Biobank's lives (Timmers' Figure 2 source data, sample
   b) leans C's way at one-sided P 0.138; against Pilling's attained-age β, the discovery column there, its power is
   about 0.71 and heterogeneity P about 0.34, so no red flag. Deelen 2019's percentiles lean C's way and are flat
-  (90th P 0.49, 99th P 0.29; one-sided about 0.24 and 0.14); under D25.3 the 90th flags by APOE's factor (power
-  0.98, heterogeneity P 0.034) and not by the loci's mean factor (power 0.45, P 0.44), and a flag that only one
-  calibration raises is no flag; the 99th flags under neither (its APOE factor borrowed from the 90th's ε4
+  (90th P 0.49, 99th P 0.29; one-sided about 0.24 and 0.14); calibrated from Pilling's attained-age β (0.0185, the
+  discovery's effect on Timmers' scale, Figure 2's column; the genome-wide age-at-death β is on another scale; D27.9),
+  the 90th flags by APOE's factor (power 1.00, heterogeneity P 0.015) and not by the loci's mean factor (power 0.56, P
+  0.32), and a flag that only one calibration raises is no flag (D25.3); the 99th flags under neither (power 0.86, P
+  0.17; 0.31, P 0.94) (its APOE factor borrowed from the 90th's ε4
   line, as at row 37; no 99th ε4 line is cached). FinnGen's death endpoint is null and leans the other
-  way (A β −0.0035, P 0.64); under APOE's factor within FinnGen its power is about 0.67, short of 0.8 (heterogeneity
-  P 0.026), so it is no red flag whatever D25.12's uncomputed second factor gives. Wright 2019's AncestryDNA fathers,
+  way (A β −0.0035, P 0.64); under APOE's factor within FinnGen, from the same β, its power is about 0.79, short of 0.8
+  (heterogeneity P 0.013), and under the mean factor 0.27, so it is no red flag. Wright 2019's AncestryDNA fathers,
   at rs9384641 1.1 kb away, lean C's way (its C travels with the lead's C by the frequencies, derived; raw P 0.077,
   one-sided 0.038, about 0.052 after Wright's genomic control): not counted, as the tag's r² to the lead is 0.34 and
   it does not pass after genomic control. Healthspan is flat (Zenin 2019, P 0.95), so 0; exceptional survival is 0
@@ -171,7 +173,7 @@ studies:
     effect_unit: odds of reaching the 90th percentile, per C allele (95 % CI 0.97 to 1.06)
     effect_allele: C
     direction: protective
-    statistical_test: "Supplementary Data 1's look-up of Pilling's lead (q103), I² 0; the summary statistics (GWAS Catalog GCST008598) print A β −0.0145, SE 0.0208, effective N 11,615 (q104); one-sided about 0.24. D25.3 against Timmers' β (derived): APOE factor 4.84, expected log OR 0.076 per C, power 0.98, heterogeneity P 0.034, a flag; mean factor (pmid-30642433#q92) 0.032, power 0.45, heterogeneity P 0.44, none; so no red flag"
+    statistical_test: "Supplementary Data 1's look-up of Pilling's lead (q103), I² 0; the summary statistics (GWAS Catalog GCST008598) print A β −0.0145, SE 0.0208, effective N 11,615 (q104); one-sided about 0.24. D25.3 against Pilling's attained-age β 0.0185 (pmid-30642433#q219; D27.9, derived): APOE factor 4.84, expected log OR 0.090 per C, power 1.00, heterogeneity P 0.015, a flag; mean factor (pmid-30642433#q92) 0.037, power 0.56, heterogeneity P 0.32, none; so no red flag"
     curator: claude-opus-5-5
   - rsid: rs1627804
     note: pmid-31413261
@@ -188,5 +190,5 @@ studies:
     effect_unit: odds of reaching the 99th percentile, per C allele (95 % CI 0.97 to 1.10)
     effect_allele: C
     direction: protective
-    statistical_test: "Supplementary Data 1's look-up of Pilling's lead (q103), I² 0.3; the summary statistics (GWAS Catalog GCST008599) print A β −0.0348, SE 0.0327, effective N 4,524 (q105); one-sided about 0.14. D25.3 (derived): power 0.75 by APOE's factor (4.84, borrowed from the 90th's ε4 line, q82, as at row 37), 0.25 by the mean factor; heterogeneity P 0.28 and 0.93; no red flag"
+    statistical_test: "Supplementary Data 1's look-up of Pilling's lead (q103), I² 0.3; the summary statistics (GWAS Catalog GCST008599) print A β −0.0348, SE 0.0327, effective N 4,524 (q105); one-sided about 0.14. D25.3 against Pilling's attained-age β (D27.9, derived): power 0.86 by APOE's factor (4.84, borrowed from the 90th's ε4 line, q82, as at row 37), 0.31 by the mean factor; heterogeneity P 0.17 and 0.94; no red flag"
     curator: claude-opus-5-5

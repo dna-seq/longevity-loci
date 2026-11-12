@@ -10,7 +10,8 @@ verdict_reason: >-
   rs17514846 adds 0.18 years per copy, P 0.013 (Timmers 2019's Figure 2 source data), and Timmers 2019 lists the locus
   among the previously unreplicated findings it validates. In Timmers 2019's million lives the lead rs6224 reaches P
   1.3e-10, G adding 0.25 years per copy. Every other look-up leans the same way and does not pass, none a red flag:
-  Deelen 2019's 90th and 99th percentiles (OR 1.03 and 1.04, P 0.13 and 0.25) and the longevity studies of Timmers
+  Deelen 2019's 90th and 99th percentiles (OR 1.03 and 1.04, P 0.13 and 0.25; calibrated from Pilling's effect, D27.9, they flag under APOE's
+  factor only, so not at all, D25.3) and the longevity studies of Timmers
   2019's Figure 4 (P 0.18 one-sided). Wright 2019's AncestryDNA arm has no row for the lead; its fathers'
   meta-analysis holds two nearby clumped SNPs, rs4702 and rs2677737 (AncestryDNA P 0.15 and 0.009, no heterogeneity
   with UK Biobank), whose r² to the lead no cached source gives, so they are named, not scored. Healthspan is 0: Zenin
@@ -150,7 +151,7 @@ studies:
     effect_unit: odds ratio of reaching the 90th percentile, per G allele
     effect_allele: G
     direction: protective
-    statistical_test: "Look-up of Timmers 2019's lead in Supplementary Data 1; same side, not nominal; I² 3.1 %; Pilling's rs17514846 gives OR 1.032, P 0.116 (q17)"
+    statistical_test: "Look-up of Timmers 2019's lead in Supplementary Data 1; same side, not nominal; I² 3.1 %; Pilling's rs17514846 gives OR 1.032, P 0.116 (q17). D21 from Pilling's +0.0275 at rs17514846 (pmid-30642433#q19; D27.9, derived): APOE's factor power 1.00, heterogeneity P 0.0006; the mean factor power 0.87, P 0.27; a flag under one calibration only, so none (D25.3)"
     curator: claude-opus-5-5
   - rsid: rs6224
     note: pmid-31413261
@@ -170,7 +171,7 @@ studies:
     effect_unit: odds ratio of reaching the 99th percentile, per G allele
     effect_allele: G
     direction: protective
-    statistical_test: "Look-up of Timmers 2019's lead in Supplementary Data 1; same side, not nominal; I² 0; Pilling's rs17514846 gives OR 1.051, P 0.123 (q17)"
+    statistical_test: "Look-up of Timmers 2019's lead in Supplementary Data 1; same side, not nominal; I² 0; Pilling's rs17514846 gives OR 1.051, P 0.123 (q17). D21 from Pilling's +0.0275 (D27.9, derived): APOE's factor power 0.99, heterogeneity P 0.03; the mean factor power 0.54, P 0.85; no red flag (D25.3)"
     curator: claude-opus-5-5
   - rsid: rs6224
     note: pmid-30642433

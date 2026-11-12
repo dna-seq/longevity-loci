@@ -20,9 +20,14 @@ verdict_reason: >-
   (D25.13). Read two-sided, neither sample would pass and D25.1 would make the row D; D25.13 settles the reading.
   FinnGen r11's any-death endpoint leans the same way (G toward less death,
   β −0.014, SE 0.010, P 0.16), not significant. At the oldest ages Deelen 2019 is flat at the 90th percentile (OR
-  1.006, P 0.84) and leans the other way at the 99th (OR 0.950, P 0.27); against LifeGen's joint beta (G +0.018, P
-  7.5e-5) the 90th percentile flags under the APOE factor only (power 0.89, heterogeneity P 0.031; the mean factor
-  0.33, 0.34) and the 99th under neither on power (0.60, 0.20), so no flag (D25.3), and exceptional survival is 0.
+  1.006, P 0.84) and leans the other way at the 99th (OR 0.950, P 0.27); calibrated from the discovery's effect (D27.9) in its
+  both-parents form, the like of Deelen's sex-combined samples (Pilling's P 3.5e-6, its β unprinted: about +0.023 on
+  Timmers' scale from the P at a both-parents SE near 0.005, derived), the 90th percentile flags under the APOE factor
+  only (power 0.99, heterogeneity P 0.005; the mean factor 0.48, P 0.19) and the 99th under neither on power (0.78 and
+  0.26), so no flag (D25.3), and exceptional survival is 0. From the mothers' β instead (+0.040, Figure 2's column)
+  the 90th would flag under both (mean factor power 0.87, P 0.019): which effect is a sex-specific discovery's own in a
+  sex-combined sample is put to the lead, the both-parents reading the default. FinnGen's look-up raises no flag
+  either way (APOE factor power 0.74 from the both-parents effect, heterogeneity P 0.42).
   Healthspan agrees nominally in UK Biobank, Pilling's own sample (Zenin 2019: G later end of healthspan, P 0.033
   after genomic control). The effect is the mothers': Timmers 2019's moderator model finds it sex-specific (male
   moderator −0.038, P 7.3e-5, FDR 0.0017) and not age-dependent (P 0.24); mothers' effects are of one size from 60 to
@@ -169,7 +174,7 @@ studies:
     effect_unit: odds ratio of reaching the 90th percentile, per G allele
     effect_allele: G
     direction: protective
-    statistical_test: "Look-up of Pilling's mothers' rs3130507 in Supplementary Data 1; I² 44.8 %. Against LifeGen's joint beta (D25.3, derived): APOE factor power 0.89, heterogeneity P 0.031; mean factor power 0.33, heterogeneity P 0.34: a flag under one calibration only, so none"
+    statistical_test: "Look-up of Pilling's mothers' rs3130507 in Supplementary Data 1; I² 44.8 %. Against Pilling's both-parents effect, about +0.023 from its P 3.5E-06 (pmid-29227965#q22; D27.9, D25.3, derived): APOE factor power 0.99, heterogeneity P 0.005; mean factor power 0.48, heterogeneity P 0.19: a flag under one calibration only, so none; from the mothers' +0.040 (pmid-30642433#q100) both would flag (mean factor power 0.87, P 0.019), put to the lead"
     curator: claude-opus-5-5
   - rsid: rs3130507
     note: pmid-31413261
@@ -189,7 +194,7 @@ studies:
     effect_unit: odds ratio of reaching the 99th percentile, per G allele
     effect_allele: G
     direction: risk
-    statistical_test: "Look-up of Pilling's mothers' rs3130507 in Supplementary Data 1; leans against the discovery, not nominal; power under D25.3 0.60 (APOE factor) and 0.20 (mean factor), so no flag"
+    statistical_test: "Look-up of Pilling's mothers' rs3130507 in Supplementary Data 1; leans against the discovery, not nominal; power under D25.3 from Pilling's both-parents effect (D27.9) 0.78 (APOE factor) and 0.26 (mean factor), so no flag"
     curator: claude-opus-5-5
   - rsid: rs3130507
     note: pmid-30729179
