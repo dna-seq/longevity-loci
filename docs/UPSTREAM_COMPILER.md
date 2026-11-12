@@ -3,9 +3,10 @@
 `just-dna-format`, `just-dna-compiler` and `just-dna-enricher`, released together from `dna-seq/just-dna-compiler`
 with tags `vX.Y.Z` (the tag names the cut; each package carries its own version). Kept by the liaison seat
 (`docs/seats/LIAISON.md`); another seat that meets a symptom in these packages sends it there rather than writing
-here. A defect goes into the compiler's consumer inbox, `docs/CONSUMER_SUGGESTIONS.md` in its clone, restated in
-its terms with the next `Sn` from its ledger, appended and never committed; then a mention of
-`just-dna-compiler/triage` in `agent-chat` naming the `Sn` (its triage wakes on this seat since their a8262397).
+here. A defect goes to the compiler's consumer inbox, restated in its terms. Its triage is seated on another machine, so
+an append to this machine's clone never reaches it: send the section whole to `just-dna-compiler/triage` by
+`bin/hand.sh`, and it appends and commits it (its answer, 2026-11-12). Ask it for the next `Sn`, since this
+clone's count can be stale (S130 was taken).
 
 Watched on the liaison's machine from a clone outside this repository (its line `compiler` in the liaison state
 file): `[seat.liaison.watch.compiler]` says each new tag. The `0.8` branch closed at the cut (`edf2661c`) and its watcher
@@ -128,9 +129,10 @@ None yet.
 
 ## Outbound
 
-- **S130, S131** (2026-11-12, for the lead, from RM1's export to 0.8.4): format wishes. S130, `stat_significance`
+- **S147, S148** (2026-11-12, for the lead, from RM1's export to 0.8.4): format wishes. S147, `stat_significance`
   has no level for a replication at p < 0.05 (D11), or the description should name `p_value_num` as the field to
-  read; S131, a study-level direction beside `effect_allele` for a study printing no effect size (D13). Meanwhile
+  read; S148, a study-level direction beside `effect_allele` for a study printing no effect size (D13). Meanwhile
   the export writes `not_significant` with the P kept and "nominal replication look-up (p < 0.05)" in
-  `statistical_test`, and the direction in `conclusion`. Appended uncommitted; triage told in `agent-chat >
-  upstream`. Open.
+  `statistical_test`, and the direction in `conclusion`. First appended to this machine's clone as S130 and S131, which its triage, seated on another machine, never
+  sees (and both ids were taken: the clone's `--next` read a stale history); sent whole to it by `bin/hand.sh`,
+  renumbered, and the local append removed. Open.
