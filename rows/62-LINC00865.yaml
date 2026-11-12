@@ -14,11 +14,11 @@ verdict_reason: >-
   Beta +1.728 per copy (OR 5.63; SE 0.31, derived), P 2.87e-8, the study's only genome-wide locus among 22
   suggestive ones; in the 315 unrelated people G keeps its direction, OR 4.73, P 0.006. The authors call the
   findings preliminary and the study exploratory, and say most of their loci did not replicate in external
-  datasets. Their own replication, in the SICS cohort (Table S6; read from the acronym as the Southern Italian
-  Centenarian Study, which no quote states; G at 1.8 % there, a European frequency), gives G the opposite sign,
+  datasets. Their own replication, in the SICS cohort (Table S6; its ancestry and design inferred from the acronym
+  as the Southern Italian Centenarian Study, which no quote states; G at 1.8 % there, a European frequency), gives G the opposite sign,
   Beta −0.910, P 0.10. On one scale (Beta against Beta, so no calibration under D25.3), at SICS's standard error (0.555,
   backed out of its P), the discovery's effect gives one-sided power 0.93 and heterogeneity P 3e-5 (both derived), a
-  red flag under D21, so `replication_failed`; on the unrelated subset's estimate it is power 0.88, P 0.002. The
+  red flag under D21, so `replication_failed`; on the unrelated subset's estimate it is power 0.87, P 0.002. The
   flag is fragile: 80 % power needs a log OR of 1.38, 80 % of the discovery's, and at half its effect power falls to
   0.46. SICS's size, design and any overlap with the Calabrian sample are unread (the main text is not open); it is
   read as independent on the abstract's "external datasets" and on Table S6 setting the cohorts side by side. The
@@ -28,16 +28,22 @@ verdict_reason: >-
   arms the same sign), Park 2025's UK Biobank own survival G −0.0041 on the Martingale residual, fewer deaths (P
   0.29, one-sided 0.15; the deposit's columns swapped as at 13 and 61), against FinnGen R11's any-death endpoint,
   G log OR +0.051 for death (P 0.38), and Deelen 2019's 90th percentile, G −0.088 (P 0.53); Deelen's 99th file has
-  no line for the lead, and its proxies were not read (the r² 1.0 tags in 1000 Genomes' CEU rest on a few copies). G is rare in Europe (0.9 %), so these look-ups are far less precise than their sizes
+  no line for the lead or any of its 20 CEU proxies (r² ≥ 0.75; the r² 1.0 tags rest on a few copies). The proxies
+  agree with the lead: Deelen's 90th holds five, each leaning against G, none nominal (best P 0.20); FinnGen holds
+  all 20, each with G's partner on the side of more deaths (best P 0.21); LifeGen's 20 lean G's way, the best at
+  one-sided 0.093 (pmid-31413261#q165, db-finngen-r11#q44, pmid-30642433#q283). One weaker tag, rs74904474 (r² 0.50
+  in 1000 Genomes Tuscans, outside the paper's r² ≥ 0.6 list), leans G's way in LifeGen at P 0.0063 (one-sided
+  0.003, "++", info 0.86, its frequency varying about twentyfold across cohorts; pmid-30642433#q282), but LifeGen
+  tests the lead itself and that line is flat, so the proxy does not stand in for it (D29.3): named, not counted. G is rare in Europe (0.9 %), so these look-ups are far less precise than their sizes
   suggest. Zenin 2019's healthspan leans G's way, P 0.51. Outcome: lifespan 0, healthspan 0, exceptional survival 0
-  (D28.10: a D row's discovery gives no `+`). The GWAS Catalog holds Beccacece's association alone, mapped to
+  (D28.10: a D row's discovery gives no `+`); the 0 is close, SICS leaning against G at one-sided 0.0506. The GWAS Catalog holds Beccacece's association alone, mapped to
   LINC00865, so mechanism general ageing and no pleiotropy. Open Targets 26.09 holds no record of the variant (no
   credible set, no locus-to-gene): causal C4, effector E4, no gene; the intron names the locus, not an effector.
   Descriptive. Every test is European, and G, about 9 % in East Asians and Africans, is untested there:
   eur_only_evidence. APOE ε4 and FOXO3 showed nothing in this sample (ε4 OR 0.66, P 0.12). Age of action unknown: the
   case and control ages are not read. A D row carries no protection token and every genotype is neutral.
 axes:
-  tier: {value: D, cites: [pmid-42176242#q1, pmid-42176242#q2, pmid-42176242#q3, pmid-42176242#q5, pmid-42176242#q6, pmid-42176242#q7, pmid-42176242#q8, pmid-42176242#q9, pmid-42176242#q10, pmid-42176242#q11, pmid-42176242#q12, db-gwascatalog-2026.10.29#q390, db-gwascatalog-2026.10.29#q393, db-gwascatalog-2026.10.29#q394, db-gwascatalog-2026.10.29#q395, pmid-30642433#q275, pmid-40021682#q62, db-finngen-r11#q38, pmid-31413261#q156, db-ensembl-116#q440, db-ensembl-116#q446]}
+  tier: {value: D, cites: [pmid-42176242#q1, pmid-42176242#q2, pmid-42176242#q3, pmid-42176242#q5, pmid-42176242#q6, pmid-42176242#q7, pmid-42176242#q8, pmid-42176242#q9, pmid-42176242#q10, pmid-42176242#q11, pmid-42176242#q12, db-gwascatalog-2026.10.29#q390, db-gwascatalog-2026.10.29#q393, db-gwascatalog-2026.10.29#q394, db-gwascatalog-2026.10.29#q395, pmid-30642433#q275, pmid-40021682#q62, db-finngen-r11#q38, pmid-31413261#q156, db-ensembl-116#q440, db-ensembl-116#q446, pmid-31413261#q165, db-finngen-r11#q44, pmid-30642433#q282, pmid-30642433#q283, db-ensembl-116#q479]}
   mechanism: {value: general_ageing, cites: [db-gwascatalog-2026.10.29#q389, db-gwascatalog-2026.10.29#q391, db-opentargets-26.09#q753, db-opentargets-26.09#q754]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -72,13 +78,13 @@ variants:
         conclusion: >-
           You carry one copy of a less common version of this DNA position (about 2 in 100 people of European
           ancestry do). One small study of long-lived people from Calabria reported it as more common among them,
-          but the same paper's second, Italian study leaned the other way, and large studies elsewhere found no link. It says nothing about your own lifespan.
+          but the same paper's second study leaned the other way, and large studies elsewhere found no link. It says nothing about your own lifespan.
       - genotype: G/G
         state: neutral
         conclusion: >-
           You carry two copies of a less common version of this DNA position (about 1 in 10,000 people of European
           ancestry do). One small study of long-lived people from Calabria reported this version as more common
-          among them, but the same paper's second, Italian study leaned the other way, and large studies elsewhere
+          among them, but the same paper's second study leaned the other way, and large studies elsewhere
           found no link. It says nothing about your own lifespan.
 studies:
   - rsid: rs11186068
@@ -106,7 +112,7 @@ studies:
     quote: q12
     phenotype_class: EXTREME_SURVIVAL_CC
     study_design: age_threshold_case_control
-    population: SICS, the paper's replication cohort (read from the acronym as the Southern Italian Centenarian Study, unquoted; G 1.8 %; its size, ages and design unread)
+    population: SICS, the paper's replication cohort (ancestry and design inferred from the acronym as the Southern Italian Centenarian Study, unquoted; G 1.8 %; its size, ages and design unread)
     ancestry: [EUR]
     stat_significance: not_significant
     p_value: "0.10124875"
@@ -116,7 +122,7 @@ studies:
     effect_unit: the paper's Beta per G allele, on the discovery's scale (Table S6 sets the two side by side)
     effect_allele: G
     direction: risk
-    statistical_test: "Table S6 (titled S7), replication with SICS (q10, q11): G at 0.018, Beta −0.910, P 0.101, no SE or size printed. D21 (derived): SE 0.555 from the P; at the discovery's +1.728 (SE 0.31), one-sided power 0.93, heterogeneity P 3e-5; at the unrelated subset's 1.55 (q9), power 0.88, P 0.002; 80 % power needs 1.38; at half the effect power 0.46. One scale, no calibration (D25.3): a red flag. Independence read from 'external datasets' (q3) and the side-by-side table; overlap otherwise unread; SICS's ancestry from its acronym only"
+    statistical_test: "Table S6 (titled S7), replication with SICS (q10, q11): G at 0.018, Beta −0.910, P 0.101, no SE or size printed. D21 (derived): SE 0.555 from the P; at the discovery's +1.728 (SE 0.31), one-sided power 0.93, heterogeneity P 3e-5; at the unrelated subset's 1.55 (q9), power 0.87, P 0.002; 80 % power needs 1.38; at half the effect power 0.46. One scale, no calibration (D25.3): a red flag. Independence read from 'external datasets' (q3) and the side-by-side table; overlap otherwise unread; SICS's ancestry from its acronym only"
     curator: claude-opus-5-5
   - rsid: rs11186068
     note: pmid-30642433

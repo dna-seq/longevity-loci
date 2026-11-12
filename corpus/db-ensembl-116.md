@@ -1782,3 +1782,9 @@ alleles are the age GWAS's older side (pmid-31484785#q107, q109). For row 65.
 > [q478] mappings[0] end 43598388 seq_region_name 11 allele_string G/A/C/T start 43598388 strand 1 location 11:43598388-43598388 coord_system chromosome ancestral_allele G assembly_name GRCh38
 
 rs4755202 at 11:43,598,388 (GRCh38), G/A/C/T with G ancestral; A is the allele every file here prints. For row 65.
+
+> [q479] [0] d_prime 1.000000 r2 0.497652 population_name 1000GENOMES:phase_3:TSI variation2 rs74904474 variation1 rs11186068
+
+`ld-rs11186068-rs74904474-TSI.json`: rs74904474 to the lead in 1000 Genomes Tuscans, r² 0.50, D′ 1; outside
+Beccacece's r² ≥ 0.6 proxy list and Ensembl's CEU window at 0.6. At D′ 1 an r² that high requires the two minor
+alleles on one haplotype, so rs74904474's A rides on the lead's G (derived). For row 62, prose.
