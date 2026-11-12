@@ -60,7 +60,8 @@ reset. Read the window with the kit's `drivers/claude-code/quota.py --line`, and
 it crosses and when it resets. An unknown reading is not under 95 %: wait for a known one. Tracked: the quota
 watcher's lines show it.
 
-**At 90 % of the 7-day window, stop the same way** until it resets (the person, 2026-11-12: "Increase spending
+**At 95 % of the 7-day window, stop the same way** until it resets (the person, 2026-11-12: "just spend all you
+can, 95% cap for next week"; 90 % before, the same day: "Increase spending
 expectation to 90% of weekly"; 80 % before, 2026-11-11: "Up to 80% weekly
 quota"). Read it with the same `quota.py --line`. Below that line the rate is free; a row cost about 0.15 % of the
 7-day window in the pilot. Agreed: nothing but this seat reads the 7-day line.
