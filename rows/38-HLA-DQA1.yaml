@@ -19,7 +19,8 @@ verdict_reason: >-
   rs1049053 more closely (r² 0.80), and rs1049053 lies at r² 0.32 to this lead, so the AncestryDNA result is shared by
   the two rows and cannot be assigned to this signal: it is kept as a study and not counted as this lead's
   replication. The lead itself has no row in an independent sample. At the oldest ages it leans the same way and does
-  not pass: Deelen 2019's 90th and 99th percentiles give OR 1.05 and 1.07 (P 0.26, 0.24) at the lead, and Timmers
+  not pass: Deelen 2019's 90th and 99th percentiles give OR 1.05 and 1.07 (P 0.26, 0.24) at the lead, flat but
+  no red flag (APOE's factor only; mean factor power 0.87 and 0.60, the D28.4 sweep), and Timmers
   2019's longevity look-up reaches P 0.056 one-sided at CHARGE's tag rs3129720 (the same SNP as rs3135006 in effect,
   CEU r² 1.0). This is consistent with an effect that is largest in midlife and fades at the oldest ages (Joshi:
   larger on parents' deaths at 40-75 than after), and it is no red flag. Timmers 2019's Figure 5 source data neither
@@ -146,7 +147,7 @@ studies:
     effect_unit: odds ratio of reaching the 90th percentile, per T allele
     effect_allele: T
     direction: protective
-    statistical_test: "Look-up of Timmers 2019's lead in Supplementary Data 1; same side, not nominal; I² 21.9 %"
+    statistical_test: "Look-up of Timmers 2019's lead in Supplementary Data 1; same side, not nominal; I² 21.9 %. D21 from Timmers' β (0.0561 per T on the log hazard; D28.4 sweep, derived): APOE's factor power 1.00, heterogeneity P 0.0002; the mean factor power 0.87, P 0.13; a flag under one calibration only, so none (D25.3)"
     curator: claude-opus-5-5
   - rsid: rs34967069
     note: pmid-31413261
@@ -166,7 +167,7 @@ studies:
     effect_unit: odds ratio of reaching the 99th percentile, per T allele
     effect_allele: T
     direction: protective
-    statistical_test: "Look-up of Timmers 2019's lead in Supplementary Data 1; same side, not nominal; I² 0"
+    statistical_test: "Look-up of Timmers 2019's lead in Supplementary Data 1; same side, not nominal; I² 0. D21 from Timmers' β (D28.4 sweep, derived): APOE's factor power 1.00, heterogeneity P 0.0074; the mean factor power 0.60, P 0.48; no flag (D25.3)"
     curator: claude-opus-5-5
   - rsid: rs34967069
     note: pmid-30642433

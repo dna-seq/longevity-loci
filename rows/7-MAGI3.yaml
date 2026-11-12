@@ -15,7 +15,8 @@ verdict_reason: >-
   allele but no cached source gives an effect size, so no direction is read) and Rosoff 2023's mvAge (P 2e-11 in the
   GWAS Catalog, G on the healthier-ageing side; the paper names rs1230666 among its strongest fine-mapped loci).
   Outside them nothing passes: the longevity look-up of Timmers 2019's Figure 4 gives P 0.45 (one-sided), and Deelen
-  2019's 90th and 99th percentiles OR 1.04 per G (P 0.19 and 0.36), all on the same side; Wright 2019's AncestryDNA
+  2019's 90th and 99th percentiles OR 1.04 per G (P 0.19 and 0.36), all on the same side,
+  flat but no red flag: they flag under APOE's factor only (mean factor power 0.71 and 0.45; D25.3, the D28.4 sweep); Wright 2019's AncestryDNA
   arm has no row for the lead. Timmers 2022's aging-GIP1 is genome-wide nearby at rs1230682 (PHTF1, P 4e-10), a weak
   tag (r² 0.24, D′ 1.00, its A always with the lead's G) whose credible set of 11 is led by rs2636008 and does not
   hold the lead; in FinnGen and Biobank Japan's own survival A adds 0.135 years, one-sided P 0.039 (Bonferroni 0.90):
@@ -138,5 +139,5 @@ studies:
     effect_unit: odds of survival to the 90th percentile per G allele
     effect_allele: G
     direction: protective
-    statistical_test: "Deelen 2019's Supplementary Data 1 look-up of Timmers 2019's lead; 99th percentile OR 1.04, P 0.36; I² 0"
+    statistical_test: "Deelen 2019's Supplementary Data 1 look-up of Timmers 2019's lead; 99th percentile OR 1.04, P 0.36; I² 0. D21 from Timmers' β (0.0322 per G on the log hazard; D28.4 sweep, derived): the 90th under APOE's factor power 1.00, heterogeneity P 0.0035, under the mean factor power 0.71, P 0.41; the 99th power 0.98, P 0.021 and 0.45, P 0.56; a flag under one calibration only, so none (D25.3)"
     curator: claude-opus-5-5
