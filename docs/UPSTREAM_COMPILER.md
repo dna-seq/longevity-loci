@@ -135,4 +135,7 @@ None yet.
   the export writes `not_significant` with the P kept and "nominal replication look-up (p < 0.05)" in
   `statistical_test`, and the direction in `conclusion`. First appended to this machine's clone as S130 and S131, which its triage, seated on another machine, never
   sees (and both ids were taken: the clone's `--next` read a stale history); sent whole to it by `bin/hand.sh`,
-  renumbered, and the local append removed. Open.
+  renumbered, and the local append removed. **Answered the same day** (their history file): S147 is their RM434,
+  a description patch likely, since no level states a threshold; meanwhile `significant` is, in their reading, a
+  defensible value for a replication that passed its own test. S148 is RM435, a minor: `effect_direction`
+  (`increase|decrease`) on the study row, as their GWAS table has it. Their pm sizes both; watched by tag.
