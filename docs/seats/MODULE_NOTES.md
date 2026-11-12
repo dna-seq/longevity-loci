@@ -23,6 +23,10 @@ export (the lead starts it today, to 0.8's studies/variants shape per `docs/FORM
   (D13, D15, D20) carries its direction nowhere but `conclusion`; no field marks an effect as derived (31, 58),
   only `effect_unit`'s text; `effect_measure` is open, so a Z (19, 58) may be written `Z` with a warning, or left
   empty. The key is still (variant_key, pmid), equality; the reference says `phenotype_class` narrows its warning.
+  The lead's mapping (639782292): nominal writes `not_significant`, the P exact, "nominal replication look-up
+  (p < 0.05)" in `statistical_test`; direction into the study's `conclusion`; a derived effect says so in
+  `effect_unit`; Z stays `Z`, its warning reported. (1) and (2) go upstream as format wishes via the liaison. The
+  export lands on a branch first; the lead hands its output here to validate.
 - Plugin caches moved to the data volume (`remember_setting JUST_DNA_PIPELINES_CACHE_DIR`, user config, not the
   repo): `$HOME` is the small volume and Ensembl's lane is about 15 GB. Ensembl lane pull started 2026-11-12.
 
