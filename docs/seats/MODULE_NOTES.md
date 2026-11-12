@@ -41,6 +41,9 @@ export (the lead starts it today, to 0.8's studies/variants shape per `docs/FORM
   test-longevity-loci/longevitymap@2.0.0 (receipt `module/published.json`). The name is not test-prefixed, so the
   operator's sweep keeps it: delete it with `registry_delete_version` before the next rehearsal of 2.0.0.
   Warnings left: 6 indel VRS ids unverifiable (carried), module_not_closed, ClinVar 2026-11-01 superseded.
+- **Standing (the lead, 639797615):** RM1 closed. Hold at the rehearsal: no production publish and no close
+  without the person's word. Re-export and re-rehearse after each curation batch, not per row (delete the polygon's
+  2.0.0 first, then publish again).
 - Plugin caches moved to the data volume (`remember_setting JUST_DNA_PIPELINES_CACHE_DIR`, user config, not the
   repo): `$HOME` is the small volume and Ensembl's lane is about 15 GB. Ensembl lane present 2026-11-12: ensembl-variation-2026_07_13-vep116.0, 14.5 GB (du shows 7.6 GB on BeeGFS).
 
