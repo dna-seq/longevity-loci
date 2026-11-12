@@ -1,0 +1,178 @@
+# The seed list's locus 63, TCF7L2 (10q25.2). Curated 2026-11-12. Lead rs35198068, the seed's lead, a T/C in a TCF7L2
+# intron at GRCh38 10:112,995,025 (GRCh37 114,754,784); C is the minor allele in Europeans (0.32) and the type 2
+# diabetes risk allele, and it tags rs7903146, the best-known TCF7L2 diabetes variant, at r² 1.00 in CEU. The seed's
+# other rsID here, rs34872471 (Zenin 2019's Table 2 SNP, track D), is the same signal (r² 0.98, D14). Entered by
+# tracks B, G and H from Rosoff 2023's mvAge; the locus was first genome-wide in Zenin 2019's healthspan GWAS. The
+# seed's Zhao 2024 (cardiometabolic multimorbidity, PMID 38409652) is read through the GWAS Catalog only: its abstract
+# names no SNP.
+locus_id: 63
+locus_name: TCF7L2
+verdict: kept
+verdict_reason: >-
+  Tier B, the seed's, kept: genome-wide for healthspan with a co-occurring lifespan study (D16), replicated outside UK
+  Biobank only at a far smaller effect than any printed calibration expects, and A's "no red-flag heterogeneity"
+  unknown (D25.12). The criteria as read: (1) genome-wide for healthspan in 300,447 British UK Biobank participants:
+  T, the common allele (0.68 in Europeans), delays the end of healthspan (Zenin 2019, T β −0.061 per copy on the log
+  hazard, P 4.2e-30 at the lead; at rs34872471, r² 0.98, P 9.7e-29 after genomic control, the paper's call, D17.3).
+  Zenin's replication in 96,000 other UK Biobank participants (P 2.9e-11) is healthspan replicating healthspan in one
+  biobank and counts nothing toward A (D25.11). By component the signal is diabetes's: diabetes P 7e-156, all
+  diseases but cancer 1e-46, own death flat (P 0.72), MI and cancer nominal. (2) The co-occurring lifespan study
+  (D16, one-sided as D25.13): Zenin's own parents'-death meta-analysis, T lowering the parents' hazard (C +0.004, SE
+  0.002, P 0.095, one-sided 0.048), in the same people; LifeGen's parental lifespan leans T's way and does not pass
+  (beta1 +0.0060, one-sided 0.079), and Park 2025's UK Biobank own survival is flat (P 0.93). (3) Outside UK Biobank,
+  FinnGen R11's any-death endpoint gives C log OR +0.0195 for death (SE 0.0093, P 0.035; T one-sided 0.017), a
+  database look-up named here, not a study entry; Deelen 2019's 90th and 99th percentiles lean T's way and do not pass
+  (log OR +0.026 and +0.018 per T, one-sided 0.11 and 0.29). (4) No red flag cannot be shown: every independent test
+  is on another scale than Zenin's healthspan hazard, and the one printed calibration, APOE's (Zenin's ε4 β 0.0137,
+  P 0.041, against its effect in each look-up; D25.3), expects about 37 times Zenin's effect at Deelen's 90th (log OR
+  2.3, observed 0.026: power 1.00, heterogeneity P far below 1e-10) and about 7.6 times in FinnGen (log OR 0.47 for C,
+  observed 0.0195, about 4 % of it). No mean factor exists for healthspan against these phenotypes, so whether
+  Deelen's null is a red flag is unknown and the row carries no `replication_failed` (D26.3), and the FinnGen pass is
+  §4.1's "replication with a much smaller effect" under the only calibration there is; either way B (D25.12: unknown
+  is not "no red flag"). That ε4 barely moves healthspan makes APOE's factor a poor yardstick for a diabetes locus,
+  which the row states rather than corrects (D28.1). Rosoff 2023's mvAge (T, P 5.4e-16; not novel, its healthspan
+  input's) and Timmers 2020's multivariate scan (P 4e-28) pool these same samples; mvAge's Q test (P 9.3e-13) says the
+  SNP reaches the inputs through a pathway of its own, here diabetes. Outcome: healthspan + (Zenin), lifespan + (the
+  parents' death and FinnGen, one-sided), exceptional survival 0 (Deelen). Mechanism metabolism, with mech:t2d: C is
+  the type 2 diabetes risk allele (P 3e-41), and the healthspan signal is diabetes's by Zenin's components. Broad:
+  T also lowers chronic kidney disease (P 5e-28) and diabetic eye disease, and blood pressure runs both ways (T raises
+  diastolic, C systolic). A trade-off: T raises body mass index (P 4e-89) and obesity (PheCode 278.1, P 3e-23), the
+  known TCF7L2 pattern, so descriptive (D18.2, §4.2: trade-off loci get no actionability label). Causal C2: Zenin's
+  own SuSiE-inf healthspan set (Open Targets 26.09) holds the lead at PIP 0.445, rs34872471 at 0.432 and rs7903146 at
+  0.123; the multivariate PICS sets (Timmers 2020, PIP 0.47; mvAge, 0.33) are named, not counted (D25.5, D27.6).
+  Effector E2, TCF7L2: locus-to-gene 0.91 on the healthspan set, with no QTL colocalisation of it, so not E1. The
+  protection is the absence of the risk allele: C raises diabetes, and T, which most people carry, is the reference.
+  Evidence is European; C is 0.30 in Africans and South Asians and 0.02 in East Asians, where the longevity effect is
+  untested: eur_only_evidence. Age of action unknown.
+axes:
+  tier: {value: B, cites: [pmid-30729179#q86, pmid-30729179#q87, pmid-30729179#q88, pmid-30729179#q89, pmid-30642433#q276, pmid-30642433#q90, pmid-40021682#q63, pmid-40021682#q32, db-finngen-r11#q39, db-finngen-r11#q4, pmid-31413261#q157, pmid-31413261#q158, pmid-31413261#q82, pmid-37550455#q53, pmid-37550455#q54, pmid-37550455#q4, db-ensembl-116#q455, db-ensembl-116#q454]}
+  mechanism: {value: metabolism, cites: [pmid-30729179#q88, db-gwascatalog-2026.10.29#q396, db-gwascatalog-2026.10.29#q397, db-gwascatalog-2026.10.29#q398, pmid-37550455#q53]}
+  pleiotropy: {values: ["mech:t2d", broad, tradeoff], cites: [db-gwascatalog-2026.10.29#q396, db-gwascatalog-2026.10.29#q398, db-gwascatalog-2026.10.29#q399, db-gwascatalog-2026.10.29#q400, db-gwascatalog-2026.10.29#q401, db-gwascatalog-2026.10.29#q405, db-gwascatalog-2026.10.29#q406, db-gwascatalog-2026.10.29#q407, db-gwascatalog-2026.10.29#q408, db-gwascatalog-2026.10.29#q409, db-gwascatalog-2026.10.29#q410, db-gwascatalog-2026.10.29#q402, db-gwascatalog-2026.10.29#q404, db-gwascatalog-2026.10.29#q414, db-gwascatalog-2026.10.29#q416, db-ensembl-116#q455]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
+            cites: [pmid-30729179#q86, pmid-30729179#q88, db-finngen-r11#q39, pmid-30642433#q276, pmid-40021682#q63, pmid-31413261#q157, pmid-31413261#q158]}
+  actionability: {label: descriptive, cites: [db-gwascatalog-2026.10.29#q405, db-gwascatalog-2026.10.29#q406, db-gwascatalog-2026.10.29#q407, db-gwascatalog-2026.10.29#q399, db-gwascatalog-2026.10.29#q401]}
+  context: {values: [eur_only_evidence], cites: [pmid-30729179#q87, db-finngen-r11#q39, db-ensembl-116#q450, db-ensembl-116#q451, db-ensembl-116#q452, db-ensembl-116#q453]}
+flags:
+  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [db-gwascatalog-2026.10.29#q396, db-gwascatalog-2026.10.29#q397, db-gwascatalog-2026.10.29#q398, db-ensembl-116#q450]}
+  - {token: "causal:C2", cites: [db-opentargets-26.09#q756, db-opentargets-26.09#q757, db-opentargets-26.09#q758, db-opentargets-26.09#q759, db-opentargets-26.09#q760]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q761, db-opentargets-26.09#q762, db-opentargets-26.09#q763, db-ensembl-116#q457]}
+  - {token: "ld_proxy_of:rs35198068", cites: [db-ensembl-116#q455]}  # rs34872471, r² 0.98
+variants:
+  - rsid: rs35198068
+    gene: TCF7L2
+    phenotype: TCF7L2 intron, healthspan via diabetes
+    trait_efo_id: EFO_0009762
+    effect_allele: T
+    effect_size: -0.061
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    negatives: >-
+      The longer-life version, T, goes with less type 2 diabetes but with a somewhat higher body weight and more
+      obesity, and with slightly higher diastolic blood pressure.
+    genotypes:
+      - genotype: T/T
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position, as about 47 in 100 people of European
+          ancestry do. It is the reference the other combinations are compared with. The position, on chromosome 10,
+          lies inside the TCF7L2 gene, one of the best-known genetic links to type 2 diabetes; your version is the
+          one that does not raise that risk. It also goes with a slightly higher body weight. The finding comes from
+          people of European ancestry; less is known elsewhere.
+      - genotype: C/T
+        state: risk
+        conclusion: >-
+          You carry one copy of a version of this DNA position that raises the risk of type 2 diabetes (about 43 in
+          100 people of European ancestry do). In a large British study, people with this version tended to reach
+          their first major age-related disease somewhat earlier, mostly through diabetes, and studies of lifespan
+          lean the same way, more weakly. The same version goes with a slightly lower body weight. It is a likely
+          finding, not a settled one. Your blood sugar, which a standard blood test shows, matters more than this
+          DNA result. It is a tendency, not destiny.
+      - genotype: C/C
+        state: risk
+        conclusion: >-
+          You carry two copies of a version of this DNA position that raises the risk of type 2 diabetes (about 1
+          in 10 people of European ancestry do). In a large British study, each copy went with reaching the first
+          major age-related disease somewhat earlier, mostly through diabetes, and studies of lifespan lean the same
+          way, more weakly. The same version goes with a slightly lower body weight. It is a likely finding, not a
+          settled one. Your blood sugar, which a standard blood test shows, matters more than this DNA result. It is
+          a tendency, not destiny.
+studies:
+  - rsid: rs35198068
+    note: pmid-30729179
+    quote: q86
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "4.17e-30"
+    p_value_num: 4.17e-30
+    effect_size: -0.061
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per T allele (negative = later)
+    effect_allele: T
+    direction: protective
+    statistical_test: "Cox-Gompertz Martingale-residual GWAS of the first of the age-related diseases or death; the summary statistics at the lead, C +0.061, SE 0.00535, -log10 P 29.38 before genomic control (q86); Table 2's SNP rs34872471 (r² 0.98, db-ensembl-116#q455) P 9.7e-29 after genomic control, the paper's call (q87); replication in about 96,000 other UK Biobank participants C +0.0617, P 2.9e-11, healthspan in the same biobank (q87); by component diabetes P 7.2e-156, own death P 0.72 (q88)"
+    curator: claude-opus-5-5
+  - rsid: rs35198068
+    note: pmid-30729179
+    quote: q88
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank, genomically British; the discovery's own participants' parents)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.0952"
+    p_value_num: 0.0952
+    p_one_sided: 0.0476
+    effect_size: -0.004
+    effect_measure: beta
+    effect_unit: log hazard of parental death per T allele (negative = later; the table prints C +0.004)
+    effect_allele: T
+    direction: protective
+    age_of: parent
+    proxy_rsid: rs34872471
+    statistical_test: "Supplementary Data 7, parents' death (meta-analysis of fathers, P 0.21, and mothers, P 0.27), Cox model in the discovery sample, C +0.004 (SE 0.002); T lowers it, one-sided 0.048 (derived), D16's co-occurring lifespan study (D25.13); the same people as Zenin's healthspan; at rs34872471, r² 0.98 to the lead (db-ensembl-116#q455)"
+    curator: claude-opus-5-5
+  - rsid: rs35198068
+    note: pmid-30642433
+    quote: q276
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts; the UK Biobank part is Zenin's people)
+    ancestry: [EUR]
+    sample_size: 640173
+    sample_unit: lives
+    age_of: parent
+    stat_significance: not_significant
+    p_value: "0.15745328"
+    p_value_num: 0.15745328
+    p_one_sided: 0.0787
+    effect_size: 0.00600774
+    effect_measure: beta
+    effect_unit: log hazard protection per T allele in self (positive = longer life)
+    effect_allele: T
+    direction: protective
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0042, info 0.994, '++' in UK Biobank and LifeGen; not independent of Zenin (UK Biobank), so no D21 test; under APOE's factor from Zenin's scale (7.7, pmid-30729179#q89 against q90) it would expect 0.47"
+    curator: claude-opus-5-5
+  - rsid: rs35198068
+    note: pmid-37550455
+    quote: q54
+    phenotype_class: MULTIVARIATE_AGEING
+    study_design: multivariate_healthspan_lifespan
+    population: European (Genomic SEM of healthspan, frailty, extreme longevity, parental lifespan and PhenoAge GWAS)
+    ancestry: [EUR]
+    stat_significance: significant
+    p_value: "5.39e-16"
+    p_value_num: 5.39e-16
+    effect_size: 0.0085
+    effect_measure: beta
+    effect_unit: mvAge common factor per T allele (positive = healthier ageing, q2)
+    effect_allele: T
+    direction: protective
+    statistical_test: "Genomic SEM common-factor GWAS, SE 0.0011 (q54); not novel, its healthspan input's locus; Q 62.3 on 4 df, Q P 9.3e-13 (q53): the SNP reaches the inputs by a pathway other than the factor (q4); of the inputs only healthspan is genome-wide (q54); pools Zenin's, LifeGen's and Deelen's samples, so no independent support"
+    curator: claude-opus-5-5

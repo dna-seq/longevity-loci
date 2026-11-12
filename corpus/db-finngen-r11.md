@@ -298,3 +298,9 @@ look-up (D25.12: with PRKD3 and CELF2 left out, MUC5B alone is not a mean), so t
 > [q38] 10	90207407	T	G	rs11186068	LINC01374	0.377325	0.423284	0.0505537	0.0572629	0.00417764	0.00448483	0.00413916
 
 FinnGen R11's any-death endpoint at rs11186068 (GRCh38 10:90,207,407; `finngen_R11_DEATH.tsv.gz`, the row filter `^10\t90207407\t`): G log OR +0.051 for death (SE 0.057), P 0.38, G 0.42 %: G leans to more deaths, against Beccacece's direction. For row 62.
+
+## Reading 2026-11-12, supplement
+
+> [q39] 10	112995025	T	C	rs35198068	TCF7L2	0.0346729	1.46001	0.0195382	0.00925035	0.202042	0.206557	0.201476
+
+FinnGen R11's any-death endpoint (`rows-e785b41f`, the filter `^10\t11299[0-9]{4}\t`), rs35198068 at GRCh38 10:112,995,025: C (alt) log OR +0.0195 (SE 0.0093) for death, P 0.035, C at 0.202 (cases 0.2066, controls 0.2015). T lowers the odds of death, one-sided 0.017 (derived); independent of UK Biobank. rs34872471 and rs7903146 give the same (P 0.035, 0.031). Under APOE's factor from Zenin's scale (pmid-30729179#q89, about 7.6) the expected log OR is about +0.47: what replicates is a far smaller effect. For row 63.

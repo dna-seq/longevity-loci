@@ -1428,3 +1428,89 @@ The cohorts, ECHA ...
 > [q395] cohort[1] GEHA
 
 ... and GEHA. For row 62.
+
+## Reading 2026-11-12, supplement
+
+> [q396] _embedded.associations[33] association_id 188118406 risk_frequency 0.29106134 pvalue_description  pvalue_mantissa 3 pvalue_exponent -41 multi_snp_haplotype false snp_interaction false range [0.28-0.38] beta 0.32841325 unit increase p_value 3e-41 accession_id GCST90468151 pubmed_id 39789286 first_author Loya H ci_lower 0.28 ci_upper 0.38
+
+The Catalog's associations for rs35198068 (`assoc-rs35198068.json`): 58. Type 2 diabetes, P 3e-41, beta 0.328 increase ... For row 63.
+
+> [q397] _embedded.associations[33].reported_trait[0] Type 2 diabetes
+
+... (the reported trait) ... For row 63.
+
+> [q398] _embedded.associations[33].snp_effect_allele[0] rs35198068-C
+
+... for C: C is the diabetes risk allele, T the non-risk one. For row 63.
+
+> [q399] _embedded.associations[20] association_id 228125396 risk_frequency 0.7066 pvalue_description  pvalue_mantissa 4 pvalue_exponent -89 multi_snp_haplotype false snp_interaction false range [0.054-0.066] beta 0.0604 unit increase p_value 4e-89 accession_id GCST90475159 pubmed_id 39024449 first_author Verma A ci_lower 0.054 ci_upper 0.066
+
+Body mass index (minimum, inverse-normal), P 4e-89, beta 0.060 increase ... For row 63.
+
+> [q400] _embedded.associations[20].reported_trait[0] Body mass index (BMI, minimum, inv-normal transformed)
+
+... (the reported trait) ... For row 63.
+
+> [q401] _embedded.associations[20].snp_effect_allele[0] rs35198068-T
+
+... for T: the longer-life allele raises BMI. For row 63.
+
+> [q402] _embedded.associations[25] association_id 228059042 risk_frequency 0.7066 pvalue_description  pvalue_mantissa 6 pvalue_exponent -36 multi_snp_haplotype false snp_interaction false range [0.029-0.039] beta 0.03383 unit increase p_value 5.9999999999999996e-36 accession_id GCST90475255 pubmed_id 39024449 first_author Verma A ci_lower 0.029 ci_upper 0.039
+
+Diastolic blood pressure (mean), P 6e-36, beta 0.034 increase ... For row 63.
+
+> [q403] _embedded.associations[25].reported_trait[0] diastolic blood pressure (DBP, mean, inv-normal transformed)
+
+... (the reported trait) ... For row 63.
+
+> [q404] _embedded.associations[25].snp_effect_allele[0] rs35198068-T
+
+... for T. For row 63.
+
+> [q405] _embedded.associations[3] association_id 228356771 risk_frequency 0.7067 pvalue_description  pvalue_mantissa 3 pvalue_exponent -23 multi_snp_haplotype false snp_interaction false range [0.032-0.051] beta 0.04147 unit increase p_value 3e-23 accession_id GCST90475762 pubmed_id 39024449 first_author Verma A ci_lower 0.032 ci_upper 0.051
+
+At rs34872471 (`assoc-rs34872471.json`, 82 associations): obesity (PheCode 278.1), P 3e-23, beta 0.041 increase ... For row 63.
+
+> [q406] _embedded.associations[3].reported_trait[0] Obesity (PheCode 278.1)
+
+... (the reported trait) ... For row 63.
+
+> [q407] _embedded.associations[3].snp_effect_allele[0] rs34872471-T
+
+... for T: the longer-life allele raises obesity, a disease. For row 63.
+
+> [q408] _embedded.associations[8] association_id 228334712 risk_frequency 0.7069 pvalue_description  pvalue_mantissa 5 pvalue_exponent -28 multi_snp_haplotype false snp_interaction false range [0.057-0.084] beta 0.07062 unit decrease p_value 5e-28 accession_id GCST90476123 pubmed_id 39024449 first_author Verma A ci_lower 0.057 ci_upper 0.084
+
+Chronic renal failure (PheCode 585.3), P 5e-28, beta 0.071 decrease ... For row 63.
+
+> [q409] _embedded.associations[8].reported_trait[0] Chronic renal failure [CKD] (PheCode 585.3)
+
+... (the reported trait) ... For row 63.
+
+> [q410] _embedded.associations[8].snp_effect_allele[0] rs34872471-T
+
+... for T. For row 63.
+
+> [q411] _embedded.associations[60] association_id 131101556 risk_frequency 0.291251 pvalue_description  pvalue_mantissa 3 pvalue_exponent -40 multi_snp_haplotype false snp_interaction false range [0.15-0.2] beta 0.173769 increase p_value 2.9999999999999998e-40 accession_id GCST90274723 pubmed_id 38409652 first_author Zhao C ci_lower 0.15 ci_upper 0.2
+
+Cardiometabolic multimorbidity, P 3e-40, beta 0.174 increase (the seed's Zhao 2024, PMID 38409652, whose abstract names no SNP) ... For row 63.
+
+> [q412] _embedded.associations[60].reported_trait[0] Cardiometabolic multimorbidity
+
+... (the reported trait) ... For row 63.
+
+> [q413] _embedded.associations[60].snp_effect_allele[0] rs34872471-C
+
+... for C. For row 63.
+
+> [q414] _embedded.associations[59] association_id 131774393 risk_frequency NR pvalue_description  pvalue_mantissa 3 pvalue_exponent -17 multi_snp_haplotype false snp_interaction false range [0.17-0.28] beta 0.2238 unit increase p_value 3e-17 accession_id GCST90310294 pubmed_id 38689001 first_author Keaton JM ci_lower 0.17 ci_upper 0.28
+
+Systolic blood pressure, P 3e-17, beta 0.224 increase ... For row 63.
+
+> [q415] _embedded.associations[59].reported_trait[0] Systolic blood pressure
+
+... (the reported trait) ... For row 63.
+
+> [q416] _embedded.associations[59].snp_effect_allele[0] rs34872471-C
+
+... for C: blood pressure runs both ways at the locus (T raises diastolic, q402, C systolic). For row 63.

@@ -1654,3 +1654,41 @@ VEP: an intron variant ...
 > [q448] [0].transcript_consequences[1] gene_symbol_source HGNC impact MODIFIER biotype lncRNA gene_id ENSG00000232229 variant_allele G gene_symbol LINC00865 transcript_id ENST00000664430 hgnc_id HGNC:45170 strand 1
 
 ... of LINC00865 (lncRNA), the G allele's consequence on transcript ENST00000664430. For row 62.
+
+## Reading 2026-11-12, supplement
+
+> [q449] mappings[0] start 112995025 end 112995025 location 10:112995025-112995025 allele_string T/C coord_system chromosome strand 1 ancestral_allele C seq_region_name 10 assembly_name GRCh38
+
+rs35198068 at GRCh38 10:112,995,025, T/C; the ancestral allele is C on GRCh38 but T on GRCh37 (q454), so which is derived is not read. For row 63.
+
+> [q450] populations[75] frequency 0.317097415506958 population 1000GENOMES:phase_3:EUR allele C allele_count 319
+
+C 0.317 in 1000 Genomes' Europeans ... For row 63.
+
+> [q451] populations[72] frequency 0.0228174603174603 allele C population 1000GENOMES:phase_3:EAS allele_count 23
+
+... 0.023 in its East Asians ... For row 63.
+
+> [q452] populations[51] frequency 0.305597579425113 population 1000GENOMES:phase_3:AFR allele C allele_count 404
+
+... 0.31 in its Africans ... For row 63.
+
+> [q453] populations[106] allele_count 293 frequency 0.29959100204499 population 1000GENOMES:phase_3:SAS allele C
+
+... and 0.30 in its South Asians. For row 63.
+
+> [q454] mappings[0] ancestral_allele T strand 1 end 114754784 coord_system chromosome allele_string T/C seq_region_name 10 start 114754784 location 10:114754784-114754784 assembly_name GRCh37
+
+GRCh37 10:114,754,784, the position Zenin, LifeGen, Deelen, Park and mvAge print. For row 63.
+
+> [q455] [0] population_name 1000GENOMES:phase_3:CEU d_prime 1.000000 variation1 rs35198068 r2 0.976689 variation2 rs34872471
+
+rs35198068 and rs34872471 (Zenin's Table 2 SNP) in CEU: r² 0.977, D′ 1. For row 63.
+
+> [q456] [0] population_name 1000GENOMES:phase_3:CEU variation2 rs7903146 variation1 rs35198068 d_prime 1.000000 r2 1.000000
+
+rs35198068 and rs7903146 (the best-known TCF7L2 diabetes variant) in CEU: r² 1.00, D′ 1. For row 63.
+
+> [q457] [0].transcript_consequences[0] hgnc_id HGNC:11641 impact MODIFIER transcript_id ENST00000277945 biotype protein_coding variant_allele C gene_id ENSG00000148737 strand 1 gene_symbol_source HGNC gene_symbol TCF7L2
+
+VEP: an intron variant of TCF7L2 (ENST00000277945). For row 63.

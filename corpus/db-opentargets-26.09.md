@@ -2788,3 +2788,57 @@ Open Targets' search for rs11186068: nothing ...
 > [q754] data variant null
 
 ... and no variant record at 10_90207407_T_G: no credible set, no locus-to-gene. For row 62.
+
+## Reading 2026-11-12, supplement
+
+> [q755] data.variant.credibleSets count 845
+
+rs35198068 (10_112995025_T_C) lies in 845 credible sets, mostly diabetes, glycaemic and other traits. For row 63.
+
+> [q756] data.credibleSet studyLocusId 32f4abfd01de830d55171b276aea34be finemappingMethod SuSiE-inf pValueMantissa 4.092370510101318 pValueExponent -30 beta 0.020915560333601382
+
+Zenin 2019's healthspan set at TCF7L2: SuSiE-inf, P 4.1e-30 ... For row 63.
+
+> [q757] data.credibleSet.study id GCST007406 traitFromSource Healthspan
+
+... study GCST007406, healthspan. For row 63.
+
+> [q758] data.credibleSet.locus.rows[0] posteriorProbability 0.4448656202625202 is95CredibleSet true
+
+rs35198068 PIP 0.445 ... For row 63.
+
+> [q759] data.credibleSet.locus.rows[1] posteriorProbability 0.432248193866332 is95CredibleSet true
+
+... rs34872471 0.432 ... For row 63.
+
+> [q760] data.credibleSet.locus.rows[2] posteriorProbability 0.1228130840805406 is95CredibleSet true
+
+... rs7903146 0.123: the lead at PIP 0.1 to 0.5, `causal:C2`. For row 63.
+
+> [q761] data.credibleSet.l2GPredictions.rows[0] score 0.9093946218490601
+
+Locus-to-gene 0.909 ... For row 63.
+
+> [q762] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol TCF7L2
+
+... TCF7L2. For row 63.
+
+> [q763] data.credibleSet.colocalisation count 0
+
+No QTL colocalisation of the healthspan set (eQTL, pQTL, sQTL and their single-cell forms queried): L2G alone, `effector:E2`. For row 63.
+
+> [q764] data.credibleSet studyLocusId f2b74ee748693bbb2d39ba97f8fddfe2 finemappingMethod PICS pValueMantissa 4 pValueExponent -28 beta null
+
+Timmers 2020's multivariate set (GCST011100, PICS, P 4e-28) ... For row 63.
+
+> [q765] data.credibleSet.locus.rows[0] posteriorProbability 0.4692622796271064 is95CredibleSet true
+
+... led by rs35198068 at PIP 0.469; multivariate, named, not counted (D25.5, D27.6). For row 63.
+
+> [q766] data.credibleSet studyLocusId a2b7c6567c8ba519ed1cd1170d2db39e finemappingMethod PICS pValueMantissa 5 pValueExponent -16 beta -0.008514585
+
+mvAge's set (GCST90321079, PICS, P 5e-16) ... For row 63.
+
+> [q767] data.credibleSet.locus.rows[0] posteriorProbability 0.33006469460849164 is95CredibleSet true
+
+... rs35198068 at PIP 0.330; named, not counted. For row 63.
