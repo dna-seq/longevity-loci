@@ -4,6 +4,7 @@ The curator seat's working state, rewritten to the present before a reset (`docs
 
 ## Now (2026-11-10)
 
+- **Owed, before locus 76 (2026-11-12, `unattended`, waiting on quota):** the lead's batch-eight read (handoff 639916204, D29.18-20 in 1129131). One commit per row: 69 (Table 9 fathers' line no longer counts, UK arm P 0.0056; Pilling mothers at the tag 0.0013 with no AncestryDNA line; soften the genotype texts), 73 (D29.19: power about 1.00, terms cancel; Arking 2002's homozygote sub-claim fails Deelen; exceptional survival on Arking 2002 only; drop the unsourced Revelas sentence; PROTECT:BUFFERING via Belloy or say why not; cite D29.14, D29.19), 74 (Wright's UK numbers are Pilling's line: per T, positive shorter; 'one scale' as Wright's pooling), 72 (cite pmid-30642433#q76; exceptional survival 0; D29.3 lead-own flag; mesothelioma GWAS PMID 41472358 Table 2, narrow the 'nothing else' claims), 65 (Wright S Table 6 legend and MAP2K6 line; Zenin after GC 0.0153; name what is unchecked), and the 0.40 to 0.39 fix in pmid-30729179. Then the D29.18 sweep of Table 9 AncestryDNA lines over rows 6, 8, 10, 11, 12, 15, 21, 27, 28, 29, 37, 39, 40, 53, 54, 56, 65, 67, 69, 70, 71, 74, 93 as its own unit, the moves reported in one message.
 - First locus done by hand: 46 LPA, tier A kept (060c9bd). Shown to the lead in `#longevity-loci > formats`
   (639271230) with six format questions: a cite for a database release (Open Targets, gnomAD), nominal replication
   read as `not_significant`, no design for "cases aged 90+", file names for seed loci whose names hold `/`,
