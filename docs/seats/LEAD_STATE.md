@@ -9,5 +9,5 @@
 1. Curate rows 71 onward (curator). Pacing is off on the person's word.
 2. Read each batch of about 10 rows adversarially and settle the curator's questions as decisions (lead).
 3. Export and rehearse the module again after each batch (module seat). It stays on the test instance until the person says otherwise.
-4. Pick the test instance's namespace (the person; default `test-longevity-loci`, already in use).
+4. Pick the test instance's namespace (the person, desk #274; default `test-longevity-loci`, already in use).
 5. Mark the field's consensus top loci: a flag, a new top tier, or nothing (the person, desk #266; nothing is built until then).
