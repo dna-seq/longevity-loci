@@ -33,7 +33,8 @@ verdict_reason: >-
   test), so the lead's T is commoner among centenarians; its overlap with Deelen's GEHA Italian arm is unknown, so
   it sets exceptional survival and lifts no tier. Beekman 2010's Table S5, a Leiden 85-plus look-up of GWAS disease
   alleles that may be independent of Deelen and is the one route to A that D29.1 leaves open, could not be reached
-  (the publisher answers 403, PubMed Central 404, Europe PMC holds no supplement file): unknown, not absent. CHARGE's
+  (the publisher answers 403 to fetch-supp and to the plugin's fetch_supplementary, PubMed Central 404, and Europe
+  PMC's supplementary-files endpoint answered with something other than a zip, contents unknown): unknown, not absent. CHARGE's
   longevity GWAS is unchecked (the search was refused, 429), not absent. (4) The red flag, from Zenin's own effect
   (D27.9): no source prints a healthspan-to-lifespan calibration; the curator's ratio of APOE's lines (Zenin's ε4
   β 0.0137, SE 0.0067, two standard errors from zero, against ε4 in each look-up) would put Deelen's 90th at about

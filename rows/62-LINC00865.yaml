@@ -28,10 +28,12 @@ verdict_reason: >-
   arms the same sign), Park 2025's UK Biobank own survival G −0.0041 on the Martingale residual, fewer deaths (P
   0.29, one-sided 0.15; the deposit's columns swapped as at 13 and 61), against FinnGen R11's any-death endpoint,
   G log OR +0.051 for death (P 0.38), and Deelen 2019's 90th percentile, G −0.088 (P 0.53); Deelen's 99th file has
-  no line for the lead or any of its 20 CEU proxies (r² ≥ 0.75; the r² 1.0 tags rest on a few copies). The proxies
-  agree with the lead: Deelen's 90th holds five, each leaning against G, none nominal (best P 0.20); FinnGen holds
-  all 20, each with G's partner on the side of more deaths (best P 0.21); LifeGen's 20 lean G's way, the best at
-  one-sided 0.093 (pmid-31413261#q165, db-finngen-r11#q44, pmid-30642433#q283). One weaker tag, rs74904474 (r² 0.50
+  no line for the lead or for any of the 19 CEU proxies searched there (Ensembl's window lists 21, at r² 0.746 or
+  1.0; the r² 1.0 tags rest on a few copies; Deelen was searched at the positions LifeGen gives, which lacks
+  rs111444455 and rs367711712). The proxies agree with the lead: Deelen's 90th holds five, each leaning against G,
+  none nominal (best P 0.20); FinnGen holds 20 of the 21 (not rs111444455), each with G's partner on the side of
+  more deaths (best P 0.21); LifeGen holds 19, 18 leaning G's way and rs7093513 flat, the best at one-sided
+  0.093 (pmid-31413261#q165, db-finngen-r11#q44, pmid-30642433#q283). One weaker tag, rs74904474 (r² 0.50
   in 1000 Genomes Tuscans, outside the paper's r² ≥ 0.6 list), leans G's way in LifeGen at P 0.0063 (one-sided
   0.003, "++", info 0.86, its frequency varying about twentyfold across cohorts; pmid-30642433#q282), but LifeGen
   tests the lead itself and that line is flat, so the proxy does not stand in for it (D29.3): named, not counted. G is rare in Europe (0.9 %), so these look-ups are far less precise than their sizes

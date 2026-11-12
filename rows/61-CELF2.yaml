@@ -121,7 +121,7 @@ studies:
     effect_unit: FinnGen's "Death" endpoint per T allele (positive = increased death, by rs35705950 in the same table, q16 and q9)
     effect_allele: T
     direction: protective
-    statistical_test: "Park 2025's look-up in FinnGen r11's \"Death\" endpoint (Supplementary Table 2), both sexes, not significant (q36); FinnGen's own line: log OR −0.0176, SE 0.208, P 0.93, T 0.031 % (db-finngen-r11#q36). D21 (derived): the whole-cohort +0.0147 (q54) under APOE's Park-to-FinnGen factor 8.1 (db-finngen-r11#q4 against q32) expects +0.12 (SE 0.046, from the whole cohort's P), power 0.14, heterogeneity P 0.52; the women's +0.0369, the generous bound, +0.30 (SE 0.054), power 0.42, heterogeneity P 0.14; both Ps count both estimates' errors (D29.6); MUC5B's factor 6.7 gives less; 80 % power needs a factor of 14; no calibration flags, so the mean factor (D25.3) is not needed: no red flag"
+    statistical_test: "Park 2025's look-up in FinnGen r11's \"Death\" endpoint (Supplementary Table 2), both sexes, not significant (q36); FinnGen's own line: log OR −0.0176, SE 0.208, P 0.93, T 0.031 % (db-finngen-r11#q36). D21 (derived): the whole-cohort +0.0147 (q54) under APOE's Park-to-FinnGen factor 8.1 (db-finngen-r11#q4 against q32) expects +0.12 (SE 0.046, the whole cohort's printed SE 0.0057 × 8.1, q54), power 0.14, heterogeneity P 0.52; the women's +0.0369, the generous bound, +0.30 (SE 0.054), power 0.42, heterogeneity P 0.14; both Ps count both estimates' errors (D29.6); MUC5B's factor 6.7 gives less; 80 % power needs a factor of 14; no calibration flags, so the mean factor (D25.3) is not needed: no red flag"
     curator: claude-opus-5-5
   - rsid: rs547541271
     note: pmid-30729179

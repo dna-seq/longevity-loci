@@ -332,5 +332,5 @@ rs4755202 reads the same way (A −0.0148, P 0.048). For row 65.
 > [q44] 10	90237320	C	G	rs151047665	LINC01374	0.208513	0.680866	0.0755015	0.0600332	0.00379864	0.00411978	0.00375841
 
 FinnGen R11's death endpoint (`rows-7a7d9270`) at rs151047665, a CEU proxy of row 62's lead: its rare G +0.076 log
-OR for death (SE 0.060), P 0.21. FinnGen holds all 20 CEU proxies, and each puts the rare allele, the lead's G's
+OR for death (SE 0.060), P 0.21. FinnGen holds 20 of the lead's 21 CEU proxies (not rs111444455), and each puts the rare allele, the lead's G's
 partner, on the side of more deaths, as at the lead (q38), none nominal (best P 0.21, this line); rs7093821's second alternative allele, T at 0.19 %, is another variant and leans the other way (P 0.37). For row 62, prose.
