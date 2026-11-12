@@ -3137,11 +3137,45 @@ systolic pressure (pmid-37550455#q61). For row 69.
 Open Targets 26.09, 12_95187042_T_G (rs12830425): 20 credible sets hold it (q828). Of the eight longevity studies,
 one: Timmers 2020's multivariate GCST011100, a PICS set of 77 variants that the lead itself leads at a posterior of
 0.058 (q829-q833). Its locus-to-gene: NR2C1 0.32 (q846, q847), VEZT 0.26, FGD6 0.20, NDUFA12 0.06; 36
-colocalisations, every one with another GWAS (q848): coronary disease (e.g. GCST005194, H4 0.95, q857, q858),
-platelet counts, angina, pulse pressure; no QTL colocalisation. The other sets, led by other variants with the lead
+colocalisations with other GWAS in a listing that names no study type (q848): coronary disease (e.g. GCST005194,
+H4 0.95, q857, q858), platelet counts, angina, pulse pressure. That listing returns GWAS only; the QTL types,
+queried by name, are a later reading (q859-q868). The other sets, led by other variants with the lead
 at a posterior of 0.006 to 0.06, phased by the set leads' minor alleles (about 0.07, q849-q856) riding with G
 (db-ensembl-116#q527-q536): G lowers coronary artery disease (GCST005195, rs4762479 T β −0.0081, P 2.5e-10; q834,
 q835), myocardial infarction (rs11107896 A β −0.091, P 2.3e-12; q836, q837) and angina (rs141526980 TGA β −0.088, P
 6.5e-13; q838, q839), and raises platelet count (rs10859847 G β +0.044, P 3.8e-16; q840, q841) and white-cell count
 (rs11107900 T β +0.010, P 7.6e-11; q842, q843). Two adipose sets for ENSG00000028203, VEZT (q844, q845), are not
 colocalised with the Timmers set. For row 70.
+
+## Reading 2026-11-12, supplement
+
+> [q859] data.credibleSet.colocalisation count 18
+
+> [q860] data.credibleSet.colocalisation.rows[0] colocalisationMethod COLOC_PIP_ECAVIAR h4 0.9414616949407358 clpp 0.014300823113747797 betaRatioSignAverage 0
+
+> [q861] data.credibleSet.colocalisation.rows[0].otherStudyLocus.study id gtex-v10_ge_adipose_subcutaneous_ensg00000180263 traitFromSource ENSG00000180263 studyType eqtl
+
+> [q862] data.credibleSet.colocalisation.rows[4] colocalisationMethod COLOC_PIP_ECAVIAR h4 0.945488131345599 clpp 0.015535540383610777 betaRatioSignAverage 0
+
+> [q863] data.credibleSet.colocalisation.rows[4].otherStudyLocus.study id gtex-v10_ge_artery_aorta_ensg00000180263 traitFromSource ENSG00000180263 studyType eqtl
+
+> [q864] data.credibleSet.colocalisation.rows[2] colocalisationMethod COLOC_PIP_ECAVIAR h4 0.9475215954755791 clpp 0.016854787900315388 betaRatioSignAverage 0
+
+> [q865] data.credibleSet.colocalisation.rows[2].otherStudyLocus.study id gtex-v10_ge_fibroblast_ensg00000028203 traitFromSource ENSG00000028203 studyType eqtl
+
+> [q866] data.credibleSet.colocalisation.rows[2].otherStudyLocus.study.target approvedSymbol VEZT
+
+> [q867] data.credibleSet.colocalisation.rows[11] colocalisationMethod COLOC_PIP_ECAVIAR h4 0.929982093342927 clpp 0.011834526321304713 betaRatioSignAverage 0
+
+> [q868] data.credibleSet.colocalisation.rows[11].otherStudyLocus.study.target approvedSymbol NDUFA12
+
+> [q869] data.cs.colocalisation.rows[1] h4 0.9704183181920868 clpp 0.0286918036640765 colocalisationMethod COLOC_PIP_ECAVIAR rightStudyType gwas
+
+> [q870] data.cs.colocalisation.rows[1].otherStudyLocus.study id GCST90476296 traitFromSource platelet count (maximum, inv-norm transformed) studyType gwas
+
+Timmers 2020's set at FGD6 (3dd6e379…), queried with the QTL types named (the query of row 20): 18 QTL
+colocalisations (q859), 13 at H4 ≥ 0.8. FGD6 holds 8 (expression in subcutaneous adipose, H4 0.94, q860, q861; aorta,
+0.95, q862, q863; fibroblasts, lung and arterial exons), VEZT 4 (fibroblast expression, 0.95, q864-q866; three
+adipose transcript and exon sets), NDUFA12 1 (a monocyte transcript, 0.93, q867, q868). The colocalisation sign field
+is 0 throughout, so no direction is read. The GWAS-only listing of the same set (q848) has 36 rows; its platelet
+colocalisation at H4 0.97 is GCST90476296, the maximum platelet count (q869, q870). For row 70.

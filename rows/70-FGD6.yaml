@@ -24,30 +24,33 @@ verdict_reason: >-
   against Wright's UK Biobank fathers' +0.0176 (P 3e-5) on the same scale, heterogeneity P 0.035 as Wright prints it
   (0.020 from the two arms, 0.033 with both SEs inflated by λ 1.182; derived). AncestryDNA's one-sided power for the
   UK arm's β at its SE is 0.975 (0.95 after λ): a red flag by D21 (power ≥ 0.8, heterogeneity P < 0.05, both errors
-  counted, D29.6), so `replication_failed`, as row 27 read this same test the other way (heterogeneity P 0.43, no
+  counted, D29.6), so `replication_failed`. It is fathers against fathers, the sex's own effect (D28.2); Table 9
+  has no mothers' line near the locus, which is no null (q6), and Timmers 2020 leaves the sex difference open (q31).
+  The printed A is no allele of rs11107904 (T/C): T's complement, a strand flip as well as the other allele's label.
+  Row 27 read this same test the other way (heterogeneity P 0.43, no
   flag). The flag needs at least about 0.87 of the UK arm's β (0.93 after λ), heterogeneity binding: a thin margin.
   No conversion is needed (D28.1 does not bite): both arms are Wright's, on one printed scale. The option, put to the
   lead: the UK Biobank fathers' arm is not the multivariate discovery's own effect (D27.9), so the flag is unknown
   (D26.3) and no token is set; the tier is B either way. The weaker tag rs4128507 (r² 0.29, D′ 1, 3 kb away) splits
   the same way more sharply (UK arm P 2.8e-7, AncestryDNA 0.95, heterogeneity P 0.0027), named only. The rsID literature
   search found Timmers 2020 and Bou Sleiman 2022 and nothing else (Semantic Scholar answered, with none).
-  Mechanism: heart and vessels. The Timmers set colocalises with coronary artery disease (H4 0.95, GCST005194) and
-  every one of its 36 colocalisations is with another GWAS (coronary disease, platelet counts, angina, pulse
-  pressure); phased through the set leads' minor alleles, which ride with G (r² 0.65 to 0.98), G lowers coronary
+  Mechanism: heart and vessels. The Timmers set colocalises with coronary artery disease (H4 0.95, GCST005194), and
+  its 36 colocalisations with other GWAS are coronary disease, platelet counts, angina and pulse pressure; phased through the set leads' minor alleles, which ride with G (r² 0.65 to 0.98), G lowers coronary
   artery disease (P 2.5e-10), myocardial infarction (P 2.3e-12) and angina (P 6.5e-13), and Timmers 2020 says the
   life-extending allele near FGD6 goes with less cardiovascular disease. That is shared signal at one haplotype, not a
-  mediator test; it is row 51's reading. G also raises platelet count (P 3.8e-16, colocalised at H4 0.97) and
-  white-cell count: pleiotropy mech:cvd and mech:blood_count. A trade-off is quoted (D18.1): Timmers 2020 finds the
+  mediator test; it is row 51's reading. G also raises platelet count (P 3.8e-16; the maximum-count set, GCST90476296,
+  colocalises at H4 0.97) and white-cell count: pleiotropy mech:cvd and mech:blood_count. A trade-off is quoted (D18.1): Timmers 2020 finds the
   life-extending SNP near FGD6 with more macular degeneration (q24, the quote that made row 43 `tradeoff`), so the row
   is descriptive (D18.2), whatever the coronary link suggests. Causal confidence C3: the lead is in the one
   lifespan-class set, Timmers 2020's PICS set of 77 variants, at a posterior of 0.058, under 0.1 (§4.2; the tier
-  rests on that study, so D25.5 and D28.5 do not bar it). Effector E3, no gene named, as row 21: no QTL colocalises
-  with the set and locus-to-gene passes for no gene (NR2C1 0.32, VEZT 0.26, FGD6 0.20). FGD6 is the papers'
-  candidate, with directions that disagree: Timmers 2020's SMR puts lower FGD6 expression (adipose, artery) with the
+  rests on that study, so D25.5 and D28.5 do not bar it). Effector E3, no gene named, by D24: of the set's 13 cis-QTL
+  colocalisations at H4 ≥ 0.8 (a query naming the QTL types), FGD6 holds 8 (adipose, aorta, fibroblasts, lung) and
+  VEZT 4 (fibroblasts, adipose), a rival with more than a tenth (NDUFA12 1); locus-to-gene passes for no gene (NR2C1
+  0.32, VEZT 0.26, FGD6 0.20). FGD6 leads, and is the papers' candidate, with directions that disagree: Timmers 2020's SMR puts lower FGD6 expression (adipose, artery) with the
   better side, and Rosoff's TWAS puts higher predicted FGD6 expression with the healthier mvAge side (z +4.9, P
   9.8e-7, colocalisation PP4 0.98, on a sub-genome-wide mvAge signal, so it sets no level, D28.5). Animal support,
   which never moves a tier or a weight (R-ANIMAL-1): in UM-HET3 mice Fgd6 is one of eleven genes tied at the top score
-  in the late male lifespan QTLs on chromosome 10 (Vezt is another), and knocking down its worm ortholog tag-77 by
+  in the late male lifespan QTLs (Vezt is another), and knocking down its worm ortholog tag-77 by
   RNAi shortened life about 14 % (P 0.0019); `animal:mouse_qtl` and `animal:worm_rnai`. No `animal_dir`: the human
   direction of FGD6 expression is itself in dispute, and a knockdown says nothing of which allele protects
   (R-ANIMAL-3). No `model_organism` study entry: none of §4.5's phenotype classes fits a mouse or a worm, so one is put
@@ -56,9 +59,9 @@ verdict_reason: >-
   is collective (q2, q11), and the sex difference is unsettled (q31). The evidence is European; G is 0.25 in East
   Asians, untested there.
 axes:
-  tier: {value: B, cites: [pmid-32678081#q28, pmid-32678081#q6, pmid-32678081#q9, pmid-32678081#q10, pmid-30642433#q290, pmid-37550455#q63, pmid-30729179#q100, pmid-30729179#q59, pmid-31413261#q170, pmid-31413261#q171, db-finngen-r11#q48, pmid-40021682#q70, pmid-40021682#q32, pmid-31484785#q116, pmid-31484785#q117, pmid-31484785#q83, pmid-30642433#q291, pmid-30642433#q292, db-ensembl-116#q534, db-ensembl-116#q535, db-ensembl-116#q537, db-ensembl-116#q538, db-ensembl-116#q539, db-gwascatalog-2026.10.29#q471, db-gwascatalog-2026.10.29#q472, db-gwascatalog-2026.10.29#q473]}
+  tier: {value: B, cites: [pmid-32678081#q28, pmid-32678081#q31, pmid-32678081#q6, pmid-32678081#q9, pmid-32678081#q10, pmid-30642433#q290, pmid-37550455#q63, pmid-30729179#q100, pmid-30729179#q59, pmid-31413261#q170, pmid-31413261#q171, db-finngen-r11#q48, pmid-40021682#q70, pmid-40021682#q32, pmid-31484785#q116, pmid-31484785#q117, pmid-31484785#q83, pmid-30642433#q291, pmid-30642433#q292, db-ensembl-116#q534, db-ensembl-116#q535, db-ensembl-116#q537, db-ensembl-116#q538, db-ensembl-116#q539, db-gwascatalog-2026.10.29#q471, db-gwascatalog-2026.10.29#q472, db-gwascatalog-2026.10.29#q473]}
   mechanism: {value: heart_vessels, cites: [pmid-32678081#q12, db-opentargets-26.09#q848, db-opentargets-26.09#q857, db-opentargets-26.09#q858, db-opentargets-26.09#q834, db-opentargets-26.09#q835, db-opentargets-26.09#q836, db-opentargets-26.09#q837, db-opentargets-26.09#q838, db-opentargets-26.09#q839, db-ensembl-116#q527, db-ensembl-116#q528, db-ensembl-116#q529, db-opentargets-26.09#q849, db-opentargets-26.09#q850, db-opentargets-26.09#q851]}
-  pleiotropy: {values: ["mech:cvd", "mech:blood_count", tradeoff], cites: [pmid-32678081#q12, pmid-32678081#q24, db-opentargets-26.09#q834, db-opentargets-26.09#q836, db-opentargets-26.09#q838, db-opentargets-26.09#q840, db-opentargets-26.09#q841, db-opentargets-26.09#q842, db-opentargets-26.09#q843, db-ensembl-116#q532, db-ensembl-116#q533, db-opentargets-26.09#q854, db-opentargets-26.09#q855]}
+  pleiotropy: {values: ["mech:cvd", "mech:blood_count", tradeoff], cites: [pmid-32678081#q12, pmid-32678081#q24, db-opentargets-26.09#q834, db-opentargets-26.09#q836, db-opentargets-26.09#q838, db-opentargets-26.09#q840, db-opentargets-26.09#q841, db-opentargets-26.09#q869, db-opentargets-26.09#q870, db-opentargets-26.09#q842, db-opentargets-26.09#q843, db-ensembl-116#q532, db-ensembl-116#q533, db-opentargets-26.09#q854, db-opentargets-26.09#q855]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
             cites: [pmid-30729179#q100, pmid-30642433#q290, pmid-40021682#q70, db-finngen-r11#q48, pmid-31484785#q116, pmid-31413261#q170, pmid-31413261#q171, pmid-32678081#q28]}
@@ -68,8 +71,8 @@ flags:
   - {token: replication_failed, cites: [pmid-31484785#q116, pmid-30642433#q291, db-ensembl-116#q534, db-ensembl-116#q538]}
   - {token: "PROTECT:PRESENCE", cites: [db-ensembl-116#q521, db-ensembl-116#q523, pmid-32678081#q28]}
   - {token: "causal:C3", cites: [db-opentargets-26.09#q829, db-opentargets-26.09#q830, db-opentargets-26.09#q831, db-opentargets-26.09#q832, db-opentargets-26.09#q833]}
-  - {token: "effector:E3", cites: [db-opentargets-26.09#q846, db-opentargets-26.09#q847, db-opentargets-26.09#q848, pmid-32678081#q29, pmid-32678081#q30, pmid-37550455#q63, db-opentargets-26.09#q844, db-opentargets-26.09#q845]}
-  - {token: "animal:mouse_qtl", cites: [pmid-36173858#q1, pmid-36173858#q5]}
+  - {token: "effector:E3", cites: [db-opentargets-26.09#q859, db-opentargets-26.09#q860, db-opentargets-26.09#q861, db-opentargets-26.09#q862, db-opentargets-26.09#q863, db-opentargets-26.09#q864, db-opentargets-26.09#q865, db-opentargets-26.09#q866, db-opentargets-26.09#q867, db-opentargets-26.09#q868, db-opentargets-26.09#q846, db-opentargets-26.09#q847, db-opentargets-26.09#q848, pmid-32678081#q29, pmid-32678081#q30, pmid-37550455#q63, db-opentargets-26.09#q844, db-opentargets-26.09#q845]}
+  - {token: "animal:mouse_qtl", cites: [pmid-36173858#q1]}
   - {token: "animal:worm_rnai", cites: [pmid-36173858#q2, pmid-36173858#q3, pmid-36173858#q4]}
 variants:
   - rsid: rs12830425
@@ -82,8 +85,9 @@ variants:
     stat_significance: significant
     direction: protective
     negatives: >-
-      The longer-life version, G, is tied by Timmers 2020 to more age-related macular degeneration, an eye disease,
-      and it raises platelet and white-cell counts. How these weigh against the longer life is not measured.
+      The longer-life version, G, is tied by Timmers 2020 to more age-related macular degeneration, an eye disease;
+      none of the credible sets holding it is for macular degeneration. How this weighs against the longer life is
+      not measured.
     genotypes:
       - genotype: T/T
         state: neutral
@@ -186,7 +190,7 @@ studies:
     study_design: percentile_case_control_p99
     population: European (Deelen 2019's longevity meta-analysis)
     ancestry: [EUR]
-    stat_significance: not_significant
+    stat_significance: nominal
     p_value: "0.06847"
     p_value_num: 0.06847
     p_one_sided: 0.034
