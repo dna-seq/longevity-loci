@@ -88,6 +88,10 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
 - A second insertion, on a tier D row with `gene: ""` (55 RP1, rs35262860, G>GCT in VCF alleles, 2ffbadb):
   genotypes G/G, G/GCT, GCT/GCT, all neutral, yet the variant carries `direction: protective` and an OR. Check the
   module keeps a tier D variant's direction and effect from reading as advice when every genotype is neutral.
+- A study whose P is a Bayes-factor permutation P, not an association test's (59 ABO, Timmers 2019's integrated
+  scan, P 1.9e-8, `significant`, D28.7, e4ec1d0), beside the same paper's conventional 6.3e-6. Check the format has
+  a place to say which P it is, so the module never shows it as a plain GWAS P. 59 is also a trade-off row
+  (descriptive, D18.2): check how the module carries a trade-off's negatives.
 - Plugin pinned at v0.48.6 (the liaison, f69789a; toolchain unchanged, format 0.7.1): `validate_module` returns
   `warnings_summary` and `carried`; the polygon's 409 is named as the instance's format skew; the GWAS fix
   (RM428) is on the compiler's main, unreleased. The new session after waking loads the new pin.
