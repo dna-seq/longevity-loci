@@ -39,15 +39,16 @@ verdict_reason: >-
   (0.03 to 0.15) in sets of body fat, BMI, adult femur-neck bone density, sitting height and amlodipine
   prescriptions led by other variants 60 kb away, whose phase with A is unread: named, not counted. The locus is descriptive. Open Targets 26.09 holds eleven sets with the lead and none of lifespan, longevity,
   healthspan or survival: causal C4 and effector E4, no gene (D24); CENPW leads L2G in most of the other sets.
-  Mechanism general ageing (D25.7), age of action unknown. Outcome: exceptional survival + (Deelen's 90th and 99th,
-  the discovery itself); lifespan 0 (LifeGen and FinnGen not significant); healthspan 0 (Zenin). Every genotype is neutral
+  Mechanism general ageing (D25.7), age of action unknown. Outcome: exceptional survival 0 (D28.10, the lead's ruling:
+  a D row stands on no study, so the discovery's own 90th and 99th give no `+`, and no independent look tests it;
+  the previous commits' `+` rejected); lifespan 0 (LifeGen and FinnGen not significant); healthspan 0 (Zenin). Every genotype is neutral
   (D25.2), the reference G/G (about 57 in 100 Europeans).
 axes:
   tier: {value: D, cites: [db-gwascatalog-2026.10.29#q312, db-gwascatalog-2026.10.29#q313, pmid-31413261#q110, pmid-31413261#q111, pmid-31413261#q112, pmid-31413261#q113, pmid-31413261#q114, pmid-31413261#q115, pmid-31413261#q116, db-gwascatalog-2026.10.29#q304, db-gwascatalog-2026.10.29#q305, pmid-30642433#q227, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, db-finngen-r11#q21, db-finngen-r11#q4, pmid-30729179#q69, db-ensembl-116#q304, db-ensembl-116#q305, db-ensembl-116#q306, db-ensembl-116#q307, db-ensembl-116#q308, db-ensembl-116#q309]}
   mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q600, pmid-31413261#q110]}
   pleiotropy: {values: [], cites: [db-gwascatalog-2026.10.29#q303, db-gwascatalog-2026.10.29#q306, db-gwascatalog-2026.10.29#q307, db-gwascatalog-2026.10.29#q308, db-gwascatalog-2026.10.29#q309, db-gwascatalog-2026.10.29#q310, db-gwascatalog-2026.10.29#q311, db-opentargets-26.09#q601, db-opentargets-26.09#q602, db-opentargets-26.09#q603]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "+",
+  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
             cites: [pmid-30729179#q69, pmid-30642433#q227, db-finngen-r11#q21, pmid-31413261#q110, pmid-31413261#q115, pmid-31413261#q116]}
   actionability: {label: descriptive, cites: [pmid-31413261#q110]}
   context: {values: [eur_only_evidence], cites: [db-gwascatalog-2026.10.29#q312, pmid-31413261#q112, pmid-31413261#q114, pmid-31413261#q115, db-ensembl-116#q307]}
