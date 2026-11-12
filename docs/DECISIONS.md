@@ -491,3 +491,13 @@ word.
      the reading most favourable to A, rejected.
    Both loci are on the field-consensus list the person asked about (desk #266): the field's consensus and this
    curation's evidence part there, as that question said they would.
+10. **On a tier D row, the contradicted discovery gives no `+`.** D28.3's "none gives `+`" counts the studies the
+   row stands on, and a D row stands on none: 55's exceptional survival is `−` on Deelen's UK Biobank validation,
+   and 49's is `−` on Deelen's 99th (one-sided 0.017 against), Liu's own `+` not counted. The curator's default at
+   49 (0) rejected.
+11. **A nominal look against with its power unknown sets no flag:** 4 and 20 stay B. Heterogeneity holds at any
+   positive factor there, but power needs a factor no source prints (D28.1), and a flag is power and heterogeneity
+   both (D21). Each row states the factor its power would need (2.49·SE/β). The curator's default.
+12. **Sets built on an overfit source set no causal or effector level** (D28.5's reason): 48 IL6 and 44 go to C4/E4,
+   gene empty, the candidate (IL6, PLN) in prose. D26.7's "PLN at E2 stands by §4.2's letter" is superseded: its L2G
+   rests on the excluded deposit line. The curator's default (unchanged) rejected.
