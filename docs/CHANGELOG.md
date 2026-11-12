@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- RM1 done: the export validates and compiles strict on just-dna-format 0.8.4 (64 loci, 192 variant rows, 331 studies, every locus resolved), and the module seat's first rehearsal is on the registry's test instance as test-longevity-loci/longevitymap 2.0.0 (module 0fa5e77). Nothing on production.
 - A variant may author its `locus` (chrom, start, ref, cited) where its rsID names several loci, and `loci export` writes it on the variant's rows and studies, so 0.8 verifies that locus instead of expanding onto all of them (D29.8; 47 AP5Z1).
 - D29.7: consistent nominal look-ups across independent samples do not stand in for a genome-wide anchor (65 HSD17B12 is C).
 - D29.3–6 from the adversarial read of rows 60 to 64: a proxy does not stand in where the lead is tested; an overfit discovery leaves exceptional survival untested; a printed P is read as printed; a heterogeneity P counts both errors.
