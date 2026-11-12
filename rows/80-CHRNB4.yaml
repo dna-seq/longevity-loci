@@ -28,7 +28,7 @@ verdict_reason: >-
   80 to 90, while Deelen's cases are defined by cumulative survival to the percentile, so it is the reading most
   favourable to A. The flag's reason, as the lead read it (D28.9): Deelen's 90th percentile tests cumulative survival
   against early deaths, a phenotype that carries smoking liability (Deelen's genetic correlation with cigarettes per
-  day −0.49); the loci's mean factor, 0.4175, is the mean over 18 loci that already pools midlife loci, CHRNA3/5
+  day −0.49, SE 0.13, pmid-31413261#q155); the loci's mean factor, 0.4175, is the mean over 18 loci that already pools midlife loci, CHRNA3/5
   among them, and leaving CHRNA3/5 out makes the flag stronger; the 18 loci show no spread in the factor (Q 9.0 on
   17 degrees of freedom). So the flag is no calibration artefact, and §4.1's "no red-flag heterogeneity" bars A
   whether the effect fades with age or not. D25.3 says the mean understates a late locus and APOE overstates a
@@ -51,7 +51,7 @@ verdict_reason: >-
   fathers 0.084 at 50-60 falling to 0.040 at 80-90 and mothers 0.054 at 60-70 to 0.021 at 80-90; the sex moderator is
   nominal (P 0.013) and fails FDR (Q 0.27), so no sex_specific.
 axes:
-  tier: {value: B, cites: [pmid-30642433#q4, pmid-29030599#q5, pmid-31484785#q7, pmid-31484785#q8, pmid-31413261#q2, pmid-31413261#q141, pmid-31413261#q142, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, pmid-30642433#q251, pmid-30642433#q169, pmid-30642433#q172]}
+  tier: {value: B, cites: [pmid-31413261#q155, pmid-30642433#q4, pmid-29030599#q5, pmid-31484785#q7, pmid-31484785#q8, pmid-31413261#q2, pmid-31413261#q141, pmid-31413261#q142, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, pmid-30642433#q251, pmid-30642433#q169, pmid-30642433#q172]}
   mechanism: {value: smoking_lungs, cites: [pmid-29030599#q8, pmid-30642433#q4]}
   pleiotropy: {values: ["mech:smoking", "context:smoking"], cites: [pmid-29030599#q8, pmid-31484785#q8]}
   age_of_action: {value: MIDLIFE, confidence: DIRECT, cites: [pmid-29030599#q7, pmid-30642433#q5, pmid-30642433#q166, pmid-30642433#q167, pmid-30642433#q168, pmid-30642433#q169, pmid-30642433#q170, pmid-30642433#q171, pmid-30642433#q172, pmid-30642433#q173, pmid-30642433#q174]}
