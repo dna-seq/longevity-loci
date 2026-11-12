@@ -1,6 +1,7 @@
 # The seed list's locus 65, HSD17B12 (11p11.2). Curated 2026-11-12. Lead rs4755737 (the seed's lead), an HSD17B12
 # intron, from Wright 2019's GWAS of AncestryDNA customers' own current age (Supplemental Table 8), as at rows 10 and
-# 54, not the parental-lifespan meta-analysis the seed names: the lead has no line in Supplemental Table 9. The seed's
+# 54, not the parental-lifespan meta-analysis the seed names: the lead has no line in Supplemental Table 9, which holds
+# clumped representatives only (pmid-31484785#q6), so its absence there is not a null. The seed's
 # second rsID, rs4755202 (172 kb away, a MIR670HG intron), is the same age-GWAS peak weakly tagged (r² 0.53, D′ 0.75
 # in CEU, phase not printed; db-ensembl-116#q476): named, not scored. Not in Timmers 2019's Figure 2 sheet.
 locus_id: 65
@@ -13,30 +14,34 @@ verdict_reason: >-
   genome-wide, at the P the paper uses for its own call (D17.3, D26.1): genomic control (λ 1.374) gives 4.8e-7
   against the paper's Bonferroni line of 9.3e-8; uncorrected it is 3.6e-9, the GWAS Catalog's "Longevity" record
   of 4e-9 and the GWAS Catalog's only association for the lead. The paper names only APOE and MAP2K6 from this
-  analysis. The seed reads the study as a parental-lifespan meta-analysis with UK Biobank: the lead is not in it;
-  the seed's second rsID, rs4755202, is, nominal in fathers (meta P 3.7e-4, its UK Biobank arm P 0.025) at r² 0.53
+  analysis. The seed reads the study as a parental-lifespan meta-analysis with UK Biobank: the lead has no line in
+  it, whose table holds clumped representatives only; the seed's second rsID, rs4755202, has one, nominal in fathers (meta P 3.7e-4, its UK Biobank arm P 0.025) at r² 0.53
   to the lead, named, not scored. Every independent look-up at the lead leans A's way, none past nominal: FinnGen
   R11's any-death endpoint (A with fewer deaths, P 0.039, one-sided 0.019; outside AncestryDNA and UK Biobank,
   named from the database line), Park 2025's own survival in 393,833 UK Biobank participants (A with fewer deaths
   than expected, P 0.012, one-sided 0.006; the deposit's allele columns swapped, as at APOE), Timmers 2019's million parental lives (P 0.095, one-sided 0.047), Deelen 2019's
   90th and 99th percentiles (one-sided 0.028 and 0.043) and Zenin 2019's healthspan (P 0.013, one-sided 0.0064).
-  The same customers' mothers also go A's way (genomic control P 0.0022), but those are the age GWAS's genotypes,
-  not a replication. A suggestive confirmation-class result with consistent nominal support across independent
-  samples: C, as rows 10 and 54, not B (R-TIER-4, no genome-wide scoring-class anchor), not D (nothing contradicts
+  The same customers' mothers also go A's way (genomic control P 0.0022; their fathers' P is above the table's 3e-3
+  cut, not printed), but those are the age GWAS's genotypes, not a replication. The independent looks are three
+  sample families, not six: UK Biobank (Timmers, Park and Zenin share it), FinnGen, and Deelen's cohorts (which
+  share at least the Rotterdam Study with LifeGen; the 99th percentile's cases sit inside the 90th's). A suggestive
+  confirmation-class result with consistent nominal support in those three: C, as rows 10 and 54, not B (R-TIER-4, no genome-wide scoring-class anchor), not D (nothing contradicts
   it). Open Targets 26.09 holds the lead in one credible set of the eight studies, Wright's age study's (PICS, 69
   variants), where its posterior probability, the set's highest, is 0.124. That set is built at the uncorrected
   4e-9 the row does not read as genome-wide, so it sets no causal or effector level (D28.5): C4, E4, no gene named.
   On that set, in prose only: locus-to-gene gives HSD17B12 0.454 (the seed's HSD17B12:0.45), ALKBH3 0.268; of its
   24 QTL colocalisations at H4 ≥ 0.8, HSD17B12 holds 17 (expression and splicing) and the unnamed ENSG00000246250 5,
   a rival by D24's tenth, so the call would be E3 even if the set counted. The set colocalises (H4 above 0.9) with
-  diastolic and systolic blood pressure, hypertension and sleep duration, and at 0.84 with body mass index; the
-  records carry no allele, so no direction for A is read: shared signal, not a mediator, so the mechanism is general
-  ageing with blood-pressure and sleep pleiotropy, and no trade-off is filed. The protection is a presence, the
+  diastolic and systolic blood pressure, hypertension, sleep duration, red cell distribution width and the linoleic
+  acid fraction, and at 0.84 with body mass index (under the cut, no token); every one of those sets is led by
+  another variant (the lead leads only Wright's set and one splicing set), so their betas give A no direction:
+  shared signal, not a mediator, so the mechanism is general ageing with blood-pressure, sleep, blood-count and
+  lipid pleiotropy, and no trade-off is filed. The protection is a presence, the
   derived A. Age of action is unknown. A is 0.68 in East Asians, untested there.
 axes:
-  tier: {value: C, cites: [pmid-31484785#q107, pmid-31484785#q31, pmid-31484785#q32, pmid-31484785#q33, db-gwascatalog-2026.10.29#q426, db-gwascatalog-2026.10.29#q427, db-gwascatalog-2026.10.29#q428, pmid-31484785#q108, pmid-31484785#q109, pmid-31484785#q110, db-ensembl-116#q476, db-finngen-r11#q43, pmid-30642433#q279, pmid-31413261#q163, pmid-31413261#q164, pmid-30729179#q91, pmid-40021682#q66, pmid-40021682#q32]}
+  tier: {value: C, cites: [pmid-31484785#q107, pmid-31484785#q31, pmid-31484785#q32, pmid-31484785#q33, pmid-31484785#q6, pmid-31413261#q2, db-gwascatalog-2026.10.29#q426, db-gwascatalog-2026.10.29#q427, db-gwascatalog-2026.10.29#q428, pmid-31484785#q108, pmid-31484785#q109, pmid-31484785#q110, db-ensembl-116#q476, db-finngen-r11#q43, pmid-30642433#q279, pmid-31413261#q163, pmid-31413261#q164, pmid-30729179#q91, pmid-40021682#q66, pmid-40021682#q32]}
   mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q794, db-opentargets-26.09#q795, db-opentargets-26.09#q796]}
-  pleiotropy: {values: ["mech:cvd", "mech:sleep"], cites: [db-opentargets-26.09#q794, db-opentargets-26.09#q795, db-opentargets-26.09#q796]}
+  pleiotropy: {values: ["mech:cvd", "mech:sleep", "mech:blood_count", "mech:lipids"], cites: [db-opentargets-26.09#q794, db-opentargets-26.09#q795, db-opentargets-26.09#q796, db-opentargets-26.09#q800, db-opentargets-26.09#q799, db-opentargets-26.09#q801]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
             cites: [pmid-30729179#q91, pmid-31484785#q107, db-finngen-r11#q43, pmid-30642433#q279, pmid-31413261#q163, pmid-31413261#q164, pmid-40021682#q66]}
@@ -62,8 +67,7 @@ variants:
         conclusion: >-
           You carry two copies of the older, ancestral version of this DNA region (about 29 in 100 people of
           European ancestry do). It is the reference the other combinations are compared with. The region, on
-          chromosome 11, lies inside the HSD17B12 gene, which helps make long-chain fats; which gene matters here,
-          if any, is not settled. The finding comes from people of European ancestry; less is known elsewhere.
+          chromosome 11, holds the HSD17B12 gene among others; which gene matters is not known. The finding comes from people of European ancestry; less is known elsewhere.
       - genotype: A/G
         state: protective
         conclusion: >-

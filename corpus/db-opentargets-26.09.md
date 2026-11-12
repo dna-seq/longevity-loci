@@ -2971,3 +2971,17 @@ carry no allele, so no direction for A is read from them. For row 65.
 skin, artery, lymphoblastoid cells and others), ENSG00000246250 5, API5 1, ACCS 1 (counted from the file). HSD17B12
 would lead by D24, with the unnamed ENSG00000246250 at 5 of 24 a rival; the set sets no level (D28.5), so this is
 prose. For row 65.
+
+> [q799] data.credibleSet.colocalisation.rows[48].otherStudyLocus.study id GCST90498300 traitFromSource Linoleic acid to total fatty acids percentage studyType gwas
+
+> [q800] data.credibleSet.colocalisation.rows[56].otherStudyLocus.study id GCST90476361 traitFromSource red cell diameter width (RDW, mean, inv-norm transformed) studyType gwas
+
+The same set's colocalisations with the linoleic acid fraction (H4 0.923) and red cell distribution width (H4 0.923),
+past the same 0.9 cut as q794 to q796. For row 65.
+
+> [q801] data.variant.credibleSets.rows[23].variant id 11_43770315_G_A
+
+`variant-11_43770315_G_A-leads.json` (the lead's 39 sets, each with its own lead variant): rs4755737 leads two, Wright's
+age set (row 23, beta 0.01207) and one splicing set of ENSG00000246250 (row 3). Every blood-pressure, hypertension and
+sleep-duration set holding it is led by another variant, so their betas are not A's and give it no direction. For
+row 65.
