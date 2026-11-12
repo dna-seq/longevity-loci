@@ -38,8 +38,9 @@ verdict_reason: >-
   doubts the call, and G's frequency in Liu's samples is printed nowhere read here (Table 1, the GWAS Catalog), so
   whether dataset 1's genotypes are sound is unknown, said not assumed; the paper's cross-array check removed SNPs
   whose calls disagreed in the 2,054 people typed on both, which tests calls, not associations. Outcome cells:
-  lifespan 0 (Timmers, FinnGen), healthspan 0 (Zenin), exceptional survival 0 (Deelen's two percentiles on A's side;
-  Liu's own survival analysis is the discovery's people). No trade-off at tier D: in dataset 1, G goes with less
+  lifespan 0 (Timmers, FinnGen), healthspan 0 (Zenin), exceptional survival `−` (D28.10, the lead's ruling: a D row
+  stands on no study, so Liu's own `+` is not counted, and Deelen's 99th is against G at one-sided 0.017; the 90th
+  leans the same way, P 0.17; Liu's own survival analysis is the discovery's people). No trade-off at tier D: in dataset 1, G goes with less
   arthritis (P 3.8e-6) and prostate cancer (P 0.0063), and Biobank Japan links the locus to the same and to BMI,
   direction not given; Liu cites an Alzheimer's report (Nelson 2014, P 1e-7, allele unnamed in the Catalog). No
   longevity effect is shown to run through any of them, so the mechanism is general ageing (D25.7). Context
@@ -52,7 +53,7 @@ axes:
   mechanism: {value: general_ageing, cites: [pmid-33657282#q18, pmid-33657282#q22, pmid-33657282#q23]}
   pleiotropy: {values: [], cites: [pmid-33657282#q22, pmid-33657282#q23, db-gwascatalog-2026.10.29#q321]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
+  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "−",
             cites: [pmid-30729179#q72, pmid-30642433#q233, db-finngen-r11#q24, pmid-31413261#q128, pmid-31413261#q129, pmid-33657282#q20]}
   actionability: {label: descriptive, cites: [pmid-33657282#q18]}
   context: {values: ["ancestry_specific:eas"], cites: [pmid-33657282#q3, pmid-33657282#q21, pmid-31413261#q129]}
