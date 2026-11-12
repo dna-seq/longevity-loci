@@ -25,7 +25,12 @@ verdict_reason: >-
   discovery's effect on Timmers' scale, Figure 2's column; the genome-wide age-at-death β is on another scale; D27.9),
   the 90th flags by APOE's factor (power 1.00, heterogeneity P 0.015) and not by the loci's mean factor (power 0.56, P
   0.32), and a flag that only one calibration raises is no flag (D25.3); the 99th flags under neither (power 0.86, P
-  0.17; 0.31, P 0.94) (its APOE factor borrowed from the 90th's ε4
+  0.17; 0.31, P 0.94). From the genome-wide age-at-death β itself the answer changes: carried to Timmers' scale by Table
+  1's SD of the summed z-scores (1 unit, 7.79 years of the parents' average age at death; 0.0197 × 7.79 × 2 / 10, about
+  0.031, derived), LifeGen without UK Biobank fails on power 0.98 and heterogeneity P 0.033, and Deelen's 90th flags
+  under both factors (mean factor power 0.91, P 0.044), which with no replication would make the row D (D22.3). The
+  conversion is mine, not printed, and the attained-age β is Timmers' own column for this SNP, so B holds as a default
+  and the choice is put to the lead (D27.9's edge: a discovery whose genome-wide analysis is on another scale) (its APOE factor borrowed from the 90th's ε4
   line, as at row 37; no 99th ε4 line is cached). FinnGen's death endpoint is null and leans the other
   way (A β −0.0035, P 0.64); under APOE's factor within FinnGen, from the same β, its power is about 0.79, short of 0.8
   (heterogeneity P 0.013), and under the mean factor 0.27, so it is no red flag. Wright 2019's AncestryDNA fathers,
@@ -40,7 +45,7 @@ verdict_reason: >-
   at row 21: no disease is known at the locus whose absence C would mark, and C is no rare protective allele. Age
   of action is unknown.
 axes:
-  tier: {value: B, cites: [pmid-29227965#q16, pmid-29227965#q17, pmid-29227965#q18, pmid-29227965#q19, pmid-30642433#q28, pmid-30642433#q219, pmid-30642433#q12, pmid-30642433#q101, pmid-31413261#q103, pmid-31413261#q104, pmid-31413261#q105, pmid-30642433#q92, db-finngen-r11#q16, pmid-31484785#q88, pmid-31484785#q83, pmid-30642433#q220, db-ensembl-116#q284, db-gwascatalog-2026.10.29#q293, db-gwascatalog-2026.10.29#q294]}
+  tier: {value: B, cites: [pmid-29227965#q16, pmid-29227965#q29, pmid-29227965#q30, pmid-29227965#q17, pmid-29227965#q18, pmid-29227965#q19, pmid-30642433#q28, pmid-30642433#q219, pmid-30642433#q12, pmid-30642433#q101, pmid-31413261#q103, pmid-31413261#q104, pmid-31413261#q105, pmid-30642433#q92, db-finngen-r11#q16, pmid-31484785#q88, pmid-31484785#q83, pmid-30642433#q220, db-ensembl-116#q284, db-gwascatalog-2026.10.29#q293, db-gwascatalog-2026.10.29#q294]}
   mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q411, db-opentargets-26.09#q575, db-gwascatalog-2026.10.29#q295, db-gwascatalog-2026.10.29#q296]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}

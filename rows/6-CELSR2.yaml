@@ -13,8 +13,8 @@ verdict_reason: >-
   independent of the discovery, Pilling's rs602633 is flat (Timmers 2019's Figure 2 source data: T +0.0002, SE
   0.0096, against the discovery's +0.0296, SE 0.0053; one-sided P 0.49), at power about 0.92 and heterogeneity P
   about 0.0075 (derived): a powered failure on the same scale, which caps the row at B (§4.1, D21) and carries
-  `replication_failed` (D25.13), though AncestryDNA replicates (the 67/71 rule). This row predates that sheet's
-  reading; the D27.9 sweep found it. The two arms pooled give about P 1.1e-6, which is why Timmers 2019's million
+  `replication_failed` (D25.13), though AncestryDNA replicates (the 67/71 rule). This row was written before that sheet
+  was first read (for row 71); the D27.9 sweep found it. The two arms pooled give about P 1.1e-6, which is why Timmers 2019's million
   lives give only 1.4e-6 by the conventional test (genome-wide only in its lipid-informed Bayesian scan, whose P is
   not counted here). Deelen 2019's 90th and 99th percentiles are null (P 0.16 to 0.52, all on the lifespan-raising
   side); calibrated from Pilling's effect (D27.9) they flag under APOE's factor (power 1.00 and 0.99, heterogeneity

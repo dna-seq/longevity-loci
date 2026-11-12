@@ -209,9 +209,11 @@ The curator seat's working state, rewritten to the present before a reset (`docs
 - **D27.9 sweep** (2026-11-12; the lead, 639598849): red flags recalibrated from Pilling's own effect (Timmers'
   Figure 2 discovery column, Timmers' scale) at every row whose discovery is Pilling's: 5, 6, 37, 42, 53, 67, 71, 81.
   Tier move: 6 A to B, and not from the calibration: the sheet's LifeGen-without-UK-Biobank line for rs602633 was never
-  read (row 6 predates the sheet) and fails on the same scale (power 0.92, heterogeneity P 0.0075); `replication_failed`.
+  read (row 6 was committed eight minutes before the sheet's first reading, for 71) and fails on the same scale (power 0.92, heterogeneity P 0.0075); `replication_failed`.
   Deelen at 6, 81 and 42 flags under APOE's factor only (now written into the tests); 67 and 71 replicate at Deelen, no
-  new flag; 5 has no calibrated test (its sheet line's SE 0.055 is unpowered); 53 was done on the rule. 37 holds on a
+  new flag (67 is a fathers' discovery, the same edge as 37 with no flag either way); 42 holds B on a default put to the
+  lead: from Timmers' attained-age column no flag, but its genome-wide age-at-death β carried to Timmers' scale (Table
+  1's SD, about 0.031) fails LifeGen (power 0.98, P 0.033) and flags Deelen's 90th under both, which would be D; 5 has no calibrated test (its sheet line's SE 0.055 is unpowered); 53 was done on the rule. 37 holds on a
   default put to the lead: Pilling's both-parents effect (P 3.5e-6, β estimated from the P) gives a flag under APOE
   only; the mothers' β would flag the 90th under both. Rows 8, 12, 46, 57, 80, 93 cite Pilling but rest on another
   discovery. Lesson: check every row's lead and proxies against Figure 2's sheet, not only new rows (one grep; the
