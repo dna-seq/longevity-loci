@@ -236,9 +236,12 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   (Wright prints no pooled effect, D20).
 - **56 TOX** (2026-11-12), tier B kept (seed B) on row 37's default. A fathers-only Pilling discovery whose tier
   turns on the calibration basis: from the fathers' Figure 2 effect (0.0824) Deelen's 90th flags under both factors
-  and the row would be D; from the both-parents effect (0.038, from Pilling's P at the fathers' SE) under APOE's only.
+  and the row would be D; from a both-parents effect (0.029 to 0.042: Timmers' pooled 0.0358 and Pilling's P at a UK Biobank-only SE; not the
+  fathers' SE, too large for the bigger sample) under APOE's only.
   Put to the lead with 37's question, and whether Wright's AncestryDNA fathers at rs7815098 (r² 0.39, one-sided about
-  0.040 after genomic control, pairing unread) would block a D. Lessons: `fetch-supp` names a REST answer after the
+  0.040 after genomic control; S9's label is the other allele, so the β counts the minor T, which travels with the
+  lead's G) would block a D. Read a tag's pairing from the frequencies and the UK Biobank arm before asking anyone;
+  an Open Targets null by key gets the rsID search too, and the best tags'. Lessons: `fetch-supp` names a REST answer after the
   URL's last segment, so two Ensembl calls on one rsID (variation, VEP) overwrite each other and an LD call lands as
   `1000GENOMES_phase_3_CEU`: always pass `--name` (to file at idle). A FinnGen line is not a study entry (`check rows`:
   a database release is cited from an axis or a flag); it lives in the tier's prose and cites.

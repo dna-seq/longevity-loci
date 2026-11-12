@@ -11,24 +11,29 @@ verdict_reason: >-
   independent sample replicates it. LifeGen's fathers without UK Biobank lean G's way (0.23 years, one-sided P 0.22),
   on one scale no red flag (power 0.86, heterogeneity P 0.078). Deelen 2019 leans against G at both percentiles (P
   0.25 and 0.18), and FinnGen R11's deaths lean against it too (P 0.54). Whether those are red flags turns on which
-  discovery effect is carried to their scales (D25.3), the question row 37 put to the lead. From Pilling's
-  both-parents effect, the like of Deelen's and FinnGen's sex-combined samples (about 0.038 from its P at the
-  fathers' SE, derived as at row 37), Deelen's 90th flags under APOE's factor only (power 0.97, heterogeneity P
-  0.006; the mean factor 0.42, P 0.03) and FinnGen under neither (power 0.59 and 0.19): no red flag, so a single
-  genome-wide study without independent replication, B. From the fathers' 0.0824 the 90th flags under both (mean
+  discovery effect is carried to their scales (D25.3), the question row 37 put to the lead. From a both-parents
+  effect, the like of Deelen's and FinnGen's sex-combined samples, 0.029 to 0.042 on Timmers' scale (derived: Timmers'
+  pooled UK Biobank and LifeGen estimate 0.0358, SE 0.0113, and Pilling's both-parents P 9.6e-3 at a UK Biobank-only SE
+  of 0.0113 to 0.016; Pilling prints no both-parents β), Deelen's 90th flags under APOE's factor only (power 0.84 to
+  0.98, heterogeneity P 0.002 to 0.008; the mean factor's power 0.30 to 0.48) and FinnGen under neither (APOE power
+  0.42 to 0.66): no red flag, so a single genome-wide study without independent replication, B. The one same-sex
+  independent test, LifeGen's fathers, does not flag; a D arises only from carrying a fathers' effect into
+  sex-combined samples. From the fathers' 0.0824 the 90th flags under both (mean
   factor power 0.93, heterogeneity P 0.0016 counting the mean's SE), with no independent scoring-class p < 0.05 G's
   way, which would make the row D (D25.1); FinnGen would flag under APOE's only (power 0.99, P 1.6e-4; mean 0.52).
-  Wright 2019's AncestryDNA fathers give rs7815098, a tag at r² 0.39, G one-sided about 0.040 after genomic control
-  if its G travels with the lead's (pairing not read), and rs13252116 (r² 0.57) P 0.30: tags this weak are named,
-  not counted, and the lead is asked whether the first would count against a D. Timmers' pooled summary statistics
+  Wright 2019's AncestryDNA fathers give rs7815098, a tag at r² 0.39 whose minor T (0.09) travels with the lead's G,
+  T longer-lived at one-sided about 0.040 after genomic control, and rs13252116 (r² 0.57, minor A) P 0.30 (S9's label
+  read as the other allele, the β per the minor allele, anchored by the UK Biobank arm's sign, as at row 39): tags
+  this weak are named, not counted, and the lead is asked whether the first would count against a D. Timmers' pooled summary statistics
   (P 0.0015, both arms G's way) hold UK Biobank, so they co-occur and do not replicate. Zenin 2019's healthspan, in
-  the same UK Biobank people, goes against G at P 0.049 (healthspan scores nothing alone, D22.2); the cell stays 0,
-  the question already put at row 55. The lead's G is the derived allele: a presence. Open Targets 26.09 holds no
-  record of the lead, so no credible set and no gene: C4, E4; Ensembl's VEP places it in an intron of TOX, named as
+  the same UK Biobank people, goes against G at P 0.049 (healthspan scores nothing alone, D22.2); the cell stays 0
+  by default, `−` put to the lead. The lead's G is the derived allele: a presence. Open Targets 26.09 holds no
+  record of the lead or of its best tags (rs79725344, rs10504278, r² 0.71), by key and by rsID search, so no
+  credible set and no gene: C4, E4; Ensembl's VEP places it in an intron of TOX, named as
   the gene the variant lies in, not as the gene acting. Mechanism general ageing, no pleiotropy quoted; age of
   action unknown. A fathers-only signal: sex-specific, male.
 axes:
-  tier: {value: B, cites: [pmid-29227965#q31, pmid-29227965#q32, pmid-30642433#q253, pmid-30642433#q12, pmid-30642433#q101, pmid-30642433#q254, pmid-31413261#q150, pmid-31413261#q82, pmid-30642433#q90, db-finngen-r11#q32, db-finngen-r11#q4, db-finngen-r11#q6, pmid-31484785#q105, pmid-31484785#q106, pmid-31484785#q83, db-ensembl-116#q393, db-ensembl-116#q394, pmid-30729179#q80, db-gwascatalog-2026.10.29#q358, db-gwascatalog-2026.10.29#q359]}
+  tier: {value: B, cites: [pmid-29227965#q31, pmid-29227965#q32, pmid-30642433#q253, pmid-30642433#q12, pmid-30642433#q101, pmid-30642433#q254, pmid-31413261#q150, pmid-31413261#q82, pmid-30642433#q90, db-finngen-r11#q32, db-finngen-r11#q4, db-finngen-r11#q6, pmid-31484785#q105, pmid-31484785#q106, pmid-31484785#q83, db-ensembl-116#q393, db-ensembl-116#q394, db-ensembl-116#q397, db-ensembl-116#q398, pmid-30729179#q80, db-gwascatalog-2026.10.29#q358, db-gwascatalog-2026.10.29#q359]}
   mechanism: {value: general_ageing, cites: [pmid-29227965#q31]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -38,8 +43,8 @@ axes:
   context: {values: ["sex_specific:m", eur_only_evidence], cites: [pmid-29227965#q31, pmid-29227965#q32, pmid-30642433#q253, db-ensembl-116#q390]}
 flags:
   - {token: "PROTECT:PRESENCE", cites: [pmid-29227965#q31, db-ensembl-116#q388]}
-  - {token: "causal:C4", cites: [db-opentargets-26.09#q735]}
-  - {token: "effector:E4", cites: [db-opentargets-26.09#q735, db-ensembl-116#q395, db-ensembl-116#q396]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q735, db-opentargets-26.09#q575]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q735, db-opentargets-26.09#q575, db-ensembl-116#q395, db-ensembl-116#q396]}
 variants:
   - rsid: rs13262617
     gene: ""
@@ -149,7 +154,7 @@ studies:
     effect_unit: odds ratio of reaching the 90th percentile, per A allele (the discovery's shorter-lived allele)
     effect_allele: A
     direction: risk
-    statistical_test: "Look-up of Pilling's fathers' rs13262617 in Supplementary Data 1; leans against G (G log odds -0.060, SE 0.053 from the P, derived). D21 under D25.3 (derived): from Pilling's both-parents effect (about 0.038, the default as at row 37) APOE factor power 0.97, heterogeneity P 0.006, mean factor power 0.42, P 0.03: one calibration, no flag; from the fathers' 0.0824 both flag (APOE power 1.00, P 2e-7; mean 0.93, P 0.0016 counting the mean's SE), put to the lead"
+    statistical_test: "Look-up of Pilling's fathers' rs13262617 in Supplementary Data 1; leans against G (G log odds -0.060, SE 0.053 from the P, derived). D21 under D25.3 (derived): from a both-parents effect of 0.029 to 0.042 (row 37's default basis; Timmers' pooled 0.0358, pmid-30642433#q254, and Pilling's P) APOE factor power 0.84 to 0.98, heterogeneity P 0.002 to 0.008, mean factor power 0.30 to 0.48: one calibration, no flag; from the fathers' 0.0824 both flag (APOE power 1.00, P 2e-7; mean 0.93, P 0.0016 counting the mean's SE), put to the lead"
     curator: claude-opus-5-5
   - rsid: rs13262617
     note: pmid-31413261
@@ -169,7 +174,7 @@ studies:
     effect_unit: odds ratio of reaching the 99th percentile, per A allele (the discovery's shorter-lived allele)
     effect_allele: A
     direction: risk
-    statistical_test: "Look-up of Pilling's fathers' rs13262617 in Supplementary Data 1; leans against G (G log odds -0.112, SE 0.084, derived). D21 under D25.3: both-parents basis power 0.71 (APOE) and 0.23 (mean), no flag; fathers' basis APOE power 1.00, heterogeneity P 4e-6, mean power 0.63, no flag"
+    statistical_test: "Look-up of Pilling's fathers' rs13262617 in Supplementary Data 1; leans against G (G log odds -0.112, SE 0.084, derived). D21 under D25.3: both-parents basis power 0.51 to 0.77 (APOE), mean factor lower, no flag; fathers' basis APOE power 1.00, heterogeneity P 4e-6, mean power 0.63, no flag"
     curator: claude-opus-5-5
   - rsid: rs13262617
     note: pmid-30729179
@@ -188,5 +193,5 @@ studies:
     effect_unit: log hazard of the end of healthspan per G allele (positive = earlier)
     effect_allele: G
     direction: risk
-    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), -log10 P 1.31; against the discovery, in the same UK Biobank people; healthspan scores nothing alone (D22.2); the outcome cell stays 0, the question put at row 55"
+    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), -log10 P 1.31; against the discovery, in the same UK Biobank people; healthspan scores nothing alone (D22.2); the outcome cell stays 0 by default, `−` put to the lead"
     curator: claude-opus-5-5

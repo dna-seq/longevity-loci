@@ -1445,3 +1445,12 @@ An intron variant of RP1 (ENSG00000104237) on its protein-coding transcript ENST
 
 `vep-rs13262617.json`: an intron variant of TOX (ENSG00000198846), on the first listed transcript, ENST00000361421. For row
 56.
+
+> [q397] populations[78] allele_count 91 allele T frequency 0.0904572564612326 population 1000GENOMES:phase_3:EUR
+
+> [q398] populations[67] frequency 0.0596421471172962 allele A population 1000GENOMES:phase_3:EUR allele_count 60
+
+`var-rs7815098.json` and `var-rs13252116.json`, the two Wright 2019 fathers' tags of row 56's lead: rs7815098's minor T
+0.090 in 1000 Genomes Europeans (C/A/T, C ancestral, GRCh38 8:58,927,549); rs13252116's minor A 0.060 (G/A, GRCh38
+8:58,901,250). For row 56.
+

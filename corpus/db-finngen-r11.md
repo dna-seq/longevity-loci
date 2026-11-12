@@ -243,5 +243,5 @@ FinnGen R11 death endpoint (`rows-d05d9439`), rs13262617 at 8:58,925,574 (GRCh38
 0.0201) on the log hazard of death, P 0.54: G, the discovery's longer-lived allele, leans to more deaths (one-sided
 0.73 against the discovery, derived). D21, Timmers' scale into FinnGen by APOE's factor (0.99, q4 over
 pmid-30642433#q90) and the loci's mean factor (derived): from the fathers' 0.0824, APOE power 0.99, heterogeneity P
-1.6e-4, mean power 0.52 (P 0.027), so no flag; from the both-parents 0.038, power 0.59 and 0.19, no flag. No UK
+1.6e-4, mean power 0.52 (P 0.027), so no flag; from a both-parents 0.029 to 0.042 (pmid-30642433#q254), APOE power 0.42 to 0.66, no flag. No UK
 Biobank. For row 56.

@@ -2702,5 +2702,6 @@ row 55.
 
 ## Reading 2026-11-12, record
 
-`variant-8_58925574_A_G-all.json`: Open Targets 26.09 answers q735's text for rs13262617 too: no record, so no
-credible set holds it: C4, E4. For row 56.
+`variant-8_58925574_A_G-all.json`: Open Targets 26.09 answers q735's text for rs13262617 too, and its variant
+search (q575's text) finds nothing for rs13262617 nor for its best CEU tags rs79725344 and rs10504278 (r² 0.71,
+db-ensembl-116#q392): no record, so no credible set holds the lead: C4, E4. For row 56.
