@@ -49,6 +49,7 @@ flags:
   - {token: "effector:E4", cites: [db-opentargets-26.09#q884, db-opentargets-26.09#q886]}
 variants:
   - rsid: rs35257605
+    locus: {chrom: "13", start: 73649403, ref: C, cites: [db-ensembl-116#q570, db-ensembl-116#q574, db-finngen-r11#q52, db-opentargets-26.09#q883, pmid-40021682#q76]}  # D29.8: the C>CTT locus (the 15-T allele), the one Park's deposit (GRCh37 74,223,540 C/CTT), FinnGen and Open Targets write, anchored at GRCh38 73,649,403
     gene: ""
     phenotype: KLF12 region (13q22.1), own survival
     trait_efo_id: OBA_VT0005372
