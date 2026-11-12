@@ -4,6 +4,7 @@ id = "longevity-loci"
 # Where the liaison files a defect of the module tooling through the kit's report-to-kit --to: the plugin's
 # repository, which keeps no consumer inbox. The compiler and the registry are filed through their inboxes.
 producers = "dna-seq/just-module-creator"
+pace = "full-forward"
 
 # The seats run on the cluster (the person, 2026-11-04: "due to large volume of texts and databases"). Its facts
 # (partition, nodes, job prefix) are the machine file ~/.config/agent-seat-blueprints/slurm.toml, never this file:
