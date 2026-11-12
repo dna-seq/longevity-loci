@@ -503,3 +503,10 @@ word.
 12. **Sets built on an overfit source set no causal or effector level** (D28.5's reason): 48 IL6 and 44 go to C4/E4,
    gene empty, the candidate (IL6, PLN) in prose. D26.7's "PLN at E2 stands by §4.2's letter" is superseded: its L2G
    rests on the excluded deposit line. The curator's default (unchanged) rejected.
+13. **A hit its own authors call anomalous is an overfit source: 60 LINC02907 is D.** Pilling 2016 says its top 1 %
+   hit at rs75824829 (P 4.0e-8) "may be anomalous": a lone SNP with no peak of correlated neighbours, the shape a
+   genotyping artefact leaves. As at 41 (authors doubting their controls), 44 (below the paper's own filter) and 48
+   (its group's QC), the source's own judgment of its call decides (D17.3's spirit), and nothing independent stands
+   for it: Deelen has no line at the lead or its proxy, FinnGen death leans against, LifeGen's own cohorts lean
+   against. Genotypes neutral, exceptional survival 0 (D28.10), no causal or effector level (D28.12). The curator's
+   (a), B as 47, rejected: 47's authors call it suggestive, not anomalous, and Deelen replicates it.
