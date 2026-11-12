@@ -11,8 +11,9 @@ verdict_reason: >-
   Tier C, from the seed's B. The region's strongest result is Wright 2019's GWAS of the current age of 482,068
   AncestryDNA customers (VIABILITY_AF, confirmation only under §4.5, so it cannot carry A or B alone, D23). There A,
   the derived allele (0.46 in non-Finnish Europeans), is commoner among older customers, and it is suggestive, not
-  genome-wide, at the P the paper uses for its own call (D17.3, D26.1): genomic control (λ 1.374) gives 4.8e-7
-  against the paper's Bonferroni line of 9.3e-8; uncorrected it is 3.6e-9, the GWAS Catalog's "Longevity" record
+  genome-wide, at the P the paper uses for its own call (D17.3, D26.1, D29.7): Supplementary Table 6 marks
+  significance on the genomic-control P after Bonferroni correction, and MAP2K6 passes there only narrowly (PUC
+  2.39e-8, PGC 9.84e-8); genomic control (λ 1.374) gives the lead 4.8e-7 against the paper's Bonferroni line of 9.3e-8; uncorrected it is 3.6e-9, the GWAS Catalog's "Longevity" record
   of 4e-9 and the GWAS Catalog's only association for the lead. The paper names only APOE and MAP2K6 from this
   analysis. The seed reads the study as a parental-lifespan meta-analysis with UK Biobank: the lead has no line in
   it, whose table holds clumped representatives only; the seed's second rsID, rs4755202, has one, nominal in fathers (meta P 3.7e-4, its UK Biobank arm P 0.025) at r² 0.53
@@ -20,7 +21,8 @@ verdict_reason: >-
   R11's any-death endpoint (A with fewer deaths, P 0.039, one-sided 0.019; outside AncestryDNA and UK Biobank,
   named from the database line), Park 2025's own survival in 393,833 UK Biobank participants (A with fewer deaths
   than expected, P 0.012, one-sided 0.006; the deposit's allele columns swapped, as at APOE), Timmers 2019's million parental lives (P 0.095, one-sided 0.047), Deelen 2019's
-  90th and 99th percentiles (one-sided 0.028 and 0.043) and Zenin 2019's healthspan (P 0.013, one-sided 0.0064).
+  90th and 99th percentiles (one-sided 0.028 and 0.043) and Zenin 2019's healthspan (P 0.0153 after its genomic
+  control of 1.053, one-sided 0.0077; raw 0.013, D26.1).
   The same customers' mothers also go A's way (genomic control P 0.0022; their fathers' P is above the table's 3e-3
   cut, not printed), but those are the age GWAS's genotypes, not a replication. The independent looks are three
   sample families, not six: UK Biobank (Timmers, Park and Zenin share it), FinnGen, and Deelen's cohorts (which
@@ -37,9 +39,10 @@ verdict_reason: >-
   another variant (the lead leads only Wright's set and one splicing set), so their betas give A no direction:
   shared signal, not a mediator, so the mechanism is general ageing with blood-pressure, sleep, blood-count and
   lipid pleiotropy, and no trade-off is filed. The protection is a presence, the
-  derived A. Age of action is unknown. A is 0.68 in East Asians, untested there.
+  derived A. Age of action is unknown. A is 0.68 in East Asians, untested there. Unchecked: a region-wide GWAS
+  Catalog scan (its old API retired, v2 timed out), and Park's deposit beyond the two seed rsIDs.
 axes:
-  tier: {value: C, cites: [pmid-31484785#q107, pmid-31484785#q31, pmid-31484785#q32, pmid-31484785#q33, pmid-31484785#q6, pmid-31413261#q2, db-gwascatalog-2026.10.29#q426, db-gwascatalog-2026.10.29#q427, db-gwascatalog-2026.10.29#q428, pmid-31484785#q108, pmid-31484785#q109, pmid-31484785#q110, db-ensembl-116#q476, db-finngen-r11#q43, pmid-30642433#q279, pmid-31413261#q163, pmid-31413261#q164, pmid-30729179#q91, pmid-40021682#q66, pmid-40021682#q32]}
+  tier: {value: C, cites: [pmid-31484785#q107, pmid-31484785#q120, pmid-31484785#q121, pmid-31484785#q31, pmid-31484785#q32, pmid-31484785#q33, pmid-31484785#q6, pmid-31413261#q2, db-gwascatalog-2026.10.29#q426, db-gwascatalog-2026.10.29#q427, db-gwascatalog-2026.10.29#q428, pmid-31484785#q108, pmid-31484785#q109, pmid-31484785#q110, db-ensembl-116#q476, db-finngen-r11#q43, pmid-30642433#q279, pmid-31413261#q163, pmid-31413261#q164, pmid-30729179#q91, pmid-40021682#q66, pmid-40021682#q32]}
   mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q794, db-opentargets-26.09#q795, db-opentargets-26.09#q796]}
   pleiotropy: {values: ["mech:cvd", "mech:sleep", "mech:blood_count", "mech:lipids"], cites: [db-opentargets-26.09#q794, db-opentargets-26.09#q795, db-opentargets-26.09#q796, db-opentargets-26.09#q800, db-opentargets-26.09#q799, db-opentargets-26.09#q801]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -153,12 +156,12 @@ studies:
     sample_size: 300447
     sample_unit: individuals
     stat_significance: nominal
-    p_value: "0.0128"
-    p_value_num: 0.0128
+    p_value: "0.0153"
+    p_value_num: 0.0153
     effect_size: -0.0121
     effect_measure: beta
     effect_unit: log hazard of the end of healthspan per A allele (negative = later)
     effect_allele: A
     direction: protective
-    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), -log10 P 1.891"
+    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), -log10 P 1.891 (P 0.0128 raw); 0.0153 after the paper's genomic control of 1.053 (q59, D26.1; derived), one-sided 0.0077"
     curator: claude-opus-5-5
