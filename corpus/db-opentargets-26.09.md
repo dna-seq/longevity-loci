@@ -3190,3 +3190,20 @@ colocalisation at H4 0.97 is GCST90476296, the maximum platelet count (q869, q87
 
 Open Targets 26.09 has no record for rs2440012 (13_18865983_C_G, q871), and Zeng's study GCST003425 holds one
 credible set, IL6's (q872, q873): none at ANKRD20A9P. No causal or effector level can be read. For row 72.
+
+## Reading 2026-11-12, record
+
+> [q874] data.variant.credibleSets count 1
+
+> [q875] data.variant.credibleSets.rows[0] studyLocusId 359bfd7d6e7151cb2172ee4d61040301 pValueMantissa 2.196429967880249 pValueExponent -7 beta -0.549065
+
+> [q876] data.variant.credibleSets.rows[0].study id OTAR2057_IBDverse_ge_Colon_ileum_Enterochromaffin_TPH1_CES1+_ENSG00000133116 traitFromSource ENSG00000133116 studyType sceqtl
+
+> [q877] data.variant.credibleSets.rows[0].locus.rows[0] posteriorProbability 0.012101984836731734
+
+> [q878] data.credibleSets count 0
+
+13_33054001_T_G (rs9536314, row 73): one credible set holds it (q874), a single-cell eQTL for KL
+(ENSG00000133116) in ileal enterochromaffin cells (q876), led by 13_33083565_A_C (q875), where KL-VS's posterior
+probability is 0.012 (q877). No set of the nine longevity studies (Timmers 2019 and 2020, Deelen 2019, Zeng 2016 and
+the rest of the list) holds it (q878). No longevity or disease fine-mapping places KL-VS. For row 73.

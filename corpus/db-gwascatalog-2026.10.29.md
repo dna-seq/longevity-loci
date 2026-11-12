@@ -1686,3 +1686,9 @@ G at 0.073, P 8e-9 (q471, q472). For row 70.
 
 GWAS Catalog, rs2440012: one association, Zeng 2016's (GCST003425), P 4e-8, OR 1.66 (per C, the inverse of 0.602).
 No other trait. For row 72.
+
+## Reading 2026-11-12, record
+
+> [q475] page size 200 totalElements 0 totalPages 0 number 0
+
+rs9536314 holds no association in the GWAS Catalog (q475): no genome-wide line for KL-VS on any trait. For row 73.

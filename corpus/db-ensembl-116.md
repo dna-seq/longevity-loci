@@ -2004,3 +2004,28 @@ rs2440012 in ALFA (dbSNP's frequencies; the sample labels are not in the cached 
 0.90, A 0.0014), the numbers Liu 2021 gives for Europeans (pmid-33657282#q30); SAMN10492704 (74 alleles) and
 SAMN10492697 (60) carry C only, and two others (86, 478 alleles) likewise. 1000 Genomes has G at 0.20 in Europeans and
 0.095 in East Asians (q545, q542). The reference frequency depends on the source. For row 72.
+
+## Reading 2026-11-12, record
+
+> [q554] mappings[0] seq_region_name 13 allele_string T/A/G end 33054001 start 33054001 coord_system chromosome ancestral_allele T assembly_name GRCh38 location 13:33054001-33054001 strand 1
+
+> [q555] mappings[0] start 33628138 location 13:33628138-33628138 assembly_name GRCh37 allele_string T/A/G seq_region_name 13 coord_system chromosome end 33628138 ancestral_allele T strand 1
+
+> [q556] populations[95] allele G allele_count 195 frequency 0.193836978131213 population 1000GENOMES:phase_3:EUR
+
+> [q557] populations[75] allele G allele_count 265 frequency 0.200453857791225 population 1000GENOMES:phase_3:AFR
+
+> [q558] populations[91] frequency 1 population 1000GENOMES:phase_3:EAS allele_count 1008 allele T
+
+> [q559] populations[18] allele_count 173893 allele G population gnomADe:nfe frequency 0.1565
+
+> [q560] [27] r2 1.000000 variation2 rs9527025 variation1 rs9536314 population_name 1000GENOMES:phase_3:EUR d_prime 1.000000
+
+> [q561] [0].transcript_consequences[1] cds_end 1054 hgnc_id HGNC:6344 variant_allele G transcript_id ENST00000380099 gene_symbol_source HGNC polyphen_score 1 polyphen_prediction probably_damaging codons Ttt/Gtt biotype protein_coding gene_symbol KL protein_end 352 cds_start 1054 cdna_end 1072 cdna_start 1072 amino_acids F/V gene_id ENSG00000133116 sift_score 0.02 sift_prediction deleterious protein_start 352 impact MODERATE strand 1
+
+rs9536314 (row 73, KL-VS): GRCh38 13:33,054,001 (q554), GRCh37 13:33,628,138 (q555), T/A/G, T ancestral. G, the V352
+allele of KL-VS, is 0.19 in 1000 Genomes Europeans (q556), 0.20 in Africans (q557), absent in East Asians (T at 1.0,
+q558), 0.157 in gnomAD exomes' non-Finnish Europeans (q559). rs9527025 (C370S, KL-VS's other coding change) is in
+complete LD with it in Europeans, r² 1.0, D′ 1.0 (q560), with ten other SNPs at r² 1.0 in the window. VEP: G is
+Ttt/Gtt, a missense change at residue 352 of KL's canonical transcript ENST00000380099, PolyPhen probably damaging
+(q561; its F/I line is the A allele). For row 73.

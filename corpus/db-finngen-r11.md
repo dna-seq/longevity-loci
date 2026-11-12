@@ -372,3 +372,10 @@ FinnGen R11 DEATH (`rows-2aa4ffe6`), rs12830425 (GRCh38 12:95,187,042): alt G at
 
 FinnGen R11 DEATH, rs2440012 (GRCh38 13:18,865,983), alt G at 0.19: β −0.0029 (SE 0.0095), P 0.76; G on the
 fewer-deaths side, flat, against Zeng's (one-sided for C 0.62, derived). A separate C/A line is not read. For row 72.
+
+## Reading 2026-11-12, record
+
+> [q50] 13 33054001 T G rs9536314 KL 0.530451 0.275355 0.00581862 0.00927538 0.198429 0.199372 0.19831
+
+FinnGen R11 DEATH at rs9536314 (GRCh38 13:33,054,001), row 73: G (0.198) beta +0.0058 (SE 0.0093), P 0.53, G with
+slightly more deaths, flat (q50). For row 73.

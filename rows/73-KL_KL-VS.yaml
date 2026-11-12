@@ -1,0 +1,218 @@
+# The seed list's locus 73, KL (KL-VS, F352V). Curated 2026-11-12. Lead rs9536314 (GRCh38 13:33,054,001, GRCh37
+# 13:33,628,138, T/A/G), the F352V change of KLOTHO's KL-VS haplotype, whose other coding change C370S is rs9527025
+# (r² 1.0 in Europeans). G, the V352 allele, is about 0.16 to 0.19 in Europeans, 0.20 in Africans and absent in East
+# Asians. A candidate-gene locus from v1 (v1 holds rs9536314 and rs9527025, both from Arking 2002).
+locus_id: 73
+locus_name: KL (KL-VS
+verdict: kept
+verdict_reason: >-
+  Tier C, as the seed: a candidate-gene association replicated only in small or same-group samples (§4.1's C), its
+  claim a genotype model, not an allele. Arking 2002 named KL-VS (six variants in complete LD, F352V and C370S) and
+  found its homozygotes underrepresented among the elderly of three populations (Bohemian Czechs, Baltimore
+  Caucasians and African-Americans; combined OR 2.59, P < 0.0023), with V352 cutting secreted klotho 6-fold in
+  transfected cells. The same group's 2005 paper, in 525 Ashkenazi Jews, reports a heterozygote advantage: combined
+  with the Czech data an OR of 1.57 (1.23 to 1.98) for 5-year survival, and among probands aged 95 or more a Cox HR
+  for death of 2.15 (1.18 to 3.91) for wild-type and 4.49 for VS homozygotes, against heterozygotes. Independent
+  samples: Invidia 2010 (1,089 Italians aged 19 to 109) found heterozygotes enriched among the elderly but not among
+  centenarians; de Vries 2017 (Aberdeen Birth Cohort 1936) found heterozygotes with shorter survival, which its
+  authors call unexpected. Three meta-analyses call KL-VS significant (Di Bona 2014 for healthy ageing, Revelas 2018
+  for survival to 85, Zhu 2019 for longevity), but none of their abstracts gives a pooled effect or a genetic model
+  (only the abstracts were read), and Zhu's "the F allele played a protective role" is a per-allele claim, not a
+  heterozygote advantage, so they are not counted as one agreeing result. Every large look is per-allele and flat:
+  LifeGen G −0.0061 (P 0.24, n 638,891), Deelen's 90th percentile G +0.024 (P 0.37) and 99th +0.026 (P 0.53), FinnGen
+  R11 death G with more deaths (P 0.53, a database line), Park 2025 G with more deaths (P 0.49, columns swapped), Zenin's
+  healthspan G earlier (P 0.081 raw, 0.089 after genomic control). An additive test reads a heterozygote contrast only
+  in part: weighting genotypes at G 0.16, the per-allele slope is 0.68 of the heterozygote log OR plus 0.16 of the
+  homozygote's. Under Arking's full model (heterozygote 1.57, homozygote 1/2.59) the expected Deelen 90th log OR is
+  +0.154 (SE 0.097 from the discovery's intervals), power 1.00 but heterogeneity P 0.19 (99th: 0.98, 0.22); a flag
+  appears only under models Arking does not state (homozygotes as wild type, P 0.0011). That conversion is the
+  curator's, from odds ratios of different designs, so the red flag is unknown and no token is set (D28.1, D26.3), and
+  D25.1's "explicitly contradicted" is not met. No study has tested the heterozygote contrast at scale. Mechanism
+  `legacy_candidate`: a v1 candidate row (R-LEGACY-1); nothing large shows what would carry it. Arking 2005 reports
+  HDL cholesterol, systolic pressure and stroke by genotype in the same small sample; Belloy 2020 (20,928 case-control
+  participants, Northwestern Europeans aged 60 or more) reports heterozygosity with less Alzheimer disease only in
+  APOE4 carriers (OR 0.75, P 7.4e-7), and Shibata 2025 finds no effect of heterozygosity on cognition or brain volume
+  in UK Biobank (312,524), whatever the APOE genotype. Pleiotropy `nonadditive` and `context:apoe4`. The GWAS Catalog
+  holds no association for rs9536314, and Open Targets places it only in a single-cell KL eQTL set at PIP 0.012, so
+  C4. The variant is a missense change in KL, so E1 and gene KL. Mouse: klotho mutants age early and die young,
+  overexpression extends life (GenAge), against a human heterozygote advantage: `animal:genage_mouse` and
+  `animal_dir:nonmonotone`, the requirements' own example (R-ANIMAL-4). `legacy_longevitymap` (R-LEGACY-1): genotypes
+  neutral, the heterozygote claim said in the conclusions. Age of action unknown (Invidia's and de Vries' readings of
+  an age window are hypotheses).
+axes:
+  tier: {value: C, cites: [pmid-11792841#q1, pmid-11792841#q2, pmid-15677572#q1, pmid-15677572#q2, pmid-15677572#q5, pmid-15677572#q6, pmid-19421891#q1, pmid-19421891#q2, pmid-19421891#q3, pmid-28431289#q1, pmid-28431289#q2, pmid-24164579#q1, pmid-29890178#q1, pmid-29890178#q2, pmid-30633899#q1, pmid-30633899#q2, pmid-30642433#q299, pmid-30642433#q300, pmid-31413261#q173, pmid-31413261#q174, db-finngen-r11#q50, pmid-40021682#q72, pmid-30729179#q103, db-ensembl-116#q556, db-ensembl-116#q560]}
+  mechanism: {value: legacy_candidate, cites: [pmid-11792841#q2, pmid-15677572#q3, pmid-15677572#q4, db-gwascatalog-2026.10.29#q475]}
+  pleiotropy: {values: [nonadditive, "context:apoe4"], cites: [pmid-15677572#q6, pmid-32282020#q1, pmid-32282020#q2, pmid-39903109#q1, pmid-39903109#q2]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: [pmid-19421891#q3, pmid-28431289#q2]}
+  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "+",
+            cites: [pmid-30729179#q103, pmid-15677572#q5, pmid-28431289#q1, pmid-30642433#q299, db-finngen-r11#q50, pmid-40021682#q72, pmid-11792841#q2, pmid-29890178#q2, pmid-19421891#q2, pmid-19421891#q3, pmid-31413261#q173, pmid-31413261#q174]}
+  actionability: {label: descriptive, cites: [db-gwascatalog-2026.10.29#q475]}
+  context: {values: [], cites: [db-ensembl-116#q556, db-ensembl-116#q557, db-ensembl-116#q558]}
+flags:
+  - {token: legacy_longevitymap, cites: [pmid-11792841#q2]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q874, db-opentargets-26.09#q875, db-opentargets-26.09#q876, db-opentargets-26.09#q877, db-opentargets-26.09#q878]}
+  - {token: "effector:E1", cites: [db-ensembl-116#q561, pmid-11792841#q3]}
+  - {token: "animal:genage_mouse", cites: [pmid-16123266#q1, pmid-9363890#q1]}
+  - {token: "animal_dir:nonmonotone", cites: [pmid-16123266#q1, pmid-15677572#q6]}
+variants:
+  - rsid: rs9536314
+    gene: KL
+    phenotype: KL-VS and survival to old age
+    trait_efo_id: OBA_VT0005372
+    effect_allele: G
+    effect_size: 2.59
+    effect_measure: OR
+    stat_significance: nominal
+    direction: contested
+    genotypes:
+      - genotype: T/T
+        state: neutral
+        conclusion: >-
+          You carry no copy of KL-VS, a version of the KLOTHO gene (about 66 in 100 people of European ancestry and
+          all people of East Asian ancestry have this). Small studies compared other combinations with this one: some
+          found people with one copy of KL-VS more common among the elderly, and one found them with shorter survival.
+          Large genetic studies of lifespan found no sign of the version either way. It says nothing about your own
+          lifespan.
+      - genotype: G/T
+        state: neutral
+        conclusion: >-
+          You carry one copy of KL-VS, a version of the KLOTHO gene that changes the klotho protein (about 31 in 100
+          people of European ancestry do; it is absent in East Asian ancestry). Small studies reported people with one
+          copy more common among the elderly and longer-lived in very old age, and one later study found the opposite.
+          A large Alzheimer study saw less Alzheimer disease in people with one copy who also carry APOE4, but a large
+          UK study found no effect on memory and thinking. Large genetic studies of lifespan found no sign of KL-VS.
+          It says nothing firm about your own lifespan.
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of KL-VS, a version of the KLOTHO gene (about 3 in 100 people of European ancestry do).
+          Small studies, mostly from one research group, reported people with two copies less common among the
+          elderly. Large genetic studies of lifespan found no sign of KL-VS, though they were not designed to compare
+          two copies with one. It says nothing firm about your own lifespan.
+studies:
+  - rsid: rs9536314
+    note: pmid-11792841
+    quote: q2
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: Bohemian Czechs, Baltimore Caucasians and Baltimore African-Americans, the elderly against younger people (q2)
+    ancestry: [EUR, AFR]
+    stat_significance: nominal
+    p_value: "P < 0.0023"
+    effect_size: 2.59
+    effect_measure: OR
+    effect_unit: combined odds ratio of KL-VS homozygotes' underrepresentation among the elderly
+    effect_allele: G
+    direction: risk
+    statistical_test: "Arking 2002, the KL-VS discovery and v1's source for rs9536314 and rs9527025 (q1, q2): VS homozygotes underrepresented among the elderly in three populations, combined OR 2.59, P < 0.0023; V352 cuts secreted klotho 6-fold in transfected cells (q3). Abstract only: the genotype counts and ages are not read"
+    curator: claude-opus-5-5
+  - rsid: rs9536314
+    note: pmid-15677572
+    quote: q5
+    phenotype_class: OWN_SURVIVAL
+    study_design: own_survival_cox
+    population: Ashkenazi Jews, probands aged 95 or more (q1)
+    ancestry: [EUR]
+    sample_size: 216
+    sample_unit: individuals
+    age_min: 95
+    age_of: participant
+    stat_significance: nominal
+    effect_size: 2.15
+    effect_measure: HR
+    effect_unit: hazard ratio of death, wild-type (T/T) against heterozygotes (T/G), adjusted
+    effect_allele: T
+    direction: risk
+    statistical_test: "Arking 2005, the discovery's group (q5): Cox regression in the 216 probands, wild-type HR 2.15 (1.18 to 3.91) and VS homozygotes 4.49 (1.35 to 14.97) against heterozygotes. The same paper's combined 5-year survival OR 1.57 (1.23 to 1.98, P < 0.0002) pools the Czech sample of 2002 (q2). Abstract only"
+    curator: claude-opus-5-5
+  - rsid: rs9536314
+    note: pmid-19421891
+    quote: q2
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: Italians of the north and centre, aged 19 to 109, in three age classes (q1)
+    ancestry: [EUR]
+    sample_size: 1089
+    sample_unit: individuals
+    stat_significance: nominal
+    effect_allele: G
+    direction: protective
+    statistical_test: "Invidia 2010, an independent group: heterozygotes enriched among the elderly against young controls (q2), no difference between centenarians and young controls (q3). The abstract prints no count, odds ratio or P; nominal is the least its 'significant' can mean"
+    curator: claude-opus-5-5
+  - rsid: rs9536314
+    note: pmid-29890178
+    quote: q2
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: meta_analysis
+    population: published and two unpublished samples, survival to 85 or more (q1)
+    stat_significance: nominal
+    effect_allele: G
+    direction: protective
+    statistical_test: "Revelas 2018: KL-VS among five variants significant in meta-analyses of at least three studies of exceptional longevity (q1, q2). The abstract gives neither KL-VS's pooled OR nor its genetic model; nominal is the least its 'significant' can mean. Its studies include Arking's and Invidia's, so it is not independent of them"
+    curator: claude-opus-5-5
+  - rsid: rs9536314
+    note: pmid-30633899
+    quote: q2
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: meta_analysis
+    population: pooled published case-control studies (q1)
+    stat_significance: nominal
+    effect_allele: T
+    direction: protective
+    statistical_test: "Zhu 2019: F352V's F allele (T) protective for longevity in pooled case-control studies (q1, q2), a per-allele claim, against the heterozygote advantage the discovery's group reports. The abstract gives no pooled OR, model or study list"
+    curator: claude-opus-5-5
+  - rsid: rs9536314
+    note: pmid-30642433
+    quote: q299
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 638891
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.24424733"
+    p_value_num: 0.24424733
+    effect_size: 0.00611217
+    effect_measure: beta
+    effect_unit: log hazard protection per T allele in self (positive = longer life)
+    effect_allele: T
+    direction: protective
+    statistical_test: "LifeGen summary statistics (GCST009890, q299): T (0.839) +0.0061 (SE 0.0052), P 0.24, ++ in UK Biobank and LifeGen, info 0.9999; rs9527025 the same (q300). Per-allele: G, the VS allele, −0.0061. It reads the additive effect, not the heterozygote contrast"
+    curator: claude-opus-5-5
+  - rsid: rs9536314
+    note: pmid-31413261
+    quote: q173
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's cohorts, above the 90th survival percentile against controls)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.367"
+    p_value_num: 0.367
+    effect_size: -0.024
+    effect_measure: beta
+    effect_unit: log odds of survival above the 90th percentile per t allele
+    effect_allele: T
+    direction: risk
+    statistical_test: "Deelen 2019's 90th percentile file (q173): t (0.84) −0.024 (SE 0.027), P 0.37, effective n 11,615; so G +0.024, flat. 99th (q174): t −0.026 (SE 0.041), P 0.53. Per-allele. Arking's full model (heterozygote OR 1.57, homozygote 1/2.59) gives an expected per-G log OR of +0.154 (SE 0.097): power 1.00, heterogeneity P 0.19 (99th 0.98, 0.22), derived; the conversion is the curator's, so no flag (D28.1)"
+    curator: claude-opus-5-5
+  - rsid: rs9536314
+    note: pmid-30729179
+    quote: q103
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.081"
+    p_value_num: 0.081
+    effect_size: 0.0116
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per G allele (positive = earlier)
+    effect_allele: G
+    direction: risk
+    statistical_test: "Zenin 2019's healthspan summary statistics (q103): G (0.16) β +0.0116 (SE 0.0066), Z 1.745, P 0.081 raw (0.089 after genomic control of 1.053, pmid-30729179#q59, derived); rs9527025 the same (q104). Per-allele"
+    curator: claude-opus-5-5
