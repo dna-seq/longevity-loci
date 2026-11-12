@@ -497,7 +497,9 @@ word.
    49 (0) rejected.
 11. **A nominal look against with its power unknown sets no flag:** 4 and 20 stay B. Heterogeneity holds at any
    positive factor there, but power needs a factor no source prints (D28.1), and a flag is power and heterogeneity
-   both (D21). Each row states the factor its power would need (2.49·SE/β). The curator's default.
+   both (D21). The curator's default. *Amended the same day:* the premise was a misread (Deelen's entries at 4 and 20 are
+   written for the risk allele, so Deelen favours the longer-life C), and an allele-aware rescan finds no row where the
+   rule applies today; it stands for the next one.
 12. **Sets built on an overfit source set no causal or effector level** (D28.5's reason): 48 IL6 and 44 go to C4/E4,
    gene empty, the candidate (IL6, PLN) in prose. D26.7's "PLN at E2 stands by §4.2's letter" is superseded: its L2G
    rests on the excluded deposit line. The curator's default (unchanged) rejected.
