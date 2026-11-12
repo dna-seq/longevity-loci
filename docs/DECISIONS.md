@@ -550,3 +550,12 @@ From the curator's rows 60 onward; the lead settled them under the person's stan
    coordinate restates the row's own choice (D26.9, from its Ensembl and paper quotes), which the compiler then
    checks is one of the rsID's loci: it is not filled from the enricher's resolution.csv. Only rows whose rsID names
    several loci carry it; every other locus stays the enricher's to resolve.
+9. **A quoted trade-off keeps a skin_sun row descriptive.** 66 TYR's longer-life G raises vitiligo (OR 1.50, P 1e-43)
+   and, through MTAG, glaucoma: a disease, so a trade-off by D18.1, and D18.2 makes a trade-off descriptive. D25.11's
+   "skin_sun rows are modifiable" was written for rows with no trade-off (17, 35) and does not override §4.2's rule;
+   the sun advice leaves 66's genotype texts. The curator's default (a).
+10. **A coding lead's effector call is not vetoed by another gene's QTL.** §4.2's E1 coding clause names the gene
+   whose protein the lead changes (66: TYR R402Q, L2G 0.83). D24's rival rule weighs calls that rest on expression
+   (L2G, colocalisation); one NOX4 artery tuQTL colocalisation says the haplotype also moves an RNA elsewhere, not
+   that TYR's protein change is not the effector. 66 is E1 TYR, NOX4's colocalisation named in prose. The curator's
+   default (a); (b), D24 over coding leads, rejected.
