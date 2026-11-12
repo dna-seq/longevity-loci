@@ -2848,3 +2848,70 @@ mvAge's set (GCST90321079, PICS, P 5e-16) ... For row 63.
 > [q768] data.credibleSet.colocalisation count 114
 
 The positive control for q763's query: the same `studyTypes` QTL query on row 35's healthspan set (3ebe7ef9958b5c249ce68244b0d819a2, `control-3ebe7ef9958b5c249ce68244b0d819a2-qtlcoloc.json`) returns its 114 QTL colocalisations (q508), so q763's zero is an answer, not a query that cannot see QTLs. For row 63.
+
+## Reading 2026-11-12, supplement
+
+> [q769] data.variant.credibleSets count 25
+
+rs76612380 (11_202785_T_C, `variant-11_202785_T_C`) lies in 25 credible sets ... For row 64.
+
+> [q770] data.variant.credibleSets.rows[16].study id GCST90270909 traitFromSource Lifespan studyType gwas
+
+... one of them a GWAS's, BBJ's survival study; the other 24 are QTL sets. For row 64.
+
+> [q771] data.credibleSet studyLocusId 9f1743923df45578a9e95c019dde4cb4 finemappingMethod PICS pValueMantissa 6 pValueExponent -9 beta -0.08338160893905101
+
+The study's one set (`study-setids-GCST90270909`, `set-9f1743923df45578a9e95c019dde4cb4`): PICS, from the Catalog's
+P 6e-9, with beta −0.083, ln 0.92 copied from the Catalog's record (db-gwascatalog-2026.10.29#q417), whose allele is
+"?" (q418): the sign settles nothing about the allele. For row 64.
+
+> [q772] data.credibleSet.locus.rows[0] posteriorProbability 0.9442135664016534 is95CredibleSet true
+
+The lead at PIP 0.944 ... For row 64.
+
+> [q773] data.credibleSet.locus.rows[0].variant.rsIds[0] rs76612380
+
+... rs76612380 ... For row 64.
+
+> [q774] data.credibleSet.locus.rows[1] posteriorProbability 0.029435522870490914 is95CredibleSet true
+
+... and rs112762297 at 0.029, the set's second member. PICS reads LD from a reference panel, and the lead has no 1000
+Genomes genotypes in Ensembl (db-ensembl-116#q458): a PIP from a single summary P, not a fine-mapping of BBJ's data.
+For row 64.
+
+> [q775] data.credibleSet.l2GPredictions.rows[0] score 0.2408827841281891
+
+Locus-to-gene's best, 0.24 ... For row 64.
+
+> [q776] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol BET1L
+
+... BET1L ... For row 64.
+
+> [q777] data.credibleSet.l2GPredictions.rows[1] score 0.1485983282327652
+
+... then 0.15 ... For row 64.
+
+> [q778] data.credibleSet.l2GPredictions.rows[1].target approvedSymbol RIC8A
+
+... RIC8A: no gene reaches 0.5. For row 64.
+
+> [q779] data.credibleSet.colocalisation count 33
+
+The set's QTL colocalisations (`set-9f1743923df45578a9e95c019dde4cb4-qtlcoloc`): 33, of which 25 at H4 ≥ 0.8: SIRT3
+14, BET1L 7, PSMD13 2, PKP3 1 and ENSG00000288681 1 (counted from the file). For row 64.
+
+> [q780] data.credibleSet.colocalisation.rows[7] h4 0.979526794873751 clpp 0.04223376379416853 rightStudyType eqtl colocalisationMethod COLOC_PIP_ECAVIAR
+
+One of SIRT3's: H4 0.98 ... For row 64.
+
+> [q781] data.credibleSet.colocalisation.rows[7].otherStudyLocus.study.target approvedSymbol SIRT3
+
+... a SIRT3 transcript's eQTL in skeletal muscle (FUSION). For row 64.
+
+> [q782] data.credibleSet.colocalisation.rows[26] h4 0.9985894833803172 clpp 0.3839486220254775 rightStudyType eqtl colocalisationMethod COLOC_PIP_ECAVIAR
+
+One of BET1L's: H4 0.999 ... For row 64.
+
+> [q783] data.credibleSet.colocalisation.rows[26].otherStudyLocus.study.target approvedSymbol BET1L
+
+... BET1L's expression in transverse colon (GTEx v10). For row 64.

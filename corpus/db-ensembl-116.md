@@ -1692,3 +1692,65 @@ rs35198068 and rs7903146 (the best-known TCF7L2 diabetes variant) in CEU: r² 1.
 > [q457] [0].transcript_consequences[0] hgnc_id HGNC:11641 impact MODIFIER transcript_id ENST00000277945 biotype protein_coding variant_allele C gene_id ENSG00000148737 strand 1 gene_symbol_source HGNC gene_symbol TCF7L2
 
 VEP: an intron variant of TCF7L2 (ENST00000277945). For row 63.
+
+## Reading 2026-11-12, supplement
+
+> [q458] mappings[0] location 11:202785-202785 ancestral_allele C assembly_name GRCh38 strand 1 start 202785 end 202785 allele_string T/C coord_system chromosome seq_region_name 11
+
+rs76612380 at GRCh38 11:202,785, T/C; C ancestral, so T, the common allele, is derived. Ensembl holds no 1000 Genomes
+genotypes for it (only gnomAD, ALFA and GEM-J frequencies), so its pairwise LD queries return nothing, in CEU, CHB and
+JPT alike (`ld-rs76612380-rs2280543-*`, `ld-rs76612380-rs79902640-CEU`): LD unknown, not absent. For row 64.
+
+> [q459] mappings[0] strand 1 seq_region_name 11 allele_string T/C coord_system chromosome ancestral_allele C start 202785 assembly_name GRCh37 end 202785 location 11:202785-202785
+
+The same position on GRCh37, the one BBJ (pmid-36737517#q9), Deelen, Park and LifeGen print. For row 64.
+
+> [q460] populations[16] population gnomADg:eas frequency 0.08978 allele_count 413 allele C
+
+C 0.090 in gnomAD's East Asians ... For row 64.
+
+> [q461] populations[23] population gnomADg:nfe allele_count 1273 allele C frequency 0.01935
+
+... 0.019 in its non-Finnish Europeans ... For row 64.
+
+> [q462] populations[28] population gnomADg:fin allele_count 85 allele C frequency 0.008192
+
+... 0.008 in its Finns ... For row 64.
+
+> [q463] populations[19] population gnomADg:afr frequency 0.02439 allele C allele_count 947
+
+... and 0.024 in its Africans. For row 64.
+
+> [q464] [0].transcript_consequences[1] strand -1 impact MODIFIER variant_allele C gene_id ENSG00000177951 hgnc_id HGNC:19348 distance 139 gene_symbol BET1L gene_symbol_source HGNC biotype protein_coding transcript_id ENST00000325147
+
+VEP: 139 bp downstream of BET1L (ENST00000325147); also downstream of CIMAP1A and upstream of RIC8A. For row 64.
+
+> [q465] mappings[0] coord_system chromosome allele_string C/T location 11:203788-203788 start 203788 strand 1 seq_region_name 11 end 203788 ancestral_allele C assembly_name GRCh38
+
+rs2280543, BBJ's genotyped proxy (pmid-36737517#q14), at GRCh38 11:203,788, C/T, 1 kb from the lead. For row 64.
+
+> [q466] populations[104] allele T allele_count 20 frequency 0.0961538461538462 population 1000GENOMES:phase_3:JPT
+
+rs2280543's T 0.096 in 1000 Genomes' Japanese: the minor allele, as the lead's C is. For row 64.
+
+> [q467] populations[91] allele T allele_count 33 frequency 0.0328031809145129 population 1000GENOMES:phase_3:EUR
+
+rs2280543's T 0.033 in 1000 Genomes' Europeans ... For row 64.
+
+> [q468] populations[34] frequency 0.03826 population gnomADg:nfe allele_count 2603 allele T
+
+... and 0.038 in gnomAD's non-Finnish Europeans, twice the lead's C (q461): in Europeans the proxy's r² with the lead
+can be at most about 0.50 (derived from the two frequencies; at most 0.62 from FinnGen's, db-finngen-r11#q40, q42).
+For row 64.
+
+> [q469] [0] population_name 1000GENOMES:phase_3:CEU variation2 rs79902640 r2 1.000000 variation1 rs2280543 d_prime 1.000000
+
+rs2280543 and rs79902640 (the BET1L eQTL's top variant, pmid-36737517) are one haplotype in CEU: r² 1.00. For row 64.
+
+> [q470] [0] r2 1.000000 variation2 rs79902640 variation1 rs2280543 population_name 1000GENOMES:phase_3:JPT d_prime 1.000000
+
+... and in JPT. For row 64.
+
+> [q471] populations[49] allele_count 31 population 1000GENOMES:phase_3:EUR allele G frequency 0.0308151093439364
+
+rs79902640's G 0.031 in Europeans, rs2280543's T's partner. For row 64.

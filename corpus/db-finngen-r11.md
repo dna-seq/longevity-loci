@@ -304,3 +304,19 @@ FinnGen R11's any-death endpoint at rs11186068 (GRCh38 10:90,207,407; `finngen_R
 > [q39] 10	112995025	T	C	rs35198068	TCF7L2	0.0346729	1.46001	0.0195382	0.00925035	0.202042	0.206557	0.201476
 
 FinnGen R11's any-death endpoint (`rows-e785b41f`, the filter `^10\t11299[0-9]{4}\t`), rs35198068 at GRCh38 10:112,995,025: C (alt) log OR +0.0195 (SE 0.0093) for death, P 0.035, C at 0.202 (cases 0.2066, controls 0.2015). T lowers the odds of death, one-sided 0.017 (derived); independent of UK Biobank. rs34872471 and rs7903146 give the same (P 0.035, 0.031). From LifeGen's T +0.0060 (pmid-30642433#q276; APOE's factor to FinnGen 0.99, q4 against pmid-30642433#q90) the expected T log OR is about −0.006, so the observed −0.0195 passes; a ratio of APOE's lines from Zenin's healthspan scale (pmid-30729179#q89) would expect about −0.47, the curator's own conversion (D28.1). For row 63.
+
+## Reading 2026-11-12, supplement
+
+> [q40] 11 202785 T C rs76612380 BET1L 0.572436 0.242273 0.0201862 0.0357616 0.0135301 0.0135888 0.0135228
+
+FinnGen R11's "Any death" file (`finngen_R11_DEATH.tsv.gz.rows-282537d8`; the region API omits the variant),
+rs76612380: C at 1.35 %, log OR +0.020 (SE 0.036) for death, P 0.57: C leans to more death, one-sided 0.29 (derived).
+For row 64.
+
+> [q41] 11 202835 A G rs79902640 BET1L 0.240074 0.619654 0.0304517 0.0259207 0.0211529 0.0215727 0.0211003
+
+rs79902640's G (2.1 %): +0.030 (SE 0.026), P 0.24. For row 64.
+
+> [q42] 11 203788 C T rs2280543 BET1L,RP11-304M2.5 0.304043 0.517065 0.0262153 0.0255062 0.0216407 0.0220204 0.0215932
+
+rs2280543's T (2.2 %): +0.026 (SE 0.026), P 0.30. All three lean the minor haplotype toward death. For row 64.

@@ -1514,3 +1514,38 @@ Systolic blood pressure, P 3e-17, beta 0.224 increase ... For row 63.
 > [q416] _embedded.associations[59].snp_effect_allele[0] rs34872471-C
 
 ... for C: blood pressure runs both ways at the locus (T raises diastolic, q402, C systolic). For row 63.
+
+## Reading 2026-11-12, supplement
+
+> [q417] _embedded.associations[0] association_id 105619373 risk_frequency NR pvalue_description  pvalue_mantissa 6 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range [0.89-0.95] or_per_copy_num 0.92 or_value 0.92 beta - p_value 6.000000000000001e-09 accession_id GCST90270909 pubmed_id 36737517 first_author Akiyama M ci_lower 0.89 ci_upper 0.95
+
+Akiyama 2023's association (GCST90270909, `assoc-rs76612380`): OR 0.92 (0.89–0.95), P 6e-9, risk frequency not
+reported. For row 64.
+
+> [q418] _embedded.associations[0].snp_effect_allele[0] rs76612380-?
+
+The Catalog records no effect allele ("?"): its curators could not tell which allele the 0.92 counts, the question
+pmid-36737517#q10 against q26 settles. Open Targets' PICS set copies this record's sign (db-opentargets-26.09#q771).
+For row 64.
+
+> [q425] _embedded.associations[0].mapped_genes[0] BET1L
+
+Mapped to BET1L. A second line (GCST90270907, P 8e-7, the men) is the same paper's. For row 64.
+
+> [q419] _embedded.associations[0] association_id 64573116 risk_frequency 0.101 pvalue_description  pvalue_mantissa 1 pvalue_exponent -14 multi_snp_haplotype false snp_interaction false range [0.18-0.3] beta 0.238 unit increase p_value 1e-14 accession_id GCST011021 pubmed_id 33199917 first_author Bakker MK ci_lower 0.18 ci_upper 0.3
+
+Bakker 2020 (GCST011021, PMID 33199917), intracranial aneurysm at rs2280543: beta 0.238, increase, risk frequency
+0.101 ... For row 64.
+
+> [q421] _embedded.associations[0].snp_effect_allele[0] rs2280543-T
+
+... for T, the minor allele, the lead's C haplotype: more aneurysm. For row 64.
+
+> [q420] _embedded.associations[2] association_id 17787 risk_frequency 0.88 pvalue_description  pvalue_mantissa 4 pvalue_exponent -12 multi_snp_haplotype false snp_interaction false range [1.17-1.64] or_per_copy_num 1.39 or_value 1.39 beta - p_value 4e-12 accession_id GCST001027 pubmed_id 21460842 first_author Cha PC ci_lower 1.17 ci_upper 1.64
+
+Cha 2011 (GCST001027, PMID 21460842), uterine fibroids, Japanese: OR 1.39, P 4e-12, risk frequency 0.88 ... For row 64.
+
+> [q422] _embedded.associations[2].snp_effect_allele[0] rs2280543-G
+
+... for "G", the major allele at 0.88 printed on the other strand (rs2280543 is C/T, db-ensembl-116#q465): C, the
+lead's T haplotype, more fibroids, as BBJ's own table has it (pmid-36737517#q32). For row 64.
