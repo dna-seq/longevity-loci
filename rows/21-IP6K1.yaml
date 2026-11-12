@@ -230,7 +230,7 @@ studies:
     effect_unit: log odds of reaching the 99th percentile, per A allele
     effect_allele: A
     direction: risk
-    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), SE 0.0302, effective N 4,524; its cases a subset of the 90th's; at rs2271961 T β +0.044, P 0.15 (q44)"
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), SE 0.0302, effective N 4,524; its cases a subset of the 90th's; at rs2271961 T β +0.044, P 0.15 (q44). D21 (swept 2026-11-12): Wright's discovery prints no pooled effect (D20), so power from it is not computable; from Timmers' β (0.0135 per G, pmid-30642433#q59) the expected log odds is 0.065 by APOE's factor (4.84, borrowed from the 90th's ε4 line), power 0.70, heterogeneity P 0.58, and 0.027 by the mean factor (2.02), power 0.23, heterogeneity P 0.55: the same side and no red flag either way (derived)"
     curator: claude-opus-5-5
   - rsid: rs9872864
     note: pmid-37118362

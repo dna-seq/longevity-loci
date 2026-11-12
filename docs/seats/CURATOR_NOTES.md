@@ -224,6 +224,15 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   D25.5's reason covers any scoring-class set the tier does not rest on (D27.6, my (a)): 43 (Foote PIP 0.065) and 27
   (0.043) keep C4. When ABO, IGF2R, POM121C, GBX2/ASB18 and HP come up,
   Foote's factor is `MULTIVARIATE_AGEING` from the start.
+- **D21 sweep of 21 and 80** (2026-11-12), one commit, the Deelen entries no calibration had reached. 80 moves A to B:
+  Deelen's 90th and 99th lines at 15:78817929 fetched (`rows-0ade679b`, new quotes pmid-31413261 q141, q142) and
+  Figure 4's own CHRNA3/5 line quoted (pmid-30642433 q251, flat, Alpha 0.05); from Timmers' 0.0437 the 90th flags
+  under both factors, and so it does from Wright's AncestryDNA effect and from anything above about 0.031.
+  `replication_failed` on the 90th; the 99th flags too but its APOE factor is borrowed, so stated only. Wright's P
+  is now read after genomic control (5.17e-8, D26.1), suggestive, still a nominal replication, so not D. Put to the
+  lead: keep A on the age fade, since Figure 5's 80-90 band under the mean factor gives power 0.88 and heterogeneity
+  P 0.12. 21 holds A: the 90th replicates, and the 99th leans the same side at power 0.70 and 0.23 from Timmers' β
+  (Wright prints no pooled effect, D20).
 - **54 PURG** (2026-11-12), tier C re-tiered (seed B), row 10's shape: rs11783562 is Wright's S8 `Male_Female.AGE` only
   (raw 8.1e-9, genomic control 8.7e-7), not in S9; FinnGen R11 death (alt G β −0.0244, P 0.0010) is the independent
   nominal support. Lessons: grep Wright's S8/S9 by position, not only the rsID (three S9 neighbours turned up); the

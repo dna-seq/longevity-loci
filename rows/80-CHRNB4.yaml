@@ -4,15 +4,29 @@
 # sit in its credible set and appear only as proxies on the studies that reported them.
 locus_id: 80
 locus_name: CHRNB4
-verdict: kept
+verdict: re-tiered
 verdict_reason: >-
-  Tier A confirmed. Genome-wide significant for parental lifespan in about one million lives (Timmers 2019, P 1.6e-26)
-  and in each parental-lifespan GWAS since Joshi 2017; replicated at genome-wide significance outside UK Biobank and
-  LifeGen in AncestryDNA's fathers (Wright 2019, P 3.2e-9, the same side). It acts through smoking: every association
+  Tier B, from the seed's A, on the 71/67 rule's cap (D21, D25.3), swept 2026-11-12. Genome-wide significant for
+  parental lifespan in about one million lives (Timmers 2019, P 1.6e-26) and in each parental-lifespan GWAS since
+  Joshi 2017; replicated outside UK Biobank and LifeGen in AncestryDNA's fathers (Wright 2019, P 5.2e-8 after the
+  paper's genomic control, D26.1, 3.2e-9 uncorrected; the same side), so not D (D25.1). But Deelen 2019's survival to
+  the 90th percentile, a sample with no UK Biobank and no AncestryDNA, is flat where it was powered: T β +0.0178
+  (SE 0.0212), one-sided P 0.20. From Timmers' β (0.0437 per T) the expected log odds is 0.211 under APOE's factor
+  (power 1.00, heterogeneity P 3e-11) and 0.088 under the loci's mean factor (power 0.99, heterogeneity P 0.002): a
+  red flag under both calibrations, so `replication_failed`, row 6's shape. It holds for Wright's AncestryDNA effect
+  (0.041 per allele: mean factor power 0.99, heterogeneity P 0.01) and for any discovery effect above about 0.031,
+  so taking LifeGen's Rotterdam overlap out of Timmers' β does not lift it; Joshi's HR 1.046 (log 0.045) sits at
+  Timmers' size. The 99th percentile leans the other way (T β −0.0191, SE 0.0343) and flags too (mean factor power
+  0.82, heterogeneity P 0.002), its APOE factor borrowed from the 90th's ε4 line, so it is stated and the token rests
+  on the 90th. Timmers 2019's own look-up in the earlier longevity sample is flat as well (Alpha 0.05, SE 0.27,
+  against the mean 0.42), a sample overlapping Deelen's, named only. The case for A, put to the lead: the effect fades
+  with age (below), and Figure 5's 80-90 band (fathers 0.0398, mothers 0.0212, pooled 0.030 on the figure's scale)
+  under the mean factor expects 0.060, power 0.88 and heterogeneity P 0.12, no flag (APOE's still flags, P 0.006);
+  D25.3 says the mean understates a late locus and APOE overstates a midlife one, and both are applied as written. It acts through smoking: every association
   the lead has is with smoking behaviour, lung cancer and COPD. The effect is mainly on deaths before 75 (HR 1.08 per
   allele at 40-75 against 1.03 after, Joshi 2017; declining after 60, Timmers 2019), and survival to very old age does
-  not replicate: CHARGE-EU 90+ P 0.95 (Joshi 2017), and Deelen 2019's 90th and 99th percentiles P 0.40 and 0.58 (its
-  supplement, read, not quoted; CHRNA3/5 is absent from its list of nominal parental-lifespan loci). Only both parents
+  not replicate: CHARGE-EU 90+ P 0.95 (Joshi 2017; no effect printed, so its calibration is unknown), and Deelen
+  2019's 90th and 99th percentiles P 0.40 and 0.58 (above). Only both parents
   reaching the top 10% of survival is significant, in UK Biobank (Pilling 2017, P 4.0e-9), so exceptional survival is
   0. No smoking-stratified estimate was read, so how much of the effect remains in people who never smoked is not
   known here. No gene is named (requirements §4.2, §6.2: a gene only at E1/E2): on Timmers 2019's set locus-to-gene is
@@ -27,16 +41,17 @@ verdict_reason: >-
   fathers 0.084 at 50-60 falling to 0.040 at 80-90 and mothers 0.054 at 60-70 to 0.021 at 80-90; the sex moderator is
   nominal (P 0.013) and fails FDR (Q 0.27), so no sex_specific.
 axes:
-  tier: {value: A, cites: [pmid-30642433#q4, pmid-29030599#q5, pmid-31484785#q7, pmid-31484785#q8]}
+  tier: {value: B, cites: [pmid-30642433#q4, pmid-29030599#q5, pmid-31484785#q7, pmid-31484785#q8, pmid-31413261#q141, pmid-31413261#q142, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, pmid-30642433#q251, pmid-30642433#q169, pmid-30642433#q172]}
   mechanism: {value: smoking_lungs, cites: [pmid-29030599#q8, pmid-30642433#q4]}
   pleiotropy: {values: ["mech:smoking", "context:smoking"], cites: [pmid-29030599#q8, pmid-31484785#q8]}
   age_of_action: {value: MIDLIFE, confidence: DIRECT, cites: [pmid-29030599#q7, pmid-30642433#q5, pmid-30642433#q166, pmid-30642433#q167, pmid-30642433#q168, pmid-30642433#q169, pmid-30642433#q170, pmid-30642433#q171, pmid-30642433#q172, pmid-30642433#q173, pmid-30642433#q174]}
   outcome: {healthspan: untested, lifespan: "+", exceptional_survival: "0",
-            cites: [pmid-30642433#q4, pmid-29030599#q5, pmid-31413261#q5]}
+            cites: [pmid-30642433#q4, pmid-29030599#q5, pmid-31413261#q5, pmid-31413261#q141, pmid-31413261#q142]}
   actionability: {label: modifiable, what: ["act_behaviour:smoking"], who: "act_who:self", cites: [pmid-29030599#q8]}
   context: {values: [eur_only_evidence, age_dependent], cites: [pmid-30642433#q4, pmid-29030599#q7, pmid-30642433#q166]}
 flags:
   - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-30642433#q4]}
+  - {token: replication_failed, cites: [pmid-31413261#q141, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92]}
   - {token: "causal:C2", cites: [db-opentargets-26.09#q11]}
   - {token: "effector:E3", cites: [db-opentargets-26.09#q14, db-opentargets-26.09#q350, db-opentargets-26.09#q351, db-opentargets-26.09#q352, db-opentargets-26.09#q353, db-opentargets-26.09#q354, db-opentargets-26.09#q355, db-opentargets-26.09#q356, db-opentargets-26.09#q365, db-opentargets-26.09#q366, db-opentargets-26.09#q367, db-opentargets-26.09#q368]}
   - {token: "ld_proxy_of:rs8042849", cites: [db-opentargets-26.09#q12, db-opentargets-26.09#q13]}  # rs931794, rs1317286
@@ -164,13 +179,48 @@ studies:
     sample_unit: individuals
     stratum: parent
     stratum_level: father
-    stat_significance: significant
-    p_value: "3.19e-09"
-    p_value_num: 3.19e-09
+    stat_significance: suggestive
+    p_value: "5.17e-08"
+    p_value_num: 5.17e-08
     effect_size: -0.41
     effect_measure: beta
     effect_unit: years of father's lifespan per G allele at the proxy (doubled to parental dosage)
     effect_allele: G
     proxy_rsid: rs931794
-    statistical_test: "Linear regression of fathers' lifespan in years on offspring dosage, not a Cox model (the vocabulary has no other parental design); P uncorrected (Table 1; 5.17e-08 after genomic control); N from Supplemental Table 8, not in the cache"
+    statistical_test: "Linear regression of fathers' lifespan in years on offspring dosage, not a Cox model (the vocabulary has no other parental design); P after the paper's genomic control (D26.1), just above 5e-8; uncorrected 3.19e-09 (Table 1); a nominal replication outside UK Biobank and LifeGen; D21 at Deelen's 90th from this effect (0.041 per allele in self, SE 0.007): mean factor power 0.99, heterogeneity P 0.01 (derived); N from Supplemental Table 8, not in the cache"
+    curator: claude-opus-5-5
+  - rsid: rs8042849
+    note: pmid-31413261
+    quote: q141
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.403"
+    p_value_num: 0.403
+    p_one_sided: 0.20
+    effect_size: 0.0178
+    effect_measure: beta
+    effect_unit: log odds of survival to the 90th percentile per T allele
+    effect_allele: T
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008598), SE 0.0212, effective N 11,050; no UK Biobank and no AncestryDNA. D21/D25.3 from Timmers' β 0.0437 per T (SE 0.0041: Table 1's 0.4368 years per copy over ten, pmid-30642433#q4): APOE factor 4.84 (pmid-31413261#q82 over pmid-30642433#q90) expects 0.211, power 1.00, heterogeneity P 3e-11; the loci's mean factor 2.02 (pmid-30642433#q92) expects 0.088, power 0.99, heterogeneity P 0.002: a red flag under both (derived). Figure 5's 80-90 band (q169, q172, pooled 0.030 on the figure's scale) gives 0.060 by the mean factor, power 0.88, heterogeneity P 0.12, no flag; by APOE's, P 0.006"
+    curator: claude-opus-5-5
+  - rsid: rs8042849
+    note: pmid-31413261
+    quote: q142
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.5773"
+    p_value_num: 0.5773
+    effect_size: -0.0191
+    effect_measure: beta
+    effect_unit: log odds of survival to the 99th percentile per T allele
+    effect_allele: T
+    direction: risk
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), SE 0.0343, effective N 4,154; one-sided P 0.71 (derived); cases a subset of the 90th's. From Timmers' β: power 1.00 by APOE's factor (borrowed from the 90th's ε4 line, as at row 42), heterogeneity P 6e-9; 0.82 by the mean factor, heterogeneity P 0.002 (derived); stated, the token rests on the 90th"
     curator: claude-opus-5-5
