@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- D29.15–17: 74 is B with replication_failed (D25.1's exception); `sex_specific` needs a test of the difference; a row is tiered on its lead's own evidence, so 75 is C on its suggestive repeat, the overfit line at the locus setting nothing.
 - D29.14: a genotype-model claim (73 KL-VS, heterozygote advantage) is tiered, read and tested on its own model; per-allele lines are named, not scored.
 - The module-creator plugin's pin moves to `v0.48.8` (registry lane lookups, `remote_derive`'s passes, gene hints for expression); nothing here changes.
 - D29.11–13 (70 FGD6): a multivariate or healthspan discovery's red flag stays unknown even on a like-for-like comparison of two lifespan arms; a coronary colocalisation names heart_vessels; animal evidence is a flag, not a study.

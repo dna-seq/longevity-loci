@@ -582,3 +582,19 @@ From the curator's rows 60 onward; the lead settled them under the person's stan
    lifespan 0 on Arking 2005 against de Vries 2017, exceptional survival + on Arking 2002, Invidia, Revelas), and the
    per-allele lines are named, not read into cells. Rejected: D on de Vries alone (one study, not a powered test of
    the model), and the per-allele cells (they would score a model no one claimed).
+15. **74 is B with `replication_failed`.** AncestryDNA's mothers fail the UK arm on one scale (heterogeneity P 7.4e-5,
+   power about 1.00), a D21 flag; but LifeGen's sample b (one-sided 0.046) and Deelen's 99th (0.020) each give
+   p < 0.05 in the discovery's direction outside its UK Biobank mothers, which is D25.1's exception. Their sharing
+   Rotterdam with each other does not matter: each is independent of the discovery. The curator's default (a).
+16. **`sex_specific` rests on a test of the difference, not on one sex significant and the other not.** 74's mothers
+   (P 2.9e-8) against fathers (P 0.67) is a contrast of significance; Timmers' moderator misses its own legend's
+   FDR (Q 0.13), where 37's held (Q 0.0017). The curator computes mothers against fathers from Pilling's β and SE
+   (both errors, D29.6): heterogeneity P < 0.05 keeps `sex_specific:f`; otherwise it is dropped and the contrast
+   said in prose. The curator's default (a) rejected as stated.
+17. **A row is tiered on its lead's own evidence; an overfit line at the locus sets nothing** (D28.12 carried to the
+   tier). 75's seed lead rs35257605, a common poly-T repeat, is a suggestive line in Park's deposit (P 4.9e-6), not
+   reported, unreplicated and uncontradicted (the looks are flat or co-occur); the genome-wide line is the seed's
+   second rsID rs116257533, an allele about 21 times below Park's own frequency filter (D26.7, 44's kind). So 75 is
+   C on the repeat, rs116257533 named in prose as an overfit line that sets nothing, genotypes neutral, lifespan from
+   Park's suggestive line. The curator's default (a), D for the locus, rejected: the lead never made the overfit
+   claim, and D would put the overfit line's verdict on a variant it does not describe.
