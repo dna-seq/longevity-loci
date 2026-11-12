@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- The curator's stop and the dashboard's cap move from 80 % to 90 % of the 7-day window, on the person's word (2026-11-12).
 - D29.2: a footnote's allele outvoted by the paper's text, supplement and figure is overruled (64 BET1L, T longer-lived).
 - D29.1: a database line the curator reads never replicates (D12), and a healthspan discovery's red flag is scaled from its own effect, so 63 TCF7L2 is B.
 - D27 and D28 settle the sixth batch: the mean factor divides, a Genomic SEM factor is multivariate, a QC-flagged colocalisation is E3, red flags scaled from the discovery's own effect, a cell is `−` against the allele, a disease-informed Bayesian call counts for B only; 6 CELSR2 and 80 CHRNA3/5 leave A with `replication_failed`.

@@ -5,7 +5,7 @@ It prints the dashboard's text (Zulip markdown) to stdout:
 - the tiers set so far;
 - the rate of rows and the burn of the account's 7-day quota window, each a moving average with exponential decay
   (recent hours count most, older ones fade with a half-life);
-- what that leaves before the person's cap (80 % of the weekly window, the curator's priming) and its reset.
+- what that leaves before the person's cap (90 % of the weekly window, the curator's priming) and its reset.
 
 Inputs:
 - the rows and the seed list in the repository;
@@ -36,7 +36,7 @@ import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
 SEED = ROOT / "docs" / "longevitymap_v2" / "data" / "seed_variants.csv"
-CAP = 80.0  # % of the 7-day window: the person, 2026-11-11, "Up to 80% weekly quota"
+CAP = 90.0  # % of the 7-day window: the person, 2026-11-12, "Increase spending expectation to 90% of weekly" (80 before)
 HALF_LIFE_H = 3.0  # hours: a row or a quota step this old counts half as much as one now
 WINDOW = "7-day"
 BAR = 30
