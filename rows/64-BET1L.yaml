@@ -4,8 +4,7 @@
 # Akiyama 2023's survival GWAS of BioBank Japan (GCST90270909). Ensembl holds no 1000 Genomes genotypes for the lead, so
 # its LD is unknown there; the paper's genotyped proxy rs2280543 (r² 0.98 in BBJ) is one haplotype with rs79902640,
 # the BET1L eQTL's top variant (r² 1.00 in CEU and JPT). LifeGen holds the proxies but not the lead; Deelen, Park and
-# FinnGen hold the lead; Zenin's healthspan file holds nothing in chromosome 11's first megabase (its lines start at
-# 1.24 Mb, rs35705950), so healthspan is untested.
+# FinnGen hold the lead; Zenin's healthspan file holds the proxies but not the lead.
 locus_id: 64
 locus_name: BET1L
 verdict: kept
@@ -20,9 +19,11 @@ verdict_reason: >-
   because everything else in the paper reads the minor haplotype as the shorter-lived: the genotyped proxy rs2280543
   (r² 0.98; its minor T pairs with the lead's minor C, as an r² that high requires) has T homozygotes faring worse in
   both sexes, T 0.36 years younger at death, and T's shorter parental lifespan in Timmers 2019 quoted as support; the
-  discussion names C homozygotes as the carriers of the effect. The GWAS Catalog records no allele ("?"), and Open
-  Targets' beta copies the Catalog's, so neither tells. As a HR per C, 1.09. The combined P is printed once; from the
-  sexes' SPACox Ps (2.15e-6 and 2.84e-3) a z-score meta gives about 2e-8 (derived), still genome-wide. The cohort is
+  discussion names C homozygotes as the carriers of the effect; and Supplementary Figure 3, read from the PDF, puts the
+  proxy's C/T at log HR about +0.05 and T/T at about +0.21 against C/C, in both sexes. The GWAS Catalog records no allele ("?"), and Open
+  Targets' beta copies the Catalog's, so neither tells. As a HR per C, 1.09. The combined P is printed once and is Wald-type (the
+  sexes' HRs meta-analysed give it, derived), the test the authors call inflated; from the sexes' SPACox Ps (2.15e-6
+  and 2.84e-3) a z-score meta gives about 2e-8 (derived), still genome-wide. The cohort is
   hospital-based, so the authors ask for the general population; the effect holds across baseline diseases and without
   the cardiovascular deaths (P 1.4e-7, HR 0.92), with no cause of death standing out. Replication: Timmers 2019's
   parental lifespan has no line for the lead, which is rare in Europe, but at the proxy rs2280543 gives T, the C
@@ -37,10 +38,11 @@ verdict_reason: >-
   13 and 61 to 63). D21's red flag is unknown, so no `replication_failed` (D26.3), and A would be barred anyway
   (D25.12): calibrated by APOE, BBJ's ε4 (log HR 0.049) against each study's own ε4 line, the lead's 0.083 expects
   +0.18 in FinnGen (power 1.00, heterogeneity P 8e-4), +0.022 in Park (P 8e-6) and −0.87 at Deelen's 90th (P 1e-6),
-  each a flag, but BBJ's ε4 is weaker than in Europeans (its CI misses theirs), which inflates every factor taken
-  from it, and no source prints a second calibration for this scale (D25.3, D28.1). Uncalibrated, FinnGen's death
+  which would each flag; but BBJ's ε4 is weaker than in Europeans (its CI misses theirs), which inflates every factor
+  taken from it, and no source prints a second calibration for this scale, so the conversion sets no flag (D25.3,
+  D27.9, D28.1, as D29.1 read row 63). Uncalibrated, FinnGen's death
   endpoint gives power 0.75, heterogeneity P 0.10, no flag. Outcomes: lifespan +, exceptional survival 0 (Deelen
-  leans, P 0.17 and 0.18), healthspan untested (no Zenin line). Mechanism general ageing: the authors find the effect
+  leans, P 0.17 and 0.18), healthspan 0 (Zenin 2019 at the proxy, T a little later, P 0.57; no line for the lead). Mechanism general ageing: the authors find the effect
   independent of disease status and cause of death. Pleiotropy at the proxy in BBJ (Supplementary Table 5, read per T
   by the Catalog's T for aneurysm and its major-allele risk for fibroids): the shorter-lived haplotype has more
   cerebral aneurysm, stable angina and myocardial infarction, fewer uterine fibroids and less colorectal cancer; the
@@ -51,12 +53,12 @@ verdict_reason: >-
   25 QTL colocalisations at H4 ≥ 0.8, SIRT3 holds 14 and BET1L 7, two genes each past a tenth: E3 (D24), no gene named;
   the authors too leave the gene open. Context: East Asian discovery, C rare elsewhere. Age of action unknown.
 axes:
-  tier: {value: B, cites: [pmid-36737517#q1, pmid-36737517#q3, pmid-36737517#q5, pmid-36737517#q6, pmid-36737517#q7, pmid-36737517#q8, pmid-36737517#q10, pmid-36737517#q11, pmid-36737517#q14, pmid-36737517#q15, pmid-36737517#q18, pmid-36737517#q19, pmid-36737517#q25, pmid-36737517#q26, pmid-36737517#q27, pmid-36737517#q28, pmid-36737517#q29, pmid-36737517#q17, pmid-30642433#q277, pmid-30642433#q278, db-ensembl-116#q458, db-ensembl-116#q461, db-ensembl-116#q466, db-ensembl-116#q468, db-ensembl-116#q469, pmid-31413261#q159, pmid-31413261#q160, pmid-31413261#q82, db-finngen-r11#q40, db-finngen-r11#q4, pmid-40021682#q64, pmid-40021682#q32, db-gwascatalog-2026.10.29#q417, db-gwascatalog-2026.10.29#q418, db-opentargets-26.09#q771]}
+  tier: {value: B, cites: [pmid-36737517#q42, pmid-36737517#q30, pmid-36737517#q1, pmid-36737517#q3, pmid-36737517#q5, pmid-36737517#q6, pmid-36737517#q7, pmid-36737517#q8, pmid-36737517#q10, pmid-36737517#q11, pmid-36737517#q14, pmid-36737517#q15, pmid-36737517#q18, pmid-36737517#q19, pmid-36737517#q25, pmid-36737517#q26, pmid-36737517#q27, pmid-36737517#q28, pmid-36737517#q29, pmid-36737517#q17, pmid-30642433#q277, pmid-30642433#q278, db-ensembl-116#q458, db-ensembl-116#q461, db-ensembl-116#q466, db-ensembl-116#q468, db-ensembl-116#q469, pmid-31413261#q159, pmid-31413261#q160, pmid-31413261#q82, db-finngen-r11#q40, db-finngen-r11#q4, pmid-40021682#q64, pmid-40021682#q32, db-gwascatalog-2026.10.29#q417, db-gwascatalog-2026.10.29#q418, db-opentargets-26.09#q771]}
   mechanism: {value: general_ageing, cites: [pmid-36737517#q38, pmid-36737517#q39, pmid-36737517#q40, pmid-36737517#q37]}
   pleiotropy: {values: [broad, tradeoff, nonadditive], cites: [pmid-36737517#q22, pmid-36737517#q31, pmid-36737517#q32, pmid-36737517#q33, pmid-36737517#q34, pmid-36737517#q35, pmid-36737517#q36, pmid-36737517#q16, pmid-36737517#q15, db-gwascatalog-2026.10.29#q419, db-gwascatalog-2026.10.29#q420, db-gwascatalog-2026.10.29#q421, db-gwascatalog-2026.10.29#q422]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: untested, lifespan: "+", exceptional_survival: "0",
-            cites: [pmid-36737517#q5, pmid-30642433#q277, pmid-31413261#q159, pmid-31413261#q160, db-finngen-r11#q40, pmid-40021682#q64]}
+  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "0",
+            cites: [pmid-30729179#q90, pmid-36737517#q5, pmid-30642433#q277, pmid-31413261#q159, pmid-31413261#q160, db-finngen-r11#q40, pmid-40021682#q64]}
   actionability: {label: descriptive, cites: [pmid-36737517#q32, pmid-36737517#q36, db-gwascatalog-2026.10.29#q420, db-gwascatalog-2026.10.29#q422]}
   context: {values: ["ancestry_specific:eas"], cites: [pmid-36737517#q5, pmid-36737517#q21, db-ensembl-116#q460, db-ensembl-116#q461, db-ensembl-116#q462]}
 flags:
@@ -120,7 +122,7 @@ studies:
     effect_unit: hazard ratio of death per T allele (the row's reading; Table 1's footnote says per C, q10)
     effect_allele: T
     direction: protective
-    statistical_test: "Cox model by sex (age, age², sex, ten components, baseline diseases; q3), inverse-variance meta-analysis; men HR 0.92, SPACox P 2.15e-6, women 0.93, P 2.84e-3 (q6, q7), heterogeneity P 0.77 (q17); Wald inflation λ 1.10 and 1.07, SPACox 1.03 and 1.00 (q12, q13); from the SPACox Ps a z meta gives about 2e-8 (derived). Allele: the footnote's 'alternative allele' (q10) read as T, the reference (RAF 0.90, q8, q11), since the main text's APOE HRs are the reference allele's (q26 against q28, q29) and the proxy's minor T, C's partner by r² 0.98 (q14), is the shorter-lived in the paper's own text (q15, q18, q19, q25); the Catalog records the allele as '?' (db-gwascatalog-2026.10.29#q418). Sensitivity: across baseline diseases (q38), without cardiovascular deaths P 1.4e-7 (q40)"
+    statistical_test: "Cox model by sex (age, age², sex, ten components, baseline diseases; q3), inverse-variance meta-analysis; men HR 0.92, SPACox P 2.15e-6, women 0.93, P 2.84e-3 (q6, q7), heterogeneity P 0.77 (q17); Wald inflation λ 1.10 and 1.07, SPACox 1.03 and 1.00 (q12, q13); from the SPACox Ps a z meta gives about 2e-8 (derived). Allele: the footnote's 'alternative allele' (q10) read as T, the reference (RAF 0.90, q8, q11), since the main text's APOE HRs are the reference allele's (q26 against q28, q29) and the proxy's minor T, C's partner by r² 0.98 (q14), is the shorter-lived in the paper's own text (q15, q18, q19, q25) and in Supplementary Figure 3 (C/T about +0.05, T/T about +0.21 log HR against C/C, read from the figure; q30); the Catalog records the allele as '?' (db-gwascatalog-2026.10.29#q418). Sensitivity: across baseline diseases (q38), without cardiovascular deaths P 1.4e-7 (q40)"
     curator: claude-opus-5-5
   - rsid: rs76612380
     note: pmid-30642433
@@ -141,5 +143,25 @@ studies:
     effect_allele: C
     direction: risk
     proxy_rsid: rs2280543
-    statistical_test: "Timmers 2019's summary statistics (GCST009890) at BBJ's genotyped proxy rs2280543 (r² 0.98 to the lead in BBJ, pmid-36737517#q14; its T the lead's C, by frequency and r²): T 4.4 %, beta1 −0.0266, SE 0.0095, both arms '--'; rs79902640 (r² 1.00 in CEU, db-ensembl-116#q469) the same, P 0.0075 (q278); no line for the lead. The proxy's r² with the lead in Europeans is unknown: at most about 0.50 by gnomAD's frequencies (derived, db-ensembl-116#q461, q468); the paper prints 0.89 for rs79902640 in 1000 Genomes Europeans. A third of BBJ's effect (0.027 against ln 1.09, 0.083); BBJ's own look-up reads it as support (pmid-36737517#q18)"
+    statistical_test: "Timmers 2019's summary statistics (GCST009890) at BBJ's genotyped proxy rs2280543 (r² 0.98 to the lead in BBJ, pmid-36737517#q14; its T the lead's C, by frequency and r²): T 4.4 %, beta1 −0.0266, SE 0.0095, both arms '--'; rs79902640 (r² 1.00 in CEU, db-ensembl-116#q469) the same, P 0.0075 (q278); no line for the lead. The proxy's r² with the lead in Europeans is unknown: at most about 0.50 by gnomAD's frequencies (derived, db-ensembl-116#q461, q468); the paper prints 0.89 for rs79902640 in 1000 Genomes Europeans (pmid-36737517#q42). A third of BBJ's effect (0.027 against ln 1.09, 0.083); BBJ's own look-up reads it as support (pmid-36737517#q18)"
+    curator: claude-opus-5-5
+  - rsid: rs76612380
+    note: pmid-30729179
+    quote: q90
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.57"
+    p_value_num: 0.5737
+    effect_size: -0.00657
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per rs2280543 T allele, the lead's C haplotype (negative = later)
+    effect_allele: C
+    direction: protective
+    proxy_rsid: rs2280543
+    statistical_test: "Zenin 2019's healthspan summary statistics, SE 0.0117, -log10 P 0.2412, T 0.045; rs79902640 the same (beta -0.0072); no line for the lead; the proxy's European r² with the lead unknown (at most about 0.50 by frequency)"
     curator: claude-opus-5-5
