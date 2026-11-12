@@ -23,8 +23,11 @@ verdict_reason: >-
   and it is cited here, not entered as a study, so it cannot read as an own-survival `+`.
   Outside China every look is flat or against G, though G is as common in Europe (0.098) as in East Asia (0.096).
   Deelen 2019, on the same log-odds scale, puts A ahead at both percentiles: the 99th A +0.120 (SE 0.056), P 0.033,
-  the value Liu quotes as nominal "in the opposite direction", and the 90th A +0.049, P 0.17. Against Liu's +0.308 per
-  G the 99th gives heterogeneity P about 6e-10 (about 7e-5 at half Liu's β), one-sided power about 1.00 (derived): a
+  the value Liu quotes as nominal "in the opposite direction", and the 90th A +0.049, P 0.17. Liu's own account of
+  the opposite direction is ethnic differences in genetic background and in phenotype definitions; the paper gives no
+  LD reading specific to BMPER. Against Liu's +0.308 per
+  G the 99th gives heterogeneity P about 6e-10 (at half Liu's β, about 7e-5 with Liu's SE kept, 4.6e-6 with it
+  halved too), one-sided power about 1.00 (derived): a
   red flag with no scale to convert. Timmers 2019's parental lifespan is flat (A +0.0015, P 0.84; G's side one-sided
   0.58); carried to that scale with Liu's own APOE factor (Liu's rs2075650 G −0.293 over Timmers' 0.0822, 3.56) Liu's
   β expects G +0.086 (SE 0.019), power 0.996, heterogeneity P 1.2e-5, and with the loci's mean factor +0.207 (SE
@@ -45,7 +48,7 @@ verdict_reason: >-
   members, so causal C2 by §4.2's letter; L2G names BMPER at 0.93 and all four colocalisations are BMPER eQTLs in
   cerebellum at H4 0.98, so effector E1 BMPER. Age of action is unknown. Genotypes neutral (D25.2).
 axes:
-  tier: {value: D, cites: [pmid-33657282#q17, pmid-33657282#q3, pmid-33657282#q4, pmid-33657282#q5, pmid-33657282#q12, pmid-33657282#q19, pmid-33657282#q20, pmid-33657282#q21, pmid-33657282#q24, pmid-33657282#q26, pmid-31413261#q128, pmid-31413261#q129, pmid-31413261#q130, pmid-30642433#q233, pmid-30642433#q234, pmid-30642433#q235, pmid-30642433#q92, db-ensembl-116#q330, db-ensembl-116#q333, db-ensembl-116#q336, db-finngen-r11#q24, pmid-30729179#q72, db-gwascatalog-2026.10.29#q319]}
+  tier: {value: D, cites: [pmid-33657282#q17, pmid-33657282#q27, pmid-33657282#q3, pmid-33657282#q4, pmid-33657282#q5, pmid-33657282#q12, pmid-33657282#q19, pmid-33657282#q20, pmid-33657282#q21, pmid-33657282#q24, pmid-33657282#q26, pmid-31413261#q128, pmid-31413261#q129, pmid-31413261#q130, pmid-30642433#q233, pmid-30642433#q234, pmid-30642433#q235, pmid-30642433#q92, db-ensembl-116#q330, db-ensembl-116#q333, db-ensembl-116#q336, db-finngen-r11#q24, pmid-30729179#q72, db-gwascatalog-2026.10.29#q319]}
   mechanism: {value: general_ageing, cites: [pmid-33657282#q18, pmid-33657282#q22, pmid-33657282#q23]}
   pleiotropy: {values: [], cites: [pmid-33657282#q22, pmid-33657282#q23, db-gwascatalog-2026.10.29#q321]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -145,7 +148,7 @@ studies:
     effect_unit: log odds of reaching the 99th percentile, per A allele
     effect_allele: A
     direction: protective
-    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599, q129), effective N 4,370: A +0.1198, SE 0.0563, P 0.033 two-sided, against the discovery (Liu quotes it so, pmid-33657282#q21); no p_one_sided, being on A's side. Same log-odds scale as Liu's, so no calibration: heterogeneity P about 6e-10 (7e-5 at half Liu's β), power about 1.00 (derived), a red flag. The proxy rs17169630 (r² 1.0) the same, P 0.022 (q130)"
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599, q129), effective N 4,370: A +0.1198, SE 0.0563, P 0.033 two-sided, against the discovery (Liu quotes it so, pmid-33657282#q21); no p_one_sided, being on A's side. Same log-odds scale as Liu's, so no calibration: heterogeneity P about 6e-10 (at half Liu's β 7e-5 with Liu's SE kept, 4.6e-6 with it halved), power about 1.00 (derived), a red flag; the tier is D on D22.3 (D28.8). Liu's own account of the opposite direction: ethnic differences in genetic background and phenotype definitions (pmid-33657282#q27). The proxy rs17169630 (r² 1.0) the same, P 0.022 (q130)"
     curator: claude-opus-5-5
   - rsid: rs17169634
     note: pmid-30642433
