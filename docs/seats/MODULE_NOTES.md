@@ -28,7 +28,7 @@ export (the lead starts it today, to 0.8's studies/variants shape per `docs/FORM
   `effect_unit`; Z stays `Z`, its warning reported. (1) and (2) go upstream as format wishes via the liaison. The
   export lands on a branch first; the lead hands its output here to validate.
 - Plugin caches moved to the data volume (`remember_setting JUST_DNA_PIPELINES_CACHE_DIR`, user config, not the
-  repo): `$HOME` is the small volume and Ensembl's lane is about 15 GB. Ensembl lane pull started 2026-11-12.
+  repo): `$HOME` is the small volume and Ensembl's lane is about 15 GB. Ensembl lane present 2026-11-12: ensembl-variation-2026_07_13-vep116.0, 14.5 GB (du shows 7.6 GB on BeeGFS).
 
 - **Version in progress: 2.0.0**, scaffolded in `module/` with the plugin (v0.48.5, format 0.7.1, compiler 0.7.2):
   `module_spec.yaml`, header-only `variants.csv`, `studies.csv`, `licensing.csv`. No rows, no loci yet.
