@@ -1393,7 +1393,7 @@ The Catalog holds one association for rs547541271. For row 61.
 
 > [q387] _embedded.associations[0] association_id 165236637 risk_frequency NR pvalue_description  pvalue_mantissa 3 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range - beta 0.04 unit increase p_value 3.0000000000000004e-08 accession_id GCST90551886 pubmed_id 40021682 first_author Park J
 
-Park's women's study (GCST90551886): P 3e-8, β 0.04 per unit increase, no replication sample named.
+Park's women's study (GCST90551886): P 3e-8, β 0.04 per unit increase.
 
 > [q388] _embedded.associations[0].mapped_genes[0] CELF2
 

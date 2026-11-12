@@ -12,15 +12,18 @@ verdict_reason: >-
   of one study, read at the paper's own threshold. Park 2025's own-survival GWAS of UK Biobank's 212,863 women
   (14,492 of them dead) gives rs547541271's T reduced lifespan: β +0.0369 per copy on the Martingale residual of a
   Cox model (SE 0.0067; more deaths than expected), P 3.1e-8, past the paper's 5.0e-8, which it applies to each of
-  its three GWAS (whole cohort, men, women) without correcting for running three. The variant is rare (MAF 0.3 %,
-  imputed). The discussion names the hit without a caveat of its own; the paper's only caveat is study-wide: no
+  its three GWAS (whole cohort, men, women) without correcting for running three. The variant is rare (MAF 0.3 %),
+  from imputed array data filtered at imputation quality 0.3; its own quality is not printed. The discussion names the hit without a caveat of its own; the paper's only caveat is study-wide: no
   independent external replication. Unlike row 60's lone line, the women's window holds a second rare variant 30 kb
   away at P 2.2e-7 (LD not known). The signal is the women's: the whole cohort gives T +0.0147 (P 0.0096) and the
-  men −0.0117 (P 0.22), the two sexes 4.2 standard errors apart (P 3e-5, derived), so the context is
+  men −0.0117 (P 0.22), the two sexes 4.2 standard errors apart (P 3e-5, derived; the men's file swaps its columns as the others do, by
+  its own APOE line), so the context is
   sex_specific:f. The one independent look-up is Park's own in FinnGen R11's any-death endpoint, both sexes:
-  T log OR −0.018 (SE 0.21), P 0.93, T only 0.03 % there. That is no red flag under D21: the women's effect under
-  APOE's Park-to-FinnGen factor (8.1) expects +0.30, power 0.42, heterogeneity P 0.13; under MUC5B's 6.7, power
-  0.32; 80 % power needs a factor of 14. So no replication_failed. Nothing else tests it: LifeGen and Deelen have no
+  T log OR −0.018 (SE 0.21), P 0.93, T only 0.03 % there. That is no red flag under D21: like for like, the
+  whole-cohort +0.0147 under APOE's Park-to-FinnGen factor (8.1) expects +0.12, power 0.14; even the women's
+  +0.0369 expects only +0.30, power 0.42, heterogeneity P 0.13 (MUC5B's factor, 6.7, gives less); 80 % power needs
+  a factor of 14. No calibration raises a flag, so D25.3's mean factor is not needed, and the row carries no
+  replication_failed. Nothing else tests it: LifeGen and Deelen have no
   line, no tag is known, so exceptional survival is untested. Healthspan 0: Zenin 2019 gives T an earlier end of
   healthspan, P 0.31, in the same UK Biobank people. Lifespan +. Mechanism general ageing: the authors' PheWAS ties
   T to myositis at P 1.0e-5 (OR 1.003), short of genome-wide and in the same sample, so no pleiotropy; their
@@ -31,7 +34,7 @@ verdict_reason: >-
   life; C, which nearly everyone carries, is the reference. Context: women only, European (T is 0.0017 in South
   Asians and unseen in East Asians). Age of action unknown.
 axes:
-  tier: {value: B, cites: [pmid-40021682#q34, pmid-40021682#q49, pmid-40021682#q52, pmid-40021682#q11, pmid-40021682#q10, pmid-40021682#q4, pmid-40021682#q13, pmid-40021682#q12, pmid-40021682#q51, pmid-40021682#q53, pmid-40021682#q36, pmid-40021682#q38, db-finngen-r11#q36, db-finngen-r11#q4, pmid-40021682#q32, db-gwascatalog-2026.10.29#q387]}
+  tier: {value: B, cites: [pmid-40021682#q34, pmid-40021682#q49, pmid-40021682#q52, pmid-40021682#q11, pmid-40021682#q10, pmid-40021682#q4, pmid-40021682#q13, pmid-40021682#q12, pmid-40021682#q51, pmid-40021682#q53, pmid-40021682#q54, pmid-40021682#q55, pmid-40021682#q56, pmid-40021682#q57, pmid-40021682#q58, pmid-40021682#q36, pmid-40021682#q38, db-finngen-r11#q36, db-finngen-r11#q4, pmid-40021682#q32, db-gwascatalog-2026.10.29#q387]}
   mechanism: {value: general_ageing, cites: [pmid-40021682#q49, pmid-40021682#q50, db-gwascatalog-2026.10.29#q386, db-gwascatalog-2026.10.29#q388, db-opentargets-26.09#q749, db-opentargets-26.09#q750]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -66,7 +69,7 @@ variants:
         conclusion: >-
           You carry one copy of a rare version of this DNA position (about 6 in 1,000 people of European ancestry
           do). In one large British study, women with this version tended to die somewhat earlier; no such link was
-          seen in men, and a Finnish study, too small for a version this rare, did not confirm it. It is a likely
+          seen in men, and a Finnish study, where this version is about ten times rarer still, did not confirm it. It is a likely
           finding, not a settled one: it rests on a single study and has not been confirmed in a separate group of
           people. It is a tendency, not destiny.
       - genotype: T/T
@@ -74,7 +77,8 @@ variants:
         conclusion: >-
           You carry two copies of a rare version of this DNA position. This is extremely uncommon (fewer than 1 in
           100,000 people), too rare to have been studied on its own. In one large British study, women with one copy
-          tended to die somewhat earlier; no such link was seen in men, and a Finnish study did not confirm it. What
+          tended to die somewhat earlier; no such link was seen in men, and a Finnish study, where this version is far
+          rarer, did not confirm it. What
           two copies mean is not known. It is a tendency, not destiny.
 studies:
   - rsid: rs547541271
@@ -95,7 +99,7 @@ studies:
     effect_unit: Martingale residual of a Cox model of own survival per T allele (positive = more deaths than expected, shorter life)
     effect_allele: T
     direction: risk
-    statistical_test: "BOLT-LMM on Martingale residuals, women only (q4, q10); the text's T β 0.04, P 3.1E-08, MAF 0.3 % (q34, q49); the deposit (GCST90551886, q52) prints C −0.0369, SE 0.0067, its allele columns swapped (the file's 'T' at 0.996), so T +0.0369; threshold 5.0E-08 per GWAS, three GWAS run, no further correction (q11); whole cohort T +0.0147, P 0.0096 (q54); men T −0.0117, P 0.22 (q55); a second rare variant 30 kb away at P 2.2E-07, LD unknown (q53); n_cases the women who died (Supplementary Table 1, q13); no independent replication (q12)"
+    statistical_test: "BOLT-LMM on Martingale residuals, women only (q4, q10); the text's T β 0.04, P 3.1E-08, MAF 0.3 % (q34, q49); the deposit (GCST90551886, q52) prints C −0.0369, SE 0.0067, its allele columns swapped (the file's 'T' at 0.996), so T +0.0369; threshold 5.0E-08 per GWAS, three GWAS run, no further correction (q11); whole cohort T +0.0147, P 0.0096 (q54); men T −0.0117, P 0.22 (q55; the men's file's swap shown by its APOE line, q56); imputed array data, imputation quality ≥0.3, the variant's own not printed (q57, q58); a second rare variant 30 kb away at P 2.2E-07, LD unknown (q53); n_cases the women who died (Supplementary Table 1, q13); no independent replication (q12)"
     curator: claude-opus-5-5
   - rsid: rs547541271
     note: pmid-40021682
@@ -114,7 +118,7 @@ studies:
     effect_unit: FinnGen's "Death" endpoint per T allele (positive = increased death, by rs35705950 in the same table, q16 and q9)
     effect_allele: T
     direction: protective
-    statistical_test: "Park 2025's look-up in FinnGen r11's \"Death\" endpoint (Supplementary Table 2), both sexes, not significant (q36); FinnGen's own line: log OR −0.0176, SE 0.208, P 0.93, T 0.031 % (db-finngen-r11#q36). D21 (derived): the women's +0.0369 under APOE's Park-to-FinnGen factor 8.1 (db-finngen-r11#q4 against q32) expects +0.30, power 0.42, heterogeneity P 0.13; MUC5B's factor 6.7, power 0.32; 80 % power needs a factor of 14: unpowered, no red flag"
+    statistical_test: "Park 2025's look-up in FinnGen r11's \"Death\" endpoint (Supplementary Table 2), both sexes, not significant (q36); FinnGen's own line: log OR −0.0176, SE 0.208, P 0.93, T 0.031 % (db-finngen-r11#q36). D21 (derived): the whole-cohort +0.0147 (q54) under APOE's Park-to-FinnGen factor 8.1 (db-finngen-r11#q4 against q32) expects +0.12, power 0.14; the women's +0.0369, the generous bound, +0.30, power 0.42, heterogeneity P 0.13; MUC5B's factor 6.7 gives less; 80 % power needs a factor of 14; no calibration flags, so the mean factor (D25.3) is not needed: no red flag"
     curator: claude-opus-5-5
   - rsid: rs547541271
     note: pmid-30729179

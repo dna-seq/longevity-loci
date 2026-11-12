@@ -273,4 +273,9 @@ FinnGen R11 death endpoint (`rows-1ce2da39`), rs75824829 at 9:135,376,756 (GRCh3
 
 > [q36] 10	11118452	C	T	rs547541271	CELF2	0.932537	0.030334	-0.0176491	0.208487	0.000314074	0.000333067	0.000311695
 
-FinnGen R11's any-death endpoint at rs547541271 (GRCh38 10:11,118,452; `finngen_R11_DEATH.tsv.gz` rows 10:11.08 to 11.30 Mb): T log OR −0.0176 (SE 0.208), P 0.93, T 0.03 % (Park's own look-up, pmid-40021682#q38). D21 (derived): Park's women's +0.0369 under APOE's Park-to-FinnGen factor 8.1 (q4 against pmid-40021682#q32) expects +0.30, power 0.42, heterogeneity P 0.13; under MUC5B's 6.7, power 0.32; 80 % power needs a factor of 14. Unpowered, so no red flag. For row 61.
+FinnGen R11's any-death endpoint at rs547541271 (GRCh38 10:11,118,452; `finngen_R11_DEATH.tsv.gz` rows 10:11.108 to
+11.130 Mb): T log OR −0.0176 (SE 0.208), P 0.93, T 0.03 % (Park's own look-up, pmid-40021682#q38). D21 (derived):
+like for like, Park's whole-cohort T +0.0147 (pmid-40021682#q54) under APOE's Park-to-FinnGen factor 8.1 (q4 against
+pmid-40021682#q32) expects +0.12, power 0.14; the women's +0.0369, the generous bound, expects +0.30, power 0.42,
+heterogeneity P 0.13; MUC5B's factor 6.7 gives less. 80 % power needs a factor of 14 on the women's effect. No
+calibration raises a flag, so D25.3's mean factor is not needed: no red flag. For row 61.
