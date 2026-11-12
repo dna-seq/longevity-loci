@@ -30,8 +30,10 @@ verdict_reason: >-
   2019's healthspan leans the insertion's way at the proxy (P 0.20, one-sided 0.099), not nominal. So no independent
   scoring-class study replicates it, and two independent samples fail it, powered (UK Biobank, in Table 3 and within
   LifeGen, and FinnGen): D. The effect may be real and smaller (a
-  suggestive estimate is inflated by its selection), or absent. Exceptional survival is filed 0, as at row 26: the
-  discovery's 90th percentile result is contradicted by the powered parental 90th percentile test. Lifespan 0
+  suggestive estimate is inflated by its selection), or absent. Exceptional survival is `−` (D28.3, the lead's ruling;
+  the previous commits' 0, after row 26, rejected): Deelen's own UK Biobank parental 90th percentile validation, outside
+  its meta-analyses and so independent, goes against the insertion at P 0.021, and the contradicted
+  discovery is not read as `+`. Lifespan 0
   (LifeGen and FinnGen not significant), healthspan 0. No other trait is recorded for the variant (GWAS Catalog), and
   Open Targets 26.09 has no record of it or of its proxy, so causal and effector confidence are C4 and E4 and no gene
   is named; the locus keeps the seed's label, RP1, whose intron holds it (Ensembl's VEP). Mechanism unknown, filed as general
@@ -42,7 +44,7 @@ axes:
   mechanism: {value: general_ageing, cites: [pmid-31413261#q143, db-gwascatalog-2026.10.29#q356]}
   pleiotropy: {values: [], cites: [db-gwascatalog-2026.10.29#q356, db-gwascatalog-2026.10.29#q357, db-opentargets-26.09#q735]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
+  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "−",
             cites: [pmid-30729179#q79, pmid-30642433#q252, db-finngen-r11#q31, pmid-31413261#q143, pmid-31413261#q144, pmid-31413261#q147]}
   actionability: {label: descriptive, cites: [pmid-31413261#q143]}
   context: {values: [eur_only_evidence], cites: [pmid-31413261#q143, pmid-31413261#q145, db-ensembl-116#q380, db-ensembl-116#q381]}
