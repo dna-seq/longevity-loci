@@ -1634,8 +1634,8 @@ the lead. For row 65.
 
 > [q462] _embedded.associations[67].snp_effect_allele[0] rs1126809-G
 
-`assoc-rs1126809` (90 associations), read for row 66. Skin, from Verma 2024's PheCode GWAS (GCST904…, the
-lines say "decrease" per G): G lowers melanoma of skin (β 0.168, P 5e-87, q430), basal cell carcinoma (P 2e-57, q433),
+`assoc-rs1126809` (90 associations), read for row 66. Skin, from Verma 2024's PheCode GWAS (GCST90479794 and
+its siblings, pubmed 39024449; the lines say "decrease" per G): G lowers melanoma of skin (β 0.168, P 5e-87, q430), basal cell carcinoma (P 2e-57, q433),
 squamous cell carcinoma (P 1e-41, q436) and actinic keratosis (P 5e-100, q439); A raises a low tan response (P
 2e-172, q442). Against G: G raises vitiligo (OR 1.50 per G, P 1e-43, Jin 2016, q445), and A lowers primary open-angle
 glaucoma in a multi-trait analysis (β 0.054 "decrease", P 7e-9, q448), so G raises it. With G: G lowers dry macular

@@ -12,22 +12,28 @@ verdict_reason: >-
   and no scoring-class replication outside UK Biobank (D22.2), so not A. The criteria as read: (1) genome-wide for
   healthspan in 300,447 British UK Biobank participants: A, TYR's Gln402 allele, brings the end of healthspan
   earlier (Zenin 2019, β +0.040 per A on the log hazard, P 2.35e-13 after genomic control, the paper's call, D17.3).
-  Zenin's replication in 96,313 other UK Biobank participants, unrelated to them, leans the same way and does not
-  pass (β +0.017, P 0.076, under the paper's 0.05/12 at replication power 0.89); the replicated effect is under half
-  the discovery's (heterogeneity P about 0.039 counting both errors, derived, D29.6), a powered shortfall that would
-  cap the row at B by 71's rule, where it already sits; and healthspan replicating healthspan in one biobank counts
-  nothing toward A anyway (D25.11). By component A raises cancer (P 2.6e-16) and, more weakly, the other diseases
+  Zenin's replication in 96,313 other UK Biobank participants, unrelated to them, goes the same way, short of the
+  paper's 0.05/12 (β +0.017, P 0.076, one-sided 0.038, at replication power 0.89; the paper's own 99.5 % bound on the
+  expected P is 0.125). The replicated effect is under half the discovery's (heterogeneity P about 0.039 counting
+  both errors, derived, D29.6): a smaller effect replicating, §4.1's B, not a failing sample, so no
+  `replication_failed` (D25.13). Healthspan replicating healthspan in one biobank counts nothing toward A (D25.11). By component A raises cancer (P 2.6e-16) and, more weakly, the other diseases
   together (P 5.6e-4; stroke 0.011, diabetes 0.028) and own death (P 0.0012); the paper reads it as acting on both.
   (2) The co-occurring lifespan studies (D16), all in UK Biobank's people: Zenin's parents'-death meta-analysis (A
   +0.006, P 0.021, G one-sided 0.010) and own death (above), and Park 2025's own survival in 393,833 participants (G
   fewer deaths, P 0.0047, one-sided 0.0024; the deposit's allele columns swapped, as at APOE). Timmers 2019's million
   parental lives lean G's way and do not pass (P 0.15, one-sided 0.076), UK Biobank on G's side and LifeGen on A's.
-  (3) Outside UK Biobank nothing replicates and two looks lean the other way: FinnGen R11's any-death endpoint is flat
-  (A log OR −0.0026, P 0.79; a database line, which never lifts a row, D29.1), and Deelen 2019's 90th and 99th
-  percentiles put A on the longer-lived side (log OR +0.032, P 0.15; +0.010, P 0.78). (4) The red flag, scaled from
-  Zenin's own healthspan effect (D27.9), is unknown: no source prints a healthspan-to-lifespan calibration (D28.1, as
-  at 63), so neither the FinnGen nor the Deelen lean is read as a failed replication, and nothing contradicts at
-  nominal level. Rosoff 2023's mvAge (G, P 6.9e-9; not novel, its healthspan input's) and Timmers 2020's multivariate
+  (3) Outside UK Biobank no look-up replicates and two lean the other way: FinnGen R11's any-death endpoint is flat
+  (A log OR −0.0026, SE 0.0097, P 0.79; a database line, which never lifts a row, D29.1), and Deelen 2019's 90th and
+  99th percentiles put A on the longer-lived side (log OR +0.032, SE 0.022, P 0.15; +0.010, P 0.78). AncestryDNA
+  (Wright 2019) has no line at the lead, whose tables stop at P 3e-3 and hold clumped representatives, so untested,
+  not null; three fathers' SNPs within 0.25 Mb tag it weakly (CEU r² 0.25 to 0.35), their direction not read, named,
+  not scored. A literature search on the rsID found no further lifespan or longevity study (Semantic Scholar
+  unchecked, HTTP 429). (4) The red flag, scaled from Zenin's own healthspan effect (D27.9), is unknown: no source
+  prints a healthspan-to-lifespan calibration (D28.1, as at 63). The smallest factor on Zenin's β (0.0398 per A) at
+  which a look would flag (one-sided power 0.8, heterogeneity P under 0.05; derived): FinnGen about 0.61, Deelen's
+  90th about 1.40. The curator's ratios of APOE's lines from Zenin's scale (7.6 and 37, pmid-30729179#q89), which
+  the row does not use (D28.1), would pass both; so the flag turns entirely on the calibration, and nothing
+  contradicts at nominal level. Rosoff 2023's mvAge (G, P 6.9e-9; not novel, its healthspan input's) and Timmers 2020's multivariate
   scan (P 8e-13) pool these same samples; mvAge's Q test (P 2.1e-6) says the SNP reaches its inputs through a pathway
   of its own, and its frailty input agrees with healthspan (A frailer, P 2.8e-4) while its longevity input is
   Deelen's lean. Outcome: healthspan + (Zenin), lifespan + (UK Biobank's own and parents' deaths and Park; Timmers
@@ -50,7 +56,7 @@ verdict_reason: >-
   admixed Americans, 0.05 in South Asians and almost absent in East Asians and Africans: eur_only_evidence. Age of
   action unknown.
 axes:
-  tier: {value: B, cites: [pmid-30729179#q92, pmid-30729179#q93, pmid-30729179#q94, pmid-30729179#q95, pmid-30729179#q96, pmid-30729179#q12, pmid-30729179#q13, pmid-30729179#q29, pmid-40021682#q67, pmid-40021682#q32, pmid-30642433#q285, db-finngen-r11#q45, pmid-31413261#q166, pmid-31413261#q167, pmid-37550455#q55, pmid-37550455#q56, pmid-37550455#q2, pmid-37550455#q4, db-gwascatalog-2026.10.29#q457, db-gwascatalog-2026.10.29#q460, db-ensembl-116#q490, db-ensembl-116#q491, db-ensembl-116#q492]}
+  tier: {value: B, cites: [pmid-30729179#q92, pmid-30729179#q93, pmid-30729179#q94, pmid-30729179#q95, pmid-30729179#q96, pmid-30729179#q12, pmid-30729179#q13, pmid-30729179#q29, pmid-40021682#q67, pmid-40021682#q32, pmid-30642433#q285, db-finngen-r11#q45, pmid-31413261#q166, pmid-31413261#q167, pmid-37550455#q55, pmid-37550455#q56, pmid-37550455#q2, pmid-37550455#q4, db-gwascatalog-2026.10.29#q457, db-gwascatalog-2026.10.29#q460, pmid-30729179#q89, db-ensembl-116#q490, db-ensembl-116#q491, db-ensembl-116#q492, pmid-31484785#q6]}
   mechanism: {value: skin_sun, cites: [pmid-30729179#q94, pmid-30729179#q96, db-gwascatalog-2026.10.29#q430, db-gwascatalog-2026.10.29#q431, db-gwascatalog-2026.10.29#q432, db-gwascatalog-2026.10.29#q433, db-gwascatalog-2026.10.29#q434, db-gwascatalog-2026.10.29#q435, db-gwascatalog-2026.10.29#q442, db-gwascatalog-2026.10.29#q443, db-gwascatalog-2026.10.29#q444]}
   pleiotropy: {values: ["mech:cancer", broad, tradeoff], cites: [pmid-30729179#q94, db-gwascatalog-2026.10.29#q436, db-gwascatalog-2026.10.29#q437, db-gwascatalog-2026.10.29#q438, db-gwascatalog-2026.10.29#q439, db-gwascatalog-2026.10.29#q440, db-gwascatalog-2026.10.29#q441, db-gwascatalog-2026.10.29#q445, db-gwascatalog-2026.10.29#q446, db-gwascatalog-2026.10.29#q447, db-gwascatalog-2026.10.29#q448, db-gwascatalog-2026.10.29#q449, db-gwascatalog-2026.10.29#q450, db-gwascatalog-2026.10.29#q451, db-gwascatalog-2026.10.29#q452, db-gwascatalog-2026.10.29#q453, db-gwascatalog-2026.10.29#q454, db-gwascatalog-2026.10.29#q455, db-gwascatalog-2026.10.29#q456, pmid-30729179#q97]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -81,8 +87,8 @@ variants:
         conclusion: >-
           You carry two copies of the common version of this DNA letter, the one most people of European ancestry
           have (about 52 in 100). It is the reference the other combinations are compared with. The letter sits in
-          the TYR gene, which makes the pigment of skin, hair and eyes. This version goes with a slightly higher
-          chance of vitiligo, patchy loss of skin colour. The finding comes mostly from people of European ancestry;
+          the TYR gene, which makes the pigment of skin, hair and eyes. This version goes with a higher chance of
+          vitiligo, patchy loss of skin colour, which is uncommon. The finding comes mostly from people of European ancestry;
           less is known elsewhere.
       - genotype: A/G
         state: risk
@@ -90,18 +96,16 @@ variants:
           You carry one copy of a less common version of this DNA letter in the TYR pigment gene (about 40 in 100
           people of European ancestry do). It goes with paler, sun-sensitive skin and more skin cancer, including
           melanoma. In a very large British study it went with a slightly earlier first major disease, mostly
-          cancer, but other studies of long life do not clearly confirm an effect on lifespan. Protecting your skin
-          from the sun and having changing moles or skin spots checked are sensible. The effect is small; it is a
-          tendency, not a verdict.
+          cancer, but other studies of long life do not clearly confirm an effect on lifespan. The effect is small;
+          it is a tendency, not a verdict.
       - genotype: A/A
         state: risk
         conclusion: >-
           You carry two copies of a less common version of this DNA letter in the TYR pigment gene (about 8 in 100
           people of European ancestry do). It goes with paler, sun-sensitive skin and more skin cancer, including
           melanoma. In a very large British study each copy went with a slightly earlier first major disease, mostly
-          cancer, but other studies of long life do not clearly confirm an effect on lifespan. Protecting your skin
-          from the sun and having changing moles or skin spots checked are sensible. The effect is small; it is a
-          tendency, not a verdict.
+          cancer, but other studies of long life do not clearly confirm an effect on lifespan. The effect is small;
+          it is a tendency, not a verdict.
 studies:
   - rsid: rs1126809
     note: pmid-30729179
@@ -131,7 +135,7 @@ studies:
     ancestry: [EUR, AFR, SAS, EAS]
     sample_size: 96313
     sample_unit: individuals
-    stat_significance: not_significant
+    stat_significance: nominal
     p_value: "7.59e-02"
     p_value_num: 0.0759
     p_one_sided: 0.038
@@ -140,7 +144,7 @@ studies:
     effect_unit: log hazard of the end of healthspan per A allele (positive = earlier)
     effect_allele: A
     direction: risk
-    statistical_test: "Replication (Table 2, βrep and prep), meta-analysis of the five ancestry groups, short of the paper's P < 0.05/12 (q29) at replication power 0.8933; the first group, read as the Europeans, β +0.020, P 0.042, the others null (q93); heterogeneity against the discovery P about 0.039 (derived, D29.6); one-sided 0.038 (derived); independent individuals of the same biobank (q12, q13)"
+    statistical_test: "Replication (Table 2, βrep and prep), meta-analysis of the five ancestry groups, short of the paper's P < 0.05/12 (q29) at replication power 0.8933; the first group, read as the Europeans, β +0.020, P 0.042, the others null (q93); heterogeneity against the discovery P about 0.039 (derived, D29.6), a smaller effect replicating, no replication_failed (D25.13); one-sided 0.038 (derived; nominal under D26.13); independent individuals of the same biobank (q12, q13)"
     curator: claude-opus-5-5
   - rsid: rs1126809
     note: pmid-30729179
