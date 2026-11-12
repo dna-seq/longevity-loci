@@ -21,13 +21,18 @@ verdict_reason: >-
   Timmers' size. The 99th percentile leans the other way (T β −0.0191, SE 0.0343) and flags too (mean factor power
   0.82, heterogeneity P 0.002), its APOE factor borrowed from the 90th's ε4 line, so it is stated and the token rests
   on the 90th. Timmers 2019's own look-up in the earlier longevity sample is flat as well (Alpha 0.05, SE 0.27,
-  against the mean 0.42), a sample overlapping Deelen's, named only. The case for A, put to the lead: the effect fades
-  with age (below), and Figure 5's 80-90 band (fathers 0.0398, mothers 0.0212, pooled 0.030; the twelve bands
+  against the mean 0.42), a sample overlapping Deelen's, named only. The case for A, which the lead rejected (D28.9):
+  the effect fades with age (below), and Figure 5's 80-90 band (fathers 0.0398, mothers 0.0212, pooled 0.030; the twelve bands
   average 0.053, so the figure is on Timmers' in-self scale) under the mean factor expects 0.060, power 0.88 and
   heterogeneity P 0.12 (0.17 with the mean's SE), no flag (APOE's still flags, P 0.006). That band is the hazard at
   80 to 90, while Deelen's cases are defined by cumulative survival to the percentile, so it is the reading most
-  favourable to A;
-  D25.3 says the mean understates a late locus and APOE overstates a midlife one, and both are applied as written. It acts through smoking: every association
+  favourable to A. The flag's reason, as the lead read it (D28.9): Deelen's 90th percentile tests cumulative survival
+  against early deaths, a phenotype that carries smoking liability (Deelen's genetic correlation with cigarettes per
+  day −0.49); the loci's mean factor, 0.4175, is the mean over 18 loci that already pools midlife loci, CHRNA3/5
+  among them, and leaving CHRNA3/5 out makes the flag stronger; the 18 loci show no spread in the factor (Q 9.0 on
+  17 degrees of freedom). So the flag is no calibration artefact, and §4.1's "no red-flag heterogeneity" bars A
+  whether the effect fades with age or not. D25.3 says the mean understates a late locus and APOE overstates a
+  midlife one, and both are applied as written. It acts through smoking: every association
   the lead has is with smoking behaviour, lung cancer and COPD. The effect is mainly on deaths before 75 (HR 1.08 per
   allele at 40-75 against 1.03 after, Joshi 2017; declining after 60, Timmers 2019), and survival to very old age does
   not replicate: CHARGE-EU 90+ P 0.95 (Joshi 2017; no effect printed, so its calibration is unknown), and Deelen
