@@ -14,7 +14,10 @@ verdict_reason: >-
   with reduced lifespan (β 0.09 on the Martingale residual, which rises with death; P 3.2e-8, past the paper's own
   5.0e-8). That threshold is applied to each of three GWAS (whole cohort, men, women) without correction for running
   three, and the variant sits at the analysis's frequency floor (MAF 0.1 %, imputed). In the whole cohort only APOE
-  and ZSCAN23 pass, so PRKD3 is a men-only result; the women's estimate is not stated. The authors say the study has
+  and ZSCAN23 pass, so PRKD3 is a men-only result. The paper does not print the women's estimate; its deposit does
+  (GCST90551886, columns swapped as in all three files): A +0.0025 per copy (SE 0.011), P 0.82, against the men's
+  +0.088 (the deposit's line for the paper's hit), the two sexes 4.4 standard errors apart (P 1e-5, derived); the
+  whole cohort gives A +0.042, P 8.6e-6. The authors say the study has
   no independent external replication. Their own look-up in FinnGen's "Death" (both sexes, N 453,733) gives P 0.55
   with β −0.07 for A, on a scale where positive is more death: it leans the other way. That is a non-replication,
   not a red flag: FinnGen's outcome is binary and both sexes, and its power for a 0.1 % variant is not stated (the
@@ -31,14 +34,14 @@ verdict_reason: >-
   allele: A is rare and shortens life; G, which nearly everyone carries, is the reference. Context: men only, and
   European. Age of action is unknown.
 axes:
-  tier: {value: B, cites: [pmid-40021682#q5, pmid-40021682#q11, pmid-40021682#q10, pmid-40021682#q4, pmid-40021682#q2, pmid-40021682#q3, pmid-40021682#q12, pmid-40021682#q8, pmid-40021682#q15, pmid-40021682#q9, pmid-40021682#q16, pmid-40021682#q13, db-ensembl-116#q48]}
+  tier: {value: B, cites: [pmid-40021682#q5, pmid-40021682#q59, pmid-40021682#q60, pmid-40021682#q61, db-ensembl-116#q438, pmid-40021682#q11, pmid-40021682#q10, pmid-40021682#q4, pmid-40021682#q2, pmid-40021682#q3, pmid-40021682#q12, pmid-40021682#q8, pmid-40021682#q15, pmid-40021682#q9, pmid-40021682#q16, pmid-40021682#q13, db-ensembl-116#q48]}
   mechanism: {value: general_ageing, cites: [pmid-40021682#q6, pmid-40021682#q7, db-gwascatalog-2026.10.29#q106]}
   pleiotropy: {values: ["mech:cancer"], cites: [pmid-40021682#q6, pmid-40021682#q7]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "0", lifespan: "+", exceptional_survival: untested,
             cites: [pmid-30729179#q25, pmid-40021682#q5]}
   actionability: {label: descriptive, cites: [pmid-40021682#q5, pmid-40021682#q6]}
-  context: {values: ["sex_specific:m", eur_only_evidence], cites: [pmid-40021682#q5, pmid-40021682#q3, pmid-40021682#q13]}
+  context: {values: ["sex_specific:m", eur_only_evidence], cites: [pmid-40021682#q5, pmid-40021682#q3, pmid-40021682#q13, pmid-40021682#q59, pmid-40021682#q60]}
 flags:
   - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-40021682#q5, db-ensembl-116#q49]}
   - {token: "causal:C4", cites: [db-opentargets-26.09#q112, db-opentargets-26.09#q113, db-opentargets-26.09#q114, db-opentargets-26.09#q115]}
@@ -64,8 +67,8 @@ variants:
         state: risk
         conclusion: >-
           You carry one copy of a rare version of this DNA position (about 1 in 300 people of European ancestry
-          do). In one large British study, men with this version tended to die somewhat earlier; what it means for
-          women is not known, and a Finnish study did not confirm it. It is a likely finding, not a settled one: it
+          do). In one large British study, men with this version tended to die somewhat earlier; no such link was
+          seen in women, and a Finnish study did not confirm it. It is a likely finding, not a settled one: it
           rests on a single study and has not been confirmed in a separate group of people. It is a tendency, not
           destiny.
       - genotype: A/A
@@ -73,7 +76,7 @@ variants:
         conclusion: >-
           You carry two copies of a rare version of this DNA position. This is extremely uncommon (a few people in a
           million), too rare to have been studied on its own. In one large British study, men with one copy tended
-          to die somewhat earlier; what it means for women is not known, and a Finnish study did not confirm it.
+          to die somewhat earlier; no such link was seen in women, and a Finnish study did not confirm it.
           What two copies mean is not known. It is a tendency, not destiny.
 studies:
   - rsid: rs577106756
@@ -94,7 +97,7 @@ studies:
     effect_unit: Martingale residual of a Cox model of own survival per A allele (positive = more deaths than expected, shorter life)
     effect_allele: A
     direction: risk
-    statistical_test: "BOLT-LMM on Martingale residuals, men only (q4, q10); threshold 5.0E-08 per GWAS, three GWAS run (whole cohort, men, women), no further correction (q11); not genome-wide in the whole cohort (q2, q3); MAF 0.1 %, imputed array data; n_cases the men who died (Supplementary Table 1, q13)"
+    statistical_test: "BOLT-LMM on Martingale residuals, men only (q4, q10); threshold 5.0E-08 per GWAS, three GWAS run (whole cohort, men, women), no further correction (q11); not genome-wide in the whole cohort (q2, q3; the deposit A +0.042, P 8.6E-06, q61); the deposit (GCST90551885) prints G −0.0878, SE 0.0159, P 3.2E-08, its allele columns swapped (the file's 'A' at 0.9987), so A +0.088 (q60); women A +0.0025, SE 0.0113, P 0.82 (GCST90551886, q59); MAF 0.1 %, imputed array data; n_cases the men who died (Supplementary Table 1, q13)"
     curator: claude-opus-5-5
   - rsid: rs577106756
     note: pmid-40021682

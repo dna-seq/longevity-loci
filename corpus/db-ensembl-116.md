@@ -1608,3 +1608,7 @@ VEP: an intron variant of CELF2 (ENSG00000048740), modifier.
 > [q437] mappings[0] coord_system chromosome assembly_name GRCh37 seq_region_name 10 ancestral_allele C end 11160415 allele_string C/T strand 1 start 11160415 location 10:11160415-11160415
 
 GRCh37 10:11,160,415, the position Park's deposits print.
+
+> [q438] mappings[0] location 2:37484580-37484580 assembly_name GRCh37 start 37484580 coord_system chromosome seq_region_name 2 allele_string G/A end 37484580 strand 1 ancestral_allele G
+
+rs577106756 at GRCh37 2:37,484,580 (from Ensembl's GRCh37 server, `grch37-var-rs577106756.json`), the position Park's deposits print. For row 13.
