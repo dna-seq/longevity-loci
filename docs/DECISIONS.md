@@ -404,7 +404,7 @@ From the curator's rows 48 to 52; the lead settled them under the person's stand
 1. **An arm inside a pooled P contradicts it no more than it replicates it (D25.9's mirror), but its heterogeneity is
    the discovery's own.** 49's Liu dataset 2 (β −0.097 against dataset 1's 0.370, heterogeneity P 6.7e-5) is not an
    independent sample, so no D rests on it; it is recorded as heterogeneity inside the discovery, which bars A by
-   §4.1's last criterion on its own. 49's D rests on Deelen's 99th and Timmers (D21, D25.1). The curator's default.
+   §4.1's last criterion on its own. 49's D rests on Deelen's 99th and Timmers under D22.3 (Liu is East Asian; corrected by D28.8). The curator's default.
 2. **The mean factor divides.** Timmers' Figure 4 sheet defines Alpha as calibrated longevity β over lifespan β, so a
    longevity log OR carried to the parental scale is divided by 0.4175. 48 and 33 multiplied and are corrected;
    48's flag holds. At 33 the flagging test is Timmers itself, which also replicates (one-sided 0.017): a smaller
@@ -436,3 +436,58 @@ From the curator's rows 48 to 52; the lead settled them under the person's stand
 9. **A red flag is calibrated from the discovery's own effect, as D21 says,** here Pilling's 0.0303 (flag under both
    factors at Deelen's 90th), not Timmers' pooled β. Every row whose discovery is Pilling's is swept under it (6 at
    A first), each tier move reported and read adversarially by the lead. The curator's default.
+
+## D28 — batch six: whose effect a red flag scales, a cell against the allele, sweeps (2026-11-12)
+
+From the curator's rows 48 to 59 and the Pilling and A-row sweeps; the lead settled them under the person's standing
+word.
+
+1. **A discovery effect that needs a conversion no source prints sets no flag (D26.3).** 42's genome-wide result is
+   Pilling's age at death in years; carrying it to Timmers' scale through Pilling's Table 1 SD is the curator's own
+   conversion, not a calibration either source gives, so the red flag it raises is unknown and 42 stays B on the
+   attained-age column. The curator's (a).
+2. **A sex-specific discovery is tested in a sex-combined sample on the discovery paper's both-parents effect**, which
+   is that paper's own estimate of the effect averaged over the sexes; a same-sex sample (LifeGen fathers) is tested
+   on the sex's own effect. 37 and 56 carry no flag (the curator's defaults); 56's second question falls away.
+3. **A cell is `−` when the study it reads gives p < 0.05 one-sided against the longer-life allele and none gives
+   `+`** (D26.2's mirror). 56's healthspan (Zenin, against G, one-sided about 0.025) is `−`, and 55's exceptional
+   survival (Deelen's UK Biobank parental 90th, against, P 0.021) is `−`. The curator's 0 rejected at both: a cell
+   reading one-sided in one direction reads it in the other.
+4. **The uncalibrated Deelen nulls are swept where a flag could move a tier**: B rows whose every independent look
+   is flat or against (a flag there makes D under D25.1). A row with an independent pass cannot move and is done
+   when next opened. The curator's "sweep the A rows" is done (21 holds, 80 moved).
+5. **A credible set built on a signal the row does not read as genome-wide sets no causal or effector level**
+   (D25.5's reason): 54 is C4/E4, gene empty, WRN in prose (L2G 0.591, computed on that set). The curator's (a)
+   rejected.
+6. **58 stays B with `replication_failed`.** NECS's twofold control deficit across four haplotype SNPs is R-TIER-2's
+   confounding, not 41's disowned genotypes; R-TIER-2 is lifted by Deelen's 99th (one-sided 0.043), a pass in a
+   sample independent of NECS. Its 90th being flat does not cancel it: the 99th's cases are the more extreme, which
+   is where a centenarian discovery's effect should show. The curator's defaults.
+7. **A disease-informed Bayesian scan's call is genome-wide for B, never for A: 59 ABO is B.** Timmers 2019 calls a
+   locus genome-wide by its iGWAS Bayes-factor permutation P below 2.5e-8 (q42), with priors drawn from lipid and
+   coronary disease GWAS. D17.3 reads "genome-wide" by the paper's own call, so ABO's 1.9e-8 is a genome-wide locus,
+   §4.1's B. It is not A's "p < 5e-8 for a longevity ... phenotype": part of its evidence is the disease GWAS behind
+   the prior. Rows 6, 11 and 51, which did not count the Bayesian P, are B or A on other grounds and do not move.
+   The curator's C rejected: no decision excluded the paper's own call, and this is the first row it decides.
+   Foote at the lead is unknown, not untested: factor 3's file is complete for the window, the general factor's and
+   factors 2 and 4's are header-only there. D27.3's list (ABO, IGF2R, POM121C, GBX2/ASB18, HP) is checked row by row.
+8. **The batch's other moves hold on adversarial reading**: 49 D (on D22.3, Liu being East Asian; D27.1's "D21,
+   D25.1" is corrected to D22.3, and the row names Liu's own LD explanation), 54 C (Wright's genomic-control P, as
+   D26.1), 55 D (Deelen's UK Biobank validation lies outside its meta-analyses, so it is independent, as 26).
+9. **6 CELSR2 and 80 CHRNA3/5 leave A, each with `replication_failed`; both held on adversarial reading.**
+   - 6: Timmers' LifeGen-without-UK-Biobank arm is independent of Pilling's UK Biobank discovery (D25.9 does not
+     apply) and flat (power 0.92, heterogeneity P 0.0075). The row's "same scale" is wrong as written: Timmers'
+     0.0296 is Pilling's effect carried over by APOE's factor. Taking LifeGen out of Timmers' own pooled β (Figure 4,
+     0.0218) leaves UK Biobank at 0.0285 on Timmers' scale, and the flag holds there (power 0.91, P 0.010); the row
+     says that instead. The flag needs at least 0.81 of the discovery's effect. AncestryDNA's independent arms run
+     at 0.63 (fathers) and 1.15 (mothers) of UK Biobank's, and the row states that floor and those ratios, as 80
+     states its own. No winner's-curse correction is applied: D21 calibrates from the discovery's effect, and a
+     shrinkage method would be a new rule with no source behind it.
+   - 80: Deelen's 90th percentile tests cumulative survival against early deaths, a phenotype that carries smoking
+     liability (Deelen's genetic correlation with cigarettes per day −0.49). The mean factor 0.4175 already pools
+     midlife loci, CHRNA3/5 among them, and leaving it out makes the flag stronger; the 18 loci show no spread in
+     the factor (Q 9.0 on 17 df). So the flag is no calibration artefact, and §4.1's "no red-flag heterogeneity"
+     bars A whether the cause is fading with age or not. The curator's B; A on Figure 5's 80 to 90 hazard band,
+     the reading most favourable to A, rejected.
+   Both loci are on the field-consensus list the person asked about (desk #266): the field's consensus and this
+   curation's evidence part there, as that question said they would.
