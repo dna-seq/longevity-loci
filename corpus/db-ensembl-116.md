@@ -1895,3 +1895,20 @@ rs11169081 (GRCh38 12:49,591,427 G/A, A ancestral; A 0.11 in non-Finnish Europea
 0.88 in CEU and 0.83 in GBR, D′ 1 (q511, q512), its minor A riding with the lead's minor T. Wright 2019's other
 Table 9 lines nearby are weaker tags or none: rs7965658 r² 0.40 (CEU) to 0.55 (GBR, q513), rs11169063 0.20 (q514),
 rs6580707 0.06 to 0.17 (q515). For row 69.
+
+## Reading 2026-11-12, supplement
+
+> [q516] [49] d_prime 1.000000 r2 0.824057 variation2 rs7977389 variation1 rs55686423 population_name 1000GENOMES:phase_3:EUR
+
+> [q517] [189] population_name 1000GENOMES:phase_3:EUR d_prime 0.999999 r2 0.758732 variation2 rs17123764 variation1 rs55686423
+
+> [q518] populations[5] allele_count 7487 allele C population gnomADg:nfe frequency 0.1101
+
+> [q519] mappings[0] ancestral_allele C allele_string T/C/G strand 1 assembly_name GRCh38 coord_system chromosome end 49587939 start 49587939 seq_region_name 12 location 12:49587939-49587939
+
+> [q520] populations[12] frequency 0.07636 allele T allele_count 5193 population gnomADg:nfe
+
+Ensembl's LD window around rs55686423 in 1000 Genomes EUR at r² ≥ 0.5 (`ld-window-rs55686423-EUR`, 238 SNPs, about 50
+at r² ≥ 0.8): rs7977389 (GRCh38 12:49,587,939, q519) at r² 0.82, D′ 1 (q516), its minor C (0.11 in non-Finnish
+Europeans, q518) riding with the lead's minor T; rs17123764 at r² 0.76, D′ 1 (q517), its minor T (0.076, q520) with
+the lead's T. Wright 2019's rs7303233, rs2272391 and rs7488270 are not in the window, so below r² 0.5. For row 69.

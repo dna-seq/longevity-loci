@@ -3057,3 +3057,15 @@ studies, mvAge's GCST90321079 among them (q824). It leads only two, T-cell expre
 (Schmiedel 2018, memory Th17 and Tfh; PIP 0.077 and 0.063, q820, q821); the rest are led by other variants, the
 lead at a PIP of 0.001 to 0.09: blood pressure and hypertension (e.g. systolic pressure, PIP 0.005, q822, q823),
 large-HDL lipids, lung function, seated height, ever smoked. No locus-to-gene was read. For row 69.
+
+## Reading 2026-11-12, supplement
+
+> [q825] data.variant.credibleSets.rows[2] studyLocusId 01b19cdfc22a89835a7b3d5c1ec3e672 pValueMantissa 4.132812976837158 pValueExponent -11 beta -0.010302969096309407
+
+> [q826] data.variant.credibleSets.rows[2].variant id 12_49587939_T_C
+
+> [q827] data.variant.credibleSets.rows[2].study id GCST90693004 traitFromSource Hypertension (PheCode 401) studyType gwas
+
+A hypertension set (PheCode 401, GCST90693004) led by 12_49587939_T_C, rs7977389 (r² 0.82 to rs55686423,
+db-ensembl-116#q516), P 4.1e-11, beta −0.0103 for the set lead's C: C lowers hypertension, as Hoffmann's T raises
+systolic pressure (pmid-37550455#q61). For row 69.

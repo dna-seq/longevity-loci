@@ -1,7 +1,7 @@
 # The seed list's locus 69, PRPF40B (12q13.12). Curated 2026-11-12. Lead rs55686423 (Rosoff 2023's mvAge, Table 1),
 # the seed's only rsID: intronic in PRPF40B, 1.6 kb from MCRS1; T, the minor allele (about 9 % in Europeans), is the
-# healthier-ageing side. Wright 2019's Supplemental Table 9 holds one tag on the lead's haplotype (rs11169081, r²
-# 0.83-0.88, D′ 1). Open Targets 26.09: 74 credible sets hold the lead, none of a lifespan-class study; it leads two
+# healthier-ageing side. Wright 2019's Supplemental Table 9 holds one good tag of the lead (rs11169081, r² 0.83-0.88,
+# D′ 1) and a weaker one (rs7965658, r² 0.40-0.55). Open Targets 26.09: 74 credible sets hold the lead, none of a lifespan-class study; it leads two
 # T-cell expression sets only. The GWAS Catalog (2026-10-29) holds two associations: mvAge and smoking initiation.
 locus_id: 69
 locus_name: PRPF40B
@@ -14,39 +14,49 @@ verdict_reason: >-
   minor allele at about 9 % in Europeans, is on the healthier-ageing side); Rosoff lists it as novel, its Q test (P
   0.53) finds no sign the SNP acts off the common factor, and its own fine-mapping puts it in no credible set
   (posterior about 0.05). Timmers 2019's million parents' lives are the co-occurring lifespan study: T lengthens life
-  at P 7.3e-6, suggestive, UK Biobank and LifeGen on the same side. Frailty agrees (T less frail, P 1.7e-4); Zenin
-  2019's healthspan leans the same way, short of nominal (P 0.10, one-sided 0.052, before the 1.053 genomic control).
+  at P 7.3e-6, suggestive, UK Biobank and LifeGen on the same side. Healthspan is + on mvAge's frailty-index input,
+  healthspan-class by D23: T less frail, P 1.7e-4 (one-sided about 9e-5); Zenin 2019's healthspan leans the same way,
+  short of nominal (P 0.10, one-sided 0.052, about 0.055 after the 1.053 genomic control, D26.1).
   Exceptional survival is +: Deelen 2019's 99th percentile favours T (A β −0.138, P 0.0137, one-sided 0.0068); the
   90th, mvAge's own input, does not reach even one-sided (P 0.31). All of these are mvAge's inputs or share their
   samples. Outside them, Wright 2019's AncestryDNA fathers replicate at rs11169081, 22 kb away on the lead's
   haplotype (r² 0.88 in CEU, 0.83 in GBR, D′ 1): its A, which travels with T, lengthens fathers' lives at raw P 0.028
   (one-sided 0.014), and after Wright's genomic control (λ 1.182) at two-sided about 0.044, one-sided 0.022 (derived),
   so it holds either way. The counted allele is A, not the printed G: the UK Biobank arm's positive sign matches
-  Timmers' A at the same SNP (+0.022, P 4.2e-4), as at row 40; heterogeneity P 0.90. The mothers' table holds no line
+  Timmers' A at the same SNP (+0.022, P 4.2e-4), as at row 40, and Table 8 prints rs7965658's A where Table 9
+  prints G with the same sign, so Table 9's label is the other allele; heterogeneity P 0.90. The mothers' table holds no line
   in LD with the lead (r² 0.06 to 0.21). Park 2025's own survival in UK Biobank leans T's way (P 0.22, the deposit's
   allele columns swapped as at APOE). FinnGen R11 has no line for the lead; its tag rs11169081 is flat there (A β
-  −0.003 on death, P 0.79, the same side). A FinnGen null is calibrated only by a scale conversion no source prints
-  (D28.1), so whether it is a red flag is unknown and sets no token (D26.3); it cannot make the row D, the AncestryDNA
-  replication standing (D25.1), and B is the cap either way. Mechanism: ageing in general. The lead itself has one
-  other genome-wide association, smoking initiation in Saunders 2022 (T lowers it, P 1e-16), stronger than its mvAge
-  P; Open Targets' sets at the locus are mostly blood pressure and hypertension, large-HDL lipids, lung function and
-  height, each led by another variant with the lead at a posterior of 0.09 or less, so their alleles are not phased
-  to the lead and they are named only. Smoking is read at the lead itself, but nothing shows the ageing effect runs
-  through it (Rosoff's Q P 0.53 says only that it acts through the common factor), so it is pleiotropy, not the
-  mechanism: mech:smoking. Actionability descriptive by row 29's reading, with `modifiable` (act_behaviour:smoking, as
-  row 80) the option put to the lead. Causal confidence C4 and effector E4: no credible set of a lifespan-class study
+  −0.003 on death, P 0.79, the same side, read at a tag of r² about 0.85). A FinnGen null is calibrated only by a
+  scale conversion no source prints (D28.1), so whether it is a red flag is unknown and sets no token (D26.3); the
+  smallest factor on Timmers' tag β (+0.0220) at which FinnGen would flag is about 1.40 (heterogeneity P 0.05 binds,
+  both errors counted, D29.6; one-sided power 0.8 is reached at about 1.26). It cannot make the row D, the
+  AncestryDNA replication standing (D25.1), and B is the cap either way. The rsID literature search found no other
+  study of the lead (Semantic Scholar answered 429, so its part is unchecked). Mechanism: ageing in general. The lead
+  has three other traits, each strong and none shown to carry the ageing effect. Smoking, read at the lead itself:
+  T lowers smoking initiation in Saunders 2022 (P 1e-16, stronger than its mvAge P), as Liu 2019's rs13906-T does.
+  Blood pressure, read at a proxy: rs7977389 (r² 0.82, D′ 1, its minor C riding with T) leads Open Targets'
+  hypertension set (P 4.1e-11, C lowers it) and Hoffmann 2016's systolic and pulse pressure (T raises them), so the
+  lead's T goes with lower pressure; most of the 74 sets holding the lead are blood pressure and hypertension, the
+  rest large-HDL lipids, lung function and height, the lead at a posterior of 0.09 or less in each. Cognition, read
+  at a proxy: rs17123764 (r² 0.76, its minor T with the lead's T) raises intelligence in Hill 2018 (P 7e-9). The
+  longer-life T is on the lower-risk side of each, so no trade-off. Rosoff's Q P 0.53 says only that the SNP acts
+  through the common factor, not which route: pleiotropy mech:smoking, mech:cvd, mech:cognition, broad, as row 29.
+  Actionability descriptive by row 29's reading (several strong routes, none shown to carry it), with two options
+  put to the lead: `modifiable` (act_behaviour:smoking, as row 80, the lead's own strongest association) or
+  `preventable` (act_test:bp, as row 40, read here at an r² 0.82 proxy). Causal confidence C4 and effector E4: no credible set of a lifespan-class study
   holds the lead (mvAge's sets in Open Targets include none here), so neither is read; the lead's only led sets are
   T-cell expression of ENSG00000161791 (PIP 0.08 or less), named only. A/A is the reference (about 82 in 100
   Europeans); PROTECT:PRESENCE: the protective T is the minor, derived allele. Age of action is unknown: no cached
   source gives this locus's own age bands.
 axes:
-  tier: {value: B, cites: [pmid-37550455#q57, pmid-37550455#q58, pmid-37550455#q59, pmid-37550455#q60, pmid-37550455#q2, pmid-37550455#q3, pmid-37550455#q5, pmid-30642433#q288, pmid-30642433#q289, pmid-30729179#q99, pmid-31413261#q168, pmid-31413261#q169, pmid-31484785#q112, pmid-31484785#q113, pmid-31484785#q83, db-ensembl-116#q511, db-ensembl-116#q512, db-ensembl-116#q514, db-ensembl-116#q515, pmid-40021682#q69, pmid-40021682#q32, db-finngen-r11#q47, db-gwascatalog-2026.10.29#q466, db-gwascatalog-2026.10.29#q467]}
+  tier: {value: B, cites: [pmid-37550455#q57, pmid-37550455#q58, pmid-37550455#q59, pmid-37550455#q60, pmid-37550455#q2, pmid-37550455#q3, pmid-37550455#q5, pmid-30642433#q288, pmid-30642433#q289, pmid-30729179#q99, pmid-31413261#q168, pmid-31413261#q169, pmid-31484785#q112, pmid-31484785#q113, pmid-31484785#q83, db-ensembl-116#q511, db-ensembl-116#q512, db-ensembl-116#q514, db-ensembl-116#q515, pmid-31484785#q114, pmid-31484785#q115, db-ensembl-116#q513, pmid-40021682#q69, pmid-40021682#q32, db-finngen-r11#q47, db-gwascatalog-2026.10.29#q466, db-gwascatalog-2026.10.29#q467]}
   mechanism: {value: general_ageing, cites: [pmid-37550455#q57, db-opentargets-26.09#q819, db-opentargets-26.09#q822, db-opentargets-26.09#q823]}
-  pleiotropy: {values: ["mech:smoking"], cites: [db-gwascatalog-2026.10.29#q468, db-gwascatalog-2026.10.29#q469, db-gwascatalog-2026.10.29#q470, pmid-37550455#q57]}
+  pleiotropy: {values: ["mech:smoking", "mech:cvd", "mech:cognition", broad], cites: [db-gwascatalog-2026.10.29#q468, db-gwascatalog-2026.10.29#q469, db-gwascatalog-2026.10.29#q470, pmid-37550455#q57, pmid-37550455#q61, pmid-37550455#q62, db-opentargets-26.09#q825, db-opentargets-26.09#q826, db-opentargets-26.09#q827, db-ensembl-116#q516, db-ensembl-116#q517, db-ensembl-116#q518, db-ensembl-116#q519, db-ensembl-116#q520]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
-            cites: [pmid-37550455#q59, pmid-30729179#q99, pmid-30642433#q288, pmid-31484785#q112, pmid-31413261#q169]}
-  actionability: {label: descriptive, cites: [pmid-37550455#q57, pmid-37550455#q58, db-gwascatalog-2026.10.29#q468]}
+            cites: [pmid-37550455#q59, pmid-30729179#q99, pmid-30729179#q59, pmid-30642433#q288, pmid-31484785#q112, pmid-31413261#q169]}
+  actionability: {label: descriptive, cites: [pmid-37550455#q57, pmid-37550455#q61, db-gwascatalog-2026.10.29#q468, db-opentargets-26.09#q825]}
   context: {values: [eur_only_evidence], cites: [pmid-37550455#q57, pmid-30642433#q288, pmid-31484785#q112]}
 flags:
   - {token: "PROTECT:PRESENCE", cites: [pmid-37550455#q58, db-ensembl-116#q503, db-ensembl-116#q505]}
@@ -77,7 +87,7 @@ variants:
           ancestry do). In very large European studies that combined healthspan, frailty, long life and biological
           age into one measure, this version went with slightly healthier ageing, and parents of carriers lived a
           little longer, which a separate American study also saw. The same version goes with a lower chance of
-          ever taking up smoking. It is a likely finding, not a settled one. The effect is small and it is a
+          ever taking up smoking, slightly lower blood pressure and slightly higher scores on thinking tests. It is a likely finding, not a settled one. The effect is small and it is a
           tendency, not destiny.
       - genotype: T/T
         state: protective
@@ -86,7 +96,7 @@ variants:
           ancestry do). In very large European studies that combined healthspan, frailty, long life and biological
           age into one measure, each copy went with slightly healthier ageing, and parents of carriers lived a
           little longer, which a separate American study also saw. The same version goes with a lower chance of
-          ever taking up smoking. It is a likely finding, not a settled one. The effect is small and it is a
+          ever taking up smoking, slightly lower blood pressure and slightly higher scores on thinking tests. It is a likely finding, not a settled one. The effect is small and it is a
           tendency, not destiny.
 studies:
   - rsid: rs55686423
