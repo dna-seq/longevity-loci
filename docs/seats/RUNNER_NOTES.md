@@ -21,7 +21,7 @@ None.
 
 ## To file
 
-- kit #438 filed 2026-11-12: the jobs watcher's empty cold-start line (no job, no end) wakes the seat at every watchdog restart; pressed `nothing` each time meanwhile.
+- kit #438 fixed in v0.1.190: the jobs watcher's empty cold-start line now opens `info:` and waits for the next prompt. Nothing more to file.
 - kit #398, the take refused for a seat the clone declares: filed by the lead, nothing more to add here.
 - kit #410 fixed in v0.1.182: the one-shot recipe takes `ENDS=1` (`until-event.sh -- env JOB=<id> ENDS=1 bash …/watch-job.sh`).
   No longer needed here: the prefix watcher `[seat.runner.watch.jobs]` (kit #380) runs since 2026-11-11, by
