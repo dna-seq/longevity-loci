@@ -107,8 +107,8 @@ studies:
     p_value_num: 6.78e-05
     effect_size: 0.016
     effect_measure: beta
-    effect_unit: z-score of paternal lifespan per A allele at the proxy (A is the reverse-strand T)
-    effect_allele: A
+    effect_unit: z-score of paternal lifespan per T allele at the proxy (the paper prints A, the reverse strand; T on the forward strand, rs6511720 G/T, the longer-lived allele as in Timmers 2020's T and Pilling's G-shorter line)
+    effect_allele: T
     direction: protective
     proxy_rsid: rs6511720
     statistical_test: "Linear regression of fathers' lifespan in years on offspring dosage, not a Cox model (the vocabulary has no other parental design); P uncorrected (Table 3; 2.486e-04 after genomic control); allele and N from Supplemental Table 8 (q81)"
@@ -128,8 +128,8 @@ studies:
     p_one_sided: 0.0309
     effect_size: 0.007833
     effect_measure: beta
-    effect_unit: z-score of maternal lifespan per A allele at the proxy (A is the reverse-strand T)
-    effect_allele: A
+    effect_unit: z-score of maternal lifespan per T allele at the proxy (the paper prints A, the reverse strand; T on the forward strand, rs6511720 G/T, the longer-lived allele as in Timmers 2020's T and Pilling's G-shorter line)
+    effect_allele: T
     direction: protective
     proxy_rsid: rs6511720
     statistical_test: "Linear regression of mothers' lifespan on offspring dosage, AncestryDNA arm of Supplemental Table 9 (q79), raw P; two-sided P printed, one-sided 0.031 (derived, D25.13; p_one_sided, nominal under D26.13), 0.038 after genomic control at λ 1.113 (q82, q84; derived), a replication; the counted allele is the fathers' (q80: same label, same sign); heterogeneity with UK Biobank P 0.73"
