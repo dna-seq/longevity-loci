@@ -118,6 +118,68 @@ URL, the filter, the day, and the sha256 of the file read and of the text writte
 in a data deposit when the authors gave one. Exit 0 all fetched, 1 a file refused or none found, 3 a service did
 not answer (retry).
 
+## Export: the module's tables (RM1)
+
+`uv run loci export [OUTDIR]` (default `module/`) projects `rows/` onto just-dna-format 0.8's `variants.csv` and
+`studies.csv`, and writes `quote_sources.csv` beside them (`src/longevity_loci/export.py`). It reads `rows/` and
+`corpus/` only, never the article cache. Every row it writes is parsed by 0.8's own `VariantRow` or `StudyRow`
+first; a refusal is reported and the row withheld. Output is sorted by rsid (by number), then genotype or
+citation, then every cell, so two runs give the same bytes. Exit 0 written, 1 a row or note that does not parse or
+a cite the corpus lacks (nothing written), 2 an input missing.
+
+The columns are the reference example's headers (`docs/format08_reference/longevity_studies/`), then the module
+seat's ask where 0.8 has a column for it: on `variants.csv` negatives, priority, phenotype, category,
+stat_significance, effect_size, effect_measure, effect_allele, flags, requires_callable, acmg_sf, actionability; on
+`studies.csv` stat_significance. Never chrom, start, ref or alts (the enricher resolves them), weight, nor the
+spec's defaults (curator, method on a variant).
+
+- **variants.csv**, one row per (lead rsid, genotype), the genotype's alleles sorted as 0.8 requires; the
+  genotype's state and conclusion, the variant's own cells, `trait_efo_id` OBA_VT0005372 on every variant (the
+  reference example's rule; the row's own trait is reported), `priority` high for tier A, medium for B, low for C
+  and D, `category` the mechanism axis, `actionability` its label, `requires_callable` and `acmg_sf` false.
+  `flags` is `tier:X`, then the pleiotropy, context and actionability tokens, then the row's flags, `;`-joined.
+  A tier D row is exported like any other: its states are neutral and its flag `tier:D`.
+- **studies.csv**, one row per (lead rsid, study): `pmid` from the note, or `NONE` with the note's `doi` for a
+  preprint; `proxy_rsid` and the proxy's own `effect_allele` as the study holds them; `trait_efo_id` from the
+  phenotype class as the reference example writes it (HEALTHSPAN EFO_0009762, PARENTAL_LIFESPAN EFO_0007796,
+  EXTREME_SURVIVAL_CC and OWN_SURVIVAL OBA_VT0005372; another class is left empty and reported);
+  `provenance_quote` the quote's verbatim text from `corpus/<key>.md`. A percentile design (p90, p99) opens
+  `statistical_test` with its percentile, since 0.8 has no cell for it and only `statistical_test` tells the two
+  apart. A Cox model's age-band row leaves `n_cases` empty: its deaths are events, not cases. An effect the curator
+  derived (`effect_unit` saying "derived here") writes the unit "crude odds ratio derived from the printed allele
+  frequencies, not printed by the source". A study cannot rest on a `db-` note (the model refuses it, D12), so none
+  is exported as one.
+- **quote_sources.csv**, one row per exported study: rsid, pmid, doi, the note, the quote id, the reading's date
+  and depth, or the `quote_absent` reason. It lets the module's README explain the plugin's `quotes_found` zeros:
+  the plugin looks in Europe PMC's body text only (issue #7, point 3), and a quote read at depth `supplement` is
+  not there. The cache sidecar's source is not recorded in a note's fields (only in its prose), so it is not
+  written.
+
+Never written as authored values, because 0.8 computes them downstream: `tradeoff`, `eur_only_evidence`, the
+`causal:` and `effector:` confidences and the `ld_proxy_of:` pair. Where the curator's token and 0.8's computed
+value disagree, that is a finding for the curator.
+
+**What 0.8 has no place for**, reported by the command by reason and with a count, never dropped silently:
+`age_of_action` and `outcome` (no column; 0.8 derives the outcome strip from `phenotype_class`), a study's
+`p_one_sided` (written into `statistical_test`), and two that are wishes for the format, filed with
+just-dna-compiler's triage by the liaison, not losses hidden here:
+
+- **`nominal` (S147; the compiler's RM434).** 0.8's `stat_significance` stops at significant, suggestive,
+  not_significant and unknown, and the format's maintainers read none of them as a threshold: `significant` is the
+  defensible reading for a replication that passed its own test, where `not_significant` would tell a reader the
+  look-up failed. So a nominal study (and the one nominal variant) is written `significant`, its `p_value` and
+  `p_value_num` exactly as held, and its `statistical_test` says "nominal replication look-up (p < 0.05 in the
+  discovery's direction), not genome-wide; D11/D13" (after the percentile, where there is one). Never `unknown`
+  for a known P.
+- **A study's direction (S148; the compiler's RM435, an `effect_direction` column, increase or decrease, due in a
+  minor release).** Until it ships, 0.8 has no study-level direction beside `effect_allele`. Where a study has an
+  effect size, its sign and allele carry the direction. Where it has allele, direction and P but no effect size
+  (D13, D15, D20), `conclusion` says "<allele> on the longer-lived side" (or the shorter-lived), `effect_size` empty.
+
+The export also names, without changing either value, a study whose `p_value` and `p_value_num` disagree by more
+than 1 % (the compiler's check, an error under strict), and two analyses of one article that no narrowing cell
+tells apart (the compiler's duplicate rule). Both are the curator's to settle.
+
 ## The checks
 
 `uv run loci check rows` and `uv run loci check quotes`. Exit 0 all passed, 1 a failure, 2 an input missing

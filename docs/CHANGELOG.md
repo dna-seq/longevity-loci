@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- RM1 built: `loci export` projects the rows onto 0.8's `variants.csv` and `studies.csv` plus `quote_sources.csv`, each row parsed by 0.8's models, sorted and byte-reproducible; computed tokens never authored, `nominal` written `significant` and said not genome-wide in `statistical_test` (S147, the compiler's RM434), a bare study direction into `conclusion` until RM435's `effect_direction` ships (S148); what 0.8 cannot hold reported by reason (docs/FORMATS.md, "Export").
 - just-dna 0.8 adopted: format, compiler and enricher `>=0.8.4,<0.9` (0.8.4 in the lock), with the module-creator plugin's pin moved to `v0.48.7`, whose server runs the same trio; polars and duckdb stay below 2. Suite unchanged.
 - The curator's stop and the dashboard's cap move from 80 % to 95 % of the 7-day window, on the person's word (2026-11-12; 90 % for an hour first).
 - D29.2: a footnote's allele outvoted by the paper's text, supplement and figure is overruled (64 BET1L, T longer-lived).

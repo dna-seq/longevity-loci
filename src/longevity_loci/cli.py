@@ -12,6 +12,7 @@ from dotenv import load_dotenv
 
 from longevity_loci.supp import fetch_supplement
 from longevity_loci.fetch import Outcome, fetch
+from longevity_loci.export import ExportError, export, write
 from longevity_loci.check import FAILING, UNKNOWN, Finding, Kind, check_quotes, check_rows, load_seed, summary
 
 app = typer.Typer(no_args_is_help=True, help="Checks over the curated rows, the corpus and the article cache.")
@@ -128,3 +129,30 @@ def fetch_supp_cmd(
     if not result:
         raise typer.Exit(1)
 
+
+
+@app.command("export")
+def export_cmd(
+    outdir: Path = typer.Argument(ROOT / "module", help="where variants.csv, studies.csv and quote_sources.csv go"),
+    rows: Path = typer.Option(ROOT / "rows", help="the rows directory"),
+    corpus: Path = typer.Option(ROOT / "corpus", help="the corpus directory"),
+) -> None:
+    """Project the curated rows onto just-dna-format 0.8's variants.csv and studies.csv, with quote_sources.csv
+    (where each provenance quote was read). What 0.8 has no place for is listed by reason, with a count. Exit 0
+    written, 1 a row or note that does not parse or a cite the corpus lacks (nothing written), 2 an input missing."""
+    try:
+        result = export(rows, corpus)
+    except FileNotFoundError as e:
+        typer.echo(str(e), err=True)
+        raise typer.Exit(2) from e
+    except ExportError as e:
+        typer.echo(f"nothing written: {e}", err=True)
+        raise typer.Exit(1) from e
+    written = write(result, outdir)
+    typer.echo("  ".join(f"{name}: {n}" for name, n in written.items()) + f"  into {outdir}")
+    grouped: dict[str, list[tuple[str, int]]] = {}
+    for reason, detail, n in result.by_reason():
+        grouped.setdefault(reason.value, []).append((detail, n))
+    for reason, details in grouped.items():
+        named = [f"{d} ×{n}" if n > 1 else d for d, n in details if d]
+        typer.echo(f"{sum(n for _, n in details):5}  {reason}" + (f": {', '.join(named)}" if named else ""))

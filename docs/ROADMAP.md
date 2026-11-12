@@ -5,7 +5,7 @@ owner. A done item leaves this file; `docs/CHANGELOG.md` says what landed.
 
 ## RM1 — the export of curated rows to the module's tables
 
-**State:** waits until 2026-11-14. **Owner:** lead. Then look again whether the plugin released for 0.8 (issue #6);
+**State:** built, branch `worktree-agent-afbbfcf2f9c762058` (`uv run loci export`, docs/FORMATS.md "Export"); the module seat's first validate pending. **Owner:** lead. Before: it waited for the plugin to release for 0.8 (issue #6);
 built after it. Looked 2026-11-12: the registry's test instance serves format 0.8.4 (registry 0.29.1), half of the
 condition; the plugin's main (0.48.6) still pins `just-dna-format<0.8`, so its tools would meet a 409 there; production
 did not answer (HTTP 502). Kept so on 2026-11-10, against building for 0.7.1 first: the person, "module b - wait for 0.8 on

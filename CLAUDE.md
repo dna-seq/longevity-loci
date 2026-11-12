@@ -137,6 +137,9 @@ verdicts only.
   into `$LOCI_CACHE` as text, beside the article's, where a quote read at depth `supplement` is checked.
 - `scripts/dashboard.py`: the curation dashboard's text (progress, rates, pacing against the weekly cap), which the lead's
   watcher `dashboard` keeps posted.
+- `uv run loci export [OUTDIR]`: the rows projected onto just-dna-format 0.8's `variants.csv` and `studies.csv`
+  (default `module/`), with `quote_sources.csv`; what 0.8 has no place for is listed by reason with a count
+  (docs/FORMATS.md, "Export").
 - `uv run loci check quotes`: every note's quote is found verbatim in `$LOCI_CACHE`. Exit 0 passed, 1 a failure,
   2 no cache set, 4 some quotes could not be checked (unknown, not passed).
 
