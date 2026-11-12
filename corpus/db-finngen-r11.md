@@ -211,3 +211,13 @@ log odds of death, P 0.023, A 0.231; nearest gene GULOP. A goes with fewer death
 nominal replication outside UK Biobank. Under D21 with APOE's factor within FinnGen (0.99, q4 over
 pmid-30642433#q90) Pilling's +0.0303 expects A −0.030, power 0.96, heterogeneity P 0.33; the mean factor gives power
 0.41, P 0.41: consistent, no flag. For row 53.
+
+## Reading 2026-11-12, supplement
+
+> [q30] 8	30981030	T	G	rs11783562	RP11-293D9.2	0.00102094	2.991	-0.0244255	0.00743616	0.525952	0.521527	0.526507
+
+FinnGen R11 death endpoint (`rows-41171935`), rs11783562 at 8:30,981,030 (GRCh38): ref T, alt G, β −0.0244 (SE
+0.0074) on the log odds of death, P 0.0010, G 0.526 (cases 0.522, controls 0.527); 50,511 deaths against 403,222
+controls (q6). G goes with fewer deaths, one-sided P 0.0005 (derived): a nominal replication outside AncestryDNA and
+UK Biobank, the row's one independent support. The PheWeb region endpoint gives the same line
+(`death-8_30981030.json`). For row 54.

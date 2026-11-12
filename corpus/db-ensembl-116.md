@@ -1353,3 +1353,18 @@ rs7844965 with rs11780471 in CEU: r² 0.13, D′ 0.66. Not a proxy (pmid-3148478
 
 Ensembl VEP for rs11780471 (`vep-rs11780471.json`): upstream of EPHX2 (about 3.6 kb, every EPHX2 transcript), no
 transcript holding it. For row 53.
+
+## Reading 2026-11-12, record
+
+> [q375] populations[75] frequency 0.521868787276342 allele_count 525 allele G population 1000GENOMES:phase_3:EUR
+
+`var-rs11783562.json` (Ensembl's REST, GRCh38): G 0.52 in 1000 Genomes Europeans. For row 54.
+
+> [q376] mappings[0] seq_region_name 8 allele_string T/A/G coord_system chromosome assembly_name GRCh38 ancestral_allele T location 8:30981030-30981030 end 30981030 start 30981030 strand 1
+
+The site is triallelic in dbSNP (T/A/G), T ancestral; the studies here test T against G. G is the derived allele.
+For row 54.
+
+> [q377] populations[73] allele G allele_count 688 frequency 0.682539682539683 population 1000GENOMES:phase_3:EAS
+
+G 0.68 in East Asians (0.04 in Africans). For row 54.

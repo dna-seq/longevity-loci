@@ -1,0 +1,175 @@
+# The seed list's locus 54, PURG (8p12, PURG / TEX15 / WRN). Curated 2026-11-12. Lead rs11783562 (the seed's lead),
+# from Wright 2019's GWAS of AncestryDNA customers' own current age (Supplemental Table 8), as at row 10, not the
+# parental-lifespan meta-analysis the seed names: the lead has no line in Supplemental Table 9, where three neighbours
+# within 18 kb are nominal in fathers (P 8.4e-4 to 0.0014). The age-GWAS neighbours rs1362910 (raw P 7.7e-8, genomic
+# control 4.5e-6) and rs10954771 are named, not scored; LD to the lead not read. Not in Timmers 2019's Figure 2 sheet.
+locus_id: 54
+locus_name: PURG
+verdict: re-tiered
+verdict_reason: >-
+  Tier C, from the seed's B. The region's strongest result is Wright 2019's GWAS of the current age of 482,068
+  AncestryDNA customers (VIABILITY_AF, confirmation only under §4.5, so it cannot carry A or B alone, D23). There G,
+  about half of European chromosomes (0.52), is commoner among older customers, and it is suggestive, not
+  genome-wide, at the P the paper uses for its own call (D17.3): genomic control (λ 1.374) gives 8.7e-7 against the
+  paper's Bonferroni line of 9.3e-8; uncorrected it is 8.1e-9. The paper names only APOE and MAP2K6 from this
+  analysis. The seed reads the study as a parental-lifespan meta-analysis with UK Biobank: the lead is not in it,
+  and the region's lines there, at three neighbours, are nominal (fathers' meta P 8.4e-4 to 0.0014). The one
+  independent support is FinnGen R11's any-death endpoint: G with fewer deaths, P 0.0010 (one-sided 0.0005), in
+  50,511 deaths, outside AncestryDNA and UK Biobank, nominal. Timmers 2019's million parental lives lean the same way
+  (P 0.16, one-sided 0.080, its two arms opposite in sign); Zenin 2019's healthspan leans the same way, P 0.18. Deelen
+  2019 is flat at both percentiles (P 0.82 and 0.32); the discovery's effect, on z-scored current age, has no factor
+  to Deelen's scale, so D21's power is not computable, and Timmers' own β under APOE's factor would give only about
+  0.39, so the flat result is no red flag. A suggestive confirmation-class result with one nominal independent
+  replication: C, as row 10, not B (R-TIER-4, no genome-wide scoring-class anchor), not D (nothing powered
+  contradicts it). Open Targets 26.09 holds the lead in one credible set of the eight studies, Wright's age study's
+  (PICS, 29 variants), where its posterior probability, the set's highest, is 0.0988: C3. That set is built at the
+  uncorrected 8e-9 the row does not read as genome-wide; it counts because §4.5 lists VIABILITY_AF among the scoring
+  classes and the row's claim rests on that study (D17.2), as row 10 queried it. On that set locus-to-gene gives WRN
+  0.591, PURG 0.499 (0.001 under the bar, not a rival by D24's letter) and TEX15 0.247, and its 24 colocalisations are
+  all with other GWAS, none with a QTL study: effector E2, WRN, by L2G alone. The seed's WRN:0.59 is the same record.
+  Whether a PICS set on a sub-genome-wide confirmation-class signal sets C3 and E2 is put to the lead; C4 and E4 with
+  no gene named is the alternative. The set colocalises (H4 above 0.9) with type 2 diabetes, HDL cholesterol,
+  triglycerides, body mass index, insomnia and intelligence, with no direction for G in any record: shared signal,
+  not a mediator, so the mechanism is general ageing with metabolic, adiposity and cognition pleiotropy. The
+  protection is a presence, the derived G. Age of action is unknown. G is 0.68 in East Asians, untested there.
+axes:
+  tier: {value: C, cites: [pmid-31484785#q100, pmid-31484785#q31, pmid-31484785#q32, pmid-31484785#q33, pmid-31484785#q101, pmid-31484785#q102, pmid-31484785#q103, pmid-31484785#q104, db-finngen-r11#q30, db-finngen-r11#q6, pmid-30642433#q250, pmid-30729179#q78, pmid-31413261#q139, pmid-31413261#q140]}
+  mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q722, db-opentargets-26.09#q723, db-opentargets-26.09#q724, db-opentargets-26.09#q725, db-opentargets-26.09#q726, db-opentargets-26.09#q730]}
+  pleiotropy: {values: ["mech:diabetes", "mech:adiposity", "mech:cognition"], cites: [db-opentargets-26.09#q723, db-opentargets-26.09#q724, db-opentargets-26.09#q725, db-opentargets-26.09#q726, db-opentargets-26.09#q727, db-opentargets-26.09#q728, db-opentargets-26.09#q729, db-opentargets-26.09#q730]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "0",
+            cites: [pmid-30729179#q78, pmid-31484785#q100, db-finngen-r11#q30, pmid-30642433#q250, pmid-31413261#q139, pmid-31413261#q140]}
+  actionability: {label: descriptive, cites: [pmid-31484785#q100]}
+  context: {values: [eur_only_evidence], cites: [pmid-31484785#q100, db-finngen-r11#q30, db-ensembl-116#q377]}
+flags:
+  - {token: "PROTECT:PRESENCE", cites: [pmid-31484785#q100, db-ensembl-116#q375, db-ensembl-116#q376]}
+  - {token: "causal:C3", cites: [db-opentargets-26.09#q712, db-opentargets-26.09#q713, db-opentargets-26.09#q714, db-opentargets-26.09#q715]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q716, db-opentargets-26.09#q717, db-opentargets-26.09#q718, db-opentargets-26.09#q719, db-opentargets-26.09#q720, db-opentargets-26.09#q721, db-opentargets-26.09#q722]}
+variants:
+  - rsid: rs11783562
+    gene: WRN
+    phenotype: 8p12 region, survival to older age
+    trait_efo_id: OBA_VT0005372
+    effect_allele: G
+    effect_size: 0.01177
+    effect_measure: beta
+    stat_significance: suggestive
+    direction: protective
+    genotypes:
+      - genotype: T/T
+        state: neutral
+        conclusion: >-
+          You carry two copies of one of the two common versions of this DNA region (about 23 in 100 people of
+          European ancestry do). It is the reference the other combinations are compared with. The region, on
+          chromosome 8, holds several genes; which one matters, if any, is not settled. The finding comes from
+          people of European ancestry; less is known elsewhere.
+      - genotype: G/T
+        state: protective
+        conclusion: >-
+          You carry one copy of each common version of this DNA region (about half of people of European ancestry
+          do). In one large study of genealogy-site customers, the G version was a little more common among older
+          people, and in a Finnish study it went with slightly fewer deaths. This is early evidence: a much larger
+          study of parents' lifespans did not clearly confirm it. The effect, if real, is small: a tendency, not
+          destiny.
+      - genotype: G/G
+        state: protective
+        conclusion: >-
+          You carry two copies of the G version of this DNA region (about 27 in 100 people of European ancestry
+          do). In one large study of genealogy-site customers, each copy was a little more common among older
+          people, and in a Finnish study it went with slightly fewer deaths. This is early evidence: a much larger
+          study of parents' lifespans did not clearly confirm it. The effect, if real, is small: a tendency, not
+          destiny.
+studies:
+  - rsid: rs11783562
+    note: pmid-31484785
+    quote: q100
+    phenotype_class: VIABILITY_AF
+    study_design: current_age_quantitative
+    population: AncestryDNA customers, the European population group, close relatives removed
+    ancestry: [EUR]
+    sample_size: 482000
+    sample_unit: individuals
+    stat_significance: suggestive
+    p_value: "8.667e-07"
+    p_value_num: 8.667e-07
+    effect_size: 0.01177
+    effect_measure: beta
+    effect_unit: z-scored current age per G allele (positive = older, survival to older age)
+    effect_allele: G
+    direction: protective
+    statistical_test: "Supplemental Table 8, Male_Female.AGE, quantitative GWAS of current age; genomic-control P, the correction the paper's own significance call uses (D17.3); raw P 8.089e-09, which passes the paper's Bonferroni 9.31e-8 only uncorrected; λ 1.374, LDSC intercept 1.04 (S Table 3, q31); not among the paper's candidate loci (q32, q33); the table's C is the complement of G (db-ensembl-116#q376)"
+    curator: claude-opus-5-5
+  - rsid: rs11783562
+    note: pmid-30642433
+    quote: q250
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 640179
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.16051403"
+    p_value_num: 0.1605
+    p_one_sided: 0.0803
+    effect_size: 0.0054059
+    effect_measure: beta
+    effect_unit: log hazard protection per G allele (the file's a1 T, beta1 -0.0054059, turned; positive = longer life)
+    effect_allele: G
+    direction: protective
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), direction -+ (UK Biobank and LifeGen opposite in sign), info 0.996; one-sided 0.080 (derived), not nominal"
+    curator: claude-opus-5-5
+  - rsid: rs11783562
+    note: pmid-30729179
+    quote: q78
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.18"
+    p_value_num: 0.1767
+    effect_size: -0.00656
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per G allele (positive = earlier)
+    effect_allele: G
+    direction: protective
+    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), -log10 P 0.7529"
+    curator: claude-opus-5-5
+  - rsid: rs11783562
+    note: pmid-31413261
+    quote: q139
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.8152"
+    p_value_num: 0.8152
+    effect_size: -0.0044
+    effect_measure: beta
+    effect_unit: log odds of survival to the 90th percentile per G allele (the file's t, beta 0.0044, turned)
+    effect_allele: G
+    direction: risk
+    statistical_test: "Deelen 2019's summary statistics (GCST008598), effective N 11,615; flat. D21: the discovery's effect is on z-scored current age and no factor carries it to this scale, so power is not computable; Timmers' β per G under APOE's factor (4.84) expects +0.026, power about 0.39 (derived): unpowered, no red flag"
+    curator: claude-opus-5-5
+  - rsid: rs11783562
+    note: pmid-31413261
+    quote: q140
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.3238"
+    p_value_num: 0.3238
+    p_one_sided: 0.162
+    effect_size: 0.0293
+    effect_measure: beta
+    effect_unit: log odds of survival to the 99th percentile per G allele (the file's t, beta -0.0293, turned)
+    effect_allele: G
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GCST008599), effective N 4,524; flat; power under Timmers' β and APOE's factor about 0.22 (derived), not computable from the discovery's own effect"
+    curator: claude-opus-5-5

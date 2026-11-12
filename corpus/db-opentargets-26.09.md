@@ -2600,3 +2600,78 @@ by §4.2's letter, on a QC-flagged single-cell study of 303 samples whose set th
 > [q711] data.variant.credibleSets.rows[2].locus.rows[4].variant id 8_27584547_G_A
 
 The row's lead. For row 53.
+
+## Reading 2026-11-12, record
+
+> [q712] data.credibleSets.rows[0] studyLocusId 7d1d08292a3cb5c88db9c4c228ba94e7 finemappingMethod PICS
+
+`credibleSets` over the eight studies (the seven lifespan, healthspan and longevity studies plus Wright 2019's
+current-age study GCST009448, as at row 10, q75) for 8_30981030_T_G: one set, Wright's age study's, PICS. No
+lifespan, longevity or healthspan study holds the lead. For row 54.
+
+> [q713] data.study.credibleSets.rows[1] studyLocusId 7d1d08292a3cb5c88db9c4c228ba94e7 pValueMantissa 8 pValueExponent -9 finemappingMethod PICS
+
+`study-GCST009448-sets.json` (q77): the set is built at P 8 × 10⁻⁹, the uncorrected P (pmid-31484785#q100); the
+row reads the study at the genomic-control P, 8.7 × 10⁻⁷. For row 54.
+
+> [q714] data.study.credibleSets.rows[1].locus count 29
+
+The set holds 29 variants. For row 54.
+
+> [q715] data.study.credibleSets.rows[1].locus.rows[0] posteriorProbability 0.0988035086190874
+
+The lead's posterior probability, 0.0988, the set's highest, just under §4.2's 0.1: C3 (in a set, PIP < 0.1).
+The rest spread from 0.053 down. For row 54.
+
+> [q716] data.study.credibleSets.rows[1].l2GPredictions.rows[0] score 0.5907216668128967
+
+> [q717] data.study.credibleSets.rows[1].l2GPredictions.rows[0].target approvedSymbol WRN
+
+Locus-to-gene on this set: WRN 0.591, over §4.2's 0.5. For row 54.
+
+> [q718] data.study.credibleSets.rows[1].l2GPredictions.rows[1] score 0.4991125166416168
+
+> [q719] data.study.credibleSets.rows[1].l2GPredictions.rows[1].target approvedSymbol PURG
+
+PURG 0.499, 0.001 under the bar, so not a rival by D24's letter. For row 54.
+
+> [q720] data.study.credibleSets.rows[1].l2GPredictions.rows[2] score 0.24657242000102997
+
+> [q721] data.study.credibleSets.rows[1].l2GPredictions.rows[2].target approvedSymbol TEX15
+
+TEX15 0.247. The seed list's `l2g_top WRN:0.59` is this same record, not a second source. For row 54.
+
+> [q722] data.credibleSet.colocalisation count 24
+
+`coloc-7d1d08292a3cb5c88db9c4c228ba94e7.json`, the set's colocalisations: 24, every one with another GWAS
+(`rightStudyType gwas` on all 24, counted), none with a QTL study, so no cis-QTL colocalisation for the effector
+call. For row 54.
+
+> [q723] data.credibleSet.colocalisation.rows[6] colocalisationMethod COLOC_PIP_ECAVIAR h4 0.9639209679470132 clpp 0.02370518614300261 rightStudyType gwas
+
+> [q724] data.credibleSet.colocalisation.rows[6].otherStudyLocus.study id GCST006867 traitFromSource Type 2 diabetes studyType gwas
+
+Type 2 diabetes, H4 0.96. For row 54.
+
+> [q725] data.credibleSet.colocalisation.rows[8] colocalisationMethod COLOC_PIP_ECAVIAR h4 0.9727116469928901 clpp 0.03135062418361347 rightStudyType gwas
+
+> [q726] data.credibleSet.colocalisation.rows[8].otherStudyLocus.study id GCST90239652 traitFromSource High density lipoprotein cholesterol levels studyType gwas
+
+HDL cholesterol, H4 0.97. For row 54.
+
+> [q727] data.credibleSet.colocalisation.rows[14].otherStudyLocus.study id GCST90476435 traitFromSource triglyceride (mean, inv-norm transformed) studyType gwas
+
+Triglycerides (H4 0.98), with mixed hyperlipidaemia and HbA1c alongside. For row 54.
+
+> [q728] data.credibleSet.colocalisation.rows[22].otherStudyLocus.study id GCST90179150 traitFromSource Body mass index (MTAG) studyType gwas
+
+Body mass index (H4 0.94), with predicted visceral fat alongside. For row 54.
+
+> [q729] data.credibleSet.colocalisation.rows[9].otherStudyLocus.study id GCST90131901 traitFromSource Insomnia studyType gwas
+
+Insomnia (H4 0.98). For row 54.
+
+> [q730] data.credibleSet.colocalisation.rows[16].otherStudyLocus.study id GCST005316 traitFromSource Intelligence (MTAG) studyType gwas
+
+Intelligence (H4 0.95), with general cognitive ability (0.42) alongside. None of the records gives a beta, so no
+direction for G on any of these traits is read. For row 54.
