@@ -620,3 +620,22 @@ From the curator's rows 60 onward; the lead settled them under the person's stan
    C on the repeat, rs116257533 named in prose as an overfit line that sets nothing, genotypes neutral, lifespan from
    Park's suggestive line. The curator's default (a), D for the locus, rejected: the lead never made the overfit
    claim, and D would put the overfit line's verdict on a variant it does not describe.
+18. **A replication read from a table filtered on a meta-analysis that holds it is selected, and counts only when the
+   other arm alone would pass the filter.** Wright 2019's Supplemental Table 9 prints only representative SNPs whose
+   AncestryDNA–UK Biobank meta P is below 2.5e-3 (pmid-31484785#q6). Where the UK arm alone does not reach 2.5e-3,
+   a line appears only because the AncestryDNA arm pushed the meta under the cut, so its nominal pass was close to
+   guaranteed by the table's own filter and is not an independent replication (§4.1, D25.1): it is named, with the
+   filter, and not counted. Where the UK arm alone reaches 2.5e-3, inclusion does not hang on the AncestryDNA arm,
+   and its line counts as before. Supplemental Table 8 filters on the AncestryDNA arm's own P (below 3e-3), so a line
+   there passes on its own; only its absence is uninformative (68). Found by the lead's adversarial read of 69 (UK arm
+   P 0.0056, so 69's AncestryDNA fathers no longer count; 69 stays B, D18.3's cap). The curator sweeps every row
+   that counts a Table 9 AncestryDNA line, reports each tier or token that moves, and the lead reads the moves.
+19. **A genotype-model claim is tested whole, as the row states it** (D29.14 corrected). 73's model, heterozygote
+   advantage with homozygote harm, does draw a powered additive test (power about 1.00); it raises no flag because
+   its two terms nearly cancel (+0.307 and −0.152), leaving a large error, not because the test is weak. Arking
+   2002's homozygote-only sub-claim alone fails Deelen's 90th with power (heterogeneity P 0.002; 99th 0.006); the row
+   names that, but the row's claim is the combined model, which is not contradicted. 73 stays C. Exceptional survival
+   reads Arking 2002 only (Revelas has no direction, Invidia is null); `PROTECT:BUFFERING` is set if a quote ties KL-VS
+   heterozygosity to lower risk in APOE ε4 carriers (§4.2's own example), else the row says why not.
+20. **74 keeps `sex_specific:f`**: Pilling's mothers (T β 0.0251, SE 0.00451) against fathers (+0.00206, SE 0.00449)
+   differ at P 2.9e-4, both errors counted (D29.16), from the deposits the curator caches and quotes.
