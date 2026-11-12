@@ -85,6 +85,9 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
   question for the lead, never a value to change by hand.
 - The first insertion (47 AP5Z1, rs371933919, T>TC; the seed's rs528161076 merged into it, 5a63a03): check that
   enrich resolves the current id and that the format's genotype cells take a multi-base allele.
+- A second insertion, on a tier D row with `gene: ""` (55 RP1, rs35262860, G>GCT in VCF alleles, 2ffbadb):
+  genotypes G/G, G/GCT, GCT/GCT, all neutral, yet the variant carries `direction: protective` and an OR. Check the
+  module keeps a tier D variant's direction and effect from reading as advice when every genotype is neutral.
 - Plugin pinned at v0.48.6 (the liaison, f69789a; toolchain unchanged, format 0.7.1): `validate_module` returns
   `warnings_summary` and `carried`; the polygon's 409 is named as the instance's format skew; the GWAS fix
   (RM428) is on the compiler's main, unreleased. The new session after waking loads the new pin.
