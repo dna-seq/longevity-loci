@@ -1993,3 +1993,14 @@ pseudogene ANKRD20A9P (q549, q550). G at 0.095 in 1000 Genomes' East Asians (CHS
 Europeans; gnomAD East Asians 0.11. Its best European tag in LifeGen, rs113946246 (13:19,429,318), is r² 0.945 (D′
 0.98) in Europeans and 0.989 (D′ 1) in East Asians (q547, q548); its T at 0.82 (pmid-30642433#q294) against C at 0.80
 here, so T rides with C, Zeng's longer-life allele. For row 72.
+
+> [q551] populations[44] allele G frequency 0.09843 allele_count 1155 population ALFA:SAMN10492695
+
+> [q552] populations[32] allele C allele_count 74 frequency 1 population ALFA:SAMN10492704
+
+> [q553] populations[34] population ALFA:SAMN10492697 frequency 1 allele_count 60 allele C
+
+rs2440012 in ALFA (dbSNP's frequencies; the sample labels are not in the cached record): SAMN10492695 has G 0.098 (C
+0.90, A 0.0014), the numbers Liu 2021 gives for Europeans (pmid-33657282#q30); SAMN10492704 (74 alleles) and
+SAMN10492697 (60) carry C only, and two others (86, 478 alleles) likewise. 1000 Genomes has G at 0.20 in Europeans and
+0.095 in East Asians (q545, q542). The reference frequency depends on the source. For row 72.

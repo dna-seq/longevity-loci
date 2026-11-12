@@ -11,11 +11,12 @@ verdict_reason: >-
   compared 2,178 Han Chinese centenarians (mean age 102.7) of the CLHLS with 2,299 middle-aged controls (mean 48.4) in
   a southern and a northern dataset: G was in 0.054 of the centenarians' alleles and 0.084 of the controls', OR 0.60
   per G, P 3.7e-8 combined (south 1.4e-6, north 2.3e-3; the regions' meta-analysis 4.9e-8), so C is the longer-life
-  allele. Both P values sit just under 5e-8 with λ 1.022 left unapplied. Unlike row 48's IL6 SNP, the controls'
-  frequencies look ordinary (G 0.092 south, 0.079 north, against 1000 Genomes CHS 0.10, CHB 0.068, East Asians
-  0.095). Liu 2021, the same group, says the SNP failed its later quality control, giving as its reason that G was
-  overrepresented against "Asians in dbSNP (G = 0)". Today's references contradict that reason, though not the QC
-  failure itself; the variant is tri-allelic, which Liu offers for its absence from Deelen 2019. Timmers 2019 tested
+  allele. Both P values sit just under 5e-8 with λ 1.022 left unapplied. Liu 2021, the same group, says the SNP
+  failed its later quality control, and separately remarks that G was overrepresented in Zeng's data against "Asians in
+  dbSNP (G = 0)". The reference frequency depends on the source: ALFA has samples with no G and gives Europeans 0.098,
+  as Liu says, where 1000 Genomes gives 0.20, and East Asians 0.095 (CHS 0.10, CHB 0.068), close to Zeng's controls
+  (0.092 south, 0.079 north), unlike row 48's IL6 SNP. A site whose frequency differs by source fits a failed call.
+  The variant is tri-allelic, which Liu offers for its absence from Deelen 2019. Timmers 2019 tested
   Zeng's locus at rs113946246, whose T rides with C (T 0.82 in LifeGen, C 0.80 in 1000 Genomes Europeans). It carried
   Zeng's effect to the parental scale by the APOE calibration (T +0.0735, SE 0.0134) and found +0.0008 (SE 0.0055),
   one-sided P 0.44. Derived under D25.3: at APOE's factor, power 1.00 and heterogeneity P 4.9e-7; at the loci's mean
@@ -25,24 +26,24 @@ verdict_reason: >-
   LifeGen-only line at the lead itself (no UK Biobank, info 0.69) puts C +0.0059 (SE 0.020), P 0.77. Outside Timmers:
   FinnGen R11's death endpoint has G on the fewer-deaths side, flat (P 0.76; a database line, D29.1); Park 2025's own
   survival has C with fewer deaths, flat (P 0.30, one-sided 0.15; columns swapped, as at APOE; UK Biobank's people);
-  Zenin's healthspan G earlier, flat (P 0.38 raw, 0.40 after genomic control, one-sided about 0.20 on C's side), and
+  Zenin's healthspan G earlier, flat (P 0.38 raw, 0.39 after genomic control; one-sided 0.19 raw on C's side), and
   Zenin's parental-lifespan look-up G longer, flat (P 0.65). Exceptional survival in Europeans is untested: Zeng's own
   Supplementary Table 3 has NA for the EU consortium and NECS, Deelen's Supplementary Data 1 leaves the line blank,
-  and Deelen's 90th and 99th percentile files hold no line at the lead or its four LifeGen tags, nor any within 15 kb
-  at the lead's frequency. The option, put to the lead: D on row 48's ground (D26.14, an overfit source), on Liu's QC
-  failure alone; its second leg, a control frequency far from the reference, does not hold here. The tier is D on
-  either ground. Mechanism general ageing (D25.7): no trait other than longevity is recorded at the lead (the GWAS
+  and Deelen's 90th and 99th percentile files hold no line at the lead or its four LifeGen tags; their lines within
+  15 kb are at SNPs outside the lead's 168 European partners at r² ≥ 0.5. The other ground, put to the lead: D26.14
+  (row 48's), the authors' own QC rejecting the call, which by D26.14's words is enough; row 48 also had a control
+  frequency far below the reference, which here depends on the source. The tier and tokens are the same on either. Mechanism general ageing (D25.7): no trait other than longevity is recorded at the lead (the GWAS
   Catalog holds only Zeng's line), and nothing is known to run through the pseudogene. No pleiotropy. Context
   `ancestry_specific:eas`: the claim is Han Chinese, tested in Chinese regions only. Open Targets 26.09 has no record
   for the variant, and Zeng's study holds only IL6's credible set, so C4 and E4 with no gene. Age of action unknown.
   Genotypes neutral (D25.2). The rsID literature search found Zeng 2016, Liu 2021 and nothing else.
 axes:
-  tier: {value: D, cites: [pmid-26912274#q2, pmid-26912274#q3, pmid-26912274#q6, pmid-26912274#q13, pmid-26912274#q14, pmid-33657282#q15, pmid-33657282#q29, pmid-33657282#q30, db-ensembl-116#q540, db-ensembl-116#q542, db-ensembl-116#q543, db-ensembl-116#q544, db-ensembl-116#q545, db-ensembl-116#q546, db-ensembl-116#q547, db-ensembl-116#q548, pmid-30642433#q293, pmid-30642433#q294, pmid-30642433#q295, pmid-30642433#q296, pmid-30642433#q91, pmid-30642433#q92, db-finngen-r11#q49, pmid-40021682#q71, pmid-40021682#q32, pmid-30729179#q101, pmid-30729179#q102, pmid-30729179#q59, pmid-31413261#q172]}
+  tier: {value: D, cites: [pmid-26912274#q2, pmid-26912274#q3, pmid-26912274#q6, pmid-26912274#q13, pmid-26912274#q14, pmid-33657282#q15, pmid-33657282#q29, pmid-33657282#q30, db-ensembl-116#q551, db-ensembl-116#q552, db-ensembl-116#q553, db-ensembl-116#q540, db-ensembl-116#q542, db-ensembl-116#q543, db-ensembl-116#q544, db-ensembl-116#q545, db-ensembl-116#q546, db-ensembl-116#q547, db-ensembl-116#q548, pmid-30642433#q293, pmid-30642433#q294, pmid-30642433#q295, pmid-30642433#q296, pmid-30642433#q91, pmid-30642433#q92, db-finngen-r11#q49, pmid-40021682#q71, pmid-40021682#q32, pmid-30729179#q101, pmid-30729179#q102, pmid-30729179#q59, pmid-31413261#q172, pmid-30642433#q297, pmid-30642433#q298]}
   mechanism: {value: general_ageing, cites: [db-gwascatalog-2026.10.29#q474, db-ensembl-116#q549, db-ensembl-116#q550]}
   pleiotropy: {values: [], cites: [db-gwascatalog-2026.10.29#q474]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "0", lifespan: "0", exceptional_survival: untested,
-            cites: [pmid-30729179#q101, pmid-30642433#q293, pmid-30642433#q294, db-finngen-r11#q49, pmid-40021682#q71, pmid-30729179#q102, pmid-26912274#q14, pmid-31413261#q172]}
+            cites: [pmid-30729179#q101, pmid-30642433#q293, pmid-30642433#q294, db-finngen-r11#q49, pmid-40021682#q71, pmid-30729179#q102, pmid-26912274#q14, pmid-31413261#q172, pmid-30642433#q297, pmid-30642433#q298]}
   actionability: {label: descriptive, cites: [db-gwascatalog-2026.10.29#q474]}
   context: {values: ["ancestry_specific:eas"], cites: [pmid-26912274#q3, pmid-26912274#q13]}
 flags:
@@ -104,7 +105,7 @@ studies:
     curator: claude-opus-5-5
   - rsid: rs2440012
     note: pmid-30642433
-    quote: q293
+    quote: q294
     phenotype_class: PARENTAL_LIFESPAN
     study_design: parental_lifespan_cox
     population: European (UK Biobank and the LifeGen cohorts)
@@ -121,7 +122,7 @@ studies:
     effect_unit: log hazard protection per T allele of rs113946246 in self (positive = longer life)
     effect_allele: T
     direction: protective
-    statistical_test: "Timmers 2019's own replication of Zeng (Figure 2 source data, q293): expected T +0.0735 (SE 0.0134) by the APOE calibration (q91), observed +0.00078 (SE 0.00553), one-sided P 0.44; the deposit's line (q294), direction +- (UK Biobank, LifeGen), info 0.95. rs113946246 r² 0.945, D′ 0.98 to the lead in Europeans (db-ensembl-116#q547), 0.989 in East Asians (q548); T (0.82) rides with C (0.80). D21 under D25.3 (derived): APOE's factor power 1.00, heterogeneity P 4.9e-7; the mean factor 0.4175 (q92), expected 0.176 (SE 0.052), power 1.00, heterogeneity P 7.3e-4; a red flag under both, holding to about 0.2 of the APOE-calibrated effect"
+    statistical_test: "Timmers 2019's own replication of Zeng (Figure 2 source data, q293): expected T +0.0735 (SE 0.0134) by the APOE calibration (q91), observed +0.00078 (SE 0.00553), one-sided P 0.44; the deposit's line (q294, the P and n here), direction +- (UK Biobank, LifeGen), info 0.95. rs113946246 r² 0.945, D′ 0.98 to the lead in Europeans (db-ensembl-116#q547), 0.989 in East Asians (q548); T (0.82) rides with C (0.80). D21 under D25.3 (derived): APOE's factor power 1.00, heterogeneity P 4.9e-7; the mean factor 0.4175 (q92), expected 0.176 (SE 0.052), power 1.00, heterogeneity P 7.3e-4; a red flag under both, holding to about 0.2 of the APOE-calibrated effect"
     curator: claude-opus-5-5
   - rsid: rs2440012
     note: pmid-30729179
@@ -141,5 +142,5 @@ studies:
     effect_unit: log hazard of the end of healthspan per G allele (positive = earlier)
     effect_allele: G
     direction: risk
-    statistical_test: "Zenin 2019's healthspan summary statistics (rows-10b13204, q101): G (0.18) β +0.00567 (SE 0.00643), Z 0.882, −log10 P 0.423 (P 0.38 raw; 0.40 after the paper's genomic control of 1.053, pmid-30729179#q59, derived, D26.1). G leans to an earlier end, Zeng's side, flat"
+    statistical_test: "Zenin 2019's healthspan summary statistics (rows-10b13204, q101): G (0.18) β +0.00567 (SE 0.00643), Z 0.882, −log10 P 0.423 (P 0.38 raw; 0.39 after the paper's genomic control of 1.053, pmid-30729179#q59, derived, D26.1). G leans to an earlier end, Zeng's side, flat"
     curator: claude-opus-5-5
