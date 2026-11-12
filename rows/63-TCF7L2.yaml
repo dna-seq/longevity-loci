@@ -9,9 +9,10 @@ locus_id: 63
 locus_name: TCF7L2
 verdict: kept
 verdict_reason: >-
-  Tier B, the seed's, kept on a default put to the lead: genome-wide for healthspan with a co-occurring lifespan
-  study (D16), and A turns on two questions no decision settles yet: which effect calibrates a healthspan
-  discovery's red flag, and whether a curator-run FinnGen database line can be D22.2's replication. The criteria as read: (1) genome-wide for healthspan in 300,447 British UK Biobank participants:
+  Tier B, the seed's, kept (D29.1): genome-wide for healthspan with a co-occurring lifespan study (D16), and A out of
+  reach because the discovery's red flag, scaled from its own healthspan effect (D27.9), is unknown (D28.1, D25.12)
+  and a curator-read database line replicates nothing (D12). The criteria as read: (1) genome-wide for healthspan in
+  300,447 British UK Biobank participants:
   T, the common allele (0.68 in Europeans), delays the end of healthspan (Zenin 2019, T β −0.061 per copy on the log
   hazard, P 4.2e-30 at the lead; at rs34872471, r² 0.98, P 9.7e-29 after genomic control, the paper's call, D17.3).
   Zenin's replication in about 96,000 other UK Biobank participants, checked for no kinship with the discovery (P
@@ -19,24 +20,32 @@ verdict_reason: >-
   A (D25.11). By component the signal is diabetes's: diabetes P 7e-156, all
   diseases but cancer 1e-46, own death flat (P 0.72), MI and cancer nominal. (2) The co-occurring lifespan study
   (D16, one-sided as D25.13): Zenin's own parents'-death meta-analysis, T lowering the parents' hazard (C +0.004, SE
-  0.002, P 0.095, one-sided 0.048), in the same people; LifeGen's parental lifespan, which holds those parents, leans
-  T's way and does not pass (beta1 +0.0060, one-sided 0.079), and Park 2025's UK Biobank own survival is flat (P
-  0.93). B against C rests on that 0.048, with FinnGen (below) behind it only if a database line may count. (3) Outside UK Biobank,
-  FinnGen R11's any-death endpoint gives C log OR +0.0195 for death (SE 0.0093, P 0.035; T one-sided 0.017), a
-  database look-up named here, not a study entry; Deelen 2019's 90th and 99th percentiles lean T's way and do not pass
-  (log OR +0.026 and +0.018 per T, one-sided 0.11 and 0.29). (4) The red flag, two ways. From Zenin's own effect
-  (D21, D27.9), no source prints a healthspan-to-lifespan calibration: the curator's ratio of APOE's lines (Zenin's ε4
-  β 0.0137, SE 0.0067, two standard errors from zero, against ε4 in each look-up) would put Deelen's 90th at about 37
-  times Zenin's effect and FinnGen at about 7.6 times, a conversion of the curator's own, so the flag is unknown
-  (D28.1, D26.3) and A's last criterion with it (D25.12). From the co-occurring lifespan study's effect, as row 35 did
-  and D25.11 accepted, LifeGen's T +0.0060 under Timmers' factors expects log OR 0.029 at Deelen's 90th by APOE's
-  (4.84; power 0.39, heterogeneity P 0.90) and 0.012 by the mean (× 0.4175; power 0.14, P 0.50): no red flag; and
-  FinnGen (APOE's factor to LifeGen 0.99) expects T −0.006 against the observed −0.0195, a pass. Read as at 35, then,
-  A's three criteria hold if FinnGen's line may be the replication; read from Zenin's effect, the flag is unknown.
-  Either reading leaves no `replication_failed`. Both questions are with the lead; until answered the row stays B. Rosoff 2023's mvAge (T, P 5.4e-16; not novel, its healthspan
-  input's) and Timmers 2020's multivariate scan (P 4e-28) pool these same samples; mvAge's Q test (P 9.3e-13) says the
-  SNP reaches the inputs through a pathway of its own, here diabetes. Outcome: healthspan + (Zenin), lifespan + (the
-  parents' death and FinnGen, one-sided), exceptional survival 0 (Deelen). Mechanism metabolism, with mech:t2d: C is
+  0.002, printed P 0.0952, one-sided 0.048), in the same people, read as printed (D29.5). B over C rests on this one
+  cell: the rounded β and SE would give 0.046, and the P is uncorrected, so a genomic-control λ of 1.029 or more
+  would push it past 0.05. LifeGen's parental lifespan, which holds those parents, leans T's way and does not pass
+  (beta1 +0.0060, one-sided 0.079), and Park 2025's UK Biobank own survival is flat (P 0.93). (3) Outside UK
+  Biobank, FinnGen R11's any-death endpoint gives C log OR +0.0195 for death (SE 0.0093, P 0.035; T one-sided
+  0.017), a database line that may weigh against a row but never lifts one (D29.1); Deelen 2019's 90th and 99th
+  percentiles lean T's way and do not pass (log OR +0.026 and +0.018 per T, one-sided 0.11 and 0.29). Garagnani
+  2013's Italian centenarians, at rs7903146 (r² 1.00 to the lead): its T, the diabetes risk allele and the lead's C,
+  is in 31.4 % of 229 centenarians' alleles against 37 % of 558 middle-aged non-diabetic controls', a crude OR of
+  0.78 per T, one-sided P 0.017 (derived from the printed frequencies, D29.5, as at 31; the paper prints no such
+  test), so the lead's T is commoner among centenarians; its overlap with Deelen's GEHA Italian arm is unknown, so
+  it sets exceptional survival and lifts no tier. Beekman 2010's Table S5, a Leiden 85-plus look-up of GWAS disease
+  alleles that may be independent of Deelen and is the one route to A that D29.1 leaves open, could not be reached
+  (the publisher answers 403, PubMed Central 404, Europe PMC holds no supplement file): unknown, not absent. CHARGE's
+  longevity GWAS is unchecked (the search was refused, 429), not absent. (4) The red flag, from Zenin's own effect
+  (D27.9): no source prints a healthspan-to-lifespan calibration; the curator's ratio of APOE's lines (Zenin's ε4
+  β 0.0137, SE 0.0067, two standard errors from zero, against ε4 in each look-up) would put Deelen's 90th at about
+  37 times Zenin's effect and FinnGen at about 7.6 times, a conversion of the curator's own, so the flag is unknown
+  (D28.1, D26.3) and A's last criterion with it (D25.12); no `replication_failed`. Calibrating from LifeGen's
+  effect, as row 35 did, is rejected (D27.9, D29.1); for the record, LifeGen's T +0.0060 under Timmers' factors
+  expects log OR 0.029 at Deelen's 90th by APOE's (4.84; power 0.39) and 0.012 by the mean (× 0.4175; power 0.14),
+  heterogeneity P 0.93 and 0.54 counting both estimates' errors (D29.6). Rosoff 2023's mvAge (T, P 5.4e-16; not
+  novel, its healthspan input's) and Timmers 2020's multivariate scan (P 4e-28) pool these same samples; mvAge's Q
+  test (P 9.3e-13) says the SNP reaches the inputs through a pathway of its own, here diabetes. Outcome: healthspan
+  + (Zenin), lifespan + (the parents' death, one-sided; FinnGen leans the same way), exceptional survival + (Garagnani,
+  one-sided; Deelen leans the same way). Mechanism metabolism, with mech:t2d: C is
   the type 2 diabetes risk allele (P 3e-41), and the healthspan signal is diabetes's by Zenin's components. Broad:
   T also lowers chronic kidney disease (P 5e-28) and diabetic eye disease, and blood pressure runs both ways (T raises
   diastolic, C systolic). A trade-off: T raises body mass index (P 4e-89) and obesity (PheCode 278.1, P 3e-23), the
@@ -50,12 +59,12 @@ verdict_reason: >-
   Evidence is European; C is 0.30 in Africans and South Asians and 0.02 in East Asians, where the longevity effect is
   untested: eur_only_evidence. Age of action unknown.
 axes:
-  tier: {value: B, cites: [pmid-30729179#q86, pmid-30729179#q87, pmid-30729179#q88, pmid-30729179#q89, pmid-30642433#q276, pmid-30642433#q90, pmid-40021682#q63, pmid-40021682#q32, db-finngen-r11#q39, db-finngen-r11#q4, pmid-31413261#q157, pmid-31413261#q158, pmid-31413261#q82, pmid-30642433#q92, pmid-30729179#q12, pmid-30729179#q13, pmid-30729179#q29, pmid-37550455#q53, pmid-37550455#q54, pmid-37550455#q4, db-ensembl-116#q455, db-ensembl-116#q454]}
+  tier: {value: B, cites: [pmid-30729179#q86, pmid-30729179#q87, pmid-30729179#q88, pmid-30729179#q89, pmid-30642433#q276, pmid-30642433#q90, pmid-40021682#q63, pmid-40021682#q32, db-finngen-r11#q39, db-finngen-r11#q4, pmid-31413261#q157, pmid-31413261#q158, pmid-31413261#q82, pmid-30642433#q92, pmid-30729179#q12, pmid-30729179#q13, pmid-30729179#q29, pmid-37550455#q53, pmid-37550455#q54, pmid-37550455#q4, db-ensembl-116#q455, db-ensembl-116#q454, pmid-23804578#q1, pmid-23804578#q2, pmid-23804578#q3, pmid-23804578#q4, db-ensembl-116#q456]}
   mechanism: {value: metabolism, cites: [pmid-30729179#q88, db-gwascatalog-2026.10.29#q396, db-gwascatalog-2026.10.29#q397, db-gwascatalog-2026.10.29#q398, pmid-37550455#q53]}
   pleiotropy: {values: ["mech:t2d", broad, tradeoff], cites: [db-gwascatalog-2026.10.29#q396, db-gwascatalog-2026.10.29#q398, db-gwascatalog-2026.10.29#q399, db-gwascatalog-2026.10.29#q400, db-gwascatalog-2026.10.29#q401, db-gwascatalog-2026.10.29#q405, db-gwascatalog-2026.10.29#q406, db-gwascatalog-2026.10.29#q407, db-gwascatalog-2026.10.29#q408, db-gwascatalog-2026.10.29#q409, db-gwascatalog-2026.10.29#q410, db-gwascatalog-2026.10.29#q402, db-gwascatalog-2026.10.29#q404, db-gwascatalog-2026.10.29#q414, db-gwascatalog-2026.10.29#q416, db-ensembl-116#q455]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
-            cites: [pmid-30729179#q86, pmid-30729179#q88, db-finngen-r11#q39, pmid-30642433#q276, pmid-40021682#q63, pmid-31413261#q157, pmid-31413261#q158]}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
+            cites: [pmid-23804578#q4, pmid-23804578#q3, db-ensembl-116#q456, pmid-30729179#q86, pmid-30729179#q88, db-finngen-r11#q39, pmid-30642433#q276, pmid-40021682#q63, pmid-31413261#q157, pmid-31413261#q158]}
   actionability: {label: descriptive, cites: [db-gwascatalog-2026.10.29#q405, db-gwascatalog-2026.10.29#q406, db-gwascatalog-2026.10.29#q407, db-gwascatalog-2026.10.29#q399, db-gwascatalog-2026.10.29#q401]}
   context: {values: [eur_only_evidence], cites: [pmid-30729179#q87, db-finngen-r11#q39, db-ensembl-116#q450, db-ensembl-116#q451, db-ensembl-116#q452, db-ensembl-116#q453]}
 flags:
@@ -141,7 +150,7 @@ studies:
     direction: protective
     age_of: parent
     proxy_rsid: rs34872471
-    statistical_test: "Supplementary Data 7, parents' death (meta-analysis of fathers, P 0.21, and mothers, P 0.27), Cox model in the discovery sample, C +0.004 (SE 0.002); T lowers it, one-sided 0.048 (derived), D16's co-occurring lifespan study (D25.13); the same people as Zenin's healthspan; at rs34872471, r² 0.98 to the lead (db-ensembl-116#q455)"
+    statistical_test: "Supplementary Data 7, parents' death (meta-analysis of fathers, P 0.21, and mothers, P 0.27), Cox model in the discovery sample, C +0.004 (SE 0.002); T lowers it, one-sided 0.048 (derived), D16's co-occurring lifespan study (D25.13), read as printed (D29.5): the rounded β and SE give 0.046; the P is uncorrected, and a genomic-control λ of 1.029 or more would push the one-sided P past 0.05; B over C rests on this one cell; the same people as Zenin's healthspan; at rs34872471, r² 0.98 to the lead (db-ensembl-116#q455)"
     curator: claude-opus-5-5
   - rsid: rs35198068
     note: pmid-30642433
@@ -162,7 +171,7 @@ studies:
     effect_unit: log hazard protection per T allele in self (positive = longer life)
     effect_allele: T
     direction: protective
-    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0042, info 0.994, '++' in UK Biobank and LifeGen; not independent of Zenin (UK Biobank), so no D21 test of its own; it is the effect row 35's reading calibrates Deelen and FinnGen from (APOE's factor 4.84 to Deelen's 90th, pmid-31413261#q82 against q90; the mean × 0.4175, q92)"
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0042, info 0.994, '++' in UK Biobank and LifeGen; not independent of Zenin (UK Biobank), so no D21 test of its own; calibrating Deelen and FinnGen from this effect, as row 35 did, is rejected (D27.9, D29.1); for the record, APOE's factor 4.84 to Deelen's 90th (pmid-31413261#q82 against q90) and the mean × 0.4175 (q92) give heterogeneity P 0.93 and 0.54 counting both errors (D29.6)"
     curator: claude-opus-5-5
   - rsid: rs35198068
     note: pmid-37550455
@@ -180,4 +189,26 @@ studies:
     effect_allele: T
     direction: protective
     statistical_test: "Genomic SEM common-factor GWAS, SE 0.0011 (q54); not novel, its healthspan input's locus; Q 62.3 on 4 df, Q P 9.3e-13 (q53): the SNP reaches the inputs by a pathway other than the factor (q4); of the inputs only healthspan is genome-wide (q54); pools Zenin's, LifeGen's and Deelen's samples, so no independent support"
+    curator: claude-opus-5-5
+  - rsid: rs35198068
+    note: pmid-23804578
+    quote: q4
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: Northern and Central Italian, 229 centenarians (mean 105.0) against 558 non-diabetic controls matched to diabetics (mean 58.1)
+    ancestry: [EUR]
+    sample_size: 787
+    sample_unit: individuals
+    n_cases: 229
+    stat_significance: nominal
+    p_value: "0.035"
+    p_value_num: 0.035
+    p_one_sided: 0.0175
+    proxy_rsid: rs7903146
+    effect_size: 1.283
+    effect_measure: OR
+    effect_unit: "crude odds of being a centenarian per C allele of rs7903146 (the lead's T), derived here (D29.5, as at 31), not printed: (0.686/0.314)/(0.630/0.370) from the printed T frequencies, unadjusted"
+    effect_allele: C
+    direction: protective
+    statistical_test: "Table 1 prints rs7903146 T in 31.4 % of centenarians' alleles (q4) and 37 % of the non-diabetic controls' (q3); the paper tests diabetics against each group, never centenarians against controls; derived: crude OR per T 0.78 (log OR −0.249, SE 0.118 from 458 and 1,116 alleles), allelic z 2.11, two-sided P 0.035, one-sided 0.017 (both derived); rs7903146 r² 1.00, D′ 1 to the lead in CEU, its T with the lead's C (db-ensembl-116#q456); controls selected free of diabetes, which works against the contrast; overlap with Deelen 2019's GEHA Italian arm unknown, so it sets exceptional survival and lifts no tier (D29.5)"
     curator: claude-opus-5-5
