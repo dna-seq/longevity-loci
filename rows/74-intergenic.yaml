@@ -21,8 +21,8 @@ verdict_reason: >-
   prints it, and the AncestryDNA arm's one-sided power against the UK arm's effect is about 1.00 (0.72 at half the
   effect; derived). Both arms are on one scale in one table, so no conversion arises (D25.3 does not apply) and the
   heterogeneity P is the source's. That is D21's red flag, so `replication_failed` (D25.13, D26.11, as rows 18 and
-  31). It bars A. It does not make D: D25.1 needs no independent scoring-class study to pass, and one does (two,
-  if LifeGen and Deelen count apart). Deelen raises no flag. Against the discovery's effect in its both-parents form
+  31). It bars A. It does not make D: D25.1 needs no independent scoring-class study to pass, and two do, each
+  independent of the UK mothers whatever they share with each other (D29.15). Deelen raises no flag. Against the discovery's effect in its both-parents form
   (D27.9, D28.2), backed out of Pilling's P 4.2e-5 at a both-parents SE of 0.0083 on Timmers' scale (the mothers'
   0.0117 of q301 over √2; derived), C about +0.034, the 90th percentile flags under the APOE factor only (power 1.00,
   heterogeneity P 0.008; the mean factor power 0.56, P 0.22). That is a flag under one calibration, so none
@@ -35,9 +35,9 @@ verdict_reason: >-
   in Pilling's own sample. None is significant, so no cell reads against. The effect is the mothers'. Timmers'
   moderator model makes it smaller in fathers (male −0.048, P 0.006), though not past the legend's 5 % FDR (Q 0.13).
   Mothers' effects are of one size from 60 to 90 (0.063, 0.078 and 0.065 a decade, P 0.037 to 0.0009); fathers'
-  are about zero in every band; there is no age dependence (P 0.77). So sex_specific:f rests on Pilling's mothers
-  against fathers (2.9e-8 against 0.67), Timmers' nominal moderator and the flat fathers' bands, not on an
-  FDR-passing test (put to the lead). LIFELONG, weakly. No disease is known at the locus. The GWAS Catalog holds
+  are about zero in every band; there is no age dependence (P 0.77). Pilling's own deposits test the difference
+  directly (D29.16): mothers T β +0.0251 (SE 0.0045) against fathers +0.0021 (SE 0.0045), heterogeneity P 3.0e-4
+  with both errors counted (D29.6; derived), so sex_specific:f. LIFELONG, weakly. No disease is known at the locus. The GWAS Catalog holds
   Pilling's line alone; Open Targets 26.09's three sets at the variant are gut-microbial and food-liking GWAS. So the
   mechanism is general_ageing, pleiotropy is empty, and the token is PROTECT:PRESENCE (the minor C protects, as row
   5). No longevity credible set holds the variant and no gene is named: C4, E4, no gene (§4.2, §6.2). The genotype
@@ -50,7 +50,7 @@ axes:
   outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "+",
             cites: [pmid-30729179#q105, pmid-29227965#q44, pmid-30642433#q301, pmid-31484785#q118, db-finngen-r11#q51, pmid-40021682#q73, pmid-31413261#q175, pmid-31413261#q176]}
   actionability: {label: descriptive, cites: [pmid-29227965#q44]}
-  context: {values: ["sex_specific:f", eur_only_evidence], cites: [pmid-29227965#q44, pmid-30642433#q303, pmid-30642433#q308, pmid-30642433#q309, pmid-30642433#q310]}
+  context: {values: ["sex_specific:f", eur_only_evidence], cites: [pmid-29227965#q44, pmid-29227965#q46, pmid-29227965#q47, pmid-30642433#q303, pmid-30642433#q308, pmid-30642433#q309, pmid-30642433#q310]}
 flags:
   - {token: "PROTECT:PRESENCE", cites: [pmid-29227965#q44, pmid-29227965#q45, db-ensembl-116#q564]}
   - {token: replication_failed, cites: [pmid-31484785#q118, db-ensembl-116#q566]}
