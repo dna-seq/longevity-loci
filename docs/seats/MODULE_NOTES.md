@@ -60,7 +60,7 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
   test instance only, `registry_whoami` accepts it. Token and install-id live in the plugin's local state on this
   machine, never in the repo. No namespace claimed yet (a claim is irreversible; pick it to match the production
   namespace when a rehearsal is near). Polygon at registry 0.29.1 serving format 0.8.4, so contract_compatible is
-  false for the plugin's 0.7.1: no rehearsal until the plugin moves to 0.8.
+  false for the plugin's 0.7.1. Superseded 2026-11-12: the plugin is on 0.8 (below), rehearsals work.
 - `first seating:` report to the seat-builder: sent.
 - On waking: read `docs/format08_reference/` (just-dna-format 0.8's longevity reference example and the compiler's longevitymap v2 shape audit; the lead, 639310707). It notes Timmers 2019 contradicting itself on effect alleles (639310710), which bears on LPA and CELSR2.
 - For the projection, on waking: rows at effector E3 or E4 name no gene (`gene: ""`; E3 57, 67, 80, 53; E4 44, 48, 54,
@@ -96,6 +96,13 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
 - A sex-specific tier B row whose effect is on a Martingale residual of own survival (61 CELF2, Park 2025's
   women, rs547541271 T +0.0369, `sex_specific:f`, 2bbd85a; row 13's shape). Check the format's effect_measure and
   stratum take both, else the export leaves effect_size empty rather than call it a beta.
+- **0.8 is in (the liaison's handoff, 2026-11-12, b9123d6):** plugin v0.48.7, server and lock on format, compiler
+  and enricher 0.8.4. Rehearsals on the polygon work; production only once it answers on 0.8. GWAS pass fixed
+  (RM428; one request a second, hours for dozens of variants). First on waking, after `/reload-plugins`:
+  `validate_module` on the scaffold under 0.8 (new `meta.csv`, `model_organisms.csv`, the #6 study fields);
+  `provision_caches` for the Ensembl lane (none on this machine), enrich online (indels). `tradeoff` is computed
+  in `meta.csv`, never authored (bears on 59's trade-off point); `enrich_module` names `allele_mismatches`.
+  Not started: the seat sleeps until the person or the lead wakes it.
 - Plugin pinned at v0.48.6 (the liaison, f69789a; toolchain unchanged, format 0.7.1): `validate_module` returns
   `warnings_summary` and `carried`; the polygon's 409 is named as the instance's format skew; the GWAS fix
   (RM428) is on the compiler's main, unreleased. The new session after waking loads the new pin.
