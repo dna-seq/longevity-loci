@@ -22,13 +22,16 @@ verdict_reason: >-
   with β −0.07 for A, on a scale where positive is more death: it leans the other way, and it is powered. A is as
   common in Finns (0.13 %), and like for like, the whole cohort's +0.042 under APOE's Park-to-FinnGen factor (8.1)
   expects +0.34 against FinnGen's −0.066 (SE 0.11): power 0.93, heterogeneity P 0.002; MUC5B's factor (6.7) gives
-  power 0.83, P 0.006 (derived). D21 flags under both, but D25.3's second calibration, the mean factor, is unknown
+  power 0.83, P 0.006 (derived). The flag needs a factor of at least 6.45 (0.80 of APOE's 8.1, for power 0.8
+  against FinnGen's SE), which MUC5B's 6.7 clears by 4 %. The row keeps the whole cohort's +0.042 (D28.2); the
+  inverse-variance average of the two sexes, about +0.030 (derived; the men's SE backed out of their P), would give
+  power about 0.72 even at APOE's factor, no flag. D21 flags under both factors, but D25.3's second calibration, the mean factor, is unknown
   for this look-up (D25.12: PRKD3 and CELF2 themselves are left out of it and MUC5B alone is not a mean), so whether
   it is a red flag is unknown and the row carries no replication_failed (D26.3, as 40); were the mean to flag too,
   D25.1 would make it D. Nothing else tests it: Timmers 2019's summary statistics and Deelen 2019's
   look-ups have no row for the variant (untested, not null), and no tag is known. Healthspan is 0: Zenin 2019's
-  summary statistics give P 0.97 at the variant, though with a standard error of 0.07 at this frequency the test
-  says almost nothing. Exceptional survival is untested. Mechanism: filed as general ageing, since the one disease
+  summary statistics give P 0.97 at the variant, with a standard error of 0.07 at this frequency: weak, but it excludes a healthspan
+  log HR for A above about 0.13 (the upper 95 % bound, derived). Exceptional survival is untested. Mechanism: filed as general ageing, since the one disease
   link is the authors' PheWAS in the same UK Biobank people, oropharyngeal cancer as the primary cause of death (P
   4.5e-8, OR 1.04 for A) and self-reported stomach cancer (P 6.1e-7): the paper's statement, cited as mech:cancer,
   and drawn from the same deaths that make the lifespan signal, so not an independent trait. Open Targets 26.09
@@ -120,7 +123,7 @@ studies:
     effect_unit: FinnGen's "Death" endpoint per A allele (positive = increased death, by rs35705950 in the same table, q16 and q9)
     effect_allele: A
     direction: protective
-    statistical_test: "Park 2025's look-up in FinnGen r11's \"Death\" endpoint (Supplementary Table 2), both sexes; a binary endpoint, deceased against living (own_death_case_control, D19.3); the paper's validation, not significant (q8); FinnGen's own line: log OR −0.066, SE 0.109, P 0.55, A 0.13 % (db-finngen-r11#q37). D21 (derived): the whole-cohort +0.042 (q61) under APOE's factor 8.1 (db-finngen-r11#q4 against q32) expects +0.34, power 0.93, heterogeneity P 0.002; under MUC5B's 6.7 (db-finngen-r11#q5 against q31) +0.28, power 0.83, P 0.006; the mean factor (D25.3) unknown for this look-up (D25.12), so the flag is unknown and sets no token (D26.3)"
+    statistical_test: "Park 2025's look-up in FinnGen r11's \"Death\" endpoint (Supplementary Table 2), both sexes; a binary endpoint, deceased against living (own_death_case_control, D19.3); the paper's validation, not significant (q8); FinnGen's own line: log OR −0.066, SE 0.109, P 0.55, A 0.13 % (db-finngen-r11#q37). D21 (derived): the whole-cohort +0.042 (q61) under APOE's factor 8.1 (db-finngen-r11#q4 against q32) expects +0.34, power 0.93, heterogeneity P 0.002; under MUC5B's 6.7 (db-finngen-r11#q5 against q31) +0.28, power 0.83, P 0.006; the flag needs a factor of at least 6.45 (0.80 of APOE's), which MUC5B's clears by 4 %; the sexes' inverse-variance average, about +0.030, would give power about 0.72 at APOE's factor, no flag, but the row keeps the whole cohort's +0.042 (D28.2); the mean factor (D25.3) unknown for this look-up (D25.12), so the flag is unknown and sets no token (D26.3)"
     curator: claude-opus-5-5
   - rsid: rs577106756
     note: pmid-30729179
@@ -139,5 +142,5 @@ studies:
     effect_unit: log hazard of the end of healthspan per A allele (positive = earlier)
     effect_allele: A
     direction: protective
-    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), -log10 P 0.0149; SE 0.070 at A frequency 0.0013, an uninformative test; UK Biobank, overlapping Park 2025's people"
+    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), -log10 P 0.0149; SE 0.070 at A frequency 0.0013, a weak test that still excludes a log HR above about 0.13 (upper 95 % bound, derived); UK Biobank, overlapping Park 2025's people"
     curator: claude-opus-5-5
