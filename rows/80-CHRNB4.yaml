@@ -9,19 +9,24 @@ verdict_reason: >-
   Tier B, from the seed's A, on the 71/67 rule's cap (D21, D25.3), swept 2026-11-12. Genome-wide significant for
   parental lifespan in about one million lives (Timmers 2019, P 1.6e-26) and in each parental-lifespan GWAS since
   Joshi 2017; replicated outside UK Biobank and LifeGen in AncestryDNA's fathers (Wright 2019, P 5.2e-8 after the
-  paper's genomic control, D26.1, 3.2e-9 uncorrected; the same side), so not D (D25.1). But Deelen 2019's survival to
+  paper's genomic control, D26.1, significant at its Bonferroni line by Table 1's mark; 3.2e-9 uncorrected; the same
+  side), so not D (D25.1). But Deelen 2019's survival to
   the 90th percentile, a sample with no UK Biobank and no AncestryDNA, is flat where it was powered: T β +0.0178
   (SE 0.0212), one-sided P 0.20. From Timmers' β (0.0437 per T) the expected log odds is 0.211 under APOE's factor
-  (power 1.00, heterogeneity P 3e-11) and 0.088 under the loci's mean factor (power 0.99, heterogeneity P 0.002): a
-  red flag under both calibrations, so `replication_failed`, row 6's shape. It holds for Wright's AncestryDNA effect
-  (0.041 per allele: mean factor power 0.99, heterogeneity P 0.01) and for any discovery effect above about 0.031,
+  (power 1.00, heterogeneity P 3e-11) and 0.088 under the loci's mean factor (power 0.99, heterogeneity P 0.002, 0.02 counting
+  the mean's own SE): a red flag under both calibrations, so `replication_failed`, row 6's shape. It holds for Wright's AncestryDNA effect
+  (0.041 per allele: mean factor power 0.99, heterogeneity P 0.01, 0.04 with the mean's SE) and for any discovery
+  effect above about 0.037 (with the mean's SE),
   so taking LifeGen's Rotterdam overlap out of Timmers' β does not lift it; Joshi's HR 1.046 (log 0.045) sits at
   Timmers' size. The 99th percentile leans the other way (T β −0.0191, SE 0.0343) and flags too (mean factor power
   0.82, heterogeneity P 0.002), its APOE factor borrowed from the 90th's ε4 line, so it is stated and the token rests
   on the 90th. Timmers 2019's own look-up in the earlier longevity sample is flat as well (Alpha 0.05, SE 0.27,
   against the mean 0.42), a sample overlapping Deelen's, named only. The case for A, put to the lead: the effect fades
-  with age (below), and Figure 5's 80-90 band (fathers 0.0398, mothers 0.0212, pooled 0.030 on the figure's scale)
-  under the mean factor expects 0.060, power 0.88 and heterogeneity P 0.12, no flag (APOE's still flags, P 0.006);
+  with age (below), and Figure 5's 80-90 band (fathers 0.0398, mothers 0.0212, pooled 0.030; the twelve bands
+  average 0.053, so the figure is on Timmers' in-self scale) under the mean factor expects 0.060, power 0.88 and
+  heterogeneity P 0.12 (0.17 with the mean's SE), no flag (APOE's still flags, P 0.006). That band is the hazard at
+  80 to 90, while Deelen's cases are defined by cumulative survival to the percentile, so it is the reading most
+  favourable to A;
   D25.3 says the mean understates a late locus and APOE overstates a midlife one, and both are applied as written. It acts through smoking: every association
   the lead has is with smoking behaviour, lung cancer and COPD. The effect is mainly on deaths before 75 (HR 1.08 per
   allele at 40-75 against 1.03 after, Joshi 2017; declining after 60, Timmers 2019), and survival to very old age does
@@ -41,7 +46,7 @@ verdict_reason: >-
   fathers 0.084 at 50-60 falling to 0.040 at 80-90 and mothers 0.054 at 60-70 to 0.021 at 80-90; the sex moderator is
   nominal (P 0.013) and fails FDR (Q 0.27), so no sex_specific.
 axes:
-  tier: {value: B, cites: [pmid-30642433#q4, pmid-29030599#q5, pmid-31484785#q7, pmid-31484785#q8, pmid-31413261#q141, pmid-31413261#q142, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, pmid-30642433#q251, pmid-30642433#q169, pmid-30642433#q172]}
+  tier: {value: B, cites: [pmid-30642433#q4, pmid-29030599#q5, pmid-31484785#q7, pmid-31484785#q8, pmid-31413261#q2, pmid-31413261#q141, pmid-31413261#q142, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, pmid-30642433#q251, pmid-30642433#q169, pmid-30642433#q172]}
   mechanism: {value: smoking_lungs, cites: [pmid-29030599#q8, pmid-30642433#q4]}
   pleiotropy: {values: ["mech:smoking", "context:smoking"], cites: [pmid-29030599#q8, pmid-31484785#q8]}
   age_of_action: {value: MIDLIFE, confidence: DIRECT, cites: [pmid-29030599#q7, pmid-30642433#q5, pmid-30642433#q166, pmid-30642433#q167, pmid-30642433#q168, pmid-30642433#q169, pmid-30642433#q170, pmid-30642433#q171, pmid-30642433#q172, pmid-30642433#q173, pmid-30642433#q174]}
@@ -80,8 +85,8 @@ variants:
           You carry one copy of a version of this DNA region that about 46 in 100 people of European ancestry
           carry. The region holds the brain's nicotine receptor genes and is linked to nicotine dependence, lung
           cancer and lung disease, and in very large studies this version's carriers had parents who lived on
-          average about two and a half months less, mostly through deaths before 75. The finding is well established, but it is a
-          tendency, not destiny. Whether you smoke matters far more than this DNA result; not smoking, or
+          average about two and a half months less, mostly through deaths before 75. The finding is well established for that
+          span, but a study of people who reached the oldest ages did not see it. It is a tendency, not destiny. Whether you smoke matters far more than this DNA result; not smoking, or
           stopping, is what counts.
       - genotype: C/C
         state: risk
@@ -89,8 +94,8 @@ variants:
           You carry two copies of a version of this DNA region that about 13 in 100 people of European ancestry
           have. The region holds the brain's nicotine receptor genes and is linked to nicotine dependence, lung
           cancer and lung disease, and in very large studies each copy of this version went with parents living
-          on average about two and a half months less, mostly through deaths before 75. The finding is well established, but
-          it is a tendency, not destiny. Whether you smoke matters far more than this DNA result; not smoking, or
+          on average about two and a half months less, mostly through deaths before 75. The finding is well established for
+          that span, but a study of people who reached the oldest ages did not see it. It is a tendency, not destiny. Whether you smoke matters far more than this DNA result; not smoking, or
           stopping, is what counts.
 studies:
   - rsid: rs8042849
@@ -187,14 +192,14 @@ studies:
     effect_unit: years of father's lifespan per G allele at the proxy (doubled to parental dosage)
     effect_allele: G
     proxy_rsid: rs931794
-    statistical_test: "Linear regression of fathers' lifespan in years on offspring dosage, not a Cox model (the vocabulary has no other parental design); P after the paper's genomic control (D26.1), just above 5e-8; uncorrected 3.19e-09 (Table 1); a nominal replication outside UK Biobank and LifeGen; D21 at Deelen's 90th from this effect (0.041 per allele in self, SE 0.007): mean factor power 0.99, heterogeneity P 0.01 (derived); N from Supplemental Table 8, not in the cache"
+    statistical_test: "Linear regression of fathers' lifespan in years on offspring dosage, not a Cox model (the vocabulary has no other parental design); P after the paper's genomic control (D26.1), significant at the paper's own Bonferroni line (Table 1's mark), suggestive in this vocabulary, which holds significant to below 5e-8; uncorrected 3.19e-09 (Table 1); a nominal replication outside UK Biobank and LifeGen; D21 at Deelen's 90th from this effect (0.041 per allele in self, SE 0.007): mean factor power 0.99, heterogeneity P 0.01, 0.04 counting the mean's SE (derived); N from Supplemental Table 8, not in the cache"
     curator: claude-opus-5-5
   - rsid: rs8042849
     note: pmid-31413261
     quote: q141
     phenotype_class: EXTREME_SURVIVAL_CC
     study_design: percentile_case_control_p90
-    population: European (Deelen 2019's longevity meta-analysis)
+    population: European (Deelen 2019's 18 discovery cohorts, no UK Biobank)
     ancestry: [EUR]
     stat_significance: not_significant
     p_value: "0.403"
@@ -205,7 +210,7 @@ studies:
     effect_unit: log odds of survival to the 90th percentile per T allele
     effect_allele: T
     direction: protective
-    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008598), SE 0.0212, effective N 11,050; no UK Biobank and no AncestryDNA. D21/D25.3 from Timmers' β 0.0437 per T (SE 0.0041: Table 1's 0.4368 years per copy over ten, pmid-30642433#q4): APOE factor 4.84 (pmid-31413261#q82 over pmid-30642433#q90) expects 0.211, power 1.00, heterogeneity P 3e-11; the loci's mean factor 2.02 (pmid-30642433#q92) expects 0.088, power 0.99, heterogeneity P 0.002: a red flag under both (derived). Figure 5's 80-90 band (q169, q172, pooled 0.030 on the figure's scale) gives 0.060 by the mean factor, power 0.88, heterogeneity P 0.12, no flag; by APOE's, P 0.006"
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008598), SE 0.0212, effective N 11,050; no UK Biobank and no AncestryDNA. D21/D25.3 from Timmers' β 0.0437 per T (SE 0.0041: Table 1's 0.4368 years per copy over ten, pmid-30642433#q4): APOE factor 4.84 (pmid-31413261#q82 over pmid-30642433#q90) expects 0.211, power 1.00, heterogeneity P 3e-11; the loci's mean factor 2.02 (pmid-30642433#q92) expects 0.088, power 0.99, heterogeneity P 0.002 (0.02 counting the mean's SE 0.0959): a red flag under both (derived). Figure 5's 80-90 band (q169, q172, pooled 0.030, the figure on Timmers' in-self scale) gives 0.060 by the mean factor, power 0.88, heterogeneity P 0.12 (0.17 with the mean's SE), no flag; by APOE's, P 0.006"
     curator: claude-opus-5-5
   - rsid: rs8042849
     note: pmid-31413261
