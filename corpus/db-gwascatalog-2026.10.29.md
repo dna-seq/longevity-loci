@@ -1549,3 +1549,19 @@ Cha 2011 (GCST001027, PMID 21460842), uterine fibroids, Japanese: OR 1.39, P 4e-
 
 ... for "G", the major allele at 0.88 printed on the other strand (rs2280543 is C/T, db-ensembl-116#q465): C, the
 lead's T haplotype, more fibroids, as BBJ's own table has it (pmid-36737517#q32). For row 64.
+
+## Reading 2026-11-12, supplement
+
+> [q426] _embedded.associations[0] association_id 55479447 risk_frequency NR pvalue_description  pvalue_mantissa 4 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range [0.0081-0.0161] beta 0.01207 unit increase p_value 4e-09 accession_id GCST009448 pubmed_id 31484785 first_author Wright KM ci_lower 0.0081 ci_upper 0.0161
+
+> [q427] _embedded.associations[0].snp_effect_allele[0] rs4755737-A
+
+> [q428] _embedded.associations[0].reported_trait[0] Longevity
+
+`assoc-rs4755737`: the catalog's one association for the lead (totalElements 1) is Wright 2019's age GWAS, filed as
+"Longevity" at the uncorrected P (4e-9; pmid-31484785#q107), A, beta 0.0121. No blood-pressure or other trait line for
+the lead. For row 65.
+
+> [q429] _embedded.associations[0] association_id 55479432 risk_frequency NR pvalue_description  pvalue_mantissa 2 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.0075-0.0155] beta 0.01152 unit increase p_value 2e-08 accession_id GCST009448 pubmed_id 31484785 first_author Wright KM ci_lower 0.0075 ci_upper 0.0155
+
+`assoc-rs4755202`: the seed's second rsID, the same study's one line, A. For row 65.

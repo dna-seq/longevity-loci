@@ -1,0 +1,160 @@
+# The seed list's locus 65, HSD17B12 (11p11.2). Curated 2026-11-12. Lead rs4755737 (the seed's lead), an HSD17B12
+# intron, from Wright 2019's GWAS of AncestryDNA customers' own current age (Supplemental Table 8), as at rows 10 and
+# 54, not the parental-lifespan meta-analysis the seed names: the lead has no line in Supplemental Table 9. The seed's
+# second rsID, rs4755202 (172 kb away, a MIR670HG intron), is the same age-GWAS peak weakly tagged (r² 0.53, D′ 0.75
+# in CEU, phase not printed; db-ensembl-116#q476): named, not scored. Not in Timmers 2019's Figure 2 sheet.
+locus_id: 65
+locus_name: HSD17B12
+verdict: re-tiered
+verdict_reason: >-
+  Tier C, from the seed's B. The region's strongest result is Wright 2019's GWAS of the current age of 482,068
+  AncestryDNA customers (VIABILITY_AF, confirmation only under §4.5, so it cannot carry A or B alone, D23). There A,
+  the derived allele (0.46 in non-Finnish Europeans), is commoner among older customers, and it is suggestive, not
+  genome-wide, at the P the paper uses for its own call (D17.3, D26.1): genomic control (λ 1.374) gives 4.8e-7
+  against the paper's Bonferroni line of 9.3e-8; uncorrected it is 3.6e-9, the GWAS Catalog's "Longevity" record
+  of 4e-9 and the GWAS Catalog's only association for the lead. The paper names only APOE and MAP2K6 from this
+  analysis. The seed reads the study as a parental-lifespan meta-analysis with UK Biobank: the lead is not in it;
+  the seed's second rsID, rs4755202, is, nominal in fathers (meta P 3.7e-4, its UK Biobank arm P 0.025) at r² 0.53
+  to the lead, named, not scored. Every independent look-up at the lead leans A's way, none past nominal: FinnGen
+  R11's any-death endpoint (A with fewer deaths, P 0.039, one-sided 0.019; outside AncestryDNA and UK Biobank,
+  named from the database line), Park 2025's own survival in 393,833 UK Biobank participants (A with fewer deaths
+  than expected, P 0.012, one-sided 0.006; the deposit's allele columns swapped, as at APOE), Timmers 2019's million parental lives (P 0.095, one-sided 0.047), Deelen 2019's
+  90th and 99th percentiles (one-sided 0.028 and 0.043) and Zenin 2019's healthspan (P 0.013, one-sided 0.0064).
+  The same customers' mothers also go A's way (genomic control P 0.0022), but those are the age GWAS's genotypes,
+  not a replication. A suggestive confirmation-class result with consistent nominal support across independent
+  samples: C, as rows 10 and 54, not B (R-TIER-4, no genome-wide scoring-class anchor), not D (nothing contradicts
+  it). Open Targets 26.09 holds the lead in one credible set of the eight studies, Wright's age study's (PICS, 69
+  variants), where its posterior probability, the set's highest, is 0.124. That set is built at the uncorrected
+  4e-9 the row does not read as genome-wide, so it sets no causal or effector level (D28.5): C4, E4, no gene named.
+  On that set, in prose only: locus-to-gene gives HSD17B12 0.454 (the seed's HSD17B12:0.45), ALKBH3 0.268; of its
+  24 QTL colocalisations at H4 ≥ 0.8, HSD17B12 holds 17 (expression and splicing) and the unnamed ENSG00000246250 5,
+  a rival by D24's tenth, so the call would be E3 even if the set counted. The set colocalises (H4 above 0.9) with
+  diastolic and systolic blood pressure, hypertension and sleep duration, and at 0.84 with body mass index; the
+  records carry no allele, so no direction for A is read: shared signal, not a mediator, so the mechanism is general
+  ageing with blood-pressure and sleep pleiotropy, and no trade-off is filed. The protection is a presence, the
+  derived A. Age of action is unknown. A is 0.68 in East Asians, untested there.
+axes:
+  tier: {value: C, cites: [pmid-31484785#q107, pmid-31484785#q31, pmid-31484785#q32, pmid-31484785#q33, db-gwascatalog-2026.10.29#q426, db-gwascatalog-2026.10.29#q427, db-gwascatalog-2026.10.29#q428, pmid-31484785#q108, pmid-31484785#q109, pmid-31484785#q110, db-ensembl-116#q476, db-finngen-r11#q43, pmid-30642433#q279, pmid-31413261#q163, pmid-31413261#q164, pmid-30729179#q91, pmid-40021682#q66, pmid-40021682#q32]}
+  mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q794, db-opentargets-26.09#q795, db-opentargets-26.09#q796]}
+  pleiotropy: {values: ["mech:cvd", "mech:sleep"], cites: [db-opentargets-26.09#q794, db-opentargets-26.09#q795, db-opentargets-26.09#q796]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
+            cites: [pmid-30729179#q91, pmid-31484785#q107, db-finngen-r11#q43, pmid-30642433#q279, pmid-31413261#q163, pmid-31413261#q164, pmid-40021682#q66]}
+  actionability: {label: descriptive, cites: [pmid-31484785#q107]}
+  context: {values: [eur_only_evidence], cites: [pmid-31484785#q107, db-finngen-r11#q43, db-ensembl-116#q475]}
+flags:
+  - {token: "PROTECT:PRESENCE", cites: [pmid-31484785#q107, db-ensembl-116#q472, db-ensembl-116#q474]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q784, db-opentargets-26.09#q785, db-opentargets-26.09#q786, db-opentargets-26.09#q787, db-opentargets-26.09#q788, db-opentargets-26.09#q789]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q787, db-opentargets-26.09#q790, db-opentargets-26.09#q791, db-opentargets-26.09#q792, db-opentargets-26.09#q793, db-opentargets-26.09#q797, db-opentargets-26.09#q798, db-ensembl-116#q477]}
+variants:
+  - rsid: rs4755737
+    gene: ""
+    phenotype: HSD17B12 region, survival to older age
+    trait_efo_id: OBA_VT0005372
+    effect_allele: A
+    effect_size: 0.01207
+    effect_measure: beta
+    stat_significance: suggestive
+    direction: protective
+    genotypes:
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the older, ancestral version of this DNA region (about 29 in 100 people of
+          European ancestry do). It is the reference the other combinations are compared with. The region, on
+          chromosome 11, lies inside the HSD17B12 gene, which helps make long-chain fats; which gene matters here,
+          if any, is not settled. The finding comes from people of European ancestry; less is known elsewhere.
+      - genotype: A/G
+        state: protective
+        conclusion: >-
+          You carry one copy of the A version of this DNA region (about half of people of European ancestry do).
+          In one large study of genealogy-site customers, the A version was a little more common among older
+          people, and several other studies lean the same way, with slightly fewer deaths in a Finnish study and
+          slightly longer-lived parents in a much larger one, but none of them clearly confirms it. This is early
+          evidence. The effect, if real, is small: a tendency, not destiny.
+      - genotype: A/A
+        state: protective
+        conclusion: >-
+          You carry two copies of the A version of this DNA region (about 21 in 100 people of European ancestry
+          do). In one large study of genealogy-site customers, each copy was a little more common among older
+          people, and several other studies lean the same way, with slightly fewer deaths in a Finnish study and
+          slightly longer-lived parents in a much larger one, but none of them clearly confirms it. This is early
+          evidence. The effect, if real, is small: a tendency, not destiny.
+studies:
+  - rsid: rs4755737
+    note: pmid-31484785
+    quote: q107
+    phenotype_class: VIABILITY_AF
+    study_design: current_age_quantitative
+    population: AncestryDNA customers, the European population group, close relatives removed
+    ancestry: [EUR]
+    sample_size: 482068
+    sample_unit: individuals
+    stat_significance: suggestive
+    p_value: "4.819e-07"
+    p_value_num: 4.819e-07
+    effect_size: 0.01207
+    effect_measure: beta
+    effect_unit: z-scored current age per A allele (positive = older, survival to older age)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Supplemental Table 8, Male_Female.AGE, quantitative GWAS of current age; genomic-control P, the correction the paper's own significance call uses (D17.3, D26.1); raw P 3.639e-09 (the GWAS Catalog's 4e-9, GCST009448), which passes the paper's Bonferroni 9.31e-8 only uncorrected; λ 1.374, LDSC intercept 1.04 (S Table 3, q31); not among the paper's candidate loci (q32, q33)"
+    curator: claude-opus-5-5
+  - rsid: rs4755737
+    note: pmid-31484785
+    quote: q108
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_linear
+    population: AncestryDNA customers' mothers born 1886-1940 (mostly European American)
+    ancestry: [EUR]
+    sample_size: 270000
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "0.002233"
+    p_value_num: 0.002233
+    effect_size: 0.008801
+    effect_measure: beta
+    effect_unit: z-scored mothers' lifespan per A allele in offspring (positive = longer)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Supplemental Table 8, Mother_1886-1940, genomic-control P (D17.3); raw P 0.00126; the same customers' genotypes as the age GWAS, so not an independent sample"
+    curator: claude-opus-5-5
+  - rsid: rs4755737
+    note: pmid-30642433
+    quote: q279
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 640171
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "0.094580583"
+    p_value_num: 0.0946
+    p_one_sided: 0.0473
+    effect_size: 0.00645333
+    effect_measure: beta
+    effect_unit: log hazard protection per A allele in self (positive = longer life)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), direction ++ in UK Biobank and LifeGen, info 0.998; two-sided P printed, one-sided 0.047 (derived, D25.13; nominal under D26.13)"
+    curator: claude-opus-5-5
+  - rsid: rs4755737
+    note: pmid-30729179
+    quote: q91
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "0.013"
+    p_value_num: 0.0128
+    effect_size: -0.0121
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per A allele (negative = later)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), -log10 P 1.891"
+    curator: claude-opus-5-5

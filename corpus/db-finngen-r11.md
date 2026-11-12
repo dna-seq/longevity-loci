@@ -320,3 +320,11 @@ rs79902640's G (2.1 %): +0.030 (SE 0.026), P 0.24. For row 64.
 > [q42] 11 203788 C T rs2280543 BET1L,RP11-304M2.5 0.304043 0.517065 0.0262153 0.0255062 0.0216407 0.0220204 0.0215932
 
 rs2280543's T (2.2 %): +0.026 (SE 0.026), P 0.30. All three lean the minor haplotype toward death. For row 64.
+
+## Reading 2026-11-12, supplement
+
+> [q43] 11	43770315	G	A	rs4755737	HSD17B12,RP11-472I20.4	0.0389171	1.40986	-0.0153214	0.00741936	0.491109	0.487459	0.491566
+
+FinnGen R11's "Any death" file (`finngen_R11_DEATH.tsv.gz.rows-0afd56a6`), rs4755737: A at 49 %, log OR −0.0153
+(SE 0.0074) for death, P 0.039: A with fewer deaths, one-sided 0.019 (derived). Outside AncestryDNA and UK Biobank.
+rs4755202 reads the same way (A −0.0148, P 0.048). For row 65.

@@ -1754,3 +1754,31 @@ rs2280543 and rs79902640 (the BET1L eQTL's top variant, pmid-36737517) are one h
 > [q471] populations[49] allele_count 31 population 1000GENOMES:phase_3:EUR allele G frequency 0.0308151093439364
 
 rs79902640's G 0.031 in Europeans, rs2280543's T's partner. For row 64.
+
+## Reading 2026-11-12, supplement
+
+> [q472] mappings[0] ancestral_allele G location 11:43770315-43770315 end 43770315 strand 1 seq_region_name 11 start 43770315 allele_string G/A coord_system chromosome assembly_name GRCh38
+
+> [q473] mappings[0] seq_region_name 11 start 43791865 location 11:43791865-43791865 assembly_name GRCh37 allele_string G/A coord_system chromosome strand 1 end 43791865 ancestral_allele G
+
+rs4755737 (`var-rs4755737`, `grch37-var-rs4755737`): G/A at 11:43,770,315 (GRCh38) and 11:43,791,865 (GRCh37); G
+ancestral, A derived. For row 65.
+
+> [q474] populations[19] population gnomADg:nfe frequency 0.4581 allele_count 31138 allele A
+
+> [q475] populations[1] population gnomADg:eas frequency 0.3164 allele_count 1639 allele G
+
+A at 0.46 in gnomAD's non-Finnish Europeans; G at 0.32 in its East Asians, so A 0.68 there (derived). For row 65.
+
+> [q476] [0] variation1 rs4755737 r2 0.533305 variation2 rs4755202 population_name 1000GENOMES:phase_3:CEU d_prime 0.753007
+
+`ld-rs4755737-rs4755202-CEU`: the seed's two rsIDs at r² 0.53, D′ 0.75 in CEU. The phase is not printed; both A
+alleles are the age GWAS's older side (pmid-31484785#q107, q109). For row 65.
+
+> [q477] [0].transcript_consequences[0] gene_symbol HSD17B12 gene_symbol_source HGNC strand 1 gene_id ENSG00000149084 variant_allele A biotype protein_coding transcript_id ENST00000278353 impact MODIFIER hgnc_id HGNC:18646
+
+`vep-rs4755737`: intronic in HSD17B12 (most severe consequence intron variant). For row 65.
+
+> [q478] mappings[0] end 43598388 seq_region_name 11 allele_string G/A/C/T start 43598388 strand 1 location 11:43598388-43598388 coord_system chromosome ancestral_allele G assembly_name GRCh38
+
+rs4755202 at 11:43,598,388 (GRCh38), G/A/C/T with G ancestral; A is the allele every file here prints. For row 65.

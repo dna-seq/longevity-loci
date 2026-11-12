@@ -2915,3 +2915,59 @@ One of BET1L's: H4 0.999 ... For row 64.
 > [q783] data.credibleSet.colocalisation.rows[26].otherStudyLocus.study.target approvedSymbol BET1L
 
 ... BET1L's expression in transverse colon (GTEx v10). For row 64.
+
+## Reading 2026-11-12, supplement
+
+> [q784] data.credibleSets count 1
+
+> [q785] data.credibleSets.rows[0].study id GCST009448
+
+`credibleSets` over the eight studies (the seven lifespan, healthspan and longevity studies plus Wright 2019's
+current-age study GCST009448, as at rows 10 and 54) for 11_43770315_G_A: one set, Wright's age study's. No lifespan,
+longevity or healthspan study holds the lead. For row 65.
+
+> [q786] data.credibleSets count 0
+
+The same query for rs4755202 (11_43598388_G_A): no set. For row 65.
+
+> [q787] data.study.credibleSets.rows[0] studyLocusId 96ea20cc681fbe3c5115f3cbbc7ec2fa pValueMantissa 4 pValueExponent -9 finemappingMethod PICS
+
+> [q788] data.study.credibleSets.rows[0].locus count 69
+
+> [q789] data.study.credibleSets.rows[0].locus.rows[0] posteriorProbability 0.12425352940751408
+
+`study-GCST009448-sets.json` (q77, q78): the 11p11 set is built at P 4 × 10⁻⁹, the uncorrected P
+(pmid-31484785#q107); the row reads the study at the genomic-control P, 4.8 × 10⁻⁷, so the set sets no causal or
+effector level (D28.5). 69 variants by PICS; the lead's posterior probability 0.124 is the set's highest, the next
+0.089, 0.087 and 0.080. For row 65.
+
+> [q790] data.credibleSet.l2GPredictions.rows[0] score 0.45437049865722656
+
+> [q791] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol HSD17B12
+
+> [q792] data.credibleSet.l2GPredictions.rows[1] score 0.268466591835022
+
+> [q793] data.credibleSet.l2GPredictions.rows[1].target approvedSymbol ALKBH3
+
+`set-96ea20cc.json`: locus-to-gene on that set, HSD17B12 0.454 (under 0.5), ALKBH3 0.268, ACCS 0.125. The seed's
+HSD17B12:0.45 is this record. For row 65, prose.
+
+> [q794] data.credibleSet.colocalisation.rows[10].otherStudyLocus.study id GCST90691892 traitFromSource Diastolic blood pressure, combined automated + manual reading, adjusted by medication - raw studyType gwas
+
+> [q795] data.credibleSet.colocalisation.rows[20].otherStudyLocus.study id GCST90692421 traitFromSource Hypertension (PheCode 401) studyType gwas
+
+> [q796] data.credibleSet.colocalisation.rows[8].otherStudyLocus.study id GCST007982 traitFromSource Sleep duration studyType gwas
+
+The set's 90 GWAS colocalisations: at H4 above 0.9, diastolic and systolic blood pressure, hypertension (H4 0.96)
+and doctor-diagnosed high blood pressure, sleep duration (0.98 to 0.99), red cell distribution width, linoleic and
+omega-6 fatty acid fractions and age at first sexual intercourse; body mass index and weight at 0.84. The rows
+carry no allele, so no direction for A is read from them. For row 65.
+
+> [q797] data.credibleSet.colocalisation count 43
+
+> [q798] data.credibleSet.colocalisation.rows[1].otherStudyLocus.study.target approvedSymbol HSD17B12
+
+`set-96ea20cc-qtlcoloc.json`: 43 QTL colocalisations; at H4 ≥ 0.8, HSD17B12 17 (expression and splicing, in adipose,
+skin, artery, lymphoblastoid cells and others), ENSG00000246250 5, API5 1, ACCS 1 (counted from the file). HSD17B12
+would lead by D24, with the unnamed ENSG00000246250 at 5 of 24 a rival; the set sets no level (D28.5), so this is
+prose. For row 65.
