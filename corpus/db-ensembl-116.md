@@ -1416,3 +1416,32 @@ An intron variant (Ensembl's most severe consequence), the insertion the minor a
 > [q387] [0].transcript_consequences[3].consequence_terms[0] intron_variant
 
 An intron variant of RP1 (ENSG00000104237) on its protein-coding transcript ENST00000636932. For row 55.
+
+## Reading 2026-11-12, record
+
+> [q388] mappings[0] start 58925574 end 58925574 seq_region_name 8 allele_string A/G strand 1 location 8:58925574-58925574 coord_system chromosome ancestral_allele A assembly_name GRCh38
+
+> [q389] populations[67] frequency 0.0467196819085487 population 1000GENOMES:phase_3:EUR allele_count 47 allele G
+
+> [q390] populations[64] allele_count 1008 allele A frequency 1 population 1000GENOMES:phase_3:EAS
+
+> [q391] populations[8] population gnomADg:nfe frequency 0.03641 allele G allele_count 2477
+
+`var-rs13262617.json`: GRCh38 8:58,925,574, A/G, A ancestral, so G (the longer-lived allele) is derived. G 0.047 in
+1000 Genomes Europeans, 0.036 in gnomAD's non-Finnish Europeans; absent in East Asians (A 1.0). For row 56.
+
+> [q392] [13] r2 0.706884 variation1 rs13262617 d_prime 1.000000 population_name 1000GENOMES:phase_3:CEU variation2 rs79725344
+
+> [q393] [51] population_name 1000GENOMES:phase_3:CEU d_prime 0.999999 variation2 rs13252116 r2 0.568062 variation1 rs13262617
+
+> [q394] [9] variation2 rs7815098 d_prime 0.999999 population_name 1000GENOMES:phase_3:CEU variation1 rs13262617 r2 0.390206
+
+`ld-rs13262617-ceu.json` (CEU, r² ≥ 0.3, 500 kb): the best tags reach r² 0.71 (rs79725344, rs10504278); rs13252116
+0.57, rs7815098 0.39. No proxy above 0.8. For row 56.
+
+> [q395] [0].transcript_consequences[0] gene_symbol_source HGNC strand -1 gene_id ENSG00000198846 transcript_id ENST00000361421 variant_allele G biotype protein_coding gene_symbol TOX impact MODIFIER hgnc_id HGNC:18988
+
+> [q396] [0].transcript_consequences[0].consequence_terms[0] intron_variant
+
+`vep-rs13262617.json`: an intron variant of TOX (ENSG00000198846), on the first listed transcript, ENST00000361421. For row
+56.

@@ -234,3 +234,14 @@ Timmers' scale and into FinnGen by APOE's factor here (0.99, q4 against pmid-306
 expected −0.0211, one-sided power 0.84, heterogeneity P 0.018; by the loci's mean factor −0.0505, power 1.00,
 heterogeneity P 7e-5, or 0.003 counting the mean's SE. A red flag under both. No UK Biobank; overlap with Deelen's
 Finnish cohort Vitality 90+ (pmid-31413261#q149) unknown, and any overlap would favour agreement. For row 55.
+
+## Reading 2026-11-12, supplement
+
+> [q32] 8 58925574 A G rs13262617 TOX 0.542774 0.265381 0.0122139 0.0200681 0.0361168 0.0355734 0.0361848
+
+FinnGen R11 death endpoint (`rows-d05d9439`), rs13262617 at 8:58,925,574 (GRCh38): alt G (0.036), β +0.0122 (SE
+0.0201) on the log hazard of death, P 0.54: G, the discovery's longer-lived allele, leans to more deaths (one-sided
+0.73 against the discovery, derived). D21, Timmers' scale into FinnGen by APOE's factor (0.99, q4 over
+pmid-30642433#q90) and the loci's mean factor (derived): from the fathers' 0.0824, APOE power 0.99, heterogeneity P
+1.6e-4, mean power 0.52 (P 0.027), so no flag; from the both-parents 0.038, power 0.59 and 0.19, no flag. No UK
+Biobank. For row 56.

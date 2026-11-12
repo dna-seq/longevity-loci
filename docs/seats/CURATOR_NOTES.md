@@ -234,6 +234,14 @@ The curator seat's working state, rewritten to the present before a reset (`docs
   lead: keep A on the age fade, since Figure 5's 80-90 band under the mean factor gives power 0.88 and heterogeneity
   P 0.12 to 0.17, the reading most favourable to A (a hazard at 80-90, not cumulative survival). 21 holds A: the 90th replicates, and the 99th leans the same side at power 0.70 and 0.23 from Timmers' β
   (Wright prints no pooled effect, D20).
+- **56 TOX** (2026-11-12), tier B kept (seed B) on row 37's default. A fathers-only Pilling discovery whose tier
+  turns on the calibration basis: from the fathers' Figure 2 effect (0.0824) Deelen's 90th flags under both factors
+  and the row would be D; from the both-parents effect (0.038, from Pilling's P at the fathers' SE) under APOE's only.
+  Put to the lead with 37's question, and whether Wright's AncestryDNA fathers at rs7815098 (r² 0.39, one-sided about
+  0.040 after genomic control, pairing unread) would block a D. Lessons: `fetch-supp` names a REST answer after the
+  URL's last segment, so two Ensembl calls on one rsID (variation, VEP) overwrite each other and an LD call lands as
+  `1000GENOMES_phase_3_CEU`: always pass `--name` (to file at idle). A FinnGen line is not a study entry (`check rows`:
+  a database release is cited from an axis or a flag); it lives in the tier's prose and cites.
 - **55 RP1** (2026-11-12), tier D re-tiered (seed C), row 45's shape (D26.8). An indel lead: LifeGen and Zenin have no
   line for it (read at rs13279568, r² 1.0, phased by Deelen's own file, where the proxy's 0.39 allele has the
   insertion's sign and frequency); FinnGen writes it G/GCT at GRCh38 54,566,349, Open Targets has no record under that

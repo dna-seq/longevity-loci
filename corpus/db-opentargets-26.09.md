@@ -2699,3 +2699,8 @@ The source flags that set for quality control, and the lead's probability in it 
 
 Open Targets 26.09 holds no record of the insertion or of the proxy, so no credible set holds either: C4, E4. For
 row 55.
+
+## Reading 2026-11-12, record
+
+`variant-8_58925574_A_G-all.json`: Open Targets 26.09 answers q735's text for rs13262617 too: no record, so no
+credible set holds it: C4, E4. For row 56.

@@ -1273,3 +1273,12 @@ Its effect allele is Wright's C, the complement of the forward G (db-ensembl-116
 
 One association: Deelen 2019's trans-ethnic 90th percentile line (GCST008600), GCT OR 1.11 (1.07-1.15), P 6e-7
 (the paper's Table 4 prints 5.6e-7, pmid-31413261#q145). No other trait. For row 55.
+
+## Reading 2026-11-12, record
+
+> [q358] _embedded.associations[0] association_id 35567961 risk_frequency 0.97 pvalue_description pvalue_mantissa 3 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.023-0.049] beta 0.036 unit increase p_value 3.0000000000000004e-08 accession_id GCST006701 pubmed_id 29227965 first_author Pilling LC ci_lower 0.023 ci_upper 0.049
+
+> [q359] _embedded.associations[0].snp_effect_allele[0] rs13262617-A
+
+One association: Pilling 2017's fathers' attained age (GCST006701), A β 0.036 (0.023–0.049), P 3e-8. No other trait.
+For row 56.
