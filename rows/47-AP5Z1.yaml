@@ -59,6 +59,7 @@ flags:
   - {token: "effector:E4", cites: [db-opentargets-26.09#q605]}
 variants:
   - rsid: rs371933919
+    locus: {chrom: "7", start: 4787883, ref: T, cites: [db-ensembl-116#q311, db-ensembl-116#q312, db-ensembl-116#q313, db-ensembl-116#q314, pmid-27015805#q13, db-finngen-r11#q22, db-opentargets-26.09#q604]}  # D26.9's T>TC, the insertion Pilling's 7:4827514_T_TC means (GRCh37), left-aligned at GRCh38 4,787,883
     gene: ""
     phenotype: AP5Z1 region, long-lived parents
     trait_efo_id: OBA_VT0005372
