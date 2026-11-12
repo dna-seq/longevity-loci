@@ -46,6 +46,9 @@ export (the lead starts it today, to 0.8's studies/variants shape per `docs/FORM
   2.0.0 first, then publish again).
 - S147 settled upstream (RM434, 5e124dfb, in just-dna-format 0.8.5): `stat_significance` is the authors' verdict at
   their own test's threshold, so the export's `significant` for a passing nominal look-up is the format's reading.
+- 75 (KLF12 region, 81b55f0), tier D: its lead rs35257605 is a poly-T repeat (the 15-T allele). At the next
+  re-export check how enrich resolves a multi-allelic repeat (expansion, as rs371933919's three loci did) and whether
+  the row needs an authored locus (D29.8) before strict passes.
 - Plugin caches moved to the data volume (`remember_setting JUST_DNA_PIPELINES_CACHE_DIR`, user config, not the
   repo): `$HOME` is the small volume and Ensembl's lane is about 15 GB. Ensembl lane present 2026-11-12: ensembl-variation-2026_07_13-vep116.0, 14.5 GB (du shows 7.6 GB on BeeGFS).
 
