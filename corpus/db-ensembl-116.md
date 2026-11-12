@@ -1912,3 +1912,54 @@ Ensembl's LD window around rs55686423 in 1000 Genomes EUR at r² ≥ 0.5 (`ld-wi
 at r² ≥ 0.8): rs7977389 (GRCh38 12:49,587,939, q519) at r² 0.82, D′ 1 (q516), its minor C (0.11 in non-Finnish
 Europeans, q518) riding with the lead's minor T; rs17123764 at r² 0.76, D′ 1 (q517), its minor T (0.076, q520) with
 the lead's T. Wright 2019's rs7303233, rs2272391 and rs7488270 are not in the window, so below r² 0.5. For row 69.
+
+## Reading 2026-11-12, supplement
+
+> [q521] mappings[0] coord_system chromosome allele_string T/A/G start 95187042 location 12:95187042-95187042 strand 1 seq_region_name 12 ancestral_allele T end 95187042 assembly_name GRCh38
+
+> [q522] mappings[0] allele_string T/A/G seq_region_name 12 coord_system chromosome start 95580818 assembly_name GRCh37 location 12:95580818-95580818 ancestral_allele T strand 1 end 95580818
+
+> [q523] populations[19] allele G allele_count 5064 population gnomADg:nfe frequency 0.07447
+
+> [q524] populations[20] frequency 0.247 population gnomADg:eas allele G allele_count 1280
+
+> [q525] populations[16] allele G allele_count 825 population gnomADg:fin frequency 0.07795
+
+> [q526] . minor_allele G most_severe_consequence intron_variant var_class SNP ambiguity D name rs12830425 source Variants (including SNPs and indels) imported from dbSNP MAF 0.125392
+
+rs12830425: GRCh38 12:95,187,042 (GRCh37 95,580,818), T/G, T ancestral (q521, q522); G at 0.074 in gnomAD genomes'
+non-Finnish Europeans (q523), 0.25 in East Asians (q524), 0.078 in Finns (q525); intronic (q526). T/T about 86 in 100
+Europeans, G/T 14, G/G 0.6 (derived). For row 70.
+
+> [q527] [68] d_prime 0.963179 r2 0.894899 variation2 rs4762479 variation1 rs12830425 population_name 1000GENOMES:phase_3:EUR
+
+> [q528] [83] d_prime 0.963179 r2 0.894899 variation1 rs12830425 variation2 rs11107896 population_name 1000GENOMES:phase_3:EUR
+
+> [q529] [70] population_name 1000GENOMES:phase_3:EUR d_prime 0.963179 r2 0.894899 variation2 rs141526980 variation1 rs12830425
+
+> [q530] [60] r2 0.894899 d_prime 0.963179 variation2 rs11107908 variation1 rs12830425 population_name 1000GENOMES:phase_3:EUR
+
+> [q531] [90] variation2 rs34150274 variation1 rs12830425 d_prime 1.000000 r2 0.652864 population_name 1000GENOMES:phase_3:EUR
+
+> [q532] [99] variation1 rs12830425 variation2 rs10859847 r2 0.982567 d_prime 1.000000 population_name 1000GENOMES:phase_3:EUR
+
+> [q533] [62] population_name 1000GENOMES:phase_3:EUR variation2 rs11107900 variation1 rs12830425 r2 0.894899 d_prime 0.963179
+
+> [q534] [61] population_name 1000GENOMES:phase_3:EUR r2 0.878523 d_prime 0.945705 variation1 rs12830425 variation2 rs11107904
+
+> [q535] [94] population_name 1000GENOMES:phase_3:EUR variation1 rs12830425 variation2 rs11107928 r2 0.982295 d_prime 1.000000
+
+> [q536] [15] population_name 1000GENOMES:phase_3:EUR d_prime 0.963179 r2 0.894899 variation2 rs11107903 variation1 rs12830425
+
+> [q537] [0] variation1 rs12830425 r2 0.293028 variation2 rs4128507 d_prime 0.999996 population_name 1000GENOMES:phase_3:EUR
+
+> [q538] populations[14] allele_count 4998 frequency 0.07349 population gnomADg:nfe allele C
+
+> [q539] populations[21] allele_count 12330 allele C frequency 0.1813 population gnomADg:nfe
+
+The lead's EUR window (1000 Genomes phase 3, r² ≥ 0.5, 113 SNPs). The leads of the other traits' credible sets that
+hold the lead are in it (q527-q533, q536): rs4762479, rs11107896, rs141526980, rs11107908, rs11107900 and rs11107903
+at r² 0.89 (D′ 0.96), rs10859847 at 0.98, rs34150274 at 0.65 (D′ 1); each set lead's minor allele, at about 0.07 in
+non-Finnish Europeans (db-opentargets-26.09#q849-q856), rides with the lead's minor G. Wright 2019's tag rs11107904
+r² 0.88, D′ 0.95 (q534), T/C with C at 0.073 (q538), so C rides with G; mvAge's best SNP in its FGD6 TWAS window,
+rs11107928, r² 0.98 (q535); rs4128507 r² 0.29, D′ 1 (q537), C at 0.18 (q539), its C with G. For row 70.

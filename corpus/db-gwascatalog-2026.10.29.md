@@ -1668,3 +1668,14 @@ in top 10%)", G at 0.996, β 0.0906 "decrease" (CI 0.059-0.122), P 3e-8. For row
 The GWAS Catalog's two associations for rs55686423: Rosoff 2023's mvAge (GCST90321079), A, β 0.0100 "decrease", P
 3e-8 (q466, q467); and Saunders 2022's smoking initiation (GCST90243985, PMID 36477530), T at 0.0897, β 0.0117
 "decrease", P 1e-16 (q468-q470): T lowers the chance of ever having smoked regularly. For row 69.
+
+## Reading 2026-11-12, supplement
+
+> [q471] _embedded.associations[0] association_id 62271314 risk_frequency 0.0733 pvalue_description pvalue_mantissa 8 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range - beta - p_value 8e-09 accession_id GCST011100 pubmed_id 32678081 first_author Timmers PRHJ
+
+> [q472] _embedded.associations[0].snp_effect_allele[0] rs12830425-G
+
+> [q473] page size 200 totalElements 1 totalPages 1 number 0
+
+The GWAS Catalog's one association for rs12830425 (q473): Timmers 2020's multivariate ageing traits (GCST011100),
+G at 0.073, P 8e-9 (q471, q472). For row 70.

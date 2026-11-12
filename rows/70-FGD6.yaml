@@ -1,0 +1,218 @@
+# The seed list's locus 70, FGD6 (12q22). Curated 2026-11-12. Lead rs12830425 (the seed's only rsID; GRCh38
+# 12:95,187,042, GRCh37 12:95,580,818), intronic in FGD6, T/G, G at 0.074 in non-Finnish Europeans and 0.25 in East
+# Asians: Timmers 2020's multivariate FGD6 locus (Table 1). In Timmers 2019's, Zenin 2019's, Deelen 2019's, FinnGen
+# R11's and Park 2025's summary statistics at the lead itself; in Wright 2019's fathers' table through rs11107904
+# (r² 0.88), and a weaker tag rs4128507 (r² 0.29). Model-organism support from Bou Sleiman 2022 (mouse QTL, worm RNAi).
+locus_id: 70
+locus_name: FGD6
+verdict: kept
+verdict_reason: >-
+  Tier B, as the seed has it: a genome-wide multivariate result with a co-occurring lifespan study (§4.5 as D16 reads
+  it); a multivariate result does not meet tier A's first criterion (D18.3), and a red flag (below) would cap it at B
+  too. Row 27's shape. Genome-wide only in Timmers 2020's test of healthspan, parental lifespan and 90th-percentile
+  longevity (P_MANOVA 8e-9; G favourable in all three columns, P 3e-6, 2e-5, 0.03); no input is genome-wide alone,
+  and the authors ask for replication in independent cohorts (q6, q9, q10). Rosoff 2023's mvAge holds no lead here: its
+  best SNP in the FGD6 window, rs11107928 (r² 0.98), reaches z 5.03 (P about 5e-7). Timmers 2019's parents' lives are
+  the co-occurring lifespan study: G longer, P 1.8e-5, UK Biobank and LifeGen on the same side. The inputs agree:
+  Zenin's healthspan G later (P 2.8e-6, about 5.0e-6 after the 1.053 genomic control, D26.1) and Deelen's 90th
+  percentile G (P 0.031, one-sided 0.016; the 99th one-sided 0.034), none of them a replication. Outside the inputs:
+  FinnGen R11's any-death endpoint puts G on the fewer-deaths side, flat (P 0.28, one-sided 0.14; a database line,
+  D29.1); Park 2025's own survival puts G with fewer deaths (P 0.04, one-sided 0.019; columns swapped, as at APOE),
+  UK Biobank's people, not independent. The one independent sample with a line is AncestryDNA's fathers in Wright
+  2019, at rs11107904 (r² 0.88, D′ 0.95, its minor C with the lead's G; the counted allele C, not the printed A, by
+  the UK Biobank arm's sign against Timmers' C, as at rows 40 and 69): flat, β +0.0026 (SE 0.0049), one-sided P 0.30,
+  against Wright's UK Biobank fathers' +0.0176 (P 3e-5) on the same scale, heterogeneity P 0.035 as Wright prints it
+  (0.020 from the two arms, 0.033 with both SEs inflated by λ 1.182; derived). AncestryDNA's one-sided power for the
+  UK arm's β at its SE is 0.975 (0.95 after λ): a red flag by D21 (power ≥ 0.8, heterogeneity P < 0.05, both errors
+  counted, D29.6), so `replication_failed`, as row 27 read this same test the other way (heterogeneity P 0.43, no
+  flag). The flag needs at least about 0.87 of the UK arm's β (0.93 after λ), heterogeneity binding: a thin margin.
+  No conversion is needed (D28.1 does not bite): both arms are Wright's, on one printed scale. The option, put to the
+  lead: the UK Biobank fathers' arm is not the multivariate discovery's own effect (D27.9), so the flag is unknown
+  (D26.3) and no token is set; the tier is B either way. The weaker tag rs4128507 (r² 0.29, D′ 1, 3 kb away) splits
+  the same way more sharply (UK arm P 2.8e-7, AncestryDNA 0.95, heterogeneity P 0.0027), named only. The rsID literature
+  search found Timmers 2020 and Bou Sleiman 2022 and nothing else (Semantic Scholar answered, with none).
+  Mechanism: heart and vessels. The Timmers set colocalises with coronary artery disease (H4 0.95, GCST005194) and
+  every one of its 36 colocalisations is with another GWAS (coronary disease, platelet counts, angina, pulse
+  pressure); phased through the set leads' minor alleles, which ride with G (r² 0.65 to 0.98), G lowers coronary
+  artery disease (P 2.5e-10), myocardial infarction (P 2.3e-12) and angina (P 6.5e-13), and Timmers 2020 says the
+  life-extending allele near FGD6 goes with less cardiovascular disease. That is shared signal at one haplotype, not a
+  mediator test; it is row 51's reading. G also raises platelet count (P 3.8e-16, colocalised at H4 0.97) and
+  white-cell count: pleiotropy mech:cvd and mech:blood_count. A trade-off is quoted (D18.1): Timmers 2020 finds the
+  life-extending SNP near FGD6 with more macular degeneration (q24, the quote that made row 43 `tradeoff`), so the row
+  is descriptive (D18.2), whatever the coronary link suggests. Causal confidence C3: the lead is in the one
+  lifespan-class set, Timmers 2020's PICS set of 77 variants, at a posterior of 0.058, under 0.1 (§4.2; the tier
+  rests on that study, so D25.5 and D28.5 do not bar it). Effector E3, no gene named, as row 21: no QTL colocalises
+  with the set and locus-to-gene passes for no gene (NR2C1 0.32, VEZT 0.26, FGD6 0.20). FGD6 is the papers'
+  candidate, with directions that disagree: Timmers 2020's SMR puts lower FGD6 expression (adipose, artery) with the
+  better side, and Rosoff's TWAS puts higher predicted FGD6 expression with the healthier mvAge side (z +4.9, P
+  9.8e-7, colocalisation PP4 0.98, on a sub-genome-wide mvAge signal, so it sets no level, D28.5). Animal support,
+  which never moves a tier or a weight (R-ANIMAL-1): in UM-HET3 mice Fgd6 is one of eleven genes tied at the top score
+  in the late male lifespan QTLs on chromosome 10 (Vezt is another), and knocking down its worm ortholog tag-77 by
+  RNAi shortened life about 14 % (P 0.0019); `animal:mouse_qtl` and `animal:worm_rnai`. No `animal_dir`: the human
+  direction of FGD6 expression is itself in dispute, and a knockdown says nothing of which allele protects
+  (R-ANIMAL-3). No `model_organism` study entry: none of §4.5's phenotype classes fits a mouse or a worm, so one is put
+  to the lead rather than borrowed. PROTECT:PRESENCE: the longer-life G is the minor, derived allele (T ancestral);
+  T/T is the reference, about 86 in 100 Europeans. Age of action is unknown: Timmers 2020's fading with parental age
+  is collective (q2, q11), and the sex difference is unsettled (q31). The evidence is European; G is 0.25 in East
+  Asians, untested there.
+axes:
+  tier: {value: B, cites: [pmid-32678081#q28, pmid-32678081#q6, pmid-32678081#q9, pmid-32678081#q10, pmid-30642433#q290, pmid-37550455#q63, pmid-30729179#q100, pmid-30729179#q59, pmid-31413261#q170, pmid-31413261#q171, db-finngen-r11#q48, pmid-40021682#q70, pmid-40021682#q32, pmid-31484785#q116, pmid-31484785#q117, pmid-31484785#q83, pmid-30642433#q291, pmid-30642433#q292, db-ensembl-116#q534, db-ensembl-116#q535, db-ensembl-116#q537, db-ensembl-116#q538, db-ensembl-116#q539, db-gwascatalog-2026.10.29#q471, db-gwascatalog-2026.10.29#q472, db-gwascatalog-2026.10.29#q473]}
+  mechanism: {value: heart_vessels, cites: [pmid-32678081#q12, db-opentargets-26.09#q848, db-opentargets-26.09#q857, db-opentargets-26.09#q858, db-opentargets-26.09#q834, db-opentargets-26.09#q835, db-opentargets-26.09#q836, db-opentargets-26.09#q837, db-opentargets-26.09#q838, db-opentargets-26.09#q839, db-ensembl-116#q527, db-ensembl-116#q528, db-ensembl-116#q529, db-opentargets-26.09#q849, db-opentargets-26.09#q850, db-opentargets-26.09#q851]}
+  pleiotropy: {values: ["mech:cvd", "mech:blood_count", tradeoff], cites: [pmid-32678081#q12, pmid-32678081#q24, db-opentargets-26.09#q834, db-opentargets-26.09#q836, db-opentargets-26.09#q838, db-opentargets-26.09#q840, db-opentargets-26.09#q841, db-opentargets-26.09#q842, db-opentargets-26.09#q843, db-ensembl-116#q532, db-ensembl-116#q533, db-opentargets-26.09#q854, db-opentargets-26.09#q855]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
+            cites: [pmid-30729179#q100, pmid-30642433#q290, pmid-40021682#q70, db-finngen-r11#q48, pmid-31484785#q116, pmid-31413261#q170, pmid-31413261#q171, pmid-32678081#q28]}
+  actionability: {label: descriptive, cites: [pmid-32678081#q24]}
+  context: {values: [eur_only_evidence], cites: [pmid-32678081#q28, pmid-30642433#q290, db-ensembl-116#q524]}
+flags:
+  - {token: replication_failed, cites: [pmid-31484785#q116, pmid-30642433#q291, db-ensembl-116#q534, db-ensembl-116#q538]}
+  - {token: "PROTECT:PRESENCE", cites: [db-ensembl-116#q521, db-ensembl-116#q523, pmid-32678081#q28]}
+  - {token: "causal:C3", cites: [db-opentargets-26.09#q829, db-opentargets-26.09#q830, db-opentargets-26.09#q831, db-opentargets-26.09#q832, db-opentargets-26.09#q833]}
+  - {token: "effector:E3", cites: [db-opentargets-26.09#q846, db-opentargets-26.09#q847, db-opentargets-26.09#q848, pmid-32678081#q29, pmid-32678081#q30, pmid-37550455#q63, db-opentargets-26.09#q844, db-opentargets-26.09#q845]}
+  - {token: "animal:mouse_qtl", cites: [pmid-36173858#q1, pmid-36173858#q5]}
+  - {token: "animal:worm_rnai", cites: [pmid-36173858#q2, pmid-36173858#q3, pmid-36173858#q4]}
+variants:
+  - rsid: rs12830425
+    gene: ""
+    phenotype: FGD6 region, heart disease, ageing
+    trait_efo_id: EFO_0007796
+    effect_allele: G
+    effect_size: 0.0318
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    negatives: >-
+      The longer-life version, G, is tied by Timmers 2020 to more age-related macular degeneration, an eye disease,
+      and it raises platelet and white-cell counts. How these weigh against the longer life is not measured.
+    genotypes:
+      - genotype: T/T
+        state: neutral
+        conclusion: >-
+          You carry two copies of the usual version of this DNA region, as about 86 in 100 people of European
+          ancestry do. It is the reference the less common version is compared with. The region, on chromosome 12,
+          lies inside the gene FGD6, near other genes; which one matters is not known. The finding comes from people
+          of European ancestry; less is known elsewhere.
+      - genotype: G/T
+        state: protective
+        conclusion: >-
+          You carry one copy of a less common version of this DNA region (about 14 in 100 people of European ancestry
+          do). In very large European studies that combined healthy years, parents' lifespan and reaching old age,
+          this version went with slightly healthier ageing and longer-lived parents, and with less heart disease. It
+          has also been linked to more age-related macular degeneration, an eye disease. A large American study of
+          fathers did not see the lifespan effect, so treat it as likely but unsettled; the effect is small.
+      - genotype: G/G
+        state: protective
+        conclusion: >-
+          You carry two copies of a less common version of this DNA region (about 6 in 1,000 people of European
+          ancestry do). In very large European studies each copy went with slightly healthier ageing and
+          longer-lived parents, and with less heart disease; people with two copies were not studied on their own.
+          It has also been linked to more age-related macular degeneration, an eye disease. A large American study
+          of fathers did not see the lifespan effect, so treat it as likely but unsettled; the effect is small.
+studies:
+  - rsid: rs12830425
+    note: pmid-32678081
+    quote: q28
+    phenotype_class: MULTIVARIATE_AGEING
+    study_design: multivariate_healthspan_lifespan
+    population: European (UK Biobank, the LifeGen cohorts and Deelen 2019's cohorts; the three studies' summary data pooled)
+    ancestry: [EUR]
+    stat_significance: significant
+    p_value: "8E−09"
+    p_value_num: 8.0e-09
+    effect_allele: G
+    direction: protective
+    statistical_test: "Multivariate test of healthspan, parental lifespan and 90th-percentile longevity (Timmers 2020 Table 1, last column); no single effect size (D15); G on the longer-lived side in all three columns (P 3e-6, 2e-5, 3e-2); no input genome-wide alone (q6, q9); the authors ask for independent replication (q10)"
+    curator: claude-opus-5-5
+  - rsid: rs12830425
+    note: pmid-30642433
+    quote: q290
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 631178
+    sample_unit: lives
+    stat_significance: nominal
+    p_value: "1.7770192e-05"
+    p_value_num: 1.7770192e-05
+    effect_size: -0.03181993
+    effect_measure: beta
+    effect_unit: beta1 on parental lifespan per T allele, longer positive
+    effect_allele: T
+    direction: risk
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), SE 0.0074, direction -- in UK Biobank and LifeGen, info 0.996; G longer; the co-occurring lifespan study (D16), Timmers 2020's parental-lifespan input, not a replication"
+    curator: claude-opus-5-5
+  - rsid: rs12830425
+    note: pmid-30729179
+    quote: q100
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: suggestive
+    p_value: "2.83e-06"
+    p_value_num: 2.83e-06
+    effect_size: -0.0436
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per G allele (negative = later)
+    effect_allele: G
+    direction: protective
+    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), z −4.683, -log10 P 5.548, before genomic control; about 5.0e-6 after the 1.053 genomic control (pmid-30729179#q59, derived, D26.1); Timmers 2020's healthspan input, the same sample"
+    curator: claude-opus-5-5
+  - rsid: rs12830425
+    note: pmid-31413261
+    quote: q170
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.03143"
+    p_value_num: 0.03143
+    p_one_sided: 0.016
+    effect_size: -0.0774
+    effect_measure: beta
+    effect_unit: log odds of reaching the 90th percentile, per T allele
+    effect_allele: T
+    direction: risk
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008598), effective N 11,615; one-sided derived; Timmers 2020's longevity input, not a replication"
+    curator: claude-opus-5-5
+  - rsid: rs12830425
+    note: pmid-31413261
+    quote: q171
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.06847"
+    p_value_num: 0.06847
+    p_one_sided: 0.034
+    effect_size: -0.1056
+    effect_measure: beta
+    effect_unit: log odds of reaching the 99th percentile, per T allele
+    effect_allele: T
+    direction: risk
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), effective N 4,370; one-sided derived; its cases a subset of the 90th's, whose line is Timmers 2020's input, so not a replication"
+    curator: claude-opus-5-5
+  - rsid: rs12830425
+    note: pmid-31484785
+    quote: q116
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_linear
+    population: AncestryDNA customers' fathers (mostly European American)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.6009"
+    p_value_num: 0.6009
+    p_one_sided: 0.30
+    proxy_rsid: rs11107904
+    effect_size: 0.002551
+    effect_measure: beta
+    effect_unit: fathers' lifespan per C allele of rs11107904 (printed label A, read as C, derived; positive = longer)
+    effect_allele: C
+    direction: protective
+    statistical_test: "Supplemental Table 9, the AncestryDNA arm of the fathers' meta-analysis (SE 0.004877), raw P; the counted allele C as the UK Biobank arm's sign against Timmers' C (pmid-30642433#q291) gives it, as at rows 40 and 69; rs11107904 r² 0.88, D′ 0.95 to the lead (db-ensembl-116#q534), its minor C with G (q538); independent of Timmers 2020's inputs. UK Biobank arm +0.01755 (SE 0.00424), P 3e-5; heterogeneity P 0.03457 as printed (0.020 from the two arms, 0.033 after λ 1.182, q83; derived); one-sided power for the UK arm's β at this SE 0.975 (0.95 after λ; derived): D21's red flag, `replication_failed`"
+    curator: claude-opus-5-5

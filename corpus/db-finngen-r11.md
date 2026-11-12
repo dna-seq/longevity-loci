@@ -358,3 +358,10 @@ rsID filter, `rows-5155709c`, nor the position finds it, though T is 0.097 in gn
 Its tag rs11169081 (GRCh38 12:49,591,427, r² 0.83-0.88 to the lead, db-ensembl-116#q511, q512): alt A at 0.126, β
 −0.0030 (SE 0.011), P 0.79: A, which rides with the lead's T, on the fewer-deaths side, flat (one-sided 0.40,
 derived). For row 69.
+
+## Reading 2026-11-12, supplement
+
+> [q48] 12 95187042 T G rs12830425 FGD6 0.283625 0.547256 -0.014635 0.0136493 0.0795774 0.0790604 0.0796422
+
+FinnGen R11 DEATH (`rows-2aa4ffe6`), rs12830425 (GRCh38 12:95,187,042): alt G at 0.080, β −0.0146 (SE 0.0136), P
+0.28: G on the fewer-deaths side, not nominal (one-sided 0.14, derived). For row 70.

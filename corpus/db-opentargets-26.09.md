@@ -3069,3 +3069,79 @@ large-HDL lipids, lung function, seated height, ever smoked. No locus-to-gene wa
 A hypertension set (PheCode 401, GCST90693004) led by 12_49587939_T_C, rs7977389 (r² 0.82 to rs55686423,
 db-ensembl-116#q516), P 4.1e-11, beta −0.0103 for the set lead's C: C lowers hypertension, as Hoffmann's T raises
 systolic pressure (pmid-37550455#q61). For row 69.
+
+## Reading 2026-11-12, supplement
+
+> [q828] data.variant.credibleSets count 20
+
+> [q829] data.variant.credibleSets.rows[2] studyLocusId 3dd6e3793b507c7764279f1f687ad661 pValueMantissa 8 pValueExponent -9 beta null
+
+> [q830] data.variant.credibleSets.rows[2].study id GCST011100 traitFromSource Aging traits (healthspan, parental lifespan or longevity) (multivariate analysis) studyType gwas
+
+> [q831] data.variant.credibleSets.rows[2].locus.rows[0] posteriorProbability 0.0581411253362301
+
+> [q832] data.credibleSets count 1
+
+> [q833] data.credibleSets.rows[0].locus count 77
+
+> [q834] data.variant.credibleSets.rows[6] studyLocusId 5535a0a44a7e27172903ab2afac0c875 pValueMantissa 2.534301280975342 pValueExponent -10 beta -0.008063619220410271
+
+> [q835] data.variant.credibleSets.rows[6].study id GCST005195 traitFromSource Coronary artery disease studyType gwas
+
+> [q836] data.variant.credibleSets.rows[18] studyLocusId f960f14abcf37495761919be6ec864bb pValueMantissa 2.305000066757202 pValueExponent -12 beta -0.0914
+
+> [q837] data.variant.credibleSets.rows[18].study id GCST90018877 traitFromSource Myocardial infarction studyType gwas
+
+> [q838] data.variant.credibleSets.rows[10] studyLocusId 9a8a42e819268bf7a2f8495bd7d6af50 pValueMantissa 6.479000091552734 pValueExponent -13 beta -0.0877
+
+> [q839] data.variant.credibleSets.rows[10].study id GCST90018793 traitFromSource Angina pectoris studyType gwas
+
+> [q840] data.variant.credibleSets.rows[17] studyLocusId c16bb4f39f588ec579956439f2f1d171 pValueMantissa 3.7639999389648438 pValueExponent -16 beta 0.04367
+
+> [q841] data.variant.credibleSets.rows[17].study id GCST90476299 traitFromSource platelet count (mean, inv-norm transformed) studyType gwas
+
+> [q842] data.variant.credibleSets.rows[4] studyLocusId 507796de7faefc6d6fce36e1ca636ede pValueMantissa 7.645884990692139 pValueExponent -11 beta 0.010443520472435667
+
+> [q843] data.variant.credibleSets.rows[4].study id GCST90476454 traitFromSource white blood cell count (WBC, mean, inv-norm transformed) studyType gwas
+
+> [q844] data.variant.credibleSets.rows[14].study id fusion_exon_adipose_naive_ensg00000028203_19_12_95257154_95257181 traitFromSource ENSG00000028203.19_12_95257154_95257181 studyType eqtl
+
+> [q845] data.t1 id ENSG00000028203 approvedSymbol VEZT
+
+> [q846] data.cs.l2GPredictions.rows[0] score 0.320669561624527
+
+> [q847] data.cs.l2GPredictions.rows[0].target approvedSymbol NR2C1 id ENSG00000120798
+
+> [q848] data.cs.colocalisation count 36
+
+> [q849] data.v1.alleleFrequencies[2] populationName nfe_adj alleleFrequency 0.07380160668569578
+
+> [q850] data.v2.alleleFrequencies[2] populationName nfe_adj alleleFrequency 0.07213870892281404
+
+> [q851] data.v3.alleleFrequencies[2] populationName nfe_adj alleleFrequency 0.0734982332155477
+
+> [q852] data.v4.alleleFrequencies[2] populationName nfe_adj alleleFrequency 0.07353762903273241
+
+> [q853] data.v5.alleleFrequencies[2] populationName nfe_adj alleleFrequency 0.07139513108614232
+
+> [q854] data.v6.alleleFrequencies[2] populationName nfe_adj alleleFrequency 0.07555575158786168
+
+> [q855] data.v7.alleleFrequencies[2] populationName nfe_adj alleleFrequency 0.07350517890772128
+
+> [q856] data.v8.alleleFrequencies[2] populationName nfe_adj alleleFrequency 0.07355233361762198
+
+> [q857] data.cs.colocalisation.rows[2] h4 0.9521904516823316 clpp 0.017664786398943345 colocalisationMethod COLOC_PIP_ECAVIAR rightStudyType gwas
+
+> [q858] data.cs.colocalisation.rows[2].otherStudyLocus.study id GCST005194 traitFromSource Coronary artery disease studyType gwas
+
+Open Targets 26.09, 12_95187042_T_G (rs12830425): 20 credible sets hold it (q828). Of the eight longevity studies,
+one: Timmers 2020's multivariate GCST011100, a PICS set of 77 variants that the lead itself leads at a posterior of
+0.058 (q829-q833). Its locus-to-gene: NR2C1 0.32 (q846, q847), VEZT 0.26, FGD6 0.20, NDUFA12 0.06; 36
+colocalisations, every one with another GWAS (q848): coronary disease (e.g. GCST005194, H4 0.95, q857, q858),
+platelet counts, angina, pulse pressure; no QTL colocalisation. The other sets, led by other variants with the lead
+at a posterior of 0.006 to 0.06, phased by the set leads' minor alleles (about 0.07, q849-q856) riding with G
+(db-ensembl-116#q527-q536): G lowers coronary artery disease (GCST005195, rs4762479 T β −0.0081, P 2.5e-10; q834,
+q835), myocardial infarction (rs11107896 A β −0.091, P 2.3e-12; q836, q837) and angina (rs141526980 TGA β −0.088, P
+6.5e-13; q838, q839), and raises platelet count (rs10859847 G β +0.044, P 3.8e-16; q840, q841) and white-cell count
+(rs11107900 T β +0.010, P 7.6e-11; q842, q843). Two adipose sets for ENSG00000028203, VEZT (q844, q845), are not
+colocalised with the Timmers set. For row 70.
