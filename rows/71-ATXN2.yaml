@@ -199,7 +199,7 @@ studies:
     sample_unit: individuals
     stat_significance: not_significant
     p_value: "0.128003268004696"
-    p_value_num: 0.128
+    p_value_num: 0.128003268004696
     effect_size: -0.0074
     effect_measure: beta
     effect_unit: log hazard of the end of healthspan per C allele at the proxy (negative = later)

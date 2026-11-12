@@ -245,7 +245,7 @@ studies:
     sample_size: 300447
     sample_unit: individuals
     stat_significance: nominal
-    p_value: "0.075"
+    p_value: "0.07499"
     p_value_num: 0.07499
     p_one_sided: 0.0375
     effect_size: -0.0103

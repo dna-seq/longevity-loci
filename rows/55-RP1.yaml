@@ -166,7 +166,7 @@ studies:
     population: British (UK Biobank)
     ancestry: [EUR]
     stat_significance: not_significant
-    p_value: "0.20"
+    p_value: "0.198"
     p_value_num: 0.198
     p_one_sided: 0.099
     effect_size: -0.00647

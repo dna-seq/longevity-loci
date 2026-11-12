@@ -165,7 +165,7 @@ studies:
     sample_size: 300447
     sample_unit: individuals
     stat_significance: nominal
-    p_value: "0.0017"
+    p_value: "0.001738"
     p_value_num: 0.001738
     effect_size: -0.0195
     effect_measure: beta
