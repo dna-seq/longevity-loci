@@ -94,6 +94,9 @@ def test_variant_cells(tree) -> None:
         row, v = by_rsid[x["rsid"]]
         g = next(g for g in v.genotypes if "/".join(sorted(g.genotype.split("/"))) == x["genotype"])
         assert x["state"] == g.state.value and x["conclusion"] == " ".join(g.conclusion.split())
+        # 0.8 reads direction per genotype row: it agrees with the state, unless the variant is contested or unknown
+        held = v.direction.value if v.direction in (Direction.CONTESTED, Direction.UNKNOWN) else g.state.value
+        assert x["direction"] == held
         assert x["trait_efo_id"] == VARIANT_TRAIT
         assert x["priority"] == PRIORITY[row.axes.tier.value]
         assert x["category"] == row.axes.mechanism.value.value

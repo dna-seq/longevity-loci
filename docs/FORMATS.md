@@ -134,7 +134,10 @@ stat_significance, effect_size, effect_measure, effect_allele, flags, requires_c
 spec's defaults (curator, method on a variant).
 
 - **variants.csv**, one row per (lead rsid, genotype), the genotype's alleles sorted as 0.8 requires; the
-  genotype's state and conclusion, the variant's own cells, `trait_efo_id` OBA_VT0005372 on every variant (the
+  genotype's state and conclusion; `direction` the genotype's state, as the reference example writes it and as 0.8
+  reads it (per row: a row's direction stands in for its state), so the variant's own direction, which is the
+  effect allele's, is carried by `effect_allele` and never lands on a risk or neutral genotype's row (a contested or
+  unknown variant keeps its own on every row); the variant's other cells, `trait_efo_id` OBA_VT0005372 on every variant (the
   reference example's rule; the row's own trait is reported), `priority` high for tier A, medium for B, low for C
   and D, `category` the mechanism axis, `actionability` its label, `requires_callable` and `acmg_sf` false.
   `flags` is `tier:X`, then the pleiotropy, context and actionability tokens, then the row's flags, `;`-joined.
@@ -173,7 +176,8 @@ just-dna-compiler's triage by the liaison, not losses hidden here:
   for a known P.
 - **A study's direction (S148; the compiler's RM435, an `effect_direction` column, increase or decrease, due in a
   minor release).** Until it ships, 0.8 has no study-level direction beside `effect_allele`. Where a study has an
-  effect size, its sign and allele carry the direction. Where it has allele, direction and P but no effect size
+  effect size, the direction stands in its sign, read with `effect_allele` and `effect_unit` (a hazard's sign
+  convention, "positive = earlier", is said only in `effect_unit`). Where it has allele, direction and P but no effect size
   (D13, D15, D20), `conclusion` says "<allele> on the longer-lived side" (or the shorter-lived), `effect_size` empty.
 
 The export also names, without changing either value, a study whose `p_value` and `p_value_num` disagree by more

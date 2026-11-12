@@ -80,14 +80,16 @@ class Gap(StrEnum):
     VARIANT_TRAIT = "variant's trait_efo_id not written: the variant carries OBA_VT0005372 (the reference's rule)"
     VARIANT_NOMINAL = "variant stat_significance nominal written significant (0.8 has no nominal; the maintainers' RM434)"
     GENOTYPE_SORTED = "genotype's alleles written sorted, as 0.8 requires (the row holds them unsorted)"
-    UNHARMONISED ="variant direction risk: effect_allele not harmonised to the lifespan-increasing allele (written)"
+    VARIANT_DIRECTION = "variant direction (the effect allele's) written per genotype as the row's state, as 0.8 reads it"
+    UNHARMONISED = "variant direction risk: effect_allele not harmonised to the lifespan-increasing allele (written)"
     AXIS_AGE = "axes.age_of_action: no 0.8 column"
     AXIS_OUTCOME = "axes.outcome: no 0.8 column (0.8 derives the outcome strip from phenotype_class)"
     COMPUTED_TOKEN = "computed token withheld from flags"
     STUDY_NOMINAL = "study nominal written significant, said not genome-wide in statistical_test (0.8 has no nominal; RM434)"
     ONE_SIDED = "study p_one_sided: no column, written into statistical_test"
     DIRECTION_IN_CONCLUSION = "study direction (no effect size) written into conclusion: no direction column"
-    DIRECTION_BY_EFFECT = "study direction not written: no column; its effect_size and effect_allele carry the sign"
+    DIRECTION_BY_EFFECT = ("study direction not written: no column; it stands in effect_size's sign, read with "
+                           "effect_allele and effect_unit (a hazard's sign convention is said only in effect_unit)")
     DIRECTION_UNWRITTEN = "study direction not written: no column, and no effect size or allele to carry it"
     TRAIT_UNMAPPED = "study trait_efo_id empty: the reference example names no trait for its phenotype_class"
     DERIVED_EFFECT = "study effect derived, not printed: effect_unit says so in the lead's sentence"
@@ -159,7 +161,7 @@ def _variant_rows(row: Row, v: Variant, flags: str, out: Export) -> list[dict[st
         out.gap(Gap.VARIANT_NOMINAL)
         sig = StatSignificance.SIGNIFICANT
     shared = {
-        "rsid": v.rsid, "direction": v.direction, "gene": v.gene or None, "trait_efo_id": VARIANT_TRAIT,
+        "rsid": v.rsid, "gene": v.gene or None, "trait_efo_id": VARIANT_TRAIT,
         "negatives": v.negatives, "priority": PRIORITY[row.axes.tier.value], "phenotype": v.phenotype,
         "category": row.axes.mechanism.value, "stat_significance": sig, "effect_size": v.effect_size,
         "effect_measure": v.effect_measure, "effect_allele": v.effect_allele, "flags": flags,
@@ -170,7 +172,15 @@ def _variant_rows(row: Row, v: Variant, flags: str, out: Export) -> list[dict[st
         genotype = "/".join(sorted(g.genotype.split("/")))  # 0.8 reads an unphased genotype's alleles sorted
         if genotype != g.genotype:
             out.gap(Gap.GENOTYPE_SORTED, f"{v.rsid} {g.genotype}")
-        values = {**shared, "genotype": genotype, "state": g.state, "conclusion": " ".join(g.conclusion.split())}
+        # 0.8 reads `direction` per genotype row (VariantRow.effective_direction; trimmed_state projects it back to
+        # `state`), and the reference example writes it equal to the state. The variant's own direction (the effect
+        # allele's, harmonised, D17.4) would contradict a risk or neutral genotype's row, so the row's state goes
+        # there; a contested or unknown variant keeps its own.
+        direction = v.direction if v.direction in (Direction.CONTESTED, Direction.UNKNOWN) else g.state
+        if direction.value != v.direction.value:
+            out.gap(Gap.VARIANT_DIRECTION, f"{v.direction.value} to {g.state.value}")
+        values = {**shared, "genotype": genotype, "state": g.state, "direction": direction,
+                  "conclusion": " ".join(g.conclusion.split())}
         out_rows.append({k: cell(x) for k, x in values.items()})
     return out_rows
 
