@@ -279,3 +279,16 @@ like for like, Park's whole-cohort T +0.0147 (pmid-40021682#q54) under APOE's Pa
 pmid-40021682#q32) expects +0.12, power 0.14; the women's +0.0369, the generous bound, expects +0.30, power 0.42,
 heterogeneity P 0.13; MUC5B's factor 6.7 gives less. 80 % power needs a factor of 14 on the women's effect. No
 calibration raises a flag, so D25.3's mean factor is not needed: no red flag. For row 61.
+
+## Reading 2026-11-12, supplement
+
+> [q37] 2	37257437	G	A	rs577106756	PRKD3	0.54652	0.262394	-0.0660254	0.109498	0.00127138	0.00107412	0.00129609
+
+FinnGen R11's any-death endpoint at rs577106756 (GRCh38 2:37,257,437; `finngen_R11_DEATH.tsv.gz`, the row filter
+`^2\t37257437\t`): A log OR −0.066 (SE 0.109), P 0.55, A 0.13 % (Park's own look-up, pmid-40021682#q15). A is about
+as common here as in UK Biobank. D21 (derived), like for like: Park's whole-cohort A +0.042 (SE 0.0095,
+pmid-40021682#q61) under APOE's Park-to-FinnGen factor 8.1 (q4 against pmid-40021682#q32) expects +0.34, power 0.93,
+heterogeneity P 0.002 (both standard errors; 0.0002 on FinnGen's alone); under MUC5B's 6.7 (q5 against
+pmid-40021682#q31), +0.28, power 0.83, heterogeneity P 0.006. Both flag. D25.3's mean factor is unknown for this
+look-up (D25.12: with PRKD3 and CELF2 left out, MUC5B alone is not a mean), so the flag is unknown and sets no token
+(D26.3). The men's +0.088 would flag at any of these factors. For row 13.
