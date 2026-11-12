@@ -535,6 +535,28 @@ From the curator's rows 60 onward; the lead settled them under the person's stan
    seed. The row says the footnote's contradiction and how it was resolved, as the format 0.8 reference does for
    Timmers 2019's two effect alleles. The curator's default; direction unknown with every genotype neutral,
    rejected: the paper's own figure is a direct reading, and a footnote outvoted three times is not an unknown.
+3. **Where a study tests the lead, a proxy line in the same study does not stand in for it.** 62's lead has its own
+   LifeGen line, flat; rs74904474 (r² about 0.5 in TSI, outside the paper's r² ≥ 0.6 list, imputation info 0.86,
+   its frequency varying twentyfold across cohorts) reads G's way at one-sided 0.003. A proxy carries the lead's
+   signal only diluted by its r², so a proxy stronger than the lead in the same sample measures something else, or
+   noise; it is named in prose, never counted toward D25.1's independent p < 0.05. A proxy stands in only where the
+   study has no line at the lead (D13). 62 stays D. A line read from a deposit and not yet quoted is named, never
+   used (D12's spirit), until a note quotes it.
+4. **An overfit source's discovery leaves exceptional survival `untested` when it is the only test at the lead**
+   (D26.7's 44, D28.12): the overfit line tests nothing. 60's cell becomes `untested`; a proxy line inside the
+   discovery's own pooled sample (LifeGen's rs113450114, which holds Pilling's UK Biobank people) is named, not
+   counted (D26.10).
+5. **A printed P is read as printed, with no correction of the curator's own** (D17.3, D28.1). 63's co-occurring
+   study, Zenin's parents' death at P 0.0952 two-sided (one-sided 0.048), stands, though a genomic-control
+   correction Zenin does not apply would push it past 0.05 and the rounded β and SE give 0.046; the row says both
+   and that B over C rests on this one cell. A centenarian look-up whose paper prints only allele frequencies
+   (Garagnani 2013 at rs7903146, r² 1.0) enters as a study with the crude odds ratio derived from them, saying so
+   (D25.13's 31): it sets the exceptional-survival cell, while its overlap with Deelen's Italian arm is unknown and
+   it lifts no tier.
+6. **A heterogeneity P counts both estimates' errors.** D21's test compares two estimates, each with its own
+   error; 63's figures, which left the discovery's out, are recomputed. No flag moves.
+   (Items 3 to 6 were settled and handed to the curator on 2026-11-12 in 1fc91f6, whose DECISIONS.md text a failed
+   pull dropped; restored here verbatim from the handout.)
 7. **Consistent nominal support does not make a tier B anchor.** 65 HSD17B12's lead is Wright 2019's current-age
    hit, genome-wide only before genomic control (raw 3.6e-9, corrected 4.8e-7, read corrected by D26.1); FinnGen
    death, Park, Zenin's healthspan, Timmers and Deelen each lean A's way at one-sided p < 0.05, across three sample
