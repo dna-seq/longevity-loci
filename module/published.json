@@ -9,6 +9,19 @@
     "artifact_digest": "sha256:8f2bddbf8f70cf75f159eb624c49c30c8ec0e6e4ad4ccbceb337db29e4b5e68b",
     "content_signature": "sha256:1e2f3ce68c18db352482333350396d2092d11d5b0a2e489e493530dbb8499dfe",
     "registry_url": "https://module-polygon.just-dna.life",
-    "published_at": "2026-11-12T15:44:27+00:00"
+    "published_at": "2026-11-12T15:44:27+00:00",
+    "deleted_at": "2026-11-12T23:20:00+00:00"
+  },
+  {
+    "target": "test",
+    "canonical_id": "test-longevity-loci/longevitymap@2.0.0",
+    "namespace": "test-longevity-loci",
+    "name": "longevitymap",
+    "version": "2.0.0",
+    "owner": "longevity-loci",
+    "artifact_digest": "sha256:831b8b5c54d10bdfe9bba4e68439d0ba665cbdc356978663f8977048206cd80e",
+    "content_signature": "sha256:ccba186ccdd3fdc6577b2971168ecd6eced121a616c799fba876736229f7b17a",
+    "registry_url": "https://module-polygon.just-dna.life",
+    "published_at": "2026-11-12T23:20:20Z"
   }
 ]
