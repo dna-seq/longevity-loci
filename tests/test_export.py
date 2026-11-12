@@ -217,3 +217,15 @@ def test_cli_writes_and_refuses(tmp_path: Path) -> None:
     assert bad.exit_code == 1 and not (tmp_path / "bad").exists()
     missing = runner.invoke(app, ["export", str(tmp_path / "x"), "--rows", str(tmp_path / "none"), "--corpus", str(corpus)])
     assert missing.exit_code == 2
+
+
+def test_nominal_variant_leaves_significance_empty(real) -> None:
+    """The lead's rule: a variant row has no statistical_test to say "not genome-wide", so a nominal variant's
+    stat_significance is left empty rather than written significant."""
+    rows, result = real
+    nominal = {v.rsid for r in rows for v in r.variants if v.stat_significance is StatSignificance.NOMINAL}
+    if not nominal:
+        pytest.skip("no row holds a nominal variant today")
+    written = {x["stat_significance"] for x in result.variants if x["rsid"] in nominal}
+    assert written == {""}
+    assert gap_total(result, Gap.VARIANT_NOMINAL) == len(nominal)

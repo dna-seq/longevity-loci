@@ -78,7 +78,7 @@ class Gap(StrEnum):
 
     NO_GENOTYPES = "variant has no genotype states: no variants.csv row"
     VARIANT_TRAIT = "variant's trait_efo_id not written: the variant carries OBA_VT0005372 (the reference's rule)"
-    VARIANT_NOMINAL = "variant stat_significance nominal written significant (0.8 has no nominal; the maintainers' RM434)"
+    VARIANT_NOMINAL = "variant stat_significance nominal left empty (0.8 has no nominal, RM434, and a variant row has no statistical_test to say it is not genome-wide)"
     GENOTYPE_SORTED = "genotype's alleles written sorted, as 0.8 requires (the row holds them unsorted)"
     VARIANT_DIRECTION = "variant direction (the effect allele's) written per genotype as the row's state, as 0.8 reads it"
     UNHARMONISED = "variant direction risk: effect_allele not harmonised to the lifespan-increasing allele (written)"
@@ -159,7 +159,7 @@ def _variant_rows(row: Row, v: Variant, flags: str, out: Export) -> list[dict[st
     sig = v.stat_significance
     if sig is StatSignificance.NOMINAL:
         out.gap(Gap.VARIANT_NOMINAL)
-        sig = StatSignificance.SIGNIFICANT
+        sig = None
     shared = {
         "rsid": v.rsid, "gene": v.gene or None, "trait_efo_id": VARIANT_TRAIT,
         "negatives": v.negatives, "priority": PRIORITY[row.axes.tier.value], "phenotype": v.phenotype,

@@ -170,10 +170,11 @@ just-dna-compiler's triage by the liaison, not losses hidden here:
 - **`nominal` (S147; the compiler's RM434).** 0.8's `stat_significance` stops at significant, suggestive,
   not_significant and unknown, and the format's maintainers read none of them as a threshold: `significant` is the
   defensible reading for a replication that passed its own test, where `not_significant` would tell a reader the
-  look-up failed. So a nominal study (and the one nominal variant) is written `significant`, its `p_value` and
+  look-up failed. So a nominal study is written `significant`, its `p_value` and
   `p_value_num` exactly as held, and its `statistical_test` says "nominal replication look-up (p < 0.05 in the
   discovery's direction), not genome-wide; D11/D13" (after the percentile, where there is one). Never `unknown`
-  for a known P.
+  for a known P. A nominal variant (8-IL6R today) leaves `stat_significance` empty: a variant row has no
+  `statistical_test` to say it is not genome-wide.
 - **A study's direction (S148; the compiler's RM435, an `effect_direction` column, increase or decrease, due in a
   minor release).** Until it ships, 0.8 has no study-level direction beside `effect_allele`. Where a study has an
   effect size, the direction stands in its sign, read with `effect_allele` and `effect_unit` (a hazard's sign
