@@ -30,9 +30,9 @@ verdict_reason: >-
   Zenin's parental-lifespan look-up G longer, flat (P 0.65). Exceptional survival in Europeans is untested: Zeng's own
   Supplementary Table 3 has NA for the EU consortium and NECS, Deelen's Supplementary Data 1 leaves the line blank,
   and Deelen's 90th and 99th percentile files hold no line at the lead or its four LifeGen tags; their lines within
-  15 kb are at SNPs outside the lead's 168 European partners at r² ≥ 0.5. The other ground, put to the lead: D26.14
-  (row 48's), the authors' own QC rejecting the call, which by D26.14's words is enough; row 48 also had a control
-  frequency far below the reference, which here depends on the source. The tier and tokens are the same on either. Mechanism general ageing (D25.7): no trait other than longevity is recorded at the lead (the GWAS
+  15 kb are at SNPs outside the lead's 168 European partners at r² ≥ 0.5. Liu 2021's QC failure is a second line, not
+  the ground: its reference-frequency leg depends on the source, unlike row 48's (D26.14 not applied; the lead's
+  call, 2026-11-12). Mechanism general ageing (D25.7): no trait other than longevity is recorded at the lead (the GWAS
   Catalog holds only Zeng's line), and nothing is known to run through the pseudogene. No pleiotropy. Context
   `ancestry_specific:eas`: the claim is Han Chinese, tested in Chinese regions only. Open Targets 26.09 has no record
   for the variant, and Zeng's study holds only IL6's credible set, so C4 and E4 with no gene. Age of action unknown.
