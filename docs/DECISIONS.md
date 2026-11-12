@@ -527,3 +527,11 @@ From the curator's rows 60 onward; the lead settled them under the person's stan
    factor, a healthspan-anchored row reaches A only through a printed scoring-class replication with no flag on a
    one-scale test. 35's B (D25.11) agrees. The curator's default (b); (a), calibrating from the co-occurring
    lifespan study's effect and letting the release line replicate, rejected on D27.9 and D12.
+2. **64 BET1L: where a paper's footnote names one allele and its own text, supplement and figure the other, the
+   three agreeing win.** Table 1's footnote gives HR 0.92 per C, but the main text's APOE hazard ratios are the
+   reciprocals of Supplementary Data 2's printed-allele lines (per reference allele), the proxy rs2280543's minor
+   T (C's partner, r² 0.98) is the shorter-lived throughout the text, and Supplementary Fig. 3's genotype effects
+   at the proxy (C/T +0.05, T/T +0.21 log HR) settle it: T, the common allele, is the longer-lived, against the
+   seed. The row says the footnote's contradiction and how it was resolved, as the format 0.8 reference does for
+   Timmers 2019's two effect alleles. The curator's default; direction unknown with every genotype neutral,
+   rejected: the paper's own figure is a direct reading, and a footnote outvoted three times is not an unknown.
