@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- D29.7: consistent nominal look-ups across independent samples do not stand in for a genome-wide anchor (65 HSD17B12 is C).
 - D29.3–6 from the adversarial read of rows 60 to 64: a proxy does not stand in where the lead is tested; an overfit discovery leaves exceptional survival untested; a printed P is read as printed; a heterogeneity P counts both errors.
 - just-dna 0.8 adopted: format, compiler and enricher `>=0.8.4,<0.9` (0.8.4 in the lock), with the module-creator plugin's pin moved to `v0.48.7`, whose server runs the same trio; polars and duckdb stay below 2. Suite unchanged.
 - The curator's stop and the dashboard's cap move from 80 % to 95 % of the 7-day window, on the person's word (2026-11-12; 90 % for an hour first).

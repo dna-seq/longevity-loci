@@ -535,3 +535,10 @@ From the curator's rows 60 onward; the lead settled them under the person's stan
    seed. The row says the footnote's contradiction and how it was resolved, as the format 0.8 reference does for
    Timmers 2019's two effect alleles. The curator's default; direction unknown with every genotype neutral,
    rejected: the paper's own figure is a direct reading, and a footnote outvoted three times is not an unknown.
+7. **Consistent nominal support does not make a tier B anchor.** 65 HSD17B12's lead is Wright 2019's current-age
+   hit, genome-wide only before genomic control (raw 3.6e-9, corrected 4.8e-7, read corrected by D26.1); FinnGen
+   death, Park, Zenin's healthspan, Timmers and Deelen each lean A's way at one-sided p < 0.05, across three sample
+   families. §4.1's B starts from a genome-wide result and R-TIER-4 holds it; pooling the look-ups into a genome-wide
+   P of our own would be a meta-analysis no source prints (D28.1's spirit), so it is not done. 65 is C, with the
+   look-ups in prose and in its studies; if a published meta-analysis reaches 5e-8 at the locus, it is B on that.
+   The curator's default.
