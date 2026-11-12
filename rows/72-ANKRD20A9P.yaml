@@ -16,38 +16,49 @@ verdict_reason: >-
   dbSNP (G = 0)". The reference frequency depends on the source: ALFA has samples with no G and gives Europeans 0.098,
   as Liu says, where 1000 Genomes gives 0.20, and East Asians 0.095 (CHS 0.10, CHB 0.068), close to Zeng's controls
   (0.092 south, 0.079 north), unlike row 48's IL6 SNP. A site whose frequency differs by source fits a failed call.
-  The variant is tri-allelic, which Liu offers for its absence from Deelen 2019. Timmers 2019 tested
+  The variant is tri-allelic, which Liu offers for its absence from Deelen 2019. Timmers 2019 names ANKRD20A9P
+  among the published longevity SNPs for which it "found evidence of no association (at effect sizes originally
+  published)", the sentence §4.1's "explicitly contradicted" points to (pmid-30642433#q76). It tested
   Zeng's locus at rs113946246, whose T rides with C (T 0.82 in LifeGen, C 0.80 in 1000 Genomes Europeans). It carried
   Zeng's effect to the parental scale by the APOE calibration (T +0.0735, SE 0.0134) and found +0.0008 (SE 0.0055),
   one-sided P 0.44. Derived under D25.3: at APOE's factor, power 1.00 and heterogeneity P 4.9e-7; at the loci's mean
   factor 0.4175, expected 0.176 (SE 0.052), power 1.00 and heterogeneity P 7.3e-4. That is a red flag under both
   (D21), so `replication_failed`, and it holds down to about 0.2 of the APOE-calibrated effect (power 0.85,
-  heterogeneity P 0.023). The other tags in LifeGen are as flat (rs2440021, rs1937748, rs1822375, P 0.91 to 0.98); a
-  LifeGen-only line at the lead itself (no UK Biobank, info 0.69) puts C +0.0059 (SE 0.020), P 0.77. Outside Timmers:
+  heterogeneity P 0.023). Counting the proxy is right although Timmers has a line at the lead (D29.3): rs113946246 is
+  Timmers' own Figure 2 replication of Zeng's locus, the test the paper chose. The other tags in LifeGen are as flat (rs2440021, rs1937748, rs1822375, P 0.91 to 0.98); a
+  LifeGen-only line at the lead itself (no UK Biobank, info 0.69) puts C +0.0059 (SE 0.020), P 0.77, and flags on
+  its own: heterogeneity P 0.0049 against the APOE-calibrated +0.0735 (power about 0.98) and 0.0021 at the mean
+  factor, holding down to about 0.7 of the APOE effect there (derived). Outside Timmers:
   FinnGen R11's death endpoint has G on the fewer-deaths side, flat (P 0.76; a database line, D29.1); Park 2025's own
   survival has C with fewer deaths, flat (P 0.30, one-sided 0.15; columns swapped, as at APOE; UK Biobank's people);
   Zenin's healthspan G earlier, flat (P 0.38 raw, 0.39 after genomic control; one-sided 0.19 raw on C's side), and
-  Zenin's parental-lifespan look-up G longer, flat (P 0.65). Exceptional survival in Europeans is untested: Zeng's own
+  Zenin's parental-lifespan look-up G longer, flat (P 0.65). Exceptional survival is 0: the discovery is valid and
+  contradicted, and a D row's discovery gives no `+` (D28.10, as 48; D29.4's untested is for an overfit discovery).
+  In Europeans it is untested: Zeng's own
   Supplementary Table 3 has NA for the EU consortium and NECS, Deelen's Supplementary Data 1 leaves the line blank,
   and Deelen's 90th and 99th percentile files hold no line at the lead or its four LifeGen tags; their lines within
   15 kb are at SNPs outside the lead's 168 European partners at r² ≥ 0.5. Liu 2021's QC failure is a second line, not
   the ground: its reference-frequency leg depends on the source, unlike row 48's (D26.14 not applied; the lead's
-  call, 2026-11-12). Mechanism general ageing (D25.7): no trait other than longevity is recorded at the lead (the GWAS
-  Catalog holds only Zeng's line), and nothing is known to run through the pseudogene. No pleiotropy. Context
+  call, 2026-11-12). Mechanism general ageing (D25.7): the GWAS Catalog holds only Zeng's line at the lead, and
+  nothing is known to run through the pseudogene. A pleural mesothelioma GWAS (Hafeez 2025, 387 cases and 362
+  controls) lists rs2440012 at P 4.6e-8 and the proxy rs113946246 at 2.5e-8, with three more SNPs of the block near
+  5e-8 and no effect sizes: a further association at the locus. A five-SNP block at 5e-8 in 749 people may be an
+  artefact, but nothing shows it; no pleiotropy token rests on it, and no D26.14 ground. No pleiotropy. Context
   `ancestry_specific:eas`: the claim is Han Chinese, tested in Chinese regions only. Open Targets 26.09 has no record
   for the variant, and Zeng's study holds only IL6's credible set, so C4 and E4 with no gene. Age of action unknown.
-  Genotypes neutral (D25.2). The rsID literature search found Zeng 2016, Liu 2021 and nothing else.
+  Genotypes neutral (D25.2). The rsID literature search finds Zeng 2016, Liu 2021 and Hafeez 2025's mesothelioma
+  GWAS (missed when the row was written; the lead's read).
 axes:
-  tier: {value: D, cites: [pmid-26912274#q2, pmid-26912274#q3, pmid-26912274#q6, pmid-26912274#q13, pmid-26912274#q14, pmid-33657282#q15, pmid-33657282#q29, pmid-33657282#q30, db-ensembl-116#q551, db-ensembl-116#q552, db-ensembl-116#q553, db-ensembl-116#q540, db-ensembl-116#q542, db-ensembl-116#q543, db-ensembl-116#q544, db-ensembl-116#q545, db-ensembl-116#q546, db-ensembl-116#q547, db-ensembl-116#q548, pmid-30642433#q293, pmid-30642433#q294, pmid-30642433#q295, pmid-30642433#q296, pmid-30642433#q91, pmid-30642433#q92, db-finngen-r11#q49, pmid-40021682#q71, pmid-40021682#q32, pmid-30729179#q101, pmid-30729179#q102, pmid-30729179#q59, pmid-31413261#q172, pmid-30642433#q297, pmid-30642433#q298]}
-  mechanism: {value: general_ageing, cites: [db-gwascatalog-2026.10.29#q474, db-ensembl-116#q549, db-ensembl-116#q550]}
+  tier: {value: D, cites: [pmid-30642433#q76, pmid-26912274#q2, pmid-26912274#q3, pmid-26912274#q6, pmid-26912274#q13, pmid-26912274#q14, pmid-33657282#q15, pmid-33657282#q29, pmid-33657282#q30, db-ensembl-116#q551, db-ensembl-116#q552, db-ensembl-116#q553, db-ensembl-116#q540, db-ensembl-116#q542, db-ensembl-116#q543, db-ensembl-116#q544, db-ensembl-116#q545, db-ensembl-116#q546, db-ensembl-116#q547, db-ensembl-116#q548, pmid-30642433#q293, pmid-30642433#q294, pmid-30642433#q295, pmid-30642433#q296, pmid-41472358#q1, pmid-41472358#q3, pmid-30642433#q91, pmid-30642433#q92, db-finngen-r11#q49, pmid-40021682#q71, pmid-40021682#q32, pmid-30729179#q101, pmid-30729179#q102, pmid-30729179#q59, pmid-31413261#q172, pmid-30642433#q297, pmid-30642433#q298]}
+  mechanism: {value: general_ageing, cites: [db-gwascatalog-2026.10.29#q474, pmid-41472358#q2, pmid-41472358#q3, db-ensembl-116#q549, db-ensembl-116#q550]}
   pleiotropy: {values: [], cites: [db-gwascatalog-2026.10.29#q474]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: untested,
+  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
             cites: [pmid-30729179#q101, pmid-30642433#q293, pmid-30642433#q294, db-finngen-r11#q49, pmid-40021682#q71, pmid-30729179#q102, pmid-26912274#q14, pmid-31413261#q172, pmid-30642433#q297, pmid-30642433#q298]}
   actionability: {label: descriptive, cites: [db-gwascatalog-2026.10.29#q474]}
   context: {values: ["ancestry_specific:eas"], cites: [pmid-26912274#q3, pmid-26912274#q13]}
 flags:
-  - {token: replication_failed, cites: [pmid-30642433#q293, pmid-30642433#q294, pmid-30642433#q91, pmid-30642433#q92, db-ensembl-116#q547]}
+  - {token: replication_failed, cites: [pmid-30642433#q76, pmid-30642433#q293, pmid-30642433#q294, pmid-30642433#q91, pmid-30642433#q92, db-ensembl-116#q547]}
   - {token: "causal:C4", cites: [db-opentargets-26.09#q871, db-opentargets-26.09#q872, db-opentargets-26.09#q873]}
   - {token: "effector:E4", cites: [db-opentargets-26.09#q871, db-opentargets-26.09#q872, db-opentargets-26.09#q873]}
 variants:
