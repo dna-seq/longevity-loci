@@ -30,7 +30,7 @@ export (the lead starts it today, to 0.8's studies/variants shape per `docs/FORM
 - **RM1's export in, 2026-11-12 (b0b6089):** `loci export` at 4e49fd0's tree, enriched online (112 resolution
   rows, all resolved, no mismatch). Strict validate: 11 errors, nine Zenin 2019 P pairs (the curator's), 93 LDLR's
   proxy allele A at rs6511720 (G/T; the reverse strand's, the curator's), 47 AP5Z1's T/TC refused at rs371933919's
-  third locus TCCC>T (asked upstream through the liaison). Best-effort compile green, warnings the same. Not
+  third locus TCCC>T: by design (the liaison, 639792035), a row names its locus by authoring chrom, start, ref (7:4787883, T), the export's to write. Best-effort compile green, warnings the same. Not
   rehearsed; polygon only, once strict passes.
 - Plugin caches moved to the data volume (`remember_setting JUST_DNA_PIPELINES_CACHE_DIR`, user config, not the
   repo): `$HOME` is the small volume and Ensembl's lane is about 15 GB. Ensembl lane present 2026-11-12: ensembl-variation-2026_07_13-vep116.0, 14.5 GB (du shows 7.6 GB on BeeGFS).
