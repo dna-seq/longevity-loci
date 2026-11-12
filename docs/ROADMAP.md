@@ -5,7 +5,7 @@ owner. A done item leaves this file; `docs/CHANGELOG.md` says what landed.
 
 ## RM1 — the export of curated rows to the module's tables
 
-**State:** built and merged 2026-11-12 (`uv run loci export`, docs/FORMATS.md "Export"); the module seat's first validate pending, and the nine Zenin p_value/p_value_num pairs the strict validate refuses go to the curator. **Owner:** lead. Before: it waited for the plugin to release for 0.8 (issue #6);
+**State:** building: built and merged 2026-11-12 (`uv run loci export`, docs/FORMATS.md "Export"); the module seat's first validate pending, and the nine Zenin p_value/p_value_num pairs the strict validate refuses go to the curator, with 93 LDLR's proxy allele and 47 AP5Z1's authored locus (D29.8); done once strict validate passes. **Owner:** lead. Before: it waited for the plugin to release for 0.8 (issue #6);
 built after it. Looked 2026-11-12: the registry's test instance serves format 0.8.4 (registry 0.29.1), half of the
 condition; the plugin's main (0.48.6) still pins `just-dna-format<0.8`, so its tools would meet a 409 there; production
 did not answer (HTTP 502). Kept so on 2026-11-10, against building for 0.7.1 first: the person, "module b - wait for 0.8 on
