@@ -14,7 +14,7 @@ export (the lead starts it today, to 0.8's studies/variants shape per `docs/FORM
   contract compatible. `validate_module` strict on the scaffold: invalid, the one error "studies.csv is present but
   has no study rows. Grounding evidence is mandatory." (as under 0.7.1), one warning `module_not_closed`.
 - Plugin caches moved to the data volume (`remember_setting JUST_DNA_PIPELINES_CACHE_DIR`, user config, not the
-  repo): \$HOME is the small volume and Ensembl's lane is about 15 GB. Ensembl lane pull started 2026-11-12.
+  repo): `$HOME` is the small volume and Ensembl's lane is about 15 GB. Ensembl lane pull started 2026-11-12.
 
 - **Version in progress: 2.0.0**, scaffolded in `module/` with the plugin (v0.48.5, format 0.7.1, compiler 0.7.2):
   `module_spec.yaml`, header-only `variants.csv`, `studies.csv`, `licensing.csv`. No rows, no loci yet.
