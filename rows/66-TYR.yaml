@@ -1,0 +1,182 @@
+# The seed list's locus 66, TYR (11q14.3). Curated 2026-11-12. Lead rs1126809 (Zenin 2019's healthspan SNP, Table 2),
+# the seed's only rsID here: TYR's R402Q missense change, G/A at GRCh38 11:89,284,793 (GRCh37 89,017,961), A the
+# derived allele (0.28 in non-Finnish Europeans, 0.16 in Finns, almost absent in East Asians and Africans). In
+# Zenin's, Timmers 2019's, Deelen 2019's, Park 2025's and FinnGen R11's summary statistics at the lead itself, and in
+# Rosoff 2023's mvAge tables. Wright 2019's Supplemental Table 8 holds three fathers' SNPs within 0.25 Mb, weak tags
+# (CEU r² 0.25 to 0.35), named, not scored.
+locus_id: 66
+locus_name: TYR
+verdict: kept
+verdict_reason: >-
+  Tier B, the seed's, kept (D29.1, as row 63): genome-wide for healthspan with a co-occurring lifespan study (D16),
+  and no scoring-class replication outside UK Biobank (D22.2), so not A. The criteria as read: (1) genome-wide for
+  healthspan in 300,447 British UK Biobank participants: A, TYR's Gln402 allele, brings the end of healthspan
+  earlier (Zenin 2019, β +0.040 per A on the log hazard, P 2.35e-13 after genomic control, the paper's call, D17.3).
+  Zenin's replication in 96,313 other UK Biobank participants, unrelated to them, leans the same way and does not
+  pass (β +0.017, P 0.076, under the paper's 0.05/12 at replication power 0.89); the replicated effect is under half
+  the discovery's (heterogeneity P about 0.039 counting both errors, derived, D29.6), a powered shortfall that would
+  cap the row at B by 71's rule, where it already sits; and healthspan replicating healthspan in one biobank counts
+  nothing toward A anyway (D25.11). By component A raises cancer (P 2.6e-16) and, more weakly, the other diseases
+  together (P 5.6e-4; stroke 0.011, diabetes 0.028) and own death (P 0.0012); the paper reads it as acting on both.
+  (2) The co-occurring lifespan studies (D16), all in UK Biobank's people: Zenin's parents'-death meta-analysis (A
+  +0.006, P 0.021, G one-sided 0.010) and own death (above), and Park 2025's own survival in 393,833 participants (G
+  fewer deaths, P 0.0047, one-sided 0.0024; the deposit's allele columns swapped, as at APOE). Timmers 2019's million
+  parental lives lean G's way and do not pass (P 0.15, one-sided 0.076), UK Biobank on G's side and LifeGen on A's.
+  (3) Outside UK Biobank nothing replicates and two looks lean the other way: FinnGen R11's any-death endpoint is flat
+  (A log OR −0.0026, P 0.79; a database line, which never lifts a row, D29.1), and Deelen 2019's 90th and 99th
+  percentiles put A on the longer-lived side (log OR +0.032, P 0.15; +0.010, P 0.78). (4) The red flag, scaled from
+  Zenin's own healthspan effect (D27.9), is unknown: no source prints a healthspan-to-lifespan calibration (D28.1, as
+  at 63), so neither the FinnGen nor the Deelen lean is read as a failed replication, and nothing contradicts at
+  nominal level. Rosoff 2023's mvAge (G, P 6.9e-9; not novel, its healthspan input's) and Timmers 2020's multivariate
+  scan (P 8e-13) pool these same samples; mvAge's Q test (P 2.1e-6) says the SNP reaches its inputs through a pathway
+  of its own, and its frailty input agrees with healthspan (A frailer, P 2.8e-4) while its longevity input is
+  Deelen's lean. Outcome: healthspan + (Zenin), lifespan + (UK Biobank's own and parents' deaths and Park; Timmers
+  and FinnGen do not pass), exceptional survival 0 (Deelen leans against, not past nominal). Mechanism skin and sun,
+  with mech:cancer: A is one of the best-known pigmentation and skin-cancer alleles (G lowers melanoma, P 5e-87, basal
+  and squamous cell carcinoma and actinic keratosis; A raises a low tan response, P 2e-172), and Zenin's healthspan
+  signal is mostly cancer, though not cancer alone; the route of the lifespan effect is not shown (D25.7). Broad: G
+  also lowers dry macular degeneration (P 7e-12; the paper names macular degeneration) and age-related hearing
+  impairment (A OR 1.05, P 2e-21). A trade-off by D18.1's letter: G, the longer-life allele, raises vitiligo (OR 1.50
+  per G, P 1e-43) and, in one multi-trait analysis, primary open-angle glaucoma (P 7e-9). So descriptive (D18.2,
+  §4.2: trade-off loci get no actionability label), against D25.11's "skin_sun rows are modifiable", which was set at
+  17 and 35, neither a trade-off: put to the lead, default descriptive. Causal C1: coding with PIP at least 0.2
+  (§4.2), the lead first in Zenin's 11-variant SuSiE-inf healthspan set at PIP 0.208, at the edge; the multivariate
+  PICS sets (Timmers 2020, 0.28; mvAge, 0.14) are named, not counted (D25.5). Effector E1, TYR: the lead is TYR's
+  missense change (R402Q, PolyPhen probably damaging; §4.2's coding clause), and locus-to-gene gives TYR 0.83, the
+  only gene listed. The set's two cis QTL colocalisations are one NOX4 transcript-usage QTL in artery (aorta H4 0.98;
+  tibial 0.78, under the cut), which D24 would make a rival by count for a non-coding lead; the coding clause is read
+  as deciding, put to the lead with E1 as default. The protection is the absence of the risk allele: A, the minor
+  allele, raises the hazard, and G, which most people carry, is the reference. Evidence is European; A is 0.13 in
+  admixed Americans, 0.05 in South Asians and almost absent in East Asians and Africans: eur_only_evidence. Age of
+  action unknown.
+axes:
+  tier: {value: B, cites: [pmid-30729179#q92, pmid-30729179#q93, pmid-30729179#q94, pmid-30729179#q95, pmid-30729179#q96, pmid-30729179#q12, pmid-30729179#q13, pmid-30729179#q29, pmid-40021682#q67, pmid-40021682#q32, pmid-30642433#q285, db-finngen-r11#q45, pmid-31413261#q166, pmid-31413261#q167, pmid-37550455#q55, pmid-37550455#q56, pmid-37550455#q2, pmid-37550455#q4, db-gwascatalog-2026.10.29#q457, db-gwascatalog-2026.10.29#q460, db-ensembl-116#q490, db-ensembl-116#q491, db-ensembl-116#q492]}
+  mechanism: {value: skin_sun, cites: [pmid-30729179#q94, pmid-30729179#q96, db-gwascatalog-2026.10.29#q430, db-gwascatalog-2026.10.29#q431, db-gwascatalog-2026.10.29#q432, db-gwascatalog-2026.10.29#q433, db-gwascatalog-2026.10.29#q434, db-gwascatalog-2026.10.29#q435, db-gwascatalog-2026.10.29#q442, db-gwascatalog-2026.10.29#q443, db-gwascatalog-2026.10.29#q444]}
+  pleiotropy: {values: ["mech:cancer", broad, tradeoff], cites: [pmid-30729179#q94, db-gwascatalog-2026.10.29#q436, db-gwascatalog-2026.10.29#q437, db-gwascatalog-2026.10.29#q438, db-gwascatalog-2026.10.29#q439, db-gwascatalog-2026.10.29#q440, db-gwascatalog-2026.10.29#q441, db-gwascatalog-2026.10.29#q445, db-gwascatalog-2026.10.29#q446, db-gwascatalog-2026.10.29#q447, db-gwascatalog-2026.10.29#q448, db-gwascatalog-2026.10.29#q449, db-gwascatalog-2026.10.29#q450, db-gwascatalog-2026.10.29#q451, db-gwascatalog-2026.10.29#q452, db-gwascatalog-2026.10.29#q453, db-gwascatalog-2026.10.29#q454, db-gwascatalog-2026.10.29#q455, db-gwascatalog-2026.10.29#q456, pmid-30729179#q97]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
+            cites: [pmid-30729179#q92, pmid-30729179#q94, pmid-40021682#q67, pmid-30642433#q285, db-finngen-r11#q45, pmid-31413261#q166, pmid-31413261#q167]}
+  actionability: {label: descriptive, cites: [db-gwascatalog-2026.10.29#q445, db-gwascatalog-2026.10.29#q446, db-gwascatalog-2026.10.29#q447, db-gwascatalog-2026.10.29#q448, db-gwascatalog-2026.10.29#q449, db-gwascatalog-2026.10.29#q450]}
+  context: {values: [eur_only_evidence], cites: [pmid-30729179#q92, db-finngen-r11#q45, db-ensembl-116#q482, db-ensembl-116#q483, db-ensembl-116#q485, db-ensembl-116#q486, db-ensembl-116#q487, db-ensembl-116#q488]}
+flags:
+  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-30729179#q92, db-ensembl-116#q480, db-ensembl-116#q482]}
+  - {token: "causal:C1", cites: [db-opentargets-26.09#q802, db-opentargets-26.09#q803, db-opentargets-26.09#q804, db-opentargets-26.09#q805, db-opentargets-26.09#q806, db-opentargets-26.09#q807, db-ensembl-116#q489, db-opentargets-26.09#q808, db-opentargets-26.09#q809, db-opentargets-26.09#q810, db-opentargets-26.09#q811]}
+  - {token: "effector:E1", cites: [db-ensembl-116#q489, db-opentargets-26.09#q812, db-opentargets-26.09#q813, db-opentargets-26.09#q814, db-opentargets-26.09#q815, db-opentargets-26.09#q816]}
+variants:
+  - rsid: rs1126809
+    gene: TYR
+    phenotype: TYR R402Q, healthspan (mostly cancer)
+    trait_efo_id: EFO_0009762
+    effect_allele: A
+    effect_size: 0.0398
+    effect_measure: beta
+    stat_significance: significant
+    direction: risk
+    negatives: >-
+      The longer-life version, G, goes with less skin cancer but with more vitiligo, a loss of skin colour in patches,
+      and in one analysis with slightly more glaucoma.
+    genotypes:
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA letter, the one most people of European ancestry
+          have (about 52 in 100). It is the reference the other combinations are compared with. The letter sits in
+          the TYR gene, which makes the pigment of skin, hair and eyes. This version goes with a slightly higher
+          chance of vitiligo, patchy loss of skin colour. The finding comes mostly from people of European ancestry;
+          less is known elsewhere.
+      - genotype: A/G
+        state: risk
+        conclusion: >-
+          You carry one copy of a less common version of this DNA letter in the TYR pigment gene (about 40 in 100
+          people of European ancestry do). It goes with paler, sun-sensitive skin and more skin cancer, including
+          melanoma. In a very large British study it went with a slightly earlier first major disease, mostly
+          cancer, but other studies of long life do not clearly confirm an effect on lifespan. Protecting your skin
+          from the sun and having changing moles or skin spots checked are sensible. The effect is small; it is a
+          tendency, not a verdict.
+      - genotype: A/A
+        state: risk
+        conclusion: >-
+          You carry two copies of a less common version of this DNA letter in the TYR pigment gene (about 8 in 100
+          people of European ancestry do). It goes with paler, sun-sensitive skin and more skin cancer, including
+          melanoma. In a very large British study each copy went with a slightly earlier first major disease, mostly
+          cancer, but other studies of long life do not clearly confirm an effect on lifespan. Protecting your skin
+          from the sun and having changing moles or skin spots checked are sensible. The effect is small; it is a
+          tendency, not a verdict.
+studies:
+  - rsid: rs1126809
+    note: pmid-30729179
+    quote: q92
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "2.35e-13"
+    p_value_num: 2.35e-13
+    effect_size: 0.04
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per A allele (positive = earlier)
+    effect_allele: A
+    direction: risk
+    statistical_test: "Cox-Gompertz Martingale-residual GWAS of the first of the age-related diseases or death (Table 2), P after genomic control (the paper's own call, D17.3); raw P 5.49e-14 (q93; summary statistics -log10 P 13.26, q95); by component cancer P 2.6e-16, all but cancer 5.6e-4, own death 0.0012 (q94)"
+    curator: claude-opus-5-5
+  - rsid: rs1126809
+    note: pmid-30729179
+    quote: q92
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: UK Biobank participants outside the discovery set (81,099 other European, and African, South Asian, Chinese and Caribbean), unrelated to it
+    ancestry: [EUR, AFR, SAS, EAS]
+    sample_size: 96313
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "7.59e-02"
+    p_value_num: 0.0759
+    p_one_sided: 0.038
+    effect_size: 0.017
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per A allele (positive = earlier)
+    effect_allele: A
+    direction: risk
+    statistical_test: "Replication (Table 2, βrep and prep), meta-analysis of the five ancestry groups, short of the paper's P < 0.05/12 (q29) at replication power 0.8933; the first group, read as the Europeans, β +0.020, P 0.042, the others null (q93); heterogeneity against the discovery P about 0.039 (derived, D29.6); one-sided 0.038 (derived); independent individuals of the same biobank (q12, q13)"
+    curator: claude-opus-5-5
+  - rsid: rs1126809
+    note: pmid-30729179
+    quote: q94
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank, genomically British; the participants' parents)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.0206"
+    p_value_num: 0.0206
+    p_one_sided: 0.0103
+    effect_size: 0.006
+    effect_measure: beta
+    effect_unit: log hazard of a parent's death per A allele in the offspring (positive = earlier)
+    effect_allele: A
+    direction: risk
+    statistical_test: "Supplementary Data 7, parents' death (meta-analysis of fathers, P 0.18, and mothers, P 0.048), Cox model in the discovery sample, read as printed (D29.5); own death A +0.054, P 0.0012; D16's co-occurring lifespan study, the discovery's own people"
+    curator: claude-opus-5-5
+  - rsid: rs1126809
+    note: pmid-30642433
+    quote: q285
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 637314
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.15174973"
+    p_value_num: 0.15174973
+    p_one_sided: 0.076
+    effect_size: -0.0060776
+    effect_measure: beta
+    effect_unit: log hazard protection per A allele in self (negative = shorter life)
+    effect_allele: A
+    direction: risk
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), direction -+ (UK Biobank on G's side, LifeGen on A's), info 0.989; two-sided P printed, one-sided 0.076 (derived); the UK Biobank part overlaps Zenin's sample"
+    curator: claude-opus-5-5

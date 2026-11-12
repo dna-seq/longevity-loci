@@ -1565,3 +1565,79 @@ the lead. For row 65.
 > [q429] _embedded.associations[0] association_id 55479432 risk_frequency NR pvalue_description  pvalue_mantissa 2 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.0075-0.0155] beta 0.01152 unit increase p_value 2e-08 accession_id GCST009448 pubmed_id 31484785 first_author Wright KM ci_lower 0.0075 ci_upper 0.0155
 
 `assoc-rs4755202`: the seed's second rsID, the same study's one line, A. For row 65.
+
+## Reading 2026-11-12, supplement
+
+> [q430] _embedded.associations[14] association_id 228298365 risk_frequency 0.7756 pvalue_description pvalue_mantissa 5 pvalue_exponent -87 multi_snp_haplotype false snp_interaction false range [0.15-0.18] beta 0.1683 unit decrease p_value 5e-87 accession_id GCST90479794 pubmed_id 39024449 first_author Verma A ci_lower 0.15 ci_upper 0.18
+
+> [q431] _embedded.associations[14].reported_trait[0] Melanomas of skin, dx or hx (PheCode 172.1)
+
+> [q432] _embedded.associations[14].snp_effect_allele[0] rs1126809-G
+
+> [q433] _embedded.associations[12] association_id 228300022 risk_frequency 0.7328 pvalue_description pvalue_mantissa 2 pvalue_exponent -57 multi_snp_haplotype false snp_interaction false range [0.15-0.18] beta 0.1623 unit decrease p_value 2e-57 accession_id GCST90479795 pubmed_id 39024449 first_author Verma A ci_lower 0.15 ci_upper 0.18
+
+> [q434] _embedded.associations[12].reported_trait[0] Basal cell carcinoma (PheCode 172.21)
+
+> [q435] _embedded.associations[12].snp_effect_allele[0] rs1126809-G
+
+> [q436] _embedded.associations[10] association_id 228301017 risk_frequency 0.7751 pvalue_description pvalue_mantissa 1 pvalue_exponent -41 multi_snp_haplotype false snp_interaction false range [0.14-0.18] beta 0.164 unit decrease p_value 1e-41 accession_id GCST90479796 pubmed_id 39024449 first_author Verma A ci_lower 0.14 ci_upper 0.18
+
+> [q437] _embedded.associations[10].reported_trait[0] Squamous cell carcinoma (PheCode 172.22)
+
+> [q438] _embedded.associations[10].snp_effect_allele[0] rs1126809-G
+
+> [q439] _embedded.associations[7] association_id 228317167 risk_frequency 0.7771 pvalue_description pvalue_mantissa 5 pvalue_exponent -100 multi_snp_haplotype false snp_interaction false range [0.14-0.16] beta 0.1505 unit decrease p_value 5e-100 accession_id GCST90480468 pubmed_id 39024449 first_author Verma A ci_lower 0.14 ci_upper 0.16
+
+> [q440] _embedded.associations[7].reported_trait[0] Actinic keratosis (PheCode 702.1)
+
+> [q441] _embedded.associations[7].snp_effect_allele[0] rs1126809-G
+
+> [q442] _embedded.associations[83] association_id 30827831 risk_frequency NR pvalue_description pvalue_mantissa 2 pvalue_exponent -172 multi_snp_haplotype false snp_interaction false range [0.16-0.35] beta 0.257 unit increase p_value 2e-172 accession_id GCST005897 pubmed_id 29739929 first_author Visconti A ci_lower 0.16 ci_upper 0.35
+
+> [q443] _embedded.associations[83].reported_trait[0] Low tan response
+
+> [q444] _embedded.associations[83].snp_effect_allele[0] rs1126809-A
+
+> [q445] _embedded.associations[84] association_id 24294450 risk_frequency 0.7311 pvalue_description pvalue_mantissa 1 pvalue_exponent -43 multi_snp_haplotype false snp_interaction false range [1.41-1.59] or_per_copy_num 1.497006 or_value 1.497006 beta - p_value 1e-43 accession_id GCST004785 pubmed_id 27723757 first_author Jin Y ci_lower 1.41 ci_upper 1.59
+
+> [q446] _embedded.associations[84].reported_trait[0] Vitiligo
+
+> [q447] _embedded.associations[84].snp_effect_allele[0] rs1126809-G
+
+> [q448] _embedded.associations[50] association_id 119452324 risk_frequency NR pvalue_description pvalue_mantissa 7 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range [0.036-0.073] beta 0.0542 unit decrease p_value 7.000000000000001e-09 accession_id GCST90310211 pubmed_id 37386247 first_author Han X ci_lower 0.036 ci_upper 0.073
+
+> [q449] _embedded.associations[50].reported_trait[0] Primary open angle glaucoma (multi-trait analysis)
+
+> [q450] _embedded.associations[50].snp_effect_allele[0] rs1126809-A
+
+> [q451] _embedded.associations[23] association_id 228271214 risk_frequency 0.7169 pvalue_description pvalue_mantissa 7 pvalue_exponent -12 multi_snp_haplotype false snp_interaction false range [0.045-0.085] beta 0.06478 unit decrease p_value 7e-12 accession_id GCST90475851 pubmed_id 39024449 first_author Verma A ci_lower 0.045 ci_upper 0.085
+
+> [q452] _embedded.associations[23].reported_trait[0] Macular degeneration, dry (PheCode 362.21)
+
+> [q453] _embedded.associations[23].snp_effect_allele[0] rs1126809-G
+
+> [q454] _embedded.associations[64] association_id 88930877 risk_frequency 29.21 pvalue_description pvalue_mantissa 2 pvalue_exponent -21 multi_snp_haplotype false snp_interaction false range [NR] or_per_copy_num 1.05 or_value 1.05 beta - p_value 2e-21 accession_id GCST012442 pubmed_id 34108613 first_author Ivarsdottir EV
+
+> [q455] _embedded.associations[64].reported_trait[0] Age-related hearing impairment
+
+> [q456] _embedded.associations[64].snp_effect_allele[0] rs1126809-A
+
+> [q457] _embedded.associations[46] association_id 131476313 risk_frequency NR pvalue_description pvalue_mantissa 7 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range [0.0044-0.0089] beta 0.006619422 unit increase p_value 7.000000000000001e-09 accession_id GCST90321079 pubmed_id 37550455 first_author Rosoff DB ci_lower 0.0044 ci_upper 0.0089
+
+> [q458] _embedded.associations[46].reported_trait[0] Aging
+
+> [q459] _embedded.associations[46].snp_effect_allele[0] rs1126809-G
+
+> [q460] _embedded.associations[67] association_id 62271305 risk_frequency 0.7133 pvalue_description pvalue_mantissa 8 pvalue_exponent -13 multi_snp_haplotype false snp_interaction false range - beta - p_value 8e-13 accession_id GCST011100 pubmed_id 32678081 first_author Timmers PRHJ
+
+> [q461] _embedded.associations[67].reported_trait[0] Aging traits (healthspan, parental lifespan or longevity) (multivariate analysis)
+
+> [q462] _embedded.associations[67].snp_effect_allele[0] rs1126809-G
+
+`assoc-rs1126809` (90 associations), read for row 66. Skin, from Verma 2024's PheCode GWAS (GCST904…, the
+lines say "decrease" per G): G lowers melanoma of skin (β 0.168, P 5e-87, q430), basal cell carcinoma (P 2e-57, q433),
+squamous cell carcinoma (P 1e-41, q436) and actinic keratosis (P 5e-100, q439); A raises a low tan response (P
+2e-172, q442). Against G: G raises vitiligo (OR 1.50 per G, P 1e-43, Jin 2016, q445), and A lowers primary open-angle
+glaucoma in a multi-trait analysis (β 0.054 "decrease", P 7e-9, q448), so G raises it. With G: G lowers dry macular
+degeneration (P 7e-12, q451), and A raises age-related hearing impairment (OR 1.05, P 2e-21, q454). Ageing: Rosoff's
+mvAge, G "increase" 0.0066, P 7e-9 (q457); Timmers 2020's multivariate scan, G, P 8e-13, no estimate (q460).

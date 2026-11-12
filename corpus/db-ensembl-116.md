@@ -1788,3 +1788,42 @@ rs4755202 at 11:43,598,388 (GRCh38), G/A/C/T with G ancestral; A is the allele e
 `ld-rs11186068-rs74904474-TSI.json`: rs74904474 to the lead in 1000 Genomes Tuscans, r² 0.50, D′ 1; outside
 Beccacece's r² ≥ 0.6 proxy list and Ensembl's CEU window at 0.6. At D′ 1 an r² that high requires the two minor
 alleles on one haplotype, so rs74904474's A rides on the lead's G (derived). For row 62, prose.
+
+## Reading 2026-11-12, supplement
+
+> [q480] mappings[0] start 89284793 coord_system chromosome strand 1 end 89284793 location 11:89284793-89284793 allele_string G/A ancestral_allele G seq_region_name 11 assembly_name GRCh38
+
+> [q481] mappings[0] coord_system chromosome end 89017961 strand 1 allele_string G/A assembly_name GRCh37 ancestral_allele G seq_region_name 11 start 89017961 location 11:89017961-89017961
+
+`var-rs1126809`: G/A at GRCh38 11:89,284,793 (GRCh37 89,017,961), G ancestral. For row 66.
+
+> [q482] populations[37] frequency 0.2791 allele A population gnomADg:nfe allele_count 18915
+
+> [q483] populations[32] allele_count 1675 population gnomADg:fin allele A frequency 0.1587
+
+> [q484] populations[93] allele A population 1000GENOMES:phase_3:EUR frequency 0.252485089463221 allele_count 254
+
+> [q485] populations[91] frequency 0.999007936507937 allele G population 1000GENOMES:phase_3:EAS allele_count 1007
+
+> [q486] populations[74] allele A population 1000GENOMES:phase_3:AFR frequency 0.00907715582450832 allele_count 12
+
+> [q487] populations[121] frequency 0.0541922290388548 allele A population 1000GENOMES:phase_3:SAS allele_count 53
+
+> [q488] populations[77] allele_count 87 allele A population 1000GENOMES:phase_3:AMR frequency 0.12536023054755
+
+A, the derived allele: 0.28 in gnomAD's non-Finnish Europeans, 0.16 in Finns, 0.25 in 1000 Genomes Europeans, 0.13
+in admixed Americans, 0.05 in South Asians, 0.01 in Africans; G 0.999 in East Asians. For row 66.
+
+> [q489] [0].transcript_consequences[0] variant_allele A polyphen_prediction probably_damaging protein_end 402 biotype protein_coding cds_start 1205 cdna_start 1284 cdna_end 1284 impact MODERATE gene_symbol TYR polyphen_score 0.994 transcript_id ENST00000263321 hgnc_id HGNC:12442 strand 1 sift_score 0.01 gene_id ENSG00000077498 codons cGa/cAa cds_end 1205 sift_prediction deleterious amino_acids R/Q protein_start 402 gene_symbol_source HGNC
+
+`vep-rs1126809`: A is a missense change in TYR (ENST00000263321), codon cGa/cAa, R402Q, PolyPhen probably damaging,
+SIFT deleterious. For row 66.
+
+> [q490] [0] variation1 rs1126809 variation2 rs574028 r2 0.346719 d_prime 0.953414 population_name 1000GENOMES:phase_3:CEU
+
+> [q491] [0] population_name 1000GENOMES:phase_3:CEU d_prime 0.903105 variation2 rs4121744 r2 0.275540 variation1 rs1126809
+
+> [q492] [0] population_name 1000GENOMES:phase_3:CEU r2 0.245226 variation1 rs1126809 variation2 rs10830204 d_prime 0.896152
+
+The three AncestryDNA fathers' SNPs in Wright 2019's Supplemental Table 8 within 0.25 Mb of the lead (rs574028, 84
+kb; rs4121744, 143 kb; rs10830204, 230 kb) tag it weakly in CEU: r² 0.35, 0.28, 0.25. Named, not scored. For row 66.

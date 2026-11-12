@@ -2985,3 +2985,46 @@ past the same 0.9 cut as q794 to q796. For row 65.
 age set (row 23, beta 0.01207) and one splicing set of ENSG00000246250 (row 3). Every blood-pressure, hypertension and
 sleep-duration set holding it is led by another variant, so their betas are not A's and give it no direction. For
 row 65.
+
+## Reading 2026-11-12, supplement
+
+> [q802] data.credibleSets count 3
+
+> [q803] data.credibleSets.rows[2] studyLocusId 99cf48a1a1b921fafabd9d843831b11f finemappingMethod SuSiE-inf
+
+> [q804] data.credibleSets.rows[2].study id GCST007406
+
+> [q805] data.credibleSets.rows[2].locus count 11
+
+> [q806] data.credibleSets.rows[2].locus.rows[0] posteriorProbability 0.2083564277865569
+
+> [q807] data.credibleSets.rows[2].locus.rows[0].variant id 11_89284793_G_A
+
+`credibleSets-longevity8-11_89284793_G_A` (the eight lifespan-class studies, filtered by membership): three sets hold
+rs1126809. Zenin 2019's healthspan (GCST007406), SuSiE-inf, 11 variants, the lead first at PIP 0.208. For row 66.
+
+> [q808] data.credibleSets.rows[0] studyLocusId 1c9ebe5a0d72b917e8a3d0f4c95d090f finemappingMethod PICS
+
+> [q809] data.credibleSets.rows[0].study id GCST011100
+
+> [q810] data.credibleSets.rows[1] studyLocusId 5d7c205424ea4b06ca00e6c17b9bfdc1 finemappingMethod PICS
+
+> [q811] data.credibleSets.rows[1].study id GCST90321079
+
+The two others are PICS sets of the multivariate scans, Timmers 2020 (GCST011100, 58 variants, the lead 0.280) and
+Rosoff's mvAge (GCST90321079, 80 variants, 0.143): named, not counted (D25.5, D27.6). For row 66.
+
+> [q812] data.credibleSet.l2GPredictions.rows[0] score 0.8260523676872253
+
+> [q813] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol TYR
+
+`set-99cf48a1` (Zenin's set): locus-to-gene TYR 0.826, the only gene listed. For row 66.
+
+> [q814] data.credibleSet.colocalisation count 2
+
+> [q815] data.credibleSet.colocalisation.rows[1] rightStudyType tuqtl h4 0.9815760469987316 clpp 0.046221027746727116
+
+> [q816] data.credibleSet.colocalisation.rows[1].otherStudyLocus.study.target approvedSymbol NOX4
+
+`set-99cf48a1-qtlcoloc`: two cis QTL colocalisations, both one NOX4 transcript-usage QTL in GTEx artery (aorta H4
+0.98; tibial 0.78, under the cut). TYR has none. For row 66.
