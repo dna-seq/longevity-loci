@@ -128,4 +128,9 @@ None yet.
 
 ## Outbound
 
-None yet.
+- **S130, S131** (2026-11-12, for the lead, from RM1's export to 0.8.4): format wishes. S130, `stat_significance`
+  has no level for a replication at p < 0.05 (D11), or the description should name `p_value_num` as the field to
+  read; S131, a study-level direction beside `effect_allele` for a study printing no effect size (D13). Meanwhile
+  the export writes `not_significant` with the P kept and "nominal replication look-up (p < 0.05)" in
+  `statistical_test`, and the direction in `conclusion`. Appended uncommitted; triage told in `agent-chat >
+  upstream`. Open.
