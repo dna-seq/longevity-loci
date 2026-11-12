@@ -15,28 +15,31 @@ verdict_reason: >-
   minor A raised the chance of a long-lived parent by 0.0133 per copy (SE 0.0024, P 4.0e-8, INFO 0.87; the scan
   kept variants above INFO 0.4 and frequency 1 %), about 5.8 times APOE ε4's 0.0023 on the same phenotype. The
   authors doubt it themselves: it "may be anomalous as it is not in a “peak” of associations expected of robust
-  results", read off their ±250 kb plot; no other variant of the table's top 1,000 lies within 1.17 Mb (derived),
-  and its best 1000 Genomes proxy reaches only r² 0.49. A is out on size and on replication: 1,339 cases, and no independent
+  results", read off their ±250 kb plot (q19); the D rests on that doubt. Its best 1000 Genomes proxy reaches only
+  r² 0.49. A is out on size and on replication: 1,339 cases, and no independent
   study. Deelen 2019, the one independent extreme-survival look, has no line for the lead or its proxy. LifeGen's
   parental lifespan meta leans the same way (A beta1 +0.0155, P 0.18, one-sided 0.089), but its signs read "+-":
-  the lean is UK Biobank's arm, Pilling's own people, and LifeGen's independent cohorts lean against, their size
-  unprinted. FinnGen R11's death endpoint, independent, leans against: A log OR +0.044 for death (SE 0.030,
-  P 0.14), A only 1.4 % in Finns. Pilling's APOE line (factor about 46 to LifeGen's scale) makes both look-ups red
-  flags; the flag holds at any factor of 3.22 or more for LifeGen and 5.74 or more for FinnGen, but the mean factor
+  the lean is UK Biobank's arm, Pilling's own people, and LifeGen's independent cohorts lean against at the lead,
+  their size unprinted. At the best proxy rs113450114 (D′ 1, so its A rides on the lead's A) both arms lean A's
+  way, A +0.031, P 0.041 (one-sided 0.020, "++"; pmid-30642433#q281), but UK Biobank is again Pilling's people and
+  the meta tests the lead itself, so the proxy line is named, not counted (D26.10, D29.3). FinnGen R11's death endpoint, independent, leans against: A log OR +0.044 for death (SE 0.030,
+  P 0.14), A 1.6 % in FinnGen's own count (gnomAD's Finns 1.4 %). Pilling's APOE line (factor about 46 to LifeGen's scale) makes both look-ups red
+  flags; the flag holds at any factor of 3.22 or more for LifeGen and 5.69 or more for FinnGen, but the mean factor
   (D25.3) is undefined for this phenotype, so whether they are red flags is unknown and the row carries no
   replication_failed (D26.3); the tier rests on the authors' own doubt, not on a flag. Zenin 2019's healthspan leans the same way, P 0.47. Lifespan 0,
-  healthspan 0, exceptional survival 0: on a D row the discovery gives no `+` (D28.10). Age of action UNKNOWN: the top-1 % contrast is about how
+  healthspan 0: on a D row the discovery gives no `+` (D28.10). Exceptional survival is untested (D29.4): the
+  overfit discovery is the only test at the lead. Age of action UNKNOWN: the top-1 % contrast is about how
   extreme the survival is, not when the allele acts. Open Targets holds no record of the variant (no credible set,
   no locus-to-gene), and an overfit source sets no level anyway (D28.12): causal C4 and effector E4, no gene named; the GWAS Catalog maps it to LINC02907 and records
   no other trait, so mechanism general ageing and no pleiotropy. The evidence is European; A is 0.052 in South
   Asians and 0.0014 in East Asians, untested there, so eur_only_evidence. Descriptive. Pilling's lean is the minor A's (a
   presence), but a D row carries no protection token.
 axes:
-  tier: {value: D, cites: [pmid-27015805#q1, pmid-27015805#q2, pmid-27015805#q3, pmid-27015805#q4, pmid-27015805#q5, pmid-27015805#q9, pmid-27015805#q11, pmid-27015805#q12, pmid-27015805#q17, pmid-27015805#q19, pmid-27015805#q21, pmid-27015805#q22, pmid-27015805#q23, db-gwascatalog-2026.10.29#q317, db-gwascatalog-2026.10.29#q383, db-gwascatalog-2026.10.29#q384, pmid-30642433#q90, pmid-30642433#q274, db-finngen-r11#q6, db-finngen-r11#q35, db-ensembl-116#q425]}
+  tier: {value: D, cites: [pmid-27015805#q1, pmid-27015805#q2, pmid-27015805#q3, pmid-27015805#q4, pmid-27015805#q5, pmid-27015805#q9, pmid-27015805#q11, pmid-27015805#q12, pmid-27015805#q17, pmid-27015805#q19, pmid-27015805#q21, pmid-27015805#q22, pmid-27015805#q23, db-gwascatalog-2026.10.29#q317, db-gwascatalog-2026.10.29#q383, db-gwascatalog-2026.10.29#q384, pmid-30642433#q90, pmid-30642433#q274, db-finngen-r11#q6, db-finngen-r11#q35, db-ensembl-116#q425, pmid-30642433#q281]}
   mechanism: {value: general_ageing, cites: [db-gwascatalog-2026.10.29#q383, db-gwascatalog-2026.10.29#q384, db-opentargets-26.09#q747, db-opentargets-26.09#q748]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
+  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: untested,
             cites: [pmid-27015805#q22, pmid-30642433#q274, db-finngen-r11#q35, pmid-30729179#q83]}
   actionability: {label: descriptive, cites: [pmid-27015805#q20]}
   context: {values: [eur_only_evidence], cites: [pmid-27015805#q3, db-gwascatalog-2026.10.29#q317, db-ensembl-116#q424, db-ensembl-116#q428]}
@@ -64,7 +67,7 @@ variants:
       - genotype: A/G
         state: neutral
         conclusion: >-
-          You carry one copy of a less common version of this DNA position (about 7 in 100 people of European
+          You carry one copy of a less common version of this DNA position (about 8 in 100 people of European
           ancestry do). One large British study reported it as more common in people with a parent who lived to 95
           or more, but the study's own authors thought the signal might be an artefact, no independent study has
           confirmed it, and a Finnish study leaned the other way. It says nothing about your own lifespan.
