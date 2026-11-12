@@ -1408,3 +1408,11 @@ rs13279568 at GRCh38 8:54,566,168, G/A: Open Targets' key 8_54566168_G_A. For ro
 > [q385] . var_class indel ambiguity null minor_allele CTCT most_severe_consequence intron_variant MAF 0.20938 name rs35262860 source Variants (including SNPs and indels) imported from dbSNP
 
 An intron variant (Ensembl's most severe consequence), the insertion the minor allele worldwide (0.21). For row 55.
+
+`vep-rs35262860.json`: the insertion's consequences.
+
+> [q386] [0].transcript_consequences[3] biotype protein_coding strand 1 impact MODIFIER transcript_id ENST00000636932 gene_symbol_source HGNC gene_id ENSG00000104237 hgnc_id HGNC:10263 variant_allele CT gene_symbol RP1
+
+> [q387] [0].transcript_consequences[3].consequence_terms[0] intron_variant
+
+An intron variant of RP1 (ENSG00000104237) on its protein-coding transcript ENST00000636932. For row 55.

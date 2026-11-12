@@ -1,5 +1,5 @@
 # The seed list's locus 55, RP1 (8q12.1). Curated 2026-11-12. Lead rs35262860 (the seed's only rsID), an insertion of
-# CT in an intron (db-ensembl-116#q379, q385): VCF G/GCT at GRCh38 8:54,566,349, as FinnGen writes it; Deelen 2019
+# CT in an intron of RP1 (db-ensembl-116#q379, q386, q387): VCF G/GCT at GRCh38 8:54,566,349, as FinnGen writes it; Deelen 2019
 # prints GCT/G at GRCh37 8:55,478,909; Ensembl CT/CTCT at 54,566,350. The insertion is derived, 0.38 in Europeans and
 # 0.02 in East Asians. LifeGen and Zenin have no line for the insertion and are read at rs13279568 (r² 1.0, D′ 1.0 in
 # CEU; A phased with GCT by Deelen's own file, pmid-31413261#q148). A literature search on the rsID (2026-11-12) finds
@@ -17,25 +17,28 @@ verdict_reason: >-
   trans-ethnic version is P 5.6e-7, the GWAS Catalog's one record for it. The 99th percentile leans the same way (P
   1.2e-4), but its cases are a subset of the 90th's, so it does not replicate. Deelen's own validation in UK Biobank's
   parental longevity set (19,742 cases) goes the other way: OR 0.97 (0.94–0.99), P 0.021, and the authors call the
-  set powered even at half the effect. On one scale, against the discovery's log OR 0.104, the test has power 1.00
-  and heterogeneity P 4e-8 at the full effect, power 0.99 and P 9e-7 at half the effect for a parent's genotype
-  (derived): a red flag with no calibration needed (D25.3, as row 26). LifeGen's parental lifespan, at the perfect
+  set powered even at half the effect. On one scale, against the summary statistics' per-insertion 0.1028 (SE
+  0.0203), the test has power 1.00 and heterogeneity P 4e-8 at the full effect, power 0.99 and P 9e-7 at half the
+  effect for a parent's genotype (derived; Table 2's interval gives smaller P still): a red flag with no calibration
+  needed (D25.3, as row 26). LifeGen's parental lifespan, at the perfect
   proxy rs13279568, puts the insertion's side shorter-lived (P 0.20, one-sided 0.90 in the discovery's direction),
   a red flag under both of D25.3's calibrations (APOE's factor: expected +0.021, power 1.00, heterogeneity P 5e-6;
-  the loci's mean factor: +0.051, power 1.00, P 2e-7, or 4e-4 counting the mean's SE). FinnGen r11's death endpoint,
-  outside Deelen's cohorts and UK Biobank, is flat (β +0.0003 per insertion, P 0.97), a red flag under both (APOE's
+  the loci's mean factor: +0.051, power 1.00, P 2e-7, or 4e-4 counting the mean's SE). It rests mostly on UK Biobank,
+  as the Table 3 line does, so the two are one sample on two phenotypes, not two tests. FinnGen r11's death endpoint,
+  with no UK Biobank (overlap with Deelen's Finnish cohort Vitality 90+ unknown, which would favour agreement), is flat (β +0.0003 per insertion, P 0.97), a red flag under both (APOE's
   factor: power 0.84, heterogeneity P 0.018; mean factor: power 1.00, P 7e-5, or 0.003 with the mean's SE). Zenin
   2019's healthspan leans the insertion's way at the proxy (P 0.20, one-sided 0.099), not nominal. So no independent
-  scoring-class study replicates it, and three powered ones fail: D. The effect may be real and smaller (a
+  scoring-class study replicates it, and two independent samples fail it, powered (UK Biobank, in Table 3 and within
+  LifeGen, and FinnGen): D. The effect may be real and smaller (a
   suggestive estimate is inflated by its selection), or absent. Exceptional survival is filed 0, as at row 26: the
   discovery's 90th percentile result is contradicted by the powered parental 90th percentile test. Lifespan 0
   (LifeGen and FinnGen not significant), healthspan 0. No other trait is recorded for the variant (GWAS Catalog), and
   Open Targets 26.09 has no record of it or of its proxy, so causal and effector confidence are C4 and E4 and no gene
-  is named; the locus keeps the seed's label, the gene whose intron holds it. Mechanism unknown, filed as general
+  is named; the locus keeps the seed's label, RP1, whose intron holds it (Ensembl's VEP). Mechanism unknown, filed as general
   ageing as row 26. Age of action unknown. Every test is European but the trans-ethnic line, where the insertion is
   too rare in East Asians (0.02) to carry signal.
 axes:
-  tier: {value: D, cites: [pmid-31413261#q143, pmid-31413261#q144, pmid-31413261#q145, pmid-31413261#q146, pmid-31413261#q147, pmid-31413261#q148, pmid-31413261#q2, pmid-31413261#q57, pmid-31413261#q58, pmid-31413261#q81, pmid-30642433#q252, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, db-finngen-r11#q31, db-finngen-r11#q4, db-finngen-r11#q6, pmid-30729179#q79, db-ensembl-116#q382, db-gwascatalog-2026.10.29#q356]}
+  tier: {value: D, cites: [pmid-31413261#q143, pmid-31413261#q144, pmid-31413261#q145, pmid-31413261#q146, pmid-31413261#q147, pmid-31413261#q148, pmid-31413261#q2, pmid-31413261#q57, pmid-31413261#q58, pmid-31413261#q81, pmid-30642433#q252, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, db-finngen-r11#q31, db-finngen-r11#q4, db-finngen-r11#q6, pmid-30729179#q79, db-ensembl-116#q382, db-gwascatalog-2026.10.29#q356, pmid-31413261#q149, db-ensembl-116#q386, db-ensembl-116#q387]}
   mechanism: {value: general_ageing, cites: [pmid-31413261#q143, db-gwascatalog-2026.10.29#q356]}
   pleiotropy: {values: [], cites: [db-gwascatalog-2026.10.29#q356, db-gwascatalog-2026.10.29#q357, db-opentargets-26.09#q735]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -61,9 +64,9 @@ variants:
       - genotype: G/G
         state: neutral
         conclusion: >-
-          You carry two copies of the common version of this DNA position, the one most people of European ancestry
-          have (about 38 in 100). It is the reference the other combinations are compared with. The position, on
-          chromosome 8, lies inside a gene's intron, and no gene is known to matter here.
+          You carry two copies of the commoner version of this DNA position (about 38 in 100 people of European
+          ancestry do). It is the reference the other combinations are compared with. The position, on chromosome 8,
+          lies inside the RP1 gene, but nothing shows that this or any nearby gene matters for lifespan.
       - genotype: G/GCT
         state: neutral
         conclusion: >-
@@ -103,7 +106,7 @@ studies:
     study_design: percentile_case_control_p99
     population: European (Deelen 2019's discovery cohorts)
     ancestry: [EUR]
-    stat_significance: not_significant
+    stat_significance: nominal
     p_value: "0.0001209"
     p_value_num: 0.0001209
     effect_size: 0.1254
@@ -111,7 +114,7 @@ studies:
     effect_unit: log odds of survival to the 99th percentile per GCT allele (the file's d, beta -0.1254, turned)
     effect_allele: GCT
     direction: protective
-    statistical_test: "Deelen 2019's summary statistics (GCST008599), SE 0.0326, effective N 4,154; its cases are a subset of the 90th's (Table 1), so no replication; nominal, not suggestive"
+    statistical_test: "Deelen 2019's summary statistics (GCST008599), SE 0.0326, effective N 4,154; its cases are a subset of the 90th's (Table 1), so no replication; nominal"
     curator: claude-opus-5-5
   - rsid: rs35262860
     note: pmid-31413261
@@ -124,7 +127,7 @@ studies:
     sample_size: 39440
     sample_unit: individuals
     age_of: parent
-    stat_significance: not_significant
+    stat_significance: nominal
     p_value: "0.021"
     p_value_num: 0.021
     effect_size: 0.97
@@ -132,7 +135,7 @@ studies:
     effect_unit: odds ratio of a parent reaching the 90th percentile age, per GCT allele in the participant
     effect_allele: GCT
     direction: risk
-    statistical_test: "Table 3, parental longevity (q57, q58, q144; 19,742 cases and 19,698 controls, q2; a case a participant with at least one parent past the 90th percentile age, a control one whose parents both died at or before the 60th, q81): 95 % CI 0.94-0.99, SE about 0.0132 (z −2.30, matching P 0.021), the opposite side, nominal; independent of the discovery (q2). D21 on one scale, against the discovery's log OR 0.104: power 1.00, heterogeneity P 4e-8 at the full effect; power 0.99, P 9e-7 at half the effect for a parent's genotype (derived); the authors call the set powered at half the effect (q58): a red flag"
+    statistical_test: "Table 3, parental longevity (q57, q58, q144; 19,742 cases and 19,698 controls, q2; a case a participant with at least one parent past the 90th percentile age, a control one whose parents both died at or before the 60th, q81): 95 % CI 0.94-0.99, SE about 0.0132 (z −2.30, matching P 0.021), the opposite side, nominal; independent of the discovery (q2). D21 on one scale, against the summary statistics' per-insertion 0.1028 (SE 0.0203, q146): power 1.00, heterogeneity P 4e-8 at the full effect; power 0.99, P 9e-7 at half the effect for a parent's genotype (derived; Table 2's interval gives smaller P still); the authors call the set powered at half the effect (q58): a red flag"
     curator: claude-opus-5-5
   - rsid: rs35262860
     note: pmid-30642433
@@ -151,7 +154,7 @@ studies:
     effect_unit: beta1 on parental lifespan per GCT allele, read at rs13279568 A (r² 1.0, phased by pmid-31413261#q148), longer positive
     effect_allele: GCT
     direction: risk
-    statistical_test: "LifeGen summary statistics at the proxy rs13279568 (db-ensembl-116#q382; SE 0.00398, direction --, info 0.98); the insertion has no line; one-sided P 0.90 in the discovery's direction. D21 under D25.3 against Deelen's 90th per insertion +0.1028 (pmid-31413261#q146): APOE's factor 4.84 (pmid-31413261#q82 against q90) expects +0.0212, power 1.00, heterogeneity P 5e-6; the loci's mean factor (q92) +0.0509, power 1.00, P 2e-7 (4e-4 counting the mean's SE 0.0959); a red flag under both. Some LifeGen cohorts are among Deelen's"
+    statistical_test: "LifeGen summary statistics at the proxy rs13279568 (db-ensembl-116#q382; SE 0.00398, direction --, info 0.98); the insertion has no line; one-sided P 0.90 in the discovery's direction. D21 under D25.3 against Deelen's 90th per insertion +0.1028 (pmid-31413261#q146): APOE's factor 4.84 (pmid-31413261#q82 against q90) expects +0.0212, power 1.00, heterogeneity P 5e-6; the loci's mean factor (q92) +0.0509, power 1.00, P 2e-7 (4e-4 counting the mean's SE 0.0959); a red flag under both. Some LifeGen cohorts are among Deelen's, and its UK Biobank part is the sample of the Table 3 line (pmid-31413261#q144), so not a second independent failure"
     curator: claude-opus-5-5
   - rsid: rs35262860
     note: pmid-30729179
@@ -169,5 +172,5 @@ studies:
     effect_unit: log hazard of the end of healthspan per GCT allele, read at rs13279568 A (r² 1.0, phased by pmid-31413261#q148); negative = healthier
     effect_allele: GCT
     direction: protective
-    statistical_test: "Zenin 2019's summary statistics at the proxy rs13279568: SE 0.00503, Z −1.287, −log10 P 0.7033 (P about 0.20, from the printed −log10 P); the insertion has no line; one-sided 0.099, not nominal"
+    statistical_test: "Zenin 2019's summary statistics at the proxy rs13279568: SE 0.00503, Z −1.287, −log10 P 0.7033 (P about 0.20, from the printed −log10 P); the insertion has no line under its rsID, its three synonyms or its position; one-sided 0.099, not nominal"
     curator: claude-opus-5-5

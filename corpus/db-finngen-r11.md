@@ -232,5 +232,5 @@ GCT (alt, 0.31) β +0.00031 (SE 0.0080) on the log hazard of death, P 0.97: flat
 discovery (derived). D21 under D25.3 (derived), Deelen's 90th per insertion +0.1028 (pmid-31413261#q146) carried to
 Timmers' scale and into FinnGen by APOE's factor here (0.99, q4 against pmid-30642433#q90): by APOE's factor
 expected −0.0211, one-sided power 0.84, heterogeneity P 0.018; by the loci's mean factor −0.0505, power 1.00,
-heterogeneity P 7e-5, or 0.003 counting the mean's SE. A red flag under both. Outside Deelen's cohorts and UK
-Biobank. For row 55.
+heterogeneity P 7e-5, or 0.003 counting the mean's SE. A red flag under both. No UK Biobank; overlap with Deelen's
+Finnish cohort Vitality 90+ (pmid-31413261#q149) unknown, and any overlap would favour agreement. For row 55.
