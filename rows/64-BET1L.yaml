@@ -14,13 +14,15 @@ verdict_reason: >-
   2023 followed 137,693 Japanese patients of BioBank Japan for a mean 7.44 years (31,324 deaths), in a Cox model by sex
   adjusted for age, sex, ten components and each person's baseline diseases: rs76612380 HR 0.92 (0.89–0.95), P
   5.89e-9, alike in men and women (heterogeneity P 0.77). Table 1's footnote calls the HR the alternative allele's, C;
-  the row reads it as T's, because the paper's main text quotes its APOE HRs per the reference allele (rs429358 0.95,
-  rs7412 1.07, the reciprocals of Supplementary Data 2's ε4 C 1.05 and ε2 T 0.93, which print the effect allele), and
-  because everything else in the paper reads the minor haplotype as the shorter-lived: the genotyped proxy rs2280543
+  the row reads it as T's (D29.2), on four legs, strongest first. Supplementary Figure 3, read from the PDF, puts the
+  genotyped proxy rs2280543's C/T at log HR about +0.05 and T/T at about +0.21 against C/C, in both sexes. The proxy
   (r² 0.98; its minor T pairs with the lead's minor C, as an r² that high requires) has T homozygotes faring worse in
-  both sexes, T 0.36 years younger at death, and T's shorter parental lifespan in Timmers 2019 quoted as support; the
-  discussion names C homozygotes as the carriers of the effect; and Supplementary Figure 3, read from the PDF, puts the
-  proxy's C/T at log HR about +0.05 and T/T at about +0.21 against C/C, in both sexes. The GWAS Catalog records no allele ("?"), and Open
+  both sexes, T 0.36 years younger at death, and T's shorter parental lifespan in Timmers 2019 quoted as support
+  ("Although the European GWAS supported our findings"); the discussion names C homozygotes as the carriers of the
+  effect. The Methods count the APOE dosages per reference allele (rs429358 per T, rs7412 per C), and the GWAS reads
+  the same imputed dosage, so its HR reads per the reference T: an inference from the APOE step, said so. Weakest,
+  the main text quotes its APOE HRs per the reference allele (rs429358 0.95, rs7412 1.07), the reciprocals of
+  Supplementary Data 2's ε4 C 1.05 and ε2 T 0.93, whose effect allele is the prior paper's. The GWAS Catalog records no allele ("?"), and Open
   Targets' beta copies the Catalog's, so neither tells. As a HR per C, 1.09. The combined P is printed once and is Wald-type (the
   sexes' HRs meta-analysed give it, derived), the test the authors call inflated; from the sexes' SPACox Ps (2.15e-6
   and 2.84e-3) a z-score meta gives about 2e-8 (derived), still genome-wide. The cohort is
@@ -49,11 +51,14 @@ verdict_reason: >-
   longer-lived T haplotype thus carries more fibroids and colorectal cancer, a trade-off, so descriptive; every
   lifespan look-up leans the same way, so the net direction is read as resolved and the genotypes keep their states.
   The proxy's effect is non-additive (P 0.02). Open Targets: one PICS set, the lead at PIP 0.944, C1 on §4.2's letter,
-  a PIP from one summary P with no 1000 Genomes LD for the lead behind it; locus-to-gene 0.24 at best (BET1L), and of
+  a PIP from one summary P. The set holds two variants, the lead and rs112762297 (0.029), and omits rs79902640 (r²
+  0.79 to the lead in 1000 Genomes East Asians, the paper's figure) and the genotyped proxy, so the 0.944 may reflect
+  the LD panel rather than localisation; which panel Open Targets used is unverified (Ensembl has no 1000 Genomes
+  genotypes for the lead, so its panel may lack the lead too, unknown); locus-to-gene 0.24 at best (BET1L), and of
   25 QTL colocalisations at H4 ≥ 0.8, SIRT3 holds 14 and BET1L 7, two genes each past a tenth: E3 (D24), no gene named;
   the authors too leave the gene open. Context: East Asian discovery, C rare elsewhere. Age of action unknown.
 axes:
-  tier: {value: B, cites: [pmid-36737517#q42, pmid-36737517#q30, pmid-36737517#q1, pmid-36737517#q3, pmid-36737517#q5, pmid-36737517#q6, pmid-36737517#q7, pmid-36737517#q8, pmid-36737517#q10, pmid-36737517#q11, pmid-36737517#q14, pmid-36737517#q15, pmid-36737517#q18, pmid-36737517#q19, pmid-36737517#q25, pmid-36737517#q26, pmid-36737517#q27, pmid-36737517#q28, pmid-36737517#q29, pmid-36737517#q17, pmid-30642433#q277, pmid-30642433#q278, db-ensembl-116#q458, db-ensembl-116#q461, db-ensembl-116#q466, db-ensembl-116#q468, db-ensembl-116#q469, pmid-31413261#q159, pmid-31413261#q160, pmid-31413261#q82, db-finngen-r11#q40, db-finngen-r11#q4, pmid-40021682#q64, pmid-40021682#q32, db-gwascatalog-2026.10.29#q417, db-gwascatalog-2026.10.29#q418, db-opentargets-26.09#q771]}
+  tier: {value: B, cites: [pmid-36737517#q42, pmid-36737517#q30, pmid-36737517#q1, pmid-36737517#q3, pmid-36737517#q5, pmid-36737517#q6, pmid-36737517#q7, pmid-36737517#q8, pmid-36737517#q10, pmid-36737517#q11, pmid-36737517#q14, pmid-36737517#q15, pmid-36737517#q18, pmid-36737517#q19, pmid-36737517#q25, pmid-36737517#q26, pmid-36737517#q27, pmid-36737517#q28, pmid-36737517#q29, pmid-36737517#q17, pmid-36737517#q43, pmid-36737517#q44, pmid-30642433#q277, pmid-30642433#q278, db-ensembl-116#q458, db-ensembl-116#q461, db-ensembl-116#q466, db-ensembl-116#q468, db-ensembl-116#q469, pmid-31413261#q159, pmid-31413261#q160, pmid-31413261#q82, db-finngen-r11#q40, db-finngen-r11#q4, pmid-40021682#q64, pmid-40021682#q32, db-gwascatalog-2026.10.29#q417, db-gwascatalog-2026.10.29#q418, db-opentargets-26.09#q771]}
   mechanism: {value: general_ageing, cites: [pmid-36737517#q38, pmid-36737517#q39, pmid-36737517#q40, pmid-36737517#q37]}
   pleiotropy: {values: [broad, tradeoff, nonadditive], cites: [pmid-36737517#q22, pmid-36737517#q31, pmid-36737517#q32, pmid-36737517#q33, pmid-36737517#q34, pmid-36737517#q35, pmid-36737517#q36, pmid-36737517#q16, pmid-36737517#q15, db-gwascatalog-2026.10.29#q419, db-gwascatalog-2026.10.29#q420, db-gwascatalog-2026.10.29#q421, db-gwascatalog-2026.10.29#q422]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -65,7 +70,7 @@ flags:
   - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-36737517#q5, pmid-36737517#q15, pmid-36737517#q33, pmid-36737517#q34, db-gwascatalog-2026.10.29#q419, db-gwascatalog-2026.10.29#q421, db-ensembl-116#q460]}
   - {token: "causal:C1", cites: [db-opentargets-26.09#q769, db-opentargets-26.09#q770, db-opentargets-26.09#q771, db-opentargets-26.09#q772, db-opentargets-26.09#q773, db-opentargets-26.09#q774]}
   - {token: "effector:E3", cites: [db-opentargets-26.09#q775, db-opentargets-26.09#q776, db-opentargets-26.09#q777, db-opentargets-26.09#q778, db-opentargets-26.09#q779, db-opentargets-26.09#q780, db-opentargets-26.09#q781, db-opentargets-26.09#q782, db-opentargets-26.09#q783, pmid-36737517#q23, pmid-36737517#q37, db-ensembl-116#q464]}
-  - {token: "ld_proxy_of:rs76612380", cites: [pmid-36737517#q14, db-ensembl-116#q469, db-ensembl-116#q470]}  # rs2280543 (r² 0.98 in BBJ) and rs79902640
+  - {token: "ld_proxy_of:rs76612380", cites: [pmid-36737517#q14, db-ensembl-116#q469, db-ensembl-116#q470]}  # rs2280543 (r² 0.98 in BBJ); rs79902640 is r² 0.79 to the lead in EAS, 0.89 in EUR (q42)
 variants:
   - rsid: rs76612380
     gene: ""
