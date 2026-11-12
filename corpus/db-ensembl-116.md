@@ -1368,3 +1368,7 @@ For row 54.
 > [q377] populations[73] allele G allele_count 688 frequency 0.682539682539683 population 1000GENOMES:phase_3:EAS
 
 G 0.68 in East Asians (0.04 in Africans). For row 54.
+
+> [q378] . start 30994702 end 31033715 assembly_name GRCh38 version 13 db_type core biotype protein_coding seq_region_name 8 canonical_transcript ENST00000523392.2 strand -1 logic_name ensembl_havana_gene_homo_sapiens source ensembl_havana species homo_sapiens object_type Gene id ENSG00000172733 display_name PURG description purine rich element binding protein G [Source:HGNC Symbol;Acc:HGNC:17930]
+
+`lookup-ENSG00000172733.json`: ENSG00000172733 is PURG (8:30,994,702-31,033,715, GRCh38, minus strand), 14 kb from the lead. For row 54.

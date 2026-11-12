@@ -2675,3 +2675,17 @@ Insomnia (H4 0.98). For row 54.
 
 Intelligence (H4 0.95), with general cognitive ability (0.42) alongside. None of the records gives a beta, so no
 direction for G on any of these traits is read. For row 54.
+
+> [q731] data.variant.credibleSets count 19
+
+`variant-8_30981030_T_G-all.json`, the lead's own sets: 19, all GWAS but one; they repeat the colocalising traits (type 2 diabetes, triglycerides, HDL, mixed hyperlipidaemia, visceral fat, metabolic syndrome, insomnia, intelligence, education) and Wright's "Longevity" set. For row 54.
+
+> [q732] data.variant.credibleSets.rows[10] studyLocusId 972f2e986671f3cfe10753a837ee01d4 studyId gtex-v10_ge_brain_caudate_ensg00000172733 pValueMantissa 8.338000297546387 pValueExponent -9 beta -0.237478 finemappingMethod SuSie
+
+The one expression set: GTEx v10 caudate (brain), ENSG00000172733, PURG (db-ensembl-116#q378), SuSiE, β −0.237. For row 54.
+
+> [q733] data.variant.credibleSets.rows[10].qualityControls[0] Study has quality control flag(s)
+
+> [q734] data.variant.credibleSets.rows[10].locus.rows[2] posteriorProbability 0.04463040832819606
+
+The source flags that set for quality control, and the lead's probability in it is 0.045. A membership, not a colocalisation with the age set (q722: none with a QTL study), so it gives PURG no E1/E2 criterion (D24) and, unlike row 53's, no flagged colocalisation (D27.7). For row 54.

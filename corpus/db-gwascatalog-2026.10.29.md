@@ -1248,3 +1248,17 @@ row 53's lead (r² 0.13) it explains is untested. For row 53.
 > [q352] _embedded.associations[5].snp_effect_allele[0] rs11780471-G
 
 The allele is G. For row 53.
+
+## Reading 2026-11-12, record
+
+> [q353] page size 50 totalElements 1 totalPages 1 number 0
+
+`associations-rs11783562.json`: the catalog holds one association for the lead. For row 54.
+
+> [q354] _embedded.associations[0] association_id 55479437 risk_frequency NR pvalue_description  pvalue_mantissa 8 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range [0.0078-0.0158] beta 0.01177 unit increase p_value 8e-09 accession_id GCST009448 pubmed_id 31484785 first_author Wright KM ci_lower 0.0078 ci_upper 0.0158
+
+That one is Wright 2019's current-age study (GCST009448): β 0.01177, P 8 × 10⁻⁹, the uncorrected P (pmid-31484785#q100). No other lifespan-class study of this SNP in the catalog. For row 54.
+
+> [q355] _embedded.associations[0].snp_effect_allele[0] rs11783562-C
+
+Its effect allele is Wright's C, the complement of the forward G (db-ensembl-116#q376). For row 54.
