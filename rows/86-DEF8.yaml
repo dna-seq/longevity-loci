@@ -25,9 +25,7 @@ verdict_reason: >-
   0.042 against T; its allele columns swapped, as the frequencies show), Deelen 2019's 90th and 99th percentiles put T a shade less common among
   the long-lived (P 0.88, 0.58), FinnGen R11's death endpoint is flat (P 0.78), and Zenin's own parents' death (P 0.51)
   and own death (C fewer deaths, P 0.66) are flat. So D16 has no co-occurring lifespan study either: D16 names this
-  locus, and under it alone, with no failed replication, the row would be C; row 103, the one row of this shape, is C
-  with `replication_failed` under D16 and D17.1, written before D25.1. D is the default here, put to the lead (C the
-  other option; 103 would follow whichever). Wright 2019's AncestryDNA has no parent's-lifespan line near it; its
+  locus, and under it alone, with no failed replication, the row would be C; row 103, the one row of this shape, is C with `replication_failed` under D16 and D17.1, written before D25.1, and is re-read under D25.1 at its next touch. D under D25.1 (D30.3). Wright 2019's AncestryDNA has no parent's-lifespan line near it; its
   viability SNPs nearby (rs4785759 and rs9939542, CEU r² 0.39 and 0.52, genomic-control P 0.002 to 0.003) confirm,
   never replicate (D23), and tag the lead weakly, and both point C's way: phased in CEU, the lead's C rides with
   rs9939542's C (53 of 62 haplotypes) and rs4785759's A (59 of 62), and each is the allele commoner among older
@@ -39,8 +37,7 @@ verdict_reason: >-
   2025's frailty factors are not genome-wide at the lead and hold no credible set there: limited social support T
   lower, P 5.5e-4; unhealthy lifestyle T higher, P 0.033; multimorbidity, cognition and disability flat (P 0.99,
   0.96, 0.11); the general and metabolic factors' deposits hold no line in the window (Q-filtered, as at 59 and 85);
-  multivariate (D27.3), so they score nothing here. Outcome cells on a D row (D28.10): healthspan 0, the contradicted
-  discovery giving no +; lifespan −, Park's one-sided 0.042 against T with nothing giving + (D28.3); exceptional
+  multivariate (D27.3), so they score nothing here. Outcome cells on a D row (D28.10): healthspan 0, the contradicted discovery giving no +, and Foote's factors conflicting (limited social support T less frail, P 5.5e-4; unhealthy lifestyle T frailer, P 0.033), as at 43; lifespan −, Park's one-sided 0.042 against T with nothing giving + (D28.3); exceptional
   survival 0, Deelen flat. Mechanism ageing in general, as on
   every D row: no effect is left to route (D25.7). The variant is one of the MC1R region's pigmentation and skin
   signals (C raises squamous cell carcinoma, OR 1.33, P 2e-44, and actinic keratosis, OR 1.25, P 2e-61; T raises
@@ -50,7 +47,7 @@ verdict_reason: >-
   row stands on, as 49's D kept Liu's. Effector E3, no gene named (D24): locus-to-gene gives DEF8 0.896, and the set's
   six cis QTL colocalisations are DEF8 four, RPL13 one and SPG7 one, each rival a sixth, over D24's tenth; DEF8 and
   MC1R are named in prose. Every genotype neutral (D25.2); T/T, the commonest, the reference. The evidence is European.
-  Age of action unknown. Row 103 (HLA-DQB1) has this shape at lower power (about 0.8, heterogeneity P about 0.02).
+  Age of action unknown. Row 103 (HLA-DQB1) has this shape: on D21's one-sided test its replication's power is also about 0.99, heterogeneity P 0.024 (its "about 0.8" was Zenin's power at 0.05/12; D30.3).
 axes:
   tier: {value: D, cites: [pmid-30729179#q119, pmid-30729179#q120, pmid-30729179#q121, pmid-30729179#q122, pmid-30729179#q12, pmid-30729179#q13, pmid-30729179#q29, pmid-30729179#q59, pmid-30642433#q335, pmid-29227965#q74, pmid-40021682#q88, pmid-40021682#q32, db-ensembl-116#q648, pmid-31413261#q201, pmid-31413261#q202, db-finngen-r11#q63, pmid-31484785#q135, pmid-31484785#q136, db-ensembl-116#q651, db-ensembl-116#q652, db-gwascatalog-2026.10.29#q508, db-gwascatalog-2026.10.29#q509, db-opentargets-26.09#q981, db-opentargets-26.09#q987, db-opentargets-26.09#q988, db-ensembl-116#q654, pmid-40759756#q11, pmid-40759756#q12, pmid-40759756#q13, pmid-40759756#q14, pmid-40759756#q15]}
   mechanism: {value: general_ageing, cites: [pmid-30729179#q119, pmid-30729179#q120]}
