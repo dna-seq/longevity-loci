@@ -22,9 +22,11 @@ verdict_reason: >-
   the lead's C) lean the discovery's way: the UK arm is Pilling's fathers' line there digit for digit, counting C
   (with the lead's T) with positive shorter, and AncestryDNA's C is +0.0050 (SE 0.0027), P 0.063, one-sided 0.032 raw and
   0.044 after Wright's genomic control (λ 1.182; derived), heterogeneity with the UK arm P 0.13. Wright has no line
-  at the lead, so the proxy stands in (D29.3, D13). Its UK Biobank arm alone is P 2.3e-6, under Table 9's 2.5e-3
-  filter, so the line counts (D29.18). The mothers most likely disagree: Pilling's mothers at rs929579 are P 0.00019,
-  under the filter alone, yet Wright's mothers' table has no line there (pruning the caveat). The rest is flat. LifeGen with UK Biobank (P 3.2e-5, −+: UK Biobank T
+  at the lead, so the proxy stands in (D29.3, D13). With the AncestryDNA arm at z = 0, the meta of the two printed arms,
+  deflated by 1.23 (the factor that turns them into the printed meta P), is P 0.0013, under Table 9's 2.5e-3, so the
+  line did not need its AncestryDNA arm to enter the table and counts (D30.1). The AncestryDNA mothers are flat, weakly
+  for, or against: Pilling's mothers at rs929579 are P 0.00019, yet Wright's mothers' table has no line there, which
+  happens if the AncestryDNA mothers' β is under about +0.0015 (pruning the caveat). The rest is flat. LifeGen with UK Biobank (P 3.2e-5, −+: UK Biobank T
   shorter-lived, LifeGen the other way) co-occurs with the discovery and does not replicate. FinnGen r11's death
   endpoint has C with slightly more deaths (β +0.010, SE 0.0077, P 0.18), its flag unknown (D28.1, D26.3). Park
   2025's UK Biobank own survival has C with fewer deaths (P 0.15; the deposit's columns swapped, as at APOE). Zenin
@@ -158,7 +160,7 @@ studies:
     effect_unit: fathers' lifespan per C allele of rs929579 (C rides with the lead's T), on Pilling's Martingale scale as Wright pooled it (positive = shorter life)
     effect_allele: C
     direction: risk
-    statistical_test: "Supplemental Table 9, the AncestryDNA arm of the fathers' meta-analysis (q122), raw P; one-sided 0.032, 0.044 after Wright's genomic control (λ 1.182, q83; derived). The UK Biobank arm +0.0109 (SE 0.0023), P 2.3E-06, under Table 9's 2.5e-3 filter (q6), so the line counts (D29.18); heterogeneity P 0.13. The UK arm is Pilling's fathers' line at rs929579 digit for digit (pmid-29227965#q53), so C, with the lead's T, is shorter-lived in both arms: the discovery's side. Pilling's mothers there P 0.00019 (pmid-29227965#q54) with no AncestryDNA mothers' line. rs929579 r² 0.97, D′ 1 in CEU (db-ensembl-116#q586), its T (0.32) with the lead's C (0.30) by frequency (db-ensembl-116#q587, q584)"
+    statistical_test: "Supplemental Table 9, the AncestryDNA arm of the fathers' meta-analysis (q122), raw P; one-sided 0.032, 0.044 after Wright's genomic control (λ 1.182, q83; derived). The UK Biobank arm +0.0109 (SE 0.0023), P 2.3E-06, and with the AncestryDNA arm at z = 0 the deflated meta (factor 1.23) is P 0.0013, under Table 9's 2.5e-3 (q6), so the line counts (D30.1; derived); heterogeneity P 0.13. The UK arm is Pilling's fathers' line at rs929579 digit for digit (pmid-29227965#q53), so C, with the lead's T, is shorter-lived in both arms: the discovery's side. Pilling's mothers there P 0.00019 (pmid-29227965#q54) with no AncestryDNA mothers' line. rs929579 r² 0.97, D′ 1 in CEU (db-ensembl-116#q586), its T (0.32) with the lead's C (0.30) by frequency (db-ensembl-116#q587, q584)"
     curator: claude-opus-5-5
   - rsid: rs61978928
     note: pmid-31413261
