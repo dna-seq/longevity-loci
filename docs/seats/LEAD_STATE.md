@@ -1,12 +1,12 @@
-**Where it stands** (2026-11-13): the longevity loci are being re-curated from their evidence, one row per locus. 74 of 161 seed loci are done (46 %), in 72 rows; eight batches read adversarially. The rows now build into the annotation module on just-dna-format 0.8. The first trial publish is on the registry's test instance; nothing is on production.
+**Where it stands** (2026-11-13, afternoon): the longevity loci are being re-curated from their evidence, one row per locus. 85 of 161 seed loci are done (53 %), in 83 rows; nine batches read adversarially. The rows now build into the annotation module on just-dna-format 0.8. The first trial publish is on the registry's test instance; nothing is on production.
 
 **Headline results**
-- Few loci reach the top tier: 7 at A, 45 at B, 10 at C and 10 at D. A means a genome-wide hit with an independent replication and no red flag; most fall short on the replication.
-- 10 seed loci dropped to D. Their discovery failed a powered test in its own ancestry, or its own authors called it anomalous.
+- Few loci reach the top tier: 8 at A, 52 at B, 12 at C and 11 at D. A means a genome-wide hit with an independent replication and no red flag; most fall short on the replication.
+- 11 seed loci dropped to D. Their discovery failed a powered test in its own ancestry, or its own authors called it anomalous.
 - The module builds strictly: 72 rows, 216 genotype rows and 370 studies, every position resolved (test instance, longevitymap 2.0.0, rebuilt with batch eight).
 
 **Next**
-1. Curate rows 76 onward (curator). Pacing is off on the person's word.
+1. Curate rows 88 onward, after batch nine's corrections and a second sweep of one replication rule (D30) (curator). Pacing is off on the person's word.
 2. Read each batch of about 10 rows adversarially and settle the curator's questions as decisions (lead).
 3. Export and rehearse the module again after each batch (module seat). It stays on the test instance until the person says otherwise.
 4. Pick the test instance's namespace (the person, desk #274; default `test-longevity-loci`, already in use).
