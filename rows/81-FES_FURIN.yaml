@@ -7,7 +7,7 @@ verdict: kept
 verdict_reason: >-
   Tier A confirmed. Genome-wide significant for parents' attained age in UK Biobank (Pilling 2017, rs17514846, P
   7.1e-10), and replicated outside UK Biobank with the same allele: in LifeGen with UK Biobank's lives removed, C at
-  rs17514846 adds 0.18 years per copy, P 0.013 (Timmers 2019's Figure 2 source data), and Timmers 2019 lists the locus
+  rs17514846 adds 0.18 years per copy, one-sided P 0.013 (Timmers 2019's Figure 2 source data prints one-sided P), and Timmers 2019 lists the locus
   among the previously unreplicated findings it validates. In Timmers 2019's million lives the lead rs6224 reaches P
   1.3e-10, G adding 0.25 years per copy. Every other look-up leans the same way and does not pass, none a red flag:
   Deelen 2019's 90th and 99th percentiles (OR 1.03 and 1.04, P 0.13 and 0.25; calibrated from Pilling's effect, D27.9, they flag under APOE's
@@ -15,27 +15,33 @@ verdict_reason: >-
   2019's Figure 4 (P 0.18 one-sided). Wright 2019's AncestryDNA arm has no row for the lead; its fathers'
   meta-analysis holds two nearby clumped SNPs, rs4702 and rs2677737 (AncestryDNA P 0.15 and 0.009, no heterogeneity
   with UK Biobank), whose r² to the lead no cached source gives, so they are named, not scored. Healthspan is 0: Zenin
-  2019's summary statistics give P 0.84 at the lead, in UK Biobank, a different trait from the same sample. Timmers
-  2019 files the locus as cardiometabolic, and FURIN variants were known for blood pressure (Pilling 2017); no cached
-  source measures a mediator at this SNP, so none is written and the row stays descriptive. The effector is FES at E1:
+  2019's summary statistics give P 0.84 at the lead, in UK Biobank, a different trait from the same sample. Timmers 2019 files the locus as cardiometabolic, and FURIN variants were known for blood pressure (Pilling 2017).
+  Timmers' lifespan set colocalises with 158 GWAS sets at H4 ≥ 0.8, and Open Targets' sign column confirms
+  heart_vessels: blood pressure (diastolic at rs6224 itself, H4 1.00), pulse pressure, coronary artery disease,
+  coronary atherosclerosis, left ventricular mass and pre-eclampsia share the signal with G, the longer-lived allele,
+  on the good side. Some sets run against G: a respiratory-disease factor (at rs6224, H4 0.99), FinnGen's primary knee
+  osteoarthritis with surgery and a diabetes factor; the reviewer's read adds suicide attempt and smoking initiation,
+  which Open Targets prints with no sign. A disease on the longer-lived allele's side is a quoted harm (D18.1), so
+  `tradeoff`, and a trade-off is descriptive (D18.2), not `preventable` with `act_test:bp`. The spread is broad
+  (lipids, blood cells, liver enzymes, brain morphology, body mass, psychiatric traits). No cached source measures a
+  mediator at this SNP. The effector is FES at E1:
   locus-to-gene 0.97 (FURIN 0.15), and FES holds 113 of the 120 cis-QTL colocalisations at H4 ≥ 0.8, FURIN 7, under
   the tenth that would make it a rival (D24); the lead lies in an intron of FURIN, and Timmers 2019's expression
   analysis (SMR) names both FURIN and FES. rs6224 holds PIP 0.22 in Timmers 2019's credible set (C2), rs17514846 0.065
-  at r² 0.92: one signal. The lifespan-raising G is about half of European alleles, so the protection is an absence of
-  the risk allele. Age of action is unknown: in Timmers 2019's age bands the effect keeps one sign from 60 to 90, but
+  at r² 0.92: one signal. The lifespan-raising G is about half of European alleles, so G/T, the commonest genotype, is the
+  reference (§6.2): G/G protective, T/T risk, no PROTECT token, the split too even (as at 24, 27 and 82). Age of action is unknown: in Timmers 2019's age bands the effect keeps one sign from 60 to 90, but
   fathers' shrinks (0.027, 0.011, 0.018) while mothers' grows (0.006, 0.018, 0.037), and the age moderator does not
   pass (P 0.087; Figure 5 source data).
 axes:
   tier: {value: A, cites: [pmid-29227965#q13, pmid-30642433#q19, pmid-30642433#q12, pmid-30642433#q21, pmid-30642433#q18]}
-  mechanism: {value: heart_vessels, cites: [pmid-30642433#q18, pmid-29227965#q14]}
-  pleiotropy: {values: ["mech:cvd"], cites: [pmid-30642433#q18]}
+  mechanism: {value: heart_vessels, cites: [pmid-30642433#q18, pmid-29227965#q14, db-opentargets-26.09#q1021, db-opentargets-26.09#q1022, db-opentargets-26.09#q1023, db-opentargets-26.09#q1024, db-opentargets-26.09#q1025]}
+  pleiotropy: {values: ["mech:cvd", broad, tradeoff], cites: [pmid-30642433#q18, db-opentargets-26.09#q1018, db-opentargets-26.09#q1019, db-opentargets-26.09#q1020, db-opentargets-26.09#q1021, db-opentargets-26.09#q1022, db-opentargets-26.09#q1023, db-opentargets-26.09#q1024, db-opentargets-26.09#q1025, db-opentargets-26.09#q1026, db-opentargets-26.09#q1027, db-opentargets-26.09#q1028, db-opentargets-26.09#q1029, db-opentargets-26.09#q1030, db-opentargets-26.09#q1031, db-opentargets-26.09#q1032]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: [pmid-30642433#q150, pmid-30642433#q151, pmid-30642433#q152, pmid-30642433#q153, pmid-30642433#q154, pmid-30642433#q155, pmid-30642433#q156]}
   outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "0",
             cites: [pmid-30729179#q8, pmid-30642433#q18, pmid-29227965#q13, pmid-31413261#q16, pmid-30642433#q20]}
-  actionability: {label: descriptive, cites: [pmid-30642433#q18]}
+  actionability: {label: descriptive, cites: [pmid-30642433#q18, db-opentargets-26.09#q1026, db-opentargets-26.09#q1027, db-opentargets-26.09#q1028, db-opentargets-26.09#q1029, db-opentargets-26.09#q1030]}
   context: {values: [eur_only_evidence], cites: [pmid-30642433#q18, pmid-29227965#q13]}
 flags:
-  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-30642433#q18, db-opentargets-26.09#q32]}
   - {token: "causal:C2", cites: [db-opentargets-26.09#q33]}
   - {token: "effector:E1", cites: [db-opentargets-26.09#q35, db-opentargets-26.09#q289, db-opentargets-26.09#q290, db-opentargets-26.09#q291, db-opentargets-26.09#q292, db-opentargets-26.09#q293, db-opentargets-26.09#q294, db-opentargets-26.09#q295, db-opentargets-26.09#q296]}
   - {token: "ld_proxy_of:rs6224", cites: [db-opentargets-26.09#q34]}  # rs17514846, r² 0.92
@@ -49,6 +55,9 @@ variants:
     effect_measure: beta
     stat_significance: significant
     direction: protective
+    negatives: >-
+      The longer-life version, G, also goes with a slightly higher chance of knee osteoarthritis needing surgery and
+      sits on the less favourable side of a respiratory-disease and a diabetes risk score in large biobank studies.
     genotypes:
       - genotype: G/T
         state: neutral
@@ -65,7 +74,7 @@ variants:
           people of European ancestry do). In very large British and European studies each copy went with parents
           living on average about a month and a half longer. The region holds the FES and FURIN genes and has been
           linked to heart and blood-pressure traits; FES is the more likely of the two to matter, but this is not
-          proven. The finding is well established; the effect is small and it is a tendency, not a guarantee.
+          proven. The finding is well established for lifespan, and the same version goes with slightly more of some other conditions (knee arthritis among them); the effect is small and it is a tendency, not a guarantee.
       - genotype: T/T
         state: risk
         conclusion: >-
@@ -123,15 +132,16 @@ studies:
     population: European (LifeGen cohorts, UK Biobank's lives removed)
     ancestry: [EUR]
     stat_significance: nominal
-    p_value: "0.0132667670267149"
-    p_value_num: 0.01327
+    p_value: "0.0265335340534298"
+    p_value_num: 0.02653
+    p_one_sided: 0.013265
     effect_size: 0.17904
     effect_measure: beta
     effect_unit: years of life per copy in self (parental estimate doubled), per C allele at the proxy
     effect_allele: C
     direction: protective
     proxy_rsid: rs17514846
-    statistical_test: "Replication of Pilling 2017's rs17514846 in LifeGen excluding UK Biobank (Figure 2 source data 1, sample b, pmid-30642433#q12); discovery 0.27 years, P 7.1E-10; N not given per SNP"
+    statistical_test: "Replication of Pilling 2017's rs17514846 in LifeGen excluding UK Biobank (Figure 2 source data 1, sample b, pmid-30642433#q12), whose P 0.0133 is one-sided (the two-sided P here derived as twice it); discovery 0.27 years, P 7.1E-10; N not given per SNP"
     curator: claude-opus-5-5
   - rsid: rs6224
     note: pmid-31413261

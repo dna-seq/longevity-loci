@@ -3679,3 +3679,47 @@ FinnGen R12's cardiovascular diseases, led by rs35929648 (17_48925181_A_G, 143 k
 q1017), L2G SNF8 and UBE2Z; G rides with C on 20 of 69 C haplotypes against 14 of 129 T haplotypes, r² about 0.05
 (derived), the lead's posterior there 0.0009: a separate signal, named. rs9912906 (17_49027070_A_T, an HbA1c set)
 has no genotype record Ensembl returns, so it is unphased. For row 88.
+
+## Reading 2026-11-13, record
+
+> [q1018] data.credibleSets.rows[1] studyLocusId e95e1989ec0d8799c17be4b6f837c2f1 pValueMantissa 1 pValueExponent -10 beta -0.2507 finemappingMethod PICS
+
+> [q1019] data.credibleSets.rows[1].study id GCST009890 traitFromSource Parental lifespan
+
+> [q1020] data.credibleSet.colocalisation count 172
+
+> [q1021] data.credibleSet.colocalisation.rows[72] h4 0.9962746412955811 clpp 0.19973039274001583 betaRatioSignAverage -1 colocalisationMethod COLOC_PIP_ECAVIAR
+
+> [q1022] data.credibleSet.colocalisation.rows[72].otherStudyLocus studyLocusId e2873de2f6b21c91287cb4cf7056e64d beta 0.04919270135702459 pValueMantissa 6.5159759521484375 pValueExponent -7
+
+> [q1023] data.credibleSet.colocalisation.rows[72].otherStudyLocus.study id GCST90335164 traitFromSource Diastolic blood pressure (BMI unadjusted)
+
+> [q1024] data.credibleSet.colocalisation.rows[147] h4 0.9927650488707778 clpp 0.1153920673041969 betaRatioSignAverage -1 colocalisationMethod COLOC_PIP_ECAVIAR
+
+> [q1025] data.credibleSet.colocalisation.rows[147].otherStudyLocus.study id GCST90132314 traitFromSource Coronary artery disease
+
+> [q1026] data.credibleSet.colocalisation.rows[130] h4 0.9928587892685564 clpp 0.11366000679130708 betaRatioSignAverage 1 colocalisationMethod COLOC_PIP_ECAVIAR
+
+> [q1027] data.credibleSet.colocalisation.rows[130].otherStudyLocus studyLocusId 7015e215653ffb056cfeae06168d1e6e beta -0.00912999196619885 pValueMantissa 7.8286824226379395 pValueExponent -9
+
+> [q1028] data.credibleSet.colocalisation.rows[130].otherStudyLocus.study id GCST90309345 traitFromSource Respiratory disease (confirmatory factor analysis Factor 11)
+
+> [q1029] data.credibleSet.colocalisation.rows[43] h4 0.9916368711914341 clpp 0.09789427174436614 betaRatioSignAverage 1 colocalisationMethod COLOC_PIP_ECAVIAR
+
+> [q1030] data.credibleSet.colocalisation.rows[43].otherStudyLocus.study id FINNGEN_R12_M13_ARTHROSIS_KNEE_PRIM_KNEESURG traitFromSource Gonarthrosis, primary, with knee surgery
+
+> [q1031] data.credibleSet.colocalisation.rows[170] h4 0.9685400753084448 clpp 0.0276152691534785 betaRatioSignAverage 1 colocalisationMethod COLOC_PIP_ECAVIAR
+
+> [q1032] data.credibleSet.colocalisation.rows[170].otherStudyLocus.study id GCST90309362 traitFromSource Diabetes (confirmatory factor analysis Factor 28)
+
+Row 81 (rs6224, 15_90880313_G_T): Timmers 2019's parental-lifespan set, PICS, led by rs6224, T −0.2507 years (q1018,
+q1019), so G the longer-lived. Its GWAS colocalisations (q1020): 172, 158 at H4 ≥ 0.8. Open Targets' sign column
+(betaRatioSignAverage, the other trait's β over the lifespan β) puts G on the good side of blood pressure and
+coronary disease: diastolic pressure at rs6224 itself, T +0.049 with sign −1, so G lowers it (q1021-q1023); coronary
+artery disease, sign −1, so G lowers it (q1024, q1025); likewise pulse pressure, coronary atherosclerosis, left
+ventricular mass, pre-eclampsia and hyperlipidaemia (sign −1). Some sets run against G, sign +1: a respiratory-disease
+factor (confirmatory factor 11) at rs6224, T −0.0091, so G raises it on the factor's scale (q1026-q1028); FinnGen's
+primary knee osteoarthritis with surgery (q1029, q1030); a diabetes factor (factor 28, q1031, q1032). Many sets carry
+sign 0 (no direction): among them suicide attempt, smoking initiation, schizophrenia, opioid use disorder and
+myocardial infarction. The spread is broad (lipids, blood cells, liver enzymes, brain morphology, body mass, birth
+weight, psychiatric traits). For row 81.
