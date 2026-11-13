@@ -2412,3 +2412,13 @@ row 87.
 
 rs1046896 (row 89): GRCh38 17:82,727,657 C/T, GRCh37 17:80,685,533, in FN3KRP's 3′ UTR (q672); T 0.317 in gnomAD's
 non-Finnish Europeans (q671). For row 89.
+
+## Reading 2026-11-13, record
+
+> [q673] populations[9] allele_count 3248 frequency 0.04775 population gnomADg:nfe allele A
+
+> [q674] [0].transcript_consequences[0] strand -1 impact MODIFIER biotype protein_coding variant_allele A hgnc_id HGNC:6930 gene_symbol MC2R gene_id ENSG00000185231 transcript_id ENST00000327606 gene_symbol_source HGNC
+
+rs28926173 (row 90): GRCh38 18:13,886,720 G/A, GRCh37 18:13,886,719, an intron of MC2R (q674); A 0.048 in gnomAD's
+non-Finnish Europeans (q673). Ensembl reports no CEU LD pair from it to Wright's SNPs 300 to 500 kb away (rs1785171,
+rs1785177, rs2567166, rs11659850, rs1648598, rs1785205). For row 90.

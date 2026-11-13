@@ -1846,3 +1846,10 @@ T lowers mvAge, so C is the healthier allele. For row 88.
 rs1046896 (row 89): eight associations, seven of them HbA1c (Wheeler, Soranzo, Chen, Hachiya, Wojcik and others; T
 raising it, P down to 4e-64) and one protein ratio (q513); no lifespan or longevity record, not even Torres'. For row
 89.
+
+## Reading 2026-11-13, record
+
+> [q514] _embedded.associations[0] association_id 35691782 risk_frequency 0.953 pvalue_description pvalue_mantissa 2 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.017-0.036] beta 0.0264 unit decrease p_value 2e-08 accession_id GCST006698 pubmed_id 29227965 first_author Pilling LC ci_lower 0.017 ci_upper 0.036
+
+rs28926173 (row 90): two associations, both Pilling 2017's parental longevity: the top-10 % analysis (GCST006698, G at
+0.953, β 0.0264 "unit decrease", P 2e-8; q514) and parents' attained age (GCST006697, P 6e-6). For row 90.

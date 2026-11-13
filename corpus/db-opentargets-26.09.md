@@ -3771,3 +3771,10 @@ named, not counted (as at row 84). For row 63.
 rs1046896 (row 89, 17_82727657_C_T): 113 credible sets (q1042), none of a lifespan-class study. It tops five HbA1c sets,
 T raising HbA1c (GCST90256420, +0.0315, P 3.3e-115, the lead at posterior 0.49, locus-to-gene FN3KRP 0.87; q1043-q1046),
 and eight QTL sets. For row 89.
+
+## Reading 2026-11-13, record
+
+> [q1047] data variant null
+
+Row 90: Open Targets 26.09 has no record of 18_13886720_G_A (q1047), so no credible set, locus-to-gene or
+colocalisation. For row 90.

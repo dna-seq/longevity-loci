@@ -480,3 +480,10 @@ heterogeneity P 0.47; the mean factor power 0.22: no flag. For row 88.
 > [q66] 17 82727657 C T rs1046896 FN3KRP 0.947215 0.0235514 0.000558895 0.00844198 0.264542 0.263413 0.264683
 
 FinnGen R11's death endpoint at rs1046896 (q66, row 89): alt T (0.26) β −0.0006 (SE 0.0084), P 0.95: flat. For row 89.
+
+## Reading 2026-11-13, record
+
+> [q67] 18 13886720 G A rs28926173 MC2R 0.852988 0.0690572 -0.00371042 0.020023 0.0356129 0.035228 0.0356611
+
+FinnGen R11's death endpoint at rs28926173 (q67, row 90): alt A (0.036 in Finns) β −0.0037 (SE 0.020), P 0.85: flat.
+For row 90.

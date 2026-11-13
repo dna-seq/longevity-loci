@@ -1,0 +1,151 @@
+# The seed list's locus 90, MC2R (18p11.21). Curated 2026-11-13. Lead rs28926173, the seed's only rsID (Pilling
+# 2017's top-10 % lead): an intron of MC2R, GRCh38 18:13,886,720 G/A, GRCh37 18:13,886,719, A the rare allele (0.048
+# in non-Finnish Europeans) and the longer-lived side. Open Targets 26.09 has no record of the variant; the GWAS
+# Catalog (2026-10-29) holds Pilling's two parental-longevity associations.
+locus_id: 90
+locus_name: MC2R
+verdict: kept
+verdict_reason: >-
+  Tier B, the seed's; row 68's shape. Genome-wide in one analysis of one study: Pilling 2017's binary GWAS of both
+  parents reaching the top 10 % of survival in UK Biobank (7,182 participants whose mothers reached 90 and fathers 87,
+  against 79,767 whose parents both died before 80), where the rare A raises the chance (G's β −0.0264 on the case
+  indicator, P 2.3e-8; "just reached significance", 15.7 % more likely), with parents' attained age at P 6.4e-6 (A
+  longer, the deposit), age at death 2.4e-5, mothers 2.4e-4 and fathers 0.025 in the same people. A single genome-wide
+  study, B by §4.1, with the authors' caveat for low-frequency variants carried. Nothing independent replicates it and
+  nothing powered contradicts it. Within UK Biobank the rest agrees: Timmers 2019's million parents' lives, A longer, P
+  3.9e-5, "++" in UK Biobank and LifeGen, but holding Pilling's parents, so not independent; Park 2025's own survival,
+  A with fewer deaths, P 0.022 (its allele columns swapped), the same participants; nothing within 1 Mb in Timmers
+  passes 3.8e-5. Outside it: Deelen 2019's 90th percentile leans against A, flat (P 0.34, one-sided 0.17 against), the
+  99th flat (P 0.87); FinnGen R11's death endpoint flat (P 0.85). Wright 2019's AncestryDNA has no line at the lead and
+  none Ensembl links to it (its nearest lines, 300 to 500 kb away, have no CEU LD pair to the lead), so AncestryDNA is
+  untested; Foote 2025's frailty deposits and Rosoff 2023's mvAge tables hold no line. The red flag is unknown: the
+  discovery's β is on a binary case scale for parents with no published conversion to Deelen's or FinnGen's scale
+  (D28.1, D26.3). Exceptional survival + (Pilling's top-10 % analysis, the discovery), lifespan + (Pilling's attained
+  age and Timmers, nominal, the same biobank), healthspan 0 (Zenin 2019, A later, P 0.28). Mechanism ageing in
+  general: MC2R encodes the ACTH receptor of the adrenal cortex, named, with no set or test showing the effect runs
+  through it; pleiotropy empty (no other association at the lead), descriptive. Causal C4 and effector E4, no gene
+  named: Open Targets has no record of the variant, so no credible set, locus-to-gene or colocalisation; MC2R is named
+  in prose. G/G, about 91 in 100 Europeans, is the reference (§6.2); A/G and A/A protective, PROTECT:PRESENCE. Age of
+  action unknown. The evidence is European (UK Biobank).
+axes:
+  tier: {value: B, cites: [pmid-29227965#q79, pmid-29227965#q19, pmid-29227965#q35, pmid-29227965#q37, pmid-29227965#q38, pmid-29227965#q39, pmid-29227965#q80, pmid-30642433#q345, pmid-40021682#q94, pmid-40021682#q32, pmid-31413261#q209, pmid-31413261#q210, db-finngen-r11#q67, db-gwascatalog-2026.10.29#q514, db-opentargets-26.09#q1047]}
+  mechanism: {value: general_ageing, cites: [db-ensembl-116#q674]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "+",
+            cites: [pmid-30729179#q127, pmid-29227965#q79, pmid-29227965#q80, pmid-30642433#q345, pmid-29227965#q37]}
+  actionability: {label: descriptive, cites: [pmid-29227965#q79]}
+  context: {values: [eur_only_evidence], cites: [pmid-29227965#q79, db-ensembl-116#q673]}
+flags:
+  - {token: "PROTECT:PRESENCE", cites: [pmid-29227965#q37, db-ensembl-116#q673]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1047]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q1047]}
+variants:
+  - rsid: rs28926173
+    gene: ""
+    phenotype: MC2R region, parents' longevity
+    trait_efo_id: EFO_0007796
+    effect_allele: A
+    effect_size: 0.0264
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position, as about 91 in 100 people of European
+          ancestry do. It is the reference the other combinations are compared with. The position, on chromosome 18,
+          lies in the MC2R gene, the receptor for the stress hormone signal ACTH. The finding comes from people of
+          European ancestry; less is known elsewhere.
+      - genotype: A/G
+        state: protective
+        conclusion: >-
+          You carry one copy of a rarer version of this DNA position (about 9 in 100 people of European ancestry do).
+          In a very large British study, people carrying it were somewhat more likely to have both parents reach the
+          oldest tenth of lifespans, and their parents lived a little longer. No separate study has confirmed it, so
+          this is a likely finding, not a settled one. The effect is small and it is a tendency, not destiny.
+      - genotype: A/A
+        state: protective
+        conclusion: >-
+          You carry two copies of a rare version of this DNA position (about 2 in 1,000 people of European ancestry
+          do). In a very large British study each copy went with a somewhat higher chance of both parents reaching the
+          oldest tenth of lifespans. Too few people carry two copies to say what two copies do beyond that. No separate
+          study has confirmed it, so this is a likely finding, not a settled one: a tendency, not destiny.
+studies:
+  - rsid: rs28926173
+    note: pmid-29227965
+    quote: q79
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: British (UK Biobank participants' parents, European descent)
+    ancestry: [EUR]
+    n_cases: 7182
+    sample_size: 86949
+    sample_unit: individuals
+    age_of: parent
+    stat_significance: significant
+    p_value: "2.3E-08"
+    p_value_num: 2.3e-08
+    effect_size: 0.0264
+    effect_measure: beta
+    effect_unit: BOLT-LMM β on the case indicator (both parents in the top 10 % of survival) per A allele in the participant (positive = more likely)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Table 2 (q79): BOLT-LMM on both parents in the top 10 % of survival (mothers 90 or older, fathers 87 or older) against both dead before 80 (Table 1, q38, q39); printed as G's β −0.0264 (SE 0.0047), the bold analysis's (q19), the rare allele raising the chance (q37); parents' attained age P 6.4E-06 (A longer, the deposit, q80), age at death 2.4E-05, mothers 2.4E-04, fathers 0.025; 'just reached significance' (q35); a participant carries half a parent's genotype"
+    curator: claude-opus-5-5
+  - rsid: rs28926173
+    note: pmid-30642433
+    quote: q345
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 635243
+    sample_unit: lives
+    stat_significance: nominal
+    p_value: "3.9175516e-05"
+    p_value_num: 3.9175516e-05
+    effect_size: 0.0385564
+    effect_measure: beta
+    effect_unit: log hazard protection per A allele (positive = longer life)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0094, direction ++, info 0.96; holds Pilling's UK Biobank parents, so co-occurring, not a replication; Park 2025's own survival A fewer deaths, P 0.022 (pmid-40021682#q94, columns swapped), the same participants; FinnGen R11 death flat, P 0.85 (db-finngen-r11#q67)"
+    curator: claude-opus-5-5
+  - rsid: rs28926173
+    note: pmid-31413261
+    quote: q209
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis; no UK Biobank data)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.3386"
+    p_value_num: 0.3386
+    effect_size: -0.0586
+    effect_measure: beta
+    effect_unit: log odds of survival to the 90th percentile per A allele
+    effect_allele: A
+    direction: risk
+    statistical_test: "Deelen 2019's summary statistics (GCST008598), SE 0.0612, effective N 11,050; one-sided 0.17 against A (derived); 99th percentile A −0.0164, SE 0.1028, P 0.87 (q210); red flag unknown, no published conversion from Pilling's binary scale (D28.1, D26.3)"
+    curator: claude-opus-5-5
+  - rsid: rs28926173
+    note: pmid-30729179
+    quote: q127
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.2786"
+    p_value_num: 0.2786
+    effect_size: -0.0122
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per A allele (negative = later)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Zenin 2019's healthspan summary statistics, SE 0.0113, Z −1.083, -log10 P 0.555"
+    curator: claude-opus-5-5
