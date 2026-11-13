@@ -11,14 +11,14 @@ verdict_reason: >-
   study (§4.5 as D16 reads it); a multivariate result does not meet tier A's first criterion (D18.3), so B is the cap
   unless an independent replication meets it, and none does. Rosoff 2023's mvAge, the common factor behind healthspan,
   frailty, exceptional longevity, parental lifespan and epigenetic age, is genome-wide at rs28455998: T on the
-  healthier-ageing side, β +0.0057 (SE 0.0010), P 1.87e-8, heterogeneity Q P 0.15; Rosoff's own fine-mapping puts it
-  in no credible set (posterior 0.034). Timmers 2019's million parents' lives are the co-occurring lifespan study: T
+  healthier-ageing side, β +0.0057 (SE 0.0010), P 1.87e-8, heterogeneity Q P 0.15; Rosoff's own fine-mapping gives it a
+  posterior of 0.034. Timmers 2019's million parents' lives are the co-occurring lifespan study: T
   longer-lived, P 0.0094, UK Biobank and LifeGen on the same side; an input of mvAge, not a replication. The lead is an
   A/T SNP near 50 %, so its strand is read from non-palindromic neighbours, and phase from CEU, where the frequencies
   decide it (in GBR and pooled Europeans both phases fit). Rosoff calls the locus known through frailty: Atkins 2021's
   frailty index (UK Biobank and TwinGene, n 175,226) is genome-wide at rs3959554, A less frail, P 1.7e-8, and the
   lead's T rides with that A (r² 0.71, D′ 1 in CEU; the other phase caps r² near 0.34). At the lead itself Rosoff's
-  look-up gives frailty P 2.0e-7, short of genome-wide, so frailty anchors nothing at the lead (D29.17), and A would
+  look-up gives frailty P 2.0e-7, short of genome-wide, so frailty anchors nothing at the lead (D29.3, D29.17; put to the lead), and A would
   in any case need an independent replication in a scoring class (D22.2, D23). None passes. Deelen 2019's 90th and
   99th percentiles lean T's way, short of nominal (one-sided 0.056 and 0.073; the 90th is mvAge's own input), and
   rs3959554's opposite signs there confirm the strand. Wright 2019's AncestryDNA fathers, outside mvAge's inputs, hold
@@ -32,8 +32,8 @@ verdict_reason: >-
   (P 0.90 at the lead, 0.86 at rs3959554, under its swapped allele columns). No red flag (D21): Deelen's 90th is powered
   only under APOE's factor (0.81) and agrees with the expectation (heterogeneity P 0.50; under the mean factor power
   0.28), the 99th is not powered, AncestryDNA at rs11855102 (power 0.83 against the UK arm) agrees with it
-  (heterogeneity P 0.50), and FinnGen's scale conversion is printed nowhere (D28.1). Healthspan +: frailty genome-wide
-  at the proxy, and Zenin 2019's healthspan at the lead, T delaying its end at P 0.0024 after the 1.053 genomic
+  (heterogeneity P 0.50), and FinnGen's scale conversion is printed nowhere (D28.1). Healthspan +: frailty suggestive at
+  the lead (genome-wide at the proxy), and Zenin 2019's healthspan at the lead, T delaying its end at P 0.0024 after the 1.053 genomic
   control (D26.1), both UK Biobank and mvAge inputs. Lifespan + on Timmers. Exceptional survival 0: Deelen leans T's
   way at neither percentile nominally. Mechanism: ageing in general (D25.7). The lead tops one credible set, a GWAS of
   renin-angiotensin medication use (PICS, P 1e-9, posterior 0.034), A raising it, so the longer-lived T goes with less
@@ -78,7 +78,7 @@ variants:
           biological age into one measure, each copy went with slightly less healthy ageing, and parents of carriers
           lived a little less long. The same stretch of DNA goes with slightly more coronary heart disease and more
           use of blood-pressure medicines in other studies. It is a likely finding, not a settled one: it rests on
-          one combined analysis, and separate groups of people leaned the same way without confirming it. The
+          one combined analysis, and separate groups of people mostly leaned the same way without confirming it. The
           effect is small and it is a tendency, not destiny.
       - genotype: A/T
         state: neutral
@@ -95,7 +95,7 @@ variants:
           biological age into one measure, each copy went with slightly healthier ageing and less frailty, and
           parents of carriers lived a little longer. The same stretch of DNA goes with slightly less coronary heart
           disease and less use of blood-pressure medicines in other studies. It is a likely finding, not a settled
-          one: it rests on one combined analysis, and separate groups of people leaned the same way without
+          one: it rests on one combined analysis, and separate groups of people mostly leaned the same way without
           confirming it. The effect is small and it is a tendency, not destiny.
 studies:
   - rsid: rs28455998
@@ -113,7 +113,7 @@ studies:
     effect_unit: mvAge factor per T allele (no conventional unit; positive = healthier ageing)
     effect_allele: T
     direction: protective
-    statistical_test: "Genomic SEM common-factor GWAS of healthspan, frailty (reverse coded), exceptional longevity, parental lifespan and PhenoAge acceleration (Supplementary Table 7, q65; Table 6, q64: SE 0.00101, Q P 0.15, a known locus through frailty); in no fine-mapping credible set (q66, posterior 0.034); pools the samples of the component studies, not a replication (q5)"
+    statistical_test: "Genomic SEM common-factor GWAS of healthspan, frailty (reverse coded), exceptional longevity, parental lifespan and PhenoAge acceleration (Supplementary Table 7, q65; Table 6, q64: SE 0.00101, Q P 0.15, a known locus through frailty); fine-mapping posterior 0.034 (q66); pools the samples of the component studies, not a replication (q5)"
     curator: claude-opus-5-5
   - rsid: rs28455998
     note: pmid-30642433
@@ -135,24 +135,23 @@ studies:
     statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), SE 0.00389, direction -- in UK Biobank and LifeGen, info 0.99; the co-occurring lifespan study (D16), mvAge's parental-lifespan input and not a replication; Pilling's fathers in UK Biobank T P 0.023, mothers 0.24 (pmid-29227965#q58, q59)"
     curator: claude-opus-5-5
   - rsid: rs28455998
-    note: pmid-34431594
-    quote: q8
+    note: pmid-37550455
+    quote: q65
     phenotype_class: HEALTHSPAN
     study_design: meta_analysis
-    population: European (UK Biobank participants aged 60 to 70 and TwinGene)
+    population: European (Atkins 2021's frailty GWAS, UK Biobank participants aged 60 to 70 and TwinGene)
     ancestry: [EUR]
     sample_size: 175226
     sample_unit: individuals
-    stat_significance: significant
-    p_value: "1.7E-08"
-    p_value_num: 1.7e-08
-    proxy_rsid: rs3959554
-    effect_size: -0.019
+    stat_significance: suggestive
+    p_value: "1.995e-07"
+    p_value_num: 1.995e-07
+    effect_size: -0.0172
     effect_measure: beta
-    effect_unit: normalised frailty index per A allele of rs3959554 (negative = less frail)
+    effect_unit: frailty index per A allele, reverse coded (positive = less frail)
     effect_allele: A
-    direction: protective
-    statistical_test: "Atkins 2021's frailty-index GWAS (Table 2 line, q8), BOLT-LMM in each cohort, meta-analysed; SE 0.0034, both cohorts the same direction, heterogeneity P 0.36; rs3959554 r² 0.71 (CEU, D′ 1) and 0.77 (GBR) to the lead (db-ensembl-116#q598, q599), its A with the lead's T (phased in CEU, derived); at the lead itself Rosoff's frailty look-up P 2.0e-7 (pmid-37550455#q65); healthspan class (D23), mvAge's frailty input, not a replication"
+    direction: risk
+    statistical_test: "Atkins 2021's frailty-index summary statistics at the lead, as Rosoff's Supplementary Table 7 reads them (q65; reverse coded, q2, q19), SE 0.0033; short of genome-wide at the lead. Atkins' own genome-wide line is rs3959554 (pmid-34431594#q8: A less frail, P 1.7e-8), 13 kb away, r² 0.71 (CEU, D′ 1) and 0.77 (GBR), its A with the lead's T (db-ensembl-116#q598, q599, q600, derived); a proxy does not stand in where the study has a line at the lead (D29.3), so it is named here. Healthspan class (D23), mvAge's frailty input, not a replication"
     curator: claude-opus-5-5
   - rsid: rs28455998
     note: pmid-30729179
@@ -217,12 +216,11 @@ studies:
     stat_significance: not_significant
     p_value: "0.08542"
     p_value_num: 0.08542
-    p_one_sided: 0.043
     proxy_rsid: rs11855102
     effect_size: -0.004426
     effect_measure: beta
-    effect_unit: fathers' Martingale residual per T allele of rs11855102 (printed label A; the UK arm is Pilling's T line, pmid-29227965#q55; negative = longer life, pmid-29227965#q45)
+    effect_unit: fathers' lifespan per T allele of rs11855102 (T rides with the lead's T; printed label A, the UK arm Pilling's T line, pmid-29227965#q55), on Pilling's Martingale scale as Wright pooled it (negative = longer life, pmid-29227965#q45)
     effect_allele: T
     direction: protective
-    statistical_test: "Supplemental Table 9, the AncestryDNA arm of the fathers' meta-analysis, raw P (beta/SE); after Wright's genomic control (λ 1.182, q83) one-sided about 0.057 (derived), no pass; rs11855102 r² 0.72 (CEU, D′ 0.91) to the lead, its T with the lead's T (db-ensembl-116#q602, q603, derived); outside mvAge's inputs; counted under D29.18 (UK arm alone P 0.0019, under the 2.5e-3 meta filter, q6); power 0.83 against the UK arm, heterogeneity P 0.52, no red flag. rs1678750 (q124, r² 0.98, raw P 0.0052) and rs1869907 (q125, r² 0.90, raw P 0.0017) lean the same way, selected by the filter (UK arms P 0.031, 0.027), not counted"
+    statistical_test: "Supplemental Table 9, the AncestryDNA arm of the fathers' meta-analysis, raw P (beta/SE), one-sided 0.043 raw; after Wright's genomic control (λ 1.182, q83) one-sided about 0.057 (derived), no pass; rs11855102 r² 0.72 (CEU, D′ 0.91) to the lead, its T with the lead's T (db-ensembl-116#q602, q603, derived); outside mvAge's inputs; counted under D29.18 (UK arm alone P 0.0019, under the 2.5e-3 meta filter, q6); power 0.83 against the UK arm, heterogeneity P 0.52, no red flag. rs1678750 (q124, r² 0.98, raw P 0.0052) and rs1869907 (q125, r² 0.90, raw P 0.0017) lean the same way, selected by the filter (UK arms P 0.031, 0.027), not counted"
     curator: claude-opus-5-5
