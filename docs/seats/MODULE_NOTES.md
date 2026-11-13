@@ -59,6 +59,11 @@ export (the lead starts it today, to 0.8's studies/variants shape per `docs/FORM
   studies, fully resolved, warnings unchanged, no new locus to author. The lead read the batch (D30, 83499c8); the
   curator corrects 76 to 87 now. Next: once those corrections land, export to `module/`, enrich, strict, delete
   the polygon's 2.0.0, republish, verify, append the receipt, report to the lead.
+- **Batch nine rehearsed, 2026-11-13:** after the curator's D30 corrections to 76 to 87 (trunk dfb21f9): export,
+  enrich, strict compile green (249 variant rows, 427 studies, fully resolved, 242 of 242 VRS alleles identified,
+  warnings unchanged). The polygon's 2.0.0 deleted and republished (17:11 UTC); its content_signature equals the
+  local compile's, the digest moved by the toolchain as before. The server compiled with compiler 0.8.4, ours
+  0.8.5. Receipt appended by hand again. just-dna 0.8.6 is on PyPI; the liaison moves the pin.
 - Plugin caches moved to the data volume (`remember_setting JUST_DNA_PIPELINES_CACHE_DIR`, user config, not the
   repo): `$HOME` is the small volume and Ensembl's lane is about 15 GB. Ensembl lane present 2026-11-12: ensembl-variation-2026_07_13-vep116.0, 14.5 GB (du shows 7.6 GB on BeeGFS).
 
