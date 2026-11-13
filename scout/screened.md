@@ -73,3 +73,14 @@ here is not new to a later run. Verdicts on titles, or on abstracts where `scout
 | PPR1357476 (doi 10.64898/2026.11.02.763612) | out of scope (animal, plant, clinical or non-genetic) | Cell-lineage selection interacts with development and life history to shape the rates and identity of heritabl |
 | PPR1358425 (doi 10.21203/rs.3.rs-11370327/v1) | out of scope (animal, plant, clinical or non-genetic) | Evolution of the human methylome in blood from embryo to ageing and cancer |
 | PPR1359822 (doi 10.20944/preprints202611.0588.v1) | small cohort, no seed locus | KIR Alleles and Their Correlation with Longevity: A Perspective on the Immunogenetics of Aging |
+
+## Track A, run 2026-11-13 (window 2026-10-20 → 2026-11-13)
+
+| Record | Verdict | Title |
+|---|---|---|
+| pmid 42999222 | out of scope (animal, plant, clinical or non-genetic) | A Single-Cell Atlas of PVOD Across the Lifespan Reveals Cellular and Molecular Therapeutic Targets. |
+| pmid 42990445 | out of scope (animal, plant, clinical or non-genetic) | An atlas of the aging glycoproteome reveals how glycosylation modulates autoantibody binding in the brain. |
+| pmid 42987443 | out of scope (animal, plant, clinical or non-genetic) | A time-resolved single-nucleus atlas of cochlear aging reveals biphasic inflammaging and Tbx2-dependent inner hai |
+| pmid 42928484 | out of scope (animal, plant, clinical or non-genetic) | State Design and Use of Medicaid 1915(c) Waivers and Related Benefits to Provide Home- and Community-Based Servi |
+| pmid 42908614 | out of scope (animal, plant, clinical or non-genetic) | Mapping the aging kidney: a bibliometric atlas of cellular senescence and future frontiers since the 20th century |
+| pmid 42925359 | out of scope (not longevity; cancer screening) | Modelling the potential contributions of polygenic risk stratification to cost-effective screening for prostate  |

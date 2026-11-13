@@ -75,14 +75,47 @@ PPR1359822 (doi 10.20944/preprints202611.0588.v1; KIR alleles in 86 Romanians ag
 abstract, no locus in the seed list). The clonal-haematopoiesis mortality papers from E-somatic-2 are somatic, which track E keeps out of germline
 evidence. The rest are animal, plant, or non-genetic. No new locus at genome-wide significance in the sources queried.
 
-## Tracks A–D, F–K
+## Track A: LongevityMap, HAGR, the v1 audit
+
+First swept 2026-11-13. Queries, all PubMed by entry date:
+
+- **A-resource** (written 2026-11-10, unchanged): `(LongevityMap[tiab] OR "Human Ageing Genomic Resources"[tiab] OR HAGR[tiab] OR GenAge[tiab] OR "Open Genes"[tiab]) AND (database[tiab] OR resource[tiab] OR update[tiab])`
+- **A-db** (new 2026-11-13, after the recall check): `(database[ti] OR resource[ti] OR atlas[ti] OR portal[ti]) AND (aging[ti] OR ageing[ti] OR longevity[ti] OR lifespan[ti])`
+- **A-pgs** (new 2026-11-13, after the recall check): `("polygenic score*"[tiab] OR "polygenic risk"[tiab] OR "polygenic propensity"[tiab] OR "polygenic prediction"[tiab] OR "polygenic lifespan"[tiab] OR PRS[tiab]) AND (longevity[tiab] OR lifespan[tiab] OR "all-cause mortality"[tiab] OR "life expectancy"[tiab])`
+
+Track A's GWAS and sequencing papers are B's, C's and E's subject, so their queries cover them and run in those
+tracks' sweeps, not here.
+
+### Recall
+
+On track A's 53 PMIDs (`A_longevitymap_hagr_evidence.csv`), 2026-11-13: A-resource 5/53 (the resources only), A-db
+3/53, A-pgs 12/53, B-gwas 32/53, C-rare 9/53, E-core 47/53. The set A-resource + A-db + A-pgs + B-gwas + C-rare +
+E-core finds 52/53; the one left out, 35324888 (sparse polygenic scores across 813 UK Biobank traits), is not a
+longevity paper by its title. Before A-db, HALL (37870433) was missed; before A-pgs, five of the nine polygenic-score
+papers were.
+
+### Runs
+
+| Run | Window | Query | Hits | New | Queued |
+|---|---|---|---|---|---|
+| 2026-11-13 | 2026-10-20 → 2026-11-13 | A-resource | 0 | 0 | 0 |
+| 2026-11-13 | 2026-10-20 → 2026-11-13 | A-db | 5 | 5 | 0 |
+| 2026-11-13 | 2026-10-20 → 2026-11-13 | A-pgs | 4 | 1 (3 already screened in track E) | 0 |
+
+Six new records, listed with their verdicts in `scout/screened.md`, at title level: single-cell and glycoproteome
+atlases (animal or tissue ageing), a Medicaid waiver study, a kidney-senescence bibliometric map, and a prostate
+cancer screening model. None bears on a seed locus. The HAGR site still shows LongevityMap as "Build 3" (read
+2026-11-13), so the source has not moved since the synthesis. **Not queried this run:** the Open Genes and HALL
+sites, and the GWAS Catalog (B's run takes it). No new locus in the sources queried.
+
+## Tracks B–D, F–K
 
 Not yet swept. Their queries below are **new**, written 2026-11-10, and **not yet run or recall-checked**; the
 first run of each checks its recall on its track's CSV and may change them. All PubMed by entry date, as above.
 
 | Track | Subject | Sources the synthesis names | Covered to (as it states) |
 |---|---|---|---|
-| A | LongevityMap, HAGR, the v1 audit | PubMed, HAGR site and Build 3, GWAS Catalog v2, Open Genes, HALL | 2026-11-03 (live site checked) |
+| A | LongevityMap, HAGR, the v1 audit | PubMed, HAGR site and Build 3, GWAS Catalog v2, Open Genes, HALL | 2026-11-03 (live site checked); swept 2026-11-13, above |
 | B | common-variant GWAS of longevity and lifespan | PubMed, Crossref, GWAS Catalog v2, PGS Catalog | 2026-11-03 (Catalog pulled) |
 | C | rare and protective variants, centenarian sequencing | PubMed, Europe PMC, Crossref | unknown (scope "2015–2026") |
 | D | healthspan, ageing rate, heritability | PubMed, Crossref, GWAS Catalog v2 REST | unknown (scope "2018–2026") |
