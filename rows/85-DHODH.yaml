@@ -24,7 +24,7 @@ verdict_reason: >-
   are not genome-wide at the lead (the multimorbidity factor A less frail, P 0.026; limited social support 0.0039; the
   general factor's and factor 4's deposits hold no line in the window, Q-filtered as at row 59); Foote's nearest set,
   multimorbidity at rs7187129 (P 1.7e-10), is 214 kb away with no European LD to the lead. So D27.3's assumption that
-  Foote reaches HP does not hold, as at row 59. Lifespan +, healthspan 0, exceptional survival 0 (Deelen leans against,
+  Foote reaches HP does not hold, as at row 59. Lifespan +, healthspan + (Foote's factors at the lead put A less frail, multimorbidity P 0.026 and limited social support P 0.0039, read for the healthspan cell as at rows 51 and 83; Zenin leans the same way), exceptional survival 0 (Deelen leans against,
   not significantly, so not − under D28.3). Neither sex nor age moderates the effect in Timmers' Figure 5 (P 0.11,
   0.91); the bands peak in fathers at 60-70 and mothers at 70-80, the rest flat, so no age class. Mechanism heart and vessels, through lipids and coronary disease: Timmers files the locus as
   cardiometabolic; of the 21 sets the lead tops 14 are lipid, alt T raising LDL cholesterol (P 2e-117), non-HDL
@@ -32,7 +32,7 @@ verdict_reason: >-
   coronary-artery-disease set holds the lead (posterior 0.13), led by rs34042070 (r² 0.96 to 1.00), whose G rides with
   T and raises coronary disease (β +0.040, P 1.3e-14). So A goes with lower lipids and less coronary disease; the
   other sets the lead tops are GALNT2 and plasma glycans, albumin and two eQTLs, and no harm is tied to A (D18.1).
-  Association, not a mediator test: descriptive, as row 12. Pleiotropy mech:lipids and mech:cvd. Causal C2: the
+  A lowers LDL cholesterol and coronary disease, so preventable with `act_test:ldl` (an LDL test, a doctor's), as rows 6 and 93; an association, not a mediator test. Pleiotropy mech:lipids and mech:cvd. Causal C2: the
   lead tops Timmers' PICS set at posterior 0.243 of seven. Effector E3, no gene named (D24): locus-to-gene gives HP
   0.965 and HPR 0.705, both past 0.5, and the set's cis-QTL colocalisations are HP 58, HPR 55, TXNL4B 21 and DHODH 9;
   HP is named in prose. A is the common allele at 81 %, so A/A is the reference (§6.2): A/T and T/T risk,
@@ -41,10 +41,10 @@ axes:
   tier: {value: B, cites: [pmid-30642433#q330, pmid-30642433#q30, pmid-30642433#q331, pmid-31413261#q199, pmid-31413261#q200, pmid-31484785#q133, pmid-31484785#q134, pmid-31484785#q6, db-ensembl-116#q643, db-ensembl-116#q644, db-finngen-r11#q62, pmid-29227965#q73, pmid-40021682#q87, pmid-40021682#q32, pmid-30729179#q118, pmid-30729179#q59, pmid-40759756#q7, pmid-40759756#q8, pmid-40759756#q2, db-gwascatalog-2026.10.29#q499, db-gwascatalog-2026.10.29#q500, db-opentargets-26.09#q967, pmid-30642433#q332, pmid-30642433#q333, pmid-30642433#q334]}
   mechanism: {value: heart_vessels, cites: [pmid-30642433#q330, db-opentargets-26.09#q959, db-opentargets-26.09#q960, db-opentargets-26.09#q961, db-opentargets-26.09#q962, db-opentargets-26.09#q963, db-opentargets-26.09#q964]}
   pleiotropy: {values: ["mech:lipids", "mech:cvd"], cites: [db-opentargets-26.09#q959, db-opentargets-26.09#q960, db-opentargets-26.09#q961, db-opentargets-26.09#q962, db-opentargets-26.09#q963, db-opentargets-26.09#q964, db-opentargets-26.09#q965, db-opentargets-26.09#q966, db-ensembl-116#q645]}
-  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "0",
-            cites: [pmid-30729179#q118, pmid-30642433#q330, pmid-30642433#q331, pmid-29227965#q73, pmid-31413261#q199, pmid-31413261#q200]}
-  actionability: {label: descriptive, cites: [pmid-30642433#q330]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: [pmid-30642433#q332, pmid-30642433#q333, pmid-30642433#q334]}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
+            cites: [pmid-40759756#q7, pmid-40759756#q8, pmid-30729179#q118, pmid-30642433#q330, pmid-30642433#q331, pmid-29227965#q73, pmid-31413261#q199, pmid-31413261#q200]}
+  actionability: {label: preventable, what: ["act_test:ldl"], who: "act_who:doctor", cites: [pmid-30642433#q330, db-opentargets-26.09#q959, db-opentargets-26.09#q960, db-opentargets-26.09#q965, db-opentargets-26.09#q966]}
   context: {values: [eur_only_evidence], cites: [pmid-30642433#q331]}
 flags:
   - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-30642433#q330, db-ensembl-116#q642]}
