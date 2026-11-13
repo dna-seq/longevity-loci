@@ -3247,3 +3247,14 @@ is in one set of the whole cohort (GCST90551884), P 4.9e-6, PIP 0.070 (q883, q88
 scan's (GCST90551886, the women by row 44's subtraction) at P 6.6e-11, PIP 0.59 (q887, q888). Every set is SuSiE-inf
 with out-of-sample LD, its study QC-flagged and fine-mapped without an in-sample LD reference (q889). None of the
 nine longevity studies holds either variant (q890, and the same for 13_73757854_G_T). For row 75.
+
+## Reading 2026-11-13, record
+
+> [q891] data.variant.credibleSets count 102
+
+> [q892] data.credibleSets count 0
+
+14_74855011_T_C (rs61978928, row 76): 102 credible sets hold it (q891), among them alanine and glutamine levels,
+neuroticism and mood swings, monocyte and platelet counts, lung function and molecular QTLs for nearby genes, the lead's
+posterior probability small in those read (0.005 to 0.03): a busy region, where it leads none of the sets read. No set
+of the nine longevity studies holds it (q892). For row 76.

@@ -395,3 +395,10 @@ FinnGen R11 DEATH, row 75: at GRCh38 13:73,649,403 C/CTT (q52), labelled rs57319
 rs35257605 by position and alleles (the repeat's 15-T allele; CTT at 0.46 here against 0.43 in gnomAD's non-Finnish
 Europeans): CTT beta +0.0083 (SE 0.0074), P 0.26, CTT with slightly more deaths, against Park's lean, flat.
 rs116257533 has no line. For row 75.
+
+## Reading 2026-11-13, record
+
+> [q53] 14 74855011 T C rs61978928 PROX2,YLPM1 0.178852 0.747507 0.0103069 0.00766713 0.370724 0.373486 0.370379
+
+FinnGen R11 DEATH at rs61978928 (GRCh38 14:74,855,011), row 76 (q53): C (0.37) β +0.0103 (SE 0.0077), P 0.18, C with
+slightly more deaths, against the discovery, flat; nearest genes PROX2, YLPM1. For row 76.

@@ -2093,3 +2093,24 @@ intronic in KLF12 by position. For row 75.
 Park's second passing line at row 75, GRCh37 13:74,331,131, is rs78594190 (q579): G at 0.00018 in gnomAD's non-Finnish
 Europeans (q580), 0.065 in Africans, and in complete LD with rs116257533 in Yoruba, r² 1.0, D′ 1.0 (q581): one
 African-ancestry haplotype. For row 75.
+
+## Reading 2026-11-13, record
+
+> [q582] mappings[0] assembly_name GRCh38 ancestral_allele T coord_system chromosome location 14:74855011-74855011 strand 1 start 74855011 allele_string T/C seq_region_name 14 end 74855011
+
+> [q583] mappings[0] end 75321714 location 14:75321714-75321714 assembly_name GRCh37 ancestral_allele T start 75321714 seq_region_name 14 coord_system chromosome allele_string T/C strand 1
+
+> [q584] populations[97] population 1000GENOMES:phase_3:EUR frequency 0.297216699801193 allele_count 299 allele C
+
+> [q585] populations[92] allele_count 215 allele C population 1000GENOMES:phase_3:EAS frequency 0.213293650793651
+
+> [q586] [0] population_name 1000GENOMES:phase_3:CEU d_prime 1.000000 variation2 rs929579 r2 0.971428 variation1 rs61978928
+
+> [q587] populations[97] allele_count 318 allele T population 1000GENOMES:phase_3:EUR frequency 0.31610337972167
+
+> [q588] [0] end 74855011 allele_string T/C strand 1 id rs61978928 start 74855011 most_severe_consequence 3_prime_UTR_variant seq_region_name 14 assembly_name GRCh38 input rs61978928
+
+rs61978928 (row 76): GRCh38 14:74,855,011 (q582), GRCh37 14:75,321,714 (q583), T/C, T ancestral. C is 0.30 in 1000
+Genomes Europeans (q584), 0.21 in East Asians (q585). rs929579, Wright's fathers' SNP 9 kb away, is at r² 0.97, D′ 1.0
+in CEU (q586); its T is 0.32 in Europeans (q587), so its T rides with the lead's C. VEP: 3′ UTR of PROX2 (and YLPM1
+transcripts) (q588). For row 76.

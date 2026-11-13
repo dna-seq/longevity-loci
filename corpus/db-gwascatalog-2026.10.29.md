@@ -1712,3 +1712,13 @@ rs12586026 holds none (q478). For row 74.
 > [q480] page size 200 totalElements 0 totalPages 0 number 0
 
 Neither of row 75's rsIDs holds a GWAS Catalog association (q479 rs35257605, q480 rs116257533). For row 75.
+
+## Reading 2026-11-13, record
+
+> [q481] page size 200 totalElements 3 totalPages 1 number 0
+
+> [q482] _embedded.associations[1].reported_trait[0] Parental longevity (combined parental attained age, Martingale residuals)
+
+rs61978928 holds three GWAS Catalog associations (q481), all Pilling 2017's parental longevity: the combined
+attained age (q482, P 2e-8), both parents in the top 10 % (P 3e-7) and fathers' attained age (P 2e-7). No disease.
+For row 76.

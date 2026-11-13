@@ -1,0 +1,212 @@
+# The seed list's locus 76, PROX2 (14q24.3). Curated 2026-11-13. Lead rs61978928, the seed's only rsID (Pilling 2017's
+# both-parents attained-age lead, in the 3′ UTR of PROX2 and within YLPM1 transcripts). C, the minor allele at 0.30 in
+# Europeans, goes with longer-lived parents. Wright 2019's fathers' SNP rs929579, 9 kb away, is at r² 0.97 in CEU and
+# stands in for the lead in AncestryDNA.
+locus_id: 76
+locus_name: PROX2
+verdict: kept
+verdict_reason: >-
+  Tier B, as the seed has it, with `replication_failed` (put to the lead). Genome-wide in Pilling 2017's combined
+  parents' attained age (UK Biobank, P 2.0e-8; fathers 1.9e-7, mothers 1.0e-4, both parents in the top 10 % 3.3e-7):
+  C, the minor allele (0.30 in Europeans), goes with longer-lived parents. Two independent European samples fail it
+  with power. LifeGen with UK Biobank's lives removed, Timmers 2019's own replication of the lead (Figure 2 source
+  data, sample b), puts C on the wrong side: −0.05 years against +0.27 at discovery, one-sided P 0.73. Against the
+  discovery's effect at that SE the one-sided power is 0.93 and the heterogeneity P 0.0011, both on Timmers' one scale
+  (derived): D21's red flag. Deelen 2019's 90th percentile is flat the other way (C −0.0071, SE 0.021, P 0.73), and
+  calibrated from the discovery's both-parents effect (D25.3, D27.9) it flags under both factors (APOE factor power
+  1.00, heterogeneity P below 1e-4; mean factor power 0.84, P 0.007). The 99th leans the discovery's way (C +0.016, P
+  0.62), flagging under the APOE factor only (borrowed from the 90th's ε4 line; power 0.99, P 0.0037; mean factor
+  0.52, P 0.24). So `replication_failed` (D25.13, D26.11). It bars A. It does not make D: D25.1 needs no independent
+  scoring-class study to pass, and one does. Wright 2019's AncestryDNA fathers at rs929579 (r² 0.97, D′ 1, its T with
+  the lead's C) lean the discovery's way, β +0.0050 (SE 0.0027) on the UK arm's sign, P 0.063, one-sided 0.032 raw and
+  0.044 after Wright's genomic control (λ 1.182; derived), heterogeneity with the UK arm P 0.13. Wright has no line
+  at the lead, so the proxy stands in (D29.3, D13). Its UK Biobank arm alone is P 2.3e-6, under Table 9's 2.5e-3
+  filter, so the line counts (D29.18). The rest is flat. LifeGen with UK Biobank (P 3.2e-5, −+: UK Biobank T
+  shorter-lived, LifeGen the other way) co-occurs with the discovery and does not replicate. FinnGen r11's death
+  endpoint has C with slightly more deaths (β +0.010, SE 0.0077, P 0.18), its flag unknown (D28.1, D26.3). Park
+  2025's UK Biobank own survival has C with fewer deaths (P 0.15; the deposit's columns swapped, as at APOE). Zenin
+  2019's healthspan has C toward a later end (P 0.59). Healthspan 0, lifespan +, exceptional survival 0 (no look
+  passes one-sided, and none reads against at p < 0.05). The Catalog holds Pilling's three lines alone. Open Targets
+  26.09 places the lead in 102 credible sets (amino-acid levels, neuroticism and mood, blood counts, lung function,
+  molecular QTLs) at small posterior probabilities (0.005 to 0.03 in those read), leading none of them, so no route
+  is shown: mechanism general ageing (D25.7), no pleiotropy token. No longevity set holds it, so C4 and E4 with no
+  gene named; VEP places it in PROX2's 3′ UTR, named in prose. PROTECT:PRESENCE: the minor C protects (as rows 5 and
+  74). The genotype shares are 1000 Genomes Europeans' (C 0.30: 49, 42 and 9 in 100). Not sex-specific (fathers and
+  mothers both lean C's way at discovery); age of action unknown (Timmers' Figure 5 sheets do not hold the lead). C is
+  0.21 in East Asians, untested there.
+axes:
+  tier: {value: B, cites: [pmid-29227965#q51, pmid-29227965#q52, pmid-29227965#q26, pmid-30642433#q313, pmid-30642433#q101, pmid-30642433#q12, pmid-31484785#q122, pmid-31484785#q6, pmid-31484785#q83, db-ensembl-116#q586, db-ensembl-116#q587, pmid-31413261#q179, pmid-31413261#q180, pmid-30642433#q91, pmid-30642433#q92, pmid-30642433#q314]}
+  mechanism: {value: general_ageing, cites: [pmid-29227965#q51, db-gwascatalog-2026.10.29#q481, db-opentargets-26.09#q891]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "0",
+            cites: [pmid-30729179#q108, pmid-29227965#q51, pmid-31484785#q122, pmid-30642433#q313, db-finngen-r11#q53, pmid-40021682#q78, pmid-31413261#q179, pmid-31413261#q180]}
+  actionability: {label: descriptive, cites: [pmid-29227965#q51]}
+  context: {values: [eur_only_evidence], cites: [pmid-29227965#q51, db-ensembl-116#q585]}
+flags:
+  - {token: "PROTECT:PRESENCE", cites: [pmid-29227965#q51, pmid-29227965#q26, db-ensembl-116#q584]}
+  - {token: replication_failed, cites: [pmid-30642433#q313, pmid-30642433#q101, pmid-31413261#q179, pmid-30642433#q91, pmid-30642433#q92]}
+variants:
+  - rsid: rs61978928
+    gene: ""
+    phenotype: PROX2 region, parents' lifespan
+    trait_efo_id: EFO_0007796
+    effect_allele: C
+    effect_size: -0.0136
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: T/T
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position, the one about half of people of European
+          ancestry carry twice (about 49 in 100). It is the reference the other combinations are compared with, so it
+          neither raises nor lowers your expected lifespan here. The position, on chromosome 14, lies at the end of
+          the PROX2 gene; which gene matters is not known. The finding comes from people of European ancestry.
+      - genotype: C/T
+        state: protective
+        conclusion: >-
+          You carry one copy of a less common version of this DNA position (about 42 in 100 people of European
+          ancestry do). In a very large British study, people with this version tended to have parents who lived a
+          little longer, and a large American study leaned the same way for fathers. But a large European study and a
+          study of people who reached old age did not see it, so it is a possible finding, not a settled one. The
+          effect is small and it is a tendency, not destiny.
+      - genotype: C/C
+        state: protective
+        conclusion: >-
+          You carry two copies of a less common version of this DNA position (about 9 in 100 people of European
+          ancestry do). In a very large British study, each copy went with parents who lived a little longer, and a
+          large American study leaned the same way for fathers. But a large European study and a study of people who
+          reached old age did not see it, so it is a possible finding, not a settled one. The effect is small and it
+          is a tendency, not destiny.
+studies:
+  - rsid: rs61978928
+    note: pmid-29227965
+    quote: q51
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank), both parents
+    ancestry: [EUR]
+    sample_size: 389166
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "2.0E-08"
+    p_value_num: 2.0e-08
+    effect_size: 0.0136
+    effect_measure: beta
+    effect_unit: Martingale residual of the combined parents' attained age per T allele (positive = raised hazard, shorter life)
+    effect_allele: T
+    direction: risk
+    statistical_test: "BOLT-LMM on Martingale residuals of the combined parents' attained age (Table 2, 'Common', the bold analysis; sign convention q45); age at death P 7.7E-05, both parents top 10 % 3.3E-07, mothers 1.0E-04, fathers 1.9E-07"
+    curator: claude-opus-5-5
+  - rsid: rs61978928
+    note: pmid-30642433
+    quote: q313
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (LifeGen cohorts, UK Biobank's lives removed), both parents
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.725809758671699"
+    p_value_num: 0.7258
+    effect_size: -0.05089
+    effect_measure: beta
+    effect_unit: years of life per copy in self, per C allele
+    effect_allele: C
+    direction: risk
+    statistical_test: "Timmers 2019's replication of Pilling 2017's rs61978928 in LifeGen excluding UK Biobank (Figure 2 source data 1, sample b, q12); the P is one-sided (q101). Discovery 0.27 years (beta1 +0.0267, SE 0.0048); here −0.0051 (SE 0.0085): one-sided power 0.93, heterogeneity P 0.0011 (derived), D21's red flag"
+    curator: claude-opus-5-5
+  - rsid: rs61978928
+    note: pmid-30642433
+    quote: q314
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts), both parents
+    ancestry: [EUR]
+    sample_size: 640152
+    sample_unit: lives
+    stat_significance: nominal
+    p_value: "3.2450688e-05"
+    p_value_num: 3.2450688e-05
+    effect_size: -0.01725801
+    effect_measure: beta
+    effect_unit: log hazard protection per T allele in self (negative = shorter life)
+    effect_allele: T
+    direction: risk
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), direction -+ (UK Biobank T shorter-lived, LifeGen the other way), info 0.995; contains Pilling's UK Biobank parents, not a replication"
+    curator: claude-opus-5-5
+  - rsid: rs61978928
+    note: pmid-31484785
+    quote: q122
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_linear
+    population: AncestryDNA customers' fathers (mostly European American), born 1886-1940
+    ancestry: [EUR]
+    stratum: parent
+    stratum_level: father
+    stat_significance: nominal
+    p_value: "0.06343"
+    p_value_num: 0.06343
+    p_one_sided: 0.0317
+    proxy_rsid: rs929579
+    effect_size: 0.005029
+    effect_measure: beta
+    effect_unit: fathers' lifespan per allele at the proxy, on the UK arm's sign (positive = the discovery's side; the counted allele rides with the lead's C)
+    effect_allele: C
+    direction: protective
+    statistical_test: "Supplemental Table 9, the AncestryDNA arm of the fathers' meta-analysis (q122), raw P; one-sided 0.032, 0.044 after Wright's genomic control (λ 1.182, q83; derived). The UK Biobank arm +0.0109 (SE 0.0023), P 2.3E-06, under Table 9's 2.5e-3 filter (q6), so the line counts (D29.18); heterogeneity P 0.13. The two arms share a sign, and the UK arm is the discovery's side (Pilling's fathers at the lead P 1.9E-07, pmid-29227965#q51). rs929579 r² 0.97, D′ 1 in CEU (db-ensembl-116#q586), its T (0.32) with the lead's C (0.30) by frequency (db-ensembl-116#q587, q584)"
+    curator: claude-opus-5-5
+  - rsid: rs61978928
+    note: pmid-31413261
+    quote: q179
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's cohorts, above the 90th survival percentile against controls)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.7304"
+    p_value_num: 0.7304
+    effect_size: 0.0071
+    effect_measure: beta
+    effect_unit: log odds of survival above the 90th percentile per t allele
+    effect_allele: T
+    direction: protective
+    statistical_test: "Deelen 2019's 90th percentile file (q179): t (0.67) +0.0071 (SE 0.0205), P 0.73, effective n 11,615; C −0.0071, against the discovery. From the discovery's both-parents +0.0267 (pmid-30642433#q313; D27.9, D25.3, derived): APOE factor (×4.84) power 1.00, heterogeneity P below 1E-04; mean factor (×4.84×0.4175) power 0.84, heterogeneity P 0.007: a flag under both"
+    curator: claude-opus-5-5
+  - rsid: rs61978928
+    note: pmid-31413261
+    quote: q180
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's cohorts, above the 99th survival percentile against controls)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.6238"
+    p_value_num: 0.6238
+    effect_size: -0.0155
+    effect_measure: beta
+    effect_unit: log odds of survival above the 99th percentile per t allele
+    effect_allele: T
+    direction: risk
+    statistical_test: "Deelen 2019's 99th percentile file (q180): t (0.66) −0.0155 (SE 0.0317), P 0.62, effective n 4,524; C +0.0155, the discovery's side, flat. Under D25.3 from +0.0267: APOE factor (borrowed from the 90th's ε4 line) power 0.99, heterogeneity P 0.0037; mean factor power 0.52, P 0.24: a flag under one calibration only, so none"
+    curator: claude-opus-5-5
+  - rsid: rs61978928
+    note: pmid-30729179
+    quote: q108
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.59"
+    p_value_num: 0.59
+    effect_size: -0.0028
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per C allele (positive = earlier)
+    effect_allele: C
+    direction: protective
+    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit), Z −0.535, -log10 P 0.227; the discovery's side, flat; the same UK Biobank sample as the discovery"
+    curator: claude-opus-5-5
