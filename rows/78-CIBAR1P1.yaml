@@ -18,21 +18,23 @@ verdict_reason: >-
   decide it (in GBR and pooled Europeans both phases fit). Rosoff calls the locus known through frailty: Atkins 2021's
   frailty index (UK Biobank and TwinGene, n 175,226) is genome-wide at rs3959554, A less frail, P 1.7e-8, and the
   lead's T rides with that A (r² 0.71, D′ 1 in CEU; the other phase caps r² near 0.34). At the lead itself Rosoff's
-  look-up gives frailty P 2.0e-7, short of genome-wide, so frailty anchors nothing at the lead (D29.3, D29.17; put to the lead), and A would
+  look-up gives frailty P 2.0e-7, short of genome-wide, so frailty anchors nothing at the lead (D29.3, D29.17, D30.8), and A would
   in any case need an independent replication in a scoring class (D22.2, D23). None passes. Deelen 2019's 90th and
   99th percentiles lean T's way, short of nominal (one-sided 0.056 and 0.073; the 90th is mvAge's own input), and
   rs3959554's opposite signs there confirm the strand. Wright 2019's AncestryDNA fathers, outside mvAge's inputs, hold
   three representative SNPs of the signal in Supplemental Table 9 (each UK arm Pilling's fathers' line digit for
-  digit, which fixes the allele): only rs11855102 counts under D29.18, its UK arm alone at P 0.0019; its AncestryDNA
-  arm puts T (with the lead's T) on the longer-lived side at raw one-sided 0.043, about 0.057 after the fathers'
-  genomic control (λ 1.182, derived), no pass on the paper's own correction (D17.3). rs1678750 (r² 0.98, raw P 0.0052)
-  and rs1869907 (r² 0.90, raw P 0.0017) lean the same way more strongly, but their UK arms (P 0.031, 0.027) are above
-  the table's 2.5e-3 meta filter, so they are selected lines, named and not counted (put to the lead). FinnGen R11's
+  digit, which fixes the allele), and none of the three counts under D30.1: with each AncestryDNA arm at z = 0, the
+  meta of the printed arms, deflated as the printed meta is (factors 1.17 to 1.20), is P 0.034 at rs11855102, 0.14 at
+  rs1678750 and 0.13 at rs1869907, all above the table's 2.5e-3, so each line was selected by its own AncestryDNA arm
+  (derived). Named: rs11855102's AncestryDNA arm puts T (with the lead's T) on the longer-lived side at raw one-sided
+  0.043, about 0.057 after the fathers' genomic control (λ 1.182); rs1678750 (r² 0.98, raw P 0.0052) and rs1869907
+  (r² 0.90, raw P 0.0017) lean the same way more strongly. FinnGen R11's
   death endpoint leans against (T β +0.0058 on the log odds of death, P 0.45) and Park 2025's own survival is flat
-  (P 0.90 at the lead, 0.86 at rs3959554, under its swapped allele columns). No red flag (D21): Deelen's 90th is powered
-  only under APOE's factor (0.81) and agrees with the expectation (heterogeneity P 0.50; under the mean factor power
-  0.28), the 99th is not powered, AncestryDNA at rs11855102 (power 0.83 against the UK arm) agrees with it
-  (heterogeneity P 0.50), and FinnGen's scale conversion is printed nowhere (D28.1). Healthspan +: frailty suggestive at
+  (P 0.90 at the lead, 0.86 at rs3959554, under its swapped allele columns). The red flag is unknown (D29.11, D30.8): D21 scales from the discovery's own effect, and mvAge's has no conversion
+  to these scales. Scaled from Timmers instead, Deelen's 90th is powered only under APOE's factor (0.81) and agrees
+  with the expectation (heterogeneity P 0.50; under the mean factor power 0.28), the 99th is not powered, AncestryDNA
+  at rs11855102 (power 0.83 against the UK arm) agrees with it (heterogeneity P 0.50), and FinnGen's scale conversion
+  is printed nowhere (D28.1). Healthspan +: frailty suggestive at
   the lead (genome-wide at the proxy), and Zenin 2019's healthspan at the lead, T delaying its end at P 0.0024 after the 1.053 genomic
   control (D26.1), both UK Biobank and mvAge inputs. Lifespan + on Timmers. Exceptional survival 0: Deelen leans T's
   way at neither percentile nominally. Mechanism: ageing in general (D25.7). The lead tops one credible set, a GWAS of
@@ -187,7 +189,7 @@ studies:
     effect_unit: log odds of reaching the 90th percentile, per A allele
     effect_allele: A
     direction: risk
-    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008598), SE 0.0194, effective N 11,615; T one-sided 0.056 (derived); rs3959554's opposite sign (q182) fixes the A/T lead's strand; mvAge's exceptional-longevity input, not a replication; powered only under APOE's factor (0.81 at expected log OR 0.049 from Timmers' β), heterogeneity P 0.50, no red flag"
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008598), SE 0.0194, effective N 11,615; T one-sided 0.056 (derived); rs3959554's opposite sign (q182) fixes the A/T lead's strand; mvAge's exceptional-longevity input, not a replication; powered only under APOE's factor (0.81 at expected log OR 0.049 from Timmers' β), heterogeneity P 0.50, red flag unknown (D29.11)"
     curator: claude-opus-5-5
   - rsid: rs28455998
     note: pmid-31413261
@@ -204,7 +206,7 @@ studies:
     effect_unit: log odds of reaching the 99th percentile, per A allele
     effect_allele: A
     direction: risk
-    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), SE 0.0304, effective N 4,524; T one-sided 0.073 (derived); its cases a subset of the 90th's; power 0.48 under APOE's factor, no red flag"
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), SE 0.0304, effective N 4,524; T one-sided 0.073 (derived); its cases a subset of the 90th's; power 0.48 under APOE's factor, red flag unknown (D29.11)"
     curator: claude-opus-5-5
   - rsid: rs28455998
     note: pmid-31484785
@@ -222,5 +224,5 @@ studies:
     effect_unit: fathers' lifespan per T allele of rs11855102 (T rides with the lead's T; printed label A, the UK arm Pilling's T line, pmid-29227965#q55), on Pilling's Martingale scale as Wright pooled it (negative = longer life, pmid-29227965#q45)
     effect_allele: T
     direction: protective
-    statistical_test: "Supplemental Table 9, the AncestryDNA arm of the fathers' meta-analysis, raw P (beta/SE), one-sided 0.043 raw; after Wright's genomic control (λ 1.182, q83) one-sided about 0.057 (derived), no pass; rs11855102 r² 0.72 (CEU, D′ 0.91) to the lead, its T with the lead's T (db-ensembl-116#q602, q603, derived); outside mvAge's inputs; counted under D29.18 (UK arm alone P 0.0019, under the 2.5e-3 meta filter, q6); power 0.83 against the UK arm, heterogeneity P 0.52, no red flag. rs1678750 (q124, r² 0.98, raw P 0.0052) and rs1869907 (q125, r² 0.90, raw P 0.0017) lean the same way, selected by the filter (UK arms P 0.031, 0.027), not counted"
+    statistical_test: "Supplemental Table 9, the AncestryDNA arm of the fathers' meta-analysis, raw P (beta/SE), one-sided 0.043 raw; after Wright's genomic control (λ 1.182, q83) one-sided about 0.057 (derived), no pass; rs11855102 r² 0.72 (CEU, D′ 0.91) to the lead, its T with the lead's T (db-ensembl-116#q602, q603, derived); outside mvAge's inputs; not counted under D30.1: with the AncestryDNA arm at z = 0 the meta of the printed arms, deflated by 1.20, is P 0.034, above the 2.5e-3 filter (q6; derived); power 0.83 against the UK arm, heterogeneity P 0.52. rs1678750 (q124, r² 0.98, raw P 0.0052) and rs1869907 (q125, r² 0.90, raw P 0.0017) lean the same way, D30.1 P 0.14 and 0.13, not counted"
     curator: claude-opus-5-5
