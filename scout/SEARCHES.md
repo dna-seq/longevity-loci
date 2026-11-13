@@ -181,7 +181,40 @@ diabetes, monogenic disease reports) or germline studies of somatic traits (the 
 haematopoiesis landscape, 42990510; telomere-length Mendelian randomization papers). None bears on a seed locus as
 longevity evidence. No new locus in the sources queried.
 
-## Tracks D, F–K
+## Track D: healthspan, ageing rate, heritability
+
+First swept 2026-11-13. The synthesis states its scope as "2018–2026" and no date it covered to, so anything
+between its last search and 2026-10-20 is unknown, not covered. Queries, all PubMed by entry date:
+
+- **D-healthspan** (written 2026-11-10, unchanged): `(healthspan[tiab] OR frailty[tiab] OR "intrinsic capacity"[tiab] OR "healthy aging"[tiab] OR "healthy ageing"[tiab] OR "telomere length"[tiab]) AND ("genome-wide"[tiab] OR GWAS[tiab] OR "Mendelian randomization"[tiab] OR heritability[tiab])`
+- **D-clocks** (new 2026-11-13): `("age acceleration"[tiab] OR "brain age"[tiab] OR "organ age"[tiab] OR "organ aging"[tiab] OR "organ-specific aging"[tiab] OR "proteomic aging"[tiab] OR "proteomic clock"[tiab] OR "aging clock"[tiab] OR "biological age"[tiab] OR "epigenetic age"[tiab] OR "aging signatures"[tiab]) AND (GWAS[tiab] OR "genome-wide"[tiab] OR loci[tiab] OR "genetic architecture"[tiab] OR proteom*[tiab] OR mortality[tiab])`
+- **D-multimorbidity** (new 2026-11-13; run once, then replaced by D-multimorbidity-2: "resilience" alone took in plant and livestock genomics): `(multimorbidity[tiab] OR resilience[tiab] OR "aging-related outcomes"[tiab] OR "intrinsic capacity"[tiab]) AND (GWAS[tiab] OR "genome-wide"[tiab] OR "Mendelian randomization"[tiab] OR polygenic[tiab])`
+- **D-multimorbidity-2** (new 2026-11-13, for the next runs): `(multimorbidity[tiab] OR "cognitive resilience"[tiab] OR "resilience to"[tiab] OR "aging-related outcomes"[tiab] OR "intrinsic capacity"[tiab]) AND (GWAS[tiab] OR "genome-wide"[tiab] OR "Mendelian randomization"[tiab] OR polygenic[tiab]) AND (human*[tiab] OR participant*[tiab] OR individuals[tiab] OR adults[tiab] OR biobank[tiab])`. Recall 6/60 against 7; hits in this window 5 against 40.
+
+Track D's germline studies of mosaic loss, mtDNA copy number and telomeres are also C-somatic-germline's (track C).
+
+### Recall
+
+On track D's 60 PMIDs (`D_healthspan_evidence.csv`), 2026-11-13, cumulative: A-pgs 6, B-gwas 19, D-healthspan 30,
+E-core 35, E-heritability 39, E-clock 41, C-somatic-germline (with `mosaic[ti] OR "copy number"[tiab] OR
+heteroplasmy[tiab]` added for this check) 44, D-clocks 54, D-multimorbidity 58. Left out: the two mosaic-Y-loss GWAS
+(31748747, 28346444), whose abstracts pair "Y chromosome loss" with "genetic variants" or "predisposition", which the
+germline clause does not name.
+
+### Runs
+
+| Run | Window | Query | Hits | New | Queued |
+|---|---|---|---|---|---|
+| 2026-11-13 | 2026-10-20 → 2026-11-13 | D-healthspan | 8 | 3 | 0 |
+| 2026-11-13 | 2026-10-20 → 2026-11-13 | D-clocks | 43 | 36 | 0 |
+| 2026-11-13 | 2026-10-20 → 2026-11-13 | D-multimorbidity | 40 | 37 | 0 |
+
+76 new records, in `scout/screened.md`, at title level. D-clocks' are biological-age, clock and organ-age studies
+and reviews, none with a germline locus (the track E rule keeps clock GWAS out of scoring in any case); D-multimorbidity's
+are mostly plant and livestock genomics, plus a migraine GWAS and two Mendelian randomization papers. None bears on a
+seed locus. No new locus in the sources queried.
+
+## Tracks F–K
 
 Not yet swept. Their queries below are **new**, written 2026-11-10, and **not yet run or recall-checked**; the
 first run of each checks its recall on its track's CSV and may change them. All PubMed by entry date, as above.
@@ -191,7 +224,7 @@ first run of each checks its recall on its track's CSV and may change them. All 
 | A | LongevityMap, HAGR, the v1 audit | PubMed, HAGR site and Build 3, GWAS Catalog v2, Open Genes, HALL | 2026-11-03 (live site checked); swept 2026-11-13, above |
 | B | common-variant GWAS of longevity and lifespan | PubMed, Crossref, GWAS Catalog v2, PGS Catalog | 2026-11-03 (Catalog pulled); swept 2026-11-13, above |
 | C | rare and protective variants, centenarian sequencing | PubMed, Europe PMC, Crossref | unknown (scope "2015–2026"); swept 2026-11-13, above |
-| D | healthspan, ageing rate, heritability | PubMed, Crossref, GWAS Catalog v2 REST | unknown (scope "2018–2026") |
+| D | healthspan, ageing rate, heritability | PubMed, Crossref, GWAS Catalog v2 REST | unknown (scope "2018–2026"); swept 2026-11-13, above |
 | F | reporting to three audiences | PubMed, Crossref, product pages | unknown |
 | G | evaluating SNP-level associations | PubMed, Open Targets 26.09 | 2026-11-03 (titles checked) |
 | H | pleiotropy and context | PubMed, Open Targets | unknown |

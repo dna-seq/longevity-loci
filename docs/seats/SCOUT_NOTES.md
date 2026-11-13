@@ -21,10 +21,10 @@ First work:
 
 ## Next
 
-- The next sweep is the track whose last run is oldest. A, B and C swept 2026-11-13 (no new locus; B took the GWAS
-  Catalog v2, whose list also shows nine pre-2023 studies no track holds, named in SEARCHES; C gained five queries,
-  C-protect-2 replacing C-protect from the next run). D, F to K are at 2026-11-03 or unknown, so D next, then the
-  table's order; their queries are in `scout/SEARCHES.md`, to be recall-checked at each first run.
+- The next sweep is the track whose last run is oldest. A to D swept 2026-11-13 (no new locus; B took the GWAS
+  Catalog v2, whose list also shows nine pre-2023 studies no track holds, named in SEARCHES; C-protect-2 and
+  D-multimorbidity-2 replace their noisy first versions from the next run). F to K are at 2026-11-03 or unknown, so F
+  next, then the table's order; their queries are in `scout/SEARCHES.md`, to be recall-checked at each first run.
 - Track E reruns from 2026-11-10 with its six queries (E-core, E-survival, E-somatic-2, E-clock, E-heritability, E-preprint).
 
 - Open, unattended: track E's own unpublished preprints (Sasaki, Putter, Salazar, Hamilton, Kornilov and the others in

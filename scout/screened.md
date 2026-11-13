@@ -177,3 +177,84 @@ here is not new to a later run. Verdicts on titles, or on abstracts where `scout
 | pmid 42932250 | somatic or germline-of-somatic (CH, telomere, mtDNA), not a longevity locus | Molecular Underpinnings and Prevalence of Donor Cell-Derived Hematologic Neoplasms among Spanish Transplantati |
 | pmid 42926536 | out of scope (animal, plant, clinical or non-genetic) | Random mtDNA mutagenesis maps genotype-phenotype associations across metabolic contexts and lineages. |
 | pmid 42918647 | somatic or germline-of-somatic (CH, telomere, mtDNA), not a longevity locus | From ribosomal stress to clonal adaptation: Del(5q) MDS as a paradigmatic acquired ribosomopathy. |
+
+## Track D, run 2026-11-13 (window 2026-10-20 → 2026-11-13)
+
+| Record | Verdict | Title |
+|---|---|---|
+| pmid 43006742 | out of scope (animal, plant, clinical or non-genetic) | The emerging oral-heart failure axis: Mechanistic plausibility, bidirectionality, and the limits of causal evi |
+| pmid 42921587 | out of scope (animal, plant, clinical or non-genetic) | Three Systemic Comorbidity Axes in Chronic Obstructive Pulmonary Disease: A Comparative Bibliometric Analysis  |
+| pmid 42920774 | disease or trait genetics, not longevity | Distinct host genetic determinants of HIV acquisition and disease progression: the case of classical HLA class |
+| pmid 43019165 | biological-age or clock study (or review), no germline locus | Association of Accelerated Biological Age in Midlife with Cardiovascular Events, Dementia, and All-Cause Morta |
+| pmid 43017732 | biological-age or clock study (or review), no germline locus | Mosaic ageing: from organ-specific decline to the cause of death. |
+| pmid 43015820 | biological-age or clock study (or review), no germline locus | Joint effects of phenotypic age acceleration and novel insulin resistance indicators on mortality in adults wi |
+| pmid 43014623 | biological-age or clock study (or review), no germline locus | Longevitomics as the Science of the Longevitome: Towards a Unified Systems Science of Healthy Longevity. |
+| pmid 43011060 | biological-age or clock study (or review), no germline locus | External validation and cross-center transportability of phenotypic age acceleration and laboratory frailty fo |
+| pmid 43009108 | biological-age or clock study (or review), no germline locus | Analysis of exposures linked to age acceleration using epigenetic and biological clocks. |
+| pmid 43009066 | biological-age or clock study (or review), no germline locus | High free sugar dietary pattern, not high fiber-low energy density pattern, predicts increased bipolar disorde |
+| pmid 43007938 | biological-age or clock study (or review), no germline locus | Age-dependent albumin post-translational modification landscape reveals a critical midlife transition window. |
+| pmid 43007671 | biological-age or clock study (or review), no germline locus | Chemotherapy-Induced Biological Age Acceleration and Lifetime Outcomes in Breast Cancer Survivors. |
+| pmid 43007612 | out of scope (animal, plant, clinical or non-genetic) | DNA methylation correlates with lifespan and predicts remaining lifespan in the zebra finch. |
+| pmid 43001427 | biological-age or clock study (or review), no germline locus | Early adversity, poverty, and positive social development show distinct associations across epigenetic aging m |
+| pmid 42999150 | out of scope (animal, plant, clinical or non-genetic) | Sexual reproduction impacts vertebrate organ aging. |
+| pmid 42995312 | biological-age or clock study (or review), no germline locus | Species-level Torque teno virus abundance is associated with immune impairment, epigenetic aging markers, and  |
+| pmid 42994782 | biological-age or clock study (or review), no germline locus | Associations of Artificial Light at Night with Multi-Organ Biological Aging: Epidemiological Evidence from a M |
+| pmid 42990275 | out of scope (animal, plant, clinical or non-genetic) | Proteomic clocks reveal organ-specific signatures of aging in mice. |
+| pmid 42987986 | out of scope (animal, plant, clinical or non-genetic) | Ageing and platelet-rich therapies: Biological determinants of regenerative potential. |
+| pmid 42981415 | biological-age or clock study (or review), no germline locus | A functional connectome identifies vulnerability to cognitive decline and Alzheimer's disease progression. |
+| pmid 42962081 | out of scope (animal, plant, clinical or non-genetic) | An Exceptional Mobility Group Among Older Adults: Protocol for the Super Movers Study. |
+| pmid 42960263 | biological-age or clock study (or review), no germline locus | Clustering of Cardiovascular Risk Factors in Midlife Forms Trajectories That Affect Heart Aging Biomarker and  |
+| pmid 42955453 | biological-age or clock study (or review), no germline locus | Beyond age prediction: a task-oriented framework for evaluating molecular aging clocks. |
+| pmid 42954807 | biological-age or clock study (or review), no germline locus | Dataset-Agnostic Biological Age Calculator and Predictions of Mortality in NHANES (1999-2010), UK Biobank (200 |
+| pmid 42945059 | biological-age or clock study (or review), no germline locus | A Physiology-Informed Deep Learning Approach for Sleep-EEG Brain Age Estimation. |
+| pmid 42935341 | biological-age or clock study (or review), no germline locus | [Omics and integrative methods for assessing biological age.]. |
+| pmid 42935332 | biological-age or clock study (or review), no germline locus | [Theory of resilience in geriatric medicine.]. |
+| pmid 42935254 | biological-age or clock study (or review), no germline locus | Predicting organ age with multimodal data identifies ageing-associated plasma proteins and behavioural traits. |
+| pmid 42934806 | biological-age or clock study (or review), no germline locus | Proteomic ageing clocks: methods, mechanisms and the muscle connection. |
+| pmid 42925715 | biological-age or clock study (or review), no germline locus | Associations between infection and organ age gaps: results from the UK Biobank. |
+| pmid 42922648 | biological-age or clock study (or review), no germline locus | Decoding heterogeneous aging clocks and disease risk stratification using MetAgeFormer. |
+| pmid 42922607 | biological-age or clock study (or review), no germline locus | Multi-organ aging quantified from routine chest CT predicts chronic disease risk and mortality. |
+| pmid 42920909 | biological-age or clock study (or review), no germline locus | Epigenetic age acceleration enhances prediction of overall survival in early-stage non-small cell lung cancer. |
+| pmid 42919166 | biological-age or clock study (or review), no germline locus | A novel method for biological age assessment utilizing hospitalization risk of cardiovascular disease. |
+| pmid 42918670 | biological-age or clock study (or review), no germline locus | The postpartum recovery window as a determinant of maternal aging. |
+| pmid 42910254 | out of scope (animal, plant, clinical or non-genetic) | Outcomes following Pancreatoduodenectomy in Patients ≥80 Years: An Analysis of the Prospective Pancreas Regist |
+| pmid 42906917 | biological-age or clock study (or review), no germline locus | From hyperfunction to systemic amplification: reframing the logic of late-life rejuvenation. |
+| pmid 42906648 | biological-age or clock study (or review), no germline locus | Novel inflammation index and biological aging indicators in diabetes: unveiling the role of platelets in infla |
+| pmid 42904574 | biological-age or clock study (or review), no germline locus | Accelerated Epigenetic Aging in Frontotemporal Dementia Highlights Smoking, Inflammation, and Metabolic Signal |
+| pmid 43017724 | out of scope (animal, plant, clinical or non-genetic) | Non-canonical telomere repeat-binding factor 2 control of retinal development. |
+| pmid 43010681 | out of scope (animal, plant, clinical or non-genetic) | HiEGP: An environment-informed genomic prediction framework that facilitates soybean genebank germplasm evalua |
+| pmid 43008421 | out of scope (animal, plant, clinical or non-genetic) | Thermotolerance of natural Arabidopsis thaliana demes growing under salinity. |
+| pmid 43005530 | out of scope (animal, plant, clinical or non-genetic) | Genome-wide diversity and Pinna rudis admixture reveal Thau lagoon as a conservation reservoir for the collaps |
+| pmid 43004933 | out of scope (animal, plant, clinical or non-genetic) | Genotype-Environment Association and Climate Change Vulnerability of the Economically Important Crop Wild Rela |
+| pmid 43001614 | out of scope (animal, plant, clinical or non-genetic) | Building evolutionary resilience as a framework for managing safe haven populations. |
+| pmid 42998976 | out of scope (animal, plant, clinical or non-genetic) | Genome-wide SNP analysis of genetic diversity and selection signatures in ​Black ​Bengal goats. |
+| pmid 42998744 | disease or trait genetics, not longevity | ACEs and CKL diseases in middle and old age: Multistate model and MR analysis of a national cohort. |
+| pmid 42998130 | out of scope (animal, plant, clinical or non-genetic) | Genetic foundations of copper stress tolerance in safflower: bridging heavy metal contamination and global war |
+| pmid 42990293 | out of scope (animal, plant, clinical or non-genetic) | Ms4a4a loss preferentially remodels microglia with limited, compartment-specific effects across central and pe |
+| pmid 42990286 | out of scope (animal, plant, clinical or non-genetic) | Single-Nucleus Profiling Reveals Neuronal Metabolic Collapse During the Transition to Alzheimer's Disease Deme |
+| pmid 42980835 | out of scope (animal, plant, clinical or non-genetic) | Breeding the unbreedable: bottlenecks and genetic pathways to climate-resilient saffron (Crocus sativus L.). |
+| pmid 42974365 | out of scope (animal, plant, clinical or non-genetic) | Genome-wide selection signatures in Turkish Awassi sheep: uncovering the genetic basis of production traits an |
+| pmid 42974123 | out of scope (animal, plant, clinical or non-genetic) | Climate factors drive the local adaptation of Old World cattle. |
+| pmid 42972217 | out of scope (animal, plant, clinical or non-genetic) | A linear-transformer hybrid for single-nucleotide polymorphism-based genotype-to-phenotype prediction in grape |
+| pmid 42967103 | out of scope (animal, plant, clinical or non-genetic) | Nationwide Tracking of A-Lineage Spread in Western Honey Bees Using Haplotype Sharing, Local Ancestry Mapping, |
+| pmid 42963550 | out of scope (animal, plant, clinical or non-genetic) | A molecular rheostat of ABA signaling coordinates the trade-off between stem growth and drought adaptation. |
+| pmid 42950696 | out of scope (animal, plant, clinical or non-genetic) | Genome-wide identification and functional analysis of SR proteins in wheat reveal their roles in heat stress t |
+| pmid 42941984 | out of scope (animal, plant, clinical or non-genetic) | Evaluation of PSII Thermal Stability in Grapevine Germplasm and Identification of Candidate Genes Based on a G |
+| pmid 42938322 | out of scope (animal, plant, clinical or non-genetic) | Population Genomics of North Carolina's Black Bears (Ursus americanus) Reveals Substructure and Identifies Inf |
+| pmid 42938311 | out of scope (animal, plant, clinical or non-genetic) | Evidence of Selective Response in the Free-Breeding Dog Population in Chornobyl. |
+| pmid 42929732 | out of scope (animal, plant, clinical or non-genetic) | Mechanistic insights into atmospheric and room-temperature plasma (ARTP)-induced genomic alterations and pheno |
+| pmid 42929444 | out of scope (animal, plant, clinical or non-genetic) | Genetic Parameters and Genome-Wide Association Analysis of Reproductive Traits in Egyptian Buffalo. |
+| pmid 42924152 | out of scope (animal, plant, clinical or non-genetic) | Fine-Scale Population Structure, High Gene Flow and Local Adaptation in Australasian Snapper (Chrysophrys aura |
+| pmid 42923023 | out of scope (animal, plant, clinical or non-genetic) | Genome-Wide Identification and Stress-Responsive Expression of the JAZ Gene Family in Cinnamomum burmannii. |
+| pmid 42923004 | out of scope (animal, plant, clinical or non-genetic) | The NF-Y gene family in Rosa: evolutionary divergence across three species and potential roles in heat toleran |
+| pmid 42922860 | disease or trait genetics, not longevity | Genomic Architecture of Migraine: A Multi-ancestry GWAS Meta-analysis of 2.5 Million Participants. |
+| pmid 42920041 | out of scope (animal, plant, clinical or non-genetic) | Adaptive landscape and genetic divergence of Karnah sheep revealed by selection scans across multiple ovine br |
+| pmid 42914938 | out of scope (animal, plant, clinical or non-genetic) | Genome-wide association analysis of haematological and biochemical traits in blood and wool under basal and en |
+| pmid 42908411 | out of scope (animal, plant, clinical or non-genetic) | Field‑Based Dissection of Stomatal Anatomy and Conductance Reveals Stable QTL Under Drought and Heat in Wheat. |
+| pmid 42907830 | disease or trait genetics, not longevity | Unraveling the dual role of fibroblast growth factor 5 (FGF5) in cardiorenal diseases through multi-omics caus |
+| pmid 42906266 | out of scope (animal, plant, clinical or non-genetic) | A transcriptomic resilience gap between the substantia nigra and cerebellum is associated with regional vulner |
+| pmid 42904797 | out of scope (animal, plant, clinical or non-genetic) | Long Non-Coding RNAs: Key Regulators of Economic Traits in Livestock From Mechanisms to Breeding Applications. |
+| pmid 42903255 | out of scope (animal, plant, clinical or non-genetic) | Adverse childhood experiences and functional stability in the affective-to-psychotic spectrum: a longitudinal  |
+| pmid 42900769 | out of scope (animal, plant, clinical or non-genetic) | From Protective Factors to Mechanisms: Charting the Neurobiology of Schizophrenia Resilience. |
+| pmid 42899183 | out of scope (animal, plant, clinical or non-genetic) | Wheat forage quality: significance, genetic and genomic advances, knowledge gaps, and future directions. |
+| pmid 42898867 | out of scope (animal, plant, clinical or non-genetic) | Livestock immunogenomics based on omics integration: from infection and stress to xenotransplantation. |
