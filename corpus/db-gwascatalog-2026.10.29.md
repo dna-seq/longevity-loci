@@ -1780,3 +1780,12 @@ meta-analysis (P 5e-8). For row 79.
 Row 82. At rs4783780 the catalog holds three records: body mass index, A lowering it (β 0.0109 "decrease", P 3e-9;
 q495, q496), metabolic syndrome (allele unreported), and Timmers 2020's multivariate ageing traits, A, P 1e-8 (q497,
 q498). rs4784227 holds 34, mostly breast cancer, also systolic and pulse pressure and Parkinson's disease. For row 82.
+
+## Reading 2026-11-13, record
+
+> [q499] _embedded.studies[4] initial_sample_size 699,030 European ancestry individuals replication_sample_size NA gxe false gxg false snp_count 4999481 imputed true pooled true accession_id GCST90624049 full_summary_stats_available true pubmed_id 40759756 platforms Various - as reported in the original studies disease_trait Frailty (Factor 3 - Multimorbidity) full_summary_stats http://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST90624001-GCST90625000/GCST90624049 terms_of_license https://creativecommons.org/publicdomain/zero/1.0/
+
+> [q500] _embedded.studies[6] initial_sample_size 559,200 European ancestry individuals replication_sample_size NA gxe false gxg false snp_count 5423783 imputed true pooled true accession_id GCST90624047 full_summary_stats_available true pubmed_id 40759756 platforms Various - as reported in the original studies disease_trait Frailty (Factor 1 - Limited Social Support) full_summary_stats http://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST90624001-GCST90625000/GCST90624047 terms_of_license https://creativecommons.org/publicdomain/zero/1.0/
+
+Foote 2025's deposits in the catalog: GCST90624049, n 699,030, the multimorbidity factor (q499); GCST90624047, n 559,200,
+limited social support (q500); each n matches its deposit's. For row 85.

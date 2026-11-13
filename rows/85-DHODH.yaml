@@ -12,30 +12,35 @@ verdict_reason: >-
   shape, without row 12's replication. Outside UK Biobank and LifeGen nothing passes: Deelen 2019's 90th and 99th
   percentiles put A on the shorter-lived side, flat (P 0.79, 0.50); Wright 2019's AncestryDNA has no line at the lead,
   and its two Table 9 SNPs nearby (rs9928413 in the mothers, r² 0.53 in CEU; rs17604662 in the fathers, 0.48), each
-  counted under D29.18 (UK arms P 6.9e-4 and 9.6e-4), share their UK arms' signs at P 0.18 and 0.17, at best one-sided
-  0.09, at proxies too weak to carry the lead; FinnGen R11's death endpoint leans A's way, flat (P 0.69). No red flag
+  counted under D29.18 (UK arms P 6.9e-4 and 9.6e-4), share their UK arms' signs at P 0.18 and 0.17, no pass on either
+  allele's reading, at proxies too weak to carry the lead (Table 8's rs2303220 has no LD Ensembl reports); FinnGen R11's death endpoint leans A's way, flat (P 0.69). No red flag
   (D21, D25.3): calibrated from Timmers' β (A +0.0280), Deelen's 90th would flag under APOE's factor (power 1.00,
-  heterogeneity P 4e-5) but under the mean factor its power is 0.72, short of 0.8 (heterogeneity P 0.020); the 99th
-  the same (0.95 and P 5e-4; 0.40); a flag under one calibration only is none. So B, not D, and no
+  heterogeneity P 4e-5) but under the mean factor its power is 0.72, short of 0.8 (heterogeneity P 0.020; it would reach 0.8 at about
+  1.12 times Timmers' effect); the 99th the same (0.95 and P 5e-4; 0.40); a flag under one calibration only is
+  none. Timmers 2022's survival look-ups, Timmers 2020 and Rosoff 2023 hold no line for the lead. So B, not D, and no
   `replication_failed`; Deelen's lean against is said here. In UK Biobank the rest agrees or is flat: Pilling's both
   parents A P 2.8e-4 (inside Timmers), Park 2025's own survival flat (P 0.87, its allele columns swapped, as the
   frequencies show), Zenin 2019's healthspan A later, flat (P 0.14 after genomic control). Foote 2025's frailty factors
-  are not genome-wide here (the multimorbidity factor A less frail, P 0.026; limited social support 0.0039; the
-  general factor's deposit holds no line in the window), so D27.3's assumption that Foote reaches HP does not hold, as
-  at row 59. Lifespan +, healthspan 0, exceptional survival 0 (Deelen flat against, not significant, D28.3 needing a
-  study reading against: none is significant). Mechanism heart and vessels, through lipids: Timmers files the locus as
-  cardiometabolic, and of the 21 sets the lead tops 14 are lipid, alt T raising LDL cholesterol (P 2e-117), non-HDL
-  cholesterol, apolipoprotein B, triglycerides and mixed hyperlipidaemia, so the longer-lived A lowers them; the rest
-  are GALNT2 and plasma glycans, albumin and two eQTLs, and no disease set is topped by the lead, so no trade-off is
-  detected (D18.1). Association, not a mediator test: descriptive, as row 12. Pleiotropy mech:lipids. Causal C2: the
+  are not genome-wide at the lead (the multimorbidity factor A less frail, P 0.026; limited social support 0.0039; the
+  general factor's and factor 4's deposits hold no line in the window, Q-filtered as at row 59); Foote's nearest set,
+  multimorbidity at rs7187129 (P 1.7e-10), is 214 kb away with no European LD to the lead. So D27.3's assumption that
+  Foote reaches HP does not hold, as at row 59. Lifespan +, healthspan 0, exceptional survival 0 (Deelen leans against,
+  not significantly, so not − under D28.3). Neither sex nor age moderates the effect in Timmers' Figure 5 (P 0.11,
+  0.91); the bands peak in fathers at 60-70 and mothers at 70-80, the rest flat, so no age class. Mechanism heart and vessels, through lipids and coronary disease: Timmers files the locus as
+  cardiometabolic; of the 21 sets the lead tops 14 are lipid, alt T raising LDL cholesterol (P 2e-117), non-HDL
+  cholesterol, apolipoprotein B, triglycerides and mixed hyperlipidaemia, so the longer-lived A lowers them; and a
+  coronary-artery-disease set holds the lead (posterior 0.13), led by rs34042070 (r² 0.96 to 1.00), whose G rides with
+  T and raises coronary disease (β +0.040, P 1.3e-14). So A goes with lower lipids and less coronary disease; the
+  other sets the lead tops are GALNT2 and plasma glycans, albumin and two eQTLs, and no harm is tied to A (D18.1).
+  Association, not a mediator test: descriptive, as row 12. Pleiotropy mech:lipids and mech:cvd. Causal C2: the
   lead tops Timmers' PICS set at posterior 0.243 of seven. Effector E3, no gene named (D24): locus-to-gene gives HP
   0.965 and HPR 0.705, both past 0.5, and the set's cis-QTL colocalisations are HP 58, HPR 55, TXNL4B 21 and DHODH 9;
   HP is named in prose. A is the common allele at 81 %, so A/A is the reference (§6.2): A/T and T/T risk,
   PROTECT:ABSENCE_OF_RISK, as row 79. Age of action unknown. The evidence is European.
 axes:
-  tier: {value: B, cites: [pmid-30642433#q330, pmid-30642433#q30, pmid-30642433#q331, pmid-31413261#q199, pmid-31413261#q200, pmid-31484785#q133, pmid-31484785#q134, pmid-31484785#q6, db-ensembl-116#q643, db-ensembl-116#q644, db-finngen-r11#q62, pmid-29227965#q73, pmid-40021682#q87, pmid-40021682#q32, pmid-30729179#q118, pmid-30729179#q59, pmid-40759756#q7, pmid-40759756#q8, pmid-40759756#q2]}
-  mechanism: {value: heart_vessels, cites: [pmid-30642433#q330, db-opentargets-26.09#q959, db-opentargets-26.09#q960, db-opentargets-26.09#q961]}
-  pleiotropy: {values: ["mech:lipids"], cites: [db-opentargets-26.09#q959, db-opentargets-26.09#q960, db-opentargets-26.09#q961]}
+  tier: {value: B, cites: [pmid-30642433#q330, pmid-30642433#q30, pmid-30642433#q331, pmid-31413261#q199, pmid-31413261#q200, pmid-31484785#q133, pmid-31484785#q134, pmid-31484785#q6, db-ensembl-116#q643, db-ensembl-116#q644, db-finngen-r11#q62, pmid-29227965#q73, pmid-40021682#q87, pmid-40021682#q32, pmid-30729179#q118, pmid-30729179#q59, pmid-40759756#q7, pmid-40759756#q8, pmid-40759756#q2, db-gwascatalog-2026.10.29#q499, db-gwascatalog-2026.10.29#q500, db-opentargets-26.09#q967, pmid-30642433#q332, pmid-30642433#q333, pmid-30642433#q334]}
+  mechanism: {value: heart_vessels, cites: [pmid-30642433#q330, db-opentargets-26.09#q959, db-opentargets-26.09#q960, db-opentargets-26.09#q961, db-opentargets-26.09#q962, db-opentargets-26.09#q963, db-opentargets-26.09#q964]}
+  pleiotropy: {values: ["mech:lipids", "mech:cvd"], cites: [db-opentargets-26.09#q959, db-opentargets-26.09#q960, db-opentargets-26.09#q961, db-opentargets-26.09#q962, db-opentargets-26.09#q963, db-opentargets-26.09#q964, db-opentargets-26.09#q965, db-opentargets-26.09#q966, db-ensembl-116#q645]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "0",
             cites: [pmid-30729179#q118, pmid-30642433#q330, pmid-30642433#q331, pmid-29227965#q73, pmid-31413261#q199, pmid-31413261#q200]}
@@ -69,16 +74,16 @@ variants:
           You carry one copy of a less common version of this DNA position (about 31 in 100 people of European
           ancestry do). In a very large study of a million parents' lifespans, each copy went with parents living a
           few months less, and it goes with slightly higher LDL cholesterol. No separate study has confirmed the
-          lifespan link, and one study of people who reached old age leaned the other way, so this is a likely
-          finding, not a settled one. The effect is small and it is a tendency, not destiny.
+          lifespan link, and a study of people who reached old age did not see it, so this is a likely finding, not a
+          settled one. The effect is small and it is a tendency, not destiny.
       - genotype: T/T
         state: risk
         conclusion: >-
           You carry two copies of a less common version of this DNA position (about 4 in 100 people of European
           ancestry do). In a very large study of a million parents' lifespans, each copy went with parents living a
           few months less, and it goes with slightly higher LDL cholesterol. No separate study has confirmed the
-          lifespan link, and one study of people who reached old age leaned the other way, so this is a likely
-          finding, not a settled one. The effect is small and it is a tendency, not destiny.
+          lifespan link, and a study of people who reached old age did not see it, so this is a likely finding, not a
+          settled one. The effect is small and it is a tendency, not destiny.
 studies:
   - rsid: rs12924886
     note: pmid-30642433

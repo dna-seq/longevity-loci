@@ -2296,3 +2296,10 @@ rs5882 (row 84): CETP missense, codons Gtc/Atc (q640): the reference G codes val
 Row 85. rs12924886 (q641): GRCh38 16:72,041,694, A/T, A ancestral; T 0.193 in 1000 Genomes Europeans (q642); an intron
 variant of a lncRNA near TXNL4B and HP. Wright's nearby Table 9 SNPs: rs9928413 r² 0.53 (q643), rs17604662 r² 0.48
 (q644) in CEU. For row 85.
+
+## Reading 2026-11-13, record
+
+> [q645] [4] population_name 1000GENOMES:phase_3:CEU d_prime 1.000000 r2 0.955980 variation2 rs34042070 variation1 rs12924886
+
+Row 85: rs34042070 r² 0.96, D′ 1.00 with rs12924886 in CEU (q645; 1.00 in GBR). Ensembl returns no CEU or GBR LD between
+rs12924886 and Foote's rs7187129 (below its reporting floor): not a tag. For row 85.

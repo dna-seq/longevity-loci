@@ -3492,3 +3492,24 @@ GALNT2 and plasma glycans, albumin, two eQTLs and Timmers' own set. No disease s
 
 rs12924886, row 85: the LDL-cholesterol set it tops (GCST90019512; q960, q961), alt T β +0.0255, P 2.2e-117: A lowers
 LDL. For row 85.
+
+## Reading 2026-11-13, record
+
+> [q962] data.variant.credibleSets.rows[44] studyLocusId 45a189a11b74e29c1fe99a1eb20821d3 pValueMantissa 1.2970000505447388 pValueExponent -14 beta 0.04023775 finemappingMethod PICS
+
+> [q963] data.variant.credibleSets.rows[44].variant id 16_72067626_C_G
+
+> [q964] data.variant.credibleSets.rows[44].locus.rows[0] posteriorProbability 0.13235586485841558
+
+> [q965] data.variant.rsIds[0] rs34042070
+
+> [q966] data.variant.alleleFrequencies[2] populationName nfe_adj alleleFrequency 0.19903498190591074
+
+> [q967] data.variant.rsIds[0] rs7187129
+
+rs12924886, row 85. A coronary-artery-disease set holding the lead (GCST90132315, q962), led by 16_72067626_C_G
+(q963), rs34042070 (q965), alt G β +0.040, P 1.3e-14, the lead at posterior 0.13 (q964). G is 0.199 in gnomAD's
+non-Finnish Europeans (q966), the lead's T 0.193 (db-ensembl-116#q642), r² 0.96 (CEU) and 1.00 (GBR)
+(db-ensembl-116#q645): G rides with T, so T raises coronary disease and A, the longer-lived allele, lowers it. Foote's
+factor 3 set at 16q22 (db-opentargets-26.09, foote7 listing, P 1.7e-10) is led by 16_71827541_T_C, rs7187129 (q967),
+214 kb from the lead. For row 85.
