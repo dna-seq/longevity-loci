@@ -47,8 +47,7 @@ verdict_reason: >-
   D29.18 (the lead's sweep, 2026-11-13): the fathers' line at rs9462014 (raw P 0.083, one-sided 0.042) is a
   Supplemental Table 9 line, and Table 9 prints only SNPs whose AncestryDNA-UK Biobank meta P is below 2.5e-3
   (pmid-31484785#q6); its UK Biobank arm alone is P 0.0031, above that cut, so the pass was close to guaranteed by
-  the filter: named, not counted. the mothers at rs9462007 (UK Biobank arm 0.00046) and the fathers at rs9462007
-  (0.00087) still count, so nothing moves.
+  the filter: named, not counted. Under D30.1 (corrected 2026-11-13) neither rs9462007 line counts: with the AncestryDNA arm at z = 0 the deflated metas are P 0.012 (mothers) and 0.024 (fathers), above 2.5e-3 (derived), so both are named, supporting the direction only. B never rested on them (D18.3), and the cells rest on Timmers, Zenin and Deelen, so nothing moves.
 axes:
   tier: {value: B, cites: [pmid-31484785#q6, pmid-37550455#q38, pmid-37550455#q39, pmid-37550455#q40, pmid-37550455#q2, pmid-37550455#q3, pmid-37550455#q5, pmid-30642433#q213, pmid-30729179#q61, pmid-31413261#q95, pmid-31413261#q96, pmid-31484785#q75, pmid-31484785#q76, pmid-31484785#q77, pmid-31484785#q78, pmid-31484785#q15, db-ensembl-116#q253, db-ensembl-116#q254, db-ensembl-116#q255, db-ensembl-116#q256, db-finngen-r11#q10, db-gwascatalog-2026.10.29#q241, db-gwascatalog-2026.10.29#q242, db-gwascatalog-2026.10.29#q243]}
   mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q525, db-opentargets-26.09#q527, db-opentargets-26.09#q529, db-opentargets-26.09#q531, db-opentargets-26.09#q533, db-opentargets-26.09#q535, db-opentargets-26.09#q537, db-opentargets-26.09#q541, db-gwascatalog-2026.10.29#q253, db-gwascatalog-2026.10.29#q256, db-gwascatalog-2026.10.29#q259, db-gwascatalog-2026.10.29#q262, db-gwascatalog-2026.10.29#q265, db-gwascatalog-2026.10.29#q272]}

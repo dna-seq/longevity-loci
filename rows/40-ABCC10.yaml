@@ -9,7 +9,7 @@ locus_name: ABCC10
 verdict: kept
 verdict_reason: >-
   Tier B, as the seed has it: a genome-wide multivariate result with a co-occurring lifespan study (§4.5 as D16 reads
-  it), with an independent nominal replication; a multivariate result does not meet tier A's first criterion
+  it), with an independent nominal replication (AncestryDNA, Table 8); a multivariate result does not meet tier A's first criterion
   (D18.3), whatever its replication. Genome-wide significant only in Rosoff 2023's mvAge, the common factor behind
   healthspan, frailty, exceptional longevity, parental lifespan and epigenetic age (P 3.3e-8, C raising the factor,
   so T, at about 31 % in Europeans, is on the less healthy side); Rosoff lists it as novel, and its Q test (P 0.41) finds
@@ -21,7 +21,7 @@ verdict_reason: >-
   one-sided (P 0.22). All of these are inputs to mvAge, the same samples. Outside them, Wright 2019's AncestryDNA
   fathers replicate at rs1214759, 7 kb away on the lead's haplotype (r² 0.84, D′ 1): its A, which travels with T,
   shortens fathers' lives at raw P 0.0051 (one-sided 0.0026), and after Wright's genomic control (λ 1.182) at
-  two-sided 0.010, one-sided 0.005 (derived), so it holds either way. The counted allele is A, as Table 8 prints it
+  two-sided 0.010, one-sided 0.005 (derived), so it holds either way. The Table 9 line itself fails D30.1 (corrected 2026-11-13): with the AncestryDNA arm at z = 0 the deflated meta is P 0.029, above 2.5e-3 (derived); the replication stands on Table 8's line for the same SNP, filtered on the AncestryDNA arm alone (D29.18), so nothing moves. The counted allele is A, as Table 8 prints it
   for the same SNP in fathers born 1886-1918 (genomic-control P 6.2e-4, the same customers, one signal, D17.1); the
   UK Biobank arm's sign agrees with Timmers' A (P 1.7e-6), heterogeneity P 0.96. The mothers' table holds no line in
   LD with the lead. FinnGen's death endpoint is null (T β −0.0018, P 0.83, a slight lean the other way): within

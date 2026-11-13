@@ -11,8 +11,7 @@ verdict_reason: >-
   the paper's own 2.5e-8, UK Biobank and LifeGen on the same side; one of the five loci first found there. Row 12's
   shape, without row 12's replication. Outside UK Biobank and LifeGen nothing passes: Deelen 2019's 90th and 99th
   percentiles put A on the shorter-lived side, flat (P 0.79, 0.50); Wright 2019's AncestryDNA has no line at the lead,
-  and its two Table 9 SNPs nearby (rs9928413 in the mothers, r² 0.53 in CEU; rs17604662 in the fathers, 0.48), each
-  counted under D29.18 (UK arms P 6.9e-4 and 9.6e-4), share their UK arms' signs at P 0.18 and 0.17, no pass on either
+  and its two Table 9 SNPs nearby (rs9928413 in the mothers, r² 0.53 in CEU; rs17604662 in the fathers, 0.48), neither counted under D30.1 (with the AncestryDNA arm at z = 0 the deflated metas are P 0.015 and 0.024, above 2.5e-3; derived), share their UK arms' signs at P 0.18 and 0.17, no pass on either
   allele's reading, at proxies too weak to carry the lead (Table 8's rs2303220 has no LD Ensembl reports); FinnGen R11's death endpoint leans A's way, flat (P 0.69). No red flag
   (D21, D25.3): calibrated from Timmers' β (A +0.0280), Deelen's 90th would flag under APOE's factor (power 1.00,
   heterogeneity P 4e-5) but under the mean factor its power is 0.72, short of 0.8 (heterogeneity P 0.020; it would reach 0.8 at about

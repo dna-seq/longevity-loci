@@ -20,7 +20,7 @@ verdict_reason: >-
   raw P 0.016, mothers the same side at 0.065, and UK Biobank's arm agrees (heterogeneity P 0.69), so no red flag.
   That supports the direction, no more: it is nominal, at a weak proxy where the lead predicts a z of about 2.5
   (its LifeGen z 3.4 is higher), and rs1481245 also carries some of rs13141210 (r² 0.23), whose tags could supply
-  about 1.6 of its AncestryDNA z of 2.4. It cannot lift the tier. Wright's other SNPs near the lead tag it weakly
+  about 1.6 of its AncestryDNA z of 2.4. It cannot lift the tier, and under D30.1 (corrected 2026-11-13) the fathers' Table 9 line would not count anyway: with the AncestryDNA arm at z = 0 the deflated meta is P 0.016, above 2.5e-3 (derived). Wright's other SNPs near the lead tag it weakly
   (rs17799404 r² 0.39, rs987811 0.26, rs12506243 0.21), and the strongest here (rs11947612, rs923994) have r² below
   0.05 to the lead and belong to rs13141210's side. Healthspan agrees: T delays the end of healthspan in Zenin 2019 (P 0.010)
   and lowers frailty (P 2.7e-5), both mvAge inputs, healthspan-class (D17.1). Exceptional survival is +: Deelen
