@@ -5,13 +5,19 @@
 # none of a lifespan study.
 locus_id: 83
 locus_name: FTO
-verdict: kept
+verdict: re-tiered
 verdict_reason: >-
-  Tier C, as the seed has it, by R-TIER-4, row 8's shape: nothing at the variant reaches genome-wide significance for
-  any lifespan or healthspan phenotype, nothing in the window even reaches suggestive (Timmers 2019's strongest line
-  within 250 kb is P 3.0e-4, the lead itself 3.9e-4, so the lead is the locus's lifespan peak; Timmers' risk-factor-informed Bayesian scan, Table 2, does not list
-  it, D28.7), and R-TIER-4 keeps an
-  MR-only result out of A and B, which leaves C. The seed's ground is Joshi
+  Tier B, up from the seed's C (put to the lead, with C the alternative), row 51's shape: a genome-wide multivariate
+  result with a co-occurring lifespan study (§4.5 as D16 reads it; D18.3, D27.3). Foote 2025's frailty factors are
+  genome-wide at the locus: multimorbidity (factor 3) P 2.0e-17 and disability (factor 6) P 3.0e-14, both at
+  rs11642015, 1.5 kb away and in complete LD with the lead (r² 1.00, D′ 1.00 in CEU and GBR), its C the lead's T, the
+  less frail; Foote's deposits hold no line at the lead itself (all seven fetched), so the proxy stands in (D29.3), and
+  both of Foote's Open Targets sets here are led by it. A Genomic SEM factor is multivariate (D27.3) and scores at B
+  beside a co-occurring lifespan study (D18.3), here Timmers 2019 (T P 3.9e-4), so B; not A, which a multivariate
+  result cannot open. The first reading of this row (C, by R-TIER-4) missed Foote's sets on the 200 of 1,701 sets
+  first read. Nothing univariate is genome-wide: Timmers' window holds nothing suggestive (its strongest line P 3.0e-4,
+  the lead 3.9e-4, the locus's lifespan peak), and Timmers' risk-factor-informed Bayesian scan (Table 2) does not list
+  it (D28.7). The seed's ground is Joshi
   2017's Mendelian randomisation (one BMI unit about 7 months of life), a polygenic instrument over many BMI loci, not
   a per-variant result here. The variant's own lifespan evidence is nominal and points one way. Timmers 2019's
   million parents' lives: T longer-lived, P 3.9e-4, UK Biobank and LifeGen both on that side (Pilling's UK Biobank
@@ -26,9 +32,10 @@ verdict_reason: >-
   the 90th percentile (0.041 at the 99th, a subset of the same cases, so one look-up). Zenin 2019's
   healthspan leans T's way short of nominal (P 0.061 after its genomic control); Park 2025's own survival is flat on
   T's side (P 0.14, its allele columns swapped, as the frequencies show); FinnGen R11's death endpoint leans against
-  (C with slightly fewer deaths, P 0.25). B's first condition (genome-wide) fails, the nominal results agree in two
-  independent samples, and nothing contradicts them, so not D. Lifespan +, exceptional survival + (Deelen's one look-up,
-  one-sided), healthspan 0. Mechanism metabolism, through body weight: the lead tops BMI sets (posterior up to 0.85, C raising
+  (C with slightly fewer deaths, P 0.25). None of these lifts B to A (a multivariate result cannot open A,
+  D18.3), and nothing contradicts the locus, so not D. Lifespan +, exceptional survival + (Deelen's one look-up,
+  one-sided), healthspan + on Foote's frailty factors, read for the healthspan cell as at rows 43 and 51 (Zenin 2019's
+  healthspan leans the same way, P 0.061). Mechanism metabolism, through body weight: the lead tops BMI sets (posterior up to 0.85, C raising
   BMI at P 2.4e-277), and C goes with more diabetes (P 1.5e-97), ischaemic heart disease (P 3.6e-16), higher HbA1c,
   glucose, CRP and blood pressure. Read over all 1,701 of its sets (it tops 380), two
   things run the other way: about 40 lipid sets in which C lowers LDL, total cholesterol and the IDL and very-small-VLDL
@@ -37,31 +44,28 @@ verdict_reason: >-
   D18.1's tradeoff, and with it actionability descriptive, not modifiable through weight (D18.2). Put to the lead
   beside modifiable (weight), on the ground that T has less ischaemic heart disease at the same variant. Of 21
   body-weight sets the lead tops, two run against the rest; a bone-density set prints no β. Pleiotropy
-  mech:adiposity, broad, tradeoff. Causal C4 and effector E4, no gene named: no credible set of a lifespan-class study
-  holds the lead (none of eleven longevity studies queried), as row 69; FTO, in whose intron it sits, is named in
-  prose. C is the minor allele at 43 %, so T/C, the commonest genotype, is the reference (§6.2): T/T protective, C/C
+  mech:adiposity, broad, tradeoff. Causal C3: in Foote's factor 3 set, led by rs11642015, the lead sits at posterior 0.039 of 70.
+  Effector E2, FTO: locus-to-gene 0.986 on that set, with no cis-QTL colocalisation (its two are trans pQTLs). C is the minor allele at 43 %, so T/C, the commonest genotype, is the reference (§6.2): T/T protective, C/C
   risk, as row 8 states its nominal variant. Age of action unknown. The evidence is European.
 axes:
-  tier: {value: C, cites: [pmid-29030599#q18, pmid-30642433#q325, pmid-29227965#q68, pmid-29227965#q70, pmid-31484785#q129, pmid-31484785#q130, pmid-31484785#q131, pmid-31484785#q132, pmid-31484785#q6, pmid-29227965#q69, pmid-29227965#q45, db-ensembl-116#q629, db-ensembl-116#q630, db-ensembl-116#q631, db-ensembl-116#q632, pmid-31413261#q193, pmid-31413261#q194, pmid-30729179#q115, pmid-30729179#q59, pmid-40021682#q85, pmid-40021682#q32, db-finngen-r11#q59, pmid-30642433#q327, db-ensembl-116#q635]}
+  tier: {value: B, cites: [pmid-40759756#q9, pmid-40759756#q10, pmid-40759756#q2, db-ensembl-116#q646, db-opentargets-26.09#q972, db-opentargets-26.09#q973, db-opentargets-26.09#q974, db-opentargets-26.09#q975, db-opentargets-26.09#q976, pmid-29030599#q18, pmid-30642433#q325, pmid-29227965#q68, pmid-29227965#q70, pmid-31484785#q129, pmid-31484785#q130, pmid-31484785#q131, pmid-31484785#q132, pmid-31484785#q6, pmid-29227965#q69, pmid-29227965#q45, db-ensembl-116#q629, db-ensembl-116#q630, db-ensembl-116#q631, db-ensembl-116#q632, pmid-31413261#q193, pmid-31413261#q194, pmid-30729179#q115, pmid-30729179#q59, pmid-40021682#q85, pmid-40021682#q32, db-finngen-r11#q59, pmid-30642433#q327, db-ensembl-116#q635]}
   mechanism: {value: metabolism, cites: [db-opentargets-26.09#q929, db-opentargets-26.09#q930, db-opentargets-26.09#q931, db-opentargets-26.09#q932, db-opentargets-26.09#q933, db-opentargets-26.09#q934, db-opentargets-26.09#q935, pmid-29030599#q18]}
   pleiotropy: {values: ["mech:adiposity", broad, tradeoff], cites: [db-opentargets-26.09#q927, db-opentargets-26.09#q929, db-opentargets-26.09#q930, db-opentargets-26.09#q932, db-opentargets-26.09#q933, db-opentargets-26.09#q934, db-opentargets-26.09#q935, db-opentargets-26.09#q936, db-opentargets-26.09#q937, db-opentargets-26.09#q938, db-opentargets-26.09#q939, db-opentargets-26.09#q940, db-opentargets-26.09#q941]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "+",
-            cites: [pmid-30729179#q115, pmid-30642433#q325, pmid-31484785#q129, pmid-31484785#q130, pmid-40021682#q85, db-finngen-r11#q59, pmid-31413261#q193, pmid-31413261#q194]}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
+            cites: [pmid-40759756#q9, pmid-40759756#q10, pmid-30729179#q115, pmid-30642433#q325, pmid-31484785#q129, pmid-31484785#q130, pmid-40021682#q85, db-finngen-r11#q59, pmid-31413261#q193, pmid-31413261#q194]}
   actionability: {label: descriptive, cites: [db-opentargets-26.09#q936, db-opentargets-26.09#q937, db-opentargets-26.09#q938, db-opentargets-26.09#q939]}
   context: {values: [eur_only_evidence], cites: [pmid-30642433#q325, pmid-31484785#q129]}
 flags:
-  - {token: "causal:C4", cites: [db-opentargets-26.09#q927, db-opentargets-26.09#q928]}
-  - {token: "effector:E4", cites: [db-opentargets-26.09#q927, db-opentargets-26.09#q928, db-ensembl-116#q634]}
+  - {token: "causal:C3", cites: [db-opentargets-26.09#q972, db-opentargets-26.09#q973, db-opentargets-26.09#q974, db-opentargets-26.09#q977]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q978, db-opentargets-26.09#q979]}
 variants:
   - rsid: rs1421085
-    gene: ""
+    gene: FTO
     phenotype: FTO, body weight, parents' lifespan
     trait_efo_id: EFO_0007796
     effect_allele: T
-    effect_size: 0.01394984
-    effect_measure: beta
-    stat_significance: nominal
+    stat_significance: significant
     direction: protective
     negatives: >-
       The longer-life version, T, also goes with slightly higher LDL cholesterol and a slightly higher risk of one
@@ -73,7 +77,7 @@ variants:
           You carry two copies of the version of this DNA position that goes with lower body weight (about 32 in 100
           people of European ancestry do). In large studies parents of carriers lived a little longer, and a separate
           American study saw the same in fathers; it also goes with less diabetes and heart disease. No single study
-          found it beyond doubt, so this is a possible finding, not a settled one. The effect is small and it is a
+          found it beyond doubt for lifespan, though a large combined analysis of frailty did, so this is a likely finding, not a settled one. The effect is small and it is a
           tendency, not destiny.
       - genotype: C/T
         state: neutral
@@ -87,10 +91,30 @@ variants:
         conclusion: >-
           You carry two copies of the version of this DNA position that goes with higher body weight (about 19 in
           100 people of European ancestry do). In large studies parents of carriers lived a little less long, and it
-          also goes with more diabetes and heart disease. No
-          single study found it beyond doubt, so this is a possible finding, not a settled one. The effect is small
+          also goes with more diabetes, heart disease and frailty. No single study found it beyond doubt for
+          lifespan, though a large combined analysis of frailty did, so this is a likely finding, not a settled one. The effect is small
           and it is a tendency, not destiny.
 studies:
+  - rsid: rs1421085
+    note: pmid-40759756
+    quote: q9
+    phenotype_class: MULTIVARIATE_AGEING
+    study_design: meta_analysis
+    population: European (consortium GWAS and Pan-UK Biobank summary statistics of frailty deficits)
+    ancestry: [EUR]
+    sample_size: 699030
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "1.97358707549721e-17"
+    p_value_num: 1.97358707549721e-17
+    proxy_rsid: rs11642015
+    effect_size: -0.0145988158018329
+    effect_measure: beta
+    effect_unit: frailty factor 3 (multimorbidity) per C allele of rs11642015, the lead's T (negative = less frail)
+    effect_allele: C
+    direction: protective
+    statistical_test: "Genomic SEM GWAS of Foote 2025's latent frailty factor 3, multimorbidity (deposit GCST90624049, GRCh37, q9), SE 0.0017, Q P 0.046; factor 6, disability, C -0.0179, P 3.0e-14 (q10); no line at the lead in any of the seven deposits, rs11642015 r² 1.00 (db-ensembl-116#q646), C with the lead's T by frequency; effects toward the frailty-raising side (q2); multivariate (D27.3), scoring at B beside Timmers (D18.3)"
+    curator: claude-opus-5-5
   - rsid: rs1421085
     note: pmid-30642433
     quote: q325

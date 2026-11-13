@@ -3513,3 +3513,48 @@ non-Finnish Europeans (q966), the lead's T 0.193 (db-ensembl-116#q642), r² 0.96
 (db-ensembl-116#q645): G rides with T, so T raises coronary disease and A, the longer-lived allele, lowers it. Foote's
 factor 3 set at 16q22 (db-opentargets-26.09, foote7 listing, P 1.7e-10) is led by 16_71827541_T_C, rs7187129 (q967),
 214 kb from the lead. For row 85.
+
+## Reading 2026-11-13, record
+
+> [q968] data.variant.credibleSets.rows[105] studyLocusId 0e059c4548bde15553a0ee98505b3aa3 pValueMantissa 1 pValueExponent -149 beta null finemappingMethod PICS
+
+> [q969] data.variant.credibleSets.rows[105].variant id 16_56956804_C_A
+
+> [q970] data.variant.credibleSets.rows[105].study id GCST004045 traitFromSource Age-related diseases, mortality and associated endophenotypes studyType gwas
+
+> [q971] data.variant.credibleSets.rows[105].locus.rows[0] posteriorProbability 0.07987396605649862
+
+rs3764261, row 84: the one ageing-named set at CETP in all 1,707, GCST004045 "Age-related diseases, mortality and
+associated endophenotypes" (q970; PICS, P 1e-149, no β, q968), led by 16_56956804_C_A (q969), the lead at posterior
+0.08 (q971). Its study (db-gwascatalog-2026.10.29#q501): 9,618 European individuals, a pleiotropic analysis that pools
+diseases with endophenotypes; in that sample a P of 1e-149 cannot be a lifespan signal and is most likely CETP's HDL
+effect (inference, the endophenotypes not read here). For row 84.
+
+## Reading 2026-11-13, record
+
+> [q972] data.variant.credibleSets.rows[31] studyLocusId 9b4a8900ab048fd09fd8005c8d40940f pValueMantissa 1.9739999771118164 pValueExponent -17 beta 0.0145988158018329 finemappingMethod PICS
+
+> [q973] data.variant.credibleSets.rows[31].variant id 16_53768582_C_T
+
+> [q974] data.variant.credibleSets.rows[31].study id GCST90624049 traitFromSource Frailty (Factor 3 - Multimorbidity) studyType gwas
+
+> [q975] data.variant.credibleSets.rows[100].study id GCST90624052 traitFromSource Frailty (Factor 6 - Disability) studyType gwas
+
+> [q976] data.variant.rsIds[0] rs11642015
+
+rs1421085, row 83: two of its 1,701 sets are Foote's frailty factors, factor 3 (GCST90624049; PICS, P 2.0e-17; q972,
+q974) and factor 6 (GCST90624052, P 3.0e-14; q975), both led by 16_53768582_C_T (q973), rs11642015 (q976), the lead
+at posterior 0.039 and 0.034. Also a set of GCST004045 (age-related diseases, mortality and endophenotypes, 9,618
+people; db-gwascatalog-2026.10.29#q501) led by another variant, the lead at posterior 0.009. For row 83.
+
+## Reading 2026-11-13, record
+
+> [q977] data.credibleSet.locus count 70
+
+> [q978] data.credibleSet.l2GPredictions.rows[0] score 0.9860568046569824
+
+> [q979] data.credibleSet.colocalisation count 2
+
+Foote's factor 3 set at FTO (9b4a8900…), row 83: 70 members (q977), the lead rs1421085 at posterior 0.039
+(q972's set); locus-to-gene FTO 0.986 (q978; RPGRIP1L 0.20 next); its two QTL colocalisations (q979) are trans pQTLs
+(LEP, OBP2B), no cis one. For row 83.

@@ -2303,3 +2303,9 @@ variant of a lncRNA near TXNL4B and HP. Wright's nearby Table 9 SNPs: rs9928413 
 
 Row 85: rs34042070 r² 0.96, D′ 1.00 with rs12924886 in CEU (q645; 1.00 in GBR). Ensembl returns no CEU or GBR LD between
 rs12924886 and Foote's rs7187129 (below its reporting floor): not a tag. For row 85.
+
+## Reading 2026-11-13, record
+
+> [q646] [4] r2 1.000000 variation1 rs1421085 population_name 1000GENOMES:phase_3:CEU d_prime 1.000000 variation2 rs11642015
+
+Row 83: rs11642015 r² 1.00, D′ 1.00 with rs1421085 in CEU (q646; GBR the same). For row 83.

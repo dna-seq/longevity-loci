@@ -1789,3 +1789,10 @@ q498). rs4784227 holds 34, mostly breast cancer, also systolic and pulse pressur
 
 Foote 2025's deposits in the catalog: GCST90624049, n 699,030, the multimorbidity factor (q499); GCST90624047, n 559,200,
 limited social support (q500); each n matches its deposit's. For row 85.
+
+## Reading 2026-11-13, record
+
+> [q501] . initial_sample_size 9,618 European ancestry individuals replication_sample_size 19,796 European ancestry individuals gxe false gxg false imputed false pooled false accession_id GCST004045 full_summary_stats_available false user_requested false pubmed_id 27790247 platforms Affymetrix [NR] disease_trait Age-related diseases, mortality and associated endophenotypes full_summary_stats NA terms_of_license https://www.ebi.ac.uk/about/terms-of-use/
+
+GCST004045 (PMID 27790247): initial sample 9,618 European-ancestry individuals, replication 19,796 (q501). For rows 84
+and 83, where it holds a set near each lead. For row 84.

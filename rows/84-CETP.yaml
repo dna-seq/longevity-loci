@@ -30,7 +30,10 @@ verdict_reason: >-
   raises HDL cholesterol in every HDL-cholesterol-level set it tops (UK Biobank, posterior 0.96, P 1e-322; one
   case-control "low HDL" set runs the other way on an unnamed scale) and lowers the VLDL and LDL fractions, and A goes
   with less statin use (P 7e-9); but nothing shows the lifespan effect runs through HDL, and no coronary set with a β is
-  topped by the lead. Two disease sets run against it, both macular degeneration, A raising it (P 7e-9 and 8e-12), as
+  topped by the lead. The one ageing-named set at CETP, a pleiotropic analysis of age-related diseases, mortality and
+  endophenotypes in 9,618 people (GCST004045, P 1e-149, the lead at posterior 0.08), pools diseases with
+  endophenotypes; in 9,618 people a P of 1e-149 cannot be a lifespan signal and is most likely CETP's HDL effect
+  (inference), so it is named and not counted. Two disease sets run against it, both macular degeneration, A raising it (P 7e-9 and 8e-12), as
   every macular-degeneration set at the locus has its alt allele raising it: a quoted harm on the longer-lived side
   (D18.1), tradeoff, so descriptive. Pleiotropy mech:lipids and tradeoff. Causal C4 and effector E4, no gene
   named: no credible set of a lifespan-class study holds the lead (none of eleven longevity studies queried); CETP is
@@ -39,7 +42,7 @@ verdict_reason: >-
 axes:
   tier: {value: C, cites: [pmid-30642433#q328, pmid-29227965#q71, pmid-29227965#q45, pmid-40021682#q86, pmid-40021682#q32, db-ensembl-116#q636, pmid-31413261#q195, pmid-31413261#q196, db-finngen-r11#q60, pmid-30729179#q116, pmid-14559957#q1, pmid-14559957#q2, pmid-14559957#q3, pmid-30642433#q329, pmid-29227965#q72, pmid-31413261#q197, pmid-31413261#q198, db-finngen-r11#q61, pmid-30729179#q117, db-ensembl-116#q639, db-ensembl-116#q640]}
   mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q942, db-opentargets-26.09#q944, db-opentargets-26.09#q945, db-opentargets-26.09#q946]}
-  pleiotropy: {values: ["mech:lipids", tradeoff], cites: [db-opentargets-26.09#q944, db-opentargets-26.09#q945, db-opentargets-26.09#q946, db-opentargets-26.09#q947, db-opentargets-26.09#q948, db-opentargets-26.09#q949, db-opentargets-26.09#q950, db-opentargets-26.09#q951, db-opentargets-26.09#q952]}
+  pleiotropy: {values: ["mech:lipids", tradeoff], cites: [db-opentargets-26.09#q944, db-opentargets-26.09#q945, db-opentargets-26.09#q946, db-opentargets-26.09#q947, db-opentargets-26.09#q948, db-opentargets-26.09#q949, db-opentargets-26.09#q950, db-opentargets-26.09#q951, db-opentargets-26.09#q952, db-opentargets-26.09#q968, db-opentargets-26.09#q969, db-opentargets-26.09#q970, db-opentargets-26.09#q971, db-gwascatalog-2026.10.29#q501]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "+",
             cites: [pmid-30729179#q116, pmid-30642433#q328, pmid-29227965#q71, pmid-40021682#q86, db-finngen-r11#q60, pmid-31413261#q195, pmid-31413261#q196]}
