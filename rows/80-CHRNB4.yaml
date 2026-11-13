@@ -36,15 +36,15 @@ verdict_reason: >-
   the lead has is with smoking behaviour, lung cancer and COPD. The effect is mainly on deaths before 75 (HR 1.08 per
   allele at 40-75 against 1.03 after, Joshi 2017; declining after 60, Timmers 2019), and survival to very old age does
   not replicate: CHARGE-EU 90+ P 0.95 (Joshi 2017; no effect printed, so its calibration is unknown), and Deelen
-  2019's 90th and 99th percentiles P 0.40 and 0.58 (above). Only both parents
-  reaching the top 10% of survival is significant, in UK Biobank (Pilling 2017, P 4.0e-9), so exceptional survival is
-  0. No smoking-stratified estimate was read, so how much of the effect remains in people who never smoked is not
+  2019's 90th and 99th percentiles P 0.40 and 0.58 (above). Pilling 2017's both parents in
+  the top 10 % of survival (UK Biobank, P 4.0e-9) prints no direction, as at row 42, so it sets nothing; with Deelen
+  flat at both percentiles, exceptional survival is 0. No smoking-stratified estimate was read, so how much of the effect remains in people who never smoked is not
   known here. No gene is named (requirements §4.2, §6.2: a gene only at E1/E2): on Timmers 2019's set locus-to-gene is
   below 0.5 for every gene (CHRNA5 0.29, PSMA4 0.13, CHRNA3 0.08), though CHRNA5 passes on Pilling 2017's
   combined-parents set (0.75), and all five lifespan-class sets colocalise with cis QTLs of PSMA4 (14 to 16 at H4 ≥
   0.8) and CHRNA5 (14) alike, ambiguous under D24. Pilling 2017's second signal in the region (rs578776) is not
-  scored. Healthspan: no estimate read (Zenin 2019's GWAS has no credible set here, and its look-up of lifespan
-  variants does not hold this lead), so untested, not null. The seed's other rsIDs: rs931794, rs9788721, rs10519203
+  scored. Healthspan 0: Zenin 2019's summary statistics hold the lead,
+  flat (T +0.0003, P 0.95). The seed's other rsIDs: rs931794, rs9788721, rs10519203
   (r² 0.95), rs1317286 and rs16969968 (CHRNA5 D398N, r² 0.87) are in the lead's credible set, the same signal;
   rs578776 is Pilling's second signal; rs11852372, rs2036527, rs4887072 and rs11633223 were not placed. Timmers 2019's
   Figure 5 source data show the fade directly: age moderates the effect at P 2.1e-4, FDR Q 0.0048, passing 5 % FDR,
@@ -55,8 +55,8 @@ axes:
   mechanism: {value: smoking_lungs, cites: [pmid-29030599#q8, pmid-30642433#q4]}
   pleiotropy: {values: ["mech:smoking", "context:smoking"], cites: [pmid-29030599#q8, pmid-31484785#q8]}
   age_of_action: {value: MIDLIFE, confidence: DIRECT, cites: [pmid-29030599#q7, pmid-30642433#q5, pmid-30642433#q166, pmid-30642433#q167, pmid-30642433#q168, pmid-30642433#q169, pmid-30642433#q170, pmid-30642433#q171, pmid-30642433#q172, pmid-30642433#q173, pmid-30642433#q174]}
-  outcome: {healthspan: untested, lifespan: "+", exceptional_survival: "0",
-            cites: [pmid-30642433#q4, pmid-29030599#q5, pmid-31413261#q5, pmid-31413261#q141, pmid-31413261#q142]}
+  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "0",
+            cites: [pmid-30642433#q4, pmid-30729179#q125, pmid-29030599#q5, pmid-31413261#q5, pmid-31413261#q141, pmid-31413261#q142]}
   actionability: {label: modifiable, what: ["act_behaviour:smoking"], who: "act_who:self", cites: [pmid-29030599#q8]}
   context: {values: [eur_only_evidence, age_dependent], cites: [pmid-30642433#q4, pmid-29030599#q7, pmid-30642433#q166]}
 flags:
@@ -90,8 +90,8 @@ variants:
           You carry one copy of a version of this DNA region that about 46 in 100 people of European ancestry
           carry. The region holds the brain's nicotine receptor genes and is linked to nicotine dependence, lung
           cancer and lung disease, and in very large studies this version's carriers had parents who lived on
-          average about two and a half months less, mostly through deaths before 75. The finding is well established for that
-          span, but a study of people who reached the oldest ages did not see it. It is a tendency, not destiny. Whether you smoke matters far more than this DNA result; not smoking, or
+          average about two and a half months less, mostly through deaths before 75. The finding is likely for that
+          span, not settled, but a study of people who reached the oldest ages did not see it. It is a tendency, not destiny. Whether you smoke matters far more than this DNA result; not smoking, or
           stopping, is what counts.
       - genotype: C/C
         state: risk
@@ -99,8 +99,8 @@ variants:
           You carry two copies of a version of this DNA region that about 13 in 100 people of European ancestry
           have. The region holds the brain's nicotine receptor genes and is linked to nicotine dependence, lung
           cancer and lung disease, and in very large studies each copy of this version went with parents living
-          on average about two and a half months less, mostly through deaths before 75. The finding is well established for
-          that span, but a study of people who reached the oldest ages did not see it. It is a tendency, not destiny. Whether you smoke matters far more than this DNA result; not smoking, or
+          on average about two and a half months less, mostly through deaths before 75. The finding is likely for
+          that span, not settled, but a study of people who reached the oldest ages did not see it. It is a tendency, not destiny. Whether you smoke matters far more than this DNA result; not smoking, or
           stopping, is what counts.
 studies:
   - rsid: rs8042849
@@ -110,7 +110,7 @@ studies:
     study_design: parental_lifespan_cox
     population: European (UK Biobank and the 26 LifeGen cohorts)
     ancestry: [EUR]
-    sample_size: 1012240
+    sample_size: 637314
     sample_unit: lives
     age_min: 40
     age_of: parent
@@ -121,7 +121,7 @@ studies:
     effect_measure: beta
     effect_unit: years of life per copy in self (parental estimate doubled)
     effect_allele: T
-    statistical_test: "Cox model residual on subject dosage, parents combined, common effect across sexes (Table 1)"
+    statistical_test: "Cox model residual on subject dosage, parents combined, common effect across sexes (Table 1); the summary statistics' line n 637,314 (q342), of 1,012,240 parents' lives"
     curator: claude-opus-5-5
   - rsid: rs8042849
     note: pmid-29030599
@@ -182,7 +182,7 @@ studies:
     note: pmid-31484785
     quote: q7
     phenotype_class: PARENTAL_LIFESPAN
-    study_design: parental_lifespan_cox
+    study_design: parental_lifespan_linear
     population: AncestryDNA customers of the European population group, fathers born 1886-1940
     ancestry: [EUR]
     sample_size: 309000
