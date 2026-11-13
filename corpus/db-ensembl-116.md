@@ -2330,3 +2330,12 @@ Row 86. rs4268748 (q647): GRCh38 16:89,960,104, T/C; C 0.275 in gnomAD's non-Fin
 (q649), common elsewhere too (0.28 in 1000 Genomes East Asians, 0.42 in Africans); an intron variant of DEF8 (q650),
 in the MC1R region (Zenin names MC1R as the nearest gene, pmid-30729179#q121). Wright's viability SNPs: rs4785759 r² 0.39 (q651), rs9939542 0.52 (q652), rs1109334 0.09 (q653)
 in CEU. For row 86.
+
+## Reading 2026-11-13, record
+
+> [q654] [0] name 1000GENOMES:phase_3:CEU description Utah residents with Northern and Western European ancestry size 99
+
+Row 86. Phased in CEU (q654, 99 people, 198 haplotypes) from Ensembl's 1000 Genomes phase 3 genotype records for
+rs4268748, rs9939542 and rs4785759 (each `genotype X|Y`, phased; counted from the listings): the lead's C rides with
+rs9939542's C on 53 of its 62 haplotypes (T with A on 122 of 136), and with rs4785759's A on 59 of 62 (T with C on 100
+of 136). For row 86.
