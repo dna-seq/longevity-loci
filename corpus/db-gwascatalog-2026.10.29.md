@@ -1831,3 +1831,10 @@ lines with C the higher where a direction is printed. For row 86.
 rs34891485 (row 87): two associations. Rosoff 2023's mvAge (q510), effect allele T, β 0.0145, P 5e-10; and van der
 Harst 2017's coronary artery disease (q511), risk allele T at 0.95, β 0.074 "unit decrease", P 3e-7: T lowers coronary
 disease, so C raises it. For row 87.
+
+## Reading 2026-11-13, record
+
+> [q512] _embedded.associations[0] association_id 131476569 risk_frequency NR pvalue_description pvalue_mantissa 2 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.0041-0.0086] beta 0.006339843 unit decrease p_value 2e-08 accession_id GCST90321079 pubmed_id 37550455 first_author Rosoff DB ci_lower 0.0041 ci_upper 0.0086
+
+rs940088 (row 88): one association, Rosoff 2023's mvAge, effect allele T, β 0.0063 "unit decrease", P 2e-8 (q512):
+T lowers mvAge, so C is the healthier allele. For row 88.

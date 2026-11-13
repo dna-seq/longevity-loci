@@ -3622,3 +3622,32 @@ rs34891485 (row 87, variant 17_42111440_T_C): one credible set holds it, Rosoff 
 q998), PICS, P 5e-10, β −0.0145 for C (T +0.0145), the lead at posterior 0.863 (q999), three variants in all, the
 next rs78862468 at 0.083 (q1001). Locus-to-gene names one gene, DHX58, 0.776 (q1000); no QTL colocalisation (q1002).
 For row 87.
+
+## Reading 2026-11-13, record
+
+> [q1003] data.variant.credibleSets count 66
+
+> [q1004] data.variant.credibleSets.rows[18] studyLocusId 57327b4dfde0ffa125bd8352a8fff373 pValueMantissa 7.566999912261963 pValueExponent -21 beta -0.0215907 finemappingMethod PICS
+
+> [q1005] data.variant.credibleSets.rows[18].study id GCST90302889 traitFromSource Body mass index studyType gwas
+
+> [q1006] data.variant.credibleSets.rows[18].variant id 17_49063432_C_T
+
+> [q1007] data.variant.credibleSets.rows[18].locus.rows[0] posteriorProbability 0.02716207440542874
+
+> [q1008] data.variant.credibleSets.rows[4] studyLocusId 0b92b4b46cc85dd41d1a611d934028d7 pValueMantissa 1.2100000381469727 pValueExponent -10 beta -0.0253 finemappingMethod PICS
+
+> [q1009] data.variant.credibleSets.rows[4].study id GCST90455657 traitFromSource Heart failure studyType gwas
+
+> [q1010] data.variant.credibleSets.rows[16] studyLocusId 4d33b61434a047f93129e8f69289a3fc pValueMantissa 1.2799999713897705 pValueExponent -12 beta -0.040181789632831706 finemappingMethod PICS
+
+> [q1011] data.variant.credibleSets.rows[16].study id GCST90480134 traitFromSource Ischemic heart disease (PheCode 411) studyType gwas
+
+rs940088 (row 88, 17_49068486_T_C): 66 credible sets hold it (q1003), the lead topping none, its posterior at most 0.04
+in any; none of a lifespan-class study, and no mvAge set. They are adiposity (BMI, waist, fat mass, visceral fat),
+glycaemia and type 2 diabetes, coronary and ischaemic heart disease, heart failure, C-reactive protein, blood
+pressure, insomnia, walking pace, intelligence and brain volumes. Seventeen are led by rs11655587 (17_49063432_C_T, r²
+0.84 to the lead, its T riding with the lead's C, db-ensembl-116#q667): BMI, T −0.0216, P 7.6e-21, the lead at posterior
+0.027 (q1004-q1007); heart failure, T −0.0253, P 1.2e-10 (q1008, q1009); ischaemic heart disease, T −0.040, P 1.3e-12
+(q1010, q1011). So the lead's C goes with lower BMI and less heart disease. Locus-to-gene names IGF2BP1 in nearly all
+(0.48 to 0.72), B4GALNT2 below 0.07. For row 88.

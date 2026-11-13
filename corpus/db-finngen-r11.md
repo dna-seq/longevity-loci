@@ -466,3 +466,11 @@ FinnGen R11's death endpoint at rs34891485 (q64): alt C (0.065 in Finns) β −0
 slightly fewer deaths, so T leans to more, one-sided 0.24 against T (derived), flat. Against Timmers' T +0.0453
 under APOE's within-FinnGen factor (0.99): power 0.91, heterogeneity P 0.0016; under the mean factor power 0.34, P
 0.060: one calibration only, no D21 red flag (derived). For row 87.
+
+## Reading 2026-11-13, record
+
+> [q65] 17 49068486 T C rs940088 IGF2BP1 0.192983 0.71448 -0.0104175 0.00800237 0.31594 0.315412 0.316007
+
+FinnGen R11's death endpoint at rs940088 (q65): alt C (0.316 in Finns) β −0.0104 (SE 0.0080), P 0.19: C with fewer
+deaths, one-sided 0.096 C's way (derived), flat. Against Timmers' C +0.0171: APOE's within-FinnGen factor power 0.68,
+heterogeneity P 0.47; the mean factor power 0.22: no flag. For row 88.

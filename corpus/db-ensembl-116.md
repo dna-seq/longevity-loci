@@ -2372,3 +2372,26 @@ Row 87, LD in CEU from rs34891485: to rs76611716, Timmers' peak 245 kb away, r²
 Timmers' strongest line within 1 Mb (BECN1, 700 kb), r² 0.28, D′ 0.70 (q662). Rosoff's other independent SNPs at the
 locus: rs12325861 r² 0.30, rs79677630 0.51, rs78645838 0.31 (`ld-ceu-rs34891485-*.json`); rs35118457 (58 bp away)
 has no pair Ensembl reports. For row 87.
+
+## Reading 2026-11-13, record
+
+> [q663] populations[20] allele_count 21914 population gnomADg:nfe frequency 0.3224 allele C
+
+> [q664] populations[77] allele C allele_count 288 population 1000GENOMES:phase_3:EUR frequency 0.286282306163022
+
+> [q665] populations[72] allele C allele_count 50 population 1000GENOMES:phase_3:EAS frequency 0.0496031746031746
+
+> [q666] [0] d_prime 1.000000 variation2 rs9899580 variation1 rs940088 population_name 1000GENOMES:phase_3:CEU r2 0.977926
+
+> [q667] [0] population_name 1000GENOMES:phase_3:CEU d_prime 1.000000 variation1 rs940088 variation2 rs11655587 r2 0.840531
+
+> [q668] [0] d_prime 0.832860 r2 0.649295 variation1 rs940088 variation2 rs11079849 population_name 1000GENOMES:phase_3:CEU
+
+> [q669] [0] id rs940088 strand 1 end 49068486 assembly_name GRCh38 seq_region_name 17 allele_string T/C most_severe_consequence intergenic_variant input rs940088 start 49068486
+
+rs940088 (row 88): GRCh38 17:49,068,486 T/C, GRCh37 17:47,145,848, intergenic (q669). C 0.32 in gnomAD's non-Finnish
+Europeans (q663), 0.29 in 1000 Genomes Europeans (q664), 0.05 in East Asians (q665). LD in CEU: rs9899580 r² 0.98, D′
+1.00 (q666); rs11655587, the lead of the BMI, heart-failure and ischaemic heart disease sets (GRCh38 17:49,063,432),
+r² 0.84, D′ 1.00 (q667); rs11079849 r² 0.65 (q668). Phased in CEU (q654) from the 1000 Genomes genotype records: the
+lead's C rides with rs9899580's G on 68 of 69 C haplotypes (T with T on all 129 T haplotypes), and with rs11655587's T
+on all 69. For row 88.
