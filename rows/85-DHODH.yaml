@@ -1,0 +1,154 @@
+# The seed list's locus 85, DHODH (16q22.2; the seed's genes DHODH and HP). Curated 2026-11-13. Lead rs12924886,
+# the seed's only rsID (Timmers 2019's HP lead, Table 1): an intron variant of a lncRNA between TXNL4B and HP, A/T, A
+# the common allele (0.81 in Europeans) and the longer-lived side. Open Targets 26.09 holds it in 945 sets; it tops
+# Timmers' own parental-lifespan set and 14 lipid sets.
+locus_id: 85
+locus_name: DHODH
+verdict: kept
+verdict_reason: >-
+  Tier B, as the seed has it: genome-wide in one study with no independent replication (§4.1). Timmers 2019's million
+  parents' lives, the conventional analysis: A, the common allele, adds 0.28 years of life per copy, P 1.4e-8, past
+  the paper's own 2.5e-8, UK Biobank and LifeGen on the same side; one of the five loci first found there. Row 12's
+  shape, without row 12's replication. Outside UK Biobank and LifeGen nothing passes: Deelen 2019's 90th and 99th
+  percentiles put A on the shorter-lived side, flat (P 0.79, 0.50); Wright 2019's AncestryDNA has no line at the lead,
+  and its two Table 9 SNPs nearby (rs9928413 in the mothers, r² 0.53 in CEU; rs17604662 in the fathers, 0.48), each
+  counted under D29.18 (UK arms P 6.9e-4 and 9.6e-4), share their UK arms' signs at P 0.18 and 0.17, at best one-sided
+  0.09, at proxies too weak to carry the lead; FinnGen R11's death endpoint leans A's way, flat (P 0.69). No red flag
+  (D21, D25.3): calibrated from Timmers' β (A +0.0280), Deelen's 90th would flag under APOE's factor (power 1.00,
+  heterogeneity P 4e-5) but under the mean factor its power is 0.72, short of 0.8 (heterogeneity P 0.020); the 99th
+  the same (0.95 and P 5e-4; 0.40); a flag under one calibration only is none. So B, not D, and no
+  `replication_failed`; Deelen's lean against is said here. In UK Biobank the rest agrees or is flat: Pilling's both
+  parents A P 2.8e-4 (inside Timmers), Park 2025's own survival flat (P 0.87, its allele columns swapped, as the
+  frequencies show), Zenin 2019's healthspan A later, flat (P 0.14 after genomic control). Foote 2025's frailty factors
+  are not genome-wide here (the multimorbidity factor A less frail, P 0.026; limited social support 0.0039; the
+  general factor's deposit holds no line in the window), so D27.3's assumption that Foote reaches HP does not hold, as
+  at row 59. Lifespan +, healthspan 0, exceptional survival 0 (Deelen flat against, not significant, D28.3 needing a
+  study reading against: none is significant). Mechanism heart and vessels, through lipids: Timmers files the locus as
+  cardiometabolic, and of the 21 sets the lead tops 14 are lipid, alt T raising LDL cholesterol (P 2e-117), non-HDL
+  cholesterol, apolipoprotein B, triglycerides and mixed hyperlipidaemia, so the longer-lived A lowers them; the rest
+  are GALNT2 and plasma glycans, albumin and two eQTLs, and no disease set is topped by the lead, so no trade-off is
+  detected (D18.1). Association, not a mediator test: descriptive, as row 12. Pleiotropy mech:lipids. Causal C2: the
+  lead tops Timmers' PICS set at posterior 0.243 of seven. Effector E3, no gene named (D24): locus-to-gene gives HP
+  0.965 and HPR 0.705, both past 0.5, and the set's cis-QTL colocalisations are HP 58, HPR 55, TXNL4B 21 and DHODH 9;
+  HP is named in prose. A is the common allele at 81 %, so A/A is the reference (§6.2): A/T and T/T risk,
+  PROTECT:ABSENCE_OF_RISK, as row 79. Age of action unknown. The evidence is European.
+axes:
+  tier: {value: B, cites: [pmid-30642433#q330, pmid-30642433#q30, pmid-30642433#q331, pmid-31413261#q199, pmid-31413261#q200, pmid-31484785#q133, pmid-31484785#q134, pmid-31484785#q6, db-ensembl-116#q643, db-ensembl-116#q644, db-finngen-r11#q62, pmid-29227965#q73, pmid-40021682#q87, pmid-40021682#q32, pmid-30729179#q118, pmid-30729179#q59, pmid-40759756#q7, pmid-40759756#q8, pmid-40759756#q2]}
+  mechanism: {value: heart_vessels, cites: [pmid-30642433#q330, db-opentargets-26.09#q959, db-opentargets-26.09#q960, db-opentargets-26.09#q961]}
+  pleiotropy: {values: ["mech:lipids"], cites: [db-opentargets-26.09#q959, db-opentargets-26.09#q960, db-opentargets-26.09#q961]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "0",
+            cites: [pmid-30729179#q118, pmid-30642433#q330, pmid-30642433#q331, pmid-29227965#q73, pmid-31413261#q199, pmid-31413261#q200]}
+  actionability: {label: descriptive, cites: [pmid-30642433#q330]}
+  context: {values: [eur_only_evidence], cites: [pmid-30642433#q331]}
+flags:
+  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-30642433#q330, db-ensembl-116#q642]}
+  - {token: "causal:C2", cites: [db-opentargets-26.09#q953, db-opentargets-26.09#q954, db-opentargets-26.09#q957]}
+  - {token: "effector:E3", cites: [db-opentargets-26.09#q955, db-opentargets-26.09#q956, db-opentargets-26.09#q958]}
+variants:
+  - rsid: rs12924886
+    gene: ""
+    phenotype: HP/HPR region, cholesterol, parents' lifespan
+    trait_efo_id: EFO_0007796
+    effect_allele: A
+    effect_size: 0.02797694
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: A/A
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position, as about 65 in 100 people of European
+          ancestry do. It is the reference the other combinations are compared with. The position, on chromosome 16,
+          lies near the haptoglobin genes (HP and HPR). The finding comes from people of European ancestry; less is
+          known elsewhere.
+      - genotype: A/T
+        state: risk
+        conclusion: >-
+          You carry one copy of a less common version of this DNA position (about 31 in 100 people of European
+          ancestry do). In a very large study of a million parents' lifespans, each copy went with parents living a
+          few months less, and it goes with slightly higher LDL cholesterol. No separate study has confirmed the
+          lifespan link, and one study of people who reached old age leaned the other way, so this is a likely
+          finding, not a settled one. The effect is small and it is a tendency, not destiny.
+      - genotype: T/T
+        state: risk
+        conclusion: >-
+          You carry two copies of a less common version of this DNA position (about 4 in 100 people of European
+          ancestry do). In a very large study of a million parents' lifespans, each copy went with parents living a
+          few months less, and it goes with slightly higher LDL cholesterol. No separate study has confirmed the
+          lifespan link, and one study of people who reached old age leaned the other way, so this is a likely
+          finding, not a settled one. The effect is small and it is a tendency, not destiny.
+studies:
+  - rsid: rs12924886
+    note: pmid-30642433
+    quote: q330
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 640136
+    sample_unit: lives
+    stat_significance: significant
+    p_value: "1.4E-08"
+    p_value_num: 1.4e-08
+    effect_size: 0.2798
+    effect_measure: beta
+    effect_unit: years of life per A allele
+    effect_allele: A
+    direction: protective
+    statistical_test: "Timmers 2019, Table 1 (q330): Cox model of parental survival, common effect sizes across parents, the paper's threshold 2.5e-8; sex-specific P 9.1e-8; summary statistics A +0.0280 log hazard protection (SE 0.0049, P 1.35e-8, ++, q331); one of the five loci first found here (q30)"
+    curator: claude-opus-5-5
+  - rsid: rs12924886
+    note: pmid-31413261
+    quote: q199
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.7858"
+    p_value_num: 0.7858
+    effect_size: -0.0069
+    effect_measure: beta
+    effect_unit: log odds of reaching the 90th percentile, per A allele
+    effect_allele: A
+    direction: risk
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008598), SE 0.0254, effective N 11,050; against Timmers' A +0.0280 (D25.3): APOE factor expected 0.135, power 1.00, heterogeneity P 4e-5; mean factor 0.057, power 0.72, heterogeneity P 0.020: a flag under one calibration only, so none (derived)"
+    curator: claude-opus-5-5
+  - rsid: rs12924886
+    note: pmid-31413261
+    quote: q200
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.4984"
+    p_value_num: 0.4984
+    effect_size: -0.0275
+    effect_measure: beta
+    effect_unit: log odds of reaching the 99th percentile, per A allele
+    effect_allele: A
+    direction: risk
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), SE 0.0406, effective N 4,154; APOE factor (borrowed from the 90th's ε4 line) power 0.95, heterogeneity P 5e-4; mean factor power 0.40: no flag (derived); its cases a subset of the 90th's"
+    curator: claude-opus-5-5
+  - rsid: rs12924886
+    note: pmid-30729179
+    quote: q118
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.133"
+    p_value_num: 0.133
+    effect_size: 0.00934
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per T allele (positive = earlier)
+    effect_allele: T
+    direction: risk
+    statistical_test: "Zenin 2019's healthspan summary statistics, SE 0.00622, Z 1.502, -log10 P 0.8762; about 0.14 after the paper's genomic control of 1.053 (q59, D26.1; derived)"
+    curator: claude-opus-5-5

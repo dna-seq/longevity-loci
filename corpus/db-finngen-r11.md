@@ -444,3 +444,10 @@ T, flat. For row 83.
 
 FinnGen R11 death at CETP, row 84: rs3764261 (q60) alt A β −0.0141 (SE 0.0082), P 0.087, A with fewer deaths
 (one-sided 0.044, derived); rs5882 (q61) alt A −0.0082, P 0.28. A database line (D29.1). For row 84.
+
+## Reading 2026-11-13, supplement
+
+> [q62] 16 72041694 A T rs12924886 TXNL4B 0.691484 0.160218 0.00370897 0.00934617 0.193543 0.19555 0.193292
+
+FinnGen R11 death at rs12924886 (q62): alt T β +0.0037 (SE 0.0093), P 0.69: A with slightly fewer deaths, flat. For
+row 85.

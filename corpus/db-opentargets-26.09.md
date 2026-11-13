@@ -3460,3 +3460,35 @@ pleiotropy set with no β, and two macular-degeneration sets, both with A raisin
 Biobank's senile macular degeneration (PICS, P 8.0e-12, A β +0.097; q949, q950). Every macular-degeneration set at the
 locus, whoever leads it, has its alt allele raising it. One HDL set runs against the rest: GCST009661 "Low
 HDL-cholesterol levels", A +0.59 (a case-control set, its scale unnamed). For row 84.
+
+## Reading 2026-11-13, record
+
+> [q953] data.credibleSets.rows[0] studyLocusId fa1d4b7abd7e1a3b83d334570d408c87 finemappingMethod PICS pValueMantissa 1 pValueExponent -8
+
+> [q954] data.credibleSets.rows[0].locus.rows[0] posteriorProbability 0.24263312943077164
+
+> [q955] data.credibleSets.rows[0].l2GPredictions.rows[0] score 0.9654757976531982
+
+> [q956] data.credibleSets.rows[0].l2GPredictions.rows[1] score 0.7052884697914124
+
+> [q957] data.credibleSet.locus count 7
+
+> [q958] data.credibleSet.colocalisation count 154
+
+> [q959] data.variant.credibleSets count 945
+
+16_72041694_A_T (rs12924886, row 85). Timmers 2019's parental-lifespan set (GCST009890, PICS, P 1e-8; q953), the
+lead at posterior 0.243 (q954), the top of 7 members (q957); locus-to-gene HP 0.965 and HPR 0.705 (q955, q956). Its
+QTL colocalisations, 154 (q958): of the cis ones at H4 ≥ 0.8, HP 58, HPR 55, TXNL4B 21, DHODH 9 (counted from the
+listing). The lead is in 945 sets (q959) and tops 21, 14 of them lipid: alt T raises LDL, non-HDL cholesterol,
+apolipoprotein B, triglycerides and mixed hyperlipidaemia (e.g. LDL β +0.025, P 2e-117), so A lowers them; the rest are
+GALNT2 and plasma glycans, albumin, two eQTLs and Timmers' own set. No disease set is topped by the lead. For row 85.
+
+## Reading 2026-11-13, record
+
+> [q960] data.variant.credibleSets.rows[195] studyLocusId 6bca38782038a5874c10522b32f4124f pValueMantissa 2.161113977432251 pValueExponent -117 beta 0.025483377380416963 finemappingMethod SuSiE-inf
+
+> [q961] data.variant.credibleSets.rows[195].study id GCST90019512 traitFromSource Low density lipoprotein cholesterol levels studyType gwas
+
+rs12924886, row 85: the LDL-cholesterol set it tops (GCST90019512; q960, q961), alt T β +0.0255, P 2.2e-117: A lowers
+LDL. For row 85.

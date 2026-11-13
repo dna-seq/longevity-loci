@@ -2282,3 +2282,17 @@ floor), so they are separate signals. For row 84.
 
 rs5882 (row 84): CETP missense, codons Gtc/Atc (q640): the reference G codes valine, A isoleucine, so Barzilai's
 405V is the G allele (p.422 in Ensembl's numbering, which counts the signal peptide). For row 84.
+
+## Reading 2026-11-13, record
+
+> [q641] mappings[0] start 72041694 coord_system chromosome end 72041694 location 16:72041694-72041694 seq_region_name 16 strand 1 allele_string A/T ancestral_allele A assembly_name GRCh38
+
+> [q642] populations[77] allele T population 1000GENOMES:phase_3:EUR frequency 0.192842942345924 allele_count 194
+
+> [q643] [2] d_prime 0.946112 r2 0.527366 population_name 1000GENOMES:phase_3:CEU variation2 rs9928413 variation1 rs12924886
+
+> [q644] [2] r2 0.479718 d_prime 0.919644 variation1 rs12924886 variation2 rs17604662 population_name 1000GENOMES:phase_3:CEU
+
+Row 85. rs12924886 (q641): GRCh38 16:72,041,694, A/T, A ancestral; T 0.193 in 1000 Genomes Europeans (q642); an intron
+variant of a lncRNA near TXNL4B and HP. Wright's nearby Table 9 SNPs: rs9928413 r² 0.53 (q643), rs17604662 r² 0.48
+(q644) in CEU. For row 85.
