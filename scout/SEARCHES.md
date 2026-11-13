@@ -216,6 +216,59 @@ seed locus. No new locus in the sources queried.
 
 ## Tracks F–K
 
+First swept 2026-11-13, each with the query written 2026-11-10 (in the table's list below, unchanged) over
+2026-10-20 → 2026-11-13; for F, H and K the date the synthesis covered to is unknown, so the gap before 2026-10-20 is
+unknown, not covered. Two queries are new:
+
+- **S-seedgene** (new 2026-11-13, a watch across tracks, the scout's own aim): any of the 176 gene symbols named in
+  `seed_variants.csv` (its `genes` column, free-text words, lncRNA and pseudogene names and variant labels dropped; the
+  list is regenerated from the CSV at each run), in title or abstract, `AND (longevity[tiab] OR lifespan[tiab] OR "life span"[tiab] OR centenarian*[tiab] OR "age at death"[tiab] OR healthspan[tiab] OR "all-cause mortality"[tiab] OR pleiotrop*[tiab] OR "trade-off"[tiab] OR "phenome-wide"[tiab]) AND (variant*[tiab] OR allele*[tiab] OR polymorphism*[tiab] OR genotype*[tiab] OR carrier*[tiab] OR haplotype*[tiab])`. Too long for a GET: sent by POST.
+- **J-seedgene** (new 2026-11-13): the same gene list `AND (lifespan[tiab] OR "life span"[tiab] OR longevity[tiab] OR aging[tiab] OR ageing[tiab]) AND (mice[tiab] OR mouse[tiab] OR "C. elegans"[tiab] OR "Caenorhabditis elegans"[tiab] OR Drosophila[tiab] OR yeast[tiab] OR zebrafish[tiab] OR knockout[tiab] OR transgenic[tiab])`. Noisy: short symbols (MAPT, CGAS) pull in mechanistic ageing work.
+
+### Recall
+
+On each track's PMIDs, 2026-11-13, the track's own query, then cumulative with B-gwas, A-pgs, E-core, D-healthspan
+and E-heritability (and H-pleiotropy plus S-seedgene where named):
+
+| Track | PMIDs | Own query | With the shared queries | With H-pleiotropy, S-seedgene / J-seedgene |
+|---|---|---|---|---|
+| F | 68 | 1 | 20 | not run |
+| G | 87 | 0 | 25 | not run |
+| H | 79 | 7 | 47 | 49 |
+| I | 139 | 39 | 100 | not run |
+| J | 94 | 14 | 43 | 48 (J-seedgene) |
+| K | 70 | 9 | 50 | 53 |
+
+Recall is low for F and G on purpose, not by accident: their evidence is the general literature on reporting
+polygenic scores and direct-to-consumer tests (guidelines, position statements) and on fine-mapping, colocalisation
+and effector-gene methods, none of it about longevity. A new paper there changes how a row is evaluated or reported,
+not which loci there are, so the scout does not chase it; a seat that wants those fields watched asks for a query of
+its own. H's and K's misses are disease-specific trade-off papers (APOE, PCSK9, IL6R, SH2B3, Klotho) and familial-
+longevity scores; S-seedgene catches a few, and its recall is limited by the tracks citing disease phenotypes
+(Alzheimer's, coronary disease) that its longevity clause leaves out. J's misses are model-organism papers naming a
+gene with no lifespan word.
+
+### Runs
+
+| Run | Window | Query | Hits | New | Queued |
+|---|---|---|---|---|---|
+| 2026-11-13 | 2026-10-20 → 2026-11-13 | S-seedgene | 12 | 10 | 0 |
+| 2026-11-13 | 2026-10-20 → 2026-11-13 | F-reporting | 2 | 2 | 0 |
+| 2026-11-13 | 2026-10-20 → 2026-11-13 | G-finemap | 15 | 15 | 0 |
+| 2026-11-13 | 2026-10-20 → 2026-11-13 | H-pleiotropy | 7 | 5 | 0 |
+| 2026-11-13 | 2026-10-20 → 2026-11-13 | I-concepts | 26 | 18 | 0 |
+| 2026-11-13 | 2026-10-20 → 2026-11-13 | J-models | 14 | 10 | 0 |
+| 2026-11-13 | 2026-10-20 → 2026-11-13 | J-seedgene | 21 | 20 | 0 |
+| 2026-11-13 | 2026-10-20 → 2026-11-13 | K-age | 2 | 1 | 0 |
+
+81 new records, in `scout/screened.md`, at title level: reviews, mechanistic and animal ageing work, and trait genetics
+(Mendelian randomization and genomic SEM of vascular, adipose and bone ageing) with no longevity locus. One is noted
+for track J and not queued: pmid 42995887, "STING deficiency extends median lifespan and mitigates age-related liver
+pathology in mice"; STING is cGAS's partner and CGAS is a seed gene, but the paper tests no human variant. No new locus
+in the sources queried.
+
+### The queries as written 2026-11-10
+
 Not yet swept. Their queries below are **new**, written 2026-11-10, and **not yet run or recall-checked**; the
 first run of each checks its recall on its track's CSV and may change them. All PubMed by entry date, as above.
 

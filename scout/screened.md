@@ -258,3 +258,89 @@ here is not new to a later run. Verdicts on titles, or on abstracts where `scout
 | pmid 42900769 | out of scope (animal, plant, clinical or non-genetic) | From Protective Factors to Mechanisms: Charting the Neurobiology of Schizophrenia Resilience. |
 | pmid 42899183 | out of scope (animal, plant, clinical or non-genetic) | Wheat forage quality: significance, genetic and genomic advances, knowledge gaps, and future directions. |
 | pmid 42898867 | out of scope (animal, plant, clinical or non-genetic) | Livestock immunogenomics based on omics integration: from infection and stress to xenotransplantation. |
+
+## Tracks F–K and the seed-gene watch, run 2026-11-13 (window 2026-10-20 → 2026-11-13)
+
+| Record | Verdict | Title |
+|---|---|---|
+| pmid 43012472 | trait or disease genetics, not longevity | Circulating Quiescin Sulfhydryl Oxidase and Risk of Cardiovascular Disease: A Mendelian Randomization and Post |
+| pmid 42999555 | out of scope (animal, plant, clinical or non-genetic) | Gestational Diabetes Mellitus and Birth Weight: A Bidirectional Mendelian Randomization and Cohort Study in Ch |
+| pmid 42981558 | out of scope (animal, plant, clinical or non-genetic) | Reproductive Lifespan and Hormonal Therapy in Relation to Later-Life Neurovascular Health in Community-Dwellin |
+| pmid 42980646 | parental longevity and cognition, no genotype | Parental Longevity and Cognitive Ability in Older Mexican Adults. |
+| pmid 42973051 | trait or disease genetics, not longevity | Disentangling the Genetic Relationship Between Sleep and Epilepsy. |
+| pmid 42971482 | trait or disease genetics, not longevity | Self-reported health history from 70,724 individuals reveals novel HLA associations with allergy and other fre |
+| pmid 42955849 | trait or disease genetics, not longevity | Transcriptomic signatures of lipids in blood provide hypotheses of functional mechanisms linked to lipid metab |
+| pmid 42939619 | out of scope (animal, plant, clinical or non-genetic) | Brain Blindness Versus Eye Blindness: Genetic and Molecular Connections Between Alzheimer's Disease and Visual |
+| pmid 42932005 | trait or disease genetics, not longevity | Investigating cognitive performance genetic architecture of cortical and subcortical brain tissues. |
+| pmid 42925051 | trait or disease genetics, not longevity | Shared Genetic Architecture Between Mental Disorders and Heart Failure Subtypes: A Comprehensive Multitrait Ge |
+| pmid 42983584 | out of scope (animal, plant, clinical or non-genetic) | Brain clearance of protein aggregates in degenerative diseases: the role of microglia and astrocytes. |
+| pmid 42972384 | out of scope (animal, plant, clinical or non-genetic) | Astrocyte lipid metabolism in brain health and neurodegeneration: from regulatory hub to maladaptive stressor. |
+| pmid 43003094 | out of scope (animal, plant, clinical or non-genetic) | Dot1 triggers a conserved ribophagy signal to govern ribosome quality and longevity by methylating Rpl12. |
+| pmid 42994222 | out of scope (animal, plant, clinical or non-genetic) | Structural food access inequalities and aging transitions: A geospatial, multistate and longitudinal analysis  |
+| pmid 42985591 | out of scope (animal, plant, clinical or non-genetic) | Exogenous Hydrogen Sulfide Promotes FAM134B-Mediated Endoplasmic Reticulum Autophagy and Inhibits Cell Aging b |
+| pmid 42985442 | out of scope (animal, plant, clinical or non-genetic) | Decline in mitochondrial health and lysosomal acidification in human neurons during normal aging. |
+| pmid 42974947 | ageing-trait genetics (MR or genomic SEM), no longevity locus | Identification of Novel Protein Biomarkers and Lifestyle-Modifiable Targets for Osteoporosis: Evidence from Me |
+| pmid 42962776 | ageing-trait genetics (MR or genomic SEM), no longevity locus | Genomic structural equation modeling elucidates the shared genetic architecture of vascular ageing. |
+| pmid 42958393 | out of scope (animal, plant, clinical or non-genetic) | Platelet-derived mitochondrial transplantation expands respiratory reserve and extracellular matrix anabolism  |
+| pmid 42953013 | out of scope (animal, plant, clinical or non-genetic) | Impaired autophagy and lysosome function in human fibroblast aging. |
+| pmid 42949226 | ageing-trait genetics (MR or genomic SEM), no longevity locus | Loneliness as a pathway linking hearing decline to cognitive aging: Longitudinal and genetic evidence. |
+| pmid 42939468 | out of scope (animal, plant, clinical or non-genetic) | Exploratory Profiling of Extracellular Vesicles and Citrullinated Proteins in Plasma of Greenland Shark Somnio |
+| pmid 42931953 | ageing-trait genetics (MR or genomic SEM), no longevity locus | Dissecting the shared genetic architecture of adipose tissue aging and aging-related lipid-metabolic dysfuncti |
+| pmid 42926444 | out of scope (animal, plant, clinical or non-genetic) | IsoGraph resolves coordinated transcript choice and gene abundance in the aging human brain. |
+| pmid 42925316 | ageing-trait genetics (MR or genomic SEM), no longevity locus | Integrative Genomic Evidence for a Putative Causal Association Between Latent Epigenetic Ageing and Bone Miner |
+| pmid 42907395 | out of scope (animal, plant, clinical or non-genetic) | Proteostasis stress alters mitochondrial levels and localization of SOD2 during cellular senescence. |
+| pmid 42901280 | out of scope (animal, plant, clinical or non-genetic) | Elastin-derived peptide VGVAPG induces redox-associated pro-inflammatory activation and early disease-associat |
+| pmid 43017734 | out of scope (animal, plant, clinical or non-genetic) | Developmental processes in ageing: the role of growth regulation. |
+| pmid 43015248 | out of scope (animal, plant, clinical or non-genetic) | Dietary Organosulfur-Containing Compounds (DOSCs) as Healthy Longevity Agents: Mechanisms, Evidence, and Futur |
+| pmid 43011218 | out of scope (animal, plant, clinical or non-genetic) | The antagonistic pleiotropy of tau phosphorylation: plasma tau species in newborns and Alzheimer's disease. |
+| pmid 42925725 | out of scope (animal, plant, clinical or non-genetic) | Ellagic acid mitigates follicular atresia in laying chickens via GPX4 upregulation to block ferroptosis and p5 |
+| pmid 42924721 | out of scope (animal, plant, clinical or non-genetic) | Dynamic m(6)A Methylation in Neurodevelopmental and Neurodegenerative Disorders. |
+| pmid 43019454 | out of scope (animal, plant, clinical or non-genetic) | Sex Differences in Biological Responses: Mechanisms, Evolution, and Environmental Interactions. |
+| pmid 43017742 | out of scope (animal, plant, clinical or non-genetic) | Development, stabilization and the shaping of ageing trajectories. |
+| pmid 43015311 | out of scope (animal, plant, clinical or non-genetic) | Experience modifies the synaptome architecture in the developing and adult mouse brain. |
+| pmid 43014716 | out of scope (animal, plant, clinical or non-genetic) | Achievements and impact of Japanese Caenorhabditis elegans bioresources on the global research community. |
+| pmid 43011470 | out of scope (animal, plant, clinical or non-genetic) | Triterpenoids - future multi-target compounds against obesity and towards restoration of metabolic health. |
+| pmid 43007565 | out of scope (animal, plant, clinical or non-genetic) | Diagnosis and management of hereditary hemolytic anemia in Korea. |
+| pmid 42999299 | out of scope (animal, plant, clinical or non-genetic) | Normative transcriptomic clues to thalamic developmental vulnerability in C9orf7 2-FTLD. |
+| pmid 42996101 | out of scope (animal, plant, clinical or non-genetic) | COGNITIVE HETEROGENEITY AND AGING: AN AGE-INDEPENDENT CILIARY GENE PROGRAM TRACKS COGNITIVE RESILIENCE IN MICE |
+| pmid 42991063 | out of scope (animal, plant, clinical or non-genetic) | Cardiovascular health and longevity: where are we? |
+| pmid 42984863 | out of scope (animal, plant, clinical or non-genetic) | From developmental divergence to degenerative vulnerability: convergent molecular mechanisms linking autism sp |
+| pmid 42977337 | out of scope (animal, plant, clinical or non-genetic) | Evolution of obesity medicine: From historical perspectives to precision obesity medicine and healthy longevit |
+| pmid 42976966 | out of scope (animal, plant, clinical or non-genetic) | Born to have obesity: rodent experimental models to study childhood obesity. |
+| pmid 42970081 | out of scope (animal, plant, clinical or non-genetic) | Age: a modifiable risk factor for cardiovascular disease? |
+| pmid 42948917 | out of scope (animal, plant, clinical or non-genetic) | Toward a comparative endocrinology of aging: insights from insects. |
+| pmid 42942995 | out of scope (animal, plant, clinical or non-genetic) | Precision Nutrition and Health Outcomes Across the Lifespan. |
+| pmid 42929014 | out of scope (animal, plant, clinical or non-genetic) | Viral Infections and Ovarian Reserve: Mechanistic Insights into Ovarian Aging- A Review. |
+| pmid 42920923 | out of scope (animal, plant, clinical or non-genetic) | Senescence and tumor immunology: A multifaceted interplay of influence. |
+| pmid 42918592 | out of scope (animal, plant, clinical or non-genetic) | Deciphering adipaging in Drosophila: Exploring carotenoid-mediated regulation of aging and metabolism. |
+| pmid 43011472 | out of scope (animal, plant, clinical or non-genetic) | Cell Reprogramming: Therapeutic Advances and Challenges. |
+| pmid 43010179 | out of scope (animal, plant, clinical or non-genetic) | Human cognitive performance-associated gut microbiota influences learning and memory in mice through arginine  |
+| pmid 42996333 | out of scope (animal, plant, clinical or non-genetic) | Androgen Receptor SUMO site mutations ameliorate toxicity in Drosophila models of SBMA. |
+| pmid 42996017 | out of scope (animal, plant, clinical or non-genetic) | Beneficial early, harmful later: age-dependent effects of testicular factors on male mortality. |
+| pmid 42993840 | out of scope (animal, plant, clinical or non-genetic) | The (amide-)N-methylnicotinamide is a microbe-derived NAD(+) precursor that drives gut stem cell renewal. |
+| pmid 42982104 | out of scope (animal, plant, clinical or non-genetic) | Metabolomics-guided structure-based virtual screening prioritizes obtusifolin as a geroprotector in Caenorhabd |
+| pmid 42968304 | out of scope (animal, plant, clinical or non-genetic) | [An Attempt toward the Discovery of Compounds for Extending (Healthy) Lifespan]. |
+| pmid 42965640 | out of scope (animal, plant, clinical or non-genetic) | Protein Quality Control Systems in Neurodegeneration-Chaperones, Cytoskeleton, and the Pathogenic Transition o |
+| pmid 42963363 | out of scope (animal, plant, clinical or non-genetic) | Sparfloxacin reveals a host-virus dual-target antiviral scaffold against respiratory syncytial virus. |
+| pmid 42911079 | out of scope (animal, plant, clinical or non-genetic) | Neuronal maturation is altered during pre-pathological stages in the App(NL-F) mouse model of Alzheimer's dise |
+| pmid 43017728 | out of scope (animal, plant, clinical or non-genetic) | Organ communication in ageing. |
+| pmid 43017262 | out of scope (animal, plant, clinical or non-genetic) | Senescence-Associated Secretory Phenotype (SASP) and Atherosclerotic Plaque Inflammation: Natural Product-Base |
+| pmid 43013414 | out of scope (animal, plant, clinical or non-genetic) | Blueberry Anthocyanins Alleviate Testicular Aging in Middle-Aged Mice by Targeting Inflammaging and Reprogramm |
+| pmid 43001901 | out of scope (animal, plant, clinical or non-genetic) | Senescence-Associated Loss of α-Synuclein in Brain Microvascular Endothelium Compromises Tight Junctions and D |
+| pmid 42995887 | mouse knockout of STING (cGAS–STING; CGAS is a seed gene, rs-level evidence none): noted for track J, not queued | STING deficiency extends median lifespan and mitigates age-related liver pathology in mice. |
+| pmid 42990413 | out of scope (animal, plant, clinical or non-genetic) | Neuroinflammation is an early pathological process in a mouse model of prodromal Parkinson's disease. |
+| pmid 42977410 | out of scope (animal, plant, clinical or non-genetic) | Medium- and long-chain triacylglycerols regulate glucose, lipid metabolism and liver metabolomics under differ |
+| pmid 42977261 | out of scope (animal, plant, clinical or non-genetic) | Region-resolved multi-layer proteomics reveals proteostasis-centered post-translational remodeling during mous |
+| pmid 42976851 | out of scope (animal, plant, clinical or non-genetic) | Redox-dependent remodeling of mitochondrial nucleoids contributes to bioenergetic decline during neuronal agin |
+| pmid 42968240 | out of scope (animal, plant, clinical or non-genetic) | Inadequate Camk2a and Excess Camk2b: The Key to Vitamin D Irresponsiveness in an In Vitro Model of Sarcopenia. |
+| pmid 42958663 | out of scope (animal, plant, clinical or non-genetic) | Grain-sized moxibustion attenuates renal dysfunction and inflammation in naturally aging micethe phosphatidyli |
+| pmid 42953977 | out of scope (animal, plant, clinical or non-genetic) | The TBK1-OTUB2-IRF3 signalling complex promotes neuroinflammation and neurodegeneration. |
+| pmid 42922695 | out of scope (animal, plant, clinical or non-genetic) | Linking coronary microvascular structure and function in preclinical models of coronary microvascular disease. |
+| pmid 42912487 | out of scope (animal, plant, clinical or non-genetic) | SSH1 knockdown increases autophagosome formation through ATG9A recruitment and promotes MAPT/tau protein degra |
+| pmid 42909842 | out of scope (animal, plant, clinical or non-genetic) | Heat-Killed Lactiplantibacillus plantarum DRC2509 Isolated from Kimchi Restores Immune Function After Cyclopho |
+| pmid 42908895 | out of scope (animal, plant, clinical or non-genetic) | Near-infrared fluorescent probe-mediated high-throughput discovery of a natural β-galactosidase inhibitor for  |
+| pmid 42906511 | out of scope (animal, plant, clinical or non-genetic) | Pharmacological depletion of macrophages leads to a reduction in inflammation and senescence in aged murine ki |
+| pmid 42903823 | out of scope (animal, plant, clinical or non-genetic) | Ex-Tregs: From controversial artifact to therapeutic target. |
+| pmid 42901416 | out of scope (animal, plant, clinical or non-genetic) | Long-term treadmill exercise improves spatial memory and increases SOX2-positive cells in the hippocampus of m |
+| pmid 42901355 | out of scope (animal, plant, clinical or non-genetic) | Comparison of alveolar macrophages senescence between cigarette smoke-exposed and naturally aged mice and the  |
+| pmid 42986129 | out of scope (animal, plant, clinical or non-genetic) | Nationwide clinical-genomic epidemiology of listeriosis in Taiwan, 2018-2025: disease manifestations in relati |
