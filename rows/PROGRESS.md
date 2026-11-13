@@ -135,6 +135,15 @@ By `locus_id` within each tier, as the seed lists them. Known before reaching th
 v1's 528 rsIDs less those the seed list holds, as legacy rows (R-LEGACY-1), unless one qualifies for A/B on
 modern evidence. Their depth waits on D6.
 
+The seed list's own v1 rsIDs that are not a locus's lead also get legacy rows of their own here (D30.7; the row
+format holds two variants but not two tiers), each tested as its source states it:
+
+- rs5882, CETP I405V (row 84's second rsID): Barzilai 2003's VV model (D29.19), not the per-allele looks.
+- rs1063192 (row 57, a German candidate study) and rs1333049 (row 57, the CAD tag).
+- rs2802292 (row 43, FOXO3's candidate SNP).
+- rs2075650, rs405509, rs769449, rs4420638 and rs7412 (row 96's region, APOE/TOMM40), unless row 96 carries one as
+  part of its own haplotype when it is curated.
+
 ## What the requirements' open decisions (§11) block
 
 None is asked until a locus needs it.

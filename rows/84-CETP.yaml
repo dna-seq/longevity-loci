@@ -10,7 +10,7 @@ verdict_reason: >-
   Tier C, from the seed's B, by R-TIER-4, row 83's shape: nothing at the lead reaches genome-wide significance for a
   lifespan or healthspan phenotype, nothing in Timmers 2019's window (GRCh37 16:56.7-57.2 Mb) even reaches suggestive
   (its strongest line P 4.8e-4), the lead is not even the window's peak, and Timmers' risk-factor-informed Bayesian scan (Table 2) does not
-  list the locus (D28.7). Sub-genome-wide, it is out of A and B (R-TIER-4); the seed's B was the pleiotropy track's
+  list the locus (D28.7). Sub-genome-wide, it is out of A and B (R-TIER-4), and with its lifespan lines nominal, one-way and contradicted nowhere it is C (D30.4); the seed's B was the pleiotropy track's
   (MR:drug_target_proxy, CETP read as an HDL drug target), which no note here holds as a per-variant result. The variant's own lifespan evidence is
   nominal and points one way. Timmers 2019's million parents' lives: A longer-lived, P 0.0012, UK Biobank and LifeGen
   both on that side (Pilling's UK Biobank parents P 1.6e-4). Park 2025's own survival in UK Biobank: A with fewer
@@ -25,15 +25,14 @@ verdict_reason: >-
   large-particle lipoprotein phenotype the abstract ties to homozygosity for the variant (V, the G allele), a small
   single-sample candidate-gene result (§4.1's C clause; the cached abstract breaks before its genotype P), and in the large
   samples it is flat (Timmers P 0.35, its V leaning longer; Pilling 0.11; Deelen 0.87 and 0.25; FinnGen 0.28; Zenin
-  0.69). It is a separate variant from the lead, named here and not a variant of this row. Mechanism: ageing in
+  0.69). It is a separate variant from the lead, named here and not a variant of this row; it gets a legacy row of its own in the legacy pass (D30.7, rows/PROGRESS.md), where Barzilai's VV model is tested as stated. Mechanism: ageing in
   general (D25.7). The lead tops 434 of its 1,707 sets, 408 of them lipid, fatty-acid or lipoprotein traits: A
   raises HDL cholesterol in every HDL-cholesterol-level set it tops (UK Biobank, posterior 0.96, P 1e-322; one
   case-control "low HDL" set runs the other way on an unnamed scale) and lowers the VLDL and LDL fractions, and A goes
   with less statin use (P 7e-9); but nothing shows the lifespan effect runs through HDL, and no coronary set with a β is
   topped by the lead. The one ageing-named set at CETP, He 2016's pleiotropic analysis of age-related diseases and
   endophenotypes in 9,618 people (GCST004045, P 1e-149, the lead at posterior 0.08), counts lipids among its
-  endophenotypes, so at CETP it reads as the lipid signal, not a scoring class (§4.5): named and not counted (put to
-  the lead). Two disease sets run against it, both macular degeneration, A raising it (P 7e-9 and 8e-12), as
+  endophenotypes, so at CETP it reads as the lipid signal, not a scoring class (§4.5): named and not counted (D30.8). Two disease sets run against it, both macular degeneration, A raising it (P 7e-9 and 8e-12), as
   every macular-degeneration set at the locus has its alt allele raising it: a quoted harm on the longer-lived side
   (D18.1), tradeoff, so descriptive. Pleiotropy mech:lipids and tradeoff. Causal C4 and effector E4, no gene
   named: no credible set of a lifespan-class study holds the lead (none of eleven longevity studies queried); CETP is
@@ -45,7 +44,7 @@ axes:
   pleiotropy: {values: ["mech:lipids", tradeoff], cites: [db-opentargets-26.09#q944, db-opentargets-26.09#q945, db-opentargets-26.09#q946, db-opentargets-26.09#q947, db-opentargets-26.09#q948, db-opentargets-26.09#q949, db-opentargets-26.09#q950, db-opentargets-26.09#q951, db-opentargets-26.09#q952, db-opentargets-26.09#q968, db-opentargets-26.09#q969, db-opentargets-26.09#q970, db-opentargets-26.09#q971, db-gwascatalog-2026.10.29#q501, pmid-27790247#q1]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "+",
-            cites: [pmid-30729179#q116, pmid-30642433#q328, pmid-29227965#q71, pmid-40021682#q86, db-finngen-r11#q60, pmid-31413261#q195, pmid-31413261#q196]}
+            cites: [pmid-30729179#q116, pmid-30642433#q328, pmid-29227965#q71, pmid-40021682#q86, pmid-31413261#q195, pmid-31413261#q196]}
   actionability: {label: descriptive, cites: [db-opentargets-26.09#q947, db-opentargets-26.09#q948]}
   context: {values: [eur_only_evidence], cites: [pmid-30642433#q328, pmid-31413261#q195]}
 flags:
