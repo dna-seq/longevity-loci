@@ -402,3 +402,13 @@ rs116257533 has no line. For row 75.
 
 FinnGen R11 DEATH at rs61978928 (GRCh38 14:74,855,011), row 76 (q53): C (0.37) β +0.0103 (SE 0.0077), P 0.18, C with
 slightly more deaths, against the discovery, flat; nearest genes PROX2, YLPM1. For row 76.
+
+## Reading 2026-11-13, supplement
+
+> [q54] 15 41138771 T A rs28455998 RP11-129I12.3 0.452904 0.343994 -0.00580089 0.00772852 0.362903 0.362072 0.363008
+
+> [q55] 15 41151726 A G rs3959554 RP11-129I12.3 0.635561 0.196843 -0.00377446 0.00796442 0.321189 0.320924 0.321222
+
+FinnGen R11 death at row 78's lead (q54): alt A β −0.0058 (SE 0.0077) on the log odds of death, P 0.45, so T with
+slightly more deaths, one-sided for T about 0.77 (derived): against, flat. At rs3959554 (q55): G −0.0038, P 0.64, the
+same lean (G travels with the lead's A). For row 78.

@@ -2135,3 +2135,40 @@ GRCh37 15:29,322,932, A/G, A ancestral (q590). G is 0.115 in 1000 Genomes Europe
 APBA2 (q594). NECS's controls carry G at 0.0045 (pmid-33948810#q33-q34) and Park's UK Biobank deposit at about
 0.0008 (pmid-40021682#q79): the HRC-imputed samples see a rare allele where the sequenced panels see a common one,
 so the frequency depends on the source (as at row 19). The EUR LD window at r² ≥ 0.5 holds 107 pairs. For row 77.
+
+## Reading 2026-11-13, record
+
+> [q595] mappings[0] strand 1 ancestral_allele A allele_string T/A assembly_name GRCh38 start 41138771 coord_system chromosome end 41138771 location 15:41138771-41138771 seq_region_name 15
+
+> [q596] populations[77] frequency 0.503976143141153 allele T population 1000GENOMES:phase_3:EUR allele_count 507
+
+> [q597] populations[64] allele T population 1000GENOMES:phase_3:CEU frequency 0.590909090909091 allele_count 117
+
+> [q598] [4] population_name 1000GENOMES:phase_3:CEU d_prime 0.999997 variation2 rs3959554 variation1 rs28455998 r2 0.705928
+
+> [q599] [9] population_name 1000GENOMES:phase_3:GBR d_prime 0.999998 variation1 rs28455998 variation2 rs3959554 r2 0.766987
+
+> [q600] populations[65] frequency 0.671717171717172 population 1000GENOMES:phase_3:CEU allele_count 133 allele A
+
+> [q601] populations[77] population 1000GENOMES:phase_3:EUR frequency 0.437375745526839 allele_count 440 allele G
+
+> [q602] [4] variation1 rs28455998 variation2 rs11855102 r2 0.722033 d_prime 0.905420 population_name 1000GENOMES:phase_3:CEU
+
+> [q603] populations[64] frequency 0.621212121212121 population 1000GENOMES:phase_3:CEU allele T allele_count 123
+
+> [q604] [4] population_name 1000GENOMES:phase_3:CEU variation1 rs28455998 variation2 rs1678750 r2 0.979362 d_prime 1.000000
+
+> [q605] populations[64] allele G allele_count 116 population 1000GENOMES:phase_3:CEU frequency 0.585858585858586
+
+> [q606] [4] r2 0.897442 variation2 rs1869907 variation1 rs28455998 d_prime 0.957263 population_name 1000GENOMES:phase_3:CEU
+
+> [q607] populations[65] allele T population 1000GENOMES:phase_3:CEU frequency 0.585858585858586 allele_count 116
+
+Row 78. rs28455998 (q595): GRCh38 15:41,138,771, T/A, A ancestral, intergenic; T 0.504 in 1000 Genomes Europeans
+(q596), 0.591 in CEU (q597). An A/T SNP near 50 %, so strand and phase are read from non-palindromic neighbours. Phase
+from CEU, where the frequencies differ enough to decide (in GBR and pooled Europeans both phases fit). rs3959554,
+Atkins' frailty SNP: r² 0.71 (CEU, D′ 1.00, q598), 0.77 (GBR, q599); A 0.672 in CEU (q600), G 0.437 in Europeans
+(q601). With T at 0.591 and A at 0.672, r² 0.71 fits only T on A's haplotypes (the other phase caps r² near 0.34):
+T rides with A (derived). rs11855102 (q602, q603): r² 0.72, D′ 0.91, T 0.621: T with T (the other phase caps r² near
+0.42). rs1678750 (q604, q605): r² 0.98, D′ 1.00, G 0.586: G with T. rs1869907 (q606, q607): r² 0.90, T 0.586: T with T.
+Ensembl returns no LD between the lead and Wright's Table 8 SNPs rs690136 and rs686038 (3 % variants). For row 78.

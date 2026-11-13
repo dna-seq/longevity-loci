@@ -3281,3 +3281,29 @@ alone at posterior probability 1 (q894); locus-to-gene gives APBA2 0.42 (q895), 
 Open Targets' gnomAD frequencies for 15_29030729_A_G (rs77184423, row 77): G 0.0027 in non-Finnish Europeans (q896),
 0.18 in Africans (q897), 0.0008 in Ashkenazi Jews (q898). gnomAD sides with NECS's controls (0.0045) and Park's UK
 Biobank (about 0.0008), against 1000 Genomes' Europeans (0.115) and ALFA's (0.064): the references disagree. For row 77.
+
+## Reading 2026-11-13, record
+
+> [q899] data.variant.credibleSets count 143
+
+> [q900] data.variant.credibleSets.rows[26] studyLocusId 27c48045b34bcdc3da2f0f934d13586f pValueMantissa 1.0119999647140503 pValueExponent -9 beta 0.0369 finemappingMethod PICS
+
+> [q901] data.variant.credibleSets.rows[26].study id GCST90018988 traitFromSource Medication use (agents acting on the renin-angiotensin system) studyType gwas
+
+> [q902] data.variant.credibleSets.rows[26].locus.rows[0] posteriorProbability 0.0335034507688656
+
+> [q903] data.variant.credibleSets.rows[14] studyLocusId 161050e7b38c034352dba93e1e4b38d4 pValueMantissa 4.359246253967285 pValueExponent -9 beta 0.008007924518550385 finemappingMethod SuSiE-inf
+
+> [q904] data.variant.credibleSets.rows[14].variant id 15_41151726_A_G
+
+> [q905] data.variant.credibleSets.rows[14].study id GCST90693007 traitFromSource Coronary atherosclerosis (PheCode 411.4) studyType gwas
+
+> [q906] data.credibleSets count 0
+
+15_41138771_T_A (rs28455998, row 78): 143 credible sets hold it (q899), 136 of GWAS, none of a lifespan, longevity,
+frailty or ageing study (the nine longevity studies, q906: none; no trait of the 143 names ageing, frailty, survival
+or lifespan). It leads one: GCST90018988's renin-angiotensin medication use (PICS, P 1e-9, alt A β +0.0369, q900, q901),
+at posterior 0.034 (q902). Elsewhere it sits at 0.03 or less, in sets led by other variants, mostly blood pressure and
+hypertension, also coronary disease, eGFR and creatinine, height, red-cell counts, brain white-matter imaging,
+menopause and lung function. Atkins' rs3959554 (15_41151726_A_G) leads coronary atherosclerosis sets, G raising it
+(β +0.0080, P 4.4e-9, q903 to q905). For row 78.

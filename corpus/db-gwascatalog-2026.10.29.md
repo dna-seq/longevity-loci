@@ -1729,3 +1729,27 @@ For row 76.
 
 rs77184423 holds one GWAS Catalog association (q483): Gurinovich 2021's longevity (100 years and older), risk
 frequency 0.0045, P 1e-8. Nothing else. For row 77.
+
+## Reading 2026-11-13, record
+
+> [q484] _embedded.associations[0] association_id 131476418 risk_frequency NR pvalue_description pvalue_mantissa 2 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.0037-0.0077] beta 0.00567587 unit increase p_value 2e-08 accession_id GCST90321079 pubmed_id 37550455 first_author Rosoff DB ci_lower 0.0037 ci_upper 0.0077
+
+> [q485] _embedded.associations[0].snp_effect_allele[0] rs28455998-T
+
+> [q486] _embedded.associations[1] association_id 93551897 risk_frequency NR pvalue_description pvalue_mantissa 1 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range [0.025-0.049] beta 0.0369 unit increase p_value 1e-09 accession_id GCST90018988 pubmed_id 34594039 first_author Sakaue S ci_lower 0.025 ci_upper 0.049
+
+> [q487] _embedded.associations[1].snp_effect_allele[0] rs28455998-A
+
+> [q488] _embedded.associations[4] association_id 119068902 risk_frequency NR pvalue_description pvalue_mantissa 7 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range - or_per_copy_num 0.97 or_value 0.97 beta - p_value 7.000000000000001e-09 accession_id GCST90132302 pubmed_id 35915156 first_author Tcheandjieu C
+
+> [q489] _embedded.associations[4].snp_effect_allele[0] rs3959554-A
+
+> [q490] _embedded.associations[5] association_id 91631971 risk_frequency 0.5823 pvalue_description pvalue_mantissa 2 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.012-0.026] beta 0.0189 unit decrease p_value 2e-08 accession_id GCST90020053 pubmed_id 34431594 first_author Atkins JL ci_lower 0.012 ci_upper 0.026
+
+> [q491] _embedded.associations[5].snp_effect_allele[0] rs3959554-A
+
+Row 78. At rs28455998 the catalog holds two associations: Rosoff's mvAge ("Aging"), T β +0.0057, P 2e-8 (q484,
+q485), and agents acting on the renin-angiotensin system, A raising their use, β 0.0369, P 1e-9 (q486, q487), so T
+with less use. At rs3959554: coronary artery disease, A OR 0.97, P 7e-9 (q488, q489), and Atkins' frailty index, A
+lowering it, β 0.0189, P 2e-8 (q490, q491); the lead's T rides with A (db-ensembl-116#q598, q600), so T goes with
+less coronary disease and less frailty. Height records at rs3959554 are not read. For row 78.
