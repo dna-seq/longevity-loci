@@ -2361,3 +2361,14 @@ strand's C is the alanine codon's G); SIFT tolerated, PolyPhen benign (0.015). L
 (q659); rs11079033 r² 0.44 (q660). Phased in CEU (q654) from the 1000 Genomes genotype records of rs34891485 and
 rs12600570 (`genotypes-*.json`, 198 haplotypes): (T, C) 173, (C, T) 17, (T, T) 8: the lead's C always rides with
 rs12600570's T. For row 87.
+
+## Reading 2026-11-13, record
+
+> [q661] [0] d_prime 0.718209 variation1 rs34891485 variation2 rs76611716 population_name 1000GENOMES:phase_3:CEU r2 0.368623
+
+> [q662] [0] d_prime 0.697817 population_name 1000GENOMES:phase_3:CEU variation1 rs34891485 variation2 rs1011157 r2 0.277680
+
+Row 87, LD in CEU from rs34891485: to rs76611716, Timmers' peak 245 kb away, r² 0.37, D′ 0.72 (q661); to rs1011157,
+Timmers' strongest line within 1 Mb (BECN1, 700 kb), r² 0.28, D′ 0.70 (q662). Rosoff's other independent SNPs at the
+locus: rs12325861 r² 0.30, rs79677630 0.51, rs78645838 0.31 (`ld-ceu-rs34891485-*.json`); rs35118457 (58 bp away)
+has no pair Ensembl reports. For row 87.
