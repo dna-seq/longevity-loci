@@ -17,7 +17,8 @@ verdict_reason: >-
   AncestryDNA arm's own P. The AncestryDNA arm puts T on the longer-lived
   side, P 0.0043 (one-sided 0.0021 raw, about 0.0043 after the fathers' genomic control, λ 1.182, derived), and agrees
   with the UK arm (heterogeneity P 0.20). The UK arm is Pilling's fathers' line digit for digit, which fixes the
-  allele; it alone is P 3.3e-8, far under Table 9's 2.5e-3 filter, so D29.18 does not touch the line; Wright has no
+  allele; with the AncestryDNA arm at z = 0 the meta of the printed arms, deflated by 1.24, is P 1.5e-4, under Table
+  9's 2.5e-3, so the line counts (D30.1; derived); Wright has no
   line at Pilling's lead, so its own lead stands in (D29.3). No red flag (D21). Timmers 2019's LifeGen fathers with
   UK Biobank's lives removed (Figure 2 source data, sample b) are on the same side and not nominal (G +0.0105, SE
   0.0167, against the discovery's +0.0439, SE 0.0077 on Timmers' sheet; one-sided P 0.26): power 0.84, heterogeneity
@@ -25,9 +26,11 @@ verdict_reason: >-
   discovery effect. Unlike row 6, where D28.9 rebuilt UK Biobank's effect from Timmers' pooled β, the claim here is
   the fathers' and Timmers' pooled β is both parents', so the sheet's own discovery effect is the comparison. Deelen
   2019 leans G's way at both percentiles (90th one-sided 0.082, 99th 0.34). Calibrated from the discovery (D27.9,
-  D28.2) in its both-parents form, backed out of Pilling's P 7.0e-6 at the fathers' sheet SE over √2 (G +0.024, SE
-  0.0054; derived), the 90th is powered under APOE's factor (0.99) at heterogeneity P 0.053 and under the mean factor
-  unpowered (0.51); the 99th 0.82 at P 0.062, and 0.28. From the fathers' own +0.0439 the APOE factor flags (power
+  D28.2) in its both-parents form, Pilling's both-parents deposit (P 7.0e-6, SE 0.00347, the fathers' SE and not
+  the fathers' over √2) scaled onto Timmers' sheet by Pilling's own ratios (G +0.0358, SE 0.0079; derived), the 90th
+  flags under APOE's factor (power 1.00, heterogeneity P 0.0064) and not under the mean factor (power 0.78,
+  heterogeneity P 0.36); the 99th the same (0.98, P 0.0099; 0.47, P 0.27). (The lead's reviewer got 0.019 and 0.026
+  under APOE's factor from another back-out; the mean factor flags under neither.) From the fathers' own +0.0439 the APOE factor flags (power
   1.00, heterogeneity P 0.0003 and 0.0011) and the mean factor does not (power 0.91 and 0.61, P 0.16 and 0.15). A flag
   under one calibration only, so none (D25.3). The
   rest of the evidence agrees or is flat: Timmers' pooled parents G longer, P 1.4e-4 (UK Biobank inside); Park 2025's
@@ -42,10 +45,10 @@ verdict_reason: >-
   variants with the lead at a posterior of 0.005 or less, named only; pleiotropy empty, descriptive. Causal C4 and
   effector E4, no gene named: none of Pilling's five deposits nor the nine longevity studies has a credible set here;
   the lead sits in SEMA6D's introns, named in prose. G is the common allele at 88 %, so G/G is the reference (§6.2)
-  and A, the minor allele, the risk: PROTECT:ABSENCE_OF_RISK, as row 63. Age of action unknown: Timmers' age bands do
+  and A, the minor allele, the risk; no PROTECT token, since no genome-wide disease association is at the locus (D30.6). Age of action unknown: Timmers' age bands do
   not include the locus. The evidence is European (UK Biobank, AncestryDNA's European-ancestry group, LifeGen).
 axes:
-  tier: {value: A, cites: [pmid-29227965#q60, pmid-29227965#q61, pmid-29227965#q62, pmid-29227965#q45, db-gwascatalog-2026.10.29#q494, pmid-31484785#q126, pmid-31484785#q127, pmid-31484785#q6, pmid-31484785#q83, pmid-29227965#q64, db-ensembl-116#q611, db-ensembl-116#q612, db-ensembl-116#q613, db-ensembl-116#q609, pmid-30642433#q320, pmid-30642433#q12, pmid-30642433#q101, pmid-30642433#q321, pmid-31413261#q185, pmid-31413261#q187, pmid-40021682#q82, pmid-40021682#q32, db-finngen-r11#q56, pmid-30729179#q110, pmid-29227965#q27, pmid-31484785#q128, db-ensembl-116#q614, db-ensembl-116#q615, db-ensembl-116#q616]}
+  tier: {value: A, cites: [pmid-29227965#q77, pmid-29227965#q60, pmid-29227965#q61, pmid-29227965#q62, pmid-29227965#q45, db-gwascatalog-2026.10.29#q494, pmid-31484785#q126, pmid-31484785#q127, pmid-31484785#q6, pmid-31484785#q83, pmid-29227965#q64, db-ensembl-116#q611, db-ensembl-116#q612, db-ensembl-116#q613, db-ensembl-116#q609, pmid-30642433#q320, pmid-30642433#q12, pmid-30642433#q101, pmid-30642433#q321, pmid-31413261#q185, pmid-31413261#q187, pmid-40021682#q82, pmid-40021682#q32, db-finngen-r11#q56, pmid-30729179#q110, pmid-29227965#q27, pmid-31484785#q128, db-ensembl-116#q614, db-ensembl-116#q615, db-ensembl-116#q616]}
   mechanism: {value: general_ageing, cites: [pmid-29227965#q62, db-gwascatalog-2026.10.29#q492, db-opentargets-26.09#q907]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -54,7 +57,6 @@ axes:
   actionability: {label: descriptive, cites: [pmid-29227965#q60]}
   context: {values: ["sex_specific:m", eur_only_evidence], cites: [pmid-29227965#q60, pmid-29227965#q63, pmid-29227965#q65, pmid-30642433#q320, pmid-31484785#q127]}
 flags:
-  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-29227965#q60, pmid-29227965#q45, db-ensembl-116#q609]}
   - {token: "causal:C4", cites: [db-opentargets-26.09#q907, db-opentargets-26.09#q908, db-opentargets-26.09#q909]}
   - {token: "effector:E4", cites: [db-opentargets-26.09#q907, db-opentargets-26.09#q908, db-opentargets-26.09#q909, db-ensembl-116#q610]}
 variants:
@@ -206,7 +208,7 @@ studies:
     effect_unit: log odds of reaching the 90th percentile, per A allele
     effect_allele: A
     direction: risk
-    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008598), SE 0.0298, effective N 11,615; G one-sided 0.082 (derived); against the discovery's both-parents form backed out of Pilling's P 7.0E-06 (G +0.024, SE 0.0054; D27.9, D28.2, D25.3, derived): APOE factor power 0.99, heterogeneity P 0.053; mean factor power 0.51, P 0.80; from the fathers' +0.0439 the APOE factor flags (P 0.0003) and the mean factor does not (power 0.91, P 0.16): one calibration only, no flag; rs4774495 the same (q186)"
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008598), SE 0.0298, effective N 11,615; G one-sided 0.082 (derived); against the discovery's both-parents form, Pilling's both-parents deposit scaled onto Timmers' sheet (G +0.0358, SE 0.0079, pmid-29227965#q77; D27.9, D28.2, D25.3, derived): APOE factor power 1.00, heterogeneity P 0.0064, a flag; mean factor power 0.78, P 0.36, none; from the fathers' +0.0439 the APOE factor flags (P 0.0003) and the mean factor does not (power 0.91, P 0.16): one calibration only, no flag; rs4774495 the same (q186)"
     curator: claude-opus-5-5
   - rsid: rs74011415
     note: pmid-31413261
@@ -223,7 +225,7 @@ studies:
     effect_unit: log odds of reaching the 99th percentile, per A allele
     effect_allele: A
     direction: risk
-    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), SE 0.0461, effective N 4,524; G one-sided 0.34 (derived); from the both-parents form power 0.82 under APOE's factor (borrowed from the 90th's ε4 line), heterogeneity P 0.062, and 0.28 under the mean; from the fathers' effect the APOE factor flags (P 0.0011), the mean factor does not (power 0.61): no flag; its cases a subset of the 90th's"
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), SE 0.0461, effective N 4,524; G one-sided 0.34 (derived); from the both-parents form (pmid-29227965#q77) power 0.98 under APOE's factor (borrowed from the 90th's ε4 line), heterogeneity P 0.0099, a flag, and 0.47 under the mean, P 0.27; from the fathers' effect the APOE factor flags (P 0.0011), the mean factor does not (power 0.61): no flag; its cases a subset of the 90th's"
     curator: claude-opus-5-5
   - rsid: rs74011415
     note: pmid-30729179
