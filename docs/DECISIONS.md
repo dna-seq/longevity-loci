@@ -703,3 +703,8 @@ standing word (pacing off, "full steam ahead"; the advisor pattern for the requi
    traits, D27.3) with `tradeoff`, descriptive (the lead leads luminal-A breast cancer, P 2.1e-15); 84's He 2016
    set named, not counted (no β, the HDL signal); 87 E1 DHX58 (D24, D29.10). 78's and 87's red flags read unknown
    (D29.11).
+9. **A locus "acts through weight" (D18.2) when its lifespan signal is shown to share the weight signal**: a
+   colocalisation with body-composition sets (82, 18 sets at H4), or a mediation. An allele that merely goes with
+   lower BMI in sets it does not lead is named and stays `general_ageing`, descriptive. 88 B4GALNT2P1 (C lowers BMI in
+   17 sets, leads none, no mediation): the curator's (a). Rejected: (b), metabolism through weight on direction
+   alone, which would label most lifespan loci by the BMI they correlate with.
