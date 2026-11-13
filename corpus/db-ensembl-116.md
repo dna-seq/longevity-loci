@@ -2190,3 +2190,14 @@ Ensembl returns no LD between the lead and Wright's Table 8 SNPs rs690136 and rs
 Row 79. rs74011415 (q608): GRCh38 15:47,367,997, G/A, G ancestral; A 0.117 in 1000 Genomes Europeans (q609); an intron
 variant of SEMA6D's protein-coding transcripts (q610). rs4774495, Wright's SEMA6D lead: r² 1.00, D′ 1.00 in CEU (q611)
 and GBR (q612); C 0.117 in Europeans (q613), so C rides with A and T with G. For row 79.
+
+## Reading 2026-11-13, record
+
+> [q614] [1] population_name 1000GENOMES:phase_3:CEU r2 0.174689 d_prime 0.787018 variation1 rs74011415 variation2 rs1378214
+
+> [q615] [1] variation1 rs74011415 r2 0.161607 variation2 rs766132 d_prime 0.781812 population_name 1000GENOMES:phase_3:CEU
+
+> [q616] [0] r2 0.150150 variation2 rs17358764 variation1 rs74011415 population_name 1000GENOMES:phase_3:CEU d_prime 0.836658
+
+Row 79: Wright's three mothers' Table 9 SNPs near SEMA6D against the lead rs74011415, CEU r² 0.17 (rs1378214, q614),
+0.15 (rs766132, q615) and 0.16 (rs17358764, q616); GBR 0.14 to 0.18. None tags the lead. For row 79.
