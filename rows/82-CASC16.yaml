@@ -1,0 +1,176 @@
+# The seed list's locus 82, CASC16 (16q12.1; the seed's genes TOX3 and CASC16). Curated 2026-11-13. Lead rs4783780,
+# the seed's lead (Timmers 2020's multivariate TOX3 SNP): an intron variant of TOX3, A/C, A at 0.51 in Europeans and
+# the longer-lived side. The seed's second rsID, rs4784227 (Zenin 2019's healthspan SNP, the breast-cancer variant
+# near CASC16), lies 28 kb away at r² 0.33 (CEU): another signal, named in the reason and not a variant here.
+locus_id: 82
+locus_name: CASC16
+verdict: kept
+verdict_reason: >-
+  Tier B, as the seed has it, row 27's shape: a genome-wide multivariate result with a co-occurring lifespan study
+  (§4.5 as D16 reads it); a multivariate result does not meet tier A's first criterion (D18.3). Timmers 2020's
+  MANOVA of healthspan, parental lifespan and Deelen's 90th percentile is genome-wide at rs4783780 (P 1e-8), A
+  favourable in all three columns (healthspan P 2e-6, lifespan 3e-4, longevity 6e-3), no column genome-wide alone.
+  Timmers 2019's million parents' lives are the co-occurring lifespan study: A longer-lived, P 3.0e-4, UK Biobank and
+  LifeGen on the same side. Nothing univariate is genome-wide at the lead, so A is out of reach whatever replicates.
+  Outside the multivariate's inputs, FinnGen R11's death endpoint agrees (A with fewer deaths, P 0.0058), a database
+  line that lifts nothing (D29.1); Park 2025's own survival is flat on A's side (P 0.37; its allele columns swapped,
+  read from UK Biobank's own frequency of A and from rs4784227's unambiguous line in the same file); Wright 2019's
+  tables hold no SNP near the lead. No red flag: nothing outside the inputs fails with power, and FinnGen's scale is
+  printed nowhere (D28.1). Healthspan +: Zenin 2019, A delaying the end of healthspan, P 3.0e-6 after its genomic
+  control (an input). Exceptional survival +: Deelen's 90th favours A (P 0.0059), its 99th leans the same way (P
+  0.20); the 90th is the multivariate's own input, so it sets the cell and replicates nothing (row 27). Lifespan +.
+  The seed's second rsID, rs4784227 28 kb away, is the TOX3/CASC16 breast-cancer variant (r² 0.33 and D′ 0.95 in CEU,
+  its T riding with the lead's C): Zenin's healthspan is genome-wide there (T earlier, P 3.0e-8 after genomic control,
+  cancer its only component, P 2.2e-10; parents' death P 0.10), with T shorter-lived in Timmers 2019 (P 0.029), Deelen's
+  90th (P 0.030) and FinnGen (P 0.042). Read as a shadow of the lead (r about 0.58), those lifespan Zs are what the
+  lead's signal alone would put there or a little more (Timmers 2.18 against 2.09 expected, Deelen 2.17 against 1.59,
+  Pilling 2.76 against 1.81; derived), while the lead's own (3.62, 2.75) are far above rs4784227's shadow (1.26, 1.25):
+  the lifespan evidence belongs to the lead, and rs4784227's cannot be told apart from it. The two are separate
+  signals: Timmers 2020's set colocalises with none of rs4784227's breast-cancer sets. So rs4784227 is named here and
+  not tiered; whether it should lead the row instead (A on Zenin's healthspan with Deelen's 90th) is put to the lead.
+  Mechanism metabolism, through body weight: Timmers 2020's set at the lead colocalises (H4 0.83 to 0.97) mostly with
+  body-mass and fat-mass sets, also brain morphology, systolic pressure, type 2 diabetes (0.90) and gallstones; the
+  lead's own BMI set and the GWAS Catalog's BMI record put A on the lower side (P 6.5e-9, 3e-9). So the longer-lived A
+  goes with lower weight; no harm is tied to A (D18.1: the breast-cancer risk allele rides with C), and the label is
+  modifiable through weight (D18.2), association on one signal, not a mediator test. Pleiotropy mech:adiposity and
+  broad. Causal C3: the lead tops Timmers 2020's PICS set at posterior 0.043 of 40 members. Effector E3, no gene named
+  (D24): locus-to-gene gives TOX3 0.886, but the set's only cis-QTL colocalisations are an RBL2 transcript in
+  monocytes (H4 0.97) and LINC03064 in testis (0.88), none of TOX3, so a rival holds half of them; TOX3, in whose
+  introns the lead sits, is named in prose. No sexual dimorphism at the lead (Timmers 2020). A is at 51 % in
+  Europeans, so A/C, the commonest genotype, is the reference (§6.2): A/A protective, C/C risk, no PROTECT token, as
+  row 24. Age of action unknown. The evidence is European.
+axes:
+  tier: {value: B, cites: [pmid-32678081#q32, pmid-32678081#q1, pmid-30642433#q323, db-finngen-r11#q57, pmid-40021682#q83, pmid-40021682#q84, pmid-40021682#q32, pmid-29227965#q66, pmid-30729179#q113, pmid-30729179#q59, pmid-31413261#q189, pmid-31413261#q191, pmid-30729179#q111, pmid-30729179#q112, pmid-30642433#q324, pmid-31413261#q190, db-finngen-r11#q58, pmid-29227965#q67, db-ensembl-116#q620, db-ensembl-116#q621, db-ensembl-116#q622, db-ensembl-116#q623, db-ensembl-116#q619, db-opentargets-26.09#q918]}
+  mechanism: {value: metabolism, cites: [db-opentargets-26.09#q918, db-opentargets-26.09#q919, db-opentargets-26.09#q920, db-opentargets-26.09#q921, db-opentargets-26.09#q922, db-gwascatalog-2026.10.29#q495, db-gwascatalog-2026.10.29#q496]}
+  pleiotropy: {values: ["mech:adiposity", broad], cites: [db-opentargets-26.09#q918, db-opentargets-26.09#q919, db-opentargets-26.09#q921, db-opentargets-26.09#q922, db-gwascatalog-2026.10.29#q495, db-gwascatalog-2026.10.29#q496]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
+            cites: [pmid-30729179#q113, pmid-32678081#q32, pmid-30642433#q323, db-finngen-r11#q57, pmid-40021682#q83, pmid-31413261#q189, pmid-31413261#q191]}
+  actionability: {label: modifiable, what: ["act_behaviour:weight"], who: "act_who:self", cites: [db-opentargets-26.09#q918, db-opentargets-26.09#q919, db-opentargets-26.09#q920, db-opentargets-26.09#q921, db-opentargets-26.09#q922, db-gwascatalog-2026.10.29#q495, db-gwascatalog-2026.10.29#q496]}
+  context: {values: [eur_only_evidence], cites: [pmid-32678081#q32, pmid-30642433#q323]}
+flags:
+  - {token: "causal:C3", cites: [db-opentargets-26.09#q911, db-opentargets-26.09#q912, db-opentargets-26.09#q913]}
+  - {token: "effector:E3", cites: [db-opentargets-26.09#q914, db-opentargets-26.09#q915, db-opentargets-26.09#q916, db-opentargets-26.09#q917, db-ensembl-116#q624]}
+variants:
+  - rsid: rs4783780
+    gene: ""
+    phenotype: TOX3 region, body weight, healthy ageing
+    trait_efo_id: EFO_0007796
+    effect_allele: A
+    effect_size: 0.014
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: A/A
+        state: protective
+        conclusion: >-
+          You carry two copies of one of two common versions of this DNA position (about 27 in 100 people of
+          European ancestry do). In very large European studies that combined healthspan, parents' lifespan and
+          reaching old age, each copy went with slightly healthier ageing and parents who lived a little longer,
+          and a separate Finnish study saw slightly fewer deaths. The same version goes with slightly lower body
+          weight, so keeping a healthy weight is the part within reach. It is a likely finding, not a settled one:
+          it rests on one combined analysis. The effect is small and it is a tendency, not destiny.
+      - genotype: A/C
+        state: neutral
+        conclusion: >-
+          You carry one copy of each common version of this DNA position (about 50 in 100 people of European
+          ancestry do, the most common combination). It is the reference the other combinations are compared with.
+          The position, on chromosome 16, lies inside the TOX3 gene. The finding comes from people of European
+          ancestry; less is known elsewhere.
+      - genotype: C/C
+        state: risk
+        conclusion: >-
+          You carry two copies of one of two common versions of this DNA position (about 23 in 100 people of
+          European ancestry do). In very large European studies that combined healthspan, parents' lifespan and
+          reaching old age, each copy went with slightly less healthy ageing and parents who lived a little less
+          long. The same version goes with slightly higher body weight, so keeping a healthy weight is the part
+          within reach. It is a likely finding, not a settled one: it rests on one combined analysis. The effect is
+          small and it is a tendency, not destiny.
+studies:
+  - rsid: rs4783780
+    note: pmid-32678081
+    quote: q32
+    phenotype_class: MULTIVARIATE_AGEING
+    study_design: multivariate_healthspan_lifespan
+    population: European (Zenin 2019's UK Biobank healthspan, Timmers 2019's parental lifespan, Deelen 2019's 90th percentile)
+    ancestry: [EUR]
+    stat_significance: significant
+    p_value: "1E-08"
+    p_value_num: 1.0e-08
+    effect_allele: A
+    direction: protective
+    statistical_test: "MANOVA over three published GWAS (Table 1, q32): A favourable in all three, healthspan 0.023 (SE 0.005, P 2E-06), parental lifespan 0.014 (0.004, P 3E-04), longevity 0.052 (0.019, P 6E-03); no pooled effect printed (D20); pools its inputs' samples, not a replication; no sexual dimorphism at the lead (q15)"
+    curator: claude-opus-5-5
+  - rsid: rs4783780
+    note: pmid-30642433
+    quote: q323
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 640189
+    sample_unit: lives
+    stat_significance: nominal
+    p_value: "0.00029536648"
+    p_value_num: 0.00029536648
+    effect_size: 0.01394523
+    effect_measure: beta
+    effect_unit: log hazard protection per A allele in self (positive = longer life)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), SE 0.00385, direction ++ in UK Biobank and LifeGen, info 1.00; the co-occurring lifespan study (D16), an input of Timmers 2020 and not a replication; Pilling's UK Biobank parents A P 0.0017 (pmid-29227965#q66)"
+    curator: claude-opus-5-5
+  - rsid: rs4783780
+    note: pmid-30729179
+    quote: q113
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: suggestive
+    p_value: "1.7e-06"
+    p_value_num: 1.7e-06
+    effect_size: 0.0233
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per C allele (positive = earlier)
+    effect_allele: C
+    direction: risk
+    statistical_test: "Zenin 2019's healthspan summary statistics, SE 0.00487, Z 4.791, -log10 P 5.78; about 3.0E-06 after the paper's genomic control of 1.053 (q59, D26.1; derived); an input of Timmers 2020"
+    curator: claude-opus-5-5
+  - rsid: rs4783780
+    note: pmid-31413261
+    quote: q189
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.005939"
+    p_value_num: 0.005939
+    effect_size: 0.0524
+    effect_measure: beta
+    effect_unit: log odds of reaching the 90th percentile, per A allele
+    effect_allele: A
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008598), SE 0.0191, effective N 11,615; Timmers 2020's longevity input, so it sets the exceptional-survival cell and replicates nothing (row 27)"
+    curator: claude-opus-5-5
+  - rsid: rs4783780
+    note: pmid-31413261
+    quote: q191
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.1993"
+    p_value_num: 0.1993
+    effect_size: 0.0383
+    effect_measure: beta
+    effect_unit: log odds of reaching the 99th percentile, per A allele
+    effect_allele: A
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), SE 0.0298, effective N 4,524; its cases a subset of the 90th's"
+    curator: claude-opus-5-5

@@ -419,3 +419,12 @@ same lean (G travels with the lead's A). For row 78.
 
 FinnGen R11 death at row 79's lead (q56): alt A β +0.0016 (SE 0.0097) on the log odds of death, P 0.87, so G with
 slightly fewer deaths, flat; A at 0.177 in FinnGen. For row 79.
+
+## Reading 2026-11-13, supplement
+
+> [q57] 16 52537524 A C rs4783780 TOX3 0.00579442 2.23699 0.0206528 0.00748508 0.422698 0.426368 0.422238
+
+> [q58] 16 52565276 C T rs4784227 CASC16 0.0423253 1.3734 0.0173036 0.00852263 0.250958 0.253668 0.250619
+
+FinnGen R11 death at row 82's locus. rs4783780 (q57): alt C β +0.0207 (SE 0.0075) on the log odds of death, P 0.0058,
+so A with fewer deaths. rs4784227 (q58): alt T +0.0173 (SE 0.0085), P 0.042. A database line (D29.1). For row 82.

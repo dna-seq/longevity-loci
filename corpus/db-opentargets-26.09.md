@@ -3320,3 +3320,40 @@ menopause and lung function. Atkins' rs3959554 (15_41151726_A_G) leads coronary 
 posterior 0.005 or less: UK Biobank's age at completing education and FinnGen R12's ever-smoking (locus-to-gene SEMA6D
 0.87 and 0.47 there). None of Pilling's five deposits (q908) nor the nine longevity studies (q909) has a set here. For
 row 79.
+
+## Reading 2026-11-13, record
+
+> [q910] data.variant.credibleSets count 38
+
+> [q911] data.variant.credibleSets.rows[33] studyLocusId f01a4deb921bfbb94532a95c6be245e0 pValueMantissa 1 pValueExponent -8 beta null finemappingMethod PICS
+
+> [q912] data.variant.credibleSets.rows[33].study id GCST011100 traitFromSource Aging traits (healthspan, parental lifespan or longevity) (multivariate analysis) studyType gwas
+
+> [q913] data.variant.credibleSets.rows[33].locus.rows[0] posteriorProbability 0.04251940095019988
+
+> [q914] data.variant.credibleSets.rows[33].l2GPredictions.rows[0] score 0.8855655193328857
+
+> [q915] data.credibleSet.colocalisation count 2
+
+> [q916] data.credibleSet.colocalisation.rows[0].otherStudyLocus.study.target approvedSymbol RBL2
+
+> [q917] data.credibleSet.colocalisation.rows[1].otherStudyLocus.study.target approvedSymbol LINC03064
+
+> [q918] data.credibleSet.colocalisation count 45
+
+> [q919] data.credibleSet.colocalisation.rows[7] rightStudyType gwas h4 0.9645214645994986
+
+> [q920] data.credibleSet.colocalisation.rows[7].otherStudyLocus.study id GCST90474606 traitFromSource Body mass index (BMI) (UKB data field 21001) studyType gwas
+
+> [q921] data.variant.credibleSets.rows[9] studyLocusId 345f950946ddc3a331f1ebdba292eb27 pValueMantissa 6.517000198364258 pValueExponent -9 beta 0.0117586 finemappingMethod PICS
+
+> [q922] data.variant.credibleSets.rows[9].study id GCST90474606 traitFromSource Body mass index (BMI) (UKB data field 21001) studyType gwas
+
+16_52537524_A_C (rs4783780, row 82): 38 credible sets hold it (q910). It leads Timmers 2020's multivariate ageing set
+(GCST011100, PICS, P 1e-8; q911, q912) at posterior 0.043, the top of 40 members (q913), locus-to-gene TOX3 0.886
+(q914). Its QTL colocalisations are two cis eQTLs (q915): an RBL2 transcript in CD16 monocytes (H4 0.97, q916) and
+LINC03064 in testis (H4 0.88, q917); none of TOX3. Its GWAS colocalisations, 45 (q918), are mostly body mass and fat
+mass (H4 0.83 to 0.97; the lead's own BMI set at 0.96, q919, q920), also brain morphology, systolic pressure, type 2
+diabetes (0.90) and cholelithiasis; none of rs4784227's breast-cancer sets (16_52565276_C_T), which lead the locus's
+other sets at posteriors up to 1.0. The lead's own BMI set (q921, q922): PICS, P 6.5e-9, alt C β +0.0118, so A lowers
+BMI. For row 82.

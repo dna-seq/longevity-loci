@@ -1766,3 +1766,17 @@ Row 79. Pilling 2017's fathers' attained age at rs74011415 (q492, q493): G, β 0
 residual), P 1e-8, GCST006701; the fathers' study's initial sample, 415,311 British-ancestry individuals (q494). The
 catalog's other records at the lead and at rs4774495 are Pilling's combined parents (P 7e-6) and Wright's fathers'
 meta-analysis (P 5e-8). For row 79.
+
+## Reading 2026-11-13, record
+
+> [q495] _embedded.associations[0] association_id 138725159 risk_frequency 0.5051 pvalue_description pvalue_mantissa 3 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range [0.0074-0.0144] beta 0.0109 unit decrease p_value 3.0000000000000004e-09 accession_id GCST90446645 pubmed_id 39375568 first_author Sidorenko J ci_lower 0.0074 ci_upper 0.0144
+
+> [q496] _embedded.associations[0].snp_effect_allele[0] rs4783780-A
+
+> [q497] _embedded.associations[2] association_id 62271331 risk_frequency 0.5333 pvalue_description pvalue_mantissa 1 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range - beta - p_value 1e-08 accession_id GCST011100 pubmed_id 32678081 first_author Timmers PRHJ
+
+> [q498] _embedded.associations[2].snp_effect_allele[0] rs4783780-A
+
+Row 82. At rs4783780 the catalog holds three records: body mass index, A lowering it (β 0.0109 "decrease", P 3e-9;
+q495, q496), metabolic syndrome (allele unreported), and Timmers 2020's multivariate ageing traits, A, P 1e-8 (q497,
+q498). rs4784227 holds 34, mostly breast cancer, also systolic and pulse pressure and Parkinson's disease. For row 82.

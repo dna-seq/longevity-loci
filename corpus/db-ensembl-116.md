@@ -2201,3 +2201,26 @@ and GBR (q612); C 0.117 in Europeans (q613), so C rides with A and T with G. For
 
 Row 79: Wright's three mothers' Table 9 SNPs near SEMA6D against the lead rs74011415, CEU r² 0.17 (rs1378214, q614),
 0.15 (rs766132, q615) and 0.16 (rs17358764, q616); GBR 0.14 to 0.18. None tags the lead. For row 79.
+
+## Reading 2026-11-13, record
+
+> [q617] mappings[0] start 52537524 strand 1 end 52537524 ancestral_allele A location 16:52537524-52537524 assembly_name GRCh38 coord_system chromosome allele_string A/C seq_region_name 16
+
+> [q618] populations[76] population 1000GENOMES:phase_3:EUR frequency 0.514910536779324 allele_count 518 allele A
+
+> [q619] populations[64] population 1000GENOMES:phase_3:CEU allele_count 89 allele C frequency 0.44949494949495
+
+> [q620] populations[77] allele_count 256 allele T frequency 0.254473161033797 population 1000GENOMES:phase_3:EUR
+
+> [q621] populations[65] population 1000GENOMES:phase_3:CEU frequency 0.232323232323232 allele T allele_count 46
+
+> [q622] [4] d_prime 0.947616 population_name 1000GENOMES:phase_3:CEU variation1 rs4783780 r2 0.332825 variation2 rs4784227
+
+> [q623] [9] population_name 1000GENOMES:phase_3:GBR d_prime 0.941432 variation2 rs4784227 r2 0.317144 variation1 rs4783780
+
+> [q624] [0] seq_region_name 16 start 52537524 end 52537524 assembly_name GRCh38 input rs4783780 strand 1 id rs4783780 most_severe_consequence intron_variant allele_string A/C
+
+Row 82. rs4783780 (q617): GRCh38 16:52,537,524, A/C; A 0.515 in 1000 Genomes Europeans (q618), C 0.449 in CEU (q619);
+an intron variant of TOX3 (q624). rs4784227: T 0.254 in Europeans (q620), 0.232 in CEU (q621). Between them r² 0.33,
+D′ 0.95 in CEU (q622); 0.32, D′ 0.94 in GBR (q623). In CEU, T on C's haplotypes fits (r² up to 0.37), T on A's caps r²
+near 0.25: T rides with C (derived). For row 82.
