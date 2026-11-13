@@ -344,3 +344,22 @@ here is not new to a later run. Verdicts on titles, or on abstracts where `scout
 | pmid 42901416 | out of scope (animal, plant, clinical or non-genetic) | Long-term treadmill exercise improves spatial memory and increases SOX2-positive cells in the hippocampus of m |
 | pmid 42901355 | out of scope (animal, plant, clinical or non-genetic) | Comparison of alveolar macrophages senescence between cigarette smoke-exposed and naturally aged mice and the  |
 | pmid 42986129 | out of scope (animal, plant, clinical or non-genetic) | Nationwide clinical-genomic epidemiology of listeriosis in Taiwan, 2018-2025: disease manifestations in relati |
+
+## Track E, rerun 2026-11-14 (window 2026-10-27 → 2026-11-14; only records not screened before)
+
+| Record | Verdict | Title |
+|---|---|---|
+| pmid 43008306 | out of scope (animal, plant, clinical or non-genetic) | Transposable elements as drivers of reproductive isolation: A framework for testing hybridization-induced escalation of genetic conflicts. |
+| pmid 43010152 | out of scope (animal, plant, clinical or non-genetic) | Genetic diversity and differentiation of a partial mycoheterotrophic orchid (Cymbidium macrorhizon) under urbanization. |
+| pmid 43014482 | out of scope (animal, plant, clinical or non-genetic) | Evolutionary patterns and functional consequences of acetylcholinesterase mutations associated with organophosphate resistance in Panonychus citri. |
+| pmid 43016321 | out of scope (animal, plant, clinical or non-genetic) | Youthful circulation reshapes age-associated DNA methylation across blood and liver. |
+| pmid 43017072 | out of scope (animal, plant, clinical or non-genetic) | Genome-wide association study and haplotype characterization of bacterial kidney disease (BKD) resistance in Atlantic salmon (Salmo salar) across two ... |
+| pmid 43018660 | review, no locus | Epigenetic regulation of the complement system in age-related chronic inflammation: mechanisms and therapeutic prospects. |
+| pmid 43021089 | out of scope (animal, plant, clinical or non-genetic) | Identification of anti-senescence candidate genes TaSGR2 and TaSGRL1 and development of molecular marker related to chlorophyll degradation in wheat (...) |
+| pmid 43022117 | out of scope (animal, plant, clinical or non-genetic) | Pathophysiology of Acquired Aplastic Anaemia. |
+| pmid 43024061 | biological-age clock, a class track E keeps out of scoring | A Structurally Interpretable ElasticNet-Based Epigenetic Clock Reveals Distributed and Individualized Architecture of Human Biological Aging. |
+| pmid 43024202 | out of scope (animal, plant, clinical or non-genetic) | Practical Considerations for Automated Lifespan Measures in C. elegans. |
+| pmid 43024211 | review, no locus | Mitochondrial-Wide Association Studies: Integrating Population-Based Data and Mitochondrial Genetics. |
+| pmid 43024808 | out of scope (animal, plant, clinical or non-genetic) | Physical Activity, Blood Lipids, and Incident Cardiovascular Diseases: A Prospective Study Based on UK Biobank and China Kadoorie Biobank Participants |
+| PPR1362460 | out of scope (rhesus macaques; abstract read) | Pseudo-observations of longevity improve detection of resilience-associated genes in the Radiation Late Effects Cohort of rhesus macaques. |
+| PPR1366192 | noted, not queued: HLA-B, HLA-DRB1 rare missense in cognitive superagers; no exome-wide test, no variant named (abstract read) | Enrichment of Rare Exonic Variants in Cognitive Superagers from Centenarian Families |

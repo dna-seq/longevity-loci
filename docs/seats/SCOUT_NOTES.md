@@ -21,18 +21,18 @@ First work:
 
 ## Next
 
-- Every track swept: E 2026-11-10, A to D and F to K 2026-11-13 (no new locus; B took the GWAS Catalog v2, whose list
-  shows nine pre-2023 studies no track holds, named in SEARCHES; C-protect-2 and D-multimorbidity-2 replace their noisy
-  first versions; S-seedgene, a watch on the seed genes, runs with every sweep). Next: track E reruns from 2026-11-10,
-  then the oldest-run track again, each window overlapping the last by about two weeks.
-- Track E reruns from 2026-11-10 with its six queries (E-core, E-survival, E-somatic-2, E-clock, E-heritability, E-preprint).
+- Every track swept: E 2026-11-10 and rerun 2026-11-14 (window 2026-10-27 on, 14 new records, nothing queued; the
+  GWAS Catalog v2 queried, no study beyond the nine named in SEARCHES), A to D and F to K 2026-11-13 (no new locus;
+  C-protect-2 and D-multimorbidity-2 replace their noisy first versions; S-seedgene, a watch on the seed genes, runs
+  with every sweep). Next: the oldest-run tracks, A to D and F to K, from about 2026-10-30, each window overlapping
+  the last by about two weeks.
+- Watch: PPR1366192 (cognitive superagers' exome, rare HLA-B and HLA-DRB1 missense, no variant named): look for its
+  full text or a published version on the next E run.
 
 - Open, unattended: track E's own unpublished preprints (Sasaki, Putter, Salazar, Hamilton, Kornilov and the others in
   its evidence CSV) not yet checked for a published version since 2026-11-03.
-- Open, unattended: the GWAS Catalog and the bioRxiv/medRxiv listings were not queried in the first E run; the next
-  E run adds them or says again that they were left out. The Catalog's v1 REST API is retired (410 on every call, as
-  #agent-chat > upstream reported 2026-11-10), and v2 `/associations` answers 400 above size 500: query v2, pages of
-  at most 500.
+- Open, unattended: bioRxiv's and medRxiv's own listings, left out of both E runs (Europe PMC's preprint index stood
+  in). The GWAS Catalog is queried now: v2 only (v1 answers 410), `/studies` by EFO id, pages of at most 500.
 - Open: pmid-42928374's full text, to settle which biomarker FURIN's variant is shared with. Batch fetches go to the
   runner seat now, not the lead (the runner, 2026-11-10); one PMID is not a batch, so it waits for the next sweep's
   list.

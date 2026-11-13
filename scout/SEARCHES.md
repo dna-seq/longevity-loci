@@ -64,6 +64,13 @@ of a three-week window); the screen removes non-human work by title and abstract
 | 2026-11-10 | 2026-10-20 → 2026-11-10 | E-preprint | 7 | 7 | 0 |
 | 2026-11-10 | 2026-10-20 → 2026-11-10 | E-somatic-2 | 9 | 8 | 0 |
 | 2026-11-10 | 2026-10-20 → 2026-11-10 | E-heritability | 28 | 20 | 0 |
+| 2026-11-14 | 2026-10-27 → 2026-11-14 | E-core | 26 | 6 | 0 |
+| 2026-11-14 | 2026-10-27 → 2026-11-14 | E-survival | 0 | 0 | 0 |
+| 2026-11-14 | 2026-10-27 → 2026-11-14 | E-clock | 8 | 2 | 0 |
+| 2026-11-14 | 2026-10-27 → 2026-11-14 | E-somatic-2 | 9 | 2 | 0 |
+| 2026-11-14 | 2026-10-27 → 2026-11-14 | E-heritability | 22 | 2 | 0 |
+| 2026-11-14 | 2026-10-27 → 2026-11-14 | E-preprint | 7 | 2 | 0 |
+| 2026-11-14 | 2026-10-27 → 2026-11-14 | S-seedgene | 9 | 0 | 0 |
 
 66 unique records, listed with their verdicts in `scout/screened.md`; none was already in a track. **Not queried this
 run:** the GWAS Catalog, and bioRxiv's and medRxiv's own listings (Europe PMC's preprint index stood in for both
@@ -74,6 +81,16 @@ biomarker-clock GWAS, a class track E excludes from scoring), 42928374 (queued: 
 PPR1359822 (doi 10.20944/preprints202611.0588.v1; KIR alleles in 86 Romanians aged 65–90; no controls named in the
 abstract, no locus in the seed list). The clonal-haematopoiesis mortality papers from E-somatic-2 are somatic, which track E keeps out of germline
 evidence. The rest are animal, plant, or non-genetic. No new locus at genome-wide significance in the sources queried.
+
+The 2026-11-14 rerun overlaps the first by two weeks (window 2026-10-27 → 2026-11-14): 75 distinct records, 61 already
+screened, 14 new, listed in `scout/screened.md`. Recall on track E's 37 PMIDs unchanged (E-core 29, E-somatic-2 5,
+E-heritability 11, E-clock 2, E-survival 4; S-seedgene 17). The GWAS Catalog v2 was queried this run (the four EFO ids
+of track B): no study beyond the nine pre-2023 ones named under Track B. bioRxiv's and medRxiv's own listings were again
+left out; Europe PMC's preprint index stood in. Read at abstract level: PPR1366192 (doi 10.64898/2026.11.10.26365445,
+whole-exome sequencing of 136 cognitive superagers; rare missense variants in HLA-B and HLA-DRB1, both seed genes, but
+the phenotype is cognition, no single-variant or burden test was exome-wide significant, and the abstract names no
+variant: noted for the next run, not queued) and PPR1362460 (rhesus macaques; out of scope). No new locus in the
+sources queried.
 
 ## Track A: LongevityMap, HAGR, the v1 audit
 
