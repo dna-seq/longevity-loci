@@ -108,7 +108,41 @@ cancer screening model. None bears on a seed locus. The HAGR site still shows Lo
 2026-11-13), so the source has not moved since the synthesis. **Not queried this run:** the Open Genes and HALL
 sites, and the GWAS Catalog (B's run takes it). No new locus in the sources queried.
 
-## Tracks B–D, F–K
+## Track B: common-variant GWAS of longevity and lifespan
+
+First swept 2026-11-13. Queries:
+
+- **B-gwas** (PubMed by entry date; written 2026-11-10, unchanged): `("genome-wide association"[tiab] OR GWAS[tiab] OR "genome-wide meta-analysis"[tiab]) AND (longevity[tiab] OR lifespan[tiab] OR "parental lifespan"[tiab] OR "parental longevity"[tiab] OR centenarian*[tiab] OR "age at death"[tiab] OR healthspan[tiab])`
+- **B-catalog** (GWAS Catalog REST v2): every study under EFO_0007796 (parental longevity), OBA_VT0005372
+  (longevity), EFO_0009762 (healthspan) and EFO_0005056 (age at death), from
+  `https://www.ebi.ac.uk/gwas/rest/api/v2/studies?efo_id=<id>&size=200&page=<n>`. v2 gives no publication-date
+  filter, so the whole list is pulled and each PubMed id checked against the tracks, the seed list and
+  `scout/screened.md`.
+
+### Recall
+
+On track B's 55 PMIDs (`B_gwas_evidence.csv`), 2026-11-13: B-gwas 32/55, C-rare 10/55, E-core 51/55, A-pgs 15/55,
+D-healthspan 14/55. Together they find 53/55. E-heritability finds a third, 41670345 (polygenic indices of 35 traits
+and mortality). The one left, 35324888, is the 813-trait polygenic-score paper track A also holds. B-gwas alone misses
+the healthy-ageing GWAS (35927272) and most of the polygenic-score papers.
+
+### Runs
+
+| Run | Window | Query | Hits | New | Queued |
+|---|---|---|---|---|---|
+| 2026-11-13 | 2026-10-20 → 2026-11-13 | B-gwas | 7 | 2 (5 already screened in tracks E and A) | 0 |
+| 2026-11-13 | the whole Catalog list | B-catalog | 79 studies, 37 PubMed ids | 1 from 2026 (9 older ids not in any track) | 0 |
+
+The two new B-gwas records: a maize nickel-transport GWAS, and a Lewy body disease GWAS (a disease, not longevity;
+no locus to queue). The new Catalog record is pmid 42880286 (Atanur SS et al., "A phenome-wide structural variant map
+from 467,152 UK Biobank genomes", *Cell*, 2026 Oct 15, doi 10.1016/j.cell.2026.09.035), study GCST90939774, "Age at
+death (structural variant analysis)", 442,634 Europeans: the Catalog lists **no** association for it, so no locus
+to queue; whether any structural variant came near genome-wide significance for age at death is unknown short of its
+summary statistics. The nine older ids (2007–2022: 17903295, 20834067, 21612516, 22533364, 32772156, 32915819,
+34662886, 34737426, 35748965) predate the tracks' window; they are the tracks' gaps, not new papers, and are listed
+here for the curator rather than queued. No new locus in the sources queried.
+
+## Tracks C–D, F–K
 
 Not yet swept. Their queries below are **new**, written 2026-11-10, and **not yet run or recall-checked**; the
 first run of each checks its recall on its track's CSV and may change them. All PubMed by entry date, as above.
@@ -116,7 +150,7 @@ first run of each checks its recall on its track's CSV and may change them. All 
 | Track | Subject | Sources the synthesis names | Covered to (as it states) |
 |---|---|---|---|
 | A | LongevityMap, HAGR, the v1 audit | PubMed, HAGR site and Build 3, GWAS Catalog v2, Open Genes, HALL | 2026-11-03 (live site checked); swept 2026-11-13, above |
-| B | common-variant GWAS of longevity and lifespan | PubMed, Crossref, GWAS Catalog v2, PGS Catalog | 2026-11-03 (Catalog pulled) |
+| B | common-variant GWAS of longevity and lifespan | PubMed, Crossref, GWAS Catalog v2, PGS Catalog | 2026-11-03 (Catalog pulled); swept 2026-11-13, above |
 | C | rare and protective variants, centenarian sequencing | PubMed, Europe PMC, Crossref | unknown (scope "2015–2026") |
 | D | healthspan, ageing rate, heritability | PubMed, Crossref, GWAS Catalog v2 REST | unknown (scope "2018–2026") |
 | F | reporting to three audiences | PubMed, Crossref, product pages | unknown |

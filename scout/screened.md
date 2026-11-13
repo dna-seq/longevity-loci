@@ -84,3 +84,12 @@ here is not new to a later run. Verdicts on titles, or on abstracts where `scout
 | pmid 42928484 | out of scope (animal, plant, clinical or non-genetic) | State Design and Use of Medicaid 1915(c) Waivers and Related Benefits to Provide Home- and Community-Based Servi |
 | pmid 42908614 | out of scope (animal, plant, clinical or non-genetic) | Mapping the aging kidney: a bibliometric atlas of cellular senescence and future frontiers since the 20th century |
 | pmid 42925359 | out of scope (not longevity; cancer screening) | Modelling the potential contributions of polygenic risk stratification to cost-effective screening for prostate  |
+
+## Track B, run 2026-11-13 (window 2026-10-20 → 2026-11-13, and the GWAS Catalog's whole list)
+
+| Record | Verdict | Title |
+|---|---|---|
+| pmid 43008726 | out of scope (animal, plant, clinical or non-genetic) | Nicotianamine-driven nickel transport to sink organs underpins maize productivity. |
+| pmid 42996239 | disease GWAS, not longevity | Genetic susceptibility to Lewy body disease and the distribution of Lewy pathology. |
+| pmid 42880286 (GCST90939774) | no association listed for age at death | A phenome-wide structural variant map from 467,152 UK Biobank genomes. |
+
