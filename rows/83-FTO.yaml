@@ -2,7 +2,7 @@
 # pleiotropy track alone, as the body-mass variant through which BMI's effect on lifespan is read): an intron variant
 # of FTO, T/C, C the higher-BMI allele (0.43 in Europeans), T the longer-lived side. Wright 2019's AncestryDNA tables
 # hold rs10852521, 4 kb away, at r² 0.65 (CEU) and 0.70 (GBR). Open Targets 26.09: 1,701 credible sets hold the lead,
-# none of a lifespan study.
+# two of them Foote 2025's frailty factors (led by rs11642015, r² 1.00).
 locus_id: 83
 locus_name: FTO
 verdict: re-tiered
@@ -34,7 +34,7 @@ verdict_reason: >-
   T's side (P 0.14, its allele columns swapped, as the frequencies show); FinnGen R11's death endpoint leans against
   (C with slightly fewer deaths, P 0.25). None of these lifts B to A (a multivariate result cannot open A,
   D18.3), and nothing contradicts the locus, so not D. Lifespan +, exceptional survival + (Deelen's one look-up,
-  one-sided), healthspan + on Foote's frailty factors, read for the healthspan cell as at rows 43 and 51 (Zenin 2019's
+  one-sided), healthspan + on Foote's frailty factors, read for the healthspan cell as at row 51 (Zenin 2019's
   healthspan leans the same way, P 0.061). Mechanism metabolism, through body weight: the lead tops BMI sets (posterior up to 0.85, C raising
   BMI at P 2.4e-277), and C goes with more diabetes (P 1.5e-97), ischaemic heart disease (P 3.6e-16), higher HbA1c,
   glucose, CRP and blood pressure. Read over all 1,701 of its sets (it tops 380), two

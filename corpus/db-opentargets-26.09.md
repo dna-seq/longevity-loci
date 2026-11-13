@@ -3526,9 +3526,8 @@ factor 3 set at 16q22 (db-opentargets-26.09, foote7 listing, P 1.7e-10) is led b
 
 rs3764261, row 84: the one ageing-named set at CETP in all 1,707, GCST004045 "Age-related diseases, mortality and
 associated endophenotypes" (q970; PICS, P 1e-149, no β, q968), led by 16_56956804_C_A (q969), the lead at posterior
-0.08 (q971). Its study (db-gwascatalog-2026.10.29#q501): 9,618 European individuals, a pleiotropic analysis that pools
-diseases with endophenotypes; in that sample a P of 1e-149 cannot be a lifespan signal and is most likely CETP's HDL
-effect (inference, the endophenotypes not read here). For row 84.
+0.08 (q971). Its study (db-gwascatalog-2026.10.29#q501): 9,618 European individuals, He 2016's pleiotropic analysis, whose
+endophenotypes include lipids (pmid-27790247#q1), so at CETP it reads as the lipid signal. For row 84.
 
 ## Reading 2026-11-13, record
 
