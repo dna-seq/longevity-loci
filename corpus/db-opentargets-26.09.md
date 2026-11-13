@@ -3355,5 +3355,19 @@ row 79.
 LINC03064 in testis (H4 0.88, q917); none of TOX3. Its GWAS colocalisations, 45 (q918), are mostly body mass and fat
 mass (H4 0.83 to 0.97; the lead's own BMI set at 0.96, q919, q920), also brain morphology, systolic pressure, type 2
 diabetes (0.90) and cholelithiasis; none of rs4784227's breast-cancer sets (16_52565276_C_T), which lead the locus's
-other sets at posteriors up to 1.0. The lead's own BMI set (q921, q922): PICS, P 6.5e-9, alt C β +0.0118, so A lowers
+other sets at posteriors up to 1.0; one breast-cancer set of its own (q923 to q926). The lead's own BMI set (q921, q922): PICS, P 6.5e-9, alt C β +0.0118, so A lowers
 BMI. For row 82.
+
+## Reading 2026-11-13, record
+
+> [q923] data.credibleSet.colocalisation.rows[36] rightStudyType gwas h4 0.9611826078715578
+
+> [q924] data.credibleSet.colocalisation.rows[36].otherStudyLocus.study id GCST90429846 traitFromSource Breast cancer studyType gwas
+
+> [q925] data.credibleSets.rows[0] studyLocusId 62c06ce518f6300e8e49ad4d0e64ff76 pValueMantissa 1.7654715776443481 pValueExponent -8 beta 0.11218163546316709 finemappingMethod SuSiE-inf
+
+> [q926] data.credibleSets.rows[0].variant id 16_52537621_A_G
+
+Row 82. Timmers 2020's set at rs4783780 colocalises with a breast-cancer set (GCST90429846, H4 0.96; q923, q924), led
+by 16_52537621_A_G (rs3112581, db-ensembl-116#q625), SuSiE-inf, P 1.8e-8, alt G β +0.112 (q925, q926): G raises
+breast cancer. G rides with the lead's C (db-ensembl-116#q626, q627). For row 82.

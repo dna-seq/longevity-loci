@@ -2224,3 +2224,14 @@ Row 82. rs4783780 (q617): GRCh38 16:52,537,524, A/C; A 0.515 in 1000 Genomes Eur
 an intron variant of TOX3 (q624). rs4784227: T 0.254 in Europeans (q620), 0.232 in CEU (q621). Between them r² 0.33,
 D′ 0.95 in CEU (q622); 0.32, D′ 0.94 in GBR (q623). In CEU, T on C's haplotypes fits (r² up to 0.37), T on A's caps r²
 near 0.25: T rides with C (derived). For row 82.
+
+## Reading 2026-11-13, record
+
+> [q625] [0].colocated_variants[0] id rs3112581 seq_region_name 16 allele_string A/C/G/T end 52537621 phenotype_or_disease 1 start 52537621 strand 1
+
+> [q626] [4] r2 1.000000 variation2 rs3112581 variation1 rs4783780 population_name 1000GENOMES:phase_3:CEU d_prime 1.000000
+
+> [q627] populations[65] population 1000GENOMES:phase_3:CEU allele G frequency 0.44949494949495 allele_count 89
+
+Row 82. 16_52537621_A_G is rs3112581 (q625), 97 bp from the lead; r² 1.00, D′ 1.00 with rs4783780 in CEU (q626; GBR the
+same); its G at 0.449 in CEU (q627), the lead's C's frequency (q619): G rides with C. For row 82.

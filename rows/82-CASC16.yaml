@@ -15,9 +15,11 @@ verdict_reason: >-
   Outside the multivariate's inputs, FinnGen R11's death endpoint agrees (A with fewer deaths, P 0.0058), a database
   line that lifts nothing (D29.1); Park 2025's own survival is flat on A's side (P 0.37; its allele columns swapped,
   read from UK Biobank's own frequency of A and from rs4784227's unambiguous line in the same file); Wright 2019's
-  tables hold no SNP near the lead. No red flag: nothing outside the inputs fails with power, and FinnGen's scale is
+  tables hold no SNP that tags the lead: its mothers' lines 150 to 210 kb away (rs9924319 in Table 9, three in
+  Table 8) have no LD to it in CEU or GBR that Ensembl returns, so AncestryDNA is untested here, not null. No red flag: nothing outside the inputs fails with power, and FinnGen's scale is
   printed nowhere (D28.1). Healthspan +: Zenin 2019, A delaying the end of healthspan, P 3.0e-6 after its genomic
-  control (an input). Exceptional survival +: Deelen's 90th favours A (P 0.0059), its 99th leans the same way (P
+  control (an input); its Z (4.79) is above what rs4784227's signal would put at the lead (3.28; derived), so the + is
+  the lead's own. Exceptional survival +: Deelen's 90th favours A (P 0.0059), its 99th leans the same way (P
   0.20); the 90th is the multivariate's own input, so it sets the cell and replicates nothing (row 27). Lifespan +.
   The seed's second rsID, rs4784227 28 kb away, is the TOX3/CASC16 breast-cancer variant (r² 0.33 and D′ 0.95 in CEU,
   its T riding with the lead's C): Zenin's healthspan is genome-wide there (T earlier, P 3.0e-8 after genomic control,
@@ -26,13 +28,18 @@ verdict_reason: >-
   lead's signal alone would put there or a little more (Timmers 2.18 against 2.09 expected, Deelen 2.17 against 1.59,
   Pilling 2.76 against 1.81; derived), while the lead's own (3.62, 2.75) are far above rs4784227's shadow (1.26, 1.25):
   the lifespan evidence belongs to the lead, and rs4784227's cannot be told apart from it. The two are separate
-  signals: Timmers 2020's set colocalises with none of rs4784227's breast-cancer sets. So rs4784227 is named here and
+  signals: Timmers 2020's set colocalises with none of rs4784227's breast-cancer sets, though the lead's own signal has
+  a breast-cancer association of its own (below). So rs4784227 is named here and
   not tiered; whether it should lead the row instead (A on Zenin's healthspan with Deelen's 90th) is put to the lead.
-  Mechanism metabolism, through body weight: Timmers 2020's set at the lead colocalises (H4 0.83 to 0.97) mostly with
-  body-mass and fat-mass sets, also brain morphology, systolic pressure, type 2 diabetes (0.90) and gallstones; the
-  lead's own BMI set and the GWAS Catalog's BMI record put A on the lower side (P 6.5e-9, 3e-9). So the longer-lived A
-  goes with lower weight; no harm is tied to A (D18.1: the breast-cancer risk allele rides with C), and the label is
-  modifiable through weight (D18.2), association on one signal, not a mediator test. Pleiotropy mech:adiposity and
+  Mechanism metabolism, through body weight (put to the lead, with general ageing and descriptive the alternative):
+  of the 45 GWAS colocalisations of Timmers 2020's set at the lead, 37 reach H4 0.8, 18 of them body-mass and
+  fat-mass sets, 11 brain morphology (cortical area, thickness, sulcal depth), then two systolic-pressure sets, type 2
+  diabetes (0.90), gallstones, neuroticism, sodium, severe COVID-19 and one breast-cancer set; the lead's own BMI set
+  and the GWAS Catalog's BMI record put A on the lower side (P 6.5e-9, 3e-9). The breast-cancer set (GCST90429846,
+  H4 0.96, SuSiE-inf, P 1.8e-8) is led by rs3112581, 97 bp away, at r² 1.00 (CEU, GBR) with its G at C's frequency
+  (0.449 in CEU), so G rides with C: G raises breast cancer (β +0.112) and BMI (+0.011, a set the lead's also
+  colocalises with), so the longer-lived A goes with lower weight and less breast cancer. No harm is tied to A
+  (D18.1), and the label is modifiable through weight (D18.2), association on one signal, not a mediator test. Pleiotropy mech:adiposity and
   broad. Causal C3: the lead tops Timmers 2020's PICS set at posterior 0.043 of 40 members. Effector E3, no gene named
   (D24): locus-to-gene gives TOX3 0.886, but the set's only cis-QTL colocalisations are an RBL2 transcript in
   monocytes (H4 0.97) and LINC03064 in testis (0.88), none of TOX3, so a rival holds half of them; TOX3, in whose
@@ -41,7 +48,7 @@ verdict_reason: >-
   row 24. Age of action unknown. The evidence is European.
 axes:
   tier: {value: B, cites: [pmid-32678081#q32, pmid-32678081#q1, pmid-30642433#q323, db-finngen-r11#q57, pmid-40021682#q83, pmid-40021682#q84, pmid-40021682#q32, pmid-29227965#q66, pmid-30729179#q113, pmid-30729179#q59, pmid-31413261#q189, pmid-31413261#q191, pmid-30729179#q111, pmid-30729179#q112, pmid-30642433#q324, pmid-31413261#q190, db-finngen-r11#q58, pmid-29227965#q67, db-ensembl-116#q620, db-ensembl-116#q621, db-ensembl-116#q622, db-ensembl-116#q623, db-ensembl-116#q619, db-opentargets-26.09#q918]}
-  mechanism: {value: metabolism, cites: [db-opentargets-26.09#q918, db-opentargets-26.09#q919, db-opentargets-26.09#q920, db-opentargets-26.09#q921, db-opentargets-26.09#q922, db-gwascatalog-2026.10.29#q495, db-gwascatalog-2026.10.29#q496]}
+  mechanism: {value: metabolism, cites: [db-opentargets-26.09#q918, db-opentargets-26.09#q919, db-opentargets-26.09#q920, db-opentargets-26.09#q921, db-opentargets-26.09#q922, db-gwascatalog-2026.10.29#q495, db-gwascatalog-2026.10.29#q496, db-opentargets-26.09#q923, db-opentargets-26.09#q924, db-opentargets-26.09#q925, db-opentargets-26.09#q926, db-ensembl-116#q625, db-ensembl-116#q626, db-ensembl-116#q627]}
   pleiotropy: {values: ["mech:adiposity", broad], cites: [db-opentargets-26.09#q918, db-opentargets-26.09#q919, db-opentargets-26.09#q921, db-opentargets-26.09#q922, db-gwascatalog-2026.10.29#q495, db-gwascatalog-2026.10.29#q496]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
@@ -57,8 +64,6 @@ variants:
     phenotype: TOX3 region, body weight, healthy ageing
     trait_efo_id: EFO_0007796
     effect_allele: A
-    effect_size: 0.014
-    effect_measure: beta
     stat_significance: significant
     direction: protective
     genotypes:
