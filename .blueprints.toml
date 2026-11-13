@@ -120,9 +120,9 @@ cmd = "sh kit:classes/liaison/watch-upstream.sh compiler --tags"
 cmd = "sh kit:classes/liaison/watch-upstream.sh registry --tags"
 
 # The key upstreams' releases from the package index (the kit's L136, L143; duty upstream-index): the compiler's
-# three packages, which uv.lock carries. Not polars or duckdb: their caps move with the plugin's lock, not a release.
+# three packages, which uv.lock carries; final releases only (--final, kit #470), the clone watchers say tags. Not polars or duckdb: their caps move with the plugin's lock, not a release.
 [seat.liaison.watch.upstream-index]
-cmd = "sh kit:bin/py.sh kit:drivers/pypi/watch-pypi.py --upstream just-dna-format just-dna-compiler just-dna-enricher"
+cmd = "sh kit:bin/py.sh kit:drivers/pypi/watch-pypi.py --upstream --final just-dna-format just-dna-compiler just-dna-enricher"
 
 # The weekly dependency bump of uv.lock, while the person is away (kit classes/liaison/LIAISON.md).
 [seat.liaison.watch.nightly]
