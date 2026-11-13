@@ -3603,3 +3603,22 @@ fibroblast transcript and two fibroblast splicing QTLs), RPL13 1 (a cartilage tr
 neuron transcript) (q991 to q996). The other 19 sets are skin traits (squamous cell carcinoma, actinic keratosis,
 melanoma, seborrhoeic keratosis, benign skin neoplasm, sebaceous cyst, skin colour, skin ageing), vitiligo (alt C β
 −0.35, so T raises it), age at first sex, number of children, a plasma metabolite and a DEF8 eQTL. For row 86.
+
+## Reading 2026-11-13, record
+
+> [q997] data.variant.credibleSets.rows[0] studyLocusId fbc1463eb33ab77768dc91a950f8587a pValueMantissa 5 pValueExponent -10 beta -0.014460757 finemappingMethod PICS
+
+> [q998] data.variant.credibleSets.rows[0].study id GCST90321079 traitFromSource Aging studyType gwas
+
+> [q999] data.variant.credibleSets.rows[0].locus.rows[0] posteriorProbability 0.8631273558437729
+
+> [q1000] data.credibleSet.l2GPredictions.rows[0] score 0.7762042880058289
+
+> [q1001] data.credibleSet.locus.rows[1] posteriorProbability 0.08293424571731994
+
+> [q1002] data.credibleSet.colocalisation count 0
+
+rs34891485 (row 87, variant 17_42111440_T_C): one credible set holds it, Rosoff 2023's mvAge (GCST90321079, q997,
+q998), PICS, P 5e-10, β −0.0145 for C (T +0.0145), the lead at posterior 0.863 (q999), three variants in all, the
+next rs78862468 at 0.083 (q1001). Locus-to-gene names one gene, DHX58, 0.776 (q1000); no QTL colocalisation (q1002).
+For row 87.

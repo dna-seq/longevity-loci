@@ -457,3 +457,12 @@ row 85.
 > [q63] 16 89960104 T C rs4268748 DEF8 0.781369 0.107144 0.00239805 0.00864049 0.245536 0.247054 0.245346
 
 FinnGen R11 death at rs4268748 (q63): alt C β +0.0024 (SE 0.0086), P 0.78: flat. For row 86.
+
+## Reading 2026-11-13, record
+
+> [q64] 17 42111440 T C rs34891485 DHX58 0.481588 0.317324 -0.0106575 0.0151439 0.064675 0.0633611 0.0648396
+
+FinnGen R11's death endpoint at rs34891485 (q64): alt C (0.065 in Finns) β −0.0107 (SE 0.0151), P 0.48: C with
+slightly fewer deaths, so T leans to more, one-sided 0.24 against T (derived), flat. Against Timmers' T +0.0453
+under APOE's within-FinnGen factor (0.99): power 0.91, heterogeneity P 0.0016; under the mean factor power 0.34, P
+0.060: one calibration only, no D21 red flag (derived). For row 87.

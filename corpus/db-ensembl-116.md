@@ -2339,3 +2339,25 @@ Row 86. Phased in CEU (q654, 99 people, 198 haplotypes) from Ensembl's 1000 Geno
 rs4268748, rs9939542 and rs4785759 (each `genotype X|Y`, phased; counted from the listings): the lead's C rides with
 rs9939542's C on 53 of its 62 haplotypes (T with A on 122 of 136), and with rs4785759's A on 59 of 62 (T with C on 100
 of 136). For row 86.
+
+## Reading 2026-11-13, record
+
+> [q655] populations[31] population gnomADg:nfe allele C frequency 0.04915 allele_count 3343
+
+> [q656] populations[87] frequency 0.0526838966202783 allele C population 1000GENOMES:phase_3:EUR allele_count 53
+
+> [q657] populations[84] allele_count 1008 population 1000GENOMES:phase_3:EAS frequency 1 allele T
+
+> [q658] [0].transcript_consequences[2] cds_end 226 protein_end 76 codons Acc/Gcc gene_id ENSG00000108771 amino_acids T/A cds_start 226 polyphen_score 0.015 sift_score 0.35 biotype protein_coding transcript_id ENST00000413196 gene_symbol_source HGNC variant_allele C protein_start 76 gene_symbol DHX58 strand -1 polyphen_prediction benign impact MODERATE sift_prediction tolerated cdna_start 601 hgnc_id HGNC:29517 cdna_end 601
+
+> [q659] [0] population_name 1000GENOMES:phase_3:CEU r2 0.649944 variation2 rs12600570 variation1 rs34891485 d_prime 1.000000
+
+> [q660] [0] variation2 rs11079033 d_prime 0.999999 population_name 1000GENOMES:phase_3:CEU variation1 rs34891485 r2 0.437410
+
+rs34891485 (row 87): GRCh38 17:42,111,440 T/C, GRCh37 17:40,263,458. C, the minor allele, is 0.049 in gnomAD's
+non-Finnish Europeans (q655) and 0.053 in 1000 Genomes Europeans (q656), absent in East Asians (q657). A missense
+variant of DHX58 (q658): codons Acc/Gcc, threonine 76 to alanine (the gene is on the reverse strand, so the forward
+strand's C is the alanine codon's G); SIFT tolerated, PolyPhen benign (0.015). LD in CEU: rs12600570 r² 0.65, D′ 1.00
+(q659); rs11079033 r² 0.44 (q660). Phased in CEU (q654) from the 1000 Genomes genotype records of rs34891485 and
+rs12600570 (`genotypes-*.json`, 198 haplotypes): (T, C) 173, (C, T) 17, (T, T) 8: the lead's C always rides with
+rs12600570's T. For row 87.

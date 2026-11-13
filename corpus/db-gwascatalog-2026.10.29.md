@@ -1821,3 +1821,13 @@ q505); actinic keratosis (Kim 2022, GCST90095184): C OR 1.25, P 2e-61 (q506, q50
 ageing traits (GCST011100): P 7e-12, no effect printed (q508, q509). The rest: melanoma in situ, seborrhoeic keratosis,
 benign skin neoplasms, sebaceous gland disorders, skin colour saturation and skin ageing, the disease and skin-ageing
 lines with C the higher where a direction is printed. For row 86.
+
+## Reading 2026-11-13, record
+
+> [q510] _embedded.associations[0] association_id 131476435 risk_frequency NR pvalue_description pvalue_mantissa 5 pvalue_exponent -10 multi_snp_haplotype false snp_interaction false range [0.0099-0.019] beta 0.014460757 unit increase p_value 5e-10 accession_id GCST90321079 pubmed_id 37550455 first_author Rosoff DB ci_lower 0.0099 ci_upper 0.019
+
+> [q511] _embedded.associations[1] association_id 27238781 risk_frequency 0.95 pvalue_description pvalue_mantissa 3 pvalue_exponent -7 multi_snp_haplotype false snp_interaction false range [0.047-0.101] beta 0.074 unit decrease p_value 3e-07 accession_id GCST005194 pubmed_id 29212778 first_author van der Harst P ci_lower 0.047 ci_upper 0.101
+
+rs34891485 (row 87): two associations. Rosoff 2023's mvAge (q510), effect allele T, β 0.0145, P 5e-10; and van der
+Harst 2017's coronary artery disease (q511), risk allele T at 0.95, β 0.074 "unit decrease", P 3e-7: T lowers coronary
+disease, so C raises it. For row 87.

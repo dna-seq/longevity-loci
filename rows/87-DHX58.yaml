@@ -1,0 +1,158 @@
+# The seed list's locus 87, DHX58 (17q21.2). Curated 2026-11-13. Lead rs34891485, the seed's only rsID (Rosoff 2023's
+# mvAge lead): a missense variant of DHX58 (threonine 76 to alanine), GRCh38 17:42,111,440 T/C, GRCh37 17:40,263,458,
+# C the minor allele (0.049 in non-Finnish Europeans, absent in East Asians), T the healthier and longer-lived side.
+# Open Targets 26.09 holds it in one credible set, mvAge's own; the GWAS Catalog (2026-10-29) holds two associations.
+locus_id: 87
+locus_name: DHX58
+verdict: kept
+verdict_reason: >-
+  Tier B, as the seed has it: genome-wide only in a multivariate result, with a co-occurring lifespan study (D16,
+  D18.3), and not replicated outside its inputs; row 52's shape. Rosoff 2023's mvAge is genome-wide at the lead, T
+  (the common allele) on the healthier-ageing side, β +0.0145 (SE 0.0023), P 5.0e-10, heterogeneity across its five
+  inputs Q P 0.68 (Supplementary Tables 6 and 7); filed "No (Lifespan)", within 1 Mb of a lifespan locus already
+  reported. Every readable input leans to T: Timmers 2019's million parents' lives, T longer, P 3.9e-7 (suggestive,
+  "++" in UK Biobank and LifeGen; nothing in GRCh37 17:39.8-40.7 Mb reaches 2.5e-8, the window's peak 245 kb away at
+  P 2.1e-7), the co-occurring lifespan study; Zenin 2019's healthspan, T healthier, P 0.0014 after genomic control;
+  frailty (reverse coded) P 3.0e-4, read in Rosoff's table only. In UK Biobank the rest agrees: Pilling's parents T
+  longer, P 7.4e-6 (inside Timmers); Park 2025's own survival T with fewer deaths, P 0.033 (its allele columns
+  swapped, as the frequencies show), co-occurring. Nothing replicates and nothing contradicts: Deelen 2019, itself an
+  mvAge input, is flat (90th percentile T one-sided 0.089, 99th P 0.84); FinnGen R11's death endpoint leans
+  against T, flat (one-sided 0.24). Calibrated from Timmers' β (D25.3), each of the three flags under APOE's factor
+  (powers 1.00, 0.91, 0.91; heterogeneity P 0.014, 0.0058, 0.0016) and none under the mean factor (powers 0.63, 0.35,
+  0.34): a flag under one calibration only is none, so no red flag (D21). Wright 2019 has no line at the lead; its
+  fathers' Table 9 holds rs12600570 1.9 kb away (r² 0.65 in CEU, D′ 1; the lead's C rides with its T on all 17 C
+  haplotypes), UK arm P 0.0013 so the line counts by D29.18, its AncestryDNA arm leaning to the lead's T (one-sided
+  about 0.031 raw); a proxy, named, and the tier does not rest on it (mvAge caps at B, D18.3). Foote 2025's seven
+  frailty deposits hold no line at the lead and nothing below P 0.01 within 50 kb. Healthspan + (Zenin, nominal,
+  beside the co-occurring lifespan study, D16), lifespan + (Timmers), exceptional survival 0 (Deelen flat).
+  Mechanism ageing in general (D25.7): the only other association is coronary artery disease (van der Harst 2017, T
+  lowering it, P 3e-7, short of genome-wide), and nothing shows the lifespan effect runs through it; mech:cvd as
+  pleiotropy, no trade-off (no harm on T's side). Descriptive. Causal C1: a coding variant at posterior 0.863 in the
+  mvAge PICS set (Open Targets), the paper's own SuSiE 0.750 and FINEMAP 0.745 (both credible-set columns 0, so the
+  PICS set carries it). Effector E1, DHX58: the variant changes DHX58's protein (VEP, SIFT tolerated, PolyPhen
+  benign, so the effect is read from the association data), §4.2's coding clause; locus-to-gene names DHX58 alone
+  (0.776) and no QTL colocalises. DHX58 (LGP2) is a RIG-I-like receptor of innate antiviral sensing, named, not a
+  mechanism shown. T/T, about 90 in 100 Europeans, is the reference; C is the risk allele at a disease locus
+  (coronary disease), so PROTECT:ABSENCE_OF_RISK (D26.5). Age of action unknown. The evidence is European.
+axes:
+  tier: {value: B, cites: [pmid-37550455#q67, pmid-37550455#q68, pmid-37550455#q2, pmid-30642433#q336, pmid-30642433#q337, pmid-30729179#q123, pmid-29227965#q75, pmid-40021682#q89, pmid-40021682#q32, pmid-31413261#q203, pmid-31413261#q204, db-finngen-r11#q64, pmid-31484785#q137, pmid-30642433#q338, db-ensembl-116#q659, pmid-40759756#q16, pmid-40759756#q17, db-gwascatalog-2026.10.29#q510, db-opentargets-26.09#q997]}
+  mechanism: {value: general_ageing, cites: [db-gwascatalog-2026.10.29#q510, db-gwascatalog-2026.10.29#q511]}
+  pleiotropy: {values: ["mech:cvd"], cites: [db-gwascatalog-2026.10.29#q511, pmid-37550455#q70]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
+            cites: [pmid-30729179#q123, pmid-30642433#q336, pmid-31413261#q203, pmid-31413261#q204]}
+  actionability: {label: descriptive, cites: [db-gwascatalog-2026.10.29#q511]}
+  context: {values: [eur_only_evidence], cites: [db-ensembl-116#q655, db-ensembl-116#q657, pmid-30642433#q336]}
+flags:
+  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [db-gwascatalog-2026.10.29#q511, db-ensembl-116#q655]}
+  - {token: "causal:C1", cites: [db-ensembl-116#q658, db-opentargets-26.09#q997, db-opentargets-26.09#q999, pmid-37550455#q69]}
+  - {token: "effector:E1", cites: [db-ensembl-116#q658, db-opentargets-26.09#q1000, db-opentargets-26.09#q1002]}
+variants:
+  - rsid: rs34891485
+    gene: DHX58
+    phenotype: DHX58 Thr76Ala, multivariate ageing, parents' lifespan
+    trait_efo_id: EFO_0007796
+    effect_allele: T
+    effect_size: 0.014460757
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: T/T
+        state: neutral
+        conclusion: >-
+          You carry two copies of the usual version of this spot in the gene DHX58 on chromosome 17, as about 90 in
+          100 people of European ancestry do. DHX58 helps cells sense viruses. This is the reference the other
+          combinations are compared with: you do not carry the rarer version that changes one building block of the
+          DHX58 protein.
+      - genotype: C/T
+        state: risk
+        conclusion: >-
+          You carry one copy of a rarer version of this spot in the gene DHX58 on chromosome 17 (about 9 in 100 people
+          of European ancestry do). It changes one building block of the DHX58 protein, which helps cells sense
+          viruses. In very large European studies it went with slightly less healthy ageing and parents living a
+          little less long, and with a slightly higher chance of coronary heart disease. It is a likely finding, not
+          a settled one, and the effect is small: a tendency, not destiny. The finding comes from people of European
+          ancestry; this version is rare or absent elsewhere.
+      - genotype: C/C
+        state: risk
+        conclusion: >-
+          You carry two copies of a rare version of this spot in the gene DHX58 on chromosome 17 (about 2 or 3 in
+          1,000 people of European ancestry do). It changes one building block of the DHX58 protein, which helps
+          cells sense viruses. In very large European studies each copy went with slightly less healthy ageing and
+          parents living a little less long. Too few people carry two copies to say what two copies do beyond that.
+          It is a likely finding, not a settled one: a tendency, not destiny.
+studies:
+  - rsid: rs34891485
+    note: pmid-37550455
+    quote: q68
+    phenotype_class: MULTIVARIATE_AGEING
+    study_design: multivariate_healthspan_lifespan
+    population: European (the five input GWAS, UK Biobank and LifeGen among them)
+    ancestry: [EUR]
+    stat_significance: significant
+    p_value: "4.97e-10"
+    p_value_num: 4.97e-10
+    effect_size: 0.014460757
+    effect_measure: beta
+    effect_unit: mvAge factor per T allele (no conventional unit; positive = healthier ageing, q2)
+    effect_allele: T
+    direction: protective
+    statistical_test: "Genomic SEM common-factor GWAS of healthspan, frailty, exceptional longevity, parental lifespan and PhenoAge acceleration (Supplementary Table 7, effect allele first, q68; Supplementary Table 6, q67, Q P 0.68, filed not novel for lifespan); frailty (reverse coded) T +0.0268, P 3.0e-4; SuSiE 0.750, FINEMAP 0.745 (Supplementary Table 10, q69); pools the samples of its inputs, not a replication; the GWAS Catalog's rs34891485-T (db-gwascatalog-2026.10.29#q510)"
+    curator: claude-opus-5-5
+  - rsid: rs34891485
+    note: pmid-30642433
+    quote: q336
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 638071
+    sample_unit: lives
+    stat_significance: suggestive
+    p_value: "3.9428647e-07"
+    p_value_num: 3.9428647e-07
+    effect_size: 0.04527068
+    effect_measure: beta
+    effect_unit: log hazard protection per T allele (summary statistics' beta1; positive = longer life)
+    effect_allele: T
+    direction: protective
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0089, direction ++, info 0.98; the co-occurring lifespan study (D16), an mvAge input, not a replication; nothing in GRCh37 17:39.8-40.7 Mb reaches 2.5e-8 (peak rs76611716, P 2.1e-7, q337); Pilling's UK Biobank parents T P 7.4e-6 (pmid-29227965#q75), inside it; Park 2025's own survival T fewer deaths, P 0.033 (pmid-40021682#q89, columns swapped), co-occurring; FinnGen R11 death C −0.0107, SE 0.0151, P 0.48, one-sided 0.24 against T (db-finngen-r11#q64): APOE's within-FinnGen factor power 0.91, heterogeneity P 0.0016, the mean factor power 0.34, P 0.060, no red flag (D21, D25.3)"
+    curator: claude-opus-5-5
+  - rsid: rs34891485
+    note: pmid-30729179
+    quote: q123
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "0.0014"
+    p_value_num: 0.0014
+    effect_size: -0.0362
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per T allele (negative = later), the file's C effect negated
+    effect_allele: T
+    direction: protective
+    statistical_test: "Zenin 2019's healthspan summary statistics (Zenodo deposit): C +0.0362, SE 0.011, Z 3.28, -log10 P 2.985 (P 0.0010 raw), about 0.0014 after the paper's genomic control of 1.053 (q59, D26.1; derived); an mvAge input; scores beside the co-occurring lifespan study (D16)"
+    curator: claude-opus-5-5
+  - rsid: rs34891485
+    note: pmid-31413261
+    quote: q203
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis; no UK Biobank data)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.1791"
+    p_value_num: 0.1791
+    p_one_sided: 0.0895
+    effect_size: 0.0625
+    effect_measure: beta
+    effect_unit: log odds of survival to the 90th percentile per T allele
+    effect_allele: T
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GCST008598), SE 0.0465, effective N 11,432; 99th percentile T −0.0151, SE 0.0731, P 0.84 (q204); calibrated from Timmers' β 0.0453 (D25.3): APOE's factor 4.84 expects log OR 0.219, power 1.00, heterogeneity P 0.014 (both SEs), a flag; the mean factor (0.4175) expects 0.092, power 0.63, P 0.56, none (the 99th: 0.91, P 0.0058; 0.35, P 0.16); one calibration only, no red flag; an mvAge input (exceptional longevity, q68)"
+    curator: claude-opus-5-5
