@@ -6,36 +6,38 @@ locus_id: 77
 locus_name: APBA2
 verdict: re-tiered
 verdict_reason: >-
-  Tier C, from the seed's B, under R-TIER-2 (put to the lead, with D as the alternative). Gurinovich 2021's GWAS of
-  1,320 NECS centenarians against 2,899 controls finds G more common among the centenarians (1.44 % against 0.45 % of
-  alleles, score Z 5.72, P 1.08e-8): genome-wide at the paper's threshold, in one old-against-young case-control,
-  which R-TIER-2 caps at C until an independent sample replicates it (D22.1). None does. The paper's own replication
-  in 480 Ashkenazi centenarians and about 800 controls (LGP) is on the same side and flat (0.03 against 0.02, P 0.4),
-  and the paper says LGP's carriers of rare variants were too few to test. The frequency depends on the source, as at
-  row 19: the HRC-imputed samples see a rare allele (NECS's controls 0.45 %, Park's UK Biobank about 0.08 %), the
-  sequenced panels a common one (1000 Genomes Europeans 11.5 %, ALFA's Europeans 6.4 %, LifeGen's imputed cohorts
-  about 10 %), and gnomAD carries no frequency for the site, which lies among the segmental duplications of 15q13
-  (GOLGA6L7 is the second gene by locus-to-gene). Unlike row 41, the authors do not question the frequency and the
-  references disagree with each other, so the source is not shown to be overfit (D26.10 needs the reference
-  frequencies to agree against it); D is the alternative put to the lead. The other looks: LifeGen's LifeGen-only
-  line, at the common frequency, is flat (P 0.78); Park 2025's own survival in UK Biobank puts the rare allele with
-  more deaths, P 0.064, one-sided 0.032 against NECS's side (the allele read by the deposit's swap convention, q32);
-  Deelen 2019, Zenin 2019 and FinnGen r11 hold no line. Power cannot be computed against NECS's effect on a site whose
-  frequency is source-dependent, so no red flag is set (D28.1). Lifespan `−` on Park (D28.3: it reads against
-  one-sided and no lifespan-class look reads for), with the caveat that which allele Park's carriers carry rests on
-  the swap convention; exceptional survival `+` on NECS; healthspan untested. Causal C1: Gurinovich's PICS set is the
-  lead alone (posterior 1), as at row 19; effector E3, no gene: locus-to-gene gives APBA2 0.42, under 0.5, and
-  GOLGA6L7 0.20. The authors find APBA2 potentially very interesting (it stabilises the amyloid precursor protein),
-  but nothing shows the effect runs through it: mechanism general ageing. PROTECT:PRESENCE (the rarer G protects in
-  NECS). Neutral, protective and protective genotypes, as row 19; the genotype shares are NECS controls' (G 0.45 %),
-  the frequency the claim was made at, and are uncertain given the panels.
+  Tier C, from the seed's B, under R-TIER-2 (put to the lead, with D and with neutral states as the alternatives).
+  Gurinovich 2021's GWAS of 1,320 NECS centenarians against 2,899 controls finds G more common among the centenarians
+  (1.44 % against 0.45 % of alleles, score Z 5.72, P 1.08e-8): genome-wide at the paper's threshold, in one
+  old-against-young case-control, which R-TIER-2 caps at C until an independent sample replicates it (D22.1). None
+  does. The paper's own replication in 480 Ashkenazi centenarians and about 800 controls (LGP) is on the same side
+  and not significant (0.03 against 0.02, P 0.4; "did not reach statistical significance"). Read as a test of NECS
+  (crude log OR 1.17, Woolf SE 0.26, from the printed frequencies), LGP's crude OR 1.52 has power about 1.00 and
+  heterogeneity P 0.038 at the printed digits, but across the one-digit rounding of LGP's frequencies the
+  heterogeneity P runs from 0.001 to 0.41 (derived), so whether it is a red flag is unknown and it sets nothing
+  (D26.3). The frequency depends on the source, as at row 19: NECS's controls (0.45 %), Park's HRC-imputed UK
+  Biobank (about 0.08 %) and gnomAD's non-Finnish Europeans (0.27 %; Ashkenazi Jews 0.08 %) see a rare allele;
+  1000 Genomes' Europeans (11.5 %), ALFA's (6.4 %) and LifeGen's imputed cohorts (about 10 %) a common one. With the
+  references disagreeing among themselves and the authors not questioning it, the source is not shown to be overfit
+  (D26.10's ground is reference samples agreeing against it); D is the alternative put to the lead. Lifespan 0:
+  LifeGen's LifeGen-only line (at the common frequency) is flat, P 0.78. Park 2025's own-survival deposit has a line
+  (the rare allele with more deaths, P 0.064), but at about 0.08 % it is below Park's own MAF 0.1 % filter, an
+  excluded line (D26.7, as rows 44 and 75), so it reads nothing. Deelen 2019, Zenin 2019 and FinnGen r11 hold no line.
+  Exceptional survival + on NECS; healthspan untested. Causal C1: Gurinovich's PICS set is the lead alone
+  (posterior 1), as at row 19. Effector E3, no gene named: locus-to-gene gives APBA2 0.42, under 0.5 (GOLGA6L7 0.20),
+  with no colocalisation and no pQTL (the SNP is not among the paper's 56 pQTL variants); every source names APBA2,
+  which is named in prose. The authors find APBA2 potentially very interesting (it stabilises the amyloid precursor
+  protein), but nothing shows the effect runs through it: mechanism general ageing. PROTECT:PRESENCE (the rarer G
+  protects in NECS). Neutral, protective and protective genotypes, as row 19; the genotype shares are NECS
+  controls' (G 0.45 %), the frequency the claim was made at. By 1000 Genomes about one European in five would carry
+  a "protective" G, which is why neutral states are offered to the lead.
 axes:
-  tier: {value: C, cites: [pmid-33948810#q33, pmid-33948810#q34, pmid-33948810#q1, pmid-33948810#q2, pmid-33948810#q21, db-ensembl-116#q591, db-ensembl-116#q592, db-ensembl-116#q593, db-ensembl-116#q589, pmid-40021682#q79, pmid-40021682#q32, pmid-30642433#q315]}
+  tier: {value: C, cites: [pmid-33948810#q33, pmid-33948810#q34, pmid-33948810#q1, pmid-33948810#q2, pmid-33948810#q36, db-opentargets-26.09#q896, db-opentargets-26.09#q898, db-ensembl-116#q591, db-ensembl-116#q592, db-ensembl-116#q593, db-ensembl-116#q589, pmid-40021682#q79, pmid-40021682#q39, pmid-30642433#q315]}
   mechanism: {value: general_ageing, cites: [pmid-33948810#q35, db-gwascatalog-2026.10.29#q483]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: untested, lifespan: "−", exceptional_survival: "+",
-            cites: [pmid-40021682#q79, pmid-40021682#q32, pmid-30642433#q315, pmid-33948810#q33, pmid-33948810#q34]}
+  outcome: {healthspan: untested, lifespan: "0", exceptional_survival: "+",
+            cites: [pmid-30642433#q315, pmid-40021682#q79, pmid-40021682#q39, pmid-40021682#q41, pmid-33948810#q33, pmid-33948810#q34, pmid-33948810#q36]}
   actionability: {label: descriptive, cites: [pmid-33948810#q33]}
   context: {values: [eur_only_evidence], cites: [pmid-33948810#q1, pmid-33948810#q2]}
 flags:
@@ -55,22 +57,21 @@ variants:
         state: neutral
         conclusion: >-
           You carry two copies of the common version of this DNA position. It is the reference the other combinations
-          are compared with. The position, on chromosome 15, lies within the APBA2 gene, in a stretch of DNA that is
-          hard to read reliably, and how common the other version is depends on how it was measured.
+          are compared with. The position, on chromosome 15, lies within the APBA2 gene, and how common the other version is depends on how it was measured.
       - genotype: A/G
         state: protective
         conclusion: >-
           You carry one copy of a version of this DNA position that one American study of people who reached 100
           found more often among them than among younger people. A smaller study of centenarians leaned the same way
-          without confirming it, and a large British study leaned the other way. The position is hard to measure
-          reliably, so this is an uncertain finding, and it says little about your own lifespan.
+          without confirming it. How common this version is differs a lot between measurements, so this is an
+          uncertain finding, and it says little about your own lifespan.
       - genotype: G/G
         state: protective
         conclusion: >-
           You carry two copies of a version of this DNA position that one American study of people who reached 100
           found more often among them than among younger people. A smaller study of centenarians leaned the same way
-          without confirming it, and a large British study leaned the other way. The position is hard to measure
-          reliably, so this is an uncertain finding, and few people carrying two copies were studied.
+          without confirming it. How common this version is differs a lot between measurements, so this is an
+          uncertain finding, and few people carrying two copies were studied.
 studies:
   - rsid: rs77184423
     note: pmid-33948810
@@ -89,25 +90,4 @@ studies:
     effect_allele: G
     direction: protective
     statistical_test: "Score test in the NECS GWAS (Supplementary Table 1, q33; legend q3), score Z 5.72, no effect size printed; G 1.44 % of cases' alleles against 0.45 % of controls'; LGP replication G 0.03 against 0.02, P 0.4 (Table 1, q34); R-TIER-2 caps it at C"
-    curator: claude-opus-5-5
-  - rsid: rs77184423
-    note: pmid-40021682
-    quote: q79
-    phenotype_class: OWN_SURVIVAL
-    study_design: own_survival_cox
-    population: European (UK Biobank, whole cohort)
-    ancestry: [EUR]
-    n_cases: 35551
-    sample_size: 393833
-    sample_unit: individuals
-    stat_significance: not_significant
-    p_value: "0.064"
-    p_value_num: 0.064
-    p_one_sided: 0.032
-    effect_size: 0.0279
-    effect_measure: beta
-    effect_unit: Martingale residual of a Cox model of own survival per G allele (positive = more deaths than expected)
-    effect_allele: G
-    direction: risk
-    statistical_test: "BOLT-LMM on Martingale residuals; the deposit's line (q79) prints G β −0.0278584 (SE 0.0150703) at 0.999227, swapped (q32), so the minor allele, read as G at about 0.0008, goes with more deaths, one-sided 0.032 against NECS; the allele rests on the swap convention at a site whose frequency is source-dependent"
     curator: claude-opus-5-5

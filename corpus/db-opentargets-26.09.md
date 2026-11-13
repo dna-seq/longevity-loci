@@ -3269,3 +3269,15 @@ of the nine longevity studies holds it (q892). For row 76.
 
 15_29030729_A_G (rs77184423, row 77): one credible set holds it, Gurinovich's PICS set (q893, P 1e-8), the lead
 alone at posterior probability 1 (q894); locus-to-gene gives APBA2 0.42 (q895), GOLGA6L7 0.20. For row 77.
+
+## Reading 2026-11-13, record
+
+> [q896] data.variant.alleleFrequencies[2] populationName nfe_adj alleleFrequency 0.002669717772692601
+
+> [q897] data.variant.alleleFrequencies[9] populationName afr_adj alleleFrequency 0.18072326269098077
+
+> [q898] data.variant.alleleFrequencies[6] populationName asj_adj alleleFrequency 0.0007686395080707148
+
+Open Targets' gnomAD frequencies for 15_29030729_A_G (rs77184423, row 77): G 0.0027 in non-Finnish Europeans (q896),
+0.18 in Africans (q897), 0.0008 in Ashkenazi Jews (q898). gnomAD sides with NECS's controls (0.0045) and Park's UK
+Biobank (about 0.0008), against 1000 Genomes' Europeans (0.115) and ALFA's (0.064): the references disagree. For row 77.
