@@ -7,50 +7,52 @@ locus_name: DHX58
 verdict: kept
 verdict_reason: >-
   Tier B, as the seed has it: genome-wide only in a multivariate result, with a co-occurring lifespan study (D16,
-  D18.3), and not replicated outside its inputs; row 52's shape. Rosoff 2023's mvAge is genome-wide at the lead, T
-  (the common allele) on the healthier-ageing side, β +0.0145 (SE 0.0023), P 5.0e-10, heterogeneity across its five
-  inputs Q P 0.68 (Supplementary Tables 6 and 7). Every input leans to T: Timmers 2019's million parents' lives, T
-  longer, P 3.9e-7 (suggestive, "++" in UK Biobank and LifeGen), the co-occurring lifespan study; Zenin 2019's
-  healthspan, T healthier, P 0.0010 (0.0014 after genomic control); frailty (reverse coded) P 3.0e-4, PhenoAge P 0.67,
-  read in Rosoff's table only. Rosoff files the locus "No (Lifespan)", within 1 Mb of an input's lifespan locus. Read 1
-  Mb either side, Timmers holds no line past its own 2.5e-8; its strongest, rs1011157 in BECN1 700 kb away (T shorter,
-  P 3.6e-8, past 5e-8), is r² 0.28 to the lead, and the peak nearer the lead, rs76611716 in STAT3's region (P 2.1e-7),
-  r² 0.37: neither is the lead's signal, so the lead's own lifespan evidence stays suggestive. rs1011157 is named and
-  offered to the scout's queue (D25.6). In UK Biobank the rest agrees: Pilling's parents T longer, P 7.4e-6 (inside
-  Timmers); Park 2025's own survival T with fewer deaths, P 0.033 (its allele columns swapped, as the frequencies
-  show), co-occurring. Nothing replicates and nothing contradicts: Deelen 2019, itself an mvAge input, is flat (90th
-  percentile T one-sided 0.089, 99th P 0.84); FinnGen R11's death endpoint leans against T, flat (one-sided 0.24).
-  Calibrated from Timmers' β (D25.3), each of the three flags under APOE's factor (powers 1.00, 0.91, 0.91;
-  heterogeneity P 0.014, 0.0058, 0.0016) and none under the mean factor (powers 0.63, 0.35, 0.34): a flag under one
-  calibration only is none, so no red flag (D21). Wright 2019 has no line at the lead; its fathers' Table 9 holds
-  rs12600570 1.9 kb away (r² 0.65 in CEU, D′ 1; the lead's C rides with its T on all 17 C haplotypes), UK arm P 0.0013,
-  so not selected by the table's filter (D29.18), its AncestryDNA arm leaning to the lead's T, one-sided 0.031 raw,
-  0.044 after AncestryDNA's genomic control (λ 1.182): a proxy at r² 0.65, named and not counted; it could not lift
-  the tier, which mvAge caps at B (D18.3). Foote 2025's seven frailty deposits hold no line at the lead and nothing
-  below P 0.01 within 50 kb. Healthspan + (Zenin, nominal, beside the co-occurring lifespan study, D16), lifespan +
-  (Timmers), exceptional survival 0 (Deelen flat). Mechanism ageing in general (D25.7); pleiotropy none counted: the
-  lead's one other association is coronary artery disease (van der Harst 2017, T lowering it, P 3e-7, short of
-  genome-wide, with no Open Targets set), named here. Descriptive. Causal C1: a coding variant at posterior 0.863 in
-  the mvAge PICS set (Open Targets); the paper's own SuSiE 0.750 and FINEMAP 0.745, both credible-set columns 0.
-  Effector E1, DHX58: the variant changes DHX58's protein, threonine 76 to alanine (VEP; SIFT tolerated, PolyPhen
-  benign, so the effect is read from the association data), §4.2's coding clause; locus-to-gene names DHX58 alone
-  (0.776) and no QTL colocalises. Timmers' nearby peaks (STAT3's region, BECN1) are not the lead's signal (r² 0.37,
-  0.28), so they do not make the call ambiguous by D24; put to the lead. DHX58 (LGP2) is a RIG-I-like receptor of
-  innate antiviral sensing, named, not a mechanism shown. T is the common allele, about 95 in 100 European
-  chromosomes, so T/T (about 90 in 100) is the reference (§6.2) and C, the shorter-lived side, makes C/T and C/C risk:
-  PROTECT:ABSENCE_OF_RISK, as rows 79 and 85. Age of action unknown. The evidence is European (C absent in East
-  Asians).
+  D18.3, D30.2), and not replicated outside its inputs; row 52's shape. Rosoff 2023's mvAge is genome-wide at the
+  lead, T (the common allele) on the healthier-ageing side, β +0.0145 (SE 0.0023), P 5.0e-10, heterogeneity across its
+  five inputs Q P 0.68 (Supplementary Tables 6 and 7). Every input leans to T: Timmers 2019's million parents' lives, T
+  longer, P 3.9e-7 (suggestive, "++" in UK Biobank and LifeGen); Zenin 2019's healthspan, T healthier, P 0.0010 (0.0014
+  after genomic control); frailty (reverse coded) P 3.0e-4, PhenoAge P 0.67, read in Rosoff's table only. Rosoff files
+  the locus "No (Lifespan)", within 1 Mb of an input's lifespan locus. Read 1 Mb either side, Timmers holds no line
+  past its own 2.5e-8; its strongest, rs1011157 in BECN1 700 kb away (T shorter, P 3.6e-8, past 5e-8), is r² 0.28 to
+  the lead, and the peak nearer the lead, rs76611716 in STAT3's region (P 2.1e-7), r² 0.37. D30.2 asks whether the
+  co-occurring lifespan signal is the lead's own once those stronger lines are accounted for. Conditioned jointly on
+  both (signed LD from the 1000 Genomes CEU genotypes, the peaks r² 0.20 to each other), Timmers' lead line drops to
+  one-sided 0.073 (0.009 and 0.004 against each peak alone); Park 2025's own survival in UK Biobank, which carries
+  neither peak (P 0.37 and 1.0), keeps its lead line, T with fewer deaths (P 0.033, its allele columns swapped, as the
+  frequencies show), at one-sided 0.012 (0.022 and 0.007 alone). One lifespan-class study stays below 0.05, so B (D16,
+  D30.2); on Timmers alone it would be C. rs1011157 is named and offered to the scout's queue (D25.6). Pilling's
+  parents also put T longer, P 7.4e-6, inside Timmers. Nothing replicates and nothing contradicts: Deelen 2019, itself
+  an mvAge input, is flat (90th percentile T one-sided 0.089, 99th P 0.84); FinnGen R11's death endpoint leans against
+  T, flat (one-sided 0.24). The red flag is unknown (D29.11, D30.8): D21 scales from the discovery's own effect, and
+  mvAge's has no conversion to these scales; scaled from Timmers' β instead, each of the three would flag under APOE's
+  factor (powers 1.00, 0.91, 0.91; heterogeneity P 0.014, 0.0058, 0.0016) and none under the mean factor (powers 0.63,
+  0.35, 0.34). Wright 2019 has no line at the lead; its fathers' Table 9 holds rs12600570 1.9 kb away (r² 0.65 in CEU,
+  D′ 1; the lead's C rides with its T on all 17 C haplotypes), whose AncestryDNA arm leans to the lead's T (one-sided
+  0.044 after genomic control), but with that arm at z = 0 the deflated meta is P 0.028, above the table's 2.5e-3, so
+  the line was selected by its own AncestryDNA arm: named, not counted (D30.1). Foote 2025's seven frailty deposits
+  hold no line at the lead and nothing below P 0.01 within 50 kb. Healthspan + (Zenin, nominal, beside the
+  co-occurring lifespan study, D16), lifespan + (Park, conditioned; Timmers), exceptional survival 0 (Deelen flat).
+  Mechanism ageing in general (D25.7); pleiotropy none counted: the lead's one other association is coronary artery
+  disease (van der Harst 2017, T lowering it, P 3e-7, short of genome-wide, with no Open Targets set), named here.
+  Descriptive. Causal C1: a coding variant at posterior 0.863 in the mvAge PICS set (Open Targets); the paper's own
+  SuSiE 0.750 and FINEMAP 0.745, both credible-set columns 0. Effector E1, DHX58 (D30.8): the variant changes DHX58's
+  protein, threonine 76 to alanine (VEP; SIFT tolerated, PolyPhen benign, so the effect is read from the association
+  data), §4.2's coding clause; locus-to-gene names DHX58 alone (0.776) and no QTL colocalises; Timmers' nearby peaks
+  (STAT3's region, BECN1) are other signals, not a rival in the lead's own set (D24). DHX58 (LGP2) is a RIG-I-like
+  receptor of innate antiviral sensing, named, not a mechanism shown. T is the common allele, about 95 in 100
+  European chromosomes, so T/T (about 90 in 100) is the reference (§6.2) and C, the shorter-lived side, makes C/T and
+  C/C risk; no PROTECT token, since the locus's only disease line, coronary disease at P 3e-7, is not genome-wide
+  (D30.6). Age of action unknown. The evidence is European (C absent in East Asians).
 axes:
-  tier: {value: B, cites: [pmid-37550455#q67, pmid-37550455#q68, pmid-37550455#q2, pmid-30642433#q336, pmid-30642433#q337, pmid-30642433#q339, db-ensembl-116#q661, db-ensembl-116#q662, pmid-30729179#q123, pmid-29227965#q75, pmid-40021682#q89, pmid-40021682#q32, pmid-31413261#q203, pmid-31413261#q204, db-finngen-r11#q64, pmid-31484785#q137, pmid-30642433#q338, db-ensembl-116#q659, pmid-40759756#q16, pmid-40759756#q17, db-gwascatalog-2026.10.29#q510, db-opentargets-26.09#q997]}
+  tier: {value: B, cites: [pmid-37550455#q67, pmid-37550455#q68, pmid-37550455#q2, pmid-30642433#q336, pmid-30642433#q337, pmid-30642433#q339, db-ensembl-116#q661, db-ensembl-116#q662, db-ensembl-116#q670, pmid-40021682#q91, pmid-40021682#q92, pmid-30729179#q123, pmid-29227965#q75, pmid-40021682#q89, pmid-40021682#q32, pmid-31413261#q203, pmid-31413261#q204, db-finngen-r11#q64, pmid-31484785#q137, pmid-30642433#q338, db-ensembl-116#q659, pmid-40759756#q16, pmid-40759756#q17, db-gwascatalog-2026.10.29#q510, db-opentargets-26.09#q997]}
   mechanism: {value: general_ageing, cites: [db-gwascatalog-2026.10.29#q510, db-gwascatalog-2026.10.29#q511]}
   pleiotropy: {values: [], cites: [db-gwascatalog-2026.10.29#q511, pmid-37550455#q70]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
-            cites: [pmid-30729179#q123, pmid-30642433#q336, pmid-31413261#q203, pmid-31413261#q204]}
+            cites: [pmid-30729179#q123, pmid-30642433#q336, pmid-40021682#q89, pmid-40021682#q91, pmid-40021682#q92, pmid-31413261#q203, pmid-31413261#q204]}
   actionability: {label: descriptive, cites: [db-gwascatalog-2026.10.29#q511]}
   context: {values: [eur_only_evidence], cites: [db-ensembl-116#q655, db-ensembl-116#q657, pmid-30642433#q336]}
 flags:
-  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-30642433#q336, db-ensembl-116#q655, db-ensembl-116#q656]}
   - {token: "causal:C1", cites: [db-ensembl-116#q658, db-opentargets-26.09#q997, db-opentargets-26.09#q999, pmid-37550455#q69]}
   - {token: "effector:E1", cites: [db-ensembl-116#q658, db-opentargets-26.09#q1000, db-opentargets-26.09#q1002, db-ensembl-116#q661, db-ensembl-116#q662]}
 variants:
@@ -123,7 +125,7 @@ studies:
     effect_unit: log hazard protection per T allele (summary statistics' beta1; positive = longer life)
     effect_allele: T
     direction: protective
-    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0089, direction ++, info 0.98; the co-occurring lifespan study (D16), an mvAge input, not a replication; nothing in GRCh37 17:39.26-41.26 Mb reaches 2.5e-8 (rs1011157, BECN1, P 3.6e-8, r² 0.28 to the lead, q339; rs76611716, P 2.1e-7, r² 0.37, q337); Pilling's UK Biobank parents T P 7.4e-6 (pmid-29227965#q75), inside it; Park 2025's own survival T fewer deaths, P 0.033 (pmid-40021682#q89, columns swapped), co-occurring; FinnGen R11 death C −0.0107, SE 0.0151, P 0.48, one-sided 0.24 against T (db-finngen-r11#q64): APOE's within-FinnGen factor power 0.91, heterogeneity P 0.0016, the mean factor power 0.34, P 0.060, no red flag (D21, D25.3)"
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0089, direction ++, info 0.98; the co-occurring lifespan study (D16), an mvAge input, not a replication; nothing in GRCh37 17:39.26-41.26 Mb reaches 2.5e-8 (rs1011157, BECN1, P 3.6e-8, r² 0.28 to the lead, q339; rs76611716, P 2.1e-7, r² 0.37, q337); Pilling's UK Biobank parents T P 7.4e-6 (pmid-29227965#q75), inside it; Park 2025's own survival T fewer deaths, P 0.033 (pmid-40021682#q89, columns swapped), co-occurring; FinnGen R11 death C −0.0107, SE 0.0151, P 0.48, one-sided 0.24 against T (db-finngen-r11#q64): scaled from Timmers, APOE's within-FinnGen factor power 0.91, heterogeneity P 0.0016, the mean factor power 0.34, P 0.060; red flag unknown (D29.11); D30.2's joint conditional on rs76611716 and rs1011157: Timmers one-sided 0.073, Park 0.012 (pmid-40021682#q91, q92)"
     curator: claude-opus-5-5
   - rsid: rs34891485
     note: pmid-30729179
@@ -160,5 +162,5 @@ studies:
     effect_unit: log odds of survival to the 90th percentile per T allele
     effect_allele: T
     direction: protective
-    statistical_test: "Deelen 2019's summary statistics (GCST008598), SE 0.0465, effective N 11,432; 99th percentile T −0.0151, SE 0.0731, P 0.84 (q204); calibrated from Timmers' β 0.0453 (D25.3): APOE's factor 4.84 expects log OR 0.219, power 1.00, heterogeneity P 0.014 (both SEs), a flag; the mean factor (0.4175) expects 0.092, power 0.63, P 0.56, none (the 99th: 0.91, P 0.0058; 0.35, P 0.16); one calibration only, no red flag; an mvAge input (exceptional longevity, q68)"
+    statistical_test: "Deelen 2019's summary statistics (GCST008598), SE 0.0465, effective N 11,432; 99th percentile T −0.0151, SE 0.0731, P 0.84 (q204); calibrated from Timmers' β 0.0453 (D25.3): APOE's factor 4.84 expects log OR 0.219, power 1.00, heterogeneity P 0.014 (both SEs), a flag; the mean factor (0.4175) expects 0.092, power 0.63, P 0.56, none (the 99th: 0.91, P 0.0058; 0.35, P 0.16); scaled from Timmers, not the discovery, so the red flag reads unknown (D29.11); an mvAge input (exceptional longevity, q68)"
     curator: claude-opus-5-5

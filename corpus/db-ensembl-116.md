@@ -2395,3 +2395,11 @@ Europeans (q663), 0.29 in 1000 Genomes Europeans (q664), 0.05 in East Asians (q6
 r² 0.84, D′ 1.00 (q667); rs11079849 r² 0.65 (q668). Phased in CEU (q654) from the 1000 Genomes genotype records: the
 lead's C rides with rs9899580's G on 68 of 69 C haplotypes (T with T on all 129 T haplotypes), and with rs11655587's T
 on all 69. For row 88.
+
+## Reading 2026-11-13, record
+
+> [q670] [0] r2 0.200733 variation1 rs76611716 population_name 1000GENOMES:phase_3:CEU d_prime 0.501555 variation2 rs1011157
+
+Row 87: the two Timmers peaks near the lead, rs76611716 and rs1011157, r² 0.20, D′ 0.50 in CEU (q670). Their 1000
+Genomes genotype records are cached beside the lead's (`genotypes-rs76611716.json`, `genotypes-rs1011157.json`). For
+row 87.
