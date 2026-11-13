@@ -12,7 +12,7 @@ file): `[seat.liaison.watch.registry]` says each new tag.
 
 ## Read mark
 
-**`v0.30.0`** (2026-11-12): the release the module seat first ran against, its first rehearsal on the polygon
+**`v0.30.1`** (2026-11-13), read whole (below). Before it, **`v0.30.0`** (2026-11-12): the release the module seat first ran against, its first rehearsal on the polygon
 (`test-longevity-loci/longevitymap@2.0.0`, our 0fa5e77; strict validate and compile green). Tags before it are
 fast-forwarded past, read only by their changelog headings as listed below; nothing here used them.
 
@@ -39,7 +39,11 @@ re-rehearsed once per curation batch.
 
 ## Inbound verdicts
 
-None yet.
+- **`v0.30.1`** (2026-11-13). Client surface unchanged; the server floors the trio at 0.8.5, as ours does. *For the
+  module seat:* a `remote_derive` asking live passes (`offline=false`) now gets them, where 0.30.0 answered every
+  live pass "skipped: offline" from the box's own switch; each live source stays gated by the operator.
+  `registry upgrade`'s re-derivation reasons are the operator's, nothing we call. A keyed lane lookup answers every
+  held lane whatever its terms (the 0.30 ruling, now in the API reference). Nothing to change here.
 
 ## Our pieces that duplicate the registry's
 
