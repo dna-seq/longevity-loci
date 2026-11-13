@@ -9,7 +9,8 @@ verdict: kept
 verdict_reason: >-
   Tier C, as the seed has it, by R-TIER-4, row 8's shape: nothing at the variant reaches genome-wide significance for
   any lifespan or healthspan phenotype, nothing in the window even reaches suggestive (Timmers 2019's strongest line
-  within 250 kb is P 3.0e-4, the lead itself 3.9e-4, so the lead is the locus's lifespan peak), and R-TIER-4 keeps an
+  within 250 kb is P 3.0e-4, the lead itself 3.9e-4, so the lead is the locus's lifespan peak; Timmers' risk-factor-informed Bayesian scan, Table 2, does not list
+  it, D28.7), and R-TIER-4 keeps an
   MR-only result out of A and B, which leaves C. The seed's ground is Joshi
   2017's Mendelian randomisation (one BMI unit about 7 months of life), a polygenic instrument over many BMI loci, not
   a per-variant result here. The variant's own lifespan evidence is nominal and points one way. Timmers 2019's

@@ -3442,3 +3442,21 @@ alt A β +0.158, posterior 0.96; q944 to q946), A raising HDL in every HDL-chole
 particle fractions up and VLDL and LDL fractions down. One disease set: age-related macular degeneration (GCST001100,
 PICS, P 7e-9, A β +0.140; q947, q948): A, the longer-lived allele, raises it. No coronary set with a β is topped by
 the lead. For row 84.
+
+## Reading 2026-11-13, record
+
+> [q949] data.variant.credibleSets.rows[172] studyLocusId 7372a87f9c3204045d3643fc81eb3782 pValueMantissa 7.96999979019165 pValueExponent -12 beta 0.09728212280655374 finemappingMethod PICS
+
+> [q950] data.variant.credibleSets.rows[172].study id GCST90480048 traitFromSource Macular degeneration (senile) of retina NOS (PheCode 362.29) studyType gwas
+
+> [q951] data.variant.credibleSets.rows[166] studyLocusId 92542fc5b3ac400e59313e1076f16659 pValueMantissa 7 pValueExponent -9 beta -0.034744173 finemappingMethod PICS
+
+> [q952] data.variant.credibleSets.rows[166].study id GCST007931 traitFromSource Medication use (HMG CoA reductase inhibitors) studyType gwas
+
+rs3764261, row 84, over all nine pages. Of the 434 sets the lead tops, 408 are lipid, fatty-acid or lipoprotein
+traits; the other 26 are proteins (APOA1, APOC1 and others), vitamin D, metabolic syndrome (Kristiansson's, A +0.07,
+on a scale the record does not name), statin use (A −0.035, P 7e-9, q951, q952), waist and a coronary-or-factor-VII
+pleiotropy set with no β, and two macular-degeneration sets, both with A raising it: GCST001100 (q947, q948) and UK
+Biobank's senile macular degeneration (PICS, P 8.0e-12, A β +0.097; q949, q950). Every macular-degeneration set at the
+locus, whoever leads it, has its alt allele raising it. One HDL set runs against the rest: GCST009661 "Low
+HDL-cholesterol levels", A +0.59 (a case-control set, its scale unnamed). For row 84.

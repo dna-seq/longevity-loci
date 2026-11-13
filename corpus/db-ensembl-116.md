@@ -2275,3 +2275,10 @@ Row 83: rs7190492, Wright's weaker AncestryDNA FTO line, is r² 0.44 to rs142108
 Row 84. rs3764261 (q637): GRCh38 16:56,959,412, C/A, upstream of CETP (q638); A 0.292 in 1000 Genomes Europeans (q636).
 rs5882, I405V: G (V) 0.331 in Europeans (q639). Ensembl returns no European LD between the two (below its reporting
 floor), so they are separate signals. For row 84.
+
+## Reading 2026-11-13, record
+
+> [q640] [0].transcript_consequences[0] gene_symbol CETP impact MODERATE strand 1 polyphen_prediction benign protein_start 422 variant_allele A gene_symbol_source HGNC cdna_end 1294 sift_prediction tolerated hgnc_id HGNC:1869 cdna_start 1294 codons Gtc/Atc protein_end 422 cds_end 1264 transcript_id ENST00000200676 biotype protein_coding sift_score 1 amino_acids V/I cds_start 1264 gene_id ENSG00000087237 polyphen_score 0.003
+
+rs5882 (row 84): CETP missense, codons Gtc/Atc (q640): the reference G codes valine, A isoleucine, so Barzilai's
+405V is the G allele (p.422 in Ensembl's numbering, which counts the signal peptide). For row 84.
