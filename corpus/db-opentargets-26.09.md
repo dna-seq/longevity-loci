@@ -3307,3 +3307,16 @@ at posterior 0.034 (q902). Elsewhere it sits at 0.03 or less, in sets led by oth
 hypertension, also coronary disease, eGFR and creatinine, height, red-cell counts, brain white-matter imaging,
 menopause and lung function. Atkins' rs3959554 (15_41151726_A_G) leads coronary atherosclerosis sets, G raising it
 (β +0.0080, P 4.4e-9, q903 to q905). For row 78.
+
+## Reading 2026-11-13, record
+
+> [q907] data.variant.credibleSets count 2
+
+> [q908] data.credibleSets count 0
+
+> [q909] data.credibleSets count 0
+
+15_47367997_G_A (rs74011415, row 79): two credible sets hold it (q907), each led by another variant with the lead at
+posterior 0.005 or less: UK Biobank's age at completing education and FinnGen R12's ever-smoking (locus-to-gene SEMA6D
+0.87 and 0.47 there). None of Pilling's five deposits (q908) nor the nine longevity studies (q909) has a set here. For
+row 79.

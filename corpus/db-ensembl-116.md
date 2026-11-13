@@ -2172,3 +2172,21 @@ Atkins' frailty SNP: r² 0.71 (CEU, D′ 1.00, q598), 0.77 (GBR, q599); A 0.672 
 T rides with A (derived). rs11855102 (q602, q603): r² 0.72, D′ 0.91, T 0.621: T with T (the other phase caps r² near
 0.42). rs1678750 (q604, q605): r² 0.98, D′ 1.00, G 0.586: G with T. rs1869907 (q606, q607): r² 0.90, T 0.586: T with T.
 Ensembl returns no LD between the lead and Wright's Table 8 SNPs rs690136 and rs686038 (3 % variants). For row 78.
+
+## Reading 2026-11-13, record
+
+> [q608] mappings[0] assembly_name GRCh38 seq_region_name 15 allele_string G/A strand 1 coord_system chromosome end 47367997 start 47367997 ancestral_allele G location 15:47367997-47367997
+
+> [q609] populations[76] allele A population 1000GENOMES:phase_3:EUR frequency 0.117296222664016 allele_count 118
+
+> [q610] [0].transcript_consequences[1] biotype protein_coding hgnc_id HGNC:16770 gene_id ENSG00000137872 transcript_id ENST00000558014 gene_symbol_source HGNC variant_allele A impact MODIFIER gene_symbol SEMA6D strand 1
+
+> [q611] [4] population_name 1000GENOMES:phase_3:CEU d_prime 1.000000 variation2 rs4774495 r2 1.000000 variation1 rs74011415
+
+> [q612] [10] variation1 rs74011415 variation2 rs4774495 r2 1.000000 d_prime 1.000000 population_name 1000GENOMES:phase_3:GBR
+
+> [q613] populations[79] allele_count 118 frequency 0.117296222664016 allele C population 1000GENOMES:phase_3:EUR
+
+Row 79. rs74011415 (q608): GRCh38 15:47,367,997, G/A, G ancestral; A 0.117 in 1000 Genomes Europeans (q609); an intron
+variant of SEMA6D's protein-coding transcripts (q610). rs4774495, Wright's SEMA6D lead: r² 1.00, D′ 1.00 in CEU (q611)
+and GBR (q612); C 0.117 in Europeans (q613), so C rides with A and T with G. For row 79.

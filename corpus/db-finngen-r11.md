@@ -412,3 +412,10 @@ slightly more deaths, against the discovery, flat; nearest genes PROX2, YLPM1. F
 FinnGen R11 death at row 78's lead (q54): alt A β −0.0058 (SE 0.0077) on the log odds of death, P 0.45, so T with
 slightly more deaths, one-sided for T about 0.77 (derived): against, flat. At rs3959554 (q55): G −0.0038, P 0.64, the
 same lean (G travels with the lead's A). For row 78.
+
+## Reading 2026-11-13, supplement
+
+> [q56] 15 47367997 G A rs74011415 CTD-2050N2.1,SEMA6D 0.870558 0.0602025 0.00157774 0.00968233 0.177342 0.176769 0.177414
+
+FinnGen R11 death at row 79's lead (q56): alt A β +0.0016 (SE 0.0097) on the log odds of death, P 0.87, so G with
+slightly fewer deaths, flat; A at 0.177 in FinnGen. For row 79.

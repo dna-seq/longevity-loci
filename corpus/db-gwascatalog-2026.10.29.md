@@ -1753,3 +1753,16 @@ q485), and agents acting on the renin-angiotensin system, A raising their use, �
 with less use. At rs3959554: coronary artery disease, A OR 0.97, P 7e-9 (q488, q489), and Atkins' frailty index, A
 lowering it, β 0.0189, P 2e-8 (q490, q491); the lead's T rides with A (db-ensembl-116#q598, q600), so T goes with
 less coronary disease and less frailty. Height records at rs3959554 are not read. For row 78.
+
+## Reading 2026-11-13, record
+
+> [q492] _embedded.associations[1] association_id 35567970 risk_frequency 0.881 pvalue_description pvalue_mantissa 1 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.013-0.026] beta 0.0192 unit decrease p_value 1e-08 accession_id GCST006701 pubmed_id 29227965 first_author Pilling LC ci_lower 0.013 ci_upper 0.026
+
+> [q493] _embedded.associations[1].snp_effect_allele[0] rs74011415-G
+
+> [q494] _embedded.studies[0] initial_sample_size 415,311 British ancestry individuals replication_sample_size NA gxe false gxg false snp_count 11535925 imputed true pooled false accession_id GCST006701 full_summary_stats_available true user_requested true pubmed_id 29227965 platforms Affymetrix [11535925] (imputed) disease_trait Parental longevity (father's attained age) full_summary_stats http://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST006001-GCST007000/GCST006701 terms_of_license https://www.ebi.ac.uk/about/terms-of-use/
+
+Row 79. Pilling 2017's fathers' attained age at rs74011415 (q492, q493): G, β 0.0192 "decrease" (in the Martingale
+residual), P 1e-8, GCST006701; the fathers' study's initial sample, 415,311 British-ancestry individuals (q494). The
+catalog's other records at the lead and at rs4774495 are Pilling's combined parents (P 7e-6) and Wright's fathers'
+meta-analysis (P 5e-8). For row 79.
