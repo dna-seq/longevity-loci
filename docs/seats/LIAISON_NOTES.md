@@ -35,7 +35,7 @@ Own machinery before the kit: none for this seat (no scripts, hooks or watchers 
 
 - Compiler 0.8 adopted 2026-11-12 (the mechanical half: floors `>=0.8.4,<0.9`, caps lifted, `uv lock`, suite). Nothing to
   recompile yet: the module is a scaffold. The module seat re-validates it under 0.8 (handoff).
-- Kit at v0.1.192 for this seat on 2026-11-12 (the reload took). The plugin at v0.48.8 (pin moved 2026-11-12; just-dna 0.8 since v0.48.7), loaded after `/reload-plugins`.
+- Kit at v0.1.192 for this seat on 2026-11-12 (the reload took). The plugin at v0.48.9 (pin moved 2026-11-13; just-dna 0.8.5), loaded after `/reload-plugins`.
 - The plugin's pin binds only once the person drops `just-dna` from their user-level settings (their answer,
   2026-11-06; still present 2026-11-09). Until then, at each plugin release: `claude plugin update
   just-module-creator@just-dna --scope project` after moving the pin.

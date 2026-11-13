@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- just-dna 0.8.5 (floors `>=0.8.5`), with the module-creator plugin's pin moved to `v0.48.9`, which locks the same; `remote_derive` reports its passes, and lane lookups carry their licence terms.
 - D29.18–20: a Wright Table 9 AncestryDNA line counts as a replication only where the UK arm alone passes the table's filter (sweep owed); a genotype-model claim is tested whole (73 stays C); 74's sexes differ at P 2.9e-4.
 - D29.15–17: 74 is B with replication_failed (D25.1's exception); `sex_specific` needs a test of the difference; a row is tiered on its lead's own evidence, so 75 is C on its suggestive repeat, the overfit line at the locus setting nothing.
 - D29.14: a genotype-model claim (73 KL-VS, heterozygote advantage) is tiered, read and tested on its own model; per-allele lines are named, not scored.
