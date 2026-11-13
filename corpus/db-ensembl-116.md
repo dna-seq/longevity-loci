@@ -2403,3 +2403,12 @@ on all 69. For row 88.
 Row 87: the two Timmers peaks near the lead, rs76611716 and rs1011157, r² 0.20, D′ 0.50 in CEU (q670). Their 1000
 Genomes genotype records are cached beside the lead's (`genotypes-rs76611716.json`, `genotypes-rs1011157.json`). For
 row 87.
+
+## Reading 2026-11-13, record
+
+> [q671] populations[23] allele T allele_count 21553 frequency 0.317 population gnomADg:nfe
+
+> [q672] [0].transcript_consequences[0] transcript_id ENST00000269373 gene_symbol_source HGNC cdna_end 1466 cdna_start 1466 gene_id ENSG00000141560 hgnc_id HGNC:25700 variant_allele T gene_symbol FN3KRP biotype protein_coding impact MODIFIER strand 1
+
+rs1046896 (row 89): GRCh38 17:82,727,657 C/T, GRCh37 17:80,685,533, in FN3KRP's 3′ UTR (q672); T 0.317 in gnomAD's
+non-Finnish Europeans (q671). For row 89.

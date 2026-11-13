@@ -474,3 +474,9 @@ under APOE's within-FinnGen factor (0.99): power 0.91, heterogeneity P 0.0016; u
 FinnGen R11's death endpoint at rs940088 (q65): alt C (0.316 in Finns) β −0.0104 (SE 0.0080), P 0.19: C with fewer
 deaths, one-sided 0.096 C's way (derived), flat. Against Timmers' C +0.0171: APOE's within-FinnGen factor power 0.68,
 heterogeneity P 0.47; the mean factor power 0.22: no flag. For row 88.
+
+## Reading 2026-11-13, record
+
+> [q66] 17 82727657 C T rs1046896 FN3KRP 0.947215 0.0235514 0.000558895 0.00844198 0.264542 0.263413 0.264683
+
+FinnGen R11's death endpoint at rs1046896 (q66, row 89): alt T (0.26) β −0.0006 (SE 0.0084), P 0.95: flat. For row 89.

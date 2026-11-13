@@ -1838,3 +1838,11 @@ disease, so C raises it. For row 87.
 
 rs940088 (row 88): one association, Rosoff 2023's mvAge, effect allele T, β 0.0063 "unit decrease", P 2e-8 (q512):
 T lowers mvAge, so C is the healthier allele. For row 88.
+
+## Reading 2026-11-13, record
+
+> [q513] _embedded.associations[0] association_id 164772423 risk_frequency NR pvalue_description pvalue_mantissa 2 pvalue_exponent -21 multi_snp_haplotype false snp_interaction false range [0.056-0.085] beta 0.0706692 increase p_value 2e-21 accession_id GCST90314246 pubmed_id 38412862 first_author Suhre K ci_lower 0.056 ci_upper 0.085
+
+rs1046896 (row 89): eight associations, seven of them HbA1c (Wheeler, Soranzo, Chen, Hachiya, Wojcik and others; T
+raising it, P down to 4e-64) and one protein ratio (q513); no lifespan or longevity record, not even Torres'. For row
+89.

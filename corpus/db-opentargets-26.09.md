@@ -3755,3 +3755,19 @@ on C's. The longevity-class sets are the ones the row names (Zenin's healthspan,
 metabolic factor led by another variant (posterior 0.057) and He 2016's two age-related-disease sets (GCST004044 and
 GCST004045, q1041), led by rs7903146's neighbour 10_112996282_A_T, the lead at posterior 0.05 and 0.03, with no β:
 named, not counted (as at row 84). For row 63.
+
+## Reading 2026-11-13, record
+
+> [q1042] data.variant.credibleSets count 113
+
+> [q1043] data.variant.credibleSets.rows[47] studyLocusId 5e3f875ef3531a8b15b58379476c8632 pValueMantissa 3.256999969482422 pValueExponent -115 beta 0.0315268 finemappingMethod PICS
+
+> [q1044] data.variant.credibleSets.rows[47].study id GCST90256420 traitFromSource Glycated hemoglobin HbA1c levels studyType gwas
+
+> [q1045] data.variant.credibleSets.rows[47].locus.rows[0] posteriorProbability 0.4898974222771357
+
+> [q1046] data.variant.credibleSets.rows[47].l2GPredictions.rows[0] score 0.8729496598243713
+
+rs1046896 (row 89, 17_82727657_C_T): 113 credible sets (q1042), none of a lifespan-class study. It tops five HbA1c sets,
+T raising HbA1c (GCST90256420, +0.0315, P 3.3e-115, the lead at posterior 0.49, locus-to-gene FN3KRP 0.87; q1043-q1046),
+and eight QTL sets. For row 89.
