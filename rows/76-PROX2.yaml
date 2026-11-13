@@ -18,24 +18,26 @@ verdict_reason: >-
   0.62), flagging under the APOE factor only (borrowed from the 90th's ε4 line; power 0.99, P 0.0037; mean factor
   0.52, P 0.24). So `replication_failed` (D25.13, D26.11). It bars A. It does not make D: D25.1 needs no independent
   scoring-class study to pass, and one does. Wright 2019's AncestryDNA fathers at rs929579 (r² 0.97, D′ 1, its T with
-  the lead's C) lean the discovery's way, β +0.0050 (SE 0.0027) on the UK arm's sign, P 0.063, one-sided 0.032 raw and
+  the lead's C) lean the discovery's way: the UK arm is Pilling's fathers' line there digit for digit, counting C
+  (with the lead's T) with positive shorter, and AncestryDNA's C is +0.0050 (SE 0.0027), P 0.063, one-sided 0.032 raw and
   0.044 after Wright's genomic control (λ 1.182; derived), heterogeneity with the UK arm P 0.13. Wright has no line
   at the lead, so the proxy stands in (D29.3, D13). Its UK Biobank arm alone is P 2.3e-6, under Table 9's 2.5e-3
-  filter, so the line counts (D29.18). The rest is flat. LifeGen with UK Biobank (P 3.2e-5, −+: UK Biobank T
+  filter, so the line counts (D29.18). The mothers most likely disagree: Pilling's mothers at rs929579 are P 0.00019,
+  under the filter alone, yet Wright's mothers' table has no line there (pruning the caveat). The rest is flat. LifeGen with UK Biobank (P 3.2e-5, −+: UK Biobank T
   shorter-lived, LifeGen the other way) co-occurs with the discovery and does not replicate. FinnGen r11's death
   endpoint has C with slightly more deaths (β +0.010, SE 0.0077, P 0.18), its flag unknown (D28.1, D26.3). Park
   2025's UK Biobank own survival has C with fewer deaths (P 0.15; the deposit's columns swapped, as at APOE). Zenin
   2019's healthspan has C toward a later end (P 0.59). Healthspan 0, lifespan +, exceptional survival 0 (no look
   passes one-sided, and none reads against at p < 0.05). The Catalog holds Pilling's three lines alone. Open Targets
   26.09 places the lead in 102 credible sets (amino-acid levels, neuroticism and mood, blood counts, lung function,
-  molecular QTLs) at small posterior probabilities (0.005 to 0.03 in those read), leading none of them, so no route
+  molecular QTLs); of the 100 read it leads none, its highest posterior probability 0.058, so no route
   is shown: mechanism general ageing (D25.7), no pleiotropy token. No longevity set holds it, so C4 and E4 with no
   gene named; VEP places it in PROX2's 3′ UTR, named in prose. PROTECT:PRESENCE: the minor C protects (as rows 5 and
   74). The genotype shares are 1000 Genomes Europeans' (C 0.30: 49, 42 and 9 in 100). Not sex-specific (fathers and
   mothers both lean C's way at discovery); age of action unknown (Timmers' Figure 5 sheets do not hold the lead). C is
   0.21 in East Asians, untested there.
 axes:
-  tier: {value: B, cites: [pmid-29227965#q51, pmid-29227965#q52, pmid-29227965#q26, pmid-30642433#q313, pmid-30642433#q101, pmid-30642433#q12, pmid-31484785#q122, pmid-31484785#q6, pmid-31484785#q83, db-ensembl-116#q586, db-ensembl-116#q587, pmid-31413261#q179, pmid-31413261#q180, pmid-30642433#q91, pmid-30642433#q92, pmid-30642433#q314]}
+  tier: {value: B, cites: [pmid-29227965#q51, pmid-29227965#q52, pmid-29227965#q26, pmid-30642433#q313, pmid-30642433#q101, pmid-30642433#q12, pmid-31484785#q122, pmid-29227965#q53, pmid-29227965#q54, pmid-31484785#q6, pmid-31484785#q83, db-ensembl-116#q586, db-ensembl-116#q587, pmid-31413261#q179, pmid-31413261#q180, pmid-30642433#q91, pmid-30642433#q92, pmid-30642433#q314]}
   mechanism: {value: general_ageing, cites: [pmid-29227965#q51, db-gwascatalog-2026.10.29#q481, db-opentargets-26.09#q891]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -152,10 +154,10 @@ studies:
     proxy_rsid: rs929579
     effect_size: 0.005029
     effect_measure: beta
-    effect_unit: fathers' lifespan per allele at the proxy, on the UK arm's sign (positive = the discovery's side; the counted allele rides with the lead's C)
+    effect_unit: fathers' lifespan per C allele of rs929579 (C rides with the lead's T), on Pilling's Martingale scale as Wright pooled it (positive = shorter life)
     effect_allele: C
-    direction: protective
-    statistical_test: "Supplemental Table 9, the AncestryDNA arm of the fathers' meta-analysis (q122), raw P; one-sided 0.032, 0.044 after Wright's genomic control (λ 1.182, q83; derived). The UK Biobank arm +0.0109 (SE 0.0023), P 2.3E-06, under Table 9's 2.5e-3 filter (q6), so the line counts (D29.18); heterogeneity P 0.13. The two arms share a sign, and the UK arm is the discovery's side (Pilling's fathers at the lead P 1.9E-07, pmid-29227965#q51). rs929579 r² 0.97, D′ 1 in CEU (db-ensembl-116#q586), its T (0.32) with the lead's C (0.30) by frequency (db-ensembl-116#q587, q584)"
+    direction: risk
+    statistical_test: "Supplemental Table 9, the AncestryDNA arm of the fathers' meta-analysis (q122), raw P; one-sided 0.032, 0.044 after Wright's genomic control (λ 1.182, q83; derived). The UK Biobank arm +0.0109 (SE 0.0023), P 2.3E-06, under Table 9's 2.5e-3 filter (q6), so the line counts (D29.18); heterogeneity P 0.13. The UK arm is Pilling's fathers' line at rs929579 digit for digit (pmid-29227965#q53), so C, with the lead's T, is shorter-lived in both arms: the discovery's side. Pilling's mothers there P 0.00019 (pmid-29227965#q54) with no AncestryDNA mothers' line. rs929579 r² 0.97, D′ 1 in CEU (db-ensembl-116#q586), its T (0.32) with the lead's C (0.30) by frequency (db-ensembl-116#q587, q584)"
     curator: claude-opus-5-5
   - rsid: rs61978928
     note: pmid-31413261
