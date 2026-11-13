@@ -269,8 +269,8 @@ in the sources queried.
 
 ### The queries as written 2026-11-10
 
-Not yet swept. Their queries below are **new**, written 2026-11-10, and **not yet run or recall-checked**; the
-first run of each checks its recall on its track's CSV and may change them. All PubMed by entry date, as above.
+Written 2026-11-10 for tracks A–D and F–K; every one was run and recall-checked 2026-11-13 (each track's section
+above says what changed). All PubMed by entry date, as above.
 
 | Track | Subject | Sources the synthesis names | Covered to (as it states) |
 |---|---|---|---|
@@ -278,12 +278,12 @@ first run of each checks its recall on its track's CSV and may change them. All 
 | B | common-variant GWAS of longevity and lifespan | PubMed, Crossref, GWAS Catalog v2, PGS Catalog | 2026-11-03 (Catalog pulled); swept 2026-11-13, above |
 | C | rare and protective variants, centenarian sequencing | PubMed, Europe PMC, Crossref | unknown (scope "2015–2026"); swept 2026-11-13, above |
 | D | healthspan, ageing rate, heritability | PubMed, Crossref, GWAS Catalog v2 REST | unknown (scope "2018–2026"); swept 2026-11-13, above |
-| F | reporting to three audiences | PubMed, Crossref, product pages | unknown |
-| G | evaluating SNP-level associations | PubMed, Open Targets 26.09 | 2026-11-03 (titles checked) |
-| H | pleiotropy and context | PubMed, Open Targets | unknown |
-| I | concepts and architecture | PubMed | 2026-11-03 |
-| J | model organisms | PubMed, Europe PMC, GenAge Build 21, Open Genes API | 2026-11-03 |
-| K | definitions and age of action | PubMed, Timmers 2019 source data | unknown |
+| F | reporting to three audiences | PubMed, Crossref, product pages | unknown; swept 2026-11-13, above |
+| G | evaluating SNP-level associations | PubMed, Open Targets 26.09 | 2026-11-03 (titles checked); swept 2026-11-13, above |
+| H | pleiotropy and context | PubMed, Open Targets | unknown; swept 2026-11-13, above |
+| I | concepts and architecture | PubMed | 2026-11-03; swept 2026-11-13, above |
+| J | model organisms | PubMed, Europe PMC, GenAge Build 21, Open Genes API | 2026-11-03; swept 2026-11-13, above |
+| K | definitions and age of action | PubMed, Timmers 2019 source data | unknown; swept 2026-11-13, above |
 
 - **A-resource**: `(LongevityMap[tiab] OR "Human Ageing Genomic Resources"[tiab] OR HAGR[tiab] OR GenAge[tiab] OR "Open Genes"[tiab]) AND (database[tiab] OR resource[tiab] OR update[tiab])`
 - **B-gwas**: `("genome-wide association"[tiab] OR GWAS[tiab] OR "genome-wide meta-analysis"[tiab]) AND (longevity[tiab] OR lifespan[tiab] OR "parental lifespan"[tiab] OR "parental longevity"[tiab] OR centenarian*[tiab] OR "age at death"[tiab] OR healthspan[tiab])`;
