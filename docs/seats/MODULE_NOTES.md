@@ -54,6 +54,11 @@ export (the lead starts it today, to 0.8's studies/variants shape per `docs/FORM
   published there (published 23:20 UTC). Its content_signature equals the local compile's; the artifact digest
   differs (the registry compiles on polars 2.1.0, ours 1.44.2), as the compiler says a toolchain moves it.
   `published.json` was left on the first receipt by the tool; the second appended by hand from registry_get_module.
+- **Batch nine (76 to 87), 2026-11-13:** a trial build of the rows as they stood under the lead's read (a scratch
+  copy, nothing published) went green on 0.8.5: strict validate and strict compile, 82 loci, 246 variant rows, 422
+  studies, fully resolved, warnings unchanged, no new locus to author. The lead read the batch (D30, 83499c8); the
+  curator corrects 76 to 87 now. Next: once those corrections land, export to `module/`, enrich, strict, delete
+  the polygon's 2.0.0, republish, verify, append the receipt, report to the lead.
 - Plugin caches moved to the data volume (`remember_setting JUST_DNA_PIPELINES_CACHE_DIR`, user config, not the
   repo): `$HOME` is the small volume and Ensembl's lane is about 15 GB. Ensembl lane present 2026-11-12: ensembl-variation-2026_07_13-vep116.0, 14.5 GB (du shows 7.6 GB on BeeGFS).
 
