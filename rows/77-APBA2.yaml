@@ -1,25 +1,25 @@
 # The seed list's locus 77, APBA2 (15q13.1). Curated 2026-11-13. Lead rs77184423, the seed's only rsID (Gurinovich
 # 2021's NECS centenarian SNP, intronic in APBA2), the sister of rows 19, 31, 41 and 58 from the same paper. G is rare
-# in NECS (1.4 % of centenarians' alleles, 0.45 % of controls') and in Park's HRC-imputed UK Biobank (about 0.08 %),
-# but common in the sequenced panels (0.115 in 1000 Genomes Europeans, 0.064 in ALFA's); gnomAD has no frequency.
+# in NECS (1.4 % of centenarians' alleles, 0.45 % of controls'), in gnomAD's non-Finnish Europeans (0.27 %) and in
+# Park's HRC-imputed UK Biobank (about 0.08 %), but common in 1000 Genomes' Europeans (0.115) and ALFA's (0.064).
 locus_id: 77
 locus_name: APBA2
 verdict: re-tiered
 verdict_reason: >-
-  Tier C, from the seed's B, under R-TIER-2 (put to the lead, with D and with neutral states as the alternatives).
+  Tier C, from the seed's B, under R-TIER-2 (D30.5).
   Gurinovich 2021's GWAS of 1,320 NECS centenarians against 2,899 controls finds G more common among the centenarians
   (1.44 % against 0.45 % of alleles, score Z 5.72, P 1.08e-8): genome-wide at the paper's threshold, in one
   old-against-young case-control, which R-TIER-2 caps at C until an independent sample replicates it (D22.1). None
-  does. The paper's own replication in 480 Ashkenazi centenarians and about 800 controls (LGP) is on the same side
-  and not significant (0.03 against 0.02, P 0.4; "did not reach statistical significance"). Read as a test of NECS
-  (crude log OR 1.17, Woolf SE 0.26, from the printed frequencies), LGP's crude OR 1.52 has power about 1.00 and
-  heterogeneity P 0.038 at the printed digits, but across the one-digit rounding of LGP's frequencies the
-  heterogeneity P runs from 0.001 to 0.41 (derived), so whether it is a red flag is unknown and it sets nothing
-  (D26.3). The frequency depends on the source, as at row 19: NECS's controls (0.45 %), Park's HRC-imputed UK
+  does. The paper's own replication in the Longevity Genes Project (Table 2; 312 Ashkenazi centenarians and 638
+  controls, Table 1) is on the same side and not significant (0.03 against 0.02, printed P 0.4; "did not reach
+  statistical significance"). Its null is named, not counted as a powered test (D30.5): its controls carry G at about
+  2 %, some 25 times gnomAD's Ashkenazi frequency (0.08 %), so its calls at this rare variant are not shown reliable,
+  and its power is unknown (D26.3). No replication_failed. The frequency depends on the source, as at row 19: NECS's controls (0.45 %), Park's HRC-imputed UK
   Biobank (about 0.08 %) and gnomAD's non-Finnish Europeans (0.27 %; Ashkenazi Jews 0.08 %) see a rare allele;
   1000 Genomes' Europeans (11.5 %), ALFA's (6.4 %) and LifeGen's imputed cohorts (about 10 %) a common one. With the
   references disagreeing among themselves and the authors not questioning it, the source is not shown to be overfit
-  (D26.10's ground is reference samples agreeing against it); D is the alternative put to the lead. Lifespan 0:
+  (D26.10's ground is reference samples agreeing against it): gnomAD (0.27 %) agrees with NECS's controls, and
+  1000 Genomes and ALFA are the outliers, so not D (D30.5). Lifespan 0:
   LifeGen's LifeGen-only line (at the common frequency) is flat, P 0.78. Park 2025's own-survival deposit has a line
   (the rare allele with more deaths, P 0.064), but at about 0.08 % it is below Park's own MAF 0.1 % filter, an
   excluded line (D26.7, as rows 44 and 75), so it reads nothing. Deelen 2019, Zenin 2019 and FinnGen r11 hold no line.
@@ -29,10 +29,9 @@ verdict_reason: >-
   which is named in prose. The authors find APBA2 potentially very interesting (it stabilises the amyloid precursor
   protein), but nothing shows the effect runs through it: mechanism general ageing. PROTECT:PRESENCE (the rarer G
   protects in NECS). Neutral, protective and protective genotypes, as row 19; the genotype shares are NECS
-  controls' (G 0.45 %), the frequency the claim was made at. By 1000 Genomes about one European in five would carry
-  a "protective" G, which is why neutral states are offered to the lead.
+  controls' (G 0.45 %), the frequency the claim was made at; protective for G carriers, as row 19 (D30.5).
 axes:
-  tier: {value: C, cites: [pmid-33948810#q33, pmid-33948810#q34, pmid-33948810#q1, pmid-33948810#q2, pmid-33948810#q36, db-opentargets-26.09#q896, db-opentargets-26.09#q898, db-ensembl-116#q591, db-ensembl-116#q592, db-ensembl-116#q593, db-ensembl-116#q589, pmid-40021682#q79, pmid-40021682#q39, pmid-30642433#q315]}
+  tier: {value: C, cites: [pmid-33948810#q33, pmid-33948810#q34, pmid-33948810#q16, pmid-33948810#q1, pmid-33948810#q2, pmid-33948810#q36, db-opentargets-26.09#q896, db-opentargets-26.09#q898, db-ensembl-116#q591, db-ensembl-116#q592, db-ensembl-116#q593, db-ensembl-116#q589, pmid-40021682#q79, pmid-40021682#q39, pmid-30642433#q315]}
   mechanism: {value: general_ageing, cites: [pmid-33948810#q35, db-gwascatalog-2026.10.29#q483]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -89,5 +88,5 @@ studies:
     age_of: participant
     effect_allele: G
     direction: protective
-    statistical_test: "Score test in the NECS GWAS (Supplementary Table 1, q33; legend q3), score Z 5.72, no effect size printed; G 1.44 % of cases' alleles against 0.45 % of controls'; LGP replication G 0.03 against 0.02, P 0.4 (Table 1, q34); R-TIER-2 caps it at C"
+    statistical_test: "Score test in the NECS GWAS (Supplementary Table 1, q33; legend q3), score Z 5.72, no effect size printed; G 1.44 % of cases' alleles against 0.45 % of controls'; LGP replication (312 cases, 638 controls, Table 1, q16) G 0.03 against 0.02, P 0.4 (Table 2, q34), named, power unknown (D30.5, D26.3); R-TIER-2 caps it at C"
     curator: claude-opus-5-5
