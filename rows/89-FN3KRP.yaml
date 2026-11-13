@@ -8,16 +8,14 @@ verdict: re-tiered
 verdict_reason: >-
   Tier D, from the seed's C: a sub-genome-wide discovery that fails a powered test in its own ancestry (D26.8, a
   fortiori of D25.1). Torres 2021's exome-chip study of 1,212 German long-lived people (94 to 110 years) against 6,762
-  younger controls finds T less common among the long-lived (OR 0.78, 0.71-0.86, P 7.4e-7): exome-wide significant on
-  its chip, not genome-wide, so C is the longevity allele. The paper's own replications, in Europeans, go flat or the
+  younger controls finds T less common among the long-lived (OR 0.78, 0.71-0.86, P 7.4e-7): exome-wide significant on its chip (the authors' call; their gene-based threshold is 3.4e-6), not genome-wide, so C is the longevity allele. The paper's own replications, in Europeans, go flat or the
   other way: French (1,264 long-lived, 1,830 controls) OR 1.06, P 0.25; Danish (1,002 and 738) OR 1.00, P 0.99; the
   three-study meta-analysis OR 0.94, P 0.55, with heterogeneity Q P 1.0e-4, I² 89 %, "did not replicate". On the
   discovery's own case-control scale (no conversion), the French test has one-sided power 0.996 and heterogeneity P
   4.8e-5, the Danish 0.92 and 0.009: D21 red flags. No independent scoring-class study gives P < 0.05 for C: Timmers
   2019's million parents' lives lean the other way (T longer, P 0.16, one-sided 0.078 against C), Pilling's parents
   (P 0.65), Park 2025's own survival (P 0.73, its allele columns swapped), FinnGen R11's death endpoint (P 0.95),
-  Deelen 2019's 90th and 99th percentiles (P 0.74, 0.36, the 99th T's way) and Zenin 2019's healthspan (C's way, P 0.24)
-  are flat; nothing within 1 Mb in Timmers reaches 10⁻⁵, and Foote 2025's frailty deposits hold no line at the lead.
+  Zenin 2019's healthspan (C's way, P 0.24) are flat, and so is Deelen 2019 (90th and 99th percentiles P 0.74, 0.36, the 99th T's way), whose cohorts include CEPH's French and Danish samples, so it is not independent of Torres' replications; Wright 2019's AncestryDNA tables hold no parental line within 500 kb, only a viability line 236 kb away (rs9747676, r² 0.14 in CEU), which confirms and never replicates (D23); Rosoff 2023's mvAge tables hold no line; nothing within 1 Mb in Timmers reaches 10⁻⁵, and Foote 2025's frailty deposits hold no line at the lead.
   The seed's C was the suggestive single study; tested and contradicted, it is D. Outcome cells on a D row (D28.10):
   exceptional survival 0, the contradicted discovery giving no +, and no study gives one-sided P < 0.05 against C
   (D28.3); lifespan 0 (Timmers one-sided 0.078 against C, short of 0.05); healthspan 0. Mechanism ageing in general,
@@ -25,10 +23,10 @@ verdict_reason: >-
   3e-115, posterior up to 0.49, locus-to-gene FN3KRP 0.87), and FN3KRP deglycates proteins, which the authors offer as
   the mechanism; C raises FN3KRP expression in blood (Torres) and other tissues. Named; pleiotropy empty, since no
   longer-life allele is left to weigh it against. Descriptive. Causal C4 and effector E4, no gene named: no
-  lifespan-class credible set holds the lead; FN3KRP is named in prose. Every genotype neutral (D25.2); C/C, the
+  lifespan-class credible set holds the lead; FN3KRP is named in prose, and FN3K beside it (one HbA1c set's locus-to-gene names FN3K, and the lead tops expression QTL sets for FN3K, ENSG00000167363). Every genotype neutral (D25.2); C/C, the
   commonest, the reference. The evidence is European.
 axes:
-  tier: {value: D, cites: [pmid-33491046#q1, pmid-33491046#q2, pmid-33491046#q3, pmid-33491046#q4, pmid-33491046#q5, pmid-33491046#q6, pmid-33491046#q7, pmid-33491046#q8, pmid-30642433#q344, pmid-29227965#q78, pmid-40021682#q93, pmid-40021682#q32, db-finngen-r11#q66, pmid-31413261#q207, pmid-31413261#q208, pmid-30729179#q126, db-opentargets-26.09#q1042]}
+  tier: {value: D, cites: [pmid-33491046#q1, pmid-33491046#q10, pmid-33491046#q2, pmid-33491046#q3, pmid-33491046#q4, pmid-33491046#q5, pmid-33491046#q6, pmid-33491046#q7, pmid-33491046#q8, pmid-30642433#q344, pmid-29227965#q78, pmid-40021682#q93, pmid-40021682#q32, db-finngen-r11#q66, pmid-31413261#q207, pmid-31413261#q208, pmid-30729179#q126, db-opentargets-26.09#q1042]}
   mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q1043, db-opentargets-26.09#q1044, db-opentargets-26.09#q1045, db-opentargets-26.09#q1046, db-gwascatalog-2026.10.29#q513, pmid-33491046#q9]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -46,8 +44,8 @@ variants:
     phenotype: FN3KRP region, HbA1c, longevity
     trait_efo_id: EFO_0007796
     effect_allele: C
-    effect_size: 0.248
-    effect_measure: beta
+    effect_size: 1.28
+    effect_measure: OR
     stat_significance: suggestive
     direction: protective
     genotypes:
@@ -65,8 +63,7 @@ variants:
           You carry one copy of a less common version of this DNA position (about 43 in 100 people of European
           ancestry do). One study found it less often in very old people, but repeat studies in other European groups
           and much larger studies did not confirm it, so it is not counted for or against lifespan. The same version
-          goes with slightly higher HbA1c, a blood sugar marker, through how the protein is measured rather than
-          more diabetes, as far as is known.
+          goes with slightly higher HbA1c, a blood sugar marker.
       - genotype: T/T
         state: neutral
         conclusion: >-
@@ -79,7 +76,7 @@ studies:
     note: pmid-33491046
     quote: q3
     phenotype_class: EXTREME_SURVIVAL_CC
-    study_design: centenarian_case_control
+    study_design: age_threshold_case_control
     population: German long-lived individuals (94 to 110 years) against younger controls
     ancestry: [EUR]
     sample_size: 7974
@@ -98,7 +95,7 @@ studies:
     note: pmid-33491046
     quote: q4
     phenotype_class: EXTREME_SURVIVAL_CC
-    study_design: centenarian_case_control
+    study_design: age_threshold_case_control
     population: French long-lived individuals against younger controls
     ancestry: [EUR]
     sample_size: 3094
