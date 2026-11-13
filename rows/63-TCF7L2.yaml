@@ -49,8 +49,7 @@ verdict_reason: >-
   one-sided; Deelen leans the same way). Mechanism metabolism, with mech:t2d: C is
   the type 2 diabetes risk allele (P 3e-41), and the healthspan signal is diabetes's by Zenin's components. Broad:
   T also lowers chronic kidney disease (P 5e-28) and diabetic eye disease, and blood pressure runs both ways (T raises
-  diastolic, C systolic). A trade-off: T raises body mass index (P 4e-89) and obesity (PheCode 278.1, P 3e-23), the
-  known TCF7L2 pattern, so descriptive (D18.2, §4.2: trade-off loci get no actionability label). The net direction
+  diastolic, C systolic). A trade-off: T raises body mass index (P 4e-89) and obesity (PheCode 278.1, P 3e-23), the known TCF7L2 pattern, and, in sets read past the first page, localized osteoarthrosis (P 7.5e-9) and obstructive sleep apnoea (P 1.2e-9), while C raises nephropathy and peripheral vascular disease (all 845 sets read; He 2016's two age-related-disease sets, the lead at posterior 0.05 and 0.03 with no β, named, not counted), so descriptive (D18.2, §4.2: trade-off loci get no actionability label). The net direction
   is resolved, so the states are not neutral (§6.2, as row 57): every lifespan look-up, which weighs the diabetes
   and the weight together, leans to T, two of them past one-sided 0.05. Causal C2: Zenin's
   own SuSiE-inf healthspan set (Open Targets 26.09) holds the lead at PIP 0.445, rs34872471 at 0.432 and rs7903146 at
@@ -62,7 +61,7 @@ verdict_reason: >-
 axes:
   tier: {value: B, cites: [pmid-30729179#q86, pmid-30729179#q87, pmid-30729179#q88, pmid-30729179#q89, pmid-30642433#q276, pmid-30642433#q90, pmid-40021682#q63, pmid-40021682#q32, db-finngen-r11#q39, db-finngen-r11#q4, pmid-31413261#q157, pmid-31413261#q158, pmid-31413261#q82, pmid-30642433#q92, pmid-30729179#q12, pmid-30729179#q13, pmid-30729179#q29, pmid-37550455#q53, pmid-37550455#q54, pmid-37550455#q4, db-ensembl-116#q455, db-ensembl-116#q454, pmid-23804578#q1, pmid-23804578#q2, pmid-23804578#q3, pmid-23804578#q4, db-ensembl-116#q456]}
   mechanism: {value: metabolism, cites: [pmid-30729179#q88, db-gwascatalog-2026.10.29#q396, db-gwascatalog-2026.10.29#q397, db-gwascatalog-2026.10.29#q398, pmid-37550455#q53]}
-  pleiotropy: {values: ["mech:t2d", broad, tradeoff], cites: [db-gwascatalog-2026.10.29#q396, db-gwascatalog-2026.10.29#q398, db-gwascatalog-2026.10.29#q399, db-gwascatalog-2026.10.29#q400, db-gwascatalog-2026.10.29#q401, db-gwascatalog-2026.10.29#q405, db-gwascatalog-2026.10.29#q406, db-gwascatalog-2026.10.29#q407, db-gwascatalog-2026.10.29#q408, db-gwascatalog-2026.10.29#q409, db-gwascatalog-2026.10.29#q410, db-gwascatalog-2026.10.29#q402, db-gwascatalog-2026.10.29#q404, db-gwascatalog-2026.10.29#q414, db-gwascatalog-2026.10.29#q416, db-ensembl-116#q455]}
+  pleiotropy: {values: ["mech:t2d", broad, tradeoff], cites: [db-opentargets-26.09#q1033, db-opentargets-26.09#q1034, db-opentargets-26.09#q1035, db-opentargets-26.09#q1036, db-opentargets-26.09#q1037, db-opentargets-26.09#q1038, db-opentargets-26.09#q1039, db-opentargets-26.09#q1040, db-opentargets-26.09#q1041, db-gwascatalog-2026.10.29#q396, db-gwascatalog-2026.10.29#q398, db-gwascatalog-2026.10.29#q399, db-gwascatalog-2026.10.29#q400, db-gwascatalog-2026.10.29#q401, db-gwascatalog-2026.10.29#q405, db-gwascatalog-2026.10.29#q406, db-gwascatalog-2026.10.29#q407, db-gwascatalog-2026.10.29#q408, db-gwascatalog-2026.10.29#q409, db-gwascatalog-2026.10.29#q410, db-gwascatalog-2026.10.29#q402, db-gwascatalog-2026.10.29#q404, db-gwascatalog-2026.10.29#q414, db-gwascatalog-2026.10.29#q416, db-ensembl-116#q455]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
             cites: [pmid-23804578#q4, pmid-23804578#q3, db-ensembl-116#q456, pmid-30729179#q86, pmid-30729179#q88, db-finngen-r11#q39, pmid-30642433#q276, pmid-40021682#q63, pmid-31413261#q157, pmid-31413261#q158]}
@@ -85,7 +84,7 @@ variants:
     direction: protective
     negatives: >-
       The longer-life version, T, goes with less type 2 diabetes but with a somewhat higher body weight and more
-      obesity, and with slightly higher diastolic blood pressure.
+      obesity, slightly higher diastolic blood pressure, and slightly more joint osteoarthritis and sleep apnoea.
     genotypes:
       - genotype: T/T
         state: neutral

@@ -3723,3 +3723,35 @@ primary knee osteoarthritis with surgery (q1029, q1030); a diabetes factor (fact
 sign 0 (no direction): among them suicide attempt, smoking initiation, schizophrenia, opioid use disorder and
 myocardial infarction. The spread is broad (lipids, blood cells, liver enzymes, brain morphology, body mass, birth
 weight, psychiatric traits). For row 81.
+
+## Reading 2026-11-13, record
+
+> [q1033] data.variant.credibleSets.rows[14] studyLocusId d88600d9ec2827cd3e1d4f261900ebdf pValueMantissa 7.480000019073486 pValueExponent -9 beta -0.03246719013750137 finemappingMethod PICS
+
+> [q1034] data.variant.credibleSets.rows[14].study id GCST90480543 traitFromSource Osteoarthrosis, localized, primary (PheCode 740.11) studyType gwas
+
+> [q1035] data.variant.credibleSets.rows[61] studyLocusId 66f0ec25ca31ea8c6f6695c3e149a198 pValueMantissa 1.1699999570846558 pValueExponent -9 beta -0.028587456851912506 finemappingMethod PICS
+
+> [q1036] data.variant.credibleSets.rows[61].study id GCST90479998 traitFromSource Obstructive sleep apnea (PheCode 327.32) studyType gwas
+
+> [q1037] data.variant.credibleSets.rows[67] studyLocusId ca75f55e8b114efeb1567818e9efcff4 pValueMantissa 1.7039999961853027 pValueExponent -14 beta 0.011542275934448606 finemappingMethod SuSiE-inf
+
+> [q1038] data.variant.credibleSets.rows[67].study id GCST90476116 traitFromSource Nephritis and nephropathy in diseases classified elsewhere (PheCode 580.31) studyType gwas
+
+> [q1039] data.variant.credibleSets.rows[7] studyLocusId 7482a12b5716262320e9c6040e324af3 pValueMantissa 9.128999710083008 pValueExponent -11 beta 0.009473544407515895 finemappingMethod SuSiE-inf
+
+> [q1040] data.variant.credibleSets.rows[7].study id GCST90475996 traitFromSource Peripheral vascular disease studyType gwas
+
+> [q1041] data.variant.credibleSets.rows[3].study id GCST004044 traitFromSource Age-related diseases and mortality studyType gwas
+
+Row 63 (rs35198068, 10_112995025_T_C), the owed sweep: all 845 credible sets read in nine pages of 100
+(`variant-10_112995025_T_C.json` and `-p1` to `-p8`). The lead tops 99, all GWAS; the betas are for C, the diabetes
+allele. Beyond the first page they add diabetes, HbA1c, glucose and diabetes-medication sets (C raising them), weight,
+BMI, fat mass and LDL sets (C lowering them), and four disease sets the row had not named: localized primary
+osteoarthrosis, C −0.032, P 7.5e-9, posterior 0.20 (q1033, q1034), and obstructive sleep apnoea, C −0.029, P 1.2e-9,
+posterior 0.22 (q1035, q1036), both on T's side, the longer-lived allele, as the weight sets are; nephropathy, C
++0.012, P 1.7e-14, posterior 0.42 (q1037, q1038), and peripheral vascular disease, C +0.0095, P 9.1e-11 (q1039, q1040),
+on C's. The longevity-class sets are the ones the row names (Zenin's healthspan, Timmers 2020, mvAge), plus Foote's
+metabolic factor led by another variant (posterior 0.057) and He 2016's two age-related-disease sets (GCST004044 and
+GCST004045, q1041), led by rs7903146's neighbour 10_112996282_A_T, the lead at posterior 0.05 and 0.03, with no β:
+named, not counted (as at row 84). For row 63.
