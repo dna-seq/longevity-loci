@@ -9,7 +9,7 @@ verdict: re-tiered
 verdict_reason: >-
   Tier B, up from the seed's C (put to the lead, with C the alternative), row 51's shape: a genome-wide multivariate
   result with a co-occurring lifespan study (§4.5 as D16 reads it; D18.3, D27.3). Foote 2025's frailty factors are
-  genome-wide at the locus: multimorbidity (factor 3) P 2.0e-17 and disability (factor 6) P 3.0e-14, both at
+  genome-wide at the locus: multimorbidity (factor 3) P 2.0e-17 and disability (factor 6) P 3.0e-14 (its heterogeneity Q P 3.7e-4), both at
   rs11642015, 1.5 kb away and in complete LD with the lead (r² 1.00, D′ 1.00 in CEU and GBR), its C the lead's T, the
   less frail; Foote's deposits hold no line at the lead itself (all seven fetched), so the proxy stands in (D29.3), and
   both of Foote's Open Targets sets here are led by it. A Genomic SEM factor is multivariate (D27.3) and scores at B
@@ -30,12 +30,12 @@ verdict_reason: >-
   scale); Pilling's fathers' deposit, which Table 9's UK arm copies with C's sign, fixes it: both read T longer. A
   weaker AncestryDNA line, rs7190492 (r² 0.44 in CEU), is in both tables too. Deelen 2019 leans T's way, one-sided 0.037 at
   the 90th percentile (0.041 at the 99th, a subset of the same cases, so one look-up). Zenin 2019's
-  healthspan leans T's way short of nominal (P 0.061 after its genomic control); Park 2025's own survival is flat on
+  healthspan leans T's way, one-sided nominal (0.027; 0.031 after its genomic control); Park 2025's own survival is flat on
   T's side (P 0.14, its allele columns swapped, as the frequencies show); FinnGen R11's death endpoint leans against
   (C with slightly fewer deaths, P 0.25). None of these lifts B to A (a multivariate result cannot open A,
   D18.3), and nothing contradicts the locus, so not D. Lifespan +, exceptional survival + (Deelen's one look-up,
   one-sided), healthspan + on Foote's frailty factors, read for the healthspan cell as at row 51 (Zenin 2019's
-  healthspan leans the same way, P 0.061). Mechanism metabolism, through body weight: the lead tops BMI sets (posterior up to 0.85, C raising
+  healthspan leans the same way, one-sided 0.031 after genomic control). Mechanism metabolism, through body weight: the lead tops BMI sets (posterior up to 0.85, C raising
   BMI at P 2.4e-277), and C goes with more diabetes (P 1.5e-97), ischaemic heart disease (P 3.6e-16), higher HbA1c,
   glucose, CRP and blood pressure. Read over all 1,701 of its sets (it tops 380), two
   things run the other way: about 40 lipid sets in which C lowers LDL, total cholesterol and the IDL and very-small-VLDL
@@ -45,7 +45,10 @@ verdict_reason: >-
   beside modifiable (weight), on the ground that T has less ischaemic heart disease at the same variant. Of 21
   body-weight sets the lead tops, two run against the rest; a bone-density set prints no β. Pleiotropy
   mech:adiposity, broad, tradeoff. Causal C3: in Foote's factor 3 set, led by rs11642015, the lead sits at posterior 0.039 of 70.
-  Effector E2, FTO: locus-to-gene 0.986 on that set, with no cis-QTL colocalisation (its two are trans pQTLs). C is the minor allele at 43 %, so T/C, the commonest genotype, is the reference (§6.2): T/T protective, C/C
+  Effector E2, FTO: locus-to-gene 0.986 on that set, with no cis-QTL colocalisation (its two are trans pQTLs).
+  Claussnitzer 2015 names IRX3 and IRX5 for this variant: its C disrupts an ARID5B repressor motif and doubles their
+  expression in adipocyte precursors, shifting them from beige to white fat; named in prose, an experimental call for
+  the obesity signal, and E2 FTO stands on the association data. C is the minor allele at 43 %, so T/C, the commonest genotype, is the reference (§6.2): T/T protective, C/C
   risk, as row 8 states its nominal variant. Age of action unknown. The evidence is European.
 axes:
   tier: {value: B, cites: [pmid-40759756#q9, pmid-40759756#q10, pmid-40759756#q2, db-ensembl-116#q646, db-opentargets-26.09#q972, db-opentargets-26.09#q973, db-opentargets-26.09#q974, db-opentargets-26.09#q975, db-opentargets-26.09#q976, pmid-29030599#q18, pmid-30642433#q325, pmid-29227965#q68, pmid-29227965#q70, pmid-31484785#q129, pmid-31484785#q130, pmid-31484785#q131, pmid-31484785#q132, pmid-31484785#q6, pmid-29227965#q69, pmid-29227965#q45, db-ensembl-116#q629, db-ensembl-116#q630, db-ensembl-116#q631, db-ensembl-116#q632, pmid-31413261#q193, pmid-31413261#q194, pmid-30729179#q115, pmid-30729179#q59, pmid-40021682#q85, pmid-40021682#q32, db-finngen-r11#q59, pmid-30642433#q327, db-ensembl-116#q635]}
@@ -58,7 +61,7 @@ axes:
   context: {values: [eur_only_evidence], cites: [pmid-30642433#q325, pmid-31484785#q129]}
 flags:
   - {token: "causal:C3", cites: [db-opentargets-26.09#q972, db-opentargets-26.09#q973, db-opentargets-26.09#q974, db-opentargets-26.09#q977]}
-  - {token: "effector:E2", cites: [db-opentargets-26.09#q978, db-opentargets-26.09#q979]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q978, db-opentargets-26.09#q979, pmid-26287746#q1, pmid-26287746#q2]}
 variants:
   - rsid: rs1421085
     gene: FTO
@@ -221,13 +224,14 @@ studies:
     ancestry: [EUR]
     sample_size: 300447
     sample_unit: individuals
-    stat_significance: not_significant
+    stat_significance: nominal
     p_value: "0.0546"
     p_value_num: 0.0546
+    p_one_sided: 0.0273
     effect_size: 0.00951
     effect_measure: beta
     effect_unit: log hazard of the end of healthspan per C allele (positive = earlier)
     effect_allele: C
     direction: risk
-    statistical_test: "Zenin 2019's healthspan summary statistics, SE 0.00495, Z 1.922, -log10 P 1.263; about 0.061 after the paper's genomic control of 1.053 (q59, D26.1; derived)"
+    statistical_test: "Zenin 2019's healthspan summary statistics, SE 0.00495, Z 1.922, -log10 P 1.263; one-sided 0.027 on T's side, about 0.031 after the paper's genomic control of 1.053 (q59, D26.1; derived)"
     curator: claude-opus-5-5
