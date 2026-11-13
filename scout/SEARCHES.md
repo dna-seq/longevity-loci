@@ -142,7 +142,46 @@ summary statistics. The nine older ids (2007–2022: 17903295, 20834067, 2161251
 34662886, 34737426, 35748965) predate the tracks' window; they are the tracks' gaps, not new papers, and are listed
 here for the curator rather than queued. No new locus in the sources queried.
 
-## Tracks C–D, F–K
+## Track C: rare and protective variants, centenarian sequencing
+
+First swept 2026-11-13. The synthesis states its scope as "2015–2026" and no date it covered to, so the window
+below is the same as A's and B's; anything between its last search and 2026-10-20 is unknown, not covered. Queries,
+all PubMed by entry date:
+
+- **C-rare** (written 2026-11-10, unchanged): `(exome[tiab] OR "whole-genome sequencing"[tiab] OR "rare variant*"[tiab] OR "loss-of-function"[tiab] OR "protective variant*"[tiab]) AND (centenarian*[tiab] OR longevity[tiab] OR lifespan[tiab] OR "long-lived"[tiab] OR supercentenarian*[tiab])`
+- **C-protect** (new 2026-11-13; run once, then replaced by C-protect-2 for its noise): `(protective[tiab] OR "loss-of-function"[tiab] OR resistance[tiab] OR resilience[tiab] OR deficiency[tiab] OR heterozygo*[tiab]) AND (Christchurch[tiab] OR APOE[tiab] OR ANGPTL3[tiab] OR APOC3[tiab] OR ASGR1[tiab] OR PCSK9[tiab] OR Klotho[tiab] OR "KL-VS"[tiab] OR Reelin[tiab] OR "Laron"[tiab] OR GHR[tiab])`
+- **C-protect-2** (new 2026-11-13, for the next runs): C-protect `AND (carrier*[tiab] OR variant*[tiab] OR allele*[tiab] OR mutation*[tiab] OR heterozygo*[tiab] OR homozygo*[tiab]) NOT (mice[ti] OR mouse[ti] OR rat[ti] OR rats[ti])`. Recall 20/94 against C-protect's 21; hits in this window 18 against 50.
+- **C-mito** (new 2026-11-13): `("mitochondrial DNA"[tiab] OR mtDNA[tiab] OR haplogroup*[tiab]) AND (longevity[tiab] OR lifespan[tiab] OR mortality[tiab] OR centenarian*[tiab] OR frailty[tiab] OR penetrance[tiab])`
+- **C-monogenic** (new 2026-11-13): `("genotype-first"[tiab] OR penetrance[tiab] OR "pathogenic variant*"[tiab]) AND (mortality[tiab] OR survival[tiab] OR lifespan[tiab]) AND (exome[tiab] OR "whole-genome"[tiab] OR "whole genome"[tiab] OR biobank[tiab])`
+- **C-somatic-germline** (new 2026-11-13): `("clonal hematopoiesis"[tiab] OR "clonal haematopoiesis"[tiab] OR "loss of Y"[tiab] OR "Y chromosome loss"[tiab] OR "mosaic chromosomal"[tiab] OR "telomere length"[tiab] OR "mtDNA mutation*"[tiab] OR "mtDNA copy"[tiab]) AND (GWAS[tiab] OR "genome-wide"[tiab] OR "whole genome*"[tiab] OR "whole-genome"[tiab] OR germline[tiab] OR inherited[tiab])`
+
+### Recall
+
+On track C's 94 PMIDs (`C_rare_protective_evidence.csv`), 2026-11-13, cumulative in this order: B-gwas 15, C-rare 33,
+E-core 62, E-somatic-2 65, E-heritability 71, C-protect 82, C-mito 83, C-monogenic 85, C-somatic-germline 91. C-rare
+alone finds 27/94: track C is mostly disease-protective variants (APOE Christchurch, ANGPTL3, APOC3, KL-VS), clonal
+haematopoiesis and mtDNA, which name no longevity term. Left out: a single supercentenarian's clonal haematopoiesis
+(33184493), an ancient polymorphic deletion's evolutionary history (34559564), and a mosaic-Y-loss GWAS (31748747,
+"mosaic Y chromosome loss" matches none of the phrases).
+
+### Runs
+
+| Run | Window | Query | Hits | New | Queued |
+|---|---|---|---|---|---|
+| 2026-11-13 | 2026-10-20 → 2026-11-13 | C-rare | 10 | 7 | 0 |
+| 2026-11-13 | 2026-10-20 → 2026-11-13 | C-protect | 50 | 50 | 0 |
+| 2026-11-13 | 2026-10-20 → 2026-11-13 | C-mito | 14 | 5 | 0 |
+| 2026-11-13 | 2026-10-20 → 2026-11-13 | C-monogenic | 5 | 5 | 0 |
+| 2026-11-13 | 2026-10-20 → 2026-11-13 | C-somatic-germline | 15 | 13 | 0 |
+
+80 new records, in `scout/screened.md`, at title level. Most are animal or mechanistic work (mouse APOE Christchurch,
+Klotho reviews, atherosclerosis models). The human genetic ones are disease genetics with no longevity phenotype
+(APOE ε4 and amyloid, PCSK9 variants and LDL uptake, lipid-gene SNPs and cardiovascular risk, ApoE in type 2
+diabetes, monogenic disease reports) or germline studies of somatic traits (the Mount Sinai Million clonal
+haematopoiesis landscape, 42990510; telomere-length Mendelian randomization papers). None bears on a seed locus as
+longevity evidence. No new locus in the sources queried.
+
+## Tracks D, F–K
 
 Not yet swept. Their queries below are **new**, written 2026-11-10, and **not yet run or recall-checked**; the
 first run of each checks its recall on its track's CSV and may change them. All PubMed by entry date, as above.
@@ -151,7 +190,7 @@ first run of each checks its recall on its track's CSV and may change them. All 
 |---|---|---|---|
 | A | LongevityMap, HAGR, the v1 audit | PubMed, HAGR site and Build 3, GWAS Catalog v2, Open Genes, HALL | 2026-11-03 (live site checked); swept 2026-11-13, above |
 | B | common-variant GWAS of longevity and lifespan | PubMed, Crossref, GWAS Catalog v2, PGS Catalog | 2026-11-03 (Catalog pulled); swept 2026-11-13, above |
-| C | rare and protective variants, centenarian sequencing | PubMed, Europe PMC, Crossref | unknown (scope "2015–2026") |
+| C | rare and protective variants, centenarian sequencing | PubMed, Europe PMC, Crossref | unknown (scope "2015–2026"); swept 2026-11-13, above |
 | D | healthspan, ageing rate, heritability | PubMed, Crossref, GWAS Catalog v2 REST | unknown (scope "2018–2026") |
 | F | reporting to three audiences | PubMed, Crossref, product pages | unknown |
 | G | evaluating SNP-level associations | PubMed, Open Targets 26.09 | 2026-11-03 (titles checked) |

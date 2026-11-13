@@ -93,3 +93,87 @@ here is not new to a later run. Verdicts on titles, or on abstracts where `scout
 | pmid 42996239 | disease GWAS, not longevity | Genetic susceptibility to Lewy body disease and the distribution of Lewy pathology. |
 | pmid 42880286 (GCST90939774) | no association listed for age at death | A phenome-wide structural variant map from 467,152 UK Biobank genomes. |
 
+## Track C, run 2026-11-13 (window 2026-10-20 → 2026-11-13)
+
+| Record | Verdict | Title |
+|---|---|---|
+| pmid 43010707 | out of scope (animal, plant, clinical or non-genetic) | Non-Linear Epigenetic Aging Clocks: A Case Study in Atlantic Halibut (Hippoglossus hippoglossus). |
+| pmid 43009129 | out of scope (animal, plant, clinical or non-genetic) | Microglial, migrasomes promote high-fat diet-induced neurotoxicity. |
+| pmid 42995919 | out of scope (animal, plant, clinical or non-genetic) | Loss of the UFM-1 pathway enhances the ER Unfolded Protein Response under stress to improve proteostasis and o |
+| pmid 42995779 | out of scope (animal, plant, clinical or non-genetic) | Longitudinal single-cell transcriptional profiling identifies dynamic neurodegenerative mechanisms in Christia |
+| pmid 42990364 | out of scope (animal, plant, clinical or non-genetic) | A novel function of neuroligin 3 : Beyond sociality, Regulating lifespan in Drosophila. |
+| pmid 42979726 | out of scope (animal, plant, clinical or non-genetic) | NLP-12/Cholecystokinin signaling stabilizes sensory dendritic structure and protects neuronal healthspan in Ca |
+| pmid 42951966 | out of scope (animal, plant, clinical or non-genetic) | Perinatal elimination of genetically aberrant human cortical neurons. |
+| pmid 43018070 | out of scope (animal, plant, clinical or non-genetic) | Deletion of Yes-Associated Protein in Vascular Smooth Muscle Cells Alleviates Atherosclerosis. |
+| pmid 43011194 | out of scope (animal, plant, clinical or non-genetic) | Calpain-1 Deficiency Attenuates Atherosclerosis and Improves Cardiac Function Through Vascular-Cardiac Couplin |
+| pmid 43007869 | out of scope (animal, plant, clinical or non-genetic) | Mouse APOE Christchurch protects against Aβ-induced tau and α-synuclein aggregation. |
+| pmid 43007643 | disease or trait genetics, not longevity | Enlicitide: First Approval. |
+| pmid 43005445 | out of scope (animal, plant, clinical or non-genetic) | Hyperhomocysteinemia and Klotho in kidney-to-brain signaling: a metabolic stress-resilience framework for neur |
+| pmid 43005023 | disease or trait genetics, not longevity | Severe Atherogenic Dyslipidemia in Ataxia-Telangiectasia Despite Cachexia: Mechanistic Insights into Mitochond |
+| pmid 43004564 | out of scope (animal, plant, clinical or non-genetic) | The Role of DHA in PSD-95 Regulation and Postsynaptic Organization: Implications for Synaptic Function and Neu |
+| pmid 43001557 | out of scope (animal, plant, clinical or non-genetic) | How lipoproteins shape smooth muscle plasticity and cell state trajectories in atherosclerosis. |
+| pmid 43000884 | disease or trait genetics, not longevity | Rapid Apolipoprotein E ε4 Proteotyping for Alzheimer's Disease Anti-Amyloid Therapy Eligibility and Risk Asses |
+| pmid 42997314 | out of scope (animal, plant, clinical or non-genetic) | Adult inactivation of the Reln gene leads to disruption of cortical lamination and rhythmic activity. |
+| pmid 42996682 | out of scope (animal, plant, clinical or non-genetic) | Defining glioma ecosystem states with AI-driven single-cell and spatial multi-omics: immune-niche reprogrammin |
+| pmid 42995494 | out of scope (animal, plant, clinical or non-genetic) | Enhanced efficacy of gene therapy using a ubiquitous promoter to treat growth hormone-resistant Laron dwarfism |
+| pmid 42994993 | out of scope (animal, plant, clinical or non-genetic) | AgRP neurons as an integrative node linking the somatotropic and reproductive axes. |
+| pmid 42989674 | out of scope (animal, plant, clinical or non-genetic) | Klotho and The Kidney. |
+| pmid 42989102 | out of scope (animal, plant, clinical or non-genetic) | Proteomic insights in sepsis: advancing diagnosis, therapeutic targets, and the path to precision medicine. |
+| pmid 42984380 | out of scope (animal, plant, clinical or non-genetic) | Cell-type-specific FGF23 signalling in chronic kidney disease-associated cardiovascular injury. |
+| pmid 42982855 | out of scope (animal, plant, clinical or non-genetic) | APOE2 attenuates APOE4-associated amyloid pathology and related toxicity in a mouse model of Alzheimer's disea |
+| pmid 42981748 | out of scope (animal, plant, clinical or non-genetic) | ZeXieYin formula attenuates trimethylamine N-oxide- induced atherosclerosis and cognitive impairment by regula |
+| pmid 42973974 | out of scope (animal, plant, clinical or non-genetic) | Resistance Training and Respiratory and Immune-Related Outcomes in Older Adults: A Randomized Controlled Trial |
+| pmid 42963768 | out of scope (animal, plant, clinical or non-genetic) | Breed and housing system shape jejunal transcriptome and digesta microbiota in German Landrace and Saddleback  |
+| pmid 42960007 | out of scope (animal, plant, clinical or non-genetic) | YTHDF1 aggravates the progression of atherosclerosis by enhancing BRD4 mRNA stability and promoting EndMT tran |
+| pmid 42959057 | out of scope (animal, plant, clinical or non-genetic) | Regulatory mechanism of M2d tumor-associated macrophage-derived exosomal apolipoprotein E on platinum resistan |
+| pmid 42957970 | disease or trait genetics, not longevity | APOE ε4 gene dose drives a canonical and predictable topography of amyloid deposition. |
+| pmid 42954894 | out of scope (animal, plant, clinical or non-genetic) | Impaired NK Cell-Mediated Tumor Surveillance in Atherosclerosis Due to Plaque-Induced PPARα Dysfunction. |
+| pmid 42941212 | out of scope (animal, plant, clinical or non-genetic) | Lipid Metabolic Reprogramming in Thyroid Cancer: Systemic Biomarkers, Tumor Dependencies and Therapeutic Resis |
+| pmid 42939786 | disease or trait genetics, not longevity | A Nutrient-Dependent ANGPTL3-PCSK9-Containing Complex in HepG2 Cells and Human Plasma. |
+| pmid 42939201 | out of scope (animal, plant, clinical or non-genetic) | Allele and Genotype Frequencies of Production Trait SNPs in Crossbred Heifers of the Colombian Caribbean. |
+| pmid 42936110 | out of scope (animal, plant, clinical or non-genetic) | Neuroprotective roles of Klotho signaling in Huntington's disease: From molecular insights to clinical transla |
+| pmid 42935558 | disease or trait genetics, not longevity | Sex differences in sleep and memory relationships in older adults at risk for Alzheimer's disease. |
+| pmid 42934111 | out of scope (animal, plant, clinical or non-genetic) | [Jiaotaiwan improves lipid metabolism abnormalities in a mouse model of Alzheimer disease by regulating the AM |
+| pmid 42934097 | out of scope (animal, plant, clinical or non-genetic) | [PGAM5 deficiency attenuates atherosclerosis, enhances oxidized LDL uptake by liver sinusoidal endothelial cel |
+| pmid 42933077 | out of scope (animal, plant, clinical or non-genetic) | Immunopharmacology of proton pump inhibitors in Alzheimer's Disease: An evidence-weighted mechanistic review o |
+| pmid 42932959 | out of scope (animal, plant, clinical or non-genetic) | Fasting Hormonal and Inflammatory Profiles according to Liver Fibrosis Stages in Metabolic Dysfunction-Associa |
+| pmid 42932357 | disease or trait genetics, not longevity | Functional impact of PCSK9 variants on LDL uptake in a knockout hepatic model. |
+| pmid 42932094 | disease or trait genetics, not longevity | Targeting Apolipoprotein C-III in Hypertriglyceridemia: Implications for Pancreatitis and Cardiovascular risk. |
+| pmid 42928028 | disease or trait genetics, not longevity | Association of single nucleotide polymorphisms in lipid metabolism and vascular function genes with risk of ca |
+| pmid 42927732 | out of scope (animal, plant, clinical or non-genetic) | Glial lipid reprogramming in brain aging: Lipid identity, organelle stress, and redox vulnerability. |
+| pmid 42926699 | disease or trait genetics, not longevity | Clinical utility of plasma APOE proteotyping for Alzheimer's disease risk and prognosis. |
+| pmid 42926082 | out of scope (animal, plant, clinical or non-genetic) | Interleukin-17D deficiency attenuates atherosclerosis by diminishing macrophage inflammation and promoting M2  |
+| pmid 42924713 | out of scope (animal, plant, clinical or non-genetic) | Resistance Training Improves Respiratory Muscle Strength and Immune Response in Older Adults: A Randomized Cli |
+| pmid 42922812 | disease or trait genetics, not longevity | Returning APOE and pTau-217 Results: the eSMARTER Randomized Noninferiority Clinical Trial. |
+| pmid 42921609 | disease or trait genetics, not longevity | Genetic Variation of ApoE Gene in Type 2 Diabetes Mellitus: A Systematic Review and Meta-Analysis of Case-Cont |
+| pmid 42916680 | out of scope (animal, plant, clinical or non-genetic) | XL-MS and De Novo Protein Design Identified a Common Motif for TREM2 Binding. |
+| pmid 42914050 | disease or trait genetics, not longevity | Beyond LDL-C: A case-based review of complex Dyslipidemia. |
+| pmid 42908770 | disease or trait genetics, not longevity | Topography and risk factors of amyloid-related imaging abnormality: real-world data from 168 aducanumab-treate |
+| pmid 42908099 | disease or trait genetics, not longevity | Cerebral blood flow as a biomarker of resilience in cognitively unimpaired APOE ɛ4 carriers. |
+| pmid 42907908 | out of scope (animal, plant, clinical or non-genetic) | Candidate microRNA networks in cyclophosphamide-associated ovarian injury and premature ovarian insufficiency: |
+| pmid 42907679 | disease or trait genetics, not longevity | Real-world safety and efficacy of lecanemab in the treatment of Alzheimer's disease: a systematic review and m |
+| pmid 42907354 | disease or trait genetics, not longevity | Genetic Characterization of Familial and Multifactorial Chylomicronemia in Taiwanese Patients with Severe Hype |
+| pmid 42901717 | out of scope (animal, plant, clinical or non-genetic) | PCSK9 drives acquired resistance to anti-PD-1 immunotherapy through cystine metabolic reprogramming in lung ca |
+| pmid 43012634 | out of scope (animal, plant, clinical or non-genetic) | Engineering ATP import in yeast uncovers a synthetic route to extend cellular lifespan. |
+| pmid 43012576 | out of scope (animal, plant, clinical or non-genetic) | Circulating Cell-Free Mitochondrial DNA, Delirium, and Long-Term Cognitive Impairment in Critically Ill Adults |
+| pmid 42959457 | out of scope (animal, plant, clinical or non-genetic) | Defense and subversion: multilevel mitochondrial quality control and pathway‑specific mitophagy outcomes in My |
+| pmid 42927019 | out of scope (animal, plant, clinical or non-genetic) | THE KIDNEY AS A WINDOW INTO MAMMALIAN AGING: METABOLIC FRAILTY, MITOCHONDRIAL RESILIENCE, AND THE CONTINUUM FR |
+| pmid 42897356 | out of scope (animal, plant, clinical or non-genetic) | Established determinants of replicative lifespan, including mitochondrial DNA, play a limited role in early ye |
+| pmid 42990339 | disease or trait genetics, not longevity | Utilizing a Variant Prioritization Approach to Explore Genetic Variants in Cervical Cancer Cases among Malawia |
+| pmid 42974706 | disease or trait genetics, not longevity | Investigating the Distinctive Clinical and Genetic Landscape of PPA2 Deficiency. |
+| pmid 42973845 | disease or trait genetics, not longevity | Case report: Harel-Yoon syndrome (ATAD3A p.Arg528Trp) with relative cognitive preservation despite severe moto |
+| pmid 42927652 | disease or trait genetics, not longevity | Genetic Insights Into Cardiomyopathy With Restrictive Phenotype: Implications for Diagnosis and Personalized C |
+| pmid 42906362 | disease or trait genetics, not longevity | A late-onset slowly progressive dystrophic-myasthenic phenotype expands the clinical spectrum of TOR1AIP1-rela |
+| pmid 43014320 | out of scope (animal, plant, clinical or non-genetic) | MitoTALENs reduce mutant mitochondrial DNA carryover following pronuclear transfer. |
+| pmid 43011244 | somatic or germline-of-somatic (CH, telomere, mtDNA), not a longevity locus | Inherited bone marrow failure syndromes in childhood: clinical presentation, diagnostic approach, and contempo |
+| pmid 42990510 | somatic or germline-of-somatic (CH, telomere, mtDNA), not a longevity locus | The genetic, clinical and immune landscape of clonal hematopoiesis across adulthood in the multi-ancestry Moun |
+| pmid 42969465 | somatic or germline-of-somatic (CH, telomere, mtDNA), not a longevity locus | Telomere length as a systemic aging-related susceptibility marker for trigeminal neuralgia: Genetic evidence f |
+| pmid 42965988 | somatic or germline-of-somatic (CH, telomere, mtDNA), not a longevity locus | Suggestive genetic association between age-related biomarkers and hearing impairment: a mendelian randomizatio |
+| pmid 42953478 | somatic or germline-of-somatic (CH, telomere, mtDNA), not a longevity locus | Cellular origins and evolutionary dynamics of plasma cfDNA in solid tumors: integrating germline, tumor-derive |
+| pmid 42951630 | somatic or germline-of-somatic (CH, telomere, mtDNA), not a longevity locus | [Advances in the management of myelodysplastic neoplasms]. |
+| pmid 42949023 | somatic or germline-of-somatic (CH, telomere, mtDNA), not a longevity locus | Clonal Hematopoiesis of Indeterminate Potential and Bone Mineral Density in Cohorts from Trans-Omics for Preci |
+| pmid 42944605 | somatic or germline-of-somatic (CH, telomere, mtDNA), not a longevity locus | Telomere biology disorders: recognizing the underrecognized through the lens of clinical genetics. |
+| pmid 42934016 | somatic or germline-of-somatic (CH, telomere, mtDNA), not a longevity locus | [Telomere biology disorder]. |
+| pmid 42932250 | somatic or germline-of-somatic (CH, telomere, mtDNA), not a longevity locus | Molecular Underpinnings and Prevalence of Donor Cell-Derived Hematologic Neoplasms among Spanish Transplantati |
+| pmid 42926536 | out of scope (animal, plant, clinical or non-genetic) | Random mtDNA mutagenesis maps genotype-phenotype associations across metabolic contexts and lineages. |
+| pmid 42918647 | somatic or germline-of-somatic (CH, telomere, mtDNA), not a longevity locus | From ribosomal stress to clonal adaptation: Del(5q) MDS as a paradigmatic acquired ribosomopathy. |
