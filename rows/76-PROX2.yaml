@@ -12,9 +12,10 @@ verdict_reason: >-
   with power. LifeGen with UK Biobank's lives removed, Timmers 2019's own replication of the lead (Figure 2 source
   data, sample b), puts C on the wrong side: −0.05 years against +0.27 at discovery, one-sided P 0.73. Against the
   discovery's effect at that SE the one-sided power is 0.93 and the heterogeneity P 0.0011, both on Timmers' one scale
-  (derived): D21's red flag. Deelen 2019's 90th percentile is flat the other way (C −0.0071, SE 0.021, P 0.73), and
+  (derived): D21's red flag. It holds down to about 0.79 of the discovery's effect, where power binds (derived). Deelen 2019's 90th percentile is flat the other way (C −0.0071, SE 0.021, P 0.73), and
   calibrated from the discovery's both-parents effect (D25.3, D27.9) it flags under both factors (APOE factor power
-  1.00, heterogeneity P below 1e-4; mean factor power 0.84, P 0.007). The 99th leans the discovery's way (C +0.016, P
+  1.00, heterogeneity P below 1e-4; mean factor power 0.84, P 0.007); under the mean factor it holds only down to about 0.95 of the effect, under
+  APOE's to about 0.40 (derived), so a slightly smaller true effect would leave the LifeGen flag alone. The 99th leans the discovery's way (C +0.016, P
   0.62), flagging under the APOE factor only (borrowed from the 90th's ε4 line; power 0.99, P 0.0037; mean factor
   0.52, P 0.24). So `replication_failed` (D25.13, D26.11). It bars A. It does not make D: D25.1 needs no independent
   scoring-class study to pass, and one does. Wright 2019's AncestryDNA fathers at rs929579 (r² 0.97, D′ 1, its T with
