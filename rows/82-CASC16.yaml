@@ -30,8 +30,11 @@ verdict_reason: >-
   the lifespan evidence belongs to the lead, and rs4784227's cannot be told apart from it. The two are separate
   signals: Timmers 2020's set colocalises with none of rs4784227's breast-cancer sets, though the lead's own signal has
   a breast-cancer association of its own (below). So rs4784227 is named here and
-  not tiered; whether it should lead the row instead (A on Zenin's healthspan with Deelen's 90th) is put to the lead.
-  Mechanism metabolism, through body weight (put to the lead, with general ageing and descriptive the alternative):
+  not tiered; it has no lifespan signal of its own once the lead is accounted for, and goes to the scout's queue as a
+  healthspan candidate (D25.6, D30.8). The anchor is read at the paper's own P (D17.3, D30.2): a reviewer's
+  approximate conditional on rs4784227, taking the traits as independent, brings the lead's healthspan z from 4.79 to
+  1.85 and the combined test to about 0.002; named as context, not a correction of the paper's call.
+  Mechanism metabolism, through body weight (D30.8):
   of the 45 GWAS colocalisations of Timmers 2020's set at the lead, 37 reach H4 0.8, 18 of them body-mass and
   fat-mass sets, 11 brain morphology (cortical area, thickness, sulcal depth), then two systolic-pressure sets, type 2
   diabetes (0.90), gallstones, neuroticism, sodium, severe COVID-19 and one breast-cancer set; the lead's own BMI set
@@ -39,7 +42,8 @@ verdict_reason: >-
   H4 0.96, SuSiE-inf, P 1.8e-8) is led by rs3112581, 97 bp away, at r² 1.00 (CEU, GBR) with its G at C's frequency
   (0.449 in CEU), so G rides with C: G raises breast cancer (β +0.112) and BMI (+0.011, a set the lead's also
   colocalises with), so the longer-lived A goes with lower weight and less breast cancer. No harm is tied to A
-  (D18.1), and the label is modifiable through weight (D18.2), association on one signal, not a mediator test. Pleiotropy mech:adiposity and
+  (D18.1), and the label is modifiable through weight (D18.2, D30.8). The weight link is an association on one
+  signal, not a mediator test; on the reviewer's reading weight carries about a quarter of the effect. Pleiotropy mech:adiposity and
   broad. Causal C3: the lead tops Timmers 2020's PICS set at posterior 0.043 of 40 members. Effector E3, no gene named
   (D24): locus-to-gene gives TOX3 0.886, but the set's only cis-QTL colocalisations are an RBL2 transcript in
   monocytes (H4 0.97) and LINC03064 in testis (0.88), none of TOX3, so a rival holds half of them; TOX3, in whose
