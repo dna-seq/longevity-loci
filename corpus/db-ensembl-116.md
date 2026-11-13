@@ -2255,3 +2255,9 @@ same); its G at 0.449 in CEU (q627), the lead's C's frequency (q619): G rides wi
 Row 83. rs1421085 (q633): GRCh38 16:53,767,042, T/C, an intron variant of FTO (q634); T 0.568 in 1000 Genomes Europeans
 (q628), 0.545 in CEU (q629). rs10852521: r² 0.65, D′ 1.00 (CEU, q630); 0.70 (GBR, q631); its T 0.439 in CEU (q632).
 With D′ 1, T on the lead's T haplotypes gives r² 0.65, T on C's would give 0.94: T rides with T (derived). For row 83.
+
+## Reading 2026-11-13, record
+
+> [q635] [1] population_name 1000GENOMES:phase_3:CEU variation1 rs1421085 variation2 rs7190492 r2 0.435892 d_prime 0.999993
+
+Row 83: rs7190492, Wright's weaker AncestryDNA FTO line, is r² 0.44 to rs1421085 in CEU (q635). For row 83.

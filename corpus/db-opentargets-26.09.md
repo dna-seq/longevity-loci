@@ -3402,3 +3402,20 @@ to q931), diabetes mellitus (C +0.114, P 1.5e-97, posterior 0.46; q932, q933), i
 3.6e-16, posterior 0.06; q934, q935) and LDL cholesterol (C −0.021 on the inverse-normal scale, P 9.8e-43, posterior
 0.09; q936, q937); also waist and hip, body composition, HbA1c, glucose, CRP, blood pressure and heart failure, C on
 the higher side. So T goes with lower weight, less diabetes and heart disease, and slightly higher LDL. For row 83.
+
+## Reading 2026-11-13, record
+
+> [q938] data.variant.credibleSets.rows[57] studyLocusId 62e2ea7362adca771080be57eae5b1f7 pValueMantissa 2.117220878601074 pValueExponent -15 beta -0.02028992001349487 finemappingMethod SuSiE-inf
+
+> [q939] data.variant.credibleSets.rows[57].study id GCST90454345 traitFromSource Breast cancer (luminal A) studyType gwas
+
+> [q940] data.variant.credibleSets.rows[1] studyLocusId 794e210b5cf207b0f473efd18d731ea1 pValueMantissa 3.0280001163482666 pValueExponent -12 beta -0.0216958 finemappingMethod PICS
+
+> [q941] data.variant.credibleSets.rows[1].study id GCST90500022 traitFromSource Total cholesterol levels studyType gwas
+
+All 1,701 of rs1421085's credible sets read (nine pages), row 83: the lead tops 380. Among them about 40 lipid sets
+(LDL, total cholesterol, IDL and very-small-VLDL fractions) in which C, the higher-BMI allele, lowers the lipid, e.g.
+total cholesterol C −0.022, P 3.0e-12 (q940, q941), as LDL (q936, q937); and a breast-cancer set (luminal A,
+GCST90454345, SuSiE-inf, P 2.1e-15) with C −0.020 (q938, q939): C lowers it, so T, the longer-lived allele, raises
+breast cancer and LDL. Of 21 body-weight sets it tops, two run against the rest (UK Biobank weight, weight-to-muscle
+ratio); a bone-density set prints no β. For row 83.

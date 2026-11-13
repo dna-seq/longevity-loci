@@ -7,8 +7,10 @@ locus_id: 83
 locus_name: FTO
 verdict: kept
 verdict_reason: >-
-  Tier C, as the seed has it, row 8's shape: nothing at the variant reaches genome-wide significance for any lifespan
-  or healthspan phenotype, and §4.1's R-TIER-4 keeps an MR-only result out of A and B. The seed's ground is Joshi
+  Tier C, as the seed has it, by R-TIER-4, row 8's shape: nothing at the variant reaches genome-wide significance for
+  any lifespan or healthspan phenotype, nothing in the window even reaches suggestive (Timmers 2019's strongest line
+  within 250 kb is P 3.0e-4, the lead itself 3.9e-4, so the lead is the locus's lifespan peak), and R-TIER-4 keeps an
+  MR-only result out of A and B, which leaves C. The seed's ground is Joshi
   2017's Mendelian randomisation (one BMI unit about 7 months of life), a polygenic instrument over many BMI loci, not
   a per-variant result here. The variant's own lifespan evidence is nominal and points one way. Timmers 2019's
   million parents' lives: T longer-lived, P 3.9e-4, UK Biobank and LifeGen both on that side (Pilling's UK Biobank
@@ -16,31 +18,36 @@ verdict_reason: >-
   8, which filters on the AncestryDNA arm's own P (so the line passes on its own, D29.18), has rs10852521 (r² 0.65 in
   CEU, 0.70 in GBR, D′ 1, its T with the lead's T, phased in CEU where the other phase would give r² 0.94) with T and
   longer-lived fathers, genomic-control P 3.6e-5 (born 1886-1918) and 5.7e-4 (1886-1940), and T commoner among older
-  customers (P 8.3e-5, viability, confirmation only). Wright's two tables print that one β under complementary labels
-  (Table 8's A, Table 9's G); Pilling's fathers' deposit, which Table 9's UK arm copies with C's sign, fixes it: both
-  read T longer. Deelen 2019 leans T's way at both percentiles, one-sided 0.037 (90th) and 0.041 (99th). Zenin 2019's
+  customers (P 8.3e-5, viability, confirmation only). Wright's two tables print that one β under different labels, each the
+  complement of the allele it counts (Table 8's A for T, in lifespan orientation; Table 9's G for C, on Pilling's
+  scale); Pilling's fathers' deposit, which Table 9's UK arm copies with C's sign, fixes it: both read T longer. A
+  weaker AncestryDNA line, rs7190492 (r² 0.44 in CEU), is in both tables too. Deelen 2019 leans T's way, one-sided 0.037 at
+  the 90th percentile (0.041 at the 99th, a subset of the same cases, so one look-up). Zenin 2019's
   healthspan leans T's way short of nominal (P 0.061 after its genomic control); Park 2025's own survival is flat on
   T's side (P 0.14, its allele columns swapped, as the frequencies show); FinnGen R11's death endpoint leans against
   (C with slightly fewer deaths, P 0.25). B's first condition (genome-wide) fails, the nominal results agree in two
-  independent samples, and nothing contradicts them, so not D. Lifespan +, exceptional survival + (Deelen one-sided),
-  healthspan 0. Mechanism metabolism, through body weight: the lead tops BMI sets (posterior up to 0.85, C raising
+  independent samples, and nothing contradicts them, so not D. Lifespan +, exceptional survival + (Deelen's one look-up,
+  one-sided), healthspan 0. Mechanism metabolism, through body weight: the lead tops BMI sets (posterior up to 0.85, C raising
   BMI at P 2.4e-277), and C goes with more diabetes (P 1.5e-97), ischaemic heart disease (P 3.6e-16), higher HbA1c,
-  glucose, CRP and blood pressure. One record runs the other way: C lowers LDL cholesterol (inverse-normal β −0.021,
-  P 9.8e-43), so the longer-lived T raises it slightly. LDL is an established risk factor, which D18.1 counts as
-  quoted harm: tradeoff, and with it actionability descriptive, not modifiable through weight (D18.2); put to the lead
-  beside modifiable (weight), on the ground that T's lower heart disease outweighs the LDL record. Pleiotropy
+  glucose, CRP and blood pressure. Read over all 1,701 of its sets (it tops 380), two
+  things run the other way: about 40 lipid sets in which C lowers LDL, total cholesterol and the IDL and very-small-VLDL
+  fractions (LDL inverse-normal β −0.021, P 9.8e-43), and a breast-cancer set (luminal A, C −0.020, P 2.1e-15). So the
+  longer-lived T raises LDL slightly and breast cancer slightly. A disease and an established risk factor, quoted:
+  D18.1's tradeoff, and with it actionability descriptive, not modifiable through weight (D18.2). Put to the lead
+  beside modifiable (weight), on the ground that T has less ischaemic heart disease at the same variant. Of 21
+  body-weight sets the lead tops, two run against the rest; a bone-density set prints no β. Pleiotropy
   mech:adiposity, broad, tradeoff. Causal C4 and effector E4, no gene named: no credible set of a lifespan-class study
   holds the lead (none of eleven longevity studies queried), as row 69; FTO, in whose intron it sits, is named in
   prose. C is the minor allele at 43 %, so T/C, the commonest genotype, is the reference (§6.2): T/T protective, C/C
   risk, as row 8 states its nominal variant. Age of action unknown. The evidence is European.
 axes:
-  tier: {value: C, cites: [pmid-29030599#q18, pmid-30642433#q325, pmid-29227965#q68, pmid-29227965#q70, pmid-31484785#q129, pmid-31484785#q130, pmid-31484785#q131, pmid-31484785#q132, pmid-31484785#q6, pmid-29227965#q69, pmid-29227965#q45, db-ensembl-116#q629, db-ensembl-116#q630, db-ensembl-116#q631, db-ensembl-116#q632, pmid-31413261#q193, pmid-31413261#q194, pmid-30729179#q115, pmid-30729179#q59, pmid-40021682#q85, pmid-40021682#q32, db-finngen-r11#q59]}
+  tier: {value: C, cites: [pmid-29030599#q18, pmid-30642433#q325, pmid-29227965#q68, pmid-29227965#q70, pmid-31484785#q129, pmid-31484785#q130, pmid-31484785#q131, pmid-31484785#q132, pmid-31484785#q6, pmid-29227965#q69, pmid-29227965#q45, db-ensembl-116#q629, db-ensembl-116#q630, db-ensembl-116#q631, db-ensembl-116#q632, pmid-31413261#q193, pmid-31413261#q194, pmid-30729179#q115, pmid-30729179#q59, pmid-40021682#q85, pmid-40021682#q32, db-finngen-r11#q59, pmid-30642433#q327, db-ensembl-116#q635]}
   mechanism: {value: metabolism, cites: [db-opentargets-26.09#q929, db-opentargets-26.09#q930, db-opentargets-26.09#q931, db-opentargets-26.09#q932, db-opentargets-26.09#q933, db-opentargets-26.09#q934, db-opentargets-26.09#q935, pmid-29030599#q18]}
-  pleiotropy: {values: ["mech:adiposity", broad, tradeoff], cites: [db-opentargets-26.09#q927, db-opentargets-26.09#q929, db-opentargets-26.09#q930, db-opentargets-26.09#q932, db-opentargets-26.09#q933, db-opentargets-26.09#q934, db-opentargets-26.09#q935, db-opentargets-26.09#q936, db-opentargets-26.09#q937]}
+  pleiotropy: {values: ["mech:adiposity", broad, tradeoff], cites: [db-opentargets-26.09#q927, db-opentargets-26.09#q929, db-opentargets-26.09#q930, db-opentargets-26.09#q932, db-opentargets-26.09#q933, db-opentargets-26.09#q934, db-opentargets-26.09#q935, db-opentargets-26.09#q936, db-opentargets-26.09#q937, db-opentargets-26.09#q938, db-opentargets-26.09#q939, db-opentargets-26.09#q940, db-opentargets-26.09#q941]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "+",
             cites: [pmid-30729179#q115, pmid-30642433#q325, pmid-31484785#q129, pmid-31484785#q130, pmid-40021682#q85, db-finngen-r11#q59, pmid-31413261#q193, pmid-31413261#q194]}
-  actionability: {label: descriptive, cites: [db-opentargets-26.09#q936, db-opentargets-26.09#q937]}
+  actionability: {label: descriptive, cites: [db-opentargets-26.09#q936, db-opentargets-26.09#q937, db-opentargets-26.09#q938, db-opentargets-26.09#q939]}
   context: {values: [eur_only_evidence], cites: [pmid-30642433#q325, pmid-31484785#q129]}
 flags:
   - {token: "causal:C4", cites: [db-opentargets-26.09#q927, db-opentargets-26.09#q928]}
@@ -56,7 +63,8 @@ variants:
     stat_significance: nominal
     direction: protective
     negatives: >-
-      The longer-life version, T, also goes with slightly higher LDL cholesterol, though with less heart disease.
+      The longer-life version, T, also goes with slightly higher LDL cholesterol and a slightly higher risk of one
+      common type of breast cancer, though with less heart disease and diabetes.
     genotypes:
       - genotype: T/T
         state: protective
@@ -78,7 +86,7 @@ variants:
         conclusion: >-
           You carry two copies of the version of this DNA position that goes with higher body weight (about 19 in
           100 people of European ancestry do). In large studies parents of carriers lived a little less long, and it
-          also goes with more diabetes and heart disease. Keeping a healthy weight is the part within reach. No
+          also goes with more diabetes and heart disease. No
           single study found it beyond doubt, so this is a possible finding, not a settled one. The effect is small
           and it is a tendency, not destiny.
 studies:
