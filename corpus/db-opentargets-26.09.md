@@ -3651,3 +3651,31 @@ pressure, insomnia, walking pace, intelligence and brain volumes. Seventeen are 
 0.027 (q1004-q1007); heart failure, T −0.0253, P 1.2e-10 (q1008, q1009); ischaemic heart disease, T −0.040, P 1.3e-12
 (q1010, q1011). So the lead's C goes with lower BMI and less heart disease. Locus-to-gene names IGF2BP1 in nearly all
 (0.48 to 0.72), B4GALNT2 below 0.07. For row 88.
+
+## Reading 2026-11-13, record
+
+> [q1012] data.variant.credibleSets.rows[61] studyLocusId f5cb07efa96dfe126e7228c5fc6c8b2a pValueMantissa 2.260999917984009 pValueExponent -9 beta -0.06528333177349593 finemappingMethod PICS
+
+> [q1013] data.variant.credibleSets.rows[61].study id GCST90668071 traitFromSource T2D (Phecode: 250.2) studyType gwas
+
+> [q1014] data.variant.credibleSets.rows[21] studyLocusId 5f63d48aaee3368bcab80459b58274cf pValueMantissa 2.759999990463257 pValueExponent -9 beta -0.048790164169432056 finemappingMethod PICS
+
+> [q1015] data.variant.credibleSets.rows[21].study id GCST90479543 traitFromSource Coronary artery / coronary heart disease (including heart attack, angina) studyType gwas
+
+> [q1016] data.variant.credibleSets.rows[28] studyLocusId 844889cae8378689e9feadb0106b2f9d pValueMantissa 1.3580000400543213 pValueExponent -9 beta 0.020074740338067 finemappingMethod SuSie
+
+> [q1017] data.variant.credibleSets.rows[28].study id FINNGEN_R12_FG_CVD traitFromSource Cardiovascular diseases (excluding rheumatic etc) studyType gwas
+
+Row 88, the other set leads phased against rs940088 in CEU (1000 Genomes genotype records, `genotypes-*.json`;
+haplotype counts derived): the lead's C rides with the alt allele of 17_49014058_C_T (rs9906944; 63 of 69 C
+haplotypes), 17_49017679_G_A (rs11079852; 68), 17_49013423_C_T (rs11079849; 62), 17_49046061_T_C (rs4643373; 62),
+17_49058513_G_A (rs68085814; 62), 17_49034385_T_C (rs144170248; 68) and 17_49016036_T_C (rs4794018; 68), as with
+17_49063432_C_T (rs11655587; 69, q1004-q1011). Every disease or risk-factor β of those leads' sets is negative for
+the alt allele: type 2 diabetes (rs9906944's T, −0.065, P 2.3e-9, q1012, q1013), coronary disease (rs11079849's T,
+−0.049, P 2.8e-9, q1014, q1015), HbA1c, diabetic retinopathy, kidney failure, peripheral vascular disease, angina,
+C-reactive protein, systolic blood pressure, insomnia, fat mass and waist; intelligence, walking pace and brain
+volumes positive. So C, the healthier allele, sits on the less-disease side of each. One set runs the other way:
+FinnGen R12's cardiovascular diseases, led by rs35929648 (17_48925181_A_G, 143 kb away), G +0.020, P 1.4e-9 (q1016,
+q1017), L2G SNF8 and UBE2Z; G rides with C on 20 of 69 C haplotypes against 14 of 129 T haplotypes, r² about 0.05
+(derived), the lead's posterior there 0.0009: a separate signal, named. rs9912906 (17_49027070_A_T, an HbA1c set)
+has no genotype record Ensembl returns, so it is unphased. For row 88.

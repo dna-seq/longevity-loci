@@ -8,43 +8,46 @@ locus_name: B4GALNT2P1
 verdict: kept
 verdict_reason: >-
   Tier B, as the seed has it: genome-wide only in a multivariate result, with a co-occurring lifespan study (D16,
-  D18.3); row 52's shape, with an independent replication of the lifespan direction. Rosoff 2023's mvAge is
-  genome-wide at the lead, a novel locus: C (the minor allele) on the healthier side, T β −0.0063 (SE 0.0011), P
-  2.3e-8, heterogeneity across its inputs Q P 0.86 (Supplementary Tables 6 and 7, Table 1). The inputs lean to C:
-  Timmers 2019's million parents' lives, C longer, P 3.8e-5 ("--" for T in UK Biobank and LifeGen), the co-occurring
-  lifespan study; nothing within 1 Mb in Timmers reaches 10⁻⁶. Zenin 2019's healthspan, C healthier, P 1.5e-4 (2.2e-4
-  after genomic control); frailty (reverse coded) P 0.0030, read in Rosoff's table only; Deelen, itself an input, flat
-  on C's side. In UK Biobank the rest agrees: Pilling's parents C longer, P 0.0024 (inside Timmers); Park 2025's own
-  survival C with fewer deaths, P 0.035 (its allele columns swapped, as the frequencies show), co-occurring. Outside it:
-  Wright 2019's AncestryDNA mothers at rs9899580, 39 kb away and r² 0.98 to the lead (the lead's C rides with its G,
-  the longer-lived allele, on 68 of 69 C haplotypes in CEU), AncestryDNA arm P 0.0021, one-sided 0.0018 after the
-  mothers' genomic control, its UK arm P 1.5e-4 so the line is not selected by Table 9's filter (D29.18), and Wright
-  has no line at the lead (D29.3): an independent nominal replication of the lifespan direction. FinnGen R11's death
-  endpoint leans C's way, flat (one-sided 0.096); Deelen's 90th and 99th lean C's way, flat (one-sided 0.21, 0.26),
-  the 90th a flag under APOE's factor only (power 0.99, heterogeneity P 0.025; the mean factor power 0.49, P 0.45),
-  so no red flag (D21, D25.3). It stays B because the only genome-wide result is mvAge, which does not meet tier A's
-  first criterion (D18.3); Timmers' own P is nominal. Foote 2025's frailty factors lean C's way and are not
-  genome-wide (multimorbidity T frailer, P 3.3e-6; cognition P 1.7e-6), multivariate, scoring nothing (D27.3).
-  Healthspan + (Zenin, beside the co-occurring lifespan study, D16), lifespan + (Timmers, replicated in AncestryDNA),
-  exceptional survival 0 (Deelen flat). Mechanism ageing in general (D25.7): the lead sits in 66 credible sets and
-  tops none (posterior at most 0.04), most of them adiposity and cardiometabolic; seventeen are led by rs11655587 (r²
-  0.84, its T riding with the lead's C), whose T lowers BMI (P 7.6e-21), heart failure (P 1.2e-10) and ischaemic heart
-  disease (P 1.3e-12). So C goes with leaner bodies and less heart disease, and also with type 2 diabetes, C-reactive
-  protein, insomnia, cognition and brain-volume sets; nothing shows the lifespan effect runs through weight. Pleiotropy
-  mech:adiposity, mech:cvd and broad; no harm on C's side (D18.1), so no trade-off. Descriptive: D18.2's `modifiable`
-  is for a locus acting through weight, and here the association with weight is shown, the mediation is not; put to
-  the lead. Causal C4 and effector E4, no gene named: no lifespan-class or mvAge credible set holds the lead in Open
-  Targets, and Rosoff's own fine-mapping gives it SuSiE 0.157 and FINEMAP 0.119 outside both credible sets;
-  locus-to-gene names IGF2BP1 (0.48 to 0.72) in the adiposity and cardiometabolic sets, named in prose. T/T, about 46
-  in 100 Europeans, is the commonest genotype and the reference (§6.2); C/T and C/C protective, PROTECT:PRESENCE. Age
-  of action unknown. The evidence is European.
+  D18.3); row 52's shape. Rosoff 2023's mvAge is genome-wide at the lead, a novel locus: C (the minor allele) on the
+  healthier side, T β −0.0063 (SE 0.0011), P 2.3e-8, heterogeneity across its inputs Q P 0.86 (Supplementary Tables 6
+  and 7, Table 1). The inputs lean to C: Timmers 2019's million parents' lives, C longer, P 3.8e-5 ("--" for T in UK
+  Biobank and LifeGen), the co-occurring lifespan study; nothing within 1 Mb in Timmers reaches 10⁻⁶, so no stronger
+  lifespan line to condition on (D30.2). Zenin 2019's healthspan, C healthier, P 1.5e-4 (2.2e-4 after genomic
+  control); frailty (reverse coded) P 0.0030, read in Rosoff's table only; Deelen, itself an input, flat on C's side.
+  In UK Biobank the rest agrees: Pilling's parents C longer, P 0.0024 (inside Timmers); Park 2025's own survival C
+  with fewer deaths, P 0.035 (its allele columns swapped, as the frequencies show), co-occurring. Outside it, Wright
+  2019 has no line at the lead. Its Table 9 mothers hold rs9899580, 39 kb away and r² 0.98 (the lead's C rides with
+  its longer-lived G on 68 of 69 C haplotypes in CEU), AncestryDNA arm P 0.0021, one-sided 0.0018 after genomic
+  control on C's side; but with that arm at z = 0 the deflated meta is P 0.0059, above the table's 2.5e-3, so the line
+  was selected by its own AncestryDNA arm and is named, not counted (D30.1). Table 8, filtered on AncestryDNA alone,
+  holds rs11079849 (r² 0.65, its T with the lead's C), mothers, P 6.4e-4 after genomic control, the same way: a proxy
+  at r² 0.65, named, not counted. FinnGen R11's death endpoint leans C's way, flat (one-sided 0.096); Deelen's 90th
+  and 99th lean C's way, flat (one-sided 0.21, 0.26). The red flag is unknown (D29.11): D21 scales from the
+  discovery's own effect, and mvAge's has no conversion to Deelen's or FinnGen's scales (scaled from Timmers' β
+  instead, the 90th would flag under APOE's factor only, power 0.99, heterogeneity P 0.025; the mean factor power 0.49,
+  P 0.45). Foote 2025's frailty factors lean C's way and are not genome-wide in the window read (multimorbidity T
+  frailer, P 3.3e-6; cognition P 1.7e-6), multivariate, scoring nothing (D27.3). Healthspan + (Zenin, beside the
+  co-occurring lifespan study, D16), lifespan + (Timmers), exceptional survival 0 (Deelen flat). Mechanism ageing in
+  general (D25.7): the lead sits in 66 Open Targets credible sets and tops none (posterior at most 0.04), most of them
+  adiposity and cardiometabolic. Phased in CEU against eight of their lead variants, the lead's C rides with the
+  allele that lowers BMI (P 7.6e-21), type 2 diabetes (P 2.3e-9), HbA1c, coronary disease (P 2.8e-9), heart failure,
+  ischaemic heart disease, peripheral vascular disease, C-reactive protein, blood pressure and insomnia, and raises
+  intelligence and walking pace; the one set the other way, FinnGen's cardiovascular diseases (rs35929648, 143 kb
+  away, r² about 0.05), is a separate signal, named. Nothing shows the lifespan effect runs through weight. Pleiotropy
+  mech:adiposity, mech:diabetes, mech:cvd and broad, as row 29 reads a lead inside sets it does not top; no harm on
+  C's side (D18.1), so no trade-off. Descriptive: D18.2's `modifiable` is for a locus acting through weight, and here
+  the weight association is shown, the mediation is not; put to the lead. Causal C4 and effector E4, no gene named: no
+  lifespan-class or mvAge credible set holds the lead in Open Targets, and Rosoff's own fine-mapping gives it SuSiE
+  0.157 and FINEMAP 0.119 outside both credible sets; locus-to-gene names IGF2BP1 (0.48 to 0.72) in the adiposity and
+  cardiometabolic sets, named in prose. T/T, about 46 in 100 Europeans, is the commonest genotype and the reference
+  (§6.2); C/T and C/C protective, PROTECT:PRESENCE. Age of action unknown. The evidence is European.
 axes:
   tier: {value: B, cites: [pmid-37550455#q71, pmid-37550455#q72, pmid-37550455#q74, pmid-37550455#q2, pmid-30642433#q340, pmid-30729179#q124, pmid-29227965#q76, pmid-40021682#q90, pmid-40021682#q32, pmid-31484785#q139, pmid-30642433#q341, db-ensembl-116#q666, pmid-31413261#q205, pmid-31413261#q206, db-finngen-r11#q65, pmid-40759756#q18, pmid-40759756#q19, db-gwascatalog-2026.10.29#q512]}
   mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q1003, db-opentargets-26.09#q1004, db-opentargets-26.09#q1005, db-opentargets-26.09#q1006, db-opentargets-26.09#q1007, pmid-37550455#q74]}
-  pleiotropy: {values: ["mech:adiposity", "mech:cvd", broad], cites: [db-opentargets-26.09#q1003, db-opentargets-26.09#q1004, db-opentargets-26.09#q1005, db-opentargets-26.09#q1006, db-opentargets-26.09#q1008, db-opentargets-26.09#q1009, db-opentargets-26.09#q1010, db-opentargets-26.09#q1011, db-ensembl-116#q667, pmid-37550455#q74]}
+  pleiotropy: {values: ["mech:adiposity", "mech:diabetes", "mech:cvd", broad], cites: [db-opentargets-26.09#q1012, db-opentargets-26.09#q1013, db-opentargets-26.09#q1014, db-opentargets-26.09#q1015, db-opentargets-26.09#q1016, db-opentargets-26.09#q1017, db-opentargets-26.09#q1003, db-opentargets-26.09#q1004, db-opentargets-26.09#q1005, db-opentargets-26.09#q1006, db-opentargets-26.09#q1008, db-opentargets-26.09#q1009, db-opentargets-26.09#q1010, db-opentargets-26.09#q1011, db-ensembl-116#q667, pmid-37550455#q74]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
-            cites: [pmid-30729179#q124, pmid-30642433#q340, pmid-31484785#q139, pmid-31413261#q205, pmid-31413261#q206]}
+            cites: [pmid-30729179#q124, pmid-30642433#q340, pmid-31413261#q205, pmid-31413261#q206]}
   actionability: {label: descriptive, cites: [db-opentargets-26.09#q1004, db-opentargets-26.09#q1005]}
   context: {values: [eur_only_evidence], cites: [pmid-30642433#q340, pmid-31484785#q139]}
 flags:
@@ -74,7 +77,7 @@ variants:
         conclusion: >-
           You carry one copy of a less common version of this DNA position (about 44 in 100 people of European
           ancestry do). In very large studies it went with slightly healthier ageing and parents living a little
-          longer, and a separate study of parents' lifespans pointed the same way. The same stretch of DNA goes with
+          longer, and a separate study of mothers' lifespans pointed the same way. The same stretch of DNA goes with
           slightly lower body weight and less heart disease. It is a likely finding, not a settled one, and the effect
           is small: a tendency, not destiny.
       - genotype: C/C
@@ -82,7 +85,7 @@ variants:
         conclusion: >-
           You carry two copies of a less common version of this DNA position (about 10 in 100 people of European
           ancestry do). Each copy went with slightly healthier ageing and parents living a little longer in very
-          large studies, and a separate study of parents' lifespans pointed the same way. The same stretch of DNA
+          large studies, and a separate study of mothers' lifespans pointed the same way. The same stretch of DNA
           goes with slightly lower body weight and less heart disease. It is a likely finding, not a settled one, and
           the effect is small: a tendency, not destiny.
 studies:
@@ -120,7 +123,7 @@ studies:
     effect_unit: log hazard protection per C allele (summary statistics' beta1 for T, negated; positive = longer life)
     effect_allele: C
     direction: protective
-    statistical_test: "Timmers 2019's summary statistics (GCST009890): T −0.0171, SE 0.0041, direction --, info 0.98; the co-occurring lifespan study (D16), an mvAge input; nothing in GRCh37 17:46.2-48.2 Mb below 1e-6; Pilling's UK Biobank parents C longer, P 0.0024 (pmid-29227965#q76), inside it; Park 2025's own survival C fewer deaths, P 0.035 (pmid-40021682#q90, columns swapped), co-occurring; FinnGen R11 death C −0.0104, SE 0.0080, P 0.19, one-sided 0.096 C's way (db-finngen-r11#q65), no red flag"
+    statistical_test: "Timmers 2019's summary statistics (GCST009890): T −0.0171, SE 0.0041, direction --, info 0.98; the co-occurring lifespan study (D16), an mvAge input; nothing in GRCh37 17:46.2-48.2 Mb below 1e-6; Pilling's UK Biobank parents C longer, P 0.0024 (pmid-29227965#q76), inside it; Park 2025's own survival C fewer deaths, P 0.035 (pmid-40021682#q90, columns swapped), co-occurring; FinnGen R11 death C −0.0104, SE 0.0080, P 0.19, one-sided 0.096 C's way (db-finngen-r11#q65); red flag unknown (D29.11)"
     curator: claude-opus-5-5
   - rsid: rs940088
     note: pmid-31484785
@@ -138,7 +141,7 @@ studies:
     effect_unit: mothers' lifespan and attained age per rs9899580 G allele, the lead's C (r² 0.98, phased in CEU)
     effect_allele: C
     direction: protective
-    statistical_test: "Wright 2019's Supplemental Table 9, mothers, at the proxy rs9899580 (q139; r² 0.98, D′ 1, db-ensembl-116#q666; the lead's C on rs9899580's G on 68 of 69 C haplotypes): AncestryDNA arm SE 0.0029, P 0.0021 raw (one-sided 0.0011), one-sided 0.0018 after the mothers' genomic control (λ 1.113, q82; derived); UK Biobank arm P 1.5e-4, past the table's 2.5e-3 alone, so not selected by the filter (D29.18); the printed A's β read as G's from the UK arm's sign against Timmers' T at the SNP (pmid-30642433#q341); Wright has no line at the lead (D29.3); independent of UK Biobank and LifeGen, the replication of the lifespan direction"
+    statistical_test: "Wright 2019's Supplemental Table 9, mothers, at the proxy rs9899580 (q139; r² 0.98, D′ 1, db-ensembl-116#q666; the lead's C on rs9899580's G on 68 of 69 C haplotypes): AncestryDNA arm SE 0.0029, P 0.0021 raw (one-sided 0.0011), one-sided 0.0018 after the mothers' genomic control (λ 1.113, q82; derived); UK Biobank arm P 1.5e-4; both arms share a sign, opposite Timmers' T at the SNP (pmid-30642433#q341), so the line leans to the lead's C whichever allele the printed A names; under D30.1 the meta with the AncestryDNA arm at z = 0, deflated by 1.15, is P 0.0059, above the table's 2.5e-3: the line was selected by its own AncestryDNA arm, named, not counted"
     curator: claude-opus-5-5
   - rsid: rs940088
     note: pmid-30729179
@@ -175,5 +178,5 @@ studies:
     effect_unit: log odds of survival to the 90th percentile per C allele (the file's t effect negated)
     effect_allele: C
     direction: protective
-    statistical_test: "Deelen 2019's summary statistics (GCST008598), t −0.0174, SE 0.0212, effective N 11,615; 99th percentile t −0.0213, SE 0.0332, P 0.52 (q206); calibrated from Timmers' C +0.0171 (D25.3): APOE's factor 4.84 expects 0.083, power 0.99, heterogeneity P 0.025, a flag; the mean factor (0.4175) expects 0.035, power 0.49, P 0.45, none (the 99th: 0.80, P 0.11; 0.27, P 0.70); one calibration only, no red flag; an mvAge input (q72)"
+    statistical_test: "Deelen 2019's summary statistics (GCST008598), t −0.0174, SE 0.0212, effective N 11,615; 99th percentile t −0.0213, SE 0.0332, P 0.52 (q206); calibrated from Timmers' C +0.0171 (D25.3): APOE's factor 4.84 expects 0.083, power 0.99, heterogeneity P 0.025, a flag; the mean factor (0.4175) expects 0.035, power 0.49, P 0.45, none (the 99th: 0.80, P 0.11; 0.27, P 0.70); scaled from Timmers, not from the discovery, so the red flag reads unknown (D29.11); an mvAge input (q72)"
     curator: claude-opus-5-5
