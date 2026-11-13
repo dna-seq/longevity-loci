@@ -3557,3 +3557,49 @@ people; db-gwascatalog-2026.10.29#q501) led by another variant, the lead at post
 Foote's factor 3 set at FTO (9b4a8900…), row 83: 70 members (q977), the lead rs1421085 at posterior 0.039
 (q972's set); locus-to-gene FTO 0.986 (q978; RPGRIP1L 0.20 next); its two QTL colocalisations (q979) are trans pQTLs
 (LEP, OBP2B), no cis one. For row 83.
+
+## Reading 2026-11-13, record
+
+> [q980] data.variant.credibleSets count 21
+
+> [q981] data.credibleSets count 2
+
+> [q982] data.credibleSets.rows[0] studyLocusId 27cc69b923af74dfbbe5b7bea000dc48 finemappingMethod SuSiE-inf pValueMantissa 3.9535210132598877 pValueExponent -13
+
+> [q983] data.credibleSets.rows[0].study id GCST007406 traitFromSource Healthspan
+
+> [q984] data.credibleSets.rows[0].locus.rows[0] posteriorProbability 0.37889356919904565
+
+> [q985] data.credibleSets.rows[0].l2GPredictions.rows[0].target approvedSymbol DEF8
+
+> [q986] data.credibleSets.rows[0].l2GPredictions.rows[0] score 0.8956615924835205
+
+> [q987] data.credibleSets.rows[1] studyLocusId 399ed49d2e486524d35c9bad87d24b05 finemappingMethod PICS pValueMantissa 7 pValueExponent -12
+
+> [q988] data.credibleSets.rows[1].locus.rows[0] posteriorProbability 0.8172746981464537
+
+> [q989] data.credibleSet.locus count 4
+
+> [q990] data.credibleSet.colocalisation count 6
+
+> [q991] data.credibleSet.colocalisation.rows[0].otherStudyLocus.study.target approvedSymbol RPL13
+
+> [q992] data.credibleSet.colocalisation.rows[1].otherStudyLocus.study.target approvedSymbol DEF8
+
+> [q993] data.credibleSet.colocalisation.rows[2].otherStudyLocus.study.target approvedSymbol DEF8
+
+> [q994] data.credibleSet.colocalisation.rows[3].otherStudyLocus.study.target approvedSymbol SPG7
+
+> [q995] data.credibleSet.colocalisation.rows[4].otherStudyLocus.study.target approvedSymbol DEF8
+
+> [q996] data.credibleSet.colocalisation.rows[5].otherStudyLocus.study.target approvedSymbol DEF8
+
+16_89960104_T_C (rs4268748, row 86). The lead is in 21 sets (q980), every one paged; of the eleven longevity studies
+and Foote 2025's seven deposits two hold it (q981): Zenin's healthspan (GCST007406, SuSiE-inf, P 4e-13; q982, q983),
+the lead at posterior 0.379 (q984), the top of 4 members (q989), locus-to-gene DEF8 0.896 (q985, q986); and Timmers
+2020's multivariate set (GCST011100, PICS, P 7e-12; q987), the lead at 0.817 (q988), named, not counted (D25.5). The
+healthspan set's QTL colocalisations, 6 (q990), all cis and at H4 ≥ 0.99: DEF8 4 (an exon eQTL in monocytes, a
+fibroblast transcript and two fibroblast splicing QTLs), RPL13 1 (a cartilage transcript-usage QTL) and SPG7 1 (a
+neuron transcript) (q991 to q996). The other 19 sets are skin traits (squamous cell carcinoma, actinic keratosis,
+melanoma, seborrhoeic keratosis, benign skin neoplasm, sebaceous cyst, skin colour, skin ageing), vitiligo (alt C β
+−0.35, so T raises it), age at first sex, number of children, a plasma metabolite and a DEF8 eQTL. For row 86.

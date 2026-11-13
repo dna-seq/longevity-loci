@@ -1796,3 +1796,28 @@ limited social support (q500); each n matches its deposit's. For row 85.
 
 GCST004045 (PMID 27790247): initial sample 9,618 European-ancestry individuals, replication 19,796 (q501). For rows 84
 and 83, where it holds a set near each lead. For row 84.
+
+## Reading 2026-11-13, record
+
+> [q502] _embedded.associations[8] association_id 24294446 risk_frequency 0.7294 pvalue_description pvalue_mantissa 3 pvalue_exponent -33 multi_snp_haplotype false snp_interaction false range [1.33-1.49] or_per_copy_num 1.4130281 or_value 1.4130281 beta - p_value 3e-33 accession_id GCST004785 pubmed_id 27723757 first_author Jin Y ci_lower 1.33 ci_upper 1.49
+
+> [q503] _embedded.associations[8].snp_effect_allele[0] rs4268748-T
+
+> [q504] _embedded.associations[11] association_id 13436761 risk_frequency 0.26 pvalue_description pvalue_mantissa 2 pvalue_exponent -44 multi_snp_haplotype false snp_interaction false range [1.28-1.39] or_per_copy_num 1.33 or_value 1.33 beta - p_value 2e-44 accession_id GCST003327 pubmed_id 26829030 first_author Asgari MM ci_lower 1.28 ci_upper 1.39
+
+> [q505] _embedded.associations[11].snp_effect_allele[0] rs4268748-C
+
+> [q506] _embedded.associations[6] association_id 98326415 risk_frequency NR pvalue_description pvalue_mantissa 2 pvalue_exponent -61 multi_snp_haplotype false snp_interaction false range [1.22-1.28] or_per_copy_num 1.25 or_value 1.25 beta - p_value 2e-61 accession_id GCST90095184 pubmed_id 35449187 first_author Kim Y ci_lower 1.22 ci_upper 1.28
+
+> [q507] _embedded.associations[6].snp_effect_allele[0] rs4268748-C
+
+> [q508] _embedded.associations[7] association_id 62271335 risk_frequency 0.7067 pvalue_description pvalue_mantissa 7 pvalue_exponent -12 multi_snp_haplotype false snp_interaction false range - beta - p_value 7e-12 accession_id GCST011100 pubmed_id 32678081 first_author Timmers PRHJ
+
+> [q509] _embedded.associations[7].reported_trait[0] Aging traits (healthspan, parental lifespan or longevity) (multivariate analysis)
+
+rs4268748, row 86, 12 associations. Vitiligo (Jin 2016, GCST004785): T OR 1.41, P 3e-33 (q502, q503), so T, Zenin's
+healthier allele, raises vitiligo. Squamous cell carcinoma (Asgari 2016, GCST003327): C OR 1.33, P 2e-44 (q504,
+q505); actinic keratosis (Kim 2022, GCST90095184): C OR 1.25, P 2e-61 (q506, q507). Timmers 2020's multivariate
+ageing traits (GCST011100): P 7e-12, no effect printed (q508, q509). The rest: melanoma in situ, seborrhoeic keratosis,
+benign skin neoplasms, sebaceous gland disorders, skin colour saturation and skin ageing, the disease and skin-ageing
+lines with C the higher where a direction is printed. For row 86.

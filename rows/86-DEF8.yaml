@@ -1,0 +1,186 @@
+# The seed list's locus 86, DEF8 (16q24.3; the seed's genes "DEF8; DEF8 (MC1R region)"). Curated 2026-11-13. Lead
+# rs4268748 (Zenin 2019's healthspan SNP, Table 2, nearest gene MC1R in its supplement), the seed's only rsID: an intron
+# variant of DEF8, T/C at GRCh38 16:89,960,104 (GRCh37 90,026,512), C 0.275 in non-Finnish Europeans. In Zenin's,
+# Timmers 2019's, Pilling 2017's, Deelen 2019's, Park 2025's and FinnGen R11's summary statistics at the lead itself.
+# Wright 2019's tables hold no parent's-lifespan line within 200 kb, only viability SNPs, weak tags.
+locus_id: 86
+locus_name: DEF8
+verdict: re-tiered
+verdict_reason: >-
+  Tier D, from the seed's B: a genome-wide healthspan discovery that failed its own replication, powered, in its own
+  ancestry, with nothing in a scoring class on its side (D25.1), row 26's shape. In 300,447 British UK Biobank
+  participants C, the minor allele, brings the end of healthspan earlier (Zenin 2019, β +0.038 per C on the log hazard,
+  P 1.55e-12 after genomic control), a signal that is cancer's alone (cancer P 1.9e-22, all diseases but cancer P
+  0.73). The paper's replication in 96,313 other UK Biobank participants, unrelated to them, is flat: β +0.004, SE
+  0.009, P 0.62, against the paper's own expected P of 7.4e-5 and its 99.5 % bound of 0.17 (replication power 0.86 at
+  its 0.05/12); so the locus is not among Zenin's five replicated. The first replication cohort, the 81,099 other
+  Europeans, is flat on its own (β +0.004, SE 0.0099, P 0.69). Healthspan against healthspan on one scale needs no
+  conversion (D25.3 does not arise): at the discovery's β and the European cohort's SE one-sided power is 0.99 and the
+  two estimates differ at heterogeneity P 0.0023 (the pooled replication: 0.994, P 0.0014; derived, both errors
+  counted, D29.6), D21's red flag on either. A replication does not have to be in a scoring class to contradict: D22.2
+  says what lifts a row, D25.1 what tests it (as at 26, where Deelen's own validation decided). And nothing in a scoring
+  class gives P < 0.05 the discovery's way (one-sided for T, the healthier allele): Timmers 2019's million parental
+  lives put T on the shorter-lived side (P 0.37, UK Biobank and LifeGen both; one-sided 0.82), Pilling 2017's UK
+  Biobank parents too (P 0.50), Park 2025's own survival in UK Biobank leans T shorter-lived (P 0.084, its allele
+  columns swapped, as the frequencies show), Deelen 2019's 90th and 99th percentiles put T a shade less common among
+  the long-lived (P 0.88, 0.58), FinnGen R11's death endpoint is flat (P 0.78), and Zenin's own parents' death (P 0.51)
+  and own death (C fewer deaths, P 0.66) are flat. So D16 has no co-occurring lifespan study either: even without the
+  failed replication the locus would be C. Wright 2019's AncestryDNA has no parent's-lifespan line near it; its
+  viability SNPs nearby (rs4785759 and rs9939542, CEU r² 0.39 and 0.52, genomic-control P 0.002 to 0.003) confirm,
+  never replicate (D23), and tag the lead weakly: named, not scored. Timmers 2020's multivariate ageing scan reaches P
+  7e-12 at the lead, and the lead tops its set (posterior 0.82), but it pools Zenin's healthspan with UK Biobank's
+  parental lifespan and longevity, and a multivariate result replicates nothing (D22.2) and scores only beside a
+  lifespan study (D18.3), which there is not; Rosoff 2023's mvAge lists no lead on chromosome 16, and Foote 2025's
+  frailty factors hold no credible set at the lead. Outcome cells on a D row (D28.10): healthspan 0, the contradicted
+  discovery giving no +; lifespan 0 and exceptional survival 0, every look flat. Mechanism ageing in general, as on
+  every D row: no effect is left to route (D25.7). The variant is one of the MC1R region's pigmentation and skin
+  signals (C raises squamous cell carcinoma, OR 1.33, P 2e-44, and actinic keratosis, OR 1.25, P 2e-61; T raises
+  vitiligo, OR 1.41, P 3e-33), which is the seed's pleiotropy track (skin cancer and vitiligo, a trade-off); with no
+  longer-life allele left there is no trade-off to file, so pleiotropy is empty and the skin traits are said here.
+  Descriptive. Causal C2: the lead tops Zenin's four-variant SuSiE-inf healthspan set at posterior 0.379, the set the
+  row stands on, as 49's D kept Liu's. Effector E3, no gene named (D24): locus-to-gene gives DEF8 0.896, and the set's
+  six cis QTL colocalisations are DEF8 four, RPL13 one and SPG7 one, each rival a sixth, over D24's tenth; DEF8 and
+  MC1R are named in prose. Every genotype neutral (D25.2); T/T, the commonest, the reference. The evidence is European.
+  Age of action unknown. Row 103 (HLA-DQB1, C under D17.1) has this shape at lower power (about 0.8, heterogeneity P
+  about 0.02) and predates D25.1; put to the lead.
+axes:
+  tier: {value: D, cites: [pmid-30729179#q119, pmid-30729179#q120, pmid-30729179#q121, pmid-30729179#q122, pmid-30729179#q12, pmid-30729179#q13, pmid-30729179#q29, pmid-30729179#q59, pmid-30642433#q335, pmid-29227965#q74, pmid-40021682#q88, pmid-40021682#q32, db-ensembl-116#q648, pmid-31413261#q201, pmid-31413261#q202, db-finngen-r11#q63, pmid-31484785#q135, pmid-31484785#q136, db-ensembl-116#q651, db-ensembl-116#q652, db-gwascatalog-2026.10.29#q508, db-gwascatalog-2026.10.29#q509, db-opentargets-26.09#q981, db-opentargets-26.09#q987, db-opentargets-26.09#q988]}
+  mechanism: {value: general_ageing, cites: [pmid-30729179#q119, pmid-30729179#q120]}
+  pleiotropy: {values: [], cites: [db-gwascatalog-2026.10.29#q502, db-gwascatalog-2026.10.29#q503, db-gwascatalog-2026.10.29#q504, db-gwascatalog-2026.10.29#q505, db-gwascatalog-2026.10.29#q506, db-gwascatalog-2026.10.29#q507]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
+            cites: [pmid-30729179#q119, pmid-30729179#q120, pmid-30729179#q121, pmid-30642433#q335, pmid-40021682#q88, pmid-31413261#q201, pmid-31413261#q202]}
+  actionability: {label: descriptive, cites: [pmid-30729179#q120]}
+  context: {values: [eur_only_evidence], cites: [pmid-30729179#q119, pmid-31413261#q201]}
+flags:
+  - {token: replication_failed, cites: [pmid-30729179#q119, pmid-30729179#q120, pmid-30729179#q12, pmid-30729179#q13]}
+  - {token: "causal:C2", cites: [db-opentargets-26.09#q982, db-opentargets-26.09#q983, db-opentargets-26.09#q984, db-opentargets-26.09#q989]}
+  - {token: "effector:E3", cites: [db-opentargets-26.09#q985, db-opentargets-26.09#q986, db-opentargets-26.09#q990, db-opentargets-26.09#q991, db-opentargets-26.09#q992, db-opentargets-26.09#q993, db-opentargets-26.09#q994, db-opentargets-26.09#q995, db-opentargets-26.09#q996]}
+variants:
+  - rsid: rs4268748
+    gene: ""
+    phenotype: DEF8/MC1R region, healthspan (cancer)
+    trait_efo_id: EFO_0009762
+    effect_allele: C
+    effect_size: 0.0381
+    effect_measure: beta
+    stat_significance: significant
+    direction: risk
+    genotypes:
+      - genotype: T/T
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position, as about 53 in 100 people of European
+          ancestry do. It is the reference the other combinations are compared with. The position, on chromosome 16,
+          lies in DEF8 near MC1R, a gene known for skin and hair colour. A link between this position and healthy
+          lifespan was reported once and did not hold up when the same team checked it.
+      - genotype: C/T
+        state: neutral
+        conclusion: >-
+          You carry one copy of a less common version of this DNA position (about 40 in 100 people of European
+          ancestry do). One large study (Zenin 2019) reported this version with an earlier first major disease,
+          mostly cancer, but the same team's check in another large group did not find it, and studies of lifespan
+          found no link. It says nothing about your own healthy lifespan. The same version is known for a higher
+          risk of some sun-related skin conditions, which is separate from this finding.
+      - genotype: C/C
+        state: neutral
+        conclusion: >-
+          You carry two copies of a less common version of this DNA position (about 8 in 100 people of European
+          ancestry do). One large study (Zenin 2019) reported this version with an earlier first major disease,
+          mostly cancer, but the same team's check in another large group did not find it, and studies of lifespan
+          found no link. It says nothing about your own healthy lifespan. The same version is known for a higher
+          risk of some sun-related skin conditions, which is separate from this finding.
+studies:
+  - rsid: rs4268748
+    note: pmid-30729179
+    quote: q119
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "1.55e-12"
+    p_value_num: 1.55e-12
+    effect_size: 0.038
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per C allele (positive = earlier)
+    effect_allele: C
+    direction: risk
+    statistical_test: "Cox-Gompertz Martingale-residual GWAS of the first of the age-related diseases or death (Table 2), P after genomic control (the paper's own call, D17.3); raw P 4.0e-13 (q120; summary statistics C +0.0381, SE 0.00525, -log10 P 12.4, q122); by component cancer +0.067, P 1.9e-22, all but cancer P 0.73 (q121)"
+    curator: claude-opus-5-5
+  - rsid: rs4268748
+    note: pmid-30729179
+    quote: q120
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: UK Biobank participants outside the discovery set (81,099 other European, and African, South Asian, Chinese and Caribbean), unrelated to it
+    ancestry: [EUR, AFR, SAS, EAS]
+    sample_size: 96313
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.624"
+    p_value_num: 0.624
+    effect_size: 0.0045
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per C allele (positive = earlier)
+    effect_allele: C
+    direction: risk
+    statistical_test: "Replication meta-analysis of the five cohorts (Supplementary Data 5, q120; Table 2, q119), SE 0.0091; the paper's replication power 0.864, expected P 7.4e-5, 99.5 % bound 0.166; the first cohort, read as the Europeans, β +0.0040, SE 0.0099, P 0.69; against the discovery (D21, derived, both errors counted, D29.6): European cohort one-sided power 0.986, heterogeneity P 0.0023; pooled 0.994, P 0.0014: red flag, D25.1"
+    curator: claude-opus-5-5
+  - rsid: rs4268748
+    note: pmid-30642433
+    quote: q335
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 635243
+    sample_unit: lives
+    stat_significance: not_significant
+    p_value: "0.36741057"
+    p_value_num: 0.36741057
+    effect_size: -0.0038068
+    effect_measure: beta
+    effect_unit: log hazard protection per T allele in self (positive = longer life)
+    effect_allele: T
+    direction: risk
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), SE 0.00422, direction -- in UK Biobank and LifeGen, info 0.98; T, Zenin's healthier allele, on the shorter-lived side (one-sided for T 0.82, derived); Pilling's UK Biobank parents T +0.0016 on the Martingale scale, P 0.50 (pmid-29227965#q74)"
+    curator: claude-opus-5-5
+  - rsid: rs4268748
+    note: pmid-40021682
+    quote: q88
+    phenotype_class: OWN_SURVIVAL
+    study_design: own_survival_cox
+    population: European (UK Biobank, whole cohort)
+    ancestry: [EUR]
+    sample_size: 393833
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.084"
+    p_value_num: 0.084
+    effect_size: 0.00123924
+    effect_measure: beta
+    effect_unit: Martingale residual of a Cox model of own survival per T allele (positive = more deaths than expected, shorter life)
+    effect_allele: T
+    direction: risk
+    statistical_test: "BOLT-LMM on Martingale residuals (pmid-40021682#q39); the deposit prints C at 0.688, T's frequency (db-ensembl-116#q648), so the labels are swapped (q32) and the β is T's; SE 0.00072; UK Biobank"
+    curator: claude-opus-5-5
+  - rsid: rs4268748
+    note: pmid-31413261
+    quote: q201
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.8818"
+    p_value_num: 0.8818
+    effect_size: -0.0033
+    effect_measure: beta
+    effect_unit: log odds of reaching the 90th percentile, per T allele
+    effect_allele: T
+    direction: risk
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008598), SE 0.0219, effective N 11,615; the 99th percentile T -0.0189, SE 0.0346, P 0.58 (q202), a subset of the same cases"
+    curator: claude-opus-5-5

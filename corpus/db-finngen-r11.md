@@ -451,3 +451,9 @@ FinnGen R11 death at CETP, row 84: rs3764261 (q60) alt A β −0.0141 (SE 0.0082
 
 FinnGen R11 death at rs12924886 (q62): alt T β +0.0037 (SE 0.0093), P 0.69: A with slightly fewer deaths, flat. For
 row 85.
+
+## Reading 2026-11-13, supplement
+
+> [q63] 16 89960104 T C rs4268748 DEF8 0.781369 0.107144 0.00239805 0.00864049 0.245536 0.247054 0.245346
+
+FinnGen R11 death at rs4268748 (q63): alt C β +0.0024 (SE 0.0086), P 0.78: flat. For row 86.

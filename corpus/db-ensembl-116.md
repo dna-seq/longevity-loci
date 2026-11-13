@@ -2309,3 +2309,24 @@ rs12924886 and Foote's rs7187129 (below its reporting floor): not a tag. For row
 > [q646] [4] r2 1.000000 variation1 rs1421085 population_name 1000GENOMES:phase_3:CEU d_prime 1.000000 variation2 rs11642015
 
 Row 83: rs11642015 r² 1.00, D′ 1.00 with rs1421085 in CEU (q646; GBR the same). For row 83.
+
+## Reading 2026-11-13, record
+
+> [q647] mappings[0] allele_string T/C coord_system chromosome location 16:89960104-89960104 start 89960104 strand 1 assembly_name GRCh38 ancestral_allele C end 89960104 seq_region_name 16
+
+> [q648] populations[6] frequency 0.275 population gnomADg:nfe allele C allele_count 18693
+
+> [q649] populations[80] population 1000GENOMES:phase_3:GBR frequency 0.307692307692308 allele_count 56 allele C
+
+> [q650] [0].transcript_consequences[0] gene_symbol_source HGNC strand 1 transcript_id ENST00000268676 gene_id ENSG00000140995 variant_allele C gene_symbol DEF8 biotype protein_coding hgnc_id HGNC:25969 impact MODIFIER
+
+> [q651] [0] population_name 1000GENOMES:phase_3:CEU r2 0.389348 variation2 rs4785759 variation1 rs4268748 d_prime 0.887536
+
+> [q652] [0] population_name 1000GENOMES:phase_3:CEU variation2 rs9939542 variation1 rs4268748 r2 0.520343 d_prime 0.764047
+
+> [q653] [0] r2 0.086201 variation1 rs4268748 d_prime 0.545100 population_name 1000GENOMES:phase_3:CEU variation2 rs1109334
+
+Row 86. rs4268748 (q647): GRCh38 16:89,960,104, T/C; C 0.275 in gnomAD's non-Finnish Europeans (q648), 0.31 in GBR
+(q649), common elsewhere too (0.28 in 1000 Genomes East Asians, 0.42 in Africans); an intron variant of DEF8 (q650),
+in the MC1R region (Zenin names MC1R as the nearest gene, pmid-30729179#q121). Wright's viability SNPs: rs4785759 r² 0.39 (q651), rs9939542 0.52 (q652), rs1109334 0.09 (q653)
+in CEU. For row 86.
