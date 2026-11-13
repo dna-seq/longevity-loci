@@ -428,3 +428,10 @@ slightly fewer deaths, flat; A at 0.177 in FinnGen. For row 79.
 
 FinnGen R11 death at row 82's locus. rs4783780 (q57): alt C β +0.0207 (SE 0.0075) on the log odds of death, P 0.0058,
 so A with fewer deaths. rs4784227 (q58): alt T +0.0173 (SE 0.0085), P 0.042. A database line (D29.1). For row 82.
+
+## Reading 2026-11-13, supplement
+
+> [q59] 16 53767042 T C rs1421085 FTO 0.249221 0.603415 -0.00864473 0.00750252 0.418328 0.416157 0.4186
+
+FinnGen R11 death at rs1421085 (q59): alt C β −0.0086 (SE 0.0075), P 0.25, so C with slightly fewer deaths: against
+T, flat. For row 83.

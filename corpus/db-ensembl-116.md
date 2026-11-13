@@ -2235,3 +2235,23 @@ near 0.25: T rides with C (derived). For row 82.
 
 Row 82. 16_52537621_A_G is rs3112581 (q625), 97 bp from the lead; r² 1.00, D′ 1.00 with rs4783780 in CEU (q626; GBR the
 same); its G at 0.449 in CEU (q627), the lead's C's frequency (q619): G rides with C. For row 82.
+
+## Reading 2026-11-13, record
+
+> [q628] populations[76] frequency 0.567594433399602 population 1000GENOMES:phase_3:EUR allele T allele_count 571
+
+> [q629] populations[64] allele T allele_count 108 frequency 0.545454545454545 population 1000GENOMES:phase_3:CEU
+
+> [q630] [2] d_prime 0.999998 population_name 1000GENOMES:phase_3:CEU variation2 rs10852521 r2 0.653151 variation1 rs1421085
+
+> [q631] [7] d_prime 0.999996 population_name 1000GENOMES:phase_3:GBR variation2 rs10852521 r2 0.700406 variation1 rs1421085
+
+> [q632] populations[66] population 1000GENOMES:phase_3:CEU frequency 0.439393939393939 allele_count 87 allele T
+
+> [q633] mappings[0] start 53767042 end 53767042 seq_region_name 16 allele_string T/C strand 1 location 16:53767042-53767042 coord_system chromosome ancestral_allele T assembly_name GRCh38
+
+> [q634] [0] start 53767042 most_severe_consequence intron_variant strand 1 id rs1421085 end 53767042 allele_string T/C input rs1421085 seq_region_name 16 assembly_name GRCh38
+
+Row 83. rs1421085 (q633): GRCh38 16:53,767,042, T/C, an intron variant of FTO (q634); T 0.568 in 1000 Genomes Europeans
+(q628), 0.545 in CEU (q629). rs10852521: r² 0.65, D′ 1.00 (CEU, q630); 0.70 (GBR, q631); its T 0.439 in CEU (q632).
+With D′ 1, T on the lead's T haplotypes gives r² 0.65, T on C's would give 0.94: T rides with T (derived). For row 83.

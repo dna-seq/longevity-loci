@@ -3371,3 +3371,34 @@ BMI. For row 82.
 Row 82. Timmers 2020's set at rs4783780 colocalises with a breast-cancer set (GCST90429846, H4 0.96; q923, q924), led
 by 16_52537621_A_G (rs3112581, db-ensembl-116#q625), SuSiE-inf, P 1.8e-8, alt G β +0.112 (q925, q926): G raises
 breast cancer. G rides with the lead's C (db-ensembl-116#q626, q627). For row 82.
+
+## Reading 2026-11-13, record
+
+> [q927] data.variant.credibleSets count 1701
+
+> [q928] data.credibleSets count 0
+
+> [q929] data.variant.credibleSets.rows[73] studyLocusId 0b0f2f6002fe711db38d050f5bcd3fe7 pValueMantissa 2.4000000953674316 pValueExponent -277 beta 0.1195 finemappingMethod PICS
+
+> [q930] data.variant.credibleSets.rows[73].study id GCST90479523 traitFromSource Body mass index (BMI, minimum, inv-normal transformed) studyType gwas
+
+> [q931] data.variant.credibleSets.rows[73].locus.rows[0] posteriorProbability 0.8496191016524004
+
+> [q932] data.variant.credibleSets.rows[123] studyLocusId 13e3b3e7e5cedc8a9514b476ea341f3c pValueMantissa 1.5499999523162842 pValueExponent -97 beta 0.11440126030997533 finemappingMethod PICS
+
+> [q933] data.variant.credibleSets.rows[123].study id GCST90479892 traitFromSource Diabetes mellitus (PheCode 250) studyType gwas
+
+> [q934] data.variant.credibleSets.rows[94] studyLocusId 0ef265c01c2d113ee98b805e9c705832 pValueMantissa 3.5899999141693115 pValueExponent -16 beta 0.04562517802627547 finemappingMethod PICS
+
+> [q935] data.variant.credibleSets.rows[94].study id GCST90480134 traitFromSource Ischemic heart disease (PheCode 411) studyType gwas
+
+> [q936] data.variant.credibleSets.rows[84] studyLocusId 0df6f38bbdd60c179774f54f569fa9a9 pValueMantissa 9.784317016601562 pValueExponent -43 beta -0.02129108981906212 finemappingMethod SuSiE-inf
+
+> [q937] data.variant.credibleSets.rows[84].study id GCST90475416 traitFromSource low density lipoprotein cholesterol (LDLC, mean, inv-norm transformed) studyType gwas
+
+16_53767042_T_C (rs1421085, row 83): 1,701 credible sets hold it (q927), none of the eleven longevity studies queried
+(q928). Of the first 200 returned, it leads 46, among them BMI (PICS, P 2.4e-277, alt C β +0.12, posterior 0.85; q929
+to q931), diabetes mellitus (C +0.114, P 1.5e-97, posterior 0.46; q932, q933), ischaemic heart disease (C +0.046, P
+3.6e-16, posterior 0.06; q934, q935) and LDL cholesterol (C −0.021 on the inverse-normal scale, P 9.8e-43, posterior
+0.09; q936, q937); also waist and hip, body composition, HbA1c, glucose, CRP, blood pressure and heart failure, C on
+the higher side. So T goes with lower weight, less diabetes and heart disease, and slightly higher LDL. For row 83.

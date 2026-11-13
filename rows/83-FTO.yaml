@@ -1,0 +1,200 @@
+# The seed list's locus 83, FTO (16q12.2). Curated 2026-11-13. Lead rs1421085, the seed's only rsID (entered by the
+# pleiotropy track alone, as the body-mass variant through which BMI's effect on lifespan is read): an intron variant
+# of FTO, T/C, C the higher-BMI allele (0.43 in Europeans), T the longer-lived side. Wright 2019's AncestryDNA tables
+# hold rs10852521, 4 kb away, at r² 0.65 (CEU) and 0.70 (GBR). Open Targets 26.09: 1,701 credible sets hold the lead,
+# none of a lifespan study.
+locus_id: 83
+locus_name: FTO
+verdict: kept
+verdict_reason: >-
+  Tier C, as the seed has it, row 8's shape: nothing at the variant reaches genome-wide significance for any lifespan
+  or healthspan phenotype, and §4.1's R-TIER-4 keeps an MR-only result out of A and B. The seed's ground is Joshi
+  2017's Mendelian randomisation (one BMI unit about 7 months of life), a polygenic instrument over many BMI loci, not
+  a per-variant result here. The variant's own lifespan evidence is nominal and points one way. Timmers 2019's
+  million parents' lives: T longer-lived, P 3.9e-4, UK Biobank and LifeGen both on that side (Pilling's UK Biobank
+  fathers P 0.011, both parents 0.081). AncestryDNA, outside UK Biobank and LifeGen: Wright 2019's Supplemental Table
+  8, which filters on the AncestryDNA arm's own P (so the line passes on its own, D29.18), has rs10852521 (r² 0.65 in
+  CEU, 0.70 in GBR, D′ 1, its T with the lead's T, phased in CEU where the other phase would give r² 0.94) with T and
+  longer-lived fathers, genomic-control P 3.6e-5 (born 1886-1918) and 5.7e-4 (1886-1940), and T commoner among older
+  customers (P 8.3e-5, viability, confirmation only). Wright's two tables print that one β under complementary labels
+  (Table 8's A, Table 9's G); Pilling's fathers' deposit, which Table 9's UK arm copies with C's sign, fixes it: both
+  read T longer. Deelen 2019 leans T's way at both percentiles, one-sided 0.037 (90th) and 0.041 (99th). Zenin 2019's
+  healthspan leans T's way short of nominal (P 0.061 after its genomic control); Park 2025's own survival is flat on
+  T's side (P 0.14, its allele columns swapped, as the frequencies show); FinnGen R11's death endpoint leans against
+  (C with slightly fewer deaths, P 0.25). B's first condition (genome-wide) fails, the nominal results agree in two
+  independent samples, and nothing contradicts them, so not D. Lifespan +, exceptional survival + (Deelen one-sided),
+  healthspan 0. Mechanism metabolism, through body weight: the lead tops BMI sets (posterior up to 0.85, C raising
+  BMI at P 2.4e-277), and C goes with more diabetes (P 1.5e-97), ischaemic heart disease (P 3.6e-16), higher HbA1c,
+  glucose, CRP and blood pressure. One record runs the other way: C lowers LDL cholesterol (inverse-normal β −0.021,
+  P 9.8e-43), so the longer-lived T raises it slightly. LDL is an established risk factor, which D18.1 counts as
+  quoted harm: tradeoff, and with it actionability descriptive, not modifiable through weight (D18.2); put to the lead
+  beside modifiable (weight), on the ground that T's lower heart disease outweighs the LDL record. Pleiotropy
+  mech:adiposity, broad, tradeoff. Causal C4 and effector E4, no gene named: no credible set of a lifespan-class study
+  holds the lead (none of eleven longevity studies queried), as row 69; FTO, in whose intron it sits, is named in
+  prose. C is the minor allele at 43 %, so T/C, the commonest genotype, is the reference (§6.2): T/T protective, C/C
+  risk, as row 8 states its nominal variant. Age of action unknown. The evidence is European.
+axes:
+  tier: {value: C, cites: [pmid-29030599#q18, pmid-30642433#q325, pmid-29227965#q68, pmid-29227965#q70, pmid-31484785#q129, pmid-31484785#q130, pmid-31484785#q131, pmid-31484785#q132, pmid-31484785#q6, pmid-29227965#q69, pmid-29227965#q45, db-ensembl-116#q629, db-ensembl-116#q630, db-ensembl-116#q631, db-ensembl-116#q632, pmid-31413261#q193, pmid-31413261#q194, pmid-30729179#q115, pmid-30729179#q59, pmid-40021682#q85, pmid-40021682#q32, db-finngen-r11#q59]}
+  mechanism: {value: metabolism, cites: [db-opentargets-26.09#q929, db-opentargets-26.09#q930, db-opentargets-26.09#q931, db-opentargets-26.09#q932, db-opentargets-26.09#q933, db-opentargets-26.09#q934, db-opentargets-26.09#q935, pmid-29030599#q18]}
+  pleiotropy: {values: ["mech:adiposity", broad, tradeoff], cites: [db-opentargets-26.09#q927, db-opentargets-26.09#q929, db-opentargets-26.09#q930, db-opentargets-26.09#q932, db-opentargets-26.09#q933, db-opentargets-26.09#q934, db-opentargets-26.09#q935, db-opentargets-26.09#q936, db-opentargets-26.09#q937]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "+",
+            cites: [pmid-30729179#q115, pmid-30642433#q325, pmid-31484785#q129, pmid-31484785#q130, pmid-40021682#q85, db-finngen-r11#q59, pmid-31413261#q193, pmid-31413261#q194]}
+  actionability: {label: descriptive, cites: [db-opentargets-26.09#q936, db-opentargets-26.09#q937]}
+  context: {values: [eur_only_evidence], cites: [pmid-30642433#q325, pmid-31484785#q129]}
+flags:
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q927, db-opentargets-26.09#q928]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q927, db-opentargets-26.09#q928, db-ensembl-116#q634]}
+variants:
+  - rsid: rs1421085
+    gene: ""
+    phenotype: FTO, body weight, parents' lifespan
+    trait_efo_id: EFO_0007796
+    effect_allele: T
+    effect_size: 0.01394984
+    effect_measure: beta
+    stat_significance: nominal
+    direction: protective
+    negatives: >-
+      The longer-life version, T, also goes with slightly higher LDL cholesterol, though with less heart disease.
+    genotypes:
+      - genotype: T/T
+        state: protective
+        conclusion: >-
+          You carry two copies of the version of this DNA position that goes with lower body weight (about 32 in 100
+          people of European ancestry do). In large studies parents of carriers lived a little longer, and a separate
+          American study saw the same in fathers; it also goes with less diabetes and heart disease. No single study
+          found it beyond doubt, so this is a possible finding, not a settled one. The effect is small and it is a
+          tendency, not destiny.
+      - genotype: C/T
+        state: neutral
+        conclusion: >-
+          You carry one copy of each version of this DNA position (about 49 in 100 people of European ancestry do,
+          the most common combination). It is the reference the other combinations are compared with. The position,
+          on chromosome 16, lies inside the FTO gene, the best-known gene for body weight. The finding comes from
+          people of European ancestry; less is known elsewhere.
+      - genotype: C/C
+        state: risk
+        conclusion: >-
+          You carry two copies of the version of this DNA position that goes with higher body weight (about 19 in
+          100 people of European ancestry do). In large studies parents of carriers lived a little less long, and it
+          also goes with more diabetes and heart disease. Keeping a healthy weight is the part within reach. No
+          single study found it beyond doubt, so this is a possible finding, not a settled one. The effect is small
+          and it is a tendency, not destiny.
+studies:
+  - rsid: rs1421085
+    note: pmid-30642433
+    quote: q325
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 640189
+    sample_unit: lives
+    stat_significance: nominal
+    p_value: "0.00038532846"
+    p_value_num: 0.00038532846
+    effect_size: 0.01394984
+    effect_measure: beta
+    effect_unit: log hazard protection per T allele in self (positive = longer life)
+    effect_allele: T
+    direction: protective
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), SE 0.00393, direction ++ in UK Biobank and LifeGen, info 0.99; Pilling's UK Biobank fathers T P 0.011, both parents 0.081 (pmid-29227965#q68, q70)"
+    curator: claude-opus-5-5
+  - rsid: rs1421085
+    note: pmid-31484785
+    quote: q130
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_linear
+    population: AncestryDNA customers' fathers born 1886-1940 (mostly European American)
+    ancestry: [EUR]
+    stratum: parent
+    stratum_level: father
+    sample_size: 309000
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "0.000569"
+    p_value_num: 0.000569
+    proxy_rsid: rs10852521
+    effect_size: 0.009529
+    effect_measure: beta
+    effect_unit: fathers' lifespan per T allele of rs10852521 (printed A, the complement; positive = longer)
+    effect_allele: T
+    direction: protective
+    statistical_test: "Supplemental Table 8, AncestryDNA alone, genomic-control P (raw 1.8e-4), SE 0.0025; filtered on its own P (q6), so it passes on its own (D29.18); born 1886-1918 +0.0149, P 3.6e-5 (q129); Table 9 prints the same β under G with the UK arm C's sign (q132, pmid-29227965#q69); rs10852521 r² 0.65 (CEU) and 0.70 (GBR), D′ 1, its T with the lead's T (db-ensembl-116#q630 to q632, derived); outside UK Biobank and LifeGen"
+    curator: claude-opus-5-5
+  - rsid: rs1421085
+    note: pmid-31484785
+    quote: q131
+    phenotype_class: VIABILITY_AF
+    study_design: current_age_quantitative
+    population: AncestryDNA customers, the European population group, close relatives removed
+    ancestry: [EUR]
+    sample_size: 482000
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "8.286e-05"
+    p_value_num: 8.286e-05
+    proxy_rsid: rs10852521
+    effect_size: 0.009402
+    effect_measure: beta
+    effect_unit: z-scored current age per T allele of rs10852521 (printed A, the complement; positive = older)
+    effect_allele: T
+    direction: protective
+    statistical_test: "Supplemental Table 8, Male_Female.AGE, genomic-control P (raw 4.0e-6), SE 0.0020; viability, confirmation only (§4.5)"
+    curator: claude-opus-5-5
+  - rsid: rs1421085
+    note: pmid-31413261
+    quote: q193
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.07311"
+    p_value_num: 0.07311
+    p_one_sided: 0.036555
+    effect_size: 0.0349
+    effect_measure: beta
+    effect_unit: log odds of reaching the 90th percentile, per T allele
+    effect_allele: T
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008598), SE 0.0195, effective N 11,615; one-sided 0.037 in T's direction (D25.13, derived)"
+    curator: claude-opus-5-5
+  - rsid: rs1421085
+    note: pmid-31413261
+    quote: q194
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.08153"
+    p_value_num: 0.08153
+    p_one_sided: 0.040765
+    effect_size: 0.0527
+    effect_measure: beta
+    effect_unit: log odds of reaching the 99th percentile, per T allele
+    effect_allele: T
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), SE 0.0303, effective N 4,524; one-sided 0.041 (derived); its cases a subset of the 90th's"
+    curator: claude-opus-5-5
+  - rsid: rs1421085
+    note: pmid-30729179
+    quote: q115
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.0546"
+    p_value_num: 0.0546
+    effect_size: 0.00951
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per C allele (positive = earlier)
+    effect_allele: C
+    direction: risk
+    statistical_test: "Zenin 2019's healthspan summary statistics, SE 0.00495, Z 1.922, -log10 P 1.263; about 0.061 after the paper's genomic control of 1.053 (q59, D26.1; derived)"
+    curator: claude-opus-5-5
