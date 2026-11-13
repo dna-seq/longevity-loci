@@ -102,3 +102,19 @@ read), and every identifier the paper has. The curator takes it from here; the s
   > FatherMetal_Lifespan+AttainedAge	8	27344719	rs11780471	3.239e-08	697000	1.759e-05	0.02224	0.005181	1.6e-05	0.0193807	0.00447518	0.6758	G
 - **Unknown:** its independence from rs7844965 (a conditional test or a fine-mapping with two sets); Timmers 2019 P
   2.3e-6, Deelen's 90th P 0.33 and 99th 0.10 (A's side), read in the cached windows, not quoted.
+
+### rs4784227 (TOX3/CASC16) at locus 82 CASC16 (16q12.1): Zenin's healthspan signal, candidate row (D25.6, D30.8)
+
+- **Paper:** Zenin A et al. "Identification of 12 genetic loci associated with human healthspan." *Commun Biol*, 2019.
+  PMID 30729179, PMC6353874, doi 10.1038/s42003-019-0290-0 (title checked against PubMed 2026-11-13). Corpus note
+  `corpus/pmid-30729179.md` (q111, q112, q114). From the lead's batch-nine read, D30.8, 2026-11-13.
+- **Why:** the seed's second rsID at locus 82, 28 kb from row 82's lead rs4783780 (r² 0.33, D′ 0.95 in CEU,
+  `db-ensembl-116#q622`), and the TOX3/CASC16 breast-cancer variant. Genome-wide for healthspan in Zenin (T earlier,
+  P 3.0e-8 after genomic control), cancer its only component (P 2.2e-10; parents' death P 0.10). Row 82 reads its
+  lifespan Zs as the lead's shadow and Timmers 2020's set as colocalising with none of its breast-cancer sets, so a
+  separate signal with no lifespan signal of its own once the lead is accounted for. D30.8 sends it here as a
+  healthspan candidate.
+- **Passage** (Table 2, full text, quoted as `pmid-30729179#q111`):
+  > rs4784227 16 52,599,188 T C 0.24 0.032 3.02e-08 0.018 7.75e-02
+- **Unknown:** its own tier; whether a healthspan signal carried by cancer alone counts for this module (D25.1, row
+  86's shape, is the nearest precedent read here, not applied).
