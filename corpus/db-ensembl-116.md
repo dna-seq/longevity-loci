@@ -2261,3 +2261,17 @@ With D′ 1, T on the lead's T haplotypes gives r² 0.65, T on C's would give 0.
 > [q635] [1] population_name 1000GENOMES:phase_3:CEU variation1 rs1421085 variation2 rs7190492 r2 0.435892 d_prime 0.999993
 
 Row 83: rs7190492, Wright's weaker AncestryDNA FTO line, is r² 0.44 to rs1421085 in CEU (q635). For row 83.
+
+## Reading 2026-11-13, record
+
+> [q636] populations[76] allele_count 294 frequency 0.292246520874752 population 1000GENOMES:phase_3:EUR allele A
+
+> [q637] mappings[0] assembly_name GRCh38 allele_string C/A seq_region_name 16 coord_system chromosome end 56959412 strand 1 location 16:56959412-56959412 ancestral_allele C start 56959412
+
+> [q638] [0] input rs3764261 assembly_name GRCh38 allele_string C/A strand 1 most_severe_consequence upstream_gene_variant id rs3764261 seq_region_name 16 end 56959412 start 56959412
+
+> [q639] populations[101] allele_count 333 population 1000GENOMES:phase_3:EUR allele G frequency 0.331013916500994
+
+Row 84. rs3764261 (q637): GRCh38 16:56,959,412, C/A, upstream of CETP (q638); A 0.292 in 1000 Genomes Europeans (q636).
+rs5882, I405V: G (V) 0.331 in Europeans (q639). Ensembl returns no European LD between the two (below its reporting
+floor), so they are separate signals. For row 84.

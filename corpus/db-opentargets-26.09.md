@@ -3419,3 +3419,26 @@ total cholesterol C −0.022, P 3.0e-12 (q940, q941), as LDL (q936, q937); and a
 GCST90454345, SuSiE-inf, P 2.1e-15) with C −0.020 (q938, q939): C lowers it, so T, the longer-lived allele, raises
 breast cancer and LDL. Of 21 body-weight sets it tops, two run against the rest (UK Biobank weight, weight-to-muscle
 ratio); a bone-density set prints no β. For row 83.
+
+## Reading 2026-11-13, record
+
+> [q942] data.variant.credibleSets count 1707
+
+> [q943] data.credibleSets count 0
+
+> [q944] data.variant.credibleSets.rows[116] studyLocusId 2f47e6b07bdfacbf3c5fca4f5049a3dc pValueMantissa 9.88131332397461 pValueExponent -323 beta 0.15793175706664966 finemappingMethod SuSiE-inf
+
+> [q945] data.variant.credibleSets.rows[116].study id GCST90269503 traitFromSource HDL cholesterol levels (UKB data field 23406) studyType gwas
+
+> [q946] data.variant.credibleSets.rows[116].locus.rows[0] posteriorProbability 0.9579272751503588
+
+> [q947] data.variant.credibleSets.rows[57] studyLocusId 42aa19e9531cf6cf12dd6bdfb274f8f3 pValueMantissa 7 pValueExponent -9 beta 0.13976194237515863 finemappingMethod PICS
+
+> [q948] data.variant.credibleSets.rows[57].study id GCST001100 traitFromSource Age-related macular degeneration studyType gwas
+
+16_56959412_C_A (rs3764261, row 84): 1,707 credible sets hold it (q942), none of the eleven longevity studies queried
+(q943); read over all nine pages, it tops 434, almost all lipid: HDL cholesterol in UK Biobank (SuSiE-inf, P 1e-322,
+alt A β +0.158, posterior 0.96; q944 to q946), A raising HDL in every HDL-cholesterol-level set it tops, with the HDL
+particle fractions up and VLDL and LDL fractions down. One disease set: age-related macular degeneration (GCST001100,
+PICS, P 7e-9, A β +0.140; q947, q948): A, the longer-lived allele, raises it. No coronary set with a β is topped by
+the lead. For row 84.

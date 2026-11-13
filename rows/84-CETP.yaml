@@ -1,0 +1,161 @@
+# The seed list's locus 84, CETP (16q13). Curated 2026-11-13. Lead rs3764261, the seed's lead (entered by the
+# pleiotropy track alone, as CETP's HDL variant): upstream of CETP, C/A, A the minor allele (0.29 in Europeans), the
+# HDL-raising and longer-lived side. The seed's second rsID, rs5882 (CETP I405V, the legacy candidate of Barzilai
+# 2003), is a separate variant with no European LD to the lead that Ensembl reports. Open Targets 26.09: 1,707
+# credible sets hold the lead, none of a lifespan study.
+locus_id: 84
+locus_name: CETP
+verdict: re-tiered
+verdict_reason: >-
+  Tier C, from the seed's B, by R-TIER-4, row 83's shape: nothing at the lead reaches genome-wide significance for a
+  lifespan or healthspan phenotype, nothing in Timmers 2019's window (GRCh37 16:56.7-57.2 Mb) even reaches suggestive
+  (its strongest line P 4.8e-4), and the seed's ground, the pleiotropy track's reading of CETP as an HDL drug target,
+  is a Mendelian-randomisation argument, which R-TIER-4 keeps out of A and B. The variant's own lifespan evidence is
+  nominal and points one way. Timmers 2019's million parents' lives: A longer-lived, P 0.0012, UK Biobank and LifeGen
+  both on that side (Pilling's UK Biobank parents P 1.6e-4). Park 2025's own survival in UK Biobank: A with fewer
+  deaths, P 0.015 (its allele columns swapped, as the frequencies show), the same biobank, co-occurring. Outside UK
+  Biobank: Deelen 2019's 90th percentile, A one-sided 0.038 (its 99th, a subset of the same cases, leans the same way,
+  P 0.23); FinnGen R11's death endpoint, A with fewer deaths, one-sided 0.044, a database line (D29.1). Wright 2019's
+  only nearby line, rs2278490 in the fathers' Table 9, has no LD to the lead that Ensembl reports in CEU or GBR, so
+  AncestryDNA is untested here. Zenin 2019's healthspan leans A's way, flat (P 0.22). B's first condition fails, the
+  nominal results agree in independent samples, and nothing contradicts them, so not D. Lifespan +, exceptional
+  survival + (Deelen's one look-up, one-sided), healthspan 0. The seed's B was the pleiotropy track's; the seed's
+  second rsID, rs5882 (I405V), is Barzilai 2003's candidate: more homozygosity for the variant among 213 Ashkenazi
+  probands with exceptional longevity, a small single-sample candidate-gene result (§4.1's C clause), and in the large
+  samples it is flat (Timmers P 0.35, its V leaning longer; Pilling 0.11; Deelen 0.87 and 0.25; FinnGen 0.28; Zenin
+  0.69). It is a separate variant from the lead, named here and not a variant of this row. Mechanism: ageing in
+  general (D25.7). The lead tops 434 of its 1,707 sets, almost all lipid: A raises HDL cholesterol in every
+  HDL-cholesterol-level set it tops (UK Biobank, posterior 0.96, P 1e-322) and lowers the VLDL and LDL fractions, but
+  nothing shows the lifespan effect runs through HDL, and no coronary set with a β is topped by the lead. One disease
+  set runs against it: age-related macular degeneration, A raising it (P 7e-9), a quoted harm on the longer-lived
+  side (D18.1): tradeoff, so descriptive. Pleiotropy mech:lipids and tradeoff. Causal C4 and effector E4, no gene
+  named: no credible set of a lifespan-class study holds the lead (none of eleven longevity studies queried); CETP is
+  named in prose. A is the minor allele at 29 %, so C/C, the commonest genotype, is the reference (§6.2): A/C and A/A
+  protective, PROTECT:PRESENCE. Age of action unknown. The evidence is European.
+axes:
+  tier: {value: C, cites: [pmid-30642433#q328, pmid-29227965#q71, pmid-29227965#q45, pmid-40021682#q86, pmid-40021682#q32, db-ensembl-116#q636, pmid-31413261#q195, pmid-31413261#q196, db-finngen-r11#q60, pmid-30729179#q116, pmid-14559957#q1, pmid-14559957#q2, pmid-14559957#q3, pmid-30642433#q329, pmid-29227965#q72, pmid-31413261#q197, pmid-31413261#q198, db-finngen-r11#q61, pmid-30729179#q117, db-ensembl-116#q639]}
+  mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q942, db-opentargets-26.09#q944, db-opentargets-26.09#q945, db-opentargets-26.09#q946]}
+  pleiotropy: {values: ["mech:lipids", tradeoff], cites: [db-opentargets-26.09#q944, db-opentargets-26.09#q945, db-opentargets-26.09#q946, db-opentargets-26.09#q947, db-opentargets-26.09#q948]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "+",
+            cites: [pmid-30729179#q116, pmid-30642433#q328, pmid-29227965#q71, pmid-40021682#q86, db-finngen-r11#q60, pmid-31413261#q195, pmid-31413261#q196]}
+  actionability: {label: descriptive, cites: [db-opentargets-26.09#q947, db-opentargets-26.09#q948]}
+  context: {values: [eur_only_evidence], cites: [pmid-30642433#q328, pmid-31413261#q195]}
+flags:
+  - {token: "PROTECT:PRESENCE", cites: [pmid-30642433#q328, db-ensembl-116#q636]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q942, db-opentargets-26.09#q943]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q942, db-opentargets-26.09#q943, db-ensembl-116#q638]}
+variants:
+  - rsid: rs3764261
+    gene: ""
+    phenotype: CETP, HDL cholesterol, parents' lifespan
+    trait_efo_id: EFO_0007796
+    effect_allele: A
+    effect_size: 0.01341945
+    effect_measure: beta
+    stat_significance: nominal
+    direction: protective
+    negatives: >-
+      The longer-life version, A, also goes with a slightly higher risk of age-related macular degeneration, an eye
+      disease of later life.
+    genotypes:
+      - genotype: C/C
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position, as about 50 in 100 people of European
+          ancestry do. It is the reference the other combinations are compared with. The position, on chromosome
+          16, lies just before the CETP gene, which handles cholesterol in the blood. The finding comes from people
+          of European ancestry; less is known elsewhere.
+      - genotype: A/C
+        state: protective
+        conclusion: >-
+          You carry one copy of a less common version of this DNA position (about 41 in 100 people of European
+          ancestry do). It raises "good" HDL cholesterol, and in large studies parents of carriers lived a little
+          longer, with separate studies of people who reached old ages leaning the same way. No single study found
+          it beyond doubt, so this is a possible finding, not a settled one. The same version goes with a slightly
+          higher risk of age-related macular degeneration. The effect is small and it is a tendency, not destiny.
+      - genotype: A/A
+        state: protective
+        conclusion: >-
+          You carry two copies of a less common version of this DNA position (about 9 in 100 people of European
+          ancestry do). Each copy raises "good" HDL cholesterol, and in large studies parents of carriers lived a
+          little longer, with separate studies of people who reached old ages leaning the same way. No single study
+          found it beyond doubt, so this is a possible finding, not a settled one. The same version goes with a
+          slightly higher risk of age-related macular degeneration. The effect is small and it is a tendency, not
+          destiny.
+studies:
+  - rsid: rs3764261
+    note: pmid-30642433
+    quote: q328
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 640179
+    sample_unit: lives
+    stat_significance: nominal
+    p_value: "0.0011796226"
+    p_value_num: 0.0011796226
+    effect_size: 0.01341945
+    effect_measure: beta
+    effect_unit: log hazard protection per A allele in self (positive = longer life)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Timmers 2019's summary statistics (GWAS Catalog GCST009890), SE 0.00414, direction ++ in UK Biobank and LifeGen, info 0.99; Pilling's UK Biobank parents C +0.0090, P 1.6e-4 (pmid-29227965#q71); nothing suggestive in the window"
+    curator: claude-opus-5-5
+  - rsid: rs3764261
+    note: pmid-40021682
+    quote: q86
+    phenotype_class: OWN_SURVIVAL
+    study_design: own_survival_cox
+    population: European (UK Biobank, whole cohort)
+    ancestry: [EUR]
+    sample_size: 393833
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "0.015"
+    p_value_num: 0.015
+    effect_size: 0.00172417
+    effect_measure: beta
+    effect_unit: Martingale residual of a Cox model of own survival per C allele (positive = more deaths than expected, shorter life)
+    effect_allele: C
+    direction: risk
+    statistical_test: "BOLT-LMM on Martingale residuals (pmid-40021682#q39); the deposit prints A at 0.675, C's frequency (db-ensembl-116#q636; Pilling's C 0.675, pmid-29227965#q71), so the labels are swapped (q32) and the β is C's; SE 0.00071; UK Biobank, co-occurring, not a replication"
+    curator: claude-opus-5-5
+  - rsid: rs3764261
+    note: pmid-31413261
+    quote: q195
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.07558"
+    p_value_num: 0.07558
+    p_one_sided: 0.03779
+    effect_size: 0.0362
+    effect_measure: beta
+    effect_unit: log odds of reaching the 90th percentile, per A allele
+    effect_allele: A
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008598), SE 0.0203, effective N 11,615; one-sided 0.038 in A's direction (D25.13, derived); p_one_sided, nominal under D26.13; the 99th percentile A +0.0377, P 0.23 (q196), a subset of the same cases"
+    curator: claude-opus-5-5
+  - rsid: rs3764261
+    note: pmid-30729179
+    quote: q116
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.2187"
+    p_value_num: 0.2187
+    effect_size: -0.00637
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per A allele (positive = earlier)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Zenin 2019's healthspan summary statistics, SE 0.00518, Z -1.23, -log10 P 0.6601 (P 0.22 raw)"
+    curator: claude-opus-5-5
