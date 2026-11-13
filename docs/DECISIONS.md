@@ -639,3 +639,67 @@ From the curator's rows 60 onward; the lead settled them under the person's stan
    heterozygosity to lower risk in APOE ε4 carriers (§4.2's own example), else the row says why not.
 20. **74 keeps `sex_specific:f`**: Pilling's mothers (T β 0.0251, SE 0.00451) against fathers (+0.00206, SE 0.00449)
    differ at P 2.9e-4, both errors counted (D29.16), from the deposits the curator caches and quotes.
+
+## D30 — batch nine: how far D17.1 reaches, a sub-suggestive locus, the Table 9 test corrected (2026-11-13)
+
+From the lead's adversarial read of rows 76 to 87 and the curator's questions on them, settled under the person's
+standing word (pacing off, "full steam ahead"; the advisor pattern for the requirements' silent cells).
+
+1. **D29.18's test is corrected: a Wright Table 9 AncestryDNA line counts only if the table would hold the line
+   with the AncestryDNA arm at z = 0.** "The UK arm alone under 2.5e-3" was the wrong test: a meta-analysis with a
+   null arm is weaker than the UK arm alone, so a UK arm at 0.0019 (78's rs11855102) still needed the AncestryDNA arm
+   to enter the table. The curator computes, per line, the inverse-variance meta from the two printed arms with the
+   AncestryDNA z set to 0, deflated by the factor that turns the printed arms into the printed meta P (about 1.17 to
+   1.24 at 76, 78 and 79), and counts the line only if that P is below 2.5e-3; at these errors the UK arm needs
+   roughly P 1e-4 or less. The row states the number. 76 and 79 pass (0.0013, 1.5e-4); 78's three lines do not. The
+   D29.18 sweep is run again under this test, and the moves reported in one message. Rejected: reading a line
+   "conditional on inclusion" as a P of its own (no rule sets it, and 76 and 79 count either way).
+2. **D17.1 reaches any nearby lifespan signal, a row's lead or not, but only the co-occurring study, never the
+   anchor.** A healthspan or multivariate row's co-occurring lifespan study (D16) is the locus's own signal when it
+   survives conditioning on the stronger lifespan lines in the window, jointly where there are several, with the LD
+   cached and quoted. 87 DHX58: Timmers' lead line passes against each of the two stronger peaks alone (one-sided
+   about 0.008 and 0.005) and fails against both together (about 0.11), in a reviewer's approximation from uncached
+   LD. The curator caches the LD, computes the joint conditional, reads Park at the two peaks and conditions it the
+   same way: if either study stays below one-sided 0.05, 87 is B; if neither, C (D16). B stands until then. The
+   anchor is read at the paper's own P (D17.3): 82's MANOVA stays genome-wide although a reviewer's approximate
+   conditional on rs4784227 (traits taken as independent) drops it to about 0.002; the row names that. Rejected:
+   conditioning the anchor, which would re-correct a paper's call by an approximation of ours; and stopping D17.1 at
+   another row's lead, which would score one lifespan signal for two loci whenever the other has no row yet.
+3. **103 is re-read at its next touch under D25.1.** Its healthspan replication is a D21 red flag on D21's own
+   definition (one-sided power about 0.99, heterogeneity P 0.024; its "about 0.8" was Zenin's power at 0.05/12).
+   The curator computes Timmers' line at 103 conditioned on row 38's lead, with phase and both errors (D17.1 gave
+   only z about 0.6 to 1.7). One-sided 0.05 or above: no independent pass, so D (D25.1, D25.2, D28.10). Below:
+   the row has a lifespan signal of its own, B with `replication_failed` (D16, D17.1's cap). 86 DEF8 is D under
+   D25.1 (the curator's (a)); its prose's comparison with 103 is corrected to the same definition. Rejected: (b),
+   reading a failed same-scale replication as a cap, which would make "explicitly contradicted" unreachable for
+   any healthspan discovery.
+4. **A seed locus with nothing genome-wide or suggestive, whose own lifespan lines in the large samples are nominal,
+   one-way and contradicted nowhere, is C.** §4.1 is silent: C's "suggestive" is not met and none of D's clauses
+   is (the lead is no candidate-gene claim, nothing contradicts it, no meta-analysis is null). C keeps it in the
+   research view with no weight, as row 8 IL6R and 84 CETP stand. Rejected: D, which would show consistent nominal
+   support as negative evidence.
+5. **77 APBA2 stays C (R-TIER-2); LGP's null is named, not counted as a powered test.** LGP is Table 2 with 312
+   cases and 638 controls (not the abstract's 480 and about 800). Its printed P (0.4) would give a D21 flag, but its
+   controls carry G at about 2 %, some 25 times gnomAD's Ashkenazi frequency (0.08 %), so its calls at this rare
+   variant are not shown reliable and its power is unknown (D26.3). That LGP and NECS share one imputation pipeline
+   bears on the discovery (R-TIER-2's batch confounding, already the cap), not on whether LGP contradicts it. No
+   change to 19, 31, 41 or 58. States: protective for G carriers, as 19 (the curator's (a)). Rejected: D under D25.1
+   (the reviewer's), on a test whose own control frequency is out by a factor of 25; D as overfit (the curator's
+   (b)), since gnomAD (0.27 %) agrees with NECS's controls (0.45 %) and 1000 Genomes and ALFA are the outliers.
+6. **`PROTECT:ABSENCE_OF_RISK`'s disease (D26.5) is a genome-wide disease association at the locus, or a disease
+   credible set colocalising with the row's own.** A sub-genome-wide line is named. 79 and 87 (coronary disease
+   P 3e-7) drop the token, as 28.
+7. **A v1 rsID the seed list holds only as a non-lead gets a legacy row of its own** (R-LEGACY-1), curated in the
+   legacy pass: 84's rs5882 (CETP I405V, Barzilai 2003), 57's rs1063192 and the seed's other v1 non-leads (at 43 and
+   96). The row format can hold two variants but not two tiers. rs5882's tier tests Barzilai's VV model as stated
+   (D29.19), not the per-allele looks. 84 names it in its reason meanwhile. Both of the curator's options rejected:
+   (a) left it unreachable, since the legacy pass skipped rsIDs the seed list holds; (b)'s premise, that a row
+   cannot carry two variants, is false.
+8. **The rest, the curator's defaults:** 76 B with `replication_failed`; 78 B (no proxy anchors A at the lead,
+   D29.3, D29.17); 79 A with `sex_specific:m` (D19.2 and D17.3 refuse a correction across Pilling's five scans; the
+   first A row with a sex token, which never folds into the tier); 82's lead rs4783780 and its mechanism metabolism,
+   modifiable through weight (rs4784227 has no lifespan signal of its own once the lead is accounted for; it goes to
+   the scout's queue as a healthspan candidate, D25.6); 83 B (a Genomic SEM factor is multivariate whatever its
+   traits, D27.3) with `tradeoff`, descriptive (the lead leads luminal-A breast cancer, P 2.1e-15); 84's He 2016
+   set named, not counted (no β, the HDL signal); 87 E1 DHX58 (D24, D29.10). 78's and 87's red flags read unknown
+   (D29.11).
