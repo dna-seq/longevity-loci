@@ -1722,3 +1722,10 @@ Neither of row 75's rsIDs holds a GWAS Catalog association (q479 rs35257605, q48
 rs61978928 holds three GWAS Catalog associations (q481), all Pilling 2017's parental longevity: the combined
 attained age (q482, P 2e-8), both parents in the top 10 % (P 3e-7) and fathers' attained age (P 2e-7). No disease.
 For row 76.
+
+## Reading 2026-11-13, record
+
+> [q483] _embedded.associations[0] association_id 80754844 risk_frequency 0.0045 pvalue_description pvalue_mantissa 1 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [NR] beta 5.7181206 unit increase p_value 1e-08 accession_id GCST012419 pubmed_id 33948810 first_author Gurinovich A
+
+rs77184423 holds one GWAS Catalog association (q483): Gurinovich 2021's longevity (100 years and older), risk
+frequency 0.0045, P 1e-8. Nothing else. For row 77.

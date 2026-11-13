@@ -2114,3 +2114,24 @@ rs61978928 (row 76): GRCh38 14:74,855,011 (q582), GRCh37 14:75,321,714 (q583), T
 Genomes Europeans (q584), 0.21 in East Asians (q585). rs929579, Wright's fathers' SNP 9 kb away, is at r² 0.97, D′ 1.0
 in CEU (q586); its T is 0.32 in Europeans (q587), so its T rides with the lead's C. VEP: 3′ UTR of PROX2 (and YLPM1
 transcripts) (q588). For row 76.
+
+## Reading 2026-11-13, record
+
+> [q589] mappings[0] ancestral_allele null seq_region_name 15 assembly_name GRCh38 start 29030729 coord_system chromosome strand 1 end 29030729 location 15:29030729-29030729 allele_string A/G
+
+> [q590] mappings[0] ancestral_allele A strand 1 end 29322932 coord_system chromosome assembly_name GRCh37 allele_string A/G location 15:29322932-29322932 start 29322932 seq_region_name 15
+
+> [q591] populations[55] frequency 0.115308151093439 population 1000GENOMES:phase_3:EUR allele G allele_count 116
+
+> [q592] populations[31] frequency 0.427382753403933 allele G population 1000GENOMES:phase_3:AFR allele_count 565
+
+> [q593] populations[7] allele G population ALFA:SAMN10492695 frequency 0.06404 allele_count 1162
+
+> [q594] [0] assembly_name GRCh38 allele_string A/G seq_region_name 15 id rs77184423 most_severe_consequence intron_variant end 29030729 strand 1 input rs77184423 start 29030729
+
+rs77184423 (row 77): GRCh38 15:29,030,729, where Ensembl's GRCh38 record prints the allele string as A alone (q589);
+GRCh37 15:29,322,932, A/G, A ancestral (q590). G is 0.115 in 1000 Genomes Europeans (q591), 0.43 in Africans (q592),
+0.24 in East Asians, and 0.064 in ALFA's Europeans (q593); the record carries no gnomAD frequency. VEP: intronic in
+APBA2 (q594). NECS's controls carry G at 0.0045 (pmid-33948810#q33-q34) and Park's UK Biobank deposit at about
+0.0008 (pmid-40021682#q79): the HRC-imputed samples see a rare allele where the sequenced panels see a common one,
+so the frequency depends on the source (as at row 19). The EUR LD window at r² ≥ 0.5 holds 107 pairs. For row 77.

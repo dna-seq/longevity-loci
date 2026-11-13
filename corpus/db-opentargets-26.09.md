@@ -3258,3 +3258,14 @@ nine longevity studies holds either variant (q890, and the same for 13_73757854_
 neuroticism and mood swings, monocyte and platelet counts, lung function and molecular QTLs for nearby genes, the lead's
 posterior probability small in those read (0.005 to 0.03): a busy region, where it leads none of the sets read. No set
 of the nine longevity studies holds it (q892). For row 76.
+
+## Reading 2026-11-13, record
+
+> [q893] data.variant.credibleSets.rows[0] studyLocusId 8861fe5a08727499d4db839b592501a0 pValueMantissa 1 pValueExponent -8 beta 5.7181206 finemappingMethod PICS
+
+> [q894] data.variant.credibleSets.rows[0].locus.rows[0] posteriorProbability 1
+
+> [q895] data.variant.credibleSets.rows[0].l2GPredictions.rows[0] score 0.4187757670879364
+
+15_29030729_A_G (rs77184423, row 77): one credible set holds it, Gurinovich's PICS set (q893, P 1e-8), the lead
+alone at posterior probability 1 (q894); locus-to-gene gives APBA2 0.42 (q895), GOLGA6L7 0.20. For row 77.
