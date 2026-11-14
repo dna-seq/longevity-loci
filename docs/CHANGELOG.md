@@ -4,7 +4,7 @@ Newest first.
 
 ## Unreleased
 
-- `dashboard.py --left` holds out 23 TERC, 30 TERT and 104 LRRC34/TERC as well, blocked on the person's D4 (desk #312).
+- `dashboard.py --left` holds out the biological-ageing markers too (the seed's `biological_ageing_rate` subpanel, 16 loci, plus 23 TERC and 30 TERT), blocked on the person's D4 (desk #312).
 - `scripts/dashboard.py --left`: the unblocked seed loci with no row (96 APOE held out on D2), declared as the lead's and the curator's `queue` (kit v0.1.207, D200), so the watchdog wakes either seat idle 2 h with loci left; the person's ask of 2026-11-14. Replaces the lead's interim transcript-polling waker.
 - D30.18: the joint conditional is stepwise (91 stays C); D30.9's shared signal must be the lifespan signal (91 general ageing); D30.10's reference is the matching gnomAD population (89's D on the Danish sample).
 - D30.17: no + outcome cell on a D row from a study sharing the discovery's sample (98 all 0).

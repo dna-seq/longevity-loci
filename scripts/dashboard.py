@@ -113,18 +113,28 @@ def hours(h: float) -> str:
     return f"{h:.0f} h" if h >= 10 else f"{h:.1f} h"
 
 
-# Seed loci waiting on the person, so not in the curator's unblocked queue (rows/PROGRESS.md says why).
-BLOCKED = {96: "APOE waits on the person's decision D2 (desk #307)",
-           23: "TERC waits on the person's decision D4, ageing markers (desk #312)",
-           30: "TERT waits on D4 (desk #312)",
-           104: "LRRC34/TERC waits on D4 (desk #312)"}
+# Seed loci waiting on the person, so not in the curator's unblocked queue (rows/PROGRESS.md says why): APOE on D2
+# (desk #307); the biological-ageing markers on D4 (desk #312), the seed's `biological_ageing_rate` subpanel plus
+# TERT (30) and TERC (23), which PROGRESS's D4 line names.
+BLOCKED_BY_ID = {96: "D2", 23: "D4", 30: "D4"}
+BLOCKED_SUBPANEL = {"biological_ageing_rate": "D4"}
+
+
+def blocked() -> dict[int, str]:
+    """Seed loci waiting on a decision of the person's, each with the decision's name."""
+    out = dict(BLOCKED_BY_ID)
+    with SEED.open(encoding="utf-8") as f:
+        for r in csv.DictReader(f):
+            if r["locus_id"] and r["subpanel"] in BLOCKED_SUBPANEL:
+                out[int(r["locus_id"])] = BLOCKED_SUBPANEL[r["subpanel"]]
+    return out
 
 
 def left() -> int:
     """Seed loci with no row yet that nothing blocks: the curator's queue, for the watchdog's stall wake (kit D200)."""
     held = rows()
     covered = {r["locus_id"] for r in held} | {i for r in held for i in r.get("also_loci", [])}
-    return len(seed_loci() - covered - set(BLOCKED))
+    return len(seed_loci() - covered - set(blocked()))
 
 
 def render(quota: dict | None, now: float) -> str:
