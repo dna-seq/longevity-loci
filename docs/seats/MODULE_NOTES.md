@@ -64,6 +64,10 @@ export (the lead starts it today, to 0.8's studies/variants shape per `docs/FORM
   warnings unchanged). The polygon's 2.0.0 deleted and republished (17:11 UTC); its content_signature equals the
   local compile's, the digest moved by the toolchain as before. The server compiled with compiler 0.8.4, ours
   0.8.5. Receipt appended by hand again. just-dna 0.8.6 is on PyPI; the liaison moves the pin.
+- **2026-11-14:** the liaison pinned plugin v0.48.10 and just-dna 0.8.6 (7e62509); this session runs v0.48.10 after
+  its reload, so the batch-ten rehearsal is the first on 0.8.6. Watch for it: 96 APOE is curated last, after D2 (APOE
+  as a diplotype inside v2, its proxies ld_proxy_of under it). A diplotype is a shape the export has not projected:
+  when D2 lands, ask the tool how 0.8 carries a two-SNP haplotype (describe_table) before the row reaches an export.
 - Plugin caches moved to the data volume (`remember_setting JUST_DNA_PIPELINES_CACHE_DIR`, user config, not the
   repo): `$HOME` is the small volume and Ensembl's lane is about 15 GB. Ensembl lane present 2026-11-12: ensembl-variation-2026_07_13-vep116.0, 14.5 GB (du shows 7.6 GB on BeeGFS).
 
