@@ -17,7 +17,7 @@ verdict_reason: >-
   0.89 and heterogeneity P about 0.024 (0.87 to 0.91 and 0.014 to 0.041 over the printed frequencies' rounding), with
   no independent scoring-class study at P < 0.05 for G, which by D25.1's letter would make the row D. It is held at C,
   the null named and never counted (D30.10, D30.5 generalised): LGP's controls carry G at about a third of gnomAD's Ashkenazi
-  frequency (0.006 against 0.0166; about 8 copies where 21 are expected, P about 0.001), so its calls at this rare
+  frequency (0.006 against 0.0166; about 7 or 8 copies of 1,276 alleles against gnomAD's 41 of 2,471, Fisher two-sided P 0.003 to 0.009 over the rounding, under D30.10's 0.01 but narrowly; LGP's cases sit low too, 0.007, about 4 copies, P about 0.06 against gnomAD), so its calls at this rare
   variant are not shown reliable; the frequencies are printed to one figure, and NECS's crude odds ratio rests on
   about 11 control copies, a winner's curse inflating the power. No replication_failed. The frequency depends on the source, as at 19 and 77: NECS's controls (0.19 %) and gnomAD's
   non-Finnish Europeans (0.15 %) see a rare allele, 1000 Genomes (9.2 %) and ALFA (5.5 %) a common one, and Deelen

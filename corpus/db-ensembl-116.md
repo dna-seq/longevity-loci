@@ -2462,7 +2462,7 @@ Ashkenazi Jews (q683), 7.4 % in its Africans (q684); 9.2 % in 1000 Genomes' Euro
 5.5 % in ALFA's (q682). VEP: intronic in a lncRNA (q685), ENSG00000302257. NECS's controls (0.19 %,
 pmid-33948810#q37) agree with gnomAD; 1000 Genomes and ALFA give a common allele, the frequency Deelen's two indels
 beside it carry (pmid-31413261#q227-q230). The LGP's controls (0.006, pmid-33948810#q38) sit at about a third of
-gnomAD's Ashkenazi 0.0166 (some 8 copies of 1,276 alleles where 21 are expected; derived). The pairwise LD endpoint
+gnomAD's Ashkenazi 0.0166 (7 or 8 copies of 1,276 alleles against gnomAD's 41 of 2,471, Fisher two-sided P 0.003 to 0.009; derived). The pairwise LD endpoint
 (1000 Genomes CEU) returned an empty list between the lead and each of Wright 2019's three nearest lines (rs12955729,
 89 kb; rs17088751, 221 kb; rs11874029, 503 kb), so none tags it at the endpoint's threshold; the empty answers render
 to no text and are not cached. For row 92.
