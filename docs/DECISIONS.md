@@ -740,3 +740,8 @@ standing word (pacing off, "full steam ahead"; the advisor pattern for the requi
    rs429358 and rs7412, with every proxy `ld_proxy_of`, and APOE's ownership is the person's open decision D2
    (§8; recommended there: a diplotype inside v2, `also_in:apoe_epsilon`, after R-APOE-3's render check). 96 stays
    last in rows/PROGRESS.md, waiting on D2, as the curator pointed out.
+15. **A tier D row carries no `sex_specific` token; the contrast is named in prose.** A context token describes an
+   effect the row supports, and a D row supports none (D25.2): `sex_specific:m` on 97 C20orf187 would be read as a
+   property of a real effect. Its conclusions say the discovery was reported in fathers only (P 1.2e-10, mothers
+   0.78) and not supported. 97's top-10 % look, the discovery's own parents, gives no `+` (D28.10), as the curator
+   has it. Rejected: keeping the token as the discovery's own description, which the prose already carries.
