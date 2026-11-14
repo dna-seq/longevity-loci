@@ -76,7 +76,7 @@ variants:
         conclusion: >-
           You carry one copy of a less common version of this DNA position (about 44 in 100 people of European
           ancestry do). In very large studies it went with slightly healthier ageing and parents living a little
-          longer, and a separate study of mothers' lifespans pointed the same way. The same stretch of DNA goes with
+          longer. The same stretch of DNA goes with
           slightly lower body weight and less heart disease. It is a likely finding, not a settled one, and the effect
           is small: a tendency, not destiny.
       - genotype: C/C
@@ -84,7 +84,7 @@ variants:
         conclusion: >-
           You carry two copies of a less common version of this DNA position (about 10 in 100 people of European
           ancestry do). Each copy went with slightly healthier ageing and parents living a little longer in very
-          large studies, and a separate study of mothers' lifespans pointed the same way. The same stretch of DNA
+          large studies. The same stretch of DNA
           goes with slightly lower body weight and less heart disease. It is a likely finding, not a settled one, and
           the effect is small: a tendency, not destiny.
 studies:
@@ -131,10 +131,11 @@ studies:
     study_design: parental_lifespan_linear
     population: AncestryDNA customers of the European population group, their mothers (mostly European American)
     ancestry: [EUR]
-    stat_significance: nominal
+    stat_significance: not_significant
     p_value: "0.002111"
     p_value_num: 0.002111
     p_one_sided: 0.0010555
+    proxy_rsid: rs9899580
     effect_size: 0.008945
     effect_measure: beta
     effect_unit: mothers' lifespan and attained age per rs9899580 G allele, the lead's C (r² 0.98, phased in CEU)
