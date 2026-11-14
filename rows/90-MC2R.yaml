@@ -16,13 +16,15 @@ verdict_reason: >-
   passes 3.8e-5. Outside it: Deelen 2019's 90th percentile leans against A, flat (P 0.34, one-sided 0.17 against), the
   99th flat (P 0.87); FinnGen R11's death endpoint flat (P 0.85). Wright 2019's AncestryDNA has no line at the lead and
   none Ensembl links to it (its nearest lines, 300 to 500 kb away, have no CEU LD pair to the lead), so AncestryDNA is
-  untested; Foote 2025's frailty deposits and Rosoff 2023's mvAge tables hold no line. Against Deelen and FinnGen the red flag is unknown: the discovery's β is on a binary case scale for parents with no published conversion to their scales (D28.1, D26.3). The rsID literature search (Europe PMC, OpenAlex, PubMed, Crossref, preprints; Semantic Scholar answered 429, so its part is unchecked) finds no other lifespan study of the lead. Exceptional survival + (Pilling's top-10 % analysis, the discovery), lifespan + (Pilling's attained
+  untested; Foote 2025's frailty deposits and Rosoff 2023's mvAge tables hold no line. Against Deelen's 90th percentile, calibrated from the discovery as the batch-ten read did, the test flags under APOE's factor (power 0.98) but not under the loci's mean factor (power 0.45), a flag under one calibration only, so none (D25.3); against FinnGen the flag is unknown, the discovery's β being on a binary case scale for parents with no published conversion to own death (D28.1, D26.3). The rsID literature search (Europe PMC, OpenAlex, PubMed, Crossref, preprints; Semantic Scholar answered 429, so its part is unchecked) finds no other lifespan study of the lead. Exceptional survival + (Pilling's top-10 % analysis, the discovery), lifespan + (Pilling's attained
   age and Timmers, nominal, the same biobank), healthspan 0 (Zenin 2019, A later, P 0.28). Mechanism ageing in
   general: MC2R encodes the ACTH receptor of the adrenal cortex, named, with no set or test showing the effect runs
   through it; pleiotropy empty (no other association at the lead), descriptive. Causal C4 and effector E4, no gene
   named: Open Targets has no record of the variant, so no credible set, locus-to-gene or colocalisation; MC2R is named
   in prose. G/G, about 91 in 100 Europeans, is the reference (§6.2); A/G and A/A protective, PROTECT:PRESENCE. Age of
-  action unknown. The evidence is European (UK Biobank).
+  action unknown, departing from the requirements' provisional LATE for MC2R: that call rests on the locus appearing
+  in Pilling's top-10 % scan, a contrast of extremity of survival, not of the age the allele acts (D26.9), and
+  Timmers' age bands do not include the lead. The evidence is European (UK Biobank).
 axes:
   tier: {value: B, cites: [pmid-30642433#q346, pmid-29227965#q79, pmid-29227965#q19, pmid-29227965#q35, pmid-29227965#q37, pmid-29227965#q38, pmid-29227965#q39, pmid-29227965#q80, pmid-30642433#q345, pmid-40021682#q94, pmid-40021682#q32, pmid-31413261#q209, pmid-31413261#q210, db-finngen-r11#q67, db-gwascatalog-2026.10.29#q514, db-opentargets-26.09#q1047]}
   mechanism: {value: general_ageing, cites: [db-ensembl-116#q674]}
