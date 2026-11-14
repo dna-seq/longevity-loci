@@ -1996,3 +1996,22 @@ the lead's G, pmid-30642433#q367) holds six: C lowers body mass index (Pulit 201
 (Levin 2022, P 9e-12, q544-q545; G the risk allele in Enzan 2025, P 5e-9) and serum urate (Major 2024, P 3e-12,
 q546-q547), and the parental lifespan line is Timmers'. The longer-lived allele is the leaner, lower-urate,
 heart-failure-protective one. For row 108.
+
+## Reading 2026-11-14, record
+
+> [q548] page size 200 totalElements 8 totalPages 1 number 0
+
+> [q549] _embedded.associations[2] association_id 16747 risk_frequency 0.032 pvalue_description pvalue_mantissa 1 pvalue_exponent -25 multi_snp_haplotype false snp_interaction false range [NR] or_per_copy_num 5.3 or_value 5.3 beta - p_value 1e-25 accession_id GCST000863 pubmed_id 21051598 first_author Pereyra F
+
+> [q550] _embedded.associations[2].snp_effect_allele[0] rs2395029-G
+
+> [q551] _embedded.associations[7] association_id 11648 risk_frequency 0.03 pvalue_description pvalue_mantissa 2 pvalue_exponent -26 multi_snp_haplotype false snp_interaction false range [3.10-5.30] or_per_copy_num 4.1 or_value 4.1 beta - p_value 2e-26 accession_id GCST000173 pubmed_id 18369459 first_author Liu Y ci_lower 3.1 ci_upper 5.3
+
+> [q552] _embedded.associations[7].snp_effect_allele[0] rs2395029-C
+
+> [q553] _embedded.associations[1] association_id 41435741 risk_frequency 0.4 pvalue_description pvalue_mantissa 6 pvalue_exponent -97 multi_snp_haplotype false snp_interaction false range [25.38-49.58] or_per_copy_num 35.48 or_value 35.48 beta - p_value 6e-97 accession_id GCST007606 pubmed_id 30661239 first_author Nicoletti P ci_lower 25.38 ci_upper 49.58
+
+rs2395029 (row 130): eight associations (q548). G controls HIV-1 (OR 5.3, P 1e-25, q549-q550; and two more) and
+slows AIDS progression; psoriasis OR 4.1, P 2e-26, its allele printed C (q551-q552), the opposite strand's name for
+G, the G being HLA-B*57:01's tag and B*57 a known psoriasis allele (not shown here, so read as stated: allele C,
+unharmonised); flucloxacillin liver injury OR 35, P 6e-97, allele not stated (q553). For row 130.

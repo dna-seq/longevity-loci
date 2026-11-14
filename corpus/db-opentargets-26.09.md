@@ -4091,3 +4091,14 @@ transcript use) and five FinnGen R12 disease sets: essential hypertension, atria
 disease: hypertension −0.0034, P 2.4e-7; atrial fibrillation −0.046, P 2.7e-8; knee arthrosis −0.019, P 1.5e-7);
 locus-to-gene POM121C 0.77 in the bilateral knee arthrosis set, other genes elsewhere. No lifespan-class set holds it
 (q1143): C4, E4. For row 108.
+
+## Reading 2026-11-14, record
+
+> [q1144] data variant null
+
+> [q1145] data variant null
+
+> [q1146] data.credibleSets count 0
+
+6_31464003_T_G (rs2395029, row 130): Open Targets 26.09 has no record under either allele order (q1144, q1145), and no
+lifespan-class set holds it (q1146): C4/E4. For row 130.

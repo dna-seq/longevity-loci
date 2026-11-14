@@ -2646,3 +2646,14 @@ rs7050 at 1.00 (q733), rs62477737 at 0.93 (q732). The pair to Wright's rs1179625
 
 rs55923716 to rs113160991 (row 108): r² 0.61, D′ 1.00 in CEU (q736), the nearest of the lead's proxies in Foote's
 deposits. For row 108.
+
+## Reading 2026-11-14, record
+
+> [q737] mappings[0] start 31464003 end 31464003 allele_string T/G seq_region_name 6 strand 1 location 6:31464003-31464003 assembly_name GRCh38 ancestral_allele null coord_system chromosome
+
+> [q738] populations[31] frequency 0.03669 population gnomADg:nfe allele G allele_count 2495
+
+> [q739] [0] start 31464003 input rs2395029 strand 1 id rs2395029 end 31464003 most_severe_consequence non_coding_transcript_exon_variant seq_region_name 6 allele_string T/G assembly_name GRCh38
+
+rs2395029 (row 130): GRCh38 6:31,464,003, T/G (q737); G 0.037 in gnomAD's non-Finnish Europeans (q738). VEP: a
+non-coding transcript exon variant of HCP5 (q739). For row 130.
