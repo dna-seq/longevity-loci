@@ -2676,3 +2676,11 @@ None is in Wright's Tables 8 or 9 or Rosoff's tables; Foote holds 34 of them (pm
 rs2860197 (row 134): GRCh38 10:121,591,788, G/A/C/T, G ancestral (q741); A 0.61 in gnomAD's non-Finnish Europeans
 (q743). Its CEU window at r² 0.3 (500 kb) holds 45 variants; rs17102287 at 0.35 (q742); Wright's FGFR2 lines are not
 among them. For row 134.
+
+## Reading 2026-11-14, record
+
+> [q744] [0] population_name 1000GENOMES:phase_3:CEU variation2 rs2243609 variation1 rs2860197 r2 0.093702 d_prime 0.871306
+
+Row 134, Wright's lines beyond the lead's 500 kb LD window's reach (Ensembl's window is centred, so about 250 kb each
+side): rs2243609 (477 kb) r² 0.09 in CEU (q744); the pair records for rs10886895, rs9630106, rs7903175, rs2461221, rs10788233, rs7070463 hold no CEU line (below
+Ensembl's reporting floor; the cached `ldpair-rs2860197-*`). None tags the lead. For row 134.

@@ -4122,3 +4122,41 @@ with atrial fibrillation, PR interval and height; their signs are mixed across s
 the allele's direction is read from Zenin's own cancer component (pmid-30729179#q146). Of the nine lifespan-class
 studies, one set holds it (q1152): Zenin's healthspan (GCST007406, q1148), the lead's posterior 0.18 (q1149), C2;
 locus-to-gene FGFR2 0.89 (q1150-q1151), E2 (no colocalisation read). For row 134.
+
+## Reading 2026-11-14, record
+
+> [q1153] data.variant.credibleSets.rows[9].locus.rows[0] posteriorProbability 0.000198176852850536 beta -4.88629462443993e-06 pValueMantissa 5.264999866485596 pValueExponent -5
+
+> [q1154] data.variant.credibleSets.rows[23].locus.rows[0] posteriorProbability 0.0100100872364637 beta -0.000683176411613294 pValueMantissa 1.0520000457763672 pValueExponent -7
+
+> [q1155] data.variant.credibleSets.rows[33].locus.rows[0] posteriorProbability 0.00180155908739698 beta -7.13244447391773e-05 pValueMantissa 4.431000232696533 pValueExponent -6
+
+> [q1156] data.variant.credibleSets.rows[40].locus.rows[0] posteriorProbability 0.00104428781185608 beta -4.61486291589478e-05 pValueMantissa 5.438000202178955 pValueExponent -6
+
+> [q1157] data.variant.credibleSets.rows[99].locus.rows[0] posteriorProbability 0.0439869875239599 beta -0.00275683988815691 pValueMantissa 1.343999981880188 pValueExponent -6
+
+> [q1158] data.variant.credibleSets.rows[16].locus.rows[0] posteriorProbability 0.08196303823619128 beta -0.01127443796939345 pValueMantissa null pValueExponent null
+
+> [q1159] data.variant.credibleSets.rows[18].locus.rows[0] posteriorProbability 0.014131592323291668 beta -0.010537856102567144 pValueMantissa null pValueExponent null
+
+> [q1160] data.variant.credibleSets.rows[38].locus.rows[0] posteriorProbability 0.05643347071915357 beta -0.039074071874835865 pValueMantissa null pValueExponent null
+
+> [q1161] data.variant.credibleSets.rows[43].locus.rows[0] posteriorProbability 0.04950296556115012 beta -0.041809579972145884 pValueMantissa null pValueExponent null
+
+> [q1162] data.variant.credibleSets.rows[35].locus.rows[0] posteriorProbability 0.012578642355732302 beta -0.0108833667182087 pValueMantissa null pValueExponent null
+
+> [q1163] data.variant.credibleSets.rows[17].locus.rows[0] posteriorProbability 0.03765750692791059 beta 0.0057573470260999455 pValueMantissa 9.189254760742188 pValueExponent -15
+
+> [q1164] data.credibleSet.colocalisation count 1
+
+> [q1165] data.credibleSet.colocalisation.rows[0] rightStudyType tuqtl h4 0.9855388618019577 clpp 0.058186062875211865
+
+A set's own `beta` and P belong to the set's lead variant, not to the variant queried (q1133-q1142 and q1147's
+paragraphs read them as the queried lead's; corrected here). The queried lead's own line inside each set, row 108
+(7_75465064_A_G, q1153-q1157): essential hypertension β −0.000005, P 5.3e-5; atrial fibrillation with reimbursement
+−0.0007, P 1.1e-7; gonarthrosis −0.00007, P 4.4e-6; atrial fibrillation −0.00005, P 5.4e-6; bilateral knee arthrosis
+−0.0028, P 1.3e-6: G with less of each at the lead itself, none genome-wide, posteriors 0.0002 to 0.044. Row 134
+(10_121591788_G_A, q1158-q1163): where the lead's own β is printed, A lowers breast cancer (−0.011, −0.011, −0.039,
+−0.042) and cancer (−0.011) and raises atrial fibrillation (+0.0058, P 9.2e-15 at the lead); most breast cancer sets
+print no β for it. The healthspan set (GCST007406) colocalises with one QTL (q1164): a transcript-usage QTL of WDR11,
+H4 0.99 (q1165), not FGFR2, which locus-to-gene names (0.89): effector ambiguous, E3. For rows 108 and 134.
