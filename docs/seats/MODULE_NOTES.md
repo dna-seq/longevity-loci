@@ -81,6 +81,13 @@ export (the lead starts it today, to 0.8's studies/variants shape per `docs/FORM
   pair naming a haplotype nobody defined is a warning, not an error, even strict (`star_allele_undefined`). Not seen:
   how the app or the registry's page shows the table (a publish of the probe would show the registry page; the app
   needs a local install, which this seat runs only on an ask).
+  Published on the lead's word (640351839) as `test-longevity-loci/test_apoe_probe@0.0.1` on the polygon (test-named,
+  so the operator's sweep takes it; delete it once #307 is settled). What the registry shows, read from its record and
+  its web page's code at registry 0.30.0: the version lists `haplotypes.parquet` and `diplotypes.parquet` among the
+  artifact's files (size, hash, download) and the inputs list both CSVs; APOE joins the gene list (27); the variant,
+  study and rsID tiles are unchanged (93, 465, 93). The page has no view of a diplotype's rows: no pair, direction or
+  conclusion is shown, and the page code holds no reference to diplotypes or haplotypes. The server compiled it with
+  compiler 0.8.4, which ships both tables too. How the app shows them waits for the person (the app install).
 - Plugin caches moved to the data volume (`remember_setting JUST_DNA_PIPELINES_CACHE_DIR`, user config, not the
   repo): `$HOME` is the small volume and Ensembl's lane is about 15 GB. Ensembl lane present 2026-11-12: ensembl-variation-2026_07_13-vep116.0, 14.5 GB (du shows 7.6 GB on BeeGFS).
 
