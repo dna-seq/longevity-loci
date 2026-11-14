@@ -735,8 +735,8 @@ standing word (pacing off, "full steam ahead"; the advisor pattern for the requi
    does not act through it, and `smoking_lungs` with `act_behaviour:smoking` (b) would label it by a behaviour that
    goes the wrong way. A raised smoking measure is an established risk factor, so `tradeoff` is set (D18.1) where
    the quote ties A to it; the label stays descriptive.
-14. **APOE (96) is one row with two scored variants**, ε4's rs429358 as lead and ε2's rs7412 beside it, each with its
-   own genotypes and studies; the haplotype is in prose and conclusions; the seed's other APOE-region rsIDs are named
-   as tags or other signals, not scored; rs74444983 goes to the scout as a candidate if independent of ε4. The
-   curator's design default. Rejected: one row per variant, which would split one locus's tier, flags and
-   mechanism across two rows.
+14. **Withdrawn (2026-11-14, same day): APOE is not settled here.** An earlier text of this item made 96 one row with
+   two scored variants. That contradicts the requirements: R-APOE-1 scores APOE once, as an ε diplotype from
+   rs429358 and rs7412, with every proxy `ld_proxy_of`, and APOE's ownership is the person's open decision D2
+   (§8; recommended there: a diplotype inside v2, `also_in:apoe_epsilon`, after R-APOE-3's render check). 96 stays
+   last in rows/PROGRESS.md, waiting on D2, as the curator pointed out.
