@@ -1954,3 +1954,23 @@ Row 95: the trait and allele of q521's association (228207286): years smoked (q5
 > [q534] _embedded.associations[0] association_id 16533112 risk_frequency NR pvalue_description pvalue_mantissa 3 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.059-0.125] beta 0.092149 unit increase p_value 3.0000000000000004e-08 accession_id GCST003393 pubmed_id 27015805 first_author Pilling LC ci_lower 0.059 ci_upper 0.125
 
 rs62227724 holds one GWAS Catalog association (q534): Pilling 2016's mother's age at death. Nothing else. For row 100.
+
+## Reading 2026-11-14, record
+
+> [q535] page size 200 totalElements 823 totalPages 5 number 0
+
+> [q536] _embedded.associations[7] association_id 228335733 risk_frequency 0.9849 pvalue_description pvalue_mantissa 6 pvalue_exponent -29 multi_snp_haplotype false snp_interaction false range [0.2-0.29] beta 0.2466 unit increase p_value 5.999999999999999e-29 accession_id GCST90475936 pubmed_id 39024449 first_author Verma A ci_lower 0.2 ci_upper 0.29
+
+> [q537] _embedded.associations[7].snp_effect_allele[0] rs11591147-G
+
+> [q538] _embedded.associations[17] association_id 228258753 risk_frequency 0.985 pvalue_description pvalue_mantissa 4 pvalue_exponent -295 multi_snp_haplotype false snp_interaction false range [0.4-0.45] beta 0.4257 unit increase p_value 4e-295 accession_id GCST90475416 pubmed_id 39024449 first_author Verma A ci_lower 0.4 ci_upper 0.45
+
+> [q539] _embedded.associations[25] association_id 136019575 risk_frequency NR pvalue_description pvalue_mantissa 8 pvalue_exponent -11 multi_snp_haplotype false snp_interaction false range - beta - p_value 8e-11 accession_id GCST90309362 pubmed_id 38965376 first_author Carey CE
+
+> [q540] _embedded.associations[25].snp_effect_allele[0] rs11591147-?
+
+rs11591147 (row 3): 823 associations over five pages (q535; all five read), lipids and lipoproteins, PCSK9 levels,
+coronary disease, myocardial infarction, aortic stenosis, abdominal aortic aneurysm; none for lifespan, longevity or
+death. Coronary atherosclerosis (Verma 2024, MVP): G the risk allele, β 0.25, P 6e-29 (q536, q537); LDL cholesterol
+G +0.43, P 4e-295 (q538): T lowers LDL and coronary disease. One record names diabetes, a confirmatory factor of
+Carey 2024, P 8e-11, with no allele stated (q539, q540): a trade-off not shown, left open. For row 3.

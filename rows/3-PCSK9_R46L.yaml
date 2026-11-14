@@ -1,0 +1,166 @@
+# The seed list's locus 3, PCSK9 R46L (1p32.3). Curated 2026-11-14. Lead rs11591147, the seed's only rsID: PCSK9's
+# Arg46Leu, GRCh38 1:55,039,974 G/T, GRCh37 1:55,505,647, T the rare allele (0.016 in gnomAD's non-Finnish Europeans,
+# 0.044 in Finns) and the 46L, the loss-of-function, LDL-lowering side. Open Targets 26.09 holds it in 1,659 credible
+# sets, lipid and cardiometabolic, none of the nine lifespan-class studies; the GWAS Catalog (2026-10-29) holds 823
+# associations, none for lifespan, longevity or death.
+locus_id: 3
+locus_name: PCSK9 R46L
+verdict: re-tiered
+verdict_reason: >-
+  Tier C, from the seed's B, row 8 IL6R's shape (D30.4): nothing at this variant reaches genome-wide or suggestive
+  significance in any lifespan-class study, and the seed's B rested on drug-target Mendelian randomization, which
+  R-TIER-4 keeps out of A and B (R-RARE-2's "never above tier B" is met a fortiori). The lifespan results at the
+  variant itself are nominal and point one way: in Timmers 2019's million parents' lives T, the 46L, goes with longer
+  life, +0.048 per copy in self (SE 0.015), P 0.0019, the same side in UK Biobank and LifeGen; in Pilling 2017's
+  UK Biobank parents T goes with longer attained age (both parents P 0.035, fathers 0.0027, mothers flat at 0.78) and
+  raises the chance of both parents reaching the top 10 % of survival (P 0.036); in Zenin 2019 T delays the end of
+  healthspan (P 0.0039). All of these are UK Biobank or hold it. Outside it the variant is untested at any power:
+  Deelen 2019's 90th percentile leans T's way (P 0.17, one-sided 0.087; 99th flat, P 0.92), with one-sided power 0.67
+  under APOE's calibration factor and 0.22 under the loci's mean factor, heterogeneity P 0.54 and 0.64; FinnGen R11's
+  death endpoint leans T's way (P 0.64, power 0.77, heterogeneity P 0.13), a database line; Park 2025's own survival T
+  with fewer deaths (P 0.13, its allele columns swapped), the same biobank. Wright 2019's AncestryDNA tables hold no
+  line that tags the variant (the nearest, rs17111652, r² 0.07 in CEU), so AncestryDNA is untested; Foote 2025's
+  frailty deposits hold no line at it. Nothing contradicts: D's clauses do not fit, and C keeps the variant in the
+  research view with no weight. Two genetic studies of PCSK9 bear on it as annotation, neither a per-allele R46L
+  result. Rosoff 2023's drug-target MR finds genetically proxied PCSK9 inhibition beneficial for its multivariate
+  ageing factor (P 1.6e-6, 20 cis instruments). Benn 2019's allele score of four PCSK9 variants, R46L among them,
+  in 109,566 Danes and UK Biobank, lowers cardiovascular death but not all-cause death (RR 1.01, 0.94 to 1.08 per
+  0.5 mmol/l lower LDL); scaled to R46L's 0.40 mmol/l, 0.95 to 1.06 per allele, which reaches Timmers' 0.953 at its
+  edge and so does not exclude it (derived). Lacaze 2021 finds T carriers among 13,131 healthy Australians over 70
+  without coronary disease with 12 % lower LDL; its prevalence column is a carrier share, not an allele frequency,
+  and it tests no enrichment, so it is named only. The literature search (Europe PMC, OpenAlex, PubMed, Crossref,
+  preprints, Semantic Scholar) finds no other survival test of the variant. Exceptional survival + (Pilling's top 10
+  %, nominal), lifespan + (Timmers, Pilling), healthspan + (Zenin): one-way and nominal, all within UK Biobank.
+  Mechanism heart and vessels: T lowers LDL cholesterol (G +0.43 on LDL, P 4e-295) and coronary atherosclerosis (G
+  the risk allele, P 6e-29), the LDL route stated as `mediator:EFO_0004611`; the catalog's one diabetes record (a
+  factor analysis, P 8e-11) states no allele, so a trade-off is not shown and is left open. Causal C4: no
+  lifespan-class credible set holds it (D17.2). Effector E1 PCSK9: the variant is missense in PCSK9 (Arg46Leu), and
+  every lipid set's locus-to-gene names PCSK9 (0.94 in the first). The protection is a presence, the rare T. Not a
+  treatment indication (R-VOICE-4): a standard cholesterol test shows the actual LDL level. Age of action unknown:
+  Timmers' age bands do not include the variant, and the requirements' MIDLIFE was inferred from coronary risk. The
+  evidence is European.
+axes:
+  tier: {value: C, cites: [pmid-30642433#q362, pmid-29227965#q108, pmid-29227965#q110, pmid-29227965#q111, pmid-30729179#q141, pmid-31413261#q244, pmid-31413261#q245, db-finngen-r11#q77, pmid-40021682#q104, pmid-40021682#q32, db-ensembl-116#q730, db-opentargets-26.09#q1129, pmid-37550455#q79, pmid-37550455#q80, pmid-31221259#q1, pmid-31221259#q2, pmid-34341098#q1, pmid-34341098#q2, pmid-34341098#q3, db-gwascatalog-2026.10.29#q535]}
+  mechanism: {value: heart_vessels, cites: [db-gwascatalog-2026.10.29#q536, db-gwascatalog-2026.10.29#q537, db-gwascatalog-2026.10.29#q538, pmid-34341098#q1]}
+  pleiotropy: {values: ["mr:drug_target_proxy", "mech:cvd", "mech:lipids"],
+               cites: [pmid-37550455#q79, pmid-37550455#q80, pmid-31221259#q2, db-gwascatalog-2026.10.29#q536, db-gwascatalog-2026.10.29#q538, db-gwascatalog-2026.10.29#q539, db-gwascatalog-2026.10.29#q540]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
+            cites: [pmid-30729179#q141, pmid-30642433#q362, pmid-29227965#q108, pmid-29227965#q111]}
+  actionability: {label: preventable, what: ["act_test:ldl"], who: "act_who:doctor", cites: [pmid-34341098#q1]}
+  context: {values: [eur_only_evidence], cites: [pmid-30642433#q362, db-ensembl-116#q728]}
+flags:
+  - {token: "PROTECT:PRESENCE", cites: [pmid-30642433#q362, db-ensembl-116#q728]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1129]}
+  - {token: "effector:E1", cites: [db-ensembl-116#q729, db-opentargets-26.09#q1127, db-opentargets-26.09#q1128]}
+  - {token: "mediator:EFO_0004611", cites: [db-gwascatalog-2026.10.29#q538, pmid-34341098#q1]}  # low density lipoprotein cholesterol measurement
+variants:
+  - rsid: rs11591147
+    gene: PCSK9
+    phenotype: PCSK9 R46L, LDL cholesterol
+    trait_efo_id: EFO_0007796
+    effect_allele: T
+    effect_size: 0.04771378
+    effect_measure: beta
+    stat_significance: nominal
+    direction: protective
+    genotypes:
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position, in the PCSK9 gene, as about 97 in 100
+          people of European ancestry do. PCSK9 controls how much LDL cholesterol, the "bad" cholesterol, the liver
+          clears from the blood. This is the reference the other combinations are compared with. A standard
+          cholesterol test your doctor can order shows your actual LDL level, which matters far more than this DNA
+          result. The finding comes from people of European ancestry; less is known elsewhere.
+      - genotype: G/T
+        state: protective
+        conclusion: >-
+          You carry one copy of a rarer version of the PCSK9 gene (about 3 in 100 people of European ancestry do)
+          that makes the protein work less and lowers LDL cholesterol, the "bad" cholesterol, by about a tenth. In
+          large studies it went with less heart disease and, weakly, with parents who lived a little longer. This is
+          early evidence, not a settled finding, and the difference is small: a tendency, not destiny. A standard
+          cholesterol test your doctor can order shows your actual LDL level, which matters far more than this DNA
+          result. It says nothing about whether any medicine is right for you.
+      - genotype: T/T
+        state: protective
+        conclusion: >-
+          You carry two copies of a rare version of the PCSK9 gene (about 3 in 10,000 people of European ancestry
+          do) that makes the protein work less and lowers LDL cholesterol, the "bad" cholesterol, by about a fifth.
+          In large studies each copy went with less heart disease and, weakly, with parents who lived a little
+          longer; too few people carry two copies to say more. This is early evidence, not a settled finding: a
+          tendency, not destiny. A standard cholesterol test your doctor can order shows your actual LDL level,
+          which matters far more than this DNA result. It says nothing about whether any medicine is right for you.
+studies:
+  - rsid: rs11591147
+    note: pmid-30642433
+    quote: q362
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 623878
+    sample_unit: lives
+    stat_significance: nominal
+    p_value: "0.0018526819"
+    p_value_num: 0.0018526819
+    effect_size: 0.04771378
+    effect_measure: beta
+    effect_unit: log hazard protection per T allele in self (positive = longer life)
+    effect_allele: T
+    direction: protective
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0153, direction ++, info 0.97; Pilling 2017's parents' attained age T longer, P 0.035, fathers 0.0027, mothers 0.78 (pmid-29227965#q108-q110), the same UK Biobank parents; Park 2025's own survival T fewer deaths, P 0.13 (pmid-40021682#q104, columns swapped); FinnGen R11 death T's way, P 0.64 (db-finngen-r11#q77)"
+    curator: claude-opus-5-5
+  - rsid: rs11591147
+    note: pmid-29227965
+    quote: q111
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: British (UK Biobank participants' parents, European descent)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.036"
+    p_value_num: 0.036
+    effect_size: 0.0157465
+    effect_measure: beta
+    effect_unit: BOLT-LMM β on the case indicator (both parents in the top 10 % of survival) per T allele in the participant (positive = more likely)
+    effect_allele: T
+    direction: protective
+    statistical_test: "Pilling 2017's deposit GCST006698, printed as G's β −0.0157 (SE 0.0076), the β A1's (q45); a participant carries half a parent's genotype"
+    curator: claude-opus-5-5
+  - rsid: rs11591147
+    note: pmid-30729179
+    quote: q141
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "0.0039"
+    p_value_num: 0.0039
+    effect_size: -0.053
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per T allele (negative = later)
+    effect_allele: T
+    direction: protective
+    statistical_test: "Zenin 2019's healthspan summary statistics, SE 0.0183, Z −2.888, -log10 P 2.412"
+    curator: claude-opus-5-5
+  - rsid: rs11591147
+    note: pmid-31413261
+    quote: q244
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis; no UK Biobank data)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.1738"
+    p_value_num: 0.1738
+    effect_size: 0.1501
+    effect_measure: beta
+    effect_unit: log odds of survival to the 90th percentile per T allele
+    effect_allele: T
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GCST008598), SE 0.1104, effective N 7,806; one-sided 0.087 (derived); 99th percentile T +0.020, SE 0.210, P 0.92 (q245); against Timmers' per-self β, one-sided power 0.67 under APOE's factor, 0.22 under the loci's mean factor, heterogeneity P 0.54 and 0.64: no test either way (derived)"
+    curator: claude-opus-5-5

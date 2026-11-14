@@ -562,3 +562,11 @@ For row 100.
 FinnGen R11's death endpoint at rs10211471 (q76, row 101; pval, mlogp, beta, sebeta, af_alt): alt T (0.24 in Finns)
 +0.0110 (SE 0.0087), P 0.21: T with more deaths, C's way, one-sided 0.10. Against Timmers' per-self C +0.024: power
 0.87, heterogeneity P 0.19, no flag; a database line. Derived. For row 101.
+
+## Reading 2026-11-14, supplement
+
+> [q77] 1 55039974 G T rs11591147 PCSK9 0.640978 0.193157 -0.00928813 0.0199174 0.0362061 0.0356053 0.0362813
+
+FinnGen R11's death endpoint at rs11591147 (q77, row 3; pval, mlogp, beta, sebeta, af_alt): alt T (0.036 in Finns)
+−0.0093 (SE 0.0199), P 0.64: T with fewer deaths, T's way, flat (one-sided 0.32). Against Timmers' per-self T +0.0477:
+power 0.77, heterogeneity P 0.13, no flag; a database line. Derived. For row 3.

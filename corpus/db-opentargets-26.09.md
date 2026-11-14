@@ -4033,3 +4033,19 @@ colocalisation. For row 100.
 attainment (q1123, q1124; T −0.0136, so C with more schooling), occupational prestige, highest maths class, age
 finishing education, smoking initiation; the lead's posterior 0.01 to 0.22. Education is the prior Timmers' scan
 used here (pmid-30642433#q358). For row 101.
+
+## Reading 2026-11-14, record
+
+> [q1125] data.variant.credibleSets count 1659
+
+> [q1126] data.variant.credibleSets.rows[0].study id GCST90500324 traitFromSource Cholesterol in very large HDL studyType gwas
+
+> [q1127] data.variant.credibleSets.rows[0].l2GPredictions.rows[0] score 0.9422412514686584
+
+> [q1128] data.variant.credibleSets.rows[0].l2GPredictions.rows[0].target approvedSymbol PCSK9
+
+> [q1129] data.credibleSets count 0
+
+1_55039974_G_T (rs11591147, row 3): 1,659 credible sets hold it (q1125), lipid and cardiometabolic, the first a very
+large HDL cholesterol set with the variant's posterior 1 and locus-to-gene PCSK9 0.94 (q1126-q1128). Filtered to the
+nine lifespan, longevity and healthspan studies the rows use, the count is 0 (q1129): C4. For row 3.

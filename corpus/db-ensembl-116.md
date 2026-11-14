@@ -2607,3 +2607,19 @@ rs10211471 (row 101): GRCh38 2:236,173,211, C/A/T, C ancestral (q721); C 0.80 in
 
 Row 101: rs6753712 r² 0.84, D′ 0.93 to rs10211471 in CEU (q725); G 0.17 in gnomAD's non-Finnish Europeans (q726).
 For row 101.
+
+## Reading 2026-11-14, record
+
+> [q727] mappings[0] coord_system chromosome allele_string G/A/T start 55039974 location 1:55039974-55039974 strand 1 assembly_name GRCh38 ancestral_allele G end 55039974 seq_region_name 1
+
+> [q728] populations[29] population gnomADg:nfe frequency 0.01622 allele_count 1104 allele T
+
+> [q729] [0].transcript_consequences[1] sift_prediction tolerated protein_end 46 impact MODERATE amino_acids R/L transcript_id ENST00000302118 biotype protein_coding variant_allele T cds_end 137 codons cGt/cTt cdna_start 427 gene_symbol_source HGNC gene_symbol PCSK9 protein_start 46 cds_start 137 hgnc_id HGNC:20001 cdna_end 427 polyphen_prediction benign gene_id ENSG00000169174 sift_score 0.32 polyphen_score 0 strand 1
+
+> [q730] [0] variation1 rs11591147 r2 0.072264 variation2 rs17111652 d_prime 0.470435 population_name 1000GENOMES:phase_3:CEU
+
+rs11591147 (row 3): GRCh38 1:55,039,974, G/A/T, G ancestral (q727); T 0.016 in gnomAD's non-Finnish Europeans (q728;
+0.044 in Finns, 0.003 in Africans). VEP: T is missense in PCSK9, Arg46Leu (cGt/cTt, q729), the R46L of the seed. LD to
+Wright 2019's nearest parental line, rs17111652 (mothers, 85 kb away), r² 0.07 in CEU (q730): no tag; Ensembl returns
+no pair (below its reporting floor) for rs11206517, rs2647281, rs478513 and rs480963, Wright's other lines within
+250 kb. For row 3.
