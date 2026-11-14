@@ -760,3 +760,9 @@ standing word (pacing off, "full steam ahead"; the advisor pattern for the requi
      `age_dependent`. Evidence-scope tokens (`eur_only_evidence`) and flags (`replication_failed`) stay. D rows 48,
      49 and 72 drop `ancestry_specific:eas` at their next touch and name it in prose. 94's D30.11 reason narrows:
      Pilling's parents are the same parents the pooled Timmers estimate holds, and that estimate does not pass.
+17. **On a tier D row no outcome cell is `+` from a study that shares the discovery's sample** (D28.10 read whole:
+   a D row stands on no study). An independent pass would have kept the row off D (D25.1); a pass inside the
+   discovery's biobank is the discovery's echo, not support. A study against still gives `−`, as 86's Park. 98
+   NOL4L (row 86's shape): Atkins' UK Biobank frailty, Pilling's fathers, Timmers and Park all share UK Biobank, so
+   healthspan and lifespan are 0, the curator's (b). Rejected: (a), `+` cells on a row whose discovery is
+   contradicted, which would show it as supported in the outcome strip.

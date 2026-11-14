@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- D30.17: no + outcome cell on a D row from a study sharing the discovery's sample (98 all 0).
 - D30.16: D30.12's facts corrected (Timmers' beta1 is already per self; 94 and 95 raise no FinnGen flag), 95's tradeoff dropped, D30.15 extended to every effect-describing context token.
 - D30.15: a tier D row carries no sex_specific token (97 names its fathers-only contrast in prose).
 - D30.11-14: a suggestive discovery failing a powered test is D (94); an own-death endpoint compares per self, and a database line sets no D (95 B); 95 general ageing with a smoking trade-off; D30.14 (APOE) withdrawn the same day: R-APOE-1 and the person's D2 decide it.
