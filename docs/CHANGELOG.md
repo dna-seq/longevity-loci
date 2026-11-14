@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- `scripts/dashboard.py --left`: the unblocked seed loci with no row (96 APOE held out on D2), declared as the lead's and the curator's `queue` (kit v0.1.207, D200), so the watchdog wakes either seat idle 2 h with loci left; the person's ask of 2026-11-14. Replaces the lead's interim transcript-polling waker.
 - D30.18: the joint conditional is stepwise (91 stays C); D30.9's shared signal must be the lifespan signal (91 general ageing); D30.10's reference is the matching gnomAD population (89's D on the Danish sample).
 - D30.17: no + outcome cell on a D row from a study sharing the discovery's sample (98 all 0).
 - D30.16: D30.12's facts corrected (Timmers' beta1 is already per self; 94 and 95 raise no FinnGen flag), 95's tradeoff dropped, D30.15 extended to every effect-describing context token.

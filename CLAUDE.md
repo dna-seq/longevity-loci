@@ -136,7 +136,8 @@ verdicts only.
 - `uv run loci fetch-supp KEY LOCATOR`: an article's supplement, data deposit (`zenodo:ID`, `figshare:ID`) or code file
   into `$LOCI_CACHE` as text, beside the article's, where a quote read at depth `supplement` is checked.
 - `scripts/dashboard.py`: the curation dashboard's text (progress, rates, pacing against the weekly cap), which the lead's
-  watcher `dashboard` keeps posted.
+  watcher `dashboard` keeps posted; `--left` prints only the unblocked seed loci with no row, the `queue` count by which the
+  watchdog wakes the lead and the curator when idle 2 h with work left (kit D200).
 - `uv run loci export [OUTDIR]`: the rows projected onto just-dna-format 0.8's `variants.csv` and `studies.csv`
   (default `module/`), with `quote_sources.csv`; what 0.8 has no place for is listed by reason with a count
   (docs/FORMATS.md, "Export").

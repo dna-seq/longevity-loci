@@ -113,6 +113,17 @@ def hours(h: float) -> str:
     return f"{h:.0f} h" if h >= 10 else f"{h:.1f} h"
 
 
+# Seed loci waiting on the person, so not in the curator's unblocked queue (rows/PROGRESS.md says why).
+BLOCKED = {96: "APOE waits on the person's decision D2 (a diplotype inside v2)"}
+
+
+def left() -> int:
+    """Seed loci with no row yet that nothing blocks: the curator's queue, for the watchdog's stall wake (kit D200)."""
+    held = rows()
+    covered = {r["locus_id"] for r in held} | {i for r in held for i in r.get("also_loci", [])}
+    return len(seed_loci() - covered - set(BLOCKED))
+
+
 def render(quota: dict | None, now: float) -> str:
     seed = seed_loci()
     held = rows()
@@ -159,8 +170,12 @@ def render(quota: dict | None, now: float) -> str:
 
 
 @app.command()
-def main(quota: str = typer.Option("", help="a quota.py --json reading: a file, or - for stdin; empty for none")) -> None:
-    """Print the curation dashboard's text."""
+def main(quota: str = typer.Option("", help="a quota.py --json reading: a file, or - for stdin; empty for none"),
+         count: bool = typer.Option(False, "--left", help="print only the number of unblocked seed loci with no row")) -> None:
+    """Print the curation dashboard's text, or with --left the curator's queue count."""
+    if count:
+        typer.echo(left())
+        return
     reading = None
     if quota:
         raw = sys.stdin.read() if quota == "-" else Path(quota).read_text(encoding="utf-8")
