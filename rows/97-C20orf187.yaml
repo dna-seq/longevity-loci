@@ -8,7 +8,8 @@ verdict_reason: >-
   Tier D, from the seed's B (D25.1): a genome-wide discovery that fails a powered test in its own ancestry, with no
   independent scoring-class study at p < 0.05 its way. Pilling 2017's GWAS of UK Biobank participants' fathers'
   attained age puts T with longer-lived fathers, β −0.0143 (SE 0.0022) on the Martingale residual, P 1.2e-10,
-  genome-wide in a stratum (D19.2); mothers flat (P 0.78; fathers against mothers heterogeneity P 1.3e-5), both
+  genome-wide in a stratum (D19.2); mothers flat (P 0.78; fathers against mothers heterogeneity P 1.3e-5, a fathers-only contrast named here with no
+  context token, since a D row supports no effect, D30.15), both
   parents 7.7e-4, age at death 0.43, both parents in the top 10 % 0.057 (T's way, one-sided 0.029). Wright 2019 tests it in AncestryDNA's 309,383 fathers, outside UK Biobank, at
   rs6077996 (8.5 kb away, r² 0.92 and D′ 1.00 in CEU; its UK arm is Pilling's fathers' line at rs6077996 digit for digit, so its A
   rides with the lead's T): the AncestryDNA arm is flat the other way, A +0.0009 (SE 0.0026), raw P 0.72, against the
@@ -43,7 +44,7 @@ axes:
   outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
             cites: [pmid-30729179#q131, pmid-40759756#q35, pmid-30642433#q351, pmid-30642433#q352, pmid-29227965#q92, pmid-31413261#q236, pmid-31413261#q237]}
   actionability: {label: descriptive, cites: [pmid-29227965#q88]}
-  context: {values: ["sex_specific:m", eur_only_evidence], cites: [pmid-29227965#q89, pmid-29227965#q90, pmid-29227965#q88]}
+  context: {values: [eur_only_evidence], cites: [pmid-29227965#q88, pmid-31484785#q145]}
 flags:
   - {token: replication_failed, cites: [pmid-31484785#q144, pmid-31484785#q145, pmid-31484785#q146, db-ensembl-116#q704]}
   - {token: "causal:C1", cites: [db-opentargets-26.09#q1097, db-opentargets-26.09#q1098, db-opentargets-26.09#q1099]}
