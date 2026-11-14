@@ -2454,12 +2454,15 @@ rs35748167, rs650313, rs512279, rs9646627, 72 to 680 kb away) or to rs752720, rs
 
 > [q685] [0] id rs77546126 strand 1 assembly_name GRCh38 end 73851283 seq_region_name 18 allele_string T/A/G most_severe_consequence intron_variant input rs77546126 start 73851283
 
+> [q686] populations[13] allele T allele_count 8460 frequency 1 population gnomADg:fin
+
 rs77546126 (row 92): GRCh38 18:73,851,283, T/A/G (q679; the record holds no GRCh37 mapping, the paper's 71,518,518
-is GRCh37, pmid-33948810#q37). G is 0.15 % in gnomAD's non-Finnish Europeans (q680; 0 in Finns), 1.7 % in its
+is GRCh37, pmid-33948810#q37). G is 0.15 % in gnomAD's non-Finnish Europeans (q680; absent in its Finns, T at frequency 1, q686), 1.7 % in its
 Ashkenazi Jews (q683), 7.4 % in its Africans (q684); 9.2 % in 1000 Genomes' Europeans (q681; CEU 0.11, GBR 0.08) and
 5.5 % in ALFA's (q682). VEP: intronic in a lncRNA (q685), ENSG00000302257. NECS's controls (0.19 %,
 pmid-33948810#q37) agree with gnomAD; 1000 Genomes and ALFA give a common allele, the frequency Deelen's two indels
 beside it carry (pmid-31413261#q227-q230). The LGP's controls (0.006, pmid-33948810#q38) sit at about a third of
 gnomAD's Ashkenazi 0.0166 (some 8 copies of 1,276 alleles where 21 are expected; derived). The pairwise LD endpoint
-(1000 Genomes CEU) returns no pair between the lead and Wright 2019's three nearest lines (rs12955729, 89 kb;
-rs17088751, 221 kb; rs11874029, 503 kb), so none tags it. For row 92.
+(1000 Genomes CEU) returned an empty list between the lead and each of Wright 2019's three nearest lines (rs12955729,
+89 kb; rs17088751, 221 kb; rs11874029, 503 kb), so none tags it at the endpoint's threshold; the empty answers render
+to no text and are not cached. For row 92.
