@@ -187,3 +187,6 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
 - Plugin pinned at v0.48.6 (the liaison, f69789a; toolchain unchanged, format 0.7.1): `validate_module` returns
   `warnings_summary` and `carried`; the polygon's 409 is named as the instance's format skew; the GWAS fix
   (RM428) is on the compiler's main, unreleased. The new session after waking loads the new pin.
+- 2026-11-15: plugin pinned at v0.48.11 (the liaison, 8250a35; toolchain unchanged, just-dna 0.8.6), running here.
+  `enrich_module` now reports `build_diagnoses` (rows whose ref mismatch reads as hg19): read it at the next
+  rehearsal. Next batch so far: rows 3, 100, 101, 108, 130, 134, 135.
