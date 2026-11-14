@@ -68,4 +68,4 @@ tokens a session while its 81 tools stay deferred.
 - reflect after 2026-11-19: classes/base/BASE.md as of v0.1.191 (wake rules spelled out, secrets never repeated, the organisation's script account, handout renamed handoff).
 - Milestones duty held acting since 2026-11-12 (L139, v0.1.192; no pm seat): the state post's source is docs/seats/LEAD_STATE.md, kept with `watchdog.sh keep lead state '#longevity-loci>state' FILE` whenever where-it-stands, a headline or the next actions change; one post per landed result in #longevity-loci>milestones.
 
-- Interim idle waker (the person, 2026-11-14), until kit #481: a session script nudges the curator after 90 min idle with seed loci left, and exits to wake the lead after 3 h idle; restart it when it exits (scratchpad idle-waker.sh, not in git). The compaction waker for #409 runs beside it.
+- Idle wake: the kit's queue key (D200, v0.1.207) on lead and curator, `dashboard.py --left` (81aa31e); the interim scratch waker is stopped.
