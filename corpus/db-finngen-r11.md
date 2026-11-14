@@ -521,3 +521,12 @@ SE 0.0051, pmid-30642433#q350): on that per-self scale one-sided power 0.82 and 
 on the per-parent scale (half, +0.0096, the scale rows 45 and 94 compared FinnGen on) power 0.36, heterogeneity P
 0.026, no flag. Which scale an own-death endpoint compares on is put to the lead; a release line only ever withholds A
 (D25.12, D27.1). All derived. For row 95.
+
+## Reading 2026-11-14, supplement
+
+> [q71] 20 10983718 T C rs6108784 RP11-103J8.1 0.539345 0.268133 0.00472896 0.00770436 0.365813 0.368304 0.365501
+
+FinnGen R11's death endpoint at rs6108784 (q71, row 97): alt C (0.54 in Finns) +0.0047 (SE 0.0077), P 0.37: T with
+slightly fewer deaths, one-sided 0.18, flat. On the per-self scale (D30.12) against Pilling's both-parents effect
+(+0.0176 per T, SE 0.0052): power 0.74, heterogeneity P 0.016, short of a flag; a database line sets no D either
+way. Derived. For row 97.

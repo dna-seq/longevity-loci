@@ -1892,3 +1892,13 @@ disease, A protective, all genome-wide: respiratory failure, insufficiency, arre
 medication for chronic lung disease (P 6e-13 to 1e-19). Smoking: years smoked, A "increase", P 1e-12 (q521). Also
 omega-3 and fatty-acid measures, glycine, alkaline phosphatase, BMI (MTAG, A lower, 5e-8), FEV1 and FEV1/FVC after
 bronchodilator (A higher, 2e-7 and 5e-7). For row 95.
+
+## Reading 2026-11-14, record
+
+> [q522] _embedded.associations[2] association_id 35567984 risk_frequency 0.586 pvalue_description pvalue_mantissa 1 pvalue_exponent -10 multi_snp_haplotype false snp_interaction false range [0.01-0.0186] beta 0.0143 unit decrease p_value 1e-10 accession_id GCST006701 pubmed_id 29227965 first_author Pilling LC ci_lower 0.01 ci_upper 0.0186
+
+> [q523] _embedded.associations[0] association_id 227736328 risk_frequency 0.449 pvalue_description pvalue_mantissa 2 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [1.05-1.1] or_per_copy_num 1.072 or_value 1.072 beta - p_value 2e-08 accession_id GCST91000481 pubmed_id 39198834 first_author Park YJ ci_lower 1.05 ci_upper 1.1
+
+rs6108784 holds three GWAS Catalog associations (row 97): Pilling's fathers' attained age, T, P 1e-10 (q522); blood
+pressure as a metabolic-syndrome component, C, OR 1.072, P 2e-8 (q523); and a mean arterial pressure by depressive
+symptoms interaction, no allele. For row 97.

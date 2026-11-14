@@ -3927,3 +3927,28 @@ lipids and fatty acids 73 (24 signed +1, 4 signed −1, 45 unsigned); lung disea
 G's way with shorter life, 9 unsigned, none −1), among them respiratory failure, COPD, emphysema, chronic airway
 obstruction, pneumonia and lung cancers; smoking 4 (cotinine and years smoked −1, so A raises them; tobacco use
 disorder and smoking cessation unsigned); coffee 6, kidney function 6, other cancers 2, other 13. For row 95.
+
+## Reading 2026-11-14, record
+
+> [q1096] data.variant.credibleSets count 8
+
+> [q1097] data.variant.credibleSets.rows[2] studyLocusId 542c7ae637fa8151e2615f830eb90340 pValueMantissa 1.0819727182388306 pValueExponent -10 beta 0.008991130964325567 finemappingMethod SuSiE-inf
+
+> [q1098] data.variant.credibleSets.rows[2].study id GCST006701 traitFromSource Parental longevity (father's attained age) studyType gwas
+
+> [q1099] data.variant.credibleSets.rows[2].locus.rows[0] posteriorProbability 0.7030831968444489
+
+> [q1100] data.variant.credibleSets.rows[2].l2GPredictions.rows[0] score 0.48606178164482117
+
+> [q1101] data.variant.credibleSets.rows[2].l2GPredictions.rows[0].target approvedSymbol JAG1
+
+> [q1102] data.credibleSet.colocalisation count 31
+
+> [q1103] data.credibleSet.colocalisation count 46
+
+20_10983718_T_C (rs6108784, row 97): eight credible sets hold it (q1096), one of a lifespan-class study: Pilling's
+fathers' attained age (q1097, q1098; SuSiE-inf, P 1.1e-10), the lead at posterior 0.70 (q1099). Locus-to-gene: JAG1
+0.486 (q1100, q1101), under 0.5; SLX4IP 0.14. The set colocalises with 31 GWAS sets (q1102): blood pressure
+(hypertension, pulse pressure, systolic and mean arterial pressure) and heel and total-body bone density, those signed
++1 (the C allele's way, with shorter fathers' lives), and blood urea nitrogen −1; and with 46 QTL sets (q1103),
+every one signed −1 at H4 0.33 to 0.98: LINC02871 (ENSG00000125899) 29, the unnamed ENSG00000270777 17. For row 97.

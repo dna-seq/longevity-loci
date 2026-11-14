@@ -2512,3 +2512,19 @@ consequence for the lead is intronic (q694), in CEP89 (q691). For row 94.
 rs12461964 (row 95): GRCh38 19:40,835,324, A/G/T (q695; Pilling's GRCh37 41,341,229). A is 0.507 in gnomAD's
 non-Finnish Europeans (q696), G 0.42 in 1000 Genomes' East Asians (q697), 0.22 in gnomAD's Africans. VEP: intronic,
 EGLN2 (q698). LD to Wright's rs4609955 r² 0.11 (q699) and rs10411347 r² 0.07 (q700) in CEU. For row 95.
+
+## Reading 2026-11-14, record
+
+> [q701] mappings[0] start 10983718 location 20:10983718-10983718 allele_string T/C end 10983718 coord_system chromosome strand 1 ancestral_allele C assembly_name GRCh38 seq_region_name 20
+
+> [q702] populations[4] allele T population gnomADg:nfe frequency 0.5922 allele_count 40253
+
+> [q703] [0] end 10983718 assembly_name GRCh38 seq_region_name 20 strand 1 id rs6108784 input rs6108784 most_severe_consequence upstream_gene_variant start 10983718 allele_string T/C
+
+> [q704] [0] d_prime 1.000000 population_name 1000GENOMES:phase_3:CEU r2 0.920362 variation2 rs6077996 variation1 rs6108784
+
+> [q705] [0] population_name 1000GENOMES:phase_3:CEU r2 0.550753 d_prime 0.999997 variation1 rs6108784 variation2 rs9974014
+
+rs6108784 (row 97): GRCh38 20:10,983,718, T/C, C ancestral (q701; Pilling's GRCh37 10,964,366). T is 0.59 in gnomAD's
+non-Finnish Europeans (q702). VEP's most severe consequence: upstream of LINC02871 (q703). LD in CEU to Wright's
+rs6077996 r² 0.92, D′ 1.00 (q704), and rs9974014 r² 0.55 (q705). For row 97.
