@@ -12,7 +12,7 @@ file): `[seat.liaison.watch.plugin]` says each new tag.
 
 ## Read mark
 
-**`v0.48.10`**, the tag `.claude/settings.json` pins (2026-11-14). The first mark, `v0.48.0` (3dd8c2a), was
+**`v0.48.11`**, the tag `.claude/settings.json` pins (2026-11-15). The first mark, `v0.48.0` (3dd8c2a), was
 fast-forwarded: no release before it was read.
 
 **The pin does not bind on this machine.** The person's user settings declare the marketplace `just-dna` with no
@@ -22,7 +22,7 @@ ref, and that entry outranks the project's: the client refused `marketplace add 
 while the pin named v0.48.1; updated, it is 0.48.2 at `1b622ff`, the tag plus one notes commit, the same code.
 The person's answer (2026-11-06): drop the user-level entry, so the repository's pin binds; theirs to do,
 since it is their settings file. Still present on 2026-11-09, so the copy is updated by hand to the pinned
-release: `claude plugin update just-module-creator@just-dna --scope project` installed 0.48.10 (2026-11-14), the
+release: `claude plugin update just-module-creator@just-dna --scope project` installed 0.48.11 (2026-11-15), the
 tag or main's head plus notes commits.
 
 ## Backlog
@@ -57,6 +57,14 @@ registry 0.27.0, format 0.7.1, compiler 0.7.2. Our caps (`docs/UPSTREAM_COMPILER
 
 ## Inbound verdicts
 
+- **`v0.48.11`** (2026-11-15). Nothing breaks; toolchain unchanged (the trio 0.8.6, registry 0.31.0, polars 1.44.2,
+  duckdb 1.5.6). *Levers for the curator:* `lookup_old_assembly` names the rsID(s) GRCh37 dbSNP records at an hg19
+  coordinate, never converting a position and never picking among candidates (an unreachable service is
+  unchecked, not absent), for older papers that print only GRCh37 positions; `lookup_citation(pmcid=…)` returns the
+  PMID it maps to as withheld, never filled. *For the module seat:* `enrich_module` now reports `build_diagnoses`
+  (rows whose reference mismatch reads as hg19 coordinates) and `build_not_diagnosed`; `registry_claims` on a gene
+  says it carries no conflict marker (F151); new registry tools for members, profile, reviews, stars, stats, a
+  version's changelog and a card's subtitle without spending a version. Install synced by hand; the import is clean.
 - **`v0.48.10`** (2026-11-14). Its floors move to just-dna 0.8.6 and registry 0.31.0, so ours follow the same day
   (`docs/UPSTREAM_COMPILER.md`). *A lever for the lead and the curator:* `registry_claims` says what every visible
   module's latest version holds for one variant (rsID, VRS id or `chrom:start:ref:alt`) or one authored gene, with
