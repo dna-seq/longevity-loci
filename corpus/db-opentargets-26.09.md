@@ -4056,5 +4056,38 @@ nine lifespan, longevity and healthspan studies the rows use, the count is 0 (q1
 
 > [q1131] data.credibleSets count 0
 
-7_75465064_G_A (rs113160991, row 108): Open Targets 26.09 has no record of the variant (q1130), and no lifespan-class
-set holds it (q1131): C4/E4. For row 108.
+7_75465064_G_A (rs113160991, row 108): the id reversed (Ensembl's ref is A, FinnGen's too), so q1130 and q1131 read
+nothing; the record under 7_75465064_A_G is q1132-q1143. For row 108.
+
+## Reading 2026-11-14, record
+
+> [q1132] data.variant.credibleSets count 103
+
+> [q1133] data.variant.credibleSets.rows[9].study id FINNGEN_R12_I9_HYPTENSESS traitFromSource Hypertension, essential studyType gwas
+
+> [q1134] data.variant.credibleSets.rows[9].locus.rows[0] posteriorProbability 0.000198176852850536
+
+> [q1135] data.variant.credibleSets.rows[23].study id FINNGEN_R12_I9_AF_REIMB traitFromSource Atrial fibrillation and flutter with reimbursement studyType gwas
+
+> [q1136] data.variant.credibleSets.rows[23].locus.rows[0] posteriorProbability 0.0100100872364637
+
+> [q1137] data.variant.credibleSets.rows[33].study id FINNGEN_R12_M13_ARTHROSIS_KNEE traitFromSource Gonarthrosis studyType gwas
+
+> [q1138] data.variant.credibleSets.rows[33].locus.rows[0] posteriorProbability 0.00180155908739698
+
+> [q1139] data.variant.credibleSets.rows[40].study id FINNGEN_R12_I9_AF traitFromSource Atrial fibrillation and flutter studyType gwas
+
+> [q1140] data.variant.credibleSets.rows[40].locus.rows[0] posteriorProbability 0.00104428781185608
+
+> [q1141] data.variant.credibleSets.rows[99].study id FINNGEN_R12_PRIM_KNEEARTHROSIS traitFromSource Primary gonarthrosis, bilateral studyType gwas
+
+> [q1142] data.variant.credibleSets.rows[99].locus.rows[0] posteriorProbability 0.0439869875239599
+
+> [q1143] data.credibleSets count 0
+
+7_75465064_A_G (rs113160991, row 108): 103 credible sets (q1132), 98 of them QTL sets (expression, splicing,
+transcript use) and five FinnGen R12 disease sets: essential hypertension, atrial fibrillation (two), knee arthrosis
+(two) (q1133-q1142). In each the lead's posterior is small, 0.0002 to 0.044, and its β for G is negative (G with less
+disease: hypertension −0.0034, P 2.4e-7; atrial fibrillation −0.046, P 2.7e-8; knee arthrosis −0.019, P 1.5e-7);
+locus-to-gene POM121C 0.77 in the bilateral knee arthrosis set, other genes elsewhere. No lifespan-class set holds it
+(q1143): C4, E4. For row 108.

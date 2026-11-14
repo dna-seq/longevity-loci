@@ -577,5 +577,5 @@ power 0.77, heterogeneity P 0.13, no flag; a database line. Derived. For row 3.
 
 FinnGen R11's death endpoint at rs113160991 (q78, row 108; pval, mlogp, beta, sebeta, af_alt): ref A, alt G (0.85 in
 Finns) +0.0072 (SE 0.0103), P 0.48: G with more deaths, against G, one-sided 0.24. Against Timmers' per-self G
-+0.0254: one-sided power 0.79, heterogeneity P 0.0044; short of D21's power and a database line (D30.12). Derived.
++0.0254: one-sided power 0.79, heterogeneity P 0.0044; no D21 flag (power under 0.8), and a database line sets no D in any case (D30.12). Derived.
 For row 108.

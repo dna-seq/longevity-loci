@@ -2639,3 +2639,10 @@ no pair (below its reporting floor) for rs11206517, rs2647281, rs478513 and rs48
 rs113160991 (row 108): GRCh38 7:75,465,064, A/C/G, G ancestral (q731); G 0.78 in gnomAD's non-Finnish Europeans
 (q734). VEP: intronic (q735). Its CEU LD window at r² 0.5 (500 kb): eleven variants at 0.8 or more, rs6944634 and
 rs7050 at 1.00 (q733), rs62477737 at 0.93 (q732). The pair to Wright's rs1179625 returned no text. For row 108.
+
+## Reading 2026-11-14, record
+
+> [q736] [35] d_prime 0.999993 population_name 1000GENOMES:phase_3:CEU variation1 rs113160991 r2 0.612073 variation2 rs55923716
+
+rs55923716 to rs113160991 (row 108): r² 0.61, D′ 1.00 in CEU (q736), the nearest of the lead's proxies in Foote's
+deposits. For row 108.
