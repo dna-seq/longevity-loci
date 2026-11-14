@@ -2703,3 +2703,10 @@ rs3135388 (row 135): GRCh38 6:32,445,274, A/C/G/T (q745); A 0.139 in gnomAD's no
 
 rs9271423 to rs3135388 (row 135): r² 1.00, D′ 1.00 in CEU (q748), the proxy at which Foote's deposits are read
 (pmid-40759756#q64-q67). For row 135.
+
+## Reading 2026-11-15, record
+
+> [q749] [2] d_prime 0.958179 population_name 1000GENOMES:phase_3:CEU variation1 rs3135388 r2 0.817264 variation2 rs3130279
+
+rs3130279 to rs3135388 (row 135): r² 0.82, D′ 0.96 in CEU (q749). The pair record for row 38's lead rs34967069 holds no
+CEU line, so its LD to 135 is unknown from Ensembl. For row 135.

@@ -24,7 +24,8 @@ verdict_reason: >-
   1.8e-5, fathers 0.052) and both parents in the top 10 % (G raising the chance, P 1.5e-4); Park 2025's own survival G
   with fewer deaths (P 0.072, its allele columns swapped). Lifespan + (the discovery, Pilling), exceptional survival +
   (Pilling's top 10 %, one-sided for G, D26.2; Deelen flat, not against), healthspan 0 (Zenin, G's way, P 0.70).
-  Mechanism metabolism: the scan's own priors were BMI and insulin, and at the proxy rs6944634 the longer-lived C (with
+  Mechanism ageing in general (D25.7, as row 101 beside its education prior; nothing shows the effect runs
+  through weight): the scan's own priors were BMI and insulin, and at the proxy rs6944634 the longer-lived C (with
   the lead's G) lowers body mass index (P 8e-25), heart failure (P 9e-12) and serum urate (P 3e-12); in FinnGen R12's disease sets that hold the lead,
   at small posteriors, the lead's own lines have G with less hypertension, atrial fibrillation and knee arthrosis (P
   5e-5 to 1e-7, none genome-wide). POM121C is named
@@ -37,7 +38,7 @@ verdict_reason: >-
   0.62) does not survive correction; Pilling's mothers carry more of it. The evidence is European.
 axes:
   tier: {value: B, cites: [pmid-30642433#q365, pmid-30642433#q42, pmid-30642433#q366, pmid-30642433#q373, db-ensembl-116#q732, pmid-30642433#q367, pmid-31413261#q246, pmid-31413261#q247, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, db-finngen-r11#q78, pmid-31484785#q153, pmid-31484785#q154, db-ensembl-116#q733, pmid-29227965#q113, pmid-29227965#q116, pmid-40021682#q105, pmid-40021682#q32, db-opentargets-26.09#q1143]}
-  mechanism: {value: metabolism, cites: [pmid-30642433#q365, db-gwascatalog-2026.10.29#q542, db-gwascatalog-2026.10.29#q543, db-gwascatalog-2026.10.29#q544, db-gwascatalog-2026.10.29#q545]}
+  mechanism: {value: general_ageing, cites: [pmid-30642433#q365, db-gwascatalog-2026.10.29#q542, db-gwascatalog-2026.10.29#q543, db-gwascatalog-2026.10.29#q544, db-gwascatalog-2026.10.29#q545]}
   pleiotropy: {values: ["mech:adiposity", "mech:cvd"],
                cites: [db-opentargets-26.09#q1153, db-opentargets-26.09#q1154, db-opentargets-26.09#q1157, db-gwascatalog-2026.10.29#q542, db-gwascatalog-2026.10.29#q543, db-gwascatalog-2026.10.29#q544, db-gwascatalog-2026.10.29#q545, db-gwascatalog-2026.10.29#q546, db-gwascatalog-2026.10.29#q547]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
