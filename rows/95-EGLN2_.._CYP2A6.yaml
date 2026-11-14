@@ -17,11 +17,9 @@ verdict_reason: >-
   by D25.3, it flags under APOE's factor (power 1.00, heterogeneity P 2.3e-4 from the fathers' effect, 0.025 from the
   both-parents form) and not under the loci's mean factor (power 0.83, P 0.10; 0.54, P 0.40), so no flag. FinnGen
   R11's death endpoint, independent of both, leans against A (G with fewer deaths, P 0.29, one-sided 0.14 against).
-  Tested on Pilling's both-parents effect (D28.2) carried to Timmers' Figure 2 sheet by Pilling's own ratio (+0.0192
-  per A, a per-self scale), it is a D21 flag: power 0.82, heterogeneity P 0.0028; on the per-parent scale (half, the
-  scale rows 45 and 94 compared FinnGen on) power 0.36, P 0.026, no flag. An own-death endpoint compares on the per-self
-  scale (D30.12), so the flag is stated and bars A; a database release line sets no D (D30.12, D27.1's mirror), so B
-  holds. Wright 2019's
+  Tested on Pilling's both-parents effect (D28.2) at the factor Timmers' Figure 2 sheet uses for both-parents results
+  (about 1.97, D30.16): expected +0.0166 per A per self, one-sided power 0.71, short of D21's 0.8, so no flag; a
+  database line sets no D in any case (D30.12). Wright 2019's
   AncestryDNA is untested: its fathers' lines in the window (rs4001941, rs4609955, 85 to 92 kb away) do not tag the
   lead (r² 0.11 or no pair in CEU). Within UK Biobank the rest co-occurs: Timmers 2019's million parents' lives, A
   longer, P 0.0071, "++" (UK Biobank inside); Park 2025's own survival, A with fewer deaths, P 0.0084 (its allele
@@ -36,20 +34,20 @@ verdict_reason: >-
   and years smoked (GWAS Catalog P 1e-12); coffee, kidney function and other sets besides. The GWAS Catalog has A
   lowering respiratory failure (P 2e-21) and chronic bronchitis (3e-15). The longer-lived A smokes for longer and
   carries more cotinine, so smoking runs against the lifespan effect and the locus is not labelled by it (D30.13):
-  general ageing, descriptive. A raised smoking measure is an established risk factor, so `tradeoff` is set where
-  the quote ties A to it (D18.1, D30.13); LDL runs with A's longer life, no harm quoted on its side. Pleiotropy
-  mech:smoking, mech:lipids and tradeoff. Causal C1: the lead's posterior 0.545 in the fathers' set. Effector E2 CYP2A6: two CYP2A6 splicing QTLs
+  general ageing, descriptive. No trade-off (D26.4, D30.16): every signed lung-disease set
+  runs with G, and A lowers respiratory failure and chronic bronchitis, so no quote ties A to a harm; LDL runs with
+  A's longer life. Pleiotropy mech:smoking and mech:lipids. Causal C1: the lead's posterior 0.545 in the fathers' set. Effector E2 CYP2A6: two CYP2A6 splicing QTLs
   colocalise with the set (H4 ≥ 0.8); the set has no locus-to-gene rows, so not E1; no rival gene colocalises (D24).
   A/G, about half of Europeans, is the reference (§6.2); A/A protective, G/G risk. No PROTECT token: A is at 0.51,
   neither the common non-risk allele nor a rare protective one. Age of action unknown. The evidence is European.
 axes:
   tier: {value: B, cites: [pmid-29227965#q83, pmid-29227965#q84, pmid-29227965#q85, pmid-29227965#q86, pmid-29227965#q87, pmid-29227965#q45, db-gwascatalog-2026.10.29#q494, pmid-30642433#q350, pmid-31413261#q234, pmid-31413261#q235, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, db-finngen-r11#q70, pmid-30642433#q350, pmid-31484785#q142, pmid-31484785#q143, db-ensembl-116#q699, pmid-30642433#q349, pmid-40021682#q98, pmid-40021682#q32]}
-  mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q1077, db-opentargets-26.09#q1081, db-opentargets-26.09#q1082, db-opentargets-26.09#q1083, db-opentargets-26.09#q1084, db-opentargets-26.09#q1085, db-opentargets-26.09#q1086, db-opentargets-26.09#q1087, db-opentargets-26.09#q1088, db-opentargets-26.09#q1089, db-opentargets-26.09#q1090, db-gwascatalog-2026.10.29#q519, db-gwascatalog-2026.10.29#q520, db-gwascatalog-2026.10.29#q521]}
-  pleiotropy: {values: ["mech:smoking", "mech:lipids", "tradeoff"], cites: [db-opentargets-26.09#q1085, db-opentargets-26.09#q1086, db-opentargets-26.09#q1087, db-opentargets-26.09#q1088, db-gwascatalog-2026.10.29#q521, db-opentargets-26.09#q1091, db-opentargets-26.09#q1092, db-opentargets-26.09#q1094]}
+  mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q1077, db-opentargets-26.09#q1081, db-opentargets-26.09#q1082, db-opentargets-26.09#q1083, db-opentargets-26.09#q1084, db-opentargets-26.09#q1085, db-opentargets-26.09#q1086, db-opentargets-26.09#q1087, db-opentargets-26.09#q1088, db-opentargets-26.09#q1089, db-opentargets-26.09#q1090, db-gwascatalog-2026.10.29#q519, db-gwascatalog-2026.10.29#q520, db-gwascatalog-2026.10.29#q521, db-gwascatalog-2026.10.29#q532, db-gwascatalog-2026.10.29#q533]}
+  pleiotropy: {values: ["mech:smoking", "mech:lipids"], cites: [db-opentargets-26.09#q1085, db-opentargets-26.09#q1086, db-opentargets-26.09#q1087, db-opentargets-26.09#q1088, db-gwascatalog-2026.10.29#q521, db-opentargets-26.09#q1091, db-opentargets-26.09#q1092, db-opentargets-26.09#q1094]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "0",
             cites: [pmid-29227965#q83, pmid-29227965#q84, pmid-30642433#q349, pmid-29227965#q87, pmid-31413261#q234, pmid-31413261#q235, pmid-30729179#q130]}
-  actionability: {label: descriptive, cites: [db-opentargets-26.09#q1087, db-opentargets-26.09#q1088, db-gwascatalog-2026.10.29#q521]}
+  actionability: {label: descriptive, cites: [db-opentargets-26.09#q1087, db-opentargets-26.09#q1088, db-gwascatalog-2026.10.29#q521, db-gwascatalog-2026.10.29#q532, db-gwascatalog-2026.10.29#q533]}
   context: {values: ["sex_specific:m", eur_only_evidence], cites: [pmid-29227965#q84, pmid-29227965#q85, pmid-29227965#q83]}
 flags:
   - {token: "causal:C1", cites: [db-opentargets-26.09#q1077, db-opentargets-26.09#q1078, db-opentargets-26.09#q1079]}
@@ -64,10 +62,6 @@ variants:
     effect_measure: beta
     stat_significance: significant
     direction: protective
-    negatives: >-
-      The longer-life version, A, goes with more years of smoking among smokers and higher cotinine, a nicotine
-      breakdown product measured in smokers' blood, though it also goes with less chronic lung disease. How these
-      weigh against the longer life of fathers is not measured.
     genotypes:
       - genotype: A/G
         state: neutral

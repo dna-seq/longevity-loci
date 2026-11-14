@@ -1939,3 +1939,12 @@ smoked per day, C "increase", P 3e-64 (q528, q529; and four more cigarettes-per-
 T down); chronic obstructive pulmonary disease, C "increase", P 2e-9 (q530, q531); nicotine dependence (C, 8e-9),
 problematic tobacco use (1e-16, no allele), Foote's unhealthy-lifestyle frailty factor (1e-10). T, the longer-lived
 fathers' allele, goes with fewer cigarettes and less COPD. For row 99.
+
+## Reading 2026-11-14, record
+
+> [q532] _embedded.associations[7].reported_trait[0] How many years have you or did you smoke cigarettes? (inv-normal transformed)
+
+> [q533] _embedded.associations[7].snp_allele[0] rs_id rs12461964 effect_allele A
+
+Row 95: the trait and allele of q521's association (228207286): years smoked (q532), effect allele A (q533), so A
+"increase" in q521 is A with more years smoked. For row 95.
