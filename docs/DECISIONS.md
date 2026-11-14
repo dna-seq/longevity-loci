@@ -797,3 +797,5 @@ standing word (pacing off, "full steam ahead"; the advisor pattern for the requi
    since the r² decides whether a proxy's line counts. Rejected: (a), at each row's next touch, which leaves tiers
    resting on a frequency read as LD meanwhile. 108's FinnGen line is D30.12 as D30.16 left it: a database line,
    its test stated, no D and no `replication_failed`; B stands.
+   Checked the same day: all four already took their r² from Ensembl (25 EUR 0.83, 51 CEU 0.94, 59 CEU 0.94, 103 EUR
+   0.80); the sheet's values appear nowhere as r². Nothing moved; the rule stands for rows to come.
