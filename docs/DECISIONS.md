@@ -708,3 +708,10 @@ standing word (pacing off, "full steam ahead"; the advisor pattern for the requi
    lower BMI in sets it does not lead is named and stays `general_ageing`, descriptive. 88 B4GALNT2P1 (C lowers BMI in
    17 sets, leads none, no mediation): the curator's (a). Rejected: (b), metabolism through weight on direction
    alone, which would label most lifespan loci by the BMI they correlate with.
+10. **D30.5 generalised: a replication sample whose controls misfit their population's reference frequency at the
+   variant (P < 0.01, either direction) has calls not shown reliable there; its power is unknown (D26.3).** It is
+   named with the misfit, never counted, and the rule cuts both ways: such a sample's pass does not count either.
+   92 FBXO15: LGP's controls carry G at 0.006 against gnomAD's Ashkenazi 0.0166 (about 8 copies where 21 are
+   expected, P about 0.001), so its null (P 0.9) is not a D21 flag and 92 stays C (R-TIER-2), the curator's (a).
+   Rejected: (b), D on a test whose own controls misfit at that level; and a fold-change cut, which says nothing
+   about the counts it rests on.
