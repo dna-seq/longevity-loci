@@ -715,3 +715,28 @@ standing word (pacing off, "full steam ahead"; the advisor pattern for the requi
    expected, P about 0.001), so its null (P 0.9) is not a D21 flag and 92 stays C (R-TIER-2), the curator's (a).
    Rejected: (b), D on a test whose own controls misfit at that level; and a fold-change cut, which says nothing
    about the counts it rests on.
+11. **A suggestive discovery that fails a powered test is D, as a genome-wide one is (D25.1, a fortiori), and a pass
+   inside the failing sample is no independent pass.** 94 CEP89: Deelen's suggestive discovery (P 1.7e-7 European)
+   fails Timmers under both calibrations (heterogeneity P 0.006 and 2e-5). Pilling's UK Biobank parents (one-sided
+   0.038) sit inside Timmers, the sample that fails, so they are part of that failure, not D25.1's independent
+   exception; at 74 the passing samples sat outside the flagging one. 94 is D, genotypes neutral, lifespan 0
+   (D25.2, D28.10). The curator's (a), C with Pilling counted, rejected.
+12. **An own-death endpoint is compared on the per-self scale; a database release line neither makes D nor makes A.**
+   A parental-lifespan β per offspring allele is half the effect in the carrier, so FinnGen's death endpoint (the
+   carrier's own) is compared with the per-self effect (Timmers' Figure 2 scale, twice the per-parent β), under
+   both calibrations where a conversion is involved (D25.3). A FinnGen release line is a curator-read database line:
+   it never replicates (D12, D29.1), and by D27.1's mirror it contradicts no more than it replicates, so its flag is
+   stated and bars A (§4.1's last criterion) but sets no D. 95 (Pilling's fathers, P 8.2e-9): FinnGen on the per-self
+   scale flags (power 0.82, heterogeneity P 0.0028), stated; 95 stays B with `sex_specific:m` (option (c)). 45's and
+   94's FinnGen tests are re-read on the per-self scale at their next touch, for the statement only. Rejected: (a),
+   the per-parent scale, which halves the expected effect in the carrier; (b), D on a database line.
+13. **95's mechanism: general_ageing, descriptive, `mech:smoking`, `mech:lipids` (as 29), the curator's (a).** The
+   longer-lived A raises cotinine and years smoked (P 1e-12): smoking runs against the lifespan effect, so the locus
+   does not act through it, and `smoking_lungs` with `act_behaviour:smoking` (b) would label it by a behaviour that
+   goes the wrong way. A raised smoking measure is an established risk factor, so `tradeoff` is set (D18.1) where
+   the quote ties A to it; the label stays descriptive.
+14. **APOE (96) is one row with two scored variants**, ε4's rs429358 as lead and ε2's rs7412 beside it, each with its
+   own genotypes and studies; the haplotype is in prose and conclusions; the seed's other APOE-region rsIDs are named
+   as tags or other signals, not scored; rs74444983 goes to the scout as a candidate if independent of ε4. The
+   curator's design default. Rejected: one row per variant, which would split one locus's tier, flags and
+   mechanism across two rows.
