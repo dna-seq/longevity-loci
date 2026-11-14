@@ -2598,3 +2598,12 @@ row 100.
 
 rs10211471 (row 101): GRCh38 2:236,173,211, C/A/T, C ancestral (q721); C 0.80 in gnomAD's non-Finnish Europeans
 (q722). VEP: intronic (q724). LD to Wright's rs6752442 r² 0.54, D′ 1.00 in CEU (q723). For row 101.
+
+## Reading 2026-11-14, record
+
+> [q725] [0] variation1 rs10211471 variation2 rs6753712 population_name 1000GENOMES:phase_3:CEU r2 0.837096 d_prime 0.930426
+
+> [q726] populations[16] allele_count 11806 frequency 0.1736 allele G population gnomADg:nfe
+
+Row 101: rs6753712 r² 0.84, D′ 0.93 to rs10211471 in CEU (q725); G 0.17 in gnomAD's non-Finnish Europeans (q726).
+For row 101.

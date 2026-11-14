@@ -9,29 +9,38 @@ verdict_reason: >-
   prior here is educational attainment, calls the locus genome-wide at a Bayes-factor permutation P of 2.3e-8, under
   its 2.5e-8, and reports it genome-wide for the first time; the conventional P in its million parental lives is
   1.1e-6 (C +0.24 years per copy, UK Biobank and LifeGen on the same side). So a genome-wide locus by the paper's call,
-  never A, part of the call's evidence being the education GWAS behind the prior. Nothing independent replicates it,
-  and nothing powered contradicts it: Timmers' own Figure 4 look-up in the earlier longevity sample, at rs6757542
+  never A, part of the call's evidence being the education GWAS behind the prior. Outside UK Biobank and LifeGen,
+  Wright 2019's AncestryDNA fathers born 1886-1918 lean the discovery's way at rs6753712 (r² 0.84 in CEU, its G with
+  the lead's T, G shorter-lived, P 0.0019 after genomic control, one-sided about 0.001; Supplemental Table 8, which
+  lists only lines under P 0.003, so selected on its own P): counted as an independent replication, as row 40 counted
+  its Table 8 line, and the tier stays B by D28.7 either way; whether a Table 8 line counts is put to the lead. Nothing
+  powered contradicts it: Timmers' own Figure 4 look-up in the earlier longevity sample, at rs6757542
   (r² 0.83), is flat (one-sided 0.44, Alpha 0.08); Deelen 2019 leans C's way (90th one-sided 0.16, 99th 0.10), a flag
-  under APOE's factor at the 90th only (power 1.00, heterogeneity P 0.0076; the mean factor power 0.63), so none
+  under APOE's factor at the 90th only (power 1.00, heterogeneity P 0.0073; the 99th power 0.92, P 0.14; the mean
+  factor power 0.63), so none
   (D25.3); FinnGen R11's death endpoint leans C's way (one-sided 0.10; power 0.87, heterogeneity P 0.19), no flag, a
-  database line. Wright 2019's AncestryDNA has only a weak tag (rs6752442, r² 0.54, fathers born 1886-1918, P 0.0011
-  after genomic control), named, not counted. Pilling 2017's deposits hold no line at the lead. Within UK Biobank,
+  database line. Wright's other fathers' line nearby, rs6752442 (r² 0.54), leans the same way, named. Pilling 2017's
+  deposits returned no line at the lead or in the window, unread rather than absent. The GWAS Catalog holds no
+  association for the lead; Rosoff 2023's tables hold no line; the rsID literature search (all six sources answered)
+  finds Timmers 2019 alone. Within UK Biobank,
   Park 2025's own survival co-occurs (C fewer deaths, P 0.011, its allele columns swapped). Lifespan + (Timmers);
   healthspan 0 (Zenin 2019 C's way, P 0.37; Foote 2025's general frailty factor C less frail, P 0.035, and four of
-  six factors its way, multivariate, D27.3, scoring nothing alone); exceptional survival 0 (Deelen and Figure 4 flat).
+  six factors its way, none genome-wide: a multivariate factor fills the healthspan cell only when genome-wide beside a
+  co-occurring lifespan study, as at 91 and 99, D16); exceptional survival 0 (Deelen and Figure 4 flat).
   Foote at the lead is read (D27.3's GBX2/ASB18 check): every deposit holds the line, none genome-wide. Mechanism
   general ageing: the lead's only other sets are educational attainment and its kin (C with more schooling, posterior
   0.01 to 0.22) and smoking initiation, none colocalising with a lifespan set here, and education is a prior, not a
-  shown route (D17.7). Pleiotropy empty, descriptive. Causal C4 and effector E4, no gene named: no lifespan-class
+  shown route (D17.7). Pleiotropy mech:education, as rows 29 and 95 carry their routes beside general ageing;
+  descriptive. Causal C4 and effector E4, no gene named: no lifespan-class
   credible set holds the lead; GBX2 and ASB18 are named in prose. C/C, about 65 in 100 Europeans, is the reference
-  (§6.2); C/T and T/T risk. No PROTECT token: no disease is known at the locus (D30.6). Age of action lifelong, weakly: Timmers'
-  age moderator at the lead is null (β about 1e-4, P 0.85, Q 0.93; Figure 5 source data), with the fathers' age-band
-  effects of the same size from 50 to 90, as rows 25 and 37 read theirs. The evidence is European.
+  (§6.2); C/T and T/T risk. No PROTECT token: no disease is known at the locus (D30.6). Age of action unknown: Timmers' age
+  moderator at the lead is null (P 0.85; Figure 5 source data), but the fathers' 40-50 band prints the other sign and
+  the mothers' bands are unread, so not lifelong (as 67 and 51). The evidence is European.
 axes:
-  tier: {value: B, cites: [pmid-30642433#q358, pmid-30642433#q42, pmid-30642433#q359, pmid-30642433#q360, pmid-31413261#q242, pmid-31413261#q243, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, db-finngen-r11#q76, pmid-31484785#q150, db-ensembl-116#q723, pmid-40021682#q103, pmid-40021682#q32]}
+  tier: {value: B, cites: [pmid-30642433#q358, pmid-30642433#q42, pmid-30642433#q359, pmid-30642433#q360, pmid-31413261#q242, pmid-31413261#q243, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, db-finngen-r11#q76, pmid-31484785#q150, db-ensembl-116#q723, pmid-31484785#q151, db-ensembl-116#q725, db-ensembl-116#q726, pmid-40021682#q103, pmid-40021682#q32]}
   mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q1122, db-opentargets-26.09#q1124]}
-  pleiotropy: {values: [], cites: []}
-  age_of_action: {value: LIFELONG, confidence: DIRECT_WEAK, cites: [pmid-30642433#q361]}
+  pleiotropy: {values: ["mech:education"], cites: [db-opentargets-26.09#q1123, db-opentargets-26.09#q1124]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "0",
             cites: [pmid-30729179#q140, pmid-40759756#q41, pmid-30642433#q359, pmid-31413261#q242, pmid-31413261#q243, pmid-30642433#q360]}
   actionability: {label: descriptive, cites: [pmid-30642433#q358]}
@@ -61,15 +70,17 @@ variants:
         conclusion: >-
           You carry one copy of a less common version of this DNA position (about 31 in 100 people of European
           ancestry do). In a study of about a million parents' lives, parents of people with it lived a little
-          shorter lives, about a quarter of a year per copy. The finding leaned on links to education to reach
-          significance and no separate study has confirmed it: a likely finding, not a settled one.
+          shorter lives; scaled to a person's own life that is about a quarter of a year per copy. The finding
+          leaned on links to education to reach significance, and an American study of fathers' lifespans pointed
+          the same way: a likely finding, not a settled one.
       - genotype: T/T
         state: risk
         conclusion: >-
           You carry two copies of a less common version of this DNA position (about 4 in 100 people of European
-          ancestry do). In a study of about a million parents' lives, each copy went with parents living about a
-          quarter of a year less. The finding leaned on links to education to reach significance and no separate
-          study has confirmed it: a likely finding, not a settled one.
+          ancestry do). In a study of about a million parents' lives, each copy went with parents living a little
+          shorter lives, about a quarter of a year per copy scaled to a person's own life. The finding leaned on
+          links to education to reach significance, and an American study of fathers' lifespans pointed the same
+          way: a likely finding, not a settled one.
 studies:
   - rsid: rs10211471
     note: pmid-30642433
@@ -80,15 +91,15 @@ studies:
     ancestry: [EUR]
     sample_size: 1012240
     sample_unit: lives
-    stat_significance: significant
-    p_value: "2.3E-08"
-    p_value_num: 2.3e-08
+    stat_significance: suggestive
+    p_value: "1.1E-06"
+    p_value_num: 1.1e-06
     effect_size: 0.2401
     effect_measure: beta
     effect_unit: years of life per C allele in self (the parental estimate doubled)
     effect_allele: C
     direction: protective
-    statistical_test: "Timmers 2019's integrated analysis (iGWAS, Table 2, q358): Bayes-factor permutation P with an educational-attainment prior, genome-wide by the paper's 2.5e-8 (q42; D28.7, B never A); conventional P 1.1E-06, SE 0.0493 years; summary statistics T -0.0240 (SE 0.0049), direction -- (q359)"
+    statistical_test: "Timmers 2019, Table 2 (q358): conventional P 1.1E-06, SE 0.0493 years; the integrated analysis (iGWAS) Bayes-factor permutation P 2.3E-08 with an educational-attainment prior, genome-wide by the paper's 2.5e-8 (q42; D28.7, B never A), coded as row 59 codes ABO; summary statistics T -0.0240 (SE 0.0049), direction -- (q359)"
     curator: claude-opus-5-5
   - rsid: rs10211471
     note: pmid-30642433
@@ -123,5 +134,47 @@ studies:
     effect_unit: log odds of survival to the 90th percentile per C allele (printed −0.0247 per T)
     effect_allele: C
     direction: protective
-    statistical_test: "Deelen 2019's summary statistics (GCST008598), SE 0.0244, effective N 11,615; 99th percentile T -0.0490, P 0.20 (q243). D25.3 from Timmers' per-self C +0.0240: APOE's factor power 1.00, heterogeneity P 0.0076; mean factor power 0.63, P 0.37; a flag under APOE's only, so none"
+    statistical_test: "Deelen 2019's summary statistics (GCST008598), SE 0.0244, effective N 11,615; 99th percentile T -0.0490, P 0.20 (q243). D25.3 from Timmers' per-self C +0.0240: APOE's factor power 1.00, heterogeneity P 0.0073; mean factor power 0.63, P 0.37; a flag under APOE's only, so none"
+    curator: claude-opus-5-5
+  - rsid: rs10211471
+    note: pmid-30642433
+    quote: q358
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts), both parents
+    ancestry: [EUR]
+    sample_size: 1012240
+    sample_unit: lives
+    stat_significance: significant
+    p_value: "2.3E-08"
+    p_value_num: 2.3e-08
+    effect_size: 0.2401
+    effect_measure: beta
+    effect_unit: years of life per C allele in self (the parental estimate doubled)
+    effect_allele: C
+    direction: protective
+    statistical_test: "Timmers 2019's integrated (risk-factor-informed) GWAS: Bayes-factor permutation P 2.3E-08 with an educational-attainment prior (q358), below the paper's own genome-wide line of 2.5e-8 (q42): the paper's genome-wide call, so §4.1's genome-wide locus, B never A (D28.7), coded as row 59 codes ABO"
+    curator: claude-opus-5-5
+  - rsid: rs10211471
+    note: pmid-31484785
+    quote: q151
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_linear
+    population: AncestryDNA customers' fathers born 1886-1918 (mostly European American)
+    ancestry: [EUR]
+    stratum: parent
+    stratum_level: father
+    sample_size: 167000
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "0.001928"
+    p_value_num: 0.001928
+    p_one_sided: 0.000964
+    proxy_rsid: rs6753712
+    effect_size: 0.01492
+    effect_measure: beta
+    effect_unit: fathers' lifespan per A allele of rs6753712 (A with the lead's C; printed G −0.01492), positive longer
+    effect_allele: C
+    direction: protective
+    statistical_test: "Wright 2019's Supplemental Table 8 (q151), AncestryDNA alone, SE 0.004621, raw P 0.001243, genomic-control P 0.001928 (the study's P, D26.1); rs6753712 r² 0.84, D′ 0.93 to the lead in CEU (db-ensembl-116#q725), its minor G with the lead's minor T; S8 lists lines under P 0.003 only, so selected on its own P; counted as row 40 counted its Table 8 line, the count put to the lead"
     curator: claude-opus-5-5
