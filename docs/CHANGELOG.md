@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- D30.10: a replication sample whose controls misfit the reference frequency at P < 0.01 is named, never counted, pass or fail (92 stays C).
 - D30.9: a locus acts through weight only where its signal is shown to share the weight signal (88 stays general ageing).
 - D30: batch nine's read. D29.18's test corrected (the meta with the AncestryDNA arm at z = 0 must pass the filter; sweep owed again); D17.1 reaches any nearby lifespan signal but never the anchor (87 contingent on a joint conditional); 103 re-read under D25.1; a nominal, uncontradicted, sub-suggestive locus is C; 77 stays C; PROTECT:ABSENCE_OF_RISK needs a genome-wide disease; v1 non-leads get legacy rows of their own.
 - just-dna 0.8.5 (floors `>=0.8.5`), with the module-creator plugin's pin moved to `v0.48.9`, which locks the same; `remote_derive` reports its passes, and lane lookups carry their licence terms.
