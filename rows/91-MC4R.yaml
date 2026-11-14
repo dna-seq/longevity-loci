@@ -16,11 +16,11 @@ verdict_reason: >-
   (D30.2). The one candidate is Deelen 2019's 99th percentile: T more often long-lived, β +0.0933, P 0.0079 (one-sided
   0.0039; the 90th leans the same way, P 0.19). Its window (GRCh37 18:57.3-58.4 Mb) holds stronger lines in two
   regions: rs17066892, 220 kb away, P 3.3e-4, with lines of six other frequencies around it (P 0.0013 to 0.0041), and
-  a cluster at 57.38-57.47 Mb (P about 0.006), plus rs752720 (P 0.0023). Conditioned on the peak alone the lead keeps
-  one-sided 0.029 to 0.035; conditioned jointly on thirteen lines spanning them (rs752720 through a neighbour at like
-  frequency, it having no genotypes in Ensembl), it falls to 0.090 to 0.160, on CEU and on all 503 Europeans, by
-  haplotypes and by dosages. So the 99th-percentile line is not the locus's own signal and no co-occurring lifespan
-  study stands: C (D16). No other lifespan study reaches P < 0.05: Timmers 2019's deposit has only one arm at this
+  a cluster at 57.38-57.47 Mb (P about 0.006), plus rs752720 (P 0.0023). Built stepwise as D30.18 sets (add the strongest
+  remaining line while one stays stronger than the lead conditionally, then condition the lead on the set), the lead
+  falls to one-sided 0.054 on CEU and 0.131 on all 503 Europeans. Other readings span 0.02 to 0.16: the peak alone
+  0.029 to 0.035, the distant lines alone about 0.008, all thirteen stronger lines at once 0.090 to 0.160 (that one
+  over-conditions on a correlated cluster). So the line is not shown to be the locus's own signal (D30.2, D30.18). No co-occurring lifespan study stands: C (D16). No other lifespan study reaches P < 0.05: Timmers 2019's deposit has only one arm at this
   locus (every line in the window "?+" or "?-", n about 302,000; its standard error, scaled from row 90's, reads as
   LifeGen), T longer, P 0.47; Pilling's UK Biobank parents flat (P 0.71, read at the lead only); Park 2025's own
   survival flat (P 0.93, columns swapped); FinnGen R11's death endpoint T fewer deaths, P 0.24; Zenin 2019's healthspan
@@ -31,27 +31,28 @@ verdict_reason: >-
   Joshi 2017's Mendelian randomisation over many BMI loci (one BMI unit about 7 months of life), a polygenic
   instrument, not a per-variant result here. Nothing contradicts the locus, so not D. Healthspan + (Foote's factors,
   read for the healthspan cell as at 83); exceptional survival 0 (Deelen's 99th-percentile line, not the locus's own
-  once conditioned); lifespan 0 (no study under one-sided 0.05). Red flag unknown (D29.11). Mechanism metabolism,
-  through body weight (D30.9, as at 82, whose colocalisations also hang on its multivariate anchor): Foote's factor-6
-  set colocalises at H4 ≥ 0.8 with about 300 body-composition sets (86 of them BMI; BMI H4 0.978, C raising BMI with
+  once conditioned); lifespan 0 (no study under one-sided 0.05). Red flag unknown (D29.11). Mechanism general ageing,
+  descriptive (D30.18): the body-weight colocalisations belong to Foote's disability factor, which holds no lifespan
+  component, and the row shows no lifespan signal of its own, so D30.9's shared signal is not shown (82 differs: its
+  multivariate set pools lifespan). Foote's factor-6 set colocalises at H4 ≥ 0.8 with about 300 body-composition sets (86 of them BMI; BMI H4 0.978, C raising BMI with
   frailty), and the lead tops 43 sets, mostly body-composition, BMI and diet (UK Biobank BMI, C +0.056, P 1.5e-45).
   Diseases colocalising run with C where a sign is printed: coronary artery disease (H4 0.969; its own set genome-wide
   at rs476828, C raising it, P 1.3e-10), type 2 diabetes (H4 0.956; two other diabetes sets print the other sign, most
   none), heart failure and gout. T goes with higher HDL cholesterol, eGFR and SHBG, and with more self-reported worry
   and nervous feelings (worry H4 0.970): no disease or established risk factor on the longer-lived side, so no
-  tradeoff; worry named. Pleiotropy mech:adiposity and broad. Modifiable through weight (D18.2, D30.9). Causal C3: in
+  tradeoff; worry named. Pleiotropy mech:adiposity and broad. Causal C3: in
   Foote's set the lead sits at posterior 0.035. Effector E2, MC4R: locus-to-gene 0.609 on Foote's set (PMAIP1 0.081
   next), no QTL colocalisation. C is the minor allele at 24 %, so T/T, the commonest genotype, is the reference; the
   protection is the absence of the higher-BMI allele's risk (PROTECT:ABSENCE_OF_RISK, D30.6: coronary artery disease
   genome-wide at the proxy and colocalising): T/C and C/C risk. Age of action unknown. The evidence is European.
 axes:
   tier: {value: C, cites: [pmid-40759756#q21, pmid-40759756#q22, pmid-40759756#q2, pmid-40759756#q10, db-ensembl-116#q677, db-opentargets-26.09#q1048, db-opentargets-26.09#q1049, db-opentargets-26.09#q1050, pmid-31413261#q211, pmid-31413261#q212, pmid-31413261#q213, pmid-31413261#q214, pmid-31413261#q215, pmid-31413261#q216, pmid-31413261#q217, pmid-31413261#q218, pmid-31413261#q219, pmid-31413261#q220, pmid-31413261#q221, pmid-31413261#q222, pmid-31413261#q223, pmid-31413261#q224, pmid-31413261#q225, pmid-31413261#q226, db-ensembl-116#q678, pmid-30642433#q347, pmid-30642433#q345, pmid-30642433#q346, pmid-29227965#q81, pmid-29227965#q45, pmid-40021682#q95, pmid-40021682#q32, db-finngen-r11#q68, pmid-30729179#q128, db-gwascatalog-2026.10.29#q515, pmid-29030599#q18]}
-  mechanism: {value: metabolism, cites: [db-opentargets-26.09#q1056, db-opentargets-26.09#q1061, db-opentargets-26.09#q1062, db-opentargets-26.09#q1052, db-opentargets-26.09#q1053, db-gwascatalog-2026.10.29#q515]}
+  mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q1056, db-opentargets-26.09#q1061, db-opentargets-26.09#q1062, db-opentargets-26.09#q1052, db-opentargets-26.09#q1053, db-gwascatalog-2026.10.29#q515]}
   pleiotropy: {values: ["mech:adiposity", broad], cites: [db-opentargets-26.09#q1061, db-opentargets-26.09#q1062, db-opentargets-26.09#q1057, db-opentargets-26.09#q1058, db-opentargets-26.09#q1059, db-opentargets-26.09#q1060, db-opentargets-26.09#q1054, db-opentargets-26.09#q1055, db-opentargets-26.09#q1063, db-opentargets-26.09#q1064]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "+", lifespan: "0", exceptional_survival: "0",
             cites: [pmid-40759756#q21, pmid-40759756#q22, pmid-31413261#q212, pmid-31413261#q211, pmid-31413261#q213, pmid-30642433#q347, db-finngen-r11#q68, pmid-40021682#q95, pmid-29227965#q81, pmid-30729179#q128]}
-  actionability: {label: modifiable, what: ["act_behaviour:weight"], who: "act_who:self", cites: [db-opentargets-26.09#q1056, db-opentargets-26.09#q1061, db-opentargets-26.09#q1062, db-opentargets-26.09#q1052, db-opentargets-26.09#q1053]}
+  actionability: {label: descriptive, cites: [db-opentargets-26.09#q1056, db-opentargets-26.09#q1061, db-opentargets-26.09#q1062, db-opentargets-26.09#q1052, db-opentargets-26.09#q1053]}
   context: {values: [eur_only_evidence], cites: [pmid-40759756#q21, pmid-31413261#q212, db-ensembl-116#q675]}
 flags:
   - {token: "PROTECT:ABSENCE_OF_RISK", cites: [db-opentargets-26.09#q1054, db-opentargets-26.09#q1055, db-opentargets-26.09#q1057, db-opentargets-26.09#q1058, db-ensembl-116#q675]}
@@ -78,17 +79,15 @@ variants:
         conclusion: >-
           You carry one copy of a less common version of this DNA position (about 36 in 100 people of European
           ancestry do). It goes with slightly higher body weight, and in a very large study with a little more
-          frailty and disability in later life; it also goes with slightly more diabetes and heart disease. Its link
-          to lifespan itself is only suggestive. Body weight is something you can act on, and the effect of this
-          version is small next to that.
+          frailty and disability in later life; it also goes with slightly more diabetes and heart disease. A link to
+          lifespan itself is not shown.
       - genotype: C/C
         state: risk
         conclusion: >-
           You carry two copies of a less common version of this DNA position (about 6 in 100 people of European
           ancestry do). Each copy goes with slightly higher body weight, and in a very large study with a little more
-          frailty and disability in later life, and slightly more diabetes and heart disease. Its link to lifespan
-          itself is only suggestive. Body weight is something you can act on, and the effect of this version is
-          small next to that.
+          frailty and disability in later life, and slightly more diabetes and heart disease. A link to lifespan
+          itself is not shown.
 studies:
   - rsid: rs17782313
     note: pmid-40759756
@@ -126,7 +125,7 @@ studies:
     effect_unit: log odds of survival to the 99th percentile per T allele
     effect_allele: T
     direction: protective
-    statistical_test: "Deelen 2019's summary statistics (GCST008599), SE 0.0351, effective N 4,524; 90th percentile T +0.0292 (SE 0.0225), P 0.19 (q211), the 99th a subset of its cases, one look-up; D30.2 (derived, q213 to q226, db-ensembl-116#q678): on rs17066892 (P 3.3e-4) alone one-sided 0.029 to 0.035, jointly on thirteen stronger lines in GRCh37 18:57.3-58.4 Mb 0.090 to 0.160 (CEU and all Europeans, haplotypes and dosages); not the locus's own signal, so no co-occurring lifespan study (D16) and no + for exceptional survival; no allowance for the two looks"
+    statistical_test: "Deelen 2019's summary statistics (GCST008599), SE 0.0351, effective N 4,524; 90th percentile T +0.0292 (SE 0.0225), P 0.19 (q211), the 99th a subset of its cases, one look-up; D30.2 (derived, q213 to q226, db-ensembl-116#q678): on rs17066892 (P 3.3e-4) alone one-sided 0.029 to 0.035, stepwise (D30.18) 0.054 on CEU and 0.131 on all Europeans, other readings 0.02 to 0.16 (all thirteen stronger lines in GRCh37 18:57.3-58.4 Mb at once 0.090 to 0.160); not shown to be the locus's own signal, so no co-occurring lifespan study (D16) and no + for exceptional survival; no allowance for the two looks"
     curator: claude-opus-5-5
   - rsid: rs17782313
     note: pmid-30642433
