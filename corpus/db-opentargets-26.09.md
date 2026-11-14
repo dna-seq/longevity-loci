@@ -3817,17 +3817,16 @@ colocalisation. For row 90.
 
 > [q1065] data.credibleSet.colocalisation count 0
 
-Row 91 (18_60183864_T_C, rs17782313). The lead sits in 597 credible sets (all read, three pages of 200) and tops 43, all
-body-composition, diet or BMI traits: in UK Biobank's BMI set (q1052, q1053) its alt C raises BMI, β +0.0561, P 1.5e-45,
-posterior 0.15. Of the 43, five total-mass and one weight set print the other sign (the source's allele coding, not
-resolved here; the colocalisations below carry the sign). No set of a lifespan study holds it; three ageing-named
-sets do: Foote 2025's factor 6, disability (q1048 to q1050; led by rs476828, 18_60185354_T_C, alt C +0.0176 towards
-frailty, P 8.1e-11, PICS; the lead at posterior 0.035), a C-reactive protein set and a diabetes set. Foote's set:
+Row 91 (18_60183864_T_C, rs17782313). The lead sits in 597 credible sets (all read, three pages of 200) and tops 43, mostly
+body-composition, BMI and diet traits (also an HDL cholesteryl-ester ratio, height and nail fungus): in UK Biobank's BMI set (q1052, q1053) its alt C raises BMI, β +0.0561, P 1.5e-45,
+posterior 0.15. Of the 43, four total-mass sets and one weight set print the other sign (the source's allele coding, not
+resolved here; the colocalisations below carry the sign). No set of a lifespan study holds it; one ageing set does: Foote 2025's factor 6, disability (q1048 to q1050; led by rs476828, 18_60185354_T_C, alt C +0.0176 towards
+frailty, P 8.1e-11, PICS; the lead at posterior 0.035). Foote's set:
 locus-to-gene MC4R 0.609 (q1051), PMAIP1 0.081 next; no QTL colocalisation (q1065); 910 GWAS colocalisations (q1056,
-all read, five pages), 647 at H4 ≥ 0.8, 308 of them body-composition traits (BMI, weight, fat and lean mass,
-impedance, waist and hip): BMI, H4 0.978, sign +1 (q1061, q1062), C raising BMI with frailty. Diseases colocalising,
-the less-frail T on the lower-risk side where a sign is given: coronary artery disease (GCST90132315, H4 0.969, sign
+all read, five pages), 647 at H4 ≥ 0.8, about 300 of them body-composition traits (86 BMI sets, 27 weight sets, and fat
+and lean mass, impedance, waist and hip): BMI, H4 0.978, sign +1 (q1061, q1062), C raising BMI with frailty. Diseases colocalising, the
+less-frail T on the lower-risk side in the sets that print a sign of +1: coronary artery disease (GCST90132315, H4 0.969, sign
 +1, q1057, q1058; its own set, led by rs476828, C +0.0328, P 1.3e-10, q1054, q1055), type 2 diabetes (GCST90029024,
-H4 0.956, +1, q1059, q1060; one other diabetes set prints −1 and most print 0), heart failure, gout. Run the other way,
+H4 0.956, +1, q1059, q1060; two other diabetes sets print −1, H4 0.969 and 0.949, and most print 0), heart failure, gout. Run the other way,
 T raising them: HDL cholesterol, eGFR, SHBG, and self-reported worry and nervous feelings (worry H4 0.970, sign −1,
 q1063, q1064). For row 91.

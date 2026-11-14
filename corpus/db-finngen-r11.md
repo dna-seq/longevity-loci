@@ -492,5 +492,5 @@ For row 90.
 
 > [q68] 18 60183864 T C rs17782313 RP11-795H16.2 0.240429 0.619014 0.0111587 0.00950553 0.184975 0.187216 0.184694
 
-FinnGen R11's death endpoint at rs17782313 (q68, row 91): alt C (0.24 in Finns) β +0.0112 (SE 0.0095), P 0.24: C with
+FinnGen R11's death endpoint at rs17782313 (q68, row 91): alt C (0.185 in Finns) β +0.0112 (SE 0.0095), P 0.24: C with
 slightly more deaths, so T fewer, flat (one-sided 0.12). For row 91.
