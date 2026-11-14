@@ -538,3 +538,13 @@ way. Derived. For row 97.
 FinnGen R11's death endpoint at rs159428 (q72, row 98): alt C (0.64 in Finns) β +0.0196 (SE 0.0077), P 0.011: C with
 more deaths, T with fewer, one-sided 0.0055 (derived); outside UK Biobank. A database release line: it never
 replicates (D12, D30.12). For row 98.
+
+## Reading 2026-11-14, supplement
+
+> [q73] 20 63355597 T C rs2273500 CHRNA4 5.93458e-09 8.22661 0.0521067 0.00895521 0.217358 0.221944 0.216783
+
+> [q74] 20 63810246 A T rs6062322 ZBTB46,ZBTB46-AS1 0.56219 0.250117 0.00563339 0.00971959 0.178265 0.178964 0.178177
+
+FinnGen R11's death endpoint at rs2273500 (q73, row 99): alt C (0.22 in Finns) β +0.0521 (SE 0.0090), P 5.9e-9: C
+with more deaths, T with fewer, genome-wide, outside UK Biobank. A database release line: it never replicates (D12,
+D30.12), so it is named, not counted. rs6062322 (q74): flat, P 0.56. For row 99.

@@ -1,0 +1,177 @@
+# The seed list's locus 99, CHRNA4 (20q13.33). Curated 2026-11-14. Lead rs2273500 (Pilling 2017's fathers-only SNP), a
+# splice acceptor in a nonsense-mediated-decay transcript of CHRNA4 (the nicotinic receptor α4 subunit), GRCh38
+# 20:63,355,597, GRCh37 20:61,986,949, T/C, C ancestral, T 0.85 in non-Finnish Europeans and the longer-lived allele.
+# The seed's other rsID, rs6062322 (Rosoff 2023's mvAge lead, 455 kb away, no CEU LD pair to the lead), is another
+# signal: named, not scored.
+locus_id: 99
+locus_name: CHRNA4
+verdict: kept
+verdict_reason: >-
+  Tier B, the seed's: a single genome-wide study without independent replication, as at 95. Pilling 2017's UK Biobank
+  fathers' attained age puts T with longer-lived fathers, β −0.0176 (SE 0.0031), P 1.5e-8, genome-wide in a stratum
+  (D19.2); both parents 4.4e-7, mothers 0.0038 the same way (fathers against mothers heterogeneity P 0.052, so no sex
+  token, D29.16), age at death 0.089, top 10 % 0.18. No independent study replicates it and none powered contradicts
+  it: LifeGen's fathers without UK Biobank (Timmers 2019's Figure 2 source data, sample b) lean T's way, one-sided
+  0.27, power 0.68, no flag (D21); Deelen 2019 leans against (90th P 0.65, 99th 0.38), a flag under APOE's factor
+  only from Pilling's both-parents effect (D28.2), so none (D25.3), and a smoking locus fades with age (row 80);
+  Wright 2019's AncestryDNA is untested (its one fathers' line in the window, rs4809300, 79 kb away, does not tag the
+  lead). FinnGen R11's death endpoint, outside UK Biobank, is genome-wide on T's side (C more deaths, P 5.9e-9), but a
+  database release line never replicates (D12, D30.12): named. Within UK Biobank it co-occurs: Timmers 2019's parents
+  (T longer, P 2.2e-7, "++"), Park 2025's own survival (T fewer deaths, P 5.5e-5, its allele columns swapped), and
+  Foote 2025's unhealthy-lifestyle frailty factor (T less frail, P 1.2e-10, multivariate, D27.3; its Q P 1.6e-7
+  says the lead's effects do not run through the factor alone, likely the smoking indicator), with T less frail in
+  every readable factor (disability P 0.0057, multimorbidity 0.018). Lifespan + (the discovery, Timmers), healthspan +
+  (Foote's genome-wide factor beside Timmers' co-occurring lifespan, D16, as 91; Zenin 2019 flat, P 0.88),
+  exceptional survival 0 (Deelen against, flat; Pilling's top 10 % flat). It acts through smoking: the lead's other
+  associations are smoking's, with C raising cigarettes per day (P 3e-64), nicotine dependence (8e-9) and COPD (2e-9),
+  so T, the longer-lived allele, goes with less smoking and less COPD, and Pilling names it a nicotine-dependence locus.
+  Smoking runs with the lifespan effect here (unlike 95, D30.13): smoking_lungs, mech:smoking and context:smoking,
+  modifiable, act_behaviour:smoking (row 80's shape). No trade-off: no harm quoted on T's side.
+  PROTECT:ABSENCE_OF_RISK: T is the common non-risk allele at a genome-wide COPD locus (D30.6). Causal C4 and effector
+  E4, no gene named: no lifespan-class credible set holds the lead (Pilling's fathers' study has none here); Foote's
+  unhealthy-lifestyle set does (posterior 0.83, locus-to-gene CHRNA4 0.93), but a multivariate set the tier does not
+  rest on sets no causal confidence (D17.2), and the splice acceptor sits in a nonsense-mediated-decay transcript, not
+  the canonical protein, so no coding call; CHRNA4 is named in prose. The rsID literature search (all six sources answered)
+  finds no other lifespan study of the lead: Hancock 2015 discovered it for nicotine dependence (a splice acceptor
+  lowering CHRNA4 expression), the rest are smoking genetics and Mendelian randomisation. T/T, about 72 in 100 Europeans, is the reference (§6.2); C/T and C/C risk. Age of action unknown:
+  Timmers' age bands do not include the lead. The evidence is European.
+axes:
+  tier: {value: B, cites: [pmid-29227965#q98, pmid-29227965#q99, pmid-29227965#q100, pmid-29227965#q101, pmid-29227965#q102, pmid-29227965#q45, db-gwascatalog-2026.10.29#q494, pmid-30642433#q355, pmid-31413261#q240, pmid-31413261#q241, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, pmid-31484785#q149, db-finngen-r11#q73, pmid-30642433#q354, pmid-40021682#q101, pmid-40021682#q32]}
+  mechanism: {value: smoking_lungs, cites: [db-gwascatalog-2026.10.29#q528, db-gwascatalog-2026.10.29#q529, db-gwascatalog-2026.10.29#q530, db-gwascatalog-2026.10.29#q531, pmid-40759756#q37]}
+  pleiotropy: {values: ["mech:smoking", "context:smoking"], cites: [db-gwascatalog-2026.10.29#q528, db-gwascatalog-2026.10.29#q529]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
+            cites: [pmid-40759756#q37, pmid-30729179#q137, pmid-29227965#q98, pmid-30642433#q354, pmid-29227965#q102, pmid-31413261#q240, pmid-31413261#q241]}
+  actionability: {label: modifiable, what: ["act_behaviour:smoking"], who: "act_who:self", cites: [db-gwascatalog-2026.10.29#q528, db-gwascatalog-2026.10.29#q529]}
+  context: {values: [eur_only_evidence], cites: [pmid-29227965#q98, pmid-30642433#q354]}
+flags:
+  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [db-gwascatalog-2026.10.29#q530, db-gwascatalog-2026.10.29#q531, db-ensembl-116#q712]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1112, db-opentargets-26.09#q1114, db-opentargets-26.09#q1115]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q1112, db-ensembl-116#q713]}
+variants:
+  - rsid: rs2273500
+    gene: ""
+    phenotype: CHRNA4 region, fathers' lifespan
+    trait_efo_id: EFO_0007796
+    effect_allele: T
+    effect_size: -0.0176
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: T/T
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position, as about 72 in 100 people of European
+          ancestry do. It is the reference the other combinations are compared with. The position, on chromosome 20,
+          lies in CHRNA4, a gene for a nicotine receptor in the brain.
+      - genotype: C/T
+        state: risk
+        conclusion: >-
+          You carry one copy of a less common version of this DNA position (about 26 in 100 people of European
+          ancestry do). It goes with smoking more cigarettes among smokers, with more chronic lung disease, and in a
+          very large British study with fathers living a little shorter lives. No separate study has confirmed the
+          lifespan link. The effect works through smoking: not smoking removes most of it.
+      - genotype: C/C
+        state: risk
+        conclusion: >-
+          You carry two copies of a less common version of this DNA position (about 2 in 100 people of European
+          ancestry do). It goes with smoking more cigarettes among smokers, with more chronic lung disease, and in a
+          very large British study each copy went with fathers living a little shorter lives. No separate study has
+          confirmed the lifespan link. The effect works through smoking: not smoking removes most of it.
+studies:
+  - rsid: rs2273500
+    note: pmid-29227965
+    quote: q98
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank), fathers
+    ancestry: [EUR]
+    stratum: parent
+    stratum_level: father
+    sample_size: 415311
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "1.5E-08"
+    p_value_num: 1.5e-08
+    effect_size: -0.0176
+    effect_measure: beta
+    effect_unit: Martingale residual of fathers' attained age per T allele (negative = reduced hazard, longer life)
+    effect_allele: T
+    direction: protective
+    statistical_test: "BOLT-LMM on Martingale residuals of fathers' attained age (Table 2, 'Loci only emerging in fathers' analysis', q98; sign convention q45); deposit GCST006701 (q99; N 415,311, db-gwascatalog-2026.10.29#q494); both parents 4.4E-07 (q101), mothers 0.0038 (q100; fathers against mothers heterogeneity P 0.052, derived)"
+    curator: claude-opus-5-5
+  - rsid: rs2273500
+    note: pmid-30642433
+    quote: q355
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (LifeGen cohorts, UK Biobank's lives removed), fathers
+    ancestry: [EUR]
+    stratum: parent
+    stratum_level: father
+    stat_significance: not_significant
+    p_value: "0.271373625577983"
+    p_value_num: 0.2714
+    effect_size: 0.11662
+    effect_measure: beta
+    effect_unit: years of life per copy in self (fathers' estimate doubled), per T allele
+    effect_allele: T
+    direction: protective
+    statistical_test: "Replication of Pilling 2017's fathers' rs2273500 in LifeGen excluding UK Biobank (Figure 2 source data 1, sample b, q355); the P is one-sided (q101); log-scale β +0.0117 (SE 0.0192) against the discovery's +0.0403 (SE 0.0071): power 0.68, heterogeneity P 0.16 (derived), no red flag"
+    curator: claude-opus-5-5
+  - rsid: rs2273500
+    note: pmid-30642433
+    quote: q354
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts), both parents
+    ancestry: [EUR]
+    sample_size: 621605
+    sample_unit: lives
+    stat_significance: suggestive
+    p_value: "2.1908112e-07"
+    p_value_num: 2.1908112e-07
+    effect_size: 0.02974076
+    effect_measure: beta
+    effect_unit: log hazard protection per T allele (positive = longer life)
+    effect_allele: T
+    direction: protective
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0057, direction ++; holds Pilling's UK Biobank fathers, so co-occurring, not a replication; Park 2025's own survival T fewer deaths, P 5.5e-5 (pmid-40021682#q101, columns swapped), the same participants"
+    curator: claude-opus-5-5
+  - rsid: rs2273500
+    note: pmid-40759756
+    quote: q37
+    phenotype_class: MULTIVARIATE_AGEING
+    study_design: meta_analysis
+    population: European (consortium GWAS and Pan-UK Biobank summary statistics of frailty deficits)
+    ancestry: [EUR]
+    sample_size: 755864
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "1.18863371105694e-10"
+    p_value_num: 1.18863371105694e-10
+    effect_size: -0.0146281415092654
+    effect_measure: beta
+    effect_unit: frailty factor 2 (unhealthy lifestyle) per T allele (negative = less frail)
+    effect_allele: T
+    direction: protective
+    statistical_test: "Genomic SEM GWAS of Foote 2025's latent frailty factor 2 (deposit GCST90624048, GRCh37, q37), SE 0.00227, Q P 1.6e-7; disability T -0.0091, P 0.0057 (q40); multimorbidity -0.0057, P 0.018 (q38); effects toward the frailty-raising side (q2); multivariate (D27.3), scoring beside the co-occurring lifespan study (D16)"
+    curator: claude-opus-5-5
+  - rsid: rs2273500
+    note: pmid-31413261
+    quote: q240
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis; no UK Biobank data)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.6523"
+    p_value_num: 0.6523
+    effect_size: -0.0157
+    effect_measure: beta
+    effect_unit: log odds of survival to the 90th percentile per T allele
+    effect_allele: T
+    direction: risk
+    statistical_test: "Deelen 2019's summary statistics (GCST008598), SE 0.0348, effective N 9,820; 99th percentile T -0.0496, P 0.38 (q241). D25.3 from Pilling's both-parents effect (D28.2): APOE's factor power 1.00, heterogeneity P 8e-5; mean factor power 0.69; a flag under APOE's only, so none"
+    curator: claude-opus-5-5

@@ -1921,3 +1921,21 @@ Row 98: Timmers 2020's multivariate ageing GWAS (healthspan, parental lifespan a
 GCST011100) has rs159428 at P 4e-8 (q525), T the effect allele (q526), its direction not printed here; it pools
 Zenin's healthspan with UK Biobank's parental lifespan, so multivariate and not independent (D18.3, D22.2). For row
 98.
+
+## Reading 2026-11-14, record
+
+> [q527] _embedded.associations[10] association_id 35567988 risk_frequency 0.856 pvalue_description pvalue_mantissa 2 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.012-0.024] beta 0.0176 unit decrease p_value 2e-08 accession_id GCST006701 pubmed_id 29227965 first_author Pilling LC ci_lower 0.012 ci_upper 0.024
+
+> [q528] _embedded.associations[2] association_id 102116220 risk_frequency 0.149 pvalue_description pvalue_mantissa 3 pvalue_exponent -64 multi_snp_haplotype false snp_interaction false range [0.034-0.043] beta 0.0382 unit increase p_value 3e-64 accession_id GCST90243987 pubmed_id 36477530 first_author Saunders GRB ci_lower 0.034 ci_upper 0.043
+
+> [q529] _embedded.associations[2].snp_allele[0] rs_id rs2273500 effect_allele C
+
+> [q530] _embedded.associations[5] association_id 93479859 risk_frequency NR pvalue_description pvalue_mantissa 2 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range [0.064-0.125] beta 0.0947 unit increase p_value 2e-09 accession_id GCST90018807 pubmed_id 34594039 first_author Sakaue S ci_lower 0.064 ci_upper 0.125
+
+> [q531] _embedded.associations[5].snp_allele[0] rs_id rs2273500 effect_allele C
+
+rs2273500 holds 12 GWAS Catalog associations (row 99): Pilling's fathers' attained age, T, 2e-8 (q527); cigarettes
+smoked per day, C "increase", P 3e-64 (q528, q529; and four more cigarettes-per-day records, P 2e-39 to 3e-20, C up or
+T down); chronic obstructive pulmonary disease, C "increase", P 2e-9 (q530, q531); nicotine dependence (C, 8e-9),
+problematic tobacco use (1e-16, no allele), Foote's unhealthy-lifestyle frailty factor (1e-10). T, the longer-lived
+fathers' allele, goes with fewer cigarettes and less COPD. For row 99.

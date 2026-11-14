@@ -3982,3 +3982,23 @@ tenth of the cis colocalisations, a rival under D24: E3. For row 97.
 the lead at posterior 0.48 (q1111), locus-to-gene under 0.06 for every gene. The others: triglyceride and cholesterol
 ratios in lipoprotein subclasses, cognition and education, age at first sexual intercourse, papulosquamous disorders.
 For row 98.
+
+## Reading 2026-11-14, record
+
+> [q1112] data.variant.credibleSets count 30
+
+> [q1113] data.variant.credibleSets.rows[3] studyLocusId 2c957c054bae3910bb0385e6d216679c pValueMantissa 1.1890000104904175 pValueExponent -10 beta 0.0146281415092654 finemappingMethod PICS
+
+> [q1114] data.variant.credibleSets.rows[3].study id GCST90624048 traitFromSource Frailty (Factor 2 - Unhealthy Lifestyle) studyType gwas
+
+> [q1115] data.variant.credibleSets.rows[3].locus.rows[0] posteriorProbability 0.8283104965999621
+
+> [q1116] data.variant.credibleSets.rows[3].l2GPredictions.rows[0] score 0.930907666683197
+
+> [q1117] data.variant.credibleSets.rows[3].l2GPredictions.rows[0].target approvedSymbol CHRNA4
+
+20_63355597_T_C (rs2273500, row 99): 30 credible sets hold it (q1112), none of a lifespan-class study (Pilling's
+fathers' study has no set here); the nearest to one is Foote 2025's unhealthy-lifestyle factor (PICS; q1113, q1114),
+the lead at posterior 0.83 (q1115), locus-to-gene CHRNA4 0.93 (q1116, q1117), a multivariate set (D17.2, D27.3).
+The others: cigarettes per day, smoking initiation, cessation and status, nicotine dependence, problematic tobacco
+use, lung cancers, white-cell counts, and CHRNA4 expression and splicing QTLs. For row 99.
