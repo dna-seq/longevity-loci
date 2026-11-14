@@ -14,7 +14,7 @@ verdict_reason: >-
   −0.0065, SE 0.0086, P 0.45): healthspan against healthspan on one scale, one-sided power 0.96 and heterogeneity P
   0.023, D21's red flag (the paper's 0.66 is another calculation), `replication_failed`. Every lifespan look on A's
   side is UK Biobank, the discovery's own biobank, so co-occurring, not independent: Timmers 2019 (A +0.0074 per
-  self, P 0.062, one-sided 0.031, "++", its LifeGen arm alone unread), Pilling 2017's mothers (P 0.0065) and both
+  self, P 0.062, one-sided 0.031, "++", its LifeGen arm alone unprinted: Figure 2's source data, the only LifeGen-without-UK-Biobank lines, holds none at the lead or FGFR2, so outside UK Biobank Timmers is unknown here, D31.3), Pilling 2017's mothers (P 0.0065) and both
   parents (0.073), Park 2025's own survival (A fewer deaths, P 0.11); within Zenin's own line the participants' death
   (P 0.87) and parents' death (0.61) are flat. Outside UK Biobank: Deelen 2019's 90th percentile flat (P 0.96), the
   99th A's way (P 0.13, one-sided 0.065); FinnGen R11's death endpoint flat (P 0.78), a database line. Wright 2019's
