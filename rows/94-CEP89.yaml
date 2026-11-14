@@ -17,11 +17,15 @@ verdict_reason: >-
   G, one-sided power 1.00, heterogeneity P 0.006; the loci's mean factor +0.077, power 1.00, P 2e-5. A red flag
   under both, so `replication_failed`, as at 45. It is not D (D26.8): Pilling 2017's UK Biobank parents' attained age,
   outside Deelen's samples, gives G longer at one-sided 0.038 (P 0.076), an independent scoring-class p < 0.05 in the
-  discovery's direction, D25.1's exception (as 74). Those parents are also inside Timmers' meta-analysis, which fails
-  the effect size: read together, a smaller effect than Deelen's, or a chance lean. Flat elsewhere: Park 2025's own
+  discovery's direction, D25.1's exception as read at 74. But those parents are also inside Timmers' meta-analysis,
+  the sample that fails (at 74 the passing samples sat outside the flagging one), so counting the passing part of a
+  failing whole is put to the lead (D26.11's one-look-not-the-other): C with `replication_failed` (default, written
+  here) or D with lifespan 0. FinnGen R11's death endpoint, independent of Deelen and UK Biobank, has no line at the
+  lead; its neighbour rs62127361 (r² 0.94 in CEU, D29.3) is flat, G a hair towards fewer deaths (P 0.90, one-sided
+  0.45), a flag under the mean factor only (power 1.00, heterogeneity P 1.7e-4) and not under APOE's (power 0.77, P
+  0.041), so no flag (D25.3, as 45). Flat elsewhere: Park 2025's own
   survival (P 0.73, its allele columns swapped), Zenin 2019's healthspan (P 0.78), Foote 2025's five readable frailty
-  factors (P 0.086 to 0.56; the general and metabolic factors' deposits returned the header alone, unread). FinnGen
-  R11's death endpoint has no line at the lead. Wright 2019's nearest AncestryDNA line is a viability one, rs745961
+  factors (P 0.086 to 0.56; the general and metabolic factors' deposits returned the header alone, unread). Wright 2019's nearest AncestryDNA line is a viability one, rs745961
   (88 kb, r² 0.055 in CEU), which does not tag the lead and would only confirm (D23); no parental line within 500 kb.
   Rosoff 2023's mvAge lead tables hold no line. The rsID literature search (Europe PMC, PubMed, OpenAlex, Crossref,
   preprints; Semantic Scholar 429, its part unchecked) finds Deelen 2019 alone. Exceptional survival + (Deelen's
@@ -30,19 +34,20 @@ verdict_reason: >-
   (posterior 0.07 to 0.14), and in no GWAS set, so nothing ties the longevity signal to a gene or a trait; CEP89 is
   named in prose. Pleiotropy empty, descriptive. Causal C4 and effector E4, no gene: no lifespan-class set holds
   the lead. G/G, about 77 in 100 Europeans, is the reference (§6.2); C/G and C/C carry the lower odds. No PROTECT
-  token: no disease is known at the locus (D30.6). Age of action unknown. The evidence is mostly European:
-  the European deposit alone carries the signal.
+  token: no disease is known at the locus (D30.6). Age of action unknown. The evidence is European: the
+  European deposit alone carries the signal (P 1.7e-7, stronger than the trans-ethnic 4.3e-7, although C is commoner
+  in East Asians, 0.28, so CLHLS's added cases weakened rather than built it), and every other test is European.
 axes:
-  tier: {value: C, cites: [pmid-31413261#q231, pmid-31413261#q111, pmid-31413261#q112, pmid-31413261#q113, pmid-31413261#q114, pmid-31413261#q232, pmid-31413261#q233, pmid-30642433#q348, pmid-30642433#q92, pmid-31413261#q82, pmid-31413261#q90, pmid-29227965#q82, pmid-29227965#q45, pmid-40021682#q97, pmid-40021682#q32, pmid-30729179#q129, pmid-31484785#q141, db-ensembl-116#q692, db-gwascatalog-2026.10.29#q517]}
-  mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q1072, db-opentargets-26.09#q1073, db-opentargets-26.09#q1074, db-ensembl-116#q691]}
+  tier: {value: C, cites: [pmid-31413261#q231, pmid-31413261#q111, pmid-31413261#q112, pmid-31413261#q113, pmid-31413261#q114, pmid-31413261#q232, pmid-31413261#q233, pmid-30642433#q348, pmid-30642433#q92, pmid-31413261#q82, pmid-30642433#q90, pmid-29227965#q82, pmid-29227965#q45, pmid-40021682#q97, pmid-40021682#q32, pmid-30729179#q129, pmid-31484785#q141, db-ensembl-116#q692, db-finngen-r11#q69, db-ensembl-116#q693, db-gwascatalog-2026.10.29#q517]}
+  mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q1072, db-opentargets-26.09#q1073, db-opentargets-26.09#q1074, db-ensembl-116#q691, db-ensembl-116#q694]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "+",
             cites: [pmid-30729179#q129, pmid-29227965#q82, pmid-29227965#q45, pmid-30642433#q348, pmid-31413261#q231, pmid-31413261#q232]}
   actionability: {label: descriptive, cites: [pmid-31413261#q231]}
-  context: {values: [eur_only_evidence], cites: [pmid-31413261#q232, pmid-31413261#q112]}
+  context: {values: [eur_only_evidence], cites: [pmid-31413261#q232, pmid-31413261#q231, pmid-31413261#q112, db-ensembl-116#q690]}
 flags:
-  - {token: replication_failed, cites: [pmid-30642433#q348, pmid-30642433#q92, pmid-31413261#q82, pmid-31413261#q90, pmid-31413261#q232]}
+  - {token: replication_failed, cites: [pmid-30642433#q348, pmid-30642433#q92, pmid-31413261#q82, pmid-30642433#q90, pmid-31413261#q232]}
   - {token: "causal:C4", cites: [db-opentargets-26.09#q1072]}
   - {token: "effector:E4", cites: [db-opentargets-26.09#q1072]}
 variants:
@@ -111,7 +116,7 @@ studies:
     effect_unit: log hazard protection per G allele (positive = longer life)
     effect_allele: G
     direction: protective
-    statistical_test: "Timmers 2019's summary statistics (GCST009890), printed C −0.00869 (SE 0.0060), direction --, info 0.98; one-sided 0.074 for G (derived). D21 under D25.3 against Deelen's European 90th β +0.1563 (pmid-31413261#q232): APOE's factor 4.84 (pmid-31413261#q82 against q90) predicts +0.0323, power 1.00, heterogeneity P 0.006; the mean factor (q92) +0.0773, power 1.00, P 2e-5; a red flag under both (replication_failed). Some LifeGen cohorts are among Deelen's (D19.1)"
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), printed C −0.00869 (SE 0.0060), direction --, info 0.98; one-sided 0.074 for G (derived). D21 under D25.3 against Deelen's European 90th β +0.1563 (pmid-31413261#q232): APOE's factor 4.84 (pmid-31413261#q82 against pmid-30642433#q90) predicts +0.0323, power 1.00, heterogeneity P 0.006; the mean factor (q92) +0.0773, power 1.00, P 2e-5; a red flag under both (replication_failed). Some LifeGen cohorts are among Deelen's (D19.1)"
     curator: claude-opus-5-5
   - rsid: rs62127362
     note: pmid-29227965

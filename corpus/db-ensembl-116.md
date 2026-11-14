@@ -2485,3 +2485,12 @@ rs62127362 (row 94): GRCh38 19:32,967,573, G/A/C, G ancestral (q687; Deelen's GR
 in gnomAD's non-Finnish Europeans (q688) and 1000 Genomes' Europeans (q689), 0.28 in East Asians (q690), 0.09 in
 Africans. VEP: intronic in CEP89 (q691; FAAP24 and RPL31P60 within 5 kb). LD to Wright's rs745961 in CEU r² 0.055
 (q692). For row 94.
+
+## Reading 2026-11-14, record
+
+> [q693] [0] d_prime 1.000000 variation1 rs62127362 variation2 rs62127361 r2 0.944693 population_name 1000GENOMES:phase_3:CEU
+
+> [q694] [0] allele_string G/A/C seq_region_name 19 id rs62127362 input rs62127362 most_severe_consequence intron_variant assembly_name GRCh38 start 32967573 strand 1 end 32967573
+
+Row 94: LD from rs62127362 to rs62127361, FinnGen's stand-in, r² 0.94, D′ 1.00 in CEU (q693). VEP's most severe
+consequence for the lead is intronic (q694), in CEP89 (q691). For row 94.

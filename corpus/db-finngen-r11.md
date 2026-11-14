@@ -494,3 +494,16 @@ For row 90.
 
 FinnGen R11's death endpoint at rs17782313 (q68, row 91): alt C (0.185 in Finns) β +0.0112 (SE 0.0095), P 0.24: C with
 slightly more deaths, so T fewer, flat (one-sided 0.12). For row 91.
+
+## Reading 2026-11-14, supplement
+
+> [q69] 19 32967289 T C rs62127361 CEP89 0.896142 0.0476231 0.00176935 0.0135544 0.0818786 0.0818017 0.0818882
+
+FinnGen R11's death endpoint, row 94: no line at rs62127362 (GRCh38 19:32,967,573), so its neighbour rs62127361 (284
+bases away, r² 0.94 and D′ 1.00 in CEU, db-ensembl-116#q693) stands in (D29.3); its C, alt, is the minor allele with
+the lead's C (Deelen's 90th prints it at 0.88 for T with the lead's effect, pmid-31413261#q232's neighbour 33,458,195).
+Alt C (0.082 in Finns) β +0.0018 (SE 0.0136) on death, P 0.90: flat, G a hair towards fewer deaths (one-sided 0.45,
+derived). Against Deelen's European 90th effect carried over as for Timmers (pmid-30642433#q348): APOE's factor
+predicts G −0.032 on death, one-sided power 0.77, heterogeneity P 0.041; the mean factor −0.077, power 1.00, P 1.7e-4.
+A flag under the mean factor only, so no flag (D25.3, as row 45's FinnGen). Independent of Deelen and UK Biobank.
+For row 94.
