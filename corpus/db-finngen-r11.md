@@ -530,3 +530,11 @@ FinnGen R11's death endpoint at rs6108784 (q71, row 97): alt C (0.54 in Finns) +
 slightly fewer deaths, one-sided 0.18, flat. On the per-self scale (D30.12) against Pilling's both-parents effect
 (+0.0176 per T, SE 0.0052): power 0.74, heterogeneity P 0.016, short of a flag; a database line sets no D either
 way. Derived. For row 97.
+
+## Reading 2026-11-14, supplement
+
+> [q72] 20 32511508 T C rs159428 NOL4L,RP5-1184F4.7 0.0110428 1.95692 0.0196161 0.0077188 0.636042 0.638093 0.635785
+
+FinnGen R11's death endpoint at rs159428 (q72, row 98): alt C (0.64 in Finns) β +0.0196 (SE 0.0077), P 0.011: C with
+more deaths, T with fewer, one-sided 0.0055 (derived); outside UK Biobank. A database release line: it never
+replicates (D12, D30.12). For row 98.

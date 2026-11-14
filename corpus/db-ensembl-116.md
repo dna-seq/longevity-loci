@@ -2528,3 +2528,19 @@ EGLN2 (q698). LD to Wright's rs4609955 r² 0.11 (q699) and rs10411347 r² 0.07 (
 rs6108784 (row 97): GRCh38 20:10,983,718, T/C, C ancestral (q701; Pilling's GRCh37 10,964,366). T is 0.59 in gnomAD's
 non-Finnish Europeans (q702). VEP's most severe consequence: upstream of LINC02871 (q703). LD in CEU to Wright's
 rs6077996 r² 0.92, D′ 1.00 (q704), and rs9974014 r² 0.55 (q705). For row 97.
+
+## Reading 2026-11-14, record
+
+> [q706] mappings[0] strand 1 ancestral_allele C assembly_name GRCh38 end 32511508 seq_region_name 20 allele_string T/C/G coord_system chromosome location 20:32511508-32511508 start 32511508
+
+> [q707] populations[32] population gnomADg:nfe frequency 0.4636 allele T allele_count 31511
+
+> [q708] [0] population_name 1000GENOMES:phase_3:CEU variation2 rs293566 variation1 rs159428 r2 0.458353 d_prime 0.999993
+
+> [q709] [0] variation1 rs159428 variation2 rs293554 r2 0.556275 population_name 1000GENOMES:phase_3:CEU d_prime 0.938018
+
+> [q710] [0] input rs159428 start 32511508 id rs159428 end 32511508 most_severe_consequence intron_variant strand 1 allele_string T/C/G seq_region_name 20 assembly_name GRCh38
+
+rs159428 (row 98): GRCh38 20:32,511,508, T/C/G, C ancestral (q706; Zenin's GRCh37 31,099,311). T is 0.46 in gnomAD's
+non-Finnish Europeans (q707). VEP: intronic (q710), NOL4L. LD in CEU to Wright's rs293566 r² 0.46 (q708) and
+rs293554 r² 0.56 (q709). For row 98.

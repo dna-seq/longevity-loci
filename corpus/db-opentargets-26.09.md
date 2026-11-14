@@ -3966,3 +3966,19 @@ every one signed −1 at H4 0.33 to 0.98: LINC02871 (ENSG00000125899) 29, the un
 Row 97, the fathers' set's QTL colocalisations counted in full (all 46): at H4 ≥ 0.8, LINC02871 27 of 29 (one row,
 q1104, q1105) and the unnamed ENSG00000270777 16 of 17 (q1106, q1107), all signed −1. ENSG00000270777 holds over a
 tenth of the cis colocalisations, a rival under D24: E3. For row 97.
+
+## Reading 2026-11-14, record
+
+> [q1108] data.variant.credibleSets count 29
+
+> [q1109] data.variant.credibleSets.rows[11] studyLocusId 633485c762f62d04fade634391c614d6 pValueMantissa 6 pValueExponent -10 beta -0.006251762 finemappingMethod PICS
+
+> [q1110] data.variant.credibleSets.rows[11].study id GCST90321079 traitFromSource Aging studyType gwas
+
+> [q1111] data.variant.credibleSets.rows[11].locus.rows[0] posteriorProbability 0.4827717686071306
+
+20_32511508_T_C (rs159428, row 98): 29 credible sets hold it (q1108), none of a lifespan-class or healthspan study
+(Zenin's healthspan has no set in Open Targets); Rosoff 2023's mvAge PICS set (GCST90321079, "Aging"; q1109, q1110),
+the lead at posterior 0.48 (q1111), locus-to-gene under 0.06 for every gene. The others: triglyceride and cholesterol
+ratios in lipoprotein subclasses, cognition and education, age at first sexual intercourse, papulosquamous disorders.
+For row 98.

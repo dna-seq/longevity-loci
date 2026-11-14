@@ -1,0 +1,154 @@
+# The seed list's locus 98, NOL4L (20q11.21). Curated 2026-11-14. Lead rs159428, the seed's only rsID (Zenin 2019's
+# healthspan SNP, also Rosoff 2023's mvAge lead): intronic in NOL4L, GRCh38 20:32,511,508, GRCh37 20:31,099,311, T/C,
+# C ancestral, T 0.46 in non-Finnish Europeans and the healthier allele.
+locus_id: 98
+locus_name: NOL4L
+verdict: re-tiered
+verdict_reason: >-
+  Tier D, from the seed's B (D25.1), row 86's shape: a genome-wide healthspan discovery that fails its own powered
+  replication in its own ancestry, with no independent scoring-class study at p < 0.05 its way. Zenin 2019, in
+  300,447 British UK Biobank participants: C ends healthspan earlier, β +0.028 (SE 0.0049) on the log hazard, P
+  2.4e-8 after genomic control, in both cancer and non-cancer outcomes. The paper's replication in 96,313 other UK
+  Biobank participants goes the other way: the first cohort, the other Europeans, C −0.0070 (SE 0.0091), P 0.44; the
+  five-cohort meta C −0.0047, P 0.58. Healthspan against healthspan on one scale: one-sided power 0.92, heterogeneity
+  P 7.1e-4 (the meta 0.95, P 9.7e-4): D21's red flag, `replication_failed`. Nothing independent passes. Every
+  lifespan look on T's side is UK Biobank, Zenin's own biobank, so co-occurring, not independent: Zenin's own
+  participants' death (C more, P 0.0054) and parents' death (P 0.027), Pilling 2017's fathers (T longer, P 6.4e-4)
+  and both parents (P 0.0077), Timmers 2019 (T longer, P 0.0074, "++", UK Biobank inside; no LifeGen-only line at
+  the lead), Park 2025's own survival (T fewer deaths, P 0.044, its allele columns swapped). Deelen 2019, outside UK
+  Biobank, is flat (90th P 0.71, 99th 0.25 the other way), its flag unknown for a healthspan discovery (D27.9).
+  FinnGen R11's death endpoint, outside UK Biobank, has T with fewer deaths, P 0.011 (one-sided 0.0055), but a
+  database release line never replicates and so is not D25.1's independent pass (D12, D30.12); named. Wright 2019's
+  AncestryDNA has no line at the lead; its fathers' line at rs293566 (1.4 kb, r² 0.46 in CEU) leans T's way (raw P
+  0.014), a weak tag, named, not counted. Rosoff 2023's mvAge is genome-wide at the lead (T, P 6e-10) but pools
+  healthspan and UK Biobank parental lifespan, multivariate (D18.3, D22.2), and replicates nothing. Whether the
+  FinnGen pass and the UK Biobank lifespan looks should keep the row at B with `replication_failed` is put to the
+  lead; D is written, as 86. Outcome cells on a D row (D28.10): healthspan 0, the contradicted discovery giving no +;
+  lifespan 0 (the UK Biobank looks are the discovery's biobank, and nothing independent gives + or −); exceptional
+  survival 0 (Deelen flat). Mechanism general ageing (D25.7), pleiotropy empty; the lead's other associations are
+  cognition, education and lipoprotein-subclass lipids, named. Descriptive. Causal C4 and effector E4, no gene named:
+  Zenin's healthspan has no credible set in Open Targets, and Rosoff's mvAge PICS set (lead posterior 0.48,
+  locus-to-gene under 0.06 for every gene) is multivariate, a set the tier does not rest on (D17.2); NOL4L is named in
+  prose. Every genotype neutral (D25.2); C/T, about half of Europeans, the reference. Age of action unknown. The
+  evidence is European.
+axes:
+  tier: {value: D, cites: [pmid-30729179#q132, pmid-30729179#q133, pmid-30729179#q134, pmid-30729179#q136, pmid-29227965#q94, pmid-29227965#q95, pmid-30642433#q353, pmid-40021682#q100, pmid-40021682#q32, pmid-31413261#q238, pmid-31413261#q239, db-finngen-r11#q72, pmid-31484785#q148, db-ensembl-116#q708, db-gwascatalog-2026.10.29#q524]}
+  mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q1108, db-gwascatalog-2026.10.29#q524]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
+            cites: [pmid-30729179#q132, pmid-30729179#q133, pmid-30729179#q134, pmid-30642433#q353, pmid-29227965#q94, pmid-31413261#q238, pmid-31413261#q239]}
+  actionability: {label: descriptive, cites: [pmid-30729179#q132]}
+  context: {values: [eur_only_evidence], cites: [pmid-30729179#q132, pmid-30729179#q133]}
+flags:
+  - {token: replication_failed, cites: [pmid-30729179#q132, pmid-30729179#q133]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1108, db-opentargets-26.09#q1111]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q1108, db-opentargets-26.09#q1111]}
+variants:
+  - rsid: rs159428
+    gene: ""
+    phenotype: NOL4L region, healthspan
+    trait_efo_id: EFO_0007796
+    effect_allele: T
+    effect_size: -0.0278
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: C/T
+        state: neutral
+        conclusion: >-
+          You carry one copy of each version of this DNA position, as about half of people of European ancestry do.
+          It is the reference the other combinations are compared with. The position, on chromosome 20, lies in the
+          NOL4L gene, whose role here is not known.
+      - genotype: T/T
+        state: neutral
+        conclusion: >-
+          You carry two copies of the T version of this DNA position (about 1 in 5 people of European ancestry do).
+          A very large British study found it a little later in life before major disease began, but the same study's
+          check in other people did not confirm it, so it is not counted for or against healthy lifespan.
+      - genotype: C/C
+        state: neutral
+        conclusion: >-
+          You carry two copies of the C version of this DNA position (about 3 in 10 people of European ancestry do).
+          A very large British study found major disease beginning a little earlier with it, but the same study's
+          check in other people did not confirm it, so it is not counted for or against healthy lifespan.
+studies:
+  - rsid: rs159428
+    note: pmid-30729179
+    quote: q132
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "2.36e-08"
+    p_value_num: 2.36e-08
+    effect_size: 0.0278
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per C allele (positive = earlier)
+    effect_allele: C
+    direction: risk
+    statistical_test: "Zenin 2019, Table 2 (q132): Cox model of the first of eight diseases or death, genomic-control P; Supplementary Data 5 (q133): raw P 1.0e-8, SE 0.00486; the first replication cohort C -0.0070 (SE 0.0091), P 0.44, the five-cohort meta C -0.0047, P 0.58: one-sided power 0.92, heterogeneity P 7.1e-4 (derived), a D21 red flag"
+    curator: claude-opus-5-5
+  - rsid: rs159428
+    note: pmid-29227965
+    quote: q94
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank), fathers
+    ancestry: [EUR]
+    stratum: parent
+    stratum_level: father
+    sample_size: 415311
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "0.00064"
+    p_value_num: 0.00064
+    p_one_sided: 0.00032
+    effect_size: -0.007445
+    effect_measure: beta
+    effect_unit: Martingale residual of fathers' attained age per T allele (negative = longer life)
+    effect_allele: T
+    direction: protective
+    statistical_test: "Pilling 2017's fathers' deposit (GCST006701), SE 0.0022; both parents T -0.0060, P 0.0077 (q95); mothers 0.071 (q96); UK Biobank, Zenin's discovery biobank, so co-occurring, not independent"
+    curator: claude-opus-5-5
+  - rsid: rs159428
+    note: pmid-30642433
+    quote: q353
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts), both parents
+    ancestry: [EUR]
+    sample_size: 635245
+    sample_unit: lives
+    stat_significance: nominal
+    p_value: "0.0073760897"
+    p_value_num: 0.0073760897
+    p_one_sided: 0.00368804
+    effect_size: 0.01053919
+    effect_measure: beta
+    effect_unit: log hazard protection per T allele (positive = longer life)
+    effect_allele: T
+    direction: protective
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0039, direction ++, info 0.97; holds UK Biobank, Zenin's biobank, so co-occurring, not independent"
+    curator: claude-opus-5-5
+  - rsid: rs159428
+    note: pmid-31413261
+    quote: q238
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis; no UK Biobank data)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.7135"
+    p_value_num: 0.7135
+    effect_size: 0.0079
+    effect_measure: beta
+    effect_unit: log odds of survival to the 90th percentile per T allele
+    effect_allele: T
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GCST008598), SE 0.0215, effective N 11,050; 99th percentile T -0.0410, P 0.25 (q239); a healthspan discovery's flag here is unknown (D27.9)"
+    curator: claude-opus-5-5

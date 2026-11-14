@@ -1902,3 +1902,11 @@ bronchodilator (A higher, 2e-7 and 5e-7). For row 95.
 rs6108784 holds three GWAS Catalog associations (row 97): Pilling's fathers' attained age, T, P 1e-10 (q522); blood
 pressure as a metabolic-syndrome component, C, OR 1.072, P 2e-8 (q523); and a mean arterial pressure by depressive
 symptoms interaction, no allele. For row 97.
+
+## Reading 2026-11-14, record
+
+> [q524] _embedded.associations[1] association_id 131476364 risk_frequency NR pvalue_description pvalue_mantissa 6 pvalue_exponent -10 multi_snp_haplotype false snp_interaction false range [0.0043-0.0082] beta 0.006251762 unit increase p_value 6e-10 accession_id GCST90321079 pubmed_id 37550455 first_author Rosoff DB ci_lower 0.0043 ci_upper 0.0082
+
+rs159428 holds seven GWAS Catalog associations (row 98): Rosoff 2023's multivariate ageing factor, T "increase", P
+6e-10 (q524); also fluid intelligence, cognitive performance, executive function, the cognitive part of educational
+attainment, and an "Aging" record. Zenin's healthspan is not among them. For row 98.
