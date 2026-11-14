@@ -766,3 +766,18 @@ standing word (pacing off, "full steam ahead"; the advisor pattern for the requi
    NOL4L (row 86's shape): Atkins' UK Biobank frailty, Pilling's fathers, Timmers and Park all share UK Biobank, so
    healthspan and lifespan are 0, the curator's (b). Rejected: (a), `+` cells on a row whose discovery is
    contradicted, which would show it as supported in the outcome strip.
+18. **Batch ten's read, rows 88 to 91: how D30.2 conditions, what D30.9 shares, D30.10's reference.**
+   - **D30.2's joint conditional is built stepwise**: from the window's lifespan lines stronger than the lead, add
+     the strongest, condition, and repeat while a remaining line stays stronger than the lead conditionally
+     (COJO's logic), then condition the lead on the selected set. The row reports the range across other readings
+     it tried. 91 MC4R: stepwise 0.054 (CEU) and 0.131 (all Europeans), range 0.02 to 0.16: not shown, C stands
+     (D16). Rejected: conditioning on every stronger line at once, which over-conditions on one correlated cluster
+     (8 of 91's 13 lines, |r| to 0.92), and on the distant lines alone (0.008), which ignores the cluster.
+   - **D30.9's shared signal is the row's lifespan signal; a multivariate anchor's colocalisation does not stand in
+     for it.** 91's BMI colocalisation belongs to Foote's disability factor, which holds no lifespan component, and
+     the row shows no lifespan signal of its own: general_ageing, descriptive, `mech:adiposity`, `broad`; its texts
+     say the lifespan link is not shown. 82 differs: its multivariate set pools lifespan.
+   - **D30.10's reference is the gnomAD population that matches the sample** (Ashkenazi for LGP, non-Finnish European
+     for a French or Danish sample, Finnish for a Finnish one). 89 FN3KRP: the French controls misfit NFE (P 2e-4),
+     so they are named and not counted; D (D26.8) rests on the Danish sample alone (controls fit, P 0.015; power
+     0.92, heterogeneity P 0.009).

@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- D30.18: the joint conditional is stepwise (91 stays C); D30.9's shared signal must be the lifespan signal (91 general ageing); D30.10's reference is the matching gnomAD population (89's D on the Danish sample).
 - D30.17: no + outcome cell on a D row from a study sharing the discovery's sample (98 all 0).
 - D30.16: D30.12's facts corrected (Timmers' beta1 is already per self; 94 and 95 raise no FinnGen flag), 95's tradeoff dropped, D30.15 extended to every effect-describing context token.
 - D30.15: a tier D row carries no sex_specific token (97 names its fathers-only contrast in prose).
