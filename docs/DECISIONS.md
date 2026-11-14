@@ -745,3 +745,18 @@ standing word (pacing off, "full steam ahead"; the advisor pattern for the requi
    property of a real effect. Its conclusions say the discovery was reported in fathers only (P 1.2e-10, mothers
    0.78) and not supported. 97's top-10 % look, the discovery's own parents, gives no `+` (D28.10), as the curator
    has it. Rejected: keeping the token as the discovery's own description, which the prose already carries.
+16. **D30.12, D30.13 and D30.15 corrected by the batch-ten read.**
+   - **D30.12's facts were wrong; its rule stands.** Timmers' summary-statistics `beta1` is already per self ("the
+     log hazard protection per a1 in self", the parental estimate doubled; pmid-30642433 note), so an expectation
+     calibrated through it (the APOE and mean factors) is already on the per-self scale and is not doubled again.
+     94's restatement doubled it: its FinnGen test goes back to APOE-factor power 0.77, no flag. 45's needs no
+     re-read. 95's expectation used the fathers' conversion (2.287) on Pilling's both-parents β, where Timmers' sheet
+     converts both-parents results at about 1.97: expected +0.0166, power 0.71, no flag; 95 stays B, nothing
+     stated as a flag. The rule (an own-death endpoint compares per self; a database line sets no D) is unchanged.
+   - **D30.13's `tradeoff` is dropped** (D26.4, as 40): A raises cotinine and years smoked, but every signed
+     lung-disease set at the locus runs with G, and A lowers respiratory failure and chronic bronchitis, so no quote
+     ties A to a harm. 95 stays general_ageing, descriptive, `mech:smoking`, `mech:lipids`.
+   - **D30.15 covers every context token that describes the effect**: `sex_specific`, `ancestry_specific`,
+     `age_dependent`. Evidence-scope tokens (`eur_only_evidence`) and flags (`replication_failed`) stay. D rows 48,
+     49 and 72 drop `ancestry_specific:eas` at their next touch and name it in prose. 94's D30.11 reason narrows:
+     Pilling's parents are the same parents the pooled Timmers estimate holds, and that estimate does not pass.
