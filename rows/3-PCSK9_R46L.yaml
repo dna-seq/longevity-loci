@@ -45,7 +45,8 @@ verdict_reason: >-
   and weight, in proportion to each variant's LDL effect; R46L's own odds ratio is in its figure, unread. The catalog's
   diabetes factor (P 8e-11) states no allele. Causal C4: no lifespan-class credible set holds it (D17.2). Effector E1
   PCSK9: the variant is missense in PCSK9 (Arg46Leu), and every lipid set read names PCSK9 by locus-to-gene (0.94 in
-  the first; 200 of the 1,659 sets were read, none of them lifespan-class). The protection is a presence, the rare T. Not a
+  the first; 200 of the 1,659 sets were read, none of them lifespan-class). The protection is a presence, the rare T. Descriptive: §4.2 gives a trade-off locus no actionability label, as
+  rows 8, 57 and 71. Not a
   treatment indication (R-VOICE-4): a standard cholesterol test shows the actual LDL level. Age of action unknown:
   Timmers' age bands do not include the variant, and the requirements' MIDLIFE was inferred from coronary risk. The
   evidence is European.
@@ -57,7 +58,7 @@ axes:
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
             cites: [pmid-30729179#q141, pmid-30642433#q362, pmid-29227965#q108, pmid-29227965#q111]}
-  actionability: {label: preventable, what: ["act_test:ldl"], who: "act_who:doctor", cites: [pmid-34341098#q1]}
+  actionability: {label: descriptive, cites: [pmid-27908689#q1]}
   context: {values: [eur_only_evidence], cites: [pmid-30642433#q362, db-ensembl-116#q728]}
 flags:
   - {token: "PROTECT:PRESENCE", cites: [pmid-30642433#q362, db-ensembl-116#q728]}
