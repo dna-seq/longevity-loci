@@ -69,3 +69,4 @@ tokens a session while its 81 tools stay deferred.
 - Milestones duty held acting since 2026-11-12 (L139, v0.1.192; no pm seat): the state post's source is docs/seats/LEAD_STATE.md, kept with `watchdog.sh keep lead state '#longevity-loci>state' FILE` whenever where-it-stands, a headline or the next actions change; one post per landed result in #longevity-loci>milestones.
 
 - Idle wake: the kit's queue key (D200, v0.1.207) on lead and curator, `dashboard.py --left` (81aa31e); the interim scratch waker is stopped.
+- reflect after 2026-11-21: classes/base/BASE.md as of v0.1.207 (the button closes the wake, not the turn)

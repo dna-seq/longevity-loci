@@ -11,3 +11,4 @@
 3. Export and rehearse the module again after each batch (module seat). It stays on the test instance until the person says otherwise.
 4. Pick the test instance's namespace (the person, desk #274; default `test-longevity-loci`, already in use).
 5. Mark the field's consensus top loci: a flag, a new top tier, or nothing (the person, desk #266; nothing is built until then).
+6. Decide where APOE lives (the person, desk #307; APOE is curated last, as a diplotype by the requirements).
