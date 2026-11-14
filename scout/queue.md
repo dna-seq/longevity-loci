@@ -118,3 +118,19 @@ read), and every identifier the paper has. The curator takes it from here; the s
   > rs4784227 16 52,599,188 T C 0.24 0.032 3.02e-08 0.018 7.75e-02
 - **Unknown:** its own tier; whether a healthspan signal carried by cancer alone counts for this module (D25.1, row
   86's shape, is the nearest precedent read here, not applied).
+
+### rs6062322 (ZBTB46) at locus 99 CHRNA4 (20q13.33): a novel mvAge signal, candidate row (D25.6, D17.6)
+
+- **Paper:** Rosoff 2023, as above (PMID 37550455). Corpus note `corpus/pmid-37550455.md` (q77, q78). From the
+  curator, 2026-11-14 (#longevity-loci > curation, 640348417).
+- **Why:** the seed's second rsID at locus 99, 455 kb from row 99's lead rs2273500 with no CEU LD pair at the
+  endpoint's threshold, so another signal (D17.6); named in row 99, not scored there. Novel in Rosoff ("Yes"), mvAge
+  P 3.3e-8 (T −0.0071, A the healthier allele by the curator's reading), frailty P 1.1e-5. Elsewhere in the corpus:
+  Timmers 2019 A −0.0130, P 0.010 (`pmid-30642433#q356`); Zenin 2019 healthspan T −0.0228, P 2.6e-4
+  (`pmid-30729179#q138`); FinnGen flat, P 0.56 (`db-finngen-r11#q74`).
+- **Passage** (Supplementary table, MOESM3, quoted as `pmid-37550455#q77`):
+  > Yes rs6062322 38 20:62441599 20 62441599 1 rs6062322 T A 0.1938 3.30263251677e-08 -0.00708049186358 0.0012816330016 ZBTB46:RP4-583P15.11 00:00:00 ncRNA_intronic 3.512 5 4 15 4.23399586645392 4 0.375263213896552
+- **Unknown:** its own tier; whether any lifespan study carries it outside mvAge's inputs (D16: Timmers is an input).
+  The allele each study favours is not reconciled here: the corpus notes read mvAge's A as healthier but Zenin's T
+  −0.0228 on the healthspan hazard as T healthier (Zenin's positive β is an earlier end), and Rosoff's own healthspan
+  column prints T +0.0228 (q78). Each sign convention needs checking before a direction is stated.
