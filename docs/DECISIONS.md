@@ -781,3 +781,19 @@ standing word (pacing off, "full steam ahead"; the advisor pattern for the requi
      for a French or Danish sample, Finnish for a Finnish one). 89 FN3KRP: the French controls misfit NFE (P 2e-4),
      so they are named and not counted; D (D26.8) rests on the Danish sample alone (controls fit, P 0.015; power
      0.92, heterogeneity P 0.009).
+
+## D31 — batch eleven: two rule readings from rows 3 and 108 (2026-11-14)
+
+1. **R-RARE-2 and R-TIER-4 agree: a lipid loss-of-function variant whose lifespan evidence is MR alone is at most C.**
+   R-RARE-2's "never above B" caps the variant whatever else it has; R-TIER-4's "MR-only results are never tier A/B"
+   is the stricter where MR is all there is. A lipid LoF with its own genome-wide lifespan hit and an independent
+   replication could reach B under R-RARE-2, never A. 3 PCSK9 R46L: only nominal UK Biobank lines (D30.4) and MR, so
+   C under both, the curator's (a). Its trade-off rests on Schmidt 2017's four-variant score, which R46L drives; the
+   row names that R46L's own diabetes OR sits in a figure not read. Rejected: (b), R-RARE-2 read as letting
+   MR-backed LoF reach B, which contradicts R-TIER-4's MR-only clause.
+2. **An r² is never taken from Timmers 2019's Figure 4 source data**: its `R2` column repeats `Freq1` (LPA's lead
+   reads 0.918). Each r² comes from Ensembl's LD (or the paper's text where it states one), with the population
+   named. Rows that quote a Figure 4 r² (25, 51, 59, 103 as the curator listed them) are re-taken now, as one unit,
+   since the r² decides whether a proxy's line counts. Rejected: (a), at each row's next touch, which leaves tiers
+   resting on a frequency read as LD meanwhile. 108's FinnGen line is D30.12 as D30.16 left it: a database line,
+   its test stated, no D and no `replication_failed`; B stands.
