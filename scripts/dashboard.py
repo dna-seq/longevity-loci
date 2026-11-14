@@ -114,7 +114,10 @@ def hours(h: float) -> str:
 
 
 # Seed loci waiting on the person, so not in the curator's unblocked queue (rows/PROGRESS.md says why).
-BLOCKED = {96: "APOE waits on the person's decision D2 (a diplotype inside v2)"}
+BLOCKED = {96: "APOE waits on the person's decision D2 (desk #307)",
+           23: "TERC waits on the person's decision D4, ageing markers (desk #312)",
+           30: "TERT waits on D4 (desk #312)",
+           104: "LRRC34/TERC waits on D4 (desk #312)"}
 
 
 def left() -> int:

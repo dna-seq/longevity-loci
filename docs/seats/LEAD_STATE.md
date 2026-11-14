@@ -12,3 +12,4 @@
 4. Pick the test instance's namespace (the person, desk #274; default `test-longevity-loci`, already in use).
 5. Mark the field's consensus top loci: a flag, a new top tier, or nothing (the person, desk #266; nothing is built until then).
 6. Decide where APOE lives (the person, desk #307; APOE is curated last, as a diplotype by the requirements).
+7. Decide the ageing-marker loci, TERT, TERC and LRRC34/TERC (the person, desk #312; skipped until then).
