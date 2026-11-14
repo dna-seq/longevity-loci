@@ -2466,3 +2466,22 @@ gnomAD's Ashkenazi 0.0166 (some 8 copies of 1,276 alleles where 21 are expected;
 (1000 Genomes CEU) returned an empty list between the lead and each of Wright 2019's three nearest lines (rs12955729,
 89 kb; rs17088751, 221 kb; rs11874029, 503 kb), so none tags it at the endpoint's threshold; the empty answers render
 to no text and are not cached. For row 92.
+
+## Reading 2026-11-14, record
+
+> [q687] mappings[0] allele_string G/A/C coord_system chromosome start 32967573 location 19:32967573-32967573 strand 1 seq_region_name 19 assembly_name GRCh38 ancestral_allele G end 32967573
+
+> [q688] populations[16] allele C allele_count 8205 frequency 0.1232 population gnomADg:nfe
+
+> [q689] populations[77] frequency 0.116302186878728 population 1000GENOMES:phase_3:EUR allele_count 117 allele C
+
+> [q690] populations[74] frequency 0.282738095238095 population 1000GENOMES:phase_3:EAS allele C allele_count 285
+
+> [q691] [0].transcript_consequences[3] hgnc_id HGNC:25907 gene_id ENSG00000121289 transcript_id ENST00000305768 biotype protein_coding gene_symbol_source HGNC variant_allele C gene_symbol CEP89 impact MODIFIER strand -1
+
+> [q692] [0] variation1 rs62127362 r2 0.054894 variation2 rs745961 population_name 1000GENOMES:phase_3:CEU d_prime 0.999835
+
+rs62127362 (row 94): GRCh38 19:32,967,573, G/A/C, G ancestral (q687; Deelen's GRCh37 position 33,458,479). C is 0.12
+in gnomAD's non-Finnish Europeans (q688) and 1000 Genomes' Europeans (q689), 0.28 in East Asians (q690), 0.09 in
+Africans. VEP: intronic in CEP89 (q691; FAAP24 and RPL31P60 within 5 kb). LD to Wright's rs745961 in CEU r² 0.055
+(q692). For row 94.

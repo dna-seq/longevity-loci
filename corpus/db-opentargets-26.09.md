@@ -3848,3 +3848,18 @@ q1063, q1064). For row 91.
 18_73851283_T_G (rs77546126, row 92): one credible set holds it, Gurinovich's PICS set (q1066, P 3e-9), the lead
 alone at posterior 1 (q1067), as at rows 19 and 77. Locus-to-gene: TIMM21 0.756 (q1068, q1069), FBXO15 0.344 (q1070),
 CYB5A 0.217, C18orf63 0.054. The set has no colocalisation of any kind, GWAS or QTL (q1071). For row 92.
+
+## Reading 2026-11-14, record
+
+> [q1072] data.variant.credibleSets count 5
+
+> [q1073] data.variant.credibleSets.rows[0].study id gtex-v10_ge_esophagus_mucosa_ensg00000121289 traitFromSource ENSG00000121289 studyType eqtl
+
+> [q1074] data.variant.credibleSets.rows[3].study id gtex-v10_ge_fibroblast_ensg00000121289 traitFromSource ENSG00000121289 studyType eqtl
+
+> [q1075] data.variant.credibleSets.rows[3].locus.rows[0] posteriorProbability 0.13942543490033024
+
+19_32967573_G_C (rs62127362, row 94): five credible sets hold the lead (q1072), all molecular QTLs of CEP89
+(ENSG00000121289) or its transcripts: GTEx oesophagus mucosa (q1073) and fibroblast (q1074) expression, HipSci iPSC
+expression, transcript and transcript-usage sets; posterior 0.07 to 0.14 (fibroblast 0.14, q1075). No GWAS set, so no
+lifespan-class set holds it, and no locus-to-gene or colocalisation is read for it. For row 94.

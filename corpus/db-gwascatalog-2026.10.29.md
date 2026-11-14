@@ -1868,3 +1868,10 @@ fungus. For row 91.
 
 rs77546126 holds one GWAS Catalog association (q516): Gurinovich 2021's longevity (100 years and older), G, risk
 frequency 0.0019, P 3e-9, its "beta" the score Z. Nothing else. For row 92.
+
+## Reading 2026-11-14, record
+
+> [q517] _embedded.associations[0] association_id 47713512 risk_frequency 0.87 pvalue_description pvalue_mantissa 4 pvalue_exponent -7 multi_snp_haplotype false snp_interaction false range [1.08-1.22] or_per_copy_num 1.1494253 or_value 1.1494253 beta - p_value 4e-07 accession_id GCST008600 pubmed_id 31413261 first_author Deelen J ci_lower 1.08 ci_upper 1.22
+
+rs62127362 holds one GWAS Catalog association (q517): Deelen 2019's trans-ethnic longevity (90th percentile,
+GCST008600), G, OR 1.15 (1.08–1.22), P 4e-7, Table 4's line inverted. Nothing else. For row 94.
