@@ -1,0 +1,111 @@
+# The seed list's locus 100, PARVB (22q13.31). Curated 2026-11-14. Lead rs62227724, the seed's only rsID (Pilling
+# 2016's mothers' age-at-death SNP): intronic in PARVB, GRCh38 22:44,128,027, GRCh37 22:44,523,907, C/G, C ancestral and
+# common, G 0.029 in non-Finnish Europeans (0.073 in Finns). Open Targets 26.09 has no record of the variant.
+locus_id: 100
+locus_name: PARVB
+verdict: re-tiered
+verdict_reason: >-
+  Tier D, from the seed's B (D28.13), row 60's shape: a hit its own authors set aside, with nothing independent for
+  it. Pilling 2016's UK Biobank scan of mothers' age at death (52,776 participants) has the common C with mothers
+  dying later, β +0.092 (SE 0.017), P 3.4e-8 (Supplementary Table 2), the only variant genome-wide for mothers there;
+  imputation INFO 0.76. The authors chose not to pursue it: it "was of low frequency (3%) and not in a typical “peak”
+  expected of robust results" (Results), the doubt row 60's D rests on, an overfit source by its authors' own reading
+  (D28.13). Nothing independent stands for it. Pilling 2017's larger UK Biobank scan, which contains Pilling 2016's
+  participants, leans C's way (mothers P 0.050, both parents 0.046; fathers 0.55; both parents in the top 10 % 0.88):
+  the discovery's own biobank, so not independent. Timmers 2019 (C +0.029, P 0.034) prints "+-": C longer in UK
+  Biobank, Pilling's people, and shorter in LifeGen's independent cohorts. Deelen 2019 has no line at the lead.
+  FinnGen R11's death endpoint leans C's way (G more deaths, P 0.15, one-sided 0.076), flat, a database line. Park
+  2025's own survival (P 0.90) and Zenin 2019's healthspan (P 0.68) are flat; Foote 2025's readable deposits cover
+  the window without the lead (the metabolic factor's returned the header alone). Wright 2019's AncestryDNA has no
+  line near it. The rsID literature search finds Pilling 2016 alone. Whether LifeGen or FinnGen would flag the
+  discovery is unknown: Pilling 2016's mothers' scale has no published conversion (D26.3), so no replication_failed;
+  the tier rests on the authors' doubt, as at 60. Outcome cells on a D row (D28.10, D30.17): lifespan 0 (the UK
+  Biobank looks are the discovery's biobank, LifeGen's arm leans against without its own P), healthspan 0 (Zenin
+  flat), exceptional survival 0 (Pilling 2017's top-10 % look flat, the discovery's biobank; Deelen has no line).
+  Mechanism general ageing (D25.7), pleiotropy empty: the GWAS Catalog holds no other trait for the variant.
+  Descriptive. Causal C4 and effector E4, no gene named: Open Targets holds no record of the variant, and an overfit
+  source sets no level anyway (D28.12); PARVB is named in prose. Every genotype neutral (D25.2); C/C, about 94 in 100
+  Europeans, the reference. Age of action unknown. The evidence is European; G is commoner in Finns (0.073), where
+  FinnGen's look is flat, so eur_only_evidence.
+axes:
+  tier: {value: D, cites: [pmid-27015805#q24, pmid-27015805#q25, pmid-27015805#q26, pmid-27015805#q12, pmid-29227965#q104, pmid-29227965#q105, pmid-29227965#q106, pmid-29227965#q107, pmid-30642433#q357, db-finngen-r11#q75, pmid-40021682#q102, pmid-40021682#q32, pmid-30729179#q139, db-gwascatalog-2026.10.29#q534, db-opentargets-26.09#q1121]}
+  mechanism: {value: general_ageing, cites: [db-gwascatalog-2026.10.29#q534, db-opentargets-26.09#q1121]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
+            cites: [pmid-30729179#q139, pmid-29227965#q104, pmid-29227965#q105, pmid-29227965#q107, pmid-30642433#q357]}
+  actionability: {label: descriptive, cites: [pmid-27015805#q24]}
+  context: {values: [eur_only_evidence], cites: [pmid-27015805#q24, db-ensembl-116#q716, db-ensembl-116#q717]}
+flags:
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1121]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q1121]}
+variants:
+  - rsid: rs62227724
+    gene: ""
+    phenotype: PARVB region, mothers' lifespan
+    trait_efo_id: EFO_0007796
+    effect_allele: C
+    effect_size: 0.0921
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: C/C
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position, as about 94 in 100 people of European
+          ancestry do. It is the reference the other combinations are compared with. The position, on chromosome 22,
+          lies in the PARVB gene.
+      - genotype: C/G
+        state: neutral
+        conclusion: >-
+          You carry one copy of a less common version of this DNA position (about 6 in 100 people of European
+          ancestry do). One British study linked it to mothers dying a little earlier, but its own authors doubted the
+          result and other studies did not support it, so it is not counted for or against lifespan.
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of a rare version of this DNA position (fewer than 1 in 1,000 people of European
+          ancestry do). One British study linked it to mothers dying a little earlier, but its own authors doubted the
+          result and other studies did not support it, so it is not counted for or against lifespan.
+studies:
+  - rsid: rs62227724
+    note: pmid-27015805
+    quote: q24
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_linear
+    population: European (UK Biobank, 'white' British participants aged 55 to 70), mothers
+    ancestry: [EUR]
+    stratum: parent
+    stratum_level: mother
+    sample_size: 52776
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "3.40E-08"
+    p_value_num: 3.4e-08
+    effect_size: 0.092149
+    effect_measure: beta
+    effect_unit: mother's age at death per C allele (positive = later death)
+    effect_allele: C
+    direction: protective
+    statistical_test: "BOLT-LMM on mother's age at death (Supplementary Table 2, q24; columns q12), SE 0.016689, INFO 0.756, HWE P 0.29; n 52,776 (q26); the authors set it aside as of low frequency and not in a typical peak (q25): an overfit source (D28.13)"
+    curator: claude-opus-5-5
+  - rsid: rs62227724
+    note: pmid-30642433
+    quote: q357
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts), both parents
+    ancestry: [EUR]
+    sample_size: 566879
+    sample_unit: lives
+    stat_significance: nominal
+    p_value: "0.034144464"
+    p_value_num: 0.034144464
+    effect_size: 0.02937611
+    effect_measure: beta
+    effect_unit: log hazard protection per C allele (positive = longer life)
+    effect_allele: C
+    direction: protective
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0139, direction +- (UK Biobank C longer, LifeGen C shorter), info 0.77; UK Biobank holds the discovery's participants, so not independent"
+    curator: claude-opus-5-5

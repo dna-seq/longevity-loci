@@ -546,3 +546,11 @@ replicates (D12, D30.12). For row 98.
 FinnGen R11's death endpoint at rs2273500 (q73, row 99): alt C (0.22 in Finns) β +0.0521 (SE 0.0090), P 5.9e-9: C
 with more deaths, T with fewer, genome-wide, outside UK Biobank. A database release line: it never replicates (D12,
 D30.12), so it is named, not counted. rs6062322 (q74): flat, P 0.56. For row 99.
+
+## Reading 2026-11-14, supplement
+
+> [q75] 22 44128027 C G rs62227724 PARVB 0.151142 0.820615 0.021806 0.0151904 0.0678088 0.0676006 0.0678349
+
+FinnGen R11's death endpoint at rs62227724 (q75, row 100; columns pval, mlogp, beta, sebeta, af_alt): alt G (0.068 in
+Finns) β +0.0218 (SE 0.0152), P 0.15: G with slightly more deaths, C's way, one-sided 0.076, flat; a database line.
+For row 100.

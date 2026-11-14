@@ -4013,3 +4013,10 @@ use, lung cancers, white-cell counts, and CHRNA4 expression and splicing QTLs. F
 
 Row 99: a cigarettes-per-day credible set (GCST90243987, PICS, P 3e-64, β +0.0382 per C; q1118, q1119) holds the
 lead at posterior 0.9999 (q1120). For row 99.
+
+## Reading 2026-11-14, record
+
+> [q1121] data variant null
+
+Open Targets 26.09 has no record of 22_44128027_C_G (rs62227724, row 100; q1121): no credible set, locus-to-gene or
+colocalisation. For row 100.

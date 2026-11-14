@@ -1948,3 +1948,9 @@ fathers' allele, goes with fewer cigarettes and less COPD. For row 99.
 
 Row 95: the trait and allele of q521's association (228207286): years smoked (q532), effect allele A (q533), so A
 "increase" in q521 is A with more years smoked. For row 95.
+
+## Reading 2026-11-14, record
+
+> [q534] _embedded.associations[0] association_id 16533112 risk_frequency NR pvalue_description pvalue_mantissa 3 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.059-0.125] beta 0.092149 unit increase p_value 3.0000000000000004e-08 accession_id GCST003393 pubmed_id 27015805 first_author Pilling LC ci_lower 0.059 ci_upper 0.125
+
+rs62227724 holds one GWAS Catalog association (q534): Pilling 2016's mother's age at death. Nothing else. For row 100.

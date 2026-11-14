@@ -2558,3 +2558,16 @@ rs293554 r² 0.56 (q709). For row 98.
 rs2273500 (row 99): GRCh38 20:63,355,597, T/C, C ancestral (q711). T is 0.85 in gnomAD's non-Finnish Europeans
 (q712). VEP's most severe consequence is a splice acceptor, in a nonsense-mediated-decay transcript of CHRNA4
 (ENST00000498043, q713), not the canonical protein. LD in CEU to Wright's rs6011776 r² 0.11 (q714). For row 99.
+
+## Reading 2026-11-14, record
+
+> [q715] mappings[0] strand 1 coord_system chromosome end 44128027 start 44128027 location 22:44128027-44128027 ancestral_allele C assembly_name GRCh38 seq_region_name 22 allele_string C/G
+
+> [q716] populations[20] allele G allele_count 1987 frequency 0.02921 population gnomADg:nfe
+
+> [q717] populations[3] allele G population gnomADg:fin frequency 0.07344 allele_count 779
+
+> [q718] [0] strand 1 seq_region_name 22 start 44128027 id rs62227724 most_severe_consequence intron_variant end 44128027 assembly_name GRCh38 allele_string C/G input rs62227724
+
+rs62227724 (row 100): GRCh38 22:44,128,027, C/G, C ancestral (q715). G is 0.029 in gnomAD's non-Finnish Europeans
+(q716), 0.073 in its Finns (q717), 0.02 in Africans. VEP: intronic (q718), PARVB. For row 100.
