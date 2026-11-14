@@ -16,11 +16,10 @@ verdict_reason: >-
   scale (crude log odds ratios, no conversion; NECS 1.74, SE 0.36, LGP about 0.16, SE 0.60) one-sided power about
   0.89 and heterogeneity P about 0.024 (0.87 to 0.91 and 0.014 to 0.041 over the printed frequencies' rounding), with
   no independent scoring-class study at P < 0.05 for G, which by D25.1's letter would make the row D. It is held at C,
-  the null named and not counted, on D30.5's ground: LGP's controls carry G at about a third of gnomAD's Ashkenazi
+  the null named and never counted (D30.10, D30.5 generalised): LGP's controls carry G at about a third of gnomAD's Ashkenazi
   frequency (0.006 against 0.0166; about 8 copies where 21 are expected, P about 0.001), so its calls at this rare
   variant are not shown reliable; the frequencies are printed to one figure, and NECS's crude odds ratio rests on
-  about 11 control copies, a winner's curse inflating the power. The call between C and D is put to the lead (D30.5
-  settled a 25-fold misfit at 77; here it is threefold and the other way). No replication_failed. The frequency depends on the source, as at 19 and 77: NECS's controls (0.19 %) and gnomAD's
+  about 11 control copies, a winner's curse inflating the power. No replication_failed. The frequency depends on the source, as at 19 and 77: NECS's controls (0.19 %) and gnomAD's
   non-Finnish Europeans (0.15 %) see a rare allele, 1000 Genomes (9.2 %) and ALFA (5.5 %) a common one, and Deelen
   2019's files hold not the SNP but two insertion-deletions two and six bases from it at 0.10 and 0.11 (flat, P 0.56
   to 0.94), the common frequency on an indel beside the rare SNP, as at 19. gnomAD agrees with NECS's controls, so the
@@ -96,5 +95,5 @@ studies:
     age_of: participant
     effect_allele: G
     direction: protective
-    statistical_test: "Score test in the NECS GWAS (Supplement Table 1, q37; legend q3), score Z 5.92, no effect size printed; G 1.07 % of cases' alleles against 0.19 % of controls' (crude OR about 5.7, derived); LGP replication (312 cases, 638 controls, Table 1, q16) G 0.007 against 0.006, score 0, P 0.9 (Table 2, q38); at face value power about 0.89, heterogeneity P about 0.024 on crude log odds ratios (derived), named, not counted, its controls at a third of gnomAD's Ashkenazi frequency (D30.5; the C-or-D call put to the lead); R-TIER-2 caps it at C"
+    statistical_test: "Score test in the NECS GWAS (Supplement Table 1, q37; legend q3), score Z 5.92, no effect size printed; G 1.07 % of cases' alleles against 0.19 % of controls' (crude OR about 5.7, derived); LGP replication (312 cases, 638 controls, Table 1, q16) G 0.007 against 0.006, score 0, P 0.9 (Table 2, q38); at face value power about 0.89, heterogeneity P about 0.024 on crude log odds ratios (derived), named, not counted, its controls at a third of gnomAD's Ashkenazi frequency (D30.10); R-TIER-2 caps it at C"
     curator: claude-opus-5-5
