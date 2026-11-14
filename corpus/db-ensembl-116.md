@@ -2437,3 +2437,29 @@ rs17782313 (row 91): GRCh38 18:60,183,864 T/C, GRCh37 18:57,851,097, intergenic 
 MC4R; C 0.235 in gnomAD's non-Finnish Europeans (q675). LD in CEU: rs476828 r² 0.97 (q677); rs17066892, Deelen's
 99th-percentile peak, r² 0.090 (q678). Ensembl reports no CEU pair from the lead to Wright's nearby lines (rs1379444,
 rs35748167, rs650313, rs512279, rs9646627, 72 to 680 kb away) or to rs752720, rs1791329 and rs7228187. For row 91.
+
+## Reading 2026-11-14, record
+
+> [q679] mappings[0] seq_region_name 18 ancestral_allele null assembly_name GRCh38 end 73851283 strand 1 start 73851283 location 18:73851283-73851283 coord_system chromosome allele_string T/A/G
+
+> [q680] populations[9] allele G allele_count 79 frequency 0.001456 population gnomADg:nfe
+
+> [q681] populations[77] allele_count 93 allele G frequency 0.0924453280318091 population 1000GENOMES:phase_3:EUR
+
+> [q682] populations[44] population ALFA:SAMN10492695 frequency 0.05477 allele G allele_count 1105
+
+> [q683] populations[6] population gnomADg:asj frequency 0.01659 allele_count 41 allele G
+
+> [q684] populations[3] population gnomADg:afr frequency 0.07373 allele_count 2438 allele G
+
+> [q685] [0] id rs77546126 strand 1 assembly_name GRCh38 end 73851283 seq_region_name 18 allele_string T/A/G most_severe_consequence intron_variant input rs77546126 start 73851283
+
+rs77546126 (row 92): GRCh38 18:73,851,283, T/A/G (q679; the record holds no GRCh37 mapping, the paper's 71,518,518
+is GRCh37, pmid-33948810#q37). G is 0.15 % in gnomAD's non-Finnish Europeans (q680; 0 in Finns), 1.7 % in its
+Ashkenazi Jews (q683), 7.4 % in its Africans (q684); 9.2 % in 1000 Genomes' Europeans (q681; CEU 0.11, GBR 0.08) and
+5.5 % in ALFA's (q682). VEP: intronic in a lncRNA (q685), ENSG00000302257. NECS's controls (0.19 %,
+pmid-33948810#q37) agree with gnomAD; 1000 Genomes and ALFA give a common allele, the frequency Deelen's two indels
+beside it carry (pmid-31413261#q227-q230). The LGP's controls (0.006, pmid-33948810#q38) sit at about a third of
+gnomAD's Ashkenazi 0.0166 (some 8 copies of 1,276 alleles where 21 are expected; derived). The pairwise LD endpoint
+(1000 Genomes CEU) returns no pair between the lead and Wright 2019's three nearest lines (rs12955729, 89 kb;
+rs17088751, 221 kb; rs11874029, 503 kb), so none tags it. For row 92.

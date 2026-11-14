@@ -1,0 +1,94 @@
+# The seed list's locus 92, FBXO15 (18q22.3; the seed's genes "FBXO15; RN7SL401P"). Curated 2026-11-14. Lead
+# rs77546126, the seed's only rsID (Gurinovich 2021's NECS centenarian SNP), intronic in a lncRNA near FBXO15, GRCh38
+# 18:73,851,283, GRCh37 18:71,518,518, T/G. G is rare in NECS (1.07 % of centenarians' alleles, 0.19 % of controls')
+# and in gnomAD's non-Finnish Europeans (0.15 %), but common in 1000 Genomes' Europeans (9.2 %) and ALFA's (5.5 %): the
+# sister of rows 19 and 77 from the same paper.
+locus_id: 92
+locus_name: FBXO15
+verdict: re-tiered
+verdict_reason: >-
+  Tier C, from the seed's B, under R-TIER-2 (D30.5, row 77's shape). Gurinovich 2021's GWAS of 1,320 NECS
+  centenarians against 2,899 controls finds G more common among the centenarians (1.07 % against 0.19 % of alleles,
+  score Z 5.92, P 3.3e-9, Supplement Table 1): genome-wide at the paper's threshold, in one old-against-young
+  case-control, which R-TIER-2 caps at C until an independent sample replicates it (D22.1). None does. The paper's own
+  replication in the Longevity Genes Project (Table 2; 312 Ashkenazi centenarians, 638 controls, Table 1) is flat (G
+  0.007 against 0.006, printed score 0, P 0.9). Its null is named, not counted as a powered test, as at 77 (D30.5):
+  its controls carry G at about a third of gnomAD's Ashkenazi frequency (0.006 against 0.0166, some 8 copies where 21
+  are expected), so its calls at this rare variant are not shown reliable and its power is unknown (D26.3); no
+  replication_failed. The frequency depends on the source, as at 19 and 77: NECS's controls (0.19 %) and gnomAD's
+  non-Finnish Europeans (0.15 %) see a rare allele, 1000 Genomes (9.2 %) and ALFA (5.5 %) a common one, and Deelen
+  2019's files hold not the SNP but two insertion-deletions two and six bases from it at 0.10 and 0.11 (flat, P 0.56
+  to 0.94), the common frequency on an indel beside the rare SNP, as at 19. gnomAD agrees with NECS's controls, so the
+  source is not shown overfit (D26.10): not D. Nothing else tests the lead: Timmers 2019's deposit, Pilling 2017's,
+  Zenin 2019's healthspan, FinnGen R11's death endpoint (G absent in Finns) and Foote 2025's frailty deposits hold no
+  line; Park 2025's line is at about 0.04 %, below its own MAF 0.1 % filter, an excluded line (D26.7, as 77); Wright
+  2019's three nearest AncestryDNA lines (89 to 503 kb away) have no CEU LD pair to the lead; Rosoff 2023's mvAge
+  tables hold no line. The rsID literature search (Europe PMC, PubMed, OpenAlex, Crossref, preprints; Semantic Scholar
+  429, its part unchecked) finds this paper alone. Exceptional survival + on NECS; lifespan and healthspan untested.
+  Causal C1 by §4.2's threshold, with little meaning: Gurinovich's PICS set is the lead alone at posterior 1, by
+  construction for a rare variant, as at 19 and 77. Effector E2 by locus-to-gene alone: TIMM21 0.76 (FBXO15 0.34),
+  with no colocalisation of any kind; the paper and the GWAS Catalog name FBXO15. The authors call the region
+  intragenic with little annotation: mechanism general ageing, pleiotropy empty, descriptive. PROTECT:PRESENCE (the
+  rarer G goes with reaching 100). Neutral, protective and protective genotypes, as 19 and 77, the shares NECS
+  controls' (G 0.19 %), the frequency the claim was made at. Age of action unknown. The evidence is European.
+axes:
+  tier: {value: C, cites: [pmid-33948810#q37, pmid-33948810#q38, pmid-33948810#q16, pmid-33948810#q1, pmid-33948810#q2, pmid-33948810#q3, db-ensembl-116#q680, db-ensembl-116#q681, db-ensembl-116#q682, db-ensembl-116#q683, pmid-31413261#q227, pmid-31413261#q228, pmid-31413261#q229, pmid-31413261#q230, pmid-40021682#q96, pmid-40021682#q39, db-gwascatalog-2026.10.29#q516]}
+  mechanism: {value: general_ageing, cites: [pmid-33948810#q39, db-ensembl-116#q685]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: untested, lifespan: untested, exceptional_survival: "+",
+            cites: [pmid-33948810#q37, pmid-33948810#q38, pmid-40021682#q96, pmid-40021682#q39]}
+  actionability: {label: descriptive, cites: [pmid-33948810#q37]}
+  context: {values: [eur_only_evidence], cites: [pmid-33948810#q1, pmid-33948810#q2]}
+flags:
+  - {token: "PROTECT:PRESENCE", cites: [pmid-33948810#q37, pmid-33948810#q3]}
+  - {token: "causal:C1", cites: [db-opentargets-26.09#q1066, db-opentargets-26.09#q1067]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q1068, db-opentargets-26.09#q1069, db-opentargets-26.09#q1071]}
+variants:
+  - rsid: rs77546126
+    gene: TIMM21
+    phenotype: FBXO15 region, reaching 100
+    trait_efo_id: OBA_VT0005372
+    effect_allele: G
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: T/T
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position. It is the reference the other combinations
+          are compared with. The position, on chromosome 18, lies near the FBXO15 gene, and how common the other
+          version is depends on how it was measured.
+      - genotype: G/T
+        state: protective
+        conclusion: >-
+          You carry one copy of a version of this DNA position that one American study of people who reached 100
+          found more often among them than among younger people. A smaller study of centenarians did not confirm it.
+          How common this version is differs a lot between measurements, so this is an uncertain finding, and it says
+          little about your own lifespan.
+      - genotype: G/G
+        state: protective
+        conclusion: >-
+          You carry two copies of a version of this DNA position that one American study of people who reached 100
+          found more often among them than among younger people. A smaller study of centenarians did not confirm it.
+          How common this version is differs a lot between measurements, so this is an uncertain finding, and few
+          people carrying two copies were studied.
+studies:
+  - rsid: rs77546126
+    note: pmid-33948810
+    quote: q37
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: centenarian_case_control
+    population: European (New England Centenarian Study centenarians against unrelated controls)
+    ancestry: [EUR]
+    n_cases: 1320
+    sample_size: 4219
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "3.30E-09"
+    p_value_num: 3.3e-09
+    age_of: participant
+    effect_allele: G
+    direction: protective
+    statistical_test: "Score test in the NECS GWAS (Supplement Table 1, q37; legend q3), score Z 5.92, no effect size printed; G 1.07 % of cases' alleles against 0.19 % of controls' (crude OR about 5.7, derived); LGP replication (312 cases, 638 controls, Table 1, q16) G 0.007 against 0.006, score 0, P 0.9 (Table 2, q38), named, power unknown, its controls at a third of gnomAD's Ashkenazi frequency (D30.5, D26.3); R-TIER-2 caps it at C"
+    curator: claude-opus-5-5

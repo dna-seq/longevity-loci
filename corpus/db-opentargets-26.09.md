@@ -3830,3 +3830,21 @@ less-frail T on the lower-risk side in the sets that print a sign of +1: coronar
 H4 0.956, +1, q1059, q1060; two other diabetes sets print −1, H4 0.969 and 0.949, and most print 0), heart failure, gout. Run the other way,
 T raising them: HDL cholesterol, eGFR, SHBG, and self-reported worry and nervous feelings (worry H4 0.970, sign −1,
 q1063, q1064). For row 91.
+
+## Reading 2026-11-14, record
+
+> [q1066] data.variant.credibleSets.rows[0] studyLocusId 15969b4dfb6b1acdb1ae723d6c64364a pValueMantissa 3 pValueExponent -9 beta 5.9159646 finemappingMethod PICS
+
+> [q1067] data.variant.credibleSets.rows[0].locus.rows[0] posteriorProbability 1
+
+> [q1068] data.variant.credibleSets.rows[0].l2GPredictions.rows[0] score 0.7555360794067383
+
+> [q1069] data.variant.credibleSets.rows[0].l2GPredictions.rows[0].target approvedSymbol TIMM21
+
+> [q1070] data.variant.credibleSets.rows[0].l2GPredictions.rows[1] score 0.34417304396629333
+
+> [q1071] data.credibleSet.colocalisation count 0
+
+18_73851283_T_G (rs77546126, row 92): one credible set holds it, Gurinovich's PICS set (q1066, P 3e-9), the lead
+alone at posterior 1 (q1067), as at rows 19 and 77. Locus-to-gene: TIMM21 0.756 (q1068, q1069), FBXO15 0.344 (q1070),
+CYB5A 0.217, C18orf63 0.054. The set has no colocalisation of any kind, GWAS or QTL (q1071). For row 92.

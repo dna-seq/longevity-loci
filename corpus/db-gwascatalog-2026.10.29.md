@@ -1861,3 +1861,10 @@ rs28926173 (row 90): two associations, both Pilling 2017's parental longevity: t
 rs17782313 (row 91): 15 associations, none of a lifespan phenotype; body mass index and obesity with C the risk allele
 (Loos 2008, P 3e-15, q515; Willer 2009; Meyre 2009), height, dietary pattern, metabolic syndrome, leg ulcer and nail
 fungus. For row 91.
+
+## Reading 2026-11-14, record
+
+> [q516] _embedded.associations[0] association_id 80754836 risk_frequency 0.0019 pvalue_description pvalue_mantissa 3 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range [NR] beta 5.9159646 unit increase p_value 3.0000000000000004e-09 accession_id GCST012419 pubmed_id 33948810 first_author Gurinovich A
+
+rs77546126 holds one GWAS Catalog association (q516): Gurinovich 2021's longevity (100 years and older), G, risk
+frequency 0.0019, P 3e-9, its "beta" the score Z. Nothing else. For row 92.
