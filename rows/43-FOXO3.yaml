@@ -9,6 +9,7 @@
 # Semantic Scholar was rate-limited, so its part is unchecked).
 locus_id: 43
 locus_name: FOXO3
+also_loci: [102]
 verdict: kept
 verdict_reason: >-
   Tier B, as the seed has it. The genome-wide result at the locus is Timmers 2020's multivariate one, and a
@@ -26,7 +27,10 @@ verdict_reason: >-
   the same side; an input of the multivariate test, not a replication. The independent replication is Wright 2019's
   AncestryDNA parents, who share no one with UK Biobank or LifeGen: at rs6911407 (r² 0.98, its A with G) A
   lengthens both parents' lives, β +0.0096, P 1.1e-4 after Wright's genomic control (one-sided about 5e-5, derived),
-  the same allele and direction. It does not lift the tier, as the anchor is still multivariate (D18.3). Broer 2015's
+  the same allele and direction. It does not lift the tier, as the anchor is still multivariate (D18.3). Seed locus 102 (rs10457180, r² 0.63 and D′ 0.97 to the lead in CEU) is the same FOXO3 signal and is folded here
+  (D14): Hoque 2026's 597 Canadian Super Seniors against 420 mid-life controls find rs10457180, rs13217795 and the
+  lead itself nominally associated with being a Super Senior, mainly in women, in a candidate-variant look-up (the
+  GWAS itself finds nothing genome-wide); named, at its abstract, adding nothing to the tier. Broer 2015's
   P 1.85e-10 for rs2802292 (G, OR 1.17) is not a genome-wide GWAS result: it is a candidate look-up pooled with the
   published candidate-gene samples (10,574 cases against the GWAS's 6,036), so it holds the discovery and its
   replications together, and Broer reports no new genome-wide association. It is a candidate meta-analysis, not a
@@ -65,7 +69,7 @@ verdict_reason: >-
   No sex dimorphism (Timmers 2020). The counted evidence is European, so `eur_only_evidence`; the candidate-gene
   discovery is in men of Japanese ancestry, where G is the minor allele too (0.32), and is not counted.
 axes:
-  tier: {value: B, cites: [pmid-32678081#q20, pmid-32678081#q21, pmid-32678081#q22, pmid-32678081#q9, pmid-32678081#q6, pmid-30642433#q221, pmid-30642433#q222, pmid-31484785#q89, pmid-31484785#q6, db-gwascatalog-2026.10.29#q300, db-ensembl-116#q293, db-opentargets-26.09#q587, pmid-25199915#q1, pmid-25199915#q2, pmid-31413261#q106, pmid-31413261#q107, pmid-31413261#q3, pmid-18765803#q1, pmid-19196970#q1, pmid-19196970#q2, pmid-30642433#q223, pmid-30642433#q76, pmid-30642433#q12, pmid-30642433#q101, db-finngen-r11#q18, db-ensembl-116#q291, db-ensembl-116#q292, db-opentargets-26.09#q583, db-opentargets-26.09#q584]}
+  tier: {value: B, cites: [pmid-41964836#q1, pmid-41964836#q2, db-ensembl-116#q290, pmid-32678081#q20, pmid-32678081#q21, pmid-32678081#q22, pmid-32678081#q9, pmid-32678081#q6, pmid-30642433#q221, pmid-30642433#q222, pmid-31484785#q89, pmid-31484785#q6, db-gwascatalog-2026.10.29#q300, db-ensembl-116#q293, db-opentargets-26.09#q587, pmid-25199915#q1, pmid-25199915#q2, pmid-31413261#q106, pmid-31413261#q107, pmid-31413261#q3, pmid-18765803#q1, pmid-19196970#q1, pmid-19196970#q2, pmid-30642433#q223, pmid-30642433#q76, pmid-30642433#q12, pmid-30642433#q101, db-finngen-r11#q18, db-ensembl-116#q291, db-ensembl-116#q292, db-opentargets-26.09#q583, db-opentargets-26.09#q584]}
   mechanism: {value: general_ageing, cites: [pmid-32678081#q23, pmid-32678081#q27, db-opentargets-26.09#q580, db-opentargets-26.09#q581, db-gwascatalog-2026.10.29#q299, pmid-41837379#q2]}
   pleiotropy: {values: [broad, tradeoff], cites: [pmid-32678081#q23, pmid-32678081#q24, pmid-32678081#q27, db-opentargets-26.09#q580, db-opentargets-26.09#q581, db-gwascatalog-2026.10.29#q299]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
