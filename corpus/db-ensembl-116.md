@@ -2585,3 +2585,16 @@ fathers' line rs6006540 (370 kb) has no CEU pair. Foote's six readable deposits 
 without the lead (Q-filtered or absent). A literature search on rs62227724 (2026-11-14; Semantic Scholar 429, its
 part unchecked) finds only a 2018 review; Rosoff's tables name PARVB only in TWAS rows of other genes' models. For
 row 100.
+
+## Reading 2026-11-14, record
+
+> [q721] mappings[0] seq_region_name 2 allele_string C/A/T coord_system chromosome strand 1 start 236173211 end 236173211 location 2:236173211-236173211 ancestral_allele C assembly_name GRCh38
+
+> [q722] populations[1] population gnomADg:nfe frequency 0.8039 allele C allele_count 54630
+
+> [q723] [0] variation1 rs10211471 r2 0.541423 variation2 rs6752442 d_prime 0.999998 population_name 1000GENOMES:phase_3:CEU
+
+> [q724] [0] allele_string C/A/T most_severe_consequence intron_variant input rs10211471 start 236173211 id rs10211471 strand 1 assembly_name GRCh38 end 236173211 seq_region_name 2
+
+rs10211471 (row 101): GRCh38 2:236,173,211, C/A/T, C ancestral (q721); C 0.80 in gnomAD's non-Finnish Europeans
+(q722). VEP: intronic (q724). LD to Wright's rs6752442 r² 0.54, D′ 1.00 in CEU (q723). For row 101.

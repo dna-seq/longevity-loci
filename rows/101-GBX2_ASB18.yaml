@@ -1,0 +1,127 @@
+# The seed list's locus 101, GBX2/ASB18 (2q37.2). Curated 2026-11-14. Lead rs10211471, the seed's only rsID (Timmers
+# 2019's integrated-analysis SNP): intronic, between GBX2 and ASB18, GRCh38 2:236,173,211, GRCh37 2:237,081,854, C/T, C
+# ancestral, 0.80 in non-Finnish Europeans and the longer-lived allele.
+locus_id: 101
+locus_name: GBX2/ASB18
+verdict: kept
+verdict_reason: >-
+  Tier B, the seed's, on Timmers 2019's own genome-wide call (D28.7), row 59's shape. Timmers' integrated scan, whose
+  prior here is educational attainment, calls the locus genome-wide at a Bayes-factor permutation P of 2.3e-8, under
+  its 2.5e-8, and reports it genome-wide for the first time; the conventional P in its million parental lives is
+  1.1e-6 (C +0.24 years per copy, UK Biobank and LifeGen on the same side). So a genome-wide locus by the paper's call,
+  never A, part of the call's evidence being the education GWAS behind the prior. Nothing independent replicates it,
+  and nothing powered contradicts it: Timmers' own Figure 4 look-up in the earlier longevity sample, at rs6757542
+  (r² 0.83), is flat (one-sided 0.44, Alpha 0.08); Deelen 2019 leans C's way (90th one-sided 0.16, 99th 0.10), a flag
+  under APOE's factor at the 90th only (power 1.00, heterogeneity P 0.0076; the mean factor power 0.63), so none
+  (D25.3); FinnGen R11's death endpoint leans C's way (one-sided 0.10; power 0.87, heterogeneity P 0.19), no flag, a
+  database line. Wright 2019's AncestryDNA has only a weak tag (rs6752442, r² 0.54, fathers born 1886-1918, P 0.0011
+  after genomic control), named, not counted. Pilling 2017's deposits hold no line at the lead. Within UK Biobank,
+  Park 2025's own survival co-occurs (C fewer deaths, P 0.011, its allele columns swapped). Lifespan + (Timmers);
+  healthspan 0 (Zenin 2019 C's way, P 0.37; Foote 2025's general frailty factor C less frail, P 0.035, and four of
+  six factors its way, multivariate, D27.3, scoring nothing alone); exceptional survival 0 (Deelen and Figure 4 flat).
+  Foote at the lead is read (D27.3's GBX2/ASB18 check): every deposit holds the line, none genome-wide. Mechanism
+  general ageing: the lead's only other sets are educational attainment and its kin (C with more schooling, posterior
+  0.01 to 0.22) and smoking initiation, none colocalising with a lifespan set here, and education is a prior, not a
+  shown route (D17.7). Pleiotropy empty, descriptive. Causal C4 and effector E4, no gene named: no lifespan-class
+  credible set holds the lead; GBX2 and ASB18 are named in prose. C/C, about 65 in 100 Europeans, is the reference
+  (§6.2); C/T and T/T risk. No PROTECT token: no disease is known at the locus (D30.6). Age of action lifelong, weakly: Timmers'
+  age moderator at the lead is null (β about 1e-4, P 0.85, Q 0.93; Figure 5 source data), with the fathers' age-band
+  effects of the same size from 50 to 90, as rows 25 and 37 read theirs. The evidence is European.
+axes:
+  tier: {value: B, cites: [pmid-30642433#q358, pmid-30642433#q42, pmid-30642433#q359, pmid-30642433#q360, pmid-31413261#q242, pmid-31413261#q243, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, db-finngen-r11#q76, pmid-31484785#q150, db-ensembl-116#q723, pmid-40021682#q103, pmid-40021682#q32]}
+  mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q1122, db-opentargets-26.09#q1124]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: LIFELONG, confidence: DIRECT_WEAK, cites: [pmid-30642433#q361]}
+  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "0",
+            cites: [pmid-30729179#q140, pmid-40759756#q41, pmid-30642433#q359, pmid-31413261#q242, pmid-31413261#q243, pmid-30642433#q360]}
+  actionability: {label: descriptive, cites: [pmid-30642433#q358]}
+  context: {values: [eur_only_evidence], cites: [pmid-30642433#q358, pmid-30642433#q359]}
+flags:
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1122]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q1122]}
+variants:
+  - rsid: rs10211471
+    gene: ""
+    phenotype: GBX2/ASB18 region, parental lifespan
+    trait_efo_id: EFO_0007796
+    effect_allele: C
+    effect_size: 0.2401
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: C/C
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position, as about 65 in 100 people of European
+          ancestry do. It is the reference the other combinations are compared with. The position, on chromosome 2,
+          lies between the GBX2 and ASB18 genes; which gene matters, if either, is not known.
+      - genotype: C/T
+        state: risk
+        conclusion: >-
+          You carry one copy of a less common version of this DNA position (about 31 in 100 people of European
+          ancestry do). In a study of about a million parents' lives, parents of people with it lived a little
+          shorter lives, about a quarter of a year per copy. The finding leaned on links to education to reach
+          significance and no separate study has confirmed it: a likely finding, not a settled one.
+      - genotype: T/T
+        state: risk
+        conclusion: >-
+          You carry two copies of a less common version of this DNA position (about 4 in 100 people of European
+          ancestry do). In a study of about a million parents' lives, each copy went with parents living about a
+          quarter of a year less. The finding leaned on links to education to reach significance and no separate
+          study has confirmed it: a likely finding, not a settled one.
+studies:
+  - rsid: rs10211471
+    note: pmid-30642433
+    quote: q358
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts), both parents
+    ancestry: [EUR]
+    sample_size: 1012240
+    sample_unit: lives
+    stat_significance: significant
+    p_value: "2.3E-08"
+    p_value_num: 2.3e-08
+    effect_size: 0.2401
+    effect_measure: beta
+    effect_unit: years of life per C allele in self (the parental estimate doubled)
+    effect_allele: C
+    direction: protective
+    statistical_test: "Timmers 2019's integrated analysis (iGWAS, Table 2, q358): Bayes-factor permutation P with an educational-attainment prior, genome-wide by the paper's 2.5e-8 (q42; D28.7, B never A); conventional P 1.1E-06, SE 0.0493 years; summary statistics T -0.0240 (SE 0.0049), direction -- (q359)"
+    curator: claude-opus-5-5
+  - rsid: rs10211471
+    note: pmid-30642433
+    quote: q360
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: meta_analysis
+    population: European (the earlier longevity meta-analyses Timmers looked up; largely Deelen 2019's cohorts)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.443"
+    p_value_num: 0.443
+    proxy_rsid: rs6757542
+    effect_size: 0.00169
+    effect_measure: beta
+    effect_unit: longevity log odds per A allele of rs6757542 (A with the lead's C, r² 0.83), on Timmers' replication scale
+    effect_allele: A
+    direction: protective
+    statistical_test: "Figure 4 source data, Longevity Replication (q360): SE 0.01176, one-sided P 0.443, Alpha 0.085 (SE 0.59) against the loci's mean 0.42 (q92); flat"
+    curator: claude-opus-5-5
+  - rsid: rs10211471
+    note: pmid-31413261
+    quote: q242
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis; no UK Biobank data)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.3118"
+    p_value_num: 0.3118
+    effect_size: 0.0247
+    effect_measure: beta
+    effect_unit: log odds of survival to the 90th percentile per C allele (printed −0.0247 per T)
+    effect_allele: C
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GCST008598), SE 0.0244, effective N 11,615; 99th percentile T -0.0490, P 0.20 (q243). D25.3 from Timmers' per-self C +0.0240: APOE's factor power 1.00, heterogeneity P 0.0076; mean factor power 0.63, P 0.37; a flag under APOE's only, so none"
+    curator: claude-opus-5-5

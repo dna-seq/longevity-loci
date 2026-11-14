@@ -4020,3 +4020,16 @@ lead at posterior 0.9999 (q1120). For row 99.
 
 Open Targets 26.09 has no record of 22_44128027_C_G (rs62227724, row 100; q1121): no credible set, locus-to-gene or
 colocalisation. For row 100.
+
+## Reading 2026-11-14, record
+
+> [q1122] data.variant.credibleSets count 8
+
+> [q1123] data.variant.credibleSets.rows[0] studyLocusId 45aebd95abb74446080832f3253058b0 pValueMantissa 6.138000011444092 pValueExponent -11 beta -0.0135529722770798 finemappingMethod PICS
+
+> [q1124] data.variant.credibleSets.rows[0].study id GCST90566696 traitFromSource Educational attainment studyType gwas
+
+2_236173211_C_T (rs10211471, row 101): eight credible sets hold it (q1122), none of a lifespan-class study: educational
+attainment (q1123, q1124; T −0.0136, so C with more schooling), occupational prestige, highest maths class, age
+finishing education, smoking initiation; the lead's posterior 0.01 to 0.22. Education is the prior Timmers' scan
+used here (pmid-30642433#q358). For row 101.
