@@ -15,12 +15,13 @@ verdict_reason: >-
   Deelen's European effect carried to that scale (D21 under both of D25.3's calibrations, row 45's arithmetic) it is
   powered and the two differ: APOE's factor 4.84 predicts +0.032 per G, power 1.00, heterogeneity P 0.006; the loci's
   mean factor +0.077, power 1.00, P 2e-5. A red flag under both, so `replication_failed`. Pilling 2017's UK Biobank
-  parents' attained age gives G longer at one-sided 0.038 (P 0.076), but those parents sit inside Timmers, the sample
-  that fails, so they are part of the failure, not an independent pass (D30.11; at 74 the passing samples sat outside
-  the flagging one). FinnGen R11's death endpoint has no line at the lead; its neighbour rs62127361 (r² 0.94 in CEU,
-  D29.3) is flat (P 0.90, G a hair towards fewer deaths, one-sided 0.45). On the per-self scale (D30.12, twice the
-  per-parent expectation) it flags under both calibrations (power 1.00, heterogeneity P 6e-4 and 3e-6), stated; a
-  database line sets no D, and the row is D on Timmers. Flat elsewhere: Park 2025's own survival (P 0.73, its allele
+  parents' attained age gives G longer at one-sided 0.038 (P 0.076), but those are the same parents the pooled Timmers
+  estimate holds, and that estimate does not pass; Pilling alone passes yet, by the lead's read, flags under both
+  calibrations itself, so it is part of the failure, not an independent pass (D30.11, narrowed by D30.16; at 74 the
+  passing samples sat outside the flagging one). FinnGen R11's death endpoint has no line at the lead; its neighbour rs62127361 (r² 0.94 in CEU,
+  D29.3) is flat (P 0.90, G a hair towards fewer deaths, one-sided 0.45). Timmers' β is already per self (D30.16), so the
+  expectation stands as calibrated: a flag under the mean factor only (power 1.00, heterogeneity P 1.7e-4), not under
+  APOE's (power 0.77), so none (D25.3); a database line sets no D either way, and the row is D on Timmers. Flat elsewhere: Park 2025's own survival (P 0.73, its allele
   columns swapped), Zenin 2019's healthspan (P 0.78), Foote 2025's five readable frailty factors (P 0.086 to 0.56;
   the general and metabolic factors' deposits returned the header alone, unread). Wright 2019's nearest AncestryDNA
   line is a viability one, rs745961 (88 kb, r² 0.055 in CEU), which does not tag the lead and would only confirm

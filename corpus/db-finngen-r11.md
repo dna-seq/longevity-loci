@@ -505,9 +505,9 @@ the lead's C (Deelen's 90th prints it at 0.88 for T with the lead's effect, pmid
 Alt C (0.082 in Finns) β +0.0018 (SE 0.0136) on death, P 0.90: flat, G a hair towards fewer deaths (one-sided 0.45,
 derived). Against Deelen's European 90th effect carried over as for Timmers (pmid-30642433#q348): APOE's factor
 predicts G −0.032 on death, one-sided power 0.77, heterogeneity P 0.041; the mean factor −0.077, power 1.00, P 1.7e-4.
-A flag under the mean factor only, so no flag (D25.3, as row 45's FinnGen), on the per-parent scale. On the per-self
-scale D30.12 sets (twice the per-parent expectation: +0.065 and +0.155 per G), power 1.00 under both and
-heterogeneity P 6e-4 and 3e-6: a flag under both, stated; a database line sets no D (D30.12). Independent of Deelen
+A flag under the mean factor only, so no flag (D25.3, as row 45's FinnGen), Timmers' β is already per self (D30.16), so this
+expectation is the per-self one; the doubled restatement of 2026-11-14 (a flag under both) is withdrawn. A database
+line sets no D (D30.12). Independent of Deelen
 and UK Biobank. For row 94.
 
 ## Reading 2026-11-14, supplement
