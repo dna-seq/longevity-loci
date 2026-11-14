@@ -2014,3 +2014,10 @@ heart-failure-protective one. For row 108.
 rs2395029 (row 130): eight associations (q548). G controls HIV-1 (OR 5.3, P 1e-25, q549-q550; and two more); an AIDS-progression record
 names G (OR 3.47), its direction not in the line; psoriasis OR 4.1, P 2e-26, its allele printed C (q551-q552), the opposite strand's name, at a
 risk frequency of 0.03, the rare allele's, so G by frequency (derived); flucloxacillin liver injury OR 35, P 6e-97, allele not stated (q553). For row 130.
+
+## Reading 2026-11-14, record
+
+> [q554] page size 200 totalElements 0 totalPages 0 number 0
+
+rs2860197 (row 134): no catalog association under this rsID (q554); the breast cancer and healthspan records sit in
+Open Targets' sets (db-opentargets-26.09#q1147). For row 134.

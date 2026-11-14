@@ -2664,3 +2664,15 @@ non-coding transcript exon variant of HCP5 (q739). For row 130.
 
 rs2395029's CEU LD window at r² 0.5 (500 kb, row 130): 185 variants, 105 at 0.8 or more, rs41561016 at 1.00 (q740).
 None is in Wright's Tables 8 or 9 or Rosoff's tables; Foote holds 34 of them (pmid-40759756#q55-q58). For row 130.
+
+## Reading 2026-11-14, record
+
+> [q741] mappings[0] location 10:121591788-121591788 start 121591788 coord_system chromosome allele_string G/A/C/T seq_region_name 10 assembly_name GRCh38 ancestral_allele G end 121591788 strand 1
+
+> [q742] [35] d_prime 0.999980 population_name 1000GENOMES:phase_3:CEU r2 0.349905 variation2 rs17102287 variation1 rs2860197
+
+> [q743] populations[3] frequency 0.6102 population gnomADg:nfe allele_count 41462 allele A
+
+rs2860197 (row 134): GRCh38 10:121,591,788, G/A/C/T, G ancestral (q741); A 0.61 in gnomAD's non-Finnish Europeans
+(q743). Its CEU window at r² 0.3 (500 kb) holds 45 variants; rs17102287 at 0.35 (q742); Wright's FGFR2 lines are not
+among them. For row 134.

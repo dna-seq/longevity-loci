@@ -1,0 +1,153 @@
+# The seed list's locus 134, unnamed (10q26.13, FGFR2). Curated 2026-11-14. Lead rs2860197, the seed's only rsID
+# (Zenin 2019's healthspan SNP): an intron of FGFR2, GRCh38 10:121,591,788 G/A, GRCh37 10:123,351,302, A the common
+# allele (0.61 in gnomAD's non-Finnish Europeans) and the healthier, longer-lived side. Open Targets 26.09 holds it in
+# 45 credible sets, mostly breast cancer, and one lifespan-class set, Zenin's healthspan; the GWAS Catalog (2026-10-29)
+# holds nothing under this rsID.
+locus_id: 134
+locus_name: ""
+verdict: kept
+verdict_reason: >-
+  Tier B, the seed's, with `replication_failed`: row 103's shape under D30.3. Zenin 2019's healthspan GWAS in UK
+  Biobank is genome-wide at the lead: A delays the end of healthspan (−0.029 on the hazard, P 5.0e-9; 1.2e-8 after
+  genomic control). Its own five replication cohorts are flat (meta-analysis A −0.0065, SE 0.0086, P 0.45): at the
+  discovery's effect one-sided power 0.96 and heterogeneity P 0.023, a D21 red flag on D21's own definition (the
+  paper's power, 0.66, is a different calculation, as at 103). D25.1 would make that D, but the row has a lifespan
+  signal of its own (D30.3, D16): Timmers 2019's million parents' lives give A +0.0074 per self, P 0.062, one-sided
+  0.031, "++" in UK Biobank and LifeGen, the co-occurring lifespan study; Pilling 2017's mothers lean the same way (P
+  0.0065), both parents 0.073, fathers flat, UK Biobank. So B, a single genome-wide study with its replication failed.
+  Elsewhere: Deelen 2019's 90th percentile flat (P 0.96), the 99th A's way (P 0.13, one-sided 0.065); FinnGen R11's
+  death endpoint A's way, flat (P 0.78); Park 2025's own survival A with fewer deaths (P 0.11), UK Biobank. Wright
+  2019's FGFR2 lines (mothers at rs2981428 and three more, 22 to 34 kb) are not in the lead's CEU window at r² 0.3, and
+  Table 9's rs17102287 (r² 0.35) is a weak tag and a Table 9 line, named, not counted: AncestryDNA untested. Foote
+  2025's factors lean A's way on two (unhealthy lifestyle P 0.049, disability 0.0069), multivariate, named; Rosoff 2023
+  holds no line. Timmers' strongest line within 500 kb is P 0.0016: nothing suggestive. The literature search finds no
+  other longevity test of the lead. Healthspan + (the discovery), lifespan + (Timmers, one-sided 0.031), exceptional
+  survival 0 (Deelen flat). The healthspan signal is a cancer signal: in Zenin's components A lowers cancer (P
+  1.6e-11) and barely anything else (all but cancer P 0.042), and the locus is breast cancer's FGFR2 locus (about 26 of
+  Open Targets' 45 sets, their signs mixed across catalog-derived studies, so the direction is read from Zenin's own
+  component). Mechanism ageing in general, as row 13 files a cancer-led locus, with `mech:cancer`; protection is the
+  absence of risk, the common A cancer's lower-risk allele (D30.6). Causal C2: the healthspan set holds the lead at
+  posterior 0.18. Effector E2, FGFR2: locus-to-gene 0.89 in that set, no colocalisation read. Descriptive. Age of
+  action unknown: Timmers' age bands do not include the lead. The evidence is European.
+axes:
+  tier: {value: B, cites: [pmid-30729179#q144, pmid-30729179#q145, pmid-30729179#q147, pmid-30642433#q376, pmid-29227965#q121, pmid-29227965#q122, pmid-31413261#q251, pmid-31413261#q252, db-finngen-r11#q80, pmid-40021682#q107, pmid-40021682#q32, pmid-31484785#q156, db-ensembl-116#q742, db-opentargets-26.09#q1152]}
+  mechanism: {value: general_ageing, cites: [pmid-30729179#q146, db-opentargets-26.09#q1147]}
+  pleiotropy: {values: ["mech:cancer"], cites: [pmid-30729179#q146, db-opentargets-26.09#q1147]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
+            cites: [pmid-30729179#q144, pmid-30642433#q376, pmid-31413261#q251, pmid-31413261#q252]}
+  actionability: {label: descriptive, cites: [pmid-30729179#q146]}
+  context: {values: [eur_only_evidence], cites: [pmid-30729179#q144, pmid-30642433#q376]}
+flags:
+  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-30729179#q146, db-opentargets-26.09#q1147, db-ensembl-116#q743]}
+  - {token: replication_failed, cites: [pmid-30729179#q145]}
+  - {token: "causal:C2", cites: [db-opentargets-26.09#q1148, db-opentargets-26.09#q1149]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q1150, db-opentargets-26.09#q1151]}
+variants:
+  - rsid: rs2860197
+    gene: FGFR2
+    phenotype: FGFR2 region, healthspan
+    trait_efo_id: EFO_0009762
+    effect_allele: A
+    effect_size: -0.0291739
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: A/A
+        state: protective
+        conclusion: >-
+          You carry two copies of the more common version of this DNA position (about 37 in 100 people of European
+          ancestry do). It lies in the FGFR2 gene, a gene known for its link to breast cancer. In a very large
+          British study each copy went with staying free of major age-related diseases a little longer, mostly
+          through less cancer, and parents of carriers lived very slightly longer. Repeat studies elsewhere did not
+          confirm the healthspan link, so this is a likely finding, not a settled one: a tendency, not destiny.
+      - genotype: A/G
+        state: neutral
+        conclusion: >-
+          You carry one copy of each version of this DNA position, the most common combination (about 48 in 100
+          people of European ancestry). It is the reference the other combinations are compared with. The position
+          lies in the FGFR2 gene, a gene known for its link to breast cancer. The finding comes from people of
+          European ancestry.
+      - genotype: G/G
+        state: risk
+        conclusion: >-
+          You carry two copies of the less common version of this DNA position (about 15 in 100 people of European
+          ancestry do). It lies in the FGFR2 gene, a gene known for its link to breast cancer. In a very large British
+          study each copy went with major age-related diseases, mostly cancer, arriving a little earlier. Repeat
+          studies elsewhere did not confirm the healthspan link, so this is a likely finding, not a settled one: a
+          tendency, not destiny.
+studies:
+  - rsid: rs2860197
+    note: pmid-30729179
+    quote: q144
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "1.22e-08"
+    p_value_num: 1.22e-08
+    effect_size: -0.029
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per A allele (negative = later)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Cox-Gompertz Martingale-residual GWAS of the first of the age-related diseases or death (Table 1, q144), P after genomic control (the paper's own call, D17.3); raw P 5.0e-9, SE 0.0050 (q145; deposit -log10 P 8.30, q147); by component mostly cancer (P 1.6e-11), all but cancer P 0.042 (q146)"
+    curator: claude-opus-5-5
+  - rsid: rs2860197
+    note: pmid-30729179
+    quote: q145
+    phenotype_class: HEALTHSPAN
+    study_design: meta_analysis
+    population: European (Zenin 2019's five replication cohorts, outside UK Biobank)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.447"
+    p_value_num: 0.447
+    effect_size: -0.00653
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per A allele (negative = later)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Supplementary Data 5's replication meta-analysis (q145), SE 0.0086; against the discovery's −0.0292 (SE 0.0050), one-sided power 0.96, heterogeneity P 0.023: a D21 red flag (derived); the paper's own replication power 0.66"
+    curator: claude-opus-5-5
+  - rsid: rs2860197
+    note: pmid-30642433
+    quote: q376
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 638108
+    sample_unit: lives
+    stat_significance: nominal
+    p_value: "0.062418215"
+    p_value_num: 0.062418215
+    p_one_sided: 0.0312
+    effect_size: 0.00738186
+    effect_measure: beta
+    effect_unit: log hazard protection per A allele in self (positive = longer life)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0040, direction ++, info 0.99; one-sided 0.031, the co-occurring lifespan study (D16, D25.13, D30.3); Pilling 2017's mothers A longer, P 0.0065 (pmid-29227965#q122)"
+    curator: claude-opus-5-5
+  - rsid: rs2860197
+    note: pmid-31413261
+    quote: q252
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's longevity meta-analysis; no UK Biobank data)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.1302"
+    p_value_num: 0.1302
+    effect_size: 0.0467
+    effect_measure: beta
+    effect_unit: log odds of survival to the 99th percentile per A allele
+    effect_allele: A
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GCST008599), SE 0.0309, effective N 4,524; one-sided 0.065 (derived); 90th A +0.0011, P 0.96 (q251)"
+    curator: claude-opus-5-5

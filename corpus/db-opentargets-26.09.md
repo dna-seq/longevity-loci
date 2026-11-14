@@ -4102,3 +4102,23 @@ locus-to-gene POM121C 0.77 in the bilateral knee arthrosis set, other genes else
 
 6_31464003_T_G (rs2395029, row 130): Open Targets 26.09 has no record under either allele order (q1144, q1145), and no
 lifespan-class set holds it (q1146): C4/E4. For row 130.
+
+## Reading 2026-11-14, record
+
+> [q1147] data.variant.credibleSets count 45
+
+> [q1148] data.variant.credibleSets.rows[29].study id GCST007406 traitFromSource Healthspan studyType gwas
+
+> [q1149] data.variant.credibleSets.rows[29].locus.rows[0] posteriorProbability 0.18389401547536968
+
+> [q1150] data.variant.credibleSets.rows[29].l2GPredictions.rows[0] score 0.886681854724884
+
+> [q1151] data.variant.credibleSets.rows[29].l2GPredictions.rows[0].target approvedSymbol FGFR2
+
+> [q1152] data.credibleSets count 1
+
+10_121591788_G_A (rs2860197, row 134): 45 credible sets (q1147), most of them breast cancer (about 26) and cancer,
+with atrial fibrillation, PR interval and height; their signs are mixed across studies (several catalog-derived), so
+the allele's direction is read from Zenin's own cancer component (pmid-30729179#q146). Of the nine lifespan-class
+studies, one set holds it (q1152): Zenin's healthspan (GCST007406, q1148), the lead's posterior 0.18 (q1149), C2;
+locus-to-gene FGFR2 0.89 (q1150-q1151), E2 (no colocalisation read). For row 134.
