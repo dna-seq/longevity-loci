@@ -9,7 +9,7 @@ verdict_reason: >-
   2017's GWAS of UK Biobank participants' fathers' attained age (415,311 people in the GWAS Catalog) puts A with
   longer-lived fathers, β −0.0126 (SE 0.0022) on the Martingale residual, P 8.2e-9, under the paper's per-GWAS 5e-8,
   so genome-wide in a stratum (D19.2), with B's caveat that Pilling ran five GWAS uncorrected. The other analyses of
-  the same parents: both parents 1.8e-4, mothers 0.48 (A −0.0016), top 10 % 0.15, top 1 % 0.78. Fathers against
+  the same parents: both parents 1.8e-4, age at death 0.15, mothers 0.48 (A −0.0016), both parents in the top 10 % 0.78. Fathers against
   mothers, heterogeneity P 3.6e-4 with both errors (D29.16): sex_specific:m. Nothing independent replicates it, and
   nothing powered contradicts it. Timmers 2019's LifeGen fathers without UK Biobank (Figure 2 source data, sample b)
   lean A's way, flat (one-sided 0.38): power 0.67 at the discovery's effect on the sheet's scale, heterogeneity P
@@ -25,8 +25,8 @@ verdict_reason: >-
   AncestryDNA is untested: its fathers' lines in the window (rs4001941, rs4609955, 85 to 92 kb away) do not tag the
   lead (r² 0.11 or no pair in CEU). Within UK Biobank the rest co-occurs: Timmers 2019's million parents' lives, A
   longer, P 0.0071, "++" (UK Biobank inside); Park 2025's own survival, A with fewer deaths, P 0.0084 (its allele
-  columns swapped), the same participants. Lifespan + (the discovery, Timmers), exceptional survival 0 (Pilling's top
-  10 % and 1 %, Deelen, flat), healthspan 0 (Zenin, P 0.73; Foote's four readable factors flat). The rsID literature
+  columns swapped), the same participants. Lifespan + (the discovery, Timmers), exceptional survival 0 (Pilling's
+  top 10 %, P 0.78, and Deelen, flat), healthspan 0 (Zenin, P 0.73; Foote's four readable factors flat). The rsID literature
   search (all six sources answered) finds no other lifespan study of the lead: Hu 2022 uses it as an instrument for
   paternal longevity, the rest are CYP2A6 pharmacology. Two routes, neither shown to carry it alone (D17.7, as row 29): mechanism general ageing, descriptive. Pilling's
   fathers' set (Open Targets SuSiE-inf, the lead at posterior 0.545) colocalises (H4 0.75 to 0.999) with 124 GWAS

@@ -9,12 +9,13 @@ verdict_reason: >-
   independent scoring-class study at p < 0.05 its way. Pilling 2017's GWAS of UK Biobank participants' fathers'
   attained age puts T with longer-lived fathers, β −0.0143 (SE 0.0022) on the Martingale residual, P 1.2e-10,
   genome-wide in a stratum (D19.2); mothers flat (P 0.78; fathers against mothers heterogeneity P 1.3e-5), both
-  parents 7.7e-4, top 1 % 0.057. Wright 2019 tests it in AncestryDNA's 309,383 fathers, outside UK Biobank, at
-  rs6077996 (8.5 kb away, r² 0.92 and D′ 1.00 in CEU; its UK arm is Pilling's fathers' line digit for digit, so its A
+  parents 7.7e-4, age at death 0.43, both parents in the top 10 % 0.057 (T's way, one-sided 0.029). Wright 2019 tests it in AncestryDNA's 309,383 fathers, outside UK Biobank, at
+  rs6077996 (8.5 kb away, r² 0.92 and D′ 1.00 in CEU; its UK arm is Pilling's fathers' line at rs6077996 digit for digit, so its A
   rides with the lead's T): the AncestryDNA arm is flat the other way, A +0.0009 (SE 0.0026), raw P 0.72, against the
   UK arm's −0.0132 (SE 0.0022), heterogeneity P 1.9e-4 printed (4.5e-5 with both errors), one-sided power 1.00 on
   one scale with no conversion: a D21 red flag, and `replication_failed`. Wright's Table 3 lists the locus as "Not
-  Replicated", and the authors offer that such loci may not affect parental lifespan. No independent look passes:
+  Replicated", and the authors, naming C20orf187 among the UK-only loci, offer that such loci may not affect parental
+  lifespan. No independent look passes:
   LifeGen's fathers without UK Biobank (Timmers 2019's Figure 2 source data, sample b) lean T's way, one-sided 0.15
   (power 0.91, heterogeneity P 0.083, short of a flag); Deelen 2019 leans against (90th P 0.81, 99th 0.43), a flag
   under APOE's factor only from Pilling's both-parents effect (D28.2), so none (D25.3); FinnGen R11's death endpoint
@@ -22,19 +23,20 @@ verdict_reason: >-
   either way. Within UK Biobank, Timmers 2019's pooled parents (T longer, P 8.1e-5, "++", UK Biobank inside) and
   Park 2025's own survival (flat, P 0.81, its allele columns swapped) are not independent of the discovery. So D, as
   89 and 26. Outcome cells on a D row (D28.10): lifespan 0, the contradicted discovery and Timmers, which holds it,
-  giving no +, and no look gives p < 0.05 against T; exceptional survival 0 (Pilling's top 1 % and Deelen flat);
+  giving no +, and no look gives p < 0.05 against T; exceptional survival 0 (Pilling's top-10 % look leans T's way at one-sided 0.029, but
+  those are the contradicted discovery's own parents, D28.10; Deelen flat against);
   healthspan 0: Zenin 2019 flat (T later, one-sided 0.093), and Foote 2025's disability factor has T less frail at P
-  0.009, one factor of the five readable, multivariate and unreplicated, named only. Mechanism general ageing, as on
+  0.009, one of the four factors read; multivariate (D27.3), so it scores nothing, as at 86. Mechanism general ageing, as on
   every D row (D25.7); pleiotropy empty, no longer-life allele left to weigh it against: Pilling's fathers' set (Open
-  Targets SuSiE-inf, the lead at posterior 0.70) colocalises with 31 GWAS sets, blood pressure and bone density with
-  C on the shorter-lived side, and the GWAS Catalog holds C raising blood pressure as a metabolic-syndrome component
+  Targets SuSiE-inf, the lead at posterior 0.70) colocalises with 31 GWAS sets, blood pressure and bone density, C raising
+  both, and the GWAS Catalog holds C raising blood pressure as a metabolic-syndrome component
   (OR 1.07, P 2e-8), named. Descriptive. Causal C1 by §4.2's threshold (posterior 0.70). Effector E3, no gene named:
   locus-to-gene is under 0.5 for every gene (JAG1 0.49), and the set's 46 QTL colocalisations split between LINC02871
-  (29) and the unnamed ENSG00000270777 (17), a rival holding over a tenth (D24). Every genotype neutral (D25.2); C/T,
+  (27 at H4 ≥ 0.8) and the unnamed ENSG00000270777 (16), a rival holding over a tenth (D24). Every genotype neutral (D25.2); C/T,
   about 48 in 100 Europeans, the reference. Age of action unknown. The evidence is European (UK Biobank, AncestryDNA's
   European-ancestry group, LifeGen, Deelen, FinnGen).
 axes:
-  tier: {value: D, cites: [pmid-29227965#q88, pmid-29227965#q89, pmid-29227965#q90, pmid-29227965#q91, pmid-29227965#q92, pmid-29227965#q45, pmid-31484785#q144, pmid-31484785#q145, pmid-31484785#q146, pmid-31484785#q83, db-ensembl-116#q704, pmid-30642433#q352, pmid-31413261#q236, pmid-31413261#q237, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, db-finngen-r11#q71, pmid-30642433#q351, pmid-40021682#q99, pmid-40021682#q32]}
+  tier: {value: D, cites: [pmid-29227965#q88, pmid-29227965#q89, pmid-29227965#q90, pmid-29227965#q91, pmid-29227965#q92, pmid-29227965#q45, pmid-31484785#q144, pmid-31484785#q145, pmid-31484785#q146, pmid-31484785#q147, pmid-31484785#q83, pmid-29227965#q93, db-ensembl-116#q704, pmid-30642433#q352, pmid-31413261#q236, pmid-31413261#q237, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, db-finngen-r11#q71, pmid-30642433#q351, pmid-40021682#q99, pmid-40021682#q32]}
   mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q1102, db-gwascatalog-2026.10.29#q523]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -45,7 +47,7 @@ axes:
 flags:
   - {token: replication_failed, cites: [pmid-31484785#q144, pmid-31484785#q145, pmid-31484785#q146, db-ensembl-116#q704]}
   - {token: "causal:C1", cites: [db-opentargets-26.09#q1097, db-opentargets-26.09#q1098, db-opentargets-26.09#q1099]}
-  - {token: "effector:E3", cites: [db-opentargets-26.09#q1100, db-opentargets-26.09#q1101, db-opentargets-26.09#q1103]}
+  - {token: "effector:E3", cites: [db-opentargets-26.09#q1100, db-opentargets-26.09#q1101, db-opentargets-26.09#q1103, db-opentargets-26.09#q1104, db-opentargets-26.09#q1105, db-opentargets-26.09#q1106, db-opentargets-26.09#q1107]}
 variants:
   - rsid: rs6108784
     gene: ""
@@ -95,7 +97,7 @@ studies:
     effect_unit: Martingale residual of fathers' attained age per T allele (negative = reduced hazard, longer life)
     effect_allele: T
     direction: protective
-    statistical_test: "BOLT-LMM on Martingale residuals of fathers' attained age (Table 2, 'Loci only emerging in fathers' analysis', q88; sign convention q45); deposit GCST006701 (q89; N 415,311, db-gwascatalog-2026.10.29#q494); both parents 7.7E-04 (q91), mothers 0.78 (q90; fathers against mothers heterogeneity P 1.3e-5, derived)"
+    statistical_test: "BOLT-LMM on Martingale residuals of fathers' attained age (Table 2, 'Loci only emerging in fathers' analysis', q88; sign convention q45); deposit GCST006701 (q89; N 415,311, db-gwascatalog-2026.10.29#q494); both parents 7.7E-04 (q91), top 10 % 0.057 (q92), mothers 0.78 (q90; fathers against mothers heterogeneity P 1.3e-5, derived)"
     curator: claude-opus-5-5
   - rsid: rs6108784
     note: pmid-31484785

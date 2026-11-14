@@ -3952,3 +3952,17 @@ fathers' attained age (q1097, q1098; SuSiE-inf, P 1.1e-10), the lead at posterio
 (hypertension, pulse pressure, systolic and mean arterial pressure) and heel and total-body bone density, those signed
 +1 (the C allele's way, with shorter fathers' lives), and blood urea nitrogen −1; and with 46 QTL sets (q1103),
 every one signed −1 at H4 0.33 to 0.98: LINC02871 (ENSG00000125899) 29, the unnamed ENSG00000270777 17. For row 97.
+
+## Reading 2026-11-14, record
+
+> [q1104] data.credibleSet.colocalisation.rows[3] rightStudyType eqtl h4 0.9529969793400684 clpp 0.018351057086537184 betaRatioSignAverage -1 colocalisationMethod COLOC_PIP_ECAVIAR
+
+> [q1105] data.credibleSet.colocalisation.rows[3].otherStudyLocus.study.target approvedSymbol LINC02871
+
+> [q1106] data.credibleSet.colocalisation.rows[0] rightStudyType eqtl h4 0.9124580080396696 clpp 0.009310771926011705 betaRatioSignAverage -1 colocalisationMethod COLOC_PIP_ECAVIAR
+
+> [q1107] data.credibleSet.colocalisation.rows[0].otherStudyLocus.study.target approvedSymbol ENSG00000270777
+
+Row 97, the fathers' set's QTL colocalisations counted in full (all 46): at H4 ≥ 0.8, LINC02871 27 of 29 (one row,
+q1104, q1105) and the unnamed ENSG00000270777 16 of 17 (q1106, q1107), all signed −1. ENSG00000270777 holds over a
+tenth of the cis colocalisations, a rival under D24: E3. For row 97.
