@@ -14,36 +14,46 @@ verdict_reason: >-
   life, +0.048 per copy in self (SE 0.015), P 0.0019, the same side in UK Biobank and LifeGen; in Pilling 2017's
   UK Biobank parents T goes with longer attained age (both parents P 0.035, fathers 0.0027, mothers flat at 0.78) and
   raises the chance of both parents reaching the top 10 % of survival (P 0.036); in Zenin 2019 T delays the end of
-  healthspan (P 0.0039). All of these are UK Biobank or hold it. Outside it the variant is untested at any power:
+  healthspan (P 0.0039). All of these are UK Biobank or hold it. Nothing in the window is suggestive: Timmers'
+  strongest line within 500 kb is rs142791622, 11 kb away (P 4.4e-5), and Pilling's fathers' rs72909541 (1.3e-5), neither
+  able by frequency to tag R46L above r² 0.64 and 0.34. Outside UK Biobank the variant is untested at power:
   Deelen 2019's 90th percentile leans T's way (P 0.17, one-sided 0.087; 99th flat, P 0.92), with one-sided power 0.67
   under APOE's calibration factor and 0.22 under the loci's mean factor, heterogeneity P 0.54 and 0.64; FinnGen R11's
   death endpoint leans T's way (P 0.64, power 0.77, heterogeneity P 0.13), a database line; Park 2025's own survival T
-  with fewer deaths (P 0.13, its allele columns swapped), the same biobank. Wright 2019's AncestryDNA tables hold no
-  line that tags the variant (the nearest, rs17111652, r² 0.07 in CEU), so AncestryDNA is untested; Foote 2025's
-  frailty deposits hold no line at it. Nothing contradicts: D's clauses do not fit, and C keeps the variant in the
-  research view with no weight. Two genetic studies of PCSK9 bear on it as annotation, neither a per-allele R46L
-  result. Rosoff 2023's drug-target MR finds genetically proxied PCSK9 inhibition beneficial for its multivariate
-  ageing factor (P 1.6e-6, 20 cis instruments). Benn 2019's allele score of four PCSK9 variants, R46L among them,
-  in 109,566 Danes and UK Biobank, lowers cardiovascular death but not all-cause death (RR 1.01, 0.94 to 1.08 per
-  0.5 mmol/l lower LDL); scaled to R46L's 0.40 mmol/l, 0.95 to 1.06 per allele, which reaches Timmers' 0.953 at its
-  edge and so does not exclude it (derived). Lacaze 2021 finds T carriers among 13,131 healthy Australians over 70
-  without coronary disease with 12 % lower LDL; its prevalence column is a carrier share, not an allele frequency,
-  and it tests no enrichment, so it is named only. The literature search (Europe PMC, OpenAlex, PubMed, Crossref,
-  preprints, Semantic Scholar) finds no other survival test of the variant. Exceptional survival + (Pilling's top 10
-  %, nominal), lifespan + (Timmers, Pilling), healthspan + (Zenin): one-way and nominal, all within UK Biobank.
-  Mechanism heart and vessels: T lowers LDL cholesterol (G +0.43 on LDL, P 4e-295) and coronary atherosclerosis (G
-  the risk allele, P 6e-29), the LDL route stated as `mediator:EFO_0004611`; the catalog's one diabetes record (a
-  factor analysis, P 8e-11) states no allele, so a trade-off is not shown and is left open. Causal C4: no
-  lifespan-class credible set holds it (D17.2). Effector E1 PCSK9: the variant is missense in PCSK9 (Arg46Leu), and
-  every lipid set's locus-to-gene names PCSK9 (0.94 in the first). The protection is a presence, the rare T. Not a
+  with fewer deaths (P 0.13, its allele columns swapped), the same biobank. Wright 2019's AncestryDNA tables hold nine
+  lines within 500 kb, none able to tag the variant: by their frequencies none but one reaches r² 0.5 with R46L's T
+  (the nearest, rs11206517 at 21 kb, at most 0.43; rs17111652's CEU r² 0.07), and that one, rs17112249 at 471 kb, is a
+  Table 9 line, named, not counted (D29.18). So AncestryDNA is untested; Foote 2025's frailty deposits hold no line at
+  it. Nothing contradicts: D's clauses do not fit, and C keeps the variant in the research view with no weight.
+  Genetic studies of PCSK9 bear on it as annotation, none a per-allele R46L survival result in a general population.
+  Rosoff 2023's drug-target MR finds genetically proxied PCSK9 inhibition beneficial for its multivariate ageing factor
+  (P 1.6e-6, 20 cis instruments). Benn 2019's allele score of four PCSK9 variants, R46L among them, in 109,566 Danes,
+  lowers cardiovascular death but not all-cause death (Copenhagen alone RR 1.02, 0.94 to 1.12, per 0.5 mmol/l lower
+  LDL; read in PubMed's abstract, the full text refused); carried to one R46L allele by its 0.34 mmol/l (Schmidt
+  2017), one-sided power 0.47 against Timmers' effect and heterogeneity P 0.072 (derived): underpowered, no flag. Two
+  disease cohorts name R46L: Zhang 2025, cardiovascular death or transplant after an ischaemic heart disease diagnosis
+  (matched HR 0.78, P 0.03), and Genga 2018, sepsis survivors by a count of three loss-of-function alleles; neither is
+  a lifespan-class test. Lacaze 2021 finds T carriers among 13,131 healthy Australians over 70 without coronary disease
+  with 12 % lower LDL; its prevalence column is a carrier share, not an allele frequency, and it tests no enrichment,
+  so it is named only. The literature search (Europe PMC, OpenAlex, PubMed, Crossref, preprints, Semantic Scholar)
+  finds no other survival test of the variant. Exceptional survival + (Pilling's top 10 %, one-sided 0.018 for T, D26.2;
+  Deelen flat, not against), lifespan + (Timmers, Pilling), healthspan + (Zenin): one-way and nominal, all within UK
+  Biobank. Mechanism heart and vessels: R46L is loss-of-function, raising the liver's LDL receptor (Zhang 2025); T lowers
+  LDL cholesterol (G +0.43 on LDL, P 4e-295) and coronary atherosclerosis (G the risk allele, P 6e-29), the LDL route
+  stated as `mediator:EFO_0004611`. A trade-off is detected: Schmidt 2017's Mendelian randomization of four PCSK9
+  variants, R46L the largest and driving the score, raises type 2 diabetes (OR 1.29 per 1 mmol/l lower LDL), glucose
+  and weight, in proportion to each variant's LDL effect; R46L's own odds ratio is in its figure, unread. The catalog's
+  diabetes factor (P 8e-11) states no allele. Causal C4: no lifespan-class credible set holds it (D17.2). Effector E1
+  PCSK9: the variant is missense in PCSK9 (Arg46Leu), and every lipid set read names PCSK9 by locus-to-gene (0.94 in
+  the first; 200 of the 1,659 sets were read, none of them lifespan-class). The protection is a presence, the rare T. Not a
   treatment indication (R-VOICE-4): a standard cholesterol test shows the actual LDL level. Age of action unknown:
   Timmers' age bands do not include the variant, and the requirements' MIDLIFE was inferred from coronary risk. The
   evidence is European.
 axes:
-  tier: {value: C, cites: [pmid-30642433#q362, pmid-29227965#q108, pmid-29227965#q110, pmid-29227965#q111, pmid-30729179#q141, pmid-31413261#q244, pmid-31413261#q245, db-finngen-r11#q77, pmid-40021682#q104, pmid-40021682#q32, db-ensembl-116#q730, db-opentargets-26.09#q1129, pmid-37550455#q79, pmid-37550455#q80, pmid-31221259#q1, pmid-31221259#q2, pmid-34341098#q1, pmid-34341098#q2, pmid-34341098#q3, db-gwascatalog-2026.10.29#q535]}
-  mechanism: {value: heart_vessels, cites: [db-gwascatalog-2026.10.29#q536, db-gwascatalog-2026.10.29#q537, db-gwascatalog-2026.10.29#q538, pmid-34341098#q1]}
-  pleiotropy: {values: ["mr:drug_target_proxy", "mech:cvd", "mech:lipids"],
-               cites: [pmid-37550455#q79, pmid-37550455#q80, pmid-31221259#q2, db-gwascatalog-2026.10.29#q536, db-gwascatalog-2026.10.29#q538, db-gwascatalog-2026.10.29#q539, db-gwascatalog-2026.10.29#q540]}
+  tier: {value: C, cites: [pmid-30642433#q362, pmid-29227965#q108, pmid-29227965#q110, pmid-29227965#q111, pmid-30729179#q141, pmid-31413261#q244, pmid-31413261#q245, db-finngen-r11#q77, pmid-40021682#q104, pmid-40021682#q32, db-ensembl-116#q730, db-opentargets-26.09#q1129, pmid-37550455#q79, pmid-37550455#q80, pmid-31221259#q1, pmid-31221259#q2, pmid-31221259#q3, pmid-27908689#q2, pmid-30642433#q363, pmid-29227965#q112, pmid-31484785#q152, pmid-30642433#q364, pmid-40335923#q2, pmid-30473376#q1, pmid-34341098#q1, pmid-34341098#q2, pmid-34341098#q3, db-gwascatalog-2026.10.29#q535]}
+  mechanism: {value: heart_vessels, cites: [pmid-40335923#q1, db-gwascatalog-2026.10.29#q536, db-gwascatalog-2026.10.29#q537, db-gwascatalog-2026.10.29#q538, pmid-34341098#q1]}
+  pleiotropy: {values: ["tradeoff", "mr:drug_target_proxy", "mech:cvd", "mech:lipids", "mech:diabetes"],
+               cites: [pmid-27908689#q1, pmid-27908689#q3, pmid-27908689#q4, pmid-37550455#q79, pmid-37550455#q80, pmid-31221259#q2, db-gwascatalog-2026.10.29#q536, db-gwascatalog-2026.10.29#q538, db-gwascatalog-2026.10.29#q539, db-gwascatalog-2026.10.29#q540]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
             cites: [pmid-30729179#q141, pmid-30642433#q362, pmid-29227965#q108, pmid-29227965#q111]}
@@ -52,7 +62,7 @@ axes:
 flags:
   - {token: "PROTECT:PRESENCE", cites: [pmid-30642433#q362, db-ensembl-116#q728]}
   - {token: "causal:C4", cites: [db-opentargets-26.09#q1129]}
-  - {token: "effector:E1", cites: [db-ensembl-116#q729, db-opentargets-26.09#q1127, db-opentargets-26.09#q1128]}
+  - {token: "effector:E1", cites: [db-ensembl-116#q729, pmid-40335923#q1, db-opentargets-26.09#q1127, db-opentargets-26.09#q1128]}
   - {token: "mediator:EFO_0004611", cites: [db-gwascatalog-2026.10.29#q538, pmid-34341098#q1]}  # low density lipoprotein cholesterol measurement
 variants:
   - rsid: rs11591147
@@ -64,6 +74,9 @@ variants:
     effect_measure: beta
     stat_significance: nominal
     direction: protective
+    negatives: >-
+      The same version, through the same gene, goes with a slightly higher chance of type 2 diabetes and slightly
+      higher blood sugar and weight.
     genotypes:
       - genotype: G/G
         state: neutral
@@ -78,7 +91,8 @@ variants:
         conclusion: >-
           You carry one copy of a rarer version of the PCSK9 gene (about 3 in 100 people of European ancestry do)
           that makes the protein work less and lowers LDL cholesterol, the "bad" cholesterol, by about a tenth. In
-          large studies it went with less heart disease and, weakly, with parents who lived a little longer. This is
+          large studies it went with less heart disease and, weakly, with parents who lived a little longer, and
+          with a slightly higher chance of type 2 diabetes. This is
           early evidence, not a settled finding, and the difference is small: a tendency, not destiny. A standard
           cholesterol test your doctor can order shows your actual LDL level, which matters far more than this DNA
           result. It says nothing about whether any medicine is right for you.
@@ -88,7 +102,7 @@ variants:
           You carry two copies of a rare version of the PCSK9 gene (about 3 in 10,000 people of European ancestry
           do) that makes the protein work less and lowers LDL cholesterol, the "bad" cholesterol, by about a fifth.
           In large studies each copy went with less heart disease and, weakly, with parents who lived a little
-          longer; too few people carry two copies to say more. This is early evidence, not a settled finding: a
+          longer, and with a slightly higher chance of type 2 diabetes; too few people carry two copies to say more. This is early evidence, not a settled finding: a
           tendency, not destiny. A standard cholesterol test your doctor can order shows your actual LDL level,
           which matters far more than this DNA result. It says nothing about whether any medicine is right for you.
 studies:
