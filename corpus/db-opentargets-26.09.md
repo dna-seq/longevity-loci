@@ -3778,3 +3778,56 @@ and eight QTL sets. For row 89.
 
 Row 90: Open Targets 26.09 has no record of 18_13886720_G_A (q1047), so no credible set, locus-to-gene or
 colocalisation. For row 90.
+
+## Reading 2026-11-14, record
+
+> [q1048] data.variant.credibleSets.rows[81] studyLocusId d2508d5e12142b3e8eb54b4167ef865d pValueMantissa 8.119000434875488 pValueExponent -11 beta 0.017619094552596 finemappingMethod PICS
+
+> [q1049] data.variant.credibleSets.rows[81].study id GCST90624052 traitFromSource Frailty (Factor 6 - Disability) studyType gwas
+
+> [q1050] data.variant.credibleSets.rows[81].locus.rows[0] posteriorProbability 0.03498049078820421
+
+> [q1051] data.variant.credibleSets.rows[81].l2GPredictions.rows[0] score 0.6089618802070618
+
+> [q1052] data.variant.credibleSets.rows[133] studyLocusId 8f846a1f014b7ca702f9d4e1caad2242 pValueMantissa 1.5199999809265137 pValueExponent -45 beta 0.0561 finemappingMethod PICS
+
+> [q1053] data.variant.credibleSets.rows[133].study id GCST90309828 traitFromSource Body mass index (UKB data field 21001) studyType gwas
+
+> [q1054] data.variant.credibleSets.rows[68] studyLocusId 7428dc232ed8038cf4f915d76e63d8ed pValueMantissa 1.2829999923706055 pValueExponent -10 beta 0.03282808 finemappingMethod PICS
+
+> [q1055] data.variant.credibleSets.rows[68].study id GCST90132315 traitFromSource Coronary artery disease studyType gwas
+
+> [q1056] data.credibleSet.colocalisation count 910
+
+> [q1057] data.credibleSet.colocalisation.rows[51] rightStudyType gwas h4 0.968630786656337 clpp 0.02712301481793383 betaRatioSignAverage 1
+
+> [q1058] data.credibleSet.colocalisation.rows[51].otherStudyLocus.study id GCST90132315 traitFromSource Coronary artery disease studyType gwas target null
+
+> [q1059] data.credibleSet.colocalisation.rows[193] rightStudyType gwas h4 0.9555647457058117 clpp 0.01904860596858273 betaRatioSignAverage 1
+
+> [q1060] data.credibleSet.colocalisation.rows[193].otherStudyLocus.study id GCST90029024 traitFromSource Type 2 diabetes studyType gwas target null
+
+> [q1061] data.credibleSet.colocalisation.rows[26] rightStudyType gwas h4 0.9776971091273264 clpp 0.038034071418537985 betaRatioSignAverage 1
+
+> [q1062] data.credibleSet.colocalisation.rows[26].otherStudyLocus.study id GCST90566412 traitFromSource Body mass index studyType gwas target null
+
+> [q1063] data.credibleSet.colocalisation.rows[18] rightStudyType gwas h4 0.9703347791833433 clpp 0.02866110190255525 betaRatioSignAverage -1
+
+> [q1064] data.credibleSet.colocalisation.rows[18].otherStudyLocus.study id GCST90691606 traitFromSource Worrier / anxious feelings (UKB data field 1980) studyType gwas target null
+
+> [q1065] data.credibleSet.colocalisation count 0
+
+Row 91 (18_60183864_T_C, rs17782313). The lead sits in 597 credible sets (all read, three pages of 200) and tops 43, all
+body-composition, diet or BMI traits: in UK Biobank's BMI set (q1052, q1053) its alt C raises BMI, β +0.0561, P 1.5e-45,
+posterior 0.15. Of the 43, five total-mass and one weight set print the other sign (the source's allele coding, not
+resolved here; the colocalisations below carry the sign). No set of a lifespan study holds it; three ageing-named
+sets do: Foote 2025's factor 6, disability (q1048 to q1050; led by rs476828, 18_60185354_T_C, alt C +0.0176 towards
+frailty, P 8.1e-11, PICS; the lead at posterior 0.035), a C-reactive protein set and a diabetes set. Foote's set:
+locus-to-gene MC4R 0.609 (q1051), PMAIP1 0.081 next; no QTL colocalisation (q1065); 910 GWAS colocalisations (q1056,
+all read, five pages), 647 at H4 ≥ 0.8, 308 of them body-composition traits (BMI, weight, fat and lean mass,
+impedance, waist and hip): BMI, H4 0.978, sign +1 (q1061, q1062), C raising BMI with frailty. Diseases colocalising,
+the less-frail T on the lower-risk side where a sign is given: coronary artery disease (GCST90132315, H4 0.969, sign
++1, q1057, q1058; its own set, led by rs476828, C +0.0328, P 1.3e-10, q1054, q1055), type 2 diabetes (GCST90029024,
+H4 0.956, +1, q1059, q1060; one other diabetes set prints −1 and most print 0), heart failure, gout. Run the other way,
+T raising them: HDL cholesterol, eGFR, SHBG, and self-reported worry and nervous feelings (worry H4 0.970, sign −1,
+q1063, q1064). For row 91.

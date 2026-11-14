@@ -2422,3 +2422,18 @@ non-Finnish Europeans (q671). For row 89.
 rs28926173 (row 90): GRCh38 18:13,886,720 G/A, GRCh37 18:13,886,719, an intron of MC2R (q674); A 0.048 in gnomAD's
 non-Finnish Europeans (q673). Ensembl reports no CEU LD pair from it to Wright's SNPs 300 to 500 kb away (rs1785171,
 rs1785177, rs2567166, rs11659850, rs1648598, rs1785205). For row 90.
+
+## Reading 2026-11-14, record
+
+> [q675] populations[17] allele_count 15967 population gnomADg:nfe allele C frequency 0.2348
+
+> [q676] [0] start 60183864 most_severe_consequence intergenic_variant strand 1 id rs17782313 end 60183864 allele_string T/A/C input rs17782313 seq_region_name 18 assembly_name GRCh38
+
+> [q677] [0] variation2 rs476828 d_prime 1.000000 population_name 1000GENOMES:phase_3:CEU variation1 rs17782313 r2 0.974097
+
+> [q678] [0] variation1 rs17782313 variation2 rs17066892 r2 0.090156 d_prime 0.308195 population_name 1000GENOMES:phase_3:CEU
+
+rs17782313 (row 91): GRCh38 18:60,183,864 T/C, GRCh37 18:57,851,097, intergenic (q676), about 188 kb downstream of
+MC4R; C 0.235 in gnomAD's non-Finnish Europeans (q675). LD in CEU: rs476828 r² 0.97 (q677); rs17066892, Deelen's
+99th-percentile peak, r² 0.090 (q678). Ensembl reports no CEU pair from the lead to Wright's nearby lines (rs1379444,
+rs35748167, rs650313, rs512279, rs9646627, 72 to 680 kb away) or to rs752720, rs1791329 and rs7228187. For row 91.

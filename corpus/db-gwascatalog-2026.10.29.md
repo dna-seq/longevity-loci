@@ -1853,3 +1853,11 @@ raising it, P down to 4e-64) and one protein ratio (q513); no lifespan or longev
 
 rs28926173 (row 90): two associations, both Pilling 2017's parental longevity: the top-10 % analysis (GCST006698, G at
 0.953, β 0.0264 "unit decrease", P 2e-8; q514) and parents' attained age (GCST006697, P 6e-6). For row 90.
+
+## Reading 2026-11-14, record
+
+> [q515] _embedded.associations[14] association_id 6188 risk_frequency 0.24 pvalue_description pvalue_mantissa 3 pvalue_exponent -15 multi_snp_haplotype false snp_interaction false range [0.04-0.06] beta 0.05 unit increase p_value 3.0000000000000002e-15 accession_id GCST000185 pubmed_id 18454148 first_author Loos RJ ci_lower 0.04 ci_upper 0.06
+
+rs17782313 (row 91): 15 associations, none of a lifespan phenotype; body mass index and obesity with C the risk allele
+(Loos 2008, P 3e-15, q515; Willer 2009; Meyre 2009), height, dietary pattern, metabolic syndrome, leg ulcer and nail
+fungus. For row 91.
