@@ -25,7 +25,8 @@ First work:
   GWAS Catalog v2 queried, no study beyond the nine named in SEARCHES), A to D and F to K 2026-11-13 (no new locus;
   C-protect-2 and D-multimorbidity-2 replace their noisy first versions; S-seedgene, a watch on the seed genes, runs
   with every sweep). Next: the oldest-run tracks, A to D and F to K, from about 2026-10-30, each window overlapping
-  the last by about two weeks.
+  the last by about two weeks; waits until 2026-11-17, when the window holds a few days of new entries (a run now
+  would add one day past 2026-11-13 and re-screen the rest).
 - Watch: PPR1366192 (cognitive superagers' exome, rare HLA-B and HLA-DRB1 missense, no variant named): look for its
   full text or a published version on the next E run.
 
