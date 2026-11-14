@@ -4049,3 +4049,12 @@ used here (pmid-30642433#q358). For row 101.
 1_55039974_G_T (rs11591147, row 3): 1,659 credible sets hold it (q1125), lipid and cardiometabolic, the first a very
 large HDL cholesterol set with the variant's posterior 1 and locus-to-gene PCSK9 0.94 (q1126-q1128). Filtered to the
 nine lifespan, longevity and healthspan studies the rows use, the count is 0 (q1129): C4. For row 3.
+
+## Reading 2026-11-14, record
+
+> [q1130] data variant null
+
+> [q1131] data.credibleSets count 0
+
+7_75465064_G_A (rs113160991, row 108): Open Targets 26.09 has no record of the variant (q1130), and no lifespan-class
+set holds it (q1131): C4/E4. For row 108.

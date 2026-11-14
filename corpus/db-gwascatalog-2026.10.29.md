@@ -1974,3 +1974,25 @@ coronary disease, myocardial infarction, aortic stenosis, abdominal aortic aneur
 death. Coronary atherosclerosis (Verma 2024, MVP): G the risk allele, β 0.25, P 6e-29 (q536, q537); LDL cholesterol
 G +0.43, P 4e-295 (q538): T lowers LDL and coronary disease. One record names diabetes, a confirmatory factor of
 Carey 2024, P 8e-11, with no allele stated (q539, q540): a trade-off not shown, left open. For row 3.
+
+## Reading 2026-11-14, record
+
+> [q541] page size 200 totalElements 0 totalPages 0 number 0
+
+> [q542] _embedded.associations[5] association_id 49134689 risk_frequency 0.7944 pvalue_description pvalue_mantissa 8 pvalue_exponent -25 multi_snp_haplotype false snp_interaction false range [0.017-0.025] beta 0.0209 unit decrease p_value 8e-25 accession_id GCST009003 pubmed_id 30239722 first_author Pulit SL ci_lower 0.017 ci_upper 0.025
+
+> [q543] _embedded.associations[5].snp_effect_allele[0] rs6944634-C
+
+> [q544] _embedded.associations[3] association_id 101724539 risk_frequency 0.7797 pvalue_description pvalue_mantissa 9 pvalue_exponent -12 multi_snp_haplotype false snp_interaction false range [0.027-0.048] beta 0.03753776 unit decrease p_value 9e-12 accession_id GCST90162626 pubmed_id 36376295 first_author Levin MG ci_lower 0.027 ci_upper 0.048
+
+> [q545] _embedded.associations[3].snp_effect_allele[0] rs6944634-C
+
+> [q546] _embedded.associations[1] association_id 143803083 risk_frequency 0.7813 pvalue_description pvalue_mantissa 3 pvalue_exponent -12 multi_snp_haplotype false snp_interaction false range [0.015-0.026] beta 0.0205 unit decrease p_value 3e-12 accession_id GCST90455669 pubmed_id 39406924 first_author Major TJ ci_lower 0.015 ci_upper 0.026
+
+> [q547] _embedded.associations[1].snp_effect_allele[0] rs6944634-C
+
+rs113160991 (row 108): no catalog association (q541). Its CEU proxy rs6944634 (r² 1.00, db-ensembl-116#q733; C with
+the lead's G, pmid-30642433#q367) holds six: C lowers body mass index (Pulit 2019, P 8e-25, q542-q543), heart failure
+(Levin 2022, P 9e-12, q544-q545; G the risk allele in Enzan 2025, P 5e-9) and serum urate (Major 2024, P 3e-12,
+q546-q547), and the parental lifespan line is Timmers'. The longer-lived allele is the leaner, lower-urate,
+heart-failure-protective one. For row 108.

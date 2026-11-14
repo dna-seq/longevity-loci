@@ -2623,3 +2623,19 @@ rs11591147 (row 3): GRCh38 1:55,039,974, G/A/T, G ancestral (q727); T 0.016 in g
 Wright 2019's nearest parental line, rs17111652 (mothers, 85 kb away), r² 0.07 in CEU (q730): no tag; Ensembl returns
 no pair (below its reporting floor) for rs11206517, rs2647281, rs478513 and rs480963, Wright's other lines within
 250 kb. For row 3.
+
+## Reading 2026-11-14, record
+
+> [q731] mappings[0] allele_string A/C/G seq_region_name 7 coord_system chromosome ancestral_allele G location 7:75465064-75465064 assembly_name GRCh38 start 75465064 strand 1 end 75465064
+
+> [q732] [16] d_prime 0.965089 population_name 1000GENOMES:phase_3:CEU variation1 rs113160991 r2 0.931397 variation2 rs62477737
+
+> [q733] [9] population_name 1000GENOMES:phase_3:CEU d_prime 1.000000 r2 1.000000 variation2 rs6944634 variation1 rs113160991
+
+> [q734] populations[0] allele G allele_count 52436 frequency 0.78 population gnomADg:nfe
+
+> [q735] [0] start 75465064 most_severe_consequence intron_variant strand 1 id rs113160991 end 75465064 allele_string A/C/G input rs113160991 seq_region_name 7 assembly_name GRCh38
+
+rs113160991 (row 108): GRCh38 7:75,465,064, A/C/G, G ancestral (q731); G 0.78 in gnomAD's non-Finnish Europeans
+(q734). VEP: intronic (q735). Its CEU LD window at r² 0.5 (500 kb): eleven variants at 0.8 or more, rs6944634 and
+rs7050 at 1.00 (q733), rs62477737 at 0.93 (q732). The pair to Wright's rs1179625 returned no text. For row 108.

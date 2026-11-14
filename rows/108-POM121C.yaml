@@ -1,0 +1,174 @@
+# The seed list's locus 108, POM121C (7q11.23). Curated 2026-11-14. Lead rs113160991, the seed's only rsID (Timmers
+# 2019's integrated-analysis locus): an intron of POM121C, GRCh38 7:75,465,064 G/A, GRCh37 7:75,094,329, G the common
+# allele (0.78 in non-Finnish Europeans) and the longer-lived. Open Targets 26.09 has no record of the variant; the GWAS
+# Catalog (2026-10-29) holds nothing at it and six associations at its CEU proxy rs6944634 (r² 1.00).
+locus_id: 108
+locus_name: POM121C
+verdict: kept
+verdict_reason: >-
+  Tier B, the seed's; row 101's shape, on Timmers 2019's own genome-wide call (D28.7): its integrated scan, with BMI
+  and insulin as priors, gives a Bayes-factor permutation P of 7.5e-9 under its 2.5e-8 (conventional P 2.8e-7, G +0.25
+  years per copy in self, "--" in UK Biobank and LifeGen); never A. The window's strongest line, rs62477737 68 kb away
+  (P 1.4e-7), is the same signal (r² 0.93). No independent replication and no flag: Timmers' own Figure 4 look-up at
+  rs6944634 (r² 1.00) leans the same way, flat (one-sided 0.18; power 0.74, heterogeneity P 0.21); Deelen 2019's 90th
+  percentile G's way, flat (one-sided 0.28), the 99th flat, a flag under APOE's factor only (power 1.00, heterogeneity
+  P 0.0049; the mean factor's power 0.55, P 0.26), so none (D25.3); FinnGen R11's death endpoint leans against G (P
+  0.48, one-sided 0.24), at one-sided power 0.79 and heterogeneity P 0.0044, short of D21's power and a database line
+  in any case (D30.12). Wright 2019's AncestryDNA has no line at the lead or any of its eleven CEU proxies at r² 0.8 or
+  more; its one line within 500 kb, rs1179625 161 kb away, cannot tag it (r² at most 0.35 by frequency) and Timmers is
+  flat there, so AncestryDNA is untested. Foote 2025's frailty deposits and Rosoff 2023's mvAge tables hold neither the
+  lead nor a proxy. The rsID literature search (Europe PMC, OpenAlex, PubMed, Crossref, preprints; Semantic Scholar
+  answered 429, its part unchecked) finds Timmers and a review citing it, no other lifespan study. Within UK Biobank
+  the rest agrees, co-occurring, not independent: Pilling 2017's parents' attained age G longer (P 3.3e-4; mothers
+  1.8e-5, fathers 0.052) and both parents in the top 10 % (G raising the chance, P 1.5e-4); Park 2025's own survival G
+  with fewer deaths (P 0.072, its allele columns swapped). Lifespan + (the discovery, Pilling), exceptional survival +
+  (Pilling's top 10 %, one-sided for G, D26.2; Deelen flat, not against), healthspan 0 (Zenin, G's way, P 0.39).
+  Mechanism metabolism: the scan's own priors were BMI and insulin, and at the proxy rs6944634 the longer-lived C (with
+  the lead's G) lowers body mass index (P 8e-25), heart failure (P 9e-12) and serum urate (P 3e-12). POM121C is named
+  in prose; a fasting-insulin study names it a candidate for adipogenesis at a nearby SNP, rs1167800, which is not this
+  signal (r² 0.09). Protection is the absence of risk: the common G is heart failure's non-risk allele, genome-wide at
+  a perfect proxy (D30.6). Modifiable through weight (D18.2), the leaner allele the longer-lived and the scan's prior
+  BMI. Causal C4 and effector E4, no gene named: Open Targets has no record of the variant, no lifespan-class set holds
+  it. Age of action unknown: Timmers' bands show A raising the hazard from 50 to 90 in both sexes and turning over at
+  90 to 120, flat there (D26.9's flipped band); the age moderator is null (P 0.33). The sex interaction (P 0.034, Q
+  0.62) does not survive correction; Pilling's mothers carry more of it. The evidence is European.
+axes:
+  tier: {value: B, cites: [pmid-30642433#q365, pmid-30642433#q42, pmid-30642433#q366, pmid-30642433#q373, db-ensembl-116#q732, pmid-30642433#q367, pmid-31413261#q246, pmid-31413261#q247, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, db-finngen-r11#q78, pmid-31484785#q153, db-ensembl-116#q733, pmid-29227965#q113, pmid-29227965#q116, pmid-40021682#q105, pmid-40021682#q32, db-opentargets-26.09#q1131]}
+  mechanism: {value: metabolism, cites: [pmid-30642433#q365, db-gwascatalog-2026.10.29#q542, db-gwascatalog-2026.10.29#q543, db-gwascatalog-2026.10.29#q544, db-gwascatalog-2026.10.29#q545]}
+  pleiotropy: {values: ["mech:adiposity", "mech:cvd"],
+               cites: [db-gwascatalog-2026.10.29#q542, db-gwascatalog-2026.10.29#q543, db-gwascatalog-2026.10.29#q544, db-gwascatalog-2026.10.29#q545, db-gwascatalog-2026.10.29#q546, db-gwascatalog-2026.10.29#q547]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "+",
+            cites: [pmid-30729179#q142, pmid-30642433#q366, pmid-29227965#q113, pmid-29227965#q116, pmid-31413261#q246]}
+  actionability: {label: modifiable, what: ["act_behaviour:weight"], who: "act_who:self", cites: [pmid-30642433#q365, db-gwascatalog-2026.10.29#q542, db-gwascatalog-2026.10.29#q543]}
+  context: {values: [eur_only_evidence], cites: [pmid-30642433#q365, pmid-30642433#q366]}
+flags:
+  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [db-gwascatalog-2026.10.29#q544, db-gwascatalog-2026.10.29#q545, db-ensembl-116#q733]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1130, db-opentargets-26.09#q1131]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q1130]}
+variants:
+  - rsid: rs113160991
+    gene: ""
+    phenotype: POM121C region, parental lifespan
+    trait_efo_id: EFO_0007796
+    effect_allele: G
+    effect_size: 0.2541
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position, as about 61 in 100 people of European
+          ancestry do. It is the reference the other combinations are compared with. The position, on chromosome 7,
+          lies in the POM121C gene; which gene matters here is not known.
+      - genotype: A/G
+        state: risk
+        conclusion: >-
+          You carry one copy of a less common version of this DNA position (about 34 in 100 people of European
+          ancestry do). In a study of about a million parents' lives, parents of people with it lived a little
+          shorter lives; scaled to a person's own life that is about a quarter of a year per copy. The same version
+          goes with slightly higher body weight and heart failure. The finding leaned on links to body weight and
+          insulin to reach significance and has not been confirmed in a separate study: a likely finding, not a
+          settled one. Keeping a healthy weight matters far more than this DNA result.
+      - genotype: A/A
+        state: risk
+        conclusion: >-
+          You carry two copies of a less common version of this DNA position (about 5 in 100 people of European
+          ancestry do). In a study of about a million parents' lives, each copy went with parents living a little
+          shorter lives, about a quarter of a year per copy scaled to a person's own life. The same version goes with
+          slightly higher body weight and heart failure. The finding has not been confirmed in a separate study: a
+          likely finding, not a settled one. Keeping a healthy weight matters far more than this DNA result.
+studies:
+  - rsid: rs113160991
+    note: pmid-30642433
+    quote: q365
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts), both parents
+    ancestry: [EUR]
+    sample_size: 1012240
+    sample_unit: lives
+    stat_significance: suggestive
+    p_value: "2.8E-07"
+    p_value_num: 2.8e-07
+    effect_size: 0.2541
+    effect_measure: beta
+    effect_unit: years of life per G allele in self (the parental estimate doubled)
+    effect_allele: G
+    direction: protective
+    statistical_test: "Timmers 2019, Table 2 (q365): conventional P 2.8E-07, SE 0.0495 years; the integrated analysis (iGWAS) Bayes-factor permutation P 7.5E-09 with BMI and insulin priors, genome-wide by the paper's 2.5e-8 (q42; D28.7, B never A), coded as rows 59 and 101; summary statistics A -0.0254 (SE 0.0049), direction -- (q366)"
+    curator: claude-opus-5-5
+  - rsid: rs113160991
+    note: pmid-30642433
+    quote: q365
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts), both parents
+    ancestry: [EUR]
+    sample_size: 1012240
+    sample_unit: lives
+    stat_significance: significant
+    p_value: "7.5E-09"
+    p_value_num: 7.5e-09
+    effect_size: 0.2541
+    effect_measure: beta
+    effect_unit: years of life per G allele in self (the parental estimate doubled)
+    effect_allele: G
+    direction: protective
+    statistical_test: "Timmers 2019's integrated (risk-factor-informed) GWAS: Bayes-factor permutation P 7.5E-09 with BMI and insulin priors (q365), below the paper's own genome-wide line of 2.5e-8 (q42): the paper's genome-wide call, B never A (D28.7)"
+    curator: claude-opus-5-5
+  - rsid: rs113160991
+    note: pmid-30642433
+    quote: q367
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: meta_analysis
+    population: European (the earlier longevity meta-analyses Timmers looked up; largely Deelen 2019's cohorts)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.364"
+    p_value_num: 0.364
+    p_one_sided: 0.182
+    proxy_rsid: rs6944634
+    effect_size: 0.00981
+    effect_measure: beta
+    effect_unit: longevity log odds per C allele of rs6944634 (C with the lead's G, r² 1.00 in CEU), on Timmers' replication scale
+    effect_allele: G
+    direction: protective
+    statistical_test: "Figure 4 source data, Longevity Replication (q367): SE 0.0108, one-sided P 0.182 (two-sided 0.364 derived); against the discovery's +0.0246 (SE 0.0050) on the same sheet, one-sided power 0.74, heterogeneity P 0.21: flat, no flag (derived)"
+    curator: claude-opus-5-5
+  - rsid: rs113160991
+    note: pmid-31413261
+    quote: q246
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis; no UK Biobank data)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.5628"
+    p_value_num: 0.5628
+    effect_size: 0.0169
+    effect_measure: beta
+    effect_unit: log odds of survival to the 90th percentile per G allele (printed −0.0169 per A)
+    effect_allele: G
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GCST008598), SE 0.0291, effective N 9,847; 99th percentile A +0.0038, P 0.93 (q247). D25.3 from Timmers' per-self G +0.0254: APOE's factor power 1.00, heterogeneity P 0.0049; mean factor power 0.55, P 0.26; a flag under APOE's only, so none"
+    curator: claude-opus-5-5
+  - rsid: rs113160991
+    note: pmid-29227965
+    quote: q116
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: British (UK Biobank participants' parents, European descent)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.00015"
+    p_value_num: 0.00015
+    effect_size: 0.00877307
+    effect_measure: beta
+    effect_unit: BOLT-LMM β on the case indicator (both parents in the top 10 % of survival) per G allele in the participant (positive = more likely)
+    effect_allele: G
+    direction: protective
+    statistical_test: "Pilling 2017's deposit GCST006698 (q116), SE 0.0024; attained age G longer, P 3.3E-04 (q113), mothers 1.8E-05, fathers 0.052; UK Biobank, the parents Timmers holds: co-occurring, not a replication"
+    curator: claude-opus-5-5
