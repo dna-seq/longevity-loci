@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- D31.3: a Timmers pass replicates a UK Biobank discovery only from outside UK Biobank; D30.3's B branch for 103 is superseded (134 D).
 - D31 (batch eleven): R-RARE-2 and R-TIER-4 read together, MR-only lipid loss-of-function at most C (row 3); no r² from Timmers 2019's Figure 4 source data, whose `R2` column is a frequency (rows 25, 51, 59, 103 re-taken).
 - `loci fetch` keeps a bare "<" or ">" in an abstract's text: the tag stripper took everything from a "<" ("P<0.001") to the next ">" as markup, which cut Benn 2019's abstract (curator, row 3). Markup is now a tag with a name, or an XML declaration or doctype. Texts already cached are not re-fetched.
 - `dashboard.py --left` holds out the biological-ageing markers too (the seed's `biological_ageing_rate` subpanel, 16 loci, plus 23 TERC and 30 TERT), blocked on the person's D4 (desk #312).

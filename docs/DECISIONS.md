@@ -799,3 +799,13 @@ standing word (pacing off, "full steam ahead"; the advisor pattern for the requi
    its test stated, no D and no `replication_failed`; B stands.
    Checked the same day: all four already took their r² from Ensembl (25 EUR 0.83, 51 CEU 0.94, 59 CEU 0.94, 103 EUR
    0.80); the sheet's values appear nowhere as r². Nothing moved; the rule stands for rows to come.
+3. **D30.11 and D30.17 supersede D30.3's B branch: a Timmers pass is independent only outside the discovery's
+   sample.** D30.3 (2026-11-13) let 103 stay B with `replication_failed` if Timmers' line, conditioned on row 38's
+   lead, fell below one-sided 0.05. Later the same day D30.11 (94) and D30.17 (98) settled that a pass inside the
+   discovery's sample is no independent pass. Zenin's healthspan discoveries are UK Biobank, and Timmers' pooled
+   lines hold UK Biobank's parents. So a Zenin discovery that fails its own powered replication is D unless a line
+   outside UK Biobank passes in its direction: Timmers' LifeGen-only line where one is printed (as at 72), Deelen,
+   FinnGen, AncestryDNA. 134 FGFR2 (rs2860197): Zenin's replication fails (power 0.96, heterogeneity P 0.023), and
+   Timmers (0.031) and Pilling's mothers (0.0065) are UK Biobank, so D, the curator's (a); the row says whether a
+   LifeGen-only line exists at the lead and what it shows. 103's owed re-read follows this, not D30.3. Rejected:
+   (b), D30.3 read as governing, which would count UK Biobank's parents as replicating UK Biobank's own discovery.
