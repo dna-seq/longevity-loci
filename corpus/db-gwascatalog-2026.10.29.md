@@ -1910,3 +1910,14 @@ symptoms interaction, no allele. For row 97.
 rs159428 holds seven GWAS Catalog associations (row 98): Rosoff 2023's multivariate ageing factor, T "increase", P
 6e-10 (q524); also fluid intelligence, cognitive performance, executive function, the cognitive part of educational
 attainment, and an "Aging" record. Zenin's healthspan is not among them. For row 98.
+
+## Reading 2026-11-14, record
+
+> [q525] _embedded.associations[4] association_id 62271348 risk_frequency 0.4633 pvalue_description pvalue_mantissa 4 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range - beta - p_value 4e-08 accession_id GCST011100 pubmed_id 32678081 first_author Timmers PRHJ
+
+> [q526] _embedded.associations[4].snp_allele[0] rs_id rs159428 effect_allele T
+
+Row 98: Timmers 2020's multivariate ageing GWAS (healthspan, parental lifespan and longevity; pubmed 32678081,
+GCST011100) has rs159428 at P 4e-8 (q525), T the effect allele (q526), its direction not printed here; it pools
+Zenin's healthspan with UK Biobank's parental lifespan, so multivariate and not independent (D18.3, D22.2). For row
+98.
