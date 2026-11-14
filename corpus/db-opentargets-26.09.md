@@ -3863,3 +3863,52 @@ CYB5A 0.217, C18orf63 0.054. The set has no colocalisation of any kind, GWAS or 
 (ENSG00000121289) or its transcripts: GTEx oesophagus mucosa (q1073) and fibroblast (q1074) expression, HipSci iPSC
 expression, transcript and transcript-usage sets; posterior 0.07 to 0.14 (fibroblast 0.14, q1075). No GWAS set, so no
 lifespan-class set holds it, and no locus-to-gene or colocalisation is read for it. For row 94.
+
+## Reading 2026-11-14, record
+
+> [q1076] data.variant.credibleSets count 54
+
+> [q1077] data.variant.credibleSets.rows[6] studyLocusId 14d169f285c37b4508bcf3d5ffcbef54 pValueMantissa 7.344662666320801 pValueExponent -9 beta 0.008471501279365589 finemappingMethod SuSiE-inf
+
+> [q1078] data.variant.credibleSets.rows[6].study id GCST006701 traitFromSource Parental longevity (father's attained age) studyType gwas
+
+> [q1079] data.variant.credibleSets.rows[6].locus.rows[0] posteriorProbability 0.5448193084618755
+
+> [q1080] data.credibleSet.colocalisation count 124
+
+> [q1081] data.credibleSet.colocalisation.rows[55] rightStudyType gwas h4 0.9973909284214304 clpp 0.2612128876727489 betaRatioSignAverage 1 colocalisationMethod COLOC_PIP_ECAVIAR
+
+> [q1082] data.credibleSet.colocalisation.rows[55].otherStudyLocus.study id GCST90476035 traitFromSource Respiratory failure, insufficiency, arrest (PheCode 509) studyType gwas target null
+
+> [q1083] data.credibleSet.colocalisation.rows[47] rightStudyType gwas h4 0.9961173706644707 clpp 0.1882205400267694 betaRatioSignAverage 0 colocalisationMethod COLOC_PIP_ECAVIAR
+
+> [q1084] data.credibleSet.colocalisation.rows[47].otherStudyLocus.study id GCST90479593 traitFromSource Chronic lung diseases including COPD, Emphysema and Bronchitis studyType gwas target null
+
+> [q1085] data.credibleSet.colocalisation.rows[40] rightStudyType gwas h4 0.9987208553241945 clpp 0.41571759922217283 betaRatioSignAverage -1 colocalisationMethod COLOC_PIP_ECAVIAR
+
+> [q1086] data.credibleSet.colocalisation.rows[40].otherStudyLocus.study id GCST009965 traitFromSource Cotinine levels in current smokers studyType gwas target null
+
+> [q1087] data.credibleSet.colocalisation.rows[56] rightStudyType gwas h4 0.9979112142704848 clpp 0.3020887836515012 betaRatioSignAverage -1 colocalisationMethod COLOC_PIP_ECAVIAR
+
+> [q1088] data.credibleSet.colocalisation.rows[56].otherStudyLocus.study id GCST90480701 traitFromSource How many years have you or did you smoke cigarettes? (inv-normal transformed) studyType gwas target null
+
+> [q1089] data.credibleSet.colocalisation.rows[13] rightStudyType gwas h4 0.943536578891768 clpp 0.015229153231130098 betaRatioSignAverage 0 colocalisationMethod COLOC_PIP_ECAVIAR
+
+> [q1090] data.credibleSet.colocalisation.rows[13].otherStudyLocus.study id GCST90473255 traitFromSource ICD10 F17: Mental and behavioural disorders due to use of tobacco studyType gwas target null
+
+> [q1091] data.credibleSet.colocalisation.rows[30] rightStudyType gwas h4 0.9941230859444651 clpp 0.1338317372474234 betaRatioSignAverage 1 colocalisationMethod COLOC_PIP_ECAVIAR
+
+> [q1092] data.credibleSet.colocalisation.rows[30].otherStudyLocus.study id GCST90691579 traitFromSource LDL direct levels studyType gwas target null
+
+> [q1093] data.credibleSet.colocalisation count 2
+
+19_40835324_A_G (rs12461964, row 95): 54 credible sets hold it (q1076), one of a lifespan-class study: Pilling's
+fathers' attained age (GCST006701; q1077, q1078; SuSiE-inf, P 7.3e-9, β +0.0085, so per G on the shorter-positive
+scale), the lead at posterior 0.545 (q1079). The set has no locus-to-gene rows. It colocalises with 124 GWAS sets
+(q1080), among them, at H4 0.94 to 0.999: respiratory failure (q1081, q1082; sign +1, G's way with shorter life),
+chronic lung disease including COPD (q1083, q1084), cotinine in current smokers (q1085, q1086; −1), years smoked
+(q1087, q1088; −1), tobacco use disorder (q1089, q1090), LDL direct (q1091, q1092; +1); also emphysema, chronic airway
+obstruction, lung-disease medication, lung cancer in siblings, squamous lung carcinoma (+1 where signed), and many
+lipid, fatty-acid and coffee sets. QTL colocalisations: two (q1093), both CYP2A6 splicing QTLs at H4 ≥ 0.8. So A,
+the longer-lived fathers' allele, goes with less lung disease, more cotinine and more years smoked, and lower LDL.
+For row 95.

@@ -1875,3 +1875,20 @@ frequency 0.0019, P 3e-9, its "beta" the score Z. Nothing else. For row 92.
 
 rs62127362 holds one GWAS Catalog association (q517): Deelen 2019's trans-ethnic longevity (90th percentile,
 GCST008600), G, OR 1.15 (1.08–1.22), P 4e-7, Table 4's line inverted. Nothing else. For row 94.
+
+## Reading 2026-11-14, record
+
+> [q518] _embedded.associations[16] association_id 35567974 risk_frequency 0.504 pvalue_description pvalue_mantissa 8 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range [0.0083-0.0169] beta 0.0126 unit decrease p_value 8e-09 accession_id GCST006701 pubmed_id 29227965 first_author Pilling LC ci_lower 0.0083 ci_upper 0.0169
+
+> [q519] _embedded.associations[1] association_id 228354946 risk_frequency 0.5261 pvalue_description pvalue_mantissa 2 pvalue_exponent -21 multi_snp_haplotype false snp_interaction false range [0.062-0.096] beta 0.07926 unit decrease p_value 2e-21 accession_id GCST90476035 pubmed_id 39024449 first_author Verma A ci_lower 0.062 ci_upper 0.096
+
+> [q520] _embedded.associations[2] association_id 228354425 risk_frequency 0.5258 pvalue_description pvalue_mantissa 3 pvalue_exponent -15 multi_snp_haplotype false snp_interaction false range [0.055-0.093] beta 0.07399 unit decrease p_value 3.0000000000000002e-15 accession_id GCST90476030 pubmed_id 39024449 first_author Verma A ci_lower 0.055 ci_upper 0.093
+
+> [q521] _embedded.associations[7] association_id 228207286 risk_frequency 0.5518 pvalue_description pvalue_mantissa 1 pvalue_exponent -12 multi_snp_haplotype false snp_interaction false range [0.021-0.037] beta 0.02907 unit increase p_value 1e-12 accession_id GCST90480701 pubmed_id 39024449 first_author Verma A ci_lower 0.021 ci_upper 0.037
+
+rs12461964 holds 19 GWAS Catalog associations (row 95). Pilling's fathers' attained age, A, 8e-9 (q518). Lung
+disease, A protective, all genome-wide: respiratory failure, insufficiency, arrest (PheCode 509), A "decrease", P 2e-21
+(q519); obstructive chronic bronchitis, P 3e-15 (q520); chronic bronchitis, pneumonia, respiratory failure (509.1),
+medication for chronic lung disease (P 6e-13 to 1e-19). Smoking: years smoked, A "increase", P 1e-12 (q521). Also
+omega-3 and fatty-acid measures, glycine, alkaline phosphatase, BMI (MTAG, A lower, 5e-8), FEV1 and FEV1/FVC after
+bronchodilator (A higher, 2e-7 and 5e-7). For row 95.

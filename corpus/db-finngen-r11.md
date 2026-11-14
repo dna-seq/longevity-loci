@@ -507,3 +507,12 @@ derived). Against Deelen's European 90th effect carried over as for Timmers (pmi
 predicts G −0.032 on death, one-sided power 0.77, heterogeneity P 0.041; the mean factor −0.077, power 1.00, P 1.7e-4.
 A flag under the mean factor only, so no flag (D25.3, as row 45's FinnGen). Independent of Deelen and UK Biobank.
 For row 94.
+
+## Reading 2026-11-14, supplement
+
+> [q70] 19 40835324 A G rs12461964 CTC-490E21.10,CTC-490E21.12 0.285696 0.544096 -0.00802801 0.0075196 0.547295 0.540404 0.548158
+
+FinnGen R11's death endpoint at rs12461964 (q70, row 95): alt G (0.54 in Finns) β −0.0080 (SE 0.0075), P 0.29: G with
+slightly fewer deaths, against A (one-sided 0.14 against A, derived). Its red flag against Pilling's fathers is
+unknown: no source converts the parental attained-age scale to FinnGen's death odds, and a release line only ever
+withholds A (D25.12, D28.1). For row 95.

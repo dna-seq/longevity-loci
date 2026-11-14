@@ -1,0 +1,177 @@
+# The seed list's locus 95, EGLN2 .. CYP2A6 (19q13.2). Curated 2026-11-14. Lead rs12461964, the seed's only rsID
+# (Pilling 2017's fathers-only SNP): intronic in EGLN2, 8 kb from CYP2A6, the nicotine-metabolising enzyme; GRCh38
+# 19:40,835,324, GRCh37 19:41,341,229, A/G, A 0.507 in non-Finnish Europeans and the longer-lived fathers' allele.
+locus_id: 95
+locus_name: EGLN2 .. CYP2A6
+verdict: kept
+verdict_reason: >-
+  Tier B, the seed's: a single genome-wide study without independent replication, sex-specific to fathers. Pilling
+  2017's GWAS of UK Biobank participants' fathers' attained age (415,311 people in the GWAS Catalog) puts A with
+  longer-lived fathers, β −0.0126 (SE 0.0022) on the Martingale residual, P 8.2e-9, under the paper's per-GWAS 5e-8,
+  so genome-wide in a stratum (D19.2), with B's caveat that Pilling ran five GWAS uncorrected. The other analyses of
+  the same parents: both parents 1.8e-4, mothers 0.48 (A −0.0016), top 10 % 0.15, top 1 % 0.78. Fathers against
+  mothers, heterogeneity P 3.6e-4 with both errors (D29.16): sex_specific:m. Nothing independent replicates it, and
+  nothing powered contradicts it. Timmers 2019's LifeGen fathers without UK Biobank (Figure 2 source data, sample b)
+  lean A's way, flat (one-sided 0.38): power 0.67 at the discovery's effect on the sheet's scale, heterogeneity P
+  0.094, no flag (D21). Deelen 2019 leans A's way at both percentiles (90th one-sided 0.21, 99th 0.19); carried over
+  by D25.3, it flags under APOE's factor (power 1.00, heterogeneity P 2.3e-4 from the fathers' effect, 0.025 from the
+  both-parents form) and not under the loci's mean factor (power 0.83, P 0.10; 0.54, P 0.40), so no flag. FinnGen
+  R11's death endpoint leans against A (G with fewer deaths, P 0.29, one-sided 0.14 against); no source converts the
+  parental scale to it, so its flag is unknown, and a release line only ever withholds A (D25.12). Wright 2019's
+  AncestryDNA is untested: its fathers' lines in the window (rs4001941, rs4609955, 85 to 92 kb away) do not tag the
+  lead (r² 0.11 or no pair in CEU). Within UK Biobank the rest co-occurs: Timmers 2019's million parents' lives, A
+  longer, P 0.0071, "++" (UK Biobank inside); Park 2025's own survival, A with fewer deaths, P 0.0084 (its allele
+  columns swapped), the same participants. Lifespan + (the discovery, Timmers), exceptional survival 0 (Pilling's top
+  10 % and 1 %, Deelen, flat), healthspan 0 (Zenin, P 0.73; Foote's four readable factors flat). The rsID literature
+  search (all six sources answered) finds no other lifespan study of the lead: Hu 2022 uses it as an instrument for
+  paternal longevity, the rest are CYP2A6 pharmacology. It acts through smoking: Pilling's fathers' set (Open Targets
+  SuSiE-inf, the lead at posterior 0.545) colocalises (H4 0.94 to 0.999) with respiratory failure, chronic lung disease
+  including COPD, emphysema, chronic airway obstruction, lung-disease medication and lung cancer, all with G on the
+  shorter-lived side, and with cotinine in current smokers, years smoked and tobacco use disorder; the GWAS Catalog has
+  A lowering respiratory failure (P 2e-21) and chronic bronchitis (3e-15) and raising years smoked (1e-12). The
+  effect showing in fathers, of a generation of men who mostly smoked, fits. Mechanism smoking_lungs, as row 80, with
+  mech:smoking and context:smoking; modifiable, act_behaviour:smoking (D18.2's shape for a behaviour). No trade-off:
+  the longer-lived A lowers LDL and apolipoprotein B in the same colocalisations, and no disease is quoted on its
+  side. Causal C1: the lead's posterior 0.545 in the fathers' set. Effector E2 CYP2A6: two CYP2A6 splicing QTLs
+  colocalise with the set (H4 ≥ 0.8); the set has no locus-to-gene rows, so not E1; no rival gene colocalises (D24).
+  A/G, about half of Europeans, is the reference (§6.2); A/A protective, G/G risk. No PROTECT token: A is at 0.51,
+  neither the common non-risk allele nor a rare protective one. Age of action unknown. The evidence is European.
+axes:
+  tier: {value: B, cites: [pmid-29227965#q83, pmid-29227965#q84, pmid-29227965#q85, pmid-29227965#q86, pmid-29227965#q87, pmid-29227965#q45, db-gwascatalog-2026.10.29#q494, pmid-30642433#q350, pmid-31413261#q234, pmid-31413261#q235, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, db-finngen-r11#q70, pmid-31484785#q142, pmid-31484785#q143, db-ensembl-116#q699, pmid-30642433#q349, pmid-40021682#q98, pmid-40021682#q32]}
+  mechanism: {value: smoking_lungs, cites: [db-opentargets-26.09#q1077, db-opentargets-26.09#q1081, db-opentargets-26.09#q1082, db-opentargets-26.09#q1083, db-opentargets-26.09#q1084, db-opentargets-26.09#q1085, db-opentargets-26.09#q1086, db-opentargets-26.09#q1087, db-opentargets-26.09#q1088, db-opentargets-26.09#q1089, db-opentargets-26.09#q1090, db-gwascatalog-2026.10.29#q519, db-gwascatalog-2026.10.29#q520, db-gwascatalog-2026.10.29#q521]}
+  pleiotropy: {values: ["mech:smoking", "context:smoking"], cites: [db-opentargets-26.09#q1085, db-opentargets-26.09#q1086, db-opentargets-26.09#q1087, db-opentargets-26.09#q1088, db-gwascatalog-2026.10.29#q521]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "0",
+            cites: [pmid-29227965#q83, pmid-29227965#q84, pmid-30642433#q349, pmid-29227965#q87, pmid-31413261#q234, pmid-31413261#q235, pmid-30729179#q130]}
+  actionability: {label: modifiable, what: ["act_behaviour:smoking"], who: "act_who:self", cites: [db-opentargets-26.09#q1087, db-opentargets-26.09#q1088, db-gwascatalog-2026.10.29#q521]}
+  context: {values: ["sex_specific:m", eur_only_evidence], cites: [pmid-29227965#q84, pmid-29227965#q85, pmid-29227965#q83]}
+flags:
+  - {token: "causal:C1", cites: [db-opentargets-26.09#q1077, db-opentargets-26.09#q1078, db-opentargets-26.09#q1079]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q1093]}
+variants:
+  - rsid: rs12461964
+    gene: CYP2A6
+    phenotype: CYP2A6 region, fathers' lifespan
+    trait_efo_id: EFO_0007796
+    effect_allele: A
+    effect_size: -0.0126
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: A/G
+        state: neutral
+        conclusion: >-
+          You carry one copy of each version of this DNA position, as about half of people of European ancestry do.
+          It is the reference the other combinations are compared with. The position, on chromosome 19, lies next to
+          CYP2A6, the gene for the liver enzyme that breaks down nicotine.
+      - genotype: A/A
+        state: protective
+        conclusion: >-
+          You carry two copies of the A version of this DNA position (about 1 in 4 people of European ancestry do).
+          In a very large British study the fathers of people with A lived a little longer, and A goes with less
+          chronic lung disease, likely through how the body handles nicotine and smoking. No separate study has
+          confirmed the lifespan link. Not smoking matters far more than this position.
+      - genotype: G/G
+        state: risk
+        conclusion: >-
+          You carry two copies of the G version of this DNA position (about 1 in 4 people of European ancestry do).
+          In a very large British study the fathers of people with G lived a little shorter lives, and G goes with
+          more chronic lung disease, likely through how the body handles nicotine and smoking. No separate study has
+          confirmed the lifespan link, and not smoking matters far more than this position.
+studies:
+  - rsid: rs12461964
+    note: pmid-29227965
+    quote: q83
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank), fathers
+    ancestry: [EUR]
+    stratum: parent
+    stratum_level: father
+    sample_size: 415311
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "8.2E-09"
+    p_value_num: 8.2e-09
+    effect_size: -0.0126
+    effect_measure: beta
+    effect_unit: Martingale residual of fathers' attained age per A allele (negative = reduced hazard, longer life)
+    effect_allele: A
+    direction: protective
+    statistical_test: "BOLT-LMM on Martingale residuals of fathers' attained age (Table 3, 'Loci only emerging in fathers' analysis', q83; sign convention q45); deposit GCST006701 (q84; N 415,311, db-gwascatalog-2026.10.29#q494); both parents 1.8E-04 (q86), mothers 0.48 (q85: A -0.0016, SE 0.0022; fathers against mothers heterogeneity P 3.6e-4, derived)"
+    curator: claude-opus-5-5
+  - rsid: rs12461964
+    note: pmid-30642433
+    quote: q350
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (LifeGen cohorts, UK Biobank's lives removed), fathers
+    ancestry: [EUR]
+    stratum: parent
+    stratum_level: father
+    stat_significance: not_significant
+    p_value: "0.384414951681249"
+    p_value_num: 0.3844
+    effect_size: 0.0408
+    effect_measure: beta
+    effect_unit: years of life per copy in self (fathers' estimate doubled), per A allele
+    effect_allele: A
+    direction: protective
+    statistical_test: "Replication of Pilling 2017's fathers' rs12461964 in LifeGen excluding UK Biobank (Figure 2 source data 1, sample b, q350); the P is one-sided (q101); log-scale β +0.0041 (SE 0.0139) against the discovery's +0.0288 (SE 0.0050): power 0.67, heterogeneity P 0.094 (both errors; derived), no red flag (D21)"
+    curator: claude-opus-5-5
+  - rsid: rs12461964
+    note: pmid-30642433
+    quote: q349
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts), both parents
+    ancestry: [EUR]
+    sample_size: 599982
+    sample_unit: lives
+    stat_significance: nominal
+    p_value: "0.0070880866"
+    p_value_num: 0.0070880866
+    effect_size: 0.01092179
+    effect_measure: beta
+    effect_unit: log hazard protection per A allele (positive = longer life)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0041, direction ++, info 0.97; holds Pilling's UK Biobank fathers, so co-occurring, not a replication; Park 2025's own survival A fewer deaths, P 0.0084 (pmid-40021682#q98, columns swapped), the same participants"
+    curator: claude-opus-5-5
+  - rsid: rs12461964
+    note: pmid-31413261
+    quote: q234
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis; no UK Biobank data)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.4166"
+    p_value_num: 0.4166
+    effect_size: 0.0182
+    effect_measure: beta
+    effect_unit: log odds of survival to the 90th percentile per A allele
+    effect_allele: A
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GCST008598), SE 0.0224, effective N 11,050; 99th percentile A +0.0312, SE 0.0355, P 0.38 (q235). D25.3 from Pilling's fathers on Timmers' sheet (pmid-30642433#q350): APOE's factor 4.84 (q82 against pmid-30642433#q90) power 1.00, heterogeneity P 2.3e-4; the mean factor (pmid-30642433#q92) power 0.83, P 0.10; a flag under APOE's only, so none"
+    curator: claude-opus-5-5
+  - rsid: rs12461964
+    note: pmid-30729179
+    quote: q130
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.7308"
+    p_value_num: 0.7308
+    effect_size: -0.00167
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per G allele (negative = later)
+    effect_allele: G
+    direction: protective
+    statistical_test: "Zenin 2019's healthspan summary statistics, SE 0.00485, Z −0.344, -log10 P 0.136"
+    curator: claude-opus-5-5

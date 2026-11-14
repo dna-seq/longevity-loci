@@ -2494,3 +2494,21 @@ Africans. VEP: intronic in CEP89 (q691; FAAP24 and RPL31P60 within 5 kb). LD to 
 
 Row 94: LD from rs62127362 to rs62127361, FinnGen's stand-in, r² 0.94, D′ 1.00 in CEU (q693). VEP's most severe
 consequence for the lead is intronic (q694), in CEP89 (q691). For row 94.
+
+## Reading 2026-11-14, record
+
+> [q695] mappings[0] location 19:40835324-40835324 start 40835324 allele_string A/G/T coord_system chromosome ancestral_allele null end 40835324 assembly_name GRCh38 seq_region_name 19 strand 1
+
+> [q696] populations[18] frequency 0.5066 population gnomADg:nfe allele_count 34382 allele A
+
+> [q697] populations[69] allele G allele_count 425 frequency 0.421626984126984 population 1000GENOMES:phase_3:EAS
+
+> [q698] [0] end 40835324 start 40835324 strand 1 assembly_name GRCh38 most_severe_consequence intron_variant id rs12461964 input rs12461964 seq_region_name 19 allele_string A/G/T
+
+> [q699] [0] r2 0.112928 variation1 rs12461964 d_prime 0.420304 population_name 1000GENOMES:phase_3:CEU variation2 rs4609955
+
+> [q700] [0] population_name 1000GENOMES:phase_3:CEU variation2 rs10411347 r2 0.067939 variation1 rs12461964 d_prime 0.350903
+
+rs12461964 (row 95): GRCh38 19:40,835,324, A/G/T (q695; Pilling's GRCh37 41,341,229). A is 0.507 in gnomAD's
+non-Finnish Europeans (q696), G 0.42 in 1000 Genomes' East Asians (q697), 0.22 in gnomAD's Africans. VEP: intronic,
+EGLN2 (q698). LD to Wright's rs4609955 r² 0.11 (q699) and rs10411347 r² 0.07 (q700) in CEU. For row 95.
