@@ -13,26 +13,32 @@ verdict_reason: >-
   (D28.13). Nothing independent stands for it. Pilling 2017's larger UK Biobank scan, which contains Pilling 2016's
   participants, leans C's way (mothers P 0.050, both parents 0.046; fathers 0.55; both parents in the top 10 % 0.88):
   the discovery's own biobank, so not independent. Timmers 2019 (C +0.029, P 0.034) prints "+-": C longer in UK
-  Biobank, Pilling's people, and shorter in LifeGen's independent cohorts. Deelen 2019 has no line at the lead.
+  Biobank, Pilling's people, and shorter in LifeGen's independent cohorts. Deelen 2019 has no line at the lead and no proxy stands in (Ensembl's
+  CEU window holds nothing above r² 0.49), so the one extreme-survival look outside UK Biobank is untested.
   FinnGen R11's death endpoint leans C's way (G more deaths, P 0.15, one-sided 0.076), flat, a database line. Park
   2025's own survival (P 0.90) and Zenin 2019's healthspan (P 0.68) are flat; Foote 2025's readable deposits cover
-  the window without the lead (the metabolic factor's returned the header alone). Wright 2019's AncestryDNA has no
-  line near it. The rsID literature search finds Pilling 2016 alone. Whether LifeGen or FinnGen would flag the
-  discovery is unknown: Pilling 2016's mothers' scale has no published conversion (D26.3), so no replication_failed;
-  the tier rests on the authors' doubt, as at 60. Outcome cells on a D row (D28.10, D30.17): lifespan 0 (the UK
+  the window without the lead (the metabolic factor's returned the header alone). Wright 2019's AncestryDNA is
+  untested: its nearest fathers' lines (rs2269606, 268 kb, r² 0.08; rs6006540, 370 kb, no CEU pair) do not tag the
+  lead. Rosoff 2023's tables hold no line. The rsID literature search (Semantic Scholar 429, its part unchecked) finds
+  only a review. Calibrated by Pilling 2016's own APOE line on the mothers' scale (ε4's rs429358 T +0.0183,
+  pmid-27015805#q17; LifeGen's 0.1056, a factor of about 5.8), the discovery's 0.092, about five times ε4's, predicts
+  a Timmers β near 0.53 per C against the printed 0.029 (SE 0.014): a flag under APOE's factor by a wide margin, but
+  the loci's mean factor is undefined for this phenotype, so whether LifeGen or FinnGen flag it is unknown (D25.3,
+  D26.3) and the row carries no replication_failed; the tier rests on the authors' doubt, as at 60. Outcome cells on a D row (D28.10, D30.17): lifespan 0 (the UK
   Biobank looks are the discovery's biobank, LifeGen's arm leans against without its own P), healthspan 0 (Zenin
-  flat), exceptional survival 0 (Pilling 2017's top-10 % look flat, the discovery's biobank; Deelen has no line).
+  flat), exceptional survival untested (D29.4: the overfit discovery tests nothing, Pilling 2017's
+  top-10 % look, flat, is the discovery's biobank, and Deelen has neither the lead nor a proxy).
   Mechanism general ageing (D25.7), pleiotropy empty: the GWAS Catalog holds no other trait for the variant.
   Descriptive. Causal C4 and effector E4, no gene named: Open Targets holds no record of the variant, and an overfit
   source sets no level anyway (D28.12); PARVB is named in prose. Every genotype neutral (D25.2); C/C, about 94 in 100
   Europeans, the reference. Age of action unknown. The evidence is European; G is commoner in Finns (0.073), where
   FinnGen's look is flat, so eur_only_evidence.
 axes:
-  tier: {value: D, cites: [pmid-27015805#q24, pmid-27015805#q25, pmid-27015805#q26, pmid-27015805#q12, pmid-29227965#q104, pmid-29227965#q105, pmid-29227965#q106, pmid-29227965#q107, pmid-30642433#q357, db-finngen-r11#q75, pmid-40021682#q102, pmid-40021682#q32, pmid-30729179#q139, db-gwascatalog-2026.10.29#q534, db-opentargets-26.09#q1121]}
+  tier: {value: D, cites: [pmid-27015805#q24, pmid-27015805#q25, pmid-27015805#q26, pmid-27015805#q12, pmid-27015805#q17, pmid-30642433#q90, db-ensembl-116#q719, db-ensembl-116#q720, pmid-29227965#q104, pmid-29227965#q105, pmid-29227965#q106, pmid-29227965#q107, pmid-30642433#q357, db-finngen-r11#q75, pmid-40021682#q102, pmid-40021682#q32, pmid-30729179#q139, db-gwascatalog-2026.10.29#q534, db-opentargets-26.09#q1121]}
   mechanism: {value: general_ageing, cites: [db-gwascatalog-2026.10.29#q534, db-opentargets-26.09#q1121]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
+  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: untested,
             cites: [pmid-30729179#q139, pmid-29227965#q104, pmid-29227965#q105, pmid-29227965#q107, pmid-30642433#q357]}
   actionability: {label: descriptive, cites: [pmid-27015805#q24]}
   context: {values: [eur_only_evidence], cites: [pmid-27015805#q24, db-ensembl-116#q716, db-ensembl-116#q717]}
@@ -61,13 +67,13 @@ variants:
         conclusion: >-
           You carry one copy of a less common version of this DNA position (about 6 in 100 people of European
           ancestry do). One British study linked it to mothers dying a little earlier, but its own authors doubted the
-          result and other studies did not support it, so it is not counted for or against lifespan.
+          result and no independent study has confirmed it, so it is not counted for or against lifespan.
       - genotype: G/G
         state: neutral
         conclusion: >-
           You carry two copies of a rare version of this DNA position (fewer than 1 in 1,000 people of European
           ancestry do). One British study linked it to mothers dying a little earlier, but its own authors doubted the
-          result and other studies did not support it, so it is not counted for or against lifespan.
+          result and no independent study has confirmed it, so it is not counted for or against lifespan.
 studies:
   - rsid: rs62227724
     note: pmid-27015805
@@ -85,7 +91,7 @@ studies:
     p_value_num: 3.4e-08
     effect_size: 0.092149
     effect_measure: beta
-    effect_unit: mother's age at death per C allele (positive = later death)
+    effect_unit: BOLT-LMM β on mother's age at death per C allele (positive = later death; the SE, 0.017 at n 52,776 and a 3 % allele, fits standard-deviation units)
     effect_allele: C
     direction: protective
     statistical_test: "BOLT-LMM on mother's age at death (Supplementary Table 2, q24; columns q12), SE 0.016689, INFO 0.756, HWE P 0.29; n 52,776 (q26); the authors set it aside as of low frequency and not in a typical peak (q25): an overfit source (D28.13)"

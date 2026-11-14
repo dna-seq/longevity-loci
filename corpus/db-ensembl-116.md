@@ -2571,3 +2571,17 @@ rs2273500 (row 99): GRCh38 20:63,355,597, T/C, C ancestral (q711). T is 0.85 in 
 
 rs62227724 (row 100): GRCh38 22:44,128,027, C/G, C ancestral (q715). G is 0.029 in gnomAD's non-Finnish Europeans
 (q716), 0.073 in its Finns (q717), 0.02 in Africans. VEP: intronic (q718), PARVB. For row 100.
+
+## Reading 2026-11-14, record
+
+> [q719] [1] r2 0.494898 variation2 rs140055638 variation1 rs62227724 d_prime 1.000000 population_name 1000GENOMES:phase_3:CEU
+
+> [q720] [0] population_name 1000GENOMES:phase_3:CEU d_prime 0.999984 r2 0.084058 variation2 rs2269606 variation1 rs62227724
+
+Row 100: Ensembl's LD window round rs62227724 in CEU (500 kb, r² ≥ 0.3) holds three variants, the best at r² 0.49
+(rs140055638 and rs192474413, q719; rs78310120 0.32): no proxy at r² ≥ 0.8, so Deelen 2019, which has no line at the
+lead, has none to stand in (D29.3). Wright's nearest fathers' line rs2269606 (268 kb) is r² 0.08 (q720); its Table 9
+fathers' line rs6006540 (370 kb) has no CEU pair. Foote's six readable deposits each cover 22:44.50-44.55 Mb densely
+without the lead (Q-filtered or absent). A literature search on rs62227724 (2026-11-14; Semantic Scholar 429, its
+part unchecked) finds only a 2018 review; Rosoff's tables name PARVB only in TWAS rows of other genes' models. For
+row 100.
