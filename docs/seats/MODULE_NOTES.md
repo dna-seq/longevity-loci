@@ -72,6 +72,15 @@ export (the lead starts it today, to 0.8's studies/variants shape per `docs/FORM
   571e5b1), the first on just-dna 0.8.6: export, enrich, strict compile green (93 loci, 279 variant rows, 465 studies,
   fully resolved, 264 of 264 VRS alleles identified, warnings unchanged). The polygon's 2.0.0 replaced (18:26 UTC),
   content_signature equal to ours; the server still compiles with compiler 0.8.4. Receipt appended by hand.
+- **APOE diplotype probe for desk #307, 2026-11-14** (the lead, 640351176; a scratch copy, nothing published, the
+  rows marked as probes): batch ten's module plus `haplotypes.csv` (e2, e3, e4 by rs429358 and rs7412) and
+  `diplotypes.csv` (the six pairs). On 0.8.6 enrich places both SNPs, strict validate and strict compile are green, and
+  the artifact gains `haplotypes.parquet` and `diplotypes.parquet` (6 rows each) beside the variant tables;
+  `registry_validate` on the polygon is clear and counts APOE among the genes (27). What it does not do: a diplotype row
+  has no pmid or study link (studies.csv keys on variant_key), so its grounding lives only in its conclusion text; a
+  pair naming a haplotype nobody defined is a warning, not an error, even strict (`star_allele_undefined`). Not seen:
+  how the app or the registry's page shows the table (a publish of the probe would show the registry page; the app
+  needs a local install, which this seat runs only on an ask).
 - Plugin caches moved to the data volume (`remember_setting JUST_DNA_PIPELINES_CACHE_DIR`, user config, not the
   repo): `$HOME` is the small volume and Ensembl's lane is about 15 GB. Ensembl lane present 2026-11-12: ensembl-variation-2026_07_13-vep116.0, 14.5 GB (du shows 7.6 GB on BeeGFS).
 
