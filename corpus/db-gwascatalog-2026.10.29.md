@@ -2011,7 +2011,6 @@ heart-failure-protective one. For row 108.
 
 > [q553] _embedded.associations[1] association_id 41435741 risk_frequency 0.4 pvalue_description pvalue_mantissa 6 pvalue_exponent -97 multi_snp_haplotype false snp_interaction false range [25.38-49.58] or_per_copy_num 35.48 or_value 35.48 beta - p_value 6e-97 accession_id GCST007606 pubmed_id 30661239 first_author Nicoletti P ci_lower 25.38 ci_upper 49.58
 
-rs2395029 (row 130): eight associations (q548). G controls HIV-1 (OR 5.3, P 1e-25, q549-q550; and two more) and
-slows AIDS progression; psoriasis OR 4.1, P 2e-26, its allele printed C (q551-q552), the opposite strand's name for
-G, the G being HLA-B*57:01's tag and B*57 a known psoriasis allele (not shown here, so read as stated: allele C,
-unharmonised); flucloxacillin liver injury OR 35, P 6e-97, allele not stated (q553). For row 130.
+rs2395029 (row 130): eight associations (q548). G controls HIV-1 (OR 5.3, P 1e-25, q549-q550; and two more); an AIDS-progression record
+names G (OR 3.47), its direction not in the line; psoriasis OR 4.1, P 2e-26, its allele printed C (q551-q552), the opposite strand's name, at a
+risk frequency of 0.03, the rare allele's, so G by frequency (derived); flucloxacillin liver injury OR 35, P 6e-97, allele not stated (q553). For row 130.

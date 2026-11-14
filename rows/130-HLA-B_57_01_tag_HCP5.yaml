@@ -7,45 +7,45 @@ locus_id: 130
 locus_name: HLA-B*57:01 tag (HCP5)
 verdict: re-tiered
 verdict_reason: >-
-  Tier C, from the seed's B: a candidate-gene association replicated only in same-group samples (§4.1's C), capped
-  there by R-TIER-2 in any case, and nothing near genome-wide. Rahmouni 2025 chose HLA-B*57:01 from its authors' HIV
-  work and tested its tag in 2,597 European centenarians against 9,973 younger controls, one comparison per country:
-  G is rarer among centenarians in all four (French OR 0.65, P 0.01; German 0.76, P 0.15; Danish 0.75, P 0.32; Italian
-  0.57, P 0.05), fixed-effects OR 0.68, P 0.0003. All four comparisons are one group's, old against young, with the
-  Danish cases imputed and their controls genotyped; the controls' G (0.029 to 0.039) runs at or below gnomAD's 0.037.
-  Nothing independent replicates it and nothing countable contradicts it. Deelen 2019's 99th percentile, on the
-  discovery's own odds scale, is flat and leans the other way (G slightly more common among the long-lived, P 0.75),
-  at one-sided power 0.95 and heterogeneity P 0.008, which would be a D21 red flag; but Deelen's cohorts include the
-  same CEPH French and Danish centenarians, so it is named, not counted (its 90th flat too, P 0.87). Timmers 2019's
-  million parents' lives are flat (T +0.0055 per self, SE 0.0105, P 0.60); no published conversion carries a
-  centenarian odds ratio to that scale (D26.3), though the 90th percentile's APOE factor would predict −0.080 for G
-  per self and the loci's mean factor −0.19, both far from what was seen: stated, and put to the lead. FinnGen R11's
-  death endpoint leans against the discovery (G fewer deaths, P 0.37), a database line; Park 2025's own survival T
-  with fewer deaths (P 0.09). Pilling 2017's UK Biobank mothers favour T (P 0.026), fathers lean the other way (P
-  0.19), both parents flat (P 0.57), top 10 % flat (P 0.61). Zenin 2019's healthspan flat (G earlier, P 0.40). The
-  HLA class I region has lifespan lines of its own (Timmers' rs9267123 at 3.2e-7, 4 kb away; Wright's fathers' meta
-  genome-wide at rs3131621, 6 kb), all common, none able by frequency to tag a 4 % allele (r² at most 0.47; derived):
-  AncestryDNA is untested at the lead, and those signals are not this one. Foote 2025's frailty deposits and Rosoff
-  2023's mvAge tables hold no line at it. The literature search (Europe PMC, OpenAlex, PubMed, Crossref, preprints;
-  Semantic Scholar answered 429) finds no other longevity test. Exceptional survival + (the discovery itself), lifespan
-  + (Pilling's mothers, one-sided 0.013; Timmers flat), healthspan 0. Mechanism immune and inflammation: G tags
-  HLA-B*57:01, which controls HIV-1 (OR 5.3, P 1e-25) and slows AIDS progression, and which the authors tie to impaired
-  MICA/MICB and natural-killer function. The trade-off is detected: T, the longer-lived allele, is the one with less
-  natural control of HIV. The catalog's psoriasis association prints its allele as C (another strand's name, left
-  unharmonised) and the liver-injury one none, so neither is read as a direction. No protection token: no disease
-  association at the locus states T as its non-risk allele on this strand. Causal C4 and effector E4: no Open Targets
-  record. Descriptive (a trade-off locus, §4.2). Age of action unknown. The evidence is European.
+  Tier D, from the seed's B: a sub-genome-wide candidate-gene discovery that fails a powered test in its own ancestry
+  (D30.11, a fortiori of D25.1). Rahmouni 2025 chose HLA-B*57:01 from its authors' HIV work and tested its tag in 2,597
+  European centenarians against 9,973 younger controls, one comparison per country: G is rarer among centenarians in
+  all four (French OR 0.65, P 0.01; German 0.76, P 0.15; Danish 0.75, P 0.32; Italian 0.57, P 0.05), fixed-effects OR
+  0.68 (0.55 to 0.84), P 0.0003; one group's samples, old against young (R-TIER-2), the Danish cases imputed and their
+  controls genotyped, the French controls' G (0.029) below gnomAD's non-Finnish 0.037. Timmers 2019's million parents'
+  lives, outside those samples, are flat (G −0.0055 per self, SE 0.0105, P 0.60). Carried to that scale by D25.3's two
+  calibrations at the 99th percentile (Deelen's APOE line over Timmers': factor 6.22; the loci's mean, 2.60), the
+  discovery predicts G −0.062 and −0.149 per self: one-sided power 1.00 under both, heterogeneity P 0.0054 and
+  0.00086 (at the 90th's factors 0.0026 and 0.00067; at half the effect 0.061 and 0.0032), a D21 red flag under both.
+  No independent scoring-class study gives p < 0.05 the discovery's way: Pilling 2017's UK Biobank mothers favour T (P
+  0.026) but sit inside Timmers, the failing sample (D30.11), and both parents (P 0.57), fathers (0.19, the other way)
+  and the top 10 % (0.61) are flat; FinnGen R11's death endpoint leans against (G fewer deaths, P 0.37), a database
+  line; Park 2025's own survival favours T (fewer deaths, P 0.09), UK Biobank again. Deelen 2019's 99th percentile, on
+  the discovery's own odds scale, is flat and leans the other way (P 0.75; power 0.95, heterogeneity P 0.008), but its
+  cohorts include CEPH's French and Danish centenarians (as row 89 found), so it is named, not counted; its 90th flat
+  (P 0.87). Zenin 2019's healthspan flat (P 0.40). The HLA class I region's own lifespan lines (Timmers' rs9267123,
+  3.2e-7, 4 kb away; Wright's fathers' meta genome-wide at rs3131621, 6 kb) are common and cannot tag a 4 % allele (r²
+  at most 0.47 by frequency, derived): not this signal. None of the lead's 185 CEU proxies at r² 0.5 or more is in
+  Wright's or Rosoff's tables; Foote 2025 holds 34, at rs41561016 (r² 1.00) mixed (F5 C less frail, P 0.0066; F6
+  more disabled, P 0.0009), multivariate, scored nothing; its general, F3 and F4 windows came back empty, unread. The
+  literature search (Europe PMC, OpenAlex, PubMed, Crossref, preprints; Semantic Scholar answered 429) finds no other
+  longevity test. Every genotype neutral (D25.2); outcome cells 0 (D28.10): the contradicted discovery gives no +, and
+  nothing independent gives one-sided P < 0.05 either way. Mechanism ageing in general, as on every D row (D25.7):
+  G tags HLA-B*57:01, which controls HIV-1 (OR 5.3, P 1e-25) and which the authors tie to impaired MICA/MICB and
+  natural-killer function; psoriasis (OR 4.1, its allele G by frequency) and flucloxacillin liver injury are its other
+  records. Named; pleiotropy empty, since no longer-life allele is left to weigh them against. Causal C4 and effector
+  E4: no Open Targets record either way. Descriptive. The evidence is European.
 axes:
-  tier: {value: C, cites: [pmid-41135092#q1, pmid-41135092#q2, pmid-41135092#q3, pmid-41135092#q4, pmid-41135092#q5, pmid-41135092#q6, pmid-41135092#q7, db-ensembl-116#q738, pmid-31413261#q248, pmid-31413261#q249, pmid-30642433#q374, pmid-30642433#q375, db-finngen-r11#q79, pmid-40021682#q106, pmid-40021682#q32, pmid-29227965#q117, pmid-29227965#q118, pmid-29227965#q119, pmid-29227965#q120, pmid-31484785#q155, db-opentargets-26.09#q1146]}
-  mechanism: {value: immune_inflammation, cites: [db-gwascatalog-2026.10.29#q549, db-gwascatalog-2026.10.29#q550, pmid-41135092#q1]}
-  pleiotropy: {values: ["tradeoff", "mech:infection"],
-               cites: [db-gwascatalog-2026.10.29#q549, db-gwascatalog-2026.10.29#q550, db-gwascatalog-2026.10.29#q551, db-gwascatalog-2026.10.29#q552, db-gwascatalog-2026.10.29#q553]}
+  tier: {value: D, cites: [pmid-31413261#q250, pmid-30642433#q90, pmid-40759756#q57, pmid-40759756#q58, db-ensembl-116#q740, pmid-41135092#q1, pmid-41135092#q2, pmid-41135092#q3, pmid-41135092#q4, pmid-41135092#q5, pmid-41135092#q6, pmid-41135092#q7, db-ensembl-116#q738, pmid-31413261#q248, pmid-31413261#q249, pmid-30642433#q374, pmid-30642433#q375, db-finngen-r11#q79, pmid-40021682#q106, pmid-40021682#q32, pmid-29227965#q117, pmid-29227965#q118, pmid-29227965#q119, pmid-29227965#q120, pmid-31484785#q155, db-opentargets-26.09#q1146]}
+  mechanism: {value: general_ageing, cites: [db-gwascatalog-2026.10.29#q549, db-gwascatalog-2026.10.29#q550, pmid-41135092#q1]}
+  pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "+",
-            cites: [pmid-41135092#q5, pmid-29227965#q118, pmid-30642433#q374, pmid-30729179#q143]}
+  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
+            cites: [pmid-41135092#q5, pmid-30642433#q374, pmid-29227965#q118, pmid-31413261#q249, pmid-30729179#q143]}
   actionability: {label: descriptive, cites: [db-gwascatalog-2026.10.29#q549]}
   context: {values: [eur_only_evidence], cites: [pmid-41135092#q4, pmid-30642433#q374]}
 flags:
+  - {token: replication_failed, cites: [pmid-30642433#q374, pmid-31413261#q250, pmid-30642433#q90]}
   - {token: "causal:C4", cites: [db-opentargets-26.09#q1144, db-opentargets-26.09#q1145, db-opentargets-26.09#q1146]}
   - {token: "effector:E4", cites: [db-opentargets-26.09#q1144, db-opentargets-26.09#q1145]}
 variants:
@@ -58,33 +58,29 @@ variants:
     effect_measure: OR
     stat_significance: nominal
     direction: risk
-    negatives: >-
-      The longer-life version, T, is also the one with less natural control of HIV if infected; the other version, G,
-      marks the HLA-B*57:01 type that holds HIV in check.
     genotypes:
       - genotype: T/T
         state: neutral
         conclusion: >-
           You carry two copies of the common version of this DNA position, as about 93 in 100 people of European
           ancestry do. It is the reference the other combinations are compared with. The position lies in the HLA
-          region of chromosome 6, which shapes how the immune system recognises infections. The finding comes from
-          people of European ancestry.
+          region of chromosome 6, which shapes how the immune system recognises infections. One study linked this
+          position to reaching 100, but a much larger study of parents' lifespans did not confirm it, so it is not
+          counted for or against lifespan.
       - genotype: G/T
-        state: risk
+        state: neutral
         conclusion: >-
           You carry one copy of a less common version of this DNA position (about 7 in 100 people of European
-          ancestry do). It marks an immune-system type, HLA-B*57:01, which one group of researchers found a little
-          less often among people who reached 100 than among younger people. Much larger studies of parents'
-          lifespans did not show a clear difference, so this is early evidence, not a settled finding. The same
-          type helps the body hold HIV in check.
+          ancestry do). It marks an immune-system type, HLA-B*57:01, which helps the body hold HIV in check. One
+          group of researchers found it a little less often among people who reached 100, but a much larger study of
+          about a million parents' lives found no such difference, so it is not counted for or against lifespan.
       - genotype: G/G
-        state: risk
+        state: neutral
         conclusion: >-
           You carry two copies of a less common version of this DNA position (about 1 in 1,000 people of European
-          ancestry do). It marks an immune-system type, HLA-B*57:01, which one group of researchers found a little
-          less often among people who reached 100 than among younger people; too few people carry two copies to say
-          more. Much larger studies of parents' lifespans did not show a clear difference, so this is early
-          evidence, not a settled finding. The same type helps the body hold HIV in check.
+          ancestry do). It marks an immune-system type, HLA-B*57:01, which helps the body hold HIV in check. One
+          group of researchers found it a little less often among people who reached 100, but a much larger study of
+          about a million parents' lives found no such difference, so it is not counted for or against lifespan.
 studies:
   - rsid: rs2395029
     note: pmid-41135092
@@ -141,7 +137,7 @@ studies:
     effect_unit: log hazard protection per T allele in self (positive = longer life)
     effect_allele: T
     direction: protective
-    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0105, direction ++, info 1.00; no published conversion from a centenarian odds ratio (D26.3); the 90th's APOE factor would predict G −0.080 per self, the mean factor −0.19 (derived, stated, no flag)"
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0105, direction ++, info 1.00; against the discovery carried by D25.3's 99th-percentile calibrations (APOE factor 6.22 from pmid-31413261#q250 over q90; mean 2.60): expected G −0.062 and −0.149 per self, one-sided power 1.00, heterogeneity P 0.0054 and 0.00086: a D21 red flag under both (derived)"
     curator: claude-opus-5-5
   - rsid: rs2395029
     note: pmid-29227965

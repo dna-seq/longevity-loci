@@ -2657,3 +2657,10 @@ deposits. For row 108.
 
 rs2395029 (row 130): GRCh38 6:31,464,003, T/G (q737); G 0.037 in gnomAD's non-Finnish Europeans (q738). VEP: a
 non-coding transcript exon variant of HCP5 (q739). For row 130.
+
+## Reading 2026-11-14, record
+
+> [q740] [48] d_prime 1.000000 variation2 rs41561016 variation1 rs2395029 r2 1.000000 population_name 1000GENOMES:phase_3:CEU
+
+rs2395029's CEU LD window at r² 0.5 (500 kb, row 130): 185 variants, 105 at 0.8 or more, rs41561016 at 1.00 (q740).
+None is in Wright's Tables 8 or 9 or Rosoff's tables; Foote holds 34 of them (pmid-40759756#q55-q58). For row 130.
