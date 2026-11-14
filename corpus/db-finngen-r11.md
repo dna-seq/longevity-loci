@@ -524,10 +524,10 @@ power 0.71, so no flag (D21). A database line sets no D (D30.12). All derived. F
 
 > [q71] 20 10983718 T C rs6108784 RP11-103J8.1 0.539345 0.268133 0.00472896 0.00770436 0.365813 0.368304 0.365501
 
-FinnGen R11's death endpoint at rs6108784 (q71, row 97): alt C (0.54 in Finns) +0.0047 (SE 0.0077), P 0.37: T with
-slightly fewer deaths, one-sided 0.18, flat. On the per-self scale (D30.12) against Pilling's both-parents effect
-(+0.0176 per T, SE 0.0052): power 0.74, heterogeneity P 0.016, short of a flag; a database line sets no D either
-way. Derived. For row 97.
+FinnGen R11's death endpoint at rs6108784 (q71, row 97): alt C (0.37 in Finns) +0.0047 (SE 0.0077), P 0.54 (corrected
+2026-11-14: the first reading swapped the P and frequency columns): T with slightly fewer deaths, one-sided 0.27,
+flat. Against Pilling's both-parents effect at Timmers' both-parents factor (about 1.97, D30.16: +0.0152 per T per
+self): power 0.63, heterogeneity P 0.24, no flag; a database line sets no D either way. Derived. For row 97.
 
 ## Reading 2026-11-14, supplement
 

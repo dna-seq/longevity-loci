@@ -20,7 +20,7 @@ verdict_reason: >-
   LifeGen's fathers without UK Biobank (Timmers 2019's Figure 2 source data, sample b) lean T's way, one-sided 0.15
   (power 0.91, heterogeneity P 0.083, short of a flag); Deelen 2019 leans against (90th P 0.81, 99th 0.43), a flag
   under APOE's factor only from Pilling's both-parents effect (D28.2), so none (D25.3); FinnGen R11's death endpoint
-  T's way, one-sided 0.18, no flag on the per-self scale (power 0.74; D30.12), a database line that sets nothing
+  T's way, P 0.54, one-sided 0.27, no flag (power 0.63 at Timmers' both-parents factor, D30.16), a database line that sets nothing
   either way. Within UK Biobank, Timmers 2019's pooled parents (T longer, P 8.1e-5, "++", UK Biobank inside) and
   Park 2025's own survival (flat, P 0.81, its allele columns swapped) are not independent of the discovery. So D, as
   89 and 26. Outcome cells on a D row (D28.10): lifespan 0, the contradicted discovery and Timmers, which holds it,
