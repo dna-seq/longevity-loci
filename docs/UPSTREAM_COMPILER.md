@@ -18,7 +18,7 @@ compiler's `0.8` branch); reuse it at the cut, and tell that liaison where our u
 ## Read mark
 
 **`v0.8.6`** (tagged 2026-11-13, `2f03ab4a`), patches on 0.8.0 read by their changelog headings and "After
-upgrading" lines; read whole at our adoption. **In use: `v0.8.5`** since 2026-11-13 (0.8.4 from 2026-11-12), the trio in `uv.lock`,
+upgrading" lines; read whole at our adoption. **In use: `v0.8.6`** since 2026-11-14 (0.8.5 from 2026-11-13, 0.8.4 from 2026-11-12), the trio in `uv.lock`,
 adopted with the plugin's `v0.48.7`; 0.7.3 (enricher), 0.7.2 and 0.7.1 before it. The first mark, `v0.7.3` (3dd8c2a),
 was fast-forwarded: no release before it was read.
 
@@ -88,7 +88,8 @@ read mark stays at `v0.7.3` until the cut; the cut is read again in full.
   scale), RM440 (`enrich --rederive` logs which rows lost a back-filled rsID; a log line only), RM437's doc half (the
   `ensembl` lane carries the core only until 0.9). For us: RM439 matches our export, which writes the variant's own
   level and leaves `nominal` empty (`export.py`, `VARIANT_NOMINAL`); we run no `--rederive` and have no
-  coordinate-only row. No code change. Held at 0.8.5 beside the plugin's server until its lock moves to 0.8.6.
+  coordinate-only row. No code change. Held at 0.8.5 beside the plugin's server until its v0.48.10 locked 0.8.6; **taken
+  2026-11-14**, floors `>=0.8.6,<0.9`, suite 136 passed.
 
 ## Caps
 
