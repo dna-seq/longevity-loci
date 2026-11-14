@@ -4002,3 +4002,14 @@ fathers' study has no set here); the nearest to one is Foote 2025's unhealthy-li
 the lead at posterior 0.83 (q1115), locus-to-gene CHRNA4 0.93 (q1116, q1117), a multivariate set (D17.2, D27.3).
 The others: cigarettes per day, smoking initiation, cessation and status, nicotine dependence, problematic tobacco
 use, lung cancers, white-cell counts, and CHRNA4 expression and splicing QTLs. For row 99.
+
+## Reading 2026-11-14, record
+
+> [q1118] data.variant.credibleSets.rows[25] studyLocusId de7333a8dab115165277a0cef071c182 pValueMantissa 3 pValueExponent -64 beta 0.0382 finemappingMethod PICS
+
+> [q1119] data.variant.credibleSets.rows[25].study id GCST90243987 traitFromSource Cigarettes smoked per day studyType gwas
+
+> [q1120] data.variant.credibleSets.rows[25].locus.rows[0] posteriorProbability 0.999930002244649
+
+Row 99: a cigarettes-per-day credible set (GCST90243987, PICS, P 3e-64, β +0.0382 per C; q1118, q1119) holds the
+lead at posterior 0.9999 (q1120). For row 99.

@@ -13,32 +13,35 @@ verdict_reason: >-
   token, D29.16), age at death 0.089, top 10 % 0.18. No independent study replicates it and none powered contradicts
   it: LifeGen's fathers without UK Biobank (Timmers 2019's Figure 2 source data, sample b) lean T's way, one-sided
   0.27, power 0.68, no flag (D21); Deelen 2019 leans against (90th P 0.65, 99th 0.38), a flag under APOE's factor
-  only from Pilling's both-parents effect (D28.2), so none (D25.3), and a smoking locus fades with age (row 80);
-  Wright 2019's AncestryDNA is untested (its one fathers' line in the window, rs4809300, 79 kb away, does not tag the
-  lead). FinnGen R11's death endpoint, outside UK Biobank, is genome-wide on T's side (C more deaths, P 5.9e-9), but a
+  only from Pilling's both-parents effect (D28.2), so none (D25.3);
+  Wright 2019's AncestryDNA is untested: its fathers' lines within 500 kb (rs2236194, 108 kb; rs4809300, 79 kb;
+  rs310672, 226 kb) have no CEU LD pair to the lead, and its main text does not name CHRNA4. FinnGen R11's death endpoint, outside UK Biobank, is genome-wide on T's side (C more deaths, P 5.9e-9), but a
   database release line never replicates (D12, D30.12): named. Within UK Biobank it co-occurs: Timmers 2019's parents
   (T longer, P 2.2e-7, "++"), Park 2025's own survival (T fewer deaths, P 5.5e-5, its allele columns swapped), and
-  Foote 2025's unhealthy-lifestyle frailty factor (T less frail, P 1.2e-10, multivariate, D27.3; its Q P 1.6e-7
-  says the lead's effects do not run through the factor alone, likely the smoking indicator), with T less frail in
+  Foote 2025's unhealthy-lifestyle frailty factor (T less frail, P 1.2e-10, multivariate, D27.3; the deposit's Q statistic at the lead,
+  P 1.6e-7, is stated without a reading), with T less frail in
   every readable factor (disability P 0.0057, multimorbidity 0.018). Lifespan + (the discovery, Timmers), healthspan +
   (Foote's genome-wide factor beside Timmers' co-occurring lifespan, D16, as 91; Zenin 2019 flat, P 0.88),
   exceptional survival 0 (Deelen against, flat; Pilling's top 10 % flat). It acts through smoking: the lead's other
-  associations are smoking's, with C raising cigarettes per day (P 3e-64), nicotine dependence (8e-9) and COPD (2e-9),
-  so T, the longer-lived allele, goes with less smoking and less COPD, and Pilling names it a nicotine-dependence locus.
-  Smoking runs with the lifespan effect here (unlike 95, D30.13): smoking_lungs, mech:smoking and context:smoking,
-  modifiable, act_behaviour:smoking (row 80's shape). No trade-off: no harm quoted on T's side.
+  associations are smoking's, with C raising cigarettes per day (P 3e-64; the lead at posterior 0.9999 in that set),
+  nicotine dependence (8e-9) and COPD (2e-9), so T, the longer-lived allele, goes with less smoking and less COPD;
+  Pilling names it a nicotine-dependence locus, and Hancock 2015, which found it, shows its lung-cancer association
+  gone after adjustment for smoking.
+  Smoking runs with the lifespan effect here (unlike 95, D30.13): smoking_lungs, mech:smoking (no
+  context:smoking: no smoking-stratified estimate is read), modifiable, act_behaviour:smoking (row 80's shape). No trade-off: no harm quoted on T's side.
   PROTECT:ABSENCE_OF_RISK: T is the common non-risk allele at a genome-wide COPD locus (D30.6). Causal C4 and effector
   E4, no gene named: no lifespan-class credible set holds the lead (Pilling's fathers' study has none here); Foote's
   unhealthy-lifestyle set does (posterior 0.83, locus-to-gene CHRNA4 0.93), but a multivariate set the tier does not
-  rest on sets no causal confidence (D17.2), and the splice acceptor sits in a nonsense-mediated-decay transcript, not
-  the canonical protein, so no coding call; CHRNA4 is named in prose. The rsID literature search (all six sources answered)
+  rest on sets no causal confidence (D17.2), and the splice acceptor sits in a nonsense-mediated-decay transcript (lowering CHRNA4 expression in
+  brain, Hancock 2015), not the canonical protein, so no coding call here; whether it meets §4.2's coding clause (E1
+  CHRNA4) is put to the lead. CHRNA4 is named in prose. The rsID literature search (all six sources answered)
   finds no other lifespan study of the lead: Hancock 2015 discovered it for nicotine dependence (a splice acceptor
   lowering CHRNA4 expression), the rest are smoking genetics and Mendelian randomisation. T/T, about 72 in 100 Europeans, is the reference (§6.2); C/T and C/C risk. Age of action unknown:
   Timmers' age bands do not include the lead. The evidence is European.
 axes:
   tier: {value: B, cites: [pmid-29227965#q98, pmid-29227965#q99, pmid-29227965#q100, pmid-29227965#q101, pmid-29227965#q102, pmid-29227965#q45, db-gwascatalog-2026.10.29#q494, pmid-30642433#q355, pmid-31413261#q240, pmid-31413261#q241, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, pmid-31484785#q149, db-finngen-r11#q73, pmid-30642433#q354, pmid-40021682#q101, pmid-40021682#q32]}
-  mechanism: {value: smoking_lungs, cites: [db-gwascatalog-2026.10.29#q528, db-gwascatalog-2026.10.29#q529, db-gwascatalog-2026.10.29#q530, db-gwascatalog-2026.10.29#q531, pmid-40759756#q37]}
-  pleiotropy: {values: ["mech:smoking", "context:smoking"], cites: [db-gwascatalog-2026.10.29#q528, db-gwascatalog-2026.10.29#q529]}
+  mechanism: {value: smoking_lungs, cites: [pmid-26440539#q2, pmid-29227965#q103, db-opentargets-26.09#q1120, db-gwascatalog-2026.10.29#q528, db-gwascatalog-2026.10.29#q529, db-gwascatalog-2026.10.29#q530, db-gwascatalog-2026.10.29#q531, pmid-40759756#q37]}
+  pleiotropy: {values: ["mech:smoking"], cites: [db-gwascatalog-2026.10.29#q528, db-gwascatalog-2026.10.29#q529]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
             cites: [pmid-40759756#q37, pmid-30729179#q137, pmid-29227965#q98, pmid-30642433#q354, pmid-29227965#q102, pmid-31413261#q240, pmid-31413261#q241]}
@@ -47,7 +50,7 @@ axes:
 flags:
   - {token: "PROTECT:ABSENCE_OF_RISK", cites: [db-gwascatalog-2026.10.29#q530, db-gwascatalog-2026.10.29#q531, db-ensembl-116#q712]}
   - {token: "causal:C4", cites: [db-opentargets-26.09#q1112, db-opentargets-26.09#q1114, db-opentargets-26.09#q1115]}
-  - {token: "effector:E4", cites: [db-opentargets-26.09#q1112, db-ensembl-116#q713]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q1112, db-ensembl-116#q713, pmid-26440539#q1]}
 variants:
   - rsid: rs2273500
     gene: ""
@@ -64,21 +67,21 @@ variants:
         conclusion: >-
           You carry two copies of the common version of this DNA position, as about 72 in 100 people of European
           ancestry do. It is the reference the other combinations are compared with. The position, on chromosome 20,
-          lies in CHRNA4, a gene for a nicotine receptor in the brain.
+          lies in CHRNA4, a gene for a nicotine receptor.
       - genotype: C/T
         state: risk
         conclusion: >-
           You carry one copy of a less common version of this DNA position (about 26 in 100 people of European
           ancestry do). It goes with smoking more cigarettes among smokers, with more chronic lung disease, and in a
           very large British study with fathers living a little shorter lives. No separate study has confirmed the
-          lifespan link. The effect works through smoking: not smoking removes most of it.
+          lifespan link. It seems to act through smoking; whether it matters in people who never smoke is not known.
       - genotype: C/C
         state: risk
         conclusion: >-
           You carry two copies of a less common version of this DNA position (about 2 in 100 people of European
           ancestry do). It goes with smoking more cigarettes among smokers, with more chronic lung disease, and in a
           very large British study each copy went with fathers living a little shorter lives. No separate study has
-          confirmed the lifespan link. The effect works through smoking: not smoking removes most of it.
+          confirmed the lifespan link. It seems to act through smoking; whether it matters in people who never smoke is not known.
 studies:
   - rsid: rs2273500
     note: pmid-29227965
@@ -156,7 +159,7 @@ studies:
     effect_unit: frailty factor 2 (unhealthy lifestyle) per T allele (negative = less frail)
     effect_allele: T
     direction: protective
-    statistical_test: "Genomic SEM GWAS of Foote 2025's latent frailty factor 2 (deposit GCST90624048, GRCh37, q37), SE 0.00227, Q P 1.6e-7; disability T -0.0091, P 0.0057 (q40); multimorbidity -0.0057, P 0.018 (q38); effects toward the frailty-raising side (q2); multivariate (D27.3), scoring beside the co-occurring lifespan study (D16)"
+    statistical_test: "Genomic SEM GWAS of Foote 2025's latent frailty factor 2 (deposit GCST90624048, GRCh37, q37), SE 0.00227, Q P 1.6e-7 (stated, not read); disability T -0.0091, P 0.0057 (q40); multimorbidity -0.0057, P 0.018 (q38); effects toward the frailty-raising side (q2); multivariate (D27.3), scoring beside the co-occurring lifespan study (D16)"
     curator: claude-opus-5-5
   - rsid: rs2273500
     note: pmid-31413261
