@@ -3,46 +3,43 @@
 # G/C, G ancestral and common (C 0.12 in non-Finnish Europeans, 0.28 in East Asians); G the longer-lived allele.
 locus_id: 94
 locus_name: CEP89
-verdict: kept
+verdict: re-tiered
 verdict_reason: >-
-  Tier C, the seed's: a suggestive longevity association never genome-wide, with `replication_failed`. Deelen 2019's
+  Tier D, from the seed's C (D30.11, the lead's call on this row): a suggestive longevity association never
+  genome-wide that fails a powered test, with no independent scoring-class study at p < 0.05 its way. Deelen 2019's
   trans-ethnic meta-analysis of the 90th percentile age against all controls (Table 4, every locus at P ≤ 1e-6) has C
-  lowering the odds, OR 0.87 (0.82–0.93), P 4.3e-7, heterogeneity P 0.19; the authors find no new genome-wide locus in
-  it besides APOE and IL6. The European deposit alone is as strong: C β −0.156 (SE 0.030), P 1.7e-7, effective N
-  11,615; the 99th percentile C −0.219, P 2.3e-6, its cases a subset of the 90th's, so confirming nothing. Suggestive,
-  §4.1's C; R-TIER-4 keeps a sub-genome-wide hit off A and B. Timmers 2019's parental lifespan (639,111 lives, UK
-  Biobank and LifeGen, some LifeGen cohorts among Deelen's, D19.1) leans G's way, C −0.0087 (SE 0.0060), P 0.15,
-  one-sided 0.074, not nominal. Against Deelen's European 90th effect carried to that scale (D21 under both of
-  D25.3's calibrations, row 45's arithmetic) it is powered and the two differ: APOE's factor 4.84 predicts +0.032 per
-  G, one-sided power 1.00, heterogeneity P 0.006; the loci's mean factor +0.077, power 1.00, P 2e-5. A red flag
-  under both, so `replication_failed`, as at 45. It is not D (D26.8): Pilling 2017's UK Biobank parents' attained age,
-  outside Deelen's samples, gives G longer at one-sided 0.038 (P 0.076), an independent scoring-class p < 0.05 in the
-  discovery's direction, D25.1's exception as read at 74. But those parents are also inside Timmers' meta-analysis,
-  the sample that fails (at 74 the passing samples sat outside the flagging one), so counting the passing part of a
-  failing whole is put to the lead (D26.11's one-look-not-the-other): C with `replication_failed` (default, written
-  here) or D with lifespan 0. FinnGen R11's death endpoint, independent of Deelen and UK Biobank, has no line at the
-  lead; its neighbour rs62127361 (r² 0.94 in CEU, D29.3) is flat, G a hair towards fewer deaths (P 0.90, one-sided
-  0.45), a flag under the mean factor only (power 1.00, heterogeneity P 1.7e-4) and not under APOE's (power 0.77, P
-  0.041), so no flag (D25.3, as 45). Flat elsewhere: Park 2025's own
-  survival (P 0.73, its allele columns swapped), Zenin 2019's healthspan (P 0.78), Foote 2025's five readable frailty
-  factors (P 0.086 to 0.56; the general and metabolic factors' deposits returned the header alone, unread). Wright 2019's nearest AncestryDNA line is a viability one, rs745961
-  (88 kb, r² 0.055 in CEU), which does not tag the lead and would only confirm (D23); no parental line within 500 kb.
-  Rosoff 2023's mvAge lead tables hold no line. The rsID literature search (Europe PMC, PubMed, OpenAlex, Crossref,
-  preprints; Semantic Scholar 429, its part unchecked) finds Deelen 2019 alone. Exceptional survival + (Deelen's
-  discovery); lifespan + (Pilling, one-sided 0.038, nominal, with Timmers leaning the same way); healthspan 0 (Zenin).
-  Mechanism general ageing: Open Targets holds the lead in five sets, all CEP89 expression or transcript QTLs
-  (posterior 0.07 to 0.14), and in no GWAS set, so nothing ties the longevity signal to a gene or a trait; CEP89 is
-  named in prose. Pleiotropy empty, descriptive. Causal C4 and effector E4, no gene: no lifespan-class set holds
-  the lead. G/G, about 77 in 100 Europeans, is the reference (§6.2); C/G and C/C carry the lower odds. No PROTECT
-  token: no disease is known at the locus (D30.6). Age of action unknown. The evidence is European: the
-  European deposit alone carries the signal (P 1.7e-7, stronger than the trans-ethnic 4.3e-7, although C is commoner
-  in East Asians, 0.28, so CLHLS's added cases weakened rather than built it), and every other test is European.
+  lowering the odds, OR 0.87 (0.82–0.93), P 4.3e-7; the authors find no new genome-wide locus in it besides APOE and
+  IL6. The European deposit alone is as strong: C β −0.156 (SE 0.030), P 1.7e-7; the 99th percentile C −0.219, P
+  2.3e-6, its cases a subset of the 90th's. Timmers 2019's parental lifespan (639,111 lives, UK Biobank and LifeGen,
+  some LifeGen cohorts among Deelen's, D19.1) leans G's way, C −0.0087 (SE 0.0060), P 0.15, one-sided 0.074. Against
+  Deelen's European effect carried to that scale (D21 under both of D25.3's calibrations, row 45's arithmetic) it is
+  powered and the two differ: APOE's factor 4.84 predicts +0.032 per G, power 1.00, heterogeneity P 0.006; the loci's
+  mean factor +0.077, power 1.00, P 2e-5. A red flag under both, so `replication_failed`. Pilling 2017's UK Biobank
+  parents' attained age gives G longer at one-sided 0.038 (P 0.076), but those parents sit inside Timmers, the sample
+  that fails, so they are part of the failure, not an independent pass (D30.11; at 74 the passing samples sat outside
+  the flagging one). FinnGen R11's death endpoint has no line at the lead; its neighbour rs62127361 (r² 0.94 in CEU,
+  D29.3) is flat (P 0.90, G a hair towards fewer deaths, one-sided 0.45). On the per-self scale (D30.12, twice the
+  per-parent expectation) it flags under both calibrations (power 1.00, heterogeneity P 6e-4 and 3e-6), stated; a
+  database line sets no D, and the row is D on Timmers. Flat elsewhere: Park 2025's own survival (P 0.73, its allele
+  columns swapped), Zenin 2019's healthspan (P 0.78), Foote 2025's five readable frailty factors (P 0.086 to 0.56;
+  the general and metabolic factors' deposits returned the header alone, unread). Wright 2019's nearest AncestryDNA
+  line is a viability one, rs745961 (88 kb, r² 0.055 in CEU), which does not tag the lead and would only confirm
+  (D23); no parental line within 500 kb. Rosoff 2023's mvAge lead tables hold no line. The rsID literature search
+  (Europe PMC, PubMed, OpenAlex, Crossref, preprints; Semantic Scholar 429, its part unchecked) finds Deelen 2019
+  alone. Outcome cells on a D row (D28.10): exceptional survival 0, the contradicted discovery giving no +; lifespan
+  0 (Pilling's pass is part of the failure); healthspan 0 (Zenin). Mechanism general ageing, as on every D row
+  (D25.7): Open Targets holds the lead in five sets, all CEP89 expression or transcript QTLs (posterior 0.07 to 0.14),
+  and in no GWAS set; CEP89 is named in prose. Pleiotropy empty, descriptive. Causal C4 and effector E4, no gene: no
+  lifespan-class set holds the lead. Every genotype neutral (D25.2); G/G, about 77 in 100 Europeans, the reference.
+  Age of action unknown. The evidence is European: the European deposit alone carries the signal (P 1.7e-7,
+  stronger than the trans-ethnic 4.3e-7, although C is commoner in East Asians, 0.28, so CLHLS's added cases
+  weakened rather than built it), and every other test is European.
 axes:
-  tier: {value: C, cites: [pmid-31413261#q231, pmid-31413261#q111, pmid-31413261#q112, pmid-31413261#q113, pmid-31413261#q114, pmid-31413261#q232, pmid-31413261#q233, pmid-30642433#q348, pmid-30642433#q92, pmid-31413261#q82, pmid-30642433#q90, pmid-29227965#q82, pmid-29227965#q45, pmid-40021682#q97, pmid-40021682#q32, pmid-30729179#q129, pmid-31484785#q141, db-ensembl-116#q692, db-finngen-r11#q69, db-ensembl-116#q693, db-gwascatalog-2026.10.29#q517]}
+  tier: {value: D, cites: [pmid-31413261#q231, pmid-31413261#q111, pmid-31413261#q112, pmid-31413261#q113, pmid-31413261#q114, pmid-31413261#q232, pmid-31413261#q233, pmid-30642433#q348, pmid-30642433#q92, pmid-31413261#q82, pmid-30642433#q90, pmid-29227965#q82, pmid-29227965#q45, pmid-40021682#q97, pmid-40021682#q32, pmid-30729179#q129, pmid-31484785#q141, db-ensembl-116#q692, db-finngen-r11#q69, db-ensembl-116#q693, db-gwascatalog-2026.10.29#q517]}
   mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q1072, db-opentargets-26.09#q1073, db-opentargets-26.09#q1074, db-ensembl-116#q691, db-ensembl-116#q694]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "+",
+  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
             cites: [pmid-30729179#q129, pmid-29227965#q82, pmid-29227965#q45, pmid-30642433#q348, pmid-31413261#q231, pmid-31413261#q232]}
   actionability: {label: descriptive, cites: [pmid-31413261#q231]}
   context: {values: [eur_only_evidence], cites: [pmid-31413261#q232, pmid-31413261#q231, pmid-31413261#q112, db-ensembl-116#q690]}
@@ -68,19 +65,19 @@ variants:
           ancestry do. It is the reference the other combinations are compared with. The position, on chromosome 19,
           lies within the CEP89 gene.
       - genotype: C/G
-        state: risk
+        state: neutral
         conclusion: >-
           You carry one copy of a less common version of this DNA position (about 21 in 100 people of European
-          ancestry do). In a large international study it was a little less common among people who lived to very old
-          ages. The finding fell short of the strictest statistical bar, and a much larger study of parents' lifespans
-          found a smaller effect than expected, so this is an uncertain finding: a slight tendency, not destiny.
+          ancestry do). In one large study of very old people (Deelen 2019) it was a little less common among those
+          who reached about 90, but not by enough to count as a firm finding, and a much larger study of parents'
+          lifespans did not support it at that size. It says nothing about your own lifespan.
       - genotype: C/C
-        state: risk
+        state: neutral
         conclusion: >-
           You carry two copies of a less common version of this DNA position (about 2 in 100 people of European
-          ancestry do). In a large international study each copy went with slightly lower odds of living to very old
-          ages. The finding fell short of the strictest statistical bar and a larger study found a smaller effect, so
-          this is an uncertain finding: a slight tendency, not destiny.
+          ancestry do). In one large study of very old people (Deelen 2019) it was a little less common among those
+          who reached about 90, but not by enough to count as a firm finding, and a much larger study of parents'
+          lifespans did not support it at that size. It says nothing about your own lifespan.
 studies:
   - rsid: rs62127362
     note: pmid-31413261
@@ -134,7 +131,7 @@ studies:
     effect_unit: BOLT-LMM β on both parents' attained age per G allele (positive = longer, printed as −0.0062 on Pilling's shorter-positive scale)
     effect_allele: G
     direction: protective
-    statistical_test: "Pilling 2017's both-parents attained-age deposit (GCST006697), G (0.883) −0.0062 (SE 0.0035), positive shorter (q45); one-sided 0.038 for G (derived), independent of Deelen (no UK Biobank there), D25.1's exception; inside Timmers' meta-analysis"
+    statistical_test: "Pilling 2017's both-parents attained-age deposit (GCST006697), G (0.883) −0.0062 (SE 0.0035), positive shorter (q45); one-sided 0.038 for G (derived); outside Deelen but inside Timmers' meta-analysis, the failing sample, so part of the failure, not an independent pass (D30.11)"
     curator: claude-opus-5-5
   - rsid: rs62127362
     note: pmid-30729179
