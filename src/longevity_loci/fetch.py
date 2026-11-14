@@ -60,12 +60,22 @@ class _Reply:
     detail: str = ""
 
 
+# A markup tag: a name after the bracket. A bare "<" in an abstract's text ("P<0.001 ... HR >1") is no tag, and a
+# looser pattern cut everything from it to the next ">" (Benn 2019's abstract, 2026-11-14).
+TAG = re.compile(r"</?[A-Za-z][\w:.-]*(?:\s[^<>]*)?/?>|<[?!][^>]*>")
+
+
+def strip_tags(text: str) -> str:
+    """Markup removed, entities decoded; a "<" or ">" that opens no tag kept."""
+    return html.unescape(TAG.sub("", text))
+
+
 def jats_to_text(xml: str) -> str:
     """JATS as plain text: a table cell ends in a tab, a row, paragraph, title or section in a line break."""
     xml = re.sub(r"<(ref-list|back)\b.*?</\1>", "", xml, flags=re.S)
     xml = re.sub(r"</(td|th)>", "\t", xml)
     xml = re.sub(r"</(tr|p|title|sec|caption|label)>", "\n", xml)
-    return html.unescape(re.sub(r"<[^>]+>", "", xml))
+    return strip_tags(xml)
 
 
 def _get(url: str, timeout: float, body: bytes | None = None) -> bytes:
@@ -120,7 +130,7 @@ def fetch(pmid: int, cache: Path, timeout: float = 60) -> Fetched:
                 text, source = body, Source.FULL_TEXT
         if text is None:
             log.info("%s: no full text from %s (%s); the abstract instead", key, pmcid, full.detail or "empty")
-    abstract = html.unescape(re.sub(r"<[^>]+>", "", hit.get("abstractText") or ""))
+    abstract = strip_tags(hit.get("abstractText") or "")
     if text is None and abstract.strip():
         text, source, url = abstract, Source.ABSTRACT, SEARCH.format(pmid=pmid)
     if text is None or source is None:

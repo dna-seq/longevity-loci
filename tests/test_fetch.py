@@ -16,7 +16,7 @@ from longevity_loci.fetch import Outcome, Source, fetch, jats_to_text
 
 PMID = 31413261
 HIT = {"pmcid": "PMC6694136", "isOpenAccess": "Y", "title": "A title.", "abstractText": "An <i>abstract</i> here."}
-JATS = "<article><body><p>Full text.</p><table><tr><td>rs1</td><td>0.6</td></tr></table></body><back>refs</back></article>"
+JATS = "<?xml version=\"1.0\"?><!DOCTYPE article><article><body><p>Full text.</p><table><tr><td>rs1</td><td>0.6</td></tr></table></body><back>refs</back></article>"
 
 
 def search(hits: list[dict]) -> bytes:
@@ -47,7 +47,7 @@ def test_full_text_written_with_its_sidecar(monkeypatch: pytest.MonkeyPatch, tmp
     got = fetch(PMID, tmp_path)
     assert (got.outcome, got.source) == (Outcome.FETCHED, Source.FULL_TEXT)
     text, side = cached(tmp_path)
-    assert text == jats_to_text(JATS) and "refs" not in text and "rs1\t0.6\t" in text
+    assert text == jats_to_text(JATS) and "refs" not in text and "DOCTYPE" not in text and "xml" not in text and "rs1\t0.6\t" in text
     assert side["sha256"] == hashlib.sha256(text.encode()).hexdigest() and side["source"] == "full_text"
     assert not list(tmp_path.glob("*.part"))
 
@@ -85,3 +85,11 @@ def test_search_answers(monkeypatch: pytest.MonkeyPatch, tmp_path: Path, answer:
     got = fetch(PMID, tmp_path)
     assert got.outcome is outcome and bool(got) is False
     assert list(tmp_path.iterdir()) == []
+
+
+def test_a_bare_angle_bracket_in_an_abstract_is_kept(monkeypatch: pytest.MonkeyPatch, tmp_path: Path) -> None:
+    """A "<" that opens no tag stays, and the text after it too (the old pattern cut from "<" to the next ">")."""
+    hit = dict(HIT, abstractText="Risk fell (P<0.001) in <i>carriers</i>; HR >1 elsewhere. <sup>a</sup>End.")
+    stub(monkeypatch, search([hit]), http(404))
+    fetch(PMID, tmp_path)
+    assert cached(tmp_path)[0] == "Risk fell (P<0.001) in carriers; HR >1 elsewhere. aEnd."
