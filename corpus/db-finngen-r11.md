@@ -513,6 +513,9 @@ For row 94.
 > [q70] 19 40835324 A G rs12461964 CTC-490E21.10,CTC-490E21.12 0.285696 0.544096 -0.00802801 0.0075196 0.547295 0.540404 0.548158
 
 FinnGen R11's death endpoint at rs12461964 (q70, row 95): alt G (0.54 in Finns) β −0.0080 (SE 0.0075), P 0.29: G with
-slightly fewer deaths, against A (one-sided 0.14 against A, derived). Its red flag against Pilling's fathers is
-unknown: no source converts the parental attained-age scale to FinnGen's death odds, and a release line only ever
-withholds A (D25.12, D28.1). For row 95.
+slightly fewer deaths, against A (one-sided 0.14 against A, derived). A sex-combined sample, so tested on
+Pilling's both-parents effect (D28.2), carried to Timmers' Figure 2 sheet by Pilling's own ratio (+0.0192 per A,
+SE 0.0051, pmid-30642433#q350): on that per-self scale one-sided power 0.82 and heterogeneity P 0.0028, a D21 flag;
+on the per-parent scale (half, +0.0096, the scale rows 45 and 94 compared FinnGen on) power 0.36, heterogeneity P
+0.026, no flag. Which scale an own-death endpoint compares on is put to the lead; a release line only ever withholds A
+(D25.12, D27.1). All derived. For row 95.

@@ -3912,3 +3912,18 @@ obstruction, lung-disease medication, lung cancer in siblings, squamous lung car
 lipid, fatty-acid and coffee sets. QTL colocalisations: two (q1093), both CYP2A6 splicing QTLs at H4 ≥ 0.8. So A,
 the longer-lived fathers' allele, goes with less lung disease, more cotinine and more years smoked, and lower LDL.
 For row 95.
+
+## Reading 2026-11-14, record
+
+> [q1094] data.credibleSet.colocalisation.rows[0] rightStudyType sqtl h4 0.8485514738354065 clpp 0.005189535153360986 betaRatioSignAverage 1 colocalisationMethod COLOC_PIP_ECAVIAR
+
+> [q1095] data.credibleSet.colocalisation.rows[0].otherStudyLocus.study.target approvedSymbol CYP2A6
+
+Row 95: the first of the fathers' set's two QTL colocalisations, a GTEx liver splicing QTL of CYP2A6
+(ENSG00000255974), H4 0.85 (q1094, q1095); the second, the same gene's liver transcript QTL, H4 0.88. All 124 GWAS
+colocalisations (q1080) read by category and by betaRatioSignAverage (relative to the set's β, which
+is +0.0085 per G in Open Targets' SuSiE-inf fit against the deposit's −0.0126 per A, the same direction, G shorter):
+lipids and fatty acids 73 (24 signed +1, 4 signed −1, 45 unsigned); lung disease and function 20 (11 signed +1,
+G's way with shorter life, 9 unsigned, none −1), among them respiratory failure, COPD, emphysema, chronic airway
+obstruction, pneumonia and lung cancers; smoking 4 (cotinine and years smoked −1, so A raises them; tobacco use
+disorder and smoking cessation unsigned); coffee 6, kidney function 6, other cancers 2, other 13. For row 95.

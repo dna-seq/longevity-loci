@@ -1,5 +1,5 @@
 # The seed list's locus 95, EGLN2 .. CYP2A6 (19q13.2). Curated 2026-11-14. Lead rs12461964, the seed's only rsID
-# (Pilling 2017's fathers-only SNP): intronic in EGLN2, 8 kb from CYP2A6, the nicotine-metabolising enzyme; GRCh38
+# (Pilling 2017's fathers-only SNP): intronic in EGLN2, 8 kb from CYP2A6; GRCh38
 # 19:40,835,324, GRCh37 19:41,341,229, A/G, A 0.507 in non-Finnish Europeans and the longer-lived fathers' allele.
 locus_id: 95
 locus_name: EGLN2 .. CYP2A6
@@ -16,38 +16,45 @@ verdict_reason: >-
   0.094, no flag (D21). Deelen 2019 leans A's way at both percentiles (90th one-sided 0.21, 99th 0.19); carried over
   by D25.3, it flags under APOE's factor (power 1.00, heterogeneity P 2.3e-4 from the fathers' effect, 0.025 from the
   both-parents form) and not under the loci's mean factor (power 0.83, P 0.10; 0.54, P 0.40), so no flag. FinnGen
-  R11's death endpoint leans against A (G with fewer deaths, P 0.29, one-sided 0.14 against); no source converts the
-  parental scale to it, so its flag is unknown, and a release line only ever withholds A (D25.12). Wright 2019's
+  R11's death endpoint, independent of both, leans against A (G with fewer deaths, P 0.29, one-sided 0.14 against).
+  Tested on Pilling's both-parents effect (D28.2) carried to Timmers' Figure 2 sheet by Pilling's own ratio (+0.0192
+  per A, a per-self scale), it is a D21 flag: power 0.82, heterogeneity P 0.0028; on the per-parent scale (half, the
+  scale rows 45 and 94 compared FinnGen on) power 0.36, P 0.026, no flag. Were it a flag, D25.1's letter would make
+  the row D (no independent p < 0.05 for A); but a database release line only ever withholds A (D25.12, D27.1), so B
+  is held, and which scale an own-death endpoint compares on, and whether a FinnGen flag can make D, are put to the
+  lead. Wright 2019's
   AncestryDNA is untested: its fathers' lines in the window (rs4001941, rs4609955, 85 to 92 kb away) do not tag the
   lead (r² 0.11 or no pair in CEU). Within UK Biobank the rest co-occurs: Timmers 2019's million parents' lives, A
   longer, P 0.0071, "++" (UK Biobank inside); Park 2025's own survival, A with fewer deaths, P 0.0084 (its allele
   columns swapped), the same participants. Lifespan + (the discovery, Timmers), exceptional survival 0 (Pilling's top
   10 % and 1 %, Deelen, flat), healthspan 0 (Zenin, P 0.73; Foote's four readable factors flat). The rsID literature
   search (all six sources answered) finds no other lifespan study of the lead: Hu 2022 uses it as an instrument for
-  paternal longevity, the rest are CYP2A6 pharmacology. It acts through smoking: Pilling's fathers' set (Open Targets
-  SuSiE-inf, the lead at posterior 0.545) colocalises (H4 0.94 to 0.999) with respiratory failure, chronic lung disease
-  including COPD, emphysema, chronic airway obstruction, lung-disease medication and lung cancer, all with G on the
-  shorter-lived side, and with cotinine in current smokers, years smoked and tobacco use disorder; the GWAS Catalog has
-  A lowering respiratory failure (P 2e-21) and chronic bronchitis (3e-15) and raising years smoked (1e-12). The
-  effect showing in fathers, of a generation of men who mostly smoked, fits. Mechanism smoking_lungs, as row 80, with
-  mech:smoking and context:smoking; modifiable, act_behaviour:smoking (D18.2's shape for a behaviour). No trade-off:
-  the longer-lived A lowers LDL and apolipoprotein B in the same colocalisations, and no disease is quoted on its
-  side. Causal C1: the lead's posterior 0.545 in the fathers' set. Effector E2 CYP2A6: two CYP2A6 splicing QTLs
+  paternal longevity, the rest are CYP2A6 pharmacology. Two routes, neither shown to carry it alone (D17.7, as row 29): mechanism general ageing, descriptive. Pilling's
+  fathers' set (Open Targets SuSiE-inf, the lead at posterior 0.545) colocalises (H4 0.75 to 0.999) with 124 GWAS
+  sets: 20 of lung disease and function (respiratory failure, COPD, emphysema, chronic airway obstruction, pneumonia,
+  lung cancers), 11 of them signed and all with G on the shorter-lived side, 9 unsigned; 73 of lipids and fatty acids
+  (24 signed with G, raising LDL and apolipoprotein B, 4 against, 45 unsigned); 4 of smoking, where A raises cotinine
+  and years smoked (GWAS Catalog P 1e-12); coffee, kidney function and other sets besides. The GWAS Catalog has A
+  lowering respiratory failure (P 2e-21) and chronic bronchitis (3e-15). The lung route may be smoking's (the
+  colocalising smoking sets, CYP2A6 the effector below), but the longer-lived A smokes for longer, which leaves `modifiable`
+  through smoking (row 80's label) unshown, and whether more years smoked makes A a trade-off (D18.1) is put to the
+  lead with the mechanism; LDL runs with A's longer life, no harm quoted on its side. Pleiotropy mech:smoking and
+  mech:lipids. Causal C1: the lead's posterior 0.545 in the fathers' set. Effector E2 CYP2A6: two CYP2A6 splicing QTLs
   colocalise with the set (H4 ≥ 0.8); the set has no locus-to-gene rows, so not E1; no rival gene colocalises (D24).
   A/G, about half of Europeans, is the reference (§6.2); A/A protective, G/G risk. No PROTECT token: A is at 0.51,
   neither the common non-risk allele nor a rare protective one. Age of action unknown. The evidence is European.
 axes:
-  tier: {value: B, cites: [pmid-29227965#q83, pmid-29227965#q84, pmid-29227965#q85, pmid-29227965#q86, pmid-29227965#q87, pmid-29227965#q45, db-gwascatalog-2026.10.29#q494, pmid-30642433#q350, pmid-31413261#q234, pmid-31413261#q235, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, db-finngen-r11#q70, pmid-31484785#q142, pmid-31484785#q143, db-ensembl-116#q699, pmid-30642433#q349, pmid-40021682#q98, pmid-40021682#q32]}
-  mechanism: {value: smoking_lungs, cites: [db-opentargets-26.09#q1077, db-opentargets-26.09#q1081, db-opentargets-26.09#q1082, db-opentargets-26.09#q1083, db-opentargets-26.09#q1084, db-opentargets-26.09#q1085, db-opentargets-26.09#q1086, db-opentargets-26.09#q1087, db-opentargets-26.09#q1088, db-opentargets-26.09#q1089, db-opentargets-26.09#q1090, db-gwascatalog-2026.10.29#q519, db-gwascatalog-2026.10.29#q520, db-gwascatalog-2026.10.29#q521]}
-  pleiotropy: {values: ["mech:smoking", "context:smoking"], cites: [db-opentargets-26.09#q1085, db-opentargets-26.09#q1086, db-opentargets-26.09#q1087, db-opentargets-26.09#q1088, db-gwascatalog-2026.10.29#q521]}
+  tier: {value: B, cites: [pmid-29227965#q83, pmid-29227965#q84, pmid-29227965#q85, pmid-29227965#q86, pmid-29227965#q87, pmid-29227965#q45, db-gwascatalog-2026.10.29#q494, pmid-30642433#q350, pmid-31413261#q234, pmid-31413261#q235, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, db-finngen-r11#q70, pmid-30642433#q350, pmid-31484785#q142, pmid-31484785#q143, db-ensembl-116#q699, pmid-30642433#q349, pmid-40021682#q98, pmid-40021682#q32]}
+  mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q1077, db-opentargets-26.09#q1081, db-opentargets-26.09#q1082, db-opentargets-26.09#q1083, db-opentargets-26.09#q1084, db-opentargets-26.09#q1085, db-opentargets-26.09#q1086, db-opentargets-26.09#q1087, db-opentargets-26.09#q1088, db-opentargets-26.09#q1089, db-opentargets-26.09#q1090, db-gwascatalog-2026.10.29#q519, db-gwascatalog-2026.10.29#q520, db-gwascatalog-2026.10.29#q521]}
+  pleiotropy: {values: ["mech:smoking", "mech:lipids"], cites: [db-opentargets-26.09#q1085, db-opentargets-26.09#q1086, db-opentargets-26.09#q1087, db-opentargets-26.09#q1088, db-gwascatalog-2026.10.29#q521, db-opentargets-26.09#q1091, db-opentargets-26.09#q1092, db-opentargets-26.09#q1094]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "0",
             cites: [pmid-29227965#q83, pmid-29227965#q84, pmid-30642433#q349, pmid-29227965#q87, pmid-31413261#q234, pmid-31413261#q235, pmid-30729179#q130]}
-  actionability: {label: modifiable, what: ["act_behaviour:smoking"], who: "act_who:self", cites: [db-opentargets-26.09#q1087, db-opentargets-26.09#q1088, db-gwascatalog-2026.10.29#q521]}
+  actionability: {label: descriptive, cites: [db-opentargets-26.09#q1087, db-opentargets-26.09#q1088, db-gwascatalog-2026.10.29#q521]}
   context: {values: ["sex_specific:m", eur_only_evidence], cites: [pmid-29227965#q84, pmid-29227965#q85, pmid-29227965#q83]}
 flags:
   - {token: "causal:C1", cites: [db-opentargets-26.09#q1077, db-opentargets-26.09#q1078, db-opentargets-26.09#q1079]}
-  - {token: "effector:E2", cites: [db-opentargets-26.09#q1093]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q1093, db-opentargets-26.09#q1094, db-opentargets-26.09#q1095]}
 variants:
   - rsid: rs12461964
     gene: CYP2A6
@@ -64,21 +71,21 @@ variants:
         conclusion: >-
           You carry one copy of each version of this DNA position, as about half of people of European ancestry do.
           It is the reference the other combinations are compared with. The position, on chromosome 19, lies next to
-          CYP2A6, the gene for the liver enzyme that breaks down nicotine.
+          CYP2A6, a gene for a liver enzyme.
       - genotype: A/A
         state: protective
         conclusion: >-
           You carry two copies of the A version of this DNA position (about 1 in 4 people of European ancestry do).
           In a very large British study the fathers of people with A lived a little longer, and A goes with less
-          chronic lung disease, likely through how the body handles nicotine and smoking. No separate study has
-          confirmed the lifespan link. Not smoking matters far more than this position.
+          chronic lung disease. No separate study has confirmed the lifespan link, and the effect is small: not
+          smoking matters far more than this position.
       - genotype: G/G
         state: risk
         conclusion: >-
           You carry two copies of the G version of this DNA position (about 1 in 4 people of European ancestry do).
           In a very large British study the fathers of people with G lived a little shorter lives, and G goes with
-          more chronic lung disease, likely through how the body handles nicotine and smoking. No separate study has
-          confirmed the lifespan link, and not smoking matters far more than this position.
+          more chronic lung disease. No separate study has confirmed the lifespan link, and the effect is small: not
+          smoking matters far more than this position.
 studies:
   - rsid: rs12461964
     note: pmid-29227965
@@ -99,7 +106,7 @@ studies:
     effect_unit: Martingale residual of fathers' attained age per A allele (negative = reduced hazard, longer life)
     effect_allele: A
     direction: protective
-    statistical_test: "BOLT-LMM on Martingale residuals of fathers' attained age (Table 3, 'Loci only emerging in fathers' analysis', q83; sign convention q45); deposit GCST006701 (q84; N 415,311, db-gwascatalog-2026.10.29#q494); both parents 1.8E-04 (q86), mothers 0.48 (q85: A -0.0016, SE 0.0022; fathers against mothers heterogeneity P 3.6e-4, derived)"
+    statistical_test: "BOLT-LMM on Martingale residuals of fathers' attained age (Table 2, 'Loci only emerging in fathers' analysis', q83; sign convention q45); deposit GCST006701 (q84; N 415,311, db-gwascatalog-2026.10.29#q494); both parents 1.8E-04 (q86), mothers 0.48 (q85: A -0.0016, SE 0.0022; fathers against mothers heterogeneity P 3.6e-4, derived)"
     curator: claude-opus-5-5
   - rsid: rs12461964
     note: pmid-30642433
