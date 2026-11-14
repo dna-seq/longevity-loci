@@ -29,8 +29,9 @@ First work:
 - Watch: PPR1366192 (cognitive superagers' exome, rare HLA-B and HLA-DRB1 missense, no variant named): look for its
   full text or a published version on the next E run.
 
-- Open, unattended: track E's own unpublished preprints (Sasaki, Putter, Salazar, Hamilton, Kornilov and the others in
-  its evidence CSV) not yet checked for a published version since 2026-11-03.
+- Track E's preprints checked for a published version 2026-11-14 (SEARCHES, Track E): Chang's is PMID 42987714
+  (somatic, no locus); the other twelve unpublished. Check again with the next E run; Alvarez Sirvent 2026 (v2) and
+  Salazar (v3) have newer versions, unread.
 - Open, unattended: bioRxiv's and medRxiv's own listings, left out of both E runs (Europe PMC's preprint index stood
   in). The GWAS Catalog is queried now: v2 only (v1 answers 410), `/studies` by EFO id, pages of at most 500.
 - Open: pmid-42928374's full text, to settle which biomarker FURIN's variant is shared with. Batch fetches go to the

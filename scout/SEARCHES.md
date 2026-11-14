@@ -92,6 +92,17 @@ the phenotype is cognition, no single-variant or burden test was exome-wide sign
 variant: noted for the next run, not queued) and PPR1362460 (rhesus macaques; out of scope). No new locus in the
 sources queried.
 
+**Track E's preprints, checked for a published version 2026-11-14** (the 13 rows of the evidence CSV with no PMID;
+the CSV's own status reads "unpublished as of 2026-11-03"). Each was checked three ways: Crossref's relation fields
+(is-preprint-of, has-version), the bioRxiv/medRxiv API's `published` field, and a Europe PMC title search outside
+preprints (`TITLE:(first 12 words) NOT SRC:PPR`). One is published: Chang's clonal-haematopoiesis mortality preprint
+(doi 10.64898/2026.05.28.26354392) is PMID 42987714, *JACC Adv* 2026 Nov 5, doi 10.1016/j.jacadv.2026.103440,
+PMC13761253 (title checked against PubMed), found by Europe PMC only; medRxiv still says NA. It is somatic, so no seed
+locus. The other twelve show no published version by any of the three (Sasaki's Research Square preprint was checked
+by Crossref and Europe PMC only, since the bioRxiv API does not cover Research Square). Two have newer versions than
+the CSV may have read: Alvarez Sirvent 2026 (HLA-II fine-mapping) is at v2 and Salazar (TMEM106B) at v3, per the
+medRxiv API; neither version was read here.
+
 ## Track A: LongevityMap, HAGR, the v1 audit
 
 First swept 2026-11-13. Queries, all PubMed by entry date:
