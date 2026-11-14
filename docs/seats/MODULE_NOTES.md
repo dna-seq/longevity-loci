@@ -68,6 +68,10 @@ export (the lead starts it today, to 0.8's studies/variants shape per `docs/FORM
   its reload, so the batch-ten rehearsal is the first on 0.8.6. Watch for it: 96 APOE is curated last, after D2 (APOE
   as a diplotype inside v2, its proxies ld_proxy_of under it). A diplotype is a shape the export has not projected:
   when D2 lands, ask the tool how 0.8 carries a two-SNP haplotype (describe_table) before the row reaches an export.
+- **Batch ten rehearsed, 2026-11-14:** rows through 99 after the lead's read and the curator's corrections (trunk
+  571e5b1), the first on just-dna 0.8.6: export, enrich, strict compile green (93 loci, 279 variant rows, 465 studies,
+  fully resolved, 264 of 264 VRS alleles identified, warnings unchanged). The polygon's 2.0.0 replaced (18:26 UTC),
+  content_signature equal to ours; the server still compiles with compiler 0.8.4. Receipt appended by hand.
 - Plugin caches moved to the data volume (`remember_setting JUST_DNA_PIPELINES_CACHE_DIR`, user config, not the
   repo): `$HOME` is the small volume and Ensembl's lane is about 15 GB. Ensembl lane present 2026-11-12: ensembl-variation-2026_07_13-vep116.0, 14.5 GB (du shows 7.6 GB on BeeGFS).
 
