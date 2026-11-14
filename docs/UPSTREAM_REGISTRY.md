@@ -12,7 +12,7 @@ file): `[seat.liaison.watch.registry]` says each new tag.
 
 ## Read mark
 
-**`v0.31.0`** (2026-11-13), read whole (below); `v0.30.1` the same day. Before it, **`v0.30.0`** (2026-11-12): the release the module seat first ran against, its first rehearsal on the polygon
+**`v0.31.1`** (2026-11-13, seen 2026-11-14), read whole (below); `v0.31.0` and `v0.30.1` the same day. Before it, **`v0.30.0`** (2026-11-12): the release the module seat first ran against, its first rehearsal on the polygon
 (`test-longevity-loci/longevitymap@2.0.0`, our 0fa5e77; strict validate and compile green). Tags before it are
 fast-forwarded past, read only by their changelog headings as listed below; nothing here used them.
 
@@ -39,6 +39,8 @@ re-rehearsed once per curation batch.
 
 ## Inbound verdicts
 
+- **`v0.31.1`** (2026-11-13). The operator's `registry upgrade` re-derives and publishes in one pass (a held
+  result kept for `--accept-drift`), and Ctrl-C names what still runs. Client surface unchanged; nothing we call.
 - **`v0.31.0`** (2026-11-13). Additive: client surface unchanged, three new calls (`variant_claims`,
   `gene_claims`, `list_modules(pgs_id=)`); server floors the trio at 0.8.6, a patch that moves nothing a caller
   reads (ours stays 0.8.5 with the plugin's server, `docs/UPSTREAM_COMPILER.md`). *A lever for the lead and the
