@@ -2021,3 +2021,20 @@ risk frequency of 0.03, the rare allele's, so G by frequency (derived); flucloxa
 
 rs2860197 (row 134): no catalog association under this rsID (q554); the breast cancer and healthspan records sit in
 Open Targets' sets (db-opentargets-26.09#q1147). For row 134.
+
+## Reading 2026-11-14, record
+
+> [q555] page size 200 totalElements 4 totalPages 1 number 0
+
+rs3135388 (row 135): four associations (q555): multiple sclerosis (two), oligoclonal bands in multiple sclerosis, and a
+protein ratio; none for lifespan. For row 135.
+
+## Reading 2026-11-14, record
+
+> [q556] _embedded.associations[2] association_id 13359 risk_frequency 0.22 pvalue_description pvalue_mantissa 4 pvalue_exponent -225 multi_snp_haplotype false snp_interaction false range [2.46-3.07] or_per_copy_num 2.75 or_value 2.75 beta - p_value 4e-225 accession_id GCST000424 pubmed_id 19525953 first_author De Jager PL ci_lower 2.46 ci_upper 3.07
+
+> [q557] _embedded.associations[2].snp_effect_allele[0] rs3135388-A
+
+rs3135388 (row 135): multiple sclerosis, A the risk allele, OR 2.75 per copy, P 4e-225 (q556-q557; and OR 1.99, P
+9e-81): G, the longer-lived allele of the discovery, is multiple sclerosis's non-risk allele, genome-wide (D30.6). For
+row 135.

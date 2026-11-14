@@ -4160,3 +4160,14 @@ paragraphs read them as the queried lead's; corrected here). The queried lead's 
 −0.042) and cancer (−0.011) and raises atrial fibrillation (+0.0058, P 9.2e-15 at the lead); most breast cancer sets
 print no β for it. The healthspan set (GCST007406) colocalises with one QTL (q1164): a transcript-usage QTL of WDR11,
 H4 0.99 (q1165), not FGFR2, which locus-to-gene names (0.89): effector ambiguous, E3. For rows 108 and 134.
+
+## Reading 2026-11-14, record
+
+> [q1166] data variant null
+
+> [q1167] data variant null
+
+> [q1168] data.credibleSets count 0
+
+rs3135388 (row 135): Open Targets 26.09 has no record under either allele order (q1166, q1167); no lifespan-class set
+holds it (q1168): C4/E4. For row 135.

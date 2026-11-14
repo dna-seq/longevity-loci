@@ -2684,3 +2684,22 @@ among them. For row 134.
 Row 134, Wright's lines beyond the lead's 500 kb LD window's reach (Ensembl's window is centred, so about 250 kb each
 side): rs2243609 (477 kb) r² 0.09 in CEU (q744); the pair records for rs10886895, rs9630106, rs7903175, rs2461221, rs10788233, rs7070463 hold no CEU line (below
 Ensembl's reporting floor; the cached `ldpair-rs2860197-*`). None tags the lead. For row 134.
+
+## Reading 2026-11-14, record
+
+> [q745] mappings[0] seq_region_name 6 assembly_name GRCh38 ancestral_allele G coord_system chromosome strand 1 end 32445274 allele_string A/C/G/T location 6:32445274-32445274 start 32445274
+
+> [q746] populations[9] frequency 0.1391 allele A population gnomADg:nfe allele_count 9456
+
+> [q747] [1] population_name 1000GENOMES:phase_3:CEU d_prime 0.999999 variation2 rs1049053 r2 0.501204 variation1 rs3135388
+
+rs3135388 (row 135): GRCh38 6:32,445,274, A/C/G/T (q745); A 0.139 in gnomAD's non-Finnish Europeans (q746). To row
+103's lead rs1049053: r² 0.50, D′ 1.00 in CEU (q747); to row 38's lead rs34967069 Ensembl returns no CEU pair. For row
+135.
+
+## Reading 2026-11-15, record
+
+> [q748] [392] d_prime 1.000000 variation1 rs3135388 variation2 rs9271423 population_name 1000GENOMES:phase_3:CEU r2 1.000000
+
+rs9271423 to rs3135388 (row 135): r² 1.00, D′ 1.00 in CEU (q748), the proxy at which Foote's deposits are read
+(pmid-40759756#q64-q67). For row 135.

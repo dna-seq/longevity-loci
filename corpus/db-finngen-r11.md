@@ -593,3 +593,10 @@ FinnGen R11's death endpoint at rs2395029 (q79, row 130; pval, mlogp, beta, sebe
 
 FinnGen R11's death endpoint at rs2860197 (q80, row 134): alt A (0.58 in Finns) −0.0021 (SE 0.0075), P 0.78: A with
 fewer deaths, flat. For row 134.
+
+## Reading 2026-11-14, supplement
+
+> [q81] 6 32445274 A G rs3135388 HLA-DRA 0.117904 0.92847 0.0167173 0.0106913 0.8613 0.861337 0.861295
+
+FinnGen R11's death endpoint at rs3135388 (row 135): ref A, alt G (0.86 in Finns) +0.0167 (SE 0.0107), P 0.12: G with
+more deaths, A fewer, against the discovery's side, flat; a database line. For row 135.
