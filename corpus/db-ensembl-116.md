@@ -2731,3 +2731,19 @@ Table 9 mothers' meta lines (rs12021529, rs2038089, rs2038090, rs212549), none a
 
 rs2758603 (row 9): GRCh38 1:156,229,203, T/C, C ancestral (q752); C 0.36 in gnomAD's non-Finnish Europeans (q753). To
 Wright's rs3738581: r² 0.15 in CEU (q754). For row 9.
+
+## Reading 2026-11-15, record
+
+> [q755] [0] variation1 rs11591147 r2 0.378583 variation2 rs191448950 d_prime 0.896606 population_name 1000GENOMES:phase_3:EUR
+
+rs11591147 (row 3, PCSK9 R46L), 1000 Genomes phase 3 EUR, the window at r² 0.1 (about ±250 kb): ten neighbours, the
+highest rs191448950 at r² 0.38 (q755); none of them is Timmers' rs142791622, Pilling's rs72909541, or Wright's
+rs11206517 or rs17111652, so each sits below r² 0.1 in EUR or outside the panel. Wright's rs17112249, 471 kb away,
+lies beyond the window and Ensembl prints no EUR pair for it. For row 3.
+
+## Reading 2026-11-15, record
+
+> [q756] [0] population_name 1000GENOMES:phase_3:CEU d_prime 0.930426 variation2 rs6757542 r2 0.837096 variation1 rs10211471
+
+rs10211471 to rs6757542 (row 101), 1000 Genomes phase 3 CEU: r² 0.84, D′ 0.93 (q756), the value the row cites in
+place of Timmers' Figure 4 R2 column (D31.2). For row 101.

@@ -14,18 +14,19 @@ verdict_reason: >-
   life, +0.048 per copy in self (SE 0.015), P 0.0019, the same side in UK Biobank and LifeGen; in Pilling 2017's
   UK Biobank parents T goes with longer attained age (both parents P 0.035, fathers 0.0027, mothers flat at 0.78) and
   raises the chance of both parents reaching the top 10 % of survival (P 0.036); in Zenin 2019 T delays the end of
-  healthspan (P 0.0039). All of these are UK Biobank or hold it. Nothing in the window is suggestive: Timmers'
-  strongest line within 500 kb is rs142791622, 11 kb away (P 4.4e-5), and Pilling's fathers' rs72909541 (1.3e-5), neither
-  able by frequency to tag R46L above r² 0.64 and 0.34. Outside UK Biobank the variant is untested at power:
+  healthspan (P 0.0039). All of these are UK Biobank or hold it. Nothing scanned is suggestive: Timmers'
+  strongest line within 500 kb is rs142791622, 11 kb away (P 4.4e-5), Pilling's fathers' strongest within 100 kb
+  rs72909541 (1.3e-5), and Zenin was read at the lead only; in Ensembl's EUR window at r² 0.1 neither is among R46L's ten
+  neighbours (the highest rs191448950, 0.38), so neither tags it. Outside UK Biobank the variant is untested at power:
   Deelen 2019's 90th percentile leans T's way (P 0.17, one-sided 0.087; 99th flat, P 0.92), with one-sided power 0.67
   under APOE's calibration factor and 0.22 under the loci's mean factor, heterogeneity P 0.54 and 0.64; FinnGen R11's
   death endpoint leans T's way (P 0.64, power 0.77, heterogeneity P 0.13), a database line; Park 2025's own survival T
   with fewer deaths (P 0.13, its allele columns swapped), the same biobank. Wright 2019's AncestryDNA tables hold nine
-  lines within 500 kb, none able to tag the variant: by their frequencies none but one reaches r² 0.5 with R46L's T
-  (the nearest, rs11206517 at 21 kb, at most 0.43; rs17111652's CEU r² 0.07), and that one, rs17112249 at 471 kb, is a
-  Table 9 line, named, not counted (D29.18). So AncestryDNA is untested; Foote 2025's frailty deposits are unread at
-  it (the windows read back held no line at the lead, but two deposits read back incomplete or empty, so absence is
-  not shown). Nothing contradicts: D's clauses do not fit, and C keeps the variant in the research view with no weight.
+  lines within 500 kb, none able to tag the variant: none is among R46L's EUR neighbours at r² 0.1 (rs11206517 at 21 kb,
+  rs17111652 among them), and rs17112249 at 471 kb, beyond the window with no EUR pair in Ensembl, is a Table 9 line set
+  aside under D30.1. So AncestryDNA is untested; Foote 2025 is untested at it: no deposit carries
+  R46L; the general factor and F2, F3, F5 and F6 cover the position with no line at it, and F4 has a gap there (chr1
+  53,723,495 to 57,783,448), D31.4. Nothing contradicts: D's clauses do not fit, and C keeps the variant in the research view with no weight.
   Genetic studies of PCSK9 bear on it as annotation, none a per-allele R46L survival result in a general population.
   Rosoff 2023's drug-target MR finds genetically proxied PCSK9 inhibition beneficial for its multivariate ageing factor
   (P 1.6e-6, 20 cis instruments). Benn 2019's allele score of four PCSK9 variants, R46L among them, in 109,566 Danes,
@@ -47,12 +48,11 @@ verdict_reason: >-
   diabetes factor (P 8e-11) states no allele. Causal C4: no lifespan-class credible set holds it (D17.2). Effector E1
   PCSK9: the variant is missense in PCSK9 (Arg46Leu), and every lipid set read names PCSK9 by locus-to-gene (0.94 in
   the first; 200 of the 1,659 sets were read, none of them lifespan-class). The protection is a presence, the rare T. Descriptive: §4.2 gives a trade-off locus no actionability label, as
-  rows 8, 57 and 71. Not a
-  treatment indication (R-VOICE-4): a standard cholesterol test shows the actual LDL level. Age of action unknown:
+  rows 8, 57 and 71; no LDL-test sentence on a descriptive row (D31.9). Age of action unknown:
   Timmers' age bands do not include the variant, and the requirements' MIDLIFE was inferred from coronary risk. The
   evidence is European.
 axes:
-  tier: {value: C, cites: [pmid-30642433#q362, pmid-29227965#q108, pmid-29227965#q110, pmid-29227965#q111, pmid-30729179#q141, pmid-31413261#q244, pmid-31413261#q245, db-finngen-r11#q77, pmid-40021682#q104, pmid-40021682#q32, db-ensembl-116#q730, db-opentargets-26.09#q1129, pmid-37550455#q79, pmid-37550455#q80, pmid-31221259#q1, pmid-31221259#q2, pmid-31221259#q3, pmid-27908689#q2, pmid-30642433#q363, pmid-29227965#q112, pmid-31484785#q152, pmid-30642433#q364, pmid-40335923#q2, pmid-30473376#q1, pmid-34341098#q1, pmid-34341098#q2, pmid-34341098#q3, db-gwascatalog-2026.10.29#q535]}
+  tier: {value: C, cites: [pmid-30642433#q362, pmid-29227965#q108, pmid-29227965#q110, pmid-29227965#q111, pmid-30729179#q141, pmid-31413261#q244, pmid-31413261#q245, db-finngen-r11#q77, pmid-40021682#q104, pmid-40021682#q32, db-ensembl-116#q730, db-ensembl-116#q755, db-opentargets-26.09#q1129, pmid-37550455#q79, pmid-37550455#q80, pmid-31221259#q1, pmid-31221259#q2, pmid-31221259#q3, pmid-27908689#q2, pmid-30642433#q363, pmid-29227965#q112, pmid-31484785#q152, pmid-30642433#q364, pmid-40335923#q2, pmid-30473376#q1, pmid-34341098#q1, pmid-34341098#q2, pmid-34341098#q3, db-gwascatalog-2026.10.29#q535]}
   mechanism: {value: heart_vessels, cites: [pmid-40335923#q1, db-gwascatalog-2026.10.29#q536, db-gwascatalog-2026.10.29#q537, db-gwascatalog-2026.10.29#q538, pmid-34341098#q1]}
   pleiotropy: {values: ["tradeoff", "mr:drug_target_proxy", "mech:cvd", "mech:lipids", "mech:diabetes"],
                cites: [pmid-27908689#q1, pmid-27908689#q3, pmid-27908689#q4, pmid-37550455#q79, pmid-37550455#q80, pmid-31221259#q2, db-gwascatalog-2026.10.29#q536, db-gwascatalog-2026.10.29#q538, db-gwascatalog-2026.10.29#q539, db-gwascatalog-2026.10.29#q540]}
@@ -69,7 +69,7 @@ flags:
 variants:
   - rsid: rs11591147
     gene: PCSK9
-    phenotype: PCSK9 R46L, LDL cholesterol
+    phenotype: PCSK9 R46L, longevity
     trait_efo_id: EFO_0007796
     effect_allele: T
     effect_size: 0.04771378
@@ -85,9 +85,7 @@ variants:
         conclusion: >-
           You carry two copies of the common version of this DNA position, in the PCSK9 gene, as about 97 in 100
           people of European ancestry do. PCSK9 controls how much LDL cholesterol, the "bad" cholesterol, the liver
-          clears from the blood. This is the reference the other combinations are compared with. A standard
-          cholesterol test your doctor can order shows your actual LDL level, which matters far more than this DNA
-          result. The finding comes from people of European ancestry; less is known elsewhere.
+          clears from the blood. This is the reference the other combinations are compared with. The finding comes from people of European ancestry; less is known elsewhere.
       - genotype: G/T
         state: protective
         conclusion: >-
@@ -95,9 +93,7 @@ variants:
           that makes the protein work less and lowers LDL cholesterol, the "bad" cholesterol, by about a tenth. In
           large studies it went with less heart disease and, weakly, with parents who lived a little longer, and
           with a slightly higher chance of type 2 diabetes. This is
-          early evidence, not a settled finding, and the difference is small: a tendency, not destiny. A standard
-          cholesterol test your doctor can order shows your actual LDL level, which matters far more than this DNA
-          result. It says nothing about whether any medicine is right for you.
+          early evidence, not a settled finding, and the difference is small: a tendency, not destiny. It says nothing about whether any medicine is right for you.
       - genotype: T/T
         state: protective
         conclusion: >-
@@ -105,8 +101,7 @@ variants:
           do) that makes the protein work less and lowers LDL cholesterol, the "bad" cholesterol, by about a fifth.
           In large studies each copy went with less heart disease and, weakly, with parents who lived a little
           longer, and with a slightly higher chance of type 2 diabetes; too few people carry two copies to say more. This is early evidence, not a settled finding: a
-          tendency, not destiny. A standard cholesterol test your doctor can order shows your actual LDL level,
-          which matters far more than this DNA result. It says nothing about whether any medicine is right for you.
+          tendency, not destiny. It says nothing about whether any medicine is right for you.
 studies:
   - rsid: rs11591147
     note: pmid-30642433
