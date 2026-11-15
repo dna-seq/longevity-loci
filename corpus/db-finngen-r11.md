@@ -714,5 +714,5 @@ rs429358's C (ε4) β +0.105, P 1.3e-27, more deaths (q4). A database line (D29.
 FinnGen R11's DEATH endpoint at rs189871470 (q97): A at 0.048 % (cases 0.061 %, controls 0.047 %), β +0.043 (SE
 0.161), P 0.79, flat. A database line (D29.1). Carried by Kolbe's own ε4 line (OR 0.45, pmid-40232348#q26) against
 FinnGen's ε4 β 0.105 (q4), an APOE-only calibration (derived, approximate): Kolbe's OR 16.5 would expect β −0.37,
-power 0.74, heterogeneity P 0.011; the reference-read OR 6.6 expects −0.25, power 0.46. Below D21's power, and an
+power 0.74, heterogeneity P 0.039 counting the discovery's own error (log OR 2.80, SE 0.90 from 7 and 1 copies); the reference-read OR 6.6 expects −0.25, power 0.46. Below D21's power, and an
 APOE-only calibration sets no flag (D31.12). For row 124.

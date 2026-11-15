@@ -3125,5 +3125,12 @@ Row 124, rs189871470. VEP on RPS6's MANE Select transcript (ENST00000380394, NM_
 non-Finnish European exomes 0.0427 % (475 copies, q852) and genomes 0.0544 % (37 copies, q853); gnomAD's
 Ashkenazi exomes show only G (q854). Against the exomes the younger controls expect 3.5 copies and show 1
 (Poisson P 0.135; genomes 4.5 expected, P 0.063), so they fit; the long-lived show 7 where 1.1 are expected (P
-1.2e-4; OR against the exomes 6.6, P 7e-7), derived. The Leiden look-up (179 long-lived, 98 controls) expects 0.15
+1.2e-4, exact Poisson), derived. The Leiden look-up (179 long-lived, 98 controls) expects 0.15
 and 0.08 copies: absence there says nothing. For row 124.
+
+## Reading 2026-11-15, record
+
+> [q855] populations[24] frequency 0.096 population gnomADg:nfe allele T allele_count 6529
+
+rs10114375 (Wright's nearby line for row 124): T at 9.6 % in gnomAD's non-Finnish European genomes (q855); with
+rs189871470's A at 0.043 % the r² between them is at most about 0.004 (derived). For row 124.
