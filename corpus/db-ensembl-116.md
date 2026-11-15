@@ -3134,3 +3134,30 @@ and 0.08 copies: absence there says nothing. For row 124.
 
 rs10114375 (Wright's nearby line for row 124): T at 9.6 % in gnomAD's non-Finnish European genomes (q855); with
 rs189871470's A at 0.043 % the r² between them is at most about 0.004 (derived). For row 124.
+
+## Reading 2026-11-15, record
+
+> [q856] [0].transcript_consequences[4].consequence_terms[0] 5_prime_UTR_variant
+
+> [q857] [0].transcript_consequences[4] canonical 1 impact MODIFIER hgnc_id HGNC:30143 mane_select NM_001282275.2 strand 1 variant_allele GG biotype protein_coding transcript_id ENST00000422730 gene_id ENSG00000229637 cdna_end 163 cdna_start 163 gene_symbol_source HGNC gene_symbol PRAC2
+
+> [q858] [0].transcript_consequences[6].consequence_terms[0] frameshift_variant
+
+> [q859] [0].transcript_consequences[6] protein_start 34 impact HIGH hgnc_id HGNC:30143 amino_acids C/WX cds_start 101 strand 1 cds_end 101 biotype protein_coding variant_allele GG gene_id ENSG00000229637 transcript_id ENST00000432056 codons tGt/tGGt cdna_start 121 protein_end 34 cdna_end 121 gene_symbol_source HGNC gene_symbol PRAC2
+
+> [q860] mappings[0] ancestral_allele G allele_string G/GG/GGG strand 1 assembly_name GRCh38 end 48724361 coord_system chromosome start 48724361 seq_region_name 17 location 17:48724361-48724361
+
+> [q861] mappings[0] coord_system chromosome ancestral_allele G seq_region_name 17 assembly_name GRCh37 strand 1 allele_string G/GG/GGG end 46801723 start 46801723 location 17:46801723-46801723
+
+> [q862] populations[19] frequency 0.0004731 allele GG population gnomADe:nfe allele_count 435
+
+> [q863] populations[30] frequency 0.0005734 allele GG population gnomADg:nfe allele_count 39
+
+Row 125, rs199607933: Ensembl normalises the insertion one base to the right, G/GG at GRCh38 17:48,724,361 (q860;
+GRCh37 17:46,801,723, q861), the same event as Kolbe's T/TG. On PRAC2's MANE Select transcript (ENST00000422730,
+NM_001282275.2) it is a 5′ UTR variant (q856, q857); only on another PRAC2 transcript, ENST00000432056, is it a
+frameshift, cysteine 34 to tryptophan and a stop (q858, q859). HOXB13 lies 402 bases away (the same file). GG in
+gnomAD's non-Finnish European exomes 0.0473 % (435 copies, q862) and genomes 0.0573 % (39, q863). Against the
+exomes, the reference D31.13 fixes for an exome study, the younger controls expect 3.9 copies and show none (P 0.021;
+the genomes 4.7 and P 0.009, or 0.012 counting the reference's own sampling error), so they fit; the long-lived show
+5 where 1.2 are expected (exact Poisson P 0.0072), derived. For row 125.

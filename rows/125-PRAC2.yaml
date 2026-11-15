@@ -1,0 +1,102 @@
+# The seed list's locus 125, PRAC2 (17q21.32). Curated 2026-11-15. Lead rs199607933, the seed's only rsID (Kolbe
+# 2025's German exome study): a one-base G insertion, T/TG at GRCh38 17:48,724,360 as the paper prints it (Ensembl's
+# G/GG one base on, the same event; GRCh37 17:46,801,723), multi-allelic (G/GG/GGG). On PRAC2's MANE Select transcript
+# it is a 5′ UTR variant; only on another PRAC2 transcript (ENST00000432056) is it the frameshift the paper names.
+# HOXB13 lies 402 bases away. TG the rare allele (0.047 % in gnomAD's non-Finnish European exomes) and the
+# discovery's longer-lived side. Open Targets 26.09 has no record under either form; the GWAS Catalog (2026-10-29)
+# holds no association.
+locus_id: 125
+locus_name: PRAC2
+verdict: kept
+verdict_reason: >-
+  Tier C, the seed's: a sub-genome-wide discovery in one sample, old against young (R-TIER-2), unreplicated (§4.1's
+  C). Kolbe 2025 sequenced the exomes of 1,245 German long-lived individuals (past the 95th age-at-death percentile
+  of their birth cohort) and 4,105 younger controls; TG was at 0.20 % among the long-lived and in no control, OR 36.3
+  (Haldane-corrected), P 8.1e-7, FDR-adjusted 0.025 under the paper's exploratory false-discovery rate of 0.05, its
+  own exome-wide call, not a genome-wide one (R-TIER-4, D31.13). On 2,490 and 8,210 alleles that is 5 copies against
+  none (the Haldane OR from 5 and 0 is 36.3, derived). The reference D31.13 fixes for an exome study is gnomAD's
+  non-Finnish European exomes (0.047 %, 435 copies): the controls expect 3.9 copies and show none, P 0.021, a fit,
+  though a close one (against the genomes, 0.057 %, 4.7 and P 0.009, or 0.012 counting the reference's own sampling
+  error, a branch named), so the paper is read as printed (D31.10 not met). Against the exomes the long-lived show 5
+  where 1.2 are expected (exact Poisson P 0.0072, derived); the paper's own OR against gnomAD is 4.19, with its caveat
+  that gnomAD's non-Finnish Europeans are mostly British. Unlike rows 121 and 124 the copies are in both sexes: by the
+  printed percentages and the long-lived's 2.7:1 women to men, about 2 in 336 men and 3 in 909 women (derived). No
+  look-up tests it: the Ashkenazi sample holds only three of the seven variants, not this one, and none of the Leiden
+  carriers named is this one (179 long-lived and 98 controls expect 0.17 and 0.09 copies). At 0.05 % the insertion is
+  absent from every large sample read here: FinnGen R11's deaths, Deelen 2019 (whose 17:46,801,724 line is a
+  neighbouring SNV, not this insertion, and whose strongest window lines, 17:46,831,261 at 0.01 and 17:47,164,186 at
+  0.04, P 0.0017 and 5.6e-4, cannot tag it), Timmers 2019, Pilling 2017, Zenin 2019, Park 2025 and Foote 2025; Wright
+  2019's strongest line within 500 kb, the mothers' rs9899580 305 kb away (P 5.6e-6), is common and cannot tag it:
+  untested, not negative. The literature search (the rsID; Semantic Scholar answered 429, its part unchecked) finds
+  Kolbe alone; of the papers citing Kolbe, the 2026 bioRxiv functional study read for row 120 edits variants in
+  other genes, none in PRAC2. Exceptional survival + (the discovery, read as printed; against the exome reference
+  too); lifespan untested; healthspan untested. Mechanism ageing in general (D25.7): the authors know of no prior
+  link of PRAC2 to mTOR signalling or longevity; nothing recorded at the variant. Causal C4: no Open Targets record.
+  Effector E4, put to the lead (default): the paper calls it a frameshift, but on the MANE transcript it is a 5′ UTR
+  change and the frameshift is on a minor isoform, so §4.2's coding clause is not plainly met; the alternative is E1
+  PRAC2. Descriptive. Age of action unknown. The evidence is European (German).
+axes:
+  tier: {value: C, cites: [pmid-40232348#q33, pmid-40232348#q3, pmid-40232348#q2, pmid-40232348#q7, pmid-40232348#q11, pmid-40232348#q12, pmid-40232348#q24, pmid-40232348#q5, pmid-40232348#q16, db-ensembl-116#q862, db-ensembl-116#q863, pmid-31484785#q169, db-gwascatalog-2026.10.29#q579]}
+  mechanism: {value: general_ageing, cites: [pmid-40232348#q34]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: untested, lifespan: untested, exceptional_survival: "+",
+            cites: [pmid-40232348#q33, pmid-40232348#q11, db-ensembl-116#q862]}
+  actionability: {label: descriptive, cites: [pmid-40232348#q33]}
+  context: {values: [eur_only_evidence], cites: [pmid-40232348#q3, pmid-40232348#q33]}
+flags:
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1221]}
+  - {token: "effector:E4", cites: [db-ensembl-116#q856, db-ensembl-116#q857, db-ensembl-116#q858, db-ensembl-116#q859]}
+variants:
+  - rsid: rs199607933
+    locus: {chrom: "17", start: 48724360, ref: T, cites: [pmid-40232348#q33, db-ensembl-116#q860]}  # rs199607933 is multi-allelic (G/GG/GGG in Ensembl, one base on); the row means T>TG, Kolbe's VCF alleles
+    gene: ""
+    phenotype: PRAC2 region insertion, longevity
+    trait_efo_id: OBA_VT0005372
+    effect_allele: TG
+    effect_size: 36.3
+    effect_measure: OR
+    stat_significance: suggestive
+    direction: protective
+    genotypes:
+      - genotype: T/T
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position, as nearly everyone does. It is the
+          reference the other combinations are compared with. The position lies at the start of the PRAC2 gene on
+          chromosome 17.
+      - genotype: T/TG
+        state: protective
+        conclusion: >-
+          You carry one copy of a very rare version of this DNA position, one extra DNA letter (about 1 in 1,000 people
+          of European ancestry carry it). One German study found it five times among 1,245 very long-lived people and
+          never among 4,105 younger people. Little is known about the PRAC2 gene. It rests on a handful of carriers and
+          has not been confirmed, so this is weak, early evidence: a possible tendency, not destiny.
+      - genotype: TG/TG
+        state: protective
+        conclusion: >-
+          You carry two copies of a very rare version of this DNA position, which is extremely unusual; the one study
+          of it found no one with two copies. One German study found single copies a few times among very long-lived
+          people, a finding not yet confirmed, so nothing can be said about two copies.
+studies:
+  - rsid: rs199607933
+    note: pmid-40232348
+    quote: q33
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: German long-lived individuals against geographically matched younger controls (whole-exome sequencing)
+    ancestry: [EUR]
+    n_cases: 1245
+    sample_size: 5350
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: suggestive
+    p_value: "8.1x10−07"
+    p_value_num: 8.1e-07
+    effect_size: 36.3
+    effect_measure: OR
+    effect_unit: odds of being long-lived per TG allele (Haldane-corrected)
+    effect_allele: TG
+    direction: protective
+    statistical_test: "Kolbe 2025's STAAR-O single-variant test with sex and ten principal components (Table 1, q33, columns q3), MAC ≥ 5; cases past the 95th age-at-death percentile of their birth cohort (q7), an age threshold; FDR-adjusted 0.025 under an exploratory FDR < 0.05 (q2); TG 0.20 % in the long-lived, absent in the controls (q11), 5 copies against none; against gnomAD NFE the paper's own OR 4.19 (its caveat, q12). The controls fit gnomAD exomes (db-ensembl-116#q862; 3.9 expected, none seen, P 0.021; genomes 0.012 with the reference's error) and the long-lived sit above it (5 against 1.2, P 0.0072), so read as printed (D31.10 not met, derived)"
+    curator: claude-opus-5-5
