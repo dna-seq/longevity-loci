@@ -1,0 +1,105 @@
+# The seed list's locus 1, ECE1 (1p36.12). Curated 2026-11-15. Lead rs12143832, the seed's only rsID (Deelen 2019's
+# trans-ethnic 90th-percentile locus): GRCh38 1:21,378,943 T/C, GRCh37 1:21,705,436, T 0.53 in gnomAD's non-Finnish
+# Europeans and the discovery's longer-lived allele. Open Targets 26.09 has no record of the variant under either
+# allele order; the GWAS Catalog (2026-10-29) holds Deelen's longevity association alone.
+locus_id: 1
+locus_name: ECE1
+verdict: re-tiered
+verdict_reason: >-
+  Tier D, from the seed's C: a suggestive discovery that fails a powered test (D30.11, a fortiori of D25.1), row 94's
+  shape. Deelen 2019's trans-ethnic meta-analysis of survival to the 90th percentile against all controls gives C OR
+  0.90 (0.87 to 0.94), P 2.0e-7, I² 0; its European deposit gives T +0.097 (SE 0.021), P 5.0e-6; the 99th T +0.053,
+  P 0.12, inside the same cohorts. Timmers 2019's million parents' lives, which hold none of Deelen's data, are flat
+  and lean the other way: T −0.0020 per self (SE 0.0040), P 0.61, "--". Carried to that scale by D25.3's two
+  calibrations, the discovery predicts T +0.020 (APOE's factor) or +0.048 (the loci's mean): one-sided power 1.00
+  under both, heterogeneity P 1.9e-4 and 8.7e-6 (at half the effect 0.0078 and 7.8e-5), a D21 red flag under both. No
+  independent scoring-class study gives p < 0.05 for T: Pilling 2017's UK Biobank parents are flat in every column
+  (P 0.31 to 0.71), FinnGen R11's death endpoint flat (P 0.89), a database line, Park 2025's own survival flat (P
+  0.55). Wright 2019's AncestryDNA holds four Table 9 mothers' meta lines within 500 kb, none among the lead's 30 CEU
+  variants at r² 0.5: untested. Zenin 2019's healthspan flat (P 0.46); Foote 2025's factors mixed (T less frail on
+  two at P 0.022 and 0.040, more on two, flat), multivariate; Rosoff 2023 holds no line. Timmers' strongest line
+  within 500 kb is P 3.1e-5: nothing suggestive. The literature search (the rsID, and ECE1 with longevity terms; Semantic
+  Scholar answered 429, its part unchecked) finds Deelen alone. Every genotype neutral (D25.2); outcome cells 0 (D28.10). Mechanism ageing in general (D25.7);
+  ECE1, endothelin-converting enzyme, named in prose only. Causal C4 and effector E4: no Open Targets record either way.
+  Descriptive. Age of action unknown. The discovery is trans-ethnic, its European part the deposit read here.
+axes:
+  tier: {value: D, cites: [pmid-31413261#q255, pmid-31413261#q256, pmid-31413261#q257, pmid-31413261#q258, pmid-30642433#q378, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, pmid-29227965#q129, pmid-29227965#q130, pmid-29227965#q131, pmid-29227965#q132, db-finngen-r11#q82, pmid-40021682#q109, db-ensembl-116#q751, db-gwascatalog-2026.10.29#q558]}
+  mechanism: {value: general_ageing, cites: [pmid-31413261#q255]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
+            cites: [pmid-30642433#q378, pmid-29227965#q129, pmid-30729179#q149, pmid-31413261#q258]}
+  actionability: {label: descriptive, cites: [pmid-31413261#q255]}
+  context: {values: [eur_only_evidence], cites: [pmid-31413261#q257, pmid-30642433#q378]}
+flags:
+  - {token: replication_failed, cites: [pmid-30642433#q378, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1169, db-opentargets-26.09#q1170]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q1169, db-opentargets-26.09#q1170]}
+variants:
+  - rsid: rs12143832
+    gene: ""
+    phenotype: ECE1 region, longevity
+    trait_efo_id: OBA_VT0005372
+    effect_allele: T
+    effect_size: 1.11
+    effect_measure: OR
+    stat_significance: suggestive
+    direction: protective
+    genotypes:
+      - genotype: T/T
+        state: neutral
+        conclusion: >-
+          You carry two copies of one version of this DNA position (about 28 in 100 people of European ancestry do).
+          It lies near the ECE1 gene on chromosome 1. One large study of long-lived people linked this version to
+          reaching old age, but a much larger study of a million parents' lives did not confirm it, so it is not
+          counted for or against lifespan.
+      - genotype: C/T
+        state: neutral
+        conclusion: >-
+          You carry one copy of each version of this DNA position, the most common combination (about 50 in 100
+          people of European ancestry). It is the reference the other combinations are compared with. One study
+          linked this position to reaching old age, but a much larger one did not confirm it, so it is not counted
+          for or against lifespan.
+      - genotype: C/C
+        state: neutral
+        conclusion: >-
+          You carry two copies of the other version of this DNA position (about 22 in 100 people of European ancestry
+          do). It lies near the ECE1 gene on chromosome 1. One large study of long-lived people found it a little less
+          often among them, but a much larger study did not confirm it, so it is not counted for or against lifespan.
+studies:
+  - rsid: rs12143832
+    note: pmid-31413261
+    quote: q256
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: Trans-ethnic (Deelen 2019's European cohorts with CLHLS East Asians and CHS African Americans; no UK Biobank data)
+    ancestry: [EUR, EAS, AFR]
+    stat_significance: suggestive
+    p_value: "2.0E-07"
+    p_value_num: 2.0e-07
+    effect_size: 0.90
+    effect_measure: OR
+    effect_unit: odds of survival to the 90th percentile per C allele
+    effect_allele: C
+    direction: risk
+    statistical_test: "Table 4, trans-ethnic 90th percentile against all controls (q255, q256), OR 0.90 (0.87-0.94), I² 0, heterogeneity P 0.72; European deposit T +0.0971 (SE 0.0213), P 5.0e-6 (q257); 99th T +0.053, P 0.12 (q258), a subset of the 90th's cases"
+    curator: claude-opus-5-5
+  - rsid: rs12143832
+    note: pmid-30642433
+    quote: q378
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 637314
+    sample_unit: lives
+    stat_significance: not_significant
+    p_value: "0.60900048"
+    p_value_num: 0.60900048
+    effect_size: -0.0020256
+    effect_measure: beta
+    effect_unit: log hazard protection per T allele in self (positive = longer life)
+    effect_allele: T
+    direction: risk
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0040, direction --, info 0.96; against Deelen's European T +0.0971 by D25.3's calibrations (APOE 4.84, pmid-31413261#q82 over q90; mean ×0.4175, q92): expected +0.020 and +0.048, power 1.00, heterogeneity P 1.9e-4 and 8.7e-6, a D21 red flag under both (derived)"
+    curator: claude-opus-5-5

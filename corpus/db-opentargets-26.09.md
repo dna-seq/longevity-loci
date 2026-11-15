@@ -4171,3 +4171,11 @@ H4 0.99 (q1165), not FGFR2, which locus-to-gene names (0.89): effector ambiguous
 
 rs3135388 (row 135): Open Targets 26.09 has no record under either allele order (q1166, q1167); no lifespan-class set
 holds it (q1168): C4/E4. For row 135.
+
+## Reading 2026-11-15, record
+
+> [q1169] data variant null
+
+> [q1170] data variant null
+
+rs12143832 (row 1): Open Targets 26.09 has no record under either allele order (q1169, q1170): C4/E4. For row 1.

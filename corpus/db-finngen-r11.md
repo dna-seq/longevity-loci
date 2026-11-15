@@ -600,3 +600,10 @@ fewer deaths, flat. For row 134.
 
 FinnGen R11's death endpoint at rs3135388 (row 135): ref A, alt G (0.86 in Finns) +0.0167 (SE 0.0107), P 0.12: G with
 more deaths, A fewer, against the discovery's side, flat; a database line. For row 135.
+
+## Reading 2026-11-15, supplement
+
+> [q82] 1 21378943 T C rs12143832 PPP1R11P1 0.887986 0.0515937 -0.00105324 0.00747761 0.443276 0.444821 0.443083
+
+FinnGen R11's death endpoint at rs12143832 (row 1): ref T, alt C (0.44 in Finns) −0.0011 (SE 0.0075), P 0.89: flat. For
+row 1.

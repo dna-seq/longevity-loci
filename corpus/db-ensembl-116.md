@@ -2710,3 +2710,13 @@ rs9271423 to rs3135388 (row 135): r² 1.00, D′ 1.00 in CEU (q748), the proxy a
 
 rs3130279 to rs3135388 (row 135): r² 0.82, D′ 0.96 in CEU (q749). The pair record for row 38's lead rs34967069 holds no
 CEU line, so its LD to 135 is unknown from Ensembl. For row 135.
+
+## Reading 2026-11-15, record
+
+> [q750] mappings[0] strand 1 end 21378943 coord_system chromosome start 21378943 location 1:21378943-21378943 ancestral_allele C assembly_name GRCh38 seq_region_name 1 allele_string T/C
+
+> [q751] populations[17] allele T allele_count 36160 frequency 0.5323 population gnomADg:nfe
+
+rs12143832 (row 1): GRCh38 1:21,378,943, T/C, C ancestral (q750); T 0.53 in gnomAD's non-Finnish Europeans (q751). Its
+CEU window at r² 0.5 holds 30 variants, none in Wright's or Rosoff's tables; Wright's lines within 500 kb are four
+Table 9 mothers' meta lines (rs12021529, rs2038089, rs2038090, rs212549), none among them. For row 1.

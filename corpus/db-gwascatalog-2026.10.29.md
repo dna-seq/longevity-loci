@@ -2038,3 +2038,9 @@ protein ratio; none for lifespan. For row 135.
 rs3135388 (row 135): multiple sclerosis, A the risk allele, OR 2.75 per copy, P 4e-225 (q556-q557; and OR 1.99, P
 9e-81): G, the longer-lived allele of the discovery, is multiple sclerosis's non-risk allele, genome-wide (D30.6). For
 row 135.
+
+## Reading 2026-11-15, record
+
+> [q558] page size 200 totalElements 1 totalPages 1 number 0
+
+rs12143832 (row 1): one association (q558), Deelen 2019's longevity line itself; nothing else. For row 1.
