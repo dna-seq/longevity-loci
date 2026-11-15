@@ -8,32 +8,36 @@ locus_id: 116
 locus_name: CLEC3B (p.S106G)
 verdict: kept
 verdict_reason: >-
-  Tier C, the seed's: a sub-genome-wide East Asian discovery (R-TIER-4) replicated once in an independent East Asian
-  sample, which keeps it off D where 113 and 119, with no independent own-ancestry pass, went to D on D22.3, while the
+  Tier C, the seed's, on either reading (D31.13): with the Chinese sample as the replication, the discovery (2.33e-7)
+  is sub-genome-wide (R-TIER-4, D22.1); with it inside the meta (1.87e-8), the meta is an unreplicated
+  old-against-young case-control, which R-TIER-2 caps at C. The requirements name this variant as East Asian only and
+  failed in Caucasians (R-RARE-3). Replicated once in an independent East Asian sample, which keeps it off D where 113 and 119, with no independent own-ancestry pass, went to D on D22.3, while the
   powered European tests fail, so `replication_failed` (row 130's shape: D25.1's independent pass, D25.13). Tanisawa
   2017's Japanese exome-chip study (530 centenarians and nonagenarians in two cohorts against 4,312 younger controls)
-  gives G OR 1.50 (1.28 to 1.74), P 2.33e-7, under its exome-wide line of 1.99e-6 and above 5e-8 (D17.3, as row 107
-  read an exome-wide P), with the two cohorts agreeing (OR 1.45 and 1.70, heterogeneity P 0.42). Its Chinese
+  gives G OR 1.50 (1.28 to 1.74), P 2.33e-7, under its exome-wide line of 1.99e-6 and above 5e-8 (an exome-wide threshold is not a
+  genome-wide call, R-TIER-4, D31.13), with the two cohorts agreeing (OR 1.45 and 1.70, heterogeneity P 0.42). Its Chinese
   replication, 447 aged 95 to 110 against 505 aged 15 to 79, all from Hainan (ethnicity not named), gives G 0.103
   against 0.066, OR 1.51 (1.05 to 2.17), P 0.027, one-sided 0.013, outside the Japanese P; the paper's meta-analysis,
-  1.87e-8, holds the replication inside it, so it is not read as a genome-wide discovery (B would count the Chinese
-  sample twice). Frequencies (D31.10): the Japanese controls (0.193) sit near Japanese references (HapMap JPT 0.221,
-  an Inabe sample 0.200, 1000 Genomes JPT 0.226 on 104 people). The Chinese controls (0.066) match the paper's
+  1.87e-8 in Table 2 and "< 1.81e-8" in the discussion, holds the replication inside it, so it is not read as a
+  genome-wide discovery (B would count the Chinese sample twice). Frequencies (D31.10): the Japanese controls (0.193) sit near Japanese references (HapMap JPT 0.221,
+  an Inabe sample 0.200, 1000 Genomes JPT 0.226 on 104 people); against JPT with its sampling error they fit (P 0.23,
+  derived). The Chinese controls (0.066) match the paper's
   reference, HapMap's northern Han (0.073 on 82 people; 1000 Genomes CHB 0.073, P 0.41), but Hainan is southern, and
   every southern reference puts the controls short and the cases at it, row 109's shape: Southern Han 0.100 (P 3.2e-4
   on the point value), Dai 0.118, Kinh 0.187; counting each reference's sampling error (about 100 people) the
-  controls' P is 0.14, 0.04 and 1e-4, and read against the Southern Han the cases give OR 1.03, P 0.90 (derived). So
-  the replication rests on which reference fits Hainan: read as printed, on the paper's own, and put to the lead, the
-  tier and the exceptional-survival `+` both on it (if it falls, D31.11 sets it aside and no independent pass
-  remains). Europe, at the lead itself (G 0.62 there): Deelen 2019's 90th percentile G +0.024 (SE 0.020), P 0.23, and
+  controls' P is 0.14, 0.04 and 1e-4, and read against the Southern Han the cases give OR 1.03, P 0.90 (derived). The
+  reference is fixed as the Southern Han (gnomAD has no Chinese group; D31.13), and with its sampling error the
+  controls fit it (P 0.14): the replication is read as printed, and the exceptional-survival `+` stands on it. Europe, at the lead itself (G 0.62 there): Deelen 2019's 90th percentile G +0.024 (SE 0.020), P 0.23, and
   99th +0.043 (SE 0.031), P 0.16, leaning G's way but failing the discovery's size: against the Japanese log OR 0.405
   (SE 0.078) power 1.00, heterogeneity P 2.2e-6 (90th) and 1.7e-5 (99th; at half the effect 4.2e-5 and 0.0014,
   derived). Timmers 2019 flat, G −0.0016 per self (SE 0.0039), P 0.69. Carried there by D25.3's 99th-percentile
   calibrations, the discovery predicts G +0.065 (APOE's factor) or +0.156 (the loci's mean): power 1.00, heterogeneity
-  P 4.1e-7 and 2.2e-7 (at a quarter of the effect 3.7e-4 and 1.7e-6), a D21 red flag under both, `replication_failed`.
+  P 4.1e-7 and 2.2e-7 (at a quarter of the effect 3.7e-4 and 1.7e-6), a D21 red flag under both, `replication_failed`;
+  Tanisawa prints no ε4 line, so the factor is borrowed, and the flag does not need it: Deelen's same-scale lines
+  above flag with no conversion.
   Neither Deelen's lean (one-sided 0.08, 0.11) nor FinnGen R11's death endpoint (G with fewer deaths, one-sided 0.035,
   a database line, D29.1) is a pass; with Foote's general factor (below) nothing European runs against G, which is
-  close to row 18's lean (D22.3) and is the row's ground should the Chinese replication fall, put to the lead with it.
+  close to row 18's lean (D22.3), named.
   Park 2025's own survival flat (P 0.78, UK Biobank); Pilling 2017 flat (P 0.41 to 0.95); Zenin 2019 flat (P 0.89).
   Kolicheski 2020 (abstract; the PMC copy could not be fetched) finds no association with ageing free of neurological
   disease in 1,483 Europeans (P 0.89), its design and power unread. Foote 2025 holds no line at the lead; at rs6441877
@@ -49,11 +53,11 @@ verdict_reason: >-
   of lifespan and of the very old at the variant itself do not carry it (the European frailty factor leans G's way).
   Mechanism ageing in general (D25.7): the paper proposes tetranectin's roles in bone mineralisation and cancer,
   named, no route shown. Causal C4: no lifespan-class set; effector E1, CLEC3B, by §4.2's coding clause (a missense
-  change, glycine to serine at residue 106). Descriptive. Age of action unknown (the paper's reading that it acts only
+  change, glycine to serine at residue 106 of ENST00000296130). Descriptive. Age of action unknown (the paper's reading that it acts only
   past 95 rests on Cohort 2's own people). How the genotypes read to a European, for whom G is the majority allele, is
   put to the lead as D7's question.
 axes:
-  tier: {value: C, cites: [pmid-27154906#q1, pmid-27154906#q2, pmid-27154906#q3, pmid-27154906#q4, pmid-27154906#q5, pmid-27154906#q6, pmid-27154906#q7, pmid-27154906#q8, pmid-27154906#q10, db-ensembl-116#q789, db-ensembl-116#q790, db-ensembl-116#q791, db-ensembl-116#q793, db-ensembl-116#q794, pmid-31413261#q285, pmid-31413261#q286, pmid-30642433#q389, pmid-31413261#q250, pmid-30642433#q90, pmid-30642433#q92, db-finngen-r11#q90, pmid-40021682#q117, pmid-40021682#q32, pmid-29227965#q157, pmid-30729179#q157, pmid-31570938#q1, pmid-31484785#q165, db-gwascatalog-2026.10.29#q573]}
+  tier: {value: C, cites: [pmid-27154906#q1, pmid-27154906#q2, pmid-27154906#q3, pmid-27154906#q4, pmid-27154906#q5, pmid-27154906#q6, pmid-27154906#q7, pmid-27154906#q8, pmid-27154906#q10, pmid-27154906#q11, db-ensembl-116#q789, db-ensembl-116#q790, db-ensembl-116#q791, db-ensembl-116#q793, db-ensembl-116#q794, pmid-31413261#q285, pmid-31413261#q286, pmid-30642433#q389, pmid-31413261#q250, pmid-30642433#q90, pmid-30642433#q92, db-finngen-r11#q90, pmid-40021682#q117, pmid-40021682#q32, pmid-29227965#q157, pmid-30729179#q157, pmid-31570938#q1, pmid-31484785#q165, db-gwascatalog-2026.10.29#q573]}
   mechanism: {value: general_ageing, cites: [pmid-27154906#q1, db-ensembl-116#q785]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: [pmid-27154906#q9]}
@@ -64,7 +68,7 @@ axes:
 flags:
   - {token: replication_failed, cites: [pmid-30642433#q389, pmid-31413261#q285, pmid-31413261#q286, pmid-31413261#q250, pmid-30642433#q90, pmid-30642433#q92]}
   - {token: "causal:C4", cites: [db-opentargets-26.09#q1194, db-opentargets-26.09#q1195, db-opentargets-26.09#q1196, db-ensembl-116#q795, db-ensembl-116#q796]}
-  - {token: "effector:E1", cites: [db-ensembl-116#q785, pmid-27154906#q1]}
+  - {token: "effector:E1", cites: [db-ensembl-116#q785, db-ensembl-116#q822, pmid-27154906#q1]}
 variants:
   - rsid: rs13963
     locus: {chrom: "3", start: 45035631, ref: G, cites: [db-ensembl-116#q785, db-finngen-r11#q90]}  # rs13963 is multi-allelic in Ensembl (G/A/C/T); the row means G>A, the alleles Tanisawa types
@@ -140,7 +144,7 @@ studies:
     effect_unit: odds of being a nonagenarian or centenarian per G allele
     effect_allele: G
     direction: protective
-    statistical_test: "Sanger-sequenced replication (Table 2, q4), G 0.103 in cases, 0.066 in controls, OR 1.51 (1.05-2.17); independent of the Japanese P; controls against HapMap CHB 0.073 (q8) fit, against every southern reference short, the cases at it (CHS 0.100, P 3.2e-4 on the point value, 0.14 with its sampling error; CDX, KHV; db-ensembl-116#q790, q793, q794): read as printed on the paper's reference, D31.10 put to the lead (derived)"
+    statistical_test: "Sanger-sequenced replication (Table 2, q4), G 0.103 in cases, 0.066 in controls, OR 1.51 (1.05-2.17); independent of the Japanese P; controls against HapMap CHB 0.073 (q8) fit, against every southern reference short, the cases at it (CHS 0.100, P 3.2e-4 on the point value, 0.14 with its sampling error; CDX, KHV; db-ensembl-116#q790, q793, q794): the reference fixed as CHS (D31.13), the controls fit it with its error, so read as printed (derived)"
     curator: claude-opus-5-5
   - rsid: rs13963
     note: pmid-31413261
@@ -176,7 +180,7 @@ studies:
     effect_unit: log hazard protection per A allele in self (positive = longer life)
     effect_allele: A
     direction: protective
-    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0039, direction -+, info 1.00 (q389); against the Japanese G log OR 0.405 by D25.3's 99th calibrations (APOE 6.22, pmid-31413261#q250 over pmid-30642433#q90; mean ×0.4175, q92): expected G +0.065 and +0.156, power 1.00, heterogeneity P 4.1e-7 and 2.2e-7, a D21 red flag under both (derived)"
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0039, direction -+, info 1.00 (q389); against the Japanese G log OR 0.405 by D25.3's 99th calibrations (APOE 6.22, pmid-31413261#q250 over pmid-30642433#q90; mean ÷0.4175, q92): expected G +0.065 and +0.156, power 1.00, heterogeneity P 4.1e-7 and 2.2e-7, a D21 red flag under both (derived)"
     curator: claude-opus-5-5
   - rsid: rs13963
     note: pmid-40759756
