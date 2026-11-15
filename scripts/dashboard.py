@@ -113,10 +113,10 @@ def hours(h: float) -> str:
     return f"{h:.0f} h" if h >= 10 else f"{h:.1f} h"
 
 
-# Seed loci waiting on the person, so not in the curator's unblocked queue (rows/PROGRESS.md says why): 151 EYS waits
-# on its only source's text (a preprint whose text refuses), readable or supplied by the person (2026-11-15). APOE
-# (D2, D33) and the biological-ageing markers (D4, D32) were held until the person answered them.
-BLOCKED_BY_ID = {151: "text"}
+# Seed loci waiting on the person, so not in the curator's unblocked queue (rows/PROGRESS.md says why). None now:
+# 151 EYS waited on its preprint's text until `loci fetch PPR1042277` (2026-11-15); APOE (D2, D33) and the
+# biological-ageing markers (D4, D32) were held until the person answered them.
+BLOCKED_BY_ID: dict[int, str] = {}
 BLOCKED_SUBPANEL: dict[str, str] = {}
 
 
