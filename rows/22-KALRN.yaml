@@ -15,9 +15,12 @@ verdict_reason: >-
   no UK Biobank in Deelen and at least the Rotterdam Study shared, hold no line for the indel; at rs12631364 (r² 1.00
   in CEU, its T with the lead's A by frequency) they are flat: A +0.0009 per self (SE 0.0048), P 0.85. Carried to that
   scale by D25.3's 99th-percentile calibrations, the discovery predicts A +0.031 (APOE's factor, 6.22) or +0.074 (the
-  loci's mean, 2.60): one-sided power 1.00 under both, heterogeneity P 1.1e-4 and 2e-6, a D21 red flag under both. The
+  loci's mean, 2.60): one-sided power 1.00 under both, heterogeneity P 1.1e-4 and 2e-6, a D21 red flag under both (at half the effect 0.011 and 4e-5). Timmers' "+-" is
+  per rs12631364's A: for the lead's A, UK Biobank leans against and LifeGen for. The
   looks that lean A's way are UK Biobank's parents, inside Timmers, the failing sample (D30.11, D30.16): Deelen's own
-  UK Biobank parental validation (Table 3, OR 1.11, P 0.081, one-sided about 0.04) and Pilling 2017's mothers at
+  UK Biobank parental validation (Table 3, OR 1.11, 0.99 to 1.24, P 0.081, one-sided about 0.04; on the discovery's own scale powered, 0.95, and not
+  in disagreement, heterogeneity P 0.21, derived; the parents are the ones Timmers pools, and whether that look counts
+  is put to the lead) and Pilling 2017's mothers at
   rs10755078 (r² 1.00; one-sided 0.029), while Pilling's fathers lean the other way (P 0.095) and both parents and the
   top 10 % are flat (P 0.90, 0.52). Nothing independent passes: FinnGen R11's death endpoint has A with slightly more
   deaths (P 0.67), a database line (D12, D30.12); Park 2025's own survival A with slightly more deaths (P 0.43, its
@@ -25,7 +28,8 @@ verdict_reason: >-
   1886-1918 at rs573186 (219 kb), not among the lead's 65 CEU variants at r² 0.5 and with no CEU pair, and Table 9
   nothing: untested. Zenin 2019's healthspan at rs10755078 flat (the lead's A a little less healthy, P 0.48); Foote
   2025 mixed at the same proxy (the lead's A more frail on cognition, P 3.1e-4, less disabled, P 0.044), multivariate;
-  Rosoff 2023 holds no line. Timmers' strongest line within 100 kb is a rare variant at P 0.0011: nothing suggestive.
+  Rosoff 2023 holds no line. Timmers' strongest line within 500 kb is a rare variant (rs796791765, 1.4 %) at P 0.0011:
+  nothing suggestive.
   The literature search (the rsID, and KALRN with longevity terms; Semantic Scholar answered 429, its part unchecked)
   finds Deelen alone among lifespan studies; a brain expression study finds two KALRN isoforms rising with age, no
   lifespan test. Every genotype neutral (D25.2); outcome cells 0 (D28.10). Mechanism ageing in general (D25.7): KALRN,
@@ -48,6 +52,7 @@ flags:
   - {token: "effector:E4", cites: [db-opentargets-26.09#q1182, db-opentargets-26.09#q1185]}
 variants:
   - rsid: rs3830412
+    locus: {chrom: "3", start: 124678474, ref: AT, cites: [db-finngen-r11#q84, db-ensembl-116#q757]}  # rs3830412 is multi-allelic in Ensembl (a poly-T run); the row means AT>A, FinnGen's VCF alleles at GRCh38 3:124,678,474
     gene: ""
     phenotype: KALRN region, longevity
     trait_efo_id: OBA_VT0005372
@@ -100,7 +105,7 @@ studies:
   - rsid: rs3830412
     note: pmid-31413261
     quote: q264
-    phenotype_class: PARENTAL_LIFESPAN
+    phenotype_class: EXTREME_SURVIVAL_CC
     study_design: percentile_case_control_p99
     population: UK Biobank participants' parents (Deelen 2019's parental-longevity validation)
     ancestry: [EUR]
@@ -114,7 +119,7 @@ studies:
     effect_unit: odds of a parent surviving to the 99th percentile per A allele
     effect_allele: A
     direction: protective
-    statistical_test: "Table 3, Deelen 2019's UK Biobank parental-longevity look-up (q264), 0.99-1.24; one-sided about 0.04 (derived); UK Biobank's parents sit inside Timmers, the sample that fails at power, so no independent pass (D30.11, D30.16)"
+    statistical_test: "Table 3, Deelen 2019's UK Biobank parental-longevity look-up (q264), 0.99-1.24; one-sided about 0.04 (derived); against the discovery's log OR 0.192 (SE 0.038) on the same scale, power 0.95, heterogeneity P 0.21 (derived); UK Biobank's parents sit inside Timmers, the sample that fails at power, so no independent pass (D30.11, D30.16)"
     curator: claude-opus-5-5
   - rsid: rs3830412
     note: pmid-30642433
@@ -134,5 +139,5 @@ studies:
     effect_unit: log hazard protection per T allele of rs12631364 in self (T with the lead's A; printed A −0.00089), positive longer
     effect_allele: T
     direction: protective
-    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0048, direction +-, info 1.00; rs12631364 r² 1.00 to the lead in CEU (db-ensembl-116#q758), its T (0.205) with the lead's A (0.22) by frequency; against Deelen's 99th A +0.1916 by D25.3's 99th calibrations (pmid-31413261#q250 over pmid-30642433#q90; mean ×0.4175, q92): expected +0.031 and +0.074, power 1.00, heterogeneity P 1.1e-4 and 2e-6, a D21 red flag under both (derived)"
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0048, direction +-, info 1.00; rs12631364 r² 1.00 to the lead in CEU (db-ensembl-116#q758), its T (0.205) with the lead's A (0.22) by frequency; against Deelen's 99th A +0.1916 by D25.3's 99th calibrations (pmid-31413261#q250 over pmid-30642433#q90; mean ×0.4175, q92): expected +0.031 and +0.074, power 1.00, heterogeneity P 1.1e-4 and 2e-6, a D21 red flag under both; at half the effect 0.011 and 4e-5 (derived)"
     curator: claude-opus-5-5
