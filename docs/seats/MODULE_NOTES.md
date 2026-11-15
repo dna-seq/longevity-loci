@@ -190,3 +190,6 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
 - 2026-11-15: plugin pinned at v0.48.11 (the liaison, 8250a35; toolchain unchanged, just-dna 0.8.6), running here.
   `enrich_module` now reports `build_diagnoses` (rows whose ref mismatch reads as hg19): read it at the next
   rehearsal. Next batch so far: rows 3, 100, 101, 108, 130, 134, 135.
+- 2026-11-15, batch eleven trial build (trunk 2df1202): enrich clean (167 resolved, build_diagnoses empty); the strict
+  compile refuses row 101's Wright entry at proxy rs6753712 (effect_allele C, the lead's; the proxy is A/G, and the
+  row's effect_unit says per A). Put to the lead and the curator (640407208); the rehearsal waits on the fix.
