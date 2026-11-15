@@ -8,7 +8,8 @@ locus_name: RPLP0P2 (chr11)
 verdict: kept
 verdict_reason: >-
   Tier C, the seed's: a sub-genome-wide discovery in one old-against-young sample (R-TIER-2, R-TIER-4), unreplicated
-  and, a rare variant, untested by every powered sample read here. Bae 2022 pooled four centenarian studies (NECS,
+  and, a rare variant, tested once at power 0.78 (Park, flat, no flag, on a line under Park's own filter), the other
+  large samples holding no line. Bae 2022 pooled four centenarian studies (NECS,
   LLFS, LGP, SICS; 2,304 cases past the 99th percentile of their birth cohort and 5,879 controls, some from an
   Illumina repository matched by principal components): G at 0.0067 in the cases and 0.0015 in the controls, β 1.74
   (SE 0.347) on the log odds, P 6.3e-7, the lead of a peak of 25 rare SNPs; the lead is imputed, and its dosages match
@@ -25,21 +26,23 @@ verdict_reason: >-
   P 0.59, and mothers +0.025 (SE 0.044), P 0.57, where Bae's own APOE line (0.84 in the discovery, 0.020 and 0.019 in
   the parents) carries G's 1.74 to about +0.04, power 0.27 and 0.22 (derived); UKB+LifeGen, which is Timmers 2019's
   data, drops variants under 0.5 %. Park 2025's own survival has G with more deaths, P 0.39 (one-sided 0.19 against);
-  carried by the same APOE ratio (Park's rs429358 T −0.0129) G expects about −0.027, power 0.78, heterogeneity P 0.003
-  (derived): short of D21's power, no flag; whether Bae's APOE ratio may calibrate Park at all no ruling says, put to
-  the lead. Pilling 2017's top-10 % deposit flat (P 0.48), its other three holding no line. Deelen 2019, FinnGen R11
+  carried by the same APOE ratio (Park's rs429358 T −0.0129; D31.12) G expects about −0.027, power 0.78,
+  heterogeneity P 0.003 (derived): short of D21's power, and a calibration from APOE alone sets no flag (D31.13);
+  across the 95 % interval of Bae's APOE β (0.71 to 0.97) the power runs from 0.89 to 0.68 (derived). G is 0.095 % in
+  Park's cohort, under Park's own MAF filter of 0.1 %, so the line is named, not read (D26.7, D29.17, D31.13), and the
+  D31.12 test is stated as resting on a filtered line. Pilling 2017's top-10 % deposit flat (P 0.48), its other three holding no line. Deelen 2019, FinnGen R11
   (G absent in Finns), Zenin 2019 and Foote 2025 hold no line, and Wright 2019's two common lines within 500 kb cannot
   tag a 0.13 % variant: untested, not negative, and no LD look is possible for a variant this rare in 1000 Genomes'
   CEU (as 107). Timmers' strongest line within 500 kb is P 2.2e-4, Deelen's 8.7e-5: nothing suggestive. The literature
   search (the rsID; Semantic Scholar answered 429 and the preprint index timed out, their parts unchecked) and RPLP0P2
   with longevity terms find Bae and an editorial; of Bae's 18 citing papers none re-tests the variant (the same
   group's Calabrian GWAS among them). Outcome cells: exceptional survival + (the discovery, the row's only test),
-  lifespan 0 (Park and UK Biobank's parents flat, unpowered), healthspan untested. Mechanism ageing in general
+  lifespan 0 (Bae's UK Biobank parents flat, unpowered; Park's filtered line named, not read), healthspan untested. Mechanism ageing in general
   (D25.7): intronic in a pseudogene's lncRNA, nothing recorded at the variant. Causal C4 and effector E4: no Open
   Targets record. Descriptive. Age of action unknown. The evidence is European, with the highest frequencies in its
   Ashkenazi and Southern Italian cases.
 axes:
-  tier: {value: C, cites: [pmid-36613555#q1, pmid-36613555#q2, pmid-36613555#q3, pmid-36613555#q4, pmid-36613555#q5, pmid-36613555#q6, pmid-36613555#q7, pmid-36613555#q8, pmid-36613555#q9, pmid-36613555#q10, db-ensembl-116#q798, db-ensembl-116#q801, pmid-40021682#q118, pmid-40021682#q32, pmid-29227965#q161, pmid-31484785#q166, db-gwascatalog-2026.10.29#q574]}
+  tier: {value: C, cites: [pmid-40021682#q58, pmid-36613555#q1, pmid-36613555#q2, pmid-36613555#q3, pmid-36613555#q4, pmid-36613555#q5, pmid-36613555#q6, pmid-36613555#q7, pmid-36613555#q8, pmid-36613555#q9, pmid-36613555#q10, db-ensembl-116#q798, db-ensembl-116#q801, pmid-40021682#q118, pmid-40021682#q32, pmid-29227965#q161, pmid-31484785#q166, db-gwascatalog-2026.10.29#q574]}
   mechanism: {value: general_ageing, cites: [db-ensembl-116#q797]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -86,8 +89,8 @@ studies:
     note: pmid-36613555
     quote: q1
     phenotype_class: EXTREME_SURVIVAL_CC
-    study_design: percentile_case_control_p99
-    population: European (NECS, LLFS, LGP, SICS Southern Italian; cases past the 99th percentile against study and repository controls, q5 to q7)
+    study_design: centenarian_case_control
+    population: European (NECS, LLFS, LGP, SICS Southern Italian; cases past the 99th percentile against younger study and repository controls, q5 to q7)
     ancestry: [EUR]
     sample_size: 8183
     sample_unit: individuals
@@ -121,5 +124,5 @@ studies:
     effect_unit: Martingale residual of death per T allele (positive more deaths; the deposit's allele columns swapped, q32)
     effect_allele: T
     direction: protective
-    statistical_test: "Park 2025's whole-cohort deposit (GCST90551884), SE 0.0110 (q118); G with more deaths, one-sided 0.19 against; against Bae's G β 1.74 carried by the APOE ratio (0.84 over Park's 0.0129, pmid-36613555#q2, q32): expected G −0.027, power 0.78, heterogeneity P 0.003, short of D21 (derived)"
+    statistical_test: "Park 2025's whole-cohort deposit (GCST90551884), SE 0.0110 (q118); G with more deaths, one-sided 0.19 against; against Bae's G β 1.74 carried by the APOE ratio (0.84 over Park's 0.0129, pmid-36613555#q2, q32): expected G −0.027, power 0.78 (0.68 to 0.89 across Bae's APOE interval), heterogeneity P 0.003, short of D21 and no flag from APOE alone (D31.12, D31.13, derived); G 0.095 % is under Park's 0.1 % filter (q58), so the line is named, not read"
     curator: claude-opus-5-5
