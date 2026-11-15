@@ -2088,3 +2088,9 @@ discovery cohorts' own. For row 34.
 > [q568] page size 200 totalElements 0 totalPages 0 number 0
 
 rs112262188 in the GWAS Catalog: no association (q568). For row 107.
+
+## Reading 2026-11-15, record
+
+> [q569] _embedded.associations[0] association_id 218960600 risk_frequency 0.013 pvalue_description pvalue_mantissa 2 pvalue_exponent -6 multi_snp_haplotype false snp_interaction false range - beta 2.241 unit increase p_value 2e-06 accession_id GCST90726611 pubmed_id 42176242 first_author Beccacece L
+
+rs113181552 in the GWAS Catalog: Beccacece's Calabrian longevity line alone (q569), T, beta 2.241, P 2e-6. For row 109.

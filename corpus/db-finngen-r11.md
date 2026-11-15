@@ -634,3 +634,10 @@ Finns) −0.0094 (SE 0.0081), P 0.24: T with slightly fewer deaths, flat. A data
 
 FinnGen R11's death endpoint holds no line for rs112262188 (row 107; C 0.00007 in gnomAD's Finns): untested. For
 row 107.
+
+## Reading 2026-11-15, record
+
+> [q86] 20 1051463 G T rs113181552 RP4-545L17.11 0.550611 0.259155 -0.00684451 0.0114678 0.122017 0.118928 0.122403
+
+FinnGen R11 at rs113181552 (GRCh38 20:1,051,463 G/T, row 109, q86): T (0.12 in Finns) −0.0068 (SE 0.0115), P 0.55,
+flat. A database line. For row 109.

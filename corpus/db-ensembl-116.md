@@ -2781,3 +2781,12 @@ reaches 0.8. For row 34.
 rs112262188 (row 107): synonymous in SLC16A6 at GRCh38 17:68,271,344 G/C (q763); C 0.00086 in gnomAD exomes' and
 0.00075 in genomes' non-Finnish Europeans (q764). Its GRCh37 position, 17:66,267,485, read from Ensembl's GRCh37
 server, is where the GRCh37 deposits were searched. For row 107.
+
+## Reading 2026-11-15, record
+
+> [q765] [0] assembly_name GRCh38 start 1051463 strand 1 end 1051463 allele_string G/T seq_region_name 20 input rs113181552 id rs113181552 most_severe_consequence intron_variant
+
+> [q766] [0].colocated_variants[0].frequencies.T gnomadg_afr 0.05053 gnomadg_mid 0.02721 gnomadg_asj 0.01585 gnomadg_sas 0.006429 gnomadg_eas 0.0003867 eas 0.002 amr 0.0173 eur 0.0467 af 0.0282 gnomadg_ami 0 gnomadg_nfe 0.04349 gnomadg_amr 0.02668 gnomadg_remaining 0.03359 gnomadg 0.0472 sas 0.0072 afr 0.0552 gnomadg_fin 0.1468
+
+rs113181552 (row 109): an intron variant at GRCh38 20:1,051,463 G/T (q765); T 0.043 in gnomAD's non-Finnish genomes
+(q766). For row 109.
