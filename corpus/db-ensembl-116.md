@@ -3098,3 +3098,10 @@ rs2075650 r² 0.55, rs4420638 0.72, rs769449 0.80, rs405509 0.12, rs449647 0.05;
 rs405509 0.07, rs449647 0.12. The endpoint answered nothing for rs7412 with rs2075650, rs4420638 and rs769449 (no
 file kept), which reads as r² under 0.05 (row 37's lesson). So rs2075650, rs4420638 and rs769449 are partial
 stand-ins for ε4, and the two promoter SNPs tag neither ε4 nor ε2. For row 96.
+
+## Reading 2026-11-15, record
+
+> [q848] [0] d_prime 0.945491 population_name 1000GENOMES:phase_3:CHB variation1 rs429358 r2 0.807394 variation2 rs2075650
+
+rs2075650 with rs429358 in 1000 Genomes CHB: r² 0.81 (q848), against 0.55 in CEU (q841). Liu 2021's Chinese
+result at rs2075650 (pmid-33657282#q26) is an East Asian tag of ε4 at the 0.8 used elsewhere. For row 96.
