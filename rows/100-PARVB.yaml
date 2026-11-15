@@ -22,12 +22,13 @@ verdict_reason: >-
   lead. Rosoff 2023's tables hold no line. The rsID literature search (Semantic Scholar 429, its part unchecked) finds
   only a review. Calibrated by Pilling 2016's own APOE line on the mothers' scale (ε4's rs429358 T +0.0183,
   pmid-27015805#q17; LifeGen's 0.1056, a factor of about 5.8), the discovery's 0.092, about five times ε4's, predicts
-  a Timmers β near 0.53 per C against the printed 0.029 (SE 0.014): a flag under APOE's factor by a wide margin, but
+  a Timmers β near 0.53 per C against the printed 0.029 (SE 0.014): a flag under APOE's factor by a wide margin (heterogeneity z about 36, P
+  below 1e-200, derived), but
   the loci's mean factor is undefined for this phenotype, so whether LifeGen or FinnGen flag it is unknown (D25.3,
   D26.3) and the row carries no replication_failed; the tier rests on the authors' doubt, as at 60. Outcome cells on a D row (D28.10, D30.17): lifespan 0 (the UK
   Biobank looks are the discovery's biobank, LifeGen's arm leans against without its own P), healthspan 0 (Zenin
-  flat), exceptional survival untested (D29.4: the overfit discovery tests nothing, Pilling 2017's
-  top-10 % look, flat, is the discovery's biobank, and Deelen has neither the lead nor a proxy).
+  flat), exceptional survival 0 (D31.8: D29.4's untested is for an overfit discovery that is the only test at the lead,
+  and Pilling 2017's top 10 % at the lead is flat, P 0.88, as 97 reads it; Deelen has neither the lead nor a proxy).
   Mechanism general ageing (D25.7), pleiotropy empty: the GWAS Catalog holds no other trait for the variant.
   Descriptive. Causal C4 and effector E4, no gene named: Open Targets holds no record of the variant, and an overfit
   source sets no level anyway (D28.12); PARVB is named in prose. Every genotype neutral (D25.2); C/C, about 94 in 100
@@ -38,7 +39,7 @@ axes:
   mechanism: {value: general_ageing, cites: [db-gwascatalog-2026.10.29#q534, db-opentargets-26.09#q1121]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: untested,
+  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
             cites: [pmid-30729179#q139, pmid-29227965#q104, pmid-29227965#q105, pmid-29227965#q107, pmid-30642433#q357]}
   actionability: {label: descriptive, cites: [pmid-27015805#q24]}
   context: {values: [eur_only_evidence], cites: [pmid-27015805#q24, db-ensembl-116#q716, db-ensembl-116#q717]}
