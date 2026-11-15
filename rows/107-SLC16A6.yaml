@@ -9,21 +9,32 @@ verdict_reason: >-
   Tier C, the seed's: a sub-genome-wide discovery in one sample, old against young (R-TIER-2), that no other study has
   tested (§4.1's C). Kolbe 2025 sequenced the exomes of 1,245 German long-lived individuals and 4,105 younger controls;
   C was at 0.20 % among the long-lived and 0.01 % among the controls, OR 12.1 (Haldane-corrected), P 9.8e-7, adjusted
-  0.025 under the paper's exploratory false-discovery rate of 0.05, below no genome-wide threshold. On 2,490 and 8,210
+  0.025 under the paper's exploratory false-discovery rate of 0.05, its own exome-wide call; D17.3 reads the paper's P,
+  which is not genome-wide, and R-TIER-2 caps a single old-against-young sample at C either way. On 2,490 and 8,210
   alleles that is about five copies against about one, and the controls sit well below gnomAD's non-Finnish 0.09 %, so
-  the paper's own odds ratio against that reference, 2.36, is the steadier size. The authors report it without doubt,
-  so it is not an overfit source by the rule's own cases (rows 41, 44, 48, 60). No replication exists: the authors say
+  the paper's own odds ratio against that reference, 2.36, is the steadier size: the controls' 8,210 alleles expect
+  about 7 copies and show about 1 (Poisson P 0.007), the long-lived 2,490 about 2.1 and show about 5 (P 0.066), so the
+  signal is mostly the controls' deficit, and most long-lived copies are in men (0.60 %), the women at the population's
+  0.06 %. The authors report it without doubt, so it is not an overfit source by the rule's own cases (rows 41, 44,
+  48, 60, each disowned by its authors or their filter); whether the deficit alone makes it one, as row 41's control
+  frequency did (D26.10), is put to the lead. The crude OR stays on the variant: the counts are the paper's own
+  (D25.10), not disowned (D26.10). No replication exists: the authors say
   none of comparable size is available, their Ashkenazi look-up holds three of the seven variants, not this one, and
   their Leiden look-up lists none at SLC16A6. At 0.06 % the variant is absent from every large sample read here:
   Deelen 2019, Timmers 2019, Pilling 2017, Zenin 2019, FinnGen R11, Park 2025 (below its 0.1 % filter) and Foote 2025
-  hold no line, and Wright 2019 and Rosoff 2023 none, so every test is untested, not negative. Exceptional survival +
+  hold no line, and Wright 2019's one line within 500 kb (rs12453858, 392 kb) is common and cannot tag it, so every
+  test is untested, not negative. Timmers' strongest line within 500 kb, rs11867618 (392 kb, 13 %, P 5.0e-6), cannot tag
+  it either (r² at most 0.006 by frequency): a separate signal. No LD look is possible for a 0.09 % variant in 1000
+  Genomes' 99 CEU samples. The literature search (the rsID, and SLC16A6 with longevity terms; Semantic Scholar 429)
+  finds Kolbe alone, and of the papers citing Kolbe only a 2026 bioRxiv functional study of rare mTOR-pathway variants
+  by the same groups, no sample test of this one. Exceptional survival +
   (the discovery), lifespan untested, healthspan untested. Mechanism ageing in general (D25.7): the authors tie SLC16A6
   to the intestinal excretion of ketone bodies, which they link to longevity through fasting, a route not tested here;
   named. Causal C4: no Open Targets record. Effector E4, the gene named in prose: the change is synonymous, so it alters
   no protein, and §4.2's coding clause is read as a protein change (D31.9's reading at 99); put to the lead. Descriptive.
   Age of action unknown. The evidence is European (German).
 axes:
-  tier: {value: C, cites: [pmid-40232348#q1, pmid-40232348#q2, pmid-40232348#q3, pmid-40232348#q4, pmid-40232348#q5, db-ensembl-116#q764, db-gwascatalog-2026.10.29#q568]}
+  tier: {value: C, cites: [pmid-40232348#q1, pmid-40232348#q2, pmid-40232348#q3, pmid-40232348#q4, pmid-40232348#q5, pmid-40232348#q7, db-ensembl-116#q764, db-gwascatalog-2026.10.29#q568]}
   mechanism: {value: general_ageing, cites: [pmid-40232348#q6]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -85,5 +96,5 @@ studies:
     effect_unit: odds of being long-lived per C allele (Haldane-corrected)
     effect_allele: C
     direction: protective
-    statistical_test: "Kolbe 2025's STAAR-O single-variant test with sex and ten principal components (Table 1, q1, q3), MAC ≥ 5; FDR-adjusted 0.025 under an exploratory FDR < 0.05 (q2); C 0.20 % in the long-lived, 0.01 % in the controls, about five copies against one; against gnomAD NFE 0.09 % the paper's own OR 2.36; no replication (q4, q5)"
+    statistical_test: "Kolbe 2025's STAAR-O single-variant test with sex and ten principal components (Table 1, q1, q3), MAC ≥ 5; cases past the 95th age-at-death percentile of their birth cohort (q7), no p95 design term, so an age threshold; FDR-adjusted 0.025 under an exploratory FDR < 0.05 (q2); C 0.20 % in the long-lived, 0.01 % in the controls, about five copies against one; against gnomAD NFE 0.09 % the paper's own OR 2.36; no replication (q4, q5)"
     curator: claude-opus-5-5
