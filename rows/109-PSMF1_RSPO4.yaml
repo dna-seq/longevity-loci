@@ -7,27 +7,30 @@ locus_id: 109
 locus_name: PSMF1/RSPO4
 verdict: re-tiered
 verdict_reason: >-
-  Tier D, from the seed's C: read against the reference, as D31.10 reads a discovery whose controls misfit it, the
-  discovery shows no enrichment, and nothing independent passes. Beccacece 2026's exploratory GWAS of 705 Calabrians
+  Tier D, from the seed's C (D31.11): the discovery, read against the reference, shows nothing and is an overfit source
+  that sets nothing, and the lead's own remaining line, Deelen 2019's 90th percentile, fails a powered test (D25.1,
+  D26.8). Beccacece 2026's exploratory GWAS of 705 Calabrians
   (299 long-lived cases and 406 younger controls from the ECHA and GEHA cohorts, a mixed model) gives T +2.241 (OR
   9.40), P 2.45e-6, one of its 22 suggestive loci, with T at 1.35 % across the sample. Every other sample has T near 3
   to 4 %: SICS 2.9 %, Deelen 4 %, Timmers 4.1 %, gnomAD's non-Finnish genomes 4.3 %. Solved from the OR and the counts,
   the controls carry about 2.5 copies in 812 alleles (0.3 %) where SICS's frequency expects about 23.5 (Poisson P 2e-8),
   and the cases about 16.5 copies in 598 (2.8 %) where it expects 17.3 (derived): the signal is the controls' deficit,
-  and the long-lived sit at the reference. So the case-control Beta is named, not read (D31.10). The SICS replication
-  (T −0.265, P 0.56) and Timmers' parents (T −0.0233 per self, P 0.028, "--") were tested against that Beta (SICS power
-  1.00, heterogeneity P 1.4e-4, at half the effect power 0.79, the flag lapsing; Timmers flagged under every D25.3
-  factor, the case ages unread); with the Beta unread, those flags have nothing to test and `replication_failed` is
-  not carried, put to the lead. Deelen 2019's 90th percentile leans T's way (+0.191, SE 0.062, P 0.0021; 99th P 0.27),
-  but Deelen holds GEHA Italy and the Calabrian sample comes from GEHA and ECHA, and neither paper separates them, so
-  it is not independent (D19.1's last clause; as 130's CEPH): named, not counted, put to the lead. Pilling 2017's
+  and the long-lived sit at the reference. So the case-control Beta is the controls' deficit and sets nothing (D31.10, D31.11);
+  the SICS replication's flag against it (T −0.265, P 0.56; power 1.00, heterogeneity P 1.4e-4, lapsing at half the
+  effect) and Timmers' tested that Beta and are not carried. The row is tiered on the lead's other evidence. Deelen
+  2019's 90th percentile has T longer-lived, +0.191 (SE 0.062), P 0.0021, one-sided 0.001 (99th +0.118, P 0.27); with
+  the discovery set aside, Deelen's share of GEHA's Calabrians makes it no echo (D31.11). Tested under D25.3 against
+  Timmers 2019's parents, who have T shorter-lived (−0.0233 per self, SE 0.0106, P 0.028, "--"): Deelen's line predicts
+  +0.039 (APOE's 90th factor, 4.84) or +0.095 (the mean factor), power 0.98 and 1.00, heterogeneity P 1.6e-4 and
+  2.9e-4, a D21 red flag under both (at half the effect, under the mean factor, power 1.00, P 1.6e-4): D (D25.1, D26.8),
+  `replication_failed`. SICS, on Deelen's log-odds scale, is unpowered (0.11). Pilling 2017's
   parents lean against T (both parents P 0.06, fathers 0.056), inside Timmers; FinnGen R11 flat (P 0.55), a database
   line; Park 2025 flat (P 0.79); Zenin 2019 flat; Foote 2025 holds no line; Wright 2019's four Table 8 lines 230 to 350
   kb away have no CEU pair with the lead and none is among its CEU variants at r² 0.5: AncestryDNA untested. Timmers'
   strongest line within 500 kb is P 2.8e-4. The literature search (the rsID, and PSMF1 or RSPO4 with longevity terms;
   Semantic Scholar 429) finds Beccacece alone. The abstract's intronic variant "confirmed by meta-analysis" is not
   this one: the paper's eQTL sheet holds no line for it (Table S1 annotates it intergenic, nearest RSPO4). Every
-  genotype neutral (D25.2); outcome cells 0 (D28.10); the variant's direction unknown. Mechanism ageing in general
+  genotype neutral (D25.2); outcome cells 0 (D28.10); the variant carries Deelen's line, the overfit Beta named only. Mechanism ageing in general
   (D25.7): PSMF1 is the seed's name for the locus, RSPO4 the paper's nearest gene; nothing recorded at the variant.
   Causal C4 and effector E4: no Open Targets record either way. Descriptive. Age of action unknown. The evidence is
   European.
@@ -41,6 +44,7 @@ axes:
   actionability: {label: descriptive, cites: [pmid-42176242#q14]}
   context: {values: [eur_only_evidence], cites: [pmid-42176242#q1, pmid-30642433#q382]}
 flags:
+  - {token: replication_failed, cites: [pmid-31413261#q274, pmid-30642433#q382, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92]}
   - {token: "causal:C4", cites: [db-opentargets-26.09#q1188]}
   - {token: "effector:E4", cites: [db-opentargets-26.09#q1188]}
 variants:
@@ -49,10 +53,10 @@ variants:
     phenotype: PSMF1/RSPO4 region, longevity
     trait_efo_id: OBA_VT0005372
     effect_allele: T
-    effect_size: 2.241
+    effect_size: 0.1909
     effect_measure: beta
-    stat_significance: suggestive
-    direction: unknown
+    stat_significance: nominal
+    direction: protective
     genotypes:
       - genotype: G/G
         state: neutral
@@ -96,6 +100,24 @@ studies:
     statistical_test: "Beccacece 2026's mixed-model GWAS, Table S1 (q14, columns q6), T 1.35 %, OR 9.40; unrelated subset OR 10.5, P 0.0053 (q15); SICS replication T −0.265, P 0.56 (q16, columns q11): power 1.00, heterogeneity P 1.4e-4 (derived). The controls misfit the reference (about 2.5 copies against 23.5 expected at SICS's 2.9 %, Poisson P 2e-8; the cases at the reference, derived), so this Beta is named, not read (D31.10)"
     curator: claude-opus-5-5
   - rsid: rs113181552
+    note: pmid-31413261
+    quote: q274
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis, GEHA Italy among its cohorts; no UK Biobank data)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.002079"
+    p_value_num: 0.002079
+    p_one_sided: 0.00104
+    effect_size: 0.1909
+    effect_measure: beta
+    effect_unit: log odds of survival to the 90th percentile per T allele
+    effect_allele: T
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GCST008598), SE 0.0620, effective N 9,452 (q274); 99th +0.1183, P 0.27 (q275); the lead's own line once the overfit discovery is set aside (D31.11); fails Timmers under D25.3 (see Timmers' entry)"
+    curator: claude-opus-5-5
+  - rsid: rs113181552
     note: pmid-30642433
     quote: q382
     phenotype_class: PARENTAL_LIFESPAN
@@ -112,5 +134,5 @@ studies:
     effect_unit: log hazard protection per T allele in self (positive = longer life)
     effect_allele: T
     direction: risk
-    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0106, direction --, info 0.96; against the Calabrian +2.241, which the row no longer reads (D31.10), by D25.3's calibrations (99th 6.22 from pmid-31413261#q250 over q90, 90th 4.84 from pmid-31413261#q82; mean ×0.4175, q92): expected +0.36 to +1.11, power 1.00, heterogeneity P 6.7e-7 to 1.5e-6 (derived), not carried as a flag"
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0106, direction --, info 0.96; against Deelen's 90th T +0.191 (SE 0.062, pmid-31413261#q274) by D25.3 (APOE 4.84, pmid-31413261#q82 over q90; mean ×0.4175, q92): expected +0.039 and +0.095, power 0.98 and 1.00, heterogeneity P 1.6e-4 and 2.9e-4, a D21 red flag under both (derived); the Calabrian Beta, an overfit source, is not tested (D31.11)"
     curator: claude-opus-5-5
