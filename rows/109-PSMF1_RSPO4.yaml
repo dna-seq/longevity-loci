@@ -26,11 +26,12 @@ verdict_reason: >-
   `replication_failed`. SICS, on Deelen's log-odds scale, is unpowered (0.11). Pilling 2017's
   parents lean against T (both parents P 0.06, fathers 0.056), inside Timmers; FinnGen R11 flat (P 0.55), a database
   line; Park 2025 flat (P 0.79); Zenin 2019 flat; Foote 2025 holds no line; Wright 2019's four Table 8 lines 230 to 350
-  kb away have no CEU pair with the lead and none is among its CEU variants at r² 0.5: AncestryDNA untested. Timmers'
+  kb away have no CEU pair with the lead, whose CEU partners reach r² 0.49 at most: AncestryDNA untested. Timmers'
   strongest line within 500 kb is P 2.8e-4. The literature search (the rsID, and PSMF1 or RSPO4 with longevity terms;
   Semantic Scholar 429) finds Beccacece alone. The abstract's intronic variant "confirmed by meta-analysis" is not
   this one: the paper's eQTL sheet holds no line for it (Table S1 annotates it intergenic, nearest RSPO4). Every
-  genotype neutral (D25.2); outcome cells 0 (D28.10); the variant carries Deelen's line, the overfit Beta named only. Mechanism ageing in general
+  genotype neutral (D25.2). Lifespan − (D28.3, D28.10: Timmers one-sided 0.014 against, Pilling's both parents about
+  0.03, and nothing gives +); healthspan 0 and exceptional survival 0; the variant carries Deelen's line, the overfit Beta named only. Mechanism ageing in general
   (D25.7): PSMF1 is the seed's name for the locus, RSPO4 the paper's nearest gene; nothing recorded at the variant.
   Causal C4 and effector E4: no Open Targets record either way. Descriptive. Age of action unknown. The evidence is
   European.
@@ -39,7 +40,7 @@ axes:
   mechanism: {value: general_ageing, cites: [pmid-42176242#q14, pmid-42176242#q3]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
+  outcome: {healthspan: "0", lifespan: "-", exceptional_survival: "0",
             cites: [pmid-42176242#q16, pmid-30642433#q382, pmid-30729179#q153, pmid-31413261#q274]}
   actionability: {label: descriptive, cites: [pmid-42176242#q14]}
   context: {values: [eur_only_evidence], cites: [pmid-42176242#q1, pmid-30642433#q382]}
