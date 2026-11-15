@@ -2916,3 +2916,11 @@ rs145265196 (row 118): intronic in the RPLP0P2 lncRNA at GRCh38 11:61,633,890 T/
 (q799), band 11q12.2 (q800). G 0.0013 in gnomAD's non-Finnish genomes, 0.0066 in its Ashkenazi, 0.024 in Middle
 Eastern, 0.029 in African and 0.032 in South Asian genomes, absent in Finns and East Asians (q798): a frequency that
 varies by ancestry far more than the case-control gap. For row 118.
+
+## Reading 2026-11-15, record
+
+> [q801] populations[73] population 1000GENOMES:phase_3:IBS allele_count 2 allele G frequency 0.00934579439252336
+
+rs145265196 (row 118): G 0.0093 in 1000 Genomes' Iberians (2 copies of 214, q801), none in Tuscans; 0.0066 in
+gnomAD's Ashkenazi genomes (q798). No LD look is possible for a variant this rare in 1000 Genomes' 99 CEU samples (as
+row 107). For row 118.

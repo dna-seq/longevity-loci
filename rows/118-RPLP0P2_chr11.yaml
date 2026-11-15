@@ -9,30 +9,37 @@ verdict: kept
 verdict_reason: >-
   Tier C, the seed's: a sub-genome-wide discovery in one old-against-young sample (R-TIER-2, R-TIER-4), unreplicated
   and, a rare variant, untested by every powered sample read here. Bae 2022 pooled four centenarian studies (NECS,
-  LLFS, LGP, SICS; 2,304 cases past the 99th percentile of their birth cohort and 5,879 controls, some from an Illumina
-  repository matched by principal components): G at 0.0067 in the cases and 0.0015 in the controls, β 1.74 (SE 0.347)
-  on the log odds, P 6.3e-7, one of 25 rare SNPs in the peak. Frequencies (D31.10): the pooled controls fit gnomAD's
+  LLFS, LGP, SICS; 2,304 cases past the 99th percentile of their birth cohort and 5,879 controls, some from an
+  Illumina repository matched by principal components): G at 0.0067 in the cases and 0.0015 in the controls, β 1.74
+  (SE 0.347) on the log odds, P 6.3e-7, the lead of a peak of 25 rare SNPs; the lead is imputed, and its dosages match
+  4,241 whole genomes (r 0.999), so the call is sound. Frequencies (D31.10): the pooled controls fit gnomAD's
   non-Finnish Europeans (0.0013) and TopMed, gnomAD and ALFA's 0.001 to 0.002, so the signal is the cases' and the
-  discovery is read as printed. The paper's own split by ancestry has every group the same way (Southern Italian
-  0.012 against 0.0023, Ashkenazi 0.012 against 0.0024, Danish 0.005 against 0.0022, central European 0.004 against
-  0.0008), with the group sizes unprinted; G is 0.0066 in gnomAD's Ashkenazi genomes, above those Ashkenazi controls,
-  and 0.024 to 0.032 in Middle Eastern, African and South Asian genomes, so a little residual ancestry in cases or
-  controls moves it far more than the gap: named, not tested (unknown). Its replications are unpowered: UK Biobank's
-  mothers −0.022 (SE 0.041), P 0.59, and fathers +0.025 (SE 0.044), P 0.57, where Bae's own APOE line (0.84 in the
-  discovery, 0.020 and 0.019 in the parents) carries G's 1.74 to about +0.04, power about 0.17 (derived); UKB+LifeGen
-  and Timmers 2019 drop variants under 0.5 %. Park 2025's own survival has G with more deaths, P 0.39 (one-sided 0.19
-  against); carried by the same APOE ratio (Park's rs429358 0.0129) G expects about −0.027, power 0.78, heterogeneity
-  P 0.003 (derived): short of D21's power, no flag. Pilling 2017's top-10 % deposit flat (P 0.48), its other three
-  holding no line. Deelen 2019, FinnGen R11 (G absent in Finns), Zenin 2019 and Foote 2025 hold no line, and Wright
-  2019's two common lines within 500 kb cannot tag a 0.13 % variant: untested, not negative. The literature search
-  (the rsID; Semantic Scholar answered 429 and the preprint index timed out, their parts unchecked) finds Bae and an
-  editorial; Bae's citing papers could not be listed (Semantic Scholar 429). Outcome cells: exceptional survival +
-  (the discovery, the row's only test), lifespan 0 (Park and UK Biobank's parents flat, unpowered), healthspan
-  untested. Mechanism ageing in general (D25.7): intronic in a pseudogene's lncRNA, nothing recorded at the variant.
-  Causal C4 and effector E4: no Open Targets record. Descriptive. Age of action unknown. The evidence is European,
-  with Ashkenazi and Southern Italian samples carrying most of the signal.
+  discovery is read as printed. The paper's own split by ancestry has every group the same way (Southern Italian 0.012
+  against 0.0023, Ashkenazi 0.012 against 0.0024, Danish 0.005 against 0.0022, central European 0.004 against 0.0008),
+  with the group sizes unprinted; if the groups track the studies, the Ashkenazi and Southern Italian cases hold about
+  10 of the cases' 31 or so copies, the highest frequencies but not most of the signal. Against references near each
+  group, the Ashkenazi controls sit under gnomAD's Ashkenazi genomes (0.0066) and the Southern Italian under 1000
+  Genomes' Iberians (0.0093 on 2 copies; Tuscans none), and G is 0.024 to 0.032 in Middle Eastern, African and South
+  Asian genomes, so a little residual ancestry in cases or controls moves it far more than the gap: named, not
+  testable without the group sizes (unknown). Its replications are unpowered: UK Biobank's fathers −0.022 (SE 0.041),
+  P 0.59, and mothers +0.025 (SE 0.044), P 0.57, where Bae's own APOE line (0.84 in the discovery, 0.020 and 0.019 in
+  the parents) carries G's 1.74 to about +0.04, power 0.27 and 0.22 (derived); UKB+LifeGen, which is Timmers 2019's
+  data, drops variants under 0.5 %. Park 2025's own survival has G with more deaths, P 0.39 (one-sided 0.19 against);
+  carried by the same APOE ratio (Park's rs429358 T −0.0129) G expects about −0.027, power 0.78, heterogeneity P 0.003
+  (derived): short of D21's power, no flag; whether Bae's APOE ratio may calibrate Park at all no ruling says, put to
+  the lead. Pilling 2017's top-10 % deposit flat (P 0.48), its other three holding no line. Deelen 2019, FinnGen R11
+  (G absent in Finns), Zenin 2019 and Foote 2025 hold no line, and Wright 2019's two common lines within 500 kb cannot
+  tag a 0.13 % variant: untested, not negative, and no LD look is possible for a variant this rare in 1000 Genomes'
+  CEU (as 107). Timmers' strongest line within 500 kb is P 2.2e-4, Deelen's 8.7e-5: nothing suggestive. The literature
+  search (the rsID; Semantic Scholar answered 429 and the preprint index timed out, their parts unchecked) and RPLP0P2
+  with longevity terms find Bae and an editorial; of Bae's 18 citing papers none re-tests the variant (the same
+  group's Calabrian GWAS among them). Outcome cells: exceptional survival + (the discovery, the row's only test),
+  lifespan 0 (Park and UK Biobank's parents flat, unpowered), healthspan untested. Mechanism ageing in general
+  (D25.7): intronic in a pseudogene's lncRNA, nothing recorded at the variant. Causal C4 and effector E4: no Open
+  Targets record. Descriptive. Age of action unknown. The evidence is European, with the highest frequencies in its
+  Ashkenazi and Southern Italian cases.
 axes:
-  tier: {value: C, cites: [pmid-36613555#q1, pmid-36613555#q2, pmid-36613555#q3, pmid-36613555#q4, pmid-36613555#q5, pmid-36613555#q6, pmid-36613555#q7, db-ensembl-116#q798, pmid-40021682#q118, pmid-40021682#q32, pmid-29227965#q161, pmid-31484785#q166, db-gwascatalog-2026.10.29#q574]}
+  tier: {value: C, cites: [pmid-36613555#q1, pmid-36613555#q2, pmid-36613555#q3, pmid-36613555#q4, pmid-36613555#q5, pmid-36613555#q6, pmid-36613555#q7, pmid-36613555#q8, pmid-36613555#q9, pmid-36613555#q10, db-ensembl-116#q798, db-ensembl-116#q801, pmid-40021682#q118, pmid-40021682#q32, pmid-29227965#q161, pmid-31484785#q166, db-gwascatalog-2026.10.29#q574]}
   mechanism: {value: general_ageing, cites: [db-ensembl-116#q797]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -65,8 +72,8 @@ variants:
         conclusion: >-
           You carry one copy of a rare version of this DNA position (about 1 in 400 people of European ancestry do, and
           more people of Middle Eastern, African or South Asian ancestry). One combined study of people who lived past
-          about 100 found it several times more often among them, mostly in Ashkenazi Jewish and Southern Italian
-          families, but it rests on a few dozen carriers, has not been confirmed, and the larger studies could not test
+          about 100 found it several times more often among them, most often in its Ashkenazi Jewish and Southern
+          Italian people, but it rests on a few dozen carriers, has not been confirmed, and the larger studies could not test
           it, so this is weak, early evidence: a slight tendency at most, not destiny.
       - genotype: G/G
         state: protective
@@ -80,7 +87,7 @@ studies:
     quote: q1
     phenotype_class: EXTREME_SURVIVAL_CC
     study_design: percentile_case_control_p99
-    population: European (NECS, LLFS, LGP Ashkenazi, SICS Southern Italian; cases past the 99th percentile against study and repository controls, q5 to q7)
+    population: European (NECS, LLFS, LGP, SICS Southern Italian; cases past the 99th percentile against study and repository controls, q5 to q7)
     ancestry: [EUR]
     sample_size: 8183
     sample_unit: individuals
@@ -94,7 +101,7 @@ studies:
     effect_unit: log odds of surviving past the 99th percentile per G allele
     effect_allele: G
     direction: protective
-    statistical_test: "Bae 2022's mega-analysis (Table 1, q1), SE 0.347, G 0.0067 in cases and 0.0015 in controls (q3); controls at gnomAD NFE 0.0013 (db-ensembl-116#q798); by ancestry every group the same way, sizes unprinted (q4); UK Biobank mothers P 0.59 and fathers 0.57, unpowered by Bae's own APOE line (q2; power about 0.17, derived)"
+    statistical_test: "Bae 2022's mega-analysis (Table 1, q1), SE 0.347, G 0.0067 in cases and 0.0015 in controls (q3); controls at gnomAD NFE 0.0013 (db-ensembl-116#q798); by ancestry every group the same way, sizes unprinted (q4); UK Biobank fathers P 0.59 and mothers 0.57 (q9), unpowered by Bae's own APOE line (q2; power 0.27 and 0.22, derived); imputation checked against whole genomes, r 0.999 (q8)"
     curator: claude-opus-5-5
   - rsid: rs145265196
     note: pmid-40021682
