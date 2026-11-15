@@ -2883,3 +2883,21 @@ rs13963 (row 116): missense in CLEC3B at GRCh38 3:45,035,631 (q785), G/A/C/T in 
 Tanisawa does; GRCh37 3:45,077,123 (q787); band 3p21.31 (q788). A (serine) 0.38 in 1000 Genomes Europeans, 0.41 in
 gnomAD's non-Finnish genomes, 0.86 in East Asians (q786); G 0.073 in CHB (q789), 0.100 in CHS, the Southern Han
 (q790), 0.226 in JPT (q791). rs6441877 is one of eleven CEU partners at r² 1.00 (q792). For row 116.
+
+## Reading 2026-11-15, record
+
+> [q793] populations[86] allele G allele_count 22 population 1000GENOMES:phase_3:CDX frequency 0.118279569892473
+
+> [q794] populations[116] allele G allele_count 37 frequency 0.186868686868687 population 1000GENOMES:phase_3:KHV
+
+> [q795] . canonical_transcript ENST00000424952.7 source ensembl_havana assembly_name GRCh38 biotype protein_coding db_type core end 44976282 logic_name ensembl_havana_gene_homo_sapiens start 44914692 seq_region_name 3 strand -1 id ENSG00000163812 description zDHHC palmitoyltransferase 3 [Source:HGNC Symbol;Acc:HGNC:18470] display_name ZDHHC3 version 18 object_type Gene species homo_sapiens
+
+> [q796] . id ENSG00000075914 assembly_name GRCh38 strand 1 start 44975241 source ensembl_havana species homo_sapiens description exosome component 7 [Source:HGNC Symbol;Acc:HGNC:28112] canonical_transcript ENST00000265564.8 db_type core biotype protein_coding object_type Gene version 15 display_name EXOSC7 seq_region_name 3 end 45036071 logic_name ensembl_havana_gene_homo_sapiens
+
+rs13963 (row 116): G 0.118 in 1000 Genomes' Dai of Xishuangbanna (q793) and 0.187 in Kinh of Vietnam (q794), beside
+CHB 0.073, CHS 0.100 and JPT 0.226 (q789 to q791). Hainan's Chinese cohort (Tanisawa, controls 0.066, cases 0.103):
+against the point values the controls are short of every southern reference (CHS P 3.2e-4, CDX and KHV below
+1e-6) and fit CHB (P 0.41), and the cases sit at CHS and CDX (P 0.76, 0.16) and above CHB (P 5e-4); counting each
+reference's sampling error (about 100 people), the controls' P is 0.14 against CHS, 0.04 against CDX, 1e-4 against
+KHV and 0.73 against CHB (derived). ENSG00000163812 is ZDHHC3 (q795) and ENSG00000075914 EXOSC7 (q796), the
+genes of the lead's eQTL sets (q1194, q1195). For row 116.
