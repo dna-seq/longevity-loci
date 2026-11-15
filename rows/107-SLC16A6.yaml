@@ -9,14 +9,19 @@ verdict_reason: >-
   Tier C, the seed's: a sub-genome-wide discovery in one sample, old against young (R-TIER-2), that no other study has
   tested (§4.1's C). Kolbe 2025 sequenced the exomes of 1,245 German long-lived individuals and 4,105 younger controls;
   C was at 0.20 % among the long-lived and 0.01 % among the controls, OR 12.1 (Haldane-corrected), P 9.8e-7, adjusted
-  0.025 under the paper's exploratory false-discovery rate of 0.05, its own exome-wide call; D17.3 reads the paper's P,
-  which is not genome-wide, and R-TIER-2 caps a single old-against-young sample at C either way. On 2,490 and 8,210
+  0.025 under the paper's exploratory false-discovery rate of 0.05, its own exome-wide call, not a genome-wide one
+  (R-TIER-4, D31.13), and R-TIER-2 caps a single old-against-young sample at C either way. On 2,490 and 8,210
   alleles that is about five copies against about one, and the controls sit well below gnomAD's non-Finnish 0.09 %, so
   the paper's own odds ratio against that reference, 2.36, is the steadier size: the controls' 8,210 alleles expect
   about 7 copies and show about 1 (Poisson P 0.007), the long-lived 2,490 about 2.1 and show about 5 (P 0.066), so the
-  signal is mostly the controls' deficit, and most long-lived copies are in men (0.60 %), the women at the population's
-  0.06 %. The authors report it without doubt, so it is not an overfit source by the rule's own cases (rows 41, 44,
-  48, 60, each disowned by its authors or their filter); so, by D31.10, the case-control OR (12.1, P 9.8e-7) is named, not read: the
+  signal is mostly the controls' deficit, and most long-lived copies are in men (0.60 %), the women at 0.06 %, about
+  1 copy against 1.56 expected from the population's 0.09 % (derived; the split is never tested, so no sex token,
+  D29.16, D31.13). The reference is fixed as gnomAD's non-Finnish exomes, the exome study's matching assay (D31.13);
+  against the non-Finnish genomes (0.075 %) the controls would give P 0.015, near D30.10's cut of 0.01, and the
+  long-lived one-sided 0.041 (derived): the reading is fragile, and said so. The authors note that the OR against
+  gnomAD is considerably lower than their own and that gnomAD's non-Finnish Europeans are mostly British, unlike
+  their cohort; they do not disown the call, so it is not an overfit source by the rule's own cases (rows 41, 44, 48,
+  60, each disowned by its authors or their filter); so, by D31.10, the case-control OR (12.1, P 9.8e-7) is named, not read: the
   row reads the long-lived against gnomAD NFE, the paper's own OR 2.36, which the paper tests no further and which the
   Poisson comparison puts at one-sided P 0.066 (derived), not a pass. No replication exists: the authors say
   none of comparable size is available, their Ashkenazi look-up holds three of the seven variants, not this one, and
@@ -32,10 +37,10 @@ verdict_reason: >-
   healthspan untested. Mechanism ageing in general (D25.7): the authors tie SLC16A6
   to the intestinal excretion of ketone bodies, which they link to longevity through fasting, a route not tested here;
   named. Causal C4: no Open Targets record. Effector E4, the gene named in prose: the change is synonymous, so it alters
-  no protein (D31.9, D31.10). Descriptive.
+  no protein (D31.9, D31.10). Every genotype neutral: the read effect, one-sided 0.066, is not significant (D31.13). Descriptive.
   Age of action unknown. The evidence is European (German).
 axes:
-  tier: {value: C, cites: [pmid-40232348#q1, pmid-40232348#q2, pmid-40232348#q3, pmid-40232348#q4, pmid-40232348#q5, pmid-40232348#q7, db-ensembl-116#q764, db-gwascatalog-2026.10.29#q568]}
+  tier: {value: C, cites: [pmid-40232348#q1, pmid-40232348#q2, pmid-40232348#q3, pmid-40232348#q4, pmid-40232348#q5, pmid-40232348#q7, pmid-40232348#q21, pmid-40232348#q12, db-ensembl-116#q764, db-gwascatalog-2026.10.29#q568]}
   mechanism: {value: general_ageing, cites: [pmid-40232348#q6]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -64,20 +69,21 @@ variants:
           does. It is the reference the other combinations are compared with. The position lies in the SLC16A6 gene on
           chromosome 17.
       - genotype: C/G
-        state: protective
+        state: neutral
         conclusion: >-
           You carry one copy of a rare version of this DNA position (about 2 in 1,000 people of European ancestry do).
           It lies in the SLC16A6 gene and does not change the protein the gene makes. One German study found it a few
           times among very long-lived people, a little more often than in the general population, but the difference
-          rests on a handful of carriers, is not clear, and has not been checked elsewhere, so this is weak, early
-          evidence: a slight tendency at most, not destiny.
+          rests on a handful of carriers, is not clear, and has not been checked elsewhere, so it is not counted for or
+          against lifespan.
       - genotype: C/C
-        state: protective
+        state: neutral
         conclusion: >-
           You carry two copies of a rare version of this DNA position, which is very unusual; the one study of it found
           no one with two copies. It lies in the SLC16A6 gene and does not change the protein the gene makes. One German
           study found single copies a few times among very long-lived people, a difference that is not clear and has
-          not been checked elsewhere, so nothing can be said about two copies.
+          not been checked elsewhere, so nothing can be said about two copies, and it is not counted for or against
+          lifespan.
 studies:
   - rsid: rs112262188
     note: pmid-40232348
@@ -99,4 +105,22 @@ studies:
     effect_allele: C
     direction: protective
     statistical_test: "Kolbe 2025's STAAR-O single-variant test with sex and ten principal components (Table 1, q1, q3), MAC ≥ 5; cases past the 95th age-at-death percentile of their birth cohort (q7), no p95 design term, so an age threshold; FDR-adjusted 0.025 under an exploratory FDR < 0.05 (q2); C 0.20 % in the long-lived, 0.01 % in the controls, about five copies against one; against gnomAD NFE 0.09 % the paper's own OR 2.36; the controls misfit gnomAD (about 1 copy against 7, Poisson P 0.007), so this OR is named, not read (D31.10), and the variant carries 2.36 (one-sided P 0.066, derived); no replication (q4, q5)"
+    curator: claude-opus-5-5
+  - rsid: rs112262188
+    note: pmid-40232348
+    quote: q1
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: German long-lived individuals (Kolbe 2025) against gnomAD's non-Finnish European exomes as the reference
+    ancestry: [EUR]
+    n_cases: 1245
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: not_significant
+    effect_size: 2.36
+    effect_measure: OR
+    effect_unit: odds of carrying C, the long-lived against the gnomAD reference
+    effect_allele: C
+    direction: protective
+    statistical_test: "The paper's own OR against gnomAD NFE (Table 1, q1, columns q3), with no test printed; the row's read effect by D31.10, the reference fixed as the exomes (D31.13). About 5 copies in 2,490 long-lived alleles against 2.1 expected from gnomAD's non-Finnish exomes (0.086 %, db-ensembl-116#q764): Poisson one-sided P 0.066, not a pass (derived); against the non-Finnish genomes (0.075 %) 0.041 (derived). The authors call it considerably lower than their own (q21) and note gnomAD NFE is mostly British (q12)"
     curator: claude-opus-5-5
