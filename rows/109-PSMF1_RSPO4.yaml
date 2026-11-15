@@ -7,27 +7,30 @@ locus_id: 109
 locus_name: PSMF1/RSPO4
 verdict: re-tiered
 verdict_reason: >-
-  Tier D, from the seed's C: a suggestive discovery that its own replication reverses at power (D25.1, D30.11), row
-  62's shape, from the same paper. Beccacece 2026's exploratory GWAS of 705 Calabrians, long-lived cases against
-  younger controls from the ECHA and GEHA cohorts in a mixed model, gives T +2.241 (OR 9.40; SE 0.476 from the P), P
-  2.45e-6, one of its 22 suggestive loci; the unrelated subset agrees (OR 10.5, P 0.0053). Its SICS replication has T
-  at 2.9 % with Beta −0.265, P 0.56, the opposite sign: one-sided power 1.00, heterogeneity P 1.4e-4, at half the
-  effect 0.007, a D21 red flag. Timmers 2019's million parents' lives go the other way, nominally: T −0.0233 per self
-  (SE 0.0106), P 0.028, "--"; carried there by D25.3's calibrations (the cases' ages unread, so the 99th and the 90th
-  factors both), the discovery predicts +0.36 to +1.11, heterogeneity P 6.7e-7 to 1.5e-6, a red flag under every one.
-  Nothing independent passes. Deelen 2019's 90th percentile leans T's way (+0.191, SE 0.062, P 0.0021, one-sided
-  0.001; 99th P 0.27), but Deelen holds GEHA Italy and the Calabrian sample comes from GEHA and ECHA, so it is not
-  independent as far as shown (as 130's CEPH): named, not counted; on the discovery's scale it is also twelve times
-  smaller (heterogeneity P 1.9e-5). Pilling 2017's parents lean against T (both parents P 0.06, fathers 0.056; mothers
-  and the top 10 % flat), inside Timmers; FinnGen R11's death endpoint flat (P 0.55), a database line; Park 2025's own
-  survival flat (P 0.79); Zenin 2019's healthspan flat; Foote 2025 holds no line; Wright 2019's four Table 8 lines 230 to 350
-  kb away tag nothing (Ensembl lists no CEU variant at r² 0.5 with the lead): AncestryDNA untested. Timmers' strongest line
-  within 500 kb is P 2.8e-4: nothing suggestive. The literature search (the rsID, and PSMF1 or RSPO4 with longevity
-  terms; Semantic Scholar answered 429, its part unchecked) finds Beccacece alone. Every genotype neutral (D25.2); outcome cells 0 (D28.10). Mechanism ageing in general (D25.7): the paper
-  names PSMF1, a proteasome inhibitor, and RSPO4 as the nearest genes; the abstract's proteasome-related variant
-  confirmed by meta-analysis is not shown to be this one. Causal C4 and effector E4: no Open Targets record either
-  way. Descriptive. Age of action unknown. The evidence is European; the Calabrian frequency is a third of the
-  non-Finnish reference.
+  Tier D, from the seed's C: read against the reference, as D31.10 reads a discovery whose controls misfit it, the
+  discovery shows no enrichment, and nothing independent passes. Beccacece 2026's exploratory GWAS of 705 Calabrians
+  (299 long-lived cases and 406 younger controls from the ECHA and GEHA cohorts, a mixed model) gives T +2.241 (OR
+  9.40), P 2.45e-6, one of its 22 suggestive loci, with T at 1.35 % across the sample. Every other sample has T near 3
+  to 4 %: SICS 2.9 %, Deelen 4 %, Timmers 4.1 %, gnomAD's non-Finnish genomes 4.3 %. Solved from the OR and the counts,
+  the controls carry about 2.5 copies in 812 alleles (0.3 %) where SICS's frequency expects about 23.5 (Poisson P 2e-8),
+  and the cases about 16.5 copies in 598 (2.8 %) where it expects 17.3 (derived): the signal is the controls' deficit,
+  and the long-lived sit at the reference. So the case-control Beta is named, not read (D31.10). The SICS replication
+  (T −0.265, P 0.56) and Timmers' parents (T −0.0233 per self, P 0.028, "--") were tested against that Beta (SICS power
+  1.00, heterogeneity P 1.4e-4, at half the effect power 0.79, the flag lapsing; Timmers flagged under every D25.3
+  factor, the case ages unread); with the Beta unread, those flags have nothing to test and `replication_failed` is
+  not carried, put to the lead. Deelen 2019's 90th percentile leans T's way (+0.191, SE 0.062, P 0.0021; 99th P 0.27),
+  but Deelen holds GEHA Italy and the Calabrian sample comes from GEHA and ECHA, and neither paper separates them, so
+  it is not independent (D19.1's last clause; as 130's CEPH): named, not counted, put to the lead. Pilling 2017's
+  parents lean against T (both parents P 0.06, fathers 0.056), inside Timmers; FinnGen R11 flat (P 0.55), a database
+  line; Park 2025 flat (P 0.79); Zenin 2019 flat; Foote 2025 holds no line; Wright 2019's four Table 8 lines 230 to 350
+  kb away have no CEU pair with the lead and none is among its CEU variants at r² 0.5: AncestryDNA untested. Timmers'
+  strongest line within 500 kb is P 2.8e-4. The literature search (the rsID, and PSMF1 or RSPO4 with longevity terms;
+  Semantic Scholar 429) finds Beccacece alone. The abstract's intronic variant "confirmed by meta-analysis" is not
+  this one: the paper's eQTL sheet holds no line for it (Table S1 annotates it intergenic, nearest RSPO4). Every
+  genotype neutral (D25.2); outcome cells 0 (D28.10); the variant's direction unknown. Mechanism ageing in general
+  (D25.7): PSMF1 is the seed's name for the locus, RSPO4 the paper's nearest gene; nothing recorded at the variant.
+  Causal C4 and effector E4: no Open Targets record either way. Descriptive. Age of action unknown. The evidence is
+  European.
 axes:
   tier: {value: D, cites: [pmid-42176242#q14, pmid-42176242#q15, pmid-42176242#q16, pmid-42176242#q6, pmid-42176242#q11, pmid-42176242#q2, pmid-30642433#q382, pmid-31413261#q250, pmid-30642433#q90, pmid-30642433#q92, pmid-31413261#q82, pmid-31413261#q274, pmid-31413261#q275, pmid-31413261#q56, pmid-31413261#q89, db-gwascatalog-2026.10.29#q393, pmid-29227965#q141, pmid-29227965#q142, pmid-29227965#q143, pmid-29227965#q144, db-finngen-r11#q86, pmid-40021682#q113, pmid-40021682#q32, db-gwascatalog-2026.10.29#q569]}
   mechanism: {value: general_ageing, cites: [pmid-42176242#q14, pmid-42176242#q3]}
@@ -38,7 +41,6 @@ axes:
   actionability: {label: descriptive, cites: [pmid-42176242#q14]}
   context: {values: [eur_only_evidence], cites: [pmid-42176242#q1, pmid-30642433#q382]}
 flags:
-  - {token: replication_failed, cites: [pmid-42176242#q16, pmid-42176242#q11, pmid-30642433#q382, pmid-31413261#q250, pmid-30642433#q90]}
   - {token: "causal:C4", cites: [db-opentargets-26.09#q1188]}
   - {token: "effector:E4", cites: [db-opentargets-26.09#q1188]}
 variants:
@@ -50,7 +52,7 @@ variants:
     effect_size: 2.241
     effect_measure: beta
     stat_significance: suggestive
-    direction: protective
+    direction: unknown
     genotypes:
       - genotype: G/G
         state: neutral
@@ -91,7 +93,7 @@ studies:
     effect_unit: log odds of being long-lived per T allele
     effect_allele: T
     direction: protective
-    statistical_test: "Beccacece 2026's mixed-model GWAS, Table S1 (q14, columns q6), T 1.35 %, OR 9.40; unrelated subset OR 10.5, P 0.0053 (q15); SICS replication T −0.265, P 0.56 (q16, columns q11): power 1.00, heterogeneity P 1.4e-4 (derived)"
+    statistical_test: "Beccacece 2026's mixed-model GWAS, Table S1 (q14, columns q6), T 1.35 %, OR 9.40; unrelated subset OR 10.5, P 0.0053 (q15); SICS replication T −0.265, P 0.56 (q16, columns q11): power 1.00, heterogeneity P 1.4e-4 (derived). The controls misfit the reference (about 2.5 copies against 23.5 expected at SICS's 2.9 %, Poisson P 2e-8; the cases at the reference, derived), so this Beta is named, not read (D31.10)"
     curator: claude-opus-5-5
   - rsid: rs113181552
     note: pmid-30642433
@@ -110,5 +112,5 @@ studies:
     effect_unit: log hazard protection per T allele in self (positive = longer life)
     effect_allele: T
     direction: risk
-    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0106, direction --, info 0.96; against the Calabrian +2.241 by D25.3's calibrations (99th 6.22 from pmid-31413261#q250 over q90, 90th 4.84 from pmid-31413261#q82; mean ×0.4175, q92): expected +0.36 to +1.11, power 1.00, heterogeneity P 6.7e-7 to 1.5e-6, a red flag under all four (derived)"
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0106, direction --, info 0.96; against the Calabrian +2.241, which the row no longer reads (D31.10), by D25.3's calibrations (99th 6.22 from pmid-31413261#q250 over q90, 90th 4.84 from pmid-31413261#q82; mean ×0.4175, q92): expected +0.36 to +1.11, power 1.00, heterogeneity P 6.7e-7 to 1.5e-6 (derived), not carried as a flag"
     curator: claude-opus-5-5
