@@ -1,9 +1,9 @@
 **Where it stands** (2026-11-15): the longevity loci are being re-curated from their evidence, one row per locus. 104 of 161 seed loci are done (65 %), in 101 rows; eleven batches read adversarially. The rows now build into the annotation module on just-dna-format 0.8. The first trial publish is on the registry's test instance; nothing is on production.
 
 **Headline results**
-- Few loci reach the top tier: 8 at A, 57 at B, 18 at C and 18 at D (with 130 moved to C). A means a genome-wide hit with an independent replication and no red flag; most fall short on the replication.
+- Few loci reach the top tier: 8 at A, 57 at B, 18 at C and 18 at D. A means a genome-wide hit with an independent replication and no red flag; most fall short on the replication.
 - 15 seed loci dropped to D. Their discovery failed a powered test in its own ancestry, or its own authors called it anomalous.
-- The module builds strictly: 93 loci, 279 genotype rows and 465 studies, every position resolved (test instance, longevitymap 2.0.0, rebuilt with batch ten).
+- The module builds strictly: 101 loci, 303 genotype rows and 496 studies, every position resolved (test instance, longevitymap 2.0.0, rebuilt with batch eleven).
 
 **Next**
 1. Apply batch eleven's corrections (D31.4-9) and the calibration sweep, then curate the seed's tier C loci by id; APOE (96) last, on the person's D2; 151 EYS waits for its preprint's text (curator). Pacing is off on the person's word.
