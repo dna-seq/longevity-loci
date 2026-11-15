@@ -39,7 +39,9 @@ verdict_reason: >-
   the other way; Park 2025 C −0.0008 on the Martingale residual (its columns swapped), fewer deaths, C's way, P 0.31; FinnGen R11's deaths G
   −0.0039, P 0.67, a database line (D29.1); all flat. Zenin 2019 flat (P 0.54), so healthspan 0. Foote 2025's factor 2
   (unhealthy lifestyle) puts C on the frailer side (P 0.017) and factors 1, 3, 5 and 6 the same side, flat; a D row's Foote factor scores
-  nothing (multivariate), named. Pilling 2017's four parental scans are flat, both signs (P 0.31 to 0.97). The literature search
+  nothing (multivariate), named. Pilling 2017's four parental scans are flat, both signs (P 0.31 to 0.97). Wright 2019's AncestryDNA tables list
+  nothing at the lead under their P 0.003 cut, so AncestryDNA is unknown above it; their mothers' lines 182 to 440 kb
+  away (strongest rs4964460, meta P 4.5e-5, AncestryDNA 4.0e-6) do not tag the lead (r² under 0.05). The literature search
   (the rsID; Semantic Scholar answered 429, its part unchecked) finds nothing; Hsieh is found by its PMID, and its one
   citing paper is a Finnish polygenic lifespan score, with no single-variant test. The ancestry is named here, not as
   a context token (D30.15). Every genotype neutral (D25.2). Exceptional survival 0 (Deelen leans C's way, short of
@@ -49,7 +51,7 @@ verdict_reason: >-
   non-scoring set, named. Causal C4 and effector E4: no lifespan-class credible
   set. Descriptive. Age of action unknown.
 axes:
-  tier: {value: D, cites: [pmid-41949656#q28, pmid-41949656#q29, pmid-41949656#q30, pmid-41949656#q9, pmid-41949656#q4, pmid-41949656#q5, pmid-41949656#q10, pmid-41949656#q16, db-ensembl-116#q877, db-ensembl-116#q879, db-ensembl-116#q880, pmid-31413261#q297, pmid-31413261#q298, pmid-30642433#q398, pmid-40021682#q122, db-finngen-r11#q98, pmid-30729179#q161, pmid-40759756#q110, pmid-40759756#q111, pmid-29227965#q162, pmid-29227965#q163, pmid-29227965#q164, pmid-29227965#q165, db-gwascatalog-2026.10.29#q581]}
+  tier: {value: D, cites: [pmid-41949656#q28, pmid-41949656#q29, pmid-41949656#q30, pmid-41949656#q9, pmid-41949656#q4, pmid-41949656#q5, pmid-41949656#q10, pmid-41949656#q16, db-ensembl-116#q877, db-ensembl-116#q879, db-ensembl-116#q880, pmid-31413261#q297, pmid-31413261#q298, pmid-30642433#q398, pmid-40021682#q122, db-finngen-r11#q98, pmid-30729179#q161, pmid-40759756#q110, pmid-40759756#q111, pmid-29227965#q162, pmid-29227965#q163, pmid-29227965#q164, pmid-29227965#q165, pmid-31484785#q172, db-gwascatalog-2026.10.29#q581]}
   mechanism: {value: general_ageing, cites: [db-ensembl-116#q875, db-opentargets-26.09#q1224, db-opentargets-26.09#q1225]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}

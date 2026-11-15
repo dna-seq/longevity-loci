@@ -12,25 +12,29 @@ verdict_reason: >-
   of reaching the 90th percentile age, OR 0.83 (0.77–0.89), P 5.4e-7, under genome-wide, I² 14.5; the 99th
   percentile line (P 0.0056) draws on the same cases and is not independent, and the de novo replication covered
   APOE only. Deelen's own validation in UK Biobank, which the discovery does not include, does not replicate it:
-  parents past the 90th percentile give T OR 1.00 (0.95–1.04), P 0.86, and parental lifespan 0.99, P 0.135. At half
-  the discovery's effect for a parent's genotype (the authors state power even at half) that is power 0.99,
-  heterogeneity P 0.0018, and at the full effect 2.2e-5, holding down to 0.32 of the effect (derived): a D21 red flag,
+  parents past the 90th percentile give T OR 1.00 (0.95–1.04), P 0.86 (its parental-lifespan line is Timmers 2019's
+  own figure, told below). At half the discovery's effect for a parent's genotype (the authors state power even at
+  half; only APOE validated) that is power 0.99, heterogeneity P 0.0018, holding down to 0.64 of that halved effect,
+  and at the full effect P 2.2e-5 (derived): a D21 red flag,
   `replication_failed`, with no independent scoring-class P under 0.05 its way. Timmers 2019's parental lifespan (UK
-  Biobank and LifeGen, overlapping that validation) leans the discovery's way, T beta1 −0.0093 (SE 0.0062), P 0.135,
+  Biobank and LifeGen; it overlaps that validation, and LifeGen shares cohorts such as Rotterdam with Deelen's
+  discovery, so it is not independent) leans the discovery's way, T beta1 −0.0093 (SE 0.0062), P 0.135,
   one-sided 0.067, not a pass (D25.13); by APOE's factor it would flag too (power 1.00, heterogeneity P 0.0033), by
   the loci's mean factor not (power 0.82, P 0.40), so it sets nothing of its own (D25.3). FinnGen R11's deaths put T
   with more deaths, flat (P 0.72), a database line (D29.1); Park 2025 flat (P 0.98); Pilling 2017's four parental
   scans flat (P 0.28 to 0.77); Zenin 2019 puts T a little later in healthspan, flat (P 0.31); Foote 2025's deposits
-  hold no line. T is all but absent in East Asians (0.08 %), so no East Asian sample tests it (Hsieh 2026's tables
-  leave it blank). The literature search (the rsID; Semantic Scholar answered 429, its part unchecked) finds Deelen's
-  and later papers reusing its summary statistics, no new genotyped test (as for row 26). Every genotype neutral
+  hold no line. Wright 2019's AncestryDNA tables list nothing at the lead under their P 0.003 cut, so AncestryDNA is
+  unknown above it; their one line within 500 kb, the current-age scan's rs11171681 76 kb away (P 1.9e-6), is a
+  viability line that does not tag the lead (r² under 0.05). T is all but absent in East Asians (0.08 %), so no East
+  Asian sample tests it. The literature search (the rsID, 2026-11-15; Semantic Scholar answered 429, its part unchecked) finds
+  Deelen alone. Every genotype neutral
   (D25.2). Exceptional survival 0 (the discovery is contradicted by the powered parental 90th percentile test, and a
   D row's discovery gives no +, D28.10); lifespan 0 (Timmers leans its way, short of nominal; FinnGen and Park
   flat); healthspan 0 (Zenin flat). Mechanism ageing in general (D25.7): the variant sits in RDH5's 3′ UTR and
   is a splicing QTL of the neighbouring TMEM198B pseudogene in GTEx; nothing recorded ties either to lifespan. Causal C4
   and effector E4: no lifespan-class credible set. Descriptive. Age of action unknown.
 axes:
-  tier: {value: D, cites: [pmid-31413261#q299, pmid-31413261#q300, pmid-31413261#q301, pmid-31413261#q302, pmid-31413261#q303, pmid-31413261#q58, pmid-31413261#q81, pmid-30642433#q399, db-finngen-r11#q99, pmid-40021682#q123, pmid-29227965#q166, pmid-30729179#q162, db-ensembl-116#q884, db-gwascatalog-2026.10.29#q582]}
+  tier: {value: D, cites: [pmid-31413261#q299, pmid-31413261#q300, pmid-31413261#q301, pmid-31413261#q57, pmid-31413261#q83, pmid-31413261#q302, pmid-31413261#q303, pmid-31413261#q58, pmid-31413261#q81, pmid-30642433#q399, db-finngen-r11#q99, pmid-40021682#q123, pmid-29227965#q166, pmid-29227965#q167, pmid-29227965#q168, pmid-29227965#q169, pmid-31484785#q171, pmid-30729179#q162, db-ensembl-116#q884, db-gwascatalog-2026.10.29#q582]}
   mechanism: {value: general_ageing, cites: [db-ensembl-116#q881, db-opentargets-26.09#q1228, db-ensembl-116#q885]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -39,7 +43,7 @@ axes:
   actionability: {label: descriptive, cites: [pmid-31413261#q299]}
   context: {values: [], cites: []}
 flags:
-  - {token: replication_failed, cites: [pmid-31413261#q299, pmid-31413261#q300, pmid-31413261#q58, pmid-31413261#q81]}
+  - {token: replication_failed, cites: [pmid-31413261#q299, pmid-31413261#q300, pmid-31413261#q57, pmid-31413261#q58, pmid-31413261#q81]}
   - {token: "causal:C4", cites: [db-opentargets-26.09#q1227, db-opentargets-26.09#q1228]}
   - {token: "effector:E4", cites: [db-opentargets-26.09#q1227, db-opentargets-26.09#q1228]}
 variants:
@@ -109,5 +113,5 @@ studies:
     effect_unit: odds of a parent surviving to the 90th percentile age per C allele of the participant (the printed 1.00 per T)
     effect_allele: C
     direction: protective
-    statistical_test: "Table 3 (q300; design q81): T OR 1.00 (0.95–1.04), SE of the log OR 0.023; against the discovery at half its effect for a parent's genotype (q58) power 0.99, heterogeneity P 0.0018; at the full effect 2.2e-5; a D21 red flag down to 0.32 of the effect (derived); parental lifespan 0.99, P 0.135 (q301)"
+    statistical_test: "Table 3 (q300; design q81): T OR 1.00 (0.95–1.04), SE of the log OR 0.023; against the discovery at half its effect for a parent's genotype (q58) power 0.99, heterogeneity P 0.0018; at the full effect 2.2e-5; a D21 red flag down to 0.64 of the halved effect (derived); the parental-lifespan line (q301) is Timmers 2019's own summary statistic"
     curator: claude-opus-5-5
