@@ -3161,3 +3161,20 @@ gnomAD's non-Finnish European exomes 0.0473 % (435 copies, q862) and genomes 0.0
 exomes, the reference D31.13 fixes for an exome study, the younger controls expect 3.9 copies and show none (P 0.021;
 the genomes 4.7 and P 0.009, or 0.012 counting the reference's own sampling error), so they fit; the long-lived show
 5 where 1.2 are expected (exact Poisson P 0.0072), derived. For row 125.
+
+## Reading 2026-11-15, record
+
+> [q864] populations[1] frequency 0.01684 population gnomADe:afr allele GG allele_count 387
+
+> [q865] populations[5] frequency 0.003622 allele GG population gnomADe:eas allele_count 96
+
+> [q866] populations[24] allele_count 55 frequency 0.002814 population gnomADe:sas allele GG
+
+> [q867] populations[15] allele_count 27 frequency 0.003205 allele GG population gnomADe:amr
+
+> [q868] . molecule dna seq TGTGTGTGGG query 17:48724356..48724365:1 id chromosome:GRCh38:17:48724356:48724365:1
+
+Row 125, rs199607933: GG is rare only in Europeans. gnomAD's exomes: African 1.68 % (q864), East Asian 0.36 %
+(q865), South Asian 0.28 % (q866), admixed American 0.32 % (q867), against non-Finnish European 0.047 %
+(q862). GRCh38 17:48,724,356 to 48,724,365 reads TGTGTGTGGG (q868), so 48,724,360 is T and Kolbe's T/TG and
+Ensembl's G/GG at 48,724,361 are the same insertion into the run of Gs. For row 125.

@@ -31,9 +31,10 @@ verdict_reason: >-
   its ±500 kb windows; the strongest, the 90th's 9:19,486,525 at 0.03 and 9:19,586,463 at 0.18, P 1.5e-4 and
   2.9e-4, and the 99th's 9:19,209,591 at 0.61, P 7.4e-4, cannot tag a 0.04 % variant), Timmers 2019, Pilling 2017, Zenin 2019, Park 2025 and Foote 2025: untested, not
   negative. Wright 2019's nearest line, rs10114375 9.5 kb away (fathers, P 0.0016; minor allele 9.6 %), and its
-  AncestryDNA fathers' lines 469 kb away (P 0.0014) cannot tag it either (r² at most about 0.004, derived). The literature search (the rsID; Semantic Scholar answered 429, its part unchecked) finds Kolbe alone; of
-  the papers citing Kolbe, the 2026 bioRxiv functional study read for row 120 edits variants in other genes, none in
-  RPS6. Exceptional survival + (the discovery, read as printed; against gnomAD too); lifespan untested (FinnGen holds it, flat,
+  AncestryDNA fathers' lines 469 kb away (P 0.0014) cannot tag it either (r² at most about 0.004, derived). The literature search (the rsID; Semantic Scholar answered 429, its part unchecked) finds Kolbe alone; the
+  five papers citing Kolbe (Semantic Scholar, 2026-11-15) are two reviews, an unrelated study, a machine-learning
+  study of GenAge and the 2026 bioRxiv functional study read for row 120, which edits variants in other genes; none
+  tests this one. Exceptional survival + (the discovery, read as printed; against gnomAD too); lifespan untested (FinnGen holds it, flat,
   but a database line neither replicates nor contradicts, D30.12, and it is short of a powered test); healthspan untested. Mechanism ageing in general (D25.7): RPS6 is a
   ribosomal protein downstream of mTOR, and the authors suggest the synonymous change may lower its expression
   (a rarer codon, an altered mRNA fold, from web tools; RPS6 expression non-significantly lower in Leiden's
@@ -41,7 +42,7 @@ verdict_reason: >-
   change meets no coding clause (§4.2; row 121's way), so no gene is named as acting; RPS6 is the gene it sits in.
   Descriptive. Age of action unknown. The evidence is European (German).
 axes:
-  tier: {value: C, cites: [pmid-40232348#q28, pmid-40232348#q3, pmid-40232348#q2, pmid-40232348#q7, pmid-40232348#q12, pmid-40232348#q29, pmid-40232348#q23, pmid-40232348#q5, pmid-40232348#q16, pmid-40232348#q24, pmid-40232348#q26, db-ensembl-116#q852, db-ensembl-116#q853, db-ensembl-116#q854, db-finngen-r11#q97, db-finngen-r11#q4, pmid-31484785#q167, pmid-31484785#q168, db-ensembl-116#q855, db-gwascatalog-2026.10.29#q578]}
+  tier: {value: C, cites: [pmid-40232348#q28, pmid-40232348#q3, pmid-40232348#q2, pmid-40232348#q7, pmid-40232348#q12, pmid-40232348#q29, pmid-40232348#q23, pmid-40232348#q5, pmid-40232348#q16, pmid-40232348#q35, pmid-40232348#q36, pmid-40232348#q24, pmid-40232348#q26, db-ensembl-116#q852, db-ensembl-116#q853, db-ensembl-116#q854, db-finngen-r11#q97, db-finngen-r11#q4, pmid-31484785#q167, pmid-31484785#q168, db-ensembl-116#q855, db-gwascatalog-2026.10.29#q578]}
   mechanism: {value: general_ageing, cites: [pmid-40232348#q30, pmid-40232348#q31, pmid-40232348#q32]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
