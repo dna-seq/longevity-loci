@@ -29,22 +29,21 @@ verdict_reason: >-
   the odds against ε3/ε3. So the pair results are worded from the per-allele effects added on the log scale
   (derived: against ε3/ε3 at the 90th percentile ε2/ε2 about 1.6, ε2/ε3 1.28, ε2/ε4 0.77, ε3/ε4 0.60, ε4/ε4 0.36;
   in years about +1.2, +0.6, −0.45, −1.06, −2.1), never as printed pair effects. ε2/ε2's own figures are weak: Kuo
-  2020 (UK Biobank, aged 40 to 70) gives its own death HR 1.06 (0.87–1.30) and triglycerides up 0.41 SD; ε2/ε3's
+  2020 (UK Biobank, aged 40 to 70) gives its own death HR 1.06 (0.87–1.30), a null, and triglycerides up 0.41 SD; its
+  derived hazard, about 0.92 (Kuo's ε2/ε3 0.96 doubled on the log scale), sits inside that interval, so the derived
+  state stands (D34.3); ε2/ε3's
   HR is 0.96 (0.91–1.01). Kuo's sentence on a four-cohort parental meta-analysis (ε2/ε3 OR 1.34, ε2/ε2 1.26 with an
   interval spanning 1) cites a reference not read here: named, not counted. The Alzheimer's results use Belloy 2023's
   odds in White individuals (n 34,021), each pair against ε3/ε3: ε2/ε2 0.39, ε2/ε3 0.53, ε2/ε4 2.23, ε3/ε4 3.46,
   ε4/ε4 13.04; odds in case-control samples, not lifetime risks; ε3/ε4's odds higher in East Asians (4.54) and lower
-  in Black and Hispanic samples; ε2 shows no protection in East Asians. Outside Europe, scripted against Deelen's
-  90th percentile on the same scale (two log odds of long-lived status; derived): Hsieh 2026's Taiwanese 90-and-over
-  GWAS (922 cases, 871 controls) gives ε4 OR 0.96 (P 0.82), one-sided power 0.88, heterogeneity P 0.011, a D21 red
-  flag; its ε2 line (OR 0.85, P 0.28) is unpowered (0.50). Its 95-and-over table leans Deelen's way for ε4 (OR 0.63,
-  P 0.12, one-sided 0.06, heterogeneity P 0.87) and not for ε2 (0.71, P 0.21, power 0.23), and its 85-and-over table
-  prints ε4 1.03 and ε2 0.85. Liu 2021's Chinese CLHLS meta-analysis has rs2075650's G, which tags ε4 at r² 0.81 in
-  CHB, at β −0.293 (P 6.2e-10): a genome-wide East Asian replication in ε4's direction. D21's letter and row 18's
-  precedent (D26.11) would make Hsieh's powered ε4 null `replication_failed` and cap the row at B under the 71/67
-  rule; the curator's default departs from them and is put to the lead: no flag, A, since an independent East Asian
-  sample at the 0.8 tag replicates genome-wide and Hsieh's ε4 line is null at 85 and 90 yet leans at 95. The
-  Calabrian GWAS (299 cases) has ε4's C at OR 0.66, P 0.12, the same side, power 0.61, heterogeneity P 0.72, no
+  in Black and Hispanic samples; ε2 shows no protection in East Asians. Outside Europe, against Deelen's 90th percentile on the same scale (two log odds of long-lived
+  status; derived): Hsieh 2026's Taiwanese 90-and-over GWAS (922 cases, 871 controls) gives ε4 OR 0.96 (P 0.82),
+  one-sided power 0.88, heterogeneity P 0.011, a powered non-replication; beside it, Liu 2021's independent Chinese
+  CLHLS longevity meta-analysis replicates genome-wide at rs2075650's G, which tags ε4 at r² 0.81 in CHB (β −0.293,
+  P 6.2e-10), so under D34.1 (D21 amended) no `replication_failed` is set: the two East Asian samples disagree with
+  each other, not with the locus. Hsieh's ε2 line (OR 0.85, P 0.28) is unpowered (0.50). Its 95-and-over (ε4 0.63, P
+  0.12; ε2 0.71, P 0.21) and 85-and-over (ε4 1.03, ε2 0.85) tables are named only, not grounds (D34.1).
+  The Calabrian GWAS (299 cases) has ε4's C at OR 0.66, P 0.12, the same side, power 0.61, heterogeneity P 0.72, no
   contradiction, though its authors call APOE not associated. Exceptional survival + (Deelen); lifespan + (Timmers,
   Park, FinnGen); healthspan + (Zenin 2019: ε2 later end of healthspan, P 0.0029; ε4 earlier, P 0.041). Age of
   action late, direct: Timmers' ε4 log hazard ratio over 70 is about three times that at 40 to 70 (age moderation P
@@ -59,9 +58,10 @@ verdict_reason: >-
   conditional analysis. Effector E1 APOE: both are missense in APOE, and locus-to-gene gives APOE 0.973 (next APOC2
   0.174); the colocalisation listing (1,825 rows) is not read. PROTECT:PRESENCE: ε2 is a protective version, not the
   absence of a risk one. Descriptive. `also_in:apoe_epsilon`: the pairs' Alzheimer's results overlap that module;
-  this row speaks of lifespan first. Proxies: R-APOE-1 names five; three are `ld_proxy_of` (all under the 0.8 used
-  elsewhere in CEU, rs2075650 at 0.81 in CHB), and rs405509 and rs449647, Rosoff's further leads, tag neither ε SNP:
-  named, not scored, put to the lead. The seed's other sources: Pilling 2017 (UK Biobank, inside Timmers' sample) and
+  this row speaks of lifespan first. Proxies (D34.4): R-APOE-1's five are positions folded into APOE, not scored; three
+  tag ε4 and carry `ld_proxy_of:rs429358`, which below r² 0.8 means folded into APOE, never a countable proxy
+  (rs2075650 0.55 in CEU and 0.81 in CHB, rs4420638 0.72, rs769449 0.80); rs405509 and rs449647, Rosoff's further
+  leads, tag neither ε SNP: named, no token. The seed's other sources: Pilling 2017 (UK Biobank, inside Timmers' sample) and
   Wright 2019 (AncestryDNA with UK Biobank) find APOE genome-wide in parents; Timmers 2020 finds APOE's effect does not fade with parental age; Joshi
   2016 (PMID 27029810) is not read. Literature searches (APOE genotype and Alzheimer's odds; APOE genotypes and
   extreme longevity; rs7412 and longevity since 2023; Semantic Scholar answered 429 and the preprint index timed out,
@@ -82,9 +82,9 @@ flags:
   - {token: "effector:E1", cites: [db-ensembl-116#q837, db-ensembl-116#q838, db-opentargets-26.09#q1217, db-opentargets-26.09#q1218, db-opentargets-26.09#q1219]}
   - {token: "PROTECT:PRESENCE", cites: [pmid-31413261#q291, pmid-31413261#q293, pmid-30060062#q2]}
   - {token: "also_in:apoe_epsilon", cites: []}  # antonkulaga/apoe_epsilon in the module registry's prod catalog, read 2026-11-15
-  - {token: "ld_proxy_of:rs429358", cites: [db-ensembl-116#q841, db-ensembl-116#q848]}  # rs2075650, r² 0.55 in CEU, 0.81 in CHB
-  - {token: "ld_proxy_of:rs429358", cites: [db-ensembl-116#q842]}  # rs4420638, r² 0.72 in CEU
-  - {token: "ld_proxy_of:rs429358", cites: [db-ensembl-116#q843]}  # rs769449, r² 0.80 in CEU (0.799)
+  - {token: "ld_proxy_of:rs429358", cites: [db-ensembl-116#q841, db-ensembl-116#q848]}  # rs2075650, r² 0.55 in CEU, 0.81 in CHB: folded into APOE (D34.4)
+  - {token: "ld_proxy_of:rs429358", cites: [db-ensembl-116#q842]}  # rs4420638, r² 0.72 in CEU: folded into APOE (D34.4)
+  - {token: "ld_proxy_of:rs429358", cites: [db-ensembl-116#q843]}  # rs769449, r² 0.80 in CEU (0.799): folded into APOE (D34.4)
 variants:
   - rsid: rs429358
     gene: APOE
@@ -356,7 +356,7 @@ studies:
     effect_unit: odds of having died at 90 or over rather than at 65 to 75, per C (ε4) allele
     effect_allele: C
     direction: risk
-    statistical_test: "Hsieh 2026's Table S5, the 90-and-over GWAS (q15, q16; 922 cases, 871 controls, q9); C at 0.076; log OR −0.041, SE about 0.18 from its P; against Deelen's 90th percentile log OR −0.511 (SE 0.034) one-sided power 0.88, heterogeneity P 0.011 (derived), a D21 red flag; whether it sets replication_failed is put to the lead (default no: Liu 2021's East Asian replication at the 0.81 tag)"
+    statistical_test: "Hsieh 2026's Table S5, the 90-and-over GWAS (q15, q16; 922 cases, 871 controls, q9); C at 0.076; log OR −0.041, SE about 0.18 from its P; against Deelen's 90th percentile log OR −0.511 (SE 0.034) one-sided power 0.88, heterogeneity P 0.011 (derived), a powered non-replication outweighed by Liu 2021's genome-wide East Asian replication at the r² 0.81 tag, so no flag (D34.1)"
     curator: claude-opus-5-5
   - rsid: rs429358
     note: pmid-42176242
@@ -517,7 +517,7 @@ studies:
     effect_unit: odds of having died at 95 or over rather than at 65 to 75, per C (ε4) allele
     effect_allele: C
     direction: risk
-    statistical_test: "Hsieh 2026's Table S6, the 95-and-over GWAS (q24, q25; 248 cases, 873 controls, q23): C at 0.071, OR 0.63, Deelen's side; log OR −0.462, SE 0.30 from its P; against Deelen's 90th percentile power 0.52, heterogeneity P 0.87 (derived)"
+    statistical_test: "Hsieh 2026's Table S6, the 95-and-over GWAS (q24, q25; 248 cases, 873 controls, q23): C at 0.071, OR 0.63, Deelen's side; log OR −0.462, SE 0.30 from its P; against Deelen's 90th percentile power 0.52, heterogeneity P 0.87 (derived); named only, not a ground (D34.1)"
     curator: claude-opus-5-5
   - rsid: rs429358
     note: pmid-33657282
