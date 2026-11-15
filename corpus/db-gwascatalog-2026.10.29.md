@@ -2050,3 +2050,17 @@ rs12143832 (row 1): one association (q558), Deelen 2019's longevity line itself;
 > [q559] page size 200 totalElements 2 totalPages 1 number 0
 
 rs2758603 (row 9): two associations (q559), Deelen's longevity at the 99th percentile and height. For row 9.
+
+## Reading 2026-11-15, record
+
+> [q560] _embedded.associations[2].reported_trait[0] Cigarettes smoked per day
+
+> [q561] _embedded.associations[5].reported_trait[0] Chronic obstructive pulmonary disease
+
+> [q562] _embedded.associations[11] association_id 12827494 risk_frequency 0.15 pvalue_description  pvalue_mantissa 8 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range [NR] beta 0.058 unit increase p_value 8e-09 accession_id GCST003185 pubmed_id 26440539 first_author Hancock DB
+
+> [q563] _embedded.associations[11].reported_trait[0] Nicotine dependence
+
+rs2273500 (row 99) in the GWAS Catalog: association 2 is cigarettes smoked per day (q560; its P 3e-64 and allele C, q528,
+q529), association 5 chronic obstructive pulmonary disease (q561; P 2e-9, allele C, q530, q531), and association 11
+nicotine dependence, Hancock 2015, P 8e-9 (q562, q563). For row 99.
