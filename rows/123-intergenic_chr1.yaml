@@ -1,0 +1,136 @@
+# The seed list's locus 123, intergenic chr1 (1q31.1). Curated 2026-11-15. Lead rs184517867, the seed's only rsID (Hsieh
+# 2026's 95-and-over Taiwanese locus): intronic in a lncRNA, GRCh38 1:188,090,337 C/G (multi-allelic, C/G/T), GRCh37
+# 1:188,059,468, G the rare allele (1.2 % in gnomAD's East Asian genomes, absent in Europeans) and the discovery's
+# longer-lived side. Open Targets 26.09 has no record under either allele order; the GWAS Catalog (2026-10-29) holds no
+# association.
+locus_id: 123
+locus_name: intergenic chr1
+verdict: kept
+verdict_reason: >-
+  Tier C, the seed's: a sub-genome-wide discovery in one old-against-young sample (R-TIER-2, R-TIER-4), with no
+  same-scale contradiction and nothing independent passing (D31.13's Hsieh bullet). Hsieh 2026 compared 248 Taiwanese
+  hospital patients who died at 95 or over with 873 who died at 65 to 75 at the same hospital: G (0.012, pooled) OR
+  9.96 per G, P 5.65e-6, under the paper's suggestive line of 1e-5. Solved from the OR and the counts (per Alt, the
+  pooled frequency, as rows 113 and 119 read the tables), the controls carry G at about 0.0041 (about 7 copies in 1,746
+  alleles) and the long-lived at about 0.040 (about 20 in 496). Against gnomAD's East Asian genomes (0.0123, the
+  reference D31.13 fixes) the controls misfit (21.4 copies expected, P 0.003 with its error), so D31.10 reads the
+  discovery against the reference: the long-lived alone give OR 3.32 (log 1.20, SE 0.26), P 4.8e-6 (derived), above
+  it, so something is left to read and the source is not overfit (D31.11 not reached; row 107's shape, with a firmer
+  read). The other references agree on the misfit and the excess: Taiwan Biobank's printed 0.011 (controls P 0.006 on
+  the point value, cases OR 3.7), 1000 Genomes' East Asians 0.014 and the southern Han CHS 0.033 (7 of 210, against
+  which the long-lived sit near it). Its validation cohort gives OR 7.17, P 0.032, the same direction, but its
+  controls are not its own (Fig. 2), so it is not an independent replication (D19.1). G is absent in gnomAD's
+  non-Finnish and Finnish genomes, so no European sample can test it: Deelen 2019, Timmers 2019, Pilling 2017, Zenin
+  2019, FinnGen R11, Park 2025 and Foote 2025 hold no line, and Wright 2019's four current-age lines 36 to 191 kb away
+  cannot tag it; untested, not negative. Hsieh's own APOE line is null (ε4 OR 0.96, P 0.82), which would leave any
+  lifespan conversion approximate (D31.13); none is needed here. The literature search (the rsID; Semantic Scholar
+  answered 429, its part unchecked) finds nothing; Hsieh is found by its PMID, and its one citing paper is a Finnish
+  polygenic lifespan score, with no single-variant test. Exceptional survival + (the reference read, P 4.8e-6);
+  lifespan untested; healthspan untested. Context `ancestry_specific:eas`: the variant is East Asian (and South Asian at
+  0.35 %), absent in Europeans, and the claim is Taiwanese. Mechanism ageing in general (D25.7): intronic in a lncRNA,
+  nothing recorded at the variant. Causal C4 and effector E4: no Open Targets record. Descriptive. Age of action
+  unknown.
+axes:
+  tier: {value: C, cites: [pmid-41949656#q18, pmid-41949656#q20, pmid-41949656#q22, pmid-41949656#q23, pmid-41949656#q4, pmid-41949656#q5, pmid-41949656#q10, pmid-41949656#q13, pmid-41949656#q14, pmid-41949656#q16, db-ensembl-116#q831, db-ensembl-116#q832, db-ensembl-116#q833, db-ensembl-116#q834, pmid-31413261#q290, pmid-40021682#q120, pmid-30642433#q392, db-gwascatalog-2026.10.29#q577]}
+  mechanism: {value: general_ageing, cites: [db-ensembl-116#q831]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: untested, lifespan: untested, exceptional_survival: "+",
+            cites: [pmid-41949656#q20, db-ensembl-116#q833]}
+  actionability: {label: descriptive, cites: [pmid-41949656#q20]}
+  context: {values: ["ancestry_specific:eas"], cites: [pmid-41949656#q20, db-ensembl-116#q832]}
+flags:
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1200]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q1200]}
+variants:
+  - rsid: rs184517867
+    locus: {chrom: "1", start: 188090337, ref: C, cites: [db-ensembl-116#q831]}  # rs184517867 is multi-allelic (C/G/T); the row means C>G
+    gene: ""
+    phenotype: 1q31.1 intergenic lncRNA, longevity, Taiwanese
+    trait_efo_id: OBA_VT0005372
+    effect_allele: G
+    effect_size: 3.32
+    effect_measure: OR
+    stat_significance: suggestive
+    direction: protective
+    genotypes:
+      - genotype: C/C
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position, as nearly everyone does. It is the
+          reference the other combinations are compared with. The position lies in a stretch of DNA on chromosome 1
+          that makes no protein.
+      - genotype: C/G
+        state: protective
+        conclusion: >-
+          You carry one copy of a rare version of this DNA position, found in about 2 in 100 people of East Asian
+          ancestry and almost never in people of European ancestry. One Taiwanese study found it more often among
+          people who lived to 95 than in the wider East Asian population; it has not been confirmed in an independent
+          sample, so this is weak, early evidence, and it applies to East Asian ancestry: a possible tendency, not
+          destiny.
+      - genotype: G/G
+        state: protective
+        conclusion: >-
+          You carry two copies of a rare version of this DNA position, which is very unusual. One Taiwanese study found
+          single copies more often among people who lived to 95; nothing is known about two copies, and the finding has
+          not been confirmed, so it is weak, early evidence.
+studies:
+  - rsid: rs184517867
+    note: pmid-41949656
+    quote: q20
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: Taiwanese hospital patients who died at 95 or over against those who died at 65 to 75 (one hospital)
+    ancestry: [EAS]
+    n_cases: 248
+    sample_size: 1121
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: suggestive
+    p_value: "5.65E-06"
+    p_value_num: 5.65e-06
+    effect_size: 9.96
+    effect_measure: OR
+    effect_unit: odds of dying at 95 or over per G allele
+    effect_allele: G
+    direction: protective
+    statistical_test: "Hsieh 2026's logistic GWAS of the 95-and-over group (Table 3, q18, q20), 248 cases and 873 controls (q23); G pooled 0.012; solved per Alt, controls 0.0041 and cases 0.040 (derived). The controls misfit gnomAD EAS 0.0123 (db-ensembl-116#q833; about 7 copies against 21.4, P 0.003 with its error), so this OR is named, not read (D31.10, D31.13)"
+    curator: claude-opus-5-5
+  - rsid: rs184517867
+    note: pmid-41949656
+    quote: q20
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: Taiwanese who died at 95 or over (Hsieh 2026) against gnomAD's East Asian genomes as the reference
+    ancestry: [EAS]
+    n_cases: 248
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: suggestive
+    effect_size: 3.32
+    effect_measure: OR
+    effect_unit: odds of carrying G, the long-lived against the gnomAD East Asian reference
+    effect_allele: G
+    direction: protective
+    statistical_test: "The row's read effect by D31.10: about 20 copies in 496 long-lived alleles against 6.1 expected from gnomAD EAS (63 of 5,130 alleles, db-ensembl-116#q833): OR 3.32, log 1.20, SE 0.26, P 4.8e-6 (Poisson one-sided 6e-6), derived"
+    curator: claude-opus-5-5
+  - rsid: rs184517867
+    note: pmid-41949656
+    quote: q22
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: Taiwanese validation cohort (a second hospital, aged 85 and over), against controls aged 65 to 75 not its own (q5, q10)
+    ancestry: [EAS]
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: nominal
+    p_value: "0.032"
+    p_value_num: 0.032
+    p_one_sided: 0.016
+    effect_size: 7.174
+    effect_measure: OR
+    effect_unit: odds of dying at 95 or over per G allele
+    effect_allele: G
+    direction: protective
+    statistical_test: "Table 4 (q22): OR 7.174, SE of the log OR 0.919; the same direction; its controls are not its own, so not independent (D19.1)"
+    curator: claude-opus-5-5
