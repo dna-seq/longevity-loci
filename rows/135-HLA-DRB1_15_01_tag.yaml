@@ -7,57 +7,59 @@ locus_id: 135
 locus_name: HLA-DRB1*15:01 tag
 verdict: re-tiered
 verdict_reason: >-
-  Tier C, from the seed's B: a sub-genome-wide, sex-stratified association replicated only in the same group's
-  samples (§4.1's C), old against young besides (R-TIER-2). Mendoza-Mejía 2025 imputed HLA alleles in a German
-  longevity cohort and tested each by sex: in men (388 long-lived against 3,150 younger controls) DRB1*15:01:01 OR
-  0.63 (0.48 to 0.82), raw P 7.0e-4, Bonferroni-adjusted 0.028; women OR 0.97, P 0.74; both sexes OR 0.87, P 0.04,
-  adjusted 0.82. The same authors' follow-ups lean the same way: Danish men by the tag, OR 0.74, P 0.07 (one-sided
-  about 0.035); UK Biobank, by imputed DRB1*15:01, a father reaching 95 OR 0.92 (adjusted P 0.023), a mother OR 0.94
-  (0.010). German and Danish agree (Q P 0.40); adding UK Biobank, heterogeneity Q 9.27, P 0.01, I² 78 %: UK Biobank
-  replicates with a much smaller effect (D25.13), not a failure. Nothing near genome-wide. In the large samples at
-  the tag: Timmers 2019 flat (A −0.0055 per self, P 0.34), with no flag against the whole German sample's OR 0.87
-  under D25.3's 99th-percentile calibrations (power 0.99 and 1.00, heterogeneity P 0.15 and 0.058); Pilling 2017's
-  fathers flat and leaning the other way (P 0.49), the male effect carried there only through two stacked conversions,
-  whose flag the row reads as unknown (D26.3, put to the lead), and the paper's own UK Biobank fathers lean the
-  discovery's way; both parents, mothers
-  and the top 10 % flat; Deelen 2019 flat (90th P 0.93, 99th 0.55), and it holds the Danish longevity studies; FinnGen
-  R11's death endpoint has A with fewer deaths (P 0.12), a database line; Park 2025 flat (P 0.98). Wright 2019's
-  AncestryDNA tags disagree and none is counted: fathers (1886-1940) at rs9268199 (r² 0.79, its G with the lead's A)
-  give the lead's A longer-lived fathers (genomic-control P 0.0021), a weak tag; at rs3130279 (r² 0.82, 301 kb) Table
-  9's fathers' meta gives A shorter-lived fathers (AncestryDNA P 0.0014), a Table 9 line (D29.18); rs3130287 (r² 0.78)
-  phase unread. Foote 2025's disability factor at rs9271423 (r² 1.00) gives A less disability (P 1.1e-7),
-  multivariate. Zenin 2019's healthspan flat (A a little healthier, P 0.14). The literature
-  search by the tag (Europe PMC, OpenAlex, PubMed, Crossref, preprints; Semantic Scholar answered 429) and by the allele
-  name (OpenAlex answered 400, Semantic Scholar 429) finds this paper alone among longevity tests of DRB1*15:01; the
-  1990s serotype reports it cites went unreplicated, and a 2026 Dutch preprint names the DRB1*15:01 haplotype for brain
-  microglial activation, not longevity. Exceptional survival + (the discovery and its Danish and UK Biobank long-lived-parent
-  follow-ups, the latter one-sided under 0.05), lifespan 0 (Timmers and Pilling flat), healthspan 0. The paper calls it male-specific: in the German sample men and women differ (P 0.0057, derived from the two
-  intervals, within the stratum the scan picked), while UK Biobank's fathers and mothers do not (P 0.55); no sex token,
-  the token put to the lead. Mechanism ageing in general (D25.7, as row 37's HLA locus): the authors propose a route
-  through Alzheimer's disease and an immune response to an APOB-100 epitope, untested here; A is multiple sclerosis's risk
-  allele (OR 2.75, P 4e-225), so G's protection is the absence of that risk (D30.6), `mech:autoimmune`. Not row 103's
-  signal (r² 0.50; 103 is a healthspan row); its LD to row 38's lead is unknown (no CEU line in Ensembl's pair record). Causal C4 and effector E4: no Open Targets
-  record either way. Descriptive. Age of action unknown. The evidence is European.
+  Tier C, from the seed's B: a sub-genome-wide, sex-stratified association (§4.1's C), old against young besides
+  (R-TIER-2), kept off D by the Danish men, a sample outside the one that flags it (D31.5). Mendoza-Mejía 2025 imputed
+  HLA alleles in a German longevity cohort and tested each by sex: in men (388 long-lived against 3,150 younger
+  controls) DRB1*15:01:01 OR 0.63 (0.48 to 0.82), raw P 7.0e-4, Bonferroni-adjusted 0.028 (the correction counts the
+  sex strata); women OR 0.97, P 0.74; both sexes OR 0.87, P 0.04, adjusted 0.82. The same authors' follow-ups lean the
+  same way: Danish men by the tag, OR 0.74, P 0.07, one-sided 0.035, entered as a study; UK Biobank, by imputed
+  DRB1*15:01, a father reaching 95 OR 0.92 (adjusted P 0.023; raw about 0.006 from its interval, derived), a mother OR
+  0.94 (adjusted 0.010), a smaller effect (Q 9.27, P 0.01, I² 78 %; D25.13). Nothing near genome-wide. The large
+  samples go against it. Timmers 2019 at the tag is flat (A −0.0055 per self, P 0.34), with no flag against the whole
+  German sample's OR 0.87 under D25.3's 99th-percentile calibrations (power 0.99 and 1.00, heterogeneity P 0.15 and
+  0.058). Pilling 2017's fathers lean the other way (P 0.49); carried there from the men's OR through the two
+  source-printed factors (D31.5, as rows 6 and 95 chain them), the men's effect gives a red flag (heterogeneity P about
+  6e-4; 0.02 to 0.03 on the both-sexes effect): `replication_failed`. Wright 2019's AncestryDNA fathers agree with
+  each other and against the discovery: at all three tags (r² 0.78 to 0.82, D26.10) the lead's A goes with longer-lived
+  fathers, about one-sided 0.001 (Table 9 prints the other allele: rs9268199 G in Table 8, A in Table 9, the same β;
+  rs3130279 counts A; rs3130287's G is C on the reverse strand, its C with the lead's A): lifespan − (D28.3). Pilling's
+  both parents, mothers and top 10 % flat; Deelen 2019 flat (90th P 0.93, 99th 0.55), and it holds the Danish
+  longevity studies; FinnGen R11's death endpoint has A with fewer deaths (P 0.12), a database line; Park 2025 flat (P
+  0.98). Foote 2025's disability factor at rs9271423 (r² 1.00) has G more disabled (P 1.1e-7): healthspan − (D31.4).
+  Zenin 2019's healthspan flat (A a little healthier, P 0.14). The literature search by the tag (Europe PMC, OpenAlex,
+  PubMed, Crossref, preprints; Semantic Scholar answered 429) and by the allele name (OpenAlex answered 400, Semantic
+  Scholar 429) finds this paper alone among longevity tests of DRB1*15:01; the 1990s serotype reports it cites went
+  unreplicated, and a 2026 Dutch preprint names the DRB1*15:01 haplotype for brain microglial activation, not
+  longevity. Exceptional survival + (the discovery, the Danish men and UK Biobank's long-lived parents), lifespan −
+  (AncestryDNA's fathers and the chained Pilling flag), healthspan − (Foote's disability factor). No sex token (D31.5):
+  UK Biobank's mothers pass on their own (adjusted P 0.010) and AncestryDNA's fathers go the other way; the men's OR
+  0.63 (G 1.59) stays in prose, the variant carries the both-sexes OR. Mechanism ageing in general (D25.7, as row 37's
+  HLA locus): the authors propose a route through Alzheimer's disease and an immune response to an APOB-100 epitope,
+  untested here; A is multiple sclerosis's risk allele (OR 2.75, P 4e-225), so G's protection is the absence of that
+  risk (D30.6), `mech:autoimmune`. Not row 103's signal (r² 0.50; 103 is a healthspan row); its LD to row 38's lead is
+  unknown (no CEU line in Ensembl's pair record). Causal C4 and effector E4: no Open Targets record either way.
+  Descriptive. Age of action unknown. The evidence is European.
 axes:
   tier: {value: C, cites: [pmid-41116190#q1, pmid-41116190#q2, pmid-41116190#q3, pmid-41116190#q4, pmid-41116190#q5, pmid-41116190#q6, pmid-41116190#q7, pmid-41116190#q8, pmid-41116190#q9, pmid-30642433#q377, pmid-29227965#q125, pmid-29227965#q126, pmid-29227965#q127, pmid-29227965#q128, pmid-31413261#q253, pmid-31413261#q254, pmid-31413261#q89, db-finngen-r11#q81, pmid-40021682#q108, pmid-31484785#q157, pmid-31484785#q158, pmid-31484785#q159, pmid-31484785#q160, db-ensembl-116#q749, pmid-41116190#q10, pmid-41116190#q11, pmid-40759756#q67, db-ensembl-116#q748, db-opentargets-26.09#q1168]}
   mechanism: {value: general_ageing, cites: [pmid-41116190#q4, db-gwascatalog-2026.10.29#q556, db-gwascatalog-2026.10.29#q557]}
   pleiotropy: {values: ["mech:autoimmune"], cites: [db-gwascatalog-2026.10.29#q556, db-gwascatalog-2026.10.29#q557]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "+",
-            cites: [pmid-41116190#q1, pmid-41116190#q5, pmid-41116190#q6, pmid-30642433#q377, pmid-29227965#q125, pmid-30729179#q148]}
+  outcome: {healthspan: "-", lifespan: "-", exceptional_survival: "+",
+            cites: [pmid-41116190#q1, pmid-41116190#q5, pmid-41116190#q6, pmid-31484785#q157, pmid-31484785#q158, pmid-31484785#q159, pmid-31484785#q160, pmid-40759756#q67, db-ensembl-116#q748]}
   actionability: {label: descriptive, cites: [pmid-41116190#q1]}
   context: {values: [eur_only_evidence], cites: [pmid-41116190#q1, pmid-41116190#q6]}
 flags:
+  - {token: replication_failed, cites: [pmid-29227965#q127, pmid-41116190#q1, pmid-31484785#q157, pmid-31484785#q158, pmid-31484785#q159, pmid-31484785#q160]}
   - {token: "PROTECT:ABSENCE_OF_RISK", cites: [db-gwascatalog-2026.10.29#q556, db-gwascatalog-2026.10.29#q557]}
   - {token: "causal:C4", cites: [db-opentargets-26.09#q1166, db-opentargets-26.09#q1167, db-opentargets-26.09#q1168]}
   - {token: "effector:E4", cites: [db-opentargets-26.09#q1166, db-opentargets-26.09#q1167]}
 variants:
   - rsid: rs3135388
     gene: ""
-    phenotype: HLA-DRB1*15:01 tag, longevity in men
+    phenotype: HLA-DRB1*15:01 tag, longevity
     trait_efo_id: OBA_VT0005372
     effect_allele: G
-    effect_size: 1.59
+    effect_size: 1.15
     effect_measure: OR
     stat_significance: nominal
     direction: protective
@@ -75,15 +77,15 @@ variants:
           You carry one copy of a less common version of this DNA position (about 24 in 100 people of European
           ancestry do). It marks an immune-system type, HLA-DRB1*15:01, which one research group found less often in
           men who reached very old age, with a weaker hint in British fathers and mothers. Other large studies did not
-          show a clear difference, so this is early evidence, not a settled finding. The same type
+          confirm it, and some lean the other way, so this is early evidence, not a settled finding. The same type
           raises the risk of multiple sclerosis.
       - genotype: A/A
         state: risk
         conclusion: >-
           You carry two copies of a less common version of this DNA position (about 2 in 100 people of European
           ancestry do). It marks an immune-system type, HLA-DRB1*15:01, which one research group found less often in
-          men who reached very old age; too few people carry two copies to say more. Other large studies did not show
-          a clear difference, so this is early evidence, not a settled finding. The same type
+          men who reached very old age; too few people carry two copies to say more. Other large studies did not confirm
+          it, and some lean the other way, so this is early evidence, not a settled finding. The same type
           raises the risk of multiple sclerosis.
 studies:
   - rsid: rs3135388
@@ -111,9 +113,33 @@ studies:
     curator: claude-opus-5-5
   - rsid: rs3135388
     note: pmid-41116190
+    quote: q5
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: Danish men, long-lived against younger controls (by the tag rs3135388-A)
+    ancestry: [EUR]
+    stratum: sex
+    stratum_level: male
+    n_cases: 189
+    sample_size: 794
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: nominal
+    p_value: "0.07"
+    p_value_num: 0.07
+    p_one_sided: 0.035
+    effect_size: 0.74
+    effect_measure: OR
+    effect_unit: odds of being long-lived per A allele, men
+    effect_allele: A
+    direction: risk
+    statistical_test: "Mendoza-Mejía 2025's Danish follow-up (q5), 0.51-1.02; one-sided 0.035 (derived); German and Danish agree (Q P 0.40, q9); outside the samples that flag the row, so it keeps the row off D (D31.5)"
+    curator: claude-opus-5-5
+  - rsid: rs3135388
+    note: pmid-41116190
     quote: q6
     phenotype_class: EXTREME_SURVIVAL_CC
-    study_design: percentile_case_control_p99
+    study_design: age_threshold_case_control
     population: UK Biobank participants whose father reached 95 (about 1.5 % of fathers), against those whose father did not (imputed DRB1*15:01)
     ancestry: [EUR]
     stratum: parent
