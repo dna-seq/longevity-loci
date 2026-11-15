@@ -2826,7 +2826,7 @@ Cytobands at the leads: GRCh38 2:53,153,619 (row 110) in 2p16.2 (q769); 5:174,28
 
 rs12189947 (row 113): intronic in a lncRNA at GRCh38 6:4,330,371 G/A (q771), GRCh37 6:4,330,605 (q773), band 6p25.1
 (q774); A 0.2232 in 1000 Genomes East Asians, 0.2187 in Europeans, 0.2059 and 0.2075 in gnomAD's East Asian and
-non-Finnish genomes (q772). rs9392582 is one of eleven CEU partners at r² 0.97 (q775). ENSG00000231811, the gene of
+non-Finnish genomes (q772). rs9392582 is one of nineteen CEU partners at r² 0.97 (q775). ENSG00000231811, the gene of
 the lead's eQTL sets, is a novel lncRNA at 6:4,341,751-4,347,162 (q776); the nearest protein-coding gene in Ensembl
 is ECI2, about 195 kb away. For row 113.
 
@@ -2834,6 +2834,6 @@ is ECI2, about 195 kb away. For row 113.
 
 > [q777] [25] population_name 1000GENOMES:phase_3:CHB d_prime 1.000000 variation2 rs9405724 r2 1.000000 variation1 rs12189947
 
-rs12189947 (row 113) in 1000 Genomes' Han Chinese of Beijing (CHB): the same block as in CEU, rs9405724, rs746360 and
-rs4959941 at r² 1.00 there (q777) and 0.94 to 0.97 in CEU (q775's window): the European lines tag the haplotype the
+rs12189947 (row 113) in 1000 Genomes' Han Chinese of Beijing (CHB): the same block as in CEU, rs9405724 (q777), rs9392582, rs746360
+and rs4959941 at r² 1.00 there; no CHB partner at r² 0.8 is missing from CEU's r² 0.5 list and 0.94 to 0.97 in CEU (q775's window): the European lines tag the haplotype the
 Taiwanese study tested. For row 113.

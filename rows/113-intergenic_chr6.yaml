@@ -9,40 +9,47 @@ verdict: re-tiered
 verdict_reason: >-
   Tier D, from the seed's C: a sub-genome-wide East Asian discovery that powered European samples tagging the same
   haplotype contradict (D22.3, as row 72; D21's red flag under both of D25.3's calibrations). Hsieh 2026 compared 922
-  Taiwanese hospital patients who died at 90 or over with 871 who died at 65 to 75 at the same hospital: A (0.201)
-  OR 0.63 per A, P 8.7e-6, under the paper's suggestive line of 1e-5. Solved from the OR and the counts, the controls
+  Taiwanese hospital patients who died at 90 or over with 871 who died at 65 to 75 at the same hospital: A (0.201) OR
+  0.63 per A, P 8.7e-6, under the paper's suggestive line of 1e-5. Solved from the OR and the counts, the controls
   carry A at about 0.24 and the long-lived at about 0.165, against 0.206 to 0.223 in East Asian references (derived;
-  the paper's own Taiwan Biobank cell is missing from the line): the controls sit a little high (P 6e-4 against
-  gnomAD's East Asians, 0.11 against 1000 Genomes'), and the long-lived well below either. Read against the
-  references (D31.10) the long-lived alone give A OR 0.76 or 0.69, P 1.6e-5 or 2.6e-9, so the signal is theirs, and
-  every test below fails at that size too (derived). Its validation cohort, 844 people aged 85 and over from a second hospital analysed the same way, gives OR
-  0.517 at 90 and over, P 1e-4, the same direction; the paper does not say who its controls were or how many reached
-  90, so whether the validation is independent of the discovery's controls is unknown (D19.1: not counted as an
-  independent replication). The Europeans tag the same block: rs9392582, rs9405724 and rs4959941 sit at r² 0.94 to
-  0.97 with the lead in CEU and 1.00 in CHB, and A has the same frequency. Deelen 2019, at the lead itself: 90th
-  percentile A +0.044 (SE 0.028), P 0.11; 99th +0.106 (SE 0.044), P 0.016, A longer-lived, one-sided 0.008 against;
-  set against the discovery's log OR (−0.462, SE 0.104) heterogeneity P 2.5e-6 and 4.7e-7, power 1.00 (derived).
-  Timmers 2019 holds no line at the lead; at rs9392582 (r² 0.97, T with A) flat, T −0.0014 per self (SE 0.0048), P
-  0.76. Carried there by D25.3's 90th-percentile calibrations and r, the discovery predicts A −0.094 (APOE's factor)
-  or −0.225 (the loci's mean): power 1.00, heterogeneity P 1.9e-5 and 1.1e-5 (at half the effect 8.5e-5 and 1.6e-5;
-  from the reference read, OR 0.76, 8.3e-5 and 2.5e-5), a D21 red flag under both, `replication_failed`. The calibration is approximate here: Hsieh's contrast is dying at
-  90 or over against dying at 65 to 75, not Deelen's 90th percentile against all controls. Outside Timmers: Park
-  2025's own survival has A with fewer deaths, P 0.07, one-sided 0.035 against (columns swapped, as at APOE; UK
-  Biobank); FinnGen R11's death endpoint A with slightly more deaths, flat (P 0.64), a database line; Pilling 2017 flat
-  at rs9392582 (P 0.56 to 0.80, inside Timmers); Zenin 2019's healthspan flat, A a little healthier (P 0.32); Foote
-  2025 flat at rs9392582 (P 0.17 to 0.86). Wright 2019's one line within 500 kb, rs7767658 (390 kb), has no CEU pair:
-  AncestryDNA untested. Timmers' strongest line within 500 kb is P 0.0020, Deelen's 0.0013: nothing suggestive. The
-  literature search (the rsID, and Taiwanese and Han Chinese longevity GWAS since 2025; Semantic Scholar answered 429,
-  its part unchecked) finds Hsieh alone. The claim is Taiwanese and tested for replication only there; the European
-  null is on the same haplotype at the same frequency, so the row is D, not ancestry-specific, and the ancestry is
-  named here, not as a context token (D30.15); how Taiwanese loci are shown waits on D7. Every genotype neutral
-  (D25.2). Exceptional survival − (D28.3, D28.10: Deelen's 99th one-sided 0.008 against, and a D row's discovery gives
-  no +); lifespan − (Park one-sided 0.035 against, nothing for); healthspan 0. Mechanism ageing in general (D25.7):
-  intronic in a lncRNA, A raising a nearby novel lncRNA's expression in stimulated monocytes, named, no route shown;
-  the nearest protein-coding gene, ECI2, lies about 195 kb away. Causal C4 and effector E4: no lifespan-class set.
-  Descriptive. Age of action unknown.
+  the line prints five of its six reference cells, which one is missing unsettled): the controls sit a little high (P
+  6e-4 against gnomAD's East Asians, 0.11 against 1000 Genomes'), and the long-lived well below either. Read against
+  the references (D31.10) the long-lived alone give A OR 0.76 or 0.69, P 1.6e-5 or 2.6e-9, so the signal is theirs,
+  and every test below fails at that size too (derived). Its validation cohort, 844 people aged 85 and over from a
+  second hospital analysed the same way, gives OR 0.517 at 90 and over, P 1e-4, the same direction. The paper does not
+  say who its controls were, but Fig. 2 sets both cohorts' case groups against controls aged 65 to 75, and the
+  validation cohort holds only people aged 85 and over, so its controls are not its own; most likely they are the
+  discovery's, unstated, and the validation is not counted as an independent replication (D19.1; put to the lead).
+  Pooled with the discovery it would reach P 5.9e-9 (derived), row 72's genome-wide shape, still D under D22.3. The
+  Europeans tag the same block: rs9392582, rs9405724 and rs4959941 sit at r² 0.94 to 0.97 with the lead in CEU
+  (nineteen partners there) and 1.00 in CHB, no CHB partner at r² 0.8 is missing from CEU's list, and A has the same
+  frequency. Deelen 2019, at the lead itself (its A at 0.17, a little under the 0.21 elsewhere): 90th percentile A
+  +0.044 (SE 0.028), P 0.11; 99th +0.106 (SE 0.044), P 0.016, A longer-lived, one-sided 0.008 against; set against the
+  discovery's log OR (−0.462, SE 0.104) heterogeneity P 2.5e-6 and 4.7e-7, power 1.00 (derived). Timmers 2019 holds no
+  line at the lead; at rs9392582 (r² 0.97, T with A) flat, T −0.0014 per self (SE 0.0048), P 0.76. Carried there by
+  D25.3's 90th-percentile calibrations and r, the discovery predicts A −0.094 (APOE's factor) or −0.225 (the loci's
+  mean): power 1.00, heterogeneity P 1.9e-5 and 1.1e-5 (at half the effect 8.5e-5 and 1.6e-5; from the reference read,
+  OR 0.76, 8.3e-5 and 2.5e-5), a D21 red flag under both, `replication_failed`. The calibration is approximate here:
+  Hsieh's contrast is dying at 90 or over against dying at 65 to 75, not Deelen's 90th percentile against all
+  controls, and short-lived controls inflate the OR; the flag holds down to 0.15 of the APOE-calibrated effect (power
+  0.90, heterogeneity P 0.027) and to 0.1 under the mean factor (P 0.0024, derived). Outside Timmers: Park 2025's own
+  survival has A with fewer deaths, P 0.07, one-sided 0.035 against (columns swapped, as at APOE; UK Biobank); FinnGen
+  R11's death endpoint A with slightly more deaths, flat (P 0.64), a database line; Pilling 2017 flat at rs9392582 (P
+  0.56 to 0.80, inside Timmers); Zenin 2019's healthspan flat, A a little healthier (P 0.32); Foote 2025 flat at
+  rs9392582 (P 0.17 to 0.86). Wright 2019's one line within 500 kb, rs7767658 (390 kb), has no CEU pair: AncestryDNA
+  untested. Timmers' strongest line within 500 kb is P 0.0020, Deelen's 0.0013: nothing suggestive. The literature
+  search finds nothing: the rsID in every source (Semantic Scholar answered 429, its part unchecked), and Taiwanese
+  and Han Chinese longevity GWAS since 2025; Hsieh is found by its PMID. One paper cites Hsieh, a Finnish polygenic
+  lifespan score, with no single-variant test. The claim is Taiwanese and its replication there not independent; the
+  European null is on the same haplotype at the same frequency, so the row is D, not ancestry-specific, and the
+  ancestry is named here, not as a context token (D30.15); how Taiwanese loci are shown waits on D7. Every genotype
+  neutral (D25.2). Exceptional survival − (D28.3, D28.10: Deelen's 99th one-sided 0.008 against, and a D row's
+  discovery gives no +); lifespan − (Park one-sided 0.035 against, nothing for); healthspan 0. Mechanism ageing in
+  general (D25.7): intronic in a lncRNA, A raising a nearby novel lncRNA's expression in stimulated monocytes, named,
+  no route shown; the nearest protein-coding gene, ECI2, lies about 195 kb away. Causal C4 and effector E4: no
+  lifespan-class set. Descriptive. Age of action unknown.
 axes:
-  tier: {value: D, cites: [pmid-41949656#q1, pmid-41949656#q2, pmid-41949656#q3, pmid-41949656#q4, pmid-41949656#q5, pmid-41949656#q6, pmid-41949656#q9, pmid-31413261#q281, pmid-31413261#q282, pmid-30642433#q384, db-ensembl-116#q775, db-ensembl-116#q777, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, pmid-40021682#q115, pmid-40021682#q32, db-finngen-r11#q88, pmid-29227965#q149, pmid-30729179#q155, pmid-31484785#q163, db-gwascatalog-2026.10.29#q571]}
+  tier: {value: D, cites: [pmid-41949656#q1, pmid-41949656#q2, pmid-41949656#q3, pmid-41949656#q4, pmid-41949656#q5, pmid-41949656#q6, pmid-41949656#q9, pmid-41949656#q10, pmid-31413261#q281, pmid-31413261#q282, pmid-30642433#q384, db-ensembl-116#q775, db-ensembl-116#q777, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, pmid-40021682#q115, pmid-40021682#q32, db-finngen-r11#q88, pmid-29227965#q149, pmid-30729179#q155, pmid-31484785#q163, db-gwascatalog-2026.10.29#q571]}
   mechanism: {value: general_ageing, cites: [db-ensembl-116#q771, db-ensembl-116#q776, db-opentargets-26.09#q1191]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -111,7 +118,7 @@ studies:
     quote: q2
     phenotype_class: EXTREME_SURVIVAL_CC
     study_design: age_threshold_case_control
-    population: Taiwanese (Taipei Veterans General Hospital, Taoyuan Branch; 844 aged 85 and over, the controls not described, q5)
+    population: Taiwanese (Taipei Veterans General Hospital, Taoyuan Branch; 844 aged 85 and over against controls aged 65 to 75 not its own, q5, q10)
     ancestry: [EAS]
     age_of: participant
     stat_significance: nominal
@@ -119,10 +126,10 @@ studies:
     p_value_num: 0.0001
     effect_size: 0.517
     effect_measure: OR
-    effect_unit: odds of reaching 90 or over, per A allele (the discovery's model, q6)
+    effect_unit: odds of reaching 90 or over, per A allele (the discovery's model, q6; against controls aged 65 to 75, q10)
     effect_allele: A
     direction: risk
-    statistical_test: "Table 4, the validation cohort at 90 and over (q2), SE of the log OR 0.170, the discovery's direction (q7); the paper does not describe the validation's controls, so its independence of the discovery's is unknown and it is not counted as an independent replication (D19.1)"
+    statistical_test: "Table 4, the validation cohort at 90 and over (q2), SE of the log OR 0.170, the discovery's direction (q7); the cohort holds only people aged 85 and over (q5) yet is set against controls aged 65 to 75 (Fig. 2, q10), so its controls are not its own, most likely the discovery's: not counted as an independent replication (D19.1); pooled with the discovery P 5.9e-9 (derived)"
     curator: claude-opus-5-5
   - rsid: rs12189947
     note: pmid-31413261
@@ -171,7 +178,7 @@ studies:
     sample_size: 393833
     sample_unit: individuals
     age_of: participant
-    stat_significance: not_significant
+    stat_significance: nominal
     p_value: "0.07"
     p_value_num: 0.07
     p_one_sided: 0.035
