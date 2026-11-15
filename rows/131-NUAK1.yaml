@@ -7,7 +7,7 @@ locus_id: 131
 locus_name: NUAK1
 verdict: re-tiered
 verdict_reason: >-
-  Tier D, from the seed's C, the curator's default put to the lead: a sub-genome-wide East Asian discovery that Deelen
+  Tier D, from the seed's C (D34.9): a sub-genome-wide East Asian discovery that Deelen
   2019 contradicts on the same scale at the variant itself (D31.13's Hsieh bullet, D26.11; rows 113 and 122's shape,
   though here Deelen leans the discovery's way, flat, where 122's leaned against). Hsieh 2026 compared 922
   Taiwanese hospital patients who died at 90 or over with 871 who died at 65 to 75 at the same hospital: G (0.436,
@@ -29,9 +29,10 @@ verdict_reason: >-
   heterogeneity P 0.26, the long-lived near the reference, D31.11's shape, also D); the printed contrast, like
   Deelen's a long-lived group against a younger one, fails Deelen throughout (heterogeneity P 0.016 at the upper
   bound; derived). D22.3 spares a cross-ancestry null whose look-ups lean the discovery's way: Deelen (one-sided
-  0.10, 0.17), Park and Zenin lean C's way, Timmers, FinnGen and Foote the other, none nominal for C. The default
-  reads D31.13's Hsieh bullet as deciding (a same-scale Deelen contradiction makes the row D); the alternative, C by
-  D22.3, is put to the lead. No independent genome-wide pass
+  0.10, 0.17), Park and Zenin lean C's way, Timmers, FinnGen and Foote the other, none nominal for C. D34.9: D22.3
+  spares a cross-ancestry null only when the other looks lean the discovery's way at P 0.05 to 0.14 or below (row
+  18); none here reaches 0.05 and they split, so D by D31.13's Hsieh bullet, and by D26.8 too, the reference-read
+  discovery (P 0.001) being sub-genome-wide. No independent genome-wide pass
   in Deelen's own ancestry and class outweighs it (D34.1). Hsieh's 90-and-over APOE line is a powered null of
   Hsieh's sample (ε4 OR 0.96, P 0.82; D34.2), so no conversion to a lifespan scale is its own, and the Timmers and
   Park tests are approximate and set no flag (D31.13): Timmers 2019 has C at beta1 −0.0033 (SE 0.0047), P 0.48, a hair

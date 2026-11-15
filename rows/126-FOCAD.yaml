@@ -20,7 +20,7 @@ verdict_reason: >-
   2.2e-5, derived), the row's read effect, derived (row 123's way). The paper's own OR against gnomAD, 12.16,
   back-solves to 0.0132 %, gnomAD's genomes figure, not the exomes' (its other rows match the exomes within 8 %):
   against the genomes the long-lived show 4 where 0.33 are expected, OR 12.2, P 3.8e-4 (derived), so the + holds on
-  either reference; the choice of carried figure is put to the lead (default the exome read, 25.6). Its caveat:
+  either reference; the derived exome read is carried, the printed 12.16 named as genomes-based (D34.8). Its caveat:
   gnomAD's non-Finnish Europeans are mostly British. The printed 9.9 is named, not read. By the printed percentages and the long-lived's 2.7:1 women to men, about 3 copies in 336 men (0.04 expected from gnomAD, P
   1.2e-5) and 1 in 909 women (0.11 expected, P 0.11), the control copy a woman's (derived): men's share is above their 27 % of the long-lived, as across
   Kolbe's rows (about 24 of 35 copies, D34.7), named, no token. The calls were merged jointly and variants missing
