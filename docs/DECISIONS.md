@@ -809,3 +809,44 @@ standing word (pacing off, "full steam ahead"; the advisor pattern for the requi
    Timmers (0.031) and Pilling's mothers (0.0065) are UK Biobank, so D, the curator's (a); the row says whether a
    LifeGen-only line exists at the lead and what it shows. 103's owed re-read follows this, not D30.3. Rejected:
    (b), D30.3 read as governing, which would count UK Biobank's parents as replicating UK Biobank's own discovery.
+4. **Batch eleven's read, rows 99, 100, 101, 3, 108, 130, 134, 135 and 1: one tier moves, 130 D to C.**
+   - **130 is C, with `replication_failed`.** Park 2025's own-death line has T, the discovery's longer-lived allele,
+     with fewer deaths at two-sided P 0.089, one-sided 0.045 (pmid-40021682#q106). That is D25.1's independent pass:
+     D30.16 narrowed D30.11's "inside the failing sample" to the parents Timmers pools, and Park's endpoint is the
+     participants' own deaths; D30.17 and D31.3 set Park aside only when the discovery is UK Biobank, and Rahmouni's
+     samples are French, German, Danish and Italian. Timmers' powered failure stays a red flag, and the failure is
+     cited to D26.8 and §4.1's candidate-gene clause, not to D30.11, which is written for a suggestive discovery.
+     Exceptional survival `+` (Rahmouni, as 135 and 77), lifespan `+` (Park, its one-sided P stated). The row says
+     that Park's pass is one of several looks and nominal. Rejected: keeping D on D30.11's letter, which D30.16
+     narrowed the day after.
+   - **A Foote frailty or disability factor fills the healthspan cell at nominal P, in its direction**, as rows 51,
+     83, 85 and three more already read it; a factor at the lead or at a proxy whose r² the row states. 101's "only
+     when genome-wide" contradicts that practice: 101's healthspan is `+` (general factor one-sided 0.017, with F2, F3,
+     F5). 108's is `+` at the proxy rs55923716 (r² 0.61, metabolic factor P 1.8e-5), the r² named. 135's is `−`
+     (disability factor at the r² 1.00 proxy, G more disabled, P 1.1e-7). D26.6 still decides a conflict.
+   - **A Deelen 99th-percentile line is calibrated with the 99th's factor**, 6.22 under APOE (pmid-31413261#q250),
+     never the 90th's 4.84; and Pilling's both-parents β converts at Timmers' about 1.97, the fathers' 2.287 only for
+     fathers (D30.16). 101, 108 and 99 restate their numbers; none moves (99: APOE power 1.00, heterogeneity P 2.3e-4,
+     mean factor power 0.58, P 0.030: a flag under APOE only, so none). The curator sweeps the earlier rows that test
+     a Deelen 99th line or a Pilling both-parents β and reports any tier, flag or cell that moves.
+   - **A deposit's gap is untested, not unread**: Foote's general factor has no line on chr10 from 123,058,176 to
+     127,688,989, its F4 none on chr10 from 119,377,200 to 127,711,500 or on chr1 from 53,723,495 to 57,783,448, both
+     files complete (checked whole against the cached checksums). 3 and 134 say so, with the bounds.
+5. **135's questions.** Q1, the sex token: none, the curator's (a), on a better reason than the scan's choice of
+   stratum (the paper's Bonferroni already counts the sex strata): UK Biobank's mothers pass on their own (P about
+   0.001) and AncestryDNA's fathers go the other way. This widens D29.16, whose letter would give (b): a paper's
+   sex-split reading takes no token when an independent sample of the other sex passes. Q2, the chained
+   conversion: it counts, (b), since rows 6 and 95 chain the same source-printed factors and read the result; the
+   flag holds (P about 6e-4 on the men's effect). With AncestryDNA's fathers also against (Table 9 prints the other
+   allele, so all three tags at r² 0.78 to 0.82 agree, D26.10), the row takes `replication_failed` and lifespan `−`
+   (D28.3). It stays C on the Danish men (one-sided 0.035), outside the flagging sample, who are entered as a study.
+   Its effect size and states are made to agree: the both-sexes OR on the variant, the men's in prose.
+6. **`stat_significance` records what a line reached, not whether it counts.** A look-up under one-sided 0.05 in
+   the row's direction is `nominal` even where it shares the discovery's sample; the reason says why it does not
+   count. 134 and 98 stand; 86 is changed only if its own line is under 0.05.
+7. **`eur_only_evidence` is not written beside a discovery with non-European samples** (1, 94): 0.8 computes the
+   token from the studies' ancestry and would disagree (FORMATS, "Export").
+8. **D29.4's `untested` is for an overfit discovery that is the only test at the lead.** 100's exceptional survival
+   is `0`: Pilling 2017's top 10 % at the lead is flat (P 0.88), as 97 reads it.
+9. **99's coding question is answered: E4.** The splice-site hit falls on a transcript that makes no protein, so
+   §4.2's coding clause is not met. 3, now descriptive, drops the preventable row's LDL-test sentence (R-VOICE-4).

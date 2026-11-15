@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- D31.4 to D31.9, batch eleven's read: 130 D to C on Park's own-death pass; Foote factors fill healthspan at nominal P; Deelen's 99th at its own factor (sweep); deposit gaps are untested; 135's questions; `stat_significance`, `eur_only_evidence` and D29.4 clarified.
 - `dashboard.py --left` holds out 151 EYS: its only source, a preprint, refuses its text; it waits until the text is readable or the person supplies it.
 - The module-creator plugin's pin moved to `v0.48.11` (toolchain unchanged): `lookup_old_assembly` names the rsID GRCh37 records at an old coordinate, and `lookup_citation` takes a PMCID.
 - D31.3: a Timmers pass replicates a UK Biobank discovery only from outside UK Biobank; D30.3's B branch for 103 is superseded (134 D).
