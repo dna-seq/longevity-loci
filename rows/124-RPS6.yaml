@@ -14,12 +14,13 @@ verdict_reason: >-
   rate of 0.05, its own exome-wide call, not a genome-wide one (R-TIER-4, D31.13). On 2,490 and 8,210 alleles that is
   7 copies against 1 (the Haldane OR from 7 and 1 is 16.53, derived). The controls fit the reference D31.13 fixes,
   gnomAD's non-Finnish European exomes (0.043 %): 3.5 copies expected, 1 seen, Poisson P 0.135 (genomes, 0.054 %:
-  4.5 and P 0.063), so the paper is read as printed (D31.10 not met). Against the same reference the long-lived show
-  7 where 1.1 are expected (exact Poisson P 1.2e-4, derived); the paper's own OR against gnomAD is 6.49, with its
-  caveat that gnomAD's non-Finnish Europeans are mostly British. The excess is the men's: from the printed
+  4.5 and P 0.063), yet Kolbe's controls pooled over rows 120, 124 and 125 show 1 copy where 8.3 are expected (P 0.0024, derived), so
+  by D34.7 every rare row of the paper is read against the reference, as 107: the long-lived show 7
+  where 1.1 are expected, OR 6.6 (exact Poisson P 1.2e-4, derived), and the paper's own OR against gnomAD is 6.49, with its
+  caveat that gnomAD's non-Finnish Europeans are mostly British; the printed 16.5 is named, not read. The excess is the men's: from the printed
   percentages and the long-lived's 2.7:1 women to men, about 5 copies in 336 long-lived men (0.29 expected from
   gnomAD, P 1.3e-5) and 2 in 909 women (0.78 expected, P 0.18), the one control copy a man's (derived); no sex
-  token on a C row's one sample, named. RPS6's gene-based synonymous test (6 variants, P 7.4e-7, adjusted 0.014) is
+  token on a C row's one sample, named, as across Kolbe's rows (about 24 of 35 copies in men, D34.7). RPS6's gene-based synonymous test (6 variants, P 7.4e-7, adjusted 0.014) is
   driven mainly by this variant, so it is the same signal, not a second one. No look-up tests it: the Ashkenazi
   sample holds only three of the seven variants, not this one (gnomAD's Ashkenazi exomes show no A either), and the
   Leiden sample (179 long-lived, 98 controls) expects 0.15 and 0.08 copies, so its absence says nothing. FinnGen R11's
@@ -34,8 +35,8 @@ verdict_reason: >-
   AncestryDNA fathers' lines 469 kb away (P 0.0014) cannot tag it either (r² at most about 0.004, derived). The literature search (the rsID; Semantic Scholar answered 429, its part unchecked) finds Kolbe alone; the
   five papers citing Kolbe (Semantic Scholar, 2026-11-15) are two reviews, an unrelated study, a machine-learning
   study of GenAge and the 2026 bioRxiv functional study read for row 120, which edits variants in other genes; none
-  tests this one. Exceptional survival + (the discovery, read as printed; against gnomAD too); lifespan untested (FinnGen holds it, flat,
-  but a database line neither replicates nor contradicts, D30.12, and it is short of a powered test); healthspan untested. Mechanism ageing in general (D25.7): RPS6 is a
+  tests this one. Exceptional survival + (the reference read, P 1.2e-4); lifespan 0 (FinnGen's flat line,
+  P 0.79, fills the cell though it is short of a powered test, D34.5); healthspan untested. Mechanism ageing in general (D25.7): RPS6 is a
   ribosomal protein downstream of mTOR, and the authors suggest the synonymous change may lower its expression
   (a rarer codon, an altered mRNA fold, from web tools; RPS6 expression non-significantly lower in Leiden's
   long-lived, P 0.055), a route not tested here; named. Causal C4: no Open Targets record. Effector E4: a synonymous
@@ -46,7 +47,7 @@ axes:
   mechanism: {value: general_ageing, cites: [pmid-40232348#q30, pmid-40232348#q31, pmid-40232348#q32]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: untested, lifespan: untested, exceptional_survival: "+",
+  outcome: {healthspan: untested, lifespan: "0", exceptional_survival: "+",
             cites: [pmid-40232348#q28, db-ensembl-116#q852, db-finngen-r11#q97]}
   actionability: {label: descriptive, cites: [pmid-40232348#q28]}
   context: {values: [eur_only_evidence], cites: [pmid-40232348#q3, pmid-40232348#q28]}
@@ -59,9 +60,9 @@ variants:
     phenotype: RPS6 synonymous, longevity
     trait_efo_id: OBA_VT0005372
     effect_allele: A
-    effect_size: 16.5
+    effect_size: 6.49
     effect_measure: OR
-    stat_significance: suggestive
+    stat_significance: nominal
     direction: protective
     genotypes:
       - genotype: G/G
@@ -104,5 +105,23 @@ studies:
     effect_unit: odds of being long-lived per A allele (Haldane-corrected)
     effect_allele: A
     direction: protective
-    statistical_test: "Kolbe 2025's STAAR-O single-variant test with sex and ten principal components (Table 1, q28, columns q3), MAC ≥ 5; cases past the 95th age-at-death percentile of their birth cohort (q7), an age threshold; FDR-adjusted 6.4e-3 under an exploratory FDR < 0.05 (q2); A 0.28 % in the long-lived and 0.01 % in the controls, 7 copies against 1; against gnomAD NFE the paper's own OR 6.49 (its caveat, q12). The controls fit gnomAD exomes (db-ensembl-116#q852; 3.5 copies expected, 1 seen, Poisson P 0.135) and the long-lived sit above it (7 against 1.1, P 1.2e-4), so read as printed (D31.10 not met, derived); the gene-based synonymous mask (q29) is this signal (q23)"
+    statistical_test: "Kolbe 2025's STAAR-O single-variant test with sex and ten principal components (Table 1, q28, columns q3), MAC ≥ 5; cases past the 95th age-at-death percentile of their birth cohort (q7), an age threshold; FDR-adjusted 6.4e-3 under an exploratory FDR < 0.05 (q2); A 0.28 % in the long-lived and 0.01 % in the controls, 7 copies against 1; against gnomAD NFE the paper's own OR 6.49 (its caveat, q12). The controls fit gnomAD exomes (db-ensembl-116#q852; 3.5 copies expected, 1 seen, Poisson P 0.135) and the long-lived sit above it (7 against 1.1, P 1.2e-4), named; by D34.7 read against the reference (the next entry); the gene-based synonymous mask (q29) is this signal (q23)"
+    curator: claude-opus-5-5
+  - rsid: rs189871470
+    note: pmid-40232348
+    quote: q28
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: German long-lived individuals (Kolbe 2025) against gnomAD's non-Finnish European exomes as the reference
+    ancestry: [EUR]
+    n_cases: 1245
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: nominal
+    effect_size: 6.49
+    effect_measure: OR
+    effect_unit: odds of carrying A, the long-lived against the gnomAD reference
+    effect_allele: A
+    direction: protective
+    statistical_test: "The paper's own OR against gnomAD NFE (Table 1, q28, columns q3), with no test printed; the row's read effect by D34.7 (Kolbe's controls pooled over 120, 124 and 125 thin: 1 copy against 8.3, P 0.0024), the reference fixed as the exomes (D31.13). 7 copies in 2,490 long-lived alleles against 1.06 expected from gnomAD's non-Finnish exomes (0.0427 %, db-ensembl-116#q852): OR 6.6, exact Poisson P 1.2e-4 (derived); the authors note gnomAD NFE is mostly British (q12)"
     curator: claude-opus-5-5

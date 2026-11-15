@@ -15,10 +15,12 @@ verdict_reason: >-
   exome-wide call, not a genome-wide one (R-TIER-4, D31.13). On 2,490 and 8,210 alleles that is about 6 copies against none (the
   Haldane OR from 6 and 0 is 42.96, derived). Unlike row 107, the controls fit the reference: gnomAD's non-Finnish
   exomes (0.0107 %) expect 0.88 copies in them and they show none (Poisson P 0.42), while the long-lived show about
-  6 where 0.27 are expected (P 3.9e-7; against gnomAD's genomes, 0.025 %, 0.13 and 4.8e-5, derived). So the paper is
-  read as printed (D31.10 does not apply); its own OR against gnomAD is 21.00, with its caveat that gnomAD's
-  non-Finnish Europeans are mostly British. The long-lived women carry it too (0.16 %, men 0.45 %, no control copy in
-  either sex). The paper removed variants whose allele fraction fell outside the 1st to 99th percentile to limit
+  6 where 0.27 are expected (P 3.9e-7; against gnomAD's genomes, 0.025 %, 0.13 and 4.8e-5, derived). Yet Kolbe's controls pooled over rows 120, 124 and 125 show 1 copy where 8.3 are expected (P 0.0024, derived), so
+  by D34.7 every rare row of the paper is read against the reference, as 107: the long-lived's about 6 copies
+  against 0.27 expected give OR 22.6 (exact Poisson P 3.9e-7, derived), and the paper's own OR against gnomAD is
+  21.00, with its caveat that gnomAD's non-Finnish Europeans are mostly British; the printed 43.0 is named, not read. By the printed percentages and the long-lived's 2.7:1 women to men, about 3 copies in 336 men and 3 in 909
+  women, no control copy in either sex (derived): men's share is above their 27 % of the long-lived, as across
+  Kolbe's rows (about 24 of 35 copies, D34.7), named, no token. The paper removed variants whose allele fraction fell outside the 1st to 99th percentile to limit
   clonal-haematopoiesis calls, but prints no allele fraction for this one. The exomes are blood-derived; SIK3 is
   among the newer clonal-haematopoiesis genes in blood (Bernstein 2024), but the selection shown there is for
   truncating mutations, and this is one missense base recurring in unrelated people; the somatic share is untested,
@@ -33,8 +35,9 @@ verdict_reason: >-
   discovery's lower bound (OR 8.3, P 0.50 and 0.022; the discovery's 6 copies span 2.2 to 13.1, derived); which
   reading the lead declined (row 120's Q1, (a)). The same reference also fits the look-up's controls (1 copy against 0.31,
   P 0.27) and puts its long-lived above it (2 against 0.32, one-sided P 0.042; against the genomes 0.22, derived):
-  read on the reference, the look-up both passes at nominal P and falls short of the discovery's size, so D31.10,
-  which licenses a reference only for misfit controls, gives no ground to prefer that reading here. The Leiden
+  read on the reference, the look-up both passes at nominal P and falls short of the discovery's size, so D31.10
+  gives no ground to prefer that reading for the look-up, whose own controls fit (D34.7 concerns the German
+  controls). The Leiden
   look-up lists IHH and FLCN, no SIK3 copy among 179 long-lived, where 0.86 are expected (P of none 0.42, derived):
   uninformative, and the paper does not say whether an absent variant is no copies or uncalled. At 0.01 % the variant is
   absent from every large sample read here: Deelen 2019, Timmers 2019, Pilling 2017, Zenin 2019, FinnGen R11, Park
@@ -45,8 +48,8 @@ verdict_reason: >-
   search (the rsID, and SIK3 with longevity terms; Semantic Scholar answered 429 three times, its part unchecked) finds
   Kolbe alone among lifespan studies; of the papers citing Kolbe, a 2026 bioRxiv functional study of rare
   mTOR-pathway variants by the same groups edits variants in other genes (DEPTOR, RAF1, PHLPP1, NF1, IRS1; read from
-  Europe PMC's preprint copy, which the cache cannot hold), none in SIK3. Exceptional survival + (the discovery, read
-  as printed; against gnomAD too), lifespan untested, healthspan untested. Mechanism ageing in general (D25.7): the
+  Europe PMC's preprint copy, which the cache cannot hold), none in SIK3. Exceptional survival + (the reference read, P
+  3.9e-7, D34.7), lifespan untested, healthspan untested. Mechanism ageing in general (D25.7): the
   authors hypothesise that the change lowers mTORC1 signalling, SIK3 being one of its positive regulators, a route not
   tested here; named. Causal C4: no Open Targets record. Effector E1, SIK3, by §4.2's coding clause (a missense
   change, M800T on the MANE Select transcript ENST00000445177; SIFT deleterious with low confidence, PolyPhen
@@ -70,7 +73,7 @@ variants:
     phenotype: SIK3 M800T, longevity
     trait_efo_id: OBA_VT0005372
     effect_allele: G
-    effect_size: 43.0
+    effect_size: 21.00
     effect_measure: OR
     stat_significance: suggestive
     direction: protective
@@ -115,7 +118,25 @@ studies:
     effect_unit: odds of being long-lived per G allele (Haldane-corrected)
     effect_allele: G
     direction: protective
-    statistical_test: "Kolbe 2025's STAAR-O single-variant test with sex and ten principal components (Table 1, q8, columns q3), MAC ≥ 5; cases past the 95th age-at-death percentile of their birth cohort (q7), an age threshold; FDR-adjusted 0.034 under an exploratory FDR < 0.05 (q2); G 0.24 % in the long-lived, absent in the controls (q11), about 6 copies against none; against gnomAD NFE 0.01 % the paper's own OR 21.00 (its caveat, q12). The controls fit gnomAD exomes (0.88 copies expected, none seen, Poisson P 0.42) and the long-lived sit above it (about 6 against 0.27, P 3.9e-7), so read as printed (D31.10 not met, derived); allele fraction unprinted (filter, q13)"
+    statistical_test: "Kolbe 2025's STAAR-O single-variant test with sex and ten principal components (Table 1, q8, columns q3), MAC ≥ 5; cases past the 95th age-at-death percentile of their birth cohort (q7), an age threshold; FDR-adjusted 0.034 under an exploratory FDR < 0.05 (q2); G 0.24 % in the long-lived, absent in the controls (q11), about 6 copies against none; against gnomAD NFE 0.01 % the paper's own OR 21.00 (its caveat, q12). The controls fit gnomAD exomes (0.88 copies expected, none seen, Poisson P 0.42) and the long-lived sit above it (about 6 against 0.27, P 3.9e-7), named; by D34.7 read against the reference (the next entry); allele fraction unprinted (filter, q13)"
+    curator: claude-opus-5-5
+  - rsid: rs147730555
+    note: pmid-40232348
+    quote: q8
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: German long-lived individuals (Kolbe 2025) against gnomAD's non-Finnish European exomes as the reference
+    ancestry: [EUR]
+    n_cases: 1245
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: suggestive
+    effect_size: 21.0
+    effect_measure: OR
+    effect_unit: odds of carrying G, the long-lived against the gnomAD reference
+    effect_allele: G
+    direction: protective
+    statistical_test: "The paper's own OR against gnomAD NFE (Table 1, q8, columns q3), with no test printed; the row's read effect by D34.7 (Kolbe's controls pooled over 120, 124 and 125 thin: 1 copy against 8.3, P 0.0024), the reference fixed as the exomes (D31.13). About 6 copies in 2,490 long-lived alleles against 0.27 expected from gnomAD's non-Finnish exomes (0.0107 %, db-ensembl-116#q803): OR 22.6, exact Poisson P 3.9e-7 (derived); the authors note gnomAD NFE is mostly British (q12)"
     curator: claude-opus-5-5
   - rsid: rs147730555
     note: pmid-40232348

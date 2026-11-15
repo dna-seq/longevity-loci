@@ -20,11 +20,10 @@ verdict_reason: >-
   supplying the copies, though the insertion's higher frequency outside Europe (African 1.7 %) leaves that open. The reference D31.13 fixes for an exome study is gnomAD's
   non-Finnish European exomes (0.047 %, 435 copies): the controls expect 3.9 copies and show none, P 0.021, a fit,
   though a close one (against the genomes, 0.057 %, 4.7 and P 0.009, or 0.012 counting the reference's own sampling
-  error, a branch named), so the paper is read as printed (D31.10 not met). Pooled over rows 120, 124 and 125, whose controls each fit,
-  Kolbe's controls show 1 copy where 8.3 are expected (P 0.0024, derived): a paper-level pattern the per-row 0.01
-  line cannot see, named and put to the lead with the per-row reading as the default. Against the exomes the long-lived show 5
-  where 1.2 are expected (exact Poisson P 0.0072, derived); the paper's own OR against gnomAD is 4.19, with its caveat
-  that gnomAD's non-Finnish Europeans are mostly British. By the printed percentages and the long-lived's 2.7:1 women to
+  error, a branch named), but Kolbe's controls pooled over rows 120, 124 and 125 show 1 copy where 8.3 are expected (P 0.0024, derived), so
+  by D34.7 every rare row of the paper is read against the reference, as 107: the long-lived show 5
+  where 1.2 are expected, OR 4.25 (exact Poisson P 0.0072, derived), and the paper's own OR against gnomAD is 4.19,
+  with its caveat that gnomAD's non-Finnish Europeans are mostly British; the printed 36.3 is named, not read. By the printed percentages and the long-lived's 2.7:1 women to
   men, about 2 copies in 336 men and 3 in 909 women (derived): both sexes here, though men's share (2 of 5) is above
   their 27 % of the long-lived, and pooled over Kolbe's rows 107, 120, 121, 124, 125 and 126 about 24 of 35 long-lived
   copies are in men (derived), named, no token. No
@@ -37,12 +36,10 @@ verdict_reason: >-
   untested, not negative. The literature search (the rsID; Semantic Scholar answered 429, its part unchecked) finds
   Kolbe alone; the five papers citing Kolbe (Semantic Scholar, 2026-11-15) are two reviews, an
   unrelated study, a machine-learning study of GenAge and the 2026 bioRxiv functional study read for row 120, which
-  edits variants in other genes; none tests this one. Exceptional survival + (the discovery, read as printed; against the exome reference
-  too); lifespan untested; healthspan untested. Mechanism ageing in general (D25.7): the authors know of no prior
+  edits variants in other genes; none tests this one. Exceptional survival + (the reference read, P 0.0072); lifespan untested; healthspan untested. Mechanism ageing in general (D25.7): the authors know of no prior
   link of PRAC2 to mTOR signalling or longevity; nothing recorded at the variant. Causal C4: no Open Targets record.
-  Effector E4, put to the lead (default): the paper calls it a frameshift, but on the MANE transcript it is a 5′ UTR
-  change and the frameshift is on a minor isoform, so §4.2's coding clause is not plainly met; the alternative is E1
-  PRAC2. Descriptive. Age of action unknown. The evidence is European (German).
+  Effector E4 (D34.6): §4.2's coding clause reads the MANE transcript, where this is a 5′ UTR change; the
+  frameshift the paper names (cysteine 34 to tryptophan and a stop) is on a minor PRAC2 isoform, named only. Descriptive. Age of action unknown. The evidence is European (German).
 axes:
   tier: {value: C, cites: [pmid-40232348#q33, pmid-40232348#q3, pmid-40232348#q2, pmid-40232348#q7, pmid-40232348#q11, pmid-40232348#q12, pmid-40232348#q24, pmid-40232348#q5, pmid-40232348#q16, pmid-40232348#q35, pmid-40232348#q36, pmid-40232348#q37, db-ensembl-116#q862, db-ensembl-116#q864, db-ensembl-116#q863, pmid-31484785#q169, db-gwascatalog-2026.10.29#q579]}
   mechanism: {value: general_ageing, cites: [pmid-40232348#q34]}
@@ -62,9 +59,9 @@ variants:
     phenotype: PRAC2 region insertion, longevity
     trait_efo_id: OBA_VT0005372
     effect_allele: TG
-    effect_size: 36.3
+    effect_size: 4.19
     effect_measure: OR
-    stat_significance: suggestive
+    stat_significance: nominal
     direction: protective
     genotypes:
       - genotype: T/T
@@ -106,5 +103,23 @@ studies:
     effect_unit: odds of being long-lived per TG allele (Haldane-corrected)
     effect_allele: TG
     direction: protective
-    statistical_test: "Kolbe 2025's STAAR-O single-variant test with sex and ten principal components (Table 1, q33, columns q3), MAC ≥ 5; cases past the 95th age-at-death percentile of their birth cohort (q7), an age threshold; FDR-adjusted 0.025 under an exploratory FDR < 0.05 (q2); TG 0.20 % in the long-lived, absent in the controls (q11), 5 copies against none; against gnomAD NFE the paper's own OR 4.19 (its caveat, q12). The controls fit gnomAD exomes (db-ensembl-116#q862; 3.9 expected, none seen, P 0.021; genomes 0.012 with the reference's error) and the long-lived sit above it (5 against 1.2, P 0.0072), so read as printed (D31.10 not met, derived)"
+    statistical_test: "Kolbe 2025's STAAR-O single-variant test with sex and ten principal components (Table 1, q33, columns q3), MAC ≥ 5; cases past the 95th age-at-death percentile of their birth cohort (q7), an age threshold; FDR-adjusted 0.025 under an exploratory FDR < 0.05 (q2); TG 0.20 % in the long-lived, absent in the controls (q11), 5 copies against none; against gnomAD NFE the paper's own OR 4.19 (its caveat, q12). The controls fit gnomAD exomes (db-ensembl-116#q862; 3.9 expected, none seen, P 0.021; genomes 0.012 with the reference's error) and the long-lived sit above it (5 against 1.2, P 0.0072), named; by D34.7 read against the reference (the next entry)"
+    curator: claude-opus-5-5
+  - rsid: rs199607933
+    note: pmid-40232348
+    quote: q33
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: German long-lived individuals (Kolbe 2025) against gnomAD's non-Finnish European exomes as the reference
+    ancestry: [EUR]
+    n_cases: 1245
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: nominal
+    effect_size: 4.19
+    effect_measure: OR
+    effect_unit: odds of carrying TG, the long-lived against the gnomAD reference
+    effect_allele: TG
+    direction: protective
+    statistical_test: "The paper's own OR against gnomAD NFE (Table 1, q33, columns q3), with no test printed; the row's read effect by D34.7 (Kolbe's controls pooled over 120, 124 and 125 thin: 1 copy against 8.3, P 0.0024), the reference fixed as the exomes (D31.13). 5 copies in 2,490 long-lived alleles against 1.18 expected from gnomAD's non-Finnish exomes (0.0473 %, db-ensembl-116#q862): OR 4.25, exact Poisson P 0.0072 (derived); the authors note gnomAD NFE is mostly British (q12)"
     curator: claude-opus-5-5
