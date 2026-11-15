@@ -2970,3 +2970,12 @@ the MANE Select transcript ENST00000295731 (NM_002181.4, q810); GRCh37 2:219,920
 deposits were searched. T 0.0029 in gnomAD exomes' and 0.0027 in genomes' non-Finnish Europeans, 0.0020 and 0.0016
 in the Finns, 0.0013 in the Ashkenazi exomes (q809); none in 1000 Genomes' 99 CEU samples (q812), so no LD look
 is possible; 3 copies in 214 Tuscan alleles (q813). For row 121.
+
+## Reading 2026-11-15, record
+
+> [q814] populations[35] allele_count 186 population gnomADg:nfe allele T frequency 0.002734
+
+> [q815] populations[34] frequency 0.9973 allele C population gnomADg:nfe allele_count 67848
+
+rs149554120 (row 121): gnomAD's non-Finnish genomes hold 186 T copies (q814) and 67,848 C copies (q815), 68,034
+alleles. For row 121.

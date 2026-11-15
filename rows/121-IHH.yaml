@@ -13,15 +13,19 @@ verdict_reason: >-
   (Haldane-corrected), P 2.4e-6, adjusted 0.036 under the paper's exploratory false-discovery rate of 0.05, its own
   exome-wide call. On 2,490 and 8,210 alleles that is about 8 copies against 8 (the Haldane OR from 8 and 8 is 3.30,
   derived). The controls misfit every matching reference: gnomAD's non-Finnish exomes (0.29 %) expect 23.6 copies in
-  them and they show about 8 (Poisson P 2e-4), the non-Finnish genomes, which hold no UK Biobank samples and so meet
-  the paper's "mostly British" caveat, expect 22.4 (P 4e-4); the long-lived sit at the reference (about 8 against 7.2
+  them and they show about 8 (Poisson P 2e-4), the non-Finnish genomes, a separately sequenced set of 68,034 alleles
+  (their UK Biobank content not read here, so the paper's "mostly British" caveat is not settled), expect 22.4 (P
+  4e-4); the long-lived sit at the reference (about 8 against 7.2
   and 6.8, P 0.43 and 0.37, derived). The paper's own OR against gnomAD is 1.18, which it calls considerably lower than
   its own. Only the Finns (0.20 % and 0.16 %, a bottlenecked population, P 0.02 and 0.09) or UK Biobank's imputed
   0.15 % (Zenin's and Park's frequency, a dosage, not a sequenced reference) would put the controls near fit. So the
   case-control OR is the controls' deficit and sets nothing (D31.10, D31.11), row 109's shape. With the paper's sex
   ratios (2.7:1 women among the long-lived, 1:1.4 among the controls) the women carry about 1 copy in some 1,820
-  long-lived alleles and none in some 3,420 control alleles, the men about 7 in some 670 and 8 in some 4,790
-  (approximate, derived): the deficit sits in the women of both arms, named, no sex token (D30.15). The gene-based
+  long-lived alleles (5.2 expected from gnomAD's exomes, P 0.033) and none in some 3,420 control alleles (9.8
+  expected, P 5e-5), the men about 7 in some 670 long-lived alleles (1.9 expected, P 0.004) and 8 in some 4,790
+  control alleles (13.8 expected, P 0.07) (approximate, derived): the women sit below the reference in both arms,
+  and the men alone would be row 107's shape, long-lived above it. The paper tests no sex subgroup, so the split is
+  named, not read, and carries no sex token (D30.15). The gene-based
   synonymous IHH mask (P 5.74e-6) is this variant's signal, lost when it is removed: the same data, not counted. The
   lead's other evidence: the paper's Ashkenazi look-up (515 aged 95 or more, 496 younger controls) has 4 T copies in
   the long-lived and 2 in the controls, OR 1.93, P 0.30, its controls fitting gnomAD's Ashkenazi exomes (2 against
@@ -38,14 +42,16 @@ verdict_reason: >-
   strongest line within 500 kb, rs12694456 (202 kb, P 0.0012), and Deelen's (99th 2:220,240,357, 320 kb, P 3.3e-5;
   90th 2:220,400,267, 480 kb, P 4.0e-4) tag it at r² 0.086, 0.093 and 0.009 at most by frequency (derived): nothing
   suggestive. The literature search (the rsID, and IHH with longevity terms; Semantic Scholar answered 429, its part
-  unchecked) finds Kolbe alone. Every genotype neutral (D25.2). Outcome cells: exceptional survival 0 (the discovery
+  unchecked) finds Kolbe alone; Kolbe's five citing papers (Semantic Scholar) test no IHH variant, and the 2026
+  bioRxiv functional study by the same groups edits variants in other genes (DEPTOR, RAF1, PHLPP1, NF1, IRS1; read
+  from Europe PMC's preprint copy, which the cache cannot hold), none in IHH. Every genotype neutral (D25.2). Outcome cells: exceptional survival 0 (the discovery
   sets nothing; the look-ups do not pass), lifespan 0 (Park and FinnGen flat), healthspan 0 (Zenin flat). Mechanism
   ageing in general (D25.7): the authors cite a report that IHH downregulates mTOR signalling in bone-marrow stem
   cells, a route not tested here; named. Causal C4: Open Targets holds the variant in no credible set. Effector E4:
   the change is synonymous and alters no protein (D31.9). Descriptive. Age of action unknown. The evidence is
   European.
 axes:
-  tier: {value: D, cites: [pmid-40232348#q18, pmid-40232348#q3, pmid-40232348#q2, pmid-40232348#q21, pmid-40232348#q22, pmid-40232348#q23, pmid-40232348#q24, pmid-40232348#q19, pmid-40232348#q15, pmid-40232348#q10, pmid-40232348#q20, db-ensembl-116#q809, db-finngen-r11#q91, pmid-40021682#q119, pmid-40021682#q32, pmid-30729179#q158, db-gwascatalog-2026.10.29#q576]}
+  tier: {value: D, cites: [db-ensembl-116#q814, db-ensembl-116#q815, pmid-40232348#q18, pmid-40232348#q3, pmid-40232348#q2, pmid-40232348#q21, pmid-40232348#q22, pmid-40232348#q23, pmid-40232348#q24, pmid-40232348#q19, pmid-40232348#q15, pmid-40232348#q10, pmid-40232348#q20, db-ensembl-116#q809, db-finngen-r11#q91, pmid-40021682#q119, pmid-40021682#q32, pmid-30729179#q158, db-gwascatalog-2026.10.29#q576]}
   mechanism: {value: general_ageing, cites: [pmid-40232348#q25]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -62,9 +68,9 @@ variants:
     phenotype: IHH synonymous, longevity
     trait_efo_id: OBA_VT0005372
     effect_allele: T
-    effect_size: 3.3
+    effect_size: 1.18
     effect_measure: OR
-    stat_significance: suggestive
+    stat_significance: not_significant
     direction: protective
     genotypes:
       - genotype: C/C
@@ -107,7 +113,7 @@ studies:
     effect_unit: odds of being long-lived per T allele (Haldane-corrected)
     effect_allele: T
     direction: protective
-    statistical_test: "Kolbe 2025's STAAR-O single-variant test with sex and ten principal components (Table 1, q18, columns q3), MAC ≥ 5; cases past the 95th age-at-death percentile of their birth cohort (q7), an age threshold; FDR-adjusted 0.036 under an exploratory FDR < 0.05 (q2); T 0.32 % in the long-lived, 0.10 % in the controls, about 8 copies against 8; against gnomAD NFE the paper's own OR 1.18 (q21). The controls misfit gnomAD's non-Finnish exomes and genomes (about 8 against 23.6 and 22.4, P 2e-4 and 4e-4) and the long-lived sit at them (8 against 7.2), so this OR is named, not read, and sets nothing (D31.10, D31.11, derived); the gene-based IHH mask is this variant's signal (q22, q23)"
+    statistical_test: "Kolbe 2025's STAAR-O single-variant test with sex and ten principal components (Table 1, q18, columns q3), MAC ≥ 5; cases past the 95th age-at-death percentile of their birth cohort (q7), an age threshold; FDR-adjusted 0.036 under an exploratory FDR < 0.05 (q2); T 0.32 % in the long-lived, 0.10 % in the controls, about 8 copies against 8; against gnomAD NFE the paper's own OR 1.18 (q21). The controls misfit gnomAD's non-Finnish exomes and genomes (about 8 against 23.6 and 22.4, P 2e-4 and 4e-4) and the long-lived sit at them (8 against 7.2), so this OR is named, not read, and sets nothing (D31.10, D31.11, derived); the variant carries the paper's OR against gnomAD, 1.18 (one-sided P 0.43, derived); the gene-based IHH mask is this variant's signal (q22, q23)"
     curator: claude-opus-5-5
   - rsid: rs149554120
     note: pmid-40232348
