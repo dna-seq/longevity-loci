@@ -850,3 +850,13 @@ standing word (pacing off, "full steam ahead"; the advisor pattern for the requi
    is `0`: Pilling 2017's top 10 % at the lead is flat (P 0.88), as 97 reads it.
 9. **99's coding question is answered: E4.** The splice-site hit falls on a transcript that makes no protein, so
    §4.2's coding clause is not met. 3, now descriptive, drops the preventable row's LDL-test sentence (R-VOICE-4).
+10. **A discovery whose controls misfit the matching reference is read against the reference** (D30.10 carried from
+    a replication sample to a discovery). 107 SLC16A6, Kolbe 2025's rare synonymous variant: its controls show about
+    1 copy where gnomAD NFE expects about 7 (Poisson P 0.007), so the case-control OR (12.1, P 9.8e-7) is named, not
+    read as the effect. What the row reads is the long-lived against gnomAD NFE (the paper's own OR 2.36; about 5
+    copies against 2.1 expected, P 0.066). It stays C, the curator's (a): unreplicated and untested, but not
+    overfit, since D26.10's cases (41, 44, 48, 60) were each disowned by their authors or filters, or were off by
+    orders of magnitude. Exceptional survival is `+` only if the paper's own comparison with gnomAD passes its own
+    test; otherwise `0`, with both comparisons stated. Effector E4 (D31.9: a synonymous change alters no protein),
+    the curator's (a). Rejected: (b), D on a seven-fold control deficit in about 8,000 alleles, which would make any
+    rare-variant discovery with a sparse control count overfit.
