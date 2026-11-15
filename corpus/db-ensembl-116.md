@@ -2937,8 +2937,16 @@ row 107). For row 118.
 
 > [q806] populations[64] allele_count 34 population 1000GENOMES:phase_3:CEU allele G frequency 0.171717171717172
 
-rs147730555 (row 120): missense in SIK3 at GRCh38 11:116,861,300 A/G (q802), methionine to threonine at residue 752
-of ENST00000375300 (SIFT deleterious, low confidence; PolyPhen benign, q804); GRCh37 11:116,732,016 (q805), where
+rs147730555 (row 120): missense in SIK3 at GRCh38 11:116,861,300 A/G (q802), methionine to threonine at residue 800
+of the MANE Select transcript ENST00000445177 (NM_001366686.3, q807; SIFT deleterious, low confidence; PolyPhen
+benign), residue 752 of ENST00000375300 (q804); GRCh37 11:116,732,016 (q805), where
 the GRCh37 deposits were searched. G 0.000107 in gnomAD exomes' and 0.00025 in genomes' non-Finnish Europeans,
 0.00031 and 0.00087 in the Ashkenazi, 0 in African, East and South Asian exomes (q803). Wright's rs524467 has G
 0.17 in CEU (q806). For row 120.
+
+## Reading 2026-11-15, record
+
+> [q807] [0].transcript_consequences[2] polyphen_score 0.001 sift_score 0 gene_id ENSG00000160584 strand -1 hgnc_id HGNC:29165 cds_start 2399 protein_start 800 polyphen_prediction benign mane_select NM_001366686.3 cdna_end 2412 cds_end 2399 canonical 1 variant_allele G gene_symbol SIK3 gene_symbol_source HGNC cdna_start 2412 codons aTg/aCg protein_end 800 sift_prediction deleterious_low_confidence biotype protein_coding transcript_id ENST00000445177 impact MODERATE amino_acids M/T
+
+rs147730555 (row 120): on Ensembl's canonical and MANE Select SIK3 transcript, ENST00000445177, the change is M800T
+(q807); the 752 of q804 is ENST00000375300's numbering. For row 120.

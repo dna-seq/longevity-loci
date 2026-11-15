@@ -1,5 +1,6 @@
 # The seed list's locus 120, SIK3 (11q23.3). Curated 2026-11-15. Lead rs147730555, the seed's only rsID (Kolbe
-# 2025's exome-wide rare variant): missense in SIK3, methionine to threonine at residue 752, GRCh38 11:116,861,300 A/G,
+# 2025's exome-wide rare variant): missense in SIK3, methionine to threonine at residue 800 of the MANE Select
+# transcript (752 on ENST00000375300), GRCh38 11:116,861,300 A/G,
 # GRCh37 11:116,732,016, G the rare allele (0.01 % in gnomAD's non-Finnish European exomes) and the discovery's
 # longer-lived side. Open Targets 26.09 has no record of the variant under either allele order; the GWAS Catalog
 # (2026-10-29) holds no association.
@@ -18,21 +19,26 @@ verdict_reason: >-
   read as printed (D31.10 does not apply); its own OR against gnomAD is 21.00, with its caveat that gnomAD's
   non-Finnish Europeans are mostly British. The long-lived women carry it too (0.16 %, men 0.45 %, no control copy in
   either sex). The paper removed variants whose allele fraction fell outside the 1st to 99th percentile to limit
-  clonal-haematopoiesis calls, but prints no allele fraction for this one; SIK3 is among the clonal-haematopoiesis
-  genes in blood exomes (Bernstein 2024, named), so whether some long-lived copies are somatic is unknown, while
-  gnomAD's 118 copies show the variant is germline in the population. One look-up exists: the paper's Ashkenazi
+  clonal-haematopoiesis calls, but prints no allele fraction for this one. The exomes are blood-derived, and SIK3
+  is among the newer clonal-haematopoiesis drivers in blood (Bernstein 2024), so whether some long-lived copies are
+  somatic is unknown. The variant's spread across populations (Ashkenazi above non-Finnish above Finnish, absent
+  from African and Asian exomes) and a copy in a younger Ashkenazi control show it also occurs as an inherited
+  variant. One look-up exists: the paper's Ashkenazi
   sample (515 aged 95 or more, 496 younger controls) has 2 G copies in the long-lived and 1 in the controls, OR
   1.93, P 0.79, the same direction and no pass. Tested against the discovery's size conditionally on its 3 copies,
   it does not reach D21's line: P 0.064 against OR 43 and 0.126 against OR 21 (derived), so no red flag and no
   `replication_failed`. Read instead against gnomAD's Ashkenazi frequency, the long-lived would expect 6.8 copies
   (exomes, 0.031 %) or 18.7 (genomes, 0.087 %) at OR 21 and show 2 (P 0.034, under 0.001), lapsing at the
   discovery's lower bound (OR 8.3, P 0.50 and 0.022; the discovery's 6 copies span 2.2 to 13.1, derived); which
-  reading D21 takes is put to the lead. The Leiden look-up finds IHH and FLCN, not SIK3. At 0.01 % the variant is
+  reading D21 takes is put to the lead. The same reference also fits the look-up's controls (1 copy against 0.31,
+  P 0.27) and puts its long-lived above it (2 against 0.32, one-sided P 0.042; against the genomes 0.22, derived):
+  read on the reference, the look-up both passes at nominal P and falls short of the discovery's size, so D31.10,
+  which licenses a reference only for misfit controls, gives no ground to prefer that reading here. The Leiden look-up finds IHH and FLCN, not SIK3. At 0.01 % the variant is
   absent from every large sample read here: Deelen 2019, Timmers 2019, Pilling 2017, Zenin 2019, FinnGen R11, Park
   2025 and Foote 2025 hold no line, and Wright 2019's one line within 500 kb (rs524467, 202 kb, G 0.17 in CEU) cannot
   tag it, so every test is untested, not negative. Timmers' strongest line within 500 kb, rs964184 (83 kb, P 1.5e-4),
-  and Deelen's (11:116,665,120, 67 kb, EAF 0.01, P 4.6e-4) cannot tag it either (r² at most 0.0007 and 0.011 by
-  frequency, derived). No LD look is possible for a 0.01 % variant in 1000 Genomes' 99 CEU samples. The literature
+  and Deelen's (90th 11:116,665,120, 67 kb, EAF 0.01, P 4.6e-4; 99th 11:117,214,617, 483 kb, EAF 0.98, P 2.3e-4)
+  cannot tag it either (r² at most 0.0007, 0.011 and 0.005 by frequency, derived). No LD look is possible for a 0.01 % variant in 1000 Genomes' 99 CEU samples. The literature
   search (the rsID, and SIK3 with longevity terms; Semantic Scholar answered 429 twice, its part unchecked) finds
   Kolbe alone among lifespan studies; of the papers citing Kolbe, a 2026 bioRxiv functional study of rare
   mTOR-pathway variants by the same groups edits variants in other genes (DEPTOR, RAF1, PHLPP1, NF1, IRS1; read from
@@ -40,10 +46,11 @@ verdict_reason: >-
   as printed; against gnomAD too), lifespan untested, healthspan untested. Mechanism ageing in general (D25.7): the
   authors hypothesise that the change lowers mTORC1 signalling, SIK3 being one of its positive regulators, a route not
   tested here; named. Causal C4: no Open Targets record. Effector E1, SIK3, by §4.2's coding clause (a missense
-  change, M752T on the canonical transcript; SIFT deleterious with low confidence, PolyPhen benign, CADD 19.45).
+  change, M800T on the MANE Select transcript ENST00000445177; SIFT deleterious with low confidence, PolyPhen
+  benign, CADD 19.45).
   Descriptive. Age of action unknown. The evidence is European (German; the Ashkenazi look-up leans the same way).
 axes:
-  tier: {value: C, cites: [pmid-40232348#q8, pmid-40232348#q3, pmid-40232348#q2, pmid-40232348#q7, pmid-40232348#q11, pmid-40232348#q12, pmid-40232348#q13, pmid-40232348#q9, pmid-40232348#q10, pmid-40232348#q5, pmid-40232348#q15, pmid-40232348#q16, pmid-40232348#q4, db-ensembl-116#q803, db-gwascatalog-2026.10.29#q575]}
+  tier: {value: C, cites: [pmid-40232348#q17, pmid-38744975#q1, pmid-40232348#q8, pmid-40232348#q3, pmid-40232348#q2, pmid-40232348#q7, pmid-40232348#q11, pmid-40232348#q12, pmid-40232348#q13, pmid-40232348#q9, pmid-40232348#q10, pmid-40232348#q5, pmid-40232348#q15, pmid-40232348#q16, pmid-40232348#q4, db-ensembl-116#q803, db-gwascatalog-2026.10.29#q575]}
   mechanism: {value: general_ageing, cites: [pmid-40232348#q14]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -53,11 +60,11 @@ axes:
   context: {values: [eur_only_evidence], cites: [pmid-40232348#q3, pmid-40232348#q9]}
 flags:
   - {token: "causal:C4", cites: [db-opentargets-26.09#q1198]}
-  - {token: "effector:E1", cites: [db-ensembl-116#q802, db-ensembl-116#q804, pmid-40232348#q8]}
+  - {token: "effector:E1", cites: [db-ensembl-116#q802, db-ensembl-116#q807, pmid-40232348#q8]}
 variants:
   - rsid: rs147730555
     gene: SIK3
-    phenotype: SIK3 M752T, longevity
+    phenotype: SIK3 M800T, longevity
     trait_efo_id: OBA_VT0005372
     effect_allele: G
     effect_size: 43.0
@@ -127,5 +134,5 @@ studies:
     effect_unit: odds of being long-lived per G allele
     effect_allele: G
     direction: protective
-    statistical_test: "Kolbe 2025's look-up (Table 5, q9; q5, q10): 2 G copies in the long-lived, 1 in the controls; one-sided 0.39, half the printed P (derived). Against the discovery conditionally on the 3 copies, heterogeneity P 0.064 (OR 43) and 0.126 (OR 21): no D21 red flag. Against gnomAD's Ashkenazi G (db-ensembl-116#q803) at OR 21 the long-lived expect 6.8 (exomes) or 18.7 (genomes) copies, P 0.034 and under 0.001, lapsing at the discovery's lower bound OR 8.3 (derived); put to the lead"
+    statistical_test: "Kolbe 2025's look-up (Table 5, q9; q5, q10): 2 G copies in the long-lived, 1 in the controls; one-sided 0.39, half the printed P (derived). Against the discovery conditionally on the 3 copies, heterogeneity P 0.064 (OR 43) and 0.126 (OR 21): no D21 red flag. Against gnomAD's Ashkenazi G (db-ensembl-116#q803) at OR 21 the long-lived expect 6.8 (exomes) or 18.7 (genomes) copies, P 0.034 and under 0.001, lapsing at the discovery's lower bound OR 8.3; the same reference fits the controls (1 against 0.31) and gives the long-lived one-sided 0.042 (exomes), so read on it the look-up also passes nominally (derived); put to the lead"
     curator: claude-opus-5-5
