@@ -8,7 +8,8 @@ verdict: kept
 verdict_reason: >-
   Tier C, the seed's: a suggestive discovery (§4.1's C) that no independent study has replicated or contradicted.
   Deelen 2019's trans-ethnic meta-analysis of survival to the 99th percentile against all controls gives C OR 1.12
-  (1.02 to 1.22), P 9.8e-7, with heterogeneity across cohorts (I² 57 %, P 0.005); its European deposits give C +0.102
+  (1.02 to 1.22), P 9.8e-7, with heterogeneity across cohorts (I² 57 %, P 0.005), as Table 4 prints them, though
+  the interval implies P near 0.01 (z about 2.5): the interval and P may come from different models, unexplained; its European deposits give C +0.102
   at the 99th (P 0.0011) and +0.049 at the 90th (P 0.016), the same cohorts. Timmers 2019's million parents' lives,
   with no UK Biobank in Deelen and at least the Rotterdam Study shared, lean C's way, short of nominal (C +0.0053 per
   self, P 0.19, one-sided 0.093; UK Biobank and LifeGen on opposite sides). Carried to that scale by D25.3's
@@ -24,12 +25,12 @@ verdict_reason: >-
   Semantic Scholar answered 429) finds Deelen and a stroke-subtype paper that carries the lead among its stroke loci.
   Exceptional survival + (the discovery), lifespan 0 (Timmers one-sided 0.093), healthspan 0. Mechanism ageing in
   general (D25.7); at the lead's own lines in Open Targets' sets C raises eGFR and lowers creatinine, ischaemic stroke
-  and CRP, at small posteriors, none genome-wide at the lead: `mech:kidney` and `mech:cvd`, no protection token.
+  and CRP, at small posteriors (0.013 to 0.038), the lead's own P not printed: `mech:kidney` and `mech:cvd`, no protection token.
   Causal C4 and effector E4, no gene named: no lifespan-class set holds it; PMF1 is named in prose. Descriptive. Age
   of action unknown. The discovery is trans-ethnic, its European part and every test of it European.
 axes:
   tier: {value: C, cites: [pmid-31413261#q259, pmid-31413261#q260, pmid-31413261#q261, pmid-31413261#q262, pmid-30642433#q379, pmid-31413261#q250, pmid-30642433#q90, pmid-30642433#q92, pmid-29227965#q133, pmid-29227965#q134, pmid-29227965#q135, pmid-29227965#q136, db-finngen-r11#q83, pmid-40021682#q110, pmid-31484785#q161, db-ensembl-116#q754, db-opentargets-26.09#q1180]}
-  mechanism: {value: general_ageing, cites: [pmid-31413261#q259]}
+  mechanism: {value: general_ageing, cites: [pmid-31413261#q259, db-opentargets-26.09#q1175, db-opentargets-26.09#q1179]}
   pleiotropy: {values: ["mech:kidney", "mech:cvd"], cites: [db-opentargets-26.09#q1171, db-opentargets-26.09#q1172, db-opentargets-26.09#q1173, db-opentargets-26.09#q1174, db-opentargets-26.09#q1176, db-opentargets-26.09#q1177, db-opentargets-26.09#q1178]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "+",
@@ -50,26 +51,26 @@ variants:
     stat_significance: suggestive
     direction: protective
     genotypes:
-      - genotype: T/T
+      - genotype: C/T
         state: neutral
         conclusion: >-
-          You carry two copies of the more common version of this DNA position, as about 42 in 100 people of European
-          ancestry do. It is the reference the other combinations are compared with. The position, on chromosome 1,
-          lies near the PMF1 gene. The finding comes from people of European ancestry mostly.
-      - genotype: C/T
-        state: protective
-        conclusion: >-
-          You carry one copy of a less common version of this DNA position (about 46 in 100 people of European
-          ancestry do). One large study found it a little more often among people who reached the oldest one in a
-          hundred of lifespans. No separate study has confirmed it, so this is early evidence, not a settled finding:
-          a tendency, not destiny.
+          You carry one copy of each version of this DNA position, the most common combination (about 46 in 100
+          people of European ancestry). It is the reference the other combinations are compared with. The position,
+          on chromosome 1, lies near the PMF1 gene. The finding comes mostly from people of European ancestry.
       - genotype: C/C
         state: protective
         conclusion: >-
-          You carry two copies of a less common version of this DNA position (about 13 in 100 people of European
-          ancestry do). One large study found each copy a little more often among people who reached the oldest one
-          in a hundred of lifespans. No separate study has confirmed it, so this is early evidence, not a settled
+          You carry two copies of the less common version of this DNA position (about 13 in 100 people of European
+          ancestry do). One large study found this version a little more often among people who reached the oldest
+          one in a hundred of lifespans. No separate study has confirmed it, so this is early evidence, not a settled
           finding: a tendency, not destiny.
+      - genotype: T/T
+        state: risk
+        conclusion: >-
+          You carry two copies of the more common version of this DNA position (about 41 in 100 people of European
+          ancestry do). One large study found the other version a little more often among people who reached the
+          oldest one in a hundred of lifespans, so two copies of this one sit slightly on the other side. No separate
+          study has confirmed it, so this is early evidence, not a settled finding: a tendency, not destiny.
 studies:
   - rsid: rs2758603
     note: pmid-31413261
@@ -86,7 +87,7 @@ studies:
     effect_unit: odds of survival to the 99th percentile per C allele
     effect_allele: C
     direction: protective
-    statistical_test: "Table 4, trans-ethnic 99th percentile against all controls (q259, q260), OR 1.12 (1.02-1.22), I² 57.2 %, heterogeneity P 0.005; European deposits T −0.102 (SE 0.031), P 0.0011 at the 99th (q262), T −0.049, P 0.016 at the 90th (q261)"
+    statistical_test: "Table 4, trans-ethnic 99th percentile against all controls (q259, q260), OR 1.12 (1.02-1.22), I² 57.2 %, heterogeneity P 0.005 (the interval implies P near 0.01, the printed P 9.8e-7: printed as is, unexplained); European deposits T −0.102 (SE 0.031), P 0.0011 at the 99th (q262), T −0.049, P 0.016 at the 90th (q261)"
     curator: claude-opus-5-5
   - rsid: rs2758603
     note: pmid-30642433
