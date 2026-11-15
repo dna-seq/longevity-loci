@@ -2799,3 +2799,13 @@ rs113181552 (row 109): an intron variant at GRCh38 20:1,051,463 G/T (q765); T 0.
 
 rs116362179 (row 110): intergenic at GRCh38 2:53,153,619 C/T (q767); T 0.041 in gnomAD's non-Finnish genomes (q768).
 Ensembl lists no CEU variant at r² 0.5 with it. For row 110.
+
+## Reading 2026-11-15, record
+
+> [q769] [0] strand 0 assembly_name GRCh38 start 52600001 id p16.2 feature_type band end 54700000 stain gneg seq_region_name 2
+
+> [q770] [0] start 173300001 strand 0 id q35.2 end 177100000 stain gpos25 assembly_name GRCh38 seq_region_name 5 feature_type band
+
+Cytobands at the leads: GRCh38 2:53,153,619 (row 110) in 2p16.2 (q769); 5:174,283,195 (row 34) in 5q35.2 (q770). In
+1000 Genomes CEU at r² 0.1 within the ±250 kb window, rs116362179 (row 110) has partners up to r² 0.31 and rs113181552
+(row 109) up to 0.49: both are in the panel, and neither has a proxy at r² 0.5. For rows 110, 34 and 109.
