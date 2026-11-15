@@ -4304,3 +4304,52 @@ row 121.
 
 4_169071078_T_A, 4_169071078_T_TTC, 1_188090337_C_G and 1_188090337_G_C (rows 122, 123): no record (q1200; each answer
 the same line). For rows 122 and 123.
+
+## Reading 2026-11-15, record
+
+> [q1201] data.credibleSets count 7
+
+> [q1202] data.credibleSets count 0
+
+> [q1203] data.credibleSets.rows[0].study id GCST90551885
+
+> [q1204] data.credibleSets.rows[0].locus.rows[0] posteriorProbability 0.9219595982503114
+
+> [q1205] data.credibleSets.rows[1].study id GCST009890
+
+> [q1206] data.credibleSets.rows[1].locus.rows[0] posteriorProbability 0.9976364581923483
+
+> [q1207] data.credibleSets.rows[2].study id GCST011100
+
+> [q1208] data.credibleSets.rows[2].locus.rows[0] posteriorProbability 0.9998272914557189
+
+> [q1209] data.credibleSets.rows[3].study id GCST006697
+
+> [q1210] data.credibleSets.rows[3].locus.rows[0] posteriorProbability 0.9999999994583392
+
+> [q1211] data.credibleSets.rows[4].study id GCST006702
+
+> [q1212] data.credibleSets.rows[4].locus.rows[0] posteriorProbability 0.9751294841883362
+
+> [q1213] data.credibleSets.rows[5].study id GCST90551884
+
+> [q1214] data.credibleSets.rows[5].locus.rows[0] posteriorProbability 0.9999997152492861
+
+> [q1215] data.credibleSets.rows[6].study id GCST90551886
+
+> [q1216] data.credibleSets.rows[6].locus.rows[0] posteriorProbability 0.9997437299382232
+
+> [q1217] data.credibleSet.l2GPredictions.rows[0] score 0.9734014272689819
+
+> [q1218] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol APOE
+
+> [q1219] data.credibleSet.l2GPredictions.rows[1] score 0.17374053597450256
+
+Row 96 (APOE). `credibleSets-longevity11` (the eight lifespan-class studies plus Park 2025's three): rs429358 is in
+seven sets (q1201), each with rs429358 the top variant: Park's men (GCST90551885, SuSiE-inf, PIP 0.92), Timmers 2019
+(GCST009890, PICS, 0.998), Timmers 2020's multivariate scan (GCST011100, PICS, 1.00), Pilling 2017's parents
+(GCST006697, SuSiE-inf, 1.00), GCST006702 (SuSiE-inf, 0.975), Park's whole cohort (GCST90551884, 1.00) and Park's
+women (GCST90551886, 1.00) (q1203 to q1216). rs7412 is in none (q1202). Locus-to-gene in Pilling's set:
+APOE 0.973, the next gene APOC2 at 0.174 (q1217 to q1219); Park's whole-cohort set gives the same APOE score
+(file `set-a72ba60e-l2g-coloc`). The colocalisation listing (1,825 rows) was paged only to 200 and is not read.
+For row 96.

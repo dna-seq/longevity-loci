@@ -3065,3 +3065,36 @@ alleles, 6.1 expected) above it: OR 3.32, log 1.20 (SE 0.26), P 4.8e-6 (derived)
 Row 122: rs62332690 and the deletion (rs146423901, merged into rs10610954) are at r² 1.00, D′ 1.00 in CEU (q836), A
 with T (their equal frequencies, q829, q827): Timmers' and Zenin's lines at rs62332690 test the deletion in
 Europeans. For row 122.
+
+## Reading 2026-11-15, record
+
+> [q837] [0].transcript_consequences[0] amino_acids C/R sift_score 1 biotype protein_coding canonical 1 gene_symbol_source HGNC protein_start 130 impact MODERATE cds_start 388 sift_prediction tolerated cds_end 388 cdna_end 457 cdna_start 457 protein_end 130 gene_id ENSG00000130203 transcript_id ENST00000252486 hgnc_id HGNC:613 mane_select NM_000041.4 codons Tgc/Cgc variant_allele C strand 1 gene_symbol APOE
+
+> [q838] [0].transcript_consequences[0] cds_end 526 hgnc_id HGNC:613 variant_allele T transcript_id ENST00000252486 gene_symbol_source HGNC codons Cgc/Tgc biotype protein_coding mane_select NM_000041.4 protein_end 176 gene_symbol APOE cds_start 526 amino_acids R/C cdna_start 595 cdna_end 595 canonical 1 gene_id ENSG00000130203 sift_score 0 sift_prediction deleterious strand 1 impact MODERATE protein_start 176
+
+> [q839] populations[33] allele_count 9368 allele C population gnomADg:nfe frequency 0.1379
+
+> [q840] populations[36] population gnomADg:nfe frequency 0.07943 allele_count 5397 allele T
+
+> [q841] [0] d_prime 0.769730 population_name 1000GENOMES:phase_3:CEU variation1 rs429358 variation2 rs2075650 r2 0.551856
+
+> [q842] [0] r2 0.715557 d_prime 0.961502 variation2 rs4420638 variation1 rs429358 population_name 1000GENOMES:phase_3:CEU
+
+> [q843] [0] d_prime 1.000000 variation2 rs769449 variation1 rs429358 population_name 1000GENOMES:phase_3:CEU r2 0.799154
+
+> [q844] [0] variation2 rs405509 d_prime 0.753685 population_name 1000GENOMES:phase_3:CEU variation1 rs429358 r2 0.117142
+
+> [q845] [0] population_name 1000GENOMES:phase_3:CEU d_prime 0.999040 variation2 rs449647 r2 0.054256 variation1 rs429358
+
+> [q846] [0] d_prime 0.999933 r2 0.073158 population_name 1000GENOMES:phase_3:CEU variation2 rs405509 variation1 rs7412
+
+> [q847] [0] variation1 rs7412 variation2 rs449647 r2 0.119945 population_name 1000GENOMES:phase_3:CEU d_prime 0.657364
+
+Row 96 (APOE). VEP on the MANE transcript ENST00000252486 (NM_000041.4): rs429358's C changes cysteine 130 to
+arginine (q837) and rs7412's T arginine 176 to cysteine (q838), residues 112 and 158 of the mature protein in the
+usual numbering. ε2 is T at both, ε3 T and C, ε4 C at both. In gnomAD's non-Finnish European genomes the ε4 C is at
+0.138 (q839) and the ε2 T at 0.079 (q840). Pairwise LD in 1000 Genomes CEU with rs429358 (q841 to q845):
+rs2075650 r² 0.55, rs4420638 0.72, rs769449 0.80, rs405509 0.12, rs449647 0.05; with rs7412 (q846, q847):
+rs405509 0.07, rs449647 0.12. The endpoint answered nothing for rs7412 with rs2075650, rs4420638 and rs769449 (no
+file kept), which reads as r² under 0.05 (row 37's lesson). So rs2075650, rs4420638 and rs769449 are partial
+stand-ins for ε4, and the two promoter SNPs tag neither ε4 nor ε2. For row 96.
