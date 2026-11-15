@@ -93,3 +93,23 @@ def test_a_bare_angle_bracket_in_an_abstract_is_kept(monkeypatch: pytest.MonkeyP
     stub(monkeypatch, search([hit]), http(404))
     fetch(PMID, tmp_path)
     assert cached(tmp_path)[0] == "Risk fell (P<0.001) in carriers; HR >1 elsewhere. aEnd."
+
+
+def test_an_id_neither_pmid_nor_preprint_is_refused(tmp_path: Path) -> None:
+    got = fetch("10.21203/rs.3.rs-6869504/v1", tmp_path)
+    assert got.outcome is Outcome.REFUSED and not list(tmp_path.iterdir())
+
+
+def test_a_preprint_full_text_is_cached_under_its_doi_key(tmp_path: Path) -> None:
+    """Row 151's only source, a Research Square preprint whose host refuses scripted fetches; Europe PMC holds its
+    JATS text (PPR1042277). Real request; skipped offline."""
+    got = fetch("PPR1042277", tmp_path)
+    if got.outcome is Outcome.UNREACHABLE:
+        pytest.skip(f"Europe PMC unreachable: {got.detail}")
+    assert got.outcome is Outcome.FETCHED and got.source is Source.FULL_TEXT, got
+    assert got.key == "doi-10.21203_rs.3.rs-6869504_v1"
+    sidecar = json.loads((tmp_path / f"{got.key}.source.json").read_text(encoding="utf-8"))
+    text = (tmp_path / f"{got.key}.txt").read_text(encoding="utf-8")
+    assert sidecar["preprint"] == "PPR1042277" and sidecar["pmid"] is None
+    assert sidecar["sha256"] == hashlib.sha256(text.encode("utf-8")).hexdigest()
+    assert "rs75571981" in text and "<" not in text.split("rs75571981")[0][-200:]

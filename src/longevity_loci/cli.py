@@ -93,11 +93,12 @@ def _cache() -> Path:
 
 
 @app.command("fetch")
-def fetch_cmd(pmids: list[int] = typer.Argument(..., help="PMIDs to fetch")) -> None:
-    """Fetch articles into $LOCI_CACHE: Europe PMC's open full text where there is one, else the abstract.
-    Exit 0 all fetched, 1 one has no record or no text, 3 the service did not answer (retry)."""
+def fetch_cmd(pmids: list[str] = typer.Argument(..., help="PMIDs, or preprints' Europe PMC ids (PPR…), to fetch")) -> None:
+    """Fetch articles into $LOCI_CACHE: Europe PMC's open full text where there is one, else the abstract. A
+    preprint (PPR…) is cached under its note key, doi-<DOI>. Exit 0 all fetched, 1 one has no record or no text
+    or an id is neither, 3 the service did not answer (retry)."""
     cache = _cache()
-    results = [fetch(p, cache) for p in pmids]
+    results = [fetch(int(p) if p.isdigit() else p, cache) for p in pmids]
     for r in results:
         typer.echo(f"{r.outcome.value:12} {r.key}  {r.source.value if r.source else ''}  {r.title or r.detail}".rstrip())
     if any(r.outcome is Outcome.UNREACHABLE for r in results):

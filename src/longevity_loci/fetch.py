@@ -21,7 +21,8 @@ from pathlib import Path
 
 log = logging.getLogger(__name__)
 
-SEARCH = "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:{pmid}%20AND%20SRC:MED&resultType=core&format=json"
+SEARCH = "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:{pmid}%20AND%20SRC:{src}&resultType=core&format=json"
+PREPRINT = re.compile(r"^PPR\d+$")  # a preprint's Europe PMC id; its text, where Europe PMC holds one, is JATS as an article's
 FULLTEXT = "https://www.ebi.ac.uk/europepmc/webservices/rest/{pmcid}/fullTextXML"
 RETRYABLE_HTTP = frozenset({408, 425, 429, 500, 502, 503, 504})
 
@@ -102,12 +103,17 @@ def _write(path: Path, text: str) -> None:
     os.replace(tmp, path)
 
 
-def fetch(pmid: int, cache: Path, timeout: float = 60) -> Fetched:
+def fetch(pmid: int | str, cache: Path, timeout: float = 60) -> Fetched:
     """Fetch one article's text into the cache; the open full text when Europe PMC has one, else the abstract.
     A full text Europe PMC does not serve (404) falls back to the abstract; a busy or failing service does not,
-    so a transient fault never replaces a cached full text by an abstract."""
-    key = f"pmid-{pmid}"
-    reply = _request(SEARCH.format(pmid=pmid), timeout)
+    so a transient fault never replaces a cached full text by an abstract. `pmid` is a PMID, or a preprint's Europe
+    PMC id (`PPR…`), cached under the preprint's note key `doi-<DOI>` (`/` as `_`)."""
+    preprint = isinstance(pmid, str)
+    if preprint and not PREPRINT.match(pmid):
+        return Fetched(Outcome.REFUSED, str(pmid), detail="an id is a PMID or a Europe PMC preprint id (PPR…)")
+    key = str(pmid) if preprint else f"pmid-{pmid}"
+    search = SEARCH.format(pmid=pmid, src="PPR" if preprint else "MED")
+    reply = _request(search, timeout)
     if reply.outcome is not None:
         return Fetched(reply.outcome, key, detail=reply.detail)
     try:
@@ -117,9 +123,15 @@ def fetch(pmid: int, cache: Path, timeout: float = 60) -> Fetched:
     if not hits:
         return Fetched(Outcome.NOT_FOUND, key)
     hit = hits[0]
+    if preprint:
+        if not hit.get("doi"):
+            return Fetched(Outcome.MALFORMED, key, title=hit.get("title"), detail="the preprint's record has no DOI")
+        key = "doi-" + hit["doi"].replace("/", "_")
     text, source, url = None, None, None
     pmcid = hit.get("pmcid")
-    if pmcid and hit.get("isOpenAccess") == "Y":
+    if preprint and pmid in (hit.get("fullTextIdList") or {}).get("fullTextId", []):
+        pmcid = pmid
+    if pmcid and (preprint or hit.get("isOpenAccess") == "Y"):
         url = FULLTEXT.format(pmcid=pmcid)
         full = _request(url, timeout)
         if full.outcome is Outcome.UNREACHABLE:
@@ -132,10 +144,10 @@ def fetch(pmid: int, cache: Path, timeout: float = 60) -> Fetched:
             log.info("%s: no full text from %s (%s); the abstract instead", key, pmcid, full.detail or "empty")
     abstract = strip_tags(hit.get("abstractText") or "")
     if text is None and abstract.strip():
-        text, source, url = abstract, Source.ABSTRACT, SEARCH.format(pmid=pmid)
+        text, source, url = abstract, Source.ABSTRACT, search
     if text is None or source is None:
         return Fetched(Outcome.NO_TEXT, key, title=hit.get("title"))
-    sidecar = {"key": key, "pmid": pmid, "pmcid": pmcid, "source": source.value, "url": url,
+    sidecar = {"key": key, "pmid": None if preprint else pmid, "preprint": pmid if preprint else None, "pmcid": pmcid, "source": source.value, "url": url,
                "title": hit.get("title"), "fetched": datetime.now(UTC).isoformat(timespec="seconds"),
                "sha256": hashlib.sha256(text.encode("utf-8")).hexdigest()}
     _write(cache / f"{key}.txt", text)

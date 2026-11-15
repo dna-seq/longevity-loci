@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- `loci fetch` takes a preprint's Europe PMC id (`PPR…`) and caches its JATS full text, else its abstract, under the note key `doi-<DOI>`: row 151's Research Square preprint, whose host refuses scripted fetches, now has a cacheable text.
 - `loci check rows` no longer warns `incomplete` on a variant that defines the row's ε versions and carries no genotypes (D33: the pairs score it); FORMATS says why its studies have no `variants.csv` row in 0.8.
 - Rows take `haplotypes` and `diplotypes` (D33, APOE's ε pairs), checked for order, definition and positions; `loci export` writes them to 0.8's `haplotypes.csv` and `diplotypes.csv`, parsed by 0.8's own models, only when a row defines pairs.
 - D33, the person's D2 (desk #307): APOE is curated in this module as one result per ε pair; `dashboard.py --left` takes 96 back.
