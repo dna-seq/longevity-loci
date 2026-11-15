@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- `dashboard.py --left` holds out 151 EYS: its only source, a preprint, refuses its text; it waits until the text is readable or the person supplies it.
 - The module-creator plugin's pin moved to `v0.48.11` (toolchain unchanged): `lookup_old_assembly` names the rsID GRCh37 records at an old coordinate, and `lookup_citation` takes a PMCID.
 - D31.3: a Timmers pass replicates a UK Biobank discovery only from outside UK Biobank; D30.3's B branch for 103 is superseded (134 D).
 - D31 (batch eleven): R-RARE-2 and R-TIER-4 read together, MR-only lipid loss-of-function at most C (row 3); no r² from Timmers 2019's Figure 4 source data, whose `R2` column is a frequency (rows 25, 51, 59, 103 re-taken).
