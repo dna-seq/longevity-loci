@@ -8,12 +8,16 @@ locus_name: intergenic chr6
 verdict: re-tiered
 verdict_reason: >-
   Tier D, from the seed's C: a sub-genome-wide East Asian discovery that powered European samples tagging the same
-  haplotype contradict (D22.3, as row 72; D21's red flag under both of D25.3's calibrations). Hsieh 2026 compared 922
+  haplotype contradict (D22.3, as row 72; D21's red flag on Deelen's same-scale lines, D26.11, D31.13). Hsieh 2026 compared 922
   Taiwanese hospital patients who died at 90 or over with 871 who died at 65 to 75 at the same hospital: A (0.201) OR
   0.63 per A, P 8.7e-6, under the paper's suggestive line of 1e-5. Solved from the OR and the counts, the controls
   carry A at about 0.24 and the long-lived at about 0.165, against 0.206 to 0.223 in East Asian references (derived;
-  the line prints five of its six reference cells, which one is missing unsettled): the controls sit a little high (P
-  6e-4 against gnomAD's East Asians, 0.11 against 1000 Genomes'), and the long-lived well below either. Read against
+  the line leaves Taiwan Biobank's cell blank, its other five matching the column order of 119's full line; the OR
+  is read per Alt, A, since at rs75737809 that reading alone gives the shared controls one frequency from both
+  analyses, 0.041, the printed 1000 Genomes value): the controls sit a little high, against gnomAD's East Asians,
+  the reference D31.13 fixes, P 0.0036 with its sampling error, a misfit; they fit 1000 Genomes' East Asians (P 0.35)
+  and the southern Han CHS (P 0.16), the misfit inside the East Asian panels' spread (JPT 0.18 to CDX 0.28); the
+  long-lived sit well below every one. Read against
   the references (D31.10) the long-lived alone give A OR 0.76 or 0.69, P 1.6e-5 or 2.6e-9, so the signal is theirs,
   and every test below fails at that size too (derived). Its validation cohort, 844 people aged 85 and over from a
   second hospital analysed the same way, gives OR 0.517 at 90 and over, P 1e-4, the same direction. The paper does not
@@ -26,14 +30,15 @@ verdict_reason: >-
   frequency. Deelen 2019, at the lead itself (its A at 0.17, a little under the 0.21 elsewhere): 90th percentile A
   +0.044 (SE 0.028), P 0.11; 99th +0.106 (SE 0.044), P 0.016, A longer-lived, one-sided 0.008 against; set against the
   discovery's log OR (−0.462, SE 0.104) heterogeneity P 2.5e-6 and 4.7e-7, power 1.00 (derived). Timmers 2019 holds no
-  line at the lead; at rs9392582 (r² 0.97, T with A) flat, T −0.0014 per self (SE 0.0048), P 0.76. Carried there by
-  D25.3's 90th-percentile calibrations and r, the discovery predicts A −0.094 (APOE's factor) or −0.225 (the loci's
-  mean): power 1.00, heterogeneity P 1.9e-5 and 1.1e-5 (at half the effect 8.5e-5 and 1.6e-5; from the reference read,
-  OR 0.76, 8.3e-5 and 2.5e-5), a D21 red flag under both, `replication_failed`. The calibration is approximate here:
-  Hsieh's contrast is dying at 90 or over against dying at 65 to 75, not Deelen's 90th percentile against all
-  controls, and short-lived controls inflate the OR; the flag holds down to 0.15 of the APOE-calibrated effect (power
-  0.90, heterogeneity P 0.027) and to 0.1 under the mean factor (P 0.0024, derived). Outside Timmers: Park 2025's own
-  survival has A with fewer deaths, P 0.07, one-sided 0.035 against (columns swapped, as at APOE; UK Biobank); FinnGen
+  line at the lead; at rs9392582 (r² 0.97, T with A) flat, T −0.0014 per self (SE 0.0048), P 0.76. Hsieh's own APOE
+  line is null (ε4 OR 0.96, P 0.82, Table S5), so D25.3, which is study-specific, gives no factor for a Hsieh
+  discovery (D31.13): on Deelen's borrowed factors the discovery would predict A −0.094 or −0.225 there (heterogeneity
+  P 1.9e-5 and 1.1e-5, derived), stated as approximate, and conservative, since Hsieh's own factor interval allows
+  only a larger expectation; it sets no flag. `replication_failed` rests on Deelen's same-scale lines above, two log
+  odds of long-lived status (D26.11), which hold down to 0.16 (90th) and 0.24 (99th) of Hsieh's printed effect
+  (derived). Outside Timmers: Park 2025's own
+  survival has A with fewer deaths, P 0.07, one-sided 0.035 against (columns swapped, as at APOE; UK Biobank; its
+  calibrated test approximate, no flag, D31.13); FinnGen
   R11's death endpoint A with slightly more deaths, flat (P 0.64), a database line; Pilling 2017 flat at rs9392582 (P
   0.56 to 0.80, inside Timmers); Zenin 2019's healthspan flat, A a little healthier (P 0.32); Foote 2025 flat at
   rs9392582 (P 0.17 to 0.86). Wright 2019's one line within 500 kb, rs7767658 (390 kb), has no CEU pair: AncestryDNA
@@ -49,7 +54,7 @@ verdict_reason: >-
   no route shown; the nearest protein-coding gene, ECI2, lies about 195 kb away. Causal C4 and effector E4: no
   lifespan-class set. Descriptive. Age of action unknown.
 axes:
-  tier: {value: D, cites: [pmid-41949656#q1, pmid-41949656#q2, pmid-41949656#q3, pmid-41949656#q4, pmid-41949656#q5, pmid-41949656#q6, pmid-41949656#q9, pmid-41949656#q10, pmid-41949656#q13, pmid-41949656#q14, pmid-31413261#q281, pmid-31413261#q282, pmid-30642433#q384, db-ensembl-116#q775, db-ensembl-116#q777, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, pmid-40021682#q115, pmid-40021682#q32, db-finngen-r11#q88, pmid-29227965#q149, pmid-30729179#q155, pmid-31484785#q163, db-gwascatalog-2026.10.29#q571]}
+  tier: {value: D, cites: [pmid-41949656#q1, pmid-41949656#q2, pmid-41949656#q3, pmid-41949656#q4, pmid-41949656#q5, pmid-41949656#q6, pmid-41949656#q9, pmid-41949656#q10, pmid-41949656#q13, pmid-41949656#q14, pmid-31413261#q281, pmid-31413261#q282, pmid-30642433#q384, db-ensembl-116#q775, db-ensembl-116#q777, pmid-41949656#q15, pmid-41949656#q16, db-ensembl-116#q817, db-ensembl-116#q818, db-ensembl-116#q819, pmid-40021682#q115, pmid-40021682#q32, db-finngen-r11#q88, pmid-29227965#q149, pmid-30729179#q155, pmid-31484785#q163, db-gwascatalog-2026.10.29#q571]}
   mechanism: {value: general_ageing, cites: [db-ensembl-116#q771, db-ensembl-116#q776, db-opentargets-26.09#q1191]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -58,7 +63,7 @@ axes:
   actionability: {label: descriptive, cites: [pmid-41949656#q1]}
   context: {values: [], cites: []}
 flags:
-  - {token: replication_failed, cites: [pmid-30642433#q384, db-ensembl-116#q775, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, pmid-31413261#q281, pmid-31413261#q282]}
+  - {token: replication_failed, cites: [pmid-31413261#q281, pmid-31413261#q282, pmid-41949656#q1, pmid-41949656#q16]}
   - {token: "causal:C4", cites: [db-opentargets-26.09#q1190, db-opentargets-26.09#q1192]}
   - {token: "effector:E4", cites: [db-opentargets-26.09#q1190, db-opentargets-26.09#q1192]}
 variants:
@@ -166,7 +171,7 @@ studies:
     effect_unit: log hazard protection per T allele of rs9392582 in self (T with the lead's A), positive longer
     effect_allele: T
     direction: risk
-    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0048, direction +-, info 0.99; rs9392582 r² 0.97 to the lead in CEU (db-ensembl-116#q775); against Hsieh's A log OR −0.462 carried by D25.3's 90th calibrations (APOE 4.84, pmid-31413261#q82 over pmid-30642433#q90; mean ×0.4175, q92) and r 0.98: expected −0.094 and −0.225, power 1.00, heterogeneity P 1.9e-5 and 1.1e-5, a D21 red flag under both; at half the effect 8.5e-5 and 1.6e-5 (derived)"
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0048, direction +-, info 0.99; rs9392582 r² 0.97 to the lead in CEU (db-ensembl-116#q775); against Hsieh's A log OR −0.462 carried by D25.3's 90th calibrations (APOE 4.84, pmid-31413261#q82 over pmid-30642433#q90; mean ×0.4175, q92) and r 0.98: expected −0.094 and −0.225, power 1.00, heterogeneity P 1.9e-5 and 1.1e-5; at half the effect 8.5e-5 and 1.6e-5 (derived). Approximate: Hsieh's own APOE line is null (pmid-41949656#q16), so no factor is its own and this sets no flag (D31.13)"
     curator: claude-opus-5-5
   - rsid: rs12189947
     note: pmid-40021682

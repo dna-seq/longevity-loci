@@ -2979,3 +2979,35 @@ is possible; 3 copies in 214 Tuscan alleles (q813). For row 121.
 
 rs149554120 (row 121): gnomAD's non-Finnish genomes hold 186 T copies (q814) and 67,848 C copies (q815), 68,034
 alleles. For row 121.
+
+## Reading 2026-11-15, record
+
+> [q816] populations[98] population 1000GENOMES:phase_3:TSI frequency 0.014018691588785 allele T allele_count 3
+
+rs113181552 (row 109, batch twelve's read): T in 3 of 214 Tuscan alleles in 1000 Genomes (0.014, q816), the only
+Italian panel; gnomAD's non-Finnish genomes 0.0435 (q766), the reference D31.13 fixes. Against it the Calabrian
+long-lived (about 16.5 copies in 598 alleles) expect 26.0 and sit below it (P(≤16) 0.025, derived). For row 109.
+
+## Reading 2026-11-15, record
+
+> [q817] populations[9] allele A allele_count 1054 frequency 0.2059 population gnomADg:eas
+
+> [q818] populations[72] allele_count 225 allele A frequency 0.223214285714286 population 1000GENOMES:phase_3:EAS
+
+> [q819] populations[68] allele_count 41 allele A population 1000GENOMES:phase_3:CHS frequency 0.195238095238095
+
+> [q820] populations[90] population 1000GENOMES:phase_3:JPT frequency 0.177884615384615 allele A allele_count 37
+
+> [q821] populations[63] frequency 0.279569892473118 population 1000GENOMES:phase_3:CDX allele A allele_count 52
+
+rs12189947 (row 113, batch twelve's read): A in 1,054 of gnomAD's East Asian genomes' 5,120 alleles (q817), 225 of
+1000 Genomes' East Asian 1,008 (q818), 41 of the southern Han CHS's 210 (q819); JPT 0.178 (q820), CDX 0.280
+(q821). Hsieh's solved controls (0.239 on 1,742 alleles) against each with its own sampling error: gnomAD EAS P
+0.0036, 1000 Genomes EAS 0.35, CHS 0.16 (derived). For row 113.
+
+## Reading 2026-11-15, record
+
+> [q822] [0].transcript_consequences[0] variant_allele A protein_end 106 biotype protein_coding cds_start 316 cdna_start 376 cdna_end 376 impact MODERATE gene_symbol CLEC3B transcript_id ENST00000296130 strand 1 hgnc_id HGNC:11891 sift_score 1 gene_id ENSG00000163815 codons Ggc/Agc cds_end 316 sift_prediction tolerated amino_acids G/S protein_start 106 gene_symbol_source HGNC
+
+rs13963 (row 116): on ENST00000296130, G>A is Ggc to Agc, glycine to serine at residue 106 (q822); the record carries
+no MANE flag. For row 116.
