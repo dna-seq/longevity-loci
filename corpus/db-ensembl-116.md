@@ -2720,3 +2720,14 @@ CEU line, so its LD to 135 is unknown from Ensembl. For row 135.
 rs12143832 (row 1): GRCh38 1:21,378,943, T/C, C ancestral (q750); T 0.53 in gnomAD's non-Finnish Europeans (q751). Its
 CEU window at r² 0.5 holds 30 variants, none in Wright's or Rosoff's tables; Wright's lines within 500 kb are four
 Table 9 mothers' meta lines (rs12021529, rs2038089, rs2038090, rs212549), none among them. For row 1.
+
+## Reading 2026-11-15, record
+
+> [q752] mappings[0] start 156229203 coord_system chromosome strand 1 end 156229203 allele_string T/C location 1:156229203-156229203 ancestral_allele C seq_region_name 1 assembly_name GRCh38
+
+> [q753] populations[12] frequency 0.3551 population gnomADg:nfe allele C allele_count 24126
+
+> [q754] [3] d_prime 0.434098 variation2 rs3738581 variation1 rs2758603 r2 0.152004 population_name 1000GENOMES:phase_3:CEU
+
+rs2758603 (row 9): GRCh38 1:156,229,203, T/C, C ancestral (q752); C 0.36 in gnomAD's non-Finnish Europeans (q753). To
+Wright's rs3738581: r² 0.15 in CEU (q754). For row 9.

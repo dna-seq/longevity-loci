@@ -607,3 +607,11 @@ more deaths, A fewer, against the discovery's side, flat; a database line. For r
 
 FinnGen R11's death endpoint at rs12143832 (row 1): ref T, alt C (0.44 in Finns) −0.0011 (SE 0.0075), P 0.89: flat. For
 row 1.
+
+## Reading 2026-11-15, supplement
+
+> [q83] 1 156229203 T C rs2758603 PMF1,PMF1-BGLAP 0.0279119 1.55421 -0.017268 0.0078544 0.338494 0.334032 0.339053
+
+FinnGen R11's death endpoint at rs2758603 (row 9): ref T, alt C (0.34 in Finns) −0.0173 (SE 0.0079), P 0.028: C with
+fewer deaths, one-sided 0.014, the discovery's way; a database line, which never replicates (D12, D30.12): named. For
+row 9.

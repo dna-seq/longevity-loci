@@ -1,0 +1,109 @@
+# The seed list's locus 9, PMF1 (1q22). Curated 2026-11-15. Lead rs2758603, the seed's only rsID (Deelen 2019's
+# trans-ethnic 99th-percentile locus): GRCh38 1:156,229,203 T/C, GRCh37 1:156,198,994, C 0.36 in gnomAD's non-Finnish
+# Europeans and the discovery's longer-lived allele. Open Targets 26.09 holds it in 127 credible sets, kidney function,
+# stroke and CRP among them, none lifespan-class; the GWAS Catalog (2026-10-29) holds Deelen's line and one for height.
+locus_id: 9
+locus_name: PMF1
+verdict: kept
+verdict_reason: >-
+  Tier C, the seed's: a suggestive discovery (§4.1's C) that no independent study has replicated or contradicted.
+  Deelen 2019's trans-ethnic meta-analysis of survival to the 99th percentile against all controls gives C OR 1.12
+  (1.02 to 1.22), P 9.8e-7, with heterogeneity across cohorts (I² 57 %, P 0.005); its European deposits give C +0.102
+  at the 99th (P 0.0011) and +0.049 at the 90th (P 0.016), the same cohorts. Timmers 2019's million parents' lives,
+  with no UK Biobank in Deelen and at least the Rotterdam Study shared, lean C's way, short of nominal (C +0.0053 per
+  self, P 0.19, one-sided 0.093; UK Biobank and LifeGen on opposite sides). Carried to that scale by D25.3's
+  calibrations at the 99th percentile, the discovery predicts C +0.016 (APOE's factor) or +0.039 (the loci's mean):
+  power 0.99 and 1.00, heterogeneity P 0.084 and 0.0072, a flag under the mean factor only, so none (D25.3). Pilling
+  2017's UK Biobank parents lean C's way, flat (P 0.12 to 0.51); Park 2025's own survival C with fewer deaths, flat
+  (P 0.34); FinnGen R11's death endpoint has C with fewer deaths at P 0.028 (one-sided 0.014), but a database line
+  never replicates (D12, D30.12): named. Wright 2019's AncestryDNA has no line that tags the lead (the nearest, 51 kb,
+  at r² 0.15; others not among its 91 CEU variants at r² 0.5, or beyond the window with no CEU pair): untested. Zenin
+  2019's healthspan flat (C a little healthier, P 0.37); Foote 2025 one factor nominal (C less multimorbid, P 0.012),
+  multivariate; its general and F4 deposits read back empty, unread; Rosoff 2023 holds no line. Timmers' strongest line
+  within 500 kb is P 2.4e-4: nothing suggestive. The literature search (the rsID, and PMF1 with longevity terms;
+  Semantic Scholar answered 429) finds Deelen and a stroke-subtype paper that carries the lead among its stroke loci.
+  Exceptional survival + (the discovery), lifespan 0 (Timmers one-sided 0.093), healthspan 0. Mechanism ageing in
+  general (D25.7); at the lead's own lines in Open Targets' sets C raises eGFR and lowers creatinine, ischaemic stroke
+  and CRP, at small posteriors, none genome-wide at the lead: `mech:kidney` and `mech:cvd`, no protection token.
+  Causal C4 and effector E4, no gene named: no lifespan-class set holds it; PMF1 is named in prose. Descriptive. Age
+  of action unknown. The discovery is trans-ethnic, its European part and every test of it European.
+axes:
+  tier: {value: C, cites: [pmid-31413261#q259, pmid-31413261#q260, pmid-31413261#q261, pmid-31413261#q262, pmid-30642433#q379, pmid-31413261#q250, pmid-30642433#q90, pmid-30642433#q92, pmid-29227965#q133, pmid-29227965#q134, pmid-29227965#q135, pmid-29227965#q136, db-finngen-r11#q83, pmid-40021682#q110, pmid-31484785#q161, db-ensembl-116#q754, db-opentargets-26.09#q1180]}
+  mechanism: {value: general_ageing, cites: [pmid-31413261#q259]}
+  pleiotropy: {values: ["mech:kidney", "mech:cvd"], cites: [db-opentargets-26.09#q1171, db-opentargets-26.09#q1172, db-opentargets-26.09#q1173, db-opentargets-26.09#q1174, db-opentargets-26.09#q1176, db-opentargets-26.09#q1177, db-opentargets-26.09#q1178]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "+",
+            cites: [pmid-31413261#q259, pmid-31413261#q260, pmid-30642433#q379, pmid-30729179#q150]}
+  actionability: {label: descriptive, cites: [pmid-31413261#q259]}
+  context: {values: [eur_only_evidence], cites: [pmid-31413261#q262, pmid-30642433#q379]}
+flags:
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1180]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q1180]}
+variants:
+  - rsid: rs2758603
+    gene: ""
+    phenotype: PMF1 region, longevity
+    trait_efo_id: OBA_VT0005372
+    effect_allele: C
+    effect_size: 1.12
+    effect_measure: OR
+    stat_significance: suggestive
+    direction: protective
+    genotypes:
+      - genotype: T/T
+        state: neutral
+        conclusion: >-
+          You carry two copies of the more common version of this DNA position, as about 42 in 100 people of European
+          ancestry do. It is the reference the other combinations are compared with. The position, on chromosome 1,
+          lies near the PMF1 gene. The finding comes from people of European ancestry mostly.
+      - genotype: C/T
+        state: protective
+        conclusion: >-
+          You carry one copy of a less common version of this DNA position (about 46 in 100 people of European
+          ancestry do). One large study found it a little more often among people who reached the oldest one in a
+          hundred of lifespans. No separate study has confirmed it, so this is early evidence, not a settled finding:
+          a tendency, not destiny.
+      - genotype: C/C
+        state: protective
+        conclusion: >-
+          You carry two copies of a less common version of this DNA position (about 13 in 100 people of European
+          ancestry do). One large study found each copy a little more often among people who reached the oldest one
+          in a hundred of lifespans. No separate study has confirmed it, so this is early evidence, not a settled
+          finding: a tendency, not destiny.
+studies:
+  - rsid: rs2758603
+    note: pmid-31413261
+    quote: q260
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: Trans-ethnic (Deelen 2019's European cohorts with CLHLS East Asians and CHS African Americans; no UK Biobank data)
+    ancestry: [EUR, EAS, AFR]
+    stat_significance: suggestive
+    p_value: "9.8E-07"
+    p_value_num: 9.8e-07
+    effect_size: 1.12
+    effect_measure: OR
+    effect_unit: odds of survival to the 99th percentile per C allele
+    effect_allele: C
+    direction: protective
+    statistical_test: "Table 4, trans-ethnic 99th percentile against all controls (q259, q260), OR 1.12 (1.02-1.22), I² 57.2 %, heterogeneity P 0.005; European deposits T −0.102 (SE 0.031), P 0.0011 at the 99th (q262), T −0.049, P 0.016 at the 90th (q261)"
+    curator: claude-opus-5-5
+  - rsid: rs2758603
+    note: pmid-30642433
+    quote: q379
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 638068
+    sample_unit: lives
+    stat_significance: not_significant
+    p_value: "0.18537346"
+    p_value_num: 0.18537346
+    effect_size: 0.00533135
+    effect_measure: beta
+    effect_unit: log hazard protection per C allele in self (positive = longer life; printed −0.0053 per T)
+    effect_allele: C
+    direction: protective
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0040, direction -+, info 1.00; one-sided 0.093 for C; against Deelen's European 99th C +0.102 by D25.3's 99th calibrations (pmid-31413261#q250 over q90; mean ×0.4175, q92): power 0.99 and 1.00, heterogeneity P 0.084 and 0.0072, a flag under the mean only, so none (derived)"
+    curator: claude-opus-5-5

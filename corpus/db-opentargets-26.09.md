@@ -4179,3 +4179,31 @@ holds it (q1168): C4/E4. For row 135.
 > [q1170] data variant null
 
 rs12143832 (row 1): Open Targets 26.09 has no record under either allele order (q1169, q1170): C4/E4. For row 1.
+
+## Reading 2026-11-15, record
+
+> [q1171] data.variant.credibleSets count 127
+
+> [q1172] data.variant.credibleSets.rows[3].study id GCST90475282 traitFromSource estimated glomerular filtration rate (eGFR, mean, inv-norm transformed) studyType gwas
+
+> [q1176] data.variant.credibleSets.rows[3].locus.rows[0] posteriorProbability 0.03757512529501821 beta 0.010979886282118153 pValueMantissa null pValueExponent null
+
+> [q1173] data.variant.credibleSets.rows[17].study id GCST90475229 traitFromSource creatinine (mean, inv-norm transformed) studyType gwas
+
+> [q1177] data.variant.credibleSets.rows[17].locus.rows[0] posteriorProbability 0.021016899335485645 beta -0.01159042589257336 pValueMantissa null pValueExponent null
+
+> [q1174] data.variant.credibleSets.rows[38].study id GCST90104540 traitFromSource Ischemic stroke studyType gwas
+
+> [q1178] data.variant.credibleSets.rows[38].locus.rows[0] posteriorProbability 0.030731528994055526 beta -0.005466198882450442 pValueMantissa null pValueExponent null
+
+> [q1175] data.variant.credibleSets.rows[28].study id GCST90014002 traitFromSource C reactive protein levels (UKB data field 30710) studyType gwas
+
+> [q1179] data.variant.credibleSets.rows[28].locus.rows[0] posteriorProbability 0.013168023961666862 beta -0.007754023451671387 pValueMantissa null pValueExponent null
+
+> [q1180] data.credibleSets count 0
+
+1_156229203_T_C (rs2758603, row 9): 127 credible sets (q1171), 78 GWAS: kidney function (eGFR, creatinine, cystatin
+C), ischaemic stroke, CRP, branched-chain amino acids, height; the lead's posterior 0.003 to 0.06. Where the lead's
+own β is printed, alt C raises eGFR (+0.011) and lowers creatinine (−0.012), ischaemic stroke (−0.0055) and CRP
+(−0.0078) (q1172-q1179): C, the longer-lived allele, on the healthier side, none genome-wide at the lead.
+No lifespan-class set (q1180): C4. For row 9.
