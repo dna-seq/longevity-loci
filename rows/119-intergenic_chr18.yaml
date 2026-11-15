@@ -9,8 +9,8 @@ verdict: re-tiered
 verdict_reason: >-
   Tier D, from the seed's C: a sub-genome-wide East Asian discovery whose controls misfit the reference, read against
   the reference (D31.10), and contradicted there by powered European tests at the lead itself (D22.3, row 113's shape;
-  unlike 113, whose controls fit 1000 Genomes' East Asians, these are short of every reference; D21's red flag under
-  both of D25.3's calibrations). Hsieh 2026 compared 922 Taiwanese hospital patients who died at 90 or over with 871
+  113's controls misfit only gnomAD's East Asians, within East Asian spread, while these are short of every
+  reference; D21's red flag on Deelen's same-scale lines, D26.11, D31.13). Hsieh 2026 compared 922 Taiwanese hospital patients who died at 90 or over with 871
   who died at 65 to 75 at the same hospital: A (0.466) OR 1.49 per A, P 1.6e-6, under the paper's suggestive line of
   1e-5. Solved from the OR and the counts, reading the printed frequency as pooled over cases and controls (the column
   moves with the case group: rs75737809 0.023 at 85, 0.026 at 90, the controls shared), the controls carry A at about
@@ -22,16 +22,18 @@ verdict_reason: >-
   counted as independent (D19.1; put to the lead); pooled with the discovery it would reach P 1.6e-8 (derived), still
   D under D22.3. The European tests at the lead: Deelen 2019's 90th percentile A (0.25) +0.0016 (SE 0.022), P 0.94,
   and 99th +0.0059, P 0.86; against the reference read, power 1.00 and heterogeneity P 0.002 (90th), 0.008 (99th;
-  derived). Timmers 2019 at the lead flat: A +0.0023 per self (SE 0.0046), P 0.62. Carried there by D25.3's
-  90th-percentile calibrations, the reference read predicts A +0.033 (APOE's factor) or +0.079 (the loci's mean):
-  power 1.00, heterogeneity P 0.0038 and 0.0010, a D21 red flag under both, `replication_failed` (at half the effect
-  power 0.98 and 1.00, P 0.031 and 0.0026; under the printed OR the flag is far stronger, P 6.6e-6 and 2.5e-6;
-  derived). The LD differs by ancestry: the lead's best European partners reach r² 0.80, and fourteen of its Han
+  derived), two log odds of long-lived status (D26.11), which carry `replication_failed` and hold down to 0.35
+  (90th) and 0.58 (99th) of the reference read (derived). Timmers 2019 at the lead flat: A +0.0023 per self (SE
+  0.0046), P 0.62. Hsieh's own APOE line is null (ε4 OR 0.96, P 0.82, Table S5), so D25.3, which is study-specific,
+  gives no factor for a Hsieh discovery (D31.13): on Deelen's borrowed factors the reference read would predict A
+  +0.033 or +0.079 there (heterogeneity P 0.0038 and 0.0010; under the printed OR 6.6e-6 and 2.5e-6, derived),
+  stated as approximate, and it sets no flag. The LD differs by ancestry: the lead's best European partners reach r² 0.80, and fourteen of its Han
   Chinese partners at r² 0.8 sit below 0.5 in Europeans; Timmers at the two strongest of them, rs9952328 and rs7243508
   (r² 0.98 and 0.96 in CHB, 0.45 in CEU), is as flat (P 0.65, 0.71); of the fourteen, ten are in Timmers' window, all
   flat (P 0.31 to 1.00, none at one-sided 0.15), and four have no line there, untested. So the European null covers
   the haplotype the Taiwanese study tested as far as its partners show. Outside Timmers: Park 2025's own survival has
-  A with more deaths, flat (P 0.18, one-sided 0.094 against; columns swapped, as at APOE; UK Biobank); FinnGen R11's
+  A with more deaths, flat (P 0.18, one-sided 0.094 against; columns swapped, as at APOE; UK Biobank; on the
+  borrowed factor it would flag, P 3.7e-4, approximate and no flag, D31.13); FinnGen R11's
   death endpoint flat (P 0.75), a database line; Pilling 2017 flat (P 0.45 to 0.93, inside Timmers); Zenin 2019's
   healthspan flat (P 0.63); Foote 2025 mixed: the general factor puts A frailer (P 0.0017), factors 3 and 4
   (multimorbidity, metabolic) less frail (P 0.0027, 0.0024); they do not keep the row off D as row 18's healthspan
@@ -41,12 +43,12 @@ verdict_reason: >-
   nothing for the rsID (every source answered); Hsieh is found by its PMID, and its one citing paper is a polygenic
   score. The claim is Taiwanese; the ancestry is named here, not as a context token (D30.15), and its view waits on
   D7. Every genotype neutral (D25.2). Outcome cells 0: exceptional survival and lifespan, nothing passes either way at
-  one-sided 0.05 (Park 0.094 against), and a D row's discovery gives no + (D28.10); healthspan mixed on Foote's
-  factors (D26.6), Zenin flat. Mechanism ageing in general (D25.7): intronic in a lncRNA, CDH2 the only protein-coding
+  one-sided 0.05 (Park 0.094 against), and a D row's discovery gives no + (D28.10); healthspan 0 on Foote's
+  factors pointing both ways at nominal P (D31.13), Zenin flat. Mechanism ageing in general (D25.7): intronic in a lncRNA, CDH2 the only protein-coding
   gene within 1 Mb (about 914 kb), nothing recorded at the variant. Causal C4 and effector E4: no Open Targets record
   either way. Descriptive. Age of action unknown.
 axes:
-  tier: {value: D, cites: [pmid-41949656#q11, pmid-41949656#q12, pmid-41949656#q4, pmid-41949656#q5, pmid-41949656#q9, pmid-41949656#q10, pmid-41949656#q13, pmid-41949656#q14, pmid-31413261#q283, pmid-31413261#q284, pmid-30642433#q385, pmid-30642433#q386, pmid-30642433#q387, pmid-30642433#q388, db-ensembl-116#q779, db-ensembl-116#q782, db-ensembl-116#q783, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, pmid-40021682#q116, pmid-40021682#q32, db-finngen-r11#q89, pmid-29227965#q153, pmid-30729179#q156, pmid-31484785#q164, db-gwascatalog-2026.10.29#q572]}
+  tier: {value: D, cites: [pmid-41949656#q11, pmid-41949656#q12, pmid-41949656#q4, pmid-41949656#q5, pmid-41949656#q9, pmid-41949656#q10, pmid-41949656#q13, pmid-41949656#q14, pmid-31413261#q283, pmid-31413261#q284, pmid-30642433#q385, pmid-30642433#q386, pmid-30642433#q387, pmid-30642433#q388, db-ensembl-116#q779, db-ensembl-116#q782, db-ensembl-116#q783, pmid-41949656#q15, pmid-41949656#q16, pmid-40021682#q116, pmid-40021682#q32, db-finngen-r11#q89, pmid-29227965#q153, pmid-30729179#q156, pmid-31484785#q164, db-gwascatalog-2026.10.29#q572]}
   mechanism: {value: general_ageing, cites: [db-ensembl-116#q778, db-ensembl-116#q784]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -55,7 +57,7 @@ axes:
   actionability: {label: descriptive, cites: [pmid-41949656#q11]}
   context: {values: [], cites: []}
 flags:
-  - {token: replication_failed, cites: [pmid-30642433#q385, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, pmid-31413261#q283, pmid-31413261#q284]}
+  - {token: replication_failed, cites: [pmid-31413261#q283, pmid-31413261#q284, pmid-41949656#q16]}
   - {token: "causal:C4", cites: [db-opentargets-26.09#q1193]}
   - {token: "effector:E4", cites: [db-opentargets-26.09#q1193]}
 variants:
@@ -145,7 +147,7 @@ studies:
     effect_unit: log hazard protection per A allele in self (positive = longer life)
     effect_allele: A
     direction: protective
-    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0046, direction -+, info 0.98 (q385); against Hsieh's reference read (log OR 0.160, SE 0.047) by D25.3's 90th calibrations (APOE 4.84, pmid-31413261#q82 over pmid-30642433#q90; mean ×0.4175, q92): expected +0.033 and +0.079, power 1.00, heterogeneity P 0.0038 and 0.0010, a D21 red flag under both; at half the effect 0.031 and 0.0026; the CHB-only partners rs9952328 and rs7243508 flat (q386, q387; derived)"
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0046, direction -+, info 0.98 (q385); against Hsieh's reference read (log OR 0.160, SE 0.047) by D25.3's 90th calibrations (APOE 4.84, pmid-31413261#q82 over pmid-30642433#q90; mean ×0.4175, q92): expected +0.033 and +0.079, power 1.00, heterogeneity P 0.0038 and 0.0010; at half the effect 0.031 and 0.0026; approximate, Hsieh's own APOE line null (pmid-41949656#q16), no flag (D31.13); the CHB-only partners rs9952328 and rs7243508 flat (q386, q387; derived)"
     curator: claude-opus-5-5
   - rsid: rs1468966
     note: pmid-41949656
