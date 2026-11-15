@@ -193,3 +193,6 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
 - 2026-11-15, batch eleven trial build (trunk 2df1202): enrich clean (167 resolved, build_diagnoses empty); the strict
   compile refuses row 101's Wright entry at proxy rs6753712 (effect_allele C, the lead's; the proxy is A/G, and the
   row's effect_unit says per A). Put to the lead and the curator (640407208); the rehearsal waits on the fix.
+- 2026-11-15, batch eleven rehearsed (trunk 1e0cc6f, 0.8.6): 101 loci, 303 variant rows, 496 studies, 283/283 VRS
+  alleles identified; the polygon's content_signature equals ours (0fb54bbf; server compiles with 0.8.4); receipt
+  appended. Warnings unchanged (13 indel VRS carried, not closed, ClinVar currency). The D31 sweep lands in the next build.
