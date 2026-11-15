@@ -2771,3 +2771,13 @@ the lead's 37 proxies at r² 0.8 or more. For row 22.
 rs138762279 (row 34): a single-T deletion at GRCh38 5:174,283,195, intergenic (q760); the deletion 0.33 in gnomAD's
 non-Finnish Europeans, 0.31 in 1000 Genomes EUR (q761). In CEU its best proxy is rs11952522, r² 0.75 (q762); none
 reaches 0.8. For row 34.
+
+## Reading 2026-11-15, record
+
+> [q763] [0] start 68271344 most_severe_consequence synonymous_variant input rs112262188 allele_string G/C seq_region_name 17 end 68271344 assembly_name GRCh38 id rs112262188 strand 1
+
+> [q764] [0].colocated_variants[0].frequencies.C gnomade_nfe 0.000857 gnomadg_amr 0.00895 gnomade_fin 7.488e-05 gnomade_afr 0.001434 gnomade_amr 0.006082 gnomadg_nfe 0.0007496 gnomade_eas 0 gnomade_asj 0.0002678 afr 0.0008 gnomade_remaining 0.002434 gnomade_mid 0.007455 gnomadg_fin 9.413e-05 af 0.0012 sas 0 gnomadg_eas 0.0001928 eur 0.001 gnomadg_asj 0.000288 gnomadg_sas 0.000207 gnomadg_afr 0.0006974 eas 0 gnomade 0.001017 gnomadg 0.001556 gnomade_sas 0.0001507 amr 0.0058 gnomadg_ami 0 gnomadg_remaining 0.005671 gnomadg_mid 0.01361
+
+rs112262188 (row 107): synonymous in SLC16A6 at GRCh38 17:68,271,344 G/C (q763); C 0.00086 in gnomAD exomes' and
+0.00075 in genomes' non-Finnish Europeans (q764). Its GRCh37 position, 17:66,267,485, read from Ensembl's GRCh37
+server, is where the GRCh37 deposits were searched. For row 107.

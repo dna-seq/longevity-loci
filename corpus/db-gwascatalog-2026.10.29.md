@@ -2082,3 +2082,9 @@ For row 22.
 
 rs138762279 in the GWAS Catalog: Deelen's 99th-percentile longevity alone (q566, q567), risk frequency 0.84, the
 discovery cohorts' own. For row 34.
+
+## Reading 2026-11-15, record
+
+> [q568] page size 200 totalElements 0 totalPages 0 number 0
+
+rs112262188 in the GWAS Catalog: no association (q568). For row 107.

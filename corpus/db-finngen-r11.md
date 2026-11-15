@@ -629,3 +629,8 @@ P 0.67: the lead's A with slightly more deaths, flat. A database line (D12, D30.
 
 FinnGen R11's death endpoint holds no line for rs138762279; at rs11952522 (GRCh38 5:174,286,784 C/T, q85) T (0.30 in
 Finns) −0.0094 (SE 0.0081), P 0.24: T with slightly fewer deaths, flat. A database line (D12, D30.12). For row 34.
+
+## Reading 2026-11-15, supplement
+
+FinnGen R11's death endpoint holds no line for rs112262188 (row 107; C 0.00007 in gnomAD's Finns): untested. For
+row 107.

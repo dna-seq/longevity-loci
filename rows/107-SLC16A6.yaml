@@ -1,0 +1,89 @@
+# The seed list's locus 107, SLC16A6 (17q24.2). Curated 2026-11-15. Lead rs112262188, the seed's only rsID (Kolbe
+# 2025's exome-wide rare variant): synonymous in SLC16A6, GRCh38 17:68,271,344 G/C, GRCh37 17:66,267,485, C the rare
+# allele (0.09 % in gnomAD's non-Finnish European exomes) and the discovery's longer-lived side. Open Targets 26.09 has
+# no record of the variant under either allele order; the GWAS Catalog (2026-10-29) holds no association.
+locus_id: 107
+locus_name: SLC16A6
+verdict: kept
+verdict_reason: >-
+  Tier C, the seed's: a sub-genome-wide discovery in one sample, old against young (R-TIER-2), that no other study has
+  tested (§4.1's C). Kolbe 2025 sequenced the exomes of 1,245 German long-lived individuals and 4,105 younger controls;
+  C was at 0.20 % among the long-lived and 0.01 % among the controls, OR 12.1 (Haldane-corrected), P 9.8e-7, adjusted
+  0.025 under the paper's exploratory false-discovery rate of 0.05, below no genome-wide threshold. On 2,490 and 8,210
+  alleles that is about five copies against about one, and the controls sit well below gnomAD's non-Finnish 0.09 %, so
+  the paper's own odds ratio against that reference, 2.36, is the steadier size. The authors report it without doubt,
+  so it is not an overfit source by the rule's own cases (rows 41, 44, 48, 60). No replication exists: the authors say
+  none of comparable size is available, their Ashkenazi look-up holds three of the seven variants, not this one, and
+  their Leiden look-up lists none at SLC16A6. At 0.06 % the variant is absent from every large sample read here:
+  Deelen 2019, Timmers 2019, Pilling 2017, Zenin 2019, FinnGen R11, Park 2025 (below its 0.1 % filter) and Foote 2025
+  hold no line, and Wright 2019 and Rosoff 2023 none, so every test is untested, not negative. Exceptional survival +
+  (the discovery), lifespan untested, healthspan untested. Mechanism ageing in general (D25.7): the authors tie SLC16A6
+  to the intestinal excretion of ketone bodies, which they link to longevity through fasting, a route not tested here;
+  named. Causal C4: no Open Targets record. Effector E4, the gene named in prose: the change is synonymous, so it alters
+  no protein, and §4.2's coding clause is read as a protein change (D31.9's reading at 99); put to the lead. Descriptive.
+  Age of action unknown. The evidence is European (German).
+axes:
+  tier: {value: C, cites: [pmid-40232348#q1, pmid-40232348#q2, pmid-40232348#q3, pmid-40232348#q4, pmid-40232348#q5, db-ensembl-116#q764, db-gwascatalog-2026.10.29#q568]}
+  mechanism: {value: general_ageing, cites: [pmid-40232348#q6]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: untested, lifespan: untested, exceptional_survival: "+",
+            cites: [pmid-40232348#q1, pmid-40232348#q3]}
+  actionability: {label: descriptive, cites: [pmid-40232348#q1]}
+  context: {values: [eur_only_evidence], cites: [pmid-40232348#q3]}
+flags:
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1187]}
+  - {token: "effector:E4", cites: [db-ensembl-116#q763, db-opentargets-26.09#q1187]}
+variants:
+  - rsid: rs112262188
+    gene: ""
+    phenotype: SLC16A6 synonymous, longevity
+    trait_efo_id: OBA_VT0005372
+    effect_allele: C
+    effect_size: 12.1
+    effect_measure: OR
+    stat_significance: suggestive
+    direction: protective
+    genotypes:
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position, as nearly everyone of European ancestry
+          does. It is the reference the other combinations are compared with. The position lies in the SLC16A6 gene on
+          chromosome 17.
+      - genotype: C/G
+        state: protective
+        conclusion: >-
+          You carry one copy of a rare version of this DNA position (about 2 in 1,000 people of European ancestry do).
+          It lies in the SLC16A6 gene and does not change the protein the gene makes. One German study found it a few
+          times among very long-lived people and almost never among younger people. It rests on a handful of carriers
+          and has not been checked elsewhere, so this is early evidence, not a settled finding: a tendency, not destiny.
+      - genotype: C/C
+        state: protective
+        conclusion: >-
+          You carry two copies of a rare version of this DNA position, which is very unusual; the one study of it found
+          no one with two copies. It lies in the SLC16A6 gene and does not change the protein the gene makes. One German
+          study found single copies a few times among very long-lived people, early evidence that has not been checked
+          elsewhere, so nothing can be said about two copies.
+studies:
+  - rsid: rs112262188
+    note: pmid-40232348
+    quote: q1
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: German long-lived individuals against geographically matched younger controls (whole-exome sequencing)
+    ancestry: [EUR]
+    n_cases: 1245
+    sample_size: 5350
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: suggestive
+    p_value: "9.8E-07"
+    p_value_num: 9.8e-07
+    effect_size: 12.1
+    effect_measure: OR
+    effect_unit: odds of being long-lived per C allele (Haldane-corrected)
+    effect_allele: C
+    direction: protective
+    statistical_test: "Kolbe 2025's STAAR-O single-variant test with sex and ten principal components (Table 1, q1, q3), MAC ≥ 5; FDR-adjusted 0.025 under an exploratory FDR < 0.05 (q2); C 0.20 % in the long-lived, 0.01 % in the controls, about five copies against one; against gnomAD NFE 0.09 % the paper's own OR 2.36; no replication (q4, q5)"
+    curator: claude-opus-5-5

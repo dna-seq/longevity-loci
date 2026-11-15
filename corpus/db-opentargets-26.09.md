@@ -4230,3 +4230,9 @@ at posterior 0.021 (q1184). None of the nine lifespan-class studies holds it (q1
 
 5_174283194_AT_A and 5_174283194_A_AT (rs138762279, row 34): no record under either allele order (q1186; both files
 read back the same line). For row 34.
+
+## Reading 2026-11-15, record
+
+> [q1187] data variant null
+
+17_68271344_G_C and 17_68271344_C_G (rs112262188, row 107): no record either way (q1187). For row 107.
