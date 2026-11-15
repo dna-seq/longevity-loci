@@ -989,3 +989,14 @@ rejected; 1 sets a rule's letter aside on the module's headline row, so it goes 
    to come (126 on) are read the same way. The excess of long-lived men's copies (about 24 of 35 across 107, 120,
    121, 124, 125, 126; men 27 % of the long-lived) is named on each, no token (D31.13). Rejected: (a) the per-row
    reading with the pooled figure named, which keeps an OR from controls shown thin.
+8. **A carried figure is read on the fixed reference: 126 carries the derived exome read (OR 25.6), said as
+   derived**, as 123. Kolbe's printed 12.16 back-solves to gnomAD's genomes frequency, not the exomes' its other
+   rows match; it is named as genomes-based. Rejected: the printed figure, which would read one paper's rows on two
+   references. D34.7 covers Kolbe's German controls only; a look-up whose own controls fit (120's Ashkenazi) is read
+   as printed.
+9. **131 is D (D31.13's Hsieh bullet with D22.3's letter).** D22.3 spares a cross-ancestry null when the locus's
+   other looks lean the discovery's way, as 18's did (Timmers 0.05 to 0.14, Zenin's healthspan 0.0035). 131's do not:
+   Deelen, Park and Zenin lean C's way but none reaches one-sided 0.05, and Timmers, FinnGen and Foote lean the
+   other. Deelen's same-scale lines contradict the read with power 1.00 (heterogeneity P 0.011, 0.025), as at 113 and
+   119. Its discovery, read against the reference (D31.10), is P 0.001, sub-genome-wide, so D26.8 reaches it too.
+   Rejected: C by D22.3, which would spare any cross-ancestry null whose looks scatter around zero.
