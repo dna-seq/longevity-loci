@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- D31.11: a discovery that shows nothing against the reference is an overfit source; the row is tiered on the lead's other lines (109: Deelen's 90th tested under D25.3, C or D; 62 at its next touch).
 - D31.10: a discovery whose controls misfit the reference is read against the reference (107 stays C; E4).
 - D31.4 to D31.9, batch eleven's read: 130 D to C on Park's own-death pass; Foote factors fill healthspan at nominal P; Deelen's 99th at its own factor (sweep); deposit gaps are untested; 135's questions; `stat_significance`, `eur_only_evidence` and D29.4 clarified.
 - `dashboard.py --left` holds out 151 EYS: its only source, a preprint, refuses its text; it waits until the text is readable or the person supplies it.
