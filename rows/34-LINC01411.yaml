@@ -1,4 +1,4 @@
-# The seed list's locus 34, LINC01411 (5q35.1). Curated 2026-11-15. Lead rs138762279, the seed's only rsID (Deelen
+# The seed list's locus 34, LINC01411 (5q35.2). Curated 2026-11-15. Lead rs138762279, the seed's only rsID (Deelen
 # 2019's European 99th-percentile locus): a single-T deletion between LINC01411 and NSG2, GRCh38 5:174,283,195 T/-,
 # GRCh37 5:173,710,197, Deelen's AT/A; which allele Deelen's printed AT is cannot be settled from its frequencies (the
 # deletion 0.33 in gnomAD's non-Finnish Europeans; Deelen's discovery AT 0.16, its UK Biobank AT 0.34, Park's AT 0.66). Open Targets 26.09 has no record of the variant under either allele order;
@@ -15,9 +15,9 @@ verdict_reason: >-
   Biobank validation prints AT at 0.34, the deletion's population frequency, not AT's. So which allele Deelen's AT is
   is unknown: reading (i), as printed, the deletion is the longer-lived allele; reading (ii), the labels swapped, AT
   is. The discovery cohorts' 0.84 (or 0.16) matches neither allele, consistent with poor imputation of the indel.
-  Under either reading the discovery fails. Deelen's Table 3, on the discovery's own odds scale at the indel itself:
-  AT +0.049 (SE 0.053) against −0.236 (SE 0.045), power 1.00, heterogeneity P 4.6e-5 as printed, 0.0074 with Table 3's
-  labels swapped (derived). Within the same 99th-percentile file the best proxy, rs11952522 (r² 0.75 in CEU, its minor
+  Under either reading the discovery fails. Deelen's Table 3, UK Biobank's parents at the indel itself, per
+  offspring allele against half the discovery's effect (−0.118): AT +0.049 (SE 0.053), power 0.72, heterogeneity P
+  0.0039 as printed, 0.23 with Table 3's labels swapped (derived): short of D21's power, no flag either way. Within the same 99th-percentile file the best proxy, rs11952522 (r² 0.75 in CEU, its minor
   T with the minor deletion, the opposite phase capping r² near 0.17), gives T +0.053 (SE 0.036), P 0.14, where the
   indel's line, scaled to the proxy by r 0.87 (the row's own step), expects about +0.21 (heterogeneity P 0.003,
   derived). Timmers 2019 has no line at the indel; at rs11952522 (D29.3) flat, T +0.0028 per self, P 0.53; carried by
@@ -117,7 +117,7 @@ studies:
     effect_unit: odds of a parent surviving to the 99th percentile per AT allele
     effect_allele: AT
     direction: protective
-    statistical_test: "Table 3, Deelen 2019's UK Biobank parental-longevity look-up (q269), 0.95-1.17, AT printed at 0.34, the deletion's population frequency (AT 0.66 in Park's UK Biobank file); on the discovery's odds scale power 1.00, heterogeneity P 4.6e-5 as printed, 0.0074 with its labels swapped (derived); inside Timmers' parents (D30.16)"
+    statistical_test: "Table 3, Deelen 2019's UK Biobank parental-longevity look-up (q269), 0.95-1.17, AT printed at 0.34, the deletion's population frequency (AT 0.66 in Park's UK Biobank file); per offspring allele against half the discovery's effect, power 0.72, heterogeneity P 0.0039 as printed, 0.23 swapped, no flag (derived); inside Timmers' parents (D30.16)"
     curator: claude-opus-5-5
   - rsid: rs138762279
     note: pmid-30642433
