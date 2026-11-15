@@ -3,7 +3,7 @@
 **Headline results**
 - Few loci reach the top tier: 8 at A, 57 at B, 22 at C and 25 at D. A means a genome-wide hit with an independent replication and no red flag; most fall short on the replication.
 - 25 rows are at D. Their discovery failed a powered test in its own ancestry, or its own authors called it anomalous.
-- The module builds strictly: 101 loci, 303 genotype rows and 496 studies, every position resolved (test instance, longevitymap 2.0.0, rebuilt with batch eleven).
+- The module builds strictly: 112 loci, 336 genotype rows and 529 studies, every position resolved (test instance, longevitymap 2.0.0, rebuilt with batch twelve).
 
 **Next**
 1. Apply batch twelve's corrections (D31.13), then go on with the seed's tier C loci by id; APOE (96) last, on the person's D2; 151 EYS waits for its preprint's text (curator). Pacing is off on the person's word.
