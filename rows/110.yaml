@@ -16,7 +16,7 @@ verdict_reason: >-
   (SE 0.0101), P 0.70, "--". Carried there by D25.3's two calibrations the discovery predicts T +0.060 (APOE's factor)
   or +0.145 (the loci's mean): power 1.00 under both, heterogeneity P 4e-5 and 1.1e-6 (at half the effect 0.0036 and
   1.4e-5), a D21 red flag under both. Nothing independent passes: FinnGen R11's death endpoint has T with fewer deaths,
-  flat (P 0.20), a database line; Park 2025's own survival has T with more deaths (P 0.0075, one-sided 0.004 against), UK Biobank;
+  flat (P 0.20), a database line; Park 2025's own survival has T with more deaths (P 0.0075, one-sided 0.004 against), UK Biobank; its D31.12 test, Deelen's own APOE line calibrating Park's scale (a factor of 39.5), expects T with 0.0074 fewer deaths against 0.0045 more: power 1.00, heterogeneity P 9e-8 (derived), stated, and no second flag, a calibration from APOE alone (D31.13);
   Pilling 2017 flat in every column (P 0.54 to 0.99); Zenin 2019's healthspan flat (P 0.31); Foote 2025 holds no line.
   Wright 2019's AncestryDNA lines near it, Table 8's rs785311 (351 kb, no CEU pair) and Table 9's rs10202079 (133 kb,
   inside the lead's window, where Ensembl's CEU partners reach r² 0.31 at most), tag nothing: untested. Timmers' strongest
