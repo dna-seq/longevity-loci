@@ -1,0 +1,121 @@
+# The seed list's locus 126, FOCAD (9p21.3). Curated 2026-11-15. Lead rs199678370, the seed's only rsID (Kolbe 2025's
+# German exome study): missense in FOCAD, serine 253 to asparagine on the MANE Select transcript ENST00000338382, GRCh38
+# 9:20,770,090 G/A (multi-allelic, G/A/T), GRCh37 9:20,770,089, A the rare allele (0.0063 % in gnomAD's non-Finnish
+# European exomes) and the discovery's longer-lived side. Open Targets 26.09 has no record under either allele order;
+# the GWAS Catalog (2026-10-29) holds no association.
+locus_id: 126
+locus_name: FOCAD
+verdict: kept
+verdict_reason: >-
+  Tier C, the seed's: a sub-genome-wide discovery in one sample, old against young (R-TIER-2), unreplicated (§4.1's
+  C). Kolbe 2025 sequenced the exomes of 1,245 German long-lived individuals (past the 95th age-at-death percentile
+  of their birth cohort) and 4,105 younger controls; A was at 0.16 % among the long-lived and 0.01 % among the
+  controls, OR 9.9 (Haldane-corrected), P 2.3e-6, FDR-adjusted 0.036 under the paper's exploratory false-discovery
+  rate of 0.05, its own exome-wide call, not a genome-wide one (R-TIER-4, D31.13). On 2,490 and 8,210 alleles that is
+  4 copies against 1 (the Haldane OR from 4 and 1 is 9.9, derived). This row's controls sit at the reference D31.13
+  fixes, gnomAD's non-Finnish European exomes (0.0063 %: 0.52 copies expected, 1 seen), but Kolbe's controls pooled
+  over rows 120, 124 and 125 show 1 copy where 8.3 are expected (P 0.0024), so by D34.7 every rare row of the paper is
+  read against the reference, as 107: the long-lived show 4 copies where 0.16 are expected, OR 25.6 (exact Poisson P
+  2.2e-5, derived), and the paper's own OR against gnomAD is 12.16, with its caveat that gnomAD's non-Finnish
+  Europeans are mostly British; the printed 9.9 is named, not read (against gnomAD's genomes, 0.013 %, 0.33 would be
+  expected). By the printed percentages and the long-lived's 2.7:1 women to men, about 3 copies in 336 men and 1 in
+  909 women, the control copy a woman's (derived): men's share is above their 27 % of the long-lived, as across
+  Kolbe's rows (about 24 of 35 copies, D34.7), named, no token. The calls were merged jointly and variants missing
+  in over 5 % of samples dropped. No look-up tests it: the Ashkenazi sample holds only three of the seven variants,
+  not this one, and none of the Leiden carriers named is this one (179 long-lived and 98 controls expect 0.02 and
+  0.01 copies). At 0.006 % the variant is absent from every large sample read here: FinnGen R11's deaths, Deelen
+  2019 (whose strongest window lines, the 90th's 9:20,644,888 at 0.02, P 2.5e-4, and the 99th's 9:21,008,534 at
+  0.04, P 0.0029, cannot tag it), Timmers 2019, Pilling 2017, Zenin 2019, Park 2025 and Foote 2025; Wright 2019's
+  strongest lines within 500 kb (the AncestryDNA fathers' rs7867822, 94 kb, P 0.0011; the mothers' rs10811340, 487
+  kb, P 7.2e-4) are common and cannot tag it: untested, not negative. The literature search (the rsID; Semantic
+  Scholar answered 429, its part unchecked) finds Kolbe alone; the five papers citing Kolbe (Semantic Scholar,
+  2026-11-15) are two reviews, an unrelated study, a machine-learning study of GenAge and the 2026 bioRxiv
+  functional study read for row 120, which edits variants in other genes; none tests this one. Exceptional survival
+  + (the reference read, P 2.2e-5, D34.7); lifespan untested; healthspan untested. Mechanism ageing in general
+  (D25.7): the authors note FOCAD may matter for liver health, its mutations raising the risk of early-onset
+  cirrhosis, and know of no prior link to mTOR or longevity; nothing recorded at the variant. Causal C4: no Open
+  Targets record. Effector E1, FOCAD, by §4.2's coding clause on the MANE transcript (S253N; SIFT tolerated,
+  PolyPhen benign, CADD 20.5). Descriptive. Age of action unknown. The evidence is European (German).
+axes:
+  tier: {value: C, cites: [pmid-40232348#q38, pmid-40232348#q3, pmid-40232348#q2, pmid-40232348#q7, pmid-40232348#q12, pmid-40232348#q24, pmid-40232348#q36, pmid-40232348#q5, pmid-40232348#q16, db-ensembl-116#q872, db-ensembl-116#q873, pmid-31484785#q170, db-gwascatalog-2026.10.29#q580]}
+  mechanism: {value: general_ageing, cites: [pmid-40232348#q39, pmid-40232348#q34]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: untested, lifespan: untested, exceptional_survival: "+",
+            cites: [pmid-40232348#q38, db-ensembl-116#q872]}
+  actionability: {label: descriptive, cites: [pmid-40232348#q38]}
+  context: {values: [eur_only_evidence], cites: [pmid-40232348#q3, pmid-40232348#q38]}
+flags:
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1222]}
+  - {token: "effector:E1", cites: [db-ensembl-116#q869, pmid-40232348#q38]}
+variants:
+  - rsid: rs199678370
+    locus: {chrom: "9", start: 20770090, ref: G, cites: [db-ensembl-116#q870]}  # rs199678370 is multi-allelic (G/A/T); the row means G>A
+    gene: FOCAD
+    phenotype: FOCAD S253N, longevity
+    trait_efo_id: OBA_VT0005372
+    effect_allele: A
+    effect_size: 12.16
+    effect_measure: OR
+    stat_significance: nominal
+    direction: protective
+    genotypes:
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position, as nearly everyone does. It is the
+          reference the other combinations are compared with. The position lies in the FOCAD gene on chromosome 9.
+      - genotype: A/G
+        state: protective
+        conclusion: >-
+          You carry one copy of a very rare version of this DNA position (about 1 in 8,000 people of European ancestry
+          carry it). It changes one building block of the FOCAD protein, whose role is little known. One German study
+          found it four times among 1,245 very long-lived people and once among 4,105 younger people, more often than
+          in the wider European population. It rests on a handful of carriers and has not been confirmed, so this is
+          weak, early evidence: a possible tendency, not destiny.
+      - genotype: A/A
+        state: protective
+        conclusion: >-
+          You carry two copies of a very rare version of this DNA position, which is extremely unusual; the one study
+          of it found no one with two copies. One German study found single copies a few times among very long-lived
+          people, a finding not yet confirmed, so nothing can be said about two copies.
+studies:
+  - rsid: rs199678370
+    note: pmid-40232348
+    quote: q38
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: German long-lived individuals against geographically matched younger controls (whole-exome sequencing)
+    ancestry: [EUR]
+    n_cases: 1245
+    sample_size: 5350
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: suggestive
+    p_value: "2.3x10−06"
+    p_value_num: 2.3e-06
+    effect_size: 9.9
+    effect_measure: OR
+    effect_unit: odds of being long-lived per A allele (Haldane-corrected)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Kolbe 2025's STAAR-O single-variant test with sex and ten principal components (Table 1, q38, columns q3), MAC ≥ 5; cases past the 95th age-at-death percentile of their birth cohort (q7), an age threshold; FDR-adjusted 0.036 under an exploratory FDR < 0.05 (q2); A 0.16 % in the long-lived and 0.01 % in the controls, 4 copies against 1; named; by D34.7 read against the reference (the next entry)"
+    curator: claude-opus-5-5
+  - rsid: rs199678370
+    note: pmid-40232348
+    quote: q38
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: German long-lived individuals (Kolbe 2025) against gnomAD's non-Finnish European exomes as the reference
+    ancestry: [EUR]
+    n_cases: 1245
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: nominal
+    effect_size: 12.16
+    effect_measure: OR
+    effect_unit: odds of carrying A, the long-lived against the gnomAD reference
+    effect_allele: A
+    direction: protective
+    statistical_test: "The paper's own OR against gnomAD NFE (Table 1, q38, columns q3), with no test printed; the row's read effect by D34.7 (Kolbe's controls pooled over 120, 124 and 125 thin: 1 copy against 8.3, P 0.0024), the reference fixed as the exomes (D31.13). 4 copies in 2,490 long-lived alleles against 0.16 expected from gnomAD's non-Finnish exomes (0.0063 %, db-ensembl-116#q872): OR 25.6, exact Poisson P 2.2e-5 (derived); the authors note gnomAD NFE is mostly British (q12)"
+    curator: claude-opus-5-5

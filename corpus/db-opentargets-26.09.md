@@ -4365,3 +4365,9 @@ For row 96.
 > [q1221] data variant null
 
 17_48724360_T_TG and 17_48724361_G_GG (rs199607933, row 125): no record either way (q1221). For row 125.
+
+## Reading 2026-11-15, record
+
+> [q1222] data variant null
+
+9_20770090_G_A and 9_20770090_A_G (rs199678370, row 126): no record either way (q1222). For row 126.

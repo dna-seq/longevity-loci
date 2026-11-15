@@ -3178,3 +3178,21 @@ Row 125, rs199607933: GG is rare only in Europeans. gnomAD's exomes: African 1.6
 (q865), South Asian 0.28 % (q866), admixed American 0.32 % (q867), against non-Finnish European 0.047 %
 (q862). GRCh38 17:48,724,356 to 48,724,365 reads TGTGTGTGGG (q868), so 48,724,360 is T and Kolbe's T/TG and
 Ensembl's G/GG at 48,724,361 are the same insertion into the run of Gs. For row 125.
+
+## Reading 2026-11-15, record
+
+> [q869] [0].transcript_consequences[0] polyphen_prediction benign variant_allele A canonical 1 cdna_start 825 cdna_end 825 impact MODERATE cds_start 758 biotype protein_coding protein_end 253 codons aGc/aAc cds_end 758 sift_prediction tolerated gene_id ENSG00000188352 sift_score 0.16 polyphen_score 0.003 transcript_id ENST00000338382 strand 1 hgnc_id HGNC:23377 gene_symbol FOCAD gene_symbol_source HGNC protein_start 253 amino_acids S/N mane_select NM_001375567.1
+
+> [q870] mappings[0] seq_region_name 9 assembly_name GRCh38 ancestral_allele G end 20770090 strand 1 start 20770090 location 9:20770090-20770090 coord_system chromosome allele_string G/A/T
+
+> [q871] mappings[0] seq_region_name 9 allele_string G/A/T coord_system chromosome start 20770089 location 9:20770089-20770089 assembly_name GRCh37 ancestral_allele G strand 1 end 20770089
+
+> [q872] populations[10] population gnomADe:nfe frequency 6.295e-05 allele_count 70 allele A
+
+> [q873] populations[27] frequency 0.0001323 population gnomADg:nfe allele_count 9 allele A
+
+Row 126, rs199678370 (G/A/T; the row means G>A). VEP on FOCAD's MANE Select transcript (ENST00000338382,
+NM_001375567.1): serine 253 to asparagine, SIFT tolerated, PolyPhen benign (q869). GRCh38 9:20,770,090 (q870),
+GRCh37 9:20,770,089 (q871). A in gnomAD's non-Finnish European exomes 0.0063 % (70 copies, q872), genomes 0.013 %
+(9 copies, q873). Against the exomes the younger controls expect 0.52 copies and show 1 (P of one or more 0.40),
+and the long-lived show 4 where 0.16 are expected: OR 25.6, exact Poisson P 2.2e-5 (derived). For row 126.
