@@ -13,9 +13,12 @@ verdict_reason: >-
   (299 long-lived cases and 406 younger controls from the ECHA and GEHA cohorts, a mixed model) gives T +2.241 (OR
   9.40), P 2.45e-6, one of its 22 suggestive loci, with T at 1.35 % across the sample. Every other sample has T near 3
   to 4 %: SICS 2.9 %, Deelen 4 %, Timmers 4.1 %, gnomAD's non-Finnish genomes 4.3 %. Solved from the OR and the counts,
-  the controls carry about 2.5 copies in 812 alleles (0.3 %) where SICS's frequency expects about 23.5 (Poisson P 2e-8),
-  and the cases about 16.5 copies in 598 (2.8 %) where it expects 17.3 (derived): the signal is the controls' deficit,
-  and the long-lived sit at the reference. So the case-control Beta is the controls' deficit and sets nothing (D31.10, D31.11);
+  the controls carry about 2.5 copies in 812 alleles (0.3 %) and the cases about 16.5 in 598 (2.8 %). The reference
+  is gnomAD's non-Finnish genomes, 4.35 % (D31.13: gnomAD has no Italian group): the controls expect 35.3 and the
+  long-lived 26.0 and sit below it (P 0.025, derived), so the signal is the controls' deficit and the long-lived show
+  nothing. The other branches agree: SICS's 2.9 % (D31.11's first choice) expects 23.5 in the controls (Poisson P
+  2e-8) and 17.3 in the cases; 1000 Genomes' Tuscans (3 of 214, 1.4 %), with their own sampling error, put the cases
+  at log OR 0.69, SE 0.63, P 0.27 (derived). So the case-control Beta is the controls' deficit and sets nothing (D31.10, D31.11);
   the SICS replication's flag against it (T −0.265, P 0.56; power 1.00, heterogeneity P 1.4e-4, lapsing at half the
   effect) and Timmers' tested that Beta and are not carried. The row is tiered on the lead's other evidence. Deelen
   2019's 90th percentile has T longer-lived, +0.191 (SE 0.062), P 0.0021, one-sided 0.001 (99th +0.118, P 0.27); with
@@ -25,7 +28,9 @@ verdict_reason: >-
   2.9e-4, a D21 red flag under both (at half the effect, under the mean factor, power 1.00, P 1.6e-4): D (D25.1, D26.8),
   `replication_failed`. SICS, on Deelen's log-odds scale, is unpowered (0.11). Pilling 2017's
   parents lean against T (both parents P 0.06, fathers 0.056), inside Timmers; FinnGen R11 flat (P 0.55), a database
-  line; Park 2025 flat (P 0.79); Zenin 2019 flat; Foote 2025 holds no line; Wright 2019's four Table 8 lines 230 to 350
+  line; Park 2025 flat (P 0.79): its D31.12 test, Deelen's own APOE line calibrating Park's scale (a factor of 39.5),
+  expects T with 0.0048 fewer deaths against −0.0005 (SE 0.0018) more, power 0.85, heterogeneity P 0.070, no flag
+  (D31.12, D31.13, derived); Zenin 2019 flat; Foote 2025 holds no line; Wright 2019's four Table 8 lines 230 to 350
   kb away have no CEU pair with the lead, whose CEU partners reach r² 0.49 at most: AncestryDNA untested. Timmers'
   strongest line within 500 kb is P 2.8e-4. The literature search (the rsID, and PSMF1 or RSPO4 with longevity terms;
   Semantic Scholar 429) finds Beccacece alone. The abstract's intronic variant "confirmed by meta-analysis" is not
@@ -36,7 +41,7 @@ verdict_reason: >-
   Causal C4 and effector E4: no Open Targets record either way. Descriptive. Age of action unknown. The evidence is
   European.
 axes:
-  tier: {value: D, cites: [pmid-42176242#q14, pmid-42176242#q15, pmid-42176242#q16, pmid-42176242#q6, pmid-42176242#q11, pmid-42176242#q2, pmid-30642433#q382, pmid-31413261#q250, pmid-30642433#q90, pmid-30642433#q92, pmid-31413261#q82, pmid-31413261#q274, pmid-31413261#q275, pmid-31413261#q56, pmid-31413261#q89, db-gwascatalog-2026.10.29#q393, pmid-29227965#q141, pmid-29227965#q142, pmid-29227965#q143, pmid-29227965#q144, db-finngen-r11#q86, pmid-40021682#q113, pmid-40021682#q32, db-gwascatalog-2026.10.29#q569]}
+  tier: {value: D, cites: [pmid-42176242#q14, pmid-42176242#q15, pmid-42176242#q16, pmid-42176242#q6, pmid-42176242#q11, pmid-42176242#q2, pmid-30642433#q382, pmid-31413261#q250, pmid-30642433#q90, pmid-30642433#q92, pmid-31413261#q82, pmid-31413261#q274, pmid-31413261#q275, pmid-31413261#q56, pmid-31413261#q89, db-gwascatalog-2026.10.29#q393, pmid-29227965#q141, pmid-29227965#q142, pmid-29227965#q143, pmid-29227965#q144, db-finngen-r11#q86, pmid-40021682#q113, pmid-40021682#q32, db-gwascatalog-2026.10.29#q569, db-ensembl-116#q766, db-ensembl-116#q816]}
   mechanism: {value: general_ageing, cites: [pmid-42176242#q14, pmid-42176242#q3]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -65,20 +70,23 @@ variants:
           You carry two copies of the common version of this DNA position, as about 92 in 100 people of European
           ancestry do. It is the reference the other combinations are compared with. The position lies near the PSMF1
           and RSPO4 genes on chromosome 20. One small Italian study linked the other version to reaching old age, but
-          its own repeat study and a much larger study of a million parents' lives did not confirm it, so it is not
-          counted for or against lifespan.
+          that signal came from too few copies among its younger controls; a European study of long-lived people leaned
+          the same way, while a much larger study of a million parents' lives went the other way, so it is not counted
+          for or against lifespan.
       - genotype: G/T
         state: neutral
         conclusion: >-
           You carry one copy of a less common version of this DNA position (about 8 in 100 people of European ancestry
-          do). One small Italian study found it more often among long-lived people, but its own repeat study and a much
-          larger study of a million parents' lives did not confirm it, so it is not counted for or against lifespan.
+          do). One small Italian study found it more often among long-lived people, but that came from too few copies
+          among its younger controls; a European study of long-lived people leaned the same way, while a much larger
+          study of a million parents' lives went the other way, so it is not counted for or against lifespan.
       - genotype: T/T
         state: neutral
         conclusion: >-
           You carry two copies of a less common version of this DNA position (about 2 in 1,000 people of European
-          ancestry do). One small Italian study found the version more often among long-lived people, but its own
-          repeat study and a much larger study did not confirm it, so it is not counted for or against lifespan.
+          ancestry do). One small Italian study found the version more often among long-lived people, but that came
+          from too few copies among its younger controls, and a much larger study went the other way, so it is not
+          counted for or against lifespan.
 studies:
   - rsid: rs113181552
     note: pmid-42176242
