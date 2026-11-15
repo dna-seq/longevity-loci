@@ -1,7 +1,7 @@
 # The seed list's locus 122, LOC105377527 (4q32.3). Curated 2026-11-15. Lead rs1732444170, the seed's only rsID (Hsieh
-# 2026's 95-and-over Taiwanese locus), which Ensembl holds as a T/A SNV with no frequency; the variant Hsieh tests is
-# the two-base deletion TTC>T at GRCh38 4:169,071,078 (FinnGen's alleles; Ensembl's rs10610954, TCT/T one base on, the
-# same deletion in a TC repeat), GRCh37 4:169,992,229, the deletion T at 0.18 in gnomAD's East Asian genomes and 0.25
+# 2026's 95-and-over Taiwanese locus), which Ensembl holds as a T/A SNV with no frequency, not the variant Hsieh
+# tests; the row carries rs10610954 (rs146423901 merged), Hsieh's two-base deletion TTC>T at GRCh38 4:169,071,078
+# (FinnGen's alleles; Ensembl's TCT/T one base on, the same deletion in a TC repeat), GRCh37 4:169,992,229, the deletion T at 0.18 in gnomAD's East Asian genomes and 0.25
 # in the non-Finnish, the discovery's shorter-lived allele. Open Targets 26.09 has no record under either form; the
 # GWAS Catalog (2026-10-29) holds no association.
 locus_id: 122
@@ -13,46 +13,47 @@ verdict_reason: >-
   hospital patients who died at 95 or over with 873 who died at 65 to 75 at the same hospital: the deletion T (0.174,
   pooled) OR 0.36 per T, P 1.7e-6, under the paper's suggestive line of 1e-5 (log OR −1.02, SE 0.213 from its P,
   derived). The seed's rsID names a T/A SNV in Ensembl; Hsieh's alleles (T, TTC) are FinnGen's deletion at the same
-  position, Ensembl's rs10610954 one base on in the repeat, and the row means that deletion. Solved from the OR and
+  position, Ensembl's rs10610954 one base on in the repeat, and the row carries that ID (row 47's way with a changed
+  ID). Solved from the OR and
   the counts (per Alt, the pooled frequency, as rows 113 and 119 read the tables), the controls carry T at about 0.200
   and the long-lived at about 0.083; against gnomAD's East Asian genomes (0.183, the reference D31.13 fixes) the
   controls fit (P 0.12 with its error), so the discovery is read as printed (D31.10 not met); Taiwan Biobank's printed
   0.187 agrees. Its validation cohort gives OR 0.483, P 0.009, the same direction, but its controls are not its own
   (Fig. 2 sets its cases against controls aged 65 to 75), so it is not an independent replication (D19.1). Deelen 2019
-  tests the deletion itself (d at 0.24): 90th percentile +0.0186 (SE 0.0255), P 0.47, and 99th +0.0385 (SE 0.0397), P
+  tests the deletion itself (d at 0.24, the deletion's European 0.25, so its labels hold): 90th percentile +0.0186 (SE 0.0255), P 0.47, and 99th +0.0385 (SE 0.0397), P
   0.33, the deletion a little longer-lived; against Hsieh's log OR on the same scale, two log odds of long-lived status,
   heterogeneity P 1.3e-6 and 1.0e-6, power 1.00, holding down to 0.07 and 0.10 of Hsieh's effect (derived): a D21 red
-  flag, `replication_failed`. Hsieh's own APOE line is null (ε4 OR 0.96, P 0.82), so no conversion to a lifespan
-  scale is its own (D31.13): Park 2025 at the deletion has T with more deaths by a hair (P 0.62; its columns swapped,
+  flag, `replication_failed`. Hsieh's 95-and-over APOE line is ε4 OR 0.63, P 0.12 (Table S6), near Deelen's but
+  unpowered, its interval spanning zero, so no conversion to a lifespan scale is its own (D31.13, which cites the
+  null 90-and-over line): Park 2025 at the deletion has T with more deaths by a hair (P 0.62; its columns swapped,
   UK Biobank), flat, stated without a calibrated test; Timmers 2019 holds no line at the indel, and at rs62332690, two
-  bases away with A at the deletion's frequency in CEU and gnomAD (Ensembl gives no LD for the indel, so the pairing
-  is unknown), A is flat (P 0.81); FinnGen R11's death endpoint has the deletion with fewer deaths (P 0.009), against
+  bases away and at r² 1.00 with the deletion in CEU (A with T), A is flat (+0.0012, SE 0.0049, P 0.81); FinnGen R11's death endpoint has the deletion with fewer deaths (P 0.009), against
   Hsieh's direction, a database line that neither replicates nor sets D (D29.1, D30.12). Zenin 2019 at rs62332690 flat
-  (P 0.92), the pairing unknown, so healthspan is untested; Pilling 2017 and Foote 2025 hold no line, and Wright 2019
+  (P 0.92), so healthspan 0; Pilling 2017 and Foote 2025 hold no line, and Wright 2019
   none within 500 kb: untested. Deelen's and Timmers' strongest lines within 500 kb were not read. The literature
-  search (the rsID; Semantic Scholar answered 429, its part unchecked) finds nothing; Hsieh is found by its PMID, and
+  search (both rsIDs, rs1732444170 and rs10610954; Semantic Scholar answered 429, its part unchecked) finds nothing; Hsieh is found by its PMID, and
   its one citing paper is a Finnish polygenic lifespan score, with no single-variant test. The ancestry is named here,
   not as a context token (D30.15). Every genotype neutral (D25.2). Exceptional survival 0 (Deelen leans against at
   one-sided 0.17 and 0.23, short of nominal, and a D row's discovery gives no +, D28.10); lifespan 0 (Park flat;
-  FinnGen a database line); healthspan untested. Mechanism ageing in general (D25.7): intronic in a lncRNA
+  FinnGen a database line); healthspan 0 (Zenin flat). Mechanism ageing in general (D25.7): intronic in a lncRNA
   (LOC105377527), nothing recorded at the variant. Causal C4 and effector E4: no Open Targets record. Descriptive.
   Age of action unknown.
 axes:
-  tier: {value: D, cites: [pmid-41949656#q18, pmid-41949656#q19, pmid-41949656#q21, pmid-41949656#q23, pmid-41949656#q4, pmid-41949656#q5, pmid-41949656#q10, pmid-41949656#q13, pmid-41949656#q14, pmid-41949656#q16, db-ensembl-116#q823, db-ensembl-116#q824, db-ensembl-116#q825, db-ensembl-116#q826, db-ensembl-116#q830, pmid-31413261#q289, pmid-31413261#q290, pmid-40021682#q120, pmid-40021682#q32, db-finngen-r11#q92, pmid-30642433#q392, pmid-30729179#q159, db-gwascatalog-2026.10.29#q577]}
+  tier: {value: D, cites: [pmid-41949656#q18, pmid-41949656#q19, pmid-41949656#q21, pmid-41949656#q23, pmid-41949656#q4, pmid-41949656#q5, pmid-41949656#q10, pmid-41949656#q13, pmid-41949656#q14, pmid-41949656#q24, pmid-41949656#q25, db-ensembl-116#q823, db-ensembl-116#q824, db-ensembl-116#q825, db-ensembl-116#q826, db-ensembl-116#q830, pmid-31413261#q289, pmid-31413261#q290, pmid-40021682#q120, pmid-40021682#q32, db-finngen-r11#q92, pmid-30642433#q392, pmid-30729179#q159, db-ensembl-116#q836, db-gwascatalog-2026.10.29#q577]}
   mechanism: {value: general_ageing, cites: [db-ensembl-116#q823]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: untested, lifespan: "0", exceptional_survival: "0",
-            cites: [pmid-31413261#q289, pmid-31413261#q290, pmid-40021682#q120, db-finngen-r11#q92]}
+  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
+            cites: [pmid-31413261#q289, pmid-31413261#q290, pmid-40021682#q120, db-finngen-r11#q92, pmid-30642433#q392, pmid-30729179#q159, db-ensembl-116#q836]}
   actionability: {label: descriptive, cites: [pmid-41949656#q19]}
   context: {values: [], cites: []}
 flags:
-  - {token: replication_failed, cites: [pmid-31413261#q289, pmid-31413261#q290, pmid-41949656#q19, pmid-41949656#q16]}
+  - {token: replication_failed, cites: [pmid-31413261#q289, pmid-31413261#q290, pmid-41949656#q19, pmid-41949656#q25]}
   - {token: "causal:C4", cites: [db-opentargets-26.09#q1200]}
   - {token: "effector:E4", cites: [db-opentargets-26.09#q1200]}
 variants:
-  - rsid: rs1732444170
-    locus: {chrom: "4", start: 169071078, ref: TTC, cites: [db-finngen-r11#q92, db-ensembl-116#q824]}  # Ensembl holds rs1732444170 as a T/A SNV; the row means Hsieh's and FinnGen's TTC>T deletion at GRCh38 4:169,071,078 (Ensembl's rs10610954)
+  - rsid: rs10610954
+    locus: {chrom: "4", start: 169071078, ref: TTC, cites: [db-finngen-r11#q92, db-ensembl-116#q824]}  # rs10610954 is TCT/T/TCTCT one base on in Ensembl (a TC repeat); the row means TTC>T at GRCh38 4:169,071,078, FinnGen's VCF alleles; the seed's rs1732444170 is a T/A SNV in Ensembl
     gene: ""
     phenotype: LOC105377527 region, longevity, Taiwanese
     trait_efo_id: OBA_VT0005372
@@ -83,7 +84,7 @@ variants:
           do). One Taiwanese study found it less often among people who lived to 95, but a large European study of
           long-lived people did not bear that out, so it is not counted for or against lifespan.
 studies:
-  - rsid: rs1732444170
+  - rsid: rs10610954
     note: pmid-41949656
     quote: q19
     phenotype_class: EXTREME_SURVIVAL_CC
@@ -104,7 +105,7 @@ studies:
     direction: protective
     statistical_test: "Hsieh 2026's logistic GWAS of the 95-and-over group (Table 3, q18, q19), 248 cases and 873 controls (q23); T pooled 0.174; solved per Alt, controls 0.200 and cases 0.083 (derived); controls fit gnomAD EAS 0.183 (db-ensembl-116#q825, P 0.12, derived), read as printed; log OR −1.022 per T, SE 0.213 from P (derived); suggestive line 1e-5 (q4)"
     curator: claude-opus-5-5
-  - rsid: rs1732444170
+  - rsid: rs10610954
     note: pmid-41949656
     quote: q21
     phenotype_class: EXTREME_SURVIVAL_CC
@@ -124,7 +125,7 @@ studies:
     direction: protective
     statistical_test: "Table 4 (q21): OR 0.483 per T, SE of the log OR 0.278; the same direction; its controls are the discovery's age band and not its own, so not independent (D19.1)"
     curator: claude-opus-5-5
-  - rsid: rs1732444170
+  - rsid: rs10610954
     note: pmid-31413261
     quote: q290
     phenotype_class: EXTREME_SURVIVAL_CC

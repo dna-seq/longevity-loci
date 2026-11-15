@@ -3037,7 +3037,8 @@ Asian genomes (946 of 5,170 alleles, q825), 0.252 in the non-Finnish (q826), 0.2
 position 4:169,992,229 (q830) is where Deelen and Park hold it. Hsieh's controls (0.200 on 1,746 alleles) against
 gnomAD EAS with its error: P 0.12, a fit; the long-lived (0.083) far below (derived). rs62332690, two bases away,
 has A at 54 of 198 CEU alleles and 0.2516 in gnomAD NFE (q828, q829), the deletion's frequency to three digits;
-Ensembl returns no LD for the indel, so their pairing is unknown. For row 122.
+Ensembl's pairwise call returns nothing for the indel, but its window around rs62332690 puts them at r² 1.00
+(q836). For row 122.
 
 ## Reading 2026-11-15, record
 
@@ -3056,3 +3057,11 @@ G 0.0123 in gnomAD's East Asian genomes (63 of 5,130 alleles, q833), 0.0035 in S
 Finnish (q832); 7 of 210 CHS alleles (q834). Hsieh's controls (0.0041, about 7 copies in 1,746 alleles) against
 gnomAD EAS (21.4 expected): P 0.003 with its error, a misfit (D31.13); the long-lived (about 20 copies in 496
 alleles, 6.1 expected) above it: OR 3.32, log 1.20 (SE 0.26), P 4.8e-6 (derived). For row 123.
+
+## Reading 2026-11-15, record
+
+> [q836] [1] r2 1.000000 variation1 rs62332690 population_name 1000GENOMES:phase_3:CEU d_prime 1.000000 variation2 rs146423901
+
+Row 122: rs62332690 and the deletion (rs146423901, merged into rs10610954) are at r² 1.00, D′ 1.00 in CEU (q836), A
+with T (their equal frequencies, q829, q827): Timmers' and Zenin's lines at rs62332690 test the deletion in
+Europeans. For row 122.
