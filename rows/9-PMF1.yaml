@@ -20,7 +20,8 @@ verdict_reason: >-
   never replicates (D12, D30.12): named. Wright 2019's AncestryDNA has no line that tags the lead (the nearest, 51 kb,
   at r² 0.15; others not among its 91 CEU variants at r² 0.5, or beyond the window with no CEU pair): untested. Zenin
   2019's healthspan flat (C a little healthier, P 0.37); Foote 2025 one factor nominal (C less multimorbid, P 0.012),
-  multivariate; its general and F4 deposits read back empty, unread; Rosoff 2023 holds no line. Timmers' strongest line
+  multivariate; its general and F4 deposits hold no line there (gaps, GRCh37 1:152.9 to 157.1 Mb and 153.5 to
+  157.9 Mb), untested; Rosoff 2023 holds no line. Timmers' strongest line
   within 500 kb is P 2.4e-4: nothing suggestive. The literature search (the rsID, and PMF1 with longevity terms;
   Semantic Scholar answered 429) finds Deelen and a stroke-subtype paper that carries the lead among its stroke loci.
   Exceptional survival + (the discovery), lifespan 0 (Timmers one-sided 0.093), healthspan 0. Mechanism ageing in
