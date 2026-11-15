@@ -662,3 +662,10 @@ with slightly more deaths, flat. A database line. For row 113.
 
 FinnGen R11 at rs1468966 (GRCh38 18:29,092,290 G/A, row 119, q89): A (0.290 in Finns) −0.0026 (SE 0.0082), P 0.75,
 flat. A database line. For row 119.
+
+## Reading 2026-11-15, record
+
+> [q90] 3 45035631 G A rs13963 CLEC3B,EXOSC7 0.069645 1.15711 0.0136121 0.00750302 0.420554 0.420629 0.420545
+
+FinnGen R11 at rs13963 (GRCh38 3:45,035,631 G/A, row 116, q90): A (0.42) +0.0136 (SE 0.0075), P 0.070, A with more
+deaths, G fewer (one-sided 0.035 on G's side, derived). A database line: it replicates nothing (D29.1). For row 116.

@@ -2860,3 +2860,26 @@ Europeans and 0.2414 in gnomAD's non-Finnish genomes (q779). Its LD differs by a
 CHB (q782) and 0.45 in CEU (q783); fourteen CHB partners at r² 0.8 sit below 0.5 in CEU, and the best CEU partners
 reach 0.80 (rs7234819, rs59226433, rs1468968, rs59831784). CDH2, about 914 kb away, is the only protein-coding gene
 within 1 Mb (q784). For row 119.
+
+## Reading 2026-11-15, record
+
+> [q785] [0] seq_region_name 3 start 45035631 end 45035631 assembly_name GRCh38 input rs13963 id rs13963 most_severe_consequence missense_variant strand 1 allele_string G/A/C/T
+
+> [q786] [0].colocated_variants[2].frequencies.A gnomade_amr 0.5296 gnomadg_sas 0.6747 gnomadg_fin 0.4325 gnomadg_remaining 0.403 gnomadg_amr 0.4689 gnomadg_eas 0.8456 gnomadg_mid 0.3707 gnomade_fin 0.4269 gnomadg_ami 0.3656 eur 0.3817 sas 0.7014 gnomade_sas 0.6595 gnomade_nfe 0.4097 gnomade_afr 0.3947 gnomadg_asj 0.3539 gnomade_mid 0.4069 af 0.5635 gnomade 0.4398 gnomade_asj 0.3464 afr 0.4002 gnomadg_afr 0.4003 gnomade_remaining 0.4433 eas 0.8591 amr 0.5144 gnomadg_nfe 0.4051 gnomade_eas 0.8226 gnomadg 0.4341
+
+> [q787] [0] seq_region_name 3 allele_string G/A/C/T most_severe_consequence missense_variant input rs13963 strand 1 end 45077123 id rs13963 start 45077123 assembly_name GRCh37
+
+> [q788] [0] feature_type band end 50600000 seq_region_name 3 stain gneg assembly_name GRCh38 strand 0 start 44200001 id p21.31
+
+> [q789] populations[91] allele_count 15 allele G frequency 0.0728155339805825 population 1000GENOMES:phase_3:CHB
+
+> [q790] populations[93] population 1000GENOMES:phase_3:CHS frequency 0.1 allele G allele_count 21
+
+> [q791] populations[114] population 1000GENOMES:phase_3:JPT frequency 0.225961538461538 allele_count 47 allele G
+
+> [q792] [97] variation2 rs6441877 variation1 rs13963 r2 1.000000 d_prime 1.000000 population_name 1000GENOMES:phase_3:CEU
+
+rs13963 (row 116): missense in CLEC3B at GRCh38 3:45,035,631 (q785), G/A/C/T in Ensembl, the row meaning G>A as
+Tanisawa does; GRCh37 3:45,077,123 (q787); band 3p21.31 (q788). A (serine) 0.38 in 1000 Genomes Europeans, 0.41 in
+gnomAD's non-Finnish genomes, 0.86 in East Asians (q786); G 0.073 in CHB (q789), 0.100 in CHS, the Southern Han
+(q790), 0.226 in JPT (q791). rs6441877 is one of eleven CEU partners at r² 1.00 (q792). For row 116.

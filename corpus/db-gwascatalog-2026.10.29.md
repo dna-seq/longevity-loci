@@ -2112,3 +2112,9 @@ rs12189947 in the GWAS Catalog: no association (q571); Hsieh 2026 is not yet cur
 > [q572] page size 200 totalElements 0 totalPages 0 number 0
 
 rs1468966 in the GWAS Catalog: no association (q572). For row 119.
+
+## Reading 2026-11-15, record
+
+> [q573] page size 200 totalElements 0 totalPages 0 number 0
+
+rs13963 in the GWAS Catalog: no association (q573); Tanisawa's exome-chip study is not curated there. For row 116.

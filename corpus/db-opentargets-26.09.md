@@ -4266,3 +4266,15 @@ q1191); none lifespan-class. 6_4330371_A_G has no record (q1192). For row 113.
 > [q1193] data variant null
 
 18_29092290_G_A and 18_29092290_A_G (rs1468966, row 119): no record either way (q1193). For row 119.
+
+## Reading 2026-11-15, record
+
+> [q1194] data.variant.credibleSets count 21
+
+> [q1195] data.variant.credibleSets.rows[8].study id gtex-v10_ge_brain_hippocampus_ensg00000163812 traitFromSource ENSG00000163812 studyType eqtl
+
+> [q1196] data variant null
+
+3_45035631_G_A (rs13963, row 116): 21 credible sets (q1194), all expression, splicing or transcript-usage QTLs (CLEC3B's
+own splicing in fibroblasts, ZDHHC3 and EXOSC7 expression in blood cells and tissues), the lead's posterior at most
+0.18 (ZDHHC3 in hippocampus, q1195); none lifespan-class. 3_45035631_A_G has no record (q1196). For row 116.

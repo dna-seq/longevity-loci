@@ -1,0 +1,194 @@
+# The seed list's locus 116, CLEC3B (p.S106G) (3p21.31). Curated 2026-11-15. Lead rs13963, the seed's only rsID
+# (Tanisawa 2017's exome-wide longevity variant in Japanese, replicated in Chinese): missense in CLEC3B (tetranectin),
+# GRCh38 3:45,035,631, GRCh37 3:45,077,123, G/A in the row's meaning (Ensembl lists G/A/C/T); G, glycine, the
+# reference base and the discovery's longer-lived allele, 0.14 in East Asians (0.23 in Japanese) and 0.62 in Europeans.
+# Open Targets 26.09 holds it in 21 expression and splicing QTL sets, none lifespan-class; the GWAS Catalog
+# (2026-10-29) holds no association.
+locus_id: 116
+locus_name: CLEC3B (p.S106G)
+verdict: kept
+verdict_reason: >-
+  Tier C, the seed's: a sub-genome-wide East Asian discovery (R-TIER-4) replicated once in an independent East Asian
+  sample, which keeps it off D, while the powered European tests fail, so `replication_failed` (row 130's shape:
+  D25.1's independent pass, D25.13). Tanisawa 2017's Japanese exome-chip study (530 centenarians and nonagenarians in
+  two cohorts against 4,312 younger controls) gives G OR 1.50 (1.28 to 1.74), P 2.33e-7, under its exome-wide line of
+  1.99e-6 and above 5e-8 (D17.3, as row 107 read an exome-wide P), with the two cohorts agreeing (OR 1.45 and 1.70,
+  heterogeneity P 0.42). Its Chinese replication, 447 aged 95 to 110 against 505 aged 15 to 79, all from Hainan, gives
+  G 0.103 against 0.066, OR 1.51 (1.05 to 2.17), P 0.027, one-sided 0.013, outside the Japanese P; the paper's
+  meta-analysis, 1.87e-8, holds the replication inside it, so it is not read as a genome-wide discovery (B would count
+  the Chinese sample twice). Frequencies (D31.10): the Japanese controls (0.193) sit near Japanese references (HapMap
+  JPT 0.221, an Inabe sample 0.200, 1000 Genomes JPT 0.226 on 104 people). The Chinese controls (0.066) match the
+  paper's reference, HapMap's northern Han (0.073 on 82 people), but Hainan is southern, and 1000 Genomes' Southern Han
+  carry G at 0.100 (105 people): against that point value the controls are short (P 3.7e-4) and the cases at it,
+  row 109's shape, yet counting the reference's own sampling error the shortfall is P 0.12 (derived). Unsettled, so the
+  replication is read as printed, and the lead is asked (D in that case: no independent pass would remain). Europe, at
+  the lead itself (G 0.62 there): Deelen 2019's 90th percentile G +0.024 (SE 0.020), P 0.23, and 99th +0.043 (SE
+  0.031), P 0.16, leaning G's way but failing the discovery's size: against the Japanese log OR 0.405 (SE 0.078)
+  power 1.00, heterogeneity P 2.2e-6 (90th) and 1.7e-5 (99th; at half the effect 4.2e-5 and 0.0014, derived).
+  Timmers 2019 flat, G −0.0016 per self (SE 0.0039), P 0.69. Carried there by D25.3's 99th-percentile calibrations,
+  the discovery predicts G +0.065 (APOE's factor) or +0.156 (the loci's mean): power 1.00, heterogeneity P 4.1e-7
+  and 2.2e-7 (at a quarter of the effect 3.7e-4 and 1.7e-6), a D21 red flag under both, `replication_failed`. Neither
+  Deelen's lean (one-sided 0.08, 0.11) nor FinnGen R11's death endpoint (G with fewer deaths, one-sided 0.035, a
+  database line, D29.1) is a pass, and neither is row 18's lean that kept a row off D: here the independent Chinese
+  sample does that. Park 2025's own survival flat (P 0.78, UK Biobank); Pilling 2017 flat (P 0.41 to 0.95); Zenin
+  2019 flat (P 0.89). Kolicheski 2020 (abstract) finds no association with ageing free of neurological disease in
+  1,483 Europeans (P 0.89), its design and power unread. Foote 2025 holds no line at the lead; at rs6441877 (r² 1.00
+  in CEU) the general frailty factor puts G less frail, P 0.0076 (one-sided 0.004), the other factors flat and factor
+  4's deposit holding none of the lead's eleven r² 1.00 partners. Wright 2019's four lines 185 to 390 kb away are not
+  the lead's partners (r² 0.05 at most): AncestryDNA untested. The literature search (the rsID, and CLEC3B with
+  longevity terms; Semantic Scholar answered 429, its part unchecked) finds Tanisawa and Kolicheski, with reviews of
+  tetranectin and Torres 2021's passing mention, no further test. Tanisawa's survival analysis of Cohort 2's autopsy
+  cases is the discovery's people (q9), cited, not entered. Outcome cells: exceptional survival + (the Chinese
+  replication, one-sided 0.013; Deelen against nothing at 0.05); lifespan 0 (Timmers, Park flat; FinnGen a database
+  line); healthspan + (Foote's general factor at an r² 1.00 proxy, D31.4; Zenin flat). Context
+  `ancestry_specific:eas`: the claim holds in East Asians and the European tests at the variant itself do not carry
+  it. Mechanism ageing in general (D25.7): the paper proposes tetranectin's roles in bone mineralisation and cancer,
+  named, no route shown. Causal C4: no lifespan-class set; effector E1, CLEC3B, by §4.2's coding clause (a missense
+  change, glycine to serine at residue 106). Descriptive. Age of action unknown (the paper's reading that it acts only
+  past 95 rests on Cohort 2's own people). How the row reads to a European, for whom G is the majority allele and the
+  European tests are flat, waits on D7.
+axes:
+  tier: {value: C, cites: [pmid-27154906#q1, pmid-27154906#q2, pmid-27154906#q3, pmid-27154906#q4, pmid-27154906#q5, pmid-27154906#q6, pmid-27154906#q7, pmid-27154906#q8, pmid-27154906#q10, db-ensembl-116#q789, db-ensembl-116#q790, db-ensembl-116#q791, pmid-31413261#q285, pmid-31413261#q286, pmid-30642433#q389, pmid-31413261#q250, pmid-30642433#q90, pmid-30642433#q92, db-finngen-r11#q90, pmid-40021682#q117, pmid-40021682#q32, pmid-29227965#q157, pmid-30729179#q157, pmid-31570938#q1, pmid-31484785#q165, db-gwascatalog-2026.10.29#q573]}
+  mechanism: {value: general_ageing, cites: [pmid-27154906#q1, db-ensembl-116#q785]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: [pmid-27154906#q9]}
+  outcome: {healthspan: "+", lifespan: "0", exceptional_survival: "+",
+            cites: [pmid-27154906#q4, pmid-31413261#q285, pmid-31413261#q286, pmid-30642433#q389, pmid-40021682#q117, pmid-40759756#q104, db-ensembl-116#q792, pmid-30729179#q157]}
+  actionability: {label: descriptive, cites: [pmid-27154906#q1]}
+  context: {values: ["ancestry_specific:eas"], cites: [pmid-27154906#q3, pmid-27154906#q4, pmid-30642433#q389, pmid-31413261#q286]}
+flags:
+  - {token: replication_failed, cites: [pmid-30642433#q389, pmid-31413261#q285, pmid-31413261#q286, pmid-31413261#q250, pmid-30642433#q90, pmid-30642433#q92]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1194, db-opentargets-26.09#q1195, db-opentargets-26.09#q1196]}
+  - {token: "effector:E1", cites: [db-ensembl-116#q785, pmid-27154906#q1]}
+variants:
+  - rsid: rs13963
+    locus: {chrom: "3", start: 45035631, ref: G, cites: [db-ensembl-116#q785, db-finngen-r11#q90]}  # rs13963 is multi-allelic in Ensembl (G/A/C/T); the row means G>A, the alleles Tanisawa types
+    gene: CLEC3B
+    phenotype: CLEC3B p.S106G, extreme longevity, East Asian
+    trait_efo_id: OBA_VT0005372
+    effect_allele: G
+    effect_size: 1.50
+    effect_measure: OR
+    stat_significance: suggestive
+    direction: protective
+    genotypes:
+      - genotype: A/A
+        state: neutral
+        conclusion: >-
+          You carry two copies of the serine version of this DNA position in the CLEC3B gene, as about 74 in 100 people
+          of East Asian ancestry and 14 in 100 of European ancestry do. It is the reference the other combinations are
+          compared with.
+      - genotype: A/G
+        state: protective
+        conclusion: >-
+          You carry one copy of the glycine version of this position in the CLEC3B gene, which changes one building
+          block of the protein tetranectin (about 24 in 100 people of East Asian ancestry and 47 in 100 of European
+          ancestry carry one). In Japanese and Chinese studies, people who reached 95 or 100 carried it a little more
+          often. Large European studies found no such link, so this is early evidence that may hold only in East Asian
+          ancestry: a slight tendency at most, not destiny.
+      - genotype: G/G
+        state: protective
+        conclusion: >-
+          You carry two copies of the glycine version of this position in the CLEC3B gene (about 2 in 100 people of
+          East Asian ancestry and 38 in 100 of European ancestry do). In Japanese and Chinese studies, people who
+          reached 95 or 100 carried this version a little more often. Large European studies found no such link, so
+          this is early evidence that may hold only in East Asian ancestry: a slight tendency at most, not destiny.
+studies:
+  - rsid: rs13963
+    note: pmid-27154906
+    quote: q3
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: centenarian_case_control
+    population: Japanese (Cohort 1, Tokyo and Gifu centenarians against Aichi and Tokyo controls aged 40 to 79; Cohort 2, autopsy cases dying at 95 or over against dying before 80, q10)
+    ancestry: [EAS]
+    sample_size: 4842
+    sample_unit: individuals
+    n_cases: 530
+    age_of: participant
+    stat_significance: suggestive
+    p_value: "2.33E-07"
+    p_value_num: 2.33e-07
+    effect_size: 1.50
+    effect_measure: OR
+    effect_unit: odds of being a nonagenarian or centenarian per G allele
+    effect_allele: G
+    direction: protective
+    statistical_test: "Logistic regression, additive, sex and PCs (Table 2, q1 to q3): Cohort 1 OR 1.45, P 1.2e-5; Cohort 2 OR 1.70, P 0.002; pooled 1.50 (1.28-1.74), heterogeneity P 0.42; exome-wide line 1.99e-6 (q6); controls 0.193 against JPT 0.221 and Inabe 0.200 (q8); against Deelen's 90th and 99th heterogeneity P 2.2e-6 and 1.7e-5, power 1.00 (derived)"
+    curator: claude-opus-5-5
+  - rsid: rs13963
+    note: pmid-27154906
+    quote: q4
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: centenarian_case_control
+    population: Han Chinese of Hainan (447 aged 95 to 110 against 505 aged 15 to 79, q7)
+    ancestry: [EAS]
+    sample_size: 952
+    sample_unit: individuals
+    n_cases: 447
+    age_of: participant
+    stat_significance: nominal
+    p_value: "0.027"
+    p_value_num: 0.027
+    p_one_sided: 0.013
+    effect_size: 1.51
+    effect_measure: OR
+    effect_unit: odds of being a nonagenarian or centenarian per G allele
+    effect_allele: G
+    direction: protective
+    statistical_test: "Sanger-sequenced replication (Table 2, q4), G 0.103 in cases, 0.066 in controls, OR 1.51 (1.05-2.17); independent of the Japanese P; controls against HapMap CHB 0.073 (q8) fit, against 1000 Genomes CHS 0.100 (db-ensembl-116#q790) short at P 3.7e-4 on the point value, 0.12 counting CHS's sampling error (derived): unsettled, read as printed (D31.10 put to the lead)"
+    curator: claude-opus-5-5
+  - rsid: rs13963
+    note: pmid-31413261
+    quote: q286
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's longevity meta-analysis; no UK Biobank data)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.1607"
+    p_value_num: 0.1607
+    effect_size: -0.0432
+    effect_measure: beta
+    effect_unit: log odds of survival to the 99th percentile per A allele
+    effect_allele: A
+    direction: risk
+    statistical_test: "Deelen 2019's summary statistics (GCST008599), SE 0.0308, A 0.39, effective N 4,524 (q286); 90th −0.0236 (SE 0.0195), P 0.23 (q285); G's side one-sided 0.08 and 0.11; against the Japanese log OR 0.405 (SE 0.078) power 1.00, heterogeneity P 1.7e-5 (99th) and 2.2e-6 (90th) (derived)"
+    curator: claude-opus-5-5
+  - rsid: rs13963
+    note: pmid-30642433
+    quote: q389
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 640163
+    sample_unit: lives
+    stat_significance: not_significant
+    p_value: "0.68898613"
+    p_value_num: 0.68898613
+    effect_size: 0.0015641
+    effect_measure: beta
+    effect_unit: log hazard protection per A allele in self (positive = longer life)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0039, direction -+, info 1.00 (q389); against the Japanese G log OR 0.405 by D25.3's 99th calibrations (APOE 6.22, pmid-31413261#q250 over pmid-30642433#q90; mean ×0.4175, q92): expected G +0.065 and +0.156, power 1.00, heterogeneity P 4.1e-7 and 2.2e-7, a D21 red flag under both (derived)"
+    curator: claude-opus-5-5
+  - rsid: rs13963
+    note: pmid-40759756
+    quote: q104
+    phenotype_class: MULTIVARIATE_AGEING
+    study_design: meta_analysis
+    population: European (Foote 2025's frailty factors; UK Biobank and others)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.00759857"
+    p_value_num: 0.00759857
+    p_one_sided: 0.0038
+    proxy_rsid: rs6441877
+    effect_size: 0.00255267
+    effect_measure: beta
+    effect_unit: general frailty factor per T allele of rs6441877 (T with the lead's A; positive frailer)
+    effect_allele: T
+    direction: risk
+    statistical_test: "Foote 2025's general factor (GCST90624046) at rs6441877, r² 1.00 to the lead in CEU (db-ensembl-116#q792), SE 0.00096 (q104); G less frail, one-sided 0.004 (derived); factors 1, 2, 3, 5, 6 flat (q105 to q109); factor 4 holds no partner"
+    curator: claude-opus-5-5
