@@ -938,3 +938,39 @@ written text; and the registry page lists the tables as files without showing th
 them is unchecked (a local install, which waits on the person's word); the module seat says so at the first build
 that carries them. Rejected: option 2 (APOE only in the separate module) and option 3 (option 1 with a skip
 setting).
+
+## D34 — batch thirteen's first questions: APOE's row (96) (2026-11-15)
+
+From the curator's questions on 96, settled under the person's standing word. Each records the alternative it
+rejected; 1 sets a rule's letter aside on the module's headline row, so it goes to the person in the state post.
+
+1. **D21 amended: a powered non-replication sets no `replication_failed` when an independent study in the failing
+   sample's own ancestry and phenotype class replicates the locus at genome-wide significance**, at the locus itself
+   or at a proxy with r² ≥ 0.8 in that ancestry. The two samples then disagree with each other, not with the locus;
+   the row gives the failure's D21 numbers (power, heterogeneity P) beside the replication that outweighs it. A
+   nominal or sub-genome-wide pass does not outweigh it (rows 18 and 74 keep their flags: 18's only European pass
+   is Timmers' one-sided 0.028, 74's are nominal). Applied: 96 keeps A with no flag. Hsieh's Taiwanese 90-and-over
+   ε4 line (OR 0.96, P 0.82; power 0.88, heterogeneity P 0.011 against Deelen's 90th) is outweighed by Liu 2021's
+   independent Chinese CLHLS longevity GWAS at rs2075650 (β −0.293, P 6.2e-10; r² 0.81 with rs429358 in CHB). Hsieh's
+   95-and-over table is not a ground (a nominal miss, nested in the same cohort, read after the other two) and is
+   named only. Rejected: (b) the flag and B by D21's letter and row 18's precedent, which would let one sample's
+   null outweigh a genome-wide replication in its own ancestry; (c) the flag on an A row as a named exception, which
+   breaks the 71/67 rule without saying when. Sweep, at next touch, reported in one message: any flagged row whose
+   flag rests on a sample with an independent genome-wide pass in its own ancestry and class.
+2. **Hsieh's 90-and-over APOE line is a powered null of Hsieh's sample**, which D31.13 already reads: it cannot
+   calibrate a borrowed factor, and Hsieh rows rest on Deelen's same-scale lines. Item 1 reads the same line the same
+   way: a real null of that sample, outweighed for APOE by Liu, saying nothing about APOE itself. Nothing in 131, 137,
+   150, 152 or 156 moves beyond D31.13; their re-reads stay owed. The reply on 122 and 123 ("as long as it is
+   unpowered") concerned the 95-and-over line, which stays unpowered.
+3. **A pair state derived from per-allele effects stands unless the pair's own direct estimate excludes it.** The
+   text says it is derived and names the direct estimate. Applied: ε2/ε4 `risk` (derived lifespan OR 0.77; AD odds
+   2.23); ε2/ε2 `protective`, its derived lifespan hazard (about 0.92 from Kuo's ε2/ε3 0.96 doubled) inside Kuo's own
+   ε2/ε2 interval (HR 1.06, 0.87–1.30), which the text names as null, with the triglyceride and lipid harms in
+   `negatives`. Rejected: neutral for a pair whose direct estimate is null but wide, which would set a rare pair's
+   state by its sample size.
+4. **R-APOE-1's "all proxies `ld_proxy_of`" (and D30.14's withdrawn text) means the positions folded into APOE,
+   not scored.** A position that tags ε4 carries `ld_proxy_of:rs429358`, its r² in the comment, as on every row,
+   and below r² 0.8 the token says "folded into APOE", never a countable proxy (rs2075650 0.55, rs4420638 0.72,
+   rs769449 0.80 in CEU). rs405509 and rs449647 tag neither ε SNP (r² 0.05 to 0.12); they are Rosoff's further mvAge
+   leads in the locus, named in prose, no token, and their seed lines are covered by 96. Rejected: a token on all
+   five by R-APOE-1's letter, which would claim a proxy relationship the r² denies.
