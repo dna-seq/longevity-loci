@@ -43,8 +43,9 @@ a v1 locus with no seed entry takes the next free id above the seed's. Fields:
   when empty; a second result of one pair for another trait, such as Alzheimer's MONDO_0004975, has its own). The
   pair's variants carry no genotypes (`loci check rows` raises no `incomplete` there): the pair is the score,
   written once, and their studies stay on them. 0.8 cannot link a study to a pair, and with no genotypes the two
-  SNPs have no `variants.csv` row, so the export lists their studies as having none (0.8's audit says
-  `study_variant_orphan`): a limit D33 names, not a defect. The
+  SNPs have no `variants.csv` row, so the export lists their studies as having none: a limit D33 names. Compiler
+  0.8.6's strict build keeps them in `studies.parquet` with no warning (the module seat, 2026-11-15, at 867fe8b; the
+  shape audit had expected `study_variant_orphan`); whether the app shows them is unchecked. The
   export writes them to 0.8's `haplotypes.csv` and `diplotypes.csv` (`category` the row's mechanism); a diplotype row
   links to no study, so its grounding is its `conclusion`'s text.
 - `studies`: one per (rsid, study), §6.3's columns: `note` and `quote` (the provenance quote, by id; or no
