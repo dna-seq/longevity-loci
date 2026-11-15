@@ -196,3 +196,6 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
 - 2026-11-15, batch eleven rehearsed (trunk 1e0cc6f, 0.8.6): 101 loci, 303 variant rows, 496 studies, 283/283 VRS
   alleles identified; the polygon's content_signature equals ours (0fb54bbf; server compiles with 0.8.4); receipt
   appended. Warnings unchanged (13 indel VRS carried, not closed, ClinVar currency). The D31 sweep lands in the next build.
+- 2026-11-15, next batch trial (trunk ea97295, rows 22 KALRN and 34 LINC01411 in): strict green, 309 variant rows,
+  502 studies. Both leads are indels: carried unverified VRS warnings rise from 13 to 16 (rs3830412, rs138762279).
+  34's unknown direction exports as is ('unknown') and compiles.
