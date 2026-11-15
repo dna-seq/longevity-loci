@@ -13,8 +13,9 @@ verdict_reason: >-
   pooled) OR 0.38 per C, P 2.2e-6, under the paper's suggestive line of 1e-5 (T log OR +0.968, SE 0.204 from its P,
   derived). Solved from the OR and the counts (per Alt, the pooled frequency, as rows 113 and 119 read the tables),
   the controls carry C at about 0.207 and the long-lived at about 0.090; against gnomAD's East Asian genomes (0.194,
-  the reference D31.13 fixes) the controls fit (P 0.25 with its error), so the discovery is read as printed (D31.10
-  not met); Taiwan Biobank's printed 0.184 agrees. Its validation cohort gives OR 0.584, P 0.047, the same direction,
+  the reference D31.13 fixes) the controls fit (P 0.25 with its error), and across Hsieh's OR interval too (P 0.07 to 0.76), so the discovery is
+  read as printed (D31.10 not met); against Taiwan Biobank's printed 0.184, taken as exact, they differ at P 0.014,
+  above D31.13's 0.01 line (derived). Its validation cohort gives OR 0.584, P 0.047, the same direction,
   but its controls are not its own (Fig. 2), so it is not an independent replication (D19.1). Deelen 2019 tests the
   variant itself (T at 0.80): 90th percentile +0.0150 (SE 0.0254), P 0.55, and 99th −0.0064 (SE 0.0413), P 0.88, flat
   both ways; against Hsieh's log OR on the same scale, two log odds of long-lived status, heterogeneity P 3.8e-6 and
@@ -26,7 +27,9 @@ verdict_reason: >-
   deaths C +0.0029, P 0.80, a database line (D29.1); Pilling 2017's four parental scans flat (P 0.56 to 0.94). Zenin
   2019 flat (P 0.78), so healthspan 0. Foote 2025's factor 5 (poorer cognition) puts T, the longer-lived allele, on
   the frailer side (P 0.0087), and its factors 1 to 4 and 6 the same side, flat; a D row's Foote factor scores nothing
-  (multivariate), named. Wright 2019 lists nothing at the lead under its tables' P 0.003 cut (unknown above it), and
+  (multivariate), named. D22.3 does not spare it (D34.9): the looks lean T's way short of 0.05 (one-sided: Deelen's 90th 0.28, Timmers
+  0.16, Park 0.33, FinnGen 0.40, Zenin 0.39) and Foote's factor 5 goes against at 0.0087, so they scatter, as
+  D34.9 read 131's. Wright 2019 lists nothing at the lead under its tables' P 0.003 cut (unknown above it), and
   its one line within 500 kb, the AncestryDNA fathers' rs10068414 198 kb away (P 3.4e-4), does not tag the lead (r²
   under 0.05). The literature search (the rsID, 2026-11-15; Semantic Scholar answered 429, its part unchecked) finds
   nothing; Hsieh is found by its PMID, and its one citing paper is a Finnish polygenic lifespan score, with no
@@ -36,7 +39,7 @@ verdict_reason: >-
   transcript-usage QTL set at PIP 0.024, membership only, named. Causal C4 and effector E4: no lifespan-class credible
   set. Descriptive. Age of action unknown.
 axes:
-  tier: {value: D, cites: [pmid-41949656#q18, pmid-41949656#q31, pmid-41949656#q32, pmid-41949656#q23, pmid-41949656#q4, pmid-41949656#q5, pmid-41949656#q10, pmid-41949656#q25, db-ensembl-116#q888, pmid-31413261#q304, pmid-31413261#q305, pmid-30642433#q400, pmid-40021682#q124, db-finngen-r11#q100, pmid-29227965#q170, pmid-30729179#q163, pmid-40759756#q112, pmid-40759756#q113, pmid-31484785#q173, db-gwascatalog-2026.10.29#q583]}
+  tier: {value: D, cites: [pmid-41949656#q18, pmid-41949656#q31, pmid-41949656#q32, pmid-41949656#q23, pmid-41949656#q4, pmid-41949656#q5, pmid-41949656#q10, pmid-41949656#q25, db-ensembl-116#q888, pmid-31413261#q304, pmid-31413261#q305, pmid-30642433#q400, pmid-40021682#q124, db-finngen-r11#q100, pmid-29227965#q170, pmid-29227965#q171, pmid-29227965#q172, pmid-29227965#q173, pmid-30729179#q163, pmid-40759756#q112, pmid-40759756#q113, pmid-40759756#q114, pmid-40759756#q115, pmid-40759756#q116, pmid-40759756#q117, pmid-40759756#q118, pmid-31484785#q173, db-gwascatalog-2026.10.29#q583]}
   mechanism: {value: general_ageing, cites: [db-ensembl-116#q886, db-opentargets-26.09#q1231, db-ensembl-116#q891]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
