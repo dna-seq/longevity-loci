@@ -1,0 +1,102 @@
+# The seed list's locus 124, RPS6 (9p22.1). Curated 2026-11-15. Lead rs189871470, the seed's only rsID (Kolbe 2025's
+# German exome study): synonymous in RPS6 (leucine 15, CTC to CTT, on the MANE Select transcript ENST00000380394),
+# GRCh38 9:19,379,580 G/A, GRCh37 9:19,379,578, A the rare allele (0.043 % in gnomAD's non-Finnish European exomes)
+# and the discovery's longer-lived side. Open Targets 26.09 has no record under either allele order; the GWAS Catalog
+# (2026-10-29) holds no association.
+locus_id: 124
+locus_name: RPS6
+verdict: kept
+verdict_reason: >-
+  Tier C, the seed's: a sub-genome-wide discovery in one sample, old against young (R-TIER-2), unreplicated (§4.1's
+  C). Kolbe 2025 sequenced the exomes of 1,245 German long-lived individuals (past the 95th age-at-death percentile
+  of their birth cohort) and 4,105 younger controls; A was at 0.28 % among the long-lived and 0.01 % among the
+  controls, OR 16.5 (Haldane-corrected), P 1.7e-7, FDR-adjusted 6.4e-3 under the paper's exploratory false-discovery
+  rate of 0.05, its own exome-wide call, not a genome-wide one (R-TIER-4, D31.13). On 2,490 and 8,210 alleles that is
+  7 copies against 1 (the Haldane OR from 7 and 1 is 16.53, derived). The controls fit the reference D31.13 fixes,
+  gnomAD's non-Finnish European exomes (0.043 %): 3.5 copies expected, 1 seen, Poisson P 0.135 (genomes, 0.054 %:
+  4.5 and P 0.063), so the paper is read as printed (D31.10 not met). Against the same reference the long-lived show
+  7 where 1.1 are expected (P 1.2e-4; OR 6.6, P 7e-7, derived), near the paper's own OR against gnomAD, 6.49, with
+  its caveat that gnomAD's non-Finnish Europeans are mostly British. The excess is in both sexes (men 0.75 % against
+  0.02 %, women 0.11 % against none). RPS6's gene-based synonymous test (6 variants, P 7.4e-7, adjusted 0.014) is
+  driven mainly by this variant, so it is the same signal, not a second one. No look-up tests it: the Ashkenazi
+  sample holds only three of the seven variants, not this one (gnomAD's Ashkenazi exomes show no A either), and the
+  Leiden sample (179 long-lived, 98 controls) expects 0.15 and 0.08 copies, so its absence says nothing. FinnGen R11's
+  deaths hold it (A at 0.048 %, as in gnomAD): β +0.043 (SE 0.161), P 0.79, flat, a database line (D29.1); carried by
+  Kolbe's own APOE ε4 line against FinnGen's (an APOE-only calibration, approximate) the printed OR expects β −0.37,
+  power 0.74, heterogeneity P 0.011, and the reference read expects −0.25, power 0.46: below D21's power, and an
+  APOE-only calibration sets no flag (D31.12, D31.13). At 0.04 % the variant is absent from Deelen 2019 (no line in
+  its ±500 kb window, whose strongest lines, 9:19,486,525 at 0.03 and 9:19,586,463 at 0.18, P 1.5e-4 and 2.9e-4,
+  cannot tag a 0.04 % variant), Timmers 2019, Pilling 2017, Zenin 2019, Park 2025 and Foote 2025: untested, not
+  negative. The literature search (the rsID; Semantic Scholar answered 429, its part unchecked) finds Kolbe alone; of
+  the papers citing Kolbe, the 2026 bioRxiv functional study read for row 120 edits variants in other genes, none in
+  RPS6. Exceptional survival + (the discovery, read as printed; against gnomAD too); lifespan 0 (FinnGen flat, its
+  database line short of a powered test); healthspan untested. Mechanism ageing in general (D25.7): RPS6 is a
+  ribosomal protein downstream of mTOR, and the authors suggest the synonymous change may lower its expression
+  (a rarer codon, an altered mRNA fold, from web tools; RPS6 expression non-significantly lower in Leiden's
+  long-lived, P 0.055), a route not tested here; named. Causal C4: no Open Targets record. Effector E4: a synonymous
+  change meets no coding clause (§4.2; row 121's way), so no gene is named as acting; RPS6 is the gene it sits in.
+  Descriptive. Age of action unknown. The evidence is European (German).
+axes:
+  tier: {value: C, cites: [pmid-40232348#q28, pmid-40232348#q3, pmid-40232348#q2, pmid-40232348#q7, pmid-40232348#q12, pmid-40232348#q29, pmid-40232348#q23, pmid-40232348#q5, pmid-40232348#q16, db-ensembl-116#q852, db-ensembl-116#q853, db-ensembl-116#q854, db-finngen-r11#q97, db-gwascatalog-2026.10.29#q578]}
+  mechanism: {value: general_ageing, cites: [pmid-40232348#q30, pmid-40232348#q31, pmid-40232348#q32]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: untested, lifespan: "0", exceptional_survival: "+",
+            cites: [pmid-40232348#q28, db-ensembl-116#q852, db-finngen-r11#q97]}
+  actionability: {label: descriptive, cites: [pmid-40232348#q28]}
+  context: {values: [eur_only_evidence], cites: [pmid-40232348#q3, pmid-40232348#q28]}
+flags:
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1220]}
+  - {token: "effector:E4", cites: [db-ensembl-116#q849]}
+variants:
+  - rsid: rs189871470
+    gene: ""
+    phenotype: RPS6 synonymous, longevity
+    trait_efo_id: OBA_VT0005372
+    effect_allele: A
+    effect_size: 16.5
+    effect_measure: OR
+    stat_significance: suggestive
+    direction: protective
+    genotypes:
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position, as nearly everyone does. It is the
+          reference the other combinations are compared with. The position lies in the RPS6 gene on chromosome 9.
+      - genotype: A/G
+        state: protective
+        conclusion: >-
+          You carry one copy of a very rare version of this DNA position (about 9 in 10,000 people of European
+          ancestry do). It does not change the RPS6 protein, which helps build the cell's protein-making machinery;
+          the study's authors suggest it might lower how much of it is made, which is untested. One German study found
+          it seven times among very long-lived people and once among younger people. It rests on a handful of
+          carriers and has not been confirmed, so this is weak, early evidence: a possible tendency, not destiny.
+      - genotype: A/A
+        state: protective
+        conclusion: >-
+          You carry two copies of a very rare version of this DNA position, which is extremely unusual; the one study
+          of it found no one with two copies. One German study found single copies a few times among very long-lived
+          people, a finding not yet confirmed, so nothing can be said about two copies.
+studies:
+  - rsid: rs189871470
+    note: pmid-40232348
+    quote: q28
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: German long-lived individuals against geographically matched younger controls (whole-exome sequencing)
+    ancestry: [EUR]
+    n_cases: 1245
+    sample_size: 5350
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: suggestive
+    p_value: "1.7x10−07"
+    p_value_num: 1.7e-07
+    effect_size: 16.5
+    effect_measure: OR
+    effect_unit: odds of being long-lived per A allele (Haldane-corrected)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Kolbe 2025's STAAR-O single-variant test with sex and ten principal components (Table 1, q28, columns q3), MAC ≥ 5; cases past the 95th age-at-death percentile of their birth cohort (q7), an age threshold; FDR-adjusted 6.4e-3 under an exploratory FDR < 0.05 (q2); A 0.28 % in the long-lived and 0.01 % in the controls, 7 copies against 1; against gnomAD NFE the paper's own OR 6.49 (its caveat, q12). The controls fit gnomAD exomes (db-ensembl-116#q852; 3.5 copies expected, 1 seen, Poisson P 0.135) and the long-lived sit above it (7 against 1.1, P 1.2e-4), so read as printed (D31.10 not met, derived); the gene-based synonymous mask (q29) is this signal (q23)"
+    curator: claude-opus-5-5

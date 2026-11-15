@@ -4353,3 +4353,9 @@ women (GCST90551886, 1.00) (q1203 to q1216). rs7412 is in none (q1202). Locus-to
 APOE 0.973, the next gene APOC2 at 0.174 (q1217 to q1219); Park's whole-cohort set gives the same APOE score
 (file `set-a72ba60e-l2g-coloc`). The colocalisation listing (1,825 rows) was paged only to 200 and is not read.
 For row 96.
+
+## Reading 2026-11-15, record
+
+> [q1220] data variant null
+
+9_19379580_G_A and 9_19379580_A_G (rs189871470, row 124): no record either way (q1220). For row 124.

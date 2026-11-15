@@ -706,3 +706,13 @@ FinnGen R11's death endpoint at the indel (row 122): TTC>T, the deletion T at 0.
 
 FinnGen R11's DEATH endpoint at rs7412 (19:44,908,822 C/T): T (ε2) β −0.0588 (SE 0.0165), P 3.5e-4, fewer deaths;
 rs429358's C (ε4) β +0.105, P 1.3e-27, more deaths (q4). A database line (D29.1). For row 96.
+
+## Reading 2026-11-15, record
+
+> [q97] 9 19379580 G A rs189871470 RPS6 0.791076 0.101782 0.0426171 0.160871 0.000482671 0.000612369 0.000466424
+
+FinnGen R11's DEATH endpoint at rs189871470 (q97): A at 0.048 % (cases 0.061 %, controls 0.047 %), β +0.043 (SE
+0.161), P 0.79, flat. A database line (D29.1). Carried by Kolbe's own ε4 line (OR 0.45, pmid-40232348#q26) against
+FinnGen's ε4 β 0.105 (q4), an APOE-only calibration (derived, approximate): Kolbe's OR 16.5 would expect β −0.37,
+power 0.74, heterogeneity P 0.011; the reference-read OR 6.6 expects −0.25, power 0.46. Below D21's power, and an
+APOE-only calibration sets no flag (D31.12). For row 124.

@@ -3105,3 +3105,25 @@ stand-ins for ε4, and the two promoter SNPs tag neither ε4 nor ε2. For row 96
 
 rs2075650 with rs429358 in 1000 Genomes CHB: r² 0.81 (q848), against 0.55 in CEU (q841). Liu 2021's Chinese
 result at rs2075650 (pmid-33657282#q26) is an East Asian tag of ε4 at the 0.8 used elsewhere. For row 96.
+
+## Reading 2026-11-15, record
+
+> [q849] [0].transcript_consequences[3] variant_allele A gene_symbol RPS6 mane_select NM_001010.3 amino_acids L impact LOW gene_id ENSG00000137154 cdna_end 86 transcript_id ENST00000380394 biotype protein_coding hgnc_id HGNC:10429 canonical 1 codons ctC/ctT gene_symbol_source HGNC cds_start 45 protein_end 15 cdna_start 86 protein_start 15 strand -1 cds_end 45
+
+> [q850] mappings[0] strand 1 start 19379580 seq_region_name 9 ancestral_allele G location 9:19379580-19379580 end 19379580 coord_system chromosome assembly_name GRCh38 allele_string G/A
+
+> [q851] mappings[0] coord_system chromosome assembly_name GRCh37 allele_string G/A ancestral_allele G strand 1 end 19379578 start 19379578 seq_region_name 9 location 9:19379578-19379578
+
+> [q852] populations[1] allele A population gnomADe:nfe frequency 0.0004272 allele_count 475
+
+> [q853] populations[31] frequency 0.0005439 allele_count 37 population gnomADg:nfe allele A
+
+> [q854] populations[12] allele G allele_count 26134 frequency 1 population gnomADe:asj
+
+Row 124, rs189871470. VEP on RPS6's MANE Select transcript (ENST00000380394, NM_001010.3): synonymous, leucine
+15, codon CTC to CTT (q849). GRCh38 9:19,379,580 G/A (q850), GRCh37 9:19,379,578 (q851). A in gnomAD's
+non-Finnish European exomes 0.0427 % (475 copies, q852) and genomes 0.0544 % (37 copies, q853); gnomAD's
+Ashkenazi exomes show only G (q854). Against the exomes the younger controls expect 3.5 copies and show 1
+(Poisson P 0.135; genomes 4.5 expected, P 0.063), so they fit; the long-lived show 7 where 1.1 are expected (P
+1.2e-4; OR against the exomes 6.6, P 7e-7), derived. The Leiden look-up (179 long-lived, 98 controls) expects 0.15
+and 0.08 copies: absence there says nothing. For row 124.

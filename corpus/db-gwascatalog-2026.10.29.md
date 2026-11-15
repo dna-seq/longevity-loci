@@ -2143,3 +2143,9 @@ rs149554120 in the GWAS Catalog: no association (q576). For row 121.
 
 rs1732444170 and rs184517867 in the GWAS Catalog: no association (q577; the two answers are the same line). For rows
 122 and 123.
+
+## Reading 2026-11-15, record
+
+> [q578] page size 200 totalElements 0 totalPages 0 number 0
+
+rs189871470 (row 124): no association in the Catalog (q578). For row 124.
