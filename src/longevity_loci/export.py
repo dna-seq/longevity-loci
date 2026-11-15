@@ -21,6 +21,7 @@ import yaml
 # Two of the compiler's own checks, called rather than restated beside it (private names: the pin is <0.9).
 from just_dna_compiler.compiler.allele_checks import _check_p_value_num
 from just_dna_compiler.compiler.table_checks import _distinct_study_rows
+from just_dna_format.pgx import DiplotypeRow, HaplotypeRow
 from just_dna_format.spec import StudyRow, VariantRow
 from pydantic import ValidationError
 
@@ -53,6 +54,11 @@ STUDY_COLUMNS: tuple[str, ...] = (
     "conclusion", "provenance_quote", "curator", "stat_significance", "chrom", "start", "ref",
 )
 QUOTE_COLUMNS: tuple[str, ...] = ("rsid", "pmid", "doi", "note", "quote_id", "reading", "depth", "quote_absent")
+# D33: a locus scored as pairs of named versions (APOE's ε pairs), in 0.8's tables and its column names.
+HAPLOTYPE_COLUMNS: tuple[str, ...] = ("haplotype_name", "gene", "rsid", "allele")
+DIPLOTYPE_COLUMNS: tuple[str, ...] = (
+    "gene", "haplotype_a", "haplotype_b", "trait_efo_id", "direction", "phenotype", "conclusion", "negatives", "category",
+)
 
 # The reference example's rule: the variant carries lifespan, each study its own outcome's trait.
 VARIANT_TRAIT = "OBA_VT0005372"
@@ -113,6 +119,8 @@ class Export:
     variants: list[dict[str, str]] = field(default_factory=list)
     studies: list[dict[str, str]] = field(default_factory=list)
     quotes: list[dict[str, str]] = field(default_factory=list)
+    haplotypes: list[dict[str, str]] = field(default_factory=list)
+    diplotypes: list[dict[str, str]] = field(default_factory=list)
     gaps: Counter[tuple[Gap, str]] = field(default_factory=Counter)  # (reason, detail) -> count
 
     def gap(self, reason: Gap, detail: str = "") -> None:
@@ -273,7 +281,23 @@ def _quote_row(s: Study, note: Note) -> dict[str, str]:
     return {k: cell(x) for k, x in values.items()}
 
 
-def _parsed(model: type[VariantRow] | type[StudyRow], values: dict[str, str], where: str, out: Export) -> object | None:
+def _pair_rows(row: Row, out: Export) -> None:
+    """D33: the row's named versions and its pairs, as 0.8's haplotypes.csv and diplotypes.csv rows."""
+    for h in row.haplotypes:
+        for a in h.alleles:
+            values = {"haplotype_name": h.name, "gene": h.gene, "rsid": a.rsid, "allele": a.allele}
+            if _parsed(HaplotypeRow, values, f"{h.gene} {h.name} {a.rsid}", out) is not None:
+                out.haplotypes.append(values)
+    for d in row.diplotypes:
+        values = {"gene": d.gene, "haplotype_a": d.pair[0], "haplotype_b": d.pair[1],
+                  "trait_efo_id": d.trait_efo_id or VARIANT_TRAIT, "direction": d.state.value, "phenotype": d.phenotype,
+                  "conclusion": " ".join(d.conclusion.split()), "negatives": d.negatives,
+                  "category": row.axes.mechanism.value.value}
+        if _parsed(DiplotypeRow, values, f"{d.gene} {'/'.join(d.pair)}", out) is not None:
+            out.diplotypes.append(values)
+
+
+def _parsed(model: type[VariantRow] | type[StudyRow] | type[HaplotypeRow] | type[DiplotypeRow], values: dict[str, str], where: str, out: Export) -> object | None:
     """0.8's own model over the cells as the compiler would read them from the CSV; a refusal is a gap."""
     try:
         return model.model_validate({k: x for k, x in values.items() if x != ""})
@@ -317,6 +341,7 @@ def export(rows: Path, corpus: Path) -> Export:
         out.gap(Gap.AXIS_AGE)
         out.gap(Gap.AXIS_OUTCOME)
         flags = _flags(row, out)
+        _pair_rows(row, out)
         for v in row.variants:
             for values in _variant_rows(row, v, flags, out):
                 if _parsed(VariantRow, values, f"{v.rsid} {values['genotype']}", out) is not None:
@@ -339,6 +364,8 @@ def export(rows: Path, corpus: Path) -> Export:
     out.variants.sort(key=_sort_key(VARIANT_COLUMNS, "genotype"))
     out.studies.sort(key=_sort_key(STUDY_COLUMNS, "pmid"))
     out.quotes.sort(key=_sort_key(QUOTE_COLUMNS, "pmid"))
+    out.haplotypes.sort(key=lambda x: (x["gene"], x["haplotype_name"], _rsid_key(x["rsid"]), x["allele"]))
+    out.diplotypes.sort(key=lambda x: (x["gene"], x["haplotype_a"], x["haplotype_b"], x["trait_efo_id"]))
     _compiler_checks(out)
     return out
 
@@ -371,13 +398,18 @@ def render(rows: list[dict[str, str]], columns: tuple[str, ...]) -> str:
 
 
 def write(result: Export, outdir: Path) -> dict[str, int]:
-    """Write the three files into `outdir`; returns rows written per file."""
+    """Write the files into `outdir`; returns rows written per file. haplotypes.csv and diplotypes.csv (D33) are
+    written only when a row defines pairs: an empty table is not written, and one left from an earlier export is
+    not removed."""
     outdir.mkdir(parents=True, exist_ok=True)
     files = {
         "variants.csv": (result.variants, VARIANT_COLUMNS),
         "studies.csv": (result.studies, STUDY_COLUMNS),
         "quote_sources.csv": (result.quotes, QUOTE_COLUMNS),
     }
+    if result.haplotypes or result.diplotypes:
+        files["haplotypes.csv"] = (result.haplotypes, HAPLOTYPE_COLUMNS)
+        files["diplotypes.csv"] = (result.diplotypes, DIPLOTYPE_COLUMNS)
     for name, (rows, columns) in files.items():
         (outdir / name).write_text(render(rows, columns), encoding="utf-8")
     return {name: len(rows) for name, (rows, _) in files.items()}

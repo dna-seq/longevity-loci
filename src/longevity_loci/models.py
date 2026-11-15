@@ -330,6 +330,34 @@ class Variant(Strict):
         return v
 
 
+class DefiningAllele(Strict):
+    """One allele a named version carries at one position (APOE ε4: C at rs429358)."""
+
+    rsid: str = Field(pattern=r"^rs\d+$")
+    allele: str = Field(pattern=r"^[ACGT]+$")
+
+
+class Haplotype(Strict):
+    """D33: a named version of a gene (APOE ε2, ε3, ε4) and the alleles that define it; 0.8's `haplotypes.csv`."""
+
+    name: str = Field(pattern=r"^\S+$")
+    gene: str
+    alleles: list[DefiningAllele] = Field(min_length=1)
+
+
+class Diplotype(Strict):
+    """D33: one result per pair of named versions, scored once (R-APOE-1); 0.8's `diplotypes.csv`. The pair is
+    written in order (a <= b), as 0.8 canonicalizes it."""
+
+    gene: str
+    pair: list[str] = Field(min_length=2, max_length=2)
+    state: State
+    trait_efo_id: str | None = None  # lifespan's when empty; Alzheimer's (MONDO_0004975) for a pair's second result
+    phenotype: str | None = None
+    conclusion: str
+    negatives: str | None = None
+
+
 class Study(Strict):
     """A §6.3 `studies.csv` row; `quote` is its provenance_quote, cited from a note."""
 
@@ -416,6 +444,8 @@ class Row(Strict):
     flags: list[Flag] = Field(default_factory=list)
     variants: list[Variant]
     studies: list[Study] = Field(default_factory=list)
+    haplotypes: list[Haplotype] = Field(default_factory=list)  # D33: a locus scored as pairs of named versions
+    diplotypes: list[Diplotype] = Field(default_factory=list)
 
     @model_validator(mode="after")
     def _consistent(self) -> Row:
@@ -432,7 +462,40 @@ class Row(Strict):
             bare = [v.rsid for v in self.variants if not v.negatives]
             if bare:
                 raise ValueError(f"a tradeoff locus says what the longer-life version may raise (negatives): {', '.join(bare)}")
+        self._pairs_consistent(rsids)
         return self
+
+    def _pairs_consistent(self, rsids: set[str]) -> None:
+        """D33: every pair names versions the row defines, in order, once; a gene's versions are defined over the
+        same positions, each a variant of the row (so its studies attach), and no two alike."""
+        defined: dict[str, dict[str, frozenset[tuple[str, str]]]] = {}
+        for h in self.haplotypes:
+            alleles = frozenset((a.rsid, a.allele) for a in h.alleles)
+            if len(alleles) != len(h.alleles) or len({a.rsid for a in h.alleles}) != len(h.alleles):
+                raise ValueError(f"haplotype {h.gene} {h.name} names a position twice")
+            if h.name in defined.setdefault(h.gene, {}):
+                raise ValueError(f"haplotype {h.gene} {h.name} is defined twice")
+            defined[h.gene][h.name] = alleles
+            missing = sorted({a.rsid for a in h.alleles} - rsids)
+            if missing:
+                raise ValueError(f"haplotype {h.gene} {h.name} is defined at positions the row's variants do not name: {', '.join(missing)}")
+        for gene, versions in defined.items():
+            if len({frozenset(r for r, _ in a) for a in versions.values()}) > 1:
+                raise ValueError(f"{gene}'s haplotypes are defined over different positions")
+            if len(set(versions.values())) != len(versions):
+                raise ValueError(f"two of {gene}'s haplotypes carry the same alleles")
+        seen: set[tuple[str, str, str, str | None]] = set()
+        for d in self.diplotypes:
+            a, b = d.pair
+            if a > b:
+                raise ValueError(f"diplotype {d.gene} {a}/{b}: write the pair in order, {b}/{a}")
+            unknown = sorted({a, b} - set(defined.get(d.gene, {})))
+            if unknown:
+                raise ValueError(f"diplotype {d.gene} {a}/{b} names a haplotype the row does not define: {', '.join(unknown)}")
+            key = (d.gene, a, b, d.trait_efo_id)
+            if key in seen:
+                raise ValueError(f"diplotype {d.gene} {a}/{b} is written twice for one trait")
+            seen.add(key)
 
     def cites(self) -> list[tuple[str, str]]:
         """Every (where, cite) in the row, in file order."""

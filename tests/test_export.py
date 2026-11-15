@@ -11,6 +11,7 @@ from pathlib import Path
 
 import pytest
 import yaml
+from pydantic import ValidationError
 from just_dna_format.spec import StudyRow, VariantRow
 from typer.testing import CliRunner
 
@@ -288,3 +289,65 @@ def test_a_marker_row_carries_its_marker_trait(tmp_path: Path) -> None:
     (tmp_path / "plain").mkdir()
     shutil.copy(source, tmp_path / "plain" / source.name)
     assert {x["trait_efo_id"] for x in export(tmp_path / "plain", corpus).variants} == {VARIANT_TRAIT}
+
+
+# D33: APOE's ε versions as the reference example defines them (docs/format08_reference, LONGEVITYMAP_V2_SHAPE_AUDIT).
+EPSILON = {"ε2": {"rs429358": "T", "rs7412": "T"}, "ε3": {"rs429358": "T", "rs7412": "C"},
+           "ε4": {"rs429358": "C", "rs7412": "C"}}
+
+
+def _apoe_with_pairs(tmp_path: Path, pairs: list[dict]) -> Path:
+    rows, _ = TREES["fixture"]
+    shutil.copytree(rows, tmp_path / "rows")
+    (path,) = (tmp_path / "rows").glob("*.yaml")
+    data = yaml.safe_load(path.read_text(encoding="utf-8"))
+    data["haplotypes"] = [{"name": n, "gene": "APOE", "alleles": [{"rsid": r, "allele": a} for r, a in d.items()]}
+                          for n, d in EPSILON.items()]
+    data["diplotypes"] = pairs
+    path.write_text(yaml.safe_dump(data, sort_keys=False, allow_unicode=True), encoding="utf-8")
+    return tmp_path / "rows"
+
+
+def _pair(a: str, b: str, state: str, trait: str | None = None) -> dict:
+    out = {"gene": "APOE", "pair": [a, b], "state": state, "conclusion": f"You carry {a} and {b}."}
+    return out | ({"trait_efo_id": trait} if trait else {})
+
+
+def test_pairs_export_to_08s_tables(tmp_path: Path) -> None:
+    """D33: the fixture's APOE row with its three ε versions and four pair results writes one haplotypes.csv row per
+    (version, position) and one diplotypes.csv row per result, each parsed by 0.8's own models, in a stable order;
+    a pair's empty trait is lifespan's, and a second result for Alzheimer's keeps its own."""
+    pairs = [_pair("ε3", "ε4", "risk"), _pair("ε2", "ε2", "protective"), _pair("ε3", "ε3", "neutral"),
+             _pair("ε3", "ε4", "risk", "MONDO_0004975")]
+    rows = _apoe_with_pairs(tmp_path, pairs)
+    result = export(rows, TREES["fixture"][1])
+    assert {(x["haplotype_name"], x["rsid"], x["allele"]) for x in result.haplotypes} == {
+        (n, r, a) for n, d in EPSILON.items() for r, a in d.items()}
+    assert {(x["haplotype_a"], x["haplotype_b"], x["trait_efo_id"], x["direction"]) for x in result.diplotypes} == {
+        (p["pair"][0], p["pair"][1], p.get("trait_efo_id", VARIANT_TRAIT), p["state"]) for p in pairs}
+    assert {x["category"] for x in result.diplotypes} == {"brain_memory"}
+    assert not [r for r, d, _ in result.by_reason() if r is Gap.REFUSED]
+    assert result.diplotypes == sorted(result.diplotypes, key=lambda x: (x["haplotype_a"], x["haplotype_b"], x["trait_efo_id"]))
+    counts = write(result, tmp_path / "out")
+    assert (counts["haplotypes.csv"], counts["diplotypes.csv"]) == (len(result.haplotypes), len(pairs))
+    assert header(tmp_path / "out" / "diplotypes.csv")[:3] == ["gene", "haplotype_a", "haplotype_b"]
+
+
+def test_no_pairs_writes_no_pair_tables(tmp_path: Path) -> None:
+    result = export(*TREES["fixture"])
+    assert (result.haplotypes, result.diplotypes) == ([], [])
+    counts = write(result, tmp_path)
+    assert "haplotypes.csv" not in counts and not (tmp_path / "haplotypes.csv").exists()
+
+
+@pytest.mark.parametrize(("pair", "said"), [
+    (_pair("ε4", "ε3", "risk"), "in order"),
+    (_pair("ε3", "ε9", "risk"), "does not define"),
+    ({**_pair("ε3", "ε4", "risk")}, "written twice"),
+])
+def test_a_bad_pair_is_refused(tmp_path: Path, pair: dict, said: str) -> None:
+    """D33's checks: a pair out of order, a pair naming an undefined version, one result written twice."""
+    pairs = [pair, _pair("ε3", "ε4", "risk")] if said == "written twice" else [pair]
+    (path,) = _apoe_with_pairs(tmp_path, pairs).glob("*.yaml")
+    with pytest.raises(ValidationError, match=said):
+        Row.model_validate(yaml.safe_load(path.read_text(encoding="utf-8")))
