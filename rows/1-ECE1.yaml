@@ -24,7 +24,7 @@ verdict_reason: >-
   Scholar answered 429, its part unchecked) finds Deelen alone. Every genotype neutral (D25.2); outcome cells 0 (D28.10). Mechanism ageing in general (D25.7);
   ECE1, endothelin-converting enzyme, named in prose only. Causal C4 and effector E4: no Open Targets record either way.
   Descriptive. Age of action unknown. The discovery is trans-ethnic (European, East Asian, African American), its European part the deposit read here and every
-  test of it European, so `eur_only_evidence` as row 94.
+  test of it European; no `eur_only_evidence` beside a discovery with non-European samples (D31.7).
 axes:
   tier: {value: D, cites: [pmid-31413261#q255, pmid-31413261#q256, pmid-31413261#q257, pmid-31413261#q258, pmid-30642433#q378, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, pmid-29227965#q129, pmid-29227965#q130, pmid-29227965#q131, pmid-29227965#q132, db-finngen-r11#q82, pmid-40021682#q109, db-ensembl-116#q751, db-gwascatalog-2026.10.29#q558]}
   mechanism: {value: general_ageing, cites: [pmid-31413261#q255]}
@@ -33,7 +33,7 @@ axes:
   outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
             cites: [pmid-30642433#q378, pmid-29227965#q129, pmid-30729179#q149, pmid-31413261#q258]}
   actionability: {label: descriptive, cites: [pmid-31413261#q255]}
-  context: {values: [eur_only_evidence], cites: [pmid-31413261#q257, pmid-30642433#q378]}
+  context: {values: [], cites: []}
 flags:
   - {token: replication_failed, cites: [pmid-30642433#q378, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92]}
   - {token: "causal:C4", cites: [db-opentargets-26.09#q1169, db-opentargets-26.09#q1170]}
