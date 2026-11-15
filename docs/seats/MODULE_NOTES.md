@@ -207,3 +207,7 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
   effect columns; no score since the module authors no weights. 0.8 has no per-section unscored or folded field. Put
   to the lead (640483383): the export tags every variant OBA_VT0005372 and gives BIOMARKER studies no trait, so a
   marker row needs the marker's trait (the export's change). Check the first marker row's projection when it lands.
+- 2026-11-15, D33 (the person's D2, desk #307): APOE goes in this module as ε pairs in haplotypes.csv and
+  diplotypes.csv, the probe's shape. The probe test_apoe_probe is deleted from the polygon. To do when row 96
+  lands: project its pairs (the export has no diplotype path yet; ask the lead), and at that build say the app's
+  display of the pairs is unchecked.
