@@ -173,7 +173,7 @@ studies:
     effect_size: 0.01492
     effect_measure: beta
     effect_unit: fathers' lifespan per A allele of rs6753712 (A with the lead's C; printed G −0.01492), positive longer
-    effect_allele: C
+    effect_allele: A
     direction: protective
     statistical_test: "Wright 2019's Supplemental Table 8 (q151), AncestryDNA alone, SE 0.004621, raw P 0.001243, genomic-control P 0.001928 (the study's P, D26.1); rs6753712 r² 0.84, D′ 0.93 to the lead in CEU (db-ensembl-116#q725), its minor G with the lead's minor T; S8 lists lines under P 0.003 only, so selected on its own P; counted as row 40 counted its Table 8 line, the count put to the lead"
     curator: claude-opus-5-5
