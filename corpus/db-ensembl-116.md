@@ -2901,3 +2901,18 @@ against the point values the controls are short of every southern reference (CHS
 reference's sampling error (about 100 people), the controls' P is 0.14 against CHS, 0.04 against CDX, 1e-4 against
 KHV and 0.73 against CHB (derived). ENSG00000163812 is ZDHHC3 (q795) and ENSG00000075914 EXOSC7 (q796), the
 genes of the lead's eQTL sets (q1194, q1195). For row 116.
+
+## Reading 2026-11-15, record
+
+> [q797] [0] start 61633890 id rs145265196 most_severe_consequence intron_variant seq_region_name 11 strand 1 assembly_name GRCh38 allele_string T/G end 61633890 input rs145265196
+
+> [q798] [0].colocated_variants[0].frequencies.G gnomadg_afr 0.02856 eas 0 gnomadg 0.01014 eur 0.002 sas 0.0235 gnomadg_fin 0 gnomadg_ami 0 gnomadg_asj 0.00664 gnomadg_amr 0.004138 afr 0.028 gnomadg_eas 0.0001952 af 0.013 amr 0.0043 gnomadg_nfe 0.001341 gnomadg_mid 0.02414 gnomadg_remaining 0.009065 gnomadg_sas 0.03205
+
+> [q799] [0] allele_string T/G seq_region_name 11 most_severe_consequence intron_variant assembly_name GRCh37 start 61401362 input rs145265196 strand 1 id rs145265196 end 61401362
+
+> [q800] [0] strand 0 assembly_name GRCh38 start 60100001 id q12.2 feature_type band end 61900000 stain gneg seq_region_name 11
+
+rs145265196 (row 118): intronic in the RPLP0P2 lncRNA at GRCh38 11:61,633,890 T/G (q797), GRCh37 11:61,401,362
+(q799), band 11q12.2 (q800). G 0.0013 in gnomAD's non-Finnish genomes, 0.0066 in its Ashkenazi, 0.024 in Middle
+Eastern, 0.029 in African and 0.032 in South Asian genomes, absent in Finns and East Asians (q798): a frequency that
+varies by ancestry far more than the case-control gap. For row 118.

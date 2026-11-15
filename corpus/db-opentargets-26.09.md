@@ -4278,3 +4278,9 @@ q1191); none lifespan-class. 6_4330371_A_G has no record (q1192). For row 113.
 3_45035631_G_A (rs13963, row 116): 21 credible sets (q1194), all expression, splicing or transcript-usage QTLs (CLEC3B's
 own splicing in fibroblasts, ZDHHC3 and EXOSC7 expression in blood cells and tissues), the lead's posterior at most
 0.18 (ZDHHC3 in hippocampus, q1195); none lifespan-class. 3_45035631_A_G has no record (q1196). For row 116.
+
+## Reading 2026-11-15, record
+
+> [q1197] data variant null
+
+11_61633890_T_G and 11_61633890_G_T (rs145265196, row 118): no record either way (q1197). For row 118.
