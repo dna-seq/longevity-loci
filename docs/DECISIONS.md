@@ -974,3 +974,18 @@ rejected; 1 sets a rule's letter aside on the module's headline row, so it goes 
    rs769449 0.80 in CEU). rs405509 and rs449647 tag neither ε SNP (r² 0.05 to 0.12); they are Rosoff's further mvAge
    leads in the locus, named in prose, no token, and their seed lines are covered by 96. Rejected: a token on all
    five by R-APOE-1's letter, which would claim a proxy relationship the r² denies.
+5. **A valid flat line fills a cell with `0`, short of power or not; `untested` stays D31.8's (an overfit discovery
+   that is the only test).** 124's lifespan is `0` on FinnGen's release line (P 0.79), said as short of a powered
+   test; D30.12 bars a release line from making D or A, not from filling a cell. The curator's `untested` rejected.
+6. **§4.2's coding clause reads the MANE transcript, as D31.9 read 99.** 125's insertion is a 5′ UTR change on
+   PRAC2's MANE transcript; the frameshift (C34WX) on a minor isoform is named in prose and sets no E1: E4. Rejected:
+   E1 PRAC2 by the isoform, which would let any variant inside a gene with many isoforms claim coding.
+7. **D31.10 reaches a paper: when its rare rows' controls, pooled, misfit the fixed reference at P < 0.01, every
+   rare row of that paper is read against the reference**, whatever each row's own test gave. Kolbe 2025: 120, 124
+   and 125, each fitting alone, pool to 1 control copy against 8.3 expected (P 0.0024); the pool was of the rows that
+   fit, so it understates the misfit (107's own controls misfit already). Read all three against gnomAD's exome
+   reference (NFE as each row fixed it), as 107: each row's OR against the reference, its exceptional-survival cell
+   from that reading, the printed figure named. Tiers stay C (R-TIER-4, exome-wide is not genome-wide). Kolbe rows
+   to come (126 on) are read the same way. The excess of long-lived men's copies (about 24 of 35 across 107, 120,
+   121, 124, 125, 126; men 27 % of the long-lived) is named on each, no token (D31.13). Rejected: (a) the per-row
+   reading with the pooled figure named, which keeps an OR from controls shown thin.
