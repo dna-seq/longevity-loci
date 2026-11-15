@@ -22,8 +22,8 @@ verdict_reason: >-
   replicated, on Figure 4's look-up at rs651007 (r² 0.94) in Deelen 2014 and Broer 2015: one-sided P 0.0215, Alpha
   1.12. Those cohorts are largely Deelen 2019's, which leans C's way at the 90th percentile (OR 1.047, P 0.062,
   one-sided 0.031, nominal) and is flat at the 99th (OR 1.010, P 0.78; its cohorts disagree, heterogeneity P 0.0046);
-  counted once. Neither is a red flag (D21, D25.3): the 99th, from Timmers' effect, has power 0.90 and heterogeneity P
-  0.026 under APOE's factor but power 0.34 under the mean factor; the 90th has heterogeneity P 0.067 and leans C's
+  counted once. Neither is a red flag (D21, D25.3): the 99th, from Timmers' effect at its own factor 6.22 (D31.4), has power
+  0.98 and heterogeneity P 0.0079 under APOE's factor but power 0.46 under the mean factor; the 90th has heterogeneity P 0.067 and leans C's
   way. FinnGen's deaths lean C's way (P 0.43, one-sided 0.22; power 0.78 under APOE's factor, heterogeneity P 0.15),
   no flag. Healthspan in Zenin 2019 goes C's way, nominal (P 0.0017; UK Biobank, overlapping the discovery): the
   cell is +. Exceptional survival is 0, as at row 48: one nominal 90th-percentile look, the 99th flat. Zenin's
@@ -153,7 +153,7 @@ studies:
     effect_unit: odds of survival to the 90th percentile per C allele
     effect_allele: C
     direction: protective
-    statistical_test: "Deelen 2019's Supplementary Data 1 look-up of Timmers 2019's ABO SNP (listed with the Bayesian P 1.9e-8), two-sided P printed, one-sided 0.031 (derived, D25.13), I² 20.7; D21 from Timmers' β: power 1.00, heterogeneity P 0.067 (APOE's factor), power 0.58 (mean factor), no flag; 99th percentile OR 1.010 (0.94-1.09), P 0.78, I² 59.3, heterogeneity P 0.0046 across cohorts: power 0.90, heterogeneity P 0.026 under APOE's factor, power 0.34, P 0.36 under the mean factor, so a flag under one calibration only, none (D25.3); independent of UK Biobank (q2)"
+    statistical_test: "Deelen 2019's Supplementary Data 1 look-up of Timmers 2019's ABO SNP (listed with the Bayesian P 1.9e-8), two-sided P printed, one-sided 0.031 (derived, D25.13), I² 20.7; D21 from Timmers' β: power 1.00, heterogeneity P 0.067 (APOE's factor), power 0.58 (mean factor), no flag; 99th percentile OR 1.010 (0.94-1.09), P 0.78, I² 59.3, heterogeneity P 0.0046 across cohorts: at the 99th's factor 6.22 (D31.4): power 0.98, heterogeneity P 0.0079 under APOE's factor, power 0.46, P 0.23 under the mean factor, so a flag under one calibration only, none (D25.3); independent of UK Biobank (q2)"
     curator: claude-opus-5-5
   - rsid: rs2519093
     note: pmid-30729179

@@ -16,8 +16,8 @@ verdict_reason: >-
   calibrated from the discovery's both-parents effect (D25.3, D27.9) it flags under both factors (APOE factor power
   1.00, heterogeneity P below 1e-4; mean factor power 0.84, P 0.007); under the mean factor it holds only down to about 0.95 of the effect, under
   APOE's to about 0.40 (derived), so a slightly smaller true effect would leave the LifeGen flag alone. The 99th leans the discovery's way (C +0.016, P
-  0.62), flagging under the APOE factor only (borrowed from the 90th's ε4 line; power 0.99, P 0.0037; mean factor
-  0.52, P 0.24). So `replication_failed` (D25.13, D26.11). It bars A. It does not make D: D25.1 needs no independent
+  0.62), flagging under the APOE factor only (the 99th's own 6.22, D31.4; power 1.00, P 0.0005; mean factor
+  0.71, P 0.11). So `replication_failed` (D25.13, D26.11). It bars A. It does not make D: D25.1 needs no independent
   scoring-class study to pass, and one does. Wright 2019's AncestryDNA fathers at rs929579 (r² 0.97, D′ 1, its T with
   the lead's C) lean the discovery's way: the UK arm is Pilling's fathers' line there digit for digit, counting C
   (with the lead's T) with positive shorter, and AncestryDNA's C is +0.0050 (SE 0.0027), P 0.063, one-sided 0.032 raw and
@@ -194,7 +194,7 @@ studies:
     effect_unit: log odds of survival above the 99th percentile per t allele
     effect_allele: T
     direction: risk
-    statistical_test: "Deelen 2019's 99th percentile file (q180): t (0.66) −0.0155 (SE 0.0317), P 0.62, effective n 4,524; C +0.0155, the discovery's side, flat. Under D25.3 from +0.0267: APOE factor (borrowed from the 90th's ε4 line) power 0.99, heterogeneity P 0.0037; mean factor power 0.52, P 0.24: a flag under one calibration only, so none"
+    statistical_test: "Deelen 2019's 99th percentile file (q180): t (0.66) −0.0155 (SE 0.0317), P 0.62, effective n 4,524; C +0.0155, the discovery's side, flat. Under D25.3 from +0.0267: APOE factor at the 99th's own 6.22 (D31.4, q250) power 1.00, heterogeneity P 0.0005; mean factor power 0.71, P 0.11: a flag under one calibration only, so none"
     curator: claude-opus-5-5
   - rsid: rs61978928
     note: pmid-30729179

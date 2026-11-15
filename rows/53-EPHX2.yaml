@@ -17,7 +17,8 @@ verdict_reason: >-
   sample, gives A +0.0073 (SE 0.0094) against Pilling's +0.0303 (SE 0.0053), one-sided P 0.22: at power about 0.94
   the heterogeneity P is about 0.033, a D21 red flag on the same scale. Deelen 2019's 90th percentile, flat (OR 1.005
   per G, P 0.83), flags too, under both D25.3 calibrations from Pilling's effect (APOE's factor: power 1.00,
-  heterogeneity P 9e-6; the mean factor: 0.85, 0.0085); the 99th (P 0.79) flags under APOE's only. A powered sample
+  heterogeneity P 9e-6; the mean factor: 0.85, 0.0085); the 99th (P 0.79), at its own factor 6.22 (D31.4), flags under APOE's only
+  (power 1.00, heterogeneity P 0.0003; the mean factor's power 0.69). A powered sample
   that fails caps the row at B (§4.1, D21) and carries `replication_failed` (D25.13), though three others replicate.
   Timmers 2019's million-life pool, which holds Pilling's UK Biobank and the weaker LifeGen arm, gives P 7.2e-8, A
   +0.025 (suggestive, the window's smallest P its tag rs6558008's 5.8e-8, r² 0.97); Wright's fathers' meta P 5.8e-10
@@ -233,7 +234,7 @@ studies:
     effect_unit: odds ratio of reaching the 99th percentile per A allele, the printed G odds ratio 0.9907 inverted (derived)
     effect_allele: A
     direction: protective
-    statistical_test: "Look-up of Pilling's rs7844965 in Supplementary Data 1; flat, A's side one-sided about 0.40 (derived); D21: APOE's factor power 0.99, heterogeneity P 0.0016; the mean factor power 0.54, P 0.16: one calibration only, no flag of its own"
+    statistical_test: "Look-up of Pilling's rs7844965 in Supplementary Data 1; flat, A's side one-sided about 0.40 (derived); D21 at the 99th's factor 6.22 (D31.4, q250): APOE's factor power 1.00, heterogeneity P 0.0003; the mean factor power 0.69, P 0.078: one calibration only, no flag of its own"
     curator: claude-opus-5-5
   - rsid: rs7844965
     note: pmid-30729179

@@ -23,8 +23,8 @@ verdict_reason: >-
   was first read (for row 71); the D27.9 sweep found it. The two arms pooled give about P 1.1e-6, which is why Timmers 2019's million
   lives give only 1.4e-6 by the conventional test (genome-wide only in its lipid-informed Bayesian scan, a B ground by
   D28.7 that the row, B on other grounds, does not need). Deelen 2019's 90th and 99th percentiles are null (P 0.16 to 0.52, all on the lifespan-raising
-  side); calibrated from Pilling's effect (D27.9) they flag under APOE's factor (power 1.00 and 0.99, heterogeneity
-  P 0.0007 and 0.007) and not under the loci's mean factor (power 0.83, P 0.18; 0.50, P 0.33), so no flag there
+  side); calibrated from Pilling's effect (D27.9) they flag under APOE's factor (power 1.00 and 1.00, heterogeneity
+  P 0.0007 and 0.001, the 99th at its own factor 6.22, D31.4) and not under the loci's mean factor (power 0.83, P 0.18; 0.68, P 0.17), so no flag there
   (D25.3); healthspan is nominal (Zenin 2019's
   summary statistics, P 1.2e-4). The lifespan-raising allele is the rarer one, which lowers LDL cholesterol, so the
   protection is a presence. The lead is the seed's rs646776 rather than a study's reported SNP: it sits in Pilling's
@@ -233,5 +233,5 @@ studies:
     effect_unit: odds ratio of reaching the 99th percentile, per T allele at the proxy
     effect_allele: T
     proxy_rsid: rs602633
-    statistical_test: "Look-up of Pilling's rs602633 in Supplementary Data 1; same side, not nominal; rs4970836 (P 0.31) and rs646776 (P 0.30) agree (q7, q8). D21 from Pilling's +0.0296 (D27.9, derived): APOE's factor power 0.99, heterogeneity P 0.007; the mean factor power 0.50, P 0.33; a flag under one calibration only, so none (D25.3)"
+    statistical_test: "Look-up of Pilling's rs602633 in Supplementary Data 1; same side, not nominal; rs4970836 (P 0.31) and rs646776 (P 0.30) agree (q7, q8). D21 from Pilling's +0.0296 (D27.9, derived): at the 99th's own factor 6.22 (D31.4, pmid-31413261#q250): APOE's factor power 1.00, heterogeneity P 0.001; the mean factor power 0.68, P 0.17; a flag under one calibration only, so none (D25.3)"
     curator: claude-opus-5-5

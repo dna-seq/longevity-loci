@@ -206,7 +206,7 @@ studies:
     effect_unit: log odds of reaching the 99th percentile, per A allele
     effect_allele: A
     direction: risk
-    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), SE 0.0304, effective N 4,524; T one-sided 0.073 (derived); its cases a subset of the 90th's; power 0.48 under APOE's factor, red flag unknown (D29.11)"
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), SE 0.0304, effective N 4,524; T one-sided 0.073 (derived); its cases a subset of the 90th's; power 0.66 at the 99th's own factor 6.22 (D31.4), under APOE's factor, red flag unknown (D29.11)"
     curator: claude-opus-5-5
   - rsid: rs28455998
     note: pmid-31484785

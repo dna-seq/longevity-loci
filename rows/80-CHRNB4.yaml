@@ -18,8 +18,8 @@ verdict_reason: >-
   (0.041 per allele: mean factor power 0.99, heterogeneity P 0.01, 0.04 with the mean's SE) and for any discovery
   effect above about 0.037 (with the mean's SE),
   so taking LifeGen's Rotterdam overlap out of Timmers' β does not lift it; Joshi's HR 1.046 (log 0.045) sits at
-  Timmers' size. The 99th percentile leans the other way (T β −0.0191, SE 0.0343) and flags too (mean factor power
-  0.82, heterogeneity P 0.002), its APOE factor borrowed from the 90th's ε4 line, so it is stated and the token rests
+  Timmers' size. The 99th percentile leans the other way (T β −0.0191, SE 0.0343) and flags too (at the 99th's own factor
+  6.22, D31.4: mean factor power 0.95, heterogeneity P 0.0002), so it is stated and the token rests
   on the 90th. Timmers 2019's own look-up in the earlier longevity sample is flat as well (Alpha 0.05, SE 0.27,
   against the mean 0.42), a sample overlapping Deelen's, named only. The case for A, which the lead rejected (D28.9):
   the effect fades with age (below), and Figure 5's 80-90 band (fathers 0.0398, mothers 0.0212, pooled 0.030; the twelve bands
@@ -232,5 +232,5 @@ studies:
     effect_unit: log odds of survival to the 99th percentile per T allele
     effect_allele: T
     direction: risk
-    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), SE 0.0343, effective N 4,154; one-sided P 0.71 (derived); cases a subset of the 90th's. From Timmers' β: power 1.00 by APOE's factor (borrowed from the 90th's ε4 line, as at row 42), heterogeneity P 6e-9; 0.82 by the mean factor, heterogeneity P 0.002 (derived); stated, the token rests on the 90th"
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), SE 0.0343, effective N 4,154; one-sided P 0.71 (derived); cases a subset of the 90th's. From Timmers' β: at the 99th's own factor 6.22 (D31.4, q250): power 1.00 by APOE's factor, heterogeneity P 1e-11; 0.95 by the mean factor, heterogeneity P 0.0002 (derived); stated, the token rests on the 90th"
     curator: claude-opus-5-5

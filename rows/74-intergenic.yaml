@@ -29,7 +29,8 @@ verdict_reason: >-
   0.0117 of q301 over √2; derived), C about +0.034, the 90th percentile flags under the APOE factor only (power 1.00,
   heterogeneity P 0.008; the mean factor power 0.56, P 0.22). That is a flag under one calibration, so none
   (D25.3); from Timmers' pooled +0.030 (q302) the same (mean factor power 0.48). The 99th lies on the discovery's
-  side (power 0.86 under the APOE factor, borrowed from the 90th's ε4 line, and 0.31 under the mean). The rest is
+  side (power 0.97 under the APOE factor at the 99th's own 6.22, D31.4, and 0.43 under the mean; heterogeneity P
+  0.26 and 0.59). The rest is
   flat and leans against. FinnGen r11's any-death endpoint has C β +0.020 (SE
   0.017, P 0.22), C with slightly more deaths. Park 2025's UK Biobank own-survival deposit (its allele columns
   swapped, as at APOE) has C with more deaths, P 0.38. Zenin 2019's healthspan has C toward an earlier end, P 0.19
@@ -203,7 +204,7 @@ studies:
     effect_unit: log odds of survival above the 99th percentile per t allele
     effect_allele: T
     direction: risk
-    statistical_test: "Deelen 2019's 99th percentile file (q176): t (0.93) −0.123 (SE 0.060), P 0.041, effective n 4,303; so C +0.123 (OR 1.13), the discovery's side, one-sided P 0.020 (derived; D25.13); an independent European replication of a scoring class, so D25.1 cannot make the row D. Expected under D25.3 from C +0.034: 0.164 (APOE factor, borrowed from the 90th's ε4 line, power 0.86) or 0.068 (mean factor, power 0.31), heterogeneity P 0.57 and 0.38"
+    statistical_test: "Deelen 2019's 99th percentile file (q176): t (0.93) −0.123 (SE 0.060), P 0.041, effective n 4,303; so C +0.123 (OR 1.13), the discovery's side, one-sided P 0.020 (derived; D25.13); an independent European replication of a scoring class, so D25.1 cannot make the row D. Expected under D25.3 from C +0.034: 0.211 (APOE factor at the 99th's own 6.22, D31.4, power 0.97) or 0.088 (mean factor, power 0.43), heterogeneity P 0.26 and 0.59"
     curator: claude-opus-5-5
   - rsid: rs61949650
     note: pmid-30729179

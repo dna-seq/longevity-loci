@@ -23,8 +23,8 @@ verdict_reason: >-
   1.006, P 0.84) and leans the other way at the 99th (OR 0.950, P 0.27); calibrated from the discovery's effect (D27.9) in its
   both-parents form, the like of Deelen's sex-combined samples (Pilling's P 3.5e-6, its β unprinted: about +0.023 on
   Timmers' scale from the P at a both-parents SE near 0.005, derived), the 90th percentile flags under the APOE factor
-  only (power 0.99, heterogeneity P 0.005; the mean factor 0.48, P 0.19) and the 99th under neither on power (0.78 and
-  0.26), so no flag (D25.3), and exceptional survival is 0; across both-parents SEs of 0.0047 to 0.0053 the mean-factor
+  only (power 0.99, heterogeneity P 0.005; the mean factor 0.48, P 0.19) and the 99th, at its own factor 6.22 (D31.4), under APOE's only (power
+  0.92, heterogeneity P 0.0005; the mean factor 0.36, P 0.022), so no flag (D25.3), and exceptional survival is 0; across both-parents SEs of 0.0047 to 0.0053 the mean-factor
   power stays at 0.44 to 0.52. From the mothers' β instead (+0.040, Figure 2's column)
   the 90th would flag under both (mean factor power 0.87, P 0.019): a sex-specific discovery is tested in a sex-combined
   sample on the paper's both-parents effect (D28.2, the lead's ruling, the default here), so no flag. FinnGen's look-up raises no flag
@@ -195,7 +195,7 @@ studies:
     effect_unit: odds ratio of reaching the 99th percentile, per G allele
     effect_allele: G
     direction: risk
-    statistical_test: "Look-up of Pilling's mothers' rs3130507 in Supplementary Data 1; leans against the discovery, not nominal; power under D25.3 from Pilling's both-parents effect (D27.9) 0.78 (APOE factor) and 0.26 (mean factor), so no flag"
+    statistical_test: "Look-up of Pilling's mothers' rs3130507 in Supplementary Data 1; leans against the discovery, not nominal; under D25.3 from Pilling's both-parents effect (D27.9) at the 99th's factor 6.22 (D31.4, pmid-31413261#q250): APOE's power 0.92, heterogeneity P 0.0005; the mean factor's power 0.36, P 0.022; a flag under one calibration only, so none"
     curator: claude-opus-5-5
   - rsid: rs3130507
     note: pmid-30729179

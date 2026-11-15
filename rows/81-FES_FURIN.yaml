@@ -181,7 +181,7 @@ studies:
     effect_unit: odds ratio of reaching the 99th percentile, per G allele
     effect_allele: G
     direction: protective
-    statistical_test: "Look-up of Timmers 2019's lead in Supplementary Data 1; same side, not nominal; I² 0; Pilling's rs17514846 gives OR 1.051, P 0.123 (q17). D21 from Pilling's +0.0275 (D27.9, derived): APOE's factor power 0.99, heterogeneity P 0.03; the mean factor power 0.54, P 0.85; no red flag (D25.3)"
+    statistical_test: "Look-up of Timmers 2019's lead in Supplementary Data 1; same side, not nominal; I² 0; Pilling's rs17514846 gives OR 1.051, P 0.123 (q17). D21 from Pilling's +0.0275 (D27.9, derived): at the 99th's own factor 6.22 (D31.4, pmid-31413261#q250): APOE's factor power 1.00, heterogeneity P 0.0041; the mean factor power 0.72, P 0.52; no red flag (D25.3)"
     curator: claude-opus-5-5
   - rsid: rs6224
     note: pmid-30642433

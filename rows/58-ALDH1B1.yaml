@@ -149,7 +149,7 @@ studies:
     effect_unit: log odds of reaching the 99th percentile age per T allele
     effect_allele: T
     direction: protective
-    statistical_test: "Deelen 2019's summary statistics (GCST008599), t 0.05, SE 0.0827, effective N 3,220; one-sided 0.043 in NECS's direction (derived, D25.13). Deelen holds the LGP (q80), whose share here is not shown. Against NECS's effect carried over (+0.341 on this scale, derived), heterogeneity P 0.049. Independent of NECS as far as both papers show (D19.1); controls' overlap unknown, as row 31"
+    statistical_test: "Deelen 2019's summary statistics (GCST008599), t 0.05, SE 0.0827, effective N 3,220; one-sided 0.043 in NECS's direction (derived, D25.13). Deelen holds the LGP (q80), whose share here is not shown. Against NECS's effect carried over at the 99th's factor 6.22 (D31.4; +0.438, SD 0.075, derived), heterogeneity P 0.0078: a smaller effect, still a pass (D25.13). Independent of NECS as far as both papers show (D19.1); controls' overlap unknown, as row 31"
     curator: claude-opus-5-5
   - rsid: rs10973748
     note: pmid-31413261
