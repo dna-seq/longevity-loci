@@ -9,19 +9,22 @@ verdict_reason: >-
   Tier D, from the seed's C: a suggestive discovery that fails a powered test (D30.11, a fortiori of D25.1), row 94's
   shape. Deelen 2019's trans-ethnic meta-analysis of survival to the 90th percentile against all controls gives C OR
   0.90 (0.87 to 0.94), P 2.0e-7, I² 0; its European deposit gives T +0.097 (SE 0.021), P 5.0e-6; the 99th T +0.053,
-  P 0.12, inside the same cohorts. Timmers 2019's million parents' lives, which hold none of Deelen's data, are flat
+  P 0.12, inside the same cohorts. Timmers 2019's million parents' lives, which share at least the Rotterdam Study with Deelen's cohorts but
+  none of Deelen's data outside it (Deelen holds no UK Biobank), are flat
   and lean the other way: T −0.0020 per self (SE 0.0040), P 0.61, "--". Carried to that scale by D25.3's two
   calibrations, the discovery predicts T +0.020 (APOE's factor) or +0.048 (the loci's mean): one-sided power 1.00
   under both, heterogeneity P 1.9e-4 and 8.7e-6 (at half the effect 0.0078 and 7.8e-5), a D21 red flag under both. No
   independent scoring-class study gives p < 0.05 for T: Pilling 2017's UK Biobank parents are flat in every column
   (P 0.31 to 0.71), FinnGen R11's death endpoint flat (P 0.89), a database line, Park 2025's own survival flat (P
-  0.55). Wright 2019's AncestryDNA holds four Table 9 mothers' meta lines within 500 kb, none among the lead's 30 CEU
-  variants at r² 0.5: untested. Zenin 2019's healthspan flat (P 0.46); Foote 2025's factors mixed (T less frail on
+  0.55; its 0.512 is T's frequency, so T −0.0004 on death, the longer-lived side, flat). Wright 2019's AncestryDNA holds four Table 9 mothers' meta lines within 500 kb: three within the lead's CEU
+  window (none among its 30 variants at r² 0.5) and rs12021529 at 399 kb, beyond the window's reach, unread: untested.
+  Deelen's own UK Biobank validation (its Table 3) lists only the European loci, none at this one. Zenin 2019's healthspan flat (P 0.46); Foote 2025's factors mixed (T less frail on
   two at P 0.022 and 0.040, more on two, flat), multivariate; Rosoff 2023 holds no line. Timmers' strongest line
   within 500 kb is P 3.1e-5: nothing suggestive. The literature search (the rsID, and ECE1 with longevity terms; Semantic
   Scholar answered 429, its part unchecked) finds Deelen alone. Every genotype neutral (D25.2); outcome cells 0 (D28.10). Mechanism ageing in general (D25.7);
   ECE1, endothelin-converting enzyme, named in prose only. Causal C4 and effector E4: no Open Targets record either way.
-  Descriptive. Age of action unknown. The discovery is trans-ethnic, its European part the deposit read here.
+  Descriptive. Age of action unknown. The discovery is trans-ethnic (European, East Asian, African American), its European part the deposit read here and every
+  test of it European, so `eur_only_evidence` as row 94.
 axes:
   tier: {value: D, cites: [pmid-31413261#q255, pmid-31413261#q256, pmid-31413261#q257, pmid-31413261#q258, pmid-30642433#q378, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, pmid-29227965#q129, pmid-29227965#q130, pmid-29227965#q131, pmid-29227965#q132, db-finngen-r11#q82, pmid-40021682#q109, db-ensembl-116#q751, db-gwascatalog-2026.10.29#q558]}
   mechanism: {value: general_ageing, cites: [pmid-31413261#q255]}

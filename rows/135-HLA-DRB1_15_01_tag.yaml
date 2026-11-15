@@ -56,11 +56,11 @@ variants:
     gene: ""
     phenotype: HLA-DRB1*15:01 tag, longevity in men
     trait_efo_id: OBA_VT0005372
-    effect_allele: A
-    effect_size: 0.63
+    effect_allele: G
+    effect_size: 1.59
     effect_measure: OR
     stat_significance: nominal
-    direction: risk
+    direction: protective
     genotypes:
       - genotype: G/G
         state: neutral

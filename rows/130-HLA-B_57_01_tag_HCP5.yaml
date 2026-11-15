@@ -53,11 +53,11 @@ variants:
     gene: ""
     phenotype: HLA-B*57:01 tag, reaching 100
     trait_efo_id: OBA_VT0005372
-    effect_allele: G
-    effect_size: 0.68
+    effect_allele: T
+    effect_size: 1.47
     effect_measure: OR
     stat_significance: nominal
-    direction: risk
+    direction: protective
     genotypes:
       - genotype: T/T
         state: neutral
