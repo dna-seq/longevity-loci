@@ -10,7 +10,7 @@ verdict_reason: >-
   Tier C, the seed's (row 83's shape, short of its B). Foote 2025's frailty factor 6, disability, is genome-wide at the
   locus: rs476828, 1.5 kb away and r² 0.97 with the lead (D′ 1.00, its T on the lead's T in CEU), T less frail, β
   −0.0176, P 8.1e-11 (Q P 0.34); factor 3, multimorbidity, nominal (P 1.1e-4). Foote's deposits hold no line at the
-  lead (the four that returned the window; three returned the header alone, unread), so the proxy stands in (D29.3).
+  lead (the four that hold the window; the general, F4 and F5 deposits have gaps there, untested, D31.4), so the proxy stands in (D29.3).
   A Genomic SEM factor is multivariate (D27.3) and scores at B only beside a co-occurring lifespan study at P < 0.05
   on the same allele (D16, D18.3) that survives conditioning on the stronger lifespan lines in its window, jointly
   (D30.2). The one candidate is Deelen 2019's 99th percentile: T more often long-lived, β +0.0933, P 0.0079 (one-sided
@@ -107,7 +107,7 @@ studies:
     effect_unit: frailty factor 6 (disability) per T allele of rs476828, the lead's T (negative = less frail)
     effect_allele: T
     direction: protective
-    statistical_test: "Genomic SEM GWAS of Foote 2025's latent frailty factor 6, disability (deposit GCST90624052, GRCh37, q21), SE 0.0027, Q P 0.34; factor 3, multimorbidity, T -0.0076, P 1.1e-4 (q22); no line at the lead in the four deposits that returned the window (three returned the header alone), rs476828 r² 0.97, D′ 1.00 (db-ensembl-116#q677), its T with the lead's T in phased CEU haplotypes (derived); effects toward the frailty-raising side (q2); multivariate (D27.3), at B only beside a co-occurring lifespan study (D16, D18.3, D30.2)"
+    statistical_test: "Genomic SEM GWAS of Foote 2025's latent frailty factor 6, disability (deposit GCST90624052, GRCh37, q21), SE 0.0027, Q P 0.34; factor 3, multimorbidity, T -0.0076, P 1.1e-4 (q22); no line at the lead in the four deposits that returned the window (the other three have gaps there, untested, D31.4), rs476828 r² 0.97, D′ 1.00 (db-ensembl-116#q677), its T with the lead's T in phased CEU haplotypes (derived); effects toward the frailty-raising side (q2); multivariate (D27.3), at B only beside a co-occurring lifespan study (D16, D18.3, D30.2)"
     curator: claude-opus-5-5
   - rsid: rs17782313
     note: pmid-31413261

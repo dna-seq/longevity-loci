@@ -30,7 +30,8 @@ verdict_reason: >-
   genome-wide at rs3131621, 6 kb) are common and cannot tag a 4 % allele (r² at most 0.47 by frequency, derived): not
   this signal. None of the lead's 185 CEU proxies at r² 0.5 or more is in Wright's or Rosoff's tables; Foote 2025 holds
   34, at rs41561016 (r² 1.00) mixed (F5 C less frail, P 0.0066; F6 more disabled, P 0.0009), multivariate, scored
-  nothing; its general, F3 and F4 windows came back empty, unread. The literature search by the tag and by the allele
+  nothing; its general, F3 and F4 deposits hold no line there, gaps in the deposits (GRCh37 chr6: general
+  24,684,152 to 37,219,644; F3 30,069,128 to 33,930,040; F4 24,494,924 to 38,133,030), untested (D31.4). The literature search by the tag and by the allele
   name (Europe PMC, PubMed, Crossref, preprints; OpenAlex answered 400, Semantic Scholar 429) finds no other longevity
   test of HLA-B*57. Exceptional survival + (Rahmouni, as 135 and 77), lifespan + (Park, one-sided 0.045), healthspan 0
   (Zenin flat, Foote mixed). Mechanism ageing in general (D25.7): G tags HLA-B*57:01, which controls HIV-1 (OR 5.3, P

@@ -23,7 +23,8 @@ verdict_reason: >-
   expectation stands as calibrated: a flag under the mean factor only (power 1.00, heterogeneity P 1.7e-4), not under
   APOE's (power 0.77), so none (D25.3); a database line sets no D either way, and the row is D on Timmers. Flat elsewhere: Park 2025's own survival (P 0.73, its allele
   columns swapped), Zenin 2019's healthspan (P 0.78), Foote 2025's five readable frailty factors (P 0.086 to 0.56;
-  the general and metabolic factors' deposits returned the header alone, unread). Wright 2019's nearest AncestryDNA
+  the general and metabolic factors' deposits hold no line there, gaps in the deposits (general GRCh37 chr19
+  29,247,835 to 36,557,619; metabolic 32,754,779 to 39,936,134), untested, D31.4). Wright 2019's nearest AncestryDNA
   line is a viability one, rs745961 (88 kb, r² 0.055 in CEU), which does not tag the lead and would only confirm
   (D23); no parental line within 500 kb. Rosoff 2023's mvAge lead tables hold no line. The rsID literature search
   (Europe PMC, PubMed, OpenAlex, Crossref, preprints; Semantic Scholar 429, its part unchecked) finds Deelen 2019
