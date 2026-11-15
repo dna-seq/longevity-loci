@@ -36,6 +36,14 @@ a v1 locus with no seed entry takes the next free id above the seed's. Fields:
   alleles, as `T/T`, `T/TC`, `TC/TC`, D26.9); and, only where the rsID names several loci, `locus` (`chrom`,
   `start` the GRCh38 1-based VCF position, `ref` the VCF reference allele, and `cites`), the one the row means
   (D29.8).
+- `haplotypes` and `diplotypes` (D33), only on a locus scored as pairs of named versions (APOE's ε pairs, R-APOE-1):
+  each haplotype a `name` (no spaces, `ε4`), its `gene` and `alleles` (`rsid`, `allele`), every version of one gene
+  defined at the same positions, each a variant of the row, no two alike; each diplotype a `gene`, a `pair` written
+  in order (`[ε3, ε4]`), its `state`, `conclusion`, optional `negatives`, `phenotype` and `trait_efo_id` (lifespan's
+  when empty; a second result of one pair for another trait, such as Alzheimer's MONDO_0004975, has its own). The
+  pair's variants carry no genotypes: the pair is the score, written once, and their studies stay on them. The
+  export writes them to 0.8's `haplotypes.csv` and `diplotypes.csv` (`category` the row's mechanism); a diplotype row
+  links to no study, so its grounding is its `conclusion`'s text.
 - `studies`: one per (rsid, study), §6.3's columns: `note` and `quote` (the provenance quote, by id; or no
   `quote` and a `quote_absent` saying why: `not_found` read and nothing supports the row, `unchecked` only the
   abstract could be read, `other_claim` the article does not make the claim cited for (the row goes to a

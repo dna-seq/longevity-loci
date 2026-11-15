@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- Rows take `haplotypes` and `diplotypes` (D33, APOE's ε pairs), checked for order, definition and positions; `loci export` writes them to 0.8's `haplotypes.csv` and `diplotypes.csv`, parsed by 0.8's own models, only when a row defines pairs.
 - D33, the person's D2 (desk #307): APOE is curated in this module as one result per ε pair; `dashboard.py --left` takes 96 back.
 - `loci export`: on an `ageing_markers` row (D32) the variant carries its marker's own `trait_efo_id` and a BIOMARKER study of it the same, so a marker locus is not tagged as a lifespan variant (the module seat's finding). Every other row exports as before.
 - D32, the person's D4 (desk #312): the 18 biological-ageing marker loci are curated as an unscored section of this module; `dashboard.py --left` no longer holds them out.
