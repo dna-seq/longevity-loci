@@ -16,9 +16,9 @@ verdict_reason: >-
   about 7 copies and show about 1 (Poisson P 0.007), the long-lived 2,490 about 2.1 and show about 5 (P 0.066), so the
   signal is mostly the controls' deficit, and most long-lived copies are in men (0.60 %), the women at the population's
   0.06 %. The authors report it without doubt, so it is not an overfit source by the rule's own cases (rows 41, 44,
-  48, 60, each disowned by its authors or their filter); whether the deficit alone makes it one, as row 41's control
-  frequency did (D26.10), is put to the lead. The crude OR stays on the variant: the counts are the paper's own
-  (D25.10), not disowned (D26.10). No replication exists: the authors say
+  48, 60, each disowned by its authors or their filter); so, by D31.10, the case-control OR (12.1, P 9.8e-7) is named, not read: the
+  row reads the long-lived against gnomAD NFE, the paper's own OR 2.36, which the paper tests no further and which the
+  Poisson comparison puts at one-sided P 0.066 (derived), not a pass. No replication exists: the authors say
   none of comparable size is available, their Ashkenazi look-up holds three of the seven variants, not this one, and
   their Leiden look-up lists none at SLC16A6. At 0.06 % the variant is absent from every large sample read here:
   Deelen 2019, Timmers 2019, Pilling 2017, Zenin 2019, FinnGen R11, Park 2025 (below its 0.1 % filter) and Foote 2025
@@ -27,18 +27,19 @@ verdict_reason: >-
   it either (r² at most 0.006 by frequency): a separate signal. No LD look is possible for a 0.09 % variant in 1000
   Genomes' 99 CEU samples. The literature search (the rsID, and SLC16A6 with longevity terms; Semantic Scholar 429)
   finds Kolbe alone, and of the papers citing Kolbe only a 2026 bioRxiv functional study of rare mTOR-pathway variants
-  by the same groups, no sample test of this one. Exceptional survival +
-  (the discovery), lifespan untested, healthspan untested. Mechanism ageing in general (D25.7): the authors tie SLC16A6
+  by the same groups, no sample test of this one. Exceptional survival 0 (D31.10: the
+  read comparison, against gnomAD, does not pass; the case-control one rests on the misfit controls), lifespan untested,
+  healthspan untested. Mechanism ageing in general (D25.7): the authors tie SLC16A6
   to the intestinal excretion of ketone bodies, which they link to longevity through fasting, a route not tested here;
   named. Causal C4: no Open Targets record. Effector E4, the gene named in prose: the change is synonymous, so it alters
-  no protein, and §4.2's coding clause is read as a protein change (D31.9's reading at 99); put to the lead. Descriptive.
+  no protein (D31.9, D31.10). Descriptive.
   Age of action unknown. The evidence is European (German).
 axes:
   tier: {value: C, cites: [pmid-40232348#q1, pmid-40232348#q2, pmid-40232348#q3, pmid-40232348#q4, pmid-40232348#q5, pmid-40232348#q7, db-ensembl-116#q764, db-gwascatalog-2026.10.29#q568]}
   mechanism: {value: general_ageing, cites: [pmid-40232348#q6]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: untested, lifespan: untested, exceptional_survival: "+",
+  outcome: {healthspan: untested, lifespan: untested, exceptional_survival: "0",
             cites: [pmid-40232348#q1, pmid-40232348#q3]}
   actionability: {label: descriptive, cites: [pmid-40232348#q1]}
   context: {values: [eur_only_evidence], cites: [pmid-40232348#q3]}
@@ -51,9 +52,9 @@ variants:
     phenotype: SLC16A6 synonymous, longevity
     trait_efo_id: OBA_VT0005372
     effect_allele: C
-    effect_size: 12.1
+    effect_size: 2.36
     effect_measure: OR
-    stat_significance: suggestive
+    stat_significance: not_significant
     direction: protective
     genotypes:
       - genotype: G/G
@@ -67,15 +68,16 @@ variants:
         conclusion: >-
           You carry one copy of a rare version of this DNA position (about 2 in 1,000 people of European ancestry do).
           It lies in the SLC16A6 gene and does not change the protein the gene makes. One German study found it a few
-          times among very long-lived people and almost never among younger people. It rests on a handful of carriers
-          and has not been checked elsewhere, so this is early evidence, not a settled finding: a tendency, not destiny.
+          times among very long-lived people, a little more often than in the general population, but the difference
+          rests on a handful of carriers, is not clear, and has not been checked elsewhere, so this is weak, early
+          evidence: a slight tendency at most, not destiny.
       - genotype: C/C
         state: protective
         conclusion: >-
           You carry two copies of a rare version of this DNA position, which is very unusual; the one study of it found
           no one with two copies. It lies in the SLC16A6 gene and does not change the protein the gene makes. One German
-          study found single copies a few times among very long-lived people, early evidence that has not been checked
-          elsewhere, so nothing can be said about two copies.
+          study found single copies a few times among very long-lived people, a difference that is not clear and has
+          not been checked elsewhere, so nothing can be said about two copies.
 studies:
   - rsid: rs112262188
     note: pmid-40232348
@@ -96,5 +98,5 @@ studies:
     effect_unit: odds of being long-lived per C allele (Haldane-corrected)
     effect_allele: C
     direction: protective
-    statistical_test: "Kolbe 2025's STAAR-O single-variant test with sex and ten principal components (Table 1, q1, q3), MAC ≥ 5; cases past the 95th age-at-death percentile of their birth cohort (q7), no p95 design term, so an age threshold; FDR-adjusted 0.025 under an exploratory FDR < 0.05 (q2); C 0.20 % in the long-lived, 0.01 % in the controls, about five copies against one; against gnomAD NFE 0.09 % the paper's own OR 2.36; no replication (q4, q5)"
+    statistical_test: "Kolbe 2025's STAAR-O single-variant test with sex and ten principal components (Table 1, q1, q3), MAC ≥ 5; cases past the 95th age-at-death percentile of their birth cohort (q7), no p95 design term, so an age threshold; FDR-adjusted 0.025 under an exploratory FDR < 0.05 (q2); C 0.20 % in the long-lived, 0.01 % in the controls, about five copies against one; against gnomAD NFE 0.09 % the paper's own OR 2.36; the controls misfit gnomAD (about 1 copy against 7, Poisson P 0.007), so this OR is named, not read (D31.10), and the variant carries 2.36 (one-sided P 0.066, derived); no replication (q4, q5)"
     curator: claude-opus-5-5
