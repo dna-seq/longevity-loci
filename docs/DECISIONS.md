@@ -871,3 +871,9 @@ standing word (pacing off, "full steam ahead"; the advisor pattern for the requi
     SICS under D25.3. A flag on it makes the row D (D25.1, D26.8); none leaves it C, nominal, with no weight. 107
     differs: its long-lived sit above the reference, so something is left to read. Row 62 (the same sample) is
     re-read the same way at its next touch.
+12. **D25.3's APOE calibration carries to Park's own-death scale**: a discovery's own APOE line, set against Park's
+    rs429358 line, gives the factor for an expectation on Park's scale, a stated test like any D25.3 test (D21's
+    power and heterogeneity). 118 RPLP0P2: Bae 2022's APOE ratio (0.84 against Park's 0.0129) gives power 0.78 and
+    heterogeneity P 0.003, short of D21's 0.8, so no flag; C, the curator's (a). Where such a test crosses 0.8 with
+    a heterogeneity under D21's cut, it is a red flag as any other. Rejected: (b), Park as a direction look only,
+    which leaves a powered own-death sample untested where its calibration is the same arithmetic as Timmers'.
