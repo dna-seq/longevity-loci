@@ -2924,3 +2924,21 @@ varies by ancestry far more than the case-control gap. For row 118.
 rs145265196 (row 118): G 0.0093 in 1000 Genomes' Iberians (2 copies of 214, q801), none in Tuscans; 0.0066 in
 gnomAD's Ashkenazi genomes (q798). No LD look is possible for a variant this rare in 1000 Genomes' 99 CEU samples (as
 row 107). For row 118.
+
+## Reading 2026-11-15, record
+
+> [q802] [0] start 116861300 strand 1 end 116861300 assembly_name GRCh38 input rs147730555 id rs147730555 most_severe_consequence missense_variant seq_region_name 11 allele_string A/G
+
+> [q803] [0].colocated_variants[0].frequencies.G gnomade_nfe 0.0001067 gnomade_sas 0 gnomadg_mid 0 gnomadg_afr 0 gnomadg_eas 0 gnomadg_asj 0.0008656 gnomadg_sas 0 gnomadg_ami 0 gnomade_amr 7.81e-05 gnomade_eas 0 gnomade_afr 0 gnomade_asj 0.0003148 gnomadg_nfe 0.0002502 gnomade_mid 0.0001756 gnomadg_remaining 0 gnomadg_amr 0.0001311 gnomadg 0.0001514 gnomade_remaining 0.0001512 gnomade_fin 3.755e-05 gnomade 9.775e-05 gnomadg_fin 9.463e-05
+
+> [q804] [0].transcript_consequences[0] gene_id ENSG00000160584 cds_start 2255 amino_acids M/T polyphen_score 0 sift_score 0 biotype protein_coding transcript_id ENST00000375300 cds_end 2255 protein_end 752 codons aTg/aCg sift_prediction deleterious_low_confidence cdna_start 2303 hgnc_id HGNC:29165 cdna_end 2303 variant_allele G gene_symbol_source HGNC protein_start 752 gene_symbol SIK3 strand -1 polyphen_prediction benign impact MODERATE
+
+> [q805] [0] strand 1 most_severe_consequence missense_variant input rs147730555 allele_string A/G seq_region_name 11 id rs147730555 assembly_name GRCh37 start 116732016 end 116732016
+
+> [q806] populations[64] allele_count 34 population 1000GENOMES:phase_3:CEU allele G frequency 0.171717171717172
+
+rs147730555 (row 120): missense in SIK3 at GRCh38 11:116,861,300 A/G (q802), methionine to threonine at residue 752
+of ENST00000375300 (SIFT deleterious, low confidence; PolyPhen benign, q804); GRCh37 11:116,732,016 (q805), where
+the GRCh37 deposits were searched. G 0.000107 in gnomAD exomes' and 0.00025 in genomes' non-Finnish Europeans,
+0.00031 and 0.00087 in the Ashkenazi, 0 in African, East and South Asian exomes (q803). Wright's rs524467 has G
+0.17 in CEU (q806). For row 120.

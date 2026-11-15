@@ -2124,3 +2124,9 @@ rs13963 in the GWAS Catalog: no association (q573); Tanisawa's exome-chip study 
 > [q574] page size 200 totalElements 0 totalPages 0 number 0
 
 rs145265196 in the GWAS Catalog: no association (q574). For row 118.
+
+## Reading 2026-11-15, record
+
+> [q575] page size 200 totalElements 0 totalPages 0 number 0
+
+rs147730555 in the GWAS Catalog: no association (q575). For row 120.

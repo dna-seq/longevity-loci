@@ -4284,3 +4284,9 @@ own splicing in fibroblasts, ZDHHC3 and EXOSC7 expression in blood cells and tis
 > [q1197] data variant null
 
 11_61633890_T_G and 11_61633890_G_T (rs145265196, row 118): no record either way (q1197). For row 118.
+
+## Reading 2026-11-15, record
+
+> [q1198] data variant null
+
+11_116861300_A_G and 11_116861300_G_A (rs147730555, row 120): no record either way (q1198). For row 120.

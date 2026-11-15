@@ -674,3 +674,8 @@ deaths, G fewer (one-sided 0.035 on G's side, derived). A database line: it repl
 
 FinnGen R11's death endpoint holds no line for rs145265196 (row 118; G absent in gnomAD's Finns): untested. For
 row 118.
+
+## Reading 2026-11-15, record
+
+FinnGen R11's death endpoint holds no line for rs147730555 (row 120; G 0.00004 in gnomAD's Finnish exomes):
+untested. For row 120.
