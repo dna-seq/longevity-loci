@@ -2950,3 +2950,23 @@ the GRCh37 deposits were searched. G 0.000107 in gnomAD exomes' and 0.00025 in g
 
 rs147730555 (row 120): on Ensembl's canonical and MANE Select SIK3 transcript, ENST00000445177, the change is M800T
 (q807); the 752 of q804 is ENST00000375300's numbering. For row 120.
+
+## Reading 2026-11-15, record
+
+> [q808] [0] assembly_name GRCh38 input rs149554120 most_severe_consequence synonymous_variant id rs149554120 strand 1 allele_string C/T seq_region_name 2 start 219055570 end 219055570
+
+> [q809] [0].colocated_variants[1].frequencies.T eas 0 gnomade_remaining 0.002885 gnomadg_nfe 0.002734 gnomade_eas 2.519e-05 gnomadg 0.001798 amr 0.0014 gnomade_asj 0.00134 gnomade 0.002523 af 0.0014 gnomadg_afr 0.0007214 afr 0 gnomade_afr 0.0007468 gnomade_nfe 0.002876 gnomade_mid 0.005561 gnomadg_asj 0.0008641 gnomadg_mid 0.006803 gnomadg_ami 0.003289 gnomade_fin 0.001957 gnomadg_remaining 0.004253 gnomadg_sas 0.0004144 gnomadg_eas 0.0001928 gnomadg_fin 0.0016 gnomadg_amr 0.001372 gnomade_amr 0.001723 gnomade_sas 0.000487 sas 0.001 eur 0.005
+
+> [q810] [0].transcript_consequences[0] transcript_id ENST00000295731 strand -1 hgnc_id HGNC:5956 gene_symbol IHH cds_end 873 codons cgG/cgA gene_id ENSG00000163501 amino_acids R protein_start 291 mane_select NM_002181.4 gene_symbol_source HGNC canonical 1 variant_allele T cds_start 873 protein_end 291 biotype protein_coding cdna_start 1327 cdna_end 1327 impact LOW
+
+> [q811] [0] end 219920292 allele_string C/T strand 1 assembly_name GRCh37 seq_region_name 2 most_severe_consequence synonymous_variant id rs149554120 start 219920292 input rs149554120
+
+> [q812] populations[76] allele_count 198 frequency 1 allele C population 1000GENOMES:phase_3:CEU
+
+> [q813] populations[105] frequency 0.014018691588785 population 1000GENOMES:phase_3:TSI allele T allele_count 3
+
+rs149554120 (row 121): synonymous in IHH at GRCh38 2:219,055,570 C/T (q808), arginine 291 unchanged (CGG to CGA) on
+the MANE Select transcript ENST00000295731 (NM_002181.4, q810); GRCh37 2:219,920,292 (q811), where the GRCh37
+deposits were searched. T 0.0029 in gnomAD exomes' and 0.0027 in genomes' non-Finnish Europeans, 0.0020 and 0.0016
+in the Finns, 0.0013 in the Ashkenazi exomes (q809); none in 1000 Genomes' 99 CEU samples (q812), so no LD look
+is possible; 3 copies in 214 Tuscan alleles (q813). For row 121.

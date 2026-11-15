@@ -1,0 +1,133 @@
+# The seed list's locus 121, IHH (2q35). Curated 2026-11-15. Lead rs149554120, the seed's only rsID (Kolbe 2025's
+# exome-wide rare variant): synonymous in IHH (arginine 291 unchanged on the MANE Select transcript), GRCh38
+# 2:219,055,570 C/T, GRCh37 2:219,920,292, T the rare allele (0.29 % in gnomAD's non-Finnish European exomes) and the
+# discovery's longer-lived side. Open Targets 26.09 holds the variant with no credible set; the GWAS Catalog
+# (2026-10-29) holds no association.
+locus_id: 121
+locus_name: IHH
+verdict: re-tiered
+verdict_reason: >-
+  Tier D, from the seed's C (D31.11, D26.7's "overfit source"): the discovery, read against the reference, shows
+  nothing, and nothing else at the lead passes. Kolbe 2025 sequenced the exomes of 1,245 German long-lived
+  individuals and 4,105 younger controls; T was at 0.32 % among the long-lived and 0.10 % among the controls, OR 3.3
+  (Haldane-corrected), P 2.4e-6, adjusted 0.036 under the paper's exploratory false-discovery rate of 0.05, its own
+  exome-wide call. On 2,490 and 8,210 alleles that is about 8 copies against 8 (the Haldane OR from 8 and 8 is 3.30,
+  derived). The controls misfit every matching reference: gnomAD's non-Finnish exomes (0.29 %) expect 23.6 copies in
+  them and they show about 8 (Poisson P 2e-4), the non-Finnish genomes, which hold no UK Biobank samples and so meet
+  the paper's "mostly British" caveat, expect 22.4 (P 4e-4); the long-lived sit at the reference (about 8 against 7.2
+  and 6.8, P 0.43 and 0.37, derived). The paper's own OR against gnomAD is 1.18, which it calls considerably lower than
+  its own. Only the Finns (0.20 % and 0.16 %, a bottlenecked population, P 0.02 and 0.09) or UK Biobank's imputed
+  0.15 % (Zenin's and Park's frequency, a dosage, not a sequenced reference) would put the controls near fit. So the
+  case-control OR is the controls' deficit and sets nothing (D31.10, D31.11), row 109's shape. With the paper's sex
+  ratios (2.7:1 women among the long-lived, 1:1.4 among the controls) the women carry about 1 copy in some 1,820
+  long-lived alleles and none in some 3,420 control alleles, the men about 7 in some 670 and 8 in some 4,790
+  (approximate, derived): the deficit sits in the women of both arms, named, no sex token (D30.15). The gene-based
+  synonymous IHH mask (P 5.74e-6) is this variant's signal, lost when it is removed: the same data, not counted. The
+  lead's other evidence: the paper's Ashkenazi look-up (515 aged 95 or more, 496 younger controls) has 4 T copies in
+  the long-lived and 2 in the controls, OR 1.93, P 0.30, its controls fitting gnomAD's Ashkenazi exomes (2 against
+  1.33), so it is read as printed (D31.10 licenses a reference only for misfit controls) and does not pass; read
+  against that reference instead the long-lived would give one-sided 0.052 (exomes) or 0.013 (genomes, 3 copies),
+  a reading the lead declined at row 120 (Q1, (a): a reference only for misfit controls, never chosen because it
+  helps), so the look-up does not pass. The Leiden look-up has 1 copy in 179 long-lived and
+  none in 98 controls, where gnomAD expects about 1.0 and 0.6: nothing. FinnGen R11's death endpoint has T with
+  slightly fewer deaths (−0.027, SE 0.087, P 0.76), a database line; Park 2025 has T with slightly more deaths
+  (+0.0151, SE 0.0102, P 0.14, its allele columns swapped); Zenin 2019's healthspan has T a little earlier (+0.032,
+  SE 0.075, P 0.67); the last two read T at UK Biobank's imputed 0.15 %, weakened tests. Deelen 2019, Timmers 2019,
+  Pilling 2017 and Foote 2025 hold no line (untested); Wright 2019's three Table 8 lines within 500 kb (mothers,
+  417 to 456 kb) cannot be paired, since 1000 Genomes' CEU holds no T copy and no LD look is possible. Timmers'
+  strongest line within 500 kb, rs12694456 (202 kb, P 0.0012), and Deelen's (99th 2:220,240,357, 320 kb, P 3.3e-5;
+  90th 2:220,400,267, 480 kb, P 4.0e-4) tag it at r² 0.086, 0.093 and 0.009 at most by frequency (derived): nothing
+  suggestive. The literature search (the rsID, and IHH with longevity terms; Semantic Scholar answered 429, its part
+  unchecked) finds Kolbe alone. Every genotype neutral (D25.2). Outcome cells: exceptional survival 0 (the discovery
+  sets nothing; the look-ups do not pass), lifespan 0 (Park and FinnGen flat), healthspan 0 (Zenin flat). Mechanism
+  ageing in general (D25.7): the authors cite a report that IHH downregulates mTOR signalling in bone-marrow stem
+  cells, a route not tested here; named. Causal C4: Open Targets holds the variant in no credible set. Effector E4:
+  the change is synonymous and alters no protein (D31.9). Descriptive. Age of action unknown. The evidence is
+  European.
+axes:
+  tier: {value: D, cites: [pmid-40232348#q18, pmid-40232348#q3, pmid-40232348#q2, pmid-40232348#q21, pmid-40232348#q22, pmid-40232348#q23, pmid-40232348#q24, pmid-40232348#q19, pmid-40232348#q15, pmid-40232348#q10, pmid-40232348#q20, db-ensembl-116#q809, db-finngen-r11#q91, pmid-40021682#q119, pmid-40021682#q32, pmid-30729179#q158, db-gwascatalog-2026.10.29#q576]}
+  mechanism: {value: general_ageing, cites: [pmid-40232348#q25]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
+            cites: [pmid-40232348#q18, pmid-40232348#q19, db-finngen-r11#q91, pmid-40021682#q119, pmid-30729179#q158]}
+  actionability: {label: descriptive, cites: [pmid-40232348#q18]}
+  context: {values: [eur_only_evidence], cites: [pmid-40232348#q3, pmid-40232348#q19]}
+flags:
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1199]}
+  - {token: "effector:E4", cites: [db-ensembl-116#q808, db-ensembl-116#q810]}
+variants:
+  - rsid: rs149554120
+    gene: ""
+    phenotype: IHH synonymous, longevity
+    trait_efo_id: OBA_VT0005372
+    effect_allele: T
+    effect_size: 3.3
+    effect_measure: OR
+    stat_significance: suggestive
+    direction: protective
+    genotypes:
+      - genotype: C/C
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position, as nearly everyone does. It is the
+          reference the other combinations are compared with. The position lies in the IHH gene on chromosome 2.
+      - genotype: C/T
+        state: neutral
+        conclusion: >-
+          You carry one copy of a rare version of this DNA position (about 6 in 1,000 people of European ancestry do).
+          It lies in the IHH gene and does not change the protein the gene makes. One German study found it more often
+          among very long-lived people than among its younger controls, but the long-lived carried it about as often as
+          the general population does; the difference came from the controls carrying it unusually rarely, so it is not
+          counted for or against lifespan.
+      - genotype: T/T
+        state: neutral
+        conclusion: >-
+          You carry two copies of a rare version of this DNA position, which is very unusual; the one study of it found
+          no one with two copies. It lies in the IHH gene and does not change the protein the gene makes. The study's
+          single-copy finding was not borne out against the general population, so it is not counted for or against
+          lifespan.
+studies:
+  - rsid: rs149554120
+    note: pmid-40232348
+    quote: q18
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: German long-lived individuals against geographically matched younger controls (whole-exome sequencing)
+    ancestry: [EUR]
+    n_cases: 1245
+    sample_size: 5350
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: suggestive
+    p_value: "2.4E-06"
+    p_value_num: 2.4e-06
+    effect_size: 3.3
+    effect_measure: OR
+    effect_unit: odds of being long-lived per T allele (Haldane-corrected)
+    effect_allele: T
+    direction: protective
+    statistical_test: "Kolbe 2025's STAAR-O single-variant test with sex and ten principal components (Table 1, q18, columns q3), MAC ≥ 5; cases past the 95th age-at-death percentile of their birth cohort (q7), an age threshold; FDR-adjusted 0.036 under an exploratory FDR < 0.05 (q2); T 0.32 % in the long-lived, 0.10 % in the controls, about 8 copies against 8; against gnomAD NFE the paper's own OR 1.18 (q21). The controls misfit gnomAD's non-Finnish exomes and genomes (about 8 against 23.6 and 22.4, P 2e-4 and 4e-4) and the long-lived sit at them (8 against 7.2), so this OR is named, not read, and sets nothing (D31.10, D31.11, derived); the gene-based IHH mask is this variant's signal (q22, q23)"
+    curator: claude-opus-5-5
+  - rsid: rs149554120
+    note: pmid-40232348
+    quote: q19
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: Ashkenazi Jewish (the Longevity Genes Project and LonGenity; 515 aged 95 or more against 496 younger controls, q15)
+    ancestry: [EUR]
+    n_cases: 515
+    sample_size: 1011
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: not_significant
+    p_value: "0.303"
+    p_value_num: 0.303
+    p_one_sided: 0.152
+    effect_size: 1.93
+    effect_measure: OR
+    effect_unit: odds of being long-lived per T allele
+    effect_allele: T
+    direction: protective
+    statistical_test: "Kolbe 2025's look-up (Table 5, q19; q5, q10): 4 T copies in the long-lived, 2 in the controls; one-sided 0.15, half the printed P (derived). The controls fit gnomAD's Ashkenazi exomes (2 against 1.33, db-ensembl-116#q809), so read as printed: no pass. Against that reference the long-lived would give one-sided 0.052 (exomes) or 0.013 (genomes), derived; the lead declined that reading at row 120 (Q1, (a)): no pass"
+    curator: claude-opus-5-5

@@ -679,3 +679,10 @@ row 118.
 
 FinnGen R11's death endpoint holds no line for rs147730555 (row 120; G 0.00004 in gnomAD's Finnish exomes):
 untested. For row 120.
+
+## Reading 2026-11-15, record
+
+> [q91] 2 219055570 C T rs149554120 IHH 0.757127 0.120831 -0.0270448 0.0874514 0.0019686 0.00177659 0.00199266
+
+FinnGen R11's death endpoint at rs149554120 (row 121): T −0.027 (SE 0.087), P 0.76, T 0.20 % (q91): T with slightly
+fewer deaths, flat; a database line. For row 121.
