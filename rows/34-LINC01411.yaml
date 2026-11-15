@@ -19,11 +19,18 @@ verdict_reason: >-
   offspring allele against half the discovery's effect (−0.118): AT +0.049 (SE 0.053), power 0.72, heterogeneity P
   0.0039 as printed, 0.23 with Table 3's labels swapped (derived): short of D21's power, no flag either way. Within the same 99th-percentile file the best proxy, rs11952522 (r² 0.75 in CEU, its minor
   T with the minor deletion, the opposite phase capping r² near 0.17), gives T +0.053 (SE 0.036), P 0.14, where the
-  indel's line, scaled to the proxy by r 0.87 (the row's own step), expects about +0.21 (heterogeneity P 0.003,
-  derived). Timmers 2019 has no line at the indel; at rs11952522 (D29.3) flat, T +0.0028 per self, P 0.53; carried by
+  indel's line, scaled to the proxy by r 0.87 (the row's own step), expects about +0.21: as a same-sample contrast,
+  z −6.2, P 7e-10 (derived), so in Deelen's own data the indel's line does not carry to its proxy. That file's
+  strongest lines nearby are rs904725 (18 kb, A −0.174, P 2.5e-5) and rs189592 (9 kb, T −0.237, P 3.4e-5): a
+  signal is there, on haplotypes the reference LD does not tie to the indel; Deelen's printed AT (0.16 in Table 2,
+  0.34 in Table 3) sits nearer the deletion's frequency in both tables, a lean toward reading (ii), and whether the
+  indel line itself is overfit is put to the lead; D either way. Timmers 2019 has no line at the indel; at rs11952522 (D29.3) flat, T +0.0028 per self, P 0.53; carried by
   D25.3's 99th calibrations and r, the discovery predicts ±0.034 (APOE's factor) or ±0.080 (the loci's mean): power
   1.00, heterogeneity P 6.5e-5 and 8.8e-7 under reading (i) (at half the effect 0.0098 and 2e-5), stronger under (ii):
-  a D21 red flag either way, `replication_failed`. What passes depends on the reading. Under (i) nothing does: FinnGen
+  a D21 red flag either way, `replication_failed`. The flag holds at the file's own carriers too, each against its
+  own Deelen effect with no LD step: Timmers at rs904725 (A +0.0019, SE 0.0047) expects −0.028 or −0.067,
+  heterogeneity P 2.4e-4 and 3.2e-5, and at rs189592 (T −0.0033, SE 0.0065) −0.038 or −0.091, P 0.0021 and 1.3e-4,
+  power 1.00 at all four (derived). What passes depends on the reading. Under (i) nothing does: FinnGen
   R11 at the proxy T with slightly fewer deaths (P 0.24), a database line; Park's own survival the deletion with
   slightly more deaths (P 0.24); Zenin 2019's healthspan at the proxy T, the deletion's side, with an earlier end (P
   0.016), against. Under (ii) Zenin's line is the discovery's way, one-sided 0.008, the participants' own healthspan in
@@ -47,7 +54,7 @@ axes:
   actionability: {label: descriptive, cites: [pmid-31413261#q268]}
   context: {values: [eur_only_evidence], cites: [pmid-31413261#q268, pmid-30642433#q381]}
 flags:
-  - {token: replication_failed, cites: [pmid-30642433#q381, db-ensembl-116#q762, pmid-31413261#q250, pmid-30642433#q90, pmid-30642433#q92, pmid-31413261#q273]}
+  - {token: replication_failed, cites: [pmid-30642433#q381, db-ensembl-116#q762, pmid-31413261#q250, pmid-30642433#q90, pmid-30642433#q92, pmid-31413261#q287, pmid-31413261#q288, pmid-30642433#q390, pmid-30642433#q391]}
   - {token: "causal:C4", cites: [db-opentargets-26.09#q1186]}
   - {token: "effector:E4", cites: [db-opentargets-26.09#q1186]}
 variants:
