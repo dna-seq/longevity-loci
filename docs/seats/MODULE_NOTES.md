@@ -211,3 +211,12 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
   diplotypes.csv, the probe's shape. The probe test_apoe_probe is deleted from the polygon. To do when row 96
   lands: project its pairs (the export has no diplotype path yet; ask the lead), and at that build say the app's
   display of the pairs is unchecked.
+- 2026-11-15, row 96 APOE rehearsed with its ε pairs (trunk 7040f7d, D33/D34): 113 loci, 342 variant rows, 554
+  studies, haplotypes.csv 6 (ε2, ε3, ε4 at rs429358, rs7412), diplotypes.csv 12 (six pairs, a lifespan and an
+  Alzheimer's result each). validate and compile strict green; both tables compile into parquet. The 19 studies on
+  rs429358/rs7412 (no variants.csv row) are kept in studies.parquet with no warning at all under compiler 0.8.6:
+  no study_variant_orphan, no refusal, no drop. Warnings: 18 carried indel VRS (rows 122's rs10610954 adds two),
+  module_not_closed, dataset_currency. content_signature 688ef9e7…, equal local and polygon; artifact c7a4e714…
+  (server). The app's display of the pairs and of the orphan studies is unchecked. Shared clone: an export reads
+  the working tree, so a seat's uncommitted row edit can ride along (here the curator's 7040f7d was in the tree
+  before it was committed; the build matches 7040f7d).
