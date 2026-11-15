@@ -26,6 +26,7 @@ from pydantic import ValidationError
 
 from longevity_loci.check import Note, load_corpus
 from longevity_loci.models import (
+    Category,
     Direction,
     Locus,
     PhenotypeClass,
@@ -149,11 +150,21 @@ def _flags(row: Row, out: Export) -> str:
     return ";".join(kept)
 
 
+def marker_trait(row: Row, v: Variant) -> str:
+    """The variant's trait: lifespan (OBA_VT0005372, the reference's rule), except on a row of the unscored
+    biological-ageing section (D32), whose variant carries its marker's own trait (telomere length, a clock) when the
+    row names one, so a marker locus is not tagged as a lifespan variant."""
+    if row.axes.mechanism.value is Category.AGEING_MARKERS and v.trait_efo_id:
+        return v.trait_efo_id
+    return VARIANT_TRAIT
+
+
 def _variant_rows(row: Row, v: Variant, flags: str, out: Export) -> list[dict[str, str]]:
     if not v.genotypes:
         out.gap(Gap.NO_GENOTYPES)
         return []
-    if v.trait_efo_id is not None and v.trait_efo_id != VARIANT_TRAIT:
+    trait = marker_trait(row, v)
+    if trait == VARIANT_TRAIT and v.trait_efo_id is not None and v.trait_efo_id != VARIANT_TRAIT:
         out.gap(Gap.VARIANT_TRAIT, v.trait_efo_id)
     if v.direction is Direction.RISK:
         out.gap(Gap.UNHARMONISED)
@@ -162,7 +173,7 @@ def _variant_rows(row: Row, v: Variant, flags: str, out: Export) -> list[dict[st
         out.gap(Gap.VARIANT_NOMINAL)
         sig = None
     shared = {
-        "rsid": v.rsid, "gene": v.gene or None, "trait_efo_id": VARIANT_TRAIT,
+        "rsid": v.rsid, "gene": v.gene or None, "trait_efo_id": trait,
         "negatives": v.negatives, "priority": PRIORITY[row.axes.tier.value], "phenotype": v.phenotype,
         "category": row.axes.mechanism.value, "stat_significance": sig, "effect_size": v.effect_size,
         "effect_measure": v.effect_measure, "effect_allele": v.effect_allele, "flags": flags,
@@ -194,7 +205,8 @@ def _locus(locus: Locus | None) -> dict[str, object]:
     return {"chrom": locus.chrom, "start": locus.start, "ref": locus.ref}
 
 
-def _study_row(s: Study, note: Note, out: Export, locus: Locus | None = None) -> dict[str, str]:
+def _study_row(s: Study, note: Note, out: Export, locus: Locus | None = None, marker: str | None = None) -> dict[str, str]:
+    """`marker`: the trait of a D32 marker variant, which a BIOMARKER study of that variant carries."""
     head = note.head
     tests: list[str] = []
     if s.study_design in PERCENTILE:  # 0.8 has no percentile cell: it leads statistical_test (the compiler's RM140)
@@ -227,7 +239,7 @@ def _study_row(s: Study, note: Note, out: Export, locus: Locus | None = None) ->
     if n_cases is not None and s.study_design in COX and (s.age_min is not None or s.age_max is not None):
         n_cases = None
         out.gap(Gap.COX_BAND_CASES)
-    trait = STUDY_TRAIT.get(s.phenotype_class)
+    trait = marker if marker and s.phenotype_class is PhenotypeClass.BIOMARKER else STUDY_TRAIT.get(s.phenotype_class)
     if trait is None:
         out.gap(Gap.TRAIT_UNMAPPED, s.phenotype_class.value)
     quote = None
@@ -312,11 +324,12 @@ def export(rows: Path, corpus: Path) -> Export:
                     exported_rsids.add(v.rsid)
     for row in loaded:
         loci = {v.rsid: v.locus for v in row.variants}
+        markers = {v.rsid: t for v in row.variants if (t := marker_trait(row, v)) != VARIANT_TRAIT}
         for s in row.studies:
             note = notes.get(s.note)
             if note is None or (s.quote is not None and s.quote not in note.quotes):
                 raise ExportError(f"locus {row.locus_id} study {s.rsid}: {s.cite or s.note} is not in the corpus (run `loci check rows`)")
-            values = _study_row(s, note, out, loci.get(s.rsid))
+            values = _study_row(s, note, out, loci.get(s.rsid), markers.get(s.rsid))
             if _parsed(StudyRow, values, f"{s.rsid} {s.note}", out) is None:
                 continue
             if s.rsid not in exported_rsids:

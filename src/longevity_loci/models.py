@@ -312,7 +312,7 @@ class Variant(Strict):
     rsid: str = Field(pattern=r"^rs\d+$")
     gene: str  # the effector call, not the nearest gene
     phenotype: str | None = None  # plain outcome label, at most six words
-    trait_efo_id: str | None = None  # the lifespan trait; a mediator goes in flags as mediator:EFO_… or mediator:MONDO_…
+    trait_efo_id: str | None = None  # the lifespan trait, or on an ageing_markers row (D32) the marker's own; a mediator goes in flags as mediator:EFO_… or mediator:MONDO_…
     effect_allele: str | None = None
     effect_size: float | None = None
     effect_measure: EffectMeasure | None = None

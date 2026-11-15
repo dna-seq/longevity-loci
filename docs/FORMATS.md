@@ -142,14 +142,16 @@ variant).
   reads it (per row: a row's direction stands in for its state), so the variant's own direction, which is the
   effect allele's, is carried by `effect_allele` and never lands on a risk or neutral genotype's row (a contested or
   unknown variant keeps its own on every row); the variant's other cells, `trait_efo_id` OBA_VT0005372 on every variant (the
-  reference example's rule; the row's own trait is reported), `priority` high for tier A, medium for B, low for C
+  reference example's rule; the row's own trait is reported), except on an `ageing_markers` row (D32), whose variant
+  carries its own `trait_efo_id` (the marker's, such as telomere length) where it names one, `priority` high for tier A, medium for B, low for C
   and D, `category` the mechanism axis, `actionability` its label, `requires_callable` and `acmg_sf` false.
   `flags` is `tier:X`, then the pleiotropy, context and actionability tokens, then the row's flags, `;`-joined.
   A tier D row is exported like any other: its states are neutral and its flag `tier:D`.
 - **studies.csv**, one row per (lead rsid, study): `pmid` from the note, or `NONE` with the note's `doi` for a
   preprint; `proxy_rsid` and the proxy's own `effect_allele` as the study holds them; `trait_efo_id` from the
   phenotype class as the reference example writes it (HEALTHSPAN EFO_0009762, PARENTAL_LIFESPAN EFO_0007796,
-  EXTREME_SURVIVAL_CC and OWN_SURVIVAL OBA_VT0005372; another class is left empty and reported);
+  EXTREME_SURVIVAL_CC and OWN_SURVIVAL OBA_VT0005372; a BIOMARKER study of an `ageing_markers` variant its marker's
+  trait; another class is left empty and reported);
   `provenance_quote` the quote's verbatim text from `corpus/<key>.md`. A percentile design (p90, p99) opens
   `statistical_test` with its percentile, since 0.8 has no cell for it and only `statistical_test` tells the two
   apart. A Cox model's age-band row leaves `n_cases` empty: its deaths are events, not cases. An effect the curator

@@ -29,6 +29,7 @@ from longevity_loci.export import (
     cell,
     export,
     load_rows,
+    marker_trait,
     render,
     write,
 )
@@ -98,7 +99,7 @@ def test_variant_cells(tree) -> None:
         # 0.8 reads direction per genotype row: it agrees with the state, unless the variant is contested or unknown
         held = v.direction.value if v.direction in (Direction.CONTESTED, Direction.UNKNOWN) else g.state.value
         assert x["direction"] == held
-        assert x["trait_efo_id"] == VARIANT_TRAIT
+        assert x["trait_efo_id"] == marker_trait(row, v)
         assert x["priority"] == PRIORITY[row.axes.tier.value]
         assert x["category"] == row.axes.mechanism.value.value
         flags = x["flags"].split(";")
@@ -257,3 +258,33 @@ def test_authored_locus_reaches_the_study(tmp_path: Path) -> None:
     assert (x["rsid"], x["chrom"], x["start"], x["ref"]) == (study["rsid"], "19", "44908684", "T")
     (plain,) = export(rows, corpus).studies
     assert (plain["chrom"], plain["start"], plain["ref"]) == ("", "", "")
+
+
+def test_a_marker_row_carries_its_marker_trait(tmp_path: Path) -> None:
+    """D32: a curated row (the first with genotypes and a study) made an ageing_markers row, telomere length
+    (EFO_0004505) on its first studied variant, writes that trait on the variant's rows and on its studies set to
+    BIOMARKER; its other variants and studies keep lifespan's traits, and the row unchanged keeps OBA_VT0005372."""
+    telomere = "EFO_0004505"
+    rows, corpus = TREES["rows"]
+    source = next(p for p in sorted(rows.glob("*.yaml"))
+                  if (d := yaml.safe_load(p.read_text(encoding="utf-8")))["studies"]
+                  and any(v.get("genotypes") and v["rsid"] == d["studies"][0]["rsid"] for v in d["variants"]))
+    (tmp_path / "rows").mkdir()
+    data = yaml.safe_load(source.read_text(encoding="utf-8"))
+    rsid = data["studies"][0]["rsid"]
+    data["axes"]["mechanism"]["value"] = "ageing_markers"
+    next(v for v in data["variants"] if v["rsid"] == rsid)["trait_efo_id"] = telomere
+    for s in data["studies"]:
+        if s["rsid"] == rsid:
+            s["phenotype_class"] = "BIOMARKER"
+    (tmp_path / "rows" / source.name).write_text(yaml.safe_dump(data, sort_keys=False, allow_unicode=True), encoding="utf-8")
+    result = export(tmp_path / "rows", corpus)
+    marked = [x for x in result.variants if x["rsid"] == rsid]
+    assert marked and {x["trait_efo_id"] for x in marked} == {telomere}
+    assert {x["trait_efo_id"] for x in result.variants if x["rsid"] != rsid} <= {VARIANT_TRAIT}
+    assert {x["trait_efo_id"] for x in result.studies if x["rsid"] == rsid} == {telomere}
+    assert telomere not in {x["trait_efo_id"] for x in result.studies if x["rsid"] != rsid}
+    assert gap_total(result, Gap.VARIANT_TRAIT) == 0
+    (tmp_path / "plain").mkdir()
+    shutil.copy(source, tmp_path / "plain" / source.name)
+    assert {x["trait_efo_id"] for x in export(tmp_path / "plain", corpus).variants} == {VARIANT_TRAIT}
