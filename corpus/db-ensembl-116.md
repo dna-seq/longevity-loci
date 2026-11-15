@@ -2790,3 +2790,12 @@ server, is where the GRCh37 deposits were searched. For row 107.
 
 rs113181552 (row 109): an intron variant at GRCh38 20:1,051,463 G/T (q765); T 0.043 in gnomAD's non-Finnish genomes
 (q766). For row 109.
+
+## Reading 2026-11-15, record
+
+> [q767] [0] seq_region_name 2 end 53153619 start 53153619 input rs116362179 assembly_name GRCh38 allele_string C/T id rs116362179 most_severe_consequence intergenic_variant strand 1
+
+> [q768] [0].colocated_variants[0].frequencies.T eas 0 gnomadg 0.02824 gnomadg_nfe 0.04062 amr 0.0202 af 0.0234 gnomadg_afr 0.007415 afr 0.0038 gnomadg_asj 0.04036 gnomadg_mid 0.07483 gnomadg_ami 0.03838 gnomadg_fin 0.03848 gnomadg_sas 0.04425 gnomadg_amr 0.02248 gnomadg_remaining 0.03113 gnomadg_eas 0.0001959 sas 0.0501 eur 0.0487
+
+rs116362179 (row 110): intergenic at GRCh38 2:53,153,619 C/T (q767); T 0.041 in gnomAD's non-Finnish genomes (q768).
+Ensembl lists no CEU variant at r² 0.5 with it. For row 110.

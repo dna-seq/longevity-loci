@@ -4242,3 +4242,9 @@ read back the same line). For row 34.
 > [q1188] data variant null
 
 20_1051463_G_T and 20_1051463_T_G (rs113181552, row 109): no record either way (q1188). For row 109.
+
+## Reading 2026-11-15, record
+
+> [q1189] data variant null
+
+2_53153619_C_T and 2_53153619_T_C (rs116362179, row 110): no record either way (q1189). For row 110.

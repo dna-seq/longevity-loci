@@ -1,0 +1,108 @@
+# The seed list's locus 110, unnamed (2p21). Curated 2026-11-15. Lead rs116362179, the seed's only rsID (Deelen 2019's
+# European 90th-percentile locus): intergenic, GRCh38 2:53,153,619 C/T, GRCh37 2:53,380,757, T 0.041 in gnomAD's
+# non-Finnish Europeans and the discovery's longer-lived allele. Open Targets 26.09 has no record of the variant under
+# either allele order; the GWAS Catalog (2026-10-29) holds no association.
+locus_id: 110
+locus_name: ""
+verdict: re-tiered
+verdict_reason: >-
+  Tier D, from the seed's C: a suggestive discovery that fails powered tests (D30.11, a fortiori of D25.1), row 1's
+  shape. Deelen 2019's European meta-analysis of survival to the 90th percentile against all controls gives T (0.05)
+  OR 1.34 (1.20 to 1.50), P 4.9e-7, I² 0 (Table 2); its deposit T +0.292 (SE 0.058), the 99th +0.290 (SE 0.095), P
+  0.0021, the same cohorts' oldest; T's 0.05 agrees with gnomAD's 0.041. Deelen's own UK Biobank validations at the 90th
+  are flat: parental longevity OR 1.01 (0.94 to 1.08), P 0.78; parental lifespan OR 1.00 (0.98 to 1.02), P 0.70; on the
+  discovery's odds scale both powered (1.00) and in disagreement (heterogeneity P 3.3e-5 and 7.1e-7, derived), inside
+  the parents Timmers pools. Timmers 2019's million parents' lives are flat and lean the other way: T −0.0039 per self
+  (SE 0.0101), P 0.70, "--". Carried there by D25.3's two calibrations the discovery predicts T +0.060 (APOE's factor)
+  or +0.145 (the loci's mean): power 1.00 under both, heterogeneity P 4e-5 and 1.1e-6 (at half the effect 0.0036 and
+  1.4e-5), a D21 red flag under both. Nothing independent passes: FinnGen R11's death endpoint has T with fewer deaths,
+  flat (P 0.20), a database line; Park 2025's own survival has T with more deaths (P 0.0075), against, UK Biobank;
+  Pilling 2017 flat in every column (P 0.54 to 0.99); Zenin 2019's healthspan flat (P 0.31); Foote 2025 holds no line.
+  Wright 2019's AncestryDNA lines near it, Table 8's rs785311 (351 kb, no CEU pair) and Table 9's rs10202079 (133 kb,
+  inside the lead's window, where Ensembl lists no CEU variant at r² 0.5), tag nothing: untested. Timmers' strongest
+  line within 500 kb is a rare variant at P 2.4e-4: nothing suggestive. The literature search (the rsID; Semantic
+  Scholar answered 429, its part unchecked) finds Deelen and a German polygenic-score study, read only in its abstract,
+  which reports scores, not single variants. Every genotype neutral (D25.2); outcome cells 0 (D28.10). Mechanism
+  ageing in general (D25.7): intergenic, nothing recorded at the variant. Causal C4 and effector E4: no Open Targets
+  record either way. Descriptive. Age of action unknown. The discovery and every test of it are European.
+axes:
+  tier: {value: D, cites: [pmid-31413261#q276, pmid-31413261#q277, pmid-31413261#q278, pmid-31413261#q279, pmid-31413261#q280, pmid-30642433#q383, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, pmid-29227965#q145, pmid-29227965#q146, pmid-29227965#q147, pmid-29227965#q148, db-finngen-r11#q87, pmid-40021682#q114, pmid-40021682#q32, db-ensembl-116#q768, db-gwascatalog-2026.10.29#q570]}
+  mechanism: {value: general_ageing, cites: [pmid-31413261#q276, db-ensembl-116#q767]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
+            cites: [pmid-30642433#q383, pmid-29227965#q145, pmid-30729179#q154, pmid-31413261#q280]}
+  actionability: {label: descriptive, cites: [pmid-31413261#q276]}
+  context: {values: [eur_only_evidence], cites: [pmid-31413261#q276, pmid-30642433#q383]}
+flags:
+  - {token: replication_failed, cites: [pmid-30642433#q383, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, pmid-31413261#q277, pmid-31413261#q278]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1189]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q1189]}
+variants:
+  - rsid: rs116362179
+    gene: ""
+    phenotype: 2p21 intergenic, longevity
+    trait_efo_id: OBA_VT0005372
+    effect_allele: T
+    effect_size: 1.34
+    effect_measure: OR
+    stat_significance: suggestive
+    direction: protective
+    genotypes:
+      - genotype: C/C
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position, as about 92 in 100 people of European
+          ancestry do. It is the reference the other combinations are compared with. The position lies between genes on
+          chromosome 2. One study of long-lived people linked the other version to reaching old age, but its own checks
+          and a much larger study of a million parents' lives did not confirm it, so it is not counted for or against
+          lifespan.
+      - genotype: C/T
+        state: neutral
+        conclusion: >-
+          You carry one copy of a less common version of this DNA position (about 8 in 100 people of European ancestry
+          do). One study of long-lived people found it more often among them, but its own checks and a much larger study
+          of a million parents' lives did not confirm it, so it is not counted for or against lifespan.
+      - genotype: T/T
+        state: neutral
+        conclusion: >-
+          You carry two copies of a less common version of this DNA position (about 2 in 1,000 people of European
+          ancestry do). One study of long-lived people found the version more often among them, but larger studies did
+          not confirm it, so it is not counted for or against lifespan.
+studies:
+  - rsid: rs116362179
+    note: pmid-31413261
+    quote: q276
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis; no UK Biobank data)
+    ancestry: [EUR]
+    stat_significance: suggestive
+    p_value: "4.9E-07"
+    p_value_num: 4.9e-07
+    effect_size: 1.34
+    effect_measure: OR
+    effect_unit: odds of survival to the 90th percentile per T allele
+    effect_allele: T
+    direction: protective
+    statistical_test: "Table 2, European 90th percentile against all controls (q276), OR 1.34 (1.20-1.50), I² 0; deposit T +0.2920 (SE 0.0580), effective N 10,867 (q279); 99th +0.2899, P 0.0021 (q280); UK Biobank parental longevity OR 1.01, P 0.78 (q277) and parental lifespan OR 1.00, P 0.70 (q278), on the discovery's scale heterogeneity P 3.3e-5 and 7.1e-7 (derived)"
+    curator: claude-opus-5-5
+  - rsid: rs116362179
+    note: pmid-30642433
+    quote: q383
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 635243
+    sample_unit: lives
+    stat_significance: not_significant
+    p_value: "0.69652548"
+    p_value_num: 0.69652548
+    effect_size: -0.00392722
+    effect_measure: beta
+    effect_unit: log hazard protection per T allele in self (positive = longer life)
+    effect_allele: T
+    direction: risk
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0101, direction --, info 0.94; against Deelen's 90th T +0.292 by D25.3 (APOE 4.84, pmid-31413261#q82 over q90; mean ×0.4175, q92): expected +0.060 and +0.145, power 1.00, heterogeneity P 4e-5 and 1.1e-6, a D21 red flag under both; at half the effect 0.0036 and 1.4e-5 (derived)"
+    curator: claude-opus-5-5
