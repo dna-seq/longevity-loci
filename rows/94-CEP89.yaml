@@ -34,7 +34,8 @@ verdict_reason: >-
   lifespan-class set holds the lead. Every genotype neutral (D25.2); G/G, about 77 in 100 Europeans, the reference.
   Age of action unknown. The evidence is European: the European deposit alone carries the signal (P 1.7e-7,
   stronger than the trans-ethnic 4.3e-7, although C is commoner in East Asians, 0.28, so CLHLS's added cases
-  weakened rather than built it), and every other test is European.
+  weakened rather than built it), and every other test is European; no `eur_only_evidence` beside a discovery
+  with non-European samples (D31.7).
 axes:
   tier: {value: D, cites: [pmid-31413261#q231, pmid-31413261#q111, pmid-31413261#q112, pmid-31413261#q113, pmid-31413261#q114, pmid-31413261#q232, pmid-31413261#q233, pmid-30642433#q348, pmid-30642433#q92, pmid-31413261#q82, pmid-30642433#q90, pmid-29227965#q82, pmid-29227965#q45, pmid-40021682#q97, pmid-40021682#q32, pmid-30729179#q129, pmid-31484785#q141, db-ensembl-116#q692, db-finngen-r11#q69, db-ensembl-116#q693, db-gwascatalog-2026.10.29#q517]}
   mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q1072, db-opentargets-26.09#q1073, db-opentargets-26.09#q1074, db-ensembl-116#q691, db-ensembl-116#q694]}
@@ -43,7 +44,7 @@ axes:
   outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
             cites: [pmid-30729179#q129, pmid-29227965#q82, pmid-29227965#q45, pmid-30642433#q348, pmid-31413261#q231, pmid-31413261#q232]}
   actionability: {label: descriptive, cites: [pmid-31413261#q231]}
-  context: {values: [eur_only_evidence], cites: [pmid-31413261#q232, pmid-31413261#q231, pmid-31413261#q112, db-ensembl-116#q690]}
+  context: {values: [], cites: []}
 flags:
   - {token: replication_failed, cites: [pmid-30642433#q348, pmid-30642433#q92, pmid-31413261#q82, pmid-30642433#q90, pmid-31413261#q232]}
   - {token: "causal:C4", cites: [db-opentargets-26.09#q1072]}
