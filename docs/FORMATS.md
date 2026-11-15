@@ -41,7 +41,10 @@ a v1 locus with no seed entry takes the next free id above the seed's. Fields:
   defined at the same positions, each a variant of the row, no two alike; each diplotype a `gene`, a `pair` written
   in order (`[ε3, ε4]`), its `state`, `conclusion`, optional `negatives`, `phenotype` and `trait_efo_id` (lifespan's
   when empty; a second result of one pair for another trait, such as Alzheimer's MONDO_0004975, has its own). The
-  pair's variants carry no genotypes: the pair is the score, written once, and their studies stay on them. The
+  pair's variants carry no genotypes (`loci check rows` raises no `incomplete` there): the pair is the score,
+  written once, and their studies stay on them. 0.8 cannot link a study to a pair, and with no genotypes the two
+  SNPs have no `variants.csv` row, so the export lists their studies as having none (0.8's audit says
+  `study_variant_orphan`): a limit D33 names, not a defect. The
   export writes them to 0.8's `haplotypes.csv` and `diplotypes.csv` (`category` the row's mechanism); a diplotype row
   links to no study, so its grounding is its `conclusion`'s text.
 - `studies`: one per (rsid, study), §6.3's columns: `note` and `quote` (the provenance quote, by id; or no

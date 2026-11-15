@@ -666,3 +666,18 @@ def test_nominal_band_reads_a_derived_one_sided_p(tree: Path) -> None:
     assert not rules(one_sided)
     assert any("not half" in d for d in rules(one_sided.replace("p_one_sided: 0.035", "p_one_sided: 0.02")))
     assert any("no p_value_num" in d for d in rules(one_sided.replace("    p_value_num: 0.071\n", "")))
+
+
+def test_a_pair_position_without_genotypes_is_not_incomplete(tree: Path) -> None:
+    """A position that defines the row's ε versions is scored by the pairs (D33) and carries no genotypes: no warning
+    there, while the same row without the definitions still warns."""
+    def incomplete() -> set[str]:
+        return {f.where for f in check_rows(tree / "rows", tree / "corpus") if f.kind is Kind.INCOMPLETE}
+
+    data = yaml.safe_load(_row(tree).read_text(encoding="utf-8"))
+    bare = {v["rsid"] for v in data["variants"] if not v.get("genotypes")}
+    assert bare and bare <= incomplete()
+    data["haplotypes"] = [{"name": n, "gene": "APOE", "alleles": [{"rsid": r, "allele": a} for r, a in d.items()]}
+                          for n, d in {"ε3": {"rs429358": "T"}, "ε4": {"rs429358": "C"}}.items()]
+    _row(tree).write_text(yaml.safe_dump(data, sort_keys=False, allow_unicode=True), encoding="utf-8")
+    assert incomplete() == bare - {"rs429358"}

@@ -227,9 +227,12 @@ def check_rules(row: Row, path: Path) -> list[Finding]:
                 missing = [c for c in REQUIRED_AB if getattr(s, c) is None]
             if missing:
                 rule(f"studies[{i}] {s.rsid}", f"§6.3 requires on a study supporting tier {tier.value}: {', '.join(missing)}")
+        paired = {a.rsid for h in row.haplotypes for a in h.alleles}  # scored by the row's pairs (D33), no genotypes
         for v in row.variants:
             states = [g.state for g in v.genotypes]
             neutral = states.count(State.NEUTRAL)
+            if not states and v.rsid in paired:
+                continue
             if len(states) < 3:
                 out.append(Finding(Kind.INCOMPLETE, path, v.rsid, f"{len(states)} of three genotypes"))
             elif v.direction is Direction.CONTESTED and neutral != len(states):
