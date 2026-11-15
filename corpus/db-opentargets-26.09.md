@@ -4385,3 +4385,15 @@ For row 96.
 12_106083386_C_G (rs2730486, row 131): one credible set, a GTEx v10 muscle eQTL for NUAK1 (q1223, q1224), the
 variant at PIP 0.019, beta −0.154 for G, P 1.0e-5 (q1225); no lifespan-class set (causal C4, effector E4; NUAK1
 named in prose). The reverse order has no record (q1226). For row 131.
+
+## Reading 2026-11-15, record
+
+> [q1227] data.variant.credibleSets count 3
+
+> [q1228] data.variant.credibleSets.rows[0].study id gtex-v10_majiq_spleen_ensg00000182796_s_55833447-55833588_55833541-55834851 traitFromSource ENSG00000182796:s:55833447-55833588:55833541-55834851 studyType sqtl
+
+> [q1229] data.variant.credibleSets.rows[0].locus.rows[0] posteriorProbability 0.39496398823241 beta 0.68103 pValueMantissa 3.371000051498413 pValueExponent -10
+
+12_55723786_C_T (rs3138136, row 136): three credible sets, all GTEx v10 splicing QTLs of TMEM198B (spleen, minor
+salivary gland, thyroid; q1227, q1228), the variant at PIP 0.39 in the spleen set, beta +0.68 for T, P 3.4e-10
+(q1229), 0.42 and 0.12 in the others; no lifespan-class set (C4, E4). For row 136.

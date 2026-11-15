@@ -2167,3 +2167,10 @@ rs199678370 (row 126): no association in the Catalog (q580). For row 126.
 > [q581] page size 200 totalElements 0 totalPages 0 number 0
 
 rs2730486 (row 131): no association in the Catalog (q581). For row 131.
+
+## Reading 2026-11-15, record
+
+> [q582] page size 200 totalElements 0 totalPages 0 number 0
+
+rs3138136 (row 136): no association in the Catalog (q582); Deelen's record is filed under its trans-ethnic lead loci
+elsewhere. For row 136.

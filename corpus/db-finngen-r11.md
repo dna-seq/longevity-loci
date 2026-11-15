@@ -723,3 +723,10 @@ APOE-only calibration sets no flag (D31.12). For row 124.
 
 FinnGen R11's DEATH endpoint at rs2730486 (row 131): G (0.213) β −0.0039 (SE 0.0091), P 0.67: flat. A database line
 (D29.1). For row 131.
+
+## Reading 2026-11-15, record
+
+> [q99] 12 55723786 C T rs3138136 RDH5,RP11-644F5.10 0.721828 0.141566 0.00580417 0.0163031 0.0561703 0.0567785 0.0560941
+
+FinnGen R11's DEATH endpoint at rs3138136 (row 136): T (0.056) β +0.0058 (SE 0.0163), P 0.72, flat. A database line
+(D29.1). For row 136.

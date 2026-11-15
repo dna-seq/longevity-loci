@@ -3218,3 +3218,20 @@ Row 131, rs2730486: intronic in NUAK1 (MANE ENST00000261402), GRCh38 12:106,083,
 1000 Genomes CHS 0.429 (q879) and EAS 0.4375 (q880). Hsieh's solved controls (G 0.488) misfit gnomAD EAS (z 4.2, P
 2.4e-5 with its error) and 1000 Genomes EAS (P 0.0095), and fit CHS (P 0.098); the long-lived (0.387) read against
 gnomAD EAS give C +0.182 per allele (SE 0.055), P 0.001; against CHS +0.174, P 0.24 (derived). For row 131.
+
+## Reading 2026-11-15, record
+
+> [q881] [0].transcript_consequences[1] biotype protein_coding mane_select NM_002905.5 gene_symbol_source HGNC impact MODIFIER gene_symbol RDH5 transcript_id ENST00000257895 canonical 1 strand 1 hgnc_id HGNC:9940 gene_id ENSG00000135437 variant_allele T
+
+> [q882] mappings[0] seq_region_name 12 end 55723786 ancestral_allele C assembly_name GRCh38 strand 1 start 55723786 location 12:55723786-55723786 allele_string C/T coord_system chromosome
+
+> [q883] populations[27] population gnomADg:nfe frequency 0.1019 allele T allele_count 6934
+
+> [q884] populations[33] frequency 0.0007719 population gnomADg:eas allele_count 4 allele T
+
+> [q885] . object_type Gene version 17 logic_name ensembl_havana_gene_homo_sapiens db_type core strand 1 end 55834988 id ENSG00000182796 description transmembrane protein 198B (pseudogene) [Source:HGNC Symbol;Acc:HGNC:43629] start 55832159 canonical_transcript ENST00000484016.2 biotype transcribed_unitary_pseudogene source ensembl_havana assembly_name GRCh38 display_name TMEM198B species homo_sapiens seq_region_name 12
+
+Row 136, rs3138136: in RDH5's 3′ UTR on its MANE transcript (ENST00000257895, NM_002905.5; q881), GRCh38 12:55,723,786
+C/T (q882), GRCh37 12:56,117,570. T at 0.102 in gnomAD's non-Finnish European genomes (q883) and 0.0008 in East
+Asians (q884), so no East Asian sample can test it (Hsieh's tables leave it blank). ENSG00000182796 is TMEM198B, a
+transcribed pseudogene (q885). For row 136.
