@@ -911,3 +911,17 @@ standing word (pacing off, "full steam ahead"; the advisor pattern for the requi
      `not_significant`). 118: `centenarian_case_control` (Bae's controls are spouses, offspring and the young, not a
      birth cohort). 120: clonal haematopoiesis is no flag (SIK3 is selected in blood for truncating changes; this is
      one inherited-looking missense base); the sentence narrows and quotes Bernstein.
+
+## D32 — the biological-ageing markers: an unscored section of this module (the person's D4, 2026-11-15)
+
+The person answered desk #312 with option 1, in their words: "Current pipline is vcf-based, Telomere length (counts)
+are availiable thoug separate counts and are not really a reliable measurement for germline WGS. Scoring of these
+depend on auxilary input like calendar age to compare against, so no fixed score can be assigned. The variants still
+have a place in the module, place them". So the 18 seed loci of the biological-ageing markers (the seed's
+`biological_ageing_rate` subpanel, with 23 TERC and 30 TERT: telomere length, epigenetic clocks, mtDNA copy number,
+loss of Y) are curated as rows of the requirements' "Markers of biological ageing (not scored)" section: unscored,
+folded by default, worded as a tendency of a measurable marker, with no good or bad colour. No fixed score is
+assigned, because a marker's reading depends on input the module does not have (calendar age), and a telomere count
+from germline WGS is not a reliable measurement. The curator writes them after the scored loci, in the queue's
+order; how the section is carried in just-dna-format 0.8 is the module seat's to settle at export. Rejected:
+option 2, a separate module later, which the person declined.

@@ -114,11 +114,10 @@ def hours(h: float) -> str:
 
 
 # Seed loci waiting on the person, so not in the curator's unblocked queue (rows/PROGRESS.md says why): APOE on D2
-# (desk #307); the biological-ageing markers on D4 (desk #312), the seed's `biological_ageing_rate` subpanel plus
-# TERT (30) and TERC (23), which PROGRESS's D4 line names. 151 EYS waits on its only source's text (a preprint whose
-# text refuses), readable or supplied by the person (2026-11-15).
-BLOCKED_BY_ID = {96: "D2", 23: "D4", 30: "D4", 151: "text"}
-BLOCKED_SUBPANEL = {"biological_ageing_rate": "D4"}
+# (desk #307). 151 EYS waits on its only source's text (a preprint whose text refuses), readable or supplied by the
+# person (2026-11-15). The biological-ageing markers were held on D4 until the person answered it (DECISIONS D32).
+BLOCKED_BY_ID = {96: "D2", 151: "text"}
+BLOCKED_SUBPANEL: dict[str, str] = {}
 
 
 def blocked() -> dict[int, str]:
