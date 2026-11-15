@@ -28,7 +28,8 @@ verdict_reason: >-
   general (D25.7); at the lead's own lines in Open Targets' sets C raises eGFR and lowers creatinine, ischaemic stroke
   and CRP, at small posteriors (0.013 to 0.038), the lead's own P not printed: `mech:kidney` and `mech:cvd`, no protection token.
   Causal C4 and effector E4, no gene named: no lifespan-class set holds it; PMF1 is named in prose. Descriptive. Age
-  of action unknown. The discovery is trans-ethnic, its European part and every test of it European.
+  of action unknown. The discovery is trans-ethnic, its European part and every test of it European; no `eur_only_evidence`
+  beside a discovery with non-European samples (D31.7).
 axes:
   tier: {value: C, cites: [pmid-31413261#q259, pmid-31413261#q260, pmid-31413261#q261, pmid-31413261#q262, pmid-30642433#q379, pmid-31413261#q250, pmid-30642433#q90, pmid-30642433#q92, pmid-29227965#q133, pmid-29227965#q134, pmid-29227965#q135, pmid-29227965#q136, db-finngen-r11#q83, pmid-40021682#q110, pmid-31484785#q161, db-ensembl-116#q754, db-opentargets-26.09#q1180]}
   mechanism: {value: general_ageing, cites: [pmid-31413261#q259, db-opentargets-26.09#q1175, db-opentargets-26.09#q1179]}
@@ -37,7 +38,7 @@ axes:
   outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "+",
             cites: [pmid-31413261#q259, pmid-31413261#q260, pmid-30642433#q379, pmid-30729179#q150]}
   actionability: {label: descriptive, cites: [pmid-31413261#q259]}
-  context: {values: [eur_only_evidence], cites: [pmid-31413261#q262, pmid-30642433#q379]}
+  context: {values: [], cites: []}
 flags:
   - {token: "causal:C4", cites: [db-opentargets-26.09#q1180]}
   - {token: "effector:E4", cites: [db-opentargets-26.09#q1180]}
