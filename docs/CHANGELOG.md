@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- D31.13, batch twelve's read: a frequency reference fixed before the result; 116 C on either reading (R-TIER-4, R-TIER-2); D31.12 amended, an APOE-only calibration flags nothing; opposed Foote factors give healthspan 0; a null discovery APOE line voids borrowed factors (Hsieh rows rest on same-scale tests).
 - D31.12: D25.3's APOE calibration carries to Park's own-death scale (118 C).
 - D31.11: a discovery that shows nothing against the reference is an overfit source; the row is tiered on the lead's other lines (109: Deelen's 90th tested under D25.3, C or D; 62 at its next touch).
 - D31.10: a discovery whose controls misfit the reference is read against the reference (107 stays C; E4).

@@ -877,3 +877,37 @@ standing word (pacing off, "full steam ahead"; the advisor pattern for the requi
     heterogeneity P 0.003, short of D21's 0.8, so no flag; C, the curator's (a). Where such a test crosses 0.8 with
     a heterogeneity under D21's cut, it is a red flag as any other. Rejected: (b), Park as a direction look only,
     which leaves a powered own-death sample untested where its calibration is the same arithmetic as Timmers'.
+13. **Batch twelve's read, rows 22, 34, 107, 109, 110, 113, 116, 118, 119, 120: no tier moves; six rules.**
+   - **A frequency reference is fixed before the result is seen** (D30.10 made general, after 107, 109, 116 and 120
+     each had several candidates): the gnomAD population that matches the sample, on the matching assay (exomes for
+     an exome study), or, where gnomAD has no matching group, the nearest 1000 Genomes panel, named before reading.
+     Misfit is tested with the reference's own sampling error (about 100 people in a 1000 Genomes panel; gnomAD's is
+     negligible) at D30.10's P < 0.01. Never a second reference because the first did not help (120). So: 107 on
+     gnomAD exomes misfits (P 0.007) and D31.10 holds, the row stating that genomes give 0.015, near the cut. 109 on
+     gnomAD NFE (4.35 %): the long-lived sit below the reference, D holds; the SICS and TSI branches are named. 116's
+     Hainan controls against CHS with its error (P 0.14) fit, so the replication is read as printed: C stands, not D.
+   - **116 is C on either reading** (R-TIER-4 with D22.1): with Hainan as the replication, the discovery (2.3e-7) is
+     sub-genome-wide; with Hainan inside the meta (1.87e-8), the meta is an unreplicated old-against-young
+     case-control, which R-TIER-2 caps at C. An exome-wide threshold (1.99e-6) is not a genome-wide call: D28.7
+     accepted a paper's own call made on a genome-wide scale, not a threshold set for a fraction of the genome.
+     107, 116 and 120 cite R-TIER-4 for this, not D17.3, which does not say it.
+   - **D31.12 amended: a calibration from APOE alone sets no flag** (D26.3 asks both calibrations, and rows 7, 37,
+     99, 101 and 108 read "a flag under APOE only, so none"). A Park test calibrated from a discovery's APOE line is
+     stated, with power and heterogeneity, and flags nothing alone. 110 gains no second flag. A Park line whose
+     allele sits under Park's own frequency filter is named and not read (D26.7, D29.17): 118's lifespan `0` rests
+     on Bae's UK Biobank parents, and its D31.12 test is stated as resting on a filtered line.
+   - **Foote factors at the lead that point both ways at nominal P give the healthspan cell `0`**, each named with
+     its P (D31.4 completed; D26.6 governs a lifespan or healthspan study against an opposite, not factors of one
+     model against each other). 22 (disability one-sided 0.022 for, cognition 1.5e-4 against) and 119 (F3 0.0027 and
+     F4 0.0024 for, general 0.0017 against): `0`, citing this. My 119 reply cited D26.6; it is this rule.
+   - **A discovery whose own APOE line is null cannot calibrate a borrowed factor** (D25.3 is study-specific,
+     pmid-30642433#q91). Hsieh 2026 prints APOE ε4 OR 0.96, P 0.82 in its 90-and-over GWAS: the Timmers and Park
+     tests of a Hsieh discovery are stated as approximate and set no flag (D26.3). 113 and 119 stay D on Deelen's
+     same-scale lines (D26.11), the flag's cites moved there. A Hsieh row with no same-scale contradiction and
+     nothing independent passing is C (R-TIER-2: 90 and over against deaths at 65 to 75 is old against young). This
+     reaches 122, 123, 131, 137, 150, 152 and 156.
+   - **Smaller calls.** 107: genotypes neutral (the read effect, one-sided 0.066, is not significant) and no sex
+     token (five copies; D29.16, the split never tested); a study row for the gnomAD comparison (OR 2.36,
+     `not_significant`). 118: `centenarian_case_control` (Bae's controls are spouses, offspring and the young, not a
+     birth cohort). 120: clonal haematopoiesis is no flag (SIK3 is selected in blood for truncating changes; this is
+     one inherited-looking missense base); the sentence narrows and quotes Bernstein.
