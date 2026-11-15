@@ -11,5 +11,5 @@
 3. Export and rehearse the module again after each batch (module seat). It stays on the test instance until the person says otherwise.
 4. Pick the test instance's namespace (the person, desk #274; default `test-longevity-loci`, already in use).
 5. Mark the field's consensus top loci: a flag, a new top tier, or nothing (the person, desk #266; nothing is built until then).
-6. APOE lives in this module, one result per ε pair (the person, desk #307, D33); done (96, D34); whether the app shows the pair table is unchecked (a local install, on the person's word). In 0.8 no study can link to a pair, so APOE's studies have no variant row; the module seat is checking what the strict build does with them.
+6. APOE lives in this module, one result per ε pair (the person, desk #307, D33); done (96, D34); whether the app shows the pair table is unchecked (a local install, on the person's word). In 0.8 no study can link to a pair, so APOE's studies have no variant row; the strict build keeps them, with no warning (867fe8b); whether the app shows them is unchecked.
 7. The 18 biological-ageing marker loci go in an unscored section of this module (the person, desk #312, D32): curated after the scored loci.
