@@ -2106,3 +2106,9 @@ rs116362179 in the GWAS Catalog: no association (q570). For row 110.
 > [q571] page size 200 totalElements 0 totalPages 0 number 0
 
 rs12189947 in the GWAS Catalog: no association (q571); Hsieh 2026 is not yet curated there. For row 113.
+
+## Reading 2026-11-15, record
+
+> [q572] page size 200 totalElements 0 totalPages 0 number 0
+
+rs1468966 in the GWAS Catalog: no association (q572). For row 119.

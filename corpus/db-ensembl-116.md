@@ -2837,3 +2837,26 @@ is ECI2, about 195 kb away. For row 113.
 rs12189947 (row 113) in 1000 Genomes' Han Chinese of Beijing (CHB): the same block as in CEU, rs9405724 (q777), rs9392582, rs746360
 and rs4959941 at r² 1.00 there; no CHB partner at r² 0.8 is missing from CEU's r² 0.5 list and 0.94 to 0.97 in CEU (q775's window): the European lines tag the haplotype the
 Taiwanese study tested. For row 113.
+
+## Reading 2026-11-15, record
+
+> [q778] [0] assembly_name GRCh38 most_severe_consequence intron_variant strand 1 id rs1468966 seq_region_name 18 input rs1468966 allele_string G/A end 29092290 start 29092290
+
+> [q779] [0].colocated_variants[0].frequencies.A afr 0.4183 gnomadg 0.3135 af 0.3738 gnomadg_afr 0.4126 eas 0.4762 gnomadg_nfe 0.2414 eur 0.2455 gnomadg_ami 0.1363 amr 0.3746 gnomadg_eas 0.4633 gnomadg_fin 0.2992 gnomadg_mid 0.2211 sas 0.3395 gnomadg_asj 0.3014 gnomadg_sas 0.3552 gnomadg_amr 0.334 gnomadg_remaining 0.2616
+
+> [q780] [0] end 26672254 assembly_name GRCh37 start 26672254 id rs1468966 input rs1468966 most_severe_consequence downstream_gene_variant allele_string G/A seq_region_name 18 strand 1
+
+> [q781] [0] id q12.1 start 27500001 assembly_name GRCh38 strand 0 seq_region_name 18 stain gpos100 end 35100000 feature_type band
+
+> [q782] [44] d_prime 1.000000 variation2 rs9952328 variation1 rs1468966 r2 0.980765 population_name 1000GENOMES:phase_3:CHB
+
+> [q783] [143] d_prime 0.882532 r2 0.447897 variation1 rs1468966 variation2 rs9952328 population_name 1000GENOMES:phase_3:CEU
+
+> [q784] [0] description cadherin 2 [Source:HGNC Symbol;Acc:HGNC:1759] source ensembl_havana logic_name ensembl_havana_gene_homo_sapiens end 28178024 external_name CDH2 gene_id ENSG00000170558 assembly_name GRCh38 strand -1 canonical_transcript ENST00000269141.8 seq_region_name 18 version 12 start 27932879 id ENSG00000170558 biotype protein_coding feature_type gene
+
+rs1468966 (row 119): intronic in a lncRNA (ENSG00000302813) at GRCh38 18:29,092,290 G/A (q778), GRCh37 18:26,672,254
+(q780), band 18q12.1 (q781); A 0.4762 in 1000 Genomes East Asians, 0.4633 in gnomAD's, 0.2455 in 1000 Genomes
+Europeans and 0.2414 in gnomAD's non-Finnish genomes (q779). Its LD differs by ancestry: rs9952328 is r² 0.98 in
+CHB (q782) and 0.45 in CEU (q783); fourteen CHB partners at r² 0.8 sit below 0.5 in CEU, and the best CEU partners
+reach 0.80 (rs7234819, rs59226433, rs1468968, rs59831784). CDH2, about 914 kb away, is the only protein-coding gene
+within 1 Mb (q784). For row 119.

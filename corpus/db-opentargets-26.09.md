@@ -4260,3 +4260,9 @@ read back the same line). For row 34.
 6_4330371_G_A (rs12189947, row 113): three credible sets (q1190), all expression QTLs of ENSG00000231811 in monocytes and
 macrophages (Quach 2016, Nedelec 2016), A raising expression (posterior 0.90 in the R848-stimulated monocytes, β +1.07,
 q1191); none lifespan-class. 6_4330371_A_G has no record (q1192). For row 113.
+
+## Reading 2026-11-15, record
+
+> [q1193] data variant null
+
+18_29092290_G_A and 18_29092290_A_G (rs1468966, row 119): no record either way (q1193). For row 119.
