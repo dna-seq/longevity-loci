@@ -2759,3 +2759,15 @@ place of Timmers' Figure 4 R2 column (D31.2). For row 101.
 rs3830412 (row 22): a poly-T run at GRCh38 3:124,678,475-124,678,480 in a non-coding KALRN transcript exon (q757);
 Deelen's A/AT, FinnGen's AT/A at 124,678,474. In CEU, r² 1.00 to rs12631364 (q758) and rs10755078 (q759), two of
 the lead's 37 proxies at r² 0.8 or more. For row 22.
+
+## Reading 2026-11-15, record
+
+> [q760] [0] end 174283195 allele_string T/- input rs138762279 seq_region_name 5 start 174283195 strand 1 most_severe_consequence intergenic_variant assembly_name GRCh38 id rs138762279
+
+> [q761] [0].colocated_variants[0].frequencies.- gnomadg_eas 0.241 gnomadg_fin 0.3689 gnomadg_mid 0.3438 amr 0.2594 gnomadg_sas 0.4077 gnomadg_asj 0.3409 gnomadg_amr 0.2628 gnomadg_remaining 0.3139 sas 0.4489 gnomadg 0.3379 af 0.3448 gnomadg_afr 0.3711 afr 0.4047 gnomadg_nfe 0.3326 eur 0.3141 gnomadg_ami 0.3711 eas 0.255
+
+> [q762] [2] variation2 rs11952522 r2 0.745793 variation1 rs138762279 population_name 1000GENOMES:phase_3:CEU d_prime 0.999996
+
+rs138762279 (row 34): a single-T deletion at GRCh38 5:174,283,195, intergenic (q760); the deletion 0.33 in gnomAD's
+non-Finnish Europeans, 0.31 in 1000 Genomes EUR (q761). In CEU its best proxy is rs11952522, r² 0.75 (q762); none
+reaches 0.8. For row 34.

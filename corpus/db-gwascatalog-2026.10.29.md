@@ -2073,3 +2073,12 @@ nicotine dependence, Hancock 2015, P 8e-9 (q562, q563). For row 99.
 
 rs3830412 in the GWAS Catalog: one association, Deelen's 99th-percentile longevity (q564, q565), A, OR 1.21, P 8e-7.
 For row 22.
+
+## Reading 2026-11-15, record
+
+> [q566] _embedded.associations[0] association_id 47713570 risk_frequency 0.84 pvalue_description pvalue_mantissa 2 pvalue_exponent -7 multi_snp_haplotype false snp_interaction false range [1.16-1.39] or_per_copy_num 1.2658228 or_value 1.2658228 beta - p_value 2e-07 accession_id GCST008601 pubmed_id 31413261 first_author Deelen J ci_lower 1.16 ci_upper 1.39
+
+> [q567] _embedded.associations[0].reported_trait[0] Longevity (age >99th survival percentile)
+
+rs138762279 in the GWAS Catalog: Deelen's 99th-percentile longevity alone (q566, q567), risk frequency 0.84, the
+discovery cohorts' own. For row 34.

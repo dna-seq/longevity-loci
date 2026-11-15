@@ -4223,3 +4223,10 @@ No lifespan-class set (q1180): C4. For row 9.
 3_124678474_AT_A (rs3830412, row 22): 31 credible sets (q1182), mostly GTEx expression and transcript-usage QTLs of
 KALRN (ENSG00000160145), with blood-count and IGF-1 sets; at the IGF-1 set (q1183) the lead's own line has A +0.0075
 at posterior 0.021 (q1184). None of the nine lifespan-class studies holds it (q1185). For row 22.
+
+## Reading 2026-11-15, record
+
+> [q1186] data variant null
+
+5_174283194_AT_A and 5_174283194_A_AT (rs138762279, row 34): no record under either allele order (q1186; both files
+read back the same line). For row 34.

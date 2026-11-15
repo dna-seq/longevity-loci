@@ -1,0 +1,131 @@
+# The seed list's locus 34, LINC01411 (5q35.1). Curated 2026-11-15. Lead rs138762279, the seed's only rsID (Deelen
+# 2019's European 99th-percentile locus): a single-T deletion between LINC01411 and NSG2, GRCh38 5:174,283,195 T/-,
+# GRCh37 5:173,710,197, Deelen's AT/A; A, the deletion, the discovery's longer-lived allele, at 0.84 in Deelen's cohorts
+# but 0.33 in gnomAD's non-Finnish Europeans. Open Targets 26.09 has no record of the variant under either allele order;
+# the GWAS Catalog (2026-10-29) holds Deelen's longevity association alone.
+locus_id: 34
+locus_name: LINC01411
+verdict: re-tiered
+verdict_reason: >-
+  Tier D, from the seed's C: a suggestive discovery that fails a powered test (D30.11, a fortiori of D25.1), rows 1 and
+  22's shape, and one whose own frequencies do not hold. Deelen 2019's European meta-analysis of survival to the 99th
+  percentile against all controls gives AT OR 0.79 (0.72 to 0.86), P 1.2e-7, I² 0 (Table 2), so A, the deletion,
+  longer-lived; trans-ethnic the same at P 2.2e-7; the deposit codes the deletion at 0.84, +0.241 (SE 0.045). The
+  deletion is 0.33 in gnomAD's non-Finnish Europeans and 0.31 in 1000 Genomes EUR, and Deelen's own UK Biobank validation
+  prints AT at 0.34 (Table 3), where it goes the other way (AT OR 1.05, 0.95 to 1.17, P 0.30): the discovery cohorts'
+  0.16 for AT matches neither allele's population frequency, the mark of a poorly imputed poly-T indel. Within the same
+  99th-percentile file the best proxy, rs11952522 (r² 0.75 in CEU, its minor T with the minor deletion), gives T +0.053
+  (SE 0.036), P 0.14, where the indel's line carried at r 0.87 expects about +0.21 (heterogeneity P 0.003, derived).
+  Timmers 2019 holds no line for the indel; at rs11952522 it is flat (T +0.0028 per self, P 0.53). Carried there by
+  D25.3's 99th calibrations and the proxy's r, the discovery predicts +0.034 (APOE's factor) or +0.080 (the loci's
+  mean): power 1.00 under both, heterogeneity P 6.5e-5 and 8.8e-7 (at half the effect 0.0098 and 2e-5), a D21 red flag
+  under both; read with the alleles the other way round, the flag stands. Nothing independent passes: FinnGen R11 has no
+  line at the indel and at the proxy T with slightly fewer deaths, flat (P 0.30), a database line; Park 2025's own
+  survival has the deletion with slightly more deaths (P 0.24), UK Biobank. Pilling 2017's deposits hold neither the
+  indel nor its proxies; Wright 2019's AncestryDNA has no line within 500 kb: untested. Zenin 2019's healthspan at the
+  proxy goes against (T, the deletion's side, with an earlier end, P 0.016); Foote 2025 flat at the proxy (P 0.079 to
+  0.82), its general, F3 and F4 deposits in gaps there, untested; Rosoff 2023 holds no line. The literature search
+  (the rsID; preprints and Semantic Scholar answered 429, their part unchecked) finds Deelen alone. Every genotype
+  neutral (D25.2); outcome cells 0 (D28.10). Mechanism ageing in general (D25.7): intergenic, between a long non-coding
+  RNA and NSG2, nothing recorded at the variant. Causal C4 and effector E4: no Open Targets record either way.
+  Descriptive. Age of action unknown. The discovery and every test of it are European.
+axes:
+  tier: {value: D, cites: [pmid-31413261#q268, pmid-31413261#q269, pmid-31413261#q270, pmid-31413261#q271, pmid-31413261#q272, pmid-31413261#q273, db-ensembl-116#q761, db-ensembl-116#q762, pmid-30642433#q381, pmid-31413261#q250, pmid-30642433#q90, pmid-30642433#q92, db-finngen-r11#q85, pmid-40021682#q112, pmid-40021682#q32, db-gwascatalog-2026.10.29#q566]}
+  mechanism: {value: general_ageing, cites: [pmid-31413261#q268, db-ensembl-116#q760]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
+            cites: [pmid-30642433#q381, pmid-30729179#q152, pmid-31413261#q273, pmid-31413261#q269]}
+  actionability: {label: descriptive, cites: [pmid-31413261#q268]}
+  context: {values: [eur_only_evidence], cites: [pmid-31413261#q268, pmid-30642433#q381]}
+flags:
+  - {token: replication_failed, cites: [pmid-30642433#q381, db-ensembl-116#q762, pmid-31413261#q250, pmid-30642433#q90, pmid-30642433#q92, pmid-31413261#q273]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1186]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q1186]}
+variants:
+  - rsid: rs138762279
+    gene: ""
+    phenotype: LINC01411 region, longevity
+    trait_efo_id: OBA_VT0005372
+    effect_allele: A
+    effect_size: 1.27
+    effect_measure: OR
+    stat_significance: suggestive
+    direction: protective
+    genotypes:
+      - genotype: AT/AT
+        state: neutral
+        conclusion: >-
+          You carry two copies of the more common version of this DNA position, as about 45 in 100 people of European
+          ancestry do. It is the reference the other combinations are compared with. The position, a short repeat on
+          chromosome 5, lies between genes. One study of long-lived people linked the other version to reaching very
+          old age, but its own checks and a much larger study of a million parents' lives did not confirm it, so it is
+          not counted for or against lifespan.
+      - genotype: A/AT
+        state: neutral
+        conclusion: >-
+          You carry one copy of a shorter version of this DNA position (about 44 in 100 people of European ancestry
+          do). One study of long-lived people found it more often among them, but its own checks and a much larger
+          study of a million parents' lives did not confirm it, so it is not counted for or against lifespan.
+      - genotype: A/A
+        state: neutral
+        conclusion: >-
+          You carry two copies of a shorter version of this DNA position (about 11 in 100 people of European ancestry
+          do). One study of long-lived people found it more often among them, but its own checks and a much larger
+          study of a million parents' lives did not confirm it, so it is not counted for or against lifespan.
+studies:
+  - rsid: rs138762279
+    note: pmid-31413261
+    quote: q268
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's longevity meta-analysis; no UK Biobank data)
+    ancestry: [EUR]
+    stat_significance: suggestive
+    p_value: "1.2E-07"
+    p_value_num: 1.2e-07
+    effect_size: 0.79
+    effect_measure: OR
+    effect_unit: odds of survival to the 99th percentile per AT allele
+    effect_allele: AT
+    direction: risk
+    statistical_test: "Table 2, European 99th percentile against all controls (q268), OR 0.79 (0.72-0.86), I² 0, AT at 0.16; the deposit's deletion at 0.84, β +0.2408 (SE 0.0454), effective N 4,154 (q272); 90th +0.0694, P 0.012 (q271); trans-ethnic P 2.2e-7 (q270). The deletion is 0.33 in gnomAD's non-Finnish Europeans (db-ensembl-116#q761): the cohorts' frequency disagrees; the proxy rs11952522 in the same file +0.0528, P 0.14 (q273), against about +0.21 expected, heterogeneity P 0.003 (derived)"
+    curator: claude-opus-5-5
+  - rsid: rs138762279
+    note: pmid-31413261
+    quote: q269
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: UK Biobank participants' parents (Deelen 2019's parental-longevity validation)
+    ancestry: [EUR]
+    age_of: parent
+    stat_significance: not_significant
+    p_value: "0.299"
+    p_value_num: 0.299
+    effect_size: 1.05
+    effect_measure: OR
+    effect_unit: odds of a parent surviving to the 99th percentile per AT allele
+    effect_allele: AT
+    direction: protective
+    statistical_test: "Table 3, Deelen 2019's UK Biobank parental-longevity look-up (q269), 0.95-1.17, AT at 0.34 as in the population; the other way from the discovery; inside Timmers' parents (D30.16)"
+    curator: claude-opus-5-5
+  - rsid: rs138762279
+    note: pmid-30642433
+    quote: q381
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 640187
+    sample_unit: lives
+    stat_significance: not_significant
+    p_value: "0.52598378"
+    p_value_num: 0.52598378
+    proxy_rsid: rs11952522
+    effect_size: 0.00278444
+    effect_measure: beta
+    effect_unit: log hazard protection per T allele of rs11952522 in self (T, the minor allele, with the minor deletion), positive longer
+    effect_allele: T
+    direction: protective
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0044, direction ++, info 0.99; rs11952522 r² 0.75 to the lead in CEU (db-ensembl-116#q762); against Deelen's deletion +0.2408 carried by D25.3's 99th calibrations (pmid-31413261#q250 over pmid-30642433#q90; mean ×0.4175, q92) and r 0.87: expected +0.034 and +0.080, power 1.00, heterogeneity P 6.5e-5 and 8.8e-7, a D21 red flag under both; at half the effect 0.0098 and 2e-5 (derived)"
+    curator: claude-opus-5-5

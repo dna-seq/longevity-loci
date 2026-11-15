@@ -622,3 +622,10 @@ row 9.
 
 FinnGen R11's death endpoint at rs3830412 (GRCh38 3:124,678,474 AT/A, q84): A (0.163 in Finns) +0.0043 (SE 0.0100),
 P 0.67: the lead's A with slightly more deaths, flat. A database line (D12, D30.12). For row 22.
+
+## Reading 2026-11-15, record
+
+> [q85] 5 174286784 C T rs11952522 CTC-430J12.2 0.2445 0.611722 -0.00940831 0.00808403 0.301811 0.297846 0.302308
+
+FinnGen R11's death endpoint holds no line for rs138762279; at rs11952522 (GRCh38 5:174,286,784 C/T, q85) T (0.30 in
+Finns) −0.0094 (SE 0.0081), P 0.30: T with slightly fewer deaths, flat. A database line (D12, D30.12). For row 34.
