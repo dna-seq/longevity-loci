@@ -22,8 +22,8 @@ verdict_reason: >-
   clonal-haematopoiesis calls, but prints no allele fraction for this one. The exomes are blood-derived, and SIK3
   is among the newer clonal-haematopoiesis drivers in blood (Bernstein 2024), so whether some long-lived copies are
   somatic is unknown. The variant's spread across populations (Ashkenazi above non-Finnish above Finnish, absent
-  from African and Asian exomes) and a copy in a younger Ashkenazi control show it also occurs as an inherited
-  variant. One look-up exists: the paper's Ashkenazi
+  from African and Asian exomes) fits an inherited variant; the younger controls of the look-up below average 83
+  years, an age where clonal haematopoiesis is common, so their copy shows nothing either way. One look-up exists: the paper's Ashkenazi
   sample (515 aged 95 or more, 496 younger controls) has 2 G copies in the long-lived and 1 in the controls, OR
   1.93, P 0.79, the same direction and no pass. Tested against the discovery's size conditionally on its 3 copies,
   it does not reach D21's line: P 0.064 against OR 43 and 0.126 against OR 21 (derived), so no red flag and no
@@ -39,7 +39,7 @@ verdict_reason: >-
   tag it, so every test is untested, not negative. Timmers' strongest line within 500 kb, rs964184 (83 kb, P 1.5e-4),
   and Deelen's (90th 11:116,665,120, 67 kb, EAF 0.01, P 4.6e-4; 99th 11:117,214,617, 483 kb, EAF 0.98, P 2.3e-4)
   cannot tag it either (r² at most 0.0007, 0.011 and 0.005 by frequency, derived). No LD look is possible for a 0.01 % variant in 1000 Genomes' 99 CEU samples. The literature
-  search (the rsID, and SIK3 with longevity terms; Semantic Scholar answered 429 twice, its part unchecked) finds
+  search (the rsID, and SIK3 with longevity terms; Semantic Scholar answered 429 three times, its part unchecked) finds
   Kolbe alone among lifespan studies; of the papers citing Kolbe, a 2026 bioRxiv functional study of rare
   mTOR-pathway variants by the same groups edits variants in other genes (DEPTOR, RAF1, PHLPP1, NF1, IRS1; read from
   Europe PMC's preprint copy, which the cache cannot hold), none in SIK3. Exceptional survival + (the discovery, read
