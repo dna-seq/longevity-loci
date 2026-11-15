@@ -220,3 +220,6 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
   (server). The app's display of the pairs and of the orphan studies is unchecked. Shared clone: an export reads
   the working tree, so a seat's uncommitted row edit can ride along (here the curator's 7040f7d was in the tree
   before it was committed; the build matches 7040f7d).
+- 2026-11-15, trial at trunk fbdf589 (rows 124 RPS6, 125 PRAC2, and the D34.5–7 unit bf0cca3 on 120/124/125): strict
+  green, 351 variant rows, 561 studies, every rsID resolved. Row 125's insertion rs199607933 (T>TG, T>TGG) raises
+  the carried, unverified indel VRS ids to 20. No refusal; held for the batch's close.
