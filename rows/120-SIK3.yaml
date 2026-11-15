@@ -18,8 +18,8 @@ verdict_reason: >-
   6 where 0.27 are expected (P 3.9e-7; against gnomAD's genomes, 0.025 %, 0.13 and 4.8e-5, derived). Yet Kolbe's controls pooled over rows 120, 124 and 125 show 1 copy where 8.3 are expected (P 0.0024, derived), so
   by D34.7 every rare row of the paper is read against the reference, as 107: the long-lived's about 6 copies
   against 0.27 expected give OR 22.6 (exact Poisson P 3.9e-7, derived), and the paper's own OR against gnomAD is
-  21.00, with its caveat that gnomAD's non-Finnish Europeans are mostly British; the printed 43.0 is named, not read. By the printed percentages and the long-lived's 2.7:1 women to men, about 3 copies in 336 men and 3 in 909
-  women, no control copy in either sex (derived): men's share is above their 27 % of the long-lived, as across
+  21.00, with its caveat that gnomAD's non-Finnish Europeans are mostly British; the printed 43.0 is named, not read. By the printed percentages and the long-lived's 2.7:1 women to men, about 3 copies in 336 men (0.07 expected from gnomAD, P 5.8e-5) and 3 in
+  909 women (0.19 expected, P 0.0011), no control copy in either sex (derived): men's share is above their 27 % of the long-lived, as across
   Kolbe's rows (about 24 of 35 copies, D34.7), named, no token. The paper removed variants whose allele fraction fell outside the 1st to 99th percentile to limit
   clonal-haematopoiesis calls, but prints no allele fraction for this one. The exomes are blood-derived; SIK3 is
   among the newer clonal-haematopoiesis genes in blood (Bernstein 2024), but the selection shown there is for
@@ -30,7 +30,7 @@ verdict_reason: >-
   sample (515 aged 95 or more, 496 younger controls) has 2 G copies in the long-lived and 1 in the controls, OR
   1.93, P 0.79, the same direction and no pass. Conditional on its 3 copies the look-up can never reach 0.05: even 3
   of 3 in the long-lived gives one-sided 0.13, so its power is nil and it sets no red flag and no
-  `replication_failed` (against the discovery's size, P 0.064 at OR 43 and 0.126 at OR 21, derived). Read instead against gnomAD's Ashkenazi frequency, the long-lived would expect 6.8 copies
+  `replication_failed` (against the read size, OR 21, P 0.126; at the printed 43, 0.064, derived). Read instead against gnomAD's Ashkenazi frequency, the long-lived would expect 6.8 copies
   (exomes, 0.031 %) or 18.7 (genomes, 0.087 %) at OR 21 and show 2 (P 0.034, under 0.001), lapsing at the
   discovery's lower bound (OR 8.3, P 0.50 and 0.022; the discovery's 6 copies span 2.2 to 13.1, derived); which
   reading the lead declined (row 120's Q1, (a)). The same reference also fits the look-up's controls (1 copy against 0.31,
@@ -88,7 +88,8 @@ variants:
         conclusion: >-
           You carry one copy of a very rare version of this DNA position (about 2 in 10,000 people of European
           ancestry do). It changes one building block of the SIK3 protein, which helps steer how cells sense nutrients.
-          One German study found it six times among very long-lived people and never among younger people; a smaller
+          One German study found it about six times among 1,245 very long-lived people, many times what the wider
+          European population would lead one to expect; a smaller
           Ashkenazi Jewish study leaned the same way without a clear difference. It rests on a handful of carriers and
           has not been confirmed, so this is weak, early evidence: a possible tendency, not destiny.
       - genotype: G/G

@@ -24,7 +24,8 @@ verdict_reason: >-
   by D34.7 every rare row of the paper is read against the reference, as 107: the long-lived show 5
   where 1.2 are expected, OR 4.25 (exact Poisson P 0.0072, derived), and the paper's own OR against gnomAD is 4.19,
   with its caveat that gnomAD's non-Finnish Europeans are mostly British; the printed 36.3 is named, not read. By the printed percentages and the long-lived's 2.7:1 women to
-  men, about 2 copies in 336 men and 3 in 909 women (derived): both sexes here, though men's share (2 of 5) is above
+  men, about 2 copies in 336 men (0.32 expected from gnomAD, P 0.041) and 3 in 909 women (0.86 expected, P 0.056)
+  (derived): both sexes here, though men's share (2 of 5) is above
   their 27 % of the long-lived, and pooled over Kolbe's rows 107, 120, 121, 124, 125 and 126 about 24 of 35 long-lived
   copies are in men (derived), named, no token. No
   look-up tests it: the Ashkenazi sample holds only three of the seven variants, not this one, and none of the Leiden
@@ -74,8 +75,8 @@ variants:
         state: protective
         conclusion: >-
           You carry one copy of a version of this DNA position with one extra DNA letter, very rare in people of
-          European ancestry (about 1 in 1,000) and more common in people of African ancestry (about 3 in 100). One German study found it five times among 1,245 very long-lived people and
-          never among 4,105 younger people. Little is known about the PRAC2 gene. It rests on a handful of carriers and
+          European ancestry (about 1 in 1,000) and more common in people of African ancestry (about 3 in 100). One German study found it five times among
+          1,245 very long-lived people, about four times what the wider European population would lead one to expect. Little is known about the PRAC2 gene. It rests on a handful of carriers and
           has not been confirmed, so this is weak, early evidence: a possible tendency, not destiny.
       - genotype: TG/TG
         state: protective

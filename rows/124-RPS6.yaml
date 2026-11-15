@@ -25,9 +25,9 @@ verdict_reason: >-
   sample holds only three of the seven variants, not this one (gnomAD's Ashkenazi exomes show no A either), and the
   Leiden sample (179 long-lived, 98 controls) expects 0.15 and 0.08 copies, so its absence says nothing. FinnGen R11's
   deaths hold it (A at 0.048 %, as in gnomAD): β +0.043 (SE 0.161), P 0.79, flat, a database line (D29.1); carried by
-  Kolbe's own APOE ε4 line against FinnGen's (an APOE-only calibration, approximate) the printed OR expects β −0.37,
-  power 0.74, heterogeneity P 0.039 counting the discovery's own error, and the reference read expects −0.25,
-  power 0.46: below D21's power, and an
+  Kolbe's own APOE ε4 line against FinnGen's (an APOE-only calibration, approximate) the row's reference read (OR
+  6.6) expects β −0.25, power 0.46, heterogeneity P 0.085 counting the discovery's error (the printed 16.5 would
+  expect −0.37, power 0.74, P 0.039): below D21's power, and an
   APOE-only calibration sets no flag (D31.12, D31.13). At 0.04 % the variant is absent from Deelen 2019 (no line in
   its ±500 kb windows; the strongest, the 90th's 9:19,486,525 at 0.03 and 9:19,586,463 at 0.18, P 1.5e-4 and
   2.9e-4, and the 99th's 9:19,209,591 at 0.61, P 7.4e-4, cannot tag a 0.04 % variant), Timmers 2019, Pilling 2017, Zenin 2019, Park 2025 and Foote 2025: untested, not
@@ -76,8 +76,8 @@ variants:
           You carry one copy of a very rare version of this DNA position (about 9 in 10,000 people of European
           ancestry do). It does not change the RPS6 protein, which helps build the cell's protein-making machinery;
           the study's authors suggest it might lower how much of it is made, which is untested. One German study found
-          it seven times among 1,245 very long-lived people and once among 4,105 younger people, nearly all of the
-          excess in men. It rests on a handful of
+          it seven times among 1,245 very long-lived people, about six times what the wider European population would
+          lead one to expect, most of the excess in men. It rests on a handful of
           carriers and has not been confirmed, so this is weak, early evidence: a possible tendency, not destiny.
       - genotype: A/A
         state: protective

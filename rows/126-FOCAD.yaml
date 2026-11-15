@@ -14,12 +14,15 @@ verdict_reason: >-
   rate of 0.05, its own exome-wide call, not a genome-wide one (R-TIER-4, D31.13). On 2,490 and 8,210 alleles that is
   4 copies against 1 (the Haldane OR from 4 and 1 is 9.9, derived). This row's controls sit at the reference D31.13
   fixes, gnomAD's non-Finnish European exomes (0.0063 %: 0.52 copies expected, 1 seen), but Kolbe's controls pooled
-  over rows 120, 124 and 125 show 1 copy where 8.3 are expected (P 0.0024), so by D34.7 every rare row of the paper is
+  over rows 120, 124 and 125 show 1 copy where 8.3 are expected (P 0.0024; with this row's, 2 against 8.8, P
+  0.0074), so by D34.7 every rare row of the paper is
   read against the reference, as 107: the long-lived show 4 copies where 0.16 are expected, OR 25.6 (exact Poisson P
-  2.2e-5, derived), and the paper's own OR against gnomAD is 12.16, with its caveat that gnomAD's non-Finnish
-  Europeans are mostly British; the printed 9.9 is named, not read (against gnomAD's genomes, 0.013 %, 0.33 would be
-  expected). By the printed percentages and the long-lived's 2.7:1 women to men, about 3 copies in 336 men and 1 in
-  909 women, the control copy a woman's (derived): men's share is above their 27 % of the long-lived, as across
+  2.2e-5, derived), the row's read effect, derived (row 123's way). The paper's own OR against gnomAD, 12.16,
+  back-solves to 0.0132 %, gnomAD's genomes figure, not the exomes' (its other rows match the exomes within 8 %):
+  against the genomes the long-lived show 4 where 0.33 are expected, OR 12.2, P 3.8e-4 (derived), so the + holds on
+  either reference; the choice of carried figure is put to the lead (default the exome read, 25.6). Its caveat:
+  gnomAD's non-Finnish Europeans are mostly British. The printed 9.9 is named, not read. By the printed percentages and the long-lived's 2.7:1 women to men, about 3 copies in 336 men (0.04 expected from gnomAD, P
+  1.2e-5) and 1 in 909 women (0.11 expected, P 0.11), the control copy a woman's (derived): men's share is above their 27 % of the long-lived, as across
   Kolbe's rows (about 24 of 35 copies, D34.7), named, no token. The calls were merged jointly and variants missing
   in over 5 % of samples dropped. No look-up tests it: the Ashkenazi sample holds only three of the seven variants,
   not this one, and none of the Leiden carriers named is this one (179 long-lived and 98 controls expect 0.02 and
@@ -55,7 +58,7 @@ variants:
     phenotype: FOCAD S253N, longevity
     trait_efo_id: OBA_VT0005372
     effect_allele: A
-    effect_size: 12.16
+    effect_size: 25.6
     effect_measure: OR
     stat_significance: nominal
     direction: protective
@@ -112,10 +115,10 @@ studies:
     sample_unit: individuals
     age_of: participant
     stat_significance: nominal
-    effect_size: 12.16
+    effect_size: 25.6
     effect_measure: OR
-    effect_unit: odds of carrying A, the long-lived against the gnomAD reference
+    effect_unit: odds of carrying A, the long-lived against the gnomAD exome reference (derived)
     effect_allele: A
     direction: protective
-    statistical_test: "The paper's own OR against gnomAD NFE (Table 1, q38, columns q3), with no test printed; the row's read effect by D34.7 (Kolbe's controls pooled over 120, 124 and 125 thin: 1 copy against 8.3, P 0.0024), the reference fixed as the exomes (D31.13). 4 copies in 2,490 long-lived alleles against 0.16 expected from gnomAD's non-Finnish exomes (0.0063 %, db-ensembl-116#q872): OR 25.6, exact Poisson P 2.2e-5 (derived); the authors note gnomAD NFE is mostly British (q12)"
+    statistical_test: "Derived; the paper's own OR against gnomAD NFE, 12.16 (Table 1, q38, columns q3), back-solves to the genomes' 0.0132 % (db-ensembl-116#q873), not the exomes; the row's read effect by D34.7 (Kolbe's controls pooled over 120, 124 and 125 thin: 1 copy against 8.3, P 0.0024), the reference fixed as the exomes (D31.13). 4 copies in 2,490 long-lived alleles against 0.16 expected from gnomAD's non-Finnish exomes (0.0063 %, db-ensembl-116#q872): OR 25.6, exact Poisson P 2.2e-5 (derived); against the genomes 0.33 expected, OR 12.2, P 3.8e-4; the authors note gnomAD NFE is mostly British (q12)"
     curator: claude-opus-5-5
