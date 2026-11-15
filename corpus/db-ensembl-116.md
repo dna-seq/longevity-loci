@@ -3235,3 +3235,22 @@ Row 136, rs3138136: in RDH5's 3′ UTR on its MANE transcript (ENST00000257895, 
 C/T (q882), GRCh37 12:56,117,570. T at 0.102 in gnomAD's non-Finnish European genomes (q883) and 0.0008 in East
 Asians (q884), so no East Asian sample can test it (Hsieh's tables leave it blank). ENSG00000182796 is TMEM198B, a
 transcribed pseudogene (q885). For row 136.
+
+## Reading 2026-11-15, record
+
+> [q886] [0] most_severe_consequence intergenic_variant id rs34459993 strand 1 allele_string T/C assembly_name GRCh38 input rs34459993 start 147120800 end 147120800 seq_region_name 5
+
+> [q887] mappings[0] strand 1 seq_region_name 5 allele_string T/C coord_system chromosome ancestral_allele T assembly_name GRCh37 start 146500363 location 5:146500363-146500363 end 146500363
+
+> [q888] populations[5] population gnomADg:eas allele_count 1006 frequency 0.1942 allele C
+
+> [q889] populations[12] allele C population gnomADg:nfe allele_count 13767 frequency 0.2026
+
+> [q890] populations[68] allele C frequency 0.242857142857143 allele_count 51 population 1000GENOMES:phase_3:CHS
+
+> [q891] . biotype protein_coding db_type core object_type Gene canonical_transcript ENST00000394434.7 id ENSG00000133706 source ensembl_havana logic_name ensembl_havana_gene_homo_sapiens description leucyl-tRNA synthetase 1 [Source:HGNC Symbol;Acc:HGNC:6512] start 146110566 display_name LARS1 species homo_sapiens strand -1 version 22 assembly_name GRCh38 end 146182696 seq_region_name 5
+
+Row 137, rs34459993: intergenic, GRCh38 5:147,120,800 T/C (q886), GRCh37 5:146,500,363 (q887). C in gnomAD's East
+Asian genomes 0.194 (1,006 of 5,180, q888), non-Finnish 0.203 (q889), 1000 Genomes CHS 0.243 (q890). Hsieh's solved
+controls (C 0.207) fit gnomAD EAS (P 0.25 with its error), so the discovery is read as printed: T log OR +0.968 (SE
+0.204 from its P; derived). ENSG00000133706 is LARS1 (q891). For row 137.

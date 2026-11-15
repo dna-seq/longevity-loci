@@ -4397,3 +4397,14 @@ named in prose). The reverse order has no record (q1226). For row 131.
 12_55723786_C_T (rs3138136, row 136): three credible sets, all GTEx v10 splicing QTLs of TMEM198B (spleen, minor
 salivary gland, thyroid; q1227, q1228), the variant at PIP 0.39 in the spleen set, beta +0.68 for T, P 3.4e-10
 (q1229), 0.42 and 0.12 in the others; no lifespan-class set (C4, E4). For row 136.
+
+## Reading 2026-11-15, record
+
+> [q1230] data.variant.credibleSets count 1
+
+> [q1231] data.variant.credibleSets.rows[0].study id gtex-v10_txrev_artery_aorta_ensg00000133706_grp_1_contained_enst00000674383 traitFromSource ENSG00000133706.grp_1.contained.ENST00000674383 studyType tuqtl
+
+> [q1232] data.variant.credibleSets.rows[0].locus.rows[0] posteriorProbability 0.024350191617903985 beta 0.144584 pValueMantissa 7.077000141143799 pValueExponent -6
+
+5_147120800_T_C (rs34459993, row 137): one credible set, a GTEx v10 aorta transcript-usage QTL of LARS1 (q1230,
+q1231), the variant at PIP 0.024 (q1232), membership only; no lifespan-class set (C4, E4). For row 137.

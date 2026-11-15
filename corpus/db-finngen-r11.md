@@ -730,3 +730,10 @@ FinnGen R11's DEATH endpoint at rs2730486 (row 131): G (0.213) β −0.0039 (SE 
 
 FinnGen R11's DEATH endpoint at rs3138136 (row 136): T (0.056) β +0.0058 (SE 0.0163), P 0.72, flat. A database line
 (D29.1). For row 136.
+
+## Reading 2026-11-15, record
+
+> [q100] 5 147120800 T C rs34459993 CTC-426D19.1 0.797813 0.098099 0.00285273 0.0111357 0.127761 0.128937 0.127613
+
+FinnGen R11's DEATH endpoint at rs34459993 (row 137): C (0.128) β +0.0029 (SE 0.0111), P 0.80: flat. A database line
+(D29.1). For row 137.
