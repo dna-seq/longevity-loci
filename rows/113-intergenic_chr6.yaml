@@ -1,0 +1,184 @@
+# The seed list's locus 113, "intergenic chr6" (6p25.1). Curated 2026-11-15. Lead rs12189947, the seed's only rsID
+# (Hsieh 2026's Taiwanese suggestive locus at 90 and over): intronic in a lncRNA, GRCh38 6:4,330,371 G/A, GRCh37
+# 6:4,330,605, A 0.21 to 0.22 in East Asians and Europeans alike, the discovery's shorter-lived allele (G the seed's
+# pro allele). Open Targets 26.09 holds it in three monocyte and macrophage expression-QTL sets of a novel lncRNA, none
+# lifespan-class; the GWAS Catalog (2026-10-29) holds no association.
+locus_id: 113
+locus_name: intergenic chr6
+verdict: re-tiered
+verdict_reason: >-
+  Tier D, from the seed's C: a sub-genome-wide East Asian discovery that powered European samples tagging the same
+  haplotype contradict (D22.3, as row 72; D21's red flag under both of D25.3's calibrations). Hsieh 2026 compared 922
+  Taiwanese hospital patients who died at 90 or over with 871 who died at 65 to 75 at the same hospital: A (0.201)
+  OR 0.63 per A, P 8.7e-6, under the paper's suggestive line of 1e-5. Solved from the OR and the counts, the controls
+  carry A at about 0.24 and the long-lived at about 0.165, against 0.206 to 0.223 in East Asian references (derived;
+  the paper's own Taiwan Biobank cell is missing from the line): the controls sit a little high (P 6e-4 against
+  gnomAD's East Asians, 0.11 against 1000 Genomes'), and the long-lived well below either. Read against the
+  references (D31.10) the long-lived alone give A OR 0.76 or 0.69, P 1.6e-5 or 2.6e-9, so the signal is theirs, and
+  every test below fails at that size too (derived). Its validation cohort, 844 people aged 85 and over from a second hospital analysed the same way, gives OR
+  0.517 at 90 and over, P 1e-4, the same direction; the paper does not say who its controls were or how many reached
+  90, so whether the validation is independent of the discovery's controls is unknown (D19.1: not counted as an
+  independent replication). The Europeans tag the same block: rs9392582, rs9405724 and rs4959941 sit at r² 0.94 to
+  0.97 with the lead in CEU and 1.00 in CHB, and A has the same frequency. Deelen 2019, at the lead itself: 90th
+  percentile A +0.044 (SE 0.028), P 0.11; 99th +0.106 (SE 0.044), P 0.016, A longer-lived, one-sided 0.008 against;
+  set against the discovery's log OR (−0.462, SE 0.104) heterogeneity P 2.5e-6 and 4.7e-7, power 1.00 (derived).
+  Timmers 2019 holds no line at the lead; at rs9392582 (r² 0.97, T with A) flat, T −0.0014 per self (SE 0.0048), P
+  0.76. Carried there by D25.3's 90th-percentile calibrations and r, the discovery predicts A −0.094 (APOE's factor)
+  or −0.225 (the loci's mean): power 1.00, heterogeneity P 1.9e-5 and 1.1e-5 (at half the effect 8.5e-5 and 1.6e-5;
+  from the reference read, OR 0.76, 8.3e-5 and 2.5e-5), a D21 red flag under both, `replication_failed`. The calibration is approximate here: Hsieh's contrast is dying at
+  90 or over against dying at 65 to 75, not Deelen's 90th percentile against all controls. Outside Timmers: Park
+  2025's own survival has A with fewer deaths, P 0.07, one-sided 0.035 against (columns swapped, as at APOE; UK
+  Biobank); FinnGen R11's death endpoint A with slightly more deaths, flat (P 0.64), a database line; Pilling 2017 flat
+  at rs9392582 (P 0.56 to 0.80, inside Timmers); Zenin 2019's healthspan flat, A a little healthier (P 0.32); Foote
+  2025 flat at rs9392582 (P 0.17 to 0.86). Wright 2019's one line within 500 kb, rs7767658 (390 kb), has no CEU pair:
+  AncestryDNA untested. Timmers' strongest line within 500 kb is P 0.0020, Deelen's 0.0013: nothing suggestive. The
+  literature search (the rsID, and Taiwanese and Han Chinese longevity GWAS since 2025; Semantic Scholar answered 429,
+  its part unchecked) finds Hsieh alone. The claim is Taiwanese and tested for replication only there; the European
+  null is on the same haplotype at the same frequency, so the row is D, not ancestry-specific, and the ancestry is
+  named here, not as a context token (D30.15); how Taiwanese loci are shown waits on D7. Every genotype neutral
+  (D25.2). Exceptional survival − (D28.3, D28.10: Deelen's 99th one-sided 0.008 against, and a D row's discovery gives
+  no +); lifespan − (Park one-sided 0.035 against, nothing for); healthspan 0. Mechanism ageing in general (D25.7):
+  intronic in a lncRNA, A raising a nearby novel lncRNA's expression in stimulated monocytes, named, no route shown;
+  the nearest protein-coding gene, ECI2, lies about 195 kb away. Causal C4 and effector E4: no lifespan-class set.
+  Descriptive. Age of action unknown.
+axes:
+  tier: {value: D, cites: [pmid-41949656#q1, pmid-41949656#q2, pmid-41949656#q3, pmid-41949656#q4, pmid-41949656#q5, pmid-41949656#q6, pmid-41949656#q9, pmid-31413261#q281, pmid-31413261#q282, pmid-30642433#q384, db-ensembl-116#q775, db-ensembl-116#q777, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, pmid-40021682#q115, pmid-40021682#q32, db-finngen-r11#q88, pmid-29227965#q149, pmid-30729179#q155, pmid-31484785#q163, db-gwascatalog-2026.10.29#q571]}
+  mechanism: {value: general_ageing, cites: [db-ensembl-116#q771, db-ensembl-116#q776, db-opentargets-26.09#q1191]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "-", exceptional_survival: "-",
+            cites: [pmid-31413261#q282, pmid-40021682#q115, pmid-40021682#q32, pmid-30642433#q384, pmid-30729179#q155, pmid-40759756#q90]}
+  actionability: {label: descriptive, cites: [pmid-41949656#q1]}
+  context: {values: [], cites: []}
+flags:
+  - {token: replication_failed, cites: [pmid-30642433#q384, db-ensembl-116#q775, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, pmid-31413261#q281, pmid-31413261#q282]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1190, db-opentargets-26.09#q1192]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q1190, db-opentargets-26.09#q1192]}
+variants:
+  - rsid: rs12189947
+    gene: ""
+    phenotype: 6p25.1 intergenic lncRNA, longevity, Taiwanese
+    trait_efo_id: OBA_VT0005372
+    effect_allele: G
+    stat_significance: suggestive
+    direction: protective
+    genotypes:
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position, as about 6 in 10 people of East Asian or
+          European ancestry do. It is the reference the other combinations are compared with. The position lies
+          between genes on chromosome 6. One Taiwanese study linked the other version to dying younger, but large
+          European studies of the same stretch of DNA found no such link, and one leaned the other way, so it is not
+          counted for or against lifespan.
+      - genotype: A/G
+        state: neutral
+        conclusion: >-
+          You carry one copy of a less common version of this DNA position (about 1 in 3 people of East Asian or
+          European ancestry do). One Taiwanese study found it less often among people who lived past 90, but large
+          European studies did not confirm it, and one leaned the other way, so it is not counted for or against
+          lifespan.
+      - genotype: A/A
+        state: neutral
+        conclusion: >-
+          You carry two copies of a less common version of this DNA position (about 5 in 100 people of East Asian or
+          European ancestry do). One Taiwanese study found the version less often among people who lived past 90, but
+          large European studies did not confirm it, so it is not counted for or against lifespan.
+studies:
+  - rsid: rs12189947
+    note: pmid-41949656
+    quote: q1
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: Taiwanese (Taichung Veterans General Hospital; died at 90 or over against died at 65 to 75, q3, q8)
+    ancestry: [EAS]
+    sample_size: 1793
+    sample_unit: individuals
+    n_cases: 922
+    age_of: participant
+    stat_significance: suggestive
+    p_value: "8.70E-06"
+    p_value_num: 8.7e-06
+    effect_size: 0.63
+    effect_measure: OR
+    effect_unit: odds of having died at 90 or over rather than at 65 to 75, per A allele
+    effect_allele: A
+    direction: risk
+    statistical_test: "Logistic regression with ten PCs, sex and disease covariates (Table 2, q1), A 0.201, under the paper's suggestive P < 1e-5 (q4); 922 cases, 871 controls (Table S11, q9). Solved from the OR and counts, controls about 0.24, cases about 0.165, against East Asian references 0.206 to 0.223 (db-ensembl-116#q772): the controls a little high, the long-lived well below; against the references the long-lived give OR 0.76 or 0.69, P 1.6e-5 or 2.6e-9 (D31.10, derived). Against Deelen's 90th and 99th at the lead heterogeneity P 2.5e-6 and 4.7e-7 (derived)"
+    curator: claude-opus-5-5
+  - rsid: rs12189947
+    note: pmid-41949656
+    quote: q2
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: Taiwanese (Taipei Veterans General Hospital, Taoyuan Branch; 844 aged 85 and over, the controls not described, q5)
+    ancestry: [EAS]
+    age_of: participant
+    stat_significance: nominal
+    p_value: "0.0001"
+    p_value_num: 0.0001
+    effect_size: 0.517
+    effect_measure: OR
+    effect_unit: odds of reaching 90 or over, per A allele (the discovery's model, q6)
+    effect_allele: A
+    direction: risk
+    statistical_test: "Table 4, the validation cohort at 90 and over (q2), SE of the log OR 0.170, the discovery's direction (q7); the paper does not describe the validation's controls, so its independence of the discovery's is unknown and it is not counted as an independent replication (D19.1)"
+    curator: claude-opus-5-5
+  - rsid: rs12189947
+    note: pmid-31413261
+    quote: q282
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's longevity meta-analysis; no UK Biobank data)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.01561"
+    p_value_num: 0.01561
+    effect_size: 0.1055
+    effect_measure: beta
+    effect_unit: log odds of survival to the 99th percentile per A allele
+    effect_allele: A
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GCST008599), SE 0.0436, A 0.17, effective N 4,524 (q282); 90th +0.0442 (SE 0.0278), P 0.11 (q281); against Hsieh's A log OR −0.462 (SE 0.104) heterogeneity P 4.7e-7 (99th) and 2.5e-6 (90th), power 1.00; one-sided 0.008 against (derived)"
+    curator: claude-opus-5-5
+  - rsid: rs12189947
+    note: pmid-30642433
+    quote: q384
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 640141
+    sample_unit: lives
+    stat_significance: not_significant
+    p_value: "0.76487557"
+    p_value_num: 0.76487557
+    proxy_rsid: rs9392582
+    effect_size: -0.00142729
+    effect_measure: beta
+    effect_unit: log hazard protection per T allele of rs9392582 in self (T with the lead's A), positive longer
+    effect_allele: T
+    direction: risk
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0048, direction +-, info 0.99; rs9392582 r² 0.97 to the lead in CEU (db-ensembl-116#q775); against Hsieh's A log OR −0.462 carried by D25.3's 90th calibrations (APOE 4.84, pmid-31413261#q82 over pmid-30642433#q90; mean ×0.4175, q92) and r 0.98: expected −0.094 and −0.225, power 1.00, heterogeneity P 1.9e-5 and 1.1e-5, a D21 red flag under both; at half the effect 8.5e-5 and 1.6e-5 (derived)"
+    curator: claude-opus-5-5
+  - rsid: rs12189947
+    note: pmid-40021682
+    quote: q115
+    phenotype_class: OWN_SURVIVAL
+    study_design: own_survival_cox
+    population: European (UK Biobank, whole cohort)
+    ancestry: [EUR]
+    sample_size: 393833
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: not_significant
+    p_value: "0.07"
+    p_value_num: 0.07
+    p_one_sided: 0.035
+    effect_size: 0.00150474
+    effect_measure: beta
+    effect_unit: Martingale residual of death per G allele (positive more deaths; the deposit's allele columns swapped, q32)
+    effect_allele: G
+    direction: risk
+    statistical_test: "Park 2025's whole-cohort deposit (GCST90551884), SE 0.00083, G 0.795 (q115); A with fewer deaths, one-sided 0.035 against the Taiwanese direction (derived); UK Biobank, the people whose parents Timmers pools"
+    curator: claude-opus-5-5

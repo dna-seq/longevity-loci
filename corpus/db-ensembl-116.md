@@ -2809,3 +2809,31 @@ Ensembl lists no CEU variant at r² 0.5 with it. For row 110.
 Cytobands at the leads: GRCh38 2:53,153,619 (row 110) in 2p16.2 (q769); 5:174,283,195 (row 34) in 5q35.2 (q770). In
 1000 Genomes CEU at r² 0.1 within the ±250 kb window, rs116362179 (row 110) has partners up to r² 0.31 and rs113181552
 (row 109) up to 0.49: both are in the panel, and neither has a proxy at r² 0.5. For rows 110, 34 and 109.
+
+## Reading 2026-11-15, record
+
+> [q771] [0] end 4330371 most_severe_consequence intron_variant strand 1 seq_region_name 6 start 4330371 id rs12189947 allele_string G/A input rs12189947 assembly_name GRCh38
+
+> [q772] [0].colocated_variants[0].frequencies.A eur 0.2187 gnomadg_afr 0.05078 gnomadg_mid 0.2 gnomadg_asj 0.2033 gnomadg_amr 0.1568 af 0.1851 gnomadg_nfe 0.2075 gnomadg_remaining 0.1679 afr 0.0363 eas 0.2232 gnomadg_fin 0.1937 gnomadg_ami 0.3565 amr 0.1499 gnomadg_eas 0.2059 gnomadg_sas 0.3247 sas 0.3374 gnomadg 0.1625
+
+> [q773] [0] assembly_name GRCh37 allele_string G/A most_severe_consequence intergenic_variant input rs12189947 strand 1 end 4330605 start 4330605 seq_region_name 6 id rs12189947
+
+> [q774] [0] assembly_name GRCh38 strand 0 id p25.1 start 4200001 feature_type band seq_region_name 6 stain gneg end 7100000
+
+> [q775] [26] variation2 rs9392582 d_prime 1.000000 population_name 1000GENOMES:phase_3:CEU variation1 rs12189947 r2 0.968868
+
+> [q776] . version 4 end 4347162 assembly_name GRCh38 seq_region_name 6 object_type Gene canonical_transcript ENST00000667590.2 strand -1 id ENSG00000231811 biotype lncRNA start 4341751 db_type core species homo_sapiens logic_name havana_homo_sapiens source havana description novel transcript
+
+rs12189947 (row 113): intronic in a lncRNA at GRCh38 6:4,330,371 G/A (q771), GRCh37 6:4,330,605 (q773), band 6p25.1
+(q774); A 0.2232 in 1000 Genomes East Asians, 0.2187 in Europeans, 0.2059 and 0.2075 in gnomAD's East Asian and
+non-Finnish genomes (q772). rs9392582 is one of eleven CEU partners at r² 0.97 (q775). ENSG00000231811, the gene of
+the lead's eQTL sets, is a novel lncRNA at 6:4,341,751-4,347,162 (q776); the nearest protein-coding gene in Ensembl
+is ECI2, about 195 kb away. For row 113.
+
+## Reading 2026-11-15, record
+
+> [q777] [25] population_name 1000GENOMES:phase_3:CHB d_prime 1.000000 variation2 rs9405724 r2 1.000000 variation1 rs12189947
+
+rs12189947 (row 113) in 1000 Genomes' Han Chinese of Beijing (CHB): the same block as in CEU, rs9405724, rs746360 and
+rs4959941 at r² 1.00 there (q777) and 0.94 to 0.97 in CEU (q775's window): the European lines tag the haplotype the
+Taiwanese study tested. For row 113.

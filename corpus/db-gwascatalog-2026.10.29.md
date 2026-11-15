@@ -2100,3 +2100,9 @@ rs113181552 in the GWAS Catalog: Beccacece's Calabrian longevity line alone (q56
 > [q570] page size 200 totalElements 0 totalPages 0 number 0
 
 rs116362179 in the GWAS Catalog: no association (q570). For row 110.
+
+## Reading 2026-11-15, record
+
+> [q571] page size 200 totalElements 0 totalPages 0 number 0
+
+rs12189947 in the GWAS Catalog: no association (q571); Hsieh 2026 is not yet curated there. For row 113.

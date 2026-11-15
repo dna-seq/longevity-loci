@@ -4248,3 +4248,15 @@ read back the same line). For row 34.
 > [q1189] data variant null
 
 2_53153619_C_T and 2_53153619_T_C (rs116362179, row 110): no record either way (q1189). For row 110.
+
+## Reading 2026-11-15, record
+
+> [q1190] data.variant.credibleSets count 3
+
+> [q1191] data.variant.credibleSets.rows[0].locus.rows[0] posteriorProbability 0.9008592067472445 beta 1.06954 pValueMantissa 3.0329999923706055 pValueExponent -13
+
+> [q1192] data variant null
+
+6_4330371_G_A (rs12189947, row 113): three credible sets (q1190), all expression QTLs of ENSG00000231811 in monocytes and
+macrophages (Quach 2016, Nedelec 2016), A raising expression (posterior 0.90 in the R848-stimulated monocytes, β +1.07,
+q1191); none lifespan-class. 6_4330371_A_G has no record (q1192). For row 113.
