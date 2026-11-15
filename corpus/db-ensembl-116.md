@@ -3011,3 +3011,48 @@ rs12189947 (row 113, batch twelve's read): A in 1,054 of gnomAD's East Asian gen
 
 rs13963 (row 116): on ENST00000296130, G>A is Ggc to Agc, glycine to serine at residue 106 (q822); the record carries
 no MANE flag. For row 116.
+
+## Reading 2026-11-15, record
+
+> [q823] [0] seq_region_name 4 end 169071078 start 169071078 input rs1732444170 assembly_name GRCh38 allele_string T/A id rs1732444170 most_severe_consequence intron_variant strand 1
+
+> [q824] mappings[0] seq_region_name 4 allele_string TCT/T/TCTCT assembly_name GRCh38 start 169071079 location 4:169071079-169071081 ancestral_allele TCT strand 1 coord_system chromosome end 169071081
+
+> [q825] populations[14] allele T frequency 0.183 population gnomADg:eas allele_count 946
+
+> [q826] populations[20] allele_count 17112 frequency 0.2518 population gnomADg:nfe allele T
+
+> [q827] populations[64] population 1000GENOMES:phase_3:CEU frequency 0.272727272727273 allele_count 54 allele T
+
+> [q828] populations[67] allele_count 54 frequency 0.272727272727273 population 1000GENOMES:phase_3:CEU allele A
+
+> [q829] populations[12] population gnomADg:nfe frequency 0.2516 allele_count 17097 allele A
+
+> [q830] [0] start 169992229 seq_region_name 4 id rs1732444170 assembly_name GRCh37 allele_string T/A most_severe_consequence regulatory_region_variant input rs1732444170 strand 1 end 169992229
+
+Row 122: Ensembl holds rs1732444170 as a T/A SNV at GRCh38 4:169,071,078 (q823), not Hsieh's TTC/T; the indel
+Hsieh tests is rs10610954 (rs146423901 merged), TCT/T at 4:169,071,079, the same two-base deletion in a TC repeat,
+left-shifted by one in Hsieh's and FinnGen's TTC/T at 169,071,078 (q824); the deletion T is 0.183 in gnomAD's East
+Asian genomes (946 of 5,170 alleles, q825), 0.252 in the non-Finnish (q826), 0.27 in CEU (q827). Its GRCh37
+position 4:169,992,229 (q830) is where Deelen and Park hold it. Hsieh's controls (0.200 on 1,746 alleles) against
+gnomAD EAS with its error: P 0.12, a fit; the long-lived (0.083) far below (derived). rs62332690, two bases away,
+has A at 54 of 198 CEU alleles and 0.2516 in gnomAD NFE (q828, q829), the deletion's frequency to three digits;
+Ensembl returns no LD for the indel, so their pairing is unknown. For row 122.
+
+## Reading 2026-11-15, record
+
+> [q831] [0] allele_string C/G/T end 188090337 id rs184517867 strand 1 most_severe_consequence intron_variant start 188090337 assembly_name GRCh38 seq_region_name 1 input rs184517867
+
+> [q832] [0].colocated_variants[0].frequencies.G gnomadg 0.0006098 gnomadg_mid 0 gnomadg_eas 0.01228 amr 0 afr 0 gnomadg_sas 0.003546 eur 0 eas 0.0139 gnomadg_afr 0.0002669 gnomadg_fin 0 gnomadg_nfe 0 gnomadg_asj 0 gnomadg_remaining 0 af 0.003 gnomadg_ami 0 gnomadg_amr 6.612e-05 sas 0.001
+
+> [q833] populations[13] allele G population gnomADg:eas frequency 0.01228 allele_count 63
+
+> [q834] populations[44] frequency 0.0333333333333333 population 1000GENOMES:phase_3:CHS allele G allele_count 7
+
+> [q835] [0] start 188059468 input rs184517867 id rs184517867 most_severe_consequence intergenic_variant allele_string C/G/T strand 1 end 188059468 seq_region_name 1 assembly_name GRCh37
+
+Row 123: rs184517867 is C/G/T at GRCh38 1:188,090,337 (q831), intronic in a lncRNA; GRCh37 1:188,059,468 (q835).
+G 0.0123 in gnomAD's East Asian genomes (63 of 5,130 alleles, q833), 0.0035 in South Asian, 0 in non-Finnish and
+Finnish (q832); 7 of 210 CHS alleles (q834). Hsieh's controls (0.0041, about 7 copies in 1,746 alleles) against
+gnomAD EAS (21.4 expected): P 0.003 with its error, a misfit (D31.13); the long-lived (about 20 copies in 496
+alleles, 6.1 expected) above it: OR 3.32, log 1.20 (SE 0.26), P 4.8e-6 (derived). For row 123.

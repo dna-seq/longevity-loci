@@ -1,0 +1,143 @@
+# The seed list's locus 122, LOC105377527 (4q32.3). Curated 2026-11-15. Lead rs1732444170, the seed's only rsID (Hsieh
+# 2026's 95-and-over Taiwanese locus), which Ensembl holds as a T/A SNV with no frequency; the variant Hsieh tests is
+# the two-base deletion TTC>T at GRCh38 4:169,071,078 (FinnGen's alleles; Ensembl's rs10610954, TCT/T one base on, the
+# same deletion in a TC repeat), GRCh37 4:169,992,229, the deletion T at 0.18 in gnomAD's East Asian genomes and 0.25
+# in the non-Finnish, the discovery's shorter-lived allele. Open Targets 26.09 has no record under either form; the
+# GWAS Catalog (2026-10-29) holds no association.
+locus_id: 122
+locus_name: LOC105377527
+verdict: re-tiered
+verdict_reason: >-
+  Tier D, from the seed's C: a sub-genome-wide East Asian discovery that Deelen 2019 contradicts on the same scale at
+  the variant itself (D31.13's Hsieh bullet, D26.11, D22.3; row 113's shape). Hsieh 2026 compared 248 Taiwanese
+  hospital patients who died at 95 or over with 873 who died at 65 to 75 at the same hospital: the deletion T (0.174,
+  pooled) OR 0.36 per T, P 1.7e-6, under the paper's suggestive line of 1e-5 (log OR −1.02, SE 0.213 from its P,
+  derived). The seed's rsID names a T/A SNV in Ensembl; Hsieh's alleles (T, TTC) are FinnGen's deletion at the same
+  position, Ensembl's rs10610954 one base on in the repeat, and the row means that deletion. Solved from the OR and
+  the counts (per Alt, the pooled frequency, as rows 113 and 119 read the tables), the controls carry T at about 0.200
+  and the long-lived at about 0.083; against gnomAD's East Asian genomes (0.183, the reference D31.13 fixes) the
+  controls fit (P 0.12 with its error), so the discovery is read as printed (D31.10 not met); Taiwan Biobank's printed
+  0.187 agrees. Its validation cohort gives OR 0.483, P 0.009, the same direction, but its controls are not its own
+  (Fig. 2 sets its cases against controls aged 65 to 75), so it is not an independent replication (D19.1). Deelen 2019
+  tests the deletion itself (d at 0.24): 90th percentile +0.0186 (SE 0.0255), P 0.47, and 99th +0.0385 (SE 0.0397), P
+  0.33, the deletion a little longer-lived; against Hsieh's log OR on the same scale, two log odds of long-lived status,
+  heterogeneity P 1.3e-6 and 1.0e-6, power 1.00, holding down to 0.07 and 0.10 of Hsieh's effect (derived): a D21 red
+  flag, `replication_failed`. Hsieh's own APOE line is null (ε4 OR 0.96, P 0.82), so no conversion to a lifespan
+  scale is its own (D31.13): Park 2025 at the deletion has T with more deaths by a hair (P 0.62; its columns swapped,
+  UK Biobank), flat, stated without a calibrated test; Timmers 2019 holds no line at the indel, and at rs62332690, two
+  bases away with A at the deletion's frequency in CEU and gnomAD (Ensembl gives no LD for the indel, so the pairing
+  is unknown), A is flat (P 0.81); FinnGen R11's death endpoint has the deletion with fewer deaths (P 0.009), against
+  Hsieh's direction, a database line that neither replicates nor sets D (D29.1, D30.12). Zenin 2019 at rs62332690 flat
+  (P 0.92), the pairing unknown, so healthspan is untested; Pilling 2017 and Foote 2025 hold no line, and Wright 2019
+  none within 500 kb: untested. Deelen's and Timmers' strongest lines within 500 kb were not read. The literature
+  search (the rsID; Semantic Scholar answered 429, its part unchecked) finds nothing; Hsieh is found by its PMID, and
+  its one citing paper is a Finnish polygenic lifespan score, with no single-variant test. The ancestry is named here,
+  not as a context token (D30.15). Every genotype neutral (D25.2). Exceptional survival 0 (Deelen leans against at
+  one-sided 0.17 and 0.23, short of nominal, and a D row's discovery gives no +, D28.10); lifespan 0 (Park flat;
+  FinnGen a database line); healthspan untested. Mechanism ageing in general (D25.7): intronic in a lncRNA
+  (LOC105377527), nothing recorded at the variant. Causal C4 and effector E4: no Open Targets record. Descriptive.
+  Age of action unknown.
+axes:
+  tier: {value: D, cites: [pmid-41949656#q18, pmid-41949656#q19, pmid-41949656#q21, pmid-41949656#q23, pmid-41949656#q4, pmid-41949656#q5, pmid-41949656#q10, pmid-41949656#q13, pmid-41949656#q14, pmid-41949656#q16, db-ensembl-116#q823, db-ensembl-116#q824, db-ensembl-116#q825, db-ensembl-116#q826, db-ensembl-116#q830, pmid-31413261#q289, pmid-31413261#q290, pmid-40021682#q120, pmid-40021682#q32, db-finngen-r11#q92, pmid-30642433#q392, pmid-30729179#q159, db-gwascatalog-2026.10.29#q577]}
+  mechanism: {value: general_ageing, cites: [db-ensembl-116#q823]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: untested, lifespan: "0", exceptional_survival: "0",
+            cites: [pmid-31413261#q289, pmid-31413261#q290, pmid-40021682#q120, db-finngen-r11#q92]}
+  actionability: {label: descriptive, cites: [pmid-41949656#q19]}
+  context: {values: [], cites: []}
+flags:
+  - {token: replication_failed, cites: [pmid-31413261#q289, pmid-31413261#q290, pmid-41949656#q19, pmid-41949656#q16]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1200]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q1200]}
+variants:
+  - rsid: rs1732444170
+    locus: {chrom: "4", start: 169071078, ref: TTC, cites: [db-finngen-r11#q92, db-ensembl-116#q824]}  # Ensembl holds rs1732444170 as a T/A SNV; the row means Hsieh's and FinnGen's TTC>T deletion at GRCh38 4:169,071,078 (Ensembl's rs10610954)
+    gene: ""
+    phenotype: LOC105377527 region, longevity, Taiwanese
+    trait_efo_id: OBA_VT0005372
+    effect_allele: TTC
+    effect_size: 2.78
+    effect_measure: OR
+    stat_significance: suggestive
+    direction: protective
+    genotypes:
+      - genotype: TTC/TTC
+        state: neutral
+        conclusion: >-
+          You carry two copies of the more common version of this DNA position, as about 56 in 100 people of European
+          ancestry and 67 in 100 of East Asian ancestry do. It is the reference the other combinations are compared
+          with. The position, a short repeat on chromosome 4, lies in a stretch of DNA that makes no protein. One
+          Taiwanese study linked the other, shorter version to dying before 95, but a large European study of
+          long-lived people found the opposite lean, so it is not counted for or against lifespan.
+      - genotype: T/TTC
+        state: neutral
+        conclusion: >-
+          You carry one copy of a shorter version of this DNA position (about 38 in 100 people of European ancestry
+          do). One Taiwanese study found it less often among people who lived to 95, but a large European study of
+          long-lived people found it slightly more often among them, so it is not counted for or against lifespan.
+      - genotype: T/T
+        state: neutral
+        conclusion: >-
+          You carry two copies of a shorter version of this DNA position (about 6 in 100 people of European ancestry
+          do). One Taiwanese study found it less often among people who lived to 95, but a large European study of
+          long-lived people did not bear that out, so it is not counted for or against lifespan.
+studies:
+  - rsid: rs1732444170
+    note: pmid-41949656
+    quote: q19
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: Taiwanese hospital patients who died at 95 or over against those who died at 65 to 75 (one hospital)
+    ancestry: [EAS]
+    n_cases: 248
+    sample_size: 1121
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: suggestive
+    p_value: "1.70E-06"
+    p_value_num: 1.7e-06
+    effect_size: 2.78
+    effect_measure: OR
+    effect_unit: odds of dying at 95 or over per TTC allele (the printed 0.36 per T, inverted)
+    effect_allele: TTC
+    direction: protective
+    statistical_test: "Hsieh 2026's logistic GWAS of the 95-and-over group (Table 3, q18, q19), 248 cases and 873 controls (q23); T pooled 0.174; solved per Alt, controls 0.200 and cases 0.083 (derived); controls fit gnomAD EAS 0.183 (db-ensembl-116#q825, P 0.12, derived), read as printed; log OR −1.022 per T, SE 0.213 from P (derived); suggestive line 1e-5 (q4)"
+    curator: claude-opus-5-5
+  - rsid: rs1732444170
+    note: pmid-41949656
+    quote: q21
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: Taiwanese validation cohort (a second hospital, aged 85 and over), against controls aged 65 to 75 not its own (q5, q10)
+    ancestry: [EAS]
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: nominal
+    p_value: "0.009"
+    p_value_num: 0.009
+    p_one_sided: 0.0045
+    effect_size: 2.07
+    effect_measure: OR
+    effect_unit: odds of dying at 95 or over per TTC allele (the printed 0.483, inverted)
+    effect_allele: TTC
+    direction: protective
+    statistical_test: "Table 4 (q21): OR 0.483 per T, SE of the log OR 0.278; the same direction; its controls are the discovery's age band and not its own, so not independent (D19.1)"
+    curator: claude-opus-5-5
+  - rsid: rs1732444170
+    note: pmid-31413261
+    quote: q290
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's longevity meta-analysis; no UK Biobank data)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.3327"
+    p_value_num: 0.3327
+    effect_size: -0.0385
+    effect_measure: beta
+    effect_unit: log odds of survival to the 99th percentile per TTC allele (the printed d +0.0385, sign turned)
+    effect_allele: TTC
+    direction: risk
+    statistical_test: "Deelen 2019's summary statistics (GCST008599) at GRCh37 4:169,992,229, d the deletion at 0.24, SE 0.0397 (q290); 90th d +0.0186, SE 0.0255, P 0.47 (q289); against Hsieh's T log OR −1.022 (SE 0.213) on the same scale (D26.11): heterogeneity P 1.0e-6 (99th) and 1.3e-6 (90th), power 1.00, a D21 red flag down to 0.10 and 0.07 of the effect (derived)"
+    curator: claude-opus-5-5

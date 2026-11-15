@@ -4297,3 +4297,10 @@ own splicing in fibroblasts, ZDHHC3 and EXOSC7 expression in blood cells and tis
 
 2_219055570_C_T (rs149554120, row 121): a record with no credible set (q1199); 2_219055570_T_C none (as q1198). For
 row 121.
+
+## Reading 2026-11-15, record
+
+> [q1200] data variant null
+
+4_169071078_T_A, 4_169071078_T_TTC, 1_188090337_C_G and 1_188090337_G_C (rows 122, 123): no record (q1200; each answer
+the same line). For rows 122 and 123.

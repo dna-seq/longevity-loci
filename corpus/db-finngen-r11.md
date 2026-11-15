@@ -686,3 +686,10 @@ untested. For row 120.
 
 FinnGen R11's death endpoint at rs149554120 (row 121): T −0.027 (SE 0.087), P 0.76, T 0.20 % (q91): T with slightly
 fewer deaths, flat; a database line. For row 121.
+
+## Reading 2026-11-15, record
+
+> [q92] 4 169071078 TTC T rs146423901,rs10610954 SH3RF1 0.00905879 2.04293 -0.0247773 0.00949383 0.192176 0.189609 0.192498
+
+FinnGen R11's death endpoint at the indel (row 122): TTC>T, the deletion T at 0.19, β −0.025 (SE 0.0095), P 0.009
+(q92): T with fewer deaths, against Hsieh's T shorter-lived; a database line (D29.1, D30.12). For row 122.
