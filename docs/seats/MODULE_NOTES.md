@@ -202,3 +202,8 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
 - 2026-11-15, batch twelve rehearsed (trunk ca028a8, 0.8.6): 112 loci, 336 variant rows, 529 studies, 305/305 VRS
   alleles identified; the polygon's content_signature equals ours (68e345d2); receipt appended. Warnings: 16 carried
   indel VRS ids (rows 22 and 34 added three), not closed, ClinVar currency; build_diagnoses empty.
+- 2026-11-15, D32 (the person's D4: the 18 biological-ageing marker loci as an unscored section): carried in 0.8 as
+  category ageing_markers, every genotype state and direction neutral, the tendency in conclusion, phenotype and the
+  effect columns; no score since the module authors no weights. 0.8 has no per-section unscored or folded field. Put
+  to the lead (640483383): the export tags every variant OBA_VT0005372 and gives BIOMARKER studies no trait, so a
+  marker row needs the marker's trait (the export's change). Check the first marker row's projection when it lands.
