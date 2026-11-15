@@ -1,4 +1,4 @@
-# The seed list's locus 131, NUAK1 (12q23.3). Curated 2026-11-16. Lead rs2730486, the seed's only rsID (Hsieh 2026's
+# The seed list's locus 131, NUAK1 (12q23.3). Curated 2026-11-15. Lead rs2730486, the seed's only rsID (Hsieh 2026's
 # 90-and-over Taiwanese locus): intronic in NUAK1, GRCh38 12:106,083,386 C/G, GRCh37 12:106,477,164, G at 0.43 in
 # gnomAD's East Asian genomes and 0.22 in the non-Finnish, G the discovery's shorter-lived allele and C the
 # longer-lived. Open Targets 26.09 holds it only in a GTEx muscle eQTL set for NUAK1; the GWAS Catalog (2026-10-29)
@@ -7,14 +7,15 @@ locus_id: 131
 locus_name: NUAK1
 verdict: re-tiered
 verdict_reason: >-
-  Tier D, from the seed's C: a sub-genome-wide East Asian discovery that Deelen 2019 contradicts on the same scale at
-  the variant itself (D31.13's Hsieh bullet, D26.11, D22.3; rows 113 and 122's shape). Hsieh 2026 compared 922
+  Tier D, from the seed's C, the curator's default put to the lead: a sub-genome-wide East Asian discovery that Deelen
+  2019 contradicts on the same scale at the variant itself (D31.13's Hsieh bullet, D26.11; rows 113 and 122's shape,
+  though here Deelen leans the discovery's way, flat, where 122's leaned against). Hsieh 2026 compared 922
   Taiwanese hospital patients who died at 90 or over with 871 who died at 65 to 75 at the same hospital: G (0.436,
   pooled) OR 0.66 per G, P 1.7e-6, under the paper's suggestive line of 1e-5 (log OR per C +0.416, SE 0.087 from its
   P, derived). Solved from the OR and the counts (per Alt, the pooled frequency, as rows 113 and 119 read the
   tables), the controls carry G at about 0.488 and the long-lived at about 0.387. Against gnomAD's East Asian genomes
   (0.430, the reference D31.13 fixes) the controls misfit (z 4.2, P 2.4e-5 with its error; against 1000 Genomes EAS
-  P 0.0095; Taiwan Biobank's printed 0.456 sits between), so D31.10 reads the discovery against the reference: the
+  P 0.0095; against Taiwan Biobank's printed 0.456, no count given, P 0.0067 and a stronger read, C +0.29), so D31.10 reads the discovery against the reference: the
   long-lived give C +0.182 per allele (SE 0.055), P 0.001 (derived), above it, so something is left to read (D31.11
   not reached). One branch differs: against the southern Han CHS (0.429, 210 alleles) the controls fit (P 0.098) and
   the long-lived read +0.174, P 0.24, D31.11's shape, which would also make the row D; gnomAD's East Asians are the
@@ -23,23 +24,31 @@ verdict_reason: >-
   Deelen 2019 tests the variant itself (C at 0.78): 90th percentile +0.0295 (SE 0.0231), P 0.20, and 99th +0.0338 (SE
   0.0361), P 0.35, leaning C's way but flat; against Hsieh's read on the same scale, two log odds of long-lived
   status, heterogeneity P 0.011 and 0.025, power 1.00, holding down to 0.60 and 0.81 of the read effect (against the
-  printed effect, 1.7e-5 and 4.9e-5; derived): a D21 red flag, `replication_failed`. No independent genome-wide pass
+  printed effect, 1.7e-5 and 4.9e-5; derived): a D21 red flag, `replication_failed`. The reference read is the conservative scale: across
+  Hsieh's OR interval (0.56 to 0.78) it runs from C +0.27 (P 1.8e-6; heterogeneity P 8.5e-5) to +0.10 (P 0.077;
+  heterogeneity P 0.26, the long-lived near the reference, D31.11's shape, also D); the printed contrast, like
+  Deelen's a long-lived group against a younger one, fails Deelen throughout (heterogeneity P 0.016 at the upper
+  bound; derived). D22.3 spares a cross-ancestry null whose look-ups lean the discovery's way: Deelen (one-sided
+  0.10, 0.17), Park and Zenin lean C's way, Timmers, FinnGen and Foote the other, none nominal for C. The default
+  reads D31.13's Hsieh bullet as deciding (a same-scale Deelen contradiction makes the row D); the alternative, C by
+  D22.3, is put to the lead. No independent genome-wide pass
   in Deelen's own ancestry and class outweighs it (D34.1). Hsieh's 90-and-over APOE line is a powered null of
   Hsieh's sample (ε4 OR 0.96, P 0.82; D34.2), so no conversion to a lifespan scale is its own, and the Timmers and
   Park tests are approximate and set no flag (D31.13): Timmers 2019 has C at beta1 −0.0033 (SE 0.0047), P 0.48, a hair
-  the other way; Park 2025 C −0.0008 on the Martingale residual (its columns swapped), P 0.31; FinnGen R11's deaths G
+  the other way; Park 2025 C −0.0008 on the Martingale residual (its columns swapped), fewer deaths, C's way, P 0.31; FinnGen R11's deaths G
   −0.0039, P 0.67, a database line (D29.1); all flat. Zenin 2019 flat (P 0.54), so healthspan 0. Foote 2025's factor 2
-  puts C on the frailer side (P 0.017) and factors 1, 3, 5 and 6 the same side, flat; a D row's Foote factor scores
-  nothing (multivariate), named. Pilling 2017's four parental scans are flat (P 0.31 to 0.97). The literature search
+  (unhealthy lifestyle) puts C on the frailer side (P 0.017) and factors 1, 3, 5 and 6 the same side, flat; a D row's Foote factor scores
+  nothing (multivariate), named. Pilling 2017's four parental scans are flat, both signs (P 0.31 to 0.97). The literature search
   (the rsID; Semantic Scholar answered 429, its part unchecked) finds nothing; Hsieh is found by its PMID, and its one
   citing paper is a Finnish polygenic lifespan score, with no single-variant test. The ancestry is named here, not as
   a context token (D30.15). Every genotype neutral (D25.2). Exceptional survival 0 (Deelen leans C's way, short of
   nominal, and a D row's discovery gives no +, D28.10); lifespan 0 (Timmers and Park flat); healthspan 0 (Zenin
-  flat). Mechanism ageing in general (D25.7): intronic in NUAK1, where G lowers NUAK1 expression in GTEx muscle
-  (beta −0.15, P 1.0e-5, PIP 0.019), a non-scoring set, named. Causal C4 and effector E4: no lifespan-class credible
+  flat). Mechanism ageing in general (D25.7): intronic in NUAK1, where Open Targets' GTEx muscle eQTL set for NUAK1
+  holds it (beta −0.15 for G, the variant's alternative allele, P 1.0e-5) at PIP 0.019, set membership only, a
+  non-scoring set, named. Causal C4 and effector E4: no lifespan-class credible
   set. Descriptive. Age of action unknown.
 axes:
-  tier: {value: D, cites: [pmid-41949656#q28, pmid-41949656#q29, pmid-41949656#q30, pmid-41949656#q9, pmid-41949656#q4, pmid-41949656#q5, pmid-41949656#q10, pmid-41949656#q16, db-ensembl-116#q877, db-ensembl-116#q879, db-ensembl-116#q880, pmid-31413261#q297, pmid-31413261#q298, pmid-30642433#q398, pmid-40021682#q122, db-finngen-r11#q98, pmid-30729179#q161, pmid-40759756#q110, db-gwascatalog-2026.10.29#q581]}
+  tier: {value: D, cites: [pmid-41949656#q28, pmid-41949656#q29, pmid-41949656#q30, pmid-41949656#q9, pmid-41949656#q4, pmid-41949656#q5, pmid-41949656#q10, pmid-41949656#q16, db-ensembl-116#q877, db-ensembl-116#q879, db-ensembl-116#q880, pmid-31413261#q297, pmid-31413261#q298, pmid-30642433#q398, pmid-40021682#q122, db-finngen-r11#q98, pmid-30729179#q161, pmid-40759756#q110, pmid-40759756#q111, pmid-29227965#q162, pmid-29227965#q163, pmid-29227965#q164, pmid-29227965#q165, db-gwascatalog-2026.10.29#q581]}
   mechanism: {value: general_ageing, cites: [db-ensembl-116#q875, db-opentargets-26.09#q1224, db-opentargets-26.09#q1225]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
