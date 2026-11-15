@@ -13,20 +13,19 @@ verdict_reason: >-
   Wright 2019's AncestryDNA fathers born 1886-1918 lean the discovery's way at rs6753712 (r² 0.84 in CEU, its G with
   the lead's T, G shorter-lived, P 0.0019 after genomic control, one-sided about 0.001; Supplemental Table 8, which
   lists only lines under P 0.003, so selected on its own P): counted as an independent replication, as row 40 counted
-  its Table 8 line, and the tier stays B by D28.7 either way; whether a Table 8 line counts is put to the lead. Nothing
+  its Table 8 line, and the tier stays B by D28.7 either way; a Table 8 line counts (D29.18). Nothing
   powered contradicts it: Timmers' own Figure 4 look-up in the earlier longevity sample, at rs6757542
-  (r² 0.83), is flat (one-sided 0.44, Alpha 0.08); Deelen 2019 leans C's way (90th one-sided 0.16, 99th 0.10), a flag
-  under APOE's factor at the 90th only (power 1.00, heterogeneity P 0.0073; the 99th power 0.92, P 0.14; the mean
-  factor power 0.63), so none
+  (r² 0.84 in CEU, Ensembl's, not Figure 4's R2 column, D31.2), is flat (one-sided 0.44, Alpha 0.08); Deelen 2019 leans C's way (90th one-sided 0.16, 99th 0.10), a flag
+  under APOE's factor at the 90th (power 1.00, heterogeneity P 0.0073) and at the 99th under its own factor 6.22
+  (D31.4: power 0.99, heterogeneity P 0.041), under the mean factor at neither (power 0.63 and 0.49), so none
   (D25.3); FinnGen R11's death endpoint leans C's way (one-sided 0.10; power 0.87, heterogeneity P 0.19), no flag, a
   database line. Wright's other fathers' line nearby, rs6752442 (r² 0.54), leans the same way, named. Pilling 2017's
   deposits returned no line at the lead or in the window, unread rather than absent. The GWAS Catalog holds no
   association for the lead; Rosoff 2023's tables hold no line; the rsID literature search (all six sources answered)
   finds Timmers 2019 alone. Within UK Biobank,
   Park 2025's own survival co-occurs (C fewer deaths, P 0.011, its allele columns swapped). Lifespan + (Timmers);
-  healthspan 0 (Zenin 2019 C's way, P 0.37; Foote 2025's general frailty factor C less frail, P 0.035, and four of
-  six factors its way, none genome-wide: a multivariate factor fills the healthspan cell only when genome-wide beside a
-  co-occurring lifespan study, as at 91 and 99, D16); exceptional survival 0 (Deelen and Figure 4 flat).
+  healthspan + (D31.4: Foote 2025's general frailty factor C less frail, one-sided 0.017, with F2, F3 and F5 its way,
+  none genome-wide; Zenin 2019 C's way, flat, P 0.37); exceptional survival 0 (Deelen and Figure 4 flat).
   Foote at the lead is read (D27.3's GBX2/ASB18 check): every deposit holds the line, none genome-wide. Mechanism
   general ageing: the lead's only other sets are educational attainment and its kin (C with more schooling, posterior
   0.01 to 0.22) and smoking initiation, none colocalising with a lifespan set here, and education is a prior, not a
@@ -37,12 +36,12 @@ verdict_reason: >-
   moderator at the lead is null (P 0.85; Figure 5 source data), but the fathers' 40-50 band prints the other sign and
   the mothers' bands are unread, so not lifelong (as 67 and 51). The evidence is European.
 axes:
-  tier: {value: B, cites: [pmid-30642433#q358, pmid-30642433#q42, pmid-30642433#q359, pmid-30642433#q360, pmid-31413261#q242, pmid-31413261#q243, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, db-finngen-r11#q76, pmid-31484785#q150, db-ensembl-116#q723, pmid-31484785#q151, db-ensembl-116#q725, db-ensembl-116#q726, pmid-40021682#q103, pmid-40021682#q32]}
+  tier: {value: B, cites: [db-ensembl-116#q756, pmid-30642433#q358, pmid-30642433#q42, pmid-30642433#q359, pmid-30642433#q360, pmid-31413261#q242, pmid-31413261#q243, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, db-finngen-r11#q76, pmid-31484785#q150, db-ensembl-116#q723, pmid-31484785#q151, db-ensembl-116#q725, db-ensembl-116#q726, pmid-40021682#q103, pmid-40021682#q32]}
   mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q1122, db-opentargets-26.09#q1124]}
   pleiotropy: {values: ["mech:education"], cites: [db-opentargets-26.09#q1123, db-opentargets-26.09#q1124]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "0",
-            cites: [pmid-30729179#q140, pmid-40759756#q41, pmid-30642433#q359, pmid-31413261#q242, pmid-31413261#q243, pmid-30642433#q360]}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
+            cites: [pmid-40759756#q41, pmid-40759756#q43, pmid-40759756#q44, pmid-40759756#q46, pmid-30729179#q140, pmid-40759756#q41, pmid-30642433#q359, pmid-31413261#q242, pmid-31413261#q243, pmid-30642433#q360]}
   actionability: {label: descriptive, cites: [pmid-30642433#q358]}
   context: {values: [eur_only_evidence], cites: [pmid-30642433#q358, pmid-30642433#q359]}
 flags:
@@ -114,7 +113,7 @@ studies:
     proxy_rsid: rs6757542
     effect_size: 0.00169
     effect_measure: beta
-    effect_unit: longevity log odds per A allele of rs6757542 (A with the lead's C, r² 0.83), on Timmers' replication scale
+    effect_unit: longevity log odds per A allele of rs6757542 (A with the lead's C, r² 0.84 in CEU), on Timmers' replication scale
     effect_allele: A
     direction: protective
     statistical_test: "Figure 4 source data, Longevity Replication (q360): SE 0.01176, one-sided P 0.443, Alpha 0.085 (SE 0.59) against the loci's mean 0.42 (q92); flat"
@@ -134,7 +133,7 @@ studies:
     effect_unit: log odds of survival to the 90th percentile per C allele (printed −0.0247 per T)
     effect_allele: C
     direction: protective
-    statistical_test: "Deelen 2019's summary statistics (GCST008598), SE 0.0244, effective N 11,615; 99th percentile T -0.0490, P 0.20 (q243). D25.3 from Timmers' per-self C +0.0240: APOE's factor power 1.00, heterogeneity P 0.0073; mean factor power 0.63, P 0.37; a flag under APOE's only, so none"
+    statistical_test: "Deelen 2019's summary statistics (GCST008598), SE 0.0244, effective N 11,615; 99th percentile T -0.0490, P 0.20 (q243). D25.3 from Timmers' per-self C +0.0240: APOE's factor power 1.00, heterogeneity P 0.0073; mean factor power 0.63, P 0.37; the 99th at its own factor 6.22 (D31.4, pmid-31413261#q250): APOE's power 0.99, heterogeneity P 0.041, the mean factor's power 0.49; a flag under APOE's only, so none"
     curator: claude-opus-5-5
   - rsid: rs10211471
     note: pmid-30642433
