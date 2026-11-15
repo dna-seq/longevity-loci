@@ -716,3 +716,10 @@ FinnGen R11's DEATH endpoint at rs189871470 (q97): A at 0.048 % (cases 0.061 %, 
 FinnGen's ε4 β 0.105 (q4), an APOE-only calibration (derived, approximate): Kolbe's OR 16.5 would expect β −0.37,
 power 0.74, heterogeneity P 0.039 counting the discovery's own error (log OR 2.80, SE 0.90 from 7 and 1 copies); the reference-read OR 6.6 expects −0.25, power 0.46. Below D21's power, and an
 APOE-only calibration sets no flag (D31.12). For row 124.
+
+## Reading 2026-11-15, record
+
+> [q98] 12 106083386 C G rs2730486 NUAK1 0.668073 0.175176 -0.00388562 0.00906173 0.213485 0.21117 0.213775
+
+FinnGen R11's DEATH endpoint at rs2730486 (row 131): G (0.213) β −0.0039 (SE 0.0091), P 0.67: flat. A database line
+(D29.1). For row 131.

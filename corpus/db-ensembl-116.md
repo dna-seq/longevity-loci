@@ -3196,3 +3196,25 @@ NM_001375567.1): serine 253 to asparagine, SIFT tolerated, PolyPhen benign (q869
 GRCh37 9:20,770,089 (q871). A in gnomAD's non-Finnish European exomes 0.0063 % (70 copies, q872), genomes 0.013 %
 (9 copies, q873). Against the exomes the younger controls expect 0.52 copies and show 1 (P of one or more 0.40),
 and the long-lived show 4 where 0.16 are expected: OR 25.6, exact Poisson P 2.2e-5 (derived). For row 126.
+
+## Reading 2026-11-15, record
+
+> [q874] [0] allele_string C/G end 106083386 id rs2730486 strand 1 most_severe_consequence intron_variant start 106083386 assembly_name GRCh38 seq_region_name 12 input rs2730486
+
+> [q875] [0].transcript_consequences[0] gene_symbol NUAK1 gene_symbol_source HGNC strand -1 canonical 1 gene_id ENSG00000074590 variant_allele G biotype protein_coding mane_select NM_014840.3 transcript_id ENST00000261402 impact MODIFIER hgnc_id HGNC:14311
+
+> [q876] mappings[0] strand 1 allele_string C/G end 106477164 ancestral_allele C seq_region_name 12 assembly_name GRCh37 coord_system chromosome start 106477164 location 12:106477164-106477164
+
+> [q877] populations[9] allele G allele_count 2227 frequency 0.4304 population gnomADg:eas
+
+> [q878] populations[19] frequency 0.221 population gnomADg:nfe allele_count 15028 allele G
+
+> [q879] populations[68] frequency 0.428571428571429 population 1000GENOMES:phase_3:CHS allele G allele_count 90
+
+> [q880] populations[73] allele G allele_count 441 frequency 0.4375 population 1000GENOMES:phase_3:EAS
+
+Row 131, rs2730486: intronic in NUAK1 (MANE ENST00000261402), GRCh38 12:106,083,386 C/G (q874, q875), GRCh37
+12:106,477,164 (q876). G in gnomAD's East Asian genomes 0.430 (2,227 of 5,174, q877), non-Finnish 0.221 (q878),
+1000 Genomes CHS 0.429 (q879) and EAS 0.4375 (q880). Hsieh's solved controls (G 0.488) misfit gnomAD EAS (z 4.2, P
+2.4e-5 with its error) and 1000 Genomes EAS (P 0.0095), and fit CHS (P 0.098); the long-lived (0.387) read against
+gnomAD EAS give C +0.182 per allele (SE 0.055), P 0.001; against CHS +0.174, P 0.24 (derived). For row 131.

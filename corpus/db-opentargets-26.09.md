@@ -4371,3 +4371,17 @@ For row 96.
 > [q1222] data variant null
 
 9_20770090_G_A and 9_20770090_A_G (rs199678370, row 126): no record either way (q1222). For row 126.
+
+## Reading 2026-11-15, record
+
+> [q1223] data.variant.credibleSets count 1
+
+> [q1224] data.variant.credibleSets.rows[0].study id gtex-v10_ge_muscle_ensg00000074590 traitFromSource ENSG00000074590 studyType eqtl
+
+> [q1225] data.variant.credibleSets.rows[0].locus.rows[0] posteriorProbability 0.01899014988784826 beta -0.15434 pValueMantissa 1.0089999437332153 pValueExponent -5
+
+> [q1226] data variant null
+
+12_106083386_C_G (rs2730486, row 131): one credible set, a GTEx v10 muscle eQTL for NUAK1 (q1223, q1224), the
+variant at PIP 0.019, beta −0.154 for G, P 1.0e-5 (q1225); no lifespan-class set (causal C4, effector E4; NUAK1
+named in prose). The reverse order has no record (q1226). For row 131.
