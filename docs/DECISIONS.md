@@ -861,7 +861,7 @@ standing word (pacing off, "full steam ahead"; the advisor pattern for the requi
     the curator's (a). Rejected: (b), D on a seven-fold control deficit in about 8,000 alleles, which would make any
     rare-variant discovery with a sparse control count overfit.
 11. **A discovery read against the reference that shows nothing there is an overfit source; the row is then tiered
-    on the lead's other evidence** (D31.10 with D30.17's item 17 of D28, "an overfit line at the locus sets
+    on the lead's other evidence** (D31.10 with D29.17, "an overfit line at the locus sets
     nothing"). 109 PSMF1/RSPO4: Beccacece's Calabrian controls hold about 2.5 T copies where SICS's 2.9 % expects
     23.5 (Poisson P 2e-8), and the long-lived sit at the reference (16.5 against 17.3). The suggestive Beta is the
     controls' deficit and sets nothing; no `replication_failed`, since SICS's and Timmers' flags tested that Beta,
