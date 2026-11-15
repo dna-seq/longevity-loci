@@ -21,8 +21,9 @@ verdict_reason: >-
   AncestryDNA lines in the window (FGFR2's rs2981428 and three more at 22 to 34 kb; others at 300 to 480 kb) tag
   nothing (none in the lead's CEU window at r² 0.3, rs2243609 at 0.09, the rest with no CEU pair), and Table 9's
   rs17102287 (r² 0.35) is a weak tag and a Table 9 line, named: AncestryDNA untested. Foote 2025's factors lean A's way
-  on two (unhealthy lifestyle P 0.049, disability 0.0069), multivariate; its general and F4 deposits read back
-  incomplete (the general factor's window ends at 123,058,176, short of the lead), unread; Rosoff 2023 holds no line. The literature
+  on two (unhealthy lifestyle P 0.049, disability 0.0069), multivariate; its general and F4 deposits hold no line
+  at the lead, gaps in the deposits (general chr10 123,058,176 to 127,688,989; F4 119,377,200 to 127,711,500), untested
+  (D31.4); Rosoff 2023 holds no line. The literature
   search (Europe PMC, OpenAlex, PubMed, Crossref, preprints; Semantic Scholar answered 429, its part unchecked) finds
   Zenin alone among lifespan studies. Outcome cells on a D row (D28.10, D30.17): no + from a study that shares the
   discovery's sample, so healthspan 0 and lifespan 0; nothing gives −; exceptional survival 0 (Deelen flat). Every
@@ -44,7 +45,7 @@ axes:
 flags:
   - {token: replication_failed, cites: [pmid-30729179#q145]}
   - {token: "causal:C2", cites: [db-opentargets-26.09#q1148, db-opentargets-26.09#q1149]}
-  - {token: "effector:E3", cites: [db-opentargets-26.09#q1150, db-opentargets-26.09#q1151, db-opentargets-26.09#q1164, db-opentargets-26.09#q1165]}
+  - {token: "effector:E3", cites: [db-opentargets-26.09#q1150, db-opentargets-26.09#q1151, db-opentargets-26.09#q1164, db-opentargets-26.09#q1165, db-opentargets-26.09#q1181]}
 variants:
   - rsid: rs2860197
     gene: ""

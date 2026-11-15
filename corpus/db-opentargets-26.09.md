@@ -4151,6 +4151,8 @@ locus-to-gene FGFR2 0.89 (q1150-q1151), E2 (no colocalisation read). For row 134
 
 > [q1165] data.credibleSet.colocalisation.rows[0] rightStudyType tuqtl h4 0.9855388618019577 clpp 0.058186062875211865
 
+> [q1181] data.credibleSet.colocalisation.rows[0].otherStudyLocus.study.target approvedSymbol WDR11
+
 A set's own `beta` and P belong to the set's lead variant, not to the variant queried (q1133-q1142 and q1147's
 paragraphs read them as the queried lead's; corrected here). The queried lead's own line inside each set, row 108
 (7_75465064_A_G, q1153-q1157): essential hypertension β −0.000005, P 5.3e-5; atrial fibrillation with reimbursement
