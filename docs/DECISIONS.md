@@ -925,3 +925,16 @@ assigned, because a marker's reading depends on input the module does not have (
 from germline WGS is not a reliable measurement. The curator writes them after the scored loci, in the queue's
 order; how the section is carried in just-dna-format 0.8 is the module seat's to settle at export. Rejected:
 option 2, a separate module later, which the person declined.
+
+## D33 — APOE lives in this module, as one result per ε pair (the person's D2, 2026-11-15)
+
+The person answered desk #307 with option 1 ("A: 1"). APOE (seed locus 96) is curated inside this longevity module
+as the requirements' R-APOE-1 states: scored once, as the ε diplotype read from rs429358 and rs7412, one result per ε
+pair, worded for longevity, stating the Alzheimer's implication plainly, and linked to the separate existing APOE
+module; nearby stand-in positions are `ld_proxy_of` and not scored. In just-dna-format 0.8 the pairs are the
+haplotype and diplotype tables the module seat's probe built (strict compile and the registry's validation pass).
+Two limits stand, as the desk's updates said: a pair result cannot link to a study, so its evidence lives in its
+written text; and the registry page lists the tables as files without showing their rows. Whether the app displays
+them is unchecked (a local install, which waits on the person's word); the module seat says so at the first build
+that carries them. Rejected: option 2 (APOE only in the separate module) and option 3 (option 1 with a skip
+setting).

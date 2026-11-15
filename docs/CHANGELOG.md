@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- D33, the person's D2 (desk #307): APOE is curated in this module as one result per ε pair; `dashboard.py --left` takes 96 back.
 - `loci export`: on an `ageing_markers` row (D32) the variant carries its marker's own `trait_efo_id` and a BIOMARKER study of it the same, so a marker locus is not tagged as a lifespan variant (the module seat's finding). Every other row exports as before.
 - D32, the person's D4 (desk #312): the 18 biological-ageing marker loci are curated as an unscored section of this module; `dashboard.py --left` no longer holds them out.
 - D31.13, batch twelve's read: a frequency reference fixed before the result; 116 C on either reading (R-TIER-4, R-TIER-2); D31.12 amended, an APOE-only calibration flags nothing; opposed Foote factors give healthspan 0; a null discovery APOE line voids borrowed factors (Hsieh rows rest on same-scale tests).
