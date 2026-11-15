@@ -21,18 +21,20 @@ verdict_reason: >-
   UK Biobank parental validation (Table 3, OR 1.11, 0.99 to 1.24, P 0.081, one-sided about 0.04; per offspring allele against half the discovery's
   effect, underpowered, 0.51, and in agreement, heterogeneity P 0.89, derived; the parents are the ones Timmers pools, and whether that look counts
   is put to the lead) and Pilling 2017's mothers at
-  rs10755078 (r² 1.00; one-sided 0.029), while Pilling's fathers lean the other way (P 0.095) and both parents and the
+  rs10755078 (r² 1.00; one-sided 0.029), while Pilling's fathers lean the other way (P 0.095, one-sided 0.048 against) and both parents and the
   top 10 % are flat (P 0.90, 0.52). Nothing independent passes: FinnGen R11's death endpoint has A with slightly more
   deaths (P 0.67), a database line (D12, D30.12); Park 2025's own survival A with slightly more deaths (P 0.43, its
   allele columns swapped), UK Biobank. Wright 2019's AncestryDNA holds one Table 8 line within 500 kb, mothers born
   1886-1918 at rs573186 (219 kb), not among the lead's 65 CEU variants at r² 0.5 and with no CEU pair, and Table 9
   nothing: untested. Zenin 2019's healthspan at rs10755078 flat (the lead's A a little less healthy, P 0.48); Foote
-  2025 mixed at the same proxy (the lead's A more frail on cognition, P 3.1e-4, less disabled, P 0.044), multivariate;
+  2025's factors at the same proxy point both ways at nominal P (the lead's A more frail on cognition, P 3.1e-4,
+  one-sided 1.5e-4 against; less disabled, P 0.044, one-sided 0.022 for), so healthspan is 0 (D31.13);
   Rosoff 2023 holds no line. Timmers' strongest line within 500 kb is a rare variant (rs796791765, 1.4 %) at P 0.0011:
   nothing suggestive.
   The literature search (the rsID, and KALRN with longevity terms; Semantic Scholar answered 429, its part unchecked)
   finds Deelen alone among lifespan studies; a brain expression study finds two KALRN isoforms rising with age, no
-  lifespan test. Every genotype neutral (D25.2); outcome cells 0 (D28.10). Mechanism ageing in general (D25.7): KALRN,
+  lifespan test. Every genotype neutral (D25.2); outcome cells 0 (D28.10; healthspan by D31.13, Foote's opposed
+  factors). Mechanism ageing in general (D25.7): KALRN,
   a Rho guanine-exchange factor of neuronal dendrites, named in prose; at the lead's own line in an IGF-1 set the
   deletion raises IGF-1 slightly (posterior 0.021), named, no route shown. Causal C4 and effector E4: no lifespan-class
   set holds it; its expression and splicing QTL sets name KALRN, which a lifespan set would need to carry. Descriptive.
@@ -43,7 +45,7 @@ axes:
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
-            cites: [pmid-30642433#q380, pmid-29227965#q137, pmid-30729179#q151, pmid-31413261#q267]}
+            cites: [pmid-30642433#q380, pmid-29227965#q137, pmid-30729179#q151, pmid-31413261#q267, pmid-40759756#q84, pmid-40759756#q85]}
   actionability: {label: descriptive, cites: [pmid-31413261#q263]}
   context: {values: [eur_only_evidence], cites: [pmid-31413261#q263, pmid-30642433#q380]}
 flags:
@@ -116,7 +118,7 @@ studies:
     p_one_sided: 0.0405
     effect_size: 1.11
     effect_measure: OR
-    effect_unit: odds of a parent surviving to the 99th percentile per A allele
+    effect_unit: odds of a parent surviving to the 99th percentile per offspring A allele
     effect_allele: A
     direction: protective
     statistical_test: "Table 3, Deelen 2019's UK Biobank parental-longevity look-up (q264), 0.99-1.24; one-sided about 0.04 (derived); per offspring allele against half the discovery's log OR (0.096), power 0.51, heterogeneity P 0.89 (derived); UK Biobank's parents sit inside Timmers, the sample that fails at power, so no independent pass (D30.11, D30.16)"
