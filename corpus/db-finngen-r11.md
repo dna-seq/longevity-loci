@@ -615,3 +615,10 @@ row 1.
 FinnGen R11's death endpoint at rs2758603 (row 9): ref T, alt C (0.34 in Finns) −0.0173 (SE 0.0079), P 0.028: C with
 fewer deaths, one-sided 0.014, the discovery's way; a database line, which never replicates (D12, D30.12): named. For
 row 9.
+
+## Reading 2026-11-15, record
+
+> [q84] 3 124678474 AT A rs3830412,rs398091791 KALRN 0.670622 0.173522 0.00426505 0.0100285 0.162813 0.16399 0.162666
+
+FinnGen R11's death endpoint at rs3830412 (GRCh38 3:124,678,474 AT/A, q84): A (0.163 in Finns) +0.0043 (SE 0.0100),
+P 0.67: the lead's A with slightly more deaths, flat. A database line (D12, D30.12). For row 22.

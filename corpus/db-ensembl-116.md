@@ -2747,3 +2747,15 @@ lies beyond the window and Ensembl prints no EUR pair for it. For row 3.
 
 rs10211471 to rs6757542 (row 101), 1000 Genomes phase 3 CEU: r² 0.84, D′ 0.93 (q756), the value the row cites in
 place of Timmers' Figure 4 R2 column (D31.2). For row 101.
+
+## Reading 2026-11-15, record
+
+> [q757] [0] seq_region_name 3 start 124678475 id rs3830412 strand 1 end 124678480 most_severe_consequence non_coding_transcript_exon_variant assembly_name GRCh38 input rs3830412 allele_string TTTTTT/TTTT/TTTTT/TTTTTTT
+
+> [q758] [14] r2 1.000000 variation1 rs3830412 population_name 1000GENOMES:phase_3:CEU d_prime 1.000000 variation2 rs12631364
+
+> [q759] [34] r2 1.000000 variation1 rs3830412 d_prime 1.000000 population_name 1000GENOMES:phase_3:CEU variation2 rs10755078
+
+rs3830412 (row 22): a poly-T run at GRCh38 3:124,678,475-124,678,480 in a non-coding KALRN transcript exon (q757);
+Deelen's A/AT, FinnGen's AT/A at 124,678,474. In CEU, r² 1.00 to rs12631364 (q758) and rs10755078 (q759), two of
+the lead's 37 proxies at r² 0.8 or more. For row 22.

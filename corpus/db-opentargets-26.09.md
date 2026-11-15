@@ -4209,3 +4209,17 @@ C), ischaemic stroke, CRP, branched-chain amino acids, height; the lead's poster
 own β is printed, alt C raises eGFR (+0.011) and lowers creatinine (−0.012), ischaemic stroke (−0.0055) and CRP
 (−0.0078) (q1172-q1179): C, the longer-lived allele, on the healthier side, none genome-wide at the lead.
 No lifespan-class set (q1180): C4. For row 9.
+
+## Reading 2026-11-15, record
+
+> [q1182] data.variant.credibleSets count 31
+
+> [q1183] data.variant.credibleSets.rows[10].study id GCST90019511 traitFromSource Insulin-like growth factor 1 levels studyType gwas
+
+> [q1184] data.variant.credibleSets.rows[10].locus.rows[0] posteriorProbability 0.020737128079970857 beta 0.007515286763429236 pValueMantissa null pValueExponent null
+
+> [q1185] data.credibleSets count 0
+
+3_124678474_AT_A (rs3830412, row 22): 31 credible sets (q1182), mostly GTEx expression and transcript-usage QTLs of
+KALRN (ENSG00000160145), with blood-count and IGF-1 sets; at the IGF-1 set (q1183) the lead's own line has A +0.0075
+at posterior 0.021 (q1184). None of the nine lifespan-class studies holds it (q1185). For row 22.

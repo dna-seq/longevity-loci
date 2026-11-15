@@ -2064,3 +2064,12 @@ rs2758603 (row 9): two associations (q559), Deelen's longevity at the 99th perce
 rs2273500 (row 99) in the GWAS Catalog: association 2 is cigarettes smoked per day (q560; its P 3e-64 and allele C, q528,
 q529), association 5 chronic obstructive pulmonary disease (q561; P 2e-9, allele C, q530, q531), and association 11
 nicotine dependence, Hancock 2015, P 8e-9 (q562, q563). For row 99.
+
+## Reading 2026-11-15, record
+
+> [q564] _embedded.associations[0] association_id 47713591 risk_frequency 0.22 pvalue_description pvalue_mantissa 8 pvalue_exponent -7 multi_snp_haplotype false snp_interaction false range 1.12-1.30 or_per_copy_num 1.21 or_value 1.21 beta - p_value 8e-07 accession_id GCST008601 pubmed_id 31413261 first_author Deelen J ci_lower 1.12 ci_upper 1.3
+
+> [q565] _embedded.associations[0].reported_trait[0] Longevity (age >99th survival percentile)
+
+rs3830412 in the GWAS Catalog: one association, Deelen's 99th-percentile longevity (q564, q565), A, OR 1.21, P 8e-7.
+For row 22.
