@@ -4,6 +4,11 @@ The curator seat's working state, rewritten to the present before a reset (`docs
 
 ## Now (2026-11-10)
 
+- **Batch fourteen's corrections (D37, 8eda5f7; the lead's handoff 2026-11-16), before the markers:** one commit per
+  row, then the PROGRESS lines, then `done:` to the lead (the module seat rebuilds). Rows: 150, 152, 155, 156, 154, 146,
+  111, 139 (the X rows' Results sentence, "tiered from the seed's X", Table 4's SE check), 138, 140, 147, 148, 151 (cache
+  PPR1042277's supplement), 123 (Fisher, D37.1); 97's healthspan on D37.4 at its next touch. Every frequency comparison
+  restated as Fisher's exact on both counts (D37.1). Then 23 TERC on D37.12 (the lead's (a)).
 - **Markers (D32, D36.3), from 2026-11-16:** every scored seed locus has a row. Left: 23 TERC (fold 104, r² 1.00 CEU),
   30 TERT, 105, 106, 112, 114, 128, 132, 133, 141, 143, 144, 145, 149, 153, 160, 161, then 115, 129, 142 (brain age).
   Plan for a marker row (the first sets the pattern; say it to the lead with 23): mechanism `ageing_markers`; tier by
