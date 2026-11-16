@@ -4,6 +4,8 @@ The curator seat's working state, rewritten to the present before a reset (`docs
 
 ## Now (2026-11-10)
 
+- **After each row: `uv run loci check quotes --since <the row's parent> -q`** (d63682d), in place of the scratchpad
+  subset script. First run, since 7d34929 (every note touched today): located 4,765, exit 0, about 12 minutes.
 - **Full quote checks go to the runner** (its offer, 640823502): ask in #longevity-loci > curation with the commit;
   it runs `loci check quotes` as an ll- job and logs the result in runs/LOG.md. A full run takes about 70 minutes.
 - **Batch seventeen's corrections (D40): done 2026-11-16** (a6aa2af to 9abbb89). Next: whatever the lead queues; the
