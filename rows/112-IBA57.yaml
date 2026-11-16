@@ -7,15 +7,15 @@ locus_id: 112
 locus_name: IBA57
 verdict: kept
 verdict_reason: >-
-  Tier C on the marker's own evidence (D37.12; the seed gives none), until the paper's own P is located: the tier
-  grades the association with GrimAge acceleration, a DNA methylation clock read against calendar age, not longevity,
-  and this row is unscored (D32). Lin 2022 ran a GWAS of epigenetic clocks in 2,309 Taiwan Biobank participants, with a
+  Tier B on the marker's own evidence (D37.12; the seed gives none; C until D38.4, 2026-11-16): the tier grades the
+  association with GrimAge acceleration, a DNA methylation clock read against calendar age, not longevity, and this
+  row is unscored (D32). Lin 2022 ran a GWAS of epigenetic clocks in 2,309 Taiwan Biobank participants, with a
   'prioritized subset analysis' to boost power, and names rs117530284 a new GrimAge locus: each A adds 1.59 years of
-  GrimAge acceleration (1.07 to 2.11), adjusted for sex, BMI, smoking, drinking, exercise, education and ancestry; the
-  GWAS Catalog records it at P 2e-9, A at 0.024, but the abstract prints no P and the full text was not reached (OUP's
-  PDF answered 403, 2026-11-16). A prioritized subset tests fewer variants, so a printed 2e-9 would be genome-wide by
-  any count and give B (one study, unreplicated); resting on a database line alone, the anchor is not the article's
-  figure (D12), so the row is C until that figure is located (the lead, 2026-11-16). It is a small sample with a rare allele and a power-boosting method, so the
+  GrimAge acceleration (1.07 to 2.11), adjusted for sex, BMI, smoking, drinking, exercise, education and ancestry. The
+  abstract prints no P, but its 95 % interval gives SE 0.265, z 6.01, two-sided P 1.8e-9: the article's own figure,
+  derived and said so (D38.4), agreeing with the GWAS Catalog's 2e-9 (A at 0.024); the full text was not reached (no
+  PMC copy; OUP's PDF answered 403, 2026-11-16). A prioritized subset tests fewer variants, so 1.8e-9 is genome-wide by
+  any count: B, one study, unreplicated. It is a small sample with a rare allele and a power-boosting method, so the
   effect carries a winner's curse, named; a 2025 Korean clock GWAS (1,962 people) found by the literature search does
   not name it in its abstract (its lines unread). A is all but absent in Europeans (0.009 %), so no European sample
   tests it: Deelen 2019, Timmers 2019, Pilling 2017, Park 2025, Zenin 2019, Foote 2025 and FinnGen R11 were each looked
@@ -26,7 +26,7 @@ verdict_reason: >-
   Effector E3: locus-to-gene's top is IBA57 at 0.11, the variant in its 3′ UTR. Descriptive. Age of action unknown.
   The evidence is Taiwanese, as `ancestry_specific:eas`.
 axes:
-  tier: {value: C, cites: [pmid-34962275#q1, pmid-34962275#q2, pmid-34962275#q3, pmid-34962275#q4, db-gwascatalog-2026.10.29#q675, db-gwascatalog-2026.10.29#q676, db-gwascatalog-2026.10.29#q677, db-gwascatalog-2026.10.29#q678]}
+  tier: {value: B, cites: [pmid-34962275#q1, pmid-34962275#q2, pmid-34962275#q3, pmid-34962275#q4, db-gwascatalog-2026.10.29#q675, db-gwascatalog-2026.10.29#q676, db-gwascatalog-2026.10.29#q677, db-gwascatalog-2026.10.29#q678]}
   mechanism: {value: ageing_markers, cites: [pmid-34962275#q3, pmid-34962275#q4, db-gwascatalog-2026.10.29#q676]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -55,20 +55,23 @@ variants:
           You carry two copies of the common version of this DNA position, as nearly everyone of European ancestry
           and about 96 in 100 people of East Asian ancestry do. It is the reference the other combinations are
           compared with. The position lies in the IBA57 gene on chromosome 1. Epigenetic clocks estimate age from
-          chemical marks on DNA; they only mean something against your calendar age, so this result carries no score.
+          chemical marks on DNA; a clock's reading only means something against your calendar age, which this report
+          does not have, so this result carries no score.
       - genotype: A/G
         state: neutral
         conclusion: >-
           You carry one copy of a version of this DNA position found mainly in people of East Asian ancestry (about 4 in
           100 carry it, and almost no one elsewhere). One Taiwanese study linked it with a GrimAge epigenetic clock
-          reading about one and a half years older than calendar age, on average. That is a tendency in a marker from
-          one modest study, not a measure of how you are ageing, so it carries no score.
+          reading about one and a half years older than calendar age, on average, in one modest study. That is a
+          tendency in a marker whose reading only means something against your calendar age, which this report does
+          not have, so it carries no score.
       - genotype: A/A
         state: neutral
         conclusion: >-
           You carry two copies of a version of this DNA position found mainly in people of East Asian ancestry, which
           is very unusual. One Taiwanese study linked each copy with an older-reading GrimAge epigenetic clock. That is
-          a tendency in a marker from one modest study, so it carries no score.
+          a tendency in a marker whose reading only means something against your calendar age, which this report does
+          not have, so it carries no score.
 studies:
   - rsid: rs117530284
     note: pmid-34962275
@@ -80,12 +83,12 @@ studies:
     sample_size: 2309
     sample_unit: individuals
     stat_significance: significant
-    p_value: "2E-09"
-    p_value_num: 2.0e-09
+    p_value: "1.8e-9 (derived from the abstract's 95 % interval)"
+    p_value_num: 1.8e-09
     effect_size: 1.5943
     effect_measure: beta
     effect_unit: years of GrimAge acceleration per A allele
     effect_allele: A
     direction: unknown
-    statistical_test: "Lin 2022's GWAS of epigenetic clocks in 2,309 Taiwan Biobank participants (q1) with a prioritized subset analysis (q2); rs117530284 a new GrimAge acceleration locus (q3), 1.5943 years per A (1.0748 to 2.1138) with 16 covariates (q4); the P from the GWAS Catalog's record (GCST90104403, db-gwascatalog-2026.10.29#q675), the abstract printing none; no study design in the vocabulary for a single-cohort GWAS of a marker, so meta_analysis (row 25)"
+    statistical_test: "Lin 2022's GWAS of epigenetic clocks in 2,309 Taiwan Biobank participants (q1) with a prioritized subset analysis (q2); rs117530284 a new GrimAge acceleration locus (q3), 1.5943 years per A (1.0748 to 2.1138) with 16 covariates (q4); the P derived from q4's interval (1.0748 to 2.1138: SE 0.265, z 6.01, P 1.8e-9; D38.4), the GWAS Catalog's record (GCST90104403, db-gwascatalog-2026.10.29#q675) agreeing at 2e-9; no study design in the vocabulary for a single-cohort GWAS of a marker, so meta_analysis (row 25)"
     curator: claude-opus-5-5
