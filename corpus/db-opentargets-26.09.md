@@ -5307,3 +5307,23 @@ rs11780471 (8_27487202_G_A): 11 sets (q1534), none of a lifespan class: smoking 
 and splicing sets for CHRNA2 (ENSG00000120903) and EPHX2 (ENSG00000120915) (q1537, q1538). Row 53's lead's own
 lifespan sets, Pilling's (q680) and Wright's fathers' (q687), list seven and four members (q1539 to q1549), and
 rs11780471 is not among them: the signals' own sets are disjoint (D39.14). For row 168.
+
+## Reading 2026-11-16, record
+
+> [q1550] data.variant.credibleSets count 83
+
+> [q1551] data.variant.credibleSets.rows[9] studyLocusId 167052e3a312422c8a9a42668798937f pValueMantissa 9.520000457763672 pValueExponent -47 beta 0.232512 finemappingMethod PICS
+
+> [q1552] data.variant.credibleSets.rows[9].study id GCST90468117 traitFromSource Breast cancer studyType gwas
+
+> [q1553] data.variant.credibleSets.rows[36] studyLocusId 630a62e0393881c62410f471ba0828da pValueMantissa 1.2400000095367432 pValueExponent -9 beta 0.011133441 finemappingMethod PICS
+
+> [q1554] data.variant.credibleSets.rows[36].study id GCST90000062 traitFromSource Systolic blood pressure studyType gwas
+
+> [q1555] data.variant.credibleSets.rows[11] studyLocusId 1f4ed6fa9820ea2d11ed2465d32a0836 pValueMantissa 5.798999786376953 pValueExponent -9 beta 0.576944 finemappingMethod SuSie
+
+> [q1556] data.variant.credibleSets.rows[11].study id gtex-v10_txrev_brain_substantia_nigra_ensg00000103460_grp_2_upstream_ensg00000103460_cage5 traitFromSource ENSG00000103460.grp_2.upstream.ENSG00000103460_CAGE5 studyType tuqtl
+
+rs4784227 (16_52565276_C_T): 83 sets (q1550), none of a lifespan or healthspan class. β per T: breast cancer +0.23, P 9.5e-47,
+PIP 0.87 (q1551, q1552); systolic blood pressure +0.011, P 1.2e-9 (q1553, q1554); a TOX3 (ENSG00000103460) splicing
+set (q1555, q1556). Many more breast-cancer, pressure and brain-imaging sets named. For row 169.

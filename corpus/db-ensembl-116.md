@@ -4189,3 +4189,21 @@ rs11780471 (row 168, the second signal at 53): GRCh38 8:27,487,202 G/A, G ancest
 genomes (q1201); upstream of EPHX2 (q1202; q374). Phase with row 53's lead rs7844965 from 1000 Genomes' phased EUR
 genotypes (population q1174; first lines q1203, q1204), over 1,006 haplotypes (derived): rs11780471 A with rs7844965 A,
 r +0.387 (r² 0.150), the two longer-life alleles together. For row 168.
+
+## Reading 2026-11-16, record
+
+> [q1205] mappings[0] seq_region_name 16 ancestral_allele C end 52565276 assembly_name GRCh38 strand 1 start 52565276 location 16:52565276-52565276 coord_system chromosome allele_string C/A/T
+
+> [q1206] populations[0] allele_count 16428 allele T frequency 0.2417 population gnomADg:nfe
+
+> [q1207] [0] assembly_name GRCh38 end 52565276 start 52565276 strand 1 allele_string C/A/T seq_region_name 16 most_severe_consequence intron_variant input rs4784227 id rs4784227
+
+> [q1208] genotypes[0] genotype C|C sample 1000GENOMES:phase_3:HG00096 gender Male
+
+> [q1209] genotypes[0] gender Male sample 1000GENOMES:phase_3:HG00096 genotype A|A
+
+rs4784227 (row 169, the second signal at 82): GRCh38 16:52,565,276, multi-allelic C/A/T, the row meaning C/T, C ancestral
+(q1205); T at 24.2 % in gnomAD's non-Finnish genomes (q1206); intronic (q1207; CASC16, TOX3 nearby). Phase with row 82's
+lead rs4783780 from 1000 Genomes' phased EUR genotypes (population q1174; first lines q1208, q1209), over 1,006
+haplotypes (derived): rs4784227 C with rs4783780 A, r +0.575 (r² 0.330; Ensembl's CEU pair q622), the two healthier alleles
+together. For row 169.

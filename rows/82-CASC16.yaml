@@ -1,7 +1,7 @@
 # The seed list's locus 82, CASC16 (16q12.1; the seed's genes TOX3 and CASC16). Curated 2026-11-13. Lead rs4783780,
 # the seed's lead (Timmers 2020's multivariate TOX3 SNP): an intron variant of TOX3, A/C, A at 0.51 in Europeans and
 # the longer-lived side. The seed's second rsID, rs4784227 (Zenin 2019's healthspan SNP, the breast-cancer variant
-# near CASC16), lies 28 kb away at r² 0.33 (CEU): another signal, named in the reason and not a variant here.
+# near CASC16), lies 28 kb away at r² 0.33 (CEU): another signal, its own row 169 (D39.14).
 locus_id: 82
 locus_name: CASC16
 verdict: kept
@@ -29,9 +29,11 @@ verdict_reason: >-
   Pilling 2.76 against 1.81; derived), while the lead's own (3.62, 2.75) are far above rs4784227's shadow (1.26, 1.25):
   the lifespan evidence belongs to the lead, and rs4784227's cannot be told apart from it. The two are separate
   signals: Timmers 2020's set colocalises with none of rs4784227's breast-cancer sets, though the lead's own signal has
-  a breast-cancer association of its own (below). So rs4784227 is named here and
-  not tiered; it has no lifespan signal of its own once the lead is accounted for, and goes to the scout's queue as a
-  healthspan candidate (D25.6, D30.8). The anchor is read at the paper's own P (D17.3, D30.2): a reviewer's
+  a breast-cancer association of its own (below). So rs4784227 is not a variant
+  here; it has no lifespan signal of its own once the lead is accounted for, and is its own row as a healthspan
+  signal, 169 (D25.6, D30.8, D39.14). In Zenin's healthspan it is the stronger line (Z 5.69 against 4.79), so by
+  D39.18 this lead is read there conditioned on it: 1.86, P 0.06 (derived, pmid-30729179 note on 169); the cell is
+  left as it was, the question with the lead. The anchor is read at the paper's own P (D17.3, D30.2): a reviewer's
   approximate conditional on rs4784227, taking the traits as independent, brings the lead's healthspan z from 4.79 to
   1.85 and the combined test to about 0.002; named as context, not a correction of the paper's call.
   Mechanism metabolism, through body weight (D30.8):
