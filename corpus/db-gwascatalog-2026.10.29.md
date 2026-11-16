@@ -2813,3 +2813,18 @@ rs2260227 (row 129): one association (q793), Jawinski 2025's white-matter brain 
 P 9e-83 (q790, q792; trait EFO_0010602, q791). rs4327091 (row 142): two (q799), Jawinski's grey-and-white brain age
 gap, A (0.2208) P 3e-76 (q794, q795), and Plotnikov's systolic blood pressure, A 0.31 decrease, P 7e-11 (q796 to
 q798). For rows 129 and 142.
+
+## Reading 2026-11-16, record
+
+> [q800] _embedded.associations[0] association_id 131476349 risk_frequency NR pvalue_description pvalue_mantissa 1 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.0038-0.0079] beta 0.005833901 unit decrease p_value 1e-08 accession_id GCST90321079 pubmed_id 37550455 first_author Rosoff DB ci_lower 0.0038 ci_upper 0.0079
+
+> [q801] _embedded.associations[0].snp_effect_allele[0] rs13141210-C
+
+> [q802] _embedded.associations[1] association_id 101972583 risk_frequency NR pvalue_description pvalue_mantissa 3 pvalue_exponent -11 multi_snp_haplotype false snp_interaction false range [0.012-0.021] beta 0.01643 unit decrease p_value 3e-11 accession_id GCST90179151 pubmed_id 36376304 first_author Koskeridis F ci_lower 0.012 ci_upper 0.021
+
+> [q803] _embedded.associations[1].reported_trait[0] Cigarettes smoked per day (MTAG)
+
+> [q804] _embedded.associations[1].snp_effect_allele[0] rs13141210-T
+
+The GWAS Catalog's two associations for rs13141210: Rosoff's mvAge ('Aging'), C 0.0058 decrease, P 1e-8 (q800, q801);
+cigarettes smoked per day (MTAG, Koskeridis), T 0.016 decrease, P 3e-11 (q802 to q804). For row 162.

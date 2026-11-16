@@ -5151,3 +5151,41 @@ H4 0.9999 (q1486, q1487). With locus-to-gene 0.43, under 0.5, that is §4.2's E2
 
 rs4327091 (17_45944351_G_A, row 129) in Jawinski's combined grey-and-white brain-age set (GCST90965684), which it
 leads: PIP 0.0018, β +0.446 (q1488 to q1490). The 0.0002 read before was rs2260227's in the same set. C3. For row 129 (D39.12, D39.13).
+
+## Reading 2026-11-16, record
+
+> [q1491] data.variant.credibleSets.rows[11].locus.rows[0] posteriorProbability 0.05583139444953428
+
+> [q1492] data.credibleSet.locus count 111
+
+> [q1493] data.credibleSet.l2GPredictions.rows[0] score 0.7894816994667053
+
+> [q1494] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol CENPC
+
+> [q1495] data.credibleSet.colocalisation count 45
+
+> [q1496] data.variant.credibleSets.rows[0] studyLocusId 3e6743abb992a9b5b4e5f4e6d546ecc2 pValueMantissa 2.8350000381469727 pValueExponent -11 beta -0.0164251565178354 finemappingMethod PICS
+
+> [q1497] data.variant.credibleSets.rows[0].study id GCST90179151 traitFromSource Cigarettes smoked per day (MTAG) studyType gwas
+
+> [q1498] data.variant.credibleSets.rows[3] studyLocusId 79bf0a66610d0fe1a318216faec69c4d pValueMantissa 1.1610000133514404 pValueExponent -9 beta -0.039124 finemappingMethod PICS
+
+> [q1499] data.variant.credibleSets.rows[3].study id GCST90399695 traitFromSource Chronic obstructive pulmonary disease studyType gwas
+
+> [q1500] data.variant.credibleSets.rows[12] studyLocusId b674649e881f2e48d0559a75f0c270ca pValueMantissa 4.427999973297119 pValueExponent -9 beta -0.0118898 finemappingMethod PICS
+
+> [q1501] data.variant.credibleSets.rows[12].study id GCST90474606 traitFromSource Body mass index (BMI) (UKB data field 21001) studyType gwas
+
+> [q1502] data.variant.credibleSets.rows[6] studyLocusId 89580488c8cd6a294509fdff23d5bdae pValueMantissa 2.888000011444092 pValueExponent -14 beta 0.0125239826797792 finemappingMethod PICS
+
+> [q1503] data.variant.credibleSets.rows[6].study id GCST90566696 traitFromSource Educational attainment studyType gwas
+
+> [q1504] data.variant.credibleSets.rows[14] studyLocusId d9eb9a4409881514077cc453e9da78f8 pValueMantissa 1.6073418855667114 pValueExponent -7 beta 0.004213947848474604 finemappingMethod SuSiE-inf
+
+> [q1505] data.variant.credibleSets.rows[14].study id GCST90239652 traitFromSource High density lipoprotein cholesterol levels studyType gwas
+
+rs13141210 (4_67025923_C_T, row 162): in mvAge's PICS set (q439, q440) at PIP 0.056 (q1491), the set 111 variants wide
+(q1492): C3. Locus-to-gene on that set: CENPC 0.79 (q1493, q1494): E2; its 45 colocalisations (q1495) are not read.
+Other sets, β per T: cigarettes per day −0.016 (q1496, q1497); COPD −0.039 (q1498, q1499); BMI −0.012 (q1500,
+q1501); educational attainment +0.013 (q1502, q1503); HDL cholesterol +0.0042 (q1504, q1505). T, mvAge's
+healthier allele, is the healthier side of each. For row 162.

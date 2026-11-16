@@ -908,3 +908,10 @@ FinnGen R11's death endpoint at rs3135006 (q127 header, q128), GRCh38 6:32,699,3
 (SE 0.0084) for death, P 0.041, so T with fewer deaths, one-sided 0.020. rs1049053 itself (GRCh38 6:32,666,628) has
 no line in the file (searched by rsID and position). rs3135006's T rides with rs1049053's C (r² 0.80, D′ 0.99 in
 EUR, db-ensembl-116#q1). For row 103 (D31.3).
+
+## Reading 2026-11-16, record
+
+> [q129] 4 67025923 C T rs13141210 RNU6-699P 0.137017 0.863224 -0.0110447 0.00742757 0.488336 0.489985 0.48813
+
+FinnGen R11's death endpoint at rs13141210 (q129): alt T at 0.488, β −0.0110 (SE 0.0074) for death, P 0.14: T with fewer
+deaths, one-sided 0.069. For row 162.

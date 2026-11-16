@@ -4063,3 +4063,20 @@ rs2736099 (row 132) against rs2853677 (row 133): r² 0.38, D′ 0.67 in 1000 Gen
 rs4327091 (row 129) against rs62057143 and rs4341787: r² 1.00, D′ 1.00 in CEU (q1164, q1165). The minor alleles match in
 gnomAD's non-Finnish genomes (rs62057143 C 0.2175, rs4341787 T 0.2169, rs4327091 A 0.2171; q1166 to q1168), and r² 1.00
 needs minor with minor, so rs4327091's A rides with rs62057143's C and rs4341787's T (derived). For row 129 (D39.9, D39.13).
+
+## Reading 2026-11-16, record
+
+> [q1169] mappings[0] location 4:67025923-67025923 seq_region_name 4 coord_system chromosome allele_string C/T end 67025923 ancestral_allele C start 67025923 assembly_name GRCh38 strand 1
+
+> [q1170] populations[11] allele T frequency 0.5118 allele_count 34646 population gnomADg:nfe
+
+> [q1171] populations[10] population gnomADg:nfe allele_count 33052 allele C frequency 0.4882
+
+> [q1172] [0] seq_region_name 4 allele_string C/T assembly_name GRCh38 start 67025923 input rs13141210 strand 1 end 67025923 most_severe_consequence intergenic_variant id rs13141210
+
+> [q1173] [0] d_prime 0.999999 variation2 rs62317165 r2 0.926026 variation1 rs28637671 population_name 1000GENOMES:phase_3:CEU
+
+rs13141210 (row 162, the second signal at 28): GRCh38 4:67,025,923 C/T, C ancestral (q1169); T at 51.2 % and C at 48.8 % in
+gnomAD's non-Finnish European genomes (q1170, q1171); intergenic (q1172). Ensembl's CEU window around row 28's lead
+rs28637671 at r² 0.8 or more (`ldwin-rs28637671-CEU-r08.json`, its first pair q1173) lists 54 proxies, none of them a
+member of rs13141210's mvAge set in Open Targets (derived, the two lists compared whole). For row 162.
