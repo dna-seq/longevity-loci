@@ -226,3 +226,7 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
 - 2026-11-16, pending (the lead, 640548398): when the curator's one-unit commit for batch thirteen's corrections
   lands (D34.10–15; rows 96, 121–126, 131, 136, 107), export, rebuild strict and rehearse on the test instance.
   96's pair texts change; the tables keep their shape.
+- 2026-11-16, plugin v0.48.12 pinned (liaison, a7bfed4): enricher 0.8.7 in the lock, format and compiler stay 0.8.6.
+  compile_module now reports the toolchain that wrote the artifact; compare_to_published lists the published one's.
+  Batch thirteen's rehearsal runs on it after the reload; a moved artifact digest with an unchanged
+  content_signature is the enricher bump, read from the toolchain field.
