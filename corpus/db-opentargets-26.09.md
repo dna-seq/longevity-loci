@@ -4773,3 +4773,35 @@ leiomyomata at PIP 1.00, G −0.016, so A raises it (q1336, q1337), named. Locus
 5_1287079_G_A (rs2853677, row 133; beta per A): 130 credible sets (q1341); telomere length (principal component 1) at PIP
 1.00, A −0.038 (q1342, q1343): C1; McCartney's IEAA set, row 132's, holds it at 0.31 (q1344, q1345). Locus-to-gene on
 the telomere set (q1346): TERT 0.65, CLPTM1L 0.05 (q1347 to q1350): E2. For row 133.
+
+## Reading 2026-11-16, record
+
+> [q1351] data.variant.credibleSets count 224
+
+> [q1352] data.variant.credibleSets.rows[3].study id GCST90268497 traitFromSource Mitochondrial DNA copy number (adjusted) studyType gwas
+
+> [q1353] data.variant.credibleSets.rows[3].locus.rows[0] posteriorProbability 1 beta -0.03613515737182298 pValueMantissa null pValueExponent null
+
+> [q1354] data.variant.credibleSets.rows[121].study id GCST90268498 traitFromSource Mitochondrial DNA copy number (raw) studyType gwas
+
+> [q1355] data.variant.credibleSets.rows[121].locus.rows[0] posteriorProbability 0.9999999999999291 beta -0.03182828618355296 pValueMantissa null pValueExponent null
+
+> [q1356] data.variant.credibleSets.rows[110].study id gtex-v10_ge_blood_ensg00000160194 traitFromSource ENSG00000160194 studyType eqtl
+
+> [q1357] data.variant.credibleSets.rows[110].locus.rows[0] posteriorProbability 0.9999999991878463 beta -0.433834 pValueMantissa 1.0140000581741333 pValueExponent -22
+
+> [q1358] data.variant.credibleSets.rows[49].study id lepik_2017_ge_blood_ensg00000160194 traitFromSource ENSG00000160194 studyType eqtl
+
+> [q1359] data.variant.credibleSets.rows[49].locus.rows[0] posteriorProbability 0.95000001 beta -1.56243 pValueMantissa 1.722000002861023 pValueExponent -46
+
+> [q1360] data.credibleSet.study id GCST90268497 traitFromSource Mitochondrial DNA copy number (adjusted)
+
+> [q1361] data.credibleSet.l2GPredictions.rows[0] score 0.9222143888473511
+
+> [q1362] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol NDUFV3
+
+21_42903610_C_T (rs4148974, row 141; beta per T): 224 credible sets (q1351), two of them GWAS, both Gupta 2023's: adjusted
+copy number at PIP 1, T −0.036 (q1352, q1353), raw at PIP 1.00 (q1354, q1355): C1. The rest are NDUFV3's own
+expression, splicing and transcript sets: GTEx v10 whole blood PIP 1.00, T −0.43, P 1.0e-22 (q1356, q1357); Lepik
+2017's blood PIP 0.95, T −1.56, P 1.7e-46 (q1358, q1359): T with lower NDUFV3 expression. Locus-to-gene on the
+adjusted set (q1360): NDUFV3 0.92, the only gene listed (q1361, q1362). For row 141.

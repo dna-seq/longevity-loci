@@ -2591,3 +2591,21 @@ rs2853677 (row 133), 73 associations. Li 2020's leukocyte telomere length (A 0.0
 q709 to q711). Lung cancer: A OR 0.84, P 1e-75 (q712 to q714), so G raises it; renal cell carcinoma: A OR 0.93, P
 7e-12 (q715 to q717); clonal haematopoiesis with DNMT3A mutation: A OR 0.758, P 1e-115 (q718 to q720). Blood
 cell traits, protein levels and the rest named, not read. For row 133.
+
+## Reading 2026-11-16, record
+
+> [q721] _embedded.associations[1] association_id 130459943 risk_frequency 0.9404 pvalue_description pvalue_mantissa 5 pvalue_exponent -48 multi_snp_haplotype false snp_interaction false range [0.094-0.123] beta 0.10863 unit increase p_value 5e-48 accession_id GCST90268497 pubmed_id 37587338 first_author Gupta R ci_lower 0.094 ci_upper 0.123
+
+> [q722] _embedded.associations[1].efo_traits[0] efo_id EFO_0006312 efo_trait mitochondrial DNA measurement
+
+> [q723] _embedded.associations[1].reported_trait[0] Mitochondrial DNA copy number (adjusted)
+
+> [q724] _embedded.associations[1].snp_effect_allele[0] rs4148974-C
+
+> [q725] _embedded.associations[0] association_id 130460500 risk_frequency 0.9404 pvalue_description pvalue_mantissa 5 pvalue_exponent -38 multi_snp_haplotype false snp_interaction false range [0.081-0.11] beta 0.095391 unit increase p_value 4.999999999999999e-38 accession_id GCST90268498 pubmed_id 37587338 first_author Gupta R ci_lower 0.081 ci_upper 0.11
+
+> [q726] _embedded.associations[0].reported_trait[0] Mitochondrial DNA copy number (raw)
+
+rs4148974 (row 141), two associations, both Gupta 2023's: adjusted mtDNA copy number, C β 0.10863 increase, P 5e-48
+(GCST90268497, trait EFO_0006312; q721 to q724); raw copy number, C 0.0954, P 5e-38 (q725, q726). No disease line.
+For row 141.

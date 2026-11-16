@@ -3747,3 +3747,19 @@ IEAA), the coupling read from the two papers' signs, not phased. For row 132.
 rs2853677 (row 133): GRCh38 5:1,287,079, G/A/T (q1055); A at 57.7 % and G at 42.3 % in gnomAD's non-Finnish European genomes
 (q1056, q1057); intronic in TERT's MANE transcript, NM_198253.3 (q1058, q1059), a 3′ UTR variant on another. For row
 133.
+
+## Reading 2026-11-16, record
+
+> [q1060] mappings[0] ancestral_allele C assembly_name GRCh38 coord_system chromosome location 21:42903610-42903610 strand 1 start 42903610 allele_string C/T seq_region_name 21 end 42903610
+
+> [q1061] populations[20] population gnomADg:nfe frequency 0.9423 allele_count 64060 allele C
+
+> [q1062] populations[21] frequency 0.05769 population gnomADg:nfe allele_count 3922 allele T
+
+> [q1063] [0].transcript_consequences[1] gene_symbol NDUFV3 impact HIGH strand 1 protein_start 200 variant_allele T gene_symbol_source HGNC cdna_end 623 hgnc_id HGNC:7719 cdna_start 623 codons Cga/Tga canonical 1 protein_end 200 mane_select NM_021075.4 cds_end 598 biotype protein_coding transcript_id ENST00000354250 cds_start 598 amino_acids R/* gene_id ENSG00000160194
+
+> [q1064] [0].transcript_consequences[1].consequence_terms[0] stop_gained
+
+rs4148974 (row 141): GRCh38 21:42,903,610 C/T, C ancestral (q1060); C at 94.2 % and T at 5.8 % in gnomAD's non-Finnish
+European genomes (q1061, q1062); on NDUFV3's MANE transcript, NM_021075.4, codon 200 Cga to Tga, R200*, a stop-gain
+(q1063, q1064). For row 141.

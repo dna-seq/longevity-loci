@@ -1,0 +1,96 @@
+# The seed list's locus 141, NDUFV3 (21q22.3): a marker of biological ageing (D32, D36.3), curated on D37.12 with 23
+# TERC as the pattern. Curated 2026-11-16. Lead rs4148974, the seed's rsID (Gupta 2023's mtDNA copy-number locus): a
+# stop-gain in NDUFV3's MANE transcript, R200*, GRCh38 21:42,903,610 C/T, GRCh37 21:44,323,720, C ancestral; T at
+# 5.8 % in gnomAD's non-Finnish European genomes. T is the lower-copy-number allele.
+locus_id: 141
+locus_name: NDUFV3
+verdict: kept
+verdict_reason: >-
+  Tier B on the marker's own evidence (D37.12; the seed gives none): the tier grades the association with
+  mitochondrial DNA copy number in blood, not longevity, and this row is unscored (D32). Gupta 2023's adjusted
+  copy-number GWAS is UK Biobank's own, six ancestry groups (Supplementary Table 1; All of Us is not in it), and its
+  Table 2 prints rs4148974 with C, the reference allele, at 0.940, β +0.109 SD (SE 0.0075), P 4.6e-48, N 161,234,
+  heterogeneity P 0.56 across the groups: T, the stop-gain, lower; the legend names AF_Allele2 the reference allele's
+  frequency, so the β is per C, and the GWAS Catalog's record (C, 0.10863 increase) agrees. Table 3 fine-maps it at
+  PIP 1, annotated pLoF. No second sample prints it: Koller 2024's and Zaidi 2023's supplements hold no line for it
+  (by rsID and both builds' positions), and the Catalog and Open Targets hold Gupta's two lines alone (adjusted and
+  raw copy number, the same people). Genome-wide in a study of 100k or more, unreplicated: §4.1's B. Lifespan
+  look-ups, unscored and read for T, two-sided at 0.05 (D38.6): Timmers 2019 T beta1 +0.0022 (SE 0.0082), P 0.79;
+  Pilling 2017's parents P 0.58 to 1; Park 2025's own survival P 0.89 (men 0.53, women 0.53); Deelen 2019 90th P
+  0.73, 99th P 0.25; FinnGen R11's deaths P 0.96 (T at 8.2 % in Finns), a database line; Zenin 2019's healthspan P
+  0.47; all flat. Foote 2025's deposits hold no line (untested). The literature search (the rsID, 2026-11-16) finds
+  Ye 2014's PheWAS of stop-gain variants in Marshfield Clinic patients (abstract only, which names no NDUFV3 result)
+  and a sequencing-method paper, no test of lifespan. Every genotype neutral, each conclusion a tendency of the marker
+  with no colour (D32, D37.12); `direction: unknown`. Outcome cells read for T: exceptional survival 0 (Deelen flat);
+  lifespan 0 (Timmers, Pilling, Park and FinnGen flat); healthspan 0 (Zenin flat). Mechanism: markers of biological
+  ageing; NDUFV3 is a subunit of complex I of the mitochondrial respiratory chain. No disease pleiotropy: the Catalog
+  holds only Gupta's two lines. Causal C1 (PIP 1 in Gupta's own Table 3 and in Open Targets' adjusted set). Effector
+  E1, NDUFV3: a stop-gain on the MANE transcript (§4.2); locus-to-gene 0.92, the only gene listed, and T lowers
+  NDUFV3's expression in blood (GTEx v10 PIP 1.00, P 1.0e-22; Lepik 2017 P 1.7e-46), Gupta's Table 4 colocalising
+  the copy-number signal with that expression at PIP 1 in whole blood. Descriptive. Age of action unknown. The
+  evidence is mostly European (UK Biobank's own groups, 155,998 of 163,372 European).
+axes:
+  tier: {value: B, cites: [pmid-37587338#q1, pmid-37587338#q2, pmid-37587338#q4, pmid-37587338#q5, pmid-37587338#q6, pmid-37587338#q7, pmid-37587338#q14, pmid-37587338#q10, pmid-37587338#q11, pmid-37587338#q15, db-gwascatalog-2026.10.29#q721, db-gwascatalog-2026.10.29#q722, db-gwascatalog-2026.10.29#q723, db-gwascatalog-2026.10.29#q724, db-gwascatalog-2026.10.29#q725, db-gwascatalog-2026.10.29#q726, db-opentargets-26.09#q1351, db-opentargets-26.09#q1352, db-opentargets-26.09#q1354, db-ensembl-116#q1060, db-ensembl-116#q1061, db-ensembl-116#q1062]}
+  mechanism: {value: ageing_markers, cites: [pmid-37587338#q1, db-gwascatalog-2026.10.29#q722]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
+            cites: [pmid-30729179#q177, pmid-30642433#q414, pmid-29227965#q232, pmid-29227965#q233, pmid-29227965#q234, pmid-29227965#q235, pmid-40021682#q179, pmid-40021682#q180, pmid-40021682#q181, db-finngen-r11#q117, pmid-31413261#q340, pmid-31413261#q341]}
+  actionability: {label: descriptive, cites: [pmid-37587338#q14]}
+  context: {values: [], cites: []}
+flags:
+  - {token: "causal:C1", cites: [db-opentargets-26.09#q1352, db-opentargets-26.09#q1353, pmid-37587338#q11, pmid-37587338#q15]}
+  - {token: "effector:E1", cites: [db-ensembl-116#q1063, db-ensembl-116#q1064, db-opentargets-26.09#q1360, db-opentargets-26.09#q1361, db-opentargets-26.09#q1362, db-opentargets-26.09#q1356, db-opentargets-26.09#q1357, db-opentargets-26.09#q1358, db-opentargets-26.09#q1359, pmid-37587338#q16, pmid-37587338#q17, pmid-37587338#q18]}
+variants:
+  - rsid: rs4148974
+    gene: NDUFV3
+    phenotype: NDUFV3 R200* (stop-gain), mtDNA copy number
+    trait_efo_id: EFO_0006312
+    effect_allele: T
+    effect_size: -0.10863
+    effect_measure: beta
+    stat_significance: significant
+    direction: unknown
+    genotypes:
+      - genotype: C/C
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position (about 89 in 100 people of European ancestry
+          do). It is the reference the other combinations are compared with. The position lies in NDUFV3, a part of
+          the first enzyme of the energy chain in the cell's power stations, the mitochondria. The number of
+          mitochondrial DNA copies in blood is a marker whose reading only means something against your calendar age,
+          which this report does not have, so this result carries no score.
+      - genotype: C/T
+        state: neutral
+        conclusion: >-
+          You carry one copy of the T version of this DNA position (about 11 in 100 people of European ancestry do). T
+          cuts the NDUFV3 protein short. Large studies link it with slightly fewer copies of mitochondrial DNA in blood
+          cells, about a tenth of the usual spread between people. That is a tendency in a marker whose reading only
+          means something against your calendar age, which this report does not have, so it carries no score.
+      - genotype: T/T
+        state: neutral
+        conclusion: >-
+          You carry two copies of the T version of this DNA position (about 1 in 300 people of European ancestry do).
+          Each copy is linked in large studies with slightly fewer copies of mitochondrial DNA in blood cells. That is
+          a tendency in a marker whose reading only means something against your calendar age, which this report does
+          not have, so it carries no score.
+studies:
+  - rsid: rs4148974
+    note: pmid-37587338
+    quote: q14
+    phenotype_class: BIOMARKER
+    study_design: meta_analysis
+    population: UK Biobank (Gupta 2023's cross-ancestry meta-analysis of six ancestry groups, 155,998 of 163,372 European)
+    ancestry: [EUR, AFR, AMR, SAS, EAS]
+    sample_size: 161234
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "4.5565e-48"
+    p_value_num: 4.5565e-48
+    effect_size: -0.10863
+    effect_measure: beta
+    effect_unit: SD of adjusted mtDNA copy number per T allele (Table 2's +0.10863 per C, the reference, negated)
+    effect_allele: T
+    direction: unknown
+    statistical_test: "Gupta 2023's GWAS of adjusted mtDNA copy number in UK Biobank (q1, q2; Supplementary Table 1, q4, q5), Table 2 (legend q6, header q7): rs4148974 C (the reference, 0.9404) β +0.10863, SE 0.0075, P 4.6e-48, N 161,234, heterogeneity P 0.56 (q14), the β SAIGE's per Allele2, the legend's reference allele; Table 3 PIP 1, pLoF (q10, q11, q15); the GWAS Catalog's record (GCST90268497, db-gwascatalog-2026.10.29#q721 to q724) C 0.10863 increase, the same line; no second sample prints it; a marker study (D32, D37.12)"
+    curator: claude-opus-5-5
