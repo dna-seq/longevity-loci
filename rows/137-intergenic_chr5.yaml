@@ -25,17 +25,18 @@ verdict_reason: >-
   tests are approximate and set no flag (D31.13): Timmers 2019 has T at beta1 +0.0049 (SE 0.0048), P 0.31, T's way,
   flat; Park 2025 T −0.0003 on the Martingale residual (its columns swapped), fewer deaths, P 0.67; FinnGen R11's
   deaths C +0.0029, P 0.80, a database line (D29.1); Pilling 2017's four parental scans flat (P 0.56 to 0.94). Zenin
-  2019 flat (P 0.78), so healthspan 0. Foote 2025's factor 5 (poorer cognition) puts T, the longer-lived allele, on
-  the frailer side (P 0.0087), and its factors 1 to 4 and 6 the same side, flat; a D row's Foote factor scores nothing
-  (multivariate), named. D22.3 does not spare it (D34.9): the looks lean T's way short of 0.05 (one-sided: Deelen's 90th 0.28, Timmers
-  0.16, Park 0.33, FinnGen 0.40, Zenin 0.39) and Foote's factor 5 goes against at 0.0087, so they scatter, as
+  2019 flat (P 0.78). Foote 2025's factor 5 (poorer cognition) puts T, the longer-lived allele, on the frailer side
+  (P 0.0087), and its factors 1 to 4 and 6 the same side, flat: healthspan − (D31.4, D34.13: D28.10 bars only the
+  discovery from giving +). D22.3 does not spare it (D34.9): the looks split, those leaning T's way short of nominal (one-sided: Deelen's 90th
+  0.28, Timmers 0.16, Park 0.33, FinnGen 0.40, Zenin 0.39) and Foote's factor 5 nominally against T (P 0.0087), as
   D34.9 read 131's. Wright 2019 lists nothing at the lead under its tables' P 0.003 cut (unknown above it), and
   its one line within 500 kb, the AncestryDNA fathers' rs10068414 198 kb away (P 3.4e-4), does not tag the lead (r²
   under 0.05). The literature search (the rsID, 2026-11-15; Semantic Scholar answered 429, its part unchecked) finds
   nothing; Hsieh is found by its PMID, and its one citing paper is a Finnish polygenic lifespan score, with no
   single-variant test. The ancestry is named here, not as a context token (D30.15). Every genotype neutral (D25.2).
   Exceptional survival 0 (Deelen flat, and a D row's discovery gives no +, D28.10); lifespan 0 (Timmers and Park
-  flat); healthspan 0 (Zenin flat). Mechanism ageing in general (D25.7): intergenic, the variant only in a LARS1
+  flat); healthspan − (Foote's factor 5, T frailer, P
+  0.0087; Zenin flat). Mechanism ageing in general (D25.7): intergenic, the variant only in a LARS1
   transcript-usage QTL set at PIP 0.024, membership only, named. Causal C4 and effector E4: no lifespan-class credible
   set. Descriptive. Age of action unknown.
 axes:
@@ -43,8 +44,8 @@ axes:
   mechanism: {value: general_ageing, cites: [db-ensembl-116#q886, db-opentargets-26.09#q1231, db-ensembl-116#q891]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
-            cites: [pmid-31413261#q304, pmid-31413261#q305, pmid-30642433#q400, pmid-40021682#q124, pmid-30729179#q163]}
+  outcome: {healthspan: "−", lifespan: "0", exceptional_survival: "0",
+            cites: [pmid-31413261#q304, pmid-31413261#q305, pmid-30642433#q400, pmid-40021682#q124, pmid-30729179#q163, pmid-40759756#q112, pmid-40759756#q113]}
   actionability: {label: descriptive, cites: [pmid-41949656#q31]}
   context: {values: [], cites: []}
 flags:
