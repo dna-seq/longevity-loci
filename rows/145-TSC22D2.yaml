@@ -8,17 +8,14 @@ locus_id: 145
 locus_name: TSC22D2
 verdict: kept
 verdict_reason: >-
-  Tier A on the marker's own evidence (D37.12; the seed gives none): the tier grades the association with mosaic loss
+  Tier B on the marker's own evidence (D37.12; the seed gives none): the tier grades the association with mosaic loss
   of chromosome Y (LOY) in blood, a marker of ageing found in men only, not longevity, and this row is unscored (D32).
   The seed's study, Wright 2017, measures LOY as mLRR-Y in 67,034 UK Biobank men and prints rs59633341 with A, the
   mLRR-Y lowering allele, at 0.16: UK Biobank −0.004 (raw mLRR-Y), P 2.6e-18; EPIC-Norfolk −0.009, P 7.5e-7; deCODE
   −0.007 (log2 Y copy number), P 1.1e-5; overall P 4.1e-28. Thompson 2019 calls LOY as yes or no in 205,011 UK
   Biobank men (Wright's men among them) and prints it with A the risk allele at 0.163, OR 1.24 (1.22 to 1.27), P
   6.6e-112, replicated on the same side in 653,019 men of 23andMe (matched β −0.0056, P 1.5e-82), deCODE (P 2.8e-8)
-  and 95,380 Japanese men of Biobank Japan (P 1.5e-18). The row tiers from Thompson, the study of 100k or more, with
-  23andMe and Biobank Japan its independent replications: §4.1's A. D21's test where the units match: Wright's UK
-  Biobank −0.004 against EPIC-Norfolk −0.009 (the replication the larger, no shrinkage, D39.1) and 23andMe −0.0056;
-  Wright's SEs are not printed, so no heterogeneity P; no red flag. deCODE is in both papers, counted once. Lifespan
+  and 95,380 Japanese men of Biobank Japan (P 1.5e-18). The row tiers from Thompson, the study of 100k or more (D39.4's first half), with 23andMe and Biobank Japan its independent replications, the pair §4.1's smaller-effect clause compares (D39.7). In one unit, each z over the root of its N (Thompson's UK Biobank mLRR-Y comparison, χ² 247.7 in 205,011 men, beside the replications' mLRR-Y): UK Biobank 0.035 SD per allele, 23andMe 0.024 (0.69 times, heterogeneity P 1.5e-5, power 1.00), Biobank Japan 0.028 (0.82 times, P 0.11; A's frequency there unread, so its scale is approximate) (derived). 23andMe's effect is the smaller at P < 0.05 with power: §4.1's "replication with a much smaller effect", so B (D39.7). Its saliva DNA against UK Biobank's blood (q4) may account for part of the gap, named; the clause asks no reason. Wright's UK Biobank −0.004 against EPIC-Norfolk −0.009 (raw mLRR-Y): heterogeneity P 0.002 to 0.026 across the printed rounding, each SE from its P (derived), the replication the larger; no red flag. deCODE is in both papers, counted once. Lifespan
   look-ups, unscored and read for A, two-sided at 0.05 (D38.6): Park 2025's own survival P 0.41 (men 0.053, women
   0.30); Deelen 2019 90th P 0.60, 99th P 0.44; FinnGen R11's deaths P 0.24, a database line; all flat. Timmers 2019,
   Pilling 2017, Zenin 2019 and Foote 2025 hold no line for this indel (by rsID and by GRCh37 3:150,018,880 and
@@ -27,17 +24,15 @@ verdict_reason: >-
   tendency of the marker with no colour (D32, D37.12); `direction: unknown`. Outcome cells read for A: exceptional
   survival 0 (Deelen flat); lifespan 0 (Park and FinnGen flat); healthspan untested (no deposit holds it). Context:
   the trait exists only in men, said here; no `sex_specific` token, since no test of a difference between the sexes
-  exists or can (D16; Thompson's women P 0.99 is a negative control). Mechanism: markers of biological ageing.
-  Pleiotropy `mech:cancer`: A raises clonal haematopoiesis of indeterminate potential (Open Targets, AT −0.010, PIP
-  0.25) and the variant sits in a myeloproliferative neoplasm set (PIP 0.15, no beta), named; no `tradeoff`, the row
-  naming no longevity-favoured allele. Causal C2 (PIP 0.47 in Wright's set; 0.06 in Terao 2019's Biobank Japan set).
+  exists or can (D29.16, D39.5; Thompson's women P 0.99 is a negative control; Park's men's stratum, P 0.053, is named above). Mechanism: markers of biological ageing.
+  No pleiotropy token (D39.10): A raises clonal haematopoiesis of indeterminate potential (Open Targets, AT −0.010, PIP 0.25, no P at the variant; CHIP is not cancer), and the variant sits in a myeloproliferative neoplasm set (PIP 0.15, no beta) from an MTAG run that borrows loss-of-Y samples, so it echoes the row's own signal; both named, neither a route an independent quote shows. No `tradeoff`, the row naming no longevity-favoured allele. Causal C2 (PIP 0.47 in Wright's set; 0.06 in Terao 2019's Biobank Japan set).
   Effector E3: locus-to-gene TSC22D2 0.33 (EIF2A 0.18) on Wright's set and 0.43 on Terao's, no gene at 0.5, the
   variant in a lncRNA intron (a regulatory region per VEP), not in TSC22D2. Descriptive. Age of action unknown. The evidence is
   mostly European, Biobank Japan agreeing.
 axes:
-  tier: {value: A, cites: [pmid-31748747#q1, pmid-31748747#q2, pmid-31748747#q3, pmid-31748747#q4, pmid-31748747#q5, pmid-31748747#q6, pmid-31748747#q7, pmid-31748747#q8, pmid-28346444#q1, pmid-28346444#q2, pmid-28346444#q3, pmid-28346444#q4, pmid-28346444#q5, pmid-28346444#q6, pmid-28346444#q7, pmid-28346444#q8, pmid-28346444#q10, pmid-28346444#q11, db-gwascatalog-2026.10.29#q761, db-gwascatalog-2026.10.29#q762, db-gwascatalog-2026.10.29#q763, db-gwascatalog-2026.10.29#q764, db-ensembl-116#q1090, db-ensembl-116#q1091, db-ensembl-116#q1092, db-opentargets-26.09#q1420]}
+  tier: {value: B, cites: [pmid-31748747#q1, pmid-31748747#q2, pmid-31748747#q3, pmid-31748747#q4, pmid-31748747#q5, pmid-31748747#q6, pmid-31748747#q7, pmid-31748747#q8, pmid-28346444#q1, pmid-28346444#q2, pmid-28346444#q3, pmid-28346444#q4, pmid-28346444#q5, pmid-28346444#q6, pmid-28346444#q7, pmid-28346444#q8, pmid-28346444#q10, pmid-28346444#q11, db-gwascatalog-2026.10.29#q761, db-gwascatalog-2026.10.29#q762, db-gwascatalog-2026.10.29#q763, db-gwascatalog-2026.10.29#q764, db-ensembl-116#q1090, db-ensembl-116#q1091, db-ensembl-116#q1092, db-opentargets-26.09#q1420]}
   mechanism: {value: ageing_markers, cites: [pmid-28346444#q1, pmid-28346444#q2, db-gwascatalog-2026.10.29#q762]}
-  pleiotropy: {values: ["mech:cancer"], cites: [db-opentargets-26.09#q1426, db-opentargets-26.09#q1427, db-opentargets-26.09#q1428, db-opentargets-26.09#q1429]}
+  pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: untested, lifespan: "0", exceptional_survival: "0",
             cites: [pmid-40021682#q194, pmid-40021682#q195, pmid-40021682#q196, db-finngen-r11#q122, pmid-31413261#q350, pmid-31413261#q351]}
@@ -61,7 +56,7 @@ variants:
         state: neutral
         conclusion: >-
           You carry two copies of the shorter A version of this DNA position (about 2 in 100 people of European
-          ancestry do). In men, large studies link each copy of A with a higher chance, by about a quarter, that some
+          ancestry do). In men, large studies link each copy of A with a higher chance, by about a fifth, that some
           blood cells have lost the Y chromosome, a change that becomes more common with age. That is a tendency in a
           marker whose reading only means something against your calendar age, which this report does not have, so it
           carries no score. Women have no Y chromosome, so it says nothing for them.
@@ -69,7 +64,7 @@ variants:
         state: neutral
         conclusion: >-
           You carry one copy of the shorter A version of this DNA position (about 26 in 100 people of European
-          ancestry do). In men, large studies link it with a higher chance, by about a quarter, that some blood cells
+          ancestry do). In men, large studies link it with a higher chance, by about a fifth, that some blood cells
           have lost the Y chromosome, a change that becomes more common with age. That is a tendency in a marker whose
           reading only means something against your calendar age, which this report does not have, so it carries no
           score. Women have no Y chromosome, so it says nothing for them.
@@ -99,7 +94,7 @@ studies:
     effect_unit: odds of detectable mosaic loss of chromosome Y (PAR-LOY) per A allele
     effect_allele: A
     direction: unknown
-    statistical_test: "Thompson 2019's GWAS of PAR-LOY in 205,011 UK Biobank men (q1), replicated in three independent data sets (q2 to q5); Table S1 (header q6, q7): rs59633341 risk allele A (other AT) at 0.163, OR 1.24 (1.22 to 1.27), P 6.6e-112; 23andMe matched β −0.0056, same direction, P 1.5e-82; deCODE P 2.8e-8; Biobank Japan P 1.5e-18; UK Biobank women P 0.99 (q8); the study of 100k or more the row tiers from (§4.1's A); a marker study (D32, D37.12)"
+    statistical_test: "Thompson 2019's GWAS of PAR-LOY in 205,011 UK Biobank men (q1), replicated in three independent data sets (q2 to q5); Table S1 (header q6, q7): rs59633341 risk allele A (other AT) at 0.163, OR 1.24 (1.22 to 1.27), P 6.6e-112; 23andMe matched β −0.0056, same direction, P 1.5e-82; deCODE P 2.8e-8; Biobank Japan P 1.5e-18; UK Biobank women P 0.99 (q8); UK Biobank mLRR-Y comparison χ² 247.7, P 8.3e-56 (q8); the anchor of §4.1's A pair, 23andMe 0.69 times it in SD per allele, heterogeneity P 1.5e-5, power 1.00 (derived), so the smaller-effect clause fires: B (D39.7); a marker study (D32, D37.12)"
     curator: claude-opus-5-5
   - rsid: rs59633341
     note: pmid-28346444
