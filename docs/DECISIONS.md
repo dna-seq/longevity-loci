@@ -1034,3 +1034,41 @@ Every tier holds. The calls below settle what the read found.
     35), as D34.7 asks.
 15. **136:** D27.2's mean factor divides; done so, Timmers flags under both calibrations and still adds nothing, being
     not independent of the validation; say that, not D25.3. The validation study carries `age_of: parent` (D25.8).
+
+## D35 — batch fourteen's questions: 138, 140, 147 (2026-11-16)
+
+From the curator's questions on 138, 140 and 147, settled under the person's standing word, each with the
+alternative it rejected. No tier moves.
+
+1. **D25.1's sparing pass is a printed study's, never a release line's.** A curator-read FinnGen release line fills
+   a cell (D34.5, D34.13) but replicates nothing (D29.1, D30.12), so it neither lifts a row nor spares one from D.
+   147 stays D, with lifespan `+` on FinnGen R11 alone (one-sided 0.012). 138's FinnGen look-up is printed in Park
+   2025's own article and is outside UK Biobank, so it is an independent scoring-class pass: it would keep 138 off
+   D even under a flag. The two rows agree. Rejected: counting 147's release line as D25.1's pass, which would let
+   a database value nothing checks decide a tier.
+2. **138 keeps `sex_specific:m`** (D29.16: the test of the difference, Park's men against women, P 1.4e-4). A second
+   sample's difference removes the token only when it is on a shown scale and excludes the discovery's difference
+   (D34.10's habit). Pilling's fathers against mothers (P 0.27) is a contrast of parents' sexes on the per-parent
+   scale, not Park's own-survival scale, and no source converts the one to the other, so it cannot exclude it. Say
+   so beside 0.27. FinnGen's both-sexes pass is consistent with a men's effect. Rejected: (b), prose only.
+3. **138's Deelen line is unknown, no token** (D26.3): a ratio taken from APOE alone, with no mean factor on Park's
+   scale, is one calibration, not two. The curator's default.
+4. **`mech:` is open (§4.2), so `mech:lung` stands.** 63's `mech:t2d` becomes `mech:diabetes`, the value six rows
+   already carry, at its next touch, unless its prose shows a type-2-only reading the module needs.
+5. **140's lifespan is `0`**, on Park's whole cohort (one-sided 0.059; D28.2, D28.3, D34.5). The discovery is not
+   sex-specific, and the women's line (P 0.0011, unpowered, power 0.19) is a stratum picked after the fact. It is
+   named in prose with the sexes' difference (P 0.018), and no token. Rejected: (b), `−` on the women's stratum.
+6. **The UK Biobank deposits' low frequencies at Kolbe's variants are read as imputation under-calling, pending one
+   check, and named on every Kolbe row a deposit holds.**
+   - 140's T is 0.18 % in Park's and Pilling's deposits against 0.32 % in gnomAD's exomes, and 121's is 0.15 % against 0.29 %.
+   - Kolbe's own note (q12) says gnomAD's NFE is mostly British. If the release the rows read (through Ensembl 116) is gnomAD v4, its NFE exomes are mostly UK Biobank's own sequenced exomes.
+   - Then the gap is imputed against sequenced calls in largely the same people, which is under-calling, not a lower true frequency.
+   - On that reading D34.7's premise stands, and the deposits' lines at these variants are weak looks, named as such.
+
+   The curator checks two things and quotes them:
+   - which gnomAD release and NFE composition the Ensembl note reads;
+   - whether the deposits print an imputation-quality value at these variants.
+
+   The finding goes on 121 as well as 140, and on any other Kolbe row a deposit holds. If the release is not mostly UK Biobank, the question returns to the lead. Rejected:
+   - (a) as written, which named the doubt on 140 and left 121 untouched;
+   - a sweep of every Kolbe row's deposit, wider than the rows the deposits hold.
