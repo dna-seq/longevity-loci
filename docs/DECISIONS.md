@@ -1248,3 +1248,11 @@ Settled under the person's standing word, each with the alternative it rejected.
    differs between the sexes, which rests on a test of the difference (D29.16); a trait defined in one sex admits
    no such test. The row says in prose that the sample and the trait are men only. Rejected: `sex_specific:m`,
    which would read as a tested contrast.
+6. **D39.3 is withdrawn: 117 GRIK2 goes back to D with `replication_failed`.** Its premise was wrong. The allele
+   does not rest on the GWAS Catalog alone: two articles already cached print Broer's line, Deelen 2019's
+   Supplementary Data 1 (rs1416280, effect allele C, OR 1.24, P 5.09e-8; the sheet 43 already quotes, its
+   allele tied to C by Deelen's own OR 1.0319, pmid-31413261#q323) and Zenin 2019's Supplementary Data 15 (C, 1.24,
+   5.1e-8). Each is an article's own table, so D12 is met. Broer's Table 3 also answered from PMC's per-table page
+   on 2026-11-16 (C, 0.75, OR 1.24); the curator caches and quotes it if `loci fetch-supp` takes it, and the row
+   does not wait on it. The flag's numbers reproduce (heterogeneity P 2.5e-8 and 1e-8, power 1.00; 0.0015 and
+   0.0023 at half the effect). Rejected: keeping C, which rested on a search that missed the cache.
