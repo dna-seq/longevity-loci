@@ -3312,3 +3312,21 @@ rs62502826 (row 147): GRCh38 8:29,124,778 G/A (q904); A at 0.137 in gnomAD's non
 0.032 in East Asian (q906); intronic in KIF13B on its MANE Select transcript (q907, q908). With Wright's mothers'
 rs6989058 r² 0.34 in CEU (q909); with rs10097270, rs10108738 and rs601962 Ensembl's pairwise LD answers no pair (r²
 under 0.05). For row 147.
+
+## Reading 2026-11-16, record
+
+> [q910] mappings[0] ancestral_allele T location 9:13549784-13549784 assembly_name GRCh38 strand 1 start 13549784 end 13549784 seq_region_name 9 allele_string T/A coord_system chromosome
+
+> [q911] populations[6] population gnomADg:eas frequency 0.1088 allele A allele_count 561
+
+> [q912] populations[5] population gnomADg:eas allele T allele_count 4595 frequency 0.8912
+
+> [q913] populations[16] population gnomADg:nfe frequency 0.0002059 allele A allele_count 14
+
+> [q914] populations[56] population 1000GENOMES:phase_3:CHS allele A allele_count 28 frequency 0.133333333333333
+
+> [q915] [0] assembly_name GRCh38 seq_region_name 9 input rs75526165 id rs75526165 strand 1 allele_string T/A end 13549784 most_severe_consequence intron_variant start 13549784
+
+rs75526165 (row 150): GRCh38 9:13,549,784 T/A (q910); A at 0.1088 in gnomAD's East Asian genomes, 561 of 5,156 alleles
+(q911, q912), 0.0002 in the non-Finnish Europeans (q913), 0.133 in 1000 Genomes CHS (28 of 210, q914); intronic
+(q915). For row 150.
