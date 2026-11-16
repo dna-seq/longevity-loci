@@ -1,72 +1,76 @@
 # Lead — notes
 
 The lead seat's working state, rewritten to the present before a reset (`docs/seats/LEAD.md`, "Before a reset").
+Rewritten whole on 2026-11-16 for the org move (the person: "Make sure they commit all to notes, transcripts are not
+moving"): a fresh session carries on from this file, `docs/seats/LEAD_STATE.md` and `docs/DECISIONS.md` alone.
 
-## Now (2026-11-05)
+## Now (2026-11-16)
 
-First seating, the seat-builder's handout:
+Curation is complete. All 161 seed loci are curated, in 156 rows, and the eight second signals the scout queued are
+rows 162 to 169: 164 rows, A 15, B 73, C 41, D 35. Seventeen batches have been read adversarially, the last settled as
+D40 (fb32e6c). The curator reports every D40 correction applied and pushed (12c673f, latest 1ffba5f). The scout's
+queue is empty (d8e0a08), and `scripts/dashboard.py --left` reports 0. The module was rebuilt strict green with batch
+seventeen (signature aebf5e38: 489 genotype rows, 679 studies) and rehearsed on the test instance only (3ee0bbb).
+**Nothing is on production; nothing goes there without the person's explicit word.**
 
-1. Leak gate: done. The list is metabonet's, on the person's word (2026-11-05: "Take stopwodrs list from
-   metabonet"), replacing a longer one the lead drafted.
-2. Rules: done, 3e7ed57.
-3. Groundwork: done, 3b38d74 (just-dna-lite at 050bf9f). The person told, so its folder there can become a pointer.
-4. Cluster: done, differently from the handout. The machine file's `job_prefix` is one value (metabonet's `mn-`)
-   and outranks the repository, so this clone sets `JOB_PREFIX=ll-` and `LOCI_CACHE` in its untracked
-   `.claude/settings.local.json` env. The digest line read through that setting is not yet seen at a session
-   start (checked with the variable inline). Nodes watcher alive.
-5. Formats and checks: done (8496cca, the critic's fixes 80eb769, 0.8's study fields 433a1d0 from issue #6,
-   D10).
-6. Inputs: done, `docs/INPUTS.md` (v1's sqlite, HAGR Build 3, a live snapshot; CC BY 3.0). v1.2.0's registry
-   tables are the module seat's to fetch with the plugin.
-7. Trust register: desk #200 answered 2026-11-10, "trust register reask in a month": waits until 2026-12-10, then
-   ask the person again.
-8. Pin: nothing to move.
+The quote check is clean: the full run found 6,531 located and 1 unknown (db-gwascatalog-2025.01.09 has no cached
+text). `loci check quotes --since REV` is now the curator's per-row check (d63682d, 1ffba5f). fetch-supp renders .html
+pages (3aafb3c).
 
-## To file (unattended, at the next idle turn)
+## Waiting on the person (desk; defaults stand meanwhile)
 
-Nothing. Filed: kit #272 (job_prefix per machine), kit #273 (the kit pin in untracked settings). The plugin is
-installed (v0.48.0), and `QUOTING.md` read into D10.
+- #344: the APOE exception, D34.1 with its reason corrected in D34.10. Default: it stays.
+- #345: the brain-age loci 115, 129 and 142 stay unscored under D36.3. Default: they stay.
+- #346: a flag the app shows for a second signal. Default: none (0.8 has no column for it).
+- #274: the test instance's namespace. Default: `test-longevity-loci`, already in use.
+- #266: how to mark the field's consensus top loci (a flag, a tier, or nothing). Nothing is built until answered.
+- #200: the trust register; the person said "trust register reask in a month", so ask again on 2026-12-10.
+- Also on their word: an app display check by a local install (the APOE pair table, and APOE's studies with no variant
+  row), and the production publish.
 
-## Open
+## Open curation items (decided, waiting on a source)
 
-- Avatar set. The `first seating:` line sent to the builder.
+- 165: B. A waits on a quoted mothers' D21 heterogeneity test (D40.4). Wright prints 0.031, which our derivations do
+  not reproduce.
+- 167: its mechanism moves to general_ageing once the source is cached (D40.5).
+- 117: at D, pending Broer's table.
 
-## For the person, at their return
+## The org move (2026-11-16, in hand)
 
-Nothing. 2026-11-10, on the person's word ("update your plugin and apply yourself"): the lead moved the kit pin to
-v0.1.164 (`move-to-tag`), applied the auto-mode rules (`automode.py --apply`, `--check` clean; the tooling and admin
-entries left out as not this clone's), and moved the job prefix to `[slurm.repo.longevity-loci] job_prefix = "ll-"`
-in the machine's `slurm.toml`, the `JOB_PREFIX` env override dropped (the driver reads `ll-`, from=repo).
+The person plans to move this repository's seats to the chat organisation desk-antonkulaga (genie's), driven by
+agents-kit/lead's handoff hand-loci-prep and its addendum. Done by the lead:
+- auto-mode rules: `automode.py --check` from v0.1.226 reads current (19 allow rules, the kit's newest of
+  2026-11-16), so `--apply` was not run;
+- keys made for all six seats and genie's secretary imported into each as
+  desk-antonkulaga/secretary@longevity-genie.zulipchat.com, embassy `genie`, fingerprint E7BB 5D47 8EA2 0887 CC57
+  DEF0 80E0 DE40 2E3F AC72 (it matched the handoff); encryption subkeys run until 2026-11-30, so rotate before then
+  if the move slips;
+- the six public keys sent to agents-kit/lead by handoff (640872377);
+- every seat asked in #longevity-loci>org-move to commit its notes and reply with the commit; the liaison asked to
+  move the pin to v0.1.226 or later (moving the pin is the liaison's job).
+Still owed: reply to agents-kit/lead with each seat's notes commit, one `keys contacts` line, and the
+`automode.py --check` line, once the five seats have answered. Nothing switches until the person says so.
 
-## Open with the person (2026-11-10)
+## Standing rules learned here
 
-- The runner seat landed (on the person's word, 2026-11-10: "I suggest you add a runner seat to this repo and keep to
-  your set"); the lead's `facts-to-rigger` duty, its cluster paragraph and the nodes watcher moved to it.  Seated
-  2026-11-10 (seat-10, through the desk's long line; the short take's refusal is kit #398); its first seating done
-  (e138b73).
-- Cluster orientation from metabonet's rigger: the runner's now; it reads it from the rigger at its first seating.
-
-## The five-row pilot (2026-11-10, done)
-
-93 LDLR, 80 CHRNB4 and 57 CDKN2B-AS1 stayed tier A; 71 ATXN2 and 67 TTC12 went to B, down from the seed's A. What
-broke is in the curator's notes under "Pilot". The measurements stay out of the repository (the person,
-2026-11-11: "Keep pacing/quota measures uncommited, only rules commited"); the rules they gave are in the curator's
-priming (9135a65). The person's answers, 2026-11-11: up to 80% of the weekly window; a re-tier is the lead's to
-read adversarially, not a question; RM4 yes, "as deep as neeed"; the requirements' silent cells by the advisor
-pattern. The person, 2026-11-11: "After 10 adjust pacing and go next 10 and so on unless blocked or I steer": the
-curator runs on in batches of ten; after each, the lead re-measures (tokens per row from the curator's transcript,
-the quota windows; the figures stay out of the repository) and sends any pacing change. The self-compaction works, but the session then idles: until kit #409 lands, a waker of the lead's (outside the
-repository) watches the curator's transcript for a compaction and wakes it 30 s later. In hand: a ten-row run under that routine, measured again (the
-person, 2026-11-11: "go with next 10 measurement on andjusted scenario, remeasure"); the adversarial read of 71
-and 67; RM4 and RM5.
+- Pacing is off, full forward, on the person's word. Their standing order (2026-11-11): "After 10 adjust pacing and go
+  next 10 and so on unless blocked or I steer". After each batch of about ten rows: three adversarial subagent reads,
+  findings settled as D-decisions, one corrections handoff to the curator, the module seat rebuilds and rehearses on
+  the test instance, then LEAD_STATE is updated and reposted.
+- Pacing and quota measurements stay out of the repository (the person, 2026-11-11: "Keep pacing/quota measures
+  uncommited, only rules commited").
+- The milestones duty is held acting (L139, no pm seat). The state post comes from `docs/seats/LEAD_STATE.md` via
+  `watchdog.sh keep lead state '#longevity-loci>state' FILE`.
+- The job prefix is `ll-`, set in the machine's `slurm.toml` under `[slurm.repo.longevity-loci]`.
+- Never chain an edit onto `git pull &&`: a failed pull silently skips the edit.
+- My own mistakes this run, all caught by the adversarial reads: D39.18 skipped §4.5/D16's co-occurring lifespan gate
+  (fixed by D40.1), and D39.19 read a residual P two-sided (withdrawn by D40.2). When a new rule lands, check every
+  older gate still applies to the row it moves.
 
 ## Plan
 
-RM1 the export (after the compiler's 0.8 cut, the registry deploy and the plugin's release). RM2 landed
-(9d42ccb, with `loci fetch`), its auditor's findings fixed in 47abe43. The plugin stays enabled for every seat, the person's call (2026-11-05: "3"), about 2.5k
-tokens a session while its 81 tools stay deferred.
-- reflect after 2026-11-19: classes/base/BASE.md as of v0.1.191 (wake rules spelled out, secrets never repeated, the organisation's script account, handout renamed handoff).
-- Milestones duty held acting since 2026-11-12 (L139, v0.1.192; no pm seat): the state post's source is docs/seats/LEAD_STATE.md, kept with `watchdog.sh keep lead state '#longevity-loci>state' FILE` whenever where-it-stands, a headline or the next actions change; one post per landed result in #longevity-loci>milestones.
-
-- Idle wake: the kit's queue key (D200, v0.1.207) on lead and curator, `dashboard.py --left` (81aa31e); the interim scratch waker is stopped.
-- reflect after 2026-11-21: classes/base/BASE.md as of v0.1.207 (the button closes the wake, not the turn)
+- reflect after 2026-11-19: classes/base/BASE.md as of v0.1.191 (wake rules spelled out, secrets never repeated, the
+  organisation's script account, handout renamed handoff).
+- reflect after 2026-11-21: classes/base/BASE.md as of v0.1.207 (the button closes the wake, not the turn).
+- Scratch processes outside the repository (a quota sampler and the curator's compaction waker) do not move with the
+  seat; a new session starts without them.
