@@ -1401,3 +1401,11 @@ The candidate rows (D25.6), once the seed list was done.
      phenotype, as a single unreplicated study unless a sample outside UK Biobank passes. In a study where 82's lead
      is the stronger line (Timmers, Pilling), rs4784227 is conditioned on the lead, as there. Its cells read each
      study the same way.
+19. **82's healthspan cell stays + only if a healthspan line of its own survives conditioning on rs4784227.** In
+   Zenin, 82's lead is the weaker line (D39.18) and is flat once conditioned (P 0.06), so Zenin gives it nothing.
+   Timmers 2020's MANOVA is 82's anchor and is read at its own P for the tier (D17.3, D30.2). A cell, though, is a
+   co-occurring reading, and one healthspan signal is never scored for two rows (D30.2's rejection). So the cell is +
+   if Timmers' healthspan line at the lead, conditioned on rs4784227 with the phase quoted and both errors (D39.15),
+   stays at one-sided P < 0.05. The reviewer's approximation gave about 0.002. Otherwise the cell is 0. Prose names
+   both either way. The curator's (a) in outcome while that holds. Rejected: (a) on D17.3 alone, which reads an
+   anchor's rule into a cell; (b) on Zenin alone, which ignores Timmers.
