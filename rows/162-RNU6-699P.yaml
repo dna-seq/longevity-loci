@@ -24,8 +24,9 @@ verdict_reason: >-
   Pilling 2.1e-4; AncestryDNA's tag line not counted; Park and FinnGen flat); exceptional survival + (Pilling's top 10 % both-parents
   line, T with more long-lived parents, P 0.0089, D31.8; Deelen 2019 gives this row nothing (D40.6), its 90th one-sided 0.048 and 99th 0.10 named); healthspan + (Zenin 2019, T the later end, P 0.0016; Foote 2025's general frailty factor, T less frail, P 2.1e-8, is a
   shoulder of rs1383722's peak (r² 0.30), named and counted for nothing (D40.6); F2, F4 and F5 the same way at nominal P,
-  F1 the other way short of it, P 0.061). The cells stand as filed until the seed lead's lines (Pilling's top 10 %,
-  Foote's deposits) are cached and the cells re-read stepwise (D39.18, D40.6). Mechanism
+  F1 the other way short of it, P 0.061). Re-read stepwise on the seed lead's cached lines (D39.18, D40.6), the cells stand: in Pilling's top 10 % this SNP
+  outranks 28's lead (2.63 against 1.11); in Foote's F2 it outranks it (4.63 against 1.40); in Zenin the two tie (3.15
+  against 2.57, D40.3) and conditioned it keeps 2.53, one-sided 0.006 (derived). Mechanism
   general ageing, as the mvAge rows. Pleiotropy `mech:smoking`, `mech:adiposity` and `broad`: T, the healthier allele,
   lowers cigarettes per day (Catalog, P 3e-11), COPD, BMI and body fat (the COPD and BMI βs are
   the sets' lead's, rs13143549, not this SNP's; D40.6), and raises educational attainment and HDL
@@ -37,7 +38,7 @@ axes:
   pleiotropy: {values: ["mech:smoking", "mech:adiposity", broad], cites: [db-gwascatalog-2026.10.29#q802, db-gwascatalog-2026.10.29#q803, db-gwascatalog-2026.10.29#q804, db-opentargets-26.09#q1496, db-opentargets-26.09#q1497, db-opentargets-26.09#q1498, db-opentargets-26.09#q1499, db-opentargets-26.09#q1500, db-opentargets-26.09#q1501, db-opentargets-26.09#q1502, db-opentargets-26.09#q1503, db-opentargets-26.09#q1504, db-opentargets-26.09#q1505]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
-            cites: [pmid-30642433#q422, pmid-29227965#q264, pmid-29227965#q265, pmid-31484785#q63, pmid-31484785#q64, pmid-29227965#q268, db-finngen-r11#q129, pmid-40021682#q212, pmid-31413261#q362, pmid-31413261#q363, pmid-30729179#q187, pmid-40759756#q187, pmid-40759756#q188, pmid-40759756#q189, pmid-40759756#q190, pmid-40759756#q191, pmid-40759756#q192, pmid-40759756#q193]}
+            cites: [pmid-29227965#q301, pmid-40759756#q215, pmid-40759756#q217, pmid-30729179#q45, pmid-30729179#q46, pmid-30642433#q422, pmid-29227965#q264, pmid-29227965#q265, pmid-31484785#q63, pmid-31484785#q64, pmid-29227965#q268, db-finngen-r11#q129, pmid-40021682#q212, pmid-31413261#q362, pmid-31413261#q363, pmid-30729179#q187, pmid-40759756#q187, pmid-40759756#q188, pmid-40759756#q189, pmid-40759756#q190, pmid-40759756#q191, pmid-40759756#q192, pmid-40759756#q193]}
   actionability: {label: descriptive, cites: [pmid-37550455#q28]}
   context: {values: [eur_only_evidence], cites: [pmid-37550455#q5, pmid-30642433#q422, db-ensembl-116#q1170]}
 flags:

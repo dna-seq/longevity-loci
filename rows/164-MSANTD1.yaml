@@ -22,7 +22,8 @@ verdict_reason: >-
   mvAge's inputs, lean G's way: Timmers 2019 A beta1 −0.0245 (SE 0.0059), P 3.5e-5, "--", so G longer; Pilling 2017
   both parents P 0.005, mothers 2.5e-5, fathers 0.12, the top 10 % 0.0058; Park 2025's own survival flat (P 0.25; men
   0.55, women 0.26); Deelen 2019 flat, G's way (90th P 0.27, 99th 0.50). Outside them FinnGen R11's deaths are flat
-  (P 0.58), a database line; no independent sample passes. Outcome cells read for G, on the marginal look-ups:
+  (P 0.58), a database line; no independent sample passes. Re-read stepwise on the seed lead's cached lines (D39.18, D40.6), the cells stand: in Pilling's top 10 % this SNP,
+  conditioned on 163's stronger line, keeps 2.19, one-sided 0.014; in Foote's F3, 2.91, one-sided 0.002 (derived). Outcome cells read for G, on the marginal look-ups:
   lifespan + (Timmers, Pilling; Park flat); exceptional survival + (Pilling's top 10 % both-parents line, P 0.0058,
   D31.8; Deelen flat); healthspan + (Zenin 2019 G the later end, P 0.028; Foote 2025's factors 2 and 3 G less frail,
   P 0.012 and 7.4e-4, none against; the general factor and F4 hold no line). Mechanism general ageing, as the mvAge
@@ -37,7 +38,7 @@ axes:
   pleiotropy: {values: ["mech:adiposity"], cites: [db-opentargets-26.09#q1513, db-opentargets-26.09#q1514, db-opentargets-26.09#q1515, db-opentargets-26.09#q1516, db-opentargets-26.09#q1517, db-opentargets-26.09#q1518, db-opentargets-26.09#q1519]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
-            cites: [pmid-30642433#q424, pmid-29227965#q274, pmid-29227965#q275, pmid-29227965#q276, pmid-29227965#q277, pmid-40021682#q218, pmid-40021682#q219, pmid-40021682#q220, pmid-31413261#q366, pmid-31413261#q367, pmid-30729179#q189, pmid-40759756#q199, pmid-40759756#q200, pmid-40759756#q201, pmid-40759756#q202, pmid-40759756#q203, db-finngen-r11#q131]}
+            cites: [pmid-29227965#q302, pmid-40759756#q224, pmid-30642433#q424, pmid-29227965#q274, pmid-29227965#q275, pmid-29227965#q276, pmid-29227965#q277, pmid-40021682#q218, pmid-40021682#q219, pmid-40021682#q220, pmid-31413261#q366, pmid-31413261#q367, pmid-30729179#q189, pmid-40759756#q199, pmid-40759756#q200, pmid-40759756#q201, pmid-40759756#q202, pmid-40759756#q203, db-finngen-r11#q131]}
   actionability: {label: descriptive, cites: [pmid-37550455#q24]}
   context: {values: [eur_only_evidence], cites: [pmid-37550455#q5, pmid-30642433#q424, db-ensembl-116#q1181]}
 flags:
