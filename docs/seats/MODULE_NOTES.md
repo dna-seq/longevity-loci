@@ -260,3 +260,5 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
   unknown, weight null, the marker's trait (OBA_0003784 telomere length, EFO_0022597 epigenetic age acceleration,
   EFO_0006312 mtDNA copy number, EFO_0000473 for 112), the tier a flag token; their BIOMARKER studies carry the same
   trait, the lifespan and healthspan look-ups their own. 23 and 112 carry an empty gene, as the rows write it.
+- 2026-11-16, trial at trunk a4f6e86 (117's partial; markers 132, 133, 141, 143, 144 added): strict green, 444
+  variant rows, 642 studies, every rsID resolved (144's rs59294613 too), carried indel VRS 20. Held for the close.
