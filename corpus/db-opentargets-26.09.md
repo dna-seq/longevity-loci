@@ -5244,3 +5244,27 @@ rs3131621 (6_31457722_A_G): no Open Targets 26.09 record (q1520), so no credible
 
 Wright's fathers' set (GCST009450, the one rs15285 tops at PIP 0.066, q675, q676; q1521): locus-to-gene LPL 0.98 (q1522, q1523):
 E2; its 1,137 colocalisations (q1524) not read. For row 166.
+
+## Reading 2026-11-16, record
+
+> [q1525] data.variant.credibleSets count 24
+
+> [q1526] data.variant.credibleSets.rows[11] studyLocusId 91d9f34bc5ff462d83cb55d9feed0b9a pValueMantissa 1.2476023435592651 pValueExponent -10 beta -0.009167084651329819 finemappingMethod SuSiE-inf
+
+> [q1527] data.variant.credibleSets.rows[11].study id GCST90013942 traitFromSource Type 2 diabetes (SPA correction) studyType gwas
+
+> [q1528] data.variant.credibleSets.rows[2] studyLocusId 34287f637850406255cfcd74ca7de284 pValueMantissa 3.0799999237060547 pValueExponent -9 beta -0.01763 finemappingMethod PICS
+
+> [q1529] data.variant.credibleSets.rows[2].study id GCST90480706 traitFromSource systolic blood pressure (SBP, mean, inv-normal transformed) studyType gwas
+
+> [q1530] data.variant.credibleSets.rows[10] studyLocusId 91d4048c09b48d86a354916e37f0c626 pValueMantissa 5.6456618309021 pValueExponent -8 beta -0.008073141642088664 finemappingMethod SuSiE-inf
+
+> [q1531] data.variant.credibleSets.rows[10].study id GCST90014006 traitFromSource Glycated haemoglobin HbA1c levels (UKB data field 30750) studyType gwas
+
+> [q1532] data.variant.credibleSets.rows[4] studyLocusId 5163890a6d698938dd3dc41338ce0992 pValueMantissa 1 pValueExponent -8 beta -5.7042503 finemappingMethod PICS
+
+> [q1533] data.variant.credibleSets.rows[4].study id GCST90668074 traitFromSource Coronary artery disease (MTAG) studyType gwas
+
+rs6062322 (20_63810246_A_T): 24 sets (q1525), none mvAge's or a lifespan class's. β per T: type 2 diabetes −0.0092 (q1526,
+q1527); systolic blood pressure −0.018 (q1528, q1529); HbA1c −0.0081 (q1530, q1531); coronary disease (MTAG) −5.7, its
+unit unread but its sign T's (q1532, q1533). Red-cell volume sets and ZBTB46 expression sets named. For row 167.

@@ -1,0 +1,135 @@
+# A second, independent signal at the seed's locus 99, CHRNA4 (20q13.33), its own row under D25.6 and D39.14. Curated
+# 2026-11-16. Lead rs6062322, the seed's second rsID at 99 (Rosoff 2023's novel mvAge lead): intronic in ZBTB46, GRCh38
+# 20:63,810,246 A/T (a multi-allelic site, A/C/T, the row meaning A/T), GRCh37 20:62,441,599; T at 19.5 % in gnomAD's
+# non-Finnish European genomes. 455 kb from row 99's lead rs2273500, r² 0.000 in 1000 Genomes EUR. T is the healthier allele.
+locus_id: 167
+locus_name: ZBTB46
+second_signal_of: 99
+verdict: kept
+verdict_reason: >-
+  Tier B (D16, D18.3): genome-wide in Rosoff 2023's mvAge, A −0.0071 (SE 0.0013), P 3.3e-8, a novel lead (positive is
+  healthier, frailty reverse coded), with Timmers 2019's parental lifespan co-occurring at nominal (T beta1 +0.0130, P
+  0.010); no independent replication, since mvAge pools UK Biobank and LifeGen and every lifespan look-up but FinnGen sits
+  inside it. Independence (D39.14, D39.15): no article prints a conditional and no set in Open Targets holds both; from
+  1000 Genomes' phased EUR haplotypes T and row 99's longer-life T have r −0.018 (r² 0.000), so conditioning on 99's
+  lead leaves mvAge's z of 5.52 where it is, and lifts it for any lead z on the same side; Rosoff's tables print no line
+  at rs2273500, and only a lead z below −4 against its lifespan side would pull it under 5e-8 (derived). Look-ups read
+  for T: Pilling 2017 both parents T longer, P 0.0083 (fathers 0.15, mothers 0.49), the top 10 % flat (0.13); Park
+  2025's own survival T fewer deaths, P 0.0056 (men 0.0071, women 0.26), UK Biobank inside; Deelen 2019 flat (90th
+  0.56, 99th 0.13, T's way); FinnGen R11's deaths flat (P 0.56), a database line. Outcome cells read for T: lifespan +
+  (Timmers, Pilling, Park); exceptional survival 0 (Deelen, Pilling's top 10 %); healthspan + (Zenin 2019, T the later
+  end, P 2.6e-4; Foote 2025's F3 P 8.5e-8 and F6 P 2.0e-5 T less frail, F5 the other way at 0.057, F1 and F2 flat; the
+  general factor's deposit holds no line). Mechanism metabolism: T lowers type 2 diabetes (P 1.2e-10) and HbA1c (P
+  5.6e-8) in Open Targets' fine-mapped sets, and systolic blood pressure (P 3.1e-9) and coronary disease (P 1e-8), so
+  `mech:diabetes` and `mech:cvd`, the healthier-ageing allele the healthier on each, no `tradeoff`; red-cell volume
+  and ZBTB46 expression sets named. Causal C4 (D39.12: none of Open Targets' 24 sets is mvAge's or a lifespan class's;
+  Rosoff's Supplementary Table 10 sets it in neither SuSiE's nor FINEMAP's credible set). Effector E4: intronic in
+  ZBTB46, with ZBTB46 expression sets in Open Targets, but no set of the row's phenotype and no colocalisation read.
+  The literature search (the rsID, 2026-11-16; Semantic Scholar answered 429, its part unchecked) finds Rosoff and Zhao
+  2024 (PMID 39421797), a Mendelian randomization of diabetes on vitiligo whose abstract does not name the variant; named,
+  no side read. Descriptive. Age of action unknown. The evidence is European.
+axes:
+  tier: {value: B, cites: [pmid-37550455#q2, pmid-37550455#q77, pmid-37550455#q78, pmid-30642433#q356, db-ensembl-116#q1174, db-ensembl-116#q1198, db-ensembl-116#q1199, db-opentargets-26.09#q1525, pmid-29227965#q288, pmid-40021682#q227, pmid-31413261#q371, pmid-31413261#q372, db-finngen-r11#q74]}
+  mechanism: {value: metabolism, cites: [db-opentargets-26.09#q1526, db-opentargets-26.09#q1527, db-opentargets-26.09#q1530, db-opentargets-26.09#q1531]}
+  pleiotropy: {values: ["mech:diabetes", "mech:cvd"], cites: [db-opentargets-26.09#q1526, db-opentargets-26.09#q1527, db-opentargets-26.09#q1528, db-opentargets-26.09#q1529, db-opentargets-26.09#q1530, db-opentargets-26.09#q1531, db-opentargets-26.09#q1532, db-opentargets-26.09#q1533]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
+            cites: [pmid-30642433#q356, pmid-29227965#q288, pmid-29227965#q289, pmid-29227965#q290, pmid-29227965#q291, pmid-40021682#q227, pmid-40021682#q228, pmid-40021682#q229, pmid-31413261#q371, pmid-31413261#q372, db-finngen-r11#q74, pmid-30729179#q138, pmid-40759756#q204, pmid-40759756#q205, pmid-40759756#q206, pmid-40759756#q207, pmid-40759756#q208]}
+  actionability: {label: descriptive, cites: [pmid-37550455#q77]}
+  context: {values: [eur_only_evidence], cites: [pmid-37550455#q78, db-ensembl-116#q1196]}
+flags:
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1525, pmid-37550455#q88]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q1525, db-ensembl-116#q1197]}
+variants:
+  - rsid: rs6062322
+    locus: {chrom: "20", start: 63810246, ref: A, cites: [db-ensembl-116#q1195]}
+    gene: ZBTB46
+    phenotype: ZBTB46 intron, multivariate healthy ageing (mvAge)
+    trait_efo_id: EFO_0007796
+    effect_allele: T
+    effect_size: 0.00708049186358
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: A/A
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position (about 65 in 100 people of European ancestry
+          do). It is the reference the other combinations are compared with. The position lies inside the ZBTB46 gene
+          on chromosome 20, and what it does there is not known. The finding comes from people of European ancestry;
+          less is known elsewhere.
+      - genotype: A/T
+        state: protective
+        conclusion: >-
+          You carry one copy of the T version of this DNA position (about 31 in 100 people of European ancestry do).
+          In a very large combined study of healthy ageing, this version went with ageing a little better, and in
+          related studies with a slightly longer healthy life and longer-lived parents. The same version goes with a
+          slightly lower risk of type 2 diabetes and slightly lower blood pressure. It is a likely finding, not a
+          settled one: it has not been confirmed in a separate group of people. The effect is small and it is a
+          tendency, not a guarantee.
+      - genotype: T/T
+        state: protective
+        conclusion: >-
+          You carry two copies of the T version of this DNA position (about 4 in 100 people of European ancestry do).
+          In a very large combined study of healthy ageing, this version went with ageing a little better, per copy,
+          and in related studies with a slightly longer healthy life and longer-lived parents. The same version goes
+          with a slightly lower risk of type 2 diabetes and slightly lower blood pressure. It is a likely finding, not
+          a settled one: it has not been confirmed in a separate group of people. The effect is small and it is a
+          tendency, not a guarantee.
+studies:
+  - rsid: rs6062322
+    note: pmid-37550455
+    quote: q78
+    phenotype_class: MULTIVARIATE_AGEING
+    study_design: multivariate_healthspan_lifespan
+    population: European (the five input GWAS, UK Biobank and LifeGen among them; effective n 1,958,774)
+    ancestry: [EUR]
+    stat_significance: significant
+    p_value: "3.3e-08"
+    p_value_num: 3.3e-08
+    effect_size: -0.007080492
+    effect_measure: beta
+    effect_unit: mvAge factor per A allele (no conventional unit; positive = healthier ageing)
+    effect_allele: A
+    direction: risk
+    statistical_test: "Genomic SEM common-factor GWAS of healthspan, frailty, exceptional longevity, parental lifespan and PhenoAge acceleration, SE 0.0013, Z −5.52 (q78; novel lead, q77; frailty and PhenoAge reverse coded, q2); pools the samples of the component studies, not a replication; conditioned on row 99's lead in the phased coupling (r −0.018, db-ensembl-116#q1198, q1199) unchanged (derived, D39.15)"
+    curator: claude-opus-5-5
+  - rsid: rs6062322
+    note: pmid-30642433
+    quote: q356
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 637314
+    sample_unit: lives
+    stat_significance: nominal
+    p_value: "0.010337042"
+    p_value_num: 0.010337042
+    effect_size: -0.01296255
+    effect_measure: beta
+    effect_unit: beta1 on parental lifespan per A allele, longer positive
+    effect_allele: A
+    direction: risk
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0051; holds UK Biobank's parents, inside mvAge, so not a replication"
+    curator: claude-opus-5-5
+  - rsid: rs6062322
+    note: pmid-30729179
+    quote: q138
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "0.00026"
+    p_value_num: 0.00026
+    effect_size: -0.0228
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per T allele (negative = later)
+    effect_allele: T
+    direction: protective
+    statistical_test: "Zenin 2019's healthspan summary statistics, SE 0.00625, Z −3.648, −log10 P 3.578 (P about 2.6e-4, from the file's −log10); an input of mvAge, so not a replication"
+    curator: claude-opus-5-5

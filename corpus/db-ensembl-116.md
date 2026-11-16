@@ -4155,3 +4155,20 @@ rs15285 (row 166, the second signal at 52): GRCh38 8:19,967,156 C/T, T ancestral
 genomes (q1192); LPL 3′ UTR (q362). Phase with row 52's lead rs268 from 1000 Genomes' phased EUR genotypes (population
 q1174; first lines q1193, q1194), over 1,006 haplotypes (derived): rs15285 T with rs268 G (Ser), r −0.063 (r² 0.004).
 For row 166.
+
+## Reading 2026-11-16, record
+
+> [q1195] mappings[0] allele_string A/C/T seq_region_name 20 coord_system chromosome ancestral_allele A location 20:63810246-63810246 assembly_name GRCh38 start 63810246 strand 1 end 63810246
+
+> [q1196] populations[1] population gnomADg:nfe allele T allele_count 13255 frequency 0.1949
+
+> [q1197] [0] start 63810246 most_severe_consequence intron_variant input rs6062322 allele_string A/C/T seq_region_name 20 assembly_name GRCh38 end 63810246 id rs6062322 strand 1
+
+> [q1198] genotypes[0] gender Male sample 1000GENOMES:phase_3:HG00096 genotype A|A
+
+> [q1199] genotypes[0] gender Male sample 1000GENOMES:phase_3:HG00096 genotype T|T
+
+rs6062322 (row 167, the second signal at 99): GRCh38 20:63,810,246, multi-allelic A/C/T, the row meaning A/T (q1195); T at 19.5 % in
+gnomAD's non-Finnish genomes (q1196); intronic, ZBTB46 (q1197). Phase with row 99's lead rs2273500 from 1000 Genomes'
+phased EUR genotypes (population q1174; first lines q1198, q1199), over 1,006 haplotypes (derived): r +0.018, r² 0.000.
+For row 167.

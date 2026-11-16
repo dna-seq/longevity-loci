@@ -2,7 +2,7 @@
 # splice acceptor in a nonsense-mediated-decay transcript of CHRNA4 (the nicotinic receptor α4 subunit), GRCh38
 # 20:63,355,597, GRCh37 20:61,986,949, T/C, C ancestral, T 0.85 in non-Finnish Europeans and the longer-lived allele.
 # The seed's other rsID, rs6062322 (Rosoff 2023's mvAge lead, 455 kb away, no CEU LD pair to the lead), is another
-# signal: named, not scored.
+# signal, its own row: 167 (D39.14).
 locus_id: 99
 locus_name: CHRNA4
 verdict: kept
