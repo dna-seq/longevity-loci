@@ -1098,3 +1098,50 @@ with the alternative it rejected.
    Rejected:
    - (b) scored rows resting on borrowed lifespan look-ups, against the design's "never summed";
    - (c) dropping them, which loses seed loci the design places.
+
+## D37 — batch fourteen's read, rows 111, 138 to 156; the markers' pattern (2026-11-16)
+
+Three adversarial reads of 111, 138, 139, 140, 146, 147, 148, 150, 151, 152, 154, 155 and 156. No tier moves. Settled
+under the person's standing word, each with the alternative it rejected.
+
+1. **An allele-frequency comparison reads Fisher's exact test on both samples' counts.** The reference's own count is
+   used as printed, so its sampling error is always counted. D31.13's "gnomAD's is negligible" is withdrawn: at gnomAD
+   EAS it is not, and ignoring it would make 150's long-lived nominal (0.046 against 0.12). A normal approximation may
+   stand beside the exact P, never in its place. This settles the two variance forms the rows used (150 and 152
+   against 123 and 156). The rows restate their P values at their next touch, and say so where a call moves.
+2. **A Han Chinese sample keeps the reference its row fixed first; the Hsieh rows read gnomAD EAS** (D31.13). CHS and
+   1000 Genomes EAS are named branches on each Hsieh row, with each branch's call stated. 116's CHS stays, as fixed
+   for Hainan before its result. Rejected: moving every Hsieh row to CHS now, which would move 150 to C and 123 to D
+   after both results are known, the choice D31.13 bars. 150's D is fragile (one-sided 0.048 at the printed
+   frequency's low rounding), and the row says so.
+3. **A sex stratum of a discovery that is not sex-specific is not D25.1's independent pass** (D35.5 carried over).
+   154 stays D. Park's men (one-sided 0.0045, 0.013 corrected for three files, power 0.73) are named. 130's pass was
+   Park's whole cohort, so the two agree. Rejected: (b), C with `replication_failed` on a picked stratum.
+4. **Foote fills the healthspan cell at nominal P in its direction** (D31.4, D34.13). 146's healthspan is `+` (factor 5,
+   one-sided 0.025; the other factors flat, so D31.13's "both ways at nominal P" is not met). 155's is `+`: D27.4 sets a
+   `+` aside only for a genome-wide opposite, and Foote's factor 5 at 0.014 is not one. 97 is re-read on this rule at
+   its next touch.
+5. **146's D rests on D22.3's own words**: Deelen's European look-up at the variant is flat (P 0.29, 0.37), so the
+   cross-ancestry null is not spared. "The looks scatter, as 131" is replaced, since the scoring-class looks all lean
+   A's way, weakly. The inflated SE (1.47 times) is named.
+6. **147's mean factor at Deelen's 99th percentile is Timmers' 0.4175 times the 99th's APOE factor, as row 34 and D31.4
+   read it.** D26.3 at 47 refused a mean for a phenotype with no Timmers factor at all, which is not this case. 147 stays D.
+7. **D35.1's reason restated, its outcome kept.** A FinnGen line now cached is still a database release, not an
+   article's analysis: D12 is the ground. A deposit printed with an article (Park's at 130) is the article's.
+8. **148 keeps R-TIER-2's cap, and its printed P is read as printed** (D17.3, D29.5). The derived count bound (no
+   allele count the printed MAF allows reaches −log10 P 8.3) is named as derived, with the anchor split into the
+   printed P and the gnomAD read (OR 1.84, P 0.041). Rejected: setting the printed P aside on a derived bound.
+9. **151's supplement is reachable** (Europe PMC's supplementaryFiles for the preprint). The curator caches and quotes
+   it. Table 2's genome-wide meta (P 3.48e-8) is adjusted and heritability-weighted, while the crude arms are flat
+   (0.32, 0.066). The row names that, R-TIER-2's confounding made visible, and stays C.
+10. **155's Deelen line against Hoque's healthy-ageing discovery** needs a conversion no source prints, so it sets no
+    flag (D26.3), and the row says so.
+11. **The seed's X rows (111, 139, 146) say "tiered from the seed's X"**, one wording for all three.
+12. **The markers' rows (D32) are tiered by §4.1 on the marker's own GWAS evidence, the marker in place of lifespan.**
+    Every genotype is neutral, each conclusion is a tendency of the marker with no colour, and `trait_efo_id` is the
+    marker's. The outcome cells come from the usual lifespan look-ups, unscored. Each row says its tier grades the
+    marker association, not longevity. The curator's default (a), with 23 TERC as the pattern, and no D14 fold for
+    TERT's conditionally independent signals. Rejected: (b), tiering by the lifespan evidence, which tells the reader
+    nothing about the marker; (c), a fixed tier for the section.
+13. **Export:** a `nominal` study whose direction is unknown, or a derived reference read, is not written as "p < 0.05
+    in the discovery's direction" (the lead fixes `export.py`).
