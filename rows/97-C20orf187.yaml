@@ -26,10 +26,12 @@ verdict_reason: >-
   89 and 26. Outcome cells on a D row (D28.10): lifespan 0, the contradicted discovery and Timmers, which holds it,
   giving no +, and no look gives p < 0.05 against T; exceptional survival 0 (Pilling's top-10 % look leans T's way at one-sided 0.029, but
   those are the contradicted discovery's own parents, D28.10; Deelen flat against);
-  healthspan + (D37.4, D31.4, D34.13): Foote 2025's disability factor (F6) has T less frail, −0.0061 (SE 0.0023), P
-  0.009, a later look at the lead outside D28.10's bar, the other factors read flat (F1 P 0.83, F2 0.65, F5 0.44; the
-  general, F3 and F4 deposits have gaps there, untested, D31.4), so not both ways; Zenin 2019 flat, T later (one-sided
-  0.093), no conflict to weigh (D26.6). Mechanism general ageing, as on
+  healthspan 0, re-read on D37.4: Foote 2025's disability factor (F6) has T less frail, −0.0061 (SE 0.0023), P
+  0.009, the other factors read flat (F1 P 0.83, F2 0.65, F5 0.44; the general, F3 and F4 deposits have gaps there,
+  untested, D31.4), so not both ways, a `+` by D37.4 on another row; but Foote takes UK Biobank in through its
+  Pan-UK Biobank inputs, the discovery's sample, and on a D row no cell is `+` from a study sharing it (D30.17,
+  D34.13), nor is it D25.1's independent pass (multivariate too, D27.3); Zenin 2019, UK Biobank as well, flat (T
+  later, one-sided 0.093). Mechanism general ageing, as on
   every D row (D25.7); pleiotropy empty, no longer-life allele left to weigh it against: Pilling's fathers' set (Open
   Targets SuSiE-inf, the lead at posterior 0.70) colocalises with 31 GWAS sets, blood pressure and bone density, C raising
   both, and the GWAS Catalog holds C raising blood pressure as a metabolic-syndrome component
@@ -43,8 +45,8 @@ axes:
   mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q1102, db-gwascatalog-2026.10.29#q523]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: "+", lifespan: "0", exceptional_survival: "0",
-            cites: [pmid-30729179#q131, pmid-40759756#q32, pmid-40759756#q33, pmid-40759756#q34, pmid-40759756#q35, pmid-30642433#q351, pmid-30642433#q352, pmid-29227965#q92, pmid-31413261#q236, pmid-31413261#q237]}
+  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
+            cites: [pmid-30729179#q131, pmid-40759756#q3, pmid-40759756#q32, pmid-40759756#q33, pmid-40759756#q34, pmid-40759756#q35, pmid-30642433#q351, pmid-30642433#q352, pmid-29227965#q92, pmid-31413261#q236, pmid-31413261#q237]}
   actionability: {label: descriptive, cites: [pmid-29227965#q88]}
   context: {values: [eur_only_evidence], cites: [pmid-29227965#q88, pmid-31484785#q145]}
 flags:
