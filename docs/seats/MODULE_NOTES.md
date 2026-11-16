@@ -230,3 +230,8 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
   compile_module now reports the toolchain that wrote the artifact; compare_to_published lists the published one's.
   Batch thirteen's rehearsal runs on it after the reload; a moved artifact digest with an unchanged
   content_signature is the enricher bump, read from the toolchain field.
+- 2026-11-16, batch thirteen rehearsed (trunk efb975f; D34.10–15 on 96, 107, 120–126, 131, 136; rows 124–126,
+  131, 136, 137 new): 360 variant rows, 571 studies, haplotypes 6, diplotypes 12 (96's pair texts changed, shape
+  kept). Strict green; 20 carried indel VRS (125's insertion adds two), module_not_closed, dataset_currency.
+  content_signature 0abd2bde…, equal local and polygon; artifact 74e7e5e5… (server). Enricher 0.8.7 in the lock;
+  this session's plugin still the pre-reload one.
