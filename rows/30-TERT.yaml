@@ -2,7 +2,8 @@
 # TERC as the pattern. Curated 2026-11-16. Lead rs2736100, the seed's rsID (the requirements' own example for the
 # section): intronic in TERT's MANE transcript, GRCh38 5:1,286,401 C/A, GRCh37 5:1,286,516, A ancestral; A at 49.7 %
 # in gnomAD's non-Finnish European genomes, 58.8 % in East Asians, 53.9 % in Africans. A is the shorter-telomere
-# allele. The seed's other TERT loci (132, 133, 153) are separate signals with rows of their own (r² 0.21 to 0.49).
+# allele. The seed's other TERT loci (132, 133, 153) are partial tags of it, r² 0.46 to 0.49 in CEU, their rows to
+# come; that they are separate signals is not shown, since no source read tests them conditionally.
 locus_id: 30
 locus_name: TERT
 verdict: kept
@@ -12,12 +13,15 @@ verdict_reason: >-
   telomere length puts A with shorter telomeres, β −0.078 SD per A (SE 0.009), P 4.4e-19, in 25,842 Europeans of the
   ENGAGE cohorts; its replication lines cover only its suggestive variants, not TERT. The GWAS Catalog records Taub
   2022's TOPMed whole genomes (109,122, outside ENGAGE) at rs2736100 at P 5e-79, its allele unrecorded, so its side
-  is not read and it is cited on the tier with no study entry (§6.3; 23's reading, the lead's Q2 (a) there); Liu 2014's
-  line (C longer, P 4e-6) is sub-genome-wide. So §4.1's A, a study of 100k or more replicated on the same allele, is not
-  met on what is read, and the row is B: genome-wide in one study. Lifespan look-ups, unscored and read for A: Timmers
-  2019 A beta1 −0.0066 (SE 0.0039), P 0.088, one-sided 0.044 with shorter-lived parents; FinnGen R11's deaths have A
-  with more deaths, β +0.0166 (SE 0.0074), P 0.025, one-sided 0.012, a database line that fills a cell and lifts
-  nothing (D29.1, D35.1, D37.7); Pilling 2017's parents, inside Timmers' pool, C's way and flat (P 0.31 to 0.85); Park
+  is not read and it is cited on the tier with no study entry (§6.3); Liu 2014 (Han Chinese, with a small European
+  arm) has C longer, P 4e-6 in the Catalog's record, the same side as Codd, sub-genome-wide and its paper unread, named.
+  Codd 2021's UK Biobank tables hold no line for rs2736100 (its TERT credible sets hold rs7705526 and rs2853677, the
+  seed's 153 and 133), and Codd 2013 says rs2736100 could not be imputed reliably, so that absence may be a variant
+  never analysed. So §4.1's A, a study of 100k or more replicated on the same allele, is not met on what is read, and
+  the row is B: genome-wide in one study (D38.12). Lifespan look-ups, unscored and read for A, two-sided at 0.05 (D38.6):
+  Timmers 2019 A beta1 −0.0066 (SE 0.0039), P 0.088, A's side shorter-lived and short of 0.05; FinnGen R11's deaths
+  have A with more deaths, β +0.0166 (SE 0.0074), P 0.025, a database line that fills a cell and lifts nothing (D29.1,
+  D35.1, D37.7); Pilling 2017's parents, inside Timmers' pool, C's way and flat (P 0.31 to 0.85); Park
   2025's own survival flat (P 0.40; men 0.50, women 0.57; its columns swapped); Deelen 2019 flat (90th A −0.022, P
   0.27; 99th −0.0065, P 0.83); Zenin 2019's healthspan has A with the lower hazard, P 0.0064; Foote 2025's deposits
   hold no line (untested). The literature search (the rsID with longevity or lifespan, 2026-11-16) finds a 2011
@@ -25,7 +29,8 @@ verdict_reason: >-
   scarring and Alzheimer's disease, none a test of this variant on lifespan; the seed's GenAge mouse entry (Tert,
   lifespan increase) is named, not carried. Every genotype neutral, each conclusion a tendency of the marker with no
   colour (D32, D37.12); `direction: unknown`. Outcome cells read for A: exceptional survival 0 (Deelen flat); lifespan
-  − (Timmers one-sided 0.044 against A, FinnGen's release line the same way); healthspan + (Zenin, P 0.0064 for A).
+  − (FinnGen two-sided 0.025, A with more deaths; Timmers the same way at 0.088, named); healthspan + (Zenin, two-sided
+  0.0064, A with the lower hazard).
   Mechanism: markers of biological ageing; A also lowers intrinsic epigenetic age acceleration (McCartney 2021, P
   3e-11; Lin 2022's set holds it at PIP 0.76), another marker, named. Pleiotropy `mech:cancer` and `mech:lung`, on
   both alleles, as Codd notes: C, the longer-telomere allele, raises lung carcinoma (OR 1.27, P 1e-27), glioma (1.27,
@@ -34,16 +39,16 @@ verdict_reason: >-
   since the row names no longevity-favoured allele. Causal C3: of the telomere-length credible sets in Open Targets
   26.09 only the naive T-cell one holds it, at PIP 0.036. Effector E2, TERT: locus-to-gene 0.74 on that set (and 0.87
   on the epigenetic set), the variant intronic in TERT. Descriptive. Age of action unknown. The evidence is European,
-  with TOPMed's multi-ancestry line unread for its allele.
+  with TOPMed's multi-ancestry line unread for its allele and Liu's Han Chinese line agreeing; no context token.
 axes:
-  tier: {value: B, cites: [pmid-23535734#q1, pmid-23535734#q2, pmid-23535734#q3, pmid-23535734#q6, db-gwascatalog-2026.10.29#q636, db-gwascatalog-2026.10.29#q637, db-gwascatalog-2026.10.29#q638, db-gwascatalog-2026.10.29#q639, db-gwascatalog-2026.10.29#q640, db-gwascatalog-2026.10.29#q641, pmid-35530816#q1, pmid-35530816#q2]}
+  tier: {value: B, cites: [pmid-23535734#q1, pmid-23535734#q2, pmid-23535734#q3, pmid-23535734#q6, db-gwascatalog-2026.10.29#q636, db-gwascatalog-2026.10.29#q637, db-gwascatalog-2026.10.29#q638, db-gwascatalog-2026.10.29#q639, db-gwascatalog-2026.10.29#q640, db-gwascatalog-2026.10.29#q641, pmid-35530816#q1, pmid-35530816#q2, db-ensembl-116#q1043, db-ensembl-116#q1044, db-ensembl-116#q1045]}
   mechanism: {value: ageing_markers, cites: [pmid-23535734#q2, pmid-23535734#q6, db-gwascatalog-2026.10.29#q660, db-gwascatalog-2026.10.29#q661, db-gwascatalog-2026.10.29#q662, db-opentargets-26.09#q1280, db-opentargets-26.09#q1281]}
   pleiotropy: {values: ["mech:cancer", "mech:lung"], cites: [pmid-23535734#q7, db-gwascatalog-2026.10.29#q642, db-gwascatalog-2026.10.29#q643, db-gwascatalog-2026.10.29#q644, db-gwascatalog-2026.10.29#q645, db-gwascatalog-2026.10.29#q646, db-gwascatalog-2026.10.29#q647, db-gwascatalog-2026.10.29#q648, db-gwascatalog-2026.10.29#q649, db-gwascatalog-2026.10.29#q650, db-gwascatalog-2026.10.29#q651, db-gwascatalog-2026.10.29#q652, db-gwascatalog-2026.10.29#q653, db-gwascatalog-2026.10.29#q654, db-gwascatalog-2026.10.29#q655, db-gwascatalog-2026.10.29#q656, db-gwascatalog-2026.10.29#q657, db-gwascatalog-2026.10.29#q658, db-gwascatalog-2026.10.29#q659]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "+", lifespan: "−", exceptional_survival: "0",
             cites: [pmid-30729179#q171, pmid-30642433#q408, db-finngen-r11#q111, pmid-29227965#q208, pmid-40021682#q158, pmid-31413261#q328, pmid-31413261#q329]}
   actionability: {label: descriptive, cites: [pmid-23535734#q6]}
-  context: {values: [eur_only_evidence], cites: [pmid-23535734#q1, pmid-23535734#q6]}
+  context: {values: [], cites: []}
 flags:
   - {token: "causal:C3", cites: [db-opentargets-26.09#q1277, db-opentargets-26.09#q1278, db-opentargets-26.09#q1279, db-opentargets-26.09#q1282, db-opentargets-26.09#q1283]}
   - {token: "effector:E2", cites: [db-opentargets-26.09#q1284, db-opentargets-26.09#q1285, db-ensembl-116#q1010, db-ensembl-116#q1011]}
@@ -64,21 +69,22 @@ variants:
           You carry two copies of the C version of this DNA position (about 25 in 100 people of European ancestry do).
           It is the reference the other combinations are compared with. The position lies inside TERT, the gene for
           the enzyme that rebuilds telomeres, the protective caps at the ends of chromosomes. Telomere length is a
-          marker of cellular ageing that only means something against your age, so this result carries no score.
+          marker whose reading only means something against your calendar age, which this report does not have, so
+          this result carries no score.
       - genotype: A/C
         state: neutral
         conclusion: >-
           You carry one copy of the A version of this DNA position (about 50 in 100 people of European ancestry do).
           Large studies link each copy of A with slightly shorter telomeres in white blood cells, a little under a
-          tenth of the usual spread between people. That is a small tendency in a marker, not a verdict on ageing:
-          studies of lifespan and of healthy ageing point in different directions here, so it carries no score.
+          tenth of the usual spread between people. That is a tendency in a marker whose reading only means something
+          against your calendar age, which this report does not have, so it carries no score.
       - genotype: A/A
         state: neutral
         conclusion: >-
           You carry two copies of the A version of this DNA position (about 25 in 100 people of European ancestry do).
           Large studies link each copy of A with slightly shorter telomeres in white blood cells, a little under a
-          tenth of the usual spread between people per copy. That is a small tendency in a marker, not a verdict on
-          ageing: studies of lifespan and of healthy ageing point in different directions here, so it carries no score.
+          tenth of the usual spread between people per copy. That is a tendency in a marker whose reading only means
+          something against your calendar age, which this report does not have, so it carries no score.
 studies:
   - rsid: rs2736100
     note: pmid-23535734
@@ -116,7 +122,7 @@ studies:
     effect_unit: log hazard protection per A allele in self (beta1; positive = longer life)
     effect_allele: A
     direction: risk
-    statistical_test: "Timmers 2019's summary statistics (GCST009890, q408): A beta1 −0.0066, SE 0.0039, one-sided 0.044 against A; an unscored look-up on a marker row (D32), filling the lifespan cell for A"
+    statistical_test: "Timmers 2019's summary statistics (GCST009890, q408): A beta1 −0.0066, SE 0.0039, two-sided 0.088, short of 0.05 (D38.6), named beside FinnGen's line, which fills the lifespan cell; an unscored look-up on a marker row (D32)"
     curator: claude-opus-5-5
   - rsid: rs2736100
     note: pmid-30729179
