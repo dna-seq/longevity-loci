@@ -4,6 +4,9 @@ The curator seat's working state, rewritten to the present before a reset (`docs
 
 ## Now (2026-11-10)
 
+- **Holding (2026-11-16, the lead's word):** batch seventeen (162 to 169) is in adversarial read; no new rows until
+  its corrections arrive. Pending there: 162 C to B and 165 C to A under D39.18 (held), 82's healthspan cell (left +,
+  D39.19, the lead leaning (a)). D39.14's eight second signals are all filed.
 - **Batch fourteen's corrections (D37): done 2026-11-16** (d261b34 to 98d2df0; `done:` to the lead). Owed at next
   touch: 97's healthspan on D37.4 (done, 0 kept, 5bf56e6); the 107-family Kolbe rows' P values as Fisher's exact (D37.1; done, 2aaf985).
 - **Markers under way:** 23, 30, 105, 106, 112, 114, 128, 132, 133, 141, 143, 144, 145, 149, 153, 160, 161, 115 and 129 (142 folded in) committed (D38 applied; 117 back to D, d70545d, D39.6) (the pattern; check rows exempts ageing_markers rows,
