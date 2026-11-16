@@ -2675,3 +2675,32 @@ trait OBA_0003784). Lung adenocarcinoma (Zhu): A OR 1.31, P 9e-96 (q741 to q743)
 1.27, P 3e-127 (q744 to q746); serous borderline ovarian cancer (Phelan): A OR 1.38, P 6e-19 (q747 to q749).
 The rest (lung cancer, melanoma, basal cell carcinoma, blood counts, other telomere lines; some PC-scale lines label
 the allele C) named, not read. For row 153.
+
+## Reading 2026-11-16, record
+
+> [q750] _embedded.associations[10] association_id 55993996 risk_frequency 0.86 pvalue_description pvalue_mantissa 5 pvalue_exponent -19 multi_snp_haplotype false snp_interaction false range [0.05-0.078] beta 0.064 unit decrease p_value 5e-19 accession_id GCST009856 pubmed_id 32109421 first_author Li C ci_lower 0.05 ci_upper 0.078
+
+> [q751] _embedded.associations[10].efo_traits[0] efo_id OBA_0003784 efo_trait chromosome, telomeric region length
+
+> [q752] _embedded.associations[10].snp_effect_allele[0] rs9419958-C
+
+> [q753] _embedded.associations[14] association_id 25285 risk_frequency 0.1353 pvalue_description pvalue_mantissa 9 pvalue_exponent -11 multi_snp_haplotype false snp_interaction false range [0.057-0.108] beta 0.0829 unit increase p_value 9e-11 accession_id GCST001697 pubmed_id 23001564 first_author Mangino M ci_lower 0.057 ci_upper 0.108
+
+> [q754] _embedded.associations[14].snp_effect_allele[0] rs9419958-T
+
+> [q755] _embedded.associations[7] association_id 131087097 risk_frequency NR pvalue_description pvalue_mantissa 4 pvalue_exponent -10 multi_snp_haplotype false snp_interaction false range - or_per_copy_num 0.938 or_value 0.938 beta - p_value 4e-10 accession_id GCST90328134 pubmed_id 38182794 first_author Choquet H
+
+> [q756] _embedded.associations[7].reported_trait[0] Basal cell carcinoma
+
+> [q757] _embedded.associations[7].snp_effect_allele[0] rs9419958-C
+
+> [q758] _embedded.associations[11] association_id 51191091 risk_frequency 0.13 pvalue_description pvalue_mantissa 1 pvalue_exponent -16 multi_snp_haplotype false snp_interaction false range [1.08-1.13] or_per_copy_num 1.1 or_value 1.1 beta - p_value 1e-16 accession_id GCST009158 pubmed_id 31649266 first_author Gallagher CS ci_lower 1.08 ci_upper 1.13
+
+> [q759] _embedded.associations[11].reported_trait[0] Uterine fibroids
+
+> [q760] _embedded.associations[11].snp_effect_allele[0] rs9419958-T
+
+rs9419958 (row 160), 15 associations. Li 2020's leukocyte telomere length, C 0.064 decrease, P 5e-19 (q750 to q752;
+trait OBA_0003784); Mangino 2012's telomere length, T +0.083, P 9e-11 (q753, q754; its sample unread). Basal cell
+carcinoma (Choquet): C OR 0.938, P 4e-10, so T raises it (q755 to q757); uterine fibroids (Gallagher): T OR 1.1, P
+1e-16 (q758 to q760). Platelet counts, PSA and FLT3LG levels named, not read. For row 160.

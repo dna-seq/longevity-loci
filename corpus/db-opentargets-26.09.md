@@ -4911,3 +4911,40 @@ no rival at 0.5. For row 144.
 1.00, A +0.065 (q1394, q1395): C1; Li 2020's set PIP 1.00, A +0.082 (q1396, q1397); lung adenocarcinoma PIP 0.94, A
 +0.34, P 3e-52 (q1398, q1399). Locus-to-gene on the PC1 set (q1400): TERT 0.81, CLPTM1L 0.05 (q1401 to q1404):
 E2. For row 153.
+
+## Reading 2026-11-16, record
+
+> [q1405] data.variant.credibleSets count 152
+
+> [q1406] data.variant.credibleSets.rows[101].study id GCST90435144 traitFromSource Telomere length (principal component 1) studyType gwas
+
+> [q1407] data.variant.credibleSets.rows[101].locus.rows[0] posteriorProbability 0.38926869276532716 beta -0.04423630378039637 pValueMantissa null pValueExponent null
+
+> [q1408] data.variant.credibleSets.rows[108].study id GCST009856 traitFromSource Leukocyte telomere length studyType gwas
+
+> [q1409] data.variant.credibleSets.rows[108].locus.rows[0] posteriorProbability 0.35648922519310455 beta -0.064 pValueMantissa 5 pValueExponent -19
+
+> [q1410] data.variant.credibleSets.rows[132].study id GCST90627775 traitFromSource Thyroid cancer studyType gwas
+
+> [q1411] data.variant.credibleSets.rows[132].locus.rows[0] posteriorProbability 0.42118009326922495 beta -0.1987 pValueMantissa 1.7419999837875366 pValueExponent -28
+
+> [q1412] data.credibleSet.study id GCST90435144 traitFromSource Telomere length (principal component 1)
+
+> [q1413] data.credibleSet.l2GPredictions.rows[0] score 0.8876086473464966
+
+> [q1414] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol STN1
+
+> [q1415] data.credibleSet.l2GPredictions.rows[1] score 0.052274663001298904
+
+> [q1416] data.credibleSet.l2GPredictions.rows[1].target approvedSymbol SH3PXD2A
+
+> [q1417] data.credibleSet.study id GCST009856 traitFromSource Leukocyte telomere length
+
+> [q1418] data.credibleSet.l2GPredictions.rows[0] score 0.8667133450508118
+
+> [q1419] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol STN1
+
+10_103916188_T_C (rs9419958, row 160; beta per C): 152 credible sets (q1405); telomere length (principal component 1) PIP
+0.39, C −0.044 (q1406, q1407); Li 2020's set PIP 0.36, C −0.064 (q1408, q1409); with Codd's PP 0.43, C2. Thyroid
+cancer PIP 0.42, C −0.20, P 1.7e-28, so T raises it (q1410, q1411). Locus-to-gene on the PC1 set (q1412): STN1 0.89,
+SH3PXD2A 0.05 (q1413 to q1416); on Li's set STN1 0.87 (q1417 to q1419): E2. For row 160.

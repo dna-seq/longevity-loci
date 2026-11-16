@@ -3824,3 +3824,21 @@ European genomes (q1075, q1076); intronic in POT1's MANE transcript, NM_015450.3
 
 rs7705526 (row 153): GRCh38 5:1,285,859, C/A/G/T, C ancestral (q1079); C at 66.9 % and A at 33.1 % in gnomAD's non-Finnish
 European genomes (q1080, q1081); intronic in TERT's MANE transcript, NM_198253.3 (q1082, q1083). For row 153.
+
+## Reading 2026-11-16, record
+
+> [q1084] mappings[0] location 10:103916188-103916188 start 103916188 allele_string T/A/C/G coord_system chromosome ancestral_allele T end 103916188 assembly_name GRCh38 seq_region_name 10 strand 1
+
+> [q1085] populations[12] allele_count 9649 allele T frequency 0.1419 population gnomADg:nfe
+
+> [q1086] populations[13] frequency 0.8581 population gnomADg:nfe allele_count 58360 allele C
+
+> [q1087] [0].transcript_consequences[0] biotype protein_coding mane_select NM_024928.5 transcript_id ENST00000224950 impact MODIFIER hgnc_id HGNC:26200 gene_symbol STN1 gene_symbol_source HGNC strand -1 canonical 1 gene_id ENSG00000107960 variant_allele A
+
+> [q1088] [0].transcript_consequences[0].consequence_terms[0] intron_variant
+
+> [q1089] [0] d_prime 0.600610 population_name 1000GENOMES:phase_3:CEU variation2 rs10748858 r2 0.084013 variation1 rs9419958
+
+rs9419958 (row 160): GRCh38 10:103,916,188, T/A/C/G, T ancestral (q1084); T at 14.2 % and C at 85.8 % in gnomAD's
+non-Finnish European genomes (q1085, q1086); intronic in STN1's MANE transcript, NM_024928.5 (q1087, q1088). With
+Codd 2021's other STN1 sentinel rs10748858, r² 0.08, D′ 0.60 in CEU (q1089). For row 160.
