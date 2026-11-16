@@ -3263,3 +3263,19 @@ controls (C 0.207) fit gnomAD EAS (P 0.25 with its error), so the discovery is r
 
 rs2075650 with rs429358 in 1000 Genomes CHS (southern Han): r² 0.83 (q892), beside CHB's 0.81 (q848); in the pooled
 East Asian panel 0.68 (q893). The two Han panels clear 0.8 narrowly and the pooled panel does not (D34.10). For row 96.
+
+## Reading 2026-11-16, record
+
+> [q894] mappings[0] allele_string G/A/T assembly_name GRCh38 coord_system chromosome end 1219991 location 11:1219991-1219991 ancestral_allele G seq_region_name 11 start 1219991 strand 1
+
+> [q895] populations[9] allele T frequency 0.1103 allele_count 7499 population gnomADg:nfe
+
+> [q896] populations[10] allele T population gnomADg:eas frequency 0.006952 allele_count 36
+
+> [q897] populations[7] allele T population gnomADg:fin allele_count 1217 frequency 0.1149
+
+> [q898] [0].transcript_consequences[3] gene_id ENSG00000117983 gene_symbol_source HGNC canonical 1 transcript_id ENST00000529681 variant_allele T hgnc_id HGNC:7516 gene_symbol MUC5B mane_select NM_002458.3 impact MODIFIER strand 1 biotype protein_coding distance 3075
+
+> [q899] [0].transcript_consequences[3].consequence_terms[0] upstream_gene_variant
+
+rs35705950 (row 138): GRCh38 11:1,219,991, multi-allelic G/A/T (q894); T, the row's allele, at 0.110 in gnomAD's non-Finnish European genomes (q895), 0.0070 in East Asian (q896) and 0.115 in Finnish (q897). On MUC5B's MANE Select transcript (ENST00000529681, NM_002458.3) T is upstream, 3,075 bases from the transcript (q898, q899), in the promoter region; the record's first listed consequence, a splice-region change in a lncRNA, is allele A's and another transcript's. Ensembl's pairwise LD service returned no pair for rs35705950 with rs10082701 (Wright's line 416 kb away) in CEU, so r² is below its reporting floor (0.05). For row 138.

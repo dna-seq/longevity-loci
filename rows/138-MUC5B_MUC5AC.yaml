@@ -1,0 +1,204 @@
+# The seed list's locus 138, MUC5B/MUC5AC (11p15.5). Curated 2026-11-16. Lead rs35705950, the seed's only rsID (Park
+# 2025's men's own-survival scan): GRCh38 11:1,219,991, multi-allelic G/A/T, GRCh37 11:1,241,221; the row means G>T.
+# On MUC5B's MANE Select transcript T is 3,075 bases upstream, in the promoter region. T is at 0.110 in gnomAD's
+# non-Finnish European genomes, 0.115 in the Finnish and 0.007 in the East Asian; T is the discovery's shorter-lived
+# allele. Open Targets 26.09 holds it in 67 credible sets, none of a lifespan-class study; the GWAS Catalog
+# (2026-10-29) holds Park's men's line and many lung and blood-count associations.
+locus_id: 138
+locus_name: MUC5B/MUC5AC
+verdict: kept
+verdict_reason: >-
+  Tier C, the seed's: a sub-genome-wide discovery (R-TIER-4), however its look-ups read. Park 2025's own-survival GWAS
+  in UK Biobank calls the line borderline and in males: the men's deposit (180,970 men) gives T β +0.00955 on the
+  Martingale residual (SE 0.00177, more deaths), P 6.6e-8, short of the paper's 5e-8; the whole cohort +0.00509 (SE
+  0.00106), P 1.3e-6; the women +0.00131 (SE 0.00124), P 0.29 (each deposit's columns swapped, as in all three files).
+  The two sexes differ at P 1.4e-4, both errors counted (derived). The authors' own look-up in FinnGen's "Death"
+  (both sexes, N 453,733, outside UK Biobank) puts T with more deaths, β +0.034, which they call a significant
+  association (P 0.006 in the release, one-sided 0.003); under APOE's Park-to-FinnGen factor (8.1) the whole cohort
+  expects +0.041, against which FinnGen's +0.034 agrees (heterogeneity P 0.64, derived). That is an independent
+  nominal pass in the discovery's direction; it does not lift a sub-genome-wide hit past C (R-TIER-4). Timmers 2019's
+  parental lifespan agrees, T beta1 −0.0232 (SE 0.0066), P 4.6e-4, and Pilling 2017's parents too (both parents'
+  attained age P 0.015; fathers P 0.0035, mothers 0.18; both parents in the top 10 %, T fewer, P 0.017), but both
+  are UK Biobank's parents and not independent of a UK Biobank discovery (D30.17); no LifeGen-only or per-sex
+  LifeGen file is deposited. Deelen 2019 (no UK Biobank data) leans the other way at both percentiles, flat: T
+  +0.0587 (SE 0.0516), P 0.26 at the 90th, +0.139 (SE 0.088), P 0.12 at the 99th. Carried by APOE's own ratio of
+  Deelen's ε4 log OR to Park's ε4 β (−39.6 at the 90th, −50.7 at the 99th), the whole cohort's +0.00509 expects
+  −0.20 and −0.26: power 0.99 and 0.90, heterogeneity P 9e-5 and 1.2e-4 counting the discovery's error (derived). An
+  APOE-only calibration sets no flag (D31.12), and no mean factor exists on Park's scale (D25.12), so whether Deelen
+  is a red flag is unknown and the row carries no `replication_failed` (D26.3, as 13); were a second calibration to
+  flag too, D25.1 would make it D. Zenin 2019 flat (T β −0.0066, P 0.39). Foote 2025's deposits hold no line at the
+  lead (untested). Wright 2019's AncestryDNA tables list nothing at the lead under their P 0.003 cut (unknown above
+  it); their strongest line within 500 kb, the fathers' rs10082701 416 kb away (P 5.6e-6), does not tag it (Ensembl
+  reports no pair, r² under 0.05). The literature search (the rsID with lifespan, longevity, mortality or survival, 2026-11-16;
+  Semantic Scholar answered 429, its part unchecked) finds no other population lifespan test; its survival papers are
+  within patients with pulmonary fibrosis (Peljto 2013, PMID 23695349, where T carriers survived longer after
+  diagnosis; a 2026 Brazilian cohort with no difference), a different question, named, not read. `sex_specific:m` by D29.16: Park's men against women differ (P 1.4e-4) from the deposits; named
+  beside it, Pilling's fathers against mothers do not (P 0.27), and FinnGen's pass is both sexes. Genotypes: G/G the
+  reference, T carriers risk, as weak early evidence. Exceptional survival 0 (Deelen flat, leaning against);
+  lifespan + (FinnGen, the paper's look-up, independent, one-sided 0.003; Timmers agrees, UK Biobank shared);
+  healthspan 0 (Zenin flat). Mechanism smoking and lungs: T is the established idiopathic pulmonary fibrosis risk
+  allele (Open Targets' fibrosis set at PIP 1, T β +1.25, P 8e-100) and raises MUC5B expression in lung (GTEx v10, PIP
+  1.00), as the authors note; `mech:lung`, and `mech:blood_count` (T in white-cell count sets). `tradeoff` (D18.1):
+  G, the longer-lived allele, is the side with more COVID-19 hospitalisation (T β −0.117, P 6e-9, PIP 1.00). Causal
+  C4 and effector E4: no lifespan-class credible set. Descriptive. Age of action unknown. The evidence is European.
+axes:
+  tier: {value: C, cites: [pmid-40021682#q125, pmid-40021682#q126, pmid-40021682#q127, pmid-40021682#q31, pmid-40021682#q35, pmid-40021682#q9, pmid-40021682#q16, db-finngen-r11#q5, pmid-30642433#q401, pmid-29227965#q174, pmid-29227965#q175, pmid-29227965#q176, pmid-29227965#q177, pmid-31413261#q306, pmid-31413261#q307, pmid-31413261#q82, pmid-31413261#q292, pmid-40021682#q32, pmid-30729179#q164, pmid-31484785#q174, db-ensembl-116#q894, db-gwascatalog-2026.10.29#q584]}
+  mechanism: {value: smoking_lungs, cites: [db-opentargets-26.09#q1236, db-opentargets-26.09#q1237, db-opentargets-26.09#q1234, db-opentargets-26.09#q1235, pmid-40021682#q127, db-gwascatalog-2026.10.29#q585]}
+  pleiotropy: {values: ["mech:lung", "mech:blood_count", "tradeoff"], cites: [db-opentargets-26.09#q1236, db-opentargets-26.09#q1237, db-opentargets-26.09#q1238, db-opentargets-26.09#q1239, db-gwascatalog-2026.10.29#q585]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "0",
+            cites: [pmid-40021682#q9, pmid-40021682#q16, db-finngen-r11#q5, pmid-30642433#q401, pmid-31413261#q306, pmid-31413261#q307, pmid-30729179#q164]}
+  actionability: {label: descriptive, cites: [pmid-40021682#q127]}
+  context: {values: ["sex_specific:m", "eur_only_evidence"], cites: [pmid-40021682#q125, pmid-40021682#q126, pmid-40021682#q127, db-ensembl-116#q896]}
+flags:
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1233]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q1233]}
+variants:
+  - rsid: rs35705950
+    locus: {chrom: "11", start: 1219991, ref: G, cites: [db-ensembl-116#q894]}  # rs35705950 is multi-allelic (G/A/T); the row means G>T
+    gene: ""
+    phenotype: MUC5B promoter variant, shorter life
+    trait_efo_id: OBA_VT0005372
+    effect_allele: T
+    effect_size: 0.00509
+    effect_measure: beta
+    stat_significance: suggestive
+    direction: risk
+    negatives: >-
+      The more common version, G, which goes with the longer life here, is the one linked to more severe COVID-19 needing
+      hospital care in large studies.
+    genotypes:
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position (about 79 in 100 people of European ancestry
+          do). It is the reference the other combinations are compared with. The position lies just before the MUC5B
+          gene on chromosome 11, which makes mucus in the airways.
+      - genotype: G/T
+        state: risk
+        conclusion: >-
+          You carry one copy of the T version of this DNA position (about 20 in 100 people of European ancestry do). T
+          raises the activity of MUC5B, a gene that makes airway mucus, and is a well-known risk version for a lung
+          scarring disease, idiopathic pulmonary fibrosis. A large UK study found T slightly more often among men who
+          died earlier, a finding just short of the usual bar for certainty, and a Finnish study found it with more
+          deaths too. This is weak, early evidence: a possible tendency, not destiny.
+      - genotype: T/T
+        state: risk
+        conclusion: >-
+          You carry two copies of the T version of this DNA position (about 1 in 100 people of European ancestry do). T
+          raises the activity of MUC5B, a gene that makes airway mucus, and is a well-known risk version for a lung
+          scarring disease, idiopathic pulmonary fibrosis. A large UK study found T slightly more often among men who
+          died earlier, a finding just short of the usual bar for certainty, and a Finnish study found it with more
+          deaths too. The studies counted copies one at a time, so nothing separate is known about two. This is weak, early evidence: a possible tendency, not
+          destiny.
+studies:
+  - rsid: rs35705950
+    note: pmid-40021682
+    quote: q125
+    phenotype_class: OWN_SURVIVAL
+    study_design: own_survival_cox
+    population: European (UK Biobank, men)
+    ancestry: [EUR]
+    sample_size: 180970
+    sample_unit: individuals
+    stat_significance: suggestive
+    p_value: "6.6e-08"
+    p_value_num: 6.6e-08
+    effect_size: 0.00955
+    effect_measure: beta
+    effect_unit: Martingale residual of a Cox model of own survival per T allele (positive = more deaths than expected, shorter life)
+    effect_allele: T
+    direction: risk
+    statistical_test: "Park 2025's men's deposit (GCST90551885, q125), columns swapped (q32's reading): T β +0.00955, SE 0.00177; the paper calls it borderline and in males (q127); the GWAS Catalog prints P 7e-8 (db-gwascatalog-2026.10.29#q584); against the women (q126) P 1.4e-4 (derived)"
+    curator: claude-opus-5-5
+  - rsid: rs35705950
+    note: pmid-40021682
+    quote: q31
+    phenotype_class: OWN_SURVIVAL
+    study_design: own_survival_cox
+    population: European (UK Biobank, whole cohort)
+    ancestry: [EUR]
+    sample_size: 393833
+    sample_unit: individuals
+    stat_significance: suggestive
+    p_value: "1.3e-06"
+    p_value_num: 1.3e-06
+    effect_size: 0.00509
+    effect_measure: beta
+    effect_unit: Martingale residual of a Cox model of own survival per T allele (positive = more deaths than expected, shorter life)
+    effect_allele: T
+    direction: risk
+    statistical_test: "Park 2025's whole-cohort deposit (GCST90551884, q31), columns swapped (q32's reading): T β +0.00509, SE 0.00106; the row's effect (D28.2, as 13)"
+    curator: claude-opus-5-5
+  - rsid: rs35705950
+    note: pmid-40021682
+    quote: q126
+    phenotype_class: OWN_SURVIVAL
+    study_design: own_survival_cox
+    population: European (UK Biobank, women)
+    ancestry: [EUR]
+    sample_size: 212863
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.29"
+    p_value_num: 0.29
+    effect_size: 0.00131
+    effect_measure: beta
+    effect_unit: Martingale residual of a Cox model of own survival per T allele (positive = more deaths than expected, shorter life)
+    effect_allele: T
+    direction: risk
+    statistical_test: "Park 2025's women's deposit (GCST90551886, q126), columns swapped: T β +0.00131, SE 0.00124"
+    curator: claude-opus-5-5
+  - rsid: rs35705950
+    note: pmid-40021682
+    quote: q16
+    phenotype_class: OWN_SURVIVAL
+    study_design: own_death_case_control
+    population: Finnish (FinnGen r11)
+    ancestry: [EUR]
+    sample_size: 453733
+    sample_unit: individuals
+    stat_significance: nominal
+    effect_size: 0.034
+    effect_measure: beta
+    effect_unit: FinnGen's "Death" endpoint per T allele (positive = increased death, q9)
+    effect_allele: T
+    direction: risk
+    statistical_test: "Park 2025's own FinnGen look-up (Supplementary Table 2, q16), which the text calls a significant association with increased death (q9); P 0.006 in the release (db-finngen-r11#q5, SE 0.0124), one-sided 0.003; against the whole cohort under APOE's factor 8.1, expected +0.041, heterogeneity P 0.64 (derived)"
+    curator: claude-opus-5-5
+  - rsid: rs35705950
+    note: pmid-30642433
+    quote: q401
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 583397
+    sample_unit: lives
+    stat_significance: nominal
+    p_value: "0.00046349987"
+    p_value_num: 0.00046349987
+    effect_size: -0.0232
+    effect_measure: beta
+    effect_unit: log hazard protection per T allele in self (beta1; negative = shorter life)
+    effect_allele: T
+    direction: risk
+    statistical_test: "Timmers 2019's summary statistics (GCST009890, q401): T beta1 −0.0232, SE 0.0066; shares UK Biobank with the discovery, so no independent replication (D30.17)"
+    curator: claude-opus-5-5
+  - rsid: rs35705950
+    note: pmid-31413261
+    quote: q306
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis; no UK Biobank data)
+    ancestry: [EUR]
+    stat_significance: not_significant
+    p_value: "0.2552"
+    p_value_num: 0.2552
+    effect_size: 0.0587
+    effect_measure: beta
+    effect_unit: log odds of survival to the 90th percentile per T allele
+    effect_allele: T
+    direction: protective
+    statistical_test: "Deelen 2019's summary statistics (GCST008598) at GRCh37 11:1,241,221, T at 0.10, SE 0.0516 (q306); 99th +0.1386, SE 0.0882, P 0.12 (q307); against Park's whole cohort under APOE's ratio (ε4: Deelen q82, q292; Park q32) expected −0.20 and −0.26: power 0.99 and 0.90, heterogeneity P 9e-5 and 1.2e-4 (derived); an APOE-only calibration, no flag (D31.12, D26.3)"
+    curator: claude-opus-5-5

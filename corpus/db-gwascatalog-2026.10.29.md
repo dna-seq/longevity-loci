@@ -2179,3 +2179,11 @@ rs3138136 (row 136): no association in the Catalog (q582). For row 136.
 > [q583] page size 200 totalElements 0 totalPages 0 number 0
 
 rs34459993 (row 137): no association in the Catalog (q583). For row 137.
+
+## Reading 2026-11-16, record
+
+> [q584] _embedded.associations[31] association_id 165236624 risk_frequency NR pvalue_description pvalue_mantissa 7 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range - beta 0.01 unit increase p_value 7e-08 accession_id GCST90551885 pubmed_id 40021682 first_author Park J
+
+> [q585] _embedded.associations[0] association_id 228360386 risk_frequency 0.9232 pvalue_description pvalue_mantissa 3 pvalue_exponent -24 multi_snp_haplotype false snp_interaction false range [1.1-1.54] beta 1.322 unit decrease p_value 2.9999999999999996e-24 accession_id GCST90476533 pubmed_id 39024449 first_author Verma A ci_lower 1.1 ci_upper 1.54
+
+rs35705950 (row 138): the one lifespan association is Park 2025's men's GWAS (GCST90551885), T β 0.01 on reduced lifespan, P 7e-8, short of genome-wide (q584); the rest are lung and blood traits, among them idiopathic pulmonary fibrosis (EFO_0000768; G, the other allele, OR given as a decrease, P 3e-24, q585). For row 138.

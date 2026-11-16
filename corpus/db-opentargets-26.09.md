@@ -4408,3 +4408,21 @@ salivary gland, thyroid; q1227, q1228), the variant at PIP 0.39 in the spleen se
 
 5_147120800_T_C (rs34459993, row 137): one credible set, a GTEx v10 aorta transcript-usage QTL of LARS1 (q1230,
 q1231), the variant at PIP 0.024 (q1232), membership only; no lifespan-class set (C4, E4). For row 137.
+
+## Reading 2026-11-16, record
+
+> [q1233] data.variant.credibleSets count 67
+
+> [q1234] data.variant.credibleSets.rows[0].study id gtex-v10_ge_lung_ensg00000117983 traitFromSource ENSG00000117983 studyType eqtl
+
+> [q1235] data.variant.credibleSets.rows[0].locus.rows[0] posteriorProbability 0.9999996188004959 beta 0.54841 pValueMantissa 7.339000225067139 pValueExponent -18
+
+> [q1236] data.variant.credibleSets.rows[1].study id GCST90399723 traitFromSource Idiopathic pulmonary fibrosis studyType gwas
+
+> [q1237] data.variant.credibleSets.rows[1].locus.rows[0] posteriorProbability 1 beta 1.2517 pValueMantissa 8.446000099182129 pValueExponent -100
+
+> [q1238] data.variant.credibleSets.rows[14].study id GCST90134597 traitFromSource COVID-19 (hospitalized vs population) studyType gwas
+
+> [q1239] data.variant.credibleSets.rows[14].locus.rows[0] posteriorProbability 0.997375684203549 beta -0.11653381625595151 pValueMantissa 6 pValueExponent -9
+
+11_1219991_G_T (rs35705950's T; row 138): 67 credible sets (q1233), none of a lifespan, longevity or healthspan study (read whole); GTEx v10's lung MUC5B expression set at PIP 1.00, T raising expression, β +0.548 (q1234, q1235); an idiopathic pulmonary fibrosis GWAS at PIP 1, T β +1.25, P 8e-100 (q1236, q1237); a COVID-19 hospitalisation set at PIP 1.00, T β −0.117, P 6e-9, T the protective side (q1238, q1239). The reversed id (11_1219991_T_G) has no record. For row 138.
