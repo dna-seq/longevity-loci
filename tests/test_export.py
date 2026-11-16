@@ -364,3 +364,13 @@ def test_nominal_claims_no_direction_the_study_lacks(real) -> None:
     written = Counter((x["rsid"], x["p_value"], x["p_value_num"]) for x in result.studies
                       if NOMINAL_TEST in x["statistical_test"] and "discovery's direction" not in x["statistical_test"])
     assert undirected <= written
+
+
+def test_row_links_0_8_cannot_hold_are_counted(tree) -> None:
+    """D39.14, D14: a second signal's seed locus and a row's folded seed ids have no 0.8 column; each is counted as a
+    gap, never dropped silently, one per link the rows hold."""
+    rows, result, _ = tree
+    seconds = Counter(str(r.second_signal_of) for r in rows if r.second_signal_of is not None)
+    folded = Counter(str(i) for r in rows for i in r.also_loci)
+    assert Counter({d: n for (g, d), n in result.gaps.items() if g is Gap.SECOND_SIGNAL}) == seconds
+    assert Counter({d: n for (g, d), n in result.gaps.items() if g is Gap.ALSO_LOCI}) == folded

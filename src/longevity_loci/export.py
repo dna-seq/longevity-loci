@@ -92,6 +92,8 @@ class Gap(StrEnum):
     UNHARMONISED = "variant direction risk: effect_allele not harmonised to the lifespan-increasing allele (written)"
     AXIS_AGE = "axes.age_of_action: no 0.8 column"
     AXIS_OUTCOME = "axes.outcome: no 0.8 column (0.8 derives the outcome strip from phenotype_class)"
+    SECOND_SIGNAL = "second_signal_of: no 0.8 column; the row reads as a locus of its own (D39.14)"
+    ALSO_LOCI = "also_loci: no 0.8 column; the folded seed ids are named only in the row (D14)"
     COMPUTED_TOKEN = "computed token withheld from flags"
     STUDY_NOMINAL = "study nominal written significant, said not genome-wide in statistical_test (0.8 has no nominal; RM434)"
     ONE_SIDED = "study p_one_sided: no column, written into statistical_test"
@@ -340,6 +342,10 @@ def export(rows: Path, corpus: Path) -> Export:
     for row in loaded:
         out.gap(Gap.AXIS_AGE)
         out.gap(Gap.AXIS_OUTCOME)
+        if row.second_signal_of is not None:
+            out.gap(Gap.SECOND_SIGNAL, str(row.second_signal_of))
+        for folded in row.also_loci:
+            out.gap(Gap.ALSO_LOCI, str(folded))
         flags = _flags(row, out)
         _pair_rows(row, out)
         for v in row.variants:

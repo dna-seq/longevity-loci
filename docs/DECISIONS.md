@@ -1361,3 +1361,15 @@ The candidate rows (D25.6), once the seed list was done.
    scout's queue (28, 25 twice, 37, 52, 53, 82, 99) go in that order, batched and read as before. Rejected: (b) a
    second variant inside the seed's row, one tier over two signals of different strength; (c) prose only, which
    never scores them.
+15. **162 (rs13141210, second signal at 28): independence counts as shown, and the tier reads the conditional
+   estimate in the coupling the phase gives.** No article prints a conditional analysis. Rosoff's sets and Open
+   Targets' mvAge set are disjoint from 28's lead and its 54 proxies, and a derived conditional (z 5.67 and 5.62, r²
+   0.095) leaves rs13141210 at z 4.1 or 7.8, depending on r's sign. It survives in either coupling, so it is no tag
+   of 28's lead (the curator's (a), the derivation labelled). It is genome-wide on its own only if r's sign gives
+   7.8. The curator quotes the phase from a phased reference (1000 Genomes EUR haplotypes; LDlink's LDpair names the
+   coupled alleles). If 7.8, B stands. If 4.1 (P 3.5e-5), the independent part is sub-genome-wide and not suggestive:
+   162 is C at most, with the marginal P stated (R-TIER-4). Until the phase is quoted, the lower reading holds.
+   Rejected: (b) folding a signal that survives conditioning in both couplings into prose; B on the marginal alone,
+   which grades the part 28 already holds.
+16. **Timmers 2022's aging-GIP1 is a shared input with mvAge, not a second scan** (the curator's (a)). Both pool
+   UK Biobank-based healthspan, lifespan and longevity GWASs, so it is named, not counted (D19.1).

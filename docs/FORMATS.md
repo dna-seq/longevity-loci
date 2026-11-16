@@ -185,7 +185,7 @@ Never written as authored values, because 0.8 computes them downstream: `tradeof
 value disagree, that is a finding for the curator.
 
 **What 0.8 has no place for**, reported by the command by reason and with a count, never dropped silently:
-`age_of_action` and `outcome` (no column; 0.8 derives the outcome strip from `phenotype_class`), a study's
+`age_of_action` and `outcome` (no column; 0.8 derives the outcome strip from `phenotype_class`), a row's `second_signal_of` and `also_loci` (no column: a second signal reads as a locus of its own, D39.14), a study's
 `p_one_sided` (written into `statistical_test`), and two that are wishes for the format, filed with
 just-dna-compiler's triage by the liaison, not losses hidden here:
 
