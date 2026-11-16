@@ -5,8 +5,12 @@ The curator seat's working state, rewritten to the present before a reset (`docs
 ## Now (2026-11-10)
 
 - **Batch fourteen's corrections (D37): done 2026-11-16** (d261b34 to 98d2df0; `done:` to the lead). Owed at next
-  touch: 97's healthspan on D37.4; the 107-family Kolbe rows' P values as Fisher's exact (D37.1). Next: 23 TERC on
-  D37.12 (the lead's (a), 640637987).
+  touch: 97's healthspan on D37.4; the 107-family Kolbe rows' P values as Fisher's exact (D37.1).
+- **23 TERC written, held uncommitted (2026-11-16):** rows/23-TERC.yaml and its notes (new pmid-23535734,
+  pmid-35530816, pmid-32109421; db quotes gwascatalog q615-q635, opentargets q1264-q1276, ensembl q996-q1004, deposits)
+  pass every check but one: check.py's genotype rule wants one neutral genotype, D37.12 wants all neutral on marker
+  rows. Put to the lead (640642903): Q1 exempt ageing_markers rows (default, theirs or tooling's); Q2 tier B (default;
+  Taub's allele unprinted, §6.3 refuses it as a study) or A. Commit 23 once Q1 lands; write 30 TERT meanwhile, held.
 - **Markers (D32, D36.3), from 2026-11-16:** every scored seed locus has a row. Left: 23 TERC (fold 104, r² 1.00 CEU),
   30 TERT, 105, 106, 112, 114, 128, 132, 133, 141, 143, 144, 145, 149, 153, 160, 161, then 115, 129, 142 (brain age).
   Plan for a marker row (the first sets the pattern; say it to the lead with 23): mechanism `ageing_markers`; tier by
