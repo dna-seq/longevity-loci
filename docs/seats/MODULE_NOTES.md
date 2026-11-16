@@ -262,3 +262,6 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
   trait, the lifespan and healthspan look-ups their own. 23 and 112 carry an empty gene, as the rows write it.
 - 2026-11-16, trial at trunk a4f6e86 (117's partial; markers 132, 133, 141, 143, 144 added): strict green, 444
   variant rows, 642 studies, every rsID resolved (144's rs59294613 too), carried indel VRS 20. Held for the close.
+- 2026-11-16, trial at trunk 4700f7b (markers 145 TSC22D2, 153, 160 added): strict green, 453 variant rows, 648
+  studies, every rsID resolved. 145's A/AT insertion rs59633341 resolves and joins the carried, unverified A>AT
+  group (20 warning lines, now 21 alleles). Held for the close.
