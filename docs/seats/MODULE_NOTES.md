@@ -251,3 +251,5 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
   three genotypes, trait_efo_id OBA_0003784 (the marker's), weight null; the two telomere studies BIOMARKER with
   the marker's trait, the lifespan and healthspan look-ups keep theirs. One difference from D32's wording: direction
   is written `unknown` (the row's), not `neutral`; both carry no colour in 0.8's vocabulary. Put to the lead.
+  Settled (the lead, 640645516): keep `unknown`. A marker row's direction speaks to longevity, where it is not
+  known; the marker's own direction lives in the conclusions and the BIOMARKER studies.
