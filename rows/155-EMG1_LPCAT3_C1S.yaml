@@ -20,23 +20,27 @@ verdict_reason: >-
   by the paper's own APOE line (rs429358 OR 0.64 there, 0.52 in Deelen's 99th; a factor of 1.47), the discovery
   expects A +1.88 in Deelen's 99th: power 1.00, heterogeneity P 4e-8 (derived), the gap the winner's curse would make.
   That is one calibration, APOE's; no mean factor exists on this scale, so whether it is a red flag is unknown and the
-  row carries no `replication_failed` (D26.3); were it a flag, Timmers' independent pass would keep the row off D
+  row carries no `replication_failed` (D26.3, D37.10). Hoque's line is not read on Deelen's scale directly, as the
+  Hsieh rows' 85-and-over designs are (D26.11): Hoque selects survivors free of the major diseases against living
+  mid-life controls, a HEALTHSPAN-class phenotype, where Hsieh compares deaths at old against younger ages, so the
+  comparison needs a conversion no source prints; were it a flag, Timmers' independent pass would keep the row off D
   (D25.1). Park 2025's own survival flat (A P 0.61); FinnGen R11's deaths flat (P 0.82), a database line; Zenin 2019
   flat (P 0.90); Foote 2025's general factor flat (P 0.52), its factor 5 (poorer cognition) with A on the frailer side
   at P 0.014, factors 1 to 4 and 6 flat. The literature search (the rsID, 2026-11-16; Semantic Scholar 429, unchecked) finds Hoque alone. Genotypes: G/G
   the reference, A carriers protective, as weak early evidence. Exceptional survival − (Deelen's 99th, one-sided 0.017
-  against, and nothing in that class for; D28.3); lifespan + (Timmers, P 0.015; Pilling agrees); healthspan 0, mixed
-  (the discovery for, Foote's factor 5 against; D26.6). Mechanism ageing in general (D25.7): the authors point to the
+  against, and nothing in that class for, Hoque being classed HEALTHSPAN; D28.3); lifespan + (Timmers, P 0.015; Pilling agrees); healthspan + (the
+  discovery, suggestive, for; Foote's factor 5 against at P 0.014, a nominal opposite, which sets a + aside only when
+  genome-wide, D27.4, D37.4). Mechanism ageing in general (D25.7): the authors point to the
   locus's links with red-cell fatty acids, lipid homeostasis and insulin resistance, and A is a GTEx eQTL of LPCAT3
   (higher in skeletal muscle, lower in the cerebellum), with no colocalisation (PP.H4 at most 0.14); named, no token.
   Causal C4 and effector E4: no lifespan-class credible set. Descriptive. Age of action unknown. The evidence is
   European.
 axes:
-  tier: {value: C, cites: [pmid-41964836#q3, pmid-41964836#q4, pmid-41964836#q5, pmid-41964836#q2, pmid-41964836#q6, pmid-41964836#q7, pmid-30642433#q403, pmid-29227965#q192, pmid-29227965#q193, pmid-29227965#q194, pmid-29227965#q195, pmid-31413261#q319, pmid-31413261#q320, pmid-31413261#q292, pmid-40021682#q141, db-finngen-r11#q104, pmid-30729179#q166, pmid-40759756#q126, pmid-40759756#q131, db-ensembl-116#q936, db-gwascatalog-2026.10.29#q598]}
+  tier: {value: C, cites: [pmid-41964836#q3, pmid-41964836#q4, pmid-41964836#q5, pmid-41964836#q2, pmid-41964836#q6, pmid-41964836#q7, pmid-41964836#q9, pmid-30642433#q403, pmid-29227965#q192, pmid-29227965#q193, pmid-29227965#q194, pmid-29227965#q195, pmid-31413261#q319, pmid-31413261#q320, pmid-31413261#q292, pmid-40021682#q141, db-finngen-r11#q104, pmid-30729179#q166, pmid-40759756#q126, pmid-40759756#q131, db-ensembl-116#q936, db-gwascatalog-2026.10.29#q598]}
   mechanism: {value: general_ageing, cites: [pmid-41964836#q8, db-opentargets-26.09#q1252, db-opentargets-26.09#q1253, db-opentargets-26.09#q1254, db-opentargets-26.09#q1255, db-opentargets-26.09#q1256]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "−",
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "−",
             cites: [pmid-41964836#q3, pmid-40759756#q131, pmid-30642433#q403, pmid-29227965#q192, pmid-31413261#q320]}
   actionability: {label: descriptive, cites: [pmid-41964836#q3]}
   context: {values: [eur_only_evidence], cites: [pmid-41964836#q3, db-ensembl-116#q936]}
@@ -93,7 +97,7 @@ studies:
     effect_unit: odds of being a Super Senior per A allele
     effect_allele: A
     direction: protective
-    statistical_test: "Hoque 2026's additive logistic GWAS with sex and ten principal components (Table S1, q3, columns q4; Table 3, q5); no genome-wide variant (q2); the paper's APOE line rs429358 OR 0.64, P 0.0015 (q7, q6) carries A to Deelen's 99th at a factor 1.47 (q292): expected +1.88 against −0.150, power 1.00, heterogeneity P 4e-8 (derived), APOE only, no flag (D26.3)"
+    statistical_test: "Hoque 2026's additive logistic GWAS with sex and ten principal components (Table S1, q3, columns q4; Table 3, q5); no genome-wide variant (q2); the paper's APOE line rs429358 OR 0.64, P 0.0015 (Table 1's additive line, q9; q7, q6) carries A to Deelen's 99th at a factor 1.47 (q292): expected +1.88 against −0.150, power 1.00, heterogeneity P 4e-8 (derived), APOE only, no flag (D26.3)"
     curator: claude-opus-5-5
   - rsid: rs79159347
     note: pmid-30642433
