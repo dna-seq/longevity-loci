@@ -2289,3 +2289,23 @@ rs1416280 (row 117): Broer 2015 (GCST002599), C the risk (effect) allele at 0.75
 > [q606] page size 200 totalElements 0 totalPages 0 number 0
 
 rs200818241 (row 127): no association in the catalogue. For row 127.
+
+## Reading 2026-11-16, record
+
+> [q607] _embedded.associations[0] association_id 118863923 risk_frequency 0.334 pvalue_description pvalue_mantissa 2 pvalue_exponent -16 multi_snp_haplotype false snp_interaction false range [1.04-1.06] or_per_copy_num 1.05 or_value 1.05 beta - p_value 2e-16 accession_id GCST90274714 pubmed_id 37945903 first_author Wang A ci_lower 1.04 ci_upper 1.06
+
+> [q608] _embedded.associations[0].reported_trait[0] Prostate cancer
+
+> [q609] _embedded.associations[0].snp_effect_allele[0] rs9275160-A
+
+> [q610] _embedded.associations[2] association_id 100841412 risk_frequency 0.383776 pvalue_description pvalue_mantissa 1 pvalue_exponent -19 multi_snp_haplotype false snp_interaction false range [0.2-0.32] beta 0.26096 unit decrease p_value 1e-19 accession_id GCST90162093 pubmed_id 36168886 first_author Thareja G ci_lower 0.2 ci_upper 0.32
+
+> [q611] _embedded.associations[2].reported_trait[0] Complement C4 levels
+
+> [q612] _embedded.associations[4] association_id 64607051 risk_frequency NR pvalue_description pvalue_mantissa 9 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [1.03-1.06] or_per_copy_num 1.044 or_value 1.044 beta - p_value 9e-08 accession_id GCST011049 pubmed_id 33398198 first_author Conti DV ci_lower 1.03 ci_upper 1.06
+
+> [q613] _embedded.associations[4].reported_trait[0] Prostate cancer
+
+> [q614] page size 200 totalElements 5 totalPages 1 number 0
+
+rs9275160 (row 159): five associations, every one on A: prostate cancer (Wang, GCST90274714, OR 1.05, P 2e-16; q607, q608, q609; and GCST90274713), complement C4 levels (Thareja, β +0.26, P 1e-19; q610, q611), prostate cancer again (Conti, P 9e-8; q612, q613), and Atkins' frailty index (q614). For row 159.

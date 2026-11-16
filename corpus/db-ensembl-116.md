@@ -3511,3 +3511,15 @@ rs1416280 (row 117): GRCh38 6:102,438,768, multi-allelic C/G/T, G ancestral (q97
 > [q980] [0].transcript_consequences[3] cdna_start 1406 cds_start 1355 protein_end 452 sift_prediction deleterious polyphen_score 1 protein_start 452 strand -1 cds_end 1355 variant_allele A impact MODERATE sift_score 0 amino_acids D/V gene_symbol CGAS polyphen_prediction probably_damaging transcript_id ENST00000858668 cdna_end 1406 biotype protein_coding hgnc_id HGNC:21367 gene_id ENSG00000164430 gene_symbol_source HGNC codons gAc/gTc
 
 rs200818241 (row 127): GRCh38 6:73,425,441 T/A, T ancestral (q975); A at 0.026 % in gnomAD's non-Finnish European genomes, 18 alleles (q976), 0.031 % in its exomes, 346 alleles (q977), absent in the Finnish genomes (q978); a CGAS missense on its MANE transcript, D452V, SIFT deleterious and PolyPhen probably damaging (q979, q980). For row 127.
+
+## Reading 2026-11-16, record
+
+> [q981] mappings[0] strand 1 assembly_name GRCh38 ancestral_allele null end 32684843 seq_region_name 6 allele_string G/A coord_system chromosome location 6:32684843-32684843 start 32684843
+
+> [q982] populations[16] allele A allele_count 24200 population gnomADg:nfe frequency 0.3566
+
+> [q983] [0] input rs9275160 seq_region_name 6 allele_string G/A end 32684843 start 32684843 assembly_name GRCh38 most_severe_consequence downstream_gene_variant strand 1 id rs9275160
+
+> [q984] [0].transcript_consequences[0] biotype lncRNA strand -1 impact MODIFIER distance 4679 canonical 1 transcript_id ENST00000790899 gene_id ENSG00000302994 variant_allele A
+
+rs9275160 (row 159): GRCh38 6:32,684,843 G/A (q981); A at 35.7 % in gnomAD's non-Finnish European genomes (q982); downstream (4.7 kb) of a lncRNA in the HLA class II region between HLA-DQB1 and HLA-DQA2 (q983, q984). For row 159.
