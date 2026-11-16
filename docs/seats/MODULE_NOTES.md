@@ -246,3 +246,8 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
   117, 127, 159 new since the last trial): 408 variant rows, 615 studies, haplotypes 6, diplotypes 12. Strict green,
   every rsID resolved; 20 carried indel VRS, module_not_closed, dataset_currency. content_signature cc75b113…,
   equal local and polygon; artifact b99639c8… (server). No marker row yet (23 TERC next).
+- 2026-11-16, first marker row checked (23 TERC, 8a8adc0; trial with the curator's uncommitted 30 TERT in the tree):
+  strict green, 414 variant rows, 622 studies. Projection as D32: category ageing_markers, state neutral on all
+  three genotypes, trait_efo_id OBA_0003784 (the marker's), weight null; the two telomere studies BIOMARKER with
+  the marker's trait, the lifespan and healthspan look-ups keep theirs. One difference from D32's wording: direction
+  is written `unknown` (the row's), not `neutral`; both carry no colour in 0.8's vocabulary. Put to the lead.
