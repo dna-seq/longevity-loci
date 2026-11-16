@@ -34,7 +34,7 @@ verdict_reason: >-
   patients (Gong 2022, OR 0.49, P 4.6e-16) and lowers IL-6 expression in a reporter assay and in serum, so A is the
   higher-IL-6, higher-risk allele there; the lead is also genome-wide for Takayasu arteritis (Renauer 2015, OR 2.07),
   whose risk allele the sources held here do not name. No longevity effect is shown to run through IL-6, so the
-  mechanism is filed as general ageing (D25.7). Context `ancestry_specific:eas`: the claim is Han Chinese, as Zeng
+  mechanism is filed as general ageing (D25.7). No context token (D30.15: a D row supports no effect, so `ancestry_specific:eas` is dropped): the claim is Han Chinese, as Zeng
   says and R-ANC-4 lists. Open Targets 26.09: the lead tops both lifespan-class credible sets, Zeng's (PIP 0.55) and
   Deelen's trans-ethnic 99th (PIP 0.99); both rest on CLHLS's genotypes, the source the row reads as overfit, so they
   set no causal or effector level (D28.12, the lead's ruling; the previous commits' C1 and E3 rejected): C4, E4, no
@@ -49,7 +49,7 @@ axes:
   outcome: {healthspan: "−", lifespan: "0", exceptional_survival: "0",
             cites: [pmid-30729179#q71, pmid-30642433#q231, db-finngen-r11#q23, pmid-31413261#q124, pmid-31413261#q125, pmid-26912274#q9]}
   actionability: {label: descriptive, cites: [pmid-33657282#q15]}
-  context: {values: ["ancestry_specific:eas"], cites: [pmid-26912274#q7, pmid-26912274#q4]}
+  context: {values: [], cites: []}
 flags:
   - {token: replication_failed, cites: [pmid-30642433#q232, pmid-30642433#q231, pmid-30642433#q92]}
   - {token: "causal:C4", cites: [db-opentargets-26.09#q610, db-opentargets-26.09#q611, db-opentargets-26.09#q612, db-opentargets-26.09#q613, db-opentargets-26.09#q622]}

@@ -43,8 +43,7 @@ verdict_reason: >-
   leans the same way, P 0.17; Liu's own survival analysis is the discovery's people). No trade-off at tier D: in dataset 1, G goes with less
   arthritis (P 3.8e-6) and prostate cancer (P 0.0063), and Biobank Japan links the locus to the same and to BMI,
   direction not given; Liu cites an Alzheimer's report (Nelson 2014, P 1e-7, allele unnamed in the Catalog). No
-  longevity effect is shown to run through any of them, so the mechanism is general ageing (D25.7). Context
-  `ancestry_specific:eas`: the claim is in Chinese only, and the European looks contradict it. Open Targets 26.09:
+  longevity effect is shown to run through any of them, so the mechanism is general ageing (D25.7). No context token (D30.15: a D row supports no effect, so `ancestry_specific:eas` is dropped): the claim is in Chinese only, and the European looks contradict it. Open Targets 26.09:
   Liu's set (PICS, from the curated top hit, no in-sample LD) holds the lead at PIP 0.109, the top of about 25
   members, so causal C2 by §4.2's letter; L2G names BMPER at 0.93 and all four colocalisations are BMPER eQTLs in
   cerebellum at H4 0.98, so effector E1 BMPER. Age of action is unknown. Genotypes neutral (D25.2).
@@ -56,7 +55,7 @@ axes:
   outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "−",
             cites: [pmid-30729179#q72, pmid-30642433#q233, db-finngen-r11#q24, pmid-31413261#q128, pmid-31413261#q129, pmid-33657282#q20]}
   actionability: {label: descriptive, cites: [pmid-33657282#q18]}
-  context: {values: ["ancestry_specific:eas"], cites: [pmid-33657282#q3, pmid-33657282#q21, pmid-31413261#q129]}
+  context: {values: [], cites: []}
 flags:
   - {token: replication_failed, cites: [pmid-31413261#q129, pmid-30642433#q233, pmid-30642433#q234, pmid-33657282#q26, pmid-30642433#q92, pmid-33657282#q17]}
   - {token: "causal:C2", cites: [db-opentargets-26.09#q623, db-opentargets-26.09#q624, db-opentargets-26.09#q625, db-opentargets-26.09#q626, db-opentargets-26.09#q627]}

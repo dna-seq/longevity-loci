@@ -43,8 +43,7 @@ verdict_reason: >-
   nothing is known to run through the pseudogene. A pleural mesothelioma GWAS (Hafeez 2025, 387 cases and 362
   controls) lists rs2440012 at P 4.6e-8 and the proxy rs113946246 at 2.5e-8, with three more SNPs of the block near
   5e-8 and no effect sizes: a further association at the locus. A five-SNP block at 5e-8 in 749 people may be an
-  artefact, but nothing shows it; no pleiotropy token rests on it, and no D26.14 ground. No pleiotropy. Context
-  `ancestry_specific:eas`: the claim is Han Chinese, tested in Chinese regions only. Open Targets 26.09 has no record
+  artefact, but nothing shows it; no pleiotropy token rests on it, and no D26.14 ground. No pleiotropy. No context token (D30.15: a D row supports no effect, so `ancestry_specific:eas` is dropped): the claim is Han Chinese, tested in Chinese regions only. Open Targets 26.09 has no record
   for the variant, and Zeng's study holds only IL6's credible set, so C4 and E4 with no gene. Age of action unknown.
   Genotypes neutral (D25.2). The rsID literature search finds Zeng 2016, Liu 2021 and Hafeez 2025's mesothelioma
   GWAS (missed when the row was written; the lead's read).
@@ -56,7 +55,7 @@ axes:
   outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
             cites: [pmid-30729179#q101, pmid-30642433#q293, pmid-30642433#q294, db-finngen-r11#q49, pmid-40021682#q71, pmid-30729179#q102, pmid-26912274#q14, pmid-31413261#q172, pmid-30642433#q297, pmid-30642433#q298]}
   actionability: {label: descriptive, cites: [db-gwascatalog-2026.10.29#q474]}
-  context: {values: ["ancestry_specific:eas"], cites: [pmid-26912274#q3, pmid-26912274#q13]}
+  context: {values: [], cites: []}
 flags:
   - {token: replication_failed, cites: [pmid-30642433#q76, pmid-30642433#q293, pmid-30642433#q294, pmid-30642433#q91, pmid-30642433#q92, db-ensembl-116#q547]}
   - {token: "causal:C4", cites: [db-opentargets-26.09#q871, db-opentargets-26.09#q872, db-opentargets-26.09#q873]}
