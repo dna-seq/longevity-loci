@@ -3,10 +3,10 @@
 **Headline results**
 - Few loci reach the top tier: 9 at A, 57 at B, 26 at C and 29 at D. A means a genome-wide hit with an independent replication and no red flag; most fall short on the replication.
 - 29 rows are at D. Their discovery failed a powered test in its own ancestry, or its own authors called it anomalous.
-- The module builds strictly: 112 loci, 336 genotype rows and 529 studies, every position resolved (test instance, longevitymap 2.0.0, rebuilt with batch twelve).
+- The module builds strictly: 121 rows, 360 genotype rows, 571 studies and APOE's 12 ε-pair results, every position resolved (test instance, longevitymap 2.0.0, rebuilt with batch thirteen).
 
 **Next**
-1. Go on with the seed's remaining loci by id (curator), 151 EYS among them now that its preprint's text is fetched. APOE (96) is done at A, as six ε pairs. One rule was amended for it (D34.1, its reason corrected in D34.10): a sample's powered null no longer flags a locus when an independent genome-wide study in that sample's own ancestry replicates it and the null is not shown to contradict that study. The person may veto it. Batch thirteen's corrections are with the curator (D34.10–15). Pacing is off on the person's word.
+1. Go on with the seed's remaining loci by id (curator), 151 EYS among them now that its preprint's text is fetched. APOE (96) is done at A, as six ε pairs. One rule was amended for it (D34.1, its reason corrected in D34.10): a sample's powered null no longer flags a locus when an independent genome-wide study in that sample's own ancestry replicates it and the null is not shown to contradict that study. The person may veto it. Batch thirteen's corrections (D34.10–15) are applied and rebuilt. Pacing is off on the person's word.
 2. Read each batch of about 10 rows adversarially and settle the curator's questions as decisions (lead).
 3. Export and rehearse the module again after each batch (module seat). It stays on the test instance until the person says otherwise.
 4. Pick the test instance's namespace (the person, desk #274; default `test-longevity-loci`, already in use).
