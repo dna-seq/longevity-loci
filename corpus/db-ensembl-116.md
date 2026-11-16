@@ -3461,3 +3461,25 @@ rs117082375 (row 111): GRCh38 7:14,117,491 A/T, A ancestral (q943); T at 1.62 % 
 > [q961] [0].transcript_consequences[0] gene_symbol_source HGNC distance 84 canonical 1 biotype transcribed_unprocessed_pseudogene transcript_id ENST00000438300 hgnc_id HGNC:33228 gene_id ENSG00000018607 strand 1 impact MODIFIER gene_symbol ZNF285CP variant_allele G
 
 rs373800184 (row 139): GRCh38 2:132,309,225 T/G, T ancestral (q952); G at 11.0 % in gnomAD's East Asian genomes, 567 of 5,134 alleles (q953, q954), 0.04 % in the non-Finnish Europeans (q955); 1000 Genomes EAS 132 of 1,008 (q956, q957), CHS 33 of 210 (q958, q959); intronic in a lncRNA (q960), 84 bp upstream of the ZNF285CP pseudogene (q961). For row 139.
+
+## Reading 2026-11-16, record
+
+> [q962] mappings[0] start 28962234 end 28962234 coord_system chromosome location 10:28962234-28962234 seq_region_name 10 strand 1 ancestral_allele G allele_string G/A/T assembly_name GRCh38
+
+> [q963] populations[20] allele_count 1079 population gnomADg:eas allele A frequency 0.2083
+
+> [q964] populations[19] allele_count 4101 frequency 0.7917 allele G population gnomADg:eas
+
+> [q965] populations[0] allele_count 7967 frequency 0.1172 allele A population gnomADg:nfe
+
+> [q966] populations[74] allele_count 229 population 1000GENOMES:phase_3:EAS allele A frequency 0.22718253968254
+
+> [q967] populations[73] frequency 0.77281746031746 allele G population 1000GENOMES:phase_3:EAS allele_count 779
+
+> [q968] populations[70] frequency 0.195238095238095 population 1000GENOMES:phase_3:CHS allele A allele_count 41
+
+> [q969] populations[69] allele G population 1000GENOMES:phase_3:CHS frequency 0.804761904761905 allele_count 169
+
+> [q970] [0] id rs61838431 most_severe_consequence intergenic_variant assembly_name GRCh38 strand 1 start 28962234 seq_region_name 10 input rs61838431 allele_string G/A/T end 28962234
+
+rs61838431 (row 146): GRCh38 10:28,962,234, multi-allelic G/A/T, G ancestral (q962), the row meaning G/A; A at 20.8 % in gnomAD's East Asian genomes, 1,079 of 5,180 alleles (q963, q964), 11.7 % in the non-Finnish Europeans (q965); 1000 Genomes EAS 229 of 1,008 (q966, q967), CHS 41 of 210 (q968, q969); intergenic (q970). For row 146.

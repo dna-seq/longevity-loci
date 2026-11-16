@@ -4518,3 +4518,9 @@ q1255, q1256), apolipoprotein A, plateletcrit, red-cell fatty acids; none a life
 > [q1259] data variant null
 
 2_132309225_T_G (rs373800184; row 139): no record, nor under the reversed id. For row 139.
+
+## Reading 2026-11-16, record
+
+> [q1260] data variant null
+
+10_28962234_G_A (rs61838431; row 146): no record, nor under the reversed id. For row 146.

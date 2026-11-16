@@ -2267,3 +2267,9 @@ rs117082375 (row 111): no association in the catalogue. For row 111.
 > [q601] page size 200 totalElements 0 totalPages 0 number 0
 
 rs373800184 (row 139): no association in the catalogue. For row 139.
+
+## Reading 2026-11-16, record
+
+> [q602] page size 200 totalElements 0 totalPages 0 number 0
+
+rs61838431 (row 146): no association in the catalogue. For row 146.
