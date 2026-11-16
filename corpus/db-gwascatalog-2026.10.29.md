@@ -2273,3 +2273,13 @@ rs373800184 (row 139): no association in the catalogue. For row 139.
 > [q602] page size 200 totalElements 0 totalPages 0 number 0
 
 rs61838431 (row 146): no association in the catalogue. For row 146.
+
+## Reading 2026-11-16, record
+
+> [q603] _embedded.associations[0] association_id 10076208 risk_frequency 0.75 pvalue_description pvalue_mantissa 5 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range 1.15–1.34 or_per_copy_num 1.24 or_value 1.24 beta - p_value 5e-08 accession_id GCST002599 pubmed_id 25199915 first_author Broer L
+
+> [q604] _embedded.associations[0].snp_allele[0] rs_id rs1416280 effect_allele C
+
+> [q605] _embedded.associations[0].reported_trait[0] Longevity (90 years and older)
+
+rs1416280 (row 117): Broer 2015 (GCST002599), C the risk (effect) allele at 0.75, OR 1.24 (1.15–1.34) per C, P 5e-8 (q603, q604), for longevity at 90 and older (q605). For row 117.

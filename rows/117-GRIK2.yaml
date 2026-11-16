@@ -1,0 +1,117 @@
+# The seed list's locus 117, GRIK2 (6q16.3). Curated 2026-11-16. Lead rs1416280, the seed's only rsID (Broer 2015's
+# CHARGE longevity locus): intergenic between GRIK2 and the R3HDM2P2 pseudogene, GRCh38 6:102,438,768, GRCh37
+# 6:102,886,643, multi-allelic (C/G/T), the row meaning C/G; C at 74.9 % in gnomAD's non-Finnish European genomes, C the
+# discovery's longer-lived allele. Open Targets 26.09 has no record of it; the GWAS Catalog (2026-10-29) holds Broer's
+# line alone.
+locus_id: 117
+locus_name: GRIK2
+verdict: re-tiered
+verdict_reason: >-
+  Tier D, from no seed tier: a sub-genome-wide discovery that fails a powered test in its own ancestry outside its
+  sample (D26.8, D21; row 136's shape). Broer 2015 meta-analysed 6,036 Europeans aged 90 or over against 3,757 who died
+  between 55 and 80 in the CHARGE cohorts: a suggestive association near GRIK2, OR 1.24 (1.15–1.34) per C, P 5.09e-8,
+  just short of the genome-wide line, and the paper names no new genome-wide locus. The full text was not reached
+  (Europe PMC answered 500 and OUP's PDF 403, 2026-11-16), so the lead, its allele and its frequency are read from the
+  GWAS Catalog's record of the study (C at 0.75, the risk allele of "longevity"). Deelen 2019 holds the variant (C +0.031,
+  SE 0.022, P 0.16 at the 90th percentile; +0.006, P 0.86 at the 99th), C's way and flat, but its meta-analyses hold most
+  of Broer's CHARGE cohorts, so it is not an independent test (D19). Timmers 2019's parental lifespan, outside that
+  sample, has C with shorter-lived parents, beta1 −0.0071 (SE 0.0045), P 0.12. Carried to Timmers' scale (D25.3) by
+  Deelen's 90th percentile calibrations, the nearest to Broer's 90-and-over design (Broer's own APOE line is in the
+  unread text), the discovery expects C +0.044 by APOE's factor (4.84) and +0.106 by the loci's mean factor: power
+  1.00 under both, heterogeneity P 2.5e-8 and 1e-8, and at half the effect 1.3e-6 and 1.5e-8 (derived): a D21 red flag
+  under both calibrations (D26.3), `replication_failed`. No independent scoring-class study passes C's way (D25.1):
+  FinnGen R11's deaths have C with fewer deaths, flat (G β +0.0092, P 0.23, a database line); Park 2025's own survival
+  flat (P 0.92; men 0.86, women 0.94); Pilling 2017's parents, inside Timmers' pool, all against C and flat (P 0.28 to
+  0.47). Zenin 2019's healthspan puts G with the later end of healthspan, P 0.058, one-sided 0.029 against C. Foote
+  2025's deposits hold no line (untested). The literature search (the rsID with GRIK2, 2026-11-16) finds Broer alone.
+  Every genotype neutral (D25.2). Exceptional survival 0 (Deelen flat and not independent; a D row's discovery gives no
+  +, D28.10); lifespan 0 (Timmers one-sided 0.058 against, short of 0.05; Park and FinnGen flat); healthspan − (Zenin,
+  one-sided 0.029 against, nothing for; D28.3). Mechanism ageing in general (D25.7): intergenic, near GRIK2, a
+  glutamate receptor gene; nothing recorded at the variant. Causal C4 and effector E4: no Open Targets record.
+  Descriptive. Age of action unknown. The evidence is European.
+axes:
+  tier: {value: D, cites: [pmid-25199915#q3, pmid-25199915#q4, pmid-25199915#q2, db-gwascatalog-2026.10.29#q603, db-gwascatalog-2026.10.29#q604, db-gwascatalog-2026.10.29#q605, pmid-31413261#q323, pmid-31413261#q324, pmid-31413261#q28, pmid-30642433#q405, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, db-finngen-r11#q108, pmid-40021682#q148, pmid-40021682#q149, pmid-40021682#q150, pmid-29227965#q200, pmid-29227965#q201, pmid-29227965#q202, pmid-29227965#q203, pmid-30729179#q168, db-ensembl-116#q972]}
+  mechanism: {value: general_ageing, cites: [db-ensembl-116#q974, db-opentargets-26.09#q1261]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "−", lifespan: "0", exceptional_survival: "0",
+            cites: [pmid-31413261#q323, pmid-31413261#q324, pmid-30642433#q405, pmid-40021682#q148, db-finngen-r11#q108, pmid-30729179#q168]}
+  actionability: {label: descriptive, cites: [pmid-25199915#q4]}
+  context: {values: [eur_only_evidence], cites: [pmid-25199915#q3, db-ensembl-116#q972]}
+flags:
+  - {token: replication_failed, cites: [pmid-30642433#q405, pmid-25199915#q4, db-gwascatalog-2026.10.29#q603, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1261]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q1261]}
+variants:
+  - rsid: rs1416280
+    locus: {chrom: "6", start: 102438768, ref: C, cites: [db-ensembl-116#q971]}  # rs1416280 is multi-allelic (C/G/T); the row means C and G
+    gene: ""
+    phenotype: GRIK2 region intergenic, longevity
+    trait_efo_id: OBA_VT0005372
+    effect_allele: C
+    effect_size: 1.24
+    effect_measure: OR
+    stat_significance: suggestive
+    direction: protective
+    genotypes:
+      - genotype: C/C
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position (about 56 in 100 people of European ancestry
+          do). The position lies between genes on chromosome 6, near GRIK2. One large study of people who reached 90
+          found this version slightly more often, but a larger study of parents' lifespans did not bear that out, so it
+          is not counted for or against lifespan.
+      - genotype: C/G
+        state: neutral
+        conclusion: >-
+          You carry one copy of each version of this DNA position (about 38 in 100 people of European ancestry do). One
+          study of people who reached 90 favoured the C version, but a larger study of parents' lifespans did not bear
+          that out, so it is not counted for or against lifespan.
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the less common version of this DNA position (about 6 in 100 people of European
+          ancestry do). It is the reference the other combinations are compared with. One study of people who reached 90
+          found it slightly less often, but a larger study of parents' lifespans did not bear that out, so it is not
+          counted for or against lifespan.
+studies:
+  - rsid: rs1416280
+    note: pmid-25199915
+    quote: q4
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: European (the CHARGE consortium; aged 90 or over against died between 55 and 80)
+    ancestry: [EUR]
+    n_cases: 6036
+    sample_size: 9793
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: suggestive
+    p_value: "5.09 × 10(-8)"
+    p_value_num: 5.09e-08
+    effect_size: 1.24
+    effect_measure: OR
+    effect_unit: odds of reaching 90 per C allele
+    effect_allele: C
+    direction: protective
+    statistical_test: "Broer 2015's meta-analysis (q3, q4; no new genome-wide locus, q2); the lead, its allele C at 0.75 and its interval 1.15–1.34 from the GWAS Catalog's record (GCST002599, db-gwascatalog-2026.10.29#q603, q604, q605); the full text not reached"
+    curator: claude-opus-5-5
+  - rsid: rs1416280
+    note: pmid-30642433
+    quote: q405
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 640178
+    sample_unit: lives
+    stat_significance: not_significant
+    p_value: "0.1164507"
+    p_value_num: 0.1164507
+    effect_size: -0.0071
+    effect_measure: beta
+    effect_unit: log hazard protection per C allele in self (beta1; positive = longer life)
+    effect_allele: C
+    direction: risk
+    statistical_test: "Timmers 2019's summary statistics (GCST009890, q405): C beta1 −0.0071, SE 0.0045; against Broer's log OR +0.215 (SE 0.039) carried by Deelen's 90th calibrations (APOE 4.84, pmid-31413261#q82 over q90; mean ×0.4175, q92): expected +0.044 and +0.106, power 1.00, heterogeneity P 2.5e-8 and 1e-8, a D21 red flag under both; at half the effect 1.3e-6 and 1.5e-8 (derived)"
+    curator: claude-opus-5-5

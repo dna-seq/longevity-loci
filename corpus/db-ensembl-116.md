@@ -3483,3 +3483,15 @@ rs373800184 (row 139): GRCh38 2:132,309,225 T/G, T ancestral (q952); G at 11.0 %
 > [q970] [0] id rs61838431 most_severe_consequence intergenic_variant assembly_name GRCh38 strand 1 start 28962234 seq_region_name 10 input rs61838431 allele_string G/A/T end 28962234
 
 rs61838431 (row 146): GRCh38 10:28,962,234, multi-allelic G/A/T, G ancestral (q962), the row meaning G/A; A at 20.8 % in gnomAD's East Asian genomes, 1,079 of 5,180 alleles (q963, q964), 11.7 % in the non-Finnish Europeans (q965); 1000 Genomes EAS 229 of 1,008 (q966, q967), CHS 41 of 210 (q968, q969); intergenic (q970). For row 146.
+
+## Reading 2026-11-16, record
+
+> [q971] mappings[0] location 6:102438768-102438768 end 102438768 ancestral_allele G start 102438768 seq_region_name 6 strand 1 allele_string C/G/T assembly_name GRCh38 coord_system chromosome
+
+> [q972] populations[18] allele C allele_count 50870 frequency 0.7493 population gnomADg:nfe
+
+> [q973] populations[19] population gnomADg:nfe frequency 0.2508 allele_count 17022 allele G
+
+> [q974] [0] allele_string C/G/T input rs1416280 assembly_name GRCh38 most_severe_consequence intergenic_variant end 102438768 strand 1 start 102438768 seq_region_name 6 id rs1416280
+
+rs1416280 (row 117): GRCh38 6:102,438,768, multi-allelic C/G/T, G ancestral (q971), the row meaning C/G; C at 74.9 % in gnomAD's non-Finnish European genomes (q972, q973); intergenic (q974). For row 117.
