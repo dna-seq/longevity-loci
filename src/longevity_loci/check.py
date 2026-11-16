@@ -19,7 +19,7 @@ import yaml
 from pydantic import ValidationError
 
 from longevity_loci.models import (
-    CITE, Depth, row_file, Direction, NoteHead, PhenotypeClass, Quote, Row, StatSignificance, State, StudyDesign, Tier,
+    CITE, Category, Depth, row_file, Direction, NoteHead, PhenotypeClass, Quote, Row, StatSignificance, State, StudyDesign, Tier,
 )
 
 log = logging.getLogger(__name__)
@@ -228,6 +228,7 @@ def check_rules(row: Row, path: Path) -> list[Finding]:
             if missing:
                 rule(f"studies[{i}] {s.rsid}", f"§6.3 requires on a study supporting tier {tier.value}: {', '.join(missing)}")
         paired = {a.rsid for h in row.haplotypes for a in h.alleles}  # scored by the row's pairs (D33), no genotypes
+        marker = row.axes.mechanism.value is Category.AGEING_MARKERS  # D32, D37.12: unscored, every genotype neutral
         for v in row.variants:
             states = [g.state for g in v.genotypes]
             neutral = states.count(State.NEUTRAL)
@@ -235,9 +236,11 @@ def check_rules(row: Row, path: Path) -> list[Finding]:
                 continue
             if len(states) < 3:
                 out.append(Finding(Kind.INCOMPLETE, path, v.rsid, f"{len(states)} of three genotypes"))
+            elif marker and neutral != len(states):
+                rule(v.rsid, "a biological-ageing marker row (D32) is unscored: neutral on every genotype")
             elif v.direction is Direction.CONTESTED and neutral != len(states):
                 rule(v.rsid, "a trade-off with unresolved direction (contested) is neutral on every genotype")
-            elif v.direction is not Direction.CONTESTED and neutral != 1:
+            elif not marker and v.direction is not Direction.CONTESTED and neutral != 1:
                 rule(v.rsid, f"one genotype, the most common, is neutral; {neutral} are")
     return out
 

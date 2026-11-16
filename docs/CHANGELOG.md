@@ -4,6 +4,8 @@ Newest first.
 
 ## Unreleased
 
+- `loci check rows` takes a biological-ageing marker row (mechanism `ageing_markers`, D32, D37.12) as unscored: every genotype neutral, where it asked one neutral of a scored row; a marker row that moves a genotype breaks the rule.
+
 - `loci export` writes a nominal study's `statistical_test` as "nominal (p < 0.05), not genome-wide" and no longer claims "in the discovery's direction", which was false for Hsieh's direction-unknown validation lines and for derived reads against a reference (D37.13).
 
 - just-dna-enricher 0.8.7 (floor `>=0.8.7`; format and compiler stay 0.8.6), with the module-creator plugin's pin moved to `v0.48.12`, which locks the same; `compile_module` names the toolchain behind its artifact.

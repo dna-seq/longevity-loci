@@ -681,3 +681,19 @@ def test_a_pair_position_without_genotypes_is_not_incomplete(tree: Path) -> None
                           for n, d in {"ε3": {"rs429358": "T"}, "ε4": {"rs429358": "C"}}.items()]
     _row(tree).write_text(yaml.safe_dump(data, sort_keys=False, allow_unicode=True), encoding="utf-8")
     assert incomplete() == bare - {"rs429358"}
+
+
+def test_a_marker_row_is_neutral_on_every_genotype(tree: Path) -> None:
+    """D32, D37.12: a biological-ageing marker row is unscored, so every genotype is neutral and none is the one
+    neutral §6.2 asks of a scored row; a marker row that moves a genotype breaks the rule."""
+    def rules() -> set[str]:
+        return {f.where for f in check_rows(tree / "rows", tree / "corpus") if f.kind is Kind.RULE}
+
+    text = _row(tree).read_text().replace("mechanism: {value: brain_memory,", "mechanism: {value: ageing_markers,")
+    neutral = ("    genotypes:\n      - {genotype: TT, state: neutral, conclusion: x}\n"
+               "      - {genotype: CT, state: neutral, conclusion: x}\n      - {genotype: CC, state: neutral, conclusion: x}\n")
+    marked = text.replace("    direction: risk\n", "    direction: risk\n" + neutral, 1)
+    _row(tree).write_text(marked)
+    assert "rs429358" not in rules()
+    _row(tree).write_text(marked.replace("{genotype: CC, state: neutral", "{genotype: CC, state: risk"))
+    assert "rs429358" in rules()

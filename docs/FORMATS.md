@@ -241,7 +241,7 @@ nothing to check.
     study, except that a `nominal` one (a replication look-up) or a `multivariate_healthspan_lifespan` one (D15), or a `meta_analysis` that prints no pooled effect
     (D20), needs only `p_value`, `p_value_num`,
     `effect_allele` and a `direction` other than `unknown` (or an `effect_size`) (D13); and, once a variant lists three genotypes, exactly one neutral, or every one neutral when its
-    `direction` is `contested` (a trade-off with unresolved net direction, §6.2). Fewer than three genotypes is
+    `direction` is `contested` (a trade-off with unresolved net direction, §6.2) or its row's mechanism is `ageing_markers` (unscored, D32, D37.12). Fewer than three genotypes is
     `incomplete`, a warning listed with `-v`: an APOE-style locus is scored as a diplotype (§6.4).
 
 Not checked yet: R-TIER-3 (an ancestry banner, the consumer's) and R-TIER-1's "research view only" (the
