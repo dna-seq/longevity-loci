@@ -3495,3 +3495,19 @@ rs61838431 (row 146): GRCh38 10:28,962,234, multi-allelic G/A/T, G ancestral (q9
 > [q974] [0] allele_string C/G/T input rs1416280 assembly_name GRCh38 most_severe_consequence intergenic_variant end 102438768 strand 1 start 102438768 seq_region_name 6 id rs1416280
 
 rs1416280 (row 117): GRCh38 6:102,438,768, multi-allelic C/G/T, G ancestral (q971), the row meaning C/G; C at 74.9 % in gnomAD's non-Finnish European genomes (q972, q973); intergenic (q974). For row 117.
+
+## Reading 2026-11-16, record
+
+> [q975] mappings[0] start 73425441 location 6:73425441-73425441 coord_system chromosome allele_string T/A ancestral_allele T end 73425441 assembly_name GRCh38 seq_region_name 6 strand 1
+
+> [q976] populations[20] frequency 0.0002646 population gnomADg:nfe allele A allele_count 18
+
+> [q977] populations[14] allele A allele_count 346 population gnomADe:nfe frequency 0.0003111
+
+> [q978] populations[18] population gnomADg:fin frequency 1 allele T allele_count 10622
+
+> [q979] [0].transcript_consequences[0] gene_symbol_source HGNC canonical 1 codons gAc/gTc transcript_id ENST00000370315 hgnc_id HGNC:21367 cdna_end 1471 biotype protein_coding gene_id ENSG00000164430 amino_acids D/V sift_score 0 impact MODERATE gene_symbol CGAS mane_select NM_138441.3 polyphen_prediction probably_damaging variant_allele A cds_end 1355 strand -1 polyphen_score 1 protein_start 452 cdna_start 1471 cds_start 1355 sift_prediction deleterious protein_end 452
+
+> [q980] [0].transcript_consequences[3] cdna_start 1406 cds_start 1355 protein_end 452 sift_prediction deleterious polyphen_score 1 protein_start 452 strand -1 cds_end 1355 variant_allele A impact MODERATE sift_score 0 amino_acids D/V gene_symbol CGAS polyphen_prediction probably_damaging transcript_id ENST00000858668 cdna_end 1406 biotype protein_coding hgnc_id HGNC:21367 gene_id ENSG00000164430 gene_symbol_source HGNC codons gAc/gTc
+
+rs200818241 (row 127): GRCh38 6:73,425,441 T/A, T ancestral (q975); A at 0.026 % in gnomAD's non-Finnish European genomes, 18 alleles (q976), 0.031 % in its exomes, 346 alleles (q977), absent in the Finnish genomes (q978); a CGAS missense on its MANE transcript, D452V, SIFT deleterious and PolyPhen probably damaging (q979, q980). For row 127.

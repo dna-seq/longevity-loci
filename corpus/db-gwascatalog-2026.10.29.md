@@ -2283,3 +2283,9 @@ rs61838431 (row 146): no association in the catalogue. For row 146.
 > [q605] _embedded.associations[0].reported_trait[0] Longevity (90 years and older)
 
 rs1416280 (row 117): Broer 2015 (GCST002599), C the risk (effect) allele at 0.75, OR 1.24 (1.15–1.34) per C, P 5e-8 (q603, q604), for longevity at 90 and older (q605). For row 117.
+
+## Reading 2026-11-16, record
+
+> [q606] page size 200 totalElements 0 totalPages 0 number 0
+
+rs200818241 (row 127): no association in the catalogue. For row 127.

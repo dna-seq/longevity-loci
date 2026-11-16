@@ -1,0 +1,89 @@
+# The seed list's locus 127, CGAS (p.D452V) (6q13). Curated 2026-11-16. Lead rs200818241, the seed's only rsID (Putter
+# 2025's long-lived families, a bioRxiv preprint): a CGAS missense on its MANE Select transcript (NM_138441.3), D452V,
+# SIFT deleterious and PolyPhen probably damaging; GRCh38 6:73,425,441 T/A, GRCh37 6:74,135,164, A the rare allele
+# (0.026 % in gnomAD's non-Finnish European genomes, 0.031 % in its exomes, absent in the Finnish genomes) and the
+# preprint's longevity candidate. Open Targets 26.09 has no record of it; the GWAS Catalog (2026-10-29) holds no
+# association.
+locus_id: 127
+locus_name: CGAS (p.D452V)
+verdict: kept
+verdict_reason: >-
+  Tier D, the seed's: a candidate with no adequately powered test (§4.1's D), from a familial design the requirements
+  hold as annotation only (FAMILIAL), in a preprint. Putter 2025 (bioRxiv; not peer-reviewed) ran affected sib-pair
+  linkage in 212 Leiden Longevity Study sibships and found four regions at LOD 3 or more, 6q14.3 among them; under the
+  peaks it kept rare (gnomAD NFE under 0.2 %), high-impact protein-altering variants shared by siblings and absent from
+  100 Dutch controls, then dropped any more frequent in German controls than in German long-lived individuals: twelve
+  variants in seven genes. rs200818241 is in two of the sibships. No association statistic is printed for it. The one
+  look-up is the German long-lived cohort (1,265 aged 94 or over against 4,195 younger controls): A at a MAF of 3.95e-4
+  against 1.19e-4, that is about one copy in 2,530 alleles against one in 8,390 (derived), which the text reads as more
+  frequent in the long-lived; at one copy each no test could be powered (Fisher's exact about 0.4, derived), and that
+  cohort fed the selection step itself. The German long-lived are the Kiel cohort behind Kolbe 2025's rows (D34.7);
+  against gnomAD's exomes (0.031 %) one copy in 2,530 is about what is expected (0.8). The controls' mean age reads
+  50.5 in the methods and 68 in the table's legend; named. In human and mouse cells the variant lowers cGAS protein
+  and the cGAS-STING pathway's activation, dampening inflammation and delaying senescence, a mechanism, not a test of
+  survival. A is too rare for any deposit: Deelen 2019, Timmers 2019, Park 2025 (all three files), Pilling 2017, Zenin
+  2019, Foote 2025 and FinnGen R11 were each looked up (2026-11-16, GRCh37 6:74,135,164) and hold no line: untested.
+  §4.1's C for a preprint-only finding is the alternative; the finding here is a carrier count and a cell assay, not an
+  association, so the seed's D is kept, put to the lead. The literature search (the rsID, 2026-11-16) finds Putter
+  alone. Every genotype neutral (D25.2). Exceptional survival untested (no printed test; one copy against one);
+  lifespan untested; healthspan untested. Mechanism immune and inflammation: cGAS is the cytosolic DNA sensor of the
+  cGAS-STING innate immune pathway, and the variant reduces its activation in cells. Causal C4 (no fine-mapping);
+  effector E1 CGAS, a coding change on the MANE transcript (§4.2). Descriptive. Age of action unknown. The evidence is
+  Dutch and German.
+axes:
+  tier: {value: D, cites: [pmid-41427385#q1, pmid-41427385#q5, pmid-41427385#q6, pmid-41427385#q2, pmid-41427385#q4, pmid-41427385#q7, pmid-41427385#q8, db-ensembl-116#q976, db-ensembl-116#q977, db-ensembl-116#q978, db-gwascatalog-2026.10.29#q606]}
+  mechanism: {value: immune_inflammation, cites: [pmid-41427385#q3]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: untested, lifespan: untested, exceptional_survival: untested,
+            cites: [pmid-41427385#q4, pmid-41427385#q7]}
+  actionability: {label: descriptive, cites: [pmid-41427385#q3]}
+  context: {values: [eur_only_evidence], cites: [pmid-41427385#q1, pmid-41427385#q7]}
+flags:
+  - {token: preprint, cites: [pmid-41427385#q1]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1262]}
+  - {token: "effector:E1", cites: [db-ensembl-116#q979, db-ensembl-116#q980]}
+variants:
+  - rsid: rs200818241
+    gene: CGAS
+    phenotype: CGAS D452V missense, familial longevity
+    trait_efo_id: OBA_VT0005372
+    effect_allele: A
+    direction: protective
+    genotypes:
+      - genotype: T/T
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position, as nearly everyone does. It is the
+          reference the other combinations are compared with. The position lies inside the CGAS gene on chromosome 6,
+          which senses stray DNA inside cells and switches on an immune alarm.
+      - genotype: A/T
+        state: neutral
+        conclusion: >-
+          You carry one copy of a rare version of this DNA position that changes one building block of the CGAS
+          protein (fewer than 1 in 1,000 people carry it). It was found in two Dutch families with many long-lived
+          members, and in cells it dampens the immune alarm, but no study has tested whether carriers live longer, so it
+          is not counted for or against lifespan.
+      - genotype: A/A
+        state: neutral
+        conclusion: >-
+          You carry two copies of a rare version of this DNA position, which is very unusual. Single copies were found
+          in two long-lived Dutch families, but no study has tested whether carriers live longer, so nothing can be said
+          about two copies.
+studies:
+  - rsid: rs200818241
+    note: pmid-41427385
+    quote: q4
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: centenarian_case_control
+    population: German long-lived individuals (aged 94 or over, 602 centenarians) against younger German controls (Putter 2025's look-up)
+    ancestry: [EUR]
+    n_cases: 1265
+    sample_size: 5460
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: not_significant
+    effect_allele: A
+    direction: protective
+    statistical_test: "Table 3 (q4): A MAF 3.95e-4 in the long-lived against 1.19e-4 in the controls, about one copy against one (1,265 and 4,195, q7; derived), no test printed, Fisher about 0.4 (derived); the text reads it as more frequent in the long-lived (q8); the cohort fed the variant selection (q6); found in two Leiden sibships under a LOD-3 linkage peak (q1, q2, q5), a FAMILIAL design, annotation only"
+    curator: claude-opus-5-5
