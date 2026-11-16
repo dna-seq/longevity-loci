@@ -5038,3 +5038,30 @@ under 0.5, no colocalisation read, E3. Two other HDL sets and a brain exon set n
 
 10_96287079_A_T (rs941997, row 161): one credible set (q1451), a brain amygdala splicing QTL (GTEx v10), PIP 0.08
 (q1452, q1453). No Hannum or other clock set holds it: C4, and no gene to name, E4. For row 161.
+
+## Reading 2026-11-16, record
+
+> [q1454] data.variant.credibleSets count 133
+
+> [q1455] data.variant.credibleSets.rows[3].study id GCST90984695 traitFromSource Brain age gap derived from white matter studyType gwas
+
+> [q1456] data.variant.credibleSets.rows[3].locus.rows[0] posteriorProbability 0.3620431217634553 beta 0.269025 pValueMantissa 6 pValueExponent -22
+
+> [q1457] data.variant.credibleSets.rows[36].study id GCST90296682 traitFromSource Brain age gap studyType gwas
+
+> [q1458] data.variant.credibleSets.rows[36].locus.rows[0] posteriorProbability 0.30114927909743927 beta 0.23 pValueMantissa 2 pValueExponent -18
+
+> [q1459] data.variant.credibleSets.rows[13].study id GCST90558034 traitFromSource Brain age gap studyType gwas
+
+> [q1460] data.variant.credibleSets.rows[13].locus.rows[0] posteriorProbability 0.23823413336214794 beta 0.189136 pValueMantissa 1.1339999437332153 pValueExponent -14
+
+> [q1461] data.credibleSet.study id GCST90984695 traitFromSource Brain age gap derived from white matter publicationFirstAuthor Jawinski P publicationDate 2025-10-03 nSamples 32634
+
+> [q1462] data.credibleSet.l2GPredictions.rows[0] score 0.46672672033309937
+
+> [q1463] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol KLF3
+
+4_38678394_A_G (rs13132853, row 115; beta per G): 133 credible sets (q1454). Brain age gap: Jawinski's white-matter set PIP
+0.36, G +0.269 (q1455, q1456); Leonardsen's PIP 0.30 (q1457, q1458); Zhao's PIP 0.24 (q1459, q1460). Locus-to-gene on
+Jawinski's set (q1461): KLF3 0.47, the only gene (q1462, q1463): under 0.5, E3. Many brain imaging, adiposity and
+blood count sets named, not read. For row 115.

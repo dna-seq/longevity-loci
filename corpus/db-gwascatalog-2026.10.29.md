@@ -2747,3 +2747,42 @@ decrease, P 6e-69 (q765, q767, q768); trait EFO_0022597 (q766). For row 149.
 
 rs941997 (row 161): one association (q774), McCartney 2021's DNA methylation Hannum age acceleration, T (0.22) 0.3481
 decrease, P 9e-22 (q770, q772, q773); trait EFO_0022597 (q771). For row 161.
+
+## Reading 2026-11-16, record
+
+> [q775] _embedded.associations[4] association_id 222822470 risk_frequency 0.634 pvalue_description pvalue_mantissa 9 pvalue_exponent -36 multi_snp_haplotype false snp_interaction false range [0.22-0.3] beta 0.26036677 years decrease p_value 8.999999999999999e-36 accession_id GCST90965684 pubmed_id 41044200 first_author Jawinski P ci_lower 0.22 ci_upper 0.3
+
+> [q776] _embedded.associations[4].efo_traits[0] efo_id EFO_0010602 efo_trait brain age measurement
+
+> [q777] _embedded.associations[4].snp_effect_allele[0] rs13132853-A
+
+> [q778] _embedded.associations[7] association_id 192523638 risk_frequency 0.355838 pvalue_description pvalue_mantissa 1 pvalue_exponent -14 multi_snp_haplotype false snp_interaction false range [0.14-0.24] beta 0.189136 unit increase p_value 1e-14 accession_id GCST90558034 pubmed_id 40795387 first_author Zhao X ci_lower 0.14 ci_upper 0.24
+
+> [q779] _embedded.associations[7].snp_effect_allele[0] rs13132853-G
+
+> [q780] _embedded.associations[9] association_id 118806015 risk_frequency NR pvalue_description pvalue_mantissa 2 pvalue_exponent -18 multi_snp_haplotype false snp_interaction false range - beta 0.23 unit increase p_value 2e-18 accession_id GCST90296682 pubmed_id 37165155 first_author Leonardsen EH
+
+> [q781] _embedded.associations[9].snp_effect_allele[0] rs13132853-G
+
+> [q782] _embedded.associations[0] association_id 228231249 risk_frequency 0.7383 pvalue_description pvalue_mantissa 4 pvalue_exponent -13 multi_snp_haplotype false snp_interaction false range [0.023-0.039] beta 0.03095 unit increase p_value 4e-13 accession_id GCST90479522 pubmed_id 39024449 first_author Verma A ci_lower 0.023 ci_upper 0.039
+
+> [q783] _embedded.associations[0].efo_traits[0] efo_id EFO_0004340 efo_trait body mass index
+
+> [q784] _embedded.associations[0].snp_effect_allele[0] rs13132853-A
+
+> [q785] _embedded.associations[21] association_id 91777845 risk_frequency 0.64 pvalue_description pvalue_mantissa 1 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range - beta 0.009 % increase p_value 1e-08 accession_id GCST90020232 pubmed_id 33980691 first_author Martin S
+
+> [q786] _embedded.associations[21].snp_effect_allele[0] rs13132853-A
+
+> [q787] _embedded.associations[23] association_id 30568407 risk_frequency 0.6352 pvalue_description pvalue_mantissa 9 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range [0.0014-0.0026] beta 0.002 unit decrease p_value 9.000000000000001e-09 accession_id GCST005830 pubmed_id 29691431 first_author Tikkanen E ci_lower 0.0014 ci_upper 0.0026
+
+> [q788] _embedded.associations[23].snp_effect_allele[0] rs13132853-A
+
+> [q789] page size 200 totalElements 24 totalPages 1 number 0
+
+rs13132853 (row 115), 24 associations (q789). Jawinski 2025's brain age gap (grey and white matter), A (0.634) 0.260
+years decrease, P 9e-36 (q775, q777; trait EFO_0010602, q776). Two other brain-age GWASs put G on the older side:
+Zhao's (PMID 40795387), G +0.189, P 1e-14 (q778, q779); Leonardsen's (PMID 37165155), G +0.23, P 2e-18 (q780,
+q781); both papers unread, their samples' overlap with Jawinski's UK Biobank unread. A raises body mass index (+0.031,
+P 4e-13; q782 to q784) and body fat percentage (P 1e-8; q785, q786) and lowers hand grip strength (P 9e-9;
+q787, q788). Brain imaging, blood count and liver enzyme lines named, not read. For row 115.

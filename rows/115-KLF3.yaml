@@ -1,0 +1,100 @@
+# The seed list's locus 115, KLF3 (4p14): a marker of biological ageing (D32, D36.3, D37.3), curated on D37.12 with 23
+# TERC as the pattern. Curated 2026-11-16. Lead rs13132853, the seed's rsID (Jawinski 2025's 4p14 brain-age-gap locus):
+# intronic in KLF3's MANE transcript, GRCh38 4:38,678,394, GRCh37 4:38,680,015, multi-allelic A/G/T, the row meaning A/G;
+# A at 66.5 % in gnomAD's non-Finnish European genomes. A is the allele with the younger-looking brain.
+locus_id: 115
+locus_name: KLF3
+verdict: kept
+verdict_reason: >-
+  Tier B on the marker's own evidence (D37.12; the seed gives none): the tier grades the association with the brain
+  age gap, MRI-predicted brain age minus calendar age, not longevity, and this row is unscored (D32, D37.3). Jawinski
+  2025 discovers the locus in 32,634 White British UK Biobank participants (G +0.272 years, SE 0.027, P 2.6e-24, grey
+  and white matter) and replicates it in 22,256 Europeans outside the discovery (G +0.242, SE 0.033, P 4.0e-13,
+  heterogeneity P 0.27): the same allele and side, the replication a little smaller and inside the discovery's
+  interval, so no D21 flag. Its European meta-analysis prints A at 0.634, −0.260 years (SE 0.021), P 9.3e-36, N
+  54,890. Two other brain-age GWASs in the GWAS Catalog put G on the older side (Zhao, G +0.189, P 1e-14; Leonardsen,
+  G +0.23, P 2e-18), named, not counted: both are UK Biobank studies by their abstracts, so not independent of
+  Jawinski's discovery, their papers unread. Genome-wide and
+  replicated, but no study reaches §4.1's 100k: B. Lifespan look-ups, unscored and read for A, two-sided at 0.05
+  (D38.6): Timmers 2019 A beta1 +0.0010 (SE 0.0041), P 0.80; Pilling 2017's both parents P 0.31, mothers 0.62, fathers
+  0.6, and its top 10 % A with more long-lived parents, +0.0042 (SE 0.0021), P 0.043; Park 2025's own survival P 0.65
+  (men 0.48, women 0.85); FinnGen R11's deaths G +0.0152 (SE 0.0076), P 0.046, so A with fewer, a database line;
+  Deelen 2019 90th P 0.32, 99th P 0.32; Zenin 2019's healthspan P 0.14. Foote 2025's factors point both ways: the
+  general factor has A frailer (+0.0044, P 1.7e-5) and factor 5 A with poorer cognition (P 0.039), while factor 2
+  (unhealthy lifestyle, P 0.046) and factor 3 (multimorbidity, P 0.012) have A the less; factors 1 and 6 flat, factor
+  4 no line. The literature search (the rsID, 2026-11-16; OpenAlex and Semantic Scholar answered 429, their part
+  unchecked) finds the three brain-age GWASs (Jawinski, Zhao 2025, Leonardsen 2023), no test of lifespan. Every
+  genotype neutral, each conclusion a tendency of the marker with no colour (D32, D37.12); `direction: unknown`.
+  Outcome cells read for A: exceptional survival 0 (Deelen flat); lifespan + (FinnGen two-sided 0.046, A with fewer
+  deaths, and Pilling's top 10 % 0.043 the same way; Timmers and Park flat); healthspan 0 (Zenin flat, Foote's factors
+  both ways at nominal P, each named). Mechanism: markers of biological ageing. Pleiotropy `mech:adiposity`: A raises
+  body mass index (P 4e-13) and body fat percentage (P 1e-8), and it lowers grip strength (P 9e-9), named; no
+  `tradeoff`, the row naming no longevity-favoured allele. Causal C1 (Jawinski's SBayesRC credible set holds it alone,
+  PIP 1.00; Open Targets' white-matter set 0.36). Effector E3, KLF3: locus-to-gene 0.47, the only gene, the variant
+  intronic in KLF3; Jawinski prioritises KLF3-AS1. Descriptive. Age of action unknown. The evidence is European.
+axes:
+  tier: {value: B, cites: [pmid-41044200#q1, pmid-41044200#q2, pmid-41044200#q3, pmid-41044200#q4, pmid-41044200#q5, pmid-41044200#q6, pmid-41044200#q9, pmid-41044200#q10, pmid-41044200#q11, pmid-41044200#q14, pmid-41044200#q15, pmid-41044200#q16, db-gwascatalog-2026.10.29#q775, db-gwascatalog-2026.10.29#q777, db-gwascatalog-2026.10.29#q778, db-gwascatalog-2026.10.29#q779, db-gwascatalog-2026.10.29#q780, db-gwascatalog-2026.10.29#q781, db-ensembl-116#q1107, db-ensembl-116#q1108]}
+  mechanism: {value: ageing_markers, cites: [pmid-41044200#q1, pmid-41044200#q3, db-gwascatalog-2026.10.29#q776]}
+  pleiotropy: {values: ["mech:adiposity"], cites: [db-gwascatalog-2026.10.29#q782, db-gwascatalog-2026.10.29#q783, db-gwascatalog-2026.10.29#q784, db-gwascatalog-2026.10.29#q785, db-gwascatalog-2026.10.29#q786, db-gwascatalog-2026.10.29#q787, db-gwascatalog-2026.10.29#q788]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "0",
+            cites: [db-finngen-r11#q124, pmid-29227965#q256, pmid-29227965#q257, pmid-29227965#q258, pmid-29227965#q259, pmid-30642433#q420, pmid-40021682#q203, pmid-40021682#q204, pmid-40021682#q205, pmid-31413261#q354, pmid-31413261#q355, pmid-30729179#q183, pmid-40759756#q174, pmid-40759756#q175, pmid-40759756#q176, pmid-40759756#q177, pmid-40759756#q178, pmid-40759756#q179]}
+  actionability: {label: descriptive, cites: [pmid-41044200#q16]}
+  context: {values: [], cites: []}
+flags:
+  - {token: "causal:C1", cites: [pmid-41044200#q19, pmid-41044200#q20, pmid-41044200#q21, db-opentargets-26.09#q1454, db-opentargets-26.09#q1455, db-opentargets-26.09#q1456]}
+  - {token: "effector:E3", cites: [db-opentargets-26.09#q1461, db-opentargets-26.09#q1462, db-opentargets-26.09#q1463, db-ensembl-116#q1109, db-ensembl-116#q1110, pmid-41044200#q6]}
+variants:
+  - rsid: rs13132853
+    locus: {chrom: "4", start: 38678394, ref: A, cites: [db-ensembl-116#q1106]}  # rs13132853 is multi-allelic (A/G/T); the row means A and G
+    gene: KLF3
+    phenotype: KLF3 intron, brain age gap
+    trait_efo_id: EFO_0010602
+    effect_allele: A
+    effect_size: -0.26036678
+    effect_measure: beta
+    stat_significance: significant
+    direction: unknown
+    genotypes:
+      - genotype: A/A
+        state: neutral
+        conclusion: >-
+          You carry two copies of the A version of this DNA position (about 44 in 100 people of European ancestry do).
+          Large studies link each copy of A with a brain that looks about a quarter of a year younger on MRI scans than
+          expected for its age. That is a tendency in a marker whose reading only means something against your calendar
+          age, which this report does not have, so it carries no score.
+      - genotype: A/G
+        state: neutral
+        conclusion: >-
+          You carry one copy each of the two versions of this DNA position, the most common combination (about 45 in
+          100 people of European ancestry). It is the reference the other combinations are compared with. The position
+          lies inside KLF3, a gene that controls other genes. Brain age, estimated from MRI scans, is a marker whose
+          reading only means something against your calendar age, which this report does not have, so this result
+          carries no score.
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the G version of this DNA position (about 11 in 100 people of European ancestry do).
+          Large studies link each copy of G with a brain that looks about a quarter of a year older on MRI scans than
+          expected for its age. That is a tendency in a marker whose reading only means something against your calendar
+          age, which this report does not have, so it carries no score.
+studies:
+  - rsid: rs13132853
+    note: pmid-41044200
+    quote: q16
+    phenotype_class: BIOMARKER
+    study_design: meta_analysis
+    population: European (UK Biobank's White British discovery and its European replication)
+    ancestry: [EUR]
+    sample_size: 54890
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "9.272e-36"
+    p_value_num: 9.272e-36
+    effect_size: -0.26036678
+    effect_measure: beta
+    effect_unit: years of brain age gap (grey and white matter) per A allele
+    effect_allele: A
+    direction: unknown
+    statistical_test: "Jawinski 2025's GWAS of the MRI brain age gap (q1 to q3); Table 2 (q4 to q6) and Table B13 (title q14, header q15): rs13132853 A (0.634) β −0.260 (SE 0.021), P 9.3e-36, N 54,890 (q16); Table B7 (q9, q10): discovery G +0.272, P 2.6e-24 (32,634), replication G +0.242, P 4.0e-13 (22,256), heterogeneity P 0.27 (q11); SBayesRC PIP 1.00 (q19 to q21); a marker study (D32, D37.12)"
+    curator: claude-opus-5-5

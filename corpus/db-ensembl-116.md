@@ -3893,3 +3893,19 @@ CREB3L3's MANE transcript, NM_032607.3 (q1099, q1100). For row 149.
 rs941997 (row 161): GRCh38 10:96,287,079 A/T, A ancestral (q1101); A at 78.9 % and T at 21.1 % in gnomAD's non-Finnish
 European genomes (q1102, q1103); 1.6 kb upstream of a lncRNA, between genes, with no protein-coding transcript within
 VEP's reach (q1104, q1105). For row 161.
+
+## Reading 2026-11-16, record
+
+> [q1106] mappings[0] start 38678394 coord_system chromosome strand 1 end 38678394 allele_string A/G/T location 4:38678394-38678394 ancestral_allele A seq_region_name 4 assembly_name GRCh38
+
+> [q1107] populations[8] allele_count 45139 frequency 0.6645 allele A population gnomADg:nfe
+
+> [q1108] populations[9] frequency 0.3355 allele G population gnomADg:nfe allele_count 22791
+
+> [q1109] [0].transcript_consequences[0] hgnc_id HGNC:16516 gene_symbol KLF3 variant_allele G transcript_id ENST00000261438 gene_symbol_source HGNC canonical 1 gene_id ENSG00000109787 biotype protein_coding strand 1 impact MODIFIER mane_select NM_016531.6
+
+> [q1110] [0].transcript_consequences[0].consequence_terms[0] intron_variant
+
+rs13132853 (row 115): GRCh38 4:38,678,394, multi-allelic A/G/T, A ancestral (q1106); A at 66.5 % and G at 33.6 % in
+gnomAD's non-Finnish European genomes (q1107, q1108); intronic in KLF3's MANE transcript, NM_016531.6 (q1109, q1110). For
+row 115.
