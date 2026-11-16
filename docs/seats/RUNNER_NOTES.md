@@ -1,32 +1,59 @@
 # Runner — notes
 
-The runner seat's working state, rewritten to the present before a reset (`docs/seats/RUNNER.md`).
+The runner seat's working state, rewritten whole on 2026-11-16 before the move to another chat organisation, so a fresh
+session can carry on from these notes, `docs/seats/RUNNER.md` (the priming), `runs/LOG.md` and `runs/STATUS.md` alone.
 
 ## Now
 
-Seated 2026-11-10 (account seat-10). The first-seating handout is done:
-- the rigger's orientation read (the copy it sent the lead); the share is the default until the person answers
-  desk #248, and the rigger tells this seat the answer (its reply, 2026-11-10);
-- no `ll-` job in the queue, none taken over;
-- `runs/LOG.md` and `runs/STATUS.md` started;
-- the scout and the curator told, in the repository's channel, that fetches now come here.
+- **Nothing in hand.** No ll- job runs or waits; `runs/STATUS.md` says so. The only batch job so far is 6428266
+  ll-fetch-supp-zenin (2026-11-10), completed and counted (`runs/LOG.md`).
+- **Curation is caught up.** All 161 seed loci have rows (156 files), the second signals 162 to 169 are in, the scout's
+  queue is empty (2026-11-16). No seat has a batch request pending.
+- **Org move (2026-11-16):** the person plans to move this repository's seats to genie's chat organisation. Not
+  switched. The lead's word: do NOT run the org-move switch until the lead says the person gave the go. This seat's
+  ticket arrived by the embassy (Zulip DM 640873679, from that organisation's desk secretary, signed and checked); it
+  was read before the lead's "leave it unread" was seen. It is a live one-time key: never repeated, quoted or stored
+  anywhere. When the lead relays the go, the switch is run from the clone with the ticket on stdin, as that message
+  names (`org-move.py switch ... --ticket - --apply`), the ticket fetched again with `watchdog.py read 640873679`.
 
-Standing, from 2026-11-16 (Zulip 640823601): the curator sends its periodic full `loci check quotes` here as an ll- job
-with the commit to run it at (about 70 minutes at one core, niced). Nothing is owed yet; the job script is written when
-the first one is asked for. Exit 4 is unknown, never a pass.
+## Standing arrangements
 
-## Running jobs
+- **Full quote checks** (from 2026-11-16, Zulip 640823601): the curator sends its periodic full `loci check quotes`
+  here as an ll- job, naming the commit to run it at. A full run is about 70 minutes at one core, niced. The curator's
+  per-row check is now `loci check quotes --since REV` (about 12 minutes, the lead's d63682d, which also added
+  `--key KEY` and a `[n/N] key` progress line on stderr, `-q` to silence). No job script yet: write
+  `scripts/ll-check-quotes.sbatch` when the first is asked for, on the pattern of `scripts/ll-fetch-supp.sbatch`
+  (1 core, thread caps, revision echoed, exit code passed through). Exit 4 is unknown, never a pass; the run so far
+  always shows one unknown, db-gwascatalog-2025.01.09, a database note with no cached text.
+- **Fetches:** bulk `loci fetch` / `loci fetch-supp` from the curator, the scout or the lead go through
+  `scripts/ll-fetch-supp.sbatch` (2 cores, 4G, 1 h; variables LL_KEY, LL_LOCATOR, LL_RSIDS, LL_ONLY, LL_REVISION).
+  A fetch counts only after `loci check quotes` passed on the notes that quote it. A rerun reusing cached texts says
+  so in the log. `fetch-supp` cannot extract a table from an HTML page; the lead owns that fix.
+- **Per job:** write the LOG.md and STATUS.md entries first, commit by path with a `Seat: runner` line, push; the jobs
+  watcher (`[seat.runner.watch.jobs]`, prefix ll-) wakes the seat at each start, requeue and end; check the gate;
+  tell the seat that asked, with the job id and result.
 
-None (6428266 completed 2026-11-10T23:54Z). The seat's jobs watcher follows any new one.
+## Cluster facts (from the rigger, 2026-11-10; also in memory `cluster-orientation`)
 
-## Cluster facts sent to the rigger and not yet in its inventory
+- Lab account and partition as the machine's settings name them; exclude the GPU park nodes from CPU jobs.
+- Default share of 16 cores until the person answers desk #248; the rigger tells this seat the answer.
+- Job logs go to the runs directory under the user's data volume (`%x-%j.log`), never into the repo.
+- The proxy must be exported into the job (the sbatch scripts refuse without it).
+- Never touch another user's or another seat's jobs; the GPU jobs in the pinned situation block belong to another repo.
 
-None.
+## What I learned
+
+- Kit picker for scripts: the newest `seats/0.1.*` directory that has `bin/py.sh` (an empty one appears mid-update);
+  the glob must be `0.1.*`, not `0.1.1*`.
+- `watchdog.py react ID` (no seat name). Right after a watchdog restart, wait 15–20 s or it says it holds no Zulip
+  account. `ack` takes an outcome: `done:SHA`, `filed:#N`, `relayed:SEAT`, `info` or `declined:WHY`.
+- The button (`watchdog.py nothing`) closes the wake, not the turn: with pending work, go on with it.
+- Desk watcher errors (GitHub 503, rate limit) are transient; it retries every 300 s and says so again only after a
+  read succeeds. v0.1.211 made desk readers on one machine share one copy.
+- From v0.1.227 the machine runs one watchdog for every seat.
+- An embassy message marked sensitive is described in `#embassy-review` with the secret cut out, after handling.
 
 ## To file
 
-- kit #438 fixed in v0.1.190: the jobs watcher's empty cold-start line now opens `info:` and waits for the next prompt. Nothing more to file.
-- kit #398, the take refused for a seat the clone declares: filed by the lead, nothing more to add here.
-- kit #410 fixed in v0.1.182: the one-shot recipe takes `ENDS=1` (`until-event.sh -- env JOB=<id> ENDS=1 bash …/watch-job.sh`).
-  No longer needed here: the prefix watcher `[seat.runner.watch.jobs]` (kit #380) runs since 2026-11-11, by
-  `[seat.runner.slurm] job_prefix`, and wakes this seat at each ll- job's start, requeue and end.
+- Nothing open. Kit #438 (empty cold-start jobs line) fixed in v0.1.190; kit #410 fixed in v0.1.182 (and unneeded since
+  the prefix watcher, kit #380); kit #398 filed by the lead.
