@@ -34,7 +34,9 @@ verdict_reason: >-
   Semantic Scholar answered 429, its part unchecked) finds no other population lifespan test; its survival papers are
   within patients with pulmonary fibrosis (Peljto 2013, PMID 23695349, where T carriers survived longer after
   diagnosis; a 2026 Brazilian cohort with no difference), a different question, named, not read. `sex_specific:m` by D29.16: Park's men against women differ (P 1.4e-4) from the deposits; named
-  beside it, Pilling's fathers against mothers do not (P 0.27), and FinnGen's pass is both sexes. Genotypes: G/G the reference, T carriers risk, as weak early evidence; the variant is carried on G, the
+  beside it, Pilling's fathers against mothers do not (P 0.27), but that contrasts the parents' sexes on the
+  per-parent scale, which no source converts to Park's own-survival scale, so it cannot exclude Park's difference;
+  FinnGen's both-sexes pass is consistent with a men's effect (D35.2). Genotypes: G/G the reference, T carriers risk, as weak early evidence; the variant is carried on G, the
   longer-lived allele (§6.2), and `PROTECT:ABSENCE_OF_RISK`: G is the common non-risk allele at a genome-wide
   disease locus, idiopathic pulmonary fibrosis (D26.5, D30.6). Exceptional survival 0 (Deelen flat, leaning against);
   lifespan + (FinnGen, the paper's look-up, independent, one-sided 0.003; Timmers agrees, UK Biobank shared);
