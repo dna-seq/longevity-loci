@@ -25,7 +25,7 @@ verdict_reason: >-
   and at half the effect, the discovery's SE kept, P 0.0015 and 0.0023 at power 0.999 and 1.00 (derived): a D21 red
   flag under both calibrations (D26.3), `replication_failed`. The APOE factor is borrowed and approximate (Broer's text
   gives APOE only at another SNP, so no same-SNP factor), but the flag does not depend on it: power stays at 0.8 or
-  more and heterogeneity under 0.05 for any factor up to about 17, 3.5 times Deelen's 4.84 (derived). No independent scoring-class study passes C's way (D25.1):
+  more and heterogeneity under 0.05 for any factor up to about 19, 3.9 times Deelen's 4.84 (derived; power binds there). No independent scoring-class study passes C's way (D25.1):
   FinnGen R11's deaths have C with fewer deaths, flat (G β +0.0092, P 0.23, a database line); Park 2025's own survival
   flat (P 0.92; men 0.86, women 0.94); Pilling 2017's parents, inside Timmers' pool, all against C and flat (P 0.28 to
   0.47). Zenin 2019's healthspan puts G with the later end of healthspan, P 0.058, one-sided 0.029 against C. Foote
@@ -119,5 +119,5 @@ studies:
     effect_unit: log hazard protection per C allele in self (beta1; positive = longer life)
     effect_allele: C
     direction: risk
-    statistical_test: "Timmers 2019's summary statistics (GCST009890, q405): C beta1 −0.0071, SE 0.0045; against Broer's log OR +0.215 (SE 0.039) carried by Deelen's 90th calibrations (APOE 4.84, pmid-31413261#q82 over q90; mean ×0.4175, q92): expected +0.044 and +0.106, power 1.00, heterogeneity P 2.5e-8 and 1e-8, a D21 red flag under both; at half the effect, the discovery's SE kept, 0.0015 and 0.0023 at power 0.999 and 1.00 (derived); the flag holds for any factor up to about 17"
+    statistical_test: "Timmers 2019's summary statistics (GCST009890, q405): C beta1 −0.0071, SE 0.0045; against Broer's log OR +0.215 (SE 0.039) carried by Deelen's 90th calibrations (APOE 4.84, pmid-31413261#q82 over q90; mean ×0.4175, q92): expected +0.044 and +0.106, power 1.00, heterogeneity P 2.5e-8 and 1e-8, a D21 red flag under both; at half the effect, the discovery's SE kept, 0.0015 and 0.0023 at power 0.999 and 1.00 (derived); the flag holds for any factor up to about 19, where power reaches 0.8"
     curator: claude-opus-5-5
