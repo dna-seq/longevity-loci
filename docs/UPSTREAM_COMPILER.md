@@ -18,7 +18,7 @@ compiler's `0.8` branch); reuse it at the cut, and tell that liaison where our u
 ## Read mark
 
 **`v0.8.7`** (tagged 2026-11-14, `3b65ab7a`; the enricher alone), patches on 0.8.0 read by their changelog headings and "After
-upgrading" lines; read whole at our adoption. **In use: `v0.8.6`** since 2026-11-14 (0.8.5 from 2026-11-13, 0.8.4 from 2026-11-12), the trio in `uv.lock`,
+upgrading" lines; read whole at our adoption. **In use: `v0.8.7`** (the enricher; format and compiler 0.8.6) since 2026-11-16, `v0.8.6` since 2026-11-14 (0.8.5 from 2026-11-13, 0.8.4 from 2026-11-12), the trio in `uv.lock`,
 adopted with the plugin's `v0.48.7`; 0.7.3 (enricher), 0.7.2 and 0.7.1 before it. The first mark, `v0.7.3` (3dd8c2a),
 was fast-forwarded: no release before it was read.
 
@@ -94,7 +94,8 @@ read mark stays at `v0.7.3` until the cut; the cut is read again in full.
   RM444 (`recover_rsid`'s text says no more than it matched; the plugin's `lookup_old_assembly` wraps it, the
   `outcome` field unchanged) and RM442 (the AlphaGenome licence rows' `notice` and `license`; a module re-enriched
   takes the new text and its digest moves). For us: our module carries no AlphaGenome row (`module/`, 2026-11-15),
-  so nothing to re-enrich; no code change. Held at 0.8.6 beside the plugin's server until its lock moves.
+  so nothing to re-enrich; no code change. Held at 0.8.6 until the plugin's v0.48.12 locked 0.8.7; **taken
+  2026-11-16**, enricher floor `>=0.8.7,<0.9`, suite 146 passed.
 
 ## Caps
 

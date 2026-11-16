@@ -5,9 +5,9 @@ description = "Formats and checks for the re-curation of the longevity module: c
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    # just-dna 0.8, adopted with the module-creator plugin's v0.48.7 (2026-11-12); 0.8.6 with its v0.48.10, whose server runs it;
+    # just-dna 0.8, adopted with the module-creator plugin's v0.48.7 (2026-11-12); 0.8.6 with its v0.48.10, the enricher 0.8.7 with its v0.48.12, whose server runs them;
     # held below 0.9 as the plugin holds it (docs/UPSTREAM_COMPILER.md, "Caps").
-    "just-dna-enricher>=0.8.6,<0.9",
+    "just-dna-enricher>=0.8.7,<0.9",
     "just-dna-compiler>=0.8.6,<0.9",
     "just-dna-format>=0.8.6,<0.9",
     # Capped below 2, the liaison's (docs/UPSTREAM_COMPILER.md, "Caps"): the module-creator plugin's server runs
