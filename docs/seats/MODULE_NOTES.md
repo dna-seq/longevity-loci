@@ -274,3 +274,7 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
 - 2026-11-16, pending: second-signal rows (D39.14, c8a0b3a) take ids from 162 and a `second_signal_of` field. The
   export (export.py) was not touched by that change. At the first such row, trial it and check that the export's
   "no 0.8 place" summary names second_signal_of rather than dropping it silently; tell the lead if it does not.
+- 2026-11-16, trial at trunk d12ece9 with row 162 (the first second signal, second_signal_of 28): strict green, 468
+  variant rows, 657 studies, every rsID resolved. The export writes 162's variant and studies as any row's, and
+  `second_signal_of` appears nowhere: not in a column, a flag token or the export's summary of what 0.8 has no
+  place for. also_loci is handled the same way today. Put to the lead (export.py is the lead's).
