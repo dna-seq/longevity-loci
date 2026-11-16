@@ -18,7 +18,8 @@ verdict_reason: >-
   0.0074), so by D34.7 every rare row of the paper is
   read against the reference, as 107: the long-lived show 4 copies where 0.16 are expected, OR 25.6 (exact Poisson P
   2.2e-5, derived), the row's read effect, derived (row 123's way). The paper's own OR against gnomAD, 12.16,
-  back-solves to 0.0132 %, gnomAD's genomes figure, not the exomes' (rows 107, 120, 124 and 125 match the exomes within 8 %):
+  back-solves to 0.0132 %, gnomAD's genomes figure, not the exomes' (rows 107, 120, 124 and 125 back-solve to the exomes, 0.6 to 7 % from the exome read; 121 back-solves to the genomes
+  though only 6 % from it, so the frequency, not the band, tells them apart; derived):
   against the genomes the long-lived show 4 where 0.33 are expected, OR 12.2, P 3.8e-4 (derived), so the + holds on
   either reference; the derived exome read is carried, the printed 12.16 named as genomes-based (D34.8). Its caveat:
   gnomAD's non-Finnish Europeans are mostly British. The printed 9.9 is named, not read. Kolbe chose its hits from about 98,000 rare variants, so a reference OR still carries that selection, uncorrected (D34.14). By the printed percentages and the long-lived's 2.7:1 women to men, about 3 copies in 336 men (0.04 expected from gnomAD, P
