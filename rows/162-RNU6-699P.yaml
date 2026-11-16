@@ -7,24 +7,20 @@ locus_name: RNU6-699P
 second_signal_of: 28
 verdict: kept
 verdict_reason: >-
-  Tier B: a genome-wide multivariate result with a co-occurring lifespan study (§4.5 as D16 reads it), which a
-  multivariate result cannot lift to A (D18.3), with an independent nominal replication. Rosoff 2023's mvAge puts C at
-  −0.0058 (SE 0.0010), P 1.46e-8, so T raises the factor, one of two lead SNPs in its locus 13 beside row 28's lead.
-  Independence from row 28 (D39.14, the basis put to the lead): Rosoff separates the two leads by LD clumping (r² <
+  Tier C (D39.15): genome-wide only at the marginal, which part of row 28's signal carries; conditioned on 28's lead in the coupling the phase gives, it is sub-genome-wide and short of suggestive (R-TIER-4). Rosoff 2023's mvAge puts C at −0.0058 (SE 0.0010), P 1.46e-8 marginal, so T raises the factor, one of two lead SNPs in its locus 13 beside row 28's lead.
+  Independence from row 28 (D39.14, D39.15): Rosoff separates the two leads by LD clumping (r² <
   0.1) and its own fine-mapping puts rs13141210 in no credible set, so no conditional or joint analysis is printed;
   Open Targets' mvAge set (PICS, 111 variants) is led by rs13141210, and none of rs28637671's 54 proxies at r² 0.8 or
-  more is among its members, while rs28637671 itself has no Open Targets record; a conditional z derived from the two
-  leads' z values at r² 0.095 leaves rs13141210 at 4.1 to 7.8 in either coupling (derived, unphased). Timmers 2019's
+  more is among its members, while rs28637671 itself has no Open Targets record; a conditional z derived from the two leads' z values leaves rs13141210 at 4.1 to 7.8 across the two couplings, so it is no tag of 28's lead (D39.15). The phase, counted from 1000 Genomes' phased EUR haplotypes (db-ensembl-116#q1174 to q1176), puts the two T alleles, each mvAge's healthier one, together (r +0.28, r² 0.078), the coupling that shrinks it: conditional z 4.27, P 2e-5 (derived), sub-genome-wide and not suggestive. Timmers 2019's
   pooled parents are the co-occurring lifespan study: T longer, beta1 +0.0173 (SE 0.0039), P 9.0e-6, UK Biobank and
   LifeGen the same side, an mvAge input and not a replication; Pilling 2017's UK Biobank parents agree (both parents P
   2.1e-4, mothers 0.0035, fathers 9.2e-4). Outside mvAge's inputs, AncestryDNA in Wright 2019, at the tag rs2164300
   (r² 0.94, its C with rs13141210's C, derived from Pilling's same-sample signs), puts T with longer-lived fathers (raw
   P 0.0010, about 0.0025 after Wright's genomic control, λ 1.182, derived) and mothers (raw P 0.0007), the UK Biobank
-  arm the same side (heterogeneity P 0.78 and 0.40): an independent nominal replication, which cannot lift a
-  multivariate row past B. No independent look goes against: FinnGen R11's deaths lean T's way (one-sided 0.069, a
+  arm the same side (heterogeneity P 0.78 and 0.40): an independent nominal replication of the marginal, which the conditional reading leaves at C. No independent look goes against: FinnGen R11's deaths lean T's way (one-sided 0.069, a
   database line); Park 2025's own survival is flat (P 0.94; men 0.40, women 0.22), UK Biobank and so no independent
   look. Timmers 2022's aging-GIP1 is genome-wide at rs10434248, a member of this set (r² 0.84 EUR), a multivariate scan
-  pooling overlapping inputs, named, not counted (put to the lead). Outcome cells read for T: lifespan + (Timmers 9.0e-6,
+  pooling overlapping inputs, a shared input, named, not counted (D39.16). Outcome cells read for T, on the marginal look-ups (28's share not taken out of them): lifespan + (Timmers 9.0e-6,
   Pilling 2.1e-4, AncestryDNA at the tag; Park and FinnGen flat); exceptional survival + (Pilling's top 10 % both-parents
   line, T with more long-lived parents, P 0.0089, D31.8; Deelen 2019's 90th, an mvAge input, one-sided 0.048, the 99th
   0.10); healthspan + (Zenin 2019, T the later end, P 0.0016; Foote 2025's general frailty factor genome-wide, T less
@@ -34,7 +30,7 @@ verdict_reason: >-
   cholesterol (Open Targets' sets, β per T), each on the healthy side, so no `tradeoff`. Causal C3 (PIP 0.056 in
   Open Targets' mvAge set, D39.12; Rosoff's own sets hold it in none). Effector E2, CENPC: locus-to-gene 0.79 on the mvAge set, its 45 colocalisations not read. The literature search (the rsID, 2026-11-16; Semantic Scholar answered 429, its part unchecked) finds Rosoff and a multivariate substance-use GWAS (Schoeler 2022, no PMID returned), no test of lifespan. Descriptive. Age of action unknown. The evidence is European.
 axes:
-  tier: {value: B, cites: [pmid-37550455#q28, pmid-37550455#q32, pmid-37550455#q84, pmid-37550455#q85, pmid-37550455#q86, db-opentargets-26.09#q439, db-opentargets-26.09#q440, db-opentargets-26.09#q1492, db-ensembl-116#q154, db-ensembl-116#q1173, pmid-30642433#q422, pmid-29227965#q264, pmid-29227965#q266, pmid-29227965#q267, pmid-31484785#q63, pmid-31484785#q64, db-ensembl-116#q161, pmid-29227965#q268, pmid-29227965#q269, db-finngen-r11#q129, pmid-40021682#q212, pmid-40021682#q213, pmid-40021682#q214]}
+  tier: {value: C, cites: [db-ensembl-116#q1174, db-ensembl-116#q1175, db-ensembl-116#q1176, pmid-37550455#q28, pmid-37550455#q32, pmid-37550455#q84, pmid-37550455#q85, pmid-37550455#q86, db-opentargets-26.09#q439, db-opentargets-26.09#q440, db-opentargets-26.09#q1492, db-ensembl-116#q154, db-ensembl-116#q1173, pmid-30642433#q422, pmid-29227965#q264, pmid-29227965#q266, pmid-29227965#q267, pmid-31484785#q63, pmid-31484785#q64, db-ensembl-116#q161, pmid-29227965#q268, pmid-29227965#q269, db-finngen-r11#q129, pmid-40021682#q212, pmid-40021682#q213, pmid-40021682#q214]}
   mechanism: {value: general_ageing, cites: [pmid-37550455#q28, db-gwascatalog-2026.10.29#q800, db-gwascatalog-2026.10.29#q801]}
   pleiotropy: {values: ["mech:smoking", "mech:adiposity", broad], cites: [db-gwascatalog-2026.10.29#q802, db-gwascatalog-2026.10.29#q803, db-gwascatalog-2026.10.29#q804, db-opentargets-26.09#q1496, db-opentargets-26.09#q1497, db-opentargets-26.09#q1498, db-opentargets-26.09#q1499, db-opentargets-26.09#q1500, db-opentargets-26.09#q1501, db-opentargets-26.09#q1502, db-opentargets-26.09#q1503, db-opentargets-26.09#q1504, db-opentargets-26.09#q1505]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -70,7 +66,7 @@ variants:
           You carry one copy of the C version of this DNA region (about 50 in 100 people of European ancestry do).
           In a very large European study that combined healthspan, long life and other measures of ageing, this
           version went with slightly less healthy ageing, and parents of carriers lived a little less long, in a
-          separate American group too. It is a likely finding, not a settled one. What the region does is not known.
+          separate American group too. It is an early finding: part of it is shared with a nearby signal, and what is left has not reached the usual bar on its own. What the region does is not known.
           The effect is small and it is a tendency, not destiny.
       - genotype: C/C
         state: risk
@@ -78,7 +74,7 @@ variants:
           You carry two copies of the C version of this DNA region (about 24 in 100 people of European ancestry do).
           In a very large European study that combined healthspan, long life and other measures of ageing, each copy
           went with slightly less healthy ageing, and parents of carriers lived a little less long, in a separate
-          American group too. It is a likely finding, not a settled one. What the region does is not known. The
+          American group too. It is an early finding: part of it is shared with a nearby signal, and what is left has not reached the usual bar on its own. What the region does is not known. The
           effect is small and it is a tendency, not destiny.
 studies:
   - rsid: rs13141210

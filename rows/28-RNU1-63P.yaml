@@ -41,7 +41,7 @@ verdict_reason: >-
   in East Asians (0.94), untested there.
   rs13141210, the seed's second rsID here, looks like a B of its own under D16 (mvAge 1.5e-8, T healthier; lifespan
   T P 9e-6), nominal in AncestryDNA at good tags (rs2164300 r² 0.94, rs12506221 r² 0.86; raw P 0.0005 to 0.001 in
-  fathers and mothers, direction not read), with its own traits (education, body fat, smoking): now row 162, curated as a second signal (D39.14), B there.
+  fathers and mothers, direction not read), with its own traits (education, body fat, smoking): now row 162, curated as a second signal (D39.14), C there on the conditional reading (D39.15).
   Timmers 2022's aging-GIP1 is genome-wide here through rs10434248 (P 8e-9), rs13141210's tag (r² 0.84 EUR, 0.15
   EAS, its A with T), not the lead's (r² 0.13): a second multivariate scan for rs13141210, whose own-survival look-up
   in FinnGen and Biobank Japan does not pass (A 0.092 years, one-sided P 0.089), a weak test of rs13141210: Japan

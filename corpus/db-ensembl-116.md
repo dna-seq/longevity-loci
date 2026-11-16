@@ -681,7 +681,7 @@ rs6840907 (177 kb from the lead; ld-rs36072649-rs6840907.json renders to no text
 
 > [q189] populations[72] allele A allele_count 562 frequency 0.557539682539683 population 1000GENOMES:phase_3:EAS
 
-> [q190] populations[72] allele_count 163 allele T frequency 0.161706349206349 population 1000GENOMES:phase_3:EAS
+> [q190] populations[73] population 1000GENOMES:phase_3:EAS frequency 0.161706349206349 allele T allele_count 163
 
 > [q191] [0] variation2 rs61907878 r2 0.380013 variation1 rs61905747 population_name 1000GENOMES:phase_3:EUR d_prime 0.929761
 
@@ -4080,3 +4080,18 @@ rs13141210 (row 162, the second signal at 28): GRCh38 4:67,025,923 C/T, C ancest
 gnomAD's non-Finnish European genomes (q1170, q1171); intergenic (q1172). Ensembl's CEU window around row 28's lead
 rs28637671 at r² 0.8 or more (`ldwin-rs28637671-CEU-r08.json`, its first pair q1173) lists 54 proxies, none of them a
 member of rs13141210's mvAge set in Open Targets (derived, the two lists compared whole). For row 162.
+
+## Reading 2026-11-16, record
+
+> [q1174] [0] description European size 503 name 1000GENOMES:phase_3:EUR
+
+> [q1175] genotypes[0] sample 1000GENOMES:phase_3:HG00096 genotype T|C gender Male
+
+> [q1176] genotypes[0] sample 1000GENOMES:phase_3:HG00096 genotype G|T gender Male
+
+Phase of rs13141210 (row 162) with rs28637671 (row 28) from 1000 Genomes' phased genotypes in Ensembl 116: the EUR
+population's 503 individuals (q1174), each one's phased genotype at both variants (`genotypes-rs13141210.json`,
+`genotypes-rs28637671.json`, their first lines q1175, q1176). Counted whole over the 1,006 EUR haplotypes (derived):
+T-T 423, C-G 208, T-G 82, C-T 293, so r between rs13141210's T and rs28637671's T is +0.28 (r² 0.078). Both T
+alleles raise mvAge, so they travel together, and the conditional z of rs13141210 given rs28637671 is (5.67 − 0.28
+× 5.62) / √(1 − 0.078) = 4.27, P 2e-5 (derived): the lower coupling of D39.15. For row 162.
