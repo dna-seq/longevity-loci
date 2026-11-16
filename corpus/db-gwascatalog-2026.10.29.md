@@ -2425,3 +2425,15 @@ clonal haematopoiesis 1.22, P 3e-13 (q648 to q650). On A, the shorter: testicula
 (q651 to q653); idiopathic pulmonary fibrosis 2.11, P 3e-8 (q654 to q656); interstitial lung disease 1.37,
 P 2e-19 (q657 to q659). McCartney 2021's epigenetic ageing ("aging", EFO_0022597) A decrease 0.20, P 3e-11
 (q660 to q662). Blood-cell counts, proteins and other lines named, not read. For row 30.
+
+## Reading 2026-11-16, record
+
+> [q663] _embedded.associations[0] association_id 88923244 risk_frequency 0.0532 pvalue_description pvalue_mantissa 4 pvalue_exponent -54 multi_snp_haplotype false snp_interaction false range [0.95-1.22] beta 1.0823 unit decrease p_value 4e-54 accession_id GCST90014290 pubmed_id 34187551 first_author McCartney DL ci_lower 0.95 ci_upper 1.22
+
+> [q664] _embedded.associations[0].efo_traits[0] efo_id EFO_0022597 efo_trait aging
+
+> [q665] _embedded.associations[0].reported_trait[0] Intrinsic epigenetic age acceleration
+
+> [q666] _embedded.associations[0].snp_effect_allele[0] rs10949481-T
+
+rs10949481 (row 105): one association, McCartney 2021 (GCST90014290), intrinsic epigenetic age acceleration, trait EFO_0022597 ("aging"): T, β 1.08 years decrease (0.95 to 1.22), P 4e-54, T at 0.053 (q663 to q666). For row 105.

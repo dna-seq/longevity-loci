@@ -4606,3 +4606,23 @@ naive T-cell telomere-length set (GCST90101889, q1278) at PIP 0.036 (q1279), SuS
 (q1283); no leukocyte telomere-length set holds it: C3. Locus-to-gene on that set TERT 0.738 (q1284, q1285): E2.
 Intrinsic epigenetic age acceleration (Lin 2022, GCST90104404, q1280) at PIP 0.756 (q1281), L2G TERT 0.874 (q1286,
 q1287). For row 30.
+
+## Reading 2026-11-16, record
+
+> [q1288] data.variant.credibleSets count 32
+
+> [q1289] data.variant.credibleSets.rows[11].study id GCST90014290 traitFromSource Intrinsic epigenetic age acceleration studyType gwas
+
+> [q1290] data.variant.credibleSets.rows[11].locus.rows[0] posteriorProbability 0.72172374384115 beta -0.07457195217006063 pValueMantissa null pValueExponent null
+
+> [q1291] data.credibleSet studyLocusId 566d0bbbea1879b9f72b95b31c3733a2 finemappingMethod SuSiE-inf
+
+> [q1292] data.credibleSet.l2GPredictions.rows[0] score 0.6459437608718872
+
+> [q1293] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol NHLRC1
+
+> [q1294] data.credibleSet.l2GPredictions.rows[1] score 0.5549688339233398
+
+> [q1295] data.credibleSet.l2GPredictions.rows[1].target approvedSymbol TPMT
+
+6_18120798_A_T (rs10949481, row 105): 32 credible sets (q1288), most NHLRC1 expression and splicing sets at low PIP; McCartney's IEAA set (GCST90014290, q1289) at PIP 0.722 (q1290), SuSiE-inf (q1291): C1. Locus-to-gene NHLRC1 0.646, TPMT 0.555 (q1292 to q1295). For row 105.

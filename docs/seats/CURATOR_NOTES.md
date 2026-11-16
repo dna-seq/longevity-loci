@@ -6,8 +6,8 @@ The curator seat's working state, rewritten to the present before a reset (`docs
 
 - **Batch fourteen's corrections (D37): done 2026-11-16** (d261b34 to 98d2df0; `done:` to the lead). Owed at next
   touch: 97's healthspan on D37.4; the 107-family Kolbe rows' P values as Fisher's exact (D37.1).
-- **Markers under way:** 23 TERC and 30 TERT committed (the pattern; check rows exempts ageing_markers rows,
-  cee1271). Next 105, 106, 112, 114, 128, 132, 133, 141, 143, 144, 145, 149, 153, 160, 161, then
+- **Markers under way:** 23 TERC and 30 TERT committed and 105 committed (the pattern; check rows exempts ageing_markers rows,
+  cee1271; scratchpad fmk.sh RSID CHR POS37 POS38 OTID OTID2 and pre.sh RSID fetch a marker's look-ups). Next 106, 112, 114, 128, 132, 133, 141, 143, 144, 145, 149, 153, 160, 161, then
   115, 129, 142.
 - **Markers (D32, D36.3), from 2026-11-16:** every scored seed locus has a row. Left: 23 TERC (fold 104, r² 1.00 CEU),
   30 TERT, 105, 106, 112, 114, 128, 132, 133, 141, 143, 144, 145, 149, 153, 160, 161, then 115, 129, 142 (brain age).

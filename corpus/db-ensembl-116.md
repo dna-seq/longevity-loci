@@ -3604,3 +3604,19 @@ rs10936599 and Taub 2022's TERC sentinel rs12637184: r² 1.00, D' 1.00 in 1000 G
 > [q1011] [0].transcript_consequences[0].consequence_terms[0] intron_variant
 
 rs2736100 (row 30): GRCh38 5:1,286,401 C/A, A ancestral (q1005); A at 49.7 % in gnomAD's non-Finnish European genomes (q1006, q1007), 58.8 % in East Asians (q1008), 53.9 % in Africans (q1009); intronic in TERT's MANE transcript, NM_198253.3 (q1010, q1011). For row 30.
+
+## Reading 2026-11-16, record
+
+> [q1012] mappings[0] assembly_name GRCh38 coord_system chromosome allele_string A/T start 18120798 seq_region_name 6 strand 1 end 18120798 location 6:18120798-18120798 ancestral_allele T
+
+> [q1013] populations[13] population gnomADg:nfe frequency 0.9573 allele_count 65127 allele A
+
+> [q1014] populations[14] population gnomADg:nfe frequency 0.0427 allele_count 2905 allele T
+
+> [q1015] [0].transcript_consequences[0] transcript_id ENST00000340650 biotype protein_coding gene_id ENSG00000187566 canonical 1 mane_select NM_198586.3 cdna_end 1880 cdna_start 1880 hgnc_id HGNC:21576 strand -1 impact MODIFIER gene_symbol NHLRC1 gene_symbol_source HGNC variant_allele T
+
+> [q1016] [0].transcript_consequences[0].consequence_terms[0] 3_prime_UTR_variant
+
+> [q1017] [0] population_name 1000GENOMES:phase_3:CEU d_prime 1.000000 variation2 rs143093668 r2 1.000000 variation1 rs10949481
+
+rs10949481 (row 105): GRCh38 6:18,120,798 A/T, T ancestral (q1012); T at 4.3 % in gnomAD's non-Finnish European genomes (q1013, q1014); 3′ UTR of NHLRC1's MANE transcript (q1015, q1016); r² 1.00 with Lu 2018's rs143093668 in CEU (q1017). For row 105.
