@@ -3348,3 +3348,21 @@ rs75526165 (row 150): GRCh38 9:13,549,784 T/A (q910); A at 0.1088 in gnomAD's Ea
 rs6543176 (row 148): GRCh38 2:102,665,501, A the ancestral and reference allele (q916); A at 0.525 % in gnomAD's
 non-Finnish European genomes (q917), 0.659 % in its exomes (q918), 0.04 % in the Finnish genomes (q919); intronic in
 SLC9A2 on its MANE Select transcript (q920, q921). For row 148.
+
+## Reading 2026-11-16, record
+
+> [q922] mappings[0] ancestral_allele T assembly_name GRCh38 coord_system chromosome strand 1 location 6:63910997-63910997 start 63910997 allele_string T/C seq_region_name 6 end 63910997
+
+> [q923] populations[56] frequency 0.0432692307692308 population 1000GENOMES:phase_3:JPT allele_count 9 allele C
+
+> [q924] populations[8] frequency 0.01003 population gnomADg:eas allele C allele_count 52
+
+> [q925] populations[0] allele T allele_count 68004 population gnomADg:nfe frequency 1
+
+> [q926] [0].transcript_consequences[2] gene_id ENSG00000188107 strand -1 hgnc_id HGNC:21555 transcript_id ENST00000503581 biotype protein_coding canonical 1 gene_symbol_source HGNC variant_allele C mane_select NM_001142800.2 gene_symbol EYS impact MODIFIER
+
+> [q927] [0].transcript_consequences[2].consequence_terms[0] intron_variant
+
+rs75571981 (row 151): GRCh38 6:63,910,997 T/C (q922); C at 4.3 % in 1000 Genomes JPT (9 of 208 alleles, q923), 1.0 % in
+gnomAD's East Asian genomes (q924), absent in the non-Finnish Europeans (T at 1, q925); intronic in EYS on its MANE
+Select transcript (NM_001142800.2, q926, q927). For row 151.

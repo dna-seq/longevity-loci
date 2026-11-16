@@ -1,0 +1,84 @@
+# The seed list's locus 151, EYS (intronic) (6q12). Curated 2026-11-16. Lead rs75571981, the seed's only rsID (Sasaki's
+# Japanese centenarian GWAS, a preprint): intronic in EYS on its MANE Select transcript (NM_001142800.2), GRCh38
+# 6:63,910,997 T/C, C the minor allele (4.3 % in 1000 Genomes JPT, 1.0 % in gnomAD's East Asian genomes, absent in
+# Europeans), C the discovery's longer-lived side (its frequency rises in the centenarians). Open Targets 26.09 has no
+# record of it; the GWAS Catalog (2026-10-29) holds no association.
+locus_id: 151
+locus_name: EYS (intronic)
+verdict: re-tiered
+verdict_reason: >-
+  Tier C, from the seed's B: a preprint-only finding (§4.1's C), from one centenarian sample against population
+  controls, unreplicated (R-TIER-2). Sasaki's Japanese centenarian GWAS (Research Square, revised 2025, not
+  peer-reviewed; 964 centenarians, 173 of them past 110, against 7,306 Japanese controls, an N-weighted meta-analysis
+  of whole genomes and imputed arrays) names two genome-wide loci, APOE and EYS, lead rs75571981. The text prints no
+  P, effect size or allele frequency for it; they sit in a supplementary table not reached (Research Square's
+  supplement has no URL pattern the tools know, and Europe PMC's text omits it), so the discovery is genome-wide by the
+  authors' statement only, its size unknown, and no reference check (D31.10) or calibration can run. Within the same
+  preprint the signal does not carry: the variant's frequency rises in the centenarians but not in 1,026 healthy agers
+  aged 85 to 89 against the same controls, and in those agers' follow-up the Cox models of lifespan and disability-free
+  survival find APOE4 and sex significant, not the EYS allele (its figures are in a figure, unread). The authors
+  report it absent in Korean samples. C is all but absent outside Japan (1.0 % in gnomAD's East Asians, none in
+  Europeans), so no other sample read here tests it: untested, not negative. The literature search (the rsID with EYS
+  and centenarians, 2026-11-16; Semantic Scholar answered 429, its part unchecked) finds the two versions of the
+  preprint (2024, 2025) alone. Exceptional survival + on the preprint's genome-wide statement (preprint, named; no
+  size); lifespan 0 (the healthy agers' Cox model, EYS not significant, D34.5, its figure unread); healthspan 0
+  (disability-free survival, the same model). Mechanism ageing in general (D25.7): intronic, with no expression or
+  predicted regulatory effect known (the authors). Causal C4 and effector E4: no Open Targets record. Descriptive.
+  Age of action unknown. The ancestry is Japanese, as `ancestry_specific:eas`.
+axes:
+  tier: {value: C, cites: [doi-10.21203_rs.3.rs-6869504_v1#q1, doi-10.21203_rs.3.rs-6869504_v1#q2, doi-10.21203_rs.3.rs-6869504_v1#q3, doi-10.21203_rs.3.rs-6869504_v1#q4, doi-10.21203_rs.3.rs-6869504_v1#q5, doi-10.21203_rs.3.rs-6869504_v1#q8, db-ensembl-116#q923, db-ensembl-116#q924, db-ensembl-116#q925, db-gwascatalog-2026.10.29#q594]}
+  mechanism: {value: general_ageing, cites: [db-ensembl-116#q926, db-ensembl-116#q927, doi-10.21203_rs.3.rs-6869504_v1#q7]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "+",
+            cites: [doi-10.21203_rs.3.rs-6869504_v1#q1, doi-10.21203_rs.3.rs-6869504_v1#q6]}
+  actionability: {label: descriptive, cites: [doi-10.21203_rs.3.rs-6869504_v1#q1]}
+  context: {values: ["ancestry_specific:eas"], cites: [doi-10.21203_rs.3.rs-6869504_v1#q4, db-ensembl-116#q923, db-ensembl-116#q925]}
+flags:
+  - {token: preprint, cites: [doi-10.21203_rs.3.rs-6869504_v1#q1]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1247]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q1247]}
+variants:
+  - rsid: rs75571981
+    gene: ""
+    phenotype: EYS intron, longevity, Japanese
+    trait_efo_id: OBA_VT0005372
+    effect_allele: C
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: T/T
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position, as nearly everyone does. It is the
+          reference the other combinations are compared with. The position lies inside the EYS gene on chromosome 6.
+      - genotype: C/T
+        state: protective
+        conclusion: >-
+          You carry one copy of a version of this DNA position found mainly in people of Japanese ancestry (about 8 in
+          100 Japanese people carry it, and almost no one elsewhere). One Japanese study, not yet peer-reviewed, found
+          it more often among people who lived past 100, but not among healthy people in their late 80s, and it has
+          not been confirmed elsewhere. This is weak, early evidence: a possible tendency, not destiny.
+      - genotype: C/C
+        state: protective
+        conclusion: >-
+          You carry two copies of a version of this DNA position found mainly in people of Japanese ancestry, which is
+          unusual. One Japanese study, not yet peer-reviewed, found it more often among people who lived past 100, a
+          finding not yet confirmed, so nothing can be said about two copies.
+studies:
+  - rsid: rs75571981
+    note: doi-10.21203_rs.3.rs-6869504_v1
+    quote: q1
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: centenarian_case_control
+    population: Japanese centenarians (173 past 110) against Japanese population controls
+    ancestry: [EAS]
+    n_cases: 964
+    sample_size: 8270
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: significant
+    effect_allele: C
+    direction: protective
+    statistical_test: "Sasaki's N-weighted GWAMA of whole genomes and imputed arrays, sex and 20 principal components (q1: genome-wide, lead rs75571981); 964 centenarians and 7,306 controls (q2, q3); P, effect and frequency in a supplementary table not reached (unknown); the rise is in centenarians only, not the healthy agers aged 85 to 89 (q5, q8)"
+    curator: claude-opus-5-5
