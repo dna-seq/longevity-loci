@@ -23,7 +23,8 @@ verdict_reason: >-
   misfit too (P 6e-8) and the long-lived sit lower at P 0.0013 (derived), the table's own population, not D31.13's fixed reference. That branch is 123's shape (C, exceptional `+`), and
   D31.13's Hsieh bullet gives C to a Hsieh row with no same-scale contradiction and nothing passing; 150 departs
   from it because D31.10 reads the discovery against the fixed reference first, and there it shows nothing (D31.11).
-  The choice is put to the lead: D on gnomAD EAS (the default) or C on Taiwan Biobank. The validation cohort (85 and over at a second hospital) gives OR 0.504, P 0.0002, but its controls are not its own (Fig. 2; the cohort is 844 people aged 85 and over, q5), so it is not
+  Taking Taiwan's figure because gnomAD gave nothing would be the second-reference
+  choice D31.13 bars, so the row is D (D31.11, D31.13, as written; the lead, 2026-11-16). The validation cohort (85 and over at a second hospital) gives OR 0.504, P 0.0002, but its controls are not its own (Fig. 2; the cohort is 844 people aged 85 and over, q5), so it is not
   independent (D19.1); which controls it used is not printed, so its long-lived cannot be read against the reference. A is all but absent in Europeans (0.02 %), so no European sample tests it: Deelen 2019, Timmers 2019, Park 2025 (all three files), FinnGen R11, Pilling 2017, Zenin 2019 and Foote 2025
   were each looked up at the variant (2026-11-16, GRCh37 9:13,549,783) and hold no line: untested, not negative. Hsieh's APOE line in its
   older groups is null (D31.13), so no calibration is the paper's own. The literature search (the rsID, 2026-11-16;
@@ -116,7 +117,7 @@ studies:
     effect_unit: odds of carrying T, the long-lived against the gnomAD EAS reference (derived; the printed comparison inverted to T)
     effect_allele: T
     direction: protective
-    statistical_test: "Derived: A solved at 0.098 in the long-lived (about 312 copies in 3,190 alleles) against 347 expected from gnomAD EAS (0.1088, db-ensembl-116#q911, q912): OR 0.89 per A (T 1.13), P 0.12 normal with the reference's error, Fisher's exact 0.11; across Hsieh's OR interval P 0.0061 to 0.68; against Taiwan Biobank's printed 0.116 (q34) P 0.0013, a branch named and put to the lead"
+    statistical_test: "Derived: A solved at 0.098 in the long-lived (about 312 copies in 3,190 alleles) against 347 expected from gnomAD EAS (0.1088, db-ensembl-116#q911, q912): OR 0.89 per A (T 1.13), P 0.12 normal with the reference's error, Fisher's exact 0.11; across Hsieh's OR interval P 0.0061 to 0.68; against Taiwan Biobank's printed 0.116 (q34) P 0.0013, a branch named, not read (D31.13)"
     curator: claude-opus-5-5
   - rsid: rs75526165
     note: pmid-41949656
