@@ -5098,3 +5098,18 @@ q1467): the two seed ids sit in one set. Locus-to-gene on it: STH 0.14, MAPT 0.1
 set (GCST90965683) is led by rs2260227 itself, PIP 0.004 (q1472 to q1474). The sets are hundreds of variants wide
 across the inversion: C3 for either id, and no gene near 0.5, E3. rs4327091 sits in 3,354 credible sets (q1475), the
 17q21.31 inversion's breadth. For rows 129 and 142.
+
+## Reading 2026-11-16, record
+
+> [q1476] data.variant.credibleSets.rows[7].study id GCST90475474 traitFromSource mean corpuscular volume (MCV, minimum, inv-norm transformed) studyType gwas
+
+> [q1477] data.variant.credibleSets.rows[7].locus.rows[0] posteriorProbability 0.06600901222518585 beta 0.010794050358722052 pValueMantissa null pValueExponent null
+
+> [q1478] data.variant.credibleSets.rows[36].study id GCST90475288 traitFromSource eosinophil (absolute count, maximum, inv-norm transformed) studyType gwas
+
+> [q1479] data.variant.credibleSets.rows[36].locus.rows[0] posteriorProbability 0.056335934968387076 beta 0.016792767656751747 pValueMantissa null pValueExponent null
+
+rs59294613 (row 144): of its 49 sets, the blood-cell ones are red-cell size and haemoglobin (mean corpuscular volume
+and haemoglobin, sphered cell volume) and eosinophil counts and fractions, each holding the variant at PIP 0.07 or
+less; the two highest: mean corpuscular volume (GCST90475474) at 0.066 (q1476, q1477) and eosinophil count
+(GCST90475288) at 0.056 (q1478, q1479). For row 144 (D39.11).
