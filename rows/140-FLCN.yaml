@@ -25,14 +25,12 @@ verdict_reason: >-
   nominal: the Ashkenazi sample 3 long-lived copies against none (OR 6.76, P 0.178, read as printed, as row 120's Q1
   (a) settled), and the Leiden sample 2 against none, no test printed. Park 2025's UK Biobank own-survival deposits
   hold it (each with its columns swapped): the whole cohort puts T with more deaths, +0.0153 (SE 0.0098), P 0.12,
-  one-sided 0.059 against; the men flat (P 0.53); the women against, +0.0377 (SE 0.0116), P 0.0011. Carried to
+  one-sided 0.059 against; the men flat (P 0.53); the women against, +0.0377 (SE 0.0116), P 0.0011, the two sexes differing at P 0.018 (derived), a stratum picked
+  after the fact, named, no token (D35.5). Carried to
   Park's scale by Kolbe's own APOE line (ε4 OR 0.45 against Park's ε4 β 0.0129, D31.12), the reference read expects
   −0.0133: power 0.39, heterogeneity P 0.0064 (derived), short of D21's power, so no flag; on the printed OR 4.2
   it expects −0.0232: power 0.76, heterogeneity P 6.8e-4, still short of 0.8, so no flag either way, though near it; on the women's own
-  excess (10 against 5.8) the women's line has power 0.19 (heterogeneity P 2.4e-4): no flag either. UK Biobank's imputed deposits put T at 0.18 % (Park's and Pilling's lines), against 0.32 % in gnomAD and 0.17 % in
-  Kolbe's controls: either T is under-called there, which weakens Park's lines, the women's included, or its true
-  frequency is lower, so that Kolbe's controls are not thin and D34.7's premise fails for this row; which holds is
-  unknown, named and put to the lead. FinnGen R11's deaths put T with fewer deaths, flat (P 0.83; T at 0.08 % in Finns), a database line (D29.1); Pilling 2017's four
+  excess (10 against 5.8) the women's line has power 0.19 (heterogeneity P 2.4e-4): no flag either. UK Biobank's imputed deposits put T at 0.18 % (Park's and Pilling's lines; Kolbe's controls 0.17 %) against gnomAD's sequenced 0.32 %: read as imputation under-calling (D35.6), since Kolbe notes gnomAD's non-Finnish Europeans are mostly British (q12); whether the release Ensembl 116 reads is gnomAD v4, whose exomes are largely UK Biobank's, is not stated in the records read, and neither deposit prints an imputation-quality value (Park's columns, pmid-40021682#q28; Pilling's header, pmid-29227965#q187), so the reading is pending, put to the lead; the deposits' lines here are weak looks. FinnGen R11's deaths put T with fewer deaths, flat (P 0.83; T at 0.08 % in Finns), a database line (D29.1); Pilling 2017's four
   parental scans flat (P 0.56 to 0.91); Timmers 2019, Zenin 2019, Foote 2025 and Deelen 2019 hold no line at it
   (untested), Deelen's strongest window lines (the 90th's 17:17,103,590 at 0.03, P 0.0089; the 99th's 17:17,325,902
   at 0.31, P 0.0012) too common to tag it; Wright 2019's strongest line within 500 kb, the current-age scan's
@@ -41,14 +39,13 @@ verdict_reason: >-
   Semantic Scholar and the preprint index answered 429, their part unchecked) finds Kolbe alone on the variant, and
   Gharbi 2013 (PMID 23566034), where losing folliculin lengthens a worm's life, an animal result, named, not carried. Exceptional survival +
   (the reference read, P 0.0014, D34.7); lifespan 0 (Park's whole cohort leans against at one-sided 0.059, short of
-  D28.3's 0.05; FinnGen and Pilling flat; Park's women against at P 0.0011, a sex stratum, named and put to the
-  lead); healthspan untested (no Zenin or Foote line). Mechanism ageing in general (D25.7): the authors propose that
+  D28.3's 0.05; FinnGen and Pilling flat; Park's women against at P 0.0011, a sex stratum, named, D35.5); healthspan untested (no Zenin or Foote line). Mechanism ageing in general (D25.7): the authors propose that
   FLCN, which with SIK3 positively regulates mTORC1, carries a protein change that may lower mTORC1 signalling;
   nothing recorded at the variant. Causal C4: no Open Targets set. Effector E1, FLCN, by §4.2's coding clause on the
   MANE transcript (A445T; SIFT tolerated, PolyPhen benign, CADD 2.0). Descriptive. Age of action unknown. The
   evidence is European.
 axes:
-  tier: {value: C, cites: [pmid-40232348#q40, pmid-40232348#q3, pmid-40232348#q2, pmid-40232348#q7, pmid-40232348#q12, pmid-40232348#q23, pmid-40232348#q24, pmid-40232348#q41, pmid-40232348#q42, pmid-40232348#q5, pmid-40232348#q16, pmid-40232348#q26, db-ensembl-116#q901, db-ensembl-116#q902, pmid-40021682#q129, pmid-40021682#q130, pmid-40021682#q131, pmid-40021682#q32, db-finngen-r11#q101, pmid-29227965#q178, pmid-29227965#q179, pmid-29227965#q180, pmid-29227965#q181, pmid-31413261#q308, pmid-31413261#q309, pmid-31484785#q175, db-gwascatalog-2026.10.29#q590]}
+  tier: {value: C, cites: [pmid-40021682#q28, pmid-29227965#q187, pmid-40232348#q40, pmid-40232348#q3, pmid-40232348#q2, pmid-40232348#q7, pmid-40232348#q12, pmid-40232348#q23, pmid-40232348#q24, pmid-40232348#q41, pmid-40232348#q42, pmid-40232348#q5, pmid-40232348#q16, pmid-40232348#q26, db-ensembl-116#q901, db-ensembl-116#q902, pmid-40021682#q129, pmid-40021682#q130, pmid-40021682#q131, pmid-40021682#q32, db-finngen-r11#q101, pmid-29227965#q178, pmid-29227965#q179, pmid-29227965#q180, pmid-29227965#q181, pmid-31413261#q308, pmid-31413261#q309, pmid-31484785#q175, db-gwascatalog-2026.10.29#q590]}
   mechanism: {value: general_ageing, cites: [pmid-40232348#q14]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
