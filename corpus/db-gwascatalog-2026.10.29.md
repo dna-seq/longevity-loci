@@ -2643,3 +2643,35 @@ P 8e-53, C at 0.78 (q727 to q729; trait OBA_0003784); Li 2020 C +0.058, P 2e-21 
 rs59294613 (row 144), three associations: Li 2020's leukocyte telomere length, A 0.041 decrease, P 1e-13 (q732 to q734);
 renal cell carcinoma (Scelo 2017, GCST004710), OR 1.098 (1.06 to 1.14), P 8e-8, short of genome-wide, the allele
 not printed (q735 to q737); Taub 2022's telomere line (P 6e-25) prints no allele. For row 144.
+
+## Reading 2026-11-16, record
+
+> [q738] _embedded.associations[129] association_id 55993978 risk_frequency 0.33 pvalue_description pvalue_mantissa 5 pvalue_exponent -45 multi_snp_haplotype false snp_interaction false range [0.07-0.094] beta 0.082 unit increase p_value 5e-45 accession_id GCST009856 pubmed_id 32109421 first_author Li C ci_lower 0.07 ci_upper 0.094
+
+> [q739] _embedded.associations[129].efo_traits[0] efo_id OBA_0003784 efo_trait chromosome, telomeric region length
+
+> [q740] _embedded.associations[129].snp_effect_allele[0] rs7705526-A
+
+> [q741] _embedded.associations[42] association_id 219075503 risk_frequency 0.37 pvalue_description pvalue_mantissa 9 pvalue_exponent -96 multi_snp_haplotype false snp_interaction false range [1.27-1.34] or_per_copy_num 1.31 or_value 1.31 beta - p_value 8.999999999999999e-96 accession_id GCST90482692 pubmed_id 42152146 first_author Zhu M ci_lower 1.27 ci_upper 1.34
+
+> [q742] _embedded.associations[42].reported_trait[0] Lung adenocarcinoma
+
+> [q743] _embedded.associations[42].snp_effect_allele[0] rs7705526-A
+
+> [q744] _embedded.associations[48] association_id 214160008 risk_frequency 0.326 pvalue_description pvalue_mantissa 3 pvalue_exponent -127 multi_snp_haplotype false snp_interaction false range [1.24-1.29] or_per_copy_num 1.27 or_value 1.27 beta - p_value 3e-127 accession_id GCST90435365 pubmed_id 39948438 first_author Wen S ci_lower 1.24 ci_upper 1.29
+
+> [q745] _embedded.associations[48].reported_trait[0] Clonal hematopoiesis (overall)
+
+> [q746] _embedded.associations[48].snp_effect_allele[0] rs7705526-A
+
+> [q747] _embedded.associations[151] association_id 21699537 risk_frequency 0.332078 pvalue_description pvalue_mantissa 6 pvalue_exponent -19 multi_snp_haplotype false snp_interaction false range [1.28830538018993-1.48465482476452] or_per_copy_num 1.3829999 or_value 1.3829999 beta - p_value 6e-19 accession_id GCST004479 pubmed_id 28346442 first_author Phelan CM ci_lower 1.2883054 ci_upper 1.4846548
+
+> [q748] _embedded.associations[151].reported_trait[0] Serous borderline ovarian cancer
+
+> [q749] _embedded.associations[151].snp_effect_allele[0] rs7705526-A
+
+rs7705526 (row 153), 155 associations. Li 2020's leukocyte telomere length, A 0.082 increase, P 5e-45 (q738 to q740;
+trait OBA_0003784). Lung adenocarcinoma (Zhu): A OR 1.31, P 9e-96 (q741 to q743); clonal haematopoiesis (Wen): A OR
+1.27, P 3e-127 (q744 to q746); serous borderline ovarian cancer (Phelan): A OR 1.38, P 6e-19 (q747 to q749).
+The rest (lung cancer, melanoma, basal cell carcinoma, blood counts, other telomere lines; some PC-scale lines label
+the allele C) named, not read. For row 153.

@@ -3809,3 +3809,18 @@ missense on another NAF1 transcript, L368V, benign by PolyPhen (q1072, q1073). F
 
 rs59294613 (row 144): GRCh38 7:124,914,213 C/A, C ancestral (q1074); C at 70.7 % and A at 29.3 % in gnomAD's non-Finnish
 European genomes (q1075, q1076); intronic in POT1's MANE transcript, NM_015450.3 (q1077, q1078). For row 144.
+
+## Reading 2026-11-16, record
+
+> [q1079] mappings[0] assembly_name GRCh38 seq_region_name 5 ancestral_allele C location 5:1285859-1285859 allele_string C/A/G/T end 1285859 strand 1 coord_system chromosome start 1285859
+
+> [q1080] populations[14] population gnomADg:nfe allele C frequency 0.669 allele_count 45435
+
+> [q1081] populations[15] allele_count 22477 frequency 0.3312 population gnomADg:nfe allele A
+
+> [q1082] [0].transcript_consequences[0] canonical 1 transcript_id ENST00000310581 strand -1 hgnc_id HGNC:11730 gene_symbol TERT variant_allele A gene_id ENSG00000164362 mane_select NM_198253.3 biotype protein_coding impact MODIFIER gene_symbol_source HGNC
+
+> [q1083] [0].transcript_consequences[0].consequence_terms[0] intron_variant
+
+rs7705526 (row 153): GRCh38 5:1,285,859, C/A/G/T, C ancestral (q1079); C at 66.9 % and A at 33.1 % in gnomAD's non-Finnish
+European genomes (q1080, q1081); intronic in TERT's MANE transcript, NM_198253.3 (q1082, q1083). For row 153.

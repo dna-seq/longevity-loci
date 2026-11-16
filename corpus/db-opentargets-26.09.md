@@ -4880,3 +4880,34 @@ q1372): E2; on Li's set NAF1 0.45 (q1373 to q1375). For row 143.
 A −0.041 (q1379, q1380); nevus count or cutaneous melanoma PIP 0.006 (q1381, q1382): C3. Locus-to-gene on the PC1
 set (q1383): POT1 0.72, GPR37 0.22 (q1384 to q1387); on Li's set POT1 0.59, GPR37 0.46 (q1388 to q1392): E2,
 no rival at 0.5. For row 144.
+
+## Reading 2026-11-16, record
+
+> [q1393] data.variant.credibleSets count 258
+
+> [q1394] data.variant.credibleSets.rows[110].study id GCST90435144 traitFromSource Telomere length (principal component 1) studyType gwas
+
+> [q1395] data.variant.credibleSets.rows[110].locus.rows[0] posteriorProbability 1 beta 0.06470550742712415 pValueMantissa null pValueExponent null
+
+> [q1396] data.variant.credibleSets.rows[101].study id GCST009856 traitFromSource Leukocyte telomere length studyType gwas
+
+> [q1397] data.variant.credibleSets.rows[101].locus.rows[0] posteriorProbability 0.9998140339906415 beta 0.082 pValueMantissa 5 pValueExponent -45
+
+> [q1398] data.variant.credibleSets.rows[37].study id GCST008836 traitFromSource Lung adenocarcinoma studyType gwas
+
+> [q1399] data.variant.credibleSets.rows[37].locus.rows[0] posteriorProbability 0.9395685795082354 beta 0.33647223662121284 pValueMantissa 3 pValueExponent -52
+
+> [q1400] data.credibleSet.study id GCST90435144 traitFromSource Telomere length (principal component 1)
+
+> [q1401] data.credibleSet.l2GPredictions.rows[0] score 0.8090306520462036
+
+> [q1402] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol TERT
+
+> [q1403] data.credibleSet.l2GPredictions.rows[1] score 0.05394750460982323
+
+> [q1404] data.credibleSet.l2GPredictions.rows[1].target approvedSymbol CLPTM1L
+
+5_1285859_C_A (rs7705526, row 153; beta per A): 258 credible sets (q1393); telomere length (principal component 1) PIP
+1.00, A +0.065 (q1394, q1395): C1; Li 2020's set PIP 1.00, A +0.082 (q1396, q1397); lung adenocarcinoma PIP 0.94, A
++0.34, P 3e-52 (q1398, q1399). Locus-to-gene on the PC1 set (q1400): TERT 0.81, CLPTM1L 0.05 (q1401 to q1404):
+E2. For row 153.
