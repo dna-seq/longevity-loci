@@ -22,9 +22,7 @@ verdict_reason: >-
   (D32, D37.12); `direction: unknown`. Outcome cells read for A: all three untested (Park's line under its own frequency filter, named above; no other deposit holds the variant). Mechanism: markers of biological ageing; CREB3L3 is a liver transcription factor of
   fat metabolism (the author). Pleiotropy `mech:lipids`: G lowers HDL cholesterol (Open Targets, Verma 2024's 113,085
   people, PIP 0.90), named; no `tradeoff`, the row naming no longevity-favoured allele. Causal C1 (PIP 0.92 in
-  McCartney's PhenoAge set). Effector E3, CREB3L3: locus-to-gene 0.43, the only gene listed (0.47 on the HDL set), the
-  variant just upstream of CREB3L3 and in its brain expression set at PIP 0.95, G with lower expression (no
-  colocalisation read), so under E2's bar. Descriptive. Age of action unknown. The evidence is African American, as `ancestry_specific:afr`, which here reflects G's near-absence in Europeans, not a tested difference between ancestries (D39.11).
+  McCartney's PhenoAge set). Effector E2, CREB3L3: its brain expression set (the variant at PIP 0.95, G with lower expression) colocalises with McCartney's PhenoAge set at H4 0.9999 (db-opentargets-26.09#q1484 to q1487, cached and quoted, D39.9); locus-to-gene 0.43, the only gene listed (0.47 on the HDL set), under E1's 0.5; the variant just upstream of CREB3L3. Descriptive. Age of action unknown. The evidence is African American, as `ancestry_specific:afr`, which here reflects G's near-absence in Europeans, not a tested difference between ancestries (D39.11).
 axes:
   tier: {value: B, cites: [pmid-34187551#q1, pmid-34187551#q2, pmid-34187551#q6, pmid-34187551#q7, pmid-34187551#q8, pmid-34187551#q12, db-gwascatalog-2026.10.29#q765, db-gwascatalog-2026.10.29#q767, db-gwascatalog-2026.10.29#q768, db-gwascatalog-2026.10.29#q769]}
   mechanism: {value: ageing_markers, cites: [pmid-34187551#q2, db-gwascatalog-2026.10.29#q766]}
@@ -36,7 +34,7 @@ axes:
   context: {values: ["ancestry_specific:afr"], cites: [pmid-34187551#q2, pmid-34187551#q12, db-ensembl-116#q1096, db-ensembl-116#q1097, db-ensembl-116#q1098]}
 flags:
   - {token: "causal:C1", cites: [db-opentargets-26.09#q1438, db-opentargets-26.09#q1439, db-opentargets-26.09#q1440]}
-  - {token: "effector:E3", cites: [db-opentargets-26.09#q1445, db-opentargets-26.09#q1446, db-opentargets-26.09#q1447, db-opentargets-26.09#q1448, db-opentargets-26.09#q1449, db-opentargets-26.09#q1450, db-opentargets-26.09#q1443, db-opentargets-26.09#q1444, db-ensembl-116#q1099, db-ensembl-116#q1100]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q1484, db-opentargets-26.09#q1485, db-opentargets-26.09#q1486, db-opentargets-26.09#q1487,db-opentargets-26.09#q1445, db-opentargets-26.09#q1446, db-opentargets-26.09#q1447, db-opentargets-26.09#q1448, db-opentargets-26.09#q1449, db-opentargets-26.09#q1450, db-opentargets-26.09#q1443, db-opentargets-26.09#q1444, db-ensembl-116#q1099, db-ensembl-116#q1100]}
 variants:
   - rsid: rs73538174
     gene: CREB3L3

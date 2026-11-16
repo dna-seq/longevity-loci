@@ -5113,3 +5113,30 @@ rs59294613 (row 144): of its 49 sets, the blood-cell ones are red-cell size and 
 and haemoglobin, sphered cell volume) and eosinophil counts and fractions, each holding the variant at PIP 0.07 or
 less; the two highest: mean corpuscular volume (GCST90475474) at 0.066 (q1476, q1477) and eosinophil count
 (GCST90475288) at 0.056 (q1478, q1479). For row 144 (D39.11).
+
+## Reading 2026-11-16, record
+
+> [q1480] data.credibleSet.study id gtex-v10_ge_lcl_ensg00000127533 traitFromSource ENSG00000127533
+
+> [q1481] data.credibleSet.study.target approvedSymbol F2RL3
+
+> [q1482] data.credibleSet.colocalisation.rows[0] h4 0.9993415630784773 clpp 0.5869905153831515 colocalisationMethod COLOC_PIP_ECAVIAR rightStudyType gwas
+
+> [q1483] data.credibleSet.colocalisation.rows[0].otherStudyLocus.study id GCST90014294 traitFromSource DNA methylation GrimAge acceleration studyType gwas
+
+rs2227341 (row 128): GTEx v10's lymphoblastoid F2RL3 expression set (q1480, q1481) colocalises with McCartney's
+GrimAge set at H4 0.9993 (q1482, q1483); MAGE's LCL F2RL3 set the same (cached beside it, not quoted). With
+locus-to-gene 0.78 that is §4.2's E1. For row 128 (D39.9).
+
+## Reading 2026-11-16, record
+
+> [q1484] data.credibleSet.study id brainseq_ge_brain_ensg00000060566 traitFromSource ENSG00000060566
+
+> [q1485] data.credibleSet.study.target approvedSymbol CREB3L3
+
+> [q1486] data.credibleSet.colocalisation.rows[1] h4 0.9999169808184915 clpp 0.8766641525561115 colocalisationMethod COLOC_PIP_ECAVIAR rightStudyType gwas
+
+> [q1487] data.credibleSet.colocalisation.rows[1].otherStudyLocus.study id GCST90014298 traitFromSource DNA methylation PhenoAge acceleration studyType gwas
+
+rs73538174 (row 149): BrainSeq's CREB3L3 expression set (q1484, q1485) colocalises with McCartney's PhenoAge set at
+H4 0.9999 (q1486, q1487). With locus-to-gene 0.43, under 0.5, that is §4.2's E2. For row 149 (D39.9).

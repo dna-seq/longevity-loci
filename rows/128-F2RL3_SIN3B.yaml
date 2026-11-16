@@ -23,9 +23,7 @@ verdict_reason: >-
   0.028, women 0.51), from about 175 carriers of A; but A, at 0.022 % in that deposit (q170), is under Park's own 0.1 % filter (q58), so the line is named, not read (D31.13, D26.7, D39.11). Every genotype neutral, each conclusion a tendency
   of the marker with no colour (D32, D37.12); `direction: unknown`. Outcome cells read for G: lifespan untested (Park's line under its own frequency filter, named above); healthspan and exceptional survival untested. Mechanism: markers of biological
   ageing; F2RL3 is a thrombin receptor on platelets (the author). No pleiotropy in the Catalog, which holds this line
-  alone. Causal C1 (PIP 0.60 in McCartney's GrimAge set). Effector E2, F2RL3: locus-to-gene 0.78, the variant upstream
-  of F2RL3 and in its lymphoblastoid expression sets at PIP up to 1.00, A with higher expression (no colocalisation
-  read). Descriptive. Age of action unknown. The evidence is African American, as `ancestry_specific:afr`, which here reflects A's near-absence in Europeans, not a tested difference between ancestries (D39.11).
+  alone. Causal C1 (PIP 0.60 in McCartney's GrimAge set). Effector E1, F2RL3: locus-to-gene 0.78, and its lymphoblastoid expression set (the variant at PIP up to 1.00, A with higher expression) colocalises with McCartney's GrimAge set at H4 0.9993 (db-opentargets-26.09#q1480 to q1483, cached and quoted, D39.9); the variant upstream of F2RL3. Descriptive. Age of action unknown. The evidence is African American, as `ancestry_specific:afr`, which here reflects A's near-absence in Europeans, not a tested difference between ancestries (D39.11).
 axes:
   tier: {value: B, cites: [pmid-34187551#q1, pmid-34187551#q2, pmid-34187551#q6, pmid-34187551#q7, pmid-34187551#q8, pmid-34187551#q9, db-gwascatalog-2026.10.29#q686, db-gwascatalog-2026.10.29#q688, db-gwascatalog-2026.10.29#q689]}
   mechanism: {value: ageing_markers, cites: [pmid-34187551#q4, pmid-34187551#q5, db-gwascatalog-2026.10.29#q687]}
@@ -37,7 +35,7 @@ axes:
   context: {values: ["ancestry_specific:afr"], cites: [pmid-34187551#q2, pmid-34187551#q9, db-ensembl-116#q1036, db-ensembl-116#q1037, db-ensembl-116#q1038, db-ensembl-116#q1039]}
 flags:
   - {token: "causal:C1", cites: [db-opentargets-26.09#q1321, db-opentargets-26.09#q1322, db-opentargets-26.09#q1323]}
-  - {token: "effector:E2", cites: [db-opentargets-26.09#q1326, db-opentargets-26.09#q1327, db-opentargets-26.09#q1328, db-opentargets-26.09#q1324, db-opentargets-26.09#q1325, db-ensembl-116#q1040, db-ensembl-116#q1041]}
+  - {token: "effector:E1", cites: [db-opentargets-26.09#q1480, db-opentargets-26.09#q1481, db-opentargets-26.09#q1482, db-opentargets-26.09#q1483,db-opentargets-26.09#q1326, db-opentargets-26.09#q1327, db-opentargets-26.09#q1328, db-opentargets-26.09#q1324, db-opentargets-26.09#q1325, db-ensembl-116#q1040, db-ensembl-116#q1041]}
 variants:
   - rsid: rs2227341
     locus: {chrom: "19", start: 16888889, ref: G, cites: [db-ensembl-116#q1035]}  # rs2227341 is multi-allelic (G/A/C); the row means G and A
