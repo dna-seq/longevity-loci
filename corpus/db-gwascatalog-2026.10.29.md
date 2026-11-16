@@ -2841,3 +2841,18 @@ cigarettes smoked per day (MTAG, Koskeridis), T 0.016 decrease, P 3e-11 (q802 to
 
 The GWAS Catalog: rs16843603, Rosoff's mvAge only, effect T, P 4e-10 (q805, q806); rs114298671, Rosoff's mvAge, effect G, P 2e-8
 (q807, q808), and a multiple long-term conditions line with no allele, named. For rows 163, 164.
+
+## Reading 2026-11-16, record
+
+> [q809] _embedded.associations[1] association_id 47749310 risk_frequency NR pvalue_description pvalue_mantissa 9 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range - beta - p_value 9.000000000000001e-09 accession_id GCST009450 pubmed_id 31484785 first_author Wright KM
+
+> [q810] _embedded.associations[1].reported_trait[0] Parental longevity (father's age at death or father's attained age)
+
+> [q811] _embedded.associations[1].snp_effect_allele[0] rs3131621-A
+
+> [q812] _embedded.associations[3] association_id 35567956 risk_frequency 0.629 pvalue_description pvalue_mantissa 4 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.0081-0.0167] beta 0.0124 unit decrease p_value 4e-08 accession_id GCST006701 pubmed_id 29227965 first_author Pilling LC ci_lower 0.0081 ci_upper 0.0167
+
+> [q813] _embedded.associations[3].snp_effect_allele[0] rs3131621-A
+
+The GWAS Catalog at rs3131621: Wright's fathers, A, P 9e-9 (q809 to q811); Pilling's fathers, A, P 4e-8 (q812, q813);
+the rheumatoid arthritis or IBD line has no allele (q234, q235). For row 165.

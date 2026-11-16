@@ -5225,3 +5225,9 @@ FEV1 +0.0088 (q1507, q1508), COPD −0.0009 (q1509, q1510), age leaving educatio
 lipid, calcium and liver-enzyme sets named. rs114298671 (4_3280142_G_A, row 164): 56 sets (q1513), none mvAge's or a lifespan
 class's: C4, E4. β per A: body fat percentage +0.0070 (q1514, q1515), waist +0.0069 (q1516, q1517), high blood
 pressure +0.0064 (q1518, q1519); BMI sets named. For rows 163, 164.
+
+## Reading 2026-11-16, record
+
+> [q1520] data variant null
+
+rs3131621 (6_31457722_A_G): no Open Targets 26.09 record (q1520), so no credible set holds it: C4, E4. For row 165.

@@ -4123,3 +4123,20 @@ counted over 1,006 haplotypes (derived): rs16843603 C with rs16843836 G, r −0.
 with rs114298671 A, r −0.135. On mvAge's healthier alleles (rs16843836 A, rs16843603 C, rs114298671 G) each pair travels together, r
 +0.23, +0.24, +0.14. Conditional z from Rosoff's z values (7.17, 6.25, 5.65): rs16843603 given rs16843836 4.70 (P 2.6e-6),
 given both 4.38 (1.2e-5); rs114298671 given rs16843836 4.07 (4.8e-5), given both 3.68 (2.3e-4) (derived). For rows 163, 164.
+
+## Reading 2026-11-16, record
+
+> [q1186] mappings[0] assembly_name GRCh38 coord_system chromosome allele_string A/G strand 1 start 31457722 seq_region_name 6 ancestral_allele null location 6:31457722-31457722 end 31457722
+
+> [q1187] populations[8] allele A population gnomADg:nfe allele_count 45683 frequency 0.6719
+
+> [q1188] [0] seq_region_name 6 start 31457722 end 31457722 assembly_name GRCh38 input rs3131621 most_severe_consequence intergenic_variant id rs3131621 strand 1 allele_string A/G
+
+> [q1189] genotypes[0] gender Male sample 1000GENOMES:phase_3:HG00096 genotype G|A
+
+> [q1190] genotypes[0] gender Male sample 1000GENOMES:phase_3:HG00096 genotype A|G
+
+rs3131621 (row 165, the second signal at 37): GRCh38 6:31,457,722 A/G (q1186); A at 67.2 % in gnomAD's non-Finnish genomes
+(q1187); intergenic between MICA and MICB (q1188). Phase with row 37's lead rs3130507 from 1000 Genomes' phased EUR
+genotypes (population q1174; first lines q1189, q1190), counted over 1,006 haplotypes (derived): rs3131621 A with rs3130507
+G, r +0.226 (r² 0.051), the two longer-life alleles together. For row 165.

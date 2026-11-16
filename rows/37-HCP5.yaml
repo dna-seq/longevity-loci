@@ -1,7 +1,7 @@
 # The seed list's locus 37, named HCP5 by the seed after its second rsID (6p21.33, the MHC class I region between
 # PSORS1C3 and MICA/MICB). Curated 2026-11-11. Lead rs3130507 (Pilling 2017's mothers, PSORS1C3). The seed's other
-# rsID, rs3131621 (Pilling's fathers, MICA … MICB, 278 kb away), is a separate signal and goes to the scout's queue
-# (D25.6). Wright 2019's PSORS1C3 lead rs1265159 (r² 0.83) and rs3130467 (r² 0.95) are tags of this lead.
+# rsID, rs3131621 (Pilling's fathers, MICA … MICB, 278 kb away), is a separate signal, now row 165
+# (D25.6, D39.14). Wright 2019's PSORS1C3 lead rs1265159 (r² 0.83) and rs3130467 (r² 0.95) are tags of this lead.
 locus_id: 37
 locus_name: HCP5
 verdict: kept
@@ -46,8 +46,8 @@ verdict_reason: >-
   lead (P 3.6e-8; mothers 3.5e-5), its A longer-lived, 278 kb away; both SNPs are in the CEU panel and Ensembl's
   pairwise endpoint, which answers pairs megabases apart, returns no pair, which reads as r² below its 0.05 floor. It
   has the stronger case, replicated in AncestryDNA's fathers (P 7.7e-4; meta-analysis 8.9e-9, Table 3 "Replicated"),
-  and the Catalog also lists rheumatoid arthritis or inflammatory bowel disease there (P 2e-13). Under D25.6 it goes
-  to the scout's queue as a candidate row and is kept out of this row's axes and studies.
+  and the Catalog also lists rheumatoid arthritis or inflammatory bowel disease there (P 2e-13). Under D25.6 it is its own
+  row, 165 (D39.14), and is kept out of this row's axes and studies.
 axes:
   tier: {value: B, cites: [pmid-29227965#q22, pmid-29227965#q23, pmid-30642433#q100, pmid-30642433#q101, pmid-30642433#q21, pmid-31484785#q72, pmid-31484785#q73, pmid-31484785#q74, pmid-31484785#q12, db-ensembl-116#q244, db-ensembl-116#q245, pmid-31413261#q94, pmid-30642433#q102, db-finngen-r11#q8]}
   mechanism: {value: general_ageing, cites: [pmid-29227965#q22, db-gwascatalog-2026.10.29#q229, db-gwascatalog-2026.10.29#q236, db-gwascatalog-2026.10.29#q237]}
