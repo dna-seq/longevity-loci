@@ -3415,3 +3415,25 @@ rs79159347 (row 155): GRCh38 12:7,019,858 G/A (q935); A at 6.55 % in gnomAD's no
 > [q942] [0] most_severe_consequence intergenic_variant end 96542656 seq_region_name 3 start 96542656 id rs79645902 strand 1 input rs79645902 allele_string A/G assembly_name GRCh38
 
 rs79645902 (row 156): GRCh38 3:96,542,656 A/G (q938); G at 10.4 % in gnomAD's East Asian genomes, 533 of 5,126 alleles (q939, q940), 0.06 % in the non-Finnish Europeans (q941); the consequence q942. For row 156.
+
+## Reading 2026-11-16, record
+
+> [q943] mappings[0] assembly_name GRCh38 ancestral_allele A allele_string A/T strand 1 seq_region_name 7 location 7:14117491-14117491 coord_system chromosome end 14117491 start 14117491
+
+> [q944] populations[13] frequency 0.01622 population gnomADg:eas allele T allele_count 73
+
+> [q945] populations[14] population gnomADg:eas allele A frequency 0.9838 allele_count 4427
+
+> [q946] populations[9] allele_count 61272 frequency 1 population gnomADg:nfe allele A
+
+> [q947] populations[49] population 1000GENOMES:phase_3:EAS allele T frequency 0.0109126984126984 allele_count 11
+
+> [q948] populations[50] frequency 0.989087301587302 population 1000GENOMES:phase_3:EAS allele A allele_count 997
+
+> [q949] populations[46] population 1000GENOMES:phase_3:CHS allele T frequency 0.0142857142857143 allele_count 3
+
+> [q950] populations[47] frequency 0.985714285714286 allele A population 1000GENOMES:phase_3:CHS allele_count 207
+
+> [q951] [0] input rs117082375 start 14117491 id rs117082375 end 14117491 most_severe_consequence intergenic_variant strand 1 allele_string A/T seq_region_name 7 assembly_name GRCh38
+
+rs117082375 (row 111): GRCh38 7:14,117,491 A/T, A ancestral (q943); T at 1.62 % in gnomAD's East Asian genomes, 73 of 4,500 alleles (q944, q945), absent in the non-Finnish Europeans (q946); 1000 Genomes EAS 11 of 1,008 (q947, q948), CHS 3 of 210 (q949, q950); intergenic (q951). For row 111.

@@ -1,0 +1,143 @@
+# The seed list's locus 111, intergenic chr7 (7p21.1). Curated 2026-11-16. Lead rs117082375, the seed's only rsID (Hsieh
+# 2026's 85-and-over Taiwanese locus; seed tier X): intergenic, GRCh38 7:14,117,491 A/T, GRCh37 7:14,157,116, A the
+# reference and ancestral allele, T at 1.6 % in gnomAD's East Asian genomes and absent in the non-Finnish Europeans, T
+# the discovery's shorter-lived allele and A the longer-lived. Open Targets 26.09 has no record of it; the GWAS Catalog
+# (2026-10-29) holds no association.
+locus_id: 111
+locus_name: intergenic chr7
+verdict: kept
+verdict_reason: >-
+  Tier C: a sub-genome-wide East Asian discovery in one hospital's old-against-young sample (R-TIER-2, R-TIER-4), with
+  no same-scale contradiction and nothing independent passing (D31.13's Hsieh bullet; rows 123 and 156's shape). The
+  seed's X marks its validation, below. Hsieh 2026 compared 1,595 Taiwanese hospital patients who died at 85 or over
+  with 880 who died at 65 to 75 at the same hospital: T (0.016, pooled) OR 0.31 per T, P 7.58e-6, under the paper's
+  suggestive line of 1e-5. Solved from the OR and the counts (per Alt, the pooled frequency, as rows 113 and 119 read
+  the tables), the controls carry T at about 0.029 (50 copies in 1,760 alleles) and the long-lived at about 0.009 (29
+  in 3,190). Against gnomAD's East Asian genomes (1.62 %, 73 of 4,500 alleles, the reference D31.13 fixes) the
+  controls misfit (28.6 copies expected, P 0.002 by a normal test counting the reference's sampling error; Fisher's
+  exact 0.0031), so D31.10 reads the discovery against the reference: the long-lived alone give OR 0.56 per T (A
+  1.80), P 0.0079, Fisher's exact 0.0082 (derived), nominal, below the reference, so something is left to read and the
+  source is not overfit (D31.11 not reached). The solve takes the covariate-adjusted OR as allelic; across its 95 %
+  interval (0.19 to 0.52, from its P) the long-lived run from P 1.5e-4 to 0.15 against the reference, the controls
+  from a misfit (P 3e-5) to a fit (P 0.061, read as printed there) (derived): the read is fragile. The other
+  references differ: against 1000 Genomes EAS (11 of 1,008) the controls misfit (P 0.0037) and the long-lived sit at
+  the reference (OR 0.83, P 0.6), D31.11's shape, which would make the row D; against the southern Han CHS (3 of 210)
+  both fit (controls P 0.24), read as printed; against Taiwan Biobank's printed 0.023 (no count) the controls fit (P
+  0.13) and the long-lived sit well below (OR 0.39). gnomAD's East Asians are the reference, and the branches are
+  named. Its validation cohort (85 and over at a second hospital) prints OR 3.055, P 0.008: on its face the opposite
+  side, while the paper says its replicated loci kept the discovery's direction and Table 4's other lines do keep it
+  (rs75737809 0.32 then 0.179; rs1468966 1.49 then 1.578; rs184517867 9.96 then 7.17), and which allele Table 4 counts
+  is not printed. The same reversal shows at rows 139 and 146, the seed's other X loci. Its controls are not its own
+  (Fig. 2), so it is not an independent replication either way (D19.1): its direction is unknown, named, no token. T
+  is absent in Europeans, so no European sample can test it: Deelen 2019, Timmers 2019, Park 2025 (all three files),
+  Pilling 2017, Zenin 2019, Foote 2025 and FinnGen R11 were each looked up at the variant (2026-11-16, GRCh37
+  7:14,157,116) and hold no line: untested, not negative. Hsieh's 85-and-over APOE line is null (ε4 OR 1.03, P 0.83),
+  so no calibration is the paper's own (D31.13). The literature search (the rsID, 2026-11-16; Semantic Scholar and the
+  preprint index answered 429, their part unchecked) finds nothing, Hsieh included, which is found by its PMID.
+  Genotypes: A/A the reference, T carriers risk, as weak early evidence. Exceptional survival + (the reference read,
+  P 0.0079, a derived test; fragile, and the validation's printed sign the other way, named); lifespan untested;
+  healthspan untested. Mechanism ageing in general (D25.7): intergenic, nothing recorded at the variant. Causal C4 and
+  effector E4: no Open Targets record. Descriptive. Age of action unknown. The evidence is Taiwanese, as
+  `ancestry_specific:eas`.
+axes:
+  tier: {value: C, cites: [pmid-41949656#q40, pmid-41949656#q41, pmid-41949656#q8, pmid-41949656#q28, pmid-41949656#q4, pmid-41949656#q42, pmid-41949656#q7, pmid-41949656#q13, pmid-41949656#q36, pmid-41949656#q11, pmid-41949656#q12, pmid-41949656#q20, pmid-41949656#q22, pmid-41949656#q5, pmid-41949656#q10, pmid-41949656#q43, pmid-41949656#q44, db-ensembl-116#q944, db-ensembl-116#q945, db-ensembl-116#q946, db-ensembl-116#q947, db-ensembl-116#q948, db-ensembl-116#q949, db-ensembl-116#q950, db-gwascatalog-2026.10.29#q600]}
+  mechanism: {value: general_ageing, cites: [db-ensembl-116#q951, db-opentargets-26.09#q1258]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: untested, lifespan: untested, exceptional_survival: "+",
+            cites: [pmid-41949656#q41, db-ensembl-116#q944, db-ensembl-116#q945]}
+  actionability: {label: descriptive, cites: [pmid-41949656#q41]}
+  context: {values: ["ancestry_specific:eas"], cites: [pmid-41949656#q41, db-ensembl-116#q944, db-ensembl-116#q946]}
+flags:
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1258]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q1258]}
+variants:
+  - rsid: rs117082375
+    locus: {chrom: "7", start: 14117491, ref: A, cites: [db-ensembl-116#q943]}  # A is the reference and the longer-lived allele
+    gene: ""
+    phenotype: 7p21.1 intergenic, longevity, Taiwanese
+    trait_efo_id: OBA_VT0005372
+    effect_allele: A
+    effect_size: 1.80
+    effect_measure: OR
+    stat_significance: nominal
+    direction: protective
+    genotypes:
+      - genotype: A/A
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position (nearly everyone of European ancestry, and
+          about 97 in 100 people of East Asian ancestry, do). It is the reference the other combinations are compared
+          with. The position lies between genes on chromosome 7.
+      - genotype: A/T
+        state: risk
+        conclusion: >-
+          You carry one copy of a version of this DNA position found mainly in people of East Asian ancestry (about 3
+          in 100 carry it, and almost no one elsewhere). One Taiwanese study found it less often among people who
+          lived past 85, in one hospital; its check at a second hospital is unclear, and it has not been confirmed
+          independently. This is weak, early evidence: a possible tendency, not destiny.
+      - genotype: T/T
+        state: risk
+        conclusion: >-
+          You carry two copies of a version of this DNA position found mainly in people of East Asian ancestry, which
+          is very unusual. One Taiwanese study found single copies less often among people who lived past 85, a
+          finding not yet confirmed, so nothing can be said about two copies.
+studies:
+  - rsid: rs117082375
+    note: pmid-41949656
+    quote: q41
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: Taiwanese hospital patients who died at 85 or over against those who died at 65 to 75 (one hospital)
+    ancestry: [EAS]
+    n_cases: 1595
+    sample_size: 2475
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: suggestive
+    p_value: "7.58× 10–6"
+    p_value_num: 7.58e-06
+    effect_size: 3.23
+    effect_measure: OR
+    effect_unit: odds of having died at 85 or over rather than at 65 to 75, per A allele (the printed 0.31 per T, inverted)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Hsieh 2026's logistic GWAS of the 85-and-over group (Table 1, q40, q41), 1,595 cases and 880 controls (q8); T pooled 0.016; solved per Alt, controls 0.029 and cases 0.009 (derived); the controls misfit gnomAD EAS 0.0162 (db-ensembl-116#q944, q945; 50 against 28.6, P 0.002, Fisher 0.0031), so this OR is named, not read (D31.10, D31.13); suggestive line 1e-5 (q4)"
+    curator: claude-opus-5-5
+  - rsid: rs117082375
+    note: pmid-41949656
+    quote: q41
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: Taiwanese who died at 85 or over (Hsieh 2026) against gnomAD's East Asian genomes as the reference
+    ancestry: [EAS]
+    n_cases: 1595
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: nominal
+    p_value_num: 0.0079
+    effect_size: 1.80
+    effect_measure: OR
+    effect_unit: odds of carrying A, the long-lived against the gnomAD East Asian reference (derived)
+    effect_allele: A
+    direction: protective
+    statistical_test: "The row's read effect by D31.10: the long-lived's solved T 0.009 (29 of 3,190) against gnomAD EAS 0.0162 (db-ensembl-116#q944, q945): OR 0.56 per T, P 0.0079, Fisher 0.0082 (derived); P 1.5e-4 to 0.15 across Hsieh's interval; against 1000 Genomes EAS (q948, q949) P 0.6, D31.11's branch, named"
+    curator: claude-opus-5-5
+  - rsid: rs117082375
+    note: pmid-41949656
+    quote: q42
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: Taiwanese validation cohort (a second hospital), against controls aged 65 to 75 not its own (q5, q10)
+    ancestry: [EAS]
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: nominal
+    p_value: "0.008"
+    p_value_num: 0.008
+    effect_size: 3.055
+    effect_measure: OR
+    effect_unit: odds of dying at 85 or over, per allele as Table 4 counts it (not printed)
+    direction: unknown
+    statistical_test: "Table 4 (q42): OR 3.055, SE of the log OR 0.419; on its face the opposite of the discovery's 0.31 per T, while the text says the replicated loci kept their direction (q7) and Table 4's other lines do (q36/q13, q12/q11, q22/q20); the counted allele is unprinted, so the direction is unknown; its controls are not its own, so not independent (D19.1)"
+    curator: claude-opus-5-5
