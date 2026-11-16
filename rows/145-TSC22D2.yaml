@@ -118,5 +118,5 @@ studies:
     effect_unit: raw mean log-R ratio of the Y chromosome (mLRR-Y) per A allele, UK Biobank
     effect_allele: A
     direction: unknown
-    statistical_test: "Wright 2017's GWAS of mLRR-Y in 67,034 UK Biobank men (q1, q2), Table 1 (title q3, header q4, footnotes q6 to q9): rs59633341 A (lowering) /AT, A at 0.16, UK Biobank −0.004, P 2.6e-18; EPIC-Norfolk −0.009, P 7.5e-7; deCODE −0.007 (log2 copy number), P 1.1e-5; replication P 8.5e-14; overall P 4.1e-28 (q5); replications q10, q11; the seed's study (D37.11); its UK Biobank men are within Thompson 2019's; the GWAS Catalog's record (GCST009375, db-gwascatalog-2026.10.29#q761 to q763) the same line; a marker study (D32, D37.12)"
+    statistical_test: "Wright 2017's GWAS of mLRR-Y in 67,034 UK Biobank men (q1, q2), Table 1 (title q3, header q4, footnotes q6 to q9): rs59633341 A (lowering) /AT, A at 0.16, UK Biobank −0.004, P 2.6e-18; EPIC-Norfolk −0.009, P 7.5e-7; deCODE −0.007 (log2 copy number), P 1.1e-5; replication P 8.5e-14; overall P 4.1e-28 (q5); replications q10, q11; the seed's study (D39.4); its UK Biobank men are within Thompson 2019's; the GWAS Catalog's record (GCST009375, db-gwascatalog-2026.10.29#q761 to q763) the same line; a marker study (D32, D37.12)"
     curator: claude-opus-5-5

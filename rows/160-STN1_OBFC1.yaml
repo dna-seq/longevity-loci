@@ -6,7 +6,7 @@ locus_id: 160
 locus_name: STN1/OBFC1
 verdict: kept
 verdict_reason: >-
-  Tier A on the marker's own evidence (D37.12; the seed gives none), tiered from the seed's study, Li 2020 (D37.11,
+  Tier A on the marker's own evidence (D37.12; the seed gives none), tiered from the seed's study, Li 2020 (D39.4,
   D39.1): the tier grades the association with leukocyte telomere length, not longevity, and this row is unscored
   (D32). Li 2020's meta-analysis (78,592 Europeans of ENGAGE, EPIC-CVD and EPIC-InterAct, no UK Biobank) prints
   rs9419958 with C (EA) at 0.86, β −0.064 SD (SE 0.007), P 5.05e-19: T longer. Codd 2021's 472,174 UK Biobank
