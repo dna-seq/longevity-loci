@@ -4,6 +4,8 @@ Newest first.
 
 ## Unreleased
 
+- `loci export` writes a nominal study's `statistical_test` as "nominal (p < 0.05), not genome-wide" and no longer claims "in the discovery's direction", which was false for Hsieh's direction-unknown validation lines and for derived reads against a reference (D37.13).
+
 - just-dna-enricher 0.8.7 (floor `>=0.8.7`; format and compiler stay 0.8.6), with the module-creator plugin's pin moved to `v0.48.12`, which locks the same; `compile_module` names the toolchain behind its artifact.
 - `dashboard.py --left` takes 151 back: its preprint's text is now fetched.
 - `loci fetch` takes a preprint's Europe PMC id (`PPR…`) and caches its JATS full text, else its abstract, under the note key `doi-<DOI>`: row 151's Research Square preprint, whose host refuses scripted fetches, now has a cacheable text.

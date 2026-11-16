@@ -351,3 +351,16 @@ def test_a_bad_pair_is_refused(tmp_path: Path, pair: dict, said: str) -> None:
     (path,) = _apoe_with_pairs(tmp_path, pairs).glob("*.yaml")
     with pytest.raises(ValidationError, match=said):
         Row.model_validate(yaml.safe_load(path.read_text(encoding="utf-8")))
+
+
+def test_nominal_claims_no_direction_the_study_lacks(real) -> None:
+    """D37.13: a nominal study whose direction is unknown (Hsieh's crossed validation lines, D36.1), or a derived
+    read against a reference, is not a look-up in the discovery's direction; the export's wording claims none."""
+    rows, result = real
+    undirected = Counter((s.rsid, s.p_value or "", cell(s.p_value_num)) for r in rows for s in r.studies
+                         if s.stat_significance is StatSignificance.NOMINAL and s.p_one_sided is None
+                         and s.direction in (None, Direction.UNKNOWN))
+    assert undirected
+    written = Counter((x["rsid"], x["p_value"], x["p_value_num"]) for x in result.studies
+                      if NOMINAL_TEST in x["statistical_test"] and "discovery's direction" not in x["statistical_test"])
+    assert undirected <= written
