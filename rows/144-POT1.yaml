@@ -29,8 +29,7 @@ verdict_reason: >-
   the frailer; factor 3 the other way only at 0.061, so not both ways at nominal P, D31.4, D37.4; Zenin flat).
   Mechanism: markers of biological ageing; POT1 binds the single-stranded telomere end in the shelterin complex. No
   pleiotropy token: the Catalog's renal cell carcinoma line (Scelo 2017, OR 1.098, P 8e-8) is short of genome-wide
-  and prints no allele, and Open Targets' nevus or melanoma set holds the variant at PIP 0.006; named. Most of its 49 Open Targets sets are blood-cell traits, red-cell size and haemoglobin (mean corpuscular volume and haemoglobin, sphered cell volume) and eosinophil counts and fractions, each holding it at PIP 0.07 or less (the highest mean corpuscular volume, 0.066, and eosinophil count, 0.056; db-opentargets-26.09#q1476 to q1479): named, no token, the variant's part in each unshown. Causal C3 (PP
-  0.08 in Codd 2021's set; PIP 0.035 in Li's and 0.018 in the telomere PC1 set). Effector E2, POT1: locus-to-gene
+  and prints no allele, and Open Targets' nevus or melanoma set holds the variant at PIP 0.006; named. Most of its 49 Open Targets sets are blood-cell traits, red-cell size and haemoglobin (mean corpuscular volume and haemoglobin, sphered cell volume) and eosinophil counts and fractions, each holding it at PIP 0.07 or less (the highest mean corpuscular volume, 0.066, and eosinophil count, 0.056; db-opentargets-26.09#q1476 to q1479): named, no token, the variant's part in each unshown. Causal C3 (D39.12: Open Targets' sets, PIP 0.035 in Li's and 0.018 in the telomere PC1 set; Codd 2021's own set at PP 0.08, named). Effector E2, POT1: locus-to-gene
   0.72 on the PC1 set and 0.59 on Li's, GPR37 at 0.22 and 0.46, no rival at 0.5. Descriptive. Age of action unknown.
   The evidence is European.
 axes:

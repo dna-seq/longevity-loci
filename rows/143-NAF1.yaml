@@ -28,8 +28,7 @@ verdict_reason: >-
   lifespan 0 (Timmers, Pilling, Park and FinnGen flat); healthspan − (Zenin two-sided 0.024, C the earlier end;
   Foote's factor 5 the same side at 0.040; the side named, D38.6). Mechanism: markers of biological ageing; NAF1
   assembles the H/ACA ribonucleoproteins that include telomerase's RNA. No disease pleiotropy: the Catalog holds
-  only telomere lines. Causal C2 (PP 0.11 in Codd 2021's own set; Open Targets' telomere sets hold it at PIP 0.05 to
-  0.06). Effector E2, NAF1: locus-to-gene 0.82 on the telomere PC1 set (MARCHF1 0.09; 0.45 on Li's set); the
+  only telomere lines. Causal C3 (D39.12: Open Targets' telomere sets hold it at PIP 0.054, the PC1 set, and 0.050, Li's; Codd 2021's own set at PP 0.11, named). Inside the set, so §4.1's tag clause does not apply (D38.5), and A stands. Effector E2, NAF1: locus-to-gene 0.82 on the telomere PC1 set (MARCHF1 0.09; 0.45 on Li's set); the
   missense is on a non-MANE transcript at PIP 0.11, so not E1. Descriptive. Age of action unknown. The evidence is
   European.
 axes:
@@ -42,7 +41,7 @@ axes:
   actionability: {label: descriptive, cites: [pmid-34611362#q12]}
   context: {values: [], cites: []}
 flags:
-  - {token: "causal:C2", cites: [pmid-34611362#q6, pmid-34611362#q13, db-opentargets-26.09#q1363, db-opentargets-26.09#q1364, db-opentargets-26.09#q1365, db-opentargets-26.09#q1366, db-opentargets-26.09#q1367]}
+  - {token: "causal:C3", cites: [db-opentargets-26.09#q1363, db-opentargets-26.09#q1364, db-opentargets-26.09#q1365, db-opentargets-26.09#q1366, db-opentargets-26.09#q1367, pmid-34611362#q6, pmid-34611362#q13]}
   - {token: "effector:E2", cites: [db-opentargets-26.09#q1368, db-opentargets-26.09#q1369, db-opentargets-26.09#q1370, db-opentargets-26.09#q1371, db-opentargets-26.09#q1372, db-opentargets-26.09#q1373, db-opentargets-26.09#q1374, db-opentargets-26.09#q1375, db-ensembl-116#q1070, db-ensembl-116#q1071, db-ensembl-116#q1072, db-ensembl-116#q1073]}
 variants:
   - rsid: rs4691895

@@ -35,8 +35,7 @@ verdict_reason: >-
   side. Descriptive: the measure it moves, triglycerides, is not one of §4.2's tests (LDL, Lp(a), blood pressure,
   HbA1c), and the row does not stretch `act_test:ldl` to it (D27.5; a triglyceride test waits for a design pass). Causal C1: rs268 is a missense variant
   and the lead of mvAge's own fine-mapping, SuSiE posterior 0.957 (FINEMAP 0.654), the scoring-class set the tier
-  rests on; Open Targets has no mvAge set here, so C1 rests on the paper's own fine-mapping alone, a first for these
-  rows (the lipid and coronary disease sets at PIP near 1 are not scoring class, D17.2). Effector E1, LPL: the variant changes LPL's protein, asparagine 318 to serine (VEP; SIFT and PolyPhen call it
+  rests on; Open Targets has no mvAge set here, so C1 rests on the paper's own fine-mapping alone, at the level both its methods support (D39.12: SuSiE 0.957 and FINEMAP 0.654, each 0.5 or more), a first for these rows (the lipid and coronary disease sets at PIP near 1 are not scoring class, D17.2). Effector E1, LPL: the variant changes LPL's protein, asparagine 318 to serine (VEP; SIFT and PolyPhen call it
   tolerated and benign, so the effect is read from the association data), §4.2's coding clause; L2G agrees (0.99) in the lipid and coronary disease sets. Triglycerides are the mediator Rosoff names for rs268 (its MR with LPL-locus instruments). A/A, about 96 in 100
   Europeans, is the reference; G is the risk allele at a disease locus (coronary disease), so `PROTECT:ABSENCE_OF_RISK` (D26.5). Age of
   action unknown: no moderator or age-band result at LPL is cached. The evidence and the variant are European (G
