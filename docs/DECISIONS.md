@@ -1112,8 +1112,8 @@ under the person's standing word, each with the alternative it rejected.
 2. **A Han Chinese sample keeps the reference its row fixed first; the Hsieh rows read gnomAD EAS** (D31.13). CHS and
    1000 Genomes EAS are named branches on each Hsieh row, with each branch's call stated. 116's CHS stays, as fixed
    for Hainan before its result. Rejected: moving every Hsieh row to CHS now, which would move 150 to C and 123 to D
-   after both results are known, the choice D31.13 bars. 150's D is fragile (one-sided 0.048 at the printed
-   frequency's low rounding), and the row says so.
+   after both results are known, the choice D31.13 bars. 150's D is fragile (Fisher one-sided 0.054 to 0.065 across the printed
+   frequency's rounding, by D37.1; a normal test gives 0.048 at the low end), and the row says so.
 3. **A sex stratum of a discovery that is not sex-specific is not D25.1's independent pass** (D35.5 carried over).
    154 stays D. Park's men (one-sided 0.0045, 0.013 corrected for three files, power 0.73) are named. 130's pass was
    Park's whole cohort, so the two agree. Rejected: (b), C with `replication_failed` on a picked stratum.
