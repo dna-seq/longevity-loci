@@ -4,6 +4,20 @@ The curator seat's working state, rewritten to the present before a reset (`docs
 
 ## Now (2026-11-10)
 
+- **Markers (D32, D36.3), from 2026-11-16:** every scored seed locus has a row. Left: 23 TERC (fold 104, r² 1.00 CEU),
+  30 TERT, 105, 106, 112, 114, 128, 132, 133, 141, 143, 144, 145, 149, 153, 160, 161, then 115, 129, 142 (brain age).
+  Plan for a marker row (the first sets the pattern; say it to the lead with 23): mechanism `ageing_markers`; tier by
+  the marker's own GWAS evidence under §4.1 (the marker's phenotype in place of lifespan); every genotype `neutral`,
+  each conclusion a tendency in the marker, no good or bad colour; the variant's `trait_efo_id` the marker's, read off
+  the GWAS Catalog record, never typed; outcome cells from the usual lifespan look-ups. TERT's ids are separate
+  signals: Li 2020 (pmid-32109421, Table 1) marks rs2853677 a conditionally independent second TERT signal beside
+  rs7705526; r² among 30/132/133/153 is 0.21 to 0.49 in CEU, so no D14 fold there (check 30 against Li's leads).
+  Papers fetched (all title-checked): Li 2020 LTL 32109421, McCartney 2021 clocks 34187551, Gupta 2023 mtDNA-CN
+  37587338, Lin 2022 Taiwan clocks 34962275 (abstract only), Lu 2018 IEAA/TERT 29374233, Wright 2017 LOY 28346444.
+  23's look-ups are cached (f23.sh pattern): rs10936599 a missense, GRCh38 3:169,774,313, GRCh37 3:169,492,101, C
+  0.755 NFE; Li's line is at rs10936600 (T −0.086 SD per T, P 7.2e-51); Timmers T +0.0085 P 0.057, Zenin T −0.0167
+  P 0.0032 (T the longer healthspan), Deelen, Park, FinnGen flat; Catalog 21 associations, OT 252 sets, unread.
+
 - **Done 2026-11-13:** the lead's batch-eight read (69 6e84ae7, 73 3bd0035, 74 29a4eee, 72 6cbf8f6, 65 eaecd72) and the D29.18 sweep (rows 6, 8, 15, 21, 29, 39, 93 name a Table 9 line that no longer counts; no tier, token or cell moves; 69 moved its prose in 6e84ae7). Next: locus 76.
 - First locus done by hand: 46 LPA, tier A kept (060c9bd). Shown to the lead in `#longevity-loci > formats`
   (639271230) with six format questions: a cite for a database release (Open Targets, gnomAD), nominal replication
