@@ -17,7 +17,7 @@ verdict_reason: >-
   464,283, Europeans alone the same. rs2293607 is r² 1.00, D′ 1.00 with rs10936599 in CEU, and opposite coupling at
   these frequencies would cap r² near 0.1, so rs2293607-C, the shorter allele, travels with rs10936599-T: the same
   allele and side as Codd 2013. D21's test: Codd 2013 −0.097 (SE 0.008) against Codd 2021 −0.094 (SE 0.0023), both in
-  SD units, heterogeneity P 0.72, Codd 2013's power at Codd 2021's effect 1.00: no red flag, no shrinkage. A study of
+  SD units, heterogeneity P 0.72, Codd 2013's power at Codd 2021's effect 1.00: no red flag, no shrinkage. Read as §4.1's A pair (D39.7), Codd 2021 is the anchor and Codd 2013 its independent replication at 1.03 times its effect, so the smaller-effect clause does not fire. A study of
   100k or more, genome-wide, replicated independently on the same allele: §4.1's A. The lead is inside Codd 2021's
   locus-28 credible set as Open Targets reads it (C2 below), so §4.1's tag clause does not apply (D38.5); Codd's own
   95 % set prints rs2293607 (PP 0.89) and Taub's sentinel rs12637184 (0.09), and rs10936599 appears in no sheet, which
