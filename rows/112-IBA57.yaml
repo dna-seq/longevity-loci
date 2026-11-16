@@ -7,13 +7,15 @@ locus_id: 112
 locus_name: IBA57
 verdict: kept
 verdict_reason: >-
-  Tier B on the marker's own evidence (D37.12; the seed gives none), at the lower edge of what B allows: the tier
+  Tier C on the marker's own evidence (D37.12; the seed gives none), until the paper's own P is located: the tier
   grades the association with GrimAge acceleration, a DNA methylation clock read against calendar age, not longevity,
   and this row is unscored (D32). Lin 2022 ran a GWAS of epigenetic clocks in 2,309 Taiwan Biobank participants, with a
   'prioritized subset analysis' to boost power, and names rs117530284 a new GrimAge locus: each A adds 1.59 years of
   GrimAge acceleration (1.07 to 2.11), adjusted for sex, BMI, smoking, drinking, exercise, education and ancestry; the
-  GWAS Catalog records it at P 2e-9, A at 0.024. That is under 5e-8, so §4.1 reads a genome-wide locus in one study
-  without independent replication: B. It is a small sample with a rare allele and a power-boosting method, so the
+  GWAS Catalog records it at P 2e-9, A at 0.024, but the abstract prints no P and the full text was not reached (OUP's
+  PDF answered 403, 2026-11-16). A prioritized subset tests fewer variants, so a printed 2e-9 would be genome-wide by
+  any count and give B (one study, unreplicated); resting on a database line alone, the anchor is not the article's
+  figure (D12), so the row is C until that figure is located (the lead, 2026-11-16). It is a small sample with a rare allele and a power-boosting method, so the
   effect carries a winner's curse, named; a 2025 Korean clock GWAS (1,962 people) found by the literature search does
   not name it in its abstract (its lines unread). A is all but absent in Europeans (0.009 %), so no European sample
   tests it: Deelen 2019, Timmers 2019, Pilling 2017, Park 2025, Zenin 2019, Foote 2025 and FinnGen R11 were each looked
@@ -24,7 +26,7 @@ verdict_reason: >-
   Effector E3: locus-to-gene's top is IBA57 at 0.11, the variant in its 3′ UTR. Descriptive. Age of action unknown.
   The evidence is Taiwanese, as `ancestry_specific:eas`.
 axes:
-  tier: {value: B, cites: [pmid-34962275#q1, pmid-34962275#q2, pmid-34962275#q3, pmid-34962275#q4, db-gwascatalog-2026.10.29#q675, db-gwascatalog-2026.10.29#q676, db-gwascatalog-2026.10.29#q677, db-gwascatalog-2026.10.29#q678]}
+  tier: {value: C, cites: [pmid-34962275#q1, pmid-34962275#q2, pmid-34962275#q3, pmid-34962275#q4, db-gwascatalog-2026.10.29#q675, db-gwascatalog-2026.10.29#q676, db-gwascatalog-2026.10.29#q677, db-gwascatalog-2026.10.29#q678]}
   mechanism: {value: ageing_markers, cites: [pmid-34962275#q3, pmid-34962275#q4, db-gwascatalog-2026.10.29#q676]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
