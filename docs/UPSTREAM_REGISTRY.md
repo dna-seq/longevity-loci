@@ -12,7 +12,7 @@ file): `[seat.liaison.watch.registry]` says each new tag.
 
 ## Read mark
 
-**`v0.31.1`** (2026-11-13, seen 2026-11-14), read whole (below); `v0.31.0` and `v0.30.1` the same day. Before it, **`v0.30.0`** (2026-11-12): the release the module seat first ran against, its first rehearsal on the polygon
+**`v0.32.0`** (tagged 2026-11-15, `e2e172b`; seen 2026-11-16), read whole (below); `v0.31.1` (2026-11-13), `v0.31.0` and `v0.30.1` before it. Before it, **`v0.30.0`** (2026-11-12): the release the module seat first ran against, its first rehearsal on the polygon
 (`test-longevity-loci/longevitymap@2.0.0`, our 0fa5e77; strict validate and compile green). Tags before it are
 fast-forwarded past, read only by their changelog headings as listed below; nothing here used them.
 
@@ -39,6 +39,17 @@ re-rehearsed once per curation batch.
 
 ## Inbound verdicts
 
+- **`v0.32.0`** (2026-11-15). Additive: responses gain fields, one new client call (`upgrade_status`); its server
+  floors the enricher at 0.8.7, as ours does. Neither instance serves it yet (2026-11-16: the polygon 0.30.0 on
+  format 0.8.4, production 0.31.0 on 0.8.6; both compatible with our 0.8.6 client). *For the lead and the module
+  seat:* `curated` (S33) now counts only a highlighted review with verdict `verified` from a reviewer holding no
+  role on the namespace, so no seat of ours can make our module curated; that waits on an outside reviewer.
+  *For the lead and the curator:* `/variants?key=` folds the spellings a reader pastes (`RS429358`,
+  `19-44908684-T-C`) and says `matched`, so the plugin's caveat on `registry_claims` (an empty answer is about the
+  spelling asked) lifts once the instances serve 0.32. *For the module seat:* a lane lookup says the lane's
+  `terms` and why no snapshot is published (`terms: null` is "none stated", never unrestricted), and `GET
+  /caches` says which live legs (gnomAD, AlphaGenome) the operator opened and what provisioning a lane costs.
+  The online-check ceiling now counts a study's LD proxy. Nothing to change here.
 - **`v0.31.1`** (2026-11-13). The operator's `registry upgrade` re-derives and publishes in one pass (a held
   result kept for `--accept-drift`), and Ctrl-C names what still runs. Client surface unchanged; nothing we call.
 - **`v0.31.0`** (2026-11-13). Additive: client surface unchanged, three new calls (`variant_claims`,
