@@ -1000,3 +1000,37 @@ rejected; 1 sets a rule's letter aside on the module's headline row, so it goes 
    other. Deelen's same-scale lines contradict the read with power 1.00 (heterogeneity P 0.011, 0.025), as at 113 and
    119. Its discovery, read against the reference (D31.10), is P 0.001, sub-genome-wide, so D26.8 reaches it too.
    Rejected: C by D22.3, which would spare any cross-ancestry null whose looks scatter around zero.
+
+### D34, continued — batch thirteen's adversarial read (rows 96, 121 to 126, 131, 136; 2026-11-16)
+
+Every tier holds. The calls below settle what the read found.
+
+10. **D34.1's reason corrected, its rule kept.** Hsieh printed Liu's own SNP (rs2075650, OR 0.99, P 0.97): against
+    Liu, heterogeneity P about 0.13, Hsieh's power at Liu's size about 0.5. So the two East Asian samples are *not*
+    shown to disagree; Hsieh's null fails Deelen's European size, not the East Asian one, and is unpowered against
+    the replication in its own ancestry. The rule stands on that reading: a powered failure against one ancestry's
+    effect is outweighed by a genome-wide replication in the failing sample's ancestry when the failing sample is
+    not shown to contradict that replication. **Where both report the same SNP, the row gives their heterogeneity P
+    and the failing sample's power at the replication's size**; were it powered and heterogeneous there, the flag
+    would stand. Liu's genome-wide P is its meta-analysis's (each set alone 6.8e-7, 7.3e-5), which counts; say so.
+    The r² that carries it clears 0.8 narrowly (CHB 0.807, CHS 0.83; pooled EAS 0.68): cite both panels and the
+    margin.
+11. **A pair's figures derive from each version against ε3, solved jointly, never from one SNP's per-allele effect
+    whose reference group mixes versions.** rs7412's T is compared against C carriers, ε4 included, so it overstates
+    ε2 against ε3. 96 rederives: ε2 against ε3 about 1.19 (90th) and 1.34 (99th), about +0.44 years a copy; ε2/ε2
+    about 1.41, ε2/ε4 about 0.72 (D34.3's 0.77 and 0.92 were on the old derivation; the states stand, ε2/ε4 more
+    plainly risk). Every derived pair figure says so, ε2/ε3's included, and the frequencies say they are gnomAD NFE
+    under Hardy–Weinberg. The D34.3 check uses the same derivation as the text.
+12. **One token per relationship.** Identical `ld_proxy_of:rs429358` tokens collapse into one, the positions and r²
+    in its comment, as rows 6, 57 and 80 do (D34.4 in form).
+13. **A D row's later-look cells are filled as any row's**: D28.10 bars only the discovery from giving `+`.
+    122's lifespan is `−` (FinnGen R11, T fewer deaths, one-sided 0.0045 against TTC; D34.5, a release line fills a
+    cell); 131's healthspan is `−` (Foote factor 2, C frailer, P 0.017; D31.4, as 119). 131's D rests on D34.9's
+    reason (the looks split, Foote nominally against), never on row 18's figures as a threshold.
+14. **A selected rare hit's reference read is still inflated**: Kolbe chose its hits from about 98,000 rare variants,
+    so a reference OR carries winner's curse uncorrected; each Kolbe row says so. 121 carries the derived exome read
+    (OR about 1.12, P 0.43), naming the printed 1.18 as genomes-based (likely, a v4.0/v4.1 gap not ruled out), and
+    D34.8's "its other rows match the exomes" reads "107, 120, 124 and 125". 107 and 121 name the men's share (24 of
+    35), as D34.7 asks.
+15. **136:** D27.2's mean factor divides; done so, Timmers flags under both calibrations and still adds nothing, being
+    not independent of the validation; say that, not D25.3. The validation study carries `age_of: parent` (D25.8).
