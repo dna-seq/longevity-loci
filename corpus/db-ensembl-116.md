@@ -3714,3 +3714,20 @@ Ensembl pairwise LD, 1000 Genomes phase 3. Row 23: rs10936599 with Codd 2021's T
 0.85 (q1044); with rs7705526 (153) 0.459, D′ 1.00 (q1045), all CEU; rs2853677 with rs7705526 0.214, D′ 0.55
 (q1046). Row 159: rs9275160 with row 103's rs1049053, r² 0.201 in CEU (q1047), 0.176 in GBR (q1048), 0.146 in EUR
 (q1049), D′ 0.98 to 1.00. For rows 23, 30 and 159.
+
+## Reading 2026-11-16, record
+
+> [q1050] mappings[0] ancestral_allele G seq_region_name 5 assembly_name GRCh38 start 1287225 end 1287225 allele_string A/G location 5:1287225-1287225 strand 1 coord_system chromosome
+
+> [q1051] populations[12] allele_count 23694 population gnomADg:nfe allele A frequency 0.3487
+
+> [q1052] populations[13] population gnomADg:nfe allele G frequency 0.6513 allele_count 44262
+
+> [q1053] [0].transcript_consequences[0] canonical 1 transcript_id ENST00000310581 gene_symbol_source HGNC gene_id ENSG00000164362 gene_symbol TERT variant_allele G hgnc_id HGNC:11730 biotype protein_coding impact MODIFIER mane_select NM_198253.3 strand -1
+
+> [q1054] [0].transcript_consequences[0].consequence_terms[0] intron_variant
+
+rs2736099 (row 132): GRCh38 5:1,287,225 A/G, G ancestral (q1050); A at 34.9 % in gnomAD's non-Finnish European genomes,
+G 65.1 % (q1051, q1052); intronic in TERT's MANE transcript, NM_198253.3 (q1053, q1054). With row 30's rs2736100
+r² 0.49, D′ 0.93 in CEU (q1043): Lu's IEAA-raising A (0.36) travels with rs2736100's C (McCartney: rs2736100 A lowers
+IEAA), the coupling read from the two papers' signs, not phased. For row 132.

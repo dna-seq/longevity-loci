@@ -1,0 +1,100 @@
+# The seed list's locus 132, TERT (5p15.33): a marker of biological ageing (D32, D36.3), curated on D37.12 with 23
+# TERC as the pattern. Curated 2026-11-16. Lead rs2736099, the seed's rsID (Lu 2018's intrinsic epigenetic age
+# acceleration lead at TERT): intronic in TERT's MANE transcript, GRCh38 5:1,287,225 A/G, GRCh37 5:1,287,340, G
+# ancestral; A at 34.9 % in gnomAD's non-Finnish European genomes. A is the allele with faster intrinsic epigenetic
+# ageing. Row 30's rs2736100 (telomere length) is a partial tag, r² 0.49 in CEU; this row is the region's IEAA signal
+# (D38.12, the lead's (a), 2026-11-16).
+locus_id: 132
+locus_name: TERT
+verdict: kept
+verdict_reason: >-
+  Tier B on the marker's own evidence (D37.12; the seed gives none): the tier grades the association with intrinsic
+  epigenetic age acceleration (IEAA), a DNA methylation clock read against calendar age, not longevity, and this row
+  is unscored (D32). Lu 2018's IEAA GWAS (9,907 people) has rs2736099 as its 5p15.33 lead: A (the minor allele) at
+  0.36, +0.64 years per A in Europeans (SE 0.09), P 4.7e-12, all ancestries +0.63, P 1.3e-12, I² 0 %. Gibson 2019's
+  IEAA line has A +0.37, P 9e-10 (the GWAS Catalog's record, its paper and its overlap with Lu unread, named, not
+  counted). Fine-mapping places the region's IEAA signal here: Open Targets holds rs2736099 at PIP 0.999 in Lu's set,
+  0.997 in Gibson's and 0.68 in McCartney 2021's European IEAA set, while row 30's rs2736100 is in neither Lu's nor
+  McCartney's IEAA set. McCartney's own conditional lead at TERT is rs2736100 (A lower IEAA, P 3e-11), so the two
+  papers name different SNPs for one IEAA region; at r² 0.49 (D′ 0.93, CEU) Lu's IEAA-raising A travels with
+  rs2736100's C, McCartney's IEAA-raising allele, so the two leads mark one IEAA signal on one haplotype, as read from
+  the signs (not phased, and no conditional test read). No study of 100k or more: §4.1's B, genome-wide in one study.
+  Lifespan look-ups, unscored and read for A, two-sided at 0.05 (D38.6): Timmers 2019 A beta1 +0.0034 (SE 0.0042), P
+  0.41; Pilling 2017's parents P 0.34 to 0.61; Park 2025's own survival P 0.96 (men 0.30, women 0.17); Deelen 2019
+  90th P 0.25, 99th P 0.31; all flat. FinnGen R11's deaths have G with more deaths, β +0.0169 (SE 0.0079), P 0.032, so
+  A with fewer, a database line that fills a cell and lifts nothing (D29.1, D35.1). Zenin 2019's healthspan has G
+  with the later end, −0.0126 (SE 0.0052), P 0.015, so A the earlier. Foote 2025's deposits hold no line (untested).
+  The literature search (the rsID, 2026-11-16; Semantic Scholar answered 429, its part unchecked) finds the clock
+  GWASs and cancer studies, no test of lifespan. Every genotype neutral, each conclusion a tendency of the marker with
+  no colour (D32, D37.12); `direction: unknown`. Outcome cells read for A: exceptional survival 0 (Deelen flat);
+  lifespan + (FinnGen two-sided 0.032, A with fewer deaths; Timmers, Pilling and Park flat); healthspan − (Zenin
+  two-sided 0.015, A the earlier end). Mechanism: markers of biological ageing. Pleiotropy `mech:cancer`: A raises
+  basal cell carcinoma (Choquet, G 0.090 lower, P 1e-23) and clonal haematopoiesis with TET2 mutation (OR 1.43, P
+  3e-13), and uterine leiomyomata (Open Targets PIP 1.00), named; no `tradeoff`, the row naming no longevity-favoured
+  allele. Causal C1 (PIP 0.999 in Lu's IEAA set). Effector E2, TERT: locus-to-gene 0.73 on McCartney's IEAA set, the
+  variant intronic in TERT. Descriptive. Age of action unknown. The evidence is European, Lu's non-Europeans agreeing.
+axes:
+  tier: {value: B, cites: [pmid-29374233#q1, pmid-29374233#q2, pmid-29374233#q3, pmid-29374233#q9, pmid-29374233#q10, pmid-29374233#q11, db-gwascatalog-2026.10.29#q698, db-gwascatalog-2026.10.29#q700, db-gwascatalog-2026.10.29#q701, db-gwascatalog-2026.10.29#q702, db-gwascatalog-2026.10.29#q660, db-gwascatalog-2026.10.29#q662, db-opentargets-26.09#q1330, db-opentargets-26.09#q1331, db-opentargets-26.09#q1332, db-opentargets-26.09#q1333, db-opentargets-26.09#q1334, db-opentargets-26.09#q1335, db-ensembl-116#q1043]}
+  mechanism: {value: ageing_markers, cites: [pmid-29374233#q1, pmid-29374233#q2, db-gwascatalog-2026.10.29#q699]}
+  pleiotropy: {values: ["mech:cancer"], cites: [db-gwascatalog-2026.10.29#q703, db-gwascatalog-2026.10.29#q704, db-gwascatalog-2026.10.29#q705, db-gwascatalog-2026.10.29#q706, db-gwascatalog-2026.10.29#q707, db-gwascatalog-2026.10.29#q708, db-opentargets-26.09#q1336, db-opentargets-26.09#q1337]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "−", lifespan: "+", exceptional_survival: "0",
+            cites: [pmid-30729179#q175, db-finngen-r11#q115, pmid-30642433#q412, pmid-29227965#q224, pmid-29227965#q225, pmid-29227965#q226, pmid-29227965#q227, pmid-40021682#q173, pmid-40021682#q174, pmid-40021682#q175, pmid-31413261#q336, pmid-31413261#q337]}
+  actionability: {label: descriptive, cites: [pmid-29374233#q10]}
+  context: {values: [], cites: []}
+flags:
+  - {token: "causal:C1", cites: [db-opentargets-26.09#q1329, db-opentargets-26.09#q1330, db-opentargets-26.09#q1331]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q1338, db-opentargets-26.09#q1339, db-opentargets-26.09#q1340, db-ensembl-116#q1053, db-ensembl-116#q1054]}
+variants:
+  - rsid: rs2736099
+    gene: TERT
+    phenotype: TERT intron, intrinsic epigenetic age acceleration
+    trait_efo_id: EFO_0022597
+    effect_allele: A
+    effect_size: 0.64
+    effect_measure: beta
+    stat_significance: significant
+    direction: unknown
+    genotypes:
+      - genotype: A/A
+        state: neutral
+        conclusion: >-
+          You carry two copies of the A version of this DNA position (about 12 in 100 people of European ancestry do).
+          Studies link each copy of A with an epigenetic clock reading about half a year higher than expected for your
+          age, compared with people without A. That is a tendency in a marker whose reading only means something against
+          your calendar age, which this report does not have, so it carries no score.
+      - genotype: A/G
+        state: neutral
+        conclusion: >-
+          You carry one copy each of the two versions of this DNA position, the most common combination (about 45 in
+          100 people of European ancestry). It is the reference the other combinations are compared with. The position
+          lies inside TERT, the gene for the enzyme that rebuilds telomeres. Epigenetic clocks estimate age from chemical
+          marks on DNA; a clock's reading only means something against your calendar age, which this report does not
+          have, so this result carries no score.
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the G version of this DNA position (about 42 in 100 people of European ancestry do).
+          Studies link G with an epigenetic clock reading slightly lower than expected for your age, compared with
+          people carrying A. That is a tendency in a marker whose reading only means something against your calendar
+          age, which this report does not have, so it carries no score.
+studies:
+  - rsid: rs2736099
+    note: pmid-29374233
+    quote: q9
+    phenotype_class: BIOMARKER
+    study_design: meta_analysis
+    population: European (Lu 2018's European data sets; 9,907 people of all ancestries in the study)
+    ancestry: [EUR]
+    sample_size: 9907
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "4.7 × 10−12"
+    p_value_num: 4.7e-12
+    effect_size: 0.64
+    effect_measure: beta
+    effect_unit: years of intrinsic epigenetic age acceleration per A allele
+    effect_allele: A
+    direction: unknown
+    statistical_test: "Lu 2018's IEAA GWAS (q1, q2), Table 1 (columns q3): the 5p15.33 lead rs2736099 near TERT (q9), A/G, A at 0.36, Europeans β +0.64 (SE 0.09), P 4.7e-12 (q10); combined +0.63, P 1.3e-12, I² 0 % (q11); a marker study (D32, D37.12)"
+    curator: claude-opus-5-5

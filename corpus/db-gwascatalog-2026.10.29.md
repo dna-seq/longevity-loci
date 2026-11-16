@@ -2530,3 +2530,33 @@ FHS, InCHIANTI, LBC21, LBC36 and TwinsUK (q691 to q696), five of Lu 2018's eight
 > [q697] _embedded.associations[2].snp_effect_allele[0] rs9275160-A
 
 rs9275160 (row 159): the complement C4 association's allele is A (q697); with q610's 'beta 0.26096 unit decrease', A lowers C4 levels (the Catalog stores |β| with a direction word), so the row's earlier 'A raises C4' was reversed (D38.9). For row 159.
+
+## Reading 2026-11-16, record
+
+> [q698] _embedded.associations[9] association_id 27364879 risk_frequency 0.36 pvalue_description pvalue_mantissa 1 pvalue_exponent -12 multi_snp_haplotype false snp_interaction false range [0.46-0.81] beta 0.631 unit increase p_value 1e-12 accession_id GCST005287 pubmed_id 29374233 first_author Lu AT ci_lower 0.46 ci_upper 0.81
+
+> [q699] _embedded.associations[9].efo_traits[0] efo_id EFO_0022597 efo_trait aging
+
+> [q700] _embedded.associations[9].snp_effect_allele[0] rs2736099-A
+
+> [q701] _embedded.associations[8] association_id 55275996 risk_frequency 0.3668 pvalue_description pvalue_mantissa 9 pvalue_exponent -10 multi_snp_haplotype false snp_interaction false range [0.25-0.49] beta 0.3726 unit increase p_value 9e-10 accession_id GCST009604 pubmed_id 31738745 first_author Gibson J ci_lower 0.25 ci_upper 0.49
+
+> [q702] _embedded.associations[8].snp_effect_allele[0] rs2736099-A
+
+> [q703] _embedded.associations[7] association_id 131085845 risk_frequency NR pvalue_description pvalue_mantissa 1 pvalue_exponent -23 multi_snp_haplotype false snp_interaction false range [0.073-0.108] beta 0.0902276 unit decrease p_value 1e-23 accession_id GCST90328132 pubmed_id 38182794 first_author Choquet H ci_lower 0.073 ci_upper 0.108
+
+> [q704] _embedded.associations[7].efo_traits[0] efo_id MONDO_0020804 efo_trait basal cell carcinoma
+
+> [q705] _embedded.associations[7].snp_effect_allele[0] rs2736099-G
+
+> [q706] _embedded.associations[6] association_id 214159544 risk_frequency NR pvalue_description pvalue_mantissa 3 pvalue_exponent -13 multi_snp_haplotype false snp_interaction false range [1.3-1.56] or_per_copy_num 1.43 or_value 1.43 beta - p_value 3.0000000000000003e-13 accession_id GCST90435343 pubmed_id 39948438 first_author Wen S ci_lower 1.3 ci_upper 1.56
+
+> [q707] _embedded.associations[6].reported_trait[0] Clonal hematopoiesis (TET2 mutation)
+
+> [q708] _embedded.associations[6].snp_effect_allele[0] rs2736099-A
+
+rs2736099 (row 132), ten associations. Lu 2018's IEAA (GCST005287), A +0.631, P 1e-12, A at 0.36, trait EFO_0022597
+(q698 to q700); Gibson 2019's IEAA (GCST009604, PMID 31738745, paper unread) A +0.37, P 9e-10 (q701, q702). Basal
+cell carcinoma (Choquet 2024, GCST90328132): G 0.090 decrease, P 1e-23, so A raises it (q703 to q705); clonal
+haematopoiesis with TET2 mutation (Wen, GCST90435343): A, OR 1.43, P 3e-13 (q706 to q708). Blood cell fractions,
+neutrophil-to-lymphocyte ratio and ICAM2 named, not read. For row 132.

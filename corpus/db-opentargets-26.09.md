@@ -4715,3 +4715,35 @@ allele, with lower TFAM expression, named. Locus-to-gene on Gupta's set (q1316):
 0.60, A +0.13 (q1323): C1; the other three F2RL3 (ENSG00000127533) expression and exon sets in lymphoblastoid cells,
 e.g. MAGE at PIP 1.00, A +0.68 (q1324, q1325): A with higher F2RL3 expression, named. Locus-to-gene on the GrimAge set
 (q1326): F2RL3 0.78 (q1327, q1328): E2. For row 128.
+
+## Reading 2026-11-16, record
+
+> [q1329] data.variant.credibleSets count 31
+
+> [q1330] data.variant.credibleSets.rows[9].study id GCST005287 traitFromSource Intrinsic epigenetic age acceleration studyType gwas
+
+> [q1331] data.variant.credibleSets.rows[9].locus.rows[0] posteriorProbability 0.9994955676313803 beta -0.631 pValueMantissa 1 pValueExponent -12
+
+> [q1332] data.variant.credibleSets.rows[27].study id GCST90014290 traitFromSource Intrinsic epigenetic age acceleration studyType gwas
+
+> [q1333] data.variant.credibleSets.rows[27].locus.rows[0] posteriorProbability 0.6832322404798598 beta -0.03429020847922484 pValueMantissa null pValueExponent null
+
+> [q1334] data.variant.credibleSets.rows[6].study id GCST009604 traitFromSource Intrinsic epigenetic age acceleration studyType gwas
+
+> [q1335] data.variant.credibleSets.rows[6].locus.rows[0] posteriorProbability 0.9970387765275875 beta -0.3726 pValueMantissa 9 pValueExponent -10
+
+> [q1336] data.variant.credibleSets.rows[0].study id GCST90239856 traitFromSource Uterine leiomyomata studyType gwas
+
+> [q1337] data.variant.credibleSets.rows[0].locus.rows[0] posteriorProbability 0.9999998292527796 beta -0.016233256002194083 pValueMantissa null pValueExponent null
+
+> [q1338] data.credibleSet.study id GCST90014290 traitFromSource Intrinsic epigenetic age acceleration
+
+> [q1339] data.credibleSet.l2GPredictions.rows[0] score 0.7274357080459595
+
+> [q1340] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol TERT
+
+5_1287225_A_G (rs2736099, row 132; beta per G): 31 credible sets (q1329); IEAA in Lu 2018's (q1330) at PIP 0.999, G
+−0.63 (q1331); in McCartney 2021's (q1332) at 0.68 (q1333); in Gibson 2019's (q1334) at 0.997 (q1335): C1. rs2736100
+(row 30) is in no McCartney or Lu IEAA set (its cached sets, row 30), only Lin's Taiwanese one at 0.76. Uterine
+leiomyomata at PIP 1.00, G −0.016, so A raises it (q1336, q1337), named. Locus-to-gene on McCartney's IEAA set
+(q1338): TERT 0.73 (q1339, q1340): E2. For row 132.
