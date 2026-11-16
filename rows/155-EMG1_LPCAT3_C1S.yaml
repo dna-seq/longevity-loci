@@ -1,0 +1,133 @@
+# The seed list's locus 155, EMG1/LPCAT3/C1S (12p13.31). Curated 2026-11-16. Lead rs79159347, the seed's only rsID (Hoque
+# 2026's Super Seniors GWAS): intronic in C1S, GRCh38 12:7,019,858 G/A, GRCh37 12:7,127,162, A at 6.55 % in gnomAD's
+# non-Finnish European genomes and 0.08 % in East Asians, A the discovery's healthy-ageing allele. Open Targets 26.09
+# holds it in 17 sets (LPCAT3 brain QTLs, phosphatidylcholine and apolipoprotein A levels, plateletcrit), none
+# lifespan-class; the GWAS Catalog (2026-10-29) holds no association.
+locus_id: 155
+locus_name: EMG1/LPCAT3/C1S
+verdict: kept
+verdict_reason: >-
+  Tier C, the seed's: a sub-genome-wide healthspan discovery in one sample (R-TIER-4), with a co-occurring lifespan
+  study (D16) and no tested contradiction that sets a flag. Hoque 2026 compared 597 Super Seniors (85 or over, free of
+  cancer, cardiovascular disease, diabetes, dementia and major pulmonary disease) with 420 mid-life population
+  controls in British Columbia: A, the effect allele, OR 3.61 per A, P 2.24e-7, the paper's strongest locus and
+  suggestive only (no variant reached genome-wide significance). An OR of 3.6 for a 6.5 % allele in about 1,000 people
+  carries a large winner's curse, named. Timmers 2019's parental lifespan, outside that sample, has A with longer-lived
+  parents, beta1 +0.0195 (SE 0.0080), P 0.015, one-sided 0.007: the co-occurring lifespan study D16 asks, the same
+  allele and direction; Pilling 2017's UK Biobank parents agree (both parents' attained age P 0.013, both in the top
+  10 % P 0.025; mothers 0.091, fathers 0.13), inside Timmers' pool. Deelen 2019 goes against: the 99th percentile A
+  −0.150 (SE 0.071), P 0.034, one-sided 0.017 against, the 90th −0.061, P 0.14. Carried from the Super Seniors' scale
+  by the paper's own APOE line (rs429358 OR 0.64 there, 0.52 in Deelen's 99th; a factor of 1.47), the discovery
+  expects A +1.88 in Deelen's 99th: power 1.00, heterogeneity P 4e-8 (derived), the gap the winner's curse would make.
+  That is one calibration, APOE's; no mean factor exists on this scale, so whether it is a red flag is unknown and the
+  row carries no `replication_failed` (D26.3); were it a flag, Timmers' independent pass would keep the row off D
+  (D25.1). Park 2025's own survival flat (A P 0.61); FinnGen R11's deaths flat (P 0.82), a database line; Zenin 2019
+  flat (P 0.90); Foote 2025's general factor flat (P 0.52), its factor 5 (poorer cognition) with A on the frailer side
+  at P 0.014, factors 1 to 4 and 6 flat. The literature search (the rsID, 2026-11-16; Semantic Scholar 429, unchecked) finds Hoque alone. Genotypes: G/G
+  the reference, A carriers protective, as weak early evidence. Exceptional survival − (Deelen's 99th, one-sided 0.017
+  against, and nothing in that class for; D28.3); lifespan + (Timmers, P 0.015; Pilling agrees); healthspan 0, mixed
+  (the discovery for, Foote's factor 5 against; D26.6). Mechanism ageing in general (D25.7): the authors point to the
+  locus's links with red-cell fatty acids, lipid homeostasis and insulin resistance, and A is a GTEx eQTL of LPCAT3
+  (higher in skeletal muscle, lower in the cerebellum), with no colocalisation (PP.H4 at most 0.14); named, no token.
+  Causal C4 and effector E4: no lifespan-class credible set. Descriptive. Age of action unknown. The evidence is
+  European.
+axes:
+  tier: {value: C, cites: [pmid-41964836#q3, pmid-41964836#q4, pmid-41964836#q5, pmid-41964836#q2, pmid-41964836#q6, pmid-41964836#q7, pmid-30642433#q403, pmid-29227965#q192, pmid-29227965#q193, pmid-29227965#q194, pmid-29227965#q195, pmid-31413261#q319, pmid-31413261#q320, pmid-31413261#q292, pmid-40021682#q141, db-finngen-r11#q104, pmid-30729179#q166, pmid-40759756#q126, pmid-40759756#q131, db-ensembl-116#q936, db-gwascatalog-2026.10.29#q598]}
+  mechanism: {value: general_ageing, cites: [pmid-41964836#q8, db-opentargets-26.09#q1252, db-opentargets-26.09#q1253, db-opentargets-26.09#q1254, db-opentargets-26.09#q1255, db-opentargets-26.09#q1256]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "−",
+            cites: [pmid-41964836#q3, pmid-40759756#q131, pmid-30642433#q403, pmid-29227965#q192, pmid-31413261#q320]}
+  actionability: {label: descriptive, cites: [pmid-41964836#q3]}
+  context: {values: [eur_only_evidence], cites: [pmid-41964836#q3, db-ensembl-116#q936]}
+flags:
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1252]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q1252]}
+variants:
+  - rsid: rs79159347
+    gene: ""
+    phenotype: C1S intron (EMG1/LPCAT3/C1S), healthy ageing
+    trait_efo_id: OBA_VT0005372
+    effect_allele: A
+    effect_size: 3.61
+    effect_measure: OR
+    stat_significance: suggestive
+    direction: protective
+    genotypes:
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position (about 87 in 100 people of European ancestry
+          do). It is the reference the other combinations are compared with. The position lies in a cluster of genes
+          on chromosome 12, inside C1S, near LPCAT3, which handles fats in cell membranes.
+      - genotype: A/G
+        state: protective
+        conclusion: >-
+          You carry one copy of a less common version of this DNA position (about 12 in 100 people of European ancestry
+          do). One Canadian study found it more often among people who reached 85 free of major diseases, and a large
+          study of parents' lifespans found it with slightly longer-lived parents; a European study of the very oldest
+          found it slightly less often. This is weak, early evidence: a possible tendency, not destiny.
+      - genotype: A/A
+        state: protective
+        conclusion: >-
+          You carry two copies of a less common version of this DNA position (fewer than 1 in 100 people of European
+          ancestry do). The studies counted copies one at a time, so nothing separate is known about two; the single-copy
+          evidence is weak and mixed.
+studies:
+  - rsid: rs79159347
+    note: pmid-41964836
+    quote: q3
+    phenotype_class: HEALTHSPAN
+    study_design: age_threshold_case_control
+    population: Super Seniors (British Columbia; 85 or over and free of five major chronic diseases) against mid-life population controls
+    ancestry: [EUR]
+    n_cases: 597
+    sample_size: 1017
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: suggestive
+    p_value: "2.24 × 10⁻⁷"
+    p_value_num: 2.24e-07
+    effect_size: 3.61
+    effect_measure: OR
+    effect_unit: odds of being a Super Senior per A allele
+    effect_allele: A
+    direction: protective
+    statistical_test: "Hoque 2026's additive logistic GWAS with sex and ten principal components (Table S1, q3, columns q4; Table 3, q5); no genome-wide variant (q2); the paper's APOE line rs429358 OR 0.64, P 0.0015 (q7, q6) carries A to Deelen's 99th at a factor 1.47 (q292): expected +1.88 against −0.150, power 1.00, heterogeneity P 4e-8 (derived), APOE only, no flag (D26.3)"
+    curator: claude-opus-5-5
+  - rsid: rs79159347
+    note: pmid-30642433
+    quote: q403
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 624049
+    sample_unit: lives
+    stat_significance: nominal
+    p_value: "0.014695298"
+    p_value_num: 0.014695298
+    effect_size: 0.0195
+    effect_measure: beta
+    effect_unit: log hazard protection per A allele in self (beta1; positive = longer life)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Timmers 2019's summary statistics (GCST009890, q403): A beta1 +0.0195, SE 0.0080, one-sided 0.007; the co-occurring lifespan study (D16); Pilling's both parents agree, P 0.013 (q192)"
+    curator: claude-opus-5-5
+  - rsid: rs79159347
+    note: pmid-31413261
+    quote: q320
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p99
+    population: European (Deelen 2019's longevity meta-analysis; no UK Biobank data)
+    ancestry: [EUR]
+    stat_significance: nominal
+    p_value: "0.03375"
+    p_value_num: 0.03375
+    effect_size: -0.1504
+    effect_measure: beta
+    effect_unit: log odds of survival to the 99th percentile per A allele
+    effect_allele: A
+    direction: risk
+    statistical_test: "Deelen 2019's summary statistics (GCST008599) at GRCh37 12:7,127,162, A at 0.06, SE 0.0709 (q320), one-sided 0.017 against; 90th −0.0606, P 0.14 (q319)"
+    curator: claude-opus-5-5

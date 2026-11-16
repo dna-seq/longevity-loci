@@ -3391,3 +3391,13 @@ rs75737809 (row 152): GRCh38 17:56,544,129 T/A (q928); A at 3.23 % in gnomAD's E
 rs7754015 (row 154): GRCh38 6:126,884,923, multi-allelic T/C/G (q933); G at 0.48 in gnomAD's non-Finnish European genomes
 (q934); the record lists no 1000 Genomes population for it, and Ensembl's LD service returns no pair for it in CEU even
 at r² 0.3 (2026-11-16), so no 1000 Genomes proxy can stand in where a deposit lacks it. For row 154.
+
+## Reading 2026-11-16, record
+
+> [q935] mappings[0] strand 1 location 12:7019858-7019858 ancestral_allele G assembly_name GRCh38 coord_system chromosome start 7019858 end 7019858 allele_string G/A seq_region_name 12
+
+> [q936] populations[10] population gnomADg:nfe frequency 0.0655 allele A allele_count 4451
+
+> [q937] populations[3] frequency 0.0007722 population gnomADg:eas allele_count 4 allele A
+
+rs79159347 (row 155): GRCh38 12:7,019,858 G/A (q935); A at 6.55 % in gnomAD's non-Finnish European genomes (q936), 0.08 % in East Asian (q937). For row 155.

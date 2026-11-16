@@ -4484,3 +4484,19 @@ q1231), the variant at PIP 0.024 (q1232), membership only; no lifespan-class set
 6_126884923_T_G (rs7754015's G; row 154): 74 credible sets, read whole: lipoprotein and LDL-particle traits, blood pressure,
 heel bone density, a lymphocyte fraction, facial traits; none a lifespan-class study (q1249). The variant is a minor member
 (PIP about 0.002, no signed β; e.g. clinical LDL, q1250, q1251). The reversed id has no record. For row 154.
+
+## Reading 2026-11-16, record
+
+> [q1252] data.variant.credibleSets count 17
+
+> [q1253] data.variant.credibleSets.rows[6].study id gtex-v10_ge_brain_cerebellar_hemisphere_ensg00000111684 traitFromSource ENSG00000111684 studyType eqtl
+
+> [q1254] data.variant.credibleSets.rows[6].locus.rows[0] posteriorProbability 0.1915245290040343 beta -0.785203 pValueMantissa 2.7139999866485596 pValueExponent -14
+
+> [q1255] data.variant.credibleSets.rows[15].study id GCST90830224 traitFromSource Phosphatidylcholines (18:2/20:4) (Model 1) studyType gwas
+
+> [q1256] data.variant.credibleSets.rows[15].locus.rows[0] posteriorProbability 0.136376404081247 beta 0.06647385285274036 pValueMantissa 4.984129428863525 pValueExponent -9
+
+12_7019858_G_A (rs79159347's A; row 155): 17 credible sets, read whole (q1252): GTEx and single-cell QTLs (LPCAT3 in the
+cerebellum, A lowering expression, PIP 0.19, q1253, q1254), phosphatidylcholine (18:2/20:4) levels (A higher, PIP 0.14,
+q1255, q1256), apolipoprotein A, plateletcrit, red-cell fatty acids; none a lifespan-class study. For row 155.
