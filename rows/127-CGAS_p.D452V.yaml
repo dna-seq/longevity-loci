@@ -16,27 +16,30 @@ verdict_reason: >-
   variants in seven genes. rs200818241 is in two of the sibships. No association statistic is printed for it. The one
   look-up is the German long-lived cohort (1,265 aged 94 or over against 4,195 younger controls): A at a MAF of 3.95e-4
   against 1.19e-4, that is about one copy in 2,530 alleles against one in 8,390 (derived), which the text reads as more
-  frequent in the long-lived; at one copy each no test could be powered (Fisher's exact about 0.4, derived), and that
-  cohort fed the selection step itself. The German long-lived are the Kiel cohort behind Kolbe 2025's rows (D34.7);
-  against gnomAD's exomes (0.031 %) one copy in 2,530 is about what is expected (0.8). The controls' mean age reads
-  50.5 in the methods and 68 in the table's legend; named. In human and mouse cells the variant lowers cGAS protein
+  frequent in the long-lived (Fisher's exact about 0.4, derived); and that comparison was selected, since the authors
+  dropped every variant richer in the controls than in the long-lived, so a long-lived excess was guaranteed by the
+  filter and the comparison tests nothing. The German long-lived are the Kiel cohort behind Kolbe 2025's rows (D34.7);
+  against gnomAD's exomes (0.031 %) one copy in 2,530 is about what is expected (0.8). The paper contradicts itself on
+  the German cohort: the methods give 602 centenarians and controls of mean age 50.5, Table 3's legend 643
+  centenarians and controls of mean age 68; and Table 3's MAF is over all 1,265 long-lived while the text speaks of
+  centenarians (were the one copy in a centenarian, their MAF would be about 8.3e-4, derived); named. In human and mouse cells the variant lowers cGAS protein
   and the cGAS-STING pathway's activation, dampening inflammation and delaying senescence, a mechanism, not a test of
   survival. A is too rare for any deposit: Deelen 2019, Timmers 2019, Park 2025 (all three files), Pilling 2017, Zenin
   2019, Foote 2025 and FinnGen R11 were each looked up (2026-11-16, GRCh37 6:74,135,164) and hold no line: untested.
-  §4.1's C for a preprint-only finding is the alternative; the finding here is a carrier count and a cell assay, not an
-  association, so the seed's D is kept, put to the lead. The literature search (the rsID, 2026-11-16) finds Putter
-  alone. Every genotype neutral (D25.2). Exceptional survival untested (no printed test; one copy against one);
-  lifespan untested; healthspan untested. Mechanism immune and inflammation: cGAS is the cytosolic DNA sensor of the
-  cGAS-STING innate immune pathway, and the variant reduces its activation in cells. Causal C4 (no fine-mapping);
+  §4.1's preprint clause caps a finding and never lifts one, so the seed's D is kept (D38.11). The literature search (the rsID, 2026-11-16) finds Putter
+  alone. Every genotype neutral (D25.2). Exceptional survival untested: the one German comparison was selected by the authors' filter (D38.11);
+  lifespan untested; healthspan untested. Mechanism general ageing (D25.7, D38.11; as 120, 124, 126): no lifespan effect is shown to run through a
+  pathway; cGAS is the cytosolic DNA sensor of the cGAS-STING innate immune pathway, and the variant reduces its
+  activation in cells, a cell assay, named. Causal C4 (no fine-mapping);
   effector E1 CGAS, a coding change on the MANE transcript (§4.2). Descriptive. Age of action unknown. The evidence is
   Dutch and German.
 axes:
-  tier: {value: D, cites: [pmid-41427385#q1, pmid-41427385#q5, pmid-41427385#q6, pmid-41427385#q2, pmid-41427385#q4, pmid-41427385#q7, pmid-41427385#q8, db-ensembl-116#q976, db-ensembl-116#q977, db-ensembl-116#q978, db-gwascatalog-2026.10.29#q606]}
-  mechanism: {value: immune_inflammation, cites: [pmid-41427385#q3]}
+  tier: {value: D, cites: [pmid-41427385#q1, pmid-41427385#q5, pmid-41427385#q6, pmid-41427385#q2, pmid-41427385#q4, pmid-41427385#q7, pmid-41427385#q8, pmid-41427385#q9, pmid-41427385#q10, pmid-41427385#q11, db-ensembl-116#q976, db-ensembl-116#q977, db-ensembl-116#q978, db-gwascatalog-2026.10.29#q606]}
+  mechanism: {value: general_ageing, cites: [pmid-41427385#q3]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: untested, lifespan: untested, exceptional_survival: untested,
-            cites: [pmid-41427385#q4, pmid-41427385#q7]}
+            cites: [pmid-41427385#q4, pmid-41427385#q7, pmid-41427385#q9]}
   actionability: {label: descriptive, cites: [pmid-41427385#q3]}
   context: {values: [eur_only_evidence], cites: [pmid-41427385#q1, pmid-41427385#q7]}
 flags:
@@ -76,7 +79,7 @@ studies:
     quote: q4
     phenotype_class: EXTREME_SURVIVAL_CC
     study_design: centenarian_case_control
-    population: German long-lived individuals (aged 94 or over, 602 centenarians) against younger German controls (Putter 2025's look-up)
+    population: German long-lived individuals (aged 94 or over; 602 centenarians in the methods, 643 in Table 3's legend) against younger German controls (Putter 2025's look-up)
     ancestry: [EUR]
     n_cases: 1265
     sample_size: 5460
@@ -85,5 +88,5 @@ studies:
     stat_significance: not_significant
     effect_allele: A
     direction: protective
-    statistical_test: "Table 3 (q4): A MAF 3.95e-4 in the long-lived against 1.19e-4 in the controls, about one copy against one (1,265 and 4,195, q7; derived), no test printed, Fisher about 0.4 (derived); the text reads it as more frequent in the long-lived (q8); the cohort fed the variant selection (q6); found in two Leiden sibships under a LOD-3 linkage peak (q1, q2, q5), a FAMILIAL design, annotation only"
+    statistical_test: "Table 3 (q4): A MAF 3.95e-4 in the long-lived against 1.19e-4 in the controls, about one copy against one (1,265 and 4,195, q7; derived), no test printed, Fisher about 0.4 (derived); the text reads it as more frequent in the long-lived (q8); the comparison was selected by the authors' filter, variants richer in the controls dropped (q9), so it tests nothing; Table 3's legend counts 643 centenarians and gives controls a mean age of 68 (q11), the methods 602 and 50.5 (q7); found in two Leiden sibships under a LOD-3 linkage peak (q1, q2, q5), a FAMILIAL design, annotation only"
     curator: claude-opus-5-5
