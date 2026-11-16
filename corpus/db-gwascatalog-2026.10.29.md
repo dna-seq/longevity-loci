@@ -2472,3 +2472,24 @@ copy-number line and three protein levels (MRPL58, GADD45GIP1, NGRN, T higher) n
 > [q678] _embedded.associations[0].snp_effect_allele[0] rs117530284-A
 
 rs117530284 (row 112): one association, Lin 2022 (GCST90104403), GrimAge acceleration, trait EFO_0000473 ("epigenetic status"): A +1.59 years (1.08 to 2.11), P 2e-9, A at 0.024 (q675 to q678). For row 112.
+
+## Reading 2026-11-16, record
+
+> [q679] _embedded.associations[1].efo_traits[0] efo_id EFO_0006312 efo_trait mitochondrial DNA measurement
+
+> [q680] _embedded.associations[1] association_id 130459693 risk_frequency 0.58199 pvalue_description pvalue_mantissa 8 pvalue_exponent -96 multi_snp_haplotype false snp_interaction false range [0.067-0.081] beta 0.07441 unit decrease p_value 8e-96 accession_id GCST90268497 pubmed_id 37587338 first_author Gupta R ci_lower 0.067 ci_upper 0.081
+
+> [q681] _embedded.associations[1].reported_trait[0] Mitochondrial DNA copy number (adjusted)
+
+> [q682] _embedded.associations[1].snp_effect_allele[0] rs12247015-A
+
+> [q683] _embedded.associations[2] association_id 94038205 risk_frequency 0.445288 pvalue_description pvalue_mantissa 1 pvalue_exponent -55 multi_snp_haplotype false snp_interaction false range [0.03-0.038] beta 0.0337 unit increase p_value 1e-55 accession_id GCST90026371 pubmed_id 35023831 first_author Chong M ci_lower 0.03 ci_upper 0.038
+
+> [q684] _embedded.associations[2].reported_trait[0] Mitochondrial DNA copy number
+
+> [q685] _embedded.associations[2].snp_effect_allele[0] rs12247015-G
+
+rs12247015 (row 114), three associations, all mitochondrial DNA copy number, trait EFO_0006312 (q679): Gupta 2023's
+adjusted GWAS (GCST90268497) A 0.074 decrease, P 8e-96, A at 0.582 (q680 to q682), the paper's Table 2 line; its
+raw line (P 5e-66) named; Chong 2022 (GCST90026371, PMID 35023831, UK Biobank) G 0.034 increase, P 1e-55 (q683 to
+q685): the same side, the same people. No other trait. For row 114.

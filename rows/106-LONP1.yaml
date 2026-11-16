@@ -6,38 +6,41 @@ locus_id: 106
 locus_name: LONP1
 verdict: kept
 verdict_reason: >-
-  Tier B on the marker's own evidence (D37.12; the seed gives none): the tier grades the association with
-  mitochondrial DNA copy number in blood, not longevity, and this row is unscored (D32). Gupta 2023 measured mtDNA
-  copy number from the whole genomes of 274,832 people of UK Biobank and All of Us and names LONP1 among its loci with
-  fine-mapped missense variation; the GWAS Catalog's record of its adjusted copy-number GWAS puts C at 0.905 with copy
-  number 0.137 SD lower per C, so T higher, P 1e-109, and Open Targets fine-maps the variant there at PIP 1.00. Chong
-  2022's UK Biobank copy-number GWAS (395,718) has T higher too, P 2e-95, PIP 1.00, but it is the same UK Biobank
-  people, so it is no independent replication. That is genome-wide in a study of 100k or more, unreplicated outside
-  its sample: §4.1's B. Lifespan look-ups, unscored and read for T: Timmers 2019 T beta1 −0.0101 (SE 0.0067), P 0.13;
+  Tier A on the marker's own evidence (D37.12; the seed gives none; B until 2026-11-16, when the paper's own table and
+  an independent replication were read, row 114's pattern): the tier grades the association with mitochondrial DNA
+  copy number in blood, not longevity, and this row is unscored (D32). Gupta 2023's adjusted copy-number GWAS is UK
+  Biobank's own, six ancestry groups (Supplementary Table 1; All of Us is not in it), and its Table 2 prints
+  rs11085147 with C, the reference allele, at 0.905, β −0.137 SD (SE 0.0062), P 1.1e-109, N 162,414, fine-mapped at
+  PIP 1 as a missense (Table 3): T higher; the legend names AF_Allele2 the reference allele's frequency, so the β is
+  per C, and the GWAS Catalog's record agrees. Chong 2022's UK Biobank copy-number GWAS (395,718) has T higher too, P
+  2e-95, PIP 1.00, but it is the same UK Biobank people. Koller 2024 replicates it outside UK Biobank: qPCR copy number
+  in GCKD, CHRIS and AugUR, 16,130 Europeans, Table S11 c −0.0529 (SE 0.0178), P 0.0029, C lower, T higher, equivalent
+  to the UK Biobank estimate by Koller's test. Genome-wide in a study of 100k or more, replicated independently on the
+  same allele: §4.1's A. Lifespan look-ups, unscored and read for T: Timmers 2019 T beta1 −0.0101 (SE 0.0067), P 0.13;
   Pilling 2017's parents, inside Timmers' pool, flat except the fathers (C with longer-lived fathers, P 0.0088, a
   stratum); Park 2025's own survival flat (P 0.87; men 0.84, women 0.96); FinnGen R11's deaths flat (P 0.94), a
   database line; Deelen 2019 T's way and flat (90th +0.055, P 0.11; 99th +0.087, P 0.12); Zenin 2019 flat (P 0.41);
   Foote 2025's factor 1 puts T on the less frail side, C +0.0080 (SE 0.0032), P 0.012, one-sided 0.006, with factors 2,
   3, 5 and 6 flat (P 0.31 to 0.93; the general factor and factor 4 hold no line). The literature search (the rsID,
-  2026-11-16) finds the copy-number GWASs alone. Every genotype neutral, each conclusion a tendency of the marker with
+  2026-11-16) finds the copy-number GWASs alone; Koller 2024 came from row 114's search. Every genotype neutral, each conclusion a tendency of the marker with
   no colour (D32, D37.12); `direction: unknown`. Outcome cells read for T: exceptional survival 0 (Deelen flat);
   lifespan 0 (Timmers, Park and FinnGen flat; Pilling's fathers a stratum); healthspan + (Foote's factor 1, one-sided
   0.006, the others flat, so not "both ways at nominal P", D31.4, D37.4; Zenin flat). Mechanism: markers of biological
   ageing; LONP1 is the mitochondrial Lon protease. No disease pleiotropy in the Catalog, whose other lines are blood
   protein levels (MRPL58, GADD45GIP1, NGRN, T higher), named. Causal C1 (PIP 1.00 in both copy-number sets). Effector
   E1, LONP1: a missense on the MANE transcript (§4.2). Descriptive. Age of action unknown. The evidence is mostly
-  European (UK Biobank), with All of Us's diverse sample in Gupta's meta-analysis.
+  European (UK Biobank's own groups and Koller's three studies).
 axes:
-  tier: {value: B, cites: [pmid-37587338#q1, pmid-37587338#q2, pmid-37587338#q3, db-gwascatalog-2026.10.29#q667, db-gwascatalog-2026.10.29#q668, db-gwascatalog-2026.10.29#q669, db-gwascatalog-2026.10.29#q670, db-gwascatalog-2026.10.29#q671, db-gwascatalog-2026.10.29#q672, db-gwascatalog-2026.10.29#q673, db-gwascatalog-2026.10.29#q674]}
+  tier: {value: A, cites: [pmid-37587338#q1, pmid-37587338#q2, pmid-37587338#q3, pmid-37587338#q4, pmid-37587338#q5, pmid-37587338#q6, pmid-37587338#q7, pmid-37587338#q9, pmid-37587338#q11, pmid-37587338#q13, pmid-38267512#q1, pmid-38267512#q2, pmid-38267512#q3, pmid-38267512#q4, pmid-38267512#q5, pmid-38267512#q6, pmid-38267512#q8, pmid-38267512#q9, pmid-38267512#q10, pmid-38267512#q11, pmid-38267512#q12, pmid-38267512#q13, pmid-38267512#q15, db-gwascatalog-2026.10.29#q667, db-gwascatalog-2026.10.29#q668, db-gwascatalog-2026.10.29#q669, db-gwascatalog-2026.10.29#q670, db-gwascatalog-2026.10.29#q671, db-gwascatalog-2026.10.29#q672, db-gwascatalog-2026.10.29#q673, db-gwascatalog-2026.10.29#q674]}
   mechanism: {value: ageing_markers, cites: [pmid-37587338#q1, pmid-37587338#q3, db-gwascatalog-2026.10.29#q668]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "+", lifespan: "0", exceptional_survival: "0",
             cites: [pmid-40759756#q143, pmid-40759756#q144, pmid-40759756#q145, pmid-40759756#q146, pmid-40759756#q147, pmid-30729179#q173, pmid-30642433#q410, pmid-40021682#q164, db-finngen-r11#q113, pmid-31413261#q332, pmid-31413261#q333]}
-  actionability: {label: descriptive, cites: [db-gwascatalog-2026.10.29#q667]}
+  actionability: {label: descriptive, cites: [pmid-37587338#q9]}
   context: {values: [], cites: []}
 flags:
-  - {token: "causal:C1", cites: [db-opentargets-26.09#q1296, db-opentargets-26.09#q1297, db-opentargets-26.09#q1298, db-opentargets-26.09#q1299, db-opentargets-26.09#q1300]}
+  - {token: "causal:C1", cites: [db-opentargets-26.09#q1296, db-opentargets-26.09#q1297, db-opentargets-26.09#q1298, db-opentargets-26.09#q1299, db-opentargets-26.09#q1300, pmid-37587338#q11, pmid-37587338#q13]}
   - {token: "effector:E1", cites: [db-ensembl-116#q1021, db-ensembl-116#q1022]}
 variants:
   - rsid: rs11085147
@@ -74,20 +77,39 @@ variants:
 studies:
   - rsid: rs11085147
     note: pmid-37587338
-    quote: q3
+    quote: q9
     phenotype_class: BIOMARKER
     study_design: meta_analysis
-    population: Gupta 2023's adjusted copy-number GWAS as the GWAS Catalog records it (mostly European ancestry; UK Biobank and All of Us in the paper)
-    ancestry: [EUR]
-    sample_size: 163372
+    population: UK Biobank (Gupta 2023's cross-ancestry meta-analysis of six ancestry groups, 155,998 of 163,372 European)
+    ancestry: [EUR, AFR, AMR, SAS, EAS]
+    sample_size: 162414
     sample_unit: individuals
     stat_significance: significant
-    p_value: "1E-109"
-    p_value_num: 1.0e-109
-    effect_size: 0.137
+    p_value: "1.1023e-109"
+    p_value_num: 1.1023e-109
+    effect_size: 0.13704
     effect_measure: beta
-    effect_unit: SD of adjusted mtDNA copy number per T allele (the Catalog's 0.137 decrease per C, negated)
+    effect_unit: SD of adjusted mtDNA copy number per T allele (Table 2's −0.13704 per C, the reference, negated)
     effect_allele: T
     direction: unknown
-    statistical_test: "Gupta 2023's GWAS of adjusted mtDNA copy number (q1, q2; LONP1 among the fine-mapped missense loci, q3); the lead, allele, effect and P from the GWAS Catalog's record of the study (GCST90268497, db-gwascatalog-2026.10.29#q667 to q670), the per-variant tables not cached; its sample as the Catalog records it (163,372); Chong 2022's UK Biobank line (q671 to q674) shares its people; a marker study (D32, D37.12)"
+    statistical_test: "Gupta 2023's GWAS of adjusted mtDNA copy number in UK Biobank (q1, q2; LONP1 among the fine-mapped missense loci, q3; Supplementary Table 1, q4, q5), Table 2 (legend q6, header q7): rs11085147 C (the reference, 0.905) β −0.13704, SE 0.0062, P 1.1e-109, N 162,414 (q9), the β SAIGE's per Allele2, the legend's reference allele; Table 3 PIP 1, missense (q11, q13); the GWAS Catalog's record (GCST90268497, db-gwascatalog-2026.10.29#q667 to q670) the same line; Chong 2022's UK Biobank line (q671 to q674) shares its people; a marker study (D32, D37.12)"
+    curator: claude-opus-5-5
+  - rsid: rs11085147
+    note: pmid-38267512
+    quote: q15
+    phenotype_class: BIOMARKER
+    study_design: meta_analysis
+    population: European (the GCKD, CHRIS and AugUR studies; no UK Biobank)
+    ancestry: [EUR]
+    sample_size: 16130
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "0.002904"
+    p_value_num: 0.002904
+    effect_size: 0.0529
+    effect_measure: beta
+    effect_unit: SD of qPCR mtDNA copy number per T allele (Table S11's −0.0529 per C, Allele1, negated)
+    effect_allele: T
+    direction: unknown
+    statistical_test: "Koller 2024's METAL meta-analysis of qPCR mtDNA copy number in three independent studies (q1 to q3); Table S11 (caption q12, header q13): rs11085147 Allele1 c (0.8986) Effect −0.0529, SE 0.0178, P 0.0029, equivalent to Longchamps' estimate (q15, q8; the text's reading, q6); Effect per Allele1, checked on rs4895440 (q4, q5 against Table S9, q9 to q11); the independent replication on the same allele (§4.1's A)"
     curator: claude-opus-5-5

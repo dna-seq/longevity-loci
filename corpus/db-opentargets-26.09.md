@@ -4660,3 +4660,35 @@ q1287). For row 30.
 > [q1308] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol IBA57
 
 1_228176631_G_A (rs117530284, row 112): one credible set (q1303), Lin's GrimAge set (q1304) at PIP 0.30 (q1305), PICS (q1306): C2. Locus-to-gene IBA57 0.11, the top (q1307, q1308): no gene at 0.5, E3. For row 112.
+
+## Reading 2026-11-16, record
+
+> [q1309] data.variant.credibleSets count 38
+
+> [q1310] data.variant.credibleSets.rows[8].study id GCST90268497 traitFromSource Mitochondrial DNA copy number (adjusted) studyType gwas
+
+> [q1311] data.variant.credibleSets.rows[8].locus.rows[0] posteriorProbability 0.9999997998644888 beta 0.04883054296962152 pValueMantissa null pValueExponent null
+
+> [q1312] data.variant.credibleSets.rows[26].study id GCST90026371 traitFromSource Mitochondrial DNA copy number studyType gwas
+
+> [q1313] data.variant.credibleSets.rows[26].locus.rows[0] posteriorProbability 0.9597242861254343 beta 0.034 pValueMantissa 8.142999649047852 pValueExponent -58
+
+> [q1314] data.variant.credibleSets.rows[4].study id gtex-v10_ge_artery_tibial_ensg00000108064 traitFromSource ENSG00000108064 studyType eqtl
+
+> [q1315] data.variant.credibleSets.rows[4].locus.rows[0] posteriorProbability 0.9997400813890965 beta -0.366438 pValueMantissa 4.486000061035156 pValueExponent -44
+
+> [q1316] data.credibleSet.study id GCST90268497 traitFromSource Mitochondrial DNA copy number (adjusted)
+
+> [q1317] data.credibleSet.l2GPredictions.rows[0] score 0.6335369348526001
+
+> [q1318] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol TFAM
+
+> [q1319] data.credibleSet.l2GPredictions.rows[1] score 0.06571725755929947
+
+> [q1320] data.credibleSet.l2GPredictions.rows[1].target approvedSymbol IPMK
+
+10_58385319_A_G (rs12247015, row 114; beta per G): 38 credible sets (q1309); Gupta's adjusted copy-number set (q1310) at
+PIP 1.00, G +0.049 (q1311); Chong's (q1312) at 0.96, G +0.034 (q1313): C1. Most of the rest are GTEx v10 expression
+and exon sets for TFAM (ENSG00000108064), e.g. tibial artery at PIP 1.00, G −0.37 (q1314, q1315): G, the higher-copy
+allele, with lower TFAM expression, named. Locus-to-gene on Gupta's set (q1316): TFAM 0.63 (q1317, q1318), IPMK
+0.07 (q1319, q1320): E2. For row 114.

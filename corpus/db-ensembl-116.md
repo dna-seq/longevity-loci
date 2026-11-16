@@ -3652,3 +3652,20 @@ rs11085147 (row 106): GRCh38 19:5,711,919 C/T, C ancestral (q1018); T at 9.2 % i
 > [q1029] [0].transcript_consequences[0].consequence_terms[0] 3_prime_UTR_variant
 
 rs117530284 (row 112): GRCh38 1:228,176,631, multi-allelic G/A/T, G ancestral (q1023), the row meaning G/A; A at 2.2 % in gnomAD's East Asian genomes (q1024, q1025), 0.009 % in the non-Finnish Europeans (q1026); 1000 Genomes EAS 22 of 1,008 (q1027); 3′ UTR of IBA57's MANE transcript (q1028, q1029). For row 112.
+
+## Reading 2026-11-16, record
+
+> [q1030] mappings[0] ancestral_allele A assembly_name GRCh38 seq_region_name 10 start 58385319 strand 1 coord_system chromosome location 10:58385319-58385319 allele_string A/G/T end 58385319
+
+> [q1031] populations[24] allele_count 39082 allele A population gnomADg:nfe frequency 0.5748
+
+> [q1032] populations[23] allele_count 28908 population gnomADg:nfe allele G frequency 0.4253
+
+> [q1033] [0].transcript_consequences[6] gene_id ENSG00000108064 gene_symbol_source HGNC transcript_id ENST00000487519 canonical 1 variant_allele G hgnc_id HGNC:11741 gene_symbol TFAM mane_select NM_003201.3 impact MODIFIER strand 1 biotype protein_coding distance 91
+
+> [q1034] [0].transcript_consequences[6].consequence_terms[0] upstream_gene_variant
+
+rs12247015 (row 114): GRCh38 10:58,385,319, A/G/T, A ancestral (q1030); A at 57.5 % and G at 42.5 % in gnomAD's
+non-Finnish European genomes (q1031, q1032), T a trace; 91 bp upstream of TFAM's MANE transcript (NM_003201.3),
+upstream_gene_variant (q1033, q1034); Gupta's Table 4 calls it a 5′ UTR variant of TFAM on another transcript. For
+row 114.

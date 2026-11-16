@@ -1,0 +1,117 @@
+# The seed list's locus 114, TFAM (10q21.1): a marker of biological ageing (D32, D36.3), curated on D37.12 with 23
+# TERC as the pattern. Curated 2026-11-16. Lead rs12247015, the seed's rsID (Gupta 2023's mtDNA copy-number locus):
+# 91 bp upstream of TFAM's MANE transcript, GRCh38 10:58,385,319, GRCh37 10:60,145,079, A/G (T a trace), A ancestral;
+# A at 57.5 % in gnomAD's non-Finnish European genomes. A is the lower-copy-number allele.
+locus_id: 114
+locus_name: TFAM
+verdict: kept
+verdict_reason: >-
+  Tier A on the marker's own evidence (D37.12; the seed gives D), the first marker row at A: the tier grades the
+  association with mitochondrial DNA copy number in blood, not longevity, and this row is unscored (D32). Gupta 2023
+  measured copy number from UK Biobank's whole genomes; its adjusted copy-number GWAS is UK Biobank's 163,372 people of
+  six ancestry groups (Supplementary Table 1, All of Us not in it), and its Table 2 prints rs12247015 with A, the
+  reference allele, at 0.582, β −0.0744 SD (SE 0.0036), P 7.7e-96, heterogeneity P 0.43, fine-mapped at PIP 1 (Table
+  3). The table's legend names AF_Allele2 the reference allele's frequency, so the β (SAIGE's, per Allele2) is per A;
+  Koller 2024's table and Chong 2022's Catalog line (G higher, P 1e-55, the same UK Biobank people) agree. Koller 2024
+  replicates it outside UK Biobank: qPCR copy number in GCKD, CHRIS and AugUR, 16,130 Europeans, Table S11 a −0.0376
+  (SE 0.0106), P 0.0004, A lower, its Effect per Allele1 (checked on Koller's own lead, rs4895440, against its text),
+  and equivalent to the UK Biobank estimate by Koller's equivalence test, so not a much smaller effect. Genome-wide in
+  a study of 100k or more, replicated independently on the same allele: §4.1's A. Guyatt 2019's TFAM replication is
+  another SNP, named, not counted. Lifespan look-ups, unscored and read for A, all flat: Timmers 2019 A beta1 +0.0017
+  (SE 0.0039), P 0.66; Pilling 2017's parents P 0.24 to 0.80; Park 2025's own survival P 0.35 (men 0.55, women 0.42);
+  FinnGen R11's deaths P 0.47, a database line; Deelen 2019 90th P 0.75, 99th P 0.81; Zenin 2019 P 0.42. Foote 2025's
+  factor 1 (A −0.0042, P 0.030) and factor 6 (A −0.0068, P 0.0033) put A on the less frail side, the general factor
+  leaning the same way (P 0.14), factors 2 to 5 flat (P 0.40 to 0.97), none the other way. The literature search (the
+  rsID, 2026-11-16; Semantic Scholar answered 429, its part unchecked) finds the copy-number GWASs and Mendelian
+  randomisation studies that use the locus as an instrument, no test of lifespan. Every genotype neutral, each
+  conclusion a tendency of the marker with no colour (D32, D37.12); `direction: unknown`. Outcome cells read for A:
+  exceptional survival 0 (Deelen flat); lifespan 0 (Timmers, Pilling, Park and FinnGen flat); healthspan + (Foote's
+  factors 1 and 6 at nominal P, the same way, D31.4, D37.4; Zenin flat). Mechanism: markers of biological ageing;
+  TFAM packages and replicates mitochondrial DNA. No pleiotropy: the Catalog holds the copy-number lines alone. Causal
+  C1 (PIP 1.00 in Gupta's set, 0.96 in Chong's). Effector E2, TFAM: locus-to-gene 0.63 (IPMK 0.07), the variant
+  upstream of TFAM and in TFAM's expression credible sets across GTEx tissues at PIP up to 1.00, G with lower
+  expression (no colocalisation read). Descriptive. Age of action unknown. The evidence is mostly European.
+axes:
+  tier: {value: A, cites: [pmid-37587338#q1, pmid-37587338#q2, pmid-37587338#q4, pmid-37587338#q5, pmid-37587338#q6, pmid-37587338#q7, pmid-37587338#q8, pmid-37587338#q11, pmid-37587338#q12, pmid-38267512#q1, pmid-38267512#q2, pmid-38267512#q3, pmid-38267512#q4, pmid-38267512#q5, pmid-38267512#q7, pmid-38267512#q8, pmid-38267512#q9, pmid-38267512#q10, pmid-38267512#q11, pmid-38267512#q12, pmid-38267512#q13, pmid-38267512#q14, db-gwascatalog-2026.10.29#q680, db-gwascatalog-2026.10.29#q681, db-gwascatalog-2026.10.29#q682, db-gwascatalog-2026.10.29#q683, db-gwascatalog-2026.10.29#q684, db-gwascatalog-2026.10.29#q685]}
+  mechanism: {value: ageing_markers, cites: [pmid-37587338#q1, pmid-37587338#q2, db-gwascatalog-2026.10.29#q679]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "0", exceptional_survival: "0",
+            cites: [pmid-40759756#q148, pmid-40759756#q149, pmid-40759756#q150, pmid-40759756#q151, pmid-40759756#q152, pmid-40759756#q153, pmid-40759756#q154, pmid-30729179#q174, pmid-30642433#q411, pmid-29227965#q220, pmid-29227965#q221, pmid-29227965#q222, pmid-29227965#q223, pmid-40021682#q167, pmid-40021682#q168, pmid-40021682#q169, db-finngen-r11#q114, pmid-31413261#q334, pmid-31413261#q335]}
+  actionability: {label: descriptive, cites: [pmid-37587338#q8]}
+  context: {values: [], cites: []}
+flags:
+  - {token: "causal:C1", cites: [db-opentargets-26.09#q1309, db-opentargets-26.09#q1310, db-opentargets-26.09#q1311, db-opentargets-26.09#q1312, db-opentargets-26.09#q1313, pmid-37587338#q11, pmid-37587338#q12]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q1316, db-opentargets-26.09#q1317, db-opentargets-26.09#q1318, db-opentargets-26.09#q1319, db-opentargets-26.09#q1320, db-opentargets-26.09#q1314, db-opentargets-26.09#q1315, db-ensembl-116#q1033, db-ensembl-116#q1034]}
+variants:
+  - rsid: rs12247015
+    locus: {chrom: "10", start: 58385319, ref: A, cites: [db-ensembl-116#q1030]}  # rs12247015 is multi-allelic (A/G/T); the row means A and G
+    gene: TFAM
+    phenotype: TFAM upstream, mtDNA copy number
+    trait_efo_id: EFO_0006312
+    effect_allele: A
+    effect_size: -0.07441
+    effect_measure: beta
+    stat_significance: significant
+    direction: unknown
+    genotypes:
+      - genotype: A/A
+        state: neutral
+        conclusion: >-
+          You carry two copies of the A version of this DNA position (about 33 in 100 people of European ancestry do).
+          Large studies link each copy of A with slightly fewer copies of mitochondrial DNA in blood cells, under a
+          tenth of the usual spread between people per copy. That is a tendency in a marker, not a verdict on ageing,
+          and studies of lifespan show no effect of this position, so it carries no score.
+      - genotype: A/G
+        state: neutral
+        conclusion: >-
+          You carry one copy each of the two common versions of this DNA position, the most common combination (about
+          49 in 100 people of European ancestry). It is the reference the other combinations are compared with. The
+          position sits just before TFAM, the gene that packages and copies the DNA of the cell's power stations, the
+          mitochondria. Their DNA copy number in blood is a marker that shifts with age, so this result carries no score.
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the G version of this DNA position (about 18 in 100 people of European ancestry do).
+          Large studies link each copy of G with slightly more copies of mitochondrial DNA in blood cells. That is a
+          tendency in a marker, not a verdict on ageing, and studies of lifespan show no effect of this position, so
+          it carries no score.
+studies:
+  - rsid: rs12247015
+    note: pmid-37587338
+    quote: q8
+    phenotype_class: BIOMARKER
+    study_design: meta_analysis
+    population: UK Biobank (Gupta 2023's cross-ancestry meta-analysis of six ancestry groups, 155,998 of them European)
+    ancestry: [EUR, AFR, AMR, SAS, EAS]
+    sample_size: 163372
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "7.7031e-96"
+    p_value_num: 7.7031e-96
+    effect_size: -0.07441
+    effect_measure: beta
+    effect_unit: SD of adjusted mtDNA copy number per A allele
+    effect_allele: A
+    direction: unknown
+    statistical_test: "Gupta 2023's GWAS of adjusted mtDNA copy number in UK Biobank (q1, q2; Supplementary Table 1, q4, q5), Table 2 (legend q6, header q7): rs12247015 A (the reference, 0.582) β −0.07441, SE 0.0036, P 7.7e-96, heterogeneity P 0.43 (q8), the β SAIGE's per Allele2, the legend's reference allele; Table 3 PIP 1 (q11, q12); the Middle Eastern group (571) has no code here; a marker study (D32, D37.12)"
+    curator: claude-opus-5-5
+  - rsid: rs12247015
+    note: pmid-38267512
+    quote: q14
+    phenotype_class: BIOMARKER
+    study_design: meta_analysis
+    population: European (the GCKD, CHRIS and AugUR studies; no UK Biobank)
+    ancestry: [EUR]
+    sample_size: 16130
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "0.0004079"
+    p_value_num: 0.0004079
+    effect_size: -0.0376
+    effect_measure: beta
+    effect_unit: SD of qPCR mtDNA copy number per A allele (Allele1)
+    effect_allele: A
+    direction: unknown
+    statistical_test: "Koller 2024's METAL meta-analysis of qPCR mtDNA copy number in three independent studies (q1 to q3); Table S11 (caption q12, header q13): rs12247015 Allele1 a (0.5576) Effect −0.0376, SE 0.0106, P 0.0004, equivalent to Longchamps' estimate (q14, q8); Effect per Allele1, checked on rs4895440 (q4, q5 against Table S9, q9 to q11); the independent replication on the same allele (§4.1's A)"
+    curator: claude-opus-5-5
