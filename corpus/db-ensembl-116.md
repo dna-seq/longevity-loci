@@ -4025,3 +4025,16 @@ rs199678370 (row 126): gnomADe:nfe A 70 (q1146), G 1,111,888 (q1147), 1,111,958 
 rs41419545 (row 140): gnomADe:nfe T 3,534 (q1150), C 1,108,466 (q1151), G 4 (q1152), 1,112,004 alleles; gnomADg:nfe T 227 (q1153), C 67,794 (q1154), G 1 (q1155), 68,022 alleles.
 rs113181552 (row 109): gnomADg:nfe T 2,957 (q1156), G 65,035 (q1157), 67,992 alleles.
 For rows 107, 109, 120, 121, 124, 125, 126 and 140 (D37.1).
+
+## Reading 2026-11-16, record
+
+> [q1158] populations[0] allele G frequency 0.009167 allele_count 623 population gnomADg:nfe
+
+> [q1159] populations[1] allele T population gnomADg:nfe allele_count 67341 frequency 0.9908
+
+> [q1160] populations[106] allele G allele_count 2 frequency 0.00934579439252336 population 1000GENOMES:phase_3:TSI
+
+> [q1161] populations[107] allele T frequency 0.990654205607477 allele_count 212 population 1000GENOMES:phase_3:TSI
+
+rs11186068 (row 62): G in 623 of gnomAD's non-Finnish European genomes' 67,964 alleles (q1158, q1159) and in 2 of
+1000 Genomes' Tuscans' 214 (q1160, q1161), the references for D31.11's re-read of Beccacece's arms (D37.1). For row 62.
