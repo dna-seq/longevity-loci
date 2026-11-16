@@ -253,3 +253,10 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
   is written `unknown` (the row's), not `neutral`; both carry no colour in 0.8's vocabulary. Put to the lead.
   Settled (the lead, 640645516): keep `unknown`. A marker row's direction speaks to longevity, where it is not
   known; the marker's own direction lives in the conclusions and the BIOMARKER studies.
+- 2026-11-16, batch fifteen rehearsed (trunk c483cf3; D38; the first marker rows): 429 variant rows, 634 studies,
+  haplotypes 6, diplotypes 12. Strict green; 20 carried indel VRS, module_not_closed, dataset_currency.
+  content_signature da319d43…, equal local and polygon; artifact 3232e9e1… (server). Seven marker rows (23 TERC and
+  114 TFAM at A; 30, 105, 106, 112, 128 at B): category ageing_markers, 3 genotypes each, state neutral, direction
+  unknown, weight null, the marker's trait (OBA_0003784 telomere length, EFO_0022597 epigenetic age acceleration,
+  EFO_0006312 mtDNA copy number, EFO_0000473 for 112), the tier a flag token; their BIOMARKER studies carry the same
+  trait, the lifespan and healthspan look-ups their own. 23 and 112 carry an empty gene, as the rows write it.
