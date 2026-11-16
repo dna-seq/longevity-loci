@@ -12,10 +12,13 @@ verdict_reason: >-
   in UK Biobank calls the line borderline and in males: the men's deposit (180,970 men) gives T β +0.00955 on the
   Martingale residual (SE 0.00177, more deaths), P 6.6e-8, short of the paper's 5e-8; the whole cohort +0.00509 (SE
   0.00106), P 1.3e-6; the women +0.00131 (SE 0.00124), P 0.29 (each deposit's columns swapped, as in all three files).
-  The two sexes differ at P 1.4e-4, both errors counted (derived). The authors' own look-up in FinnGen's "Death"
+  The two sexes differ at P 1.4e-4 on the residual's own scale, both errors counted, but a Martingale residual's β
+  is about the log hazard times the mean cumulative hazard, which is higher in men: the deposits' own SEs give a
+  residual-SD ratio, men to women, of 1.31, a cumulative-hazard ratio of about 1.73, and on a common hazard scale the
+  sexes differ at about P 0.009 (derived). The authors' own look-up in FinnGen's "Death"
   (both sexes, N 453,733, outside UK Biobank) puts T with more deaths, β +0.034, which they call a significant
-  association (Supplementary Table 2 prints P 6.0 with its exponent lost in extraction; the release's 0.006 fixes it,
-  one-sided 0.003); under APOE's Park-to-FinnGen factor (8.1) the whole cohort
+  association (the Results print P 6.0e-3, the exponent in a run the cached text splits from its mantissa, q9 and
+  q154; one-sided 0.003), which agrees with the release (0.00597) and is not independent of it; under APOE's Park-to-FinnGen factor (8.1) the whole cohort
   expects +0.041 (the whole cohort's effect for a sex-combined sample, D28.2), against which FinnGen's +0.034
   agrees (heterogeneity P 0.64, derived). That is an independent
   nominal pass in the discovery's direction; it does not lift a sub-genome-wide hit past C (R-TIER-4). Timmers 2019's
@@ -33,7 +36,8 @@ verdict_reason: >-
   it); their strongest line within 500 kb, the fathers' rs10082701 416 kb away (P 5.6e-6), does not tag it (Ensembl's pairwise LD answers an empty list for the two in CEU, r² under its 0.05 floor). The literature search (the rsID with lifespan, longevity, mortality or survival, 2026-11-16;
   Semantic Scholar answered 429, its part unchecked) finds no other population lifespan test; its survival papers are
   within patients with pulmonary fibrosis (Peljto 2013, PMID 23695349, where T carriers survived longer after
-  diagnosis; a 2026 Brazilian cohort with no difference), a different question, named, not read. `sex_specific:m` by D29.16: Park's men against women differ (P 1.4e-4) from the deposits; named
+  diagnosis; a 2026 Brazilian cohort with no difference), a different question, named, not read. `sex_specific:m` by D29.16 (kept, D35.2): Park's men against women differ (P 1.4e-4 on the residual scale,
+  about 0.009 on a common hazard scale; derived) from the deposits; named
   beside it, Pilling's fathers against mothers do not (P 0.27), but that contrasts the parents' sexes on the
   per-parent scale, which no source converts to Park's own-survival scale, so it cannot exclude Park's difference;
   FinnGen's both-sexes pass is consistent with a men's effect (D35.2). Genotypes: G/G the reference, T carriers risk, as weak early evidence; the variant is carried on G, the
@@ -50,7 +54,7 @@ verdict_reason: >-
   lifespan-class study. Causal
   C4 and effector E4: no lifespan-class credible set. Descriptive. Age of action unknown. The evidence is European.
 axes:
-  tier: {value: C, cites: [pmid-40021682#q125, pmid-40021682#q126, pmid-40021682#q127, pmid-40021682#q31, pmid-40021682#q35, pmid-40021682#q9, pmid-40021682#q16, pmid-40021682#q128, db-finngen-r11#q5, pmid-30642433#q401, pmid-29227965#q174, pmid-29227965#q175, pmid-29227965#q176, pmid-29227965#q177, pmid-31413261#q306, pmid-31413261#q307, pmid-31413261#q82, pmid-31413261#q292, pmid-40021682#q32, pmid-30729179#q164, pmid-31484785#q174, db-ensembl-116#q894, db-gwascatalog-2026.10.29#q584]}
+  tier: {value: C, cites: [pmid-40021682#q125, pmid-40021682#q126, pmid-40021682#q127, pmid-40021682#q154, pmid-40021682#q31, pmid-40021682#q35, pmid-40021682#q9, pmid-40021682#q16, pmid-40021682#q128, db-finngen-r11#q5, pmid-30642433#q401, pmid-29227965#q174, pmid-29227965#q175, pmid-29227965#q176, pmid-29227965#q177, pmid-31413261#q306, pmid-31413261#q307, pmid-31413261#q82, pmid-31413261#q292, pmid-40021682#q32, pmid-30729179#q164, pmid-31484785#q174, db-ensembl-116#q894, db-gwascatalog-2026.10.29#q584]}
   mechanism: {value: smoking_lungs, cites: [db-opentargets-26.09#q1236, db-opentargets-26.09#q1237, db-opentargets-26.09#q1234, db-opentargets-26.09#q1235, pmid-40021682#q127, db-gwascatalog-2026.10.29#q585]}
   pleiotropy: {values: ["mech:lung", "mech:blood_count", "tradeoff"], cites: [db-opentargets-26.09#q1236, db-opentargets-26.09#q1237, db-opentargets-26.09#q1240, db-opentargets-26.09#q1241, db-gwascatalog-2026.10.29#q585, db-gwascatalog-2026.10.29#q586, db-gwascatalog-2026.10.29#q587, db-gwascatalog-2026.10.29#q588, db-gwascatalog-2026.10.29#q589, db-opentargets-26.09#q1238, db-opentargets-26.09#q1239]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -168,12 +172,14 @@ studies:
     sample_size: 453733
     sample_unit: individuals
     stat_significance: nominal
+    p_value: "6.0×10−3"
+    p_value_num: 0.006
     effect_size: 0.034
     effect_measure: beta
     effect_unit: FinnGen's "Death" endpoint per T allele (positive = increased death, q9)
     effect_allele: T
     direction: risk
-    statistical_test: "Park 2025's own FinnGen look-up (Supplementary Table 2, q16; P mantissa 6.0, exponent lost in extraction, q128), which the text calls a significant association with increased death (q9); P 0.006 in the release (db-finngen-r11#q5, SE 0.0124), one-sided 0.003; against the whole cohort under APOE's factor 8.1, expected +0.041, heterogeneity P 0.64 (derived)"
+    statistical_test: "Park 2025's own FinnGen look-up (Supplementary Table 2, q16, q128), which the text calls a significant association with increased death, P 6.0e-3 (q9, its mantissa and exponent split by the cached text's markup, q154); it agrees with the release (db-finngen-r11#q5, 0.00597, SE 0.0124) and is not independent of it; one-sided 0.003; against the whole cohort under APOE's factor 8.1, expected +0.041, heterogeneity P 0.64 (derived)"
     curator: claude-opus-5-5
   - rsid: rs35705950
     note: pmid-30642433
