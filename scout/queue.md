@@ -82,6 +82,8 @@ read), and every identifier the paper has. The curator takes it from here; the s
 
 ### rs15285 (LPL 3′ UTR) at locus 52 LPL (8p21.3): Wright's fathers' signal, candidate row (D25.6)
 
+- **Taken:** row 166 LPL-3UTR, `second_signal_of` 52 (D39.14; d8fc413, filed at B).
+
 - **Paper:** Wright KM et al. "A Prospective Analysis of Genetic Variants Associated with Human Lifespan." *G3*, 2019.
   PMID 31484785. Corpus note `corpus/pmid-31484785.md` (q91 to q93). From the curator, 2026-11-11.
 - **Why:** the seed's second rsID at locus 52, 11 kb from row 52's lead rs268 (LPL Asn318Ser) and a separate signal:
@@ -98,6 +100,8 @@ read), and every identifier the paper has. The curator takes it from here; the s
 
 ### rs11780471 (3.6 kb upstream of EPHX2) at locus 53 EPHX2 (8p21.1): Wright's fathers' signal, candidate row (D25.6)
 
+- **Taken:** row 168 CHRNA2-EPHX2, `second_signal_of` 53 (D39.14; 8c08388, filed at C at most; D39.18).
+
 - **Paper:** Wright KM et al. "A Prospective Analysis of Genetic Variants Associated with Human Lifespan." *G3*, 2019.
   PMID 31484785. Corpus note `corpus/pmid-31484785.md` (q99). From the curator, 2026-11-11.
 - **Why:** 97 kb from row 53's lead rs7844965 and tagging it only at r² 0.13, D′ 0.66 in CEU (`db-ensembl-116#q373`):
@@ -112,6 +116,8 @@ read), and every identifier the paper has. The curator takes it from here; the s
   2.3e-6, Deelen's 90th P 0.33 and 99th 0.10 (A's side), read in the cached windows, not quoted.
 
 ### rs4784227 (TOX3/CASC16) at locus 82 CASC16 (16q12.1): Zenin's healthspan signal, candidate row (D25.6, D30.8)
+
+- **Taken:** row 169 CASC16-TOX3, `second_signal_of` 82 (D39.14; 792f2ce, filed at B; D39.18, D39.19).
 
 - **Paper:** Zenin A et al. "Identification of 12 genetic loci associated with human healthspan." *Commun Biol*, 2019.
   PMID 30729179, PMC6353874, doi 10.1038/s42003-019-0290-0 (title checked against PubMed 2026-11-13). Corpus note
@@ -128,6 +134,8 @@ read), and every identifier the paper has. The curator takes it from here; the s
   86's shape, is the nearest precedent read here, not applied).
 
 ### rs6062322 (ZBTB46) at locus 99 CHRNA4 (20q13.33): a novel mvAge signal, candidate row (D25.6, D17.6)
+
+- **Taken:** row 167 ZBTB46, `second_signal_of` 99 (D39.14; 603292a, filed at B).
 
 - **Paper:** Rosoff 2023, as above (PMID 37550455). Corpus note `corpus/pmid-37550455.md` (q77, q78). From the
   curator, 2026-11-14 (#longevity-loci > curation, 640348417).
