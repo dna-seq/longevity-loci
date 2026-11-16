@@ -34,7 +34,7 @@ rs1049053 and rs34967069 (row 38's lead): r² 0.32, D′ 1.0. The two leads are 
 rs1049053 and rs9275245 (a clumped SNP of Wright 2019's mothers' meta-analysis): r² 0.39, D′ 0.98. Named, not
 scored.
 
-> [q5] populations[86] allele C allele_count 248 population 1000GENOMES:phase_3:EUR frequency 0.246520874751491
+> [q5] populations[86] frequency 0.246520874751491 population 1000GENOMES:phase_3:EUR allele_count 248 allele C
 
 > [q6] populations[77] allele_count 213 frequency 0.211729622266402 allele T population 1000GENOMES:phase_3:EUR
 
