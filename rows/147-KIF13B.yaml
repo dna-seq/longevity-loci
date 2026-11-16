@@ -24,8 +24,8 @@ verdict_reason: >-
   heterogeneity P 0.0011; mean factor P 9e-6), adding nothing. No independent scoring-class study passes A's way (D25.1): Pilling's mothers (one-sided 0.03) are a stratum of the
   UK Biobank parents that fail, inside the failing sample, no independent pass (D30.11, as 94's Pilling inside
   Timmers); Park 2025's own survival is flat (whole cohort P 0.91, men 0.47, women 0.48); FinnGen R11's deaths put A
-  with fewer deaths, P 0.024 (one-sided 0.012), but a release line replicates nothing (D29.1); whether it should count as D25.1's pass, as it fills the lifespan
-  cell below, is put to the lead. Zenin 2019 flat (A
+  with fewer deaths, P 0.024 (one-sided 0.012), but a release line replicates nothing (D29.1): it fills the lifespan cell below and neither lifts nor spares a
+  row from D (D35.1). Zenin 2019 flat (A
   earlier, P 0.30); Foote 2025's general factor puts A on the frailer side, flat (P 0.18), its factors 1 to 6 flat (P
   0.10 to 0.88). Wright 2019's AncestryDNA tables list nothing at the lead under their P 0.003 cut (unknown above it);
   the mothers' rs6989058 78 kb away (P 0.0011) tags the lead at r² 0.34 only, and the fathers' rs10097270 246 kb away
@@ -33,8 +33,7 @@ verdict_reason: >-
   Scholar answered 429, its part unchecked) finds Deelen alone; the rest is KIF13B cell biology. Every
   genotype neutral (D25.2). Exceptional survival 0 (the discovery gives no `+` on a D row, D28.10; Deelen's UK
   Biobank validation flat); lifespan + on FinnGen's release line alone (one-sided 0.012; D34.13, D34.5: a release line
-  fills a cell, and FinnGen shares no sample with the discovery), with Timmers, Pilling and Park flat, put to the
-  lead; healthspan 0 (Zenin and Foote flat). Mechanism ageing in general (D25.7): intronic in KIF13B, a kinesin;
+  fills a cell, and FinnGen shares no sample with the discovery), with Timmers, Pilling and Park flat (D35.1); healthspan 0 (Zenin and Foote flat). Mechanism ageing in general (D25.7): intronic in KIF13B, a kinesin;
   nothing recorded ties it to lifespan. Causal C4 and effector E4: no Open Targets record. Descriptive. Age of action
   unknown.
 axes:
