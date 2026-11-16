@@ -6,40 +6,46 @@
 # (2026-10-29) holds no association.
 locus_id: 139
 locus_name: ZNF806
-verdict: kept
+verdict: re-tiered
 verdict_reason: >-
-  Tier C: a sub-genome-wide East Asian discovery in one hospital's old-against-young sample (R-TIER-2, R-TIER-4), with
-  no same-scale contradiction and nothing independent passing (D31.13's Hsieh bullet; row 152's shape). The seed's X
-  marks its validation, below. Hsieh 2026 compared 1,595 Taiwanese hospital patients who died at 85 or over with 880
+  Tier C, tiered from the seed's X (D37.11; X marks the validation, not a tier): a sub-genome-wide East Asian
+  discovery in one hospital's old-against-young sample (R-TIER-2, R-TIER-4), with no same-scale contradiction and nothing independent passing (D31.13's Hsieh bullet; row 152's shape). Hsieh 2026 compared 1,595 Taiwanese hospital patients who died at 85 or over with 880
   who died at 65 to 75 at the same hospital: G (0.078, pooled) OR 0.55 per G, P 2.74e-6, under the paper's suggestive
   line of 1e-5. Solved from the OR and the counts (per Alt, the pooled frequency, as rows 113 and 119 read the tables),
   the controls carry G at about 0.107 (189 copies in 1,760 alleles) and the long-lived at about 0.062 (198 in 3,190).
-  Against gnomAD's East Asian genomes (11.0 %, 567 of 5,134 alleles, the reference D31.13 fixes) the controls fit
-  (194 copies expected, P 0.72 by a normal test counting the reference's sampling error; Fisher's exact 0.76), so the
-  discovery is read as printed (D31.10 not met), and read against the reference the long-lived sit well below it too
-  (OR 0.53 per G, P 2.3e-13; derived), across Hsieh's whole interval (0.43 to 0.71, from its P; controls P 0.28 to
-  0.068). The other references agree on the long-lived (1000 Genomes EAS, 132 of 1,008: OR 0.44, P 4e-12; the
-  southern Han CHS, 33 of 210: OR 0.36, P 3.5e-7), the controls fitting 1000 Genomes (P 0.063) and sitting under CHS
-  (P 0.032). The table prints five of its six frequency columns for this line, so which is blank, and Taiwan
-  Biobank's figure, is unknown. Its validation cohort (85 and over at a second hospital) prints OR 1.963, P 0.004: on
-  its face the other side of 1 from the discovery's 0.55, while the paper says its replicated loci kept the
-  discovery's direction and Table 4's other lines do keep it; which allele Table 4 counts is not printed (row 111's
-  reading; the seed's X loci 111, 139 and 146 are the three that flip). Its controls are not its own (Fig. 2), so it
-  is not an independent replication either way (D19.1): its direction is unknown, named, no token. G is all but absent
+  Against gnomAD's East Asian genomes (11.0 %, 567 of 5,134 alleles, the reference D31.13 fixes and D37.2 keeps) the controls fit
+  (194 copies expected, Fisher's exact on both counts P 0.76, D37.1), so the discovery is read as printed (D31.10 not
+  met), and read against the reference the long-lived sit well below it too (OR 0.53 per G, Fisher P 4e-14; derived),
+  across Hsieh's whole interval (0.43 to 0.71, from its P; controls P 0.32 to 0.060, the long-lived 9e-19 to 2e-10).
+  The other references are named branches, each call stated (D37.2), and agree on the long-lived: 1000 Genomes EAS,
+  132 of 1,008, the controls fit (Fisher P 0.064), C, the long-lived below (OR 0.44, P 2e-11); the southern Han CHS,
+  33 of 210, the controls fit (P 0.037, above D31.10's 0.01), C, the long-lived below (OR 0.36, P 3e-6). The table prints five of its six frequency columns for this line, so which is blank, and Taiwan
+  Biobank's figure, is unknown. Its validation cohort (85 and over at a second hospital) prints OR 1.963, P 0.004: on its face the other side
+  of 1 from the discovery's 0.55, while the paper's Results name rs373800184 among the lines replicated in the
+  85-and-over group, "all showing consistent effect estimates between the discovery and validation datasets", with
+  rs117082375 (row 111) and rs61838431 (row 146), the seed's other X loci, whose Table 4 lines cross 1 the same way
+  (the paragraph says 14 replicated and lists 13 entries, 12 SNPs); which allele Table 4 counts is not printed. Table
+  4's SE fits a coding flip (derived): with the discovery's controls and its own covariate inflation (1.20), the
+  printed sign needs about 100 validation cases carrying G at 19 %, the flip about 286 at 6 %, nearer the 85-and-over
+  stratum's consistent common line (rs75526165, about 323); the shared controls are inferred. Its controls are not its
+  own (Fig. 2), so it is not an independent replication either way (D19.1): its direction is unknown, named, no token
+  (D36.1). G is all but absent
   in Europeans (0.04 %): Deelen 2019, Timmers 2019, Park 2025's whole-cohort and women's files, Pilling 2017, Zenin
   2019 and Foote 2025 were each looked up at the variant (2026-11-16, GRCh37 2:133,066,798) and hold no line,
-  untested; Park's men's file holds it, flat (P 0.99), a stratum (D35.5); FinnGen R11's deaths hold it at 0.029 % in
+  untested; Park's men's file holds it, but its frequency (T 0.983 by the swapped columns, so G about 1.7 %, some 45
+  times gnomAD NFE's 0.037 %, and no other Park file holding the line) is a misfit, named, not read (D30.10's
+  reasoning); FinnGen R11's deaths hold it at 0.029 % in
   Finns, G with more deaths, β +0.43 (SE 0.21), P 0.043, the discovery's way, a database line (D29.1) on a rare
   imputed variant, named as fragile. Hsieh's 85-and-over APOE line is null (ε4 OR 1.03, P 0.83), so no calibration is
   the paper's own (D31.13). The literature search (the rsID, 2026-11-16; Semantic Scholar and the preprint index
   answered 429, their part unchecked) finds nothing, Hsieh included, which is found by its PMID. Genotypes: T/T the
   reference, G carriers risk, as weak early evidence. Exceptional survival + (the discovery read as printed, the
   reference read agreeing; the validation's printed sign the other way, named); lifespan + (FinnGen, P 0.043, a
-  release line filling the cell, D35.1; Park's men flat, a stratum); healthspan untested. Mechanism ageing in general
+  release line filling the cell, D35.1; Park's men's line a frequency misfit, not read); healthspan untested. Mechanism ageing in general
   (D25.7): intronic in a lncRNA beside a pseudogene, nothing recorded at the variant. Causal C4 and effector E4: no
   Open Targets record. Descriptive. Age of action unknown. The evidence is Taiwanese, as `ancestry_specific:eas`.
 axes:
-  tier: {value: C, cites: [pmid-41949656#q40, pmid-41949656#q45, pmid-41949656#q8, pmid-41949656#q28, pmid-41949656#q4, pmid-41949656#q46, pmid-41949656#q42, pmid-41949656#q7, pmid-41949656#q5, pmid-41949656#q10, pmid-41949656#q44, db-ensembl-116#q953, db-ensembl-116#q954, db-ensembl-116#q955, db-ensembl-116#q956, db-ensembl-116#q957, db-ensembl-116#q958, db-ensembl-116#q959, db-finngen-r11#q106, pmid-40021682#q144, db-gwascatalog-2026.10.29#q601]}
+  tier: {value: C, cites: [pmid-41949656#q40, pmid-41949656#q45, pmid-41949656#q8, pmid-41949656#q28, pmid-41949656#q4, pmid-41949656#q46, pmid-41949656#q42, pmid-41949656#q7, pmid-41949656#q49, pmid-41949656#q5, pmid-41949656#q10, pmid-41949656#q44, db-ensembl-116#q953, db-ensembl-116#q954, db-ensembl-116#q955, db-ensembl-116#q956, db-ensembl-116#q957, db-ensembl-116#q958, db-ensembl-116#q959, db-finngen-r11#q106, pmid-40021682#q144, db-gwascatalog-2026.10.29#q601]}
   mechanism: {value: general_ageing, cites: [db-ensembl-116#q960, db-ensembl-116#q961, db-opentargets-26.09#q1259]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -101,7 +107,7 @@ studies:
     effect_unit: odds of having died at 85 or over rather than at 65 to 75, per T allele (the printed 0.55 per G, inverted)
     effect_allele: T
     direction: protective
-    statistical_test: "Hsieh 2026's logistic GWAS of the 85-and-over group (Table 1, q40, q45), 1,595 cases and 880 controls (q8); G pooled 0.078; solved per Alt, controls 0.107 and cases 0.062 (derived); the controls fit gnomAD EAS 0.110 (db-ensembl-116#q953, q954; 189 against 194, P 0.72, Fisher 0.76), read as printed; the long-lived against the reference OR 0.53 per G, P 2.3e-13 (derived); suggestive line 1e-5 (q4)"
+    statistical_test: "Hsieh 2026's logistic GWAS of the 85-and-over group (Table 1, q40, q45), 1,595 cases and 880 controls (q8); G pooled 0.078; solved per Alt, controls 0.107 and cases 0.062 (derived); the controls fit gnomAD EAS 0.110 (db-ensembl-116#q953, q954; 189 against 194, Fisher's exact on both counts 0.76, D37.1), read as printed; the long-lived against the reference OR 0.53 per G, Fisher P 4e-14 (derived); suggestive line 1e-5 (q4)"
     curator: claude-opus-5-5
   - rsid: rs373800184
     note: pmid-41949656
@@ -119,5 +125,5 @@ studies:
     effect_measure: OR
     effect_unit: odds of dying at 85 or over, per allele as Table 4 counts it (not printed)
     direction: unknown
-    statistical_test: "Table 4 (q46): OR 1.963, SE of the log OR 0.234; on its face the other side of 1 from the discovery's 0.55 per G, while the text says the replicated loci kept their direction (q7); the counted allele is unprinted (row 111's reading, q42), so the direction is unknown; its controls are not its own, so not independent (D19.1)"
+    statistical_test: "Table 4 (q46): OR 1.963, SE of the log OR 0.234; on its face the other side of 1 from the discovery's 0.55 per G, while the Results name rs373800184 as replicated with consistent effect estimates (q49, q7), so a coding flip is likely; Table 4's SE fits one (derived: with the discovery's 880 controls and its covariate inflation 1.20, the printed sign needs about 100 cases at G 19 %, the flip about 286 at 6 %; the shared controls inferred); the counted allele is unprinted (row 111's reading, q42), so the direction stays unknown (D36.1); its controls are not its own, so not independent (D19.1)"
     curator: claude-opus-5-5
