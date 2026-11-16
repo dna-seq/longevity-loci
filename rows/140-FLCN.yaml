@@ -27,13 +27,16 @@ verdict_reason: >-
   hold it (each with its columns swapped): the whole cohort puts T with more deaths, +0.0153 (SE 0.0098), P 0.12,
   one-sided 0.059 against; the men flat (P 0.53); the women against, +0.0377 (SE 0.0116), P 0.0011. Carried to
   Park's scale by Kolbe's own APOE line (ε4 OR 0.45 against Park's ε4 β 0.0129, D31.12), the reference read expects
-  −0.0133: power 0.39, heterogeneity P 0.0064 (derived), short of D21's power, so no flag; on the women's own
-  excess (10 against 5.8) the women's line has power 0.19 (heterogeneity P 2.4e-4): no flag either. FinnGen R11's
-  deaths put T with fewer deaths, flat (P 0.83; T at 0.08 % in Finns), a database line (D29.1); Pilling 2017's four
+  −0.0133: power 0.39, heterogeneity P 0.0064 (derived), short of D21's power, so no flag; on the printed OR 4.2
+  it expects −0.0232: power 0.76, heterogeneity P 6.8e-4, still short of 0.8, so no flag either way, though near it; on the women's own
+  excess (10 against 5.8) the women's line has power 0.19 (heterogeneity P 2.4e-4): no flag either. UK Biobank's imputed deposits put T at 0.18 % (Park's and Pilling's lines), against 0.32 % in gnomAD and 0.17 % in
+  Kolbe's controls: either T is under-called there, which weakens Park's lines, the women's included, or its true
+  frequency is lower, so that Kolbe's controls are not thin and D34.7's premise fails for this row; which holds is
+  unknown, named and put to the lead. FinnGen R11's deaths put T with fewer deaths, flat (P 0.83; T at 0.08 % in Finns), a database line (D29.1); Pilling 2017's four
   parental scans flat (P 0.56 to 0.91); Timmers 2019, Zenin 2019, Foote 2025 and Deelen 2019 hold no line at it
   (untested), Deelen's strongest window lines (the 90th's 17:17,103,590 at 0.03, P 0.0089; the 99th's 17:17,325,902
   at 0.31, P 0.0012) too common to tag it; Wright 2019's strongest line within 500 kb, the current-age scan's
-  rs4985696 212 kb away (P 1.9e-4), is common and cannot tag it, and nothing is listed at the lead under its P 0.003
+  rs4985696 115 kb away (P 1.9e-4), is common and cannot tag it, and nothing is listed at the lead under its P 0.003
   cut (unknown above it). The literature search (the rsID with FLCN and longevity, 2026-11-16;
   Semantic Scholar and the preprint index answered 429, their part unchecked) finds Kolbe alone on the variant, and
   Gharbi 2013 (PMID 23566034), where losing folliculin lengthens a worm's life, an animal result, named, not carried. Exceptional survival +
@@ -165,5 +168,5 @@ studies:
     effect_unit: Martingale residual of a Cox model of own survival per T allele (positive = more deaths than expected, shorter life)
     effect_allele: T
     direction: risk
-    statistical_test: "Park 2025's whole-cohort deposit (GCST90551884, q129), columns swapped (q32's reading): T β +0.0153, SE 0.0098, one-sided 0.059 against; under Kolbe's own APOE ratio (q26 against Park's q32, D31.12) the reference read expects −0.0133: power 0.39, heterogeneity P 0.0064 (derived), no flag; men −0.0101, P 0.53 (q130); women +0.0377, SE 0.0116, P 0.0011 (q131), power 0.19 on the women's own excess, heterogeneity P 2.4e-4"
+    statistical_test: "Park 2025's whole-cohort deposit (GCST90551884, q129), columns swapped (q32's reading): T β +0.0153, SE 0.0098, one-sided 0.059 against; under Kolbe's own APOE ratio (q26 against Park's q32, D31.12) the reference read expects −0.0133: power 0.39, heterogeneity P 0.0064 (derived), no flag; on the printed 4.2 power 0.76, heterogeneity P 6.8e-4, no flag; T at 0.18 % in the deposit (unexplained against gnomAD's 0.32 %); men −0.0101, P 0.53 (q130); women +0.0377, SE 0.0116, P 0.0011 (q131), power 0.19 on the women's own excess, heterogeneity P 2.4e-4"
     curator: claude-opus-5-5
