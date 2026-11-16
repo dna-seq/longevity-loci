@@ -1,0 +1,113 @@
+# The seed list's locus 129, KANSL1 (17q21.31), with locus 142 (MAPT) folded in (D14, D39.2): a marker of biological ageing
+# (D32, D36.3, D37.3), curated on D37.12 with 23 TERC as the pattern. Curated 2026-11-16. The two seed ids are Jawinski
+# 2025's two leads at one locus, its locus 49, the 17q21.31 inversion: rs4327091 (142's) leads the combined analysis,
+# rs2260227 (129's, 2.4 kb upstream of KANSL1, GRCh38 17:46,227,833 T/C, C at 21.8 % in gnomAD's non-Finnish Europeans)
+# white matter. The row carries rs4327091, 142's id, which the combined set leads and every deposit holds, filed under
+# 129, the lower seed id (D14, D39.2): intronic
+# in MAPT's MANE transcript, GRCh38 17:45,944,351, GRCh37 17:44,021,717, multi-allelic G/A/C, the row meaning G/A; A at
+# 21.7 % in the same genomes, r² 1.00 in CEU with rs17651549, the H1/H2 inversion tag. A is the older-brain allele.
+locus_id: 129
+locus_name: KANSL1
+also_loci: [142]
+verdict: kept
+verdict_reason: >-
+  Tier B on the marker's own evidence (D37.12; the seed gives none): the tier grades the association with the brain
+  age gap, MRI-predicted brain age minus calendar age, not longevity, and this row is unscored (D32, D37.3). Jawinski
+  2025's strongest locus tags the 17q21.31 inversion. Its European meta-analysis (Table B13, 54,890) prints rs2260227
+  with T at 0.777, −0.483 years (SE 0.025), P 9.4e-83, white matter, and rs4327091 with A at 0.221, +0.446 (SE 0.024),
+  P 3.0e-76, grey and white matter, both as locus 49; their minor alleles (C, A) both raise brain age. Open Targets'
+  combined-analysis set is led by rs4327091 and holds rs2260227 (129's seed id), so the two ids are one signal: 142
+  folds in here, under the lower seed id, the row carrying 142's rs4327091 (D14, D39.2; Ensembl's LD panel has no genotypes for rs2260227, so no r² between them is printed). The locus was found in
+  32,634 White British UK Biobank participants and replicated in 22,256 Europeans outside them, on the same side
+  (Table B7: grey and white matter, lead rs199737620, +0.494, P 5.3e-49, then +0.444, P 1.1e-26, heterogeneity P 0.11;
+  white matter, lead rs111854640, +0.494, P 2.3e-53, then +0.463, P 6.9e-31, heterogeneity P 0.089): the replications
+  a little smaller and inside the discovery's intervals, no D21 flag. No study reaches §4.1's 100k: B. Lifespan
+  look-ups, unscored and read for A, two-sided at 0.05 (D38.6): Timmers 2019 A beta1 +0.0136 (SE 0.0049), P 0.0053,
+  A with longer life; Pilling 2017's both parents G +0.0054 (SE 0.0027), P 0.045, so A with longer-lived parents
+  (mothers 0.21, fathers 0.094, top 10 % 0.12); Park 2025's own survival G +0.0029 (SE 0.0008), P 0.00035, so A with
+  fewer deaths (men 0.0015, women 0.072); FinnGen R11's deaths A −0.0305 (SE 0.0135), P 0.024, a database line; Deelen
+  2019 A more often among the long-lived, 90th +0.111 (SE 0.028), P 6.7e-5, and 99th +0.159 (SE 0.041), P 9.9e-5;
+  Zenin 2019's healthspan P 0.30. Foote 2025's deposits hold no line (untested). rs2260227's own lines agree where
+  they exist (Deelen 99th C more often long-lived, P 9.9e-5; Park P 0.0013; FinnGen P 0.020; Timmers, Pilling and
+  Zenin hold none). So the allele with the older-looking brain goes with the longer life, the opposite of what the
+  marker suggests, named as a fact and not read further. The literature search (both rsIDs, 2026-11-16; Semantic
+  Scholar answered 429, its part unchecked) finds Jawinski and a 2026 preprint on brain-ageing regulatory variants
+  that ranks the MAPT locus first (abstract only), no test of lifespan at these ids. Every genotype neutral, each conclusion a tendency of the marker with no colour (D32,
+  D37.12); `direction: unknown`. Outcome cells read for A: exceptional survival + (Deelen 90th and 99th, two-sided
+  6.7e-5 and 9.9e-5, A more often long-lived); lifespan + (Timmers 0.0053, Pilling 0.045, Park 0.00035, FinnGen 0.024,
+  all A with longer life); healthspan 0 (Zenin flat). Mechanism: markers of biological ageing. Pleiotropy `mech:cvd`
+  (A lowers systolic blood pressure, P 7e-11) and `broad`: rs4327091 sits in 3,354 Open Targets credible sets across
+  the inversion, named, not read one by one; no `tradeoff`, the row naming no longevity-favoured allele. Causal C3: the
+  brain-age sets span hundreds of variants, rs2260227 at PIP 0.004 in its own and rs4327091 at 0.0002 in the combined.
+  Effector E3, left open across the inversion (D39.2): locus-to-gene STH 0.14, MAPT 0.13 on the combined set, no gene
+  near 0.5; the variant is intronic in MAPT, rs2260227 upstream
+  of KANSL1. Descriptive. Age of action
+  unknown. The evidence is European.
+axes:
+  tier: {value: B, cites: [pmid-41044200#q1, pmid-41044200#q2, pmid-41044200#q3, pmid-41044200#q7, pmid-41044200#q8, pmid-41044200#q9, pmid-41044200#q10, pmid-41044200#q12, pmid-41044200#q13, pmid-41044200#q14, pmid-41044200#q15, pmid-41044200#q17, pmid-41044200#q18, db-gwascatalog-2026.10.29#q790, db-gwascatalog-2026.10.29#q792, db-gwascatalog-2026.10.29#q794, db-gwascatalog-2026.10.29#q795, db-opentargets-26.09#q1465, db-opentargets-26.09#q1466, db-opentargets-26.09#q1467, db-ensembl-116#q1112, db-ensembl-116#q1117, db-ensembl-116#q1118, db-ensembl-116#q1121]}
+  mechanism: {value: ageing_markers, cites: [pmid-41044200#q1, pmid-41044200#q3, db-gwascatalog-2026.10.29#q791]}
+  pleiotropy: {values: ["mech:cvd", broad], cites: [db-gwascatalog-2026.10.29#q796, db-gwascatalog-2026.10.29#q797, db-gwascatalog-2026.10.29#q798, db-opentargets-26.09#q1475]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "+",
+            cites: [pmid-31413261#q356, pmid-31413261#q357, pmid-31413261#q358, pmid-31413261#q359, pmid-30642433#q421, pmid-29227965#q260, pmid-29227965#q261, pmid-29227965#q262, pmid-29227965#q263, pmid-40021682#q206, pmid-40021682#q207, pmid-40021682#q208, pmid-40021682#q209, pmid-40021682#q210, pmid-40021682#q211, db-finngen-r11#q125, db-finngen-r11#q126, pmid-30729179#q184]}
+  actionability: {label: descriptive, cites: [pmid-41044200#q18]}
+  context: {values: [], cites: []}
+flags:
+  - {token: "causal:C3", cites: [db-opentargets-26.09#q1464, db-opentargets-26.09#q1465, db-opentargets-26.09#q1466, db-opentargets-26.09#q1467, db-opentargets-26.09#q1472, db-opentargets-26.09#q1473, db-opentargets-26.09#q1474]}
+  - {token: "effector:E3", cites: [db-opentargets-26.09#q1468, db-opentargets-26.09#q1469, db-opentargets-26.09#q1470, db-opentargets-26.09#q1471, db-ensembl-116#q1114, db-ensembl-116#q1115, db-ensembl-116#q1119, db-ensembl-116#q1120]}
+variants:
+  - rsid: rs4327091
+    locus: {chrom: "17", start: 45944351, ref: G, cites: [db-ensembl-116#q1116]}  # rs4327091 is multi-allelic (G/A/C); the row means G and A
+    gene: MAPT
+    phenotype: MAPT/KANSL1 inversion, brain age gap
+    trait_efo_id: EFO_0010602
+    effect_allele: A
+    effect_size: 0.44592484
+    effect_measure: beta
+    stat_significance: significant
+    direction: unknown
+    genotypes:
+      - genotype: A/A
+        state: neutral
+        conclusion: >-
+          You carry two copies of the A version of this DNA position (about 5 in 100 people of European ancestry do).
+          It marks a long stretch of chromosome 17 that sits in the reverse orientation. Large studies link each copy
+          of A with a brain that looks about half a year older on MRI scans than expected for its age. That is a
+          tendency in a marker whose reading only means something against your calendar age, which this report does
+          not have, so it carries no score.
+      - genotype: A/G
+        state: neutral
+        conclusion: >-
+          You carry one copy of the A version of this DNA position (about 34 in 100 people of European ancestry do).
+          It marks a long stretch of chromosome 17, around the MAPT gene, that sits in the reverse orientation. Large
+          studies link it with a brain that looks about half a year older on MRI scans than expected for its age. That
+          is a tendency in a marker whose reading only means something against your calendar age, which this report
+          does not have, so it carries no score.
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position (about 61 in 100 people of European ancestry
+          do). It is the reference the other combinations are compared with. The position lies inside MAPT, the gene
+          for the tau protein, in a region of chromosome 17 that comes in two orientations. Brain age, estimated from
+          MRI scans, is a marker whose reading only means something against your calendar age, which this report does
+          not have, so this result carries no score.
+studies:
+  - rsid: rs4327091
+    note: pmid-41044200
+    quote: q18
+    phenotype_class: BIOMARKER
+    study_design: meta_analysis
+    population: European (UK Biobank's White British discovery and its European replication)
+    ancestry: [EUR]
+    sample_size: 54890
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "3.005e-76"
+    p_value_num: 3.005e-76
+    effect_size: 0.44592484
+    effect_measure: beta
+    effect_unit: years of brain age gap (grey and white matter) per A allele
+    effect_allele: A
+    direction: unknown
+    statistical_test: "Jawinski 2025's GWAS of the MRI brain age gap (q1 to q3); Table B13 (title q14, header q15): locus 49, rs4327091 A (0.221) β +0.446 (SE 0.024), P 3.0e-76, N 54,890 (q18), and rs2260227, 129's id, T (0.777) −0.483, P 9.4e-83 (q17; Table 2, q7, q8); Table B7 (q9, q10): the locus replicated, q12, q13; a marker study (D32, D37.12)"
+    curator: claude-opus-5-5

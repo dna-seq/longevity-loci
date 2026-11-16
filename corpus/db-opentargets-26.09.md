@@ -5065,3 +5065,36 @@ under 0.5, no colocalisation read, E3. Two other HDL sets and a brain exon set n
 0.36, G +0.269 (q1455, q1456); Leonardsen's PIP 0.30 (q1457, q1458); Zhao's PIP 0.24 (q1459, q1460). Locus-to-gene on
 Jawinski's set (q1461): KLF3 0.47, the only gene (q1462, q1463): under 0.5, E3. Many brain imaging, adiposity and
 blood count sets named, not read. For row 115.
+
+## Reading 2026-11-16, record
+
+> [q1464] data.credibleSets count 4
+
+> [q1465] data.credibleSets.rows[1].study id GCST90965684 traitFromSource Brain age gap derived from combined gray and white matter nSamples 54890
+
+> [q1466] data.credibleSets.rows[1].variant id 17_45944351_G_A
+
+> [q1467] data.credibleSets.rows[1].locus.rows[0] posteriorProbability 0.00021837142416893023 beta null
+
+> [q1468] data.credibleSets.rows[1].l2GPredictions.rows[0] score 0.14094392955303192
+
+> [q1469] data.credibleSets.rows[1].l2GPredictions.rows[0].target approvedSymbol STH
+
+> [q1470] data.credibleSets.rows[1].l2GPredictions.rows[1] score 0.1288745105266571
+
+> [q1471] data.credibleSets.rows[1].l2GPredictions.rows[1].target approvedSymbol MAPT
+
+> [q1472] data.credibleSets.rows[2].study id GCST90965683 traitFromSource Brain age gap derived from white matter nSamples 54890
+
+> [q1473] data.credibleSets.rows[2].variant id 17_46227833_T_C
+
+> [q1474] data.credibleSets.rows[2].locus.rows[0] posteriorProbability 0.00410308558337484 beta 0.4834772
+
+> [q1475] data.variant.credibleSets count 3354
+
+Jawinski 2025's brain-age sets holding rs2260227 (17_46227833_T_C, row 129): four (q1464). The combined grey-and-white set
+(GCST90965684, 54,890) is led by 17_45944351_G_A, rs4327091 (row 142), and holds rs2260227 at PIP 0.0002 (q1465 to
+q1467): the two seed ids sit in one set. Locus-to-gene on it: STH 0.14, MAPT 0.13 (q1468 to q1471). The white-matter
+set (GCST90965683) is led by rs2260227 itself, PIP 0.004 (q1472 to q1474). The sets are hundreds of variants wide
+across the inversion: C3 for either id, and no gene near 0.5, E3. rs4327091 sits in 3,354 credible sets (q1475), the
+17q21.31 inversion's breadth. For rows 129 and 142.

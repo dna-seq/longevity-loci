@@ -2786,3 +2786,30 @@ Zhao's (PMID 40795387), G +0.189, P 1e-14 (q778, q779); Leonardsen's (PMID 37165
 q781); both papers unread, their samples' overlap with Jawinski's UK Biobank unread. A raises body mass index (+0.031,
 P 4e-13; q782 to q784) and body fat percentage (P 1e-8; q785, q786) and lowers hand grip strength (P 9e-9;
 q787, q788). Brain imaging, blood count and liver enzyme lines named, not read. For row 115.
+
+## Reading 2026-11-16, record
+
+> [q790] _embedded.associations[0] association_id 222822401 risk_frequency 0.7774 pvalue_description pvalue_mantissa 9 pvalue_exponent -83 multi_snp_haplotype false snp_interaction false range [0.43-0.53] beta 0.4834772 years decrease p_value 9e-83 accession_id GCST90965683 pubmed_id 41044200 first_author Jawinski P ci_lower 0.43 ci_upper 0.53
+
+> [q791] _embedded.associations[0].efo_traits[0] efo_id EFO_0010602 efo_trait brain age measurement
+
+> [q792] _embedded.associations[0].snp_effect_allele[0] rs2260227-T
+
+> [q793] page size 200 totalElements 1 totalPages 1 number 0
+
+> [q794] _embedded.associations[0] association_id 222822566 risk_frequency 0.2208 pvalue_description pvalue_mantissa 3 pvalue_exponent -76 multi_snp_haplotype false snp_interaction false range [0.4-0.49] beta 0.44592485 years increase p_value 2.9999999999999996e-76 accession_id GCST90965684 pubmed_id 41044200 first_author Jawinski P ci_lower 0.4 ci_upper 0.49
+
+> [q795] _embedded.associations[0].snp_effect_allele[0] rs4327091-A
+
+> [q796] _embedded.associations[1] association_id 100041230 risk_frequency NR pvalue_description pvalue_mantissa 7 pvalue_exponent -11 multi_snp_haplotype false snp_interaction false range [0.22-0.4] beta 0.31 unit decrease p_value 6.999999999999999e-11 accession_id GCST90132903 pubmed_id 35762941 first_author Plotnikov D ci_lower 0.22 ci_upper 0.4
+
+> [q797] _embedded.associations[1].efo_traits[0] efo_id EFO_0006335 efo_trait systolic blood pressure
+
+> [q798] _embedded.associations[1].snp_effect_allele[0] rs4327091-A
+
+> [q799] page size 200 totalElements 2 totalPages 1 number 0
+
+rs2260227 (row 129): one association (q793), Jawinski 2025's white-matter brain age gap, T (0.7774) 0.483 years decrease,
+P 9e-83 (q790, q792; trait EFO_0010602, q791). rs4327091 (row 142): two (q799), Jawinski's grey-and-white brain age
+gap, A (0.2208) P 3e-76 (q794, q795), and Plotnikov's systolic blood pressure, A 0.31 decrease, P 7e-11 (q796 to
+q798). For rows 129 and 142.

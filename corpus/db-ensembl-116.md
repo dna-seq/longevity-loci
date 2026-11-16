@@ -3909,3 +3909,33 @@ VEP's reach (q1104, q1105). For row 161.
 rs13132853 (row 115): GRCh38 4:38,678,394, multi-allelic A/G/T, A ancestral (q1106); A at 66.5 % and G at 33.6 % in
 gnomAD's non-Finnish European genomes (q1107, q1108); intronic in KLF3's MANE transcript, NM_016531.6 (q1109, q1110). For
 row 115.
+
+## Reading 2026-11-16, record
+
+> [q1111] mappings[0] location 17:46227833-46227833 ancestral_allele C assembly_name GRCh38 start 46227833 strand 1 end 46227833 allele_string T/C seq_region_name 17 coord_system chromosome
+
+> [q1112] populations[8] population gnomADg:nfe allele_count 14763 allele C frequency 0.2178
+
+> [q1113] populations[9] frequency 0.7822 allele_count 53031 allele T population gnomADg:nfe
+
+> [q1114] [0].transcript_consequences[1] biotype protein_coding strand -1 impact MODIFIER distance 2444 transcript_id ENST00000574590 gene_symbol_source HGNC gene_id ENSG00000120071 gene_symbol KANSL1 variant_allele C hgnc_id HGNC:24565
+
+> [q1115] [0].transcript_consequences[1].consequence_terms[0] upstream_gene_variant
+
+> [q1116] mappings[0] ancestral_allele G location 17:45944351-45944351 start 45944351 coord_system chromosome end 45944351 strand 1 allele_string G/A/C seq_region_name 17 assembly_name GRCh38
+
+> [q1117] populations[21] allele A frequency 0.2171 population gnomADg:nfe allele_count 14761
+
+> [q1118] populations[22] allele G allele_count 53259 frequency 0.783 population gnomADg:nfe
+
+> [q1119] [0].transcript_consequences[0] gene_symbol MAPT strand 1 variant_allele A mane_select NM_001377265.1 impact MODIFIER hgnc_id HGNC:6893 gene_id ENSG00000186868 transcript_id ENST00000262410 canonical 1 gene_symbol_source HGNC biotype protein_coding
+
+> [q1120] [0].transcript_consequences[0].consequence_terms[0] intron_variant
+
+> [q1121] [2167] variation1 rs4327091 r2 1.000000 variation2 rs17651549 d_prime 1.000000 population_name 1000GENOMES:phase_3:CEU
+
+rs2260227 (row 129): GRCh38 17:46,227,833 T/C, C ancestral (q1111); C at 21.8 % and T at 78.2 % in gnomAD's non-Finnish
+European genomes (q1112, q1113); 2.4 kb upstream of KANSL1 (q1114, q1115). Ensembl's 1000 Genomes LD panel holds no
+genotypes for it (its pairwise and window queries return nothing). rs4327091 (row 142): GRCh38 17:45,944,351, multi-allelic
+G/A/C, G ancestral (q1116); A at 21.7 % and G at 78.3 % (q1117, q1118); intronic in MAPT's MANE transcript (q1119,
+q1120); r² 1.00 with rs17651549, MAPT's H1/H2 inversion tag, in CEU (q1121). For rows 129 and 142.
