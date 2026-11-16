@@ -745,3 +745,9 @@ FinnGen R11's PheWeb variant API (`/api/variant/CHROM-POS-REF-ALT`, 2026-11-16) 
 form, row 125) and for 9-20770090-G-A (rs199678370, row 126); the same call answered 200 for 12-55723786-C-T (q99), so
 the API worked and these variants are absent from the release. Nothing to quote: both rows' FinnGen look stays
 untested, not negative. For rows 125 and 126.
+
+## Reading 2026-11-16, record
+
+> [q101] 17 17215284 C T rs41419545 FLCN,MPRIP,RP11-45M22.4 0.834141 0.0787603 -0.0277516 0.132534 0.000764209 0.000869855 0.000750975
+
+FinnGen R11's DEATH endpoint at rs41419545 (row 140): T (0.00076, rare in Finns) β −0.028 (SE 0.133), P 0.83, fewer deaths, flat. A database line (D29.1). For row 140.

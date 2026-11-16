@@ -2199,3 +2199,9 @@ rs35705950 (row 138): the one lifespan association is Park 2025's men's GWAS (GC
 > [q589] _embedded.associations[35].snp_effect_allele[0] rs35705950-T
 
 rs35705950 and COVID-19 (row 138): T OR 0.89 for hospitalisation, P 4e-14 (q586, q587), and 0.86 for critical illness, P 4e-14 (q588, q589), Pairo-Castineira 2023; T, the fibrosis and shorter-life allele, is the protective side, so G, the longer-lived, is the side with more severe COVID-19. A 'COVID-19 severity' line (GCST90274862) prints its effect allele as '?' and is set aside. For row 138.
+
+## Reading 2026-11-16, record
+
+> [q590] page size 200 totalElements 0 totalPages 0 number 0
+
+rs41419545 (row 140): no association in the catalogue (q590). For row 140.

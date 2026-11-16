@@ -1,0 +1,169 @@
+# The seed list's locus 140, FLCN (17p11.2). Curated 2026-11-16. Lead rs41419545, the seed's only rsID (Kolbe 2025's
+# German exome study): missense in FLCN, alanine 445 to threonine on the MANE Select transcript ENST00000285071
+# (NM_144997.7), GRCh38 17:17,215,284 C/T (multi-allelic, C/A/G/T), GRCh37 17:17,118,598. T, the rare allele, is at
+# 0.318 % in gnomAD's non-Finnish European exomes and 0.334 % in its genomes, and is the discovery's longer-lived side.
+# Open Targets 26.09 has no credible set at it; the GWAS Catalog (2026-10-29) holds no association.
+locus_id: 140
+locus_name: FLCN
+verdict: kept
+verdict_reason: >-
+  Tier C, the seed's: a sub-genome-wide discovery in one sample, old against young (R-TIER-2, R-TIER-4), unreplicated
+  (§4.1's C). Kolbe 2025 sequenced the exomes of 1,245 German long-lived individuals (past the 95th age-at-death
+  percentile of their birth cohort) and 4,105 younger controls; T was at 0.72 % among the long-lived and 0.17 % among
+  the controls, OR 4.2 (Haldane-corrected), P 1.9e-6, FDR-adjusted 0.036 under the paper's exploratory false-discovery
+  rate of 0.05, its own exome-wide call, not a genome-wide one (D31.13). On 2,490 and 8,210 alleles that is about 18
+  copies against 14. The controls sit well under the reference D31.13 fixes, gnomAD's non-Finnish European exomes
+  (0.318 %: 26.1 expected, 14 seen, P 0.0073), as Kolbe's pooled controls do (D34.7), so the row reads the long-lived
+  against the reference, as 107: 18 copies where 7.9 are expected, OR 2.28, exact Poisson P 0.0014 (derived), the
+  paper's own OR against gnomAD (2.28), which back-solves to the exomes' frequency (0.318 %); against the genomes (8.3
+  expected) OR 2.18, P 0.0024. The printed 4.2 is named, not read. Kolbe chose its hits from about 98,000 rare
+  variants, so a reference OR still carries that selection, uncorrected (D34.14). The authors note gnomAD's
+  non-Finnish Europeans are mostly British. By the printed percentages and the long-lived's 2.7:1 women to men, about
+  8 copies in 336 men (2.1 expected from gnomAD, P 0.0016) and 10 in 909 women (5.8 expected, P 0.069) (derived): the
+  men's share (8 of 18) is above their 27 % of the long-lived, as across Kolbe's rows (D34.7, D34.14), named, no
+  token. The gene-based FLCN mask is this variant's signal (q23). Look-ups in the paper go the same way, short of
+  nominal: the Ashkenazi sample 3 long-lived copies against none (OR 6.76, P 0.178, read as printed, as row 120's Q1
+  (a) settled), and the Leiden sample 2 against none, no test printed. Park 2025's UK Biobank own-survival deposits
+  hold it (each with its columns swapped): the whole cohort puts T with more deaths, +0.0153 (SE 0.0098), P 0.12,
+  one-sided 0.059 against; the men flat (P 0.53); the women against, +0.0377 (SE 0.0116), P 0.0011. Carried to
+  Park's scale by Kolbe's own APOE line (ε4 OR 0.45 against Park's ε4 β 0.0129, D31.12), the reference read expects
+  −0.0133: power 0.39, heterogeneity P 0.0064 (derived), short of D21's power, so no flag; on the women's own
+  excess (10 against 5.8) the women's line has power 0.19 (heterogeneity P 2.4e-4): no flag either. FinnGen R11's
+  deaths put T with fewer deaths, flat (P 0.83; T at 0.08 % in Finns), a database line (D29.1); Pilling 2017's four
+  parental scans flat (P 0.56 to 0.91); Timmers 2019, Zenin 2019, Foote 2025 and Deelen 2019 hold no line at it
+  (untested), Deelen's strongest window lines (the 90th's 17:17,103,590 at 0.03, P 0.0089; the 99th's 17:17,325,902
+  at 0.31, P 0.0012) too common to tag it; Wright 2019's strongest line within 500 kb, the current-age scan's
+  rs4985696 212 kb away (P 1.9e-4), is common and cannot tag it, and nothing is listed at the lead under its P 0.003
+  cut (unknown above it). The literature search (the rsID with FLCN and longevity, 2026-11-16;
+  Semantic Scholar and the preprint index answered 429, their part unchecked) finds Kolbe alone on the variant, and
+  Gharbi 2013 (PMID 23566034), where losing folliculin lengthens a worm's life, an animal result, named, not carried. Exceptional survival +
+  (the reference read, P 0.0014, D34.7); lifespan 0 (Park's whole cohort leans against at one-sided 0.059, short of
+  D28.3's 0.05; FinnGen and Pilling flat; Park's women against at P 0.0011, a sex stratum, named and put to the
+  lead); healthspan untested (no Zenin or Foote line). Mechanism ageing in general (D25.7): the authors propose that
+  FLCN, which with SIK3 positively regulates mTORC1, carries a protein change that may lower mTORC1 signalling;
+  nothing recorded at the variant. Causal C4: no Open Targets set. Effector E1, FLCN, by §4.2's coding clause on the
+  MANE transcript (A445T; SIFT tolerated, PolyPhen benign, CADD 2.0). Descriptive. Age of action unknown. The
+  evidence is European.
+axes:
+  tier: {value: C, cites: [pmid-40232348#q40, pmid-40232348#q3, pmid-40232348#q2, pmid-40232348#q7, pmid-40232348#q12, pmid-40232348#q23, pmid-40232348#q24, pmid-40232348#q41, pmid-40232348#q42, pmid-40232348#q5, pmid-40232348#q16, pmid-40232348#q26, db-ensembl-116#q901, db-ensembl-116#q902, pmid-40021682#q129, pmid-40021682#q130, pmid-40021682#q131, pmid-40021682#q32, db-finngen-r11#q101, pmid-29227965#q178, pmid-29227965#q179, pmid-29227965#q180, pmid-29227965#q181, pmid-31413261#q308, pmid-31413261#q309, pmid-31484785#q175, db-gwascatalog-2026.10.29#q590]}
+  mechanism: {value: general_ageing, cites: [pmid-40232348#q14]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: untested, lifespan: "0", exceptional_survival: "+",
+            cites: [pmid-40232348#q40, db-ensembl-116#q901, pmid-40021682#q129, pmid-40021682#q131, db-finngen-r11#q101, pmid-29227965#q178]}
+  actionability: {label: descriptive, cites: [pmid-40232348#q40]}
+  context: {values: [eur_only_evidence], cites: [pmid-40232348#q3, pmid-40232348#q40]}
+flags:
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1242, db-opentargets-26.09#q1243]}
+  - {token: "effector:E1", cites: [db-ensembl-116#q903, pmid-40232348#q40]}
+variants:
+  - rsid: rs41419545
+    locus: {chrom: "17", start: 17215284, ref: C, cites: [db-ensembl-116#q900]}  # rs41419545 is multi-allelic (C/A/G/T); the row means C>T
+    gene: FLCN
+    phenotype: FLCN A445T, longevity
+    trait_efo_id: OBA_VT0005372
+    effect_allele: T
+    effect_size: 2.28
+    effect_measure: OR
+    stat_significance: nominal
+    direction: protective
+    genotypes:
+      - genotype: C/C
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position, as nearly everyone does. It is the
+          reference the other combinations are compared with. The position lies in the FLCN gene on chromosome 17.
+      - genotype: C/T
+        state: protective
+        conclusion: >-
+          You carry one copy of a rare version of this DNA position (about 1 in 160 people of European ancestry carry
+          it). It changes one building block of the FLCN protein, which helps control a cell-growth signal linked to
+          ageing. One German study found it about twice as often among very long-lived people as the wider European
+          population would lead one to expect. It has not been confirmed, and a large UK study did not see it with
+          longer lives, so this is weak, early evidence: a possible tendency, not destiny.
+      - genotype: T/T
+        state: protective
+        conclusion: >-
+          You carry two copies of a rare version of this DNA position, which is very unusual; the one study of it found
+          no one with two copies. One German study found single copies more often among very long-lived people, a
+          finding not yet confirmed, so nothing can be said about two copies.
+studies:
+  - rsid: rs41419545
+    note: pmid-40232348
+    quote: q40
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: German long-lived individuals against geographically matched younger controls (whole-exome sequencing)
+    ancestry: [EUR]
+    n_cases: 1245
+    sample_size: 5350
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: suggestive
+    p_value: "1.9x10−06"
+    p_value_num: 1.9e-06
+    effect_size: 4.2
+    effect_measure: OR
+    effect_unit: odds of being long-lived per T allele (Haldane-corrected)
+    effect_allele: T
+    direction: protective
+    statistical_test: "Kolbe 2025's STAAR-O single-variant test with sex and ten principal components (Table 1, q40, columns q3), MAC ≥ 5; cases past the 95th age-at-death percentile of their birth cohort (q7), an age threshold; FDR-adjusted 0.036 under an exploratory FDR < 0.05 (q2); T 0.72 % in the long-lived and 0.17 % in the controls, about 18 copies against 14; the controls under gnomAD exomes (26.1 expected, P 0.0073); named; by D34.7 read against the reference (the next entry)"
+    curator: claude-opus-5-5
+  - rsid: rs41419545
+    note: pmid-40232348
+    quote: q40
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: German long-lived individuals (Kolbe 2025) against gnomAD's non-Finnish European exomes as the reference
+    ancestry: [EUR]
+    n_cases: 1245
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: nominal
+    effect_size: 2.28
+    effect_measure: OR
+    effect_unit: odds of carrying T, the long-lived against the gnomAD exome reference
+    effect_allele: T
+    direction: protective
+    statistical_test: "The paper's own OR against gnomAD NFE (Table 1, q40, columns q3), back-solving to the exomes' 0.318 % (db-ensembl-116#q901); the row's read effect by D34.7. About 18 copies in 2,490 long-lived alleles against 7.9 expected: exact Poisson P 0.0014 (derived); against the genomes (0.334 %, q902) OR 2.18, P 0.0024; the hits were chosen from about 98,000 rare variants, so this OR still carries the selection, uncorrected (D34.14); the authors note gnomAD NFE is mostly British (q12)"
+    curator: claude-opus-5-5
+  - rsid: rs41419545
+    note: pmid-40232348
+    quote: q41
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: Ashkenazi Jewish long-lived individuals against matched younger controls (Kolbe 2025's look-up)
+    ancestry: [EUR]
+    n_cases: 515
+    sample_size: 1011
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: not_significant
+    p_value: "1.78 × 10−01"
+    p_value_num: 0.178
+    effect_size: 6.76
+    effect_measure: OR
+    effect_unit: odds of being long-lived per T allele
+    effect_allele: T
+    direction: protective
+    statistical_test: "Kolbe 2025's look-up (Table 5, q41; q5): 3 T copies in the long-lived, none in the controls; read as printed (row 120's Q1, (a)); one-sided 0.089, the same direction, not a pass"
+    curator: claude-opus-5-5
+  - rsid: rs41419545
+    note: pmid-40021682
+    quote: q129
+    phenotype_class: OWN_SURVIVAL
+    study_design: own_survival_cox
+    population: European (UK Biobank, whole cohort)
+    ancestry: [EUR]
+    sample_size: 393833
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.12"
+    p_value_num: 0.12
+    effect_size: 0.0153
+    effect_measure: beta
+    effect_unit: Martingale residual of a Cox model of own survival per T allele (positive = more deaths than expected, shorter life)
+    effect_allele: T
+    direction: risk
+    statistical_test: "Park 2025's whole-cohort deposit (GCST90551884, q129), columns swapped (q32's reading): T β +0.0153, SE 0.0098, one-sided 0.059 against; under Kolbe's own APOE ratio (q26 against Park's q32, D31.12) the reference read expects −0.0133: power 0.39, heterogeneity P 0.0064 (derived), no flag; men −0.0101, P 0.53 (q130); women +0.0377, SE 0.0116, P 0.0011 (q131), power 0.19 on the women's own excess, heterogeneity P 2.4e-4"
+    curator: claude-opus-5-5

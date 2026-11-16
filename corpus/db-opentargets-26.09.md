@@ -4434,3 +4434,11 @@ q1231), the variant at PIP 0.024 (q1232), membership only; no lifespan-class set
 > [q1241] data.variant.credibleSets.rows[2].locus.rows[0] posteriorProbability 0.9999885463224875 beta 0.04828 pValueMantissa 3.190000057220459 pValueExponent -18
 
 11_1219991_G_T (row 138), read whole: of the 67 sets, 59 are GWAS sets of lung disease (fibrosis, interstitial disease, respiratory failure, pneumonia), COVID-19, white-cell, neutrophil and monocyte counts, creatinine and bicarbonate, 7 are GTEx lung QTL sets of MUC5B and 1 a UK Biobank plasma SFTPD protein QTL set; none is a lifespan, longevity, parental-age or healthspan study. A white-cell count set at PIP 1.00, T β +0.048 (q1240, q1241). For row 138.
+
+## Reading 2026-11-16, record
+
+> [q1242] data.variant.credibleSets count 0
+
+> [q1243] data variant null
+
+17_17215284_C_T (rs41419545's T; row 140): no credible set (q1242); the reversed id has no record (q1243). For row 140.

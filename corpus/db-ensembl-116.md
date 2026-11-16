@@ -3279,3 +3279,17 @@ East Asian panel 0.68 (q893). The two Han panels clear 0.8 narrowly and the pool
 > [q899] [0].transcript_consequences[3].consequence_terms[0] upstream_gene_variant
 
 rs35705950 (row 138): GRCh38 11:1,219,991, multi-allelic G/A/T (q894); T, the row's allele, at 0.110 in gnomAD's non-Finnish European genomes (q895), 0.0070 in East Asian (q896) and 0.115 in Finnish (q897). On MUC5B's MANE Select transcript (ENST00000529681, NM_002458.3) T is upstream, 3,075 bases from the transcript (q898, q899), in the promoter region; the record's first listed consequence, a splice-region change in a lncRNA, is allele A's and another transcript's. Ensembl's pairwise LD service returned no pair for rs35705950 with rs10082701 (Wright's line 416 kb away) in CEU, so r² is below its reporting floor (0.05). For row 138.
+
+## Reading 2026-11-16, record
+
+> [q900] mappings[0] start 17215284 location 17:17215284-17215284 ancestral_allele C strand 1 end 17215284 coord_system chromosome seq_region_name 17 allele_string C/A/G/T assembly_name GRCh38
+
+> [q901] populations[21] allele_count 3534 population gnomADe:nfe frequency 0.003178 allele T
+
+> [q902] populations[32] allele T frequency 0.003337 population gnomADg:nfe allele_count 227
+
+> [q903] [0].transcript_consequences[2] amino_acids A/T hgnc_id HGNC:27310 impact MODERATE cds_start 1333 canonical 1 protein_start 445 biotype protein_coding variant_allele T gene_id ENSG00000154803 sift_score 0.59 codons Gca/Aca transcript_id ENST00000285071 mane_select NM_144997.7 cds_end 1333 strand -1 cdna_start 1817 protein_end 445 cdna_end 1817 gene_symbol FLCN sift_prediction tolerated gene_symbol_source HGNC polyphen_score 0 polyphen_prediction benign
+
+rs41419545 (row 140): GRCh38 17:17,215,284, multi-allelic C/A/G/T (q900); T at 0.318 % in gnomAD's non-Finnish European
+exomes (q901) and 0.334 % in its genomes (q902); on FLCN's MANE Select transcript (NM_144997.7) T is missense,
+alanine 445 to threonine (q903; FLCN on the minus strand, Gca to Aca). For row 140.
