@@ -4626,3 +4626,21 @@ q1287). For row 30.
 > [q1295] data.credibleSet.l2GPredictions.rows[1].target approvedSymbol TPMT
 
 6_18120798_A_T (rs10949481, row 105): 32 credible sets (q1288), most NHLRC1 expression and splicing sets at low PIP; McCartney's IEAA set (GCST90014290, q1289) at PIP 0.722 (q1290), SuSiE-inf (q1291): C1. Locus-to-gene NHLRC1 0.646, TPMT 0.555 (q1292 to q1295). For row 105.
+
+## Reading 2026-11-16, record
+
+> [q1296] data.variant.credibleSets count 10
+
+> [q1297] data.variant.credibleSets.rows[6].study id GCST90268497 traitFromSource Mitochondrial DNA copy number (adjusted) studyType gwas
+
+> [q1298] data.variant.credibleSets.rows[6].locus.rows[0] posteriorProbability 0.9999999937070642 beta 0.05475363000109338 pValueMantissa null pValueExponent null
+
+> [q1299] data.variant.credibleSets.rows[4].study id GCST90026371 traitFromSource Mitochondrial DNA copy number studyType gwas
+
+> [q1300] data.variant.credibleSets.rows[4].locus.rows[0] posteriorProbability 0.9999262839112656 beta 0.0754 pValueMantissa 1.9900000095367432 pValueExponent -95
+
+> [q1301] data.variant.credibleSets.rows[1].study id UKB_PPP_EUR_LONP1_P36776_OID30219_v1 traitFromSource LONP1:P36776:OID30219:v1 studyType pqtl
+
+> [q1302] data.variant.credibleSets.rows[1].locus.rows[0] posteriorProbability 0.5889738385126662 beta -0.08153998890573526 pValueMantissa null pValueExponent null
+
+19_5711919_C_T (rs11085147, row 106): 10 credible sets (q1296); Gupta's adjusted copy-number set (q1297) at PIP 1.00 (q1298), Chong's (q1299) at 1.00 (q1300): C1; LONP1's own protein-level set (UKB-PPP, q1301) at 0.59 (q1302). For row 106.

@@ -3620,3 +3620,17 @@ rs2736100 (row 30): GRCh38 5:1,286,401 C/A, A ancestral (q1005); A at 49.7 % in 
 > [q1017] [0] population_name 1000GENOMES:phase_3:CEU d_prime 1.000000 variation2 rs143093668 r2 1.000000 variation1 rs10949481
 
 rs10949481 (row 105): GRCh38 6:18,120,798 A/T, T ancestral (q1012); T at 4.3 % in gnomAD's non-Finnish European genomes (q1013, q1014); 3′ UTR of NHLRC1's MANE transcript (q1015, q1016); r² 1.00 with Lu 2018's rs143093668 in CEU (q1017). For row 105.
+
+## Reading 2026-11-16, record
+
+> [q1018] mappings[0] assembly_name GRCh38 ancestral_allele C end 5711919 seq_region_name 19 strand 1 location 19:5711919-5711919 start 5711919 coord_system chromosome allele_string C/T
+
+> [q1019] populations[27] population gnomADg:nfe frequency 0.09196 allele T allele_count 6255
+
+> [q1020] populations[28] frequency 0.908 population gnomADg:nfe allele_count 61763 allele C
+
+> [q1021] [0].transcript_consequences[0] gene_symbol LONP1 gene_symbol_source HGNC cdna_start 736 codons cGg/cAg cds_end 722 canonical 1 variant_allele T biotype protein_coding transcript_id ENST00000360614 impact MODERATE amino_acids R/Q sift_prediction deleterious_low_confidence protein_end 241 strand -1 polyphen_score 0.03 sift_score 0.03 gene_id ENSG00000196365 polyphen_prediction benign mane_select NM_004793.4 cdna_end 736 hgnc_id HGNC:9479 cds_start 722 protein_start 241
+
+> [q1022] [0].transcript_consequences[0].consequence_terms[0] missense_variant
+
+rs11085147 (row 106): GRCh38 19:5,711,919 C/T, C ancestral (q1018); T at 9.2 % in gnomAD's non-Finnish European genomes (q1019, q1020); a LONP1 missense on its MANE transcript (NM_004793.4), R241Q, SIFT deleterious (low confidence), PolyPhen benign (q1021, q1022). For row 106.

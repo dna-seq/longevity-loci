@@ -2437,3 +2437,26 @@ P 2e-19 (q657 to q659). McCartney 2021's epigenetic ageing ("aging", EFO_0022597
 > [q666] _embedded.associations[0].snp_effect_allele[0] rs10949481-T
 
 rs10949481 (row 105): one association, McCartney 2021 (GCST90014290), intrinsic epigenetic age acceleration, trait EFO_0022597 ("aging"): T, β 1.08 years decrease (0.95 to 1.22), P 4e-54, T at 0.053 (q663 to q666). For row 105.
+
+## Reading 2026-11-16, record
+
+> [q667] _embedded.associations[4] association_id 130459873 risk_frequency 0.90515 pvalue_description pvalue_mantissa 1 pvalue_exponent -109 multi_snp_haplotype false snp_interaction false range [0.12-0.15] beta 0.13704 unit decrease p_value 1e-109 accession_id GCST90268497 pubmed_id 37587338 first_author Gupta R ci_lower 0.12 ci_upper 0.15
+
+> [q668] _embedded.associations[4].efo_traits[0] efo_id EFO_0006312 efo_trait mitochondrial DNA measurement
+
+> [q669] _embedded.associations[4].reported_trait[0] Mitochondrial DNA copy number (adjusted)
+
+> [q670] _embedded.associations[4].snp_effect_allele[0] rs11085147-C
+
+> [q671] _embedded.associations[5] association_id 94038306 risk_frequency 0.0223642 pvalue_description pvalue_mantissa 2 pvalue_exponent -95 multi_snp_haplotype false snp_interaction false range [0.069-0.083] beta 0.0756 unit increase p_value 2e-95 accession_id GCST90026371 pubmed_id 35023831 first_author Chong M ci_lower 0.069 ci_upper 0.083
+
+> [q672] _embedded.associations[5].efo_traits[0] efo_id EFO_0006312 efo_trait mitochondrial DNA measurement
+
+> [q673] _embedded.associations[5].reported_trait[0] Mitochondrial DNA copy number
+
+> [q674] _embedded.associations[5].snp_effect_allele[0] rs11085147-T
+
+rs11085147 (row 106), six associations. Mitochondrial DNA copy number, trait EFO_0006312: Gupta 2023 (GCST90268497,
+adjusted) C 0.137 SD decrease, P 1e-109, C at 0.905 (q667 to q670); Chong 2022 (GCST90026371, PMID 35023831, UK
+Biobank) T 0.076 increase, P 2e-95 (q671 to q674); both T the higher copy number, both UK Biobank. The raw
+copy-number line and three protein levels (MRPL58, GADD45GIP1, NGRN, T higher) named, not read. For row 106.

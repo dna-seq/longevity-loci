@@ -1,0 +1,93 @@
+# The seed list's locus 106, LONP1 (19p13.3): a marker of biological ageing (D32, D36.3), curated on D37.12 with 23
+# TERC as the pattern. Curated 2026-11-16. Lead rs11085147, the seed's rsID (Gupta 2023's mtDNA copy-number locus): a
+# LONP1 missense on its MANE transcript, R241Q, GRCh38 19:5,711,919 C/T, GRCh37 19:5,711,930, C ancestral; T at 9.2 %
+# in gnomAD's non-Finnish European genomes. T is the higher-copy-number allele.
+locus_id: 106
+locus_name: LONP1
+verdict: kept
+verdict_reason: >-
+  Tier B on the marker's own evidence (D37.12; the seed gives none): the tier grades the association with
+  mitochondrial DNA copy number in blood, not longevity, and this row is unscored (D32). Gupta 2023 measured mtDNA
+  copy number from the whole genomes of 274,832 people of UK Biobank and All of Us and names LONP1 among its loci with
+  fine-mapped missense variation; the GWAS Catalog's record of its adjusted copy-number GWAS puts C at 0.905 with copy
+  number 0.137 SD lower per C, so T higher, P 1e-109, and Open Targets fine-maps the variant there at PIP 1.00. Chong
+  2022's UK Biobank copy-number GWAS (395,718) has T higher too, P 2e-95, PIP 1.00, but it is the same UK Biobank
+  people, so it is no independent replication. That is genome-wide in a study of 100k or more, unreplicated outside
+  its sample: §4.1's B. Lifespan look-ups, unscored and read for T: Timmers 2019 T beta1 −0.0101 (SE 0.0067), P 0.13;
+  Pilling 2017's parents, inside Timmers' pool, flat except the fathers (C with longer-lived fathers, P 0.0088, a
+  stratum); Park 2025's own survival flat (P 0.87; men 0.84, women 0.96); FinnGen R11's deaths flat (P 0.94), a
+  database line; Deelen 2019 T's way and flat (90th +0.055, P 0.11; 99th +0.087, P 0.12); Zenin 2019 flat (P 0.41);
+  Foote 2025's factor 1 puts T on the less frail side, C +0.0080 (SE 0.0032), P 0.012, one-sided 0.006, with factors 2,
+  3, 5 and 6 flat (P 0.31 to 0.93; the general factor and factor 4 hold no line). The literature search (the rsID,
+  2026-11-16) finds the copy-number GWASs alone. Every genotype neutral, each conclusion a tendency of the marker with
+  no colour (D32, D37.12); `direction: unknown`. Outcome cells read for T: exceptional survival 0 (Deelen flat);
+  lifespan 0 (Timmers, Park and FinnGen flat; Pilling's fathers a stratum); healthspan + (Foote's factor 1, one-sided
+  0.006, the others flat, so not "both ways at nominal P", D31.4, D37.4; Zenin flat). Mechanism: markers of biological
+  ageing; LONP1 is the mitochondrial Lon protease. No disease pleiotropy in the Catalog, whose other lines are blood
+  protein levels (MRPL58, GADD45GIP1, NGRN, T higher), named. Causal C1 (PIP 1.00 in both copy-number sets). Effector
+  E1, LONP1: a missense on the MANE transcript (§4.2). Descriptive. Age of action unknown. The evidence is mostly
+  European (UK Biobank), with All of Us's diverse sample in Gupta's meta-analysis.
+axes:
+  tier: {value: B, cites: [pmid-37587338#q1, pmid-37587338#q2, pmid-37587338#q3, db-gwascatalog-2026.10.29#q667, db-gwascatalog-2026.10.29#q668, db-gwascatalog-2026.10.29#q669, db-gwascatalog-2026.10.29#q670, db-gwascatalog-2026.10.29#q671, db-gwascatalog-2026.10.29#q672, db-gwascatalog-2026.10.29#q673, db-gwascatalog-2026.10.29#q674]}
+  mechanism: {value: ageing_markers, cites: [pmid-37587338#q1, pmid-37587338#q3, db-gwascatalog-2026.10.29#q668]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "0", exceptional_survival: "0",
+            cites: [pmid-40759756#q143, pmid-40759756#q144, pmid-40759756#q145, pmid-40759756#q146, pmid-40759756#q147, pmid-30729179#q173, pmid-30642433#q410, pmid-40021682#q164, db-finngen-r11#q113, pmid-31413261#q332, pmid-31413261#q333]}
+  actionability: {label: descriptive, cites: [db-gwascatalog-2026.10.29#q667]}
+  context: {values: [], cites: []}
+flags:
+  - {token: "causal:C1", cites: [db-opentargets-26.09#q1296, db-opentargets-26.09#q1297, db-opentargets-26.09#q1298, db-opentargets-26.09#q1299, db-opentargets-26.09#q1300]}
+  - {token: "effector:E1", cites: [db-ensembl-116#q1021, db-ensembl-116#q1022]}
+variants:
+  - rsid: rs11085147
+    gene: LONP1
+    phenotype: LONP1 R241Q, mtDNA copy number
+    trait_efo_id: EFO_0006312
+    effect_allele: T
+    effect_size: 0.137
+    effect_measure: beta
+    stat_significance: significant
+    direction: unknown
+    genotypes:
+      - genotype: C/C
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position (about 82 in 100 people of European ancestry
+          do). It is the reference the other combinations are compared with. The position changes one building block
+          of LONP1, a protease that keeps the cell's power stations, the mitochondria, in order. The number of
+          mitochondrial DNA copies in blood is a marker that shifts with age, so this result carries no score.
+      - genotype: C/T
+        state: neutral
+        conclusion: >-
+          You carry one copy of the T version of this DNA position (about 17 in 100 people of European ancestry do).
+          Large studies link it with slightly more copies of mitochondrial DNA in blood cells, a little over a tenth of
+          the usual spread between people. That is a tendency in a marker, not a verdict on ageing, and studies of
+          lifespan show no clear effect of this position, so it carries no score.
+      - genotype: T/T
+        state: neutral
+        conclusion: >-
+          You carry two copies of the T version of this DNA position (about 1 in 100 people of European ancestry do).
+          Each copy is linked in large studies with slightly more copies of mitochondrial DNA in blood cells. That is a
+          tendency in a marker, not a verdict on ageing, and studies of lifespan show no clear effect of this
+          position, so it carries no score.
+studies:
+  - rsid: rs11085147
+    note: pmid-37587338
+    quote: q3
+    phenotype_class: BIOMARKER
+    study_design: meta_analysis
+    population: Gupta 2023's adjusted copy-number GWAS as the GWAS Catalog records it (mostly European ancestry; UK Biobank and All of Us in the paper)
+    ancestry: [EUR]
+    sample_size: 163372
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "1E-109"
+    p_value_num: 1.0e-109
+    effect_size: 0.137
+    effect_measure: beta
+    effect_unit: SD of adjusted mtDNA copy number per T allele (the Catalog's 0.137 decrease per C, negated)
+    effect_allele: T
+    direction: unknown
+    statistical_test: "Gupta 2023's GWAS of adjusted mtDNA copy number (q1, q2; LONP1 among the fine-mapped missense loci, q3); the lead, allele, effect and P from the GWAS Catalog's record of the study (GCST90268497, db-gwascatalog-2026.10.29#q667 to q670), the per-variant tables not cached; its sample as the Catalog records it (163,372); Chong 2022's UK Biobank line (q671 to q674) shares its people; a marker study (D32, D37.12)"
+    curator: claude-opus-5-5
