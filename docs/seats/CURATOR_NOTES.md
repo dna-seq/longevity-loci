@@ -4,9 +4,8 @@ The curator seat's working state, rewritten to the present before a reset (`docs
 
 ## Now (2026-11-10)
 
-- **Holding (2026-11-16, the lead's word):** batch seventeen (162 to 169) is in adversarial read; no new rows until
-  its corrections arrive. Pending there: 162 C to B and 165 C to A under D39.18 (held), 82's healthspan cell (left +,
-  D39.19, the lead leaning (a)). D39.14's eight second signals are all filed.
+- **Batch seventeen's corrections (D40): done 2026-11-16** (a6aa2af to 9abbb89). Next: whatever the lead queues; the
+  module seat rebuilds after the `done:`.
 - **Batch fourteen's corrections (D37): done 2026-11-16** (d261b34 to 98d2df0; `done:` to the lead). Owed at next
   touch: 97's healthspan on D37.4 (done, 0 kept, 5bf56e6); the 107-family Kolbe rows' P values as Fisher's exact (D37.1; done, 2aaf985).
 - **Markers under way:** 23, 30, 105, 106, 112, 114, 128, 132, 133, 141, 143, 144, 145, 149, 153, 160, 161, 115 and 129 (142 folded in) committed (D38 applied; 117 back to D, d70545d, D39.6) (the pattern; check rows exempts ageing_markers rows,
@@ -287,6 +286,11 @@ The curator seat's working state, rewritten to the present before a reset (`docs
 - **113** (2026-11-15), tier D from C (febee34, then 040f564 and ddda89d), row 72's shape: an East Asian discovery that powered European samples on the same haplotype contradict. Lessons: when a paper's validation cohort is all cases, find where its controls come from (a figure caption, here Fig. 2's 65-75 controls) before calling it independent; say unknown only when the paper leaves it open. Run the D31.10 frequency check against every reference the paper prints, and say which side misfits; the conclusion should hold under the reference read too. Parse Ensembl's LD listings line by line, never by field order (`paste | sort` dropped lines whose r2 came first). When the discovery and the test are different ancestries, check the reverse LD (no CHB partner missing from CEU) before saying the European look-up tags the same signal. State how far down the flag holds when the discovery's design inflates its OR (short-lived controls). A quote must not mix a line-break hyphen joined with one kept: the check reads the cache all one way or the other.
 - **119** (2026-11-15), tier D from C (f451490, then 087ced4), row 113's shape with D31.10 (controls short of Taiwan Biobank, P 9e-7). Lessons: read every partner a claim rests on, not the first few: 'as are the rest' had six of fourteen unread; an absent one is untested. Before solving case and control frequencies from a printed one, establish what the column is (a variant printed in two analyses that share controls settles pooled against controls'). When a European factor leans the discovery's way at nominal P on a D row, say why it is not row 18's lean. Give a validation its own study entry in every row of the paper alike. Run the subset quote check before the commit, not after.
 - **116** (2026-11-15), tier C kept (459279a, then the correction), row 130's shape: a sub-genome-wide East Asian discovery with an independent East Asian replication, powered European failures. Lessons: a meta-analysis that holds the replication inside it is not the discovery's genome-wide P (B would count the replication twice). Run D31.10 on a replication sample against every reference near its origin (Hainan is southern: CHS, CDX, KHV), not only the paper's, and count the reference's own sampling error; say which side the tier rests on. An East Asian claim needs an own-ancestry look-up before Europe decides it: search the cache for the rsID uncut and run the citing papers. Re-read a 'not row 18's lean' sentence once every European line is in (Foote arrived after it was written).
+- **D40, batch seventeen's corrections** (2026-11-16). Lessons: a healthspan anchor still needs its own co-occurring
+  lifespan study (§4.5), so D39.18's per-study ranking never skips that gate; two z values within one standard error
+  of their difference rank neither (D40.3); a credible set's printed β is its lead's, never a member's; a page of
+  `locus` rows is truncated at its size, so ask for `locus{count}`; cite the haplotype counts, not one person's
+  genotype line.
 - **169, 82's second signal** (2026-11-16, 792f2ce). Lessons: D39.18 reads each study's stronger line at its
   marginal and conditions only the weaker, so one row can be genome-wide in one study (Zenin) and flat in the rest
   (Timmers, Pilling, Deelen, FinnGen, where the seed's lead is stronger); cells follow the conditioned reading.
