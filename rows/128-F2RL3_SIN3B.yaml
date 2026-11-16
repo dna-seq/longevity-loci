@@ -21,8 +21,8 @@ verdict_reason: >-
   Timmers 2019, Pilling 2017, Zenin 2019, Foote 2025 and FinnGen R11 (by rsID and GRCh37 19:16,999,700): untested.
   Park 2025's white British survival deposit holds it: G with more deaths, β +0.053 (SE 0.025), P 0.037 (men
   0.028, women 0.51), from about 175 carriers of A, so a thin line. Every genotype neutral, each conclusion a tendency
-  of the marker with no colour (D32, D37.12); `direction: unknown`. Outcome cells read for G: lifespan − (Park, nominal,
-  carried by the men, few carriers); healthspan and exceptional survival untested. Mechanism: markers of biological
+  of the marker with no colour (D32, D37.12); `direction: unknown`. Outcome cells read for G: lifespan − (Park, two-sided 0.037, G the side
+  with more deaths, D38.6; carried by the men, few carriers); healthspan and exceptional survival untested. Mechanism: markers of biological
   ageing; F2RL3 is a thrombin receptor on platelets (the author). No pleiotropy in the Catalog, which holds this line
   alone. Causal C1 (PIP 0.60 in McCartney's GrimAge set). Effector E2, F2RL3: locus-to-gene 0.78, the variant upstream
   of F2RL3 and in its lymphoblastoid expression sets at PIP up to 1.00, A with higher expression (no colocalisation
@@ -57,21 +57,24 @@ variants:
           You carry two copies of the A version of this DNA position, found in about 4 in 100 people of African
           ancestry and almost no one of European ancestry. One study of African American adults linked each copy of
           A with a GrimAge epigenetic clock reading more than a year older than calendar age. That is a tendency in a
-          marker, partly a trace of how the clock reads one gene's chemical marks, so it carries no score.
+          marker whose reading only means something against your calendar age, which this report does not have, so it
+          carries no score.
       - genotype: A/G
         state: neutral
         conclusion: >-
           You carry one copy of the A version of this DNA position (about 33 in 100 people of African ancestry do,
           almost no one of European ancestry). One study of African American adults linked it with a GrimAge
-          epigenetic clock reading about one year older than calendar age, on average. That is a tendency in a marker,
-          not a measure of how you are ageing, so it carries no score.
+          epigenetic clock reading about one year older than calendar age, on average. That is a tendency in a marker
+          whose reading only means something against your calendar age, which this report does not have, so it carries
+          no score.
       - genotype: G/G
         state: neutral
         conclusion: >-
           You carry two copies of the common version of this DNA position, as nearly everyone of European ancestry and
           about 62 in 100 people of African ancestry do. It is the reference the other combinations are compared with.
           The position lies just before the F2RL3 gene on chromosome 19. Epigenetic clocks estimate age from chemical
-          marks on DNA; they only mean something against your calendar age, so this result carries no score.
+          marks on DNA; a clock's reading only means something against your calendar age, which this report does not
+          have, so this result carries no score.
 studies:
   - rsid: rs2227341
     note: pmid-34187551
