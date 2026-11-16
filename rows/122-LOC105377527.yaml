@@ -27,15 +27,16 @@ verdict_reason: >-
   unpowered, its interval spanning zero, so no conversion to a lifespan scale is its own (D31.13, which cites the
   null 90-and-over line): Park 2025 at the deletion has T with more deaths by a hair (P 0.62; its columns swapped,
   UK Biobank), flat, stated without a calibrated test; Timmers 2019 holds no line at the indel, and at rs62332690, two
-  bases away and at r² 1.00 with the deletion in CEU (A with T), A is flat (+0.0012, SE 0.0049, P 0.81); FinnGen R11's death endpoint has the deletion with fewer deaths (P 0.009), against
-  Hsieh's direction, a database line that neither replicates nor sets D (D29.1, D30.12). Zenin 2019 at rs62332690 flat
+  bases away and at r² 1.00 with the deletion in CEU (A with T), A is flat (+0.0012, SE 0.0049, P 0.81); FinnGen R11's death endpoint has the deletion with fewer deaths (P 0.009; one-sided 0.0045
+  against TTC), against Hsieh's direction, a database line that neither replicates nor sets D (D29.1, D30.12) but
+  fills the lifespan cell (D34.5, D34.13). Zenin 2019 at rs62332690 flat
   (P 0.92), so healthspan 0; Pilling 2017 and Foote 2025 hold no line, and Wright 2019
-  none within 500 kb: untested. Deelen's and Timmers' strongest lines within 500 kb were not read. The literature
+  none within 500 kb: untested. Deelen's and Timmers' strongest lines within 500 kb are unchecked. The literature
   search (both rsIDs, rs1732444170 and rs10610954; Semantic Scholar answered 429, its part unchecked) finds nothing; Hsieh is found by its PMID, and
   its one citing paper is a Finnish polygenic lifespan score, with no single-variant test. The ancestry is named here,
   not as a context token (D30.15). Every genotype neutral (D25.2). Exceptional survival 0 (Deelen leans against at
-  one-sided 0.17 and 0.23, short of nominal, and a D row's discovery gives no +, D28.10); lifespan 0 (Park flat;
-  FinnGen a database line); healthspan 0 (Zenin flat). Mechanism ageing in general (D25.7): intronic in a lncRNA
+  one-sided 0.17 and 0.23, short of nominal, and a D row's discovery gives no +, D28.10); lifespan − (FinnGen, T fewer
+  deaths, one-sided 0.0045 against TTC; Park flat; D34.13: D28.10 bars only the discovery from giving +); healthspan 0 (Zenin flat). Mechanism ageing in general (D25.7): intronic in a lncRNA
   (LOC105377527), nothing recorded at the variant. Causal C4 and effector E4: no Open Targets record. Descriptive.
   Age of action unknown.
 axes:
@@ -43,7 +44,7 @@ axes:
   mechanism: {value: general_ageing, cites: [db-ensembl-116#q823]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
+  outcome: {healthspan: "0", lifespan: "−", exceptional_survival: "0",
             cites: [pmid-31413261#q289, pmid-31413261#q290, pmid-40021682#q120, db-finngen-r11#q92, pmid-30642433#q392, pmid-30729179#q159, db-ensembl-116#q836]}
   actionability: {label: descriptive, cites: [pmid-41949656#q19]}
   context: {values: [], cites: []}
