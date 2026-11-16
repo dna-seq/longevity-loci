@@ -717,3 +717,26 @@ def test_a_marker_row_is_neutral_on_every_genotype(tree: Path) -> None:
     assert "rs429358" not in rules()
     _row(tree).write_text(marked.replace("{genotype: CC, state: neutral", "{genotype: CC, state: risk"))
     assert "rs429358" in rules()
+
+
+def test_a_quote_split_by_a_ligature_is_found_past_a_file_holding_its_word(tree: Path) -> None:
+    """The check searches first the files whose raw text holds the quote's longest word, as an order hint only: a
+    file that holds the quote under a ligature, so not the raw word, is still searched and named."""
+    _cite_db(tree, "significant association near rs429358")
+    (tree / "cache" / "db-opentargets-26.09.supp-a.txt").write_text("a signiﬁcant association near rs429358 here")
+    (tree / "cache" / "db-opentargets-26.09.supp-b.txt").write_text("significant, but about another variant")
+    found = [f for f in check_quotes(tree / "corpus", tree / "cache") if f.path.name == "db-opentargets-26.09.md"]
+    assert [(f.kind, f.detail.split(":")[0]) for f in found] == [(Kind.LOCATED, "in db-opentargets-26.09.supp-a.txt")]
+
+
+def test_quotes_limited_to_named_notes(tree: Path) -> None:
+    """`keys` checks only those notes; a key no note holds fails rather than passing as checked."""
+    _cite_db(tree)
+    only = check_quotes(tree / "corpus", tree / "cache", keys={"db-opentargets-26.09"})
+    assert {f.path.name for f in only} == {"db-opentargets-26.09.md"}
+    missing = check_quotes(tree / "corpus", tree / "cache", keys={"pmid-1"})
+    assert [(f.kind, f.passed, f.path.name) for f in missing] == [(Kind.NO_NOTE, False, "pmid-1.md")]
+    seen: list[tuple[int, int, str]] = []
+    check_quotes(tree / "corpus", tree / "cache", progress=lambda d, n, k: seen.append((d, n, k)))
+    assert seen == [(1, 2, seen[0][2]), (2, 2, seen[1][2])]
+    assert {k for _, _, k in seen} == {"db-opentargets-26.09", "pmid-31413261"}

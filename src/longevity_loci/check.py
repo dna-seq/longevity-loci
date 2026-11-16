@@ -10,6 +10,7 @@ import logging
 import re
 import unicodedata
 from collections import Counter
+from collections.abc import Callable
 from dataclasses import dataclass, field
 from datetime import date
 from enum import StrEnum
@@ -356,34 +357,72 @@ def located(quote: str, forms: tuple[str, ...]) -> bool:
     return any(pattern.search(f) for f in forms)
 
 
-def check_quotes(corpus: Path, cache: Path) -> list[Finding]:
+_TOKEN = re.compile(r"[A-Za-z0-9]{4,}")
+
+
+def _probe(quote: str) -> str | None:
+    """The quote's longest plain ASCII word, which a raw text holding the quote usually holds too; only an order hint."""
+    tokens = _TOKEN.findall(quote)
+    return max(tokens, key=len) if tokens else None
+
+
+class _Texts:
+    """One note's cached files, each read raw once and normalised only when a quote is searched in it."""
+
+    def __init__(self, paths: list[Path]) -> None:
+        self.raw = {p.name: p.read_text(encoding="utf-8", errors="strict") for p in paths if p.is_file()}
+        self._forms: dict[str, tuple[str, str]] = {}
+
+    def forms(self, name: str) -> tuple[str, str]:
+        if name not in self._forms:
+            self._forms[name] = text_forms(self.raw[name])
+        return self._forms[name]
+
+    def find(self, quote: str, where: list[str]) -> str | None:
+        """The first file of `where` that holds the quote. Files whose raw text holds the quote's probe word are
+        searched first; the others still are, so the hint changes the time, never the answer."""
+        probe = _probe(quote)
+        if probe is not None:
+            where = sorted(where, key=lambda n: probe not in self.raw[n])  # stable: the given order within each group
+        return next((n for n in where if located(quote, self.forms(n))), None)
+
+
+def check_quotes(
+    corpus: Path, cache: Path, keys: set[str] | None = None, progress: Callable[[int, int, str], None] | None = None
+) -> list[Finding]:
     """Every quote of every note is found in its cached text: `<cache>/<key>.txt` for a quote read in the article,
     the article's and its supplements' (`<key>.supp-*.txt`, RM4) for one read in a supplement, and a database
     record's cached answers (the same names under a `db-` key, RM3) for one read in a record. A quote whose text is
-    not cached is unknown; a located supplement quote names the file it was found in."""
+    not cached is unknown; a located supplement quote names the file it was found in. `keys` limits the run to
+    those notes (a key no note holds fails, never skipped); `progress` is told each note as it is done."""
     notes, findings = load_corpus(corpus)
-    for key, note in notes.items():
+    if keys is not None:
+        findings += [Finding(Kind.NO_NOTE, corpus / f"{k}.md", detail="no such note") for k in sorted(keys - notes.keys())]
+        notes = {k: n for k, n in notes.items() if k in keys}
+    for done, (key, note) in enumerate(notes.items(), 1):
         article = cache / f"{key}.txt"
         supps = sorted(cache.glob(f"{glob.escape(key)}.supp-*.txt"))
-        texts = {p.name: text_forms(p.read_text(encoding="utf-8", errors="strict")) for p in [article, *supps] if p.is_file()}
+        texts = _Texts([article, *supps])
         for qid, quote in note.quotes.items():
             if quote.depth in (Depth.SUPPLEMENT, Depth.RECORD):  # a supplement's or a database record's files
-                where = [n for n in texts if n != article.name] + ([article.name] if article.name in texts else [])
+                where = [n for n in texts.raw if n != article.name] + ([article.name] if article.name in texts.raw else [])
                 wanted = f"{key}.supp-*.txt"
                 if not supps:
                     findings.append(Finding(Kind.NO_TEXT, note.path, qid, wanted))
                     continue
             else:
-                where, wanted = ([article.name] if article.name in texts else []), article.name
+                where, wanted = ([article.name] if article.name in texts.raw else []), article.name
                 if not where:
                     findings.append(Finding(Kind.NO_TEXT, note.path, qid, wanted))
                     continue
-            found = next((n for n in where if located(quote.text, texts[n])), None)
+            found = texts.find(quote.text, where)
             if found is None:
                 findings.append(Finding(Kind.NOT_FOUND, note.path, qid, quote.text[:80]))
             else:
                 detail = quote.text[:80] if found == article.name else f"in {found}: {quote.text[:80]}"
                 findings.append(Finding(Kind.LOCATED, note.path, qid, detail))
+        if progress is not None:
+            progress(done, len(notes), key)
     return findings
 
 

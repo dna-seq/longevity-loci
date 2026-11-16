@@ -5,6 +5,7 @@ from __future__ import annotations
 import logging
 import os
 from collections import Counter
+import subprocess
 from pathlib import Path
 
 import typer
@@ -79,9 +80,29 @@ def rows_cmd(
 @check_app.command("quotes")
 def quotes_cmd(
     corpus: Path = typer.Option(ROOT / "corpus", help="the corpus directory"),
+    key: list[str] = typer.Option([], "--key", help="check only this note (repeatable)"),
+    since: str | None = typer.Option(None, "--since", help="check only the notes changed since this commit"),
+    quiet: bool = typer.Option(False, "--quiet", "-q", help="no progress line per note on stderr"),
 ) -> None:
     """Each note's quote is found verbatim in $LOCI_CACHE/<key>.txt."""
-    _report(_run(check_quotes, corpus, _cache()), False)
+    keys = set(key) | (_changed_notes(corpus, since) if since else set()) if key or since else None
+    if keys == set():
+        typer.echo(f"no note changed since {since}: nothing to check, which is not a pass")
+        raise typer.Exit(4)
+    progress = None if quiet else (lambda done, total, k: typer.echo(f"[{done}/{total}] {k}", err=True))
+    _report(_run(check_quotes, corpus, _cache(), keys, progress), False)
+
+
+def _changed_notes(corpus: Path, since: str) -> set[str]:
+    """The keys of the notes added or modified since a commit, read from git; a git failure is refused, never empty."""
+    done = subprocess.run(
+        ["git", "diff", "--name-only", "--diff-filter=AMR", since, "--", "."],
+        cwd=corpus, capture_output=True, text=True,
+    )
+    if done.returncode != 0:
+        typer.echo(f"git could not list the notes changed since {since}: {done.stderr.strip()}", err=True)
+        raise typer.Exit(2)
+    return {Path(line).stem for line in done.stdout.splitlines() if line.endswith(".md")}
 
 
 def _cache() -> Path:

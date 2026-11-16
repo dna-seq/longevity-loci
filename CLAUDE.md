@@ -143,7 +143,8 @@ verdicts only.
   (default `module/`), with `quote_sources.csv`; what 0.8 has no place for is listed by reason with a count
   (docs/FORMATS.md, "Export").
 - `uv run loci check quotes`: every note's quote is found verbatim in `$LOCI_CACHE`. Exit 0 passed, 1 a failure,
-  2 no cache set, 4 some quotes could not be checked (unknown, not passed).
+  2 no cache set, 4 some quotes could not be checked (unknown, not passed). `--since REV` or `--key KEY` checks only
+  those notes (what a seat runs after a row); a progress line per note goes to stderr (`-q` silences it).
 
 Batch work on the cluster (bulk fetches, indexes, the compile at scale) is submitted with this repository's job
 prefix, which the machine's settings name, never this file.
