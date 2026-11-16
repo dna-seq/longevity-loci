@@ -25,17 +25,27 @@ verdict_reason: >-
   nominal: the Ashkenazi sample 3 long-lived copies against none (OR 6.76, P 0.178, read as printed, as row 120's Q1
   (a) settled), and the Leiden sample 2 against none, no test printed. Park 2025's UK Biobank own-survival deposits
   hold it (each with its columns swapped): the whole cohort puts T with more deaths, +0.0153 (SE 0.0098), P 0.12,
-  one-sided 0.059 against; the men flat (P 0.53); the women against, +0.0377 (SE 0.0116), P 0.0011, the two sexes differing at P 0.018 (derived), a stratum picked
-  after the fact, named, no token (D35.5). Carried to
+  one-sided 0.059 against; the men flat (P 0.53); the women against, +0.0377 (SE 0.0116), P 0.0011, the two sexes differing at P 0.018 on the residual's scale and
+  about 0.004 on a common hazard scale (the residual's β scales with the sex's cumulative hazard, about 1.71 times
+  higher in men here; derived), a stratum picked after the fact, named, no token (D35.5). The two studies' sex
+  patterns agree: Kolbe's men carry the excess (above), and Park's men lean T's way (P 0.53) while its women go
+  against. Carried to
   Park's scale by Kolbe's own APOE line (ε4 OR 0.45 against Park's ε4 β 0.0129, D31.12), the reference read expects
-  −0.0133: power 0.39, heterogeneity P 0.0064 (derived), short of D21's power, so no flag; on the printed OR 4.2
-  it expects −0.0232: power 0.76, heterogeneity P 6.8e-4, still short of 0.8, so no flag either way, though near it; on the women's own
-  excess (10 against 5.8) the women's line has power 0.19 (heterogeneity P 2.4e-4): no flag either. UK Biobank's imputed deposits put T at 0.18 % (Park's and Pilling's lines; Kolbe's controls 0.17 %) against gnomAD's sequenced 0.32 %: read as imputation under-calling (D35.6), since Kolbe notes gnomAD's non-Finnish Europeans are mostly British (q12); gnomAD v4's own release names 416,555 UK Biobank exomes among its 730,947 (db-gnomad-4#q1, q2), and Ensembl 116's
+  −0.0133 (power 0.39, heterogeneity P 0.0064) and the printed OR 4.2 expects −0.0232 (power 0.76, heterogeneity P
+  6.8e-4), and on the women's own excess (10 against 5.8) the women's line has power 0.19 (heterogeneity P 2.4e-4)
+  (all derived): stated figures only, since a Park test calibrated from APOE alone flags nothing at any power
+  (D31.13). UK Biobank's imputed deposits put T at 0.18 % (Park's and Pilling's lines; Kolbe's controls 0.17 %) against gnomAD's sequenced 0.32 %: read as imputation under-calling (D35.6), since Kolbe notes gnomAD's non-Finnish Europeans are mostly British (q12); gnomAD v4's own release names 416,555 UK Biobank exomes among its 730,947 (db-gnomad-4#q1, q2), and Ensembl 116's
   non-Finnish European exome total, derived from its allele counts, is about 556,000 people, so UK Biobank's exomes
   are most of that group (up to 75 %; how many fall outside it is not printed), and the deposits impute largely the
   same people the reference sequenced: under-calling, stated (D35.6). Neither deposit prints an imputation-quality
   value (Park's columns, pmid-40021682#q28; Pilling's header, pmid-29227965#q187); the deposits' lines here are weak
-  looks, and D34.7's premise stands. FinnGen R11's deaths put T with fewer deaths, flat (P 0.83; T at 0.08 % in Finns), a database line (D29.1); Pilling 2017's four
+  looks, and D34.7's premise stands. D35.6 can be shown, not only assumed: gnomAD v4's genomes are v3.1.2's,
+  released before UK Biobank entered and kept apart from the exomes (db-gnomad-4#q3, q4), and give T 0.334 % (db-ensembl-116#q902);
+  if the quarter of the non-Finnish European exomes outside UK Biobank sat at that, UK Biobank's own sequenced
+  frequency backs out at about 0.31 %, while the imputed 0.18 % would need the rest at about 0.73 %, twice the
+  genomes (derived). The imputed 0.18 % is one measurement, not two (Park and Pilling use the same UK Biobank
+  genotypes), and the strongest counter-fact is named: Kolbe's sequenced German controls sit at 0.17 %. Whether that
+  is under-calling or the imputation prior pulling toward the panel, it is an artefact of imputation either way. FinnGen R11's deaths put T with fewer deaths, flat (P 0.83; T at 0.08 % in Finns), a database line (D29.1); Pilling 2017's four
   parental scans flat (P 0.56 to 0.91); Timmers 2019, Zenin 2019, Foote 2025 and Deelen 2019 hold no line at it
   (untested), Deelen's strongest window lines (the 90th's 17:17,103,590 at 0.03, P 0.0089; the 99th's 17:17,325,902
   at 0.31, P 0.0012) too common to tag it; Wright 2019's strongest line within 500 kb, the current-age scan's
@@ -50,7 +60,7 @@ verdict_reason: >-
   MANE transcript (A445T; SIFT tolerated, PolyPhen benign, CADD 2.0). Descriptive. Age of action unknown. The
   evidence is European.
 axes:
-  tier: {value: C, cites: [db-gnomad-4#q1, db-gnomad-4#q2, pmid-40021682#q28, pmid-29227965#q187, pmid-40232348#q40, pmid-40232348#q3, pmid-40232348#q2, pmid-40232348#q7, pmid-40232348#q12, pmid-40232348#q23, pmid-40232348#q24, pmid-40232348#q41, pmid-40232348#q42, pmid-40232348#q5, pmid-40232348#q16, pmid-40232348#q26, db-ensembl-116#q901, db-ensembl-116#q902, pmid-40021682#q129, pmid-40021682#q130, pmid-40021682#q131, pmid-40021682#q32, db-finngen-r11#q101, pmid-29227965#q178, pmid-29227965#q179, pmid-29227965#q180, pmid-29227965#q181, pmid-31413261#q308, pmid-31413261#q309, pmid-31484785#q175, db-gwascatalog-2026.10.29#q590]}
+  tier: {value: C, cites: [db-gnomad-4#q1, db-gnomad-4#q2, db-gnomad-4#q3, db-gnomad-4#q4, pmid-40021682#q28, pmid-29227965#q187, pmid-40232348#q40, pmid-40232348#q3, pmid-40232348#q2, pmid-40232348#q7, pmid-40232348#q12, pmid-40232348#q23, pmid-40232348#q24, pmid-40232348#q41, pmid-40232348#q42, pmid-40232348#q5, pmid-40232348#q16, pmid-40232348#q26, db-ensembl-116#q901, db-ensembl-116#q902, pmid-40021682#q129, pmid-40021682#q130, pmid-40021682#q131, pmid-40021682#q32, db-finngen-r11#q101, pmid-29227965#q178, pmid-29227965#q179, pmid-29227965#q180, pmid-29227965#q181, pmid-31413261#q308, pmid-31413261#q309, pmid-31484785#q175, db-gwascatalog-2026.10.29#q590]}
   mechanism: {value: general_ageing, cites: [pmid-40232348#q14]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}

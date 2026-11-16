@@ -23,3 +23,14 @@ quoted; derived from Ensembl 116's exome line at rs41419545 (3,534 copies at 0.0
 1.11 million alleles, about 556,000 people. UK Biobank's 416,555 would be up to 75 % of that; how many of them fall
 outside the non-Finnish European group is not printed. Ensembl 116's records do not name the gnomAD minor release
 they read; the totals match v4's. For D35.6, rows 121 and 140.
+
+## Reading 2026-11-16, record
+
+> [q3] The 76,156 genomes from [gnomAD v3.1.2](https://gnomad.broadinstitute.org/news/2021-10-gnomad-v3-1-2-minor-release/) have been included in gnomAD v4.
+
+> [q4] to ensure no overlap between the exomes and genomes
+
+gnomAD v4's genomes are v3.1.2's 76,156 (q3), a 2021 release, before UK Biobank's exomes entered gnomAD, and kept
+apart from the exomes in v4 (q4): so the genome frequencies (row 140's 0.334 %, db-ensembl-116#q902) are not UK
+Biobank's people. For D35.6 shown on row 140, batch fourteen (D37).
+
