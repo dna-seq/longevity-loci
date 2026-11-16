@@ -3939,3 +3939,89 @@ European genomes (q1112, q1113); 2.4 kb upstream of KANSL1 (q1114, q1115). Ensem
 genotypes for it (its pairwise and window queries return nothing). rs4327091 (row 142): GRCh38 17:45,944,351, multi-allelic
 G/A/C, G ancestral (q1116); A at 21.7 % and G at 78.3 % (q1117, q1118); intronic in MAPT's MANE transcript (q1119,
 q1120); r² 1.00 with rs17651549, MAPT's H1/H2 inversion tag, in CEU (q1121). For rows 129 and 142.
+
+## Reading 2026-11-16, record
+
+> [q1122] populations[11] frequency 0.000857 population gnomADe:nfe allele_count 953 allele C
+
+> [q1123] populations[12] frequency 0.9991 population gnomADe:nfe allele G allele_count 1111055
+
+> [q1124] populations[37] allele_count 51 allele C population gnomADg:nfe frequency 0.0007496
+
+> [q1125] populations[36] allele G allele_count 67981 population gnomADg:nfe frequency 0.9993
+
+> [q1126] populations[6] population gnomADe:nfe frequency 0.0001067 allele_count 118 allele G
+
+> [q1127] populations[7] population gnomADe:nfe frequency 0.9999 allele_count 1106032 allele A
+
+> [q1128] populations[27] frequency 0.0002502 allele_count 17 allele G population gnomADg:nfe
+
+> [q1129] populations[26] population gnomADg:nfe allele_count 67941 allele A frequency 0.9997
+
+> [q1130] populations[13] allele_count 8 allele G frequency 0.0003148 population gnomADe:asj
+
+> [q1131] populations[14] population gnomADe:asj frequency 0.9997 allele_count 25402 allele A
+
+> [q1132] populations[18] population gnomADg:asj frequency 0.0008656 allele G allele_count 3
+
+> [q1133] populations[19] allele_count 3463 allele A frequency 0.9991 population gnomADg:asj
+
+> [q1134] populations[10] population gnomADe:nfe allele T frequency 0.002876 allele_count 3197
+
+> [q1135] populations[11] allele_count 1108609 frequency 0.9971 allele C population gnomADe:nfe
+
+> [q1136] populations[6] allele A population gnomADe:nfe frequency 0.0004272 allele_count 475
+
+> [q1137] populations[5] frequency 0.9996 population gnomADe:nfe allele G allele_count 1111517
+
+> [q1138] populations[23] allele_count 37 frequency 0.0005439 population gnomADg:nfe allele A
+
+> [q1139] populations[24] frequency 0.9995 allele G population gnomADg:nfe allele_count 67989
+
+> [q1140] populations[5] allele GG population gnomADe:nfe frequency 0.0004731 allele_count 435
+
+> [q1141] populations[6] allele_count 919060 population gnomADe:nfe allele G frequency 0.9995
+
+> [q1142] populations[4] allele_count 1 frequency 1.088e-06 allele GGG population gnomADe:nfe
+
+> [q1143] populations[41] allele_count 39 frequency 0.0005734 population gnomADg:nfe allele GG
+
+> [q1144] populations[42] population gnomADg:nfe allele G frequency 0.9994 allele_count 67983
+
+> [q1145] populations[43] frequency 2.94e-05 population gnomADg:nfe allele GGG allele_count 2
+
+> [q1146] populations[8] population gnomADe:nfe allele A frequency 6.295e-05 allele_count 70
+
+> [q1147] populations[7] population gnomADe:nfe allele G frequency 0.9999 allele_count 1111888
+
+> [q1148] populations[30] allele_count 9 frequency 0.0001323 allele A population gnomADg:nfe
+
+> [q1149] populations[31] allele_count 68033 frequency 0.9999 population gnomADg:nfe allele G
+
+> [q1150] populations[21] allele_count 3534 population gnomADe:nfe frequency 0.003178 allele T
+
+> [q1151] populations[20] frequency 0.9968 population gnomADe:nfe allele_count 1108466 allele C
+
+> [q1152] populations[22] frequency 3.597e-06 population gnomADe:nfe allele_count 4 allele G
+
+> [q1153] populations[32] allele T frequency 0.003337 population gnomADg:nfe allele_count 227
+
+> [q1154] populations[31] frequency 0.9966 population gnomADg:nfe allele_count 67794 allele C
+
+> [q1155] populations[30] allele G allele_count 1 frequency 1.47e-05 population gnomADg:nfe
+
+> [q1156] populations[2] population gnomADg:nfe allele_count 2957 frequency 0.04349 allele T
+
+> [q1157] populations[1] frequency 0.9565 allele_count 65035 population gnomADg:nfe allele G
+
+Allele counts for D37.1's Fisher's exact tests, both alleles quoted so each allele number is the sum of quoted
+counts (Ensembl's population records, read whole for each variant):
+rs112262188 (row 107): gnomADe:nfe C 953 (q1122), G 1,111,055 (q1123), 1,112,008 alleles; gnomADg:nfe C 51 (q1124), G 67,981 (q1125), 68,032 alleles.
+rs147730555 (row 120): gnomADe:nfe G 118 (q1126), A 1,106,032 (q1127), 1,106,150 alleles; gnomADg:nfe G 17 (q1128), A 67,941 (q1129), 67,958 alleles; gnomADe:asj G 8 (q1130), A 25,402 (q1131), 25,410 alleles; gnomADg:asj G 3 (q1132), A 3,463 (q1133), 3,466 alleles.
+rs149554120 (row 121): gnomADe:nfe T 3,197 (q1134), C 1,108,609 (q1135), 1,111,806 alleles.
+rs189871470 (row 124): gnomADe:nfe A 475 (q1136), G 1,111,517 (q1137), 1,111,992 alleles; gnomADg:nfe A 37 (q1138), G 67,989 (q1139), 68,026 alleles.
+rs199607933 (row 125): gnomADe:nfe GG 435 (q1140), G 919,060 (q1141), GGG 1 (q1142), 919,496 alleles; gnomADg:nfe GG 39 (q1143), G 67,983 (q1144), GGG 2 (q1145), 68,024 alleles.
+rs199678370 (row 126): gnomADe:nfe A 70 (q1146), G 1,111,888 (q1147), 1,111,958 alleles; gnomADg:nfe A 9 (q1148), G 68,033 (q1149), 68,042 alleles.
+rs41419545 (row 140): gnomADe:nfe T 3,534 (q1150), C 1,108,466 (q1151), G 4 (q1152), 1,112,004 alleles; gnomADg:nfe T 227 (q1153), C 67,794 (q1154), G 1 (q1155), 68,022 alleles.
+rs113181552 (row 109): gnomADg:nfe T 2,957 (q1156), G 65,035 (q1157), 67,992 alleles.
+For rows 107, 109, 120, 121, 124, 125, 126 and 140 (D37.1).
