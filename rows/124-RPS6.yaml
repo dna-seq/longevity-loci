@@ -17,7 +17,7 @@ verdict_reason: >-
   4.5 and P 0.063), yet Kolbe's controls pooled over rows 120, 124 and 125 show 1 copy where 8.3 are expected (P 0.0024, derived), so
   by D34.7 every rare row of the paper is read against the reference, as 107: the long-lived show 7
   where 1.1 are expected, OR 6.6 (exact Poisson P 1.2e-4, derived), and the paper's own OR against gnomAD is 6.49, with its
-  caveat that gnomAD's non-Finnish Europeans are mostly British; the printed 16.5 is named, not read. The excess is the men's: from the printed
+  caveat that gnomAD's non-Finnish Europeans are mostly British; the printed 16.5 is named, not read. Kolbe chose its hits from about 98,000 rare variants, so a reference OR still carries that selection, uncorrected (D34.14). The excess is the men's: from the printed
   percentages and the long-lived's 2.7:1 women to men, about 5 copies in 336 long-lived men (0.29 expected from
   gnomAD, P 1.3e-5) and 2 in 909 women (0.78 expected, P 0.18), the one control copy a man's (derived); no sex
   token on a C row's one sample, named, as across Kolbe's rows (about 24 of 35 copies in men, D34.7). RPS6's gene-based synonymous test (6 variants, P 7.4e-7, adjusted 0.014) is
