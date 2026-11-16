@@ -1373,3 +1373,13 @@ The candidate rows (D25.6), once the seed list was done.
    which grades the part 28 already holds.
 16. **Timmers 2022's aging-GIP1 is a shared input with mvAge, not a second scan** (the curator's (a)). Both pool
    UK Biobank-based healthspan, lifespan and longevity GWASs, so it is named, not counted (D19.1).
+17. **165 (rs3131621, second signal at 37): a published meta-analysis that holds the replication may anchor the
+   conditional, and then the replication is spent.** Pilling's UK Biobank fathers alone give a derived conditional
+   of z 5.39 (P 7e-8), short of genome-wide. Wright 2019's AncestryDNA–UK Biobank meta is published and genome-wide at
+   the marginal (8.9e-9), and D20 and D28.7 already let such a meta anchor a row ("if a published meta-analysis
+   reaches 5e-8 at the locus, it is B on that"); D39.15 already reads a derived conditional. So 165 is B if the
+   conditional of that meta, derived as at 162 from the phased r and 37's lead's own effect in the same meta's two
+   arms, both quoted, stays at P < 5e-8; else C. AncestryDNA then sits inside the anchor and is not also a
+   replication, so B is "a single unreplicated study", never A, and the row says so. The curator's (b) in outcome,
+   not in its reading: (b) counted AncestryDNA twice. Rejected: (a) the discovery alone, which ignores a published
+   genome-wide meta that D28.7 counts; a meta of our own over the arms, which no source prints (D28.7).
