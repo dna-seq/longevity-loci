@@ -4047,3 +4047,19 @@ rs11186068 (row 62): G in 623 of gnomAD's non-Finnish European genomes' 67,964 a
 
 rs2736099 (row 132) against rs2853677 (row 133): r² 0.38, D′ 0.67 in 1000 Genomes CEU (q1162); against rs7705526
 (row 153): r² 0.27, D′ 0.57 (q1163). Ensembl 116's pairwise LD, no alleles phased. For row 132 (D39.9, D39.11).
+
+## Reading 2026-11-16, record
+
+> [q1164] [0] population_name 1000GENOMES:phase_3:CEU d_prime 1.000000 variation2 rs62057143 r2 1.000000 variation1 rs4327091
+
+> [q1165] [0] population_name 1000GENOMES:phase_3:CEU d_prime 1.000000 variation2 rs4341787 r2 1.000000 variation1 rs4327091
+
+> [q1166] populations[12] allele C allele_count 14765 frequency 0.2175 population gnomADg:nfe
+
+> [q1167] populations[12] population gnomADg:nfe frequency 0.2169 allele_count 14737 allele T
+
+> [q1168] populations[21] allele A frequency 0.2171 population gnomADg:nfe allele_count 14761
+
+rs4327091 (row 129) against rs62057143 and rs4341787: r² 1.00, D′ 1.00 in CEU (q1164, q1165). The minor alleles match in
+gnomAD's non-Finnish genomes (rs62057143 C 0.2175, rs4341787 T 0.2169, rs4327091 A 0.2171; q1166 to q1168), and r² 1.00
+needs minor with minor, so rs4327091's A rides with rs62057143's C and rs4341787's T (derived). For row 129 (D39.9, D39.13).

@@ -5,7 +5,7 @@
 # white matter. The row carries rs4327091, 142's id, which the combined set leads and every deposit holds, filed under
 # 129, the lower seed id (D14, D39.2): intronic
 # in MAPT's MANE transcript, GRCh38 17:45,944,351, GRCh37 17:44,021,717, multi-allelic G/A/C, the row meaning G/A; A at
-# 21.7 % in the same genomes, r² 1.00 in CEU with rs17651549, the H1/H2 inversion tag. A is the older-brain allele.
+# 21.7 % in the same genomes, r² 1.00 in CEU with rs17651549, an inversion tag; which allele lies on the inverted haplotype is not quoted here. A is the older-brain allele.
 locus_id: 129
 locus_name: KANSL1
 also_loci: [142]
@@ -17,43 +17,40 @@ verdict_reason: >-
   with T at 0.777, −0.483 years (SE 0.025), P 9.4e-83, white matter, and rs4327091 with A at 0.221, +0.446 (SE 0.024),
   P 3.0e-76, grey and white matter, both as locus 49; their minor alleles (C, A) both raise brain age. Open Targets'
   combined-analysis set is led by rs4327091 and holds rs2260227 (129's seed id), so the two ids are one signal: 142
-  folds in here, under the lower seed id, the row carrying 142's rs4327091 (D14, D39.2; Ensembl's LD panel has no genotypes for rs2260227, so no r² between them is printed). The locus was found in
+  folds in here, under the lower seed id, the row carrying 142's rs4327091 (D14, D39.2; Ensembl's LD panel has no genotypes for rs2260227, but Jawinski's SusieR table puts rs2260227 in rs4327091's grey-and-white set at r² 0.979, its LD column defined as r², pmid-41044200#q22 to q25). The locus was found in
   32,634 White British UK Biobank participants and replicated in 22,256 Europeans outside them, on the same side
-  (Table B7: grey and white matter, lead rs199737620, +0.494, P 5.3e-49, then +0.444, P 1.1e-26, heterogeneity P 0.11;
-  white matter, lead rs111854640, +0.494, P 2.3e-53, then +0.463, P 6.9e-31, heterogeneity P 0.089): the replications
+  (Table B7: grey and white matter, lead rs199737620, +0.494, P 5.3e-49, then +0.444, P 1.1e-26, the table's Het p 0.11; white matter, lead rs111854640, +0.494, P 2.3e-53, then +0.463, P 6.9e-31, Het p 0.089; what those compare the legend leaves unstated, likely the replication's two cohorts; discovery against replication recomputes to 0.35 and 0.55, derived): the replications
   a little smaller and inside the discovery's intervals, no D21 flag. No study reaches §4.1's 100k: B. Lifespan
   look-ups, unscored and read for A, two-sided at 0.05 (D38.6): Timmers 2019 A beta1 +0.0136 (SE 0.0049), P 0.0053,
   A with longer life; Pilling 2017's both parents G +0.0054 (SE 0.0027), P 0.045, so A with longer-lived parents
-  (mothers 0.21, fathers 0.094, top 10 % 0.12); Park 2025's own survival G +0.0029 (SE 0.0008), P 0.00035, so A with
+  (mothers 0.21, fathers 0.094); Park 2025's own survival G +0.0029 (SE 0.0008), P 0.00035, so A with
   fewer deaths (men 0.0015, women 0.072); FinnGen R11's deaths A −0.0305 (SE 0.0135), P 0.024, a database line; Deelen
   2019 A more often among the long-lived, 90th +0.111 (SE 0.028), P 6.7e-5, and 99th +0.159 (SE 0.041), P 9.9e-5;
-  Zenin 2019's healthspan P 0.30. Foote 2025's deposits hold no line (untested). rs2260227's own lines agree where
+  Zenin 2019's healthspan P 0.30. Foote 2025's deposits hold no line at rs4327091, but at its r² 1.00 proxies rs62057143 and rs4341787 (D′ 1.00 in CEU; A rides with their minor alleles, the frequencies matching, derived; db-ensembl-116#q1164 to q1168) A is less frail in factors 1, 2 and 3 (P 0.0017, 2.8e-5, 4.6e-6), factors 5 and 6 flat, the general factor and F4 holding no line (pmid-40759756#q180 to q186). rs2260227's own lines agree where
   they exist (Deelen 99th C more often long-lived, P 9.9e-5; Park P 0.0013; FinnGen P 0.020; Timmers, Pilling and
   Zenin hold none). So the allele with the older-looking brain goes with the longer life, the opposite of what the
   marker suggests, named as a fact and not read further. The literature search (both rsIDs, 2026-11-16; Semantic
   Scholar answered 429, its part unchecked) finds Jawinski and a 2026 preprint on brain-ageing regulatory variants
   that ranks the MAPT locus first (abstract only), no test of lifespan at these ids. Every genotype neutral, each conclusion a tendency of the marker with no colour (D32,
-  D37.12); `direction: unknown`. Outcome cells read for A: exceptional survival + (Deelen 90th and 99th, two-sided
-  6.7e-5 and 9.9e-5, A more often long-lived); lifespan + (Timmers 0.0053, Pilling 0.045, Park 0.00035, FinnGen 0.024,
-  all A with longer life); healthspan 0 (Zenin flat). Mechanism: markers of biological ageing. Pleiotropy `mech:cvd`
+  D37.12); `direction: unknown`. Outcome cells read for A: exceptional survival + (Deelen 90th and 99th, two-sided 6.7e-5 and 9.9e-5, A more often long-lived; Pilling's top 10 % both-parents line flat, P 0.12, D39.13); lifespan + (Timmers 0.0053, Pilling 0.045, Park 0.00035, FinnGen 0.024,
+  all A with longer life); healthspan + (Foote at the r² 1.00 proxies, three factors A's way at nominal P and none against, D31.4, D37.4, D39.9; Zenin flat). Mechanism: markers of biological ageing. Pleiotropy `mech:cvd`
   (A lowers systolic blood pressure, P 7e-11) and `broad`: rs4327091 sits in 3,354 Open Targets credible sets across
-  the inversion, named, not read one by one; no `tradeoff`, the row naming no longevity-favoured allele. Causal C3: the
-  brain-age sets span hundreds of variants, rs2260227 at PIP 0.004 in its own and rs4327091 at 0.0002 in the combined.
+  the inversion, named, not read one by one; no `tradeoff`, the row naming no longevity-favoured allele. Causal C3: the brain-age sets span hundreds of variants, rs4327091 at PIP 0.0018 in the combined set it leads (db-opentargets-26.09#q1488 to q1490; the 0.0002 read before was rs2260227's there) and rs2260227 at 0.004 in its own white-matter set (D39.12; Jawinski's own SusieR and FINEMAP sets named, not read for the level).
   Effector E3, left open across the inversion (D39.2): locus-to-gene STH 0.14, MAPT 0.13 on the combined set, no gene
-  near 0.5; the variant is intronic in MAPT, rs2260227 upstream
+  near 0.5; the variant is intronic in MAPT (the row's `gene: MAPT` names that host gene, not an effector call), rs2260227 upstream
   of KANSL1. Descriptive. Age of action
   unknown. The evidence is European.
 axes:
-  tier: {value: B, cites: [pmid-41044200#q1, pmid-41044200#q2, pmid-41044200#q3, pmid-41044200#q7, pmid-41044200#q8, pmid-41044200#q9, pmid-41044200#q10, pmid-41044200#q12, pmid-41044200#q13, pmid-41044200#q14, pmid-41044200#q15, pmid-41044200#q17, pmid-41044200#q18, db-gwascatalog-2026.10.29#q790, db-gwascatalog-2026.10.29#q792, db-gwascatalog-2026.10.29#q794, db-gwascatalog-2026.10.29#q795, db-opentargets-26.09#q1465, db-opentargets-26.09#q1466, db-opentargets-26.09#q1467, db-ensembl-116#q1112, db-ensembl-116#q1117, db-ensembl-116#q1118, db-ensembl-116#q1121]}
+  tier: {value: B, cites: [pmid-41044200#q22, pmid-41044200#q23, pmid-41044200#q24, pmid-41044200#q25, pmid-41044200#q1, pmid-41044200#q2, pmid-41044200#q3, pmid-41044200#q7, pmid-41044200#q8, pmid-41044200#q9, pmid-41044200#q10, pmid-41044200#q12, pmid-41044200#q13, pmid-41044200#q14, pmid-41044200#q15, pmid-41044200#q17, pmid-41044200#q18, db-gwascatalog-2026.10.29#q790, db-gwascatalog-2026.10.29#q792, db-gwascatalog-2026.10.29#q794, db-gwascatalog-2026.10.29#q795, db-opentargets-26.09#q1465, db-opentargets-26.09#q1466, db-opentargets-26.09#q1467, db-ensembl-116#q1112, db-ensembl-116#q1117, db-ensembl-116#q1118, db-ensembl-116#q1121]}
   mechanism: {value: ageing_markers, cites: [pmid-41044200#q1, pmid-41044200#q3, db-gwascatalog-2026.10.29#q791]}
   pleiotropy: {values: ["mech:cvd", broad], cites: [db-gwascatalog-2026.10.29#q796, db-gwascatalog-2026.10.29#q797, db-gwascatalog-2026.10.29#q798, db-opentargets-26.09#q1475]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "+",
-            cites: [pmid-31413261#q356, pmid-31413261#q357, pmid-31413261#q358, pmid-31413261#q359, pmid-30642433#q421, pmid-29227965#q260, pmid-29227965#q261, pmid-29227965#q262, pmid-29227965#q263, pmid-40021682#q206, pmid-40021682#q207, pmid-40021682#q208, pmid-40021682#q209, pmid-40021682#q210, pmid-40021682#q211, db-finngen-r11#q125, db-finngen-r11#q126, pmid-30729179#q184]}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
+            cites: [pmid-40759756#q180, pmid-40759756#q181, pmid-40759756#q182, pmid-40759756#q183, pmid-40759756#q184, pmid-40759756#q185, pmid-40759756#q186, db-ensembl-116#q1164, db-ensembl-116#q1165, db-ensembl-116#q1166, db-ensembl-116#q1167, db-ensembl-116#q1168, pmid-31413261#q356, pmid-31413261#q357, pmid-31413261#q358, pmid-31413261#q359, pmid-30642433#q421, pmid-29227965#q260, pmid-29227965#q261, pmid-29227965#q262, pmid-29227965#q263, pmid-40021682#q206, pmid-40021682#q207, pmid-40021682#q208, pmid-40021682#q209, pmid-40021682#q210, pmid-40021682#q211, db-finngen-r11#q125, db-finngen-r11#q126, pmid-30729179#q184]}
   actionability: {label: descriptive, cites: [pmid-41044200#q18]}
   context: {values: [], cites: []}
 flags:
-  - {token: "causal:C3", cites: [db-opentargets-26.09#q1464, db-opentargets-26.09#q1465, db-opentargets-26.09#q1466, db-opentargets-26.09#q1467, db-opentargets-26.09#q1472, db-opentargets-26.09#q1473, db-opentargets-26.09#q1474]}
+  - {token: "causal:C3", cites: [db-opentargets-26.09#q1488, db-opentargets-26.09#q1489, db-opentargets-26.09#q1490, db-opentargets-26.09#q1464, db-opentargets-26.09#q1465, db-opentargets-26.09#q1466, db-opentargets-26.09#q1467, db-opentargets-26.09#q1472, db-opentargets-26.09#q1473, db-opentargets-26.09#q1474]}
   - {token: "effector:E3", cites: [db-opentargets-26.09#q1468, db-opentargets-26.09#q1469, db-opentargets-26.09#q1470, db-opentargets-26.09#q1471, db-ensembl-116#q1114, db-ensembl-116#q1115, db-ensembl-116#q1119, db-ensembl-116#q1120]}
 variants:
   - rsid: rs4327091

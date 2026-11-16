@@ -5140,3 +5140,14 @@ locus-to-gene 0.78 that is §4.2's E1. For row 128 (D39.9).
 
 rs73538174 (row 149): BrainSeq's CREB3L3 expression set (q1484, q1485) colocalises with McCartney's PhenoAge set at
 H4 0.9999 (q1486, q1487). With locus-to-gene 0.43, under 0.5, that is §4.2's E2. For row 149 (D39.9).
+
+## Reading 2026-11-16, record
+
+> [q1488] data.credibleSets.rows[2].study id GCST90965684 traitFromSource Brain age gap derived from combined gray and white matter nSamples 54890
+
+> [q1489] data.credibleSets.rows[2].variant id 17_45944351_G_A
+
+> [q1490] data.credibleSets.rows[2].locus.rows[0] posteriorProbability 0.0018019150742619055 beta 0.44592485
+
+rs4327091 (17_45944351_G_A, row 129) in Jawinski's combined grey-and-white brain-age set (GCST90965684), which it
+leads: PIP 0.0018, β +0.446 (q1488 to q1490). The 0.0002 read before was rs2260227's in the same set. C3. For row 129 (D39.12, D39.13).
