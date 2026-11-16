@@ -1383,3 +1383,21 @@ The candidate rows (D25.6), once the seed list was done.
    replication, so B is "a single unreplicated study", never A, and the row says so. The curator's (b) in outcome,
    not in its reading: (b) counted AncestryDNA twice. Rejected: (a) the discovery alone, which ignores a published
    genome-wide meta that D28.7 counts; a meta of our own over the arms, which no source prints (D28.7).
+18. **Second signals and seed leads that share LD are conditioned stepwise, by strength in each sample (D30.18), never
+   both ways.** In each study, the stronger line is read at its marginal and the weaker one conditioned on it.
+   - **168 rs11780471 (at 53) stays C, as filed.** 53's lead is the stronger line in every sample the row reads.
+     Conditioned on it, rs11780471 keeps nominal, one-way and uncontradicted support (z 3.39 in Wright's fathers'
+     meta, 2.87 in Timmers, 1.78 in Pilling). Its own Open Targets sets are disjoint from the lead's, so it is no
+     tag. That is D30.4's C, not D, since nothing contradicts it. The curator's (a). Rejected: (b), D, which would show
+     consistent nominal support as negative evidence; (c) folding, which D39.14 keeps for a tag.
+   - **53 stays B.** Its lead is the stronger line, so it is read at its marginal, and the reverse conditional (6.20 to
+     4.40) is named in prose, as done. The curator's (a). Rejected: (b), reading D39.15 in reverse. That would
+     condition a stronger signal on a weaker one, which COJO's logic does not do, and would grade 53 down for a signal
+     it already outranks.
+   - **82 and 169 (rs4784227).** In Zenin's healthspan, rs4784227 is the stronger line (z 5.69 against the lead's 4.79).
+     So there it is read at its marginal, and 82's lead is the conditioned one (1.86, already in 82's prose). 82's
+     tier stands, since its anchor is read at the paper's own P (D17.3, D30.2). 169 is tiered on whatever study gives
+     it the stronger line, read at its marginal: B, if that study is quoted genome-wide at P < 5e-8 for a §4.1
+     phenotype, as a single unreplicated study unless a sample outside UK Biobank passes. In a study where 82's lead
+     is the stronger line (Timmers, Pilling), rs4784227 is conditioned on the lead, as there. Its cells read each
+     study the same way.
