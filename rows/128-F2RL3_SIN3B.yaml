@@ -20,20 +20,19 @@ verdict_reason: >-
   429, its part unchecked). A is all but absent in Europeans, so the European deposits hold no line: Deelen 2019,
   Timmers 2019, Pilling 2017, Zenin 2019, Foote 2025 and FinnGen R11 (by rsID and GRCh37 19:16,999,700): untested.
   Park 2025's white British survival deposit holds it: G with more deaths, β +0.053 (SE 0.025), P 0.037 (men
-  0.028, women 0.51), from about 175 carriers of A, so a thin line. Every genotype neutral, each conclusion a tendency
-  of the marker with no colour (D32, D37.12); `direction: unknown`. Outcome cells read for G: lifespan − (Park, two-sided 0.037, G the side
-  with more deaths, D38.6; carried by the men, few carriers); healthspan and exceptional survival untested. Mechanism: markers of biological
+  0.028, women 0.51), from about 175 carriers of A; but A, at 0.022 % in that deposit (q170), is under Park's own 0.1 % filter (q58), so the line is named, not read (D31.13, D26.7, D39.11). Every genotype neutral, each conclusion a tendency
+  of the marker with no colour (D32, D37.12); `direction: unknown`. Outcome cells read for G: lifespan untested (Park's line under its own frequency filter, named above); healthspan and exceptional survival untested. Mechanism: markers of biological
   ageing; F2RL3 is a thrombin receptor on platelets (the author). No pleiotropy in the Catalog, which holds this line
   alone. Causal C1 (PIP 0.60 in McCartney's GrimAge set). Effector E2, F2RL3: locus-to-gene 0.78, the variant upstream
   of F2RL3 and in its lymphoblastoid expression sets at PIP up to 1.00, A with higher expression (no colocalisation
-  read). Descriptive. Age of action unknown. The evidence is African American, as `ancestry_specific:afr`.
+  read). Descriptive. Age of action unknown. The evidence is African American, as `ancestry_specific:afr`, which here reflects A's near-absence in Europeans, not a tested difference between ancestries (D39.11).
 axes:
   tier: {value: B, cites: [pmid-34187551#q1, pmid-34187551#q2, pmid-34187551#q6, pmid-34187551#q7, pmid-34187551#q8, pmid-34187551#q9, db-gwascatalog-2026.10.29#q686, db-gwascatalog-2026.10.29#q688, db-gwascatalog-2026.10.29#q689]}
   mechanism: {value: ageing_markers, cites: [pmid-34187551#q4, pmid-34187551#q5, db-gwascatalog-2026.10.29#q687]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: untested, lifespan: "−", exceptional_survival: untested,
-            cites: [pmid-40021682#q170, pmid-40021682#q171, pmid-40021682#q172, db-ensembl-116#q1036]}
+  outcome: {healthspan: untested, lifespan: untested, exceptional_survival: untested,
+            cites: [pmid-40021682#q58, pmid-40021682#q170, pmid-40021682#q171, pmid-40021682#q172, db-ensembl-116#q1036]}
   actionability: {label: descriptive, cites: [pmid-34187551#q9]}
   context: {values: ["ancestry_specific:afr"], cites: [pmid-34187551#q2, pmid-34187551#q9, db-ensembl-116#q1036, db-ensembl-116#q1037, db-ensembl-116#q1038, db-ensembl-116#q1039]}
 flags:
@@ -56,7 +55,7 @@ variants:
         conclusion: >-
           You carry two copies of the A version of this DNA position, found in about 4 in 100 people of African
           ancestry and almost no one of European ancestry. One study of African American adults linked each copy of
-          A with a GrimAge epigenetic clock reading more than a year older than calendar age. That is a tendency in a
+          A with a GrimAge epigenetic clock reading more than a year older than in people of the same age without A. That is a tendency in a
           marker whose reading only means something against your calendar age, which this report does not have, so it
           carries no score.
       - genotype: A/G
@@ -64,7 +63,7 @@ variants:
         conclusion: >-
           You carry one copy of the A version of this DNA position (about 33 in 100 people of African ancestry do,
           almost no one of European ancestry). One study of African American adults linked it with a GrimAge
-          epigenetic clock reading about one year older than calendar age, on average. That is a tendency in a marker
+          epigenetic clock reading about one year older, on average, than in people of the same age without A. That is a tendency in a marker
           whose reading only means something against your calendar age, which this report does not have, so it carries
           no score.
       - genotype: G/G
@@ -113,5 +112,5 @@ studies:
     effect_unit: Martingale residual of death per G allele (positive more deaths; the deposit's allele columns swapped, q32)
     effect_allele: G
     direction: risk
-    statistical_test: "Park 2025's whole-cohort survival deposit (GCST90551884, q170): β +0.0529 for G (columns swapped, q32's reading; a positive β more deaths), SE 0.0252, P 0.037; men P 0.028 (q171), women P 0.51 (q172); A at 0.02 % in the sample (about 175 carriers); an unscored look-up on a marker row (D32), filling the lifespan cell for G"
+    statistical_test: "Park 2025's whole-cohort survival deposit (GCST90551884, q170): β +0.0529 for G (columns swapped, q32's reading; a positive β more deaths), SE 0.0252, P 0.037; men P 0.028 (q171), women P 0.51 (q172); A at 0.022 % in the sample (about 175 carriers), under Park's own 0.1 % filter (q58), so named, not read: the lifespan cell is untested (D31.13, D26.7, D39.11)"
     curator: claude-opus-5-5
