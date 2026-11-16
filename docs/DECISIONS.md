@@ -1349,3 +1349,15 @@ Rows 115 KLF3 and 129 KANSL1 (with 142), read on their own after the marker queu
    - **D39.7 cannot fire**: no brain-age study reaches 100k, so both rows stay B.
    - **D38.7's marker wording stays for brain age.** Read relative to non-carriers of the same age (D38.13), it is
      accurate for a gap that already subtracts calendar age. Rejected: a separate brain-age wording.
+
+The candidate rows (D25.6), once the seed list was done.
+
+14. **A second, independent signal at a seed locus is its own row, under the next free id above the seed's (162
+   on), naming the seed locus in `second_signal_of`.** D25.6 calls each a candidate row, so each gets its own tier,
+   cells and codes; FORMATS already gave a locus with no seed entry the next free id above the seed's. The check
+   refuses a seed row that names one, a named locus outside the seed, and a second signal under an id in the seed's
+   range. Independence is shown by a conditional or joint analysis, or by the signals' own credible sets, quoted; a
+   candidate that is a tag of the seed's lead folds into that row's prose instead. The seven candidates in the
+   scout's queue (28, 25 twice, 37, 52, 53, 82, 99) go in that order, batched and read as before. Rejected: (b) a
+   second variant inside the seed's row, one tier over two signals of different strength; (c) prose only, which
+   never scores them.

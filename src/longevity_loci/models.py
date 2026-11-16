@@ -438,6 +438,7 @@ class Row(Strict):
     locus_id: int
     locus_name: str
     also_loci: list[int] = Field(default_factory=list)  # seed ids naming the same signal, folded in here (D14)
+    second_signal_of: int | None = None  # D25.6, D39.14: the seed locus whose region holds this independent signal
     verdict: Verdict
     verdict_reason: str
     axes: Axes
@@ -454,6 +455,8 @@ class Row(Strict):
         lower = sorted(i for i in self.also_loci if i <= self.locus_id)
         if lower:
             raise ValueError(f"a signal's row is filed under its lowest seed id; {self.locus_id} folds in {', '.join(map(str, lower))}, so the row is theirs")
+        if self.second_signal_of is not None and self.second_signal_of in (self.locus_id, *self.also_loci):
+            raise ValueError(f"a second signal names another locus than its own: {self.second_signal_of}")
         rsids = {v.rsid for v in self.variants}
         orphans = sorted({s.rsid for s in self.studies} - rsids)
         if orphans:

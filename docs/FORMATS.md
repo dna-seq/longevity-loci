@@ -15,7 +15,9 @@ unnamed is `<locus_id>.yaml` (`models.row_file`);
 a v1 locus with no seed entry takes the next free id above the seed's. Fields:
 
 - `locus_id`, `locus_name`; `also_loci`, the other seed ids that name the same signal (IL6R 8 and 157), folded into
-  this row, which is filed under the lowest of them (D14); `verdict` (`kept`, `re-tiered`, `legacy`, `dropped`) and `verdict_reason`.
+  this row, which is filed under the lowest of them (D14); `second_signal_of`, on a row for an independent second signal at
+  a seed locus (D25.6, D39.14), that seed locus's id, the row taking the next free id above the seed's (a seed row never
+  names one); `verdict` (`kept`, `re-tiered`, `legacy`, `dropped`) and `verdict_reason`.
 - `axes`, the seven of the requirements' summary, each with the quotes it rests on in `cites`:
   - `tier`: `value` A to D (§4.1);
   - `mechanism`: `value`, a §5.2 `category` key (`other` refused);

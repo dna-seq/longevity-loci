@@ -271,6 +271,15 @@ def check_rows(rows: Path, corpus: Path, seed: dict[int, str] | None = None) -> 
         if seed is not None:
             findings += [Finding(Kind.MISNAMED, path, "also_loci", f"the seed list holds no locus {i}")
                          for i in row.also_loci if i not in seed]
+            second = row.second_signal_of
+            if row.locus_id in seed and second is not None:
+                findings.append(Finding(Kind.MISNAMED, path, "second_signal_of", f"locus {row.locus_id} is a seed locus, not a second signal"))
+            elif row.locus_id not in seed and second is None and row.locus_id <= max(seed):
+                findings.append(Finding(Kind.MISNAMED, path, "locus_id", f"the seed list holds no locus {row.locus_id}"))
+            elif second is not None and second not in seed:
+                findings.append(Finding(Kind.MISNAMED, path, "second_signal_of", f"the seed list holds no locus {second}"))
+            elif second is not None and row.locus_id <= max(seed):
+                findings.append(Finding(Kind.MISNAMED, path, "locus_id", f"a second signal takes an id above the seed's ({max(seed)})"))
         findings += check_rules(row, path)
         for name in type(row.axes).model_fields:
             if not getattr(row.axes, name).cites:

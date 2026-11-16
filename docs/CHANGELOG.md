@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- Rows take `second_signal_of`: an independent second signal at a seed locus is its own row, under an id above the seed's, naming that locus; `loci check rows` refuses a seed row that names one, a named locus outside the seed, and a second signal under a seed-range id (D39.14).
 - `loci check rows` takes a biological-ageing marker row (mechanism `ageing_markers`, D32, D37.12) as unscored: every genotype neutral, where it asked one neutral of a scored row; a marker row that moves a genotype breaks the rule.
 
 - `loci export` writes a nominal study's `statistical_test` as "nominal (p < 0.05), not genome-wide" and no longer claims "in the discovery's direction", which was false for Hsieh's direction-unknown validation lines and for derived reads against a reference (D37.13).

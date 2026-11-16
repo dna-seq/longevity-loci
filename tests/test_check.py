@@ -169,6 +169,26 @@ def test_one_signal_two_seed_ids(tree: Path) -> None:
     assert {k for k, _, _ in found()} == {Kind.MALFORMED}
 
 
+
+def test_a_second_signal_takes_an_id_above_the_seed(tree: Path) -> None:
+    """D25.6, D39.14: an independent second signal at a seed locus is its own row, under an id above the seed's, naming
+    that seed locus in `second_signal_of`; a seed row never names one, and the named locus is a seed locus."""
+    seed = load_seed(SEED)
+    top = max(seed)
+    text = (tree / "rows" / "96-APOE.yaml").read_text()
+
+    def found() -> set[tuple[Kind, str, str]]:
+        return {(f.kind, f.path.name, f.where) for f in check_rows(tree / "rows", tree / "corpus", seed) if f.kind in FAILING}
+
+    second = row_file(top + 1, "APOE")
+    (tree / "rows" / second).write_text(text.replace("locus_id: 96\nlocus_name: APOE\n", f"locus_id: {top + 1}\nlocus_name: APOE\nsecond_signal_of: 96\n"))
+    assert found() == set()
+    (tree / "rows" / second).write_text(text.replace("locus_id: 96\nlocus_name: APOE\n", f"locus_id: {top + 1}\nlocus_name: APOE\nsecond_signal_of: {top + 5}\n"))
+    assert found() == {(Kind.MISNAMED, second, "second_signal_of")}
+    (tree / "rows" / second).unlink()
+    (tree / "rows" / "96-APOE.yaml").write_text(text.replace("locus_name: APOE\n", "locus_name: APOE\nsecond_signal_of: 8\n"))
+    assert found() == {(Kind.MISNAMED, "96-APOE.yaml", "second_signal_of")}
+
 @pytest.mark.parametrize(
     ("old", "new"),
     [
