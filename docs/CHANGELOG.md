@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- `loci fetch-supp` renders an .html page (a journal's table page) as its visible text, a table row a line with tab-separated cells as a sheet's; it refused one before ("no text for a .html file"), which left Broer 2015's Table 3 uncached.
 - `loci check quotes` takes `--since REV` and `--key KEY` to check only those notes, prints a progress line per note on stderr, and normalises a supplement only when a quote is searched in it, searching first the files whose raw text holds the quote's longest word (an order hint; every file is still searched). A full run printed nothing for about 70 minutes, and a supplement quote normalised all of a note's files, 1,344 at one key (the curator's wish). The largest note (226 quotes over 1,344 supplement files) went from about 20 minutes to 100 seconds, all located.
 - The export counts `second_signal_of` and `also_loci` among what 0.8 has no place for, by seed id, where they were dropped silently (the module seat's trial of row 162).
 - Rows take `second_signal_of`: an independent second signal at a seed locus is its own row, under an id above the seed's, naming that locus; `loci check rows` refuses a seed row that names one, a named locus outside the seed, and a second signal under a seed-range id (D39.14).

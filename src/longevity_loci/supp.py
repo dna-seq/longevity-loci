@@ -21,6 +21,7 @@ import json
 import logging
 import re
 import zipfile
+from html.parser import HTMLParser
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass, field
 from datetime import UTC, datetime
@@ -195,6 +196,57 @@ def _odt(data: bytes) -> str:
     return "".join(line + "\n" for line in lines if line.strip())
 
 
+_HTML_SKIP = frozenset({"script", "style", "noscript", "svg", "template"})
+_HTML_BLOCK = frozenset({"p", "div", "br", "li", "ul", "ol", "h1", "h2", "h3", "h4", "h5", "h6", "table", "thead",
+                         "tbody", "tfoot", "caption", "section", "article", "header", "footer", "blockquote", "pre",
+                         "dt", "dd", "figcaption", "hr"})
+
+
+class _HTMLText(HTMLParser):
+    """An HTML page's visible text: a table row a line with its cells tab-separated, as the sheets are written; a
+    block element a line of its own; scripts and styles dropped."""
+
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.out: list[str] = []
+        self.skip = 0
+        self.cell = False
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag in _HTML_SKIP:
+            self.skip += 1
+        elif tag in ("td", "th"):
+            if self.cell:
+                self.out.append("\t")
+            self.cell = True
+        elif tag == "tr" or tag in _HTML_BLOCK:
+            self.out.append("\n")
+            self.cell = False
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag in _HTML_SKIP:
+            self.skip = max(0, self.skip - 1)
+        elif tag == "tr" or tag in _HTML_BLOCK:
+            self.out.append("\n")
+            self.cell = False
+
+    def handle_data(self, data: str) -> None:
+        if not self.skip:
+            self.out.append(re.sub(r"[ \t\r\n]+", " ", data))
+
+
+def _html(data: bytes) -> str:
+    try:
+        text = data.decode("utf-8-sig")
+    except UnicodeDecodeError:
+        raise Unrenderable("an .html file not in UTF-8") from None
+    parser = _HTMLText()
+    parser.feed(text)
+    parser.close()
+    lines = (line.strip(" ") for line in "".join(parser.out).split("\n"))
+    return "".join(line + "\n" for line in lines if line.strip())
+
+
 def render(name: str, data: bytes, rows: str | None = None) -> str:
     """A file as text, by its name's suffix; Unrenderable when it has none this module can write. With `rows`, only
     the lines `keep_rows` keeps."""
@@ -224,6 +276,8 @@ def render(name: str, data: bytes, rows: str | None = None) -> str:
         text = data.decode("utf-8-sig")
         rows = list(csv.reader(io.StringIO(text), delimiter="\t" if low == ".tsv" else ","))
         return _table(rows)
+    if low in (".html", ".htm", ".xhtml"):
+        return _html(data)
     if low == ".pdf":
         reader = pypdf.PdfReader(io.BytesIO(data))
         return "\n".join(f"## page {i}\n{p.extract_text() or ''}" for i, p in enumerate(reader.pages, 1))

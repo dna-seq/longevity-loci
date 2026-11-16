@@ -233,3 +233,17 @@ def test_gurinovich_supplement_is_cached(tmp_path: Path) -> None:
     header = text.splitlines()[1].split("\t")
     assert text.startswith("## sheet: ") and {"SNP", "Score.pval"} <= set(header)
     assert any(line.startswith("rs429358\t") for line in text.splitlines())
+
+
+def test_an_html_page_is_rendered_as_text_with_its_tables_as_rows() -> None:
+    """A journal's table page (PMC serves Broer 2015's Table 3 so) gives its visible text, a table row per line with
+    its cells tab-separated as a sheet's are; scripts and styles are dropped and entities decoded."""
+    page = (b"<html><head><style>td{color:red}</style><script>var x = 1;</script><title>Table 3</title></head>"
+            b"<body><h2>Table 3 Replication</h2><p>Effects per allele &amp; P.</p><table><thead><tr><th>SNP</th>"
+            b"<th>EA</th><th>P</th></tr></thead><tbody><tr><td>rs2149954</td><td>T</td><td>1.6 &times; 10<sup>"
+            b"&minus;3</sup></td></tr></tbody></table></body></html>")
+    out = render("table3.html", page)
+    assert out.splitlines() == ["Table 3", "Table 3 Replication", "Effects per allele & P.", "SNP\tEA\tP",
+                                "rs2149954\tT\t1.6 × 10−3"]
+    with pytest.raises(Unrenderable):
+        render("t.html", "café".encode("latin-1"))
