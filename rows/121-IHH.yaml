@@ -16,15 +16,19 @@ verdict_reason: >-
   them and they show about 8 (Poisson P 2e-4), the non-Finnish genomes, a separately sequenced set of 68,034 alleles
   (their UK Biobank content not read here, so the paper's "mostly British" caveat is not settled), expect 22.4 (P
   4e-4); the long-lived sit at the reference (about 8 against 7.2
-  and 6.8, P 0.43 and 0.37, derived). The paper's own OR against gnomAD is 1.18, which it calls considerably lower than
-  its own. Only the Finns (0.20 % and 0.16 %, a bottlenecked population, P 0.02 and 0.09) or UK Biobank's imputed
+  and 6.8, P 0.43 and 0.37, derived). Read against the exomes the long-lived give OR 1.12 (about 8 copies where 7.2 are
+  expected, exact Poisson P 0.43, derived), the row's carried figure; the paper's own OR against gnomAD, 1.18, which
+  it calls considerably lower than its own, back-solves to 0.271 %, the genomes' frequency, not the exomes' 0.288 %
+  (likely genomes-based; a gnomAD v4.0 against v4.1 gap is not ruled out; D34.14). Kolbe chose its hits from about 98,000 rare variants, so a reference OR still carries that
+  selection, uncorrected (D34.14). Only the Finns (0.20 % and 0.16 %, a bottlenecked population, P 0.02 and 0.09) or UK Biobank's imputed
   0.15 % (Zenin's and Park's frequency, a dosage, not a sequenced reference) would put the controls near fit. So the
   case-control OR is the controls' deficit and sets nothing (D31.10, D31.11), row 109's shape. With the paper's sex
   ratios (2.7:1 women among the long-lived, 1:1.4 among the controls) the women carry about 1 copy in some 1,820
   long-lived alleles (5.2 expected from gnomAD's exomes, P 0.033) and none in some 3,420 control alleles (9.8
   expected, P 5e-5), the men about 7 in some 670 long-lived alleles (1.9 expected, P 0.004) and 8 in some 4,790
   control alleles (13.8 expected, P 0.07) (approximate, derived): the women sit below the reference in both arms,
-  and the men alone would be row 107's shape, long-lived above it. The paper tests no sex subgroup, so the split is
+  and the men alone would be row 107's shape, long-lived above it; across Kolbe's rows 107, 120, 121, 124, 125 and
+  126 about 24 of 35 long-lived copies are in men, who are 27 % of the long-lived (D34.7, D34.14), named, no token. The paper tests no sex subgroup, so the split is
   named, not read, and carries no sex token (D30.15). The gene-based
   synonymous IHH mask (P 5.74e-6) is this variant's signal, lost when it is removed: the same data, not counted. The
   lead's other evidence: the paper's Ashkenazi look-up (515 aged 95 or more, 496 younger controls) has 4 T copies in
@@ -68,7 +72,7 @@ variants:
     phenotype: IHH synonymous, longevity
     trait_efo_id: OBA_VT0005372
     effect_allele: T
-    effect_size: 1.18
+    effect_size: 1.12
     effect_measure: OR
     stat_significance: not_significant
     direction: protective
@@ -114,6 +118,24 @@ studies:
     effect_allele: T
     direction: protective
     statistical_test: "Kolbe 2025's STAAR-O single-variant test with sex and ten principal components (Table 1, q18, columns q3), MAC ≥ 5; cases past the 95th age-at-death percentile of their birth cohort (q7), an age threshold; FDR-adjusted 0.036 under an exploratory FDR < 0.05 (q2); T 0.32 % in the long-lived, 0.10 % in the controls, about 8 copies against 8; against gnomAD NFE the paper's own OR 1.18 (q21). The controls misfit gnomAD's non-Finnish exomes and genomes (about 8 against 23.6 and 22.4, P 2e-4 and 4e-4) and the long-lived sit at them (8 against 7.2), so this OR is named, not read, and sets nothing (D31.10, D31.11, derived); the variant carries the paper's OR against gnomAD, 1.18 (one-sided P 0.43, derived); the gene-based IHH mask is this variant's signal (q22, q23)"
+    curator: claude-opus-5-5
+  - rsid: rs149554120
+    note: pmid-40232348
+    quote: q18
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: German long-lived individuals (Kolbe 2025) against gnomAD's non-Finnish European exomes as the reference
+    ancestry: [EUR]
+    n_cases: 1245
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: not_significant
+    effect_size: 1.12
+    effect_measure: OR
+    effect_unit: odds of carrying T, the long-lived against the gnomAD exome reference (derived)
+    effect_allele: T
+    direction: protective
+    statistical_test: "Derived: about 8 copies in 2,490 long-lived alleles against 7.2 expected from gnomAD's non-Finnish exomes (0.2876 %, db-ensembl-116#q809): OR 1.12, exact Poisson P 0.43; the paper's own OR against gnomAD NFE, 1.18 (Table 1, q18, columns q3), back-solves to the genomes' 0.2734 % (db-ensembl-116#q814), likely genomes-based (D34.14); the hits were chosen from about 98,000 rare variants, so this OR still carries the selection, uncorrected"
     curator: claude-opus-5-5
   - rsid: rs149554120
     note: pmid-40232348
