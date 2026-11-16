@@ -1237,3 +1237,14 @@ Settled under the person's standing word, each with the alternative it rejected.
    settles it, and keeps the look-ups' numbers. Once a session quotes Table 3's line (a browser copy is enough), the
    flag and D come back with no further decision. Rejected: keeping D on the unquoted reading, which is a claim the
    corpus cannot check.
+4. **A marker row is tiered on the marker's whole genome-wide record (D37.12), not on the seed's study alone; the
+   smaller-effect clause compares a replication with the earliest genome-wide report it replicates.** D39.1 cited
+   D37.11 for "tiered from the seed's study", which says only how the seed's X rows are worded; its ground is this
+   one, and 160 stays A (Li 2020 precedes Codd 2021). 145 TSC22D2 is A from Thompson 2019 (205,011 UK Biobank men,
+   P 6.6e-112), replicated independently in 23andMe and Biobank Japan; the seed's Wright 2017 (under 100k, its men
+   inside Thompson's, a continuous mLRR-Y measure not comparable with Thompson's odds ratio) is printed as the
+   seed's study. Rejected: B from Wright alone, which would grade the marker on its weakest report.
+5. **A trait only one sex can have carries no `sex_specific` token** (145, loss of Y). The token says an effect
+   differs between the sexes, which rests on a test of the difference (D29.16); a trait defined in one sex admits
+   no such test. The row says in prose that the sample and the trait are men only. Rejected: `sex_specific:m`,
+   which would read as a tested contrast.
