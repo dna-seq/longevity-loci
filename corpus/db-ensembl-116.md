@@ -3401,3 +3401,17 @@ at r² 0.3 (2026-11-16), so no 1000 Genomes proxy can stand in where a deposit l
 > [q937] populations[3] frequency 0.0007722 population gnomADg:eas allele_count 4 allele A
 
 rs79159347 (row 155): GRCh38 12:7,019,858 G/A (q935); A at 6.55 % in gnomAD's non-Finnish European genomes (q936), 0.08 % in East Asian (q937). For row 155.
+
+## Reading 2026-11-16, record
+
+> [q938] mappings[0] allele_string A/G seq_region_name 3 coord_system chromosome ancestral_allele A location 3:96542656-96542656 assembly_name GRCh38 start 96542656 strand 1 end 96542656
+
+> [q939] populations[2] allele G allele_count 533 frequency 0.104 population gnomADg:eas
+
+> [q940] populations[3] population gnomADg:eas frequency 0.896 allele_count 4593 allele A
+
+> [q941] populations[11] population gnomADg:nfe allele G allele_count 38 frequency 0.0005589
+
+> [q942] [0] most_severe_consequence intergenic_variant end 96542656 seq_region_name 3 start 96542656 id rs79645902 strand 1 input rs79645902 allele_string A/G assembly_name GRCh38
+
+rs79645902 (row 156): GRCh38 3:96,542,656 A/G (q938); G at 10.4 % in gnomAD's East Asian genomes, 533 of 5,126 alleles (q939, q940), 0.06 % in the non-Finnish Europeans (q941); the consequence q942. For row 156.

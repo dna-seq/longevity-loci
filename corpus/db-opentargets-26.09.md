@@ -4500,3 +4500,9 @@ heel bone density, a lymphocyte fraction, facial traits; none a lifespan-class s
 12_7019858_G_A (rs79159347's A; row 155): 17 credible sets, read whole (q1252): GTEx and single-cell QTLs (LPCAT3 in the
 cerebellum, A lowering expression, PIP 0.19, q1253, q1254), phosphatidylcholine (18:2/20:4) levels (A higher, PIP 0.14,
 q1255, q1256), apolipoprotein A, plateletcrit, red-cell fatty acids; none a lifespan-class study. For row 155.
+
+## Reading 2026-11-16, record
+
+> [q1257] data variant null
+
+3_96542656_A_G (rs79645902; row 156): no record, nor under the reversed id. For row 156.
