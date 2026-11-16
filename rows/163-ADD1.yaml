@@ -10,11 +10,14 @@ verdict_reason: >-
   Tier C (D39.15): genome-wide only at the marginal, which part of row 25's signal carries; conditioned on that
   signal in the coupling the phase gives, it is suggestive, not genome-wide (R-TIER-4). Rosoff 2023's mvAge puts T at
   −0.0071 (SE 0.0011), P 4.2e-10 marginal, so C raises the factor (the Catalog the same), a lead SNP of its locus 11
-  beside rs16843836, the HTT signal's mvAge lead (r² 0.70 to row 25's lead), whose own fine-mapping holds it alone.
+  beside rs16843836, the HTT signal's mvAge lead (r² 0.70 to row 25's lead), which Rosoff's fine-mapping puts in no credible set (q87, D40.6).
   Independence (D39.14, D39.15): no article prints a conditional analysis, and Open Targets places rs16843603 in no
-  mvAge or lifespan-class set. From 1000 Genomes' phased EUR haplotypes, C travels with rs16843836's healthier A (r
-  +0.23, r² 0.055), so the conditional z from Rosoff's z values is 4.70 given rs16843836 (P 2.6e-6, suggestive) and
-  4.38 given it and rs114298671, row 164 (P 1.2e-5) (derived): it survives conditioning, so no tag of 25's lead, but
+  mvAge or lifespan-class set. From 1000 Genomes' phased EUR haplotypes (the population list q1174; over 1,006 haplotypes C on 307, rs16843836's A
+  on 311, both on 145, derived from the cached genotype files), C travels with rs16843836's healthier A (r +0.23, r²
+  0.055), so the conditional z from Rosoff's z values, stepwise on the stronger line, is 4.70 given rs16843836 (P
+  2.6e-6, suggestive) (derived); row 164's line is weaker and is not conditioned on (D39.18). This row and 164 are
+  independent of each other (r² 0.018; each survives the other at 5.53 and 4.85, derived, D40.6). It survives
+  conditioning, so no tag of 25's lead, but
   its independent part is sub-genome-wide. Row 25's lead rs61348208 has no mvAge z printed, so rs16843836 stands in
   for it. Lifespan look-ups, all inside UK Biobank or mvAge's inputs, lean C's way: Timmers 2019 C longer, beta1
   +0.0222 (SE 0.0043), P 2.6e-7, "--" for T in both arms; Pilling 2017 both parents P 0.0041, mothers 0.0054, fathers
@@ -22,16 +25,19 @@ verdict_reason: >-
   2019, an mvAge input, 90th one-sided 0.033, 99th 0.038. Outside them FinnGen R11's deaths lean C's way, one-sided
   0.15, a database line; no independent sample passes. Outcome cells read for C, on the marginal look-ups (25's share
   not taken out of them): lifespan + (Timmers, Pilling, Park); exceptional survival + (Pilling's top 10 % both-parents
-  line, P 9.6e-6, D31.8; Deelen one-sided 0.033); healthspan + (Zenin 2019 C the later end, P 0.034; Foote 2025's
-  factors 2, 3 and 5 C less frail, P 4.2e-4, 2.2e-4, 0.0023, none against; the general factor and F4 hold no line).
+  line, P 9.6e-6, D31.8; Deelen one-sided 0.033); healthspan + (Zenin 2019 gives it nothing stepwise, one-sided 0.057
+  once conditioned, D40.6, its marginal C the later end, P 0.034; Foote 2025's
+  factors 2, 3 and 5 C less frail, P 4.2e-4, 2.2e-4, 0.0023, none against; the general factor and F4 hold no line). The
+  cells stand as filed until the seed lead's lines (Pilling's top 10 %, Foote's deposits) are cached and re-read
+  stepwise (D39.18, D40.6).
   Mechanism general ageing, as the mvAge rows. Pleiotropy `mech:lung` and `broad`: C raises FEV1 and lowers COPD, and
   goes with longer education (Open Targets, β per C), smoking, lipid, calcium and liver-enzyme sets named; each read
   on the healthy side, so no `tradeoff`. Causal C4 and effector E4: no mvAge or lifespan-class set in Open Targets
-  holds it, and Rosoff's own fine-mapping of locus 11 picks rs16843836; ADD1 is the host gene, not an effector call.
+  holds it, and Rosoff's own fine-mapping of locus 11 sets none of its leads (q87); ADD1 is the host gene, not an effector call.
   The literature search (the rsID, 2026-11-16; Semantic Scholar answered 429, its part unchecked) finds a 2008 thesis on salt-sensitive hypertension in Black sibships, no PMID, and no test of ageing or lifespan; Rosoff names the SNP only in its supplement. Descriptive. Age of action unknown. The evidence is
   European.
 axes:
-  tier: {value: C, cites: [pmid-37550455#q23, pmid-37550455#q87, pmid-37550455#q84, pmid-37550455#q86, db-gwascatalog-2026.10.29#q805, db-gwascatalog-2026.10.29#q806, db-ensembl-116#q1174, db-ensembl-116#q1183, db-ensembl-116#q1184, db-ensembl-116#q1185, db-opentargets-26.09#q1506, pmid-30642433#q423, pmid-29227965#q270, pmid-29227965#q272, pmid-29227965#q273, db-finngen-r11#q130]}
+  tier: {value: C, cites: [pmid-37550455#q23, pmid-37550455#q87, pmid-37550455#q84, pmid-37550455#q86, db-gwascatalog-2026.10.29#q805, db-gwascatalog-2026.10.29#q806, db-ensembl-116#q1174, db-opentargets-26.09#q1506, pmid-30642433#q423, pmid-29227965#q270, pmid-29227965#q272, pmid-29227965#q273, db-finngen-r11#q130]}
   mechanism: {value: general_ageing, cites: [pmid-37550455#q23, db-gwascatalog-2026.10.29#q805]}
   pleiotropy: {values: ["mech:lung", broad], cites: [db-opentargets-26.09#q1506, db-opentargets-26.09#q1507, db-opentargets-26.09#q1508, db-opentargets-26.09#q1509, db-opentargets-26.09#q1510, db-opentargets-26.09#q1511, db-opentargets-26.09#q1512]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -93,7 +99,7 @@ studies:
     effect_unit: mvAge factor per T allele (no conventional unit; positive = healthier ageing)
     effect_allele: T
     direction: risk
-    statistical_test: "Genomic SEM common-factor GWAS, Supplementary Table 6 (q23), the effect allele printed second (derived, q87), SE 0.00113; marginal, its locus-11 neighbour rs16843836 carrying part of it (conditional P 2.6e-6, derived, db-ensembl-116#q1183 to q1185, D39.15)"
+    statistical_test: "Genomic SEM common-factor GWAS, Supplementary Table 6 (q23), the effect allele printed second (derived, q87), SE 0.00113; marginal, its locus-11 neighbour rs16843836 carrying part of it (conditional P 2.6e-6, stepwise on the stronger line, derived from haplotype counts over the population q1174, D39.15, D40.6)"
     curator: claude-opus-5-5
   - rsid: rs16843603
     note: pmid-30642433

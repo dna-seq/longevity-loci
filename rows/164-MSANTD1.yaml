@@ -12,9 +12,11 @@ verdict_reason: >-
   marginal, so G raises the factor (the Catalog the same), a lead SNP of its locus 11, new to the Catalog in Rosoff,
   beside rs16843836, the HTT signal's mvAge lead. Independence (D39.14, D39.15): no article prints a conditional
   analysis, and Open Targets places rs114298671 in no mvAge or lifespan-class set. From 1000 Genomes' phased EUR
-  haplotypes, G travels with rs16843836's healthier A (r +0.24, r² 0.056) and with rs16843603's C (r +0.14), so the
-  conditional z from Rosoff's z values is 4.07 given rs16843836 (P 4.8e-5) and 3.68 given it and rs16843603 (P
-  2.3e-4) (derived): it survives conditioning, so no tag of 25's lead or of 163's, but its independent part is
+  haplotypes (the population list q1174; over 1,006 haplotypes G on 883, rs16843836's A on 311, both on 309; with
+  rs16843603's C on 307, both on 290; derived from the cached genotype files), G travels with rs16843836's healthier A
+  (r +0.24, r² 0.056) and with rs16843603's C (r +0.14, r² 0.018), so stepwise on the two stronger lines its
+  conditional z from Rosoff's z values is 3.69, P 2.3e-4 (derived, D39.18, D40.6). This row and 163 are independent
+  of each other (each survives the other at 4.85 and 5.53, derived): it survives conditioning, so no tag of 25's lead or of 163's, but its independent part is
   sub-genome-wide. The two share a tag, rs71597207, in Rosoff's clumps, which the joint conditional takes in. Row 25's
   lead rs61348208 has no mvAge z printed, so rs16843836 stands in for it. Lifespan look-ups, all inside UK Biobank or
   mvAge's inputs, lean G's way: Timmers 2019 A beta1 −0.0245 (SE 0.0059), P 3.5e-5, "--", so G longer; Pilling 2017
@@ -27,10 +29,10 @@ verdict_reason: >-
   rows. Pleiotropy `mech:adiposity`: A raises body fat percentage, waist and high blood pressure (Open Targets, β per
   A), BMI sets named, so G, the longer-life allele, lowers them: no `tradeoff`. The Catalog's multiple long-term
   conditions line prints no allele, named. Causal C4 and effector E4: no mvAge or lifespan-class set in Open Targets
-  holds it, and Rosoff's fine-mapping of locus 11 picks rs16843836; MSANTD1 names the region, not an effector. The literature search (the rsID, 2026-11-16; Semantic Scholar answered 429, its part unchecked) finds Rosoff alone. Descriptive. Age of action unknown. The evidence is
+  holds it, and Rosoff's fine-mapping of locus 11 sets none of its leads (q87); MSANTD1 names the region, not an effector. The literature search (the rsID, 2026-11-16; Semantic Scholar answered 429, its part unchecked) finds Rosoff alone. Descriptive. Age of action unknown. The evidence is
   European.
 axes:
-  tier: {value: C, cites: [pmid-37550455#q24, pmid-37550455#q87, pmid-37550455#q84, pmid-37550455#q86, db-gwascatalog-2026.10.29#q807, db-gwascatalog-2026.10.29#q808, db-ensembl-116#q1174, db-ensembl-116#q1183, db-ensembl-116#q1184, db-ensembl-116#q1185, db-opentargets-26.09#q1513, pmid-30642433#q424, pmid-29227965#q274, pmid-29227965#q276, db-finngen-r11#q131]}
+  tier: {value: C, cites: [pmid-37550455#q24, pmid-37550455#q87, pmid-37550455#q84, pmid-37550455#q86, db-gwascatalog-2026.10.29#q807, db-gwascatalog-2026.10.29#q808, db-ensembl-116#q1174, db-opentargets-26.09#q1513, pmid-30642433#q424, pmid-29227965#q274, pmid-29227965#q276, db-finngen-r11#q131]}
   mechanism: {value: general_ageing, cites: [pmid-37550455#q24, db-gwascatalog-2026.10.29#q807]}
   pleiotropy: {values: ["mech:adiposity"], cites: [db-opentargets-26.09#q1513, db-opentargets-26.09#q1514, db-opentargets-26.09#q1515, db-opentargets-26.09#q1516, db-opentargets-26.09#q1517, db-opentargets-26.09#q1518, db-opentargets-26.09#q1519]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -92,7 +94,7 @@ studies:
     effect_unit: mvAge factor per G allele (no conventional unit; positive = healthier ageing)
     effect_allele: G
     direction: protective
-    statistical_test: "Genomic SEM common-factor GWAS, Supplementary Table 6 (q24), the effect allele printed second (derived, q87), SE 0.00157; marginal, the HTT signal and row 163 carrying part of it (conditional P 4.8e-5, derived, db-ensembl-116#q1183 to q1185, D39.15)"
+    statistical_test: "Genomic SEM common-factor GWAS, Supplementary Table 6 (q24), the effect allele printed second (derived, q87), SE 0.00157; marginal, the HTT signal and row 163 carrying part of it (conditional z 3.69, P 2.3e-4, stepwise on rs16843836 and row 163, derived from haplotype counts over the population q1174, D39.15, D40.6)"
     curator: claude-opus-5-5
   - rsid: rs114298671
     note: pmid-30642433
