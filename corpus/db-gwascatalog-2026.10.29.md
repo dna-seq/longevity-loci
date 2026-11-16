@@ -2609,3 +2609,37 @@ cell traits, protein levels and the rest named, not read. For row 133.
 rs4148974 (row 141), two associations, both Gupta 2023's: adjusted mtDNA copy number, C β 0.10863 increase, P 5e-48
 (GCST90268497, trait EFO_0006312; q721 to q724); raw copy number, C 0.0954, P 5e-38 (q725, q726). No disease line.
 For row 141.
+
+## Reading 2026-11-16, record
+
+> [q727] _embedded.associations[0] association_id 227788359 risk_frequency 0.779553 pvalue_description pvalue_mantissa 8 pvalue_exponent -53 multi_snp_haplotype false snp_interaction false range [0.046072-0.059606] beta 0.052839 standard deviation unit increase p_value 8e-53 accession_id GCST91000685 pubmed_id 38789417 first_author Keener R ci_lower 0.046072 ci_upper 0.059606
+
+> [q728] _embedded.associations[0].efo_traits[0] efo_id OBA_0003784 efo_trait chromosome, telomeric region length
+
+> [q729] _embedded.associations[0].snp_effect_allele[0] rs4691895-C
+
+> [q730] _embedded.associations[2] association_id 55993972 risk_frequency 0.78 pvalue_description pvalue_mantissa 2 pvalue_exponent -21 multi_snp_haplotype false snp_interaction false range [0.046-0.07] beta 0.058 unit increase p_value 2e-21 accession_id GCST009856 pubmed_id 32109421 first_author Li C ci_lower 0.046 ci_upper 0.07
+
+> [q731] _embedded.associations[2].snp_effect_allele[0] rs4691895-C
+
+rs4691895 (row 143), three associations, all telomere length: Keener 2024 (PMID 38789417, GCST91000685) C +0.0528 SD,
+P 8e-53, C at 0.78 (q727 to q729; trait OBA_0003784); Li 2020 C +0.058, P 2e-21 (q730, q731); Taub 2022's line
+(GCST90103979, P 3e-26) prints no allele. No disease line. For row 143.
+
+## Reading 2026-11-16, record
+
+> [q732] _embedded.associations[1] association_id 55993990 risk_frequency 0.29 pvalue_description pvalue_mantissa 1 pvalue_exponent -13 multi_snp_haplotype false snp_interaction false range [0.029-0.053] beta 0.041 unit decrease p_value 1e-13 accession_id GCST009856 pubmed_id 32109421 first_author Li C ci_lower 0.029 ci_upper 0.053
+
+> [q733] _embedded.associations[1].efo_traits[0] efo_id OBA_0003784 efo_trait chromosome, telomeric region length
+
+> [q734] _embedded.associations[1].snp_effect_allele[0] rs59294613-A
+
+> [q735] _embedded.associations[2] association_id 24084515 risk_frequency NR pvalue_description pvalue_mantissa 8 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [1.06-1.14] or_per_copy_num 1.0982976 or_value 1.0982976 beta - p_value 8e-08 accession_id GCST004710 pubmed_id 28598434 first_author Scelo G ci_lower 1.06 ci_upper 1.14
+
+> [q736] _embedded.associations[2].efo_traits[0] efo_id MONDO_0005086 efo_trait renal cell carcinoma
+
+> [q737] _embedded.associations[2].snp_effect_allele[0] rs59294613-?
+
+rs59294613 (row 144), three associations: Li 2020's leukocyte telomere length, A 0.041 decrease, P 1e-13 (q732 to q734);
+renal cell carcinoma (Scelo 2017, GCST004710), OR 1.098 (1.06 to 1.14), P 8e-8, short of genome-wide, the allele
+not printed (q735 to q737); Taub 2022's telomere line (P 6e-25) prints no allele. For row 144.

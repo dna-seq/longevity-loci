@@ -4805,3 +4805,78 @@ copy number at PIP 1, T −0.036 (q1352, q1353), raw at PIP 1.00 (q1354, q1355):
 expression, splicing and transcript sets: GTEx v10 whole blood PIP 1.00, T −0.43, P 1.0e-22 (q1356, q1357); Lepik
 2017's blood PIP 0.95, T −1.56, P 1.7e-46 (q1358, q1359): T with lower NDUFV3 expression. Locus-to-gene on the
 adjusted set (q1360): NDUFV3 0.92, the only gene listed (q1361, q1362). For row 141.
+
+## Reading 2026-11-16, record
+
+> [q1363] data.variant.credibleSets count 51
+
+> [q1364] data.variant.credibleSets.rows[12].study id GCST90435144 traitFromSource Telomere length (principal component 1) studyType gwas
+
+> [q1365] data.variant.credibleSets.rows[12].locus.rows[0] posteriorProbability 0.054444112232606943 beta 0.04382374647317119 pValueMantissa null pValueExponent null
+
+> [q1366] data.variant.credibleSets.rows[10].study id GCST009856 traitFromSource Leukocyte telomere length studyType gwas
+
+> [q1367] data.variant.credibleSets.rows[10].locus.rows[0] posteriorProbability 0.04977064087026573 beta null pValueMantissa 2 pValueExponent -21
+
+> [q1368] data.credibleSet.study id GCST90435144 traitFromSource Telomere length (principal component 1)
+
+> [q1369] data.credibleSet.l2GPredictions.rows[0] score 0.8231199383735657
+
+> [q1370] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol NAF1
+
+> [q1371] data.credibleSet.l2GPredictions.rows[1] score 0.08648602664470673
+
+> [q1372] data.credibleSet.l2GPredictions.rows[1].target approvedSymbol MARCHF1
+
+> [q1373] data.credibleSet.study id GCST009856 traitFromSource Leukocyte telomere length
+
+> [q1374] data.credibleSet.l2GPredictions.rows[0] score 0.45435774326324463
+
+> [q1375] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol NAF1
+
+4_163127047_G_C (rs4691895, row 143; beta per C): 51 credible sets (q1363); telomere length (principal component 1)
+PIP 0.054, C +0.044 (q1364, q1365); Li 2020's set PIP 0.050 (q1366, q1367); every telomere set below 0.06, so
+Codd 2021's own set (PP 0.11) gives C2. Locus-to-gene on the PC1 set (q1368): NAF1 0.82, MARCHF1 0.09 (q1369 to
+q1372): E2; on Li's set NAF1 0.45 (q1373 to q1375). For row 143.
+
+## Reading 2026-11-16, record
+
+> [q1376] data.variant.credibleSets count 49
+
+> [q1377] data.variant.credibleSets.rows[8].study id GCST90435144 traitFromSource Telomere length (principal component 1) studyType gwas
+
+> [q1378] data.variant.credibleSets.rows[8].locus.rows[0] posteriorProbability 0.017797726227793322 beta -0.042971492561104406 pValueMantissa null pValueExponent null
+
+> [q1379] data.variant.credibleSets.rows[28].study id GCST009856 traitFromSource Leukocyte telomere length studyType gwas
+
+> [q1380] data.variant.credibleSets.rows[28].locus.rows[0] posteriorProbability 0.03504015620360416 beta -0.041 pValueMantissa 1 pValueExponent -13
+
+> [q1381] data.variant.credibleSets.rows[9].study id GCST010303 traitFromSource Nevus count or cutaneous melanoma studyType gwas
+
+> [q1382] data.variant.credibleSets.rows[9].locus.rows[0] posteriorProbability 0.006308688474322954 beta null pValueMantissa null pValueExponent null
+
+> [q1383] data.credibleSet.study id GCST90435144 traitFromSource Telomere length (principal component 1)
+
+> [q1384] data.credibleSet.l2GPredictions.rows[0] score 0.7186914086341858
+
+> [q1385] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol POT1
+
+> [q1386] data.credibleSet.l2GPredictions.rows[1] score 0.22374998033046722
+
+> [q1387] data.credibleSet.l2GPredictions.rows[1].target approvedSymbol GPR37
+
+> [q1388] data.credibleSet.study id GCST009856 traitFromSource Leukocyte telomere length
+
+> [q1389] data.credibleSet.l2GPredictions.rows[0] score 0.5947850942611694
+
+> [q1390] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol POT1
+
+> [q1391] data.credibleSet.l2GPredictions.rows[1] score 0.46387702226638794
+
+> [q1392] data.credibleSet.l2GPredictions.rows[1].target approvedSymbol GPR37
+
+7_124914213_C_A (rs59294613, row 144; beta per A): 49 credible sets (q1376), most of them blood-cell traits at PIP
+0.07 or less; telomere length (principal component 1) PIP 0.018, A −0.043 (q1377, q1378); Li 2020's set PIP 0.035,
+A −0.041 (q1379, q1380); nevus count or cutaneous melanoma PIP 0.006 (q1381, q1382): C3. Locus-to-gene on the PC1
+set (q1383): POT1 0.72, GPR37 0.22 (q1384 to q1387); on Li's set POT1 0.59, GPR37 0.46 (q1388 to q1392): E2,
+no rival at 0.5. For row 144.

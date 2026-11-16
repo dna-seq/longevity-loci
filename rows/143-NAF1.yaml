@@ -1,0 +1,119 @@
+# The seed list's locus 143, NAF1 (4q32.2): a marker of biological ageing (D32, D36.3), curated on D37.12 with 23
+# TERC as the pattern. Curated 2026-11-16. Lead rs4691895, the seed's rsID (Li 2020's NAF1 telomere-length lead): 1.6
+# kb downstream of NAF1's MANE transcript and a benign missense (L368V) on another NAF1 transcript, GRCh38
+# 4:163,127,047 G/C, GRCh37 4:164,048,199, C ancestral; C at 77.0 % in gnomAD's non-Finnish European genomes. C is
+# the longer-telomere allele.
+locus_id: 143
+locus_name: NAF1
+verdict: kept
+verdict_reason: >-
+  Tier A on the marker's own evidence (D37.12; the seed gives none): the tier grades the association with leukocyte
+  telomere length, not longevity, and this row is unscored (D32). Li 2020's meta-analysis (78,592 Europeans of
+  ENGAGE, EPIC-CVD and EPIC-InterAct, no UK Biobank) prints rs4691895 with C (EA) at 0.78, β +0.058 SD (SE 0.006), P
+  1.58e-21. Codd 2021's 472,174 UK Biobank participants print the NAF1 locus at its sentinel rs4435700, A1 C at
+  0.235, β −0.054 (−0.058 to −0.049), P 2.2e-112, N_imp 459,000, Europeans the same; rs4691895 sits in that locus's
+  credible set (PP 0.11) and is in LD with the sentinel at r² 0.97 (D′ 1.00, CEU), the minor alleles travelling
+  together (rs4691895 G 0.23, rs4435700 C 0.235), so Codd's shorter C is Li's G: the same side. D21's test: Li
+  +0.058 (SE 0.006) against Codd −0.054 at the sentinel (SE about 0.0023), heterogeneity P 0.53, Li's power at
+  Codd's effect 1.00: no red flag. A study of 100k or more, genome-wide, with an independent replication on the same
+  allele: §4.1's A, the lead inside Codd's set (D38.5). Keener 2024's line (C +0.053, P 8e-53, the GWAS Catalog's
+  record, its sample unread) agrees, named, not counted. Lifespan look-ups, unscored and read for C, two-sided at
+  0.05 (D38.6): Timmers 2019 C beta1 −0.0065 (SE 0.0046), P 0.16; Pilling 2017's parents P 0.28 to 0.96; Park
+  2025's own survival P 0.59 (men 0.73, women 0.19); Deelen 2019 90th P 0.77, 99th P 0.44; FinnGen R11's deaths P
+  0.96, a database line; all flat. Zenin 2019's healthspan has C with the earlier end, +0.0131 (SE 0.0058), P 0.024;
+  Foote 2025's poorer-cognition factor has C the frailer (G −0.0060, SE 0.0029, P 0.040), its general factor and
+  factors 1 to 4 and 6 flat (P 0.21 to 0.82). The literature search (the rsID, 2026-11-16) finds the
+  telomere-length GWASs, no test of lifespan. Every genotype neutral, each conclusion a tendency of the marker with
+  no colour (D32, D37.12); `direction: unknown`. Outcome cells read for C: exceptional survival 0 (Deelen flat);
+  lifespan 0 (Timmers, Pilling, Park and FinnGen flat); healthspan − (Zenin two-sided 0.024, C the earlier end;
+  Foote's factor 5 the same side at 0.040; the side named, D38.6). Mechanism: markers of biological ageing; NAF1
+  assembles the H/ACA ribonucleoproteins that include telomerase's RNA. No disease pleiotropy: the Catalog holds
+  only telomere lines. Causal C2 (PP 0.11 in Codd 2021's own set; Open Targets' telomere sets hold it at PIP 0.05 to
+  0.06). Effector E2, NAF1: locus-to-gene 0.82 on the telomere PC1 set (MARCHF1 0.09; 0.45 on Li's set); the
+  missense is on a non-MANE transcript at PIP 0.11, so not E1. Descriptive. Age of action unknown. The evidence is
+  European.
+axes:
+  tier: {value: A, cites: [pmid-34611362#q1, pmid-34611362#q2, pmid-34611362#q3, pmid-34611362#q4, pmid-34611362#q12, pmid-34611362#q6, pmid-34611362#q13, pmid-32109421#q1, pmid-32109421#q2, pmid-32109421#q7, db-ensembl-116#q1065, db-ensembl-116#q1068, db-ensembl-116#q1069, db-gwascatalog-2026.10.29#q727, db-gwascatalog-2026.10.29#q728, db-gwascatalog-2026.10.29#q729, db-gwascatalog-2026.10.29#q730, db-gwascatalog-2026.10.29#q731]}
+  mechanism: {value: ageing_markers, cites: [pmid-32109421#q1, db-gwascatalog-2026.10.29#q728]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "−", lifespan: "0", exceptional_survival: "0",
+            cites: [pmid-30729179#q178, pmid-40759756#q2, pmid-40759756#q155, pmid-40759756#q156, pmid-40759756#q157, pmid-40759756#q158, pmid-40759756#q159, pmid-40759756#q160, pmid-40759756#q161, pmid-30642433#q415, pmid-29227965#q236, pmid-29227965#q237, pmid-29227965#q238, pmid-29227965#q239, pmid-40021682#q182, pmid-40021682#q183, pmid-40021682#q184, db-finngen-r11#q118, pmid-31413261#q342, pmid-31413261#q343]}
+  actionability: {label: descriptive, cites: [pmid-34611362#q12]}
+  context: {values: [], cites: []}
+flags:
+  - {token: "causal:C2", cites: [pmid-34611362#q6, pmid-34611362#q13, db-opentargets-26.09#q1363, db-opentargets-26.09#q1364, db-opentargets-26.09#q1365, db-opentargets-26.09#q1366, db-opentargets-26.09#q1367]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q1368, db-opentargets-26.09#q1369, db-opentargets-26.09#q1370, db-opentargets-26.09#q1371, db-opentargets-26.09#q1372, db-opentargets-26.09#q1373, db-opentargets-26.09#q1374, db-opentargets-26.09#q1375, db-ensembl-116#q1070, db-ensembl-116#q1071, db-ensembl-116#q1072, db-ensembl-116#q1073]}
+variants:
+  - rsid: rs4691895
+    gene: NAF1
+    phenotype: NAF1 downstream, leukocyte telomere length
+    trait_efo_id: OBA_0003784
+    effect_allele: C
+    effect_size: 0.058
+    effect_measure: beta
+    stat_significance: significant
+    direction: unknown
+    genotypes:
+      - genotype: C/C
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common C version of this DNA position (about 59 in 100 people of European
+          ancestry do). It is the reference the other combinations are compared with. The position lies just past
+          NAF1, a gene that helps build telomerase, the enzyme that rebuilds telomeres, the protective caps at the ends
+          of chromosomes. Telomere length is a marker whose reading only means something against your calendar age,
+          which this report does not have, so this result carries no score.
+      - genotype: C/G
+        state: neutral
+        conclusion: >-
+          You carry one copy of the G version of this DNA position (about 35 in 100 people of European ancestry do).
+          Large studies link it with slightly shorter telomeres in white blood cells, about a twentieth of the usual
+          spread between people. That is a tendency in a marker whose reading only means something against your
+          calendar age, which this report does not have, so it carries no score.
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the G version of this DNA position (about 5 in 100 people of European ancestry do).
+          Each copy is linked in large studies with slightly shorter telomeres in white blood cells. That is a
+          tendency in a marker whose reading only means something against your calendar age, which this report does
+          not have, so it carries no score.
+studies:
+  - rsid: rs4691895
+    note: pmid-32109421
+    quote: q7
+    phenotype_class: BIOMARKER
+    study_design: meta_analysis
+    population: European (ENGAGE, EPIC-CVD and EPIC-InterAct; no UK Biobank)
+    ancestry: [EUR]
+    sample_size: 78592
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "1.58 × 10−21"
+    p_value_num: 1.58e-21
+    effect_size: 0.058
+    effect_measure: beta
+    effect_unit: SD of mean leukocyte telomere length per C allele
+    effect_allele: C
+    direction: unknown
+    statistical_test: "Li 2020's genome-wide meta-analysis (q1), Table 1 (columns q2): rs4691895 near NAF1, C (EA) at 0.78, β +0.058, SE 0.006, P 1.58e-21 (q7); outside UK Biobank, so independent of Codd 2021; D21 against Codd heterogeneity P 0.53, power 1.00: the independent replication on the same allele (§4.1's A); a marker study (D32, D37.12)"
+    curator: claude-opus-5-5
+  - rsid: rs4691895
+    note: pmid-34611362
+    quote: q12
+    phenotype_class: BIOMARKER
+    study_design: meta_analysis
+    population: UK Biobank (Codd 2021's participants, mostly European; the Europeans-only line the same)
+    ancestry: [EUR]
+    sample_size: 459000
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "2.2e-112"
+    p_value_num: 2.2e-112
+    proxy_rsid: rs4435700
+    effect_size: 0.054
+    effect_measure: beta
+    effect_unit: SD of log-transformed, Z-standardized LTL per A allele of rs4435700, which travels with rs4691895's C (Table S1's A1 C −0.054, negated)
+    effect_allele: C
+    direction: unknown
+    statistical_test: "Codd 2021's GWAS of LTL in 472,174 UK Biobank participants (q1, q2), Supplementary Table 1 (A1 the effect allele, q3; header q4): locus 34, NAF1, rs4435700 A1 C at 0.235, β −0.054 (−0.058 to −0.049), P 2.2e-112, N_imp 458,999.5 (rounded), Europeans −0.053 (q12); rs4691895 in the locus's set at PP 0.11 (header q6, q13); r² 0.97 with rs4691895 in CEU (db-ensembl-116#q1065), the minor alleles together by the frequencies; the sample size is N_imp; D21 against Li 2020: heterogeneity P 0.53, power 1.00 (§4.1's A, D38.5)"
+    curator: claude-opus-5-5

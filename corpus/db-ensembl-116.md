@@ -3763,3 +3763,49 @@ rs2853677 (row 133): GRCh38 5:1,287,079, G/A/T (q1055); A at 57.7 % and G at 42.
 rs4148974 (row 141): GRCh38 21:42,903,610 C/T, C ancestral (q1060); C at 94.2 % and T at 5.8 % in gnomAD's non-Finnish
 European genomes (q1061, q1062); on NDUFV3's MANE transcript, NM_021075.4, codon 200 Cga to Tga, R200*, a stop-gain
 (q1063, q1064). For row 141.
+
+## Reading 2026-11-16, record
+
+> [q1065] [0] variation1 rs4691895 variation2 rs4435700 r2 0.970968 population_name 1000GENOMES:phase_3:CEU d_prime 1.000000
+
+> [q1066] [0] population_name 1000GENOMES:phase_3:CEU r2 1.000000 d_prime 1.000000 variation1 rs59294613 variation2 rs7790856
+
+Pairwise LD in 1000 Genomes CEU: rs4691895 (row 143) with Codd 2021's NAF1 sentinel rs4435700, r² 0.97, D′ 1.00
+(q1065); rs59294613 (row 144) with Codd's POT1 sentinel rs7790856, r² 1.00, D′ 1.00 (q1066). At r² near 1 the minor
+alleles travel together: rs4691895 G (0.23) with rs4435700 C (0.235); rs59294613 A (0.29) with rs7790856 T (0.289).
+For rows 143 and 144.
+
+## Reading 2026-11-16, record
+
+> [q1067] mappings[0] strand 1 coord_system chromosome end 163127047 location 4:163127047-163127047 allele_string G/C start 163127047 seq_region_name 4 assembly_name GRCh38 ancestral_allele C
+
+> [q1068] populations[24] frequency 0.7704 population gnomADg:nfe allele C allele_count 52393
+
+> [q1069] populations[25] allele G population gnomADg:nfe frequency 0.2296 allele_count 15613
+
+> [q1070] [0].transcript_consequences[0] distance 1622 transcript_id ENST00000274054 biotype protein_coding gene_id ENSG00000145414 hgnc_id HGNC:25126 canonical 1 strand -1 impact MODIFIER gene_symbol NAF1 variant_allele C gene_symbol_source HGNC mane_select NM_138386.3
+
+> [q1071] [0].transcript_consequences[0].consequence_terms[0] downstream_gene_variant
+
+> [q1072] [0].transcript_consequences[1] codons Ctt/Gtt cds_end 1102 protein_end 368 sift_score 0.58 biotype protein_coding transcript_id ENST00000422287 polyphen_score 0 gene_id ENSG00000145414 amino_acids L/V cds_start 1102 strand -1 polyphen_prediction benign impact MODERATE gene_symbol NAF1 variant_allele C gene_symbol_source HGNC protein_start 368 cdna_end 1311 hgnc_id HGNC:25126 sift_prediction tolerated_low_confidence cdna_start 1311
+
+> [q1073] [0].transcript_consequences[1].consequence_terms[0] missense_variant
+
+rs4691895 (row 143): GRCh38 4:163,127,047 G/C, C ancestral (q1067); C at 77.0 % and G at 23.0 % in gnomAD's non-Finnish
+European genomes (q1068, q1069); 1.6 kb downstream of NAF1's MANE transcript, NM_138386.3 (q1070, q1071), and a
+missense on another NAF1 transcript, L368V, benign by PolyPhen (q1072, q1073). For row 143.
+
+## Reading 2026-11-16, record
+
+> [q1074] mappings[0] location 7:124914213-124914213 allele_string C/A end 124914213 coord_system chromosome strand 1 start 124914213 assembly_name GRCh38 seq_region_name 7 ancestral_allele C
+
+> [q1075] populations[8] frequency 0.7073 population gnomADg:nfe allele C allele_count 48019
+
+> [q1076] populations[9] allele_count 19867 frequency 0.2927 population gnomADg:nfe allele A
+
+> [q1077] [0].transcript_consequences[0] transcript_id ENST00000357628 gene_id ENSG00000128513 gene_symbol POT1 variant_allele A biotype protein_coding gene_symbol_source HGNC mane_select NM_015450.3 strand -1 hgnc_id HGNC:17284 impact MODIFIER canonical 1
+
+> [q1078] [0].transcript_consequences[0].consequence_terms[0] intron_variant
+
+rs59294613 (row 144): GRCh38 7:124,914,213 C/A, C ancestral (q1074); C at 70.7 % and A at 29.3 % in gnomAD's non-Finnish
+European genomes (q1075, q1076); intronic in POT1's MANE transcript, NM_015450.3 (q1077, q1078). For row 144.

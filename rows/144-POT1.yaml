@@ -1,0 +1,120 @@
+# The seed list's locus 144, POT1 (7q31.33): a marker of biological ageing (D32, D36.3), curated on D37.12 with 23
+# TERC as the pattern. Curated 2026-11-16. Lead rs59294613, the seed's rsID (Li 2020's POT1 telomere-length lead):
+# intronic in POT1's MANE transcript, GRCh38 7:124,914,213 C/A, GRCh37 7:124,554,267, C ancestral; A at 29.3 % in
+# gnomAD's non-Finnish European genomes. A is the shorter-telomere allele.
+locus_id: 144
+locus_name: POT1
+verdict: kept
+verdict_reason: >-
+  Tier A on the marker's own evidence (D37.12; the seed gives none): the tier grades the association with leukocyte
+  telomere length, not longevity, and this row is unscored (D32). Li 2020's meta-analysis (78,592 Europeans of
+  ENGAGE, EPIC-CVD and EPIC-InterAct, no UK Biobank) prints rs59294613 with A (EA) at 0.29, β −0.041 SD (SE 0.006), P
+  1.17e-13. Codd 2021's 472,174 UK Biobank participants print the POT1 locus at its sentinel rs7790856, A1 C at 0.711,
+  β +0.044 (0.039 to 0.048), P 1.8e-87, N_imp 464,345, Europeans the same; rs59294613 sits in that locus's credible
+  set (PP 0.08) and is in LD with the sentinel at r² 1.00 (D′ 1.00, CEU), the minor alleles travelling together
+  (rs59294613 A 0.29, rs7790856 T 0.289), so Codd's shorter T is Li's A: the same side. D21's test: Li −0.041 (SE
+  0.006) against Codd −0.044 for T (SE about 0.0023), heterogeneity P 0.64, Li's power at Codd's effect 1.00: no red
+  flag. A study of 100k or more, genome-wide, with an independent replication on the same allele: §4.1's A, the lead
+  inside Codd's set (D38.5). Lifespan look-ups, unscored and read for A, two-sided at 0.05 (D38.6): Deelen 2019's
+  90th percentile has A less often among the long-lived, −0.0509 (SE 0.021), P 0.016, the 99th the same side, P
+  0.089; Timmers 2019 A beta1 −0.0080 (SE 0.0043), P 0.061; Pilling 2017's parents P 0.064 to 0.62; Park 2025's own
+  survival P 0.37 (men 0.97, women 0.15); FinnGen R11's deaths P 0.66, a database line. Zenin 2019's healthspan is
+  flat (P 0.29); Foote 2025's factors put A on the frailer side for unhealthy lifestyle (C −0.0060, SE 0.0018, P
+  0.00086) and disability (C −0.0061, SE 0.0025, P 0.015), multimorbidity the other way short of 0.05 (C +0.0035, P
+  0.061), the general factor and factors 1 and 5 flat, factor 4's deposit holding no line. The literature search
+  (the rsID, 2026-11-16) finds the telomere-length and cancer GWASs, no test of lifespan. Every genotype neutral,
+  each conclusion a tendency of the marker with no colour (D32, D37.12); `direction: unknown`. Outcome cells read
+  for A: exceptional survival − (Deelen's 90th two-sided 0.016, A the side less often long-lived, D38.6); lifespan 0
+  (Timmers, Pilling, Park and FinnGen flat); healthspan − (Foote's factors 2 and 6, two-sided 0.00086 and 0.015, A
+  the frailer; factor 3 the other way only at 0.061, so not both ways at nominal P, D31.4, D37.4; Zenin flat).
+  Mechanism: markers of biological ageing; POT1 binds the single-stranded telomere end in the shelterin complex. No
+  pleiotropy token: the Catalog's renal cell carcinoma line (Scelo 2017, OR 1.098, P 8e-8) is short of genome-wide
+  and prints no allele, and Open Targets' nevus or melanoma set holds the variant at PIP 0.006; named. Causal C3 (PP
+  0.08 in Codd 2021's set; PIP 0.035 in Li's and 0.018 in the telomere PC1 set). Effector E2, POT1: locus-to-gene
+  0.72 on the PC1 set and 0.59 on Li's, GPR37 at 0.22 and 0.46, no rival at 0.5. Descriptive. Age of action unknown.
+  The evidence is European.
+axes:
+  tier: {value: A, cites: [pmid-34611362#q1, pmid-34611362#q2, pmid-34611362#q3, pmid-34611362#q4, pmid-34611362#q14, pmid-34611362#q6, pmid-34611362#q15, pmid-32109421#q1, pmid-32109421#q2, pmid-32109421#q8, db-ensembl-116#q1066, db-ensembl-116#q1075, db-ensembl-116#q1076, db-gwascatalog-2026.10.29#q732, db-gwascatalog-2026.10.29#q733, db-gwascatalog-2026.10.29#q734]}
+  mechanism: {value: ageing_markers, cites: [pmid-32109421#q1, db-gwascatalog-2026.10.29#q733]}
+  pleiotropy: {values: [], cites: [db-gwascatalog-2026.10.29#q735, db-gwascatalog-2026.10.29#q736, db-gwascatalog-2026.10.29#q737, db-opentargets-26.09#q1381, db-opentargets-26.09#q1382]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "−", lifespan: "0", exceptional_survival: "−",
+            cites: [pmid-31413261#q344, pmid-31413261#q345, pmid-40759756#q2, pmid-40759756#q162, pmid-40759756#q163, pmid-40759756#q164, pmid-40759756#q165, pmid-40759756#q166, pmid-40759756#q167, pmid-30729179#q179, pmid-30642433#q416, pmid-29227965#q240, pmid-29227965#q241, pmid-29227965#q242, pmid-29227965#q243, pmid-40021682#q185, pmid-40021682#q186, pmid-40021682#q187, db-finngen-r11#q119]}
+  actionability: {label: descriptive, cites: [pmid-34611362#q14]}
+  context: {values: [], cites: []}
+flags:
+  - {token: "causal:C3", cites: [pmid-34611362#q6, pmid-34611362#q15, db-opentargets-26.09#q1376, db-opentargets-26.09#q1377, db-opentargets-26.09#q1378, db-opentargets-26.09#q1379, db-opentargets-26.09#q1380]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q1383, db-opentargets-26.09#q1384, db-opentargets-26.09#q1385, db-opentargets-26.09#q1386, db-opentargets-26.09#q1387, db-opentargets-26.09#q1388, db-opentargets-26.09#q1389, db-opentargets-26.09#q1390, db-opentargets-26.09#q1391, db-opentargets-26.09#q1392, db-ensembl-116#q1077, db-ensembl-116#q1078]}
+variants:
+  - rsid: rs59294613
+    gene: POT1
+    phenotype: POT1 intron, leukocyte telomere length
+    trait_efo_id: OBA_0003784
+    effect_allele: A
+    effect_size: -0.041
+    effect_measure: beta
+    stat_significance: significant
+    direction: unknown
+    genotypes:
+      - genotype: C/C
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common C version of this DNA position (about 50 in 100 people of European
+          ancestry do). It is the reference the other combinations are compared with. The position lies inside POT1, a
+          gene for a protein that caps and protects the telomere ends of chromosomes. Telomere length is a marker whose
+          reading only means something against your calendar age, which this report does not have, so this result
+          carries no score.
+      - genotype: A/C
+        state: neutral
+        conclusion: >-
+          You carry one copy of the A version of this DNA position (about 41 in 100 people of European ancestry do).
+          Large studies link it with slightly shorter telomeres in white blood cells, under a twentieth of the usual
+          spread between people. That is a tendency in a marker whose reading only means something against your
+          calendar age, which this report does not have, so it carries no score.
+      - genotype: A/A
+        state: neutral
+        conclusion: >-
+          You carry two copies of the A version of this DNA position (about 9 in 100 people of European ancestry do).
+          Each copy is linked in large studies with slightly shorter telomeres in white blood cells. That is a
+          tendency in a marker whose reading only means something against your calendar age, which this report does
+          not have, so it carries no score.
+studies:
+  - rsid: rs59294613
+    note: pmid-32109421
+    quote: q8
+    phenotype_class: BIOMARKER
+    study_design: meta_analysis
+    population: European (ENGAGE, EPIC-CVD and EPIC-InterAct; no UK Biobank)
+    ancestry: [EUR]
+    sample_size: 78592
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "1.17 × 10−13"
+    p_value_num: 1.17e-13
+    effect_size: -0.041
+    effect_measure: beta
+    effect_unit: SD of mean leukocyte telomere length per A allele
+    effect_allele: A
+    direction: unknown
+    statistical_test: "Li 2020's genome-wide meta-analysis (q1), Table 1 (columns q2): rs59294613 in POT1, A (EA) at 0.29, β −0.041, SE 0.006, P 1.17e-13 (q8); outside UK Biobank, so independent of Codd 2021; D21 against Codd heterogeneity P 0.64, power 1.00: the independent replication on the same allele (§4.1's A); a marker study (D32, D37.12)"
+    curator: claude-opus-5-5
+  - rsid: rs59294613
+    note: pmid-34611362
+    quote: q14
+    phenotype_class: BIOMARKER
+    study_design: meta_analysis
+    population: UK Biobank (Codd 2021's participants, mostly European; the Europeans-only line the same)
+    ancestry: [EUR]
+    sample_size: 464345
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "1.8e-87"
+    p_value_num: 1.8e-87
+    proxy_rsid: rs7790856
+    effect_size: -0.044
+    effect_measure: beta
+    effect_unit: SD of log-transformed, Z-standardized LTL per T allele of rs7790856, which travels with rs59294613's A (Table S1's A1 C +0.044, negated)
+    effect_allele: A
+    direction: unknown
+    statistical_test: "Codd 2021's GWAS of LTL in 472,174 UK Biobank participants (q1, q2), Supplementary Table 1 (A1 the effect allele, q3; header q4): locus 50, POT1, rs7790856 A1 C at 0.711, β +0.044 (0.039 to 0.048), P 1.8e-87, N_imp 464,344.7 (rounded), Europeans +0.043 (q14); rs59294613 in the locus's set at PP 0.08 (header q6, q15); r² 1.00 with rs59294613 in CEU (db-ensembl-116#q1066), the minor alleles together by the frequencies; the sample size is N_imp; D21 against Li 2020: heterogeneity P 0.64, power 1.00 (§4.1's A, D38.5)"
+    curator: claude-opus-5-5
