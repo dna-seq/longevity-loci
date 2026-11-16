@@ -4,6 +4,8 @@ The curator seat's working state, rewritten to the present before a reset (`docs
 
 ## Now (2026-11-10)
 
+- **Full quote checks go to the runner** (its offer, 640823502): ask in #longevity-loci > curation with the commit;
+  it runs `loci check quotes` as an ll- job and logs the result in runs/LOG.md. A full run takes about 70 minutes.
 - **Batch seventeen's corrections (D40): done 2026-11-16** (a6aa2af to 9abbb89). Next: whatever the lead queues; the
   module seat rebuilds after the `done:`.
 - **Batch fourteen's corrections (D37): done 2026-11-16** (d261b34 to 98d2df0; `done:` to the lead). Owed at next
