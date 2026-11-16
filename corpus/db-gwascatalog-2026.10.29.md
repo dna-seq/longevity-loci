@@ -2828,3 +2828,16 @@ q798). For rows 129 and 142.
 
 The GWAS Catalog's two associations for rs13141210: Rosoff's mvAge ('Aging'), C 0.0058 decrease, P 1e-8 (q800, q801);
 cigarettes smoked per day (MTAG, Koskeridis), T 0.016 decrease, P 3e-11 (q802 to q804). For row 162.
+
+## Reading 2026-11-16, record
+
+> [q805] _embedded.associations[0] association_id 131476370 risk_frequency NR pvalue_description pvalue_mantissa 4 pvalue_exponent -10 multi_snp_haplotype false snp_interaction false range [0.0048-0.0093] beta 0.007050574 unit decrease p_value 4e-10 accession_id GCST90321079 pubmed_id 37550455 first_author Rosoff DB ci_lower 0.0048 ci_upper 0.0093
+
+> [q806] _embedded.associations[0].snp_effect_allele[0] rs16843603-T
+
+> [q807] _embedded.associations[1] association_id 131476319 risk_frequency NR pvalue_description pvalue_mantissa 2 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.0058-0.0119] beta 0.008867602 unit increase p_value 2e-08 accession_id GCST90321079 pubmed_id 37550455 first_author Rosoff DB ci_lower 0.0058 ci_upper 0.0119
+
+> [q808] _embedded.associations[1].snp_effect_allele[0] rs114298671-G
+
+The GWAS Catalog: rs16843603, Rosoff's mvAge only, effect T, P 4e-10 (q805, q806); rs114298671, Rosoff's mvAge, effect G, P 2e-8
+(q807, q808), and a multiple long-term conditions line with no allele, named. For rows 163, 164.

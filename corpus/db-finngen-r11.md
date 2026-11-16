@@ -915,3 +915,12 @@ EUR, db-ensembl-116#q1). For row 103 (D31.3).
 
 FinnGen R11's death endpoint at rs13141210 (q129): alt T at 0.488, β −0.0110 (SE 0.0074) for death, P 0.14: T with fewer
 deaths, one-sided 0.069. For row 162.
+
+## Reading 2026-11-16, record
+
+> [q130] 4 2926850 T C rs16843603 ADD1 0.303665 0.517605 -0.00804912 0.00782528 0.345528 0.343992 0.34572
+
+> [q131] 4 3280142 G A rs114298671 MSANTD1 0.581716 0.235289 0.00648894 0.0117792 0.111387 0.112364 0.111265
+
+FinnGen R11's deaths: rs16843603 alt C −0.0080 (SE 0.0078), P 0.30, C fewer, one-sided 0.15 (q130); rs114298671 alt A +0.0065 (SE 0.0118),
+P 0.58, G fewer, flat (q131). For rows 163, 164.

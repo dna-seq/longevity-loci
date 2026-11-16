@@ -5189,3 +5189,39 @@ rs13141210 (4_67025923_C_T, row 162): in mvAge's PICS set (q439, q440) at PIP 0.
 Other sets, β per T: cigarettes per day −0.016 (q1496, q1497); COPD −0.039 (q1498, q1499); BMI −0.012 (q1500,
 q1501); educational attainment +0.013 (q1502, q1503); HDL cholesterol +0.0042 (q1504, q1505). T, mvAge's
 healthier allele, is the healthier side of each. For row 162.
+
+## Reading 2026-11-16, record
+
+> [q1506] data.variant.credibleSets count 78
+
+> [q1507] data.variant.credibleSets.rows[0].study id GCST90692680 traitFromSource Forced expiratory volume in 1-second (FEV1) (UKB data field 3063) studyType gwas
+
+> [q1508] data.variant.credibleSets.rows[0].locus.rows[0] posteriorProbability 0.0387676905267656 beta 0.008826620474121461 pValueMantissa 2.8551506996154785 pValueExponent -13
+
+> [q1509] data.variant.credibleSets.rows[39].study id FINNGEN_R12_J10_COPD traitFromSource COPD studyType gwas
+
+> [q1510] data.variant.credibleSets.rows[39].locus.rows[0] posteriorProbability 0.0178507067462945 beta -0.000914049712679428 pValueMantissa 1.8860000371932983 pValueExponent -7
+
+> [q1511] data.variant.credibleSets.rows[61].study id GCST90267280 traitFromSource Age when finished full-time education (standard GWA) studyType gwas
+
+> [q1512] data.variant.credibleSets.rows[61].locus.rows[0] posteriorProbability 0.00965653065144604 beta 0.010135293763341347 pValueMantissa null pValueExponent null
+
+> [q1513] data.variant.credibleSets count 56
+
+> [q1514] data.variant.credibleSets.rows[26].study id GCST90692656 traitFromSource Body fat percentage (UKB data field 23099) studyType gwas
+
+> [q1515] data.variant.credibleSets.rows[26].locus.rows[0] posteriorProbability 0.005618114220557424 beta 0.007010134203990937 pValueMantissa 8.165579795837402 pValueExponent -9
+
+> [q1516] data.variant.credibleSets.rows[2].study id GCST90692682 traitFromSource Waist circumference (UKB data field 48) studyType gwas
+
+> [q1517] data.variant.credibleSets.rows[2].locus.rows[0] posteriorProbability 0.04561284919358985 beta 0.006946569302404665 pValueMantissa 1.469277262687683 pValueExponent -8
+
+> [q1518] data.variant.credibleSets.rows[50].study id GCST90044351 traitFromSource Vascular/heart problems diagnosed by doctor: High blood pressure (UKB data field 6150_4) studyType gwas
+
+> [q1519] data.variant.credibleSets.rows[50].locus.rows[0] posteriorProbability 0.012197712516352906 beta 0.006394075019436885 pValueMantissa null pValueExponent null
+
+rs16843603 (4_2926850_T_C, row 163): 78 sets (q1506), none mvAge's or a lifespan class's: C4, no locus-to-gene, E4. β per C:
+FEV1 +0.0088 (q1507, q1508), COPD −0.0009 (q1509, q1510), age leaving education +0.010 (q1511, q1512); smoking,
+lipid, calcium and liver-enzyme sets named. rs114298671 (4_3280142_G_A, row 164): 56 sets (q1513), none mvAge's or a lifespan
+class's: C4, E4. β per A: body fat percentage +0.0070 (q1514, q1515), waist +0.0069 (q1516, q1517), high blood
+pressure +0.0064 (q1518, q1519); BMI sets named. For rows 163, 164.

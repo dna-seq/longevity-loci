@@ -1,0 +1,152 @@
+# A second, independent signal at the seed's locus 25, HTT (4p16.3), its own row under D25.6 and D39.14. Curated
+# 2026-11-16. Lead rs16843603, one of the seed's rsIDs at 25: in an ADD1 intron, GRCh38 4:2,926,850 T/C, GRCh37
+# 4:2,928,577, C ancestral; C at 28.6 % in gnomAD's non-Finnish European genomes. r² 0.055 to rs16843836, mvAge's lead
+# for row 25's HTT signal. C is mvAge's healthier allele and the longer-life allele.
+locus_id: 163
+locus_name: ADD1
+second_signal_of: 25
+verdict: kept
+verdict_reason: >-
+  Tier C (D39.15): genome-wide only at the marginal, which part of row 25's signal carries; conditioned on that
+  signal in the coupling the phase gives, it is suggestive, not genome-wide (R-TIER-4). Rosoff 2023's mvAge puts T at
+  −0.0071 (SE 0.0011), P 4.2e-10 marginal, so C raises the factor (the Catalog the same), a lead SNP of its locus 11
+  beside rs16843836, the HTT signal's mvAge lead (r² 0.70 to row 25's lead), whose own fine-mapping holds it alone.
+  Independence (D39.14, D39.15): no article prints a conditional analysis, and Open Targets places rs16843603 in no
+  mvAge or lifespan-class set. From 1000 Genomes' phased EUR haplotypes, C travels with rs16843836's healthier A (r
+  +0.23, r² 0.055), so the conditional z from Rosoff's z values is 4.70 given rs16843836 (P 2.6e-6, suggestive) and
+  4.38 given it and rs114298671, row 164 (P 1.2e-5) (derived): it survives conditioning, so no tag of 25's lead, but
+  its independent part is sub-genome-wide. Row 25's lead rs61348208 has no mvAge z printed, so rs16843836 stands in
+  for it. Lifespan look-ups, all inside UK Biobank or mvAge's inputs, lean C's way: Timmers 2019 C longer, beta1
+  +0.0222 (SE 0.0043), P 2.6e-7, "--" for T in both arms; Pilling 2017 both parents P 0.0041, mothers 0.0054, fathers
+  5.2e-4, the top 10 % 9.6e-6; Park 2025's own survival C fewer deaths, P 0.00043 (men 0.00021, women 0.29); Deelen
+  2019, an mvAge input, 90th one-sided 0.033, 99th 0.038. Outside them FinnGen R11's deaths lean C's way, one-sided
+  0.15, a database line; no independent sample passes. Outcome cells read for C, on the marginal look-ups (25's share
+  not taken out of them): lifespan + (Timmers, Pilling, Park); exceptional survival + (Pilling's top 10 % both-parents
+  line, P 9.6e-6, D31.8; Deelen one-sided 0.033); healthspan + (Zenin 2019 C the later end, P 0.034; Foote 2025's
+  factors 2, 3 and 5 C less frail, P 4.2e-4, 2.2e-4, 0.0023, none against; the general factor and F4 hold no line).
+  Mechanism general ageing, as the mvAge rows. Pleiotropy `mech:lung` and `broad`: C raises FEV1 and lowers COPD, and
+  goes with longer education (Open Targets, β per C), smoking, lipid, calcium and liver-enzyme sets named; each read
+  on the healthy side, so no `tradeoff`. Causal C4 and effector E4: no mvAge or lifespan-class set in Open Targets
+  holds it, and Rosoff's own fine-mapping of locus 11 picks rs16843836; ADD1 is the host gene, not an effector call.
+  The literature search (the rsID, 2026-11-16; Semantic Scholar answered 429, its part unchecked) finds a 2008 thesis on salt-sensitive hypertension in Black sibships, no PMID, and no test of ageing or lifespan; Rosoff names the SNP only in its supplement. Descriptive. Age of action unknown. The evidence is
+  European.
+axes:
+  tier: {value: C, cites: [pmid-37550455#q23, pmid-37550455#q87, pmid-37550455#q84, pmid-37550455#q86, db-gwascatalog-2026.10.29#q805, db-gwascatalog-2026.10.29#q806, db-ensembl-116#q1174, db-ensembl-116#q1183, db-ensembl-116#q1184, db-ensembl-116#q1185, db-opentargets-26.09#q1506, pmid-30642433#q423, pmid-29227965#q270, pmid-29227965#q272, pmid-29227965#q273, db-finngen-r11#q130]}
+  mechanism: {value: general_ageing, cites: [pmid-37550455#q23, db-gwascatalog-2026.10.29#q805]}
+  pleiotropy: {values: ["mech:lung", broad], cites: [db-opentargets-26.09#q1506, db-opentargets-26.09#q1507, db-opentargets-26.09#q1508, db-opentargets-26.09#q1509, db-opentargets-26.09#q1510, db-opentargets-26.09#q1511, db-opentargets-26.09#q1512]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
+            cites: [pmid-30642433#q423, pmid-29227965#q270, pmid-29227965#q271, pmid-29227965#q272, pmid-29227965#q273, pmid-40021682#q215, pmid-40021682#q216, pmid-40021682#q217, pmid-31413261#q364, pmid-31413261#q365, pmid-30729179#q188, pmid-40759756#q194, pmid-40759756#q195, pmid-40759756#q196, pmid-40759756#q197, pmid-40759756#q198, db-finngen-r11#q130]}
+  actionability: {label: descriptive, cites: [pmid-37550455#q23]}
+  context: {values: [eur_only_evidence], cites: [pmid-37550455#q5, pmid-30642433#q423, db-ensembl-116#q1178]}
+flags:
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1506, pmid-37550455#q87]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q1506, db-ensembl-116#q1179]}
+variants:
+  - rsid: rs16843603
+    locus: {chrom: "4", start: 2926850, ref: T, cites: [db-ensembl-116#q1177]}
+    gene: ADD1
+    phenotype: ADD1 intron, ageing
+    trait_efo_id: EFO_0007796
+    effect_allele: C
+    effect_size: 0.007050574
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: T/T
+        state: neutral
+        conclusion: >-
+          You carry two copies of the more common version of this DNA position (about 51 in 100 people of European
+          ancestry do). It is the reference the other combinations are compared with. The position lies inside the
+          ADD1 gene on chromosome 4, and what it does there is not known. The finding comes from people of European
+          ancestry; less is known elsewhere.
+      - genotype: C/T
+        state: protective
+        conclusion: >-
+          You carry one copy of the C version of this DNA position (about 41 in 100 people of European ancestry do).
+          In a very large European study that combined healthspan, long life and other measures of ageing, this
+          version went with slightly healthier ageing, and parents of carriers lived a little longer. It is an early
+          finding: part of it is shared with a nearby signal, and what is left has not reached the usual bar on its
+          own. The effect is small and it is a tendency, not a guarantee.
+      - genotype: C/C
+        state: protective
+        conclusion: >-
+          You carry two copies of the C version of this DNA position (about 8 in 100 people of European ancestry do).
+          In a very large European study that combined healthspan, long life and other measures of ageing, each copy
+          went with slightly healthier ageing, and parents of carriers lived a little longer. It is an early finding:
+          part of it is shared with a nearby signal, and what is left has not reached the usual bar on its own. The
+          effect is small and it is a tendency, not a guarantee.
+studies:
+  - rsid: rs16843603
+    note: pmid-37550455
+    quote: q23
+    phenotype_class: MULTIVARIATE_AGEING
+    study_design: multivariate_healthspan_lifespan
+    population: European (the five input GWAS, UK Biobank and LifeGen among them; effective n 1,958,774)
+    ancestry: [EUR]
+    stat_significance: significant
+    p_value: "4.1616324788e-10"
+    p_value_num: 4.1616324788e-10
+    effect_size: -0.00705057367178
+    effect_measure: beta
+    effect_unit: mvAge factor per T allele (no conventional unit; positive = healthier ageing)
+    effect_allele: T
+    direction: risk
+    statistical_test: "Genomic SEM common-factor GWAS, Supplementary Table 6 (q23), the effect allele printed second (derived, q87), SE 0.00113; marginal, its locus-11 neighbour rs16843836 carrying part of it (conditional P 2.6e-6, derived, db-ensembl-116#q1183 to q1185, D39.15)"
+    curator: claude-opus-5-5
+  - rsid: rs16843603
+    note: pmid-30642433
+    quote: q423
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 637314
+    sample_unit: lives
+    stat_significance: suggestive
+    p_value: "2.596626e-07"
+    p_value_num: 2.596626e-07
+    effect_size: -0.02221515
+    effect_measure: beta
+    effect_unit: beta1 on parental lifespan per T allele, longer positive
+    effect_allele: T
+    direction: risk
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0043, direction -- in UK Biobank and LifeGen; the co-occurring lifespan study (D16), an mvAge input, marginal"
+    curator: claude-opus-5-5
+  - rsid: rs16843603
+    note: pmid-29227965
+    quote: q271
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_linear
+    population: British (UK Biobank participants whose parents were both in the top 10 % for age at death)
+    ancestry: [EUR]
+    stat_significance: suggestive
+    p_value: "9.6e-06"
+    p_value_num: 9.6e-06
+    effect_size: -0.0096769
+    effect_measure: beta
+    effect_unit: odds scale of both parents in the top 10 % per T allele (negative = fewer long-lived parents)
+    effect_allele: T
+    direction: risk
+    statistical_test: "Pilling 2017's top-10 % both-parents deposit (GCST006698), SE 0.0022; fills exceptional survival (D31.8); UK Biobank, an mvAge input's sample"
+    curator: claude-opus-5-5
+  - rsid: rs16843603
+    note: pmid-30729179
+    quote: q188
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "0.034"
+    p_value_num: 0.034
+    effect_size: -0.0115
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per C allele (negative = later)
+    effect_allele: C
+    direction: protective
+    statistical_test: "Zenin 2019's healthspan summary statistics, SE 0.0054, Z −2.124, −log10 P 1.472 (P about 0.034, from the file's −log10); an mvAge input, the same sample"
+    curator: claude-opus-5-5

@@ -4095,3 +4095,31 @@ population's 503 individuals (q1174), each one's phased genotype at both variant
 T-T 423, C-G 208, T-G 82, C-T 293, so r between rs13141210's T and rs28637671's T is +0.28 (r² 0.078). Both T
 alleles raise mvAge, so they travel together, and the conditional z of rs13141210 given rs28637671 is (5.67 − 0.28
 × 5.62) / √(1 − 0.078) = 4.27, P 2e-5 (derived): the lower coupling of D39.15. For row 162.
+
+## Reading 2026-11-16, record
+
+> [q1177] mappings[0] assembly_name GRCh38 strand 1 ancestral_allele C allele_string T/C location 4:2926850-2926850 seq_region_name 4 start 2926850 coord_system chromosome end 2926850
+
+> [q1178] populations[3] allele_count 19415 frequency 0.2855 population gnomADg:nfe allele C
+
+> [q1179] [0] most_severe_consequence intron_variant id rs16843603 input rs16843603 allele_string T/C seq_region_name 4 end 2926850 start 2926850 strand 1 assembly_name GRCh38
+
+> [q1180] mappings[0] coord_system chromosome allele_string G/A seq_region_name 4 end 3280142 start 3280142 strand 1 assembly_name GRCh38 location 4:3280142-3280142 ancestral_allele C
+
+> [q1181] populations[17] allele A allele_count 8719 frequency 0.1282 population gnomADg:nfe
+
+> [q1182] [0] id rs114298671 most_severe_consequence intergenic_variant strand 1 allele_string G/A assembly_name GRCh38 input rs114298671 start 3280142 end 3280142 seq_region_name 4
+
+> [q1183] genotypes[0] genotype G|A sample 1000GENOMES:phase_3:HG00096 gender Male
+
+> [q1184] genotypes[0] gender Male sample 1000GENOMES:phase_3:HG00096 genotype T|T
+
+> [q1185] genotypes[0] genotype G|G sample 1000GENOMES:phase_3:HG00096 gender Male
+
+rs16843603 (row 163): GRCh38 4:2,926,850 T/C, C ancestral (q1177); C at 28.6 % in gnomAD's non-Finnish genomes (q1178); in an
+ADD1 intron (q1179). rs114298671 (row 164): GRCh38 4:3,280,142 G/A (q1180); A at 12.8 % (q1181); intergenic (q1182).
+Phase from 1000 Genomes' phased EUR genotypes (the population q1174; each variant's file, first lines q1183 to q1185),
+counted over 1,006 haplotypes (derived): rs16843603 C with rs16843836 G, r −0.234; rs114298671 A with rs16843836 G, r +0.237; rs16843603 C
+with rs114298671 A, r −0.135. On mvAge's healthier alleles (rs16843836 A, rs16843603 C, rs114298671 G) each pair travels together, r
++0.23, +0.24, +0.14. Conditional z from Rosoff's z values (7.17, 6.25, 5.65): rs16843603 given rs16843836 4.70 (P 2.6e-6),
+given both 4.38 (1.2e-5); rs114298671 given rs16843836 4.07 (4.8e-5), given both 3.68 (2.3e-4) (derived). For rows 163, 164.
