@@ -4576,3 +4576,33 @@ q1255, q1256), apolipoprotein A, plateletcrit, red-cell fatty acids; none a life
 further telomere-length sets at 0.009 to 0.067 (not quoted): C2 by the telomere sets. Locus-to-gene on Codd's set:
 ACTRT3 0.509, MYNN 0.267 (q1270 to q1273); on Li's, whose lead is rs2293607 (q1274), ACTRT3 0.393 (q1275,
 q1276). L2G scores protein-coding genes only, so TERC, the telomerase RNA, is never scored. For row 23.
+
+## Reading 2026-11-16, record
+
+> [q1277] data.variant.credibleSets count 74
+
+> [q1278] data.variant.credibleSets.rows[42].study id GCST90101889 traitFromSource Naive T-cell telomere length studyType gwas
+
+> [q1279] data.variant.credibleSets.rows[42].locus.rows[0] posteriorProbability 0.03623023208003815 beta -0.17041084794245717 pValueMantissa null pValueExponent null
+
+> [q1280] data.variant.credibleSets.rows[61].study id GCST90104404 traitFromSource Intrinsic epigenetic age acceleration studyType gwas
+
+> [q1281] data.variant.credibleSets.rows[61].locus.rows[0] posteriorProbability 0.7558620450023666 beta -0.7105 pValueMantissa 7 pValueExponent -11
+
+> [q1282] data.credibleSet studyLocusId 94533c673edb0fc1d75b25b09af94358 finemappingMethod SuSiE-inf
+
+> [q1283] data.credibleSet.variant.rsIds[0] rs33961405
+
+> [q1284] data.credibleSet.l2GPredictions.rows[0] score 0.7377884984016418
+
+> [q1285] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol TERT
+
+> [q1286] data.credibleSet.l2GPredictions.rows[0] score 0.8740140199661255
+
+> [q1287] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol TERT
+
+5_1286401_C_A (rs2736100, row 30): 74 credible sets (q1277; the reversed id holds none). Telomere length: only the
+naive T-cell telomere-length set (GCST90101889, q1278) at PIP 0.036 (q1279), SuSiE-inf (q1282), led by rs33961405
+(q1283); no leukocyte telomere-length set holds it: C3. Locus-to-gene on that set TERT 0.738 (q1284, q1285): E2.
+Intrinsic epigenetic age acceleration (Lin 2022, GCST90104404, q1280) at PIP 0.756 (q1281), L2G TERT 0.874 (q1286,
+q1287). For row 30.

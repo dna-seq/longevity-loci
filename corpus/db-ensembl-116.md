@@ -3586,3 +3586,21 @@ D' 1.00 with rs10936600, the seed's locus 104, in 1000 Genomes CEU (q1003). For 
 > [q1004] [0] variation2 rs12637184 r2 1.000000 variation1 rs10936599 population_name 1000GENOMES:phase_3:CEU d_prime 1.000000
 
 rs10936599 and Taub 2022's TERC sentinel rs12637184: r² 1.00, D' 1.00 in 1000 Genomes CEU (q1004). For row 23.
+
+## Reading 2026-11-16, record
+
+> [q1005] mappings[0] assembly_name GRCh38 location 5:1286401-1286401 ancestral_allele A end 1286401 start 1286401 strand 1 allele_string C/A coord_system chromosome seq_region_name 5
+
+> [q1006] populations[6] population gnomADg:nfe allele_count 33725 allele A frequency 0.4965
+
+> [q1007] populations[7] frequency 0.5035 allele C allele_count 34197 population gnomADg:nfe
+
+> [q1008] populations[21] population gnomADg:eas frequency 0.5883 allele_count 3044 allele A
+
+> [q1009] populations[16] population gnomADg:afr allele A allele_count 22326 frequency 0.5389
+
+> [q1010] [0].transcript_consequences[0] impact MODIFIER gene_symbol_source HGNC biotype protein_coding mane_select NM_198253.3 gene_id ENSG00000164362 variant_allele A transcript_id ENST00000310581 canonical 1 strand -1 hgnc_id HGNC:11730 gene_symbol TERT
+
+> [q1011] [0].transcript_consequences[0].consequence_terms[0] intron_variant
+
+rs2736100 (row 30): GRCh38 5:1,286,401 C/A, A ancestral (q1005); A at 49.7 % in gnomAD's non-Finnish European genomes (q1006, q1007), 58.8 % in East Asians (q1008), 53.9 % in Africans (q1009); intronic in TERT's MANE transcript, NM_198253.3 (q1010, q1011). For row 30.

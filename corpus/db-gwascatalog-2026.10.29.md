@@ -2361,3 +2361,67 @@ bladder cancer OR 1.082, P 1e-14 (q621 to q623); multiple myeloma OR 1.16, P 3e-
 lymphocytic leukaemia OR 1.26, P 2e-9 (q627 to q629); colorectal cancer OR 1.04, P 3e-8 (q630 to q632);
 cutaneous melanoma β 0.072 increase, P 8e-19 (q633 to q635). The other lines (eosinophils, uterine fibroids,
 further cancers, some with the allele unrecorded or on a strand-ambiguous G or A) are named, not read. For row 23.
+
+## Reading 2026-11-16, record
+
+> [q636] _embedded.associations[32] association_id 97278059 risk_frequency NR pvalue_description pvalue_mantissa 5 pvalue_exponent -79 multi_snp_haplotype false snp_interaction false range - beta - p_value 5e-79 accession_id GCST90103979 pubmed_id 35530816 first_author Taub MA
+
+> [q637] _embedded.associations[32].efo_traits[0] efo_id OBA_0003784 efo_trait chromosome, telomeric region length
+
+> [q638] _embedded.associations[32].snp_effect_allele[0] rs2736100-?
+
+> [q639] _embedded.associations[49] association_id 40037 risk_frequency NR pvalue_description pvalue_mantissa 4 pvalue_exponent -6 multi_snp_haplotype false snp_interaction false range [NR] beta 0.0808 unit increase p_value 4e-06 accession_id GCST002341 pubmed_id 24465473 first_author Liu Y
+
+> [q640] _embedded.associations[49].efo_traits[0] efo_id OBA_0003784 efo_trait chromosome, telomeric region length
+
+> [q641] _embedded.associations[49].snp_effect_allele[0] rs2736100-C
+
+> [q642] _embedded.associations[55] association_id 18594 risk_frequency 0.41 pvalue_description pvalue_mantissa 1 pvalue_exponent -27 multi_snp_haplotype false snp_interaction false range [1.22-1.33] or_per_copy_num 1.27 or_value 1.27 beta - p_value 1e-27 accession_id GCST001140 pubmed_id 21725308 first_author Hu Z ci_lower 1.22 ci_upper 1.33
+
+> [q643] _embedded.associations[55].efo_traits[0] efo_id MONDO_0005138 efo_trait lung carcinoma
+
+> [q644] _embedded.associations[55].snp_effect_allele[0] rs2736100-C
+
+> [q645] _embedded.associations[38] association_id 36787529 risk_frequency 0.59 pvalue_description pvalue_mantissa 2 pvalue_exponent -12 multi_snp_haplotype false snp_interaction false range [1.18-1.35] or_per_copy_num 1.27 or_value 1.27 beta - p_value 2e-12 accession_id GCST007842 pubmed_id 30714141 first_author Chen H ci_lower 1.18 ci_upper 1.35
+
+> [q646] _embedded.associations[38].efo_traits[0] efo_id MONDO_0021042 efo_trait glioma
+
+> [q647] _embedded.associations[38].snp_effect_allele[0] rs2736100-C
+
+> [q648] _embedded.associations[26] association_id 131719998 risk_frequency 0.500216 pvalue_description pvalue_mantissa 3 pvalue_exponent -13 multi_snp_haplotype false snp_interaction false range [1.15540075176731-1.28471050022817] or_per_copy_num 1.2183412 or_value 1.2183412 beta - p_value 3.0000000000000003e-13 accession_id GCST90102620 pubmed_id 35835912 first_author Kar SP ci_lower 1.1554008 ci_upper 1.2847105
+
+> [q649] _embedded.associations[26].efo_traits[0] efo_id EFO_0010819 efo_trait clonal hematopoiesis
+
+> [q650] _embedded.associations[26].snp_effect_allele[0] rs2736100-C
+
+> [q651] _embedded.associations[43] association_id 21659000 risk_frequency 0.5 pvalue_description pvalue_mantissa 8 pvalue_exponent -20 multi_snp_haplotype false snp_interaction false range 1.22–1.37 or_per_copy_num 1.29 or_value 1.29 beta - p_value 8e-20 accession_id GCST004713 pubmed_id 28604732 first_author Wang Z
+
+> [q652] _embedded.associations[43].efo_traits[0] efo_id MONDO_0010108 efo_trait testicular germ cell tumor
+
+> [q653] _embedded.associations[43].snp_effect_allele[0] rs2736100-A
+
+> [q654] _embedded.associations[62] association_id 11907 risk_frequency 0.41 pvalue_description pvalue_mantissa 3 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [1.61-2.78] or_per_copy_num 2.11 or_value 2.11 beta - p_value 3.0000000000000004e-08 accession_id GCST000238 pubmed_id 18835860 first_author Mushiroda T ci_lower 1.61 ci_upper 2.78
+
+> [q655] _embedded.associations[62].efo_traits[0] efo_id EFO_0000768 efo_trait idiopathic pulmonary fibrosis
+
+> [q656] _embedded.associations[62].snp_effect_allele[0] rs2736100-A
+
+> [q657] _embedded.associations[50] association_id 30632 risk_frequency 0.49 pvalue_description pvalue_mantissa 2 pvalue_exponent -19 multi_snp_haplotype false snp_interaction false range [1.27-1.49] or_per_copy_num 1.37 or_value 1.37 beta - p_value 2e-19 accession_id GCST001968 pubmed_id 23583980 first_author Fingerlin TE ci_lower 1.27 ci_upper 1.49
+
+> [q658] _embedded.associations[50].efo_traits[0] efo_id MONDO_0015925 efo_trait interstitial lung disease
+
+> [q659] _embedded.associations[50].snp_effect_allele[0] rs2736100-A
+
+> [q660] _embedded.associations[33] association_id 88923238 risk_frequency 0.4977 pvalue_description pvalue_mantissa 3 pvalue_exponent -11 multi_snp_haplotype false snp_interaction false range [0.14-0.26] beta 0.2024 unit decrease p_value 3e-11 accession_id GCST90014290 pubmed_id 34187551 first_author McCartney DL ci_lower 0.14 ci_upper 0.26
+
+> [q661] _embedded.associations[33].efo_traits[0] efo_id EFO_0022597 efo_trait aging
+
+> [q662] _embedded.associations[33].snp_effect_allele[0] rs2736100-A
+
+rs2736100 (row 30), 63 associations. Telomere length (OBA_0003784): Taub 2022 (GCST90103979) P 5e-79, the allele
+unrecorded (q636 to q638); Liu 2014 C increase 0.081, P 4e-6, sub-genome-wide (q639 to q641). On C, the
+longer-telomere allele: lung carcinoma OR 1.27, P 1e-27 (q642 to q644); glioma 1.27, P 2e-12 (q645 to q647);
+clonal haematopoiesis 1.22, P 3e-13 (q648 to q650). On A, the shorter: testicular germ cell tumour 1.29, P 8e-20
+(q651 to q653); idiopathic pulmonary fibrosis 2.11, P 3e-8 (q654 to q656); interstitial lung disease 1.37,
+P 2e-19 (q657 to q659). McCartney 2021's epigenetic ageing ("aging", EFO_0022597) A decrease 0.20, P 3e-11
+(q660 to q662). Blood-cell counts, proteins and other lines named, not read. For row 30.
