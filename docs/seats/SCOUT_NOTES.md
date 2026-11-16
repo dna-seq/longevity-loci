@@ -35,9 +35,9 @@ First work:
   Salazar (v3) have newer versions, unread.
 - Open, unattended: bioRxiv's and medRxiv's own listings, left out of both E runs (Europe PMC's preprint index stood
   in). The GWAS Catalog is queried now: v2 only (v1 answers 410), `/studies` by EFO id, pages of at most 500.
-- Open: pmid-42928374's full text, to settle which biomarker FURIN's variant is shared with. Batch fetches go to the
-  runner seat now, not the lead (the runner, 2026-11-10); one PMID is not a batch, so it waits for the next sweep's
-  list.
+- Done 2026-11-16: pmid-42928374 read by the curator from its open PDF (7741c02): FURIN's shared variant is with
+  telomere length, not mvAge; queue entry closed. Every queue entry is now taken (rows 162 to 169) or closed.
+  Batch fetches still go to the runner seat (the runner, 2026-11-10).
 
 ## To file
 

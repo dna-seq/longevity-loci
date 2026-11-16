@@ -2,11 +2,13 @@
 
 New papers bearing on a seed locus (`docs/longevitymap_v2/data/seed_variants.csv`), for the
 curator. Each entry: the locus, one line on why, the passage that says it (verbatim, with where and when it was
-read), and every identifier the paper has. The curator takes it from here; the scout never tiers a row. An entry the curator has taken says so in a **Taken** line naming its row.
+read), and every identifier the paper has. The curator takes it from here; the scout never tiers a row. An entry the curator has taken says so in a **Taken** line naming its row, or a **Closed** line saying why no row follows.
 
 ## Open
 
 ### pmid-42928374 — FES/FURIN (locus 81): pleiotropy with severe mental disorders
+
+- **Closed** 2026-11-16 (curator, 7741c02): FURIN's shared variant is with telomere length (gLTL) in all three disorders, not mvAge (Table 2, corpus/pmid-42928374 q1 to q3), so row 81 is not re-read. The lead SNP sits in Supplementary Tables 2 to 15, which the publisher refuses (403), so whether it is rs6224, rs17514846 or a tag is unknown. Open access, CC BY-NC-ND.
 
 - **Paper:** Pisanu C, Nishioka M, et al. "Genome-wide analysis identifies pleiotropic genes shared between severe
   mental disorders and biomarkers of cellular aging." *Mol Psychiatry*, 2026 Oct 25 (online ahead of print).
