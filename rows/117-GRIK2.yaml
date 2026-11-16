@@ -1,7 +1,8 @@
 # The seed list's locus 117, GRIK2 (6q16.3). Curated 2026-11-16. Lead rs1416280, the seed's only rsID (Broer 2015's
 # CHARGE longevity locus): intergenic between GRIK2 and the R3HDM2P2 pseudogene, GRCh38 6:102,438,768, GRCh37
 # 6:102,886,643, multi-allelic (C/G/T), the row meaning C/G; C at 74.9 % in gnomAD's non-Finnish European genomes, C the
-# discovery's longer-lived allele. Open Targets 26.09 has no record of it; the GWAS Catalog (2026-10-29) holds Broer's
+# discovery's longer-lived allele. C/G is palindromic, so the strand, and with it the allele call, rests on the
+# frequency alone (C 0.75 in the Catalog's record against gnomAD's 0.749). Open Targets 26.09 has no record of it; the GWAS Catalog (2026-10-29) holds Broer's
 # line alone.
 locus_id: 117
 locus_name: GRIK2
@@ -10,16 +11,21 @@ verdict_reason: >-
   Tier D, from no seed tier: a sub-genome-wide discovery that fails a powered test in its own ancestry outside its
   sample (D26.8, D21; row 136's shape). Broer 2015 meta-analysed 6,036 Europeans aged 90 or over against 3,757 who died
   between 55 and 80 in the CHARGE cohorts: a suggestive association near GRIK2, OR 1.24 (1.15–1.34) per C, P 5.09e-8,
-  just short of the genome-wide line, and the paper names no new genome-wide locus. The full text was not reached
-  (Europe PMC answered 500 and OUP's PDF 403, 2026-11-16), so the lead, its allele and its frequency are read from the
-  GWAS Catalog's record of the study (C at 0.75, the risk allele of "longevity"). Deelen 2019 holds the variant (C +0.031,
+  just short of the genome-wide line, and the paper names no new genome-wide locus. The full text is not cached
+  (Europe PMC answered 500 and OUP's PDF 403; PMC's copy refused an automated fetch, 2026-11-16), so the lead, its
+  allele and its frequency rest on the GWAS Catalog's record of the study (C at 0.75, the risk allele of "longevity").
+  Broer's own Table 3, read live by the batch-fifteen review on PMC, prints the same (EA C, 0.75, OR 1.24, 1.15 to
+  1.34), but it is not yet cached or quoted here; until it is, the allele, and the flag that depends on its direction,
+  rest on a database record (D12, D38.10): D stands pending that table. Deelen 2019 holds the variant (C +0.031,
   SE 0.022, P 0.16 at the 90th percentile; +0.006, P 0.86 at the 99th), C's way and flat, but its meta-analyses hold most
   of Broer's CHARGE cohorts, so it is not an independent test (D19). Timmers 2019's parental lifespan, outside that
   sample, has C with shorter-lived parents, beta1 −0.0071 (SE 0.0045), P 0.12. Carried to Timmers' scale (D25.3) by
-  Deelen's 90th percentile calibrations, the nearest to Broer's 90-and-over design (Broer's own APOE line is in the
-  unread text), the discovery expects C +0.044 by APOE's factor (4.84) and +0.106 by the loci's mean factor: power
-  1.00 under both, heterogeneity P 2.5e-8 and 1e-8, and at half the effect 1.3e-6 and 1.5e-8 (derived): a D21 red flag
-  under both calibrations (D26.3), `replication_failed`. No independent scoring-class study passes C's way (D25.1):
+  Deelen's 90th percentile calibrations, the nearest to Broer's 90-and-over design, the discovery expects C +0.044 by
+  APOE's factor (4.84) and +0.106 by the loci's mean factor: power 1.00 under both, heterogeneity P 2.5e-8 and 1e-8,
+  and at half the effect, the discovery's SE kept, P 0.0015 and 0.0023 at power 0.999 and 1.00 (derived): a D21 red
+  flag under both calibrations (D26.3), `replication_failed`. The APOE factor is borrowed and approximate (Broer's text
+  gives APOE only at another SNP, so no same-SNP factor), but the flag does not depend on it: power stays at 0.8 or
+  more and heterogeneity under 0.05 for any factor up to about 17, 3.5 times Deelen's 4.84 (derived). No independent scoring-class study passes C's way (D25.1):
   FinnGen R11's deaths have C with fewer deaths, flat (G β +0.0092, P 0.23, a database line); Park 2025's own survival
   flat (P 0.92; men 0.86, women 0.94); Pilling 2017's parents, inside Timmers' pool, all against C and flat (P 0.28 to
   0.47). Zenin 2019's healthspan puts G with the later end of healthspan, P 0.058, one-sided 0.029 against C. Foote
@@ -94,7 +100,7 @@ studies:
     effect_unit: odds of reaching 90 per C allele
     effect_allele: C
     direction: protective
-    statistical_test: "Broer 2015's meta-analysis (q3, q4; no new genome-wide locus, q2); the lead, its allele C at 0.75 and its interval 1.15–1.34 from the GWAS Catalog's record (GCST002599, db-gwascatalog-2026.10.29#q603, q604, q605); the full text not reached"
+    statistical_test: "Broer 2015's meta-analysis (q3, q4; no new genome-wide locus, q2); the lead, its allele C at 0.75 and its interval 1.15–1.34 from the GWAS Catalog's record (GCST002599, db-gwascatalog-2026.10.29#q603, q604, q605); Broer's Table 3, read live by the review, agrees but is not yet cached (D38.10), so the allele rests on the Catalog for now"
     curator: claude-opus-5-5
   - rsid: rs1416280
     note: pmid-30642433
@@ -113,5 +119,5 @@ studies:
     effect_unit: log hazard protection per C allele in self (beta1; positive = longer life)
     effect_allele: C
     direction: risk
-    statistical_test: "Timmers 2019's summary statistics (GCST009890, q405): C beta1 −0.0071, SE 0.0045; against Broer's log OR +0.215 (SE 0.039) carried by Deelen's 90th calibrations (APOE 4.84, pmid-31413261#q82 over q90; mean ×0.4175, q92): expected +0.044 and +0.106, power 1.00, heterogeneity P 2.5e-8 and 1e-8, a D21 red flag under both; at half the effect 1.3e-6 and 1.5e-8 (derived)"
+    statistical_test: "Timmers 2019's summary statistics (GCST009890, q405): C beta1 −0.0071, SE 0.0045; against Broer's log OR +0.215 (SE 0.039) carried by Deelen's 90th calibrations (APOE 4.84, pmid-31413261#q82 over q90; mean ×0.4175, q92): expected +0.044 and +0.106, power 1.00, heterogeneity P 2.5e-8 and 1e-8, a D21 red flag under both; at half the effect, the discovery's SE kept, 0.0015 and 0.0023 at power 0.999 and 1.00 (derived); the flag holds for any factor up to about 17"
     curator: claude-opus-5-5
