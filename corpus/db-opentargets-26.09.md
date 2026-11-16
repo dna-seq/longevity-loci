@@ -4542,3 +4542,37 @@ q1255, q1256), apolipoprotein A, plateletcrit, red-cell fatty acids; none a life
 > [q1263] data variant null
 
 6_32684843_G_A (rs9275160; row 159): no record, nor under the reversed id. For row 159.
+
+## Reading 2026-11-16, record
+
+> [q1264] data.variant.credibleSets count 252
+
+> [q1265] data.variant.credibleSets.rows[104].study id GCST001936 traitFromSource Telomere length studyType gwas
+
+> [q1266] data.variant.credibleSets.rows[104].locus.rows[0] posteriorProbability 0.1149697244010522 beta -0.097 pValueMantissa 3 pValueExponent -31
+
+> [q1267] data.variant.credibleSets.rows[0].study id GCST008366 traitFromSource Leukocyte telomere length studyType gwas
+
+> [q1268] data.variant.credibleSets.rows[0].locus.rows[0] posteriorProbability 0.05261130155881343 beta null pValueMantissa null pValueExponent null
+
+> [q1269] data.credibleSet studyLocusId 6d9e985e69a356a6b553217db1d0c5e2 finemappingMethod PICS
+
+> [q1270] data.credibleSet.l2GPredictions.rows[0] score 0.5088444352149963
+
+> [q1271] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol ACTRT3
+
+> [q1272] data.credibleSet.l2GPredictions.rows[1] score 0.2666127681732178
+
+> [q1273] data.credibleSet.l2GPredictions.rows[1].target approvedSymbol MYNN
+
+> [q1274] data.credibleSet.variant.rsIds[0] rs2293607
+
+> [q1275] data.credibleSet.l2GPredictions.rows[0] score 0.39294978976249695
+
+> [q1276] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol ACTRT3
+
+3_169774313_C_T (rs10936599, row 23): 252 credible sets (q1264; both pages read, 200 and 52). Telomere length: Codd
+2013's set (GCST001936, q1265) at PIP 0.115 (q1266), PICS (q1269); Li 2020's (GCST008366, q1267) at 0.053 (q1268); nine
+further telomere-length sets at 0.009 to 0.067 (not quoted): C2 by the telomere sets. Locus-to-gene on Codd's set:
+ACTRT3 0.509, MYNN 0.267 (q1270 to q1273); on Li's, whose lead is rs2293607 (q1274), ACTRT3 0.393 (q1275,
+q1276). L2G scores protein-coding genes only, so TERC, the telomerase RNA, is never scored. For row 23.

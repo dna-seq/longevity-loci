@@ -3557,3 +3557,32 @@ rs75737809 (row 152): 1000 Genomes CHS A 5 of 210, 0.024 (q988, q989); 1000 Geno
 > [q995] populations[60] frequency 0.892857142857143 allele A allele_count 900 population 1000GENOMES:phase_3:EAS
 
 rs79645902 (row 156): 1000 Genomes CHS G 26 of 210, 0.124 (q992, q993); 1000 Genomes EAS G 108 of 1,008, 0.107 (q994, q995). For row 156, batch fourteen (D37).
+
+## Reading 2026-11-16, record
+
+> [q996] mappings[0] assembly_name GRCh38 ancestral_allele C location 3:169774313-169774313 end 169774313 strand 1 start 169774313 allele_string C/G/T seq_region_name 3 coord_system chromosome
+
+> [q997] populations[36] allele T allele_count 16629 frequency 0.2446 population gnomADg:nfe
+
+> [q998] populations[37] population gnomADg:nfe allele_count 51367 allele C frequency 0.7554
+
+> [q999] populations[29] frequency 0.565 allele_count 2921 allele T population gnomADg:eas
+
+> [q1000] populations[24] allele T allele_count 2729 frequency 0.06569 population gnomADg:afr
+
+> [q1001] [0].transcript_consequences[3] variant_allele T impact LOW amino_acids H gene_symbol MYNN mane_select NM_018657.5 biotype protein_coding transcript_id ENST00000349841 hgnc_id HGNC:14955 cdna_end 116 gene_id ENSG00000085274 gene_symbol_source HGNC canonical 1 codons caC/caT cdna_start 116 cds_start 18 protein_end 6 protein_start 6 strand 1 cds_end 18
+
+> [q1002] [0].transcript_consequences[3].consequence_terms[0] synonymous_variant
+
+> [q1003] [0] population_name 1000GENOMES:phase_3:CEU d_prime 1.000000 r2 1.000000 variation1 rs10936599 variation2 rs10936600
+
+rs10936599 (row 23): GRCh38 3:169,774,313, multi-allelic C/G/T, C ancestral (q996), the row meaning C/T; T at 24.5 %
+in gnomAD's non-Finnish European genomes (q997, q998), 56.5 % in East Asians (q999), 6.6 % in Africans (q1000);
+C>T is synonymous in MYNN's MANE transcript, His6His (q1001, q1002); the other allele, G, is the missense. r² 1.00 and
+D' 1.00 with rs10936600, the seed's locus 104, in 1000 Genomes CEU (q1003). For row 23.
+
+## Reading 2026-11-16, record
+
+> [q1004] [0] variation2 rs12637184 r2 1.000000 variation1 rs10936599 population_name 1000GENOMES:phase_3:CEU d_prime 1.000000
+
+rs10936599 and Taub 2022's TERC sentinel rs12637184: r² 1.00, D' 1.00 in 1000 Genomes CEU (q1004). For row 23.

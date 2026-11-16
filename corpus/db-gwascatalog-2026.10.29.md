@@ -2309,3 +2309,55 @@ rs200818241 (row 127): no association in the catalogue. For row 127.
 > [q614] page size 200 totalElements 5 totalPages 1 number 0
 
 rs9275160 (row 159): five associations, every one on A: prostate cancer (Wang, GCST90274714, OR 1.05, P 2e-16; q607, q608, q609; and GCST90274713), complement C4 levels (Thareja, β +0.26, P 1e-19; q610, q611), prostate cancer again (Conti, P 9e-8; q612, q613), and Atkins' frailty index (q614). For row 159.
+
+## Reading 2026-11-16, record
+
+> [q615] _embedded.associations[17] association_id 33527 risk_frequency 0.252 pvalue_description pvalue_mantissa 3 pvalue_exponent -31 multi_snp_haplotype false snp_interaction false range [0.081-0.113] beta 0.097 unit decrease p_value 3.0000000000000003e-31 accession_id GCST001936 pubmed_id 23535734 first_author Codd V ci_lower 0.081 ci_upper 0.113
+
+> [q616] _embedded.associations[17].efo_traits[0] efo_id OBA_0003784 efo_trait chromosome, telomeric region length
+
+> [q617] _embedded.associations[17].snp_effect_allele[0] rs10936599-T
+
+> [q618] _embedded.associations[9] association_id 97278039 risk_frequency NR pvalue_description pvalue_mantissa 8 pvalue_exponent -95 multi_snp_haplotype false snp_interaction false range - beta - p_value 8e-95 accession_id GCST90103979 pubmed_id 35530816 first_author Taub MA
+
+> [q619] _embedded.associations[9].efo_traits[0] efo_id OBA_0003784 efo_trait chromosome, telomeric region length
+
+> [q620] _embedded.associations[9].snp_effect_allele[0] rs10936599-?
+
+> [q621] _embedded.associations[3] association_id 227546727 risk_frequency 0.7312 pvalue_description pvalue_mantissa 1 pvalue_exponent -14 multi_snp_haplotype false snp_interaction false range [1.06062165939086-1.10432159730391] or_per_copy_num 1.082 or_value 1.082 beta - p_value 1e-14 accession_id GCST90726395 pubmed_id 42706231 first_author Prokunina-Olsson L ci_lower 1.0606216 ci_upper 1.1043216
+
+> [q622] _embedded.associations[3].efo_traits[0] efo_id MONDO_0001187 efo_trait urinary bladder cancer
+
+> [q623] _embedded.associations[3].snp_effect_allele[0] rs10936599-C
+
+> [q624] _embedded.associations[11] association_id 91633807 risk_frequency 0.76 pvalue_description pvalue_mantissa 3 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [NR] or_per_copy_num 1.16 or_value 1.16 beta - p_value 3.0000000000000004e-08 accession_id GCST012396 pubmed_id 33875642 first_author Duran-Lozano L
+
+> [q625] _embedded.associations[11].efo_traits[0] efo_id MONDO_0009693 efo_trait plasma cell myeloma
+
+> [q626] _embedded.associations[11].snp_effect_allele[0] rs10936599-C
+
+> [q627] _embedded.associations[14] association_id 38323 risk_frequency NR pvalue_description pvalue_mantissa 2 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range [1.17-1.35] or_per_copy_num 1.26 or_value 1.26 beta - p_value 2e-09 accession_id GCST002299 pubmed_id 24292274 first_author Speedy HE ci_lower 1.17 ci_upper 1.35
+
+> [q628] _embedded.associations[14].efo_traits[0] efo_id MONDO_0004948 efo_trait B-cell chronic lymphocytic leukemia
+
+> [q629] _embedded.associations[14].snp_effect_allele[0] rs10936599-C
+
+> [q630] _embedded.associations[19] association_id 16561 risk_frequency NR pvalue_description pvalue_mantissa 3 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [1.04-1.10] or_per_copy_num 1.04 or_value 1.04 beta - p_value 3.0000000000000004e-08 accession_id GCST000843 pubmed_id 20972440 first_author Houlston RS ci_lower 1.04 ci_upper 1.1
+
+> [q631] _embedded.associations[19].efo_traits[0] efo_id MONDO_0005575 efo_trait colorectal cancer
+
+> [q632] _embedded.associations[19].snp_effect_allele[0] rs10936599-C
+
+> [q633] _embedded.associations[10] association_id 97179339 risk_frequency 0.75 pvalue_description pvalue_mantissa 8 pvalue_exponent -19 multi_snp_haplotype false snp_interaction false range [0.056-0.088] beta 0.0719 unit increase p_value 8e-19 accession_id GCST90103971 pubmed_id 34813871 first_author Liyanage U ci_lower 0.056 ci_upper 0.088
+
+> [q634] _embedded.associations[10].efo_traits[0] efo_id MONDO_0005012 efo_trait cutaneous melanoma
+
+> [q635] _embedded.associations[10].snp_effect_allele[0] rs10936599-C
+
+rs10936599 (row 23), 21 associations in the catalogue. Telomere length, trait OBA_0003784 ("chromosome, telomeric
+region length"): Codd 2013 (GCST001936) T, β 0.097 decrease, P 3e-31, T at 0.252 (q615, q616, q617); Taub 2022
+(GCST90103979) P 8e-95, the allele unrecorded (q618, q619, q620). Cancers on C, the longer-telomere allele:
+bladder cancer OR 1.082, P 1e-14 (q621 to q623); multiple myeloma OR 1.16, P 3e-8 (q624 to q626); chronic
+lymphocytic leukaemia OR 1.26, P 2e-9 (q627 to q629); colorectal cancer OR 1.04, P 3e-8 (q630 to q632);
+cutaneous melanoma β 0.072 increase, P 8e-19 (q633 to q635). The other lines (eosinophils, uterine fibroids,
+further cancers, some with the allele unrecorded or on a strand-ambiguous G or A) are named, not read. For row 23.
