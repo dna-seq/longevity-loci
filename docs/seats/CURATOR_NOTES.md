@@ -2,7 +2,67 @@
 
 The curator seat's working state, rewritten to the present before a reset (`docs/seats/CURATOR.md`).
 
-## Now (2026-11-10)
+## State (2026-11-16, 20Z, written whole before the move to genie's organisation)
+
+Transcripts do not move with the seats (the person, via the lead, 640872406); this block is what a new holder needs.
+
+**In hand: nothing.** Every seed locus has a row (161 of 161; 164 rows: 165 to 169 are second signals or folds), the
+scout's queue is empty (d8e0a08), and batch seventeen's corrections (D40) are all pushed (a6aa2af to 9abbb89, then
+2327574, e1293d8, 1ffba5f). The last `done:` to the lead (640847775) offered two next steps and took the default:
+wait for the lead's next item, ask the runner for nothing.
+
+**Waits on whom:**
+- The lead: the next correction batch or new rows. The dashboard's open items D3 to D7 (name and version, the
+  `ageing_markers` loci's place, the mortality PGS, the legacy layer's depth, the ancestry-specific loci) are the
+  person's and the lead's; no row moves on them until decided.
+- The runner: a full quote check, on request only, as an ll- job at a named commit (ask in #longevity-loci >
+  curation). The last full run found 6,531 located and 1 no_text (db-gwascatalog-2025.01.09): exit 4, "not all
+  checked", never a pass.
+- Open, not mine: row 165's mothers' D21 flag rests on Wright's printed 0.031 (pmid-31484785 q181); 165 goes to A
+  only once a quoted figure clears it. Pisanu 2026 (corpus/pmid-42928374.md): FURIN's shared variant is unknown,
+  the supplementary tables answered 403; re-fetch if they open.
+- The org move: do not run the switch until the lead says the person gave the go. A ticket from genie's
+  secretary reached this seat (640873650) and sits in the ledger, unused.
+
+**Routine per row** (unchanged): look-ups; the note and the row in one commit (`git commit -q -F - --only -- paths`,
+`git add` first for a new file, message ending "Seat: curator" and the Co-Authored-By line);
+`uv run loci check quotes --since <the row's parent> -q`; a literature search on the rsID (every PMID from
+literature_search, title-checked); self-review; a lessons entry in the log below, above the previous one; a line in
+rows/PROGRESS.md; push; `done:` to the lead with each question carrying options and a default.
+
+**Rules to carry** (the full list lives in docs/DECISIONS.md; these are the ones the last batches turned on):
+- D39.18: in each study the stronger line is read at its marginal and the weaker conditioned on it, never both.
+- D40.3: two lines whose z differ by less than one SE of their difference rank neither; the seed row keeps its
+  marginal, the second signal is read conditioned.
+- D40.1: a healthspan anchor needs a co-occurring lifespan study that is the locus's own (§4.5, D16, D17.1, D30.2).
+- D30.18: stepwise joint conditioning over the 1 Mb window on every lifespan line stronger than the lead.
+- D29.18, D30.1: Wright's Table 8 filtered on its own arm; a Table 9 AncestryDNA line counts only if the table holds
+  it with the AncestryDNA z set to 0.
+- D39.9: a live read moves nothing until it is cached and quoted.
+- Conditional z: z_c = (z1 − r·z2)/√(1−r²), r on the healthier alleles from 1000 Genomes' phased EUR haplotypes
+  (population line db-ensembl-116 q1174); the joint version by the matrix inverse. Always "derived".
+- An `unharmonised` warning where the effect allele is the risk allele is accepted (row 66); PROTECT:ABSENCE_OF_RISK
+  as row 66 carries it.
+- Never re-fetch a fixed-name cache file a note quotes; never write the cache's path in the repo.
+
+**Latest quote ids** (the next one is +1): db-ensembl-116 q1212, db-opentargets-26.09 q1570, pmid-29227965 q302,
+pmid-30642433 q428, pmid-40759756 q226, pmid-30729179 q194, pmid-31413261 q374, pmid-40021682 q234,
+db-finngen-r11 q134, pmid-37550455 q88, pmid-42928374 q3.
+
+**What is lost with the session.** The helpers lived in the session's scratchpad, outside git: a note-appender
+(one quote line per call: key, depth, the cached file and a regex for the line, the prose with q-numbers), a phase
+script (r and haplotype counts between two rsIDs from Ensembl's 1000 Genomes genotypes), and fetchers for a
+variant's Ensembl records and a locus's deposits (Pilling, Timmers, Zenin, Deelen, Park, FinnGen, Foote, Open
+Targets). A new holder rebuilds them from the notes' own lines: every quote names its cached file and line, so
+the pattern is in corpus/. Open Targets' set size: ask `credibleSet(studyLocusId){locus(page:{index:0,size:1}){count}}`,
+since a page of `locus` rows is truncated. Ensembl LD: `/ld/human/RS/1000GENOMES:phase_3:EUR?window_size=500;r2=0.01`
+(500 kb at most). Run the interpreter as `uv run python -I`.
+
+**Learned, in short:** quote ids are read from the note, never assumed; a `trait_efo_id` is read off the Catalog
+record, never left empty; multi-line text edits want whitespace-tolerant matches; a full quote check takes about
+70 min and belongs to the runner; this repo has no tooling seat, so tooling wishes go to the lead.
+
+## Log (from 2026-11-10)
 
 - **After each row: `uv run loci check quotes --since <the row's parent> -q`** (d63682d), in place of the scratchpad
   subset script. First run, since 7d34929 (every note touched today): located 4,765, exit 0, about 12 minutes.
