@@ -2,39 +2,44 @@
 # Lead rs4784227, the seed's second rsID at 82 (Zenin 2019's healthspan SNP, the TOX3/CASC16 breast-cancer variant):
 # intronic, GRCh38 16:52,565,276 C/T (a multi-allelic site, C/A/T, the row meaning C/T), GRCh37 16:52,599,188, C
 # ancestral; T at 24.2 % in gnomAD's non-Finnish European genomes. 28 kb from row 82's lead rs4783780, r² 0.330 in 1000
-# Genomes EUR, its C with the lead's A. C is the healthier allele.
+# Genomes EUR, its C with the lead's A. T is the risk allele, C the common one.
 locus_id: 169
 locus_name: CASC16-TOX3
 second_signal_of: 82
 verdict: kept
 verdict_reason: >-
-  Tier B (D39.18): genome-wide in one study, Zenin 2019's UK Biobank healthspan, T the earlier end, β +0.032, P
-  3.02e-8 after genomic control (Table 2; 1.3e-8 before), cancer its only component that passes (P 2.2e-10). Zenin's
-  own replication half, also UK Biobank, is short of nominal (β 0.018, P 0.078), and no sample outside UK Biobank
-  passes once 82's lead is accounted for: a single unreplicated study. Independence (D39.14, D39.18): in Zenin's
-  healthspan rs4784227 is the stronger line (Z 5.69 against 82's lead's 4.79 in the same file), so it is read at its
-  marginal there; conditioned on it, 82's lead falls to 1.86 (derived), as row 82's prose says. The signals' own sets
-  differ: Timmers 2020's set at 82's lead colocalises with none of rs4784227's breast-cancer sets (row 82). From 1000
-  Genomes' phased EUR haplotypes C travels with the lead's longer-lived A (r +0.575, r² 0.330). Where 82's lead is the
-  stronger line, rs4784227 is conditioned on it (D39.18): Timmers 2019's pooled parents C longer at the marginal (P
-  0.029) but 0.12 after (P 0.91); Pilling 2017's both parents P 0.0058 (mothers 0.0038, fathers 0.55), 1.16 after (P
-  0.25); Deelen 2019's 90th C's way, P 0.030 (99th 0.28), 0.72 after (P 0.47); FinnGen R11's deaths C fewer, P 0.042,
-  0.54 after (P 0.59) (all derived; FinnGen at the EUR r, Finnish LD unread). Park 2025's own survival is flat (P 0.84;
-  men 0.39, women 0.16). Outcome cells read for C: healthspan + (Zenin); lifespan 0 and exceptional survival 0, every
-  lifespan and longevity line the lead's shadow once conditioned (Pilling's top 10 % flat, P 0.13). Mechanism general
-  ageing, as cancer carries the healthspan signal: T raises breast cancer (Open Targets' set, β +0.23, P 9.5e-47, PIP
-  0.87) and systolic blood pressure (+0.011, P 1.2e-9), so `mech:cancer` and `mech:cvd`, the healthier allele C the
-  lower on each, no `tradeoff`; more breast-cancer, pressure and brain-imaging sets named. A healthspan signal carried
-  by breast cancer likely sits in women, but no sex-split line is read, so no token. Causal C4 (D39.12: none of Open
-  Targets' 83 sets is of the row's phenotype, and Zenin sets none). Effector E4: intronic between CASC16 and TOX3, with a
-  TOX3 splicing set in Open Targets; no set of the row's phenotype, no colocalisation read. The literature search (the
-  rsID with lifespan, longevity, healthspan or mortality, 2026-11-16; Semantic Scholar answered 429, its part
-  unchecked) finds breast-cancer studies: Xu 2022's meta-analysis (PMID 36042591; T against C, OR 1.24, in its
-  abstract), and Sun 2020 (PMID 31655495), a northwest Chinese case-control study whose abstract puts T with lymph-node
-  metastasis; named, abstract only, the same side as the Open Targets set, no lifespan claim. Descriptive. Age of action
-  unknown. The evidence is European.
+  Tier C (D40.1): genome-wide in one healthspan study but with no co-occurring lifespan study of its own. Zenin 2019's
+  UK Biobank healthspan puts T at the earlier end, β +0.032, P 3.02e-8, the paper's own P after its genomic control
+  (Table 2; 1.3e-8 before), cancer its only component that passes (P 2.2e-10). In Zenin rs4784227 is the stronger
+  line (Z 5.69 against 82's lead's 4.79 in the same file), so it is read at its marginal there (D39.18). A healthspan
+  line scores only with a co-occurring lifespan study at one-sided P < 0.05 on the same allele that is the locus's own
+  signal (§4.5, D16, D17.1, D30.2), and none is: in every lifespan and longevity study 82's lead is the stronger line,
+  and conditioned on it rs4784227 goes flat. From 1000 Genomes' phased EUR haplotypes C travels with the lead's
+  longer-lived A (r +0.575, r² 0.330); Timmers 2019's pooled parents C longer at the marginal (P 0.029), 0.12 after
+  (P 0.91); Pilling 2017's both parents P 0.0058 (mothers 0.0038, fathers 0.55), 1.16 after (P 0.25); Deelen 2019's
+  90th C's way, P 0.030 (99th 0.28), 0.72 after (P 0.47); FinnGen R11's deaths C fewer, P 0.042, 0.54 after (P 0.59)
+  (all derived; FinnGen at the EUR r, Finnish LD unread); Zenin's own parents'-death column misses even before
+  conditioning (one-sided 0.0515). Row 103's case. Zenin's replication half, also UK Biobank, is a one-sided pass (β
+  0.018, P 0.078 two-sided, one-sided 0.039), which counts nothing toward A (D25.11). Independence (D39.14):
+  conditioned on rs4784227, 82's lead keeps Z 1.86 in Zenin (one-sided 0.031, derived), which row 82 reads as its
+  own residual (D40.2), so the one healthspan signal is scored once; Timmers 2020's set at 82's lead colocalises with
+  none of rs4784227's breast-cancer sets (row 82). Park 2025's own survival is flat (P 0.84; men 0.39, women 0.16).
+  Outcome cells read for C: healthspan + (Zenin); lifespan 0 and exceptional survival 0, every lifespan and longevity
+  line the lead's shadow once conditioned (Pilling's top 10 % flat, P 0.13). Mechanism general ageing, as cancer
+  carries the healthspan signal: T raises breast cancer (Open Targets' set, β +0.23, P 9.5e-47, PIP 0.87) and
+  systolic blood pressure (+0.011, P 1.2e-9), so `mech:cancer` and `mech:cvd`, the common allele C the lower on each,
+  no `tradeoff`; more breast-cancer, pressure and brain-imaging sets named. `PROTECT:ABSENCE_OF_RISK` (D40.1, as row
+  66): the common C is the absence of the breast-cancer risk allele. A healthspan signal carried by breast cancer
+  likely sits in women, but no sex-split line is read, so no token. Causal C4 (D39.12: none of Open Targets' 83 sets
+  is of the row's phenotype, and Zenin sets none). Effector E4: intronic between CASC16 and TOX3, with a TOX3 splicing
+  set in Open Targets; no set of the row's phenotype, no colocalisation read. The literature search (the rsID with
+  lifespan, longevity, healthspan or mortality, 2026-11-16; Semantic Scholar answered 429, its part unchecked) finds
+  breast-cancer studies: Xu 2022's meta-analysis (PMID 36042591; T against C, OR 1.24, in its abstract), and Sun 2020
+  (PMID 31655495), a northwest Chinese case-control study whose abstract puts T with lymph-node metastasis; named,
+  abstract only, the same side as the Open Targets set, no lifespan claim. Descriptive. Age of action unknown. The
+  evidence is European.
 axes:
-  tier: {value: B, cites: [pmid-30729179#q111, pmid-30729179#q112, pmid-30729179#q113, pmid-30729179#q114, pmid-30729179#q193, db-ensembl-116#q1174, db-ensembl-116#q1208, db-ensembl-116#q1209, db-ensembl-116#q622, pmid-30642433#q323, pmid-30642433#q324, pmid-29227965#q66, pmid-29227965#q67, pmid-31413261#q190, db-finngen-r11#q57, db-finngen-r11#q58]}
+  tier: {value: C, cites: [pmid-30729179#q111, pmid-30729179#q112, pmid-30729179#q113, pmid-30729179#q114, pmid-30729179#q193, db-ensembl-116#q1174, db-ensembl-116#q1208, db-ensembl-116#q1209, db-ensembl-116#q622, pmid-30642433#q323, pmid-30642433#q324, pmid-29227965#q66, pmid-29227965#q67, pmid-31413261#q190, db-finngen-r11#q57, db-finngen-r11#q58]}
   mechanism: {value: general_ageing, cites: [pmid-30729179#q112, db-opentargets-26.09#q1551, db-opentargets-26.09#q1552]}
   pleiotropy: {values: ["mech:cancer", "mech:cvd"], cites: [db-opentargets-26.09#q1551, db-opentargets-26.09#q1552, db-opentargets-26.09#q1553, db-opentargets-26.09#q1554]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -43,6 +48,7 @@ axes:
   actionability: {label: descriptive, cites: [pmid-30729179#q111]}
   context: {values: [eur_only_evidence], cites: [pmid-30729179#q111, db-ensembl-116#q1206]}
 flags:
+  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [pmid-30729179#q111, db-ensembl-116#q1206, db-opentargets-26.09#q1551, db-opentargets-26.09#q1552]}
   - {token: "causal:C4", cites: [db-opentargets-26.09#q1550]}
   - {token: "effector:E4", cites: [db-opentargets-26.09#q1550, db-opentargets-26.09#q1555, db-opentargets-26.09#q1556, db-ensembl-116#q1207]}
 variants:
@@ -51,35 +57,35 @@ variants:
     gene: CASC16
     phenotype: CASC16–TOX3 region, healthspan
     trait_efo_id: EFO_0009762
-    effect_allele: C
-    effect_size: -0.032
+    effect_allele: T
+    effect_size: 0.032
     effect_measure: beta
     stat_significance: significant
-    direction: protective
+    direction: risk
     genotypes:
       - genotype: C/C
-        state: protective
-        conclusion: >-
-          You carry two copies of the common C version of this DNA position (about 57 in 100 people of European
-          ancestry do). In a very large British study, people with this version stayed free of major disease a little
-          longer, per copy, mostly through fewer cancers; the same version goes with a lower risk of breast cancer. It
-          is a likely finding, not a settled one: it has not been confirmed in a separate group of people. The effect is
-          small and it is a tendency, not a guarantee.
-      - genotype: C/T
-        state: protective
-        conclusion: >-
-          You carry one copy of the common C version of this DNA position (about 37 in 100 people of European ancestry
-          do). In a very large British study, people with this version stayed free of major disease a little longer,
-          mostly through fewer cancers; the same version goes with a lower risk of breast cancer. It is a likely
-          finding, not a settled one: it has not been confirmed in a separate group of people. The effect is small and
-          it is a tendency, not a guarantee.
-      - genotype: T/T
         state: neutral
         conclusion: >-
+          You carry two copies of the common C version of this DNA position (about 57 in 100 people of European
+          ancestry do). It is the reference the other combinations are compared with. The position lies between the
+          CASC16 and TOX3 genes on chromosome 16, a region known for breast cancer risk. The finding comes from people
+          of European ancestry; less is known elsewhere.
+      - genotype: C/T
+        state: risk
+        conclusion: >-
+          You carry one copy of the T version of this DNA position (about 37 in 100 people of European ancestry do). In
+          a very large British study, people with this version developed a first major disease, mostly a cancer, a
+          little earlier; the same version goes with a higher risk of breast cancer. It is an early finding: it was not
+          seen in studies of how long people or their parents lived. The effect is small and it is a tendency, not
+          destiny.
+      - genotype: T/T
+        state: risk
+        conclusion: >-
           You carry two copies of the T version of this DNA position (about 6 in 100 people of European ancestry do).
-          It is the reference the other combinations are compared with. The position lies between the CASC16 and TOX3
-          genes on chromosome 16, a region known for breast cancer risk. The finding comes from people of European
-          ancestry; less is known elsewhere.
+          In a very large British study, people with this version developed a first major disease, mostly a cancer, a
+          little earlier, per copy; the same version goes with a higher risk of breast cancer. It is an early finding:
+          it was not seen in studies of how long people or their parents lived. The effect is small and it is a
+          tendency, not destiny.
 studies:
   - rsid: rs4784227
     note: pmid-30729179
@@ -98,7 +104,7 @@ studies:
     effect_unit: log hazard of the end of healthspan per T allele (positive = earlier)
     effect_allele: T
     direction: risk
-    statistical_test: "Zenin 2019's Table 2, after genomic control (q111; 1.3e-8 before, q112; summary file Z 5.69, q114); replication half β 0.018, P 0.078, also UK Biobank; the stronger line in the study, so read at its marginal (D39.18); 82's lead conditioned on it Z 1.86 (q113, phase db-ensembl-116#q1208, q1209, derived)"
+    statistical_test: "Zenin 2019's Table 2, the paper's own P after genomic control (q111; 1.3e-8 before, q112; summary file Z 5.69, q114); replication half β 0.018, one-sided 0.039, also UK Biobank, counting nothing toward A (D25.11); the stronger line in the study, so read at its marginal (D39.18); no co-occurring lifespan study of its own (D40.1)"
     curator: claude-opus-5-5
   - rsid: rs4784227
     note: pmid-30642433

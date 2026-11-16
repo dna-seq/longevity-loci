@@ -18,13 +18,15 @@ verdict_reason: >-
   Open Targets, Pilling's (seven members) and Wright's fathers' (four), do not hold rs11780471, and none of
   rs11780471's 11 sets is a lifespan set; something survives conditioning in both of Wright's arms. FinnGen R11's
   deaths, outside both, put A with fewer deaths at P 0.011, but conditioned on 53's lead there (EUR r, Finnish LD
-  unread) 1.82, P 0.07 (derived): no independent replication of the independent part. The reverse matters for row 53:
+  unread) 1.82, P 0.07 (derived): a one-sided pass, but a database line lifts nothing (D29.1). FinnGen's two lines,
+  2.56 here against the lead's 2.27, are a tie under D40.3, so the order does not reverse there. The reverse matters for row 53:
   53's lead given rs11780471 conditions to z 4.40 in Wright's meta and 4.57 in Pilling's both parents (derived), and
   row 53 is told so in its prose. Look-ups read for A: Pilling's fathers +0.0194 for G (P 1.6e-5, Wright's UK Biobank
   arm digit for digit), mothers P 0.0061, the top 10 % flat (0.45); Timmers A longer, P 2.3e-6, "++"; Deelen 2019 A's
   way, flat (90th 0.33, 99th 0.10); Park 2025's own survival flat (P 0.24). Outcome cells read for A: lifespan +
-  (Wright, Pilling, Timmers, FinnGen); exceptional survival 0 (Deelen, Pilling's top 10 %); healthspan 0 (Zenin 2019
-  flat, P 0.79; Foote 2025's general factor A less frail at P 0.068, its F2 A frailer at P 0.013, the rest flat).
+  (Wright, Pilling, Timmers, FinnGen); exceptional survival 0 (Deelen's 90th one-sided 0.17, its 99th 0.052; Pilling's top 10 % flat);
+  healthspan 0 (D31.13: Zenin 2019 flat, P 0.79; Foote 2025's general factor favours A, one-sided 0.034, its F2
+  opposes, one-sided 0.006, the rest flat).
   Mechanism smoking and lungs: A lowers smoking initiation (Saunders 2022, P 5e-110; Liu 2019, P 2e-13) and lung
   cancer (McKay 2017, P 2e-8, G the risk allele), so `mech:smoking` and `mech:cancer`, the longer-life allele the
   healthier on each, no `tradeoff`. Causal C4 (D39.12: none of Open Targets' 11 sets is of the row's phenotype, and no

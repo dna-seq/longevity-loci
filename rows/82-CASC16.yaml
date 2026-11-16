@@ -18,8 +18,8 @@ verdict_reason: >-
   tables hold no SNP that tags the lead: its mothers' lines 150 to 210 kb away (rs9924319 in Table 9, three in
   Table 8) have no LD to it in CEU or GBR that Ensembl returns, so AncestryDNA is untested here, not null. No red flag: nothing outside the inputs fails with power, and FinnGen's scale is
   printed nowhere (D28.1). Healthspan +: Zenin 2019, A delaying the end of healthspan, P 3.0e-6 after its genomic
-  control (an input); its Z (4.79) is above what rs4784227's signal would put at the lead (3.28; derived), so the + is
-  the lead's own. Exceptional survival +: Deelen's 90th favours A (P 0.0059), its 99th leans the same way (P
+  control (an input), and conditioned on rs4784227, the stronger line there, it keeps Z 1.86, one-sided 0.031 (below;
+  D40.2), so the + is the lead's own residual. Exceptional survival +: Deelen's 90th favours A (P 0.0059), its 99th leans the same way (P
   0.20); the 90th is the multivariate's own input, so it sets the cell and replicates nothing (row 27). Lifespan +.
   The seed's second rsID, rs4784227 28 kb away, is the TOX3/CASC16 breast-cancer variant (r² 0.33 and D′ 0.95 in CEU,
   its T riding with the lead's C): Zenin's healthspan is genome-wide there (T earlier, P 3.0e-8 after genomic control,
@@ -32,12 +32,11 @@ verdict_reason: >-
   a breast-cancer association of its own (below). So rs4784227 is not a variant
   here; it has no lifespan signal of its own once the lead is accounted for, and is its own row as a healthspan
   signal, 169 (D25.6, D30.8, D39.14). In Zenin's healthspan it is the stronger line (Z 5.69 against 4.79), so by
-  D39.18 this lead is read there conditioned on it: 1.86, P 0.06 (derived, pmid-30729179 note on 169). D39.19 keeps the
-  healthspan cell + only if Timmers 2020's healthspan line at the lead, conditioned on rs4784227, stays at one-sided
-  P < 0.05. That column is Zenin's data (pmid-32678081#q32: A 0.023, SE 0.005, the summary file's 0.0233 and 0.00487,
-  q113), so the conditional is the same one: 1.86, one-sided 0.031, on the file's digits, or 1.62, one-sided 0.052, on
-  the table's rounded print (r +0.575, db-ensembl-116#q1208, q1209; derived). The cell stays + on the file's digits,
-  the question with the lead. The anchor is read at the paper's own P (D17.3, D30.2): a reviewer's
+  D39.18 this lead is read there conditioned on it: Z 1.86, one-sided 0.031 (derived from the summary file's lines, q113
+  and q114, and the phase, r +0.575 from 1000 Genomes EUR haplotypes, db-ensembl-116#q1208, q1209, with Ensembl's CEU
+  pair q622). Timmers 2020's healthspan column is Zenin's data (pmid-32678081#q32: A 0.023, SE 0.005, the file's
+  0.0233 and 0.00487), so it is the same test, and the file's digits govern (D40.2): the healthspan + holds, the
+  residual after 169's marginal being this lead's own. The anchor is read at the paper's own P (D17.3, D30.2): a reviewer's
   approximate conditional on rs4784227, taking the traits as independent, brings the lead's healthspan z from 4.79 to
   1.85 and the combined test to about 0.002; named as context, not a correction of the paper's call.
   Mechanism metabolism, through body weight (D30.8):
@@ -62,7 +61,7 @@ axes:
   pleiotropy: {values: ["mech:adiposity", broad], cites: [db-opentargets-26.09#q918, db-opentargets-26.09#q919, db-opentargets-26.09#q921, db-opentargets-26.09#q922, db-gwascatalog-2026.10.29#q495, db-gwascatalog-2026.10.29#q496]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
-            cites: [pmid-30729179#q113, pmid-32678081#q32, pmid-30642433#q323, db-finngen-r11#q57, pmid-40021682#q83, pmid-31413261#q189, pmid-31413261#q191]}
+            cites: [pmid-30729179#q113, pmid-30729179#q114, db-ensembl-116#q622, db-ensembl-116#q1208, db-ensembl-116#q1209, pmid-32678081#q32, pmid-30642433#q323, db-finngen-r11#q57, pmid-40021682#q83, pmid-31413261#q189, pmid-31413261#q191]}
   actionability: {label: modifiable, what: ["act_behaviour:weight"], who: "act_who:self", cites: [db-opentargets-26.09#q918, db-opentargets-26.09#q919, db-opentargets-26.09#q920, db-opentargets-26.09#q921, db-opentargets-26.09#q922, db-gwascatalog-2026.10.29#q495, db-gwascatalog-2026.10.29#q496]}
   context: {values: [eur_only_evidence], cites: [pmid-32678081#q32, pmid-30642433#q323]}
 flags:
