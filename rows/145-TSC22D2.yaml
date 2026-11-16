@@ -31,8 +31,8 @@ verdict_reason: >-
   Pleiotropy `mech:cancer`: A raises clonal haematopoiesis of indeterminate potential (Open Targets, AT −0.010, PIP
   0.25) and the variant sits in a myeloproliferative neoplasm set (PIP 0.15, no beta), named; no `tradeoff`, the row
   naming no longevity-favoured allele. Causal C2 (PIP 0.47 in Wright's set; 0.06 in Terao 2019's Biobank Japan set).
-  Effector E3: locus-to-gene TSC22D2 0.33 (EIF2A 0.18) on Wright's set and 0.43 on Terao's, no gene at 0.5 and the
-  variant in no gene's coding or regulatory annotation read. Descriptive. Age of action unknown. The evidence is
+  Effector E3: locus-to-gene TSC22D2 0.33 (EIF2A 0.18) on Wright's set and 0.43 on Terao's, no gene at 0.5, the
+  variant in a lncRNA intron (a regulatory region per VEP), not in TSC22D2. Descriptive. Age of action unknown. The evidence is
   mostly European, Biobank Japan agreeing.
 axes:
   tier: {value: A, cites: [pmid-31748747#q1, pmid-31748747#q2, pmid-31748747#q3, pmid-31748747#q4, pmid-31748747#q5, pmid-31748747#q6, pmid-31748747#q7, pmid-31748747#q8, pmid-28346444#q1, pmid-28346444#q2, pmid-28346444#q3, pmid-28346444#q4, pmid-28346444#q5, pmid-28346444#q6, pmid-28346444#q7, pmid-28346444#q8, pmid-28346444#q10, pmid-28346444#q11, db-gwascatalog-2026.10.29#q761, db-gwascatalog-2026.10.29#q762, db-gwascatalog-2026.10.29#q763, db-gwascatalog-2026.10.29#q764, db-ensembl-116#q1090, db-ensembl-116#q1091, db-ensembl-116#q1092, db-opentargets-26.09#q1420]}
@@ -87,7 +87,7 @@ studies:
     quote: q8
     phenotype_class: BIOMARKER
     study_design: meta_analysis
-    population: UK Biobank men (Thompson 2019's discovery, white European; replications in 23andMe, deCODE and Biobank Japan)
+    population: UK Biobank men (Thompson 2019's discovery; replications in 23andMe, deCODE and Biobank Japan)
     ancestry: [EUR]
     sample_size: 205011
     sample_unit: individuals
