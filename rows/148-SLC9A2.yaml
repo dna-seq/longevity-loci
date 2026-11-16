@@ -11,11 +11,17 @@ verdict_reason: >-
   (R-TIER-2, as 118's design; §4.1's B needs a sample that clears that cap). Gurinovich 2025 sequenced the Long Life
   Family Study: 568 extreme-longevity cases (past the age fewer than 1 % of their sex and birth cohort reach) and 908
   controls, spouses and others who died before it, in a mixed-effects model with the full relationship matrix; A
-  reaches genome-wide significance, −log10 P 8.3 (about 5e-9), at MAF 0.01 in the cases against gnomAD's 0.006. The
+  reaches genome-wide significance, −log10 P 8.3 (about 5e-9), at MAF 0.01 in the cases against gnomAD's 0.006, read
+  as printed (D17.3, D29.5, D37.8). The
   paper prints no effect size or control frequency, so D31.10's control check cannot run (unknown). Against gnomAD's
   non-Finnish European genomes (0.525 %, the reference D31.13 fixes for a whole-genome study) the cases' printed
-  0.01 is about 11 copies in 1,136 alleles where 6.0 are expected, OR 1.84, Poisson P 0.041; the printed MAF is
-  rounded, and across 0.005 to 0.015 the read runs from P 0.55 to 2e-4 (derived). The carriers cluster in 24 of the
+  0.01 is about 11 copies in 1,136 alleles where 6.0 are expected (357 of 68,013), OR 1.84, Fisher's exact on both
+  counts P 0.059, one-sided 0.043 (D37.1; a Poisson one-sided 0.041 before); the printed MAF is rounded, and with
+  the text's "1.7 times" gnomAD it lies about 0.009 to 0.011, 10 to 13 copies, where the read runs from Fisher P 0.10
+  to 0.011 (derived). The printed P and that read do not meet: no allele count the printed MAF allows reaches −log10
+  P 8.3 (one-sided Fisher against the 1,816 control alleles: 11 copies against none 2.7e-5, even 17 against none 8e-8;
+  11 against 9, the controls at gnomAD's level, 0.10; derived), named as a derived bound; the printed P is read as
+  printed, not set aside on it (D37.8). The carriers cluster in 24 of the
   study's 587 families, so the copies are not independent. Replication failed for want of a usable line: the New
   England Centenarian Study's imputation fell under Rsq 0.7 and UK Biobank's parental-longevity GWAS does not hold
   it. With no printed effect size, no look-up can be calibrated, so no flag can be computed (unknown, no token,
@@ -29,14 +35,15 @@ verdict_reason: >-
   Pilling flat); healthspan untested. Mechanism ageing in general (D25.7): intronic in SLC9A2, a sodium-hydrogen
   exchanger; the authors tie A to higher serine levels and less hypertension (LLFS HR 0.62, P 0.08; UK Biobank OR
   0.92, P 0.13), neither nominal. Pleiotropy `mech:cancer` and `tradeoff` (D18.1): the paper's UK Biobank PheWAS, signs
-  recoded to A, puts A with lymphoid leukaemia (OR 9.03, P 1.6e-4) and with head and neck cancers at nominal P, across
-  many phenotypes and uncorrected, which its title calls an increased risk for cancer. Causal C4 and effector E4: no
+  recoded to A, puts A with lymphoid leukaemia (OR 9.03, P 1.6e-4) and with head and neck cancers at nominal P, which
+  passes a Bonferroni over the 119 cancer phenotypes searched (0.05/119 = 4.2e-4), not genome-wide, on a few carriers
+  among 578 cases, which its title calls an increased risk for cancer. Causal C4 and effector E4: no
   Open Targets record. Descriptive. Age of action unknown. The evidence is European (the study's participants are of
   European descent).
 axes:
-  tier: {value: C, cites: [pmid-39751714#q1, pmid-39751714#q2, pmid-39751714#q3, pmid-39751714#q4, pmid-39751714#q5, pmid-39751714#q15, pmid-39751714#q13, pmid-39751714#q14, pmid-39751714#q6, pmid-39751714#q11, pmid-39751714#q12, db-ensembl-116#q917, pmid-40021682#q135, pmid-40021682#q136, pmid-40021682#q137, pmid-40021682#q32, pmid-29227965#q188, pmid-29227965#q189, pmid-29227965#q190, pmid-29227965#q191, db-finngen-r11#q103, db-gwascatalog-2026.10.29#q593]}
+  tier: {value: C, cites: [pmid-39751714#q1, pmid-39751714#q2, pmid-39751714#q3, pmid-39751714#q16, pmid-39751714#q4, pmid-39751714#q5, pmid-39751714#q15, pmid-39751714#q13, pmid-39751714#q14, pmid-39751714#q6, pmid-39751714#q11, pmid-39751714#q12, db-ensembl-116#q917, pmid-40021682#q135, pmid-40021682#q136, pmid-40021682#q137, pmid-40021682#q32, pmid-29227965#q188, pmid-29227965#q189, pmid-29227965#q190, pmid-29227965#q191, db-finngen-r11#q103, db-gwascatalog-2026.10.29#q593]}
   mechanism: {value: general_ageing, cites: [db-ensembl-116#q920, db-ensembl-116#q921, pmid-39751714#q9, pmid-39751714#q10]}
-  pleiotropy: {values: ["mech:cancer", "tradeoff"], cites: [pmid-39751714#q7, pmid-39751714#q8]}
+  pleiotropy: {values: ["mech:cancer", "tradeoff"], cites: [pmid-39751714#q7, pmid-39751714#q8, pmid-39751714#q17]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: untested, lifespan: "0", exceptional_survival: "+",
             cites: [pmid-39751714#q3, pmid-39751714#q4, pmid-40021682#q135, pmid-29227965#q188]}
@@ -92,12 +99,29 @@ studies:
     sample_unit: individuals
     age_of: participant
     stat_significance: significant
+    p_value: "-log10(p-value) = 8.3"
+    p_value_num: 5.0e-09
+    effect_allele: A
+    direction: protective
+    statistical_test: "Gurinovich 2025's mixed-effects logistic GWAS with saddle-point approximation, sex, four principal components and the full relationship matrix (q3, q16: −log10 P 8.3, genome-wide), read as printed (D17.3, D29.5, D37.8); no effect size or control frequency printed; A at MAF 0.01 in the cases against gnomAD 0.006, 1.7 times (q4, q14); cases and controls defined in q1, q2, q13; 24 of 587 families carry it (q12); no allele count the printed MAF allows reaches the printed P (derived bound, named, D37.8)"
+    curator: claude-opus-5-5
+  - rsid: rs6543176
+    note: pmid-39751714
+    quote: q14
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: centenarian_case_control
+    population: Long Life Family Study cases (past the 1 % survival age) against gnomAD's non-Finnish European genomes as the reference
+    ancestry: [EUR]
+    n_cases: 568
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: not_significant
     effect_size: 1.84
     effect_measure: OR
     effect_unit: odds of carrying A, the cases against gnomAD NFE genomes (derived from the printed MAF; no case-control effect printed)
     effect_allele: A
     direction: protective
-    statistical_test: "Gurinovich 2025's mixed-effects logistic GWAS with saddle-point approximation, sex, four principal components and the full relationship matrix (q3: −log10 P 8.3, genome-wide); A at MAF 0.01 in the cases against gnomAD 0.006 (q4, q14); cases and controls defined in q1, q2, q13; read against gnomAD NFE genomes (db-ensembl-116#q917, 0.525 %): about 11 copies against 6.0, Poisson P 0.041, P 0.55 to 2e-4 across the rounding (derived); 24 of 587 families carry it (q12)"
+    statistical_test: "Derived: the cases' printed MAF 0.01 (q14, q4) as about 11 copies in 1,136 alleles against gnomAD NFE genomes (db-ensembl-116#q917, 357 of 68,013): OR 1.84, Fisher's exact on both counts 0.059, one-sided 0.043 (D37.1); 10 to 13 copies across the rounding the text's 1.7 times allows, Fisher 0.10 to 0.011; the control check cannot run (no control frequency printed, and q11's 0.007 is the whole LLFS set)"
     curator: claude-opus-5-5
   - rsid: rs6543176
     note: pmid-40021682
