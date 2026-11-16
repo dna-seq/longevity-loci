@@ -13,7 +13,7 @@ verdict_reason: >-
   other UK Biobank participants, unrelated to the discovery set, it leans the same way at P 0.146, with β 0.013 ±
   0.009 against the discovery's 0.037; by Zenin's own power formula the expected z there is about 3.7 against a
   threshold of 2.88 (power about 0.8), and the two estimates differ at P about 0.02, the red-flag heterogeneity of
-  the 71/67 rule, which would cap the row at B even with a lifespan signal (the lead's computation, D17.1). The
+  the 71/67 rule, which would cap the row at B even with a lifespan signal (the lead's computation, D17.1). Re-read on D31.3 (2026-11-16): a Zenin discovery that fails its powered replication is D unless a line outside UK Biobank passes its way, and two do at rs3135006 (r² 0.80, D′ 0.99 in EUR, its T with rs1049053's C): AncestryDNA's mothers (T longer-lived, genomic-control P 6.7e-4) and FinnGen R11's deaths (T fewer, C β +0.0173 for death, SE 0.0084, P 0.041, one-sided 0.020; rs1049053 itself has no FinnGen line, db-finngen-r11#q127, q128). So C with `replication_failed`, not D. Both lines also tag row 38's lead (r² 0.38), so they are named as D31.3's pass, not scored as this locus's lifespan. The
   lifespan results do not score here: Timmers 2019's P 1.4e-4 at rs1049053 is about what LD with row 38's
   genome-wide lead predicts (r² 0.15 to 0.32, conditional z about 0.6 to 1.7), and AncestryDNA's mothers' tag
   rs3135006 (genomic-control P 6.7e-4, r² 0.80 to rs1049053) tags 38's lead too, so both co-occur with row 38, where the one
@@ -26,7 +26,7 @@ verdict_reason: >-
   the lifespan, healthspan or longevity studies holding it, so causal and effector confidence are C4 and E4. Age
   of action is unknown: no cached source gives this locus's own age bands.
 axes:
-  tier: {value: C, cites: [pmid-30729179#q7, pmid-30729179#q10, pmid-30729179#q13, pmid-30642433#q23, pmid-30642433#q24, pmid-31484785#q23, db-ensembl-116#q1, db-ensembl-116#q3]}
+  tier: {value: C, cites: [pmid-30729179#q7, db-finngen-r11#q127, db-finngen-r11#q128, pmid-30729179#q10, pmid-30729179#q13, pmid-30642433#q23, pmid-30642433#q24, pmid-31484785#q23, db-ensembl-116#q1, db-ensembl-116#q3]}
   mechanism: {value: general_ageing, cites: [pmid-30729179#q11]}
   pleiotropy: {values: [broad], cites: [pmid-30729179#q11]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}

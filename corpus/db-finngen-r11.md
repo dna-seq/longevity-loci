@@ -897,3 +897,14 @@ FinnGen R11's DEATH endpoint at rs13132853 (row 115): G (alt, 37.9 % in Finns) �
 > [q126] 17 46227833 T C rs2260227 KANSL1 0.019702 1.70549 -0.0315499 0.0135293 0.0826801 0.0818645 0.0827823
 
 FinnGen R11's DEATH endpoint: at rs4327091 (row 142) A (alt, 8.2 % in Finns) β −0.0305 (SE 0.0135), P 0.024, A with fewer deaths (q125); at rs2260227 (row 129) C (alt, 8.3 %) β −0.0315 (SE 0.0135), P 0.020, C with fewer deaths (q126). Database lines (D29.1, D35.1). For rows 129 and 142.
+
+## Reading 2026-11-16, record
+
+> [q127] #chrom pos ref alt rsids nearest_genes pval mlogp beta sebeta af_alt af_alt_cases af_alt_controls
+
+> [q128] 6 32699342 T C rs3135006 MTCO3P1 0.0408922 1.38836 0.0172732 0.00844811 0.739713 0.738711 0.739839
+
+FinnGen R11's death endpoint at rs3135006 (q127 header, q128), GRCh38 6:32,699,342 T/C: alt C at 0.740, β +0.0173
+(SE 0.0084) for death, P 0.041, so T with fewer deaths, one-sided 0.020. rs1049053 itself (GRCh38 6:32,666,628) has
+no line in the file (searched by rsID and position). rs3135006's T rides with rs1049053's C (r² 0.80, D′ 0.99 in
+EUR, db-ensembl-116#q1). For row 103 (D31.3).
