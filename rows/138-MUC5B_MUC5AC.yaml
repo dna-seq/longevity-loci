@@ -14,56 +14,63 @@ verdict_reason: >-
   0.00106), P 1.3e-6; the women +0.00131 (SE 0.00124), P 0.29 (each deposit's columns swapped, as in all three files).
   The two sexes differ at P 1.4e-4, both errors counted (derived). The authors' own look-up in FinnGen's "Death"
   (both sexes, N 453,733, outside UK Biobank) puts T with more deaths, β +0.034, which they call a significant
-  association (P 0.006 in the release, one-sided 0.003); under APOE's Park-to-FinnGen factor (8.1) the whole cohort
-  expects +0.041, against which FinnGen's +0.034 agrees (heterogeneity P 0.64, derived). That is an independent
+  association (Supplementary Table 2 prints P 6.0 with its exponent lost in extraction; the release's 0.006 fixes it,
+  one-sided 0.003); under APOE's Park-to-FinnGen factor (8.1) the whole cohort
+  expects +0.041 (the whole cohort's effect for a sex-combined sample, D28.2), against which FinnGen's +0.034
+  agrees (heterogeneity P 0.64, derived). That is an independent
   nominal pass in the discovery's direction; it does not lift a sub-genome-wide hit past C (R-TIER-4). Timmers 2019's
   parental lifespan agrees, T beta1 −0.0232 (SE 0.0066), P 4.6e-4, and Pilling 2017's parents too (both parents'
   attained age P 0.015; fathers P 0.0035, mothers 0.18; both parents in the top 10 %, T fewer, P 0.017), but both
-  are UK Biobank's parents and not independent of a UK Biobank discovery (D30.17); no LifeGen-only or per-sex
+  are UK Biobank's parents and not independent of a UK Biobank discovery (D31.3); no LifeGen-only or per-sex
   LifeGen file is deposited. Deelen 2019 (no UK Biobank data) leans the other way at both percentiles, flat: T
   +0.0587 (SE 0.0516), P 0.26 at the 90th, +0.139 (SE 0.088), P 0.12 at the 99th. Carried by APOE's own ratio of
   Deelen's ε4 log OR to Park's ε4 β (−39.6 at the 90th, −50.7 at the 99th), the whole cohort's +0.00509 expects
-  −0.20 and −0.26: power 0.99 and 0.90, heterogeneity P 9e-5 and 1.2e-4 counting the discovery's error (derived). An
-  APOE-only calibration sets no flag (D31.12), and no mean factor exists on Park's scale (D25.12), so whether Deelen
-  is a red flag is unknown and the row carries no `replication_failed` (D26.3, as 13); were a second calibration to
-  flag too, D25.1 would make it D. Zenin 2019 flat (T β −0.0066, P 0.39). Foote 2025's deposits hold no line at the
+  −0.20 and −0.26: power 0.99 and 0.90, heterogeneity P 9e-5 and 1.2e-4 counting the discovery's error (derived). That is D25.3's APOE calibration, here from Park's scale (the arithmetic D31.12 uses toward
+  it); the second calibration, a mean over loci on Park's scale (D25.12), cannot be computed, so whether Deelen is a
+  red flag is unknown and the row carries no `replication_failed` (D26.3, as 13). Even a flag would not make it D:
+  FinnGen's independent pass in the discovery's direction stands (D25.1, as 130). Zenin 2019 flat (T β −0.0066, P 0.39). Foote 2025's deposits hold no line at the
   lead (untested). Wright 2019's AncestryDNA tables list nothing at the lead under their P 0.003 cut (unknown above
-  it); their strongest line within 500 kb, the fathers' rs10082701 416 kb away (P 5.6e-6), does not tag it (Ensembl
-  reports no pair, r² under 0.05). The literature search (the rsID with lifespan, longevity, mortality or survival, 2026-11-16;
+  it); their strongest line within 500 kb, the fathers' rs10082701 416 kb away (P 5.6e-6), does not tag it (Ensembl's pairwise LD answers an empty list for the two in CEU, r² under its 0.05 floor). The literature search (the rsID with lifespan, longevity, mortality or survival, 2026-11-16;
   Semantic Scholar answered 429, its part unchecked) finds no other population lifespan test; its survival papers are
   within patients with pulmonary fibrosis (Peljto 2013, PMID 23695349, where T carriers survived longer after
   diagnosis; a 2026 Brazilian cohort with no difference), a different question, named, not read. `sex_specific:m` by D29.16: Park's men against women differ (P 1.4e-4) from the deposits; named
-  beside it, Pilling's fathers against mothers do not (P 0.27), and FinnGen's pass is both sexes. Genotypes: G/G the
-  reference, T carriers risk, as weak early evidence. Exceptional survival 0 (Deelen flat, leaning against);
+  beside it, Pilling's fathers against mothers do not (P 0.27), and FinnGen's pass is both sexes. Genotypes: G/G the reference, T carriers risk, as weak early evidence; the variant is carried on G, the
+  longer-lived allele (§6.2), and `PROTECT:ABSENCE_OF_RISK`: G is the common non-risk allele at a genome-wide
+  disease locus, idiopathic pulmonary fibrosis (D26.5, D29.6). Exceptional survival 0 (Deelen flat, leaning against);
   lifespan + (FinnGen, the paper's look-up, independent, one-sided 0.003; Timmers agrees, UK Biobank shared);
   healthspan 0 (Zenin flat). Mechanism smoking and lungs: T is the established idiopathic pulmonary fibrosis risk
   allele (Open Targets' fibrosis set at PIP 1, T β +1.25, P 8e-100) and raises MUC5B expression in lung (GTEx v10, PIP
-  1.00), as the authors note; `mech:lung`, and `mech:blood_count` (T in white-cell count sets). `tradeoff` (D18.1):
-  G, the longer-lived allele, is the side with more COVID-19 hospitalisation (T β −0.117, P 6e-9, PIP 1.00). Causal
+  1.00), as the authors note; `mech:lung`, and `mech:blood_count` (T raises white-cell count, a set at PIP 1.00, β +0.048). `tradeoff` (D18.1): G, the
+  longer-lived allele, is the side with more severe COVID-19 (T OR 0.89 for hospitalisation and 0.86 for critical
+  illness, P 4e-14 each, the GWAS Catalog's lines with T named; Open Targets' hospitalisation sets at PIP 1.00 agree;
+  a 'severity' line whose effect allele the catalogue prints as '?' is set aside). The 67 Open Targets sets, read
+  whole: lung disease, COVID-19, blood counts, creatinine and bicarbonate, and lung QTLs of MUC5B, none a
+  lifespan-class study. Causal
   C4 and effector E4: no lifespan-class credible set. Descriptive. Age of action unknown. The evidence is European.
 axes:
-  tier: {value: C, cites: [pmid-40021682#q125, pmid-40021682#q126, pmid-40021682#q127, pmid-40021682#q31, pmid-40021682#q35, pmid-40021682#q9, pmid-40021682#q16, db-finngen-r11#q5, pmid-30642433#q401, pmid-29227965#q174, pmid-29227965#q175, pmid-29227965#q176, pmid-29227965#q177, pmid-31413261#q306, pmid-31413261#q307, pmid-31413261#q82, pmid-31413261#q292, pmid-40021682#q32, pmid-30729179#q164, pmid-31484785#q174, db-ensembl-116#q894, db-gwascatalog-2026.10.29#q584]}
+  tier: {value: C, cites: [pmid-40021682#q125, pmid-40021682#q126, pmid-40021682#q127, pmid-40021682#q31, pmid-40021682#q35, pmid-40021682#q9, pmid-40021682#q16, pmid-40021682#q128, db-finngen-r11#q5, pmid-30642433#q401, pmid-29227965#q174, pmid-29227965#q175, pmid-29227965#q176, pmid-29227965#q177, pmid-31413261#q306, pmid-31413261#q307, pmid-31413261#q82, pmid-31413261#q292, pmid-40021682#q32, pmid-30729179#q164, pmid-31484785#q174, db-ensembl-116#q894, db-gwascatalog-2026.10.29#q584]}
   mechanism: {value: smoking_lungs, cites: [db-opentargets-26.09#q1236, db-opentargets-26.09#q1237, db-opentargets-26.09#q1234, db-opentargets-26.09#q1235, pmid-40021682#q127, db-gwascatalog-2026.10.29#q585]}
-  pleiotropy: {values: ["mech:lung", "mech:blood_count", "tradeoff"], cites: [db-opentargets-26.09#q1236, db-opentargets-26.09#q1237, db-opentargets-26.09#q1238, db-opentargets-26.09#q1239, db-gwascatalog-2026.10.29#q585]}
+  pleiotropy: {values: ["mech:lung", "mech:blood_count", "tradeoff"], cites: [db-opentargets-26.09#q1236, db-opentargets-26.09#q1237, db-opentargets-26.09#q1240, db-opentargets-26.09#q1241, db-gwascatalog-2026.10.29#q585, db-gwascatalog-2026.10.29#q586, db-gwascatalog-2026.10.29#q587, db-gwascatalog-2026.10.29#q588, db-gwascatalog-2026.10.29#q589, db-opentargets-26.09#q1238, db-opentargets-26.09#q1239]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "0",
             cites: [pmid-40021682#q9, pmid-40021682#q16, db-finngen-r11#q5, pmid-30642433#q401, pmid-31413261#q306, pmid-31413261#q307, pmid-30729179#q164]}
   actionability: {label: descriptive, cites: [pmid-40021682#q127]}
   context: {values: ["sex_specific:m", "eur_only_evidence"], cites: [pmid-40021682#q125, pmid-40021682#q126, pmid-40021682#q127, db-ensembl-116#q896]}
 flags:
+  - {token: "PROTECT:ABSENCE_OF_RISK", cites: [db-opentargets-26.09#q1236, db-opentargets-26.09#q1237, db-gwascatalog-2026.10.29#q585]}
   - {token: "causal:C4", cites: [db-opentargets-26.09#q1233]}
   - {token: "effector:E4", cites: [db-opentargets-26.09#q1233]}
 variants:
   - rsid: rs35705950
     locus: {chrom: "11", start: 1219991, ref: G, cites: [db-ensembl-116#q894]}  # rs35705950 is multi-allelic (G/A/T); the row means G>T
     gene: ""
-    phenotype: MUC5B promoter variant, shorter life
+    phenotype: MUC5B promoter variant, lifespan
     trait_efo_id: OBA_VT0005372
-    effect_allele: T
-    effect_size: 0.00509
+    effect_allele: G
+    effect_size: -0.00509
     effect_measure: beta
     stat_significance: suggestive
-    direction: risk
+    direction: protective
     negatives: >-
       The more common version, G, which goes with the longer life here, is the one linked to more severe COVID-19 needing
       hospital care in large studies.
@@ -128,7 +135,7 @@ studies:
     effect_unit: Martingale residual of a Cox model of own survival per T allele (positive = more deaths than expected, shorter life)
     effect_allele: T
     direction: risk
-    statistical_test: "Park 2025's whole-cohort deposit (GCST90551884, q31), columns swapped (q32's reading): T β +0.00509, SE 0.00106; the row's effect (D28.2, as 13)"
+    statistical_test: "Park 2025's whole-cohort deposit (GCST90551884, q31), columns swapped (q32's reading): T β +0.00509, SE 0.00106; the row's effect, carried on G as −0.00509 (D28.2, as 13)"
     curator: claude-opus-5-5
   - rsid: rs35705950
     note: pmid-40021682
@@ -164,7 +171,7 @@ studies:
     effect_unit: FinnGen's "Death" endpoint per T allele (positive = increased death, q9)
     effect_allele: T
     direction: risk
-    statistical_test: "Park 2025's own FinnGen look-up (Supplementary Table 2, q16), which the text calls a significant association with increased death (q9); P 0.006 in the release (db-finngen-r11#q5, SE 0.0124), one-sided 0.003; against the whole cohort under APOE's factor 8.1, expected +0.041, heterogeneity P 0.64 (derived)"
+    statistical_test: "Park 2025's own FinnGen look-up (Supplementary Table 2, q16; P mantissa 6.0, exponent lost in extraction, q128), which the text calls a significant association with increased death (q9); P 0.006 in the release (db-finngen-r11#q5, SE 0.0124), one-sided 0.003; against the whole cohort under APOE's factor 8.1, expected +0.041, heterogeneity P 0.64 (derived)"
     curator: claude-opus-5-5
   - rsid: rs35705950
     note: pmid-30642433
@@ -200,5 +207,5 @@ studies:
     effect_unit: log odds of survival to the 90th percentile per T allele
     effect_allele: T
     direction: protective
-    statistical_test: "Deelen 2019's summary statistics (GCST008598) at GRCh37 11:1,241,221, T at 0.10, SE 0.0516 (q306); 99th +0.1386, SE 0.0882, P 0.12 (q307); against Park's whole cohort under APOE's ratio (ε4: Deelen q82, q292; Park q32) expected −0.20 and −0.26: power 0.99 and 0.90, heterogeneity P 9e-5 and 1.2e-4 (derived); an APOE-only calibration, no flag (D31.12, D26.3)"
+    statistical_test: "Deelen 2019's summary statistics (GCST008598) at GRCh37 11:1,241,221, T at 0.10, SE 0.0516 (q306); 99th +0.1386, SE 0.0882, P 0.12 (q307); against Park's whole cohort under APOE's ratio (ε4: Deelen q82, q292; Park q32) expected −0.20 and −0.26: power 0.99 and 0.90, heterogeneity P 9e-5 and 1.2e-4 (derived); the second calibration unknown on Park's scale, so no flag (D26.3)"
     curator: claude-opus-5-5

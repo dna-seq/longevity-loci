@@ -4426,3 +4426,11 @@ q1231), the variant at PIP 0.024 (q1232), membership only; no lifespan-class set
 > [q1239] data.variant.credibleSets.rows[14].locus.rows[0] posteriorProbability 0.997375684203549 beta -0.11653381625595151 pValueMantissa 6 pValueExponent -9
 
 11_1219991_G_T (rs35705950's T; row 138): 67 credible sets (q1233), none of a lifespan, longevity or healthspan study (read whole); GTEx v10's lung MUC5B expression set at PIP 1.00, T raising expression, β +0.548 (q1234, q1235); an idiopathic pulmonary fibrosis GWAS at PIP 1, T β +1.25, P 8e-100 (q1236, q1237); a COVID-19 hospitalisation set at PIP 1.00, T β −0.117, P 6e-9, T the protective side (q1238, q1239). The reversed id (11_1219991_T_G) has no record. For row 138.
+
+## Reading 2026-11-16, record
+
+> [q1240] data.variant.credibleSets.rows[2].study id GCST90480724 traitFromSource white blood cell count (WBC, mean, inv-norm transformed) studyType gwas
+
+> [q1241] data.variant.credibleSets.rows[2].locus.rows[0] posteriorProbability 0.9999885463224875 beta 0.04828 pValueMantissa 3.190000057220459 pValueExponent -18
+
+11_1219991_G_T (row 138), read whole: of the 67 sets, 59 are GWAS sets of lung disease (fibrosis, interstitial disease, respiratory failure, pneumonia), COVID-19, white-cell, neutrophil and monocyte counts, creatinine and bicarbonate, 7 are GTEx lung QTL sets of MUC5B and 1 a UK Biobank plasma SFTPD protein QTL set; none is a lifespan, longevity, parental-age or healthspan study. A white-cell count set at PIP 1.00, T β +0.048 (q1240, q1241). For row 138.

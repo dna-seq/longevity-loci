@@ -2187,3 +2187,15 @@ rs34459993 (row 137): no association in the Catalog (q583). For row 137.
 > [q585] _embedded.associations[0] association_id 228360386 risk_frequency 0.9232 pvalue_description pvalue_mantissa 3 pvalue_exponent -24 multi_snp_haplotype false snp_interaction false range [1.1-1.54] beta 1.322 unit decrease p_value 2.9999999999999996e-24 accession_id GCST90476533 pubmed_id 39024449 first_author Verma A ci_lower 1.1 ci_upper 1.54
 
 rs35705950 (row 138): the one lifespan association is Park 2025's men's GWAS (GCST90551885), T β 0.01 on reduced lifespan, P 7e-8, short of genome-wide (q584); the rest are lung and blood traits, among them idiopathic pulmonary fibrosis (EFO_0000768; G, the other allele, OR given as a decrease, P 3e-24, q585). For row 138.
+
+## Reading 2026-11-16, record
+
+> [q586] _embedded.associations[34] association_id 105680586 risk_frequency NR pvalue_description pvalue_mantissa 4 pvalue_exponent -14 multi_snp_haplotype false snp_interaction false range [0.87-0.92] or_per_copy_num 0.89 or_value 0.89 beta - p_value 4e-14 accession_id GCST90270935 pubmed_id 37198478 first_author Pairo-Castineira E ci_lower 0.87 ci_upper 0.92
+
+> [q587] _embedded.associations[34].snp_effect_allele[0] rs35705950-T
+
+> [q588] _embedded.associations[35] association_id 105680304 risk_frequency 0.11 pvalue_description pvalue_mantissa 4 pvalue_exponent -14 multi_snp_haplotype false snp_interaction false range [0.82-0.89] or_per_copy_num 0.86 or_value 0.86 beta - p_value 4e-14 accession_id GCST90270934 pubmed_id 37198478 first_author Pairo-Castineira E ci_lower 0.82 ci_upper 0.89
+
+> [q589] _embedded.associations[35].snp_effect_allele[0] rs35705950-T
+
+rs35705950 and COVID-19 (row 138): T OR 0.89 for hospitalisation, P 4e-14 (q586, q587), and 0.86 for critical illness, P 4e-14 (q588, q589), Pairo-Castineira 2023; T, the fibrosis and shorter-life allele, is the protective side, so G, the longer-lived, is the side with more severe COVID-19. A 'COVID-19 severity' line (GCST90274862) prints its effect allele as '?' and is set aside. For row 138.
