@@ -4140,3 +4140,18 @@ rs3131621 (row 165, the second signal at 37): GRCh38 6:31,457,722 A/G (q1186); A
 (q1187); intergenic between MICA and MICB (q1188). Phase with row 37's lead rs3130507 from 1000 Genomes' phased EUR
 genotypes (population q1174; first lines q1189, q1190), counted over 1,006 haplotypes (derived): rs3131621 A with rs3130507
 G, r +0.226 (r² 0.051), the two longer-life alleles together. For row 165.
+
+## Reading 2026-11-16, record
+
+> [q1191] mappings[0] coord_system chromosome end 19967156 start 19967156 seq_region_name 8 location 8:19967156-19967156 allele_string C/T ancestral_allele T strand 1 assembly_name GRCh38
+
+> [q1192] populations[11] population gnomADg:nfe allele T frequency 0.292 allele_count 19840
+
+> [q1193] genotypes[0] sample 1000GENOMES:phase_3:HG00096 gender Male genotype C|C
+
+> [q1194] genotypes[0] sample 1000GENOMES:phase_3:HG00096 gender Male genotype A|A
+
+rs15285 (row 166, the second signal at 52): GRCh38 8:19,967,156 C/T, T ancestral (q1191); T at 29.2 % in gnomAD's non-Finnish
+genomes (q1192); LPL 3′ UTR (q362). Phase with row 52's lead rs268 from 1000 Genomes' phased EUR genotypes (population
+q1174; first lines q1193, q1194), over 1,006 haplotypes (derived): rs15285 T with rs268 G (Ser), r −0.063 (r² 0.004).
+For row 166.

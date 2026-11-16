@@ -1,0 +1,135 @@
+# A second, independent signal at the seed's locus 52, LPL (8p21.3), its own row under D25.6 and D39.14. Curated
+# 2026-11-16. Lead rs15285, the seed's second rsID at 52 (Wright 2019's fathers' lead): LPL 3′ UTR, GRCh38
+# 8:19,967,156 C/T, GRCh37 8:19,824,667, T ancestral; T at 29.2 % in gnomAD's non-Finnish European genomes. 11 kb from
+# row 52's lead rs268 (LPL Asn318Ser), r² 0.004 in 1000 Genomes EUR. T is the longer-life allele.
+locus_id: 166
+locus_name: LPL-3UTR
+second_signal_of: 52
+verdict: kept
+verdict_reason: >-
+  Tier B: genome-wide in one study, Wright 2019's AncestryDNA–UK Biobank fathers' meta-analysis (P 8.46e-10, 696,000;
+  AncestryDNA P 2.4e-5, UK Biobank 1.2e-7, heterogeneity P 0.83), with no independent replication outside it (D28.7,
+  D39.17: the AncestryDNA arm sits inside the anchor and replicates nothing). On Pilling's scale both arms put C with
+  shorter-lived fathers (AncestryDNA +0.0119, UK Biobank +0.0127, the latter Pilling's fathers' line digit for digit),
+  so T is longer-lived. Independence (D39.14): Aragam 2022's coronary disease fine-mapping in Open Targets holds rs268
+  alone in one set (PIP 1.00) and rs15285 in another that rs268 is not in, the signals' own sets; from 1000 Genomes'
+  phased EUR haplotypes r is −0.063 (r² 0.004), so conditioning on rs268 leaves the meta's z of 5.75 at 5.6 or more for
+  any rs268 z up to 8 (its largest lifespan z read, Timmers', is 4.5) (derived), genome-wide in either coupling
+  (D39.15). The other looks lean T's way and none passes outside: Timmers 2019's pooled parents T longer, beta1
+  +0.0176 (SE 0.0043), P 3.5e-5, "++", UK Biobank inside; Pilling 2017 both parents P 2.3e-5, mothers 0.0052, the top
+  10 % flat (P 0.80); Deelen 2019's 90th one-sided 0.065, the 99th flat, a flag under APOE's factor only, so none
+  (D26.3); FinnGen R11's deaths T fewer, one-sided 0.16, a database line; Park 2025's own survival flat (P 0.61). Outcome
+  cells read for T: lifespan + (Wright, Pilling, Timmers); exceptional survival 0 (Pilling's top 10 % and Deelen flat);
+  healthspan + (Zenin 2019, T the later end, P 0.009; Foote 2025's deposits hold no line). Mechanism heart and vessels, as row 52: LPL's 3′ UTR, T lowering triglycerides (Catalog, P 3e-72) and coronary disease (Aragam, β −0.0061
+  per T). Pleiotropy `mech:lipids` and `mech:cvd`: C raises disorders of lipid metabolism and cholesterol medication,
+  T lowers triglycerides and coronary disease, so the longer-life allele is the healthier on each, no `tradeoff`;
+  platelet count lines named. Causal C3 (PIP 0.066 in Wright's fathers' set, flat over 25 members). Effector E2, LPL:
+  locus-to-gene 0.98 on that set, the variant in LPL's 3′ UTR; its colocalisations not read. The literature search (the rsID, 2026-11-16) finds Shen 2023 (PMID 37036527), a Chinese case-control study of 888 gastric cancers whose abstract puts the T allele with higher risk (OR 1.48) and higher LPL expression, and a 2026 clinical-obesity preprint (no PMID) whose abstract does not say which allele its carriers carry; both named, abstract only, and a single candidate-gene study in another ancestry sets no `tradeoff` against T. Descriptive. Age of action
+  unknown. The evidence is European (UK Biobank, AncestryDNA's European-ancestry group).
+axes:
+  tier: {value: B, cites: [pmid-31484785#q91, pmid-31484785#q92, pmid-31484785#q93, pmid-29227965#q287, db-opentargets-26.09#q671, db-opentargets-26.09#q672, db-opentargets-26.09#q677, db-opentargets-26.09#q678, db-ensembl-116#q1174, db-ensembl-116#q1193, db-ensembl-116#q1194, pmid-30642433#q426, pmid-31413261#q369, pmid-31413261#q370, db-finngen-r11#q133, pmid-40021682#q224]}
+  mechanism: {value: heart_vessels, cites: [db-ensembl-116#q362, db-gwascatalog-2026.10.29#q820, db-gwascatalog-2026.10.29#q821, db-gwascatalog-2026.10.29#q822, db-opentargets-26.09#q677]}
+  pleiotropy: {values: ["mech:lipids", "mech:cvd"], cites: [db-gwascatalog-2026.10.29#q814, db-gwascatalog-2026.10.29#q815, db-gwascatalog-2026.10.29#q816, db-gwascatalog-2026.10.29#q817, db-gwascatalog-2026.10.29#q818, db-gwascatalog-2026.10.29#q819, db-gwascatalog-2026.10.29#q820, db-gwascatalog-2026.10.29#q821, db-gwascatalog-2026.10.29#q822, db-opentargets-26.09#q677, db-opentargets-26.09#q678]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
+            cites: [pmid-31484785#q93, pmid-29227965#q284, pmid-29227965#q285, pmid-29227965#q286, pmid-29227965#q287, pmid-30642433#q426, pmid-31413261#q369, pmid-31413261#q370, pmid-30729179#q191, db-finngen-r11#q133, pmid-40021682#q224, pmid-40021682#q225, pmid-40021682#q226]}
+  actionability: {label: descriptive, cites: [pmid-31484785#q91]}
+  context: {values: [eur_only_evidence], cites: [pmid-31484785#q93, db-ensembl-116#q1192]}
+flags:
+  - {token: "causal:C3", cites: [db-opentargets-26.09#q675, db-opentargets-26.09#q676]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q1521, db-opentargets-26.09#q1522, db-opentargets-26.09#q1523, db-opentargets-26.09#q1524, db-ensembl-116#q362]}
+variants:
+  - rsid: rs15285
+    locus: {chrom: "8", start: 19967156, ref: C, cites: [db-ensembl-116#q1191]}
+    gene: LPL
+    phenotype: LPL 3′ UTR, fathers' lifespan
+    trait_efo_id: EFO_0007796
+    effect_allele: T
+    effect_size: -0.0126518
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: C/C
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position (about 50 in 100 people of European ancestry
+          do). It is the reference the other combinations are compared with. The position lies at the end of the LPL
+          gene, which makes the enzyme that clears fats from the blood. The finding comes from people of European
+          ancestry; less is known elsewhere.
+      - genotype: C/T
+        state: protective
+        conclusion: >-
+          You carry one copy of the T version of this DNA position (about 41 in 100 people of European ancestry do).
+          In a very large study of British and American families, fathers of people with this version lived a little
+          longer. The same version goes with lower blood fats and a slightly lower risk of heart disease. It is a
+          likely finding, not a settled one: it has not been confirmed in a separate group of people. The effect is
+          small and it is a tendency, not a guarantee.
+      - genotype: T/T
+        state: protective
+        conclusion: >-
+          You carry two copies of the T version of this DNA position (about 9 in 100 people of European ancestry do).
+          In a very large study of British and American families, fathers of people with this version lived a little
+          longer, per copy. The same version goes with lower blood fats and a slightly lower risk of heart disease. It
+          is a likely finding, not a settled one: it has not been confirmed in a separate group of people. The effect
+          is small and it is a tendency, not a guarantee.
+studies:
+  - rsid: rs15285
+    note: pmid-31484785
+    quote: q93
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_linear
+    population: AncestryDNA customers' fathers and UK Biobank participants' fathers (Wright 2019's meta-analysis)
+    ancestry: [EUR]
+    sample_size: 696000
+    sample_unit: individuals
+    stratum: parent
+    stratum_level: father
+    stat_significance: significant
+    p_value: "8.455e-10"
+    p_value_num: 8.455e-10
+    effect_size: 0.0126518
+    effect_measure: beta
+    effect_unit: fathers' attained age per C allele (UK Biobank arm, Pilling's scale; positive = shorter)
+    effect_allele: C
+    direction: risk
+    statistical_test: "Supplemental Table 9's fathers' meta (q93), AncestryDNA +0.0119 (SE 0.0028, P 2.4e-5, q92) and UK Biobank +0.0127 (SE 0.0024, P 1.2e-7), heterogeneity P 0.83; Table 3 (q91); the counted allele from the UK Biobank arm matching Pilling's line (pmid-29227965#q287); the row's one genome-wide study, the AncestryDNA arm inside it (D39.17)"
+    curator: claude-opus-5-5
+  - rsid: rs15285
+    note: pmid-30642433
+    quote: q426
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 640172
+    sample_unit: lives
+    stat_significance: nominal
+    p_value: "3.5394242e-05"
+    p_value_num: 3.5394242e-05
+    effect_size: 0.01758322
+    effect_measure: beta
+    effect_unit: beta1 on parental lifespan per T allele, longer positive
+    effect_allele: T
+    direction: protective
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0043, direction ++; holds UK Biobank's parents, so not a replication"
+    curator: claude-opus-5-5
+  - rsid: rs15285
+    note: pmid-30729179
+    quote: q191
+    phenotype_class: HEALTHSPAN
+    study_design: healthspan_cox
+    population: European (UK Biobank, genomically British)
+    ancestry: [EUR]
+    sample_size: 300447
+    sample_unit: individuals
+    stat_significance: nominal
+    p_value: "0.009"
+    p_value_num: 0.009
+    effect_size: -0.0141
+    effect_measure: beta
+    effect_unit: log hazard of the end of healthspan per T allele (negative = later)
+    effect_allele: T
+    direction: protective
+    statistical_test: "Zenin 2019's healthspan summary statistics, SE 0.00538, Z −2.613, −log10 P 2.047 (P about 0.009, from the file's −log10)"
+    curator: claude-opus-5-5

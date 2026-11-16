@@ -3,7 +3,7 @@
 # Europeans, absent in East Asians), Rosoff 2023's novel mvAge lead. The seed's second rsID, rs15285 (LPL's 3′ UTR,
 # 11 kb away, T 0.29), is a separate signal: allele frequencies cap r² below 0.05, Ensembl returns no pair, and
 # Aragam 2022's coronary disease fine-mapping puts the two in separate sets. It is Wright 2019's genome-wide fathers'
-# locus; named in prose here and sent to the scout's queue as a candidate row (D25.6, as 37's rs3131621). Open
+# locus; named in prose here; its own row is 166 (D25.6, D39.14). Open
 # Targets 26.09: 507 credible sets hold rs268, none of a scoring class; the GWAS Catalog (2026-10-29) holds 101
 # associations for it. Timmers 2019, Zenin 2019, Deelen 2019 and FinnGen R11's death endpoint read at both SNPs.
 locus_id: 52
@@ -26,7 +26,7 @@ verdict_reason: >-
   and rs15285 in a separate 25-variant set). It carries the locus's only lifespan-class genome-wide result: Wright
   2019's fathers' meta-analysis, P 8.5e-10, T longer-lived (AncestryDNA P 2.4e-5 inside the pooled P, UK Biobank
   1.2e-7); Timmers P 3.5e-5, Deelen's 90th one-sided 0.065, FinnGen one-sided 0.16 lean the same way, none
-  replicates. Its evidence is not this row's: by D25.6 it goes to the scout's queue, and the row's cells rest on rs268
+  replicates. Its evidence is not this row's: by D25.6 it is row 166 (D39.14), and the row's cells rest on rs268
   alone. Healthspan + (Zenin, nominal), lifespan + (Timmers, P 5.5e-6), exceptional survival 0 (Deelen flat, a
   test that under APOE's calibration should have seen the effect and under the mean factor had even odds). Mechanism heart and vessels: G raises triglycerides (P 6e-166),
   lowers HDL cholesterol (P 7e-220) and raises coronary disease (A's OR 0.876, P 4e-11, Aragam 2022); Wright reads LPL as acting through cardiovascular

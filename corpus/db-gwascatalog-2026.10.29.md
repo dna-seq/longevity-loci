@@ -2856,3 +2856,27 @@ The GWAS Catalog: rs16843603, Rosoff's mvAge only, effect T, P 4e-10 (q805, q806
 
 The GWAS Catalog at rs3131621: Wright's fathers, A, P 9e-9 (q809 to q811); Pilling's fathers, A, P 4e-8 (q812, q813);
 the rheumatoid arthritis or IBD line has no allele (q234, q235). For row 165.
+
+## Reading 2026-11-16, record
+
+> [q814] _embedded.associations[3] association_id 228305262 risk_frequency 0.6688 pvalue_description pvalue_mantissa 8 pvalue_exponent -46 multi_snp_haplotype false snp_interaction false range [0.063-0.085] beta 0.07416 unit increase p_value 8e-46 accession_id GCST90479929 pubmed_id 39024449 first_author Verma A ci_lower 0.063 ci_upper 0.085
+
+> [q815] _embedded.associations[3].reported_trait[0] Disorders of lipid metabolism (PheCode 272)
+
+> [q816] _embedded.associations[3].snp_effect_allele[0] rs15285-C
+
+> [q817] _embedded.associations[4] association_id 228175245 risk_frequency 0.6796 pvalue_description pvalue_mantissa 2 pvalue_exponent -16 multi_snp_haplotype false snp_interaction false range [0.033-0.055] beta 0.04385 unit increase p_value 2e-16 accession_id GCST90479546 pubmed_id 39024449 first_author Verma A ci_lower 0.033 ci_upper 0.055
+
+> [q818] _embedded.associations[4].reported_trait[0] Takes medication for high cholesterol?
+
+> [q819] _embedded.associations[4].snp_effect_allele[0] rs15285-C
+
+> [q820] _embedded.associations[5] association_id 222844120 risk_frequency NR pvalue_description pvalue_mantissa 3 pvalue_exponent -72 multi_snp_haplotype false snp_interaction false range [0.14-0.17] beta 0.155 unit decrease p_value 3e-72 accession_id GCST90448633 pubmed_id 39414775 first_author Jacobs BM ci_lower 0.14 ci_upper 0.17
+
+> [q821] _embedded.associations[5].reported_trait[0] Triglyceride levels
+
+> [q822] _embedded.associations[5].snp_effect_allele[0] rs15285-T
+
+The GWAS Catalog at rs15285: disorders of lipid metabolism, C 0.074 increase, P 8e-46 (q814 to q816); cholesterol medication,
+C 0.044 increase, P 2e-16 (q817 to q819); triglycerides, T 0.155 decrease, P 3e-72 (q820 to q822): T the
+healthier lipid side. Platelet count and ANGPTL3 lines named. For row 166.

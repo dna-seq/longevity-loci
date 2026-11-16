@@ -5231,3 +5231,16 @@ pressure +0.0064 (q1518, q1519); BMI sets named. For rows 163, 164.
 > [q1520] data variant null
 
 rs3131621 (6_31457722_A_G): no Open Targets 26.09 record (q1520), so no credible set holds it: C4, E4. For row 165.
+
+## Reading 2026-11-16, record
+
+> [q1521] data.credibleSet.study id GCST009450 traitFromSource Parental longevity (father's age at death or father's attained age)
+
+> [q1522] data.credibleSet.l2GPredictions.rows[0] score 0.9769697189331055
+
+> [q1523] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol LPL
+
+> [q1524] data.credibleSet.colocalisation count 1137
+
+Wright's fathers' set (GCST009450, the one rs15285 tops at PIP 0.066, q675, q676; q1521): locus-to-gene LPL 0.98 (q1522, q1523):
+E2; its 1,137 colocalisations (q1524) not read. For row 166.

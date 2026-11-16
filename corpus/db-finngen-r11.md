@@ -930,3 +930,9 @@ P 0.58, G fewer, flat (q131). For rows 163, 164.
 > [q132] 6 31457722 A G rs3131621 XXbac-BPG181B23.9 0.157887 0.801654 0.0113703 0.0080514 0.30421 0.308608 0.303659
 
 FinnGen R11's deaths at rs3131621 (q132): alt G +0.0114 (SE 0.0081) for death, P 0.16: A fewer, one-sided 0.08. For row 165.
+
+## Reading 2026-11-16, record
+
+> [q133] 8 19967156 C T rs15285 LPL 0.314307 0.502646 -0.00851573 0.00846305 0.257011 0.257894 0.2569
+
+FinnGen R11's deaths at rs15285 (q133): alt T −0.0085 (SE 0.0085) for death, P 0.31: T fewer, one-sided 0.16. For row 166.
