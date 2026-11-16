@@ -237,3 +237,6 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
   this session's plugin still the pre-reload one.
 - 2026-11-16, trial at trunk 452e85a (rows 138, 140, 147, 150 and D35 on 121/138/140/147): strict green, 375
   variant rows, 589 studies, every rsID resolved, carried indel VRS still 20. No refusal; held for the batch's close.
+- 2026-11-16, trial at trunk 52033b3 (rows 148, 151, 152, 154 added; 154's rs7754015 absent from 1000 Genomes still
+  resolves): strict green, 384 variant rows, 594 studies, every rsID resolved, carried indel VRS 20. Held for the
+  batch's close.
