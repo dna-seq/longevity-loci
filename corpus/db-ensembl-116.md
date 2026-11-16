@@ -3669,3 +3669,24 @@ rs12247015 (row 114): GRCh38 10:58,385,319, A/G/T, A ancestral (q1030); A at 57.
 non-Finnish European genomes (q1031, q1032), T a trace; 91 bp upstream of TFAM's MANE transcript (NM_003201.3),
 upstream_gene_variant (q1033, q1034); Gupta's Table 4 calls it a 5′ UTR variant of TFAM on another transcript. For
 row 114.
+
+## Reading 2026-11-16, record
+
+> [q1035] mappings[0] allele_string G/A/C seq_region_name 19 end 16888889 start 16888889 ancestral_allele G assembly_name GRCh38 coord_system chromosome strand 1 location 19:16888889-16888889
+
+> [q1036] populations[22] allele A allele_count 37 population gnomADg:nfe frequency 0.0005766
+
+> [q1037] populations[23] allele_count 64127 allele G population gnomADg:nfe frequency 0.9994
+
+> [q1038] populations[28] population gnomADg:afr frequency 0.2089 allele A allele_count 7518
+
+> [q1039] populations[27] allele G allele_count 28462 frequency 0.7911 population gnomADg:afr
+
+> [q1040] [0].transcript_consequences[0] biotype protein_coding transcript_id ENST00000248076 hgnc_id HGNC:3540 gene_id ENSG00000127533 strand 1 gene_symbol_source HGNC distance 110 canonical 1 variant_allele A impact MODIFIER gene_symbol F2RL3 mane_select NM_003950.4
+
+> [q1041] [0].transcript_consequences[0].consequence_terms[0] upstream_gene_variant
+
+rs2227341 (row 128): GRCh38 19:16,888,889, G/A/C, G ancestral (q1035); A at 0.06 % in gnomAD's non-Finnish European
+genomes, G 99.94 % (q1036, q1037); A at 20.9 % and G 79.1 % in its African/African American genomes (q1038, q1039);
+110 bp upstream of F2RL3's MANE transcript (NM_003950.4), upstream_gene_variant (q1040, q1041), a 5′ UTR variant on
+other F2RL3 transcripts. For row 128.

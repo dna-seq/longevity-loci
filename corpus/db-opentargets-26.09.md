@@ -4692,3 +4692,26 @@ PIP 1.00, G +0.049 (q1311); Chong's (q1312) at 0.96, G +0.034 (q1313): C1. Most 
 and exon sets for TFAM (ENSG00000108064), e.g. tibial artery at PIP 1.00, G −0.37 (q1314, q1315): G, the higher-copy
 allele, with lower TFAM expression, named. Locus-to-gene on Gupta's set (q1316): TFAM 0.63 (q1317, q1318), IPMK
 0.07 (q1319, q1320): E2. For row 114.
+
+## Reading 2026-11-16, record
+
+> [q1321] data.variant.credibleSets count 4
+
+> [q1322] data.variant.credibleSets.rows[2].study id GCST90014294 traitFromSource DNA methylation GrimAge acceleration studyType gwas
+
+> [q1323] data.variant.credibleSets.rows[2].locus.rows[0] posteriorProbability 0.6028197207045249 beta 0.13262165201523743 pValueMantissa null pValueExponent null
+
+> [q1324] data.variant.credibleSets.rows[1].study id OTAR3087_MAGE_ge_LCL_ENSG00000127533 traitFromSource ENSG00000127533 studyType eqtl
+
+> [q1325] data.variant.credibleSets.rows[1].locus.rows[0] posteriorProbability 0.9999899801104749 beta 0.684315 pValueMantissa 5.0518999099731445 pValueExponent -28
+
+> [q1326] data.credibleSet.study id GCST90014294 traitFromSource DNA methylation GrimAge acceleration
+
+> [q1327] data.credibleSet.l2GPredictions.rows[0] score 0.776986300945282
+
+> [q1328] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol F2RL3
+
+19_16888889_G_A (rs2227341, row 128; beta per A): 4 credible sets (q1321); McCartney's GrimAge set (q1322) at PIP
+0.60, A +0.13 (q1323): C1; the other three F2RL3 (ENSG00000127533) expression and exon sets in lymphoblastoid cells,
+e.g. MAGE at PIP 1.00, A +0.68 (q1324, q1325): A with higher F2RL3 expression, named. Locus-to-gene on the GrimAge set
+(q1326): F2RL3 0.78 (q1327, q1328): E2. For row 128.

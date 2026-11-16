@@ -2493,3 +2493,15 @@ rs12247015 (row 114), three associations, all mitochondrial DNA copy number, tra
 adjusted GWAS (GCST90268497) A 0.074 decrease, P 8e-96, A at 0.582 (q680 to q682), the paper's Table 2 line; its
 raw line (P 5e-66) named; Chong 2022 (GCST90026371, PMID 35023831, UK Biobank) G 0.034 increase, P 1e-55 (q683 to
 q685): the same side, the same people. No other trait. For row 114.
+
+## Reading 2026-11-16, record
+
+> [q686] _embedded.associations[0] association_id 88923648 risk_frequency 0.8216 pvalue_description pvalue_mantissa 6 pvalue_exponent -25 multi_snp_haplotype false snp_interaction false range [1.09-1.6] beta 1.3482 unit decrease p_value 6.0000000000000005e-25 accession_id GCST90014294 pubmed_id 34187551 first_author McCartney DL ci_lower 1.09 ci_upper 1.6
+
+> [q687] _embedded.associations[0].efo_traits[0] efo_id EFO_0022597 efo_trait aging
+
+> [q688] _embedded.associations[0].reported_trait[0] DNA methylation GrimAge acceleration
+
+> [q689] _embedded.associations[0].snp_effect_allele[0] rs2227341-G
+
+rs2227341 (row 128), one association: McCartney 2021's GrimAge acceleration (GCST90014294), G at 0.82, 1.35 years decrease, P 6e-25 (q686, q688, q689), the paper's Table S4 line; trait as mapped (q687). No other trait. For row 128.

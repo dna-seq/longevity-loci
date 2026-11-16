@@ -1,0 +1,114 @@
+# The seed list's locus 128, F2RL3/SIN3B (19p13.11): a marker of biological ageing (D32, D36.3), curated on D37.12
+# with 23 TERC as the pattern. Curated 2026-11-16. Lead rs2227341, the seed's rsID (McCartney 2021's African American
+# GrimAge locus): 110 bp upstream of F2RL3's MANE transcript (a 5′ UTR variant on other F2RL3 transcripts), GRCh38
+# 19:16,888,889, GRCh37 19:16,999,700, G/A/C, G ancestral, the row meaning G/A; A at 20.9 % in gnomAD's
+# African/African American genomes and 0.06 % in the non-Finnish Europeans. G is the allele with slower GrimAge.
+locus_id: 128
+locus_name: F2RL3/SIN3B
+verdict: kept
+verdict_reason: >-
+  Tier B on the marker's own evidence (D37.12; the seed gives none): the tier grades the association with GrimAge
+  acceleration, a DNA methylation clock read against calendar age, not longevity, and this row is unscored (D32).
+  McCartney 2021's GWAS of epigenetic clocks in 34,710 Europeans and 6,195 African Americans finds rs2227341 in the
+  African American analysis alone: its Table S4 prints G, the effect allele (the legend's refA), at 0.82, GrimAge
+  acceleration 1.35 years lower per G (SE 0.13), P 6.0e-25, effective n 5,017 in six cohorts, I² 67 %, one cohort the
+  other way. Genome-wide in one sample, unreplicated in a sample of its own (none found): §4.1's B. GrimAge holds a
+  methylation estimate of smoking pack-years, the paper's GrimAge loci overlap genetic variation at smoking methylation
+  sites, and F2RL3 holds the best-known smoking CpG, so this line may move the clock through that site's methylation
+  rather than through ageing; named, not read for this SNP (the literature search, the rsID, 2026-11-16, finds Jhun
+  2017's African American study of F2RL3 methylation, abstract only, which does not name it; Semantic Scholar answered
+  429, its part unchecked). A is all but absent in Europeans, so the European deposits hold no line: Deelen 2019,
+  Timmers 2019, Pilling 2017, Zenin 2019, Foote 2025 and FinnGen R11 (by rsID and GRCh37 19:16,999,700): untested.
+  Park 2025's white British survival deposit holds it: G with more deaths, β +0.053 (SE 0.025), P 0.037 (men
+  0.028, women 0.51), from about 175 carriers of A, so a thin line. Every genotype neutral, each conclusion a tendency
+  of the marker with no colour (D32, D37.12); `direction: unknown`. Outcome cells read for G: lifespan − (Park, nominal,
+  carried by the men, few carriers); healthspan and exceptional survival untested. Mechanism: markers of biological
+  ageing; F2RL3 is a thrombin receptor on platelets (the author). No pleiotropy in the Catalog, which holds this line
+  alone. Causal C1 (PIP 0.60 in McCartney's GrimAge set). Effector E2, F2RL3: locus-to-gene 0.78, the variant upstream
+  of F2RL3 and in its lymphoblastoid expression sets at PIP up to 1.00, A with higher expression (no colocalisation
+  read). Descriptive. Age of action unknown. The evidence is African American, as `ancestry_specific:afr`.
+axes:
+  tier: {value: B, cites: [pmid-34187551#q1, pmid-34187551#q2, pmid-34187551#q6, pmid-34187551#q7, pmid-34187551#q8, pmid-34187551#q9, db-gwascatalog-2026.10.29#q686, db-gwascatalog-2026.10.29#q688, db-gwascatalog-2026.10.29#q689]}
+  mechanism: {value: ageing_markers, cites: [pmid-34187551#q4, pmid-34187551#q5, db-gwascatalog-2026.10.29#q687]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: untested, lifespan: "−", exceptional_survival: untested,
+            cites: [pmid-40021682#q170, pmid-40021682#q171, pmid-40021682#q172, db-ensembl-116#q1036]}
+  actionability: {label: descriptive, cites: [pmid-34187551#q9]}
+  context: {values: ["ancestry_specific:afr"], cites: [pmid-34187551#q2, pmid-34187551#q9, db-ensembl-116#q1036, db-ensembl-116#q1037, db-ensembl-116#q1038, db-ensembl-116#q1039]}
+flags:
+  - {token: "causal:C1", cites: [db-opentargets-26.09#q1321, db-opentargets-26.09#q1322, db-opentargets-26.09#q1323]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q1326, db-opentargets-26.09#q1327, db-opentargets-26.09#q1328, db-opentargets-26.09#q1324, db-opentargets-26.09#q1325, db-ensembl-116#q1040, db-ensembl-116#q1041]}
+variants:
+  - rsid: rs2227341
+    locus: {chrom: "19", start: 16888889, ref: G, cites: [db-ensembl-116#q1035]}  # rs2227341 is multi-allelic (G/A/C); the row means G and A
+    gene: F2RL3
+    phenotype: F2RL3 upstream, GrimAge acceleration
+    trait_efo_id: EFO_0022597
+    effect_allele: G
+    effect_size: -1.3482
+    effect_measure: beta
+    stat_significance: significant
+    direction: unknown
+    genotypes:
+      - genotype: A/A
+        state: neutral
+        conclusion: >-
+          You carry two copies of the A version of this DNA position, found in about 4 in 100 people of African
+          ancestry and almost no one of European ancestry. One study of African American adults linked each copy of
+          A with a GrimAge epigenetic clock reading more than a year older than calendar age. That is a tendency in a
+          marker, partly a trace of how the clock reads one gene's chemical marks, so it carries no score.
+      - genotype: A/G
+        state: neutral
+        conclusion: >-
+          You carry one copy of the A version of this DNA position (about 33 in 100 people of African ancestry do,
+          almost no one of European ancestry). One study of African American adults linked it with a GrimAge
+          epigenetic clock reading about one year older than calendar age, on average. That is a tendency in a marker,
+          not a measure of how you are ageing, so it carries no score.
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position, as nearly everyone of European ancestry and
+          about 62 in 100 people of African ancestry do. It is the reference the other combinations are compared with.
+          The position lies just before the F2RL3 gene on chromosome 19. Epigenetic clocks estimate age from chemical
+          marks on DNA; they only mean something against your calendar age, so this result carries no score.
+studies:
+  - rsid: rs2227341
+    note: pmid-34187551
+    quote: q9
+    phenotype_class: BIOMARKER
+    study_design: meta_analysis
+    population: African American (McCartney 2021's six African American cohorts with this SNP)
+    ancestry: [AFR]
+    sample_size: 5017
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "6.01398e-25"
+    p_value_num: 6.01398e-25
+    effect_size: -1.3482
+    effect_measure: beta
+    effect_unit: years of GrimAge acceleration per G allele
+    effect_allele: G
+    direction: unknown
+    statistical_test: "McCartney 2021's GWAS meta-analyses of epigenetic clocks (q1, q2); Table S4 (caption q6, legend q7, header q8): African American GrimAge acceleration, rs2227341 refA G (0.82) b −1.3482, SE 0.1307, P 6.0e-25, effective n 5,017 in six cohorts, I² 67 % (q9); the sample size is the effective n; the GWAS Catalog's record (GCST90014294, db-gwascatalog-2026.10.29#q686) the same line; a marker study (D32, D37.12)"
+    curator: claude-opus-5-5
+  - rsid: rs2227341
+    note: pmid-40021682
+    quote: q170
+    phenotype_class: OWN_SURVIVAL
+    study_design: own_survival_cox
+    population: European (UK Biobank, white British)
+    ancestry: [EUR]
+    sample_size: 393833
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: nominal
+    p_value: "0.037"
+    p_value_num: 0.037
+    effect_size: 0.0529404
+    effect_measure: beta
+    effect_unit: Martingale residual of death per G allele (positive more deaths; the deposit's allele columns swapped, q32)
+    effect_allele: G
+    direction: risk
+    statistical_test: "Park 2025's whole-cohort survival deposit (GCST90551884, q170): β +0.0529 for G (columns swapped, q32's reading; a positive β more deaths), SE 0.0252, P 0.037; men P 0.028 (q171), women P 0.51 (q172); A at 0.02 % in the sample (about 175 carriers); an unscored look-up on a marker row (D32), filling the lifespan cell for G"
+    curator: claude-opus-5-5
