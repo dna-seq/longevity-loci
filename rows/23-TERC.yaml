@@ -8,22 +8,28 @@ locus_name: TERC
 also_loci: [104]
 verdict: kept
 verdict_reason: >-
-  Tier B, the seed's, on the marker's own evidence (D37.12): the tier grades the association with leukocyte
-  telomere length, not longevity, and this row is unscored (D32). Codd 2013's genome-wide meta-analysis of mean
-  leukocyte telomere length in 37,669 Europeans of the ENGAGE cohorts puts T with shorter telomeres, β −0.097 SD per T
-  (SE 0.008), P 2.54e-31, its strongest locus. Taub 2022's whole-genome sequences of 109,122 TOPMed participants (US
-  cohorts of European, African, Hispanic/Latino and Asian ancestry, outside ENGAGE) replicate TERC genome-wide: its
-  sentinel rs12637184, r² 1.00 with rs10936599 in CEU, P 1.3e-96 pooled and 1.0e-50 in Europeans, −59.8 bp per
-  counted allele, with no heterogeneity across ancestries (Cochran's Q P 0.51); the GWAS Catalog records rs10936599
-  itself in that study at P 8e-95 (cited on the tier, no study entry, since its allele is not printed). Taub prints no counted allele (the Catalog records none either), only that its 59
-  sentinels' effect sizes are highly consistent with the earlier qPCR GWASs, TERC among them. §4.1's A, with the
-  marker in place of lifespan, needs a study of 100k or more replicated on the same allele and side (§6.3 asks the
-  study's effect allele); Taub's allele is unprinted, so its side at rs10936599 is inferred, not read, and the row is
-  B: genome-wide (Codd), with the one independent replication's allele unknown. A on Taub's consistency statement is
-  put to the lead. Li 2020 (up to 78,592 Europeans) has the seed's locus 104 at rs10936600,
-  T −0.086 SD per T, P 7.2e-51, the same signal (r² 1.00 in CEU), but most of its ENGAGE samples were Codd's, so it
-  adds no independent test; 104 is folded in here (D14). Lifespan look-ups, unscored and read for T: Timmers 2019
-  T beta1 +0.0085 (SE 0.0045), P 0.057, one-sided 0.029 with longer-lived parents; Park 2025's own survival flat (P
+  Tier A on the marker's own evidence (D37.12; the seed B; B until D38.5, 2026-11-16): the tier grades the
+  association with leukocyte telomere length, not longevity, and this row is unscored (D32). Codd 2013's genome-wide
+  meta-analysis of mean leukocyte telomere length in 37,669 Europeans of the ENGAGE cohorts puts T with shorter
+  telomeres, β −0.097 SD per T (SE 0.008), P 2.54e-31, its strongest locus. Codd 2021 measured telomere length in
+  472,174 UK Biobank participants, outside ENGAGE (log-transformed, Z-standardized): its Supplementary Table 1 prints
+  the TERC sentinel rs2293607 with A1 (the effect allele) T at 0.758, β +0.094 (0.090 to 0.099), P < 1.0e-314, N_imp
+  464,283, Europeans alone the same. rs2293607 is r² 1.00, D′ 1.00 with rs10936599 in CEU, and opposite coupling at
+  these frequencies would cap r² near 0.1, so rs2293607-C, the shorter allele, travels with rs10936599-T: the same
+  allele and side as Codd 2013. D21's test: Codd 2013 −0.097 (SE 0.008) against Codd 2021 −0.094 (SE 0.0023), both in
+  SD units, heterogeneity P 0.72, Codd 2013's power at Codd 2021's effect 1.00: no red flag, no shrinkage. A study of
+  100k or more, genome-wide, replicated independently on the same allele: §4.1's A. The lead is inside Codd 2021's
+  locus-28 credible set as Open Targets reads it (C2 below), so §4.1's tag clause does not apply (D38.5); Codd's own
+  95 % set prints rs2293607 (PP 0.89) and Taub's sentinel rs12637184 (0.09), and rs10936599 appears in no sheet, which
+  may be a multi-allelic site never analysed, named. Taub 2022's whole-genome sequences of 109,122 TOPMed participants
+  (outside ENGAGE) replicate TERC genome-wide too: its sentinel rs12637184, r² 1.00 with rs10936599 in CEU, P 1.3e-96
+  pooled and 1.0e-50 in Europeans, with no heterogeneity across ancestries (Cochran's Q P 0.51); the GWAS Catalog
+  records rs10936599 itself in that study at P 8e-95. Taub prints a minor allele count (47,452 of 218,244 alleles) but
+  no counted allele, so it is cited on the tier with no study entry (§6.3). Li 2020 (up to 78,592 Europeans) has the
+  seed's locus 104 at rs10936600, T −0.086 SD per T, P 7.2e-51, the same signal (r² 1.00 in CEU), but most of its
+  ENGAGE samples were Codd 2013's, so it
+  adds no independent test; 104 is folded in here (D14). Lifespan look-ups, unscored and read for T, two-sided at
+  0.05 (D38.6): Timmers 2019 T beta1 +0.0085 (SE 0.0045), P 0.057, T's way and short of 0.05; Park 2025's own survival flat (P
   0.73; men 0.94, women 0.69; its columns swapped); FinnGen R11's deaths have T with more deaths, flat (β +0.0077,
   P 0.35), a database line (D29.1); Deelen 2019 flat (90th T −0.021, P 0.34; 99th +0.015, P 0.67); Zenin 2019's
   healthspan has T with the lower hazard, P 0.0032; Pilling 2017's four parental scans (by rsID and by position) and
@@ -31,18 +37,19 @@ verdict_reason: >-
   answered 429, its part unchecked) finds candidate-gene studies of bladder and colorectal cancer, COPD and
   depression, and telomere-length instrument papers, none a test of this variant on lifespan. Every genotype
   neutral, each conclusion a tendency of the marker with no colour (D32, D37.12); `direction: unknown`, since the row
-  claims no longevity direction. Outcome cells read for T: exceptional survival 0 (Deelen flat); lifespan + (Timmers,
-  one-sided 0.029); healthspan + (Zenin, P 0.0032). Mechanism: markers of biological ageing. Pleiotropy
+  claims no longevity direction. Outcome cells read for T: exceptional survival 0 (Deelen flat); lifespan 0 (Timmers
+  two-sided 0.057, Park, FinnGen and the rest flat; D38.6); healthspan + (Zenin, two-sided 0.0032, T the side with the
+  lower hazard). Mechanism: markers of biological ageing. Pleiotropy
   `mech:cancer`: C, the longer-telomere allele, raises bladder cancer (OR 1.08, P 1e-14), multiple myeloma (1.16, P
   3e-8), chronic lymphocytic leukaemia (1.26, P 2e-9), colorectal cancer (1.04, P 3e-8; Codd's own search too) and
   cutaneous melanoma (P 8e-19), as Codd notes for colorectal cancer and multiple sclerosis; no `tradeoff`, since the
   row names no longevity-favoured allele. Causal C2: in Codd's telomere-length credible set at PIP 0.115 (Li's at
-  0.053, nine others 0.009 to 0.067; Open Targets 26.09, both pages read). Effector E3, ambiguous: locus-to-gene
+  0.053; Open Targets 26.09, both pages read). Effector E3, ambiguous: locus-to-gene
   gives ACTRT3 0.51 on Codd's set but 0.39 on Li's, and it scores protein-coding genes only, so TERC, the gene the
   papers name, is never scored; C>T is synonymous in MYNN, not E1. Descriptive. Age of action unknown. The evidence
-  is European and, through TOPMed, multi-ancestry; T's frequency differs widely between ancestries (6.6 % to 56.5 %).
+  is European (ENGAGE and UK Biobank) and, through TOPMed, multi-ancestry; T's frequency differs widely between ancestries (6.6 % to 56.5 %).
 axes:
-  tier: {value: B, cites: [pmid-23535734#q1, pmid-23535734#q2, pmid-23535734#q3, pmid-23535734#q4, pmid-35530816#q1, pmid-35530816#q2, pmid-35530816#q3, pmid-35530816#q4, pmid-35530816#q5, pmid-35530816#q6, db-ensembl-116#q1004, db-gwascatalog-2026.10.29#q615, db-gwascatalog-2026.10.29#q616, db-gwascatalog-2026.10.29#q617, db-gwascatalog-2026.10.29#q618, db-gwascatalog-2026.10.29#q619, db-gwascatalog-2026.10.29#q620, pmid-32109421#q1, pmid-32109421#q2, pmid-32109421#q3, pmid-32109421#q4, db-ensembl-116#q1003]}
+  tier: {value: A, cites: [pmid-34611362#q1, pmid-34611362#q2, pmid-34611362#q3, pmid-34611362#q4, pmid-34611362#q5, pmid-34611362#q6, pmid-34611362#q7, pmid-34611362#q8, db-ensembl-116#q1042, pmid-23535734#q1, pmid-23535734#q2, pmid-23535734#q3, pmid-23535734#q4, pmid-35530816#q1, pmid-35530816#q2, pmid-35530816#q3, pmid-35530816#q4, pmid-35530816#q5, pmid-35530816#q6, db-ensembl-116#q1004, db-gwascatalog-2026.10.29#q615, db-gwascatalog-2026.10.29#q616, db-gwascatalog-2026.10.29#q617, db-gwascatalog-2026.10.29#q618, db-gwascatalog-2026.10.29#q619, db-gwascatalog-2026.10.29#q620, pmid-32109421#q1, pmid-32109421#q2, pmid-32109421#q3, pmid-32109421#q4, db-ensembl-116#q1003]}
   mechanism: {value: ageing_markers, cites: [pmid-23535734#q1, pmid-23535734#q2, pmid-23535734#q4]}
   pleiotropy: {values: ["mech:cancer"], cites: [pmid-23535734#q5, db-gwascatalog-2026.10.29#q621, db-gwascatalog-2026.10.29#q622, db-gwascatalog-2026.10.29#q623, db-gwascatalog-2026.10.29#q624, db-gwascatalog-2026.10.29#q625, db-gwascatalog-2026.10.29#q626, db-gwascatalog-2026.10.29#q627, db-gwascatalog-2026.10.29#q628, db-gwascatalog-2026.10.29#q629, db-gwascatalog-2026.10.29#q630, db-gwascatalog-2026.10.29#q631, db-gwascatalog-2026.10.29#q632, db-gwascatalog-2026.10.29#q633, db-gwascatalog-2026.10.29#q634, db-gwascatalog-2026.10.29#q635]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -71,22 +78,22 @@ variants:
           You carry two copies of the more common version of this DNA position (about 57 in 100 people of European
           ancestry do). It is the reference the other combinations are compared with. The position lies near TERC, the
           RNA part of telomerase, the enzyme that rebuilds telomeres, the protective caps at the ends of chromosomes.
-          Telomere length is a marker of cellular ageing that only means something against your age, so this result
-          carries no score.
+          Telomere length is a marker whose reading only means something against your calendar age, which this report
+          does not have, so this result carries no score.
       - genotype: C/T
         state: neutral
         conclusion: >-
           You carry one copy of the T version of this DNA position (about 37 in 100 people of European ancestry do).
           Large studies link each copy of T with slightly shorter telomeres in white blood cells, about a tenth of the
-          usual spread between people. That is a small tendency in a marker, not a sign of faster ageing in itself:
-          studies of lifespan show no clear effect of this position, so it carries no score.
+          usual spread between people. That is a tendency in a marker whose reading only means something against your
+          calendar age, which this report does not have, so it carries no score.
       - genotype: T/T
         state: neutral
         conclusion: >-
           You carry two copies of the T version of this DNA position (about 6 in 100 people of European ancestry do).
           Large studies link each copy of T with slightly shorter telomeres in white blood cells, about a tenth of the
-          usual spread between people per copy. That is a small tendency in a marker, not a sign of faster ageing in
-          itself: studies of lifespan show no clear effect of this position, so it carries no score.
+          usual spread between people per copy. That is a tendency in a marker whose reading only means something
+          against your calendar age, which this report does not have, so it carries no score.
 studies:
   - rsid: rs10936599
     note: pmid-23535734
@@ -106,6 +113,26 @@ studies:
     effect_allele: T
     direction: unknown
     statistical_test: "Codd 2013's genome-wide meta-analysis of mean LTL (q1; seven loci, TERC among the telomere-biology genes, q2); Table 1's GWA line (columns q3, q4): T at 0.252, β −0.097, SE 0.008, P 2.54e-31; a marker study (D32), the tier grading the marker association (D37.12)"
+    curator: claude-opus-5-5
+  - rsid: rs10936599
+    note: pmid-34611362
+    quote: q5
+    phenotype_class: BIOMARKER
+    study_design: meta_analysis
+    population: UK Biobank (Codd 2021's participants, mostly European; the Europeans-only line the same)
+    ancestry: [EUR]
+    sample_size: 464283
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "<1.0E-314"
+    p_value_num: 1.0e-314
+    proxy_rsid: rs2293607
+    effect_size: -0.094
+    effect_measure: beta
+    effect_unit: SD of log-transformed, Z-standardized LTL per C allele of rs2293607, which travels with rs10936599's T (Table S1's A1 T +0.094, negated)
+    effect_allele: T
+    direction: unknown
+    statistical_test: "Codd 2021's GWAS of LTL in 472,174 UK Biobank participants (q1, q2), Supplementary Table 1 (A1 the effect allele, q3; header q4): locus 28, TERC, rs2293607 A1 T at 0.758, β +0.094 (0.090 to 0.099), P < 1.0e-314, N_imp 464,283, Europeans +0.095 (q5); r² 1.00 with rs10936599 in CEU (db-ensembl-116#q1042), C with T by the frequencies; the sample size is N_imp; D21 against Codd 2013: heterogeneity P 0.72, power 1.00; the independent replication of 100k or more (§4.1's A, D38.5)"
     curator: claude-opus-5-5
   - rsid: rs10936599
     note: pmid-32109421
@@ -144,7 +171,7 @@ studies:
     effect_unit: log hazard protection per T allele in self (beta1; positive = longer life)
     effect_allele: T
     direction: protective
-    statistical_test: "Timmers 2019's summary statistics (GCST009890, q407): T beta1 +0.0085, SE 0.0045, one-sided 0.029 T's way; an unscored look-up on a marker row (D32), filling the lifespan cell for T"
+    statistical_test: "Timmers 2019's summary statistics (GCST009890, q407): T beta1 +0.0085, SE 0.0045, two-sided 0.057, T's way and short of 0.05, so the lifespan cell 0 (D38.6); an unscored look-up on a marker row (D32)"
     curator: claude-opus-5-5
   - rsid: rs10936599
     note: pmid-30729179

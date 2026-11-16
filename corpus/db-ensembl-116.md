@@ -3690,3 +3690,27 @@ rs2227341 (row 128): GRCh38 19:16,888,889, G/A/C, G ancestral (q1035); A at 0.06
 genomes, G 99.94 % (q1036, q1037); A at 20.9 % and G 79.1 % in its African/African American genomes (q1038, q1039);
 110 bp upstream of F2RL3's MANE transcript (NM_003950.4), upstream_gene_variant (q1040, q1041), a 5′ UTR variant on
 other F2RL3 transcripts. For row 128.
+
+## Reading 2026-11-16, record
+
+> [q1042] [0] d_prime 1.000000 population_name 1000GENOMES:phase_3:CEU r2 1.000000 variation2 rs2293607 variation1 rs10936599
+
+> [q1043] [0] population_name 1000GENOMES:phase_3:CEU d_prime 0.933624 variation1 rs2736100 r2 0.488885 variation2 rs2736099
+
+> [q1044] [0] variation2 rs2853677 variation1 rs2736100 r2 0.472359 d_prime 0.851740 population_name 1000GENOMES:phase_3:CEU
+
+> [q1045] [0] variation2 rs7705526 r2 0.458676 variation1 rs2736100 d_prime 0.999978 population_name 1000GENOMES:phase_3:CEU
+
+> [q1046] [0] population_name 1000GENOMES:phase_3:CEU d_prime 0.551718 variation2 rs7705526 r2 0.214438 variation1 rs2853677
+
+> [q1047] [0] r2 0.201180 variation2 rs1049053 variation1 rs9275160 population_name 1000GENOMES:phase_3:CEU d_prime 0.999991
+
+> [q1048] [0] variation1 rs9275160 variation2 rs1049053 r2 0.176159 d_prime 0.999973 population_name 1000GENOMES:phase_3:GBR
+
+> [q1049] [0] population_name 1000GENOMES:phase_3:EUR d_prime 0.982116 r2 0.145863 variation2 rs1049053 variation1 rs9275160
+
+Ensembl pairwise LD, 1000 Genomes phase 3. Row 23: rs10936599 with Codd 2021's TERC sentinel rs2293607, r² 1.00, D′
+1.00 in CEU (q1042). Row 30: rs2736100 with rs2736099 (132) r² 0.489, D′ 0.93 (q1043); with rs2853677 (133) 0.472, D′
+0.85 (q1044); with rs7705526 (153) 0.459, D′ 1.00 (q1045), all CEU; rs2853677 with rs7705526 0.214, D′ 0.55
+(q1046). Row 159: rs9275160 with row 103's rs1049053, r² 0.201 in CEU (q1047), 0.176 in GBR (q1048), 0.146 in EUR
+(q1049), D′ 0.98 to 1.00. For rows 23, 30 and 159.
