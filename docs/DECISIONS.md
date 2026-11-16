@@ -1145,3 +1145,63 @@ under the person's standing word, each with the alternative it rejected.
     nothing about the marker; (c), a fixed tier for the section.
 13. **Export:** a `nominal` study whose direction is unknown, or a derived reference read, is not written as "p < 0.05
     in the discovery's direction" (the lead fixes `export.py`).
+
+## D38 — batch fifteen's read: 117, 127, 159 and the markers 23, 30, 105, 106, 112, 114 (2026-11-16)
+
+Three adversarial reads. Settled under the person's standing word, each with the alternative it rejected. Tiers
+that move: 106 A to B, 112 C to B, 23 B to A once its line is quoted.
+
+1. **106 LONP1 is B, by §4.1's "replication with a much smaller effect".** Koller's effect is 0.58 times
+   Longchamps' (heterogeneity P 0.034, power 1.00), and Zaidi 2023's is 0.39 times (P 1.4e-4). Both pass on the
+   same side, so the heterogeneity is the smaller-effect clause, not a failure: no `replication_failed`. TFAM's lines
+   in the same two tables do not shrink, so the platform does not explain it. Rejected: keeping A.
+2. **Koller's equivalence test shows nothing about effect size** (a 0.5 SD margin that 113 of 115 SNPs pass). 106,
+   114 and the note on pmid-38267512 drop that claim, and name Longchamps 2022 (UK Biobank plus CHARGE) as Koller's
+   comparison, not UK Biobank alone.
+3. **114 TFAM keeps A**, with Zaidi 2023 added as a second independent replication (P 1.14e-5, A −0.0389), and
+   Longchamps' TFAM P given as Koller's Table S11 prints it (4.4e-89; 1e-55 is Chong's).
+4. **A P back-solved from the article's own printed interval is the article's figure, marked derived**: D12 asks an
+   article, not a database, and this is arithmetic on an article's numbers. 112 IBA57 is B: Lin's abstract's 95 %
+   CI (1.0748 to 2.1138) gives P 1.8e-9, agreeing with the Catalog's 2e-9. Name the sample size, the subset method
+   and the winner's curse. Rejected: C until the PDF is read. Under C, D28.5 would also have asked C4/E4.
+5. **§4.1's tag clause reads the credible set the row's causal level cites.** A lead inside a 95 % set (C1 to C3)
+   is not "a tag outside the credible set". 23 TERC's lead is in Codd's set (C2, PIP 0.115). Codd 2021 (UK Biobank,
+   472,174, outside Codd 2013's ENGAGE samples) prints its allele at rs2293607 (r² 1.00), same side, P < 1e-314.
+   That is an independent genome-wide replication, so 23 is A. This holds once the curator caches and quotes that
+   line and states D21's test (heterogeneity and power against Codd 2013). Taub stays cited on the tier. Rejected:
+   B on the absence of rs10936599 from Codd 2021's printed set, an absence that may be a site never analysed.
+6. **A marker row's outcome cells read two-sided at 0.05, the side named.** D26.2 reads a cell one-sided in the
+   discovery's direction, and a marker row has no discovery direction for longevity (its direction is `unknown`,
+   D37.12). 23's lifespan becomes `0` (Timmers two-sided 0.057). 30's `−` stands on FinnGen. A study's
+   `stat_significance` follows its own printed P (D26.13).
+7. **One genotype wording for every marker row** (D32): the conclusion names the marker tendency and says it is
+   not scored because the marker's reading depends on calendar age, which the module does not have. It never gives
+   lifespan evidence as the reason.
+8. **D16's co-occurring lifespan study is not met by a sex stratum picked after the fact** (D35.5 and D37.3 carried
+   over). 159 stays C: Pilling's mothers (one-sided 0.029) are named and not counted. Rejected: (b), B on that stratum.
+9. **159's corrections**: A lowers complement C4 (the Catalog's "unit decrease"), so the stated direction is
+   reversed; `trait_efo_id` EFO_0009762 (D17.4, as row 98). It is separate from 103 (r² 0.15 to 0.20, D′ about 1,
+   each its own peak); Zenin's agreement is 103's echo by LD (expected z 2.6 to 3.0, seen 3.14), said so. The r² is
+   cached and quoted.
+10. **117 is read from Broer's own Table 3** (PMC4296168: C, 0.75, OR 1.24), which confirms the Catalog's allele.
+    An allele from a Catalog record alone would have left the flag unknown (D12). Broer's own flat look-ups (NECS,
+    LLFS, EU_longevity) are added. The half-effect test keeps the discovery's SE (heterogeneity P 0.0015 and
+    0.0023): the flag holds, and the row restates those numbers.
+11. **127 stays D**: §4.1's preprint clause caps a finding and never lifts one. Its mechanism is `general_ageing`
+    (D25.7, as 120, 124, 126), since the cGAS finding is a cell assay. Exceptional survival is `untested` because the
+    comparison was selected by the authors' filter (the methods' sentence quoted, not q6). Both centenarian counts
+    (602 and 643) are named.
+12. **30 TERT keeps B**, with these fixes:
+    - the r² read as 0.46 to 0.49 to 132, 133 and 153;
+    - "separate signals" said as not shown, since no source tests them conditionally;
+    - "rows of their own" said as to come;
+    - Liu 2014 named as a Han Chinese replication on the same side;
+    - `eur_only_evidence` dropped.
+
+    When 132 is opened, it is first checked as a fold into 30: McCartney's IEAA lead at TERT is rs2736100 itself.
+13. **105 NHLRC1 keeps B**, with these fixes:
+    - effector E3, since TPMT's L2G of 0.555 is a rival (D24);
+    - McCartney's European sample, 34,461 (GCST90014290);
+    - Lu is not independent: it shares five of its eight cohorts with McCartney (D19.1);
+    - Lu's SE does not reproduce its P, said so;
+    - the effect is relative to people without T, not to calendar age.
