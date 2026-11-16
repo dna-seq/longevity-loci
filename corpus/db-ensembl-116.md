@@ -3330,3 +3330,21 @@ under 0.05). For row 147.
 rs75526165 (row 150): GRCh38 9:13,549,784 T/A (q910); A at 0.1088 in gnomAD's East Asian genomes, 561 of 5,156 alleles
 (q911, q912), 0.0002 in the non-Finnish Europeans (q913), 0.133 in 1000 Genomes CHS (28 of 210, q914); intronic
 (q915). For row 150.
+
+## Reading 2026-11-16, record
+
+> [q916] mappings[0] end 102665501 coord_system chromosome start 102665501 seq_region_name 2 location 2:102665501-102665501 ancestral_allele A allele_string A/G/T strand 1 assembly_name GRCh38
+
+> [q917] populations[35] population gnomADg:nfe allele A frequency 0.005249 allele_count 357
+
+> [q918] populations[0] allele A population gnomADe:nfe frequency 0.006594 allele_count 3130
+
+> [q919] populations[30] frequency 0.0003774 population gnomADg:fin allele A allele_count 4
+
+> [q920] [0].transcript_consequences[1] variant_allele T gene_symbol SLC9A2 biotype protein_coding transcript_id ENST00000233969 gene_id ENSG00000115616 strand 1 mane_select NM_003048.6 gene_symbol_source HGNC hgnc_id HGNC:11072 impact MODIFIER canonical 1
+
+> [q921] [0].transcript_consequences[1].consequence_terms[0] intron_variant
+
+rs6543176 (row 148): GRCh38 2:102,665,501, A the ancestral and reference allele (q916); A at 0.525 % in gnomAD's
+non-Finnish European genomes (q917), 0.659 % in its exomes (q918), 0.04 % in the Finnish genomes (q919); intronic in
+SLC9A2 on its MANE Select transcript (q920, q921). For row 148.

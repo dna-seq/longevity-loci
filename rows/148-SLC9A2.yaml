@@ -1,0 +1,120 @@
+# The seed list's locus 148, SLC9A2 (2q12.1). Curated 2026-11-16. Lead rs6543176, the seed's only rsID (Gurinovich
+# 2025's Long Life Family Study whole-genome scan): intronic in SLC9A2 on its MANE Select transcript, GRCh38
+# 2:102,665,501, GRCh37 2:103,281,960, A/G with A the reference, ancestral and rare allele (0.525 % in gnomAD's
+# non-Finnish European genomes, 0.04 % in the Finnish), A the discovery's longer-lived side. Open Targets 26.09 has no
+# record of it; the GWAS Catalog (2026-10-29) holds no association.
+locus_id: 148
+locus_name: SLC9A2
+verdict: kept
+verdict_reason: >-
+  Tier C, the seed's: genome-wide in one centenarian sample against spouses and others who died younger, unreplicated
+  (R-TIER-2, as 118's design; §4.1's B needs a sample that clears that cap). Gurinovich 2025 sequenced the Long Life
+  Family Study: 568 extreme-longevity cases (past the age fewer than 1 % of their sex and birth cohort reach) and 908
+  controls, spouses and others who died before it, in a mixed-effects model with the full relationship matrix; A
+  reaches genome-wide significance, −log10 P 8.3 (about 5e-9), at MAF 0.01 in the cases against gnomAD's 0.006. The
+  paper prints no effect size or control frequency, so D31.10's control check cannot run (unknown). Against gnomAD's
+  non-Finnish European genomes (0.525 %, the reference D31.13 fixes for a whole-genome study) the cases' printed
+  0.01 is about 11 copies in 1,136 alleles where 6.0 are expected, OR 1.84, Poisson P 0.041; the printed MAF is
+  rounded, and across 0.005 to 0.015 the read runs from P 0.55 to 2e-4 (derived). The carriers cluster in 24 of the
+  study's 587 families, so the copies are not independent. Replication failed for want of a usable line: the New
+  England Centenarian Study's imputation fell under Rsq 0.7 and UK Biobank's parental-longevity GWAS does not hold
+  it. With no printed effect size, no look-up can be calibrated, so no flag can be computed (unknown, no token,
+  D26.3). The deposits that hold it lean A's way or sit flat: Park 2025's own survival has A with fewer deaths, −0.0077
+  (SE 0.0057), P 0.16, one-sided 0.08 (men P 0.53, women 0.14; A at 0.55 %, the deposit's columns swapped); Pilling
+  2017's parental scans flat (both parents' attained age A longer, P 0.5; mothers 0.4, fathers 0.92, top 10 % 1.0);
+  FinnGen R11's deaths have A with more deaths, flat (P 0.65; A at 0.07 % in Finns), a database line (D29.1).
+  Deelen 2019, Timmers 2019, Zenin 2019 and Foote 2025 hold no line (untested). The literature search (the rsID with
+  SLC9A2, extreme longevity and whole genomes, 2026-11-16) finds Gurinovich alone and its 2022 conference abstract.
+  Exceptional survival + (the discovery, genome-wide; R-TIER-2 caps the tier, not the cell); lifespan 0 (Park and
+  Pilling flat); healthspan untested. Mechanism ageing in general (D25.7): intronic in SLC9A2, a sodium-hydrogen
+  exchanger; the authors tie A to higher serine levels and less hypertension (LLFS HR 0.62, P 0.08; UK Biobank OR
+  0.92, P 0.13), neither nominal. Pleiotropy `mech:cancer` and `tradeoff` (D18.1): the paper's UK Biobank PheWAS, signs
+  recoded to A, puts A with lymphoid leukaemia (OR 9.03, P 1.6e-4) and with head and neck cancers at nominal P, across
+  many phenotypes and uncorrected, which its title calls an increased risk for cancer. Causal C4 and effector E4: no
+  Open Targets record. Descriptive. Age of action unknown. The evidence is European (the study's participants are of
+  European descent).
+axes:
+  tier: {value: C, cites: [pmid-39751714#q1, pmid-39751714#q2, pmid-39751714#q3, pmid-39751714#q4, pmid-39751714#q5, pmid-39751714#q15, pmid-39751714#q13, pmid-39751714#q14, pmid-39751714#q6, pmid-39751714#q11, pmid-39751714#q12, db-ensembl-116#q917, pmid-40021682#q135, pmid-40021682#q136, pmid-40021682#q137, pmid-40021682#q32, pmid-29227965#q188, pmid-29227965#q189, pmid-29227965#q190, pmid-29227965#q191, db-finngen-r11#q103, db-gwascatalog-2026.10.29#q593]}
+  mechanism: {value: general_ageing, cites: [db-ensembl-116#q920, db-ensembl-116#q921, pmid-39751714#q9, pmid-39751714#q10]}
+  pleiotropy: {values: ["mech:cancer", "tradeoff"], cites: [pmid-39751714#q7, pmid-39751714#q8]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: untested, lifespan: "0", exceptional_survival: "+",
+            cites: [pmid-39751714#q3, pmid-39751714#q4, pmid-40021682#q135, pmid-29227965#q188]}
+  actionability: {label: descriptive, cites: [pmid-39751714#q3]}
+  context: {values: [eur_only_evidence], cites: [pmid-39751714#q2, pmid-39751714#q3]}
+flags:
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1246]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q1246]}
+variants:
+  - rsid: rs6543176
+    locus: {chrom: "2", start: 102665501, ref: A, cites: [db-ensembl-116#q916]}  # A is the reference and the rare, longer-lived allele
+    gene: ""
+    phenotype: SLC9A2 intron, longevity
+    trait_efo_id: OBA_VT0005372
+    effect_allele: A
+    effect_size: 1.84
+    effect_measure: OR
+    stat_significance: significant
+    direction: protective
+    negatives: >-
+      In a large UK study this rare version came with more lymphoid leukaemia and some head and neck cancers, a
+      screen of many conditions at once, not a confirmed finding.
+    genotypes:
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position, as nearly everyone does. It is the
+          reference the other combinations are compared with. The position lies inside the SLC9A2 gene on chromosome 2.
+      - genotype: A/G
+        state: protective
+        conclusion: >-
+          You carry one copy of a rare version of this DNA position (about 1 in 100 people of European ancestry carry
+          it). One study of long-lived American and Danish families found it more often among family members who
+          reached extreme old age, but it clusters in a few families and has not been confirmed in another sample.
+          The same version may come with a higher risk of some cancers. This is weak, early evidence: a possible
+          tendency, not destiny.
+      - genotype: A/A
+        state: protective
+        conclusion: >-
+          You carry two copies of a rare version of this DNA position, which is very unusual. One study of long-lived
+          families found single copies more often among those who reached extreme old age, a finding not yet
+          confirmed, so nothing can be said about two copies.
+studies:
+  - rsid: rs6543176
+    note: pmid-39751714
+    quote: q3
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: centenarian_case_control
+    population: Long Life Family Study (US and Danish families of European descent; cases past the 1 % survival age against spouses and others who died younger)
+    ancestry: [EUR]
+    n_cases: 568
+    sample_size: 1476
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: significant
+    effect_size: 1.84
+    effect_measure: OR
+    effect_unit: odds of carrying A, the cases against gnomAD NFE genomes (derived from the printed MAF; no case-control effect printed)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Gurinovich 2025's mixed-effects logistic GWAS with saddle-point approximation, sex, four principal components and the full relationship matrix (q3: −log10 P 8.3, genome-wide); A at MAF 0.01 in the cases against gnomAD 0.006 (q4, q14); cases and controls defined in q1, q2, q13; read against gnomAD NFE genomes (db-ensembl-116#q917, 0.525 %): about 11 copies against 6.0, Poisson P 0.041, P 0.55 to 2e-4 across the rounding (derived); 24 of 587 families carry it (q12)"
+    curator: claude-opus-5-5
+  - rsid: rs6543176
+    note: pmid-40021682
+    quote: q135
+    phenotype_class: OWN_SURVIVAL
+    study_design: own_survival_cox
+    population: European (UK Biobank, whole cohort)
+    ancestry: [EUR]
+    sample_size: 393833
+    sample_unit: individuals
+    stat_significance: not_significant
+    p_value: "0.16"
+    p_value_num: 0.16
+    effect_size: -0.0077
+    effect_measure: beta
+    effect_unit: Martingale residual of a Cox model of own survival per A allele (positive = more deaths than expected, shorter life)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Park 2025's whole-cohort deposit (GCST90551884, q135), columns swapped (q32's reading): A β −0.0077, SE 0.0057, one-sided 0.08 A's way; men P 0.53 (q136), women 0.14 (q137); no printed discovery effect to calibrate against, so no flag can be computed"
+    curator: claude-opus-5-5

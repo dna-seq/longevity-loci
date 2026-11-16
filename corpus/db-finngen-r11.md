@@ -757,3 +757,9 @@ FinnGen R11's DEATH endpoint at rs41419545 (row 140): T (0.00076, rare in Finns)
 > [q102] 8 29124778 G A rs62502826 CTD-2647L4.1,KIF13B 0.0238265 1.62294 -0.0247706 0.0109609 0.132109 0.129643 0.132418
 
 FinnGen R11's DEATH endpoint at rs62502826 (row 147): A (0.132) β −0.0248 (SE 0.0110), P 0.024, fewer deaths, the discovery's way, one-sided 0.012. A database line (D29.1). For row 147.
+
+## Reading 2026-11-16, record
+
+> [q103] 2 102665501 A G rs6543176 SLC9A2 0.648576 0.188039 -0.0731559 0.160521 0.999265 0.999185 0.999275
+
+FinnGen R11's DEATH endpoint at rs6543176 (row 148): ref A, alt G at 0.9993; β per G −0.073 (SE 0.161), so A +0.073, more deaths, P 0.65, flat; A at 0.07 % in Finns. A database line (D29.1). For row 148.

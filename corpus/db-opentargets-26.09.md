@@ -4454,3 +4454,9 @@ q1231), the variant at PIP 0.024 (q1232), membership only; no lifespan-class set
 > [q1245] data variant null
 
 9_13549784_T_A (rs75526165's A; row 150): no record, nor under the reversed id. For row 150.
+
+## Reading 2026-11-16, record
+
+> [q1246] data variant null
+
+2_102665501_A_G (rs6543176; row 148): no record, nor under the reversed id. For row 148.
