@@ -16,14 +16,15 @@ verdict_reason: >-
   about 7 copies and show about 1 (Poisson P 0.007), the long-lived 2,490 about 2.1 and show about 5 (P 0.066), so the
   signal is mostly the controls' deficit, and most long-lived copies are in men (0.60 %), the women at 0.06 %, about
   1 copy against 1.56 expected from the population's 0.09 % (derived; the split is never tested, so no sex token,
-  D29.16, D31.13). The reference is fixed as gnomAD's non-Finnish exomes, the exome study's matching assay (D31.13);
+  D29.16, D31.13); across Kolbe's rows 107, 120, 121, 124, 125 and 126 about 24 of 35 long-lived copies are in
+  men, who are 27 % of the long-lived (D34.7, D34.14), named, no token. The reference is fixed as gnomAD's non-Finnish exomes, the exome study's matching assay (D31.13);
   against the non-Finnish genomes (0.075 %) the controls would give P 0.015, near D30.10's cut of 0.01, and the
   long-lived one-sided 0.041 (derived): the reading is fragile, and said so. The authors note that the OR against
   gnomAD is considerably lower than their own and that gnomAD's non-Finnish Europeans are mostly British, unlike
   their cohort; they do not disown the call, so it is not an overfit source by the rule's own cases (rows 41, 44, 48,
   60, each disowned by its authors or their filter); so, by D31.10, the case-control OR (12.1, P 9.8e-7) is named, not read: the
   row reads the long-lived against gnomAD NFE, the paper's own OR 2.36, which the paper tests no further and which the
-  Poisson comparison puts at one-sided P 0.066 (derived), not a pass. No replication exists: the authors say
+  Poisson comparison puts at one-sided P 0.066 (derived), not a pass. Kolbe chose its hits from about 98,000 rare variants, so a reference OR still carries that selection, uncorrected (D34.14). No replication exists: the authors say
   none of comparable size is available, their Ashkenazi look-up holds three of the seven variants, not this one, and
   their Leiden look-up lists none at SLC16A6. At 0.06 % the variant is absent from every large sample read here:
   Deelen 2019, Timmers 2019, Pilling 2017, Zenin 2019, FinnGen R11, Park 2025 (below its 0.1 % filter) and Foote 2025
