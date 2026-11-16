@@ -4442,3 +4442,9 @@ q1231), the variant at PIP 0.024 (q1232), membership only; no lifespan-class set
 > [q1243] data variant null
 
 17_17215284_C_T (rs41419545's T; row 140): no credible set (q1242); the reversed id has no record (q1243). For row 140.
+
+## Reading 2026-11-16, record
+
+> [q1244] data variant null
+
+8_29124778_G_A (rs62502826; row 147): no record, nor under the reversed id. For row 147.

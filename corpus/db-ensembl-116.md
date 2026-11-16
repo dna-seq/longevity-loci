@@ -3293,3 +3293,22 @@ rs35705950 (row 138): GRCh38 11:1,219,991, multi-allelic G/A/T (q894); T, the ro
 rs41419545 (row 140): GRCh38 17:17,215,284, multi-allelic C/A/G/T (q900); T at 0.318 % in gnomAD's non-Finnish European
 exomes (q901) and 0.334 % in its genomes (q902); on FLCN's MANE Select transcript (NM_144997.7) T is missense,
 alanine 445 to threonine (q903; FLCN on the minus strand, Gca to Aca). For row 140.
+
+## Reading 2026-11-16, record
+
+> [q904] mappings[0] start 29124778 end 29124778 coord_system chromosome location 8:29124778-29124778 seq_region_name 8 strand 1 ancestral_allele G allele_string G/A assembly_name GRCh38
+
+> [q905] populations[3] allele_count 9337 allele A population gnomADg:nfe frequency 0.1374
+
+> [q906] populations[18] allele_count 167 frequency 0.03226 population gnomADg:eas allele A
+
+> [q907] [0].transcript_consequences[1] canonical 1 gene_symbol_source HGNC transcript_id ENST00000524189 gene_id ENSG00000197892 hgnc_id HGNC:14405 biotype protein_coding strand -1 gene_symbol KIF13B mane_select NM_015254.4 impact MODIFIER variant_allele A
+
+> [q908] [0].transcript_consequences[1].consequence_terms[0] intron_variant
+
+> [q909] [0] variation2 rs6989058 d_prime 0.738659 population_name 1000GENOMES:phase_3:CEU variation1 rs62502826 r2 0.337688
+
+rs62502826 (row 147): GRCh38 8:29,124,778 G/A (q904); A at 0.137 in gnomAD's non-Finnish European genomes (q905) and
+0.032 in East Asian (q906); intronic in KIF13B on its MANE Select transcript (q907, q908). With Wright's mothers'
+rs6989058 r² 0.34 in CEU (q909); with rs10097270, rs10108738 and rs601962 Ensembl's pairwise LD answers no pair (r²
+under 0.05). For row 147.

@@ -2205,3 +2205,9 @@ rs35705950 and COVID-19 (row 138): T OR 0.89 for hospitalisation, P 4e-14 (q586,
 > [q590] page size 200 totalElements 0 totalPages 0 number 0
 
 rs41419545 (row 140): no association in the catalogue (q590). For row 140.
+
+## Reading 2026-11-16, record
+
+> [q591] page size 200 totalElements 0 totalPages 0 number 0
+
+rs62502826 (row 147): no association in the catalogue. For row 147.
