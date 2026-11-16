@@ -4038,3 +4038,12 @@ For rows 107, 109, 120, 121, 124, 125, 126 and 140 (D37.1).
 
 rs11186068 (row 62): G in 623 of gnomAD's non-Finnish European genomes' 67,964 alleles (q1158, q1159) and in 2 of
 1000 Genomes' Tuscans' 214 (q1160, q1161), the references for D31.11's re-read of Beccacece's arms (D37.1). For row 62.
+
+## Reading 2026-11-16, record
+
+> [q1162] [0] variation2 rs2853677 r2 0.382279 variation1 rs2736099 population_name 1000GENOMES:phase_3:CEU d_prime 0.666174
+
+> [q1163] [0] population_name 1000GENOMES:phase_3:CEU d_prime 0.571036 variation1 rs2736099 r2 0.266680 variation2 rs7705526
+
+rs2736099 (row 132) against rs2853677 (row 133): r² 0.38, D′ 0.67 in 1000 Genomes CEU (q1162); against rs7705526
+(row 153): r² 0.27, D′ 0.57 (q1163). Ensembl 116's pairwise LD, no alleles phased. For row 132 (D39.9, D39.11).
