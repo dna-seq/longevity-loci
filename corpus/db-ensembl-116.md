@@ -3254,3 +3254,12 @@ Row 137, rs34459993: intergenic, GRCh38 5:147,120,800 T/C (q886), GRCh37 5:146,5
 Asian genomes 0.194 (1,006 of 5,180, q888), non-Finnish 0.203 (q889), 1000 Genomes CHS 0.243 (q890). Hsieh's solved
 controls (C 0.207) fit gnomAD EAS (P 0.25 with its error), so the discovery is read as printed: T log OR +0.968 (SE
 0.204 from its P; derived). ENSG00000133706 is LARS1 (q891). For row 137.
+
+## Reading 2026-11-16, record
+
+> [q892] [0] population_name 1000GENOMES:phase_3:CHS d_prime 0.911204 variation1 rs429358 r2 0.830294 variation2 rs2075650
+
+> [q893] [0] d_prime 0.883058 population_name 1000GENOMES:phase_3:EAS variation1 rs429358 variation2 rs2075650 r2 0.683996
+
+rs2075650 with rs429358 in 1000 Genomes CHS (southern Han): r² 0.83 (q892), beside CHB's 0.81 (q848); in the pooled
+East Asian panel 0.68 (q893). The two Han panels clear 0.8 narrowly and the pooled panel does not (D34.10). For row 96.

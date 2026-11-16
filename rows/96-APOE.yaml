@@ -4,7 +4,7 @@
 # T and C, ε4 C at both. The two SNPs carry their studies and no genotypes; the six pairs carry the results, each
 # once for lifespan and once for Alzheimer's disease. ε1 (C at rs429358 with T at rs7412), very rare, is not defined.
 # The seed's proxies rs2075650, rs4420638 and rs769449 tag ε4 in part (CEU r² 0.55, 0.72, 0.80; rs2075650 0.81 in
-# CHB); rs405509 and rs449647 tag neither SNP (r² 0.05 to 0.12) and are Rosoff 2023's further mvAge leads in the
+# CHB, 0.83 in CHS, 0.68 in the pooled East Asian panel); rs405509 and rs449647 tag neither SNP (r² 0.05 to 0.12) and are Rosoff 2023's further mvAge leads in the
 # locus. None is scored. The separate APOE module is `apoe_epsilon` (the registry's prod catalog, 2026-11-15).
 locus_id: 96
 locus_name: APOE
@@ -26,11 +26,16 @@ verdict_reason: >-
   together), so the ε2 figure, whose reference includes ε4, overstates ε2 against ε3 somewhat. No read here prints a
   pair against ε3/ε3 with numbers. Sebastiani 2019 (seven studies, 28,297 people, abstract only) says ε4 lowers the
   odds of extreme longevity with excess death past the 99th percentile age, and that carrying ε2/ε2 or ε2/ε3 raises
-  the odds against ε3/ε3. So the pair results are worded from the per-allele effects added on the log scale
-  (derived: against ε3/ε3 at the 90th percentile ε2/ε2 about 1.6, ε2/ε3 1.28, ε2/ε4 0.77, ε3/ε4 0.60, ε4/ε4 0.36;
-  in years about +1.2, +0.6, −0.45, −1.06, −2.1), never as printed pair effects. ε2/ε2's own figures are weak: Kuo
+  the odds against ε3/ε3, the two pairs pooled, not ε2/ε3 alone. So every pair figure is derived, ε2/ε3's included,
+  never a printed pair effect: each version against ε3 is solved jointly from the two per-allele effects and the
+  allele frequencies (gnomAD's non-Finnish European genomes, rs429358 C 0.138 and rs7412 T 0.079, under
+  Hardy–Weinberg, which also gives the pair frequencies the texts state; D34.11), ε2 against ε3 OR 1.19 at the 90th
+  percentile and 1.34 at the 99th and +0.46 years a copy, ε4 0.61, 0.53 and −1.01 years (derived). Against ε3/ε3 at
+  the 90th percentile ε2/ε2 about 1.41, ε2/ε3 1.19, ε2/ε4 0.72, ε3/ε4 0.61, ε4/ε4 0.37; in years about +0.9, +0.46,
+  −0.56, −1.01, −2.0 (derived). ε2/ε2's own figures are weak: Kuo
   2020 (UK Biobank, aged 40 to 70) gives its own death HR 1.06 (0.87–1.30), a null, and triglycerides up 0.41 SD; its
-  derived hazard, about 0.92 (Kuo's ε2/ε3 0.96 doubled on the log scale), sits inside that interval, so the derived
+  derived hazard on the texts' derivation, about 0.91 (ε2's +0.46 years a copy as Timmers' log hazard −0.046,
+  doubled), sits inside that interval, so the derived
   state stands (D34.3); ε2/ε3's
   HR is 0.96 (0.91–1.01). Kuo's sentence on a four-cohort parental meta-analysis (ε2/ε3 OR 1.34, ε2/ε2 1.26 with an
   interval spanning 1) cites a reference not read here: named, not counted. The Alzheimer's results use Belloy 2023's
@@ -39,9 +44,15 @@ verdict_reason: >-
   in Black and Hispanic samples; ε2 shows no protection in East Asians. Outside Europe, against Deelen's 90th percentile on the same scale (two log odds of long-lived
   status; derived): Hsieh 2026's Taiwanese 90-and-over GWAS (922 cases, 871 controls) gives ε4 OR 0.96 (P 0.82),
   one-sided power 0.88, heterogeneity P 0.011, a powered non-replication; beside it, Liu 2021's independent Chinese
-  CLHLS longevity meta-analysis replicates genome-wide at rs2075650's G, which tags ε4 at r² 0.81 in CHB (β −0.293,
-  P 6.2e-10), so under D34.1 (D21 amended) no `replication_failed` is set: the two East Asian samples disagree with
-  each other, not with the locus. Hsieh's ε2 line (OR 0.85, P 0.28) is unpowered (0.50). Its 95-and-over (ε4 0.63, P
+  CLHLS longevity study replicates genome-wide at rs2075650's G (β −0.293, P 6.2e-10), a P that is its
+  meta-analysis's of two sets (each alone short of genome-wide, 6.8e-7 and 7.3e-5; dataset 1's custom chip was
+  partly chosen from dataset 2's earlier GWAS, the overlapping samples removed), which counts. rs2075650 tags ε4 at
+  r² 0.81 in CHB and 0.83 in CHS, clearing 0.8 narrowly (the pooled East Asian panel 0.68). Hsieh prints Liu's own
+  SNP, G OR 0.99, P 0.97 (Table S5): against Liu heterogeneity P 0.13 and power at Liu's size 0.49 (derived, its SE
+  0.18 taken from the same table's rs429358 line at the same frequency, since a P near 1 fixes none; with the SE
+  from its own P, 0.30 and 0.29). So Hsieh's null fails Deelen's European size, not the East Asian one, and is not
+  shown to contradict the replication in its own ancestry: under D34.1, as D34.10 reads it, no
+  `replication_failed` is set. Hsieh's ε2 line (OR 0.85, P 0.28) is unpowered (0.50). Its 95-and-over (ε4 0.63, P
   0.12; ε2 0.71, P 0.21) and 85-and-over (ε4 1.03, ε2 0.85) tables are named only, not grounds (D34.1).
   The Calabrian GWAS (299 cases) has ε4's C at OR 0.66, P 0.12, the same side, power 0.61, heterogeneity P 0.72, no
   contradiction, though its authors call APOE not associated. Exceptional survival + (Deelen); lifespan + (Timmers,
@@ -57,10 +68,11 @@ verdict_reason: >-
   2017, Park 2025's three, Timmers 2020's multivariate, GCST006702); rs7412 is in none, its place resting on the
   conditional analysis. Effector E1 APOE: both are missense in APOE, and locus-to-gene gives APOE 0.973 (next APOC2
   0.174); the colocalisation listing (1,825 rows) is not read. PROTECT:PRESENCE: ε2 is a protective version, not the
-  absence of a risk one. Descriptive. `also_in:apoe_epsilon`: the pairs' Alzheimer's results overlap that module;
-  this row speaks of lifespan first. Proxies (D34.4): R-APOE-1's five are positions folded into APOE, not scored; three
-  tag ε4 and carry `ld_proxy_of:rs429358`, which below r² 0.8 means folded into APOE, never a countable proxy
-  (rs2075650 0.55 in CEU and 0.81 in CHB, rs4420638 0.72, rs769449 0.80); rs405509 and rs449647, Rosoff's further
+  absence of a risk one. Descriptive. `also_in:apoe_epsilon`: the link D33 (the person's D2) asks for, to the module
+  antonkulaga/apoe_epsilon (1.1.1 in the registry's prod catalog, read 2026-11-16), whose Alzheimer's odds are
+  Belloy 2023's as here; this row speaks of lifespan first. Proxies (D34.4): R-APOE-1's five are positions folded into APOE, not scored; three
+  tag ε4 and share one `ld_proxy_of:rs429358` token (D34.12), which below r² 0.8 means folded into APOE, never a
+  countable proxy (rs2075650 0.55 in CEU, 0.81 in CHB and 0.83 in CHS, rs4420638 0.72, rs769449 0.80); rs405509 and rs449647, Rosoff's further
   leads, tag neither ε SNP: named, no token. The seed's other sources: Pilling 2017 (UK Biobank, inside Timmers' sample) and
   Wright 2019 (AncestryDNA with UK Biobank) find APOE genome-wide in parents; Timmers 2020 finds APOE's effect does not fade with parental age; Joshi
   2016 (PMID 27029810) is not read. Literature searches (APOE genotype and Alzheimer's odds; APOE genotypes and
@@ -69,7 +81,7 @@ verdict_reason: >-
   (weaker ε4 and ε2 effects in a Southern Italian cluster), not read. The seed's GenAge mouse note is not carried (no
   corpus note; R-ANIMAL-3).
 axes:
-  tier: {value: A, cites: [pmid-31413261#q82, pmid-31413261#q291, pmid-31413261#q292, pmid-31413261#q293, pmid-31413261#q294, pmid-31413261#q295, pmid-31413261#q296, pmid-30642433#q393, pmid-30642433#q394, pmid-30642433#q397, pmid-40021682#q3, pmid-40021682#q32, pmid-40021682#q121, db-finngen-r11#q4, db-finngen-r11#q93, db-finngen-r11#q94, db-finngen-r11#q96, pmid-40232348#q26, pmid-40232348#q27, pmid-36613555#q2, pmid-33948810#q8, pmid-37550455#q81, pmid-30060062#q1, pmid-30060062#q2, pmid-41949656#q16, pmid-41949656#q17, pmid-41949656#q25, pmid-41949656#q27, pmid-33657282#q26, db-ensembl-116#q848, pmid-42176242#q4, pmid-42176242#q13, pmid-29227965#q16, pmid-31484785#q32, pmid-32678081#q11]}
+  tier: {value: A, cites: [pmid-31413261#q82, pmid-31413261#q291, pmid-31413261#q292, pmid-31413261#q293, pmid-31413261#q294, pmid-31413261#q295, pmid-31413261#q296, pmid-30642433#q393, pmid-30642433#q394, pmid-30642433#q397, pmid-40021682#q3, pmid-40021682#q32, pmid-40021682#q121, db-finngen-r11#q4, db-finngen-r11#q93, db-finngen-r11#q94, db-finngen-r11#q96, pmid-40232348#q26, pmid-40232348#q27, pmid-36613555#q2, pmid-33948810#q8, pmid-37550455#q81, pmid-30060062#q1, pmid-30060062#q2, pmid-41949656#q16, pmid-41949656#q17, pmid-41949656#q25, pmid-41949656#q27, pmid-33657282#q26, pmid-33657282#q5, pmid-33657282#q4, db-ensembl-116#q848, db-ensembl-116#q892, db-ensembl-116#q893, pmid-41949656#q33, db-ensembl-116#q839, db-ensembl-116#q840, pmid-42176242#q4, pmid-42176242#q13, pmid-29227965#q16, pmid-31484785#q32, pmid-32678081#q11]}
   mechanism: {value: brain_memory, cites: [pmid-37930705#q2, pmid-37930705#q3, pmid-37930705#q4, pmid-37930705#q5, pmid-37930705#q6, pmid-30642433#q393]}
   pleiotropy: {values: ["mech:cvd", "tradeoff"], cites: [pmid-30642433#q393, pmid-32511104#q1, pmid-32678081#q24, pmid-32511104#q5, pmid-32511104#q2]}
   age_of_action: {value: LATE, confidence: DIRECT, cites: [pmid-30642433#q395, pmid-30642433#q212, pmid-29030599#q7, pmid-30060062#q1]}
@@ -81,10 +93,8 @@ flags:
   - {token: "causal:C1", cites: [db-opentargets-26.09#q1201, db-opentargets-26.09#q1203, db-opentargets-26.09#q1204, db-opentargets-26.09#q1205, db-opentargets-26.09#q1206, db-opentargets-26.09#q1207, db-opentargets-26.09#q1208, db-opentargets-26.09#q1209, db-opentargets-26.09#q1210, db-opentargets-26.09#q1211, db-opentargets-26.09#q1212, db-opentargets-26.09#q1213, db-opentargets-26.09#q1214, db-opentargets-26.09#q1215, db-opentargets-26.09#q1216, db-opentargets-26.09#q1202, pmid-31413261#q296]}
   - {token: "effector:E1", cites: [db-ensembl-116#q837, db-ensembl-116#q838, db-opentargets-26.09#q1217, db-opentargets-26.09#q1218, db-opentargets-26.09#q1219]}
   - {token: "PROTECT:PRESENCE", cites: [pmid-31413261#q291, pmid-31413261#q293, pmid-30060062#q2]}
-  - {token: "also_in:apoe_epsilon", cites: []}  # antonkulaga/apoe_epsilon in the module registry's prod catalog, read 2026-11-15
-  - {token: "ld_proxy_of:rs429358", cites: [db-ensembl-116#q841, db-ensembl-116#q848]}  # rs2075650, r² 0.55 in CEU, 0.81 in CHB: folded into APOE (D34.4)
-  - {token: "ld_proxy_of:rs429358", cites: [db-ensembl-116#q842]}  # rs4420638, r² 0.72 in CEU: folded into APOE (D34.4)
-  - {token: "ld_proxy_of:rs429358", cites: [db-ensembl-116#q843]}  # rs769449, r² 0.80 in CEU (0.799): folded into APOE (D34.4)
+  - {token: "also_in:apoe_epsilon", cites: [pmid-37930705#q2]}  # D33 (the person's D2): antonkulaga/apoe_epsilon 1.1.1, the registry's prod catalog, read 2026-11-16; Belloy's table, the source both modules share
+  - {token: "ld_proxy_of:rs429358", cites: [db-ensembl-116#q841, db-ensembl-116#q848, db-ensembl-116#q892, db-ensembl-116#q893, db-ensembl-116#q842, db-ensembl-116#q843]}  # one token, three positions (D34.12): rs2075650 (19:44,892,362) r² 0.55 CEU, 0.81 CHB, 0.83 CHS, 0.68 EAS; rs4420638 (19:44,919,689) 0.72 CEU; rs769449 (19:44,906,745) 0.80 CEU (0.799); all folded into APOE (D34.4)
 variants:
   - rsid: rs429358
     gene: APOE
@@ -121,11 +131,12 @@ diplotypes:
     state: protective
     conclusion: >-
       You carry two copies of APOE ε2, the rarest common version of this gene; about 1 in 160 people of European
-      ancestry have this pair. Each ε2 copy is linked to a longer life: about 28 % higher odds of reaching the top 10 %
-      of ages in a large European study, and about 7 months more lifespan per copy in UK and European family data. A
-      study of long-lived people found higher odds of extreme old age for people with ε2/ε2 or ε2/ε3 than with the
-      common ε3/ε3. The figure for two copies is an estimate built from single copies, and direct data on this rare
-      pair are thin and uncertain. ε2/ε2 also has downsides, below. For Alzheimer's disease, see the second result
+      ancestry have this pair. Compared with the common ε3, each ε2 copy is linked to a longer life, by estimates
+      worked out from a large European study: about 19 % higher odds of reaching the top 10 % of ages, and about 5
+      months more lifespan per copy in UK and European family data. For two copies that adds up to about 41 % higher
+      odds and about 11 months, figures built from single copies, not measured in people with this pair, whose direct
+      data are thin and uncertain. A study of long-lived people found higher odds of extreme old age for people with
+      ε2/ε2 or ε2/ε3, counted together, than with ε3/ε3. ε2/ε2 also has downsides, below. For Alzheimer's disease, see the second result
       for this pair and the separate APOE module. A tendency, not destiny.
     negatives: >-
       Two ε2 copies raise blood triglycerides (about 0.4 standard deviations in UK Biobank), and ε2 has been linked to
@@ -146,9 +157,10 @@ diplotypes:
     state: protective
     conclusion: >-
       You carry one copy of APOE ε2 and one of the common ε3 (about 12 in 100 people of European ancestry). The ε2
-      copy is linked to a longer life: about 28 % higher odds of reaching the top 10 % of ages, and 47 % higher of the
-      top 1 %, in a large European study, and about 7 months more lifespan in UK and European family data; a study of
-      long-lived people found higher odds of extreme old age for ε2/ε3 than for ε3/ε3. In UK Biobank it also came
+      copy is linked to a longer life, by estimates worked out from a large European study (no study read here printed
+      this pair): about 19 % higher odds of reaching the top 10 % of ages and 34 % higher of the top 1 %, and about 5
+      months more lifespan in UK and European family data. A study of long-lived people found higher odds of extreme
+      old age for ε2/ε3 and ε2/ε2, counted together, than for ε3/ε3. In UK Biobank it also came
       with lower LDL cholesterol and slightly less heart disease. For Alzheimer's disease, see the second result for
       this pair and the separate APOE module. A tendency, not destiny.
     negatives: >-
@@ -170,8 +182,8 @@ diplotypes:
     conclusion: >-
       You carry one copy of APOE ε2 and one of ε4 (about 2 in 100 people of European ancestry). The two pull in
       opposite directions: ε4 is linked to a shorter life and ε2 to a longer one. Added together from single-copy
-      effects (an estimate; no study read here printed this pair), ε4's larger effect wins: a little under half a year
-      shorter on average than ε3/ε3, and lower odds of reaching very old age. ε4's effect grows with age. For
+      effects (an estimate; no study read here printed this pair), ε4's larger effect wins: about 7 months shorter on
+      average than ε3/ε3, and about 28 % lower odds of reaching the top 10 % of ages. ε4's effect grows with age. For
       Alzheimer's disease, see the second result for this pair and the separate APOE module. A tendency, not destiny.
   - gene: APOE
     pair: [ε2, ε4]
@@ -180,14 +192,14 @@ diplotypes:
     phenotype: Alzheimer's disease
     conclusion: >-
       Alzheimer's disease: in studies of people of European ancestry, ε2/ε4 came with about twice the odds of
-      Alzheimer's disease of ε3/ε3 (2.2), less than ε3/ε4. These are odds compared between patient and control
-      groups, not a lifetime risk. The separate APOE module covers this in more detail.
+      Alzheimer's disease of ε3/ε3 (2.2), less than ε3/ε4; lower in Black samples (1.6), and not clearly raised in
+      Hispanic ones. These are odds compared between patient and control groups, not a lifetime risk. The separate APOE module covers this in more detail.
   - gene: APOE
     pair: [ε3, ε3]
     state: neutral
     conclusion: >-
       You carry two copies of APOE ε3, the most common version (about 6 in 10 people of European ancestry). It is the
-      reference the other pairs are compared with: average for lifespan, as far as this gene goes. For Alzheimer's
+      reference the other pairs are compared with, for lifespan as for the rest. For Alzheimer's
       disease, see the second result for this pair and the separate APOE module.
   - gene: APOE
     pair: [ε3, ε3]
@@ -195,7 +207,7 @@ diplotypes:
     trait_efo_id: MONDO_0004975
     phenotype: Alzheimer's disease
     conclusion: >-
-      Alzheimer's disease: ε3/ε3 is the reference pair, with average odds as far as this gene goes. Being average for
+      Alzheimer's disease: ε3/ε3 is the reference pair the others are compared with. Being the reference for
       APOE does not mean free of Alzheimer's disease: many other genes and factors play a part. The separate APOE
       module covers this in more detail.
   - gene: APOE
@@ -203,9 +215,9 @@ diplotypes:
     state: risk
     conclusion: >-
       You carry one copy of APOE ε4 and one of the common ε3 (about 22 in 100 people of European ancestry). APOE is
-      the gene most often found in genetic studies of lifespan, and ε4 is its shorter-lived version: about 40 % lower
-      odds of reaching the top 10 % of ages and 48 % lower of the top 1 % in a large European study, and about one
-      year less lifespan per copy in UK and European family data. Its effect is small in midlife and grows after 70.
+      the gene most often found in genetic studies of lifespan, and ε4 is its shorter-lived version: compared with ε3, by
+      estimates worked out from a large European study, about 39 % lower odds of reaching the top 10 % of ages and 47 %
+      lower of the top 1 %, and about one year less lifespan per copy in UK and European family data. Its effect is small in midlife and grows after 70.
       ε4 is also linked to Alzheimer's disease and to heart and blood-vessel disease. For Alzheimer's disease, see the
       second result for this pair and the separate APOE module. A tendency, not destiny.
   - gene: APOE
@@ -540,7 +552,7 @@ studies:
     effect_unit: log odds of being a long-lived case per rs2075650 G allele (the ε4-tagging allele)
     effect_allele: G
     direction: risk
-    statistical_test: "Liu 2021's Table 1 meta-analysis at rs2075650 (q26): G β −0.293, SE 0.047; dataset 1 −0.261 (P 6.8e-7), dataset 2 −0.442 (P 7.3e-5); rs2075650 tags rs429358 at r² 0.81 in CHB (db-ensembl-116#q848), 0.55 in CEU; an independent East Asian sample"
+    statistical_test: "Liu 2021's Table 1 meta-analysis at rs2075650 (q26): G β −0.293, SE 0.047; dataset 1 −0.261 (P 6.8e-7), dataset 2 −0.442 (P 7.3e-5), each alone short of genome-wide, the meta-analysis's P counting (D34.10); dataset 1's chip partly chosen from dataset 2's GWAS (q5), overlap removed (q4); rs2075650 tags rs429358 at r² 0.81 in CHB (db-ensembl-116#q848) and 0.83 in CHS (q892), 0.68 pooled EAS (q893), 0.55 in CEU; Hsieh's Table S5 at rs2075650, OR 0.99, P 0.97 (pmid-41949656#q33): heterogeneity P 0.13, Hsieh's power at Liu's size 0.49 (derived); an independent East Asian sample"
     curator: claude-opus-5-5
   - rsid: rs429358
     note: pmid-40232348
