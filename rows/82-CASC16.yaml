@@ -32,8 +32,12 @@ verdict_reason: >-
   a breast-cancer association of its own (below). So rs4784227 is not a variant
   here; it has no lifespan signal of its own once the lead is accounted for, and is its own row as a healthspan
   signal, 169 (D25.6, D30.8, D39.14). In Zenin's healthspan it is the stronger line (Z 5.69 against 4.79), so by
-  D39.18 this lead is read there conditioned on it: 1.86, P 0.06 (derived, pmid-30729179 note on 169); the cell is
-  left as it was, the question with the lead. The anchor is read at the paper's own P (D17.3, D30.2): a reviewer's
+  D39.18 this lead is read there conditioned on it: 1.86, P 0.06 (derived, pmid-30729179 note on 169). D39.19 keeps the
+  healthspan cell + only if Timmers 2020's healthspan line at the lead, conditioned on rs4784227, stays at one-sided
+  P < 0.05. That column is Zenin's data (pmid-32678081#q32: A 0.023, SE 0.005, the summary file's 0.0233 and 0.00487,
+  q113), so the conditional is the same one: 1.86, one-sided 0.031, on the file's digits, or 1.62, one-sided 0.052, on
+  the table's rounded print (r +0.575, db-ensembl-116#q1208, q1209; derived). The cell stays + on the file's digits,
+  the question with the lead. The anchor is read at the paper's own P (D17.3, D30.2): a reviewer's
   approximate conditional on rs4784227, taking the traits as independent, brings the lead's healthspan z from 4.79 to
   1.85 and the combined test to about 0.002; named as context, not a correction of the paper's call.
   Mechanism metabolism, through body weight (D30.8):
