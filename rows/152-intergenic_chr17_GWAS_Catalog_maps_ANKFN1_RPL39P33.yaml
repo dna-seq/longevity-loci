@@ -12,12 +12,19 @@ verdict_reason: >-
   compared Taiwanese hospital patients who died at 85 or over (1,595) or 90 or over (922) with 880 who died at 65 to 75
   at the same hospital: A (pooled 0.023 and 0.026) OR 0.32 per A, P 2.85e-6, and 0.28, P 4.9e-6, under the paper's
   suggestive line of 1e-5. Solved per Alt from the OR and the counts, the shared controls carry A at about 0.0405
-  (85 and over) and 0.0410 (90 and over), matching each other and the printed 1000 Genomes 0.040, and the long-lived
+  (85 and over) and 0.0410 (90 and over), matching each other and the paper's printed 1000 Genomes column (0.040; Ensembl's
+  1000 Genomes EAS is 0.0357, 36 of 1,008, both named), and the long-lived
   at about 0.013 and 0.012 (derived). Against gnomAD's East Asian genomes (3.23 %, 167 of 5,174 alleles), the
-  reference D31.13 fixes, the controls fit (about 71 copies against 56.8, P 0.098 by a normal test with the
-  reference's error, Fisher's exact 0.11; 90 and over P 0.083), so the discovery is read as printed (D31.10 not met),
-  and read against the reference the long-lived sit well below it too (about 42 copies against 103, OR 0.40 per A, P
-  1.6e-6, Fisher 1.9e-8; derived). Its validation cohort (85 and over at a second hospital) gives OR 0.179, P 1.1e-7,
+  reference D31.13 fixes and D37.2 keeps, the controls fit (about 71 copies against 56.8, Fisher's exact on both counts
+  P 0.11, D37.1; 90 and over P 0.096; across the pooled frequency's rounding, 0.0225 to 0.0235, P 0.07 to 0.15), so
+  the discovery is read as printed (D31.10 not met), and read against the reference the long-lived sit well below it
+  too (about 42 to 43 copies against 103, OR 0.40 per A, Fisher P 2e-8 to 3e-8; derived). Across Hsieh's OR interval
+  (0.20 to 0.52, from its P) the controls misfit at the low edge (83 copies, Fisher P 0.0048), which would read the
+  discovery against the reference, where the long-lived still sit far below (P 4e-12), and fit at the high edge (P
+  0.88): C on every reading. The other references are named branches, each call stated (D37.2): against 1000 Genomes
+  EAS the controls fit (P 0.61) and the long-lived sit below (Fisher P 2.5e-5): C; against 1000 Genomes CHS (5 of 210)
+  the controls fit (P 0.34), so it is read as printed, C, though the long-lived are not below it there (OR 0.56, P
+  0.22), the one branch leaning toward D31.11's shape (all derived). Its validation cohort (85 and over at a second hospital) gives OR 0.179, P 1.1e-7,
   and 0.062, P 6.3e-11, the same direction, but its controls are not its own (Fig. 2), so it is not an independent
   replication (D19.1). A is all but absent in Europeans (0.003 %), so no European sample tests it: Deelen 2019,
   Timmers 2019, Park 2025 (all three files), FinnGen R11, Pilling 2017, Zenin 2019 and Foote 2025 were each looked up
@@ -29,7 +36,7 @@ verdict_reason: >-
   Mechanism ageing in general (D25.7): intergenic, nothing recorded at the variant. Causal C4 and effector E4: no
   Open Targets record. Descriptive. Age of action unknown. The evidence is Taiwanese, as `ancestry_specific:eas`.
 axes:
-  tier: {value: C, cites: [pmid-41949656#q13, pmid-41949656#q14, pmid-41949656#q36, pmid-41949656#q37, pmid-41949656#q8, pmid-41949656#q3, pmid-41949656#q4, pmid-41949656#q5, pmid-41949656#q10, pmid-41949656#q16, db-ensembl-116#q929, db-ensembl-116#q930, db-ensembl-116#q931, db-gwascatalog-2026.10.29#q595, db-gwascatalog-2026.10.29#q596]}
+  tier: {value: C, cites: [pmid-41949656#q13, pmid-41949656#q14, pmid-41949656#q36, pmid-41949656#q37, pmid-41949656#q8, pmid-41949656#q3, pmid-41949656#q4, pmid-41949656#q5, pmid-41949656#q10, pmid-41949656#q16, db-ensembl-116#q929, db-ensembl-116#q930, db-ensembl-116#q931, db-ensembl-116#q988, db-ensembl-116#q989, db-ensembl-116#q990, db-ensembl-116#q991, db-gwascatalog-2026.10.29#q595, db-gwascatalog-2026.10.29#q596]}
   mechanism: {value: general_ageing, cites: [db-ensembl-116#q932, db-opentargets-26.09#q1248]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -90,7 +97,7 @@ studies:
     effect_unit: odds of dying at 85 or over per T allele (the printed 0.32 per A, inverted)
     effect_allele: T
     direction: protective
-    statistical_test: "Hsieh 2026's logistic GWAS of the 85-and-over group (Table 1, q13), 1,595 cases and 880 controls (q8); A pooled 0.023; solved per Alt, controls 0.0405 and cases 0.0133 (derived); controls fit gnomAD EAS (db-ensembl-116#q929, 71 against 56.8, P 0.098 normal with the reference's error, Fisher 0.11, derived), read as printed; the long-lived against the reference OR 0.40 per A, P 1.6e-6 (Fisher 1.9e-8); 90 and over OR 0.28, P 4.9e-6 (q14); suggestive line 1e-5 (q4)"
+    statistical_test: "Hsieh 2026's logistic GWAS of the 85-and-over group (Table 1, q13), 1,595 cases and 880 controls (q8); A pooled 0.023; solved per Alt, controls 0.0405 and cases 0.0133 (derived); controls fit gnomAD EAS (db-ensembl-116#q929, 71 against 56.8, Fisher's exact on both counts 0.11, D37.1, derived), read as printed; the long-lived against the reference OR 0.40 per A, Fisher 2e-8 to 3e-8; across the OR interval (0.20 to 0.52) the controls misfit at the low edge (P 0.0048), the long-lived below throughout; 1000 Genomes EAS (db-ensembl-116#q990) and CHS (q988) branches: controls fit, read as printed (C); 90 and over OR 0.28, P 4.9e-6 (q14); suggestive line 1e-5 (q4)"
     curator: claude-opus-5-5
   - rsid: rs75737809
     note: pmid-41949656

@@ -3533,3 +3533,15 @@ rs9275160 (row 159): GRCh38 6:32,684,843 G/A (q981); A at 35.7 % in gnomAD's non
 > [q987] populations[60] allele_count 907 allele T frequency 0.899801587301587 population 1000GENOMES:phase_3:EAS
 
 rs75526165 (row 150): 1000 Genomes CHS T 182 of 210 (q985, beside A's 28, q914); 1000 Genomes EAS A 101 of 1,008, 0.100 (q986), T 907 (q987). For row 150, batch fourteen (D37.2).
+
+## Reading 2026-11-16, record
+
+> [q988] populations[51] frequency 0.0238095238095238 population 1000GENOMES:phase_3:CHS allele A allele_count 5
+
+> [q989] populations[50] frequency 0.976190476190476 population 1000GENOMES:phase_3:CHS allele_count 205 allele T
+
+> [q990] populations[53] allele A allele_count 36 frequency 0.0357142857142857 population 1000GENOMES:phase_3:EAS
+
+> [q991] populations[54] allele_count 972 allele T frequency 0.964285714285714 population 1000GENOMES:phase_3:EAS
+
+rs75737809 (row 152): 1000 Genomes CHS A 5 of 210, 0.024 (q988, q989); 1000 Genomes EAS A 36 of 1,008, 0.0357 (q990, q991), not the 0.040 Hsieh's Table 1 prints in its 1000 Genomes column. For row 152, batch fourteen (D37).
