@@ -5268,3 +5268,42 @@ E2; its 1,137 colocalisations (q1524) not read. For row 166.
 rs6062322 (20_63810246_A_T): 24 sets (q1525), none mvAge's or a lifespan class's. β per T: type 2 diabetes −0.0092 (q1526,
 q1527); systolic blood pressure −0.018 (q1528, q1529); HbA1c −0.0081 (q1530, q1531); coronary disease (MTAG) −5.7, its
 unit unread but its sign T's (q1532, q1533). Red-cell volume sets and ZBTB46 expression sets named. For row 167.
+
+## Reading 2026-11-16, record
+
+> [q1534] data.variant.credibleSets count 11
+
+> [q1535] data.variant.credibleSets.rows[0].study id GCST90692469 traitFromSource Smoking status - Never (UKB data field 20116) studyType gwas
+
+> [q1536] data.variant.credibleSets.rows[4].study id GCST90134661 traitFromSource Lung cancer studyType gwas
+
+> [q1537] data.variant.credibleSets.rows[9].study id gtex-v10_majiq_brain_cerebellar_hemisphere_ensg00000120903_t_27459756-27461754_27461754-27462979 traitFromSource ENSG00000120903:t:27459756-27461754:27461754-27462979 studyType sqtl
+
+> [q1538] data.variant.credibleSets.rows[10].study id gtex-v10_txrev_vagina_ensg00000120915_grp_2_contained_enst00000523827 traitFromSource ENSG00000120915.grp_2.contained.ENST00000523827 studyType tuqtl
+
+> [q1539] data.variant.credibleSets.rows[1].locus.rows[0].variant id 8_27584547_G_A
+
+> [q1540] data.variant.credibleSets.rows[1].locus.rows[1].variant id 8_27580789_A_C
+
+> [q1541] data.variant.credibleSets.rows[1].locus.rows[2].variant id 8_27584812_C_T
+
+> [q1542] data.variant.credibleSets.rows[1].locus.rows[3].variant id 8_27560912_C_T
+
+> [q1543] data.variant.credibleSets.rows[1].locus.rows[4].variant id 8_27561230_A_G
+
+> [q1544] data.variant.credibleSets.rows[1].locus.rows[5].variant id 8_27562086_A_G
+
+> [q1545] data.variant.credibleSets.rows[1].locus.rows[6].variant id 8_27555436_G_A
+
+> [q1546] data.variant.credibleSets.rows[6].locus.rows[0].variant id 8_27584547_G_A
+
+> [q1547] data.variant.credibleSets.rows[6].locus.rows[1].variant id 8_27583684_T_TC
+
+> [q1548] data.variant.credibleSets.rows[6].locus.rows[2].variant id 8_27580056_C_T
+
+> [q1549] data.variant.credibleSets.rows[6].locus.rows[3].variant id 8_27580789_A_C
+
+rs11780471 (8_27487202_G_A): 11 sets (q1534), none of a lifespan class: smoking (q1535), lung cancer (q1536), red-cell width,
+and splicing sets for CHRNA2 (ENSG00000120903) and EPHX2 (ENSG00000120915) (q1537, q1538). Row 53's lead's own
+lifespan sets, Pilling's (q680) and Wright's fathers' (q687), list seven and four members (q1539 to q1549), and
+rs11780471 is not among them: the signals' own sets are disjoint (D39.14). For row 168.

@@ -936,3 +936,11 @@ FinnGen R11's deaths at rs3131621 (q132): alt G +0.0114 (SE 0.0081) for death, P
 > [q133] 8 19967156 C T rs15285 LPL 0.314307 0.502646 -0.00851573 0.00846305 0.257011 0.257894 0.2569
 
 FinnGen R11's deaths at rs15285 (q133): alt T −0.0085 (SE 0.0085) for death, P 0.31: T fewer, one-sided 0.16. For row 166.
+
+## Reading 2026-11-16, record
+
+> [q134] 8 27487202 G A rs11780471 EPHX2 0.0105053 1.97859 -0.0383296 0.0149799 0.0659739 0.0647563 0.0661264
+
+FinnGen R11's deaths at rs11780471 (q134): alt A −0.0383 (SE 0.0150) for death, −log10 P 1.979 (P 0.011): A fewer deaths, nominal,
+in a sample outside UK Biobank and AncestryDNA. Row 53's lead there, A −0.0200 (SE 0.0088), P 0.023 (q29); conditioned on
+it at the EUR r +0.387 (Finnish LD unread), z 2.56 falls to 1.82, P 0.07 (derived). For row 168.

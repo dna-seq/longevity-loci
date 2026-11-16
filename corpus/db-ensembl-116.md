@@ -4172,3 +4172,20 @@ rs6062322 (row 167, the second signal at 99): GRCh38 20:63,810,246, multi-alleli
 gnomAD's non-Finnish genomes (q1196); intronic, ZBTB46 (q1197). Phase with row 99's lead rs2273500 from 1000 Genomes'
 phased EUR genotypes (population q1174; first lines q1198, q1199), over 1,006 haplotypes (derived): r +0.018, r² 0.000.
 For row 167.
+
+## Reading 2026-11-16, record
+
+> [q1200] mappings[0] start 27487202 strand 1 end 27487202 ancestral_allele G location 8:27487202-27487202 assembly_name GRCh38 coord_system chromosome allele_string G/A seq_region_name 8
+
+> [q1201] populations[5] population gnomADg:nfe allele_count 4357 allele A frequency 0.06404
+
+> [q1202] [0] id rs11780471 most_severe_consequence upstream_gene_variant assembly_name GRCh38 strand 1 start 27487202 input rs11780471 seq_region_name 8 allele_string G/A end 27487202
+
+> [q1203] genotypes[0] sample 1000GENOMES:phase_3:HG00096 genotype G|A gender Male
+
+> [q1204] genotypes[0] sample 1000GENOMES:phase_3:HG00096 gender Male genotype A|A
+
+rs11780471 (row 168, the second signal at 53): GRCh38 8:27,487,202 G/A, G ancestral (q1200); A at 6.4 % in gnomAD's non-Finnish
+genomes (q1201); upstream of EPHX2 (q1202; q374). Phase with row 53's lead rs7844965 from 1000 Genomes' phased EUR
+genotypes (population q1174; first lines q1203, q1204), over 1,006 haplotypes (derived): rs11780471 A with rs7844965 A,
+r +0.387 (r² 0.150), the two longer-life alleles together. For row 168.

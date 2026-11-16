@@ -1,0 +1,123 @@
+# A second signal at the seed's locus 53, EPHX2 (8p21.1), its own row under D25.6 and D39.14. Curated 2026-11-16.
+# Lead rs11780471, the second rsID named in row 53 (Wright 2019's fathers' meta): 3.6 kb upstream of EPHX2, at the
+# CHRNA2 smoking and lung-cancer locus, GRCh38 8:27,487,202 G/A, GRCh37 8:27,344,719, G ancestral; A at 6.4 % in
+# gnomAD's non-Finnish European genomes. 97 kb from row 53's lead rs7844965, r² 0.150 in 1000 Genomes EUR, the two
+# longer-life alleles together. A is the longer-life allele.
+locus_id: 168
+locus_name: CHRNA2-EPHX2
+second_signal_of: 53
+verdict: kept
+verdict_reason: >-
+  Tier C at most (D39.15, D39.17, R-TIER-4), and only just: genome-wide at the marginal in Wright 2019's AncestryDNA–UK
+  Biobank fathers' meta (P 3.2e-8; AncestryDNA P 1.8e-5, UK Biobank 1.6e-5, heterogeneity P 0.68), but conditioned on
+  row 53's lead in the coupling the phase gives, the independent part is nominal, not suggestive. From 1000 Genomes'
+  phased EUR haplotypes A travels with rs7844965's longer-life A (r +0.387, r² 0.150); with the lead's own line in the
+  same meta (P 5.8e-10, both arms quoted) the meta's z 5.53 conditions to 3.39 (P 7e-4), AncestryDNA's arm to 2.79 (P
+  0.005) and UK Biobank's to 2.51 (P 0.012); in Pilling 2017's both parents 3.84 to 1.78 (P 0.08); in Timmers 2019's
+  pooled parents 4.73 to 2.87 (P 0.004) (all derived). No tag of 53's lead (D39.14): the lead's own lifespan sets in
+  Open Targets, Pilling's (seven members) and Wright's fathers' (four), do not hold rs11780471, and none of
+  rs11780471's 11 sets is a lifespan set; something survives conditioning in both of Wright's arms. FinnGen R11's
+  deaths, outside both, put A with fewer deaths at P 0.011, but conditioned on 53's lead there (EUR r, Finnish LD
+  unread) 1.82, P 0.07 (derived): no independent replication of the independent part. The reverse matters for row 53:
+  53's lead given rs11780471 conditions to z 4.40 in Wright's meta and 4.57 in Pilling's both parents (derived), and
+  row 53 is told so in its prose. Look-ups read for A: Pilling's fathers +0.0194 for G (P 1.6e-5, Wright's UK Biobank
+  arm digit for digit), mothers P 0.0061, the top 10 % flat (0.45); Timmers A longer, P 2.3e-6, "++"; Deelen 2019 A's
+  way, flat (90th 0.33, 99th 0.10); Park 2025's own survival flat (P 0.24). Outcome cells read for A: lifespan +
+  (Wright, Pilling, Timmers, FinnGen); exceptional survival 0 (Deelen, Pilling's top 10 %); healthspan 0 (Zenin 2019
+  flat, P 0.79; Foote 2025's general factor A less frail at P 0.068, its F2 A frailer at P 0.013, the rest flat).
+  Mechanism smoking and lungs: A lowers smoking initiation (Saunders 2022, P 5e-110; Liu 2019, P 2e-13) and lung
+  cancer (McKay 2017, P 2e-8, G the risk allele), so `mech:smoking` and `mech:cancer`, the longer-life allele the
+  healthier on each, no `tradeoff`. Causal C4 (D39.12: none of Open Targets' 11 sets is of the row's phenotype, and no
+  article sets it). Effector E4: upstream of EPHX2, with splicing sets for CHRNA2 (cerebellum) and EPHX2 in Open
+  Targets, none of the row's phenotype. The literature search (the rsID, 2026-11-16; Semantic Scholar answered 429,
+  its part unchecked) finds McKay 2017 (PMID 28604730), the lung-cancer GWAS behind the Catalog's line, and smoking
+  Mendelian randomizations and lung-cancer reviews whose abstracts do not name the variant; named, nothing more read.
+  Descriptive. Age of action unknown. The evidence is European.
+axes:
+  tier: {value: C, cites: [pmid-31484785#q96, pmid-31484785#q97, pmid-31484785#q99, pmid-29227965#q24, pmid-29227965#q292, pmid-29227965#q295, pmid-30642433#q246, pmid-30642433#q427, db-ensembl-116#q1174, db-ensembl-116#q1203, db-ensembl-116#q1204, db-opentargets-26.09#q680, db-opentargets-26.09#q687, db-opentargets-26.09#q1534, db-opentargets-26.09#q1539, db-opentargets-26.09#q1540, db-opentargets-26.09#q1541, db-opentargets-26.09#q1542, db-opentargets-26.09#q1543, db-opentargets-26.09#q1544, db-opentargets-26.09#q1545, db-opentargets-26.09#q1546, db-opentargets-26.09#q1547, db-opentargets-26.09#q1548, db-opentargets-26.09#q1549, db-finngen-r11#q29, db-finngen-r11#q134]}
+  mechanism: {value: smoking_lungs, cites: [db-gwascatalog-2026.10.29#q347, db-gwascatalog-2026.10.29#q348, db-gwascatalog-2026.10.29#q349, db-gwascatalog-2026.10.29#q350, db-opentargets-26.09#q1535]}
+  pleiotropy: {values: ["mech:smoking", "mech:cancer"], cites: [db-gwascatalog-2026.10.29#q347, db-gwascatalog-2026.10.29#q348, db-gwascatalog-2026.10.29#q349, db-gwascatalog-2026.10.29#q350, db-gwascatalog-2026.10.29#q351, db-gwascatalog-2026.10.29#q352, db-opentargets-26.09#q1535, db-opentargets-26.09#q1536]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "0",
+            cites: [pmid-31484785#q99, pmid-29227965#q292, pmid-29227965#q293, pmid-29227965#q294, pmid-29227965#q295, pmid-30642433#q427, db-finngen-r11#q134, pmid-31413261#q373, pmid-31413261#q374, pmid-40021682#q230, pmid-40021682#q231, pmid-40021682#q232, pmid-30729179#q192, pmid-40759756#q209, pmid-40759756#q210, pmid-40759756#q211, pmid-40759756#q212, pmid-40759756#q213, pmid-40759756#q214]}
+  actionability: {label: descriptive, cites: [pmid-31484785#q99]}
+  context: {values: [eur_only_evidence], cites: [pmid-31484785#q99, db-ensembl-116#q1201]}
+flags:
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1534]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q1534, db-opentargets-26.09#q1537, db-opentargets-26.09#q1538, db-ensembl-116#q1202]}
+variants:
+  - rsid: rs11780471
+    locus: {chrom: "8", start: 27487202, ref: G, cites: [db-ensembl-116#q1200]}
+    gene: ""
+    phenotype: CHRNA2–EPHX2 region, fathers' lifespan
+    trait_efo_id: EFO_0007796
+    effect_allele: A
+    effect_size: -0.0193807
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position (about 88 in 100 people of European ancestry
+          do). It is the reference the other combinations are compared with. The position lies on chromosome 8 near
+          the EPHX2 gene, in a stretch known for its link with smoking. The finding comes from people of European
+          ancestry; less is known elsewhere.
+      - genotype: A/G
+        state: protective
+        conclusion: >-
+          You carry one copy of the less common A version of this DNA position (about 12 in 100 people of European
+          ancestry do). In very large British and American studies, fathers of people with this version lived a little
+          longer. The same version goes with being less likely to take up smoking and a lower risk of lung cancer. It
+          is an early finding: much of it is shared with a nearby signal, and what is left is weak. The effect is
+          small and it is a tendency, not a guarantee.
+      - genotype: A/A
+        state: protective
+        conclusion: >-
+          You carry two copies of the less common A version of this DNA position (fewer than 1 in 100 people of
+          European ancestry do). In very large British and American studies, fathers of people with this version lived
+          a little longer, per copy. The same version goes with being less likely to take up smoking and a lower risk
+          of lung cancer. It is an early finding: much of it is shared with a nearby signal, and what is left is weak.
+          The effect is small and it is a tendency, not a guarantee.
+studies:
+  - rsid: rs11780471
+    note: pmid-31484785
+    quote: q99
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_linear
+    population: AncestryDNA customers' fathers and UK Biobank participants' fathers (Wright 2019's meta-analysis)
+    ancestry: [EUR]
+    sample_size: 697000
+    sample_unit: individuals
+    stratum: parent
+    stratum_level: father
+    stat_significance: significant
+    p_value: "3.239e-08"
+    p_value_num: 3.239e-08
+    effect_size: 0.0193807
+    effect_measure: beta
+    effect_unit: fathers' attained age per G allele (UK Biobank arm, Pilling's scale; positive = shorter)
+    effect_allele: G
+    direction: risk
+    statistical_test: "Supplemental Table 9's fathers' meta (q99), AncestryDNA +0.0222 (SE 0.0052, P 1.8e-5) and UK Biobank +0.0194 (SE 0.0045, P 1.6e-5), heterogeneity P 0.68; marginal; conditioned on row 53's lead in the same meta (q96, q97; phase db-ensembl-116#q1203, q1204, r +0.387) z 3.39, P 7e-4 (derived, D39.15, D39.17)"
+    curator: claude-opus-5-5
+  - rsid: rs11780471
+    note: pmid-30642433
+    quote: q427
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 640183
+    sample_unit: lives
+    stat_significance: suggestive
+    p_value: "2.27158e-06"
+    p_value_num: 2.27158e-06
+    effect_size: 0.0377039
+    effect_measure: beta
+    effect_unit: beta1 on parental lifespan per A allele, longer positive
+    effect_allele: A
+    direction: protective
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0080, direction ++; marginal; conditioned on row 53's lead (q246) z 2.87, P 0.004 (derived); holds UK Biobank's parents, so not a replication"
+    curator: claude-opus-5-5
