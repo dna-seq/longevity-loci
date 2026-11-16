@@ -271,3 +271,6 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
   module_not_closed, dataset_currency. content_signature 35d1122a…, equal local and polygon; artifact 5a521352…
   (server). Markers: 19 variants, 57 genotype rows, all neutral, direction unknown, weight null, six marker traits
   (OBA_0003784, EFO_0022597, EFO_0006312, EFO_0007783, EFO_0010602, EFO_0000473).
+- 2026-11-16, pending: second-signal rows (D39.14, c8a0b3a) take ids from 162 and a `second_signal_of` field. The
+  export (export.py) was not touched by that change. At the first such row, trial it and check that the export's
+  "no 0.8 place" summary names second_signal_of rather than dropping it silently; tell the lead if it does not.
