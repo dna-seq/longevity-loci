@@ -15,23 +15,26 @@ verdict_reason: >-
   lead leaves mvAge's z of 5.52 where it is, and lifts it for any lead z on the same side; Rosoff's tables print no line
   at rs2273500, and only a lead z below −4 against its lifespan side would pull it under 5e-8 (derived). Look-ups read
   for T: Pilling 2017 both parents T longer, P 0.0083 (fathers 0.15, mothers 0.49), the top 10 % flat (0.13); Park
-  2025's own survival T fewer deaths, P 0.0056 (men 0.0071, women 0.26), UK Biobank inside; Deelen 2019 flat (90th
-  0.56, 99th 0.13, T's way); FinnGen R11's deaths flat (P 0.56), a database line. Outcome cells read for T: lifespan +
-  (Timmers, Pilling, Park); exceptional survival 0 (Deelen, Pilling's top 10 %); healthspan + (Zenin 2019, T the later
-  end, P 2.6e-4; Foote 2025's F3 P 8.5e-8 and F6 P 2.0e-5 T less frail, F5 the other way at 0.057, F1 and F2 flat; the
-  general factor's deposit holds no line). Mechanism metabolism: T lowers type 2 diabetes (P 1.2e-10) and HbA1c (P
-  5.6e-8) in Open Targets' fine-mapped sets, and systolic blood pressure (P 3.1e-9) and coronary disease (P 1e-8), so
-  `mech:diabetes` and `mech:cvd`, the healthier-ageing allele the healthier on each, no `tradeoff`; red-cell volume
-  and ZBTB46 expression sets named. Causal C4 (D39.12: none of Open Targets' 24 sets is mvAge's or a lifespan class's;
-  Rosoff's Supplementary Table 10 sets it in neither SuSiE's nor FINEMAP's credible set). Effector E4: intronic in
+  2025's own survival T fewer deaths, P 0.0056 (men 0.0071, women 0.26), UK Biobank inside; Deelen 2019 passes nothing (90th 0.56, 99th 0.13, T's way), its flag unknown, its power
+  not read (D40.5); FinnGen R11's deaths flat (P 0.56), a database line. Outcome cells read for T: lifespan + (Timmers, Pilling, Park). The 1 Mb window was read for stronger lifespan lines (D30.18,
+  D40.5): Timmers holds 340, row 99's lead rs2273500 the strongest (P 2.2e-7), and within 500 kb only rs73143584, 4 kb
+  away (P 6.5e-4, A longer), has r² 0.01 or more with this SNP (0.067; T with its A, r +0.278); conditioned stepwise
+  on rs2273500 and rs73143584, Timmers' line keeps z 1.72 (one-sided 0.042) and Pilling's both parents 1.96 (0.025)
+  (derived), so the co-occurring lifespan study is the locus's own and B holds (D16, D17.1, D30.2); exceptional survival 0 (Deelen, Pilling's top 10 %); healthspan + (Zenin 2019, T the later end, P 2.6e-4); Foote 2025 gives 0 (D40.5): F3 P 8.5e-8 and F6 P 2.0e-5 T less
+  frail, but F5 the other way, one-sided 0.028, F1 and F2 flat, the general factor's deposit no line. Mechanism general ageing (D30.7, D30.9, D40.5): Open Targets' type 2 diabetes, HbA1c, systolic pressure and
+  coronary sets hold this SNP at PIP 0.023, 0.0089, 0.0058 and 0.0063, it leads none, and the βs they print are each
+  set lead's, not its own, so no metabolic route is shown through it and no side of it is read there. It leads
+  red-cell volume sets (mean corpuscular volume, β per T +0.038, P 8.3e-28, PIP 0.997; four more MCV and MCH sets at
+  0.87 to 0.996): `mech:blood_count`, no `tradeoff` read; ZBTB46 expression sets named. Causal C4 (D39.12: none of Open Targets' 24 sets is mvAge's or a lifespan class's;
+  Rosoff's Supplementary Table 10 sets it in neither SuSiE's nor FINEMAP's credible set, its PIPs 0.46 and 0.29). Effector E4: intronic in
   ZBTB46, with ZBTB46 expression sets in Open Targets, but no set of the row's phenotype and no colocalisation read.
   The literature search (the rsID, 2026-11-16; Semantic Scholar answered 429, its part unchecked) finds Rosoff and Zhao
   2024 (PMID 39421797), a Mendelian randomization of diabetes on vitiligo whose abstract does not name the variant; named,
   no side read. Descriptive. Age of action unknown. The evidence is European.
 axes:
-  tier: {value: B, cites: [pmid-37550455#q2, pmid-37550455#q77, pmid-37550455#q78, pmid-30642433#q356, db-ensembl-116#q1174, db-ensembl-116#q1198, db-ensembl-116#q1199, db-opentargets-26.09#q1525, pmid-29227965#q288, pmid-40021682#q227, pmid-31413261#q371, pmid-31413261#q372, db-finngen-r11#q74]}
-  mechanism: {value: metabolism, cites: [db-opentargets-26.09#q1526, db-opentargets-26.09#q1527, db-opentargets-26.09#q1530, db-opentargets-26.09#q1531]}
-  pleiotropy: {values: ["mech:diabetes", "mech:cvd"], cites: [db-opentargets-26.09#q1526, db-opentargets-26.09#q1527, db-opentargets-26.09#q1528, db-opentargets-26.09#q1529, db-opentargets-26.09#q1530, db-opentargets-26.09#q1531, db-opentargets-26.09#q1532, db-opentargets-26.09#q1533]}
+  tier: {value: B, cites: [pmid-30642433#q428, pmid-29227965#q299, pmid-29227965#q300, db-ensembl-116#q1211, db-ensembl-116#q1212, pmid-30642433#q354, pmid-37550455#q2, pmid-37550455#q77, pmid-37550455#q78, pmid-30642433#q356, db-ensembl-116#q1174, db-ensembl-116#q1198, db-ensembl-116#q1199, db-opentargets-26.09#q1525, pmid-29227965#q288, pmid-40021682#q227, pmid-31413261#q371, pmid-31413261#q372, db-finngen-r11#q74]}
+  mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q1564, db-opentargets-26.09#q1565, db-opentargets-26.09#q1566, db-opentargets-26.09#q1567, db-opentargets-26.09#q1526, db-opentargets-26.09#q1528, db-opentargets-26.09#q1530, db-opentargets-26.09#q1532, pmid-37550455#q78]}
+  pleiotropy: {values: ["mech:blood_count"], cites: [db-opentargets-26.09#q1568, db-opentargets-26.09#q1569, db-opentargets-26.09#q1570]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
             cites: [pmid-30642433#q356, pmid-29227965#q288, pmid-29227965#q289, pmid-29227965#q290, pmid-29227965#q291, pmid-40021682#q227, pmid-40021682#q228, pmid-40021682#q229, pmid-31413261#q371, pmid-31413261#q372, db-finngen-r11#q74, pmid-30729179#q138, pmid-40759756#q204, pmid-40759756#q205, pmid-40759756#q206, pmid-40759756#q207, pmid-40759756#q208]}
@@ -64,8 +67,7 @@ variants:
         conclusion: >-
           You carry one copy of the T version of this DNA position (about 31 in 100 people of European ancestry do).
           In a very large combined study of healthy ageing, this version went with ageing a little better, and in
-          related studies with a slightly longer healthy life and longer-lived parents. The same version goes with a
-          slightly lower risk of type 2 diabetes and slightly lower blood pressure. It is a likely finding, not a
+          related studies with a slightly longer healthy life and longer-lived parents. It is a likely finding, not a
           settled one: it has not been confirmed in a separate group of people. The effect is small and it is a
           tendency, not a guarantee.
       - genotype: T/T
@@ -73,8 +75,7 @@ variants:
         conclusion: >-
           You carry two copies of the T version of this DNA position (about 4 in 100 people of European ancestry do).
           In a very large combined study of healthy ageing, this version went with ageing a little better, per copy,
-          and in related studies with a slightly longer healthy life and longer-lived parents. The same version goes
-          with a slightly lower risk of type 2 diabetes and slightly lower blood pressure. It is a likely finding, not
+          and in related studies with a slightly longer healthy life and longer-lived parents. It is a likely finding, not
           a settled one: it has not been confirmed in a separate group of people. The effect is small and it is a
           tendency, not a guarantee.
 studies:

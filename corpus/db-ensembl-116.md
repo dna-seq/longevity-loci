@@ -4170,7 +4170,7 @@ For row 166.
 
 rs6062322 (row 167, the second signal at 99): GRCh38 20:63,810,246, multi-allelic A/C/T, the row meaning A/T (q1195); T at 19.5 % in
 gnomAD's non-Finnish genomes (q1196); intronic, ZBTB46 (q1197). Phase with row 99's lead rs2273500 from 1000 Genomes'
-phased EUR genotypes (population q1174; first lines q1198, q1199), over 1,006 haplotypes (derived): r +0.018, r² 0.000.
+phased EUR genotypes (population q1174; first lines q1198, q1199), over 1,006 haplotypes (derived): rs6062322 T with rs2273500 T (T on 195 and on 859, both on 164), r −0.018, r² 0.000 (D40.5: the earlier "+0.018" named no alleles).
 For row 167.
 
 ## Reading 2026-11-16, record
@@ -4216,3 +4216,14 @@ rs3131621: A at 71.9 % in 1000 Genomes' EUR (q1210), against 67.2 % in gnomAD's 
 Biobank (Pilling, pmid-29227965#q281), 0.627 in Park's UK Biobank file and 0.696 in FinnGen (1 − G's 0.304,
 db-finngen-r11#q132): the HLA region's frequencies differ by sample, and no imputation quality is read (D40.4).
 For row 165.
+
+## Reading 2026-11-16, record
+
+> [q1211] [33] d_prime 0.405622 population_name 1000GENOMES:phase_3:EUR r2 0.067232 variation2 rs73143584 variation1 rs6062322
+
+> [q1212] genotypes[0] sample 1000GENOMES:phase_3:HG00096 gender Male genotype G|G
+
+The window at rs6062322 (row 167, D30.18, D40.5): Ensembl's EUR LD within 500 kb (r² ≥ 0.01) lists one of the 340 Timmers
+lines stronger than rs6062322's, rs73143584, r² 0.067 (q1211). Phased from 1000 Genomes EUR (population q1174; first line
+q1212; over 1,006 haplotypes T on 195, rs73143584's A on 90, both on 49), T with A, r +0.278; rs73143584 A with
+rs2273500 T, r −0.038 (A 90, T 859, both 73) (derived). For row 167.

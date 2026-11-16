@@ -5348,3 +5348,24 @@ Wright's fathers' set at rs15285 (c7200f5a, PICS; q675): 84 members (q1557), its
 in-sample LD reference, a curated top hit (q1558 to q1560). Aragam's coronary set holding rs15285 (16d19589,
 SuSiE-inf; q677): 68 members (q1561), flags: the study has flags, no in-sample LD reference (q1562, q1563). The
 earlier '25 members' read a truncated page (D40.5). For row 166.
+
+## Reading 2026-11-16, record
+
+> [q1564] data.variant.credibleSets.rows[11].locus.rows[0] posteriorProbability 0.022834803678836404
+
+> [q1565] data.variant.credibleSets.rows[2].locus.rows[0] posteriorProbability 0.005805434331805408
+
+> [q1566] data.variant.credibleSets.rows[10].locus.rows[0] posteriorProbability 0.008916597446897096
+
+> [q1567] data.variant.credibleSets.rows[4].locus.rows[0] posteriorProbability 0.006287346619576255
+
+> [q1568] data.variant.credibleSets.rows[6] studyLocusId 6cc72c110cc5d766ea21bb4f72ecff61 pValueMantissa 8.25 pValueExponent -28 beta 0.03811 finemappingMethod PICS
+
+> [q1569] data.variant.credibleSets.rows[6].study id GCST90475470 traitFromSource mean corpuscular volume (MCV, mean, inv-norm transformed) studyType gwas
+
+> [q1570] data.variant.credibleSets.rows[6].locus.rows[0] posteriorProbability 0.9967359006410056
+
+rs6062322's own PIPs in the metabolic sets: type 2 diabetes 0.023 (q1564), systolic pressure 0.0058 (q1565), HbA1c
+0.0089 (q1566), coronary disease 0.0063 (q1567): it leads none, and the βs at q1526 to q1533 are each set lead's,
+not its own. It leads red-cell volume sets: mean corpuscular volume, PICS, β per T +0.038, P 8.3e-28 (q1568,
+q1569), PIP 0.997 (q1570); four more MCV and MCH sets at PIP 0.87 to 0.996 named. For row 167 (D40.5).
