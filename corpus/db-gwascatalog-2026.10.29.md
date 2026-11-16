@@ -2229,3 +2229,11 @@ rs6543176 (row 148): no association in the catalogue. For row 148.
 > [q594] page size 200 totalElements 0 totalPages 0 number 0
 
 rs75571981 (row 151): no association in the catalogue. For row 151.
+
+## Reading 2026-11-16, record
+
+> [q595] _embedded.associations[1] association_id 218986576 risk_frequency NR pvalue_description pvalue_mantissa 3 pvalue_exponent -6 multi_snp_haplotype false snp_interaction false range - or_per_copy_num 0.32 or_value 0.32 beta - p_value 3e-06 accession_id GCST90854193 pubmed_id 41949656 first_author Hsieh MS
+
+> [q596] _embedded.associations[0] association_id 218986602 risk_frequency NR pvalue_description pvalue_mantissa 5 pvalue_exponent -6 multi_snp_haplotype false snp_interaction false range - or_per_copy_num 0.28 or_value 0.28 beta - p_value 4.9999999999999996e-06 accession_id GCST90854194 pubmed_id 41949656 first_author Hsieh MS
+
+rs75737809 (row 152): Hsieh 2026's two lines, OR 0.32, P 3e-6 (q595) and 0.28, P 5e-6 (q596), the effect allele printed as '?'. For row 152.

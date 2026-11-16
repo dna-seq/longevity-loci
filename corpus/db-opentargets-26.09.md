@@ -4466,3 +4466,9 @@ q1231), the variant at PIP 0.024 (q1232), membership only; no lifespan-class set
 > [q1247] data variant null
 
 6_63910997_T_C (rs75571981; row 151): no record, nor under the reversed id. For row 151.
+
+## Reading 2026-11-16, record
+
+> [q1248] data variant null
+
+17_56544129_T_A (rs75737809; row 152): no record, nor under the reversed id. For row 152.

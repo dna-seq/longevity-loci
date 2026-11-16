@@ -3366,3 +3366,18 @@ SLC9A2 on its MANE Select transcript (q920, q921). For row 148.
 rs75571981 (row 151): GRCh38 6:63,910,997 T/C (q922); C at 4.3 % in 1000 Genomes JPT (9 of 208 alleles, q923), 1.0 % in
 gnomAD's East Asian genomes (q924), absent in the non-Finnish Europeans (T at 1, q925); intronic in EYS on its MANE
 Select transcript (NM_001142800.2, q926, q927). For row 151.
+
+## Reading 2026-11-16, record
+
+> [q928] mappings[0] location 17:56544129-56544129 start 56544129 allele_string T/A coord_system chromosome assembly_name GRCh38 ancestral_allele T end 56544129 seq_region_name 17 strand 1
+
+> [q929] populations[0] frequency 0.03228 population gnomADg:eas allele_count 167 allele A
+
+> [q930] populations[1] allele T allele_count 5007 population gnomADg:eas frequency 0.9677
+
+> [q931] populations[9] frequency 2.943e-05 population gnomADg:nfe allele_count 2 allele A
+
+> [q932] [0] start 56544129 end 56544129 seq_region_name 17 most_severe_consequence intergenic_variant id rs75737809 strand 1 allele_string T/A assembly_name GRCh38 input rs75737809
+
+rs75737809 (row 152): GRCh38 17:56,544,129 T/A (q928); A at 3.23 % in gnomAD's East Asian genomes, 167 of 5,174 alleles
+(q929, q930), 0.003 % in the non-Finnish Europeans (q931); intergenic (q932). For row 152.
