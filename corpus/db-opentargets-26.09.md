@@ -4993,3 +4993,37 @@ SH3PXD2A 0.05 (q1413 to q1416); on Li's set STN1 0.87 (q1417 to q1419): E2. For 
 raises it (q1426, q1427); myeloproliferative neoplasms (MTAG): PIP 0.15, no beta (q1428, q1429). Locus-to-gene on
 Wright's set (q1430): TSC22D2 0.33, EIF2A 0.18 (q1431 to q1434); on Terao's TSC22D2 0.43 (q1435 to q1437): no gene
 at 0.5, E3. Monocyte and blood-count sets named, not read. For row 145.
+
+## Reading 2026-11-16, record
+
+> [q1438] data.variant.credibleSets count 6
+
+> [q1439] data.variant.credibleSets.rows[1].study id GCST90014298 traitFromSource DNA methylation PhenoAge acceleration studyType gwas
+
+> [q1440] data.variant.credibleSets.rows[1].locus.rows[0] posteriorProbability 0.9228043613979663 beta 0.14833864639109817 pValueMantissa null pValueExponent null
+
+> [q1441] data.variant.credibleSets.rows[0].study id GCST90475351 traitFromSource high density lipoprotein cholesterol (HDLC, mean, inv-norm transformed) studyType gwas
+
+> [q1442] data.variant.credibleSets.rows[0].locus.rows[0] posteriorProbability 0.8975958710741225 beta -0.01745428330564511 pValueMantissa null pValueExponent null
+
+> [q1443] data.variant.credibleSets.rows[5].study id brainseq_ge_brain_ensg00000060566 traitFromSource ENSG00000060566 studyType eqtl
+
+> [q1444] data.variant.credibleSets.rows[5].locus.rows[0] posteriorProbability 0.9500000099999999 beta -1.07447 pValueMantissa 1.156999945640564 pValueExponent -37
+
+> [q1445] data.credibleSet.study id GCST90014298 traitFromSource DNA methylation PhenoAge acceleration publicationFirstAuthor McCartney DL publicationDate 2021-06-29 nSamples 6148
+
+> [q1446] data.credibleSet.l2GPredictions.rows[0] score 0.43390288949012756
+
+> [q1447] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol CREB3L3
+
+> [q1448] data.credibleSet.study id GCST90475351 traitFromSource high density lipoprotein cholesterol (HDLC, mean, inv-norm transformed) publicationFirstAuthor Verma A publicationDate 2024-07-19 nSamples 113085
+
+> [q1449] data.credibleSet.l2GPredictions.rows[0] score 0.46946200728416443
+
+> [q1450] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol CREB3L3
+
+19_4153569_A_G (rs73538174, row 149; beta per G): 6 credible sets (q1438). McCartney 2021's PhenoAge set: PIP 0.92, G
++0.148 (q1439, q1440): C1. HDL cholesterol (Verma 2024, 113,085 people): PIP 0.90, G −0.017, G lowers HDL (q1441,
+q1442). CREB3L3's expression in brain (BrainSeq): PIP 0.95, G −1.07, P 1.2e-37 (q1443, q1444). Locus-to-gene on the
+PhenoAge set (q1445): CREB3L3 0.43, the only gene (q1446, q1447); on the HDL set CREB3L3 0.47 (q1448 to q1450):
+under 0.5, no colocalisation read, E3. Two other HDL sets and a brain exon set named, not read. For row 149.

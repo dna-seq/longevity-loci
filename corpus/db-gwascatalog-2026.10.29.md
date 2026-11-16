@@ -2717,3 +2717,18 @@ carcinoma (Choquet): C OR 0.938, P 4e-10, so T raises it (q755 to q757); uterine
 
 rs59633341 (row 145): one association (q764), Wright 2017's mosaic loss of chromosome Y, A 0.004 decrease, P 4e-28,
 GCST009375 (q761, q763; trait EFO_0007783, q762). Thompson 2019's lines are not in the Catalog's record. For row 145.
+
+## Reading 2026-11-16, record
+
+> [q765] _embedded.associations[0] association_id 88923910 risk_frequency 0.8201 pvalue_description pvalue_mantissa 6 pvalue_exponent -69 multi_snp_haplotype false snp_interaction false range [2.88-3.61] beta 3.2457 unit decrease p_value 6e-69 accession_id GCST90014298 pubmed_id 34187551 first_author McCartney DL ci_lower 2.88 ci_upper 3.61
+
+> [q766] _embedded.associations[0].efo_traits[0] efo_id EFO_0022597 efo_trait aging
+
+> [q767] _embedded.associations[0].reported_trait[0] DNA methylation PhenoAge acceleration
+
+> [q768] _embedded.associations[0].snp_effect_allele[0] rs73538174-A
+
+> [q769] page size 200 totalElements 1 totalPages 1 number 0
+
+rs73538174 (row 149): one association (q769), McCartney 2021's DNA methylation PhenoAge acceleration, A (0.82) 3.2457
+decrease, P 6e-69 (q765, q767, q768); trait EFO_0022597 (q766). For row 149.

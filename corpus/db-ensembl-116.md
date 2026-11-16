@@ -3859,3 +3859,21 @@ rs59633341 (row 145): an indel at GRCh38 3:150,301,094, T/TT, T ancestral (q1090
 84.9 % in gnomAD's non-Finnish European genomes (q1091, q1092); intronic in LINC01214's canonical transcript, a lncRNA
 (q1093, q1094), with no TSC22D2 transcript within VEP's reach. The papers' A (short) and AT (long) are Ensembl's T and
 TT. For row 145.
+
+## Reading 2026-11-16, record
+
+> [q1095] mappings[0] location 19:4153569-4153569 start 4153569 allele_string A/G coord_system chromosome ancestral_allele A end 4153569 assembly_name GRCh38 seq_region_name 19 strand 1
+
+> [q1096] populations[34] allele_count 7923 allele G frequency 0.1914 population gnomADg:afr
+
+> [q1097] populations[35] allele A allele_count 33469 frequency 0.8086 population gnomADg:afr
+
+> [q1098] populations[30] population gnomADg:nfe frequency 0.0004267 allele_count 29 allele G
+
+> [q1099] [0].transcript_consequences[0] hgnc_id HGNC:18855 distance 62 biotype protein_coding mane_select NM_032607.3 transcript_id ENST00000078445 impact MODIFIER canonical 1 variant_allele G gene_id ENSG00000060566 gene_symbol CREB3L3 gene_symbol_source HGNC strand 1
+
+> [q1100] [0].transcript_consequences[0].consequence_terms[0] upstream_gene_variant
+
+rs73538174 (row 149): GRCh38 19:4,153,569 A/G, A ancestral (q1095); G at 19.1 % and A at 80.9 % in gnomAD's
+African/African American genomes (q1096, q1097), G at 0.04 % in the non-Finnish Europeans (q1098); 62 bp upstream of
+CREB3L3's MANE transcript, NM_032607.3 (q1099, q1100). For row 149.

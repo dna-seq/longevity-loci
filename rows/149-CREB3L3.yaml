@@ -1,0 +1,96 @@
+# The seed list's locus 149, CREB3L3 (19p13.3): a marker of biological ageing (D32, D36.3), curated on D37.12 with 23
+# TERC as the pattern. Curated 2026-11-16. Lead rs73538174, the seed's rsID (McCartney 2021's African American PhenoAge
+# locus): 62 bp upstream of CREB3L3's MANE transcript, GRCh38 19:4,153,569 A/G, GRCh37 19:4,153,566, A ancestral; G at
+# 19.1 % in gnomAD's African/African American genomes and 0.04 % in the non-Finnish Europeans. A is the allele with
+# slower PhenoAge.
+locus_id: 149
+locus_name: CREB3L3
+verdict: kept
+verdict_reason: >-
+  Tier B on the marker's own evidence (D37.12; the seed gives none): the tier grades the association with PhenoAge
+  acceleration, a DNA methylation clock read against calendar age, not longevity, and this row is unscored (D32).
+  McCartney 2021's GWAS of epigenetic clocks in 34,710 Europeans and 6,195 African Americans finds rs73538174 in the
+  African American analysis alone: its Table S4 prints A, the effect allele (the legend's refA), at 0.82, PhenoAge
+  acceleration 3.25 years lower per A (SE 0.18), P 5.6e-69, effective n 4,480 in five cohorts, I² 0 %, every cohort
+  with data the same way; the joint estimate −2.85. The GWAS Catalog's record (A 3.2457 decrease, P 6e-69) is the same
+  line. Genome-wide in one sample, unreplicated in a sample of its own (none found): §4.1's B. G is all but absent in
+  Europeans, so the European deposits hold no line: Deelen 2019, Timmers 2019, Pilling 2017, Zenin 2019, Foote 2025
+  and FinnGen R11 (by rsID and GRCh37 19:4,153,566): untested. Park 2025's white British survival deposit holds it,
+  flat: A −0.0075 (SE 0.032), P 0.82 (men 0.69, women 0.99), from about 180 carriers of G. The literature search (the
+  rsID and the gene with the clock, 2026-11-16; Semantic Scholar answered 429, its part unchecked) finds no paper on
+  this variant beyond McCartney's. Every genotype neutral, each conclusion a tendency of the marker with no colour
+  (D32, D37.12); `direction: unknown`. Outcome cells read for A: lifespan 0 (Park flat, few carriers); healthspan and
+  exceptional survival untested. Mechanism: markers of biological ageing; CREB3L3 is a liver transcription factor of
+  fat metabolism (the author). Pleiotropy `mech:lipids`: G lowers HDL cholesterol (Open Targets, Verma 2024's 113,085
+  people, PIP 0.90), named; no `tradeoff`, the row naming no longevity-favoured allele. Causal C1 (PIP 0.92 in
+  McCartney's PhenoAge set). Effector E3, CREB3L3: locus-to-gene 0.43, the only gene listed (0.47 on the HDL set), the
+  variant just upstream of CREB3L3 and in its brain expression set at PIP 0.95, G with lower expression (no
+  colocalisation read), so under E2's bar. Descriptive. Age of action unknown. The evidence is African American, as
+  `ancestry_specific:afr`.
+axes:
+  tier: {value: B, cites: [pmid-34187551#q1, pmid-34187551#q2, pmid-34187551#q6, pmid-34187551#q7, pmid-34187551#q8, pmid-34187551#q12, db-gwascatalog-2026.10.29#q765, db-gwascatalog-2026.10.29#q767, db-gwascatalog-2026.10.29#q768, db-gwascatalog-2026.10.29#q769]}
+  mechanism: {value: ageing_markers, cites: [pmid-34187551#q2, db-gwascatalog-2026.10.29#q766]}
+  pleiotropy: {values: ["mech:lipids"], cites: [db-opentargets-26.09#q1441, db-opentargets-26.09#q1442, db-opentargets-26.09#q1448]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: untested, lifespan: "0", exceptional_survival: untested,
+            cites: [pmid-40021682#q197, pmid-40021682#q198, pmid-40021682#q199, db-ensembl-116#q1098]}
+  actionability: {label: descriptive, cites: [pmid-34187551#q12]}
+  context: {values: ["ancestry_specific:afr"], cites: [pmid-34187551#q2, pmid-34187551#q12, db-ensembl-116#q1096, db-ensembl-116#q1097, db-ensembl-116#q1098]}
+flags:
+  - {token: "causal:C1", cites: [db-opentargets-26.09#q1438, db-opentargets-26.09#q1439, db-opentargets-26.09#q1440]}
+  - {token: "effector:E3", cites: [db-opentargets-26.09#q1445, db-opentargets-26.09#q1446, db-opentargets-26.09#q1447, db-opentargets-26.09#q1448, db-opentargets-26.09#q1449, db-opentargets-26.09#q1450, db-opentargets-26.09#q1443, db-opentargets-26.09#q1444, db-ensembl-116#q1099, db-ensembl-116#q1100]}
+variants:
+  - rsid: rs73538174
+    gene: CREB3L3
+    phenotype: CREB3L3 upstream, PhenoAge acceleration
+    trait_efo_id: EFO_0022597
+    effect_allele: A
+    effect_size: -3.2457
+    effect_measure: beta
+    stat_significance: significant
+    direction: unknown
+    genotypes:
+      - genotype: A/A
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position, as nearly everyone of European ancestry and
+          about 65 in 100 people of African ancestry do. It is the reference the other combinations are compared with.
+          The position lies just before the CREB3L3 gene on chromosome 19. Epigenetic clocks estimate age from chemical
+          marks on DNA; a clock's reading only means something against your calendar age, which this report does not
+          have, so this result carries no score.
+      - genotype: A/G
+        state: neutral
+        conclusion: >-
+          You carry one copy of the G version of this DNA position (about 31 in 100 people of African ancestry do,
+          almost no one of European ancestry). One study of African American adults linked it with a PhenoAge
+          epigenetic clock reading about three years older than calendar age, on average. That is a tendency in a
+          marker whose reading only means something against your calendar age, which this report does not have, so it
+          carries no score.
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the G version of this DNA position, found in about 4 in 100 people of African
+          ancestry and almost no one of European ancestry. One study of African American adults linked each copy of G
+          with a PhenoAge epigenetic clock reading about three years older than calendar age. That is a tendency in a
+          marker whose reading only means something against your calendar age, which this report does not have, so it
+          carries no score.
+studies:
+  - rsid: rs73538174
+    note: pmid-34187551
+    quote: q12
+    phenotype_class: BIOMARKER
+    study_design: meta_analysis
+    population: African American (McCartney 2021's five African American cohorts with this SNP)
+    ancestry: [AFR]
+    sample_size: 4480
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "5.56177e-69"
+    p_value_num: 5.56177e-69
+    effect_size: -3.2457
+    effect_measure: beta
+    effect_unit: years of PhenoAge acceleration per A allele
+    effect_allele: A
+    direction: unknown
+    statistical_test: "McCartney 2021's GWAS meta-analyses of epigenetic clocks (q1, q2); Table S4 (caption q6, legend q7, header q8): African American PhenoAge acceleration, rs73538174 refA A (0.82) b −3.2457, SE 0.1849, P 5.6e-69, effective n 4,480 in five cohorts, I² 0, joint −2.85 (q12); the sample size is the effective n; the GWAS Catalog's record (db-gwascatalog-2026.10.29#q765 to q768) the same line; a marker study (D32, D37.12)"
+    curator: claude-opus-5-5
