@@ -23,14 +23,14 @@ verdict_reason: >-
   error, a branch named), but Kolbe's controls pooled over rows 120, 124 and 125 show 1 copy where 8.3 are expected (P 0.0024, derived), so
   by D34.7 every rare row of the paper is read against the reference, as 107: the long-lived show 5
   where 1.2 are expected, OR 4.25 (exact Poisson P 0.0072, derived), and the paper's own OR against gnomAD is 4.19,
-  with its caveat that gnomAD's non-Finnish Europeans are mostly British; the printed 36.3 is named, not read. By the printed percentages and the long-lived's 2.7:1 women to
+  with its caveat that gnomAD's non-Finnish Europeans are mostly British; the printed 36.3 is named, not read. Kolbe chose its hits from about 98,000 rare variants, so a reference OR still carries that selection, uncorrected (D34.14). By the printed percentages and the long-lived's 2.7:1 women to
   men, about 2 copies in 336 men (0.32 expected from gnomAD, P 0.041) and 3 in 909 women (0.86 expected, P 0.056)
   (derived): both sexes here, though men's share (2 of 5) is above
   their 27 % of the long-lived, and pooled over Kolbe's rows 107, 120, 121, 124, 125 and 126 about 24 of 35 long-lived
   copies are in men (derived), named, no token. No
   look-up tests it: the Ashkenazi sample holds only three of the seven variants, not this one, and none of the Leiden
   carriers named is this one (179 long-lived and 98 controls expect 0.17 and 0.09 copies). At 0.05 % the insertion is
-  absent from every large sample read here: FinnGen R11's deaths, Deelen 2019 (whose 17:46,801,724 line is a
+  absent from every large sample read here: FinnGen R11's deaths (its variant lookup answered 404, no record, 2026-11-16, db-finngen-r11), Deelen 2019 (whose 17:46,801,724 line is a
   neighbouring SNV, not this insertion, and whose strongest window lines, 17:46,831,261 at 0.01 and 17:47,164,186 at
   0.04, P 0.0017 and 5.6e-4, cannot tag it), Timmers 2019, Pilling 2017, Zenin 2019, Park 2025 and Foote 2025; Wright
   2019's strongest line within 500 kb, the mothers' rs9899580 305 kb away (P 5.6e-6), is common and cannot tag it:

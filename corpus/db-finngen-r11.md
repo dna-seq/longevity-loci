@@ -737,3 +737,11 @@ FinnGen R11's DEATH endpoint at rs3138136 (row 136): T (0.056) β +0.0058 (SE 0.
 
 FinnGen R11's DEATH endpoint at rs34459993 (row 137): C (0.128) β +0.0029 (SE 0.0111), P 0.80: flat. A database line
 (D29.1). For row 137.
+
+## Reading 2026-11-16, record
+
+FinnGen R11's PheWeb variant API (`/api/variant/CHROM-POS-REF-ALT`, 2026-11-16) answered 404, no record, for
+17-48724360-T-TG (rs199607933 as Kolbe prints it, row 125), for 17-48724361-G-GG (the same insertion in Ensembl's
+form, row 125) and for 9-20770090-G-A (rs199678370, row 126); the same call answered 200 for 12-55723786-C-T (q99), so
+the API worked and these variants are absent from the release. Nothing to quote: both rows' FinnGen look stays
+untested, not negative. For rows 125 and 126.
