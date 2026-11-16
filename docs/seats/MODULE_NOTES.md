@@ -278,3 +278,9 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
   variant rows, 657 studies, every rsID resolved. The export writes 162's variant and studies as any row's, and
   `second_signal_of` appears nowhere: not in a column, a flag token or the export's summary of what 0.8 has no
   place for. also_loci is handled the same way today. Put to the lead (export.py is the lead's).
+
+- 2026-11-16, trial at 41afdf7 (second signals 162 to 169 filed; batch seventeen's adversarial read open, 162 and
+  165's moves held): strict green, never published. variants 489, studies 679, haplotypes 6, diplotypes 12;
+  245 subjects resolved, none unresolved, no ref or allele mismatch. Warnings as at ed22ea4: vrs_id_unverifiable
+  20 lines (no new indel), module_not_closed, dataset_currency. The export names second_signal_of for 8 rows
+  (25 ×2, 28, 37, 52, 53, 82, 99). The real rebuild waits for the lead to close batch seventeen.
