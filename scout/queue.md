@@ -1,8 +1,8 @@
 # Queue
 
-New papers bearing on a seed locus (`docs/longevitymap_v2/data/seed_variants.csv`; `rows/` holds none yet), for the
+New papers bearing on a seed locus (`docs/longevitymap_v2/data/seed_variants.csv`), for the
 curator. Each entry: the locus, one line on why, the passage that says it (verbatim, with where and when it was
-read), and every identifier the paper has. The curator takes it from here; the scout never tiers a row.
+read), and every identifier the paper has. The curator takes it from here; the scout never tiers a row. An entry the curator has taken says so in a **Taken** line naming its row.
 
 ## Open
 
@@ -25,6 +25,8 @@ read), and every identifier the paper has. The curator takes it from here; the s
 
 ### rs13141210 at locus 28 RNU1-63P (4q13.2): a second mvAge signal, candidate row (D25.6)
 
+- **Taken:** row 162 RNU6-699P, `second_signal_of` 28 (D39.14; 352bfc5, tier C under D39.15 in a5d568c).
+
 - **Paper:** Rosoff DB et al. "Multivariate genome-wide analysis of aging-related traits identifies novel loci and new
   drug targets for healthy aging." *Nat Aging*, 2023 Aug. PMID 37550455, PMC10432278, doi 10.1038/s43587-023-00455-5
   (title checked against PubMed 2026-11-11). Corpus note `corpus/pmid-37550455.md`. From the curator, 2026-11-11.
@@ -38,6 +40,8 @@ read), and every identifier the paper has. The curator takes it from here; the s
 
 ### rs16843603 (ADD1) at locus 25 HTT (4p16.3): a second mvAge signal, candidate row (D25.6)
 
+- **Taken:** row 163 ADD1, `second_signal_of` 25 (D39.14; 4f0bb15, tier C under D39.15).
+
 - **Paper:** Rosoff 2023, as above (PMID 37550455). From the curator, 2026-11-11.
 - **Why:** a genome-wide mvAge lead in an ADD1 intron, r² 0.095 to row 25's lead rs61348208, so a separate signal; a
   seed rsID with no seed locus of its own. Row 25 names it in prose; D25.6 sends it here.
@@ -46,6 +50,8 @@ read), and every identifier the paper has. The curator takes it from here; the s
 - **Unknown:** its own tier; whether any lifespan study carries it outside mvAge's inputs (D16).
 
 ### rs114298671 (MSANTD1/RGS12) at locus 25 HTT (4p16.3): a third mvAge signal, candidate row (D25.6)
+
+- **Taken:** row 164 MSANTD1, `second_signal_of` 25 (D39.14; 4f0bb15, tier C under D39.15).
 
 - **Paper:** Rosoff 2023, as above (PMID 37550455). From the curator, 2026-11-11.
 - **Why:** a genome-wide mvAge lead near MSANTD1, novel in Rosoff, r² 0.08 to row 25's lead rs61348208, so a separate
@@ -56,6 +62,8 @@ read), and every identifier the paper has. The curator takes it from here; the s
   rs71597207, with rs16843603's set above, so whether the two are wholly separate is unsettled here.
 
 ### rs3131621 (MICA … MICB / HCP5) at locus 37 HCP5 (6p21.33): the fathers' signal, candidate row (D25.6)
+
+- **Taken:** row 165 MICA/MICB, `second_signal_of` 37 (D39.14; b3f3ebc, tier C under D39.15).
 
 - **Paper:** Pilling LC et al. "Human longevity: 25 genetic loci associated in 389,166 UK biobank participants."
   *Aging (Albany NY)*, 2017. PMID 29227965. Replication: Wright KM et al., *G3*, 2019, PMID 31484785. Corpus notes
