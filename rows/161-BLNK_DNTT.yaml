@@ -1,0 +1,89 @@
+# The seed list's locus 161, BLNK/DNTT (10q24.1): a marker of biological ageing (D32, D36.3), curated on D37.12 with 23
+# TERC as the pattern. Curated 2026-11-16. Lead rs941997, the seed's rsID (McCartney 2021's European Hannum locus):
+# between genes, 1.6 kb upstream of a lncRNA, GRCh38 10:96,287,079 A/T, GRCh37 10:98,046,836, A ancestral; T at 21.1 %
+# in gnomAD's non-Finnish European genomes. T is the allele with slower Hannum age.
+locus_id: 161
+locus_name: BLNK/DNTT
+verdict: kept
+verdict_reason: >-
+  Tier B on the marker's own evidence (D37.12; the seed gives none): the tier grades the association with Hannum age
+  acceleration, a DNA methylation clock read against calendar age, not longevity, and this row is unscored (D32).
+  McCartney 2021's GWAS of epigenetic clocks in 34,710 Europeans and 6,195 African Americans prints rs941997 in its
+  European Hannum analysis: Table S4 has T, the effect allele (the legend's refA), at 0.22, Hannum age acceleration
+  0.35 years lower per T (SE 0.036), P 8.8e-22, effective n 29,905 in 24 cohorts, I² 44 %, two cohorts the other way;
+  the joint estimate the same. The GWAS Catalog's record (T 0.3481 decrease, P 9e-22) is the same line, the only one it
+  holds. Genome-wide in one study of under 100k, unreplicated in a sample of its own (none found): §4.1's B. Lifespan
+  look-ups, unscored and read for T, two-sided at 0.05 (D38.6), all flat: Timmers 2019 A beta1 −0.0037 (SE 0.0048), P
+  0.44; Pilling 2017's parents P 0.2 to 0.76; Park 2025's own survival P 0.86 (men 0.37, women 0.42); Deelen 2019 90th
+  P 0.17, 99th P 0.084; FinnGen R11's deaths P 0.42, a database line; Zenin 2019's healthspan P 0.84; Foote 2025's
+  general factor and factors 1, 2, 3, 5 and 6 P 0.27 to 0.82 (factor 4 holds no line). The literature search (the
+  rsID, 2026-11-16) finds nothing. Every genotype neutral, each conclusion a tendency of the marker with no colour
+  (D32, D37.12); `direction: unknown`. Outcome cells read for T: exceptional survival 0 (Deelen flat); lifespan 0
+  (Timmers, Pilling, Park and FinnGen flat); healthspan 0 (Zenin and Foote flat). Mechanism: markers of biological
+  ageing. No pleiotropy read: the Catalog holds the clock line alone. Causal C4: no clock's credible set in Open
+  Targets holds it, its one set a brain splicing QTL at PIP 0.08. Effector E4: no gene named; BLNK and DNTT are the
+  seed's names for the region. Descriptive. Age of action unknown. The evidence is European.
+axes:
+  tier: {value: B, cites: [pmid-34187551#q1, pmid-34187551#q2, pmid-34187551#q6, pmid-34187551#q7, pmid-34187551#q8, pmid-34187551#q11, db-gwascatalog-2026.10.29#q770, db-gwascatalog-2026.10.29#q772, db-gwascatalog-2026.10.29#q773, db-gwascatalog-2026.10.29#q774, db-ensembl-116#q1101, db-ensembl-116#q1102, db-ensembl-116#q1103]}
+  mechanism: {value: ageing_markers, cites: [pmid-34187551#q2, db-gwascatalog-2026.10.29#q771]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
+            cites: [pmid-30642433#q419, pmid-29227965#q252, pmid-29227965#q253, pmid-29227965#q254, pmid-29227965#q255, pmid-40021682#q200, pmid-40021682#q201, pmid-40021682#q202, db-finngen-r11#q123, pmid-31413261#q352, pmid-31413261#q353, pmid-30729179#q182, pmid-40759756#q168, pmid-40759756#q169, pmid-40759756#q170, pmid-40759756#q171, pmid-40759756#q172, pmid-40759756#q173]}
+  actionability: {label: descriptive, cites: [pmid-34187551#q11]}
+  context: {values: [], cites: []}
+flags:
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1451, db-opentargets-26.09#q1452, db-opentargets-26.09#q1453]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q1451, db-ensembl-116#q1104, db-ensembl-116#q1105]}
+variants:
+  - rsid: rs941997
+    gene: ""
+    phenotype: BLNK/DNTT intergenic, Hannum age acceleration
+    trait_efo_id: EFO_0022597
+    effect_allele: T
+    effect_size: -0.3481
+    effect_measure: beta
+    stat_significance: significant
+    direction: unknown
+    genotypes:
+      - genotype: A/A
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position (about 62 in 100 people of European ancestry
+          do). It is the reference the other combinations are compared with. The position lies between genes on
+          chromosome 10. Epigenetic clocks estimate age from chemical marks on DNA; a clock's reading only means
+          something against your calendar age, which this report does not have, so this result carries no score.
+      - genotype: A/T
+        state: neutral
+        conclusion: >-
+          You carry one copy of the T version of this DNA position (about 33 in 100 people of European ancestry do).
+          Large studies link it with a Hannum epigenetic clock reading about a third of a year lower than expected for
+          your age. That is a tendency in a marker whose reading only means something against your calendar age, which
+          this report does not have, so it carries no score.
+      - genotype: T/T
+        state: neutral
+        conclusion: >-
+          You carry two copies of the T version of this DNA position (about 4 in 100 people of European ancestry do).
+          Large studies link each copy of T with a Hannum epigenetic clock reading about a third of a year lower than
+          expected for your age. That is a tendency in a marker whose reading only means something against your
+          calendar age, which this report does not have, so it carries no score.
+studies:
+  - rsid: rs941997
+    note: pmid-34187551
+    quote: q11
+    phenotype_class: BIOMARKER
+    study_design: meta_analysis
+    population: European (McCartney 2021's 24 European cohorts with this SNP)
+    ancestry: [EUR]
+    sample_size: 29905
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "8.84857e-22"
+    p_value_num: 8.84857e-22
+    effect_size: -0.3481
+    effect_measure: beta
+    effect_unit: years of Hannum age acceleration per T allele
+    effect_allele: T
+    direction: unknown
+    statistical_test: "McCartney 2021's GWAS meta-analyses of epigenetic clocks (q1, q2); Table S4 (caption q6, legend q7, header q8): European Hannum age acceleration, rs941997 refA T (0.22) b −0.3481, SE 0.0363, P 8.8e-22, effective n 29,905 in 24 cohorts, I² 44 % (q11); the sample size is the effective n; the GWAS Catalog's record (db-gwascatalog-2026.10.29#q770 to q773) the same line; a marker study (D32, D37.12)"
+    curator: claude-opus-5-5

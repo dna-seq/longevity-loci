@@ -5027,3 +5027,14 @@ at 0.5, E3. Monocyte and blood-count sets named, not read. For row 145.
 q1442). CREB3L3's expression in brain (BrainSeq): PIP 0.95, G −1.07, P 1.2e-37 (q1443, q1444). Locus-to-gene on the
 PhenoAge set (q1445): CREB3L3 0.43, the only gene (q1446, q1447); on the HDL set CREB3L3 0.47 (q1448 to q1450):
 under 0.5, no colocalisation read, E3. Two other HDL sets and a brain exon set named, not read. For row 149.
+
+## Reading 2026-11-16, record
+
+> [q1451] data.variant.credibleSets count 1
+
+> [q1452] data.variant.credibleSets.rows[0].study id gtex-v10_leafcutter_brain_amygdala_10_96353528_96355255_clu_55334_- traitFromSource 10:96353528:96355255:clu_55334_- studyType sqtl
+
+> [q1453] data.variant.credibleSets.rows[0].locus.rows[0] posteriorProbability 0.08253889492260463 beta 0.619463 pValueMantissa 3.365999937057495 pValueExponent -7
+
+10_96287079_A_T (rs941997, row 161): one credible set (q1451), a brain amygdala splicing QTL (GTEx v10), PIP 0.08
+(q1452, q1453). No Hannum or other clock set holds it: C4, and no gene to name, E4. For row 161.

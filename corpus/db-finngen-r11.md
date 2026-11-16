@@ -877,3 +877,9 @@ FinnGen R11's DEATH endpoint at rs9419958 (row 160): C (alt, 88 % in Finns) β +
 > [q122] 3 150301093 A AT rs59633341,rs397689554 LINC01214 0.241211 0.617603 0.0123282 0.0105192 0.854198 0.85714 0.85383
 
 FinnGen R11's DEATH endpoint at rs59633341 (row 145): A>AT at GRCh38 3:150,301,093, AT (alt, 85 % in Finns) β +0.0123 (SE 0.0105), P 0.24, flat. A database line (D29.1, D35.1). For row 145.
+
+## Reading 2026-11-16, record
+
+> [q123] 10 96287079 A T rs941997 RP11-35J23.1 0.423699 0.372943 -0.00687355 0.00859172 0.245904 0.246643 0.245811
+
+FinnGen R11's DEATH endpoint at rs941997 (row 161): T (alt, 24.6 % in Finns) β −0.0069 (SE 0.0086), P 0.42, flat. A database line (D29.1, D35.1). For row 161.

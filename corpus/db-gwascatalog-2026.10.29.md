@@ -2732,3 +2732,18 @@ GCST009375 (q761, q763; trait EFO_0007783, q762). Thompson 2019's lines are not 
 
 rs73538174 (row 149): one association (q769), McCartney 2021's DNA methylation PhenoAge acceleration, A (0.82) 3.2457
 decrease, P 6e-69 (q765, q767, q768); trait EFO_0022597 (q766). For row 149.
+
+## Reading 2026-11-16, record
+
+> [q770] _embedded.associations[0] association_id 88923156 risk_frequency 0.2193 pvalue_description pvalue_mantissa 9 pvalue_exponent -22 multi_snp_haplotype false snp_interaction false range [0.28-0.42] beta 0.3481 unit decrease p_value 9e-22 accession_id GCST90014289 pubmed_id 34187551 first_author McCartney DL ci_lower 0.28 ci_upper 0.42
+
+> [q771] _embedded.associations[0].efo_traits[0] efo_id EFO_0022597 efo_trait aging
+
+> [q772] _embedded.associations[0].reported_trait[0] DNA methylation Hannum age acceleration
+
+> [q773] _embedded.associations[0].snp_effect_allele[0] rs941997-T
+
+> [q774] page size 200 totalElements 1 totalPages 1 number 0
+
+rs941997 (row 161): one association (q774), McCartney 2021's DNA methylation Hannum age acceleration, T (0.22) 0.3481
+decrease, P 9e-22 (q770, q772, q773); trait EFO_0022597 (q771). For row 161.

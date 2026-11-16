@@ -3877,3 +3877,19 @@ TT. For row 145.
 rs73538174 (row 149): GRCh38 19:4,153,569 A/G, A ancestral (q1095); G at 19.1 % and A at 80.9 % in gnomAD's
 African/African American genomes (q1096, q1097), G at 0.04 % in the non-Finnish Europeans (q1098); 62 bp upstream of
 CREB3L3's MANE transcript, NM_032607.3 (q1099, q1100). For row 149.
+
+## Reading 2026-11-16, record
+
+> [q1101] mappings[0] coord_system chromosome allele_string A/T seq_region_name 10 end 96287079 start 96287079 strand 1 assembly_name GRCh38 ancestral_allele A location 10:96287079-96287079
+
+> [q1102] populations[2] frequency 0.7887 allele_count 53566 allele A population gnomADg:nfe
+
+> [q1103] populations[3] population gnomADg:nfe allele T allele_count 14354 frequency 0.2113
+
+> [q1104] [0].transcript_consequences[0] variant_allele T transcript_id ENST00000741880 canonical 1 gene_id ENSG00000296772 distance 1634 biotype lncRNA impact MODIFIER strand -1
+
+> [q1105] [0].transcript_consequences[0].consequence_terms[0] upstream_gene_variant
+
+rs941997 (row 161): GRCh38 10:96,287,079 A/T, A ancestral (q1101); A at 78.9 % and T at 21.1 % in gnomAD's non-Finnish
+European genomes (q1102, q1103); 1.6 kb upstream of a lncRNA, between genes, with no protein-coding transcript within
+VEP's reach (q1104, q1105). For row 161.
