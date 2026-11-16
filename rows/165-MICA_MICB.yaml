@@ -7,34 +7,46 @@ locus_name: MICA/MICB
 second_signal_of: 37
 verdict: kept
 verdict_reason: >-
-  Tier C (D39.15, D39.17): genome-wide in Pilling 2017's UK Biobank
-  fathers at the marginal (A −0.0124 on attained age, SE 0.0022, P 3.6e-8; both parents 8.9e-8), but conditioned on row
-  37's lead in the coupling the phase gives it falls just short (z 5.51 to 5.39, P 7e-8, derived), so the discovery's
-  own independent part is sub-genome-wide (R-TIER-4). Independence (D39.14, D39.15): no article prints a conditional
-  analysis and Open Targets has no record of the variant; from 1000 Genomes' phased EUR haplotypes its A travels with
-  rs3130507's longer-life G (r +0.226, r² 0.051), and in the fathers rs3130507 is weak (z 1.14), so the signal survives
-  conditioning almost whole: no tag of 37's lead. It replicates in an independent sample: AncestryDNA's fathers in
-  Wright 2019 put A on the longer-lived side, −0.0106 (SE 0.0032), P 7.7e-4, the UK Biobank arm the same side
-  (heterogeneity P 0.35), meta P 8.9e-9 (Table 3); AncestryDNA's mothers are flat (P 0.72). D39.17 lets Wright's published meta (z 5.75 at the marginal) anchor the conditional, B if it stays under 5e-8 with 37's lead's own effect in both of the meta's arms quoted. Those are not printed: Table 9's fathers' rows list SNPs at meta P under 2.5e-3 only, and neither rs3130507 nor its tags rs3130467 and rs1265159 are among them, so its meta |z| is below about 3.0 and its AncestryDNA arm is unknown. At that bound the meta's conditional is z 5.20 (P 2e-7); with UK Biobank's z 1.14 alone it would be 5.64 (P 1.7e-8) (derived). The quoted arms D39.17 asks for are missing, so C stands; a printed fathers' line for 37's lead in AncestryDNA would settle it. If B, AncestryDNA sits inside the anchor and replicates nothing (D39.17). Timmers 2019's pooled parents agree (A beta1
-  +0.0202, SE 0.0042, P 1.9e-6, "++"), UK Biobank inside. Deelen 2019 is flat (90th OR 1.0004, P 0.99; 99th 0.998, P
-  0.96), a flag under APOE's factor only (mean factor power about 0.65), so none (D26.3). Park 2025's own survival leans
-  A's way, flat (P 0.16; men 0.50, women 0.17); FinnGen R11's deaths A fewer, one-sided 0.08, a database line. The
-  fathers carry it in Pilling (mothers P 3.5e-5 the same side), but no test of the difference is read and AncestryDNA's
-  mothers are flat: named, no token. Outcome cells read for A: lifespan + (Pilling, Timmers, AncestryDNA's fathers);
-  exceptional survival 0 (Deelen flat; Pilling's top 10 % flat, P 0.48); healthspan + (Zenin 2019, A the later end,
-  one-sided 0.029; Foote 2025's deposits hold no line). Mechanism general ageing, as row 37. No pleiotropy token: the
+  Tier B (D39.18, D40.4); A waits on the mothers' test. In Pilling 2017's UK Biobank fathers rs3131621 is the stronger
+  line (z 5.51 against row 37's lead's 1.14), so it is read at its marginal: A −0.0124 on attained age (SE 0.0022), P
+  3.6e-8, Table 2, the paper's own call (both parents 8.9e-8). AncestryDNA's fathers in Wright 2019 are outside that
+  anchor, and their line is Wright's Supplemental Table 8, filtered on their own arm (D29.18): A on the longer-lived
+  side, −0.0106 for G on Table 8's scale (A +0.0106), P 7.7e-4 raw and 0.002 after genomic control (D26.1), an
+  independent replication on the same allele. The smaller-effect clause does not fire (0.86 times the anchor's
+  effect, heterogeneity P 0.65). No father–mother difference is shown (every test P 0.06 or more after correction),
+  so no sex token, and AncestryDNA's mothers then test the same effect: flat (−0.0012, P 0.72), and Wright prints the
+  mothers' heterogeneity as P 0.031 (Table 9), a D21 flag at power 0.86. That flag holds A back: the readings that
+  clear it (0.049 from the raw arms, 0.058 after genomic control, 0.22 with UK Biobank's mothers conditioned on 37's
+  lead) do not reproduce the printed figure, and conditioning AncestryDNA's mothers needs 37's lead's AncestryDNA arm,
+  which no source prints (D39.9, D39.15). A, once a quoted figure clears the mothers' test. Independence (D39.14): no
+  article prints a conditional analysis and Open Targets has no record of the variant; from 1000 Genomes' phased EUR
+  haplotypes its A travels with rs3130507's longer-life G (r +0.226, r² 0.051), and conditioned on 37's lead it keeps z
+  5.39 in Pilling's fathers (derived): no tag. Wright's AncestryDNA–UK Biobank fathers' meta is genome-wide too (P
+  8.9e-9, Table 3), named; it holds the replication, so it is not the anchor here (D40.4 amends D39.17 for this row).
+  Timmers 2019's pooled parents agree (A beta1 +0.0202, SE 0.0042, P 1.9e-6, "++"), UK Biobank inside. Deelen 2019 is
+  flat (90th OR 1.0004, P 0.99; 99th 0.998, P 0.96), a flag under APOE's factor only (mean factor power about 0.65),
+  so none (D26.3). Park 2025's own survival leans A's way, flat (P 0.16; men 0.50, women 0.17); FinnGen R11's deaths
+  A fewer, one-sided 0.08, a database line. Outcome cells read for A: lifespan + (Pilling, AncestryDNA's fathers,
+  Timmers); exceptional survival 0 (Deelen flat; Pilling's top 10 % flat, P 0.48); healthspan 0 (D40.4: in Zenin 2019
+  37's lead is the stronger line, z 2.19 against 1.90, and rs3131621 conditioned on it is z 1.44, one-sided 0.075,
+  derived; Foote 2025's deposits hold no line). HLA caveats: A's frequency differs by sample (0.629 in UK Biobank,
+  0.627 in Park's file, 0.672 in gnomAD's non-Finnish genomes, 0.696 in FinnGen, 0.719 in 1000 Genomes EUR), and the
+  imputation quality at this MHC site is unknown. Mechanism general ageing, as row 37. No pleiotropy token: the
   Catalog's rheumatoid arthritis or IBD line (P 2e-13) prints no allele, so no side can be read, named. Causal C4 and
-  effector E4: Open Targets 26.09 has no record of the variant; MICA and MICB name the region. The literature search (the rsID, 2026-11-16; Semantic Scholar answered 429, its part unchecked) finds Pilling, Wright and reviews, and Wang 2023 (PMID 37440754), whose abstract names rs3131621 among three HLA SNPs with a two- to threefold risk of primary sclerosing cholangitis in ulcerative colitis, its allele not given there: named, abstract only, no side read. Descriptive. Age of action unknown. The evidence is
-  European.
+  effector E4: Open Targets 26.09 has no record of the variant; MICA and MICB name the region. The literature search
+  (the rsID, 2026-11-16; Semantic Scholar answered 429, its part unchecked) finds Pilling, Wright and reviews, and Wang
+  2023 (PMID 37440754), whose abstract names rs3131621 among three HLA SNPs with a two- to threefold risk of primary
+  sclerosing cholangitis in ulcerative colitis, its allele not given there: named, abstract only, no side read.
+  Descriptive. Age of action unknown. The evidence is European.
 axes:
-  tier: {value: C, cites: [pmid-29227965#q278, pmid-29227965#q281, pmid-29227965#q282, db-ensembl-116#q1174, db-ensembl-116#q1189, db-ensembl-116#q1190, db-opentargets-26.09#q1520, pmid-31484785#q178, pmid-31484785#q179, pmid-31484785#q180, pmid-31484785#q181, pmid-30642433#q425, pmid-31413261#q368, db-gwascatalog-2026.10.29#q809, db-gwascatalog-2026.10.29#q810, db-gwascatalog-2026.10.29#q811, db-gwascatalog-2026.10.29#q812, db-gwascatalog-2026.10.29#q813]}
+  tier: {value: B, cites: [pmid-31484785#q181, pmid-30729179#q190, pmid-30729179#q60, pmid-29227965#q278, pmid-29227965#q281, pmid-29227965#q282, db-ensembl-116#q1174, db-ensembl-116#q1189, db-ensembl-116#q1190, db-opentargets-26.09#q1520, pmid-31484785#q178, pmid-31484785#q179, pmid-31484785#q180, pmid-31484785#q181, pmid-30642433#q425, pmid-31413261#q368, db-gwascatalog-2026.10.29#q809, db-gwascatalog-2026.10.29#q810, db-gwascatalog-2026.10.29#q811, db-gwascatalog-2026.10.29#q812, db-gwascatalog-2026.10.29#q813]}
   mechanism: {value: general_ageing, cites: [pmid-29227965#q281, db-gwascatalog-2026.10.29#q234, db-gwascatalog-2026.10.29#q235]}
   pleiotropy: {values: [], cites: [db-gwascatalog-2026.10.29#q234, db-gwascatalog-2026.10.29#q235]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
+  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "0",
             cites: [pmid-29227965#q278, pmid-29227965#q279, pmid-29227965#q281, pmid-30642433#q425, pmid-31484785#q179, pmid-31413261#q368, pmid-30729179#q190, pmid-40021682#q221, pmid-40021682#q222, pmid-40021682#q223, db-finngen-r11#q132]}
   actionability: {label: descriptive, cites: [pmid-29227965#q281]}
-  context: {values: [eur_only_evidence], cites: [pmid-29227965#q281, pmid-31484785#q179, db-ensembl-116#q1187]}
+  context: {values: [eur_only_evidence], cites: [pmid-29227965#q281, pmid-31484785#q179, db-ensembl-116#q1187, db-ensembl-116#q1210, db-finngen-r11#q132, pmid-40021682#q221]}
 flags:
   - {token: "causal:C4", cites: [db-opentargets-26.09#q1520]}
   - {token: "effector:E4", cites: [db-opentargets-26.09#q1520, db-ensembl-116#q1188]}
@@ -62,17 +74,15 @@ variants:
         conclusion: >-
           You carry one copy of the less common G version of this DNA region (about 44 in 100 people of European
           ancestry do). In a very large British study, fathers of people with this version lived a little less long,
-          and a separate American study saw the same in fathers. It is an early finding: part of it may be shared
-          with a nearby signal, and what is left sits just short of the usual bar. The effect is small and it is a
-          tendency, not destiny.
+          and a separate American study saw the same in fathers. It is a likely finding, not a settled one: the
+          mothers in the American study did not show it. The effect is small and it is a tendency, not destiny.
       - genotype: G/G
         state: risk
         conclusion: >-
           You carry two copies of the less common G version of this DNA region (about 11 in 100 people of European
           ancestry do). In a very large British study, fathers of people with this version lived a little less long
-          per copy, and a separate American study saw the same in fathers. It is an early finding: part of it may be
-          shared with a nearby signal, and what is left sits just short of the usual bar. The effect is small and it
-          is a tendency, not destiny.
+          per copy, and a separate American study saw the same in fathers. It is a likely finding, not a settled one: the
+          mothers in the American study did not show it. The effect is small and it is a tendency, not destiny.
 studies:
   - rsid: rs3131621
     note: pmid-29227965
@@ -91,7 +101,7 @@ studies:
     effect_unit: fathers' attained age per A allele (negative = longer)
     effect_allele: A
     direction: protective
-    statistical_test: "Pilling 2017's fathers' deposit (GCST006701), SE 0.00225; marginal; conditioned on row 37's lead (q282, phase db-ensembl-116#q1189, q1190) z 5.39, P 7e-8 (derived, D39.15)"
+    statistical_test: "Pilling 2017's fathers' deposit (GCST006701), SE 0.00225; the anchor, read at its marginal as the stronger line (D39.18, D40.4); conditioned on row 37's lead (q282, phase db-ensembl-116#q1189, q1190) z 5.39 (derived)"
     curator: claude-opus-5-5
   - rsid: rs3131621
     note: pmid-31484785
@@ -107,10 +117,10 @@ studies:
     p_value_num: 0.0007715
     effect_size: -0.01061
     effect_measure: beta
-    effect_unit: fathers' lifespan per A allele, on Pilling's scale (negative = longer; the counted allele from the UK Biobank arm, q180)
-    effect_allele: A
-    direction: protective
-    statistical_test: "Supplemental Table 8, SE 0.0032; Table 9's meta with UK Biobank P 8.9e-9, heterogeneity P 0.35 (q180); Table 3 (q178); outside UK Biobank and LifeGen, an independent replication"
+    effect_unit: fathers' lifespan per G allele on Table 8's scale (positive = longer; G −0.01061, so A +0.01061); Table 9 counts A on Pilling's attained-age scale (q180)
+    effect_allele: G
+    direction: risk
+    statistical_test: "Supplemental Table 8, filtered on its own arm (D29.18), SE 0.0032, P 0.002 after genomic control (q179, D26.1); Table 9's meta with UK Biobank P 8.9e-9, heterogeneity P 0.35 (q180); Table 3 (q178); outside UK Biobank and the anchor, an independent replication (D40.4)"
     curator: claude-opus-5-5
   - rsid: rs3131621
     note: pmid-30642433

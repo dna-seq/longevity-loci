@@ -4207,3 +4207,12 @@ rs4784227 (row 169, the second signal at 82): GRCh38 16:52,565,276, multi-alleli
 lead rs4783780 from 1000 Genomes' phased EUR genotypes (population q1174; first lines q1208, q1209), over 1,006
 haplotypes (derived): rs4784227 C with rs4783780 A, r +0.575 (r² 0.330; Ensembl's CEU pair q622), the two healthier alleles
 together. For row 169.
+
+## Reading 2026-11-16, record
+
+> [q1210] populations[76] allele A population 1000GENOMES:phase_3:EUR frequency 0.718687872763419 allele_count 723
+
+rs3131621: A at 71.9 % in 1000 Genomes' EUR (q1210), against 67.2 % in gnomAD's non-Finnish genomes (q1187), 0.629 in UK
+Biobank (Pilling, pmid-29227965#q281), 0.627 in Park's UK Biobank file and 0.696 in FinnGen (1 − G's 0.304,
+db-finngen-r11#q132): the HLA region's frequencies differ by sample, and no imputation quality is read (D40.4).
+For row 165.
