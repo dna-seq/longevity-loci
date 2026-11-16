@@ -2524,3 +2524,9 @@ rs2227341 (row 128), one association: McCartney 2021's GrimAge acceleration (GCS
 
 GCST90014290, McCartney 2021's European IEAA GWAS: 34,461 European ancestry individuals (q690); among its 27 cohorts BLSA,
 FHS, InCHIANTI, LBC21, LBC36 and TwinsUK (q691 to q696), five of Lu 2018's eight cohorts. For row 105.
+
+## Reading 2026-11-16, record
+
+> [q697] _embedded.associations[2].snp_effect_allele[0] rs9275160-A
+
+rs9275160 (row 159): the complement C4 association's allele is A (q697); with q610's 'beta 0.26096 unit decrease', A lowers C4 levels (the Catalog stores |β| with a direction word), so the row's earlier 'A raises C4' was reversed (D38.9). For row 159.

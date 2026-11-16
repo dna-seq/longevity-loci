@@ -1,7 +1,7 @@
 # The seed list's locus 159, HLA-DQB1 (6p21.32, the HLA class II region). Curated 2026-11-16. Lead rs9275160, the seed's
 # only rsID (Atkins 2021's frailty-index locus): between HLA-DQB1 and HLA-DQA2, 4.7 kb downstream of a lncRNA, GRCh38
 # 6:32,684,843 G/A, GRCh37 6:32,652,620, A at 35.7 % in gnomAD's non-Finnish European genomes, A the frailer allele and G
-# the healthier. A separate signal from row 103's rs1049053 (r² 0.20 in CEU). Open Targets 26.09 has no record of it;
+# the healthier. A separate lead from row 103's rs1049053 (r² 0.20 in CEU, 0.18 in GBR, 0.15 in EUR, D′ about 1). Open Targets 26.09 has no record of it;
 # the GWAS Catalog (2026-10-29) holds five associations, all on A: Atkins' frailty, prostate cancer (twice) and
 # complement C4 levels.
 locus_id: 159
@@ -13,25 +13,28 @@ verdict_reason: >-
   participants puts A on the frailer side, +0.038 (SE 0.0035) per A on the quantile-normalised index, P 7.2e-28, past
   even the paper's stricter 1e-9 line, both cohorts the same way (heterogeneity P 0.03). A frailty index is
   healthspan-class (D23), which scores only beside a scoring-class lifespan study on the same allele and side at P <
-  0.05 (D16). The lifespan looks all lean G's way and none printed reaches 0.05: Timmers 2019 A beta1 −0.0040 (SE
-  0.0043), P 0.35; Pilling 2017's parents, inside Timmers' pool, G longer throughout (mothers P 0.058, one-sided
-  0.029; both parents 0.36; fathers 0.52; top 10 % 0.20); Park 2025's own survival G with fewer deaths, P 0.21 (men
+  0.05 (D16). The lifespan looks all lean G's way and no whole-sample line reaches 0.05: Timmers 2019 A beta1 −0.0040 (SE
+  0.0043), P 0.35; Pilling 2017's parents, inside Timmers' pool, G longer throughout (both parents 0.36; fathers
+  0.52; top 10 % 0.20; mothers P 0.058, one-sided 0.029, a sex stratum of a discovery that is not sex-specific, picked
+  after the fact, so not D16's co-occurring study, D35.5, D37.3, D38.8); Park 2025's own survival G with fewer deaths, P 0.21 (men
   0.39, women 0.35). FinnGen R11's deaths have A with more deaths, β +0.0173 (SE 0.0082), P 0.033, G's way, but a
   curator-read release line fills a cell and lifts no row (D29.1, D35.1). Zenin 2019's healthspan agrees (A the higher
-  hazard, P 0.0017) in the same UK Biobank people, so it is no independent replication. Deelen 2019's 90th percentile,
+  hazard, P 0.0017, z 3.14), but that is row 103's signal by LD: Zenin peaks at 103's rs1049053 (P 1.4e-11), and with
+  D′ about 1 and r² 0.15 to 0.20 its expected echo here is z 2.6 to 3.0, so the line carries nothing of 159's own
+  (D38.9). Deelen 2019's 90th percentile,
   in a reduced set of cohorts here (effective N 6,328), leans A's way, +0.041 (SE 0.030), P 0.18, flat; its 99th file
   holds no line. Foote 2025's deposits hold no line (untested). The literature search (the rsID, 2026-11-16;
   Semantic Scholar answered 429, its part unchecked) finds Mendelian randomisation papers using Atkins' frailty
   instruments, none a test of this variant on lifespan. Genotypes: A/A the reference; G carriers protective, as weak early evidence.
   Exceptional survival 0 (Deelen flat); lifespan + (FinnGen, P 0.033, a release line filling the cell, D35.1; Timmers,
   Pilling and Park on the same side); healthspan + (Atkins, genome-wide). Mechanism immune and inflammation: the HLA
-  class II region; A also raises complement C4 levels (Thareja, P 1e-19). Pleiotropy `mech:cancer`: A raises prostate
+  class II region; A also lowers complement C4 levels (Thareja, P 1e-19; the Catalog's 'decrease'). Pleiotropy `mech:cancer`: A raises prostate
   cancer risk (Wang, OR 1.05, P 2e-16; Conti, P 9e-8), the same allele as frailty, so no trade-off. Causal C4 and
   effector E4: no Open Targets record, and the HLA region's long haplotypes make any gene call here ambiguous.
   Descriptive. Age of action unknown. The evidence is European.
 axes:
-  tier: {value: C, cites: [pmid-34431594#q9, pmid-34431594#q1, pmid-34431594#q2, pmid-34431594#q3, pmid-34431594#q5, pmid-30642433#q406, pmid-29227965#q204, pmid-29227965#q205, pmid-29227965#q206, pmid-29227965#q207, pmid-40021682#q151, pmid-40021682#q152, pmid-40021682#q153, db-finngen-r11#q109, pmid-30729179#q169, pmid-31413261#q325, db-ensembl-116#q982]}
-  mechanism: {value: immune_inflammation, cites: [db-ensembl-116#q983, db-gwascatalog-2026.10.29#q610, db-gwascatalog-2026.10.29#q611]}
+  tier: {value: C, cites: [pmid-34431594#q9, pmid-34431594#q1, pmid-34431594#q2, pmid-34431594#q3, pmid-34431594#q5, pmid-30642433#q406, pmid-29227965#q204, pmid-29227965#q205, pmid-29227965#q206, pmid-29227965#q207, pmid-40021682#q151, pmid-40021682#q152, pmid-40021682#q153, db-finngen-r11#q109, pmid-30729179#q169, pmid-30729179#q10, pmid-31413261#q325, db-ensembl-116#q982, db-ensembl-116#q1047, db-ensembl-116#q1048, db-ensembl-116#q1049, pmid-34431594#q10]}
+  mechanism: {value: immune_inflammation, cites: [db-ensembl-116#q983, db-gwascatalog-2026.10.29#q610, db-gwascatalog-2026.10.29#q611, db-gwascatalog-2026.10.29#q697]}
   pleiotropy: {values: ["mech:cancer"], cites: [db-gwascatalog-2026.10.29#q607, db-gwascatalog-2026.10.29#q608, db-gwascatalog-2026.10.29#q609, db-gwascatalog-2026.10.29#q612, db-gwascatalog-2026.10.29#q613]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "0",
@@ -45,7 +48,7 @@ variants:
   - rsid: rs9275160
     gene: ""
     phenotype: HLA-DQB1/HLA-DQA2 intergenic, frailty
-    trait_efo_id: OBA_VT0005372
+    trait_efo_id: EFO_0009762
     effect_allele: G
     effect_size: -0.038
     effect_measure: beta
