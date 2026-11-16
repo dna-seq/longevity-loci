@@ -11,6 +11,10 @@ Seated 2026-11-10 (account seat-10). The first-seating handout is done:
 - `runs/LOG.md` and `runs/STATUS.md` started;
 - the scout and the curator told, in the repository's channel, that fetches now come here.
 
+Standing, from 2026-11-16 (Zulip 640823601): the curator sends its periodic full `loci check quotes` here as an ll- job
+with the commit to run it at (about 70 minutes at one core, niced). Nothing is owed yet; the job script is written when
+the first one is asked for. Exit 4 is unknown, never a pass.
+
 ## Running jobs
 
 None (6428266 completed 2026-11-10T23:54Z). The seat's jobs watcher follows any new one.
