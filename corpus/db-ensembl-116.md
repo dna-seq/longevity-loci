@@ -3437,3 +3437,27 @@ rs79645902 (row 156): GRCh38 3:96,542,656 A/G (q938); G at 10.4 % in gnomAD's Ea
 > [q951] [0] input rs117082375 start 14117491 id rs117082375 end 14117491 most_severe_consequence intergenic_variant strand 1 allele_string A/T seq_region_name 7 assembly_name GRCh38
 
 rs117082375 (row 111): GRCh38 7:14,117,491 A/T, A ancestral (q943); T at 1.62 % in gnomAD's East Asian genomes, 73 of 4,500 alleles (q944, q945), absent in the non-Finnish Europeans (q946); 1000 Genomes EAS 11 of 1,008 (q947, q948), CHS 3 of 210 (q949, q950); intergenic (q951). For row 111.
+
+## Reading 2026-11-16, record
+
+> [q952] mappings[0] allele_string T/G coord_system chromosome location 2:132309225-132309225 start 132309225 strand 1 ancestral_allele T assembly_name GRCh38 end 132309225 seq_region_name 2
+
+> [q953] populations[21] population gnomADg:eas frequency 0.1104 allele G allele_count 567
+
+> [q954] populations[20] population gnomADg:eas frequency 0.8896 allele T allele_count 4567
+
+> [q955] populations[27] frequency 0.0003676 population gnomADg:nfe allele_count 25 allele G
+
+> [q956] populations[88] allele_count 132 allele G frequency 0.130952380952381 population 1000GENOMES:phase_3:EAS
+
+> [q957] populations[89] allele_count 876 allele T frequency 0.869047619047619 population 1000GENOMES:phase_3:EAS
+
+> [q958] populations[85] frequency 0.157142857142857 population 1000GENOMES:phase_3:CHS allele_count 33 allele G
+
+> [q959] populations[84] allele T allele_count 177 frequency 0.842857142857143 population 1000GENOMES:phase_3:CHS
+
+> [q960] [0] start 132309225 id rs373800184 seq_region_name 2 strand 1 end 132309225 most_severe_consequence intron_variant assembly_name GRCh38 input rs373800184 allele_string T/G
+
+> [q961] [0].transcript_consequences[0] gene_symbol_source HGNC distance 84 canonical 1 biotype transcribed_unprocessed_pseudogene transcript_id ENST00000438300 hgnc_id HGNC:33228 gene_id ENSG00000018607 strand 1 impact MODIFIER gene_symbol ZNF285CP variant_allele G
+
+rs373800184 (row 139): GRCh38 2:132,309,225 T/G, T ancestral (q952); G at 11.0 % in gnomAD's East Asian genomes, 567 of 5,134 alleles (q953, q954), 0.04 % in the non-Finnish Europeans (q955); 1000 Genomes EAS 132 of 1,008 (q956, q957), CHS 33 of 210 (q958, q959); intronic in a lncRNA (q960), 84 bp upstream of the ZNF285CP pseudogene (q961). For row 139.
