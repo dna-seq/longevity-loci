@@ -1,0 +1,116 @@
+# The seed list's locus 154 (unnamed, 6q22.33). Curated 2026-11-16. Lead rs7754015, the seed's only rsID (Deelen 2019's
+# 90th percentile suggestive locus): intergenic, GRCh38 6:126,884,923, GRCh37 6:127,206,068, multi-allelic (T/C/G),
+# the row meaning G/T; G at 0.48 in gnomAD's non-Finnish Europeans, G the discovery's shorter-lived allele and T the
+# longer-lived. The variant is absent from 1000 Genomes, so no LD proxy can be named. Open Targets 26.09 holds it as a
+# minor member of 74 lipid, blood-pressure and other sets, none lifespan-class; the GWAS Catalog (2026-10-29) holds no
+# association.
+locus_id: 154
+locus_name: ""
+verdict: re-tiered
+verdict_reason: >-
+  Tier D, from the seed's C: a sub-genome-wide discovery that fails a powered test in its own ancestry outside its
+  sample (D26.8; row 136's shape). In Deelen 2019's European meta-analysis (no UK Biobank data) G lowers the odds of
+  reaching the 90th percentile age, OR 0.90 (0.86–0.94), P 6.8e-7, under genome-wide, I² 0 (summary statistics T
+  +0.1075, SE 0.0216); the 99th percentile line (T +0.095, P 0.0072) draws on the same cases and is not independent.
+  Deelen's own validation in UK Biobank, which the discovery does not include, does not replicate it: parents past
+  the 90th percentile give G OR 1.00 (0.97–1.03), P 0.83. At half the discovery's effect for a parent's genotype (the
+  authors state power even at half) that is power 0.96, heterogeneity P 0.0095, holding down to 0.72 of the halved
+  effect, and at the full effect P 1.9e-4 (derived from the printed OR and interval, the validation's β taken from its
+  printed P and signed the discovery's way, the conservative choice since the printed 1.00 hides the sign): a D21 red
+  flag, `replication_failed`. No independent scoring-class study passes T's way (D25.1): Park 2025's own survival in
+  UK Biobank has T with fewer deaths, −0.0011 (SE 0.0007), P 0.12, one-sided 0.056, short of 0.05 (D28.2's
+  whole-cohort reading); its men alone give P 0.0079 (women 0.48; the sexes differ at P 0.011), a stratum, named
+  (D35.5). Carried by APOE's own ratio (Deelen's ε4 log OR against Park's ε4 β) the discovery expects −0.0027 on
+  Park's scale: power 0.98, heterogeneity P 0.096, no flag, and APOE alone sets none (D26.3). The variant is absent
+  from Timmers 2019's, Pilling 2017's (checked by rsID and by position), Zenin 2019's, Foote 2025's and FinnGen R11's
+  files, and from 1000 Genomes, so no proxy can stand in: untested, not negative. Wright 2019's AncestryDNA tables list
+  nothing within 500 kb under their P 0.003 cut (unknown above it). The literature search (the rsID, 2026-11-16; Semantic Scholar 429, unchecked)
+  finds Deelen alone. Every genotype neutral (D25.2). Exceptional survival 0 (the discovery is contradicted by the
+  powered parental 90th percentile test, and a D row's discovery gives no `+`, D28.10); lifespan 0 (Park flat);
+  healthspan untested. Mechanism ageing in general (D25.7): intergenic; its Open Targets sets (LDL particles, blood
+  pressure, heel bone density) hold it at PIP about 0.002 with no signed effect, membership only, named. Causal C4 and
+  effector E4: no lifespan-class credible set. Descriptive. Age of action unknown.
+axes:
+  tier: {value: D, cites: [pmid-31413261#q315, pmid-31413261#q317, pmid-31413261#q318, pmid-31413261#q316, pmid-31413261#q58, pmid-31413261#q81, pmid-31413261#q82, pmid-40021682#q138, pmid-40021682#q139, pmid-40021682#q140, pmid-40021682#q32, db-ensembl-116#q934, db-opentargets-26.09#q1249, db-gwascatalog-2026.10.29#q597]}
+  mechanism: {value: general_ageing, cites: [db-ensembl-116#q933, db-opentargets-26.09#q1249, db-opentargets-26.09#q1250, db-opentargets-26.09#q1251]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: untested, lifespan: "0", exceptional_survival: "0",
+            cites: [pmid-31413261#q316, pmid-40021682#q138]}
+  actionability: {label: descriptive, cites: [pmid-31413261#q315]}
+  context: {values: [], cites: []}
+flags:
+  - {token: replication_failed, cites: [pmid-31413261#q315, pmid-31413261#q316, pmid-31413261#q58, pmid-31413261#q81]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1249]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q1249]}
+variants:
+  - rsid: rs7754015
+    locus: {chrom: "6", start: 126884923, ref: T, cites: [db-ensembl-116#q933]}  # rs7754015 is multi-allelic (T/C/G); the row means T and G
+    gene: ""
+    phenotype: 6q22.33 intergenic, longevity
+    trait_efo_id: OBA_VT0005372
+    effect_allele: T
+    effect_size: 1.11
+    effect_measure: OR
+    stat_significance: suggestive
+    direction: protective
+    genotypes:
+      - genotype: T/T
+        state: neutral
+        conclusion: >-
+          You carry two copies of one common version of this DNA position (about 27 in 100 people of European ancestry
+          do). The position lies between genes on chromosome 6. One European study linked this version to higher odds
+          of reaching very old age, but the same study's check in UK Biobank found no difference, so it is not counted
+          for or against lifespan.
+      - genotype: G/T
+        state: neutral
+        conclusion: >-
+          You carry one copy of each of two common versions of this DNA position (about 50 in 100 people of European
+          ancestry do). One European study found the T version more often among people who reached very old age, but
+          its own check in a larger group found no difference, so it is not counted for or against lifespan.
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the G version of this DNA position (about 23 in 100 people of European ancestry do).
+          It is the reference the other combinations are compared with. One European study found it less often among
+          people who reached very old age, but its own check in a larger group found no difference, so it is not
+          counted for or against lifespan.
+studies:
+  - rsid: rs7754015
+    note: pmid-31413261
+    quote: q315
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: European (Deelen 2019's longevity meta-analysis; no UK Biobank data)
+    ancestry: [EUR]
+    n_cases: 11262
+    sample_size: 36745
+    sample_unit: individuals
+    stat_significance: suggestive
+    p_value: "6.779e-07"
+    p_value_num: 6.779e-07
+    effect_size: 1.11
+    effect_measure: OR
+    effect_unit: odds of surviving to the 90th percentile age per T allele (the printed 0.90 per G, inverted)
+    effect_allele: T
+    direction: protective
+    statistical_test: "Table 2, 90th percentile cases against all controls, European discovery (q315; summary statistics T +0.1075, SE 0.0216, effective N 11,050, q317, whose P is quoted here); 99th percentile T +0.0953, P 0.0072 (q318), the same cases"
+    curator: claude-opus-5-5
+  - rsid: rs7754015
+    note: pmid-31413261
+    quote: q316
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: percentile_case_control_p90
+    population: UK Biobank (Deelen 2019's validation; participants with a parent past the 90th percentile age against those with both parents dead by the 60th)
+    ancestry: [EUR]
+    age_of: parent
+    stat_significance: not_significant
+    p_value: "0.832"
+    p_value_num: 0.832
+    effect_size: 1.00
+    effect_measure: OR
+    effect_unit: odds of a parent surviving to the 90th percentile age per T allele of the participant (the printed 1.00 per G)
+    effect_allele: T
+    direction: protective
+    statistical_test: "Table 3 (q316; design q81): G OR 1.00 (0.97–1.03), SE of the log OR 0.0153; against the discovery at half its effect for a parent's genotype (q58) power 0.96, heterogeneity P 0.0095, a D21 red flag down to 0.72 of the halved effect; at the full effect 1.9e-4 (derived, the validation's β from its printed P, signed the discovery's way)"
+    curator: claude-opus-5-5

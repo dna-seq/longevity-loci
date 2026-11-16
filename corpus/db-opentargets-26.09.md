@@ -4472,3 +4472,15 @@ q1231), the variant at PIP 0.024 (q1232), membership only; no lifespan-class set
 > [q1248] data variant null
 
 17_56544129_T_A (rs75737809; row 152): no record, nor under the reversed id. For row 152.
+
+## Reading 2026-11-16, record
+
+> [q1249] data.variant.credibleSets count 74
+
+> [q1250] data.variant.credibleSets.rows[18].study id GCST90497219 traitFromSource Clinical LDL cholesterol levels studyType gwas
+
+> [q1251] data.variant.credibleSets.rows[18].locus.rows[0] posteriorProbability 0.001712368770181187 beta null pValueMantissa null pValueExponent null
+
+6_126884923_T_G (rs7754015's G; row 154): 74 credible sets, read whole: lipoprotein and LDL-particle traits, blood pressure,
+heel bone density, a lymphocyte fraction, facial traits; none a lifespan-class study (q1249). The variant is a minor member
+(PIP about 0.002, no signed β; e.g. clinical LDL, q1250, q1251). The reversed id has no record. For row 154.
