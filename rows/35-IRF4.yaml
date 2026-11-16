@@ -23,8 +23,7 @@ verdict_reason: >-
   the scoring-class studies outside UK Biobank only Deelen tested the lead, short of 0.05 (below); LifeGen's own arm leans to C (the file's "--") but prints no P of its own, and AncestryDNA's mothers
   (Wright 2019) hold no tag of the lead (the nearest, rs11242982, r² 0.15), so untested there, not null. The
   oldest ages lean to C and do not pass: Deelen 2019's 90th and 99th percentiles, OR per C 1.05 and 1.07 (P 0.13,
-  0.15). Calibrated from LifeGen's beta1 (D25.3), the 90th has one-sided power 0.77 by the APOE factor
-  (heterogeneity P 0.48) and 0.26 by the mean factor (0.63), and the 99th, at its own factor 6.22 (D31.4), 0.68 by the APOE factor (heterogeneity P 0.59) and 0.22 by the mean factor (0.58): no red flag either way, and exceptional survival is 0.
+  0.15). So exceptional survival is 0. Whether they flag is unknown (D27.9, D29.1, D28.1): a flag scales from the discovery's own effect, Zenin's healthspan hazard, and no source converts it to Deelen's scale, so no `replication_failed`. Scaled instead from LifeGen's beta1, a co-occurring lifespan study, they would show none (the 90th power 0.77 and 0.26 by the APOE and mean factors, heterogeneity P 0.48 and 0.63; the 99th at its own 6.22, D31.4, 0.68 and 0.22, P 0.59 and 0.58): named, not used.
   Rosoff 2023's mvAge (C, P 6.9e-12) and Timmers 2020's multivariate ageing scan (P 8e-26, no direction printed) pool
   these same samples and add nothing independent. A literature search on the rsID found no further lifespan study
   (OpenAlex and Semantic Scholar unchecked, HTTP 429). By component, T's healthspan effect is mostly cancer (P 3e-39),
@@ -182,7 +181,7 @@ studies:
     effect_unit: log odds of reaching the 90th percentile, per T allele
     effect_allele: T
     direction: risk
-    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008598), SE 0.0318, effective N 9,923. D25.3 from LifeGen's beta1: APOE factor 4.84 expects log OR 0.076 per C, one-sided power 0.77, heterogeneity P 0.48; mean factor (pmid-30642433#q92) 0.032, power 0.26, heterogeneity P 0.63; no red flag"
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008598), SE 0.0318, effective N 9,923. The flag is unknown (D27.9, D29.1: Zenin's hazard has no printed conversion to this scale); from LifeGen's beta1, named only: APOE factor 4.84 expects log OR 0.076 per C, one-sided power 0.77, heterogeneity P 0.48; mean factor (pmid-30642433#q92) 0.032, power 0.26, heterogeneity P 0.63"
     curator: claude-opus-5-5
   - rsid: rs12203592
     note: pmid-31413261
@@ -199,7 +198,7 @@ studies:
     effect_unit: log odds of reaching the 99th percentile, per T allele
     effect_allele: T
     direction: risk
-    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), SE 0.0463, effective N 4,403; the same side as the 90th. D25.3 from LifeGen's beta1 at the 99th's own factor (D31.4; 6.22, pmid-31413261#q250 over pmid-30642433#q90): APOE factor expects log OR 0.098 per C, one-sided power 0.68, heterogeneity P 0.59; mean factor 2.60 (0.4175 times 6.22, pmid-30642433#q92) 0.041, power 0.22, heterogeneity P 0.58; no red flag"
+    statistical_test: "Deelen 2019's summary statistics (GWAS Catalog GCST008599), SE 0.0463, effective N 4,403; the same side as the 90th. The flag is unknown (D27.9, D29.1); from LifeGen's beta1 at the 99th's own factor, named only (D31.4; 6.22, pmid-31413261#q250 over pmid-30642433#q90): APOE factor expects log OR 0.098 per C, one-sided power 0.68, heterogeneity P 0.59; mean factor 2.60 (0.4175 times 6.22, pmid-30642433#q92) 0.041, power 0.22, heterogeneity P 0.58"
     curator: claude-opus-5-5
   - rsid: rs12203592
     note: pmid-37550455
