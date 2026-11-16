@@ -10,23 +10,33 @@ verdict_reason: >-
   Tier C, from the seed's B: a preprint-only finding (§4.1's C), from one centenarian sample against population
   controls, unreplicated (R-TIER-2). Sasaki's Japanese centenarian GWAS (Research Square, revised 2025, not
   peer-reviewed; 964 centenarians, 173 of them past 110, against 7,306 Japanese controls, an N-weighted meta-analysis
-  of whole genomes and imputed arrays) names two genome-wide loci, APOE and EYS, lead rs75571981. The text prints no
-  P, effect size or allele frequency for it; they sit in a supplementary table not reached (Research Square's
-  supplement has no URL pattern the tools know, and Europe PMC's text omits it), so the discovery is genome-wide by the
-  authors' statement only, its size unknown, and no reference check (D31.10) or calibration can run. Within the same
+  of whole genomes and imputed arrays) names two genome-wide loci, APOE and EYS, lead rs75571981. Its Supplementary Table 2
+  (Europe PMC's supplement bundle, cached) prints the line: C in 125 of 1,928 centenarian alleles (6.48 %) against 785
+  of 14,612 control alleles (5.37 %), meta Z 5.52, P 3.48e-8, the genome-wide call read as printed (D17.3, D29.5). That
+  call exists only in the adjusted, N-weighted meta-analysis (sex and 20 principal components); the table's own arms
+  are flat (whole genomes, 524 against 3,340, OR 1.146, P 0.32; arrays, 440 against 3,966, OR 1.302, P 0.066), and on
+  the pooled counts the crude allelic OR is 1.22, Fisher's exact P 0.049 (derived, D37.1): nominal at best. That
+  dependence on adjustment, centenarians (median 106, 85 % women) against Tohoku Medical Megabank controls (median 45, 65 % women), is the
+  cohort confounding R-TIER-2 exists for, made visible (D37.9). The reference check runs (D31.13): gnomAD has no
+  Japanese group, so the nearest panel is 1000 Genomes JPT (9 of 208 alleles, with its sampling error); the controls
+  fit it (Fisher P 0.64) and the centenarians sit above it at one-sided 0.14, so D31.10 is not met and the discovery
+  is read as printed, as at 118; ToMMo 38KJPN (5.45 %) is the controls' own project's panel, so a fit against it is
+  near-circular, named only. Within the same
   preprint the signal does not carry: the variant's frequency rises in the centenarians but not in 1,026 healthy agers
   aged 85 to 89 against the same controls, and in those agers' follow-up the Cox models of lifespan and disability-free
-  survival find APOE4 and sex significant, not the EYS allele (its figures are in a figure, unread). The authors
+  survival find APOE4 and sex significant, not the EYS allele (Fig. 6c and d, regularised Cox models, read off the
+  figure by eye, approximate: lifespan HR about 1.07, 0.94 to 1.21, disability-free survival about 1.02, 0.92 to 1.12,
+  both crossing 1). The authors
   report it absent in Korean samples. C is all but absent outside Japan (1.0 % in gnomAD's East Asians, none in
   Europeans), so no other sample read here tests it: untested, not negative. The literature search (the rsID with EYS
   and centenarians, 2026-11-16; Semantic Scholar answered 429, its part unchecked) finds the two versions of the
-  preprint (2024, 2025) alone. Exceptional survival + on the preprint's genome-wide statement (preprint, named; no
-  size); lifespan 0 (the healthy agers' Cox model, EYS not significant, D34.5, its figure unread); healthspan 0
-  (disability-free survival, the same model). Mechanism ageing in general (D25.7): intronic, with no expression or
+  preprint (2024, 2025) alone. Exceptional survival + on the preprint's genome-wide meta-analysis (preprint, named; the
+  crude arms flat); lifespan 0 (the healthy agers' Cox model, HR about 1.07, flat,
+  D34.5); healthspan 0 (disability-free survival, the same model, HR about 1.02). Mechanism ageing in general (D25.7): intronic, with no expression or
   predicted regulatory effect known (the authors). Causal C4 and effector E4: no Open Targets record. Descriptive.
   Age of action unknown. The ancestry is Japanese, as `ancestry_specific:eas`.
 axes:
-  tier: {value: C, cites: [doi-10.21203_rs.3.rs-6869504_v1#q1, doi-10.21203_rs.3.rs-6869504_v1#q2, doi-10.21203_rs.3.rs-6869504_v1#q3, doi-10.21203_rs.3.rs-6869504_v1#q4, doi-10.21203_rs.3.rs-6869504_v1#q5, doi-10.21203_rs.3.rs-6869504_v1#q8, db-ensembl-116#q923, db-ensembl-116#q924, db-ensembl-116#q925, db-gwascatalog-2026.10.29#q594]}
+  tier: {value: C, cites: [doi-10.21203_rs.3.rs-6869504_v1#q1, doi-10.21203_rs.3.rs-6869504_v1#q2, doi-10.21203_rs.3.rs-6869504_v1#q3, doi-10.21203_rs.3.rs-6869504_v1#q4, doi-10.21203_rs.3.rs-6869504_v1#q5, doi-10.21203_rs.3.rs-6869504_v1#q8, doi-10.21203_rs.3.rs-6869504_v1#q9, doi-10.21203_rs.3.rs-6869504_v1#q10, doi-10.21203_rs.3.rs-6869504_v1#q11, doi-10.21203_rs.3.rs-6869504_v1#q12, doi-10.21203_rs.3.rs-6869504_v1#q13, doi-10.21203_rs.3.rs-6869504_v1#q14, db-ensembl-116#q923, db-ensembl-116#q924, db-ensembl-116#q925, db-gwascatalog-2026.10.29#q594]}
   mechanism: {value: general_ageing, cites: [db-ensembl-116#q926, db-ensembl-116#q927, doi-10.21203_rs.3.rs-6869504_v1#q7]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -78,7 +88,9 @@ studies:
     sample_unit: individuals
     age_of: participant
     stat_significance: significant
+    p_value: "3.48e-08"
+    p_value_num: 3.48e-08
     effect_allele: C
     direction: protective
-    statistical_test: "Sasaki's N-weighted GWAMA of whole genomes and imputed arrays, sex and 20 principal components (q1: genome-wide, lead rs75571981); 964 centenarians and 7,306 controls (q2, q3); P, effect and frequency in a supplementary table not reached (unknown); the rise is in centenarians only, not the healthy agers aged 85 to 89 (q5, q8)"
+    statistical_test: "Sasaki's N-weighted GWAMA of whole genomes and imputed arrays, sex and 20 principal components (q1: genome-wide, lead rs75571981); 964 centenarians and 7,306 controls (q2, q3); Supplementary Table 2 (q9 to q12): meta Z 5.52, P 3.48e-8; C 125 of 1,928 against 785 of 14,612; arms flat (WGS OR 1.146, P 0.32; array OR 1.302, P 0.066); crude pooled OR 1.22, Fisher's exact 0.049 (derived), so the genome-wide call rests on the adjustment (R-TIER-2, D37.9); controls fit 1000 Genomes JPT (db-ensembl-116#q923, Fisher 0.64), read as printed; the rise is in centenarians only, not the healthy agers aged 85 to 89 (q5, q8)"
     curator: claude-opus-5-5

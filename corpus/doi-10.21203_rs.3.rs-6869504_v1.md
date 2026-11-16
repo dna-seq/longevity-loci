@@ -4,7 +4,7 @@ doi: 10.21203/rs.3.rs-6869504/v1
 title: "Association of centenarian polygenic score with disability-free survival and its modification effects on aging outcomes"
 year: 2025
 title_checked: 2026-11-16
-depth: full_text
+depth: supplement
 ---
 
 Sasaki et al. 2025, Research Square (preprint, not peer-reviewed). The Japanese centenarian GWAS and the CentPGS
@@ -37,3 +37,29 @@ in the healthy agers aged 85 to 89 (1,026 people, q8) against the controls (q5).
 the Cox models of lifespan and disability-free survival with APOE4, sex, the polygenic score and the EYS allele found
 APOE4 and sex (and the score, for disability-free survival) significant, not the EYS allele (q6). No expression or
 predicted regulatory effect is known (q7). For row 151.
+
+## Reading 2026-11-16, supplement
+
+> [q9] Supplementary Table 2 | Lead SNV list for Japanese centenarian GWAS
+
+> [q10] meta GWAS analysis WGS GWAS analysis DNA microarray GWAS analysis ToMMo 38KJPN
+
+> [q11] Lead SNVs (P < 5E-7) Cent. Cont. Cent. WGS 524 Cont. WGS 3340 WGS GWAS Cent. DNA array 440 Cont. DNA array 3966 DNA array GWAS
+
+> [q12] rs75571981 6:64620890 EYS intron T C 5.52 3.48e-08 0.06483402489626557 125 1928 0.05372296742403504 785 14612 0.06297709923664122 66 1048 0.05538922155688623 370 6680 1.146 0.3223 0.06704545454545455 59 880 0.05231971759959657 415 7932 1.302 0.0662 0.054475 4216 77394
+
+Supplementary Table 2, the lead SNVs of the centenarian GWAS (q9; its column groups q10, q11: the meta-analysis Z
+and P, then the centenarians' and controls' MAF, ALT count and allele total, then each arm's counts and its OR and
+P, then ToMMo 38KJPN): rs75571981 T>C, meta Z 5.52, P 3.48e-8; C in 125 of 1,928 centenarian alleles (6.48 %) against
+785 of 14,612 control alleles (5.37 %); the WGS arm (524 against 3,340) OR 1.146, P 0.3223; the array arm (440
+against 3,966) OR 1.302, P 0.0662; ToMMo 38KJPN 5.45 % (q12). On the pooled counts the crude allelic OR is 1.22,
+Fisher's exact P 0.049 (derived). The cached supplement is Europe PMC's bundle for PPR1042277 (its figures are
+images, with no text). For row 151, batch fourteen (D37.9).
+
+## Reading 2026-11-16, supplement
+
+> [q13] Age at enrollment (years old), median (IQR)1 964 106 (103.9 - 107.1) 58 100.6 (100.3 - 100.9) 1016 86.842 (85.9 - 88.2) 7306 45 (32-63) 10000 36 (30-58)
+
+> [q14] No of women, no (%) 964 820 (85.1) 60 42 (70.0) 1016 503 (49.5) 7306 4728 (64.7) 10000 6188 (61.9)
+
+Supplementary Table 1's cohorts (columns: centenarians, supercentenarians, healthy agers, the GWAS controls, the CentPGS controls): the 964 centenarians median 106 at enrolment against the 7,306 controls' median 45 (q13); women 85.1 % against 64.7 % (q14). The controls are Tohoku Medical Megabank's (the data statement). For row 151, batch fourteen (D37.9).
