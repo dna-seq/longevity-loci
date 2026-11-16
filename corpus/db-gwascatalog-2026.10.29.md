@@ -2505,3 +2505,22 @@ q685): the same side, the same people. No other trait. For row 114.
 > [q689] _embedded.associations[0].snp_effect_allele[0] rs2227341-G
 
 rs2227341 (row 128), one association: McCartney 2021's GrimAge acceleration (GCST90014294), G at 0.82, 1.35 years decrease, P 6e-25 (q686, q688, q689), the paper's Table S4 line; trait as mapped (q687). No other trait. For row 128.
+
+## Reading 2026-11-16, record
+
+> [q690] . initial_sample_size 34,461 European ancestry individuals replication_sample_size NA gxe false gxg false snp_count 7567980 imputed true pooled false accession_id GCST90014290 full_summary_stats_available true user_requested false pubmed_id 34187551 platforms Affymetrix,Illumina [7567980] (imputed) disease_trait Intrinsic epigenetic age acceleration full_summary_stats http://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST90014001-GCST90015000/GCST90014290 terms_of_license https://creativecommons.org/publicdomain/zero/1.0/
+
+> [q691] cohort[3] BLSA
+
+> [q692] cohort[6] FHS
+
+> [q693] cohort[9] InCHIANTI
+
+> [q694] cohort[11] LBC21
+
+> [q695] cohort[12] LBC36
+
+> [q696] cohort[23] TwinsUK
+
+GCST90014290, McCartney 2021's European IEAA GWAS: 34,461 European ancestry individuals (q690); among its 27 cohorts BLSA,
+FHS, InCHIANTI, LBC21, LBC36 and TwinsUK (q691 to q696), five of Lu 2018's eight cohorts. For row 105.

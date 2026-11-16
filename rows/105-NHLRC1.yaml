@@ -8,14 +8,16 @@ verdict: kept
 verdict_reason: >-
   Tier B on the marker's own evidence (D37.12; the seed gives none): the tier grades the association with intrinsic
   epigenetic age acceleration (IEAA), a DNA methylation clock read against calendar age, not longevity, and this row
-  is unscored (D32). McCartney 2021's GWAS meta-analysis of epigenetic clocks (34,710 Europeans and 6,195 African
-  Americans) names NHLRC1 among its IEAA loci; the GWAS Catalog's record of that study puts T at 0.053 with IEAA lower
-  by 1.08 years per T (0.95 to 1.22), P 4e-54, and Open Targets fine-maps it there at PIP 0.72. Lu 2018's IEAA GWAS
-  (9,907 people) had the locus already: its 6p22.3 lead rs143093668, r² 1.00 with rs10949481 in CEU, T at 0.05, β
-  −1.78 years per T in Europeans, P 1.9e-21, the same side; how far McCartney's cohorts include Lu's is not printed in
-  the text read, so it is not counted as independent. Neither study reaches §4.1's 100k for A, so the row is B:
-  genome-wide, replicated on the same side in a sample whose independence is unread. Lifespan look-ups, unscored and
-  read for T, all flat: Timmers 2019 A beta1 −0.0065 (SE 0.0090), P 0.47; Pilling 2017's parents P 0.46 to 0.99; Park
+  is unscored (D32). McCartney 2021's GWAS meta-analysis of epigenetic clocks names NHLRC1 among its IEAA loci; its
+  Table S4 prints the European IEAA line, T (the effect allele, refA) at 0.053, β −1.082 years per T (SE 0.070), P
+  4.5e-54, effective n 29,139, in a European analysis of 34,461 (the GWAS Catalog's study record); Open Targets
+  fine-maps it there at PIP 0.72. Lu 2018's IEAA GWAS (9,907 people) had the locus already: its 6p22.3 lead
+  rs143093668, r² 1.00 with rs10949481 in CEU, T at 0.05, β −1.78 years per T in Europeans, P 1.9e-21, the same side
+  (its printed SE 0.10 does not reproduce that P, which implies an SE near 0.19; the printed P is read, D22.3), and
+  −1.37 (P 2.4e-5) in its non-Europeans. Five of Lu's eight cohorts (FHS, TwinsUK, BLSA, InCHIANTI, the Lothian Birth
+  Cohorts) are among McCartney's, so Lu is not an independent replication (D19.1, D38.13), and neither study reaches
+  §4.1's 100k for A: B, a single study without independent replication. Lifespan look-ups, unscored and
+  read for T, two-sided at 0.05 (D38.6), all flat: Timmers 2019 A beta1 −0.0065 (SE 0.0090), P 0.47; Pilling 2017's parents P 0.46 to 0.99; Park
   2025's own survival P 0.70 (men 0.43, women 0.75); FinnGen R11's deaths T β +0.037, P 0.081, a database line
   (D29.1); Deelen 2019 90th P 0.56, 99th P 0.23; Zenin 2019 P 0.70; Foote 2025's factors 1, 2, 3, 5 and 6 P 0.16 to
   0.88 (the general factor and factor 4 hold no line). The literature search (the rsID, 2026-11-16) finds nothing
@@ -23,21 +25,22 @@ verdict_reason: >-
   D37.12); `direction: unknown`. Outcome cells read for T: exceptional survival 0, lifespan 0, healthspan 0 (each
   flat). Mechanism: markers of biological ageing. No pleiotropy read: the Catalog holds the clock line alone, and Open
   Targets' thiopurine-metabolism sets at the neighbouring TPMT hold it at PIP 0.02 or less. Causal C1 (PIP 0.72 in the
-  IEAA set). Effector E2, NHLRC1: locus-to-gene 0.65 (TPMT 0.55, named), and the variant lies in NHLRC1's 3′ UTR and
-  in its expression credible sets at low PIP (no colocalisation read). Descriptive. Age of action unknown. The
-  evidence is mostly European, with African American and other samples in both studies.
+  IEAA set). Effector E3: locus-to-gene puts NHLRC1 at 0.65 but TPMT at 0.55, a rival that passes the threshold itself (D24,
+  D38.13), though the variant lies in NHLRC1's 3′ UTR and its expression credible sets at low PIP (no colocalisation
+  read). Descriptive. Age of action unknown. The
+  anchor is European; Lu's non-European line agrees.
 axes:
-  tier: {value: B, cites: [pmid-34187551#q1, pmid-34187551#q2, pmid-34187551#q3, db-gwascatalog-2026.10.29#q663, db-gwascatalog-2026.10.29#q664, db-gwascatalog-2026.10.29#q665, db-gwascatalog-2026.10.29#q666, pmid-29374233#q1, pmid-29374233#q2, pmid-29374233#q3, pmid-29374233#q4, pmid-29374233#q5, db-ensembl-116#q1017]}
+  tier: {value: B, cites: [pmid-34187551#q1, pmid-34187551#q2, pmid-34187551#q3, db-gwascatalog-2026.10.29#q663, db-gwascatalog-2026.10.29#q664, db-gwascatalog-2026.10.29#q665, db-gwascatalog-2026.10.29#q666, pmid-29374233#q1, pmid-29374233#q2, pmid-29374233#q3, pmid-29374233#q4, pmid-29374233#q5, db-ensembl-116#q1017, pmid-34187551#q6, pmid-34187551#q7, pmid-34187551#q8, pmid-34187551#q10, db-gwascatalog-2026.10.29#q690, db-gwascatalog-2026.10.29#q691, db-gwascatalog-2026.10.29#q692, db-gwascatalog-2026.10.29#q693, db-gwascatalog-2026.10.29#q694, db-gwascatalog-2026.10.29#q695, db-gwascatalog-2026.10.29#q696, pmid-29374233#q6, pmid-29374233#q7, pmid-29374233#q8]}
   mechanism: {value: ageing_markers, cites: [pmid-34187551#q3, db-gwascatalog-2026.10.29#q664, db-gwascatalog-2026.10.29#q665]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
-            cites: [pmid-30642433#q409, pmid-29227965#q212, pmid-40021682#q161, db-finngen-r11#q112, pmid-31413261#q330, pmid-31413261#q331, pmid-30729179#q172, pmid-40759756#q138, pmid-40759756#q141]}
+            cites: [pmid-30642433#q409, pmid-29227965#q212, pmid-40021682#q161, db-finngen-r11#q112, pmid-31413261#q330, pmid-31413261#q331, pmid-30729179#q172, pmid-40759756#q138, pmid-40759756#q139, pmid-40759756#q140, pmid-40759756#q141, pmid-40759756#q142]}
   actionability: {label: descriptive, cites: [db-gwascatalog-2026.10.29#q663]}
   context: {values: [], cites: []}
 flags:
   - {token: "causal:C1", cites: [db-opentargets-26.09#q1288, db-opentargets-26.09#q1289, db-opentargets-26.09#q1290, db-opentargets-26.09#q1291]}
-  - {token: "effector:E2", cites: [db-opentargets-26.09#q1292, db-opentargets-26.09#q1293, db-opentargets-26.09#q1294, db-opentargets-26.09#q1295, db-ensembl-116#q1015, db-ensembl-116#q1016]}
+  - {token: "effector:E3", cites: [db-opentargets-26.09#q1292, db-opentargets-26.09#q1293, db-opentargets-26.09#q1294, db-opentargets-26.09#q1295, db-ensembl-116#q1015, db-ensembl-116#q1016]}
 variants:
   - rsid: rs10949481
     gene: NHLRC1
@@ -54,45 +57,45 @@ variants:
         conclusion: >-
           You carry two copies of the common version of this DNA position (about 92 in 100 people of European ancestry
           do). It is the reference the other combinations are compared with. The position lies in the NHLRC1 gene on
-          chromosome 6. Epigenetic clocks estimate age from chemical marks on DNA; they only mean something against
-          your calendar age, so this result carries no score.
+          chromosome 6. Epigenetic clocks estimate age from chemical marks on DNA; a clock's reading only means
+          something against your calendar age, which this report does not have, so this result carries no score.
       - genotype: A/T
         state: neutral
         conclusion: >-
           You carry one copy of the T version of this DNA position (about 8 in 100 people of European ancestry do).
-          Large studies link it with an epigenetic clock reading about one year younger than calendar age, on
-          average. That is a tendency in a marker, not a measure of how you are ageing, and studies of lifespan show no
-          effect of this position, so it carries no score.
+          Large studies link it with an epigenetic clock reading about a year lower than expected for your age,
+          compared with people without T. That is a tendency in a marker whose reading only means something against
+          your calendar age, which this report does not have, so it carries no score.
       - genotype: T/T
         state: neutral
         conclusion: >-
           You carry two copies of the T version of this DNA position, which is rare (fewer than 1 in 100 people of
-          European ancestry). Each copy is linked in large studies with an epigenetic clock reading about one year
-          younger than calendar age, on average; that is a tendency in a marker, and studies of lifespan show no effect
-          of this position, so it carries no score.
+          European ancestry). Each copy is linked in large studies with an epigenetic clock reading about a year lower
+          than expected for your age, compared with people without T. That is a tendency in a marker whose reading only
+          means something against your calendar age, which this report does not have, so it carries no score.
 studies:
   - rsid: rs10949481
     note: pmid-34187551
-    quote: q3
+    quote: q10
     phenotype_class: BIOMARKER
     study_design: meta_analysis
-    population: European and African American (McCartney 2021's clock GWAS cohorts)
-    ancestry: [EUR, AFR]
-    sample_size: 40905
+    population: European (McCartney 2021's European IEAA analysis)
+    ancestry: [EUR]
+    sample_size: 34461
     sample_unit: individuals
     stat_significance: significant
-    p_value: "4E-54"
-    p_value_num: 4.0e-54
-    effect_size: -1.08
+    p_value: "4.48065e-54"
+    p_value_num: 4.48065e-54
+    effect_size: -1.0823
     effect_measure: beta
     effect_unit: years of intrinsic epigenetic age acceleration per T allele
     effect_allele: T
     direction: unknown
-    statistical_test: "McCartney 2021's GWAS meta-analyses of epigenetic clocks (q1, q2; NHLRC1 among IEAA's loci, q3); the lead, allele, effect (1.08 years lower per T, 0.95 to 1.22) and P from the GWAS Catalog's record of the study (GCST90014290, db-gwascatalog-2026.10.29#q663 to q666), the per-variant tables not cached; a marker study (D32, D37.12)"
+    statistical_test: "McCartney 2021's GWAS meta-analyses of epigenetic clocks (q1, q2; NHLRC1 among IEAA's loci, q3); Table S4 (caption q6, legend q7, header q8): European IEAA, rs10949481 refA T (0.053) b −1.0823, SE 0.0699, P 4.5e-54, effective n 29,139 (q10); the European sample 34,461 as the GWAS Catalog's study record gives it (GCST90014290, db-gwascatalog-2026.10.29#q690); a marker study (D32, D37.12)"
     curator: claude-opus-5-5
   - rsid: rs10949481
     note: pmid-29374233
-    quote: q4
+    quote: q6
     phenotype_class: BIOMARKER
     study_design: meta_analysis
     population: European (Lu 2018's European data sets; 9,907 people of all ancestries in the study)
@@ -108,5 +111,5 @@ studies:
     effect_unit: years of intrinsic epigenetic age acceleration per T allele of rs143093668
     effect_allele: T
     direction: unknown
-    statistical_test: "Lu 2018's IEAA GWAS (q1, q2), Table 1 (columns q3): the 6p22.3 lead rs143093668 near KIF13A-NHLRC1 (q4), T at 0.05, Europeans β −1.78 (SE 0.10), P 1.9e-21 (q5); r² 1.00 with rs10949481 in CEU (db-ensembl-116#q1017); its overlap with McCartney's cohorts not read"
+    statistical_test: "Lu 2018's IEAA GWAS (q1, q2), Table 1 (columns q3): the 6p22.3 lead rs143093668 near KIF13A-NHLRC1 (q4), T at 0.05, Europeans β −1.78 (SE 0.10), P 1.9e-21 (q5; the SE does not reproduce the P, which implies about 0.19, the printed P read, D22.3); non-Europeans −1.37, P 2.4e-5 (q7); r² 1.00 with rs10949481 in CEU (db-ensembl-116#q1017); five of its eight cohorts (q8) are McCartney's (db-gwascatalog-2026.10.29#q691 to q696), so not independent of it (D19.1)"
     curator: claude-opus-5-5
