@@ -1220,3 +1220,19 @@ Settled under the person's standing word, each with the alternative it rejected.
    the heterogeneity test alone, which reads the clause without its direction; (b) A against Codd's joint estimate,
    since like for like is marginal; (c) a ratio bound between 0.58 and 0.79, a rule fitted to one case. The row
    prints both estimates and the heterogeneity P, and says which study it tiers from.
+2. **129 KANSL1 and 142 MAPT fold into one row, 142 MAPT, carrying rs4327091, with `also_loci: [129]`** (D14). Both
+   seed ids lead Jawinski 2025's locus 49 (the 17q21.31 inversion), and Open Targets' credible set for the combined
+   brain-age analysis is led by rs4327091 and holds rs2260227. The row is filed under the seed locus whose id it
+   carries, so the file name and the variant agree; rs2260227 is named as 129's id inside that set, with its own
+   look-ups (Deelen, Park, FinnGen) beside rs4327091's. Rejected: (a) as asked, a row 129 carrying 142's id, which
+   files a variant under a locus whose seed id it is not; (b) rs2260227 with rs4327091's look-ups as an unmeasured
+   proxy, since the deposits hold the combined lead and Ensembl gives no r² for rs2260227. The effector stays open
+   across the inversion (MAPT, KANSL1 and their neighbours), as the curator's evidence decides.
+3. **117 GRIK2 loses `replication_failed` and goes D to C until Broer's Table 3 is quoted.** D38.10 read the allele
+   from Table 3, but the table still cannot be cached (Europe PMC 500, the publisher 403, the plugin's text the
+   abstract only), and a reading no note quotes cannot carry a claim. That leaves the allele on the Catalog's record
+   alone, and D38.10's own fallback then holds: the flag's direction is unknown (D12), so no flag, and the tier is
+   the sub-genome-wide discovery's C. The row says the flag is unknown, not absent, names Table 3 as the one source that
+   settles it, and keeps the look-ups' numbers. Once a session quotes Table 3's line (a browser copy is enough), the
+   flag and D come back with no further decision. Rejected: keeping D on the unquoted reading, which is a claim the
+   corpus cannot check.
