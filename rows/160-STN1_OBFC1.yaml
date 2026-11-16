@@ -6,16 +6,11 @@ locus_id: 160
 locus_name: STN1/OBFC1
 verdict: kept
 verdict_reason: >-
-  Tier A on the marker's own evidence (D37.12; the seed gives none), tiered from the seed's study, Li 2020 (D39.4,
-  D39.1): the tier grades the association with leukocyte telomere length, not longevity, and this row is unscored
+  Tier B on the marker's own evidence (D37.12; the seed gives none), the whole genome-wide record read (D39.4's first half), §4.1's clause on the pair that earns A (D39.7): the tier grades the association with leukocyte telomere length, not longevity, and this row is unscored
   (D32). Li 2020's meta-analysis (78,592 Europeans of ENGAGE, EPIC-CVD and EPIC-InterAct, no UK Biobank) prints
   rs9419958 with C (EA) at 0.86, β −0.064 SD (SE 0.007), P 5.05e-19: T longer. Codd 2021's 472,174 UK Biobank
   participants print it as locus 67's second conditionally independent sentinel (beside rs10748858, r² 0.08), A1 T
-  at 0.139, marginal β +0.081 (0.075 to 0.087), P 2.6e-167, N_imp 463,885, joint +0.068, Europeans the same: the same
-  allele and side, an independent genome-wide replication. D21's test, marginal against marginal: Li +0.064 for T
-  (SE 0.007) against Codd +0.081 (SE about 0.0031), heterogeneity P 0.026, Codd's power at Li's effect 1.00. The
-  replication is the larger, so §4.1's "replication with a much smaller effect" does not apply: a discovery smaller
-  than its replication is no shrinkage (D39.1). §4.1's A. Mangino 2012's line (T +0.083, P 9e-11, the GWAS Catalog's
+  at 0.139, marginal β +0.081 (0.075 to 0.087), P 2.6e-167, N_imp 463,885, joint +0.068, Europeans the same: the same allele and side. The pair that earns A is Codd 2021, the study of 100k or more, as its anchor and Li 2020, independent of it, as its replication (D39.7). D21's test, marginal against marginal: Li +0.064 for T (SE 0.007) against Codd +0.081 (SE about 0.0031), 0.79 times, heterogeneity P 0.026, Codd's power at Li's effect 1.00: the replication's effect is the smaller at P < 0.05 with power, §4.1's "replication with a much smaller effect", whichever was published first (D39.7). So B, not A. Li also reports no nominal support for STN1(OBFC1) in Dorajoo's Singaporean Chinese summary statistics (q10; its Table S7 unread, so the test and the variant compared are unknown), named. Mangino 2012's line (T +0.083, P 9e-11, the GWAS Catalog's
   record, its sample unread) agrees, named, not counted. Lifespan look-ups, unscored and read for T, two-sided at
   0.05 (D38.6): Timmers 2019 T beta1 −0.0060 (SE 0.0057), P 0.29; Pilling 2017's parents P 0.061 to 0.97; Park 2025's
   own survival P 0.17 (men 0.85; women T with more deaths, P 0.019, a stratum, D38.8); Deelen 2019 90th P 0.69,
@@ -32,7 +27,7 @@ verdict_reason: >-
   0.36 in Li's). Effector E2, STN1: locus-to-gene 0.89 on the PC1 set (SH3PXD2A 0.05) and 0.87 on Li's, the variant
   intronic in STN1. Descriptive. Age of action unknown. The evidence is European.
 axes:
-  tier: {value: A, cites: [pmid-32109421#q1, pmid-32109421#q2, pmid-32109421#q9, pmid-34611362#q1, pmid-34611362#q2, pmid-34611362#q3, pmid-34611362#q4, pmid-34611362#q17, pmid-34611362#q6, pmid-34611362#q18, db-ensembl-116#q1089, db-gwascatalog-2026.10.29#q750, db-gwascatalog-2026.10.29#q751, db-gwascatalog-2026.10.29#q752, db-gwascatalog-2026.10.29#q753, db-gwascatalog-2026.10.29#q754, db-ensembl-116#q1085, db-ensembl-116#q1086]}
+  tier: {value: B, cites: [pmid-32109421#q1, pmid-32109421#q10, pmid-32109421#q2, pmid-32109421#q9, pmid-34611362#q1, pmid-34611362#q2, pmid-34611362#q3, pmid-34611362#q4, pmid-34611362#q17, pmid-34611362#q6, pmid-34611362#q18, db-ensembl-116#q1089, db-gwascatalog-2026.10.29#q750, db-gwascatalog-2026.10.29#q751, db-gwascatalog-2026.10.29#q752, db-gwascatalog-2026.10.29#q753, db-gwascatalog-2026.10.29#q754, db-ensembl-116#q1085, db-ensembl-116#q1086]}
   mechanism: {value: ageing_markers, cites: [pmid-32109421#q1, db-gwascatalog-2026.10.29#q751]}
   pleiotropy: {values: ["mech:cancer"], cites: [db-opentargets-26.09#q1410, db-opentargets-26.09#q1411, db-gwascatalog-2026.10.29#q755, db-gwascatalog-2026.10.29#q756, db-gwascatalog-2026.10.29#q757, db-gwascatalog-2026.10.29#q758, db-gwascatalog-2026.10.29#q759, db-gwascatalog-2026.10.29#q760]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -95,7 +90,7 @@ studies:
     effect_unit: SD of mean leukocyte telomere length per T allele (Table 1's −0.064 per C, negated)
     effect_allele: T
     direction: unknown
-    statistical_test: "Li 2020's genome-wide meta-analysis (q1), Table 1 (columns q2): rs9419958 at STN1 (OBFC1), C (EA) at 0.86, β −0.064, SE 0.007, P 5.05e-19 (q9); the seed's study, which the row tiers from (D37.11, D39.1); a marker study (D32, D37.12)"
+    statistical_test: "Li 2020's genome-wide meta-analysis (q1), Table 1 (columns q2): rs9419958 at STN1 (OBFC1), C (EA) at 0.86, β −0.064, SE 0.007, P 5.05e-19 (q9); the seed's study and the replication in §4.1's A pair, Codd its anchor (D39.7), 0.79 times Codd's effect; a marker study (D32, D37.12)"
     curator: claude-opus-5-5
   - rsid: rs9419958
     note: pmid-34611362
@@ -114,5 +109,5 @@ studies:
     effect_unit: SD of log-transformed, Z-standardized LTL per T allele (Table S1's A1 T, marginal)
     effect_allele: T
     direction: unknown
-    statistical_test: "Codd 2021's GWAS of LTL in 472,174 UK Biobank participants (q1, q2), Supplementary Table 1 (A1 the effect allele, q3; header q4): locus 67's second sentinel rs9419958, A1 T at 0.139, marginal β +0.081 (0.075 to 0.087), P 2.6e-167, N_imp 463,885.1 (rounded), joint +0.068 (q17); its set PP 0.43 (header q6, q18); outside Li 2020's samples; D21 marginal against marginal: heterogeneity P 0.026, power 1.00, the replication the larger, so not §4.1's smaller-effect clause (D39.1): the independent replication on the same allele (§4.1's A)"
+    statistical_test: "Codd 2021's GWAS of LTL in 472,174 UK Biobank participants (q1, q2), Supplementary Table 1 (A1 the effect allele, q3; header q4): locus 67's second sentinel rs9419958, A1 T at 0.139, marginal β +0.081 (0.075 to 0.087), P 2.6e-167, N_imp 463,885.1 (rounded), joint +0.068 (q17); its set PP 0.43 (header q6, q18); outside Li 2020's samples; the anchor of §4.1's A pair (D39.7), Li its independent replication; D21 marginal against marginal: Li 0.79 times, heterogeneity P 0.026, power 1.00, so §4.1's smaller-effect clause fires: B"
     curator: claude-opus-5-5
