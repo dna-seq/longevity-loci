@@ -8,35 +8,38 @@ locus_id: 117
 locus_name: GRIK2
 verdict: re-tiered
 verdict_reason: >-
-  Tier D, from no seed tier: a sub-genome-wide discovery that fails a powered test in its own ancestry outside its
-  sample (D26.8, D21; row 136's shape). Broer 2015 meta-analysed 6,036 Europeans aged 90 or over against 3,757 who died
+  Tier C, from no seed tier: a sub-genome-wide discovery whose D21 test cannot be read in a direction until Broer's
+  Table 3 is quoted (D39.3). Broer 2015 meta-analysed 6,036 Europeans aged 90 or over against 3,757 who died
   between 55 and 80 in the CHARGE cohorts: a suggestive association near GRIK2, OR 1.24 (1.15–1.34) per C, P 5.09e-8,
   just short of the genome-wide line, and the paper names no new genome-wide locus. The full text is not cached
   (Europe PMC answered 500 and OUP's PDF 403; PMC's copy refused an automated fetch, 2026-11-16), so the lead, its
   allele and its frequency rest on the GWAS Catalog's record of the study (C at 0.75, the risk allele of "longevity").
   Broer's own Table 3, read live by the batch-fifteen review on PMC, prints the same (EA C, 0.75, OR 1.24, 1.15 to
-  1.34), but it is not yet cached or quoted here; until it is, the allele, and the flag that depends on its direction,
-  rest on a database record (D12, D38.10): D stands pending that table. Deelen 2019 holds the variant (C +0.031,
+  1.34), but it is not yet cached or quoted here (Europe PMC 500 and OUP 403 again, 2026-11-16), and a reading no note
+  quotes cannot carry a claim. So the allele rests on the Catalog's record alone, and D38.10's own fallback holds: the
+  flag's direction is unknown (D12), so the row carries no flag, and the tier is the sub-genome-wide discovery's C
+  (D39.3). The flag is unknown, not absent: the test below would flag it if Table 3's allele is quoted as C, and that
+  line alone puts back `replication_failed` and D with no new decision. Deelen 2019 holds the variant (C +0.031,
   SE 0.022, P 0.16 at the 90th percentile; +0.006, P 0.86 at the 99th), C's way and flat, but its meta-analyses hold most
   of Broer's CHARGE cohorts, so it is not an independent test (D19). Timmers 2019's parental lifespan, outside that
   sample, has C with shorter-lived parents, beta1 −0.0071 (SE 0.0045), P 0.12. Carried to Timmers' scale (D25.3) by
   Deelen's 90th percentile calibrations, the nearest to Broer's 90-and-over design, the discovery expects C +0.044 by
   APOE's factor (4.84) and +0.106 by the loci's mean factor: power 1.00 under both, heterogeneity P 2.5e-8 and 1e-8,
   and at half the effect, the discovery's SE kept, P 0.0015 and 0.0023 at power 0.999 and 1.00 (derived): a D21 red
-  flag under both calibrations (D26.3), `replication_failed`. The APOE factor is borrowed and approximate (Broer's text
+  flag under both calibrations (D26.3) if C is Broer's allele, which only the Catalog says so far. The APOE factor is borrowed and approximate (Broer's text
   gives APOE only at another SNP, so no same-SNP factor), but the flag does not depend on it: power stays at 0.8 or
   more and heterogeneity under 0.05 for any factor up to about 17, 3.5 times Deelen's 4.84 (derived). No independent scoring-class study passes C's way (D25.1):
   FinnGen R11's deaths have C with fewer deaths, flat (G β +0.0092, P 0.23, a database line); Park 2025's own survival
   flat (P 0.92; men 0.86, women 0.94); Pilling 2017's parents, inside Timmers' pool, all against C and flat (P 0.28 to
   0.47). Zenin 2019's healthspan puts G with the later end of healthspan, P 0.058, one-sided 0.029 against C. Foote
   2025's deposits hold no line (untested). The literature search (the rsID with GRIK2, 2026-11-16) finds Broer alone.
-  Every genotype neutral (D25.2). Exceptional survival 0 (Deelen flat and not independent; a D row's discovery gives no
-  +, D28.10); lifespan 0 (Timmers one-sided 0.058 against, short of 0.05; Park and FinnGen flat); healthspan − (Zenin,
+  Every genotype neutral: the allele that would carry a state rests on a database record alone (D39.3). Exceptional
+  survival 0 (Deelen flat and not independent; the discovery gives no + while its allele is unquoted); lifespan 0 (Timmers one-sided 0.058 against, short of 0.05; Park and FinnGen flat); healthspan − (Zenin,
   one-sided 0.029 against, nothing for; D28.3). Mechanism ageing in general (D25.7): intergenic, near GRIK2, a
   glutamate receptor gene; nothing recorded at the variant. Causal C4 and effector E4: no Open Targets record.
   Descriptive. Age of action unknown. The evidence is European.
 axes:
-  tier: {value: D, cites: [pmid-25199915#q3, pmid-25199915#q4, pmid-25199915#q2, db-gwascatalog-2026.10.29#q603, db-gwascatalog-2026.10.29#q604, db-gwascatalog-2026.10.29#q605, pmid-31413261#q323, pmid-31413261#q324, pmid-31413261#q28, pmid-30642433#q405, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, db-finngen-r11#q108, pmid-40021682#q148, pmid-40021682#q149, pmid-40021682#q150, pmid-29227965#q200, pmid-29227965#q201, pmid-29227965#q202, pmid-29227965#q203, pmid-30729179#q168, db-ensembl-116#q972]}
+  tier: {value: C, cites: [pmid-25199915#q3, pmid-25199915#q4, pmid-25199915#q2, db-gwascatalog-2026.10.29#q603, db-gwascatalog-2026.10.29#q604, db-gwascatalog-2026.10.29#q605, pmid-31413261#q323, pmid-31413261#q324, pmid-31413261#q28, pmid-30642433#q405, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, db-finngen-r11#q108, pmid-40021682#q148, pmid-40021682#q149, pmid-40021682#q150, pmid-29227965#q200, pmid-29227965#q201, pmid-29227965#q202, pmid-29227965#q203, pmid-30729179#q168, db-ensembl-116#q972]}
   mechanism: {value: general_ageing, cites: [db-ensembl-116#q974, db-opentargets-26.09#q1261]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -45,7 +48,6 @@ axes:
   actionability: {label: descriptive, cites: [pmid-25199915#q4]}
   context: {values: [eur_only_evidence], cites: [pmid-25199915#q3, db-ensembl-116#q972]}
 flags:
-  - {token: replication_failed, cites: [pmid-30642433#q405, pmid-25199915#q4, db-gwascatalog-2026.10.29#q603, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92]}
   - {token: "causal:C4", cites: [db-opentargets-26.09#q1261]}
   - {token: "effector:E4", cites: [db-opentargets-26.09#q1261]}
 variants:
