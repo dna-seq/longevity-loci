@@ -21,7 +21,7 @@ verdict_reason: >-
   it calls considerably lower than its own, back-solves to 0.271 %, the genomes' frequency, not the exomes' 0.288 %
   (likely genomes-based; a gnomAD v4.0 against v4.1 gap is not ruled out; D34.14). Kolbe chose its hits from about 98,000 rare variants, so a reference OR still carries that
   selection, uncorrected (D34.14). Only the Finns (0.20 % and 0.16 %, a bottlenecked population, P 0.02 and 0.09) or UK Biobank's imputed
-  0.15 % (Zenin's and Park's frequency, a dosage, not a sequenced reference) would put the controls near fit. So the
+  0.15 % (Zenin's and Park's frequency, a dosage, not a sequenced reference) would put the controls near fit. UK Biobank's imputed deposits put T at 0.15 % against gnomAD's sequenced 0.29 %: read as imputation under-calling (D35.6), since Kolbe notes gnomAD's non-Finnish Europeans are mostly British (q12); whether the release Ensembl 116 reads is gnomAD v4, whose exomes are largely UK Biobank's, is not stated in the records read, and neither deposit prints an imputation-quality value (Park's columns, pmid-40021682#q28; Pilling's header, pmid-29227965#q187), so the reading is pending, put to the lead; the deposits' lines here are weak looks. So the
   case-control OR is the controls' deficit and sets nothing (D31.10, D31.11), row 109's shape. With the paper's sex
   ratios (2.7:1 women among the long-lived, 1:1.4 among the controls) the women carry about 1 copy in some 1,820
   long-lived alleles (5.2 expected from gnomAD's exomes, P 0.033) and none in some 3,420 control alleles (9.8
@@ -55,7 +55,7 @@ verdict_reason: >-
   the change is synonymous and alters no protein (D31.9). Descriptive. Age of action unknown. The evidence is
   European.
 axes:
-  tier: {value: D, cites: [db-ensembl-116#q814, db-ensembl-116#q815, pmid-40232348#q18, pmid-40232348#q3, pmid-40232348#q2, pmid-40232348#q21, pmid-40232348#q22, pmid-40232348#q23, pmid-40232348#q24, pmid-40232348#q19, pmid-40232348#q15, pmid-40232348#q10, pmid-40232348#q20, db-ensembl-116#q809, db-finngen-r11#q91, pmid-40021682#q119, pmid-40021682#q32, pmid-30729179#q158, db-gwascatalog-2026.10.29#q576]}
+  tier: {value: D, cites: [pmid-40021682#q28, pmid-29227965#q187, db-ensembl-116#q814, db-ensembl-116#q815, pmid-40232348#q18, pmid-40232348#q3, pmid-40232348#q2, pmid-40232348#q21, pmid-40232348#q22, pmid-40232348#q23, pmid-40232348#q24, pmid-40232348#q19, pmid-40232348#q15, pmid-40232348#q10, pmid-40232348#q20, db-ensembl-116#q809, db-finngen-r11#q91, pmid-40021682#q119, pmid-40021682#q32, pmid-30729179#q158, db-gwascatalog-2026.10.29#q576]}
   mechanism: {value: general_ageing, cites: [pmid-40232348#q25]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
