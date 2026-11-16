@@ -13,7 +13,7 @@ verdict_reason: >-
   heterogeneity P 0.56 across the groups: T, the stop-gain, lower; the legend names AF_Allele2 the reference allele's
   frequency, so the β is per C, and the GWAS Catalog's record (C, 0.10863 increase) agrees. Table 3 fine-maps it at
   PIP 1, annotated pLoF. No second sample prints it: Koller 2024's and Zaidi 2023's supplements hold no line for it
-  (by rsID and both builds' positions), and the Catalog and Open Targets hold Gupta's two lines alone (adjusted and
+  (by rsID and gene, Koller's by GRCh37 position, Zaidi's by both builds'), and the Catalog and Open Targets hold Gupta's two lines alone (adjusted and
   raw copy number, the same people). Genome-wide in a study of 100k or more, unreplicated: §4.1's B. Lifespan
   look-ups, unscored and read for T, two-sided at 0.05 (D38.6): Timmers 2019 T beta1 +0.0022 (SE 0.0082), P 0.79;
   Pilling 2017's parents P 0.58 to 1; Park 2025's own survival P 0.89 (men 0.53, women 0.53); Deelen 2019 90th P
