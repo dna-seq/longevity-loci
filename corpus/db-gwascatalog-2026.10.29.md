@@ -2560,3 +2560,34 @@ rs2736099 (row 132), ten associations. Lu 2018's IEAA (GCST005287), A +0.631, P 
 cell carcinoma (Choquet 2024, GCST90328132): G 0.090 decrease, P 1e-23, so A raises it (q703 to q705); clonal
 haematopoiesis with TET2 mutation (Wen, GCST90435343): A, OR 1.43, P 3e-13 (q706 to q708). Blood cell fractions,
 neutrophil-to-lymphocyte ratio and ICAM2 named, not read. For row 132.
+
+## Reading 2026-11-16, record
+
+> [q709] _embedded.associations[61] association_id 55993984 risk_frequency 0.59 pvalue_description pvalue_mantissa 3 pvalue_exponent -31 multi_snp_haplotype false snp_interaction false range [0.052-0.076] beta 0.064 unit decrease p_value 3.0000000000000003e-31 accession_id GCST009856 pubmed_id 32109421 first_author Li C ci_lower 0.052 ci_upper 0.076
+
+> [q710] _embedded.associations[61].efo_traits[0] efo_id OBA_0003784 efo_trait chromosome, telomeric region length
+
+> [q711] _embedded.associations[61].snp_effect_allele[0] rs2853677-A
+
+> [q712] _embedded.associations[10] association_id 219075349 risk_frequency 0.61 pvalue_description pvalue_mantissa 1 pvalue_exponent -75 multi_snp_haplotype false snp_interaction false range [0.82-0.86] or_per_copy_num 0.84 or_value 0.84 beta - p_value 1e-75 accession_id GCST90482691 pubmed_id 42152146 first_author Zhu M ci_lower 0.82 ci_upper 0.86
+
+> [q713] _embedded.associations[10].reported_trait[0] Lung cancer
+
+> [q714] _embedded.associations[10].snp_effect_allele[0] rs2853677-A
+
+> [q715] _embedded.associations[11] association_id 217875669 risk_frequency 0.5918 pvalue_description pvalue_mantissa 7 pvalue_exponent -12 multi_snp_haplotype false snp_interaction false range [0.91-0.95] or_per_copy_num 0.93 or_value 0.93 beta - p_value 7e-12 accession_id GCST90838662 pubmed_id 42000752 first_author Dai H ci_lower 0.91 ci_upper 0.95
+
+> [q716] _embedded.associations[11].reported_trait[0] Renal cell carcinoma
+
+> [q717] _embedded.associations[11].snp_effect_allele[0] rs2853677-A
+
+> [q718] _embedded.associations[13] association_id 214160110 risk_frequency 0.578 pvalue_description pvalue_mantissa 1 pvalue_exponent -115 multi_snp_haplotype false snp_interaction false range [0.74-0.776] or_per_copy_num 0.758 or_value 0.758 beta - p_value 1e-115 accession_id GCST90435366 pubmed_id 39948438 first_author Wen S ci_lower 0.74 ci_upper 0.776
+
+> [q719] _embedded.associations[13].reported_trait[0] Clonal hematopoiesis (DNMT3A mutation)
+
+> [q720] _embedded.associations[13].snp_effect_allele[0] rs2853677-A
+
+rs2853677 (row 133), 73 associations. Li 2020's leukocyte telomere length (A 0.064 decrease, P 3e-31, trait OBA_0003784;
+q709 to q711). Lung cancer: A OR 0.84, P 1e-75 (q712 to q714), so G raises it; renal cell carcinoma: A OR 0.93, P
+7e-12 (q715 to q717); clonal haematopoiesis with DNMT3A mutation: A OR 0.758, P 1e-115 (q718 to q720). Blood
+cell traits, protein levels and the rest named, not read. For row 133.

@@ -1,0 +1,118 @@
+# The seed list's locus 133, TERT (5p15.33): a marker of biological ageing (D32, D36.3), curated on D37.12 with 23
+# TERC as the pattern. Curated 2026-11-16. Lead rs2853677, the seed's rsID (Li 2020's second conditionally independent
+# TERT telomere-length signal): intronic in TERT's MANE transcript (a 3′ UTR variant on another), GRCh38 5:1,287,079,
+# GRCh37 5:1,287,194, multi-allelic G/A/T, the row meaning A/G; A at 57.7 % in gnomAD's non-Finnish European genomes. A
+# is the shorter-telomere allele. Row 30's rs2736100 is a partial tag (r² 0.47), row 153's rs7705526 another (r² 0.21).
+locus_id: 133
+locus_name: TERT
+verdict: kept
+verdict_reason: >-
+  Tier A on the marker's own evidence (D37.12; the seed gives none): the tier grades the association with leukocyte
+  telomere length, not longevity, and this row is unscored (D32). Codd 2021's 472,174 UK Biobank participants
+  (Supplementary Table 1) print rs2853677 with A1 G at 0.424, β +0.055 SD (0.051 to 0.059), P 1.1e-160, N_imp
+  464,716, Europeans the same, and its own credible set holds it at PP 1: A shorter. Li 2020's meta-analysis (78,592
+  Europeans of ENGAGE, EPIC-CVD and EPIC-InterAct, no UK Biobank) prints it as its second, conditionally independent
+  TERT signal, A (EA) at 0.59, β −0.064 SD (SE 0.006), P 3.35e-31: the same allele and side. D21's test: Li −0.064
+  (SE 0.006) against Codd 2021 −0.055 (SE 0.0020), heterogeneity P 0.16, Li's power at Codd's effect 1.00: no red flag.
+  A study of 100k or more, genome-wide, replicated independently on the same allele: §4.1's A. The seed's other TERT
+  loci are partial tags of it (30's rs2736100 r² 0.47, 153's rs7705526 0.21, CEU); Li and Codd 2021 hold 133 and 153 as
+  separate conditional signals; 132's IEAA set holds it at PIP 0.31, named. Lifespan look-ups, unscored and read for A,
+  two-sided at 0.05 (D38.6): Timmers 2019 A beta1 −0.0061 (SE 0.0040), P 0.13; Pilling 2017's parents P 0.12 to 0.86;
+  Park 2025's own survival P 0.47 (men 0.12, women 0.48); Deelen 2019 90th P 0.72, 99th P 0.98; all flat. FinnGen R11's
+  deaths have A with more deaths, β +0.0180 (SE 0.0077), P 0.019, a database line that fills a cell and lifts nothing
+  (D29.1, D35.1). Zenin 2019's healthspan has A with the later end, −0.0233 (SE 0.0049), P 2.2e-6. Foote 2025's
+  deposits hold no line (untested). The literature search (the rsID, 2026-11-16; Semantic Scholar answered 429, its
+  part unchecked) finds telomere-length and cancer GWASs, no test of lifespan. Every genotype neutral, each conclusion
+  a tendency of the marker with no colour (D32, D37.12); `direction: unknown`. Outcome cells read for A: exceptional
+  survival 0 (Deelen flat); lifespan − (FinnGen two-sided 0.019, A with more deaths; Timmers the same way at 0.13);
+  healthspan + (Zenin two-sided 2.2e-6, A the later end). Mechanism: markers of biological ageing. Pleiotropy
+  `mech:cancer`: G, the longer-telomere allele, raises lung cancer (A OR 0.84, P 1e-75), renal cell carcinoma (A OR
+  0.93, P 7e-12) and clonal haematopoiesis with DNMT3A mutation (A OR 0.76, P 1e-115), as at 30; no `tradeoff`, the row
+  naming no longevity-favoured allele. Causal C1 (PIP 1.00 in the telomere-length set; PP 1 in Codd's). Effector E2,
+  TERT: locus-to-gene 0.65 (CLPTM1L 0.05), the variant intronic in TERT. Descriptive. Age of action unknown. The
+  evidence is European.
+axes:
+  tier: {value: A, cites: [pmid-34611362#q1, pmid-34611362#q2, pmid-34611362#q3, pmid-34611362#q4, pmid-34611362#q9, pmid-34611362#q6, pmid-34611362#q11, pmid-32109421#q1, pmid-32109421#q2, pmid-32109421#q5, db-gwascatalog-2026.10.29#q709, db-gwascatalog-2026.10.29#q711, db-ensembl-116#q1044, db-ensembl-116#q1046]}
+  mechanism: {value: ageing_markers, cites: [pmid-32109421#q1, db-gwascatalog-2026.10.29#q710]}
+  pleiotropy: {values: ["mech:cancer"], cites: [db-gwascatalog-2026.10.29#q712, db-gwascatalog-2026.10.29#q713, db-gwascatalog-2026.10.29#q714, db-gwascatalog-2026.10.29#q715, db-gwascatalog-2026.10.29#q716, db-gwascatalog-2026.10.29#q717, db-gwascatalog-2026.10.29#q718, db-gwascatalog-2026.10.29#q719, db-gwascatalog-2026.10.29#q720]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "−", exceptional_survival: "0",
+            cites: [pmid-30729179#q176, db-finngen-r11#q116, pmid-30642433#q413, pmid-29227965#q228, pmid-29227965#q229, pmid-29227965#q230, pmid-29227965#q231, pmid-40021682#q176, pmid-40021682#q177, pmid-40021682#q178, pmid-31413261#q338, pmid-31413261#q339]}
+  actionability: {label: descriptive, cites: [pmid-34611362#q9]}
+  context: {values: [], cites: []}
+flags:
+  - {token: "causal:C1", cites: [db-opentargets-26.09#q1341, db-opentargets-26.09#q1342, db-opentargets-26.09#q1343, db-opentargets-26.09#q1344, db-opentargets-26.09#q1345, pmid-34611362#q11]}
+  - {token: "effector:E2", cites: [db-opentargets-26.09#q1346, db-opentargets-26.09#q1347, db-opentargets-26.09#q1348, db-opentargets-26.09#q1349, db-opentargets-26.09#q1350, db-ensembl-116#q1058, db-ensembl-116#q1059]}
+variants:
+  - rsid: rs2853677
+    locus: {chrom: "5", start: 1287079, ref: G, cites: [db-ensembl-116#q1055]}  # rs2853677 is multi-allelic (G/A/T); the row means G and A
+    gene: TERT
+    phenotype: TERT intron, leukocyte telomere length
+    trait_efo_id: OBA_0003784
+    effect_allele: A
+    effect_size: -0.055
+    effect_measure: beta
+    stat_significance: significant
+    direction: unknown
+    genotypes:
+      - genotype: A/A
+        state: neutral
+        conclusion: >-
+          You carry two copies of the A version of this DNA position (about 33 in 100 people of European ancestry do).
+          Large studies link each copy of A with slightly shorter telomeres in white blood cells, under a tenth of the
+          usual spread between people per copy. That is a tendency in a marker whose reading only means something
+          against your calendar age, which this report does not have, so it carries no score.
+      - genotype: A/G
+        state: neutral
+        conclusion: >-
+          You carry one copy each of the two versions of this DNA position, the most common combination (about 49 in
+          100 people of European ancestry). It is the reference the other combinations are compared with. The position
+          lies inside TERT, the gene for the enzyme that rebuilds telomeres, the protective caps at the ends of
+          chromosomes. Telomere length is a marker whose reading only means something against your calendar age, which
+          this report does not have, so this result carries no score.
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the G version of this DNA position (about 18 in 100 people of European ancestry do).
+          Large studies link each copy of G with slightly longer telomeres in white blood cells. That is a tendency in a
+          marker whose reading only means something against your calendar age, which this report does not have, so it
+          carries no score.
+studies:
+  - rsid: rs2853677
+    note: pmid-34611362
+    quote: q9
+    phenotype_class: BIOMARKER
+    study_design: meta_analysis
+    population: UK Biobank (Codd 2021's participants, mostly European; the Europeans-only line the same)
+    ancestry: [EUR]
+    sample_size: 464716
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "1.1e-160"
+    p_value_num: 1.1e-160
+    effect_size: -0.055
+    effect_measure: beta
+    effect_unit: SD of log-transformed, Z-standardized LTL per A allele (Table S1's A1 G +0.055, negated)
+    effect_allele: A
+    direction: unknown
+    statistical_test: "Codd 2021's GWAS of LTL in 472,174 UK Biobank participants (q1, q2), Supplementary Table 1 (A1 the effect allele, q3; header q4): locus 36, rs2853677 A1 G at 0.424, β +0.055 (0.051 to 0.059), P 1.1e-160, N_imp 464,716 (q9); its credible set PP 1 (q6, q11); the sample size is N_imp; a marker study (D32, D37.12)"
+    curator: claude-opus-5-5
+  - rsid: rs2853677
+    note: pmid-32109421
+    quote: q5
+    phenotype_class: BIOMARKER
+    study_design: meta_analysis
+    population: European (ENGAGE, EPIC-CVD and EPIC-InterAct; no UK Biobank)
+    ancestry: [EUR]
+    sample_size: 78592
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "3.35 × 10−31"
+    p_value_num: 3.35e-31
+    effect_size: -0.064
+    effect_measure: beta
+    effect_unit: SD of mean leukocyte telomere length per A allele
+    effect_allele: A
+    direction: unknown
+    statistical_test: "Li 2020's genome-wide meta-analysis (q1), Table 1 (columns q2): rs2853677, the second conditionally independent TERT signal, A at 0.59, β −0.064, SE 0.006, P 3.35e-31 (q5); outside UK Biobank, so independent of Codd 2021; D21 against Codd 2021 heterogeneity P 0.16, power 1.00: the independent replication on the same allele (§4.1's A)"
+    curator: claude-opus-5-5

@@ -4747,3 +4747,29 @@ e.g. MAGE at PIP 1.00, A +0.68 (q1324, q1325): A with higher F2RL3 expression, n
 (row 30) is in no McCartney or Lu IEAA set (its cached sets, row 30), only Lin's Taiwanese one at 0.76. Uterine
 leiomyomata at PIP 1.00, G −0.016, so A raises it (q1336, q1337), named. Locus-to-gene on McCartney's IEAA set
 (q1338): TERT 0.73 (q1339, q1340): E2. For row 132.
+
+## Reading 2026-11-16, record
+
+> [q1341] data.variant.credibleSets count 130
+
+> [q1342] data.variant.credibleSets.rows[35].study id GCST90435144 traitFromSource Telomere length (principal component 1) studyType gwas
+
+> [q1343] data.variant.credibleSets.rows[35].locus.rows[0] posteriorProbability 1 beta -0.03784424892541172 pValueMantissa null pValueExponent null
+
+> [q1344] data.variant.credibleSets.rows[108].study id GCST90014290 traitFromSource Intrinsic epigenetic age acceleration studyType gwas
+
+> [q1345] data.variant.credibleSets.rows[108].locus.rows[0] posteriorProbability 0.3069249593864902 beta -0.03362379979189047 pValueMantissa null pValueExponent null
+
+> [q1346] data.credibleSet.study id GCST90435144 traitFromSource Telomere length (principal component 1)
+
+> [q1347] data.credibleSet.l2GPredictions.rows[0] score 0.6508661508560181
+
+> [q1348] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol TERT
+
+> [q1349] data.credibleSet.l2GPredictions.rows[1] score 0.05394750460982323
+
+> [q1350] data.credibleSet.l2GPredictions.rows[1].target approvedSymbol CLPTM1L
+
+5_1287079_G_A (rs2853677, row 133; beta per A): 130 credible sets (q1341); telomere length (principal component 1) at PIP
+1.00, A −0.038 (q1342, q1343): C1; McCartney's IEAA set, row 132's, holds it at 0.31 (q1344, q1345). Locus-to-gene on
+the telomere set (q1346): TERT 0.65, CLPTM1L 0.05 (q1347 to q1350): E2. For row 133.

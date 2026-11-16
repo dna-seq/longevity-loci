@@ -3731,3 +3731,19 @@ rs2736099 (row 132): GRCh38 5:1,287,225 A/G, G ancestral (q1050); A at 34.9 % in
 G 65.1 % (q1051, q1052); intronic in TERT's MANE transcript, NM_198253.3 (q1053, q1054). With row 30's rs2736100
 r² 0.49, D′ 0.93 in CEU (q1043): Lu's IEAA-raising A (0.36) travels with rs2736100's C (McCartney: rs2736100 A lowers
 IEAA), the coupling read from the two papers' signs, not phased. For row 132.
+
+## Reading 2026-11-16, record
+
+> [q1055] mappings[0] allele_string G/A/T coord_system chromosome seq_region_name 5 assembly_name GRCh38 ancestral_allele A location 5:1287079-1287079 end 1287079 strand 1 start 1287079
+
+> [q1056] populations[12] population gnomADg:nfe frequency 0.5773 allele_count 39224 allele A
+
+> [q1057] populations[13] population gnomADg:nfe allele_count 28722 allele G frequency 0.4227
+
+> [q1058] [0].transcript_consequences[0] gene_symbol_source HGNC gene_symbol TERT strand -1 canonical 1 variant_allele A gene_id ENSG00000164362 mane_select NM_198253.3 biotype protein_coding impact MODIFIER transcript_id ENST00000310581 hgnc_id HGNC:11730
+
+> [q1059] [0].transcript_consequences[0].consequence_terms[0] intron_variant
+
+rs2853677 (row 133): GRCh38 5:1,287,079, G/A/T (q1055); A at 57.7 % and G at 42.3 % in gnomAD's non-Finnish European genomes
+(q1056, q1057); intronic in TERT's MANE transcript, NM_198253.3 (q1058, q1059), a 3′ UTR variant on another. For row
+133.
