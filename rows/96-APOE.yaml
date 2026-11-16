@@ -93,7 +93,7 @@ flags:
   - {token: "causal:C1", cites: [db-opentargets-26.09#q1201, db-opentargets-26.09#q1203, db-opentargets-26.09#q1204, db-opentargets-26.09#q1205, db-opentargets-26.09#q1206, db-opentargets-26.09#q1207, db-opentargets-26.09#q1208, db-opentargets-26.09#q1209, db-opentargets-26.09#q1210, db-opentargets-26.09#q1211, db-opentargets-26.09#q1212, db-opentargets-26.09#q1213, db-opentargets-26.09#q1214, db-opentargets-26.09#q1215, db-opentargets-26.09#q1216, db-opentargets-26.09#q1202, pmid-31413261#q296]}
   - {token: "effector:E1", cites: [db-ensembl-116#q837, db-ensembl-116#q838, db-opentargets-26.09#q1217, db-opentargets-26.09#q1218, db-opentargets-26.09#q1219]}
   - {token: "PROTECT:PRESENCE", cites: [pmid-31413261#q291, pmid-31413261#q293, pmid-30060062#q2]}
-  - {token: "also_in:apoe_epsilon", cites: [pmid-37930705#q2]}  # D33 (the person's D2): antonkulaga/apoe_epsilon 1.1.1, the registry's prod catalog, read 2026-11-16; Belloy's table, the source both modules share
+  - {token: "also_in:apoe_epsilon", cites: [db-justdnaregistry-0.31.0#q1, db-justdnaregistry-0.31.0#q2]}  # D33 (the person's D2): antonkulaga/apoe_epsilon 1.1.1 in the registry's prod catalog, read 2026-11-16
   - {token: "ld_proxy_of:rs429358", cites: [db-ensembl-116#q841, db-ensembl-116#q848, db-ensembl-116#q892, db-ensembl-116#q893, db-ensembl-116#q842, db-ensembl-116#q843]}  # one token, three positions (D34.12): rs2075650 (19:44,892,362) r² 0.55 CEU, 0.81 CHB, 0.83 CHS, 0.68 EAS; rs4420638 (19:44,919,689) 0.72 CEU; rs769449 (19:44,906,745) 0.80 CEU (0.799); all folded into APOE (D34.4)
 variants:
   - rsid: rs429358
