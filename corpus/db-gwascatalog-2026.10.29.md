@@ -2460,3 +2460,15 @@ rs11085147 (row 106), six associations. Mitochondrial DNA copy number, trait EFO
 adjusted) C 0.137 SD decrease, P 1e-109, C at 0.905 (q667 to q670); Chong 2022 (GCST90026371, PMID 35023831, UK
 Biobank) T 0.076 increase, P 2e-95 (q671 to q674); both T the higher copy number, both UK Biobank. The raw
 copy-number line and three protein levels (MRPL58, GADD45GIP1, NGRN, T higher) named, not read. For row 106.
+
+## Reading 2026-11-16, record
+
+> [q675] _embedded.associations[0] association_id 97355947 risk_frequency 0.024 pvalue_description pvalue_mantissa 2 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range [1.08-2.11] beta 1.5943 unit increase p_value 2e-09 accession_id GCST90104403 pubmed_id 34962275 first_author Lin WY ci_lower 1.08 ci_upper 2.11
+
+> [q676] _embedded.associations[0].efo_traits[0] efo_id EFO_0000473 efo_trait epigenetic status
+
+> [q677] _embedded.associations[0].reported_trait[0] DNA methylation GrimAge acceleration
+
+> [q678] _embedded.associations[0].snp_effect_allele[0] rs117530284-A
+
+rs117530284 (row 112): one association, Lin 2022 (GCST90104403), GrimAge acceleration, trait EFO_0000473 ("epigenetic status"): A +1.59 years (1.08 to 2.11), P 2e-9, A at 0.024 (q675 to q678). For row 112.

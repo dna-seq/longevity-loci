@@ -4644,3 +4644,19 @@ q1287). For row 30.
 > [q1302] data.variant.credibleSets.rows[1].locus.rows[0] posteriorProbability 0.5889738385126662 beta -0.08153998890573526 pValueMantissa null pValueExponent null
 
 19_5711919_C_T (rs11085147, row 106): 10 credible sets (q1296); Gupta's adjusted copy-number set (q1297) at PIP 1.00 (q1298), Chong's (q1299) at 1.00 (q1300): C1; LONP1's own protein-level set (UKB-PPP, q1301) at 0.59 (q1302). For row 106.
+
+## Reading 2026-11-16, record
+
+> [q1303] data.variant.credibleSets count 1
+
+> [q1304] data.variant.credibleSets.rows[0].study id GCST90104403 traitFromSource DNA methylation GrimAge acceleration studyType gwas
+
+> [q1305] data.variant.credibleSets.rows[0].locus.rows[0] posteriorProbability 0.30402324034653366 beta 1.5943 pValueMantissa 2 pValueExponent -9
+
+> [q1306] data.credibleSet studyLocusId fb635528dfcbe685dbfa7ab4e134635b finemappingMethod PICS
+
+> [q1307] data.credibleSet.l2GPredictions.rows[0] score 0.10941484570503235
+
+> [q1308] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol IBA57
+
+1_228176631_G_A (rs117530284, row 112): one credible set (q1303), Lin's GrimAge set (q1304) at PIP 0.30 (q1305), PICS (q1306): C2. Locus-to-gene IBA57 0.11, the top (q1307, q1308): no gene at 0.5, E3. For row 112.

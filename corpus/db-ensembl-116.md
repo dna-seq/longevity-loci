@@ -3634,3 +3634,21 @@ rs10949481 (row 105): GRCh38 6:18,120,798 A/T, T ancestral (q1012); T at 4.3 % i
 > [q1022] [0].transcript_consequences[0].consequence_terms[0] missense_variant
 
 rs11085147 (row 106): GRCh38 19:5,711,919 C/T, C ancestral (q1018); T at 9.2 % in gnomAD's non-Finnish European genomes (q1019, q1020); a LONP1 missense on its MANE transcript (NM_004793.4), R241Q, SIFT deleterious (low confidence), PolyPhen benign (q1021, q1022). For row 106.
+
+## Reading 2026-11-16, record
+
+> [q1023] mappings[0] allele_string G/A/T coord_system chromosome assembly_name GRCh38 end 228176631 location 1:228176631-228176631 ancestral_allele G start 228176631 seq_region_name 1 strand 1
+
+> [q1024] populations[15] allele A frequency 0.02199 allele_count 114 population gnomADg:eas
+
+> [q1025] populations[16] allele G allele_count 5082 frequency 0.9781 population gnomADg:eas
+
+> [q1026] populations[14] allele_count 6 frequency 8.82e-05 population gnomADg:nfe allele A
+
+> [q1027] populations[68] allele A frequency 0.0218253968253968 allele_count 22 population 1000GENOMES:phase_3:EAS
+
+> [q1028] [0].transcript_consequences[0] transcript_id ENST00000366711 biotype protein_coding gene_id ENSG00000181873 canonical 1 mane_select NM_001010867.4 cdna_end 2202 hgnc_id HGNC:27302 cdna_start 2202 strand 1 impact MODIFIER gene_symbol IBA57 gene_symbol_source HGNC variant_allele A
+
+> [q1029] [0].transcript_consequences[0].consequence_terms[0] 3_prime_UTR_variant
+
+rs117530284 (row 112): GRCh38 1:228,176,631, multi-allelic G/A/T, G ancestral (q1023), the row meaning G/A; A at 2.2 % in gnomAD's East Asian genomes (q1024, q1025), 0.009 % in the non-Finnish Europeans (q1026); 1000 Genomes EAS 22 of 1,008 (q1027); 3′ UTR of IBA57's MANE transcript (q1028, q1029). For row 112.
