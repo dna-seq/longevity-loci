@@ -1312,3 +1312,40 @@ under the person's standing word.
    - **143:** "about a seventeenth".
    - **144:** name the blood-cell sets.
    - **117:** the APOE factor limit is about 19, not 17.
+
+Rows 115 KLF3 and 129 KANSL1 (with 142), read on their own after the marker queue closed.
+
+12. **D39.8 is corrected: the C level reads Open Targets' credible set, the source §4.2's axis table names.** D39.8
+   said §4.2 names no single source; its table names "Open Targets credible set". The row's C level is read there for
+   the row's own phenotype, and the article's own fine-mapping is named in prose. Where Open Targets holds no set for
+   that phenotype, the article's own sets are read, at the level most of its methods support, ties going to the lower.
+   D38.5's tag clause reads the set the C level cites, so it follows. The curator sweeps every row's C level; no tier
+   is expected to move, since a lead inside an article's set is rarely outside Open Targets', and any that moves is
+   reported and read. Moves known now: 143 to C3 (0.054, 0.050), 115 to C2 (0.36; SBayesRC's 1.00 is one method of
+   three, SusieR and FINEMAP about 0.33), 160 re-read. Rejected: the article's set when it reads more favourably,
+   which let one method of several set a C1.
+13. **115 and 129, by row:**
+   - **115:**
+     - exceptional survival `+` from Pilling's top-10 % both-parents line (pmid-29227965#q257, A +0.0042, P 0.043; as
+       68 and 90 file it, D31.8);
+     - lifespan stays `+`, resting on FinnGen alone (P 0.046);
+     - E3 says colocalisations were not read.
+   - **129:**
+     - the PIP it gives rs4327091 (0.0002) is rs2260227's; read rs4327091's own in Open Targets (item 12);
+       Jawinski's SusieR and FINEMAP give 0.0067 and 0.0068;
+     - Jawinski's Table B16 prints 0.979 between the two seed ids: quote it with its column's legend (r or r²) or
+       say it is unread, and drop "no r² is printed";
+     - Pilling's top-10 % line moves to exceptional survival;
+     - `gene: MAPT` is called the host gene, not an effector call;
+     - the clause putting A on the inverted haplotype (H2) is quoted from a source or dropped;
+     - healthspan may go `+` on Foote's factor 2 at r² 1.00 proxies (rs62057143, rs4341787; A less frail, P 2.8e-5),
+       once the proxies' LD (Ensembl 116) and the line are cached and quoted (D39.9).
+   - **Both:** the heterogeneity P values quoted (0.27, 0.089, 0.11) are said to be whatever the table's legend says
+     they compare. They appear to compare the two replication cohorts, and discovery against replication recomputes
+     to 0.47, 0.55 and 0.35 (derived). No tier moves.
+   - **D39.2 holds**: each id is in the other's credible set, the frequencies match (0.2171, 0.2178), the lifespan
+     lines agree, and A raising brain age while going with longer life is no coding flip (every deposit checked
+     against its own sign).
+   - **D39.7 cannot fire**: no brain-age study reaches 100k, so both rows stay B.
+   - **D38.7's marker wording stays for brain age.** Read relative to non-carriers of the same age (D38.13), it is
+     accurate for a gap that already subtracts calendar age. Rejected: a separate brain-age wording.
