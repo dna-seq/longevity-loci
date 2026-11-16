@@ -242,3 +242,7 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
   batch's close.
 - 2026-11-16, trial at trunk 5f631bf (rows 111, 139, 146, 155, 156 added): strict green, 399 variant rows, 609
   studies, every rsID resolved (the rare rs373800184 and rs79645902 too), carried indel VRS 20. Held for the close.
+- 2026-11-16, batch fourteen rehearsed (trunk 3b2c3f1; D35–D37; eff13b1's nominal statistical_test wording; rows
+  117, 127, 159 new since the last trial): 408 variant rows, 615 studies, haplotypes 6, diplotypes 12. Strict green,
+  every rsID resolved; 20 carried indel VRS, module_not_closed, dataset_currency. content_signature cc75b113…,
+  equal local and polygon; artifact b99639c8… (server). No marker row yet (23 TERC next).
