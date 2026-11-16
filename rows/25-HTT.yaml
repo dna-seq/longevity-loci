@@ -3,7 +3,7 @@
 # pmid-30642433#q69). Curated 2026-11-11, the third run's third row. Lead rs61348208 (Timmers 2019, Table 1).
 # rs16843836 (Rosoff 2023's mvAge lead, r² 0.70) and rs362273 (Timmers 2022's aging-GIP1 lead, r² 0.67 EUR, 0.76
 # EAS) are the same signal. The seed's other two rsIDs here, rs16843603 (ADD1, r² 0.095) and rs114298671 (MSANTD1,
-# r² 0.08), are separate mvAge signals, named and not read. Wright 2019's AncestryDNA SNPs in the window are no tag
+# r² 0.08), are separate mvAge signals, now rows 163 and 164 (D39.14), C there on the phased conditional (D39.15). Wright 2019's AncestryDNA SNPs in the window are no tag
 # (best r² 0.43). Open Targets 26.09: Timmers 2019's credible set holds the lead, rs16843836 and rs82334; mvAge's set
 # holds rs16843836 and rs82334, not the lead. The GWAS Catalog (2026-10-29) holds three associations for rs61348208.
 locus_id: 25
