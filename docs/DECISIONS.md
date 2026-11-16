@@ -1256,3 +1256,59 @@ Settled under the person's standing word, each with the alternative it rejected.
    on 2026-11-16 (C, 0.75, OR 1.24); the curator caches and quotes it if `loci fetch-supp` takes it, and the row
    does not wait on it. The flag's numbers reproduce (heterogeneity P 2.5e-8 and 1e-8, power 1.00; 0.0015 and
    0.0023 at half the effect). Rejected: keeping C, which rested on a search that missed the cache.
+
+Batch sixteen's three adversarial reads (128, 132, 133, 141, 143, 144, 145, 149, 153, 160, 161, with 117), settled
+under the person's standing word.
+
+7. **D39.1 and D39.4's second half are withdrawn. §4.1's "replication with a much smaller effect" compares the pair
+   that earns A: the genome-wide study of 100k or more, and its independent replication.** A's criteria name that
+   pair, and 37, 106 and 35 were read on it. The replication is the smaller when its effect is below the anchor's
+   at heterogeneity P < 0.05 with power (D21.13, D38.1), whichever was published first. Rejected: D39.1's
+   discovery-first direction, and D39.4's "earliest genome-wide report", which needed a patch at each row it met:
+   at 160 its reference was a Catalog line whose sample no note reads (D12); at 143 it gave 0.73 times at P 0.031,
+   which only a ratio bound could settle, the bound D39.1 rejected as fitted to one case. D39.4's first half (a
+   marker row is tiered on the marker's whole genome-wide record) and D39.5 stand.
+   - **160 STN1 is B**: Codd 2021 (472,174) is the anchor and Li 2020 (78,592) its replication, 0.79 times,
+     heterogeneity P 0.026, power 1.00. This reverses the lead's reply of 2026-11-16 and is the curator's default (a).
+   - 133, 143, 144 and 153 keep A on the heterogeneity P they print (0.16, 0.53, 0.64, 0.53).
+   - **145 and 23 are unknown until computed**: 145 Thompson against 23andMe and Biobank Japan in one unit, 23
+     Codd 2021 against Codd 2013 (D38.5 already asks it). Each keeps A only if the test does not fire.
+   - Rows citing D39.1 or D39.4 for the clause (145, 160) cite this item instead.
+8. **The C and E levels keep D38.5: the set the row's causal level cites, the article's own or Open Targets'.**
+   Rejected: Open Targets' sets only, which would take 143 to C3. §4.2 names no single source, and no tier rests on it.
+9. **A finding read live (Ensembl REST, Open Targets, a fresh download) moves a cell or a code only once cached and
+   quoted** (D12). That covers 132's LD to 133 and 153, 145's proxies, and the colocalisations behind 128 E1 and
+   149 E2. LD is read in the pinned Ensembl release where it holds the variant.
+10. **145 drops `mech:cancer`.** Its MPN set is an MTAG run that borrows loss-of-Y samples, so it echoes the row's own
+   signal. Its CHIP set prints no P at the variant, and CHIP is not cancer. The prose names both sets. Rejected:
+   keeping the token on a route no independent quote shows.
+11. **Corrections, by row:**
+   - **128 and 149** (each set to `untested`):
+     - lifespan is `untested`, because the allele is under Park's own 0.1 % filter (0.022 % and 0.024 %; D31.13,
+       D26.7), so the line is named but not read. All three of 149's cells are then `untested`.
+     - Their genotype wording reads relative to non-carriers of the same age (D38.13).
+     - `ancestry_specific:afr` stays, as in established use. The prose says it reflects the allele's near-absence
+       in Europeans, not a tested difference.
+   - **161:**
+     - "one large study";
+     - name McCartney's Table S12 colocalisation at the DNTT CpGs (cg19935065, H4 0.9975) as a measurement route,
+       as 128 names its smoking CpG.
+   - **132:**
+     - the European stage is N 8,393;
+     - "non-Europeans agreeing" is quoted or dropped;
+     - its two filled cells are said to be consistent with 133's signal through LD, once that LD is quoted (item 9);
+     - name rs2853677 (PIP 0.31) in McCartney's IEAA set.
+   - **133:** D21's power is Codd's at Li's effect.
+   - **160:**
+     - name Li's statement that STN1 had no nominal support in Dorajoo's Chinese sample, the test unknown;
+     - Codd's STN1 colocalisation belongs to rs10748858, not this sentinel.
+   - **145:**
+     - print the derived heterogeneity P against Wright (0.002 to 0.026, the replication the larger), drop "where
+       the units match";
+     - cite D29.16 and D39.5 for the sex reasoning, not D16, and name Park's men's stratum (P 0.053);
+     - "about a fifth" (risk ratio about 1.18);
+     - read healthspan at a quoted proxy (item 9).
+   - **141:** quote Gupta's "inverse rank normalized" sentence for the SD unit.
+   - **143:** "about a seventeenth".
+   - **144:** name the blood-cell sets.
+   - **117:** the APOE factor limit is about 19, not 17.
