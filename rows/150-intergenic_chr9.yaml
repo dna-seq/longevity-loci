@@ -12,18 +12,20 @@ verdict_reason: >-
   hospital: A (0.119, pooled) OR 0.58 per A, P 1.9e-7, under the paper's suggestive line of 1e-5. Solved from the OR
   and the counts (per Alt, the pooled frequency, as rows 113 and 119 read the tables), the controls carry A at about
   0.157 and the long-lived at about 0.098 (derived). Against gnomAD's East Asian genomes (0.1088, 561 of 5,156
-  alleles), the reference D31.13 fixes, the controls misfit: about 277 copies where 191.5 are expected, P 1.6e-8 with
-  the reference's own error (derived). So the discovery is read against the reference (D31.10): the long-lived show
-  about 312 copies where 347 are expected, OR 0.89 (T 1.13), P 0.12, one-sided 0.059 (derived), nothing there: the
-  case-control OR is the controls' excess and sets nothing (D31.11). Two branches are named, not read: against
+  alleles), the reference D31.13 fixes, the controls misfit: about 277 copies where 191.5 are expected, P 1.6e-8 by a
+  normal test with the reference's own error, Fisher's exact 1.4e-7 (derived). So the discovery is read against the reference (D31.10): the long-lived show
+  about 312 copies where 347 are expected, OR 0.89 (T 1.13), P 0.12, one-sided 0.059 (Fisher's exact 0.11; derived),
+  nothing there: the case-control OR is the controls' excess and sets nothing (D31.11). Across Hsieh's OR interval
+  (0.47 to 0.71, from its P) the read runs from OR 0.81, P 0.0061, to 0.97, P 0.68 (derived): nominal only at the
+  interval's edge. Two branches are named, not read: against
   1000 Genomes CHS (0.133, 210 alleles, with its error) the controls fit (P 0.33) and the long-lived sit lower (P
   0.14), D31.11's shape as 123 and 131 name it; against Taiwan Biobank's printed 0.116, taken as exact, the controls
-  misfit too (P 6e-8) and the long-lived sit lower at P 0.0013 (derived), the table's own population, not D31.13's
-  fixed reference. The validation cohort (85 and over at a second hospital) gives OR 0.504, P 0.0002, but against
-  the discovery's controls, not its own (Fig. 2), so it is not independent (D19.1) and carries the same misfit; its
-  long-lived, solved the same way (about 218, A about 0.086), sit near gnomAD's reference (one-sided about 0.06,
-  derived). A is all but absent in Europeans (0.02 %), so no European sample tests it: Deelen 2019, Timmers 2019,
-  Park 2025, FinnGen R11, Pilling 2017, Zenin 2019 and Foote 2025 are untested, not negative. Hsieh's APOE line in its
+  misfit too (P 6e-8) and the long-lived sit lower at P 0.0013 (derived), the table's own population, not D31.13's fixed reference. That branch is 123's shape (C, exceptional `+`), and
+  D31.13's Hsieh bullet gives C to a Hsieh row with no same-scale contradiction and nothing passing; 150 departs
+  from it because D31.10 reads the discovery against the fixed reference first, and there it shows nothing (D31.11).
+  The choice is put to the lead: D on gnomAD EAS (the default) or C on Taiwan Biobank. The validation cohort (85 and over at a second hospital) gives OR 0.504, P 0.0002, but its controls are not its own (Fig. 2; the cohort is 844 people aged 85 and over, q5), so it is not
+  independent (D19.1); which controls it used is not printed, so its long-lived cannot be read against the reference. A is all but absent in Europeans (0.02 %), so no European sample tests it: Deelen 2019, Timmers 2019, Park 2025 (all three files), FinnGen R11, Pilling 2017, Zenin 2019 and Foote 2025
+  were each looked up at the variant (2026-11-16, GRCh37 9:13,549,783) and hold no line: untested, not negative. Hsieh's APOE line in its
   older groups is null (D31.13), so no calibration is the paper's own. The literature search (the rsID, 2026-11-16;
   Semantic Scholar answered 429, its part unchecked) finds nothing, Hsieh included, which is found by its
   PMID. Every genotype neutral (D25.2). Exceptional
@@ -49,9 +51,9 @@ variants:
     phenotype: 9p23 intergenic, longevity, Taiwanese
     trait_efo_id: OBA_VT0005372
     effect_allele: T
-    effect_size: 1.72
+    effect_size: 1.13
     effect_measure: OR
-    stat_significance: suggestive
+    stat_significance: not_significant
     direction: protective
     genotypes:
       - genotype: T/T
@@ -96,7 +98,25 @@ studies:
     effect_unit: odds of dying at 85 or over per T allele (the printed 0.58 per A, inverted)
     effect_allele: T
     direction: protective
-    statistical_test: "Hsieh 2026's logistic GWAS of the 85-and-over group (Table 1, q34), 1,595 cases and 880 controls (q8); A pooled 0.119; solved per Alt, controls 0.157 and cases 0.098 (derived); the controls misfit gnomAD EAS (db-ensembl-116#q911, 277 against 191.5, P 1.6e-8, derived), so read against it (D31.10): cases 312 against 347, OR 0.89 per A, P 0.12, nothing there (D31.11); named, not read; suggestive line 1e-5 (q4)"
+    statistical_test: "Hsieh 2026's logistic GWAS of the 85-and-over group (Table 1, q34), 1,595 cases and 880 controls (q8); A pooled 0.119; solved per Alt, controls 0.157 and cases 0.098 (derived); the controls misfit gnomAD EAS (db-ensembl-116#q911, 277 against 191.5, P 1.6e-8 normal with the reference's error, Fisher 1.4e-7, derived), so read against it (D31.10, the next entry); named, not read; suggestive line 1e-5 (q4)"
+    curator: claude-opus-5-5
+  - rsid: rs75526165
+    note: pmid-41949656
+    quote: q34
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: Taiwanese long-lived (Hsieh 2026, died at 85 or over) against gnomAD's East Asian genomes as the reference
+    ancestry: [EAS]
+    n_cases: 1595
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: not_significant
+    effect_size: 1.13
+    effect_measure: OR
+    effect_unit: odds of carrying T, the long-lived against the gnomAD EAS reference (derived; the printed comparison inverted to T)
+    effect_allele: T
+    direction: protective
+    statistical_test: "Derived: A solved at 0.098 in the long-lived (about 312 copies in 3,190 alleles) against 347 expected from gnomAD EAS (0.1088, db-ensembl-116#q911, q912): OR 0.89 per A (T 1.13), P 0.12 normal with the reference's error, Fisher's exact 0.11; across Hsieh's OR interval P 0.0061 to 0.68; against Taiwan Biobank's printed 0.116 (q34) P 0.0013, a branch named and put to the lead"
     curator: claude-opus-5-5
   - rsid: rs75526165
     note: pmid-41949656
@@ -115,5 +135,5 @@ studies:
     effect_unit: odds of dying at 85 or over per T allele (the printed 0.504 per A, inverted)
     effect_allele: T
     direction: protective
-    statistical_test: "Table 4 (q35): OR 0.504 per A, SE of the log OR 0.183; against the discovery's controls, not its own, so not independent (D19.1) and carrying their misfit; its long-lived solved (about 218, A 0.086) near gnomAD EAS, one-sided about 0.06 (derived)"
+    statistical_test: "Table 4 (q35): OR 0.504 per A, SE of the log OR 0.183; against the discovery's controls, not its own, so not independent (D19.1) and carrying their misfit; which controls it used is not printed"
     curator: claude-opus-5-5
