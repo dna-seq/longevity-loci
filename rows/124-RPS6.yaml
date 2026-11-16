@@ -13,10 +13,9 @@ verdict_reason: >-
   controls, OR 16.5 (Haldane-corrected), P 1.7e-7, FDR-adjusted 6.4e-3 under the paper's exploratory false-discovery
   rate of 0.05, its own exome-wide call, not a genome-wide one (R-TIER-4, D31.13). On 2,490 and 8,210 alleles that is
   7 copies against 1 (the Haldane OR from 7 and 1 is 16.53, derived). The controls fit the reference D31.13 fixes,
-  gnomAD's non-Finnish European exomes (0.043 %): 3.5 copies expected, 1 seen, Poisson P 0.135 (genomes, 0.054 %:
-  4.5 and P 0.063), yet Kolbe's controls pooled over rows 120, 124 and 125 show 1 copy where 8.3 are expected (P 0.0024, derived), so
+  gnomAD's non-Finnish European exomes (0.043 %): 3.5 copies expected, 1 seen, Fisher's exact on both counts, one-sided P 0.136 (genomes, 0.054 %: 4.5 and P 0.074, Poisson 0.063 before; D37.1, db-ensembl-116#q1136 to q1139), yet Kolbe's controls pooled over rows 120, 124 and 125 show 1 copy where 8.3 are expected (Fisher on the three variants' summed counts P 0.0029, Poisson 0.0024 before, derived), so
   by D34.7 every rare row of the paper is read against the reference, as 107: the long-lived show 7
-  where 1.1 are expected, OR 6.6 (exact Poisson P 1.2e-4, derived), and the paper's own OR against gnomAD is 6.49, with its
+  where 1.1 are expected, OR 6.6 (Fisher one-sided P 1.3e-4, derived), and the paper's own OR against gnomAD is 6.49, with its
   caveat that gnomAD's non-Finnish Europeans are mostly British; the printed 16.5 is named, not read. Kolbe chose its hits from about 98,000 rare variants, so a reference OR still carries that selection, uncorrected (D34.14). The excess is the men's: from the printed
   percentages and the long-lived's 2.7:1 women to men, about 5 copies in 336 long-lived men (0.29 expected from
   gnomAD, P 1.3e-5) and 2 in 909 women (0.78 expected, P 0.18), the one control copy a man's (derived); no sex
@@ -43,7 +42,7 @@ verdict_reason: >-
   change meets no coding clause (§4.2; row 121's way), so no gene is named as acting; RPS6 is the gene it sits in.
   Descriptive. Age of action unknown. The evidence is European (German).
 axes:
-  tier: {value: C, cites: [pmid-40232348#q28, pmid-40232348#q3, pmid-40232348#q2, pmid-40232348#q7, pmid-40232348#q12, pmid-40232348#q29, pmid-40232348#q23, pmid-40232348#q5, pmid-40232348#q16, pmid-40232348#q35, pmid-40232348#q36, pmid-40232348#q24, pmid-40232348#q26, db-ensembl-116#q852, db-ensembl-116#q853, db-ensembl-116#q854, db-finngen-r11#q97, db-finngen-r11#q4, pmid-31484785#q167, pmid-31484785#q168, db-ensembl-116#q855, db-gwascatalog-2026.10.29#q578]}
+  tier: {value: C, cites: [db-ensembl-116#q1136, db-ensembl-116#q1137, db-ensembl-116#q1138, db-ensembl-116#q1139, pmid-40232348#q28, pmid-40232348#q3, pmid-40232348#q2, pmid-40232348#q7, pmid-40232348#q12, pmid-40232348#q29, pmid-40232348#q23, pmid-40232348#q5, pmid-40232348#q16, pmid-40232348#q35, pmid-40232348#q36, pmid-40232348#q24, pmid-40232348#q26, db-ensembl-116#q852, db-ensembl-116#q853, db-ensembl-116#q854, db-finngen-r11#q97, db-finngen-r11#q4, pmid-31484785#q167, pmid-31484785#q168, db-ensembl-116#q855, db-gwascatalog-2026.10.29#q578]}
   mechanism: {value: general_ageing, cites: [pmid-40232348#q30, pmid-40232348#q31, pmid-40232348#q32]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -105,7 +104,7 @@ studies:
     effect_unit: odds of being long-lived per A allele (Haldane-corrected)
     effect_allele: A
     direction: protective
-    statistical_test: "Kolbe 2025's STAAR-O single-variant test with sex and ten principal components (Table 1, q28, columns q3), MAC ≥ 5; cases past the 95th age-at-death percentile of their birth cohort (q7), an age threshold; FDR-adjusted 6.4e-3 under an exploratory FDR < 0.05 (q2); A 0.28 % in the long-lived and 0.01 % in the controls, 7 copies against 1; against gnomAD NFE the paper's own OR 6.49 (its caveat, q12). The controls fit gnomAD exomes (db-ensembl-116#q852; 3.5 copies expected, 1 seen, Poisson P 0.135) and the long-lived sit above it (7 against 1.1, P 1.2e-4), named; by D34.7 read against the reference (the next entry); the gene-based synonymous mask (q29) is this signal (q23)"
+    statistical_test: "Kolbe 2025's STAAR-O single-variant test with sex and ten principal components (Table 1, q28, columns q3), MAC ≥ 5; cases past the 95th age-at-death percentile of their birth cohort (q7), an age threshold; FDR-adjusted 6.4e-3 under an exploratory FDR < 0.05 (q2); A 0.28 % in the long-lived and 0.01 % in the controls, 7 copies against 1; against gnomAD NFE the paper's own OR 6.49 (its caveat, q12). The controls fit gnomAD exomes (db-ensembl-116#q852; 3.5 copies expected, 1 seen, Fisher's exact on both counts, one-sided P 0.136) and the long-lived sit above it (7 against 1.1, P 1.3e-4), named; by D34.7 read against the reference (the next entry); the gene-based synonymous mask (q29) is this signal (q23)"
     curator: claude-opus-5-5
   - rsid: rs189871470
     note: pmid-40232348
@@ -123,5 +122,5 @@ studies:
     effect_unit: odds of carrying A, the long-lived against the gnomAD reference
     effect_allele: A
     direction: protective
-    statistical_test: "The paper's own OR against gnomAD NFE (Table 1, q28, columns q3), with no test printed; the row's read effect by D34.7 (Kolbe's controls pooled over 120, 124 and 125 thin: 1 copy against 8.3, P 0.0024), the reference fixed as the exomes (D31.13). 7 copies in 2,490 long-lived alleles against 1.06 expected from gnomAD's non-Finnish exomes (0.0427 %, db-ensembl-116#q852): OR 6.6, exact Poisson P 1.2e-4 (derived); the authors note gnomAD NFE is mostly British (q12)"
+    statistical_test: "The paper's own OR against gnomAD NFE (Table 1, q28, columns q3), with no test printed; the row's read effect by D34.7 (Kolbe's controls pooled over 120, 124 and 125 thin: 1 copy against 8.3, Fisher on the summed counts P 0.0029), the reference fixed as the exomes (D31.13). 7 copies in 2,490 long-lived alleles against 1.06 expected from gnomAD's non-Finnish exomes (0.0427 %, db-ensembl-116#q852): OR 6.6, Fisher's exact on both counts P 1.3e-4 (derived; q1136, q1137); the authors note gnomAD NFE is mostly British (q12)"
     curator: claude-opus-5-5

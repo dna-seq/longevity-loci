@@ -14,10 +14,8 @@ verdict_reason: >-
   9.40), P 2.45e-6, one of its 22 suggestive loci, with T at 1.35 % across the sample. Every other sample has T near 3
   to 4 %: SICS 2.9 %, Deelen 4 %, Timmers 4.1 %, gnomAD's non-Finnish genomes 4.3 %. Solved from the OR and the counts,
   the controls carry about 2.5 copies in 812 alleles (0.3 %) and the cases about 16.5 in 598 (2.8 %). The reference
-  is gnomAD's non-Finnish genomes, 4.35 % (D31.13: gnomAD has no Italian group): the controls expect 35.3 and the
-  long-lived 26.0 and sit below it (P 0.025, derived), so the signal is the controls' deficit and the long-lived show
-  nothing. The other branches agree: SICS's 2.9 % (D31.11's first choice) expects 23.5 in the controls (Poisson P
-  2e-8) and 17.3 in the cases; 1000 Genomes' Tuscans (3 of 214, 1.4 %), with their own sampling error, put the cases
+  is gnomAD's non-Finnish genomes, 4.35 % (D31.13: gnomAD has no Italian group): the controls expect 35.3 and the long-lived 26.0 and both sit below it (Fisher's exact on both counts, D37.1, db-ensembl-116#q1156, q1157: the controls one-sided 2e-13 to 2e-12 for 2 or 3 copies, the long-lived 0.023 to 0.038 for 16 or 17; derived), so the signal is the controls' deficit and the long-lived show
+  nothing. The other branches agree: SICS's 2.9 % (D31.11's first choice) expects 23.5 in the controls (Poisson P 2e-8, the one form left: SICS prints no sample size, so its count is unknown and no exact test on both counts can be run, D37.1) and 17.3 in the cases; 1000 Genomes' Tuscans (3 of 214, 1.4 %), with their own sampling error, put the cases
   at log OR 0.69, SE 0.63, P 0.27 (derived). So the case-control Beta is the controls' deficit and sets nothing (D31.10, D31.11);
   the SICS replication's flag against it (T −0.265, P 0.56; power 1.00, heterogeneity P 1.4e-4, lapsing at half the
   effect) and Timmers' tested that Beta and are not carried. The row is tiered on the lead's other evidence. Deelen
@@ -41,7 +39,7 @@ verdict_reason: >-
   Causal C4 and effector E4: no Open Targets record either way. Descriptive. Age of action unknown. The evidence is
   European.
 axes:
-  tier: {value: D, cites: [pmid-42176242#q14, pmid-42176242#q15, pmid-42176242#q16, pmid-42176242#q6, pmid-42176242#q11, pmid-42176242#q2, pmid-30642433#q382, pmid-31413261#q250, pmid-30642433#q90, pmid-30642433#q92, pmid-31413261#q82, pmid-31413261#q274, pmid-31413261#q275, pmid-31413261#q56, pmid-31413261#q89, db-gwascatalog-2026.10.29#q393, pmid-29227965#q141, pmid-29227965#q142, pmid-29227965#q143, pmid-29227965#q144, db-finngen-r11#q86, pmid-40021682#q113, pmid-40021682#q32, db-gwascatalog-2026.10.29#q569, db-ensembl-116#q766, db-ensembl-116#q816]}
+  tier: {value: D, cites: [db-ensembl-116#q1156, db-ensembl-116#q1157, pmid-42176242#q14, pmid-42176242#q15, pmid-42176242#q16, pmid-42176242#q6, pmid-42176242#q11, pmid-42176242#q2, pmid-30642433#q382, pmid-31413261#q250, pmid-30642433#q90, pmid-30642433#q92, pmid-31413261#q82, pmid-31413261#q274, pmid-31413261#q275, pmid-31413261#q56, pmid-31413261#q89, db-gwascatalog-2026.10.29#q393, pmid-29227965#q141, pmid-29227965#q142, pmid-29227965#q143, pmid-29227965#q144, db-finngen-r11#q86, pmid-40021682#q113, pmid-40021682#q32, db-gwascatalog-2026.10.29#q569, db-ensembl-116#q766, db-ensembl-116#q816]}
   mechanism: {value: general_ageing, cites: [pmid-42176242#q14, pmid-42176242#q3]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}

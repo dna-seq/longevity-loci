@@ -13,10 +13,10 @@ verdict_reason: >-
   the controls, OR 4.2 (Haldane-corrected), P 1.9e-6, FDR-adjusted 0.036 under the paper's exploratory false-discovery
   rate of 0.05, its own exome-wide call, not a genome-wide one (D31.13). On 2,490 and 8,210 alleles that is about 18
   copies against 14. The controls sit well under the reference D31.13 fixes, gnomAD's non-Finnish European exomes
-  (0.318 %: 26.1 expected, 14 seen, P 0.0073), as Kolbe's pooled controls do (D34.7), so the row reads the long-lived
-  against the reference, as 107: 18 copies where 7.9 are expected, OR 2.28, exact Poisson P 0.0014 (derived), the
+  (0.318 %: 26.1 expected, 14 seen, Fisher's exact on both counts one-sided P 0.0074, D37.1, db-ensembl-116#q1150 to q1155), as Kolbe's pooled controls do (D34.7), so the row reads the long-lived
+  against the reference, as 107: 18 copies where 7.9 are expected, OR 2.28, Fisher one-sided P 0.0014 (derived), the
   paper's own OR against gnomAD (2.28), which back-solves to the exomes' frequency (0.318 %); against the genomes (8.3
-  expected) OR 2.18, P 0.0024. The printed 4.2 is named, not read. Kolbe chose its hits from about 98,000 rare
+  expected) OR 2.18, P 0.0030 (Poisson 0.0024 before). The printed 4.2 is named, not read. Kolbe chose its hits from about 98,000 rare
   variants, so a reference OR still carries that selection, uncorrected (D34.14). The authors note gnomAD's
   non-Finnish Europeans are mostly British. By the printed percentages and the long-lived's 2.7:1 women to men, about
   8 copies in 336 men (2.1 expected from gnomAD, P 0.0016) and 10 in 909 women (5.8 expected, P 0.069) (derived): the
@@ -60,7 +60,7 @@ verdict_reason: >-
   MANE transcript (A445T; SIFT tolerated, PolyPhen benign, CADD 2.0). Descriptive. Age of action unknown. The
   evidence is European.
 axes:
-  tier: {value: C, cites: [db-gnomad-4#q1, db-gnomad-4#q2, db-gnomad-4#q3, db-gnomad-4#q4, pmid-40021682#q28, pmid-29227965#q187, pmid-40232348#q40, pmid-40232348#q3, pmid-40232348#q2, pmid-40232348#q7, pmid-40232348#q12, pmid-40232348#q23, pmid-40232348#q24, pmid-40232348#q41, pmid-40232348#q42, pmid-40232348#q5, pmid-40232348#q16, pmid-40232348#q26, db-ensembl-116#q901, db-ensembl-116#q902, pmid-40021682#q129, pmid-40021682#q130, pmid-40021682#q131, pmid-40021682#q32, db-finngen-r11#q101, pmid-29227965#q178, pmid-29227965#q179, pmid-29227965#q180, pmid-29227965#q181, pmid-31413261#q308, pmid-31413261#q309, pmid-31484785#q175, db-gwascatalog-2026.10.29#q590]}
+  tier: {value: C, cites: [db-ensembl-116#q1150, db-ensembl-116#q1151, db-ensembl-116#q1152, db-ensembl-116#q1153, db-ensembl-116#q1154, db-ensembl-116#q1155, db-gnomad-4#q1, db-gnomad-4#q2, db-gnomad-4#q3, db-gnomad-4#q4, pmid-40021682#q28, pmid-29227965#q187, pmid-40232348#q40, pmid-40232348#q3, pmid-40232348#q2, pmid-40232348#q7, pmid-40232348#q12, pmid-40232348#q23, pmid-40232348#q24, pmid-40232348#q41, pmid-40232348#q42, pmid-40232348#q5, pmid-40232348#q16, pmid-40232348#q26, db-ensembl-116#q901, db-ensembl-116#q902, pmid-40021682#q129, pmid-40021682#q130, pmid-40021682#q131, pmid-40021682#q32, db-finngen-r11#q101, pmid-29227965#q178, pmid-29227965#q179, pmid-29227965#q180, pmid-29227965#q181, pmid-31413261#q308, pmid-31413261#q309, pmid-31484785#q175, db-gwascatalog-2026.10.29#q590]}
   mechanism: {value: general_ageing, cites: [pmid-40232348#q14]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -122,7 +122,7 @@ studies:
     effect_unit: odds of being long-lived per T allele (Haldane-corrected)
     effect_allele: T
     direction: protective
-    statistical_test: "Kolbe 2025's STAAR-O single-variant test with sex and ten principal components (Table 1, q40, columns q3), MAC ≥ 5; cases past the 95th age-at-death percentile of their birth cohort (q7), an age threshold; FDR-adjusted 0.036 under an exploratory FDR < 0.05 (q2); T 0.72 % in the long-lived and 0.17 % in the controls, about 18 copies against 14; the controls under gnomAD exomes (26.1 expected, P 0.0073); named; by D34.7 read against the reference (the next entry)"
+    statistical_test: "Kolbe 2025's STAAR-O single-variant test with sex and ten principal components (Table 1, q40, columns q3), MAC ≥ 5; cases past the 95th age-at-death percentile of their birth cohort (q7), an age threshold; FDR-adjusted 0.036 under an exploratory FDR < 0.05 (q2); T 0.72 % in the long-lived and 0.17 % in the controls, about 18 copies against 14; the controls under gnomAD exomes (26.1 expected, Fisher P 0.0074); named; by D34.7 read against the reference (the next entry)"
     curator: claude-opus-5-5
   - rsid: rs41419545
     note: pmid-40232348
@@ -140,7 +140,7 @@ studies:
     effect_unit: odds of carrying T, the long-lived against the gnomAD exome reference
     effect_allele: T
     direction: protective
-    statistical_test: "The paper's own OR against gnomAD NFE (Table 1, q40, columns q3), back-solving to the exomes' 0.318 % (db-ensembl-116#q901); the row's read effect by D34.7. About 18 copies in 2,490 long-lived alleles against 7.9 expected: exact Poisson P 0.0014 (derived); against the genomes (0.334 %, q902) OR 2.18, P 0.0024; the hits were chosen from about 98,000 rare variants, so this OR still carries the selection, uncorrected (D34.14); the authors note gnomAD NFE is mostly British (q12)"
+    statistical_test: "The paper's own OR against gnomAD NFE (Table 1, q40, columns q3), back-solving to the exomes' 0.318 % (db-ensembl-116#q901); the row's read effect by D34.7. About 18 copies in 2,490 long-lived alleles against 7.9 expected: Fisher's exact on both counts P 0.0014 (derived); against the genomes (0.334 %, q902) OR 2.18, P 0.0030; the hits were chosen from about 98,000 rare variants, so this OR still carries the selection, uncorrected (D34.14); the authors note gnomAD NFE is mostly British (q12)"
     curator: claude-opus-5-5
   - rsid: rs41419545
     note: pmid-40232348

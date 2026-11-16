@@ -14,11 +14,11 @@ verdict_reason: >-
   (Haldane-corrected), P 1.6e-6, adjusted 0.034 under the paper's exploratory false-discovery rate of 0.05, its own
   exome-wide call, not a genome-wide one (R-TIER-4, D31.13). On 2,490 and 8,210 alleles that is about 6 copies against none (the
   Haldane OR from 6 and 0 is 42.96, derived). Unlike row 107, the controls fit the reference: gnomAD's non-Finnish
-  exomes (0.0107 %) expect 0.88 copies in them and they show none (Poisson P 0.42), while the long-lived show about
-  6 where 0.27 are expected (P 3.9e-7; against gnomAD's genomes, 0.025 %, 0.13 and 4.8e-5, derived). Yet Kolbe's controls pooled over rows 120, 124 and 125 show 1 copy where 8.3 are expected (P 0.0024, derived), so
+  exomes (0.0107 %) expect 0.88 copies in them and they show none (Fisher's exact on both counts, one-sided P 0.42), while the long-lived show about
+  6 where 0.27 are expected (P 4.5e-7; against gnomAD's genomes, 0.025 %, 0.14 and 1.2e-4, derived; Fisher's exact on both counts throughout, D37.1, db-ensembl-116#q1126 to q1133). Yet Kolbe's controls pooled over rows 120, 124 and 125 show 1 copy where 8.3 are expected (Fisher on the three variants' summed counts P 0.0029, Poisson 0.0024 before, derived), so
   by D34.7 every rare row of the paper is read against the reference, as 107: the long-lived's about 6 copies
-  against 0.27 expected give OR 22.6 (exact Poisson P 3.9e-7, derived), and the paper's own OR against gnomAD is
-  21.00, with its caveat that gnomAD's non-Finnish Europeans are mostly British; the printed 43.0 is named, not read. Kolbe chose its hits from about 98,000 rare variants, so a reference OR still carries that selection, uncorrected (D34.14). By the printed percentages and the long-lived's 2.7:1 women to men, about 3 copies in 336 men (0.07 expected from gnomAD, P 5.8e-5) and 3 in
+  against 0.27 expected give OR 22.6 (Fisher one-sided P 4.5e-7, derived), and the paper's own OR against gnomAD is
+  21.00, with its caveat that gnomAD's non-Finnish Europeans are mostly British; the printed 43.0 is named, not read. Kolbe chose its hits from about 98,000 rare variants, so a reference OR still carries that selection, uncorrected (D34.14). By the printed percentages and the long-lived's 2.7:1 women to men, about 3 copies in 336 men (0.07 expected from gnomAD, P 6.1e-5) and 3 in
   909 women (0.19 expected, P 0.0011), no control copy in either sex (derived): men's share is above their 27 % of the long-lived, as across
   Kolbe's rows (about 24 of 35 copies, D34.7), named, no token. The paper removed variants whose allele fraction fell outside the 1st to 99th percentile to limit
   clonal-haematopoiesis calls, but prints no allele fraction for this one. The exomes are blood-derived; SIK3 is
@@ -31,11 +31,8 @@ verdict_reason: >-
   1.93, P 0.79, the same direction and no pass. Conditional on its 3 copies the look-up can never reach 0.05: even 3
   of 3 in the long-lived gives one-sided 0.13, so its power is nil and it sets no red flag and no
   `replication_failed` (against the read size, OR 21, P 0.126; at the printed 43, 0.064, derived). Read instead against gnomAD's Ashkenazi frequency, the long-lived would expect 6.8 copies
-  (exomes, 0.031 %) or 18.7 (genomes, 0.087 %) at OR 21 and show 2 (P 0.034, under 0.001), lapsing at the
-  discovery's lower bound (OR 8.3, P 0.50 and 0.022; the discovery's 6 copies span 2.2 to 13.1, derived); which
-  reading the lead declined (row 120's Q1, (a)). The same reference also fits the look-up's controls (1 copy against 0.31,
-  P 0.27) and puts its long-lived above it (2 against 0.32, one-sided P 0.042; against the genomes 0.22, derived):
-  read on the reference, the look-up both passes at nominal P and falls short of the discovery's size, so D31.10
+  (exomes, 0.031 %) or 18.7 (genomes, 0.087 %) at OR 21 and show 2 (Fisher's exact on both counts, D37.1: P 0.090 and 0.021; Poisson 0.034 and under 0.001 before, which treated gnomAD's 8 and 3 Ashkenazi copies as exact), and at the discovery's lower bound (OR 8.3) P 0.52 and 0.15 (the discovery's 6 copies span 2.2 to 13.1, derived); which
+  reading the lead declined (row 120's Q1, (a)). The same reference also fits the look-up's controls (1 copy against 0.31, P 0.29) and puts its long-lived above it, short of nominal (2 against 0.32, Fisher one-sided P 0.055, Poisson 0.042 before; against the genomes 0.32, derived): read on the reference, the look-up neither passes at nominal P nor reaches the discovery's size, so D31.10
   gives no ground to prefer that reading for the look-up, whose own controls fit (D34.7 concerns the German
   controls). The Leiden
   look-up lists IHH and FLCN, no SIK3 copy among 179 long-lived, where 0.86 are expected (P of none 0.42, derived):
@@ -56,7 +53,7 @@ verdict_reason: >-
   benign, CADD 19.45).
   Descriptive. Age of action unknown. The evidence is European (German; the Ashkenazi look-up leans the same way).
 axes:
-  tier: {value: C, cites: [pmid-40232348#q17, pmid-38744975#q1, pmid-38744975#q2, pmid-40232348#q8, pmid-40232348#q3, pmid-40232348#q2, pmid-40232348#q7, pmid-40232348#q11, pmid-40232348#q12, pmid-40232348#q13, pmid-40232348#q9, pmid-40232348#q10, pmid-40232348#q5, pmid-40232348#q15, pmid-40232348#q16, pmid-40232348#q4, db-ensembl-116#q803, db-gwascatalog-2026.10.29#q575]}
+  tier: {value: C, cites: [db-ensembl-116#q1126, db-ensembl-116#q1127, db-ensembl-116#q1128, db-ensembl-116#q1129, db-ensembl-116#q1130, db-ensembl-116#q1131, db-ensembl-116#q1132, db-ensembl-116#q1133, pmid-40232348#q17, pmid-38744975#q1, pmid-38744975#q2, pmid-40232348#q8, pmid-40232348#q3, pmid-40232348#q2, pmid-40232348#q7, pmid-40232348#q11, pmid-40232348#q12, pmid-40232348#q13, pmid-40232348#q9, pmid-40232348#q10, pmid-40232348#q5, pmid-40232348#q15, pmid-40232348#q16, pmid-40232348#q4, db-ensembl-116#q803, db-gwascatalog-2026.10.29#q575]}
   mechanism: {value: general_ageing, cites: [pmid-40232348#q14]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -119,7 +116,7 @@ studies:
     effect_unit: odds of being long-lived per G allele (Haldane-corrected)
     effect_allele: G
     direction: protective
-    statistical_test: "Kolbe 2025's STAAR-O single-variant test with sex and ten principal components (Table 1, q8, columns q3), MAC ≥ 5; cases past the 95th age-at-death percentile of their birth cohort (q7), an age threshold; FDR-adjusted 0.034 under an exploratory FDR < 0.05 (q2); G 0.24 % in the long-lived, absent in the controls (q11), about 6 copies against none; against gnomAD NFE 0.01 % the paper's own OR 21.00 (its caveat, q12). The controls fit gnomAD exomes (0.88 copies expected, none seen, Poisson P 0.42) and the long-lived sit above it (about 6 against 0.27, P 3.9e-7), named; by D34.7 read against the reference (the next entry); allele fraction unprinted (filter, q13)"
+    statistical_test: "Kolbe 2025's STAAR-O single-variant test with sex and ten principal components (Table 1, q8, columns q3), MAC ≥ 5; cases past the 95th age-at-death percentile of their birth cohort (q7), an age threshold; FDR-adjusted 0.034 under an exploratory FDR < 0.05 (q2); G 0.24 % in the long-lived, absent in the controls (q11), about 6 copies against none; against gnomAD NFE 0.01 % the paper's own OR 21.00 (its caveat, q12). The controls fit gnomAD exomes (0.88 copies expected, none seen, Fisher's exact on both counts, one-sided P 0.42) and the long-lived sit above it (about 6 against 0.27, P 4.5e-7), named; by D34.7 read against the reference (the next entry); allele fraction unprinted (filter, q13)"
     curator: claude-opus-5-5
   - rsid: rs147730555
     note: pmid-40232348
@@ -137,7 +134,7 @@ studies:
     effect_unit: odds of carrying G, the long-lived against the gnomAD reference
     effect_allele: G
     direction: protective
-    statistical_test: "The paper's own OR against gnomAD NFE (Table 1, q8, columns q3), with no test printed; the row's read effect by D34.7 (Kolbe's controls pooled over 120, 124 and 125 thin: 1 copy against 8.3, P 0.0024), the reference fixed as the exomes (D31.13). About 6 copies in 2,490 long-lived alleles against 0.27 expected from gnomAD's non-Finnish exomes (0.0107 %, db-ensembl-116#q803): OR 22.6, exact Poisson P 3.9e-7 (derived); the authors note gnomAD NFE is mostly British (q12)"
+    statistical_test: "The paper's own OR against gnomAD NFE (Table 1, q8, columns q3), with no test printed; the row's read effect by D34.7 (Kolbe's controls pooled over 120, 124 and 125 thin: 1 copy against 8.3, Fisher on the summed counts P 0.0029), the reference fixed as the exomes (D31.13). About 6 copies in 2,490 long-lived alleles against 0.27 expected from gnomAD's non-Finnish exomes (0.0107 %, db-ensembl-116#q803): OR 22.6, exact Fisher's exact on both counts P 4.5e-7 (derived); the authors note gnomAD NFE is mostly British (q12)"
     curator: claude-opus-5-5
   - rsid: rs147730555
     note: pmid-40232348

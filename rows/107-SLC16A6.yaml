@@ -13,7 +13,7 @@ verdict_reason: >-
   (R-TIER-4, D31.13), and R-TIER-2 caps a single old-against-young sample at C either way. On 2,490 and 8,210
   alleles that is about five copies against about one, and the controls sit well below gnomAD's non-Finnish 0.09 %, so
   the paper's own odds ratio against that reference, 2.36, is the steadier size: the controls' 8,210 alleles expect
-  about 7 copies and show about 1 (Poisson P 0.007), the long-lived 2,490 about 2.1 and show about 5 (P 0.066), so the
+  about 7 copies and show about 1 (Fisher's exact on both counts, one-sided P 0.0072), the long-lived 2,490 about 2.1 and show about 5 (P 0.066), so the
   signal is mostly the controls' deficit, and most long-lived copies are in men (0.60 %), the women at 0.06 %, about
   1 copy against 1.56 expected from the population's 0.09 % (derived; the split is never tested, so no sex token,
   D29.16, D31.13); across Kolbe's rows 107, 120, 121, 124, 125 and 126 about 24 of 35 long-lived copies are in
@@ -23,8 +23,7 @@ verdict_reason: >-
   gnomAD is considerably lower than their own and that gnomAD's non-Finnish Europeans are mostly British, unlike
   their cohort; they do not disown the call, so it is not an overfit source by the rule's own cases (rows 41, 44, 48,
   60, each disowned by its authors or their filter); so, by D31.10, the case-control OR (12.1, P 9.8e-7) is named, not read: the
-  row reads the long-lived against gnomAD NFE, the paper's own OR 2.36, which the paper tests no further and which the
-  Poisson comparison puts at one-sided P 0.066 (derived), not a pass. Kolbe chose its hits from about 98,000 rare variants, so a reference OR still carries that selection, uncorrected (D34.14). No replication exists: the authors say
+  row reads the long-lived against gnomAD NFE, the paper's own OR 2.36, which the paper tests no further and which Fisher's exact test on both counts puts at one-sided P 0.066 (derived; D37.1, db-ensembl-116#q1122 to q1125), not a pass. Kolbe chose its hits from about 98,000 rare variants, so a reference OR still carries that selection, uncorrected (D34.14). No replication exists: the authors say
   none of comparable size is available, their Ashkenazi look-up holds three of the seven variants, not this one, and
   their Leiden look-up lists none at SLC16A6. At 0.06 % the variant is absent from every large sample read here:
   Deelen 2019, Timmers 2019, Pilling 2017, Zenin 2019, FinnGen R11, Park 2025 (below its 0.1 % filter) and Foote 2025
@@ -41,7 +40,7 @@ verdict_reason: >-
   no protein (D31.9, D31.10). Every genotype neutral: the read effect, one-sided 0.066, is not significant (D31.13). Descriptive.
   Age of action unknown. The evidence is European (German).
 axes:
-  tier: {value: C, cites: [pmid-40232348#q1, pmid-40232348#q2, pmid-40232348#q3, pmid-40232348#q4, pmid-40232348#q5, pmid-40232348#q7, pmid-40232348#q21, pmid-40232348#q12, db-ensembl-116#q764, db-gwascatalog-2026.10.29#q568]}
+  tier: {value: C, cites: [db-ensembl-116#q1122, db-ensembl-116#q1123, db-ensembl-116#q1124, db-ensembl-116#q1125, pmid-40232348#q1, pmid-40232348#q2, pmid-40232348#q3, pmid-40232348#q4, pmid-40232348#q5, pmid-40232348#q7, pmid-40232348#q21, pmid-40232348#q12, db-ensembl-116#q764, db-gwascatalog-2026.10.29#q568]}
   mechanism: {value: general_ageing, cites: [pmid-40232348#q6]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -105,7 +104,7 @@ studies:
     effect_unit: odds of being long-lived per C allele (Haldane-corrected)
     effect_allele: C
     direction: protective
-    statistical_test: "Kolbe 2025's STAAR-O single-variant test with sex and ten principal components (Table 1, q1, q3), MAC ≥ 5; cases past the 95th age-at-death percentile of their birth cohort (q7), no p95 design term, so an age threshold; FDR-adjusted 0.025 under an exploratory FDR < 0.05 (q2); C 0.20 % in the long-lived, 0.01 % in the controls, about five copies against one; against gnomAD NFE 0.09 % the paper's own OR 2.36; the controls misfit gnomAD (about 1 copy against 7, Poisson P 0.007), so this OR is named, not read (D31.10), and the variant carries 2.36 (one-sided P 0.066, derived); no replication (q4, q5)"
+    statistical_test: "Kolbe 2025's STAAR-O single-variant test with sex and ten principal components (Table 1, q1, q3), MAC ≥ 5; cases past the 95th age-at-death percentile of their birth cohort (q7), no p95 design term, so an age threshold; FDR-adjusted 0.025 under an exploratory FDR < 0.05 (q2); C 0.20 % in the long-lived, 0.01 % in the controls, about five copies against one; against gnomAD NFE 0.09 % the paper's own OR 2.36; the controls misfit gnomAD (about 1 copy against 7, Fisher's exact on both counts, one-sided P 0.0072), so this OR is named, not read (D31.10), and the variant carries 2.36 (one-sided P 0.066, derived); no replication (q4, q5)"
     curator: claude-opus-5-5
   - rsid: rs112262188
     note: pmid-40232348
@@ -123,5 +122,5 @@ studies:
     effect_unit: odds of carrying C, the long-lived against the gnomAD reference
     effect_allele: C
     direction: protective
-    statistical_test: "The paper's own OR against gnomAD NFE (Table 1, q1, columns q3), with no test printed; the row's read effect by D31.10, the reference fixed as the exomes (D31.13). About 5 copies in 2,490 long-lived alleles against 2.1 expected from gnomAD's non-Finnish exomes (0.086 %, db-ensembl-116#q764): Poisson one-sided P 0.066, not a pass (derived); against the non-Finnish genomes (0.075 %) 0.041 (derived). The authors call it considerably lower than their own (q21) and note gnomAD NFE is mostly British (q12)"
+    statistical_test: "The paper's own OR against gnomAD NFE (Table 1, q1, columns q3), with no test printed; the row's read effect by D31.10, the reference fixed as the exomes (D31.13). About 5 copies in 2,490 long-lived alleles against 2.1 expected from gnomAD's non-Finnish exomes (0.086 %, db-ensembl-116#q764): Fisher's exact on both counts (D37.1, db-ensembl-116#q1122 to q1125), one-sided P 0.066, not a pass (derived); against the non-Finnish genomes (0.075 %) 0.047 (Poisson 0.041 before; derived). The authors call it considerably lower than their own (q21) and note gnomAD NFE is mostly British (q12)"
     curator: claude-opus-5-5
