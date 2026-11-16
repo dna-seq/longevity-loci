@@ -2704,3 +2704,16 @@ rs9419958 (row 160), 15 associations. Li 2020's leukocyte telomere length, C 0.0
 trait OBA_0003784); Mangino 2012's telomere length, T +0.083, P 9e-11 (q753, q754; its sample unread). Basal cell
 carcinoma (Choquet): C OR 0.938, P 4e-10, so T raises it (q755 to q757); uterine fibroids (Gallagher): T OR 1.1, P
 1e-16 (q758 to q760). Platelet counts, PSA and FLT3LG levels named, not read. For row 160.
+
+## Reading 2026-11-16, record
+
+> [q761] _embedded.associations[0] association_id 54151231 risk_frequency 0.16 pvalue_description pvalue_mantissa 4 pvalue_exponent -28 multi_snp_haplotype false snp_interaction false range NR beta 0.004 unit decrease p_value 4e-28 accession_id GCST009375 pubmed_id 28346444 first_author Wright DJ
+
+> [q762] _embedded.associations[0].efo_traits[0] efo_id EFO_0007783 efo_trait mosaic loss of chromosome Y measurement
+
+> [q763] _embedded.associations[0].snp_effect_allele[0] rs59633341-A
+
+> [q764] page size 200 totalElements 1 totalPages 1 number 0
+
+rs59633341 (row 145): one association (q764), Wright 2017's mosaic loss of chromosome Y, A 0.004 decrease, P 4e-28,
+GCST009375 (q761, q763; trait EFO_0007783, q762). Thompson 2019's lines are not in the Catalog's record. For row 145.

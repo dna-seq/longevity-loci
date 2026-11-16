@@ -4948,3 +4948,48 @@ E2. For row 153.
 0.39, C −0.044 (q1406, q1407); Li 2020's set PIP 0.36, C −0.064 (q1408, q1409); with Codd's PP 0.43, C2. Thyroid
 cancer PIP 0.42, C −0.20, P 1.7e-28, so T raises it (q1410, q1411). Locus-to-gene on the PC1 set (q1412): STN1 0.89,
 SH3PXD2A 0.05 (q1413 to q1416); on Li's set STN1 0.87 (q1417 to q1419): E2. For row 160.
+
+## Reading 2026-11-16, record
+
+> [q1420] data.variant id 3_150301093_A_AT referenceAllele A alternateAllele AT
+
+> [q1421] data.variant.credibleSets count 14
+
+> [q1422] data.variant.credibleSets.rows[7].study id GCST009375 traitFromSource Mosaic loss of chromosome Y (Y chromosome dosage) studyType gwas
+
+> [q1423] data.variant.credibleSets.rows[7].locus.rows[0] posteriorProbability 0.47204952787613996 beta 0.004 pValueMantissa 4 pValueExponent -28
+
+> [q1424] data.variant.credibleSets.rows[10].study id GCST009066 traitFromSource Mosaic loss of chromosome Y (Y chromosome dosage) studyType gwas
+
+> [q1425] data.variant.credibleSets.rows[10].locus.rows[0] posteriorProbability 0.05742342778806498 beta null pValueMantissa null pValueExponent null
+
+> [q1426] data.variant.credibleSets.rows[9].study id GCST90165267 traitFromSource Clonal haematopoiesis of indeterminate potential (with or without mosaic chromosomal alteration) studyType gwas
+
+> [q1427] data.variant.credibleSets.rows[9].locus.rows[0] posteriorProbability 0.25095381021128 beta -0.009969160038116034 pValueMantissa null pValueExponent null
+
+> [q1428] data.variant.credibleSets.rows[8].study id GCST90428574 traitFromSource Myeloproliferative neoplasms (MTAG) studyType gwas
+
+> [q1429] data.variant.credibleSets.rows[8].locus.rows[0] posteriorProbability 0.14563807106674878 beta null pValueMantissa null pValueExponent null
+
+> [q1430] data.credibleSet.study id GCST009375 traitFromSource Mosaic loss of chromosome Y (Y chromosome dosage) publicationFirstAuthor Wright DJ publicationDate 2017-03-27 nSamples 67034
+
+> [q1431] data.credibleSet.l2GPredictions.rows[0] score 0.32858240604400635
+
+> [q1432] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol TSC22D2
+
+> [q1433] data.credibleSet.l2GPredictions.rows[1] score 0.18256942927837372
+
+> [q1434] data.credibleSet.l2GPredictions.rows[1].target approvedSymbol EIF2A
+
+> [q1435] data.credibleSet.study id GCST009066 traitFromSource Mosaic loss of chromosome Y (Y chromosome dosage) publicationFirstAuthor Terao C publicationDate 2019-10-17 nSamples 95380
+
+> [q1436] data.credibleSet.l2GPredictions.rows[0] score 0.4301631450653076
+
+> [q1437] data.credibleSet.l2GPredictions.rows[0].target approvedSymbol TSC22D2
+
+3_150301093_A_AT (rs59633341, row 145; reference A, the short allele, alternate AT; beta per AT) (q1420): 14 credible sets
+(q1421). Wright 2017's mosaic loss of Y set (GCST009375): PIP 0.47 (q1422, q1423): C2. Terao 2019's Biobank Japan set
+(GCST009066): PIP 0.06 (q1424, q1425). Clonal haematopoiesis of indeterminate potential: PIP 0.25, AT −0.010, so A
+raises it (q1426, q1427); myeloproliferative neoplasms (MTAG): PIP 0.15, no beta (q1428, q1429). Locus-to-gene on
+Wright's set (q1430): TSC22D2 0.33, EIF2A 0.18 (q1431 to q1434); on Terao's TSC22D2 0.43 (q1435 to q1437): no gene
+at 0.5, E3. Monocyte and blood-count sets named, not read. For row 145.

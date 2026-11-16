@@ -3842,3 +3842,20 @@ European genomes (q1080, q1081); intronic in TERT's MANE transcript, NM_198253.3
 rs9419958 (row 160): GRCh38 10:103,916,188, T/A/C/G, T ancestral (q1084); T at 14.2 % and C at 85.8 % in gnomAD's
 non-Finnish European genomes (q1085, q1086); intronic in STN1's MANE transcript, NM_024928.5 (q1087, q1088). With
 Codd 2021's other STN1 sentinel rs10748858, r² 0.08, D′ 0.60 in CEU (q1089). For row 160.
+
+## Reading 2026-11-16, record
+
+> [q1090] mappings[0] assembly_name GRCh38 ancestral_allele T coord_system chromosome strand 1 location 3:150301094-150301094 start 150301094 allele_string T/TT seq_region_name 3 end 150301094
+
+> [q1091] populations[9] population gnomADg:nfe frequency 0.1512 allele_count 10283 allele T
+
+> [q1092] populations[8] frequency 0.8488 population gnomADg:nfe allele TT allele_count 57713
+
+> [q1093] [0].transcript_consequences[2] biotype lncRNA transcript_id ENST00000716187 hgnc_id HGNC:49650 gene_id ENSG00000243550 strand -1 gene_symbol_source HGNC canonical 1 variant_allele T impact MODIFIER gene_symbol LINC01214
+
+> [q1094] [0].transcript_consequences[2].consequence_terms[0] intron_variant
+
+rs59633341 (row 145): an indel at GRCh38 3:150,301,094, T/TT, T ancestral (q1090); the short allele T at 15.1 % and TT at
+84.9 % in gnomAD's non-Finnish European genomes (q1091, q1092); intronic in LINC01214's canonical transcript, a lncRNA
+(q1093, q1094), with no TSC22D2 transcript within VEP's reach. The papers' A (short) and AT (long) are Ensembl's T and
+TT. For row 145.

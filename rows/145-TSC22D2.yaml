@@ -1,0 +1,122 @@
+# The seed list's locus 145, TSC22D2 (3q25.1): a marker of biological ageing (D32, D36.3), curated on D37.12 with 23
+# TERC as the pattern. Curated 2026-11-16. Lead rs59633341, the seed's rsID (Wright 2017's mosaic loss of chromosome Y
+# locus): a one-base indel in an intron of the lncRNA LINC01214, between genes, TSC22D2 the nearest labelled gene; VCF
+# alleles A/AT at GRCh38 3:150,301,093 (Open Targets, FinnGen; Ensembl's T/TT at 150,301,094, the same insertion in a T
+# run), GRCh37 3:150,018,880. The short allele A at 15.1 % in gnomAD's non-Finnish European genomes. A is the allele
+# with more loss of Y.
+locus_id: 145
+locus_name: TSC22D2
+verdict: kept
+verdict_reason: >-
+  Tier A on the marker's own evidence (D37.12; the seed gives none): the tier grades the association with mosaic loss
+  of chromosome Y (LOY) in blood, a marker of ageing found in men only, not longevity, and this row is unscored (D32).
+  The seed's study, Wright 2017, measures LOY as mLRR-Y in 67,034 UK Biobank men and prints rs59633341 with A, the
+  mLRR-Y lowering allele, at 0.16: UK Biobank −0.004 (raw mLRR-Y), P 2.6e-18; EPIC-Norfolk −0.009, P 7.5e-7; deCODE
+  −0.007 (log2 Y copy number), P 1.1e-5; overall P 4.1e-28. Thompson 2019 calls LOY as yes or no in 205,011 UK
+  Biobank men (Wright's men among them) and prints it with A the risk allele at 0.163, OR 1.24 (1.22 to 1.27), P
+  6.6e-112, replicated on the same side in 653,019 men of 23andMe (matched β −0.0056, P 1.5e-82), deCODE (P 2.8e-8)
+  and 95,380 Japanese men of Biobank Japan (P 1.5e-18). The row tiers from Thompson, the study of 100k or more, with
+  23andMe and Biobank Japan its independent replications: §4.1's A. D21's test where the units match: Wright's UK
+  Biobank −0.004 against EPIC-Norfolk −0.009 (the replication the larger, no shrinkage, D39.1) and 23andMe −0.0056;
+  Wright's SEs are not printed, so no heterogeneity P; no red flag. deCODE is in both papers, counted once. Lifespan
+  look-ups, unscored and read for A, two-sided at 0.05 (D38.6): Park 2025's own survival P 0.41 (men 0.053, women
+  0.30); Deelen 2019 90th P 0.60, 99th P 0.44; FinnGen R11's deaths P 0.24, a database line; all flat. Timmers 2019,
+  Pilling 2017, Zenin 2019 and Foote 2025 hold no line for this indel (by rsID and by GRCh37 3:150,018,880 and
+  150,018,881): untested. The literature search (the rsID, 2026-11-16; Semantic Scholar answered 429, its part
+  unchecked) finds the two LOY GWASs and a review, no test of lifespan. Every genotype neutral, each conclusion a
+  tendency of the marker with no colour (D32, D37.12); `direction: unknown`. Outcome cells read for A: exceptional
+  survival 0 (Deelen flat); lifespan 0 (Park and FinnGen flat); healthspan untested (no deposit holds it). Context:
+  the trait exists only in men, said here; no `sex_specific` token, since no test of a difference between the sexes
+  exists or can (D16; Thompson's women P 0.99 is a negative control). Mechanism: markers of biological ageing.
+  Pleiotropy `mech:cancer`: A raises clonal haematopoiesis of indeterminate potential (Open Targets, AT −0.010, PIP
+  0.25) and the variant sits in a myeloproliferative neoplasm set (PIP 0.15, no beta), named; no `tradeoff`, the row
+  naming no longevity-favoured allele. Causal C2 (PIP 0.47 in Wright's set; 0.06 in Terao 2019's Biobank Japan set).
+  Effector E3: locus-to-gene TSC22D2 0.33 (EIF2A 0.18) on Wright's set and 0.43 on Terao's, no gene at 0.5 and the
+  variant in no gene's coding or regulatory annotation read. Descriptive. Age of action unknown. The evidence is
+  mostly European, Biobank Japan agreeing.
+axes:
+  tier: {value: A, cites: [pmid-31748747#q1, pmid-31748747#q2, pmid-31748747#q3, pmid-31748747#q4, pmid-31748747#q5, pmid-31748747#q6, pmid-31748747#q7, pmid-31748747#q8, pmid-28346444#q1, pmid-28346444#q2, pmid-28346444#q3, pmid-28346444#q4, pmid-28346444#q5, pmid-28346444#q6, pmid-28346444#q7, pmid-28346444#q8, pmid-28346444#q10, pmid-28346444#q11, db-gwascatalog-2026.10.29#q761, db-gwascatalog-2026.10.29#q762, db-gwascatalog-2026.10.29#q763, db-gwascatalog-2026.10.29#q764, db-ensembl-116#q1090, db-ensembl-116#q1091, db-ensembl-116#q1092, db-opentargets-26.09#q1420]}
+  mechanism: {value: ageing_markers, cites: [pmid-28346444#q1, pmid-28346444#q2, db-gwascatalog-2026.10.29#q762]}
+  pleiotropy: {values: ["mech:cancer"], cites: [db-opentargets-26.09#q1426, db-opentargets-26.09#q1427, db-opentargets-26.09#q1428, db-opentargets-26.09#q1429]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: untested, lifespan: "0", exceptional_survival: "0",
+            cites: [pmid-40021682#q194, pmid-40021682#q195, pmid-40021682#q196, db-finngen-r11#q122, pmid-31413261#q350, pmid-31413261#q351]}
+  actionability: {label: descriptive, cites: [pmid-31748747#q8]}
+  context: {values: [], cites: []}
+flags:
+  - {token: "causal:C2", cites: [db-opentargets-26.09#q1421, db-opentargets-26.09#q1422, db-opentargets-26.09#q1423, db-opentargets-26.09#q1424, db-opentargets-26.09#q1425]}
+  - {token: "effector:E3", cites: [db-opentargets-26.09#q1430, db-opentargets-26.09#q1431, db-opentargets-26.09#q1432, db-opentargets-26.09#q1433, db-opentargets-26.09#q1434, db-opentargets-26.09#q1435, db-opentargets-26.09#q1436, db-opentargets-26.09#q1437, db-ensembl-116#q1093, db-ensembl-116#q1094, pmid-28346444#q9]}
+variants:
+  - rsid: rs59633341
+    gene: TSC22D2
+    phenotype: TSC22D2 region, mosaic Y loss
+    trait_efo_id: EFO_0007783
+    effect_allele: A
+    effect_size: 1.24
+    effect_measure: OR
+    stat_significance: significant
+    direction: unknown
+    genotypes:
+      - genotype: A/A
+        state: neutral
+        conclusion: >-
+          You carry two copies of the shorter A version of this DNA position (about 2 in 100 people of European
+          ancestry do). In men, large studies link each copy of A with a higher chance, by about a quarter, that some
+          blood cells have lost the Y chromosome, a change that becomes more common with age. That is a tendency in a
+          marker whose reading only means something against your calendar age, which this report does not have, so it
+          carries no score. Women have no Y chromosome, so it says nothing for them.
+      - genotype: A/AT
+        state: neutral
+        conclusion: >-
+          You carry one copy of the shorter A version of this DNA position (about 26 in 100 people of European
+          ancestry do). In men, large studies link it with a higher chance, by about a quarter, that some blood cells
+          have lost the Y chromosome, a change that becomes more common with age. That is a tendency in a marker whose
+          reading only means something against your calendar age, which this report does not have, so it carries no
+          score. Women have no Y chromosome, so it says nothing for them.
+      - genotype: AT/AT
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common, longer version of this DNA position (about 72 in 100 people of European
+          ancestry do). It is the reference the other combinations are compared with. The position lies between genes
+          on chromosome 3, near TSC22D2. Loss of the Y chromosome from some blood cells, seen in men as they age, is a
+          marker whose reading only means something against your calendar age, which this report does not have, so this
+          result carries no score.
+studies:
+  - rsid: rs59633341
+    note: pmid-31748747
+    quote: q8
+    phenotype_class: BIOMARKER
+    study_design: meta_analysis
+    population: UK Biobank men (Thompson 2019's discovery, white European; replications in 23andMe, deCODE and Biobank Japan)
+    ancestry: [EUR]
+    sample_size: 205011
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "6.6e-112"
+    p_value_num: 6.6e-112
+    effect_size: 1.24
+    effect_measure: OR
+    effect_unit: odds of detectable mosaic loss of chromosome Y (PAR-LOY) per A allele
+    effect_allele: A
+    direction: unknown
+    statistical_test: "Thompson 2019's GWAS of PAR-LOY in 205,011 UK Biobank men (q1), replicated in three independent data sets (q2 to q5); Table S1 (header q6, q7): rs59633341 risk allele A (other AT) at 0.163, OR 1.24 (1.22 to 1.27), P 6.6e-112; 23andMe matched β −0.0056, same direction, P 1.5e-82; deCODE P 2.8e-8; Biobank Japan P 1.5e-18; UK Biobank women P 0.99 (q8); the study of 100k or more the row tiers from (§4.1's A); a marker study (D32, D37.12)"
+    curator: claude-opus-5-5
+  - rsid: rs59633341
+    note: pmid-28346444
+    quote: q5
+    phenotype_class: BIOMARKER
+    study_design: meta_analysis
+    population: European men (UK Biobank 67,034; EPIC-Norfolk 9,793; deCODE 8,715)
+    ancestry: [EUR]
+    sample_size: 85542
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "4.1x10-28"
+    p_value_num: 4.1e-28
+    effect_size: -0.004
+    effect_measure: beta
+    effect_unit: raw mean log-R ratio of the Y chromosome (mLRR-Y) per A allele, UK Biobank
+    effect_allele: A
+    direction: unknown
+    statistical_test: "Wright 2017's GWAS of mLRR-Y in 67,034 UK Biobank men (q1, q2), Table 1 (title q3, header q4, footnotes q6 to q9): rs59633341 A (lowering) /AT, A at 0.16, UK Biobank −0.004, P 2.6e-18; EPIC-Norfolk −0.009, P 7.5e-7; deCODE −0.007 (log2 copy number), P 1.1e-5; replication P 8.5e-14; overall P 4.1e-28 (q5); replications q10, q11; the seed's study (D37.11); its UK Biobank men are within Thompson 2019's; the GWAS Catalog's record (GCST009375, db-gwascatalog-2026.10.29#q761 to q763) the same line; a marker study (D32, D37.12)"
+    curator: claude-opus-5-5
