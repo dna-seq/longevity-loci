@@ -8,12 +8,12 @@ second_signal_of: 52
 verdict: kept
 verdict_reason: >-
   Tier B: genome-wide in one study, Wright 2019's AncestryDNA–UK Biobank fathers' meta-analysis (P 8.46e-10, 696,000;
-  AncestryDNA P 2.4e-5, UK Biobank 1.2e-7, heterogeneity P 0.83), with no independent replication outside it (D28.7,
-  D39.17: the AncestryDNA arm sits inside the anchor and replicates nothing). On Pilling's scale both arms put C with
-  shorter-lived fathers (AncestryDNA +0.0119, UK Biobank +0.0127, the latter Pilling's fathers' line digit for digit),
-  so T is longer-lived. Independence (D39.14): Aragam 2022's coronary disease fine-mapping in Open Targets holds rs268
+  AncestryDNA P 2.4e-5 raw, 1.04e-4 after genomic control, UK Biobank 1.2e-7, heterogeneity P 0.83), with no independent replication outside it (D28.7,
+  D39.17: the AncestryDNA arm sits inside the anchor and replicates nothing). Both arms put T with longer-lived fathers: AncestryDNA's Table 8 T
+  +0.0119 on the lifespan scale, UK Biobank C +0.0127 on Pilling's attained-age scale, Pilling's fathers' line digit
+  for digit. Independence (D39.14): Aragam 2022's coronary disease fine-mapping in Open Targets holds rs268
   alone in one set (PIP 1.00) and rs15285 in another that rs268 is not in, the signals' own sets; from 1000 Genomes'
-  phased EUR haplotypes r is −0.063 (r² 0.004), so conditioning on rs268 leaves the meta's z of 5.75 at 5.6 or more for
+  phased EUR haplotypes r is −0.063 (r² 0.004), so conditioning on rs268 leaves the meta's z of 6.14 at 5.6 or more for
   any rs268 z up to 8 (its largest lifespan z read, Timmers', is 4.5) (derived), genome-wide in either coupling
   (D39.15). The other looks lean T's way and none passes outside: Timmers 2019's pooled parents T longer, beta1
   +0.0176 (SE 0.0043), P 3.5e-5, "++", UK Biobank inside; Pilling 2017 both parents P 2.3e-5, mothers 0.0052, the top
@@ -23,7 +23,9 @@ verdict_reason: >-
   healthspan + (Zenin 2019, T the later end, P 0.009; Foote 2025's deposits hold no line). Mechanism heart and vessels, as row 52: LPL's 3′ UTR, T lowering triglycerides (Catalog, P 3e-72) and coronary disease (Aragam, β −0.0061
   per T). Pleiotropy `mech:lipids` and `mech:cvd`: C raises disorders of lipid metabolism and cholesterol medication,
   T lowers triglycerides and coronary disease, so the longer-life allele is the healthier on each, no `tradeoff`;
-  platelet count lines named. Causal C3 (PIP 0.066 in Wright's fathers' set, flat over 25 members). Effector E2, LPL:
+  platelet count lines named. Causal C3 (PIP 0.066 in Wright's fathers' set, PICS over 84 members; Open Targets
+  flags it: the study has flags, no in-sample LD reference, a curated top hit; Aragam's set holds 68 with the first
+  two flags). Effector E2, LPL:
   locus-to-gene 0.98 on that set, the variant in LPL's 3′ UTR; its colocalisations not read. The literature search (the rsID, 2026-11-16) finds Shen 2023 (PMID 37036527), a Chinese case-control study of 888 gastric cancers whose abstract puts the T allele with higher risk (OR 1.48) and higher LPL expression, and a 2026 clinical-obesity preprint (no PMID) whose abstract does not say which allele its carriers carry; both named, abstract only, and a single candidate-gene study in another ancestry sets no `tradeoff` against T. Descriptive. Age of action
   unknown. The evidence is European (UK Biobank, AncestryDNA's European-ancestry group).
 axes:
@@ -36,7 +38,7 @@ axes:
   actionability: {label: descriptive, cites: [pmid-31484785#q91]}
   context: {values: [eur_only_evidence], cites: [pmid-31484785#q93, db-ensembl-116#q1192]}
 flags:
-  - {token: "causal:C3", cites: [db-opentargets-26.09#q675, db-opentargets-26.09#q676]}
+  - {token: "causal:C3", cites: [db-opentargets-26.09#q675, db-opentargets-26.09#q676, db-opentargets-26.09#q1557, db-opentargets-26.09#q1558, db-opentargets-26.09#q1559, db-opentargets-26.09#q1560, db-opentargets-26.09#q1561, db-opentargets-26.09#q1562, db-opentargets-26.09#q1563]}
   - {token: "effector:E2", cites: [db-opentargets-26.09#q1521, db-opentargets-26.09#q1522, db-opentargets-26.09#q1523, db-opentargets-26.09#q1524, db-ensembl-116#q362]}
 variants:
   - rsid: rs15285
@@ -93,7 +95,7 @@ studies:
     effect_unit: fathers' attained age per C allele (UK Biobank arm, Pilling's scale; positive = shorter)
     effect_allele: C
     direction: risk
-    statistical_test: "Supplemental Table 9's fathers' meta (q93), AncestryDNA +0.0119 (SE 0.0028, P 2.4e-5, q92) and UK Biobank +0.0127 (SE 0.0024, P 1.2e-7), heterogeneity P 0.83; Table 3 (q91); the counted allele from the UK Biobank arm matching Pilling's line (pmid-29227965#q287); the row's one genome-wide study, the AncestryDNA arm inside it (D39.17)"
+    statistical_test: "Supplemental Table 9's fathers' meta (q93), AncestryDNA T +0.0119 on the lifespan scale (SE 0.0028, P 2.4e-5 raw, 1.04e-4 after genomic control, q92) and UK Biobank C +0.0127 on Pilling's scale (SE 0.0024, P 1.2e-7), heterogeneity P 0.83; Table 3 (q91); the counted allele from the UK Biobank arm matching Pilling's line (pmid-29227965#q287); the row's one genome-wide study, the AncestryDNA arm inside it (D39.17)"
     curator: claude-opus-5-5
   - rsid: rs15285
     note: pmid-30642433

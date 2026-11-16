@@ -5327,3 +5327,24 @@ rs11780471 is not among them: the signals' own sets are disjoint (D39.14). For r
 rs4784227 (16_52565276_C_T): 83 sets (q1550), none of a lifespan or healthspan class. β per T: breast cancer +0.23, P 9.5e-47,
 PIP 0.87 (q1551, q1552); systolic blood pressure +0.011, P 1.2e-9 (q1553, q1554); a TOX3 (ENSG00000103460) splicing
 set (q1555, q1556). Many more breast-cancer, pressure and brain-imaging sets named. For row 169.
+
+## Reading 2026-11-16, record
+
+> [q1557] data.credibleSet.locus count 84
+
+> [q1558] data.credibleSet.qualityControls[0] Study has quality control flag(s)
+
+> [q1559] data.credibleSet.qualityControls[1] Study locus finemapped without in-sample LD reference
+
+> [q1560] data.credibleSet.qualityControls[2] Study locus from curated top hit
+
+> [q1561] data.credibleSet.locus count 68
+
+> [q1562] data.credibleSet.qualityControls[0] Study has quality control flag(s)
+
+> [q1563] data.credibleSet.qualityControls[1] Study locus finemapped without in-sample LD reference
+
+Wright's fathers' set at rs15285 (c7200f5a, PICS; q675): 84 members (q1557), its QC flags: the study has flags, no
+in-sample LD reference, a curated top hit (q1558 to q1560). Aragam's coronary set holding rs15285 (16d19589,
+SuSiE-inf; q677): 68 members (q1561), flags: the study has flags, no in-sample LD reference (q1562, q1563). The
+earlier '25 members' read a truncated page (D40.5). For row 166.
