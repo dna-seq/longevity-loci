@@ -28,25 +28,24 @@ verdict_reason: >-
   Hsieh's OR interval (0.56 to 0.78) it runs from C +0.27 (P 1.8e-6; heterogeneity P 8.5e-5) to +0.10 (P 0.077;
   heterogeneity P 0.26, the long-lived near the reference, D31.11's shape, also D); the printed contrast, like
   Deelen's a long-lived group against a younger one, fails Deelen throughout (heterogeneity P 0.016 at the upper
-  bound; derived). D22.3 spares a cross-ancestry null whose look-ups lean the discovery's way: Deelen (one-sided
-  0.10, 0.17), Park and Zenin lean C's way, Timmers, FinnGen and Foote the other, none nominal for C. D34.9: D22.3
-  spares a cross-ancestry null only when the other looks lean the discovery's way at P 0.05 to 0.14 or below (row
-  18); none here reaches 0.05 and they split, so D by D31.13's Hsieh bullet, and by D26.8 too, the reference-read
-  discovery (P 0.001) being sub-genome-wide. No independent genome-wide pass
+  bound; derived). D22.3 does not spare it (D34.9): the looks split, Deelen (one-sided 0.10, 0.17), Park and Zenin
+  leaning C's way short of nominal, Timmers, FinnGen and Foote the other, and Foote's factor 2 nominally against C
+  (P 0.017); so D by D31.13's Hsieh bullet, and by D26.8 too, the reference-read discovery (P 0.001) being
+  sub-genome-wide (D34.13). No independent genome-wide pass
   in Deelen's own ancestry and class outweighs it (D34.1). Hsieh's 90-and-over APOE line is a powered null of
   Hsieh's sample (ε4 OR 0.96, P 0.82; D34.2), so no conversion to a lifespan scale is its own, and the Timmers and
   Park tests are approximate and set no flag (D31.13): Timmers 2019 has C at beta1 −0.0033 (SE 0.0047), P 0.48, a hair
   the other way; Park 2025 C −0.0008 on the Martingale residual (its columns swapped), fewer deaths, C's way, P 0.31; FinnGen R11's deaths G
-  −0.0039, P 0.67, a database line (D29.1); all flat. Zenin 2019 flat (P 0.54), so healthspan 0. Foote 2025's factor 2
-  (unhealthy lifestyle) puts C on the frailer side (P 0.017) and factors 1, 3, 5 and 6 the same side, flat; a D row's Foote factor scores
-  nothing (multivariate), named. Pilling 2017's four parental scans are flat, both signs (P 0.31 to 0.97). Wright 2019's AncestryDNA tables list
+  −0.0039, P 0.67, a database line (D29.1); all flat. Zenin 2019 flat (P 0.54). Foote 2025's factor 2 (unhealthy
+  lifestyle) puts C on the frailer side (P 0.017) and factors 1, 3, 5 and 6 the same side, flat: healthspan −
+  (D31.4, as 119; D34.13: D28.10 bars only the discovery from giving +). Pilling 2017's four parental scans are flat, both signs (P 0.31 to 0.97). Wright 2019's AncestryDNA tables list
   nothing at the lead under their P 0.003 cut, so AncestryDNA is unknown above it; their mothers' lines 182 to 440 kb
   away (strongest rs4964460, meta P 4.5e-5, AncestryDNA 4.0e-6) do not tag the lead (r² under 0.05). The literature search
   (the rsID; Semantic Scholar answered 429, its part unchecked) finds nothing; Hsieh is found by its PMID, and its one
   citing paper is a Finnish polygenic lifespan score, with no single-variant test. The ancestry is named here, not as
   a context token (D30.15). Every genotype neutral (D25.2). Exceptional survival 0 (Deelen leans C's way, short of
-  nominal, and a D row's discovery gives no +, D28.10); lifespan 0 (Timmers and Park flat); healthspan 0 (Zenin
-  flat). Mechanism ageing in general (D25.7): intronic in NUAK1, where Open Targets' GTEx muscle eQTL set for NUAK1
+  nominal, and a D row's discovery gives no +, D28.10); lifespan 0 (Timmers and Park flat); healthspan − (Foote's factor 2, C
+  frailer, P 0.017; Zenin flat). Mechanism ageing in general (D25.7): intronic in NUAK1, where Open Targets' GTEx muscle eQTL set for NUAK1
   holds it (beta −0.15 for G, the variant's alternative allele, P 1.0e-5) at PIP 0.019, set membership only, a
   non-scoring set, named. Causal C4 and effector E4: no lifespan-class credible
   set. Descriptive. Age of action unknown.
@@ -55,8 +54,8 @@ axes:
   mechanism: {value: general_ageing, cites: [db-ensembl-116#q875, db-opentargets-26.09#q1224, db-opentargets-26.09#q1225]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
-            cites: [pmid-31413261#q297, pmid-31413261#q298, pmid-30642433#q398, pmid-40021682#q122, pmid-30729179#q161]}
+  outcome: {healthspan: "−", lifespan: "0", exceptional_survival: "0",
+            cites: [pmid-31413261#q297, pmid-31413261#q298, pmid-30642433#q398, pmid-40021682#q122, pmid-30729179#q161, pmid-40759756#q110, pmid-40759756#q111]}
   actionability: {label: descriptive, cites: [pmid-41949656#q29]}
   context: {values: [], cites: []}
 flags:
