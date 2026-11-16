@@ -223,3 +223,6 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
 - 2026-11-15, trial at trunk fbdf589 (rows 124 RPS6, 125 PRAC2, and the D34.5–7 unit bf0cca3 on 120/124/125): strict
   green, 351 variant rows, 561 studies, every rsID resolved. Row 125's insertion rs199607933 (T>TG, T>TGG) raises
   the carried, unverified indel VRS ids to 20. No refusal; held for the batch's close.
+- 2026-11-16, pending (the lead, 640548398): when the curator's one-unit commit for batch thirteen's corrections
+  lands (D34.10–15; rows 96, 121–126, 131, 136, 107), export, rebuild strict and rehearse on the test instance.
+  96's pair texts change; the tables keep their shape.
