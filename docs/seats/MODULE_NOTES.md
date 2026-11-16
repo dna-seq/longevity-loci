@@ -284,3 +284,11 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
   245 subjects resolved, none unresolved, no ref or allele mismatch. Warnings as at ed22ea4: vrs_id_unverifiable
   20 lines (no new indel), module_not_closed, dataset_currency. The export names second_signal_of for 8 rows
   (25 ×2, 28, 37, 52, 53, 82, 99). The real rebuild waits for the lead to close batch seventeen.
+
+- 2026-11-16, batch seventeen rehearsed at 12c673f (the second signals 162 to 169, with D40's corrections): strict
+  green, on the test instance only. variants 489, studies 679, haplotypes 6, diplotypes 12; 245 resolved, none
+  unresolved, no ref or allele mismatch. content_signature aebf5e38… local and on the test instance (published
+  2026-11-16T16:51:55Z). Warnings as at ed22ea4: vrs_id_unverifiable 20 lines (no new indel), module_not_closed,
+  dataset_currency. Export changes against the 41afdf7 trial: unharmonised variant directions 2 to 3, the new one
+  169's rs4784227 (effect allele T after D40.1, direction risk, written as the row holds it); second_signal_of
+  counted for 8 rows. Held: nothing to production, no close.
