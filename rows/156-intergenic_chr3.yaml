@@ -13,17 +13,21 @@ verdict_reason: >-
   75 at the same hospital: G (0.10, pooled) OR 0.52 per G, P 5.82e-6, under the paper's suggestive line of 1e-5.
   Solved from the OR and the counts (per Alt, the pooled frequency, as rows 113 and 119 read the tables), the controls
   carry G at about 0.130 (226 copies in 1,742 alleles) and the long-lived at about 0.072 (133 in 1,844). Against
-  gnomAD's East Asian genomes (10.4 %, 533 of 5,126 alleles, the reference D31.13 fixes) the controls misfit (181
-  copies expected, P 0.0031 by a normal test counting the reference's sampling error; Fisher's exact 0.0035), so
-  D31.10 reads the discovery against the reference: the long-lived alone give OR 0.67 per G (A 1.49, log 0.40, SE
-  0.10), P 7.2e-5, Fisher's exact 4.7e-5 (derived), nominal, not suggestive, below the reference, so something is
-  left to read and the source is not overfit (D31.11 not reached). The solve takes the covariate-adjusted OR as
-  allelic; across its 95 % interval (0.39 to 0.69, from its P) the controls run from a misfit (P about 8e-6) to a fit
-  (P about 0.12, read as printed), and the long-lived stay below the reference throughout (P about 2e-7 to 0.016,
-  derived). The other references agree on the long-lived and differ on the controls: 1000 Genomes EAS (108 of
-  1,008) has the controls fit (P 0.081) and the long-lived below (OR 0.65, P 0.0014); the southern Han CHS (26 of
-  210) the controls fit (P 0.81) and the long-lived below (OR 0.55, P 0.0088); Taiwan Biobank's printed 0.125 (no
-  count) the controls fit (P 0.55) and the long-lived well below (OR 0.54). Named; none moves the tier. Its validation
+  gnomAD's East Asian genomes (10.4 %, 533 of 5,126 alleles, the reference D31.13 fixes and D37.2 keeps) the controls
+  misfit (181 copies expected, Fisher's exact on both counts P 0.0035, D37.1), so D31.10 reads the discovery against
+  the reference: the long-lived alone give OR 0.67 per G (A 1.49), Fisher's exact P 4.7e-5 (a normal test 7e-5;
+  derived), nominal, not suggestive, below the reference, so something is left to read and the source is not overfit
+  (D31.11 not reached). The misfit does not survive the printed pooled frequency's rounding: at 0.095 the controls fit
+  (Fisher P 0.026), and the discovery would be read as printed (OR 1.92 per A); at 0.105 they misfit (P 3e-4). So
+  "named, not read" holds at the printed value with that caveat; the tier is C and exceptional survival + on every
+  reading (the long-lived against the reference P 4e-6 to 4e-4). The solve takes the covariate-adjusted OR as allelic;
+  across its 95 % interval (0.39 to 0.69, from its P) the controls run from a misfit (Fisher P 3e-5) to a fit (P 0.13,
+  read as printed), and the long-lived stay below the reference throughout (P 1e-8 to 0.014; all derived). The other
+  references are named branches, each call stated (D37.2), and agree on the long-lived: 1000 Genomes EAS (108 of
+  1,008) has the controls fit (P 0.09), so read as printed, C, and the long-lived below (OR 0.65, P 0.0015); the
+  southern Han CHS (26 of 210) the controls fit (P 0.91), C, the long-lived below (OR 0.55, P 0.013); Taiwan Biobank's
+  printed 0.125 (no count, so no exact test) the controls fit (normal, P 0.55), C, the long-lived well below (OR
+  0.54). None moves the tier. Its validation
   cohort gives OR 0.599, P 0.029, the same direction, but its controls are not its own (Fig. 2), so it is not an
   independent replication (D19.1). G is all but absent in Europeans (0.06 %): Deelen 2019, Timmers 2019, Park 2025
   (all three files), Pilling 2017, Zenin 2019 and Foote 2025 were each looked up at the variant (2026-11-16) and hold
@@ -32,12 +36,12 @@ verdict_reason: >-
   a powered null of its sample (D34.2), so no calibration is the paper's own. The literature search (the rsID,
   2026-11-16; Semantic Scholar and the preprint index answered 429, their part unchecked) finds nothing, Hsieh
   included, which is found by its PMID. Genotypes: A/A the reference, G carriers risk, as weak early evidence.
-  Exceptional survival + (the reference read, P 7.2e-5, a derived test); lifespan 0 (FinnGen's flat line, short of
+  Exceptional survival + (the reference read, Fisher P 4.7e-5, a derived test); lifespan 0 (FinnGen's flat line, short of
   power; D34.5); healthspan untested. Mechanism ageing in general (D25.7): intergenic, nothing recorded at the
   variant. Causal C4 and effector E4: no Open Targets record. Descriptive. Age of action unknown. The evidence is
   Taiwanese, as `ancestry_specific:eas`.
 axes:
-  tier: {value: C, cites: [pmid-41949656#q38, pmid-41949656#q28, pmid-41949656#q9, pmid-41949656#q4, pmid-41949656#q39, pmid-41949656#q5, pmid-41949656#q10, pmid-41949656#q16, db-ensembl-116#q939, db-ensembl-116#q940, db-ensembl-116#q941, db-finngen-r11#q105, db-gwascatalog-2026.10.29#q599]}
+  tier: {value: C, cites: [pmid-41949656#q38, pmid-41949656#q28, pmid-41949656#q9, pmid-41949656#q4, pmid-41949656#q39, pmid-41949656#q5, pmid-41949656#q10, pmid-41949656#q16, db-ensembl-116#q939, db-ensembl-116#q940, db-ensembl-116#q941, db-ensembl-116#q992, db-ensembl-116#q993, db-ensembl-116#q994, db-ensembl-116#q995, db-finngen-r11#q105, db-gwascatalog-2026.10.29#q599]}
   mechanism: {value: general_ageing, cites: [db-ensembl-116#q942, db-opentargets-26.09#q1257]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -99,7 +103,7 @@ studies:
     effect_unit: odds of having died at 90 or over rather than at 65 to 75, per A allele (the printed 0.52 per G, inverted)
     effect_allele: A
     direction: protective
-    statistical_test: "Hsieh 2026's logistic GWAS of the 90-and-over group (Table 2, q28, q38), 922 cases and 871 controls (q9); G pooled 0.10; solved per Alt, controls 0.130 and cases 0.072 (derived); the controls misfit gnomAD EAS 0.104 (db-ensembl-116#q939, q940; 226 against 181, P 0.0031, Fisher 0.0035), so this OR is named, not read (D31.10, D31.13); suggestive line 1e-5 (q4)"
+    statistical_test: "Hsieh 2026's logistic GWAS of the 90-and-over group (Table 2, q28, q38), 922 cases and 871 controls (q9); G pooled 0.10; solved per Alt, controls 0.130 and cases 0.072 (derived); the controls misfit gnomAD EAS 0.104 (db-ensembl-116#q939, q940; 226 against 181, Fisher's exact on both counts 0.0035, D37.1), so this OR is named, not read (D31.10, D31.13); at the pooled frequency's low rounding (0.095) the controls fit (P 0.026) and it would be read as printed (D37); suggestive line 1e-5 (q4)"
     curator: claude-opus-5-5
   - rsid: rs79645902
     note: pmid-41949656
@@ -112,13 +116,13 @@ studies:
     sample_unit: individuals
     age_of: participant
     stat_significance: nominal
-    p_value_num: 7.2e-05
+    p_value_num: 4.7e-05
     effect_size: 1.49
     effect_measure: OR
     effect_unit: odds of carrying A, the long-lived against the gnomAD East Asian reference (derived)
     effect_allele: A
     direction: protective
-    statistical_test: "The row's read effect by D31.10: the long-lived's solved G 0.072 (133 of 1,844) against gnomAD EAS 0.104 (db-ensembl-116#q939, q940): log OR per A +0.40, SE 0.10, P 7.2e-5, Fisher 4.7e-5 (derived); 1000 Genomes EAS P 0.0014, CHS P 0.0088 (controls fitting both), named"
+    statistical_test: "The row's read effect by D31.10: the long-lived's solved G 0.072 (133 of 1,844) against gnomAD EAS 0.104 (db-ensembl-116#q939, q940): OR per A 1.49, Fisher's exact on both counts 4.7e-5 (D37.1; a normal test 7e-5; derived); 4e-6 to 4e-4 across the pooled frequency's rounding; 1000 Genomes EAS (db-ensembl-116#q994) P 0.0015, CHS (q992) P 0.013 (controls fitting both), named"
     curator: claude-opus-5-5
   - rsid: rs79645902
     note: pmid-41949656

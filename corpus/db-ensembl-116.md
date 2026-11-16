@@ -3545,3 +3545,15 @@ rs75526165 (row 150): 1000 Genomes CHS T 182 of 210 (q985, beside A's 28, q914);
 > [q991] populations[54] allele_count 972 allele T frequency 0.964285714285714 population 1000GENOMES:phase_3:EAS
 
 rs75737809 (row 152): 1000 Genomes CHS A 5 of 210, 0.024 (q988, q989); 1000 Genomes EAS A 36 of 1,008, 0.0357 (q990, q991), not the 0.040 Hsieh's Table 1 prints in its 1000 Genomes column. For row 152, batch fourteen (D37).
+
+## Reading 2026-11-16, record
+
+> [q992] populations[58] frequency 0.123809523809524 allele G allele_count 26 population 1000GENOMES:phase_3:CHS
+
+> [q993] populations[57] frequency 0.876190476190476 allele A allele_count 184 population 1000GENOMES:phase_3:CHS
+
+> [q994] populations[61] allele G allele_count 108 frequency 0.107142857142857 population 1000GENOMES:phase_3:EAS
+
+> [q995] populations[60] frequency 0.892857142857143 allele A allele_count 900 population 1000GENOMES:phase_3:EAS
+
+rs79645902 (row 156): 1000 Genomes CHS G 26 of 210, 0.124 (q992, q993); 1000 Genomes EAS G 108 of 1,008, 0.107 (q994, q995). For row 156, batch fourteen (D37).
