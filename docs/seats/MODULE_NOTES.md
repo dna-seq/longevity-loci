@@ -265,3 +265,9 @@ het. R-LEGACY-1 carries the 528 as tier C/D research-view rows, `flags: legacy_l
 - 2026-11-16, trial at trunk 4700f7b (markers 145 TSC22D2, 153, 160 added): strict green, 453 variant rows, 648
   studies, every rsID resolved. 145's A/AT insertion rs59633341 resolves and joins the carried, unverified A>AT
   group (20 warning lines, now 21 alleles). Held for the close.
+- 2026-11-16, batch sixteen rehearsed, the seed complete (trunk ed22ea4; 161 loci in 156 rows, A 15, B 70, C 36,
+  D 35): 465 variant rows, 652 studies, haplotypes 6, diplotypes 12. Strict green, every rsID resolved. Warnings
+  unchanged in kind: 20 vrs_id_unverifiable lines (21 indel alleles, 145's insertion the only new one),
+  module_not_closed, dataset_currency. content_signature 35d1122a…, equal local and polygon; artifact 5a521352…
+  (server). Markers: 19 variants, 57 genotype rows, all neutral, direction unknown, weight null, six marker traits
+  (OBA_0003784, EFO_0022597, EFO_0006312, EFO_0007783, EFO_0010602, EFO_0000473).
