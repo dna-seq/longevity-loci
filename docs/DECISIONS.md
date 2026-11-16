@@ -1409,3 +1409,78 @@ The candidate rows (D25.6), once the seed list was done.
    stays at one-sided P < 0.05. The reviewer's approximation gave about 0.002. Otherwise the cell is 0. Prose names
    both either way. The curator's (a) in outcome while that holds. Rejected: (a) on D17.3 alone, which reads an
    anchor's rule into a cell; (b) on Zenin alone, which ignores Timmers.
+
+## D40 — batch seventeen's read: the second signals 162 to 169, with 28, 53 and 82 (2026-11-16)
+
+From the lead's three adversarial reads of rows 162 to 169 and the seed rows they touch, and the curator's pending
+questions. Settled under the person's standing word (pacing off; the person is present and was told).
+
+1. **169 CASC16-TOX3 is C, not B. D39.18's B branch for 169 is withdrawn.** A genome-wide healthspan line scores
+   only with a co-occurring lifespan study at one-sided P < 0.05, same allele (§4.5, D16), and that study must be the
+   locus's own signal, surviving conditioning on the stronger lifespan lines (D17.1, D30.2). Conditioned on 82's
+   lead, every lifespan line 169 reads is flat (one-sided 0.12 to 0.45), and Zenin's own parents'-death column misses
+   even before conditioning (0.0515). This is 103's case. D39.18 skipped §4.5's gate; the lead's error. Zenin's
+   3.02e-8 is the paper's own P after its genomic control (q111), and it is named. The genotype states follow §6.2:
+   C/C, the commonest, is `neutral`, with C/T and T/T `risk`, and the row carries `PROTECT:ABSENCE_OF_RISK` for breast
+   cancer, as 66 does.
+2. **D39.19 is corrected: Zenin and Timmers 2020's healthspan column are one test, and 82's healthspan `+` holds.**
+   Timmers' column prints Zenin's data (q32). Conditioned on rs4784227, the lead keeps z 1.74 to 1.88 across every
+   reading of the prints (one-sided 0.030 to 0.041). The file's digits govern. The 1.62 reading mixed a rounded lead
+   with an unrounded rs4784227 and matches no print. "Zenin gives it nothing (P 0.06)" read a two-sided P, against
+   D26.2; withdrawn. No signal is scored twice, since the residual after 169's marginal is 82's own. Row 82 owes:
+   - the stale sentence "its Z (4.79) is above ... (3.28), so the + is the lead's own" deleted, as against D39.18;
+   - the conditional's inputs cited in the cell (q114 or q193; the phase, q622, q1208, q1209);
+   - the 1.62 alternative dropped.
+3. **D39.18's ranking needs a stronger line the data can tell apart.** Where two lines' z differ by less than one
+   standard error of their difference, the study ranks neither. Then the seed row keeps the locus's marginal, and
+   the second signal is read conditioned on it (D39.15), so one signal is graded once.
+   - **162 stays C and 28 stays B.** In Rosoff's mvAge the two are 5.67 against 5.62, a gap of 0.05 against a
+     standard error near 1.2. Each conditioned on the other is about 4.2. The curator's proposal (162 B) is rejected.
+     So is its corollary of 28 to C: a tier swap on noise, and 162's Timmers line was never read against D30.2.
+   - **53 and 168 keep their tiers.** In FinnGen 168's line is 2.56 against the lead's 2.27, a tie under this item, so
+     the order does not reverse there. The rows name both numbers. 168's FinnGen line conditioned (1.82) is a one-sided
+     pass in any case, and a database line lifts nothing (D29.1).
+4. **165 MICA/MICB is B; A waits on the mothers' test.** D39.18 amends D39.17 for 165: in Pilling's fathers,
+   rs3131621 is the stronger line (z 5.51 against 1.14). So it is read at its marginal, P 3.6e-8 (Table 2, the
+   paper's own call), and AncestryDNA's fathers are outside that anchor. Their line is Wright's Table 8, filtered on
+   their own arm (D29.18), and it replicates on the same allele, at P 0.002 after genomic control (q179, D26.1). The
+   smaller-effect clause does not fire (0.86 times, heterogeneity P 0.65). No father–mother difference is shown
+   (every test P ≥ 0.06 after correction), so no sex token, and AncestryDNA's mothers then test the same effect.
+   - **Why not A:** Wright prints their heterogeneity P as 0.031 (q181), a D21 flag at power 0.86.
+   - **Why the flag stands:** our readings that clear it (0.049 from the raw arms, 0.058 after genomic control, 0.22
+     with UK Biobank's mothers conditioned on 37's lead) do not reproduce the printed figure. Conditioning AncestryDNA's
+     mothers needs 37's lead's AncestryDNA arm, which no source prints. The lower reading holds until it is quoted
+     (D39.9, D39.15).
+   - **What it would take:** A, once a quoted figure clears the mothers' test.
+   - **Corrections, whichever tier:** healthspan `+` goes to `0` (in Zenin 37's lead is stronger, and rs3131621
+     conditioned is one-sided 0.075). The AncestryDNA `effect_unit` names G on the lifespan scale (or A +0.01061). The
+     prose names the HLA caveats: A's frequency differs across UK Biobank, gnomAD, FinnGen and 1000 Genomes, and the
+     imputation quality is unknown.
+5. **166 stays B; 167 stays B.**
+   - **166 corrections:** the meta's z is 6.14, not 5.75, and the conditional holds on 6.14. "25 members" is a
+     truncated page (Wright's set has 84, Aragam's 68). The AncestryDNA P is 1.04e-4 after genomic control. +0.0119
+     is T on the lifespan scale. Open Targets' QC flags on the lifespan set are named. C3 and E2 stand.
+   - **167:** mvAge anchors B with Timmers co-occurring (D18.3, D16), and A is barred by D18.3.
+     - The window has not been read for stronger lifespan lines (D30.18). B holds until it is, then the row is
+       re-read.
+     - The diabetes, HbA1c, blood-pressure and coronary βs the row quotes belong to the credible sets' leads, not to
+       rs6062322: say so, on the variant's own βs and phase.
+     - If cached reads confirm rs6062322 sits at PIP 0.023 or less and leads no set, the mechanism goes to
+       `general_ageing` (D30.7, D30.9); until then it stays as filed (D39.9).
+     - Foote's factor 5 (one-sided 0.028 against T) is named, and Foote gives 0. Rosoff's PIPs (0.46, 0.29) are
+       named. Deelen's flag is unknown, not flat. The phase note names its alleles.
+6. **162, 163 and 164: corrections, no tier moves, no folds.**
+   - **The phase cites:** q1175 and q1176 name one person's genotype, not the coupled alleles. They are replaced by
+     the counts the derivation used, which the review reproduced exactly.
+   - **162:** AncestryDNA's line fails D30.1 (fathers 0.019, mothers 0.039), so it is no replication, and "in a
+     separate American group too" leaves the genotype text. Foote's general factor at rs13141210 is a shoulder of
+     rs1383722 (r² 0.30), named and counted for nothing. The COPD and BMI βs are the set lead's (rs13143549).
+   - **163, 164:** 164's study line is z 3.69, P 2.3e-4 stepwise, not 4.8e-5. 163's "given both" figure (4.38)
+     conditioned on a weaker line, and goes. "Rosoff's fine-mapping picks rs16843836" overstates q87, which puts it in
+     no set. 163 and 164 are independent of each other (r² 0.018; each survives the other at 5.53 and 4.85): say so.
+   - **The outcome cells** are re-read stepwise (D39.18), study by study. Where a cell rests on a line at a seed lead
+     read live (Pilling's top 10 %, Foote's deposits), the curator caches and quotes it first. Until then the cells
+     stand as filed (D39.9). Deelen gives 162 nothing, and Zenin gives 163 nothing (one-sided 0.057).
+7. **168 and 53: prose only.** 168's healthspan 0 rests on D31.13: Foote's general factor favours (one-sided 0.034)
+   and F2 opposes (0.006). It replaces "P 0.068". Exceptional survival 0 holds (Deelen's 99th, 0.052). 53's "the
+   question with the lead" cites D39.18, and "both under 5e-8" reads "short of genome-wide".
