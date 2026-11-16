@@ -21,8 +21,7 @@ verdict_reason: >-
   (D32, D37.12); `direction: unknown`. Outcome cells read for T: exceptional survival 0 (Deelen flat); lifespan 0
   (Timmers, Pilling, Park and FinnGen flat); healthspan 0 (Zenin and Foote flat). Mechanism: markers of biological
   ageing. No pleiotropy read: the Catalog holds the clock line alone. Causal C4: no clock's credible set in Open
-  Targets holds it, its one set a brain splicing QTL at PIP 0.08. Effector E4: no gene named; BLNK and DNTT are the
-  seed's names for the region. Descriptive. Age of action unknown. The evidence is European.
+  Targets holds it, its one set a brain splicing QTL at PIP 0.08. Effector E4: no gene named; BLNK and DNTT are the seed's names for the region. A measurement route is named, as 128 names its smoking CpG: McCartney's Table S12 colocalises Hannum age in this window with the methylation of cg19935065, a DNTT CpG, at PP.H4 0.9975 (pmid-34187551#q13 to q15), the table naming no SNP; the clock may read this locus through that CpG rather than through ageing, named, not an effector (D39.11). Descriptive. Age of action unknown. The evidence is European.
 axes:
   tier: {value: B, cites: [pmid-34187551#q1, pmid-34187551#q2, pmid-34187551#q6, pmid-34187551#q7, pmid-34187551#q8, pmid-34187551#q11, db-gwascatalog-2026.10.29#q770, db-gwascatalog-2026.10.29#q772, db-gwascatalog-2026.10.29#q773, db-gwascatalog-2026.10.29#q774, db-ensembl-116#q1101, db-ensembl-116#q1102, db-ensembl-116#q1103]}
   mechanism: {value: ageing_markers, cites: [pmid-34187551#q2, db-gwascatalog-2026.10.29#q771]}
@@ -57,14 +56,14 @@ variants:
         state: neutral
         conclusion: >-
           You carry one copy of the T version of this DNA position (about 33 in 100 people of European ancestry do).
-          Large studies link it with a Hannum epigenetic clock reading about a third of a year lower than expected for
+          One large study links it with a Hannum epigenetic clock reading about a third of a year lower than expected for
           your age. That is a tendency in a marker whose reading only means something against your calendar age, which
           this report does not have, so it carries no score.
       - genotype: T/T
         state: neutral
         conclusion: >-
           You carry two copies of the T version of this DNA position (about 4 in 100 people of European ancestry do).
-          Large studies link each copy of T with a Hannum epigenetic clock reading about a third of a year lower than
+          One large study links each copy of T with a Hannum epigenetic clock reading about a third of a year lower than
           expected for your age. That is a tendency in a marker whose reading only means something against your
           calendar age, which this report does not have, so it carries no score.
 studies:
