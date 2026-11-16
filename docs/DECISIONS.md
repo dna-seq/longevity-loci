@@ -1072,3 +1072,29 @@ alternative it rejected. No tier moves.
    The finding goes on 121 as well as 140, and on any other Kolbe row a deposit holds. If the release is not mostly UK Biobank, the question returns to the lead. Rejected:
    - (a) as written, which named the doubt on 140 and left 121 untouched;
    - a sweep of every Kolbe row's deposit, wider than the rows the deposits hold.
+
+## D36 — the seed's X rows and the brain-age loci (2026-11-16)
+
+From the curator's questions on 111, 139 and 146 and on the queue, settled under the person's standing word, each
+with the alternative it rejected.
+
+1. **Hsieh's Table 4 validation ORs that cross 1 for 111, 139 and 146 are read as direction unknown, named, no
+   token.** Each printed figure is close to the reciprocal of what the discovery implies (0.31 against 3.055, 0.55
+   against 1.963, 2.25 against 0.554). The text says every replicated locus kept its direction, and Table 4's other
+   lines do. The counted allele is not printed, so a coding flip is the likelier reading, but it is not shown. The
+   validation is not independent anyway (D19.1), so reading it either way sets no tier. Rejected: (b), a same-design
+   reversal turning 111 and 139 to D, which lets a sample that cannot confirm its discovery overturn it; (c), a note
+   on the seed's X, since the seed is a starting list that carries no claim the rows rely on.
+2. **146 is D, as 131 (D34.9, D22.3).** Foote's factor 5 at two-sided 0.0502 leans A's way, but four sister factors
+   lean the other way, and Timmers, Pilling and Park lean A's way short of one-sided 0.05. The looks scatter, so
+   D22.3's sparing, which needs the looks to lean the discovery's way, does not apply. Rejected: (b), C spared on
+   one borderline factor of six.
+3. **D32 reaches the seed's three brain-age loci (115 KLF3, 129 KANSL1, 142 MAPT).**
+   - What they are: Jawinski 2025's brain-age-gap loci. The design lists brain age with the clocks, telomere length, mtDNA copy number and loss of Y as biomarker loci, reported as tendencies and never summed into lifespan (docs/longevitymap_v2/evidence/D_healthspan_synthesis.md, implication 1).
+   - Why D32 fits: its reason holds for them too. The gap is read against calendar age, which the module does not have.
+   - What follows: they are rows of the unscored markers section, curated with the markers after the scored loci.
+   - This extends the person's D32 beyond the subpanel it named, so it goes to them in the state post for veto.
+
+   Rejected:
+   - (b) scored rows resting on borrowed lifespan look-ups, against the design's "never summed";
+   - (c) dropping them, which loses seed loci the design places.
