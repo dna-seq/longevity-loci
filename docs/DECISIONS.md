@@ -1205,3 +1205,18 @@ that move: 106 A to B, 112 C to B, 23 B to A once its line is quoted.
     - Lu is not independent: it shares five of its eight cohorts with McCartney (D19.1);
     - Lu's SE does not reproduce its P, said so;
     - the effect is relative to people without T, not to calendar age.
+
+## D39 — batch sixteen's questions (2026-11-16)
+
+Settled under the person's standing word, each with the alternative it rejected.
+
+1. **160 STN1 is A: §4.1's "replication with a much smaller effect" compares the replication with the discovery, and
+   at 160 the replication is the larger.** The row is tiered from the seed's study (D37.11), Li 2020 (no UK Biobank):
+   T +0.064 SD, P 5e-19. Codd 2021's UK Biobank sentinel is that study's independent genome-wide replication, same
+   allele and side, marginal +0.081, P 2.6e-167. The heterogeneity (Li 0.79 times Codd, P 0.026) runs the other way
+   from the clause: a discovery smaller than its replication is no shrinkage, and gives no winner's-curse reason to
+   doubt the locus. 37 (0.49 times, D21.13) and 106 (0.58 and 0.39 times, D38.1) each had the replication the
+   smaller, and 35 called two thirds "not much smaller" at heterogeneity P 0.094; none is moved. Rejected: (a) B by
+   the heterogeneity test alone, which reads the clause without its direction; (b) A against Codd's joint estimate,
+   since like for like is marginal; (c) a ratio bound between 0.58 and 0.79, a rule fitted to one case. The row
+   prints both estimates and the heterogeneity P, and says which study it tiers from.
