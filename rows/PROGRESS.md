@@ -196,10 +196,11 @@ mechanical consensus of the research tracks, to be confirmed or overturned by th
 - Scout entry, 2026-11-18: row 48 IL6, three papers on other IL6 SNPs (−174 nulls, a small Uyghur rs1800796 result) named; D kept.
 - Scout entry, 2026-11-18: marker rows 23 TERC, 30 TERT, 160 STN1/OBFC1, Rode 2015's allele-sum mortality null, Scarabino 2019 and Druley 2016 named; unscored, nothing moves.
 - Scout entry, 2026-11-18: rows 159 HLA-DQB1 and 38 HLA-DQA1, Yang 2017 (other DQB1 SNPs, Chinese) and the 17th IHIW (allele level, small) named; no cell moves.
+- Scout entry, 2026-11-18: single uncited studies at rows 6, 33, 83, 114, 25, 57 and 80 noted and named; no cell moves (33's WHI Hispanic T against the European T, another ancestry).
 
 ## In hand
 
-The scout's 2015–2026 backfill (c0a8726, D41): the two new-locus entries done (170; Kashtanova no row); 96 APOE, 43 FOXO3, 73 KL done; 59 ABO, 46 LPA, 84 CETP, 48 IL6 done; the TL rows and 159/38 done; next the singles (114, 6, 33, 83, 25, 57, 80).
+The scout's 2015–2026 backfill (c0a8726, D41): every entry read (2026-11-18); awaiting the lead's word on rows 170 and 73 and the next queue.
 
 ## Next: seed tier A (11)
 

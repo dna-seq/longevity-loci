@@ -24,7 +24,8 @@ verdict_reason: >-
   locus-to-gene on each, passing 0.5 only on Pilling 2017's combined-parents set (0.53; Timmers 2019's 0.36, CDKN2A
   0.21). E1 by the letter on one set, on a single tissue's QTL: a thin basis. Timmers 2020 names CDKN2B by SMR too.
   The seed's other rsIDs: rs1333042, rs7859727, rs6475609 (r² 0.93) and rs1333049 (the CAD tag, r² 0.83) are in the
-  lead's set, the same signal; rs1063192 (a German candidate study) was not read.
+  lead's set, the same signal; rs1063192 (a German candidate study) was not read. The scout's backfill (D41): CUX1 binds the 9p21 functional SNP rs1537371 and regulates CDKN2A/B and ANRIL in
+  endothelial cells (Jiang 2022; pmid-37117763), mechanism at the locus, its LD to the lead not read. No cell moves.
 axes:
   tier: {value: A, cites: [pmid-30642433#q6, pmid-31484785#q9, pmid-31413261#q3, pmid-32678081#q4]}
   mechanism: {value: heart_vessels, cites: [pmid-29227965#q6, pmid-30642433#q6]}

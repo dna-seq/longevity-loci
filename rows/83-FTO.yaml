@@ -49,7 +49,9 @@ verdict_reason: >-
   Claussnitzer 2015 names IRX3 and IRX5 for this variant: its C disrupts an ARID5B repressor motif and doubles their
   expression in adipocyte precursors, shifting them from beige to white fat; named in prose, an experimental call for
   the obesity signal, and E2 FTO stands on the association data. C is the minor allele at 43 %, so T/C, the commonest genotype, is the reference (§6.2): T/T protective, C/C
-  risk, as row 8 states its nominal variant. Age of action unknown. The evidence is European.
+  risk, as row 8 states its nominal variant. Age of action unknown. The evidence is European. The scout's backfill (D41): a meta-analysis of
+  169,551 Caucasian adults finds FTO's risk allele not associated with all-cause mortality independently of adiposity
+  (Zimmermann 2015; pmid-25752329), in line with the row's body-mass route. No cell moves.
 axes:
   tier: {value: B, cites: [pmid-40759756#q9, pmid-40759756#q10, pmid-40759756#q2, db-ensembl-116#q646, db-opentargets-26.09#q972, db-opentargets-26.09#q973, db-opentargets-26.09#q974, db-opentargets-26.09#q975, db-opentargets-26.09#q976, pmid-29030599#q18, pmid-30642433#q325, pmid-29227965#q68, pmid-29227965#q70, pmid-31484785#q129, pmid-31484785#q130, pmid-31484785#q131, pmid-31484785#q132, pmid-31484785#q6, pmid-29227965#q69, pmid-29227965#q45, db-ensembl-116#q629, db-ensembl-116#q630, db-ensembl-116#q631, db-ensembl-116#q632, pmid-31413261#q193, pmid-31413261#q194, pmid-30729179#q115, pmid-30729179#q59, pmid-40021682#q85, pmid-40021682#q32, db-finngen-r11#q59, pmid-30642433#q327, db-ensembl-116#q635]}
   mechanism: {value: metabolism, cites: [db-opentargets-26.09#q929, db-opentargets-26.09#q930, db-opentargets-26.09#q931, db-opentargets-26.09#q932, db-opentargets-26.09#q933, db-opentargets-26.09#q934, db-opentargets-26.09#q935, pmid-29030599#q18]}

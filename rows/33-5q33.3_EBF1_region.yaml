@@ -56,7 +56,9 @@ verdict_reason: >-
   sets; Deelen found no eQTL). The protection is a presence: the minor allele goes with longer life. Age of action
   unknown: Deelen reads the ≥85 signal as action from middle age, which the paper infers and does not show, and
   Timmers 2019's age bands do not settle it (Figure 5 source data: fathers about zero from 60 to 90, mothers 0.010,
-  0.020, 0.011; age moderator P 0.46).
+  0.020, 0.011; age moderator P 0.46). The scout's backfill (D41): in the Women's Health Initiative's Hispanic women, seven SNPs in LD with the lead put
+  T with lower survival to 85 (p 0.04; Shadyab 2017, pmid-27707806 q3), against the European T: another ancestry
+  (D22.3), not a contradiction. No cell moves.
 axes:
   tier: {value: B, cites: [pmid-24688116#q1, pmid-24688116#q2, pmid-24688116#q3, pmid-24688116#q4, pmid-24688116#q5, pmid-24688116#q6, pmid-24688116#q7, pmid-24688116#q8, pmid-30642433#q93, pmid-30642433#q94, pmid-30642433#q95, pmid-30642433#q13, pmid-30642433#q96, pmid-30642433#q97, pmid-30642433#q12, pmid-30642433#q91, pmid-30642433#q92, pmid-31413261#q88, pmid-31413261#q80, pmid-31413261#q89, pmid-33657282#q14, pmid-28100865#q1, pmid-29030599#q16, pmid-29030599#q17, pmid-30729179#q51]}
   mechanism: {value: general_ageing, cites: [pmid-24688116#q11, pmid-24688116#q14]}

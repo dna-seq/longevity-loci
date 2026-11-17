@@ -35,7 +35,8 @@ verdict_reason: >-
   TFAM packages and replicates mitochondrial DNA. No pleiotropy: the Catalog holds the copy-number lines alone. Causal
   C1 (PIP 1.00 in Gupta's set, 0.96 in Chong's). Effector E2, TFAM: locus-to-gene 0.63 (IPMK 0.07), the variant
   upstream of TFAM and in TFAM's expression credible sets across GTEx tissues at PIP up to 1.00, G with lower
-  expression (no colocalisation read; that G gives more copies with less TFAM expression is unexplained). Descriptive. Age of action unknown. The evidence is mostly European.
+  expression (no colocalisation read; that G gives more copies with less TFAM expression is unexplained). Descriptive. Age of action unknown. The evidence is mostly European. The scout's backfill (D41): TFAM's rs1937 CC with longevity in the CLHLS, OR 1.99 (Chen 2022;
+  pmid-34979947), another SNP, East Asian. Unscored, nothing moves.
 axes:
   tier: {value: A, cites: [pmid-37587338#q1, pmid-37587338#q2, pmid-37587338#q4, pmid-37587338#q5, pmid-37587338#q6, pmid-37587338#q7, pmid-37587338#q8, pmid-37587338#q11, pmid-37587338#q12, pmid-38267512#q1, pmid-38267512#q2, pmid-38267512#q3, pmid-38267512#q4, pmid-38267512#q5, pmid-38267512#q7, pmid-38267512#q8, pmid-38267512#q9, pmid-38267512#q10, pmid-38267512#q11, pmid-38267512#q12, pmid-38267512#q13, pmid-38267512#q14, pmid-38267512#q16, pmid-37255673#q1, pmid-37255673#q2, pmid-37255673#q3, pmid-37255673#q4, pmid-37255673#q5, pmid-37255673#q6, pmid-37255673#q7, db-gwascatalog-2026.10.29#q680, db-gwascatalog-2026.10.29#q681, db-gwascatalog-2026.10.29#q682, db-gwascatalog-2026.10.29#q683, db-gwascatalog-2026.10.29#q684, db-gwascatalog-2026.10.29#q685]}
   mechanism: {value: ageing_markers, cites: [pmid-37587338#q1, pmid-37587338#q2, db-gwascatalog-2026.10.29#q679]}

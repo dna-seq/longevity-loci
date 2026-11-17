@@ -49,7 +49,9 @@ verdict_reason: >-
   rs578776 is Pilling's second signal; rs11852372, rs2036527, rs4887072 and rs11633223 were not placed. Timmers 2019's
   Figure 5 source data show the fade directly: age moderates the effect at P 2.1e-4, FDR Q 0.0048, passing 5 % FDR,
   fathers 0.084 at 50-60 falling to 0.040 at 80-90 and mothers 0.054 at 60-70 to 0.021 at 80-90; the sex moderator is
-  nominal (P 0.013) and fails FDR (Q 0.27), so no sex_specific.
+  nominal (P 0.013) and fails FDR (Q 0.27), so no sex_specific. The scout's backfill (D41): at rs1051730, smoking-risk homozygotes have
+  higher all-cause mortality among Finnish COPD patients and smokers, crude HR 2.2 and 1.3 (Kupiainen 2016;
+  pmid-26751916), the row's smoking route; its tag of the lead not read. No cell moves.
 axes:
   tier: {value: B, cites: [pmid-31413261#q155, pmid-30642433#q4, pmid-29030599#q5, pmid-31484785#q7, pmid-31484785#q8, pmid-31413261#q2, pmid-31413261#q141, pmid-31413261#q142, pmid-31413261#q82, pmid-30642433#q90, pmid-30642433#q92, pmid-30642433#q251, pmid-30642433#q169, pmid-30642433#q172]}
   mechanism: {value: smoking_lungs, cites: [pmid-29030599#q8, pmid-30642433#q4]}
