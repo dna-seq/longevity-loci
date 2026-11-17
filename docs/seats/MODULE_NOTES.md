@@ -144,3 +144,10 @@ The APOE probe `test_apoe_probe@0.0.1` was published and deleted (desk #307 sett
 production (528 rsIDs, 671 studies, compiled on 0.7.0) is R-LEGACY-1's research-view layer, not built into 2.0.0.
 
 - 2026-11-17: moved to the chat organisation desk-antonkulaga (bin/org-move.py).
+
+- 2026-11-18, trial at 3b7c46b (the backfill read: row 170 CYP26A1-MYOF, the first locus outside the seed, at C;
+  73 KL's replication_failed; notes on 18 rows): strict green, never published. variants 492, studies 682,
+  haplotypes 6, diplotypes 12; 246 resolved, none unresolved, no ref or allele mismatch. Warnings as at 12c673f
+  (20 indel VRS lines, no new indel; not closed; ClinVar currency). Export summary unchanged but for row 170's
+  counts. Next block in curation: the GWAS Catalog's 13 lines as rows on 170's pattern; the rebuild waits for the
+  lead's close.
