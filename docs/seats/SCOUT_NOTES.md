@@ -7,7 +7,12 @@ person: "Make sure they commit all to notes, transcripts are not moving"). A fre
 
 ## In hand
 
-Nothing is half run. Every sweep so far is committed and pushed.
+- **Backfill sweep, 2023-01-01 → 2026-10-20** (the lead, #longevity-loci>scout 641384225, for the person; decided,
+  `urgent`, started 2026-11-17): every current query (E set, A–D, F–K, S-seedgene), Europe PMC preprints over the same
+  window, bioRxiv's and medRxiv's own listings from 2026-04. Queue (a) any genome-wide lifespan, longevity, healthspan
+  or age-at-death locus not a seed locus, (b) any paper on an existing row that no row cites. Also a one-line verdict on
+  the nine pre-2023 GWAS Catalog ids and on Atanur 2026 (pmid 42880286). Reply there with records, new, queued.
+  About 13,000 PubMed hits before dedupe. Scratch under the session's scratchpad `bf/`.
 
 ## State of the work
 
