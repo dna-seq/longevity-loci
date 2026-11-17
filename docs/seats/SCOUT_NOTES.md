@@ -76,3 +76,5 @@ Nothing is half run. Every sweep so far is committed and pushed (last scout comm
 ## To file
 
 Nothing.
+
+- 2026-11-17: moved to the chat organisation desk-antonkulaga (bin/org-move.py).

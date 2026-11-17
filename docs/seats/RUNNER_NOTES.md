@@ -57,3 +57,5 @@ session can carry on from these notes, `docs/seats/RUNNER.md` (the priming), `ru
 
 - Nothing open. Kit #438 (empty cold-start jobs line) fixed in v0.1.190; kit #410 fixed in v0.1.182 (and unneeded since
   the prefix watcher, kit #380); kit #398 filed by the lead.
+
+- 2026-11-17: moved to the chat organisation desk-antonkulaga (bin/org-move.py).

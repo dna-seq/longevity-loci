@@ -871,3 +871,5 @@ leads only; the supplementary tables (all 52 leads) are not cached.
 4. Shared-channel backlog from before this account: read as information only.
 5. First work: leak gate on in this clone (checked); PROGRESS.md written; the first locus done; §11's decisions
    mapped to the loci they block, none asked.
+
+- 2026-11-17: moved to the chat organisation desk-antonkulaga (bin/org-move.py).

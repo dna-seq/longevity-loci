@@ -139,3 +139,5 @@ eleven's was 101's proxy allele).
 
 The APOE probe `test_apoe_probe@0.0.1` was published and deleted (desk #307 settled). The legacy v1.2.0 on
 production (528 rsIDs, 671 studies, compiled on 0.7.0) is R-LEGACY-1's research-view layer, not built into 2.0.0.
+
+- 2026-11-17: moved to the chat organisation desk-antonkulaga (bin/org-move.py).

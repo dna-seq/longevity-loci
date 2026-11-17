@@ -74,3 +74,5 @@ Still owed: reply to agents-kit/lead with each seat's notes commit, one `keys co
 - reflect after 2026-11-21: classes/base/BASE.md as of v0.1.207 (the button closes the wake, not the turn).
 - Scratch processes outside the repository (a quota sampler and the curator's compaction waker) do not move with the
   seat; a new session starts without them.
+
+- 2026-11-17: moved to the chat organisation desk-antonkulaga (bin/org-move.py).

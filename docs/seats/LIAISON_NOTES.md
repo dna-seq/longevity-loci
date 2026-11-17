@@ -98,3 +98,5 @@ Kit copy: `K=~/.claude/plugins/cache/agent-seat-blueprints/seats/<pinned version
 
 - `docs/seats/LIAISON.md` says the plugin's repository runs no seats; since 2026-11-05 it runs four (lead, pm,
   tester, liaison). A priming change by the skill `change-priming`; the filing route (issues, no inbox) is unchanged.
+
+- 2026-11-17: moved to the chat organisation desk-antonkulaga (bin/org-move.py).

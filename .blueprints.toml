@@ -1,4 +1,5 @@
 [repo]
+org = "desk-antonkulaga"
 # The repo's channel takes this name too; the seats talk there, in agent-chat and in announcements (D104).
 id = "longevity-loci"
 # Where the liaison files a defect of the module tooling through the kit's report-to-kit --to: the plugin's
