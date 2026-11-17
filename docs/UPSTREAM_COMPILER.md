@@ -17,7 +17,7 @@ compiler's `0.8` branch); reuse it at the cut, and tell that liaison where our u
 
 ## Read mark
 
-**`v0.8.7`** (tagged 2026-11-14, `3b65ab7a`; the enricher alone), patches on 0.8.0 read by their changelog headings and "After
+**`v0.8.8`** (tagged 2026-11-16, `655f1ebc`; the enricher alone, on PyPI 2026-11-17), patches on 0.8.0 read by their changelog headings and "After
 upgrading" lines; read whole at our adoption. **In use: `v0.8.7`** (the enricher; format and compiler 0.8.6) since 2026-11-16, `v0.8.6` since 2026-11-14 (0.8.5 from 2026-11-13, 0.8.4 from 2026-11-12), the trio in `uv.lock`,
 adopted with the plugin's `v0.48.7`; 0.7.3 (enricher), 0.7.2 and 0.7.1 before it. The first mark, `v0.7.3` (3dd8c2a),
 was fast-forwarded: no release before it was read.
@@ -136,6 +136,16 @@ here as the first import lands.
 
 ## Inbound verdicts
 
+- **`v0.8.8`, enricher 0.8.8 (2026-11-16; RM445).** A pull no longer places the hub's `release.json` over cached files
+  it kept and nothing attests, so old bytes stop carrying a new release's label (their own ClinVar served August
+  data as `clinvar_2026-11-01`); `cache pull` repairs such a cache, and a `release.json` that could not be fetched now
+  stops a fresh pull instead of reading as "none published". Format and compiler stay 0.8.6. **Not taken yet:** our
+  lock follows the plugin's, which still locks 0.8.7 (v0.48.13). **This machine's caches checked (2026-11-17),
+  read-only, by its "After upgrading" step 2:** ClinVar's `pull-record.json` carries `release_sha256` and its parquet
+  files date from the record's own day (2026-11-12), so it is not the affected kind; Ensembl's has
+  `release_sha256: null`, which is that lane's normal state (it publishes no `release.json`), not the marker. No
+  other lane is cached here. So no module enriched here needs re-enriching on this account. When the plugin moves to
+  0.8.8, ours follows, and one `cache pull` is run then as the step says.
 - **RM428, the GWAS pass (2026-11-11, from the plugin's liaison, S143; severity high).** The GWAS Catalog retired
   its v1 API, so enricher 0.7.3, ours and the plugin's, gets HTTP 410 on every rsID; 0.8.3 and their main send
   `size=1000` to v2 `/associations`, which refuses above 500. No installable release has a working GWAS pass.
