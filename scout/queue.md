@@ -27,6 +27,8 @@ The backfill 2015-01-01 → 2026-10-20 (2026-11-17): two entries for loci outsid
 
 ### pmid-30299504 — rs1927465 (between CYP26A1 and MYOF, 10q23.33): a new longevity association in the Long Life Family Study, not a seed locus
 
+- **Taken** 2026-11-18: row 170 CYP26A1-MYOF (rs1927465), tier C (curator, 4c967f8), the first locus outside the seed; B or D on the lead's word.
+
 - **Why:** A GWAS of longevity in the LLFS families reports a "strong new association" at rs1927465, outside every seed locus and every row, confirmed in the Health and Retirement Study. Whether it reached genome-wide significance, and its effect allele and size, are not in the abstract. If it did, this is a candidate new row under the lead's rule (a).
 - **Found by:** the 2015-01-01 → 2026-10-20 backfill (lead, 2026-11-17), its queries in `scout/SEARCHES.md`; abstracts read through PubMed E-utilities 2026-11-17. None of these PMIDs is cited by a row, held in `corpus/` or in a track's CSV.
 - **Papers**, strongest first:
@@ -36,6 +38,8 @@ The backfill 2015-01-01 → 2026-10-20 (2026-11-17): two entries for loci outsid
 
 ### pmid-41701878 — CFAP46, MYO18B, TBC1D28: a WGS GWAS of 3,703 adults aged 90+ against 22,354 aged 18–75 (Russia), not seed loci
 
+- **Closed** 2026-11-18 (curator, 664a7d8): no new locus is genome-wide; only rs429358 is.
+
 - **Why:** A whole-genome sequencing GWAS of longevity and 'healthy longevity' names variants in CFAP46 (with APOE, APOC1) against longevity and in MYO18B, TBC1D28 and LOC105376454 for healthy longevity. None of the four is a seed locus or a row. The abstract says 'significant' without a threshold, so whether any of them is genome-wide is unknown.
 - **Found by:** the 2015-01-01 → 2026-10-20 backfill (lead, 2026-11-17), its queries in `scout/SEARCHES.md`; abstracts read through PubMed E-utilities 2026-11-17. None of these PMIDs is cited by a row, held in `corpus/` or in a track's CSV.
 - **Papers**, strongest first:
@@ -44,6 +48,8 @@ The backfill 2015-01-01 → 2026-10-20 (2026-11-17): two entries for loci outsid
 - **Unknown:** the threshold called significant, the rsIDs, effect sizes and replication, all of them full-text questions.
 
 ### row 96 APOE — ten uncited studies of survival and all-cause mortality, and two preprints
+
+- **Closed** 2026-11-18 for the ten PubMed studies (curator, 3751223): noted and named, no cell moves. The two preprints (medRxiv 10.64898/2026.06.18.26355781 and bioRxiv 10.64898/2026.06.20.733520), added after the curator began, are still open.
 
 - **Why:** Each tests the row's own variants (rs429358, rs7412, and in two of them rs2075650) against mortality or survival to old age in a population or longevity cohort, and none is cited by the row. Ordered by size. The row is tier A, so these are corroboration, plus two non-European looks (Korea, Japan) and one null for ε4 in Koreans.
 - **Found by:** the 2015-01-01 → 2026-10-20 backfill (lead, 2026-11-17), its queries in `scout/SEARCHES.md`; abstracts read through PubMed E-utilities 2026-11-17. None of these PMIDs is cited by a row, held in `corpus/` or in a track's CSV.
@@ -75,6 +81,8 @@ The backfill 2015-01-01 → 2026-10-20 (2026-11-17): two entries for loci outsid
 
 ### row 43 FOXO3 — eleven uncited studies: mortality, longevity in East Asian and other cohorts, function of rs2802292
 
+- **Closed** 2026-11-18 (curator, a549894): noted and named, no cell moves.
+
 - **Why:** The row's lead rs2802292 (and its haplotype block) tested against mortality or longevity, or functionally, and none cited by the row (tier B). Two mortality studies in older Chinese adults (very likely one cohort) report the same protective GG direction, and American men of Japanese ancestry give a haplotype hazard ratio. The Sardinian Blue Zone and the Chinese gene-wide study are nulls or sex-limited, which bear on replication.
 - **Found by:** the 2015-01-01 → 2026-10-20 backfill (lead, 2026-11-17), its queries in `scout/SEARCHES.md`; abstracts read through PubMed E-utilities 2026-11-17. None of these PMIDs is cited by a row, held in `corpus/` or in a track's CSV.
 - **Papers**, strongest first:
@@ -103,6 +111,8 @@ The backfill 2015-01-01 → 2026-10-20 (2026-11-17): two entries for loci outsid
 
 ### row 73 KL (KL-VS) — six uncited studies, three of them nulls for the row's variant
 
+- **Taken** 2026-11-18 (curator, 2e2f2fd): Amin 2022 tests KL-VS heterozygotes directly and finds nothing; `replication_failed` set, C kept (the lead's word pending).
+
 - **Why:** Row 73 (tier C) rests on KL-VS (rs9536314). Newcastle 85+ with UK Biobank finds KL-VS not associated with reaching very old age, MrOS Sweden finds rs9536314 not associated with mortality, Sardinia is null, and Korea has no KL-VS at all, which bears on the row's ancestry context. None is cited by the row.
 - **Found by:** the 2015-01-01 → 2026-10-20 backfill (lead, 2026-11-17), its queries in `scout/SEARCHES.md`; abstracts read through PubMed E-utilities 2026-11-17. None of these PMIDs is cited by a row, held in `corpus/` or in a track's CSV.
 - **Papers**, strongest first:
@@ -122,6 +132,8 @@ The backfill 2015-01-01 → 2026-10-20 (2026-11-17): two entries for loci outsid
 
 ### row 59 ABO — two uncited Chinese longevity studies, one positive, one null
 
+- **Closed** 2026-11-18 (curator, 6bfcff1): noted and named, no cell moves.
+
 - **Why:** Row 59 (tier B, lead rs2519093). CLHLS, 5,803 long-lived against 7,026 controls, reports four ABO variants (rs8176719 among them, the O-allele deletion) with replication in the CLHLS GWAS; a second Chinese study of 2,201 centenarians finds no association. Whether either tags rs2519093 is unknown.
 - **Found by:** the 2015-01-01 → 2026-10-20 backfill (lead, 2026-11-17), its queries in `scout/SEARCHES.md`; abstracts read through PubMed E-utilities 2026-11-17. None of these PMIDs is cited by a row, held in `corpus/` or in a track's CSV.
 - **Papers**, strongest first:
@@ -133,6 +145,8 @@ The backfill 2015-01-01 → 2026-10-20 (2026-11-17): two entries for loci outsid
 
 ### row 46 LPA — two uncited studies: the LPA locus against parental lifespan and healthspan, and rs10455872 against mortality
 
+- **Closed** 2026-11-18 (curator, f4dc6b1): noted and named, no cell moves.
+
 - **Why:** Row 46 (tier A, rs10455872 and rs55730499). Arsenault 2020 builds a 26-SNP LPA score and finds it inversely associated with parental lifespan in UK Biobank (P 2.7e-8) and with healthspan; Langsted 2019 tests Lp(a) and its genetic instruments against mortality in two Danish general-population studies (119,094 genotyped for rs10455872). Whether either sample overlaps the row's evidence is not checked.
 - **Found by:** the 2015-01-01 → 2026-10-20 backfill (lead, 2026-11-17), its queries in `scout/SEARCHES.md`; abstracts read through PubMed E-utilities 2026-11-17. None of these PMIDs is cited by a row, held in `corpus/` or in a track's CSV.
 - **Papers**, strongest first:
@@ -143,6 +157,8 @@ The backfill 2015-01-01 → 2026-10-20 (2026-11-17): two entries for loci outsid
 
 ### row 84 CETP — two uncited studies of the CETP deficiency alleles
 
+- **Closed** 2026-11-18 (curator, b10e704): noted and named, no cell moves.
+
 - **Why:** Row 84 (tier C, rs3764261). A Danish genetic CETP-deficiency score against cardiovascular and all-cause mortality, and I405V against age in blood donors and older adults (null).
 - **Found by:** the 2015-01-01 → 2026-10-20 backfill (lead, 2026-11-17), its queries in `scout/SEARCHES.md`; abstracts read through PubMed E-utilities 2026-11-17. None of these PMIDs is cited by a row, held in `corpus/` or in a track's CSV.
 - **Papers**, strongest first:
@@ -152,6 +168,8 @@ The backfill 2015-01-01 → 2026-10-20 (2026-11-17): two entries for loci outsid
     > We could not find any association of this polymorphism with age for both, males or females, in any of these cohorts (P = 0.71 and P = 0.57, respectively, for males and P = 0.55 and P = 0.88, respectively, for females).
 
 ### row 48 IL6 — three uncited studies of other IL6 promoter SNPs and longevity
+
+- **Closed** 2026-11-18 (curator, a28c8bd, c7db1b1): noted and named, D kept.
 
 - **Why:** Row 48 (tier D) carries rs2069837. These test −174G/C (rs1800795) and rs1800796, not the row's variant: a meta-analysis and a three-cohort centenarian study are null for rs1800795, and a small Uyghur study reports rs1800796. They bear on the gene, not the row's lead, so the curator decides whether they belong.
 - **Found by:** the 2015-01-01 → 2026-10-20 backfill (lead, 2026-11-17), its queries in `scout/SEARCHES.md`; abstracts read through PubMed E-utilities 2026-11-17. None of these PMIDs is cited by a row, held in `corpus/` or in a track's CSV.
@@ -165,6 +183,8 @@ The backfill 2015-01-01 → 2026-10-20 (2026-11-17): two entries for loci outsid
 
 ### rows 23 TERC, 30 TERT, 160 STN1/OBFC1 — telomere-length alleles against mortality and survival
 
+- **Closed** 2026-11-18 (curator, 0c6ba70): noted and named; marker rows, nothing moves.
+
 - **Why:** The telomere-length rows sit in the unscored marker section. Rode 2015 tests a TERC/TERT/OBFC1 allele sum (rs1317082, rs7726159, rs2487999; whether these tag the rows' leads is unknown) against all-cause mortality in 64,637 Danes: null. Scarabino 2019 ties TERT rs2853691 and MNS16A to dying before 90. Druley 2016 reports a rare OBFC1 3′UTR variant with exceptional survival in LLFS pedigrees.
 - **Found by:** the 2015-01-01 → 2026-10-20 backfill (lead, 2026-11-17), its queries in `scout/SEARCHES.md`; abstracts read through PubMed E-utilities 2026-11-17. None of these PMIDs is cited by a row, held in `corpus/` or in a track's CSV.
 - **Papers**, strongest first:
@@ -177,6 +197,8 @@ The backfill 2015-01-01 → 2026-10-20 (2026-11-17): two entries for loci outsid
 
 ### row 159 HLA-DQB1 (and 38 HLA-DQA1) — two uncited HLA longevity studies
 
+- **Closed** 2026-11-18 (curator, 2fd43a9): noted and named, no cell moves.
+
 - **Why:** Row 159 (tier C, rs9275160). Yang 2017 reports four HLA-DQB1 SNPs with longevity in a Chinese longevity cohort from exome sequencing; the IHIW workshop reports HLA alleles and haplotypes, DQA1 included, with healthy ageing in four populations (small samples).
 - **Found by:** the 2015-01-01 → 2026-10-20 backfill (lead, 2026-11-17), its queries in `scout/SEARCHES.md`; abstracts read through PubMed E-utilities 2026-11-17. None of these PMIDs is cited by a row, held in `corpus/` or in a track's CSV.
 - **Papers**, strongest first:
@@ -186,6 +208,8 @@ The backfill 2015-01-01 → 2026-10-20 (2026-11-17): two entries for loci outsid
     > These preliminary NGS data could confirm our hypotheses that survival and longevity might be associated with selection of HLA alleles and haplotypes conferring disease resistance or susceptibility.
 
 ### single uncited studies at rows 114 TFAM, 6 CELSR2, 33 EBF1, 83 FTO, 25 HTT, 57 CDKN2B-AS1 and 80 CHRNB4
+
+- **Closed** 2026-11-18 (curator, 2866c69): noted and named, no cell moves.
 
 - **Why:** One study each that bears on the row and that the row does not cite. CELSR2's is the row's own rs646776 in a PheWAS across 23andMe and UK Biobank; TFAM's is rs1937 (not the row's rs12247015) in Chinese oldest-old; HTT's is intermediate CAG alleles, not the row's SNPs; CDKN2B-AS1's is functional (rs1537371, not a row rsID); CHRNB4's is the 15q25 rs1051730 locus against mortality in Finnish smokers, adjacent to the row. EBF1's is SNPs in LD with the row's rs2149954 against survival to 85 in Hispanic women (WHI); FTO's is a meta-analysis of rs9939609 (not the row's rs1421085 or rs11642015, which are near it) against all-cause mortality, null after adiposity adjustment.
 - **Found by:** the 2015-01-01 → 2026-10-20 backfill (lead, 2026-11-17), its queries in `scout/SEARCHES.md`; abstracts read through PubMed E-utilities 2026-11-17. None of these PMIDs is cited by a row, held in `corpus/` or in a track's CSV.
