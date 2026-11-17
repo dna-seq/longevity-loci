@@ -9,12 +9,9 @@ session can carry on from these notes, `docs/seats/RUNNER.md` (the priming), `ru
   ll-fetch-supp-zenin (2026-11-10), completed and counted (`runs/LOG.md`).
 - **Curation is caught up.** All 161 seed loci have rows (156 files), the second signals 162 to 169 are in, the scout's
   queue is empty (2026-11-16). No seat has a batch request pending.
-- **Org move (2026-11-16):** the person plans to move this repository's seats to genie's chat organisation. Not
-  switched. The lead's word: do NOT run the org-move switch until the lead says the person gave the go. This seat's
-  ticket arrived by the embassy (Zulip DM 640873679, from that organisation's desk secretary, signed and checked); it
-  was read before the lead's "leave it unread" was seen. It is a live one-time key: never repeated, quoted or stored
-  anywhere. When the lead relays the go, the switch is run from the clone with the ticket on stdin, as that message
-  names (`org-move.py switch ... --ticket - --apply`), the ticket fetched again with `watchdog.py read 640873679`.
+- **Org move: done 2026-11-17.** The seats now live in the chat organisation desk-antonkulaga (acb4b4e,
+  `[repo] org` in `.blueprints.toml`); this seat was punched in again there on 2026-11-17. Its join ticket is used up
+  and was never written anywhere. Message ids from before the move belong to the old organisation's chat.
 
 ## Standing arrangements
 
