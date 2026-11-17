@@ -23,7 +23,7 @@ pages (3aafb3c).
 - #346 (now desk #46): a flag the app shows for a second signal. Default: none (0.8 has no column for it).
 - #345 and #274 withdrawn 2026-11-16 under the kit's v0.1.227 rule (only a real fork goes to the person): the brain-age
   loci stay unscored (D36.3); rehearsals stay under `test-longevity-loci`.
-- #266 (moving to the new desk): how to mark the field's consensus top loci (a flag, a tier, or nothing). Nothing is built until answered.
+- #266 (now desk #47): how to mark the field's consensus top loci (a flag, a tier, or nothing). Nothing is built until answered.
 - #200: the trust register; the person said "trust register reask in a month", so ask again on 2026-12-10.
 - Also on their word: an app display check by a local install (the APOE pair table, and APOE's studies with no variant
   row), and the production publish.

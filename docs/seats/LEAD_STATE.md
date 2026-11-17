@@ -15,6 +15,6 @@
 **4. Plan / queue**
 - ❓ Keep the loosened rule that let APOE keep tier A despite one null study (the person, desk #45; default: it stays).
 - ❓ A flag in the app for a second signal near an existing locus (the person, desk #46; default: none).
-- ❓ Marking the field's consensus top loci: a flag, a tier, or nothing (the person, desk #266, moving here; default: nothing built).
+- ❓ Marking the field's consensus top loci: a flag, a tier, or nothing (the person, desk #47; default: nothing built).
 - ⏳ Production publish (module seat, on the person's explicit word only).
 - ⏳ 165 to tier A on a quoted mothers' heterogeneity test; 167's mechanism once its source is cached (curator, waits on sources).
