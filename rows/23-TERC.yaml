@@ -47,7 +47,9 @@ verdict_reason: >-
   0.053; Open Targets 26.09, both pages read). Effector E3, ambiguous: locus-to-gene
   gives ACTRT3 0.51 on Codd's set but 0.39 on Li's, and it scores protein-coding genes only, so TERC, the gene the
   papers name, is never scored; C>T is synonymous in MYNN, not E1. Descriptive. Age of action unknown. The evidence
-  is European (ENGAGE and UK Biobank) and, through TOPMed, multi-ancestry; T's frequency differs widely between ancestries (6.6 % to 56.5 %).
+  is European (ENGAGE and UK Biobank) and, through TOPMed, multi-ancestry; T's frequency differs widely between ancestries (6.6 % to 56.5 %). The scout's backfill (D41): a TERC, TERT and OBFC1 allele sum (rs1317082 at TERC) is not associated
+  with all-cause mortality in 64,637 Danes, only with lower cancer mortality (Rode 2015; pmid-25862531); its tag of the
+  lead is not read. Unscored, so no cell moves.
 axes:
   tier: {value: A, cites: [pmid-34611362#q1, pmid-34611362#q2, pmid-34611362#q3, pmid-34611362#q4, pmid-34611362#q5, pmid-34611362#q6, pmid-34611362#q7, pmid-34611362#q8, db-ensembl-116#q1042, pmid-23535734#q1, pmid-23535734#q2, pmid-23535734#q3, pmid-23535734#q4, pmid-35530816#q1, pmid-35530816#q2, pmid-35530816#q3, pmid-35530816#q4, pmid-35530816#q5, pmid-35530816#q6, db-ensembl-116#q1004, db-gwascatalog-2026.10.29#q615, db-gwascatalog-2026.10.29#q616, db-gwascatalog-2026.10.29#q617, db-gwascatalog-2026.10.29#q618, db-gwascatalog-2026.10.29#q619, db-gwascatalog-2026.10.29#q620, pmid-32109421#q1, pmid-32109421#q2, pmid-32109421#q3, pmid-32109421#q4, db-ensembl-116#q1003]}
   mechanism: {value: ageing_markers, cites: [pmid-23535734#q1, pmid-23535734#q2, pmid-23535734#q4]}

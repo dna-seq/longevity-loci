@@ -24,7 +24,9 @@ verdict_reason: >-
   `mech:cancer`: T, the longer-telomere allele, raises thyroid cancer (Open Targets, C −0.20, P 1.7e-28) and basal
   cell carcinoma (C OR 0.938, P 4e-10), and uterine fibroids (T OR 1.1, P 1e-16), named; no `tradeoff`, the row
   naming no longevity-favoured allele. Causal C2 (D39.12: Open Targets' telomere PC1 set at PIP 0.39 and Li's at 0.36; Codd 2021's own set at PP 0.43, named). Effector E2, STN1: locus-to-gene 0.89 on the PC1 set (SH3PXD2A 0.05) and 0.87 on Li's, the variant
-  intronic in STN1. Descriptive. Age of action unknown. The evidence is European.
+  intronic in STN1. Descriptive. Age of action unknown. The evidence is European. The scout's
+  backfill (D41): Rode 2015's allele sum, rs2487999 at OBFC1, null for all-cause mortality (pmid-25862531), and a rare
+  OBFC1 3′ UTR variant with exceptional survival in six LLFS pedigrees (Druley 2016; pmid-27060904), not the lead.
 axes:
   tier: {value: B, cites: [pmid-32109421#q1, pmid-32109421#q10, pmid-32109421#q2, pmid-32109421#q9, pmid-34611362#q1, pmid-34611362#q2, pmid-34611362#q3, pmid-34611362#q4, pmid-34611362#q17, pmid-34611362#q6, pmid-34611362#q18, db-ensembl-116#q1089, db-gwascatalog-2026.10.29#q750, db-gwascatalog-2026.10.29#q751, db-gwascatalog-2026.10.29#q752, db-gwascatalog-2026.10.29#q753, db-gwascatalog-2026.10.29#q754, db-ensembl-116#q1085, db-ensembl-116#q1086]}
   mechanism: {value: ageing_markers, cites: [pmid-32109421#q1, db-gwascatalog-2026.10.29#q751]}

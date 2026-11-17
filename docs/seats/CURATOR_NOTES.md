@@ -65,6 +65,10 @@ record, never left empty; multi-line text edits want whitespace-tolerant matches
 
 ## Log (from 2026-11-10)
 
+- **Backfill row entries (2026-11-18)**: 96, 43, 73, 59, 46, 84, 48 and the TL rows done, one commit each. More
+  `check quotes` misses on verbatim text: a quote holding `TNF-α`, one running into a word fused to the next sentence
+  (`mortality.ConclusionShort`, `ResultsMultivariate`); cut the quote short of them. Pre-check every quote with a
+  whitespace-normalised `index` before writing the note (the nb43q/nb96q pattern).
 - **96 APOE backfill (2026-11-18)**: ten notes at abstract depth (Rasmussen at full text), named in the row's prose.
   Lesson: `check quotes` fails a quote holding bracketed text such as `rs429358 [APOE]` even when it is verbatim
   (Shadyab 2017's abstract); quote around the brackets. To the lead as a tooling note.

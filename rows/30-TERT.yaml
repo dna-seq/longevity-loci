@@ -41,7 +41,10 @@ verdict_reason: >-
   since the row names no longevity-favoured allele. Causal C3: of the telomere-length credible sets in Open Targets
   26.09 only the naive T-cell one holds it, at PIP 0.036. Effector E2, TERT: locus-to-gene 0.74 on that set (and 0.87
   on the epigenetic set), the variant intronic in TERT. Descriptive. Age of action unknown. The evidence is European,
-  with TOPMed's multi-ancestry line unread for its allele and Liu's Han Chinese line agreeing; no context token.
+  with TOPMed's multi-ancestry line unread for its allele and Liu's Han Chinese line agreeing; no context token. The scout's backfill (D41): Rode 2015's
+  allele sum, rs7726159 at TERT, null for all-cause mortality in 64,637 Danes (pmid-25862531), and Scarabino 2019's
+  TERT MNS16A and rs2853691 with dying before 90 in a small Italian follow-up (pmid-30691026), neither at the lead.
+  Unscored, so no cell moves.
 axes:
   tier: {value: B, cites: [pmid-23535734#q1, pmid-23535734#q2, pmid-23535734#q3, pmid-23535734#q6, db-gwascatalog-2026.10.29#q636, db-gwascatalog-2026.10.29#q637, db-gwascatalog-2026.10.29#q638, db-gwascatalog-2026.10.29#q639, db-gwascatalog-2026.10.29#q640, db-gwascatalog-2026.10.29#q641, pmid-35530816#q1, pmid-35530816#q2, db-ensembl-116#q1043, db-ensembl-116#q1044, db-ensembl-116#q1045]}
   mechanism: {value: ageing_markers, cites: [pmid-23535734#q2, pmid-23535734#q6, db-gwascatalog-2026.10.29#q660, db-gwascatalog-2026.10.29#q661, db-gwascatalog-2026.10.29#q662, db-opentargets-26.09#q1280, db-opentargets-26.09#q1281]}
