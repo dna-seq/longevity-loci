@@ -1,4 +1,4 @@
-**1. Results page:** being built (the tabbed results artifact; its link goes here once it is published).
+**1. Results page:** https://claude.ai/artifact/9Ga73vyTsg4ZjwJSg4M7Q4 (tabs: tiers, all loci, by mechanism; from the rows at 96fe362).
 
 **2. Where it stands** (2026-11-17)
 - 🟢 Curation done: all 161 seed loci and the eight second signals the scout queued, in 164 rows, each claim citing a quote checked verbatim against its article.
