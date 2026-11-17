@@ -44,7 +44,11 @@ verdict_reason: >-
   locus-to-gene about 0.58, but with no longevity set nothing is assessed for the row's claim: E4, no gene named, ABO
   in prose only (as rows 27 and 56). C/C, the commonest genotype (about 66 in 100), is the reference; C is the common
   non-risk allele at a disease locus (PROTECT:ABSENCE_OF_RISK). The evidence is European; T is as common in East
-  Asians (0.19), untested there.
+  Asians (0.19), untested there at the lead. The scout's backfill (D41) adds two Chinese longevity studies at other ABO
+  SNPs, neither tagging the lead well: the CLHLS finds rs505922 C (with rs8176719, rs687621, rs643434) more frequent in
+  the long-lived, replicated in its own GWAS (Ni 2021; pmid-34812738), at r² 0.31 to 0.45 with rs2519093 in East Asians,
+  phase unread (db-ensembl-116 q1217 to q1219); 2,201 centenarians against middle-aged controls find no ABO allele or
+  blood group associated (Zhu 2020; pmid-33103040). Neither moves a cell.
 axes:
   tier: {value: B, cites: [pmid-30642433#q256, pmid-30642433#q258, pmid-30642433#q42, pmid-30642433#q257, pmid-30642433#q259, pmid-30642433#q2, pmid-31413261#q153, pmid-31413261#q154, pmid-31413261#q2, db-finngen-r11#q34, pmid-30729179#q82, db-gwascatalog-2026.10.29#q374, db-opentargets-26.09#q744, db-opentargets-26.09#q745, db-opentargets-26.09#q746, db-ensembl-116#q416, db-ensembl-116#q417]}
   mechanism: {value: heart_vessels, cites: [pmid-30642433#q256, db-gwascatalog-2026.10.29#q362, db-gwascatalog-2026.10.29#q363, db-gwascatalog-2026.10.29#q364, db-gwascatalog-2026.10.29#q365, db-gwascatalog-2026.10.29#q366, db-gwascatalog-2026.10.29#q367, db-gwascatalog-2026.10.29#q368, db-gwascatalog-2026.10.29#q369]}

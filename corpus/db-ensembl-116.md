@@ -4241,3 +4241,14 @@ rs2273500 T, r −0.038 (A 90, T 859, both 73) (derived). For row 167.
 rs1927465 (row 170): GRCh38 10:93,236,765 C/T, T ancestral (q1213); T at 14.3 % in gnomAD's non-Finnish genomes (q1214);
 intronic in a lncRNA (ENSG00000296225; q1215), between CYP26A1 and MYOF. T by population (q1216): 0.143 non-Finnish,
 0.153 Finnish, 0.315 Ashkenazi, 0.021 East Asian. For row 170.
+
+## Reading 2026-11-18, record
+
+> [q1217] [4] d_prime 0.999988 variation2 rs505922 r2 0.433490 variation1 rs2519093 population_name 1000GENOMES:phase_3:CEU
+
+> [q1218] [5] d_prime 0.999980 r2 0.309501 variation2 rs505922 variation1 rs2519093 population_name 1000GENOMES:phase_3:CHB
+
+> [q1219] [6] variation2 rs505922 r2 0.447441 variation1 rs2519093 d_prime 0.999993 population_name 1000GENOMES:phase_3:CHS
+
+rs2519093 (row 59's lead) with rs505922 (Ni 2021's ABO variant): r² 0.43 in CEU (q1217), 0.31 in CHB (q1218), 0.45 in CHS
+(q1219), D′ 1.00 in each. A partial tag. For row 59.

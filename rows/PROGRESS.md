@@ -190,10 +190,11 @@ mechanical consensus of the research tracks, to be confirmed or overturned by th
 - Scout entry, 2026-11-18: row 96 APOE's ten uncited survival and mortality studies (backfill) noted and named in the row's prose; no cell moves; Korea's ε4 null and Japan's men-only ε4 named as East Asian looks.
 - Scout entry, 2026-11-18: row 43 FOXO3's eleven uncited papers (backfill) noted and named; no cell moves (East Asian and cause-specific looks G's way, other FOXO3 SNPs, a small Sardinian null, function papers).
 - Scout entry, 2026-11-18: row 73 KL, five new notes; Amin 2022 tests the heterozygote contrast directly (Newcastle 85+ against UK Biobank, OR 1.03, P 0.79): a D21 red flag against Arking 2005's 1.57 (power 1.00, heterogeneity P 0.005), `replication_failed` set; C kept, Invidia's Italian pass keeps it off D (D25.1); D put to the lead.
+- Scout entry, 2026-11-18: row 59 ABO, two Chinese studies at other ABO SNPs (CLHLS positive, a centenarian study null), partial tags of the lead (r² 0.31 to 0.45 in East Asians); named, no cell moves.
 
 ## In hand
 
-The scout's 2015–2026 backfill (c0a8726, D41): the two new-locus entries done (170; Kashtanova no row); 96 APOE, 43 FOXO3 and 73 KL done; next 59 ABO, then the rest in queue order.
+The scout's 2015–2026 backfill (c0a8726, D41): the two new-locus entries done (170; Kashtanova no row); 96 APOE, 43 FOXO3, 73 KL done; 59 ABO done; next 46 LPA, then the rest in queue order.
 
 ## Next: seed tier A (11)
 
