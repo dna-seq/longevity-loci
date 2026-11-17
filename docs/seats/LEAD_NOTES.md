@@ -19,11 +19,11 @@ pages (3aafb3c).
 
 ## Waiting on the person (desk; defaults stand meanwhile)
 
-- #344: the APOE exception, D34.1 with its reason corrected in D34.10. Default: it stays.
-- #346: a flag the app shows for a second signal. Default: none (0.8 has no column for it).
+- #344 (now desk #45 in the new organisation's desk): the APOE exception, D34.1 with its reason corrected in D34.10. Default: it stays.
+- #346 (now desk #46): a flag the app shows for a second signal. Default: none (0.8 has no column for it).
 - #345 and #274 withdrawn 2026-11-16 under the kit's v0.1.227 rule (only a real fork goes to the person): the brain-age
   loci stay unscored (D36.3); rehearsals stay under `test-longevity-loci`.
-- #266: how to mark the field's consensus top loci (a flag, a tier, or nothing). Nothing is built until answered.
+- #266 (moving to the new desk): how to mark the field's consensus top loci (a flag, a tier, or nothing). Nothing is built until answered.
 - #200: the trust register; the person said "trust register reask in a month", so ask again on 2026-12-10.
 - Also on their word: an app display check by a local install (the APOE pair table, and APOE's studies with no variant
   row), and the production publish.
@@ -76,3 +76,8 @@ Still owed: reply to agents-kit/lead with each seat's notes commit, one `keys co
   seat; a new session starts without them.
 
 - 2026-11-17: moved to the chat organisation desk-antonkulaga (bin/org-move.py).
+
+- Reporting in this organisation follows its house style (desk docs/REPORTING.md, the person's ask 2026-11-17 via its
+  secretary): #longevity-loci topics `state` (one kept message: results-page link, where it stands with marks, headline
+  results, plan with owner and wait), `milestones` (one post per landed result), `decisions` (one question per message,
+  numbered options and default), `general`, `daily`.
