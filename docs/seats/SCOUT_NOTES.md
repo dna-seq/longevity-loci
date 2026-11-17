@@ -14,7 +14,8 @@ person: "Make sure they commit all to notes, transcripts are not moving"). A fre
 
 ## State of the work
 
-- **Backfill 2015-01-01 → 2026-10-20** done 2026-11-17 (SEARCHES.md, Backfill; every record in
+- **Backfill 2015-01-01 → 2026-10-20**, rule fixed and re-run 2026-11-18 (D41; the lead counts it done once bioRxiv is
+  reported). First run 2026-11-17 (SEARCHES.md, Backfill; every record in
   `scout/backfill_2015_2026.tsv`): 22,759 records, 45 queued (2 non-seed loci, 43 uncited papers on 18 rows), then
   the Catalog's thirteen non-seed genome-wide lines and one medRxiv preprint after the advisor's review, the nine
   Catalog ids and Atanur 2026 answered. PubMed indexes medRxiv preprints with PMIDs: a preprint PMID can be a known

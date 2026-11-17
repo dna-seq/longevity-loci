@@ -64,10 +64,12 @@ counts hits per query, before dedupe (a record found by two queries counts twice
 | S-seedgene | 181 | 520 | 537 |
 | **hits** | 3,447 | 11,167 | 14,009 |
 | **distinct records** | 2,753 | 8,982 | 11,024 |
-| known (cited by a row, in a track's CSV or in `screened.md`) | 43 | 119 | 162 |
-| dropped by rule, not read | 2,041 | 6,666 | 8,235 |
-| read (title or abstract) | 654 | 2,173 | 2,621 |
-| queued | 15 | 24 | 6 |
+| known (cited by a row, in a track's CSV or in `screened.md`) | 43 | 120 | 162 |
+| dropped by the fixed rule, not read | 2,025 | 6,606 | 8,195 |
+| read (title or abstract) | 669 | 2,231 | 2,661 |
+| queued | 16 | 25 | 6 |
+
+The last four rows are after the rule fix of 2026-11-18 (below); the first count (c0a8726) had 2,041 / 6,666 / 8,235 dropped.
 
 The 2017–2022 window's E-preprint row includes 2017-06-25 → 2022-12-31 only; Europe PMC's preprint index holds none
 before mid-2017 for this query. Recall per query is unchanged from 2026-11-13 (recall has no date limit).
@@ -92,18 +94,37 @@ before mid-2017 for this query. Recall per query is unchanged from 2026-11-13 (r
      loss of Y.
 
    What is left (longevity and genetic, with neither a genome-wide design nor a row gene) went to title reading.
-3. **Calibration.** The rule was tested on the 58 row-cited PMIDs that fall in the windows: 50 are flagged. Of the
+3. **The rule fix, 2026-11-18** (the lead, D41: four of the eight calibration misses were faults, not scope).
+   - **Zenin 2019 and Codd 2021 (telomere length).** Neither abstract says "genome-wide" or "GWAS", only "loci".
+     The design test now also accepts loci or locus within a sentence of associated, identified, significant, novel
+     or new, plus "association study", "genetic architecture", "summary statistics" and "SNP-based heritability".
+   - **The mtDNA copy-number cohort (37255673).** Its MeSH has Animals and no Humans. MeSH no longer decides alone:
+     a record is non-human only when it names a non-human organism, or carries animal-only MeSH, **and** has none of
+     human, patient(s), participant(s), biobank, people, persons, centenarians, nonagenarians, women, men, adults,
+     children, ancestry, population-based.
+   - **The result.** All 22,759 records were classed again. 54 of the 58 row-cited papers now pass. The 4 still
+     dropped are the three APOE or Klotho papers on Alzheimer's or cognition and the somatic scan, out of scope by the
+     lead's word.
+   - **The re-read.** 235 records the fix newly flagged, never read at abstract level before, were read to the end by
+     two readers, by hand: 6 candidates, none new to the queue.
+   - **The title batches.** The three title batches whose readers had set defaults by script (1,991 titles) were
+     re-read title by title, by hand: 46 candidates.
+   - **The scout's read.** The scout read every candidate not already decided: seven abstracts. Two were added to
+     the queue (31585002 under row 96, 27714549 under row 73), and five fail the rule. The five are a genetic score
+     with no row variant on its own (40598362), a review (30864497), an expression pilot with no outcome difference
+     (31504207), candidate genes without a row (29300832), and Y haplogroups (35861954).
+4. **Calibration** (the first rule). The rule was tested on the 58 row-cited PMIDs that fall in the windows: 50 are flagged. Of the
    8 dropped, 4 had no longevity or marker term (three APOE or Klotho papers on Alzheimer's or cognition, and the
    somatic-mutation scan), 3 were in the title-read class (Zenin 2019, a telomere-length paper, a mouse longevity
    GWAS), and 1 was misread as non-human (an mtDNA copy-number cohort).
-4. **Readers.** 2,743 flagged records (abstract) and 2,770 title-class records went to 18 reader agents. They wrote one
+5. **Readers.** 2,743 flagged records (abstract) and 2,770 title-class records went to 18 reader agents. They wrote one
    verdict per record and returned 308 candidates. Their depth varied:
    - some read whole abstracts;
    - some read the first 550–1,100 characters, and the rest only for doubtful records;
    - three of the four title readers set defaults by script and judged only their candidates one by one.
 
    The tsv says "abstract, reader" or "title, reader" for these. It is not a scout's verdict.
-5. **The scout's own reading.**
+6. **The scout's own reading.**
    - Every CAND-A abstract (69) was read whole.
    - Every CAND-B was read by title and the reader's reason, and the queued ones by abstract.
    - Preprints and corrections were matched to their published versions through Europe PMC: 20 records turned out
@@ -113,8 +134,8 @@ before mid-2017 for this query. Recall per query is unchanged from 2026-11-13 (r
 
 **Queued** (`scout/queue.md`, 2026-11-17): the Catalog entry (thirteen non-seed lines, above); two loci outside every seed, at abstract depth, both needing the full text
 for significance: rs1927465 between CYP26A1 and MYOF (Yashin 2018, LLFS, replicated in HRS) and Kashtanova 2026's WGS
-of 3,703 adults aged 90+ (CFAP46, MYO18B, TBC1D28). Then 43 uncited papers on 18 rows (row 38 named beside 159), one entry per row or group:
-APOE 9, FOXO3 11, KL 5, ABO 2, LPA 2, CETP 2, IL6 3 (other promoter SNPs), the telomere-length rows 3, HLA-DQB1 2, and one
+of 3,703 adults aged 90+ (CFAP46, MYO18B, TBC1D28). Then 45 uncited papers on 18 rows (row 38 named beside 159; two added after the rule fix), one entry per row or group:
+APOE 10 and a preprint, FOXO3 11, KL 6, ABO 2, LPA 2, CETP 2, IL6 3 (other promoter SNPs), the telomere-length rows 3, HLA-DQB1 2, and one
 each for TFAM, CELSR2, EBF1, FTO, HTT, CDKN2B-AS1 and CHRNB4.
 
 **The cut for rule (b).** The readers returned 239 CAND-B lines. 43 went to the queue (one more, a medRxiv preprint, came
@@ -154,7 +175,8 @@ queued".
   - Both papers are already in track C's candidate CSV, marked "non-rsID / gene-level".
   - The CNV scans are the same non-SNP case: Danish nonagenarians' CNVs and mortality (26446717), Han Chinese
     long-lived CNVs (29883365).
-  - No seed is gene-level, so whether a burden gene can be a row is the lead's call. It is not a missed paper.
+  - No seed is gene-level. The lead decided 2026-11-18 (D41): no rows for gene-level, CHIP, SV or CNV hits; one is
+    named in a row's prose only where a row exists.
 - **Transcriptome and MR studies.**
   - Lifespan TWAS: TOMM40 and COASY, PPR1225305; haptoglobin, PPR185888.
   - Blood eQTL lifespan genes: 32358504.
