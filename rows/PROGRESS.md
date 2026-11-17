@@ -193,10 +193,11 @@ mechanical consensus of the research tracks, to be confirmed or overturned by th
 - Scout entry, 2026-11-18: row 59 ABO, two Chinese studies at other ABO SNPs (CLHLS positive, a centenarian study null), partial tags of the lead (r² 0.31 to 0.45 in East Asians); named, no cell moves.
 - Scout entry, 2026-11-18: row 46 LPA, Arsenault 2020 (UK Biobank, same samples) and Langsted 2019 (119k Danes, rs10455872 instrument null for all-cause mortality, RR 0.97 per 50 mg/dL) named; no per-allele test derivable from the abstract, no token; put to the lead.
 - Scout entry, 2026-11-18: row 84 CETP, a Danish CETP allele score (all-cause null, AMD harm) and an I405V age null named; no cell moves.
+- Scout entry, 2026-11-18: row 48 IL6, three papers on other IL6 SNPs (−174 nulls, a small Uyghur rs1800796 result) named; D kept.
 
 ## In hand
 
-The scout's 2015–2026 backfill (c0a8726, D41): the two new-locus entries done (170; Kashtanova no row); 96 APOE, 43 FOXO3, 73 KL done; 59 ABO, 46 LPA, 84 CETP done; next 48 IL6, then the TL rows, 159/38 and the singles.
+The scout's 2015–2026 backfill (c0a8726, D41): the two new-locus entries done (170; Kashtanova no row); 96 APOE, 43 FOXO3, 73 KL done; 59 ABO, 46 LPA, 84 CETP, 48 IL6 done; next the TL rows (23, 30, 160), then 159/38 and the singles.
 
 ## Next: seed tier A (11)
 

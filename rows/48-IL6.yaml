@@ -40,7 +40,11 @@ verdict_reason: >-
   set no causal or effector level (D28.12, the lead's ruling; the previous commits' C1 and E3 rejected): C4, E4, no
   gene named. On those sets, in prose only: L2G names IL6 (0.91, 0.88), the candidate, but the one cis colocalisation
   at H4 ≥ 0.8 is IL6-AS1's visceral-adipose eQTL (0.85, an eCAVIAR line with clpp 0.005, the lowest the rows have
-  counted; IL6's own transcript-usage QTL 0.74). Age of action is unknown. Genotypes neutral (D25.2).
+  counted; IL6's own transcript-usage QTL 0.74). Age of action is unknown. Genotypes neutral (D25.2). The scout's backfill
+  (D41) adds three uncited papers on other IL6 SNPs, none the lead: a Caucasian meta-analysis finds −174G/C (rs1800795)
+  without effect on reaching advanced age (Wei 2016; pmid-26754162), three centenarian cohorts find rs1800795 null
+  (Fuku 2015; pmid-25999849), and 332 Uyghurs put rs1800796 CT with longevity, OR 1.98 (Gulizibaer 2015;
+  pmid-26813132). The gene-level picture stays as the row reads it.
 axes:
   tier: {value: D, cites: [pmid-26912274#q12, pmid-24688116#q6, pmid-24688116#q7, pmid-26912274#q2, pmid-26912274#q4, pmid-26912274#q5, pmid-26912274#q7, pmid-33657282#q15, pmid-33657282#q16, db-ensembl-116#q322, db-ensembl-116#q323, db-ensembl-116#q324, pmid-30642433#q231, pmid-30642433#q232, pmid-30642433#q92, pmid-26912274#q9, pmid-26912274#q10, db-finngen-r11#q23, pmid-30729179#q71, pmid-31413261#q123, pmid-31413261#q124, pmid-31413261#q125, pmid-31413261#q126, pmid-31413261#q127]}
   mechanism: {value: general_ageing, cites: [pmid-33657282#q15]}
