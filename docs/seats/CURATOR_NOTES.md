@@ -47,7 +47,8 @@ rows/PROGRESS.md; push; `done:` to the lead with each question carrying options 
 
 **Latest quote ids** (the next one is +1): db-ensembl-116 q1212, db-opentargets-26.09 q1570, pmid-29227965 q302,
 pmid-30642433 q428, pmid-40759756 q226, pmid-30729179 q194, pmid-31413261 q374, pmid-40021682 q234,
-db-finngen-r11 q134, pmid-37550455 q88, pmid-42928374 q3.
+db-finngen-r11 q134, pmid-37550455 q88, pmid-42928374 q3,
+doi-10.64898_2026.08.24.26361177 q4.
 
 **What is lost with the session.** The helpers lived in the session's scratchpad, outside git: a note-appender
 (one quote line per call: key, depth, the cached file and a regex for the line, the prose with q-numbers), a phase
@@ -64,6 +65,12 @@ record, never left empty; multi-line text edits want whitespace-tolerant matches
 
 ## Log (from 2026-11-10)
 
+- **Alvarez Sirvent 2026 (2026-11-17)**, the scout's HLA-II preprint, note doi-10.64898_2026.08.24.26361177 at abstract
+  depth; rows 135 and 38 unmoved (Hap-Y's longevity result and every tag unknown). Lessons: medRxiv answers 403 to
+  every page, PDF and JATS fetch from here, and Europe PMC's preprint full text (PPR1306907) answered 500; `loci fetch
+  PPR…` says `unreachable`. The medRxiv API record (`api.biorxiv.org/details/medrxiv/<doi>`, `fetch-supp --name
+  …json`) carries the abstract and the licence, quotable at heading `supplement`. Europe PMC's search by `DOI:` gives
+  the PPR id. Re-read when a full text opens or a published version appears.
 - **After each row: `uv run loci check quotes --since <the row's parent> -q`** (d63682d), in place of the scratchpad
   subset script. First run, since 7d34929 (every note touched today): located 4,765, exit 0, about 12 minutes.
 - **Full quote checks go to the runner** (its offer, 640823502): ask in #longevity-loci > curation with the commit;

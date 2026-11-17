@@ -184,14 +184,11 @@ mechanical consensus of the research tracks, to be confirmed or overturned by th
 - 159 HLA-DQB1 (lead rs9275160, HLA class II intergenic, A 0.36 in Europeans; separate from 103, r² 0.20), tier C (D16, D23): Atkins 2021's frailty index, A frailer, P 7.2e-28; no printed lifespan study under 0.05 (Timmers 0.35, Pilling's mothers 0.058, Park 0.21, all G's way); FinnGen G's way at 0.033 fills the lifespan cell only; Zenin agrees in the same UK Biobank people; Deelen's 90th flat the other way. G carriers protective; healthspan +, lifespan +, exceptional 0; immune_inflammation; mech:cancer (A raises prostate cancer), no trade-off; C4/E4; eur_only_evidence.
 - 23 TERC (lead rs10936599, synonymous in MYNN near TERC, T 24.5 % in Europeans; 104's rs10936600 folded in, r² 1.00), tier A by D38.5 (Codd 2021's UK Biobank line at rs2293607, r² 1.00, the same side, D21 clean), the first marker row (D32, D37.12), tier B kept on the marker's own evidence: Codd 2013 T −0.097 SD of leukocyte telomere length, P 2.5e-31; Taub 2022's TOPMed (109,122) replicates TERC at P 1.3e-96 at a sentinel with r² 1.00, its allele unprinted, so cited on the tier with no study (§6.3; the lead's Q2 (a)); Li 2020 overlaps Codd. Every genotype neutral, direction unknown, trait OBA_0003784; cells for T: lifespan + (Timmers one-sided 0.029), healthspan + (Zenin 0.0032), exceptional 0; mech:cancer (C, the longer-telomere allele, raises five cancers), no tradeoff; C2, E3 (L2G ACTRT3 0.51/0.39, TERC unscorable).
 - 30 TERT (lead rs2736100, TERT intron, A 49.7 % in Europeans), marker row on 23's pattern, tier B kept: Codd 2013 A −0.078 SD of leukocyte telomere length, P 4.4e-19, not in its replication set; Taub's TOPMed line (P 5e-79) allele unrecorded, cited on the tier with no study. Every genotype neutral, direction unknown; cells for A: lifespan − (Timmers one-sided 0.044; FinnGen's release line 0.012 the same way), healthspan + (Zenin 0.0064), exceptional 0; mech:cancer and mech:lung on both alleles (C lung cancer, glioma, clonal haematopoiesis; A testicular tumour, IPF, interstitial lung disease); A lowers epigenetic age acceleration (named); C3, E2 TERT (L2G 0.74).
+- Scout entry, 2026-11-17: Alvarez Sirvent 2026 (medRxiv preprint, doi-10.64898_2026.08.24.26361177), the scout's HLA-II entry, read at abstract depth (full text 403/500): Hap-Y (DRB1*15:01) has only a microglial finding, Hap-R (DRB1*01:01) the longevity one; no tag named; rows 135 and 38 not moved.
 
 ## In hand
 
-A ten-row run, on the person's word (2026-11-11, via the lead, 639308811: "go with next 10 measurement on
-andjusted scenario, remeasure"), from 6 CELSR2 in the order below: one commit, a `done:` and a compaction per row,
-stopping at 80 % of the 7-day window. After each ten: the pacing re-measured, then the next ten, unless blocked or
-steered (the person, 2026-11-11, via the lead, 639316091: "After 10 adjust pacing and go next 10 and so on unless
-blocked or I steer").
+Nothing: every seed locus has a row and the scout's queue is read through (2026-11-17).
 
 ## Next: seed tier A (11)
 
