@@ -25,6 +25,151 @@ The literal requests, so a run can be rebuilt without the script:
 **Recall check.** A query is tested by running it without dates, restricted to the PMIDs of its track's evidence CSV
 (`AND (<pmid>[uid] OR …)`), and recorded as k of n. A query with poor recall is changed as a new line with its reason.
 
+## Backfill, 2015-01-01 → 2026-10-20 (run 2026-11-17)
+
+Asked by the lead for the person (#longevity-loci>scout, 2026-11-17): the window first set at 2023, then moved to
+2015-01-01, the year of LongevityMap Build 3's newest PMID (Build 3 released 2017-06-24). Every current query (A–K,
+the E set, S-seedgene, J-seedgene) by entry date in three windows, Europe PMC's preprint index (E-preprint) over the
+same windows, and medRxiv's own listing from 2026-04-01. Every record with its verdict and its depth is in
+`scout/backfill_2015_2026.tsv` (rule-dropped rows carry no title); `scout/screened.md` is not repeated there. PubMed
+counts hits per query, before dedupe (a record found by two queries counts twice):
+
+| Query | 2015-01-01 → 2017-06-24 | 2017-06-25 → 2022-12-31 | 2023-01-01 → 2026-10-20 |
+|---|---|---|---|
+| A-db | 24 | 86 | 190 |
+| A-pgs | 7 | 93 | 196 |
+| A-resource | 1 | 13 | 26 |
+| B-gwas | 60 | 206 | 261 |
+| C-mito | 153 | 459 | 477 |
+| C-monogenic | 12 | 123 | 202 |
+| C-protect-2 | 400 | 984 | 899 |
+| C-rare | 121 | 280 | 317 |
+| C-somatic-germline | 180 | 658 | 777 |
+| D-clocks | 50 | 463 | 1103 |
+| D-healthspan | 94 | 311 | 667 |
+| D-multimorbidity-2 | 4 | 43 | 138 |
+| E-clock | 15 | 99 | 151 |
+| E-core | 573 | 1535 | 1538 |
+| E-heritability | 289 | 913 | 1248 |
+| E-preprint (Europe PMC) | 0 | 667 | 977 |
+| E-somatic-2 | 7 | 144 | 249 |
+| E-survival | 12 | 31 | 25 |
+| F-reporting | 27 | 146 | 209 |
+| G-finemap | 82 | 277 | 411 |
+| H-pleiotropy | 96 | 235 | 223 |
+| I-concepts | 337 | 877 | 908 |
+| J-models | 352 | 907 | 880 |
+| J-seedgene | 338 | 990 | 1252 |
+| K-age | 32 | 107 | 148 |
+| S-seedgene | 181 | 520 | 537 |
+| **hits** | 3,447 | 11,167 | 14,009 |
+| **distinct records** | 2,753 | 8,982 | 11,024 |
+| known (cited by a row, in a track's CSV or in `screened.md`) | 43 | 119 | 162 |
+| dropped by rule, not read | 2,041 | 6,666 | 8,235 |
+| read (title or abstract) | 654 | 2,173 | 2,621 |
+| queued | 15 | 24 | 6 |
+
+The 2017–2022 window's E-preprint row includes 2017-06-25 → 2022-12-31 only; Europe PMC's preprint index holds none
+before mid-2017 for this query. Recall per query is unchanged from 2026-11-13 (recall has no date limit).
+
+**How the records were read.**
+
+1. **Abstracts.** All of them came from `efetch`, 21,056 of 21,127 PMIDs (the 71 without an abstract were read by
+   title).
+2. **The rule.** Each record was classed by rule, in this order:
+   - a row's rsID in the abstract: flagged;
+   - non-human (MeSH Animals without Humans, or a non-human organism in a record without MeSH): dropped;
+   - genome-wide design plus a longevity term: flagged;
+   - genome-wide design plus an ageing-marker term only: flagged;
+   - a row's gene plus a longevity or marker term plus a genetic term: flagged;
+   - no longevity or marker term: dropped;
+   - no genetic term: dropped.
+
+   The terms:
+   - **longevity:** lifespan, longevity, centenarian, age at death, parental lifespan, healthspan, all-cause
+     mortality, survival to an extreme age;
+   - **marker:** telomere length, frailty, epigenetic clock or age, brain age, biological age, mtDNA copy number,
+     loss of Y.
+
+   What is left (longevity and genetic, with neither a genome-wide design nor a row gene) went to title reading.
+3. **Calibration.** The rule was tested on the 58 row-cited PMIDs that fall in the windows: 50 are flagged. Of the
+   8 dropped, 4 had no longevity or marker term (three APOE or Klotho papers on Alzheimer's or cognition, and the
+   somatic-mutation scan), 3 were in the title-read class (Zenin 2019, a telomere-length paper, a mouse longevity
+   GWAS), and 1 was misread as non-human (an mtDNA copy-number cohort).
+4. **Readers.** 2,743 flagged records (abstract) and 2,770 title-class records went to 18 reader agents. They wrote one
+   verdict per record and returned 308 candidates. Their depth varied:
+   - some read whole abstracts;
+   - some read the first 550–1,100 characters, and the rest only for doubtful records;
+   - three of the four title readers set defaults by script and judged only their candidates one by one.
+
+   The tsv says "abstract, reader" or "title, reader" for these. It is not a scout's verdict.
+5. **The scout's own reading.**
+   - Every CAND-A abstract (69) was read whole.
+   - Every CAND-B was read by title and the reader's reason, and the queued ones by abstract.
+   - Preprints and corrections were matched to their published versions through Europe PMC: 20 records turned out
+     to be versions of papers already known (the "known by version" verdict).
+   - PubMed indexes medRxiv preprints with PMIDs. 39132489 is the medRxiv version of Park 2025 (40021682), which
+     rows cite.
+
+**Queued** (`scout/queue.md`, 2026-11-17): two loci outside every seed, at abstract depth, both needing the full text
+for significance: rs1927465 between CYP26A1 and MYOF (Yashin 2018, LLFS, replicated in HRS) and Kashtanova 2026's WGS
+of 3,703 adults aged 90+ (CFAP46, MYO18B, TBC1D28). Then 43 uncited papers on 18 rows (row 38 named beside 159), one entry per row or group:
+APOE 9, FOXO3 11, KL 5, ABO 2, LPA 2, CETP 2, IL6 3 (other promoter SNPs), the telomere-length rows 3, HLA-DQB1 2, and one
+each for TFAM, CELSR2, EBF1, FTO, HTT, CDKN2B-AS1 and CHRNB4.
+
+**Read, not queued.** The judgement calls, with the reason for each:
+
+- **Gene-level burden genes.** The exome PTV-burden genes for lifespan (Liu 2022, 37117740: BRCA2, BRCA1, TET2, PPM1D,
+  LDLR, EML2, DEDD2) and Park 2025's (40021682: TET2, ATM, BRCA1, BRCA2, ASXL1, CKMT1B; SKAT-O C1orf52, IDH2, RLIM).
+  - Both papers are already in track C's candidate CSV, marked "non-rsID / gene-level".
+  - No seed is gene-level, so whether a burden gene can be a row is the lead's call. It is not a missed paper.
+- **Transcriptome and MR studies.**
+  - Lifespan TWAS: TOMM40 and COASY, PPR1225305; haptoglobin, PPR185888.
+  - Blood eQTL lifespan genes: 32358504.
+  - MR on telomere length, clocks and frailty (533 records).
+  - None is a variant at genome-wide significance.
+- **Not genome-wide.** Candidate-gene longevity studies of genes without a row: BPIFB4, PLCG2 P522R, SIRT6, SMAD3,
+  IGF1 coding variants, d3GHR, UCP2, SERPINE1 null (Amish), CCR5-Δ32, ERAP2. None was genome-wide.
+- **Dementia-free survival.** Being dementia-free at 85 (42024100: MAL2, GCH1) is a dementia-resilience outcome, not
+  lifespan or healthspan.
+- **Ageing-marker GWAS.**
+  - Clocks, telomere length, brain age, frailty and organ age, unless the abstract named a row's variant.
+  - Japanese centenarians (PPR835001, CentPGS): no locus beyond APOE named; no published version found.
+
+**The nine pre-2023 GWAS Catalog ids** (Track B, Runs). Their studies under the four EFO terms (EFO_0007796,
+OBA_VT0005372, EFO_0009762, EFO_0005056) were listed with `/api/v2/studies?pubmed_id=` and their associations with
+`/api/v2/associations?accession_id=`, 2026-11-17. None holds an association at P ≤ 5e-8 for lifespan, longevity,
+healthspan or death:
+
+- **17903295**, Framingham 100K: its one line at 1e-8 is rs10496265 for age at menopause.
+- **20834067, 21612516, 22533364**, small longevity scans: none genome-wide.
+- **32772156**, SCZ and BD by parental lifespan: no associations listed.
+- **32915819**, a German cohort's "Death": no associations listed.
+- **34662886**, the UK Biobank phenome-wide parental-alive fields: no associations listed under these terms.
+- **34737426**, the same, mother and father still alive: no associations listed under these terms.
+- **35748965**, Finnish healthspan: 11 associations, none genome-wide.
+
+Not a missed locus.
+
+**Atanur 2026** (pmid 42880286, *Cell*, the structural-variant PheWAS of 467,152 UK Biobank genomes):
+
+- The Catalog lists its "Age at death (structural variant analysis)" study, GCST90939774, with no association.
+- The abstract (`loci fetch`, abstract only) does not mention age at death.
+- So whether any structural variant reached significance for age at death is **unknown**, not none. Its
+  supplementary tables settle it. Nothing to queue.
+
+**medRxiv's own listing**, 2026-04-01 → 2026-11-17 (`https://api.biorxiv.org/details/medrxiv/2026-04-01/2026-11-17/<cursor>`):
+
+- 14,210 records, 11,999 DOIs; 84 matched a longevity and a genetic term.
+- All 84 were read by title, and three by abstract. None was queued.
+- Alvarez Sirvent 2026 is the one already closed.
+- 10.64898/2026.11.10.26365445 ("Enrichment of Rare Exonic Variants in Cognitive Superagers from Centenarian Families",
+  posted 2026-11-12) is very likely PPR1366192's work. The two are not yet matched; matching them is the next E run's
+  task.
+
+**bioRxiv's own listing**, same interval: still downloading at commit time (about 5,000 of 49,428 records).
+**Not screened.** It goes to the next run.
+
 ## Track E — 2025–2026 papers and preprints
 
 Covered to 2026-11-03 by the track itself (bioRxiv/medRxiv from 2025-01-01, PubMed 2025–2026, Europe PMC's preprint

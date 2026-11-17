@@ -7,23 +7,18 @@ person: "Make sure they commit all to notes, transcripts are not moving"). A fre
 
 ## In hand
 
-- **Backfill sweep, 2023-01-01 → 2026-10-20** (the lead, #longevity-loci>scout 641384225, for the person; decided,
-  `urgent`, started 2026-11-17): every current query (E set, A–D, F–K, S-seedgene), Europe PMC preprints over the same
-  window, bioRxiv's and medRxiv's own listings from 2026-04. Queue (a) any genome-wide lifespan, longevity, healthspan
-  or age-at-death locus not a seed locus, (b) any paper on an existing row that no row cites. Also a one-line verdict on
-  the nine pre-2023 GWAS Catalog ids and on Atanur 2026 (pmid 42880286). Reply there with records, new, queued.
-  Widened by the person (lead, 641384713) to **2015-01-01 → 2026-10-20**, counts per window (2015-01-01 → 2017-06-24,
-  2017-06-25 → 2022-12-31, 2023-01-01 → 2026-10-20). State 2026-11-17: fetched (26,979 PubMed hits, 21,127 distinct,
-  20,823 not already screened or cited; 1,632 new Europe PMC preprints); abstracts classified by rule (human, a
-  longevity or ageing-marker term, a genetic design, a row rsID or gene); 2,743 flagged records out to reader agents at
-  abstract level and 2,770 longevity-genetic records at title level; the rest dropped by rule, counted by reason.
-  The nine Catalog ids: no genome-wide lifespan association under the four EFO terms (Lunetta 2007's one line at
-  1e-8 is age at menopause). Atanur 2026: abstract silent on age at death, Catalog study with no association: unknown.
-  If the scratch is lost, rerun from the queries in SEARCHES.md; nothing committed rests on it yet.
+- **bioRxiv's own listing, 2026-04-01 → 2026-11-17**, the one part of the 2015–2026 backfill not screened: its download
+  was at about 5,000 of 49,428 records when the rest was committed (2026-11-17). `unattended`, with the next E run:
+  fetch through `https://api.biorxiv.org/details/biorxiv/2026-04-01/2026-11-17/<cursor>`, filter on a longevity term
+  and a genetic term (the rule in SEARCHES.md, Backfill), read the hits.
 
 ## State of the work
 
-- **Queue (`scout/queue.md`): no open entry.** Alvarez Sirvent 2026 (HLA-II fine-mapping, a preprint, Europe PMC
+- **Backfill 2015-01-01 → 2026-10-20** done 2026-11-17 (SEARCHES.md, Backfill; every record in
+  `scout/backfill_2015_2026.tsv`): 22,759 records, 45 queued (2 non-seed loci, 43 uncited papers on 18 rows), the nine
+  Catalog ids and Atanur 2026 answered. PubMed indexes medRxiv preprints with PMIDs: a preprint PMID can be a known
+  paper's earlier version, so match versions before calling one new.
+- **Queue (`scout/queue.md`): the backfill's 12 entries open** (2026-11-17). Before them: Alvarez Sirvent 2026 (HLA-II fine-mapping, a preprint, Europe PMC
   PPR1306907), queued 2026-11-17 for rows 135 and 38, was closed by the curator the same day at abstract depth (0b389c2).
   The eight second-signal candidates (D25.6) were all taken by the
   curator as rows 162 to 169 under D39.14 (`second_signal_of`); each entry has a **Taken** line naming its row.
@@ -42,7 +37,8 @@ person: "Make sure they commit all to notes, transcripts are not moving"). A fre
 
 1. **Next track E run**, `unattended`, waits until about 2026-11-24, with the third pass over A to D and F to K (from
    about 2026-11-03). Look again for PPR1366192's published version (cognitive superagers' exome, HLA-B and HLA-DRB1
-   missense, no variant named) and the twelve unpublished preprints' (Chang's is PMID 42987714). **Watch Alvarez Sirvent
+   missense, no variant named) and the twelve unpublished preprints' (Chang's is PMID 42987714); medRxiv 10.64898/2026.11.10.26365445 (cognitive
+   superagers, 2026-11-12) is very likely PPR1366192's work: match them. **Watch Alvarez Sirvent
    2026** (doi 10.64898/2026.08.24.26361177) for a published version or an open full text: then tell the curator, who
    re-reads rows 135 and 38.
 2. Open, `unattended`: bioRxiv's and medRxiv's own listings, left out of every E run (Europe PMC's preprint index
