@@ -86,3 +86,8 @@ Still owed: reply to agents-kit/lead with each seat's notes commit, one `keys co
   `#longevity-loci>milestones` per landed result, 1 to 3 lines, finding first, a figure where it helps; the eleven
   earlier results were posted that day. README rewritten the same day on their ask (d42de36); refresh its numbers
   and figures (`scripts/readme_figures.py`) at each milestone that moves them.
+
+- 2026-11-17, on the person's question ("what about vs newly published data 2023-2026?"): the scout's sweeps run
+  forward from 2026-10-20 and rely on tracks A-K (no recorded queries) for 2023-2026. Asked the scout for a backfill
+  sweep 2023-01-01 -> 2026-10-20 with its own queries, plus bioRxiv/medRxiv listings from April 2026 (Zulip 641384225).
+  Owed back: counts and anything queued; then curator rows for whatever lands.
