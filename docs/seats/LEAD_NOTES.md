@@ -89,5 +89,7 @@ Still owed: reply to agents-kit/lead with each seat's notes commit, one `keys co
 
 - 2026-11-17, on the person's question ("what about vs newly published data 2023-2026?"): the scout's sweeps run
   forward from 2026-10-20 and rely on tracks A-K (no recorded queries) for 2023-2026. Asked the scout for a backfill
-  sweep 2023-01-01 -> 2026-10-20 with its own queries, plus bioRxiv/medRxiv listings from April 2026 (Zulip 641384225).
+  sweep with its own queries, plus bioRxiv/medRxiv listings from April 2026 (Zulip 641384225). Window widened on the
+  person's word to 2015-01-01 -> 2026-10-20 ("Lookup should cover the range past last date of HAGR base": Build 3
+  released 2017-06-24, its newest cited PMID from 2015).
   Owed back: counts and anything queued; then curator rows for whatever lands.
