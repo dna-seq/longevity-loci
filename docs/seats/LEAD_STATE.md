@@ -1,16 +1,20 @@
-**Where it stands** (2026-11-16): the longevity loci are being re-curated from their evidence, one row per locus. All 161 seed loci are done, in 156 rows, the biological-ageing markers among them, and the eight second signals the scout queued are rows 162 to 169; seventeen batches read adversarially; the last (the second signals) settled as D40, its corrections applied and rebuilt. The rows now build into the annotation module on just-dna-format 0.8. The first trial publish is on the registry's test instance; nothing is on production.
+**1. Results page:** being built (the tabbed results artifact; its link goes here once it is published).
 
-**Headline results**
-- Few loci reach the top tier: 15 at A, 73 at B, 41 at C and 35 at D, in 164 rows (several A rows are markers, which score nothing). A means a genome-wide hit with an independent replication and no red flag; most fall short on the replication.
-- 35 rows are at D. Their discovery failed a powered test in its own ancestry, or its own authors called it anomalous.
-- The module builds strictly: 164 rows, 489 genotype rows, 679 studies and APOE's 12 ε-pair results, every position resolved (test instance, longevitymap 2.0.0, rebuilt with batch seventeen at 12c673f, signature aebf5e38; 19 marker variants, which score nothing at any tier).
+**2. Where it stands** (2026-11-17)
+- 🟢 Curation done: all 161 seed loci and the eight second signals the scout queued, in 164 rows, each claim citing a quote checked verbatim against its article.
+- 🟢 Seventeen batches read adversarially, every correction applied; the module is rebuilt strict green on just-dna-format 0.8.
+- 🟡 The module is on the registry's test instance only (longevitymap 2.0.0, `test-longevity-loci`); nothing is on production.
+- 🟢 The seats moved to this organisation on 2026-11-17 (acb4b4e).
 
-**Next**
-1. Every seed locus has a row, and the corrections owed from earlier reads are applied. The second signals are done as rows 162 to 169 (D39.14 to D39.19, D40): 166 and 167 at B, 165 at B with A waiting on a quoted mothers' test (D40.4), 162 to 164, 168 and 169 at C (169 by D16's gate, D40.1). APOE (96) is done at A, as six ε pairs. One rule was amended for it (D34.1, its reason corrected in D34.10): a sample's powered null no longer flags a locus when an independent genome-wide study in that sample's own ancestry replicates it and the null is not shown to contradict that study. The person may veto it (desk #344; default, it stays). Batch thirteen's corrections (D34.10–15) are applied and rebuilt; batch fifteen is read (D38), applied and rebuilt (117 pending Broer's table). The markers are done, each tiered on its own marker GWAS and scoring nothing (D37.12); 117 is back at D, its allele quoted from Deelen's and Zenin's supplements (D39.6). Pacing is off on the person's word.
-2. Read each batch of about 10 rows adversarially and settle the curator's questions as decisions (lead).
-3. Export and rehearse the module again after each batch (module seat). It stays on the test instance until the person says otherwise.
-4. Rehearsals stay under `test-longevity-loci` on the test instance (desk #274 withdrawn 2026-11-16: no real fork).
-5. Mark the field's consensus top loci: a flag, a new top tier, or nothing (the person, desk #266; nothing is built until then).
-6. APOE lives in this module, one result per ε pair (the person, desk #307, D33); done (96, D34); whether the app shows the pair table is unchecked (a local install, on the person's word). In 0.8 no study can link to a pair, so APOE's studies have no variant row; the strict build keeps them, with no warning (867fe8b); whether the app shows them is unchecked.
-7. The 18 biological-ageing marker loci go in an unscored section of this module (the person, desk #312, D32): curated after the scored loci. The seed's three brain-age loci (115 KLF3, 129 KANSL1, 142 MAPT) join them under D36.3, since a brain-age gap is also read against calendar age; this extends D32 (desk #345 withdrawn 2026-11-16 as no real fork; they stay unscored unless the person says otherwise).
-8. Whether a second signal gets a flag the app shows; 0.8 has no column for it (the person, desk #346; default, none).
+**3. Headline results**
+- Tiers: A 15, B 73, C 41, D 35 (n = 164 rows). A means a genome-wide hit (N ≥ 100k, P < 5e-8) with an independent replication and no red flag; most loci fall short on the replication.
+- 35 rows at D: the discovery failed a powered test in its own ancestry, or its own authors called it anomalous.
+- Module: 489 genotype rows, 679 studies, APOE as 12 ε-pair results; 19 marker variants score nothing at any tier (signature aebf5e38).
+- Quote check: 6,531 quotes located verbatim, 1 unknown (a database note with no cached text), 0 failed.
+
+**4. Plan / queue**
+- ❓ Keep the loosened rule that let APOE keep tier A despite one null study (the person, desk #45; default: it stays).
+- ❓ A flag in the app for a second signal near an existing locus (the person, desk #46; default: none).
+- ❓ Marking the field's consensus top loci: a flag, a tier, or nothing (the person, desk #266, moving here; default: nothing built).
+- ⏳ Production publish (module seat, on the person's explicit word only).
+- ⏳ 165 to tier A on a quoted mothers' heterogeneity test; 167's mechanism once its source is cached (curator, waits on sources).
