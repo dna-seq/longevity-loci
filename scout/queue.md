@@ -6,7 +6,7 @@ read), and every identifier the paper has. The curator takes it from here; the s
 
 ## Open
 
-### doi-10.64898/2026.08.24.26361177 — HLA-DRB1*15:01 (row 135): Hap-Y in centenarians, a preprint
+### doi-10.64898/2026.08.24.26361177 — HLA-DRB1*15:01 (row 135) and HLA-DQA1 (row 38): HLA-II haplotypes in centenarians, a preprint
 
 - **Paper:** Alvarez Sirvent D, Luimes MC, Tesi N, et al. "Fine-mapping HLA-II haplotypes in Alzheimer's disease and healthy longevity reveals
   distinct associations with microglial HLA-II load and neuropathology." medRxiv, v1 2026-08-27, v2 2026-10-09, doi
@@ -14,11 +14,16 @@ read), and every identifier the paper has. The curator takes it from here; the s
   In track E's evidence CSV; row 135 does not cite it. Track E rerun, 2026-11-17.
 - **Why:** it fine-maps six HLA-II haplotypes in 443 cognitively healthy centenarians, 3,219 population controls and
   2,391 AD patients (Dutch), and names Hap-Y as DRB1*15:01, row 135's allele. The abstract gives Hap-Y only a microglial
-  finding; whether Hap-Y differs between centenarians and controls, and in which direction, is not in it. A preprint:
-  never a replication; watched for its published version.
-- **Passage** (abstract, v2, medRxiv through the bioRxiv API, read 2026-11-17):
+  finding; whether Hap-Y differs between centenarians and controls, and in which direction, is not in it. It also says Hap-R (DRB1*01:01) "reduced healthy longevity" and that three
+  haplotypes overlap earlier lifespan signals, without naming which: row 38 HLA-DQA1 (rs34831921, rs34967069,
+  rs28383322, the HLA-DQA1/DRB1 parental-lifespan locus) may be one. v2's abstract is word for word v1's, so the
+  version itself adds nothing seen here; the reason to read it is that rows 135 and 38 cite neither version. Track E's
+  evidence CSV (row 11) gives Hap-Y only "microglial HLA-II activation", no centenarian result. A preprint: never a
+  replication; watched for its published version.
+- **Passage** (abstract, v2, https://doi.org/10.64898/2026.08.24.26361177, through the bioRxiv API, read 2026-11-17):
   > Hap-Y (DRB1*15:01) showed increased microglial HLA-II activation in post-mortem brain tissue, independent of quantitative AD neuropathology.
-- **Unknown:** Hap-Y's centenarian-versus-control result; whether Hap-Y is the haplotype rs3135388 tags. Licence CC BY-NC-ND (the API's field).
+- **Unknown:** Hap-Y's centenarian-versus-control result; whether Hap-Y is the haplotype rs3135388 tags; which three
+  haplotypes overlap earlier lifespan signals, and whether Hap-R is row 38's signal. Licence CC BY-NC-ND (the API's field).
   Each is settled by the full text or its supplement.
 
 ### pmid-42928374 — FES/FURIN (locus 81): pleiotropy with severe mental disorders

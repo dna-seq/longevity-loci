@@ -76,7 +76,7 @@ of a three-week window); the screen removes non-human work by title and abstract
 | 2026-11-17 | 2026-10-31 → 2026-11-17 | E-clock | 8 | 0 | 0 |
 | 2026-11-17 | 2026-10-31 → 2026-11-17 | E-somatic-2 | 10 | 2 | 0 |
 | 2026-11-17 | 2026-10-31 → 2026-11-17 | E-heritability | 15 | 1 | 0 |
-| 2026-11-17 | 2026-10-31 → 2026-11-17 | E-preprint | 8 | 1 || 0; 1 from the version check below |
+| 2026-11-17 | 2026-10-31 → 2026-11-17 | E-preprint | 8 | 1 | 0 (1 queued from the version check below) |
 
 66 unique records, listed with their verdicts in `scout/screened.md`; none was already in a track. **Not queried this
 run:** the GWAS Catalog, and bioRxiv's and medRxiv's own listings (Europe PMC's preprint index stood in for both

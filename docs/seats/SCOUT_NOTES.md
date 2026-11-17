@@ -11,8 +11,8 @@ Nothing is half run. Every sweep so far is committed and pushed.
 
 ## State of the work
 
-- **Queue (`scout/queue.md`): one open entry**, Alvarez Sirvent 2026 v2 (HLA-II fine-mapping, a preprint) for row 135,
-  queued 2026-11-17. Before it, the eight second-signal candidates (D25.6) were all taken by the
+- **Queue (`scout/queue.md`): one open entry**, Alvarez Sirvent 2026 v2 (HLA-II fine-mapping, a preprint) for rows 135 and
+  38, queued 2026-11-17. Before it, the eight second-signal candidates (D25.6) were all taken by the
   curator as rows 162 to 169 under D39.14 (`second_signal_of`); each entry has a **Taken** line naming its row.
   pmid-42928374 (Pisanu 2026, FURIN at 81) is **Closed** with the curator's line (7741c02): its shared variant is with
   telomere length, not mvAge. Tiers of 162 to 169 were revised by the lead's batch-seventeen read (D40); the Taken
@@ -55,7 +55,8 @@ Nothing is half run. Every sweep so far is committed and pushed.
 ## Org move
 
 - 2026-11-17: the seats moved to the chat organisation desk-antonkulaga (the lead's commit acb4b4e); this seat is
-  punched in there. The old organisation's held-back message is moot.
+  punched in there. The old organisation's held-back message (640873745) was never read and its
+  ticket not used: the move came through another session's handoff.
 
 ## Learned
 
