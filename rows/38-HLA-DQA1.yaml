@@ -37,7 +37,9 @@ verdict_reason: >-
   own row (locus 103). No gene is named (requirements §4.2, §6.2: a gene only at E1/E2): Open Targets 26.09 returns
   neither rsID and holds no lifespan credible set in the region, so causal and effector confidence are unassessed (C4,
   E4; no flag, nothing to cite). The seed's hypothesised autoimmune-infection trade-off is not recorded: no cached
-  source tests it.
+  source tests it. The scout's backfill (D41): the 17th IHIW's allele-level healthy-ageing associations, DQA1 among them, in small
+  samples from four populations (Ivanova 2019; pmid-31331679), and Alvarez Sirvent 2026's preprint
+  (doi-10.64898_2026.08.24.26361177, read 2026-11-17). No cell moves.
 axes:
   tier: {value: B, cites: [pmid-30642433#q16, pmid-31484785#q23, pmid-31484785#q24, pmid-31413261#q13, pmid-29030599#q12, pmid-30642433#q17]}
   mechanism: {value: immune_inflammation, cites: [pmid-30642433#q16, pmid-29030599#q14, pmid-29030599#q15]}

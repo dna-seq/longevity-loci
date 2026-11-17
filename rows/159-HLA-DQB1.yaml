@@ -31,7 +31,9 @@ verdict_reason: >-
   class II region; A also lowers complement C4 levels (Thareja, P 1e-19; the Catalog's 'decrease'). Pleiotropy `mech:cancer`: A raises prostate
   cancer risk (Wang, OR 1.05, P 2e-16; Conti, P 9e-8), the same allele as frailty, so no trade-off. Causal C4 and
   effector E4: no Open Targets record, and the HLA region's long haplotypes make any gene call here ambiguous.
-  Descriptive. Age of action unknown. The evidence is European.
+  Descriptive. Age of action unknown. The evidence is European. The scout's backfill (D41): four other HLA-DQB1
+  SNPs with longevity in the Chinese Longevity Cohort (Yang 2017; pmid-29129831), their LD to the lead unread, and the
+  17th IHIW's allele-level healthy-ageing associations in small samples (Ivanova 2019; pmid-31331679). No cell moves.
 axes:
   tier: {value: C, cites: [pmid-34431594#q9, pmid-34431594#q1, pmid-34431594#q2, pmid-34431594#q3, pmid-34431594#q5, pmid-30642433#q406, pmid-29227965#q204, pmid-29227965#q205, pmid-29227965#q206, pmid-29227965#q207, pmid-40021682#q151, pmid-40021682#q152, pmid-40021682#q153, db-finngen-r11#q109, pmid-30729179#q169, pmid-30729179#q10, pmid-31413261#q325, db-ensembl-116#q982, db-ensembl-116#q1047, db-ensembl-116#q1048, db-ensembl-116#q1049, pmid-34431594#q10]}
   mechanism: {value: immune_inflammation, cites: [db-ensembl-116#q983, db-gwascatalog-2026.10.29#q610, db-gwascatalog-2026.10.29#q611, db-gwascatalog-2026.10.29#q697]}
