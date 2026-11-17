@@ -7,10 +7,7 @@ person: "Make sure they commit all to notes, transcripts are not moving"). A fre
 
 ## In hand
 
-- **bioRxiv's own listing, 2026-04-01 → 2026-11-17**, the one part of the 2015–2026 backfill not screened: restarted
-  2026-11-17 in month chunks (one file each); screen it when the files are in. `unattended`, with the next E run:
-  fetch through `https://api.biorxiv.org/details/biorxiv/2026-04-01/2026-11-17/<cursor>`, filter on a longevity term
-  and a genetic term (the rule in SEARCHES.md, Backfill), read the hits.
+Nothing is half run. The backfill is complete, bioRxiv included (2026-11-18).
 
 ## State of the work
 
@@ -43,8 +40,8 @@ person: "Make sure they commit all to notes, transcripts are not moving"). A fre
    superagers, 2026-11-12) is very likely PPR1366192's work: match them. **Watch Alvarez Sirvent
    2026** (doi 10.64898/2026.08.24.26361177) for a published version or an open full text: then tell the curator, who
    re-reads rows 135 and 38.
-2. Open, `unattended`: bioRxiv's and medRxiv's own listings, left out of every E run (Europe PMC's preprint index
-   stood in). The bioRxiv API is `https://api.biorxiv.org/details/{server}/{interval}`.
+2. With each E run: bioRxiv's and medRxiv's own listings from 2026-11-17 on (the backfill covered 2026-04-01 →
+   2026-11-17), through `https://api.biorxiv.org/details/{server}/{from}/{to}/{cursor}`, in month chunks.
 
 ## How a sweep is run (the scripts were scratch, not committed: rewrite them from this)
 

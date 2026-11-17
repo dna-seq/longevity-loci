@@ -43,7 +43,7 @@ The backfill 2015-01-01 → 2026-10-20 (2026-11-17): two entries for loci outsid
     > Using whole-genome sequencing (WGS) and a genome-wide association study (GWAS), we found that variants with significant and negative associations with longevity in the GWAS were located in genes such as APOE, APOC1, and CFAP46, which are implicated in an increased risk of age-related diseases.
 - **Unknown:** the threshold called significant, the rsIDs, effect sizes and replication, all of them full-text questions.
 
-### row 96 APOE — ten uncited studies of survival and all-cause mortality, and one preprint
+### row 96 APOE — ten uncited studies of survival and all-cause mortality, and two preprints
 
 - **Why:** Each tests the row's own variants (rs429358, rs7412, and in two of them rs2075650) against mortality or survival to old age in a population or longevity cohort, and none is cited by the row. Ordered by size. The row is tier A, so these are corroboration, plus two non-European looks (Korea, Japan) and one null for ε4 in Koreans.
 - **Found by:** the 2015-01-01 → 2026-10-20 backfill (lead, 2026-11-17), its queries in `scout/SEARCHES.md`; abstracts read through PubMed E-utilities 2026-11-17. None of these PMIDs is cited by a row, held in `corpus/` or in a track's CSV.
@@ -70,6 +70,8 @@ The backfill 2015-01-01 → 2026-10-20 (2026-11-17): two entries for loci outsid
     > Each additional APOE {varepsilon}4 allele was associated with a 19% increase in risk (aHR = 1.19, 95% CI 1.17-1.21), while active individuals had a 33% lower risk compared to inactive individuals (aHR = 0.67, 95% CI 0.66-0.68).
   - Dankner R et al., "ApoE Genotype, Lipid Profile, Exercise, and the Associations With Cardiovascular Morbidity and 18-Year Mortality." *The journals of gerontology. Series A, Biological sciences and medical sciences*, 2020 Sep 25. PMID 31585002, doi 10.1093/gerona/glz232. Israel, 949 survivors of a cohort, mean age 72; ε4 in men only, CI crossing 1.
     > In men only, ApoE E4 associated with CVD (adjusted odds ratio = 1.46, 95% confidence interval [CI] 0.76, 2.80) and with 18-year mortality (adjusted hazard ratio = 1.47, 95% CI 0.95, 2.26), adjusting for age, ethnicity, physical activity, hypertension, diabetes, low-density lipoprotein (LDL)-cholesterol, high-density lipoprotein (HDL)-cholesterol, triglycerides and lipid-lowering medications.
+  - bioRxiv preprint, "Is APOE ε2 always a protective allele? Deviations in Hardy-Weinberg equilibrium in admixed Brazilian elderly individuals" doi 10.64898/2026.06.20.733520, posted 2026-06-23 (bioRxiv's own listing, read 2026-11-18; not published, the API's `published` NA). São Paulo older adults (BAS autopsy study n 716, SABE n 952): Hardy-Weinberg deviation at APOE by local ancestry, a survival signal in an admixed population, not a mortality test. A preprint: never a replication.
+    > Our findings reveal that APOE {varepsilon}2 homozygotes with African ancestry significantly contribute to deviations from HWE in the BAS, with an excess of {varepsilon}2AFR/{varepsilon}2AFR homozygotes observed (p = 0.0196).
 
 ### row 43 FOXO3 — eleven uncited studies: mortality, longevity in East Asian and other cohorts, function of rs2802292
 

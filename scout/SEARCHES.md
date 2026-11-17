@@ -239,8 +239,19 @@ Apart from 17903295's two lines, not a missed locus.
   posted 2026-11-12) is very likely PPR1366192's work. The two are not yet matched; matching them is the next E run's
   task.
 
-**bioRxiv's own listing**, same interval: restarted 2026-11-17 in month chunks that each write a file. **Not
-screened** at this commit, which leaves it unknown, not zero.
+**bioRxiv's own listing**, 2026-04-01 → 2026-11-17, screened 2026-11-18 (fetched in month chunks,
+`https://api.biorxiv.org/details/biorxiv/<from>/<to>/<cursor>`):
+
+- 47,433 records, 42,532 distinct DOIs; 132 matched a longevity and a genetic term.
+- 65 of the 132 have no human word and are dropped by the fixed rule. The other 67 were read by title (mostly mouse,
+  fly, imaging and cell biology), and three by abstract.
+- One was queued under row 96: 10.64898/2026.06.20.733520, APOE ε2 Hardy-Weinberg deviation by local ancestry in São
+  Paulo older adults.
+- Not queued:
+  - 10.64898/2026.05.28.728260: rare IIS/mTOR variants from long-lived people, functional in mouse ES cells, genes
+    unnamed. Very likely the same work as PPR1241182.
+  - 10.64898/2026.11.02.763827: a rhesus macaque exome scan.
+- All 132 are in the tsv, `biorxiv` in the queries column.
 
 ## Track E — 2025–2026 papers and preprints
 
