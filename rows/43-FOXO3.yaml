@@ -67,7 +67,17 @@ verdict_reason: >-
   of action is unknown. Joshi 2017 sees a larger effect after 75 and Deelen's 99th exceeds its 90th, but Timmers
   2019's age moderator is flat (P 0.64), and Timmers 2020's fading with parental age is collective across nine loci.
   No sex dimorphism (Timmers 2020). The counted evidence is European, so `eur_only_evidence`; the candidate-gene
-  discovery is in men of Japanese ancestry, where G is the minor allele too (0.32), and is not counted.
+  discovery is in men of Japanese ancestry, where G is the minor allele too (0.32), and is not counted. The scout's
+  2015–2026 backfill (D41) adds eleven uncited papers, none moving a cell. G's way, outside the counted European
+  evidence: coronary mortality in Japanese-American, white and black men (Willcox 2017; pmid-27694344); mortality in
+  Japanese-American men with cardiometabolic disease, haplotype HR 0.81 (Chen 2020; pmid-33260156, the discovery's
+  population); rs2802292 GG against TT HR about 0.81 in older Chinese adults (Ji 2022, pmid-34875051; Liu 2021,
+  pmid-32364002, very likely the same cohort). Other FOXO3 SNPs whose LD to the lead is not read: rs9486902 in Han
+  Chinese (Li 2016; pmid-26683100), men-only SNPs in Chinese (Lin 2016; pmid-27936216), rs13217795 in Chinese long-lived
+  (He 2014; pmid-25553725) and a 17-centenarian contrast (Kolovou 2017; pmid-28883855). A small European null in
+  Sardinia's Blue Zone, power not read (Errigo 2024; pmid-39730495). Function only: G with higher telomerase activity
+  in Okinawans (Torigoe 2024; pmid-38459055) and rs9400239's isoform and glucose clearance in Danish twins (Santo 2023;
+  pmid-36617632). All read at the abstract.
 axes:
   tier: {value: B, cites: [pmid-41964836#q1, pmid-41964836#q2, db-ensembl-116#q290, pmid-32678081#q20, pmid-32678081#q21, pmid-32678081#q22, pmid-32678081#q9, pmid-32678081#q6, pmid-30642433#q221, pmid-30642433#q222, pmid-31484785#q89, pmid-31484785#q6, db-gwascatalog-2026.10.29#q300, db-ensembl-116#q293, db-opentargets-26.09#q587, pmid-25199915#q1, pmid-25199915#q2, pmid-31413261#q106, pmid-31413261#q107, pmid-31413261#q3, pmid-18765803#q1, pmid-19196970#q1, pmid-19196970#q2, pmid-30642433#q223, pmid-30642433#q76, pmid-30642433#q12, pmid-30642433#q101, db-finngen-r11#q18, db-ensembl-116#q291, db-ensembl-116#q292, db-opentargets-26.09#q583, db-opentargets-26.09#q584]}
   mechanism: {value: general_ageing, cites: [pmid-32678081#q23, pmid-32678081#q27, db-opentargets-26.09#q580, db-opentargets-26.09#q581, db-gwascatalog-2026.10.29#q299, pmid-41837379#q2]}
