@@ -1484,3 +1484,25 @@ questions. Settled under the person's standing word (pacing off; the person is p
 7. **168 and 53: prose only.** 168's healthspan 0 rests on D31.13: Foote's general factor favours (one-sided 0.034)
    and F2 opposes (0.006). It replaces "P 0.068". Exceptional survival 0 holds (Deelen's 99th, 0.052). 53's "the
    question with the lead" cites D39.18, and "both under 5e-8" reads "short of genome-wide".
+
+## D41 — the 2015–2026 backfill: gene-level hits, and the screen's recall (2026-11-17)
+
+The scout's backfill sweep, 2015-01-01 → 2026-10-20 (the person: "Lookup should cover the range past last date of HAGR
+base"), logged in `scout/SEARCHES.md` and `scout/backfill_2015_2026.tsv` (c0a8726, 0a3707b).
+
+1. **Gene-level hits get no row.** Exome burden genes (BRCA1/2, ATM, TET2, PPM1D and the like) and CNV scans stay out,
+   as the requirements already settle (§3 Scope, R-SCOPE, R-RARE-5): rare loss-of-function variants are cross-references
+   to the cancer and ACMG modules, somatic clonal haematopoiesis is not callable from a germline VCF, and structural
+   variants are hooks only. A germline gene-level result with a lifespan claim is named in the nearest row's prose
+   when a row exists, and nowhere else. Rejected: a gene-level row type, which the module's format cannot score and
+   no seed locus uses.
+2. **The screen's drop rule is fixed before the sweep counts as done.** On the 58 row-cited papers inside the window,
+   the rule flagged 50 (86 %). Four misses had no longevity term (APOE or Klotho papers on Alzheimer's or cognition,
+   one somatic scan); they bear on a row's negatives, not on a new locus, and the sweep's question does not ask for
+   them. The other four are faults: Zenin 2019, a healthspan GWAS that rule 3 (a genome-wide design with a longevity
+   term) should have flagged, fell to title reading, as did a telomere-length paper; an mtDNA copy-number cohort was
+   read as non-human. Three of the four title readers set defaults by script. So: the scout finds why each of the four
+   missed, fixes the rule, re-classes all 22,759 records and reads what newly flags; the title-class batches whose
+   reader defaulted by script are read again with judgement. Rejected: accepting a random re-read of 100 rejections
+   (0 misses) as the measure, since relevant papers are rare among rejections and a sample of 100 cannot see a
+   14 % miss rate on them.
