@@ -15,7 +15,13 @@ verdict_reason: >-
   Secondary LPA-region signals (rs186696265, rs111333005, ...) need a conditional analysis to be rows of their own and
   are not scored here. Timmers 2019's Figure 5 source data lean with the mid-life reading: fathers' effect halves
   after 60 (0.137 and 0.136 at 40-60, 0.072 to 0.053 at 60-90) while mothers' holds (0.083, 0.083, 0.058), and the age
-  moderator is nominal (P 0.040) and fails the paper's 5 % FDR (Q 0.76), so DIRECT_WEAK stays.
+  moderator is nominal (P 0.040) and fails the paper's 5 % FDR (Q 0.76), so DIRECT_WEAK stays. The scout's backfill (D41)
+  adds two uncited papers. Arsenault 2020's 26-SNP Lp(a) score goes with fewer long-lived parents in UK Biobank (OR
+  0.92 per 50 mg/dL, P 2.7e-8; pmid-32108890), the same samples the row counts. Langsted 2019, 119,094 Danes outside UK
+  Biobank, finds the KIV-2 instrument raising all-cause mortality (RR 1.10 per 50 mg/dL) but the rs10455872 instrument
+  not (0.97, 0.92 to 1.02; pmid-30608559): a null at the row's own SNP. The per-allele contrast and the instrument's
+  first stage are not in the abstract, so no power test is derived and no token set (D28.1); the full text is not open
+  here.
 axes:
   tier: {value: A, cites: [pmid-30642433#q1, pmid-29030599#q2, pmid-30729179#q1, pmid-32678081#q1]}
   mechanism: {value: heart_vessels, cites: [pmid-29030599#q3, pmid-29227965#q2]}
