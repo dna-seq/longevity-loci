@@ -4227,3 +4227,17 @@ The window at rs6062322 (row 167, D30.18, D40.5): Ensembl's EUR LD within 500 kb
 lines stronger than rs6062322's, rs73143584, r² 0.067 (q1211). Phased from 1000 Genomes EUR (population q1174; first line
 q1212; over 1,006 haplotypes T on 195, rs73143584's A on 90, both on 49), T with A, r +0.278; rs73143584 A with
 rs2273500 T, r −0.038 (A 90, T 859, both 73) (derived). For row 167.
+
+## Reading 2026-11-18, record
+
+> [q1213] mappings[0] strand 1 ancestral_allele T end 93236765 assembly_name GRCh38 seq_region_name 10 allele_string C/T coord_system chromosome location 10:93236765-93236765 start 93236765
+
+> [q1214] populations[11] population gnomADg:nfe frequency 0.1428 allele_count 9712 allele T
+
+> [q1215] [0] assembly_name GRCh38 end 93236765 seq_region_name 10 strand 1 id rs1927465 input rs1927465 most_severe_consequence intron_variant start 93236765 allele_string C/T
+
+> [q1216] [0].colocated_variants[0].frequencies.T gnomadg_afr 0.1687 gnomadg_sas 0.09648 eas 0.0129 gnomadg 0.1476 gnomadg_remaining 0.1786 gnomadg_ami 0.0943 gnomadg_mid 0.2347 amr 0.1052 gnomadg_nfe 0.1428 gnomadg_amr 0.1262 afr 0.1815 gnomadg_fin 0.1531 sas 0.0808 eur 0.171 gnomadg_eas 0.02083 gnomadg_asj 0.315 af 0.1152
+
+rs1927465 (row 170): GRCh38 10:93,236,765 C/T, T ancestral (q1213); T at 14.3 % in gnomAD's non-Finnish genomes (q1214);
+intronic in a lncRNA (ENSG00000296225; q1215), between CYP26A1 and MYOF. T by population (q1216): 0.143 non-Finnish,
+0.153 Finnish, 0.315 Ashkenazi, 0.021 East Asian. For row 170.

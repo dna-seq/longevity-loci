@@ -2880,3 +2880,11 @@ the rheumatoid arthritis or IBD line has no allele (q234, q235). For row 165.
 The GWAS Catalog at rs15285: disorders of lipid metabolism, C 0.074 increase, P 8e-46 (q814 to q816); cholesterol medication,
 C 0.044 increase, P 2e-16 (q817 to q819); triglycerides, T 0.155 decrease, P 3e-72 (q820 to q822): T the
 healthier lipid side. Platelet count and ANGPTL3 lines named. For row 166.
+
+## Reading 2026-11-18, record
+
+> [q823] _embedded.associations[0] association_id 93515477 risk_frequency NR pvalue_description pvalue_mantissa 5 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range [0.0093-0.0183] beta 0.0138 unit increase p_value 5e-09 accession_id GCST90018959 pubmed_id 34594039 first_author Sakaue S ci_lower 0.0093 ci_upper 0.0183
+
+> [q824] _embedded.associations[0].efo_traits[0] efo_id OBA_VT0001253 efo_trait body height
+
+rs1927465: one association (q823, q824), height, T +0.0138; no longevity association is curated for it. For row 170.

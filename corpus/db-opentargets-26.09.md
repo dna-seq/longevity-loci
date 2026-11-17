@@ -5369,3 +5369,19 @@ rs6062322's own PIPs in the metabolic sets: type 2 diabetes 0.023 (q1564), systo
 0.0089 (q1566), coronary disease 0.0063 (q1567): it leads none, and the βs at q1526 to q1533 are each set lead's,
 not its own. It leads red-cell volume sets: mean corpuscular volume, PICS, β per T +0.038, P 8.3e-28 (q1568,
 q1569), PIP 0.997 (q1570); four more MCV and MCH sets at PIP 0.87 to 0.996 named. For row 167 (D40.5).
+
+## Reading 2026-11-18, record
+
+> [q1571] data.variant.credibleSets count 7
+
+> [q1572] data.variant.credibleSets.rows[0].study id FINNGEN_R12_HEIGHT_IRN traitFromSource Height, inverse-rank normalized studyType gwas
+
+> [q1573] data.variant.credibleSets.rows[1].study id GCST90691787 traitFromSource Impedance of arm right (UKB data field 23109) studyType gwas
+
+> [q1574] data.variant.credibleSets.rows[2].study id GCST007841 traitFromSource Height studyType gwas
+
+> [q1575] data.variant.credibleSets.rows[5].study id GCST90310180 traitFromSource Standing height (UKB data field 50) studyType gwas
+
+rs1927465 (10_93236765_C_T): 7 sets (q1571), none of a lifespan, longevity or healthspan class: height (FinnGen R12,
+q1572; GCST007841, q1574; UK Biobank standing height, q1575) and arm impedance (q1573). It leads none (PIP 0.07
+to 0.23). For row 170.

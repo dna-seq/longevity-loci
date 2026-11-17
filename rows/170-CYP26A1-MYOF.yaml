@@ -1,0 +1,151 @@
+# A locus outside the seed list, from the scout's 2015–2026 backfill (D41), its own row under the next free id. Curated
+# 2026-11-18. Lead rs1927465, Yashin 2018's new Long Life Family Study signal: intronic in a lncRNA between CYP26A1 and
+# MYOF (about 70 kb 3′ of MYOF), GRCh38 10:93,236,765 C/T, GRCh37 10:94,996,522, T ancestral; T at 14.3 % in gnomAD's
+# non-Finnish European genomes. The paper's A/G is Ensembl's C/T on the reverse strand, A being T (derived). T is the
+# allele the discovery puts with longevity.
+locus_id: 170
+locus_name: CYP26A1-MYOF
+verdict: kept
+verdict_reason: >-
+  Tier C (R-TIER-4, R-TIER-2, D25.1): an old-against-young discovery whose genome-wide P is the best of six scans,
+  kept off D by one small outside sample, and contradicted where the samples are large. Yashin 2018's Long Life Family
+  Study GWAS (877 of the proband generation living, or predicted to live, to 96, against 2,462 of the offspring
+  generation under 75) puts T with longevity, 0.22 in cases against 0.15, β +0.42 (SE 0.07) on the log odds, P 1.09e-8
+  after genomic control (pmid-30299504 q1 to q7). The case threshold 96 was picked as the one giving the lowest P among
+  six tried, 90 to 100 (q3, q4), and with two other covariate sets the SNP's P falls to about 1e-7 (q10): over six
+  correlated scans the printed P does not show genome-wide significance on its own, so the row reads it as
+  sub-genome-wide (R-TIER-4). The Health and Retirement Study, a separate sample, as a candidate look-up (892 reaching
+  90 against 4,300 who died before 90 or were 70 or younger) gives T OR 1.19, P 0.038, one-sided 0.019 (q8, q9): an
+  independent scoring-class pass in the discovery's direction, which keeps the row off D under D25.1 and lifts
+  R-TIER-2's "unreplicated", though it is an age-threshold design too. The large samples go against it. Timmers 2019's
+  pooled parents put T shorter-lived, beta1 −0.0119 (SE 0.0055), P 0.030, one-sided 0.985 the discovery's way
+  (pmid-30642433 q429). D21's test, calibrated by APOE in both studies (LLFS's rs769449 log OR −0.96 per A from its
+  printed frequencies, q11; Timmers −0.1007, q430; factor 0.105, derived): the discovery's +0.044 at Timmers' SE gives
+  one-sided power 1.00 and heterogeneity P 1e-9; at half the effect, for the winner's curse, power 0.99 and
+  heterogeneity P 2e-4 (derived): a red flag, `replication_failed`. Whether LifeGen holds HRS is not read. Pilling
+  2017's UK Biobank parents are flat with T a little shorter (both P 0.38; top 10 % 0.78; mothers 0.32; fathers
+  0.66); FinnGen R11's deaths flat (P 0.70), a database line; Park 2025's own survival flat (T fewer deaths, P 0.49).
+  Deelen 2019 leans T's way, flat (90th P 0.41, 99th 0.18), and pools both LLFS and HRS (pmid-31413261 q377), so it
+  counts neither way. Outcome cells read for T: exceptional survival + (LLFS and HRS), lifespan − (Timmers, one-sided
+  0.015 against), healthspan 0 (Zenin 2019 T the earlier end, flat, P 0.23). Foote 2025's seven factor deposits hold
+  no line under the rsID or the GRCh37 position; whether the position is GRCh38 there is unchecked, so unread. Mechanism
+  ageing in general: no route is shown; Open Targets' seven sets at the SNP are height and arm impedance (it leads
+  none, PIP 0.07 to 0.23), and the GWAS Catalog's one association is height (T +0.014), no `mech:` token for stature.
+  T is at 31.5 % in gnomAD's Ashkenazi genomes against 14.3 % non-Finnish (db-ensembl-116 q1216); LLFS recruits in the
+  United States and Denmark and adjusts for principal components, but ancestry within its cases is not read. Causal C4
+  (D39.12: no set of a lifespan class holds it, and the article sets none). Effector E4: intronic in a lncRNA between
+  CYP26A1 and MYOF, the authors' enhancer marks named, no QTL or colocalisation read. The literature search (the rsID,
+  2026-11-18; all six services answered) finds the discovery, a review of ageing genetics (Melzer 2020, PMID 31690828)
+  and a cross-population trait atlas (Sakaue 2021, PMID 34594039), both named in Ensembl's record, neither read.
+  Descriptive. Age of action unknown. The evidence is European.
+axes:
+  tier: {value: C, cites: [pmid-30299504#q1, pmid-30299504#q2, pmid-30299504#q3, pmid-30299504#q4, pmid-30299504#q6, pmid-30299504#q7, pmid-30299504#q8, pmid-30299504#q9, pmid-30299504#q10, pmid-30299504#q11, pmid-30642433#q429, pmid-30642433#q430, pmid-29227965#q303, pmid-29227965#q304, pmid-31413261#q375, pmid-31413261#q376, pmid-31413261#q377, db-finngen-r11#q135, pmid-40021682#q235]}
+  mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q1571, db-opentargets-26.09#q1572, db-opentargets-26.09#q1573, db-gwascatalog-2026.10.29#q823, db-gwascatalog-2026.10.29#q824]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "-", exceptional_survival: "+",
+            cites: [pmid-30299504#q7, pmid-30299504#q9, pmid-30642433#q429, pmid-29227965#q303, pmid-29227965#q304, pmid-29227965#q305, pmid-29227965#q306, db-finngen-r11#q135, pmid-40021682#q235, pmid-40021682#q236, pmid-40021682#q237, pmid-30729179#q195, pmid-31413261#q375, pmid-31413261#q376]}
+  actionability: {label: descriptive, cites: [pmid-30299504#q7]}
+  context: {values: [eur_only_evidence], cites: [pmid-30299504#q1, db-ensembl-116#q1216]}
+flags:
+  - {token: replication_failed, cites: [pmid-30642433#q429, pmid-30642433#q430, pmid-30299504#q7, pmid-30299504#q11]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1571]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q1571, db-ensembl-116#q1215]}
+variants:
+  - rsid: rs1927465
+    locus: {chrom: "10", start: 93236765, ref: C, cites: [db-ensembl-116#q1213]}
+    gene: ""
+    phenotype: CYP26A1–MYOF region, longevity
+    trait_efo_id: OBA_VT0005372
+    effect_allele: T
+    effect_size: 1.52
+    effect_measure: OR
+    stat_significance: suggestive
+    direction: protective
+    genotypes:
+      - genotype: C/C
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position (about 73 in 100 people of European ancestry
+          do). It is the reference the other combinations are compared with. The position lies on chromosome 10
+          between the CYP26A1 and MYOF genes, and what it does there is not known. The finding comes from people of
+          European ancestry; less is known elsewhere.
+      - genotype: C/T
+        state: protective
+        conclusion: >-
+          You carry one copy of the less common T version of this DNA position (about 25 in 100 people of European
+          ancestry do). In one American and Danish study of long-lived families, people who reached 96 carried this
+          version more often, and a second, smaller study agreed. Much larger studies of how long people's parents
+          lived did not find it, and one leaned the other way, so this is early and uncertain evidence. It is a
+          tendency at most, not a guarantee.
+      - genotype: T/T
+        state: protective
+        conclusion: >-
+          You carry two copies of the less common T version of this DNA position (about 2 in 100 people of European
+          ancestry do). In one American and Danish study of long-lived families, people who reached 96 carried this
+          version more often, per copy, and a second, smaller study agreed. Much larger studies of how long people's
+          parents lived did not find it, and one leaned the other way, so this is early and uncertain evidence. It is a
+          tendency at most, not a guarantee.
+studies:
+  - rsid: rs1927465
+    note: pmid-30299504
+    quote: q7
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: Long Life Family Study (United States and Denmark), proband generation reaching 96 against offspring generation under 75
+    ancestry: [EUR]
+    n_cases: 877
+    sample_size: 3339
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: significant
+    p_value: "1.09E-08"
+    p_value_num: 1.09e-08
+    effect_size: 0.42
+    effect_measure: beta
+    effect_unit: log odds of reaching 96 per A allele (Ensembl's T), GMMAT logistic with relatedness
+    effect_allele: T
+    direction: protective
+    statistical_test: "GMMAT P after genomic control (q6, q7; GLIMMIX 5.5e-9), significant as printed, but the best of six case thresholds, 90 to 100 (q3, q4), and about 1e-7 under two other covariate sets (q10), so the tier reads it as sub-genome-wide (R-TIER-4); A/G is Ensembl's C/T reversed, A = T (derived)"
+    curator: claude-opus-5-5
+  - rsid: rs1927465
+    note: pmid-30299504
+    quote: q9
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: Health and Retirement Study (United States), reaching 90 against dying before 90 or aged 70 or under
+    ancestry: [EUR]
+    n_cases: 892
+    sample_size: 5192
+    sample_unit: individuals
+    age_of: participant
+    stat_significance: nominal
+    p_value: "0.038"
+    p_value_num: 0.038
+    p_one_sided: 0.019
+    effect_size: 1.19
+    effect_measure: OR
+    effect_unit: odds of reaching 90 per A allele (Ensembl's T)
+    effect_allele: T
+    direction: protective
+    statistical_test: "Candidate look-up in a separate sample (q8, q9), 1.009–1.394; one-sided 0.019 (derived); keeps the row off D (D25.1)"
+    curator: claude-opus-5-5
+  - rsid: rs1927465
+    note: pmid-30642433
+    quote: q429
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 638078
+    sample_unit: lives
+    stat_significance: nominal
+    p_value: "0.030241995"
+    p_value_num: 0.030241995
+    effect_size: -0.01188743
+    effect_measure: beta
+    effect_unit: beta1 on parental lifespan per T allele, longer positive
+    effect_allele: T
+    direction: risk
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0055, direction --; against the discovery; D21 calibrated by APOE (q430, pmid-30299504#q11): power 1.00, heterogeneity P 1e-9 (0.99 and 2e-4 at half the effect), derived: replication_failed"
+    curator: claude-opus-5-5

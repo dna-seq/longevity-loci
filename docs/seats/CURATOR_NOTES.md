@@ -65,6 +65,14 @@ record, never left empty; multi-line text edits want whitespace-tolerant matches
 
 ## Log (from 2026-11-10)
 
+- **170 CYP26A1-MYOF (2026-11-18)**, the first row outside the seed (next free id, D39.14). Lessons: `check rows`
+  bands a study's `stat_significance` by its printed P, so a P read as sub-genome-wide on design grounds (best of six
+  thresholds) stays `significant` in the study and the tier argues it in prose; `p_one_sided` is capped at 0.5, so a
+  replication the other way carries no one-sided P. D21's calibration for a scan with no rs429358: its own APOE tag
+  (rs769449, log OR from the printed case and control frequencies) against Timmers' line at the same tag. Deelen 2019
+  pools LLFS and HRS (its control-definition sentence names both). Foote's deposits held no line by rsID or GRCh37
+  position here, unproven absent. PMC's article page through `fetch-supp --name pmc-article.html` works when Europe
+  PMC's full text answers 500 and PMC's BioC 429.
 - **Alvarez Sirvent 2026 (2026-11-17)**, the scout's HLA-II preprint, note doi-10.64898_2026.08.24.26361177 at abstract
   depth; rows 135 and 38 unmoved (Hap-Y's longevity result and every tag unknown). Lessons: medRxiv answers 403 to
   every page, PDF and JATS fetch from here, and Europe PMC's preprint full text (PPR1306907) answered 500; `loci fetch
