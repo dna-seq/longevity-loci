@@ -187,10 +187,11 @@ mechanical consensus of the research tracks, to be confirmed or overturned by th
 - Scout entry, 2026-11-17: Alvarez Sirvent 2026 (medRxiv preprint, doi-10.64898_2026.08.24.26361177), the scout's HLA-II entry, read at abstract depth (full text 403/500): Hap-Y (DRB1*15:01) has only a microglial finding, Hap-R (DRB1*01:01) the longevity one; no tag named; rows 135 and 38 not moved.
 - 170 CYP26A1-MYOF (lead rs1927465, lncRNA intron between CYP26A1 and MYOF, T 14 % in Europeans; outside the seed, the scout's backfill), tier C: Yashin 2018's LLFS GWAS, 96-and-over against offspring under 75, T log OR +0.42, P 1.09e-8, the best of six case thresholds and about 1e-7 under other covariates, read sub-genome-wide (R-TIER-4); HRS one-sided 0.019 keeps it off D (D25.1); Timmers puts T shorter (P 0.030), a D21 red flag on APOE's calibration (power 1.00, heterogeneity P 1e-9), `replication_failed`; Pilling, Zenin, FinnGen, Park flat, Deelen pools LLFS and HRS; exceptional +, lifespan −, healthspan 0; C4/E4; options B or D put to the lead.
 - Scout entry, 2026-11-18: Kashtanova 2026 (90+ WGS, Russia; pmid-41701878): only APOE's rs429358 genome-wide; CFAP46, MYO18B, TBC1D28, LOC105376454 at 1.6e-7 to 9e-7, no row.
+- Scout entry, 2026-11-18: row 96 APOE's ten uncited survival and mortality studies (backfill) noted and named in the row's prose; no cell moves; Korea's ε4 null and Japan's men-only ε4 named as East Asian looks.
 
 ## In hand
 
-The scout's 2015–2026 backfill (c0a8726, D41): the two new-locus entries done (170; Kashtanova no row); next the row entries in queue order, 96 APOE first.
+The scout's 2015–2026 backfill (c0a8726, D41): the two new-locus entries done (170; Kashtanova no row); 96 APOE done; next 43 FOXO3, then the rest in queue order.
 
 ## Next: seed tier A (11)
 

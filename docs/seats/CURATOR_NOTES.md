@@ -65,6 +65,9 @@ record, never left empty; multi-line text edits want whitespace-tolerant matches
 
 ## Log (from 2026-11-10)
 
+- **96 APOE backfill (2026-11-18)**: ten notes at abstract depth (Rasmussen at full text), named in the row's prose.
+  Lesson: `check quotes` fails a quote holding bracketed text such as `rs429358 [APOE]` even when it is verbatim
+  (Shadyab 2017's abstract); quote around the brackets. To the lead as a tooling note.
 - **170 CYP26A1-MYOF (2026-11-18)**, the first row outside the seed (next free id, D39.14). Lessons: `check rows`
   bands a study's `stat_significance` by its printed P, so a P read as sub-genome-wide on design grounds (best of six
   thresholds) stays `significant` in the study and the tier argues it in prose; `p_one_sided` is capped at 0.5, so a
