@@ -11,8 +11,9 @@ Nothing is half run. Every sweep so far is committed and pushed.
 
 ## State of the work
 
-- **Queue (`scout/queue.md`): one open entry**, Alvarez Sirvent 2026 v2 (HLA-II fine-mapping, a preprint) for rows 135 and
-  38, queued 2026-11-17. Before it, the eight second-signal candidates (D25.6) were all taken by the
+- **Queue (`scout/queue.md`): no open entry.** Alvarez Sirvent 2026 (HLA-II fine-mapping, a preprint, Europe PMC
+  PPR1306907), queued 2026-11-17 for rows 135 and 38, was closed by the curator the same day at abstract depth (0b389c2).
+  The eight second-signal candidates (D25.6) were all taken by the
   curator as rows 162 to 169 under D39.14 (`second_signal_of`); each entry has a **Taken** line naming its row.
   pmid-42928374 (Pisanu 2026, FURIN at 81) is **Closed** with the curator's line (7741c02): its shared variant is with
   telomere length, not mvAge. Tiers of 162 to 169 were revised by the lead's batch-seventeen read (D40); the Taken
@@ -29,7 +30,9 @@ Nothing is half run. Every sweep so far is committed and pushed.
 
 1. **Next track E run**, `unattended`, waits until about 2026-11-24, with the third pass over A to D and F to K (from
    about 2026-11-03). Look again for PPR1366192's published version (cognitive superagers' exome, HLA-B and HLA-DRB1
-   missense, no variant named) and the twelve unpublished preprints' (Chang's is PMID 42987714).
+   missense, no variant named) and the twelve unpublished preprints' (Chang's is PMID 42987714). **Watch Alvarez Sirvent
+   2026** (doi 10.64898/2026.08.24.26361177) for a published version or an open full text: then tell the curator, who
+   re-reads rows 135 and 38.
 2. Open, `unattended`: bioRxiv's and medRxiv's own listings, left out of every E run (Europe PMC's preprint index
    stood in). The bioRxiv API is `https://api.biorxiv.org/details/{server}/{interval}`.
 

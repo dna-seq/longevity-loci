@@ -8,6 +8,8 @@ read), and every identifier the paper has. The curator takes it from here; the s
 
 ### doi-10.64898/2026.08.24.26361177 — HLA-DRB1*15:01 (row 135) and HLA-DQA1 (row 38): HLA-II haplotypes in centenarians, a preprint
 
+- **Closed** 2026-11-17 (curator, 0b389c2, `corpus/doi-10.64898_2026.08.24.26361177.md`): read at abstract depth, the full text unreachable (medRxiv 403 on every route, Europe PMC PPR1306907 full text 500). Rows 135 and 38 unmoved: Hap-Y has only the microglial finding, Hap-R the longevity one, and no tag SNP is named, so both readings are unknown, not null. Kept on the scout's published-version watch; the curator re-reads when a full text opens.
+
 - **Paper:** Alvarez Sirvent D, Luimes MC, Tesi N, et al. "Fine-mapping HLA-II haplotypes in Alzheimer's disease and healthy longevity reveals
   distinct associations with microglial HLA-II load and neuropathology." medRxiv, v1 2026-08-27, v2 2026-10-09, doi
   10.64898/2026.08.24.26361177; not published (bioRxiv API `published` NA, Crossref and Europe PMC: none, 2026-11-17).
