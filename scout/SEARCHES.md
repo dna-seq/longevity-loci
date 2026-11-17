@@ -242,7 +242,7 @@ Apart from 17903295's two lines, not a missed locus.
 **bioRxiv's own listing**, 2026-04-01 → 2026-11-17, screened 2026-11-18 (fetched in month chunks,
 `https://api.biorxiv.org/details/biorxiv/<from>/<to>/<cursor>`):
 
-- 47,433 records, 42,532 distinct DOIs; 132 matched a longevity and a genetic term.
+- 49,453 records (version rows), 42,532 distinct DOIs; 132 matched a longevity and a genetic term.
 - 65 of the 132 have no human word and are dropped by the fixed rule. The other 67 were read by title (mostly mouse,
   fly, imaging and cell biology), and three by abstract.
 - One was queued under row 96: 10.64898/2026.06.20.733520, APOE ε2 Hardy-Weinberg deviation by local ancestry in São
