@@ -363,3 +363,45 @@ here is not new to a later run. Verdicts on titles, or on abstracts where `scout
 | pmid 43024808 | out of scope (animal, plant, clinical or non-genetic) | Physical Activity, Blood Lipids, and Incident Cardiovascular Diseases: A Prospective Study Based on UK Biobank and China Kadoorie Biobank Participants |
 | PPR1362460 | out of scope (rhesus macaques; abstract read) | Pseudo-observations of longevity improve detection of resilience-associated genes in the Radiation Late Effects Cohort of rhesus macaques. |
 | PPR1366192 | noted, not queued: HLA-B, HLA-DRB1 rare missense in cognitive superagers; no exome-wide test, no variant named (abstract read) | Enrichment of Rare Exonic Variants in Cognitive Superagers from Centenarian Families |
+
+## Tracks A–D, F–K and the seed-gene watch, second pass 2026-11-17 (window 2026-10-30 → 2026-11-17; only records not screened before)
+
+| Record | Verdict | Title |
+|---|---|---|
+| pmid 43019874 | mtDNA variant and anaesthesia complications, no longevity phenotype | Inhaled anesthetics and severe neurologic complications in individuals with Venezuelan maternal ancestry carrying the mitochondrial MT-ND4 m.11232 T > C variant: a systematic review. |
+| pmid 43020836 | biological-age clock, a class track E keeps out of scoring | The blood proteome predicts the impact of circulating factors on age-related mitochondrial health. |
+| pmid 43021119 | monogenic disease report, no longevity phenotype | MYOCD-associated congenital megabladder: novel variants and insights into prenatal phenotypic diversity. |
+| pmid 43021519 | review, no locus | EXPRESS: The Medin-Aorta-Brain Axis: Linking Vascular Aging to Alzheimer's Disease. |
+| pmid 43021545 | out of scope (animal, plant, clinical or non-genetic) | Correction of acid ceramidase deficiency by intravenous AAV-mediated gene therapy in symptomatic P361R-Farber mice. |
+| pmid 43021678 | review, no locus | Contemporary pharmacotherapy for familial hypercholesterolemia in children and adolescents. |
+| pmid 43021911 | review, no locus | Diagnosis of Acquired Aplastic Anemia. |
+| pmid 43022123 | review, no locus | Diagnosis of inherited bone marrow failure syndromes. |
+| pmid 43023584 | review, no locus | Convergent Geroscience: Integrating Social, Population, and Biological Aging Research to Healthy Aging. |
+| pmid 43025538 | out of scope (animal, plant, clinical or non-genetic) | Association of midbrain IL-6 with impaired nest-building behavior and therapeutic effect of Ninjin'yoeito in old hindlimb-unloading mice. |
+| pmid 43025618 | out of scope (animal, plant, clinical or non-genetic) | Functional contribution of TERT to mitigation of endometrial stromal cell senescence by metformin through modulation of the AKT/mTOR axis. |
+| pmid 43025734 | biological-age clock, a class track E keeps out of scoring | Using an Artificial Intelligence ECG-Derived Biological Age for Risk Stratification of Patients Undergoing Surgical Aortic Valve Replacement. |
+| pmid 43026342 | review, no locus | The many facets of human brain asymmetry. |
+| pmid 43026499 | monogenic disease cohort, no longevity phenotype | Genetic etiology associated with post‑transplant outcomes in a retrospective cohort of pediatric kidney transplant recipients based on genomics analysis. |
+| pmid 43027032 | out of scope (animal, plant, clinical or non-genetic) | Prominent Hepatic Injury in 56-Week-Old Female Mice with Cyclic Guanosine Monophosphate-Adenosine Monophosphate Synthase (cGAS) Deficient. |
+| pmid 43027141 | out of scope (animal, plant, clinical or non-genetic) | Mitochondrial Genome Variation in Breast Muscle of Tibetan Fragrant Chickens Across an Altitudinal Gradient and Its Association with Meat Quality. |
+| pmid 43027364 | out of scope (animal, plant, clinical or non-genetic) | Cross-Species and Cell-Type-Specific H3K27ac Dynamics Link Brain Aging to Alzheimer's Disease Genes. |
+| pmid 43027374 | out of scope (animal, plant, clinical or non-genetic) | T Cell Transcriptomes Are Dynamically Modulated by Microgravity In Vivo Along Core Gene Networks and Key Molecular Pathways. |
+| pmid 43027711 | review, no locus | Converging Paths: Artificial Intelligence for Integrating Biological and Digital Biomarkers in Personalized Longevity Medicine. |
+| pmid 43027751 | out of scope (animal, plant, clinical or non-genetic) | Integrated Multi-Omics Convergence Scoring Reveals Modular Network Architecture with Age-Associated Mitochondrial Signatures in Sarcopenia. |
+| pmid 43027924 | out of scope (animal, plant, clinical or non-genetic) | Emerging Computational Advances in Simulating PCSK9 Variant Dynamics for Therapeutic Design Against Hypercholesterolemia. |
+| pmid 43028030 | out of scope (animal, plant, clinical or non-genetic) | LED Photobiomodulation at 630 nm Attenuates TNF-α-Induced Senescence-Associated Responses in Association with Mitochondrial Homeostasis. |
+| pmid 43028031 | out of scope (animal, plant, clinical or non-genetic) | Combined Effect of Hadron Therapy and PCSK9 Inhibition Therapy on the Immune Response in STK11-Deficient Lung Adenocarcinoma. |
+| pmid 43028214 | out of scope (animal, plant, clinical or non-genetic) | Smilax glabra Roxb. Flavonoids Attenuate D-Galactose-Induced Cardiac Alterations and Are Associated with Modulation of the PGC-1α/NRF1/TFAM Axis and PINK1/Parkin Signaling Pathway in an AMPK-Associated Manner. |
+| pmid 43028576 | trait genetics (menopause), no longevity locus | Cross-Phenotype Genomics Reveals Heterogeneous Genetic Susceptibility Architecture Relevant to Menopause. |
+| pmid 43030148 | out of scope (animal, plant, clinical or non-genetic) | Effects of a Nutrigenetic Diet on Fat Mass Loss, Insulin Resistance, and Subclinical Inflammation in Adults with Abdominal Obesity: A Randomized Controlled Trial-The INNUPREC Study. |
+| pmid 43032273 | monogenic disease report, no longevity phenotype | Diagnostic Odyssey in a Patient with Incontinentia Pigmenti Elucidated by Optical Genome Mapping: A Case Report. |
+| pmid 43032631 | review, no locus | The cGAS-STING pathway in traumatic brain injury: mechanisms of neuroinflammation and therapeutic strategies. |
+| pmid 43032732 | biological-age clock, a class track E keeps out of scoring | Dietary Fiber Intake and Phenotypic Age Acceleration in United States Adults: A Nationally Representative Cross-Sectional Study. |
+| pmid 43032816 | biological-age clock, a class track E keeps out of scoring | Correction to: Deep learning-derived biological age from preoperative chest radiographs predicts mortality following surgical and transcatheter procedures for structural heart disease beyond EuroSCORE II. |
+| pmid 43034942 | out of scope (animal, plant, clinical or non-genetic) | Aryl hydrocarbon receptor cytoplasmic retention by p27^Kip1 in senescent astrocytes. |
+| pmid 43035371 | out of scope (animal, plant, clinical or non-genetic) | Asprosin Promotes Vascular Endothelial Senescence Through STING Pathway Activation Mediated by mtROS-mtDNA Leakage Axis. |
+| pmid 43035561 | trait GWAS (hippocampal volume; rs7315280 near TESC, not a seed locus), abstract read | Protective effects of rs7315280 on hippocampal volume and cognitive decline in aging by its enhancer activity regulating TESC expression. |
+| pmid 43035611 | polygenic score for a disease and mortality, no locus | Polygenic Risk for Type 2 Diabetes, Multiple Risk Factor Control and Cardiovascular and Non-Cardiovascular Mortality. |
+| pmid 43035828 | review, no locus | Recombinant AAV-Based Gene Therapy for Central Nervous System Disorders: From Gene Replacement to Precision Editing and Circuit Modulation. |
+| pmid 43037911 | out of scope (animal, plant, clinical or non-genetic) | Adhesion Correction Following Non-Toxic Treatment of Spontaneous Tumors in Mice. |
+| pmid 43038105 | out of scope (animal, plant, clinical or non-genetic) | Protocol for CRISPR-Cas9 gene editing of murine neutrophils for in vitro and in vivo mechanistic studies. |

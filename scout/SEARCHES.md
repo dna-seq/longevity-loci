@@ -129,6 +129,11 @@ papers were.
 | 2026-11-13 | 2026-10-20 → 2026-11-13 | A-resource | 0 | 0 | 0 |
 | 2026-11-13 | 2026-10-20 → 2026-11-13 | A-db | 5 | 5 | 0 |
 | 2026-11-13 | 2026-10-20 → 2026-11-13 | A-pgs | 4 | 1 (3 already screened in track E) | 0 |
+| 2026-11-17 | 2026-10-30 → 2026-11-17 | A-resource | 0 | 0 | 0 |
+| 2026-11-17 | 2026-10-30 → 2026-11-17 | A-db | 3 | 0 | 0 |
+| 2026-11-17 | 2026-10-30 → 2026-11-17 | A-pgs | 4 | 1 | 0 |
+
+The 2026-11-17 rows are the second pass, reported once under Tracks F–K, Runs.
 
 Six new records, listed with their verdicts in `scout/screened.md`, at title level: single-cell and glycoproteome
 atlases (animal or tissue ageing), a Medicaid waiver study, a kidney-senescence bibliometric map, and a prostate
@@ -160,6 +165,10 @@ the healthy-ageing GWAS (35927272) and most of the polygenic-score papers.
 |---|---|---|---|---|---|
 | 2026-11-13 | 2026-10-20 → 2026-11-13 | B-gwas | 7 | 2 (5 already screened in tracks E and A) | 0 |
 | 2026-11-13 | the whole Catalog list | B-catalog | 79 studies, 37 PubMed ids | 1 from 2026 (9 older ids not in any track) | 0 |
+| 2026-11-17 | 2026-10-30 → 2026-11-17 | B-gwas | 6 | 0 | 0 |
+| 2026-11-17 | the whole Catalog list | B-catalog | 79 studies, 37 PubMed ids | 0 | 0 |
+
+The 2026-11-17 rows are the second pass, reported once under Tracks F–K, Runs.
 
 The two new B-gwas records: a maize nickel-transport GWAS, and a Lewy body disease GWAS (a disease, not longevity;
 no locus to queue). The new Catalog record is pmid 42880286 (Atanur SS et al., "A phenome-wide structural variant map
@@ -201,6 +210,13 @@ haematopoiesis and mtDNA, which name no longevity term. Left out: a single super
 | 2026-11-13 | 2026-10-20 → 2026-11-13 | C-mito | 14 | 5 | 0 |
 | 2026-11-13 | 2026-10-20 → 2026-11-13 | C-monogenic | 5 | 5 | 0 |
 | 2026-11-13 | 2026-10-20 → 2026-11-13 | C-somatic-germline | 15 | 13 | 0 |
+| 2026-11-17 | 2026-10-30 → 2026-11-17 | C-rare | 8 | 1 | 0 |
+| 2026-11-17 | 2026-10-30 → 2026-11-17 | C-protect-2 | 9 | 5 | 0 |
+| 2026-11-17 | 2026-10-30 → 2026-11-17 | C-mito | 10 | 2 | 0 |
+| 2026-11-17 | 2026-10-30 → 2026-11-17 | C-monogenic | 6 | 3 | 0 |
+| 2026-11-17 | 2026-10-30 → 2026-11-17 | C-somatic-germline | 9 | 3 | 0 |
+
+The 2026-11-17 rows are the second pass, reported once under Tracks F–K, Runs.
 
 80 new records, in `scout/screened.md`, at title level. Most are animal or mechanistic work (mouse APOE Christchurch,
 Klotho reviews, atherosclerosis models). The human genetic ones are disease genetics with no longevity phenotype
@@ -236,6 +252,11 @@ germline clause does not name.
 | 2026-11-13 | 2026-10-20 → 2026-11-13 | D-healthspan | 8 | 3 | 0 |
 | 2026-11-13 | 2026-10-20 → 2026-11-13 | D-clocks | 43 | 36 | 0 |
 | 2026-11-13 | 2026-10-20 → 2026-11-13 | D-multimorbidity | 40 | 37 | 0 |
+| 2026-11-17 | 2026-10-30 → 2026-11-17 | D-healthspan | 7 | 1 | 0 |
+| 2026-11-17 | 2026-10-30 → 2026-11-17 | D-clocks | 30 | 6 | 0 |
+| 2026-11-17 | 2026-10-30 → 2026-11-17 | D-multimorbidity-2 | 4 | 1 | 0 |
+
+The 2026-11-17 rows are the second pass, reported once under Tracks F–K, Runs.
 
 76 new records, in `scout/screened.md`, at title level. D-clocks' are biological-age, clock and organ-age studies
 and reviews, none with a germline locus (the track E rule keeps clock GWAS out of scoring in any case); D-multimorbidity's
@@ -288,12 +309,31 @@ gene with no lifespan word.
 | 2026-11-13 | 2026-10-20 → 2026-11-13 | J-models | 14 | 10 | 0 |
 | 2026-11-13 | 2026-10-20 → 2026-11-13 | J-seedgene | 21 | 20 | 0 |
 | 2026-11-13 | 2026-10-20 → 2026-11-13 | K-age | 2 | 1 | 0 |
+| 2026-11-17 | 2026-10-30 → 2026-11-17 | S-seedgene | 7 | 0 | 0 |
+| 2026-11-17 | 2026-10-30 → 2026-11-17 | F-reporting | 3 | 1 | 0 |
+| 2026-11-17 | 2026-10-30 → 2026-11-17 | G-finemap | 10 | 3 | 0 |
+| 2026-11-17 | 2026-10-30 → 2026-11-17 | H-pleiotropy | 4 | 0 | 0 |
+| 2026-11-17 | 2026-10-30 → 2026-11-17 | I-concepts | 19 | 2 | 0 |
+| 2026-11-17 | 2026-10-30 → 2026-11-17 | J-models | 12 | 1 | 0 |
+| 2026-11-17 | 2026-10-30 → 2026-11-17 | J-seedgene | 18 | 7 | 0 |
+| 2026-11-17 | 2026-10-30 → 2026-11-17 | K-age | 1 | 0 | 0 |
 
 81 new records, in `scout/screened.md`, at title level: reviews, mechanistic and animal ageing work, and trait genetics
 (Mendelian randomization and genomic SEM of vascular, adipose and bone ageing) with no longevity locus. One is noted
 for track J and not queued: pmid 42995887, "STING deficiency extends median lifespan and mitigates age-related liver
 pathology in mice"; STING is cGAS's partner and CGAS is a seed gene, but the paper tests no human variant. No new locus
 in the sources queried.
+
+**Second pass, 2026-11-17** (window 2026-10-30 → 2026-11-17, about two weeks' overlap with the first; every query
+as written, C-protect-2 and D-multimorbidity-2 in place of their first versions). Each query's own recall on its
+track's PMIDs is unchanged from 2026-11-13 (A-resource 5/53, A-db 3/53, A-pgs 12/53, B-gwas 32/55, C-rare 27/94,
+C-protect-2 20/94, D-multimorbidity-2 6/60, and F to K as in the table above). 153 distinct records, 116 already
+screened, 37 new, in `scout/screened.md` at title level: reviews, animal and mechanistic work, clinical genetics, and
+four biological-age clocks. One human GWAS read at abstract level: pmid 43035561 (Suo X et al., *Neurol Sci*, 2026 Nov
+16, doi 10.1007/s10072-026-09554-8), rs7315280 near TESC and hippocampal volume (meta P ≤ 1.37e-19 in UK Biobank and
+ENIGMA); neither the variant nor the gene is in the seed list, and the trait is not longevity, so not queued. The GWAS
+Catalog v2 (the four EFO ids of B-catalog) lists the same 79 studies under 37 PubMed ids, none new. H-pleiotropy,
+K-age, B-gwas and S-seedgene brought nothing new. No new locus in the sources queried.
 
 ### The queries as written 2026-11-10
 

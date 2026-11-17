@@ -7,7 +7,7 @@ person: "Make sure they commit all to notes, transcripts are not moving"). A fre
 
 ## In hand
 
-Nothing is half run. Every sweep so far is committed and pushed (last scout commits 06b9d98 and d8e0a08, 2026-11-16).
+Nothing is half run. Every sweep so far is committed and pushed.
 
 ## State of the work
 
@@ -20,19 +20,17 @@ Nothing is half run. Every sweep so far is committed and pushed (last scout comm
   only source of new work for the curator: a new paper on a row, or a second signal at a seed locus (D25.6).
 - **Track E** (2025–2026 papers and preprints): swept 2026-11-10 (window 2026-10-20 → 2026-11-10) and rerun
   2026-11-14 (window 2026-10-27 → 2026-11-14): 14 new records, nothing queued; GWAS Catalog v2 queried, no new study.
-- **Tracks A to D and F to K**: swept 2026-11-13 (window 2026-10-20 → 2026-11-13), no new locus. C-protect-2 and
+- **Tracks A to D and F to K**: swept 2026-11-13 (window 2026-10-20 → 2026-11-13) and again 2026-11-17 (window
+  2026-10-30 → 2026-11-17: 37 new records, nothing queued, the GWAS Catalog unchanged), no new locus. C-protect-2 and
   D-multimorbidity-2 replace their noisy first versions; S-seedgene (a watch on the seed genes) runs with every sweep.
 
 ## Next, in order
 
-1. **Second pass over A to D and F to K, with S-seedgene**, `unattended`, waits until 2026-11-17 (UTC): window from
-   2026-10-30 (about two weeks' overlap with the last) to the run date; same queries as in SEARCHES, a row per query
-   in each track's Runs table, new records into `screened.md`, recall unchanged unless a query changes (a changed
-   query is a new line with its reason).
-2. **Next track E run** after that: rerun from about 2026-10-31; look for PPR1366192's full text or published version
+1. **Next track E run**, `unattended`, waits until 2026-11-20 (a few days of new entries past the 2026-11-14 run): rerun from about 2026-10-31; look for PPR1366192's full text or published version
    (cognitive superagers' exome, rare HLA-B and HLA-DRB1 missense, no variant named); check the twelve unpublished
    preprints again for a published version (Chang's is PMID 42987714, found 2026-11-14); read Alvarez Sirvent 2026
    (v2) and Salazar (v3), newer versions not yet read.
+2. Then the third pass over A to D and F to K, from about 2026-11-03, waits until about 2026-11-24.
 3. Open, `unattended`: bioRxiv's and medRxiv's own listings, left out of both E runs (Europe PMC's preprint index
    stood in). The bioRxiv API is `https://api.biorxiv.org/details/{server}/{interval}`.
 
@@ -55,12 +53,10 @@ Nothing is half run. Every sweep so far is committed and pushed (last scout comm
 
 - Nothing. Full-text batch fetches go to the runner seat as a PMID list (the runner, 2026-11-10); none is owed.
 
-## Org move (2026-11-16)
+## Org move
 
-- The lead (640874040): a ticket for this seat may arrive from genie's secretary; **leave it unread and do not run the
-  org-move switch until the lead says the person has given the go.** A held-back embassy DM from that secretary,
-  640873745, arrived the same evening and is left unread on that instruction; once handled, its description (secrets
-  cut out) goes to `#embassy-review` as its line says.
+- 2026-11-17: the seats moved to the chat organisation desk-antonkulaga (the lead's commit acb4b4e); this seat is
+  punched in there. The old organisation's held-back message is moot.
 
 ## Learned
 
@@ -71,10 +67,8 @@ Nothing is half run. Every sweep so far is committed and pushed (last scout comm
 - Commit by path (`git commit --only -- <paths>`), never `-A`; the leak gate refuses machine paths in a commit.
 - Quota: stop at 95 % of the binding window with `watchdog.py wait-quota scout`; the repository's pace is full forward.
 - Daily line in `#longevity-loci>daily` at the first turn of a new day when scout work landed since the last one
-  (last posted 2026-11-15; the queue bookkeeping of 2026-11-16 is owed a line on 2026-11-17).
+  (last posted 2026-11-17).
 
 ## To file
 
 Nothing.
-
-- 2026-11-17: moved to the chat organisation desk-antonkulaga (bin/org-move.py).
