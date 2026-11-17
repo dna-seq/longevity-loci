@@ -16,7 +16,7 @@ Nothing in hand. Every upstream release up to today is read and, where it moves 
 - **Registry** `dna-seq/just-dna-registry`: read mark **v0.32.0** (5bc25d0), ledger `docs/UPSTREAM_REGISTRY.md`.
   Nothing here imports it; the plugin's server does. On 2026-11-16 the polygon served 0.30.0 (format 0.8.4) and
   production 0.31.0 (format 0.8.6), both compatible with our 0.8.6 client.
-- **Kit**: this clone's pin (`.claude/settings.local.json`, untracked) moved to **v0.1.227** on 2026-11-16 by
+- **Kit**: this clone's pin (`.claude/settings.local.json`, untracked) moved to **v0.1.231** on 2026-11-17 (v0.1.227 on 2026-11-16) by
   `move-to-tag.py --take`, on the lead's ask for the org move (rule 24 needs v0.1.226 or later; the machine's
   marketplace record already named v0.1.227, so v0.1.226 would have taken it back). The other seats of this clone
   move their own seats.
