@@ -7,18 +7,19 @@ person: "Make sure they commit all to notes, transcripts are not moving"). A fre
 
 ## In hand
 
-- **bioRxiv's own listing, 2026-04-01 → 2026-11-17**, the one part of the 2015–2026 backfill not screened: its download
-  was at about 5,000 of 49,428 records when the rest was committed (2026-11-17). `unattended`, with the next E run:
+- **bioRxiv's own listing, 2026-04-01 → 2026-11-17**, the one part of the 2015–2026 backfill not screened: restarted
+  2026-11-17 in month chunks (one file each); screen it when the files are in. `unattended`, with the next E run:
   fetch through `https://api.biorxiv.org/details/biorxiv/2026-04-01/2026-11-17/<cursor>`, filter on a longevity term
   and a genetic term (the rule in SEARCHES.md, Backfill), read the hits.
 
 ## State of the work
 
 - **Backfill 2015-01-01 → 2026-10-20** done 2026-11-17 (SEARCHES.md, Backfill; every record in
-  `scout/backfill_2015_2026.tsv`): 22,759 records, 45 queued (2 non-seed loci, 43 uncited papers on 18 rows), the nine
+  `scout/backfill_2015_2026.tsv`): 22,759 records, 45 queued (2 non-seed loci, 43 uncited papers on 18 rows), then
+  the Catalog's thirteen non-seed genome-wide lines and one medRxiv preprint after the advisor's review, the nine
   Catalog ids and Atanur 2026 answered. PubMed indexes medRxiv preprints with PMIDs: a preprint PMID can be a known
   paper's earlier version, so match versions before calling one new.
-- **Queue (`scout/queue.md`): the backfill's 12 entries open** (2026-11-17). Before them: Alvarez Sirvent 2026 (HLA-II fine-mapping, a preprint, Europe PMC
+- **Queue (`scout/queue.md`): the backfill's 13 entries open** (2026-11-17). Before them: Alvarez Sirvent 2026 (HLA-II fine-mapping, a preprint, Europe PMC
   PPR1306907), queued 2026-11-17 for rows 135 and 38, was closed by the curator the same day at abstract depth (0b389c2).
   The eight second-signal candidates (D25.6) were all taken by the
   curator as rows 162 to 169 under D39.14 (`second_signal_of`); each entry has a **Taken** line naming its row.
@@ -55,7 +56,8 @@ person: "Make sure they commit all to notes, transcripts are not moving"). A fre
   `TITLE:(...) NOT SRC:PPR`, Crossref's relation fields, and the bioRxiv API's `published` field.
 - **GWAS Catalog**: REST **v2** only (v1 answers 410), `/studies?efo_id=` for EFO_0007796, OBA_VT0005372,
   EFO_0009762 and EFO_0005056, pages of at most 500; compare the PMIDs against all PMIDs already screened or cited.
-- **Dedupe**: union the query outputs by PMID (and preprint id), drop those already in `screened.md`, then screen
+- **Dedupe**: union the query outputs by PMID (and preprint id), drop those already in `screened.md` and in
+  `backfill_2015_2026.tsv`, and match preprint PMIDs to published versions (PubMed indexes medRxiv), then screen
   the rest at title or abstract level; one row per record with its verdict.
 - A PMID is never taken from memory: only from a search result, its title checked.
 

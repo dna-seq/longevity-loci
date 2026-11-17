@@ -111,17 +111,49 @@ before mid-2017 for this query. Recall per query is unchanged from 2026-11-13 (r
    - PubMed indexes medRxiv preprints with PMIDs. 39132489 is the medRxiv version of Park 2025 (40021682), which
      rows cite.
 
-**Queued** (`scout/queue.md`, 2026-11-17): two loci outside every seed, at abstract depth, both needing the full text
+**Queued** (`scout/queue.md`, 2026-11-17): the Catalog entry (thirteen non-seed lines, above); two loci outside every seed, at abstract depth, both needing the full text
 for significance: rs1927465 between CYP26A1 and MYOF (Yashin 2018, LLFS, replicated in HRS) and Kashtanova 2026's WGS
 of 3,703 adults aged 90+ (CFAP46, MYO18B, TBC1D28). Then 43 uncited papers on 18 rows (row 38 named beside 159), one entry per row or group:
 APOE 9, FOXO3 11, KL 5, ABO 2, LPA 2, CETP 2, IL6 3 (other promoter SNPs), the telomere-length rows 3, HLA-DQB1 2, and one
 each for TFAM, CELSR2, EBF1, FTO, HTT, CDKN2B-AS1 and CHRNB4.
+
+**The cut for rule (b).** The readers returned 239 CAND-B lines. 43 went to the queue (one more, a medRxiv preprint, came
+from the listing). The rule was: the row's own variant or gene, against lifespan, longevity, survival to old age or
+all-cause mortality, in a population or longevity cohort; or functional work on the row's exact variant. What was
+cut, with its reason:
+
+- ageing-marker associations (telomere length, clocks, brain age, frailty) at rows outside the marker section, and
+  small telomere-length replications at the marker rows;
+- disease-cohort mortality (dialysis, cancer, heart failure, Huntington's, Down syndrome);
+- interaction-only and Mendelian-randomisation designs;
+- cognition or dementia outcomes;
+- frequency remarks without a test;
+- corrections and preprints of known papers.
+
+The lead asked for "any paper", so the cut is the scout's call. Every cut record is in the tsv with "CAND-B, not
+queued".
+
+**Checks on the readers.**
+
+- **Sample.** An independent second reader took 100 records drawn at random (seed 20261117) from the 2,417 flagged
+  records the readers rejected, and read each abstract whole. It found 0 misses and 5 borderline records, all
+  telomere-length studies (37487414, 38789417, 41965821, 28447668, 40844718).
+- **Alias rescan.** The gene pattern missed aliases: KL (two letters), FOXO3A, ApoE, IL-6, Lp(a), TOMM40, APOC1,
+  SH2B3, CHRNA3/5, CDKN2A, 9p21, huntingtin. A rescan with them, plus a longevity and a genetic term, ran over every
+  non-candidate record: 373 hits.
+  - 266 had already been read at abstract level by a reader.
+  - The 107 seen only by title or not at all were read by title. None ties a row variant to a lifespan, longevity
+    or mortality outcome; they are Klotho and cognition papers, ApoE and brain studies, and mouse work.
+  - One Klotho paper, 32444684, was added to row 73's entry.
+- **Records without text.** Records with neither title nor abstract are "unknown" in the tsv, not a verdict.
 
 **Read, not queued.** The judgement calls, with the reason for each:
 
 - **Gene-level burden genes.** The exome PTV-burden genes for lifespan (Liu 2022, 37117740: BRCA2, BRCA1, TET2, PPM1D,
   LDLR, EML2, DEDD2) and Park 2025's (40021682: TET2, ATM, BRCA1, BRCA2, ASXL1, CKMT1B; SKAT-O C1orf52, IDH2, RLIM).
   - Both papers are already in track C's candidate CSV, marked "non-rsID / gene-level".
+  - The CNV scans are the same non-SNP case: Danish nonagenarians' CNVs and mortality (26446717), Han Chinese
+    long-lived CNVs (29883365).
   - No seed is gene-level, so whether a burden gene can be a row is the lead's call. It is not a missed paper.
 - **Transcriptome and MR studies.**
   - Lifespan TWAS: TOMM40 and COASY, PPR1225305; haptoglobin, PPR185888.
@@ -141,7 +173,10 @@ OBA_VT0005372, EFO_0009762, EFO_0005056) were listed with `/api/v2/studies?pubme
 `/api/v2/associations?accession_id=`, 2026-11-17. None holds an association at P ≤ 5e-8 for lifespan, longevity,
 healthspan or death:
 
-- **17903295**, Framingham 100K: its one line at 1e-8 is rs10496265 for age at menopause.
+- **17903295**, Framingham 100K: **corrected the same day.** The four-term listing showed only GCST000096, whose one
+  line at 1e-8 is rs10496265 for age at menopause. Its other study, GCST000103 (morbidity-free survival, 558 people),
+  is mapped outside the four terms and holds rs32566 and rs1412337 at 2e-9 each. Both are queued with the Catalog
+  entry below. The first verdict, "no genome-wide line", was wrong for this id.
 - **20834067, 21612516, 22533364**, small longevity scans: none genome-wide.
 - **32772156**, SCZ and BD by parental lifespan: no associations listed.
 - **32915819**, a German cohort's "Death": no associations listed.
@@ -149,7 +184,20 @@ healthspan or death:
 - **34737426**, the same, mother and father still alive: no associations listed under these terms.
 - **35748965**, Finnish healthspan: 11 associations, none genome-wide.
 
-Not a missed locus.
+Apart from 17903295's two lines, not a missed locus.
+
+**The Catalog by position** (the lead's rule a, per locus rather than per paper):
+
+- Every association at P ≤ 5e-8 in the 77 studies under the four terms (181 lines, plus GCST000103's two) was
+  compared by GRCh38 position with the seed list (positions checked: rs429358 is 19:44,908,684 in both) and with
+  the rows' stated positions.
+- 149 lines sit at a seed or row rsID, 15 within 500 kb of a seed, and 6 carry no chromosome. Five of those six are
+  Wright 2019's `im:` lines; read as positions, their numbers fall at seeds 80, 57 and 46, but that is inferred from
+  the number alone.
+- Thirteen lines are 1.2 Mb or more from any seed. Six are in no track and seven are in track B's
+  `B_gwascatalog_gw_leads.csv` but were not seeded. All thirteen are queued as one entry for the curator and lead.
+- Position checks on the two other new-locus entries: rs1927465 and Kashtanova's genes were compared by name only
+  (the abstracts give no positions).
 
 **Atanur 2026** (pmid 42880286, *Cell*, the structural-variant PheWAS of 467,152 UK Biobank genomes):
 
@@ -160,15 +208,17 @@ Not a missed locus.
 
 **medRxiv's own listing**, 2026-04-01 → 2026-11-17 (`https://api.biorxiv.org/details/medrxiv/2026-04-01/2026-11-17/<cursor>`):
 
-- 14,210 records, 11,999 DOIs; 84 matched a longevity and a genetic term.
-- All 84 were read by title, and three by abstract. None was queued.
+- 14,210 records, 11,999 DOIs; 84 matched a longevity and a genetic term. They are in the tsv, `medrxiv` in the
+  queries column.
+- All 84 were read by title, and four by abstract. One was queued under row 96:
+  10.64898/2026.06.18.26355781, ApoE ε4 against incident dementia or death in the Million Veteran Program.
 - Alvarez Sirvent 2026 is the one already closed.
 - 10.64898/2026.11.10.26365445 ("Enrichment of Rare Exonic Variants in Cognitive Superagers from Centenarian Families",
   posted 2026-11-12) is very likely PPR1366192's work. The two are not yet matched; matching them is the next E run's
   task.
 
-**bioRxiv's own listing**, same interval: still downloading at commit time (about 5,000 of 49,428 records).
-**Not screened.** It goes to the next run.
+**bioRxiv's own listing**, same interval: restarted 2026-11-17 in month chunks that each write a file. **Not
+screened** at this commit, which leaves it unknown, not zero.
 
 ## Track E — 2025–2026 papers and preprints
 

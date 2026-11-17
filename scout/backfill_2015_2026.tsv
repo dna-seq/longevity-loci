@@ -2750,7 +2750,7 @@ record	window	queries	depth	verdict	title
 31728409	2015-01-01→2017-06-24	C-mito,E-heritability	rule	rule: no-longevity-term	
 32309575	2015-01-01→2017-06-24	J-models	rule	rule: no-genetic-design	
 32318124	2015-01-01→2017-06-24	D-healthspan	title, reader	other	A new approach to disentangle genetic and epigenetic components on disease comor
-36508510	2015-01-01→2017-06-24	A-db	abstract, reader	other	
+36508510	2015-01-01→2017-06-24	A-db	abstract, reader	unknown (no title or abstract)	
 36647296	2015-01-01→2017-06-24	S-seedgene	rule	rule: no-longevity-term	
 20301292	2017-06-25→2022-12-31	E-core	abstract, reader	disease-only	Pseudoxanthoma Elasticum.
 20301306	2017-06-25→2022-12-31	E-core	abstract, reader	disease-only	CLCN7-Related Osteopetrosis.
@@ -9398,7 +9398,7 @@ record	window	queries	depth	verdict	title
 35127137	2017-06-25→2022-12-31	E-core	abstract, reader	animal/plant	Age-specific survivorship and fecundity shape genetic diversity in marine fishes
 35128738	2017-06-25→2022-12-31	E-core	title, reader	disease-only	Nutrient-sensing amyloid metastasis.
 35129673	2017-06-25→2022-12-31	E-core	title, reader	non-genetic	ISSLS PRIZE in Clinical Science 2022: Epidemiology, risk factors and clinical im
-35129909	2017-06-25→2022-12-31	D-clocks	abstract, reader	other	
+35129909	2017-06-25→2022-12-31	D-clocks	abstract, reader	unknown (no title or abstract)	
 35130128	2017-06-25→2022-12-31	J-seedgene	rule	rule: nonhuman	
 35130181	2017-06-25→2022-12-31	J-seedgene	rule	rule: no-longevity-term	
 35132376	2017-06-25→2022-12-31	B-gwas,E-core,E-survival,H-pleiotropy	abstract, reader	mr-only	Association between Circulating Antioxidants and Longevity: Insight from Mendeli
@@ -13133,7 +13133,7 @@ PPR99574	2017-06-25→2022-12-31	E-preprint	abstract, reader	animal/plant	The DN
 37641825	2023-01-01→2026-10-20	E-core	title, reader	animal/plant	Genetic diversity and phylogenetic relationship of Angus herds in Hungary and an
 37641867	2023-01-01→2026-10-20	E-core	rule	rule: nonhuman	
 37642407	2023-01-01→2026-10-20	C-somatic-germline	abstract, reader	review/method	Enhanced mitochondrial genome analysis: bioinformatic and long-read sequencing a
-37643264	2023-01-01→2026-10-20	I-concepts	abstract, reader	other	
+37643264	2023-01-01→2026-10-20	I-concepts	abstract, reader	unknown (no title or abstract)	
 37643984	2023-01-01→2026-10-20	C-mito	rule	rule: no-longevity-term	
 37644276	2023-01-01→2026-10-20	E-core	rule	rule: nonhuman	
 37644339	2023-01-01→2026-10-20	J-models	rule	rule: no-genetic-design	
@@ -15608,7 +15608,7 @@ PPR99574	2017-06-25→2022-12-31	E-preprint	abstract, reader	animal/plant	The DN
 39310977	2023-01-01→2026-10-20	E-core	title, reader	non-genetic	Development of quaternary ammonium based acrylic copolymer antimicrobial coating
 39312260	2023-01-01→2026-10-20	E-core,J-models	title, reader	animal/plant	Mistranslating tRNA variants have anticodon- and sex-specific impacts on Drosoph
 39312382	2023-01-01→2026-10-20	C-somatic-germline,D-healthspan	abstract, reader	mr-only	The causal effect of telomere length on the risk of malignant lymphoma: A Mendel
-39312596	2023-01-01→2026-10-20	C-protect-2	abstract, reader	other	
+39312596	2023-01-01→2026-10-20	C-protect-2	abstract, reader	unknown (no title or abstract)	
 39313488	2023-01-01→2026-10-20	J-seedgene	rule	rule: nonhuman	
 39313624	2023-01-01→2026-10-20	C-mito	abstract, reader	mr-only	Mitochondrial DNA copy number associated dementia risk by somatic mutations and
 39313745	2023-01-01→2026-10-20	D-clocks,D-healthspan	abstract, reader	non-genetic	Probabilistic inference of epigenetic age acceleration from cellular dynamics.
@@ -15851,7 +15851,7 @@ PPR99574	2017-06-25→2022-12-31	E-preprint	abstract, reader	animal/plant	The DN
 39465349	2023-01-01→2026-10-20	S-seedgene	rule	rule: no-longevity-term	
 39465447	2023-01-01→2026-10-20	I-concepts	rule	rule: no-genetic-design	
 39466849	2023-01-01→2026-10-20	J-models	rule	rule: no-genetic-design	
-39466965	2023-01-01→2026-10-20	C-protect-2	abstract, reader	other	
+39466965	2023-01-01→2026-10-20	C-protect-2	abstract, reader	unknown (no title or abstract)	
 39466986	2023-01-01→2026-10-20	E-core	title, reader	non-genetic	Stable Zinc Metal Battery Development: Using Fibrous Zirconia for Rapid Surface
 39468638	2023-01-01→2026-10-20	C-monogenic,K-age	rule	rule: no-longevity-term	
 39468654	2023-01-01→2026-10-20	D-healthspan	rule	rule: no-genetic-design	
@@ -21285,7 +21285,7 @@ PPR99574	2017-06-25→2022-12-31	E-preprint	abstract, reader	animal/plant	The DN
 42639643	2023-01-01→2026-10-20	S-seedgene	abstract, reader	disease-only	Factors associated with intracerebral hemorrhage in confirmed cerebral amyloid a
 42640567	2023-01-01→2026-10-20	D-clocks	rule	rule: no-genetic-design	
 42640588	2023-01-01→2026-10-20	J-seedgene	rule	rule: no-longevity-term	
-42641033	2023-01-01→2026-10-20	C-protect-2	abstract, reader	other	
+42641033	2023-01-01→2026-10-20	C-protect-2	abstract, reader	unknown (no title or abstract)	
 42641764	2023-01-01→2026-10-20	E-core	title, reader	somatic	Somatic mutations in human ontogenesis and their impact on health.
 42642496	2023-01-01→2026-10-20	I-concepts	rule	rule: nonhuman	
 42642519	2023-01-01→2026-10-20	J-seedgene	rule	rule: nonhuman	
@@ -21561,7 +21561,7 @@ PPR99574	2017-06-25→2022-12-31	E-preprint	abstract, reader	animal/plant	The DN
 42770364	2023-01-01→2026-10-20	J-models	rule	rule: no-genetic-design	
 42770545	2023-01-01→2026-10-20	D-multimorbidity-2	rule	rule: no-longevity-term	
 42770547	2023-01-01→2026-10-20	C-protect-2	rule	rule: no-longevity-term	
-42771742	2023-01-01→2026-10-20	C-protect-2	abstract, reader	other	
+42771742	2023-01-01→2026-10-20	C-protect-2	abstract, reader	unknown (no title or abstract)	
 42772029	2023-01-01→2026-10-20	E-core	abstract, reader	animal/plant	Genome-wide identification of MtTCTPs and functional analysis of MtTCTP3 as a po
 42772653	2023-01-01→2026-10-20	E-heritability	rule	rule: no-longevity-term	
 42772823	2023-01-01→2026-10-20	I-concepts	rule	rule: no-genetic-design	
@@ -22758,3 +22758,87 @@ PPR998276	2023-01-01→2026-10-20	E-preprint	rule	rule: no-longevity-term
 PPR999022	2023-01-01→2026-10-20	E-preprint	title, reader	non-genetic	De novo variants in<i>KDM2A</i>cause a syndromic neurodevelopmental disorder
 PPR999127	2023-01-01→2026-10-20	E-preprint	rule	rule: no-longevity-term	
 PPR999315	2023-01-01→2026-10-20	E-preprint	rule	rule: no-longevity-term	
+doi-10.64898/2026.04.03.26349984	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Genomic ascertainment of PALB2-related cancer predisposition
+doi-10.64898/2026.04.07.26350301	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Longitudinal insights into dynamic patterns and cumulative burdens of biological
+doi-10.64898/2026.04.14.26350864	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Pre-illness Clonal Hematopoiesis of Indeterminate Potential is Associated with I
+doi-10.64898/2026.04.14.26350891	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Semaglutide is associated with stiffness improvement and broad liver benefits wi
+doi-10.64898/2026.04.16.26351020	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Impact of surveillance colonoscopy on colorectal cancer incidence and mortality 
+doi-10.64898/2026.04.22.26351480	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Persistent Atrial Myopathy Despite Ventricular Recovery: Prognostic Significance
+doi-10.64898/2026.04.23.26351626	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Shared Risk Genes and Casual Relationships across Sex Hormone Related Traits and
+doi-10.64898/2026.04.29.26352020	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	The neuropathology of 'dementia epileptica'
+doi-10.64898/2026.04.21.26351327	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Pain across the lifespan: global and regional reference curves from 6.1 million 
+doi-10.64898/2026.05.06.26352509	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Determinants and long-term outcomes of COVID-19 undervaccination: a cohort study
+doi-10.64898/2026.05.05.26352435	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Hypertrophic cardiomyopathy: a genome wide association meta-analysis and polygen
+doi-10.64898/2026.05.08.26352767	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	MRI reveals the hierarchical organization of abdominal biological aging from sha
+doi-10.64898/2026.05.11.26352948	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Echocardiographic Characteristics, Measures of Severity and Natural History of I
+doi-10.64898/2026.05.18.26353387	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Delayed Arousal Response to Sleep Apnea Encodes Mortality
+doi-10.64898/2026.05.15.26353316	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Differences in Family Dementia Caregiver Needs and Preferences Across the Lifesp
+doi-10.64898/2026.05.20.26353741	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Left Atrial Stiffness Trajectories Identify Distinct Prognostic Phenotypes in He
+doi-10.1101/2022.08.19.22278950	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Estimating bone marrow adiposity from head MRI and identifying its genetic archi
+doi-10.64898/2026.03.05.26347710	medRxiv 2026-04-01→2026-11-17	medrxiv	abstract, scout	read, not queued	Identifying single-nucleotide polymorphisms (SNPs) intersecting Alzheimer diseas
+doi-10.64898/2026.05.20.26353506	medRxiv 2026-04-01→2026-11-17	medrxiv	abstract, scout	read, not queued	Centenarians and Oldest Olds in Liguria - COOL: a multidisciplinary study to inv
+doi-10.64898/2026.05.28.26354392	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Association of Clonal Hematopoiesis with Total and Cause-Specific Mortality Amon
+doi-10.64898/2026.06.02.26354684	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Oxygen extraction fraction brain charts for human lifespan and application for b
+doi-10.64898/2026.06.05.26354974	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	ECG-derived age deviation predicts cardiovascular diseases across lead configura
+doi-10.64898/2026.06.08.26355179	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	An Overlooked Signal on Routine Bone Scans: Soft Tissue Uptake, Mortality and Ca
+doi-10.64898/2026.06.09.26355266	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Beyond event-rate enrichment: proteomic risk scores for mechanism-aware preventi
+doi-10.64898/2026.06.09.26354660	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Age-specific burden of medically attended respiratory virus disease in high-inco
+doi-10.64898/2026.06.14.26355611	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Scalable estimation of temporal clustering in accelerometry: a kernel-independen
+doi-10.64898/2026.06.10.26355393	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Artificial Intelligence-Based Detection of Airway Mucus Plugs on CT and Associat
+doi-10.64898/2026.06.05.26354839	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Macrophage-targeted glucocorticoid prodrug resolves acute inflammation while pre
+doi-10.64898/2026.02.14.26346321	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Plasma Proteomic Analysis of APOE ϵ4 Homozygotes Identifies Preclinical Alzheime
+doi-10.64898/2026.06.18.26355987	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Genetic liability for endometriosis associates with pain, inflammatory, and meta
+doi-10.64898/2026.06.18.26355781	medRxiv 2026-04-01→2026-11-17	medrxiv	abstract, scout	queued	Level of Physical Activity and ApoE Status - Effects on Alzheimer's Disease and 
+doi-10.64898/2025.12.26.25343061	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Causally-anchored multi-omic deep learning recovers exercise-responsive and agei
+doi-10.64898/2026.06.24.26356423	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Optimal vaccination in aging populations under age-dependent infection fatality 
+doi-10.64898/2026.06.25.26356630	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Fibrosis-4 Index and Long-Term Cardiovascular Outcomes in Primary Aldosteronism
+doi-10.64898/2026.06.25.26356450	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Aortic Geometric Atlas: Centile-Based Reference Charts and Pathological Signatur
+doi-10.64898/2026.07.06.26357399	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Social and spatial disparities in heat-related mortality in Italy: a nationwide 
+doi-10.64898/2026.07.07.26357471	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Placental DNA methylation captures shared and trait-specific genetic susceptibil
+doi-10.1101/2025.09.17.25336027	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Domains of Frailty as Early Risk Factors for Alzheimer's Disease -- Genetic and 
+doi-10.64898/2026.02.07.26345812	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Trends in Dental Care Visits Across the Lifespan Before and During the COVID-19 
+doi-10.1101/2024.05.31.24308260	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Multi-Polygenic prediction of Frailty and its Trajectories highlights Chronic Pa
+doi-10.64898/2026.07.22.26358662	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Effect of household water treatment and hygiene promotion integration on outpati
+doi-10.64898/2026.07.25.26358937	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Public Preferences for End-of-Life Timing in Alzheimer Disease and Related Demen
+doi-10.64898/2026.08.03.26359544	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Effect of five years of biannual azithromycin mass drug administration on enteri
+doi-10.64898/2026.08.07.26359993	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	DNA Methylation Biomarkers Capture Residual Biological Risk Beyond PREVENT
+doi-10.64898/2026.08.09.26360041	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Racial differences in lifetime healthcare costs associated with obesity-related 
+doi-10.64898/2026.08.11.26359568	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	TMEM106B haplotypes show distinct associations with tau and TDP-43 pathologies i
+doi-10.1101/2025.10.14.25337828	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	State-level retrospective analysis of the burden of emergency and operative cond
+doi-10.64898/2026.08.17.26360566	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Effects of Fingertip Vibrotactile Stimulation on Postural Control in Community-D
+doi-10.64898/2026.08.13.26359723	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	NutrIA: Development and Internal Validation of a Hybrid Clinical Decision Suppor
+doi-10.64898/2026.08.18.26360736	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Mortality risk and burden associated with hydroclimate whiplash in the United St
+doi-10.1101/2025.02.02.25321330	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Fine-mapping reveals four TMEM106B haplotypes associated with neurodegenerative 
+doi-10.64898/2026.08.12.26360246	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Effects of Opioid-free Anaesthesia on Postoperative Delirium after Gastrointesti
+doi-10.64898/2026.08.19.26360848	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Polypharmacy and mortality in older persons: findings from a sub-cohort of SABE 
+doi-10.64898/2026.08.24.26361177	medRxiv 2026-04-01→2026-11-17	medrxiv	-	known (screened, queue closed)	Fine-mapping HLA-II haplotypes in Alzheimer's disease and healthy longevity reve
+doi-10.64898/2025.12.09.25341901	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Brain size links neurodevelopment to neurodegeneration in Parkinson's disease
+doi-10.64898/2026.08.29.26361714	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Mapping the Health Burden of Neighbourhood Deprivation: Neurobiological Evidence
+doi-10.64898/2026.09.02.26361780	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	MAP3K7 Loss of Function Causes Dilated Cardiomyopathy
+doi-10.64898/2026.09.01.26361997	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Cerebral Small Vessel Disease and Risk of Cardiovascular Events and All-Cause Mo
+doi-10.64898/2026.09.03.26361336	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Underutilization of Lipoprotein(a) Testing and Its Association with Coronary Int
+doi-10.64898/2026.09.04.26362260	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Aggregation of mortality data by place and cause mask underlying trends in COVID
+doi-10.64898/2026.09.03.26362216	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Sex Differences in the Associations between Education, Neuropathology, and Cogni
+doi-10.64898/2026.09.08.26362416	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Childhood trauma, accelerated biological aging and chronic pain across two popul
+doi-10.64898/2026.09.07.26362475	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Right and Left Bundle Branch Block in the General Population: Structural Heart F
+doi-10.1101/2025.03.03.25323242	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Shaping sensory-association axis: genetics, transcriptomics, and relation to neu
+doi-10.64898/2026.09.04.26362245	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Healthy vaccinee effect in SARS-CoV-2 vaccinees without documented infection
+doi-10.64898/2026.03.16.26348526	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	CARDIAC-FM: A Generalizable Multimodal Foundation Model Integrating ECG and Card
+doi-10.64898/2026.09.10.26360585	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Pathway-specific polygenic risk scores reveal underlying mechanisms of cerebral 
+doi-10.1101/2024.08.16.24312130	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Emergency Care in India: A Retrospective Cross-sectional Analysis of Health Mana
+doi-10.64898/2026.09.18.26363376	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Centenarians maintain cognition by resisting amyloid-β or decoupling it from tau
+doi-10.64898/2026.09.23.26363212	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	High-intensity progressive resistance training to prevent falls in community-dwe
+doi-10.64898/2026.09.25.26364029	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Clinical history shapes the predictive value of polygenic risk
+doi-10.64898/2026.09.28.26364208	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Deep learning cardiac motion analysis reveals the dynamic pathophysiology and ge
+doi-10.64898/2026.10.01.26364419	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Increased burden of endogenous viral elements in Alzheimer's Disease compared to
+doi-10.64898/2026.10.03.26364638	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Pallidal Local Field Potentials markers of dystonia aetiology and severity in ch
+doi-10.64898/2026.10.02.26363145	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Non-invasive detection of mutagenic exposure to aristolochic acid using ultra-de
+doi-10.64898/2026.10.20.26363947	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Genetic Modifiers of Age at Onset for Parkinson's Disease in European Population
+doi-10.64898/2026.10.21.26366146	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Genetic susceptibility to Lewy body disease and the distribution of Lewy patholo
+doi-10.64898/2026.10.21.26366159	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	ECG-Derived Synthetic Left Ventricular Mechanics Predict Mortality After Acute M
+doi-10.64898/2026.10.26.26366513	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Study protocol for a prospective multicenter longitudinal cohort study on progre
+doi-10.64898/2026.10.27.26366640	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Nasal Epigenome-Wide Association Study of Respiratory and Allergic Biomarkers in
+doi-10.64898/2025.12.19.25342655	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Reduced POLD3 Expression Induces DNA Damage and Telomere Shortening in Colorecta
+doi-10.64898/2026.10.30.26366900	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Dyslexia extends beyond reading difficulties: genetic links with social function
+doi-10.64898/2026.11.10.26365445	medRxiv 2026-04-01→2026-11-17	medrxiv	abstract, scout	read, not queued	Enrichment of Rare Exonic Variants in Cognitive Superagers from Centenarian Fami
+doi-10.64898/2026.11.12.26367778	medRxiv 2026-04-01→2026-11-17	medrxiv	title, scout	read, not queued	Unraveling the Lifespan Trajectory of White Matter Hypointensity on T1-weighted 

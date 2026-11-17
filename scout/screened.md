@@ -1,7 +1,8 @@
 # Screened
 
 Every record a sweep screened, with its verdict, so an overlapping window does not count it as new again. A record
-here is not new to a later run. Verdicts on titles, or on abstracts where `scout/SEARCHES.md` says so.
+here is not new to a later run. The 2015–2026 backfill's records are in `scout/backfill_2015_2026.tsv`, not repeated here; a dedupe
+reads both. Verdicts on titles, or on abstracts where `scout/SEARCHES.md` says so.
 
 ## Track E, run 2026-11-10 (window 2026-10-20 → 2026-11-10)
 
