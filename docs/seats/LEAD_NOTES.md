@@ -92,4 +92,5 @@ Still owed: reply to agents-kit/lead with each seat's notes commit, one `keys co
   sweep with its own queries, plus bioRxiv/medRxiv listings from April 2026 (Zulip 641384225). Window widened on the
   person's word to 2015-01-01 -> 2026-10-20 ("Lookup should cover the range past last date of HAGR base": Build 3
   released 2017-06-24, its newest cited PMID from 2015).
-  Owed back: counts and anything queued; then curator rows for whatever lands.
+  Done 2026-11-18 (c0a8726 to d77ae4a; D41): rule fixed after calibration (54/58), 47 uncited papers on 18 rows, rs1927465
+  and 13 Catalog lines queued; the curator works the queue. Next: read the rows it moves as a batch (adversarial reads).
