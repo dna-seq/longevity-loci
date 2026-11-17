@@ -30,8 +30,9 @@ docs/seats/MODULE_NOTES.md module/`); the last section keeps only what is still 
   that word.
 - **The org move (the lead, 640874040)**: a ticket for this seat may arrive from genie's secretary (another
   organisation). Leave it unread until the lead says the person has given the go; do not run the org-move switch
-  before. One such message arrived held back as secret-shaped (640873673, a direct message from
-  `desk-antonkulaga/secretary`): unread; its description for `#embassy-review`, secrets cut, is owed once handled.
+  before. Done 2026-11-17: the move finished by the org-move tool and this seat punched in again in
+  desk-antonkulaga from a handoff. The held-back ticket (640873673) was never read or used; its description could
+  not be posted (the new account may not post in the old organisation's `embassy-review`), so it is moot.
 - The registry token is never repeated, quoted or stored; it lives in the plugin's local state on this machine.
 
 ## Waits on whom
