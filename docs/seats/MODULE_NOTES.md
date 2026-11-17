@@ -101,7 +101,9 @@ eleven's was 101's proxy allele).
 
 ## Toolchain and registry
 
-- Plugin `just-module-creator` pinned by the liaison at v0.48.12 (enricher 0.8.7; format and compiler 0.8.6). The
+- Plugin `just-module-creator` pinned by the liaison at v0.48.13 (96ad6e1, 2026-11-17; enricher 0.8.7, format and
+  compiler 0.8.6). New in it: `registry_publish` refuses a spec whose module_spec.yaml names another name or version
+  than the publish (ours: longevitymap 2.0.0, matching); the log check reads every shipped `logs/` file. The
   liaison moves the pin; this seat reloads. The kit (seats) is at v0.1.227 since 2026-11-16.
 - Plugin caches live on the data volume (`remember_setting JUST_DNA_PIPELINES_CACHE_DIR`, user config); the
   Ensembl lane (about 15 GB) is there. `$HOME` is the small volume.
