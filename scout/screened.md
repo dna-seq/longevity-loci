@@ -405,3 +405,16 @@ here is not new to a later run. Verdicts on titles, or on abstracts where `scout
 | pmid 43035828 | review, no locus | Recombinant AAV-Based Gene Therapy for Central Nervous System Disorders: From Gene Replacement to Precision Editing and Circuit Modulation. |
 | pmid 43037911 | out of scope (animal, plant, clinical or non-genetic) | Adhesion Correction Following Non-Toxic Treatment of Spontaneous Tumors in Mice. |
 | pmid 43038105 | out of scope (animal, plant, clinical or non-genetic) | Protocol for CRISPR-Cas9 gene editing of murine neutrophils for in vitro and in vivo mechanistic studies. |
+
+## Track E, rerun 2026-11-17 (window 2026-10-31 → 2026-11-17; only records not screened before)
+
+| Record | Verdict | Title |
+|---|---|---|
+| pmid 43025773 | out of scope (brain networks, no genetics) | Personalized Functional Network Mapping Across the Lifespan. |
+| pmid 43030128 | out of scope (Drosophila diet) | Radish Red Anthocyanins Extract Attenuated High-Fat Diet-Induced Aging in Association with Improving Antioxidant Defense and Gut Microbiota-Metabolite Changes in Drosophila Melanogaster. |
+| pmid 43031535 | out of scope (clinical) | Glycated Haemoglobin Versus Serum Fructosamine in Assessing Glycaemic Control Amongst Type 2 Diabetes Mellitus Patients With Haemoglobin Variants: A Systematic Review. |
+| pmid 43033864 | review, no locus | Beyond Hematopoiesis: How Immune Are Hematopoietic Stem Cells? |
+| pmid 43034912 | out of scope (fish) | Local adaptation expands genetic variation in the thermal performance of a coastal fish: Implications for ocean warming. |
+| pmid 43035435 | out of scope (antibody longevity, not human lifespan) | Magnitude and longevity of antibody responses to key Plasmodium vivax Erythrocyte Binding-Like proteins in an amazonian cohort: a long-term follow-up study. |
+| pmid 43038169 | out of scope (mice) | Regenerative Stress Contributes to Higher Clonal Hematopoiesis with Myelodysplastic Features in Sickle Cell Disease Mice. |
+| PPR1367553 | out of scope (bat genome) | Elucidating Bat SuperImmunity: Insights from the Bent-Wing Bat Genome Assembly and Multi-Omics Analysis |

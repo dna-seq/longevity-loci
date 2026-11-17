@@ -71,6 +71,12 @@ of a three-week window); the screen removes non-human work by title and abstract
 | 2026-11-14 | 2026-10-27 → 2026-11-14 | E-heritability | 22 | 2 | 0 |
 | 2026-11-14 | 2026-10-27 → 2026-11-14 | E-preprint | 7 | 2 | 0 |
 | 2026-11-14 | 2026-10-27 → 2026-11-14 | S-seedgene | 9 | 0 | 0 |
+| 2026-11-17 | 2026-10-31 → 2026-11-17 | E-core | 24 | 4 | 0 |
+| 2026-11-17 | 2026-10-31 → 2026-11-17 | E-survival | 0 | 0 | 0 |
+| 2026-11-17 | 2026-10-31 → 2026-11-17 | E-clock | 8 | 0 | 0 |
+| 2026-11-17 | 2026-10-31 → 2026-11-17 | E-somatic-2 | 10 | 2 | 0 |
+| 2026-11-17 | 2026-10-31 → 2026-11-17 | E-heritability | 15 | 1 | 0 |
+| 2026-11-17 | 2026-10-31 → 2026-11-17 | E-preprint | 8 | 1 || 0; 1 from the version check below |
 
 66 unique records, listed with their verdicts in `scout/screened.md`; none was already in a track. **Not queried this
 run:** the GWAS Catalog, and bioRxiv's and medRxiv's own listings (Europe PMC's preprint index stood in for both
@@ -102,6 +108,16 @@ locus. The other twelve show no published version by any of the three (Sasaki's 
 by Crossref and Europe PMC only, since the bioRxiv API does not cover Research Square). Two have newer versions than
 the CSV may have read: Alvarez Sirvent 2026 (HLA-II fine-mapping) is at v2 and Salazar (TMEM106B) at v3, per the
 medRxiv API; neither version was read here.
+
+**Track E rerun, 2026-11-17** (window 2026-10-31 → 2026-11-17; S-seedgene ran the same day over 2026-10-30 → 2026-11-17
+with the other tracks). Recall on track E's 37 PMIDs as before (E-core 29, E-survival 4, E-clock 2, E-somatic-2 5,
+E-heritability 11). 59 distinct records, 51 already screened, 8 new, none in scope (`scout/screened.md`). The GWAS
+Catalog was queried the same day under track B, nothing new; bioRxiv's and medRxiv's own listings again left out.
+**Preprints checked again** the same three ways: no new published version (Chang's stays the one), PPR1366192 still
+a preprint (Europe PMC by DOI and title; medRxiv `published` NA). The newer versions read at abstract level through
+the medRxiv API: Salazar (TMEM106B, v3 2026-08-17), not a seed locus, nothing to queue; Alvarez Sirvent 2025 (v1
+only); **Alvarez Sirvent 2026 v2** (2026-10-09) names Hap-Y as HLA-DRB1*15:01, row 135's allele, which the row does not
+cite: queued for the curator as a preprint, its centenarian result for Hap-Y unknown from the abstract.
 
 ## Track A: LongevityMap, HAGR, the v1 audit
 

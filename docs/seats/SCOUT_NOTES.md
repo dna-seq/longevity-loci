@@ -11,27 +11,26 @@ Nothing is half run. Every sweep so far is committed and pushed.
 
 ## State of the work
 
-- **Queue (`scout/queue.md`): no open entry.** The eight second-signal candidates (D25.6) were all taken by the
+- **Queue (`scout/queue.md`): one open entry**, Alvarez Sirvent 2026 v2 (HLA-II fine-mapping, a preprint) for row 135,
+  queued 2026-11-17. Before it, the eight second-signal candidates (D25.6) were all taken by the
   curator as rows 162 to 169 under D39.14 (`second_signal_of`); each entry has a **Taken** line naming its row.
   pmid-42928374 (Pisanu 2026, FURIN at 81) is **Closed** with the curator's line (7741c02): its shared variant is with
   telomere length, not mvAge. Tiers of 162 to 169 were revised by the lead's batch-seventeen read (D40); the Taken
   lines say the tier at filing only, the rows say the current one.
 - **Every seed locus has a row** (the curator, 2026-11-16, dashboard `--left` 0). So the scout's sweeps are now the
   only source of new work for the curator: a new paper on a row, or a second signal at a seed locus (D25.6).
-- **Track E** (2025–2026 papers and preprints): swept 2026-11-10 (window 2026-10-20 → 2026-11-10) and rerun
-  2026-11-14 (window 2026-10-27 → 2026-11-14): 14 new records, nothing queued; GWAS Catalog v2 queried, no new study.
+- **Track E** (2025–2026 papers and preprints): swept 2026-11-10, rerun 2026-11-14 and 2026-11-17 (window 2026-10-31 →
+  2026-11-17: 8 new records; the preprint version check queued Alvarez Sirvent 2026 v2 for row 135).
 - **Tracks A to D and F to K**: swept 2026-11-13 (window 2026-10-20 → 2026-11-13) and again 2026-11-17 (window
   2026-10-30 → 2026-11-17: 37 new records, nothing queued, the GWAS Catalog unchanged), no new locus. C-protect-2 and
   D-multimorbidity-2 replace their noisy first versions; S-seedgene (a watch on the seed genes) runs with every sweep.
 
 ## Next, in order
 
-1. **Next track E run**, `unattended`, waits until 2026-11-20 (a few days of new entries past the 2026-11-14 run): rerun from about 2026-10-31; look for PPR1366192's full text or published version
-   (cognitive superagers' exome, rare HLA-B and HLA-DRB1 missense, no variant named); check the twelve unpublished
-   preprints again for a published version (Chang's is PMID 42987714, found 2026-11-14); read Alvarez Sirvent 2026
-   (v2) and Salazar (v3), newer versions not yet read.
-2. Then the third pass over A to D and F to K, from about 2026-11-03, waits until about 2026-11-24.
-3. Open, `unattended`: bioRxiv's and medRxiv's own listings, left out of both E runs (Europe PMC's preprint index
+1. **Next track E run**, `unattended`, waits until about 2026-11-24, with the third pass over A to D and F to K (from
+   about 2026-11-03). Look again for PPR1366192's published version (cognitive superagers' exome, HLA-B and HLA-DRB1
+   missense, no variant named) and the twelve unpublished preprints' (Chang's is PMID 42987714).
+2. Open, `unattended`: bioRxiv's and medRxiv's own listings, left out of every E run (Europe PMC's preprint index
    stood in). The bioRxiv API is `https://api.biorxiv.org/details/{server}/{interval}`.
 
 ## How a sweep is run (the scripts were scratch, not committed: rewrite them from this)

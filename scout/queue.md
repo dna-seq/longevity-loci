@@ -6,6 +6,21 @@ read), and every identifier the paper has. The curator takes it from here; the s
 
 ## Open
 
+### doi-10.64898/2026.08.24.26361177 — HLA-DRB1*15:01 (row 135): Hap-Y in centenarians, a preprint
+
+- **Paper:** Alvarez Sirvent D, Luimes MC, Tesi N, et al. "Fine-mapping HLA-II haplotypes in Alzheimer's disease and healthy longevity reveals
+  distinct associations with microglial HLA-II load and neuropathology." medRxiv, v1 2026-08-27, v2 2026-10-09, doi
+  10.64898/2026.08.24.26361177; not published (bioRxiv API `published` NA, Crossref and Europe PMC: none, 2026-11-17).
+  In track E's evidence CSV; row 135 does not cite it. Track E rerun, 2026-11-17.
+- **Why:** it fine-maps six HLA-II haplotypes in 443 cognitively healthy centenarians, 3,219 population controls and
+  2,391 AD patients (Dutch), and names Hap-Y as DRB1*15:01, row 135's allele. The abstract gives Hap-Y only a microglial
+  finding; whether Hap-Y differs between centenarians and controls, and in which direction, is not in it. A preprint:
+  never a replication; watched for its published version.
+- **Passage** (abstract, v2, medRxiv through the bioRxiv API, read 2026-11-17):
+  > Hap-Y (DRB1*15:01) showed increased microglial HLA-II activation in post-mortem brain tissue, independent of quantitative AD neuropathology.
+- **Unknown:** Hap-Y's centenarian-versus-control result; whether Hap-Y is the haplotype rs3135388 tags. Licence CC BY-NC-ND (the API's field).
+  Each is settled by the full text or its supplement.
+
 ### pmid-42928374 — FES/FURIN (locus 81): pleiotropy with severe mental disorders
 
 - **Closed** 2026-11-16 (curator, 7741c02): FURIN's shared variant is with telomere length (gLTL) in all three disorders, not mvAge (Table 2, corpus/pmid-42928374 q1 to q3), so row 81 is not re-read. The lead SNP sits in Supplementary Tables 2 to 15, which the publisher refuses (403), so whether it is rs6224, rs17514846 or a tag is unknown. Open access, CC BY-NC-ND.
