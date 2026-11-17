@@ -12,7 +12,14 @@ person: "Make sure they commit all to notes, transcripts are not moving"). A fre
   window, bioRxiv's and medRxiv's own listings from 2026-04. Queue (a) any genome-wide lifespan, longevity, healthspan
   or age-at-death locus not a seed locus, (b) any paper on an existing row that no row cites. Also a one-line verdict on
   the nine pre-2023 GWAS Catalog ids and on Atanur 2026 (pmid 42880286). Reply there with records, new, queued.
-  About 13,000 PubMed hits before dedupe. Scratch under the session's scratchpad `bf/`.
+  Widened by the person (lead, 641384713) to **2015-01-01 → 2026-10-20**, counts per window (2015-01-01 → 2017-06-24,
+  2017-06-25 → 2022-12-31, 2023-01-01 → 2026-10-20). State 2026-11-17: fetched (26,979 PubMed hits, 21,127 distinct,
+  20,823 not already screened or cited; 1,632 new Europe PMC preprints); abstracts classified by rule (human, a
+  longevity or ageing-marker term, a genetic design, a row rsID or gene); 2,743 flagged records out to reader agents at
+  abstract level and 2,770 longevity-genetic records at title level; the rest dropped by rule, counted by reason.
+  The nine Catalog ids: no genome-wide lifespan association under the four EFO terms (Lunetta 2007's one line at
+  1e-8 is age at menopause). Atanur 2026: abstract silent on age at death, Catalog study with no association: unknown.
+  If the scratch is lost, rerun from the queries in SEARCHES.md; nothing committed rests on it yet.
 
 ## State of the work
 
