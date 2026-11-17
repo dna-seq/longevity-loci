@@ -29,8 +29,17 @@ verdict_reason: >-
   (99th: power 0.98, P 0.22). Arking 2002's homozygote-only sub-claim alone fails Deelen's 90th with power
   (heterogeneity P 0.002; 99th 0.006, derived), and the row names that; but the row's claim is the combined model,
   which is not contradicted (D29.19). That conversion is the
-  curator's, from odds ratios of different designs, so the red flag is unknown and no token is set (D28.1, D26.3), and
-  D25.1's "explicitly contradicted" is not met. No study has tested the heterozygote contrast at scale. Mechanism
+  curator's, from odds ratios of different designs, so that red flag, Deelen's, is unknown and sets no token (D28.1, D26.3), and
+  D25.1's "explicitly contradicted" is not met. Amin 2022 has since tested it directly (the scout's backfill, D41): 642 people aged 85 in the
+  Newcastle 85+ Study against 18,295 UK Biobank participants from the same centre, heterozygotes 27.6 % against 27.1
+  %, P 0.79, OR 1.03 (pmid-34893828 q1 to q3). Against Arking 2005's heterozygote OR 1.57 that is D21's red flag,
+  same contrast on the same odds scale, no conversion: power 1.00, heterogeneity P 0.005 (derived; at half the effect
+  power 0.81, P 0.064), so `replication_failed`. D25.1 still does not make it D: Invidia 2010's Italian elderly carry
+  more heterozygotes than young controls, an independent sample passing the discovery's way. MrOS Sweden's 2,921
+  men find neither KL-VS SNP associated with all-cause or cardiovascular mortality (pmid-32581247), and Sardinia's
+  Blue Zone panel is null (pmid-39730495); KL-VS is absent in 874 Koreans (pmid-27560364); São Paulo's older adults
+  show 370SS with lower eGFR and no named mortality effect (pmid-32444684); serum klotho is higher in heterozygotes
+  and lower in homozygotes (pmid-27714549), the non-additive biology the claim assumes. Mechanism
   `legacy_candidate`: a v1 candidate row (R-LEGACY-1); nothing large shows what would carry it. Arking 2005 reports
   HDL cholesterol, systolic pressure and stroke by genotype in the same small sample; Belloy 2020 (20,928 case-control
   participants, Northwestern Europeans aged 60 or more) reports heterozygosity with less Alzheimer disease only in
@@ -50,7 +59,7 @@ verdict_reason: >-
   risk in APOE4 carriers (OR 0.75, P 7.4e-7), a protection conditional on another genotype; Shibata's UK Biobank
   null on cognition is named beside it.
 axes:
-  tier: {value: C, cites: [pmid-11792841#q1, pmid-11792841#q2, pmid-15677572#q1, pmid-15677572#q2, pmid-15677572#q5, pmid-15677572#q6, pmid-19421891#q1, pmid-19421891#q2, pmid-19421891#q3, pmid-28431289#q1, pmid-28431289#q2, pmid-24164579#q1, pmid-29890178#q1, pmid-29890178#q2, pmid-30633899#q1, pmid-30633899#q2, pmid-30642433#q299, pmid-30642433#q300, pmid-31413261#q173, pmid-31413261#q174, db-finngen-r11#q50, pmid-40021682#q72, pmid-30729179#q103, db-ensembl-116#q556, db-ensembl-116#q560]}
+  tier: {value: C, cites: [pmid-34893828#q1, pmid-34893828#q2, pmid-34893828#q3, pmid-32581247#q1, pmid-11792841#q1, pmid-11792841#q2, pmid-15677572#q1, pmid-15677572#q2, pmid-15677572#q5, pmid-15677572#q6, pmid-19421891#q1, pmid-19421891#q2, pmid-19421891#q3, pmid-28431289#q1, pmid-28431289#q2, pmid-24164579#q1, pmid-29890178#q1, pmid-29890178#q2, pmid-30633899#q1, pmid-30633899#q2, pmid-30642433#q299, pmid-30642433#q300, pmid-31413261#q173, pmid-31413261#q174, db-finngen-r11#q50, pmid-40021682#q72, pmid-30729179#q103, db-ensembl-116#q556, db-ensembl-116#q560]}
   mechanism: {value: legacy_candidate, cites: [pmid-11792841#q2, pmid-15677572#q3, pmid-15677572#q4, db-gwascatalog-2026.10.29#q475]}
   pleiotropy: {values: [nonadditive, "context:apoe4"], cites: [pmid-15677572#q6, pmid-32282020#q1, pmid-32282020#q2, pmid-39903109#q1, pmid-39903109#q2]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: [pmid-19421891#q3, pmid-28431289#q2]}
@@ -59,6 +68,7 @@ axes:
   actionability: {label: descriptive, cites: [db-gwascatalog-2026.10.29#q475]}
   context: {values: [], cites: [db-ensembl-116#q556, db-ensembl-116#q557, db-ensembl-116#q558]}
 flags:
+  - {token: replication_failed, cites: [pmid-34893828#q1, pmid-34893828#q2, pmid-15677572#q2]}
   - {token: legacy_longevitymap, cites: [pmid-11792841#q2]}
   - {token: "causal:C4", cites: [db-opentargets-26.09#q874, db-opentargets-26.09#q875, db-opentargets-26.09#q876, db-opentargets-26.09#q877, db-opentargets-26.09#q878]}
   - {token: "effector:E1", cites: [db-ensembl-116#q561, pmid-11792841#q3]}
