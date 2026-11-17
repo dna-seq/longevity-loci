@@ -8,8 +8,8 @@ moving"), so a fresh session can carry on from this file and the three ledgers a
 
 Nothing in hand. Every upstream release up to today is read and, where it moves our use, taken:
 
-- **Plugin** `dna-seq/just-module-creator`: pinned and installed at **v0.48.12** (`.claude/settings.json`),
-  ledger `docs/UPSTREAM_PLUGIN.md`, read mark v0.48.12.
+- **Plugin** `dna-seq/just-module-creator`: pinned and installed at **v0.48.13** (2026-11-17) (`.claude/settings.json`),
+  ledger `docs/UPSTREAM_PLUGIN.md`, read mark v0.48.13.
 - **Compiler trio**: `uv.lock` holds enricher **0.8.7**, compiler and format **0.8.6**; floors `>=0.8.7` / `>=0.8.6`,
   caps `<0.9`; polars and duckdb capped `<2`. Ledger `docs/UPSTREAM_COMPILER.md`, read mark v0.8.7. Suite 146 passed
   at the last move (a7bfed4).

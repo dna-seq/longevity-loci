@@ -12,7 +12,7 @@ file): `[seat.liaison.watch.plugin]` says each new tag.
 
 ## Read mark
 
-**`v0.48.12`**, the tag `.claude/settings.json` pins (2026-11-16). The first mark, `v0.48.0` (3dd8c2a), was
+**`v0.48.13`**, the tag `.claude/settings.json` pins (2026-11-17). The first mark, `v0.48.0` (3dd8c2a), was
 fast-forwarded: no release before it was read.
 
 **The pin does not bind on this machine.** The person's user settings declare the marketplace `just-dna` with no
@@ -22,7 +22,7 @@ ref, and that entry outranks the project's: the client refused `marketplace add 
 while the pin named v0.48.1; updated, it is 0.48.2 at `1b622ff`, the tag plus one notes commit, the same code.
 The person's answer (2026-11-06): drop the user-level entry, so the repository's pin binds; theirs to do,
 since it is their settings file. Still present on 2026-11-09, so the copy is updated by hand to the pinned
-release: `claude plugin update just-module-creator@just-dna --scope project` installed 0.48.12 (2026-11-16), the
+release: `claude plugin update just-module-creator@just-dna --scope project` installed 0.48.13 (2026-11-17), the
 tag or main's head plus notes commits.
 
 ## Backlog
@@ -57,6 +57,15 @@ registry 0.27.0, format 0.7.1, compiler 0.7.2. Our caps (`docs/UPSTREAM_COMPILER
 
 ## Inbound verdicts
 
+- **`v0.48.13`** (2026-11-17). Nothing breaks; toolchain unchanged (format and compiler 0.8.6, enricher 0.8.7,
+  registry 0.31.0, polars 1.44.2, duckdb 1.5.6); its enricher floor rises to 0.8.7, where our lock already is.
+  *For the module seat:* `registry_publish` refuses a spec whose `module_spec.yaml` names another version, or a
+  name differing by more than the rehearsal's `test_` prefix (F158); the pre-publish log check reads every file
+  that ships from `logs/`, not only `*.log` (F159); `compare_to_published` names a table on one side only
+  (`only_local`, `only_published`; F155). *A lever for the curator and the lead:* `search_trait_terms` finds a
+  trait's ontology term (EFO, MONDO, OBA, HP, current and obsolete) by name through OLS4, so a term id comes from
+  a search rather than memory (`lookup_identifier` only confirms an id already held). Install synced by hand; the
+  import is clean.
 - **`v0.48.12`** (2026-11-16). Its lock moves the enricher to 0.8.7 (floors unchanged), so ours follows the same
   day (`docs/UPSTREAM_COMPILER.md`). *For the module seat:* `compile_module` reports `toolchain`, the releases that
   wrote the artifact, and `compare_to_published` lists the published version's beside it, so a digest moved by
