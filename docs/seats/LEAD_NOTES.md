@@ -81,3 +81,8 @@ Still owed: reply to agents-kit/lead with each seat's notes commit, one `keys co
   secretary): #longevity-loci topics `state` (one kept message: results-page link, where it stands with marks, headline
   results, plan with owner and wait), `milestones` (one post per landed result), `decisions` (one question per message,
   numbered options and default), `general`, `daily`.
+
+- Milestones (the person, 2026-11-17: "you only did one on the movement, and none on preceding work"): one post in
+  `#longevity-loci>milestones` per landed result, 1 to 3 lines, finding first, a figure where it helps; the eleven
+  earlier results were posted that day. README rewritten the same day on their ask (d42de36); refresh its numbers
+  and figures (`scripts/readme_figures.py`) at each milestone that moves them.

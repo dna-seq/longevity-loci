@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- A README that presents the work: what the evidence says (tiers, mechanisms), how a row is made and checked, the six seats, the limits; its two figures drawn from `rows/` and the git history by `scripts/readme_figures.py`.
 - The module-creator plugin's pin moved to v0.48.13 (toolchain unchanged): `registry_publish` refuses a spec naming another version, the log check reads every shipped log file, `search_trait_terms` finds an ontology term by name.
 - `loci fetch-supp` renders an .html page (a journal's table page) as its visible text, a table row a line with tab-separated cells as a sheet's; it refused one before ("no text for a .html file"), which left Broer 2015's Table 3 uncached.
 - `loci check quotes` takes `--since REV` and `--key KEY` to check only those notes, prints a progress line per note on stderr, and normalises a supplement only when a quote is searched in it, searching first the files whose raw text holds the quote's longest word (an order hint; every file is still searched). A full run printed nothing for about 70 minutes, and a supplement quote normalised all of a note's files, 1,344 at one key (the curator's wish). The largest note (226 quotes over 1,344 supplement files) went from about 20 minutes to 100 seconds, all located.
