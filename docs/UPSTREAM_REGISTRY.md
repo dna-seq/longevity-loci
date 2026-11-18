@@ -12,7 +12,7 @@ file): `[seat.liaison.watch.registry]` says each new tag.
 
 ## Read mark
 
-**`v0.33.1`** (tagged 2026-11-18, `c965700`; seen 2026-11-18), read whole with `v0.33.0` (2026-11-18, `da53225`) (below); `v0.32.1` (2026-11-17), `v0.32.0` (2026-11-15), `v0.31.1` (2026-11-13), `v0.31.0` and `v0.30.1` before it. Before it, **`v0.30.0`** (2026-11-12): the release the module seat first ran against, its first rehearsal on the polygon
+**`v0.34.0`** (tagged 2026-11-18, `8c53d21`), read whole (below); `v0.33.1` (2026-11-18, `c965700`), `v0.33.0` (2026-11-18, `da53225`), `v0.32.1` (2026-11-17), `v0.32.0` (2026-11-15), `v0.31.1` (2026-11-13), `v0.31.0` and `v0.30.1` before it. Before it, **`v0.30.0`** (2026-11-12): the release the module seat first ran against, its first rehearsal on the polygon
 (`test-longevity-loci/longevitymap@2.0.0`, our 0fa5e77; strict validate and compile green). Tags before it are
 fast-forwarded past, read only by their changelog headings as listed below; nothing here used them.
 
@@ -39,6 +39,9 @@ re-rehearsed once per curation batch.
 
 ## Inbound verdicts
 
+- **`v0.34.0`** (2026-11-18). Additive client surface: `deploy_status()` and `deploy(version)`, a site admin's call
+  that moves an opted-in box (`REGISTRY_DEPLOY`) to another release under `registry supervise`, rolled back when it
+  does not come up healthy. An operator's lever; no seat of ours administers an instance. Nothing to change.
 - **`v0.33.1`** (2026-11-18). Client surface unchanged. `registry show-keys ACCOUNT` prints one account's live keys
   (an operator's command on the server; a leaked key is still re-minted and the old one revoked). A server `upgrade`
   whose strict compile refused keeps its re-derivation under `held/` for the retry, while the enricher and the

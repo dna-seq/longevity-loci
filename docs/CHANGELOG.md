@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- Registry v0.34.0 read into docs/UPSTREAM_REGISTRY.md (an admin deploy call; nothing to change here); the compiler's v0.8.9 tag marked read.
 - The compiler trio's 0.8.9 read into docs/UPSTREAM_COMPILER.md (RM449's corrected fill at mirrored indel sites reaches four of our rsIDs on recompile); not taken until the plugin's lock moves.
 - A draft manuscript section for just-dna-lite (`docs/MANUSCRIPT_SECTION.md`): the Longevity Map as a key module, rebuilt from the evidence, with what the curation found about the genetics of longevity (Anton's ask, 2026-11-18); its numbers are this repository's as of that day.
 - Registry v0.33.0 and v0.33.1 read into docs/UPSTREAM_REGISTRY.md: lane answers name their release (S34), a changed review verdict unpins it (S35); nothing to change here.

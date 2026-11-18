@@ -17,7 +17,7 @@ compiler's `0.8` branch); reuse it at the cut, and tell that liaison where our u
 
 ## Read mark
 
-**`0.8.9`** (on PyPI 2026-11-18, the trio; no tag pushed yet, read from their `main` changelog at `dfd94ccf`). Before it **`v0.8.8`** (tagged 2026-11-16, `655f1ebc`; the enricher alone, on PyPI 2026-11-17), patches on 0.8.0 read by their changelog headings and "After
+**`v0.8.9`** (tagged 2026-11-18, `13b3be36`; the trio, on PyPI the same day; read from their `main` changelog before the tag). Before it **`v0.8.8`** (tagged 2026-11-16, `655f1ebc`; the enricher alone, on PyPI 2026-11-17), patches on 0.8.0 read by their changelog headings and "After
 upgrading" lines; read whole at our adoption. **In use: `v0.8.8`** (the enricher; format and compiler 0.8.6) since 2026-11-18, `v0.8.7` since 2026-11-16, `v0.8.6` since 2026-11-14 (0.8.5 from 2026-11-13, 0.8.4 from 2026-11-12), the trio in `uv.lock`,
 adopted with the plugin's `v0.48.7`; 0.7.3 (enricher), 0.7.2 and 0.7.1 before it. The first mark, `v0.7.3` (3dd8c2a),
 was fast-forwarded: no release before it was read.
