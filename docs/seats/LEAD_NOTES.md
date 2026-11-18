@@ -108,3 +108,10 @@ Still owed: reply to agents-kit/lead with each seat's notes commit, one `keys co
 
 - Anton, 2026-11-18: "if you have issues doing something you have to report in your messages to me": every block
   (a tool refused, a login missing, a step not done) is named in the reply to him, with what blocked it.
+
+- 2026-11-19, the person: production goes through a pull request into just-dna-lite (desk #56 answered): opened as
+  dna-seq/just-dna-lite#37 from a clone beside this one (branch longevitymap-v2; reviewed by just-dna-lite/lead, merged
+  and published by Anton). It carries module/ at 3ee0bbb, a fix to that repo's report routing (v2's 163 rows on the demo
+  genome rendered as 0 in the Gen I pathway section), the runbook docs/LONGEVITYMAP_V2_RELEASE.md and the supplements.
+  Found by running it in the app: APOE's e-pair result is not called for a weights-led module (open point 1), and the
+  study notes show our D/q ids raw (RM6). The demo genome sits outside git on the data volume for re-runs (480 MB).
