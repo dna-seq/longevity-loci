@@ -13,7 +13,7 @@ milestone. Stalled since 2026-11-18 02:31 on the curator's pane (its usage-limit
 
 ## RM2 — the module into just-dna-lite, superseding the v1 port
 
-**State:** blocked: desk #56, yes after a present. **Owner:** lead. Opened as dna-seq/just-dna-lite#37 (2026-11-19, on the
+**State:** building. **Owner:** lead. Opened as dna-seq/just-dna-lite#37 (2026-11-19, on the
 person's word in desk #56): the rehearsed 2.0.0 spec, the report's routing fix, the release runbook and the
 supplements. Review is just-dna-lite's lead's, merge and publication Anton's. Its "before publishing" list names
 what is open (HF folder for 1.2.0, licence, closing, the study-note shorthand, the report-voice review).
