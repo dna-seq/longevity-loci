@@ -25,7 +25,11 @@ verdict_reason: >-
   H4 ≥ 0.8 on four of the five lifespan-class sets is ALDH2's expression (the hundreds of others are trans). Timmers
   2019's Figure 5 source data are consistent with the lifelong reading without showing it: the effect keeps one sign
   from 60 to 90 in both parents (fathers 0.044, 0.028, 0.054; mothers 0.012, 0.032, 0.023), with no fade (fathers'
-  80-90 band above their 60-80 mean, z −1.38; mothers' z 0.07), and the age moderator is null (P 0.91).
+  80-90 band above their 60-80 mean, z −1.38; mothers' z 0.07), and the age moderator is null (P 0.91). A second
+  signal 0.5 Mb towards MYL2, rs4426183 (Pilling P 1.7e-11; r² 0.16 with rs7137828 in 1000 Genomes EUR), is row 171
+  (second_signal_of 71, C): conditioned on this row's lead it is sub-genome-wide. The reverse leaves this row's lead
+  genome-wide: rs7137828 given rs4426183 z 5.33 in Pilling, rs11065979 given it 5.47 in Timmers (derived, row 171's
+  phase). In Deelen the two tie (D40.3), so this row keeps Deelen's marginal.
 axes:
   tier: {value: B, cites: [pmid-30642433#q8, pmid-29227965#q7, pmid-30642433#q14, pmid-31413261#q9, pmid-31484785#q17, pmid-31484785#q18]}
   mechanism: {value: heart_vessels, cites: [pmid-30642433#q8, pmid-29227965#q8]}

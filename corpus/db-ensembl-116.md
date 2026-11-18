@@ -4281,3 +4281,15 @@ Genomes CEU it tags row 71's SNPs partly: rs7137828 and rs3184504 r² 0.32, D′
 D′ 0.50 (q1226). Phase from 1000 Genomes' phased EUR genotypes (population q1174; first lines q1227, q1228, q1229),
 over 1,006 haplotypes (derived): T, the shorter-life allele, travels with rs7137828's shorter-life C (r +0.400, r²
 0.160) and with rs11065979's shorter-life T (r +0.361, r² 0.130); in CEU alone r +0.53 and +0.46. For row 171.
+
+## Reading 2026-11-18, record
+
+> [q1230] [0] d_prime 0.978586 population_name 1000GENOMES:phase_3:CEU variation1 rs4426183 r2 0.918835 variation2 rs12828640
+
+> [q1231] genotypes[0] genotype G|G sample 1000GENOMES:phase_3:HG00096 gender Male
+
+> [q1232] genotypes[0] genotype A|G sample 1000GENOMES:phase_3:HG00096 gender Male
+
+rs12828640, Wright 2019's representative of row 171's peak: r² 0.92 with rs4426183 in CEU (q1230); from the phased EUR
+genotypes (q1174; first lines q1231, q1227, q1232) its G travels with rs4426183's longer-life C (r +0.965) and against
+rs10774625's shorter-life A, row 71's line in Wright (r −0.404, r² 0.163), derived. For row 171.

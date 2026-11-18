@@ -9,44 +9,53 @@ locus_name: MYL2-VHRT
 second_signal_of: 71
 verdict: kept
 verdict_reason: >-
-  Tier C at most (D39.15, D40.3, R-TIER-4): genome-wide at the marginal in Pilling 2017's UK Biobank parents (T shorter,
-  P 1.7e-11, the top line of its own peak, pmid-29227965 q307, q309), but conditioned on row 71's lead in the coupling
-  the phase gives, the independent part is sub-genome-wide. From 1000 Genomes' phased EUR haplotypes T travels with
-  rs7137828's shorter-life C (r +0.400, r² 0.160; +0.53 in CEU) and with rs11065979's shorter-life T (r +0.361); with
-  rs7137828's own line in the same scan (P 3.4e-14, q308) T conditions to z 4.05 (P 5e-5) on EUR haplotypes and 3.23 (P
-  0.0013) on CEU; in Timmers 2019's pooled parents (P 2.0e-8, q431) on rs11065979 (q432) to 3.26 to 2.62 (P 0.001 to
-  0.009) (all derived). Nothing in the window between the two is stronger than 1e-9 until row 71's block at 111.83 Mb
-  (q310), so row 71's lead is the whole conditioning set. No printed conditional is read: Pilling's loci are the lowest
-  P in a 1 Mb region (q314), so its Table 1 holds rs7137828 alone, the Catalog's line comes from the deposit, and the
-  seven supplementary files are not reachable (PMC's links answered 404). No tag of 71's lead (D39.14): something
-  survives conditioning in each scan, and none of rs4426183's 130 Open Targets sets is a lifespan set. Timmers holds UK
-  Biobank's parents, so it is not a replication. Off D by Deelen 2019, outside UK Biobank: T against the 90th (P 0.0092)
-  and 99th percentiles (P 0.0065) (pmid-31413261 q378, q379), a tie with row 71's lead there (z 2.60 and 2.72 against 2.22
-  and 2.28, q9; D40.3), so row 71 keeps its marginal and this line is read conditioned on it: one-sided 0.027 to 0.038
-  (90th) and 0.021 to 0.030 (99th), EUR and CEU r (derived), an independent pass the discovery's way (D25.1). FinnGen
-  R11's deaths C fewer, flat (P 0.22, q136), a database line; Park 2025's own survival flat (P 0.75, q238). No D21 test is
-  run: no outside line goes against it. Outcome cells read for C: lifespan + (Pilling and Timmers, conditioned, nominal);
-  exceptional survival + (Deelen, conditioned); healthspan 0 (Zenin 2019 flat, P 0.38, q196; Foote 2025's F2 has T
-  frailer, P 0.013, but it ties with rs7137828 there and conditioned on it is one-sided 0.041 on EUR haplotypes and 0.061
-  on CEU, q228, q231, derived; F1, F5, F6 flat; the general factor's, F3's and F4's deposits hold no line).
+  Tier C at most (D39.15, D40.3, R-TIER-4), with `replication_failed`: genome-wide at the marginal in Pilling 2017's UK
+  Biobank parents (T shorter, P 1.7e-11, the top line of its own peak, pmid-29227965 q307, q309), but conditioned on row
+  71's lead in the coupling the phase gives, the independent part is sub-genome-wide. From 1000 Genomes' phased EUR
+  haplotypes (the panel rows 162 to 169 use) T travels with rs7137828's shorter-life C (r +0.400, r² 0.160) and with
+  rs11065979's shorter-life T (r +0.361); with rs7137828's own line in the same scan (P 3.4e-14, q308) T conditions to z
+  4.05 (P 5e-5), and in Timmers 2019's pooled parents (P 2.0e-8, q431) on rs11065979 (q432) to 3.26 (P 0.001) (derived).
+  On CEU (phased r +0.53; Ensembl's own CEU r² 0.32) the low ends are 2.96 in Pilling and 2.62 in Timmers. Nothing in
+  the window between the two is stronger than 1e-9 until row 71's block at 111.83 Mb (q310), so row 71's lead is the
+  whole conditioning set. No printed conditional is read: Pilling's loci are the lowest P in a 1 Mb region (q314), so
+  its Table 1 holds rs7137828 alone; the Catalog's line matches the deposit's digits, but whether it came from the
+  deposit or from a supplementary table is unknown, and the seven supplementary files are not reachable (PMC's links
+  answered 404). No tag of 71's lead (D39.14): something survives conditioning in each scan, and none of rs4426183's
+  130 Open Targets sets is a lifespan set. Timmers holds UK Biobank's parents, so it is not a replication. Wright
+  2019's AncestryDNA arms, outside UK Biobank, at rs12828640 (r² 0.92 with rs4426183, G with its longer-life C; q182,
+  q183): the fathers are flat (G P 0.87) against UK Biobank's fathers (P 5e-7), Wright's own heterogeneity P 0.0041, and
+  conditioned on row 71's rs10774625 in the same arm (q17) they lean against (one-sided 0.71, derived); at AncestryDNA's
+  SE the UK Biobank fathers' marginal effect has one-sided power 0.997, and the share left after conditioning
+  (about 0.6 of it) 0.83 (derived), so D21's red flag, `replication_failed`,
+  as row 71 carries for its own AncestryDNA fathers. The mothers pass: G longer, P 0.056 (one-sided 0.028), and
+  conditioned on rs10774625 (q18) one-sided 0.018 (derived). Deelen 2019, also outside UK Biobank, puts T against the
+  90th (P 0.0092) and 99th percentiles (P 0.0065) (pmid-31413261 q378, q379), a tie with row 71's lead there (z 2.60 and
+  2.72 against 2.22 and 2.28, q9; D40.3), so row 71 keeps its marginal and this line is read conditioned on it: one-sided
+  0.027 (90th) and 0.021 (99th) (EUR r; 0.038 and 0.030 on CEU), derived. Those two independent passes keep the row off
+  D (D25.1). FinnGen R11's deaths C fewer, flat (P 0.22, q136), a database line; Park 2025's own survival flat (P 0.75,
+  q238). Outcome cells read for C: lifespan + (Pilling and Timmers conditioned, AncestryDNA's mothers); exceptional
+  survival + (Deelen, conditioned); healthspan + (D31.4): Foote 2025's F2 has T frailer, P 0.013 (q228), tied with
+  rs7137828 there (q231), and conditioned on it one-sided 0.041 on EUR haplotypes (0.061 on CEU), derived; Zenin 2019
+  flat (P 0.38, q196); F1, F5, F6 flat; the general factor's, F3's and F4's deposits hold no line.
   Mechanism heart and vessels: C lowers systolic (P 1.5e-16) and diastolic blood pressure (P 4.8e-18) in Open Targets'
   sets (db-opentargets-26.09 q1577 to q1580), so `mech:cvd` as at row 27, and many of its sets are blood counts
   (haemoglobin among them, q1581), `mech:blood_count`; it leads none (highest PIP 0.16), so this is the 12q24 block's
   biology shared, not shown as this signal's own route. Causal C4 (D39.12: no set of a lifespan class holds it, and no
   article sets it). Effector E4: near MYL2, intronic to VHRT, a GTEx splicing set for VHRT in the heart's left ventricle
-  at PIP 0.015 (q1583), no colocalisation read. The literature search (the rsID, 2026-11-18; Semantic Scholar answered
-  429, its part unchecked; the other five found nothing). Wright 2019's AncestryDNA arm is unread here. Descriptive. Age
-  of action unknown. The evidence is European.
+  at PIP 0.015 (q1583), no colocalisation read. The literature search (the rsID, 2026-11-18) found nothing in the five
+  services that answered; Semantic Scholar answered 429, its part unchecked. Descriptive. Age of action unknown. The
+  evidence is European.
 axes:
-  tier: {value: C, cites: [pmid-29227965#q307, pmid-29227965#q308, pmid-29227965#q309, pmid-29227965#q310, pmid-29227965#q314, pmid-30642433#q431, pmid-30642433#q432, pmid-31413261#q9, pmid-31413261#q378, pmid-31413261#q379, db-ensembl-116#q1174, db-ensembl-116#q1224, db-ensembl-116#q1225, db-ensembl-116#q1226, db-ensembl-116#q1227, db-ensembl-116#q1228, db-ensembl-116#q1229, db-opentargets-26.09#q1576, db-gwascatalog-2026.10.29#q825, db-gwascatalog-2026.10.29#q826]}
+  tier: {value: C, cites: [pmid-29227965#q307, pmid-29227965#q308, pmid-29227965#q309, pmid-29227965#q310, pmid-29227965#q314, pmid-30642433#q431, pmid-30642433#q432, pmid-31413261#q9, pmid-31413261#q378, pmid-31413261#q379, db-ensembl-116#q1174, db-ensembl-116#q1224, db-ensembl-116#q1225, db-ensembl-116#q1226, db-ensembl-116#q1227, db-ensembl-116#q1228, db-ensembl-116#q1229, db-opentargets-26.09#q1576, db-gwascatalog-2026.10.29#q825, db-gwascatalog-2026.10.29#q826, pmid-31484785#q17, pmid-31484785#q18, pmid-31484785#q182, pmid-31484785#q183, db-ensembl-116#q1230, db-ensembl-116#q1231, db-ensembl-116#q1232]}
   mechanism: {value: heart_vessels, cites: [db-opentargets-26.09#q1577, db-opentargets-26.09#q1578, db-opentargets-26.09#q1579, db-opentargets-26.09#q1580]}
   pleiotropy: {values: ["mech:cvd", "mech:blood_count"], cites: [db-opentargets-26.09#q1577, db-opentargets-26.09#q1578, db-opentargets-26.09#q1579, db-opentargets-26.09#q1580, db-opentargets-26.09#q1581, db-opentargets-26.09#q1582]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
-  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "+",
-            cites: [pmid-29227965#q307, pmid-29227965#q308, pmid-29227965#q311, pmid-29227965#q312, pmid-29227965#q313, pmid-30642433#q431, pmid-30642433#q432, pmid-31413261#q9, pmid-31413261#q378, pmid-31413261#q379, db-finngen-r11#q136, pmid-40021682#q238, pmid-40021682#q239, pmid-40021682#q240, pmid-30729179#q196, pmid-40759756#q227, pmid-40759756#q228, pmid-40759756#q229, pmid-40759756#q230, pmid-40759756#q231]}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
+            cites: [pmid-29227965#q307, pmid-29227965#q308, pmid-29227965#q311, pmid-29227965#q312, pmid-29227965#q313, pmid-30642433#q431, pmid-30642433#q432, pmid-31413261#q9, pmid-31413261#q378, pmid-31413261#q379, db-finngen-r11#q136, pmid-40021682#q238, pmid-40021682#q239, pmid-40021682#q240, pmid-30729179#q196, pmid-40759756#q227, pmid-40759756#q228, pmid-40759756#q229, pmid-40759756#q230, pmid-40759756#q231, pmid-31484785#q183, pmid-31484785#q18]}
   actionability: {label: descriptive, cites: [pmid-29227965#q307]}
   context: {values: [eur_only_evidence], cites: [pmid-29227965#q307, db-ensembl-116#q1221]}
 flags:
+  - {token: replication_failed, cites: [pmid-31484785#q182, pmid-31484785#q17, db-ensembl-116#q1230, db-ensembl-116#q1231, db-ensembl-116#q1232]}
   - {token: "causal:C4", cites: [db-opentargets-26.09#q1576]}
   - {token: "effector:E4", cites: [db-opentargets-26.09#q1576, db-opentargets-26.09#q1583, db-ensembl-116#q1222, db-ensembl-116#q1223]}
 variants:
@@ -72,8 +81,8 @@ variants:
         state: protective
         conclusion: >-
           You carry two copies of the C version of this DNA position (about 3 in 10 people of European ancestry do).
-          In very large British studies, parents of people with this version lived a little longer, and a European
-          study of people reaching very old age agreed. The same version goes with slightly lower blood pressure. Much
+          In very large British studies, parents of people with this version lived a little longer; a large American study
+          agreed for mothers but not for fathers, and a European study of people reaching very old age agreed. The same version goes with slightly lower blood pressure. Much
           of the signal is shared with a stronger one nearby, and what is left is weak, so this is an early finding.
           The effect is small and it is a tendency, not a guarantee. Your blood pressure matters more than this DNA
           result.
@@ -81,8 +90,8 @@ variants:
         state: risk
         conclusion: >-
           You carry two copies of the T version of this DNA position (about 2 in 10 people of European ancestry do). In
-          very large British studies, parents of people with this version lived a little less long, and a European
-          study of people reaching very old age agreed. The same version goes with slightly higher blood pressure. Much
+          very large British studies, parents of people with this version lived a little less long; a large American
+          study agreed for mothers but not for fathers, and a European study of people reaching very old age agreed. The same version goes with slightly higher blood pressure. Much
           of the signal is shared with a stronger one nearby, and what is left is weak, so this is an early finding.
           The effect is small and it is a tendency, not destiny. Your blood pressure matters more than this DNA result.
 studies:
@@ -103,7 +112,7 @@ studies:
     effect_unit: Martingale residual of parents' attained age per T allele (positive = shorter life)
     effect_allele: T
     direction: risk
-    statistical_test: "BOLT-LMM on both parents' attained age (GCST006697 deposit, q307), the top line of its peak (q309); marginal; conditioned on row 71's rs7137828 in the same scan (q308; phase db-ensembl-116#q1227, q1228, r +0.400 EUR, +0.53 CEU) z 4.05 to 3.23, P 5e-5 to 0.0013 (derived, D39.15)"
+    statistical_test: "BOLT-LMM on both parents' attained age (GCST006697 deposit, q307), the top line of its peak (q309); marginal; conditioned on row 71's rs7137828 in the same scan (q308; phase db-ensembl-116#q1227, q1228, r +0.400 EUR, +0.53 CEU) z 4.05 on EUR haplotypes, P 5e-5 (CEU low end 2.96), derived, D39.15"
     curator: claude-opus-5-5
   - rsid: rs4426183
     note: pmid-30642433
@@ -122,7 +131,7 @@ studies:
     effect_unit: beta1 on parental lifespan per T allele, longer positive
     effect_allele: T
     direction: risk
-    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0039, direction --; marginal; conditioned on row 71's rs11065979 (q432; phase db-ensembl-116#q1227, q1229, r +0.361 EUR, +0.46 CEU) z 3.26 to 2.62, P 0.001 to 0.009 (derived); holds UK Biobank's parents, so not a replication"
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0039, direction --; marginal; conditioned on row 71's rs11065979 (q432; phase db-ensembl-116#q1227, q1229, r +0.361 EUR, +0.46 CEU) z 3.26 on EUR haplotypes, P 0.001 (CEU low end 2.62), derived; holds UK Biobank's parents, so not a replication"
     curator: claude-opus-5-5
   - rsid: rs4426183
     note: pmid-31413261
@@ -137,13 +146,12 @@ studies:
     stat_significance: nominal
     p_value: "0.009197"
     p_value_num: 0.009197
-    p_one_sided: 0.0046
     effect_size: -0.0517
     effect_measure: beta
     effect_unit: log odds of reaching the 90th percentile per T allele
     effect_allele: T
     direction: risk
-    statistical_test: "Deelen 2019's summary statistics (GCST008598), SE 0.0199; one-sided 0.0046 (derived); a tie with row 71's lead (q9, D40.3), so read conditioned on it: one-sided 0.027 to 0.038 (EUR and CEU r, derived), an independent pass (D25.1)"
+    statistical_test: "Deelen 2019's summary statistics (GCST008598), SE 0.0199; marginal; a tie with row 71's lead (q9, D40.3), so read conditioned on it: one-sided 0.027 on EUR r (0.038 on CEU), derived, an independent pass (D25.1)"
     curator: claude-opus-5-5
   - rsid: rs4426183
     note: pmid-31413261
@@ -158,11 +166,10 @@ studies:
     stat_significance: nominal
     p_value: "0.006545"
     p_value_num: 0.006545
-    p_one_sided: 0.0033
     effect_size: -0.0833
     effect_measure: beta
     effect_unit: log odds of reaching the 99th percentile per T allele
     effect_allele: T
     direction: risk
-    statistical_test: "Deelen 2019's summary statistics (GCST008599), SE 0.0306; one-sided 0.0033 (derived); a tie with row 71's lead (q9, D40.3), so read conditioned on it: one-sided 0.021 to 0.030 (EUR and CEU r, derived)"
+    statistical_test: "Deelen 2019's summary statistics (GCST008599), SE 0.0306; marginal; a tie with row 71's lead (q9, D40.3), so read conditioned on it: one-sided 0.021 on EUR r (0.030 on CEU), derived"
     curator: claude-opus-5-5

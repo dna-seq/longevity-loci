@@ -198,6 +198,8 @@ mechanical consensus of the research tracks, to be confirmed or overturned by th
 - Scout entry, 2026-11-18: rows 159 HLA-DQB1 and 38 HLA-DQA1, Yang 2017 (other DQB1 SNPs, Chinese) and the 17th IHIW (allele level, small) named; no cell moves.
 - Scout entry, 2026-11-18: single uncited studies at rows 6, 33, 83, 114, 25, 57 and 80 noted and named; no cell moves (33's WHI Hispanic T against the European T, another ancestry).
 
+- 171 MYL2-VHRT (2026-11-18), the GWAS Catalog's rs4426183, a second signal at 71, tier C with `replication_failed` (AncestryDNA's fathers); 71's prose names it.
+
 ## In hand
 
 The scout's 2015–2026 backfill (c0a8726, D41): the first twelve entries read (2026-11-18); the lead's word on rows 170

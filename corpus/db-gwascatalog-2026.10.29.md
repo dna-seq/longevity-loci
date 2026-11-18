@@ -2896,4 +2896,5 @@ rs1927465: one association (q823, q824), height, T +0.0138; no longevity associa
 > [q826] _embedded.associations[0].reported_trait[0] Parental longevity (combined parental attained age, Martingale residuals)
 
 rs4426183: one association (q825, q826), Pilling 2017's combined parental attained age (GCST006697), T +0.0153, P 2e-11,
-the deposit's own line (frequency 0.4288, as in pmid-29227965). For row 171.
+its digits match the deposit's line (frequency 0.4288, pmid-29227965#q307); whether the Catalog took it from
+the deposit or from one of the paper's supplementary tables is unknown. For row 171.

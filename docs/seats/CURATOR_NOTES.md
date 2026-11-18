@@ -65,6 +65,15 @@ record, never left empty; multi-line text edits want whitespace-tolerant matches
 
 ## Log (from 2026-11-10)
 
+- **171 MYL2-VHRT** (2026-11-18), the first GWAS Catalog line, row 168's shape. Lessons: a Catalog line near a seed
+  is a second-signal question first (D39.14), not row 170's standalone pattern; scan the window between it and the seed
+  lead in Pilling and Timmers (`--rows` on positions) before conditioning, so the conditioning set is complete. A
+  Catalog line whose digits match the deposit may still come from a supplementary table: write its source as unknown.
+  Read Wright's Supplemental Tables 8 and 9 over the window before writing "AncestryDNA unread": the cached tables held
+  a proxy (r² 0.92) with a printed heterogeneity P. The panel for conditionals is EUR haplotypes (rows 162-169); CEU is
+  named as the low end, and Ensembl's own CEU r² (0.32) differs from the phased CEU r (0.53): say both. No
+  `p_one_sided` on a line the row reads conditioned. Pilling 2017's supplements: PMC's /bin/ links answer 404.
+
 - **Backfill row entries (2026-11-18)**: 96, 43, 73, 59, 46, 84, 48 and the TL rows done, one commit each. More
   `check quotes` misses on verbatim text: a quote holding `TNF-α`, one running into a word fused to the next sentence
   (`mortality.ConclusionShort`, `ResultsMultivariate`); cut the quote short of them. Pre-check every quote with a
