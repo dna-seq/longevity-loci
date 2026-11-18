@@ -55,7 +55,8 @@ Still owed: reply to agents-kit/lead with each seat's notes commit, one `keys co
 
 ## Standing rules learned here
 
-- Pacing is off, full forward, on the person's word. Their standing order (2026-11-11): "After 10 adjust pacing and go
+- Pacing is back on (small-forward, the kit's default) since 2026-11-19, the person: "turn off the full steam back to
+  pacing. So that the scout throttles. PR is still a pripority". (Full forward ran 2026-11-11 to 2026-11-19.) Before that: Their standing order (2026-11-11): "After 10 adjust pacing and go
   next 10 and so on unless blocked or I steer". After each batch of about ten rows: three adversarial subagent reads,
   findings settled as D-decisions, one corrections handoff to the curator, the module seat rebuilds and rehearses on
   the test instance, then LEAD_STATE is updated and reposted.
