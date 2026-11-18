@@ -1552,3 +1552,12 @@ rules, each a reading of rules already decided.
    (Pilling 2017 mothers 0.31), and so is Timmers (0.80). A sub-threshold line at no seed locus is closed in the
    scout's queue with its reason, as Kashtanova 2026's genes were. Rejected: a D row, which the seed's scope does not
    ask for and which would put a never-significant line in the module as if it had once been a hit.
+10. **Yashin 2015 (PMID 25918517): rows for ECHS1 (rs7894051) and NRDE2 (rs4904670) only (the curator's option c,
+    2026-11-19).** Its nine SNPs below 5e-8 come from 679 Framingham women, far below tier A's N; seven of them the
+    authors' own extra QC sets aside (rs2229188 CYP51A1 marked FAIL by the array maker and named a possible genotyping
+    error; TLK2 and C1QTNF5 failing HWE in men; the rest as Table S1 says). A line its own authors flag as a genotyping
+    artefact is closed as no-row in PROGRESS with the QC quotes and its deposit lines in the note, as rs4709783 was
+    (D42.9): a row grades a claim the field carries, and this one its authors did not stand behind. The two that pass
+    are curated at their own evidence (D29.17). Rejected: (a) nine rows, most at D, which puts flagged artefacts in the
+    module as former hits; (b) the Catalog's five, which follows a database's choice over the paper's. Under the pace
+    restored on 2026-11-19, RM6 (the study notes for just-dna-lite #37) comes before these rows.
