@@ -95,9 +95,8 @@ Kit copy: `K=~/.claude/plugins/cache/agent-seat-blueprints/seats/<pinned version
 - The compiler's `docs/INTEGRATION_0_8.md` has a longevity-loci block (module-author consumer); read at 5b1b73b8,
   filed as #6.
 
-## Open, for the person
+## Open
 
-- `docs/seats/LIAISON.md` says the plugin's repository runs no seats; since 2026-11-05 it runs four (lead, pm,
-  tester, liaison). A priming change by the skill `change-priming`; the filing route (issues, no inbox) is unchanged.
-
-- 2026-11-17: moved to the chat organisation desk-antonkulaga (bin/org-move.py).
+- The priming's grant still names "appending to an upstream's consumer inbox, uncommitted", a route the compiler's
+  and registry's triages replaced with `bin/hand.sh` (2026-11-12); the priming's upstream list says the new route
+  (62c5ae4). The grant line is the person's text and is left as it is; it permits nothing the route now needs.
