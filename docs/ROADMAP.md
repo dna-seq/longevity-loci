@@ -20,7 +20,8 @@ what is open (HF folder for 1.2.0, licence, closing, the study-note shorthand, t
 
 ## RM6 — study notes worded for a reader in the export
 
-**State:** unattended. **Owner:** lead (the curator and the module seat do the work). `studies.csv`'s analysis and
+**State:** urgent. **Owner:** lead (the curator and the module seat do the work). The person, 2026-11-19: "PR is still a
+pripority"; ahead of new rows under the restored pace. `studies.csv`'s analysis and
 conclusion fields cite this repository's decision and quote ids (D26.13, q33), which the app's report shows raw
 (seen on the demo genome, 2026-11-19). Before the public publish: an export that words them for a reader, the same
 2.0.0 content, a new compile, the PR updated.
