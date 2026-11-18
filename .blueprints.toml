@@ -18,7 +18,7 @@ pinned = true
 # The person's coding sessions here (docs/seats/LEAD.md): the repository's code, built for the three research
 # seats; the plan; the releases. The compiler's, the registry's and the module-creator's leads may wake it (upstream lead
 # to lead).
-wake_from = "longevity-loci/curator longevity-loci/scout longevity-loci/module longevity-loci/liaison longevity-loci/runner just-dna-compiler/lead just-dna-registry/lead just-module-creator/lead */secretary"
+wake_from = "longevity-loci/curator longevity-loci/scout longevity-loci/module longevity-loci/liaison longevity-loci/runner just-dna-compiler/lead just-dna-registry/lead just-module-creator/lead just-dna-lite/lead */secretary"
 # The person, 2026-11-14: "Some waker for both of you if no activity for hours with nonempty queue" (kit D200).
 queue = "uv run python -I scripts/dashboard.py --left"
 wake_people = "longevity-loci"
