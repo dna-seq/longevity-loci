@@ -28,6 +28,12 @@ docs/seats/MODULE_NOTES.md module/`); the last section keeps only what is still 
   the person's word.** Re-export and re-rehearse after each curation batch the lead closes, not per row.
 - **Production is the person's alone**, on their explicit word for that version. "Publish it" from a seat is not
   that word.
+- **The production route, the person 2026-11-19 (desk #56, relayed by the lead 641719095)**: a pull request into
+  just-dna-lite carrying the ready module, superseding the v1 port (1.2.0 stays frozen). The lead opens it with
+  module/ at 3ee0bbb (the 12c673f rehearsal, signature aebf5e38), without published.json. This seat answered
+  (641719261): no licence in the spec, not closed, the spec comment and provenance still call D1/D3 pending
+  defaults; each waits on a word. The compiler trio 0.8.9 (RM449, our four mirrored indels) is on PyPI, not yet in
+  the plugin's lock.
 - **The org move (the lead, 640874040)**: a ticket for this seat may arrive from genie's secretary (another
   organisation). Leave it unread until the lead says the person has given the go; do not run the org-move switch
   before. Done 2026-11-17: the move finished by the org-move tool and this seat punched in again in
