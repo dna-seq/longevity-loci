@@ -2939,3 +2939,11 @@ Pilling 2017's mothers' study GCST006696 (q834): 412,937 British-ancestry partic
 
 rs10198124: one association (q835, q836), Joshi 2017's parental lifespan, OR (HR) 1.22, P 2e-8, risk frequency 0.39, the
 African fathers' line. For row 174.
+
+## Reading 2026-11-18, supplement
+
+> [q837] pvalue_mantissa 5 pvalue_exponent -8
+
+The Catalog's association 16532498 at rs4709783 (GCST003393, Pilling 2016, parental longevity EFO_0007796, β 0.028085,
+"increase"): P printed as 5e-8, mantissa 5. The paper's supplement prints 5.30E-08 (pmid-27015805 q27), above the
+threshold.

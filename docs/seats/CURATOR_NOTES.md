@@ -65,6 +65,8 @@ record, never left empty; multi-line text edits want whitespace-tolerant matches
 
 ## Log (from 2026-11-10)
 
+- 2026-11-18, Catalog line rs4709783: read the paper's own P before building. The Catalog prints mantissa and exponent, so 5.3e-8 shows as 5e-8; the supplement settled it as not genome-wide, and the larger scan holding the same people (Pilling 2017) confirmed it gone. A no-row line, as Kashtanova's (PROGRESS).
+
 - **174 SMIM7P1** (2026-11-18), tier B, rows 128 and 149's shape. Lessons: Zenin's last column is −log10 P (the
   row 130 lesson, missed at 171 and 172 and corrected, 717de08): read the header line before every Zenin number. Run
   the literature search before writing its sentence. An African-ancestry discovery whose European look-ups pass at a
