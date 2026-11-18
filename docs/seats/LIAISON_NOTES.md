@@ -13,7 +13,7 @@ Nothing in hand. Every upstream release up to today is read and, where it moves 
 - **Compiler trio**: `uv.lock` holds enricher **0.8.8**, compiler and format **0.8.6**; floors `>=0.8.8` / `>=0.8.6`,
   caps `<0.9`; polars and duckdb capped `<2`. Ledger `docs/UPSTREAM_COMPILER.md`, read mark v0.8.7. Suite 146 passed
   at the last move (a7bfed4).
-- **Registry** `dna-seq/just-dna-registry`: read mark **v0.32.0** (5bc25d0), ledger `docs/UPSTREAM_REGISTRY.md`.
+- **Registry** `dna-seq/just-dna-registry`: read mark **v0.33.1** (2026-11-18), ledger `docs/UPSTREAM_REGISTRY.md`.
   Nothing here imports it; the plugin's server does. On 2026-11-16 the polygon served 0.30.0 (format 0.8.4) and
   production 0.31.0 (format 0.8.6), both compatible with our 0.8.6 client.
 - **Kit**: this clone's pin (`.claude/settings.local.json`, untracked) moved to **v0.1.244** on 2026-11-18 (v0.1.243, v0.1.242, v0.1.240, v0.1.236, v0.1.235 and v0.1.234 earlier that day; v0.1.232 and v0.1.231 on 2026-11-17, v0.1.227 on 2026-11-16) by

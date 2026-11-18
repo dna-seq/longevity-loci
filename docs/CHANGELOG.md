@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- Registry v0.33.0 and v0.33.1 read into docs/UPSTREAM_REGISTRY.md: lane answers name their release (S34), a changed review verdict unpins it (S35); nothing to change here.
 - A slide deck comparing HAGR's LongevityMap, the shipped module v1 and the re-curated v2, with the agent loop that curates it, in just-dna-lite's look (Anton's ask, 2026-11-18), with two slides on the errors the v1 audit found and how the agents' own are caught: `scripts/longevitymap_deck.py` writes it as an editable .pptx; its numbers are as of 2026-11-18.
 - The liaison's priming states the upstreams as they are: the plugin's repository runs seats, and a compiler or registry filing goes whole to its triage by `bin/hand.sh`, since both triages run on another machine.
 - `loci check quotes` locates a verbatim quote beside a structured abstract's section heading that Europe PMC runs into the next sentence ("introduced.ConclusionsWe found"), and a quote ending in a full stop that meets the next word; before, both failed on the word-boundary rule, and the curator cut such quotes short (pmid-26754162's TNF-α sentence). Any other run-on word still fails the boundary.

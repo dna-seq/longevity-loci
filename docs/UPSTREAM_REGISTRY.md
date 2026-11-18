@@ -12,7 +12,7 @@ file): `[seat.liaison.watch.registry]` says each new tag.
 
 ## Read mark
 
-**`v0.32.1`** (tagged 2026-11-17, `156953e`; seen 2026-11-18), read whole (below); `v0.32.0` (2026-11-15), `v0.31.1` (2026-11-13), `v0.31.0` and `v0.30.1` before it. Before it, **`v0.30.0`** (2026-11-12): the release the module seat first ran against, its first rehearsal on the polygon
+**`v0.33.1`** (tagged 2026-11-18, `c965700`; seen 2026-11-18), read whole with `v0.33.0` (2026-11-18, `da53225`) (below); `v0.32.1` (2026-11-17), `v0.32.0` (2026-11-15), `v0.31.1` (2026-11-13), `v0.31.0` and `v0.30.1` before it. Before it, **`v0.30.0`** (2026-11-12): the release the module seat first ran against, its first rehearsal on the polygon
 (`test-longevity-loci/longevitymap@2.0.0`, our 0fa5e77; strict validate and compile green). Tags before it are
 fast-forwarded past, read only by their changelog headings as listed below; nothing here used them.
 
@@ -39,6 +39,16 @@ re-rehearsed once per curation batch.
 
 ## Inbound verdicts
 
+- **`v0.33.1`** (2026-11-18). Client surface unchanged. `registry show-keys ACCOUNT` prints one account's live keys
+  (an operator's command on the server; a leaked key is still re-minted and the old one revoked). A server `upgrade`
+  whose strict compile refused keeps its re-derivation under `held/` for the retry, while the enricher and the
+  snapshot releases it read are unchanged. Nothing here uses either. Nothing to change.
+- **`v0.33.0`** (2026-11-18). Client surface unchanged; `lane_tables` and `lane_rows` answers gain `release`,
+  `release_unreadable` and `revision` (S34), and a remote lane read now reads every file at one commit, so an answer
+  no longer mixes two. *For the module seat:* a lane answer says which release it read once an instance serves 0.33.
+  S35: a re-posted review whose verdict changed loses the owner's highlight, so a pinned outside review cannot turn
+  the module curated without the owner re-pinning it (the curated rule of 0.32.0, S33, otherwise stands). Nothing to
+  change here.
 - **`v0.32.1`** (2026-11-17). Client surface unchanged; its server floors the enricher at 0.8.8 (RM445), so
   `warm-caches --apply` repairs a lane pulled before release checksums were recorded; production held nine such
   lanes, Ensembl among them, re-pulled before its upgrade. A lane lookup by `chrom` and `start` lists now matches them
