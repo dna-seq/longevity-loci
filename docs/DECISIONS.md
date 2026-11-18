@@ -1530,3 +1530,8 @@ rules, each a reading of rules already decided.
    through `loci fetch-supp`, and the plugin's `list_supplementary`. If neither returns them, they are named in 171 as
    unread, with the joint analysis unknown, never treated as null.
 5. **Row 71 reads Foote's seven factors after the catalog block**, as the curator proposed.
+6. **172 SRRM3-POR is led by rs28689051, Wright 2019's own lead, with the Catalog's rs17685 named beside it (r² 0.57).**
+   A row is tiered on its discovery's lead (D29.17), and the paper's lead is the variant its genome-wide P and its
+   replication test belong to; the Catalog's line is a proxy at 5.7e-7 after genomic control. D with
+   `replication_failed` follows from UK Biobank fathers' opposite line (heterogeneity P 1.6e-6, power 1.00) with no
+   independent pass in the discovery's direction (D25.1). Rejected: leading on the Catalog's proxy.
