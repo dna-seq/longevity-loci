@@ -181,6 +181,59 @@ for i, (big, small, c) in enumerate(facts):
     text(s, small, x + 2.35, y + 0.2, 3.35, 1.05, size=14, color=TEXT, anchor=MSO_ANCHOR.MIDDLE)
 footer(s, "Source: just-dna-lite, docs/longevitymap_v2 (v1.2.0 measured 2026-11-03). v1 also carried 50 post-2017 additions and 876 edited records by its curator.")
 
+# ---------------------------------------------------------------- 3b how many mistakes v1 carried
+s = slide("462 of v1's 528 rsIDs carry at least one error", "Hand curation, audited")
+cd = CategoryChartData()
+errs = [("Weighted, though the cited result is not significant", 222), ("Direction inverted against a cited study", 124),
+        ("Sex- or subgroup-only effect applied to everyone", 51), ("Weighted genotype cannot be called", 32),
+        ("Genetic model differs from the study", 18), ("Cited evidence lost at the port", 6),
+        ("rsID is not the variant studied", 4), ("Gene label wrong", 4), ("Citation error", 1)]
+errs = list(reversed(errs))
+cd.categories = [e for e, _ in errs]
+cd.add_series("rsIDs", [n for _, n in errs])
+gf = s.shapes.add_chart(XL_CHART_TYPE.BAR_CLUSTERED, inch(0.6), inch(1.65), inch(7.9), inch(5.05), cd)
+ch = gf.chart
+style_chart(ch)
+ch.category_axis.tick_labels.font.size = Pt(11)
+plot = ch.plots[0]
+plot.gap_width = 35
+plot.has_data_labels = True
+plot.data_labels.font.color.rgb = WHITE
+plot.data_labels.font.size = Pt(12)
+plot.data_labels.position = XL_LABEL_POSITION.OUTSIDE_END
+plot.series[0].format.fill.solid()
+plot.series[0].format.fill.fore_color.rgb = RED
+box(s, 8.85, 1.75, 3.9, 2.25)
+text(s, [
+    ("88 %", {"size": 40, "bold": True, "color": RED, "after": 2}),
+    ("of v1's rsIDs: each counted once, under its most serious finding. 50 had no error; 16 could not be checked.", {"size": 13}),
+], 9.1, 1.85, 3.5, 2.1)
+box(s, 8.85, 4.15, 3.9, 2.55)
+text(s, [
+    ("Where they came in", {"size": 13, "bold": True, "color": TEAL, "after": 6}),
+    ("Most inverted directions (127) were made in the hand curation of weights, not in HAGR. Most weights on non-significant results (182) came with HAGR's own records.", {"size": 12, "after": 6}),
+    ("281 rows rest on one 2012 paper; 82 of those rows point the wrong way.", {"size": 12}),
+], 9.1, 4.25, 3.5, 2.4)
+footer(s, "Source: just-dna-lite manuscript v0.7, Table S14. 626 rows read against their papers by AI agents, a quote per verdict; provisional until a curator confirms.")
+
+# ---------------------------------------------------------------- 3c and the agents' own mistakes
+s = slide("Agents err too; the loop is built to catch it", "A fair comparison")
+box(s, 0.6, 1.75, 5.9, 4.95, line=ORANGE)
+text(s, "Hand curation (v1)", 0.95, 1.95, 5.2, 0.4, size=13, color=ORANGE, bold=True)
+text(s, [
+    ("● One curator's reading, with no second reader and no rule for what counts as evidence.", {"after": 10}),
+    ("● No quote kept, so a weight cannot be traced to a sentence in the paper.", {"after": 10}),
+    ("● The errors surfaced only when the module was audited, nine years after its source froze.", {}),
+], 0.95, 2.45, 5.3, 4.1, size=15)
+box(s, 6.8, 1.75, 5.95, 4.95, line=TEAL)
+text(s, "Agent curation (v2)", 7.15, 1.95, 5.2, 0.4, size=13, color=TEAL, bold=True)
+text(s, [
+    ("● Every claim quotes its source; 6,765 quotes found word for word by machine, none failed.", {"after": 10}),
+    ("● Every batch of ~10 rows gets three independent adversarial reads. 17 reads settled 119 numbered rulings, many of them the curator's or the lead's own mistakes, corrected the same day.", {"after": 10}),
+    ("● Not yet measured the same way: v2 has not had an independent audit by v1's method. Until it has, the fair claim is that its errors are findable and get fixed, not that it has none.", {"color": MUTED}),
+], 7.15, 2.45, 5.35, 4.1, size=14)
+footer(s, "v2 figures: longevity-loci docs/DECISIONS.md and the quote check of 2026-11-18.")
+
 # ---------------------------------------------------------------- 4 the v2 design
 s = slide("v2: only genome-wide, replicated signals score", "The design")
 rules = [
