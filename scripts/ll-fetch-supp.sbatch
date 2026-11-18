@@ -12,6 +12,9 @@
 #SBATCH --cpus-per-task=2
 #SBATCH --mem=4G
 #SBATCH --time=01:00:00
+# CPU-only on the lab account: yield to the GPU jobs the scheduler would otherwise rank below a bigger CPU job
+# (the account's rule from 2026-11-18)
+#SBATCH --nice=100
 
 set -euo pipefail
 : "${LL_KEY:?}" "${LL_LOCATOR:?}" "${LOCI_CACHE:?}" "${https_proxy:?the proxy must be exported}"

@@ -20,7 +20,7 @@ session can carry on from these notes, `docs/seats/RUNNER.md` (the priming), `ru
   per-row check is now `loci check quotes --since REV` (about 12 minutes, the lead's d63682d, which also added
   `--key KEY` and a `[n/N] key` progress line on stderr, `-q` to silence). No job script yet: write
   `scripts/ll-check-quotes.sbatch` when the first is asked for, on the pattern of `scripts/ll-fetch-supp.sbatch`
-  (1 core, thread caps, revision echoed, exit code passed through). Exit 4 is unknown, never a pass; the run so far
+  (1 core, `--nice=100`, thread caps, revision echoed, exit code passed through). Exit 4 is unknown, never a pass; the run so far
   always shows one unknown, db-gwascatalog-2025.01.09, a database note with no cached text.
 - **Fetches:** bulk `loci fetch` / `loci fetch-supp` from the curator, the scout or the lead go through
   `scripts/ll-fetch-supp.sbatch` (2 cores, 4G, 1 h; variables LL_KEY, LL_LOCATOR, LL_RSIDS, LL_ONLY, LL_REVISION).
@@ -36,6 +36,9 @@ session can carry on from these notes, `docs/seats/RUNNER.md` (the priming), `ru
 - Default share of 16 cores until the person answers desk #248; the rigger tells this seat the answer.
 - Job logs go to the runs directory under the user's data volume (`%x-%j.log`), never into the repo.
 - The proxy must be exported into the job (the sbatch scripts refuse without it).
+- CPU-only jobs on the lab account carry `--nice=100`, GPU jobs never (the account's rule, the rigger's post of
+  2026-11-18 for Anton: bigger CPU jobs kept a GPU job waiting under the group cap). `ll-fetch-supp.sbatch` has it;
+  every new ll- script gets it.
 - Never touch another user's or another seat's jobs; the GPU jobs in the pinned situation block belong to another repo.
 
 ## What I learned
