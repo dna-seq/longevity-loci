@@ -1535,3 +1535,9 @@ rules, each a reading of rules already decided.
    replication test belong to; the Catalog's line is a proxy at 5.7e-7 after genomic control. D with
    `replication_failed` follows from UK Biobank fathers' opposite line (heterogeneity P 1.6e-6, power 1.00) with no
    independent pass in the discovery's direction (D25.1). Rejected: leading on the Catalog's proxy.
+7. **173 B3GLCT (rs1043332229) is B, as rows 68 and 74.** Pilling's mothers, fathers and combined scans are the
+   paper's declared primary analyses, each reported against 5e-8, and rows 68 and 74 count one of them as the
+   discovery. That differs from 170, where one cohort's P was the best of six case thresholds chosen in the analysis
+   (D42.1). A variant at 0.7 % that no sample outside UK Biobank holds is untested, not failed. Pilling's rare-variant
+   caveat and the poly-T site stay on the row, and the fathers' flat line is named. It does not set `sex_specific`
+   with no test of the difference (D29.16). Rejected: C, reading the declared scans as several looks.
