@@ -33,7 +33,9 @@ docs/seats/MODULE_NOTES.md module/`); the last section keeps only what is still 
   module/ at 3ee0bbb (the 12c673f rehearsal, signature aebf5e38), without published.json. This seat answered
   (641719261): no licence in the spec, not closed, the spec comment and provenance still call D1/D3 pending
   defaults; each waits on a word. The compiler trio 0.8.9 (RM449, our four mirrored indels) is on PyPI, not yet in
-  the plugin's lock.
+  the plugin's lock. The PR is just-dna-lite#37 (the lead, 641721970), our four points open in its "before
+  publishing" list; the lead also wants studies.csv's analysis and conclusion text worded for a reader (it cites
+  decision and quote ids raw), a plan item for the lead, the curator and this seat, not yet set.
 - **The org move (the lead, 640874040)**: a ticket for this seat may arrive from genie's secretary (another
   organisation). Leave it unread until the lead says the person has given the go; do not run the org-move switch
   before. Done 2026-11-17: the move finished by the org-move tool and this seat punched in again in
@@ -60,7 +62,8 @@ docs/seats/MODULE_NOTES.md module/`); the last section keeps only what is still 
 1. `git pull --ff-only` (its "Cannot fast-forward to multiple branches" is harmless); `uv run loci check rows`.
 2. `git status`: **no uncommitted row edits in the tree.** The clone is shared and the export reads the working
    tree, so a curator's uncommitted edit rides along (it happened once, at 7040f7d).
-3. `uv run loci export` (writes `module/`). Read its summary of what 0.8 has no place for, against the last
+3. `JMC_TRACE=0 uv run loci export` (writes `module/`; since plugin v0.48.15 the trace hook also catches Bash writes, so
+   without the variable this session leaves `module/logs/trace/*.jsonl`, tracked and shipped). Read its summary of what 0.8 has no place for, against the last
    build's; a moved count is a row change to name in the report.
 4. Remove the previous build output (a `2.0.0` folder on the data volume, outside the repo).
 5. `enrich_module` on `module/` (runs a few minutes in the background), then `compile_module` strict into that
