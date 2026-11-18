@@ -104,7 +104,12 @@ eleven's was 101's proxy allele).
 - Plugin `just-module-creator` pinned by the liaison at v0.48.13 (96ad6e1, 2026-11-17; enricher 0.8.7, format and
   compiler 0.8.6). New in it: `registry_publish` refuses a spec whose module_spec.yaml names another name or version
   than the publish (ours: longevitymap 2.0.0, matching); the log check reads every shipped `logs/` file. The
-  liaison moves the pin; this seat reloads. The kit (seats) is at v0.1.227 since 2026-11-16.
+  liaison moves the pin; this seat reloads. The kit (seats) is at v0.1.232.
+- **v0.48.14 (enricher 0.8.8), pinned 62c3d19, 2026-11-18; reload queued.** The shared enricher cache's ClinVar
+  moved to clinvar_2026-11-15 (3d73d49), so the next enrich may differ from 12c673f's for that alone: name it in
+  the report, not as a row change. Publish needs the rehearsal name equal to module.name (ours matches). A
+  provenance hook writes module/logs/trace/*.jsonl when a session hand-edits a module CSV; it is tracked and
+  would publish. loci export does not trigger it; never hand-edit module/, and check git status for logs/trace.
 - Plugin caches live on the data volume (`remember_setting JUST_DNA_PIPELINES_CACHE_DIR`, user config); the
   Ensembl lane (about 15 GB) is there. `$HOME` is the small volume.
 - Polygon account `longevity-loci`, namespace `test-longevity-loci` claimed there. Production's existing
