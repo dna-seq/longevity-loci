@@ -105,3 +105,6 @@ Still owed: reply to agents-kit/lead with each seat's notes commit, one `keys co
   that day; the v1 error slide from the manuscript's Table S14). Sent as .pptx in #longevity-loci; the Drive upload is
   Anton's (no Google login here). Not rendered here: running a downloaded office suite was denied, so layout was
   checked by a text-fit estimate only.
+
+- Anton, 2026-11-18: "if you have issues doing something you have to report in your messages to me": every block
+  (a tool refused, a login missing, a step not done) is named in the reply to him, with what blocked it.
