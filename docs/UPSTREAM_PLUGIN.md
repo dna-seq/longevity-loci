@@ -12,7 +12,7 @@ file): `[seat.liaison.watch.plugin]` says each new tag.
 
 ## Read mark
 
-**`v0.48.13`**, the tag `.claude/settings.json` pins (2026-11-17). The first mark, `v0.48.0` (3dd8c2a), was
+**`v0.48.14`**, the tag `.claude/settings.json` pins (2026-11-18). The first mark, `v0.48.0` (3dd8c2a), was
 fast-forwarded: no release before it was read.
 
 **The pin does not bind on this machine.** The person's user settings declare the marketplace `just-dna` with no
@@ -22,7 +22,7 @@ ref, and that entry outranks the project's: the client refused `marketplace add 
 while the pin named v0.48.1; updated, it is 0.48.2 at `1b622ff`, the tag plus one notes commit, the same code.
 The person's answer (2026-11-06): drop the user-level entry, so the repository's pin binds; theirs to do,
 since it is their settings file. Still present on 2026-11-09, so the copy is updated by hand to the pinned
-release: `claude plugin update just-module-creator@just-dna --scope project` installed 0.48.13 (2026-11-17), the
+release: `claude plugin update just-module-creator@just-dna --scope project` installed 0.48.14 (2026-11-18), the
 tag or main's head plus notes commits.
 
 ## Backlog
@@ -57,6 +57,18 @@ registry 0.27.0, format 0.7.1, compiler 0.7.2. Our caps (`docs/UPSTREAM_COMPILER
 
 ## Inbound verdicts
 
+- **`v0.48.14`** (2026-11-18). Its floors move to enricher 0.8.8 (RM445) and registry 0.32.0, so our enricher floor
+  follows the same day (`docs/UPSTREAM_COMPILER.md`); format and compiler stay 0.8.6, polars 1.44.2, duckdb 1.5.6.
+  **A host hook arrives with it** (RM31, the provenance ledger): on every Write or Edit, and after its literature,
+  fetch, lookup and `record_decision` tools, it records metadata (queries, identifiers, article hashes and lengths,
+  row hashes; never text or paths) into a per-session buffer, written to `<module>/logs/trace/*.jsonl` only when the
+  session edits a top-level CSV beside a `module_spec.yaml` by hand. Our `module/` is written by `loci export`, so a
+  ledger appears only if a seat hand-edits a module table; `module/logs/` is tracked, so such a file would be
+  committed with the module and published with it. `JMC_TRACE=0` turns it off. *For the module seat:*
+  `registry_publish` now requires the rehearsal name to equal `module.name` exactly (F160); `registry_upgrade_status`
+  is new; `registry_claims` says `spellings` and `matched`; `registry_review(s)` say `curated` is a `verified`
+  review from outside the namespace (S33); `trace_module` and `record_decision` are new. Install synced by hand;
+  the import is clean.
 - **`v0.48.13`** (2026-11-17). Nothing breaks; toolchain unchanged (format and compiler 0.8.6, enricher 0.8.7,
   registry 0.31.0, polars 1.44.2, duckdb 1.5.6); its enricher floor rises to 0.8.7, where our lock already is.
   *For the module seat:* `registry_publish` refuses a spec whose `module_spec.yaml` names another version, or a

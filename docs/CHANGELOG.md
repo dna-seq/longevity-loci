@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- just-dna-enricher 0.8.8 (floor `>=0.8.8`) with the module-creator plugin's pin to v0.48.14, which locks it and registry 0.32: a cache pull no longer labels kept files with a release it never fetched; the plugin adds a provenance ledger hook (`logs/trace/`, metadata only) and `registry_upgrade_status`.
 - A README that presents the work: what the evidence says (tiers, mechanisms), how a row is made and checked, the six seats, the limits; its two figures drawn from `rows/` and the git history by `scripts/readme_figures.py`.
 - The module-creator plugin's pin moved to v0.48.13 (toolchain unchanged): `registry_publish` refuses a spec naming another version, the log check reads every shipped log file, `search_trait_terms` finds an ontology term by name.
 - `loci fetch-supp` renders an .html page (a journal's table page) as its visible text, a table row a line with tab-separated cells as a sheet's; it refused one before ("no text for a .html file"), which left Broer 2015's Table 3 uncached.
