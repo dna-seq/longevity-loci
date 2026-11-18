@@ -208,6 +208,8 @@ mechanical consensus of the research tracks, to be confirmed or overturned by th
 
 - GWAS Catalog line rs4709783 C6orf118 (2026-11-18), Pilling 2016's mothers: no row. P 5.3e-8 in its own supplement, above 5e-8 (the Catalog rounds the mantissa), and the paper counts only chr22's variant for mothers; Pilling 2017's mothers, the same cohort eight times larger, P 0.31; Timmers 0.80. Literature search: nothing (OpenAlex and Semantic Scholar 429, unchecked).
 
+- 175 MYO5B (2026-11-19), the Catalog's rs78441534, Gurinovich 2021's NECS centenarians at P 4.69e-8: tier C by R-TIER-2 (rows 77, 92), absent from the Ashkenazi replication, nothing else tests it; T common in Africans (13.2 %), an ancestry route named, not shown.
+
 ## In hand
 
 The scout's 2015–2026 backfill (c0a8726, D41): the first twelve entries read (2026-11-18); the lead's word on rows 170

@@ -52,3 +52,19 @@ gnomAD v4's variant record for rs78441534, read through gnomAD's public API (dat
 `loci fetch-supp`, since Ensembl's REST service refused through the proxy on 2026-11-19 (503). GRCh38 18:50,083,001
 C>T (q5), genomes only (no exome call). T in 32 of 68,036 non-Finnish European alleles (0.047 %, q6), 5,469 of 41,550
 African (13.2 %, q7), none of 3,472 Ashkenazi (q8) or 10,620 Finnish (q9); 3.8 % over all genomes (q10). For row 175.
+
+## Reading 2026-11-19, record
+
+> [q11] data.variant.genome.populations[226] id 1kg:ceu ac 1 an 238
+
+> [q12] data.variant.genome.populations[256] id 1kg:ibs ac 1 an 208
+
+> [q13] data.variant.genome.populations[259] id 1kg:gbr ac 0 an 174
+
+> [q14] data.variant.genome.populations[220] id 1kg:tsi ac 0 an 206
+
+> [q15] data.variant.genome.populations[238] id 1kg:fin ac 0 an 196
+
+The 1000 Genomes European samples in the same record (gnomAD's HGDP and 1000 Genomes subset): T in 1 of 238 CEU
+alleles, 1 of 208 IBS, none of 174 GBR, 206 TSI or 196 FIN, 2 of 1,022 in all (0.2 %): rare, a second reference
+agreeing with the non-Finnish European genomes (q6) and the NECS controls. For row 175.

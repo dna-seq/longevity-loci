@@ -65,6 +65,8 @@ record, never left empty; multi-line text edits want whitespace-tolerant matches
 
 ## Log (from 2026-11-10)
 
+- 2026-11-19, row 175 MYO5B: Ensembl's REST service refused (proxy 503) all session. gnomAD's API answers a GraphQL query by GET, so `loci fetch-supp db-gnomad-4 'https://gnomad.broadinstitute.org/api?query=…'` caches the variant record (its populations include 1000 Genomes'); the plugin's `lookup_variant` gives the locus from a local snapshot but is not a cached source. A rare-in-Europe allele should always get its other-ancestry frequencies read: here T is 13 % in Africans, which the genotype texts and the ancestry caveat must carry.
+
 - 2026-11-18, Catalog line rs4709783: read the paper's own P before building. The Catalog prints mantissa and exponent, so 5.3e-8 shows as 5e-8; the supplement settled it as not genome-wide, and the larger scan holding the same people (Pilling 2017) confirmed it gone. A no-row line, as Kashtanova's (PROGRESS).
 
 - **174 SMIM7P1** (2026-11-18), tier B, rows 128 and 149's shape. Lessons: Zenin's last column is −log10 P (the
