@@ -349,12 +349,58 @@ def text_forms(text: str) -> tuple[str, str]:
     return kept, joined
 
 
+# A structured abstract's section heading as Europe PMC's abstractText runs it into the next sentence, with no space:
+# "...was introduced.ConclusionsWe found no evidence" (pmid-26754162, 2026-11-18).
+_HEADING = re.compile(
+    r"(?:Background|Backgrounds|Introduction|Context|Importance|Objectives?|Aims?|Purpose|Rationale|Design|Setting|"
+    r"Settings|Participants|Subjects|Exposures?|Interventions?|Measurements?|Methods?|Materials and methods|"
+    r"Main outcomes? and measures?|Outcomes?|Results?|Findings|Discussion|Interpretation|Conclusions?|"
+    r"Conclusions and relevance|Significance|Trial registration)$",
+    re.IGNORECASE,
+)
+
+
+def _starts_clean(text: str, at: int) -> bool:
+    """Nothing word-like runs into position `at`, or what does is a whole section heading glued on by the source."""
+    if at == 0 or not text[at - 1].isalnum() and text[at - 1] != "_":
+        return True
+    start = at
+    while start > 0 and text[start - 1].isalpha():
+        start -= 1
+    word = text[start:at]
+    before_ok = start == 0 or not text[start - 1].isalnum()
+    return before_ok and _HEADING.match(word) is not None and text[at].isupper()
+
+
+def _ends_clean(text: str, end: int) -> bool:
+    """Nothing word-like runs on from position `end`, or what follows is a section heading glued on by the source."""
+    if end == len(text) or not text[end].isalnum() and text[end] != "_":
+        return True
+    stop = end
+    while stop < len(text) and text[stop].isalpha():
+        stop += 1
+    # the heading is followed by the next sentence's first word, glued too: take the longest heading that fits
+    return text[end].isupper() and any(
+        _HEADING.match(text[end:k]) and (k == len(text) or text[k].isupper() or not text[k].isalnum())
+        for k in range(stop, end, -1)
+    )
+
+
 def located(quote: str, forms: tuple[str, ...]) -> bool:
     """The quote occurs in a form of the text, starting and ending at a word boundary: a quote may not begin or end
-    inside a word."""
+    inside a word. A boundary is checked only on a side where the quote has a word character (a quote ending in a
+    full stop may meet the next word), and a structured abstract's section heading glued to the sentence beside it
+    ("ConclusionsWe found") counts as a boundary, never any other run-on word."""
     wanted = normalise(quote).strip('"').strip()
-    pattern = re.compile(r"(?<!\w)" + re.escape(wanted) + r"(?!\w)")
-    return any(pattern.search(f) for f in forms)
+    if not wanted:
+        return False
+    head_is_word = wanted[0].isalnum() or wanted[0] == "_"
+    tail_is_word = wanted[-1].isalnum() or wanted[-1] == "_"
+    for form in forms:
+        for m in re.finditer(re.escape(wanted), form):
+            if (not head_is_word or _starts_clean(form, m.start())) and (not tail_is_word or _ends_clean(form, m.end())):
+                return True
+    return False
 
 
 _TOKEN = re.compile(r"[A-Za-z0-9]{4,}")

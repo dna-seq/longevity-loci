@@ -100,6 +100,30 @@ def test_quotes_must_start_and_end_at_word_boundaries(tree: Path, abstract: str)
     assert found == {"q1": Kind.LOCATED, "q2": Kind.LOCATED, "q3": Kind.NOT_FOUND}
 
 
+def test_a_glued_section_heading_is_a_boundary(tree: Path, abstract: str) -> None:
+    """Europe PMC runs a structured abstract's heading into the next sentence ("introduced.ConclusionsWe found",
+    pmid-26754162): a quote starting after the heading, or ending in a full stop before one, is located; a quote
+    starting after any other run-on word still is not."""
+    start = "Consistent with previous reports"
+    assert start in abstract
+    glued = abstract.replace(start, "lifespan.Conclusions" + start)
+    (tree / "cache" / "pmid-31413261.txt").write_text(glued)
+    assert kinds(check_quotes(tree / "corpus", tree / "cache")) == {Kind.LOCATED: 2}
+
+    note = tree / "corpus" / "pmid-31413261.md"
+    q1 = next(line for line in note.read_text().splitlines() if line.startswith("> [q1] "))[len("> [q1] "):]
+    assert q1.endswith(".")
+    after = abstract.replace(q1, q1 + "ResultsMultivariate")
+    assert after != abstract
+    (tree / "cache" / "pmid-31413261.txt").write_text(after)
+    assert kinds(check_quotes(tree / "corpus", tree / "cache")) == {Kind.LOCATED: 2}
+
+    run_on = abstract.replace(start, "lifespan.Overall" + start)
+    (tree / "cache" / "pmid-31413261.txt").write_text(run_on)
+    found = {f.where: f.kind for f in check_quotes(tree / "corpus", tree / "cache")}
+    assert found == {"q1": Kind.NOT_FOUND, "q2": Kind.LOCATED}
+
+
 @pytest.mark.parametrize(
     ("addition", "reason"),
     [
