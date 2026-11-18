@@ -1,7 +1,7 @@
 """Build the LongevityMap v1 -> v2 comparison deck (python-pptx), in just-dna-lite's look: its UI's white ground and the four colours of its helix logo.
 
 Run: uv run --no-project --with python-pptx python -I scripts/longevitymap_deck.py LOGO.png OUT.pptx
-LOGO is the dna-seq organisation's avatar (the helix). Numbers are written in as of 2026-11-18; update them from
+LOGO is just-dna-lite's images/just_dna_seq.jpg (the helix on white). Numbers are written in as of 2026-11-18; update them from
 rows/, module/ and the v1 audit (just-dna-lite docs/longevitymap_v2) before reusing.
 """
 
@@ -53,7 +53,7 @@ def slide(title: str | None = None, kicker: str | None = None, logo: bool = True
     s.background.fill.solid()
     s.background.fill.fore_color.rgb = BG
     if logo:
-        s.shapes.add_picture(str(LOGO), W - inch(0.95), inch(0.3), inch(0.6), inch(0.6))
+        s.shapes.add_picture(str(LOGO), W - inch(1.35), inch(0.3), inch(1.0), inch(0.66))
     if kicker:
         text(s, kicker.upper(), 0.6, 0.35, 10, 0.3, size=11, color=TEAL, bold=True)
     if title:
@@ -125,7 +125,7 @@ def style_chart(chart, legend=False):
 
 # ---------------------------------------------------------------- 1 title
 s = slide(logo=False)
-s.shapes.add_picture(str(LOGO), inch(8.6), inch(1.6), inch(4.0), inch(4.0))
+s.shapes.add_picture(str(LOGO), inch(8.3), inch(1.9), inch(4.5), inch(2.96))
 text(s, "JUST-DNA-LITE · LONGEVITY MODULE", 0.7, 1.5, 7.5, 0.4, size=13, color=TEAL, bold=True)
 text(s, "LongevityMap, re-curated from the evidence", 0.7, 1.95, 7.6, 2.0, size=40, color=WHITE, bold=True)
 text(s, "From HAGR's 2017 database, through the module we shipped, to a version where every locus earns its place",
