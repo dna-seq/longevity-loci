@@ -1,0 +1,98 @@
+# A locus outside the seed list, from the scout's GWAS Catalog entry (the 2015–2026 backfill, D41), its own row under
+# the next free id. Curated 2026-11-19. Lead rs78441534, Gurinovich 2021's NECS centenarian SNP in MYO5B (18q21.1),
+# GRCh38 18:50,083,001 C/T, GRCh37 18:47,609,371; the sister of rows 19, 31, 41, 58, 77 and 92 from the same paper.
+# T is rare in Europeans (0.03 % of NECS controls' alleles, 0.047 % in gnomAD v4's non-Finnish European genomes) and
+# absent in its Ashkenazi and Finnish ones, but common in its African genomes (13.2 %). T is the allele the discovery
+# puts with reaching 100. rs75845837, 398 bases away, carries the same counts and P (the same signal).
+locus_id: 175
+locus_name: MYO5B
+verdict: kept
+verdict_reason: >-
+  Tier C under R-TIER-2 (D30.5), as rows 77 and 92: genome-wide in one old-against-young case-control, unreplicated.
+  Gurinovich 2021's GWAS of 1,320 NECS centenarians against 2,899 controls finds T more common among the centenarians
+  (0.51 % against 0.03 % of alleles, score Z 5.46, P 4.69e-8, Supplement Table 1, pmid-33948810 q40): genome-wide at
+  the paper's 5e-8 (q13), just; the GWAS Catalog's 5e-8 is that P rounded (db-gwascatalog-2026.10.29 q839). No
+  effect size is printed; a crude odds ratio of about 17 rests on fewer than two expected control copies (derived,
+  not read as the effect, as row 41). The paper's replication cannot test it: the variant is absent from the
+  Ashkenazi sample (q45, q46; dashes in Table 2, q42), as it is from gnomAD's Ashkenazi genomes (db-gnomad-4 q8).
+  Untested, not failed; no red flag can be scored. The control frequency fits the reference: gnomAD v4's non-Finnish
+  European genomes put T at 0.047 % (32 of 68,036 alleles, q6), the paper's own gnomAD figure 2 in 10,000 (q45), so
+  the source is not shown overfit (D26.10): not D. One reading is left open and named: T is common in African
+  genomes (13.2 %, q7), so a few percent more African ancestry among the centenarians than the controls would supply
+  the excess copies (derived); the model adjusts for sex and four principal components (q49) and the controls were
+  chosen to match the NECS's European ancestry (pmid-33948810 q11), which argues against it without excluding it,
+  as at row 125. Nothing else tests it: Park 2025's own-survival deposits hold a line (both sexes P 0.75, men 0.33,
+  women 0.55, pmid-40021682 q250 to q252), but at about 0.02 % it is below Park's own MAF 0.1 % filter (q39, q41), an
+  excluded line (D26.7, as 77 and 92); Timmers 2019's LifeGen file, Pilling 2017's four deposits, Deelen 2019's
+  percentiles, FinnGen R11's deaths (T absent in gnomAD's Finns, q9), Zenin 2019 and Foote 2025's seven deposits
+  hold no line. Outcome cells read for T: exceptional survival + (NECS); lifespan and healthspan untested. Open
+  Targets 26.09 has no record (db-opentargets-26.09 q1593): no credible set, no locus-to-gene, no QTL, so causal C4
+  and effector E4; the paper places the SNP in MYO5B (q44), and the variant is not among its 56 pQTL SNPs (q5).
+  Mechanism general ageing: the authors name MYO5B's link to old age and cancer resistance in giant tortoises and no
+  known role in human longevity (q47, q48). The Results count three rare SNPs in the region (q43, q44); Supplement
+  Table 1 lists two (q40, q41). The literature search on the rsID (2026-11-19, all six services answered) finds this
+  paper alone. PROTECT:PRESENCE (the rarer T goes with reaching 100). Neutral, protective and protective genotypes,
+  as 77 and 92, the shares NECS controls' (T 0.03 %), the frequency the claim was made at. Descriptive. Age of
+  action unknown. The evidence is European.
+axes:
+  tier: {value: C, cites: [pmid-33948810#q40, pmid-33948810#q41, pmid-33948810#q42, pmid-33948810#q13, pmid-33948810#q1, pmid-33948810#q3, pmid-33948810#q45, pmid-33948810#q46, pmid-33948810#q49, pmid-33948810#q11, db-gnomad-4#q6, db-gnomad-4#q7, db-gnomad-4#q8, db-gwascatalog-2026.10.29#q838, db-gwascatalog-2026.10.29#q839, pmid-40021682#q250, pmid-40021682#q39, pmid-40021682#q41]}
+  mechanism: {value: general_ageing, cites: [pmid-33948810#q47, pmid-33948810#q48]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: untested, lifespan: untested, exceptional_survival: "+",
+            cites: [pmid-33948810#q40, pmid-40021682#q250, pmid-40021682#q251, pmid-40021682#q252, pmid-40021682#q39, pmid-40021682#q41]}
+  actionability: {label: descriptive, cites: [pmid-33948810#q40]}
+  context: {values: [eur_only_evidence], cites: [pmid-33948810#q1, pmid-33948810#q11]}
+flags:
+  - {token: "PROTECT:PRESENCE", cites: [pmid-33948810#q40, pmid-33948810#q3]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1593]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q1593, pmid-33948810#q44]}
+variants:
+  - rsid: rs78441534
+    locus: {chrom: "18", start: 50083001, ref: C, cites: [db-gnomad-4#q5]}
+    gene: ""
+    phenotype: MYO5B region, reaching 100
+    trait_efo_id: OBA_VT0005372
+    effect_allele: T
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: C/C
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position, as almost everyone of European ancestry
+          does. It is the reference the other combinations are compared with. The position lies in the MYO5B gene on
+          chromosome 18.
+      - genotype: C/T
+        state: protective
+        conclusion: >-
+          You carry one copy of a rare T version of this DNA position (about 6 in 10,000 people of European ancestry
+          do, and it is much more common in people of African ancestry). One American study found it more often among
+          people who reached 100 than among younger people. No other study has been able to check it, so it is a
+          single early finding and a tendency, not a guarantee.
+      - genotype: T/T
+        state: protective
+        conclusion: >-
+          You carry two copies of a rare T version of this DNA position, which is very uncommon in people of European
+          ancestry. One American study found the T version more often among people who reached 100 than among younger
+          people, but no one with two copies was studied separately and no other study has checked it. It is a single
+          early finding and a tendency, not a guarantee.
+studies:
+  - rsid: rs78441534
+    note: pmid-33948810
+    quote: q40
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: centenarian_case_control
+    population: European (New England Centenarian Study centenarians against unrelated controls)
+    ancestry: [EUR]
+    n_cases: 1320
+    sample_size: 4219
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "4.69E-08"
+    p_value_num: 4.69e-08
+    age_of: participant
+    effect_allele: T
+    direction: protective
+    statistical_test: "Score test in the NECS GWAS, logistic mixed model adjusted by sex and four principal components (q49; Supplementary Table 1, q40; legend q3), score Z 5.46, no effect size printed; T 0.51 % of cases' alleles against 0.03 % of controls'; absent from the LGP replication sample (q45, q46), untested there; R-TIER-2 caps it at C"
+    curator: claude-opus-5-5

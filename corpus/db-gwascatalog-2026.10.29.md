@@ -2947,3 +2947,15 @@ African fathers' line. For row 174.
 The Catalog's association 16532498 at rs4709783 (GCST003393, Pilling 2016, parental longevity EFO_0007796, β 0.028085,
 "increase"): P printed as 5e-8, mantissa 5. The paper's supplement prints 5.30E-08 (pmid-27015805 q27), above the
 threshold.
+
+## Reading 2026-11-19, supplement
+
+> [q838] association_id 80754856 risk_frequency 3.0E-4
+
+> [q839] beta 5.462722 unit increase p_value 5e-08 accession_id GCST012419 pubmed_id 33948810 first_author Gurinovich A
+
+> [q840] _embedded.associations[0].locations[0] 18:50083001
+
+The Catalog's one association at rs78441534 (Gurinovich 2021, "Longevity (100 years and older)", OBA_VT0005372): the
+"beta" is the paper's score Z (5.46, pmid-33948810 q40), not an effect size; risk frequency 0.0003, the controls'; P
+printed 5e-8 from the paper's 4.69e-8; GRCh38 18:50,083,001.

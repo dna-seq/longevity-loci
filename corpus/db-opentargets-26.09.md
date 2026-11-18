@@ -5442,3 +5442,9 @@ expression or splicing QTL sets for MDH2, POR and STYXL1, the GWAS ones platelet
 rs10198124 (2_35216373_G_T): 26 sets (q1586), none of a lifespan class, nearly all adiposity: T, the alt allele, lowers
 waist circumference (β −0.0089, P 1.1e-9; q1587, q1588), body mass index (−0.0085; q1589, q1590) and leg fat mass
 (−0.0088, P 3.1e-9; q1591, q1592); it leads none (PIP at most 0.013). For row 174.
+
+## Reading 2026-11-19, record
+
+> [q1593] data variant null
+
+18_50083001_C_T (rs78441534): no Open Targets record, so no credible set, no locus-to-gene and no QTL. For row 175.

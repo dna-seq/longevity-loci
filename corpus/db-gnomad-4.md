@@ -34,3 +34,21 @@ gnomAD v4's genomes are v3.1.2's 76,156 (q3), a 2021 release, before UK Biobank'
 apart from the exomes in v4 (q4): so the genome frequencies (row 140's 0.334 %, db-ensembl-116#q902) are not UK
 Biobank's people. For D35.6 shown on row 140, batch fourteen (D37).
 
+## Reading 2026-11-19, record
+
+> [q5] data.variant variant_id 18-50083001-C-T chrom 18 pos 50083001 ref C alt T exome null
+
+> [q6] data.variant.genome.populations[27] id nfe ac 32 an 68036
+
+> [q7] data.variant.genome.populations[24] id afr ac 5469 an 41550
+
+> [q8] data.variant.genome.populations[21] id asj ac 0 an 3472
+
+> [q9] data.variant.genome.populations[6] id fin ac 0 an 10620
+
+> [q10] data.variant.genome ac 5775 an 152318
+
+gnomAD v4's variant record for rs78441534, read through gnomAD's public API (dataset gnomad_r4) and cached by
+`loci fetch-supp`, since Ensembl's REST service refused through the proxy on 2026-11-19 (503). GRCh38 18:50,083,001
+C>T (q5), genomes only (no exome call). T in 32 of 68,036 non-Finnish European alleles (0.047 %, q6), 5,469 of 41,550
+African (13.2 %, q7), none of 3,472 Ashkenazi (q8) or 10,620 Finnish (q9); 3.8 % over all genomes (q10). For row 175.
