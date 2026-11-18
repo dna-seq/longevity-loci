@@ -156,3 +156,9 @@ production (528 rsIDs, 671 studies, compiled on 0.7.0) is R-LEGACY-1's research-
   (20 indel VRS lines, no new indel; not closed; ClinVar currency). Export summary unchanged but for row 170's
   counts. Next block in curation: the GWAS Catalog's 13 lines as rows on 170's pattern; the rebuild waits for the
   lead's close.
+
+- 2026-11-18, trial at 717de08 (rows 171 MYL2-VHRT, 172 SRRM3-POR, 173 B3GLCT; plugin v0.48.14, enricher 0.8.8,
+  ClinVar 2026-11-15 in the cache): strict green, never published. Exported from a clean worktree, since the
+  shared tree held the curator's unparsed, uncommitted 174. variants 501, studies 689, haplotypes 6, diplotypes
+  12; 249 resolved, none unresolved, no ref or allele mismatch, 8 VRS minted. Warnings as before (20 indel VRS
+  lines, not closed, one dataset_currency). second_signal_of now counts 71 (171). content_signature cef8e5fc.
