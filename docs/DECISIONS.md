@@ -1541,3 +1541,9 @@ rules, each a reading of rules already decided.
    (D42.1). A variant at 0.7 % that no sample outside UK Biobank holds is untested, not failed. Pilling's rare-variant
    caveat and the poly-T site stay on the row, and the fathers' flat line is named. It does not set `sex_specific`
    with no test of the difference (D29.16). Rejected: C, reading the declared scans as several looks.
+8. **174 SMIM7P1 (rs10198124) is B.** Two reasons, either one enough. First, tier A's first criterion needs the
+   genome-wide P in a GWAS of at least 100,000 lives (§4.1), and Joshi 2017's African fathers are a sample far below
+   that. Second, the European passes (Timmers, Park one-sided 0.002; Pilling's top 10 %, Deelen's 99th 0.03) run at
+   about a twentieth of the African effect, which is §4.1's own B clause, "replication with a much smaller effect".
+   They support the direction and are named as such. `ancestry_specific:afr` and `sex_specific:m` stand, the sex
+   contrast tested (z 4.4, D29.16). Rejected: A, counting the European look-ups as the replication.
