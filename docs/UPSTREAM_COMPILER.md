@@ -143,7 +143,10 @@ here as the first import lands.
   lock follows the plugin's, which still locks 0.8.7 (v0.48.13). **This machine's caches checked (2026-11-17),
   read-only, by its "After upgrading" step 2:** ClinVar's `pull-record.json` carries `release_sha256` and its parquet
   files date from the record's own day (2026-11-12), so it is not the affected kind; Ensembl's has
-  `release_sha256: null`, which is that lane's normal state (it publishes no `release.json`), not the marker. No
+  `release_sha256: null`, which is that lane's normal state (its hub repository publishes no `release.json`, 404
+  on 2026-11-18), not the marker; and its 25 parquet files match the hub's listing by name and size (pulled
+  2026-11-12, after the hub's build of 2026-11-04), checked 2026-11-18 when registry 0.32.1 said production's
+  Ensembl lane was among nine re-pulled. No
   other lane is cached here. So no module enriched here needs re-enriching on this account. When the plugin moves to
   0.8.8, ours follows, and one `cache pull` is run then as the step says.
 - **RM428, the GWAS pass (2026-11-11, from the plugin's liaison, S143; severity high).** The GWAS Catalog retired

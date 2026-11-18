@@ -12,7 +12,7 @@ file): `[seat.liaison.watch.registry]` says each new tag.
 
 ## Read mark
 
-**`v0.32.0`** (tagged 2026-11-15, `e2e172b`; seen 2026-11-16), read whole (below); `v0.31.1` (2026-11-13), `v0.31.0` and `v0.30.1` before it. Before it, **`v0.30.0`** (2026-11-12): the release the module seat first ran against, its first rehearsal on the polygon
+**`v0.32.1`** (tagged 2026-11-17, `156953e`; seen 2026-11-18), read whole (below); `v0.32.0` (2026-11-15), `v0.31.1` (2026-11-13), `v0.31.0` and `v0.30.1` before it. Before it, **`v0.30.0`** (2026-11-12): the release the module seat first ran against, its first rehearsal on the polygon
 (`test-longevity-loci/longevitymap@2.0.0`, our 0fa5e77; strict validate and compile green). Tags before it are
 fast-forwarded past, read only by their changelog headings as listed below; nothing here used them.
 
@@ -39,6 +39,12 @@ re-rehearsed once per curation batch.
 
 ## Inbound verdicts
 
+- **`v0.32.1`** (2026-11-17). Client surface unchanged; its server floors the enricher at 0.8.8 (RM445), so
+  `warm-caches --apply` repairs a lane pulled before release checksums were recorded; production held nine such
+  lanes, Ensembl among them, re-pulled before its upgrade. A lane lookup by `chrom` and `start` lists now matches them
+  as pairs (it answered their cross product: 13 positions gave 22 rows). *For the module seat:* a remote lane read
+  by positions returns only the positions asked once an instance serves 0.32.1. This machine's own caches are
+  checked in `docs/UPSTREAM_COMPILER.md` (0.8.8): not affected. Nothing to change here.
 - **`v0.32.0`** (2026-11-15). Additive: responses gain fields, one new client call (`upgrade_status`); its server
   floors the enricher at 0.8.7, as ours does. Neither instance serves it yet (2026-11-16: the polygon 0.30.0 on
   format 0.8.4, production 0.31.0 on 0.8.6; both compatible with our 0.8.6 client). *For the lead and the module
