@@ -47,7 +47,10 @@ session can carry on from these notes, `docs/seats/RUNNER.md` (the priming), `ru
 - The button (`watchdog.py nothing`) closes the wake, not the turn: with pending work, go on with it.
 - Desk watcher errors (GitHub 503, rate limit) are transient; it retries every 300 s and says so again only after a
   read succeeds. v0.1.211 made desk readers on one machine share one copy.
-- From v0.1.227 the machine runs one watchdog for every seat.
+- From v0.1.227 the machine runs one watchdog for every seat. Its "watchdog gone under its live session" wakes here
+  were all release handovers, not kills: the old process ends "no seat served for 60 s", the next copy starts and
+  reads the card's old pid as an orphan, about 2.5 min with no watcher (counts on kit #537, 2026-11-18). Press
+  `nothing`.
 - An embassy message marked sensitive is described in `#embassy-review` with the secret cut out, after handling.
 
 ## To file
