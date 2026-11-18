@@ -204,6 +204,8 @@ mechanical consensus of the research tracks, to be confirmed or overturned by th
 
 - 173 B3GLCT (2026-11-18), the Catalog's chr13:31871514 (rs1043332229, G 0.7 %, Pilling 2017's mothers only): tier B by §4.1's single-study clause (rows 68, 74), untested outside UK Biobank.
 
+- 174 SMIM7P1 (2026-11-18), Joshi 2017's rs10198124, African fathers only: tier B, `ancestry_specific:afr`, `sex_specific:m`; Europe leans its way at a twentieth of the effect, an adiposity locus.
+
 ## In hand
 
 The scout's 2015–2026 backfill (c0a8726, D41): the first twelve entries read (2026-11-18); the lead's word on rows 170

@@ -2930,3 +2930,12 @@ P 5e-8, no rsID. The β is on the Martingale residual, where positive is a short
 > [q834] _embedded.studies[2] initial_sample_size 412,937 British ancestry individuals replication_sample_size NA gxe false gxg false snp_count 11535925 imputed true pooled false accession_id GCST006696 full_summary_stats_available true user_requested true pubmed_id 29227965 platforms Affymetrix [11535925] (imputed) disease_trait Parental longevity (mother's attained age) full_summary_stats http://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST006001-GCST007000/GCST006696 terms_of_license https://www.ebi.ac.uk/about/terms-of-use/
 
 Pilling 2017's mothers' study GCST006696 (q834): 412,937 British-ancestry participants. For row 173.
+
+## Reading 2026-11-18, record
+
+> [q835] _embedded.associations[0] association_id 24913931 risk_frequency 0.39 pvalue_description pvalue_mantissa 2 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [1.15-1.29] or_per_copy_num 1.22 or_value 1.22 beta - p_value 2e-08 accession_id GCST004983 pubmed_id 29030599 first_author Joshi PK ci_lower 1.15 ci_upper 1.29
+
+> [q836] _embedded.associations[0].reported_trait[0] Parental lifespan
+
+rs10198124: one association (q835, q836), Joshi 2017's parental lifespan, OR (HR) 1.22, P 2e-8, risk frequency 0.39, the
+African fathers' line. For row 174.

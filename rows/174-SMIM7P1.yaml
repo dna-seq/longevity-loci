@@ -1,0 +1,122 @@
+# A locus outside the seed list, from the scout's GWAS Catalog entry (the 2015–2026 backfill, D41), its own row under
+# the next free id. Curated 2026-11-18. Lead rs10198124, Joshi 2017's African-ancestry fathers' signal: intergenic at
+# 2p22.3, downstream of the SMIM7P1 pseudogene, GRCh38 2:35,216,373 G/T, GRCh37 2:35,441,439, G ancestral; G at 43.8 %
+# in gnomAD's non-Finnish European genomes, 0.39 in Joshi's African cohorts. T is the allele the discovery puts with
+# longer life (G with more deaths).
+locus_id: 174
+locus_name: SMIM7P1
+verdict: kept
+verdict_reason: >-
+  Tier B by §4.1's single-study clause, as rows 128 and 149 (one genome-wide sample of African ancestry, unreplicated in
+  a sample of its own): Joshi 2017's African-ancestry fathers (9,359 lives, nine cohorts) put G with death, HR 1.22 (SE
+  0.0354), P 1.66e-8, the same direction in every cohort (pmid-29030599 q19); the both-parents analysis held no signal.
+  No other African sample is read. In Joshi's Europeans the SNP is null at that size (fathers HR 1.01, SE 0.007, P 0.21;
+  mothers P 0.77, q20); a cross-ancestry null is not a contradiction (D22.3), so it raises no flag. The larger European
+  samples since lean G's way at a far smaller effect: Timmers 2019's parents T longer, P 0.0039 (one-sided 0.002, q435);
+  Park 2025's own survival G more deaths, P 0.0035 (one-sided 0.0018, q247); Pilling 2017's both parents P 0.086 and top
+  10 % P 0.058 (one-sided 0.043 and 0.029, q328, q329); Deelen 2019's 99th T toward it, P 0.058 (one-sided 0.029, q383);
+  FinnGen R11's deaths flat (P 0.31, q138) (derived one-sided). They are European and about a twentieth of the African
+  effect, at an adiposity locus (below), so the row reads them as cross-ancestry support for the direction, not as the
+  replication of the African effect that §4.1's A asks. `sex_specific:m`: in Africans the fathers' log HR differs from
+  the mothers' (0.97, SE 0.038) at z 4.42, P 1e-5 (derived from the printed errors, D29.16); in Europeans the parents
+  do not differ (Pilling's mothers and fathers alike). `ancestry_specific:afr`: the genome-wide effect is African;
+  Europeans carry at most a small one. Outcome cells read for T: lifespan + (Timmers, Park, Pilling's both parents);
+  exceptional survival + (Deelen's 99th, Pilling's top 10 %); healthspan + (D31.4: Foote 2025's general factor has G
+  frailer, P 0.0098, F4 metabolic P 2.7e-6, F5 P 0.047, none the other way, q239 to q245; Zenin 2019 flat, P 0.75, q198).
+  Mechanism metabolism: in Open Targets' 26 sets, nearly all adiposity, T lowers waist circumference (P 1.1e-9), body
+  mass index and leg fat mass (db-opentargets-26.09 q1586 to q1592), and Foote's metabolic factor is its strongest
+  frailty line, so `mech:adiposity`, the longer-life allele the leaner; it leads none (PIP at most 0.013), so this is
+  the locus's European biology, not shown for the African signal. Causal C4 (D39.12). Effector E4: intergenic, no QTL
+  or colocalisation read for the row's phenotype. The literature search (the rsID, 2026-11-18; Semantic Scholar answered 429, its part
+  unchecked) finds Joshi 2017 and a review of accelerated ageing and race (Noren Hooten 2021, PMID 34883202), named, not
+  read.
+  Descriptive. Age of action unknown.
+axes:
+  tier: {value: B, cites: [pmid-29030599#q19, pmid-29030599#q20, pmid-30642433#q435, pmid-40021682#q247, pmid-29227965#q328, pmid-29227965#q329, pmid-31413261#q383, db-finngen-r11#q138, db-gwascatalog-2026.10.29#q835, db-gwascatalog-2026.10.29#q836]}
+  mechanism: {value: metabolism, cites: [db-opentargets-26.09#q1587, db-opentargets-26.09#q1588, db-opentargets-26.09#q1589, db-opentargets-26.09#q1590, pmid-40759756#q243]}
+  pleiotropy: {values: ["mech:adiposity"], cites: [db-opentargets-26.09#q1587, db-opentargets-26.09#q1588, db-opentargets-26.09#q1589, db-opentargets-26.09#q1590, db-opentargets-26.09#q1591, db-opentargets-26.09#q1592]}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
+            cites: [pmid-30642433#q435, pmid-40021682#q247, pmid-40021682#q248, pmid-40021682#q249, pmid-29227965#q328, pmid-29227965#q329, pmid-29227965#q330, pmid-29227965#q331, pmid-31413261#q382, pmid-31413261#q383, db-finngen-r11#q138, pmid-30729179#q198, pmid-40759756#q239, pmid-40759756#q240, pmid-40759756#q241, pmid-40759756#q242, pmid-40759756#q243, pmid-40759756#q244, pmid-40759756#q245]}
+  actionability: {label: descriptive, cites: [pmid-29030599#q19]}
+  context: {values: ["ancestry_specific:afr", "sex_specific:m"], cites: [pmid-29030599#q19, pmid-29030599#q20]}
+flags:
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1586]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q1586, db-ensembl-116#q1247]}
+variants:
+  - rsid: rs10198124
+    locus: {chrom: "2", start: 35216373, ref: G, cites: [db-ensembl-116#q1245]}
+    gene: ""
+    phenotype: 2p22.3 region, African fathers' lifespan
+    trait_efo_id: EFO_0007796
+    effect_allele: T
+    effect_size: 0.82
+    effect_measure: HR
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: G/T
+        state: neutral
+        conclusion: >-
+          You carry one copy of each of the two common versions of this DNA position, the most common combination
+          (about half of people of European ancestry, and of African ancestry, have it). It is the reference the other
+          combinations are compared with. The position lies on chromosome 2 between genes, in a stretch linked to body
+          weight.
+      - genotype: T/T
+        state: protective
+        conclusion: >-
+          You carry two copies of the T version of this DNA position (about 3 in 10 people of European ancestry, and
+          nearer 4 in 10 of African ancestry). In a study of people of African ancestry, fathers of carriers of this
+          version lived longer, and much larger studies of people of European ancestry lean the same way but with a far
+          smaller effect. In Europeans the same version goes with slightly less body fat. It is an early finding and a
+          tendency, not a guarantee.
+      - genotype: G/G
+        state: risk
+        conclusion: >-
+          You carry two copies of the G version of this DNA position (about 2 in 10 people of European ancestry, and
+          about 15 in 100 of African ancestry). In a study of people of African ancestry, fathers of carriers of this
+          version lived less long, and much larger studies of people of European ancestry lean the same way but with a
+          far smaller effect. In Europeans the same version goes with slightly more body fat. It is an early finding and
+          a tendency, not destiny.
+studies:
+  - rsid: rs10198124
+    note: pmid-29030599
+    quote: q19
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: African-ancestry participants' fathers (Joshi 2017, nine cohorts)
+    ancestry: [AFR]
+    sample_size: 9359
+    sample_unit: lives
+    stratum: parent
+    stratum_level: father
+    stat_significance: significant
+    p_value: "1.66e-08"
+    p_value_num: 1.66e-08
+    effect_size: 1.22
+    effect_measure: HR
+    effect_unit: hazard ratio of fathers' death per G allele
+    effect_allele: G
+    direction: risk
+    statistical_test: "Cox model on fathers' survival, African-ancestry meta-analysis (q19), SE 0.0354 on the log HR; same direction in all nine cohorts; mothers HR 0.97, P 0.51 (q20)"
+    curator: claude-opus-5-5
+  - rsid: rs10198124
+    note: pmid-30642433
+    quote: q435
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 640185
+    sample_unit: lives
+    stat_significance: nominal
+    p_value: "0.0039116331"
+    p_value_num: 0.0039116331
+    p_one_sided: 0.002
+    effect_size: 0.01119029
+    effect_measure: beta
+    effect_unit: beta1 on parental lifespan per T allele, longer positive
+    effect_allele: T
+    direction: protective
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0039, direction ++; one-sided 0.002 the discovery's way (derived); a different ancestry and a far smaller effect, read as support for the direction (D22.3)"
+    curator: claude-opus-5-5

@@ -4330,3 +4330,14 @@ Catalog's line and Wright 2019's genotyped lead: GRCh38 7:75,986,787 G/A/C (q123
 rs1043332229 (row 173), Pilling 2017's 13:31,871,514 (GRCh37): GRCh38 13:31,297,377 T/C/G, T ancestral (q1241); G at 0.70 % in
 gnomAD's non-Finnish genomes (q1242); intronic in B3GLCT, formerly B3GALTL (q1243, q1244). The site sits at the end
 of a poly-T run (dbSNP's rs35163232 indels at 13:31,871,513 GRCh37 overlap it). For row 173.
+
+## Reading 2026-11-18, record
+
+> [q1245] mappings[0] strand 1 seq_region_name 2 start 35216373 ancestral_allele G location 2:35216373-35216373 end 35216373 coord_system chromosome assembly_name GRCh38 allele_string G/A/C/T
+
+> [q1246] populations[16] allele_count 29747 frequency 0.4382 population gnomADg:nfe allele G
+
+> [q1247] [0] start 35216373 end 35216373 seq_region_name 2 input rs10198124 allele_string G/A/C/T id rs10198124 strand 1 most_severe_consequence downstream_gene_variant assembly_name GRCh38
+
+rs10198124 (row 174): GRCh38 2:35,216,373 G/A/C/T, G ancestral (q1245); G at 43.8 % in gnomAD's non-Finnish genomes (q1246);
+downstream of the SMIM7P1 pseudogene, intergenic (q1247). For row 174.

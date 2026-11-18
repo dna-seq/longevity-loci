@@ -65,6 +65,11 @@ record, never left empty; multi-line text edits want whitespace-tolerant matches
 
 ## Log (from 2026-11-10)
 
+- **174 SMIM7P1** (2026-11-18), tier B, rows 128 and 149's shape. Lessons: Zenin's last column is −log10 P (the
+  row 130 lesson, missed at 171 and 172 and corrected, 717de08): read the header line before every Zenin number. Run
+  the literature search before writing its sentence. An African-ancestry discovery whose European look-ups pass at a
+  far smaller effect is read as support for the direction, not replication of the effect (put to the lead).
+
 - **173 B3GLCT** (2026-11-18), tier B, row 68's shape. Lessons: a Catalog line with no rsID is a GRCh37 position
   (Pilling's build); find the rsID with GRCh37's `overlap/region` filtered to single-base variants of the paper's
   alleles. A rare variant is missing from Timmers, Deelen, FinnGen, Zenin, Foote and Open Targets: write each as

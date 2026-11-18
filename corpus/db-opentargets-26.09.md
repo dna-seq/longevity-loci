@@ -5422,3 +5422,23 @@ expression or splicing QTL sets for MDH2, POR and STYXL1, the GWAS ones platelet
 > [q1585] data variant null
 
 13_31297377_T_G (q1585): no Open Targets record, so no credible set and no QTL. For row 173.
+
+## Reading 2026-11-18, record
+
+> [q1586] data.variant.credibleSets count 26
+
+> [q1587] data.variant.credibleSets.rows[2].study id GCST90692682 traitFromSource Waist circumference (UKB data field 48) studyType gwas
+
+> [q1588] data.variant.credibleSets.rows[2].locus.rows[0] posteriorProbability 0.007818157445798623 beta -0.00890605044655325 pValueMantissa 1.0699700117111206 pValueExponent -9
+
+> [q1589] data.variant.credibleSets.rows[6].study id GCST90013870 traitFromSource Body mass index (UKB data field 21001) studyType gwas
+
+> [q1590] data.variant.credibleSets.rows[6].locus.rows[0] posteriorProbability 0.012692197810147065 beta -0.008489707528395441 pValueMantissa null pValueExponent null
+
+> [q1591] data.variant.credibleSets.rows[19].study id GCST90691794 traitFromSource Leg fat mass left (UKB data field 23116) studyType gwas
+
+> [q1592] data.variant.credibleSets.rows[19].locus.rows[0] posteriorProbability 0.0071484186005874965 beta -0.008831371509112037 pValueMantissa 3.074812889099121 pValueExponent -9
+
+rs10198124 (2_35216373_G_T): 26 sets (q1586), none of a lifespan class, nearly all adiposity: T, the alt allele, lowers
+waist circumference (β −0.0089, P 1.1e-9; q1587, q1588), body mass index (−0.0085; q1589, q1590) and leg fat mass
+(−0.0088, P 3.1e-9; q1591, q1592); it leads none (PIP at most 0.013). For row 174.

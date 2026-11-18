@@ -962,3 +962,9 @@ FinnGen R11's deaths at rs4426183 (q136): alt C −0.0092 (SE 0.0076) for death,
 > [q137] 7 76134306 G A rs28689051 AC005077.7 0.969918 0.0132651 0.000283344 0.00751348 0.420426 0.419837 0.4205
 
 FinnGen R11's deaths at rs28689051 (q137): alt A +0.0003 (SE 0.0133) for death, P 0.97: flat. For row 172.
+
+## Reading 2026-11-18, record
+
+> [q138] 2 35216373 G T rs10198124 SMIM7P1 0.312732 0.504828 -0.00765922 0.00758709 0.611577 0.611475 0.611589
+
+FinnGen R11's deaths at rs10198124 (q138): alt T −0.0077 (SE 0.0076) for death, P 0.31: T fewer deaths, flat. For row 174.
