@@ -13,9 +13,17 @@ milestone. Stalled since 2026-11-18 02:31 on the curator's pane (its usage-limit
 
 ## RM2 — the module into just-dna-lite, superseding the v1 port
 
-**State:** building. **Owner:** lead (the module seat confirms the spec). The person, 2026-11-19 (desk #56): a pull
-request into just-dna-lite with the ready module (the rehearsed 2.0.0), its supplementaries and the publishing
-surface; v1 1.2.0 stays frozen; production publication is the maintainers', from that pull request.
+**State:** blocked: desk #56, yes after a present. **Owner:** lead. Opened as dna-seq/just-dna-lite#37 (2026-11-19, on the
+person's word in desk #56): the rehearsed 2.0.0 spec, the report's routing fix, the release runbook and the
+supplements. Review is just-dna-lite's lead's, merge and publication Anton's. Its "before publishing" list names
+what is open (HF folder for 1.2.0, licence, closing, the study-note shorthand, the report-voice review).
+
+## RM6 — study notes worded for a reader in the export
+
+**State:** unattended. **Owner:** lead (the curator and the module seat do the work). `studies.csv`'s analysis and
+conclusion fields cite this repository's decision and quote ids (D26.13, q33), which the app's report shows raw
+(seen on the demo genome, 2026-11-19). Before the public publish: an export that words them for a reader, the same
+2.0.0 content, a new compile, the PR updated.
 
 ## RM3 — the field's consensus loci, marked or not
 

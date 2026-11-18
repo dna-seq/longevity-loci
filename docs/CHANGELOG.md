@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- The module goes to production through just-dna-lite (the person, 2026-11-19, desk #56): pull request dna-seq/just-dna-lite#37 carries the rehearsed 2.0.0 spec, a fix to just-dna-lite's report (which filed any `longevitymap` under Generation I's pathways, where 2.0.0's rows vanished), the release runbook and the supplements (`loci.csv`, the draft section). 1.2.0 stays frozen.
 - The module-creator plugin pinned at v0.48.15 (no dependency moves); its hook now traces module tables written through the shell (F165).
 - Registry v0.34.0 read into docs/UPSTREAM_REGISTRY.md (an admin deploy call; nothing to change here); the compiler's v0.8.9 tag marked read.
 - The compiler trio's 0.8.9 read into docs/UPSTREAM_COMPILER.md (RM449's corrected fill at mirrored indel sites reaches four of our rsIDs on recompile); not taken until the plugin's lock moves.
