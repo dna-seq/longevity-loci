@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- The liaison's priming states the upstreams as they are: the plugin's repository runs seats, and a compiler or registry filing goes whole to its triage by `bin/hand.sh`, since both triages run on another machine.
 - `loci check quotes` locates a verbatim quote beside a structured abstract's section heading that Europe PMC runs into the next sentence ("introduced.ConclusionsWe found"), and a quote ending in a full stop that meets the next word; before, both failed on the word-boundary rule, and the curator cut such quotes short (pmid-26754162's TNF-α sentence). Any other run-on word still fails the boundary.
 - just-dna-enricher 0.8.8 (floor `>=0.8.8`) with the module-creator plugin's pin to v0.48.14, which locks it and registry 0.32: a cache pull no longer labels kept files with a release it never fetched; the plugin adds a provenance ledger hook (`logs/trace/`, metadata only) and `registry_upgrade_status`.
 - A README that presents the work: what the evidence says (tiers, mechanisms), how a row is made and checked, the six seats, the limits; its two figures drawn from `rows/` and the git history by `scripts/readme_figures.py`.

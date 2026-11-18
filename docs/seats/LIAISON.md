@@ -12,11 +12,14 @@ All three are the person's own, so a defect is filed, not drafted for the person
 
 1. **The module-creator plugin** (`dna-seq/just-module-creator`): the tools the module and curator seats work
    through. No consumer inbox: a defect is an issue there, through the kit's `report-to-kit --to
-   dna-seq/just-module-creator` (this repository's `[repo] producers`). Its repository runs no seats.
+   dna-seq/just-module-creator` (this repository's `[repo] producers`). Its repository runs seats since 2026-11-05
+   (lead, pm, tester, liaison); its lead and liaison may wake this seat, but the filing route stays its issues.
 2. **The compiler's packages** (`dna-seq/just-dna-compiler`: format, compiler, enricher): a defect goes into its
-   consumer inbox, `docs/CONSUMER_SUGGESTIONS.md` in its clone, restated in its terms with an id from its ledger,
-   appended and never committed; then a message to `just-dna-compiler/triage` naming the id. Its seats are seated.
-3. **The registry** (`dna-seq/just-dna-registry`): the same way, its inbox and `just-dna-registry/triage`.
+   consumer inbox, `docs/CONSUMER_SUGGESTIONS.md`, restated in its terms. Its triage is seated on another machine,
+   so an append to this machine's clone never reaches it: ask `just-dna-compiler/triage` for the next id, then send
+   the section whole by `bin/hand.sh`, and it appends and commits it (its answer, 2026-11-12; S130 and S131 were
+   appended here first and never seen).
+3. **The registry** (`dna-seq/just-dna-registry`): the same way, through `just-dna-registry/triage`.
 
 Ask the upstream's liaison in `agent-chat` before filing a defect in a library under both of you, as the role's
 outbound step 2 says. The compiler's and the registry's next minors are built on branches of their own; their
