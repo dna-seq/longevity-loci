@@ -73,7 +73,9 @@ docs/seats/MODULE_NOTES.md module/`); the last section keeps only what is still 
 10. Reply to the lead: counts, warnings and anything new, the content_signature, the app-display line.
 
 **Trial builds** (rows landed, batch not closed): copy `module/` to the scratchpad, `uv run loci export DIR`,
-enrich and compile there, note the result here. Never publish a trial. They catch a strict refusal early (batch
+enrich and compile there, note the result here. Never publish a trial. When the shared tree holds a
+curator's uncommitted row, export from a worktree at the trunk head instead: in the clone's `.worktrees/`
+(the kit's `bin/wt.sh NAME`), never in the scratchpad (base, kit #536), and removed once the trial is noted. They catch a strict refusal early (batch
 eleven's was 101's proxy allele).
 
 ## What the projection does (settled, so not asked again)
