@@ -2912,3 +2912,21 @@ its digits match the deposit's line (frequency 0.4288, pmid-29227965#q307); it i
 rs17685: 18 associations; the Catalog's lifespan line is Wright 2019's fathers (GCST009447), P 5e-8, the AncestryDNA arm's
 raw P (q827, q828; pmid-31484785). The rest are other traits, coffee and caffeine among them (q829) and fatty acids
 (q830). rs28689051, Wright's imputed lead for the locus, has no Catalog association. For row 172.
+
+## Reading 2026-11-18, record
+
+> [q831] _embedded.associations[1] association_id 35567716 risk_frequency 0.995 pvalue_description pvalue_mantissa 5 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.063-0.133] beta 0.0979 unit increase p_value 5e-08 accession_id GCST006696 pubmed_id 29227965 first_author Pilling LC ci_lower 0.063 ci_upper 0.133
+
+> [q832] _embedded.associations[1].reported_trait[0] Parental longevity (mother's attained age)
+
+> [q833] _embedded.associations[1].snp_allele[0] rs_id chr13:31871514 effect_allele T
+
+The Catalog's chr13:31871514 line (q831 to q833): Pilling 2017's mothers (GCST006696), T (0.995), β 0.0979 "increase",
+P 5e-8, no rsID. The β is on the Martingale residual, where positive is a shorter life (pmid-29227965), not longer, as
+"increase" under "parental longevity" might read. The site is rs1043332229 (db-ensembl-116). For row 173.
+
+## Reading 2026-11-18, record
+
+> [q834] _embedded.studies[2] initial_sample_size 412,937 British ancestry individuals replication_sample_size NA gxe false gxg false snp_count 11535925 imputed true pooled false accession_id GCST006696 full_summary_stats_available true user_requested true pubmed_id 29227965 platforms Affymetrix [11535925] (imputed) disease_trait Parental longevity (mother's attained age) full_summary_stats http://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST006001-GCST007000/GCST006696 terms_of_license https://www.ebi.ac.uk/about/terms-of-use/
+
+Pilling 2017's mothers' study GCST006696 (q834): 412,937 British-ancestry participants. For row 173.

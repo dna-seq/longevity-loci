@@ -65,6 +65,12 @@ record, never left empty; multi-line text edits want whitespace-tolerant matches
 
 ## Log (from 2026-11-10)
 
+- **173 B3GLCT** (2026-11-18), tier B, row 68's shape. Lessons: a Catalog line with no rsID is a GRCh37 position
+  (Pilling's build); find the rsID with GRCh37's `overlap/region` filtered to single-base variants of the paper's
+  alleles. A rare variant is missing from Timmers, Deelen, FinnGen, Zenin, Foote and Open Targets: write each as
+  untested, and `untested` (unquoted) is the outcome cell's word. The Catalog's "increase" under parental longevity can
+  be a Martingale β where positive means shorter: say so in the note.
+
 - **172 SRRM3-POR** (2026-11-18), tier D, row 22's shape. Lessons: a Catalog line can be a genotyped SNP below the
   paper's own call (rs17685 5.7e-7 after genomic control); build the row on the paper's imputed lead (bp75763624 =
   rs28689051 by GRCh37 overlap) and say so. Foote's deposits can print an effect allele whose frequency is the other

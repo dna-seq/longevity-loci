@@ -5416,3 +5416,9 @@ holds it at PIP 0.015 (q1583). For row 171.
 
 rs28689051 (7_76134306_G_A): 137 sets (q1584), all read, none of a lifespan, longevity or healthspan class; most are
 expression or splicing QTL sets for MDH2, POR and STYXL1, the GWAS ones platelet count; highest PIP 0.15. For row 172.
+
+## Reading 2026-11-18, record
+
+> [q1585] data variant null
+
+13_31297377_T_G (q1585): no Open Targets record, so no credible set and no QTL. For row 173.

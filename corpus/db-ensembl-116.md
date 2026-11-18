@@ -4316,3 +4316,17 @@ rs28689051 (row 172): GRCh38 7:76,134,306 G/A/T (q1233); A at 31.8 % in gnomAD's
 non-coding transcript, 2.1 kb from the RABGEF1P3 pseudogene (q1235, q1236), between POR and MDH2. rs17685, the GWAS
 Catalog's line and Wright 2019's genotyped lead: GRCh38 7:75,986,787 G/A/C (q1237), A at 27.8 % (q1238), in POR's 3′ UTR
 (q1239); r² 0.57, D′ 0.86 with rs28689051 in CEU (q1240). For row 172.
+
+## Reading 2026-11-18, record
+
+> [q1241] mappings[0] strand 1 location 13:31297377-31297377 ancestral_allele T assembly_name GRCh38 coord_system chromosome end 31297377 allele_string T/C/G seq_region_name 13 start 31297377
+
+> [q1242] populations[10] allele G allele_count 428 population gnomADg:nfe frequency 0.006985
+
+> [q1243] [0] seq_region_name 13 end 31297377 start 31297377 input rs1043332229 assembly_name GRCh38 allele_string T/C/G strand 1 id rs1043332229 most_severe_consequence intron_variant
+
+> [q1244] [0].transcript_consequences[0] impact MODIFIER gene_symbol_source HGNC biotype protein_coding mane_select NM_194318.4 gene_id ENSG00000187676 variant_allele C hgnc_id HGNC:20207 transcript_id ENST00000343307 strand 1 canonical 1 gene_symbol B3GLCT
+
+rs1043332229 (row 173), Pilling 2017's 13:31,871,514 (GRCh37): GRCh38 13:31,297,377 T/C/G, T ancestral (q1241); G at 0.70 % in
+gnomAD's non-Finnish genomes (q1242); intronic in B3GLCT, formerly B3GALTL (q1243, q1244). The site sits at the end
+of a poly-T run (dbSNP's rs35163232 indels at 13:31,871,513 GRCh37 overlap it). For row 173.

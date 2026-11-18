@@ -1,0 +1,96 @@
+# A locus outside the seed list, from the scout's GWAS Catalog entry (the 2015–2026 backfill, D41), its own row under
+# the next free id. Curated 2026-11-18. The Catalog's chr13:31871514 line (Pilling 2017's mothers, no rsID) is
+# rs1043332229: intronic in B3GLCT (formerly B3GALTL), GRCh38 13:31,297,377 T/G, GRCh37 13:31,871,514, T ancestral, at
+# the end of a poly-T run; G at 0.70 % in gnomAD's non-Finnish European genomes. 1.18 Mb from row 73's KL-VS (GRCh38),
+# a separate locus. G, the rare allele, is the one the discovery puts with longer life.
+locus_id: 173
+locus_name: B3GLCT
+verdict: kept
+verdict_reason: >-
+  Tier B by §4.1's single-study clause, as rows 68 and 74 (Pilling 2017's rare and mothers-only hits): genome-wide in one
+  analysis of one study and untested elsewhere. Pilling 2017's mothers' attained age (UK Biobank) puts G with longer-lived
+  mothers, T's β +0.0979 (SE 0.0180) on the Martingale residual, P 4.7e-8 (pmid-29227965 q322, q324), one of the three
+  loci found only for mothers (q323). The other analyses of the same participants: both parents T +0.0635, P 5.6e-4
+  (q325), G's way; fathers flat, G a little shorter (P 0.34, q327); top 10 % flat (P 0.70, q326). The paper's own caveat
+  is carried: for variants this rare (0.5 %), P < 5e-8 may not be rigorous enough (q36), and the site sits at the end
+  of a poly-T run, where imputation is less sure (db-ensembl-116 q1241; imputation quality not printed for it). No
+  sample outside UK Biobank holds it: no line in Timmers 2019's LifeGen file, Deelen 2019's percentiles, FinnGen R11,
+  Zenin 2019, Foote 2025's deposits or Wright 2019's AncestryDNA tables (which print only representatives below P 3e-3,
+  pmid-31484785 q6), and no Open Targets record (db-opentargets-26.09 q1585): untested, not null. Park 2025's own
+  survival, in UK Biobank's participants, is flat (P 0.98; women G a little more deaths, P 0.28, q244 to q246), not
+  independent of the discovery's genotypes. No red flag can be scored (nothing outside the discovery tests it). A
+  `sex_specific` token is not set: it rests on a test of the difference (D29.16), and only the one-sex results are read.
+  The GWAS Catalog's line (db-gwascatalog-2026.10.29 q831 to q833) gives T's β as an "increase" under parental
+  longevity, but on Pilling's scale positive is a shorter life. Outcome cells read for G: lifespan + (the discovery
+  itself, D28.10, as row 68); exceptional survival 0 (Pilling's top 10 %, flat); healthspan untested (no line in Zenin
+  or Foote). Mechanism ageing in general: B3GLCT glycosylates thrombospondin-repeat proteins, but no trait is known at
+  the variant and no route is shown; descriptive. Causal C4, effector E4: no credible set, no QTL record. The literature
+  search (the rsID, 2026-11-18) found nothing in the four services that answered; OpenAlex and Semantic Scholar answered
+  429, their part unchecked. Carriers are about 14 in 1,000 Europeans. Age of action unknown. The evidence is European.
+axes:
+  tier: {value: B, cites: [pmid-29227965#q322, pmid-29227965#q323, pmid-29227965#q324, pmid-29227965#q325, pmid-29227965#q326, pmid-29227965#q327, pmid-29227965#q36, pmid-31484785#q6, db-opentargets-26.09#q1585, db-gwascatalog-2026.10.29#q831, db-gwascatalog-2026.10.29#q832, db-gwascatalog-2026.10.29#q833, pmid-40021682#q244]}
+  mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q1585, db-ensembl-116#q1243]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: untested, lifespan: "+", exceptional_survival: "0",
+            cites: [pmid-29227965#q324, pmid-29227965#q325, pmid-29227965#q326, pmid-29227965#q327, pmid-40021682#q244, pmid-40021682#q245, pmid-40021682#q246]}
+  actionability: {label: descriptive, cites: [pmid-29227965#q322]}
+  context: {values: [eur_only_evidence], cites: [pmid-29227965#q322, db-ensembl-116#q1242]}
+flags:
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1585]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q1585, db-ensembl-116#q1243, db-ensembl-116#q1244]}
+variants:
+  - rsid: rs1043332229
+    locus: {chrom: "13", start: 31297377, ref: T, cites: [db-ensembl-116#q1241]}
+    gene: ""
+    phenotype: B3GLCT region, mothers' lifespan
+    trait_efo_id: EFO_0007796
+    effect_allele: G
+    effect_size: -0.0979
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: T/T
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position, as almost everyone of European ancestry
+          does (about 986 in 1,000). It is the reference the other combinations are compared with. The position lies
+          in the B3GLCT gene on chromosome 13. The finding comes from people of European ancestry; less is known
+          elsewhere.
+      - genotype: G/T
+        state: protective
+        conclusion: >-
+          You carry one copy of a rare G version of this DNA position (about 14 in 1,000 people of European ancestry
+          do). In one very large British study, mothers of people with this version lived somewhat longer; fathers
+          showed no such link. No other study has been able to check it, and for a version this rare the authors
+          themselves call the result less certain. It is a single early finding and a tendency, not a guarantee.
+      - genotype: G/G
+        state: protective
+        conclusion: >-
+          You carry two copies of a rare G version of this DNA position, which is very uncommon (fewer than 1 in
+          10,000 people of European ancestry). In one very large British study, mothers of people with one copy lived
+          somewhat longer; fathers showed no such link, and no one with two copies was studied separately. No other
+          study has been able to check it. It is a single early finding and a tendency, not a guarantee.
+studies:
+  - rsid: rs1043332229
+    note: pmid-29227965
+    quote: q324
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank), mothers' attained age
+    ancestry: [EUR]
+    sample_size: 412937
+    sample_unit: individuals
+    stratum: parent
+    stratum_level: mother
+    stat_significance: significant
+    p_value: "4.7e-08"
+    p_value_num: 4.7e-08
+    effect_size: 0.0979184
+    effect_measure: beta
+    effect_unit: Martingale residual of mothers' attained age per T allele (positive = shorter life)
+    effect_allele: T
+    direction: risk
+    statistical_test: "BOLT-LMM on mothers' attained age (GCST006696 deposit, q324; Table 2, q322), SE 0.0180; n from db-gwascatalog-2026.10.29#q834; the variant is 13:31871514_T_G there, rs1043332229 by position (db-ensembl-116#q1241); the paper's rare-variant caveat (q36)"
+    curator: claude-opus-5-5
