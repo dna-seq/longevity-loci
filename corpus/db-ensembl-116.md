@@ -4293,3 +4293,26 @@ over 1,006 haplotypes (derived): T, the shorter-life allele, travels with rs7137
 rs12828640, Wright 2019's representative of row 171's peak: r² 0.92 with rs4426183 in CEU (q1230); from the phased EUR
 genotypes (q1174; first lines q1231, q1227, q1232) its G travels with rs4426183's longer-life C (r +0.965) and against
 rs10774625's shorter-life A, row 71's line in Wright (r −0.404, r² 0.163), derived. For row 171.
+
+## Reading 2026-11-18, record
+
+> [q1233] mappings[0] start 76134306 seq_region_name 7 strand 1 end 76134306 location 7:76134306-76134306 ancestral_allele null assembly_name GRCh38 coord_system chromosome allele_string G/A/T
+
+> [q1234] populations[15] population gnomADg:nfe frequency 0.3183 allele_count 21638 allele A
+
+> [q1235] [0] assembly_name GRCh38 allele_string G/A/T seq_region_name 7 most_severe_consequence non_coding_transcript_exon_variant end 76134306 id rs28689051 strand 1 input rs28689051 start 76134306
+
+> [q1236] [0].transcript_consequences[0] gene_symbol RABGEF1P3 biotype transcribed_unprocessed_pseudogene variant_allele A gene_id ENSG00000224273 transcript_id ENST00000449786 strand -1 distance 2119 gene_symbol_source HGNC impact MODIFIER hgnc_id HGNC:55753 canonical 1
+
+> [q1237] mappings[0] start 75986787 seq_region_name 7 allele_string G/A/C end 75986787 coord_system chromosome ancestral_allele G assembly_name GRCh38 strand 1 location 7:75986787-75986787
+
+> [q1238] populations[32] allele A allele_count 18914 frequency 0.2783 population gnomADg:nfe
+
+> [q1239] [0].transcript_consequences[0] gene_symbol POR strand 1 variant_allele A impact MODIFIER hgnc_id HGNC:9208 gene_symbol_source HGNC transcript_id ENST00000394893 gene_id ENSG00000127948 biotype protein_coding cdna_start 2464 cdna_end 2464
+
+> [q1240] [0] variation2 rs17685 d_prime 0.855373 population_name 1000GENOMES:phase_3:CEU variation1 rs28689051 r2 0.566698
+
+rs28689051 (row 172): GRCh38 7:76,134,306 G/A/T (q1233); A at 31.8 % in gnomAD's non-Finnish genomes (q1234); in a
+non-coding transcript, 2.1 kb from the RABGEF1P3 pseudogene (q1235, q1236), between POR and MDH2. rs17685, the GWAS
+Catalog's line and Wright 2019's genotyped lead: GRCh38 7:75,986,787 G/A/C (q1237), A at 27.8 % (q1238), in POR's 3′ UTR
+(q1239); r² 0.57, D′ 0.86 with rs28689051 in CEU (q1240). For row 172.

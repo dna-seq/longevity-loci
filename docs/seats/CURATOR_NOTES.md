@@ -65,6 +65,12 @@ record, never left empty; multi-line text edits want whitespace-tolerant matches
 
 ## Log (from 2026-11-10)
 
+- **172 SRRM3-POR** (2026-11-18), tier D, row 22's shape. Lessons: a Catalog line can be a genotyped SNP below the
+  paper's own call (rs17685 5.7e-7 after genomic control); build the row on the paper's imputed lead (bp75763624 =
+  rs28689051 by GRCh37 overlap) and say so. Foote's deposits can print an effect allele whose frequency is the other
+  allele's (G 0.345 where G is 0.68): read no direction then. Pilling 2017's supplements come whole through Europe
+  PMC's `/{PMCID}/supplementaryFiles` via `fetch-supp` (D42), where PMC's /bin/ links 404.
+
 - **171 MYL2-VHRT** (2026-11-18), the first GWAS Catalog line, row 168's shape. Lessons: a Catalog line near a seed
   is a second-signal question first (D39.14), not row 170's standalone pattern; scan the window between it and the seed
   lead in Pilling and Timmers (`--rows` on positions) before conditioning, so the conditioning set is complete. A

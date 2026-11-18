@@ -200,6 +200,8 @@ mechanical consensus of the research tracks, to be confirmed or overturned by th
 
 - 171 MYL2-VHRT (2026-11-18), the GWAS Catalog's rs4426183, a second signal at 71, tier C with `replication_failed` (AncestryDNA's fathers); 71's prose names it.
 
+- 172 SRRM3-POR (2026-11-18), the Catalog's rs17685 built on Wright's own lead rs28689051: tier D, `replication_failed` (UK Biobank's fathers, Wright's 'Not Replicated').
+
 ## In hand
 
 The scout's 2015–2026 backfill (c0a8726, D41): the first twelve entries read (2026-11-18); the lead's word on rows 170

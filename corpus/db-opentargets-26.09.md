@@ -5409,3 +5409,10 @@ rs4426183 (12_110935600_T_C): 130 sets (q1576), all read, none of a lifespan, lo
 Biobank) PIP 0.16, C β −0.019, P 4.8e-18 (q1579, q1580): C, the longer-life allele, lowers both. Blood counts make up
 much of the rest, haemoglobin among them (q1581, q1582). A GTEx splicing set for VHRT in the heart's left ventricle
 holds it at PIP 0.015 (q1583). For row 171.
+
+## Reading 2026-11-18, record
+
+> [q1584] data.variant.credibleSets count 137
+
+rs28689051 (7_76134306_G_A): 137 sets (q1584), all read, none of a lifespan, longevity or healthspan class; most are
+expression or splicing QTL sets for MDH2, POR and STYXL1, the GWAS ones platelet count; highest PIP 0.15. For row 172.

@@ -2898,3 +2898,17 @@ rs1927465: one association (q823, q824), height, T +0.0138; no longevity associa
 rs4426183: one association (q825, q826), Pilling 2017's combined parental attained age (GCST006697), T +0.0153, P 2e-11,
 its digits match the deposit's line (frequency 0.4288, pmid-29227965#q307); it is Pilling's Supplementary Table 1 line
 (pmid-29227965#q316), the list of every marginal P < 5e-8. For row 171.
+
+## Reading 2026-11-18, record
+
+> [q827] _embedded.associations[14] association_id 55478477 risk_frequency 0.28 pvalue_description pvalue_mantissa 5 pvalue_exponent -8 multi_snp_haplotype false snp_interaction false range [0.0099-0.021] beta 0.01545 unit increase p_value 5e-08 accession_id GCST009447 pubmed_id 31484785 first_author Wright KM ci_lower 0.0099 ci_upper 0.021
+
+> [q828] _embedded.associations[14].reported_trait[0] Parental longevity (father's age at death)
+
+> [q829] _embedded.associations[13].reported_trait[0] Coffee consumption (cups per day)
+
+> [q830] _embedded.associations[0].reported_trait[0] Omega-6 fatty acids to total fatty acids percentage
+
+rs17685: 18 associations; the Catalog's lifespan line is Wright 2019's fathers (GCST009447), P 5e-8, the AncestryDNA arm's
+raw P (q827, q828; pmid-31484785). The rest are other traits, coffee and caffeine among them (q829) and fatty acids
+(q830). rs28689051, Wright's imputed lead for the locus, has no Catalog association. For row 172.

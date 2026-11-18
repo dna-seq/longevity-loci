@@ -1,0 +1,124 @@
+# A locus outside the seed list, from the scout's GWAS Catalog entry (the 2015–2026 backfill, D41), its own row under
+# the next free id. Curated 2026-11-18. The Catalog's line is rs17685 (POR 3′ UTR, Wright 2019's fathers, P 5e-8); the
+# row's lead is Wright's own imputed lead for the locus, rs28689051 (bp75763624), GRCh38 7:76,134,306 G/A, GRCh37
+# 7:75,763,624, in a non-coding transcript near the RABGEF1P3 pseudogene between POR and MDH2; A at 31.8 % in gnomAD's
+# non-Finnish European genomes. r² 0.57 with rs17685 in 1000 Genomes CEU. A is the allele the discovery puts with
+# longer life.
+locus_id: 172
+locus_name: SRRM3-POR
+verdict: kept
+verdict_reason: >-
+  Tier D (D25.1, D21): a genome-wide discovery in one arm that fails a powered test in an independent sample, its own
+  authors' "Not Replicated", and passed nowhere else. Wright 2019's AncestryDNA fathers, 1886-1940, put A longer: the
+  imputed lead +0.42 years (SE 0.07), P 2.64e-9, 4.39e-8 after genomic control; the genotyped rs17685, the Catalog's line,
+  P 5.41e-8, 5.73e-7 after genomic control, not significant there (pmid-31484785 q184, q185). UK Biobank's fathers, the
+  meta's other arm and Pilling 2017's fathers digit for digit, put A a little shorter, P 0.26; meta P 3.4e-3, and Wright
+  files the locus under "Not Replicated" (q186, q12). On the two arms' one printed scale (Supplemental Table 9, q187,
+  q188) the discovery's +0.0163 at UK Biobank's SE gives one-sided power 1.00 (0.97 at half the effect, for the winner's
+  curse) against Wright's heterogeneity P 1.6e-6 (derived): D21's red flag, `replication_failed`. No independent
+  scoring-class study passes one-sided the discovery's way: Pilling's mothers 0.055 (P 0.11, q320), both parents 0.22
+  (q318), top 10 % flat (q319); Timmers 2019 A longer, one-sided 0.20 (q434), which holds both arms' UK Biobank parents;
+  Deelen 2019's 90th A against (P 0.20) and 99th flat (P 0.69) (pmid-31413261 q380, q381); Park 2025's own survival A
+  more deaths, one-sided 0.14 against (q241); FinnGen R11's deaths flat (P 0.97, q137). So D. Outcome cells read for A
+  (D28.10, D28.3: the discovery gives no `+`; each later look read one-sided): lifespan 0 (Pilling, Timmers, Park, none
+  nominal either way); exceptional survival 0 (Deelen); healthspan 0 (Zenin 2019 A the earlier end, flat, P 0.71,
+  q197). Foote 2025's seven deposits print the effect allele G at frequency 0.345 where every other source has G at 0.68,
+  so which allele their β is for is unsettled and no direction is read (q232 to q238; F3, F4 and F6 nominal, one sign).
+  Mechanism ageing in general: rs17685 is a coffee, caffeine and fatty-acid locus in the Catalog (db-gwascatalog-2026.10.29
+  q829, q830; POR is the cytochrome P450 reductase), but the lifespan signal is not established, so no `mech:` token.
+  Open Targets' 137 sets at rs28689051 are mostly MDH2, POR and STYXL1 expression and splicing QTLs and platelet count,
+  none of a lifespan class, highest PIP 0.15 (db-opentargets-26.09 q1584). Causal C4 (D39.12). Effector E4: no QTL or
+  colocalisation read for the row's phenotype. The literature search (2026-11-18): rs28689051 finds Wright 2019 alone (OpenAlex and Semantic Scholar answered 429,
+  their part unchecked); rs17685 (all six services answered) finds caffeine pharmacogenetics, among them an ALS caffeine
+  study that genotypes it (Huin 2024, PMID 39002811) and a systematic review naming POR among caffeine genes (Low 2024,
+  PMID 39438936), no lifespan study; named, nothing more read.
+  Descriptive. Age of action unknown. The evidence is European.
+axes:
+  tier: {value: D, cites: [pmid-31484785#q12, pmid-31484785#q184, pmid-31484785#q185, pmid-31484785#q186, pmid-31484785#q187, pmid-31484785#q188, pmid-29227965#q318, pmid-29227965#q319, pmid-29227965#q320, pmid-29227965#q321, pmid-30642433#q434, pmid-31413261#q380, pmid-31413261#q381, pmid-40021682#q241, db-finngen-r11#q137, db-gwascatalog-2026.10.29#q827, db-gwascatalog-2026.10.29#q828]}
+  mechanism: {value: general_ageing, cites: [db-gwascatalog-2026.10.29#q829, db-gwascatalog-2026.10.29#q830, db-opentargets-26.09#q1584]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "0", lifespan: "0", exceptional_survival: "0",
+            cites: [pmid-29227965#q318, pmid-29227965#q319, pmid-29227965#q320, pmid-29227965#q321, pmid-30642433#q434, pmid-40021682#q241, pmid-40021682#q242, pmid-40021682#q243, db-finngen-r11#q137, pmid-31413261#q380, pmid-31413261#q381, pmid-30729179#q197]}
+  actionability: {label: descriptive, cites: [pmid-31484785#q185]}
+  context: {values: [eur_only_evidence], cites: [pmid-31484785#q185, db-ensembl-116#q1234]}
+flags:
+  - {token: replication_failed, cites: [pmid-31484785#q186, pmid-31484785#q187, pmid-29227965#q321]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1584]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q1584, db-ensembl-116#q1235, db-ensembl-116#q1236]}
+variants:
+  - rsid: rs28689051
+    locus: {chrom: "7", start: 76134306, ref: G, cites: [db-ensembl-116#q1233]}
+    gene: ""
+    phenotype: SRRM3–POR region, fathers' lifespan
+    trait_efo_id: EFO_0007796
+    effect_allele: A
+    effect_size: 0.42
+    effect_measure: beta
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the more common version of this DNA position, as about 46 in 100 people of European
+          ancestry do. It is the reference the other combinations are compared with. The position lies on chromosome 7
+          between the POR and MDH2 genes. One large American study linked the other version to fathers living longer,
+          but a large British study did not confirm it, so it is not counted for or against lifespan.
+      - genotype: A/G
+        state: neutral
+        conclusion: >-
+          You carry one copy of the less common A version of this DNA position (about 43 in 100 people of European
+          ancestry do). It lies on chromosome 7 between the POR and MDH2 genes. One large American study found fathers
+          of people with this version lived a little longer, but a large British study did not confirm it, so it is
+          not counted for or against lifespan.
+      - genotype: A/A
+        state: neutral
+        conclusion: >-
+          You carry two copies of the less common A version of this DNA position (about 10 in 100 people of European
+          ancestry do). It lies on chromosome 7 between the POR and MDH2 genes. One large American study found fathers
+          of people with this version lived a little longer, but a large British study did not confirm it, so it is
+          not counted for or against lifespan.
+studies:
+  - rsid: rs28689051
+    note: pmid-31484785
+    quote: q185
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_linear
+    population: AncestryDNA customers' fathers born 1886-1940 (European)
+    ancestry: [EUR]
+    sample_size: 309383
+    sample_unit: individuals
+    stratum: parent
+    stratum_level: father
+    stat_significance: significant
+    p_value: "2.64e-09"
+    p_value_num: 2.64e-09
+    effect_size: 0.42
+    effect_measure: beta
+    effect_unit: years of father's lifespan per A allele (Table 1, scaled to the parental dose)
+    effect_allele: A
+    direction: protective
+    statistical_test: "Table 1 imputed lead bp75763624 (q185), SE 0.07; 4.39e-8 after genomic control; the genotyped rs17685 P 5.41e-8, 5.73e-7 after control (q184)"
+    curator: claude-opus-5-5
+  - rsid: rs28689051
+    note: pmid-31484785
+    quote: q187
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_linear
+    population: UK Biobank participants' fathers (Wright 2019's UK arm, Pilling 2017's fathers)
+    ancestry: [EUR]
+    sample_size: 389166
+    sample_unit: individuals
+    stratum: parent
+    stratum_level: father
+    stat_significance: not_significant
+    p_value: "0.26"
+    p_value_num: 0.26
+    effect_size: -0.00267327
+    effect_measure: beta
+    effect_unit: fathers' attained age per G allele (Pilling's scale; positive = shorter)
+    effect_allele: G
+    direction: protective
+    statistical_test: "Supplemental Table 9 (q187), SE 0.0023, against the AncestryDNA arm; heterogeneity P 1.6e-6; D21 power 1.00 (0.97 at half the effect), derived; Table 3 'Not Replicated' (q186): replication_failed"
+    curator: claude-opus-5-5
