@@ -10,7 +10,7 @@ Nothing in hand. Every upstream release up to today is read and, where it moves 
 
 - **Plugin** `dna-seq/just-module-creator`: pinned and installed at **v0.48.14** (2026-11-18) (`.claude/settings.json`),
   ledger `docs/UPSTREAM_PLUGIN.md`, read mark v0.48.14.
-- **Compiler trio**: `uv.lock` holds enricher **0.8.8**, compiler and format **0.8.6**; floors `>=0.8.7` / `>=0.8.6`,
+- **Compiler trio**: `uv.lock` holds enricher **0.8.8**, compiler and format **0.8.6**; floors `>=0.8.8` / `>=0.8.6`,
   caps `<0.9`; polars and duckdb capped `<2`. Ledger `docs/UPSTREAM_COMPILER.md`, read mark v0.8.7. Suite 146 passed
   at the last move (a7bfed4).
 - **Registry** `dna-seq/just-dna-registry`: read mark **v0.32.0** (5bc25d0), ledger `docs/UPSTREAM_REGISTRY.md`.

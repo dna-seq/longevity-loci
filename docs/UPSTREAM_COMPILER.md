@@ -140,7 +140,10 @@ here as the first import lands.
   it kept and nothing attests, so old bytes stop carrying a new release's label (their own ClinVar served August
   data as `clinvar_2026-11-01`); `cache pull` repairs such a cache, and a `release.json` that could not be fetched now
   stops a fresh pull instead of reading as "none published". Format and compiler stay 0.8.6. **Taken 2026-11-18** with the
-  plugin's v0.48.14, which floors it (suite 154). **This machine's caches checked (2026-11-17),
+  plugin's v0.48.14, which floors it (suite 154). Then the one `cache pull --only clinvar --only ensembl`
+  against the shared cache (`JUST_DNA_PIPELINES_CACHE_DIR`, as the plugin's server reads it): Ensembl unchanged
+  (`ensembl-variation-2026_07_13-vep116.0`); ClinVar moved from `clinvar_2026-11-01` to `clinvar_2026-11-15`, the
+  hub's newer release (an ordinary update, not the RM445 repair). A module enriched from now reads 2026-11-15. **This machine's caches checked (2026-11-17),
   read-only, by its "After upgrading" step 2:** ClinVar's `pull-record.json` carries `release_sha256` and its parquet
   files date from the record's own day (2026-11-12), so it is not the affected kind; Ensembl's has
   `release_sha256: null`, which is that lane's normal state (its hub repository publishes no `release.json`, 404
