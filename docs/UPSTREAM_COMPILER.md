@@ -17,7 +17,7 @@ compiler's `0.8` branch); reuse it at the cut, and tell that liaison where our u
 
 ## Read mark
 
-**`v0.8.8`** (tagged 2026-11-16, `655f1ebc`; the enricher alone, on PyPI 2026-11-17), patches on 0.8.0 read by their changelog headings and "After
+**`0.8.9`** (on PyPI 2026-11-18, the trio; no tag pushed yet, read from their `main` changelog at `dfd94ccf`). Before it **`v0.8.8`** (tagged 2026-11-16, `655f1ebc`; the enricher alone, on PyPI 2026-11-17), patches on 0.8.0 read by their changelog headings and "After
 upgrading" lines; read whole at our adoption. **In use: `v0.8.8`** (the enricher; format and compiler 0.8.6) since 2026-11-18, `v0.8.7` since 2026-11-16, `v0.8.6` since 2026-11-14 (0.8.5 from 2026-11-13, 0.8.4 from 2026-11-12), the trio in `uv.lock`,
 adopted with the plugin's `v0.48.7`; 0.7.3 (enricher), 0.7.2 and 0.7.1 before it. The first mark, `v0.7.3` (3dd8c2a),
 was fast-forwarded: no release before it was read.
@@ -136,6 +136,18 @@ here as the first import lands.
 
 ## Inbound verdicts
 
+- **0.8.9, the trio (PyPI 2026-11-18; RM446-RM449, RM451, RM452).** Format 0.8.9 changes only its release record, so a
+  0.8.6 reader still reads 0.8.9 manifests; the intra-trio floors are all `>=0.8.9`, no third-party floor moved.
+  RM449: an rsID row at a mirrored insertion/deletion site is filled only on the spelling a second source witnessed
+  (`placement_verdict`), a declared corrected derivation: recompiling moves `weights.parquet`, `artifact.digest` and
+  the `compilation.expanded_*` counts, never `content_signature`. RM448 (online, one ALT of a multi-allelic indel
+  no longer withholds the site); a new `--strict` refusal for an rsID row placed on neither spelling, which their
+  `main` already relaxes again for 0.8.10 (`unplaced` on every spelling keeps both, under a warning), with RM453 (an
+  offline re-derivation of a merged ClinVar rsID) also for 0.8.10. *For the module seat:* our `resolution.csv` has
+  four rsIDs at mirrored indel sites, `rs35257605`, `rs3830412`, `rs10610954` and `rs371933919`, every spelling
+  `same_event`; a recompile on 0.8.9 may narrow their filled genotypes, so the next rehearsal after the plugin takes
+  0.8.9 can differ in digest for that reason alone. Their "After upgrading" says re-derive mirrored sites online,
+  not offline, until RM453. **Not taken:** our lock follows the plugin's, which holds 0.8.8/0.8.6.
 - **`v0.8.8`, enricher 0.8.8 (2026-11-16; RM445).** A pull no longer places the hub's `release.json` over cached files
   it kept and nothing attests, so old bytes stop carrying a new release's label (their own ClinVar served August
   data as `clinvar_2026-11-01`); `cache pull` repairs such a cache, and a `release.json` that could not be fetched now

@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- The compiler trio's 0.8.9 read into docs/UPSTREAM_COMPILER.md (RM449's corrected fill at mirrored indel sites reaches four of our rsIDs on recompile); not taken until the plugin's lock moves.
 - A draft manuscript section for just-dna-lite (`docs/MANUSCRIPT_SECTION.md`): the Longevity Map as a key module, rebuilt from the evidence, with what the curation found about the genetics of longevity (Anton's ask, 2026-11-18); its numbers are this repository's as of that day.
 - Registry v0.33.0 and v0.33.1 read into docs/UPSTREAM_REGISTRY.md: lane answers name their release (S34), a changed review verdict unpins it (S35); nothing to change here.
 - A slide deck comparing HAGR's LongevityMap, the shipped module v1 and the re-curated v2, with the agent loop that curates it, in just-dna-lite's look (Anton's ask, 2026-11-18), with two slides on the errors the v1 audit found and how the agents' own are caught: `scripts/longevitymap_deck.py` writes it as an editable .pptx; its numbers are as of 2026-11-18.
