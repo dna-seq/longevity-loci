@@ -18,9 +18,9 @@ verdict_reason: >-
   On CEU (phased r +0.53; Ensembl's own CEU r² 0.32) the low ends are 2.96 in Pilling and 2.62 in Timmers. Nothing in
   the window between the two is stronger than 1e-9 until row 71's block at 111.83 Mb (q310), so row 71's lead is the
   whole conditioning set. No printed conditional is read: Pilling's loci are the lowest P in a 1 Mb region (q314), so
-  its Table 1 holds rs7137828 alone; the Catalog's line matches the deposit's digits, but whether it came from the
-  deposit or from a supplementary table is unknown, and the seven supplementary files are not reachable (PMC's links
-  answered 404). No tag of 71's lead (D39.14): something survives conditioning in each scan, and none of rs4426183's
+  its Table 1 holds rs7137828 alone; the Catalog's line is Supplementary Table 1's (q315, q316), a list of every
+  marginal P < 5e-8, and none of the seven supplementary files (read through Europe PMC's service) prints a conditional
+  or joint analysis, nor holds it among Supplementary Table 3's Cox leads (q317) (D42). No tag of 71's lead (D39.14): something survives conditioning in each scan, and none of rs4426183's
   130 Open Targets sets is a lifespan set. Timmers holds UK Biobank's parents, so it is not a replication. Wright
   2019's AncestryDNA arms, outside UK Biobank, at rs12828640 (r² 0.92 with rs4426183, G with its longer-life C; q182,
   q183): the fathers are flat (G P 0.87) against UK Biobank's fathers (P 5e-7), Wright's own heterogeneity P 0.0041, and
@@ -46,7 +46,7 @@ verdict_reason: >-
   services that answered; Semantic Scholar answered 429, its part unchecked. Descriptive. Age of action unknown. The
   evidence is European.
 axes:
-  tier: {value: C, cites: [pmid-29227965#q307, pmid-29227965#q308, pmid-29227965#q309, pmid-29227965#q310, pmid-29227965#q314, pmid-30642433#q431, pmid-30642433#q432, pmid-31413261#q9, pmid-31413261#q378, pmid-31413261#q379, db-ensembl-116#q1174, db-ensembl-116#q1224, db-ensembl-116#q1225, db-ensembl-116#q1226, db-ensembl-116#q1227, db-ensembl-116#q1228, db-ensembl-116#q1229, db-opentargets-26.09#q1576, db-gwascatalog-2026.10.29#q825, db-gwascatalog-2026.10.29#q826, pmid-31484785#q17, pmid-31484785#q18, pmid-31484785#q182, pmid-31484785#q183, db-ensembl-116#q1230, db-ensembl-116#q1231, db-ensembl-116#q1232]}
+  tier: {value: C, cites: [pmid-29227965#q307, pmid-29227965#q308, pmid-29227965#q309, pmid-29227965#q310, pmid-29227965#q314, pmid-29227965#q315, pmid-29227965#q316, pmid-29227965#q317, pmid-30642433#q431, pmid-30642433#q432, pmid-31413261#q9, pmid-31413261#q378, pmid-31413261#q379, db-ensembl-116#q1174, db-ensembl-116#q1224, db-ensembl-116#q1225, db-ensembl-116#q1226, db-ensembl-116#q1227, db-ensembl-116#q1228, db-ensembl-116#q1229, db-opentargets-26.09#q1576, db-gwascatalog-2026.10.29#q825, db-gwascatalog-2026.10.29#q826, pmid-31484785#q17, pmid-31484785#q18, pmid-31484785#q182, pmid-31484785#q183, db-ensembl-116#q1230, db-ensembl-116#q1231, db-ensembl-116#q1232]}
   mechanism: {value: heart_vessels, cites: [db-opentargets-26.09#q1577, db-opentargets-26.09#q1578, db-opentargets-26.09#q1579, db-opentargets-26.09#q1580]}
   pleiotropy: {values: ["mech:cvd", "mech:blood_count"], cites: [db-opentargets-26.09#q1577, db-opentargets-26.09#q1578, db-opentargets-26.09#q1579, db-opentargets-26.09#q1580, db-opentargets-26.09#q1581, db-opentargets-26.09#q1582]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
