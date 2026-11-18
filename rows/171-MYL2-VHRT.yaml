@@ -36,7 +36,7 @@ verdict_reason: >-
   q238). Outcome cells read for C: lifespan + (Pilling and Timmers conditioned, AncestryDNA's mothers); exceptional
   survival + (Deelen, conditioned); healthspan + (D31.4): Foote 2025's F2 has T frailer, P 0.013 (q228), tied with
   rs7137828 there (q231), and conditioned on it one-sided 0.041 on EUR haplotypes (0.061 on CEU), derived; Zenin 2019
-  flat (P 0.38, q196); F1, F5, F6 flat; the general factor's, F3's and F4's deposits hold no line.
+  flat (P 0.42, q196); F1, F5, F6 flat; the general factor's, F3's and F4's deposits hold no line.
   Mechanism heart and vessels: C lowers systolic (P 1.5e-16) and diastolic blood pressure (P 4.8e-18) in Open Targets'
   sets (db-opentargets-26.09 q1577 to q1580), so `mech:cvd` as at row 27, and many of its sets are blood counts
   (haemoglobin among them, q1581), `mech:blood_count`; it leads none (highest PIP 0.16), so this is the 12q24 block's
