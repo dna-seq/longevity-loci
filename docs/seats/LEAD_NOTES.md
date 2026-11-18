@@ -25,6 +25,8 @@ pages (3aafb3c).
   loci stay unscored (D36.3); rehearsals stay under `test-longevity-loci`.
 - #266 (now desk #47): how to mark the field's consensus top loci (a flag, a tier, or nothing). Nothing is built until answered.
 - #200: the trust register; the person said "trust register reask in a month", so ask again on 2026-12-10.
+- desk #56 (2026-11-18): publish 2.0.0 to production now, or after the sweep's rows are read and rebuilt. Default: wait
+  (nothing published).
 - Also on their word: an app display check by a local install (the APOE pair table, and APOE's studies with no variant
   row), and the production publish.
 
@@ -97,3 +99,9 @@ Still owed: reply to agents-kit/lead with each seat's notes commit, one `keys co
 
 - Filed 2026-11-18 as kit #537: the seat's watchdog died five times in about 30 hours while the session lived (the last
   pid 1849426, reported by the machine's watchdog), each restarted only by the next prompt's hook.
+
+- 2026-11-18, Anton's ask: a deck comparing HAGR LongevityMap, module v1 and v2, and the agent loop, in the look of their
+  Bucharest deck (fetched by its public export link). `scripts/longevitymap_deck.py` builds it (14 slides; numbers as of
+  that day; the v1 error slide from the manuscript's Table S14). Sent as .pptx in #longevity-loci; the Drive upload is
+  Anton's (no Google login here). Not rendered here: running a downloaded office suite was denied, so layout was
+  checked by a text-fit estimate only.
