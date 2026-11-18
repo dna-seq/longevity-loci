@@ -1,4 +1,4 @@
-"""Build the LongevityMap v1 -> v2 comparison deck (python-pptx), in just-dna-lite's look.
+"""Build the LongevityMap v1 -> v2 comparison deck (python-pptx), in just-dna-lite's look: its UI's white ground and the four colours of its helix logo.
 
 Run: uv run --no-project --with python-pptx python -I scripts/longevitymap_deck.py LOGO.png OUT.pptx
 LOGO is the dna-seq organisation's avatar (the helix). Numbers are written in as of 2026-11-18; update them from
@@ -19,19 +19,22 @@ from pptx.util import Emu, Pt
 LOGO = Path(sys.argv[1])
 OUT = Path(sys.argv[2])
 
-BG = RGBColor(0x0B, 0x14, 0x26)
-PANEL = RGBColor(0x14, 0x22, 0x38)
-LINE = RGBColor(0x2A, 0x3A, 0x55)
-WHITE = RGBColor(0xFF, 0xFF, 0xFF)
-TEXT = RGBColor(0xD2, 0xD8, 0xDD)
-MUTED = RGBColor(0x9A, 0xA3, 0xAB)
-TEAL = RGBColor(0x2E, 0xC4, 0xB6)
-ORANGE = RGBColor(0xFF, 0x9F, 0x1C)
-BLUE = RGBColor(0x4D, 0x9F, 0xFF)
-GREEN = RGBColor(0x5F, 0xD0, 0x68)
-LIME = RGBColor(0xA6, 0xD9, 0x4F)
-AMBER = RGBColor(0xF5, 0xC2, 0x42)
-RED = RGBColor(0xEF, 0x5B, 0x5B)
+# just-dna-lite's UI (lite.just-dna.life): white ground, slate text, and the four colours of the logo's
+# protein-bank-style helix rendering (green, cyan, yellow, orange), the UI's green/teal/blue for accents.
+BG = RGBColor(0xFF, 0xFF, 0xFF)
+PANEL = RGBColor(0xF5, 0xF7, 0xFA)
+LINE = RGBColor(0xE0, 0xE0, 0xE0)
+WHITE = RGBColor(0x11, 0x18, 0x27)  # ink for titles and labels (the name kept from the dark draft)
+TEXT = RGBColor(0x1F, 0x29, 0x33)
+MUTED = RGBColor(0x4B, 0x55, 0x63)
+GREEN = RGBColor(0x21, 0xBA, 0x45)   # helix green, the UI's green
+TEAL = RGBColor(0x00, 0xB5, 0xAD)    # helix cyan, the UI's teal
+YELLOW = RGBColor(0xD4, 0xB1, 0x06)  # helix yellow, darkened to read on white
+ORANGE = RGBColor(0xE0, 0x7B, 0x00)  # helix orange
+BLUE = RGBColor(0x21, 0x85, 0xD0)    # the UI's blue
+LIME = TEAL
+AMBER = YELLOW
+RED = RGBColor(0xDB, 0x28, 0x28)     # the UI's red
 FONT = "Arial"
 
 prs = Presentation()
@@ -132,36 +135,47 @@ box(s, 2.9, 5.25, 1.2, 0.05, fill=ORANGE, shape=MSO_SHAPE.RECTANGLE)
 text(s, "Curated by a team of six Claude Code agents, steered by the maintainers · November 2026", 0.7, 5.45, 7.6, 0.8,
      size=14, color=MUTED)
 
-# ---------------------------------------------------------------- 2 three generations
+# ---------------------------------------------------------------- 2 three generations, like against like
 s = slide("Three generations of one idea", "What changed")
-cols = [
-    ("HAGR LongevityMap", "Build 3, frozen June 2017", TEXT, [
-        ("3,144", "variants in 884 genes"),
-        ("1993–2015", "cited papers; median 2009"),
-        ("Any “significant”", "no threshold, no replication rule"),
-    ]),
-    ("Module v1 (shipped)", "just-dna-seq/longevitymap 1.2.0", ORANGE, [
-        ("528", "rsIDs in 272 genes, 1,022 genotype rows"),
-        ("975 / 47 / 0", "protective / risk / neutral genotype rows"),
-        ("SNP × genotype", "weights, summed into a “net weight”"),
-    ]),
-    ("Module v2 (this work)", "re-curated, 2026-11", TEAL, [
-        ("169", "loci, one row each; 170 rsIDs"),
-        ("489", "genotype rows, 679 study rows"),
-        ("Tier + 6 axes", "reported apart, never summed"),
-    ]),
+table_rows = [
+    ("", "HAGR LongevityMap", "Module v1", "Module v2"),
+    ("Release", "Build 3, frozen June 2017", "1.2.0 (shipped)", "2.0.0 (test registry)"),
+    ("Variants (rsIDs)", "3,144", "528", "163"),
+    ("Genes", "884", "272", "48 named"),
+    ("Genotype rows", "—", "1,022", "489"),
+    ("Papers cited by study rows", "—", "126, 1993–2015 (median 2009)", "51, mostly 2014–2026 GWAS"),
+    ("What counts as evidence", "any reported “significant”", "as HAGR, plus 50 later entries", "tier A–D: genome-wide P, N, independent replication"),
+    ("Genotype rows: protective / risk / neutral", "—", "975 / 47 / 0", "113 / 99 / 277"),
+    ("Score", "none", "weight = SNP × genotype, summed", "none summed; tier and six axes shown apart"),
+    ("Quotes located in a source", "—", "0", "6,765, checked by machine"),
 ]
-for i, (head, sub, accent, items) in enumerate(cols):
-    x = 0.6 + i * 4.1
-    box(s, x, 1.75, 3.85, 4.9, line=accent if i == 2 else None)
-    box(s, x, 1.75, 3.85, 0.08, fill=accent, shape=MSO_SHAPE.RECTANGLE)
-    text(s, head, x + 0.3, 2.0, 3.3, 0.45, size=20, color=WHITE, bold=True)
-    text(s, sub, x + 0.3, 2.45, 3.3, 0.4, size=12, color=MUTED)
-    for j, (big, small) in enumerate(items):
-        y = 3.05 + j * 1.15
-        text(s, big, x + 0.3, y, 3.3, 0.5, size=22, color=accent, bold=True)
-        text(s, small, x + 0.3, y + 0.48, 3.3, 0.5, size=13, color=TEXT)
-footer(s, "HAGR and v1 figures: just-dna-lite manuscript v0.7 and its v1.2.0 audit (2026-11-03). v2: the longevity-loci rows as of 2026-11-18.")
+heads = (None, MUTED, ORANGE, TEAL)
+gt = s.shapes.add_table(len(table_rows), 4, inch(0.6), inch(1.65), inch(12.15), inch(4.9)).table
+for j, wdt in enumerate((3.15, 2.9, 2.9, 3.2)):
+    gt.columns[j].width = inch(wdt)
+for i, r in enumerate(table_rows):
+    for j, val in enumerate(r):
+        c = gt.cell(i, j)
+        c.fill.solid()
+        c.fill.fore_color.rgb = BG if i == 0 else (PANEL if i % 2 else BG)
+        c.margin_left = c.margin_right = inch(0.1)
+        c.margin_top = c.margin_bottom = inch(0.04)
+        c.vertical_anchor = MSO_ANCHOR.MIDDLE
+        tf = c.text_frame
+        tf.word_wrap = True
+        p = tf.paragraphs[0]
+        run = p.add_run()
+        run.text = val
+        f = run.font
+        f.name = FONT
+        if i == 0:
+            f.size, f.bold = Pt(16), True
+            f.color.rgb = heads[j] or WHITE
+        else:
+            f.size = Pt(13)
+            f.bold = j == 0 or (j == 3)
+            f.color.rgb = MUTED if j == 0 else (TEAL if j == 3 and val[:1].isdigit() else TEXT)
+footer(s, "v2: the 2.0.0 build (164 loci; the sweep has since added 5). HAGR, v1: just-dna-lite manuscript v0.7 and its v1 audit.")
 
 # ---------------------------------------------------------------- 3 what the audit found in v1
 s = slide("Why v1 had to be rebuilt", "The audit of the shipped module")
