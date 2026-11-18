@@ -1547,3 +1547,8 @@ rules, each a reading of rules already decided.
    about a twentieth of the African effect, which is §4.1's own B clause, "replication with a much smaller effect".
    They support the direction and are named as such. `ancestry_specific:afr` and `sex_specific:m` stand, the sex
    contrast tested (z 4.4, D29.16). Rejected: A, counting the European look-ups as the replication.
+9. **rs4709783 C6orf118 gets no row.** Pilling 2016's own supplement prints P 5.30e-8, above 5e-8; the Catalog's
+   "5e-8" is the rounded mantissa (D26.3: read at the paper's own P). The same cohort eight times larger is flat
+   (Pilling 2017 mothers 0.31), and so is Timmers (0.80). A sub-threshold line at no seed locus is closed in the
+   scout's queue with its reason, as Kashtanova 2026's genes were. Rejected: a D row, which the seed's scope does not
+   ask for and which would put a never-significant line in the module as if it had once been a hit.
