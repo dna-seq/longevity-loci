@@ -82,4 +82,4 @@ Nothing is half run. The backfill is complete, bioRxiv included (2026-11-18).
 
 ## To file
 
-Nothing.
+- `unattended`, to the kit's issues at the next idle turn: the scout's watchdog died four times on 2026-11-18 while the session lived (pids 478191, 1311810, 1475643, 1849426), each time around a kit reload, and the machine's watchdog restarted it at the next prompt (#208); messages waited unseen meanwhile, and once a reply failed for want of a Zulip account.
