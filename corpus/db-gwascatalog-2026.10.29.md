@@ -2888,3 +2888,12 @@ healthier lipid side. Platelet count and ANGPTL3 lines named. For row 166.
 > [q824] _embedded.associations[0].efo_traits[0] efo_id OBA_VT0001253 efo_trait body height
 
 rs1927465: one association (q823, q824), height, T +0.0138; no longevity association is curated for it. For row 170.
+
+## Reading 2026-11-18, record
+
+> [q825] _embedded.associations[0] association_id 35691605 risk_frequency 0.428782 pvalue_description pvalue_mantissa 2 pvalue_exponent -11 multi_snp_haplotype false snp_interaction false range [0.011-0.02] beta 0.0153237 unit increase p_value 2e-11 accession_id GCST006697 pubmed_id 29227965 first_author Pilling LC ci_lower 0.011 ci_upper 0.02
+
+> [q826] _embedded.associations[0].reported_trait[0] Parental longevity (combined parental attained age, Martingale residuals)
+
+rs4426183: one association (q825, q826), Pilling 2017's combined parental attained age (GCST006697), T +0.0153, P 2e-11,
+the deposit's own line (frequency 0.4288, as in pmid-29227965). For row 171.

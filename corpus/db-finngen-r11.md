@@ -950,3 +950,9 @@ it at the EUR r +0.387 (Finnish LD unread), z 2.56 falls to 1.82, P 0.07 (derive
 > [q135] 10 93236765 C T rs1927465 XRCC6P1 0.699758 0.155052 -0.00409185 0.0106103 0.140983 0.142057 0.140848
 
 FinnGen R11's deaths at rs1927465 (q135): alt T −0.0041 (SE 0.0106) for death, P 0.70: flat. For row 170.
+
+## Reading 2026-11-18, record
+
+> [q136] 12 110935600 T C rs4426183 LINC01405 0.223406 0.650906 -0.00924841 0.00759609 0.606688 0.605063 0.606892
+
+FinnGen R11's deaths at rs4426183 (q136): alt C −0.0092 (SE 0.0076) for death, P 0.22: C fewer deaths, flat. For row 171.

@@ -5385,3 +5385,27 @@ q1569), PIP 0.997 (q1570); four more MCV and MCH sets at PIP 0.87 to 0.996 named
 rs1927465 (10_93236765_C_T): 7 sets (q1571), none of a lifespan, longevity or healthspan class: height (FinnGen R12,
 q1572; GCST007841, q1574; UK Biobank standing height, q1575) and arm impedance (q1573). It leads none (PIP 0.07
 to 0.23). For row 170.
+
+## Reading 2026-11-18, record
+
+> [q1576] data.variant.credibleSets count 130
+
+> [q1577] data.variant.credibleSets.rows[47].study id GCST90449056 traitFromSource Systolic blood pressure (MTAG) studyType gwas
+
+> [q1578] data.variant.credibleSets.rows[47].locus.rows[0] posteriorProbability 0.13655886675546788 beta -0.0141115264467 pValueMantissa 1.4910000562667847 pValueExponent -16
+
+> [q1579] data.variant.credibleSets.rows[101].study id GCST90474631 traitFromSource Diastolic blood pressure, automated reading (UKB data field 4079) studyType gwas
+
+> [q1580] data.variant.credibleSets.rows[101].locus.rows[0] posteriorProbability 0.15608588530921344 beta -0.0186046 pValueMantissa 4.789999961853027 pValueExponent -18
+
+> [q1581] data.variant.credibleSets.rows[12].study id GCST004615 traitFromSource Hemoglobin concentration studyType gwas
+
+> [q1582] data.variant.credibleSets.rows[12].locus.rows[0] posteriorProbability 0.032436973207387025 beta null pValueMantissa null pValueExponent null
+
+> [q1583] data.variant.credibleSets.rows[24].study id gtex-v10_majiq_heart_left_ventricle_ensg00000185847_s_110936485-110936698_110936698-110958022 traitFromSource ENSG00000185847:s:110936485-110936698:110936698-110958022 studyType sqtl
+
+rs4426183 (12_110935600_T_C): 130 sets (q1576), all read, none of a lifespan, longevity or healthspan class; it leads none
+(highest PIP 0.16). Blood pressure: systolic (MTAG) PIP 0.14, C β −0.014, P 1.5e-16 (q1577, q1578); diastolic (UK
+Biobank) PIP 0.16, C β −0.019, P 4.8e-18 (q1579, q1580): C, the longer-life allele, lowers both. Blood counts make up
+much of the rest, haemoglobin among them (q1581, q1582). A GTEx splicing set for VHRT in the heart's left ventricle
+holds it at PIP 0.015 (q1583). For row 171.

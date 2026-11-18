@@ -4252,3 +4252,32 @@ intronic in a lncRNA (ENSG00000296225; q1215), between CYP26A1 and MYOF. T by po
 
 rs2519093 (row 59's lead) with rs505922 (Ni 2021's ABO variant): r² 0.43 in CEU (q1217), 0.31 in CHB (q1218), 0.45 in CHS
 (q1219), D′ 1.00 in each. A partial tag. For row 59.
+
+## Reading 2026-11-18, record
+
+> [q1220] mappings[0] start 110935600 location 12:110935600-110935600 allele_string T/C coord_system chromosome seq_region_name 12 end 110935600 ancestral_allele C assembly_name GRCh38 strand 1
+
+> [q1221] populations[19] frequency 0.4328 population gnomADg:nfe allele_count 29397 allele T
+
+> [q1222] [0] start 110935600 most_severe_consequence intron_variant input rs4426183 allele_string T/C seq_region_name 12 end 110935600 assembly_name GRCh38 id rs4426183 strand 1
+
+> [q1223] [0].transcript_consequences[0] biotype lncRNA hgnc_id HGNC:50688 gene_symbol_source HGNC transcript_id ENST00000331096 gene_id ENSG00000185847 variant_allele C impact MODIFIER gene_symbol VHRT distance 1002 strand 1
+
+> [q1224] [0] population_name 1000GENOMES:phase_3:CEU r2 0.321160 variation1 rs4426183 variation2 rs7137828 d_prime 0.590436
+
+> [q1225] [0] variation1 rs4426183 variation2 rs3184504 population_name 1000GENOMES:phase_3:CEU r2 0.321160 d_prime 0.590436
+
+> [q1226] [0] variation2 rs11065979 d_prime 0.499875 population_name 1000GENOMES:phase_3:CEU variation1 rs4426183 r2 0.229975
+
+> [q1227] genotypes[0] genotype C|C sample 1000GENOMES:phase_3:HG00096 gender Male
+
+> [q1228] genotypes[0] genotype C|T gender Male sample 1000GENOMES:phase_3:HG00096
+
+> [q1229] genotypes[0] sample 1000GENOMES:phase_3:HG00096 gender Male genotype T|C
+
+rs4426183 (row 171, the second signal at 71): GRCh38 12:110,935,600 T/C, C ancestral (q1220); T at 43.3 % in gnomAD's
+non-Finnish genomes (q1221); intronic, 1 kb from the VHRT lncRNA (LINC01405), near MYL2 (q1222, q1223). In 1000
+Genomes CEU it tags row 71's SNPs partly: rs7137828 and rs3184504 r² 0.32, D′ 0.59 (q1224, q1225); rs11065979 r² 0.23,
+D′ 0.50 (q1226). Phase from 1000 Genomes' phased EUR genotypes (population q1174; first lines q1227, q1228, q1229),
+over 1,006 haplotypes (derived): T, the shorter-life allele, travels with rs7137828's shorter-life C (r +0.400, r²
+0.160) and with rs11065979's shorter-life T (r +0.361, r² 0.130); in CEU alone r +0.53 and +0.46. For row 171.
