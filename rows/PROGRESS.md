@@ -206,7 +206,7 @@ mechanical consensus of the research tracks, to be confirmed or overturned by th
 
 - 174 SMIM7P1 (2026-11-18), Joshi 2017's rs10198124, African fathers only: tier B, `ancestry_specific:afr`, `sex_specific:m`; Europe leans its way at a twentieth of the effect, an adiposity locus.
 
-- GWAS Catalog line rs4709783 C6orf118 (2026-11-18), Pilling 2016's mothers: no row. P 5.3e-8 in its own supplement, above 5e-8 (the Catalog rounds the mantissa), and the paper counts only chr22's variant for mothers; Pilling 2017's mothers, eight times larger and holding it, P 0.31; Timmers 0.80.
+- GWAS Catalog line rs4709783 C6orf118 (2026-11-18), Pilling 2016's mothers: no row. P 5.3e-8 in its own supplement, above 5e-8 (the Catalog rounds the mantissa), and the paper counts only chr22's variant for mothers; Pilling 2017's mothers, the same cohort eight times larger, P 0.31; Timmers 0.80. Literature search: nothing (OpenAlex and Semantic Scholar 429, unchecked).
 
 ## In hand
 
