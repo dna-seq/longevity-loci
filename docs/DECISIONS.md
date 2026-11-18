@@ -1506,3 +1506,27 @@ base"), logged in `scout/SEARCHES.md` and `scout/backfill_2015_2026.tsv` (c0a872
    reader defaulted by script are read again with judgement. Rejected: accepting a random re-read of 100 rejections
    (0 misses) as the measure, since relevant papers are rare among rejections and a sample of 100 cannot see a
    14 % miss rate on them.
+
+## D42 — the backfill's first rows: 170, 73 and 171 (2026-11-18)
+
+The curator's questions from the 2015–2026 backfill (D41). The person is away; settled by the lead under the standing
+rules, each a reading of rules already decided.
+
+1. **170 CYP26A1-MYOF (rs1927465) is C, `replication_failed`, as filed.** LLFS's 1.09e-8 is the best of six case
+   thresholds, about 1e-7 under the paper's other covariate sets, so the discovery is read as sub-genome-wide: a
+   threshold chosen among six is not a single test at 5e-8 (D29.5, a printed P read as printed, does not reach a P
+   picked after the fact). Timmers' opposite line is a D21 red flag (power 1.00, heterogeneity P 1e-9), which would
+   make it D by D26.8, but HRS's independent one-sided 0.019 in the discovery's direction is the scoring-class pass
+   D25.1 asks for, so it stays C. Rejected: B (takes the best threshold as the test); D (ignores HRS).
+2. **73 KL keeps C and takes `replication_failed`.** Amin 2022's direct heterozygote test (OR 1.03, P 0.79; power
+   1.00, heterogeneity P 0.005 against Arking 2005) is the red flag, and Invidia's Italian pass keeps it off D under
+   D25.1. D25.1 asks for a pass in the discovery's direction and sets no reading depth, so an abstract-level pass
+   counts. Rejected: no token (the test is direct, not D28.1's converted case); D.
+3. **171 MYL2-VHRT (rs4426183) is a second signal at 71** (`second_signal_of: 71`, D39.14: 559 kb from 71's block,
+   r² 0.16), with healthspan + on Foote F2's conditioned one-sided 0.041 on the EUR panel, as rows 162 to 169 read
+   it. Rejected: a standalone row (the signal sits at a seed locus); folding into 71's prose (it is independent).
+4. **Pilling 2017's supplementary workbooks are tried once more before they are left unread.** The journal's direct
+   links answer 404 by script. The curator tries Europe PMC's supplementary-files service for the article's PMCID
+   through `loci fetch-supp`, and the plugin's `list_supplementary`. If neither returns them, they are named in 171 as
+   unread, with the joint analysis unknown, never treated as null.
+5. **Row 71 reads Foote's seven factors after the catalog block**, as the curator proposed.
