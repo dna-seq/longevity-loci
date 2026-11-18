@@ -21,6 +21,7 @@ pinned = true
 wake_from = "longevity-loci/curator longevity-loci/scout longevity-loci/module longevity-loci/liaison longevity-loci/runner just-dna-compiler/lead just-dna-registry/lead just-module-creator/lead */secretary"
 # The person, 2026-11-14: "Some waker for both of you if no activity for hours with nonempty queue" (kit D200).
 queue = "uv run python -I scripts/dashboard.py --left"
+wake_people = "longevity-loci"
 
 [seat.lead.watch.desk]
 cmd = "sh kit:bin/py.sh kit:classes/desk/watch-answers.py longevity-loci lead"
