@@ -94,3 +94,6 @@ Still owed: reply to agents-kit/lead with each seat's notes commit, one `keys co
   released 2017-06-24, its newest cited PMID from 2015).
   Done 2026-11-18 (c0a8726 to d77ae4a; D41): rule fixed after calibration (54/58), 47 uncited papers on 18 rows, rs1927465
   and 13 Catalog lines queued; the curator works the queue. Next: read the rows it moves as a batch (adversarial reads).
+
+- To file (kit, at idle): the seat's watchdog died four times in a day while the session lived (pids 4005630, 478191,
+  1311810, 1475643 on 2026-11-17/18), each restarted by the next prompt's hook; nothing woke the seat in between.
