@@ -16,40 +16,43 @@ verdict_reason: >-
   under D42.10. The Catalog prints the same line (risk frequency 0.203, P 3e-10, no allele; db-gwascatalog-2026.10.29
   q841, q842). No letter is printed for the minor allele. The source is overfit on its frequency: every reference
   puts the minor allele, C, near 5 % in Europeans (gnomAD v4's non-Finnish European genomes 3,436 of 68,010 alleles,
-  db-gnomad-4 q17; 1000 Genomes' CEU 12 of 238 and GBR 8 of 174, q18, q19; every large deposit below 0.05), so
+  db-gnomad-4 q17; 1000 Genomes' CEU 12 of 238 and GBR 8 of 174, q18, q19; every large European deposit near 0.05), so
   Framingham's 0.20 to 0.25 is four to five times what the population carries, the shape a genotyping error leaves,
-  and the authors themselves say these early original-cohort genotypes are the error-prone ones (q17). If the
+  and the authors themselves say these early original-cohort genotypes are the error-prone ones (q17) and found
+  the minor alleles more frequent in the original cohort than in the offspring (q28). If the
   Framingham minor allele is C, the large samples are D21's powered test, and they fail it: Timmers 2019's parental
   lifespan, on the same log-hazard scale per allele in self, has C at β1 −0.000018 (SE 0.0088), P 0.998, n 638,086
-  (pmid-30642433 q437); against the discovery's log HR 0.439 the heterogeneity z is about 6.4 (P about 2e-10), and
+  (pmid-30642433 q437); against the discovery's log HR 0.439 (survival past 80; the paper sees no difference between 70 and 80) the
+  heterogeneity z is about 6.4 (P about 2e-10), and
   one-sided power is 1.00 at the full effect, 1.00 at a tenth of it and about 0.80 at a twentieth (derived from the
   printed SEs). Hence `replication_failed`. If it is not C, nothing measures the C a genome file reports at the
   discovery's frequency. Neither reading leaves G protective. The other large looks are flat: Pilling 2017's four
-  deposits lean C longer, none nominal (mothers P 0.11, both parents 0.32, top 10 % 0.69, fathers 0.89; pmid-29227965
+  deposits are mixed, none nominal (C longer in mothers P 0.11, both parents 0.32; C against in the top 10 %, 0.69, and fathers, 0.89; pmid-29227965
   q336 to q339); Park 2025's own survival leans C to fewer deaths (both sexes P 0.21, men 0.72, women 0.14;
   pmid-40021682 q253 to q255, columns as q39); FinnGen R11's deaths G P 0.42 (db-finngen-r11 q139); Deelen 2019 leans C
   toward reaching the 90th and 99th percentiles (P 0.18, 0.11; pmid-31413261 q384, q385). Outcome cells read for G
   (D28.10: the contradicted discovery gives no `+`): lifespan 0 (Timmers, Pilling, Park, FinnGen, none nominal);
-  exceptional survival 0 (Deelen, against G, not nominal); healthspan + by D31's Foote and Zenin rule at nominal P:
-  Zenin 2019 puts G at a later end of healthspan, P 0.042 (one-sided 0.021, derived; pmid-30729179 q199), Foote 2025's
-  seven factors flat (P 0.29 to 0.86, pmid-40759756 q246 to q252), so a single nominal look, read and not weighted.
+  exceptional survival 0 (Deelen, against G, not nominal); healthspan + at nominal P in its direction, as rows 69 and 70
+  read Zenin: Zenin 2019 puts G at a later end of healthspan, P 0.042, about 0.047 after its 1.053 genomic control
+  (one-sided about 0.024, derived, D26.1; pmid-30729179 q199, q59), Foote 2025's seven factors flat (P 0.29 to 0.86,
+  pmid-40759756 q246 to q252), so one nominal look, none against.
   Open Targets 26.09 holds eight sets (db-opentargets-26.09 q1594): seven ECHS1 expression, exon or splicing QTLs (a
   testis splicing set at PIP 1.00, q1596) and Yashin's own Catalog line (PIP 0.17, q1595), no other lifespan,
   longevity or healthspan set: causal C4 (D39.12); effector E4, the QTLs not shown to colocalise with a lifespan
   signal there is none of. Mechanism general ageing: the paper names ECHS1's role in mitochondrial oxidation and
-  apoptosis (q14's paragraph), but no route to lifespan is shown. Ensembl 116 could not be read (its REST service
+  apoptosis (q27), but no route to lifespan is shown. Ensembl 116 could not be read (its REST service
   refused through the proxy on 2026-11-19), so the consequence and ALFA's frequency are unchecked; the locus is gnomAD
   v4's (db-gnomad-4 q16). The literature search on the rsID (2026-11-19; OpenAlex 503, Semantic Scholar 429, their part
   unchecked) finds this paper and the same group's 2016 follow-up (PMID 27773987), named, not read. Genotypes neutral,
   as 41. Descriptive. Age of action unknown (the paper's late-life effect rests on the same overfit genotypes). The
   evidence is European.
 axes:
-  tier: {value: D, cites: [pmid-25918517#q1, pmid-25918517#q2, pmid-25918517#q3, pmid-25918517#q4, pmid-25918517#q6, pmid-25918517#q7, pmid-25918517#q9, pmid-25918517#q10, pmid-25918517#q12, pmid-25918517#q14, pmid-25918517#q17, db-gnomad-4#q17, db-gnomad-4#q18, db-gnomad-4#q19, pmid-30642433#q437, pmid-29227965#q336, pmid-29227965#q337, pmid-29227965#q338, pmid-29227965#q339, pmid-40021682#q253, pmid-40021682#q39, db-finngen-r11#q139, pmid-31413261#q384, pmid-31413261#q385, db-gwascatalog-2026.10.29#q841, db-gwascatalog-2026.10.29#q842]}
-  mechanism: {value: general_ageing, cites: [pmid-25918517#q14, db-opentargets-26.09#q1594]}
+  tier: {value: D, cites: [pmid-25918517#q1, pmid-25918517#q2, pmid-25918517#q3, pmid-25918517#q4, pmid-25918517#q6, pmid-25918517#q7, pmid-25918517#q9, pmid-25918517#q10, pmid-25918517#q12, pmid-25918517#q14, pmid-25918517#q17, pmid-25918517#q28, pmid-25918517#q29, db-gnomad-4#q17, db-gnomad-4#q18, db-gnomad-4#q19, pmid-30642433#q437, pmid-29227965#q336, pmid-29227965#q337, pmid-29227965#q338, pmid-29227965#q339, pmid-40021682#q253, pmid-40021682#q39, db-finngen-r11#q139, pmid-31413261#q384, pmid-31413261#q385, db-gwascatalog-2026.10.29#q841, db-gwascatalog-2026.10.29#q842]}
+  mechanism: {value: general_ageing, cites: [pmid-25918517#q27, db-opentargets-26.09#q1594]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "+", lifespan: "0", exceptional_survival: "0",
-            cites: [pmid-30642433#q437, pmid-29227965#q336, pmid-29227965#q337, pmid-29227965#q338, pmid-29227965#q339, pmid-40021682#q253, pmid-40021682#q254, pmid-40021682#q255, db-finngen-r11#q139, pmid-31413261#q384, pmid-31413261#q385, pmid-30729179#q199, pmid-40759756#q246, pmid-40759756#q247, pmid-40759756#q248, pmid-40759756#q249, pmid-40759756#q250, pmid-40759756#q251, pmid-40759756#q252]}
+            cites: [pmid-30642433#q437, pmid-29227965#q336, pmid-29227965#q337, pmid-29227965#q338, pmid-29227965#q339, pmid-40021682#q253, pmid-40021682#q254, pmid-40021682#q255, db-finngen-r11#q139, pmid-31413261#q384, pmid-31413261#q385, pmid-30729179#q199, pmid-40759756#q246, pmid-40759756#q247, pmid-40759756#q248, pmid-40759756#q249, pmid-40759756#q250, pmid-40759756#q251, pmid-40759756#q252, pmid-30729179#q59]}
   actionability: {label: descriptive, cites: [pmid-25918517#q4]}
   context: {values: [eur_only_evidence], cites: [pmid-25918517#q3, pmid-30642433#q437]}
 flags:
@@ -92,7 +95,7 @@ studies:
     note: pmid-25918517
     quote: q4
     phenotype_class: OWN_SURVIVAL
-    study_design: own_survival_cox
+    study_design: meta_analysis
     population: European (Framingham Heart Study original cohort, women)
     ancestry: [EUR]
     sample_size: 679
@@ -105,7 +108,7 @@ studies:
     effect_unit: years of own lifespan per minor allele (additive mixed model)
     effect_allele: C
     direction: risk
-    statistical_test: "EMMAX linear mixed-model GWAS of women's lifespan (no linear own-lifespan design in the vocabulary; the authors' Cox model of the same people, Table S3, q10: HR 1.55, P 9.4e-11) with 20 principal components, smoking and birth cohort (q3; Supplement Table S1, q4, caption q6), minor allele frequency 0.2031; the minor allele's letter is not printed, C is the minor allele in every reference (derived); men β −4.41, P 2.87e-7 (q9); overfit on the frequency (C about 0.05 in gnomAD and 1000 Genomes Europeans)"
+    statistical_test: "EMMAX linear mixed-model GWAS of women's lifespan (no own-lifespan linear design in the vocabulary, so meta_analysis as rows 25, 112 and 159; the authors' Cox model of the same people, Table S3, q10: HR 1.55, P 9.4e-11) with 20 principal components, smoking and birth cohort (q3; Supplement Table S1, q4, caption q6), minor allele frequency 0.2031; the minor allele's letter is not printed, C is the minor allele in every reference (derived); men β −4.41, P 2.87e-7 (q9); overfit on the frequency (C about 0.05 in gnomAD and 1000 Genomes Europeans)"
     curator: claude-opus-5-5
   - rsid: rs7894051
     note: pmid-30642433
