@@ -182,3 +182,8 @@ production (528 rsIDs, 671 studies, compiled on 0.7.0) is R-LEGACY-1's research-
   superseding release, and its witness check says nothing_to_check (recorded rows are compared only under
   --rederive; 0.8.6 had compared one). Strict green, warnings as usual (20 indel VRS, not closed, one
   dataset_currency), 245 resolved. content_signature c76726fd (was aebf5e38, the text alone). Not published.
+- 2026-11-19, the second RM6 re-export (the lead, 641728864): rows and corpus as at 12c673f plus the curator's nine
+  reader edits of 72f7810 (applied cleanly), export code d9eb9b6 (row numbers as locus names, the punctuation an id
+  left closed), JMC_TRACE=0, re-enriched to attest. Only studies.csv and verification.json move; no id tokens left.
+  variants 489, studies 679, haplotypes 6, diplotypes 12; strict green, warnings as usual. content_signature
+  2b3f2e01. Not published.
