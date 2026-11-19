@@ -18,14 +18,6 @@ person's word in desk #56): the rehearsed 2.0.0 spec, the report's routing fix, 
 supplements. Review is just-dna-lite's lead's, merge and publication Anton's. Its "before publishing" list names
 what is open (HF folder for 1.2.0, licence, closing, the study-note shorthand, the report-voice review).
 
-## RM6 — study notes worded for a reader in the export
-
-**State:** building. **Owner:** lead (the curator and the module seat do the work). Export done (c6586ae, 4c5d4ba, in #37 at 2bfdb5e); the curator reads it. The person, 2026-11-19: "PR is still a
-pripority"; ahead of new rows under the restored pace. `studies.csv`'s analysis and
-conclusion fields cite this repository's decision and quote ids (D26.13, q33), which the app's report shows raw
-(seen on the demo genome, 2026-11-19). Before the public publish: an export that words them for a reader, the same
-2.0.0 content, a new compile, the PR updated.
-
 ## RM3 — the field's consensus loci, marked or not
 
 **State:** blocked: desk #47. **Owner:** lead. Default: nothing built.
