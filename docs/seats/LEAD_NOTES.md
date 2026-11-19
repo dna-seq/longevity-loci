@@ -118,3 +118,5 @@ Still owed: reply to agents-kit/lead with each seat's notes commit, one `keys co
   study notes show our D/q ids raw (RM6). The demo genome sits outside git on the data volume for re-runs (480 MB).
 
 - reflect after 2026-11-26: classes/base/BASE.md as of v0.1.248 (worktrees in the clone's .worktrees/, never the scratchpad).
+
+- Anton, 2026-11-19 (via the secretary, to every lead): "manuscript skills is super token consuming ... do not initialize run withou asking me". No manuscript-skills run starts here without his word.
