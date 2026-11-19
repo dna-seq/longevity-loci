@@ -80,6 +80,10 @@ Nothing is half run. The backfill is complete, bioRxiv included (2026-11-18).
 - Daily line in `#longevity-loci>daily` at the first turn of a new day when scout work landed since the last one
   (last posted 2026-11-18).
 
+## Throttle (2026-11-19)
+
+The lead, on the person's word (641723236): pace small-forward; no new sweeps or backfill reads past the quota hold point; the just-dna-lite PR (#37) and RM6 come first. Track E's next run waits until the quota is under the hold point.
+
 ## To file
 
 Nothing. (The watchdog's deaths of 2026-11-18 are on kit #537, filed by the lead; the scout's counts are a comment there.)
