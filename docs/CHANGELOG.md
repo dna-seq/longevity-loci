@@ -4,6 +4,7 @@ Newest first.
 
 ## Unreleased
 
+- `loci export` writes a reader's text in the study cells an app shows (`statistical_test`, `population`, `effect_unit`): the rows' quote ids, decision numbers and section marks are taken out, wording and numbers kept (RM6, for just-dna-lite #37, whose report showed "(q1, q2)" and "D11/D13" raw; the curator's prototype). The rows keep their ids.
 - The module goes to production through just-dna-lite (the person, 2026-11-19, desk #56): pull request dna-seq/just-dna-lite#37 carries the rehearsed 2.0.0 spec, a fix to just-dna-lite's report (which filed any `longevitymap` under Generation I's pathways, where 2.0.0's rows vanished), the release runbook and the supplements (`loci.csv`, the draft section). 1.2.0 stays frozen.
 - The module-creator plugin pinned at v0.48.15 (no dependency moves); its hook now traces module tables written through the shell (F165).
 - Registry v0.34.0 read into docs/UPSTREAM_REGISTRY.md (an admin deploy call; nothing to change here); the compiler's v0.8.9 tag marked read.

@@ -6,6 +6,7 @@ from __future__ import annotations
 import csv
 import io
 import shutil
+import re
 from collections import Counter
 from pathlib import Path
 
@@ -18,6 +19,8 @@ from typer.testing import CliRunner
 from longevity_loci.check import load_corpus
 from longevity_loci.cli import app
 from longevity_loci.export import (
+    CITE_ID,
+    READER_CELLS,
     COMPUTED_EXACT,
     COMPUTED_PREFIXES,
     NOMINAL_TEST,
@@ -30,6 +33,7 @@ from longevity_loci.export import (
     cell,
     export,
     load_rows,
+    reader_text,
     marker_trait,
     render,
     write,
@@ -374,3 +378,33 @@ def test_row_links_0_8_cannot_hold_are_counted(tree) -> None:
     folded = Counter(str(i) for r in rows for i in r.also_loci)
     assert Counter({d: n for (g, d), n in result.gaps.items() if g is Gap.SECOND_SIGNAL}) == seconds
     assert Counter({d: n for (g, d), n in result.gaps.items() if g is Gap.ALSO_LOCI}) == folded
+
+
+NUMBER = re.compile(r"\d+(?:[.,]\d+)*")
+
+
+def test_reader_cells_carry_no_citation_id(real) -> None:
+    """RM6: what an app's report shows of a study holds no quote id, decision number or section mark."""
+    _, result = real
+    left = [(x["rsid"], k, x[k]) for x in result.studies for k in READER_CELLS if x[k] and CITE_ID.search(x[k])]
+    assert left == []
+
+
+def test_reader_text_keeps_every_number_but_the_ids(real) -> None:
+    """Only the ids go: every other number in a row's study text survives, as often as it was written."""
+    rows, _ = real
+    for r in rows:
+        for s in r.studies:
+            for k in READER_CELLS:
+                text = getattr(s, k)
+                if not text:
+                    continue
+                assert Counter(NUMBER.findall(reader_text(text) or "")) == Counter(NUMBER.findall(CITE_ID.sub(" ", text))), (r.locus_id, k, text)
+
+
+def test_reader_text_on_the_curators_examples() -> None:
+    assert reader_text("(q345; derived)") == "(derived)"
+    assert reader_text("1,595 cases and 880 controls (q8); fit (db-ensembl-116#q929, 71 against 56.8, D37.1, derived)") == (
+        "1,595 cases and 880 controls; fit (71 against 56.8, derived)"
+    )
+    assert reader_text(None) is None

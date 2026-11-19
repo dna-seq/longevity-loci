@@ -145,6 +145,12 @@ first; a refusal is reported and the row withheld. Output is sorted by rsid (by 
 citation, then every cell, so two runs give the same bytes. Exit 0 written, 1 a row or note that does not parse or
 a cite the corpus lacks (nothing written), 2 an input missing.
 
+**What a reader sees carries no citation id** (RM6, 2026-11-19). A study's `statistical_test`, `population` and
+`effect_unit` are shown raw by an app's report, so the export takes the rows' in-line ids out of them (quote ids
+`q12`, `pmid-…#q12`, `db-…#q12`, decision numbers `D26.13`, rule ids `R-TIER-1`, section marks `§4.1`): "(q1, q2)"
+goes, "(q345; derived)" becomes "(derived)". Wording and every other number stay (a test counts them). The rows keep
+their ids, where `check rows` and every review read them, and `quote_sources.csv` keeps the quotes.
+
 The columns are the reference example's headers (`docs/format08_reference/longevity_studies/`), then the module
 seat's ask where 0.8 has a column for it: on `variants.csv` negatives, priority, phenotype, category,
 stat_significance, effect_size, effect_measure, effect_allele, flags, requires_callable, acmg_sf, actionability; on

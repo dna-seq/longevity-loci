@@ -75,7 +75,7 @@ COMPUTED_EXACT = frozenset({"tradeoff", "eur_only_evidence"})
 COMPUTED_PREFIXES = ("causal:", "effector:", "ld_proxy_of:")
 COX = frozenset({StudyDesign.PARENTAL_LIFESPAN_COX, StudyDesign.OWN_SURVIVAL_COX, StudyDesign.HEALTHSPAN_COX})
 PERCENTILE = {StudyDesign.PERCENTILE_CC_P90: "90th", StudyDesign.PERCENTILE_CC_P99: "99th"}
-NOMINAL_TEST = "nominal (p < 0.05), not genome-wide; D11/D13"  # no direction claimed: some are direction unknown or derived reads (D37.13)
+NOMINAL_TEST = "nominal (p < 0.05), not genome-wide"  # no direction claimed: some are direction unknown or derived reads (D37.13)
 DERIVED_UNIT = "crude odds ratio derived from the printed allele frequencies, not printed by the source"
 DERIVED = re.compile(r"\bderived here\b")  # the curator's own words for an effect computed, not printed (D25.10)
 SIDE = {Direction.PROTECTIVE: "longer-lived", Direction.RISK: "shorter-lived"}
@@ -215,6 +215,32 @@ def _locus(locus: Locus | None) -> dict[str, object]:
     return {"chrom": locus.chrom, "start": locus.start, "ref": locus.ref}
 
 
+# The reader's projection (RM6; the person, 2026-11-19, the curator's prototype): the rows cite quote ids, decision
+# numbers and section marks in line, which `check rows` and every review read, but an app's report shows the study
+# cells raw, where "(q1, q2)" or "D11/D13" mean nothing. The export drops the ids from the cells a reader sees;
+# wording and numbers stay. The rows keep them; quote_sources.csv keeps the quotes.
+_CITE_ID = r"(?:pmid-\d+#q\d+|db-[a-z0-9.-]+?#q\d+|db-[a-z0-9-]+?-[\d.r]+|pmid-\d+|\bq\d+\b|\bD\d+(?:\.\d+)?\b|R-[A-Z]+-\d+|§[\d.]+)"
+_CITE_LIST = rf"{_CITE_ID}(?:(?:\s*(?:,|and|to|/|-|–)\s*){_CITE_ID})*"
+CITE_ID = re.compile(_CITE_ID)
+READER_CELLS = ("statistical_test", "population", "effect_unit")
+
+
+def reader_text(text: str | None) -> str | None:
+    """`text` with its in-line citation ids taken out, for a cell a report shows; None stays None."""
+    if text is None:
+        return None
+    t = re.sub(rf"\s*\(\s*{_CITE_LIST}\s*\)", "", text)  # "(q1, q2)"
+    t = re.sub(rf"\(\s*{_CITE_LIST}\s*[;,]\s*", "(", t)  # "(q345; derived)" -> "(derived)"
+    t = re.sub(rf"\s*[;,]\s*{_CITE_LIST}\s*\)", ")", t)  # "(derived; q3)" -> "(derived)"
+    t = re.sub(rf"(^|;\s*){_CITE_LIST}\s*[:;]\s*", r"\1", t)  # "D11/D13; ..." as a lead-in
+    t = re.sub(rf"\s*[;,]?\s*\b(?:as|by|under|per|see)\s+{_CITE_LIST}", "", t)
+    t = re.sub(rf"\s*{_CITE_LIST}", "", t)
+    t = re.sub(r"\(\s*\)", "", t)
+    t = re.sub(r"\s+([;,.)])", r"\1", t)
+    t = re.sub(r"[;,]\s*([;,])", r"\1", t)
+    return re.sub(r"\s{2,}", " ", t).strip(" ;,") or None
+
+
 def _study_row(s: Study, note: Note, out: Export, locus: Locus | None = None, marker: str | None = None) -> dict[str, str]:
     """`marker`: the trait of a D32 marker variant, which a BIOMARKER study of that variant carries."""
     head = note.head
@@ -228,7 +254,7 @@ def _study_row(s: Study, note: Note, out: Export, locus: Locus | None = None, ma
         tests.append(NOMINAL_TEST)
         out.gap(Gap.STUDY_NOMINAL)
     if s.p_one_sided is not None:
-        tests.append(f"one-sided p {cell(s.p_one_sided)} in the discovery's direction (D26.13)")
+        tests.append(f"one-sided p {cell(s.p_one_sided)} in the discovery's direction")
         out.gap(Gap.ONE_SIDED)
     if s.statistical_test:
         tests.append(s.statistical_test)
@@ -269,6 +295,8 @@ def _study_row(s: Study, note: Note, out: Export, locus: Locus | None = None, ma
         "conclusion": conclusion, "provenance_quote": quote, "curator": s.curator, "stat_significance": sig,
         **_locus(locus),
     }
+    for k in READER_CELLS:
+        values[k] = reader_text(values[k])
     return {k: cell(x) for k, x in values.items()}
 
 
