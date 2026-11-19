@@ -1,0 +1,128 @@
+# A locus outside the seed list, from the scout's GWAS Catalog entry (the 2015–2026 backfill, D41; D42.10, one of the
+# two Yashin 2015 SNPs the authors' own QC kept), its own row under the next free id. Curated 2026-11-19. Lead
+# rs7894051, intronic in ECHS1 (10q26.3), GRCh38 10:133,370,917 C/G, GRCh37 10:135,184,421. G is the common allele; C is
+# about 5 % in Europeans (gnomAD v4's non-Finnish European genomes 5.1 %, 1000 Genomes' CEU 5.0 %), but 20 to 25 % in
+# Yashin's Framingham genotypes. G is the allele the discovery puts with longer life (its minor allele with shorter).
+locus_id: 176
+locus_name: ECHS1
+verdict: kept
+verdict_reason: >-
+  Tier D, on §4.1's "overfit source" (D26.10, as row 41) and D21's powered failure (D25.1). Yashin 2015's lifespan GWAS
+  of 679 Framingham original-cohort women (EMMAX, 20 principal components; pmid-25918517 q3) puts the minor allele
+  with 3.52 years less life per copy, P 2.52e-10, minor allele frequency 0.2031 (Supplement Table S1, q4, caption q6);
+  the cohort's 432 men agree, −4.41 years, P 2.87e-7, frequency 0.2539 (Table S2, q9, q7), and the authors' Cox model of
+  survival past 80 in the same people gives HR 1.55 per minor allele (log HR 0.439, SE 0.068, P 9.4e-11, Table S3,
+  q10, q12). Genome-wide by the paper's own call (q1); one of the two the authors' extra QC kept (q2, q14), so a row
+  under D42.10. The Catalog prints the same line (risk frequency 0.203, P 3e-10, no allele; db-gwascatalog-2026.10.29
+  q841, q842). No letter is printed for the minor allele. The source is overfit on its frequency: every reference
+  puts the minor allele, C, near 5 % in Europeans (gnomAD v4's non-Finnish European genomes 3,436 of 68,010 alleles,
+  db-gnomad-4 q17; 1000 Genomes' CEU 12 of 238 and GBR 8 of 174, q18, q19; every large deposit below 0.05), so
+  Framingham's 0.20 to 0.25 is four to five times what the population carries, the shape a genotyping error leaves,
+  and the authors themselves say these early original-cohort genotypes are the error-prone ones (q17). If the
+  Framingham minor allele is C, the large samples are D21's powered test, and they fail it: Timmers 2019's parental
+  lifespan, on the same log-hazard scale per allele in self, has C at β1 −0.000018 (SE 0.0088), P 0.998, n 638,086
+  (pmid-30642433 q437); against the discovery's log HR 0.439 the heterogeneity z is about 6.4 (P about 2e-10), and
+  one-sided power is 1.00 at the full effect, 1.00 at a tenth of it and about 0.80 at a twentieth (derived from the
+  printed SEs). Hence `replication_failed`. If it is not C, nothing measures the C a genome file reports at the
+  discovery's frequency. Neither reading leaves G protective. The other large looks are flat: Pilling 2017's four
+  deposits lean C longer, none nominal (mothers P 0.11, both parents 0.32, top 10 % 0.69, fathers 0.89; pmid-29227965
+  q336 to q339); Park 2025's own survival leans C to fewer deaths (both sexes P 0.21, men 0.72, women 0.14;
+  pmid-40021682 q253 to q255, columns as q39); FinnGen R11's deaths G P 0.42 (db-finngen-r11 q139); Deelen 2019 leans C
+  toward reaching the 90th and 99th percentiles (P 0.18, 0.11; pmid-31413261 q384, q385). Outcome cells read for G
+  (D28.10: the contradicted discovery gives no `+`): lifespan 0 (Timmers, Pilling, Park, FinnGen, none nominal);
+  exceptional survival 0 (Deelen, against G, not nominal); healthspan + by D31's Foote and Zenin rule at nominal P:
+  Zenin 2019 puts G at a later end of healthspan, P 0.042 (one-sided 0.021, derived; pmid-30729179 q199), Foote 2025's
+  seven factors flat (P 0.29 to 0.86, pmid-40759756 q246 to q252), so a single nominal look, read and not weighted.
+  Open Targets 26.09 holds eight sets (db-opentargets-26.09 q1594): seven ECHS1 expression, exon or splicing QTLs (a
+  testis splicing set at PIP 1.00, q1596) and Yashin's own Catalog line (PIP 0.17, q1595), no other lifespan,
+  longevity or healthspan set: causal C4 (D39.12); effector E4, the QTLs not shown to colocalise with a lifespan
+  signal there is none of. Mechanism general ageing: the paper names ECHS1's role in mitochondrial oxidation and
+  apoptosis (q14's paragraph), but no route to lifespan is shown. Ensembl 116 could not be read (its REST service
+  refused through the proxy on 2026-11-19), so the consequence and ALFA's frequency are unchecked; the locus is gnomAD
+  v4's (db-gnomad-4 q16). The literature search on the rsID (2026-11-19; OpenAlex 503, Semantic Scholar 429, their part
+  unchecked) finds this paper and the same group's 2016 follow-up (PMID 27773987), named, not read. Genotypes neutral,
+  as 41. Descriptive. Age of action unknown (the paper's late-life effect rests on the same overfit genotypes). The
+  evidence is European.
+axes:
+  tier: {value: D, cites: [pmid-25918517#q1, pmid-25918517#q2, pmid-25918517#q3, pmid-25918517#q4, pmid-25918517#q6, pmid-25918517#q7, pmid-25918517#q9, pmid-25918517#q10, pmid-25918517#q12, pmid-25918517#q14, pmid-25918517#q17, db-gnomad-4#q17, db-gnomad-4#q18, db-gnomad-4#q19, pmid-30642433#q437, pmid-29227965#q336, pmid-29227965#q337, pmid-29227965#q338, pmid-29227965#q339, pmid-40021682#q253, pmid-40021682#q39, db-finngen-r11#q139, pmid-31413261#q384, pmid-31413261#q385, db-gwascatalog-2026.10.29#q841, db-gwascatalog-2026.10.29#q842]}
+  mechanism: {value: general_ageing, cites: [pmid-25918517#q14, db-opentargets-26.09#q1594]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: "+", lifespan: "0", exceptional_survival: "0",
+            cites: [pmid-30642433#q437, pmid-29227965#q336, pmid-29227965#q337, pmid-29227965#q338, pmid-29227965#q339, pmid-40021682#q253, pmid-40021682#q254, pmid-40021682#q255, db-finngen-r11#q139, pmid-31413261#q384, pmid-31413261#q385, pmid-30729179#q199, pmid-40759756#q246, pmid-40759756#q247, pmid-40759756#q248, pmid-40759756#q249, pmid-40759756#q250, pmid-40759756#q251, pmid-40759756#q252]}
+  actionability: {label: descriptive, cites: [pmid-25918517#q4]}
+  context: {values: [eur_only_evidence], cites: [pmid-25918517#q3, pmid-30642433#q437]}
+flags:
+  - {token: replication_failed, cites: [pmid-30642433#q437, pmid-25918517#q10, pmid-25918517#q4]}
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1594, db-opentargets-26.09#q1595]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q1594, db-opentargets-26.09#q1596]}
+variants:
+  - rsid: rs7894051
+    locus: {chrom: "10", start: 133370917, ref: C, cites: [db-gnomad-4#q16]}
+    gene: ""
+    phenotype: ECHS1 region, lifespan
+    trait_efo_id: OBA_VT0005372
+    effect_allele: G
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common version of this DNA position, as about 9 in 10 people of European ancestry
+          do. It is the reference the other combinations are compared with. The position lies inside the ECHS1 gene on
+          chromosome 10, which works in the cell's energy production. One small study linked the other version to a
+          shorter life, but very large studies found no link.
+      - genotype: C/G
+        state: neutral
+        conclusion: >-
+          You carry one copy of the less common C version of this DNA position (about 1 in 10 people of European
+          ancestry do). One small American study linked it to a shorter life, but that study measured this version far
+          more often than it really occurs, and very large studies found no link. It says nothing about your own
+          lifespan.
+      - genotype: C/C
+        state: neutral
+        conclusion: >-
+          You carry two copies of the less common C version of this DNA position (about 1 in 400 people of European
+          ancestry do). One small American study linked it to a shorter life, but that study measured this version far
+          more often than it really occurs, and very large studies found no link. It says nothing about your own
+          lifespan.
+studies:
+  - rsid: rs7894051
+    note: pmid-25918517
+    quote: q4
+    phenotype_class: OWN_SURVIVAL
+    study_design: own_survival_cox
+    population: European (Framingham Heart Study original cohort, women)
+    ancestry: [EUR]
+    sample_size: 679
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "2.52E-10"
+    p_value_num: 2.52e-10
+    effect_size: -3.52465
+    effect_measure: beta
+    effect_unit: years of own lifespan per minor allele (additive mixed model)
+    effect_allele: C
+    direction: risk
+    statistical_test: "EMMAX linear mixed-model GWAS of women's lifespan (no linear own-lifespan design in the vocabulary; the authors' Cox model of the same people, Table S3, q10: HR 1.55, P 9.4e-11) with 20 principal components, smoking and birth cohort (q3; Supplement Table S1, q4, caption q6), minor allele frequency 0.2031; the minor allele's letter is not printed, C is the minor allele in every reference (derived); men β −4.41, P 2.87e-7 (q9); overfit on the frequency (C about 0.05 in gnomAD and 1000 Genomes Europeans)"
+    curator: claude-opus-5-5
+  - rsid: rs7894051
+    note: pmid-30642433
+    quote: q437
+    phenotype_class: PARENTAL_LIFESPAN
+    study_design: parental_lifespan_cox
+    population: European (UK Biobank and the LifeGen cohorts)
+    ancestry: [EUR]
+    sample_size: 638086
+    sample_unit: lives
+    stat_significance: not_significant
+    p_value: "0.99837716"
+    p_value_num: 0.99837716
+    effect_size: -0.000018
+    effect_measure: beta
+    effect_unit: beta1 log hazard protection per C allele in self (positive = longer life)
+    effect_allele: C
+    direction: risk
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0088, direction -+; against the discovery's Cox log HR 0.439 per minor allele (SE 0.068, q10 of pmid-25918517) heterogeneity z about 6.4, one-sided power 1.00 at a tenth of the effect (derived): replication_failed"
+    curator: claude-opus-5-5

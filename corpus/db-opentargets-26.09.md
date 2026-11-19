@@ -5448,3 +5448,16 @@ waist circumference (β −0.0089, P 1.1e-9; q1587, q1588), body mass index (−
 > [q1593] data variant null
 
 18_50083001_C_T (rs78441534): no Open Targets record, so no credible set, no locus-to-gene and no QTL. For row 175.
+
+## Reading 2026-11-19, supplement
+
+> [q1594] data.variant.credibleSets count 8
+
+> [q1595] data.variant.credibleSets.rows[7].study id GCST002846 traitFromSource Lifespan studyType gwas
+
+> [q1596] data.variant.credibleSets.rows[4].locus.rows[0] posteriorProbability 0.9999466499623165 beta 1.36481 pValueMantissa 4.203000068664551 pValueExponent -45
+
+rs7894051 (10_133370917_C_G) in eight credible sets (q1594): seven are ECHS1 (ENSG00000127884) expression, exon or
+splicing QTLs and one array probe (GTEx, MAGE, CEDAR; a testis splicing set at PIP 1.00, q1596; the others 0.02 to
+0.15). The eighth is Yashin 2015's own lifespan record (GCST002846, q1595), PIP 0.17, built from the Catalog's top
+line, not from summary statistics. No lifespan, longevity or healthspan set from any other study. For row 176.

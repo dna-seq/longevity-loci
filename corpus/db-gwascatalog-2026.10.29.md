@@ -2959,3 +2959,12 @@ threshold.
 The Catalog's one association at rs78441534 (Gurinovich 2021, "Longevity (100 years and older)", OBA_VT0005372): the
 "beta" is the paper's score Z (5.46, pmid-33948810 q40), not an effect size; risk frequency 0.0003, the controls'; P
 printed 5e-8 from the paper's 4.69e-8; GRCh38 18:50,083,001.
+
+## Reading 2026-11-19, supplement
+
+> [q841] _embedded.associations[0] association_id 10862816 risk_frequency 0.203 pvalue_description  pvalue_mantissa 3 pvalue_exponent -10 multi_snp_haplotype false snp_interaction false range [NR] beta 3.525 unit decrease p_value 3e-10 accession_id GCST002846 pubmed_id 25918517 first_author Yashin AI
+
+> [q842] _embedded.associations[0].locations[0] 10:133370917
+
+The Catalog's line for rs7894051 (GCST002846, Yashin 2015): risk frequency 0.203, P 3e-10, "beta 3.525 unit decrease"
+(q841); the risk allele is not given. Located at GRCh38 10:133,370,917 (q842). For row 176.

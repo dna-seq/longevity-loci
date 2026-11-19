@@ -68,3 +68,21 @@ African (13.2 %, q7), none of 3,472 Ashkenazi (q8) or 10,620 Finnish (q9); 3.8 %
 The 1000 Genomes European samples in the same record (gnomAD's HGDP and 1000 Genomes subset): T in 1 of 238 CEU
 alleles, 1 of 208 IBS, none of 174 GBR, 206 TSI or 196 FIN, 2 of 1,022 in all (0.2 %): rare, a second reference
 agreeing with the non-Finnish European genomes (q6) and the NECS controls. For row 175.
+
+## Reading 2026-11-19, supplement
+
+> [q16] data.variant variant_id 10-133370917-C-G chrom 10 pos 133370917 ref C alt G
+
+> [q17] data.variant.genome.populations[27] id nfe ac 64574 an 68010
+
+> [q18] data.variant.genome.populations[226] id 1kg:ceu ac 226 an 238
+
+> [q19] data.variant.genome.populations[259] id 1kg:gbr ac 166 an 174
+
+rs7894051 (Yashin 2015's ECHS1 SNP) in gnomAD v4 by rsID (`variant-rs7894051-gnomad_r4.json`, the GraphQL API; Ensembl's
+REST service refused through the proxy on 2026-11-19): GRCh38 10:133,370,917 C/G (q16). G is the common allele: in
+the non-Finnish European genomes C is 3,436 of 68,010 alleles, 5.1 % (q17); 1000 Genomes' CEU 12 of 238 (5.0 %, q18)
+and GBR 8 of 174 (4.6 %, q19). Yashin's Framingham minor allele frequency is 0.20 in women and 0.25 in men
+(pmid-25918517 q4, q9), four to five times the reference. Every large deposit read for row 176 has C near 0.05 too.
+The GRCh37 position, 10:135,184,421, is the deposits' own (gnomAD v2.1's record, `variant-rs7894051-gnomad_r2_1.json`,
+agrees). For row 176.
