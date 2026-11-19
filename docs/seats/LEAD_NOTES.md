@@ -116,3 +116,5 @@ Still owed: reply to agents-kit/lead with each seat's notes commit, one `keys co
   genome rendered as 0 in the Gen I pathway section), the runbook docs/LONGEVITYMAP_V2_RELEASE.md and the supplements.
   Found by running it in the app: APOE's e-pair result is not called for a weights-led module (open point 1), and the
   study notes show our D/q ids raw (RM6). The demo genome sits outside git on the data volume for re-runs (480 MB).
+
+- reflect after 2026-11-26: classes/base/BASE.md as of v0.1.248 (worktrees in the clone's .worktrees/, never the scratchpad).
