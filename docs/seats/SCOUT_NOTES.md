@@ -78,7 +78,7 @@ Nothing is half run. The backfill is complete, bioRxiv included (2026-11-18).
 - Commit by path (`git commit --only -- <paths>`), never `-A`; the leak gate refuses machine paths in a commit.
 - Quota: stop at 95 % of the binding window with `watchdog.py wait-quota scout`; the repository's pace is full forward.
 - Daily line in `#longevity-loci>daily` at the first turn of a new day when scout work landed since the last one
-  (last posted 2026-11-18).
+  (last posted 2026-11-19).
 
 ## Throttle (2026-11-19)
 
