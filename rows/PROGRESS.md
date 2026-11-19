@@ -210,6 +210,8 @@ mechanical consensus of the research tracks, to be confirmed or overturned by th
 
 - 175 MYO5B (2026-11-19), the Catalog's rs78441534, Gurinovich 2021's NECS centenarians at P 4.69e-8: tier C by R-TIER-2 (rows 77, 92), absent from the Ashkenazi replication, nothing else tests it; T common in Africans (13.2 %), an ancestry route named, not shown.
 
+- GWAS Catalog lines rs1412337 DPT and rs32566 ICE1 (2026-11-19), Lunetta 2007's Framingham 100K, morbidity-free survival at 65 in 558 people: no row (D17.3). GEE P 1.8e-9 and 1.9e-9, but the paper's own call is that nothing in the scan is genome-wide, its GEE P values run inflated, its FBAT of the same SNPs is null (0.51, 0.32), and no allele is printed. Literature search: this paper alone for rs32566; for rs1412337 two unrelated papers, named in the note (Semantic Scholar 429, unchecked).
+
 ## In hand
 
 The scout's 2015–2026 backfill (c0a8726, D41): the first twelve entries read (2026-11-18); the lead's word on rows 170
