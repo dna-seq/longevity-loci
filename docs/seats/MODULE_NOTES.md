@@ -187,3 +187,6 @@ production (528 rsIDs, 671 studies, compiled on 0.7.0) is R-LEGACY-1's research-
   left closed), JMC_TRACE=0, re-enriched to attest. Only studies.csv and verification.json move; no id tokens left.
   variants 489, studies 679, haplotypes 6, diplotypes 12; strict green, warnings as usual. content_signature
   2b3f2e01. Not published.
+- Pending (the lead, 641730437), waits until the quota hold lifts, not before: one last RM6 re-export, the recipe of
+  4c357a2 (rows and corpus at 12c673f plus 72f7810) plus a845413's edits to rows 53, 59 and 101 (173 stays out);
+  compile strict, commit module/, tell the lead the signature for #37.
