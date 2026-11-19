@@ -110,7 +110,7 @@ studies:
     effect_unit: log hazard of the end of healthspan per T allele (positive = earlier)
     effect_allele: T
     direction: risk
-    statistical_test: "Replication (Table 2, βrep and prep), meta-analysis of the ancestry groups; threshold P < 0.004; the same side, not significant; sample and kinship check in q12, q13; mixed ancestry, a null, so the row's evidence of an effect stays European"
+    statistical_test: "Replication (Table 2, βrep and prep), meta-analysis of the ancestry groups; threshold P < 0.004; the same side, not significant; the paper's sample and kinship checks (q12, q13); mixed ancestry, a null, so the row's evidence of an effect stays European"
     curator: claude-opus-5-5
   - rsid: rs1049053
     note: pmid-30642433
@@ -149,7 +149,7 @@ studies:
     effect_allele: T
     direction: protective
     proxy_rsid: rs3135006
-    statistical_test: "Linear regression of mothers' lifespan on offspring dosage, AncestryDNA arm (Supplemental Table 8, genomic-control P, the paper's own call, D17.3; raw P 3.3E-04); with UK Biobank meta P 3.1E-05, heterogeneity P 0.32 (q24); rs3135006's T rides with rs1049053's C (r² 0.80, db-ensembl-116#q1, phase derived from q5-q6); shared with row 38, whose lead it tags at r² 0.38; N rounded in the source"
+    statistical_test: "Linear regression of mothers' lifespan on offspring dosage, AncestryDNA arm (Supplemental Table 8, genomic-control P, the paper's own call, D17.3; raw P 3.3E-04); with UK Biobank meta P 3.1E-05, heterogeneity P 0.32 (q24); rs3135006's T rides with rs1049053's C (r² 0.80, db-ensembl-116#q1, phase derived (q5-q6)); shared with row 38, whose lead it tags at r² 0.38; N rounded in the source"
     curator: claude-opus-5-5
   - rsid: rs1049053
     note: pmid-30642433

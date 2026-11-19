@@ -103,7 +103,7 @@ studies:
     p_value_num: 5.0e-09
     effect_allele: A
     direction: protective
-    statistical_test: "Gurinovich 2025's mixed-effects logistic GWAS with saddle-point approximation, sex, four principal components and the full relationship matrix (q3, q16: −log10 P 8.3, genome-wide), read as printed (D17.3, D29.5, D37.8); no effect size or control frequency printed; A at MAF 0.01 in the cases against gnomAD 0.006, 1.7 times (q4, q14); cases and controls defined in q1, q2, q13; 24 of 587 families carry it (q12); no allele count the printed MAF allows reaches the printed P (derived bound, named, D37.8)"
+    statistical_test: "Gurinovich 2025's mixed-effects logistic GWAS with saddle-point approximation, sex, four principal components and the full relationship matrix (q3, q16: −log10 P 8.3, genome-wide), read as printed (D17.3, D29.5, D37.8); no effect size or control frequency printed; A at MAF 0.01 in the cases against gnomAD 0.006, 1.7 times (q4, q14); cases and controls as the paper defines them (q1, q2, q13); 24 of 587 families carry it (q12); no allele count the printed MAF allows reaches the printed P (derived bound, named, D37.8)"
     curator: claude-opus-5-5
   - rsid: rs6543176
     note: pmid-39751714

@@ -154,7 +154,7 @@ studies:
     effect_unit: years of life per copy in self (parental estimate doubled), per A allele
     effect_allele: A
     direction: protective
-    statistical_test: "Replication of Pilling 2017's rs7844965 in LifeGen excluding UK Biobank (Figure 2 source data 1, sample b, q12); the sheet's P is already one-sided (derived from q14), so no p_one_sided is entered; discovery +0.0303 (SE 0.00525), 0.303 years, P 7.7E-09; replication +0.0073 (SE 0.0094); D21: one-sided power about 0.94, heterogeneity P about 0.033 with both SEs (derived), a red flag; N not given per SNP"
+    statistical_test: "Replication of Pilling 2017's rs7844965 in LifeGen excluding UK Biobank (Figure 2 source data 1, sample b, q12); the sheet's P is already one-sided (derived; q14), so no p_one_sided is entered; discovery +0.0303 (SE 0.00525), 0.303 years, P 7.7E-09; replication +0.0073 (SE 0.0094); D21: one-sided power about 0.94, heterogeneity P about 0.033 with both SEs (derived), a red flag; N not given per SNP"
     curator: claude-opus-5-5
   - rsid: rs7844965
     note: pmid-31484785

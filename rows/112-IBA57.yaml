@@ -90,5 +90,5 @@ studies:
     effect_unit: years of GrimAge acceleration per A allele
     effect_allele: A
     direction: unknown
-    statistical_test: "Lin 2022's GWAS of epigenetic clocks in 2,309 Taiwan Biobank participants (q1) with a prioritized subset analysis (q2); rs117530284 a new GrimAge acceleration locus (q3), 1.5943 years per A (1.0748 to 2.1138) with 16 covariates (q4); the P derived from q4's interval (1.0748 to 2.1138: SE 0.265, z 6.01, P 1.8e-9; D38.4), the GWAS Catalog's record (GCST90104403, db-gwascatalog-2026.10.29#q675) agreeing at 2e-9; no study design in the vocabulary for a single-cohort GWAS of a marker, so meta_analysis (row 25)"
+    statistical_test: "Lin 2022's GWAS of epigenetic clocks in 2,309 Taiwan Biobank participants (q1) with a prioritized subset analysis (q2); rs117530284 a new GrimAge acceleration locus (q3), 1.5943 years per A (1.0748 to 2.1138) with 16 covariates (q4); the P derived from the printed interval (q4; 1.0748 to 2.1138: SE 0.265, z 6.01, P 1.8e-9; D38.4), the GWAS Catalog's record (GCST90104403, db-gwascatalog-2026.10.29#q675) agreeing at 2e-9; no study design in the vocabulary for a single-cohort GWAS of a marker, so meta_analysis (row 25)"
     curator: claude-opus-5-5

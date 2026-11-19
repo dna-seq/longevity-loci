@@ -94,7 +94,7 @@ studies:
     effect_unit: SD of mean leukocyte telomere length per A allele
     effect_allele: A
     direction: unknown
-    statistical_test: "Li 2020's genome-wide meta-analysis (q1), Table 1 (columns q2): rs7705526 at TERT, A (EA) at 0.33, β +0.082, SE 0.006, P 5.34e-45 (q6); the seed's study, which the row tiers from (D37.11); a marker study (D32, D37.12)"
+    statistical_test: "Li 2020's genome-wide meta-analysis (q1), Table 1 (columns q2): rs7705526 at TERT, A (EA) at 0.33, β +0.082, SE 0.006, P 5.34e-45 (q6); the seed list's study, on which the tier rests (D37.11); a marker study (D32, D37.12)"
     curator: claude-opus-5-5
   - rsid: rs7705526
     note: pmid-34611362
