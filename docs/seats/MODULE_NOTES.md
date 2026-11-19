@@ -173,3 +173,12 @@ production (528 rsIDs, 671 studies, compiled on 0.7.0) is R-LEGACY-1's research-
   shared tree held the curator's unparsed, uncommitted 174. variants 501, studies 689, haplotypes 6, diplotypes
   12; 249 resolved, none unresolved, no ref or allele mismatch, 8 VRS minted. Warnings as before (20 indel VRS
   lines, not closed, one dataset_currency). second_signal_of now counts 71 (171). content_signature cef8e5fc.
+
+- 2026-11-19, RM6 re-export for just-dna-lite#37 (the lead, 641725979): the 2.0.0 content (rows and corpus as at
+  12c673f, in a worktree) exported with c6586ae's reader text, JMC_TRACE=0. Only studies.csv changed (3,183 decision
+  and quote id tokens before, none after); variants 489, studies 679, haplotypes 6, diplotypes 12. The first compile
+  warned verification_stale (the attestation was over the old bytes); re-enriched to attest: resolution, licensing
+  and provenance unchanged byte for byte, verification.json now enricher 0.8.8 with ClinVar 2026-11-15 as the
+  superseding release, and its witness check says nothing_to_check (recorded rows are compared only under
+  --rederive; 0.8.6 had compared one). Strict green, warnings as usual (20 indel VRS, not closed, one
+  dataset_currency), 245 resolved. content_signature c76726fd (was aebf5e38, the text alone). Not published.
