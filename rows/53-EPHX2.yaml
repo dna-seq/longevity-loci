@@ -176,7 +176,7 @@ studies:
     effect_unit: z-score of paternal lifespan per A allele
     effect_allele: A
     direction: protective
-    statistical_test: "Linear regression of fathers' lifespan on offspring dosage, AncestryDNA arm (Supplemental Table 8, SE 0.0030; genomic-control P 4.5e-5); heterogeneity with UK Biobank P 0.998 (Supplemental Table 9, q97); n from q83; one-sided P half the raw P (D25.13, D26.13); an independent replication outside UK Biobank (D25.11)"
+    statistical_test: "Linear regression of fathers' lifespan on offspring dosage, AncestryDNA arm (Supplemental Table 8, SE 0.0030; genomic-control P 4.5e-5); heterogeneity with UK Biobank P 0.998 (Supplemental Table 9, q97); n as the paper gives it (q83); one-sided P half the raw P (D25.13, D26.13); an independent replication outside UK Biobank (D25.11)"
     curator: claude-opus-5-5
   - rsid: rs7844965
     note: pmid-31484785
@@ -198,7 +198,7 @@ studies:
     effect_unit: z-score of maternal lifespan per A allele
     effect_allele: A
     direction: protective
-    statistical_test: "AncestryDNA arm of Supplemental Table 9, SE 0.0032 (the allele column prints the other allele, G, as at q97); heterogeneity with UK Biobank P 0.52; n from q82; p_one_sided half the printed P, nominal under D26.13"
+    statistical_test: "AncestryDNA arm of Supplemental Table 9, SE 0.0032 (the allele column prints the other allele, G, as in Supplemental Table 9 (q97)); heterogeneity with UK Biobank P 0.52; n as the paper gives it (q82); p_one_sided half the printed P, nominal under D26.13"
     curator: claude-opus-5-5
   - rsid: rs7844965
     note: pmid-31413261

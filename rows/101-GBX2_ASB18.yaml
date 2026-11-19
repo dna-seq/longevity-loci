@@ -152,7 +152,7 @@ studies:
     effect_unit: years of life per C allele in self (the parental estimate doubled)
     effect_allele: C
     direction: protective
-    statistical_test: "Timmers 2019's integrated (risk-factor-informed) GWAS: Bayes-factor permutation P 2.3E-08 with an educational-attainment prior (q358), below the paper's own genome-wide line of 2.5e-8 (q42): the paper's genome-wide call, so §4.1's genome-wide locus, B never A (D28.7), coded as row 59 codes ABO"
+    statistical_test: "Timmers 2019's integrated (risk-factor-informed) GWAS: Bayes-factor permutation P 2.3E-08 with an educational-attainment prior (q358), below the paper's own genome-wide line of 2.5e-8 (q42): the paper's genome-wide call, so a genome-wide locus by the curation rules (§4.1), B never A (D28.7), coded as row 59 codes ABO"
     curator: claude-opus-5-5
   - rsid: rs10211471
     note: pmid-31484785

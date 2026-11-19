@@ -92,5 +92,5 @@ studies:
     effect_unit: Martingale residual of mothers' attained age per T allele (positive = shorter life)
     effect_allele: T
     direction: risk
-    statistical_test: "BOLT-LMM on mothers' attained age (GCST006696 deposit, q324; Table 2, q322), SE 0.0180; n from db-gwascatalog-2026.10.29#q834; the variant is 13:31871514_T_G there, rs1043332229 by position (db-ensembl-116#q1241); the paper's rare-variant caveat (q36)"
+    statistical_test: "BOLT-LMM on mothers' attained age (GCST006696 deposit, q324; Table 2, q322), SE 0.0180; n as the GWAS Catalog gives it (db-gwascatalog-2026.10.29#q834); the variant is 13:31871514_T_G there, rs1043332229 by position (db-ensembl-116#q1241); the paper's rare-variant caveat (q36)"
     curator: claude-opus-5-5

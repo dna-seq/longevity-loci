@@ -139,7 +139,7 @@ studies:
     effect_unit: years of life per C allele in self (parental estimate doubled)
     effect_allele: C
     direction: protective
-    statistical_test: "Timmers 2019's integrated (risk-factor-informed) GWAS: Bayes-factor permutation P 1.9E-08 with LDL and coronary disease priors (q256), below the paper's own genome-wide line of 2.5e-8 (q42). The paper's genome-wide call, so §4.1's genome-wide locus by D17.3; read for B, never A, since part of its evidence is the disease GWAS behind the prior (D28.7). The same people and effect as the CES entry above, counted once"
+    statistical_test: "Timmers 2019's integrated (risk-factor-informed) GWAS: Bayes-factor permutation P 1.9E-08 with LDL and coronary disease priors (q256), below the paper's own genome-wide line of 2.5e-8 (q42). The paper's genome-wide call, so a genome-wide locus by the curation rules (§4.1) by D17.3; read for B, never A, since part of its evidence is the disease GWAS behind the prior (D28.7). The same people and effect as the CES entry above, counted once"
     curator: claude-opus-5-5
   - rsid: rs2519093
     note: pmid-31413261
