@@ -21,6 +21,7 @@ from longevity_loci.cli import app
 from longevity_loci.export import (
     CITE_ID,
     READER_CELLS,
+    ROW_REF,
     COMPUTED_EXACT,
     COMPUTED_PREFIXES,
     NOMINAL_TEST,
@@ -388,6 +389,10 @@ def test_reader_cells_carry_no_citation_id(real) -> None:
     _, result = real
     left = [(x["rsid"], k, x[k]) for x in result.studies for k in READER_CELLS if x[k] and CITE_ID.search(x[k])]
     assert left == []
+    rows_named = [(x["rsid"], k, x[k]) for x in result.studies for k in READER_CELLS if x[k] and ROW_REF.search(x[k])]
+    assert rows_named == []
+    debris = re.compile(r"\(\s*[;,]|[;,]\s*\)|[;,]\s*[;,]|\(\s*\)")
+    assert [(x["rsid"], k, x[k]) for x in result.studies for k in READER_CELLS if x[k] and debris.search(x[k])] == []
 
 
 def test_reader_text_keeps_every_number_but_the_ids(real) -> None:
@@ -399,7 +404,7 @@ def test_reader_text_keeps_every_number_but_the_ids(real) -> None:
                 text = getattr(s, k)
                 if not text:
                     continue
-                assert Counter(NUMBER.findall(reader_text(text) or "")) == Counter(NUMBER.findall(CITE_ID.sub(" ", text))), (r.locus_id, k, text)
+                assert Counter(NUMBER.findall(reader_text(text) or "")) == Counter(NUMBER.findall(CITE_ID.sub(" ", ROW_REF.sub(" ", text)))), (r.locus_id, k, text)
 
 
 def test_reader_text_on_the_curators_examples() -> None:
@@ -408,3 +413,13 @@ def test_reader_text_on_the_curators_examples() -> None:
         "1,595 cases and 880 controls; fit (71 against 56.8, derived)"
     )
     assert reader_text(None) is None
+
+
+def test_row_numbers_become_locus_names() -> None:
+    names = {38: "FOXO3", 59: "ABO", 25: "CDKN2B-AS1"}
+    assert reader_text("r² 0.32 to row 38's lead", names) == "r² 0.32 to the FOXO3 locus's lead"
+    assert reader_text("coded as row 59 codes ABO", names) == "coded as the ABO locus codes ABO"
+    assert reader_text("the same effect (row 25)", names) == "the same effect"
+    assert reader_text("read as at rows 25 and 38, then", names) == "read, then"
+    assert reader_text("row 7 says", names) == "another locus says"
+    assert reader_text("(D31.12, D31.13, derived)") == "(derived)"

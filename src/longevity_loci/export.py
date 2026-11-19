@@ -225,11 +225,36 @@ CITE_ID = re.compile(_CITE_ID)
 READER_CELLS = ("statistical_test", "population", "effect_unit")
 
 
-def reader_text(text: str | None) -> str | None:
-    """`text` with its in-line citation ids taken out, for a cell a report shows; None stays None."""
+_ROW_NUM = r"rows?\s+\d+(?:\s*(?:,|and)\s*\d+)*"
+ROW_REF = re.compile(rf"\b{_ROW_NUM}")
+
+
+def _row_names(text: str, names: dict[int, str] | None) -> str:
+    """A row number means nothing to a reader: "(row 25)" and "as (at) row 40" go like an id; "row 38's lead"
+    becomes "the <name> locus's lead", from the rows' own names; a number no row holds becomes "another locus"."""
+    t = re.sub(rf"\s*\(\s*{_ROW_NUM}\s*\)", "", text)
+    t = re.sub(rf"\s*[;,]?\s*\bas\s+at\s+{_ROW_NUM}(?:'s)?", "", t)
+    t = re.sub(rf"\s*[;,]?\s*\bas\s+{_ROW_NUM}(?:'s)?(?=\s*(?:[;,.)]|$))", "", t)  # "as row 40)" ends a clause
+
+    def named(m: re.Match[str]) -> str:
+        known = [names[n] for n in map(int, re.findall(r"\d+", m.group(1))) if names and n in names]
+        poss = m.group(2) or ""
+        if not known:
+            return f"another locus{poss}"
+        if len(known) == 1:
+            return f"the {known[0]} locus{poss}"
+        return f"the {', '.join(known[:-1])} and {known[-1]} loci{poss}"
+
+    return re.sub(rf"\b({_ROW_NUM})('s)?", named, t)
+
+
+def reader_text(text: str | None, names: dict[int, str] | None = None) -> str | None:
+    """`text` with its in-line citation ids and row numbers taken out, for a cell a report shows; None stays None.
+    `names`: locus id to locus name, for "row N" references."""
     if text is None:
         return None
-    t = re.sub(rf"\s*\(\s*{_CITE_LIST}\s*\)", "", text)  # "(q1, q2)"
+    t = _row_names(text, names)
+    t = re.sub(rf"\s*\(\s*{_CITE_LIST}\s*\)", "", t)  # "(q1, q2)"
     t = re.sub(rf"\(\s*{_CITE_LIST}\s*[;,]\s*", "(", t)  # "(q345; derived)" -> "(derived)"
     t = re.sub(rf"\s*[;,]\s*{_CITE_LIST}\s*\)", ")", t)  # "(derived; q3)" -> "(derived)"
     t = re.sub(rf"(^|;\s*){_CITE_LIST}\s*[:;]\s*", r"\1", t)  # "D11/D13; ..." as a lead-in
@@ -238,10 +263,14 @@ def reader_text(text: str | None) -> str | None:
     t = re.sub(r"\(\s*\)", "", t)
     t = re.sub(r"\s+([;,.)])", r"\1", t)
     t = re.sub(r"[;,]\s*([;,])", r"\1", t)
+    t = re.sub(r"\(\s*[;,]\s*", "(", t)  # "(, derived)" where the first item was an id
+    t = re.sub(r"\s*[;,]\s*\)", ")", t)  # "(Table 1,)"
+    t = re.sub(r"[;,]\s*[;,]\s*", "; ", t)  # ";, derived"
+    t = re.sub(r"\(\s*\)", "", t)
     return re.sub(r"\s{2,}", " ", t).strip(" ;,") or None
 
 
-def _study_row(s: Study, note: Note, out: Export, locus: Locus | None = None, marker: str | None = None) -> dict[str, str]:
+def _study_row(s: Study, note: Note, out: Export, locus: Locus | None = None, marker: str | None = None, names: dict[int, str] | None = None) -> dict[str, str]:
     """`marker`: the trait of a D32 marker variant, which a BIOMARKER study of that variant carries."""
     head = note.head
     tests: list[str] = []
@@ -296,7 +325,7 @@ def _study_row(s: Study, note: Note, out: Export, locus: Locus | None = None, ma
         **_locus(locus),
     }
     for k in READER_CELLS:
-        values[k] = reader_text(values[k])
+        values[k] = reader_text(values[k], names)
     return {k: cell(x) for k, x in values.items()}
 
 
@@ -381,6 +410,7 @@ def export(rows: Path, corpus: Path) -> Export:
                 if _parsed(VariantRow, values, f"{v.rsid} {values['genotype']}", out) is not None:
                     out.variants.append(values)
                     exported_rsids.add(v.rsid)
+    names = {r.locus_id: r.locus_name for r in loaded}
     for row in loaded:
         loci = {v.rsid: v.locus for v in row.variants}
         markers = {v.rsid: t for v in row.variants if (t := marker_trait(row, v)) != VARIANT_TRAIT}
@@ -388,7 +418,7 @@ def export(rows: Path, corpus: Path) -> Export:
             note = notes.get(s.note)
             if note is None or (s.quote is not None and s.quote not in note.quotes):
                 raise ExportError(f"locus {row.locus_id} study {s.rsid}: {s.cite or s.note} is not in the corpus (run `loci check rows`)")
-            values = _study_row(s, note, out, loci.get(s.rsid), markers.get(s.rsid))
+            values = _study_row(s, note, out, loci.get(s.rsid), markers.get(s.rsid), names)
             if _parsed(StudyRow, values, f"{s.rsid} {s.note}", out) is None:
                 continue
             if s.rsid not in exported_rsids:

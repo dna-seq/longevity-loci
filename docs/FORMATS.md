@@ -148,7 +148,9 @@ a cite the corpus lacks (nothing written), 2 an input missing.
 **What a reader sees carries no citation id** (RM6, 2026-11-19). A study's `statistical_test`, `population` and
 `effect_unit` are shown raw by an app's report, so the export takes the rows' in-line ids out of them (quote ids
 `q12`, `pmid-…#q12`, `db-…#q12`, decision numbers `D26.13`, rule ids `R-TIER-1`, section marks `§4.1`): "(q1, q2)"
-goes, "(q345; derived)" becomes "(derived)". Wording and every other number stay (a test counts them). The rows keep
+goes, "(q345; derived)" becomes "(derived)". Wording and every other number stay (a test counts them). A row number
+means nothing to a reader either: "row 38's lead" becomes "the FOXO3 locus's lead" from the rows' own names, "(row 25)"
+and a clause-ending "as (at) row 40" go, and a number no row holds reads "another locus". The rows keep
 their ids, where `check rows` and every review read them, and `quote_sources.csv` keeps the quotes.
 
 The columns are the reference example's headers (`docs/format08_reference/longevity_studies/`), then the module
