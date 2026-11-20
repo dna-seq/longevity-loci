@@ -12,14 +12,16 @@ verdict_reason: >-
   mothers, T's β +0.0979 (SE 0.0180) on the Martingale residual, P 4.7e-8 (pmid-29227965 q322, q324), one of the three
   loci found only for mothers (q323). The other analyses of the same participants: both parents T +0.0635, P 5.6e-4
   (q325), G's way; fathers flat, G a little shorter (P 0.34, q327); top 10 % flat (P 0.70, q326). The paper's own caveat
-  is carried: for variants this rare (0.5 %), P < 5e-8 may not be rigorous enough (q36), and the site sits at the end
-  of a poly-T run, where imputation is less sure (db-ensembl-116 q1241; imputation quality not printed for it). No
+  is carried: for variants this rare (0.5 %), P < 5e-8 may not be rigorous enough (q36); imputation quality is not
+  printed for it. No
   sample outside UK Biobank holds it: no line in Timmers 2019's LifeGen file, Deelen 2019's percentiles, FinnGen R11,
   Zenin 2019, Foote 2025's deposits or Wright 2019's AncestryDNA tables (which print only representatives below P 3e-3,
   pmid-31484785 q6), and no Open Targets record (db-opentargets-26.09 q1585): untested, not null. Park 2025's own
   survival, in UK Biobank's participants, is flat (P 0.98; women G a little more deaths, P 0.28, q244 to q246), not
-  independent of the discovery's genotypes. No red flag can be scored (nothing outside the discovery tests it). A
-  `sex_specific` token is not set: it rests on a test of the difference (D29.16), and only the one-sex results are read.
+  independent of the discovery's genotypes. No red flag can be scored (nothing outside the discovery tests it). 
+  `sex_specific:f` (D29.16, D29.20, D43.4): the mothers' T +0.0979 (SE 0.0180, q324) against the fathers' −0.0172 (SE
+  0.0179, q327) differ at z 4.53, P 5.8e-6, both errors counted, and at P 0.009 at half the mothers' effect (derived),
+  as row 74 from the same paper's deposits; no independent other-sex sample passes (D31.5).
   The GWAS Catalog's line (db-gwascatalog-2026.10.29 q831 to q833) gives T's β as an "increase" under parental
   longevity, but on Pilling's scale positive is a shorter life. Outcome cells read for G: lifespan + (the discovery
   itself, D28.10, as row 68); exceptional survival 0 (Pilling's top 10 %, flat); healthspan untested (no line in Zenin
@@ -35,7 +37,7 @@ axes:
   outcome: {healthspan: untested, lifespan: "+", exceptional_survival: "0",
             cites: [pmid-29227965#q324, pmid-29227965#q325, pmid-29227965#q326, pmid-29227965#q327, pmid-40021682#q244, pmid-40021682#q245, pmid-40021682#q246]}
   actionability: {label: descriptive, cites: [pmid-29227965#q322]}
-  context: {values: [eur_only_evidence], cites: [pmid-29227965#q322, db-ensembl-116#q1242]}
+  context: {values: ["sex_specific:f", eur_only_evidence], cites: [pmid-29227965#q322, db-ensembl-116#q1242, pmid-29227965#q324, pmid-29227965#q327]}
 flags:
   - {token: "causal:C4", cites: [db-opentargets-26.09#q1585]}
   - {token: "effector:E4", cites: [db-opentargets-26.09#q1585, db-ensembl-116#q1243, db-ensembl-116#q1244]}
