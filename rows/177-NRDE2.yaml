@@ -16,20 +16,26 @@ verdict_reason: >-
   by the paper's own call (q1); one of the two the authors' extra QC kept (q2, q14, q29), so a row under D42.10. The
   Catalog prints the same line (risk frequency 0.13, P 2e-9, allele "?"; db-gwascatalog-2026.10.29 q843, q844). No
   letter is printed for the minor allele. The source is overfit on its frequency, more starkly than row 176: in
-  Europeans the variant is all but absent. gnomAD v4's non-Finnish European genomes carry C on 64 of 68,046 alleles,
-  0.09 % (db-gnomad-4 q21), v2.1's on 9 of 15,430 (q24); 1000 Genomes' Europeans carry G only, 1,006 of 1,006 alleles,
+  Europeans the variant is all but absent. gnomAD v4's non-Finnish European genomes carry a non-G allele on 64 of
+  68,046 alleles, 0.09 % (db-gnomad-4 q21; the site is C/G/T, and 1000 Genomes shows no T), v2.1's on 9 of 15,430 (q24); 1000 Genomes' Europeans carry G only, 1,006 of 1,006 alleles,
   CEU 198 of 198 (db-ensembl-116 q1250, q1251); Park 2025's 393,833 Britons have C at 0.04 % (pmid-40021682 q256).
-  Framingham's 0.13 to 0.20 is more than a hundred times that, the shape a genotyping error leaves; the authors say
-  the early original-cohort genotypes are the error-prone ones (q17) and found the minor alleles more frequent in the
-  original cohort than in the offspring (q28). C is common in African genomes (12.2 % in gnomAD v4, q22; 14.9 % in
+  Framingham's 0.13 to 0.20 is more than a hundred times that, the shape a genotyping error leaves, and within the one
+  cohort the women's and men's frequencies differ (0.130 against 0.198, z 4.3, P 2e-5, derived, relatedness ignored),
+  which an autosomal allele should not: the overfit verdict rests on these two (D43.6). The authors' own checks passed
+  it: Mendelian errors "relatively small for all eight" (q31), HWE passed under the founders option their QC used (q32);
+  whether it is among the six SNPs marked FAIL in the relaxed Affymetrix files is not printed, unknown (q33). They say
+  only that the early original-cohort genotypes are the error-prone ones (q17) and found the minor alleles more
+  frequent in the original cohort than in the offspring (q28). C is common in African genomes (12.2 % in gnomAD v4, q22; 14.9 % in
   1000 Genomes, db-ensembl-116 q1252), but the women's 13 % would need nearly all of them to be of African ancestry, and the
-  men's 19.8 % exceeds the African frequency itself, which no admixture can reach (derived), so ancestry does not
-  explain it. The offspring cohort's Cox model
+  men's 19.8 % is above both African means (derived); only a West African panel is higher (1000 Genomes' ESN 22.7 %, a
+  live read, D43.6), and the Framingham original cohort is not of that ancestry, so ancestry does not explain it. The offspring cohort's Cox model
   (HR 2.68, P 1.8e-6, Table S7, q16, caption q15) is the same study's own typing, inside the frequency drift the
-  authors report (q28): named, not counted as a replication (D26.10). Nothing outside Framingham tests it. Park 2025's
+  authors report (q28), and the same table gives effects as strong at SNPs the authors set aside (CYP51A1's possible
+  genotyping error HR 2.39, P 7.1e-5, q36, q18; ICAM1's HR 4.01, P 2.4e-12, q37): named, not counted as a replication
+  (D26.10, D43.6). Nothing outside Framingham tests it. Park 2025's
   own survival holds a line (C toward more deaths, both sexes P 0.074, men 0.13, women 0.36; q256 to q258), but at
   0.04 % it is below Park's own MAF 0.1 % filter (q39, q41), an excluded line (D26.7, as rows 77, 92 and 175); Timmers
-  2019's LifeGen file, Pilling 2017's four deposits, Deelen 2019's percentiles, FinnGen R11's deaths (C on 1 of 10,614 Finnish
+  2019's LifeGen file, Pilling 2017's four deposits, Deelen 2019's percentiles, FinnGen R11's deaths (a non-G allele on 1 of 10,614 Finnish
   alleles in gnomAD v4, db-gnomad-4 q25), Zenin 2019 and Foote 2025's seven deposits hold no line (FinnGen and Zenin
   read by the rsID and both positions). Untested, not failed:
   no flag of failure can be scored, and if the Framingham minor allele is C, nothing large enough to see it has looked;
@@ -42,10 +48,11 @@ verdict_reason: >-
   shown. Intronic (db-ensembl-116 q1253; GRCh38 and GRCh37 positions q1248, q1249). The literature search on the rsID
   (2026-11-20; Semantic Scholar 429, its part unchecked) finds this paper, the same group's 2016 follow-up (PMID
   27773987) and a cell study of NRDE-2 in the DNA damage response (PMID 29902117), named, not read. Genotypes neutral,
-  as 41 and 176. Descriptive. Age of action unknown (the paper's late-life effect rests on the same overfit genotypes).
+  as 41 and 176. Descriptive. Age of action unknown: the paper reads this SNP as a trade-off, the minor allele better
+  before 80 and worse after (q35), on the same overfit genotypes.
   The evidence is European.
 axes:
-  tier: {value: D, cites: [pmid-25918517#q1, pmid-25918517#q2, pmid-25918517#q3, pmid-25918517#q5, pmid-25918517#q6, pmid-25918517#q7, pmid-25918517#q8, pmid-25918517#q11, pmid-25918517#q12, pmid-25918517#q14, pmid-25918517#q15, pmid-25918517#q16, pmid-25918517#q17, pmid-25918517#q28, pmid-25918517#q29, db-gnomad-4#q21, db-gnomad-4#q22, db-gnomad-4#q24, db-gnomad-4#q25, db-ensembl-116#q1250, db-ensembl-116#q1251, db-ensembl-116#q1252, pmid-40021682#q256, pmid-40021682#q39, pmid-40021682#q41, db-gwascatalog-2026.10.29#q843, db-gwascatalog-2026.10.29#q844]}
+  tier: {value: D, cites: [pmid-25918517#q1, pmid-25918517#q2, pmid-25918517#q3, pmid-25918517#q5, pmid-25918517#q6, pmid-25918517#q7, pmid-25918517#q8, pmid-25918517#q11, pmid-25918517#q12, pmid-25918517#q14, pmid-25918517#q15, pmid-25918517#q16, pmid-25918517#q17, pmid-25918517#q28, pmid-25918517#q29, pmid-25918517#q31, pmid-25918517#q32, pmid-25918517#q33, pmid-25918517#q35, pmid-25918517#q36, pmid-25918517#q37, pmid-25918517#q18, db-gnomad-4#q21, db-gnomad-4#q22, db-gnomad-4#q24, db-gnomad-4#q25, db-ensembl-116#q1250, db-ensembl-116#q1251, db-ensembl-116#q1252, pmid-40021682#q256, pmid-40021682#q39, pmid-40021682#q41, db-gwascatalog-2026.10.29#q843, db-gwascatalog-2026.10.29#q844]}
   mechanism: {value: general_ageing, cites: [pmid-25918517#q30, db-opentargets-26.09#q1597]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}

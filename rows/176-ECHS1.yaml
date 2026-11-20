@@ -7,25 +7,32 @@ locus_id: 176
 locus_name: ECHS1
 verdict: kept
 verdict_reason: >-
-  Tier D, on §4.1's "overfit source" (D26.10, as row 41) and D21's powered failure (D25.1). Yashin 2015's lifespan GWAS
+  Tier D, on §4.1's "overfit source" (D26.10, D31.11). Yashin 2015's lifespan GWAS
   of 679 Framingham original-cohort women (EMMAX, 20 principal components; pmid-25918517 q3) puts the minor allele
   with 3.52 years less life per copy, P 2.52e-10, minor allele frequency 0.2031 (Supplement Table S1, q4, caption q6);
   the cohort's 432 men agree, −4.41 years, P 2.87e-7, frequency 0.2539 (Table S2, q9, q7), and the authors' Cox model of
   survival past 80 in the same people gives HR 1.55 per minor allele (log HR 0.439, SE 0.068, P 9.4e-11, Table S3,
   q10, q12). Genome-wide by the paper's own call (q1); one of the two the authors' extra QC kept (q2, q14), so a row
   under D42.10. The Catalog prints the same line (risk frequency 0.203, P 3e-10, no allele; db-gwascatalog-2026.10.29
-  q841, q842). No letter is printed for the minor allele. The source is overfit on its frequency: every reference
-  puts the minor allele, C, near 5 % in Europeans (gnomAD v4's non-Finnish European genomes 3,436 of 68,010 alleles,
-  db-gnomad-4 q17; 1000 Genomes' CEU 12 of 238 and GBR 8 of 174, q18, q19; every large European deposit near 0.05), so
-  Framingham's 0.20 to 0.25 is four to five times what the population carries, the shape a genotyping error leaves,
-  and the authors themselves say these early original-cohort genotypes are the error-prone ones (q17) and found
-  the minor alleles more frequent in the original cohort than in the offspring (q28). If the
-  Framingham minor allele is C, the large samples are D21's powered test, and they fail it: Timmers 2019's parental
-  lifespan, on the same log-hazard scale per allele in self, has C at β1 −0.000018 (SE 0.0088), P 0.998, n 638,086
-  (pmid-30642433 q437); against the discovery's log HR 0.439 (survival past 80; the paper sees no difference between 70 and 80) the
-  heterogeneity z is about 6.4 (P about 2e-10), and
-  one-sided power is 1.00 at the full effect, 1.00 at a tenth of it and about 0.80 at a twentieth (derived from the
-  printed SEs). Hence `replication_failed`. If it is not C, nothing measures the C a genome file reports at the
+  q841, q842). No letter is printed for the minor allele. The source is overfit on its frequency, which is what the verdict rests on
+  (D43.6): every reference puts the minor allele, C, near 5 % in Europeans (gnomAD v4's non-Finnish European genomes
+  3,436 non-G of 68,010 alleles, db-gnomad-4 q17, C itself 5.0 % in 1000 Genomes' Europeans, db-ensembl-116 q1259;
+  gnomAD's 1000 Genomes subset CEU 12 of 238 and GBR 8 of 174, q18, q19), so the women's 0.203 is 276 copies in 1,358
+  alleles against about 69 expected, z 25.7 (derived), the shape a genotyping error leaves; and within the one cohort
+  the women's and men's frequencies differ (0.203 against 0.254, z 2.8, P 0.005, derived, relatedness ignored), which an
+  autosomal allele should not. The authors' own checks passed it: Mendelian errors "relatively small for all eight"
+  (q31), and HWE passed under the founders option their QC used (q32); whether it is among the six SNPs marked FAIL in
+  the relaxed Affymetrix files is not printed, unknown (q33). They say only that early original-cohort genotypes are the
+  error-prone ones (q17) and found the minor alleles more frequent in the original cohort than in the offspring (q28).
+  The offspring cohort's Cox model (Table S7, HR 1.71, P 0.00079, q13, caption q15) rescues nothing: the same table
+  gives effects as strong at SNPs the authors set aside, CYP51A1's possible genotyping error HR 2.39, P 7.1e-5 (q36,
+  q18), ICAM1's HR 4.01, P 2.4e-12 (q37). If the Framingham minor allele is C, Timmers 2019's parental lifespan, on the
+  same log-hazard scale per allele in self, has C at β1 −0.000018 (SE 0.0088), P 0.998, n 638,086 (pmid-30642433
+  q437); against the discovery's log HR 0.439 (survival past 80; the paper says the effect "became pronounced only
+  after age 80", q34, so an all-age hazard dilutes it) the heterogeneity z is about 6.4 (P about 2e-10), and one-sided
+  power is 1.00 at the full effect and at a tenth of it, about 0.80 at a twentieth (derived from the printed SEs). That
+  describes Timmers' flat line; it sets no `replication_failed`, since a flag scaled from an overfit effect tests the
+  artefact, not the locus (D31.11, D43.6). If it is not C, nothing measures the C a genome file reports at the
   discovery's frequency. Neither reading leaves G protective. The other large looks are flat: Pilling 2017's four
   deposits are mixed, none nominal (C longer in mothers P 0.11, both parents 0.32; C against in the top 10 %, 0.69, and fathers, 0.89; pmid-29227965
   q336 to q339); Park 2025's own survival leans C to fewer deaths (both sexes P 0.21, men 0.72, women 0.14;
@@ -47,7 +54,7 @@ verdict_reason: >-
   as 41. Descriptive. Age of action unknown (the paper's late-life effect rests on the same overfit genotypes). The
   evidence is European.
 axes:
-  tier: {value: D, cites: [pmid-25918517#q1, pmid-25918517#q2, pmid-25918517#q3, pmid-25918517#q4, pmid-25918517#q6, pmid-25918517#q7, pmid-25918517#q9, pmid-25918517#q10, pmid-25918517#q12, pmid-25918517#q14, pmid-25918517#q17, pmid-25918517#q28, pmid-25918517#q29, db-gnomad-4#q17, db-gnomad-4#q18, db-gnomad-4#q19, pmid-30642433#q437, pmid-29227965#q336, pmid-29227965#q337, pmid-29227965#q338, pmid-29227965#q339, pmid-40021682#q253, pmid-40021682#q39, db-finngen-r11#q139, pmid-31413261#q384, pmid-31413261#q385, db-gwascatalog-2026.10.29#q841, db-gwascatalog-2026.10.29#q842, db-ensembl-116#q1258, db-ensembl-116#q1259, db-ensembl-116#q1260, db-ensembl-116#q1261]}
+  tier: {value: D, cites: [pmid-25918517#q1, pmid-25918517#q2, pmid-25918517#q3, pmid-25918517#q4, pmid-25918517#q6, pmid-25918517#q7, pmid-25918517#q9, pmid-25918517#q10, pmid-25918517#q12, pmid-25918517#q14, pmid-25918517#q17, pmid-25918517#q28, pmid-25918517#q29, pmid-25918517#q13, pmid-25918517#q15, pmid-25918517#q31, pmid-25918517#q32, pmid-25918517#q33, pmid-25918517#q34, pmid-25918517#q36, pmid-25918517#q37, pmid-25918517#q18, db-ensembl-116#q1259, db-gnomad-4#q17, db-gnomad-4#q18, db-gnomad-4#q19, pmid-30642433#q437, pmid-29227965#q336, pmid-29227965#q337, pmid-29227965#q338, pmid-29227965#q339, pmid-40021682#q253, pmid-40021682#q39, db-finngen-r11#q139, pmid-31413261#q384, pmid-31413261#q385, db-gwascatalog-2026.10.29#q841, db-gwascatalog-2026.10.29#q842, db-ensembl-116#q1258, db-ensembl-116#q1259, db-ensembl-116#q1260, db-ensembl-116#q1261]}
   mechanism: {value: general_ageing, cites: [pmid-25918517#q27, db-opentargets-26.09#q1594]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
@@ -56,7 +63,6 @@ axes:
   actionability: {label: descriptive, cites: [pmid-25918517#q4]}
   context: {values: [eur_only_evidence], cites: [pmid-25918517#q3, pmid-30642433#q437]}
 flags:
-  - {token: replication_failed, cites: [pmid-30642433#q437, pmid-25918517#q10, pmid-25918517#q4]}
   - {token: "causal:C4", cites: [db-opentargets-26.09#q1594, db-opentargets-26.09#q1595]}
   - {token: "effector:E4", cites: [db-opentargets-26.09#q1594, db-opentargets-26.09#q1596]}
 variants:
@@ -127,5 +133,5 @@ studies:
     effect_unit: beta1 log hazard protection per C allele in self (positive = longer life)
     effect_allele: C
     direction: risk
-    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0088, direction -+; against the discovery's Cox log HR 0.439 per minor allele (SE 0.068, q10 of pmid-25918517) heterogeneity z about 6.4, one-sided power 1.00 at a tenth of the effect (derived): replication_failed"
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0088, direction -+; against the discovery's Cox log HR 0.439 per minor allele (SE 0.068, q10 of pmid-25918517) heterogeneity z about 6.4, one-sided power 1.00 at a tenth of the effect (derived); no replication_failed, the effect it scales from is overfit (D31.11, D43.6)"
     curator: claude-opus-5-5
