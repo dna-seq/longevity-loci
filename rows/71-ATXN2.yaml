@@ -14,8 +14,9 @@ verdict_reason: >-
   applied (the lead, 2026-11-11, one rule for this row and 67): a powered non-replication in an independent sample is
   red-flag heterogeneity and caps the row at B; AncestryDNA's mothers, a sample that fails, carry
   `replication_failed` (D25.13; the fathers replicate with a smaller effect). Healthspan is +, as rows 51 and 83 read Foote 2025 (D27.3): its factor 6,
-  disability, is genome-wide at the lead's proxy rs7137828 (r² 0.81), the shorter-life C the frailer, P 2.8e-10
-  (pmid-40759756 q255), and its factor 2 the same way, P 0.028 (q231); factors 1 and 5 are flat (q253, q254), and the
+  disability (pmid-40759756 q263), is genome-wide at the lead's proxy rs7137828 (r² 0.81): the proxy's C, its
+  shorter-life allele (the proxy's T is the longer-life side, as the LifeGen study entry has it), is the frailer, P
+  2.8e-10 (q255; its Q P 0.018 above the deposit's filter, q264), and its factor 2 the same way, P 0.028 (q231); factors 1 and 5 are flat (q253, q254), and the
   general factor's, factor 3's and factor 4's deposits have a gap over the block, untested (q257 to q262); a Genomic
   SEM factor is multivariate, so it supports B and lifts nothing. Zenin 2019's look-up of SH2B3's rs3184504 leans the
   same way and does not pass (P 0.13). A trade-off: Timmers 2019 names this locus among those where more protection
@@ -40,7 +41,7 @@ axes:
   pleiotropy: {values: ["mech:cvd", "mech:autoimmune", "tradeoff"], cites: [pmid-30642433#q7, pmid-30642433#q8, pmid-29030599#q11]}
   age_of_action: {value: LIFELONG, confidence: DIRECT_WEAK, cites: [pmid-29030599#q9, pmid-30642433#q191, pmid-30642433#q192, pmid-30642433#q193, pmid-30642433#q194, pmid-30642433#q195, pmid-30642433#q196, pmid-30642433#q197]}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
-            cites: [pmid-30729179#q4, pmid-30642433#q8, pmid-31413261#q9, pmid-40759756#q255, pmid-40759756#q231, pmid-40759756#q253, pmid-40759756#q254, pmid-40759756#q10]}
+            cites: [pmid-30729179#q4, pmid-30642433#q8, pmid-31413261#q9, pmid-40759756#q255, pmid-40759756#q231, pmid-40759756#q253, pmid-40759756#q254, pmid-40759756#q263, pmid-40759756#q264]}
   actionability: {label: descriptive, cites: [pmid-30642433#q7]}
   context: {values: [eur_only_evidence], cites: [pmid-30642433#q8, pmid-31484785#q10]}
 flags:
@@ -254,4 +255,24 @@ studies:
     effect_allele: C
     direction: protective
     statistical_test: "Look-up of the lead in Supplementary Data 1 (q9); the text names ATXN2/BRAP among the nominal loci (q5); rs3184504 (q10) and rs7137828 (q11) agree; logistic regression, fixed-effect meta-analysis"
+    curator: claude-opus-5-5
+  - rsid: rs11065979
+    note: pmid-40759756
+    quote: q255
+    phenotype_class: MULTIVARIATE_AGEING
+    study_design: meta_analysis
+    population: European (consortium GWAS and Pan-UK Biobank summary statistics of frailty deficits)
+    ancestry: [EUR]
+    sample_size: 385176
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "2.834749730699e-10"
+    p_value_num: 2.834749730699e-10
+    proxy_rsid: rs7137828
+    effect_size: 0.0140306962192581
+    effect_measure: beta
+    effect_unit: frailty factor 6 (disability) per C allele of rs7137828, the proxy's shorter-life allele (positive = frailer)
+    effect_allele: C
+    direction: risk
+    statistical_test: "Genomic SEM GWAS of Foote 2025's latent frailty factor 6, disability (deposit GCST90624052, GRCh37, q263, q255), SE 0.0022, Q P 0.018, above the deposit's Q filter (q264); factor 2 C +0.0035, P 0.028 (q231), factors 1 and 5 flat (q253, q254); the general factor's, factor 3's and factor 4's deposits have a gap over the block (q257 to q262); no line at the lead or rs3184504 in any of the seven; rs7137828 r² 0.81 (db-opentargets-26.09#q22); effects toward the frailty-raising side (q2); multivariate (D27.3), at B beside Timmers (D18.3)"
     curator: claude-opus-5-5

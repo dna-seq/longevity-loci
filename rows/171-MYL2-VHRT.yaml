@@ -36,7 +36,11 @@ verdict_reason: >-
   q238). Outcome cells read for C: lifespan + (Pilling and Timmers conditioned, AncestryDNA's mothers); exceptional
   survival + (Deelen, conditioned); healthspan + (D31.4): Foote 2025's F2 has T frailer, P 0.013 (q228), tied with
   rs7137828 there (q231), and conditioned on it one-sided 0.041 on EUR haplotypes (0.061 on CEU), derived; Zenin 2019
-  flat (P 0.42, q196); F1, F5, F6 flat; the general factor's, F3's and F4's deposits hold no line.
+  flat (P 0.42, q196); F1 and F5 flat. F6 (disability) is flat at T (P 0.24, q230), but row 71's rs7137828 is
+  genome-wide there (C frailer, P 2.8e-10, q255), so by D39.18 this line is read conditioned on it: T leans less frail,
+  z −1.48, P 0.14 on EUR haplotypes (r +0.400), z −2.56, P 0.010 on CEU (r +0.53), derived; not nominal on the panel
+  the cell is read on, so it stands, on the EUR panel only (put to the lead, 2026-11-20). The general factor's, F3's
+  and F4's deposits hold no line.
   Mechanism heart and vessels: C lowers systolic (P 1.5e-16) and diastolic blood pressure (P 4.8e-18) in Open Targets'
   sets (db-opentargets-26.09 q1577 to q1580), so `mech:cvd` as at row 27, and many of its sets are blood counts
   (haemoglobin among them, q1581), `mech:blood_count`; it leads none (highest PIP 0.16), so this is the 12q24 block's
@@ -51,7 +55,7 @@ axes:
   pleiotropy: {values: ["mech:cvd", "mech:blood_count"], cites: [db-opentargets-26.09#q1577, db-opentargets-26.09#q1578, db-opentargets-26.09#q1579, db-opentargets-26.09#q1580, db-opentargets-26.09#q1581, db-opentargets-26.09#q1582]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
-            cites: [pmid-29227965#q307, pmid-29227965#q308, pmid-29227965#q311, pmid-29227965#q312, pmid-29227965#q313, pmid-30642433#q431, pmid-30642433#q432, pmid-31413261#q9, pmid-31413261#q378, pmid-31413261#q379, db-finngen-r11#q136, pmid-40021682#q238, pmid-40021682#q239, pmid-40021682#q240, pmid-30729179#q196, pmid-40759756#q227, pmid-40759756#q228, pmid-40759756#q229, pmid-40759756#q230, pmid-40759756#q231, pmid-31484785#q183, pmid-31484785#q18]}
+            cites: [pmid-29227965#q307, pmid-29227965#q308, pmid-29227965#q311, pmid-29227965#q312, pmid-29227965#q313, pmid-30642433#q431, pmid-30642433#q432, pmid-31413261#q9, pmid-31413261#q378, pmid-31413261#q379, db-finngen-r11#q136, pmid-40021682#q238, pmid-40021682#q239, pmid-40021682#q240, pmid-30729179#q196, pmid-40759756#q227, pmid-40759756#q228, pmid-40759756#q229, pmid-40759756#q230, pmid-40759756#q231, pmid-40759756#q255, pmid-31484785#q183, pmid-31484785#q18]}
   actionability: {label: descriptive, cites: [pmid-29227965#q307]}
   context: {values: [eur_only_evidence], cites: [pmid-29227965#q307, db-ensembl-116#q1221]}
 flags:
