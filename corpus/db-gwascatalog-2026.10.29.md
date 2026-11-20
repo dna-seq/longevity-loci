@@ -2968,3 +2968,12 @@ printed 5e-8 from the paper's 4.69e-8; GRCh38 18:50,083,001.
 
 The Catalog's line for rs7894051 (GCST002846, Yashin 2015): risk frequency 0.203, P 3e-10, "beta 3.525 unit decrease"
 (q841); the risk allele is not given. Located at GRCh38 10:133,370,917 (q842). For row 176.
+
+## Reading 2026-11-20, supplement
+
+> [q843] _embedded.associations[0] association_id 12505189 risk_frequency 0.13 pvalue_description  pvalue_mantissa 2 pvalue_exponent -9 multi_snp_haplotype false snp_interaction false range - beta 5.026 unit decrease p_value 2e-09 accession_id GCST002846 pubmed_id 25918517 first_author Yashin AI
+
+> [q844] _embedded.associations[0].locations[0] 14:90303866
+
+The Catalog's line for rs4904670 (GCST002846, Yashin 2015): risk frequency 0.13, P 2e-9, "beta 5.026 unit decrease"
+(q843), the risk allele "?"; located at GRCh38 14:90,303,866 (q844). For row 177.

@@ -1,0 +1,109 @@
+# A locus outside the seed list, from the scout's GWAS Catalog entry (the 2015–2026 backfill, D41; D42.10, the second of
+# the two Yashin 2015 SNPs the authors' own QC kept), its own row under the next free id. Curated 2026-11-20. Lead
+# rs4904670, intronic in NRDE2 (14q32.12), GRCh38 14:90,303,866 C/G/T (reference C, G ancestral), GRCh37 14:90,770,210.
+# G is the allele nearly every European carries; C is about 0.1 % in Europeans (gnomAD v4's non-Finnish European genomes
+# 0.09 %, none in 1000 Genomes' Europeans) but 12 to 15 % in African genomes, and 13 to 20 % in Yashin's Framingham
+# genotypes. G is the allele the discovery puts with longer life (its minor allele with shorter).
+locus_id: 177
+locus_name: NRDE2
+verdict: kept
+verdict_reason: >-
+  Tier D, on §4.1's "overfit source" (D26.10, as rows 41 and 176). Yashin 2015's lifespan GWAS of 679 Framingham
+  original-cohort women (EMMAX, 20 principal components; pmid-25918517 q3) puts the minor allele with 5.03 years less
+  life per copy, P 1.50e-9, minor allele frequency 0.1298 (Supplement Table S1, q5, caption q6); the cohort's 432 men
+  agree, −6.69 years, P 8.67e-9, frequency 0.1976 (Table S2, q8, q7), and the authors' Cox model of survival past 80 in
+  the same people gives HR 1.80 per minor allele (log HR 0.590, SE 0.084, P 1.7e-12, Table S3, q11, q12). Genome-wide
+  by the paper's own call (q1); one of the two the authors' extra QC kept (q2, q14, q29), so a row under D42.10. The
+  Catalog prints the same line (risk frequency 0.13, P 2e-9, allele "?"; db-gwascatalog-2026.10.29 q843, q844). No
+  letter is printed for the minor allele. The source is overfit on its frequency, more starkly than row 176: in
+  Europeans the variant is all but absent. gnomAD v4's non-Finnish European genomes carry C on 64 of 68,046 alleles,
+  0.09 % (db-gnomad-4 q21), v2.1's on 9 of 15,430 (q24); 1000 Genomes' Europeans carry G only, 1,006 of 1,006 alleles,
+  CEU 198 of 198 (db-ensembl-116 q1250, q1251); Park 2025's 393,833 Britons have C at 0.04 % (pmid-40021682 q256).
+  Framingham's 0.13 to 0.20 is more than a hundred times that, the shape a genotyping error leaves; the authors say
+  the early original-cohort genotypes are the error-prone ones (q17) and found the minor alleles more frequent in the
+  original cohort than in the offspring (q28). C is common in African genomes (12.2 % in gnomAD v4, q22; 14.9 % in
+  1000 Genomes, db-ensembl-116 q1252), but the women's 13 % would need nearly all of them to be of African ancestry, and the
+  men's 19.8 % exceeds the African frequency itself, which no admixture can reach (derived), so ancestry does not
+  explain it. The offspring cohort's Cox model
+  (HR 2.68, P 1.8e-6, Table S7, q16, caption q15) is the same study's own typing, inside the frequency drift the
+  authors report (q28): named, not counted as a replication (D26.10). Nothing outside Framingham tests it. Park 2025's
+  own survival holds a line (C toward more deaths, both sexes P 0.074, men 0.13, women 0.36; q256 to q258), but at
+  0.04 % it is below Park's own MAF 0.1 % filter (q39, q41), an excluded line (D26.7, as rows 77, 92 and 175); Timmers
+  2019's LifeGen file, Pilling 2017's four deposits, Deelen 2019's percentiles, FinnGen R11's deaths (C on 1 of 10,614 Finnish
+  alleles in gnomAD v4, db-gnomad-4 q25), Zenin 2019 and Foote 2025's seven deposits hold no line (FinnGen and Zenin
+  read by the rsID and both positions). Untested, not failed:
+  no flag of failure can be scored, and if the Framingham minor allele is C, nothing large enough to see it has looked;
+  if it is not, nothing measures the C a genome file reports at the discovery's frequency. Neither reading leaves G
+  protective. Outcome cells read for G: lifespan, exceptional survival and healthspan untested (D28.12: an overfit
+  discovery tests nothing). Open Targets 26.09 holds two sets (db-opentargets-26.09 q1597): Yashin's own Catalog line
+  (PIP 0.42, q1598, q1599) and one GTEx artery expression set for an NRDE2 transcript at PIP 0.012 (q1600), no other
+  lifespan, longevity or healthspan set: causal C4 (D39.12, D28.5's reason); effector E4. Mechanism general ageing: the
+  paper names NRDE2's link to the proteasome subunit PSMC1 and the damage response (q30), but no route to lifespan is
+  shown. Intronic (db-ensembl-116 q1253; GRCh38 and GRCh37 positions q1248, q1249). The literature search on the rsID
+  (2026-11-20; Semantic Scholar 429, its part unchecked) finds this paper, the same group's 2016 follow-up (PMID
+  27773987) and a cell study of NRDE-2 in the DNA damage response (PMID 29902117), named, not read. Genotypes neutral,
+  as 41 and 176. Descriptive. Age of action unknown (the paper's late-life effect rests on the same overfit genotypes).
+  The evidence is European.
+axes:
+  tier: {value: D, cites: [pmid-25918517#q1, pmid-25918517#q2, pmid-25918517#q3, pmid-25918517#q5, pmid-25918517#q6, pmid-25918517#q7, pmid-25918517#q8, pmid-25918517#q11, pmid-25918517#q12, pmid-25918517#q14, pmid-25918517#q15, pmid-25918517#q16, pmid-25918517#q17, pmid-25918517#q28, pmid-25918517#q29, db-gnomad-4#q21, db-gnomad-4#q22, db-gnomad-4#q24, db-gnomad-4#q25, db-ensembl-116#q1250, db-ensembl-116#q1251, db-ensembl-116#q1252, pmid-40021682#q256, pmid-40021682#q39, pmid-40021682#q41, db-gwascatalog-2026.10.29#q843, db-gwascatalog-2026.10.29#q844]}
+  mechanism: {value: general_ageing, cites: [pmid-25918517#q30, db-opentargets-26.09#q1597]}
+  pleiotropy: {values: [], cites: []}
+  age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
+  outcome: {healthspan: untested, lifespan: untested, exceptional_survival: untested,
+            cites: [pmid-40021682#q256, pmid-40021682#q257, pmid-40021682#q258, pmid-40021682#q39, pmid-40021682#q41, db-gnomad-4#q21]}
+  actionability: {label: descriptive, cites: [pmid-25918517#q5]}
+  context: {values: [eur_only_evidence], cites: [pmid-25918517#q3, pmid-25918517#q5]}
+flags:
+  - {token: "causal:C4", cites: [db-opentargets-26.09#q1597, db-opentargets-26.09#q1598]}
+  - {token: "effector:E4", cites: [db-opentargets-26.09#q1597, db-opentargets-26.09#q1600]}
+variants:
+  - rsid: rs4904670
+    locus: {chrom: "14", start: 90303866, ref: C, cites: [db-ensembl-116#q1248, db-gnomad-4#q20]}
+    gene: ""
+    phenotype: NRDE2 region, lifespan
+    trait_efo_id: OBA_VT0005372
+    effect_allele: G
+    stat_significance: significant
+    direction: protective
+    genotypes:
+      - genotype: G/G
+        state: neutral
+        conclusion: >-
+          You carry two copies of the common G version of this DNA position, as almost everyone of European ancestry
+          does (about three in four people of African ancestry). It is the reference the other combinations are
+          compared with. The position lies inside the NRDE2 gene on chromosome 14. One small study linked the other
+          version to a shorter life, but it measured that version far more often than it really occurs.
+      - genotype: C/G
+        state: neutral
+        conclusion: >-
+          You carry one copy of the C version of this DNA position, which is very rare in people of European ancestry
+          (about 2 in 1,000) and more common in people of African ancestry (about 1 in 5). One small American study
+          linked it to a shorter life, but that study measured this version about a hundred times more often than it
+          really occurs in Europeans, and no larger study has tested it. It says nothing about your own lifespan.
+      - genotype: C/C
+        state: neutral
+        conclusion: >-
+          You carry two copies of the C version of this DNA position, which almost no one of European ancestry has
+          (and about 1 or 2 in 100 people of African ancestry do). One small American study linked it to a shorter
+          life, but that study measured this version far more often than it really occurs, and no larger study has
+          tested it. It says nothing about your own lifespan.
+studies:
+  - rsid: rs4904670
+    note: pmid-25918517
+    quote: q5
+    phenotype_class: OWN_SURVIVAL
+    study_design: meta_analysis
+    population: European (Framingham Heart Study original cohort, women)
+    ancestry: [EUR]
+    sample_size: 679
+    sample_unit: individuals
+    stat_significance: significant
+    p_value: "1.50E-09"
+    p_value_num: 1.50e-09
+    effect_size: -5.025773
+    effect_measure: beta
+    effect_unit: years of own lifespan per minor allele (additive mixed model)
+    effect_allele: C
+    direction: risk
+    statistical_test: "EMMAX linear mixed-model GWAS of women's lifespan (no own-lifespan linear design in the vocabulary, so meta_analysis as rows 25, 112, 159 and 176; the authors' Cox model of the same people, Table S3, q11: HR 1.80, P 1.7e-12) with 20 principal components, smoking and birth cohort (q3; Supplement Table S1, q5, caption q6), minor allele frequency 0.1298; the minor allele's letter is not printed, C is the rare allele in every reference (derived); men β −6.69, P 8.67e-9 (q8); overfit on the frequency (C about 0.1 % in gnomAD's Europeans, absent in 1000 Genomes' Europeans)"
+    curator: claude-opus-5-5

@@ -86,3 +86,24 @@ and GBR 8 of 174 (4.6 %, q19). Yashin's Framingham minor allele frequency is 0.2
 (pmid-25918517 q4, q9), four to five times the reference. Every large deposit read for row 176 has C near 0.05 too.
 The GRCh37 position, 10:135,184,421, is the deposits' own (gnomAD v2.1's record, `variant-rs7894051-gnomad_r2_1.json`,
 agrees). For row 176.
+
+## Reading 2026-11-20, supplement
+
+> [q20] data.variant variant_id 14-90303866-C-G chrom 14 pos 90303866 ref C alt G
+
+> [q21] data.variant.genome.populations[27] id nfe ac 67982 an 68046
+
+> [q22] data.variant.genome.populations[24] id afr ac 36448 an 41530
+
+> [q23] data.variant variant_id 14-90770210-C-G chrom 14 pos 90770210 ref C alt G
+
+> [q24] data.variant.genome.populations[15] id nfe ac 15421 an 15430
+
+> [q25] data.variant.genome.populations[6] id fin ac 10613 an 10614
+
+rs4904670 (Yashin 2015's NRDE2 SNP). gnomAD v4 has no record by the rsID (a multi-allelic site), so it is read by its
+variant id, `variant-14-90303866-C-G.json`: GRCh38 14:90,303,866, reference C, G the allele nearly everyone carries
+(q20). In the non-Finnish European genomes C is 64 of 68,046 alleles, 0.09 % (q21); in the African genomes 5,082 of
+41,530, 12.2 % (q22). gnomAD v2.1 (`variant-rs4904670-gnomad_r2_1.json`) puts it at GRCh37 14:90,770,210 (q23), C 9 of
+15,430 non-Finnish European alleles, 0.06 % (q24). v4's Finnish genomes carry C on 1 of 10,614 alleles (q25). Yashin's Framingham minor allele frequency is 0.13 in women and
+0.20 in men (pmid-25918517 q5, q8), more than a hundred times the European reference. For row 177.

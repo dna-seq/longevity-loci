@@ -5461,3 +5461,17 @@ rs7894051 (10_133370917_C_G) in eight credible sets (q1594): seven are ECHS1 (EN
 splicing QTLs and one array probe (GTEx, MAGE, CEDAR; a testis splicing set at PIP 1.00, q1596; the others 0.02 to
 0.15). The eighth is Yashin 2015's own lifespan record (GCST002846, q1595), PIP 0.17, built from the Catalog's top
 line, not from summary statistics. No lifespan, longevity or healthspan set from any other study. For row 176.
+
+## Reading 2026-11-20, supplement
+
+> [q1597] data.variant.credibleSets count 2
+
+> [q1598] data.variant.credibleSets.rows[1].study id GCST002846 traitFromSource Lifespan studyType gwas
+
+> [q1599] data.variant.credibleSets.rows[1].locus.rows[0] posteriorProbability 0.4233632799811617 beta null pValueMantissa 2 pValueExponent -9
+
+> [q1600] data.variant.credibleSets.rows[0].study id gtex-v10_tx_artery_tibial_enst00000354366 traitFromSource ENST00000354366 studyType eqtl
+
+rs4904670 (14_90303866_C_G) in two credible sets (q1597): Yashin 2015's own lifespan record (GCST002846, q1598), PIP
+0.42, built from the Catalog's top line (P 2e-9, no beta, q1599); and a GTEx artery (tibial) expression set for an
+NRDE2 transcript, ENST00000354366 (q1600), PIP 0.012. No other lifespan, longevity or healthspan set. For row 177.

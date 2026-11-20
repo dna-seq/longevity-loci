@@ -4341,3 +4341,21 @@ of a poly-T run (dbSNP's rs35163232 indels at 13:31,871,513 GRCh37 overlap it). 
 
 rs10198124 (row 174): GRCh38 2:35,216,373 G/A/C/T, G ancestral (q1245); G at 43.8 % in gnomAD's non-Finnish genomes (q1246);
 downstream of the SMIM7P1 pseudogene, intergenic (q1247). For row 174.
+
+## Reading 2026-11-20, supplement
+
+> [q1248] mappings[0] start 90303866 coord_system chromosome ancestral_allele G assembly_name GRCh38 seq_region_name 14 allele_string C/G/T location 14:90303866-90303866 end 90303866 strand 1
+
+> [q1249] mappings[0] start 90770210 assembly_name GRCh37 location 14:90770210-90770210 allele_string C/G/T seq_region_name 14 coord_system chromosome end 90770210 ancestral_allele G strand 1
+
+> [q1250] populations[21] allele_count 1006 population 1000GENOMES:phase_3:EUR frequency 1 allele G
+
+> [q1251] populations[13] population 1000GENOMES:phase_3:CEU allele_count 198 frequency 1 allele G
+
+> [q1252] populations[2] allele C frequency 0.149016641452345 population 1000GENOMES:phase_3:AFR allele_count 197
+
+> [q1253] [0] allele_string C/G/T seq_region_name 14 most_severe_consequence intron_variant input rs4904670 id rs4904670 strand 1 assembly_name GRCh38 end 90303866 start 90303866
+
+rs4904670 (row 177): GRCh38 14:90,303,866 C/G/T, G ancestral (q1248); GRCh37 14:90,770,210 (q1249). 1000 Genomes'
+Europeans carry G only, 1,006 of 1,006 alleles (q1250), CEU 198 of 198 (q1251); its Africans carry C at 14.9 %
+(q1252). Intronic in NRDE2 (q1253). Ensembl's REST service answered again on 2026-11-20. For row 177.
