@@ -21,7 +21,10 @@ verdict_reason: >-
   to Deelen's scale, so D21's power is not computable, and Timmers' own β under APOE's factor would give only about
   0.39, so the flat result is no red flag. A suggestive confirmation-class result with one nominal independent
   replication: C, as row 10, not B (R-TIER-4, no genome-wide scoring-class anchor), not D (nothing powered
-  contradicts it). Open Targets 26.09 holds the lead in one credible set of the eight studies, Wright's age study's
+  contradicts it). Yashin 2015's WRN coding SNP rs11574358, about 166 kb from the lead (D43.7), was sub-genome-wide in
+  Framingham's original-cohort women (minor allele β +5.58 years, P 5.87e-8, pmid-25918517 q38) with the sign flipped in
+  its men (−5.92, P 2.6e-6, q39), from the genotyping rows 176 and 177 read as overfit: named, no row, scored for
+  nothing. Open Targets 26.09 holds the lead in one credible set of the eight studies, Wright's age study's
   (PICS, 29 variants), where its posterior probability, the set's highest, is 0.0988. That set is built at the
   uncorrected 8e-9 the row does not read as genome-wide, so it sets no causal or effector level (D28.5, the lead's
   ruling; the previous commits' C3 and E2 rejected): C4, E4, no gene named. On that set, named in prose only, locus-to-gene gives WRN
