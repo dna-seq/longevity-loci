@@ -25,7 +25,8 @@ verdict_reason: >-
   q197). Foote 2025's seven deposits print the effect allele G at frequency 0.345 where every other source has G at 0.68,
   so which allele their β is for is unsettled and no direction is read (q232 to q238; F3, F4 and F6 nominal, one sign);
   the printed 0.34493 equals A's count in 1000 Genomes' Europeans (347 of 1,006, a live read, D43.11), so healthspan
-  stays 0 until the Catalog's harmonised allele is quoted.
+  stays 0: the Catalog's harmonised file only turns the line round (A at 0.655, pmid-40759756 q265), so the conflict
+  stands.
   Mechanism ageing in general: rs17685 is a coffee, caffeine and fatty-acid locus in the Catalog (db-gwascatalog-2026.10.29
   q829, q830; POR is the cytochrome P450 reductase), but the lifespan signal is not established, so no `mech:` token.
   Open Targets' 137 sets at rs28689051 are mostly MDH2, POR and STYXL1 expression and splicing QTLs and platelet count,
