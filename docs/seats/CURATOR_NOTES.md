@@ -65,6 +65,8 @@ record, never left empty; multi-line text edits want whitespace-tolerant matches
 
 ## Log (from 2026-11-10)
 
+- 2026-11-20, row 96's two preprints: bioRxiv's API record works as medRxiv's (`api.biorxiv.org/details/biorxiv/<doi>`, `fetch-supp --name biorxiv-details.json`), both CC0 here; the cached file is flattened text, not JSON, so quote from it as printed (`[&ge;]`, `{varepsilon}`). A composite outcome (dementia or death) is not a mortality estimate. The queue's closing line is the scout's to write: tell it the commit.
+
 - 2026-11-20, D42.10's seven no-rows: an old-array hit dropped by its authors' QC is checked against the references first; all seven sat at alleles Europeans do not carry, so the deposits had little to say. Park's deposits keep lines below its own 0.1 % filter: read the frequency before counting a Park line.
 
 - 2026-11-20, row 177 NRDE2: a multi-allelic site has no gnomAD record by rsID ("Multiple variants found"); query by variant id, and take the GRCh38 reference from Ensembl's mapping (here C, not the ancestral G), or the id comes back "not found". A deposit fetch run with a zero position matches by rsID alone: re-run it by both positions before writing "no line". When a service comes back, correct the rows that said it could not be read.

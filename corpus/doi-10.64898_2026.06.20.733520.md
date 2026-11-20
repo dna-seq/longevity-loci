@@ -28,7 +28,8 @@ literature_search (2026-11-20). What is read is the abstract, as bioRxiv's own A
 Two São Paulo collections of older adults, one of the deceased at autopsy and one census-based (q1). The test is
 Hardy-Weinberg deviation at APOE by local ancestry, not survival or mortality against a comparison group: the global
 frequencies keep to equilibrium (q2); an excess of ε2 homozygotes on African local ancestry among the deceased (q3,
-P 0.0196, one test of several, uncorrected as printed) and of European-ancestry ε4 haplotypes (q4). The authors read
+P 0.0196 from the permutation models; whether it is corrected for the several tests is not said in the abstract,
+unknown) and of European-ancestry ε4 haplotypes (q4). The authors read
 this as ε2's longevity advantage dampened on an African background; the abstract gives no hazard, odds or count per
 genotype, so no direction for the row's alleles can be scored from it. A preprint, not published (q6): never a
 replication. Row 96 (APOE): noted and named, no cell moves; the ancestry question it raises is unknown, not
