@@ -214,6 +214,7 @@ mechanical consensus of the research tracks, to be confirmed or overturned by th
 
 - 176 ECHS1 (2026-11-19), Yashin 2015's rs7894051 (D42.10), 679 Framingham women at P 2.5e-10: tier D, an overfit source (minor allele 0.20 in Framingham, 0.05 in gnomAD and 1000 Genomes) failing Timmers' powered test (P 0.998, heterogeneity z about 6.4), `replication_failed`.
 - 177 NRDE2 (2026-11-20), Yashin 2015's rs4904670 (D42.10), 679 Framingham women at P 1.5e-9: tier D, an overfit source (minor allele 0.13 to 0.20 in Framingham, C 0.09 % in gnomAD's Europeans and absent in 1000 Genomes'), untested elsewhere (Park's line below its MAF filter, no other deposit holds it); no failure flag. Ensembl answering again: rows 175 and 176's "could not be read" sentences replaced (0c46db2).
+- Yashin 2015's seven QC-dropped SNPs (TLK2 rs12949468, C1QTNF5 rs4639950, RIMBP2 rs2292664, CYP51A1 rs2229188, ICAM1 rs5491, rs217237, GLIS1 rs3006879), 2026-11-20: no row (D42.10). The authors' QC rejects them (HWE, Affymetrix, scatter plots; pmid-25918517 q18, q19, q29), and the references agree: each sits at an allele Europeans do not carry or carry under 1 % (gnomAD, 1000 Genomes), against Yashin's 0.02 to 0.16. No deposit holds a line for five; ICAM1's rare T is flat in Timmers (P 0.22) and FinnGen (0.52), Park's rs5491 and rs217237 lines fall below its filter.
 
 ## In hand
 

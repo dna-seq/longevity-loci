@@ -107,3 +107,20 @@ variant id, `variant-14-90303866-C-G.json`: GRCh38 14:90,303,866, reference C, G
 41,530, 12.2 % (q22). gnomAD v2.1 (`variant-rs4904670-gnomad_r2_1.json`) puts it at GRCh37 14:90,770,210 (q23), C 9 of
 15,430 non-Finnish European alleles, 0.06 % (q24). v4's Finnish genomes carry C on 1 of 10,614 alleles (q25). Yashin's Framingham minor allele frequency is 0.13 in women and
 0.20 in men (pmid-25918517 q5, q8), more than a hundred times the European reference. For row 177.
+
+> [q26] data.variant.genome.populations[15] id nfe ac 1 an 15368
+
+> [q27] data.variant.genome.populations[15] id nfe ac 2 an 15368
+
+> [q28] data.variant.genome.populations[15] id nfe ac 15420 an 15420
+
+> [q29] data.variant.exome.populations[12] id nfe ac 0 an 1104876
+
+> [q30] data.variant.exome ac 1 an 1450716
+
+gnomAD's non-Finnish Europeans at the Yashin SNPs the authors' QC dropped: TLK2 rs12949468 (v2.1, 17-60593816-G-A) A
+on 1 of 15,368 genome alleles (q26); C1QTNF5 rs4639950 (v2.1, 11-119216555-T-C) C on 2 of 15,368 (q27); GLIS1 rs3006879
+(v2.1, 1-54045548-G-A) A on all 15,420, G absent (q28). CYP51A1 rs2229188 (v4, `variant-7-92134309-A-G.json`, no genome
+record): G on 0 of 1,104,876 non-Finnish European exome alleles (q29), 1 of 1,450,716 in all (q30). The other three
+(rs2292664, rs5491, rs217237) are multi-allelic and read from 1000 Genomes (db-ensembl-116 q1262 to q1268). Yashin's
+minor allele frequencies, 0.02 to 0.16, are at alleles Europeans do not carry. For the D42.10 no-rows.

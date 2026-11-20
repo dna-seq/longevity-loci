@@ -4382,3 +4382,24 @@ Ensembl answered again.
 
 rs7894051 (row 176): GRCh38 10:133,370,917 C/A/G/T, C ancestral (q1258), gnomAD v4's position. 1000 Genomes' Europeans
 carry C on 50 of 1,006 alleles, 5.0 % (q1259), its Africans at 32.5 % (q1260). Intronic in ECHS1 (q1261). For row 176.
+
+> [q1262] populations[19] population 1000GENOMES:phase_3:EUR allele_count 1006 frequency 1 allele G
+
+> [q1263] populations[19] population 1000GENOMES:phase_3:EUR allele_count 1006 allele T frequency 1
+
+> [q1264] populations[15] allele_count 1006 frequency 1 allele G population 1000GENOMES:phase_3:EUR
+
+> [q1265] populations[25] allele_count 999 allele A frequency 0.993041749502982 population 1000GENOMES:phase_3:EUR
+
+> [q1266] populations[20] population 1000GENOMES:phase_3:EUR allele_count 1006 allele G frequency 1
+
+> [q1267] populations[19] allele A population 1000GENOMES:phase_3:EUR frequency 1 allele_count 1006
+
+> [q1268] populations[26] allele_count 7 allele T frequency 0.00695825049701789 population 1000GENOMES:phase_3:EUR
+
+1000 Genomes' Europeans at six of the seven Yashin 2015 SNPs the authors' QC dropped (D42.10): TLK2 rs12949468 G only,
+1,006 of 1,006 alleles (q1262); C1QTNF5 rs4639950 T only (q1263); RIMBP2 rs2292664 G only (q1264); ICAM1 rs5491 A on
+999 and T on 7, no G (q1265, q1268); rs217237 (11p15.5) G only (q1266); GLIS1
+rs3006879 A only (q1267). Yashin's minor allele frequencies for them run 0.02 to 0.16 (pmid-25918517 q20 to q26), at
+variants Europeans do not carry, or carry at well under 1 %. CYP51A1 rs2229188 has no 1000 Genomes line; gnomAD's is
+read instead (db-gnomad-4 q29). For the D42.10 no-rows.
