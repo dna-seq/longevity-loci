@@ -65,6 +65,8 @@ record, never left empty; multi-line text edits want whitespace-tolerant matches
 
 ## Log (from 2026-11-10)
 
+- 2026-11-20, row 177 NRDE2: a multi-allelic site has no gnomAD record by rsID ("Multiple variants found"); query by variant id, and take the GRCh38 reference from Ensembl's mapping (here C, not the ancestral G), or the id comes back "not found". A deposit fetch run with a zero position matches by rsID alone: re-run it by both positions before writing "no line". When a service comes back, correct the rows that said it could not be read.
+
 - 2026-11-19, Lunetta 2007 and row 176 ECHS1: a printed P below 5e-8 is not genome-wide when the paper's own call says nothing is (D17.3); read the abstract's conclusion before the table. For an old-array discovery, compare its printed minor allele frequency with gnomAD and 1000 Genomes first: Yashin's 0.20 against 0.05 decided the row before any deposit. Read a supplement's QC section to its end, and Pilling's top-10 % deposit has the opposite sign of the attained-age ones.
 
 - 2026-11-19, row 175 MYO5B: Ensembl's REST service refused (proxy 503) all session. gnomAD's API answers a GraphQL query by GET, so `loci fetch-supp db-gnomad-4 'https://gnomad.broadinstitute.org/api?query=…'` caches the variant record (its populations include 1000 Genomes'); the plugin's `lookup_variant` gives the locus from a local snapshot but is not a cached source. A rare-in-Europe allele should always get its other-ancestry frequencies read: here T is 13 % in Africans, which the genotype texts and the ancestry caveat must carry.
