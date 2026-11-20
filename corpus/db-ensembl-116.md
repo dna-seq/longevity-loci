@@ -4403,3 +4403,11 @@ carry C on 50 of 1,006 alleles, 5.0 % (q1259), its Africans at 32.5 % (q1260). I
 rs3006879 A only (q1267). Yashin's minor allele frequencies for them run 0.02 to 0.16 (pmid-25918517 q20 to q26), at
 variants Europeans do not carry, or carry at well under 1 %. CYP51A1 rs2229188 has no 1000 Genomes line; gnomAD's is
 read instead (db-gnomad-4 q29). For the D42.10 no-rows.
+
+## Reading 2026-11-20, record
+
+The haplotype counts behind row 171's phase (D40.6, D43.11), counted over the 1,006 phased EUR haplotypes of the
+cached genotype records (population q1174; derived): rs4426183 T on 430, rs7137828 C on 467, both on 299 (r +0.400);
+rs11065979 T on 442, with rs4426183's T on 278 (r +0.361); rs12828640 G on 581, rs10774625 A on 480, both on 177
+(r −0.404); rs12828640 G with rs4426183 C on 570 of C's 576 (r +0.965). The one-person genotype lines q1227 to q1229,
+q1231 and q1232 are no longer the row's cites. For row 171.

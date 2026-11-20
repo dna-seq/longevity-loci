@@ -20,7 +20,7 @@ verdict_reason: >-
   survival, in UK Biobank's participants, is flat (P 0.98; women G a little more deaths, P 0.28, q244 to q246), not
   independent of the discovery's genotypes. No red flag can be scored (nothing outside the discovery tests it). 
   `sex_specific:f` (D29.16, D29.20, D43.4): the mothers' T +0.0979 (SE 0.0180, q324) against the fathers' −0.0172 (SE
-  0.0179, q327) differ at z 4.53, P 5.8e-6, both errors counted, and at P 0.009 at half the mothers' effect (derived),
+  0.0179, q327) differ at z 4.54, P 5.5e-6, both errors counted, and at P 0.009 at half the mothers' effect (derived),
   as row 74 from the same paper's deposits; no independent other-sex sample passes (D31.5).
   The GWAS Catalog's line (db-gwascatalog-2026.10.29 q831 to q833) gives T's β as an "increase" under parental
   longevity, but on Pilling's scale positive is a shorter life. Outcome cells read for G: lifespan + (the discovery

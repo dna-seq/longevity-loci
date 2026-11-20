@@ -20,10 +20,11 @@ verdict_reason: >-
   0.92 per 50 mg/dL, P 2.7e-8; pmid-32108890), the same samples the row counts. Langsted 2019, 119,094 Danes outside UK
   Biobank, finds the KIV-2 instrument raising all-cause mortality (RR 1.10 per 50 mg/dL) but the rs10455872 instrument
   not (0.97, 0.92 to 1.02; pmid-30608559): a null at the row's own SNP. Whether that is D21's red flag is unknown and owed
-  (D43.10): it turns on rs10455872's Lp(a) step per allele, which the abstract does not print. Against Timmers' own-scale
-  log HR of about +0.076 per allele (pmid-30642433 q14), Langsted's −0.030 (SE 0.026) per 50 mg/dL gives one-sided power
-  above 0.8 if the allele raises Lp(a) by about 58 mg/dL or less (0.89 at 50, 0.78 at 60), with heterogeneity P under
-  0.05 at every step (derived). Langsted's full text is not open (Europe PMC and Unpaywall find no open copy,
+  (D43.10): it turns on rs10455872's Lp(a) step per allele, which the abstract does not print. Against Timmers' 0.7639 years per copy (SE
+  0.0743; pmid-30642433 q1), an own-scale log HR of +0.076 per allele by the sheet's years = 10 × β convention (q14),
+  Langsted's −0.030 (SE 0.026) per 50 mg/dL gives one-sided power above 0.8 if the allele raises Lp(a) by about 58 mg/dL
+  or less (0.98 at 40, 0.90 at 50, 0.78 at 60, 0.49 at 90), with heterogeneity P under 0.05 at every step to 120 mg/dL
+  (9e-5 at 50, 0.006 at 90) (derived). Langsted's full text is not open (Europe PMC and Unpaywall find no open copy,
   2026-11-20; no supplement route for the publisher), so the step is unread and the row stays A with no token (D28.1); a
   flag would cap it at B, with CHARGE keeping it off D (D25.1).
 axes:

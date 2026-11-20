@@ -121,7 +121,7 @@ studies:
     effect_unit: Martingale residual of parents' attained age per T allele (positive = shorter life)
     effect_allele: T
     direction: risk
-    statistical_test: "BOLT-LMM on both parents' attained age (GCST006697 deposit, q307), the top line of its peak (q309); marginal; conditioned on row 71's rs7137828 in the same scan (q308; phase q1228, r +0.400 EUR, +0.53 CEU) z 4.05 on EUR haplotypes, P 5e-5 (CEU low end 2.96), derived, D39.15"
+    statistical_test: "BOLT-LMM on both parents' attained age (GCST006697 deposit, q307), the top line of its peak (q309); marginal; conditioned on row 71's rs7137828 in the same scan (q308; phase over 1,006 EUR haplotypes, db-ensembl-116#q1174, T 430, C 467, both 299, r +0.400 EUR, +0.53 CEU) z 4.05 on EUR haplotypes, P 5e-5 (CEU low end 2.96), derived, D39.15"
     curator: claude-opus-5-5
   - rsid: rs4426183
     note: pmid-30642433
@@ -140,7 +140,7 @@ studies:
     effect_unit: beta1 on parental lifespan per T allele, longer positive
     effect_allele: T
     direction: risk
-    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0039, direction --; marginal; conditioned on row 71's rs11065979 (q432; phase q1229, r +0.361 EUR, +0.46 CEU) z 3.26 on EUR haplotypes, P 0.001 (CEU low end 2.62), derived; holds UK Biobank's parents, so not a replication"
+    statistical_test: "Timmers 2019's summary statistics (GCST009890), SE 0.0039, direction --; marginal; conditioned on row 71's rs11065979 (q432; phase over 1,006 EUR haplotypes, db-ensembl-116#q1174, T 430, T 442, both 278, r +0.361 EUR, +0.46 CEU) z 3.26 on EUR haplotypes, P 0.001 (CEU low end 2.62), derived; holds UK Biobank's parents, so not a replication"
     curator: claude-opus-5-5
   - rsid: rs4426183
     note: pmid-31413261
