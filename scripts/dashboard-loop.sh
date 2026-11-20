@@ -10,9 +10,12 @@ KIT=$(dirname "$(dirname "$PY")")
 TO="${2:-#dashboards>longevity-loci curation}"
 ROOT=$(cd "$(dirname "$0")/.." && pwd)
 while :; do
-  out=$(cd "$ROOT" && sh "$PY" "$KIT/drivers/claude-code/quota.py" --json 2>/dev/null \
-        | uv run python scripts/dashboard.py --quota - 2>&1) \
-    && printf '%s\n' "$out" | sh "$KIT/bin/watchdog.sh" keep lead curation "$TO" - >/dev/null 2>&1 \
-    || echo "dashboard: not refreshed: $(printf '%s' "$out" | tail -1 | cut -c1-200)"
+  if out=$(cd "$ROOT" && sh "$PY" "$KIT/drivers/claude-code/quota.py" --json 2>/dev/null \
+        | uv run python scripts/dashboard.py --quota - 2>&1); then
+    err=$(printf '%s\n' "$out" | sh "$KIT/bin/watchdog.sh" keep lead curation "$TO" - 2>&1 >/dev/null) \
+      || echo "dashboard: not posted: $(printf '%s' "$err" | tail -1 | cut -c1-200)"
+  else
+    echo "dashboard: not built: $(printf '%s' "$out" | tail -1 | cut -c1-200)"
+  fi
   sleep 600
 done
