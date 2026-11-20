@@ -221,13 +221,9 @@ mechanical consensus of the research tracks, to be confirmed or overturned by th
 
 ## In hand
 
-The scout's 2015–2026 backfill (c0a8726, D41): the first twelve entries read (2026-11-18); the lead's word on rows 170
-and 73 pending. Next, the GWAS Catalog entry (13 genome-wide lines at no seed or row), each a row on row 170's pattern,
-in this order: rs4426183 MYL2 (Pilling 2017, 2e-11; first check whether it is row 71's SH2B3 signal, 511 kb), rs17685
-POR (Wright 2019 fathers), chr13:31,871,514 (Pilling 2017 mothers), rs10198124 (Joshi 2017), rs4709783 C6orf118
-(Pilling 2016), rs78441534 MYO5B (PMID 33948810), Lunetta 2007's rs32566 ICE1 and rs1412337 DPT/XCL1, then Yashin
-2015's five (TLK2, ECHS1, NRDE2, RIMBP2, CYP51A1). Then the APOE entry's two preprints (medRxiv
-10.64898/2026.06.18.26355781, bioRxiv 10.64898/2026.06.20.733520), named in row 96.
+Nothing (2026-11-20). The scout's 2015–2026 backfill (c0a8726, D41) is read through: rows 170 to 177, the
+Catalog lines closed without a row and Yashin 2015's closures (each line above), and the APOE entry's two preprints
+named in row 96; batch eighteen's corrections (D43) applied. The seed loci are all rowed; v1's remaining rsIDs wait on D6.
 
 ## Next: seed tier A (11)
 
