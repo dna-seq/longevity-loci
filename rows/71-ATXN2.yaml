@@ -13,7 +13,7 @@ verdict_reason: >-
   0.0498, D25.13; 0.065 after the genomic control Wright's calls use, λ 1.182, pmid-31484785#q83, derived), with heterogeneity between the two arms P 2.6e-3, and its mothers nothing (P 0.99, heterogeneity P 3.6e-3) (Wright 2019, Supplemental Table 9). The rule
   applied (the lead, 2026-11-11, one rule for this row and 67): a powered non-replication in an independent sample is
   red-flag heterogeneity and caps the row at B; AncestryDNA's mothers, a sample that fails, carry
-  `replication_failed` (D25.13; the fathers replicate with a smaller effect). Healthspan is +, as rows 51 and 83 read Foote 2025 (D27.3): its factor 6,
+  `replication_failed` (D25.13; the fathers replicate with a smaller effect). Healthspan is + by D37.4 (D43.9: Foote fills the cell at nominal P in its direction when no factor runs the other way), as rows 51 and 83 read Foote 2025 (D27.3): its factor 6,
   disability (pmid-40759756 q263), is genome-wide at the lead's proxy rs7137828 (r² 0.81): the proxy's C, its
   shorter-life allele (the proxy's T is the longer-life side, as the LifeGen study entry has it), is the frailer, P
   2.8e-10 (q255; its Q P 0.018 above the deposit's filter, q264), and its factor 2 the same way, P 0.028 (q231); factors 1 and 5 are flat (q253, q254), and the

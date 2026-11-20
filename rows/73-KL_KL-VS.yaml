@@ -32,9 +32,11 @@ verdict_reason: >-
   curator's, from odds ratios of different designs, so that red flag, Deelen's, is unknown and sets no token (D28.1, D26.3), and
   D25.1's "explicitly contradicted" is not met. Amin 2022 has since tested it directly (the scout's backfill, D41): 642 people aged 85 in the
   Newcastle 85+ Study against 18,295 UK Biobank participants from the same centre, heterozygotes 27.6 % against 27.1
-  %, P 0.79, OR 1.03 (pmid-34893828 q1 to q3). Against Arking 2005's heterozygote OR 1.57 that is D21's red flag,
-  same contrast on the same odds scale, no conversion: power 1.00, heterogeneity P 0.005 (derived; at half the effect
-  power 0.81, P 0.064), so `replication_failed`. D25.1 still does not make it D: Invidia 2010's Italian elderly carry
+  %, P 0.79, OR 1.03 (pmid-34893828 q1 to q3); homozygotes GG 3.0 % against 2.5 %, P 0.49 (q3). Arking 2005's 1.57
+  is an odds ratio for 5-year survival (pmid-15677572 q2), Amin's a comparison of 85-year-olds with UK Biobank's
+  adults: different contrasts, and the step between them is a conversion no source prints, so D21's red flag is
+  unknown (D28.1, D43.8) and sets no `replication_failed`; read on the same scale it would be power 1.00,
+  heterogeneity P 0.005 (derived), named, not scored. Amin is a not_significant study (R-DEF-3). D25.1 does not make it D: Invidia 2010's Italian elderly carry
   more heterozygotes than young controls, an independent sample passing the discovery's way. MrOS Sweden's 2,921
   men find neither KL-VS SNP associated with all-cause or cardiovascular mortality (pmid-32581247), and Sardinia's
   Blue Zone panel is null (pmid-39730495); KL-VS is absent in 874 Koreans (pmid-27560364); São Paulo's older adults
@@ -68,7 +70,6 @@ axes:
   actionability: {label: descriptive, cites: [db-gwascatalog-2026.10.29#q475]}
   context: {values: [], cites: [db-ensembl-116#q556, db-ensembl-116#q557, db-ensembl-116#q558]}
 flags:
-  - {token: replication_failed, cites: [pmid-34893828#q1, pmid-34893828#q2, pmid-15677572#q2]}
   - {token: legacy_longevitymap, cites: [pmid-11792841#q2]}
   - {token: "causal:C4", cites: [db-opentargets-26.09#q874, db-opentargets-26.09#q875, db-opentargets-26.09#q876, db-opentargets-26.09#q877, db-opentargets-26.09#q878]}
   - {token: "effector:E1", cites: [db-ensembl-116#q561, pmid-11792841#q3]}
@@ -256,4 +257,26 @@ studies:
     effect_allele: G
     direction: risk
     statistical_test: "Zenin 2019's healthspan summary statistics (q103): G (0.16) β +0.0116 (SE 0.0066), Z 1.745, P 0.081 raw (0.089 after genomic control of 1.053, pmid-30729179#q59, derived); rs9527025 the same (q104). Per-allele"
+    curator: claude-opus-5-5
+  - rsid: rs9536314
+    note: pmid-34893828
+    quote: q2
+    phenotype_class: EXTREME_SURVIVAL_CC
+    study_design: age_threshold_case_control
+    population: European (Newcastle 85+ Study against Newcastle UK Biobank participants)
+    ancestry: [EUR]
+    n_cases: 642
+    sample_size: 18937
+    sample_unit: individuals
+    stratum: genotype
+    stratum_level: T/G against the other genotypes
+    stat_significance: not_significant
+    p_value: "0.79"
+    p_value_num: 0.79
+    effect_size: 1.03
+    effect_measure: OR
+    effect_unit: odds ratio of heterozygosity, 85-year-olds against UK Biobank adults (derived from the printed shares)
+    effect_allele: G
+    direction: unknown
+    statistical_test: "Amin 2022: heterozygotes 27.6 % against 27.1 %, P 0.79 (q2), 642 against 18,295 (q1); GG 3.0 % against 2.5 %, P 0.49, G carriers 30.5 % against 29.6 %, P 0.61 (q3); OR 1.03 derived. Against Arking 2005's 5-year-survival OR 1.57 (pmid-15677572#q2) a different contrast, so the D21 red flag is unknown (D28.1, D43.8)"
     curator: claude-opus-5-5
