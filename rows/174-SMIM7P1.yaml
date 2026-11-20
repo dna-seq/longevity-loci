@@ -8,7 +8,7 @@ locus_name: SMIM7P1
 verdict: kept
 verdict_reason: >-
   Tier B by §4.1's single-study clause, as rows 128 and 149 (one genome-wide sample of African ancestry, unreplicated in
-  a sample of its own): Joshi 2017's African-ancestry fathers (9,359 lives, nine cohorts) put G with death, HR 1.22 (SE
+  a sample of its own; 9,359 lives, far below tier A's 100,000, the one reason it rests on, D43.5): Joshi 2017's African-ancestry fathers (9,359 lives, nine cohorts) put G with death, HR 1.22 (SE
   0.0354), P 1.66e-8, the same direction in every cohort (pmid-29030599 q19); the both-parents analysis held no signal.
   No other African sample is read. In Joshi's Europeans the SNP is null at that size (fathers HR 1.01, SE 0.007, P 0.21;
   mothers P 0.77, q20); a cross-ancestry null is not a contradiction (D22.3), so it raises no flag. The larger European
@@ -16,24 +16,29 @@ verdict_reason: >-
   Park 2025's own survival G more deaths, P 0.0035 (one-sided 0.0018, q247); Pilling 2017's both parents P 0.086 and top
   10 % P 0.058 (one-sided 0.043 and 0.029, q328, q329); Deelen 2019's 99th T toward it, P 0.058 (one-sided 0.029, q383);
   FinnGen R11's deaths flat (P 0.31, q138) (derived one-sided). They are European and about a twentieth of the African
-  effect, at an adiposity locus (below), so the row reads them as cross-ancestry support for the direction, not as the
-  replication of the African effect that §4.1's A asks. `sex_specific:m`: in Africans the fathers' log HR differs from
+  effect, at an adiposity locus (below), so the row reads them as cross-ancestry support for the direction, not as a
+  replication; not counted, they set no `replication_failed` (D43.5). `sex_specific:m`: in Africans the fathers' log HR differs from
   the mothers' (0.97, SE 0.038) at z 4.42, P 1e-5 (derived from the printed errors, D29.16); in Europeans the parents
-  do not differ (Pilling's mothers and fathers alike). `ancestry_specific:afr`: the genome-wide effect is African;
-  Europeans carry at most a small one. Outcome cells read for T: lifespan + (Timmers, Park, Pilling's both parents);
+  do not differ (Pilling's mothers and fathers alike). Park's European women pass G's way (P 0.0099, one-sided 0.005,
+  q249; men P 0.10, q248; the two differ at z 0.14, derived), which D31.5 would read as the other sex passing; the token
+  stands because it describes the African effect, whose sexes differ at z 4.42, and the European effect is a twentieth
+  of it (D43.5). `ancestry_specific:afr`: the genome-wide effect is African;
+  Europeans carry at most a small one. Its test: Joshi's African fathers against his own European fathers on the same
+  per-self scale (HR 1.22, SE 0.0354, against 1.01, SE 0.007, q19, q20) differ at z 5.23, P 1.7e-7 (derived; at that
+  SE the European fathers had power 1.00 for the African effect). Outcome cells read for T: lifespan + (Timmers, Park, Pilling's both parents);
   exceptional survival + (Deelen's 99th, Pilling's top 10 %); healthspan + (D31.4: Foote 2025's general factor has G
   frailer, P 0.0098, F4 metabolic P 2.7e-6, F5 P 0.047, none the other way, q239 to q245; Zenin 2019 flat, P 0.75, q198).
-  Mechanism metabolism: in Open Targets' 26 sets, nearly all adiposity, T lowers waist circumference (P 1.1e-9), body
+  Mechanism general ageing (D29.9, D30.9, D43.3, as row 88): in Open Targets' 26 sets, nearly all adiposity, T lowers waist circumference (P 1.1e-9), body
   mass index and leg fat mass (db-opentargets-26.09 q1586 to q1592), and Foote's metabolic factor is its strongest
   frailty line, so `mech:adiposity`, the longer-life allele the leaner; it leads none (PIP at most 0.013), so this is
-  the locus's European biology, not shown for the African signal. Causal C4 (D39.12). Effector E4: intergenic, no QTL
+  the locus's European biology, not shown for the African signal, and `mech:adiposity` stays as a description. Causal C4 (D39.12). Effector E4: intergenic, no QTL
   or colocalisation read for the row's phenotype. The literature search (the rsID, 2026-11-18; Semantic Scholar answered 429, its part
   unchecked) finds Joshi 2017 and a review of accelerated ageing and race (Noren Hooten 2021, PMID 34883202), named, not
   read.
   Descriptive. Age of action unknown.
 axes:
   tier: {value: B, cites: [pmid-29030599#q19, pmid-29030599#q20, pmid-30642433#q435, pmid-40021682#q247, pmid-29227965#q328, pmid-29227965#q329, pmid-31413261#q383, db-finngen-r11#q138, db-gwascatalog-2026.10.29#q835, db-gwascatalog-2026.10.29#q836]}
-  mechanism: {value: metabolism, cites: [db-opentargets-26.09#q1587, db-opentargets-26.09#q1588, db-opentargets-26.09#q1589, db-opentargets-26.09#q1590, pmid-40759756#q243]}
+  mechanism: {value: general_ageing, cites: [db-opentargets-26.09#q1587, db-opentargets-26.09#q1588, db-opentargets-26.09#q1589, db-opentargets-26.09#q1590, pmid-40759756#q243]}
   pleiotropy: {values: ["mech:adiposity"], cites: [db-opentargets-26.09#q1587, db-opentargets-26.09#q1588, db-opentargets-26.09#q1589, db-opentargets-26.09#q1590, db-opentargets-26.09#q1591, db-opentargets-26.09#q1592]}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
   outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
