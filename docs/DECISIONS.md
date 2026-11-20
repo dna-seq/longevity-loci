@@ -1561,3 +1561,70 @@ rules, each a reading of rules already decided.
     are curated at their own evidence (D29.17). Rejected: (a) nine rows, most at D, which puts flagged artefacts in the
     module as former hits; (b) the Catalog's five, which follows a database's choice over the paper's. Under the pace
     restored on 2026-11-19, RM6 (the study notes for just-dna-lite #37) comes before these rows.
+
+## D43 — batch eighteen's read: rows 170 to 177, the Yashin closures, and the sweep's edits to older rows (2026-11-20)
+
+Three adversarial reads at 35a4142 (rows 170 to 173; 174 to 177 with D42.10's closures; the hunks the sweep and the
+reader rewording made to rows 4 to 160 since 12c673f). No tier moves. The person is away; settled by the lead under the
+standing rules, each a reading of rules already decided.
+
+1. **171 MYL2-VHRT loses `replication_failed`.** The fathers' line it rested on mostly carries row 71's signal; read
+   conditioned on 71's rs10774625, as D39.18 and D40.3 ask when 71 is the stronger line, it is underpowered (power
+   0.66, heterogeneity P 0.049; 0.60 and 0.060 after genomic control), so no D21 red flag. Both arms of 71's line are
+   printed (pmid-31484785 q17), so the conditional is computed from quotes, unlike row 165 (D40.4). The row's 0.83 used
+   the marginal SE and an unsourced 0.6 share; it goes. The prose stops saying 71 carries the flag for its fathers (71's
+   cites its mothers, q18). Tier C stands. Rejected: keeping the marginal test, which grades 71's signal twice.
+2. **171's healthspan stays `+`, on the EUR panel the second signals were read on (D42.3, rows 162 to 169).** The
+   reference panel is fixed before the result (D31.13's rule); never a second panel because the first did not suit. The
+   row states the threshold (r below 0.422), EUR's r 0.400 (SE 0.027), and that GBR (0.446) and CEU (0.529) would read
+   `0` and `−`, and prints F6 one-sided (0.070, and 0.005 against). Rejected: `0` because another panel disagrees.
+3. **171's and 174's mechanism is `general_ageing`** (D30.9: a locus acts through a system only when its lifespan
+   signal is shown to share that system's signal). 171's C leads no blood-pressure set (PIP 0.16 at most) and the row
+   says no route is shown; 174's T leads no adiposity set (PIP 0.013), as row 88. `mech:cvd`, `mech:blood_count` (171)
+   and `mech:adiposity` (174) stay as descriptive tokens. Rejected: following seed 71's `heart_vessels` for 171; a
+   second signal is labelled on its own evidence.
+4. **173 B3GLCT takes `sex_specific:f`.** The difference is testable from q324 and q327, which the row already cites:
+   z 4.54, P 5.5e-6 (P 0.009 at half the mothers' effect), as row 74 under D29.16 and D29.20. D42.7's "no test of the
+   difference" was wrong on that point; its tier holds. The imputation claim gets a quote or goes.
+5. **174 SMIM7P1 is B on D42.8's first reason alone** (Joshi's 9,359 African fathers are far below tier A's 100,000).
+   The second, the "much smaller effect" clause, is withdrawn: D39.7 keeps it to the pair that earns A. The Europeans
+   are not counted as a replication, so no `replication_failed`: their lean and Joshi's own powered European null
+   (power 1.00, heterogeneity z 5.23) are what `ancestry_specific:afr` states, and the token cites that z as its test.
+   `sex_specific:m` stands (z 4.42); the row names Park's women passing (P 0.0099) and says why that does not remove
+   it (D31.5 asks a test of the difference, which z 4.42 is). Rejected: the flag by D26.11, which applies when a
+   European look-up is counted for the tier (row 18), not here.
+6. **176 ECHS1 loses `replication_failed`, by D31.11.** A discovery that misfits the reference is an overfit source;
+   a flag scaled from its effect tests the artefact, not the locus. Row 41 kept one under D26.10 before D31.11 was
+   written; D31.11 is the later rule and governs. D stands on the overfit source. 176 and 177 say what "overfit" rests
+   on: the reference frequency (z 25.7 at ECHS1; more than a hundredfold at NRDE2) and the women's and men's
+   frequencies differing within the cohort (P 0.005; 2e-5); the authors' own Mendelian and HWE checks passed both.
+   Both name the offspring cohort (q13, HR 1.71, P 0.00079) with why it rescues nothing: the same table gives effects as
+   strong at the SNPs the authors dropped, CYP51A1 included. Corrections: 176's "no difference between 70 and 80" goes
+   (the paper says the effect appears after 80); 177's "no admixture can reach" 19.8 % goes (1000 Genomes ESN carries C
+   at 22.7 %); counts at multi-allelic sites are said as the named allele's, not as total minus G.
+7. **D42.10's closures stand, with their account corrected.** rs217237 and GLIS1 were not set aside by QC; they fell
+   when the men's analysis did not confirm them. TLK2 and C1QTNF5 fail HWE only under a PLINK option the authors say is
+   not their QC. **WRN rs11574358**, the eighth SNP the authors QC'd (women P 5.87e-8, β +5.58; men β −5.92), is closed
+   in PROGRESS the same way and named in row 54's prose (166 kb from its lead).
+8. **73 KL loses `replication_failed`; C stands.** Arking 2005's 1.57 is an odds ratio for 5-year survival
+   (pmid-15677572 q2); Amin 2022 compares 85-year-olds with adults of 40 to 69. Different contrasts, and the step
+   between them is a conversion no source prints, so under D28.1 the red flag is unknown. D42.2's "direct, no
+   conversion" is withdrawn unless Arking's full text shows the same contrast. Amin gets its `not_significant` study
+   row (R-DEF-3), its homozygote line (GG 3.0 % against 2.5 %, q3) named. Rejected: D by §4.1's "no adequately powered
+   replication" (the rows read D25.1, as 170).
+9. **71 ATXN2's healthspan is `+`, by D37.4** (Foote fills the cell at nominal P in its direction when no factor runs
+   the other way; D31.13's both-ways test is not met). The proxy's C is the shorter-life allele (EAF 0.464, Timmers'
+   C 0.474), r² 0.81. Tier B unchanged.
+10. **46 LPA: Langsted's test of rs10455872 is a possible D21 red flag, unknown and owed.** Power crosses 0.8 if the
+    allele raises Lp(a) by about 57 mg/dL or less; heterogeneity P is under 0.05 throughout. The curator fetches the
+    full text and settles it; until then the row names it as unknown and stays A. A flag would cap it at B.
+11. **Smaller corrections, no cell moves.** 170: the mean-factor calibration (D25.3) stated (the flag holds: power
+    1.00, heterogeneity P 2e-10); Foote untested, not unread (GRCh37 deposits, every cached extract header-only). 171:
+    the phase cites replaced with the haplotype counts (D40.6); the AncestryDNA mothers after genomic control (0.035,
+    0.024) and D30.1's filter P (8.3e-4, a pass) stated; "your blood pressure matters more" out of the genotype texts (a
+    descriptive row). 172: UK Biobank fathers' N is 415,311 (row 95), not the both-parents 389,166; Foote's G frequency
+    0.34493 equals A's count in 1000 Genomes EUR, so the allele behind the β is unsettled and healthspan stays `0` until
+    it is. Pilling's note loses its stale "404" sentence (D42.4 is met). 48: pmid-26754162 q1 is re-quoted from "We found
+    no evidence that". 33: Shadyab's "T" and p 0.04 quoted or dropped. 6, 53: the pointers the rewording lost come back.
+    96: Régy's comparison group, Tan's endpoint and Kashtanova's reading depth said as the sources say. Live Ensembl
+    reads (LD, 1000 Genomes counts) move a cell only once cached and quoted (D39.9).
