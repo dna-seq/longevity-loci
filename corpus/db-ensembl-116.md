@@ -4359,3 +4359,26 @@ downstream of the SMIM7P1 pseudogene, intergenic (q1247). For row 174.
 rs4904670 (row 177): GRCh38 14:90,303,866 C/G/T, G ancestral (q1248); GRCh37 14:90,770,210 (q1249). 1000 Genomes'
 Europeans carry G only, 1,006 of 1,006 alleles (q1250), CEU 198 of 198 (q1251); its Africans carry C at 14.9 %
 (q1252). Intronic in NRDE2 (q1253). Ensembl's REST service answered again on 2026-11-20. For row 177.
+
+> [q1254] mappings[0] end 50083001 allele_string C/T assembly_name GRCh38 coord_system chromosome ancestral_allele C seq_region_name 18 start 50083001 location 18:50083001-50083001 strand 1
+
+> [q1255] populations[21] allele_count 2 allele T frequency 0.00198807157057654 population 1000GENOMES:phase_3:EUR
+
+> [q1256] populations[2] allele T population 1000GENOMES:phase_3:AFR allele_count 195 frequency 0.14750378214826
+
+> [q1257] [0] allele_string C/T id rs78441534 seq_region_name 18 input rs78441534 most_severe_consequence intron_variant assembly_name GRCh38 strand 1 end 50083001 start 50083001
+
+rs78441534 (row 175): GRCh38 18:50,083,001 C/T, C ancestral (q1254), gnomAD v4's position. 1000 Genomes' Europeans carry
+T on 2 of 1,006 alleles (q1255), its Africans at 14.8 % (q1256). Intronic in MYO5B (q1257). For row 175, read once
+Ensembl answered again.
+
+> [q1258] mappings[0] end 133370917 seq_region_name 10 allele_string C/A/G/T location 10:133370917-133370917 strand 1 coord_system chromosome start 133370917 assembly_name GRCh38 ancestral_allele C
+
+> [q1259] populations[23] allele_count 50 population 1000GENOMES:phase_3:EUR frequency 0.0497017892644135 allele C
+
+> [q1260] populations[2] allele_count 429 population 1000GENOMES:phase_3:AFR frequency 0.324508320726172 allele C
+
+> [q1261] [0] most_severe_consequence intron_variant end 133370917 strand 1 start 133370917 id rs7894051 allele_string C/A/G/T assembly_name GRCh38 seq_region_name 10 input rs7894051
+
+rs7894051 (row 176): GRCh38 10:133,370,917 C/A/G/T, C ancestral (q1258), gnomAD v4's position. 1000 Genomes' Europeans
+carry C on 50 of 1,006 alleles, 5.0 % (q1259), its Africans at 32.5 % (q1260). Intronic in ECHS1 (q1261). For row 176.

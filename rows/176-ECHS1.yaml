@@ -40,14 +40,14 @@ verdict_reason: >-
   testis splicing set at PIP 1.00, q1596) and Yashin's own Catalog line (PIP 0.17, q1595), no other lifespan,
   longevity or healthspan set: causal C4 (D39.12); effector E4, the QTLs not shown to colocalise with a lifespan
   signal there is none of. Mechanism general ageing: the paper names ECHS1's role in mitochondrial oxidation and
-  apoptosis (q27), but no route to lifespan is shown. Ensembl 116 could not be read (its REST service
-  refused through the proxy on 2026-11-19), so the consequence and ALFA's frequency are unchecked; the locus is gnomAD
-  v4's (db-gnomad-4 q16). The literature search on the rsID (2026-11-19; OpenAlex 503, Semantic Scholar 429, their part
+  apoptosis (q27), but no route to lifespan is shown. Ensembl 116, read once it answered again (2026-11-20), puts the
+  variant in an intron of ECHS1 (db-ensembl-116 q1261) at gnomAD v4's position (q1258, db-gnomad-4 q16), and 1000
+  Genomes' Europeans' C at 5.0 % (q1259; its Africans' 32.5 %, q1260). The literature search on the rsID (2026-11-19; OpenAlex 503, Semantic Scholar 429, their part
   unchecked) finds this paper and the same group's 2016 follow-up (PMID 27773987), named, not read. Genotypes neutral,
   as 41. Descriptive. Age of action unknown (the paper's late-life effect rests on the same overfit genotypes). The
   evidence is European.
 axes:
-  tier: {value: D, cites: [pmid-25918517#q1, pmid-25918517#q2, pmid-25918517#q3, pmid-25918517#q4, pmid-25918517#q6, pmid-25918517#q7, pmid-25918517#q9, pmid-25918517#q10, pmid-25918517#q12, pmid-25918517#q14, pmid-25918517#q17, pmid-25918517#q28, pmid-25918517#q29, db-gnomad-4#q17, db-gnomad-4#q18, db-gnomad-4#q19, pmid-30642433#q437, pmid-29227965#q336, pmid-29227965#q337, pmid-29227965#q338, pmid-29227965#q339, pmid-40021682#q253, pmid-40021682#q39, db-finngen-r11#q139, pmid-31413261#q384, pmid-31413261#q385, db-gwascatalog-2026.10.29#q841, db-gwascatalog-2026.10.29#q842]}
+  tier: {value: D, cites: [pmid-25918517#q1, pmid-25918517#q2, pmid-25918517#q3, pmid-25918517#q4, pmid-25918517#q6, pmid-25918517#q7, pmid-25918517#q9, pmid-25918517#q10, pmid-25918517#q12, pmid-25918517#q14, pmid-25918517#q17, pmid-25918517#q28, pmid-25918517#q29, db-gnomad-4#q17, db-gnomad-4#q18, db-gnomad-4#q19, pmid-30642433#q437, pmid-29227965#q336, pmid-29227965#q337, pmid-29227965#q338, pmid-29227965#q339, pmid-40021682#q253, pmid-40021682#q39, db-finngen-r11#q139, pmid-31413261#q384, pmid-31413261#q385, db-gwascatalog-2026.10.29#q841, db-gwascatalog-2026.10.29#q842, db-ensembl-116#q1258, db-ensembl-116#q1259, db-ensembl-116#q1260, db-ensembl-116#q1261]}
   mechanism: {value: general_ageing, cites: [pmid-25918517#q27, db-opentargets-26.09#q1594]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}

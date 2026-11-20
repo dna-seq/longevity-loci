@@ -30,13 +30,14 @@ verdict_reason: >-
   and effector E4; the paper places the SNP in MYO5B (q50), and the variant is not among its 56 pQTL SNPs (q5).
   Mechanism general ageing: the authors name MYO5B's link to old age and cancer resistance in giant tortoises and no
   known role in human longevity (q47, q48). The Results count three rare SNPs in the region (q43, q44); Supplement
-  Table 1 lists two (q40, q41). Ensembl 116 could not be read (its REST service refused through the proxy on
-  2026-11-19), so the variant's consequence and ALFA's frequency are unchecked; the locus is gnomAD v4's (q5). The literature search on the rsID (2026-11-19, all six services answered) finds this
+  Table 1 lists two (q40, q41). Ensembl 116, read once it answered again (2026-11-20), puts the variant in an
+  intron of MYO5B (db-ensembl-116 q1257) at gnomAD v4's position (q1254, q5), and 1000 Genomes' Europeans' T at 2 of
+  1,006 alleles, its Africans' at 14.8 % (q1255, q1256). The literature search on the rsID (2026-11-19, all six services answered) finds this
   paper alone. PROTECT:PRESENCE (the rarer T goes with reaching 100). Neutral, protective and protective genotypes,
   as 77 and 92, the shares NECS controls' (T 0.03 %), the frequency the claim was made at. Descriptive. Age of
   action unknown. The evidence is European.
 axes:
-  tier: {value: C, cites: [pmid-33948810#q40, pmid-33948810#q41, pmid-33948810#q42, pmid-33948810#q13, pmid-33948810#q1, pmid-33948810#q3, pmid-33948810#q45, pmid-33948810#q46, pmid-33948810#q49, pmid-33948810#q11, db-gnomad-4#q6, db-gnomad-4#q7, db-gnomad-4#q8, db-gnomad-4#q11, db-gnomad-4#q12, db-gnomad-4#q13, db-gnomad-4#q14, db-gnomad-4#q15, pmid-33948810#q50, db-gwascatalog-2026.10.29#q838, db-gwascatalog-2026.10.29#q839, pmid-40021682#q250, pmid-40021682#q39, pmid-40021682#q41]}
+  tier: {value: C, cites: [pmid-33948810#q40, pmid-33948810#q41, pmid-33948810#q42, pmid-33948810#q13, pmid-33948810#q1, pmid-33948810#q3, pmid-33948810#q45, pmid-33948810#q46, pmid-33948810#q49, pmid-33948810#q11, db-gnomad-4#q6, db-gnomad-4#q7, db-gnomad-4#q8, db-gnomad-4#q11, db-gnomad-4#q12, db-gnomad-4#q13, db-gnomad-4#q14, db-gnomad-4#q15, pmid-33948810#q50, db-gwascatalog-2026.10.29#q838, db-gwascatalog-2026.10.29#q839, pmid-40021682#q250, pmid-40021682#q39, pmid-40021682#q41, db-ensembl-116#q1254, db-ensembl-116#q1255, db-ensembl-116#q1256, db-ensembl-116#q1257]}
   mechanism: {value: general_ageing, cites: [pmid-33948810#q47, pmid-33948810#q48]}
   pleiotropy: {values: [], cites: []}
   age_of_action: {value: UNKNOWN, confidence: UNKNOWN, cites: []}
