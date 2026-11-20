@@ -13,7 +13,11 @@ verdict_reason: >-
   0.0498, D25.13; 0.065 after the genomic control Wright's calls use, λ 1.182, pmid-31484785#q83, derived), with heterogeneity between the two arms P 2.6e-3, and its mothers nothing (P 0.99, heterogeneity P 3.6e-3) (Wright 2019, Supplemental Table 9). The rule
   applied (the lead, 2026-11-11, one rule for this row and 67): a powered non-replication in an independent sample is
   red-flag heterogeneity and caps the row at B; AncestryDNA's mothers, a sample that fails, carry
-  `replication_failed` (D25.13; the fathers replicate with a smaller effect). Healthspan is 0: Zenin 2019's look-up of SH2B3's rs3184504 leans the
+  `replication_failed` (D25.13; the fathers replicate with a smaller effect). Healthspan is +, as rows 51 and 83 read Foote 2025 (D27.3): its factor 6,
+  disability, is genome-wide at the lead's proxy rs7137828 (r² 0.81), the shorter-life C the frailer, P 2.8e-10
+  (pmid-40759756 q255), and its factor 2 the same way, P 0.028 (q231); factors 1 and 5 are flat (q253, q254), and the
+  general factor's, factor 3's and factor 4's deposits have a gap over the block, untested (q257 to q262); a Genomic
+  SEM factor is multivariate, so it supports B and lifts nothing. Zenin 2019's look-up of SH2B3's rs3184504 leans the
   same way and does not pass (P 0.13). A trade-off: Timmers 2019 names this locus among those where more protection
   against non-lung cancers goes with a shorter life, through antagonistic pleiotropy with cardiovascular disease; the
   lifespan-lowering allele, rs3184504-T, also raises type 1 diabetes and autoimmune risk (Joshi 2017). On lifespan the
@@ -35,8 +39,8 @@ axes:
   mechanism: {value: heart_vessels, cites: [pmid-30642433#q8, pmid-29227965#q8]}
   pleiotropy: {values: ["mech:cvd", "mech:autoimmune", "tradeoff"], cites: [pmid-30642433#q7, pmid-30642433#q8, pmid-29030599#q11]}
   age_of_action: {value: LIFELONG, confidence: DIRECT_WEAK, cites: [pmid-29030599#q9, pmid-30642433#q191, pmid-30642433#q192, pmid-30642433#q193, pmid-30642433#q194, pmid-30642433#q195, pmid-30642433#q196, pmid-30642433#q197]}
-  outcome: {healthspan: "0", lifespan: "+", exceptional_survival: "+",
-            cites: [pmid-30729179#q4, pmid-30642433#q8, pmid-31413261#q9]}
+  outcome: {healthspan: "+", lifespan: "+", exceptional_survival: "+",
+            cites: [pmid-30729179#q4, pmid-30642433#q8, pmid-31413261#q9, pmid-40759756#q255, pmid-40759756#q231, pmid-40759756#q253, pmid-40759756#q254, pmid-40759756#q10]}
   actionability: {label: descriptive, cites: [pmid-30642433#q7]}
   context: {values: [eur_only_evidence], cites: [pmid-30642433#q8, pmid-31484785#q10]}
 flags:
