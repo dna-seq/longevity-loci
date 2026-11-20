@@ -6,6 +6,10 @@ moving"): a fresh session carries on from this file, `docs/seats/LEAD_STATE.md` 
 
 ## Now (2026-11-16)
 
+2026-11-20: batch eighteen (rows 170 to 177, the Yashin closures, the sweep's edits since 12c673f) read adversarially and
+settled as D43 (031fafb), no tier moves; corrections handed to the curator. Next: the module rebuilt with them, then
+LEAD_STATE and a milestone. PR #37 waits on the module seat's last RM6 re-export; APOE (D33) put to the person.
+
 Curation is complete. All 161 seed loci are curated, in 156 rows, and the eight second signals the scout queued are
 rows 162 to 169: 164 rows, A 15, B 73, C 41, D 35. Seventeen batches have been read adversarially, the last settled as
 D40 (fb32e6c). The curator reports every D40 correction applied and pushed (12c673f, latest 1ffba5f). The scout's
