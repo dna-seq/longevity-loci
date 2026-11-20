@@ -23,7 +23,9 @@ verdict_reason: >-
   (D28.10, D28.3: the discovery gives no `+`; each later look read one-sided): lifespan 0 (Pilling, Timmers, Park, none
   nominal either way); exceptional survival 0 (Deelen); healthspan 0 (Zenin 2019 A the earlier end, flat, P 0.48,
   q197). Foote 2025's seven deposits print the effect allele G at frequency 0.345 where every other source has G at 0.68,
-  so which allele their β is for is unsettled and no direction is read (q232 to q238; F3, F4 and F6 nominal, one sign).
+  so which allele their β is for is unsettled and no direction is read (q232 to q238; F3, F4 and F6 nominal, one sign);
+  the printed 0.34493 equals A's count in 1000 Genomes' Europeans (347 of 1,006, a live read, D43.11), so healthspan
+  stays 0 until the Catalog's harmonised allele is quoted.
   Mechanism ageing in general: rs17685 is a coffee, caffeine and fatty-acid locus in the Catalog (db-gwascatalog-2026.10.29
   q829, q830; POR is the cytochrome P450 reductase), but the lifespan signal is not established, so no `mech:` token.
   Open Targets' 137 sets at rs28689051 are mostly MDH2, POR and STYXL1 expression and splicing QTLs and platelet count,
@@ -108,7 +110,7 @@ studies:
     study_design: parental_lifespan_linear
     population: UK Biobank participants' fathers (Wright 2019's UK arm, Pilling 2017's fathers)
     ancestry: [EUR]
-    sample_size: 389166
+    sample_size: 415311
     sample_unit: individuals
     stratum: parent
     stratum_level: father
@@ -120,5 +122,5 @@ studies:
     effect_unit: fathers' attained age per G allele (Pilling's scale; positive = shorter)
     effect_allele: G
     direction: protective
-    statistical_test: "Supplemental Table 9 (q187), SE 0.0023, against the AncestryDNA arm; heterogeneity P 1.6e-6; D21 power 1.00 (0.97 at half the effect), derived; Table 3 'Not Replicated' (q186): replication_failed"
+    statistical_test: "Supplemental Table 9 (q187), N 415,311 for Pilling's fathers (db-gwascatalog-2026.10.29#q494), SE 0.0023, against the AncestryDNA arm; heterogeneity P 1.6e-6; D21 power 1.00 (0.97 at half the effect), derived; Table 3 'Not Replicated' (q186): replication_failed"
     curator: claude-opus-5-5

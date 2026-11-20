@@ -150,7 +150,7 @@ studies:
     effect_allele: T
     direction: protective
     proxy_rsid: rs602633
-    statistical_test: "Replication of Pilling 2017's rs602633 in LifeGen excluding UK Biobank (Figure 2 source data 1, sample b, q12); the sheet's P is already one-sided (q248), so no p_one_sided is entered; discovery +0.0296 (SE 0.0053), 0.296 years, P 2.7E-08; replication +0.0002 (SE 0.0096); D21: one-sided power about 0.92, heterogeneity P about 0.0075 with both SEs (derived); the sheet's +0.0296 is Pilling's effect carried by APOE's factor, so on UK Biobank's own 0.0285 on Timmers' scale (Timmers' pooled 0.0218 less LifeGen, D28.9) power 0.91, heterogeneity P 0.010; the flag needs 0.81 of the discovery's effect, against AncestryDNA's arms at 0.63 and 1.15 of UK Biobank's, a red flag; N not given per SNP"
+    statistical_test: "Replication of Pilling 2017's rs602633 in LifeGen excluding UK Biobank (Figure 2 source data 1, sample b, q12); the sheet's P is already one-sided (as at q248), so no p_one_sided is entered; discovery +0.0296 (SE 0.0053), 0.296 years, P 2.7E-08; replication +0.0002 (SE 0.0096); D21: one-sided power about 0.92, heterogeneity P about 0.0075 with both SEs (derived); the sheet's +0.0296 is Pilling's effect carried by APOE's factor, so on UK Biobank's own 0.0285 on Timmers' scale (Timmers' pooled 0.0218 less LifeGen, D28.9) power 0.91, heterogeneity P 0.010; the flag needs 0.81 of the discovery's effect, against AncestryDNA's arms at 0.63 and 1.15 of UK Biobank's, a red flag; N not given per SNP"
     curator: claude-opus-5-5
   - rsid: rs646776
     note: pmid-31484785
