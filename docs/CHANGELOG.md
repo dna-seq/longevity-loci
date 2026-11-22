@@ -4,6 +4,9 @@ Newest first.
 
 ## Unreleased
 
+- The module rebuilt with batch eighteen (rows 170 to 177 and D43's corrections): 172 loci, 513 genotype rows, 697 studies, strict green, signature 997b3356 (9d87300), by the lead in the module seat's place while that seat was stopped on the usage limit (kit #589); just-dna-lite #37 carries it (ffcfdfe). Not yet rehearsed on the test instance; the enrich ran from cache, so seven new rsIDs have one witness.
+- The dashboard watcher's failure line says which step failed, with that step's error (95db966).
+
 - The reader's text names loci instead of row numbers ("the FOXO3 locus's lead", from the rows' names) and loses the punctuation an id left behind ("(, derived)", "(Table 1,)"), from the curator's read of the first export.
 - `loci export` writes a reader's text in the study cells an app shows (`statistical_test`, `population`, `effect_unit`): the rows' quote ids, decision numbers and section marks are taken out, wording and numbers kept (RM6, for just-dna-lite #37, whose report showed "(q1, q2)" and "D11/D13" raw; the curator's prototype). The rows keep their ids.
 - The module goes to production through just-dna-lite (the person, 2026-11-19, desk #56): pull request dna-seq/just-dna-lite#37 carries the rehearsed 2.0.0 spec, a fix to just-dna-lite's report (which filed any `longevitymap` under Generation I's pathways, where 2.0.0's rows vanished), the release runbook and the supplements (`loci.csv`, the draft section). 1.2.0 stays frozen.
