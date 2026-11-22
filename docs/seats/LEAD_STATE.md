@@ -1,22 +1,22 @@
-**1. Results page:** https://claude.ai/artifact/9Ga73vyTsg4ZjwJSg4M7Q4 (tabs: tiers, all loci, by mechanism; from the rows at 96fe362).
+**1. Results page:** https://claude.ai/artifact/9Ga73vyTsg4ZjwJSg4M7Q4 (tabs: tiers, all loci, by mechanism; from the rows at 96fe362, before the literature sweep's rows).
 
-**2. Where it stands** (2026-11-18)
-- 🟢 Curation done: all 161 seed loci and the eight second signals the scout queued, in 164 rows, each claim citing a quote checked verbatim against its article.
-- 🟢 Seventeen batches read adversarially, every correction applied; the module is rebuilt strict green on just-dna-format 0.8.
-- 🟡 The module is on the registry's test instance only (longevitymap 2.0.0, `test-longevity-loci`); nothing is on production.
-- 🟢 The seats moved to this organisation on 2026-11-17 (acb4b4e).
-- 🟢 The literature since HAGR's last data (2015 to Oct 2026) is swept: 22,759 records plus bioRxiv and medRxiv; the screen catches 54 of 58 papers our rows cite.
+**2. Where it stands** (2026-11-22)
+- 🟢 Curation done: all 161 seed loci, the scout's second signals and the literature sweep's new loci, in 172 rows, each claim citing a quote checked verbatim against its article.
+- 🟢 Eighteen batches read adversarially (D1 to D43), every correction applied; no tier of the earlier 164 rows moved in the last read.
+- 🟢 The module is rebuilt strict green at 9d87300 (signature 997b3356) and is in just-dna-lite's pull request #37, which supersedes the 1.2.0 port; merge and publish are the person's.
+- 🟡 This build is not yet rehearsed on the registry's test instance, and 7 of the 8 new rsIDs were placed from one source; both wait on the module seat, stopped on a usage-limit message since 2026-11-20 (kit #589).
+- 🟢 The literature since HAGR's last data (2015 to Oct 2026) is swept and its loci are in.
 
 **3. Headline results**
-- Tiers: A 15, B 73, C 41, D 35 (n = 164 rows). A means a genome-wide hit (N ≥ 100k, P < 5e-8) with an independent replication and no red flag; most loci fall short on the replication.
-- 35 rows at D: the discovery failed a powered test in its own ancestry, or its own authors called it anomalous.
-- Module: 489 genotype rows, 679 studies, APOE as 12 ε-pair results; 19 marker variants score nothing at any tier (signature aebf5e38).
-- Quote check: 6,531 quotes located verbatim, 1 unknown (a database note with no cached text), 0 failed.
+- Tiers: A 15, B 75, C 44, D 38 (n = 172 rows). A means a genome-wide hit (N ≥ 100k, P < 5e-8) with an independent replication and no red flag; most loci fall short on the replication.
+- 38 rows at D: the discovery failed a powered test in its own ancestry, or its own authors called it anomalous.
+- Module: 513 genotype rows (121 protective, 101 risk, 291 neutral), 697 studies from 54 papers, APOE as 12 ε-pair results.
 
 **4. Plan / queue**
+- ❓ APOE: drop v2's ε-pair tables and point to the published APOE module, or keep them until just-dna-lite reads them (the person; default: kept, D33).
 - ❓ Keep the loosened rule that let APOE keep tier A despite one null study (the person, desk #45; default: it stays).
 - ❓ A flag in the app for a second signal near an existing locus (the person, desk #46; default: none).
 - ❓ Marking the field's consensus top loci: a flag, a tier, or nothing (the person, desk #47; default: nothing built).
-- 🟡 The backfill's queue: 47 uncited papers on 18 rows, rs1927465 (CYP26A1/MYOF) as a possible new locus, 13 Catalog lines at no seed (curator, working it now).
-- ⏳ Production publish (module seat, on the person's explicit word only).
-- ⏳ 165 to tier A on a quoted mothers' heterogeneity test; 167's mechanism once its source is cached (curator, waits on sources).
+- ⏳ Row 46 (LPA, A): a paywalled paper may carry a failed replication; needs a person to fetch it (default: unknown, A held).
+- ⏳ Module seat, once back: re-enrich online, rehearse on test, carry any new signature into #37.
+- ⏳ v1's own rsIDs beyond the seed loci wait on D6.
