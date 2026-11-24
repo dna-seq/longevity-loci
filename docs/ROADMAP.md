@@ -6,10 +6,10 @@ owner. A done item leaves this file; `docs/CHANGELOG.md` says what landed.
 
 ## RM1 — the 2015–2026 sweep's queue, read and built
 
-**State:** building. **Owner:** lead (the curator writes the rows). The curator works the scout's queue (the GWAS
-Catalog block from rs78441534 MYO5B, then row 71's Foote factors); then three adversarial reads over rows 170 onward,
-the findings settled as D-decisions, one corrections handoff, the module seat's rebuild and rehearsal, LEAD_STATE and a
-milestone. Stalled since 2026-11-18 02:31 on the curator's pane (its usage-limit screen), reported to the person.
+**State:** built except the rehearsal. **Owner:** lead (the curator writes the rows). Rows 165–177 written and read
+(D43), the module rebuilt at 9d87300 (signature 997b3356) and carried into dna-seq/just-dna-lite#37. Left: the module
+seat's online re-enrichment (7 of the 8 new rsIDs placed by one source) and its test rehearsal; that seat has been
+stopped on its usage-limit screen since 2026-11-20 (kit #589), reported to the person.
 
 ## RM2 — the module into just-dna-lite, superseding the v1 port
 
