@@ -4,7 +4,7 @@
 - 🟢 Curation done: all 161 seed loci, the scout's second signals and the literature sweep's new loci, in 172 rows, each claim citing a quote checked verbatim against its article.
 - 🟢 Eighteen batches read adversarially (D1 to D43), every correction applied; no tier of the earlier 164 rows moved in the last read.
 - 🟢 The module is rebuilt strict green at 9d87300 (signature 997b3356) and is in just-dna-lite's pull request #37, which supersedes the 1.2.0 port; merge and publish are the person's.
-- 🟢 This build is re-enriched in full and rehearsed on the registry's test instance (2026-11-25; the registry reads back 997b3356), by the lead while the module seat is stopped on a usage-limit message (since 2026-11-20).
+- 🟢 This build is re-enriched (from the local Ensembl snapshot, signature unchanged) and rehearsed on the registry's test instance (2026-11-25; the registry reads back 997b3356), by the lead while the module seat is stopped on a usage-limit message (since 2026-11-20).
 - 🟢 The literature since HAGR's last data (2015 to Oct 2026) is swept and its loci are in.
 
 **3. Headline results**
