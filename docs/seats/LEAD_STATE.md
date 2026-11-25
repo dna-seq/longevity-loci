@@ -13,7 +13,7 @@
 - Module: 513 genotype rows (121 protective, 101 risk, 291 neutral), 697 studies from 54 papers, APOE as 12 ε-pair results.
 
 **4. Plan / queue**
-- ❓ APOE: drop v2's ε-pair tables and point to the published APOE module, or keep them until just-dna-lite reads them (the person; default: kept, D33).
+- ❓ APOE: drop v2's ε-pair tables and point to the published APOE module, or keep them until just-dna-lite reads them (the person, desk #90; default: kept, D33).
 - ❓ Keep the loosened rule that let APOE keep tier A despite one null study (the person, desk #45; default: it stays).
 - ❓ A flag in the app for a second signal near an existing locus (the person, desk #46; default: none).
 - ❓ Marking the field's consensus top loci: a flag, a tier, or nothing (the person, desk #47; default: nothing built).
